@@ -1,7 +1,7 @@
 ---
 title: Referencias de cmdlets para los servicios de Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/16/2020
 audience: ITPro
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Busque Microsoft 365 de cmdlet de PowerShell para Azure AD, Exchange Online, SharePoint Online, Skype Empresarial Online y Seguridad & Cumplimiento.
-ms.openlocfilehash: 8dbff4261ae3403b1851b30c817277d4838be5ee3455fa5027a070e80ace229e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fc6cb250fe968c8dd8222422c517ce59352e4d69
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830381"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356569"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Referencias de cmdlets para los servicios de Microsoft 365
 

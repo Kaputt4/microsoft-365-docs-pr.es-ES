@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 704e44a61a89e176433058bc62ed02ed96001ed28fda38354b85e1cbc977545d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea48f3e69630a61c8e3156ab156fb0365ff9c100
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806885"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356185"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -74,28 +74,34 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     ```bash
     sudo yum install yum-utils
     ```
+- Tenga en cuenta la distribución y la versión e identifique la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/rhel/` .
 
-- Tenga en cuenta la distribución y la versión e identifique la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/config/` . Por ejemplo, RHEL 7.9 está más cerca de 7,4 que de 8.
+    Use la siguiente tabla para ayudarle a localizar el paquete: 
 
-    En los comandos siguientes, reemplace *[distro]* y *[version]* por la información que haya identificado:
+    |     Distro & versión    |     Paquete    |
+    |---|---|
+    |     Para RHEL 8.0-8.5    |     https://packages.microsoft.com/rhel/8/prod/    |
+    |     Para RHEL 7.2-7.9    |     https://packages.microsoft.com/rhel/7/prod/    |
+
+    En los siguientes comandos, reemplace *[versión]* y *[canal]* por la información que haya identificado:
 
     > [!NOTE]
     > En el caso de Oracle Linux, reemplace *[distro]* por "rhel".
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/[version]/[channel].repo
     ```
 
     Por ejemplo, si ejecuta CentOS 7 y desea implementar Defender para Endpoint en Linux desde el *canal prod:*
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/prod.repo
     ```
 
     O bien, si quieres explorar nuevas características en dispositivos seleccionados, es posible que quieras implementar Microsoft Defender para Endpoint en Linux en el canal *insiders-fast:*
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/insiders-fast.repo
     ```
 
 - Instalar la clave pública gpg de Microsoft:
@@ -112,18 +118,18 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 
 ### <a name="sles-and-variants"></a>SLES y variantes
 
-- Tenga en cuenta la distribución y la versión e identifique la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/config/` .
+- Tenga en cuenta la distribución y la versión e identifique la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/sles/` .
 
     En los siguientes comandos, reemplace *[distro]* y *[version]* por la información que haya identificado:
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/[distro]/[version]/[channel].repo
     ```
 
     Por ejemplo, si ejecuta SLES 12 y desea implementar Microsoft Defender para Endpoint en Linux desde el *canal prod:*
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
+    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/sles/12/prod.repo
     ```
 
 - Instalar la clave pública gpg de Microsoft:
@@ -146,18 +152,18 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     sudo apt-get install libplist-utils
     ```
 
-- Tenga en cuenta la distribución y la versión e identifique la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/config` .
+- Tenga en cuenta la distribución y la versión e identifique la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/[distro]/` .
 
     En el comando siguiente, reemplace *[distro]* y *[versión]* por la información que haya identificado:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
+    curl -o microsoft.list https://packages.microsoft.com/[distro]/[version]/[channel].list
     ```
 
-    Por ejemplo, si está ejecutando Ubuntu 18.04 y desea implementar MDE para Linux desde el *canal prod:*
+    Por ejemplo, si está ejecutando Ubuntu 18.04 y desea implementar Microsoft Defender para Endpoint en Linux desde el *canal prod:*
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
+    curl -o microsoft.list https://packages.microsoft.com/ubuntu/18.04/prod.list
     ```
 
 - Instale la configuración del repositorio:
@@ -428,12 +434,12 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
     sudo yum-config-manager --disable packages-microsoft-com-fast-prod
     ```
 
-1. Vuelva a implementar MDE para Linux mediante el "Canal de producción".
+1. Vuelva a implementar Microsoft Defender para Endpoint en Linux mediante el "Canal de producción".
 
 ## <a name="uninstallation"></a>Desinstalación
 
 Consulta [Desinstalar para](linux-resources.md#uninstall) obtener más información sobre cómo quitar Defender for Endpoint en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Investigar problemas de estado del agente](health-status.md)

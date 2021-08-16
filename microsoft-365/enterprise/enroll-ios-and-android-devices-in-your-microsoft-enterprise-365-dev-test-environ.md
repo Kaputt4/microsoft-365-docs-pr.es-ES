@@ -2,8 +2,8 @@
 title: Inscribir dispositivos iOS/iPadOS y Android en su Microsoft 365 entorno de prueba empresarial
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2020
 audience: ITPro
@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Usa esta Guía del laboratorio de pruebas para inscribir dispositivos Microsoft 365 entorno de prueba y administrarlos de forma remota.
-ms.openlocfilehash: e00aa4b51d5e3a9cc88c9d73ef644c56d4336b8b6120df4ac34de061200af317
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee7933a5e111b33ac7d3b17c0de2ef14483f9714
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855100"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356749"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscribir dispositivos iOS y Android en su Microsoft 365 entorno de prueba empresarial
 
@@ -74,7 +74,7 @@ Para otras tareas que puedes ejecutar de forma remota, consulta [acciones de dis
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#mobile-device-management) de administración de dispositivos móviles en el entorno de prueba.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
   

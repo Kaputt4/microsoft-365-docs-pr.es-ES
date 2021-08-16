@@ -2,8 +2,8 @@
 title: Guía básica de software de cliente y servidor para Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/10/2020
 audience: ITPro
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Use esta guía básica para configurar software de cliente y servidor para Microsoft 365.
-ms.openlocfilehash: 6fe2a271c8a6837bdd2dcf98f3aa5ca45f880ddd560b72979fb3e9a5b666caa0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 66d6483df4d1bec1ea0c935f7a0b936f2e0fddcf
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865009"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356137"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Guía básica de software de cliente y servidor para Microsoft 365
 
@@ -123,7 +123,7 @@ El soporte técnico para [SharePoint Server 2010](upgrade-from-sharepoint-2010
 
 En lugar de actualizar estos productos de servidor en la versión de Office 2010 con productos de servidor en las versiones de Office 2013 o Office 2016, considere la posibilidad de seguir los pasos siguientes:
 
-1. Migre los datos de Office servidores de 2010 a Microsoft 365. Para obtener más información, [vea FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) o hire a Microsoft partner.
+1. Migre los datos de Office servidores de 2010 a Microsoft 365. Para obtener más información, [vea FastTrack para Microsoft 365](https://fasttrack.microsoft.com/microsoft365) o contratar a un partner de Microsoft.
 2. Roll out the new functionality and work processes to your users.
 3. Cuando ya no necesite los servidores locales que se Office productos de servidor de 2010, desmantelándolos.
 
@@ -131,7 +131,7 @@ En lugar de actualizar estos productos de servidor en la versión de Office 2010
 
 Para los productos de servidor Office versión de 2013, no se ha determinado el final de la compatibilidad. En lugar de actualizar los productos de servidor en la versión de Office 2013 con productos de servidor en la versión de Office 2016, considere la posibilidad de seguir los pasos siguientes:
 
-1. Migre los datos de los servidores Office 2013 a Microsoft 365. Para obtener más información, [vea FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) o hire a Microsoft partner.
+1. Migre los datos de los servidores Office 2013 a Microsoft 365. Para obtener más información, [vea FastTrack para Microsoft 365](https://fasttrack.microsoft.com/microsoft365) o contratar a un partner de Microsoft.
 2. Roll out the new functionality and work processes to your users.
 3. Cuando ya no necesite los servidores locales que se Office productos de servidor de 2013, retirarlos.
 
@@ -139,7 +139,7 @@ Para los productos de servidor Office versión de 2013, no se ha determinado el 
 
 En el caso de los productos de servidor Office versión de 2016, no se ha determinado el final de la compatibilidad. Para aprovechar el servicio basado en la nube y las mejoras para transformar digitalmente su negocio, considere la posibilidad de seguir los pasos siguientes:
 
-1. Migre los datos de los servidores Office 2016 a Microsoft 365. Para obtener más información, [vea FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) o hire a Microsoft partner.
+1. Migre los datos de los servidores Office 2016 a Microsoft 365. Para obtener más información, [vea FastTrack para Microsoft 365](https://fasttrack.microsoft.com/microsoft365) o contratar a un partner de Microsoft.
 2. Roll out the new functionality and work processes to your users.
 3. Cuando ya no necesite los servidores locales que se Office productos de servidor de 2016, retirarlos.
 

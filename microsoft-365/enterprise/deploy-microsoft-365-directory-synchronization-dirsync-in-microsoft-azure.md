@@ -1,7 +1,7 @@
 ---
 title: Implementar Microsoft 365 sincronización de directorios en Microsoft Azure
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/05/2018
 audience: ITPro
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Obtenga información sobre cómo implementar Azure AD Conectar una máquina virtual en Azure para sincronizar cuentas entre el directorio local y el inquilino de Azure AD.
-ms.openlocfilehash: 6f7744ab894346e7468f3b90c211d0f8247ba253b291a4a8eda0b292e7409f04
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c7a3c8a3800f7dc866895606277ca7dc5bd9ddd6
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835237"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356809"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Implementar Microsoft 365 sincronización de directorios en Microsoft Azure
 

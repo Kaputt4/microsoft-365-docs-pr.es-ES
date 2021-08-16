@@ -1,7 +1,7 @@
 ---
 title: Administrar Microsoft 365 de usuario
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Obtenga información sobre cómo administrar Microsoft 365 cuentas de usuario.
-ms.openlocfilehash: 8fd2b537c83fcbab5c33c282487f02cba72bed514e01d8ecc1261d0554793331
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2fb2fe71c73f99979b35e7ca9998302f387b9035
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858884"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356029"
 ---
 # <a name="manage-microsoft-365-user-accounts"></a>Administrar Microsoft 365 de usuario
 
@@ -75,7 +75,7 @@ En la tabla siguiente se enumeran las distintas herramientas de administración 
     > [!IMPORTANT]
     > Crear cuentas en Microsoft 365 sin asignar una licencia (por ejemplo, a SharePoint Online) significa que el propietario de la cuenta puede ver el centro de Microsoft 365 pero no puede acceder a ninguno de los servicios de la suscripción de su empresa. Después de asignar una ubicación y la licencia, la cuenta se replica en el servicio o los servicios que asignó. El usuario puede iniciar sesión en su cuenta y usar los servicios que les asignó. 
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Centro de administración de Microsoft 365](../admin/add-users/index.yml)
 

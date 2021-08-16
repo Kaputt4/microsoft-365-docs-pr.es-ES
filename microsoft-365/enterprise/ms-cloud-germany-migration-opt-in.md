@@ -3,7 +3,6 @@ title: Cómo participar en la migración de Microsoft Cloud Alemania (Microsoft 
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,22 +18,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: '
-ms.openlocfilehash: 959aee9662c843fa89851924c3f5e878d73a382b8ea19258eca2a332ff404169
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7207a175a900b45e081e40e438495c0b0ed6874
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899095"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356173"
 ---
 # <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Cómo participar en la nueva migración de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a los servicios Office 365 en las nuevas regiones del centro de datos alemán
 
 > [!NOTE]
-> Este artículo solo se aplica a los clientes de Microsoft Cloud Germany (Microsoft Cloud Deutschland).
+> El período de suscripción a la migración se cierra a partir del 1 de junio de 2021.  Ahora se han migrado todos los clientes elegibles de Microsoft Cloud Germany (Microsoft Cloud Deutschland).  No se migrarán más clientes a través del proceso automatizado.  Las suscripciones e inquilinos restantes de Microsoft Cloud Germany se desactivarán y desaprovisionarán en septiembre de 2021 como parte de las actividades de cierre del servicio.  
 >
 
 ## <a name="how-to-request-migration"></a>Cómo solicitar la migración
 
-Si es un cliente elegible con el servicio aprovisionado en Microsoft Cloud Germany (Microsoft Cloud Deutschland) y ha iniciado sesión como administrador de inquilinos (global), una página del Centro de administración de Microsoft 365 le permite participar en la migración.
+Si era un cliente elegible con el servicio aprovisionado en Microsoft Cloud Germany (Microsoft Cloud Deutschland) y había iniciado sesión como administrador de inquilino (global), una página del Centro de administración de Microsoft 365 le permitía participar en la migración. La Opt-In de la Centro de administración de Microsoft 365 ya no permite la inscripción, pero el proceso se describe a continuación con fines de referencia.  
 
 Para obtener acceso a la página, expanda **Configuración** en el panel de navegación de la izquierda y, a continuación, haga clic en **Perfil de organización**.
 

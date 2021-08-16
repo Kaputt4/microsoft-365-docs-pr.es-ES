@@ -1,7 +1,7 @@
 ---
 title: Administrar SharePoint con PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: Obtenga información sobre cómo usar PowerShell para Microsoft 365 administrar usuarios, grupos y grupos de sitios.
-ms.openlocfilehash: ef92442ccbeb404e467f0b765add871215ce771bdcff97903d762c7753110efd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6bf6fe8a47f8a5fb8309c24836da614e95dd5bf2
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878982"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356257"
 ---
 # <a name="manage-sharepoint-with-powershell"></a>Administrar SharePoint con PowerShell
 

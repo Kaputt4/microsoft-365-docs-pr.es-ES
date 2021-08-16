@@ -2,8 +2,8 @@
 title: Proteger cuentas de administrador global en su Microsoft 365 entorno de prueba empresarial
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/12/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Siga estos pasos para proteger las cuentas de administrador global en su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 17aca0060501a4df3c694c4c7e4aa2aef98248d54b36d27ff3c99780648274b5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7d49e82fd53e5383a86bbcafcbf8d8c750195ab
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904736"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356353"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Proteger cuentas de administrador global en su Microsoft 365 entorno de prueba empresarial
 

@@ -1,7 +1,7 @@
 ---
 title: Planeación de Microsoft 365 Enterprise
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/12/2019
 audience: Admin
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: En este artículo se proporcionan listas de comprobación y otros recursos para planear la Microsoft 365 Enterprise implementación.
-ms.openlocfilehash: fb3a62dd1751c51530bec1927e101c0dc5fd35bcf05ce8d7ac62d9fa5809909b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e914d5ea5f145197e348fd88fe7cf2b287a883f8
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870724"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356737"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Planeación de Microsoft 365 Enterprise
 

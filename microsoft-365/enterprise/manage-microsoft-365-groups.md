@@ -1,7 +1,7 @@
 ---
 title: Administrar grupos de Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Obtenga información sobre cómo administrar Microsoft 365 grupos.
-ms.openlocfilehash: 4658f046ec6ce7fbd8039556f0faf30ee2860a7416dd99baff45e3efb4a532fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 72bc47bb699e32f849f21ea4c5470a95d6228b68
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899336"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356689"
 ---
 # <a name="manage-microsoft-365-groups"></a>Administrar grupos de Microsoft 365
 

@@ -1,7 +1,7 @@
 ---
 title: Configurar la red para Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2019
 audience: ITPro
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Busque vínculos a artículos con información que le ayuden a configurar la red para Microsoft 365, incluida una introducción a la conectividad de red y una lista de puntos de conexión.
-ms.openlocfilehash: 2feed0b600a107158b2ae32734169ae9d68294228d7eb449170dfe8a92511def
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 52de26081b4e61346ab584e1600893349b47fd17
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904436"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355885"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurar la red para Microsoft 365
 

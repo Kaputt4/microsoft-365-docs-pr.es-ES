@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a156600d22a42ce9af28623765cc32e68595712ef9dcfc4b5a26b703b5c0544d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 612c1629869a5cc777c0d00ba8169fe1707b78ed
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853900"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355837"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y URL/dominios
 
@@ -39,18 +39,20 @@ Defender for Endpoint puede bloquear lo que Microsoft considera direcciones IP o
 
 Microsoft ha administrado el conjunto de datos de inteligencia de amenazas para esto.
 
-Al crear indicadores para direcciones IP y direcciones URL o dominios, ahora puede permitir o bloquear direcciones IP, direcciones URL o dominios basados en su propia inteligencia de amenazas. Puedes hacerlo a través de la página de configuración o por grupos de máquinas si consideras que determinados grupos están más o menos en riesgo que otros.
+Al crear indicadores para direcciones IP y direcciones URL o dominios, ahora puede permitir o bloquear direcciones IP, direcciones URL o dominios basados en su propia inteligencia de amenazas. También puedes advertir a los usuarios con un mensaje si abren una aplicación arriesgada. El mensaje no les impedirá usar la aplicación, pero puedes proporcionar un mensaje personalizado y vínculos a una página de empresa que describe el uso adecuado de la aplicación. Los usuarios aún pueden omitir la advertencia y seguir usando la aplicación si lo necesitan.
+
+
+Puedes hacerlo a través de la página de configuración o por grupos de máquinas si consideras que determinados grupos están más o menos en riesgo que otros.
 
 > [!NOTE]
 > No se admite Inter-Domain de enrutamiento sin clases (CIDR) para direcciones IP.
 
-### <a name="before-you-begin"></a>Antes de empezar
-
+## <a name="before-you-begin"></a>Antes de empezar
 Es importante comprender los siguientes requisitos previos antes de crear indicadores para IPS, direcciones URL o dominios:
 
 - La dirección URL/IP permiten y bloquean la protección de red del componente Defender for Endpoint para habilitarse en modo de bloqueo. Para obtener más información sobre la protección de red y las instrucciones de configuración, vea [Enable network protection](enable-network-protection.md).
-- La versión del cliente Antimalware debe ser 4.18.1906.x o posterior.
-- Compatible con máquinas en Windows 10, versión 1709 o posterior.
+- La versión del cliente Antimalware debe ser 4.18.1906.x o posterior. 
+- Compatible con máquinas en Windows 10, versión 1709 o posterior. 
 - Asegúrese de **que los indicadores de red personalizados** están **habilitados Microsoft 365 Defender > Configuración > endpoints > características avanzadas**. Para obtener más información, vea [Características avanzadas](advanced-features.md).
 - Para obtener compatibilidad con indicadores en iOS, vea [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
@@ -70,7 +72,23 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 >
 > Puede haber hasta 2 horas de latencia (normalmente menos) entre el momento en que se realiza la acción y la dirección URL e IP bloqueadas.
 
-### <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Crear un indicador de direcciones IP, direcciones URL o dominios desde la página de configuración
+
+Al usar el modo de advertencia, puede configurar los siguientes controles:
+
+**Capacidad de omisión**
+- Botón Permitir en edge
+- Botón Permitir en notificaciones del sistema (exploradores que no son de Microsoft)
+- Parámetro de duración de omisión en el indicador
+- Omitir la aplicación en exploradores de Microsoft y no microsoft 
+
+**Dirección URL de redireccionamiento** 
+- Parámetro de dirección URL de redireccionamiento en el indicador
+- Dirección URL de redireccionamiento en el perímetro
+- Dirección URL de redireccionamiento en notificaciones del sistema (exploradores que no son de Microsoft)
+
+Para obtener más información, vea [Govern apps discovered by Microsoft Defender for Endpoint](/cloud-app-security/mde-govern).
+
+## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Crear un indicador de direcciones IP, direcciones URL o dominios desde la página de configuración
 
 1. En el panel de navegación, **seleccione Configuración**  >  **indicadores** de puntos de  >  **conexión** (en **Reglas**).
 

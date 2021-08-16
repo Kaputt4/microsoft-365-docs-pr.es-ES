@@ -1,7 +1,7 @@
 ---
 title: Introducción a PowerShell para Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 'Summary: Understand the value of PowerShell for Microsoft 365, how to get connected to your Microsoft 365 tenant, and where to get help.'
-ms.openlocfilehash: 07d40ef94d72c3d12ff305d329c43d11859fd752b701c670282ce4fefe5cab08
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3f9bb352a198ba5491063ee4475611a49d21c31b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801067"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356725"
 ---
 # <a name="get-started-with-powershell-for-microsoft-365"></a>Introducción a PowerShell para Microsoft 365
 

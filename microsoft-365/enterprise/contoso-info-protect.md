@@ -1,9 +1,9 @@
 ---
 title: Protección de la información en Contoso Corporation
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 ms.date: 10/02/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo Contoso usa las características de protección de la información Microsoft 365 para que la empresa proteja sus activos digitales en la nube.
-ms.openlocfilehash: 25a9c27d13ff55201a72bb936abbd44a5138a787b912db64ff6bc5aa798a05fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7240e226cf70b2666f6e0bc9180aea3ee63bdc91
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899697"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356305"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protección de la información en Contoso Corporation
 
@@ -100,7 +100,7 @@ Estas directivas garantizan que:
 
 En la tabla siguiente se asigna los niveles de datos de Contoso a las características de protección de la información Microsoft 365 para empresas.
 
-| Level | Microsoft 365 nube | Aplicaciones de Microsoft 365 para empresas y Windows 10 | Seguridad y cumplimiento |
+| Nivel | Microsoft 365 nube | Aplicaciones de Microsoft 365 para empresas y Windows 10 | Seguridad y cumplimiento |
 |:-------|:-----|:-----|:-----|
 | Nivel 1: Base de referencia  | Directivas de acceso condicional de SharePoint y Exchange Online <BR> Permisos en los sitios de SharePoint | Etiquetas de confidencialidad <BR> BitLocker <BR> Windows Information Protection | Directivas de acceso condicional de dispositivos y directivas de administración de aplicaciones móviles |
 | Nivel 2: Confidencial | Nivel 1 más: <BR> <BR> Etiquetas de confidencialidad <BR> Las etiquetas de retención de Microsoft 365 en los sitios de SharePoint <BR> Prevención de pérdida de datos para SharePoint y Exchange Online <BR> Sitios de SharePoint aislados  | Nivel 1 más: <BR> <BR> Etiquetas de confidencialidad en activos digitales  | Nivel 1 |
@@ -115,7 +115,7 @@ Esta es la configuración resultante de Contoso information-protection.
 
 Obtenga información sobre cómo Contoso usa las características de seguridad en [Microsoft 365 para](contoso-security-summary.md) la empresa para la administración de identidades y acceso, la protección contra amenazas, la protección de la información y la administración de seguridad.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Plan de desarrollo de seguridad](../security/office-365-security/security-roadmap.md)
 

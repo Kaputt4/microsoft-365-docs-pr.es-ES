@@ -1,7 +1,7 @@
 ---
 title: Implementar Microsoft 365 Enterprise para su organización
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2019
 audience: ITPro
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Estos pasos de introducción están diseñados para ayudarle a configurar la red, crear sus identidades, implementar Aplicaciones Microsoft 365 y migrar los datos.
-ms.openlocfilehash: ef984ba4e076ca6665dee6a75a456c2abc09c1a8cb1fb04933ab08a2a98c0d85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ce19d135b46bb848aecb557610bc1ed1703fc686
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898928"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355873"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Implementar Microsoft 365 Enterprise para su organización
 
@@ -34,7 +34,7 @@ ms.locfileid: "53898928"
 
 En este artículo se describen dos opciones de implementación, tanto si desea ayuda como si lo está haciendo por su cuenta. En cada caso, Microsoft proporciona una ruta de acceso guiada que puede seguir para que la implementación se realice correctamente.
 
-## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>Proceso Microsoft 365 Enterprise de instalación con FastTrack
+## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>Proceso Microsoft 365 Enterprise configuración guiada con FastTrack
 
 **[FastTrack para Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** es el mejor método para implementar Microsoft 365. FastTrack le guiará por las configuraciones de implementación más comunes e irá respondiendo sus preguntas sobre la marcha. 
 

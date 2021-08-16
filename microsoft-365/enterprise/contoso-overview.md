@@ -1,9 +1,9 @@
 ---
 title: Información general sobre Contoso Corporation
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender Contoso Corporation como un negocio y la estructura en niveles de sus oficinas en todo el mundo.
-ms.openlocfilehash: dc3d939895a5eedc0bf5f66a0226486bd2fa97cd15fb05aa9329a1cfbce644d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0690f942a72dedbd1247fcff9d6705ec638e189e
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899394"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356857"
 ---
 # <a name="overview-of-contoso-corporation"></a>Información general sobre Contoso Corporation
 

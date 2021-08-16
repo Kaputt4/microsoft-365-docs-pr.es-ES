@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 identidad de solo nube
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo crear usuarios y grupos cuando la suscripción Microsoft 365 está usando la identidad de solo nube.
-ms.openlocfilehash: c12b3bea5523430c89c89f1e310308925a04c3c6fe6bd0a4b1a033dadd57501f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa3bef4b25327b675f18b2ea0bb9dfea15b2a81a
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864992"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356101"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 identidad de solo nube
 

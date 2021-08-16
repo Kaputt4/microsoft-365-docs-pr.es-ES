@@ -1,7 +1,7 @@
 ---
 title: Planear la actualización desde Office servidores y clientes de 2007 o 2010
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: overview
@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene recursos para los usuarios que usan Office 2007 o Office 2010 para ayudarles a planear su actualización.
-ms.openlocfilehash: d93a1a00e2738d907fdfc9a9c9cad8a64f23519c647315166f093d424e7217b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1fbbf13f267f191f567f413dd777d12e43abc096
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794935"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356905"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planear la actualización desde servidores y clientes de Office 2007 o 2010
 
@@ -81,7 +81,7 @@ Si desea ayuda para planear la actualización, tenga en cuenta una o varias de l
 
 - Trabaje con un partner o un especialista en licencias por volumen. [Busque su Microsoft 365 o revendedor](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx). 
 
-- Si su organización compra un número de licencias Microsoft 365, nuestro equipo de FastTrack puede ayudarle a través del proceso de configuración. Para obtener más información, [vea FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365).
+- Si su organización compra un número de licencias Microsoft 365, nuestro FastTrack puede ayudarle a través del proceso de configuración. Para obtener más información, [vea FastTrack para Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365).
 
 - Si forma parte de una organización pequeña o prefiere administrar la actualización de Office de su organización, consulte [Upgrade your Microsoft 365 Business users to the latest Office client](/office365/admin/setup/upgrade-users-to-latest-office-client). 
   
@@ -107,7 +107,7 @@ Si está usando Office 2007 o Office 2010 en casa, tenga en cuenta las siguiente
 
 Si decides no actualizar ahora, las aplicaciones Office seguirán funcionando según las [escalas de tiempo](https://support.microsoft.com/lifecycle/search/13615). Sin embargo, para obtener actualizaciones de seguridad o características nuevas y mejoradas, debe actualizar.
    
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Actualizar los clientes y servidores de Office 2007](upgrade-from-office-2007-servers-and-products.md)
 - [Actualizar los clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)

@@ -1,7 +1,7 @@
 ---
 title: Crear Microsoft 365 de usuario con PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Cómo usar PowerShell para crear cuentas de usuario individuales o Microsoft 365 usuario.
-ms.openlocfilehash: c3889c7611d4c0442eeac2e42fcaea0cb71aeb7b8467f8f6e88d11c8ac2fad21
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c096b5b4966bfde9973173b9a0a0c5bf1f0d786c
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864812"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356845"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Crear Microsoft 365 de usuario con PowerShell
 
@@ -126,7 +126,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
 
 3. Revise el archivo de salida para ver los resultados. No especificamos contraseñas, por lo que las contraseñas aleatorias Microsoft 365 generadas son visibles en el archivo de salida.
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

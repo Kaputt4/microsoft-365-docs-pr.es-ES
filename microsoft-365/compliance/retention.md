@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 13b13a2f38641467611104ec0a93c2d5872d12d6fa48af758d7fc844397f7c03
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1895e8a4b60a8c51e35d2b44c34a7fdcb8e0ac47
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899983"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354385"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -252,7 +252,7 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 |Retención aplicada automáticamente | Sí | Sí |
 |La retención aplicada se basa en las condiciones <br /> - tipos de información confidencial, consultas KQL y palabras clave, clasificadores de aprendizaje| No | Sí |
 |Retención aplicada manualmente | No | Sí |
-|Presencia de interfaz de usuario para usuarios finales | No | Sí |
+|Interacción del usuario final | No | Sí |
 |Se mantiene si el contenido se mueve | No | Sí, dentro de su espacio empresarial de Microsoft 365 |
 |Declara el elemento como un registro| No | Sí |
 |Inicio del período de retención cuando se etiqueta o basado en un evento | No | Sí |
@@ -293,11 +293,13 @@ Hay otros factores que determinan cuándo se eliminará un elemento, que incluye
 Use el siguiente flujo para comprender los resultados de la retención y eliminación de un solo elemento, donde cada nivel actúa para remediar conflictos, de arriba a abajo. Si el resultado lo determina el primer nivel debido a que no existen conflictos, no es necesario pasar al siguiente nivel, y así sucesivamente.
 
 > [!IMPORTANT]
-> Si usa etiquetas de retención: antes de usar este flujo para determinar el resultado de varias opciones de retención en el mismo elemento, asegúrese de saber que [etiqueta de retención se aplica](#only-one-retention-label-at-a-time).
+> Si usa etiquetas de retención: antes de aplicar los principios para determinar el resultado de varias opciones de retención en el mismo elemento, asegúrese de saber que [etiqueta de retención se aplica](#only-one-retention-label-at-a-time).
 
 ![Diagrama de los principios de retención](../media/principles-of-retention.png)
 
 Antes de explicar cada principio con más detalle, es importante comprender la diferencia entre el período de retención del elemento y el período de retención especificado en la directiva o la etiqueta de retención. Esto se debe a que, aunque la configuración predeterminada es iniciar el período de retención cuando se crea un elemento, de modo que el final del período de retención sea corregido para el elemento, los archivos también admiten la configuración para iniciar el período de retención desde la última modificación del archivo. Con esta configuración alternativa, cada vez que se modifica el archivo, se restablece el inicio del período de retención, lo que amplía el final del período de retención del elemento. Las etiquetas de retención también admiten el inicio del período de retención cuando se etiquetan y al inicio de un evento.
+
+Para aplicar los principios en acción con una serie de preguntas Sí y No, también puede usar el [diagrama de flujo de retención](retention-flowchart.md).
 
 Explicación de los cuatro niveles diferentes:
   

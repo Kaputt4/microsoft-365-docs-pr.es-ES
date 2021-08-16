@@ -1,7 +1,7 @@
 ---
 title: Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 05/16/2018
 audience: ITPro
@@ -20,12 +20,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: Obtenga pósteres de TI que describen los modelos de arquitectura, la implementación y las opciones de plataforma para SharePoint, Exchange, Skype Empresarial y Lync.
-ms.openlocfilehash: caa4f630a047ca438decdd9dd2dede13ff96598eea1f0781140a8c66dbc6381f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 98558c20c66a808e93cd866b2f676b5f78fde3c1
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885479"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356449"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync
 
@@ -172,7 +172,7 @@ Los pósteres de TI SharePoint en Azure muestran soluciones basadas en Azure que
 |---|---|
 |[![Imagen del póster del proceso de SharePoint de recuperación ante desastres en Azure.](../media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [Más idiomas](https://www.microsoft.com/download/details.aspx?id=41993)|En este póster de TI se muestran los principios de arquitectura de un entorno de recuperación ante desastres en Azure. <br/><br/> Para obtener más información, consulte los siguientes artículos:  <br/><br/> - [SharePoint Recuperación ante desastres de Server 2013 en Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Arquitecturas de Azure para SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
    
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Centro de soluciones y arquitectura de Microsoft 365](../solutions/index.yml)
   

@@ -1,7 +1,7 @@
 ---
 title: Guías de configuración para los servicios de Office 365 y Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenga herramientas paso a paso para planear, migrar e implementar las características de las licencias de su inquilino. Busca una guía para configurar un servicio o una aplicación que necesites ejecutar.
-ms.openlocfilehash: 53356238bea6180b8929e2ee49f89aa159367f72
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 819a53d10f3793ec337828747ec7cf3bbae3aaea
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247498"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356461"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 

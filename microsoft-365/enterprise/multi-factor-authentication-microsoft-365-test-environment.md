@@ -2,8 +2,8 @@
 title: Microsoft 365 para la autenticación multifactor del entorno de prueba empresarial
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/12/2019
 audience: ITPro
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: Configure la autenticación multifactor mediante mensajes de texto enviados a un teléfono inteligente en su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 4f410b7e8a57a119ecce33626354639af89c0e65aea01b123d213908735dbb00
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 772fc5d5a05ca08f2fcb851f1e5399c1dd77828f
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813023"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356233"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Autenticación multifactor para su Microsoft 365 entorno de prueba empresarial
 

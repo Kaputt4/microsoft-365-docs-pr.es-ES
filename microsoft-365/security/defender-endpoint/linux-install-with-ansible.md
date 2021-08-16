@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2bb51c5162dcf89619d893e573e9275c002da4afb0bd21fbd03d7349488a2ac4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e9f65d7280ccbc2b780a693e1c259e3f3d6c6400
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898184"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357010"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Implementar Microsoft Defender para endpoint en Linux con Ansible
 
@@ -41,7 +41,7 @@ En este artículo se describe cómo implementar Defender for Endpoint en Linux m
 - [Descargar el paquete de incorporación](#download-the-onboarding-package)
 - [Crear archivos YAML ansibles](#create-ansible-yaml-files)
 - [Implementación](#deployment)
-- [Referencias](#references)
+- [References](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
@@ -138,7 +138,7 @@ Crea una subtarea o archivos de roles que contribuyan a un libro de juegos o una
     > [!WARNING]
     > Cambiar el canal después de la instalación inicial requiere que se vuelva a instalar el producto. Para cambiar el canal de producto: desinstale el paquete existente, vuelva a configurar el dispositivo para que use el nuevo canal y siga los pasos descritos en este documento para instalar el paquete desde la nueva ubicación.
 
-    Tenga en cuenta la distribución y la versión e identifique la entrada más cercana para ella en `https://packages.microsoft.com/config/` .
+    Tenga en cuenta la distribución y la versión e identifique la entrada más cercana para ella en `https://packages.microsoft.com/[distro]/` .
 
     En los siguientes comandos, reemplace *[distro]* y *[version]* por la información que haya identificado.
 
@@ -283,5 +283,5 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 - [Administrar paquetes aptos](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Investigar problemas de estado del agente](health-status.md)

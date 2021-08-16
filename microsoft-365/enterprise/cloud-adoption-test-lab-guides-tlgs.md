@@ -1,7 +1,7 @@
 ---
 title: Pruebas Microsoft 365 con guías de laboratorio de prueba (TLG)
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/14/2019
 audience: ITPro
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: use estas guías del laboratorio de pruebas (TLG) para configurar entornos de demostración, prueba de concepto o desarrollo y pruebas para Microsoft 365.'
-ms.openlocfilehash: 864b8f231cfd342aae26ec0e7deb83ff41bef28d8506f47a4eea6c44a1cfd8e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c1a1462c2bd177f30ced6b8e9ecdb17dd72adbc
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819453"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356113"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Pruebas Microsoft 365 con guías de laboratorio de prueba (TLG)
 

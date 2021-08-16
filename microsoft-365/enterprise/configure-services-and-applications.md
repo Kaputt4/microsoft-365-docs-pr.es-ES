@@ -1,7 +1,7 @@
 ---
 title: Configurar Microsoft 365 Enterprise servicios y aplicaciones
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -19,18 +19,18 @@ f1.keywords:
 - NOCSH
 description: Configure Microsoft 365 Enterprise servicios y aplicaciones, como SharePoint, Exchange y Skype Empresarial.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a36330f86d30bcfde30762eb8fb5d38fe84d71744c4f0e90bf28c079a50a358a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1253f5d36621c252a0fd37b35a73cdf6269ebd5
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830316"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356557"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>Configurar Microsoft 365 Enterprise servicios y aplicaciones
 
 Nuestras [instrucciones básicas de configuración](../admin/setup/setup.md) le ayudan a obtener todos los usuarios que usan Microsoft 365 servicios y aplicaciones en el menor tiempo posible. A veces, es preferible configurar las cosas antes de que todos empiecen a usarlos. Por ejemplo, si desea configurar el enrutamiento de correo, el almacenamiento de archivos o las directivas de uso compartido. 
   
-Si desea obtener ayuda para Microsoft 365, use **[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)** o las guías de instalación para Microsoft 365 [y Office 365 servicios](setup-guides-for-microsoft-365.md).
+Si desea obtener ayuda para Microsoft 365 configurar, use FastTrack o las guías de instalación para Microsoft 365 y [Office 365 servicios](setup-guides-for-microsoft-365.md). **[](https://www.microsoft.com/fasttrack/microsoft-365)**
   
 |**Servicios y aplicaciones**|**Recursos**|
 |:-----|:-----|

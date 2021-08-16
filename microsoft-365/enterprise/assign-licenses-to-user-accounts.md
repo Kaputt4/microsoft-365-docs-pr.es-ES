@@ -1,7 +1,7 @@
 ---
 title: Asignar Microsoft 365 a cuentas de usuario
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo asignar licencias Microsoft 365 a cuentas de usuario, ya sea individualmente o en función de la pertenencia a grupos.
-ms.openlocfilehash: e2550f7532c332de3a6d2939a2249788aa04bf1122d00359f860bf8cae349b6f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2d2afe7b9989ef7b82920a45e3dacd574cd51b5c
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855220"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356939"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Asignar Microsoft 365 a cuentas de usuario
 
@@ -63,7 +63,7 @@ Asegúrese de que tiene suficientes licencias para todos los miembros del grupo.
 
 Para obtener más información, consulte [group-based licensing in Azure AD](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Con el conjunto adecuado de cuentas de usuario a las que se han asignado licencias, ya está listo para:
 

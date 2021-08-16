@@ -1,7 +1,7 @@
 ---
 title: Plan de fin del soporte técnico de PerformancePoint Server 2007
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: PerformancePoint Server 2007, ProClarity y SharePoint Server 2007 han llegado al final de la compatibilidad. Lea este artículo para ayudar a planear la actualización de la solución de BI.
-ms.openlocfilehash: 6a0803354044f6c94a1907dc919adc2851483e38d7755da84a354075eb623c34
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88818fe4ecc0a2be7a63abe615bd4206c50ead3b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885164"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356485"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de PerformancePoint Server 2007
 
@@ -95,7 +95,7 @@ En la tabla siguiente se comparan las ventajas clave de usar Excel con Microsoft
 
 Si pasa a Microsoft 365, tendrá los servicios y aplicaciones más actualizados, incluidos Excel 2016. PerformancePoint Services no está disponible en Microsoft 365, por lo que reemplazará el contenido del panel de PerformancePoint por Excel libros u otros informes. La buena noticia es que Excel 2016 tiene muchos tipos de gráficos nuevos y es más fácil que nunca crear paneles impresionantes en Excel. Y las nuevas características se agregan con regularidad. Para obtener más información, vea [What's New in Excel 2016 for Windows](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx).
   
-Además, si compra 50 puestos o más de Microsoft 365, el equipo de Microsoft FastTrack puede ayudarle a configurarse. Para obtener más información, visite [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
+Además, si compra 50 puestos o más de Microsoft 365, el equipo de microsoft FastTrack puede ayudarle a configurarse. Para obtener más información, visite [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
   
 #### <a name="excel-with-sharepoint-server-on-premises"></a>Excel con SharePoint server (local)
 

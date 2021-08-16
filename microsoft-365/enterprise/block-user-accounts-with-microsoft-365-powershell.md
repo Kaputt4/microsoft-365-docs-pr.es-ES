@@ -1,7 +1,7 @@
 ---
 title: Bloquear Microsoft 365 de usuario con PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/16/2020
 audience: Admin
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Cómo usar PowerShell para bloquear y desbloquear el acceso a Microsoft 365 cuentas.
-ms.openlocfilehash: 53988dbe995c67dd65e0b50f013b77dd7165e6511a50da8d95b43d7536c049e6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fd9eba96b09a73b2fb6e87b30096dbf8186caceb
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819540"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356437"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquear Microsoft 365 de usuario con PowerShell
 

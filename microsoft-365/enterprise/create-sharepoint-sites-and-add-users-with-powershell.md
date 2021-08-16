@@ -1,7 +1,7 @@
 ---
 title: Crear sitios de SharePoint Online y agregar usuarios con PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Summary: Use PowerShell to create new SharePoint Online sites and then add users and groups to those sites.'
-ms.openlocfilehash: 32c577b40dc85ebad586376a6a47e4587502eae626c21ce3076866e39a17e321
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c9a55c6373e2ecc81c59b2e1bf2d1b8850dd1c13
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864824"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356401"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Crear sitios de SharePoint Online y agregar usuarios con PowerShell
 
@@ -167,7 +167,7 @@ Ya puede ejecutar el script UsersAndGroup.ps1 para agregar usuarios y grupos a v
 
 5. Antes de continuar, espere a que el símbolo del sistema vuelva. Primero verá que los grupos aparecen según se han creado y, luego, verá la lista de grupos repetida a medida que se vayan agregando usuarios.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Conectarse a SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 

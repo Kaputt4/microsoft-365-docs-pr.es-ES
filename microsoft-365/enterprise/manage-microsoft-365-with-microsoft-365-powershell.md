@@ -1,7 +1,7 @@
 ---
 title: Administrar Microsoft 365 con PowerShell
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: Obtenga información sobre cómo administrar Microsoft 365 usuarios, licencias y 365 aplicaciones con PowerShell.
-ms.openlocfilehash: e5f30a9d899ed84039077071fb33a0b540d07747e45c3cec2b2d70fa974eccb9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bbbbec88f8dcb4b31102bab4be4549c94874aff8
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885212"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357082"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Administrar Microsoft 365 con PowerShell
 
@@ -46,7 +46,7 @@ Seleccione entre los siguientes temas para obtener información sobre cómo usar
 
     Comience aquí si desea usar comandos de automatización para administrar SharePoint.
 
-- [**Exchange Online**](/powershell/exchange/exchange-online-powershell)
+- [**Exchange en línea**](/powershell/exchange/exchange-online-powershell)
 
     Comience aquí si desea administrar el Exchange Online.
 

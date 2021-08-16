@@ -1,8 +1,8 @@
 ---
 title: Migración de buzones de inquilinos cruzados
 description: Cómo mover buzones entre Microsoft 365 o Office 365 inquilinos.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 09a8e608153d9d985b0f407c01f0d68c7de2e2a315ca5d00447fd3bad30fde4c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 430dae4e4432defd5d9dd80e63bc149858781a9c
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855171"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356833"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -99,18 +99,18 @@ Preparar el espacio empresarial de origen:
 
    |Parámetro|Valor|Obligatorio u opcional
    |---|---|---|
-   |-TargetTenantDomain|Dominio de inquilino de destino, como fabrikam \. onmicrosoft.com.|Obligatorio|
-   |-ResourceTenantDomain|Dominio de inquilino de origen, como contoso \. onmicrosoft.com.|Obligatorio|
-   |-ResourceTenantAdminEmail|Dirección de correo electrónico del administrador del espacio empresarial de origen. Este es el administrador de inquilinos de origen que dará su consentimiento al uso de la aplicación de migración de buzones enviada desde el administrador de destino. Este es el administrador que recibirá la invitación de correo electrónico para la aplicación.|Obligatorio|
-   |-ResourceTenantId|Identificador de organización de inquilino de origen (GUID).|Obligatorio|
-   |-SubscriptionId|La suscripción de Azure que se usará para crear recursos.|Obligatorio|
-   |-ResourceGroup|Nombre del grupo de recursos de Azure que contiene o contendrá el Almacén de claves.|Obligatorio|
-   |-KeyVaultName|Instancia de Azure Key Vault que almacenará el certificado o secreto de la aplicación de migración de buzones.|Obligatorio|
-   |-CertificateName|Nombre del certificado al generar o buscar certificado en el almacén de claves.|Obligatorio|
-   |-CertificateSubject|Nombre de sujeto del certificado de Azure Key Vault, como CN=contoso_fabrikam.|Obligatorio|
-   |-AzureResourceLocation|Ubicación del grupo de recursos de Azure y del almacén de claves.|Obligatorio|
+   |-TargetTenantDomain|Dominio de inquilino de destino, como fabrikam \. onmicrosoft.com.|Necesario|
+   |-ResourceTenantDomain|Dominio de inquilino de origen, como contoso \. onmicrosoft.com.|Necesario|
+   |-ResourceTenantAdminEmail|Dirección de correo electrónico del administrador del espacio empresarial de origen. Este es el administrador de inquilinos de origen que dará su consentimiento al uso de la aplicación de migración de buzones enviada desde el administrador de destino. Este es el administrador que recibirá la invitación de correo electrónico para la aplicación.|Necesario|
+   |-ResourceTenantId|Identificador de organización de inquilino de origen (GUID).|Necesario|
+   |-SubscriptionId|La suscripción de Azure que se usará para crear recursos.|Necesario|
+   |-ResourceGroup|Nombre del grupo de recursos de Azure que contiene o contendrá el Almacén de claves.|Necesario|
+   |-KeyVaultName|Instancia de Azure Key Vault que almacenará el certificado o secreto de la aplicación de migración de buzones.|Necesario|
+   |-CertificateName|Nombre del certificado al generar o buscar certificado en el almacén de claves.|Necesario|
+   |-CertificateSubject|Nombre de sujeto del certificado de Azure Key Vault, como CN=contoso_fabrikam.|Necesario|
+   |-AzureResourceLocation|Ubicación del grupo de recursos de Azure y del almacén de claves.|Necesario|
    |-ExistingApplicationId|Aplicación de migración de correo que se usará si ya se creó una.|Opcional|
-   |-AzureAppPermissions|Los permisos necesarios para concederse a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al inquilino de recursos).|Obligatorio|
+   |-AzureAppPermissions|Los permisos necesarios para concederse a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al inquilino de recursos).|Necesario|
    |-UseAppAndCertGeneratedForSendingInvitation|Parámetro para usar la aplicación creada para la migración que se usará para enviar una invitación de vínculo de consentimiento al administrador del espacio empresarial de origen. Si no está presente, se pedirán las credenciales del administrador de destino para conectarse al Administrador de invitaciones de Azure y enviar la invitación como administrador de destino.|Opcional|
    |-KeyVaultAuditStorageAccountName|Cuenta de almacenamiento donde se almacenarían los registros de auditoría de Key Vault.|Opcional|
    |-KeyVaultAuditStorageResourceGroup|El grupo de recursos que contiene la cuenta de almacenamiento para almacenar registros de auditoría de Key Vault.|Opcional|
@@ -304,7 +304,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
    - El mailuser de destino debe tener estos atributos del buzón de origen o asignados con el nuevo objeto User:
       - ExchangeGUID (flujo directo de origen a destino): el GUID del buzón debe coincidir. El proceso de movimiento no continuará si no está presente en el objeto de destino.
       - ArchiveGUID (flujo directo de origen a destino): el GUID de archivo debe coincidir. El proceso de movimiento no continuará si no está presente en el objeto de destino. (Esto solo es necesario si el buzón de origen está habilitado para archivo).
-      - LegacyExchangeDN (flujo como proxyAddress, "x500: ") : LegacyExchangeDN debe estar presente en mailUser de destino como <LegacyExchangeDN> x500: proxyAddress. Además, también debe copiar todas las direcciones x500 del buzón de origen al usuario de correo de destino. Los procesos de movimiento no procederán si no están presentes en el objeto de destino. 
+      - LegacyExchangeDN (flujo como proxyAddress, "x500: ") : LegacyExchangeDN debe estar presente en mailUser de destino como \<LegacyExchangeDN> x500: proxyAddress. Además, también debe copiar todas las direcciones x500 del buzón de origen al usuario de correo de destino. Los procesos de movimiento no procederán si no están presentes en el objeto de destino. 
       - UserPrincipalName: UPN se alineará con la nueva identidad o la compañía de destino del usuario (por ejemplo, user@northwindtraders.onmicrosoft.com).
       - SMTPAddress principal: la dirección SMTP principal se alineará con la compañía NEW del usuario (por ejemplo, user@northwind.com).
       - TargetAddress/ExternalEmailAddress: MailUser hará referencia al buzón actual del usuario hospedado en el inquilino de origen (por ejemplo, user@contoso.onmicrosoft.com). Al asignar este valor, compruebe que también ha asignado PrimarySMTPAddress o este valor establecerá primarySMTPAddress, lo que provocará errores de movimiento.
@@ -321,7 +321,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
      |PrimarySmtpAddress|Lara.Newton@northwind.com|
      |ExternalEmailAddress|SMTP:LaraN@contoso.onmicrosoft.com|
      |ExchangeGuid|1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8|
-     |LegacyExchangeDN|/o=First Organization/ou=Exchange Administrative Group|
+     |DN de Exchange heredado|/o=First Organization/ou=Exchange Administrative Group|
      ||(FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara|
      |EmailAddresses|x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190|
      ||7273f1f9-Lara|
@@ -339,7 +339,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
      |UserPrincipalName|LaraN@contoso.onmicrosoft.com|
      |PrimarySmtpAddress|Lara.Newton@contoso.com|
      |ExchangeGuid|1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8|
-     |LegacyExchangeDN|/o=First Organization/ou=Exchange Administrative Group|
+     |DN de Exchange heredado|/o=First Organization/ou=Exchange Administrative Group|
      ||(FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara|
      |EmailAddresses|smtp:LaraN@contoso.onmicrosoft.com
      ||SMTP:Lara.Newton@contoso.com|
@@ -432,7 +432,7 @@ El envío por lotes de migración también se admite desde el nuevo Centro Excha
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo locales, tanto de origen como de destino, se actualicen con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del movimiento?**
 
@@ -593,7 +593,7 @@ Sí, pero solo guardamos los permisos de almacén como se describe en estos art�
 
 **¿Es necesario Azure Key Vault y cuándo se realizan las transacciones?**
 
-Sí, se requiere una suscripción de Azure para usar Key Vault para almacenar el certificado para autorizar la migración. A diferencia de las migraciones de incorporación que usan nombre de usuario & contraseña para autenticarse en el origen, las migraciones de buzones entre inquilinos usan OAuth y este certificado como secreto/credencial. El acceso al almacén de claves debe mantenerse en todas las migraciones de buzones, ya que se tiene acceso a él una vez al principio y al final de la migración, así como una vez cada 24 horas durante los tiempos de sincronización incremental. Puede revisar los detalles del costo de AKV [aquí](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
+Sí, se requiere una suscripción de Azure para usar Key Vault para almacenar el certificado para autorizar la migración. A diferencia de las migraciones de incorporación que usan nombre de usuario & contraseña para autenticarse en el origen, las migraciones de buzones entre inquilinos usan OAuth y este certificado como secreto/credencial. El acceso al almacén de claves debe mantenerse en todas las migraciones de buzones, ya que se tiene acceso a él una vez al principio y al final de la migración, así como una vez cada 24 horas durante los tiempos de sincronización incremental. Puede revisar los detalles del costo de AKV [aquí](https://azure.microsoft.com/pricing/details/key-vault/).
 
 **¿Tiene alguna recomendación para lotes?**
 

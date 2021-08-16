@@ -1,7 +1,7 @@
 ---
 title: Administrar Microsoft 365 inquilinos con Windows PowerShell para partners de DAP
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: En este artículo, obtenga información sobre cómo usar PowerShell para Microsoft 365 administrar las tenencias de los clientes.
-ms.openlocfilehash: 2bbe59f5c5c27830569be2c357a586152ced849c62de0b62e3d29fcc6d926d37
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee0eb3a645d6590e2393fe8ea7820511df36ab4a
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899324"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356017"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Administrar Microsoft 365 inquilinos con Windows PowerShell para asociados de permisos de acceso delegado (DAP)
 
@@ -31,7 +31,7 @@ ms.locfileid: "53899324"
 Windows PowerShell permite a los partners de Syndication y Proveedor de soluciones en la nube (CSP) administrar e informar fácilmente sobre la configuración de arrendamiento de clientes que no están disponibles en el Centro de administración de Microsoft 365. Tenga en cuenta que los permisos Administrar en nombre de (AOBO) son necesarios para que la cuenta de administrador del asociado se conecte a los inquilinos del cliente.
 
 Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Con frecuencia son los proveedores de red o de telecomunicaciones para otras compañías. Agrupan Microsoft 365 suscripciones en sus ofertas de servicio a sus clientes. Cuando venden una suscripción Microsoft 365, se les conceden automáticamente permisos Administrar en nombre de (AOBO) a las tenencias del cliente para que puedan administrar e informar sobre las tenencias del cliente.
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 Los procedimientos de este tema requieren que se conecte a [Conectar a Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md).
 
@@ -66,7 +66,7 @@ Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object
 
 ### <a name="list-all-domains-for-a-tenant"></a>Hacer una lista de todos los dominios de un inquilino
 
-Para obtener todos los dominios de cualquier inquilino de cliente, ejecute este comando. Reemplace el  _<customer TenantId value>_ por el valor real.
+Para obtener todos los dominios de cualquier inquilino de cliente, ejecute este comando. Reemplace el  _\<customer TenantId value>_ por el valor real.
 
 ```powershell
 Get-MsolDomain -TenantId <customer TenantId value>
@@ -84,7 +84,7 @@ $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.Tenan
 
 ### <a name="get-all-users-for-a-tenant"></a>Obtener todos los usuarios de un inquilino
 
-Se mostrarán los estados **UserPrincipalName**, **DisplayName** y **isLicensed** para todos los usuarios de un inquilino en particular. Reemplace el _<customer TenantId value>_ por el valor real.
+Se mostrarán los estados **UserPrincipalName**, **DisplayName** y **isLicensed** para todos los usuarios de un inquilino en particular. Reemplace el _\<customer TenantId value>_ por el valor real.
 
 ```powershell
 Get-MsolUser -TenantID <customer TenantId value>
@@ -92,7 +92,7 @@ Get-MsolUser -TenantID <customer TenantId value>
 
 ### <a name="get-all-details-about-a-user"></a>Obtener todos los detalles acerca de un usuario
 
-Si desea ver todas las propiedades de un usuario concreto, ejecute este comando. Reemplace el  _<customer TenantId value>_ y el _<user principal name value>_ por los valores reales.
+Si desea ver todas las propiedades de un usuario concreto, ejecute este comando. Reemplace el  _\<customer TenantId value>_ y el _\<user principal name value>_ por los valores reales.
 
 ```powershell
 Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user principal name value>

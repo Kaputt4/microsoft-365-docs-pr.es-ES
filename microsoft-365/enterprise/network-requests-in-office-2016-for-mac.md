@@ -1,7 +1,7 @@
 ---
 title: Solicitudes de red en Office para Mac
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/9/2018
 audience: ITPro
@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: En este artículo se describen los puntos de conexión y las direcciones URL Office para Mac que las aplicaciones intentan alcanzar y los servicios proporcionados.
-ms.openlocfilehash: 48a2dd266e0ed9379651e62ad835f4d27a5228b726b5f0e6da03ed8a55e23606
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: abb744d4ee75b06e66ac6a9aa43c7fd18d8a452f
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848488"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356089"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Solicitudes de red en Office para Mac
 
@@ -324,7 +324,7 @@ Si su organización bloquea las solicitudes a las direcciones URL a través de u
 Si el servidor proxy requiere autenticación, se devolverá una respuesta 407 al cliente. Para obtener la mejor experiencia, asegúrese de que está usando Office para Mac compilaciones 15.27 o posterior, ya que incluyen correcciones específicas para trabajar con servidores NTLM y Kerberos.
   
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
 

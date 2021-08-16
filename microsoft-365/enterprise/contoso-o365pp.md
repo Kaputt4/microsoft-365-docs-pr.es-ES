@@ -1,9 +1,9 @@
 ---
 title: Implementación de Aplicaciones de Microsoft 365 para empresas en Contoso
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usa Microsoft Endpoint Configuration Manager para implementar Aplicaciones de Microsoft 365 para empresas.
-ms.openlocfilehash: 858d83f02bc00874c639815ce4af6a491a0352764f9ddb7ab024d3d9fc37ebe7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65c73ccccd3e0ca5a3d9e09d1643692d56f5c341
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899515"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356293"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Implementación de Aplicaciones de Microsoft 365 para empresas en Contoso
 
@@ -80,7 +80,7 @@ Esta es la arquitectura de implementación Aplicaciones Microsoft 365 para empre
 
 Obtenga información sobre cómo Contoso usa [Microsoft Intune](contoso-mdm.md) en Microsoft 365 empresa para administrar sus dispositivos y las aplicaciones que ejecutan en toda la organización.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Aplicaciones de Microsoft 365 para empresas](/deployoffice/deployment-guide-microsoft-365-apps)
 
