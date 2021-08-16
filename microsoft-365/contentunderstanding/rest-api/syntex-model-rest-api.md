@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Información general sobre la API de REST del modelo de comprensión mediante documentos de SharePoint Syntex.
-ms.openlocfilehash: 279c624bb818e5d8d33b476f997290269ff634cb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 7dc6fe321c2cc0dd2617747860dc32a1d7753f9f229be10e5d0e5a91241d0202
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865040"
 ---
 # <a name="sharepoint-syntex-document-understanding-model-rest-api"></a>API de REST del modelo de comprensión mediante documentos de SharePoint Syntex
 
@@ -24,14 +24,14 @@ Puede usar la interfaz REST de SharePoint para crear un modelo de comprensión m
 
 El servicio REST de SharePoint Online (y SharePoint 2016 o versiones posteriores locales) admite la combinación de varias solicitudes en una sola llamada al servicio mediante el uso de la opción de consulta $batch de OData. 
 
-Para obtener información detallada y vínculos a los ejemplos de código, vea [Realizar solicitudes de lote con las API de REST](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis.md).
+Para obtener información detallada y vínculos a los ejemplos de código, vea [Realizar solicitudes de lote con las API de REST](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Antes de empezar, asegúrese de que está familiarizado con lo siguiente:
 
-- [Introducción al servicio REST para SharePoint](/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service.md) 
-- [Completar operaciones básicas con puntos de conexión REST de SharePoint](/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints.md)
+- [Introducción al servicio REST para SharePoint](/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service) 
+- [Completar operaciones básicas con puntos de conexión REST de SharePoint](/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints)
 
 ## <a name="rest-commands"></a>Comandos de REST
 
