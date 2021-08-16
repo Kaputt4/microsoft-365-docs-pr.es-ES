@@ -1,5 +1,5 @@
 ---
-title: Revisar los requisitos de arquitectura y los conceptos de planeación de Microsoft Defender para Office 365 marcos de diseño, construcción y construcción
+title: Revise los requisitos de arquitectura y los conceptos de planeación para Microsoft Defender para Office 365
 description: El diagrama técnico de Microsoft Defender para Office 365 en Microsoft 365 Defender le ayudará a comprender la identidad en Microsoft 365 antes de crear el entorno piloto o el laboratorio de prueba.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 15c84921dcfb4644241cf83ce4ffb6403180b9d4
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 2a62756522ad82d04c72995508ca8ada1e575f94c9bc9940069d59057f7de63f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458693"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897694"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Revisar Microsoft Defender para obtener Office 365 de arquitectura y conceptos clave
 
@@ -77,7 +77,7 @@ En la siguiente tabla se identificaron conceptos clave que son importantes para 
 
 Para obtener información más detallada acerca de las funcionalidades incluidas con Microsoft Defender para Office, vea [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-## <a name="review-architecture-requirements"></a>Revisar los requisitos de arquitectura
+## <a name="review-architecture-requirements"></a>Revisión de los requisitos de arquitectura
 Un piloto de producción o evaluación de MDO correcto asume los siguientes requisitos previos:
 - Todos los buzones de destinatarios están actualmente en Exchange Online.
 - El registro MX público se resuelve directamente en EOP o en una puerta de enlace SMTP de terceros que, a continuación, retransmite el correo electrónico externo entrante directamente a EOP.
@@ -93,7 +93,7 @@ Puede integrar Microsoft Defender para Office 365 con Azure Sentinel para analiz
 
 Microsoft Defender para Office 365 también se puede integrar en otras soluciones de administración de eventos y de información de seguridad (SIEM) mediante la API de administración Office 365 [actividad](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Paso 2 de 3: [Habilitar el entorno de evaluación de Microsoft Defender para Office 365](eval-defender-office-365-enable-eval.md)
 

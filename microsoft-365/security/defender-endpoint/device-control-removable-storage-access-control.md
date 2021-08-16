@@ -1,7 +1,6 @@
 ---
-title: Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
+title: Microsoft Defender para Endpoint Device Control Extraíble Storage control de acceso, medios de almacenamiento extraíbles
 description: Una información general sobre Microsoft Defender para endpoint
-keywords: medios de almacenamiento extraíbles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,16 +15,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4765477c4faf583fd9906aaa700aafc3fb26a992172f81eb4d3f6978724724be
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 769ccb8f50a6eb407d5a1a338f91af0bfd8ae401
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520727"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246206"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+> [!NOTE]
+> La administración de directivas de grupo de este producto ahora es generalmente disponible (4.18.2106): vea el blog tech [Community: Proteger](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806) el almacenamiento extraíble y la impresora con Microsoft Defender para endpoint 
+
 
 Microsoft Defender para endpoint device control removable Storage Access Control permite realizar la siguiente tarea:
 
@@ -35,15 +36,14 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 ****
 
-|Privilegio|Permiso|
-|---|---|
-|Access|Lectura, Escritura, Ejecución|
-|Modo de acción|Auditoría, Permitir, Impedir|
-|Compatibilidad con CSP|Sí|
-|Compatibilidad con GPO|Sí|
-|Soporte técnico basado en usuarios|Sí|
-|Compatibilidad basada en máquina|Sí|
-|||
+| Privilegio | Permiso |
+|:---|:---|
+| Access | Lectura, Escritura, Ejecución |
+| Modo de acción | Auditoría, Permitir, Impedir |
+| Compatibilidad con CSP | Sí |
+| Compatibilidad con GPO | Sí |
+| Soporte técnico basado en usuarios | Sí |
+| Compatibilidad basada en máquina | Sí |
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
@@ -62,128 +62,28 @@ Implemente el control Storage de acceso extraíble en Windows 10 dispositivos co
 
 Puede usar las siguientes propiedades para crear un grupo de almacenamiento extraíble:
 
-### <a name="property-name-group-id"></a>Nombre de la propiedad: Id. de grupo
+#### <a name="removable-storage-group"></a>Grupo Storage extraíble
+|Nombre de propiedad  |Descripción  |Opciones  |
+|---------|---------|---------|
+|**GroupId**     |   [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un identificador único, representa el grupo y se usará en la directiva.      |         |
+|**DescriptorIdList**     |  Enumera las propiedades del dispositivo que quieres usar para cubrir en el grupo. Para cada propiedad de dispositivo, consulta [Propiedades del dispositivo](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true) para obtener más detalles.       |  - **PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</br> - **DeviceId** </br>- **HardwareId**</br>- **InstancePathId**: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. El número al final (por ejemplo, &0) representa la ranura disponible y puede cambiar de un dispositivo a otro. Para obtener los mejores resultados, use un comodín al final. Por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*</br>- **FriendlyNameId**</br>- **SerialNumberId**</br>- **VID**</br>- **PID**</br>- **VID_PID**</br> 0751_55E0: coincide con este par VID/PID exacto </br>_55E0: hacer coincidir cualquier medio con PID=55E0 </br> 0751_: coincidir con cualquier medio con VID=0751 |
+|**MatchType**     |    Cuando se usan varias propiedades de dispositivo en descriptorIDList, MatchType define la relación.     |  **MatchAll**: </br>Cualquier atributo bajo descriptorIdList será **relación And;** por ejemplo, si el administrador pone DeviceID e InstancePathID, por cada USB conectado, el sistema comprobará si el USB cumple ambos valores. </br> </br>**MatchAny**:</br> Los atributos de descriptorIdList serán **o** relación; por ejemplo, si el administrador pone DeviceID e InstancePathID, por cada USB conectado, el sistema hará la aplicación siempre que el USB tenga un valor **DeviceID** o **InstanceID** idéntico.       |
+||||
 
-**Descripción:** GUID, un identificador único, representa el grupo y se usará en la directiva.
+#### <a name="access-control-policy"></a>Directiva de control de acceso
 
-### <a name="property-name-descriptoridlist"></a>Nombre de la propiedad: DescriptorIdList
-
-**Descripción:** enumera las propiedades del dispositivo que quieres usar para cubrir en el grupo.
-
-Para cada propiedad de dispositivo, consulta **la sección Propiedades del** dispositivo anterior para obtener más detalles.
-
-**Opciones**:
-
-- Id. principal
-  - RemovableMediaDevices
-  - CdRomDevices
-- DeviceId
-- HardwareId
-- InstancePathId: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0.
-
-El número al final (por **ejemplo,&0**) representa la ranura disponible y puede cambiar de un dispositivo a otro. Para obtener los mejores resultados, use un comodín al final. Por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.
-
-- FriendlyNameId
-- SerialNumberId
-- VID
-- PID
-- VID_PID
-  - 0751_55E0: coincide con este par VID/PID exacto
-  - _55E0: hacer coincidir cualquier medio con PID=55E0
-  - 0751_: hacer coincidir cualquier medio con VID=0751
-
-### <a name="property-name-matchtype"></a>Nombre de la propiedad: MatchType
-
-**Descripción:** cuando se usan varias propiedades de dispositivo en descriptorIDList, MatchType define la relación.
-
-**Opciones**:
-
-- MatchAll: cualquier atributo bajo descriptorIdList será **relación And;** por ejemplo, si el administrador pone DeviceID e InstancePathID, por cada USB conectado, el sistema comprobará si el USB cumple ambos valores.
-- MatchAny: los atributos de descriptorIdList serán **o** relación; por ejemplo, si el administrador pone DeviceID e InstancePathID, por cada USB conectado, el sistema hará la aplicación siempre que el USB tenga un valor **DeviceID** o **InstanceID** idéntico.
-
-Las siguientes son las propiedades de la directiva de control de acceso:
-
-### <a name="property-name-policyruleid"></a>Nombre de la propiedad: PolicyRuleId
-
-**Descripción:** GUID, un identificador único, representa la directiva y se usará en los informes y la solución de problemas.
-
-### <a name="property-name-includedidlist"></a>Nombre de la propiedad: IncludedIdList
-
-**Descripción:** los grupos a los que se aplicará la directiva. Si se agregan varios grupos, la directiva se aplicará a cualquier medio de todos esos grupos.
-
-**Opciones** El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia.
-
-En el ejemplo siguiente se muestra el uso de GroupID:
-
-`<IncludedIdList> <GroupId>{EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`
-
-### <a name="property-name-excludedidlist"></a>Nombre de la propiedad: ExcludedIDList
-
-**Descripción:** los grupos a los que no se aplicará la directiva.
-
-**Opciones:** el IDENTIFICADOR de grupo/GUID debe usarse en esta instancia.
-
-### <a name="property-name-entry-id"></a>Nombre de la propiedad: Id. de entrada
-
-**Descripción:** One PolicyRule puede tener varias entradas; cada entrada con un GUID único indica al Control de dispositivos una restricción.
-
-### <a name="property-name-type"></a>Nombre de la propiedad: Type
-
-**Descripción:** define la acción de los grupos de almacenamiento extraíbles en IncludedIDList.
-
-- Aplicación: Permitir o denegar
-- Auditoría: AuditAllowed o AuditDenied
-
-**Opciones**:
-
-- Permitir
-- Denegar
-- AuditAllowed: define la notificación y el evento cuando se permite el acceso
-- AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Denegar.**
-
-Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el primero de la directiva. Un ejemplo de tipo de conflicto **es Allow** y **Deny**.
-
-### <a name="property-name-options"></a>Nombre de la propiedad: Opciones
-
-**Descripción:** define si se va a mostrar la notificación o no.
-
-:::image type="content" source="images/device-status.png" alt-text="La pantalla en la que se puede ver el estado del dispositivo":::
-
-**Opciones**: 0-4.
-
-Cuando el **tipo Permitir** o **Denegar** está seleccionado:
-
-- 0: nada
-- 4: deshabilitar **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **se produce** block y la **configuración auditDenied** está configurada, el sistema no mostrará la notificación.
-
-Cuando se **selecciona Tipo AuditAllowed** **o AuditDenied:**
-
-- 0: nada
-- 1: mostrar notificación, solo funciona para AuditDenied
-- 2: evento send
-- 3: mostrar notificación y enviar evento. Si se aplica esto a AuditAllowed, solo se desaprendirá el evento para informar, pero no se mostrará la notificación.
-
-### <a name="property-name-sid"></a>Nombre de la propiedad: Sid
-
-**Descripción:** define si se va a aplicar esta directiva a un usuario o grupo de usuarios específicos; una entrada puede tener un máximo de un SID y una entrada sin ningún SID significa aplicar la directiva sobre el equipo.
-
-### <a name="property-name-computersid"></a>Nombre de la propiedad: ComputerSid
-
-**Descripción:** define si se va a aplicar esta directiva a un equipo o grupo de máquinas específicos; una entrada puede tener un máximo de un ComputerSID y una entrada sin que ComputerSID signifique aplicar la directiva sobre el equipo. Si desea aplicar una entrada a un usuario específico y a un equipo específico, agregue SID y ComputerSID a la misma entrada.
-
-### <a name="property-name-accessmask"></a>Nombre de la propiedad: AccessMask
-
-**Descripción:** define el acceso.
-
-Opciones 1-7:
-
-- 1: Leer
-- 2: Escribir
-- 3: Lectura y escritura
-- 4: Ejecutar
-- 5: Leer y ejecutar
-- 6: Escribir y ejecutar
-- 7: Lectura y escritura y ejecución
+|Nombre de propiedad  |Descripción  |Opciones  |
+|---------|---------|---------|
+|PolicyRuleId     |     [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un identificador único, representa la directiva y se usará en los informes y la solución de problemas.    |         |
+|IncludedIdList     | Los grupos a los que se aplicará la directiva. Si se agregan varios grupos, la directiva se aplicará a cualquier medio de todos esos grupos.        |    El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia. </br> En el ejemplo siguiente se muestra el uso de GroupID: </br> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`    |
+|ExcludedIDList     | Los grupos a los que no se aplicará la directiva.        |    El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia.     |
+|Id. de entrada     |  Un PolicyRule puede tener varias entradas; cada entrada con un GUID único indica al Control de dispositivos una restricción.       |         |
+|Tipo|Define la acción de los grupos de almacenamiento extraíbles en IncludedIDList. </br>- Aplicación: Permitir o denegar </br>- Auditoría: AuditAllowed o AuditDenied|- Permitir </br>- Denegar</br> - AuditAllowed: define la notificación y el evento cuando se permite el acceso</br>- AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Denegar.** </br></br> Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el primero de la directiva. Un ejemplo de tipo de conflicto **es Allow** y **Deny**.|
+|Sid|El sid del equipo local o el Sid del objeto AD, define si se va a aplicar esta directiva a un usuario o grupo de usuarios específicos; una entrada puede tener un máximo de un Sid y una entrada sin que ningún Sid signifique aplicar la directiva sobre la máquina.||
+|ComputerSid|Sid de equipo local o Sid del objeto AD, define si se va a aplicar esta directiva sobre un equipo o grupo de máquinas específicos; una entrada puede tener un máximo de un ComputerSid y una entrada sin que ComputerSid signifique aplicar la directiva sobre el equipo. Si desea aplicar una entrada a un usuario específico y a un equipo específico, agregue Sid y ComputerSid a la misma entrada.||
+|Opciones|Define si se va a mostrar la notificación o no|**0-4:** cuando se selecciona Tipo Permitir o Denegar.</br></br>0: nada</br>4: deshabilitar **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **se produce** block y la configuración auditDenied está configurada, el sistema no mostrará la notificación. </br> </br>Cuando se **selecciona Tipo AuditAllowed** **o AuditDenied:**</br>0: nada</br>1: mostrar notificación</br>2: evento send</br>3: mostrar notificación y enviar evento|
+|AccessMask|Define el acceso.|**1-7**: </br></br>1: Leer</br>2: Escribir</br>3: Lectura y escritura</br>4: Ejecutar</br>5: Leer y ejecutar</br>6: Escribir y ejecutar</br>7: Lectura y escritura y ejecución|
+||||
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Escenarios comunes Storage control de acceso extraíble
 
@@ -325,7 +225,7 @@ DeviceEvents
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="La pantalla que muestra el bloqueo del almacenamiento extraíble":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="what-is-the-removable-storage-media-limitation-for-the-maximum-number-of-usbs"></a>¿Cuál es la limitación de medios de almacenamiento extraíbles para el número máximo de USB?
 

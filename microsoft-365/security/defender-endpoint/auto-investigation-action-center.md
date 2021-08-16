@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: cc806678bbb5ac19f7c4e035efb52b6ba7d1edb1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 485c86837f78a4de6ea9052b42071f24074fce88a3ddf9f7248c7ff2f8a65ad9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844915"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884865"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visite el Centro de acciones para ver acciones de corrección
 
@@ -53,7 +53,7 @@ En la tabla siguiente se compara el nuevo centro de acciones unificado con el ce
 El Centro de acción unificado reúne acciones de corrección en Defender para Endpoint y Defender para Office 365. Define un lenguaje común para todas las acciones de corrección y proporciona una experiencia de investigación unificada. 
 
 Puede usar el Centro de acciones unificado si tiene los permisos adecuados y una o varias de las siguientes suscripciones:
-- [Defender for Endpoint](microsoft-defender-endpoint.md)
+- [Defender para punto de conexión](microsoft-defender-endpoint.md)
 - [Defender para Office 365](/microsoft-365/security/office-365-security/office-365-atp)
 - [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection) 
 
@@ -84,7 +84,7 @@ Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
 - Use filtros para ver solo los elementos que desea ver.
 - Seleccione **Exportar** para exportar resultados a un .csv archivo. 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver y aprobar acciones de corrección](manage-auto-investigation.md)
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)

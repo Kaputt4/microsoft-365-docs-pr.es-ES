@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: c6c0ad005a4485151a1404165b09648478cc1831
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6fb72c68d69c6844c981c7575bcfed3811a8d20e55a51485d78e26ec447becfe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867984"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -50,7 +50,7 @@ Cuando la protección de red bloquea una conexión, se muestra una notificación
 
 También puede usar el modo [de auditoría para](audit-windows-defender.md) evaluar cómo afectaría la protección de red a su organización si estuviera habilitada.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 La protección de red Windows 10 Pro o Enterprise y Antivirus de Microsoft Defender protección en tiempo real.
 
@@ -82,7 +82,7 @@ Puede revisar el registro Windows eventos para ver los eventos que se crean cuan
 
 1. [Copie el XML directamente](event-views.md).
 
-2. Haga clic en **Aceptar**.
+2. Seleccione **Aceptar**.
 
 Este procedimiento crea una vista personalizada que filtra para mostrar solo los siguientes eventos relacionados con la protección de red:
 

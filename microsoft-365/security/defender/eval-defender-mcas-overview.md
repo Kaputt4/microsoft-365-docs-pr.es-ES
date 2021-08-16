@@ -1,5 +1,5 @@
 ---
-title: Evaluar Microsoft Cloud App Security información general, configurar o configurar una evaluación de dispositivo, identidad, datos y protección de aplicaciones, como parte de Microsoft 365 Defender
+title: Evaluar Microsoft Cloud App Security información general
 description: Pasos para configurar el entorno Microsoft 365 Defender prueba o piloto para probar y experimentar la solución de seguridad diseñada para proteger dispositivos, identidades, datos y aplicaciones de la organización.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5b5af3611e7eb3976dd3c5aea8894e76818035a7
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 045516352ba9e27895f5c72ce90d29e50e13d04917f602c0543041089514b80b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458525"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897703"
 ---
 # <a name="evaluate-microsoft-cloud-app-security"></a>Evaluar Microsoft Cloud App Security
 

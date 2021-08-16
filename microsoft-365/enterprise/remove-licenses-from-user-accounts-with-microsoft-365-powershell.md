@@ -20,19 +20,19 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explica cómo usar PowerShell para quitar Microsoft 365 licencias asignadas anteriormente a los usuarios.
-ms.openlocfilehash: 9944d1ab056d109b6bf71a44fe01acef78ce1f14
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 42ed344a0cff959b2e99027b847cd6ab30fb5e62bc8d86b3b5901b7539a44965
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920673"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904676"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Quitar Microsoft 365 de usuario de cuentas de usuario con PowerShell
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 >[!Note]
->[Obtenga información sobre cómo quitar licencias de cuentas de usuario](../admin/manage/remove-licenses-from-users.md) con el centro Microsoft 365 administración. Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](../admin/add-users/index.yml)
+>[Obtenga información sobre cómo quitar licencias de cuentas de usuario](../admin/manage/remove-licenses-from-users.md) con el Centro de administración de Microsoft 365. Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](../admin/add-users/index.yml)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
@@ -110,7 +110,7 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
 ```
 
 >[!Note]
->No puede usar el `Set-MsolUserLicense` cmdlet para anular la suscripción de usuarios de licencias *canceladas.* Debe hacerlo individualmente para cada cuenta de usuario en el centro Microsoft 365 administración.
+>No puede usar el `Set-MsolUserLicense` cmdlet para anular la suscripción de usuarios de licencias *canceladas.* Debe hacerlo individualmente para cada cuenta de usuario de la Centro de administración de Microsoft 365.
 >
 
 Para quitar todas las licencias de un grupo de usuarios con licencia existentes, use uno de los siguientes métodos:

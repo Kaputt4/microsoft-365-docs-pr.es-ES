@@ -20,16 +20,16 @@ search.appverid: MET150
 description: Información importante sobre cómo actualizar o cambiar planes para clientes con una Office 365 E4.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/14/2020
-ms.openlocfilehash: 6ad72adc6904ee885dc4ce878a6e5c1fcc669263
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 7f0230272005519528952c88bb8a5426688c386677013aa58a7e46ad3a25ca2f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856072"
 ---
 # <a name="important-information-for-office-365-e4-customers"></a>Información importante para Office 365 clientes de E4
 
-El Office 365 plan E4 se retiró en 2015. Como administrador global Microsoft 365, recibirá actualizaciones de correo electrónico y verá publicaciones en el centro de mensajes (parte del Centro de administración de [Microsoft 365)](https://go.microsoft.com/fwlink/p/?linkid=2024339)con información sobre cuándo debe tomar medidas.
+El Office 365 plan E4 se retiró en 2015. Como administrador Microsoft 365 global, recibirá actualizaciones de correo electrónico y verá publicaciones en el centro de mensajes (parte del [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339)) con información sobre cuándo debe tomar medidas.
 
 ## <a name="compare-your-options-for-upgrading-or-changing-plans"></a>Comparar las opciones para actualizar o cambiar planes
 
@@ -48,7 +48,7 @@ Puede optar por mantener la misma funcionalidad que tenía con E4 o aprovechar l
 
 <sup>1</sup> Los planes de llamadas Microsoft 365 o Office 365 están disponibles en 11 países o regiones y están disponibles para organizaciones que tienen una dirección de facturación en uno de esos países o regiones. Para obtener más información, vea [Manage phone numbers for your organization](/microsoftteams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization). Al actualizar a Microsoft 365 o Office 365, o si ha comprado Sistema telefónico, tiene la opción de agregar un plan de llamadas nacionales o nacionales e internacionales.
 
-<sup>2</sup> La audioconferencia aún no está disponible en todos los países o regiones. Si la audioconferencia no está disponible en su país o región, le actualizaremos cuando esté disponible. En ese momento, Microsoft 365 y Office 365 clientes de E5 pueden actualizar inmediatamente a una suscripción de E5 con Audioconferencia o esperar hasta que llegue el momento de renovarse. Para ver qué países o regiones admiten audioconferencia, vea [Disponibilidad](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) de países y regiones para audioconferencias y planes de llamadas y use la lista desplegable para seleccionar su país o región.
+<sup>2</sup> La audioconferencia aún no está disponible en todos los países o regiones. Si la audioconferencia no está disponible en su país o región, le actualizaremos cuando esté disponible. En ese momento, Microsoft 365 y Office 365 E5 clientes pueden actualizar inmediatamente a una suscripción de E5 con audioconferencia o esperar hasta que llegue el momento de renovarse. Para ver qué países o regiones admiten audioconferencia, vea [Disponibilidad](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) de países y regiones para audioconferencias y planes de llamadas y use la lista desplegable para seleccionar su país o región.
 
 ## <a name="ready-to-upgrade"></a>¿Listo para actualizar?
 

@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Los Office 365 clientes deben enviar una solicitud antes de la fecha límite para que su país pueda mover sus datos de servicios Microsoft 365 a su nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4421b034c31adc3e8b0b017067b12086d364564
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: dbd1984520019296026bc5f57328a20837591c27830f4fe9b32fc425123b6550
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908250"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904650"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -49,9 +49,9 @@ Los Microsoft 365 pueden solicitar la migración de los datos principales de cli
 
 ## <a name="how-to-request-a-move"></a>Cómo solicitar un movimiento
 
-Los clientes elegibles verán una página en el centro de administración de Microsoft 365, que les permitirá solicitar que se trasladen sus datos principales de clientes a su nueva región de centro de datos.  
+Los clientes elegibles verán una página en el Centro de administración de Microsoft 365, que les permitirá solicitar que sus datos principales de clientes se trasladen a su nueva región de centro de datos.  
   
-Para obtener acceso a la página del Centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda Configuración **y,** a continuación, haga clic en **Organización Configuración**.
+Para obtener acceso a la página de la Centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda Configuración **y,** a continuación, haga clic en **Org Configuración**.
 Seleccione la pestaña **Perfil de organización** y, a continuación, seleccione la opción Residencia de **datos**.
   
 No verá esta sección si su inquilino no es apto para el programa Microsoft 365 Mover.  Si su organización tiene requisitos de residencia de datos y necesita solicitar la migración, marque la casilla y, a **continuación, Guarde**.

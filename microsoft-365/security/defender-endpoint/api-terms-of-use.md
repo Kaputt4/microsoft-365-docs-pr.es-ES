@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fcb34385446342e4b0a948f561b886e19743aa4e
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 31097cea0ba26e926839883e17997d9f9f14aa23dde002e6f3d58d599d9bcbf4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591144"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884900"
 ---
 # <a name="microsoft-defender-for-endpoint-api-license-and-terms-of-use"></a>Licencia de API de Microsoft Defender para Endpoint y términos de uso
 

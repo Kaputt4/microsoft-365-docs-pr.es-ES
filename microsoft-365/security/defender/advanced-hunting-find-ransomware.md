@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b6d88f5383cef052ac1b0871b4f0556ba3ba160e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4dac86ca9125359b07c4acfb7500b6920baa019bd2d4df2ca6eff32dde412735
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867773"
 ---
 # <a name="hunt-for-ransomware"></a>Buscar ransomware
 
@@ -34,7 +34,7 @@ ms.locfileid: "51934818"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. Aunque [Microsoft 365 Defender](microsoft-365-defender.md) proporciona muchas capacidades que detectan y bloquean las actividades de intrusión asociadas y ransomware, realizar comprobaciones proactivas para detectar signos de peligro puede ayudar a proteger la red.
+Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. Aunque [Microsoft 365 Defender](microsoft-365-defender.md) proporciona muchas funcionalidades que detectan y bloquean las actividades de intrusión asociadas y ransomware, realizar comprobaciones proactivas de signos de peligro puede ayudar a mantener la red protegida.
 
 > [Leer sobre ransomware operado por humanos](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 

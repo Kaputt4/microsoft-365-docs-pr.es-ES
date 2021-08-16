@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 432f8e640d8bbc0f2464af2c2476c57bcd9539f38c23ae2c91b864afd585e6f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 722c4a28ab477b34fc3e52cb3eb3efddf319d0d8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890496"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246227"
 ---
 # <a name="get-file-related-machines-api"></a>Obtener API de máquinas relacionadas con archivos
 
@@ -44,6 +44,7 @@ Recupera una colección de [máquinas relacionadas](machine.md) con un hash de a
 ## <a name="limitations"></a>Limitaciones
 
 1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+2. Solo se admite la función hash SHA-1 (no MD5 ni SHA-256).
 
 ## <a name="permissions"></a>Permisos
 
@@ -72,7 +73,7 @@ GET /api/files/{id}/machines
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Autorización|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -80,7 +81,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el archivo existe: 200 Aceptar con la lista [de](machine.md) entidades de máquina en el cuerpo. Si el archivo no existe: 404 No encontrado.
+Si se realiza correctamente y el archivo existe: 200 Aceptar con la lista [de](machine.md) entidades de máquina en el cuerpo. Si el archivo no existe: 200 Aceptar con un conjunto vacío.
 
 ## <a name="example"></a>Ejemplo
 

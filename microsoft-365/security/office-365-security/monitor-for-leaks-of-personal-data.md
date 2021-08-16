@@ -19,12 +19,12 @@ search.appverid:
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 05d31ac36fbdc687c60ec3c03efac9be43da9c39
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: e0d5803560ea965e222669027be30860d8a17328b2d097705dabe9bb88e5c42c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878489"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57049505"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -58,7 +58,7 @@ Puede usar los informes DLP para lo siguiente:
 
 Además, puede usar los informes DLP para ajustar las directivas DLP a medida que las ejecuta en modo de prueba.
 
-Los informes de DLP están en el Centro de cumplimiento de Microsoft 365. Vaya a la sección **Informes** \> **Datos de la organización** para buscar los informes de **Coincidencias de directivas DLP**, los **Incidentes de DLP** y **Falsos positivos e invalidaciones de DLP**.
+Los informes DLP están en el Centro de cumplimiento de Microsoft 365. Vaya a **Informes**\>**sección** de datos de la organización para encontrar **las coincidencias de la directiva DLP**, **los incidentes** y **falsos positivos e invalidaciones de informes** DLP.
 
 Para obtener más información, consulte [Ver los informes de prevención de pérdida de datos](../../compliance/view-the-dlp-reports.md).
 
