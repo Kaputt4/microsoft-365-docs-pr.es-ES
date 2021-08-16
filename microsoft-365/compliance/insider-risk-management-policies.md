@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f64fcf4908f119e261b07bbc4feaed2151e30187
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: HT
+ms.openlocfilehash: 79795b6166b5a0b513ab4558effe509cc6637849
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226436"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256697"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -210,6 +210,8 @@ Para obtener más detalles sobre cualquier recomendación o advertencia, selecci
 
 ![Estado de directiva de administración de riesgos internos](../media/insider-risk-policy-health.png)
 
+### <a name="notification-messages"></a>Mensajes de notificación
+
 Use la siguiente tabla para obtener más información sobre las recomendaciones y las notificaciones de advertencia, así como sobre las acciones a realizar para resolver posibles problemas.
 
 |**Mensajes de notificación**|**Plantillas de directiva**|**Causas / Probar esta acción para corregir**|
@@ -380,7 +382,7 @@ Para iniciar manualmente la actividad de puntuación de los usuarios en una o m�
 7. Para importar una lista de usuarios que desea agregar a las directivas, seleccione **Importar** para importar un archivo .csv (valores separados por comas). El archivo debe tener el siguiente formato y debe enumerar los nombres de los usuarios principales en el archivo:
 
     ```csv
-    nombre principal de usuario
+    user principal name
     user1@domain.com
     user2@domain.com
     ```

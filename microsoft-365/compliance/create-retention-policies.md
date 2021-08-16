@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 45858943dab6f6cb2964cc2751c245f182f3ea9e61ab5a8565a238e3aad715e1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3053740119c09b56b6fa01434d79fe9cd31d826e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808181"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256709"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -74,7 +74,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 3. En la página **Elegir ubicaciones para aplicar la directiva**, seleccione una o todas las ubicaciones para Teams:
     - **Mensaje del canal de Teams**: mensajes de los chats del canal estándar y de las reuniones del canal estándar, pero no de los [canales privados](/microsoftteams/private-channels) que tienen su propia directiva de localización.
     - **Chats de Teams**: mensajes de chats privados 1:1, chats grupales y chats de reunión.
-    - **Mensajes del canal privado de Teams**: Mensajes de chats de canales privados y reuniones de canales privados. Esta opción se está implementando actualmente en la versión preliminar y si no ve la opción reflejada, inténtelo de nuevo en unos días.
+    - **Mensajes del canal privado de Teams**: Mensajes de chats de canales privados y reuniones de canales privados.
     
    De forma predeterminada, [todos los equipos y todos los usuarios se seleccionan](#a-policy-that-applies-to-entire-locations), pero puede refinar esto seleccionando las opciones **Editar** para configurar una directiva de retención para [inclusiones o exclusiones específicas](#a-policy-with-specific-inclusions-or-exclusions). Pero, antes de cambiar el valor predeterminado, tenga en cuenta las siguientes consecuencias para una directiva de retención que elimina los mensajes cuando está configurada para incluir o excluir:
     
@@ -197,7 +197,7 @@ Además, los buzones de recursos y los buzones de grupo de Microsoft 365 no son 
 
 Si elige destinatarios para incluir o excluir, puede seleccionar grupos de distribución y grupos de seguridad habilitados para el correo electrónico. Entre bastidores, estos grupos se amplían automáticamente en el momento de la configuración para seleccionar los buzones de los usuarios del grupo. Si los miembros de esos grupos cambian más tarde, una directiva de retención existente no se actualiza automáticamente.
 
-Para obtener información detallada sobre los elementos del buzón de correo que se incluyen y excluyen cuando se configuran las opciones de retención para Exchange, consulte [Qué se incluye para la retención y la eliminación](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
+Para obtener información detallada sobre los elementos del buzón de correo que se incluyen y excluyen cuando se configuran las opciones de retención para Exchange, consulte [Qué se incluye en la retención y la eliminación](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
 La ubicación de las **carpetas públicas de Exchange** aplica la configuración de retención a todas las carpetas públicas y no se puede aplicar en el nivel de carpeta o de buzón de correo.
 

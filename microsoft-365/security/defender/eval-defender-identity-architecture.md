@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cb243c0100bab3b13939422f61618a2d7e1d77772bbdd14b25007988ea626024
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 778ff1aebf7ea0a559d2ec5fb036de7218865df9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867593"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256887"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Revisar los requisitos de arquitectura y los conceptos clave para Microsoft Defender for Identity
 
@@ -76,7 +76,7 @@ En la siguiente tabla se identificaron conceptos clave que son importantes para 
 | Resolución de nombres de red    |  La resolución de nombres de red (NNR) es un componente de la funcionalidad MDI que captura actividades basadas en tráfico de red, eventos Windows, ETW, etc. y correlaciona estos datos sin procesar con los equipos relevantes implicados en cada actividad.       | [¿Qué es la resolución de nombres de red?](/defender-for-identity/nnr-policy)      |
 | Informes    | Los informes de Defender for Identity le permiten programar o generar y descargar inmediatamente informes que proporcionan información de estado del sistema y de la entidad.  Puede crear informes sobre el estado del sistema, las alertas de seguridad y las posibles rutas de movimiento lateral detectadas en el entorno.   | [Microsoft Defender para informes de identidad ](/defender-for-identity/reports)       |
 | Grupos de funciones    | Defender for Identity ofrece grupos basados en roles y acceso delegado para proteger los datos según las necesidades específicas de seguridad y cumplimiento de su organización, que incluye administradores, usuarios y visores.        |  [Grupos de roles de Microsoft Defender for Identity](/defender-for-identity/role-groups)       |
-| Portal administrativo    |  Además del Centro de Microsoft 365 seguridad, la cabina del portal Defender for Identity se usa para supervisar y responder a actividades sospechosas.      | [Trabajar con el portal de Microsoft Defender para identidades](/defender-for-identity/workspace-portal)        |
+| Portal administrativo    |  Además del portal de Microsoft 365 Defender, la cabina del portal Defender for Identity se usa para supervisar y responder a actividades sospechosas.      | [Trabajar con el portal de Microsoft Defender para identidades](/defender-for-identity/workspace-portal)        |
 | Microsoft Cloud App Security integración   | Microsoft Cloud App Security se integra con Microsoft Defender for Identity para proporcionar análisis de comportamiento de entidades de usuario (UEBA) en un entorno híbrido, tanto en la aplicación en la nube como local.   | Integración de Microsoft Defender para identidades  |
 | | | |
 

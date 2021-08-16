@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f06fb5c425327156a4acf78e9eb3f6864b2317ff23b31cd90a8aded764cff8d5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 54e060f1cc98f62ca048ce8d561247c47f189f24
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889668"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256799"
 ---
 # <a name="investigation-resource-type"></a>Tipo de recurso Investigación
 
@@ -43,9 +43,9 @@ Representa una entidad de investigación automatizada en Defender para endpoint.
 
 Vea [Overview of automated investigations](automated-investigations.md) para obtener más información.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
-Método|Tipo de valor devuelto|Description
+Método|Tipo de valor devuelto|Descripción
 :---|:---|:---
 [Enumerar investigaciones](get-investigation-collection.md)|Colección Investigation|Obtener colección de investigación
 [Obtener una sola investigación](get-investigation-object.md)|Entidad de investigación|Obtiene una sola entidad Investigation.
@@ -59,8 +59,8 @@ id|String|Identidad de la entidad de investigación.
 startTime|DateTime Nullable|La fecha y hora en que se creó la investigación.
 endTime|DateTime Nullable|La fecha y la hora en que se completó la investigación.
 cancelledBy|String|El identificador del usuario o aplicación que canceló esa investigación.
-investigationState|Enum|El estado actual de la investigación. Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
-statusDetails|Cadena|Información adicional sobre el estado de la investigación.
+state|Enum|El estado actual de la investigación. Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
+statusDetails|String|Información adicional sobre el estado de la investigación.
 machineId|String|El identificador del dispositivo en el que se ejecuta la investigación.
 computerDnsName|String|Nombre del dispositivo en el que se ejecuta la investigación.
 triggeringAlertId|String|El identificador de la alerta que desencadenó la investigación.

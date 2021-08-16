@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el Centro de cumplimiento de Microsoft 365 o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: 36f3b44db75d02e21f409095de316841e7b8098d860983ff077b82cffe09030b
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: ef822ef9b661677839c4d393ebff19071a16ca49
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523674"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256642"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
@@ -102,7 +102,7 @@ También puede definir etiquetas de usuario como condición de una directiva de 
 
   - Flujo del correo
 
-  - Permissions
+  - Permisos
 
   - Administración de amenazas
 
@@ -132,7 +132,7 @@ En la tabla también se indica Office 365 Enterprise y Office 365 plan del Gobie
 |**Investigación manual de correo electrónico desencadenada por el administrador**|Genera una alerta cuando un administrador desencadena la investigación manual de un correo electrónico desde el Explorador de amenazas. Para obtener más información, vea [Ejemplo: un administrador de seguridad desencadena una investigación desde el Explorador de amenazas](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). Esta alerta notifica a la organización que se inició la investigación. La alerta proporciona información sobre quién la desencadenó e incluye un vínculo a la investigación. Esta directiva tiene una **configuración de gravedad informativo.**|Administración de amenazas| E5/G5 o Microsoft Defender para una Office 365 de complemento P2| 
 |**Creación de una regla de reenvío o redirección**|Genera una alerta cuando alguien de la organización crea una regla de bandeja de entrada para su buzón que reenvía o redirige mensajes a otra cuenta de correo electrónico. Esta directiva solo realiza un seguimiento de las reglas de bandeja de entrada que se crean Outlook en la Web (anteriormente conocidas como Outlook Web App) o Exchange Online PowerShell. Esta directiva tiene una **configuración de gravedad informativo.** Para obtener más información acerca del uso de reglas de bandeja de entrada para reenviar y redirigir el correo electrónico en Outlook en la Web, vea Usar reglas en Outlook en la Web para reenviar automáticamente mensajes [a otra cuenta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Búsqueda de eDiscovery iniciada o exportada**|Genera una alerta cuando alguien usa la herramienta de búsqueda de contenido en el Centro de seguridad y cumplimiento. Cuando se realizan las siguientes actividades de búsqueda de contenido, se desencadena una alerta: <br/><br/>* Se inicia una búsqueda de contenido<br/>* Los resultados de una búsqueda de contenido se exportan<br/>* Se exporta un informe de búsqueda de contenido<br/><br/>Las alertas también se desencadenan cuando las actividades de búsqueda de contenido anteriores se realizan en asociación con un caso de exhibición de documentos electrónicos. Esta directiva tiene una **configuración de gravedad informativo.** Para obtener más información acerca de las actividades de búsqueda de contenido, vea [Buscar actividades de exhibición de documentos electrónicos en el registro de auditoría.](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
-|**Elevación de Exchange privilegio de administrador**|Genera una alerta cuando alguien tiene asignados permisos administrativos en su Exchange Online organización. Por ejemplo, cuando se agrega un usuario al grupo de roles Administración de la organización en Exchange Online. Esta directiva tiene una **configuración de** gravedad baja.|Permissions|E1/F1/G1, E3/F3/G3 o E5/G5|
+|**Elevación de Exchange privilegio de administrador**|Genera una alerta cuando alguien tiene asignados permisos administrativos en su Exchange Online organización. Por ejemplo, cuando se agrega un usuario al grupo de roles Administración de la organización en Exchange Online. Esta directiva tiene una **configuración de** gravedad baja.|Permisos|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Mensajes de correo electrónico que contienen archivos malintencionados quitados después de la entrega**|Genera una alerta cuando los mensajes que contienen un archivo malintencionado se entregan a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo Exchange Online mediante la purga automática de hora [cero](../security/office-365-security/zero-hour-auto-purge.md). Esta directiva tiene una **configuración de** gravedad informativo y desencadena automáticamente la investigación y respuesta [automatizadas en Office 365](../security/office-365-security/office-365-air.md). Para obtener más información sobre esta nueva directiva, vea [Nuevas directivas de alerta en Microsoft Defender para Office 365](new-defender-alert-policies.md).|Administración de amenazas|E5/G5 o Microsoft Defender para una Office 365 de complemento P2|
 |**Mensajes de correo electrónico que contienen direcciones URL malintencionadas quitados después de la entrega**|Genera una alerta cuando los mensajes que contienen una dirección URL malintencionada se entregan a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo Exchange Online mediante la purga automática de hora [cero](../security/office-365-security/zero-hour-auto-purge.md). Esta directiva tiene una **configuración de** gravedad informativo y desencadena automáticamente la investigación y respuesta [automatizadas en Office 365](../security/office-365-security/office-365-air.md). Para obtener más información sobre esta nueva directiva, vea [Nuevas directivas de alerta en Microsoft Defender para Office 365](new-defender-alert-policies.md).|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Mensajes de correo electrónico de una campaña se entregaron y se quitaron más tarde**|Genera una alerta cuando los mensajes asociados a una [campaña](../security/office-365-security/campaigns.md) se entregan a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo Exchange Online mediante la purga automática de hora [cero](../security/office-365-security/zero-hour-auto-purge.md). Esta directiva tiene una **configuración de** gravedad informativo y desencadena automáticamente la investigación y respuesta [automatizadas en Office 365](../security/office-365-security/office-365-air.md). Para obtener más información sobre esta nueva directiva, vea [Nuevas directivas de alerta en Microsoft Defender para Office 365](new-defender-alert-policies.md).|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
@@ -234,7 +234,7 @@ Tenga en cuenta lo siguiente acerca de la agregación de alertas:
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Permisos RBAC necesarios para ver alertas
 
-Los permisos de control de acceso basado en roles (RBAC) asignados a los usuarios de la organización determinan qué alertas puede ver un usuario en la **página Alertas.** ¿Cómo se logra esto? Los roles de administración asignados a los usuarios (en función de su pertenencia a grupos de roles en el portal de Centro de cumplimiento de Microsoft 365 o Microsoft 365 Defender) determinan qué categorías de alertas puede ver un **usuario** en la página Alertas. Estos son algunos ejemplos:
+Los permisos de control de acceso basado en roles (RBAC) asignados a los usuarios de la organización determinan qué alertas puede ver un usuario en la **página Alertas.** ¿Cómo se logra esto? Los roles de administración asignados a los usuarios (en función de su pertenencia a grupos de roles en el portal de Centro de cumplimiento de Microsoft 365 o Microsoft 365 Defender) determinan qué categorías de alertas puede ver un **usuario** en la página Alertas. Aquí le mostramos otros ejemplos:
 
 - Los miembros del grupo de roles Administración de registros solo pueden ver las alertas generadas por las directivas de alerta a las que se asigna la **categoría Gobierno de** información.
 
@@ -248,7 +248,7 @@ En la tabla siguiente se enumeran los roles necesarios para ver alertas de las s
 
 Para ver a qué categoría está asignada una directiva de alerta predeterminada, vea la tabla [en Directivas de alerta predeterminadas](#default-alert-policies).
 
-|Rol|Información de gobierno|Prevención de pérdida de datos|Flujo del correo|Permissions|Administración de amenazas|Otros|
+|Rol|Información de gobierno|Prevención de pérdida de datos|Flujo del correo|Permisos|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||
@@ -261,7 +261,7 @@ Para ver a qué categoría está asignada una directiva de alerta predeterminada
 |Hold|||||||
 |Administrar alertas||||||![Marca de verificación](../media/checkmark.png)|
 |Configuración de la organización||||||![Marca de verificación](../media/checkmark.png)|
-|Preview|||||||
+|Vista previa|||||||
 |Administración de registros|![Marca de verificación](../media/checkmark.png)||||||
 |Administración de retención|![Marca de verificación](../media/checkmark.png)||||||
 |Revisar|||||||
