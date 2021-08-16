@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a8b8abc58b82d08d004d204396cfd8e381c6303a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f7c2a72fdd212eb9a549d3b855a693f095949e0dbb203caf05d37e9ad8ace226
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245317"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904341"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Escritorio administrado de Microsoft ciclo de vida del producto
 

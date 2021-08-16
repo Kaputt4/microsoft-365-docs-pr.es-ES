@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: e033142567c0eb33987cae6d840abf5f6422365e
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 553e27bf4f3d3b34749bb0b45375ee646e7c28ed20f5f3f0751626752b07b0d2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879677"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Obtenga información sobre la administración de riesgos de insider en Microsoft 365
 
@@ -110,7 +110,7 @@ Para resolver las alertas, se abre un nuevo caso, se asigna la alerta a un caso 
 
 ![Evaluación de la administración de riesgos de Insider](../media/insider-risk-triage.png)
 
-### <a name="investigate"></a>Investigar
+### <a name="investigate"></a>Investigación
 
 Investigar rápidamente todas las actividades de un usuario seleccionado con [informes de actividad de usuario (versión preliminar).](insider-risk-management-activities.md#user-activity-reports-preview) Estos informes permiten a los investigadores de la organización examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos de información interna. Después de examinar las actividades de un usuario, los investigadores pueden descartar actividades individuales como benignas, compartir o enviar por correo electrónico un vínculo al informe con otros investigadores, o elegir asignar al usuario de forma temporal o explícita a una directiva de administración de riesgos de insider.
 
@@ -126,7 +126,7 @@ Si se selecciona un caso en el panel de casos, se abre el caso para su investiga
 
 Además, el nuevo registro de [auditoría (versión preliminar)](insider-risk-management-audit-log.md) permite mantenerse informado de las acciones realizadas en las características de administración de riesgos internas. Este recurso permite una revisión independiente de las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos insider.
 
-### <a name="action"></a>Acción
+### <a name="action"></a>Action
 
 Una vez que se investigan los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas en riesgos de la organización. Si los usuarios infringen accidentalmente o inadvertidamente las condiciones de la directiva, se puede enviar un aviso simple al usuario desde plantillas de aviso que puede personalizar para su organización. Estos avisos pueden servir como recordatorios sencillos o pueden dirigir al usuario a cursos de actualización o instrucciones para ayudar a evitar comportamientos de riesgo futuros. Para más información, consulte [plantillas de notificación de administración de riesgos internos](insider-risk-management-notices.md).
 

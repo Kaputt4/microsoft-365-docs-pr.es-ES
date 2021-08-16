@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Cumplimiento de dispositivos.
-ms.openlocfilehash: 396417729184bf7bc9190193482a6567267098e8bdfb142b32e874014d0ce731
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8143f6d987145001a502616ea4a3672fba24a7f3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854634"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257623"
 ---
 # <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse Introducción a la página de cumplimiento de dispositivos
 
@@ -32,31 +32,68 @@ Microsoft 365 Lighthouse permite ver información e información relacionada con
 
 ## <a name="overview-tab"></a>Ficha Información general  
   
-En la pestaña Información general, puedes ver el estado de cumplimiento del dispositivo en todos los inquilinos, ver las tendencias de cumplimiento de dispositivos mensuales y realizar un seguimiento de si los dispositivos tienen directivas de cumplimiento asignadas. También puedes ver información sobre las acciones y requisitos de cumplimiento del dispositivo de inquilino en función de las directivas de acceso condicional.
+En la pestaña Información general, puedes ver el estado de cumplimiento del dispositivo en todos los inquilinos, ver las tendencias de cumplimiento de dispositivos mensuales y realizar un seguimiento de si los dispositivos tienen directivas de cumplimiento asignadas. También puedes ver información sobre las acciones y requisitos de cumplimiento del dispositivo de inquilino en función de las directivas de acceso condicional. 
+
+Para obtener información detallada sobre el cumplimiento de dispositivos para un inquilino de cliente determinado, seleccione un valor en cualquiera de las columnas de estado de ese inquilino. Se abrirá la pestaña Dispositivos para que puedas ver los detalles de cumplimiento del dispositivo para el inquilino seleccionado.
+
+Para exportar datos de cumplimiento de dispositivos a un Excel de valores separados por comas (.csv), seleccione **Exportar**.
 
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="Captura de pantalla de la pestaña Información general.":::
 
 ## <a name="devices-tab"></a>Pestaña Dispositivos
 
-En la pestaña Dispositivos, puede ver una lista de todos los dispositivos de inquilino y filtrar la lista en función de los siguientes estados de cumplimiento: Compatible, No conforme, Período de gracia y No evaluado. Para obtener más información acerca de los distintos estados de cumplimiento, vea [Monitor Intune Device compliance policies](/mem/intune/protect/compliance-policy-monitor).
+En la pestaña Dispositivos, la barra de recuento y anotación coloreada muestra el número total de dispositivos en todos los inquilinos del cliente que tienen los siguientes estados de cumplimiento: Compatible, No compatible, En período de gracia y No evaluado. Para obtener más información acerca de los distintos estados de cumplimiento, vea [Monitor Intune Device compliance policies](/mem/intune/protect/compliance-policy-monitor).
 
-Selecciona cualquier dispositivo para ver más información sobre por qué el dispositivo está en su estado de cumplimiento actual. Si necesitas realizar una acción en el dispositivo, hay una opción para ver el dispositivo en Microsoft Endpoint Manager.
+Para ver qué inquilinos tienen dispositivos con un estado de cumplimiento específico, seleccione ese estado en la barra de anotación de recuento para filtrar la lista. Para ver los estados de cumplimiento del dispositivo para uno o varios inquilinos de clientes específicos, use el menú desplegable **Inquilinos** para filtrar la lista.
 
+Selecciona cualquier nombre de dispositivo de la lista para ver más detalles sobre el estado de cumplimiento actual del dispositivo. Puedes sincronizar o reiniciar el dispositivo, o seleccionar Ver dispositivo en **Microsoft Endpoint Manager** si necesitas solucionar problemas o realizar más acciones.
+
+> [!NOTE]
+> Cuando reinicias un dispositivo, el propietario del dispositivo no se notifica automáticamente y puede perder el trabajo no guardado. Por este motivo, es posible que quieras notificar al propietario del dispositivo antes de reiniciar un dispositivo.
+
+La pestaña Dispositivos también incluye las siguientes opciones:
+
+- **Exportar:** Seleccione esta opción para exportar datos de cumplimiento de dispositivos a Excel de valores separados por comas (.csv).
+- **Actualizar:** Selecciona para recuperar los datos de cumplimiento del dispositivo más actuales.
+- **Sincronización:** Seleccione uno o varios dispositivos de la lista que tengan el estado No conforme, En período de gracia o No evaluados y, a continuación, seleccione esta opción para forzar a esos dispositivos a que se desenladen con Intune y reciban inmediatamente las directivas que se les hayan asignado.
+- **Reiniciar:** Seleccione uno o varios dispositivos de la lista que tengan el estado No conforme, En período de gracia o No evaluados y, a continuación, seleccione esta opción para reiniciar esos dispositivos.
+- **Buscar:** Escribe palabras clave para localizar rápidamente un dispositivo específico en la lista.
+ 
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Captura de pantalla de la pestaña Dispositivos.":::
 
 ## <a name="policies-tab"></a>Pestaña Directivas
 
-En la pestaña Directivas, puede ver directivas de cumplimiento en los inquilinos y comparar dos o tres directivas del mismo tipo de plataforma mediante la característica Comparar de la barra de herramientas. También puede seleccionar cualquier directiva para ver más información.
+En la pestaña Directivas, puedes ver directivas de cumplimiento de dispositivos en los inquilinos y comparar dos o tres directivas del mismo tipo de plataforma mediante la **opción** Comparar.
+
+Para ver directivas para dispositivos en una plataforma específica, use el menú desplegable **del sistema** operativo para filtrar la lista. Para ver directivas para uno o varios inquilinos de clientes específicos, use el menú desplegable **Inquilinos** para filtrar la lista.
+
+Seleccione cualquier nombre de directiva de la lista para ver más detalles sobre esa directiva. Si necesita tomar medidas o ver información adicional, seleccione **Ver esta directiva en Microsoft Endpoint Manager**.
+
+La pestaña Directivas también incluye las siguientes opciones:
+
+- **Exportar:** Seleccione esta opción para exportar datos de directiva de cumplimiento de dispositivos a un Excel de valores separados por comas (.csv).
+- **Actualizar:** Seleccione esta opción para recuperar los datos de directiva de cumplimiento de dispositivos más actuales.
+- **Buscar:** Escribe palabras clave para localizar rápidamente una directiva de cumplimiento de dispositivos específica en la lista.
 
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="Captura de pantalla de la pestaña Directivas.":::
 
 ## <a name="settings-tab"></a>Configuración pestaña
 
-La pestaña configuración proporciona un informe agregado de la configuración no compatible en todos los dispositivos de inquilino. Seleccione cualquiera de las filas de informe para ver más información, incluidos los inquilinos a los que pertenecen los dispositivos no compatibles.
+La pestaña configuración proporciona un informe agregado de la configuración no compatible en todos los dispositivos de inquilino. 
+
+Para ver la configuración no compatible para dispositivos en una plataforma específica, use el **menú** desplegable Plataforma para filtrar la lista. Para ver la configuración no compatible para uno o varios inquilinos de clientes específicos, use el menú desplegable **Inquilinos** para filtrar la lista.
+
+Seleccione cualquier nombre de configuración no compatible en la lista para abrir un panel donde puede ver una lista de inquilinos que tienen dispositivos con esa configuración específica no compatible. Desde aquí, puede explorar más detalladamente si selecciona cualquier espacio empresarial de la lista para ver información sobre los dispositivos dentro de ese espacio empresarial que tienen la configuración específica no compatible. También puedes sincronizar o reiniciar el dispositivo, o seleccionar Ver dispositivo en **Microsoft Endpoint Manager** si necesitas solucionar problemas o realizar más acciones.
+
+La Configuración también incluye las siguientes opciones:
+
+- **Exportar:** Seleccione esta opción para exportar datos de configuración no compatibles a un Excel de valores separados por comas (.csv).
+- **Actualizar:** Seleccione esta opción para recuperar los datos de configuración no compatibles más actuales.
+- **Buscar:** Escriba palabras clave para buscar rápidamente una configuración específica no compatible en la lista.
 
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="Captura de pantalla de la Configuración pestaña.":::
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Microsoft 365 Lighthouse de la página Usuarios](m365-lighthouse-users-page-overview.md) (artículo)\
+[Windows de la página 365 (equipos en la nube)](m365-lighthouse-win365-page-overview.md) (artículo)\
 [Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)

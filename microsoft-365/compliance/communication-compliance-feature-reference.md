@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2f81c50473f6181d1fb083e03db1f671b2bfdd00c6652aece93fff7a40212b8e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2d5894b27b54b1752228d8cccbd7262cc09e999d
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814740"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257409"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -318,7 +318,7 @@ Las plantillas de avisos son plantillas de correo electrónico personalizadas do
 |**Nombre de la plantilla** | Sí | Nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
 | **Dirección del remitente** | Sí | La dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva, seleccionada en Active Directory para la suscripción. |
 | **Direcciones CC y CCO** | No | Usuarios o grupos opcionales que se notificarán de la coincidencia de directiva, seleccionados desde Active Directory para su suscripción. |
-| **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
+| **Subject** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
 | **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite valores de texto o HTML. |
 
 ### <a name="html-for-notices"></a>HTML para avisos
@@ -355,7 +355,7 @@ Los filtros de cumplimiento de comunicaciones permiten filtrar y ordenar mensaje
 | **Destinatario** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | Dominio que envió el mensaje. |
-| **Tamaño** | Tamaño del mensaje en KB. |
+| **Size** | Tamaño del mensaje en KB. |
 | **Asunto/Título** | Asunto del mensaje o título del chat. |
 | **Tags** | Las etiquetas asignadas a un mensaje, *ya sea Questionable*, *Compliant* o *Non-compliant*. |
 | **Language** | El idioma de texto detectado en el mensaje. El mensaje se clasifica según el idioma de la mayoría del texto del mensaje. Por ejemplo, para un mensaje que contiene texto alemán e italiano, pero la mayoría de texto es alemán, el mensaje se clasifica como alemán (DE). Se admiten los siguientes idiomas: chino (simplificado - ZH), inglés (EN), francés (FR), alemán (DE), italiano (IT), japonés (JP), portugués (PT) y español (ES). Por ejemplo, para filtrar mensajes clasificados como alemán e italiano, escriba "DE,IT" (los códigos de idioma de 2 dígitos) en el cuadro de búsqueda Filtro de idioma. Para ver la clasificación de idioma detectado para un mensaje, seleccione un mensaje, seleccione Ver detalles del mensaje y desplácese al campo EmailDetectedLanguage. |
@@ -364,30 +364,30 @@ Los filtros de cumplimiento de comunicaciones permiten filtrar y ordenar mensaje
 
 ## <a name="alert-policies"></a>Directivas de alerta
 
-Después de configurar una directiva, se crea automáticamente una directiva de alerta correspondiente y se generan alertas para los mensajes que coinciden con las condiciones definidas en la directiva. De forma predeterminada, todos los desencadenadores de alerta de coincidencias de directiva tienen asignado un nivel de gravedad de medio en la directiva de alerta asociada. Las alertas se generan para una directiva de cumplimiento de comunicaciones una vez que se cumple el nivel de umbral de desencadenador de agregación en la directiva de alerta asociada.
+Después de configurar una directiva, se crea automáticamente una directiva de alerta correspondiente y se generan alertas para los mensajes que coinciden con las condiciones definidas en la directiva. Puede tardar hasta 24 horas después de crear una directiva de inicio para recibir alertas de indicadores de actividad. De forma predeterminada, todos los desencadenadores de alerta de coincidencias de directiva tienen asignado un nivel de gravedad de medio en la directiva de alerta asociada. Las alertas se generan para una directiva de cumplimiento de comunicaciones una vez que se cumple el nivel de umbral de desencadenador de agregación en la directiva de alerta asociada.
 
 Para las directivas de cumplimiento de comunicaciones, los siguientes valores de directiva de alerta están configurados de forma predeterminada:
 
 |**Desencadenador de directiva de alerta**|**Valor predeterminado**|
 |:-----|:-----|
 | Agregación | Agregación sencilla |
-| Umbral | 4 actividades |
-| Window | 60 minutos |
+| Umbral | Mínimo: 3 actividades <br> Máximo: 2.147.483.647 actividades |
+| Window | Mínimo: 60 minutos <br> Máximo: 10.000 minutos |
 
 > [!NOTE]
 > La configuración del desencadenador de umbral de directiva de alerta para actividades admite un valor mínimo de 3 o superior para las directivas de cumplimiento de comunicaciones.
 
-Puede cambiar la configuración predeterminada para desencadenadores en número de actividades, período para  las actividades y para usuarios específicos en directivas de alerta en la página Directivas de alerta del Centro de seguridad & cumplimiento.
+Puede cambiar la configuración predeterminada para desencadenadores en número de actividades, período para  las actividades y para usuarios específicos en directivas de alerta en la página Directivas de alerta de la Centro de cumplimiento de Microsoft 365.
 
 ### <a name="change-the-severity-level-for-an-alert-policy"></a>Cambiar el nivel de gravedad de una directiva de alerta
 
 Si desea cambiar el nivel de gravedad asignado en una directiva de alerta para una directiva de cumplimiento de comunicación específica, siga estos pasos:
 
-1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
+1. Inicie sesión [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
 2. En el Centro de cumplimiento de Microsoft 365, vaya a **Directivas**.
 
-3. Seleccione **Office 365 alerta en** la **página** Directivas para abrir la página Directivas **de** alertas en el Centro de Office 365 seguridad **& cumplimiento**.
+3. Seleccione **Office 365 alerta en** la página **Directivas** para abrir la página Directivas **de** alertas.
 
 4. Active la casilla de verificación de la directiva de cumplimiento de comunicaciones que desea actualizar y, a continuación, **seleccione Editar directiva**.
 
@@ -549,7 +549,7 @@ Para ver las actividades de actualización de directivas de cumplimiento de comu
 |:-----|:-----|
 | **CreationDate** | La fecha en que se realizó la actividad de actualización en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de actualización en una directiva. |
-| **Operaciones** | Las operaciones de actualización realizadas en la directiva. |
+| **Operations** | Las operaciones de actualización realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal de todas las actividades de actualización de directivas. Todas las actividades de actualización se registran y se separan por delimitadores por comas. |
 
 Para ver las actividades de revisión de cumplimiento de comunicación de una directiva, seleccione el control **Exportar** actividades de revisión en **la** página Información general de una directiva específica. Debe tener asignados los roles Administrador *global* o Administrador de cumplimiento *de* comunicaciones para exportar actividades de revisión. Esta acción genera un archivo de auditoría en el .csv que contiene la siguiente información:
@@ -558,7 +558,7 @@ Para ver las actividades de revisión de cumplimiento de comunicación de una di
 |:-----|:-----|
 | **CreationDate** | La fecha en que se realizó la actividad de revisión en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de revisión en una directiva. |
-| **Operaciones** | Las operaciones de revisión realizadas en la directiva. |
+| **Operations** | Las operaciones de revisión realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal de todas las actividades de revisión de directivas. Todas las actividades de revisión se registran y se separan por delimitadores por comas. |
 
 También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet [de PowerShell Search-UnifiedAuditLog.](/powershell/module/exchange/search-unifiedauditlog) Para obtener más información sobre las directivas de retención de registros de auditoría, vea [Manage audit log retention policies](audit-log-retention-policies.md).

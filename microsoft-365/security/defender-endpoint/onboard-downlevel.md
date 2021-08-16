@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 70ef9aabd86169cd64f252f26a792a380dc6fe44ddb7060bd6c7a8f19d3c6c22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a1a000ec60d84e5abc4ec23591b917eb3072582e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806201"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257291"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -110,6 +110,9 @@ Una vez completado, debería ver puntos de conexión incorporados en el portal e
 
 - Cada Windows punto de conexión debe poder conectarse a Internet mediante HTTPS. Esta conexión puede ser directa, mediante un proxy o a través de la puerta [de enlace OMS](/azure/log-analytics/log-analytics-oms-gateway).
 - Si un proxy o firewall bloquea todo el tráfico de forma predeterminada y permite solo dominios específicos a través o el examen HTTPS (inspección SSL) está habilitado, asegúrese de habilitar el acceso a las direcciones URL del servicio [defender](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)para puntos de conexión .
+
+## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecutar una prueba de detección para comprobar la incorporación
+Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.
 
 ## <a name="offboard-client-endpoints"></a>Extremos de cliente offboard
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e8dc4d61fb0d43d2864245223923936fe4a646e88e93a3c6eda2a672d459b137
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 64f2339f6e533237a3aca77fda1a8da439ff6f59
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862827"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257229"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Evaluar y piloto Microsoft 365 Defender
 
@@ -101,8 +101,8 @@ En la tabla siguiente se describe esta ilustración.
 |      |Paso  |Descripción  |
 |------|---------|---------|
 |1     | [Crear el entorno de evaluación](eval-create-eval-environment.md)       |Este paso garantiza que tiene la licencia de prueba para Microsoft 365 Defender.         |
-|2     | [Habilitar Defender para la identidad](eval-defender-identity-overview.md)        | Revise los requisitos de arquitectura, habilite la evaluación y consulte tutoriales para identificar y corregir diferentes tipos de ataques.   |
-|3     | [Habilitar Defender para Office 365](eval-defender-office-365-overview.md)       | Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto. Este componente incluye Exchange Online Protection por lo que realmente evaluará *ambos* aquí.      |
+|2      | [Habilitar Defender para la identidad](eval-defender-identity-overview.md)        | Revise los requisitos de arquitectura, habilite la evaluación y consulte tutoriales para identificar y corregir diferentes tipos de ataques.   |
+|3      | [Habilitar Defender para Office 365](eval-defender-office-365-overview.md)       | Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto. Este componente incluye Exchange Online Protection por lo que realmente evaluará *ambos* aquí.      |
 |4      | [Habilitar Defender para el extremo ](eval-defender-endpoint-overview.md)       | Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto.         |
 |5      | [Habilitar Microsoft Cloud App Security](eval-defender-mcas-overview.md)        |  Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto.        |
 |6      | [Investigar y responder a amenazas](eval-defender-investigate-respond.md)        |   Simular un ataque y empezar a usar las capacidades de respuesta a incidentes.      |
@@ -111,6 +111,6 @@ En la tabla siguiente se describe esta ilustración.
 
 Este es un orden comúnmente recomendado diseñado para obtener el valor de las capacidades rápidamente en función del esfuerzo que normalmente se requiere para implementar y configurar las capacidades. Por ejemplo, Defender para Office 365 puede configurarse mucho más rápido de lo necesario para inscribir dispositivos para Defender para endpoint. Por supuesto, puede priorizar los componentes para satisfacer sus necesidades empresariales y habilitar estos en un orden diferente.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Crear el entorno Microsoft 365 Defender evaluación](eval-create-eval-environment.md)

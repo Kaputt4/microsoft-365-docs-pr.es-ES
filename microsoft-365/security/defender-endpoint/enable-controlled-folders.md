@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: bb5efb5bd001a2659b0c3780af5f195b77b3103b2e8a7d0c7d1eee6915a6e303
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: a4961b7a9ae2bdf24e4ac105f2b3ff0a153c1399
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523365"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257813"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
@@ -144,7 +144,7 @@ Puede habilitar la característica en modo auditoría especificando en `AuditMod
 
 Se `Disabled` usa para desactivar la característica.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)

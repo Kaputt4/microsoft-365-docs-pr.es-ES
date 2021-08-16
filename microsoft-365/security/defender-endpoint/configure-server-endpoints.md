@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a740586151666d62c96796a75988ebc10d8d5c56bc009ac1d321c352718f0ab6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 693575d507d77d7ac34422f0ddef0b0d4a41ecf2
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854262"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257867"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -70,8 +70,6 @@ En general, deberá seguir los pasos siguientes:
   3. Instale y configure MMA para que el servidor informe los datos del sensor a Defender for Endpoint.
   4. Configure y actualice System Center Endpoint Protection clientes.
 
-> [!TIP]
-> Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que está correctamente incorporado al servicio. Para obtener más información, vea [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
 
 #### <a name="before-you-begin"></a>Antes de empezar
 
@@ -222,6 +220,10 @@ Se requieren los siguientes pasos para habilitar esta integración:
 - Instale la actualización de la plataforma antimalware de enero de [2017 para Endpoint Protection cliente.](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
 
 - [Configure la pertenencia al servicio de protección](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) en la nube del cliente SCEP a la **configuración** Avanzada.
+
+## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecutar una prueba de detección para comprobar la incorporación
+Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.
+
 
 ## <a name="offboard-windows-servers"></a>Servidores de Windows offboard
 

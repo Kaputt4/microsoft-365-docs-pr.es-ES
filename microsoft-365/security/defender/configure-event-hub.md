@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: afe1b37d80a074c0011a3d1ea58c3b15fab96ef6d4f1701f11bd1ab73dc06979
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 553f9502803bb10fbc6d22a60c2b1d35d877380f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810707"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257253"
 ---
 # <a name="configure-your-event-hub"></a>Configurar el centro de eventos
 
@@ -40,7 +40,7 @@ Obtén información sobre cómo configurar el Centro de eventos para que pueda i
 ## <a name="setup-the-required-resource-provider-in-the-event-hub-subscription"></a>Configurar el proveedor de recursos necesario en la suscripción al Centro de eventos
 
 
-1. Inicie sesión en el [portal de Azure](https://portal.azure.com).
+1. Inicie sesión en el [Azure Portal](https://portal.azure.com).
 1. Select **Subscriptions { Select the subscription the event hub will be deployed \> ***to***} \> Resource providers**.
 1. Compruebe que el **proveedor de microsoft.Ideas** está registrado. De lo contrario, regístrelo.
 
@@ -73,7 +73,7 @@ Obtén información sobre cómo configurar el Centro de eventos para que pueda i
 1. Crear un espacio de nombres de centro de eventos:
 
     Vaya **a Event Hubs \> Add** and select the pricing tier, throughput units and Auto-Inflate (requires standard pricing and under features) appropriate for the load you are expecting.  
-    Para obtener más información, vea [Pricing - Event Hubs \| Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/)
+    Para obtener más información, vea [Pricing - Event Hubs \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     >[!NOTE]
     > Puede usar un centro de eventos existente, pero el rendimiento y el escalado se establecen en el nivel de espacio de nombres, por lo que se recomienda colocar un centro de eventos en su espacio de nombres.

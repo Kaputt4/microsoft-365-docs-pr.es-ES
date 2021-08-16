@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de protección física de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a sus edificios físicos por usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: a300107af1d3fe07f208f7e3f239f75a9cd6e5af
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 800614ef38e065027238d32bf877a059e2022378a1a86b2f33c6f11f3827de2a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895445"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos de badging físicos (versión preliminar)
 
-Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 365 para importar datos de error físicos, como los eventos de acceso físico sin procesar de los empleados o las alarmas de acceso físico generadas por el sistema de protección de la organización. Algunos ejemplos de puntos de acceso físicos son una entrada a un edificio o una entrada a la sala de servidores o al centro de datos. La solución de administración de riesgos de [insider](insider-risk-management.md) puede usar los datos de Microsoft 365 físicos para ayudar a proteger su organización contra la actividad malintencionada o el robo de datos dentro de la organización.
+Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 365 para importar datos de error físicos, como los eventos de acceso físico sin procesar de los empleados o las alarmas de acceso físico generadas por el sistema de error de la organización. Algunos ejemplos de puntos de acceso físicos son una entrada a un edificio o una entrada a la sala de servidores o al centro de datos. La solución de administración de riesgos de [insider](insider-risk-management.md) puede usar los datos de Microsoft 365 físicos para ayudar a proteger su organización contra la actividad malintencionada o el robo de datos dentro de la organización.
 
 La configuración de un conector de error físico consta de las siguientes tareas:
 
@@ -31,7 +31,7 @@ La configuración de un conector de error físico consta de las siguientes tarea
 
 - Creación de la carga JSON con un esquema definido por el conector de datos de descarga física.
 
-- Creación de un conector de datos de protección física en el Microsoft 365 de cumplimiento.
+- Crear un conector de datos de pérdida de datos físico en el Centro de cumplimiento de Microsoft 365.
 
 - Ejecución de un script para insertar los datos de pérdida de datos físicos en el punto de conexión de la API.
 
@@ -69,7 +69,7 @@ El archivo JSON debe cumplir con la definición de esquema requerida por el cone
 |AssetId|El identificador de referencia del activo físico o punto de acceso físico.|Cadena alfanumérica|
 |AssetName|Nombre descriptivo del activo físico o punto de acceso físico.|Cadena alfanumérica|
 |EventTime|La marca de tiempo de acceso.|Fecha y hora, en formato UTC|
-|AccessStatus|Valor de `Success` o `Failed`|Cadena|
+|AccessStatus|Valor de `Success` o `Failed`|String|
 |||
 
 Este es un ejemplo de un archivo JSON que se ajusta al esquema requerido:
@@ -132,7 +132,7 @@ También puede descargar la siguiente definición de esquema para el archivo JSO
 
 ## <a name="step-3-create-the-physical-badging-connector"></a>Paso 3: Crear el conector de badging físico
 
-El siguiente paso es crear un conector de badging físico en el centro de Microsoft 365 cumplimiento. Después de ejecutar el script en el paso 4, el archivo JSON que creó en el paso 3 se procesará y se insertará en el punto de conexión de la API que configuró en el paso 1. En este paso, asegúrese de copiar el JobId que se genera al crear el conector. Usará el JobId al ejecutar el script.
+El siguiente paso es crear un conector de badging físico en el Centro de cumplimiento de Microsoft 365. Después de ejecutar el script en el paso 4, el archivo JSON que creó en el paso 3 se procesará y se insertará en el punto de conexión de la API que configuró en el paso 1. En este paso, asegúrese de copiar el JobId que se genera al crear el conector. Usará el JobId al ejecutar el script.
 
 1. Vaya a <https://compliance.microsoft.com> y, a continuación, haga clic **en Conectores de datos** en la navegación izquierda.
 
@@ -213,7 +213,7 @@ Después de ejecutar el script, el archivo JSON que contiene los datos de pérdi
 
 ## <a name="step-5-monitor-the-physical-badging-connector"></a>Paso 5: Supervisar el conector de badging físico
 
-Después de crear el conector de badging físico e insertar los datos de pérdida de datos físicos, puede ver el conector y el estado de carga en el centro de Microsoft 365 cumplimiento. Si programa el script para que se ejecute automáticamente de forma regular, también puede ver el estado actual después de la última vez que se ejecutó el script.
+Después de crear el conector de descarga física e insertar los datos de pérdida de datos físicos, puede ver el conector y el estado de carga en el Centro de cumplimiento de Microsoft 365. Si programa el script para que se ejecute automáticamente de forma regular, también puede ver el estado actual después de la última vez que se ejecutó el script.
 
 1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en la navegación izquierda.
 

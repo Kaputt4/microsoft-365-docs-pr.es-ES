@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar directivas de administración de información para controlar y realizar un seguimiento de cosas como cuánto tiempo se conserva el contenido o qué acciones pueden realizar los usuarios con ese contenido.
-ms.openlocfilehash: dfb1aeb3dbd3a2b17f18bbd03d5f4d3e198e4c47
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4584a23156a7dc492601717b0453cf7d9526f2654058ca0f311a370770518a73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815517"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879370"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduction to information management policies (Introducción a las directivas de administración de la información)
 

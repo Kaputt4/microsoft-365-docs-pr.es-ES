@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cc13c14f2e85dd2f217001be24a6b94a0d8426ea03dc09129200afd94700314c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d4ae05517583a8368ba7936a942e5ec06a9414f7
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890628"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257329"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Preguntas más frecuentes sobre detección de dispositivos
 
@@ -74,7 +74,7 @@ Sí, puedes aplicar filtros que excluyan los dispositivos no administrados de la
  Como la detección de dispositivos usa métodos pasivos para detectar dispositivos en la red, cualquier dispositivo que se comunique con los dispositivos incorporados en la red corporativa se puede detectar y enumerar en el inventario. Solo puedes excluir dispositivos del sondeo activo.
 
 ## <a name="how-frequent-is-the-active-probing"></a>¿Qué frecuencia tiene el sondeo activo?
- Los dispositivos se sondearán activamente cuando se observan cambios en las características del dispositivo (cada 1 a 3 semanas) para asegurarse de que la información existente esté actualizada.
+ Los dispositivos se sondearán activamente cuando se observan cambios en las características del dispositivo para asegurarse de que la información existente esté actualizada (normalmente, los dispositivos sondeados no más de una vez en un período de tres semanas)
 
 ## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Mi herramienta de seguridad ha creado una alerta UnicastScanner.ps1 actividad de detección de puertos iniciada por ella, ¿qué debo hacer?
  Microsoft firma los scripts de sondeo activos y son seguros. Puede agregar la siguiente ruta de acceso a la lista de exclusión: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`
@@ -93,3 +93,26 @@ Es posible que observes diferencias entre el número de dispositivos enumerados 
 
 ## <a name="ive-noticed-that-unmanaged-device-health-state-is-always-active-why-is-that"></a>He notado que el estado de mantenimiento del dispositivo no administrado siempre es "Activo", ¿por qué es eso?
 Temporalmente, el estado de mantenimiento del dispositivo no administrado será "Activo" durante el período de retención estándar del inventario de dispositivos, independientemente de su estado real.
+
+
+## <a name="does-standard-discovery-look-like-malicious-network-activity"></a>¿La detección estándar parece una actividad de red malintencionada?
+Al considerar la detección estándar, es posible que se pregunte acerca de las implicaciones del sondeo y, específicamente, si las herramientas de seguridad pueden sospechar que dicha actividad es malintencionada. En la siguiente subsección se explica por qué, en casi todos los casos, las organizaciones no deben tener ninguna preocupación acerca de la habilitación de la detección estándar.  
+
+### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>El sondeo se distribuye en todos Windows dispositivos de la red
+A diferencia de la actividad malintencionada, que normalmente examinaría toda la red desde un pequeño número de dispositivos en peligro, el sondeo de detección estándar de Microsoft Defender para endpoint se inicia desde todos los dispositivos Windows integrados, lo que hace que la actividad sea benigna y no anómala. El sondeo se administra de forma centralizada desde la nube para equilibrar el intento de sondeo entre todos los dispositivos integrados admitidos en la red.  
+
+### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>El sondeo activo genera una cantidad insignificante de tráfico adicional
+Normalmente, los dispositivos no administrados no se sondearía más de una vez en un período de tres semanas y generarían menos de 50 KB de tráfico. La actividad malintencionada generalmente incluye intentos de sondeo repetitivos elevados y, en algunos casos, exfiltración de datos que genera una cantidad significativa de tráfico de red que las herramientas de supervisión de red pueden identificar una anomalía. 
+
+### <a name="your-windows-device-already-runs-active-discovery"></a>El dispositivo Windows ya ejecuta la detección activa
+Las capacidades de detección activa siempre se han incrustado en el sistema operativo Windows, para buscar dispositivos, puntos de conexión e impresoras cercanos, para facilitar las experiencias de "plug and play" y el uso compartido de archivos entre puntos de conexión de la red. Se implementa una funcionalidad similar en dispositivos móviles, equipos de red y aplicaciones de inventario por nombrar algunas.  
+
+La detección estándar usa los mismos métodos de detección para identificar dispositivos y para tener una visibilidad unificada para todos los dispositivos de la red en el Microsoft 365 Defender inventario de dispositivos. Por ejemplo: la detección estándar identifica los puntos de conexión cercanos en la red de la misma forma Windows listas de impresoras disponibles en la red. 
+
+Las herramientas de seguridad y supervisión de red son diferentes a estas actividades realizadas por los dispositivos de la red. 
+
+### <a name="only-unmanaged-devices-are-being-probed"></a>Solo se están sondando dispositivos no administrados
+Las capacidades de detección de dispositivos se han creado solo para detectar e identificar dispositivos no administrados en la red. Esto significa que los dispositivos detectados anteriormente que ya están incorporados con Microsoft Defender para Endpoint no se sondean. 
+
+### <a name="you-can-exclude-network-lures-from-active-probing"></a>Puede excluir los señuelos de red del sondeo activo
+La detección estándar admite la exclusión de dispositivos o intervalos (subredes) del sondeo activo. Si tienes señuelos de red implementados, puedes usar la configuración de detección de dispositivos para definir exclusiones basadas en direcciones IP o subredes (un rango de direcciones IP). La definición de estas exclusiones garantizará que esos dispositivos no se sondeerán activamente y no se les avisará. Estos dispositivos solo se detectarán con métodos pasivos (similar al modo de detección básico).

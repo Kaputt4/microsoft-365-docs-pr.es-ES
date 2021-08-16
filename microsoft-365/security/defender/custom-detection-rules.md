@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3066ccf803d5a2cad907ae7f983f3cafbb41112d
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 62c8fda1276089ba4c9f6e7bd7a0839ddf88256d3c30f8c62f9eb25daadf7b40
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725857"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863221"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -45,6 +45,8 @@ Para administrar detecciones personalizadas, debe tener asignado uno de estos ro
 - **Administrador de** seguridad: los usuarios [con este Azure Active Directory pueden](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) administrar la configuración de seguridad en Microsoft 365 de seguridad y otros portales y servicios.
 
 - **Operador de** seguridad: los usuarios con este [rol Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) pueden administrar alertas y tener acceso global de solo lectura a las características relacionadas con la seguridad, incluida toda la información del Microsoft 365 de seguridad. Este rol es suficiente para administrar detecciones personalizadas solo si el control de acceso basado en roles (RBAC) está desactivado en Microsoft Defender para endpoint. Si tiene RBAC configurado, también necesita el permiso administrar la configuración **de seguridad** para Defender para endpoint.
+
+También puede administrar detecciones personalizadas que se aplican a los datos de soluciones Microsoft 365 Defender específicas si tiene permisos para ellas. Si solo tiene permisos para administrar Microsoft 365 Defender para Office, por ejemplo, puede crear detecciones personalizadas con tablas, pero `Email` no `Identity` tablas.  
 
 Para administrar los permisos necesarios, un **administrador global** puede:
 

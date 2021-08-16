@@ -19,23 +19,23 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtén información sobre cómo instalar la Microsoft 365 móvil administrador en el teléfono.
-ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Obtén información sobre cómo instalar la Administración de Microsoft 365 móvil en el teléfono.
+ms.openlocfilehash: 591a5440d3257afad9728b75013737daebad73694322774db19e8eacb0700abb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580707"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861872"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Instalar la Microsoft 365 móvil administrador en el teléfono
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Instalar la Administración de Microsoft 365 móvil en el teléfono
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-Puedes usar la aplicación Microsoft 365 móvil administrador para administrar usuarios, supervisar el estado del servicio y realizar otras tareas de administración desde el teléfono.
+Puedes usar la aplicación Administración de Microsoft 365 móvil para administrar usuarios, supervisar el estado del servicio y realizar otras tareas de administración desde el teléfono.
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. Para obtener la Microsoft 365 móvil administrador, busca **Microsoft 365 administrador** en la tienda de aplicaciones para el dispositivo e instálla.
+1. Para obtener la Administración de Microsoft 365 móvil, busca  Administración de Microsoft 365 en la tienda de aplicaciones para tu dispositivo e instálla.
 2. Inicie sesión con su dirección de correo electrónico de administrador global y vea el panel para ver el estado del servicio, supervisar las licencias de usuario y ver mensajes y solicitudes de servicio.
 3. Estas son algunas tareas comunes que puedes hacer con la aplicación:
 

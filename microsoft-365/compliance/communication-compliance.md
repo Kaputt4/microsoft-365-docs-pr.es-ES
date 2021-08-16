@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 35db4a7728fff40e6bf81b2c7992db229048964f60fc1ed2db829cf2c86b0749
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d3e8e68f8bdb8f2fa6f539605d2603a57e22c624
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835900"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257509"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 
@@ -47,6 +47,8 @@ Para obtener las últimas presentaciones de Ignite para el cumplimiento de las c
 - [Mejor con Microsoft Teams: obtenga más información sobre las últimas características nativas Teams integradas en el cumplimiento de la comunicación](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 Para obtener una introducción rápida al cumplimiento de las comunicaciones, vea el artículo Detectar acoso en el lugar de trabajo y responder con el cumplimiento de la comunicación [en Microsoft 365](https://youtu.be/z33ji7a7Zho) vídeo en el canal de [Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
+
+Consulte cómo [TD Securities usa](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) el cumplimiento de comunicaciones para satisfacer sus obligaciones reglamentarias y satisfacer sus necesidades de seguridad y estabilidad.
 
 ## <a name="scenarios-for-communication-compliance"></a>Situaciones para el Cumplimiento de comunicaciones
 
@@ -150,7 +152,7 @@ En este paso, se profundiza en los problemas detectados como coincidencias con l
 - **Revisión del historial de** actividades de usuario: vea el historial de actividades de mensajes de usuario y acciones de corrección, como notificaciones anteriores y escalaciones, para ver las coincidencias de directivas.
 - **Filtros:** use filtros como el remitente, el destinatario, la fecha y el sujeto para limitar rápidamente las alertas de mensajes que desea revisar.
 
-### <a name="remediate"></a>Corrección
+### <a name="remediate"></a>Corregir
 
 El siguiente paso es corregir los problemas de cumplimiento de comunicaciones que ha investigado con las siguientes opciones:
 

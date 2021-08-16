@@ -1,7 +1,6 @@
 ---
 title: Habilitar el entorno de evaluación para Microsoft Cloud App Security
 description: Obtenga información sobre la arquitectura de MCAS dentro de Microsoft Defender Office 365 y comprenda las interacciones entre los Microsoft 365 Defender productos.
-keywords: Microsoft 365 Defender prueba, pruebe Microsoft 365 Defender, evalúe Microsoft 365 Defender, laboratorio de evaluación de Microsoft 365 Defender Microsoft 365 Defender, piloto, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación y corrección automatizadas, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6ada9613f852e085158b7002cbbb9a9928d36d58
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 761a8fcb3c6f7efe82c542001dac1f62eb365f1473268df0866bb5dfae0ed302
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863197"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>Habilitar el entorno de evaluación para Microsoft Cloud App Security
 

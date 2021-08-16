@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Obtenga información sobre cómo configurar la sincronización de directorios entre Microsoft 365 y su Active Directory local.
-ms.openlocfilehash: 14b44523c0a560a71ed8dc9182f677f2ebc0b865
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 53a64b2fdf2ff16f024425f516a5752b7788fadcabec94da772ace32ed9cdc0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926531"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904460"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurar la sincronización de directorios para Microsoft 365
 
@@ -87,7 +87,7 @@ Antes de comenzar, asegúrese de que tiene:
 
 Siga estos pasos:
 
-1. Inicie sesión en el [centro Microsoft 365 de administración](https://admin.microsoft.com) ( y elija https://admin.microsoft.com) **Usuarios** \> **usuarios activos** en la navegación izquierda.
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) ( https://admin.microsoft.com) y elija **Usuarios** \> **usuarios activos** en la navegación izquierda.
 2. En la **página Usuarios activos,** elija **Más** (tres puntos) Sincronización \> **de directorios**.
   
 3. En la **Azure Active Directory preparación,** seleccione el vínculo Ir al Centro de descarga para obtener el vínculo de la herramienta Conectar **Azure AD** para empezar. 

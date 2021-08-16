@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 06/14/2021
+ms.date: 08/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 99954e7d5bfeffdbe611aa06dae3e7bf6fd4653a757f6ed11c74f1df7b606fb3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a9202cf5da326bd573e85459591f408b04ddad03
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863504"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257735"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para endpoint- Fase 1: Preparar
 
@@ -63,7 +63,7 @@ Mantenga actualizada la solución de protección de puntos de conexión existent
 
 ¿Necesita ayuda para actualizar los dispositivos de su organización? Vea los siguientes recursos:
 
-|Sistema operativo | Recurso |
+|SO | Recurso |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|
@@ -112,12 +112,12 @@ Para habilitar la comunicación entre los dispositivos y Defender para endpoint,
 
 | Capacidades  | Sistema operativo | Recursos |
 |:--|:--|:--|
-| [Detección y respuesta de extremos](overview-endpoint-detection-response.md) (EDR) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Servidor 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803)  | [Configurar el proxy de máquina y la configuración de conectividad a Internet](configure-proxy-internet.md) |
-| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-| EDR  | macOS:<p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave)   | [Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)  |
-| [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Servidor 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
-| Antivirus | macOS:<p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave) | [Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections) |
-| Antivirus | Linux: <p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS o LTS superior<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [Defender para endpoint en Linux: conexiones de red](microsoft-defender-endpoint-linux.md#network-connections) |
+| [Detección y respuesta de extremos](overview-endpoint-detection-response.md) (EDR) | [Windows 10](/windows/release-health/release-information) <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803)  | [Configurar el proxy de máquina y la configuración de conectividad a Internet](configure-proxy-internet.md) |
+| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
+| EDR  | macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)   | [Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)  |
+| [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803) <br/>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md) |
+| Antivirus | macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave) | [Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections) |
+| Antivirus | Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS o LTS superior; SLES 12+; Debian 9+; Oracle Linux 7.2 | [Defender para endpoint en Linux: conexiones de red](microsoft-defender-endpoint-linux.md#network-connections) |
 
 ## <a name="next-step"></a>Paso siguiente
 

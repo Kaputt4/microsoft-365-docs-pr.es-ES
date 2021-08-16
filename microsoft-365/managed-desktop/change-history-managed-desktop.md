@@ -13,16 +13,44 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: ef1480fe91180d451341fa4becdb527acacaec0951ba9dce4831b0fc1f6a894c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b12451a3c64384d46ad53af14ff17761d515251
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854584"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257685"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cambiar el historial de la documentación de Escritorio administrado de Microsoft
 
 En este artículo se enumeran los artículos nuevos y actualizados [de la Escritorio administrado de Microsoft documentación .](index.yml) Los artículos "actualizados" han tenido adiciones o correcciones de material; no se enumeran correcciones secundarias como la corrección de errores tipográficos, de estilo o de formato. Siempre puede ver el historial de confirmaciones específicas (incluidos los detalles de los cambios) visitando el [repositorio en GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+
+## <a name="july-2021"></a>Julio de 2021
+Artículo nuevo o modificado | Descripción
+--- | ---
+[Imágenes del dispositivo](service-description/device-images.md)| Artículo actualizado
+[Solucionar los problemas detectados por la herramienta de evaluación de la preparación](get-ready/readiness-assessment-fix.md) | Artículo actualizado
+[Roles y responsabilidades del Escritorio administrado de Microsoft](intro/roles-and-responsibilities.md) | Artículo actualizado
+[Habilitar características de soporte técnico para usuarios](get-started/enable-support.md) | Artículo nuevo
+[Habilitar Enterprise State Roaming](get-started/enterprise-state-roaming.md) | Artículo actualizado
+[Escritorio administrado de Microsoft y Windows 11](intro/win11-overview.md) | Artículo nuevo
+[Vista previa y prueba de Windows 11 con Escritorio administrado de Microsoft](working-with-managed-desktop/test-win11-mmd.md) | Artículo nuevo
+[Pasos para que los Socios puedan registrar dispositivos](get-started/register-devices-partner.md) | Artículo actualizado
+[Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) |Artículo actualizado
+[Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
+[Experiencia de primera ejecución con piloto automático y la página de estado de inscripción](get-started/esp-first-run.md) | Artículo actualizado
+[Escritorio administrado de Microsoft operaciones y supervisión](service-description/operations-and-monitoring.md) | Artículo actualizado
+[Obtener ayuda para los usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
+
+## <a name="june-2021"></a>Junio de 2021
+Artículo nuevo o modificado | Descripción
+--- | ---
+[Trabajar con informes](working-with-managed-desktop/reports.md) | Artículo actualizado
+[Información general](service-description/privacy-personal-data.md) | Artículo actualizado
+[Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
+[Solucionar los problemas detectados por la herramienta de evaluación de la preparación](get-ready/readiness-assessment-fix.md) | Artículo actualizado
+[Requisitos previos del Escritorio administrado de Microsoft](get-ready/prerequisites.md) | Artículo actualizado
+[Habilitar Enterprise State Roaming](get-started/enterprise-state-roaming.md) | Artículo actualizado
 
 ## <a name="may-2021"></a>Mayo de 2021
 Artículo nuevo o modificado | Descripción
@@ -195,7 +223,7 @@ Artículo nuevo o modificado | Descripción
 
 
 
-## <a name="march-2020"></a>Marzo 2020
+## <a name="march-2020"></a>Marzo de 2020
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Pasos para que los Socios puedan registrar dispositivos](get-started/register-devices-partner.md)| Artículo actualizado
@@ -206,11 +234,11 @@ Artículo nuevo o modificado | Descripción
 ## <a name="february-2020"></a>Febrero de 2020
 Artículo nuevo o modificado | Descripción
 --- | ---
-[Seguridad en Escritorio administrado de Microsoft](service-description/security.md)| Artículo actualizado
+[Seguridad en El escritorio administrado de Microsoft](service-description/security.md)| Artículo actualizado
 Trabajar con ideas | Artículo actualizado
 Información de actualización de seguridad de Windows| Artículo nuevo
-[Cómo se controlan las actualizaciones en Escritorio administrado de Microsoft](service-description/updates.md) | Artículo actualizado
-[Escritorio administrado de Microsoft de dispositivos](service-description/device-services.md) | Artículo actualizado
+[Cómo se controlan las actualizaciones en Microsoft Managed Desktop](service-description/updates.md) | Artículo actualizado
+[Servicios de dispositivos de Escritorio administrado de Microsoft](service-description/device-services.md) | Artículo actualizado
 
 
 
@@ -226,8 +254,8 @@ Artículo nuevo o modificado | Descripción
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
-[Escritorio administrado de Microsoft dispositivos](service-description/device-list.md) | Artículo actualizado
-[Escritorio administrado de Microsoft archivados](service-description/archived-device-list.md) | Artículo actualizado
+[Dispositivos de Escritorio administrado de Microsoft](service-description/device-list.md) | Artículo actualizado
+[Dispositivos archivados de Microsoft Managed Desktop](service-description/archived-device-list.md) | Artículo actualizado
 
 
 
@@ -237,8 +265,8 @@ Artículo nuevo o modificado | Descripción
 Trabajar con ideas | Artículo nuevo
 Información sobre el uso | Artículo nuevo
 Información sobre la confiabilidad | Artículo nuevo
-[Escritorio administrado de Microsoft dispositivos](service-description/device-list.md) | Artículo actualizado
-[Escritorio administrado de Microsoft principal](./index.yml) | Artículo actualizado
+[Dispositivos de Escritorio administrado de Microsoft](service-description/device-list.md) | Artículo actualizado
+[Página principal de Escritorio administrado de Microsoft](./index.yml) | Artículo actualizado
 [¿Qué es el escritorio administrado por Microsoft?](./intro/index.md) | Artículo actualizado
 [Prepare a los usuarios para que usen los dispositivos](get-started/get-started-devices.md) | Artículo actualizado
 [Excepciones para el plan de servicios](service-description/customizing.md) | Artículo actualizado
@@ -253,7 +281,7 @@ Artículo nuevo o modificado | Descripción
 [ Cambios en el servicio y comunicación ](service-description/servicechanges.md) | Artículo nuevo
 [Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
 [Registre dispositivos existentes usted mismo](get-started/register-reused-devices-self.md) | Artículo actualizado
-[Escritorio administrado de Microsoft regiones e idiomas admitidos](service-description/regions-languages.md) | Artículo actualizado
+[Regiones e idiomas admitidos por Microsoft Managed Desktop](service-description/regions-languages.md) | Artículo actualizado
 
 
 
@@ -263,14 +291,14 @@ Artículo nuevo o modificado | Descripción
 --- | ---
 [Tecnologías del Escritorio administrado de Microsoft](intro/technologies.md) | Artículo actualizado
 [Obtener ayuda para los usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
-[Escritorio administrado de Microsoft dispositivos](service-description/device-list.md) | Artículo actualizado
+[Dispositivos de Escritorio administrado de Microsoft](service-description/device-list.md) | Artículo actualizado
 [Implementar y realizar un seguimiento de la configuración configurable: Escritorio administrado de Microsoft](working-with-managed-desktop/config-setting-deploy.md) | Artículo actualizado
 [Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
 [Requisitos previos del Escritorio administrado de Microsoft](get-ready/prerequisites.md) | Artículo actualizado
 [Configurar dispositivos del Escritorio administrado por Microsoft](get-started/set-up-devices.md) | Artículo nuevo
 [Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
 [Registre dispositivos existentes usted mismo](get-started/register-reused-devices-self.md) | Artículo nuevo
-[Cómo se controlan las actualizaciones en Escritorio administrado de Microsoft](service-description/updates.md) | Artículo actualizado
+[Cómo se controlan las actualizaciones en Microsoft Managed Desktop](service-description/updates.md) | Artículo actualizado
 
 ## <a name="august-2019"></a>Agosto de 2019
 Artículo nuevo o modificado | Descripción

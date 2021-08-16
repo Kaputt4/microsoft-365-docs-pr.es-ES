@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7c881402a90c8e858d05556f5d8ed7f1be581581c78b5b084838b4dfb6181255
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8066fe3cbb0a8c6662048e5f349f834428f419e9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806957"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257723"
 ---
 # <a name="isolate-machine-api"></a>AISLAR API de máquina
 
@@ -80,8 +80,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/isolate
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Autorización|String|Portador {token}. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -90,7 +90,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 Parámetro|Tipo|Descripción
 :---|:---|:---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
-IsolationType|Cadena|Tipo de aislamiento. Los valores permitidos son: "Completo" o "Selectivo".
+IsolationType|String|Tipo de aislamiento. Los valores permitidos son: "Completo" o "Selectivo".
 
 **IsolationType** controla el tipo de aislamiento que se debe realizar y puede ser uno de los siguientes:
 

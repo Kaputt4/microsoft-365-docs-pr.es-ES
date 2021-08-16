@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Use la búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
-ms.openlocfilehash: 60f0f51c713abf98109362fd57e3950d2ee17ce307b3c16b6483ada69385c2f1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b165e52835165980da3621634ef29247a87490fe
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891803"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257348"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Usar la búsqueda de contenido para colecciones dirigidas
 
@@ -57,13 +57,13 @@ La herramienta de búsqueda de contenido del Centro de cumplimiento de Microsoft
 
 El script que ejecute en este primer paso devolverá una lista de carpetas de buzones de correo o carpetas SharePoint y OneDrive para la Empresa carpetas, y el identificador de carpeta o ruta de acceso correspondiente para cada carpeta. Al ejecutar este script, se le pedirá la siguiente información.
 
-- **Dirección de correo electrónico o dirección URL** del sitio: escriba una dirección de correo electrónico del custodio para devolver una lista de Exchange carpetas de buzones de correo e IDs de carpeta. O escriba la dirección URL de un SharePoint o un sitio OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Estos son algunos ejemplos:
+- **Dirección de correo electrónico o dirección URL** del sitio: escriba una dirección de correo electrónico del custodio para devolver una lista de Exchange carpetas de buzones de correo e IDs de carpeta. O escriba la dirección URL de un SharePoint o un sitio OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Aquí le mostramos otros ejemplos:
 
-  - **Exchange**: stacig@contoso.onmicrosoft <spam> <spam> .com
+  - **Exchange**:`stacig@contoso.onmicrosoft.com`
 
-  - **SharePoint**: https <span>://</span>contoso.sharepoint.com/sites/marketing
+  - **SharePoint**:`https://contoso.sharepoint.com/sites/marketing`
 
-  - **OneDrive para la Empresa**: https <span>://</span>contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com
+  - **OneDrive para la Empresa**:`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
 - **Sus credenciales de usuario:** el script usará sus credenciales para conectarse Exchange Online PowerShell o Security & Compliance Center PowerShell mediante la autenticación moderna. Como se explicó anteriormente, debe tener asignados los permisos adecuados para ejecutar correctamente este script.
 
@@ -236,7 +236,7 @@ Después de ejecutar el script para recopilar una lista de id. de carpeta o vín
 
     - Junto a Exchange correo electrónico, haga clic en Elegir usuarios, grupos o equipos **y,** **a** continuación, agregue el mismo buzón que especificó al ejecutar el script en el paso 1.
 
-      O bien
+      O bien:
 
     - Junto a **SharePoint,** haga  clic en Elegir sitios y, a continuación, agregue la misma dirección URL del sitio que especificó al ejecutar el script en el paso 1.
 
