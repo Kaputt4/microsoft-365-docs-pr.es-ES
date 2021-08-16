@@ -17,12 +17,12 @@ ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 ms.custom:
 - seo-marvel-apr2020
 description: Use el Editor de búsqueda masiva en el Centro de seguridad y cumplimiento para cambiar rápidamente las ubicaciones de consulta y contenido de una o más búsquedas de contenido.
-ms.openlocfilehash: be7e37ec22966e16dfa3c6d1f37a34e6441e632a
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 221b35c282de3f9bf00c3318e92d996d867388226fd93251fef3f66881c7be21
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341037"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880650"
 ---
 # <a name="bulk-edit-content-searches"></a>Búsquedas de contenido de edición masiva
 

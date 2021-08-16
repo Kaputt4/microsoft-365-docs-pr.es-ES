@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place exhibición de documentos electrónicos y retención In-Place (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Advanced eDiscovery v1.0 también se retiran en el mismo período de tiempo.
-ms.openlocfilehash: 77a7daf36c86cd302f774e5a4b934148d3dfd5a7
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 5fbcb980d941ddd54ce76d5a44f93e5cdd9f7e052466d01a727668ffac2c89ea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860084"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
@@ -77,7 +77,7 @@ Dado que todas estas funcionalidades (excepto para copiar resultados de búsqued
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; esto incluye GCC, GCC High y DoD
 
-- Office 365 Germany
+- Office 365 Alemania
 
 ### <a name="timeline-for-retirement"></a>Escala de tiempo para la retirada
 
@@ -180,7 +180,7 @@ Dado que estas funcionalidades ya están disponibles en [<span class="underline"
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; esto incluye GCC, GCC High y DoD
 
-- Office 365 Germany
+- Office 365 Alemania
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -261,7 +261,7 @@ El cmdlet **Search-Mailbox** en Exchange Online PowerShell se está retirando co
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; esto incluye GCC, GCC High y DoD
 
-- Office 365 Germany
+- Office 365 Alemania
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -333,7 +333,7 @@ Estas operaciones en la API de servicios web de Exchange las usa la característ
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; esto incluye GCC, GCC High y DoD
 
-- Office 365 Germany
+- Office 365 Alemania
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -369,7 +369,7 @@ En este momento, se recomienda comenzar a realizar la transición del flujo de t
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; esto incluye GCC, GCC High y DoD
 
-- Office 365 Germany
+- Office 365 Alemania
 
 ### <a name="timeline"></a>Escala de tiempo
 

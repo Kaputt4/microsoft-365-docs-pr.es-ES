@@ -1,7 +1,7 @@
 ---
 title: What's coming to Microsoft Secure Score
-description: Describe los nuevos cambios que se van a realizar en La puntuación segura de Microsoft en el centro Microsoft 365 seguridad.
-keywords: puntuación segura de microsoft, puntuación segura, puntuación segura de office 365, puntuación de seguridad de Microsoft, centro de seguridad de Microsoft 365, acciones de mejora
+description: Describe los nuevos cambios que se van a realizar en La puntuación segura de Microsoft en el portal Microsoft 365 Defender web.
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ee54beffebaa6e42e58e54de7ba9a1e31a69dc5f576d813b4dfce584d8c4e694
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ef2caf21d09a2c5387e60e81e3af93b08b78f07
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867552"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254339"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>What's coming to Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score se puede encontrar en https://security.microsoft.com/securescore el centro de Microsoft 365 [seguridad.](overview-security-center.md)
+Microsoft Secure Score se puede encontrar en https://security.microsoft.com/securescore el [portal de Microsoft 365 Defender.](overview-security-center.md)
 
 ## <a name="proposed-changes"></a>Cambios propuestos
 

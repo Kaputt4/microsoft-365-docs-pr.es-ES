@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Etiquetar documentos en un conjunto de revisión ayuda a quitar contenido innecesario e identificar contenido relevante en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a34637c33e5a12a20f65ecc5d7413b185a44dc24
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 96c6d30976c6e5383e21b615928fe4fb60b36e1f9e39668cd11e397402533afe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257132"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879247"
 ---
 # <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Etiquetar documentos en un conjunto de revisión en Advanced eDiscovery
 
-Organizar el contenido en un conjunto de revisión es importante para completar varios flujos de trabajo en el proceso de exhibición de documentos electrónicos. Incluye lo siguiente:
+Organizar el contenido en un conjunto de revisión es importante para completar varios flujos de trabajo en el proceso de exhibición de documentos electrónicos. Esto incluye lo siguiente:
 
 - Selección de contenido innecesario
 
@@ -57,21 +57,15 @@ Puede organizar aún más las etiquetas anidandolas dentro de una sección. Por 
 
 ![Etiquetas anidadas dentro de una sección de etiquetas](../media/NestingTags.png)
 
-## <a name="creating-and-applying-tags"></a>Creación y aplicación de etiquetas
+## <a name="create-tags"></a>Crear etiquetas
 
-El etiquetado de elementos en conjuntos de revisión es un proceso de dos pasos. El primer paso es crear las etiquetas que luego se aplican para revisar los elementos del conjunto. Después de crear etiquetas, usted y otros revisores pueden aplicarlas a los elementos de un conjunto de revisión. Como se explicó anteriormente, un Advanced eDiscovery caso solo puede tener un conjunto de etiquetas que los revisores pueden usar para etiquetar elementos del conjunto de revisión.
+Antes de aplicar etiquetas a documentos en el conjunto de revisión, debe crear una estructura de etiquetas.
 
-### <a name="create-tags"></a>Crear etiquetas
+1. Abra un conjunto de revisión y navegue a la barra de comandos y seleccione **Etiquetar por consulta**.
 
-Antes de aplicar etiquetas a los elementos de un conjunto de revisión, debe crear una estructura de etiquetas.
+2. En el panel de etiquetado, seleccione **Administrar opciones de etiquetas**
 
-1. Abra un conjunto de revisión, vaya a la barra de comandos y seleccione **Etiquetar archivos**.
-
-2. En la **página desplegable Archivos de** etiquetas, haga clic en **Crear/editar etiquetas**.
-
-   ![Haga clic en Crear/editar etiquetas en la página desplegable](../media/CreateAeDTags1.png)
-
-3. En la **página Etiquetas,** seleccione **Agregar sección**.
+3. Seleccione **Agregar sección de etiqueta**.
 
 4. Escriba un título de grupo de etiquetas y una descripción opcional y, a continuación, haga clic en **Guardar**.
 
@@ -79,60 +73,66 @@ Antes de aplicar etiquetas a los elementos de un conjunto de revisión, debe cre
 
 6. Escriba un nombre y una descripción para la casilla o el botón de opción.
 
-7. Repita este proceso para crear nuevas secciones de etiquetas, opciones de etiquetas y casillas de verificación. Por ejemplo, la siguiente captura de pantalla muestra un grupo de etiquetas denominado **Review**, que consta de casillas **Responsive** y **Not-responsive.**
+7. Repita este proceso para crear nuevas secciones de etiquetas, opciones de etiquetas y casillas de verificación.
 
    ![Configurar la estructura de etiquetas](../media/ManageTagOptions3.png)
 
-### <a name="apply-tags"></a>Apply tags
+## <a name="applying-tags"></a>Aplicación de etiquetas
 
-Con la estructura de etiquetas en su lugar, los revisores pueden aplicar etiquetas a los elementos de un conjunto de revisión configurando las opciones de etiquetado.
+Con la estructura de etiquetas en su lugar, los revisores pueden aplicar etiquetas a los documentos de un conjunto de revisión. Hay dos formas diferentes de aplicar etiquetas:
 
-1. En la barra de comandos del conjunto de revisión, seleccione **Etiquetar** archivos para mostrar la **página** desplegable Archivos de etiqueta (también denominada *panel de etiquetado).*
+- Archivos de etiqueta
 
-   ![Haga clic en Etiquetar archivos en la barra de comandos para abrir el panel de etiquetado](../media/TagFilesFlyoutPage.png)
+- Etiqueta por consulta
 
-2. En la **página desplegable Archivos** de etiqueta, puede establecer las siguientes opciones para configurar cómo etiquetar los elementos que se muestran en el conjunto de revisión. Las consultas de filtros o filtros aplicadas actualmente al conjunto de revisión determinan los elementos que se muestran y, por lo tanto, los elementos a los que se pueden aplicar etiquetas. Para obtener más información, vea [Consulta y filtrar contenido en un conjunto de revisión.](review-set-search.md)
+### <a name="tag-files"></a>Archivos de etiqueta
 
-   - **Elija la selección**. Elija una de las siguientes opciones para determinar el ámbito de los elementos a los que aplicar etiquetas.
+Tanto si selecciona un solo elemento como varios elementos de un conjunto de revisión, puede aplicar etiquetas a su selección haciendo clic en **Etiquetar archivos** en la barra de comandos. En el panel de etiquetado, puede seleccionar una etiqueta y se aplica automáticamente a los documentos seleccionados.
 
-      - **Etiquetar elementos seleccionados:** esta opción aplica etiquetas a los elementos seleccionados. Puede seleccionar elementos antes o después de iniciar el panel de etiquetado. Esta opción muestra (en tiempo real) el número de elementos seleccionados que se etiquetarán.
+![Etiquetar archivos seleccionados](../media/TagFile2.png)
 
-      - **Etiquetar todos los elementos de la** lista: esta opción aplica etiquetas a todos los elementos que se muestran en el conjunto de revisión. Esta opción muestra el número total de elementos que se etiquetarán.
+> [!NOTE]
+> Las etiquetas solo se aplicarán a los elementos seleccionados de la lista de elementos.
 
-   - **Expandir selección:** use las siguientes opciones para etiquetar elementos adicionales relacionados con elementos etiquetados en el conjunto de revisión.
+### <a name="tag-by-query"></a>Etiqueta por consulta
 
-      - **Incluir elementos de familia asociados:** esta opción aplica la misma etiqueta a los elementos de familia asociados de los elementos etiquetados.  *Los elementos de* familia son elementos que comparten el mismo valor de **la propiedad de metadatos FamilyId.** Por ejemplo, un documento adjunto a un mensaje de correo electrónico comparte el mismo **FamilyId** que el mensaje de correo electrónico. Por lo tanto, si esta opción está seleccionada para este ejemplo, el mensaje de correo electrónico y el documento se etiquetan, aunque es posible que el documento no se incluya en la lista de elementos del conjunto de revisión.
+El etiquetado por consulta le permite aplicar etiquetas a todos los elementos mostrados por una consulta de filtro que se aplica actualmente en el conjunto de revisión.
 
-      - **Incluir elementos de conversación** asociados: esta opción aplica la misma etiqueta a todos los elementos que están en la misma conversación Teams o Yammer que los elementos etiquetados. *Los elementos de* conversación son elementos que comparten el mismo valor de **la propiedad de metadatos ConversationId.** Todos los mensajes, publicaciones y el archivo de transcripción correspondiente de una conversación comparten el mismo **ConversationId**. Si se selecciona esta opción, todos los elementos de la misma conversación (y archivo de transcripción) se etiquetan, aunque algunos de esos elementos de conversación podrían no incluirse en la lista de elementos del conjunto de opiniones. Para obtener más información acerca de los elementos de conversación, vea la sección "Agrupación" en Advanced eDiscovery flujo de trabajo para el contenido [de Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
+1. Anule la selección de todos los elementos del conjunto de revisión y vaya a la barra de comandos y **seleccione Etiquetar por consulta**.
 
-      - **Ninguno:** esta opción no aplica etiquetas a elementos de familia o elementos de conversación. Solo aplica etiquetas a los elementos seleccionados o a todos los elementos de la lista de conjunto de revisión.
+2. En el panel de etiquetado, seleccione la etiqueta que desea aplicar.
 
-   > [!NOTE]
-   > La inclusión de elementos de familia o conversación asociados no cambiará el número de elementos que se muestran en los elementos seleccionados Etiquetar **o** Etiquetar todos los elementos de las **opciones de** lista. En otras palabras, no se muestra el número de elementos asociados que se etiquetarán.
+3. En el **desplegable Selección de** etiquetas, hay tres opciones que determinan a qué elementos aplicar la etiqueta.
 
-   - **Asignar etiquetas:** en esta sección se muestran las etiquetas (organizadas por grupos de etiquetas) que se pueden aplicar a los documentos. Solo puede aplicar una etiqueta de opción única (identificada por un botón de radio) por grupo de etiquetas. Sin embargo, puede aplicar varias etiquetas de opción múltiple (que se identifican mediante una casilla).
+   - **Elementos que coinciden con la consulta aplicada:** aplica etiquetas a elementos específicos que coinciden con las condiciones de consulta de filtro.
 
-3. Haz clic en Aplicar **etiquetas** para aplicar las etiquetas según la configuración.
+   - **Incluir elementos de familia asociados:** aplica etiquetas a elementos específicos que coinciden con las condiciones de consulta de filtro y sus elementos de familia asociados. *Los elementos de* familia son elementos que comparten el mismo valor de metadatos de FamilyId.  
 
-   Se **muestra el mensaje de estado** Aplicar etiquetas para cada grupo de etiquetas en el panel de etiquetado para indicar que se ha iniciado un trabajo de etiquetado. Las etiquetas para cada grupo de etiquetas de la **sección Asignar etiquetas** se en gris hasta que se complete el trabajo.
+   - **Incluir elementos de conversación asociados:** aplica etiquetas a los elementos que coinciden con las condiciones de consulta de filtro y sus elementos de conversación asociados. *Los elementos de* conversación son elementos que comparten los mismos valores de metadatos de ConversationId.
 
-> [!TIP]
-> Si estás en el proceso de configurar la configuración en el panel de etiquetado, pero quieres empezar de nuevo, haz clic en **Restablecer** asignación de etiquetas para borrar la configuración actual. Este control no se aplica a los elementos que ya están etiquetados y no cambia ni quita etiquetas de elementos etiquetados anteriormente.  
+   ![Selección de etiquetas](../media/TagByQuery2.png)
 
-#### <a name="monitor-tagging-jobs"></a>Supervisar trabajos de etiquetado
+4. Haga **clic en Iniciar trabajo de etiquetado** para desencadenar el trabajo de etiquetado.
 
-Al etiquetar un gran número de elementos (o seleccionar la **opción Etiquetar** todos los elementos de la lista ), se crea un trabajo **de documentos** de etiquetado. En este caso, puede ver el estado de este trabajo en **la** pestaña Trabajos. Esto le ayuda a realizar un seguimiento de los trabajos de etiquetado grandes que pueden tardar mucho tiempo en completarse. En algunos casos, es posible que  se complete un trabajo de etiquetado, pero todavía se muestra el mensaje de estado Aplicar etiquetas en el panel de etiquetado. Para actualizar el estado de los trabajos de etiquetado, haga clic **en Actualizar en** la barra de comandos del conjunto de revisión.
+## <a name="tag-filter"></a>Filtro de etiquetas
 
-## <a name="removing-tags"></a>Quitar etiquetas
+Use el filtro de etiquetas en el conjunto de revisión para buscar o excluir rápidamente elementos de los resultados de la consulta en función de cómo se etiqueta un elemento. 
 
-Puede quitar etiquetas de elementos de un conjunto de revisión. Sin embargo, no puede quitar una etiqueta de opción única que se haya aplicado a un elemento de conjunto de revisión. Solo puede cambiar una etiqueta de opción única a otra etiqueta de opción única dentro del mismo grupo de etiquetas.
+1. Seleccione **Filtros** para expandir el panel de filtro.
 
-Para quitar una etiqueta:
+2. Seleccione y expanda **Propiedades de elemento**.
 
-1. Seleccione los elementos de los que desea quitar la etiqueta.
+3. Desplácese hacia abajo para buscar el filtro denominado **Tag**, seleccione la casilla y, a continuación, haga clic en **Listo**.
 
-2. Haga **clic en Etiquetar** archivos para mostrar el panel de etiquetado.
+4. Para incluir o excluir elementos con una etiqueta específica de una consulta, realice una de las siguientes acciones:
 
-3. En **Asignar etiquetas**, anule la selección de la etiqueta y, a continuación, haga clic **en Aplicar etiquetas**.
+   - **Incluir elementos:** seleccione el valor de la etiqueta y **seleccione Igual a cualquiera en** el menú desplegable.
 
-También puede usar el procedimiento anterior para cambiar la etiqueta aplicada a los elementos seleccionados. Después de anular la selección de la etiqueta actual, puede seleccionar una diferente.
+      O bien
+
+   - **Excluir elementos:** seleccione el valor de la etiqueta y **seleccione No es** igual a ninguno en el menú desplegable.
+
+     ![Elementos de exclusión de filtro de etiquetas](../media/TagFilterExclude.png)
+
+> [!NOTE]
+> Asegúrese de actualizar la página para asegurarse de que el filtro de etiquetas muestra los cambios más recientes en la estructura de etiquetas.

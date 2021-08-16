@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El Administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en el flujo de trabajo que se encuentra dentro del Portal de confianza de servicios de Microsoft. El Administrador de cumplimiento le permite realizar un seguimiento, asignar y verificar las actividades de cumplimiento reglamentarias de su organización en relación con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 69e6551620fb654cb09d46554e6e3c98b6a2fc60
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc58bf9b38b08ddd7218dfe0be07013a72ad0608dec931a3a5992193f75b0a25
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595807"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880550"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Administrador de cumplimiento de Microsoft y el RGPD
 
@@ -28,7 +28,7 @@ El Reglamento general de protección de datos (RGPD), aprobado por la Unión Eur
 
 ## <a name="user-privacy-settings"></a>Configuración de privacidad del usuario
 
-Algunos reglamentos exigen que la organización sea capaz de eliminar los datos del historial del usuario. El Administrador de cumplimiento proporciona las funciones de **Configuración de privacidad del usuario**, que permiten a los administradores:
+Algunos reglamentos exigen que una organización pueda eliminar los datos del historial del usuario. Para facilitar esto, el Administrador de cumplimiento proporciona las funciones de **Configuración de privacidad del usuario**, que permiten a los administradores:
   
 - [Buscar un usuario](#search-for-a-user)
 - [Exportar un informe de historial de datos de cuenta](#export-a-report-of-account-data-history)
@@ -44,7 +44,7 @@ Para buscar una cuenta de usuario:
 
 3. Para las cuentas de usuario que no se devuelven en la búsqueda, la página muestra **Usuario no encontrado**. Revise la información de dirección de correo electrónico del usuario y realice las correcciones necesarias. Para reintentar, seleccione **Buscar**.
 
-4. Para las cuentas de usuario devueltas en la búsqueda, el texto del botón cambia de **Buscar** a **Borrar**. Esto indica que la cuenta de usuario devuelta es el contexto operativo para las funciones adicionales, y que estas funciones se aplican a esta cuenta de usuario.
+4. Para las cuentas de usuario que se devuelven en la búsqueda, el texto del botón cambia de **Buscar** a **Borrar**. Esto indica que la cuenta de usuario devuelta es el contexto operativo para las funciones adicionales, las cuales se aplican a dicha cuenta de usuario.
 
 5. Para borrar los resultados de la búsqueda y buscar otro usuario, seleccione **Borrar**.
 
@@ -54,7 +54,7 @@ Para cada cuenta de usuario identificada, puede generar un informe de dependenci
   
  Para generar y exportar un informe:
   
-1. Seleccione **Exportar** para generar y descargar un informe de Acciones de control del Administrador de cumplimiento, que ya está asignado a la cuenta de usuario devuelta, así como para generar y descargar la lista de documentos que ha cargado el usuario. Si no hay acciones asignadas ni documentos cargados, un mensaje de error indicará "No hay datos para este usuario".
+1. Seleccione **Exportar** para generar y descargar un informe de los elementos de acciones de control del Administrador de cumplimiento que estén asignados actualmente a la cuenta de usuario devuelta, así como la lista de documentos que ese usuario ha cargado. Si no hay acciones asignadas ni documentos cargados, se mostrará el mensaje de error “No hay datos para este usuario”.
 
 2. El informe se descargará en segundo plano desde la ventana del explorador activa. Si no ve un mensaje emergente de descarga, consulte el historial de descargas del explorador.
 

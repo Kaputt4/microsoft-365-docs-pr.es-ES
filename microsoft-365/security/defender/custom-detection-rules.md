@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 62c8fda1276089ba4c9f6e7bd7a0839ddf88256d3c30f8c62f9eb25daadf7b40
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f17a06aa34274cf61b1979c64a008e7fe70d676b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863221"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254597"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -42,9 +42,9 @@ Las reglas de detección personalizadas son reglas que puedes diseñar y ajustar
 
 Para administrar detecciones personalizadas, debe tener asignado uno de estos roles:
 
-- **Administrador de** seguridad: los usuarios [con este Azure Active Directory pueden](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) administrar la configuración de seguridad en Microsoft 365 de seguridad y otros portales y servicios.
+- **Administrador de** seguridad: los usuarios [con este Azure Active Directory pueden](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) administrar la configuración de seguridad en el portal de Microsoft 365 Defender y otros portales y servicios.
 
-- **Operador de** seguridad: los usuarios con este [rol Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) pueden administrar alertas y tener acceso global de solo lectura a las características relacionadas con la seguridad, incluida toda la información del Microsoft 365 de seguridad. Este rol es suficiente para administrar detecciones personalizadas solo si el control de acceso basado en roles (RBAC) está desactivado en Microsoft Defender para endpoint. Si tiene RBAC configurado, también necesita el permiso administrar la configuración **de seguridad** para Defender para endpoint.
+- **Operador de** seguridad: los usuarios con este rol Azure Active Directory pueden administrar alertas y tener acceso global de solo lectura [a](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) características relacionadas con la seguridad, incluida toda la información del portal Microsoft 365 Defender seguridad. Este rol es suficiente para administrar detecciones personalizadas solo si el control de acceso basado en roles (RBAC) está desactivado en Microsoft Defender para endpoint. Si tiene RBAC configurado, también necesita el permiso administrar la configuración **de seguridad** para Defender para endpoint.
 
 También puede administrar detecciones personalizadas que se aplican a los datos de soluciones Microsoft 365 Defender específicas si tiene permisos para ellas. Si solo tiene permisos para administrar Microsoft 365 Defender para Office, por ejemplo, puede crear detecciones personalizadas con tablas, pero `Email` no `Identity` tablas.  
 
@@ -59,7 +59,7 @@ Para administrar los permisos necesarios, un **administrador global** puede:
 ## <a name="create-a-custom-detection-rule"></a>Crear una regla de detección personalizada
 ### <a name="1-prepare-the-query"></a>1. Prepare la consulta.
 
-En Microsoft 365 seguridad, vaya a **Búsqueda avanzada** y seleccione una consulta existente o cree una nueva consulta. Al usar una nueva consulta, ejecute la consulta para identificar errores y comprender los posibles resultados.
+En el portal Microsoft 365 Defender, vaya a **Búsqueda avanzada** y seleccione una consulta existente o cree una nueva consulta. Al usar una nueva consulta, ejecute la consulta para identificar errores y comprender los posibles resultados.
 
 >[!IMPORTANT]
 >Para evitar que el servicio devuelva demasiadas alertas, cada regla se limita a generar solo 100 alertas cada vez que se ejecuta. Antes de crear una regla, ajusta la consulta para evitar alertas de actividad normal del día a día.

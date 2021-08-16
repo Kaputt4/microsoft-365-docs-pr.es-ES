@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1971f70752b7787540e3edd470bece5e609d5bcd6171a7c6a8ef39af44c0ce4f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 90660b9b95e7724437972d280b5f179a774c00c3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893918"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254379"
 ---
 # <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>Habilitar y piloto Microsoft Defender para Office 365
 
@@ -44,7 +44,7 @@ En la tabla siguiente se describen los pasos de la ilustración.
 | |Paso  |Descripción  |
 |---------|---------|---------|
 |1|[Revisar los requisitos de arquitectura y los conceptos clave](eval-defender-office-365-architecture.md)    | Comprenda defender para Office arquitectura y asegúrese de que el entorno Exchange Online cumple los requisitos previos de la arquitectura.       |
-|2|[Habilitar el entorno de evaluación](eval-defender-office-365-enable-eval.md)     |   Siga los pasos para configurar el entorno de evaluación.      |
-|3|[Configurar el piloto ](eval-defender-office-365-pilot.md)    |    Cree grupos piloto, configure la protección y familiarícese con las características y paneles clave.     |
+|2 |[Habilitar el entorno de evaluación](eval-defender-office-365-enable-eval.md)     |   Siga los pasos para configurar el entorno de evaluación.      |
+|3 |[Configurar el piloto ](eval-defender-office-365-pilot.md)    |    Cree grupos piloto, configure la protección y familiarícese con las características y paneles clave.     |
 ||||
 

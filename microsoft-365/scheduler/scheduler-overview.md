@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Información general del programador para Microsoft 365.
-ms.openlocfilehash: 5429fa5ddb11892d3b7b9bdcf6949fa57dd1c7bb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f7dd1fb05e2519a72538f5563396a509d44f826c4067ef2abc756eca0c1f2c85
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52286258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898437"
 ---
 # <a name="welcome-to-scheduler-for-microsoft-365"></a>Bienvenido al Programador para Microsoft 365
 
-Programador de Microsoft 365 es un servicio que le permite delegar la programación de reuniones y citas en Cortana, su asistente personal digital. 
+Programador de Microsoft 365 es un servicio que le permite delegar la programación de reuniones y citas a Cortana, su asistente personal digital. 
 
 El programador usa el procesamiento de lenguaje natural para interpretar los correos electrónicos enviados a Cortana (cortana@yourdomain.com) para encontrar una hora para reunirse y enviar invitaciones de calendario para el organizador de la reunión.   
 
@@ -30,7 +30,7 @@ Programador:
 - Negocia las horas para reunirse en hasta dos zonas horarias diferentes.
 - Envía la invitación a la reunión desde el organizador.
 - Agrega un Teams a cada reunión.
-- Reprograma o cancela las reuniones reservadas por Cortana.
+- Reprograma o cancela reuniones reservadas por Cortana.
 - Funciona desde cualquier dispositivo con acceso al correo electrónico.
 
 ## <a name="who-can-benefit-from-scheduler-for-microsoft-365"></a>Quién puede beneficiarse del Programador para Microsoft 365?
@@ -41,13 +41,13 @@ Si programa reuniones pequeñas con menos de cinco asistentes, ahorrará tiempo 
 
 ## <a name="how-does-scheduler-for-microsoft-365-work"></a>¿Cómo funciona Scheduler Microsoft 365 trabajo?
 
-El programador usa una combinación de inteligencia artificial e inteligencia humana para completar las solicitudes de programación que se reciben por correo electrónico de Cortana (Cortana@yourdomain.com).  
+El programador usa una combinación de inteligencia artificial e inteligencia humana para completar las solicitudes de programación que se reciben por correo electrónico Cortana (Cortana@yourdomain.com).  
 
-Para usar Scheduler, agrega la dirección de correo electrónico de Cortana a un correo electrónico con las personas con las que quieras reunirte y pide a Cortana que reserve una reunión en lenguaje natural. 
+Para usar Scheduler, agregue la dirección de correo electrónico de Cortana a un correo electrónico con las personas con las que desea reunirse y pida a Cortana que reserve una reunión en lenguaje natural. 
 
-En su solicitud, diga a Cortana cuánto tiempo y cuándo desea reunirse. Por ejemplo, **"Cortana, busca 45 minutos para que nos reúnamos la próxima semana".**
+En la solicitud, informe Cortana cuánto tiempo y cuándo desea reunirse. Por ejemplo, **"Cortana, busca 45 minutos para que nos reúnamos la próxima semana".**
 
-Después de que un usuario envíe una solicitud de reunión a Cortana, el servicio Programador: 
+Después de que un usuario envíe una solicitud de reunión Cortana, el servicio Programador: 
 
 - Busca una hora para reunirse en función de la disponibilidad del organizador y los asistentes en el mismo espacio empresarial.
 - Si el organizador no tiene acceso a la disponibilidad de los asistentes, Cortana negocia una hora para reunirse con esos asistentes por correo electrónico. 

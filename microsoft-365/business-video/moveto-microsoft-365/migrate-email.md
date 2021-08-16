@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aprende a migrar el correo electrónico, los contactos y el calendario de Google Workspace a Microsoft 365 para empresas.
-ms.openlocfilehash: d6639032b379a2cd632b6ab6ee7e4082b1e7be0b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 26ed00be3241f07d564fd7823c44610cf34d6ffd96cc4becb36d907439f23629
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896564"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrar el calendario y el correo electrónico empresarial desde Google Workspace
 
@@ -86,8 +86,8 @@ El proceso de migración toma varios pasos y puede tardar de varias horas a un p
 
     La comprobación del dominio suele tardar unos minutos, pero puede tardar hasta 48 horas.
 
-1. Vaya al Centro [Microsoft 365 administración.](https://admin.microsoft.com)
-1. En el **Microsoft 365 de administración**, en la navegación izquierda, seleccione **Mostrar** todo , **Configuración**, **Dominios** y, a continuación, **Agregar dominio**. 
+1. Vaya a la [Centro de administración de Microsoft 365](https://admin.microsoft.com).
+1. En el **Centro de administración de Microsoft 365**, en la navegación izquierda, seleccione **Mostrar** todo , **Configuración**, **Dominios** y, a continuación, **Agregar dominio**. 
 1. Escriba el subdominio que creó anteriormente y, a continuación, **seleccione Usar este dominio**. 
 1. Para conectar el dominio, seleccione **Continuar**. 
 1. Desplácese hacia abajo y tome nota de los registros MX, los registros CNAME y los registros TXT. 
@@ -99,7 +99,7 @@ El proceso de migración toma varios pasos y puede tardar de varias horas a un p
 
     Estos cambios pueden tardar algún tiempo en tener efecto.  
 
-1. Vuelva a donde lo dejó en Microsoft 365 **centro de administración** y seleccione **Continuar**. 
+1. Vuelva a donde lo dejó en **Centro de administración de Microsoft 365** y seleccione **Continuar**. 
 
 El dominio ya está configurado.  
 
@@ -118,7 +118,7 @@ Antes de que pueda comenzar la migración, debe crear alias de correo electróni
 
 Una vez que haya terminado, estará listo para migrar. 
 
-1. En el navegador izquierdo del centro **de administración Microsoft 365**, desplácese hacia abajo hasta **Centros** de administración y **seleccione Exchange**. 
+1. En el navegación izquierdo de la **Centro de administración de Microsoft 365**, desplácese hacia abajo hasta Centros de **administración** y **seleccione Exchange**. 
 1. En **destinatarios**, elija **migración**, seleccione **Nuevo**, Migrar **a Exchange Online**, elija Migración de G **Suite** y, a continuación, **Siguiente**. 
 1. Cree un archivo CSV con una lista de los buzones que desea migrar. Asegúrese de que el archivo sigue este formato: 
 

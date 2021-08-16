@@ -13,12 +13,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de415ba7b68df786ead038bb72465c445a86ba5a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e0cab2fb0a700fa91287d36ea38635f876453443b2171d22d9d5bc9b0ebc326a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880400"
 ---
 # <a name="troubleshooting-information-barriers"></a>Solución de problemas de barreras de información
 
@@ -102,8 +102,8 @@ Compruebe que los usuarios en cuestión están incluidos en una directiva de bar
 
     |**Resultados**|**Qué hacer a continuación**|
     |:----------|:------------------|
-    | No se enumeran segmentos para los usuarios seleccionados | Realiza una de las siguientes acciones:<br/>- Asignar usuarios a un segmento existente editando sus perfiles de usuario en Azure Active Directory. (Vea [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).)<br/>- Definir un segmento mediante un [atributo admitido para las barreras de información](information-barriers-attributes.md). A continuación, [defina una nueva directiva](information-barriers-policies.md#part-2-define-information-barrier-policies) o [edite una directiva existente](information-barriers-edit-segments-policies.md#edit-a-policy) para incluir ese segmento. |
-    | Los segmentos se enumeran pero no se asignan directivas de barrera de información a esos segmentos | Realiza una de las siguientes acciones:<br/>- [Definir una nueva directiva de barrera de información](information-barriers-policies.md#part-2-define-information-barrier-policies) para cada segmento en cuestión <br/>- [Editar una directiva de barrera de información existente](information-barriers-edit-segments-policies.md#edit-a-policy) para asignarla al segmento correcto |
+    | No se enumeran segmentos para los usuarios seleccionados | Realice una de las siguientes acciones:<br/>- Asignar usuarios a un segmento existente editando sus perfiles de usuario en Azure Active Directory. (Vea [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).)<br/>- Definir un segmento mediante un [atributo admitido para las barreras de información](information-barriers-attributes.md). A continuación, [defina una nueva directiva](information-barriers-policies.md#part-2-define-information-barrier-policies) o [edite una directiva existente](information-barriers-edit-segments-policies.md#edit-a-policy) para incluir ese segmento. |
+    | Los segmentos se enumeran pero no se asignan directivas de barrera de información a esos segmentos | Realice una de las siguientes acciones:<br/>- [Definir una nueva directiva de barrera de información](information-barriers-policies.md#part-2-define-information-barrier-policies) para cada segmento en cuestión <br/>- [Editar una directiva de barrera de información existente](information-barriers-edit-segments-policies.md#edit-a-policy) para asignarla al segmento correcto |
     | Los segmentos se enumeran y cada uno se incluye en una directiva de barrera de información | - Ejecute el `Get-InformationBarrierPolicy` cmdlet para comprobar que las directivas de barrera de información están activas<br/>- Ejecutar el `Get-InformationBarrierPoliciesApplicationStatus` cmdlet para confirmar que se aplican las directivas<br/>- Ejecutar el `Start-InformationBarrierPoliciesApplication` cmdlet para aplicar todas las directivas de barrera de información activas |
 
 ## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>Problema: necesito quitar un solo usuario de una directiva de barrera de información

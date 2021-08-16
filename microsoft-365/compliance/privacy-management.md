@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: La administración de privacidad de Microsoft ofrece soluciones para evaluar los datos personales que la organización almacena en Microsoft 365 y le ayuda a identificar y corregir los riesgos de privacidad.
-ms.openlocfilehash: f4beecb0c9249c9eba530526e835bd2958be8cfab4c409365dc536f64b1b2caf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 339407dcd22742ce089b18f6b70172754a09a4cc
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835744"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254616"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Administración de privacidad de Microsoft (versión preliminar)
 
-## <a name="what-is-privacy-management"></a>Qué es la administración de privacidad
+## <a name="what-is-privacy-management"></a>¿Qué es la administración de privacidad?
 
 A medida que los datos en la nube de su empresa crecen en tamaño y complejidad, también necesita comprender y proteger los datos personales que se mantienen en su entorno. La administración de privacidad en Microsoft 365 permite a los empleados tomar decisiones inteligentes de tratamiento de datos y solucionar los riesgos críticos de privacidad proporcionando formas eficientes de buscar y administrar datos personales, automatizar las operaciones de privacidad y cumplir las solicitudes de derechos del sujeto. Estas soluciones le permitirán crear un lugar de trabajo resistente a la privacidad y controlar los problemas a escala.
 
@@ -86,7 +86,7 @@ Para obtener más información sobre cómo Microsoft 365 información confidenci
 
 ### <a name="where-privacy-management-identifies-personal-data"></a>Donde la administración de privacidad identifica datos personales
 
-La solución de administración de privacidad para Microsoft 365 evalúa los datos y archivos almacenados por su organización en el servicio en la nube de Microsoft 365 para ayudarle a identificar y administrar los riesgos de privacidad en ese espacio. Esto incluye lo siguiente:
+La solución de administración de privacidad para Microsoft 365 evalúa los datos y archivos almacenados por su organización en el servicio en la nube de Microsoft 365 para ayudarle a identificar y administrar los riesgos de privacidad en ese espacio. Incluye lo siguiente:
 
 - Microsoft Exchange
 - Microsoft SharePoint
@@ -102,6 +102,6 @@ Para obtener más información sobre cómo Microsoft aborda la privacidad y prot
 - [Principios de privacidad de Microsoft](https://www.microsoft.com/en-us/trust-center/privacy)
 - [Información general sobre privacidad](/compliance/assurance/assurance-privacy)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Para continuar, consulte [Introducción a la administración de privacidad.](privacy-management-setup.md)

@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se presenta una lista de los filtros que se pueden codificar en tipos de información confidencial personalizados.
-ms.openlocfilehash: 6dfa562d581f14c0b1ac41c4ce803e2367a94636
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 8cf5e60aeb27ff7426837b8885597a7d03e9e868073262bed263a7f70bbb301b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879198"
 ---
-# <a name="custom-sensitive-information-type-filters-reference"></a>Referencia de filtros de tipo de información confidencial personalizada
+# <a name="custom-sensitive-information-type-filters-reference"></a>Personalizar referencia de filtros de tipo de información confidencial 
 
 En Microsoft puede definir filtros o comprobaciones adicionales al crear un tipo de información confidencial personalizado (SIT).
 
@@ -149,9 +149,9 @@ puede usar este xml
 
 ### <a name="textmatchfilter-full"></a>TextMatchFilter Full
 
-Descripción: permite prohibir determinadas coincidencias para evitar que activen la regla. Por ejemplo, excluya 4111111111111 de la lista de coincidencias válidas de tarjetas de crédito.
+Descripción: permite prohibir determinadas coincidencias para evitar que activen la regla. Por ejemplo, excluya 4111111111111111 de la lista de coincidencias válidas de tarjetas de crédito.
 
-Por ejemplo, para excluir números de tarjeta de crédito como 4111111111111111111 y 3241891031111111 en una lista como esta:
+Por ejemplo, para excluir números de tarjeta de crédito como 4111111111111111 y 3241891031113111 en una lista como esta:
 
 - 4485 3647 3952 7352
 - 4111111111111111
@@ -172,7 +172,7 @@ puede usar este xml
   </Keyword>
 ```
 
-Por ejemplo, para incluir números de tarjeta de crédito como 4111111111111111111 y 3241891031111111 en una lista como esta:
+Por ejemplo, para incluir números de tarjeta de crédito como 4111111111111111 y 3241891031113111 en una lista como esta:
 
 - 4485 3647 3952 7352
 - 4111111111111111
