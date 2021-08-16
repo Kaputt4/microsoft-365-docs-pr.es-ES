@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 687195eeb9bbc53be3f50e9b7662faaeed208b5502e9972801ee3d105c35c1ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 58cc9548983d75593ae77af016ef894dc9f82547
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888721"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256324"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender introducción
 
@@ -121,7 +121,7 @@ Los informes también se unifican en Microsoft 365 Defender. Los administradores
 
 ### <a name="quickly-view-your-microsoft-365-environment"></a>Ver rápidamente el entorno Microsoft 365 web
 
-La **página** principal muestra muchas de las tarjetas comunes que necesitan los equipos de seguridad. La composición de tarjetas y datos depende del rol de usuario. Dado Microsoft 365 centro de seguridad usa control de acceso basado en roles, diferentes roles verán tarjetas que son más significativas para sus trabajos diarios.  
+La **página** principal muestra muchas de las tarjetas comunes que necesitan los equipos de seguridad. La composición de tarjetas y datos depende del rol de usuario. Dado que Microsoft 365 Defender portal usa control de acceso basado en roles, diferentes roles verán tarjetas que son más significativas para sus trabajos diarios.  
 
 Esta información de un vistazo le ayuda a mantenerse al día con las actividades más recientes de su organización. Microsoft 365 Defender reúne señales de diferentes orígenes para presentar una vista holística de su Microsoft 365 entorno.
 
@@ -143,7 +143,7 @@ Realice un seguimiento y responda a las amenazas emergentes con la Microsoft 365
 
 ## <a name="a-centralized-learning-hub"></a>Un concentrador de Learning centralizado
 
-Microsoft 365 centro de seguridad incluye un centro de aprendizaje que proporciona instrucciones oficiales de recursos como el blog de seguridad de Microsoft, la comunidad de seguridad de Microsoft en YouTube y la documentación oficial en docs.microsoft.com.
+Microsoft 365 Defender portal incluye un centro de aprendizaje que proporciona instrucciones oficiales de recursos como el blog de seguridad de Microsoft, la comunidad de seguridad de Microsoft en YouTube y la documentación oficial en docs.microsoft.com.
 
 Dentro del centro de aprendizaje, las instrucciones de colaboración de correo electrónico & (Microsoft Defender para Office 365) están en paralelo con Endpoint (Microsoft Defender para endpoint) y Microsoft 365 Defender de aprendizaje.
 

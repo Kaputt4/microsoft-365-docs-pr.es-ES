@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4b31a47ecfa887185673d75947fbab89332caa2a156bed8a35b158b63c2e8b95
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 815b962d56ca75dbd864579d7f26e24a587b74df
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805602"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256545"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -40,7 +40,7 @@ La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](/azure/kusto/qu
 
 ## <a name="try-your-first-query"></a>Pruebe la primera consulta
 
-En Microsoft 365 de seguridad, vaya a **Hunting** para ejecutar la primera consulta. Utilice el ejemplo siguiente:
+En el Microsoft 365 Defender, vaya a **Hunting** para ejecutar la primera consulta. Utilice el ejemplo siguiente:
 
 ```kusto
 // Finds PowerShell execution events that could involve a download

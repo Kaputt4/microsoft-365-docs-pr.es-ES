@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre qué eventos se registran cuando los usuarios asignados a permisos de exhibición de documentos electrónicos realizan búsquedas de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery tareas en el Centro de cumplimiento de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 097e78c85af5bc75998e1a75fe6148b64afec0eb36d7c19851153920c59a4de0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 637785a86e7fa28c0c058e9f729fcf2c1604a6f3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795547"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256421"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría
 
@@ -192,10 +192,10 @@ Como se ha indicado anteriormente, las actividades del cmdlet eDiscovery pueden 
 
 ## <a name="detailed-properties-for-ediscovery-activities"></a>Propiedades detalladas para actividades de exhibición de documentos electrónicos
 
-En la tabla siguiente se describen  las propiedades  que se incluyen al hacer clic en Más información en la página Detalles de una actividad de exhibición de documentos electrónicos que aparece en los resultados de la búsqueda. Estas propiedades también se incluyen en el archivo CSV al exportar los resultados de búsqueda del registro de auditoría. Un registro de registro de auditoría para una actividad de exhibición de documentos electrónicos no incluirá todas las propiedades detalladas que se enumeran a continuación.
+En la tabla siguiente se describen las propiedades que se incluyen en la página desplegable de una actividad de exhibición de documentos electrónicos que aparece en los resultados de la búsqueda. Estas propiedades también se incluyen en el archivo CSV al exportar los resultados de búsqueda del registro de auditoría. Un registro de registro de auditoría para una actividad de exhibición de documentos electrónicos no incluirá todas las propiedades detalladas que se enumeran a continuación.
   
 > [!TIP]
-> Al exportar los resultados de búsqueda, el archivo CSV contiene una columna denominada **Detail**, que contiene las propiedades detalladas descritas en la tabla siguiente en una propiedad de varios valores. Puede usar la característica Power Query en Excel dividir esta columna en varias columnas para que cada propiedad tenga su propia columna. Esto le permitirá ordenar y filtrar en una o varias de estas propiedades. Para obtener más información, vea la sección "Exportar los resultados de búsqueda a un archivo" [en Buscar en el registro de auditoría.](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file) 
+> Al exportar los resultados de la búsqueda, el archivo CSV contiene una columna denominada **AudtiData**, que contiene las propiedades detalladas descritas en la tabla siguiente en una propiedad de varios valores. Puede usar la característica Power Query en Excel dividir esta columna en varias columnas para que cada propiedad tenga su propia columna. Esto le permitirá ordenar y filtrar en una o varias de estas propiedades. Para obtener más información, vea la sección "Exportar los resultados de búsqueda a un archivo" [en Buscar en el registro de auditoría.](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file) 
   
 |**Propiedad**|**Descripción**|
 |:-----|:-----|
@@ -217,7 +217,7 @@ En la tabla siguiente se describen  las propiedades  que se incluyen al hacer cl
 |OrganizationId  <br/> |GUID de la Microsoft 365 organización.  <br/> |
 |Parámetros  <br/> |Nombre y valor de los parámetros que se usaron con el cmdlet correspondiente.  <br/> |
 |PublicFolderLocations  <br/> |Las ubicaciones de carpetas públicas Exchange Online que se incluyen en una búsqueda de contenido o se colocan en espera en un caso de exhibición de documentos electrónicos.  <br/> |
-|Query  <br/> |Consulta de búsqueda asociada a la actividad, como una búsqueda de contenido o una retención basada en consulta.  <br/> |
+|Consulta  <br/> |Consulta de búsqueda asociada a la actividad, como una búsqueda de contenido o una retención basada en consulta.  <br/> |
 |RecordType  <br/> |El tipo de operación indicado por el registro. El valor **de 18** indica un evento relacionado con una actividad enumerada en la sección actividades [del cmdlet eDiscovery.](#ediscovery-cmdlet-activities) Un valor de **24** indica un evento relacionado con una actividad enumerada en la sección Cómo buscar y ver actividades [de exhibición de documentos electrónicos.](#how-to-search-for-and-view-ediscovery-activities)  <br/> |
 |ResultStatus  <br/> |Indica si la acción (especificada en la propiedad Operation) se completó correctamente o no.  <br/> |
 |SecurityComplianceCenterEventType  <br/> |Indica que la actividad era un evento del centro de cumplimiento. Todas las actividades de exhibición de documentos electrónicos tendrán un valor **de 0** para esta propiedad.  <br/> |
@@ -227,5 +227,5 @@ En la tabla siguiente se describen  las propiedades  que se incluyen al hacer cl
 |UserKey  <br/> |Un id. alternativo para el usuario identificado en la propiedad id. de usuario. Para las actividades de exhibición de documentos electrónicos, el valor de esta propiedad suele ser el mismo que la propiedad UserId.  <br/> |
 |UserServicePlan  <br/> |La suscripción que usa la organización. Para las actividades de exhibición de documentos electrónicos, esta propiedad suele estar en blanco.  <br/> |
 |UserType  <br/> |El tipo de usuario que llevó a cabo la operación. Los siguientes valores indican el tipo de usuario.  <br/> 0 Un usuario normal. 2 Un administrador de la organización. 3 Una cuenta de sistema de centro de datos o administrador de centros de datos de Microsoft. 4 Una cuenta del sistema. 5 Una aplicación. 6 Una entidad de servicio. |
-|Versión  <br/> |Indica el número de versión de la actividad (identificada por la propiedad Operation) que se registra.  <br/> |
+|Version  <br/> |Indica el número de versión de la actividad (identificada por la propiedad Operation) que se registra.  <br/> |
 |Carga de trabajo  <br/> |El servicio donde se produjo la actividad. Para las actividades de exhibición de documentos electrónicos, el valor **es SecurityComplianceCenter**.  <br/> |

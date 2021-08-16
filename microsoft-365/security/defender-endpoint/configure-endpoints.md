@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 253c055198547852c55a44b60910e3a38229737e89fa5e2fa467e74089ee20d6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb71cc8ee014c1e96f4e57fb58785e0c15b4602a
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863804"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256604"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices-in-defender-for-endpoint"></a>Herramientas y métodos de incorporación para Windows 10 dispositivos en Defender para endpoint
 
@@ -39,19 +39,16 @@ Los dispositivos de la organización deben configurarse para que el servicio Def
 
 Se admiten las siguientes herramientas y métodos de implementación:
 
-- Directiva de grupo
-- Microsoft Endpoint Configuration Manager
-- Administración de dispositivos móviles (Microsoft Intune)
-- Script local
-
-## <a name="in-this-section"></a>En esta sección
 
 Tema|Descripción
 :---|:---
-[Incorporación Windows 10 dispositivos con directiva de grupo](configure-endpoints-gp.md)|Use la directiva de grupo para implementar el paquete de configuración en dispositivos.
-[Incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)|Puede usar Microsoft Endpoint Manager (rama actual) versión 1606 o Microsoft Endpoint Manager (rama actual) versión 1602 o anterior para implementar el paquete de configuración en dispositivos.
-[Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)|Usa las herramientas de administración de dispositivos móviles o Microsoft Intune para implementar el paquete de configuración en el dispositivo.
-[Incorporar dispositivos Windows 10 mediante un script local](configure-endpoints-script.md)|Obtenga información sobre cómo usar el script local para implementar el paquete de configuración en puntos de conexión.
+[Incorporar dispositivos con la directiva de grupo](configure-endpoints-gp.md)|Use la directiva de grupo para implementar el paquete de configuración en dispositivos.
+[Incorporar dispositivos con el Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)|Puede usar Microsoft Endpoint Manager (rama actual) versión 1606 o Microsoft Endpoint Manager (rama actual) versión 1602 o anterior para implementar el paquete de configuración en dispositivos.
+[Incorporar dispositivos con las herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)|Usa las herramientas de administración de dispositivos móviles o Microsoft Intune para implementar el paquete de configuración en el dispositivo.
+[Incorporar dispositivos con un script local](configure-endpoints-script.md)|Obtenga información sobre cómo usar el script local para implementar el paquete de configuración en puntos de conexión.
 [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)|Obtenga información sobre cómo usar el paquete de configuración para configurar dispositivos VDI.
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpoints-belowfoldlink)
+
+
+Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.

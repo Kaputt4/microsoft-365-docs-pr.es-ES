@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos y sugiere acciones recomendadas para ayudar a solucionar los riesgos.
-ms.openlocfilehash: c19655e3cd509d141878e8d917d248cc2ce42aa5
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: b763560d48f4e07a01fdd3baaf7286327c78cca508984c65f88aff1c73ee47b6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895752"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8ab7bdba676c777faea87bfeb8eaddc0166b1319
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7adb3dfe610cb8fa2c2c697956e13769b09315b54d7e1506afc25d0a9520ccd2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894652"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender para punto de conexión en Android: información de privacidad
 
@@ -82,7 +82,7 @@ La siguiente información se recopila solo para la aplicación de Microsoft Defe
 
 ## <a name="optional-data"></a>Datos opcionales
 
-Los datos opcionales incluyen datos de diagnóstico y datos de comentarios. Datos de diagnóstico opcionales: datos adicionales que nos ayudan a mejorar el producto y proporcionan información mejorada para ayudarnos a detectar, diagnosticar y solucionar problemas. Los datos de diagnóstico opcionales incluyen:
+Los datos opcionales incluyen datos de diagnóstico y datos de comentarios. Los datos de diagnóstico opcionales son datos adicionales que nos ayudan a realizar mejoras en el producto y proporcionan información mejorada que nos ayuda a detectar, diagnosticar y solucionar problemas. Los datos de diagnóstico opcionales incluyen:
 
 - Uso de aplicaciones, CPU y red.
 - Estado del dispositivo desde la perspectiva de la aplicación, incluido el estado del examen, los tiempos de examen, los permisos de aplicación concedidos y el estado de actualización.

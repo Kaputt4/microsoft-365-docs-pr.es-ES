@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
-ms.openlocfilehash: fb1df207d770b74095542dd1531764bf48c5fd54
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: fef8fdc29b7839bd7bd097fb37246b5b029dbdf89258a2107b7574b6c23da12e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894425"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Habilitar y configurar la protección siempre activa del Antivirus de Windows Defender en la directiva de grupo
 
@@ -134,7 +134,7 @@ La principal funcionalidad de protección en tiempo real está habilitada de for
 
 6. Cierre **el Editor de directivas de grupo local**.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 - [Configurar la protección en tiempo real, heurística y de comportamiento](configure-protection-features-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

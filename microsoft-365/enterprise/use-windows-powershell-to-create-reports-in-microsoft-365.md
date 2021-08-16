@@ -15,19 +15,19 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: "Summary: Use PowerShell for Microsoft 365 to create reports that you can't produce in the Microsoft 365 admin center."
-ms.openlocfilehash: 9e3b90dcdd32f80125175ad2e15a852db51e17f8
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: "Summary: Use PowerShell for Microsoft 365 to create reports that you can't produce in the Centro de administración de Microsoft 365."
+ms.openlocfilehash: dba0e7eab3c2521193128b503fd11a00198e7abd199a0a3003ec19e1adf732fa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572746"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894808"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Usar PowerShell para crear informes de Microsoft 365
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Hay muchos informes diferentes disponibles en el centro Microsoft 365 administración. Pero estos informes solo proporcionan mucha información y, a veces, necesita más. Es cuando necesita PowerShell para Microsoft 365.
+Hay muchos informes diferentes disponibles en el Centro de administración de Microsoft 365. Pero estos informes solo proporcionan mucha información y, a veces, necesita más. Es cuando necesita PowerShell para Microsoft 365.
   
 En estos artículos se describe cómo usar PowerShell para Microsoft 365 obtener información de su Microsoft 365 inquilino:
   

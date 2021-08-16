@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7e3a84b2f1ace627906a0235d6ad27904aba8d6b312199f1df1eae133e907143
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 60a0d59bd199e46e52623e36fa962465b313c9bd
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817200"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256343"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Crear y administrar roles para el control de acceso basado en roles
 
@@ -82,8 +82,8 @@ Los siguientes pasos le guían sobre cómo crear roles en Microsoft 365 Defender
     - **Comandos** básicos:
         - Iniciar una sesión de respuesta en directo
         - Realizar comandos de solo lectura de respuesta en directo en dispositivo remoto (excepto copia y ejecución de archivos)
-    - **Comandos** avanzados:
         - Descargar un archivo desde el dispositivo remoto a través de una respuesta en directo
+    - **Comandos** avanzados:
         - Descargar archivos PE y que no son PE de la página de archivos
         - Upload un archivo al dispositivo remoto
         - Ver un script desde la biblioteca de archivos

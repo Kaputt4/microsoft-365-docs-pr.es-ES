@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Obtenga información sobre la clave de disponibilidad usada para recuperar las claves de cliente perdidas.
-ms.openlocfilehash: 0f65721856cd046f28a399701e625239decbd9b6
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: 573c7bb7426dea8594f3a2e73991f845153146996f8a03cab4766855482a7de1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53464002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895808"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Obtener más información sobre la clave de disponibilidad de Clave de cliente
 
@@ -29,7 +29,7 @@ Storage y el control de la clave de disponibilidad son deliberadamente diferente
 - La separación de controles lógicos y ubicaciones de almacenamiento seguras proporciona defensa en profundidad y protege contra la pérdida de todas las claves y los datos de un solo ataque o punto de error.
 - La clave de disponibilidad proporciona una funcionalidad de alta disponibilidad si Microsoft 365 servicios no pueden alcanzar las claves hospedadas en Azure Key Vault debido a errores transitorios. Esta regla solo se aplica al Exchange Online y Skype Empresarial de servicio. SharePoint Los archivos OneDrive para la Empresa, Teams y en línea nunca usan la clave de disponibilidad a menos que indique explícitamente a Microsoft que inicie el proceso de recuperación.
 
-Compartir la responsabilidad de proteger los datos, usando una variedad de protecciones y procesos para la administración de claves, reduce en última instancia el riesgo de que todas las claves (y, por lo tanto, los datos) se pierdan o destruyan permanentemente. Microsoft le proporciona la autoridad única sobre la deshabilitación o destrucción de la clave de disponibilidad al salir del servicio. Por diseño, nadie en Microsoft tiene acceso a la clave de disponibilidad: solo es accesible mediante Microsoft 365 de servicio.
+Compartir la responsabilidad de proteger los datos, usando una variedad de protecciones y procesos para la administración de claves, reduce en última instancia el riesgo de que todas las claves (y, por lo tanto, los datos) se pierdan o destruyan permanentemente. Microsoft le proporciona la autoridad única sobre la deshabilitación o destrucción de la clave de disponibilidad al salir del servicio. Por diseño, nadie de Microsoft tiene acceso a la clave de disponibilidad: solo es accesible mediante Microsoft 365 código de servicio.
 
 Consulta el [Centro de confianza de Microsoft](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) para obtener más información sobre cómo protegemos las claves.
   

@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Obtenga información sobre cómo usar PowerShell para mover el contenido de un sistema de correo electrónico de origen a la vez realizando una migración total a Microsoft 365.
-ms.openlocfilehash: 6e59ac4d590208e0faed22e94cabe05601b17f18
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ce2d97330cb090e261da8e1f8b120c1001a6b3d5a1e19ce5a42d72212880d3f8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581063"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894820"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Usar PowerShell para realizar una migración total a Microsoft 365
 
@@ -199,7 +199,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>Sección 7: Asignar licencias de usuario
 <a name="BK_Step7"> </a>
 
- **Active Microsoft 365 de usuario para las cuentas migradas mediante la asignación de licencias.** Si no asigna una licencia, el buzón se deshabilitará cuando finalice el periodo de gracia (30 días). Para asignar una licencia en el centro Microsoft 365 administración, vea Asignar o [desasignación de licencias](../admin/manage/assign-licenses-to-users.md).
+ **Active Microsoft 365 de usuario para las cuentas migradas mediante la asignación de licencias.** Si no asigna una licencia, el buzón se deshabilitará cuando finalice el periodo de gracia (30 días). Para asignar una licencia en el Centro de administración de Microsoft 365, vea [Asignar o desasignación de licencias](../admin/manage/assign-licenses-to-users.md).
 
 ### <a name="step-8-complete-post-migration-tasks"></a>Paso 8: Finalizar las tareas posteriores a la migración
 <a name="BK_Step8"> </a>

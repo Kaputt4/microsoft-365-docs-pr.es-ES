@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo crear y administrar directivas para controlar los datos personales de su organización en Microsoft 365, responder a alertas y solucionar problemas.
-ms.openlocfilehash: 8add0ba2122c8ae73d6a9da075e346c74395084a243db68361a0df03aea8f00c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 548e8b6960b2cd27ba786aa6bd184f771a5fcb75
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842127"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256440"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>Crear y administrar directivas en la administración de privacidad (versión preliminar)
 
@@ -117,7 +117,7 @@ Con las notificaciones por correo electrónico, los usuarios reciben notificacio
 
 Las notificaciones se pueden habilitar para directivas individuales durante la creación de directivas personalizadas o al editar cualquier directiva. Use la sección Resultados para definir lo que sucede cuando se detecta una coincidencia de directiva, incluida la opción para habilitar estas notificaciones, y establezca la frecuencia con la que desea que se entreguen estos resúmenes.
 
-La funcionalidad de notificación de correo electrónico se controla a nivel global en Configuración. Está habilitada de forma predeterminada. Si desactiva esta opción, se detendrán todos los correos electrónicos incluso si se han configurado notificaciones específicas en un nivel de directiva individual. Para obtener más información, vea Configure settings under [Get started with privacy management](privacy-management-setup.md#configure-settings).
+La funcionalidad de notificación de correo electrónico se controla a nivel global en Configuración. Está habilitada de forma predeterminada. Si desactiva esta opción, se detendrán todos los correos electrónicos incluso si se han configurado notificaciones específicas en un nivel de directiva individual. Para obtener más información, vea [Administrar la configuración de administración de privacidad.](privacy-management-settings.md)
 
 ## <a name="view-policy-details"></a>Ver detalles de la directiva
 

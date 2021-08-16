@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: aa4080c6cfbbf0af93587e00b9b6d7489e6ed2da0e3fde1a0be8f84595026b7f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 89c185472f9e570374a3c0ea0ee70a62a4970b89
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897896"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256533"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Preparar la posición de seguridad para el primer incidente
 
@@ -53,7 +53,7 @@ Los componentes de Microsoft 365 Defender pueden mostrar infracciones de reglas 
 
 El riesgo del dispositivo influye directamente en los recursos a los que podrá acceder el usuario de ese dispositivo. La denegación de acceso a los recursos en función de determinados criterios es el tema principal de La confianza cero y Microsoft 365 Defender proporciona la información necesaria para determinar los criterios de nivel de confianza. Por ejemplo, Microsoft 365 Defender proporcionar el nivel de versión de software de un dispositivo a través de la página Administración de amenazas y vulnerabilidades, mientras que las directivas de acceso condicional restringen los dispositivos que tienen versiones obsoletas o vulnerables.
 
-La automatización es una parte fundamental de la implementación y el mantenimiento de un entorno de confianza cero, al tiempo que se reduce el número de alertas que podrían dar lugar a eventos de respuesta a incidentes (IR). Los componentes de Microsoft 365 Defender pueden automatizarse, como acciones de corrección [(conocidas](m365d-autoir.md) como investigaciones de un incidente en el centro de seguridad de Microsoft 365), acciones de notificación e incluso la creación de vales de soporte técnico, como en [ServiceNow](https://microsoft.service-now.com/sp/).
+La automatización es una parte fundamental de la implementación y el mantenimiento de un entorno de confianza cero, al tiempo que se reduce el número de alertas que podrían dar lugar a eventos de respuesta a incidentes (IR). Los componentes de Microsoft 365 Defender pueden automatizarse, como acciones de corrección [(conocidas](m365d-autoir.md) como investigaciones de un incidente en el portal de Microsoft 365 Defender), acciones de notificación e incluso la creación de vales de soporte técnico, como en [ServiceNow](https://microsoft.service-now.com/sp/).
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Paso 2. Determinar la posición de seguridad de la organización
 
@@ -71,7 +71,7 @@ Para comprobar el progreso de [](../defender-endpoint/next-gen-threat-and-vuln-m
  
 ## <a name="4-understand-emerging-threats"></a>4. Comprender las amenazas emergentes
 
-Use [el análisis de](threat-analytics.md) amenazas en el Microsoft 365 de seguridad para mantenerse al día con el panorama actual de amenazas de seguridad. Los expertos investigadores de seguridad de Microsoft crean informes que describen en detalle las últimas amenazas cibernéticas para que pueda comprender cómo pueden afectar a su suscripción Microsoft 365, dispositivos y usuarios. Estos informes pueden incluir:
+Use [el análisis de](threat-analytics.md) amenazas en el portal de Microsoft 365 Defender para mantenerse actualizado con el panorama actual de amenazas de seguridad. Los expertos investigadores de seguridad de Microsoft crean informes que describen en detalle las últimas amenazas cibernéticas para que pueda comprender cómo pueden afectar a su suscripción Microsoft 365, dispositivos y usuarios. Estos informes pueden incluir:
 
 - Actores de amenazas activas y sus campañas
 - Técnicas de ataque populares y nuevas
@@ -83,7 +83,7 @@ El análisis de amenazas también examina la configuración y las alertas para d
 
 Puedes implementar las recomendaciones de una amenaza emergente para reforzar tu posición de seguridad y minimizar la superficie de ataque.
 
-Haga tiempo en su programación para comprobar periódicamente la sección [Análisis](threat-analytics.md) de amenazas del centro de Microsoft 365 seguridad.
+Haga tiempo en su programación para comprobar periódicamente la sección [Análisis](threat-analytics.md) de amenazas del portal de Microsoft 365 Defender web.
 
 ## <a name="next-step"></a>Paso siguiente
 

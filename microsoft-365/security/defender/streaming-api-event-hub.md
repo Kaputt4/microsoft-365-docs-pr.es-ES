@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c7745538471a2e8eae3b4708de06a789f4e0daff0150fd83f18a32b85461f892
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1b121ca196ba1b416b0031e3a0a7a8516bc7299
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893740"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256509"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Centro de eventos de Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "53893740"
 
 2. Inicie sesión en el inquilino [de Azure,](https://ms.portal.azure.com/)vaya a Suscripciones > Su suscripción > proveedores de recursos > **Registrarse en Microsoft.Ideas**.
 
-3. Cree un espacio de nombres de centro de eventos, vaya a **Event Hub > Agregar** y seleccione el nivel de precios, las unidades de rendimiento y la opción Autoinflate adecuada para la carga esperada. Para obtener más información, vea [Pricing - Event Hub | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
+3. Cree un espacio de nombres de centro de eventos, vaya a **Event Hub > Agregar** y seleccione el nivel de precios, las unidades de rendimiento y la opción Autoinflate adecuada para la carga esperada. Para obtener más información, vea [Event Hubs pricing](https://azure.microsoft.com/pricing/details/event-hubs/).  
 
 ### <a name="add-contributor-permissions"></a>Agregar permisos de colaborador
 
@@ -101,7 +101,7 @@ Una vez creado el espacio de nombres de Event Hub, tendrá que:
 
 Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:
 
-1. Inicie sesión en [el Microsoft 365 seguridad y](https://security.microsoft.com) vaya a la página Búsqueda [avanzada](https://security.microsoft.com/hunting-package).
+1. Inicie sesión en [Microsoft 365 Defender portal y](https://security.microsoft.com) vaya a la página Búsqueda [avanzada](https://security.microsoft.com/hunting-package).
 
 2. Ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento:
 

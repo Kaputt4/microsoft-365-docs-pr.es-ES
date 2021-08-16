@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d04ce84d49b1ba059c1bd9550a2894ba13296525
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b81a01ed239ec58dd736be51074117de1dae9e97386431e89a6343e9c01a1142
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894636"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Obtener dispositivos incorporados a Microsoft Defender para endpoint
 

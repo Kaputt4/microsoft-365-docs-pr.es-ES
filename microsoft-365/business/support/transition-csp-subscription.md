@@ -15,12 +15,12 @@ localization_priority: Normal
 audience: microsoft-business
 keywords: Microsoft 365 Empresa, Microsoft 365, SMB, transición suscripción de CSP
 ms.date: 11/01/2017
-ms.openlocfilehash: 47b65b2de9db0fd27e29272937bab2041eb67300
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: c35cb3b78c4fe2cebc8308b34ceef3decd346b3db298ce5fb56abc8cf205e69d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363827"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867165"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transición a una suscripción de CSP de Microsoft 365 Empresa
 

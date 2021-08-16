@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - IWA160
 description: Las publicaciones del panel de estado del servicio solo están en inglés, pero se pueden mostrar automáticamente en el idioma que especifique para Microsoft 365.
-ms.openlocfilehash: 9f5ce6dbb918f7a3dddf43b6332d28142446f179
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: d6ad788ef5847dc8bd5c30742db8950ffabbb395b2757b16029438ef542f35cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864632"
 ---
 # <a name="language-translation-for-service-health-dashboard"></a>Traducción de idiomas para el panel de mantenimiento del servicio
 

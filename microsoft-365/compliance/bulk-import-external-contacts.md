@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Obtenga información sobre cómo los administradores pueden usar Exchange Online PowerShell y un archivo CSV para importar contactos externos de forma masiva a la lista global de direcciones.
-ms.openlocfilehash: 178e3676f8dc5fb59cdad9cc46d7ecbd9dddb90e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cb6195f82ed794ea5b6741a6b8bdf3007cdf366411ad7a464688b6ffbf5d9cb0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918216"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895968"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importar contactos externos de forma masiva a Exchange Online
 
@@ -90,10 +90,10 @@ El siguiente paso es usar el archivo CSV que creó en los pasos 1 y PowerShell p
   
 5. Si es necesario, haga **clic en Actualizar** para actualizar la lista y ver los contactos externos que se importaron. 
     
-    Los contactos importados aparecerán en la libreta de direcciones compartida Outlook y Outlook en la web.
+    Los contactos importados aparecerán en la libreta de direcciones compartida en Outlook y Outlook en la Web.
     
     > [!NOTE]
-    > También puede ver los contactos en el centro Microsoft 365 de administración yendo a **Contactos** \> **de usuarios**. 
+    > También puede ver los contactos en el Centro de administración de Microsoft 365 vaya a **Contactos** \> **de usuarios**. 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Paso 3: Agregar información a las propiedades de los contactos externos
 
@@ -125,7 +125,7 @@ Después de ejecutar el comando en el paso 2, se crean los contactos externos, p
     
 2. Haga clic en un contacto y, a continuación, haga clic **en Editar** icono editar para mostrar las propiedades ![ del ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) contacto. 
     
-Y eso es todo. Los usuarios pueden ver los contactos y la información adicional en la libreta de direcciones Outlook y Outlook en la web.
+Y eso es todo. Los usuarios pueden ver los contactos y la información adicional en la libreta de direcciones Outlook y Outlook en la Web.
   
 ## <a name="add-more-external-contacts"></a>Agregar más contactos externos
 

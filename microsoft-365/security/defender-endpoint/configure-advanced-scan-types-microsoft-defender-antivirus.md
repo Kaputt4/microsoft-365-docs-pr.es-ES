@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 05/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 96e4dab96f8ceb149916c908991079bb2dfa866f
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 516c141be490e6ca87a96cfc0ec4ccf138eed63f9be11439161eb3bf4e2ba372
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894568"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurar opciones de análisis del Antivirus de Microsoft Defender
 
@@ -104,7 +104,7 @@ Si Antivirus de Microsoft Defender detecta una amenaza dentro de un mensaje de c
 
 En cualquier sistema operativo, solo se examinan las unidades de red asignadas a nivel del sistema. Las unidades de red asignadas a nivel de usuario no se examinan. Las unidades de red asignadas a nivel de usuario son aquellas que un usuario asigna en su sesión manualmente y usan sus propias credenciales.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 
 - [Personalizar, iniciar y revisar los resultados de Antivirus de Microsoft Defender análisis y corrección](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)

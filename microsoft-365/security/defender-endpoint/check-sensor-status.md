@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 91318cf3638b71ad14bf283185d31fba5280d983f961f591ebfc1c75bd7f75a2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8168977629f80923ed65e84127478eea0b526597
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811379"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256374"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Comprobar el estado del sensor en Microsoft Defender para endpoint
 
@@ -60,5 +60,10 @@ También puede descargar toda la lista en formato CSV mediante la **característ
 
 Puedes ver los detalles del dispositivo al hacer clic en un dispositivo mal configurado o inactivo.
 
-## <a name="related-topic"></a>Tema relacionado
+## <a name="see-also"></a>Consulte también
 - [Corregir sensores incorrectos en Defender for Endpoint](fix-unhealthy-sensors.md)
+- [Información general del Analizador de clientes](overview-client-analyzer.md)
+- [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)
+- [Ejecutar el Analizador de clientes en Windows](run-analyzer-windows.md)
+- [Ejecutar el Analizador de clientes en macOS o Linux](run-analyzer-macos-linux.md)
+- [ Recopilación de datos para solucionar problemas avanzados en Windows](data-collection-analyzer.md)
