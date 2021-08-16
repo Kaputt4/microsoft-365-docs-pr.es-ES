@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: En este artículo, obtenga información sobre cómo usar PowerShell para deshabilitar el acceso a Microsoft 365 para los usuarios.
-ms.openlocfilehash: 292bda3b380b9ce3947b2427288da4f16198bb51
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 32acf601bdaad839855671e234c839409377a96e0a960b8a2a17e8a32edf4878
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904904"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Deshabilitar el acceso a Microsoft 365 con PowerShell
 
@@ -148,7 +148,7 @@ Para ello, siga estos pasos:
 
    En este ejemplo, el archivo de texto es C: \\ Mis documentos \\Accounts.txt.
     
-2. Ejecute el siguiente comando:
+2. Ejecute el comando siguiente:
     
    ```powershell
    Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}

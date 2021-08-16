@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: edec6726ef2db0f0efffe131886a653cd164cf6f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6b8718e39ec5caec8d4e637bd02480fda82df7d3f52a3668f82ddee394b77136
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655532"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833008"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>¿Qué es Test Base para Microsoft 365?
 

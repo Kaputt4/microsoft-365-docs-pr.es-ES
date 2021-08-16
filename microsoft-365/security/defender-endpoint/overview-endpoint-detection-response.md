@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23f093ba5f93bd8763ae27526dbeb77a16f3c5cd
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c36707aa98d0c7ff1a5cd7284ad149007c4d969ce1bfdf0aeb31cb68a4b4b549
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898052"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Introducción a la EDR
 

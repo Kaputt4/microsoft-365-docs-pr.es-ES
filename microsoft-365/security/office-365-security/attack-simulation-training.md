@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365.
 ms.technology: mdo
-ms.openlocfilehash: d82e7544e6795e4514cf1949645107c53fc69c61
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 9bed87402830981f355bb348b359a83f6c688ad59ff47493c5162350cd9e7297
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878369"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897826"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simular un ataque de suplantación de identidad
 
@@ -27,11 +27,11 @@ El aprendizaje de simulación de ataques en Microsoft Defender para Office 365 t
 
 Para obtener información de introducción sobre el aprendizaje de simulación de ataques, consulta [Introducción al aprendizaje de simulación de ataques.](attack-simulation-training-get-started.md)
 
-Para iniciar un ataque de suplantación de identidad simulada, abra el portal de Microsoft 365 Defender ( ), vaya a Aprendizaje de simulación de ataques de colaboración de correo electrónico & y cambie a la pestaña <https://security.microsoft.com/>  \>  **[Simulaciones.](https://security.microsoft.com/attacksimulator?viewid=simulations)**
+Para iniciar un ataque de suplantación de identidad simulada, abra el portal de Microsoft 365 Defender ( ), vaya a Correo electrónico & aprendizaje de simulación de ataques de colaboración y cambie a la pestaña <https://security.microsoft.com/>  \>  **[Simulaciones.](https://security.microsoft.com/attacksimulator?viewid=simulations)**
 
 En **Simulaciones,** seleccione **+ Iniciar una simulación**.
 
-![Iniciar un botón de simulación en el portal de Microsoft 365 Defender](../../media/attack-sim-preview-launch.png)
+![Iniciar un botón de simulación en el Microsoft 365 Defender web](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
 > En cualquier momento durante la creación de la simulación, puede guardar y cerrar para continuar configurando la simulación más adelante.
@@ -49,7 +49,7 @@ Seleccione entre 4 técnicas diferentes, seleccionadas en el marco de trabajo&[M
 > [!TIP]
 > Al hacer clic **en Ver detalles** dentro de la descripción de cada técnica, se mostrará más información y los pasos de simulación de la técnica.
 >
-> ![Pasos de simulación para la recolección de credenciales dentro del aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender](../../media/attack-sim-preview-sim-steps.png)
+> ![Pasos de simulación para la recolección de credenciales en el aprendizaje de simulación de ataques en el portal Microsoft 365 Defender búsqueda](../../media/attack-sim-preview-sim-steps.png)
 
 Después de seleccionar la técnica y hacer clic en **Siguiente,** asigne a la simulación un nombre y, opcionalmente, una descripción.
 
@@ -65,7 +65,7 @@ Las cargas tienen varios puntos de datos que le ayudarán a elegir:
 - **La** complejidad , **disponible** a través de filtros, se calcula en función del número de indicadores dentro de la carga que apunta a que se trata de un ataque. Más indicadores llevan a una complejidad menor.
 - **Source**, disponible **a** través de filtros , indica si la carga se creó en el espacio empresarial o forma parte del catálogo de carga preexistnte (global) de Microsoft.
 
-![Carga útil seleccionada dentro del entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender](../../media/attack-sim-preview-select-payload.png)
+![Carga útil seleccionada dentro del entrenamiento de simulación de ataque en el portal Microsoft 365 Defender ataque](../../media/attack-sim-preview-select-payload.png)
 
 Seleccione una carga de la lista para ver una vista previa de la carga con información adicional sobre ella.
 
@@ -79,7 +79,7 @@ Cuando elige incluir **solo usuarios y** grupos específicos, puede:
 
 - **Agregue usuarios**, lo que le permite aprovechar la búsqueda de su espacio empresarial, así como las capacidades avanzadas de búsqueda y filtrado, como dirigirse a usuarios que no han sido dirigidos por una simulación en los últimos 3 meses.
 
-  ![Filtrado de usuarios en el aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender](../../media/attack-sim-preview-user-targeting.png)
+  ![Filtrado de usuarios en el aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender ataque](../../media/attack-sim-preview-user-targeting.png)
 
 - **Importar desde CSV** permite importar un conjunto predefinido de usuarios para esta simulación.
 
@@ -94,7 +94,7 @@ Seleccione la **fecha de vencimiento del entrenamiento** para asegurarse de que 
 > [!NOTE]
 > Si elige seleccionar cursos y módulos usted mismo, podrá ver el contenido recomendado, así como todos los cursos y módulos disponibles.
 >
-> ![Agregar entrenamiento recomendado dentro del entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender](../../media/attack-sim-preview-add-training.png)
+> ![Agregar entrenamiento recomendado dentro del entrenamiento de simulación de ataque en el portal Microsoft 365 Defender ataque](../../media/attack-sim-preview-add-training.png)
 
 En los pasos siguientes,  tendrás que agregar cursos si optas por seleccionarlo tú mismo y personalizar la página de aterrizaje del entrenamiento. Podrás obtener una vista previa de la página de aterrizaje del entrenamiento, así como cambiar el encabezado y el cuerpo de la página.
 
@@ -105,3 +105,6 @@ Ahora que todo está configurado, puede iniciar esta simulación inmediatamente 
 **Habilite la entrega de zona horaria consciente de** la región para entregar mensajes de ataque simulados a sus empleados durante sus horas de trabajo en función de su región.
 
 Una vez que haya terminado, haga clic en **Siguiente** y revise los detalles de la simulación. Haga clic **en Editar** en cualquiera de las partes para volver atrás y cambiar los detalles que necesiten cambiar. Una vez hecho esto, haga clic **en Enviar**.
+
+> [!NOTE]
+> Ciertas marcas comerciales, logotipos, símbolos, insignias y otros identificadores de origen reciben una protección más alta en virtud de leyes y leyes locales, estatales y federales. El uso no autorizado de estos indicadores puede someter a los usuarios a sanciones, incluidas las multas penales. Aunque no es una lista extensa, esto incluye los precintos presidencial, vicepresidenta y congresional, la CIA, el FBI, la Seguridad Social, Medicare y Medicaid, el Servicio de Ingresos Internos de estados Unidos y los Juegos Olímpicos. Más allá de estas categorías de marcas comerciales, el uso y modificación de cualquier marca comercial de terceros conlleva una cantidad inherente de riesgo. Usar sus propias marcas comerciales y logotipos en una carga sería menos arriesgado, especialmente cuando su organización permite el uso. Si tiene más preguntas sobre lo que es o no es apropiado usar al crear o configurar una carga, consulte con sus asesores legales.

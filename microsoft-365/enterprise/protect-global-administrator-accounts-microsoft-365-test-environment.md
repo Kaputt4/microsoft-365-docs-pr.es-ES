@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Siga estos pasos para proteger las cuentas de administrador global en su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 3eab538b59e460857e2fa195aaacf51051f94d6b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17aca0060501a4df3c694c4c7e4aa2aef98248d54b36d27ff3c99780648274b5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918887"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904736"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Proteger cuentas de administrador global en su Microsoft 365 entorno de prueba empresarial
 
@@ -52,7 +52,7 @@ Si desea probar la protección de cuentas de administrador global en una empresa
 
 En primer lugar, cree una nueva cuenta de usuario como administrador global dedicado.
 
-1. En una pestaña independiente, abra el centro [Microsoft 365 de administración](https://admin.microsoft.com/).
+1. En una pestaña independiente, abra el [Centro de administración de Microsoft 365](https://admin.microsoft.com/).
 2. Seleccione **Usuarios**  >  **Usuarios activos** y, a continuación, seleccione Agregar un **usuario**.
 3. En el **panel Agregar usuario,** escriba **DedicatedAdmin** en los cuadros **Nombre,** **Nombre para** mostrar y **Nombre de** usuario.
 4. Seleccione **Contraseña**, **seleccione Permitirme crear la contraseña** y, a continuación, escriba una contraseña segura. Registre la contraseña de esta nueva cuenta en una ubicación segura.
@@ -63,7 +63,7 @@ En primer lugar, cree una nueva cuenta de usuario como administrador global dedi
 
 A continuación, cree un nuevo grupo denominado GlobalAdmins y agréle la cuenta DedicatedAdmin.
 
-1. En la **Microsoft 365 centro de administración,** seleccione **Grupos** en la navegación izquierda y, a continuación, **seleccione Grupos**.
+1. En la **Centro de administración de Microsoft 365,** seleccione **Grupos** en la navegación izquierda y, a continuación, **seleccione Grupos**.
 2. Seleccione **Agregar un grupo**.
 3. En el **panel Elegir un tipo de grupo,** seleccione **Seguridad** y, a continuación, **seleccione Siguiente**.
 4. En el **panel Configurar los conceptos** básicos, seleccione **Crear grupo** y, a continuación, **seleccione Cerrar**.
@@ -93,7 +93,7 @@ Esta segunda directiva bloquea el acceso a la autenticación de cuentas de admin
 8. En la **sección Controles de acceso** del panel **Nuevo,** seleccione **Conceder**.
 9. En el **panel Conceder,** seleccione **Bloquear acceso** y, a continuación, **seleccione Seleccionar**.
 10. En el **panel Nuevo,** seleccione **Activar para** **Habilitar directiva** y, a continuación, **seleccione Crear**.
-11. Cierre las **pestañas Azure Portal** **y Microsoft 365 centro de** administración.
+11. Cierre Azure **Portal** y **Centro de administración de Microsoft 365** pestañas.
 
 Para probar la primera directiva, cerrar sesión e iniciar sesión con la cuenta DedicatedAdmin. Se le pedirá que configure MFA. Esto demuestra que se está aplicando la primera directiva.
 

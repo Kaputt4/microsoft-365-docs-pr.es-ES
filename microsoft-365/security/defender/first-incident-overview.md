@@ -1,6 +1,6 @@
 ---
 title: Introducción a la respuesta a su primer incidente
-description: Conceptos básicos para responder al primer incidente en Microsoft 365 Defender.
+description: Los conceptos básicos de responder a su primer incidente en Microsoft 365 Defender.
 keywords: incidentes, alertas, investigar, correlación, ataque, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6e65a12f42b9f5f75c1a19cb9c4a261c94feaf31
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: bec4ca87c3827c8b24fa7017c01b40a60fce80eecb636d6d91adf0ceb9b8ecf1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841719"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897786"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>Introducción a la respuesta a su primer incidente
 

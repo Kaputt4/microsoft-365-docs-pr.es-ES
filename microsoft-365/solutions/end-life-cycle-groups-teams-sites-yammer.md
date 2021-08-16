@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Opciones de fin de ciclo de vida para grupos, equipos y Yammer.
-ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9532fb7f7c57cf883a0c4d989c5372239eab1c9666890dabfa598cacdbb652cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538836"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833020"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Opciones de fin de ciclo de vida para grupos, equipos y Yammer
 
@@ -34,7 +34,7 @@ En la tabla siguiente se describen los servicios asociados con grupos y equipos 
 |Servicio|Tipos de contenido|
 |:------|:---------------|
 |Teams|Conversaciones de canal, archivos en canales|
-|Forms|Estructura y resultados de la encuesta|
+|Formularios|Estructura y resultados de la encuesta|
 |OneNote|Bloc de notas|
 |Outlook|Correo y calendario|
 |Planner|Project estado y la información de tareas|
@@ -58,7 +58,7 @@ Los grupos y los equipos permanecen en estado de eliminación suave durante 30 d
 
 Hay tres áreas clave que los propietarios de equipos y grupos y los administradores de TI deben tener en cuenta al eliminar un grupo o equipo.
 
-**Content**
+**Contenido**
 
 ¿Es necesario conservar el contenido después de que el equipo ya no esté allí? ¿Es suficiente confiar en las capacidades de retención de Microsoft 365 o es parte del contenido de aplicaciones y servicios que no ofrecen retención? ¿Es necesario conservar el contenido para la administración de registros, el archivo o el uso futuro y la referencia?
 
@@ -107,7 +107,7 @@ Aunque las conversaciones de canal del equipo y SharePoint contenido del sitio e
 - Los vídeos aún se pueden cargar, modificar y eliminar en Stream.
 - Los flujos Power Automate pueden crearse, modificarse, eliminarse y se seguirán ejecutando. (No obstante, se producirá un error si es necesario para publicar un mensaje en un canal del equipo archivado).
 
-## <a name="forms"></a>Forms
+## <a name="forms"></a>Formularios
 
 Aunque un formulario se puede mover de una cuenta individual a un grupo, no se puede mover ni copiar de un grupo a otro. Hay tres opciones disponibles para un formulario cuando se elimina un equipo.
 

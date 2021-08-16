@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: En este artículo se proporciona información sobre cómo proteger el acceso de administrador global a su Microsoft 365 suscripción.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c929651f3e70a1aeef16cdf48d853d675820833
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 97ef59ff9b08ba9d763b18381b76a697de2e4338f28fbfb3799eba53d89e9c09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926552"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904700"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Proteger las cuentas Microsoft 365 de administrador global
 
@@ -52,7 +52,7 @@ Microsoft proporciona funcionalidades para ayudar a proteger su organización, p
 
 Hay relativamente pocas tareas administrativas, como asignar roles a cuentas de usuario, que requieren privilegios de administrador global. Por lo tanto, en lugar de usar cuentas de usuario diarias a las que se ha asignado el rol de administrador global, siga estos pasos:
   
-1. Determine el conjunto de cuentas de usuario a las que se ha asignado el rol de administrador global. Puede hacerlo en el Centro Microsoft 365 administración o con el siguiente PowerShell de Directorio de Azure Active (Azure AD) para Graph comandos:
+1. Determine el conjunto de cuentas de usuario a las que se ha asignado el rol de administrador global. Puede hacerlo en el Centro de administración de Microsoft 365 o con el siguiente powerShell de Directorio de Azure Active (Azure AD) para Graph comandos:
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
@@ -180,6 +180,6 @@ Si va a configurar la identidad de su Microsoft 365 suscripción, vea:
 - [Preparar la sincronización de](prepare-for-directory-synchronization.md) directorios si usa la identidad híbrida
 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Microsoft 365 guía de seguridad](/office365/securitycompliance/security-roadmap)

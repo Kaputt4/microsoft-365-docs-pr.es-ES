@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fcdce7f5a41c23dfe33eb75ef15b579ac12c8742
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: aa4080c6cfbbf0af93587e00b9b6d7489e6ed2da0e3fde1a0be8f84595026b7f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897896"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Preparar la posición de seguridad para el primer incidente
 
@@ -77,7 +77,7 @@ Use [el análisis de](threat-analytics.md) amenazas en el Microsoft 365 de segur
 - Técnicas de ataque populares y nuevas
 - Vulnerabilidades críticas
 - Superficies de ataque comunes
-- Malware común
+- Malware frecuentes
 
 El análisis de amenazas también examina la configuración y las alertas para determinar el riesgo que tiene y si hay alertas activas aplicables a un informe.
 
@@ -91,7 +91,7 @@ Haga tiempo en su programación para comprobar periódicamente la sección [Aná
 
 Obtenga información sobre [cómo triage and analyze incidents](first-incident-analyze.md).
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)
