@@ -2,8 +2,8 @@
 title: Guía básica de inquilinos para Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Guía básica para configurar los inquilinos para Microsoft 365.
-ms.openlocfilehash: d96d6246bfe38c9e3a5f3aadf04bf5cfe19ccd2f54697141a7c5463c72a6aea2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d041c87e12bfb3025592cb14cda5413c805dc880
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794719"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354217"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Guía básica de inquilinos para Microsoft 365
 
@@ -33,7 +33,7 @@ Para preparar el espacio empresarial para usuarios, grupos, licencias y aplicaci
 
 Después de asegurarse de que las redes están optimizadas para el acceso a Microsoft 365 tanto para los trabajadores locales como para los trabajadores remotos, las siguientes tareas grandes planean y, a continuación, configuran el inquilino de Microsoft 365 para nombres de dominio DNS, servicios comunes y para esa infraestructura de identidad que admite el inicio de sesión seguro del usuario.
 
-### <a name="plan"></a>Plan
+### <a name="plan"></a>Planear
 
 Para planear la implementación del espacio empresarial:
 

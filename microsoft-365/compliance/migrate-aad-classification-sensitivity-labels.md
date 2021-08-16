@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 description: En este artículo se de Azure Active Directory etiquetas de clasificación y confidencialidad.
-ms.openlocfilehash: 07bc09afb3e490961a8cc5a88857ec49dd962856
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 8999451af155462cbd2f4c08354b01115ac2763cb15da715d5a31ef7836a4d6b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885836"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Azure Active Directory etiquetas de clasificación y confidencialidad para Microsoft 365 grupos
 
@@ -32,7 +32,7 @@ Vea los siguientes escenarios para obtener procedimientos recomendados al migrar
 ## <a name="scenario-1-tenant-never-used-classic-aad-classifications-or-sensitivity-labels-for-documents-and-emails"></a>Escenario 1: el inquilino nunca usó clasificaciones clásicas de AAD o etiquetas de confidencialidad para documentos y correos electrónicos
 
 - El administrador de inquilinos habilita las etiquetas de confidencialidad para los grupos estableciendo la marca de inquilino "EnableMIPLabels" en true a través del cmdlet de powershell de AAD.
-- El administrador de inquilinos crea las etiquetas de [confidencialidad en el Microsoft 365 de cumplimiento.](https://compliance.microsoft.com)
+- El administrador de inquilinos crea las etiquetas de [confidencialidad en el Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
     - El administrador de inquilinos puede elegir acciones relacionadas con el archivo y el correo electrónico, como el cifrado y la marca de agua.
     - El administrador de inquilinos puede elegir Microsoft 365 grupos y SharePoint acciones relacionadas con el sitio en línea a las etiquetas de confidencialidad.
 - El administrador de inquilinos publica la directiva.
@@ -58,7 +58,7 @@ Tabla 1. Comportamiento de cargas de trabajo compatibles y no compatibles: crear
 
 ### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>Caso A: el inquilino nunca usó etiquetas de confidencialidad para documentos y correos electrónicos
 
-1. En el [Microsoft 365 de cumplimiento,](https://compliance.microsoft.com)se recomienda crear etiquetas de confidencialidad con el mismo nombre que las etiquetas clásicas existentes de Azure AD.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), se recomienda crear etiquetas de confidencialidad con el mismo nombre que las etiquetas clásicas de Azure AD existentes.
 2. Use el cmdlet de PowerShell para aplicar estas etiquetas de confidencialidad a los grupos de Microsoft 365 y SharePoint con asignación de nombres.
 3. El administrador puede elegir eliminar las etiquetas clásicas de Azure AD:
     - Las cargas de trabajo compatibles muestran que estas etiquetas de confidencialidad y los grupos se crean con ellas.
@@ -88,7 +88,7 @@ Tabla 2. Comportamiento de cargas de trabajo compatibles y no compatibles: crear
 
 1. Tan pronto como el administrador habilita la característica de etiqueta de confidencialidad en el inquilino estableciendo la marca de inquilino "EnableMIPLabels" en true, aparecerán las etiquetas de confidencialidad de documento y correo electrónico en cuadros de diálogo de creación y edición de grupo,sitio o equipo.
 2. Un administrador puede usar las mismas etiquetas de confidencialidad de documentos y correo electrónico para exigir la privacidad y el acceso de usuarios externos en el grupo, sitio o equipo especificando la configuración de grupo relacionada:
-    1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)seleccione la **pestaña Sitios y** grupos.
+    1. En la [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), seleccione la **pestaña Sitios y** grupos.
     2. Edite una etiqueta de confidencialidad de documento o correo electrónico.
 
 ## <a name="sample-script"></a>Script de ejemplo

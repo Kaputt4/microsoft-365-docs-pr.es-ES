@@ -2,8 +2,8 @@
 title: Guía básica de servicios en la nube para Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/10/2020
 audience: ITPro
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La guía básica para configurar los servicios en la nube para Microsoft 365.
-ms.openlocfilehash: b4de1f40ff845f59903708da927eeb29cec5391527dfcb31cf952d221a1beb19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 050dc8e622bbfe9f1a065a74f4dffcdd3647074a
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850236"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58353773"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Guía básica de servicios en la nube para Microsoft 365
 

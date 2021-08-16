@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 668ca8e26371d80f068c2723357ce3ee407db03a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5d0a24afb895afbce800b29b0f235c4a67e598f130de930c0e31b2909c077dcb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885980"
 ---
 # <a name="manage-information-barrier-policies"></a>Administrar directivas de barrera de información
 
@@ -25,7 +25,7 @@ Después de definir [directivas](information-barriers-policies.md)de barrera de 
 
 ## <a name="what-do-you-want-to-do"></a>¿Qué quiere hacer?
 
-|**Action**|**Descripción**|
+|**Acción**|**Descripción**|
 |:---------|:--------------|
 | [Editar atributos de cuenta de usuario](#edit-user-account-attributes) | Rellene los atributos de Azure Active Directory que se pueden usar para definir segmentos.<br/>Editar atributos de cuenta de usuario cuando los usuarios no están incluidos en los segmentos en los que deberían estar, para cambiar en qué segmentos se encuentran los usuarios o para definir segmentos con atributos diferentes. |
 | [Editar un segmento](#edit-a-segment) | Edite segmentos cuando desee cambiar la forma en que se define un segmento. <br/>Por ejemplo, es posible que haya definido segmentos originalmente con *Department* y ahora quiera usar otro atributo, *como MemberOf*. |

@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 82cfac1498ae11afe108e68a3c9caf70bf8645e3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 49a9d668182a065f3b0a5168f14ed9c7472e00ac37615518c31a252d22191861
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652832"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902802"
 ---
 # <a name="overview-of-management-and-apis"></a>Introducción a la administración y las API
 

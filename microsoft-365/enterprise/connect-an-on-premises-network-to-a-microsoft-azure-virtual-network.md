@@ -1,7 +1,7 @@
 ---
 title: Conectar una red local con una red virtual de Microsoft Azure
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/21/2019
 audience: ITPro
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Resumen: obtenga información sobre cómo configurar una red virtual de Azure entre locales para las cargas de trabajo de servidores de Office con una conexión VPN de sitio a sitio.'
-ms.openlocfilehash: 88a0ecbae20fd145a4ec5e25f44e35e68d7b53bdbf5ee8b699a887fca2ba8b43
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 70cd5690e687cbf2fab29f18e455fa5878056e6a
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864863"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354361"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Conectar una red local con una red virtual de Microsoft Azure
 
@@ -128,7 +128,7 @@ Para determinar el número de direcciones necesarias para la subred, cuente el n
   
 |**Número de máquinas virtuales necesarias**|**Número de bits de host necesarios**|**Tamaño de la subred**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3  <br/> |/29  <br/> |
+|1-3  <br/> |3   <br/> |/29  <br/> |
 |4-11  <br/> |4   <br/> |/28  <br/> |
 |12-27  <br/> |5   <br/> |/27  <br/> |
 |28-59  <br/> |6   <br/> |/26  <br/> |
@@ -336,4 +336,4 @@ Esta es la configuración resultante.
   
 ## <a name="next-step"></a>Paso siguiente
   
-[Implementar la sincronización de directorios de Microsoft 365 en Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Implementar Microsoft 365 sincronización de directorios en Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

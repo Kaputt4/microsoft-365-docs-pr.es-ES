@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 modelos de identidad y Azure Active Directory
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.date: 09/30/2020
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo administrar el servicio de identidad de usuario de Azure AD en Microsoft 365 modelos de identidad híbrida o solo en la nube.
-ms.openlocfilehash: 659546d6138591bc0b3db04bb4a77f1eab4edf665513fbf1b4df4e2109c71dcf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65cfd736ca12c91094d841277c00c42a916c6cda
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835480"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354157"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 modelos de identidad y Azure Active Directory
 
@@ -100,6 +100,6 @@ Si necesita el modelo de identidad solo en la nube, consulte [Cloud-only identit
 
 Si necesita el modelo de identidad híbrida, vea [Identidad híbrida](plan-for-directory-synchronization.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

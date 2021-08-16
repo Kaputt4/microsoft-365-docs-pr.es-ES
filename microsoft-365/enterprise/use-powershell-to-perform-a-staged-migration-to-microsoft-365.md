@@ -1,7 +1,7 @@
 ---
 title: Usar PowerShell para realizar una migración preconfigurada a Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: Obtenga información sobre cómo usar PowerShell para mover contenido de un sistema de correo electrónico de origen con el tiempo mediante una migración por fases a Microsoft 365.
-ms.openlocfilehash: dd78d466c62303ffe208137f39ee5188c0d03c283fca04263842e63982183b92
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0ec8aca643730b063ee75ead69908959a992d2dc
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807257"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354169"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Usar PowerShell para realizar una migración preconfigurada a Microsoft 365
 

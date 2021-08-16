@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a015755d0848b0287854db67021599917851d889bb178ff4f4129e02c09919db
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c12e832fbbe1628593cbfee4d861803ac1b513b7
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806305"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354373"
 ---
 # <a name="create-indicators"></a>Crear indicadores
 
@@ -59,6 +59,11 @@ Las acciones admitidas actuales son:
 - Permitir
 - Solo alerta
 - Alerta y bloqueo
+- Advertir
+
+
+>[!NOTE]
+> El uso del modo de advertencia le pedirá a los usuarios una advertencia si abren una aplicación de riesgo. El mensaje no les impedirá usar la aplicación, pero puedes proporcionar un mensaje personalizado y vínculos a una página de empresa que describe el uso adecuado de la aplicación. Los usuarios aún pueden omitir la advertencia y seguir usando la aplicación si lo necesitan. Para obtener más información, vea [Govern apps discovered by Microsoft Defender for Endpoint](/cloud-app-security/mde-govern).
 
 
 Puede crear un indicador para:
