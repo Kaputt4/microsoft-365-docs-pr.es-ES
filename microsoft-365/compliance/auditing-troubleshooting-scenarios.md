@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar la herramienta de Microsoft 365 de búsqueda de registro de auditoría para ayudar a solucionar problemas comunes de soporte técnico para cuentas de correo electrónico.
-ms.openlocfilehash: 2a758114f361f3d13f0393780ef9b1e149fd421960bee627e3fb4ff41d100859
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a925bd425d04a3df8971b1cf983763f2093aa68
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906375"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255723"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría para investigar problemas de soporte técnico comunes
 
@@ -50,30 +50,30 @@ Debe tener asignado el rol View-Only registros de auditoría o registros de audi
 En esta sección se describen los conceptos básicos para crear y ejecutar búsquedas de registro de auditoría. Use estas instrucciones como punto de partida para cada escenario de solución de problemas de este artículo. Para obtener instrucciones paso a paso más detalladas, vea [Buscar en el registro de auditoría.](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search)
 
 1. Vaya a <https://compliance.microsoft.com/auditlogsearch> e inicie sesión con su cuenta profesional o educativa.
-    
-    Aparecerá la página **Auditoría**. 
-    
+  
+    Aparecerá la página **Auditoría**.
+  
     ![Configurar criterios y, a continuación, seleccionar Buscar para ejecutar la búsqueda](../media/AuditLogSearchPage1.png)
   
-4. Puede configurar los siguientes criterios de búsqueda. Cada escenario de solución de problemas de este artículo recomienda instrucciones específicas para configurar estos campos.
-    
-   a. **Fecha de inicio** y **fecha de finalización:** seleccione una fecha y un intervalo de tiempo para mostrar los eventos que se produjeron en ese período. Los últimos siete días están seleccionados de forma predeterminada. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo máximo de fecha que puede especificar es 90 días.    
+2. Puede configurar los siguientes criterios de búsqueda. Cada escenario de solución de problemas de este artículo recomienda instrucciones específicas para configurar estos campos.
+  
+   a. **Fecha de inicio** y **fecha de finalización:** seleccione una fecha y un intervalo de tiempo para mostrar los eventos que se produjeron en ese período. Los últimos siete días están seleccionados de forma predeterminada. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo máximo de fecha que puede especificar es 90 días.
 
    b. **Actividades:** Seleccione la lista desplegable para mostrar las actividades que puede buscar. Después de que ejecute la búsqueda, solo se muestran las entradas seleccionadas del registro de auditoría de las actividades. Al seleccionar **Mostrar resultados para todas las actividades,** se muestran los resultados de todas las actividades que cumplen los demás criterios de búsqueda. También tendrás que dejar este campo en blanco en algunos de los escenarios de solución de problemas.
-    
+  
     c. **Usuarios:** Haga clic en este cuadro y, a continuación, seleccione uno o varios usuarios para los que mostrar los resultados de la búsqueda. Los registros de auditoría de la actividad seleccionada realizada por los usuarios seleccionados en este cuadro se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas de todos los usuarios (y cuentas de servicio) de su organización.
-    
+  
     d. **Archivo, carpeta o sitio:** Escriba algunos o todos los nombres de un archivo o carpeta para buscar actividad relacionada con el archivo de carpeta que contiene la palabra clave especificada. También puede especificar una dirección URL de un archivo o carpeta. Si usa una dirección URL, asegúrese de que escriba la ruta de acceso de dirección URL completa o si solo escribe una parte de la dirección URL, no incluya ningún carácter o espacio especial. Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas de la organización. Este campo se deja en blanco en todos los escenarios de solución de problemas de este artículo.
-    
-5. Seleccione **Buscar** para ejecutar la búsqueda con los criterios de búsqueda. 
-    
-    Los resultados de la búsqueda se cargan y, después de unos instantes, se muestran en **Resultados** en la página De búsqueda **del registro de** auditoría. Cada una de las secciones de este artículo proporciona instrucciones sobre los aspectos que debe buscar en el contexto del escenario de solución de problemas específico.
+  
+3. Seleccione **Buscar** para ejecutar la búsqueda con los criterios de búsqueda.
+  
+    Los resultados de la búsqueda se cargan y, después de unos instantes, se muestran en una página de la herramienta de búsqueda del registro de auditoría. Cada una de las secciones de este artículo proporciona instrucciones sobre los aspectos que debe buscar en el contexto del escenario de solución de problemas específico.
 
-    Para obtener más información sobre cómo ver, filtrar o exportar resultados de búsqueda de registros de auditoría, vea:
+    Para obtener más información acerca de la visualización y exportación de resultados de búsqueda de registros de auditoría, vea:
 
     - [Ver resultados de búsqueda](search-the-audit-log-in-security-and-compliance.md#step-2-view-the-search-results)
-    - [Filtrar resultados de búsqueda](search-the-audit-log-in-security-and-compliance.md#step-3-filter-the-search-results)
-    - [Exportar resultados de la búsqueda](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)
+  
+    - [Exportar resultados de la búsqueda](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file)
 
 ## <a name="find-the-ip-address-of-the-computer-used-to-access-a-compromised-account"></a>Buscar la dirección IP del equipo que se usa para acceder a una cuenta comprometida
 

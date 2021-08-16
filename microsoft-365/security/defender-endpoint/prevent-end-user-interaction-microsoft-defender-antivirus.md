@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0e44e876c6eadc4c1b95081091346ce20ad4493bb0c258958fdbc1346e9659f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 66f9f571411c61bd8944ceb01a13f237ecd1d483
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867919"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255787"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario
 
@@ -40,7 +40,7 @@ En Windows 10, versión 1703, ocultar la interfaz ocultará las notificaciones d
 
 Con la configuración establecida en **Enabled**:
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Seguridad de Windows sin el icono de escudo y la sección protección contra virus y amenazas":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="Captura de pantalla Seguridad de Windows sin el icono de escudo y las secciones de protección contra virus y amenazas":::
 
 Con la configuración establecida en **Deshabilitado** o no configurada:
 

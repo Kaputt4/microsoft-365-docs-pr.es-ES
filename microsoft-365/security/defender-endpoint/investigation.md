@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0d15f90c155a6ed14ccb29e5ab634a02b01d52b1
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f06fb5c425327156a4acf78e9eb3f6864b2317ff23b31cd90a8aded764cff8d5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651188"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889668"
 ---
 # <a name="investigation-resource-type"></a>Tipo de recurso Investigación
 
@@ -43,9 +43,9 @@ Representa una entidad de investigación automatizada en Defender para endpoint.
 
 Vea [Overview of automated investigations](automated-investigations.md) para obtener más información.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
-Método|Tipo de valor devuelto|Descripción
+Método|Tipo de valor devuelto|Description
 :---|:---|:---
 [Enumerar investigaciones](get-investigation-collection.md)|Colección Investigation|Obtener colección de investigación
 [Obtener una sola investigación](get-investigation-object.md)|Entidad de investigación|Obtiene una sola entidad Investigation.
@@ -55,15 +55,15 @@ Método|Tipo de valor devuelto|Descripción
 
 Propiedad|Tipo|Descripción
 :---|:---|:---
-id|Cadena|Identidad de la entidad de investigación. 
+id|String|Identidad de la entidad de investigación. 
 startTime|DateTime Nullable|La fecha y hora en que se creó la investigación.
 endTime|DateTime Nullable|La fecha y la hora en que se completó la investigación.
-cancelledBy|Cadena|El identificador del usuario o aplicación que canceló esa investigación.
+cancelledBy|String|El identificador del usuario o aplicación que canceló esa investigación.
 investigationState|Enum|El estado actual de la investigación. Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 statusDetails|Cadena|Información adicional sobre el estado de la investigación.
-machineId|Cadena|El identificador del dispositivo en el que se ejecuta la investigación.
-computerDnsName|Cadena|Nombre del dispositivo en el que se ejecuta la investigación.
-triggeringAlertId|Cadena|El identificador de la alerta que desencadenó la investigación.
+machineId|String|El identificador del dispositivo en el que se ejecuta la investigación.
+computerDnsName|String|Nombre del dispositivo en el que se ejecuta la investigación.
+triggeringAlertId|String|El identificador de la alerta que desencadenó la investigación.
 
 ## <a name="json-representation"></a>Representación json
 

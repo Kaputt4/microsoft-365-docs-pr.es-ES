@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8932b28c2e87431028ae608ea56b95f340485199
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f5643c1474448f472477ee90da6b0798de11882a1a62245cc842a6e2d827db1a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650552"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889680"
 ---
 # <a name="import-indicators-api"></a>API importar indicadores
 
@@ -73,7 +73,7 @@ Content-Type|cadena|application/json. **Necesario**.
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Descripción
+Parámetro|Tipo|Description
 :---|:---|:---
 Indicadores|Indicador<[lista](ti-indicator.md)>|Lista de [indicadores](ti-indicator.md). **Required**
 

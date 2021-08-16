@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrar Microsoft Teams clases con Canvas
-ms.openlocfilehash: 8091d84e1d0f26c820979450001a1e0c9ad1cdec775ac9e34317f69c24bd2df6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ee5be86498c5a9eed3ebb47a7857b7cc401f00d
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898712"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255566"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Usar Microsoft Teams clases con Canvas
 
@@ -28,13 +28,13 @@ Microsoft Teams clases es una aplicación Learning Tools Interoperability (LTI) 
 
 > [!NOTE]
 > La clase actual Teams LTI solo admite la sincronización de usuarios de Canvas con Microsoft Azure Active Directory (AAD) en un ámbito limitado. 
-> - El inquilino debe tener una coincidencia exacta entre un campo canvas (correo electrónico, id. de usuario o id. de SIS) y el UPN en Microsoft AAD. Estamos trabajando para ampliar la flexibilidad a la funcionalidad de sincronización, pero mientras tanto, los usuarios de Canvas que no coincidan con un UPN en AAD no se agregarán a la clase Teams sincronizada con Canvas. 
+> - El inquilino debe tener una licencia de Microsoft Education.
 > - Solo se puede usar un único espacio empresarial de Microsoft para asignar usuarios entre Canvas y Microsoft.
 > - Tendrá que desactivar SDS antes de usar la clase Teams LTI para evitar la duplicación de grupos.
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administrador
 
-Antes de administrar la integración de Microsoft Teams en Instructure Canvas, es importante que la aplicación azure de **Microsoft-Teams-Sync-for-Canvas** de Canvas de Canvas sea aprobada por el administrador de Microsoft Office 365 de la institución en el inquilino de Microsoft Azure antes de completar la configuración de administración de Canvas.
+Antes de administrar la integración de Microsoft Teams en Instructure Canvas, es importante que la aplicación Azure de **Microsoft-Teams-Sync-for-Canvas** de Canvas de Canvas sea aprobada por el administrador de Microsoft Office 365 de la institución en el inquilino de Microsoft Azure antes de completar la configuración de administración de Canvas.
 
 1. Inicie sesión en Canvas.
 
@@ -43,18 +43,21 @@ Antes de administrar la integración de Microsoft Teams en Instructure Canvas, e
 3. En la navegación de administración, seleccione el **vínculo Configuración** y, a continuación, la **pestaña Integraciones.**
 
 4. Habilite Microsoft Teams sincronización activando la alternancia.
+   
+   ![Canvas Teams Sync Updated png](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
 
-   ![teams-sync](media/teams-sync.png)
+5. Escriba el nombre del inquilino de Microsoft, el atributo de inicio de sesión, el sufijo de dominio y el atributo de búsqueda de AAD.
 
-5. Escriba el nombre del inquilino de Microsoft y el atributo de inicio de sesión.
-
-   El atributo login se usará para asociar el usuario canvas con un Azure Active Directory usuario.
+   Estos campos se usarán para hacer coincidir usuarios en Canvas con usuarios de Microsoft Azure Active Directory. 
+   * El atributo Login es el atributo de usuario Canvas que se usa para la coincidencia.
+   * El campo Sufijo es opcional y le permite especificar un dominio cuando no hay una asignación exacta entre los atributos canvas y los campos de Microsoft AAD. Por ejemplo, si el correo electrónico de Canvas es "name@example.edu" mientras el UPN de Microsoft AAD es "nombre", puede hacer coincidir a los usuarios si escribe "example.edu" en el campo sufijo.
+   * El atributo de búsqueda de Active Directory es el campo del lado microsoft con el que coinciden los atributos canvas. Seleccione entre UPN, dirección de correo electrónico principal o el alias de correo electrónico.
 
 6. Seleccione **Actualizar Configuración** una vez que haya terminado.
 
 7. Para aprobar el acceso a la aplicación azure de **Microsoft-Teams-Sync-for-Canvas** de Canvas de Canvas, seleccione el vínculo Conceder acceso **al** espacio empresarial. Se le redirigirá al punto de conexión de consentimiento de administrador de la plataforma de identidad de Microsoft.
 
-   ![permisos](media/permissions.png)
+   ![permissions](media/permissions.png)
 
 8. Seleccione **Aceptar**.
 

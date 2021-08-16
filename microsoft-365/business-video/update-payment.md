@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo actualizar el método de pago para Microsoft 365 para empresas.
-ms.openlocfilehash: b0ed8541068fe02e0bd1f005a5a9c7ee8f50ae1b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: f931d627cf62ae70fe288d5f3840d66a0346bf37e3e10c568446084379e33921
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705543"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906716"
 ---
 # <a name="update-the-payment-method-for-your-subscription"></a>Actualizar el método de pago de la suscripción
 
@@ -34,7 +34,7 @@ ms.locfileid: "52705543"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-Puedes actualizar fácilmente el método de pago de tu Microsoft 365 Empresa suscripción. Puede cambiar detalles como la tarjeta de crédito usada, el nombre o la dirección.
+Puedes actualizar fácilmente el método de pago de tu suscripción Microsoft 365 empresa. Puede cambiar detalles como la tarjeta de crédito usada, el nombre o la dirección.
 
 ## <a name="try-it"></a>¿Se atreve?
 

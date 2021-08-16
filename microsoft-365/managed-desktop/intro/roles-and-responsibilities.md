@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 07fdea2e8fc007491dfc2ab920a53f50f55b71b4f0f37cb0674f5ff4a9cc1014
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a7c322f75cc05406169fc3a1ce36f1550bbd95ce
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898652"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255935"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Roles y responsabilidades del Escritorio administrado de Microsoft
 
@@ -31,7 +31,7 @@ Microsoft proporciona estos roles y responsabilidades clave:
 Rol o responsabilidad | Descripción
 --- | ---
 Administración de directivas MDM | Microsoft aplicará directivas MDM de acuerdo con los procedimientos recomendados y tendrá en cuenta las solicitudes de cambios de directiva. También realizaremos cambios en el espacio empresarial según lo establecido en [Directivas de dispositivo.](../service-description/device-policies.md)
-Soporte al usuario | Proporcionamos un mecanismo para el acceso elevado a los dispositivos y para que los problemas se intensten si es necesario. Para obtener más información, vea [User support](../service-description/user-support.md).
+Soporte al usuario | Proporcionamos un mecanismo para el acceso elevado a los dispositivos y para que los problemas se intensten a través de una solicitud de soporte técnico si es necesario. Para obtener más información, vea [User support](../service-description/user-support.md).
 Escritorio administrado de Microsoft servicio de soporte técnico | Microsoft proporcionará soporte técnico a su departamento de TI a través de Escritorio administrado de Microsoft Operations Team. Este equipo admitirá la solución de problemas técnicos, las solicitudes de cambio y la administración de incidentes para el entorno de Escritorio administrado de Microsoft cliente. Para obtener más información, vea [Admin support for Escritorio administrado de Microsoft](../working-with-managed-desktop/admin-support.md).
 Supervisión de seguridad | Microsoft supervisará los dispositivos Escritorio administrado de Microsoft con Microsoft Defender para endpoint. Si el centro Escritorio administrado de Microsoft operaciones de seguridad (SOC) detecta una amenaza, le notificaremos, aislaremos el dispositivo y corregiremos el problema de forma remota. Para obtener más información, vea [Security](../service-description/security.md).
 Supervisión y administración de actualizaciones | Supervisamos activamente los dispositivos Escritorio administrado de Microsoft para garantizar que se instalen las actualizaciones de características y de calidad más recientes para Microsoft Windows y Microsoft Office. Para obtener más información, vea [How updates are handled](../service-description/updates.md).

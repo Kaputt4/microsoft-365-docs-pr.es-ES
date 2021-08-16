@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre la diferencia entre Microsoft 365 Empresa Estándar y Microsoft 365 Empresa Premium y cómo puede actualizar a Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 0968b877820590987f6f3ceca3efbd106b62cbd1
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 563df2610351e2c025c618086c038750999c03df60b93b757865f76fbf86c834
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705498"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906735"
 ---
 # <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>Actualizar a Microsoft 365 Empresa Premium desde Microsoft 365 Empresa Estándar
 

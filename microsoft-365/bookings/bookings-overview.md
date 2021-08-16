@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Una introducción a la aplicación Microsoft Bookings, que incluye un calendario de reservas basado en web e se integra con Outlook para optimizar el calendario de su personal y dar a sus clientes flexibilidad para reservar citas.
-ms.openlocfilehash: 6ea7d7105efd917674b56ddd952b754310623c98f17eef15b9bad9b50841c353
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 339c8c2457b340dd863b5c9f8e0382b84ef43c08
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900824"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256132"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
@@ -29,6 +29,13 @@ Bookings tiene tres componentes principales:
 - Una aplicación web que contiene un conjunto de páginas basadas en web para empresas en las que los propietarios y administradores de calendarios de Bookings dentro de una organización pueden definir tipos y detalles de citas, administrar las programaciones y disponibilidad del personal, establecer horarios laborales y personalizar cómo se programan las citas. Estas páginas permiten la versatilidad y la capacidad de personalizar un calendario de Bookings para que se ajuste a las diversas necesidades de la persona u organización.
 
 - Una aplicación móvil para empresas en la que los propietarios y administradores del calendario de Bookings pueden ver todas sus citas, acceder a las listas de clientes y a la información de contacto, y hacer reservas manuales sobre la marcha.
+
+## <a name="before-you-begin"></a>Antes de empezar
+
+Microsoft Bookings está disponible en las siguientes suscripciones:
+
+- Office 365: A3, A5, E3, E5, F1, F3
+- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Premium
 
 ## <a name="get-started-using-bookings"></a>Introducción al uso de Bookings
 

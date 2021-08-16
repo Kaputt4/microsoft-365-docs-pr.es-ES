@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Resumen: una explicación del aislamiento y el control de acceso dentro de las distintas aplicaciones de Microsoft 365.'
-ms.openlocfilehash: 53f60c09b94bdcc2515bcc5ff70dfbcd47f42bb4
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 6f8a668c1d479d249a85b889689f61f20f2a050beb1dcaf50f51d660631b5cc4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332333"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864385"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Aislamiento y control de acceso en Microsoft 365
 
@@ -97,6 +97,6 @@ Los buzones de voz se almacenan en Exchange. Los contactos se almacenan en Excha
 
 Los medios usados en chats (excepto los GIFs giphy que no se almacenan pero son un vínculo de referencia a la dirección URL del servicio Giphy original, Giphy es un servicio que no es microsoft) se almacena en un servicio multimedia basado en Azure que se implementa en las mismas ubicaciones que el servicio de chat.
 
-#### <a name="files"></a>Archivos
+#### <a name="files"></a>Files
 
 Los archivos (incluidos OneNote y Wiki) que alguien comparte en un canal se almacenan en el sitio de SharePoint equipo. Los archivos compartidos en un chat privado o un chat durante una reunión o llamada se cargan y almacenan en la cuenta de OneDrive para trabajo o escuela del usuario que comparte el archivo. Exchange, SharePoint y OneDrive ya proporcionan residencia de datos en cada una de las geos del centro de datos mundial. Por lo tanto, para los clientes existentes, todos los archivos, blocs de notas de OneNote, contenido wiki de Teams y buzones que forman parte de la experiencia de Teams ya están almacenados en la ubicación según la afinidad de inquilino. Los archivos se almacenan en el país para Australia, Canadá, Francia, Alemania, India, Japón, Emiratos Árabes Unidos, Reino Unido, Sudáfrica, Corea del Sur y Suiza (que incluye Liechtenstein). Para todos los demás países, los archivos se almacenan en la ubicación de Estados Unidos, Europa o Asia Pacífico en función de la afinidad de inquilinos.

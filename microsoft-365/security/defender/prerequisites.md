@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 84fad9dc273d020ee48e53c5d9edb57c88041e99dd077151f4b41e8de93da3e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 75c18feba1b7d293f954582d83357d1efcff98ed
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862556"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256312"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender requisitos previos
 
@@ -38,7 +38,7 @@ ms.locfileid: "53862556"
 Obtenga información sobre las licencias y otros requisitos para aprovisionar y usar [Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
-Cualquiera de estas licencias le da acceso a Microsoft 365 Defender características de Microsoft 365 de seguridad sin costo adicional:
+Cualquiera de estas licencias le da acceso a Microsoft 365 Defender características de Microsoft 365 Defender portal sin costo adicional:
 
 - Microsoft 365 E5 o A5
 - Microsoft 365 E3 con el Seguridad de Microsoft 365 E5 complemento
@@ -65,7 +65,7 @@ Vaya a Centro de administración de Microsoft 365 ([admin.microsoft.com](https:/
 Debe ser un administrador **global o** **un** administrador de seguridad en Azure Active Directory para activar Microsoft 365 Defender. Para obtener la lista de roles necesarios para usar Microsoft 365 Defender información sobre cómo se regula el acceso a los datos, lea acerca de cómo administrar el acceso a [Microsoft 365 Defender](m365d-permissions.md).
 
 ## <a name="browser-requirements"></a>Requisitos de los exploradores
-Acceda Microsoft 365 Defender en el centro Microsoft 365 seguridad mediante Microsoft Edge, Internet Explorer 11 o cualquier explorador web compatible con HTML 5.
+Acceda Microsoft 365 Defender en el portal de Microsoft 365 Defender con Microsoft Edge, Internet Explorer 11 o cualquier explorador web compatible con HTML 5.
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilidad para estados GCC, GCC High y otras instituciones gubernamentales de EE. UU.
 Actualmente, Microsoft 365 Defender *no está* disponible para:

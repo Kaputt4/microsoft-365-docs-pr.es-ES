@@ -19,12 +19,12 @@ ms.custom:
 description: Aprende a crear y administrar directivas de notificación automática que asignan automáticamente licencias a los usuarios para determinadas aplicaciones.
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: b104700905b3753466036411368951f12a7012d8
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: da5488b1cd463f173fda44dacd33a7198330f747495d10d5d696bee2195330ae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331651"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887508"
 ---
 # <a name="manage-auto-claim-policies"></a>Administrar directivas de reclamación automática
 
@@ -44,7 +44,7 @@ Después de crear una directiva de notificación automática, puede realizar las
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global, de usuario o de licencia para crear y administrar directivas de notificación automática. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global, de usuario o de licencia para crear y administrar directivas de notificación automática. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Activar o desactivar la característica de directiva de notificación automática
 
@@ -157,7 +157,7 @@ Si tienes productos de copia de seguridad asignados a la directiva, puedes cambi
 2. Seleccione **Ver informe**. La **página Informe de directiva de notificación** automática enumera todas las licencias asignadas de cada directiva en los últimos 90 días. De forma predeterminada, la página muestra los últimos 90 días.
 3. Para cambiar el período de tiempo que se muestra, seleccione la **lista desplegable Pasados 30** días. Puede ver informes de los últimos 1, 7, 30 y 90 días.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Puede volver periódicamente a la pestaña **Directiva** de notificación automática para ver una lista de usuarios que han reclamado licencias en las directivas que creó.
 

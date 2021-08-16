@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: 3d6eb3abac41106d48794b7f1859d7c809602489db93e99a46a4eed44efd6d30
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e13620413c81e5a6492c85d54d284f48308f5578
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892319"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256037"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -58,7 +58,7 @@ Para establecer permisos y asignar roles en el Centro de cumplimiento de Microso
 
 1. Vaya a la [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/compliancemanager) y seleccione **Permisos** en la navegación izquierda.
 
-2. En la lista **desplegable Centro de** cumplimiento, seleccione **Roles**. 
+2. En la lista **desplegable Centro de** cumplimiento, seleccione **Roles**.
 
 3. Busque el grupo de roles al que desea agregar uno o varios usuarios y active la casilla a la izquierda del nombre del grupo. (Vea la [lista de roles y funciones relacionadas a continuación.](#role-types) Los nombres de los grupos de roles imitan el nombre del rol).
 

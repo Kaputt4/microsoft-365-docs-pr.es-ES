@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365
-ms.openlocfilehash: a1f4714d5b7dcd8d6a22a07c118055e13b27e069
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 840c9ba2db5408d539722db45528a3db728698b311e55a7c3803cee32468aafa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398282"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887725"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Aumentar la protección contra amenazas para Microsoft 365 suscripción
 
@@ -102,7 +102,7 @@ Los hackers que obtienen acceso al buzón de un usuario pueden robar el correo e
 
 Para crear una regla de transporte de correo, vea [este breve vídeo](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) o siga estos pasos:
 
-1. En el Centro Microsoft 365 administración, haga clic en **Centros de administración** \> **Exchange**.
+1. En la Centro de administración de Microsoft 365, haga clic en **Centros de administración** \> **Exchange**.
 
 2. En la categoría **flujo de** correo, haga clic en **reglas**.
 
@@ -130,7 +130,7 @@ Se recomienda empezar a usar esta protección mediante la creación de una direc
 
 Para crear una directiva contra la suplantación de identidad en Defender para Office 365, vea este breve [vídeo](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)de aprendizaje o siga estos pasos:
 
-1. Vaya a <https://protection.office.com>.
+1. Ve a <https://protection.office.com>.
 
 2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración de amenazas,** elija **Directiva**.
 
@@ -267,9 +267,9 @@ Debe tener asignado el rol Registros de auditoría en Exchange Online activar o 
 
 Una vez activada la característica, puede buscar archivos, carpetas y muchas actividades. Para obtener más información, [vea search the audit log](../compliance/search-the-audit-log-in-security-and-compliance.md).
 
-## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders&quot;></a>Configurar la configuración de uso compartido anónimo para SharePoint y OneDrive archivos y carpetas
+## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>Configurar la configuración de uso compartido anónimo para SharePoint y OneDrive archivos y carpetas
 
-(Cambie la expiración predeterminada del vínculo anónimo a 14 días, cambie el tipo de uso compartido predeterminado a &quot;Personas específicas") Para cambiar la configuración de uso compartido de OneDrive y SharePoint:
+(Cambie la expiración predeterminada del vínculo anónimo a 14 días, cambie el tipo de uso compartido predeterminado a "Personas específicas") Para cambiar la configuración de uso compartido de OneDrive y SharePoint:
 
 1. Vaya al Centro de administración en y, a <https://admin.microsoft.com> continuación, elija **SharePoint** en Centros **de administración** en la navegación izquierda.
 2. En el centro SharePoint administración, vaya a **Directivas** \> **compartidas**.
@@ -304,4 +304,4 @@ Puede impedir que los usuarios de su organización compartan sus calendarios o t
 
    ![Captura de pantalla del uso compartido de disponibilidad del calendario con cualquier persona.](../media/sharefreebusy.png)
 
-Si los usuarios pueden compartir sus [](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) calendarios, consulte estas instrucciones sobre cómo compartir desde Outlook en la web.
+Si los usuarios pueden compartir sus [](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) calendarios, consulta estas instrucciones sobre cómo compartir desde Outlook en la Web.

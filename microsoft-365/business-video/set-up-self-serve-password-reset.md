@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo permitir que los usuarios restablezcan sus propias contraseñas en Microsoft 365 Empresa Premium.
-ms.openlocfilehash: b3cdd388c27b0f75bddb2544e36bd3ade210955b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5492bc357fb58e9d3ca5ed4e557449726657257109d9450e09c131115510982b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841323"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906748"
 ---
 # <a name="set-up-self-service-password-reset"></a>Configurar el restablecimiento de contraseña autoasistido
 
@@ -36,7 +36,7 @@ Para permitir que los usuarios restablezcan sus propias contraseñas sin tener q
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el centro Microsoft 365 administración, en el  panel de navegación izquierdo, seleccione Configuración y, a continuación, **Seguridad & privacidad.**
+1. En el Centro de administración de Microsoft 365, en el panel de  navegación izquierdo, seleccione Configuración y, a continuación, Seguridad **& privacidad.**
 1. En **Permitir que los usuarios restablezcan sus propias contraseñas,** seleccione Centro de administración de Azure **AD**.
 1. En el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, en la **página Usuarios - todos los** usuarios, seleccione **Restablecimiento de contraseña.**
 1. Seleccione **Todo** para habilitar el restablecimiento de contraseñas de autoservicio y, a continuación, **seleccione Guardar**.

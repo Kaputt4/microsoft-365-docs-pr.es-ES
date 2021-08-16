@@ -24,18 +24,18 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Obtenga información sobre las características de seguridad que se incluyen Microsoft 365 Empresa Premium para ayudar a proteger sus datos en equipos, teléfonos y tabletas.
-ms.openlocfilehash: 974204e100d3228f78406aca4acce67a889b08c3
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 50b74ed18d641e8de38db3284c3ef3abf319825f4f7dbe02b6575f6c0fbc6f85
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887592"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Empresa Premium seguridad y cumplimiento normativo
 
 Microsoft 365 Empresa Premium ofrece características de seguridad simplificadas para ayudar a proteger los datos en equipos, teléfonos y tabletas.
     
-## <a name="microsoft-365-admin-center-security-features"></a>Microsoft 365 de seguridad del Centro de administración
+## <a name="microsoft-365-admin-center-security-features"></a>Centro de administración de Microsoft 365 de seguridad
 
 Puedes administrar muchas de las Microsoft 365 Empresa Premium de seguridad en el Centro de administración, lo que te ofrece una forma simplificada de activar o desactivar estas características. En el Centro de administración, puede hacer lo siguiente:
   
@@ -49,7 +49,7 @@ Puedes administrar muchas de las Microsoft 365 Empresa Premium de seguridad en e
     
 - [Establecer la configuración de protección de dispositivos Windows 10 dispositivos](protection-settings-for-windows-10-pcs.md) . 
     
-    Puedes habilitar el [cifrado BitLocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions) para ayudar a proteger los datos en caso de que se pierda o robe un dispositivo, y habilitar Windows [Exploit Guard](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) para proporcionar protección avanzada contra ransomware. 
+    Puedes habilitar el cifrado [de BitLocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions) para ayudar a proteger los datos en caso de pérdida o robo de un dispositivo, y habilitar Windows [Exploit Guard](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) para proporcionar protección avanzada contra ransomware. 
     
 - [Eliminar datos de la empresa de dispositivos](remove-company-data.md)
     
@@ -73,8 +73,8 @@ Las características avanzadas de Microsoft 365 Empresa Premium están disponibl
 
 - **[Las funcionalidades completas de Intune en Azure Portal](/mem/intune/fundamentals/what-is-intune)**
     
-    El acceso al Centro de administración de Intune en Azure Portal le permite configurar características de seguridad adicionales, como la administración de dispositivos MacOS, iPhone y dispositivos Android, junto con la administración avanzada de dispositivos para Windows, que no están disponibles Microsoft 365 través de un centro de administración.
-- **El [mismo acceso condicional](/azure/active-directory/conditional-access/overview) que Azure AD Premium plan P1**
+    El acceso al Centro de administración de Intune en Azure Portal le permite configurar características de seguridad adicionales, como la administración de dispositivos MacOS, iPhone y Dispositivos Android, junto con la administración avanzada de dispositivos para Windows, que no están disponibles a través de Centro de administración de Microsoft 365.
+- **El [mismo acceso condicional](/azure/active-directory/conditional-access/overview) que Azure AD Premium P1 plan**
 
 
     El acceso condicional puede ayudar a proteger la organización contra el riesgo de inicio de sesión, los intentos de acceso desde una red o configuración regional inesperadas, los intentos de acceso de tipos de dispositivos riesgosos, y así sucesivamente. Las directivas de acceso condicional se aplican una vez completada la primera autenticación y usan señales del primer evento de autenticación para determinar si el intento de acceso debe aprobarse, denegarse o si se necesita más prueba (como una segunda forma de identificación).
@@ -108,7 +108,7 @@ Su Microsoft 365 Empresa Premium incluye características que le ayudan a manten
 
    Microsoft 365 Empresa Premium incluye todas las características del [Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407)de Azure Information Protection . Con este plan,  puede crear etiquetas de confidencialidad que le permitan controlar el acceso a información confidencial en el correo electrónico y documentos, con controles como "No reenviar" y "No copiar". También puede clasificar la información confidencial como "Confidencial" y especificar cómo se puede compartir información clasificada fuera y dentro de la empresa. Enterprise cifrado de categoría superior es fácil de aplicar al correo electrónico y a los documentos para mantener la información privada. También puede instalar el complemento cliente de Azure Information Protection para Office aplicaciones. Para obtener más información, vea [Cliente de etiquetado unificado de Azure Information Protection](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Para etiquetas de confidencialidad, **instale elAzInfoProtection_UL.exe**.
 
-Puedes administrar estas características en el Centro de seguridad &amp; y el Centro de administración de Intune. Con el tiempo, los controles simplificados se agregarán al centro Microsoft 365 administración.
+Puedes administrar estas características en el Centro de seguridad &amp; y el Centro de administración de Intune. Con el tiempo, los controles simplificados se agregarán al Centro de administración de Microsoft 365.
   
     
 ## <a name="faq"></a>Preguntas más frecuentes
@@ -123,6 +123,6 @@ Sí, estas características están disponibles en todos los mercados donde Micro
     
 2. En la navegación izquierda, busque **Centros de administración** y expándalo. 
     
-    ![En el panel de navegación izquierdo del centro Microsoft 365 administración, elija Centros de administración.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![En el panel de navegación izquierdo de la Centro de administración de Microsoft 365, elija Centros de administración.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
 3. Elija **Cumplimiento &amp; de seguridad** para ir al Centro de cumplimiento de &amp; seguridad.

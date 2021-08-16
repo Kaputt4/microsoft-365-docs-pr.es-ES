@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar la autenticación multifactor, a veces también denominada autenticación en dos fases, en el teléfono.
-ms.openlocfilehash: 7709585c21b22ee3fece6daec4660cf87faa6819
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: e2cafa926f730d092debd1fde767bc74854658513dcb79cbefa64f13a5a39446
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906760"
 ---
 # <a name="set-up-multifactor-authentication-on-your-phone"></a>Configurar la autenticación multifactor en el teléfono
 
