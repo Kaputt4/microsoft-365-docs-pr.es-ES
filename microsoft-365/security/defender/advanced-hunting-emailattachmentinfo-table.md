@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 961474fa62981364919ae3bf482a886eb9a5e821
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c21332ae4c71f78e5ce1f92684d2a1a4cb68618869413ab27bd692aa295bd283
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935502"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863444"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 

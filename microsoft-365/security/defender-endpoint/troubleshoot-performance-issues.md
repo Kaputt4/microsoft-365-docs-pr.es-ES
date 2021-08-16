@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 146cda79ef70500ccc016f5064d1b1847b69b6ff
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d760a122527c3d5c9578188043ec2fdc56c5840b457a2f177263bfb9fcc4ad93
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656612"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889483"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Solucionar problemas de rendimiento relacionados con la protección en tiempo real
 
@@ -58,7 +58,7 @@ En **MPLog-xxxxxxxx-xxxxxx.log**, puede encontrar la información de impacto en 
 
 `Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%`
 
-|Nombre del campo|Descripción|
+|Nombre del campo|Description|
 |---|---|
 |ProcessImageName|Nombre de imagen de proceso|
 |TotalTime|Duración acumulativa en milisegundos invertidos en exámenes de archivos a los que se accede mediante este proceso|
@@ -121,7 +121,7 @@ Process Monitor (ProcMon) es una herramienta de supervisión avanzada que puede 
         >
         > ![Minimizar Procmon](images/procmon-minimize.png)
 
-7. Después de seguir uno de los procedimientos del paso 6, verá una opción para establecer filtros. Haga clic en **Aceptar**. Siempre puede filtrar los resultados una vez completada la captura.
+7. Después de seguir uno de los procedimientos del paso 6, verá una opción para establecer filtros. Seleccione **Aceptar**. Siempre puede filtrar los resultados una vez completada la captura.
 
     ![Filter out Process Name is System Exclude](images/procmon-filter-options.png)
 
@@ -275,7 +275,7 @@ La herramienta de línea *de comandoswpr.exe* forma parte del sistema operativo 
 
 8. Incluya el archivo y la carpeta en el envío al soporte técnico de Microsoft.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Recopilar Antivirus de Microsoft Defender de diagnóstico](collect-diagnostic-data.md)
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)

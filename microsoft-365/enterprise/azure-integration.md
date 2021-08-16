@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Integre Microsoft 365 con Azure AD si desea la sincronización de contraseñas o el inicio de sesión único con el entorno local.
-ms.openlocfilehash: f977969634401d59d7598136f9323cb0e37f9ece
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 68ec6098d6873177d573e866e0361b3775be25df1b7751a77f5b589adf5503ac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878902"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Integración de Azure con Microsoft 365
 
@@ -45,7 +45,7 @@ Puede usar los asesores de implementación de Azure AD para una experiencia de c
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Ediciones de Azure AD y administración Microsoft 365 identidades
 
-Si tiene una suscripción de pago a Microsoft 365, también tiene una suscripción gratuita de Azure AD. Puede usar Azure AD para crear y administrar cuentas de usuario y grupo. Para activar esta suscripción, debe completar un registro único. Después, puede obtener acceso a Azure AD desde el centro Microsoft 365 administración. 
+Si tiene una suscripción de pago a Microsoft 365, también tiene una suscripción gratuita de Azure AD. Puede usar Azure AD para crear y administrar cuentas de usuario y grupo. Para activar esta suscripción, debe completar un registro único. Después, puede obtener acceso a Azure AD desde su Centro de administración de Microsoft 365. 
 
 Para obtener instrucciones para registrar la suscripción gratuita de Azure AD, consulta [Usar la suscripción gratuita de Azure AD](../compliance/use-your-free-azure-ad-subscription-in-office-365.md). No vaya directamente a azure.microsoft.com para registrarse o terminará con una suscripción de prueba o de pago a Microsoft Azure que sea independiente de su suscripción gratuita de Azure AD con Microsoft 365. 
   

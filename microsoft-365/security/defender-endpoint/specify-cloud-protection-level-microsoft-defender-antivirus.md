@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: fb4dd3114c411385f1a38cf7b0fd391a1b159b99
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6b7ef857e09e01a1a9ba550dc679708c88dfce1751cd2644156ce38d1b8f42c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863492"
 ---
 # <a name="specify-the-cloud-delivered-protection-level"></a>Especificar el nivel de protección proporcionado en la nube
 

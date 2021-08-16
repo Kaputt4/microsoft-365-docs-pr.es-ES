@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 50792f7226b7d4aac0d5e81ec74379f589de24ef
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: ada18ec4ece380bef919887ac7d20dd5b6c06efb7d581b8b26628441b7320c93
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023158"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863480"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -57,7 +57,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
 | `Protocol` | cadena | Protocolo usado durante la comunicación |
 | `FailureReason` | cadena | Información que explica por qué falló la acción grabada |
-| `IsLocalAdmin` | boolean | Indicador booleano de si el usuario es un administrador local en el equipo |
+| `IsLocalAdmin` | booleano | Indicador booleano de si el usuario es un administrador local en el equipo |
 | `LogonId` | cadena | Identificador de una sesión de inicio de sesión. Este identificador es único en el mismo equipo solo entre reinicios |
 | `RemoteDeviceName` | cadena | Nombre de la máquina que realizó una operación remota en la máquina afectada. Según el evento notificado, este nombre podría ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información de dominio |
 | `RemoteIP` | cadena | Dirección IP a la que se ha conectado |

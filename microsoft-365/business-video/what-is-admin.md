@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los roles de administrador en Microsoft 365 para empresas.
-ms.openlocfilehash: a4fcb60218069d73fe658a6dc4ef681a659ec70b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: aa38accad56bf6fc6af34289a118bc9cf81e82b1556a5c1dd72634bed85af6d2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900667"
 ---
 # <a name="what-is-a-microsoft-365-admin"></a>¿Qué es un Microsoft 365 administrador?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0?autoplay=false]
 
-En cada Microsoft 365 Empresa suscripción, debe haber al menos una cuenta de administrador. El administrador administra el servicio, las cuentas de usuario y los dispositivos. Si eres el que se ha registrado en la suscripción, eres el administrador global de la suscripción. También puedes convertirte en administrador si otro administrador te hace uno.
+En cada suscripción Microsoft 365 empresa, debe haber al menos una cuenta de administrador. El administrador administra el servicio, las cuentas de usuario y los dispositivos. Si eres el que se ha registrado en la suscripción, eres el administrador global de la suscripción. También puedes convertirte en administrador si otro administrador te hace uno.
 
 Aunque siempre necesitas al menos un rol de administrador para tu suscripción, puede ser un riesgo de seguridad si una parte externa pone en peligro la cuenta de administrador. Te recomendamos que solo asignes el rol de administrador a aquellos que realmente lo necesiten y asignes el rol de usuario a la mayoría de las personas.
 
@@ -42,7 +42,7 @@ Aunque siempre necesitas al menos un rol de administrador para tu suscripción, 
 Este es el modo de cambiar un rol de usuario a un rol de administrador:
 
 1. Cuando haya iniciado sesión Microsoft 365, seleccione el iniciador de aplicaciones. Si ves el botón Administrador, entonces eres un administrador.
-1. Seleccione **Administrador** para ir al Centro Microsoft 365 administración.
+1. Seleccione **Administrador** para ir al Centro de administración de Microsoft 365.
 1. En el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
 1. Seleccione la persona a la que desea hacer un administrador. Los detalles del usuario aparecen en el cuadro de diálogo derecho.
 1. Elija **Administrar roles**.
@@ -54,7 +54,7 @@ Este es el modo de cambiar un rol de usuario a un rol de administrador:
 También puede crear una cuenta de administrador dedicada para una persona o servicio de TI:
 
 1. Cuando haya iniciado sesión Microsoft 365, seleccione el iniciador de aplicaciones.
-1. Seleccione **Administrador** para ir al Centro Microsoft 365 administración.
+1. Seleccione **Administrador** para ir al Centro de administración de Microsoft 365.
 1. En el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
 1. Seleccione **Agregar un usuario**.
 1. Escriba el nombre **y** apellido del **usuario,** **el** nombre para mostrar y **el** nombre de usuario y, a continuación, seleccione **Siguiente**.

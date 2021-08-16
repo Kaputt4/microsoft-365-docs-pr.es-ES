@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Puede cambiar el tamaño predeterminado de los archivos PST que se descargan en el equipo al exportar los resultados de búsqueda de exhibición de documentos electrónicos.
-ms.openlocfilehash: eb5fcce037ff5e3444b42c996b4a32d818edd29d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 76f15e590e1a12468f197f81a1963c9bce06c65008e0570df7bbbaf77b2e9d52
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942923"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53851520"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Cambiar el tamaño de los archivos PST al exportar resultados de búsqueda de exhibición de documentos electrónicos
 
@@ -50,7 +50,7 @@ Realice el siguiente procedimiento en el equipo que usará para exportar los res
     |0,7 GB (700 MB)  <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
-    |8 GB  <br/> |8589934592  <br/> |
+    |8 GB  <br/> |8589934592  <br/> |
    
 3. Cambie el valor al tamaño máximo deseado de un archivo PST al exportar los resultados de la búsqueda `PstSizeLimitInBytes` y, a continuación, guarde el archivo. 
     

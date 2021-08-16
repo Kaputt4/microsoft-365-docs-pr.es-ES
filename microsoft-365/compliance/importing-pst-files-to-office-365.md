@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo usar el servicio de importación en el Centro de seguridad y cumplimiento para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
-ms.openlocfilehash: 0bb2235eebfcb6cc85172a286ed4f0f9b24112fda5f6c3246552bc2c8297bcc8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 268fcc1239370d55a112c60192fb37f42df2203b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819888"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58243983"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Información general sobre la importación de archivos PST de su organización
 
@@ -62,7 +62,7 @@ A continuación, le presentamos una ilustración y una descripción del proceso 
 
     - **Envío de discos:** la herramienta WAImportExport.exe (descargada en el paso 1) le permite copiar los archivos PST en la unidad de disco duro. Esta herramienta cifra la unidad de disco duro con BitLocker y, a continuación, copia los PST a la unidad de disco duro. Como en la carga por red, los archivos PST que desea copiar al disco duro deben encontrarse en un recurso compartido de archivos o en un servidor de archivos de su organización.
 
-3. **Crear un archivo de asignación para importar PST**: una vez que los archivos PST se han cargado en la ubicación de Azure Storage o se han copiado en un disco duro, el siguiente paso es crear un archivo de valores separados por comas (CSV) que especifique qué buzones de usuario se usarán para importar los archivos PST (un archivo PST se puede importar al buzón principal de un usuario o a su buzón de archivo). El servicio de importación de Office 365 usará la información para importar los archivos PST.
+3. **Crear un archivo de asignación para importar PST**: una vez que los archivos PST se han cargado en la ubicación de Azure Storage o se han copiado en un disco duro, el siguiente paso es crear un archivo de valores separados por comas (CSV) que especifique qué buzones de usuario se usarán para importar los archivos PST (un archivo PST se puede importar al buzón principal de un usuario o a su buzón de archivo). [Descargue una copia del archivo de asignación de importación de PST](https://go.microsoft.com/fwlink/p/?LinkId=544717). El servicio de importación de Office 365 usará la información para importar los archivos PST.
 
 4. **Crear un trabajo de importación de PST**: el siguiente paso es crear un trabajo de importación de PST en la página **Importar archivos PST** del Centro de seguridad y cumplimiento, y enviar el archivo de asignación de importación de PST creado en el paso anterior. Para la carga en la red (debido a que los archivos PST se han cargado en Azure), Microsoft 365 analiza los datos de los archivos PST y, a continuación, le permite establecer filtros para controlar qué datos se importan a los buzones especificados en el archivo de asignación de importación de PST.
 
@@ -221,7 +221,7 @@ Además, para crear trabajos de importación en el Centro de seguridad y cumplim
 
 #### <a name="where-is-drive-shipping-available"></a>¿Dónde está disponible el envío de unidades?
 
-El envío de unidades está disponible actualmente en Estados Unidos, Canadá, Brasil, Reino Unido, Europa, India, Asia Oriental, Asia Suroriental, Japón, República de Corea y Australia. Próximamente, el envío de unidades estará disponible en más regiones.
+El envío de unidades está disponible actualmente en Estados Unidos, Canadá, Brasil, Reino Unido, Europa, India, Asia Pacífico, Sudeste de Asia, Japón, República de Corea, Australia y Sudáfrica. Próximamente, el envío de unidades estará disponible en más regiones.
 
 > [!NOTE]
 > En este momento, el envío de unidades para importar archivos PST no está disponible en Alemania y Suiza. Estas preguntas más frecuentes se actualizarán cuando se disponga de envío de unidades en estos países.

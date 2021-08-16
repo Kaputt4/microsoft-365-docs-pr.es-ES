@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 91891af35def83f21b3db8c7e8fa4b320bef563c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 5aa38bc1209b6ad114892805aef4ee3c462fdf1844775946b86801f2796cb96d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926168"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863516"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Informe en el Antivirus de Windows Defender
 

@@ -1,5 +1,5 @@
 ---
-title: Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto, priorizar y administrar incidentes, configurar la investigación y respuesta automatizadas y usar la búsqueda avanzada
+title: Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
 description: Pruebe las capacidades de respuesta a incidentes en Microsoft 365 Defender priorizar y administrar incidentes, automatizar investigaciones y usar la búsqueda avanzada en la detección de amenazas.
 keywords: Microsoft 365 Defender prueba, pruebe Microsoft 365 Defender, evalúe Microsoft 365 Defender, laboratorio de evaluación de Microsoft 365 Defender Microsoft 365 Defender, piloto, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación y corrección automatizadas, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6f8e8ed59c38c00c2158292b343d5ce347ebf297
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: aaf30aa5f598fffc5f8f53fc92fef5571b3c851b0bd9e48ef3ca8b60ad9e5e43
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863323"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
 

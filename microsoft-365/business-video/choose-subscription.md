@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información Microsoft 365 suscripción adecuada para su organización.
-ms.openlocfilehash: ca998be8c51af5caeb648510693effa88f481a9f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f5cf6adffe54ed1930e139bf70c91e8f17b4d501b8c324ceb11512ce81f4b950
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245245"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900643"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Elegir una Microsoft 365 suscripción
 
@@ -48,7 +48,7 @@ Elegir la suscripción Microsoft 365 es clave para sacar el máximo partido al s
 | --- | --- | --- | --- | --- |
 | **Licencias disponibles** | Número máximo de usuarios | 300 | 300 | Ilimitado |
 | **Aplicaciones de Office** | Instalar Office en hasta 5 pc/Mac + 5 smartphones por usuario (Word, Excel, PowerPoint, OneNote, Access), Office Online | Business | Business | ProPlus |
-| **Calendario de &amp; correo electrónico** | Outlook, Exchange Online | 50 GB | 50 GB | 100 GB |
+| **Calendario de &amp; correo electrónico** | Outlook, Exchange Online | 50 GB | 50 GB | 100 GB |
 | **Centro para el trabajo en equipo** | Área de trabajo basada en chat, reuniones en línea y mucho más en Microsoft Teams | Sí | Sí | Sí |
 | **Almacenamiento de archivos.** | OneDrive para la Empresa | 1 TB por usuario | 1 TB por usuario | Ilimitado |
 | **Redes sociales, vídeo, sitios** | Stream, Yammer, Planner, SharePoint Online \* , PowerApps \* , Microsoft Flow\* | Sí | Sí | Sí |
@@ -62,7 +62,7 @@ Elegir la suscripción Microsoft 365 es clave para sacar el máximo partido al s
  | Derechos de actualización Windows 10 Pro para licencias de Pro Win 7/8.1 | | No | Sí | No |
  | Windows Virtual Desktop | | No | Sí | No |
 | **Protección de la información** | Office 365 de pérdida de datos | No | Sí | Sí |
- | Azure Information Protection Plan 1, BitLocker cumplimiento | | No | Sí | No |
+ | Plan 1 de Azure Information Protection, cumplimiento de BitLocker | | No | Sí | No |
 | **Derechos de CAL locales** | Suite ECAL (Exchange, SharePoint, Skype) | No | No | Sí |
 | **Cumplimiento** | Archivado de correo electrónico ilimitado\*\*\* | No | Sí | Sí |
 

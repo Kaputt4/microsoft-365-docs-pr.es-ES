@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Obtenga información sobre listas de Microsoft. Con listas de Microsoft, puede realizar un seguimiento de los detalles del cliente, como el tipo de cliente, el cumplimiento del pedido y el progreso del pedido.
-ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3f427e32bf0b8ce6933eedd56bb3fac8e7e5d2ae3da667f8c7e8d5d95c00931f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900588"
 ---
 # <a name="use-microsoft-lists-to-track-business-info"></a>Usar listas de Microsoft para realizar un seguimiento de la información empresarial
 

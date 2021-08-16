@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2354a6b86f88ac8d49956677d318700c8e104719
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 05ea44a0ffdf66a96c9915ca84639033bc59be7e946263ec2332b902e6d17daf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53588142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863636"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Crear indicadores basados en certificados
 

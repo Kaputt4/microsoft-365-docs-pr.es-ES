@@ -15,19 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtén información sobre cómo configurar Microsoft 365 para que esté listo para la migración desde Google Workspace.
-ms.openlocfilehash: 42b8cd86ec03c4d4b43a4d32a1cee56e94bb7147
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 231847c9d3a0b34e4422a8e2f8fb93bc59e0c39f3e01be42b0c0c71ea8963a2a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928191"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831628"
 ---
 # <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Configurar Microsoft 365 para la migración de Google Workspace
 
@@ -38,7 +37,7 @@ Para migrar el correo electrónico, el calendario y los contactos desde Google W
 ## <a name="try-it"></a>¿Se atreve? 
 
 1. Inicie sesión en [office.com](https://office.com)y elija **Administrador**.
-1. En el centro Microsoft 365 administración, elija **Ir a configuración guiada**. 
+1. En la Centro de administración de Microsoft 365, elija **Ir a configuración guiada**. 
 1. Opcionalmente, instale Office aplicaciones y, a continuación, **seleccione Continuar**. 
 1. Dado que está migrando desde Google Workspace, elija el dominio predeterminado y **seleccione Usar este dominio**. 
 1. Escriba los nombres de usuario y los nombres de usuario deseados, compruebe su dirección de correo electrónico para que pueda recibir las contraseñas de su usuario y, a continuación, seleccione Agregar usuarios y **asignar licencias.** 

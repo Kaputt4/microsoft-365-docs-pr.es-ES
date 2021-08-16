@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 5f339d999f45cdd756e8d9170b2ac784062c003c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ffcb986198cbe672b935980aea39f340bab947b9f3ba21ad890feadf6cc8f2ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657332"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863684"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -110,7 +110,7 @@ Puedes revisar el registro Windows eventos para ver los eventos que se crean cua
 2. Escriba **Visor de** eventos en el menú Inicio para abrir el visor Windows eventos.
 3. En el panel izquierdo, en **Acciones**, seleccione **Importar vista personalizada...**.
 4. Navegue hasta donde ha extraído *cfa-events.xml* y selecciónelo. Como alternativa, [copie el XML directamente](event-views.md).
-5. Haga clic en **Aceptar**.
+5. Seleccione **Aceptar**.
 
 En la tabla siguiente se muestran los eventos relacionados con el acceso controlado a carpetas:
 

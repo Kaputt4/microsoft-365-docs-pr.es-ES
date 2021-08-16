@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9855a7aa8af9d380f192285ddbdb5c30a7a734d4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: dde4eef3382c3a1c5e22a78b1965c30b46c9749dcb847c707ea418898aa7a3e5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863558"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo eliminar usuarios en Microsoft 365 para empresas.
-ms.openlocfilehash: 8b2f0db242197aecb04df2261caac3688ad4f1b2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 2f0d470bc7855a5f3a57dd431fe11aac1525475710721585771f1959853ba50f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900606"
 ---
 # <a name="delete-a-user"></a>Eliminar un usuario
 

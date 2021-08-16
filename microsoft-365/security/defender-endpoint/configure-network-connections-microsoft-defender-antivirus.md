@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 5b6ed22b38d0795073fc72f380bcad89683ada9c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2facf41d8d2f695c67b7609fe8aec222413ba23c855b94d8b1d1ecd0da177173
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863703"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
