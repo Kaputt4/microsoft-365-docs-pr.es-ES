@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Habilite el uso compartido de calendarios en el Centro de administración de Microsoft 365 para que los usuarios puedan compartir sus calendarios con cualquier persona dentro o fuera de la organización.
-ms.openlocfilehash: ed0ee14c37f5c23d262d98408114143a3f84803ba8830461a659b4dc6c010902
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3183eb9f45333e26685c09d586b5f3c5137a4a56
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824592"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346753"
 ---
 # <a name="share-calendars-with-external-users"></a>Compartir calendarios con usuarios externos
 
@@ -41,9 +41,7 @@ Puede habilitar el uso compartido de calendarios para todos los usuarios de la o
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Habilitar el uso compartido de calendarios mediante el Centro de administración de Microsoft 365
 
-1. En el Centro de administración, vaya **a Configuración** \> **Org Configuración**.
-
-2. En la **pestaña Servicios,** seleccione **Calendario**.
+1. En el Centro de administración, vaya **a Configuración** configuración de la organización y, en la pestaña \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">  Servicios,</a>seleccione **Calendario**.
   
 3. En la **página** Calendario, elija si desea permitir que los usuarios compartan sus calendarios con personas fuera de su organización que Microsoft 365 o Exchange. Elige si quieres permitir que los usuarios anónimos (usuarios sin credenciales) accedan a los calendarios a través de una invitación por correo electrónico.
 

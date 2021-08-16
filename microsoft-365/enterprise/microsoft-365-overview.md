@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Brinda una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: 19bc4763f60fae1db914ab7c1f10354e7904cb50
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e6077427c642e30809b2da140eac00ea03737ca3b62cd498514b1ade4ec0caa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899275"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 para empresas
 
@@ -33,7 +33,7 @@ Microsoft 365 para empresas consiste en lo siguiente:
 |Servicios|Descripción|
 |---|---|
 |Aplicaciones locales y basadas en la nube, y servicios de productividad|Incluye tanto las aplicaciones de Microsoft 365 para empresas como las aplicaciones de Office más recientes para su equipo PC y Mac (por ejemplo, Word, Excel, PowerPoint, Outlook, etc.) y un conjunto completo de servicios en línea para el correo electrónico, el almacenamiento de archivos y la colaboración, reuniones, entre otros.|
-|Windows 10 Enterprise|Satisface las necesidades de organizaciones grandes y medianas. Es la versión más productiva y segura de Windows para los usuarios. Para los profesionales de IT, también proporciona una administración completa de implementación, dispositivos y aplicaciones.|
+|Windows 10 Enterprise|Satisface las necesidades tanto de las organizaciones grandes como de las medianas. Se trata de la versión más productiva y segura de Windows tanto para usuarios como para profesionales de IT, a los que proporciona una administración completa de aplicaciones, dispositivos e implementación.|
 |Servicios de seguridad avanzada y administración de dispositivos|Incluye Microsoft Intune, un servicio de administración de movilidad empresarial basado en la nube que ayuda a los empleados a ser productivos mientras protegen los datos de su organización.|
 |||
 
@@ -94,7 +94,7 @@ El soporte técnico para [SharePoint Server 2010](upgrade-from-sharepoint-2010.m
 
 Para obtener un resumen visual de las opciones de actualización, migración y desplazamiento a la nube de estos productos, vea el [póster de fin de soporte técnico.](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-[![Imagen de final del soporte técnico para servidores y clientes de Office 2010 y póster de Windows 7](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Imagen de final del soporte técnico para servidores y clientes de Office 2010 y póster de Windows 7](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 En este póster de una página verá de forma rápida las distintas rutas para evitar que finalice el soporte técnico de los productos de cliente y servidor de Windows 7 y Office 2010. Se han resaltado las rutas de acceso preferentes y la compatibilidad con las opciones de Microsoft 365 para empresas.
 
@@ -124,7 +124,7 @@ Para obtener un ejemplo de cómo una organización multinacional ficticia pero r
 
   Obtenga las mejores funciones de productividad y colaboración de su clase con las soluciones de seguridad y administración de dispositivos para proteger los datos del negocio para empresas pequeñas y medianas.
 
-- [Microsoft 365 Educación](/education)
+- [Microsoft 365 Educación](/education)
 
   Permite a los profesores impulsar la creatividad, fomentar el trabajo en equipo y proporcionar una experiencia segura y sencilla en una única solución asequible diseñada para el ámbito educativo.
 
@@ -134,7 +134,7 @@ Para obtener un ejemplo de cómo una organización multinacional ficticia pero r
 
 ## <a name="best-together-with-surface-and-the-edge-browser"></a>Mejor con Surface y el explorador Microsoft Edge
 
-Optimice la productividad segura y integrada de su usuario con la combinación óptima de Microsoft 365 para empresas, dispositivos Microsoft Surface y el explorador Microsoft Edge. Esta integración entre productos proporciona:
+Optimice la productividad segura e integrada del usuario con la combinación óptima de Microsoft 365 para empresas, dispositivos Microsoft Surface y el explorador Microsoft Edge. Esta integración de productos le proporciona:
 
 - Una infraestructura de seguridad de identidad e inicio de sesión común.
 - Aplicaciones locales y en la nube integradas para búsquedas, colaboración, productividad y cumplimiento.

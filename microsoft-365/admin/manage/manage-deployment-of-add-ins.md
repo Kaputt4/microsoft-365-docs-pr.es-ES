@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para usuarios y grupos de su organización mediante la implementación centralizada en el Centro de administración.
-ms.openlocfilehash: cc2051bf28dca082c3468fd2c292eff23c4e857e4b896ccfd03f78e5bb53552e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65f7d6c292d351a25b2d5ba499bd3791f5b260e8
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825300"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346801"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Implementar complementos en el centro de administración
 
-Los complementos de Office le ayudan a personalizar los documentos y simplificar la forma en que accede a la información en la web (vea [Empezar a usar el complemento de Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Como administrador, puede implementar Office complementos para los usuarios de su organización mediante la característica Implementación centralizada en el Centro de administración de Microsoft 365. La implementación centralizada es la forma recomendada y con más características para que la mayoría de los administradores implemente complementos para usuarios y grupos dentro de una organización.
+Los complementos de Office le ayudan a personalizar los documentos y simplificar la forma en que accede a la información en la web (vea [Empezar a usar el complemento de Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Como administrador, puede implementar Office complementos para los usuarios de su organización mediante la característica Implementación centralizada en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. La implementación centralizada es la forma recomendada y con más características para que la mayoría de los administradores implemente complementos para usuarios y grupos dentro de una organización.
 
 Para obtener más información sobre cómo determinar si su organización puede admitir la implementación centralizada, vea [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
 

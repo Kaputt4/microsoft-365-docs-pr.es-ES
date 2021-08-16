@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Antes de poder usar Microsoft 365 con el dispositivo, es posible que deba inscribirlo primero en Movilidad básica y seguridad para Microsoft 365.
-ms.openlocfilehash: 65f3d224b6dd3832416d1f1c1b9d9a6d933f3305a419abebe997a4fb765a5989
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3bc3980b0716276acaaef172c04b6e742b4f8f7f
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826776"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346945"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Inscribir el dispositivo móvil con movilidad básica y seguridad
 
@@ -32,7 +32,7 @@ Usar el teléfono, la tableta y otros dispositivos móviles para trabajar es una
 Las organizaciones eligen Movilidad básica y seguridad para que los empleados puedan usar sus dispositivos móviles para acceder de forma segura al correo electrónico, calendarios y documentos del trabajo, mientras que la empresa protege los datos importantes y cumple sus requisitos de cumplimiento.Para obtener más información, vea [Overview of Basic Mobility and Security for Microsoft 365](overview.md). Para obtener más información, consulta ¿Qué información puede [ver mi organización cuando inscribo mi dispositivo?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 > [!IMPORTANT]
-> Al inscribir el dispositivo en Movilidad básica y seguridad para Microsoft 365, es posible que deba configurar una contraseña, además de permitir que la organización del trabajo borre el dispositivo. Se puede realizar una eliminación del dispositivo desde el Centro de administración de Microsoft 365, por ejemplo, para quitar todos los datos del dispositivo si la contraseña se introduce incorrectamente demasiadas veces o si se rompen los términos de uso.
+> Al inscribir el dispositivo en Movilidad básica y seguridad para Microsoft 365, es posible que deba configurar una contraseña, además de permitir que la organización del trabajo borre el dispositivo. Se puede realizar una eliminación del dispositivo desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365,</a>por ejemplo, para quitar todos los datos del dispositivo si la contraseña se introduce incorrectamente demasiadas veces o si se rompen los términos de uso.
 
 ## <a name="supported-devices"></a>Dispositivos admitidos
 
@@ -77,6 +77,6 @@ Vaya a la Microsoft Store y descargue e instale Portal de empresa de Intune
 
 Para conectar y configurar el Windows teléfono o equipo con el portal de la empresa para Microsoft 365, consulte Windows inscripción de [dispositivos en Portal de empresa de Intune](/intune-user-help/windows-enrollment-company-portal).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de inscribir el dispositivo en Movilidad y seguridad básicas, puedes empezar a usar Office aplicaciones en el dispositivo para trabajar con correo electrónico, calendario, contactos y documentos.

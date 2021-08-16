@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Información general sobre la planeación, la implementación y el funcionamiento continuo de los Microsoft 365 inquilinos.
-ms.openlocfilehash: 7cc7ead75781ab2d8ac4776e3f6075de89fef8db
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 18a4f4f39b2c3fd530aecb9202032a2b571a9c7f4cf38fec489dfa88a81a2a98
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883244"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Administración de inquilinos para Microsoft 365 para empresas
 
@@ -136,7 +136,7 @@ En las siguientes secciones y tabla se indican las funciones clave y las licenci
 |Movilidad y seguridad básicas|Protege y administra los dispositivos móviles de tus usuarios como iPhones, iPads, Androids y Windows teléfonos con este servicio integrado.|Microsoft 365 E3 o E5|
 ||||
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Siga estos pasos para configurar y administrar sus Microsoft 365 inquilinos.
 

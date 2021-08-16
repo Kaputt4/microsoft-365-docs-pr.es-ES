@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a administrar Microsoft 365 grupos, incluida la adición de miembros de grupo de eliminación, la edición de la dirección de correo electrónico, el nombre del grupo o la descripción, y la personalización del funcionamiento del grupo.
-ms.openlocfilehash: f568ef170125c72a8280a354091f9a3f18b65069d33dc455f31671d8ec8b16ae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6bdab4d473433622326e96b8f1e561a30eec1e80
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826504"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346861"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Administrar un grupo en el Centro de administración de Microsoft 365
 
@@ -34,7 +34,7 @@ Vaya a la Centro de administración de Microsoft 365 en [https://admin.microsoft
 
 ## <a name="edit-the-group-name-or-description"></a>Editar el nombre o la descripción del grupo
 
-1. En el Centro de administración, expanda **Grupos** y, a continuación, haga clic en **Grupos**.
+1. En el Centro de administración, expanda **Grupos** y, a continuación, haga clic en <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupos**</a>.
 
 2. Seleccione el grupo que desea editar y, a continuación, haga clic **en Editar nombre y descripción.**
 
@@ -42,7 +42,7 @@ Vaya a la Centro de administración de Microsoft 365 en [https://admin.microsoft
 
 ## <a name="manage-group-owners-and-members"></a>Administrar miembros y propietarios de grupos
 
-1. En el Centro de administración, expanda **Grupos** y, a continuación, haga clic en **Grupos**.
+1. En el Centro de administración, expanda **Grupos** y, a continuación, haga clic en <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupos**</a>.
 
 2. Haga clic en el nombre del grupo que desea administrar para abrir el panel de configuración.
 
@@ -60,7 +60,7 @@ Al activar esta configuración, los miembros del grupo recibirán una copia de l
 
 Los miembros del grupo pueden optar por no recibir estos correos electrónicos si deciden dejar de seguir al grupo en Outlook.
 
-1. En el Centro de administración, expanda **Grupos** y, a continuación, haga clic en **Grupos**.
+1. En el Centro de administración, expanda **Grupos** y, a continuación, haga clic en <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupos**</a>.
 
 2. Haga clic en el nombre del grupo que desea administrar para abrir el panel de configuración.
 
@@ -72,7 +72,7 @@ Los miembros del grupo pueden optar por no recibir estos correos electrónicos s
 
 Esta opción es excelente si desea tener una dirección de correo electrónico de la empresa como info@contoso.com.
  
-1. En el Centro de administración, expanda **Grupos** y, a continuación, haga clic en **Grupos**.
+1. En el Centro de administración, expanda **Grupos** y, a continuación, haga clic en <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupos**</a>.
 
 2. Haga clic en el nombre del grupo que desea administrar para abrir el panel de configuración.
 

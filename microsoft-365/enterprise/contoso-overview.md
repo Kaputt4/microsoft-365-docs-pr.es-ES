@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender Contoso Corporation como un negocio y la estructura en niveles de sus oficinas en todo el mundo.
-ms.openlocfilehash: b0c00ed5657d914851f28278a2f4cf80660b53b0
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: dc3d939895a5eedc0bf5f66a0226486bd2fa97cd15fb05aa9329a1cfbce644d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754273"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899394"
 ---
 # <a name="overview-of-contoso-corporation"></a>Información general sobre Contoso Corporation
 
@@ -73,7 +73,7 @@ Los arquitectos de TI de Contoso identificaron los siguientes factores de requis
 
 Obtenga información sobre la infraestructura de [TI](contoso-infra-needs.md) local de Contoso Corporation y cómo se abordan las necesidades empresariales de la empresa con Microsoft 365 empresa.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 

@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Obtenga información sobre cómo administrar las contraseñas Microsoft 365 cuenta de usuario.
-ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ac83ef8a52bd0f0c3a6a8d1c0164c6eb6c0a4f4b20045d5c23ad2c1fb7a6b6da
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905097"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899312"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>Administrar Microsoft 365 contraseñas de cuenta de usuario
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede administrar las contraseñas Microsoft 365 cuenta de usuario de varias maneras diferentes, según la configuración de la identidad. Puede administrar cuentas de usuario en el Centro de administración de [Microsoft 365](../admin/add-users/index.yml), en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de Azure Active Directory (Azure AD).
+Puede administrar las contraseñas Microsoft 365 cuenta de usuario de varias maneras diferentes, según la configuración de la identidad. Puede administrar cuentas de usuario en [el Centro de administración de Microsoft 365](../admin/add-users/index.yml), en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de Azure Active Directory (Azure AD).
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planear dónde y cómo administrará las contraseñas de la cuenta de usuario
 

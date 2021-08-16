@@ -17,12 +17,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: En este artículo, obtenga información sobre cómo usar PowerShell para Microsoft 365 administrar las tenencias de los clientes.
-ms.openlocfilehash: 96c2c148b64d638ea977922f6a0ae3d5e23a8ace
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2bbe59f5c5c27830569be2c357a586152ced849c62de0b62e3d29fcc6d926d37
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289108"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899324"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Administrar Microsoft 365 inquilinos con Windows PowerShell para asociados de permisos de acceso delegado (DAP)
 
@@ -31,7 +31,7 @@ ms.locfileid: "53289108"
 Windows PowerShell permite a los partners de Syndication y Proveedor de soluciones en la nube (CSP) administrar e informar fácilmente sobre la configuración de arrendamiento de clientes que no están disponibles en el Centro de administración de Microsoft 365. Tenga en cuenta que los permisos Administrar en nombre de (AOBO) son necesarios para que la cuenta de administrador del asociado se conecte a los inquilinos del cliente.
 
 Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Con frecuencia son los proveedores de red o de telecomunicaciones para otras compañías. Agrupan Microsoft 365 suscripciones en sus ofertas de servicio a sus clientes. Cuando venden una suscripción Microsoft 365, se les conceden automáticamente permisos Administrar en nombre de (AOBO) a las tenencias del cliente para que puedan administrar e informar sobre las tenencias del cliente.
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 Los procedimientos de este tema requieren que se conecte a [Conectar a Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md).
 

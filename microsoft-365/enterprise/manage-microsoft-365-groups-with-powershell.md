@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: En este artículo, obtenga información sobre cómo realizar tareas de administración comunes para Microsoft 365 en PowerShell.
-ms.openlocfilehash: 22bf4d1f3187746483d8d904378e675562a62142
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 48555dd41ff18941a6cbce3ef9f25cb5e3727735c7c7cedfe1e6050556e96dfb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730563"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899432"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Administrar Microsoft 365 grupos con PowerShell
 
@@ -48,7 +48,7 @@ Use powershell Azure Active Directory (Azure AD) para apuntar a los usuarios a l
 ## <a name="allow-users-to-send-as-the-microsoft-365-group"></a>Permitir que los usuarios envíen como grupo Microsoft 365 usuario
 <a name="BK_LinkToGuideLines"> </a>
 
-Si desea habilitar los grupos de Microsoft 365 para "Enviar como", use los cmdlets [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission) y [Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission) para configurar esto. Una vez que habilite esta configuración, Microsoft 365 usuarios del grupo pueden usar Outlook o Outlook en la web para enviar y responder al correo electrónico como grupo Microsoft 365 usuario. Los usuarios pueden ir al grupo, crear un nuevo correo electrónico y cambiar el campo "Enviar como" a la dirección de correo electrónico del grupo.
+Si desea habilitar los grupos de Microsoft 365 para "Enviar como", use los cmdlets [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission) y [Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission) para configurar esto. Una vez que habilite esta configuración, Microsoft 365 usuarios del grupo pueden usar Outlook o Outlook en la Web para enviar y responder al correo electrónico como grupo Microsoft 365 grupo. Los usuarios pueden ir al grupo, crear un nuevo correo electrónico y cambiar el campo "Enviar como" a la dirección de correo electrónico del grupo.
 
 ([También puede hacerlo en el Centro](/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)Exchange administración .)
 
@@ -62,7 +62,7 @@ $groupsRecipientDetails = Get-Recipient -RecipientTypeDetails groupmailbox -Iden
 Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAlias -AccessRights SendAs
 ```
 
-Una vez ejecutado el cmdlet, los usuarios pueden ir a Outlook o Outlook en la web para enviarlo como grupo, agregando la dirección de correo electrónico del grupo al **campo** De.
+Una vez ejecutado el cmdlet, los usuarios pueden ir a Outlook o Outlook en la Web para enviar como el grupo, agregando la dirección de correo electrónico del grupo al **campo** De.
 
 ## <a name="create-classifications-for-microsoft-365-groups-in-your-organization"></a>Crear clasificaciones para grupos Microsoft 365 de la organización
 
@@ -150,7 +150,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>Cambiar el nombre para mostrar del Microsoft 365 grupo
 
-El nombre para mostrar especifica el nombre del Microsoft 365 grupo. Puede ver este nombre en el Centro de administración de Exchange o en Microsoft 365 de administración. Puede editar el nombre para mostrar del grupo o asignar un nombre para mostrar a un grupo de Microsoft 365 existente ejecutando el comando Set-UnifiedGroup usuario:
+El nombre para mostrar especifica el nombre del Microsoft 365 grupo. Puede ver este nombre en el Centro de administración de Exchange o Centro de administración de Microsoft 365. Puede editar el nombre para mostrar del grupo o asignar un nombre para mostrar a un grupo de Microsoft 365 existente ejecutando el comando Set-UnifiedGroup usuario:
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"

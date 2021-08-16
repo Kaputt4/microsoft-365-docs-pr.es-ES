@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Con Microsoft 365, puede impulsar el trabajo en equipo en Microsoft 365, ya que proporciona a un grupo de personas acceso a una colección de recursos compartidos.
-ms.openlocfilehash: f054578e13fb4ee43aa158f615d3a2810769d6982981fcd534bb4ca8d234a70c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d6e8d394cf659d511a0ab069911d00c18428a1c
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826452"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346837"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Información general de los grupos de Microsoft 365 para administradores
 
@@ -54,7 +54,7 @@ Los grupos tienen los siguientes roles:
 - **Miembros:** los miembros pueden tener acceso a todo el grupo, pero no pueden cambiar la configuración del grupo. De forma predeterminada, los miembros del grupo pueden invitar a los invitados a unirse a su grupo, aunque puede [controlar esa configuración](manage-guest-access-in-groups.md).
 - **Invitados:** los invitados de grupo son miembros que son de fuera de la organización.
 
-Solo los administradores globales, los administradores de usuarios y los grupos pueden crear y administrar grupos en el Centro de administración de Microsoft 365. No puede ser un administrador delegado (por ejemplo, un consultor que sea un administrador en nombre de alguien).
+Solo los administradores globales, los administradores de usuarios y los grupos pueden crear y administrar grupos en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Centro de administración de Microsoft 365</a>. No puede ser un administrador delegado (por ejemplo, un consultor que sea un administrador en nombre de alguien).
 
 Como administrador, puede:
 

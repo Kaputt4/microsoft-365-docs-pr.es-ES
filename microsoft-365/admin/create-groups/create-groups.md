@@ -23,23 +23,23 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a crear y eliminar Microsoft 365 grupos, agregar y quitar miembros del grupo y personalizar el funcionamiento del grupo.
-ms.openlocfilehash: 98e4243705a027ab660099a4a1fbce470a9844d83b8f62715b6c62d2dde9d207
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 07546d32c8bd55ae1548b8f690d046e6b319bf87
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826512"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346873"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Crear un grupo en el Centro de administración de Microsoft 365
   
-Aunque los usuarios pueden crear un grupo Microsoft 365 desde Outlook u otras aplicaciones, como administrador, es posible que deba crear o eliminar grupos, agregar o quitar miembros y personalizar su forma de trabajar. El Centro de administración de Microsoft 365 es el lugar para hacerlo. 
+Aunque los usuarios pueden crear un grupo Microsoft 365 desde Outlook u otras aplicaciones, como administrador, es posible que deba crear o eliminar grupos, agregar o quitar miembros y personalizar su forma de trabajar. El <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Centro de administración de Microsoft 365</a> es el lugar para hacerlo. 
 
 > [!TIP]
 > Microsoft 365 los Yammer conectados deben crearse en Yammer, pero se pueden administrar en el Centro de administración de Microsoft 365 como otros Microsoft 365 grupos. Para obtener más información, [vea Yammer y Microsoft 365 grupos](/yammer/manage-yammer-groups/yammer-and-office-365-groups). 
 
 ## <a name="create-a-microsoft-365-group"></a>Crear un Grupo de Microsoft 365 
 
-1. En el Centro de administración, expanda **Grupos** y, a continuación, haga clic en **Grupos**.
+1. En el Centro de administración, expanda **Grupos** y, a continuación, haga clic en <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupos**</a>.
 
 2. Seleccione **Agregar un grupo**.
   
@@ -81,7 +81,7 @@ Un miembro puede eliminar una conversación de correo electrónico de la bandeja
   
 Cuando se elimina un correo electrónico del buzón de grupo, no se elimina de ninguno de los buzones personales de los miembros del grupo.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de crear un nuevo grupo y agregar miembros, puede configurar aún más el grupo, como editar el nombre o la descripción del grupo, cambiar los propietarios o miembros, y especificar si los remitentes externos pueden enviar un correo electrónico al grupo y si deben enviar copias de conversaciones de grupo a los miembros. Consulte [Administrar un grupo Microsoft 365 para](manage-groups.md) obtener información.
 

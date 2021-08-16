@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Las publicaciones del centro de mensajes solo están en inglés, pero se pueden mostrar automáticamente en el idioma que especifique para Microsoft 365.
-ms.openlocfilehash: ab0819b22e6f046af401ced778a8f9c06f43e4569f42f0ca7caef62130a154a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7256fe69fb010ce2c3bf77c99de91a4ee42285a7
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825336"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346813"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traducción de idioma para publicaciones del Centro de mensajes
 
@@ -38,7 +38,7 @@ Las publicaciones del Centro de mensajes se escriben solo en inglés debido a la
   
 ## <a name="set-your-preferred-language"></a>Establezca el idioma de su preferencia
 
-1. Desde el Centro de administración de Microsoft 365 o la página de inicio, seleccione el icono de configuración en la esquina superior derecha de la ventana.
+1. En la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> o página principal, seleccione el icono de configuración en la esquina superior derecha de la ventana.
   
 2. En **Idioma y zona horaria**, seleccione **Ver todo** mostrar las opciones disponibles. Seleccione el idioma que quiera en el menú desplegable y, después, **Guardar**. Microsoft 365 intentará actualizar y mostrar el nuevo idioma. Si esto no se produce de forma inmediata o si parece que tarda demasiado tiempo, puede actualizar el explorador o cerrar la sesión y, después, volver a iniciarla.
   

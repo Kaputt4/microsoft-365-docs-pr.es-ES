@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Obtenga información sobre cómo configurar la opción de lanzamiento para nuevas actualizaciones de productos y características en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 69cae62a2a468c27a210a5db65d1858046b758859c2dae0ed4ab90c1acf78d9c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c9a3478c15ad5505bae73b6821fc8ed9511f9b3e
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825048"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346789"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurar las opciones de versión estándar o dirigida
 
@@ -95,7 +95,7 @@ Puede cambiar el modo en que su organización recibe Microsoft 365 actualizacion
 > [!IMPORTANT]
 > Los cambios siguientes pueden tardar hasta 24 horas en tener efecto en Microsoft 365. Si opta por una opción distinta a la versión dirigida después de activarlo, puede que los usuarios pierdan el acceso a características que todavía no han alcanzado la versión programada. 
   
-1. En el Centro de administración, vaya a la configuración Configuración organización y, en la pestaña Perfil de la  >  organización, elija **Preferencias de versión.** 
+1. En el Centro de administración, vaya a la configuración Configuración organización y, en la pestaña Perfil de la  >  organización, elija **Preferencias de versión.** <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"></a>
 
 5. Para deshabilitar la versión dirigida, seleccione **Versión estándar** y, a continuación, seleccione **Guardar cambios**. 
     
@@ -107,7 +107,7 @@ Puede cambiar el modo en que su organización recibe Microsoft 365 actualizacion
     
 9. Cuando haya terminado de agregar usuarios, seleccione **Guardar cambios**.
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Descubra cómo administrar [mensajes en](/office365/admin/manage/message-center) su centro de [Microsoft 365 mensajes](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) para obtener notificaciones acerca de las próximas Microsoft 365 actualizaciones y versiones.
 
