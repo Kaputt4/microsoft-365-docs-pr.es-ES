@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Registrarse paso a paso para Microsoft 365 para campañas. Proteja su campaña de las amenazas de ciberseguridad al correo electrónico, los datos y la comunicación.
-ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: eaba43a9163b4ee1db5b653b04c0eedea7716297e510edd4eb5926b41a554bda
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398222"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881722"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrarse para obtener Microsoft 365 campañas 
 
@@ -49,7 +49,7 @@ Este es el modo de completar el registro para Microsoft 365 campañas.
 1. En la invitación a Microsoft 365 correo electrónico de campañas, seleccione **INSCRIBIR SU ORGANIZACIÓN >**. Esto te lleva a Microsoft 365 registro.
     > [!NOTE]
     > Si ya tienes una suscripción Microsoft 365 para empresas y quieres agregarle la oferta de Microsoft 365 para campañas, ve a agregar Microsoft 365 para campañas a una suscripción [existente.](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)
-1. **En la Microsoft 365 Empresa,** escriba los detalles de su empresa. Dirección **de correo electrónico para empresas**, use una dirección de correo electrónico actual. Solo necesitamos esta dirección para mantenernos en contacto con usted durante el proceso de configuración. Seleccione **Siguiente**.
+1. **En la página Microsoft 365 Empresa,** escriba los detalles de su empresa. Dirección **de correo electrónico para empresas**, use una dirección de correo electrónico actual. Solo necesitamos esta dirección para mantenernos en contacto con usted durante el proceso de configuración. Seleccione **Siguiente**.
 1. **En la página Crear su id. de usuario**:
     1. En **Nombre de** usuario, escriba el nombre o alias que desea para su dirección de correo electrónico. Por ejemplo, es posible que quieras que te conozcan como Alicia o Rob. En una campaña más grande, AliceC o AliceChavez podrían tener más sentido.
     2. En **Su empresa,** escriba el nombre de la campaña para la que trabaja. Por ejemplo, ContosoCampaign. Si ya tienes un dominio, usa ese nombre aquí. 

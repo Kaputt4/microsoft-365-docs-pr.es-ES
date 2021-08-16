@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Inicie sesión en Microsoft 365. Proteja su empresa, práctica o campaña frente a amenazas de ciberseguridad en el correo electrónico, los datos y la comunicación.
-ms.openlocfilehash: eff81da84853130da2f2dcc0aaaf2a9834477a85
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: f5ef951bd8c0a6024ecbf9ae4ccb38a89bf327b157d672477dbd2de8aa33aac3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398179"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881702"
 ---
 # <a name="sign-in-to-microsoft-365"></a>Inicie sesión en Microsoft 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "51398179"
 Si te has registrado para Microsoft 365, eres el administrador Microsoft 365 usuario. Este es el modo de iniciar sesión:
 
 1. Busque el nombre de usuario y la contraseña que hemos enviado a la dirección de correo electrónico que nos ha dado en el paso 2 de [Pasos para registrarse.](m365-campaigns-sign-up.md#steps-to-sign-up)
-2. En el explorador, vaya al centro Microsoft 365 de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
+2. En el explorador, vaya al Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
 3. Escriba su nombre de usuario y contraseña. Seleccione **Iniciar sesión**.
 4. En la parte superior derecha de la página, busque el control **Vista previa en.** Selecciona **Vista previa para** poder usar todos los controles que se describen en Protección contra actualizaciones para la [campaña](m365-campaigns-security-overview.md).
 

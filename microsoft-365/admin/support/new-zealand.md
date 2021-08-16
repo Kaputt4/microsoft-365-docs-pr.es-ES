@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3c7e8df9833d664810075f335f5413e12ac3c2dc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 5c5774c07c3d38d747903739639cc00f06a315e38709f9369771308dfc4f645a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295678"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831928"
 ---
 # <a name="contact-support-for-new-zealand"></a>Póngase en contacto con el soporte técnico de Nueva Zelanda
 

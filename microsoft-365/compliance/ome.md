@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo enviar y recibir mensajes de correo electrónico cifrados entre personas dentro y fuera de la organización.
-ms.openlocfilehash: 504fa9918636cd596cde0d242083ccb7b9817e69
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 779d23222dd3308ed6464f195cc63ee11da0fc35cf32986c15cc4f7008ac0a97
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927718"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895288"
 ---
 # <a name="message-encryption"></a>Cifrado de mensajes
 
@@ -42,11 +42,11 @@ A continuación, los usuarios pueden cifrar mensajes de correo electrónico y di
 
 Como administrador, también puede definir reglas de flujo de correo para aplicar esta protección. Por ejemplo, puede crear una regla que requiera el cifrado de todos los mensajes dirigidos a un destinatario específico, o que contenga palabras específicas en la línea de asunto, y también especifique que los destinatarios no pueden copiar ni imprimir el contenido del mensaje.
 
-A diferencia de la versión anterior de OME, las nuevas funcionalidades proporcionan una experiencia de remitente unificada, ya sea que envíe correo dentro de la organización o a destinatarios fuera de Microsoft 365. Además, los destinatarios que reciben un mensaje de correo electrónico protegido enviado a una cuenta de Microsoft 365 en Outlook 2016 o Outlook en la web, no tienen que realizar ninguna otra acción para ver el mensaje. Funciona sin problemas. Los destinatarios que usan otros clientes de correo electrónico y proveedores de servicios de correo electrónico también tienen una experiencia mejorada. Para obtener información, vea [Learn about protected messages in Office 365](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) and How do I open a protected [message](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098).
+A diferencia de la versión anterior de OME, las nuevas funcionalidades proporcionan una experiencia de remitente unificada, ya sea que envíe correo dentro de la organización o a destinatarios fuera de Microsoft 365. Además, los destinatarios que reciben un mensaje de correo electrónico protegido enviado a una cuenta de Microsoft 365 en Outlook 2016 o Outlook en la Web, no tienen que realizar ninguna otra acción para ver el mensaje. Funciona sin problemas. Los destinatarios que usan otros clientes de correo electrónico y proveedores de servicios de correo electrónico también tienen una experiencia mejorada. Para obtener información, vea [Learn about protected messages in Office 365](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) and How do I open a protected [message](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098).
 
 Para obtener una lista detallada de las diferencias entre la versión anterior de OME y las nuevas funcionalidades de [OME,](ome-version-comparison.md)vea Comparar versiones de OME .
 
-Cuando alguien envía un mensaje de correo electrónico que coincide con una regla de flujo de correo de cifrado, el mensaje se cifra antes de que se envíe. Todos Microsoft 365 usuarios finales que usan clientes de Outlook para leer correo reciben experiencias de lectura nativas de primera clase para correo cifrado y protegido con derechos, incluso si no están en la misma organización que el remitente. Los Outlook compatibles incluyen Outlook escritorio, Outlook Mac, Outlook móvil en iOS y Android y Outlook en la web (anteriormente conocido como Outlook Web App).
+Cuando alguien envía un mensaje de correo electrónico que coincide con una regla de flujo de correo de cifrado, el mensaje se cifra antes de que se envíe. Todos Microsoft 365 usuarios finales que usan clientes de Outlook para leer correo reciben experiencias de lectura nativas de primera clase para correo cifrado y protegido con derechos, incluso si no están en la misma organización que el remitente. Los Outlook compatibles incluyen Outlook escritorio, Outlook Mac, Outlook móvil en iOS y Android y Outlook en la Web (anteriormente conocido como Outlook Web App).
 
 Los destinatarios de mensajes cifrados que reciben correo cifrado o protegido con derechos enviados a sus cuentas de Outlook.com, Gmail y Yahoo reciben un correo contenedor que los dirige al Portal de OME, donde pueden autenticarse fácilmente con una cuenta de Microsoft, Gmail o credenciales de Yahoo.
 
@@ -78,9 +78,9 @@ Si está listo para empezar a usar las nuevas funcionalidades de OME dentro de s
 
 ## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>Enviar, ver y responder mensajes de correo electrónico cifrado
 
-Con Cifrado de mensajes de Office 365, los usuarios pueden enviar correo electrónico cifrado desde Outlook y Outlook en la web. Además, los administradores pueden configurar reglas de flujo de correo en Microsoft 365 para cifrar automáticamente los mensajes de correo electrónico en función de la coincidencia de palabras clave u otras condiciones.
+Con Cifrado de mensajes de Office 365, los usuarios pueden enviar correo electrónico cifrado desde Outlook y Outlook en la Web. Además, los administradores pueden configurar reglas de flujo de correo en Microsoft 365 para cifrar automáticamente los mensajes de correo electrónico en función de la coincidencia de palabras clave u otras condiciones.
 
-Los destinatarios de mensajes cifrados que están en organizaciones podrán leer esos mensajes sin problemas en cualquier versión de Outlook, incluidos Outlook para PC, Outlook para Mac, Outlook en la web, Outlook para iOS y Outlook para Android. Los usuarios que reciben mensajes cifrados en otros clientes de correo electrónico pueden ver los mensajes en el portal de OME.
+Los destinatarios de mensajes cifrados que están en organizaciones podrán leer esos mensajes sin problemas en cualquier versión Outlook, incluidos Outlook para PC, Outlook para Mac, Outlook en la Web, Outlook para iOS y Outlook para Android. Los usuarios que reciben mensajes cifrados en otros clientes de correo electrónico pueden ver los mensajes en el portal de OME.
 
 Para obtener instrucciones detalladas sobre cómo enviar y ver mensajes cifrados, echa un vistazo a estos artículos.
 

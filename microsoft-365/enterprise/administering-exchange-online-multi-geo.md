@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Obtenga información sobre cómo administrar Exchange Online configuración multige geográfica en su entorno Microsoft 365 con PowerShell.
-ms.openlocfilehash: c8f06318313c4192fc2b3a289727933c5a54f3ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b743c1463456d3683136f99a212b6018f5b28eed6c7076dad524a792320a0edf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905589"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895036"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administración de buzones de correo de Exchange Online en un entorno multigeográfico
 

@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo identificar los diferentes tipos de retención que se pueden colocar en un buzón Exchange Online en Microsoft 365.
-ms.openlocfilehash: 1b7c8d2db782ca811e02783115b621ccba772066
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: 2e781fea46706415525ef9396485310ad15ffc5e600c6664817b8637c84e44b7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895324"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -76,7 +76,7 @@ En la tabla siguiente se describe cómo identificar diferentes tipos de retencio
 
 | Tipo de retención                                                          | Valor de ejemplo                                                                                  | Cómo identificar la retención                                                                                                                                                                                                                                                                                                                     |
 | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Retención por juicio                                                    | `True`                                                                                         | La retención por juicio está habilitada para un buzón cuando la *propiedad LitigationHoldEnabled* está establecida en `True` .                                                                                                                                                                                                                                         |
+| Retención por litigio                                                    | `True`                                                                                         | La retención por juicio está habilitada para un buzón cuando la *propiedad LitigationHoldEnabled* está establecida en `True` .                                                                                                                                                                                                                                         |
 | Retención de exhibición de documentos electrónicos                                                    | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`                                                     | La *propiedad InPlaceHolds* contiene el GUID de cualquier retención asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. Puede indicar que se trata de una retención de exhibición de documentos electrónicos porque el GUID comienza por el `UniH` prefijo (que indica una retención unificada).                                                                                   |
 | Retención en contexto                                                      | `c0ba3ce811b6432a8751430937152491` <br/> o <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`        | La *propiedad InPlaceHolds* contiene el GUID de la In-Place que se coloca en el buzón. Puede saber que se trata de una retención In-Place porque el GUID no empieza con un prefijo o empieza por el `cld` prefijo.                                                                                                               |
 | Microsoft 365 directiva de retención específicamente aplicada al buzón | `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> o <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3` | La propiedad InPlaceHolds contiene GUID de cualquier directiva de retención de ubicación específica que se aplique al buzón. Puede identificar directivas de retención porque el GUID comienza por el `mbx` prefijo `skp` o. El prefijo indica que la directiva de retención se aplica a `skp` Skype Empresarial conversaciones en el buzón del usuario. |
@@ -94,7 +94,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 En la tabla siguiente se describen los diferentes tipos de retenciones de toda la organización y cómo identificar cada tipo en función de los GUID contenidos en la propiedad *InPlaceHolds* al ejecutar el cmdlet **Get-OrganizationConfig.**
 
-| Tipo de retención                                                                                                | Valor de ejemplo                           | Descripción                                                                                                                                                                                                                                                            |
+| Tipo de retención                                                                                                | Valor de ejemplo                           | Description                                                                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Microsoft 365 directivas de retención aplicadas Exchange buzones de correo, Exchange carpetas públicas y Teams chats | `mbx7cfb30345d454ac0a989ab3041051209:2` | Las directivas de retención de toda la organización aplicadas Exchange buzones de correo, Exchange carpetas públicas y chats de 1xN en Microsoft Teams se identifican mediante GUID que comienzan con el `mbx` prefijo. Nota Los chats 1xN se almacenan en el buzón de los participantes de chat individuales.  |
 | Microsoft 365 directiva de retención aplicada a Microsoft 365 grupos y Teams mensajes de canal                | `grp1a0a132ee8944501a4bb6a452ec31171:3` | Las directivas de retención de toda la organización aplicadas Microsoft 365 grupos y mensajes de canal en Microsoft Teams se identifican mediante GUID que comienzan con el `grp` prefijo. Nota Los mensajes de canal se almacenan en el buzón de grupo asociado a un equipo de Microsoft. |
@@ -204,7 +204,7 @@ Para quitar la retención de retraso antes de que expire, puede ejecutar uno (o 
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-O bien:
+O bien
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -218,7 +218,7 @@ Para quitar la retención de retraso en un buzón inactivo, ejecute uno de los s
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-O bien:
+O bien
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
@@ -272,7 +272,7 @@ Si recopila datos del paso anterior, los datos resultantes pueden tener un aspec
 
 Use la tabla siguiente para ayudarle a comprender cada uno de los valores anteriores enumerados en el registro de diagnóstico.
 
-| Valor   | Descripción |
+| Valor   | Description |
 |:------- |:----------- |
 | **ed**  | Indica la fecha de finalización, que es la fecha en que se deshabilitó la directiva de retención. MinValue significa que la directiva aún está asignada al buzón. |
 | **hid** | Indica el GUID de la directiva de retención. Este valor se correlacionará con los GUID recopilados para las directivas de retención explícitas o de toda la organización asignadas al buzón.|

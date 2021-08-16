@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Cómo usar PowerShell para crear cuentas de usuario individuales o Microsoft 365 usuario.
-ms.openlocfilehash: c3676acdec3bbba328809ee1528206bbc44f94f1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c3889c7611d4c0442eeac2e42fcaea0cb71aeb7b8467f8f6e88d11c8ac2fad21
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864812"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Crear Microsoft 365 de usuario con PowerShell
 
@@ -45,7 +45,7 @@ Al crear cuentas de usuario en PowerShell, siempre se requieren determinadas pro
 |**UsageLocation** <br/> |No  <br/> |Se trata de un código de país válido ISO 3166-1 alpha-2. Por ejemplo, *EE.* UU. para Estados Unidos y *FR* para Francia. Es importante proporcionar este valor, ya que algunos Microsoft 365 servicios no están disponibles en determinados países. No puede asignar una licencia a una cuenta de usuario a menos que la cuenta tenga configurado este valor. Para obtener más información, consulte [Sobre las restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
 
 >[!Note]
->[Obtenga información sobre cómo crear cuentas de usuario](../admin/add-users/add-users.md) mediante el centro Microsoft 365 administración.
+>[Obtenga información sobre cómo crear cuentas de usuario](../admin/add-users/add-users.md) mediante el Centro de administración de Microsoft 365.
 > 
 > Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](../admin/add-users/index.yml)
 >   

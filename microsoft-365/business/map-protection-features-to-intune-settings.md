@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Obtenga información sobre cómo las características de protección Microsoft 365 Empresa Premium se asignan a la configuración de Intune. La suscripción le proporciona una licencia para modificar la configuración de Intune.
-ms.openlocfilehash: 9a6dcf014e009389e49860fa96486c264c22f501
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 844b83bca9483f72fd322d666803c42b90fee41d3e0047ea93b4b6b07717b0dd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580122"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852739"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Cómo se asignan las características de protección Microsoft 365 Empresa Premium a la configuración de Intune
 
@@ -104,7 +104,7 @@ Para buscar la configuración de Intune, inicie sesión con las credenciales de 
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |**SmartScreen en** **la configuración del Explorador perimetral** se establece en **Obligatorio**.  <br/> |
 |Desactivar la pantalla del dispositivo cuando esté inactivo durante (minutos)  <br/> |Minutos máximos de inactividad hasta que se bloquea la pantalla (minutos)  <br/> |
 |Permitir a los usuarios descargar aplicaciones desde la Microsoft Store  <br/> |Directiva uri personalizada  <br/> |
-|Permitir a los usuarios acceder a Cortana  <br/> |**General** \> **Cortana** se establece para **bloquear en** Intune cuando se establece en **desactivado** en Microsoft 365 Empresa Premium.  <br/> |
+|Permitir a los usuarios acceder a Cortana  <br/> |**General** \> **Cortana** se establece en **bloquear** en Intune cuando se establece en **desactivado** en Microsoft 365 Empresa Premium.  <br/> |
 |Permitir a los usuarios recibir sugerencias de Windows y anuncios de Microsoft  <br/> |**Windows destacado**, todo bloqueado si se establece en **desactivado** en Microsoft 365 Empresa Premium.  <br/> |
 |Mantener actualizados automáticamente los dispositivos con Windows 10  <br/> | Esta configuración se encuentra en **Microsoft Intune** de servicio de Windows 10, elija Actualizar directiva para dispositivos Windows 10 y, a continuación, \>  **Propiedades**  \> **Configuración**.  <br/>  Cuando la Microsoft 365 Empresa Premium está establecida en **On**, se establecen todas las opciones siguientes:  <br/> **La rama** de servicio se establece en **CB** (CBB cuando está desactivada en Microsoft 365 Empresa Premium).  <br/> **Las actualizaciones de productos** de Microsoft se establecen **en Permitir**.  <br/> **Windows controladores está** establecido en **Permitir**.  <br/> **El comportamiento de actualización** automática se establece en **Instalación automática en tiempo de mantenimiento** con:  <br/> **El inicio después de** las horas se establece **en 6 a. m.**  <br/> **El fin de las** horas activas se establece **en 10 p. m.**  <br/> **El período de aplazamiento de actualización de calidad (días)** se establece en **0**.  <br/> **El período de aplazamiento de** actualización de características (días) se establece en **0**.  <br/> **El modo de descarga de optimización** de entrega se establece en HTTP combinado con emparejamiento **detrás del mismo NAT.**  <br/> |
 |||

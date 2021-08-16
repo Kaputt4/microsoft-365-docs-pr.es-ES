@@ -16,12 +16,12 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: 'Last Updated: May 2017'
-ms.openlocfilehash: 069b47305557ef8a6a4e0a732288977842b52a5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ac7bc50b621930244e7e549c27489436c4bbf6a19302c3cd16310d9f69108b1b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626634"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895300"
 ---
 # <a name="privacy-statement-for-secure-email-portal"></a>Declaración de privacidad de Secure Email Portal
 
