@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de red
-ms.openlocfilehash: c09e34b1bc3a8bf0f82a4a1e3c72e67f320abd43
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: c9533cb4189709ad4e32194371fb0863b4b5fa3f38eb035f7f0bdc505152b731
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470489"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854735"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365 de red
 
-En la conectividad de Microsoft 365 de red del Centro de administración, las evaluaciones de red agregan un agregado de muchas **métricas** de rendimiento de red en una instantánea del estado perimetral de la red empresarial. Una evaluación de red le indica cuánto está afectando el diseño de red responsable del cliente Office 365 experiencia del usuario. Las evaluaciones de red están en el ámbito de todo el espacio empresarial y en cada ubicación geográfica desde la que los usuarios se conectan al espacio empresarial. Las evaluaciones proporcionan a Microsoft 365 administradores una forma sencilla de obtener una idea instantánea del estado de la red de la empresa y profundizar rápidamente en un informe detallado para cualquier ubicación de oficina global.
+En la conectividad Administración de Microsoft 365 red del Centro de administración, las evaluaciones de red agregan un agregado de muchas **métricas** de rendimiento de red en una instantánea del estado perimetral de la red empresarial. Una evaluación de red le indica cuánto está afectando el diseño de red responsable del cliente Office 365 experiencia del usuario. Las evaluaciones de red están en el ámbito de todo el espacio empresarial y en cada ubicación geográfica desde la que los usuarios se conectan al espacio empresarial. Las evaluaciones proporcionan a Microsoft 365 administradores una forma sencilla de obtener una idea instantánea del estado de la red de la empresa y profundizar rápidamente en un informe detallado para cualquier ubicación de oficina global.
 
 El valor de puntos de evaluación de red va de 0 a 100 y es un promedio de métricas de latencia TCP, velocidad de descarga y calidad de conexión UDP. Estas métricas se compilan una vez al día. Las métricas de rendimiento de las redes propiedad de Microsoft se excluyen de estas medidas para garantizar que los resultados de la evaluación sean inequívocos y específicos para la red corporativa.
 
@@ -42,7 +42,7 @@ Un valor de evaluación de red muy bajo sugiere que Microsoft 365 clientes tendr
 | 0                  | Problemas de red un tema común de discusión |
 
 >[!IMPORTANT]
->Los conocimientos de red, las recomendaciones de rendimiento y las evaluaciones del Centro de administración de Microsoft 365 se encuentran actualmente en estado de vista previa y solo están disponibles para los inquilinos Microsoft 365 que se han inscrito en el programa de vista previa de características.
+>Los conocimientos de red, las recomendaciones de rendimiento y las evaluaciones del Centro de Administración de Microsoft 365 se encuentran actualmente en estado de vista previa y solo están disponibles para los inquilinos Microsoft 365 que se han inscrito en el programa de vista previa de características.
 
 ## <a name="network-assessment-panel"></a>Panel de evaluación de red
 
@@ -99,7 +99,7 @@ Calculamos una puntuación media de opinión a partir de estas medidas UDP para 
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Conectividad de red en el Centro Microsoft 365 administración (versión preliminar)](office-365-network-mac-perf-overview.md)
+[Conectividad de red en el Centro de Administración de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 de rendimiento de red (versión preliminar)](office-365-network-mac-perf-insights.md)
 

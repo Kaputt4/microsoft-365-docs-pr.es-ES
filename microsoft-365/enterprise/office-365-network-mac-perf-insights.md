@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Network Insights
+title: Microsoft 365 Red Ideas
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 Network Insights
-ms.openlocfilehash: 10b1c66a8f9aae555c2841b2b290f341bec3c7ec
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+description: Microsoft 365 Red Ideas
+ms.openlocfilehash: ef844598d505e42f4fb99cb52321fc9709dbd4a2411884f7b8b4fff51c3a62d2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854790"
 ---
-# <a name="microsoft-365-network-insights"></a>Microsoft 365 Network Insights
+# <a name="microsoft-365-network-insights"></a>Microsoft 365 Red Ideas
 
-**Los conocimientos de** red son métricas de rendimiento recopiladas Microsoft 365 inquilino y disponibles para que solo las puedan ver los usuarios administrativos de su inquilino. Las perspectivas se muestran en el Centro Microsoft 365 administración en <https://portal.microsoft.com/adminportal/home#/networkperformance> .
+**Los conocimientos de** red son métricas de rendimiento recopiladas Microsoft 365 inquilino y disponibles para que solo las puedan ver los usuarios administrativos de su inquilino. Ideas se muestran en el Centro de Administración de Microsoft 365 en <https://portal.microsoft.com/adminportal/home#/networkperformance> .
 
-Las perspectivas están diseñadas para ayudar a diseñar perímetros de red para las ubicaciones de la oficina. Cada información proporciona detalles en directo sobre las características de rendimiento de un problema común específico para cada ubicación geográfica en la que los usuarios tienen acceso a su espacio empresarial.
+Ideas están diseñadas para ayudar a diseñar perímetros de red para las ubicaciones de la oficina. Cada información proporciona detalles en directo sobre las características de rendimiento de un problema común específico para cada ubicación geográfica en la que los usuarios tienen acceso a su espacio empresarial.
 
 Hay seis perspectivas de red específicas que se pueden mostrar para cada ubicación de la oficina:
 
@@ -43,7 +43,7 @@ Hay dos perspectivas de red de nivel de inquilino que se pueden mostrar para el 
 - [SharePoint conexiones muestreadas afectadas por problemas de conectividad](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
->Los conocimientos de red, las recomendaciones de rendimiento y las evaluaciones del Centro de administración de Microsoft 365 se encuentran actualmente en estado de vista previa y solo están disponibles para los inquilinos Microsoft 365 que se han inscrito en el programa de vista previa de características.
+>Los conocimientos de red, las recomendaciones de rendimiento y las evaluaciones del Centro de Administración de Microsoft 365 se encuentran actualmente en estado de vista previa y solo están disponibles para los inquilinos Microsoft 365 que se han inscrito en el programa de vista previa de características.
 
 ## <a name="backhauled-network-egress"></a>Salida de red backhauled
 
@@ -60,7 +60,7 @@ Esto identifica que la distancia entre la ubicación de la oficina y la salida d
 
 Los detalles de esta información incluyen la ubicación de la oficina, el porcentaje estimado del total de inquilinos en la ubicación, la ubicación de salida de red actual, la relevancia de la ubicación de salida, la distancia entre la ubicación y el punto de salida actual, la fecha en que se detectó la condición por primera vez y la fecha en que se resolvió la condición.
 
-### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
+### <a name="what-should-i-do"></a>¿Qué debo hacer?
 
 Para esta información, recomendamos la salida de red más cerca de la ubicación de la oficina para que la conectividad pueda enrutar de forma óptima a la red global de Microsoft y a la puerta principal del servicio de Microsoft 365 más cercana. Tener una salida de red cercana a las ubicaciones de oficina de los usuarios también permite mejorar el rendimiento en el futuro, ya que Microsoft expande tanto los puntos de presencia de red como Microsoft 365 puertas frontales del servicio en el futuro.
 
@@ -76,7 +76,7 @@ Una información intermediaria de red que mostramos es la interrupción e inspec
 
 Los dispositivos intermediarios de red como servidores proxy, VPN y dispositivos de prevención de pérdida de datos pueden afectar al rendimiento y la estabilidad de Microsoft 365 clientes en los que el tráfico está intermedio.
 
-### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
+### <a name="what-should-i-do"></a>¿Qué debo hacer?
 
 Configure el dispositivo intermediario de red que se detectó para omitir el procesamiento Microsoft 365 tráfico de red.
 
@@ -93,7 +93,7 @@ Esta información se abrevia como "Peers" en algunas vistas de resumen.
 
 Esta información examina el rendimiento agregado de Microsoft 365 clientes en la misma ciudad que esta ubicación de oficina. Esta información se muestra si la latencia media de los usuarios es un 10 % mayor que la latencia media de los inquilinos vecinos.
 
-### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
+### <a name="what-should-i-do"></a>¿Qué debo hacer?
 
 Puede haber muchas razones para esta condición, como la latencia en su red corporativa o ISP, cuellos de botella o problemas de diseño de arquitectura. Examine la latencia entre cada salto de la ruta entre la red de oficina y la puerta Microsoft 365 puerta principal. Para obtener más información, [vea Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
@@ -110,7 +110,7 @@ Esta información se abrevia como "Enrutamiento" en algunas vistas de resumen.
 
 Enumeramos Exchange Online puertas frontales de servicio adecuados para su uso desde la ciudad de la ubicación de la oficina con un buen rendimiento. Si la prueba actual muestra el uso de una puerta Exchange Online de servicio no en esta lista, llamamos a esta recomendación.
 
-### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
+### <a name="what-should-i-do"></a>¿Qué debo hacer?
 
 El uso de una puerta principal de servicio de Exchange Online no óptima podría deberse al backhaul de red antes de la salida de la red corporativa, en cuyo caso se recomienda la salida de red local y directa. También podría deberse al uso de un servidor de resolución recursiva dns remoto, en cuyo caso se recomienda alinear el servidor de resolución recursiva DNS con la salida de red.
 
@@ -127,7 +127,7 @@ Esta información se abrevia como "Afd" en algunas vistas de resumen.
 
 Identificamos la puerta SharePoint servicio en línea a la que se conecta el cliente de prueba. A continuación, para la ciudad de ubicación de la oficina, lo comparamos con la puerta SharePoint de servicio en línea esperada para esa ciudad. Si no coincide, hacemos esta recomendación.
 
-### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
+### <a name="what-should-i-do"></a>¿Qué debo hacer?
 
 El uso de una puerta principal del servicio SharePoint Online no óptimo podría deberse a la retrohaulción de la red antes de la salida de la red corporativa, en cuyo caso se recomienda la salida de red local y directa. También podría deberse al uso de un servidor de resolución recursiva dns remoto, en cuyo caso se recomienda alinear el servidor de resolución recursiva DNS con la salida de red.
 
@@ -141,7 +141,7 @@ Esta información se abrevia como "Rendimiento" en algunas vistas de resumen.
 
 La velocidad de descarga que un usuario puede obtener de SharePoint Online y OneDrive para la Empresa las puertas frontales del servicio se mide en megabytes por segundo (MBps). Si este valor es menor que 1 MBps, proporcionamos esta información.
 
-### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
+### <a name="what-should-i-do"></a>¿Qué debo hacer?
 
 Para mejorar las velocidades de descarga, es posible que sea necesario aumentar el ancho de banda. Como alternativa, puede haber congestión de red entre las máquinas de usuario en la ubicación de la oficina y la puerta principal SharePoint servicio en línea. Esto a veces se denomina pérdida congestiva y restringe la velocidad de descarga disponible para los usuarios incluso si hay suficiente ancho de banda disponible.
 
@@ -162,7 +162,7 @@ Si su organización tiene conectividad WAN privada, se recomienda configurar un 
 
 La salida de Internet más lejos de los usuarios que estas ubicaciones reducirá el rendimiento y la salida en China puede provocar problemas de latencia y conectividad elevados debido a la congestión transfronteriza.
 
-### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
+### <a name="what-should-i-do"></a>¿Qué debo hacer?
 
 Para obtener más información acerca de cómo mitigar los problemas de rendimiento relacionados con esta información, vea Microsoft 365 [global tenant performance optimization for China users](microsoft-365-networking-china.md).
 
@@ -174,7 +174,7 @@ Esta información mostrará cuándo se afecta al 50 % o más de las conexiones m
 
 Es una indicación de que es probable que la mayoría de los usuarios experimente problemas de experiencia de usuario con Outlook conectarse a Exchange Online. El porcentaje de muestras probablemente representa el porcentaje de usuarios que muestran menos de 60 puntos.  
 
-### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
+### <a name="what-should-i-do"></a>¿Qué debo hacer?
 
 Habilite la visibilidad de la conectividad de red de ubicación de oficina si aún no lo ha hecho. Desea identificar qué oficinas se verán afectadas por la mala conectividad de red que está afectando a Exchange y buscar formas de mejorar el perímetro de red en cada una de las que conecte a los usuarios a la red de Microsoft.
 
@@ -186,13 +186,13 @@ Esta información mostrará cuándo se afecta al 50 % o más de las conexiones m
 
 Es una indicación de que es probable que la mayoría de los usuarios experimente problemas de experiencia de usuario con SharePoint y OneDrive. El porcentaje de muestras probablemente representa el porcentaje de usuarios que muestran menos de 40 puntos.  
 
-### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
+### <a name="what-should-i-do"></a>¿Qué debo hacer?
 
 Habilite la visibilidad de la conectividad de red de ubicación de oficina si aún no lo ha hecho. Desea identificar qué oficinas se verán afectadas por la mala conectividad de red que está afectando a SharePoint y buscar formas de mejorar el perímetro de red en cada una de las que conecte a los usuarios a la red de Microsoft.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Conectividad de red en el Centro Microsoft 365 administración (versión preliminar)](office-365-network-mac-perf-overview.md)
+[Conectividad de red en el Centro de Administración de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 de red (versión preliminar)](office-365-network-mac-perf-score.md)
 

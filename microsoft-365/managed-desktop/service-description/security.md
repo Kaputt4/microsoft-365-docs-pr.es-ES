@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 07d4632c6ce775d98d9606f9edc4566aa48d9d8e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4b0399adae82123bf4e0d6ca5aa462d1b48ac80e9143b6744e936a6b94554c68
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287812"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854416"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Tecnologías de seguridad en Escritorio administrado de Microsoft
 
@@ -45,7 +45,7 @@ Configuración de dispositivos seguros | Escritorio administrado de Microsoft im
 
 
 
-## <a name="identity-and-access-management"></a>Administración de identidad y acceso
+## <a name="identity-and-access-management"></a>Administración de acceso e identidad  
 
 La administración de identidades y acceso protege los activos corporativos y los datos críticos para la empresa. Escritorio administrado de Microsoft los dispositivos para garantizar un uso seguro con Azure Active Directory (Azure AD) identidades administradas. Es responsabilidad del cliente mantener información precisa en su inquilino de Azure AD.
 

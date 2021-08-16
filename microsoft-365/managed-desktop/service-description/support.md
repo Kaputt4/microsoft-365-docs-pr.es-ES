@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8f4d0ca8034295a625f5b3fdf07bbc665276b474651c5515b49a9b5c465cafa4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362479"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854404"
 ---
 # <a name="admin-support"></a>Soporte de administrador
 

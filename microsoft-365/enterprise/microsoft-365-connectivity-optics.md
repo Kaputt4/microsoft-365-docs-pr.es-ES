@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Este artículo contiene información sobre Microsoft 365 óptica de conectividad.
-ms.openlocfilehash: 952990a63d4ad064b2027c6f2364e8082342fa34
-ms.sourcegitcommit: 2abc6bf9939b14a427647e88f319dbb70de49ca6
+ms.openlocfilehash: e4020fc21492f3c261e10b8fad3c60c43c64bad24d12f1b1145773489f2fa3b0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53455982"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854896"
 ---
 # <a name="microsoft-365-connectivity-optics"></a>Microsoft 365 Óptica de conectividad
 
@@ -38,7 +38,7 @@ Por lo general, la óptica de conectividad se recopila desde aplicaciones de Mic
 Actualmente, las ópticas se recopilan con muestreo poco frecuente en todos los dispositivos. En general, Microsoft configura el conjunto específico de ópticas y destinos (puntos de conexión de servicio) que se van a medir en una iteración determinada según los requisitos de servicio y se aleatorizan para fines de muestreo.
 En cada intervalo de recopilación de óptica, se pueden recopilar una o más de las siguientes medidas usando el dispositivo del usuario final como origen de medida y un punto de conexión de servicio Microsoft 365 como destino de medida:
 
-| Medida | Descripción |
+| Medida | Description |
 | --- | --- |
 | Latencia | Tiempo que se necesita para recuperar un archivo pequeño a través de HTTP |
 | Rendimiento | Tiempo necesario para recuperar un archivo más grande a través de HTTP, medido en raras ocasiones para evitar un consumo excesivo de ancho de banda |
@@ -47,11 +47,11 @@ En cada intervalo de recopilación de óptica, se pueden recopilar una o más de
 
 Cada medida suele estar asociada con información adicional, que puede incluir los siguientes elementos:
 
-| Item | Descripción |
+| Item | Description |
 | --- | --- |
 | Identificación del inquilino | Identificador único para el espacio empresarial del Azure Active Directory asociado con el dispositivo del usuario final. |
 | Id. de monitor | Identificador de la aplicación que genera la solicitud (como Outlook, OneDrive, etc.), proporcionado por la aplicación cliente que realiza la medida. |
-| Id. de solicitud | Identificador de la solicitud de medida, especificada en la configuración de medida proporcionada por Microsoft. |
+| ID de solicitud | Identificador de la solicitud de medida, especificada en la configuración de medida proporcionada por Microsoft. |
 | IP remota | IP de origen enmascarada asociada con la solicitud de extremo de cliente a servicio, proporcionada por el servidor que recibió la solicitud de medida y calculada en función de la dirección IP de origen del cliente que microsoft puede ver. Las direcciones IP se enmascaran en una subred /24 para direcciones IPv4 o una subred /48 para direcciones IPv6 para garantizar que Microsoft no puede identificar dispositivos o usuarios individuales. |
 | Front-end | Microsoft 365 de servicio front-end proporcionado por el servidor que recibió la solicitud de medida. |
 | Punto de conexión | Microsoft 365 punto de conexión de servicio proporcionado por el servidor que recibió la solicitud de medida. |

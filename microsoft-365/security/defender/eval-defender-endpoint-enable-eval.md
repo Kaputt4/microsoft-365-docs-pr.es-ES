@@ -1,5 +1,5 @@
 ---
-title: Habilitar Microsoft Defender para la evaluación de extremo, activar la evaluación para MDE
+title: Habilitar Microsoft Defender para la evaluación de puntos de conexión
 description: Habilitar el entorno Microsoft 365 Defender prueba o piloto, incluida la comprobación del estado de la licencia y los puntos de incorporación
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 48186dbfcde897022ac74dfad604c739a45ab68f
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: b57026ab2af53cbd941ecd3f4e9f9e6dff7f99c7eb44e0b1b9b2ffb462408415
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902252"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Habilitar el entorno de evaluación de Microsoft Defender para puntos de conexión
 

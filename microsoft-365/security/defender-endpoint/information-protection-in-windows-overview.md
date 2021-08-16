@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d4958d002e0b9033993d3196c09684b5037534a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b38cf9c56f3c518ed7dace01b174b21b280baa23a9e71edb290edd797283f40d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653252"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857495"
 ---
 # <a name="information-protection-in-windows-overview"></a>Information Protection en Introducción de Windows
 

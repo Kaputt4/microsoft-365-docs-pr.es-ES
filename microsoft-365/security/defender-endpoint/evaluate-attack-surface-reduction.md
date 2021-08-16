@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.topic: article
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b0c7593d524324d54ae8d045a125f3a107d516d4c7063e93f1ee8d2573c0e37a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a2f8d935caf3578ced6261d461eb5b18fa9bb070
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853984"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248000"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Evaluar las reglas de la reducción de la superficie expuesta a ataques
 
@@ -88,7 +88,7 @@ Durante la evaluación, es posible que desee configurar cada regla individualmen
 
 Consulta [Personalizar reglas de reducción de](customize-attack-surface-reduction.md) superficie de ataque para obtener información sobre cómo configurar la característica con herramientas de administración, incluidas directivas de grupo y directivas de CSP de MDM.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Reducir superficies de ataque con reglas de reducción de superficie de ataque](attack-surface-reduction.md)
 - [Usar el modo de auditoría para evaluar Windows Defender](audit-windows-defender.md)

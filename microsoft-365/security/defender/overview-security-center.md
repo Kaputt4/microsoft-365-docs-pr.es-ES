@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8e37572b07c6d81abc531e204a8cb060f1f6402c
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 687195eeb9bbc53be3f50e9b7662faaeed208b5502e9972801ee3d105c35c1ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888721"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender introducción
 
@@ -181,7 +181,7 @@ Use *esta página para* obtener comentarios sobre el propio artículo. Gracias p
 Siga explorando las características y capacidades de Microsoft 365 Defender:
 
 - [Administrar incidentes y alertas](manage-incidents.md)
-- [Seguimiento y respuesta a amenazas emergentes con análisis de amenazas](threat-analytics.md)
+- [Hacer seguimiento y responder a amenazas emergentes con el análisis de amenazas](threat-analytics.md)
 - [El centro de actividades](m365d-action-center.md)
 - [Buscar amenazas entre dispositivos, correos electrónicos, aplicaciones e identidades](./advanced-hunting-query-emails-devices.md)
 - [Reglas de detección personalizada](./custom-detection-rules.md)

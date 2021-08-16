@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e4f07adb051dde24d374055d206955ad61df432a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0e763e78513426e187ab4f3df87438ac750d6f4a77d8a0b5791276685c221a89
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920497"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854440"
 ---
 # <a name="device-configuration"></a>Configuración de dispositivos
 
@@ -34,7 +34,7 @@ Los dispositivos llegarán con una imagen de firma y, a continuación, se unirá
 
 En esta tabla se resaltan las directivas predeterminadas que se aplican a todos los Escritorio administrado de Microsoft durante el aprovisionamiento de dispositivos. Todos los cambios detectados no aprobados por Escritorio administrado de Microsoft Operations Team en objetos administrados por Escritorio administrado de Microsoft se revertirán.
 
-Directiva | Descripción
+Directiva | Description
 --- | ---
 Línea base de seguridad | [La línea base de](/windows/device-security/windows-security-baselines) seguridad de Microsoft para MDM está configurada para todos Escritorio administrado de Microsoft dispositivos. Esta línea base es la configuración estándar del sector. Se ha publicado públicamente, está bien probado y ha sido revisado por expertos en seguridad de Microsoft para mantener Escritorio administrado de Microsoft dispositivos y aplicaciones seguros en el lugar de trabajo moderno. <br><br>Para mitigar las amenazas en el panorama de amenazas de seguridad en constante evolución, la línea base de seguridad de Microsoft se actualizará e implementará en Escritorio administrado de Microsoft dispositivos con cada actualización Windows 10 característica.<br><br>Para obtener más información, [vea Windows líneas base de seguridad](/windows/security/threat-protection/windows-security-baselines).
 Escritorio administrado de Microsoft de seguridad recomendada | Un conjunto de cambios recomendados en la línea base de seguridad que optimizan la experiencia del usuario.  Estos cambios se documentan en [el Complemento de seguridad](#security-addendum). Las actualizaciones del addendum de directiva se producen según sea necesario.  
@@ -42,7 +42,7 @@ Actualización de la implementación | Use Windows Update for Business para real
 Conexiones medidas | De forma predeterminada, las actualizaciones sobre las conexiones medidas (como las redes LTE) están desactivadas, aunque cada usuario puede activar independientemente esta característica en Configuración > Actualizaciones > **Opciones avanzadas**. Si quieres permitir que todos los usuarios habiliten actualizaciones [a](../working-with-managed-desktop/admin-support.md)través de conexiones medidas, envía una solicitud de cambio , que activará esta configuración para todos los dispositivos.
 | Cumplimiento de dispositivos | Estas directivas están configuradas para todos Escritorio administrado de Microsoft dispositivos. Un dispositivo se notifica como no compatible cuando se aleja de nuestra configuración de seguridad necesaria.
 
-## <a name="windows-diagnostic-data"></a>Windows de diagnóstico
+## <a name="windows-diagnostic-data"></a>Datos de diagnóstico de Windows
 
  Los dispositivos se establecerán para proporcionar datos de diagnóstico mejorados a Microsoft bajo un identificador comercial conocido. Como parte de Escritorio administrado de Microsoft, los administradores de TI no pueden cambiar esta configuración. Para los clientes de las regiones del Reglamento general de protección de datos (RGPD), los usuarios pueden reducir el nivel de datos de diagnóstico que se proporciona, pero habrá una reducción en el servicio. Por ejemplo, Escritorio administrado de Microsoft no podrá recopilar los datos necesarios para iterar en la configuración y las directivas para satisfacer mejor las necesidades de rendimiento y seguridad. Para obtener más información, vea [Configure Windows diagnostic data in your organization.](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 

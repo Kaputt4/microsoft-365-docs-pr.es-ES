@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Obtenga información sobre cómo implementar equipos con la protección de datos confidenciales.
-ms.openlocfilehash: a3f715cb05ad1d5acf3c93c58959f12ebec46978
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 20178cf1238a6dd329db0b84da5b0054d23a519845c967d66dc502f96eee4fb4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888504"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configure equipos con protección de datos confidenciales
 

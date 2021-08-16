@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo mover un SharePoint a una ubicación geográfica diferente dentro de su entorno multige geográfico y comunicar las expectativas de los cambios a los usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a49098045dbce94ef1c474497b8da1b397ac0b0
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 80dfe847683271a8538f407f9a697536946e29a5ae98cefc92dfde74a45abd0a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362359"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854831"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 

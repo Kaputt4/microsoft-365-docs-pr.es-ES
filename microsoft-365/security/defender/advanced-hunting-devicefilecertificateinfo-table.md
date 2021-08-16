@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1f894f3fc8cff2113004ff9c9e34ec2ca0144799
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8327d0c8973de60aa6d860bcb6ad008203fc52d94520b66174147a53f543618a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023218"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902216"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -46,7 +46,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `DeviceId` | cadena | Identificador único para el equipo en servicio |
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
 | `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
-| `IsSigned` | boolean | Indica si el archivo está firmado |
+| `IsSigned` | booleano | Indica si el archivo está firmado |
 | `SignatureType` | cadena | Indica si la información de firma se leyó como contenido incrustado en el propio archivo o si se leyó desde un archivo de catálogo externo. |
 | `Signer` | cadena | Información sobre el firmante del archivo |
 | `SignerHash` | cadena | Valor hash único que identifica el firmante |
@@ -57,8 +57,8 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `CertificateCreationTime` | datetime | Fecha y hora en que se creó el certificado |
 | `CertificateExpirationTime` | datetime | Fecha y hora en que el certificado está establecido para expirar |
 | `CertificateCountersignatureTime` | datetime | Fecha y hora en que se contrasignó el certificado |
-| `IsTrusted` | boolean | Indica si el archivo es de confianza en función de los resultados de la función WinVerifyTrust, que busca información de certificado raíz desconocido, firmas no válidas, certificados revocados y otros atributos cuestionables |
-| `IsRootSignerMicrosoft` | boolean | Indica si el firmante del certificado raíz es Microsoft |
+| `IsTrusted` | booleano | Indica si el archivo es de confianza en función de los resultados de la función WinVerifyTrust, que busca información de certificado raíz desconocido, firmas no válidas, certificados revocados y otros atributos cuestionables |
+| `IsRootSignerMicrosoft` | booleano | Indica si el firmante del certificado raíz es Microsoft |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. | 
 
 ## <a name="related-topics"></a>Temas relacionados

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: ff7ba1964afdfcc63c81034666d29432c395c2f391ed5e3945969db0fcae49da
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0604a6531b93a1a0df04c39ebaff4e75a0365f9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841790"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248031"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -413,13 +413,16 @@ Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y c
 ## <a name="auditing-sensitivity-label-activities"></a>Auditar actividades de etiqueta de confidencialidad
 
 > [!IMPORTANT]
-> Si usa la separación de etiquetas seleccionando solo el ámbito **Grupos y sitios** para las etiquetas que protegen los contenedores: debido al evento de auditoría y correo electrónico **Desfase detectado de la confidencialidad del documento** descrito en esta sección, considere [ordenar esas etiquetas](sensitivity-labels.md#label-priority-order-matters)antes de que tengan un ámbito para **Archivos y mensajes de correo electrónico**. 
+> Si usa la separación de etiquetas seleccionando solo el ámbito **Grupos y sitios** para las etiquetas que protegen los contenedores: debido al evento de auditoría y correo electrónico **Desfase detectado de la confidencialidad del documento** descrito en esta sección, considere [ordenar las etiquetas](sensitivity-labels.md#label-priority-order-matters) antes de que tengan un ámbito para **Archivos y mensajes de correo electrónico**. 
 
 Si alguien carga un documento en un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de confidencialidad de [mayor prioridad](sensitivity-labels.md#label-priority-order-matters) que la etiqueta de confidencialidad que se aplica al sitio, esta acción no está bloqueada. Por ejemplo, aplicó la etiqueta **general** a un sitio de SharePoint y alguien carga en este sitio un documento etiquetado como **confidencial**. Debido a que una etiqueta de confidencialidad con mayor prioridad identifica el contenido que es más confidencial que el contenido que tiene un orden de menor prioridad, esta situación podría ser un problema de seguridad.
 
 Aunque la acción no está bloqueada, se audita y, de forma predeterminada, genera un correo electrónico para la persona que cargó el documento y el administrador del sitio. Como resultado, tanto el usuario como los administradores pueden identificar los documentos que no están alineados con la prioridad de las etiquetas y tomar las medidas necesarias. Por ejemplo, eliminar o mover el documento cargado del sitio.
 
 No sería un problema de seguridad si el documento tiene una etiqueta de confidencialidad de menor prioridad que la etiqueta de confidencialidad aplicada al sitio. Por ejemplo, un documento con la etiqueta **general** se carga en un sitio con la etiqueta **confidencial**. En este escenario, no se generarán ni un evento de auditoría, ni un correo electrónico.
+
+> [!NOTE]
+> Al igual que para la opción de directiva que requiere que los usuarios proporcionen una justificación para cambiar una etiqueta a una clasificación inferior, todas las subetiquetas de la misma etiqueta primaria se consideran que tienen la misma prioridad.
 
 Para buscar el registro de auditoría para este evento, busque **Desfase detectado de la confidencialidad del documento** en la categoría de las **actividades de archivos y páginas**.
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b4dc8dc7a56725e1b10e37999d26dae81a6fa60b9923dd1ea3de4f242debe6ae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 50415962698802fc263ffb8766a4db3651ff6c9e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867569"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247978"
 ---
 # <a name="evaluate-microsoft-defender-for-identity-overview"></a>Evaluación de Información general sobre identidades de Microsoft Defender
 
@@ -46,7 +46,7 @@ En la tabla siguiente se describen los pasos de la ilustración.
 | |Paso  |Descripción  |
 |---------|---------|---------|
 |1|[Revisar los requisitos de arquitectura y los conceptos clave](eval-defender-identity-architecture.md)    | Comprenda la arquitectura de Defender for Identity y asegúrese de que su entorno cumple los requisitos previos de la arquitectura.       |
-|2|[Habilitar el entorno de evaluación](eval-defender-identity-enable-eval.md)     |   Siga los pasos para configurar el entorno de evaluación.      |
-|3|[Configurar el piloto](eval-defender-identity-pilot.md)     |   Obtenga información sobre la configuración comparativa de su entorno de identidad y pruebe los tutoriales de Defender for Identity.     |
+|2 |[Habilitar el entorno de evaluación](eval-defender-identity-enable-eval.md)     |   Siga los pasos para configurar el entorno de evaluación.      |
+|3 |[Configurar el piloto](eval-defender-identity-pilot.md)     |   Obtenga información sobre la configuración comparativa de su entorno de identidad y pruebe los tutoriales de Defender for Identity.     |
 ||||
 
