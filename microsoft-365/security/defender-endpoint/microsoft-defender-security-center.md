@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f7fb73cde3afa385b0d73b35610415cacd1cad81
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4daba7a19af2b1653bd5158033b10b82935583da9e5977d3de1e31f3ef28cc71
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648157"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902778"
 ---
 # <a name="microsoft-defender-security-center"></a>Centro de seguridad de Microsoft Defender
 
@@ -41,7 +41,7 @@ Centro de seguridad de Microsoft Defender es el portal donde puede obtener acces
 
 Tema | Descripción
 :---|:---
-Comenzar  |  Obtenga información sobre los requisitos mínimos, valide las licencias y la configuración completa, conozca las características de vista previa, comprenda el almacenamiento y la privacidad de los datos y cómo asignar acceso de usuario al portal.
+Introducción  |  Obtenga información sobre los requisitos mínimos, valide las licencias y la configuración completa, conozca las características de vista previa, comprenda el almacenamiento y la privacidad de los datos y cómo asignar acceso de usuario al portal.
 [Incorporar dispositivos](onboard-configure.md) | Obtenga información sobre la incorporación de clientes, servidores y dispositivos que no Windows cliente. Obtenga información sobre cómo ejecutar una prueba de detección, configurar la configuración de proxy y conectividad a Internet y cómo solucionar posibles problemas de incorporación.
 [Comprender el portal](use.md) | Comprenda las operaciones de seguridad, puntuación segura y paneles de análisis de amenazas, así como cómo navegar por el portal.
 Investigar y corregir amenazas | Investigar alertas, dispositivos y realizar acciones de respuesta para corregir amenazas.

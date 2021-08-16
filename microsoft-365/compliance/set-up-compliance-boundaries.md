@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido de usuario que un administrador de exhibición de documentos electrónicos puede buscar en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be857277d36d95ac1cd974ccb0c87f2048798450
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 956260de2b522e2a84e6dffbf1fa50de4e7ced5e2dd9505534d35fed1450bcfd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194714"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885583"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de exhibición de documentos electrónicos
 
@@ -295,7 +295,7 @@ Sí, esto se puede hacer al buscar Exchange buzones de correo agregando el admin
   
 **¿Funcionan los filtros de permisos de búsqueda para las conservaciones de casos de exhibición de documentos electrónicos, Microsoft 365 directivas de retención o DLP?**
   
-No, no en este momento.
+De momento, no.
   
 **Si especifico una región para controlar dónde se exporta el contenido, pero no tengo una organización SharePoint en esa región, ¿puedo seguir buscando SharePoint?**
   

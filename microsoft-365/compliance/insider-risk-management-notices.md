@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3a74c62e84c1cb9e4c749a364c0e5b6da25a8af9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: efb44f098bb18ee25bfc39b2b1c46faa057faa5e7996b24a22af89277e135742
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860689"
 ---
 # <a name="insider-risk-management-notice-templates"></a>Plantillas de aviso de administración de riesgos de Insider
 
@@ -53,11 +53,11 @@ Si desea crear más que un mensaje de correo electrónico simple basado en texto
 
 ## <a name="create-a-new-notice-template"></a>Crear una nueva plantilla de aviso
 
-Para crear una nueva plantilla de aviso de administración de riesgos de **insider,** usará el Asistente para avisos en la solución de administración de riesgos insider en el centro de Microsoft 365 cumplimiento.
+Para crear una nueva plantilla de aviso de administración de riesgos de **insider,** usará el Asistente para avisos en la solución de administración de riesgos insider en el Centro de cumplimiento de Microsoft 365.
 
 Complete los siguientes pasos para crear una nueva plantilla de aviso de administración de riesgos insider:
 
-1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione la pestaña **Plantillas de** aviso.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione la pestaña **Plantillas de** aviso.
 2. Seleccione **Crear plantilla de aviso** para abrir el asistente para avisos.
 3. En la **página Crear una nueva plantilla de aviso,** complete los siguientes campos:
     - **Nombre de plantilla:** escriba un nombre descriptivo para el aviso. Este nombre aparece en la lista de avisos en el panel de avisos y en la lista de selección de avisos al enviar avisos desde un caso.
@@ -71,7 +71,7 @@ Complete los siguientes pasos para crear una nueva plantilla de aviso de adminis
 
 Para actualizar una plantilla de aviso de administración de riesgos insider existente, siga estos pasos:
 
-1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione la pestaña **Plantillas de** aviso.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione la pestaña **Plantillas de** aviso.
 2. En el panel de avisos, seleccione la plantilla de aviso que desea administrar.
 3. En la página de detalles del aviso, seleccione **Editar**
 4. En la **página** Editar, puede editar los campos siguientes:
@@ -86,7 +86,7 @@ Para actualizar una plantilla de aviso de administración de riesgos insider exi
 
 Para eliminar una plantilla de aviso de administración de riesgos insider existente, siga estos pasos:
 
-1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione la pestaña **Plantillas de** aviso.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione la pestaña **Plantillas de** aviso.
 2. En el panel de avisos, seleccione la plantilla de aviso que desea eliminar.
 3. Seleccione el **icono Eliminar** de la barra de herramientas.
 4. Para eliminar la plantilla de aviso, seleccione **Sí** en el cuadro de diálogo eliminar. Para cancelar la eliminación, seleccione **Cancelar**.

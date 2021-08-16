@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3240b0c56b94c365f070935542ae100a94c0375847fa097cb29dc9886b210b79
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0d76c34ae2c610933285f93e349459497de7cb79
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829356"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255530"
 ---
 #  <a name="get-live-response-results"></a>Obtener resultados de respuesta en directo
 
@@ -90,7 +90,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Authorization|String|{token} de portador. Obligatorio.|
+|Autorización|String|{token} de portador. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -104,10 +104,10 @@ Si se realiza correctamente, este método devuelve 200, Ok código de respuesta 
 
 |Propiedad|Descripción|
 |---|---|
-|name|Nombre de script ejecutado|
+|script_name|Nombre de script ejecutado|
 |exit_code|Código de salida de script ejecutado|
 |script_output|Salida estándar de script ejecutada|
-|script_error|Salida de error estándar de script ejecutada|
+|script_errors|Salida de error estándar de script ejecutada|
 
 ## <a name="example"></a>Ejemplo
 
@@ -142,7 +142,7 @@ Tipo de contenido: application/json
     "exit_code": 0,
     "script_output": "Transcript started, output file is C:\\ProgramData\\Microsoft\\Windows Defender Advanced Threat Protection\\Temp\\PSScriptOutputs\\PSScript_Transcript_{TRANSCRIPT_ID}.txt
 C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
-    "script_error":""
+    "script_errors":""
 }
 ```
 

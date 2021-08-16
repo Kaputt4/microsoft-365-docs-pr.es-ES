@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 2b2cbfdddce8f26a64b1def5fa89ead6d7fb0557697363f6d285d8ee82ea353f
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: c3ec44716cd466b3bfe4440c6cdf63fe00376f75
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803421"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255203"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Antivirus de Microsoft Defender en Windows
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo comprar Windows 365 Empresa para su organización y ayudar a los usuarios a empezar a usar sus equipos en la nube.
-ms.openlocfilehash: e3172171a52bbb92fd7e49f800ff2ccc502ea06b8f49547e02e0e6a61cf6de43
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 80da73c6b2db01f2c46cd4cd6835bc74abff978c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520452"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255423"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Introducción a Windows 365 Empresa y equipos en la nube
 

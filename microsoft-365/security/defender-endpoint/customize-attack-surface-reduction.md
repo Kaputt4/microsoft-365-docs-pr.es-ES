@@ -8,18 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 22c3235c5d381bc14bd40e474ef0b8a6452db7c2
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f77f09716adbb48804bfc5c00bc448ecb6a4f863
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656120"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255542"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personalizar las reglas de la reducción de superficie expuesta a ataques
 
@@ -72,19 +72,19 @@ Si tiene problemas con las reglas que detectan archivos que cree que no deben de
 |:----|:----|
 | Bloquear el uso indebido de controladores firmados vulnerables explotados | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
 | Impedir que Adobe Reader cree procesos secundarios | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| Bloquear todas Office aplicaciones de creación de procesos secundarios | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
+| Bloquear todas Office aplicaciones de creación de procesos secundarios | `d4f940ab-401b-4efc-aadc-ad5f3c50688a` |
 | Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
-| Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` |
+| Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web | `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550` |
 | Bloquear la ejecución de archivos ejecutables a menos que cumplan con criterios de prevalencia, antigüedad o lista de confianza | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
-| Bloquear la ejecución de scripts potencialmente ofuscados | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
-| Impedir que JavaScript o VBScript inicien contenido ejecutable descargado | `D3E037E1-3EB8-44C8-A917-57927947596D` |
-| Bloquear Office aplicaciones de creación de contenido ejecutable | `3B576869-A4EC-4529-8536-B80A7769E899` |
-| Bloquear Office aplicaciones para que no inyecten código en otros procesos | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
+| Bloquear la ejecución de scripts potencialmente ofuscados | `5beb7efe-fd9a-4556-801d-275e5ffc04cc` |
+| Impedir que JavaScript o VBScript inicien contenido ejecutable descargado | `d3e037e1-3eb8-44c8-a917-57927947596d` |
+| Bloquear Office aplicaciones de creación de contenido ejecutable | `3b576869-a4ec-4529-8536-b80a7769e899` |
+| Bloquear Office aplicaciones para que no inyecten código en otros procesos | `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84` |
 | Bloquear Office aplicaciones de comunicación para que no creen procesos secundarios | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
 | Bloquear la persistencia a través de la suscripción de eventos WMI | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
 | Bloquear creaciones de proceso que se originen en comandos PSExec y WMI | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
 | Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| Bloquear llamadas a la API de Win32 desde Office macro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
+| Bloquear llamadas a la API de Win32 desde Office macro | `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b` |
 | Usar protección avanzada contra ransomware | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
 
 Consulta el tema [de reducción de](attack-surface-reduction.md) superficie de ataque para obtener más información sobre cada regla.

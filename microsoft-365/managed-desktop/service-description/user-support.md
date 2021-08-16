@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 64e634ce33794264de3b8a627355c9c0f64038d712cff55a6d704ada0dc33e3c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ec56158a8ccf0c1014b847b04a62db6a14fe992b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863857"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255248"
 ---
 # <a name="user-support"></a>Soporte al usuario
 
@@ -51,7 +51,7 @@ El administrador de TI es responsable de estos elementos:
 
 - Trabajar con el proveedor de soporte técnico para establecer y administrar contratos de nivel de servicio para la compatibilidad con usuarios
 - Administrar privilegios de acceso elevado para el personal de soporte técnico aprobado. Para obtener más información, vea [Enable user support features](../get-started/enable-support.md)
-- Si hay problemas de dispositivos que afectan a varios usuarios, el aumento de los usuarios mediante el Escritorio administrado de Microsoft de soporte técnico del administrador. Para obtener más información, vea [Admin support for Escritorio administrado de Microsoft](../working-with-managed-desktop/admin-support.md).
+- Si hay problemas de dispositivos que afectan a los usuarios, el aumento de los usuarios mediante el Escritorio administrado de Microsoft de soporte técnico del administrador. Para obtener más información, vea [Admin support for Escritorio administrado de Microsoft](../working-with-managed-desktop/admin-support.md).
 - Enrutar problemas relacionados con el hardware al proveedor o proveedor adecuado
 - Mantener y proteger la configuración de directiva de seguridad de dispositivos Escritorio administrado de Microsoft dispositivos evitando que se cambien las directivas que establecemos.
 
@@ -74,7 +74,7 @@ La integración de los procesos existentes con este flujo de trabajo Escritorio 
 
 Si un problema de usuario debe escalarse a Escritorio administrado de Microsoft, es útil identificar a qué equipo debe dirigirse el problema. Podemos transferir casos correctamente, pero ahorra tiempo para enrutarlos al lugar correcto desde el principio.
 
-- Problemas específicos de Escritorio administrado de Microsoft (por ejemplo, una directiva o una configuración que implementa el propio servicio): escala directamente al equipo de operaciones. Para obtener más información, consulta [Obtener ayuda para los usuarios.](../working-with-managed-desktop/end-user-support.md)
+- Problemas específicos de Escritorio administrado de Microsoft (por ejemplo, una directiva o una configuración implementada por el propio servicio): escala directamente al equipo de operaciones creando una nueva solicitud de soporte técnico. Para obtener más información, consulta [Obtener ayuda para los usuarios.](../working-with-managed-desktop/end-user-support.md)
 - Problemas de hardware: directos a su proveedor o proveedor de hardware
 - Otros problemas: escala a través de los canales de soporte técnico existentes, ya sea una suscripción unificada o Premier.
 
@@ -83,7 +83,7 @@ Si un problema de usuario debe escalarse a Escritorio administrado de Microsoft,
 
 ### <a name="elevation-portal"></a>Portal de elevación 
 
-Dado que Escritorio administrado de Microsoft dispositivos se ejecutan en el usuario estándar de forma predeterminada, algunas tareas requieren la elevación de privilegios. Para obtener más información acerca del control de cuentas de usuario, vea [Control de cuentas de usuario](/windows/security/identity-protection/user-account-control/user-account-control-overview). Para que el personal de [](../working-with-managed-desktop/end-user-support.md#elevation-requests) soporte técnico pueda realizar tareas mientras se solucionan problemas para los usuarios, proporcionamos acceso "justo a tiempo" a una cuenta de administrador. Esta contraseña a la que acceden de forma segura solo las personas que designe y gira cada par de horas.  
+Dado que Escritorio administrado de Microsoft dispositivos se ejecutan en el usuario estándar de forma predeterminada, algunas tareas requieren la elevación de privilegios. Para obtener más información acerca del control de cuentas de usuario, vea [Control de cuentas de usuario](/windows/security/identity-protection/user-account-control/user-account-control-overview). Para que el personal de [](../working-with-managed-desktop/end-user-support.md#elevation-requests) soporte técnico pueda realizar tareas mientras se solucionan problemas para los usuarios, proporcionamos acceso "justo a tiempo" a una cuenta de administrador. A esta contraseña se obtiene acceso de forma segura solo aquellos que designe y gira cada par de horas.  
 
 Para obtener instrucciones sobre cómo configurar usuarios para el acceso a este portal, vea [Habilitar características de soporte técnico de usuario](../get-started/enable-support.md).
 
@@ -91,7 +91,7 @@ Para ver los pasos para enviar una solicitud de elevación, vea [Elevation reque
 
 ### <a name="escalation-portal"></a>Portal de escalación 
 
-Si un problema requiere una escalación Escritorio administrado de Microsoft equipo de operaciones, el personal de soporte técnico designado podría dirigirse de forma similar a una solicitud de soporte técnico de administración de TI.  
+Si un problema requiere una escalación al equipo de operaciones de Escritorio administrado de Microsoft, el personal de soporte técnico designado puede dirigirse de forma similar a una solicitud de soporte técnico para administradores de TI.  
 
 > [!NOTE]
 > Solo se pueden presentar solicitudes de soporte técnico de Sev C de esta manera. Para un problema que coincida con la descripción de otras gravedades, se recomienda ponerse en contacto con el administrador de TI correspondiente para que lo archivo. Para obtener más información, consulta [Definiciones de gravedad de solicitud de soporte técnico.](../working-with-managed-desktop/admin-support.md#support-request-severity-definitions)

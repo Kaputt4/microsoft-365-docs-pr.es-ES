@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft Defender para Office 365 Plan 2. El filtrado de etiquetas está disponible en alertas, informes e investigaciones en Microsoft Defender para Office 365 identificar rápidamente a los usuarios etiquetados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 836c8e538ac62809c15094d6ecade796429f9bce
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 9f3a3f82b510d0910858784bedae3f1be724efd099398e3b1dcbfe57978e3f8b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254110"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883928"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft Defender para Office 365
 
@@ -46,7 +46,6 @@ Después de aplicar etiquetas del sistema o etiquetas personalizadas a los usuar
 - [Página de la entidad de correo electrónico](mdo-email-entity-page.md#other-innovations)
 - [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
 - [Vistas de campañas](campaigns.md)
-- [Envíos de usuarios y administradores](admin-submission.md)
 - Para las cuentas de prioridad, puede usar el [informe](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) Problemas de correo electrónico para cuentas de prioridad en el Centro Exchange administración (EAC).
 
 En este artículo se explica cómo configurar etiquetas de usuario en el portal Microsoft 365 Defender usuario. No hay cmdlets en Microsoft 365 Defender portal para administrar etiquetas de usuario.
@@ -66,7 +65,7 @@ Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayuda
 
   > [!NOTE]
   >
-  > - Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > - Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   >
   > - La administración de etiquetas de usuario está controlada por los roles **Lector de** etiquetas y **Administrador de etiquetas.**
 

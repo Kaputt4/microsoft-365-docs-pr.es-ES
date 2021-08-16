@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 925e76c595b8714ebc0aaf41329b5edb94967434b6acce46431d326047d4c572
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: deac72ddab08d180daf1c71885217c2a93ba1938
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874123"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255554"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Incorporar los dispositivos Windows 10 con Configuration Manager
 
@@ -88,9 +88,6 @@ Consulte el [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public
 
 > [!NOTE]
 > Defender for Endpoint no admite la incorporación durante la fase de la experiencia de implementación [(OOBE).](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Asegúrese de que los usuarios completen OOBE después de ejecutar Windows instalación o actualización.
-
-> [!TIP]
-> Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo defender para endpoint](run-detection-test.md)recién incorporado.
 >
 > Ten en cuenta que es posible crear una regla de detección en una aplicación de Configuration Manager para comprobar continuamente si se ha incorporado un dispositivo. Una aplicación es un tipo diferente de objeto que un paquete y un programa.
 > Si un dispositivo aún no está incorporado (debido a la finalización de OOBE pendiente o a cualquier otro motivo), Configuration Manager volverá a intentar incorporar el dispositivo hasta que la regla detecte el cambio de estado.
@@ -168,6 +165,10 @@ Antes de habilitar la protección de red en modo de auditoría o bloqueo, asegú
 Habilite la característica en modo auditoría durante al menos 30 días. Después de este período, revise las detecciones y cree una lista de aplicaciones que puedan escribir en directorios protegidos.
 
 Para obtener más información, vea [Evaluate controlled folder access](evaluate-controlled-folder-access.md).
+
+## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecutar una prueba de detección para comprobar la incorporación
+Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.
+
 
 ## <a name="offboard-devices-using-configuration-manager"></a>Dispositivos offboard con Configuration Manager
 

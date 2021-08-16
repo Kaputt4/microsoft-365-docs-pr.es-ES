@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b57026ab2af53cbd941ecd3f4e9f9e6dff7f99c7eb44e0b1b9b2ffb462408415
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88506e546cc359a3cdf042c8661fcc54b217d6d4
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902252"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255454"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Habilitar el entorno de evaluación de Microsoft Defender para puntos de conexión
 
@@ -76,7 +76,7 @@ Vea este vídeo para obtener una introducción rápida al proceso de incorporaci
 
 En la tabla siguiente se enumeran las herramientas disponibles en función del extremo que necesita incorporar.
 
-Punto de conexión | Opciones de herramientas
+Extremo | Opciones de herramientas
 :---|:---
 **Windows** | [Script local (hasta 10 dispositivos),](../defender-endpoint/configure-endpoints-script.md)Directiva de grupo [,](../defender-endpoint/configure-endpoints-gp.md) [Microsoft Endpoint Manager/ Administrador](../defender-endpoint/configure-endpoints-mdm.md)de dispositivos móviles , [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), [Integración con Azure Defender](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
 **macOS** | [Scripts locales](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md), Administración [de dispositivos móviles](../defender-endpoint/mac-install-with-other-mdm.md)

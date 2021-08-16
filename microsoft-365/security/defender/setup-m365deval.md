@@ -1,6 +1,6 @@
 ---
 title: Configurar el laboratorio Microsoft 365 Defender prueba o el entorno piloto
-description: Access Microsoft 365 Defender portal y, a continuación, configure el entorno Microsoft 365 Defender de prueba
+description: Access Microsoft 365 Security Center y, a continuación, configure el entorno Microsoft 365 Defender laboratorio de prueba
 keywords: Microsoft 365 Defender de prueba, Microsoft 365 Defender piloto, pruebe Microsoft 365 Defender, Microsoft 365 Defender de laboratorio de evaluación
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 30edfb5a40c62f56da1a431f34c6ddd80f12799e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f447e4303e1e7524e8e3f8e10b2f3082ea3316cc4b71253dd2c43834c0003f80
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58252110"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902654"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>Configurar la prueba Microsoft 365 Defender en un entorno de laboratorio 
 

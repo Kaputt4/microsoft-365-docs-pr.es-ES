@@ -1,7 +1,7 @@
 ---
 title: Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir objetivos
 description: Obtenga información sobre la actividad que ha afectado a su puntuación segura de Microsoft. Descubrir tendencias y establecer objetivos.
-keywords: puntuación segura de microsoft, puntuación segura, puntuación segura de office 365, puntuación de seguridad de Microsoft, centro de seguridad de Microsoft 365, acciones de mejora
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 0c9e8669aa3cf1f2d78c0329d4555048664ffebab5a7f43ddf5259be9b51b8b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b5fbfae845c320e0d38293cff0d859165217a385
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792688"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255165"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir objetivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Puntuación segura de Microsoft](microsoft-secure-score.md) es una medida de la posición de seguridad de una organización, con un número más alto que indica más acciones de mejora realizadas. Se puede encontrar en https://security.microsoft.com/securescore el centro Microsoft 365 [seguridad.](overview-security-center.md)
+[Puntuación segura de Microsoft](microsoft-secure-score.md) es una medida de la posición de seguridad de una organización, con un número más alto que indica más acciones de mejora realizadas. Se puede encontrar en https://security.microsoft.com/securescore el portal de Microsoft 365 Defender [.](overview-security-center.md)
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Obtener información sobre la actividad que ha afectado a la puntuación
 

@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo regular las características relacionadas en Microsoft 365 grupos, Teams, SharePoint y Yammer.
-ms.openlocfilehash: 3b526297a3f131364a2098b92de09245ab45feb8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5c18dec0f2394273482366dcf230489b13b1b2e90e4d8459a006bc31fabbc6a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883717"
 ---
 # <a name="what-is-collaboration-governance"></a>¿Qué es la gobernanza de la colaboración?
 
@@ -148,9 +148,9 @@ Las capacidades de gobierno para la colaboración en Microsoft 365 incluyen cara
 |Domain allow/block|Restringir el uso compartido con personas fuera de la organización a personas de dominios específicos.|Microsoft 365 E5 o E3|
 |Creación de sitios sin intervención del administrador|Permitir o impedir que los usuarios creen sus propios SharePoint web.|Microsoft 365 E5 o E3|
 |Uso compartido restringido de sitios y archivos|Restringir el uso compartido de sitios, archivos y carpetas a los miembros de un grupo de seguridad específico.|Microsoft 365 E5 o E3|
-|Creación de grupos restringidos|Restringir la creación de grupos y equipos a los miembros de un grupo de seguridad específico.|Microsoft 365 E5 o E3 con licencias EDU de Azure AD Premium o Azure AD Basic|
-|Directiva de nomenclatura de grupo|Exigir prefijos o sufijos en los nombres de grupo y grupo.|Microsoft 365 E5 o E3 con licencias EDU de Azure AD Premium o Azure AD Basic|
-|Directiva de expiración de grupo|Establezca grupos inactivos y equipos para que expiren y se eliminen después de un período de tiempo especificado.|Microsoft 365 E5 o E3 con licencias Premium Azure AD|
+|Creación de grupos restringidos|Restringir la creación de grupos y equipos a los miembros de un grupo de seguridad específico.|Microsoft 365 E5 o E3 con Azure AD Premium o licencias educaciones básicas de Azure AD|
+|Directiva de nomenclatura de grupo|Exigir prefijos o sufijos en los nombres de grupo y grupo.|Microsoft 365 E5 o E3 con Azure AD Premium o licencias educaciones básicas de Azure AD|
+|Directiva de expiración de grupo|Establezca grupos inactivos y equipos para que expiren y se eliminen después de un período de tiempo especificado.|Microsoft 365 E5 o E3 con Azure AD Premium licencias|
 |Acceso de invitado por grupo|Permitir o impedir el uso compartido de equipos y grupos con personas ajenas a la organización por grupo.|Microsoft 365 E5 o E3|
 
 ## <a name="collaboration-governance-planning-step-by-step"></a>Planeación paso a paso de gobierno de colaboración
@@ -174,7 +174,7 @@ Estos módulos de aprendizaje de Microsoft Learn pueden ayudarle a aprender las 
 
 |Aprendizaje:|Administrar el gobierno y la protección de la información|
 |:---|:---|
-|![Icono de aprendizaje de protección de la información](../media/information-protection-governance.svg)|La cantidad de datos que se generan hoy está creciendo más rápido que nunca, los empleados quieren hacer su trabajo en todas partes y el panorama normativo cambia constantemente. Las soluciones de Microsoft para el gobierno y la protección de la información ayudan a las organizaciones a lograr el equilibrio adecuado entre mantener la protección de los datos y la productividad de los usuarios. Esta ruta de aprendizaje puede ayudarle a preparar los certificados Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<br><br>5 horas 13 min - Ruta de aprendizaje - 7 módulos|
+|![Icono de aprendizaje de protección de la información](../media/information-protection-governance.svg)|La cantidad de datos que se generan hoy está creciendo más rápido que nunca, los empleados quieren hacer su trabajo en todas partes y el panorama normativo cambia constantemente. Las soluciones de Microsoft para el gobierno y la protección de la información ayudan a las organizaciones a lograr el equilibrio adecuado entre mantener la protección de los datos y la productividad de los usuarios. Esta ruta de aprendizaje puede ayudarle a preparar los certificados Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<br><br>5 horas 13 min - Learning path - 7 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/m365-compliance-information-governance/introduction/)
@@ -183,7 +183,7 @@ Estos módulos de aprendizaje de Microsoft Learn pueden ayudarle a aprender las 
 
 |Aprendizaje:|Proteger la información de la empresa con Microsoft 365|
 |:---|:---|
-|![Teams de aprendizaje](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de sensibilidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 hora - Ruta de aprendizaje: 5 módulos|
+|![Teams de aprendizaje](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de sensibilidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 hora - Learning de acceso : 5 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/m365-security-info-overview/introduction/)
@@ -192,7 +192,7 @@ Estos módulos de aprendizaje de Microsoft Learn pueden ayudarle a aprender las 
 
 |Aprendizaje:|Demuestre conocimientos básicos de las funciones del Centro de seguridad y cumplimiento normativo de Microsoft 365|
 |:---|:---|
-|![Icono de aprendizaje de seguridad y cumplimiento](../media/microsoft-365-security-and-compliance-capabilities.svg)|Obtenga información sobre las áreas de soluciones de seguridad y cumplimiento de Microsoft 365 y las funcionalidades disponibles para ayudar a las empresas a proteger sus empresas y cumplir con los requisitos reglamentarios. Si no está familiarizado con los conceptos básicos de informática en la nube, le recomendamos que tome Conceptos de [nube: principios de informática en la nube.](/learn/modules/principles-cloud-computing/index)<br><br>3 h 11 min - Ruta de aprendizaje - 8 módulos|
+|![Icono de aprendizaje de seguridad y cumplimiento](../media/microsoft-365-security-and-compliance-capabilities.svg)|Obtenga información sobre las áreas de soluciones de seguridad y cumplimiento de Microsoft 365 y las funcionalidades disponibles para ayudar a las empresas a proteger sus empresas y cumplir con los requisitos reglamentarios. Si no está familiarizado con los conceptos básicos de informática en la nube, le recomendamos que tome Conceptos de [nube: principios de informática en la nube.](/learn/modules/principles-cloud-computing/index)<br><br>3 horas 11 min - Learning ruta de acceso - 8 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/what-is-m365/1-introduction/)

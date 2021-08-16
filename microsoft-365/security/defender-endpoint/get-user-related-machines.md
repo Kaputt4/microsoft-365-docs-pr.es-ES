@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 207ecaa9352293aebb907d4b14faab1ac2f47187
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d87efcd940fd9e19c9f28250f85e0f7915febc05
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652112"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255504"
 ---
 # <a name="get-user-related-machines-api"></a>Obtener api de máquinas relacionadas con el usuario
 
@@ -74,7 +74,7 @@ GET /api/users/{id}/machines
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Autorización | String | Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -82,7 +82,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el usuario existe: 200 Aceptar con la lista de [entidades](machine.md) de máquina en el cuerpo. Si el usuario no existe: 404 No encontrado.
+Si se realiza correctamente y el usuario existe: 200 Aceptar con la lista de [entidades](machine.md) de máquina en el cuerpo. Si el usuario no existe: 200 Aceptar con un conjunto vacío.
 
 ## <a name="example"></a>Ejemplo
 

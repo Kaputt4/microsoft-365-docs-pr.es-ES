@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Estamos publicando nuevas directivas de alerta para Microsoft Defender para Office 365. También estamos retirando dos directivas de alerta existentes que se han reemplazado por las nuevas.
-ms.openlocfilehash: 3fc25c50a5e9a2c30ebd06328edf60b5641168035e5275ac58ae81b8b63bf760
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c4edbb59d3328bb933825ab6a85ab561db93741
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856036"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255364"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nuevas directivas de alerta en Microsoft Defender para Office 365
 
@@ -69,8 +69,8 @@ En la tabla siguiente se indica cuándo las nuevas directivas de alertas empezar
 | **Mensajes de correo electrónico que contienen archivos malintencionados quitados después de la entrega** (nueva) | Las alertas se empezarán a desencadenar el 11 de abril de 2021 |
 | **Mensajes de correo electrónico de una campaña se entregaron y se quitaron más tarde** (nueva) | Las alertas empezarán a desencadenarse el 28 de mayo de 2021|
 | **Correos electrónicos malintencionados que se entregaron y se quitaron posteriormente** (nueva) | Las alertas empezarán a desencadenarse el 28 de mayo de 2021|
-| **Mensajes de correo electrónico que contienen direcciones URL de cebo quitados después de la entrega** (existente, va a eliminarse)| La directiva de alerta se quitará el 28 de mayo de 2021. Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes).|
-| **Mensajes de correo electrónico que contienen malware quitados después de la entrega** (existente, va a eliminarse) | La directiva de alerta se quitará el 28 de mayo de 2021. Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes). |
+| **Mensajes de correo electrónico que contienen direcciones URL de cebo quitados después de la entrega** (existente, va a eliminarse)| La directiva de alertas se ha quitado en junio de 2021. Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes).|
+| **Mensajes de correo electrónico que contienen malware quitados después de la entrega** (existente, va a eliminarse) | La directiva de alertas se ha quitado en junio de 2021. Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes). |
 |||
 
 Los cambios de gravedad de las alertas se implantarán en todas las organizaciones antes del 14 de mayo de 2021.

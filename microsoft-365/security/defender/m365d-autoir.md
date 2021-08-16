@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 326910f4b556837b319c53cb1d257af09efbbe7a6ba8b92a4784d38a50b43fbe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09274557ea35c87cb4346e797d1b5e5e26e96aa3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792907"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255184"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Investigación y respuesta automatizadas en Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "53792907"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Si su organización usa [Microsoft 365 Defender,](microsoft-365-defender.md)el equipo de operaciones de seguridad recibe una alerta en el centro de seguridad de Microsoft 365 siempre que se detecte una actividad o artefacto malintencionados o sospechosos. Dado el flujo aparentemente interminable de amenazas que pueden llegar, los equipos de seguridad a menudo se enfrentan al desafío de abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender capacidades de investigación y respuesta automatizadas (AIR) que pueden ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz.
+Si su organización usa [Microsoft 365 Defender,](microsoft-365-defender.md)el equipo de operaciones de seguridad recibe una alerta en el portal de Microsoft 365 Defender siempre que se detecte una actividad o artefacto malintencionado o sospechoso. Dado el flujo aparentemente interminable de amenazas que pueden llegar, los equipos de seguridad a menudo se enfrentan al desafío de abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender capacidades de investigación y respuesta automatizadas (AIR) que pueden ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz.
 
 En este artículo se proporciona información general sobre AIR e incluye vínculos a los siguientes pasos y recursos adicionales.
 
@@ -103,7 +103,7 @@ En Microsoft 365 Defender, cada investigación automatizada correlaciona las se�
 Para ver las investigaciones, vaya a la **página Incidentes.** Seleccione un incidente y, a continuación, seleccione la **pestaña Investigaciones.** Para obtener más información, vea [Detalles y resultados de una investigación automatizada.](m365d-autoir-results.md)
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulte los requisitos previos para la investigación y respuesta automatizadas](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Configurar la investigación automatizada y la respuesta para su organización](m365d-configure-auto-investigation-response.md)

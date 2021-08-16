@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información acerca de cómo funciona la retención para Exchange.
-ms.openlocfilehash: 1ec89ee838c73c0ba0eb50361f8c457a697bd9bb
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 39c8e9ec5a94cf9f50ac4d98ac8a789e6f007949
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538870"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255127"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Más información sobre la retención para Exchange
 
@@ -46,7 +46,7 @@ Otros elementos almacenados en un buzón de correo, como los mensajes de Skype y
 
 Tanto un buzón como una carpeta pública utilizan la [carpeta Elementos recuperables](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) para retener elementos. Sólo las personas a las que se les han asignado permisos de eDiscovery pueden ver los elementos de la carpeta Elementos recuperables de otro usuario.
   
-De manera predeterminada, cuando un usuario elimina un mensaje de una carpeta que no sea la carpeta Elementos eliminados, el mensaje se mueve a esta carpeta. Cuando un usuario elimina un elemento de la carpeta Elementos eliminados, el mensaje se mueve a la carpeta Elementos recuperables. Sin embargo, un usuario puede eliminar temporalmente un elemento de cualquier carpeta (MAYÚS+Supr). Esta acción omite la carpeta Elementos eliminados y coloca el elemento directamente en la carpeta Elementos recuperables.
+Cuando un usuario elimina un mensaje de una carpeta distinta de la carpeta Elementos eliminados, el mensaje se mueve de forma predeterminada a la carpeta Elementos eliminados. Sin embargo, un usuario puede eliminar temporalmente un elemento (Mayús+Eliminar) en cualquier carpeta, lo que omite la carpeta Elementos eliminados y mueve el elemento directamente a la carpeta Elementos recuperables.
   
 Cuando aplica una configuración de retención a los datos de Exchange, un trabajo de temporizador evalúa periódicamente los elementos de la carpeta Elementos recuperables. Si un elemento no coincide con las reglas de al menos una directiva o etiqueta de retención, para retener el elemento este se elimina permanentemente (lo que también se conoce como eliminación permanente) de la carpeta Elementos recuperables.
 
@@ -81,11 +81,19 @@ Cuando los ajustes de retención son sólo de retención o sólo de borrado, las
 
 2. **Si el elemento se elimina** durante el período configurado: el elemento se mueve inmediatamente a la carpeta Elementos recuperables. Si un usuario elimina el elemento o vacía la carpeta Elementos recuperables, el elemento se elimina de forma permanente. En caso contrario, el elemento se elimina permanentemente después de estar en la carpeta Elementos recuperables durante 14 días. 
 
+## <a name="user-notification-of-expiry-date"></a>Notificación de usuario de la fecha de expiración
+
+Las directivas de retención para Exchange, a diferencia de las directivas de retención para las otras cargas de trabajo de Microsoft 365, tienen presencia en el usuario mostrando en la parte superior de cada mensaje de correo electrónico el nombre de la directiva de retención que tiene la fecha de caducidad más corta para el elemento, y la fecha de caducidad calculada para ese elemento. Los usuarios no ven esta notificación si la directiva de retención no elimina elementos (solo retención).
+
+Si se aplica una etiqueta de retención a un mensaje de correo electrónico, siempre se muestra el nombre de esa etiqueta y la fecha de expiración correspondiente, y reemplazará el nombre y la fecha de cualquier directiva de retención aplicada al buzón.
+
+Recuerde que, en este contexto, la fecha de caducidad para la eliminación de un correo electrónico es el momento en que los usuarios pueden esperar a que el mensaje de correo electrónico se mueva automáticamente a la carpeta de elementos recuperables (si no está ya allí). Los correos electrónicos de la carpeta Elementos recuperables no se eliminarán de forma permanente, pero permanecerán allí por motivos de cumplimiento si están sujetos a cualquier configuración de retención para conservarla, o si se encuentran en una suspensión de eDiscovery por motivos legales o de investigación.
+
 ## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
 
 Si un usuario deja la organización y su buzón está incluido en una directiva de retención, el buzón pasa a estado inactivo cuando se elimina la cuenta de Microsoft 365 del usuario. El contenido de un buzón inactivo sigue estando sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estar inactivo, y está disponible para una búsqueda de eDiscovery. Para obtener más información, consulte [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md).
 
-Cuando la configuración de retención ya no se aplica porque los datos se eliminan permanentemente o el período de retención ha expirado, el administrador de Exchange ahora puede [eliminar el buzón](delete-an-inactive-mailbox.md). En este escenario, el buzón inactivo no se elimina automáticamente.
+Cuando la configuración de retención ya no se aplica porque los datos se eliminan permanentemente o el período de retención ha expirado, el administrador de Exchange ahora puede [eliminar el buzón inactivo](delete-an-inactive-mailbox.md). En este escenario, el buzón inactivo no se elimina automáticamente.
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 

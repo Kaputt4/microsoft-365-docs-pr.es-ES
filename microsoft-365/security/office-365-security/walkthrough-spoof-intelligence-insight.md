@@ -19,12 +19,13 @@ description: Los administradores pueden aprender a usar la directiva de intelige
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 696019f540bd09fd504400be182e7eb4ca810d6d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 0ea429fb9817f7daa9cbae62b4a56837a1592d34
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541905"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58254965"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Administrar remitentes suplantados con la directiva de inteligencia suplantada y la información de inteligencia suplantada en EOP
 
@@ -34,8 +35,8 @@ ms.locfileid: "53541905"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-> [!NOTE]
-> En este artículo se describe la experiencia de administración de remitentes suplantada anterior que se está reemplazando (la directiva de inteligencia suplantada **en** la página Directivas contra **correo** no deseado). Para obtener más información acerca de la nueva experiencia (la pestaña **Suplantación** en la lista de inquilinos permitidos o bloqueados), vea [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)
+> [!IMPORTANT]
+> En este artículo se describe la experiencia de administración de remitentes suplantada anterior que se está reemplazando (la directiva de inteligencia suplantada **en** la página Directivas contra **correo** no deseado). Para obtener más información acerca  de la nueva experiencia (la pestaña Suplantación de dominio en la lista de inquilinos permitidos o bloqueados), vea [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
 En Microsoft 365 organizaciones con buzones en organizaciones de Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, los mensajes de correo electrónico entrantes se protegen automáticamente contra la suplantación de correo electrónico por parte de EOP a partir de octubre de 2018. EOP usa **la inteligencia de** suplantación de identidad como parte de la defensa general de su organización contra el phishing. Para obtener más información, vea Protección contra [la suplantación en EOP](anti-spoofing-protection.md).
 
@@ -79,7 +80,10 @@ Hay dos maneras de permitir y bloquear remitentes suplantados:
 
 ### <a name="manage-spoofed-senders-in-the-spoof-intelligence-policy"></a>Administrar remitentes suplantados en la directiva de inteligencia suplantación de identidad
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Sección de directivas** \> **Anti-spam**.
+> [!IMPORTANT]
+> En este artículo se describe la experiencia de administración de remitentes suplantada anterior que se está reemplazando (la directiva de inteligencia suplantada **en** la página Directivas contra **correo** no deseado). Para obtener más información acerca  de la nueva experiencia (la pestaña Suplantación de dominio en la lista de inquilinos permitidos o bloqueados), vea [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
+
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas en \>  \>  \>  la **sección** Directivas.
 
 2. En la **página Directivas contra correo** no deseado, seleccione **Suplantar** la directiva de inteligencia haciendo clic en el nombre.
 
@@ -130,6 +134,9 @@ Hay dos maneras de permitir y bloquear remitentes suplantados:
 
 #### <a name="use-powershell-to-manage-spoofed-senders"></a>Usar PowerShell para administrar remitentes suplantados
 
+> [!IMPORTANT]
+> En este artículo se describe la experiencia de administración de remitentes suplantada anterior que se está reemplazando (la directiva de inteligencia suplantada **en** la página Directivas contra **correo** no deseado). Para obtener más información acerca  de la nueva experiencia (la pestaña Suplantación de dominio en la lista de inquilinos permitidos o bloqueados), vea [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
+
 Para ver remitentes permitidos y bloqueados en la inteligencia de suplantación de identidad, use la siguiente sintaxis:
 
 ```powershell
@@ -176,6 +183,9 @@ Para configurar remitentes permitidos y bloqueados en la inteligencia de suplant
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-PhishFilterPolicy](/powershell/module/exchange/set-phishfilterpolicy).
 
 ### <a name="manage-spoofed-senders-in-the-spoof-intelligence-insight"></a>Administrar remitentes suplantados en la información de inteligencia suplantada
+
+> [!IMPORTANT]
+> En este artículo se describe la experiencia de administración de remitentes suplantada anterior que se está reemplazando (la directiva de inteligencia suplantada **en** la página Directivas contra **correo** no deseado). Para obtener más información acerca  de la nueva experiencia (la pestaña Suplantación de dominio en la lista de inquilinos permitidos o bloqueados), vea [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
 1. En el Centro de & cumplimiento, vaya al Panel **de administración de** \> **amenazas.**
 
@@ -228,7 +238,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 Para comprobar que ha configurado la inteligencia suplantación de identidad con remitentes a los que se les permite y no se les permite suplantación de identidad, siga uno de los pasos siguientes:
 
-- **Colaboración & correo electrónico** \> **Directivas & reglas** \> **Sección** Directivas de página De amenazas Sección Directivas de suplantación de correo no deseado Seleccione Mostrarme los remitentes que ya revisé seleccione la pestaña Sus dominios o dominios externos y compruebe el valor ¿Permitido suplantar? para el \>  \>  \>  \>  \> remitente.   
+- **Colaboración & correo electrónico** \> **Directivas & reglas** \> **Directivas de amenazas** \> **Correo** no deseado  en la sección Directivas La directiva de inteligencia suplantación de identidad seleccione Mostrarme los \>  \> **remitentes** \>   que ya revisé seleccione la pestaña Sus dominios o dominios externos y compruebe el valor ¿Permitido suplantar?  para el remitente.
 
 - En PowerShell, ejecute los siguientes comandos para ver los remitentes a los que se les permite suplantación de identidad:
 

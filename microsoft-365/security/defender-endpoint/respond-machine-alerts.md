@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 01f9e286c785defa2cc182685be300e695ee181ea9f51de71c821b2290a665ab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf685c61df92a2a5599e2ba8deb407edb5b6a5f1
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829080"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255089"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -85,6 +85,10 @@ Para obtener más información sobre la respuesta en directo, vea [Investigar en
 
 Como parte del proceso de investigación o respuesta, puedes recopilar un paquete de investigación desde un dispositivo. Al recopilar el paquete de investigación, puedes identificar el estado actual del dispositivo y comprender aún más las herramientas y técnicas usadas por el atacante.
 
+> [!IMPORTANT]
+>
+> - Estas acciones de respuesta solo están disponibles para dispositivos Windows 10 versión 1703 o posterior.
+
 Para descargar el paquete (archivo Zip) e investigar los eventos que se produjeron en un dispositivo
 
 1. Selecciona **Recopilar paquete de investigación** en la fila de acciones de respuesta en la parte superior de la página del dispositivo.
@@ -107,7 +111,7 @@ El paquete contiene las siguientes carpetas:
 
 ****
 
-|Folder|Description|
+|Folder|Descripción|
 |:---|:---------|
 |Autoruns|Contiene un conjunto de archivos que cada uno representa el contenido del registro de un punto de entrada de inicio automático (ASEP) conocido para ayudar a identificar la persistencia del atacante en el dispositivo. <p> <div class="alert"><b>NOTA:</b> Si no se encuentra la clave del Registro, el archivo contendrá el siguiente mensaje: "ERROR: el sistema no pudo encontrar la clave o el valor del Registro especificados".<div>|
 |Programas instalados|Este .CSV contiene la lista de programas instalados que pueden ayudar a identificar lo que está instalado actualmente en el dispositivo. Para obtener más información, [vea Win32_Product clase](https://go.microsoft.com/fwlink/?linkid=841509).|
