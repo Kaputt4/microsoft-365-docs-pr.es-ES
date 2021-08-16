@@ -29,13 +29,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: Los perfiles de AutoPilot te ayudan a controlar Windows se instala en dispositivos de usuario. Los perfiles contienen configuraciones predeterminadas y opcionales, como omitir la instalación de Cortana.
-ms.openlocfilehash: 86f8718131f0a0b93e18e65e39e02e7d65aded1a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Los perfiles de AutoPilot te ayudan a controlar Windows se instala en dispositivos de usuario. Los perfiles contienen configuraciones predeterminadas y opcionales, como omitir Cortana instalación.
+ms.openlocfilehash: 67ad6e92583d71207e2807657a7ad00261e1249291e2e6a7546f544ea924b394
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896331"
 ---
 # <a name="about-autopilot-profile-settings"></a>Información sobre la configuración de los perfiles de AutoPilot
 
@@ -47,7 +47,7 @@ Puedes usar perfiles de AutoPilot para controlar cómo se Windows en dispositivo
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Omitir el registro de Cortana, OneDrive y OEM  <br/> |Omite la instalación de aplicaciones de consumidor como Cortana y los OneDrive. El usuario del dispositivo puede instalar estos más adelante siempre que el usuario sea un administrador local en el dispositivo. El registro del fabricante original se omite porque el dispositivo se administrará Microsoft 365 Empresa Premium.  <br/> |
+|Omitir Cortana, OneDrive y registro OEM  <br/> |Omite la instalación de aplicaciones de consumidor como Cortana y personal OneDrive. El usuario del dispositivo puede instalar estos más adelante siempre que el usuario sea un administrador local en el dispositivo. El registro del fabricante original se omite porque el dispositivo se administrará Microsoft 365 Empresa Premium.  <br/> |
 |Experiencia de inicio de sesión con la marca de su empresa  <br/> |Si tu empresa tiene una página Agregar la marca de tu empresa [Microsoft 365](../admin/setup/customize-sign-in-page.md)inicio de sesión, el usuario del dispositivo tendrá esa experiencia al iniciar sesión.  <br/> |
 |Inscripción automática de MDM con cuentas de AAD configuradas.  <br/> |La identidad de usuario la administrará Azure Active Directory y los usuarios iniciarán sesión en Windows y Microsoft 365 con sus Microsoft 365 Empresa Premium credenciales.  <br/> |
    

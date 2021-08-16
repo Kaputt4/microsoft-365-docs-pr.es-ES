@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f342a4a104fb908bc8b8c05d2d53d190de8d64c9a826fb87be641e63921bb456
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 478a187494ff247c7d3e8a258e8ac73eb921d4d2
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793831"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346033"
 ---
 # <a name="get-file-related-alerts-api"></a>Obtener api de alertas relacionadas con archivos
 
@@ -44,6 +44,7 @@ Recupera una colección de alertas relacionadas con un hash de archivo determina
 ## <a name="limitations"></a>Limitaciones
 
 1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+2. Solo se admite la función hash SHA-1 (no MD5 ni SHA-256).
 
 ## <a name="permissions"></a>Permisos
 
@@ -72,7 +73,7 @@ GET /api/files/{id}/alerts
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Autorización|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -80,7 +81,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el archivo existe: 200 Aceptar con la lista [de](alerts.md) entidades de alerta en el cuerpo. Si el archivo no existe: 404 No encontrado.
+Si se realiza correctamente y el archivo existe: 200 Aceptar con la lista [de](alerts.md) entidades de alerta en el cuerpo. Si el archivo no existe: 200 Aceptar con un conjunto vacío.
 
 ## <a name="example"></a>Ejemplo
 

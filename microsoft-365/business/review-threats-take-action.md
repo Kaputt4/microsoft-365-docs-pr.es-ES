@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtén información sobre cómo revisar y administrar las amenazas detectadas por Antivirus de Microsoft Defender en tus Windows 10 dispositivos.
-ms.openlocfilehash: 15e99fb75e4a3ac1af842ca7d0b900e02cbc6bd4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f2edd27c527cc2b9fd8c986191a0bad5c0844da68880f8d8d775491e3480babd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912791"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882101"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Revisar las amenazas detectadas y actuar al respecto
 
@@ -32,7 +32,7 @@ Antivirus de Microsoft Defender detecta y protege contra los siguientes tipos de
 - Intentos de suplantación de identidad
 - Intentos de robo de datos
 
-Como profesional o administrador de TI, puede ver información sobre las detecciones de amenazas en Windows 10 dispositivos inscritos en [Intune](/mem/intune/enrollment/device-enrollment) en el centro de administración de Microsoft 365 administración. Verá información de resumen, como:
+Como profesional o administrador de TI, puede ver información sobre las detecciones de amenazas en Windows 10 dispositivos inscritos en [Intune](/mem/intune/enrollment/device-enrollment) en el Centro de administración de Microsoft 365. Verá información de resumen, como:
 
 - Cuántos dispositivos necesitan protección antivirus
 - Cuántos dispositivos no cumplen las directivas de seguridad
@@ -40,8 +40,8 @@ Como profesional o administrador de TI, puede ver información sobre las detecci
 
 Tienes varias opciones para ver información específica sobre dispositivos y detecciones de amenazas:
 
-- La **página Dispositivos activos** del centro Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administración.</a> Consulta [Administrar detecciones de amenazas en la página Dispositivos activos](#manage-threat-detections-on-the-active-devices-page) en este artículo.
-- La **página Amenazas activas** del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro Microsoft 365 administración.</a> Consulte [Administrar detecciones de amenazas en la página Amenazas activas](#manage-threat-detections-on-the-active-threats-page) de este artículo.
+- La **página Dispositivos activos** de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Consulta [Administrar detecciones de amenazas en la página Dispositivos activos](#manage-threat-detections-on-the-active-devices-page) en este artículo.
+- La **página Amenazas activas** del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Consulte [Administrar detecciones de amenazas en la página Amenazas activas](#manage-threat-detections-on-the-active-threats-page) de este artículo.
 - La **página Antivirus** de <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft Endpoint Manager</a>. Consulte [Manage threat detections in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) en este artículo.
 
 Para obtener más información, vea [Amenazas detectadas por Antivirus de Microsoft Defender](threats-detected-defender-av.md).
@@ -50,7 +50,7 @@ Para obtener más información, vea [Amenazas detectadas por Antivirus de Micros
 
 El siguiente procedimiento se aplica a los clientes que tienen Microsoft 365 Empresa Premium.
 
-1. Vaya al Centro Microsoft 365 administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> e inicie sesión.
+1. Vaya al Centro de administración de Microsoft 365 e <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> inicie sesión.
 
 2. En la página de navegación, seleccione  >  **Dispositivos dispositivos activos**. Verá una lista de dispositivos activos y detalles, como el estado de protección, el estado de protección antivirus (AV) y el número de amenazas activas detectadas.
 
@@ -63,7 +63,7 @@ El siguiente procedimiento se aplica a los clientes que tienen Microsoft 365 Emp
 > [!NOTE]
 > La **Antivirus de Microsoft Defender** y la **página Amenazas activas** se están implantando en fases, por lo que es posible que no tenga acceso inmediato a ellas.
 
-1. Vaya al Centro Microsoft 365 administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> e inicie sesión.
+1. Vaya al Centro de administración de Microsoft 365 e <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> inicie sesión.
 
 2. En la **Antivirus de Microsoft Defender,** seleccione **Ver amenazas activas.** (Como alternativa, en el panel de navegación, seleccione **Estado**  >  **Amenazas & antivirus**.)
 
@@ -102,10 +102,10 @@ En la tabla siguiente se describen las acciones que puede ver en Microsoft Endpo
 
 | Acción | Descripción |
 |--|--|
-| Reinicio | Fuerza a Windows 10 dispositivo a reiniciarse en cinco minutos.<br><br>**IMPORTANTE:** El propietario o usuario del dispositivo no se notifica automáticamente del reinicio y podría perder el trabajo no guardado. |
+| Restart | Fuerza a Windows 10 dispositivo a reiniciarse en cinco minutos.<br><br>**IMPORTANTE:** El propietario o usuario del dispositivo no se notifica automáticamente del reinicio y podría perder el trabajo no guardado. |
 | Examen rápido | Inicia un examen rápido del antivirus en el dispositivo, centrándose en ubicaciones comunes donde es posible que se registre malware, como las claves del Registro y las carpetas de inicio conocidas Windows inicio. Los resultados se envían [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Examen completo | Inicia un examen antivirus completo en el dispositivo, centrándose en ubicaciones comunes donde se puede registrar malware e incluyendo todos los archivos y carpetas del dispositivo. Los resultados se envían [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Sincronizar | Requiere que un dispositivo se active con Intune (parte de Microsoft Endpoint Manager). Cuando el dispositivo se comprueba, el dispositivo recibe cualquier acción o directivas pendientes asignadas al dispositivo. |
+| Sincronización | Requiere que un dispositivo se active con Intune (parte de Microsoft Endpoint Manager). Cuando el dispositivo se comprueba, el dispositivo recibe cualquier acción o directivas pendientes asignadas al dispositivo. |
 | Actualizar firmas | Requiere que el dispositivo obtenga actualizaciones [de inteligencia de seguridad](https://go.microsoft.com/fwlink/?linkid=2149926) para la protección antivirus y antimalware. |
 
 > [!TIP]

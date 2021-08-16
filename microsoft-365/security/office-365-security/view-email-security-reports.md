@@ -19,12 +19,12 @@ description: Los administradores pueden aprender a buscar y usar los informes de
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc5cc9f61a1a7a34b9078cc2355f6693d2b3592f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 83371fd6db32661ca73fd6c7cb741a9b42533df9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258779"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -128,7 +128,7 @@ Si selecciona Desglose **de gráficos por gravedad,** los siguientes gráficos e
 
 La siguiente información se muestra en la tabla de detalles debajo del gráfico:
 
-- **Fecha**
+- **Date**
 - **Directiva DLP** (**Ver datos por DLP Exchange reglas de transporte)**
 - **Regla de transporte**
 - **Subject**
@@ -383,7 +383,7 @@ En la **página Informe de detecciones de malware,** el gráfico muestra la sigu
 
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Dirección del remitente**
 - **Dirección de destinatario**
 - **Id. de** mensaje: disponible en el **campo de encabezado Id. de** mensaje en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (tenga en cuenta los corchetes angulares).
@@ -447,11 +447,11 @@ En la **página Informe** de correo suplantado, puede filtrar tanto el gráfico 
 
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Usuario suplantado**
 - **Infraestructura de envío**
 - **Tipo de suplantación**
-- **Resultado**
+- **Result**
 - **Código de resultados**
 - **SPF**
 - **DKIM**
@@ -464,7 +464,7 @@ Para obtener más información acerca de los códigos de resultados de autentica
 
 El **informe Envíos** muestra información sobre los elementos que los administradores han notificado a Microsoft para su análisis. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Envíos** y, a continuación, haga clic **en Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/adminSubmissionReport> . Para ir a [envíos de administrador en el portal de Microsoft 365 Defender,](admin-submission.md)haga clic **en Ir a Envíos**.
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Envíos** y, a continuación, haga clic **en Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/adminSubmissionReport> . Para ir a [envíos de administrador en el portal de Microsoft 365 Defender,](admin-submission.md)haga clic **en Ir a Envíos**. Los administradores podrán ver el informe durante los últimos 30 días. 
 
 ![Widget Envíos en la página Informes de colaboración & correo electrónico](../../media/submissions-report-widget.png)
 
@@ -483,7 +483,7 @@ En la **página Envíos,** puede filtrar tanto el gráfico como la tabla de deta
 - **Identificador de envío**
 - **Id. de mensaje de red**
 - **Sender**
-- **Nombre**
+- **Name**
 - **Enviado por**
 - **Motivo para enviar**:
   - **No es correo no deseado**
@@ -567,7 +567,7 @@ En la vista Ver  **datos por \> phishing** de correo electrónico y desglose de 
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Subject**
 - **Remitente**
 - **Destinatarios**
@@ -608,7 +608,7 @@ En la vista Ver  **datos por malware de \> correo** electrónico y desglose de g
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Subject**
 - **Remitente**
 - **Destinatarios**
@@ -646,7 +646,7 @@ En las **vistas Desglose** de gráficos por tipo de directiva y Ver datos por co
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Subject**
 - **Remitente**
 - **Destinatarios**
@@ -796,7 +796,7 @@ En la **vista Ver datos por invalidación** del sistema y Desglose del gráfico 
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Subject**
 - **Remitente**
 - **Destinatarios**
@@ -919,7 +919,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

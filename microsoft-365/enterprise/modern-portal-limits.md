@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre las recomendaciones de rendimiento para los sitios modernos en SharePoint Online, como limitar las llamadas a Sharepoint y los extremos externos.
-ms.openlocfilehash: 2429869c5397e0260876ee5a765ea18ae3fc42a1
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6ae0ab89d0b940d41ee2f8056d4cdaf35f7c957784a315612413cb37fd219c58
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899216"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Límites de sitio del portal moderno en línea
 

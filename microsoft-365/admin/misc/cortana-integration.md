@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Los usuarios con cuentas profesionales o educativas válidas pueden Cortana experiencias Microsoft 365 que cumplan Office 365 promesas de seguridad de nivel empresarial.
-ms.openlocfilehash: f81fd357ec69a8cf50c2f55875a65b61b0f7d9348662f8c0c1f8f11864419630
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8462d4bf3838c5080a7f4f00380fa03dab2c01b9
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824205"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346105"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -173,7 +173,7 @@ Hay dos maneras de considerar el funcionamiento de Cortana en su empresa:
 
 Desactivar el acceso de Cortana a los datos alojados de Microsoft de su organización
 
-1. En el Centro de administración de Microsoft 365, seleccione **Configuración** > **Configuración de la organización** y seleccione **Cortana**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, seleccione **Configuración**  >  **Org Configuración** y seleccione **Cortana**.
 
 2. Anule la selección de la casilla **Permitir a Cortana en Windows 10 (versión 1909 y anteriores) y a la aplicación de Cortana en iOS y Android acceder a datos alojados en Microsoft en nombre de personas de su organización** para deshabilitar las experiencias conectadas de Cortana.
 

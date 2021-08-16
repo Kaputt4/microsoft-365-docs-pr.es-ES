@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 204530b8b4a87215053ddcb0434e40e45271da3d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 57a324310458dc15f5edcd6012ab381bb4d5041d902b8871d85cb318f0e7023e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873679"
 ---
 # <a name="example-of-an-identity-based-attack"></a>Ejemplo de un ataque basado en identidad
 
@@ -40,7 +40,7 @@ Microsoft Defender for Identity puede ayudar a detectar intentos malintencionado
 
 ## <a name="analyzing-the-attack-in-microsoft-defender-for-identity"></a>Análisis del ataque en Microsoft Defender for Identity
 
-Microsoft 365 Defender permite a los analistas filtrar alertas por origen de detección en la **pestaña Alertas** de la página incidentes. En el siguiente ejemplo, el origen de detección se filtra a **Defender for Identity**. 
+Microsoft 365 Defender permite a los analistas filtrar alertas por origen de detección en la **pestaña** Alertas de la página incidentes. En el siguiente ejemplo, el origen de detección se filtra a **Defender for Identity**. 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Ejemplo de filtrado del origen de detección de Defender for Identity":::
 
@@ -91,7 +91,7 @@ Un analista puede buscar rápidamente palabras clave escribiendo la palabra clav
 
 Consulta la ruta [de la investigación de suplantación](first-incident-path-phishing.md) de identidad.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 6d453a8b6e5c4947c0fb03131c539b083227c28a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cb831d676aafcc202fbe701aec0b5ae6657988607cb8bb7d097cf94b6f78ad70
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844651"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869610"
 ---
-# <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveles de automatización en capacidades automatizadas de investigación y corrección
+# <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveles de automatización en las funcionalidades automatizadas de investigación y corrección
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -64,7 +64,7 @@ En la tabla siguiente se describe cada nivel de automatización y cómo funciona
 
 - Puedes mantener la configuración de automatización predeterminada o cambiarla según tus necesidades organizativas. Para cambiar la configuración, [establezca el nivel de automatización](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
 

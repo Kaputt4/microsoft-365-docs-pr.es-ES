@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general sobre cómo compartir los archivos de negocio.
-ms.openlocfilehash: 408979728e4f834acb57f39a6eed3ac40057feba
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a377735f077df81556621a06e2367929d966aaf45f36e9f4425309f5dabaae0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867204"
 ---
 # <a name="overview-of-sharing-business-files"></a>Información general sobre cómo compartir archivos empresariales
 
@@ -50,7 +50,7 @@ Obtenga más información sobre cómo [compartir archivos fuera de la](securely-
 ¿Compartir como parte de un proyecto? ¿O como parte de una relación continua con un socio o proveedor de negocios? Puede poner un poco más de tiempo y configurar un equipo en Microsoft Teams y tener un lugar continuo para compartir y trabajar juntos. Es fácil trabajar con personas ajenas a su negocio e incluso puede configurar canales independientes para proveedores o socios adicionales para mantener todo recto.
 
 1. Cree el equipo.
-1. Upload los archivos.
+1. Cargue sus archivos.
 1. Invite a sus socios o proveedores al equipo como usuarios "invitados" para darles acceso.
 
 Obtenga más información sobre cómo [compartir archivos fuera de la organización con un vínculo seguro.](securely-share-files-externally.md)
@@ -60,7 +60,7 @@ Obtenga más información sobre cómo [compartir archivos fuera de la organizaci
 Si está trabajando con archivos que comparte dentro de su empresa, también es buena idea configurar un equipo en Microsoft Teams. Comparte los archivos allí y todos los usuarios de tu empresa pueden encontrarlos y editarlos fácilmente y sabes que todos están trabajando en la misma página.
 
 1. Crea el equipo e invita a tu equipo a él.
-1. Upload los archivos.
+1. Cargue sus archivos.
 
 Obtenga más información sobre [el almacenamiento de archivos de la empresa](files-to-sharepoint.md) y el almacenamiento de archivos de [empleados.](files-to-onedrive.md)
 

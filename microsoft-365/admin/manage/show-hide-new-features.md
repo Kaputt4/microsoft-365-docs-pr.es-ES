@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Decida qué características Office mostrar u ocultar cuando un usuario elija Ayuda > Novedades de su Aplicación de Office en Windows mediante la característica "Novedades de Office" en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 882616a8ed0f4a4198bd7987ea596fe2c0cfc83dbe844e2ca5e354bbca768bcc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 22801436a4502dd27e9b290080bcb6f1936550ac
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824580"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346261"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Administrar qué Office aparecen en Novedades
 
@@ -39,14 +39,13 @@ Puede controlar cuáles de estos mensajes de características se muestran a los 
 
 ## <a name="show-or-hide-new-features"></a>Mostrar u ocultar nuevas características
 
-1. En el Centro de administración de Microsoft 365, en **Configuración**, elija **Configuración de la organización**.
-2. En la **pestaña** Servicios, elija **Novedades de Office**.
-3. Al hacer clic en el nombre de la característica, aparece un panel desplegable con la siguiente información:
+1. En el Centro de administración de Microsoft 365, en **Configuración**, elija Configuración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"></a>la organización **,** seleccione la pestaña Servicios y, a continuación, seleccione Novedades **de Office**.
+1. Al hacer clic en el nombre de la característica, aparece un panel desplegable con la siguiente información:
      - Una breve descripción de la característica.
      - Un vínculo a un artículo para obtener más información sobre la característica.
      - Las Office en las que aparece la característica.
      - La primera versión (versión) en la que está disponible la característica para ese canal.
-4. Elija **Ocultar de los usuarios**. O bien, si ocultó anteriormente la característica, elija **Mostrar a los usuarios**.
+1. Elija **Ocultar de los usuarios**. O bien, si ocultó anteriormente la característica, elija **Mostrar a los usuarios**.
 
 También puede seleccionar varias  características en la página Administrar qué Office aparecen en Novedades y, a continuación, elija **Ocultar** o **Mostrar**.
 

@@ -1,9 +1,9 @@
 ### YamlMime:Hub
-title: Programador para Microsoft 365
+title: Planificador para Microsoft 365
 summary: Obtenga información sobre cómo configurar scheduler para Microsoft 365 programar reuniones con Cortana.
 brand: m365
 metadata:
-  title: Programador para Microsoft 365
+  title: Planificador para Microsoft 365
   description: Obtenga información sobre cómo configurar scheduler para Microsoft 365 programar reuniones con Cortana.
   ms.service: exchange-online
   ms.topic: hub-page
@@ -21,7 +21,7 @@ additionalContent:
         - title: Confianza y privacidad
           summary: Obtenga información sobre cómo Scheduler for Microsoft 365 se asegura de que su confianza y privacidad estén protegidos.
           url: scheduler-trust-privacy.md
-        - title: Configuración del programador para Microsoft 365
+        - title: Configuración del Planificador para Microsoft 365
           summary: Obtenga información sobre lo que se necesita para configurar scheduler para Microsoft 365.
           url: scheduler-setup.md
         - title: Use Scheduler para Microsoft 365

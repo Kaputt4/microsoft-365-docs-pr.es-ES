@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtenga información sobre Antivirus de Microsoft Defender protege los dispositivos Windows de amenazas de software, como virus, malware y spyware.
-ms.openlocfilehash: 7c5d000e2a8c30e17d1f890cef69fe88beed75bb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 79ec44a44c3939a4a868b98d75ab4f24eaf949fcd9bbafb7c0a3173e267f4680
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896311"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Amenazas detectadas por Antivirus de Microsoft Defender
 
@@ -64,7 +64,7 @@ Cuando se detectan amenazas Antivirus de Microsoft Defender, suceden las siguien
 
 - Los usuarios [reciben notificaciones en Windows](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e). 
 - Las detecciones se enumeran en [la Seguridad de Windows en](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) la página Historial **de** protección.  
-- Si ha protegido los dispositivos [de Windows 10](secure-win-10-pcs.md) y los inscribió en [Intune](/mem/intune/enrollment/windows-enrollment-methods)y su organización tiene 800 o menos dispositivos inscritos, verá detecciones de amenazas e información en el Centro  de administración de Microsoft 365 en la página Amenazas y **antivirus,** <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">al</a> que puede acceder desde la tarjeta **Antivirus de Microsoft Defender** en la página Principal (o desde el panel de navegación seleccionando Amenazas de estado  >  **& antivirus).**
+- Si ha protegido los dispositivos [de Windows 10](secure-win-10-pcs.md) y los inscribió en [Intune](/mem/intune/enrollment/windows-enrollment-methods)y su organización tiene 800 o menos dispositivos inscritos, verá detecciones de amenazas e información en el  <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> en la página Amenazas y **antivirus,** **a** la que puede acceder desde la tarjeta Antivirus de Microsoft Defender en la página principal (o desde el panel de navegación seleccionando Amenazas de estado  >  **& antivirus).**
 
     Si su organización tiene más de 800 dispositivos inscritos en Intune, se le pedirá que vea las detecciones de amenazas y los conocimientos de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) en lugar de desde la página Amenazas y **antivirus.**
  

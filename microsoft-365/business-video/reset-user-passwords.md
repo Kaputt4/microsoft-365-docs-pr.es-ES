@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo restablecer las contraseñas de usuario Microsoft 365 para empresas.
-ms.openlocfilehash: 42832bd48f637589687b75c4995ae58154b62226
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: db89626096f151f9ebc446e08ff970a8f02c4aa2a966f6c882a7012745b96f07
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896516"
 ---
 # <a name="reset-passwords-for-your-users"></a>Restablecer contraseñas para los usuarios
 
@@ -37,7 +37,7 @@ En Microsoft 365 para empresas, puede restablecer las contraseñas de los usuari
 ## <a name="try-it"></a>¿Se atreve?
 
 1. Cuando un usuario solicite una nueva contraseña, recibirá una solicitud de restablecimiento de contraseña por correo electrónico. Para restablecer la contraseña, abra el iniciador de aplicaciones y seleccione **Administrador**.
-1. En el Microsoft 365 de administración, seleccione **Usuarios**, **Usuarios** activos y, a continuación, seleccione el icono de clave junto al usuario que solicitó el restablecimiento.
+1. En el Centro de administración de Microsoft 365, seleccione **Usuarios**, **Usuarios** activos y, a continuación, seleccione el icono de clave junto al usuario que solicitó el restablecimiento.
 1. Seleccione **Generar automáticamente la contraseña para** que se cree automáticamente una contraseña aleatoria.
 1. Seleccione **Restablecer**.
 1. Active la **casilla Enviar contraseña en correo** electrónico.

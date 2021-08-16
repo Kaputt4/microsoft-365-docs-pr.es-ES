@@ -13,12 +13,12 @@ ms.collection:
 description: Aprende a revisar los mensajes que se notifican y a enviar comentarios a los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 850b5846c8028342dea03bcc93c1709ef460e1ba
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: a8f278d94235f4fc36e2c05c1cfe8724843f9ff3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538950"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258750"
 ---
 # <a name="admin-review-for-reported-messages"></a>Revisión del administrador para los mensajes de los que se informe
 
@@ -53,18 +53,18 @@ Solo podrá marcar y notificar a los usuarios los resultados de la revisión si 
 
 1. En el Microsoft 365 Defender, vaya directamente a la **página Envíos:** [ https://security.microsoft.com/reportsubmission}(https://security.microsoft.com/reportsubmission) .
 
-2. Haga **clic en Mensajes notificados por** el usuario y, a continuación, seleccione el mensaje que desea marcar y notificar. 
+2. Haga **clic en Mensajes notificados por** el usuario y, a continuación, seleccione el mensaje que desea marcar y notificar.
 
-3. Seleccione la **lista desplegable Marcar** como y notificar y, a continuación, seleccione **No** se encontraron amenazas, **Suplantación** de identidad o **Correo no deseado.**  
+3. Seleccione la **lista desplegable Marcar** como y notificar y, a continuación, seleccione **No** se encontraron amenazas, **Suplantación** de identidad o **Correo no deseado.**
 
    > [!div class="mx-imgBorder"]
    > ![Enviar mensajes desde el portal](../../media/admin-review-send-message-from-portal.png)
 
-El mensaje notificado se marcará como falso positivo o falso negativo, y se enviará automáticamente un correo electrónico desde el portal que notificará al usuario que ha notificado el mensaje. 
+El mensaje notificado se marcará como falso positivo o falso negativo, y se enviará automáticamente un correo electrónico desde el portal que notificará al usuario que ha notificado el mensaje.
 
 ## <a name="customize-the-messages-used-to-notify-users"></a>Personalizar los mensajes usados para notificar a los usuarios
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & de reglas de amenazas página Otras sección Configuración del \>  \>  mensaje notificado \>  por el \> **usuario.**
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas directivas de amenazas El usuario ha notificado la configuración del mensaje en la \>  \>  \>  **sección** Otros.
 
 2. En la página **Envíos** de usuario, si desea especificar el nombre para mostrar del remitente **Office 365,** active la casilla Especificar una dirección de correo electrónico para usarla como remitente en la sección Notificaciones de correo electrónico para los **resultados** de la revisión de administrador y escriba el nombre que desea usar. La dirección de correo electrónico que estará visible en Outlook y todas las respuestas irán allí.
 

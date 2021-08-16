@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Busque, pruebe e implemente aplicaciones asociadas de Microsoft y Microsoft para usuarios y grupos de su organización desde el portal de aplicaciones integradas en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 7a4daff76262e2fc08b5d205eba81bd8016718f8b7461c930a5967454cdaa2eb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5bcbdebbacf8d9e4710dd7f9168d3f6dbcb4af5a
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824545"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346129"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Prueba e implementación de Aplicaciones Microsoft 365 asociados en el portal de aplicaciones integradas
 
@@ -60,7 +60,7 @@ Puede administrar las pruebas y la implementación de las licencias adquiridas A
 
 Puedes encontrar, probar e implementar completamente aplicaciones publicadas que aún no aparecen en la lista en la página Aplicaciones integradas. Al comprar y otorgar licencias a las aplicaciones desde el Centro de administración, puedes agregar aplicaciones de partners de Microsoft y Microsoft a tu lista desde una única ubicación.
 
-1. En el Centro de administración, en el panel de navegación izquierdo, **elija Configuración** y, a continuación, elija **Aplicaciones integradas.**
+1. En el Centro de administración, en el panel de navegación izquierdo, **elija Configuración** y, a continuación, elija <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**Aplicaciones integradas.**</a>
 
 2. Selecciona **Obtener aplicaciones** para obtener una vista de las aplicaciones.
 
@@ -289,7 +289,7 @@ Hay dos casos en los que un Exchange no podrá implementar un complemento:
 - Si un complemento está vinculado a dos o más complementos y webapps, y al menos uno de estos complementos lo implementa otro administrador (exchange/global) y la asignación de usuario no es uniforme. Solo se permite la implementación de complementos cuando la asignación de usuario es la misma para todas las aplicaciones ya implementadas.  
 
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>¿Qué rol de administrador necesito para tener acceso a aplicaciones integradas?
 
