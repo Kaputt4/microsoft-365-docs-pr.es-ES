@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Cree un buzón de sala o equipamiento para que todos los usuarios de su organización puedan reservarlo para reuniones o eventos con Outlook. '
-ms.openlocfilehash: 44233261f266a6caf4b4bea78d0dbf83d98daefe537121e0ba37748e71900462
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b5db5cfbbcacf501a280df98c4d1f9fc21fe509
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824915"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346777"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Buzones de sala y equipamiento
 
@@ -61,7 +61,7 @@ Para usar buzones de equipamiento o de sala, abra Outlook desde su equipo o inic
     
 ## <a name="set-up-room-and-equipment-mailboxes"></a>Administrar buzones de sala y equipamiento
 
-Para configurar un buzón de correo de sala o equipo, vaya al Centro de administración de Microsoft 365. (Necesitará tener permiso de administrador para hacer esto). Cree el buzón y dígales a todos que pueden comenzar a reservarlo para reuniones y eventos.
+Para configurar un buzón de sala o equipamiento, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. (Necesitará tener permiso de administrador para hacer esto). Cree el buzón y dígales a todos que pueden comenzar a reservarlo para reuniones y eventos.
   
 1. En el centro de administración, vaya a la página **Recursos** \> [Salas y equipamiento](https://go.microsoft.com/fwlink/p/?linkid=2067334).
   

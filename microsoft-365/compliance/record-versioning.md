@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información acerca de los registros para que pueda implementar la solución de administración de registros en Microsoft 365.
-ms.openlocfilehash: 41967ee8372335bc60a12bd200154c70a1d7ce883ec895d8f9cc3b6af6346672
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1259065e2f2fb3e2ee3ad09405e365df7fd98767
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855739"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356329"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usar el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive
 
@@ -48,7 +48,7 @@ Puede hacer lo siguiente:
 > [!TIP]
 > Al usar el control de versiones de registros con una etiqueta de retención que tiene una acción de eliminación, considere la posibilidad de establecer la configuración de retención **Iniciar el período de retención en función de:** en **Cuando se etiquetaron los elementos**. Con esta configuración de etiqueta, se restablece el inicio del período de retención para cada versión de registro nueva, lo que garantiza que las versiones anteriores se eliminarán antes que las versiones más recientes.
 
-El control de versiones de registros está disponible automáticamente para todos los documentos que contengan una etiqueta de retención que marca el elemento como un registro. Cuando un usuario ve las propiedades del documento en el panel de detalles, puede cambiar el **Estado del registro** de **bloqueado** a **desbloqueado**. Esta acción crea un registro en la carpeta registros de la biblioteca de suspensión para conservación, donde se encuentra por el resto de su período de retención.
+El control de versiones de registros está disponible automáticamente para cualquier documento que tenga aplicada una etiqueta de retención que marque el elemento como un registro y esa etiqueta se [publique en el sitio](create-apply-retention-labels.md#step-2-publish-retention-labels). Cuando un usuario ve las propiedades del documento en el panel de detalles, puede cambiar el **Estado del registro** de **bloqueado** a **desbloqueado**. Esta acción crea un registro en la carpeta registros de la biblioteca de suspensión para conservación, donde se encuentra por el resto de su período de retención.
 
 Cuando el documento esté desbloqueado, todos los usuarios con permisos de edición estándar podrán editar el archivo. Sin embargo, los usuarios no pueden eliminar el archivo porque aún es un registro. Cuando termine de editar, el usuario puede cambiar el **Estado de registro** de **Desbloqueado** a **Bloqueado**, lo que impide que se realicen otras modificaciones mientras se encuentre en este estado.
 <br/><br/>

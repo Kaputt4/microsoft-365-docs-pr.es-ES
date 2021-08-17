@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información acerca de cómo probar la funcionalidad de correo electrónico de mi dominio personalizado en un buzón de Microsoft 365 usando solo dos cuentas de prueba.
-ms.openlocfilehash: 6172975719258e6186e6fcfdecc7bc9395b887c9f69ae835d45c1edf16626a2e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e19c04d00e533797036a29cafdfe9902e93a008
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823836"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346081"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
 
@@ -89,7 +89,7 @@ Microsoft 365 usa Exchange Online Protection (EOP) para la protección contra co
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>Paso 5: crear cuentas de usuario y configurar la dirección de respuesta principal
 
-1. En el Centro de administración de Microsoft 365 panel de navegación izquierdo, seleccione **Usuarios** > **Usuarios activos**.
+1. En la disposición de navegación izquierda del Centro de administración de Microsoft 365, seleccione **Usuarios** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos**</a>.
 
 2. Para crear dos cuentas de prueba, agregue dos usuarios existentes.
 

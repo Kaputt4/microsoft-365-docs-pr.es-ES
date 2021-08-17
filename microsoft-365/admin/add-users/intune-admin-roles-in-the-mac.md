@@ -17,20 +17,20 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: 21618a078a3104af39727439c6690e31f75fbc93518e534e6759d3a914c414fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 32f910729c5e7b76389bf54898ccb9c9e197045e
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815664"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346993"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Roles de administrador de Intune en el Centro de administración de Microsoft 365
 
-Su suscripción de Microsoft 365 u Office 365 incluye un conjunto de roles de administrador que puede asignar a los usuarios de su organización mediante el Centro de administración de Microsoft 365. Cada rol de administrador se asigna a funciones empresariales comunes y concede a los usuarios de su organización permisos para realizar tareas específicas en los centros de administración.
+Su suscripción de Microsoft 365 u Office 365 incluye un conjunto de roles de administrador que puede asignar a los usuarios de su organización mediante el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Cada rol de administrador se asigna a funciones empresariales comunes y concede a los usuarios de su organización permisos para realizar tareas específicas en los centros de administración.
 
 El Centro de administración de Microsoft 365 le permite administrar algunos roles de Microsoft Intune. Sin embargo, estos roles son un subconjunto de los roles disponibles en el centro de administración de Intune. ¿Busca las descripciones detalladas de roles para Microsoft Intune? Consulte [Control de acceso basado en roles (RBAC) con Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
-Para más información acerca de la asignación de roles en el Centro de administración de Microsoft 365, consulte [Asignar roles de administrador](assign-admin-roles.md).
+Para obtener más información sobre la asignación de roles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">Centro de administración de Microsoft 365</a>, vea [Asignar roles de administrador](assign-admin-roles.md).
 
 En el Centro de administración de Microsoft 365, puede ir a **Roles** y seleccionar cualquier rol para abrir su respectivo panel de detalles. Seleccione la pestaña **Permisos** para ver la lista detallada de lo que tienen permiso para hacer los administradores con ese rol asignado. Seleccione la pestaña **Asignado** o **Administradores asignados** para agregar usuarios a los roles.
 
