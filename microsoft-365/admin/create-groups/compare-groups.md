@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Los miembros de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, Stream y un Planner.
-ms.openlocfilehash: a831ef11817af47ed1007600a1eb70bddd341b3ae474c11d0b2326a9e4debf89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5e616e95cf56a67799f4edc2608a54758a7aa0b
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826524"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346885"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
-En la sección **Grupos** del Centro de administración de Microsoft 365, puede crear y administrar estos tipos de grupos: 
+En la sección <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupos**</a> del Centro de administración de Microsoft 365, puede crear y administrar estos tipos de grupos: 
 
 - **Los grupos de Microsoft 365** se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía. Incluyen servicios de colaboración como SharePoint y Planner.
 - **Los grupos de distribución** se usan para enviar notificaciones de correo electrónico a un grupo de personas.

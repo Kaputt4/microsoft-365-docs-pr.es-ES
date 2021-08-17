@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 description: Cada miembro del equipo necesita una cuenta de usuario para poder iniciar sesión y acceder a Microsoft 365 para empresas. Obtenga información sobre cómo agregar usuarios y asignar licencias.
 ms.date: 07/01/2020
-ms.openlocfilehash: 5d18bfbd396bc13496cc06c80dcb5cc6fbf7f84e9432936c1d745877f0074141
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7fa0842812a83e510d7e200ebef3db4507d4b9d
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815916"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347017"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
 
-Todos los usuarios de su equipo necesitan una cuenta de usuario para poder iniciar sesión y acceder a [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/business). La forma más sencilla de agregar cuentas de usuario es hacerlo de una en una en el Centro de administración de Microsoft 365. Después de realizar este paso, los usuarios tendrán licencias de Microsoft 365, credenciales de inicio de sesión y buzones de Microsoft 365.
+Todos los usuarios de su equipo necesitan una cuenta de usuario para poder iniciar sesión y acceder a [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/business). La forma más sencilla de agregar cuentas de usuario es hacerlo de una en una en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Después de realizar este paso, los usuarios tendrán licencias de Microsoft 365, credenciales de inicio de sesión y buzones de Microsoft 365.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

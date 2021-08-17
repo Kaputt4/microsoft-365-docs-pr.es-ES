@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Iniciar sesión con permisos de administrador en el Centro de administración de Microsoft 365 para configurar la organización en la nube y administrar usuarios y suscripciones.
-ms.openlocfilehash: 3eb5853a23930e1ab1e595efa6f1448dcb82894c531f0771a973318d4601c09d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1a5ebf22f874700510ff34a0f1d1fa7bb923fe0
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827172"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346981"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Acerca del Centro de administración de Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "53827172"
 
 **Si es usuario o tiene un plan de Microsoft 365 Familia, no cuenta con un centro de administración.** Para configurar Microsoft 365, vaya a [Descargar e instalar o reinstalar Microsoft 365 u Office 2019 en un equipo PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
 
-Puede utilizar el Centro de administración para configurar la organización en la nube y administrar usuarios y suscripciones, entre otras cosas. En este artículo, obtendrá información sobre cómo acceder al Centro de administración, además de la configuración y las características disponibles.
+Puede utilizar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para configurar la organización en la nube y administrar usuarios y suscripciones, entre otras cosas. En este artículo, obtendrá información sobre cómo acceder al Centro de administración, además de la configuración y las características disponibles.
 
 Vea un vídeo corto sobre el centro de administración. <br><br>
 

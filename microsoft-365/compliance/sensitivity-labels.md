@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6861c9e0fa4611ca2a457b26d431b7f9a7473690
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6c6f48b0dfdeee717162d8ebe031b162e2970959
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247866"
+ms.locfileid: "58347101"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -49,11 +49,9 @@ Ejemplo que muestra las etiquetas de confidencialidad disponibles en Excel, en l
 Para aplicar etiquetas de confidencialidad, los usuarios tienen que haber iniciado sesión en Microsoft 365 con su cuenta profesional o educativa.
 
 > [!NOTE]
-> Para espacios empresariales de la Administración gubernamental de EE. UU., las etiquetas de confidencialidad ahora son compatibles con todas las plataformas:
-> - Para entornos de GCC y GCC High: Notas de la versión para [Office para Windows](/officeupdates/current-channel#version-2101-january-26) y [Office para Mac](/officeupdates/release-notes-office-for-mac#feature-updates-2)
-> - Para entornos DoD: Notas de versión para [Office para Windows](/officeupdates/current-channel#version-2103-march-30)
+> Para espacios empresariales de la Administración gubernamental de EE. UU., las etiquetas de confidencialidad ahora son compatibles con todas las plataformas.
 >
-> Si usa el cliente de etiquetas unificado y el escáner de Azure Information Protection para estos entornos, vea el [Descripción del servicio de Azure Information Protection Premium Government](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
+> Si usa el escáner y el cliente de etiquetas unificadas de Azure Information Protection, consulte la [Descripción del servicio de Administración Pública de Azure Information Protection Premium](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 Puede usar etiquetas de confidencialidad para:
   
@@ -182,7 +180,7 @@ Cuando configura una directiva de etiqueta, puede:
 
 - **Elija qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse para cualquier usuario específico o un grupo de seguridad activado por correo electrónico, un grupo de distribución o un grupo de Microsoft 365, que puede tener [suscripción dinámica](/azure/active-directory/users-groups-roles/groups-create-rule) en Azure AD.
 
-- **Especifique una etiqueta predeterminada** para nuevos documentos, correos electrónicos sin etiqueta y nuevos contenedores (cuando haya [habilitado etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md)). Puede especificar la misma etiqueta para los tres tipos de elementos o especificar etiquetas diferentes. Cuando especifique una etiqueta predeterminada para los documentos, el cliente de etiquetado unificado de Azure Information Protection también aplicará la etiqueta a documentos ya existentes que no tengan etiqueta. Los usuarios siempre pueden cambiar la etiqueta predeterminada si no es la etiqueta adecuada para su documento o correo electrónico.
+- **Especifique una etiqueta predeterminada** para nuevos documentos, correos electrónicos sin etiqueta y nuevos contenedores (cuando haya [habilitado etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md)) y, ahora, [una etiqueta predeterminada para contenido Power BI](/power-bi/admin/service-security-sensitivity-label-default-label-policy). Puede especificar la misma etiqueta para los cuatro tipos de elementos o especificar etiquetas diferentes. Cuando especifique una etiqueta predeterminada para los documentos, el cliente de etiquetado unificado de Azure Information Protection también aplicará la etiqueta a documentos ya existentes que no tengan etiqueta. Los usuarios pueden cambiar la etiqueta de confidencialidad predeterminada aplicada si deciden que no es la correcta.
     
     > [!IMPORTANT]
     > Cuando tenga [subetiquetas](#sublabels-grouping-labels), tenga cuidado de no configurar la etiqueta primaria como etiqueta predeterminada.

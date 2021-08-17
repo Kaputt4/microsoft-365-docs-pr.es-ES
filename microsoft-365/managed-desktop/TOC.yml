@@ -150,6 +150,10 @@
           items:
             - name: Informe de inventario de dispositivos
               href: working-with-managed-desktop/device-inventory-report.md
+            - name: Informe de estado del dispositivo
+              href: working-with-managed-desktop/device-status-report.md
+            - name: Informe de actualizaciones de seguridad de Windows
+              href: working-with-managed-desktop/security-updates-report.md
         - name: Soporte de administrador
           href: working-with-managed-desktop/admin-support.md
         - name: Soporte al usuario
@@ -160,7 +164,7 @@
           href: working-with-managed-desktop/work-with-app-control.md
         - name: Cambiar perfil de dispositivo
           href: working-with-managed-desktop/change-device-profile.md
-        - name: Asignación de dispositivos a la implementación
+        - name: Asignar dispositivos al grupo de implementación
           href: working-with-managed-desktop/assign-deployment-group.md
         - name: Quitar dispositivos
           href: working-with-managed-desktop/remove-devices.md

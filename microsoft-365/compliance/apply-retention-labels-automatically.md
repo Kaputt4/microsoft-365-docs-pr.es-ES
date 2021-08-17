@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 2b21df0592c2ca6f3f45500236e2cd07ab7128c1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: cafe6fe2628d58b80ea86753734e56996c5fdfcd
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247553"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357058"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -44,7 +44,7 @@ Las etiquetas de retención auto aplicadas son poderosas porque:
 Las etiquetas de retención se pueden aplicar a contenido automáticamente cuando dicho contenido contiene información confidencial, palabras clave o propiedades que permiten búsquedas, o una coincidencia para [clasificadores que se puedan entrenar](classifier-get-started-with.md).
 
 > [!TIP]
-> Según las publicaciones recientes, en la versión preliminar, puede utilizar las propiedades que permiten búsquedas para identificar las [grabaciones de reuniones de Teams](#microsoft-teams-meeting-recordings).
+> Use las propiedades que permiten búsquedas para identificar las [grabaciones de reuniones de Teams](#microsoft-teams-meeting-recordings).
 
 Los procesos para aplicar automáticamente una etiqueta de retención se basan en estas condiciones:
 
@@ -127,7 +127,7 @@ Puede aplicar etiquetas de retención al contenido automáticamente cuando éste
 
 - [Una coincidencia para clasificadores que se pueden entrenar](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-Las tres condiciones pueden aplicar automáticamente etiquetas de retención a los correos electrónicos a medida que se envían y reciben, pero no a los elementos existentes en el buzón (datos en reposo). Para los elementos de SharePoint y OneDrive, use la tabla siguiente para identificar cuándo se les pueden aplicar automáticamente las etiquetas de retención:
+Las tres condiciones pueden aplicar automáticamente etiquetas de retención a los correos electrónicos a medida que se envían y reciben (datos en tránsito), pero no a los elementos existentes en el buzón (datos en reposo). Para los elementos de SharePoint y OneDrive, use la tabla siguiente para identificar cuándo se les pueden aplicar automáticamente las etiquetas de retención:
 
 |Condición|Elementos nuevos o modificados |Elementos existentes (datos en reposo)|
 |:-----|:-----|:-----|
