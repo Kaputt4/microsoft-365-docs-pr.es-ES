@@ -16,6 +16,8 @@
               href: setup/get-started-windows-365-business.md
             - name: Opciones de tamaño de Windows 365 Empresa
               href: setup/windows-365-business-sizing.md
+            - name: Solucionar problemas de configuración de PC en la nube Windows 365
+              href: setup/troubleshoot-windows-365-business.md
         - name: Configurar la organización con la configuración guiada
           items:
             - name: Microsoft 365 Empresa Básico
