@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Este artículo proporciona las instrucciones más recientes para optimizar de forma segura la conectividad de red de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e0391133721270c0fdfb288b5d26ab23f301a844
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8f710793dd8ce1e5a2835a05bbf366559a38a0aa
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923295"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247510"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principios de conectividad de red de Microsoft 365
 
@@ -53,7 +53,7 @@ Una de las características de la arquitectura de Microsoft 365 más importantes
   
 Para la mayoría de los clientes, los usuarios de Microsoft 365 se distribuyen en muchas ubicaciones. Para obtener los mejores resultados, debe tener en cuenta los principios descritos en este documento desde el punto de vista de escalado horizontal (en vez de vertical), para centrarse en optimizar la conectividad con el punto de presencia más cercano en la Red Global de Microsoft, y no con la ubicación geográfica del inquilino de Microsoft 365. Esto último significa que, aunque los datos del inquilino de Microsoft 365 se almacenen en una ubicación geográfica específica, la experiencia de Microsoft 365 para ese inquilino permanecerá distribuida y podrá encontrarse en la proximidad (de red) de la ubicación de cada usuario final que el inquilino tenga.
   
-## <a name="microsoft-365-connectivity-principles"></a>Principios de conectividad de Microsoft 365
+## <a name="microsoft-365-connectivity-principles"></a>Principios de conectividad de Microsoft 365
 <a name="BKMK_Principles"> </a>
 
 Microsoft recomienda los siguientes principios para lograr una conectividad y un rendimiento óptimos de Microsoft 365. Utilice estos principios de conectividad de Microsoft 365 para administrar el tráfico y obtener el máximo rendimiento al conectarse a Microsoft 365.
@@ -84,7 +84,7 @@ Antes de los servicios en la nube como Microsoft 365, la conectividad de Interne
   
 En una arquitectura de red tradicional, todas las conexiones de Internet salientes atraviesan la red corporativa y salen de una ubicación central. A medida que las ofertas de la nube de Microsoft han madurado, ha aumentado la importancia de contar con una arquitectura de red distribuida accesible desde Internet para poder admitir los servicios en la nube sensibles a la latencia. La Red Global de Microsoft se ha diseñado para dar cabida a los requisitos de latencia con la infraestructura de puerta frontal de servicio distribuido, un tejido dinámico de puntos de entrada global que redirige las conexiones entrantes de servicios en la nube al punto de entrada más cercano. El objetivo es reducir la longitud de la "última milla" para los clientes de la nube de Microsoft al acortar de forma eficaz la ruta entre el cliente y la nube.
   
-Las redes WAN empresariales suelen diseñarse para transmitir en la red de retorno (backhaul) el tráfico de red a una oficina central de la empresa para su inspección antes de su salida a Internet, normalmente mediante uno o varios servidores proxy. El siguiente diagrama ilustra una topología de red de este tipo.
+Las redes WAN empresariales suelen diseñarse para transmitir en la red de retorno (backhaul) el tráfico de red a una oficina central de la empresa para su inspección antes de su salida a Internet, normalmente mediante uno o varios servidores proxy. El siguiente diagrama ilustra esta tipología de red.
   
 ![Modelo de red empresarial tradicional](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
   
@@ -96,7 +96,7 @@ Acortar de esta forma la ruta de red a los puntos de entrada de Microsoft 365 pu
   
 Además, las solicitudes DNS pueden introducir latencia si el servidor DNS de respuesta está lejos o ocupado. Puede minimizar la latencia de la resolución de nombres al aprovisionar servidores DNS locales en las ubicaciones de las sucursales y al configurarlos para que almacenen en caché los registros DNS de manera adecuada.
   
-Aunque las salidas regionales pueden funcionar bien con Microsoft 365, el modelo de conectividad óptimo consiste en ofrecer siempre la salida de red en la ubicación del usuario, independientemente de si se encuentra en la red corporativa o en ubicaciones remotas como hogares, hoteles, cafeterías y aeropuertos. El siguiente diagrama representa este modelo de salida directa local.
+Aunque las salidas regionales pueden funcionar bien con Microsoft 365, el modelo de conectividad óptimo consiste en ofrecer siempre la salida de red en la ubicación del usuario, independientemente de si se encuentra en la red corporativa o en ubicaciones remotas como hogares, hoteles, cafeterías y aeropuertos. A continuación, un diagrama que representa el modelo de salida local directo.
   
 ![Arquitectura de red de salida local](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
   
@@ -113,7 +113,7 @@ La arquitectura de salida local presenta las siguientes ventajas respecto al mod
 
 ![Evite las redirecciones](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
-Como regla general, la ruta más corta y directa entre el usuario y el punto de conexión más cercano de Microsoft 365 le ofrecerá el mejor rendimiento. Las redirecciones de red tienen lugar cuando el tráfico WAN o VPN con un destino en particular se dirige por primera vez a otra ubicación intermedia (como una pila de seguridad, un agente de acceso a la nube o una puerta de enlace web basada en la nube), lo que introduce latencia y un posible redireccionamiento a un extremo lejano geográficamente. Las redirecciones de red también pueden deberse a las ineficiencias de enrutamiento/emparejamiento o a búsquedas DNS no ideales (remotas).
+Como regla general, la ruta más corta y directa entre el usuario y el punto de conexión más cercano de Microsoft 365 le ofrecerá el mejor rendimiento. Las redirecciones de red tienen lugar cuando el tráfico WAN o VPN con un destino en particular se dirige por primera vez a otra ubicación intermedia (como puede ser una pila de seguridad, un agente de acceso a la nube o una puerta de enlace web basada en la nube), lo que introduce latencia y un posible redireccionamiento a un extremo geográficamente lejano. Las redirecciones de red también pueden deberse a las ineficiencias de enrutamiento/emparejamiento o a búsquedas DNS no ideales (remotas).
   
 Para garantizar que la conectividad de Microsoft 365 no esté sujeta a la redirecciones de red, incluso en el caso de salida local, compruebe si el ISP que se usa para proporcionar salida de Internet en la ubicación del usuario tiene una relación de emparejamiento directa con la Red Global de Microsoft cercana a esa ubicación. También es una buena idea configurar el enrutamiento de salida para que envíe directamente el tráfico de confianza de Microsoft 365, en lugar de enviarlo a través de un proxy o túnel mediante una nube de terceros o un proveedor de seguridad de red basada en la nube que procese el tráfico de Internet. La resolución de nombres DNS locales de los puntos de conexión de Microsoft 365 le ayuda a garantizar que, además de usar el enrutamiento directo, se utilicen los puntos de entrada de Microsoft 365 más cercanos para las conexiones de los usuarios.
   
@@ -159,7 +159,7 @@ En nuestras instrucciones anteriores para administrar el tráfico de Microsoft 3
   
 En el nuevo modelo, los puntos de conexión se dividen en tres categorías: **Optimizar**, **Permitir** y **Predeterminado**, lo que proporciona un eje basado en las prioridades en el que se pueden centrar los esfuerzos de optimización de la red para lograr todas las mejoras posibles de rendimiento y el retorno de la inversión. Los puntos de conexión se consolidan en las categorías anteriores según la sensibilidad de la experiencia efectiva del usuario en relación con el volumen y la calidad de la red, el campo de rendimiento de los escenarios y la facilidad de implementación. Se pueden aplicar las optimizaciones recomendadas de la misma forma a todos los puntos de conexión de una categoría determinada.
   
-- Los puntos de conexión de la categoría **Optimizar** son obligatorios para la conectividad a todos los servicios de Office 365 y representan más del 75 % del ancho de banda, las conexiones y el volumen de datos de Office 365. Estos puntos de conexión representan los escenarios de Office 365 que son más sensibles al rendimiento, la latencia y la disponibilidad de la red. Todos los puntos de conexión se hospedan en centros de datos de Microsoft. Se espera que la tasa de cambio para los puntos de conexión de esta categoría sea mucho menor que para los puntos de conexión de las otras dos categorías. Esta categoría contiene un conjunto reducido (en el orden de ~ 10) de direcciones URL y un conjunto definido de subredes IP dedicadas a cargas centrales de trabajo de Office 365, como Exchange Online, SharePoint Online, Skype Empresarial online y Microsoft Teams.
+- Los puntos de conexión de la categoría **Optimizar** son obligatorios para la conectividad a todos los servicios de Office 365 y representan más del 75 % del ancho de banda, las conexiones y el volumen de datos de Office 365. Estos puntos de conexión representan los escenarios de Office 365 que son más sensibles al rendimiento, la latencia y la disponibilidad de la red. Todos los puntos de conexión se hospedan en centros de datos de Microsoft. Se espera que la tasa de cambio para los puntos de conexión de esta categoría sea mucho menor que para los puntos de conexión de las otras dos categorías. Esta categoría contiene un conjunto reducido (en el orden de ~ 10) de direcciones URL y un conjunto definido de subredes IP dedicadas a cargas centrales de trabajo de Office 365, como Exchange Online, SharePoint Online, Skype Empresarial online y Microsoft Teams.
 
     Una lista resumida de puntos de conexión críticos bien definidos le ayudará a planear e implementar optimizaciones de red de alto valor para estos destinos de forma más rápida y sencilla.
 
@@ -175,7 +175,7 @@ En el nuevo modelo, los puntos de conexión se dividen en tres categorías: **Op
   - Asegúrese de que las direcciones IP que devuelve la resolución de nombres DNS coincidan con la ruta de salida de enrutamiento para estos puntos de conexión.
   - Dé prioridad a estos puntos de conexión para la integración SD-WAN para el enrutamiento de latencia directa y mínima al punto más cercano de emparejamiento de Internet de la Red Global de Microsoft.
 
-- Los puntos de conexión de **Permitir** son obligatorios para la conectividad a características y servicios específicos de Office 365, pero no son tan sensibles al rendimiento y la latencia de la red como los de la categoría *Optimizar*. La huella de la red general de estos puntos de conexión, desde el punto de vista del ancho de banda y del recuento de conexiones, es también menor. Estos puntos de conexión se dedican a Office 365 y se hospedan en centros de datos de Microsoft. Representan un amplio conjunto de microservicios de Office 365 y de sus dependencias (en el orden de ~ 100 direcciones URL) y se espera que cambien a una tasa mayor que los puntos de conexión de la categoría *Optimizar*. No todos los puntos de conexión de esta categoría están asociados a subredes IP definidas y dedicadas.
+- Los puntos de conexión de **Permitir** son obligatorios para la conectividad a características y servicios específicos de Office 365, pero no son tan sensibles al rendimiento y la latencia de la red como los de la categoría *Optimizar*. La huella de la red general de estos puntos de conexión, desde el punto de vista del ancho de banda y del recuento de conexiones, es también menor. Estos puntos de conexión se dedican a Office 365 y se hospedan en centros de datos de Microsoft. Representan un amplio conjunto de microservicios de Office 365 y de sus dependencias (en el orden de ~ 100 direcciones URL) y se espera que cambien a una tasa mayor que los puntos de conexión de la categoría *Optimizar*. No todos los puntos de conexión de esta categoría están asociados a subredes IP definidas y dedicadas.
 
     Las optimizaciones de red para los puntos de conexión de *Permitir* pueden mejorar la experiencia de usuario de Office 365, pero puede que algunos clientes opten por definir las optimizaciones de manera más restringida, para minimizar los cambios en la red.
 
@@ -202,7 +202,7 @@ El objetivo de la seguridad de red tradicional es fortalecer el perímetro de la
 - Los usuarios remotos se conectan a recursos corporativos tanto en centros de datos locales como en la nube desde ubicaciones no controladas como hogares, hoteles y cafeterías.
 - Las características de seguridad desarrolladas de propósito específico se integran cada vez más en los servicios en la nube y también pueden complementar o reemplazar los sistemas de seguridad existentes.
 
-Microsoft ofrece una amplia gama de características de seguridad de Microsoft 365 y proporciona una guía prescriptiva para emplear las mejores prácticas de seguridad que pueden ayudarle a garantizar la seguridad de los datos y de la red para Microsoft 365. Las prácticas recomendadas incluyen las siguientes:
+Microsoft ofrece una amplia gama de características de seguridad de Microsoft 365 y proporciona una guía prescriptiva para emplear las mejores prácticas de seguridad que pueden ayudarle a garantizar la seguridad de los datos y de la red para Microsoft 365. Se recomiendan los siguientes procedimientos:
   
 - **Usar la autenticación multifactor (MFA)** MFA agrega una capa adicional de protección a una estrategia de contraseña segura al obligar a los usuarios a confirmar una llamada telefónica, un mensaje de texto o una notificación de aplicación en el smartphone después de escribir la contraseña correcta.
 
@@ -267,7 +267,7 @@ Puede abordar la optimización como un proceso gradual y aplicar cada método de
 
 [Redes de entrega de contenido](content-delivery-networks.md)
 
-[Prueba de conectividad de Microsoft 365](https://aka.ms/netonboard)
+[Prueba de conectividad de Microsoft 365](https://aka.ms/netonboard)
 
 [Cómo construye Microsoft su red global rápida y confiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

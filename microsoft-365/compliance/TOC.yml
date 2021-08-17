@@ -333,6 +333,8 @@
           items:
             - name: Etiquetas y directivas de retención
               href: retention.md
+            - name: Diagrama de flujo de retención
+              href: retention-flowchart.md
             - name: Retención para SharePoint y OneDrive
               href: retention-policies-sharepoint.md
             - name: Retention para Microsoft Teams

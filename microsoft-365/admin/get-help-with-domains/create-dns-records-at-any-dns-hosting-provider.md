@@ -21,12 +21,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
-ms.openlocfilehash: a4af63493ae155314f0e3cc0d7772b61d2656b6a898c036f0ee086622bccf42d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62cc6404790d711220ef80a644772e8dcd306fcb
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825924"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346825"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Agregar registros DNS para conectarse a su dominio
 
@@ -44,7 +44,7 @@ Si no agrega el dominio, los integrantes de la organización usarán el dominio 
 
 En primer lugar, tiene que demostrar que es el propietario del dominio que quiere agregar a Microsoft 365.
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com/) y seleccione **Mostrar todo** > **Configuración** > **Dominios**.
+1. Inicie sesión en el Centro de administración de Microsoft 365 y seleccione **Mostrar todo** > **Configuración** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Dominios**</a>.
 2. En una nueva pestaña o ventana del explorador, inicie sesión en su proveedor de host DNS y, después, busque el lugar donde administra la configuración de DNS (por ejemplo, Configuración del archivo de zona, Administrar dominios, Administrador de dominios, Administrador de DNS).
 3. Vaya a la página del administrador de DNS de su proveedor y agregue a su dominio el registro TXT indicado en el centro de administración.
 
@@ -64,7 +64,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 
 Si su registrador no permite agregar registros TXT, puede agregar un registro MX para comprobarlo.
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com/) y seleccione **Mostrar todo** > **Configuración** > **Dominios**.
+1. Inicie sesión en el Centro de administración de Microsoft 365 y seleccione **Mostrar todo** > **Configuración** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Dominios**</a>.
 2. En una nueva pestaña o ventana del explorador, inicie sesión en su proveedor de host DNS y, después, busque el lugar donde administra la configuración de DNS (por ejemplo, Configuración del archivo de zona, Administrar dominios, Administrador de dominios, Administrador de DNS).
 3. Vaya a la página del administrador de DNS de su proveedor y agregue a su dominio el registro MX indicado en el centro de administración.
 
