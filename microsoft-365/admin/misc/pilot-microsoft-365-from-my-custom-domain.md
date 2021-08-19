@@ -89,7 +89,7 @@ Microsoft 365 usa Exchange Online Protection (EOP) para la protección contra co
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>Paso 5: crear cuentas de usuario y configurar la dirección de respuesta principal
 
-1. En la disposición de navegación izquierda del Centro de administración de Microsoft 365, seleccione **Usuarios** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos**</a>.
+1. En la disposición de navegación izquierda del Centro de administración de Microsoft 365, seleccione **Usuarios** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Usuarios activos**</a>.
 
 2. Para crear dos cuentas de prueba, agregue dos usuarios existentes.
 
