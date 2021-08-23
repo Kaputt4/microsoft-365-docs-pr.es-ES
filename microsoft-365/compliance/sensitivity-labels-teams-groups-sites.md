@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: e0604a6531b93a1a0df04c39ebaff4e75a0365f9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 8c78cf0f8ff49d2b81533e064a16089d8fe75d15
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248031"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400408"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -450,4 +450,6 @@ Si dichos contenedores tienen valores de clasificación de Azure AD aplicados, e
 
 Consulte la grabación y las preguntas contestadas sobre el [Uso de etiquetas de sensibilidad con Microsoft Teams, grupos de O365 y sitios de SharePoint Online](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
 
-Este seminario web se grabó cuando la característica aún estaba en la versión preliminar, por lo que es posible que observe algunas discrepancias en la interfaz de usuario. Sin embargo, la información de esta característica aún es precisa, con las nuevas funciones que se documentan en esta página.
+Para obtener más información sobre la administración de sitios conectados de Teams y sitios de canales, vea [Administrar sitios conectados de Teams y sitios de canales](/SharePoint/teams-connected-sites).
+
+Este seminario web se grabó cuando la característica aún estaba en la versión preliminar, por lo que es posible que observe algunas discrepancias con la interfaz de usuario. Aún así, la información de esta característica es precisa, con las nuevas funciones que se documentan en esta página.

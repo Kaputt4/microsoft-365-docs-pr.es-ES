@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: En este artículo se describen los sitios de opciones de navegación con SharePoint publicación habilitada en SharePoint Online.
-ms.openlocfilehash: 4cb0406fc9f4d1496cb28282427c38f83c3ea1eac31aecbf6e33f7247660be2a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38e72811eca6487a862beb8b1d197186783d3c48
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905002"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394665"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 
@@ -39,7 +39,7 @@ En este artículo se describen los sitios de opciones de navegación con SharePo
 
 La configuración del proveedor de navegación puede afectar significativamente al rendimiento de todo el sitio y se debe tener en cuenta cuidadosamente la selección de un proveedor de navegación y una configuración que se escala eficazmente para los requisitos de un SharePoint sitio. Hay dos proveedores de navegación personalizados, así como implementaciones de navegación personalizadas.
 
-La primera opción, [**Navegación**](#using-structural-navigation-in-sharepoint-online)estructural, es la opción de navegación recomendada en SharePoint Online para sitios clásicos de Sharepoint, si activa el almacenamiento en caché de navegación estructural **para el sitio**. Este proveedor de navegación muestra los elementos de navegación debajo del sitio actual y, opcionalmente, el sitio actual y sus elementos del mismo nivel. Proporciona capacidades adicionales, como el recorte de seguridad y la enumeración de la estructura del sitio. Si el almacenamiento en caché está deshabilitado, esto afectará negativamente al rendimiento y la escalabilidad, y puede estar sujeto a limitación.
+La primera opción, [**Navegación**](#using-structural-navigation-in-sharepoint-online)estructural, es la opción de navegación recomendada en SharePoint Online para sitios de SharePoint clásicos, si activa el almacenamiento en caché de navegación estructural para **el sitio**. Este proveedor de navegación muestra los elementos de navegación debajo del sitio actual y, opcionalmente, el sitio actual y sus elementos del mismo nivel. Proporciona capacidades adicionales, como el recorte de seguridad y la enumeración de la estructura del sitio. Si el almacenamiento en caché está deshabilitado, esto afectará negativamente al rendimiento y la escalabilidad, y puede estar sujeto a limitación.
 
 La segunda opción, [**Navegación administrada (metadatos),**](#using-managed-navigation-and-metadata-in-sharepoint-online)representa elementos de navegación mediante un conjunto de términos de metadatos administrados. Se recomienda deshabilitar el recorte de seguridad a menos que sea necesario. El recorte de seguridad está habilitado como una configuración predeterminada de seguridad para este proveedor de navegación; sin embargo, muchos sitios no requieren la sobrecarga del recorte de seguridad, ya que los elementos de navegación suelen ser coherentes para todos los usuarios del sitio. Con la configuración recomendada para deshabilitar el recorte de seguridad, este proveedor de navegación no requiere enumerar la estructura del sitio y es altamente escalable con un impacto de rendimiento aceptable.
 

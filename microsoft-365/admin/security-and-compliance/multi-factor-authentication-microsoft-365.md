@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: La autenticación multifactor (MFA) usa una contraseña, que debe ser segura, y un método de comprobación adicional.
-ms.openlocfilehash: 40eeff86811d97c307fe4684203668a475a64f72
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 56a72a7232abc5f0eb7a46beb27984425648a6db
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347113"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394629"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Autenticación multifactor para Microsoft 365
 
@@ -171,7 +172,7 @@ En Azure Portal, puede:
 
 En el Centro de administración de Microsoft 365, puede configurar la configuración de MFA por usuario y <a href="https://go.microsoft.com/fwlink/p/?linkid=2169174" target="_blank">servicio.</a>
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Configurar MFA para Microsoft 365](set-up-multi-factor-authentication.md)
 

@@ -21,12 +21,13 @@ description: The Centro de administración de Microsoft 365- learn about the fea
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: c02a6948ffd5e0a811f5e562687f637f848a8bf5
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+- admindeeplinkMAC
+ms.openlocfilehash: d9a5d6543c1a3e26a6809d8ea7826beb338757bc
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347173"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394797"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 

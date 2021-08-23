@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ver sus aplicaciones.
-ms.openlocfilehash: b711610461ec02a4e3174557f77fc0d553afd124ae13a96d858a2ae353e4a554
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9e67f5115e715f804cf91d95c24760a25fdf869c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887009"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394533"
 ---
 # <a name="view-your-apps"></a>Ver sus aplicaciones
 
@@ -74,7 +74,7 @@ El panel de detalles de la aplicación proporciona información adicional sobre 
 | Nombre de la pestaña | Descripción |
 |:-------|:-----|
 | Detalles | Vea datos adicionales en la aplicación, como la fecha en que se consiente por primera vez y el identificador de la aplicación. Para ver las propiedades de la aplicación como registrada en Azure AD, seleccione **Ver aplicación en Azure AD**. |
-| Uso |Vea los datos a los que accede la aplicación en el espacio empresarial y trace el uso de datos para los recursos de SharePoint y Exchange. |
+| Uso |Vea los datos a los que accede la aplicación en el inquilino y trace el uso de datos para los recursos de SharePoint y Exchange. |
 | Usuarios | Vea una lista de los usuarios que usan la aplicación, si son una cuenta prioritaria y la cantidad de datos descargados y cargados. |
 | Permisos | Vea un resumen de los permisos concedidos y usados por la aplicación y la lista de permisos específicos. Vea la [referencia de los permisos de Microsoft Graph](/graph/permissions-reference)para obtener más información. |
 |||

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: descripción de las actividades de etiquetado que están disponibles en el explorador de actividades.
-ms.openlocfilehash: 5816bb897705e25ebf85b7f97df786cf2331bfb2
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 163231d4d1e7c6a2d1b75c0f81a17443cfafe246
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255685"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394569"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>Actividades de etiquetado que están disponibles en el Explorador de actividades
 
@@ -286,6 +286,6 @@ Este evento se genera cada vez que se quita una etiqueta de un archivo o documen
   
 - Cuando se muestra la sugerencia de herramienta de etiqueta recomendada a un usuario final, no se captura. Pero si el usuario decide aplicar la etiqueta recomendada, la etiqueta se mostrará en el campo Cómo *se aplica* como *recomendado*  
 
-- El texto de justificación no está disponible actualmente en la degradación de etiquetas de confidencialidad de Sharepoint y OneDrive.  
+- El texto de justificación no está disponible actualmente en la degradación de etiquetas de confidencialidad de SharePoint y OneDrive.  
 
 - Actualmente, los tipos de información confidencial no están disponibles para las actividades de etiquetado automático de Word, Excel, PowerPoint y Outlook, así como SharePoint Online y OneDrive.

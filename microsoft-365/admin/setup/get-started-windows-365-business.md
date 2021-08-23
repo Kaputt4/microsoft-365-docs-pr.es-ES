@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo comprar Windows 365 Empresa para su organización y ayudar a los usuarios a empezar a usar sus equipos en la nube.
-ms.openlocfilehash: 1b1beaf65f43361626e03ca048a9942bc14d5e7b
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: a1dfb4ad2cdda501b699423d03e257dbe314976c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349253"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394581"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Introducción a Windows 365 Empresa y equipos en la nube
 
@@ -40,7 +40,10 @@ Este artículo está pensado para las personas que planean comprar y configurar 
 
    ![Los usuarios pueden unir dispositivos a la configuración de Azure AD](../../media/deschutes/azure-device-settings.png)
 ## <a name="prerequisites"></a>Requisitos previos
-No hay requisitos previos para configurar Windows 365 Empresa.
+No hay requisitos previos de licencia para configurar Windows 365 Empresa.
+
+Para obtener la mejor experiencia de [](troubleshoot-windows-365-business.md) incorporación, consulte la guía de solución de problemas de configuración para asegurarse de que las preferencias del entorno están optimizadas para Windows 365 Empresa. 
+
 ## <a name="buy-subscriptions"></a>Comprar suscripciones
 
 Hay dos maneras diferentes en las que puede comprar Windows 365 Business para sus usuarios:
@@ -49,6 +52,7 @@ Hay dos maneras diferentes en las que puede comprar Windows 365 Business para su
 - Centro de administración de Microsoft 365
 
 Después de comprar una suscripción, puede usar el Centro de administración de Microsoft 365 para asignar licencias a los usuarios de su organización.
+
 ### <a name="buy-subscriptions-through-the-windows-365-products-site"></a>Comprar suscripciones a través del Windows de productos de 365
 
 Si aún no tiene una suscripción Microsoft 365, puede comprar sus suscripciones de Windows 365 Empresa en el sitio de productos Windows [365](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Siga estos pasos para comprar una suscripción de Windows 365 Empresa a través de la página Windows productos de 365.
@@ -58,6 +62,13 @@ Si aún no tiene una suscripción Microsoft 365, puede comprar sus suscripciones
 3. En la **página Gracias por elegir Windows 365 Empresa,** siga los pasos para configurar su cuenta.
 4. En **el paso 5:** Detalles de confirmación, si está  listo para asignar licencias a los usuarios, seleccione Introducción para ir a la página principal de Windows 365 en https://windows365.microsoft.com .
 5. En la Windows principal de 365, en la sección Acciones **rápidas,** seleccione Administrar su **organización**. Esto le lleva a la Centro de administración de Microsoft 365 donde puede asignar licencias a los usuarios.
+
+Los usuarios sin los roles de administrador global o de facturación pueden usar la compra de autoservicio para comprar una suscripción para Windows 365 Empresa directamente desde el sitio de productos de [Windows 365 Empresa.](https://www.microsoft.com/windows-365/business?rtc=1) A un usuario que compre una suscripción de esta manera se le concede una vista limitada del [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339), donde puede asignar licencias para esa suscripción a otros usuarios de su organización. La asignación de una licencia a otro usuario crea automáticamente un equipo Windows 365 Business Cloud para ellos, al que se puede obtener acceso desde la página principal de [Windows 365](https://windows365.microsoft.com/).
+
+> [!NOTE]
+> La compra de autoservicio no está disponible en india ni para clientes gubernamentales o educativos.
+
+Para obtener más información sobre la compra de autoservicio, consulta las Preguntas más frecuentes sobre la [compra de autoservicio.](../../commerce/subscriptions/self-service-purchase-faq.yml)
 
 ### <a name="buy-a-subscription-through-the-microsoft-admin-center"></a>Comprar una suscripción a través del Centro de administración de Microsoft
 

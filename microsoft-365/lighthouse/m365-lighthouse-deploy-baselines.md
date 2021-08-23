@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo implementar Microsoft 365 Lighthouse líneas base.
-ms.openlocfilehash: 70dae3e86cd5f559d0afd65406cf72835af81ebb6bd209fb1d68038b9c1be5e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 85e9c9031575aae3aec43b4200caf2338422f563
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800812"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365218"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Implementar Microsoft 365 Lighthouse base 
 
 > [!NOTE]
 > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse línea base le permiten implementar configuraciones de inquilino administrado estándar para proteger los usuarios, dispositivos y datos del espacio empresarial. Hay seis configuraciones de línea base predeterminadas que vienen estándar con Microsoft 365 Lighthouse:
+Microsoft 365 Lighthouse línea base le permiten implementar configuraciones de inquilino administrado estándar para proteger usuarios, dispositivos y datos dentro de los inquilinos del cliente. Hay seis configuraciones de línea base predeterminadas que vienen estándar con Microsoft 365 Lighthouse:
 
 - Requerir MFA para administradores
 - Requerir MFA para usuarios finales
@@ -53,7 +53,7 @@ Seleccione **Líneas base en** el panel de navegación izquierdo para abrir la p
 
 2. Seleccione el espacio empresarial en el que desea implementar la configuración de línea base.
 
-3. Seleccione la **pestaña Plan de** implementación para ver todos los pasos de implementación de la línea base que se han agregado al plan de implementación del inquilino.
+3. Seleccione la **pestaña Planes de** implementación para ver todos los pasos de implementación de la línea base que se han agregado al plan de implementación del inquilino.
 
 4. Seleccione un paso de implementación para abrir la página de pasos de implementación.
 

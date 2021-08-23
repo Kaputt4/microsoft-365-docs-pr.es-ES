@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 88506e546cc359a3cdf042c8661fcc54b217d6d4
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: af66b41af4d4d427988bf46d266329777d3a908c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255454"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394701"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Habilitar el entorno de evaluación de Microsoft Defender para puntos de conexión
 
@@ -64,7 +64,9 @@ Primero tendrá que comprobar el estado de la licencia para comprobar que se apr
 
 Después de comprobar que el estado de la licencia se ha aprovisionado correctamente, puede iniciar la incorporación de dispositivos al servicio. 
 
-Con el fin de evaluar Microsoft Defender para Endpoint, recomendamos elegir un par de dispositivos Windows 10 para realizar la evaluación. 
+Con el fin de evaluar Microsoft Defender para Endpoint, recomendamos elegir un par de dispositivos Windows 10 para realizar la evaluación.
+
+Puedes elegir usar cualquiera de las herramientas de administración admitidas, pero Intune proporciona una integración óptima. Para obtener más información, vea [Configure Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure.md#enable-microsoft-defender-for-endpoint-in-intune)
 
 En [el tema Plan deployment](../defender-endpoint/deployment-strategy.md) se describen los pasos generales que debe seguir para implementar Defender for Endpoint.  
 

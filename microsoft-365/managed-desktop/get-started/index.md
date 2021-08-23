@@ -8,12 +8,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: d8a7bb4e17f2dd57e613aefcaad18cde42101d22f72cb320fc9200f4e858ab73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a817f863102df09c457d759151bfa516f6b2da4
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800731"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365132"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Introducción al Escritorio administrado de Microsoft
 
@@ -22,13 +22,18 @@ Ahora qu está listo para inscribirse, abra [Microsoft Endpoint Manager](https:/
 > [!NOTE]
 > Debe iniciar sesión como Administrador global para completar la inscripción. Para más información, consulte [acceder al portal de administrador](access-admin-portal.md).
 
-Una vez finalizada la inscripción, siga los siguientes pasos para configurar el servicio. Este es el orden recomendado para seguir, pero tiene cierta flexibilidad en la secuencia. 
+Una vez finalizada la inscripción, siga los siguientes pasos para configurar el servicio. Este es el orden recomendado para seguir, pero tiene cierta flexibilidad en la secuencia.
 
-1. [Agregar y verificar los contactos de administración en el portal de administración ](add-admin-contacts.md)
-2. [Ajustar la configuración después de la inscripción](conditional-access.md)
-3. [Asignar licencias](assign-licenses.md)
-4. [Desplegar el portal de empresa de Intune](company-portal.md)
-5. [Habilitar Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Instalar dispositivos](set-up-devices.md)
-7. [Prepare a los usuarios para que usen los dispositivos](get-started-devices.md)
-8. [Implementar aplicaciones](deploy-apps.md)
+![Secuencia sugerida de pasos para empezar que se enumeran en este artículo](../../media/mmd-getstarted-sequence.png) 
+
+1. Acceder al [portal de administrador](access-admin-portal.md).
+1. [Agregar y verificar los contactos de administración en el portal de administrador](add-admin-contacts.md).
+1. [Ajustar la configuración después de la inscripción](conditional-access.md).
+1. Implementar y asignar el [Portal de empresa de Intune](company-portal.md).
+1. [Asignar las licencias](assign-licenses.md).
+1. [Implementar las aplicaciones](deploy-apps.md).
+1. [Configurar los dispositivos](set-up-devices.md).
+1. Configurar la [experiencia de primera ejecución con el Autopilot y la página de estado de inscripción](esp-first-run.md).
+1. [Habilitar las características de soporte técnico para el usuario](enable-support.md).
+1. [Preparar a los usuarios para que usen los dispositivos](get-started-devices.md).
+1. [Comenzar a usar el control de aplicaciones](get-started-app-control.md).

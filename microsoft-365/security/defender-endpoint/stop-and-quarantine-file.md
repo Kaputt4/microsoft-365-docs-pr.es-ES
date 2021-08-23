@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d9ae988df82a2cc1cf5106f832ae22f0c5a95dbdfbf28e6dc773cea3e8208798
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d4ed33a26bcc7583146d810db7625ed3164d7544
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873828"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408083"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API de archivos de detenerse y poner en cuarentena
 
@@ -60,6 +60,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
 Aplicación|Machine.StopAndQuarantine|'Detener y poner en cuarentena'
+Aplicación|Machine.Read.All|'Leer todos los perfiles de máquina'
+Aplicación|Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
 Delegado (cuenta profesional o educativa)|Machine.StopAndQuarantine|'Detener y poner en cuarentena'
 
 > [!NOTE]
@@ -78,16 +80,16 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Description
+Parámetro|Tipo|Descripción
 :---|:---|:---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
-Sha1|Cadena|Sha1 del archivo para detener y poner en cuarentena en el dispositivo. **Necesario**.
+Sha1|String|Sha1 del archivo para detener y poner en cuarentena en el dispositivo. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 

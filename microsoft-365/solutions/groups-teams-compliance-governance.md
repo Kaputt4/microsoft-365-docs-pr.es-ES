@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre las opciones de cumplimiento para Microsoft 365 grupos, Teams y SharePoint colaboración.
-ms.openlocfilehash: 9ffd08d217d7b79db69778021e0629ae7929edb61b2342317c105d60aee181cb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93bf2830d29f21f2239a17b9c2e381c46e85eea1
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896960"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394617"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opciones de cumplimiento para Microsoft 365 grupos, Teams y SharePoint colaboración
 
@@ -102,7 +102,7 @@ DLP en Teams puede ayudar a proteger la información confidencial en Teams mensa
 
 - [Prevención de pérdida de datos y Microsoft Teams](../compliance/dlp-microsoft-teams.md).
 
-Si tiene información confidencial que es exclusiva de su organización, como nombres de código de proyecto, puede crear sus propios tipos de información confidencial y aplicarlos a directivas DLP para proteger el contenido en grupos, equipos y Sharepoint.
+Si tiene información confidencial que es exclusiva de su organización, como nombres de código de proyecto, puede crear sus propios tipos de información confidencial y aplicarlos a directivas DLP para proteger el contenido en grupos, equipos y SharePoint.
 
 - [Tipos de información confidencial personalizados](../compliance/sensitive-information-type-learn-about.md)
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido encontrado en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, grupos de Microsoft 365, conversaciones de Microsoft Teams y Skype Empresarial. La exhibición de documentos electrónicos Advanced eDiscovery proporciona muchas características adicionales que le ayudarán a administrar las investigaciones.
-ms.openlocfilehash: 54882665b5e1ff7e444bccb6974f19d4b9ced19dd1225392fd0f7106b5cade92
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 50f2048ef3c8c2d0a333eeb93a8eeb79b63db31c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900199"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394557"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Soluciones de exhibición de documentos electrónicos en Microsoft 365
 
@@ -56,27 +56,27 @@ En la tabla siguiente se comparan las funciones clave disponibles en Búsqueda d
 |Permisos basados en roles|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
 |Administración de casos||![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
 |Colocar ubicaciones de contenido en retención legal||![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|La administración de los administradores|||![Compatible](../media/check-mark.png)|
+|La administración de los administradores|||![Admitido](../media/check-mark.png)|
 |Notificaciones de retención legal|||![Compatible](../media/check-mark.png)|
-|Indización avanzada|||![Compatible](../media/check-mark.png)|
+|Indización avanzada|||![Admitido](../media/check-mark.png)|
 |Corrección de errores|||![Compatible](../media/check-mark.png)|
-|Conjuntos de revisión|||![Compatible](../media/check-mark.png)|
+|Conjuntos de revisión|||![Admitido](../media/check-mark.png)|
 |Compatibilidad con datos adjuntos y versiones SharePoint nube|||![Compatible](../media/check-mark.png)|
-|Reconocimiento óptico de caracteres|||![Compatible](../media/check-mark.png)|
+|Reconocimiento óptico de caracteres|||![Admitido](../media/check-mark.png)|
 |Agrupación de conversaciones|||![Compatible](../media/check-mark.png)|
-|Estadística e informes de colecciones|||![Compatible](../media/check-mark.png)|
+|Estadística e informes de colecciones|||![Admitido](../media/check-mark.png)|
 |Revisar el filtrado de conjunto de revisión|||![Compatible](../media/check-mark.png)|
 |Etiquetado|||![Compatible](../media/check-mark.png)|
-|Análisis|||![Compatible](../media/check-mark.png)|
+|Análisis|||![Admitido](../media/check-mark.png)|
 |Modelos de codificación predictiva|||![Compatible](../media/check-mark.png)|
-|Metadatos de documento calculados|||![Compatible](../media/check-mark.png)|
+|Metadatos de documento calculados|||![Admitido](../media/check-mark.png)|
 |Transparencia de los trabajos de larga ejecución|||![Compatible](../media/check-mark.png)|
-|Exportar a una ubicación de Azure Storage cliente|||![Compatible](../media/check-mark.png)|
+|Exportar a una ubicación de Azure Storage cliente|||![Admitido](../media/check-mark.png)|
 |||||
 
 Esta es la descripción de cada funcionalidad de exhibición de documentos electrónicos.
 
-- **Buscar contenido**. Busque contenido almacenado en buzones de Exchange, cuentas de One Drive para empresas, sitios de SharePoint, Microsoft Teams, grupos Microsoft 365 y Yammer Teams. Esto incluye el contenido generado por otras Microsoft 365 que almacenan datos en buzones y sitios.
+- **Buscar contenido**. Busque contenido almacenado en buzones de correo Exchange, cuentas de OneDrive para la Empresa, sitios de SharePoint, Microsoft Teams, grupos Microsoft 365 y Yammer Teams. Esto incluye el contenido generado por otras Microsoft 365 que almacenan datos en buzones y sitios.
 
 - **Consultas de palabras clave y condiciones de búsqueda**. Cree consultas de búsqueda de palabras clave KQL para buscar contenido que coincida con criterios de consulta. También puede incluir condiciones para restringir el ámbito de la búsqueda.
 

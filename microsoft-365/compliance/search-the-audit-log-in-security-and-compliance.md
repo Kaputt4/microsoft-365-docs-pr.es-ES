@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ca52f60d6bece71ca778c067fb96241b82c9093
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: dfacd679a48c81b7a952638f2944d0fe6a8d9123
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246382"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408099"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -231,12 +231,12 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
 
 2. En la página de resultados de la búsqueda, haga clic en **Exportar** > **Descargar todos los resultados**.
 
-   Todas las entradas del registro de auditoría que cumplen los criterios de búsqueda se exportan a un archivo CSV. Los datos sin procesar del registro de auditoría se guardan en un archivo CSV. Se incluye información adicional de la entrada del registro de auditoría en una columna denominada **AuditData** en el archivo CSV.
+   Todas las entradas del registro de auditoría que cumplen los criterios de búsqueda, se exportan a un archivo CSV. Los datos sin procesar del registro de auditoría se guardan en un archivo CSV. Se incluye información adicional de la entrada del registro de auditoría en una columna denominada **AuditData** en el archivo CSV.
 
      > [!IMPORTANT]
      > Puede descargar un máximo de 50 000 entradas en un archivo CSV desde una única búsqueda de registros de auditoría. Si se descargan 50 000 entradas en el archivo CSV, probablemente puede suponer que existen más de 50 000 eventos que cumplen los criterios de búsqueda. Para exportar más de este límite, pruebe a usar un intervalo de fecha para reducir el número de entradas de registro de auditoría. Puede que tenga que ejecutar varias búsquedas con intervalos de fecha de menor tamaño para exportar más de 50 000 entradas.
 
-3. Una vez completado el proceso de exportación, se muestra un mensaje en la parte superior de la ventana que le pide que abra el archivo CSV y lo guarde en el equipo local. También puede acceder al archivo CSV en la carpeta Descargas.
+3. Una vez completado el proceso de exportación, se muestra un mensaje en la parte superior de la ventana que le pide que abra el archivo CSV y lo guarde en el equipo local. También puede acceder al archivo CSV en la carpeta de Descargas.
 
 #### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Obtener más información sobre exportar y visualizar resultados de la búsqueda del registro de auditoría
 
@@ -415,6 +415,8 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Archivo movido|FileMoved|El usuario mueve un documento de su ubicación actual en un sitio a una nueva ubicación.|
 |(ninguno)|FilePreviewed|El usuario obtiene la vista previa de un documento de SharePoint o de OneDrive para un sitio de Empresas. Estos sucesos suelen producirse en grandes volúmenes basándose en una sola actividad, como ver una galería de imágenes.|
 |Consulta de búsqueda realizada|SearchQueryPerformed|La cuenta del sistema o el usuario lleva a cabo una búsqueda en SharePoint o OneDrive para la Empresa. Entre los escenarios comunes en los que una cuenta de servicio lleva a cabo una consulta de búsqueda se incluye aplicar una directiva de retención de eDiscovery a los sitios y cuentas de OneDrive, y aplicar automáticamente etiquetas de retención o confidencialidad al contenido del sitio.|
+|Se ha reciclado un archivo | FileRecycled | El usuario mueve un archivo a la Papelera de reciclaje de SharePoint. |
+|Se ha reciclado una carpeta | FolderRecycled | El usuario mueve una carpeta a la Papelera de reciclaje de SharePoint. |
 |Todas las versiones menores del archivo recicladas|FileVersionsAllMinorsRecycled|El usuario elimina todas las versiones secundarias del historial de versiones de un archivo. Las versiones eliminadas se mueven a la Papelera de reciclaje del sitio.|
 |Todas las versiones del archivo recicladas|FileVersionsAllRecycled|El usuario elimina todas las versiones del historial de versiones de un archivo. Las versiones eliminadas se mueven a la Papelera de reciclaje del sitio.|
 |Versión del archivo reciclada|FileVersionRecycled|El usuario elimina una versión del historial de versiones de un archivo. La versión eliminada se mueve a la Papelera de reciclaje del sitio.|
@@ -626,7 +628,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
-|Elementos de buzón a los que se ha accedido|MailItemsAccessed|Se han leído mensajes o se obtuvo acceso a los mensajes del buzón. Los registros de auditoría de esta actividad se activan de una de estas dos maneras: cuando un cliente de correo (por ejemplo, Outlook) realiza una operación de vinculación en mensajes o cuando los protocolos de correo (como Exchange ActiveSync o IMAP) sincronizan elementos en una carpeta de correo. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Analizar los registros de auditoría de esta actividad es útil al investigar cuentas de correo electrónico vulnerables. Para obtener más información, vea la sección "Acceder a eventos fundamentales para las investigaciones" en [Auditoría avanzada](advanced-audit.md#access-to-crucial-events-for-investigations). |
+|Elementos de buzón a los que se ha accedido|MailItemsAccessed|Se han leído mensajes o se obtuvo acceso a los mensajes del buzón. Los registros de auditoría de esta actividad se activan de una de estas dos maneras: cuando un cliente de correo (por ejemplo, Outlook) realiza una operación de vinculación en mensajes o cuando los protocolos de correo (como Exchange ActiveSync o IMAP) sincronizan elementos en una carpeta de correo. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Analizar los registros de auditoría de esta actividad es útil al investigar cuentas de correo electrónico vulnerables. Para obtener más información, vea la sección "Eventos de Auditoría avanzada" en [Auditoría avanzada](advanced-audit.md#advanced-audit-events). |
 |Permisos de buzón de delegado agregados|Add-MailboxPermission|Un administrador asignó el permiso de FullAccess del buzón a un usuario (conocido como delegado) para el buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona, así como leer y administrar el contenido del buzón.|
 |Se ha agregado o quitado un usuario con acceso delegado a la carpeta calendario|UpdateCalendarDelegation|Se ha agregado o quitado un usuario como delegado hacia el calendario del buzón de otro usuario. La delegación de calendario otorga a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.|
 |Se agregaron permisos a la carpeta|AddFolderPermissions|Un permiso de la carpeta se ha cambiado. Los permisos de carpeta controlan qué usuarios de su organización pueden tener acceso las carpetas de un buzón de correo y los mensajes que contienen.|
@@ -642,7 +644,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 |Mensajes que se han purgado del buzón|HardDelete|Un mensaje se ha purgado de la carpeta Elementos recuperables (eliminado permanentemente del buzón).|
 |Permisos de buzón de delegado quitados|Remove-MailboxPermission|Un administrador quitó el permiso FullAccess (que se asignó a un delegado) del buzón de una persona. Una vez que se haya quitado el permiso FullAccess, el delegado no podrá abrir el buzón de la otra persona ni acceder a ningún contenido.|
 |Permisos quitados de la carpeta|RemoveFolderPermissions|Un permiso de la carpeta se ha removido. Los permisos de carpeta controlan qué usuarios de su organización pueden tener acceso las carpetas de un buzón de correo y los mensajes que contienen.|
-|Enviar mensaje|Enviar|Un mensaje ha sido enviado, respondido o reenviado. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Para obtener más información, vea la sección "Acceder a eventos fundamentales para las investigaciones" en [Auditoría avanzada](advanced-audit.md#access-to-crucial-events-for-investigations).|
+|Enviar mensaje|Enviar|Un mensaje ha sido enviado, respondido o reenviado. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Para obtener más información, vea la sección "Eventos de Auditoría avanzada" en [Auditoría avanzada](advanced-audit.md#advanced-audit-events).|
 |Mensaje enviado mediante los permisos de Enviar como|SendAs|Un mensaje se ha enviado con el permiso enviar como. Esto significa que otro usuario ha enviado el mensaje como si proviniera del propietario del buzón.|
 |Mensaje enviado mediante los permisos en nombre de|SendOnBehalf|Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.|
 |Reglas de la bandeja de entrada actualizadas desde el cliente de Outlook|UpdateInboxRules|El propietario de un buzón u otro usuario con acceso al buzón, modificó una regla de la bandeja de entrada en el Outlook del cliente.|
@@ -810,6 +812,9 @@ Para obtener una descripción de las actividades de la aplicación Turnos, consu
 
 En la siguiente tabla, se enumeran las actividades de usuario y de administrador de Yammer que se registran en el registro de auditoría. Para devolver las actividades relacionadas con Yammer del registro de auditoría, tiene que seleccionar **Mostrar resultados de todas las actividades** en la lista **Actividades**. Use los cuadros de intervalo de fecha y la lista **Usuarios** para restringir los resultados de la búsqueda.
 
+> [!NOTE]
+> Algunas actividades de auditoría de Yammer solo están disponibles en Auditoría avanzada. Esto significa que los usuarios deben tener asignada la licencia adecuada antes de que estas actividades se registren en el registro de auditoría. Para obtener más información acerca de las actividades que solo se encuentran disponibles en Auditoría avanzada, vea [Auditoría avanzada en Microsoft 365](advanced-audit.md#advanced-audit-events). Para conocer los requisitos de licencia de Auditoría avanzada, consulte [Soluciones de auditoría en Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>En la siguiente tabla se resaltan las actividades de Auditoría avanzada con un asterisco (*).
+
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Directiva de retención de datos cambiada|SoftDeleteSettingsUpdated|Un administrador superior actualizó la configuración de la directiva de retención de datos de la red a eliminación permanente o eliminación temporal. Solo los administradores superiores pueden realizar esta operación.|
@@ -819,16 +824,22 @@ En la siguiente tabla, se enumeran las actividades de usuario y de administrador
 |Configuración de seguridad cambiada|NetworkSecurityConfigurationUpdated|Un administrador superior actualizó la configuración de seguridad de la red de Yammer. Esto incluye establecer las directivas de expiración de contraseña y las restricciones de las direcciones IP. Solo los administradores superiores pueden realizar esta operación.|
 |Archivo creado|FileCreated|El usuario cargó un archivo.|
 |Grupo creado|GroupCreation|El usuario crea un grupo.|
+|Mensaje creado <sup>*</sup>|MessageCreated|El usuario creó un mensaje.|
 |Grupo eliminado|GroupDeletion|Se eliminó un grupo de Yammer.|
 |Mensaje eliminado|MessageDeleted|El usuario eliminó un mensaje.|
 |Archivo descargado|FileDownloaded|El usuario descargó un archivo.|
 |Datos exportados|DataExport|Un administrador superior exportó datos de la red de Yammer. Solo los administradores superiores pueden realizar esta operación.|
+|No ha podido acceder a la comunidad<sup>*</sup>|CommunityAccessFailure|El usuario no pudo acceder a una comunidad.|
+|No se ha podido acceder al archivo<sup>*</sup>|FileAccessFailure|El usuario no pudo acceder a un archivo.|
+|No se ha podido acceder al mensaje<sup>*</sup>|MessageAccessFailure|El usuario no pudo acceder a un mensaje.|
 |Archivo compartido|FileShared|Un usuario compartió un archivo con otro usuario.|
 |Usuario de red suspendido|NetworkUserSuspended|Un administrador de red o superior suspendió (desactivó) un usuario de Yammer.|
 |Usuario suspendido|UserSuspension|Se suspendió una cuenta de usuario (se desactivó).|
 |Descripción del archivo actualizado|FileUpdateDescription|Un usuario cambió la descripción de un archivo.|
 |Nombre de archivo actualizado|FileUpdateName|Un usuario cambió el nombre de un archivo.|
+|Mensaje actualizado<sup>*</sup>|MessageUpdated|El usuario actualizó un mensaje.|
 |Archivo visualizado|FileVisited|Un usuario visualizó un archivo.|
+|Mensaje visto<sup>*</sup>|MessageViewed|El usuario vio un mensaje.|
 ||||
 
 ### <a name="microsoft-power-automate-activities"></a>Actividades en Microsoft Power Automate 
@@ -867,12 +878,12 @@ En la tabla siguiente se enumeran las actividades de cuarentena que puede buscar
 
 ### <a name="microsoft-forms-activities"></a>Actividades de Microsoft Forms
 
-En la siguiente tabla, se enumeran las actividades de usuario y de administrador en Microsoft Forms que se registran en el registro de auditoría. Microsoft Forms es una herramienta de formularios, cuestionarios y encuestas utilizado para recopilar datos para su análisis. 
+En las tablas de esta sección se indican las actividades de usuario y administrador de Microsoft Forms que se registran en el registro de auditoría. Microsoft Forms es una herramienta de formularios, cuestionarios y encuestas utilizado para recopilar datos para su análisis. A continuación, en las descripciones, algunas operaciones contienen parámetros de actividad adicionales.
 
-A continuación, en las descripciones, algunas operaciones contienen parámetros de actividad adicionales.
+Si se lleva a cabo una actividad de Forms por parte de un coautor o alguien que responde anónimamente, se registrará de forma ligeramente distinta. Para obtener más información, consulte la sección [actividades de formularios que realizan los coautores y respondedores anónimos](#forms-activities-performed-by-coauthors-and-anonymous-responders).
 
 > [!NOTE]
-> Si se lleva a cabo una actividad de Forms por parte de un coautor o alguien que responde anónimamente, se registrará de forma ligeramente distinta. Para obtener más información, consulte la sección [actividades de formularios que realizan los coautores y respondedores anónimos](#forms-activities-performed-by-coauthors-and-anonymous-responders).
+> Algunas actividades de auditoría de Forms solo están disponibles en Auditoría avanzada. Esto significa que los usuarios deben tener asignada la licencia adecuada antes de que estas actividades se registren en el registro de auditoría. Para obtener más información acerca de las actividades que solo se encuentran disponibles en Auditoría avanzada, vea [Auditoría avanzada en Microsoft 365](advanced-audit.md#advanced-audit-events). Para conocer los requisitos de licencia de Auditoría avanzada, consulte [Soluciones de auditoría en Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>En la siguiente tabla se resaltan las actividades de Auditoría avanzada con un asterisco (*).
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
@@ -900,21 +911,21 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 |Estado de phishing actualizado del formulario|UpdatePhishingStatus|Este evento se registra cada vez que se cambie el valor detallado del estado de seguridad interna, independientemente de que ha cambiado el estado de seguridad final (por ejemplo, el formulario ahora está cerrado o abierto). Esto significa que usted puede ver los eventos duplicados sin un cambio final en el Estado de Seguridad. Los posibles valores de estado de este evento son:<br/>-Deseche el <br/>-Derribado por la administración <br/>-Administrador desbloqueado <br/>-Bloqueado automáticamente <br/>-Desbloqueado automáticamente <br/>-El cliente informó <br/>-Restablecer informe de cliente|
 |Estado de phising de usuario actualizado|UpdateUserPhishingStatus|Este evento se registra cuando se cambia el valor del estado de seguridad de usuario. El valor del estado del usuario en el registro de auditoría es **confirmado como Phisher** cuando el usuario ha creado un formulario de phishing que ha sido retirado por el equipo de seguridad de Microsoft Online. Si un administrador desbloquea al usuario, el valor de estado del usuario se establece en **Restablecer como usuario normal**.|
 |Invitación a Forms Pro enviada|ProInvitation|El usuario hace clic para activar la versión de prueba Pro.|
-|Configuración de formulario actualizada|UpdateFormSetting|El propietario del formulario actualiza una o varias opciones de configuración del formulario. <br><br>La propiedad FormSettingName:string indica el nombre de la configuración confidencial actualizada. La propiedad NewFormSettings:string indica el nombre de la configuración actualizada y el nuevo valor. La propiedad thankYouMessageContainsLink:boolean indica que el mensaje de agradecimiento actualizado contiene un vínculo URL.|
+|Configuración de formulario actualizada<sup>*</sup> |UpdateFormSetting|El propietario del formulario actualiza una o varias opciones de configuración del formulario. <br><br>La propiedad FormSettingName:string indica el nombre de la configuración confidencial actualizada. La propiedad NewFormSettings:string indica el nombre de la configuración actualizada y el nuevo valor. La propiedad thankYouMessageContainsLink:boolean indica que el mensaje de agradecimiento actualizado contiene un vínculo URL.|
 |Configuración del usuario actualizada |UpdateUserSetting|La configuración del usuario ha sido actualizada por el propietario del formulario. <br><br>La propiedad UserSettingName: la cadena indica el nombre y el nuevo valor de la configuración|
-|Formularios en la lista|ListForms|La lista de formularios está siendo visualizada por el propietario. <br><br>La propiedad ViewType:string indicará sobre la visualización que busca el propietario del formulario: todos los formularios, compartidos conmigo o en grupos|
+|Formularios en la lista<sup>*</sup>|ListForms|La lista de formularios está siendo visualizada por el propietario. <br><br>La propiedad ViewType:string indicará sobre la visualización que busca el propietario del formulario: todos los formularios, compartidos conmigo o en grupos|
 |Respuesta enviada|SubmitResponse|Un usuario envía una respuesta sobre un formulario. <br><br>La propiedad IsInternalForm:boolean indicará si el respondedor está dentro de la misma organización que el propietario del formulario.|
-|Configuración de cualquier persona puede responder habilitada|AllowAnonymousResponse|El propietario del formulario activa la configuración, lo que permite que cualquier usuario responda al formulario.|
-|La configuración de cualquier persona que pueda responder está deshabilitada|DisallowAnonymousResponse|El propietario del formulario desactiva la configuración, lo que permite que cualquier usuario responda al formulario.|
-|La configuración de personas específicas que puedan responder está habilitada|EnableSpecificResponse|El propietario del formulario activa la configuración para permitir que solo personas específicas o grupos específicos de la organización actual respondan al formulario.|
-|La configuración de personas específicas que pueden responder está deshabilitada|DisableSpecificResponse|El propietario del formulario desactiva la configuración para permitir que solo personas específicas o grupos específicos de la organización actual respondan al formulario.|
-|Respondedor específico agregado|AddSpecificResponder|El propietario del formulario añade al nuevo usuario o grupo a la lista respondedores específica.|
-|Respondedor específico quitado|RemoveSpecificResponder|El propietario del formulario elimina un nuevo usuario o grupo de la lista respondedores específica.|
-|Colaboración deshabilitada|DisableCollaboration|El propietario del formulario desactiva la configuración de colaboración en el formulario.|
-|La colaboración de cuenta profesional o educativa de Office 365 está habilitada|EnableWorkOrSchoolCollaboration|El propietario del formulario activa la configuración que permite a los usuarios con una cuenta profesional o educativa de Office 365 ver y editar el formulario.|
-|La colaboración de personas en mi organización está habilitada|EnableSameOrgCollaboration|El propietario del formulario activa la configuración que permite a los usuarios de la organización actual ver y editar el formulario.|
-|La colaboración con personas específicas está habilitada|EnableSpecificCollaboaration|El propietario del formulario activa la configuración para permitir que solo personas específicas o grupos específicos de la organización actual vean y editen el formulario.|
-|Conectado al libro de Excel|ConnectToExcelWorkbook|Conectado el formulario a un libro de Excel. <br><br>La propiedad ExcelWorkbookLink:string indica el Id. de libro de Excel asociado del formulario actual.|
+|Configuración de cualquier persona puede responder habilitada<sup>*</sup>|AllowAnonymousResponse|El propietario del formulario activa la configuración, lo que permite que cualquier usuario responda al formulario.|
+|Configuración de cualquier persona puede responder deshabilitada<sup>*</sup>|DisallowAnonymousResponse|El propietario del formulario desactiva la configuración, lo que permite que cualquier usuario responda al formulario.|
+|Configuración de personas específicas que pueden responder habilitada<sup>*</sup>|EnableSpecificResponse|El propietario del formulario activa la configuración para permitir que solo personas específicas o grupos específicos de la organización actual respondan al formulario.|
+|Configuración de solo personas específicas pueden responder deshabilitada<sup>*</sup>|DisableSpecificResponse|El propietario del formulario desactiva la configuración para permitir que solo personas específicas o grupos específicos de la organización actual respondan al formulario.|
+|Se ha añadido respondedor específico<sup>*</sup>|AddSpecificResponder|El propietario del formulario añade al nuevo usuario o grupo a la lista respondedores específica.|
+|Se ha quitado respondedor específico<sup>*</sup>|RemoveSpecificResponder|El propietario del formulario elimina un nuevo usuario o grupo de la lista respondedores específica.|
+|Colaboración deshabilitada<sup>*</sup>|DisableCollaboration|El propietario del formulario desactiva la configuración de colaboración en el formulario.|
+|Colaboración en cuenta profesional o educativa de Office 365 habilitada<sup>*</sup>|EnableWorkOrSchoolCollaboration|El propietario del formulario activa la configuración que permite a los usuarios con una cuenta profesional o educativa de Office 365 ver y editar el formulario.|
+|Colaboración de personas en mi organización habilitada<sup>*</sup>|EnableSameOrgCollaboration|El propietario del formulario activa la configuración que permite a los usuarios de la organización actual ver y editar el formulario.|
+|Colaboración con personas específicas habilitada<sup>*</sup>|EnableSpecificCollaboaration|El propietario del formulario activa la configuración para permitir que solo personas específicas o grupos específicos de la organización actual vean y editen el formulario.|
+|Conectado al libro de Excel<sup>*</sup>|ConnectToExcelWorkbook|Conectado el formulario a un libro de Excel. <br><br>La propiedad ExcelWorkbookLink:string indica el Id. de libro de Excel asociado del formulario actual.|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Actividades de Forms que realizan los coautores y respondedores anónimos

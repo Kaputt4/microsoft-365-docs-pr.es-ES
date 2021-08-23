@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Decida qué características Office mostrar u ocultar cuando un usuario elija Ayuda > Novedades de su Aplicación de Office en Windows mediante la característica "Novedades de Office" en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 22801436a4502dd27e9b290080bcb6f1936550ac
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 31506f05054d6ee98eae0e1f075618d866d3934c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346261"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394449"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Administrar qué Office aparecen en Novedades
 

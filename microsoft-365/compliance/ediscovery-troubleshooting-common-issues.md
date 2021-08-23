@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Obtenga información sobre los pasos básicos de solución de problemas que puede seguir para resolver problemas comunes en Office 365 exhibición de documentos electrónicos.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ec120edcbccc64046b57507cd6cd6044fb583c5129c336e28890b67f369cd46
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b4c5389ec650be18c9f65e7fc85f4166a8eef14
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820164"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394593"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar y resolver problemas comunes de exhibición de documentos electrónicos
 
@@ -80,7 +80,7 @@ Si recibe este error, se recomienda comprobar las ubicaciones que han fallado en
 
 ## <a name="errorissue-file-not-found"></a>Error o problema: no se encontró el archivo
 
-Al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye SharePoint online y una unidad para empresas, puede recibir el error aunque el archivo se encuentra `File Not Found` en el sitio. Este error estará en las advertencias de exportación y errors.csv o omitirá items.csv. Esto puede ocurrir si el archivo no se puede encontrar en el sitio o si el índice está desa actualizado. Este es el texto de un error real (con énfasis agregado).
+Al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye SharePoint online y OneDrive para la Empresa, puede recibir el error aunque el archivo se encuentra `File Not Found` en el sitio. Este error estará en las advertencias de exportación y errors.csv o omitirá items.csv. Esto puede ocurrir si el archivo no se puede encontrar en el sitio o si el índice está desa actualizado. Este es el texto de un error real (con énfasis agregado).
 
 > 28.06.2019 10:02:19_FailedToExportItem_Failed descargar contenido. Información de diagnóstico adicional : Microsoft. Office. Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: No se pudo descargar del contenido 6ea52149-91cd-4965-b5bb-82ca6a3ec9be de tipo Document. Identificador de correlación: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft. SharePoint. Client.ServerException: ***Archivo no encontrado***. en Microsoft. SharePoint. Client.ClientRequest.ProcessResponseStream(Stream responseStream) en Microsoft. SharePoint. Client.ClientRequest.ProcessResponse() --- fin del seguimiento de la pila de excepciones ---
 
@@ -92,17 +92,16 @@ Al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye
 
 ## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>Error o problema: este archivo no se exportó porque ya no existe. El archivo se incluyó en el recuento de resultados de búsqueda estimados porque aún aparece en el índice. El archivo finalmente se quitará del índice y no provocará un error en el futuro.
 
-Es posible que vea ese error al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye SharePoint online y ubicaciones de One Drive For Business. La exhibición de documentos electrónicos se basa en el índice de SPO para identificar las ubicaciones de archivos. Si el archivo se eliminó pero el índice de SPO aún no se actualizó, puede producirse este error.
+Es posible que vea ese error al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye SharePoint online y OneDrive para la Empresa web. La exhibición de documentos electrónicos se basa en el índice de SPO para identificar las ubicaciones de archivos. Si el archivo se eliminó pero el índice de SPO aún no se actualizó, puede producirse este error.
 
 ### <a name="resolution"></a>Solución 
 Abra la ubicación del SPO y compruebe que este archivo no está allí.
-La solución sugerida es volver a indizar manualmente el sitio o esperar a que el sitio vuelva a indexarse mediante el proceso en segundo plano automático.
+La solución sugerida es volver a indizar manualmente el sitio o esperar a que el sitio vuelva a indizar mediante el proceso en segundo plano automático.
 
 
 ## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Error o problema: este resultado de búsqueda no se descargó, ya que es una carpeta u otro artefacto que no se puede descargar por sí mismo, se descargarán los elementos dentro de la carpeta o biblioteca.
 
-Es posible que vea ese error al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye SharePoint online y ubicaciones de One Drive For Business. Significa que ibamos a intentar exportar el elemento notificado en el índice, pero resultó ser una carpeta por lo que no lo exportamos. Como se mencionó en el error, no exportamos elementos de carpeta, pero exportamos su contenido.
-
+Es posible que vea ese error al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye SharePoint online y OneDrive para la Empresa web. Significa que ibamos a intentar exportar el elemento notificado en el índice, pero resultó ser una carpeta por lo que no lo exportamos. Como se mencionó en el error, no exportamos elementos de carpeta, pero exportamos su contenido.
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Error o problema: se produce un error en la búsqueda porque no se encuentra el destinatario
 
@@ -134,7 +133,7 @@ Al exportar resultados de búsqueda desde la exhibición de documentos electrón
 
 2. Busque la cantidad de datos que se descargarán en los parámetros SearchResults y SearchStatistics.
 
-3. Ejecute el comando siguiente:
+3. Ejecute el siguiente comando:
 
    ```powershell
    Get-ComplianceSearchAction | FL
@@ -152,7 +151,7 @@ Al exportar resultados de búsqueda desde la exhibición de documentos electrón
 
 ### <a name="resolution"></a>Solución
 
-1. Si es necesario, vuelva a ejecutar la búsqueda. Si la búsqueda se ejecutó por última vez hace más de 7 días, debe volver a ejecutar la búsqueda.
+1. Si es necesario, vuelva a ejecutar la búsqueda. Si la búsqueda se ejecutó por última vez hace más de siete días, debe volver a ejecutar la búsqueda.
 
 2. Reinicie la exportación.
 
@@ -247,3 +246,32 @@ Este es un problema del lado cliente. Para corregirlo, siga estos pasos:
 6. Si los pasos anteriores no funcionan, deshabilite la compresión y la desduplicación.
 
 7. Si esto funciona, el problema se debe a un escáner de virus local o a un problema de disco.
+
+## <a name="error-your-request-cant-be-started-because-the-maximum-number-of-jobs-for-your-organization-are-currently-running"></a>Error: "La solicitud no se puede iniciar porque el número máximo de trabajos de la organización se está ejecutando actualmente"
+
+Su organización ha alcanzado el límite para el número máximo de trabajos de exportación simultáneos. Se están limitando todos los trabajos de exportación nuevos.
+
+### <a name="resolution"></a>Solución
+
+Ejecute el siguiente script para descubrir cuántos trabajos de exportación que se iniciaron en los últimos siete días siguen ejecutándose.
+
+1. Conectar [a PowerShell & Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+
+2. Ejecutar el siguiente script para obtener información sobre los trabajos de exportación actuales están desencadenando el acelerador:
+
+   ```powershell
+   $date = Get-Date;
+   $exports = Get-ComplianceSearchAction -Export -ResultSize Unlimited;
+   $inprogressExports = $exports | ?{$_.Results -eq $null -or (!$_.Results.Contains("Export status: Completed") -and !$_.Results.Contains("Export status: none"))};
+   $exportJobsRunning = $inprogressExports | ?{$_.JobStartTime -ge $date.AddDays(-7)} | Sort-Object JobStartTime -Descending;
+   ```
+
+3. Ejecute el siguiente comando para mostrar una lista de trabajos de exportación que se están ejecutando actualmente:
+
+   ```powershell
+   $exportJobsRunning | Format-Table Name, JobStartTime, JobEndTime, Status | More;
+   ```
+
+   Si el comando anterior devuelve 10 o más trabajos de exportación, la organización ha alcanzado el límite para el número de trabajos de exportación simultáneos. Para obtener más información, vea [Limits for eDiscovery search](limits-for-content-search.md).
+
+4. Espere a que los trabajos de exportación existentes finalicen o quiten trabajos de exportación que ya no son necesarios mediante el cmdlet [Remove-ComplianceSearchAction.](/powershell/module/exchange/remove-compliancesearchaction)

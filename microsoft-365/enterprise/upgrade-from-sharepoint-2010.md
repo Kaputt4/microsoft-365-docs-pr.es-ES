@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: Busque información y recursos para actualizar desde SharePoint 2010 y Sharepoint Server 2010. La compatibilidad con ambos finaliza el 13 de abril de 2021.
+description: Busque información y recursos para actualizar desde SharePoint 2010 y SharePoint Server 2010. La compatibilidad con ambos finaliza el 13 de abril de 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 67b8174aa23027b64132cc4676e2e7bfb5675cd1deb4684d18945d58b5cf63ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5f0919bd80b68167ccfae38a461c79b704e2b803
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848159"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394521"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Microsoft SharePoint 2010 y SharePoint Server 2010 llegarán al final del soporte técnico el 13 de abril de **2021**. En este artículo se proporcionan recursos que le ayudarán a migrar los datos existentes de SharePoint Server 2010 a SharePoint Online en Microsoft 365 o actualizar el entorno local de SharePoint Server 2010.
 
@@ -116,7 +116,7 @@ Si actualiza a SharePoint Server 2013 o SharePoint Server 2016 y decide colocar 
 |Microsoft aplica revisiones, correcciones y actualizaciones al hardware y software subyacentes, incluidos los servidores SQL en los que se ejecuta SharePoint Online.|Dado que no hay acceso al sistema de archivos subyacente en el servicio, la personalización es limitada.|
 |Microsoft publica contratos [de nivel de](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) servicio y se mueve rápidamente para resolver incidentes de nivel de servicio.|La copia de seguridad y restauración y otras opciones de recuperación son automatizadas por el servicio en SharePoint Online. Las copias de seguridad se sobrescriben si no se usan.|
 |Microsoft realiza continuamente pruebas de seguridad y optimización del rendimiento del servidor en el servicio.|El servicio instala cambios en la interfaz de usuario y otras características de SharePoint se instalan y es posible que deban activarse o desactivarse.|
-|Microsoft 365 cumple muchos estándares del sector: [ofertas de cumplimiento de Microsoft.](/compliance/regulatory/offering-home)|[La asistencia de FastTrack](https://go.microsoft.com/fwlink/?linkid=518597) para la migración es limitada.  <br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en SharePoint [Online y OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).|
+|Microsoft 365 cumple muchos estándares del sector: [ofertas de cumplimiento de Microsoft.](/compliance/regulatory/offering-home)|[FastTrack](https://go.microsoft.com/fwlink/?linkid=518597) asistencia para la migración es limitada.  <br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en SharePoint [Online y OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).|
 |Los ingenieros de soporte técnico de Microsoft y los empleados del centro de datos no tienen acceso de administrador sin restricciones a su suscripción.|Puede haber costos adicionales si es necesario actualizar la infraestructura de hardware para admitir la versión más reciente de SharePoint o si se requiere una granja de servidores secundaria para la actualización.|
 |Los proveedores de soluciones pueden ayudarle con el trabajo único de migrar los datos a SharePoint Online.|No todos los cambios en SharePoint Online están dentro de su control. Después de la migración, las diferencias de diseño en menús, bibliotecas y otras características pueden afectar temporalmente a la facilidad de uso.|
 |Los productos en línea se actualizan automáticamente en todo el servicio. Las características pueden desuso, pero no hay un verdadero final del ciclo de vida de soporte técnico.|Hay un ciclo de vida de fin de soporte técnico para SharePoint Server o SharePoint Foundation, así como servidores SQL base.|
@@ -181,9 +181,9 @@ Si una granja de servidores SharePoint servidor híbrido es su objetivo de migra
 
 Asegúrese de familiarizarse con los tipos de híbridos existentes y cómo configurar la conexión entre la granja de servidores SharePoint local y la Microsoft 365 suscripción.
 
-|Opción|Description|
+|Opción|Descripción|
 |---|---|
-|[Ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home).|[La asistencia de FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) para la migración es limitada.<br/><br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en SharePoint [Online y OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).|
+|[Ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home).|[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) asistencia para la migración es limitada.<br/><br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en SharePoint [Online y OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).|
 |Los ingenieros de soporte técnico de Microsoft y los empleados del centro de datos no tienen acceso de administrador sin restricciones a su suscripción.|Puede haber costos adicionales si es necesario actualizar la infraestructura de hardware para admitir la versión más reciente de SharePoint o si se requiere una granja de servidores secundaria.|
 |Los partners pueden ayudar con el trabajo único de migrar los datos a SharePoint Online.||
 |Los productos en línea se actualizan automáticamente en todo el servicio. Las características pueden desuso, pero no existe un verdadero final de compatibilidad.||

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Los movimientos de datos son operaciones back-end que se producen cuando Microsoft mueve los servicios y los datos asociados del inquilino a un nuevo centro de datos geográfico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10ea0e40a56c9f86d3563fca2e435d1a97b06fa6feb790591e40d41cafe94526
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d2c78ace4fb25d060ecaeab96903ba577a1d7316
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891300"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394401"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -48,7 +48,7 @@ Vea el Centro Microsoft 365 mensajes para obtener confirmación cuando se mueva 
 |Alemania  <br/> |1 de mayo de 2023  <br/> |
 |Brasil  <br/> |1 de junio de 2023  <br/> |
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange en línea
 
 Dado que se tarda tiempo en mover cada usuario a la nueva ubicación geográfica del centro de datos para un único inquilino, algunos usuarios seguirán estando en la antigua ubicación geográfica del centro de datos durante el movimiento, mientras que otros estarán en la nueva ubicación geográfica del centro de datos. Esto significa que es posible que algunas características que implican el acceso a varios buzones no funcionen completamente durante un período del proceso de movimiento, que puede durar semanas. Estas características se describen en las secciones siguientes.
   

@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: El sistema de nombres de dominio asigna los nombres de host del equipo a las direcciones IP, comprender los conceptos básicos de DNS y registrador de dominios puede ayudarle a administrar los dominios.
-ms.openlocfilehash: 0cf8d0ef7fa5a3a6420f0cf85eea2242ac9c909faaa3f0e0a032d7902fc4b7ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37d8e885dafaa055ed5cc7eee24456b758ef8b4f
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825852"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394293"
 ---
 # <a name="dns-basics"></a>Conceptos básicos sobre DNS
 
@@ -193,7 +194,7 @@ Puede usar su nombre de dominio en Microsoft 365 con su correo electrónico, sit
 
 Se necesitan varios registros DNS para que Microsoft 365 funcione con su dominio. Además de configurar el registro MX del dominio para que el correo electrónico se envíe a Microsoft 365, hay registros para ayudar con tareas como, por ejemplo, asegurarse de que Outlook pueda conectarse automáticamente al servidor de Exchange adecuado, configurar la mensajería instantánea y ayudar a evitar el correo electrónico no deseado.
   
-También puede [encontrar una lista de valores](information-for-dns-records.md) para configurar su dominio. Se incluyen directamente en el centro de administración de Microsoft 365. 
+También puede [encontrar una lista de valores](information-for-dns-records.md) para configurar su dominio. Se incluyen directamente en el <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">centro de administración de Microsoft 365</a>. 
   
 O, si está planificando una implementación, tal vez quiera revisar una lista de todos los registros DNS necesarios para Microsoft 365, sus funciones y valores de ejemplo. Consulte [Registros externos del sistema de nombres de dominio para Microsoft 365](../../enterprise/external-domain-name-system-records.md).
   

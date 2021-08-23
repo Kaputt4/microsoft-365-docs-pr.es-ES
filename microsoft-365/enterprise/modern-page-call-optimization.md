@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar las páginas de sitios de publicación modernos y clásicos en SharePoint Online limitando el número de llamadas a los puntos de conexión de servicios de SharePoint Online.
-ms.openlocfilehash: 83a9fdaef8b5441955be7e7ebc8fc8553030892eebb7ddd8e518750e9cd26c0a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f06ec4027737f03d44c6a95a7faa74ff48d94548
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858541"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394677"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimizar las llamadas de página en las páginas de sitios de publicación modernos y clásicos de SharePoint Online
 
@@ -58,7 +58,7 @@ Si el resultado de **Solicitudes a SharePoint** aparece en la sección **Requier
 
 ## <a name="remediate-performance-issues-related-to-too-many-calls-on-a-page"></a>Corrección de problemas de rendimiento relacionados con demasiadas llamadas en una página
 
-Si una página contiene demasiadas llamadas, puede usar la lista de direcciones URL de los resultados de **Solicitudes a SharePoint** para determinar si hay llamadas repetidas, llamadas que deben procesarse por lotes o las llamadas que devuelven datos que deberían almacenarse en caché.
+Si una página contiene demasiadas llamadas, puede usar la lista de direcciones URL de los **resultados** de solicitudes SharePoint para determinar si hay llamadas repetidas, llamadas que deben procesarse por lotes o llamadas que devuelvan datos que deben almacenarse en caché.
 
 **El procesamiento por lotes de llamadas REST** puede ayudar a reducir la sobrecarga de rendimiento. Para más información sobre el procesamiento por lotes de llamadas de API, consulte [Realizar solicitudes de lote con las API de REST](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis).
 

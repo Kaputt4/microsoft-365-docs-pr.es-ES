@@ -17,14 +17,15 @@ search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
+- admindeeplinkMAC
 description: Obtenga información sobre cómo descargar las claves de licencia de software y producto para el software perpetuo comprado a través del programa Proveedor de soluciones en la nube (CSP).
 ms.date: 01/27/2021
-ms.openlocfilehash: 7ab5cfef9ae5e17ae2ab34fff05ed482e9dd7a859f9ab72132e9bfc6264bea59
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5dd2e17685746859768a14d61537871a75fe6698
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821992"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394689"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Descargar claves de licencia de producto y software perpetuidad
 

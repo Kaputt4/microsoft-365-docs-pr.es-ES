@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: 95d87e96eb965c32571aaaf242933648d2b9cf25
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 68fa947467948a788b5902ef50b7b9d574101a3a
+ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257497"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58417980"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -39,7 +39,7 @@ Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para super
 
 DLP de punto de conexión de Microsoft le permite auditar y administrar los tipos de actividades que se detallan a continuación y en las que los usuarios se enfrentan a elementos confidenciales que están almacenados en los dispositivos con Windows 10.
 
-|Actividad |Descripción  | Auditable/Restringible|
+|Actividad |Descripción  | Auditable/restringible|
 |---------|---------|---------|
 |cargar en el servicio en la nube o acceso por exploradores no permitidos    | Detecta cuándo un usuario intenta cargar un elemento en un dominio de servicio restringido o tener acceso a un elemento con un explorador.  Si usa un explorador que se muestra en DLP como un explorador que no es el permitido, la actividad de carga se bloqueará y se redirigirá al usuario para usar la arista de cromo. Por último, cromo puede permitir o bloquear la carga o el acceso en función de la configuración de la Directiva DLP.         |auditable y restringible|
 |copiar a otra aplicación    |Se detecta cuando un usuario intenta copiar información de un elemento protegido y, a continuación, lo pega en otra aplicación, proceso o elemento. Esta actividad no detecta la copia y el pegado de información dentro de la misma aplicación, proceso o elemento.         | auditable y restringible|

@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Obtenga información acerca de cómo configurar la autenticación multifactor para su organización.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 08f1d17942b1fb11dd9717e96045fd0b32b2422b
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 39d9eb7aa25ac721fb7c39535404790e2af214e6
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346069"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394653"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
 
@@ -45,6 +46,14 @@ En función de su comprensión de [autenticación multifactor (MFA) y su compati
 - Si tiene activada la MFA heredada por usuario, [Desactive la MFA heredada por usuario](#turn-off-legacy-per-user-mfa).
 - Si tiene clientes de Office 2013 en dispositivos Windows, [habilite la autenticación moderna para clientes de Office 2013](./enable-modern-authentication.md).
 - Configuración avanzada: si tiene servicios de directorio de terceros con Servicios de federación de Active Directory (AD FS), configure el Servidor Azure MFA. Consulte [escenarios avanzados con Azure AD Multifactor Authentication y soluciones VPN de terceros](/azure/active-directory/authentication/howto-mfaserver-nps-vpn) para obtener más información.
+
+### <a name="turn-off-legacy-per-user-mfa"></a>Desactivar la MFA heredada por usuario
+
+Si ha activado previamente la MFA por usuario, debe desactivarla antes de habilitar los valores predeterminados de seguridad.
+
+1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, elija **Usuarios** \> **Usuarios activos**.
+1. En la página **Usuarios activos**, elija **Autenticación multifactor**.
+1. En la página de autenticación multifactor, seleccione cada usuario y establezca el estado de la autenticación multifactor en **Deshabilitado**.
 
 ## <a name="turn-security-defaults-on-or-off"></a>Activar o desactivar las opciones predeterminadas de seguridad
 
@@ -89,6 +98,7 @@ Para la mayoría de las suscripciones, la autenticación moderna se activa autom
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, en el panel de navegación izquierdo, elija **Configuración** \> **Configuración de la organización**.
 2. En la pestaña **Servicios**, elija **Autenticación moderna** y, en el panel **Autenticación moderna**, asegúrese de que **Habilitar autenticación moderna** esté seleccionado. Elija **Guardar cambios**.
 
+
 ### <a name="turn-off-legacy-per-user-mfa"></a>Desactivar la MFA heredada por usuario
 
 Si ha activado previamente la MFA por usuario, debe desactivarla antes de habilitar los valores predeterminados de seguridad.
@@ -106,5 +116,8 @@ Si ha activado previamente la MFA por usuario, debe desactivarla antes de habili
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Active la autenticación multifactor](../../business-video/turn-on-mfa.md) (vídeo)\
-[Active la autenticación multifactor para su teléfono (Vídeo)](../../business-video/set-up-mfa.md)
+
+[Activar la autenticación multifactor (vídeo)](../../business-video/turn-on-mfa.md)
+
+[Activar la autenticación multifactor para su teléfono (Vídeo)](../../business-video/set-up-mfa.md)
+

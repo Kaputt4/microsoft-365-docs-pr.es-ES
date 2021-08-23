@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0e6e29067d2bb1223809096483b096acebf6d2be95dd42ec811e765d0cb9b6d7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 33828866b32c14b4922e936fbd279c3f7bc3b536
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894664"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408087"
 ---
 # <a name="cancel-machine-action-api"></a>Cancelar API de acción de máquina
 
@@ -45,7 +45,7 @@ ms.locfileid: "53894664"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Cancelar una acción de máquina ya iniciada que aún no está en estado final (completada, cancelada, fallida).
+Cancelar una acción de máquina iniciada que aún no está en estado final (completada, cancelada, con errores).
 
 ## <a name="limitations"></a>Limitaciones
 
@@ -57,8 +57,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso|Permiso|Nombre para mostrar de permisos|
 |---|---|---|
-|Aplicación|Machine.CollectForensic <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Recopilar forenses <br>Aislar máquina<br>Restringir la ejecución de código<br>  Máquina de digitalización<br>  Retirar máquina<br> Detener y poner en cuarentena<br> Ejecutar respuesta en directo en un equipo específico|
-|Delegado (cuenta profesional o educativa)|Machine.CollectForensic<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Recopilar forenses<br> Aislar máquina<br>  Restringir la ejecución de código<br> Máquina de digitalización<br>Retirar máquina<br> Detener y poner en cuarentena<br> Ejecutar respuesta en directo en un equipo específico|
+|Aplicación|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Recopilar forenses <br>Aislar máquina<br>Restringir la ejecución de código<br>  Máquina de digitalización<br>  Retirar máquina<br> Detener y poner en cuarentena<br> Ejecutar respuesta en directo en un equipo específico|
+|Delegado (cuenta profesional o educativa)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Recopilar forenses<br> Aislar máquina<br>  Restringir la ejecución de código<br> Máquina de digitalización<br>Retirar máquina<br> Detener y poner en cuarentena<br> Ejecutar respuesta en directo en un equipo específico|
 
 
 ## <a name="http-request"></a>Solicitud HTTP
@@ -72,7 +72,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Authorization|String|{token} de portador. Obligatorio.|
+|Authorization|Cadena|{token} de portador. Obligatorio.|
 |Content-Type|string|application/json. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

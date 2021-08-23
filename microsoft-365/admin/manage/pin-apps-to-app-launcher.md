@@ -11,14 +11,15 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 ms.service: o365-administration
+ms.custom: admindeeplinkMAC
 localization_priority: Normal
 description: Como administrador global, puedes anclar hasta tres aplicaciones al iniciador de aplicaciones de los usuarios.
-ms.openlocfilehash: 6569b05f29a2219c9d1d6c847e65cd29043d80fd82d5e499e2af57ba96af0da9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b26f77d819f41517add59be14f26931f14001c65
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825021"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394473"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>Anclar aplicaciones al iniciador de aplicaciones de los usuarios
 

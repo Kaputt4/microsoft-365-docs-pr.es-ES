@@ -18,17 +18,18 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - okr_smb
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtén la Administración de Microsoft 365 y aprende a administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: c6990e8eed4a234c205b0a80b0a14faf18d0eeea6d607eb07b00682d17c40ab5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7e503b70f6263e0bf5e949c7ca18ccfe0eb31ffb
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827196"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394365"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la Microsoft 365 móvil de administrador
 

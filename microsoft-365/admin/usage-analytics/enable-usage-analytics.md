@@ -16,22 +16,23 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtén información sobre cómo empezar a recopilar datos para el inquilino mediante la aplicación de plantilla Microsoft 365 de análisis de uso en Power BI.
-ms.openlocfilehash: b8101733b125c869d55c0e9cc00f1ec598bed08f
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 4d569c40283eb7f88c734de91821e1fe7a7793ab
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347233"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394641"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitar análisis de uso de Microsoft 365
 
-Microsoft 365 análisis de uso aún no está disponible para Microsoft 365 us government Community.
+Para habilitar Microsoft 365 análisis de uso en un espacio empresarial de Government Community Cloud (GCC) de Microsoft 365, consulte [Conectar to Microsoft 365 Government Community Cloud (GCC) data with Usage Analytics](connect-to-gcc-data-with-usage-analytics.md).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
