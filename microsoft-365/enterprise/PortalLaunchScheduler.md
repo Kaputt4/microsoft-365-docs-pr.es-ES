@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo iniciar el portal con el programador de inicio del portal
-ms.openlocfilehash: 14bbbe671d1708bf0d6674ecab93955066b4093d80b2ced9790030559673dc4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5dde70565cd9a5ca7812f84d0c62c39c9844ba42
+ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813382"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58417992"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Inicie el portal con el programador de inicio SharePoint portal de inicio
 
@@ -40,16 +40,16 @@ Los permisos de sitio deben configurarse por separado de las oleadas como parte 
 
 > [!NOTE]
 >
-> - Esta característica será accesible desde el panel **de Configuración** en la página principal de los sitios de comunicación de SharePoint para clientes de lanzamiento dirigido a partir de mayo de 2021 y estará disponible para todos los clientes en julio de 2021
-> - La versión de PowerShell de esta herramienta está disponible hoy
-> - Esta característica solo se puede usar en sitios de comunicación SharePoint modernos
-> - Debe tener permisos de propietario del sitio para que el sitio personalice y programe el inicio de un portal
-> - Los inicios deben programarse con al menos siete días de antelación y cada oleada puede durar entre uno y siete días.
-> - El número de oleadas requeridas se determina automáticamente por el número esperado de usuarios
-> - Antes de programar el inicio de un portal, se debe ejecutar la herramienta Diagnóstico [de](https://aka.ms/perftool) página para SharePoint para comprobar que la página principal del sitio está en buen estado
-> - Al final del inicio, todos los usuarios con permisos para el sitio podrán acceder al nuevo sitio
-> - Si su organización usa [Viva Connections,](/SharePoint/viva-connections)es posible que los usuarios vean el icono de su organización en la barra de aplicaciones de Microsoft Teams, pero cuando el icono esté seleccionado los usuarios no podrán acceder al portal hasta que se haya iniciado la ola.
-> - Esta característica no está disponible para Office 365 Alemania, Office 365 operado por 21Vianet (China) o Microsoft 365 planes del Gobierno de Estados Unidos
+> - Esta característica será accesible desde el panel **de Configuración** de la página principal de sitios de comunicación de SharePoint para clientes de lanzamiento dirigido a partir de mayo de 2021 y estará disponible para todos los clientes en julio de 2021.
+> - La versión de PowerShell de esta herramienta está disponible actualmente.
+> - Esta característica solo se puede usar en sitios de comunicación SharePoint modernos.
+> - Debe tener permisos de propietario del sitio para que el sitio personalice y programe el inicio de un portal.
+> - Los inicios deben programarse con al menos siete días de antelación y cada oleada puede durar de uno a siete días.
+> - El número de oleadas requeridas se determina automáticamente por el número esperado de usuarios.
+> - Antes de programar el inicio de un portal, se debe ejecutar la herramienta Diagnóstico de página [para](https://aka.ms/perftool) SharePoint para comprobar que la página principal del sitio está en buen estado.
+> - Al final del inicio, todos los usuarios con permisos para el sitio podrán acceder al nuevo sitio.
+> - Si su organización usa [Viva Connections,](/SharePoint/viva-connections)es posible que los usuarios vean el icono de la organización en la barra de aplicaciones de Microsoft Teams, pero cuando el icono esté seleccionado los usuarios no podrán acceder al portal hasta que se haya iniciado la ola.
+> - Esta característica no está disponible para Office 365 Alemania, Office 365 operado por 21Vianet (China) o Microsoft 365 planes del Gobierno de Estados Unidos.
 
 ## <a name="understand-the-differences-between-portal-launch-scheduler-options"></a>Comprender las diferencias entre las opciones del programador de inicio del portal:
 
@@ -115,12 +115,12 @@ Anteriormente, los inicios del portal solo se podían programar a través ShareP
 
 7. Determine quién debe ver el sitio inmediatamente e introduzca su información en el **campo Usuarios exentos de oleadas.** Estos usuarios se excluyen de las oleadas y no se redirigirán antes, durante o después del inicio.
 
-    > [!NOTE]
-    > Se pueden usar hasta 50 usuarios o grupos de seguridad distintos como máximo para todo el inicio. Cada inicio es independiente entre sí, por lo que si programa un inicio en otro portal, podría usar hasta 50 usuarios o grupos de seguridad para ese inicio. Además, puede usar hasta 20 usuarios o grupos de seguridad distintos por oleada. 
-    >
-    > El programador de inicio del portal admite grupos de seguridad y grupos de seguridad habilitados para correo. 
 
-8. Confirme los detalles de inicio del portal y seleccione **Programar**. Una vez programado el inicio, los cambios en la página principal del portal de SharePoint tendrán que recibir un resultado de diagnóstico correcto antes de que se reanude el inicio del portal.
+    >[!NOTE]
+    > Se pueden agregar hasta 50 usuarios o grupos de seguridad distintos como máximo. Use grupos de seguridad cuando necesite más de 50 personas para obtener acceso al portal antes de que las oleadas comiencen a iniciarse. 
+
+8.  Confirme los detalles de inicio del portal y seleccione **Programar**. Una vez programado el inicio, los cambios en la página principal del portal de SharePoint tendrán que recibir un resultado de diagnóstico correcto antes de que se reanude el inicio del portal.
+
 
 ### <a name="launch-a-portal-with-over-100k-users"></a>Iniciar un portal con más de 100.000 usuarios
 
@@ -181,7 +181,9 @@ La herramienta de programador de inicio de SharePoint Portal de SharePoint estab
 1. [Descargue el Shell de administración de SharePoint Online más reciente](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
     > [!NOTE]
-    > Si instaló una versión anterior del Shell de administración de SharePoint Online, vaya a Agregar o quitar programas y desinstale "Shell de administración de SharePoint Online".<br>En la página Centro de descarga, seleccione su idioma y haga clic en el botón Descargar. Se le pedirá que elija entre descargar un archivo .msi x64 y x86. Descargue el archivo x64 si está ejecutando la versión de 64 bits de Windows o el archivo x86 si está ejecutando la versión de 32 bits. Si no lo sabe, consulte [¿Qué versión del sistema operativo Windows estoy ejecutando?](https://support.microsoft.com/help/13443/windows-which-operating-system) Después de descargar el archivo, ejecútelo y siga los pasos del Asistente de configuración.
+    > Si instaló una versión anterior del Shell de administración de SharePoint Online, vaya a Agregar o quitar programas y desinstale "Shell de administración de SharePoint Online".
+    > 
+    > En la página Centro de descarga, seleccione su idioma y haga clic en el botón Descargar. Se le pedirá que elija entre descargar un archivo .msi x64 y x86. Descargue el archivo x64 si está ejecutando la versión de 64 bits de Windows o el archivo x86 si está ejecutando la versión de 32 bits. Si no lo sabe, consulte [¿Qué versión del sistema operativo Windows estoy ejecutando?](https://support.microsoft.com/help/13443/windows-which-operating-system) Después de descargar el archivo, ejecútelo y siga los pasos del Asistente de configuración.
 
 2. Conéctese a SharePoint como un [administrador global o como un administrador de SharePoint](/sharepoint/sharepoint-admin-role) en Microsoft 365. Para saber cómo hacerlo, consulte [Introducción al Shell de administración de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 

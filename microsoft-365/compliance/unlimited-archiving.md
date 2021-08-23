@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo ilimitado para Exchange Online buzones de correo.
-ms.openlocfilehash: 20be08209bbd4bad3bf0bdb0e7de4d602ee995a2873116981a9f7d892ffd1e46
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3473145231a70942311b5855036220fa247f0716
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841277"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372681"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Información general sobre el archivado ilimitado
 
@@ -90,15 +90,15 @@ Estos son algunos aspectos a tener en cuenta al usar Outlook o Outlook en la Web
 
 - Puede tener acceso a cualquier carpeta del buzón de archivo, incluidas las que se movieron al área de almacenamiento expandida automáticamente.
 
+- Si un buzón de archivo tiene al menos un área de almacenamiento expandida automáticamente, no puede eliminar una carpeta del buzón de archivo ni del archivo auxiliar. En otras palabras, después de aprovisionar un área de almacenamiento expandida automáticamente, no puede eliminar ninguna carpeta del archivo.
+
+- Puede eliminar elementos en un área de almacenamiento expandida automáticamente. Sin embargo, no puede usar la característica Recuperar elementos eliminados para recuperar un elemento eliminado de un área de almacenamiento expandida automáticamente.
+
 - La búsqueda de archivado expandido automáticamente está disponible en Outlook para la web (OWA). De forma similar a Archivo en línea, puede buscar elementos que se movieron a un área de almacenamiento adicional. Cuando se selecciona archivo como ámbito de búsqueda en OWA, se buscarán todos los archivos (incluidos los archivos expandido automáticamente) y sus subcarpetas correspondientes.
 
 - La búsqueda de archivo expandida automáticamente está disponible en Outlook escritorio en canal actual (versión preliminar). Dentro de esta vista previa, el ámbito buzón actual está disponible, lo que le permite buscar en el archivo expandido automáticamente. Para obtener más información acerca de esta y [otras](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)características Búsqueda de Microsoft soporte técnico, vea How Outlook for Windows connected to Exchange Online use Búsqueda de Microsoft . 
 
 - Es posible que Outlook recuentos de elementos en recuentos de lectura y lectura (en Outlook y Outlook en la Web) en un archivo expandido automáticamente no sea preciso.
-
-- Puede eliminar elementos de una subcarpeta que apunta a un área de almacenamiento expandida automáticamente, pero la carpeta en sí no se puede eliminar.
-
-- No puede usar la característica Recuperar elementos eliminados para recuperar un elemento que se eliminó de un área de almacenamiento expandida automáticamente.
 
 ## <a name="auto-expanding-archiving-and-other-compliance-features"></a>Ampliación automática del archivado y otras características de cumplimiento
 

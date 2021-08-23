@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 30428565f082610c64c65da88fad614ef755e557fa56b0fc278cc62bf9d88c26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b2305472f19ac0424861a30034c2fdd45bd753c
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829320"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399736"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Obtener KBs ausentes por id. de dispositivo
 
@@ -42,12 +42,19 @@ Recupera KBs ausentes (actualizaciones de seguridad) por identificador de dispos
 ```http
 GET /api/machines/{machineId}/getmissingkbs
 ```
+## <a name="permissions"></a>Permisos
+
+Se requiere el siguiente permiso para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Use Microsoft Defender for Endpoint API](apis-intro.md).
+
+Tipo de permiso | Permiso | Nombre para mostrar de permisos
+:---|:---|:---
+Aplicación | Software.Read.All | 'Leer información de software de administración de amenazas y vulnerabilidades'
 
 ## <a name="request-header"></a>Encabezado de solicitud
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | String | Portador {token}. **Necesario**.
+Authorization | Cadena | Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -87,8 +94,7 @@ Aquí tiene un ejemplo de la respuesta.
             "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4540673",
             "machineMissedOn": 1,
             "cveAddressed": 97
-        },
-         ...
+        }
         ]
 }
 ```

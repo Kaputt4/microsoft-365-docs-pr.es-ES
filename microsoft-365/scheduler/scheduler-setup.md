@@ -8,27 +8,36 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Configuración del Programador para Microsoft 365.
-ms.openlocfilehash: 36d273dc75dbb2ff208c4f5036915b1b241de0b743f8ca6c95498a110daf8334
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a6d642364abcf4672d59494614daaf2d9e248208
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884924"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58386941"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Configuración del Planificador para Microsoft 365
 
+Los administradores de inquilinos deben configurar un buzón del asistente programador y obtener licencias del programador para los organizadores de reuniones para habilitar el Programador para Microsoft 365 servicio. 
 
-Para configurar el Programador para Microsoft 365, a continuación se indican los requisitos previos:
+## <a name="licensing"></a>Licencias
 
-| ¿Qué necesito? | Descripción |
+Más información: [Programador para Microsoft 365 licencias](https://wwww.microsoft.com/microsoft-365/meeting-scheduler-pricing)
+
+>[Nota] Los asistentes a la reunión no necesitan un Programador ni Microsoft 365 licencia. <br>El buzón del asistente programador no requiere una Microsoft 365 o una licencia de programador.
+
+## <a name="prerequisites"></a>Requisitos previos
+
+| Requisito previo | Descripción |
 |-------------------|-------------|
-|Cortana buzón de correo |Los administradores de inquilinos tendrán que establecer un buzón para que sirva como buzón de correo "Cortana" (es decir, cortana@yourdomain.com).         |
-|Buzón de correo Exchange Online |Los usuarios deben tener un Exchange Online correo electrónico y un calendario         |
-|Licencia del programador |Para obtener información sobre licencias y precios, vea [Scheduler for Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/meeting-scheduler-pricing).        |
+|Un buzón de asistente de programador para el inquilino |Un Exchange de recursos de tipo de equipo que actúa como buzón del asistente programador para que el inquilino envíe y reciba correos electrónicos desde y hacia Cortana. Todos los correos electrónicos enviados Cortana se conservan en el buzón de correo Cortana del inquilino en función de la directiva de retención. El buzón del asistente del programador normalmente se denomina "Cortana" o "programador de Cortana" ya que todos los correos electrónicos del asistente se firmarán Cortana.</br> - Crear un tipo de equipo Exchange buzón de recursos</br> - Asigne al buzón el nombre para mostrar y la dirección SMTP principal "Cortana" o <cortana@yourdomain.com> "Cortana <cortana.scheduler@yourdomain.com> programador".</br>**Nota:** El buzón del asistente programador no requiere una Microsoft 365 o una licencia de programador.|
+|Buzón de correo Exchange Online |Los organizadores de reuniones deben tener un buzón Exchange Online y un calendario normalmente como parte de su Microsoft 365 licencia. Además, los organizadores de reuniones deben tener una licencia de Programador. La licencia del programador permite al asistente del programador usar el buzón y el calendario del organizador de la reunión para programar reuniones para ellos.</br></br> Vea Scheduler for Microsoft 365 para obtener información sobre licencias y precios.  </br></br>**Nota:** Los asistentes a la reunión no necesitan un Programador ni Microsoft 365 licencia. Los asistentes a la reunión pueden ser internos o externos al inquilino. Los asistentes a la reunión solo necesitan acceso a una dirección de correo electrónico.|
 
-## <a name="create-a-mailbox-for-cortana"></a>Crear un buzón para Cortana
 
-Un Exchange en el espacio empresarial actúa como el buzón de correo Cortana para que el inquilino envíe y reciba correos electrónicos desde y hacia Cortana. Todos los correos electrónicos enviados Cortana se conservan en el buzón de correo Cortana del inquilino en función de la directiva de retención.
+## <a name="setting-up-the-scheduler-assistant-mailbox"></a>Configurar el buzón del asistente del programador
+
+El buzón del asistente del programador es Exchange de tipo de equipamiento que no requiere una licencia Microsoft 365 o Scheduler. El nombre para mostrar y la dirección SMTP principal del buzón deben contener Cortana ya que todos los correos electrónicos del asistente del programador se firmarán Cortana (es decir, "Cortana" o <cortana@yourdomain.com> "programador de <cortana.scheduler@yourdomain.com> Cortana"). Después de crear el buzón del asistente del programador, debe designar el buzón como buzón del asistente del programador. Después de designar el buzón del asistente del programador, Cortana estará disponible para programar reuniones en nombre de los usuarios.
+
+
 
 - Use el Centro de administración de Microsoft 365 para crear un buzón de usuario. Se recomienda una directiva de retención de 30 días. 
 - Use el nombre Cortana en la dirección SMTP principal del buzón. Nombres como "Cortana@yourdomain.com", "CortanaScheduler@contoso.com" o "Cortana. Scheduler@yourdomain.com' se recomiendan.
@@ -37,42 +46,84 @@ Un Exchange en el espacio empresarial actúa como el buzón de correo Cortana pa
 
 Después de crear un buzón único para Cortana scheduler, debe designar el buzón Microsoft 365 forma formal. Después de designar el buzón Cortana programador, estará disponible para programar reuniones en nombre de los usuarios.
 
-Para designar el buzón Cortana Scheduler, un administrador autorizado debe ejecutar un comando de PowerShell de una línea. 
+#### <a name="connect-to-powershell"></a>Conectar a PowerShell
 
-1. Conectar para Microsoft 365 espacio de ejecución remoto de PowerShell para la organización.
+Use el Centro de administración de Microsoft 365 para crear un buzón de usuario. Se recomienda una directiva de retención de 30 días.
+Use el nombre Cortana en la dirección SMTP principal del buzón. Nombres como "Cortana@yourdomain.com", "CortanaScheduler@contoso.com" o "Cortana. Scheduler@yourdomain.com' se recomiendan.
 
-2. Ejecute el siguiente script de PowerShell para designar el buzón para scheduler:
+```PowerShell
 
-    ```powershell
-    Set-mailbox cortana@contoso.com -SchedulerAssistant:$true
-    ```
-    
-    Después de ejecutar este comando "set" en el buzón del Programador de Cortana, se establece un nuevo "PersistedCapability" en el buzón para tener en cuenta que este buzón es el "SchedulerAssistant".
+$domain="yourdomain.com  "
+$tenantAdmin="<tenantadmin>@$domain"
+Import-Module ExchangeOnlineManagement
+Connect-ExchangeOnline -UserPrincipalName $tenantAdmin
 
-> [!NOTE]
-> Siga estos pasos para conectar su organización a PowerShell si no lo ha hecho anteriormente: Conectar a [Microsoft 365 con PowerShell](../enterprise/connect-to-microsoft-365-powershell.md).
-
-Para descubrir qué buzón de correo de la organización está configurado actualmente como asistente Cortana programador, ejecute la función get:
-
-```powershell
-Get-mailbox | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 ```
 
-> [!IMPORTANT]
-> El buzón del programador puede tardar hasta dos horas en completar el aprovisionamiento completo para establecer la funcionalidad SchedulerAssistant.
+#### <a name="create-the-scheduler-assistant-mailbox"></a>Crear el buzón del asistente del programador
+
+```PowerShell
+New-Mailbox -Name Cortana -Organization $domain -DisplayName "Cortana Scheduler" -Equipment 
+Set-CalendarProcessing Cortana@$domain -DeleteNonCalendarItems $false 
+
+```
+    
+#### <a name="designate-the-scheduler-assistant-mailbox"></a>Designar el buzón del asistente del programador
+
+```PowerShell
+
+Set-mailbox cortana@$domain -SchedulerAssistant:$true
+
+
+```
+Después de ejecutar este comando "set" en el buzón del asistente del programador de Cortana, se establece un nuevo "PersistedCapability" en el buzón para tener en cuenta que este buzón es el "SchedulerAssistant".
+
+>[!Note]
+> Para obtener información sobre cómo conectar la organización a PowerShell, vea: [Conectar a Microsoft 365 con PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
+
+### <a name="verifying-the-scheduler-assistant-mailbox"></a>Comprobar el buzón del asistente programador
+
+Para comprobar que se ha creado el buzón del asistente del programador
+
+```PowerShell
+
+Get-CalendarProcessing cortana$domain <cortana>@microsoft.com   | fl DeleteNonCalendarItems`
+
+```
+
+El resultado debe ser "false".
+
+<br>
+
+```PowerShell
+
+Get-Mailbox -Identity <cortana>@microsoft.com$domain -Organization microsoft.com$domain | fl *type*
+
+```
+
+El resultado debe ser
+- ResourceType: Equipment
+- RecipientType remoto: Ninguno
+- RecipientType: UserMailbox
+- RecipientTypeDetails: EquipmentMailbox
+
+</br>
+
+### <a name="to-discover-which-mailbox-is-the-scheduler-assistant-mailbox"></a>Para descubrir qué buzón es el buzón del asistente programador
+
+```PowerShell
+
+Get-Mailbox -ResultSize Unlimited | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
+
+```
+
+>[Importante] El buzón del asistente programador puede tardar varias horas en completar el aprovisionamiento completo para establecer la funcionalidad SchedulerAssistant.
+
 
 ## <a name="exchange-online-mailbox"></a>Buzón de correo Exchange Online
-Una licencia de Programador es un complemento para Microsoft 365, que permite al organizador de la reunión delegar sus tareas de programación de reuniones en su asistente programador. Para que el Programador funcione, normalmente Microsoft 365 licencia, los organizadores de reuniones requieren los siguientes componentes:
+Una licencia de Programador es un complemento para Microsoft 365, que permite al organizador de la reunión delegar sus tareas de programación de reuniones en su asistente programador. Además de designar un buzón como buzón de asistente del programador Exchange Online, los organizadores de reuniones también necesitarán una licencia del programador y un buzón y un calendario, normalmente Microsoft 365 través de una licencia para que el Programador funcione. Los asistentes a la reunión no necesitan una licencia del Programador ni una Microsoft 365 de trabajo.
 
-- Un buzón designado como buzón de asistente del programador
-- Licencia del programador
-- Exchange Online buzón y calendario
-
-Los asistentes a la reunión no requieren programador ni Microsoft 365 licencia.
-
-## <a name="scheduler-end-user-license-requirements"></a>Requisitos de licencia de usuario final del programador
-
-Una licencia de programador requiere una de las siguientes licencias:
+Para comprar el complemento Programador, necesita una de las siguientes licencias:
 
 - Microsoft 365 E3, A3, E5, A5
 - Business Basic, Business, Business Standard, Business Premium
@@ -88,4 +139,4 @@ Una licencia de programador requiere una de las siguientes licencias:
 - Microsoft 365 con la nube alemana que usa el administrador de datos German Telekom
 - Nube de gobierno, GCC, Consumidor, GCC High o DoD
 
-El programador admite usuarios en Alemania cuya ubicación de datos no está en el centro de datos alemán.
+El programador admite usuarios en Alemania cuya ubicación de datos no es el centro de datos alemán.

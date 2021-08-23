@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar la auditoría avanzada para que pueda realizar investigaciones forenses cuando las cuentas de usuario estén en peligro o investigar otros incidentes relacionados con la seguridad.
-ms.openlocfilehash: ed4e2a8c423631cfa1c846f271d8df9361ca6414002d026cc515ddcd78842784
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e23f5c9ce4212e4974de97977bb2e0785bad69ed
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841557"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58386965"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>Configurar auditoría avanzada en Microsoft 365
 
@@ -46,15 +46,15 @@ Las características de Auditoría avanzada, como la capacidad para registrar ev
 
 5. Si la casilla no está seleccionada, selecciónelo y, a continuación, haga clic **en Guardar cambios.**
 
-   El registro de registros de auditoría de MailItemsAccessed y Send empezará en 24 horas. Debe realizar el paso 3 para iniciar el registro de otros dos eventos cruciales de auditoría avanzada: SearchQueryInitiatedExchange y SearchQueryInitiatedSharePoint.
+   El registro de registros de auditoría de MailItemsAccessed y Send empezará en 24 horas. Debe realizar el paso 3 para iniciar el registro de otros dos eventos de auditoría avanzada: SearchQueryInitiatedExchange y SearchQueryInitiatedSharePoint.
 
 En el caso de las organizaciones que asignan licencias a grupos de usuarios mediante licencias basadas en grupos, tiene que desactivar la asignación de licencias para la Auditoría avanzada de Microsoft 365 para el grupo. Una vez que haya guardado los cambios, compruebe que está desactivada la Auditoría avanzada de Microsoft 365 para el grupo. Después, vuelva a activar la asignación de licencias para el grupo. Para obtener instrucciones sobre las licencias basadas en grupos, vea [Asignar licencias a usuarios por la pertenencia a grupos en Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
-Además, si ha personalizado las acciones de buzón que han iniciado sesión en buzones de usuario o buzones compartidos, los nuevos eventos cruciales publicados por Microsoft no se auditarán automáticamente en esos buzones. Para información sobre cómo cambiar las acciones de buzón de correo que se auditan para cada tipo de inicio de sesión, consulte la sección "Cambiar o restaurar acciones de buzón registradas de forma predeterminada" en [Administrar la auditoría de buzón](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
+Además, si ha personalizado las acciones de buzón que han iniciado sesión en buzones de usuario o buzones compartidos, los nuevos eventos de auditoría avanzada publicados por Microsoft no se auditarán automáticamente en esos buzones. Para información sobre cómo cambiar las acciones de buzón de correo que se auditan para cada tipo de inicio de sesión, consulte la sección "Cambiar o restaurar acciones de buzón registradas de forma predeterminada" en [Administrar la auditoría de buzón](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 
-## <a name="step-2-enable-crucial-events"></a>Paso 2: Habilitar eventos cruciales
+## <a name="step-2-enable-advanced-audit-events"></a>Paso 2: Habilitar eventos de auditoría avanzada
 
-Debe habilitar dos eventos cruciales (SearchQueryInitiatedExchange y SearchQueryInitiatedSharePoint) para registrar cuando los usuarios realizan búsquedas en Exchange Online y SharePoint Online. Para permitir que estos dos eventos se auditan para los usuarios, ejecute el siguiente comando (para cada usuario) [en Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+Debe habilitar dos eventos de auditoría avanzada (SearchQueryInitiatedExchange y SearchQueryInitiatedSharePoint) para registrar cuando los usuarios realizan búsquedas en Exchange Online y SharePoint Online. Para permitir que estos dos eventos se auditan para los usuarios, ejecute el siguiente comando (para cada usuario) [en Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
@@ -72,6 +72,6 @@ Si el comando para habilitar la auditoría de las consultas de búsqueda se ejec
 
 Además de la directiva predeterminada que conserva los registros de auditoría de Exchange, SharePoint y Azure AD durante un año, puede crear otras directivas de retención de registros de auditoría para cumplir los requisitos de los equipos de operaciones de seguridad, TI y cumplimiento de su organización. Para obtener más información, vea [administrar directivas de retención de los registros de auditoría](audit-log-retention-policies.md).
 
-## <a name="step-4-search-for-crucial-events"></a>Paso 4: Buscar eventos cruciales
+## <a name="step-4-search-for-advanced-audit-events"></a>Paso 4: Buscar eventos de auditoría avanzada
 
-Ahora que ya tiene la auditoría avanzada configurada para su organización, puede buscar eventos cruciales y otras actividades al llevar a cabo investigaciones forenses. Después de completar los pasos 1 y 2, puede buscar en el registro de auditoría eventos cruciales y otras actividades durante las investigaciones forenses de cuentas comprometidas y otros tipos de investigaciones de seguridad o cumplimiento. Para obtener más información acerca de la realización de una investigación forense de cuentas de usuario comprometidas mediante el evento crucial MailItemsAccessed, vea [Use Advanced Audit to investigate compromised accounts](mailitemsaccessed-forensics-investigations.md).
+Ahora que ya tiene la auditoría avanzada configurada para su organización, puede buscar eventos cruciales de auditoría avanzada y otras actividades al llevar a cabo investigaciones forenses. Después de completar los pasos 1 y 2, puede buscar en el registro de auditoría eventos de auditoría avanzada y otras actividades durante las investigaciones forenses de cuentas comprometidas y otros tipos de investigaciones de seguridad o cumplimiento. Para obtener más información acerca de cómo llevar a cabo una investigación forense de cuentas de usuario comprometidas mediante el evento Auditoría avanzada MailItemsAccessed, vea Usar auditoría avanzada para investigar cuentas [comprometidas.](mailitemsaccessed-forensics-investigations.md)

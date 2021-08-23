@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 0c2d8fd75b33903696682e6fd196ef4ce12ab2ca101cfe32e23fbce0614dd8a5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2052652e1ded79d8605c5b5f84b82d8c6504fd9
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844539"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58360149"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Estado y configuración del sensor de Identidad de Microsoft Defender en Microsoft 365 Defender
 
@@ -85,28 +85,6 @@ En la **página** Sensores, puede agregar un nuevo sensor.
 
 1. Copie el paquete en el servidor o controlador de dominio dedicado en el que va a instalar el sensor Defender for Identity.
 
-## <a name="configure-directory-services-account"></a>Configurar la cuenta de Servicios de directorio
-
-Para conectar el sensor con los dominios de Active Directory, deberá configurar cuentas de Servicios de directorio.
-
-1. En [Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Configuración** y, a continuación, **Identities**.
-
-    ![Vaya a Configuración, a continuación, Identidades](../../media/defender-identity/settings-identities.png)
-
-1. Seleccione **Cuentas del servicio de directorio**. Verá qué cuentas están asociadas con qué dominios.
-
-    ![Cuentas del servicio de directorio](../../media/defender-identity/directory-service-accounts.png)
-
-1. Si selecciona una cuenta, se abrirá un panel con la configuración de esa cuenta.
-
-    ![Configuración de la cuenta](../../media/defender-identity/account-settings.png)
-
-1. Para agregar una nueva cuenta de Servicios de directorio, seleccione **Crear** nueva cuenta y rellene el nombre de cuenta **,** **Dominio** y **Contraseña**. También puede elegir si es  una cuenta de servicio administrado de grupo (gMSA) y si pertenece a un **dominio de etiqueta única**.
-
-    ![Nueva cuenta del servicio de directorio](../../media/defender-identity/new-directory-service-account.png)
-
-1. Seleccione **Guardar**.
-
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Administrar alertas de seguridad de Defender for Identity](manage-security-alerts.md)

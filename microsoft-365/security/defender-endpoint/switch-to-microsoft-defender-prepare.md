@@ -1,7 +1,7 @@
 ---
 title: 'Cambiar a Microsoft Defender para el punto de conexión: Preparar'
-description: Esta es la fase 1, Preparar, para migrar a Microsoft Defender para endpoint.
-keywords: migración, Microsoft Defender para Endpoint, edr
+description: Prepárese para cambiar a Microsoft Defender para Endpoint. Actualice los dispositivos y configure las conexiones de red.
+keywords: migración, Microsoft Defender para endpoint, procedimiento recomendado
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 08/11/2021
+ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: a9202cf5da326bd573e85459591f408b04ddad03
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 491f7bd7f45317ca6a910752c2175cfe449bfb14
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257735"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372705"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para endpoint- Fase 1: Preparar
 
@@ -63,7 +63,7 @@ Mantenga actualizada la solución de protección de puntos de conexión existent
 
 ¿Necesita ayuda para actualizar los dispositivos de su organización? Vea los siguientes recursos:
 
-|SO | Recurso |
+|SO | Resource |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|

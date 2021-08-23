@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: c357f0fd7ba729156b5a632aa46510c39683ac2d
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 98496ce57c57cbce10178cc2be99079d8733a0ca
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247904"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372513"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -106,9 +106,9 @@ Con el control de compatibilidad de implementación centralizada, puede comproba
    Este comando le solicita  *_TenantDomain_* (por ejemplo, *TailspinToysIncorporated.onmicrosoft. </span> com*) y  *_las credenciales de TenantAdmin_* (use sus credenciales de administrador global) y, a continuación, solicite el consentimiento.
 
    > [!NOTE]
-   > Según el número de usuarios de su espacio empresarial, el comprobador puede tardar minutos u horas en realizar la comprobación.
-
-Cuando la herramienta completa el proceso, genera un archivo de salida en formato delimitado por comas (.csv). El archivo se guarda en **C:\windows\system32** de forma predeterminada. El archivo de salida contiene la información siguiente:
+   > Según el número de usuarios de su espacio empresarial, el comprobador puede tardar minutos u horas en realizar la comprobación. 
+  
+Cuando la herramienta completa el proceso, genera un archivo de salida en formato delimitado por comas (.csv). El archivo se guarda en **el directorio de trabajo actual** de forma predeterminada. El archivo de salida contiene la información siguiente:
 
 - Nombre de usuario
 
@@ -155,10 +155,10 @@ De forma alternativa, puede usar la API de Graph Azure Active Directory para eje
 
 Si usted o sus usuarios tienen problemas para cargar el complemento mientras usan aplicaciones de Office para la web (Word, Excel, etc.), que se implementaron de forma centralizada, es posible que deba ponerse en contacto con el soporte técnico de Microsoft[(](../../business-video/get-help-support.md)obtenga información sobre cómo ). Proporcione la siguiente información sobre su entorno Microsoft 365 en el vale de soporte técnico.
 
-|**Plataforma**|**Información de depuración**|
+| Plataforma | Información de depuración |
 |:-----|:-----|
-|Office  <br/> | Registros Charles/Fiddler  <br/>  Identificador de inquilino ([obtenga información sobre cómo](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Vea el origen de una de las páginas de office y busque el valor de Id. de correlación y envíelo para admitir:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
-|Clientes enriquecidos (Windows y Mac)  <br/> | Registros Charles/Fiddler  <br/>  Generar números de la aplicación cliente (preferiblemente como una captura de pantalla de **Archivo/Cuenta**)  <br/> |
+|Oficina | Registros Charles/Fiddler  <br/>  Identificador de inquilino ([obtenga información sobre cómo](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Vea el origen de una de las páginas de office y busque el valor de Id. de correlación y envíelo para admitir:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
+|Clientes enriquecidos (Windows y Mac) | Registros Charles/Fiddler  <br/>  Generar números de la aplicación cliente (preferiblemente como una captura de pantalla de **Archivo/Cuenta**) |
 
 ## <a name="related-content"></a>Contenido relacionado
 

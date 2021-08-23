@@ -20,12 +20,12 @@ search.appverid:
 description: Más información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que se encarga de la parte de TI por usted.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 3dd2a4c549e38660a7df928645cd6932e1a5b09af72f3f2ec3805a4c7aef1e68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a31ce38a0ef6b04be5ad9af90e9e4c54e7b256b
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838036"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377725"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Empresa Premium
 
@@ -49,4 +49,4 @@ Cuando se suscribe a Microsoft 365 Empresa Premium, obtiene todas las mismas her
 
 Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: [Microsoft 365 para empresas y campañas pequeñas](../campaigns/index.md). Esta guía fue desarrollada en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de empresas pequeñas de las amenazas cibernéticas por parte de hackers sofisticados. 
 
-Para obtener los detalles completos, consulte [Contenido de Microsoft 365 Empresa](../business/index.yml).
+Para obtener los detalles completos, consulte [Contenido de Microsoft 365 Empresa](../admin/index.yml).

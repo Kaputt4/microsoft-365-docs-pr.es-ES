@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e9f65d7280ccbc2b780a693e1c259e3f3d6c6400
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 452a8238499f4c083b24c6ab01a95696334e6081
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357010"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372717"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Implementar Microsoft Defender para endpoint en Linux con Ansible
 
@@ -41,7 +41,7 @@ En este artículo se describe cómo implementar Defender for Endpoint en Linux m
 - [Descargar el paquete de incorporación](#download-the-onboarding-package)
 - [Crear archivos YAML ansibles](#create-ansible-yaml-files)
 - [Implementación](#deployment)
-- [References](#references)
+- [Referencias](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
@@ -138,7 +138,7 @@ Crea una subtarea o archivos de roles que contribuyan a un libro de juegos o una
     > [!WARNING]
     > Cambiar el canal después de la instalación inicial requiere que se vuelva a instalar el producto. Para cambiar el canal de producto: desinstale el paquete existente, vuelva a configurar el dispositivo para que use el nuevo canal y siga los pasos descritos en este documento para instalar el paquete desde la nueva ubicación.
 
-    Tenga en cuenta la distribución y la versión e identifique la entrada más cercana para ella en `https://packages.microsoft.com/[distro]/` .
+    Tenga en cuenta la distribución y la versión e identifique la entrada más cercana para ella en `https://packages.microsoft.com/config/[distro]/` .
 
     En los siguientes comandos, reemplace *[distro]* y *[version]* por la información que haya identificado.
 
@@ -154,7 +154,7 @@ Crea una subtarea o archivos de roles que contribuyan a un libro de juegos o una
 
   - name: Add Microsoft apt repository for MDATP
     apt_repository:
-      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
+      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/[distro]/[version]/prod [channel] main
       update_cache: yes
       state: present
       filename: microsoft-[channel]
@@ -171,7 +171,7 @@ Crea una subtarea o archivos de roles que contribuyan a un libro de juegos o una
       name: packages-microsoft-com-prod-[channel]
       description: Microsoft Defender for Endpoint
       file: microsoft-[channel]
-      baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+      baseurl: https://packages.microsoft.com/config/[distro]/[version]/[channel]/
       gpgcheck: yes
       enabled: Yes
     when: ansible_os_family == "RedHat"

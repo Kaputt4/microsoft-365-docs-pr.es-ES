@@ -13,31 +13,31 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-ROBOTS: NOINDEX
+ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con sus mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b72b77e6a6c8079684c9830e58497ecdd56f15d1
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: e855b0c0a32cbfe6ed6b2f47cb7436f8ffa0fa64
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349229"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450192"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
 > [!NOTE]
 > Las características que se describen en este artículo están actualmente en Versión preliminar, no están disponibles para todos y están sujetas a cambios.
 
-Las directivas de cuarentena (anteriormente conocidas como etiquetas de _cuarentena)_ en Exchange Online Protection (EOP) permiten a los administradores controlar lo que los usuarios pueden hacer con sus mensajes en cuarentena en función de cómo el mensaje llegó a la cuarentena.
+Las directivas de cuarentena (anteriormente conocidas como etiquetas de _cuarentena)_ en Exchange Online Protection (EOP) y Microsoft Defender para Office 365 permiten a los administradores controlar lo que los usuarios pueden hacer con sus mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena.
 
-Tradicionalmente, EOP ha permitido o impedido [](find-and-release-quarantined-messages-as-a-user.md) ciertos niveles de interactividad para los mensajes en cuarentena y en las notificaciones de [correo no deseado del usuario final.](use-spam-notifications-to-release-and-report-quarantined-messages.md) Por ejemplo, los usuarios pueden ver y liberar mensajes que fueron puestos en cuarentena por el filtrado contra correo no deseado como correo no deseado o masivo, pero no pueden ver ni liberar mensajes que se han puesto en cuarentena como phishing de elevada confianza (solo los administradores pueden hacerlo).
+Tradicionalmente, los usuarios se han permitido o [](find-and-release-quarantined-messages-as-a-user.md) denegado niveles de interactividad para mensajes en cuarentena y en notificaciones [de correo no deseado del usuario final.](use-spam-notifications-to-release-and-report-quarantined-messages.md) Por ejemplo, los usuarios pueden ver y liberar mensajes que fueron puestos en cuarentena por el filtrado contra correo no deseado como correo no deseado o masivo, pero no pueden ver ni liberar mensajes que se han puesto en cuarentena como phishing de elevada confianza (solo los administradores pueden hacerlo).
 
-Para [las características](#step-2-assign-a-quarantine-policy-to-supported-features)de protección admitidas, las directivas de cuarentena especifican lo que los usuarios pueden hacer en los mensajes de notificación de correo no deseado del usuario final y en sus mensajes en cuarentena en cuarentena (mensajes en los que el usuario es un destinatario). Las directivas de cuarentena predeterminadas se asignan automáticamente para aplicar las capacidades históricas de los usuarios en mensajes en cuarentena. O bien, puede crear y asignar directivas de cuarentena personalizadas para permitir o impedir que los usuarios finales realicen acciones específicas en mensajes en cuarentena.
+Para [las características de protección admitidas,](#step-2-assign-a-quarantine-policy-to-supported-features)las directivas de cuarentena especifican lo que los usuarios pueden hacer en los mensajes de notificación de correo no deseado del usuario final y en cuarentena (mensajes donde el usuario es un destinatario). Las directivas de cuarentena predeterminadas se asignan automáticamente para aplicar las capacidades históricas de los usuarios en mensajes en cuarentena. O bien, puede crear y asignar directivas de cuarentena personalizadas para permitir o impedir que los usuarios finales realicen acciones específicas en mensajes en cuarentena.
 
 Los permisos individuales se combinan en los siguientes grupos de permisos preestablecidos:
 
-- Acceso de solo administrador
+- Sin acceso
 - Acceso limitado
 - Acceso completo
 
@@ -47,7 +47,7 @@ Los permisos individuales disponibles y lo que se incluye o no en los grupos de 
 
 ****
 
-|Permiso|Acceso de solo administrador|Acceso limitado|Acceso completo|
+|Permiso|Sin acceso|Acceso limitado|Acceso completo|
 |---|:---:|:---:|:---:|
 |**Bloquear remitente** (_PermissionToBlockSender_)||![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
 |**Delete** (_PermissionToDelete_)||![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
@@ -56,17 +56,27 @@ Los permisos individuales disponibles y lo que se incluye o no en los grupos de 
 |**Permitir que los destinatarios soliciten la puesta en** cuarentena de un mensaje (_PermissionToRequestRelease_)||![Marca de verificación](../../media/checkmark.png)||
 |
 
+Las directivas de cuarentena predeterminadas y sus grupos de permisos asociados se describen en la tabla siguiente:
+
+<br>
+
+|Directiva de cuarentena predeterminada|Grupo de permisos usado|
+|---|---|
+|AdminOnlyAccessPolicy|Sin acceso|
+|DefaultFullAccessPolicy|Acceso completo|
+|
+
 Si no le gustan los permisos predeterminados en los grupos de permisos preestablecidos, puede usar permisos personalizados al crear o modificar directivas de cuarentena personalizadas. Para obtener más información acerca de lo que hace cada permiso, vea la sección Detalles de permisos de directiva [de cuarentena](#quarantine-policy-permission-details) más adelante en este artículo.
 
 Puede crear y asignar directivas de cuarentena en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones de correo de Exchange Online; PowerShell de EOP independiente en organizaciones de EOP sin Exchange Online buzones).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. O bien, para ir directamente a la página **Directivas de** cuarentena, abra <https://security.microsoft.com/quarantineTags> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. O bien, para ir directamente a la página **Directivas de** cuarentena, abra <https://security.microsoft.com/quarantinePolicies> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Para ver, crear, modificar o quitar directivas de cuarentena,  debe  ser miembro de los roles Administración de la organización o Administrador de seguridad en el portal Microsoft 365 Defender seguridad. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
+- Para ver, crear, modificar o quitar directivas de cuarentena, debe ser miembro  de los roles Administración de la **organización,** Administrador de seguridad o Administrador de cuarentena en el portal Microsoft 365 Defender cuarentena. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 ## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Paso 1: Crear directivas de cuarentena en el portal de Microsoft 365 Defender web
 
@@ -77,26 +87,22 @@ Puede crear y asignar directivas de cuarentena en el portal de Microsoft 365 Def
 3. Se **abrirá el Asistente para nueva** directiva. En la **página Nombre de** directiva, escriba un nombre breve pero único en el cuadro Nombre **de** directiva. Deberá identificar y seleccionar la directiva de cuarentena por su nombre en los próximos pasos. Cuando termine, haga clic en **Siguiente**.
 
 4. En la **página Acceso a mensajes de** destinatario, seleccione uno de los siguientes valores:
-   - **Acceso limitado**
-
-   Los permisos individuales que se incluyen en estos grupos de permisos se describen anteriormente en este artículo.
-
-   Para especificar permisos personalizados, seleccione **Establecer acceso específico (Avanzado)** y configure las siguientes opciones que aparecen:
-
-   - **Seleccionar preferencia de acción de lanzamiento:** seleccione uno de los siguientes valores:
-     - **Sin acción de lanzamiento:** este es el valor predeterminado.
-     - **Permitir que los destinatarios liberen un mensaje de cuarentena**
-     - **Permitir que los destinatarios soliciten un mensaje que se liberará de la cuarentena**
-   - **Seleccionar acciones adicionales que los** destinatarios pueden realizar en mensajes en cuarentena: seleccione algunos, todos o ninguno de los siguientes valores:
-     - **Eliminar**
-     - **Versión preliminar**
-     - **Bloquear remitente**
+   - **Acceso limitado:** los permisos individuales que se incluyen en este grupo de permisos se describen anteriormente en este artículo.
+   - **Establecer acceso específico (avanzado):** use este valor para especificar permisos personalizados. Configure las siguientes opciones que aparecen:
+     - **Seleccionar preferencia de acción de lanzamiento:** seleccione uno de los siguientes valores:
+       - **Sin acción de lanzamiento:** este es el valor predeterminado.
+       - **Permitir que los destinatarios liberen un mensaje de cuarentena**
+       - **Permitir que los destinatarios soliciten un mensaje que se liberará de la cuarentena**
+     - **Seleccionar acciones adicionales que los** destinatarios pueden realizar en mensajes en cuarentena: seleccione algunos, todos o ninguno de los siguientes valores:
+       - **Eliminar**
+       - **Versión preliminar**
+       - **Bloquear remitente**
 
    Estos permisos y su efecto en los mensajes en cuarentena y en las notificaciones de correo no deseado del usuario final se describen en la sección [Detalles](#quarantine-policy-permission-details) de permisos de directiva de cuarentena más adelante en este artículo.
 
    Cuando termine, haga clic en **Siguiente**.
 
-5. En la página Notificación de correo no deseado del usuario **final,** habilite la notificación si es necesario.
+5. En la página Notificación de correo no deseado del usuario **final,** puede activar la casilla para habilitar la notificación.
 
 6. En la **página Revisar directiva** que aparece, revisa la configuración. Puede seleccionar **Editar** en cada sección para modificar la configuración dentro de la sección. También puede hacer clic en **Volver atrás** o seleccionar la página específica del asistente.
 
@@ -110,8 +116,8 @@ Ahora ya está listo para asignar la directiva de cuarentena a una característi
 
 Si prefiere usar PowerShell para crear directivas de cuarentena, conéctese Exchange Online PowerShell o Exchange Online Protection PowerShell y use el cmdlet **New-QuarantineTag.** Tiene dos métodos diferentes entre los que elegir:
 
-- Use el _parámetro EndUserQuarantinePermissionsValue._
-- Use el _parámetro EndUserQuarantinePermissions._
+- [Use el _parámetro EndUserQuarantinePermissionsValue_](#use-the-enduserquarantinepermissionsvalue-parameter).
+- [Use el _parámetro EndUserQuarantinePermissions_](#use-the-enduserquarantinepermissions-parameter).
 
 Estos métodos se describen en las secciones siguientes.
 
@@ -133,12 +139,12 @@ El orden y los valores necesarios para cada permiso individual en grupos de perm
 
 |Permiso|Acceso limitado|
 |---|:---:|
-|PermissionToBlockSender|1 |
-|PermissionToDelete|1 |
+|PermissionToBlockSender|1|
+|PermissionToDelete|1|
 |PermissionToDownload<sup>\*</sup>|0|
-|PermissionToPreview|1 |
+|PermissionToPreview|1|
 |PermissionToRelease<sup>\*\*</sup>|0|
-|PermissionToRequestRelease<sup>\*\*</sup>|1 |
+|PermissionToRequestRelease<sup>\*\*</sup>|1|
 |PermissionToViewHeader<sup>\*</sup>|0|
 |Valor binario|01101010|
 |Valor decimal que se usará|106|
@@ -219,17 +225,17 @@ En _las características_ de protección admitidas que ponen en cuarentena mensa
 |Característica|¿Se admiten directivas de cuarentena?|Directivas de cuarentena predeterminadas usadas|
 |---|:---:|---|
 |[Directivas contra correo no deseado:](configure-your-spam-filter-policies.md) <ul><li>**Correo no deseado** (_SpamAction_)</li><li>**Correo no deseado de elevada** confianza (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**Phishing de elevada confianza** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li><li>AdminOnlyAccessPolicy (sin acceso)</li><li>DefaultFullAccessPolicy (acceso completo)</li></ul>|
-|Directivas contra suplantación de identidad: <ul><li>[Protección de inteligencia suplantada](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) (Defender para Office 365): <ul><li>**Si se detecta message como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia de buzones detecta y suplanta al usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|Sí|<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li></ul>|
-|[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (solo acceso de administrador)|
-|[Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md) (Defender para Office 365)|Sí|AdminOnlyAccessPolicy (solo acceso de administrador)|
+|Directivas contra suplantación de identidad: <ul><li>[Protección de inteligencia suplantada](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección de suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si se detecta message como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia de buzones detecta y suplanta al usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Sí|<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>Protección de suplantación:<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li></ul></li></ul>|
+|[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (sin acceso)|
+|[Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md) (Defender para Office 365)|Sí|AdminOnlyAccessPolicy (sin acceso)|
 |[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|N/D|
 |
 
 Si está satisfecho con los permisos predeterminados del usuario final proporcionados por las directivas de cuarentena predeterminadas, no necesita hacer nada. Si desea agregar o quitar funcionalidades de usuario final (botones disponibles) en notificaciones de correo no deseado del usuario final o en detalles de mensajes en cuarentena, puede asignar una directiva de cuarentena personalizada.
 
-### <a name="assign-quarantine-policies-in-anti-spam-policies-in-the-microsoft-365-defender-portal"></a>Asignar directivas de cuarentena en directivas contra correo no deseado en el portal Microsoft 365 Defender correo electrónico
+## <a name="assign-quarantine-policies-in-supported-polices-in-the-microsoft-365-defender-portal"></a>Asignar directivas de cuarentena en las directivas admitidas en el portal Microsoft 365 Defender web
 
-Las instrucciones completas para crear y modificar directivas contra correo no deseado se describen en [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+### <a name="anti-spam-policies"></a>Directivas contra correo no deseado
 
 1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas Directivas contra correo no deseado en \>  \>  \>  la **sección** Reglas.
 
@@ -240,40 +246,42 @@ Las instrucciones completas para crear y modificar directivas contra correo no d
    - Cree una nueva **directiva contra** correo no deseado entrante.
 
 3. Realice uno de los pasos siguientes:
-   - **Editar la directiva contra correo no** deseado existente: en el control desplegable de detalles de la directiva, vaya a la sección Acciones y, a continuación, haga clic en Editar **acciones**. 
-   - **Crear una nueva directiva contra correo no** deseado: en el asistente para nueva directiva, acceda a la **página** Acciones.
+   - **Editar existente:** seleccione la directiva haciendo clic en el nombre de la directiva. En el control desplegable de detalles de la directiva, vaya a la **sección Acciones** y, a continuación, haga clic en **Editar acciones**.
+   - **Crear nuevo:** en el asistente para nueva directiva, acceda a la **página** Acciones.
 
-4. En la **página** Acciones, cada  veredicto que tenga la acción Mensaje de cuarentena también tendrá el cuadro **Seleccionar** directiva de cuarentena para que seleccione una directiva de cuarentena correspondiente.
+4. En la **página Acciones,** cada  veredicto que  tenga la acción Mensaje de cuarentena también tendrá el cuadro Aplicar directiva de cuarentena para que seleccione una directiva de cuarentena correspondiente.
 
    **Nota:** Al crear una nueva directiva, se usa un valor de directiva de cuarentena **Select** en blanco que indica la directiva de cuarentena predeterminada para ese veredicto. Cuando más adelante edite la directiva, los valores en blanco se reemplazan por los nombres de directiva de cuarentena predeterminados reales, como se describe en la tabla anterior.
 
    ![Selecciones de directivas de cuarentena en una directiva contra correo no deseado](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. Cuando haya terminado, haga clic en **Guardar**.
+Las instrucciones completas para crear y modificar directivas contra correo no deseado se describen en [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-#### <a name="assign-quarantine-policies-in-anti-spam-policies-in-powershell"></a>Asignar directivas de cuarentena en directivas contra correo no deseado en PowerShell
+#### <a name="anti-spam-policies-in-powershell"></a>Directivas contra correo no deseado en PowerShell
 
 Si prefiere usar PowerShell para asignar directivas de cuarentena en directivas contra correo no deseado, conéctese a Exchange Online PowerShell o Exchange Online Protection PowerShell y use la siguiente sintaxis:
 
 ```powershell
-<New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
+<New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>"> [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
 **Notas**:
 
-- El valor predeterminado del parámetro _HighConfidencePhishAction_ es Quarantine, por lo que no es necesario establecer la acción Cuarentena para detecciones de phishing de elevada confianza en nuevas directivas contra correo no deseado. Para todos los demás veredictos de filtrado de correo no deseado en directivas antispam nuevas o existentes, la directiva de cuarentena solo es eficaz si el valor de la acción es Cuarentena. Para ver los valores de acción en las directivas contra correo no deseado existentes, ejecute el siguiente comando:
+- El valor predeterminado de los parámetros _PhishSpamAction_ y _HighConfidencePhishAction_ es Quarantine, por lo que no es necesario usar estos parámetros al crear nuevas policías de filtro de correo no deseado en PowerShell. Para los parámetros _SpamAction,_ _HighConfidenceSpamAction_ y _BulkSpamAction_ en directivas contra correo no deseado nuevas o existentes, la directiva de cuarentena solo es eficaz si el valor es Quarantine.
+
+  Para ver los valores de parámetros importantes en las directivas contra correo no deseado existentes, ejecute el siguiente comando:
 
   ```powershell
-  Get-HostedContentFilterPolicy | Format-Table Name,*SpamAction,HighConfidencePhishAction
+  Get-HostedContentFilterPolicy | Format-List Name,*SpamAction,HighConfidencePhishAction,*QuarantineTag
   ```
 
   Para obtener información sobre los valores de acción predeterminados y los valores de acción recomendados para Standard y Strict, consulte [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
 - Un veredicto de filtrado de correo no deseado sin un parámetro de directiva de cuarentena correspondiente significa que se usa la directiva de [cuarentena](#step-2-assign-a-quarantine-policy-to-supported-features) predeterminada para ese veredicto.
 
-  Solo necesita reemplazar una directiva de cuarentena predeterminada por una directiva de cuarentena personalizada si desea cambiar las capacidades predeterminadas del usuario final en los mensajes en cuarentena para ese veredicto en particular.
+  Debe reemplazar una directiva de cuarentena predeterminada por una directiva de cuarentena personalizada solo si desea cambiar las capacidades predeterminadas del usuario final en los mensajes en cuarentena para ese veredicto en particular.
 
-- Una nueva directiva contra correo no deseado en PowerShell requiere una directiva de filtro de correo no deseado (configuración) mediante el cmdlet **New-HostedContentFilterPolicy** y una nueva regla de filtro de correo no deseado (filtros de destinatarios) mediante el cmdlet **New-HostedContentFilterRule.** Para obtener instrucciones, [vea Use PowerShell to create anti-spam policies](configure-your-spam-filter-policies.md#use-powershell-to-create-anti-spam-policies).
+- Una nueva directiva contra correo no deseado en PowerShell requiere una directiva de filtro de correo no deseado (configuración) mediante el cmdlet **New-HostedContentFilterPolicy** y una regla de filtro de correo no deseado exclusivo (filtros de destinatarios) mediante el cmdlet **New-HostedContentFilterRule.** Para obtener instrucciones, [vea Use PowerShell to create anti-spam policies](configure-your-spam-filter-policies.md#use-powershell-to-create-anti-spam-policies).
 
 En este ejemplo se crea una nueva directiva de filtro de correo no deseado denominada Departamento de investigación con la siguiente configuración:
 
@@ -281,7 +289,7 @@ En este ejemplo se crea una nueva directiva de filtro de correo no deseado denom
 - La directiva de cuarentena personalizada denominada NoAccess que asigna **ningún** permiso de acceso reemplaza a las directivas de cuarentena predeterminadas que aún **no** asignan permisos de acceso de forma predeterminada.
 
 ```powershell
-New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -SpamQuarantineTag NoAccess -HighConfidenceSpamAction Quarantine -HighConfidenceSpamQuarantineTag NoAction -PhishSpamAction Quarantine -PhishQuarantineTag NoAction -BulkSpamAction Quarantine -BulkQuarantineTag NoAccess
+New-HostedContentFilterPolicy -Name "Research Department" -SpamAction Quarantine -SpamQuarantineTag NoAccess -HighConfidenceSpamAction Quarantine -HighConfidenceSpamQuarantineTag NoAction -PhishSpamAction Quarantine -PhishQuarantineTag NoAction -BulkSpamAction Quarantine -BulkQuarantineTag NoAccess
 ```
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
@@ -293,6 +301,207 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 ```
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy).
+
+### <a name="anti-phishing-policies"></a>Directivas de protección contra phishing
+
+La inteligencia de suplantación está disponible en EOP y Defender para Office 365. La protección de suplantación de usuario, la protección de suplantación de dominio y la inteligencia de buzones de correo solo están disponibles en Defender para Office 365. Para obtener más información, consulte [Directivas contra la suplantación de identidad en Microsoft 365 ](set-up-anti-phishing-policies.md).
+
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **y** & directivas de colaboración & reglas de amenazas Directivas contra suplantación de identidad en \>  \>  \>  la **sección** Reglas.
+
+   O bien, para ir directamente a la **página Directivas de correo no** deseado de ant, use <https://security.microsoft.com/antiphishing> .
+
+2. En la **página Anti-phishing,** siga uno de los pasos siguientes:
+   - Busque y seleccione una directiva anti-phishing existente.
+   - Crear una nueva directiva contra suplantación de identidad.
+
+3. Realice uno de los pasos siguientes:
+   - **Editar existente:** seleccione la directiva haciendo clic en el nombre de la directiva. En el control desplegable de detalles de la directiva, vaya a la **sección Configuración de** protección y, a continuación, haga clic en Editar configuración de **protección.**
+   - **Crear nuevo:** en el asistente para nueva directiva, acceda a la **página** Acciones.
+
+4. En la **página Configuración de** protección, compruebe que las siguientes opciones de configuración estén activadas y configuradas según sea necesario:
+   - **Usuarios habilitados para proteger**: Especificar usuarios.
+   - **Dominios habilitados para proteger:** seleccione Incluir dominios de mi **propiedad** o Incluir dominios **personalizados** y especifique los dominios.
+   - **Habilitar la inteligencia de buzones**
+   - **Habilitar la inteligencia para la protección de suplantación**
+   - **Habilitar la inteligencia de suplantación**
+
+5. Realice uno de los pasos siguientes:
+   - **Editar existente:** en el control desplegable de detalles de la directiva, vaya a la **sección** Acciones y, a continuación, haga clic **en Editar acciones**.
+   - **Crear nuevo:** en el asistente para nueva directiva, acceda a la **página** Acciones.
+
+6. En la **página** Acciones, cada  veredicto que tenga la acción Cuarentena del mensaje también tendrá el cuadro **Aplicar** directiva de cuarentena para que seleccione una directiva de cuarentena correspondiente.
+
+   **Nota:** Al crear una nueva directiva, se usa un valor de directiva de cuarentena **Apply** en blanco que indica la directiva de cuarentena predeterminada para esa acción. Cuando más adelante edite la directiva, los valores en blanco se reemplazan por los nombres de directiva de cuarentena predeterminados reales, como se describe en la tabla anterior.
+
+   ![Selecciones de directivas de cuarentena en una directiva contra correo no deseado](../../media/quarantine-tags-in-anti-phishing-policies.png)
+
+Las instrucciones completas para crear y modificar las policías contra suplantación de identidad están disponibles en los siguientes temas:
+
+- [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)
+- [Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md)
+
+#### <a name="anti-phishing-policies-in-powershell"></a>Directivas contra suplantación de identidad en PowerShell
+
+Si prefiere usar PowerShell para asignar directivas de cuarentena en directivas contra suplantación de identidad, conéctese a Exchange Online PowerShell o Exchange Online Protection PowerShell y use la siguiente sintaxis:
+
+```powershell
+<New-AntiPhishPolicy -Name "<Unique name>" | Set-AntiPhishPolicy -Identity "<Policy name>"> [-EnableSpoofIntelligence $true] [-AuthenticationFailAction Quarantine] [-SpoofQuarantineTag <QuarantineTagName>] [-EnableMailboxIntelligence $true] [-EnableMailboxIntelligenceProtection $true] [-MailboxIntelligenceProtectionAction Quarantine] [-MailboxIntelligenceQuarantineTag <QuarantineTagName>] [-EnableOrganizationDomainsProtection $true] [-EnableTargetedDomainsProtection $true] [-TargetedDomainProtectionAction Quarantine] [-TargetedDomainQuarantineTag <QuarantineTagName>] [-EnableTargetedUserProtection $true] [-TargetedUserProtectionAction Quarantine] [-TargetedUserQuarantineTag <QuarantineTagName>] ...
+```
+
+**Notas**:
+
+- Los _\* parámetros Enable_ son necesarios para activar las características de protección específicas. El valor predeterminado de los parámetros _EnableMailboxIntelligence_ y _EnableSpoofIntelligence_ es $true, por lo que no es necesario usar estos parámetros al crear nuevas directivas contra suplantación de identidad en PowerShell. Todos los _demás parámetros Enable \*_ necesitan tener el valor $true para _\*_ poder establecer el valor Cuarentena en los parámetros action correspondientes para asignar una directiva de cuarentena. Ninguno de los _parámetros *\Action_ tiene el valor predeterminado Quarantine.
+
+  Para ver los valores de parámetros importantes en las directivas anti phish existentes, ejecute el siguiente comando:
+
+  ```powershell
+  Get-AntiPhishPolicy | Format-List Name,Enable*Intelligence,Enable*Protection,*Action,*QuarantineTag
+  ```
+
+  Para obtener información sobre los valores de acción predeterminados y los valores de acción recomendados para Standard y Strict, consulte [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) and [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+- Una acción contra la suplantación de identidad sin un parámetro de directiva de cuarentena correspondiente significa que se usa la directiva de [cuarentena](#step-2-assign-a-quarantine-policy-to-supported-features) predeterminada para ese veredicto.
+
+  Debe reemplazar una directiva de cuarentena predeterminada por una directiva de cuarentena personalizada solo si desea cambiar las capacidades predeterminadas del usuario final en los mensajes en cuarentena para ese veredicto en particular.
+
+- Una nueva directiva contra suplantación de identidad (phishing) en PowerShell requiere una directiva contra suplantación de identidad (configuración) con el cmdlet **New-AntiPhishPolicy** y una regla anti phishing exclusiva (filtros de destinatarios) mediante el cmdlet **New-AntiPhishRule.** Para obtener instrucciones, consulte los temas siguientes:
+  - [Usar PowerShell para configurar directivas contra suplantación de identidad en EOP](configure-anti-phishing-policies-eop.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
+  - [Usar Exchange Online PowerShell para configurar directivas contra suplantación de identidad](configure-mdo-anti-phishing-policies.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
+
+En este ejemplo se crea una nueva directiva contra phishing denominada Departamento de investigación con la siguiente configuración:
+
+- La acción de todos los veredictos de filtrado de correo no deseado se establece en Cuarentena.
+- La directiva de cuarentena personalizada denominada NoAccess que asigna **ningún** permiso de acceso reemplaza a las directivas de cuarentena predeterminadas que aún **no** asignan permisos de acceso de forma predeterminada.
+
+```powershell
+New-AntiPhishPolicy -Name "Research Department" -AuthenticationFailAction Quarantine -SpoofQuarantineTag NoAccess -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -MailboxIntelligenceQuarantineTag NoAccess -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainProtectionAction Quarantine -TargetedDomainQuarantineTag NoAccess -EnableTargetedUserProtection $true -TargetedUserProtectionAction Quarantine -TargetedUserQuarantineTag NoAccess
+```
+
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-AntiPhishPolicy](/powershell/module/exchange/new-antiphishpolicy).
+
+En este ejemplo se modifica la directiva anti-phish existente denominada Recursos humanos. La acción para los mensajes detectados por la suplantación de usuario y la suplantación de dominio se establece en Cuarentena y se asigna la directiva de cuarentena personalizada denominada NoAccess.
+
+```powershell
+Set-AntiPhishPolicy -Identity "Human Resources" -EnableTargetedDomainsProtection $true -TargetedDomainProtectionAction Quarantine -TargetedDomainQuarantineTag NoAccess -EnableTargetedUserProtection $true -TargetedUserProtectionAction Quarantine -TargetedUserQuarantineTag NoAccess
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Set-AntiPhishPolicy](/powershell/module/exchange/set-antiphishpolicy).
+
+### <a name="anti-malware-policies"></a>Directivas antimalware
+
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de \> **colaboración &** Reglas de amenazas Directivas \>  \> **antimalware** en la **sección** Reglas.
+
+   O bien, para ir directamente a la **página Antimalware,** use <https://security.microsoft.com/antimalwarev2> .
+
+2. En la **página Antimalware,** realice uno de los siguientes pasos:
+   - Busque y seleccione una directiva antimalware existente.
+   - Crear una nueva directiva antimalware.
+
+3. Realice uno de los pasos siguientes:
+   - **Editar existente:** seleccione la directiva haciendo clic en el nombre de la directiva. En el control desplegable de detalles de la directiva, vaya a la **sección Configuración de** protección y, a continuación, haga clic en Editar configuración de **protección.**
+   - **Crear nuevo:** en el asistente para nueva directiva, acceda a la **página** Acciones.
+
+4. En la **página Configuración de** protección, seleccione una directiva de cuarentena en el cuadro Directiva **de** cuarentena.
+
+   **Nota:** Al crear una nueva  directiva, un valor de directiva de cuarentena en blanco indica la directiva de cuarentena predeterminada para que se utilice. Cuando más adelante edite la directiva, el valor en blanco se reemplaza por el nombre de directiva de cuarentena predeterminado real, tal como se describe en la tabla anterior.
+
+#### <a name="anti-malware-policies-in-powershell"></a>Directivas antimalware en PowerShell
+
+Si prefiere usar PowerShell para asignar directivas de cuarentena en directivas antimalware, conéctese a Exchange Online PowerShell o Exchange Online Protection PowerShell y use la siguiente sintaxis:
+
+```powershell
+<New-AntiMalwarePolicy -Name "<Unique name>" | Set-AntiMalwarePolicy -Identity "<Policy name>"> [-QuarantineTag <QuarantineTagName>]
+```
+
+**Notas**:
+
+- Debe reemplazar la directiva de cuarentena predeterminada por una directiva de cuarentena personalizada solo si desea cambiar las capacidades predeterminadas del usuario final en los mensajes que se han puesto en cuarentena para malware.
+
+  Para ver los valores de parámetros importantes en las directivas anti phish existentes, ejecute el siguiente comando:
+
+  ```powershell
+  Get-MalwareFilterPolicy | Format-Table Name,QuarantineTag
+  ```
+
+- Una nueva directiva antimalware en PowerShell requiere una directiva de filtro de malware (configuración) con el cmdlet **New-MalwareFilterPolicy** y una regla de filtro de malware exclusiva (filtros de destinatarios) mediante el cmdlet **New-MalwareFilterRule.** Para obtener instrucciones, [vea Use Exchange Online PowerShell o standalone EOP PowerShell to configure anti-malware policies](configure-anti-malware-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-malware-policies).
+
+En este ejemplo se crea una directiva de filtro de malware denominada Departamento de investigación que usa la directiva de cuarentena personalizada denominada NoAccess que asigna **permisos sin** acceso.
+
+```powershell
+New-MalwareFilterPolicy -Name "Research Department" -QuarantineTag NoAccess
+```
+
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-MalwareFilterPolicy](/powershell/module/exchange/new-malwarefilterpolicy).
+
+En este ejemplo se modifica la directiva de filtro de malware existente denominada Recursos humanos mediante la asignación de la directiva de cuarentena personalizada denominada NoAccess que asigna **permisos sin** acceso.
+
+```powershell
+New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
+```
+
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy).
+
+### <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
+
+Por lo general, la protección de los datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams no requiere la pertenencia a una directiva de datos adjuntos de Caja fuerte (se activa o desactiva la protección en la configuración **global** de las directivas de datos adjuntos de Caja fuerte). Sin embargo, para asignar una directiva de cuarentena para los mensajes que se han puesto en cuarentena mediante datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams, los usuarios afectados deben asignarse en una directiva de cuarentena.
+
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas De amenazas Caja fuerte datos adjuntos en \>  \>  \>  la **sección** Reglas.
+
+   O bien, para ir directamente a la **página Caja fuerte datos adjuntos,** use <https://security.microsoft.com/safeattachmentv2> .
+
+2. En la **Caja fuerte datos adjuntos,** siga uno de los pasos siguientes:
+   - Busque y seleccione una directiva Caja fuerte datos adjuntos existente.
+   - Cree una nueva directiva Caja fuerte datos adjuntos.
+
+3. Realice uno de los pasos siguientes:
+   - **Editar existente:** seleccione la directiva haciendo clic en el nombre de la directiva. En el control desplegable de detalles de la directiva, vaya a la Configuración y, **a** continuación, haga clic **en Editar configuración.**
+   - **Crear nuevo:** en el asistente para nueva directiva, acceda a la **página Configuración** directiva.
+
+4. En la **Configuración,** seleccione una directiva de cuarentena en el **cuadro Directiva de** cuarentena.
+
+   **Nota:** Al crear una nueva  directiva, un valor de directiva de cuarentena en blanco indica que se usa la directiva de cuarentena predeterminada. Cuando más adelante edite la directiva, el valor en blanco se reemplaza por el nombre de directiva de cuarentena predeterminado real, tal como se describe en la tabla anterior.
+
+Las instrucciones completas para crear y modificar directivas Caja fuerte datos adjuntos se describen en Configurar Caja fuerte de datos adjuntos en [Microsoft Defender para Office 365](set-up-safe-attachments-policies.md).
+
+#### <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-in-powershell"></a>Caja fuerte Datos adjuntos SharePoint, OneDrive y Microsoft Teams en PowerShell
+
+Si prefiere usar PowerShell para asignar directivas de cuarentena para datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams, conéctese Exchange Online PowerShell o PowerShell de Exchange Online Protection y use la sintaxis siguiente:
+
+```powershell
+Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
+<New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> [-QuarantineTag <QuarantineTagName>]
+```
+
+**Notas**:
+
+- Debe reemplazar la directiva de cuarentena predeterminada por una directiva de cuarentena personalizada solo si desea cambiar las funcionalidades predeterminadas del usuario final en los archivos que se han puesto en cuarentena por Caja fuerte Attachments for SharePoint, OneDrive y Microsoft Teams.
+
+  Para ver los valores de parámetros importantes, ejecute el siguiente comando:
+
+  ```powershell
+  Get-AtpPolicyForO365 | Format-Table EnableATPForSPOTeamsODB; Get-SafeAttachmentPolicy | Format-Table Name,QuarantineTag
+  ```
+
+- Para activar Caja fuerte datos adjuntos de SharePoint, OneDrive y Microsoft Teams, vea Activar datos adjuntos de Caja fuerte para [SharePoint, OneDrive y Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+
+- Una nueva directiva de datos adjuntos de Caja fuerte en PowerShell requiere una directiva de datos adjuntos seguros (configuración) mediante el cmdlet **New-SafeAttachmentPolicy** y una regla de datos adjuntos seguros exclusiva (filtros de destinatarios) mediante el cmdlet **New-SafeAttachmentRule.** Para obtener instrucciones, vea [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Caja fuerte Attachments policies](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
+
+En este ejemplo se activa Caja fuerte Attachments for SharePoint, OneDrive y Microsoft Teams y, a continuación, se crea una directiva de datos **adjuntos** segura denominada Research Department que usa la directiva de cuarentena personalizada denominada NoAccess que no asigna permisos de acceso.
+
+```powershell
+Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
+New-SafeAttachmentPolicy -Name "Research Department" -QuarantineTag NoAccess
+```
+
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-MalwareFilterPolicy](/powershell/module/exchange/new-malwarefilterpolicy).
+
+En este ejemplo se modifica la directiva de datos adjuntos seguros existente denominada Recursos humanos mediante la asignación de la directiva de cuarentena personalizada denominada NoAccess que asigna **permisos sin** acceso.
+
+```powershell
+New-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
+```
+
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy).
 
 ## <a name="configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal"></a>Configurar las opciones de notificación de cuarentena global en el portal de Microsoft 365 Defender web
 
@@ -433,12 +642,12 @@ En las secciones siguientes se describen los efectos de los grupos de permisos p
 
 Los permisos individuales que se incluyen en grupos de permisos preestablecidos se enumeran en la tabla al principio de este artículo.
 
-#### <a name="admin-only-access"></a>Acceso de solo administrador
+#### <a name="no-access"></a>Sin acceso
 
-Si la directiva de  cuarentena asigna los permisos de acceso solo administrador (sin permisos), los usuarios no podrán ver los mensajes que están en cuarentena:
+Si la directiva de cuarentena asigna los permisos **Sin** acceso (solo acceso de administrador), los usuarios no podrán ver los mensajes que están en cuarentena:
 
 - **Detalles del mensaje en cuarentena:** no se mostrará ningún mensaje en la vista de usuario final.
-- **Notificaciones de correo no deseado del** usuario final: no se enviará ninguna notificación para esos mensajes
+- **Notificaciones de correo no deseado del** usuario final: no se enviará ninguna notificación para esos mensajes.
 
 #### <a name="limited-access"></a>Acceso limitado
 
@@ -446,15 +655,16 @@ Si la directiva de cuarentena asigna los **permisos de** acceso limitado, los us
 
 - **Detalles del mensaje en cuarentena:** los botones siguientes están disponibles:
   - **Versión de solicitud**
-  - **Ver encabezado de mensaje**
-  - **Mensaje de vista previa**
+  - **Ver encabezados de mensaje**
+  - **Vista previa de mensaje**
+  - **Quitar de cuarentena**
   - **Bloquear remitente**
-  - **Quitar de la cuarentena**
 
   ![Botones disponibles en los detalles del mensaje en cuarentena si la directiva de cuarentena concede al usuario permisos de acceso limitado](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
 - **Notificaciones de correo no deseado del** usuario final: los botones siguientes están disponibles:
   - **Bloquear remitente**
+  - **Versión de solicitud**
   - **Revisar**
 
   ![Botones disponibles en la notificación de correo no deseado del usuario final si la directiva de cuarentena concede al usuario permisos de acceso limitado](../../media/quarantine-tags-esn-limited-access.png)
@@ -465,16 +675,16 @@ Si la directiva de cuarentena asigna los **permisos de** acceso completo (todos 
 
 - **Detalles del mensaje en cuarentena:** los botones siguientes están disponibles:
   - **Mensaje de versión**
-  - **Ver encabezado de mensaje**
-  - **Mensaje de vista previa**
+  - **Ver encabezados de mensaje**
+  - **Vista previa de mensaje**
+  - **Quitar de cuarentena**
   - **Bloquear remitente**
-  - **Quitar de la cuarentena**
 
   ![Botones disponibles en los detalles del mensaje en cuarentena si la directiva de cuarentena concede al usuario permisos de acceso total](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
 - **Notificaciones de correo no deseado del** usuario final: los botones siguientes están disponibles:
   - **Bloquear remitente**
-  - **Release**
+  - **Versión**
   - **Revisar**
 
   ![Botones disponibles en la notificación de correo no deseado del usuario final si la directiva de cuarentena concede al usuario permisos de acceso completo](../../media/quarantine-tags-esn-full-access.png)
@@ -490,8 +700,8 @@ El **permiso bloquear remitente** (_PermissionToBlockSender_) controla el acceso
   - **Bloquear el permiso** del remitente deshabilitado: **el botón Bloquear remitente** no está disponible.
 
 - **Notificaciones de correo no deseado del usuario final:**
-  - **Bloquear el permiso** del remitente deshabilitado: **el botón Bloquear remitente** no está disponible.
   - **Bloquear permiso de** remitente habilitado: el **botón Bloquear remitente** está disponible.
+  - **Bloquear el permiso** del remitente deshabilitado: **el botón Bloquear remitente** no está disponible.
 
 Para obtener más información acerca de la lista Remitentes bloqueados, vea [Bloquear](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) mensajes de alguien y Usar Exchange Online PowerShell para configurar la colección de listas seguras [en un buzón.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
 
@@ -535,4 +745,6 @@ Allow **recipients to request a message to be released from quarantine** permiss
   - Permiso habilitado: el **botón Solicitar versión** está disponible.
   - Permiso deshabilitado: el **botón Solicitar versión** no está disponible.
 
-- **Notificaciones de correo no deseado del** usuario final: el botón **Liberar** no está disponible.
+- **Notificaciones de correo no deseado del usuario final:**
+  - Permiso habilitado: el **botón Solicitar versión** está disponible.
+  - Permiso deshabilitado: el **botón Solicitar versión** no está disponible.

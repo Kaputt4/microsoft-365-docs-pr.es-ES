@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 559cec70c4f699d0f6a849aec8235a22903a5050becb4469824b17908025f32d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f51208b8376ef160fe83a41e5a2ac74eb843c2f3
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877670"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372693"
 ---
 # <a name="device-requirements"></a>Requisitos del dispositivo
 
-Escritorio administrado de Microsoft evalúa periódicamente los requisitos del dispositivo para incluirse en el servicio. En este artículo se describen los requisitos de hardware y software que debe cumplir un dispositivo para poder trabajar con Escritorio administrado de Microsoft. Puedes revisar una lista de dispositivos específicos ya aprobados para su uso con el servicio en función de estos requisitos. Filtrar por Escritorio administrado de Microsoft en el sitio [De Windows 10 Pro de dispositivos](https://www.microsoft.com/windowsforbusiness/view-all-devices) empresariales
+Escritorio administrado de Microsoft evalúa periódicamente los requisitos del dispositivo para incluirse en el servicio. En este artículo se describen los requisitos de hardware y software que debe cumplir un dispositivo para poder trabajar con Escritorio administrado de Microsoft. Puedes revisar una lista de dispositivos específicos ya aprobados para su uso con el servicio en función de estos requisitos. Filtrar por Escritorio administrado de Microsoft en el sitio [De Windows 10 Pro de dispositivos](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) empresariales
 
 > [!NOTE]
 > Estos requisitos pueden cambiar en cualquier momento, pero proporcionaremos un aviso de 30 días de cualquier cambio en los requisitos de hardware. Los requisitos modificados más recientemente se marcan con **\*** . 

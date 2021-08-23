@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e7916ad50a6331baedb4a033e9b8aaa881b13e536153c4069bbfe36fa28ba670
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ccd55b7c87f33ba948bbef42b1ddc256299749c
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902852"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372813"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Novedades de Microsoft Defender para endpoint en iOS
 
@@ -34,6 +34,10 @@ ms.locfileid: "53902852"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1120020101"></a>1.1.20020101
+- Mejoras de la experiencia de usuario: Microsoft Defender para endpoint tiene un aspecto nuevo.
+- Correcciones de errores.
 
 ## <a name="1117240101"></a>1.1.17240101
 - La compatibilidad con la administración de aplicaciones móviles (MAM) a través de Intune suele estar disponible con esta versión. Para obtener más información, consulta [Microsoft Defender para las señales](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322) de riesgo de punto de conexión disponibles para las directivas de protección de aplicaciones

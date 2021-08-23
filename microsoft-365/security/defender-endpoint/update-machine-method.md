@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a67ec7ce5e71ed5b0275f509928d4acaa2b7c4b1f89db971353fc27fb98c650d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7ffd136bd770369248b2f0735deb42e62f372632
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884528"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372825"
 ---
 # <a name="update-machine"></a>Actualizar máquina 
 
@@ -84,7 +84,7 @@ Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mante
 
 Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-Propiedad|Tipo|Description
+Propiedad|Tipo|Descripción
 :---|:---|:---
 machineTags|Colección string|Conjunto de [etiquetas de](machine.md) máquina.
 deviceValue|Enumeración que admite valores null|El [valor del dispositivo](tvm-assign-device-value.md). Los valores posibles son: 'Normal', 'Low' y 'High'.
@@ -93,7 +93,7 @@ deviceValue|Enumeración que admite valores null|El [valor del dispositivo](tvm-
 
 Si se realiza correctamente, este método devuelve 200 Ok y la entidad [de](machine.md) la máquina en el cuerpo de la respuesta con las propiedades actualizadas.
 
-Si la colección de etiquetas de máquina en el cuerpo no contiene etiquetas de máquina existentes: 400 Entradas no válidas y un mensaje que informa de las etiquetas que faltan.
+Si la colección de etiquetas de máquina en el cuerpo no contiene etiquetas de máquina existentes: reemplaza todas las etiquetas por las etiquetas proporcionadas en el cuerpo de la solicitud.
 
 Si no se encontró el equipo con el identificador especificado: 404 No se encontró.
 

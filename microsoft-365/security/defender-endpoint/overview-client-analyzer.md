@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 94824039c582706d8042079b492e1b4beae2cddb
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 604a7d98b25d7b5b858db87c8b8f467ffb8edb83
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254962"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58360112"
 ---
 #  <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Solucionar problemas de estado del sensor con Microsoft Defender para endpoint client Analyzer
 
@@ -54,12 +54,12 @@ Para obtener más información acerca de nuestra declaración de privacidad, vea
 
 ## <a name="requirements"></a>Requisitos
 
--   Antes de ejecutar el analizador, se recomienda asegurarse de que la configuración de proxy o firewall permita el acceso a las direcciones URL de servicio de [Microsoft Defender para puntos de conexión.](/microsoft-365/security/defender-endpoint/configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+-   Antes de ejecutar el analizador, se recomienda asegurarse de que la configuración de proxy o firewall permita el acceso a las direcciones URL de servicio de [Microsoft Defender para puntos de conexión.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
--   El analizador puede ejecutarse en ediciones admitidas de [Windows,](/microsoft-365/security/defender-endpoint/minimum-requirements.md#supported-windows-versions) [Linux](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux.md#system-requirements)o [macOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac.md#system-requirements) antes de la incorporación a Microsoft Defender para Endpoint.
+-   El analizador puede ejecutarse en ediciones admitidas de [Windows,](minimum-requirements.md#supported-windows-versions) [Linux](microsoft-defender-endpoint-linux.md#system-requirements)o [macOS](microsoft-defender-endpoint-mac.md#system-requirements) antes de la incorporación a Microsoft Defender para Endpoint.
 
 -   Para Windows dispositivos, si ejecuta el analizador directamente en máquinas específicas y no de forma remota a través de [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log), sysInternals [PsExec.exe](/sysinternals/downloads/psexec) debe poder ejecutarse (al menos temporalmente).  
     El analizador llama a PsExec.exe herramienta para ejecutar comprobaciones de conectividad en la nube como Sistema local y emular el comportamiento del servicio SENSE.
 
     > [!NOTE]
-    > En dispositivos Windows, si usas la regla Reducción de superficie de ataque (ASR) Bloquear creaciones de proceso que se originen a partir de comandos PSExec y [WMI,](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)es posible que quieras deshabilitar temporalmente la regla o configurar una exclusión en la regla [ASR](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) para permitir que el analizador ejecute comprobaciones de conectividad en la nube según lo esperado.
+    > En dispositivos Windows, si usas la regla Reducción de superficie de ataque (ASR) Bloquear creaciones de proceso que se originen a partir de comandos PSExec y [WMI,](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)es posible que quieras deshabilitar temporalmente la regla o configurar una exclusión en la regla [ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) para permitir que el analizador ejecute comprobaciones de conectividad en la nube según lo esperado.

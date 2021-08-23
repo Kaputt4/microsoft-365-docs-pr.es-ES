@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 430dae4e4432defd5d9dd80e63bc149858781a9c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 34fd5ed4338e42ea37d4ad9eacb1d881bb2bf0e6
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356833"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399808"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -99,18 +99,18 @@ Preparar el espacio empresarial de origen:
 
    |Parámetro|Valor|Obligatorio u opcional
    |---|---|---|
-   |-TargetTenantDomain|Dominio de inquilino de destino, como fabrikam \. onmicrosoft.com.|Necesario|
-   |-ResourceTenantDomain|Dominio de inquilino de origen, como contoso \. onmicrosoft.com.|Necesario|
-   |-ResourceTenantAdminEmail|Dirección de correo electrónico del administrador del espacio empresarial de origen. Este es el administrador de inquilinos de origen que dará su consentimiento al uso de la aplicación de migración de buzones enviada desde el administrador de destino. Este es el administrador que recibirá la invitación de correo electrónico para la aplicación.|Necesario|
-   |-ResourceTenantId|Identificador de organización de inquilino de origen (GUID).|Necesario|
-   |-SubscriptionId|La suscripción de Azure que se usará para crear recursos.|Necesario|
-   |-ResourceGroup|Nombre del grupo de recursos de Azure que contiene o contendrá el Almacén de claves.|Necesario|
-   |-KeyVaultName|Instancia de Azure Key Vault que almacenará el certificado o secreto de la aplicación de migración de buzones.|Necesario|
-   |-CertificateName|Nombre del certificado al generar o buscar certificado en el almacén de claves.|Necesario|
-   |-CertificateSubject|Nombre de sujeto del certificado de Azure Key Vault, como CN=contoso_fabrikam.|Necesario|
-   |-AzureResourceLocation|Ubicación del grupo de recursos de Azure y del almacén de claves.|Necesario|
+   |-TargetTenantDomain|Dominio de inquilino de destino, como fabrikam \. onmicrosoft.com.|Obligatorio|
+   |-ResourceTenantDomain|Dominio de inquilino de origen, como contoso \. onmicrosoft.com.|Obligatorio|
+   |-ResourceTenantAdminEmail|Dirección de correo electrónico del administrador del espacio empresarial de origen. Este es el administrador de inquilinos de origen que dará su consentimiento al uso de la aplicación de migración de buzones enviada desde el administrador de destino. Este es el administrador que recibirá la invitación de correo electrónico para la aplicación.|Obligatorio|
+   |-ResourceTenantId|Identificador de organización de inquilino de origen (GUID).|Obligatorio|
+   |-SubscriptionId|La suscripción de Azure que se usará para crear recursos.|Obligatorio|
+   |-ResourceGroup|Nombre del grupo de recursos de Azure que contiene o contendrá el Almacén de claves.|Obligatorio|
+   |-KeyVaultName|Instancia de Azure Key Vault que almacenará el certificado o secreto de la aplicación de migración de buzones.|Obligatorio|
+   |-CertificateName|Nombre del certificado al generar o buscar certificado en el almacén de claves.|Obligatorio|
+   |-CertificateSubject|Nombre de sujeto del certificado de Azure Key Vault, como CN=contoso_fabrikam.|Obligatorio|
+   |-AzureResourceLocation|Ubicación del grupo de recursos de Azure y del almacén de claves.|Obligatorio|
    |-ExistingApplicationId|Aplicación de migración de correo que se usará si ya se creó una.|Opcional|
-   |-AzureAppPermissions|Los permisos necesarios para concederse a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al inquilino de recursos).|Necesario|
+   |-AzureAppPermissions|Los permisos necesarios para concederse a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al inquilino de recursos).|Obligatorio|
    |-UseAppAndCertGeneratedForSendingInvitation|Parámetro para usar la aplicación creada para la migración que se usará para enviar una invitación de vínculo de consentimiento al administrador del espacio empresarial de origen. Si no está presente, se pedirán las credenciales del administrador de destino para conectarse al Administrador de invitaciones de Azure y enviar la invitación como administrador de destino.|Opcional|
    |-KeyVaultAuditStorageAccountName|Cuenta de almacenamiento donde se almacenarían los registros de auditoría de Key Vault.|Opcional|
    |-KeyVaultAuditStorageResourceGroup|El grupo de recursos que contiene la cuenta de almacenamiento para almacenar registros de auditoría de Key Vault.|Opcional|
@@ -165,7 +165,7 @@ La configuración de administración de destino ya está completa.
 
 #### <a name="step-by-step-instructions-for-the-source-tenant-admin"></a>Instrucciones paso a paso para el administrador del espacio empresarial de origen
 
-1. Inicie sesión en el buzón como -ResourceTenantAdminEmail especificado por el administrador de destino durante su instalación. Busque la invitación de correo electrónico desde el inquilino de destino y, a continuación, seleccione **el Introducción** de correo electrónico.
+1. Inicie sesión con sus credenciales de administrador global. Inicie sesión en el buzón como -ResourceTenantAdminEmail especificado por el administrador de destino durante su instalación.  Busque la invitación de correo electrónico desde el inquilino de destino y, a continuación, seleccione **el Introducción** de correo electrónico.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Cuadro de diálogo invitado":::
 
@@ -362,7 +362,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
     if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
     ```
 
-3. Los inquilinos de destino no híbridos pueden modificar la cuota de la carpeta Elementos recuperables de MailUsers antes de la migración ejecutando el siguiente comando para habilitar la retención por juicio en el objeto MailUser y aumentar la cuota a 100 GB: `Set-MailUser -EnableLitigationHoldForMigration $TRUE` . Tenga en cuenta que esto no funcionará para los inquilinos en híbrido.
+3. Los inquilinos de destino no híbridos pueden modificar la cuota de la carpeta Elementos recuperables de MailUsers antes de la migración ejecutando el siguiente comando para habilitar la retención por juicio en el objeto MailUser y aumentar la cuota a 100 GB: `Set-MailUser -EnableLitigationHoldForMigration` . Tenga en cuenta que esto no funcionará para los inquilinos en híbrido.
 
 4. Los usuarios de la organización de destino deben tener una licencia con las Exchange Online correspondientes aplicables a la organización. Puede aplicar una licencia antes de un movimiento de buzón, pero SOLO una vez que el mailuser de destino esté configurado correctamente con ExchangeGUID y las direcciones proxy. La aplicación de una licencia antes de que se aplique ExchangeGUID dará como resultado un nuevo buzón aprovisionado en la organización de destino.
 
@@ -432,7 +432,7 @@ El envío por lotes de migración también se admite desde el nuevo Centro Excha
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo locales, tanto de origen como de destino, se actualicen con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del movimiento?**
 

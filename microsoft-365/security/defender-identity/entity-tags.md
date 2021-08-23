@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 2dcb7767be7145420c08161782f27a51ec38727ae5d427459c4af1d9676cd37d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3e8ff4f94b0295b4ce42e20175a3547cfb4ae23
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844805"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58359925"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Etiquetas de entidad Defender for Identity en Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ Para establecer estas etiquetas, [en Microsoft 365 Defender](https://security.mi
 
 ![Vaya a Configuración, a continuación, Identidades](../../media/defender-identity/settings-identities.png)
 
-La configuración de la etiqueta aparecerá en la **Configuración** columna.
+La configuración de etiquetas aparecerá en **Etiquetas de entidad**.
 
 ![Tipos de configuración de etiquetas](../../media/defender-identity/tag-settings.png)
 
@@ -46,7 +46,7 @@ La **etiqueta Confidencial** se usa para identificar activos de alto valor. La r
 
 También puede etiquetar manualmente usuarios, dispositivos o grupos como confidenciales.
 
-1. Seleccione **Etiqueta confidencial**. A continuación, verá los **usuarios,** **dispositivos** y grupos confidenciales **existentes.**
+1. Seleccione **Confidencial**. A continuación, verá los **usuarios,** **dispositivos** y grupos confidenciales **existentes.**
 
     ![Entidades confidenciales](../../media/defender-identity/sensitive-entities.png)
 
@@ -64,7 +64,7 @@ Las entidades de Honeytoken se usan como capturas para actores malintencionados.
 
 Puede etiquetar usuarios o dispositivos con **la etiqueta Honeytoken** de la misma manera que etiqueta las cuentas confidenciales.
 
-1. Seleccione **Etiqueta de Honeytoken**. A continuación, verá los dispositivos y usuarios de **honeytoken** **existentes.**
+1. Seleccione **Honeytoken**. A continuación, verá los dispositivos y usuarios de **honeytoken** **existentes.**
 
     ![Entidades de Honeytoken](../../media/defender-identity/honeytoken-entities.png)
 
@@ -80,7 +80,7 @@ Puede etiquetar usuarios o dispositivos con **la etiqueta Honeytoken** de la mis
 
 Defender for Identity considera que Exchange servidores como activos de alto valor y los etiqueta automáticamente como **confidenciales.** También puede etiquetar manualmente los dispositivos como servidores Exchange dispositivos.
 
-1. Seleccione **Exchange de servidor**. A continuación, verá los dispositivos existentes etiquetados con la **etiqueta Exchange de servidor.**
+1. Seleccione **Exchange servidor**. A continuación, verá los dispositivos existentes etiquetados con la **etiqueta Exchange de servidor.**
 
     ![Exchange servidores](../../media/defender-identity/exchange-servers.png)
 
@@ -92,6 +92,6 @@ Defender for Identity considera que Exchange servidores como activos de alto val
 
     ![Seleccionar dispositivo](../../media/defender-identity/select-device.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Administrar alertas de seguridad de Defender for Identity](manage-security-alerts.md)

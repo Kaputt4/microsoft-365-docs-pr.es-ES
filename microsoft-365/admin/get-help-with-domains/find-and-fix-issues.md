@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Aprenda a realizar un seguimiento de los problemas que se encuentran al configurar un dominio personalizado asegurándose de que los registros DNS estén configurados correctamente.
-ms.openlocfilehash: 035d5855b539efe772254fe195a99c3fb2a855d4c592e8f085e866ab4d196b22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5dd84e829ed1cd8ea1cc9738ac88eaabcba52648
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825792"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450106"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Buscar y corregir problemas después de agregar el dominio o los registros DNS
 
@@ -56,7 +56,6 @@ Configurar el dominio para que funcione con Microsoft 365 puede ser un desafío.
 - [¿El acceso a su sitio web no funciona?](#accessing-your-website-isnt-working)
 
 ## <a name="cant-verify-your-domain"></a>¿No puede comprobar su dominio?
-<a name="BKMK_verify"> </a>
 
 Hay algunas razones comunes por las que la comprobación del dominio puede no funcionar según lo esperado:
   
@@ -67,7 +66,6 @@ Hay algunas razones comunes por las que la comprobación del dominio puede no fu
 3. **El registro no se ha actualizado en Internet.** Normalmente, solo nos lleva unos minutos poder ver el nuevo registro, pero de vez en cuando puede tardar unas horas. 
     
 ## <a name="outlook-isnt-working"></a>¿Outlook no funciona?
-<a name="BKMK_OutlookBroken"> </a>
 
 Si ha configurado correctamente el registro MX y otros registros DNS de su dominio pero el correo electrónico no funciona, podemos ayudarle a [solucionar los problemas relacionados con Outlook](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
@@ -86,7 +84,6 @@ Hay un par de escenarios en los que solo tiene que comprobar el dominio de su or
 Consulta las instrucciones de Comprobar tu dominio Microsoft 365 para probar la propiedad, la organización sin ánimo de lucro o el estado [educativo,](../setup/domains-faq.yml) o para activar Yammer para asegurarte de que has completado todos los pasos necesarios. Es un poco diferente para cada situación. 
   
 ## <a name="services-not-working-with-your-domain"></a>¿Los servicios no funcionan con su dominio?
-<a name="BKMK_Test"> </a>
 
 Podemos ayudarle a localizar los problemas de configuración DNS de su dominio. El solucionador de problemas de dominios Microsoft 365 le mostrará los registros que necesiten corregirse y exactamente en qué deben establecerse los registros. 
 
@@ -94,11 +91,10 @@ Podemos ayudarle a localizar los problemas de configuración DNS de su dominio. 
 > ¿Ha configurado DNS correctamente pero el correo electrónico no funciona en la versión de escritorio de Outlook? Consulte los [diferentes escenarios de](/exchange/mail-flow-best-practices/mail-flow-best-practices) flujo de correo que puede tener con Microsoft 365 para asegurarse de que las cosas están configuradas correctamente para su empresa. O bien, obtenga más ayuda para solucionar problemas con el correo electrónico aquí: [Solucionar problemas de Outlook](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## <a name="accessing-your-website-isnt-working"></a>¿El acceso a su sitio web no funciona?
-<a name="BKMK_Website"> </a>
 
 Si ha corregido cualquier problema de DNS y sigue teniendo dificultades, pruebe los siguientes procedimientos.
   
-- Los usuarios no pueden obtener acceso al sitio web en www.mydomain.com: [localizar problemas de sitio web](../setup/add-domain.md)
+- Las personas no pueden llegar a su sitio web *en contoso.com:* [Realizar un seguimiento de los problemas del sitio web](../setup/add-domain.md)
     
 - No puede actualizar el registro A o el registro CNAME para que apunten a su sitio web: Actualice los [registros DNS personalizados en Microsoft 365](../setup/add-domain.md)
 

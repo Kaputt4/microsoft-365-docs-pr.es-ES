@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Obtenga más información Office 365 operado por 21Vianet diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3d91c452ddaca7b8214bffcfa7764515f12fac9ebee07fc6d3749767148a652a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 57126d37e8abe64ed2cbee1c1c271de91cf547d8
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822336"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399784"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 operado por 21Vianet
 
@@ -59,7 +59,7 @@ Si desea obtener información sobre cómo empezar a usar los servicios Office 36
 |:-----|:-----|
 |Dominios personalizados  <br/> |Los administradores pueden crear o usar dominios personalizados registrados a través de proveedores de dominio específicos de China. Si no tiene un dominio personalizado, puede comprar un nombre de dominio [a](../get-help-with-domains/buy-a-domain-name.md) un registrador de nombres de dominio. Si ya tiene uno, [busque el registrador de dominios o el proveedor de hospedaje DNS](../get-help-with-domains/find-your-domain-registrar.md).  <br/> Además, si crea un sitio web público con el servicio Office 365 SharePoint Online, la directiva de cumplimiento de Internet de China requiere que obtenga un número de proveedor de contenido de Internet (ICP).  **Nota:** La validación automática de palabras no permitidos en nombres de dominio personalizados no está disponible.           |
 |Suscripciones, facturación y soporte técnico  <br/> |Proporcionado por 21Vianet. Para obtener información sobre cómo ponerse en contacto con el soporte técnico, [vea Contact Office 365 for business support](../../business-video/get-help-support.md).  <br/> |
-|Autoservicio de restablecimiento de contraseña  <br/> |Disponible solo para administradores. Para obtener más información, vea [Change or reset your password in Office 365 operated by 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Restablecimiento de contraseñas de autoservicio  <br/> |Disponible solo para administradores. Para obtener más información, vea [Change or reset your password in Office 365 operated by 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Seguridad, privacidad, cumplimiento y detalles sobre los niveles de soporte técnico  <br/> |Proporcionado por 21Vianet.  <br/> |
 |Office Configuración de escritorio  <br/> |Office configuración de escritorio no está disponible para Office 2010 y Office 2007. Sin embargo, los administradores pueden [configurar las aplicaciones Office de escritorio actuales para que funcionen con Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
 |Compatibilidad con dispositivos y móviles\*  <br/> | Próximamente se incluyen las siguientes características móviles:  <br/>  Administración de dispositivos móviles (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) no está disponible, pero puede usar dispositivos Exchange ActiveSync o una oferta de Research in Motion (RIM, la solución de correo electrónico inalámbrico BlackBerry) para ejecutar Blackberry Enterprise Server (BES).  <br/>  Para obtener más información sobre la compatibilidad con dispositivos móviles, consulte [Configurar y administrar el acceso móvil para los usuarios.](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)  <br/> |
@@ -77,8 +77,8 @@ Si desea obtener información sobre cómo empezar a usar los servicios Office 36
 |Función|Disponibilidad|
 |:-----|:-----|
 |Compartir un documento, biblioteca o sitio por correo electrónico con alguien externo a su organización  <br/> |Esta característica está disponible, pero desactivada de forma predeterminada, ya que su uso podría hacer que los archivos compartidos puedan ser accesibles fuera de su país. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. Los usuarios que intenten compartir con alguien fuera de la organización también recibirán una advertencia. Para obtener más información, [vea Compartir SharePoint archivos o carpetas en Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
-|Access Services  <br/> |Access 2013 es compatible, pero es posible que no esté disponible agregar nuevas aplicaciones de Access, ya que esta característica se retirará de Office 365 y SharePoint Online. La creación de nuevas aplicaciones web basadas en Access y bases de datos web de Access en Office 365 y SharePoint Online dejará de comenzar en junio de 2017 y las demás aplicaciones web y bases de datos web restantes para abril de 2018. Además, no se admite la funcionalidad de Access 2010 y el intento de usar una base de datos de Access 2010 provocará errores y una posible pérdida de datos.  <br/> |
-|Microsoft PowerApps  <br/> |Próximamente.  <br/> |
+|Servicios de Access  <br/> |Access 2013 es compatible, pero es posible que no esté disponible agregar nuevas aplicaciones de Access, ya que esta característica se retirará de Office 365 y SharePoint Online. La creación de nuevas aplicaciones web basadas en Access y bases de datos web de Access en Office 365 y SharePoint Online dejará de comenzar en junio de 2017 y las demás aplicaciones web y bases de datos web restantes para abril de 2018. Además, no se admite la funcionalidad de Access 2010 y el intento de usar una base de datos de Access 2010 provocará errores y una posible pérdida de datos.  <br/> |
+|Microsoft Power Apps  <br/> |Próximamente.  <br/> |
 |Information Rights Management (IRM)  <br/> |La capacidad de establecer las capacidades de IRM en SharePoint para su organización será próximamente.  <br/> |
 |Capacidad para traducir texto o páginas  <br/> |Disponible, pero desactivado de forma predeterminada. Los administradores de inquilinos pueden activar esta capacidad, pero el servicio de traducción en la nube puede estar ubicado fuera de su país. Si no desea que los usuarios envíen contenido a un servicio de traducción en la nube, puede mantener deshabilitadas estas características.  <br/> |
 |Registro de ICP del sitio web público  <br/> |La directiva de cumplimiento de Internet de China requiere que obtenga un número de proveedor de contenido de Internet (ICP) para su sitio web público.  |
@@ -177,7 +177,7 @@ Compartir Exchange datos de contacto en dispositivos móviles Apple con Apple iC
 |Cifrado de Exchange Hosted Email  |No disponible.  |
 |Cifrado de mensajes de Office 365  |Próximamente.  |
    
-## <a name="office"></a>Office
+## <a name="office"></a>Oficina
 
 |Función|Disponibilidad|
 |:-----|:-----|

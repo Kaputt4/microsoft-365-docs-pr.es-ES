@@ -1,6 +1,6 @@
 ---
 title: Cambiar a Microsoft Defender para endpoint - Onboard
-description: Esta es la fase 3, Incorporación, para migrar desde una solución que no es de Microsoft a Microsoft Defender para endpoint.
+description: Realice el cambio a Microsoft Defender para endpoint. Incorpore dispositivos y, a continuación, desinstale la solución que no es de Microsoft.
 keywords: migración, Microsoft Defender para Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 08/12/2021
+ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 4a3ab70906b7fd01a2687afc7022f11a5451dc17
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 07dd668f64c2b2e866ff598f6d4c9e259cc56815
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255492"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372477"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para endpoint - Fase 3: Incorporación
 
@@ -141,9 +141,9 @@ Si en este momento tiene:
 - Incorporó los dispositivos de la organización a Defender for Endpoint y 
 - Antivirus de Microsoft Defender está instalado y habilitado, 
 
-A continuación, el siguiente paso es desinstalar la solución de protección de puntos de conexión que no es de Microsoft. 
+A continuación, el siguiente paso es desinstalar la solución de antivirus, antimalware y endpoint protection que no sea de Microsoft. Al desinstalar la solución que no es de Microsoft, Antivirus de Microsoft Defender pasa del modo pasivo al modo activo. En la mayoría de los casos, esto ocurre automáticamente.
 
-Para obtener ayuda con esta tarea, llegue al equipo de soporte técnico del proveedor de soluciones.
+Para obtener ayuda con la desinstalación de la solución que no es de Microsoft, póngase en contacto con su equipo de soporte técnico. 
 
 ## <a name="make-sure-defender-for-endpoint-is-working-correctly"></a>Asegúrese de que Defender for Endpoint funciona correctamente
 
@@ -153,7 +153,7 @@ Ahora que has incorporado a Defender for Endpoint y has desinstalado la solució
 - Aplicaciones potencialmente no deseadas (PUA)
 - Protección de red (NP)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 **¡Enhorabuena!** Ha completado la migración [a Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 

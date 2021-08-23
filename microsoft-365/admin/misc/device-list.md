@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo crear un archivo CSV para AutoPilot en Microsoft 365 para empresas.
-ms.openlocfilehash: bc67e32d834ec8fde13386fb02ef1368ca3757cef47e78575d00a3e3d2fc6db3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d3785d85654c1e055d0f1b36dad50485d4e82fd9
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824124"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377756"
 ---
 # <a name="device-list-csv-file"></a>Lista de dispositivos CSV-file
 
@@ -48,10 +48,8 @@ Puede obtener esta información de su proveedor de hardware o puede usar el [scr
 
 Al agregar dispositivos, también debes agregarlos a un perfil. Un perfil se usa para aplicar perfiles de implementación de AutoPilot a un dispositivo o un grupo de dispositivos.
   
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Microsoft 365 documentación y recursos para empresas](../../business/index.yml)
+[Microsoft 365 documentación y recursos para empresas](../../index.yml)
   
-[Introducción a Microsoft 365 para empresas](../../business/microsoft-365-business-overview.md)
-  
-[Administrar Microsoft 365 para empresas](../../business/manage.md)
+[Introducción a Microsoft 365 para empresas](../../business-video/what-is-microsoft-365.md)

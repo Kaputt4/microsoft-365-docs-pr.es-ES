@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indizar en Exchange y SharePoint que puede incluir en una búsqueda de exhibición de documentos electrónicos que se ejecuta en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: a43873b52ad4cf76c694b4666761b6904ab4126c5c7b79a6ca530ef00af5c688
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 77d85582d4e30d45854ae6dd3a80f6cc26ba2195
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835756"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372801"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos parcialmente indizados en eDiscovery
 
@@ -71,6 +71,9 @@ Del mismo modo, los mensajes con datos adjuntos de archivo parcialmente indizado
   
 Para obtener una lista de propiedades de correo electrónico y documentos que puede buscar mediante la característica de búsqueda en el Centro de seguridad y cumplimiento de &, vea Consultas de palabras clave y condiciones de búsqueda para [eDiscovery](keyword-queries-and-search-conditions.md).
   
+> [!NOTE]
+> Si se mueve un elemento de buzón de correo de una carpeta indizada a una carpeta que no está indizada, se establece una marca para desindexar el elemento y el elemento se quita del índice y no se puede buscar. Más adelante, si ese mismo elemento se vuelve a mover a una carpeta indizada, la marca no se restablecerá. Esto significa que el elemento permanecerá sin indexar y no se podrá buscar.
+
 ## <a name="partially-indexed-items-included-in-the-search-results"></a>Elementos parcialmente indizados incluidos en los resultados de búsqueda
 
 Es posible que su organización tenga que identificar y realizar análisis adicionales en elementos parcialmente indizados para determinar qué son, qué contienen y si son relevantes para una investigación específica. Como se explicó anteriormente, los elementos parcialmente indizados en las ubicaciones de contenido que se buscan se incluyen automáticamente con los resultados de búsqueda estimados. Tiene la opción de incluir estos elementos parcialmente indizados al exportar resultados de búsqueda o preparar los resultados de búsqueda para Advanced eDiscovery.
@@ -134,6 +137,6 @@ Para obtener una lista de los límites de indización SharePoint documentos, vea
 
 - Si crea una retención basada en consultas asociada a un caso de exhibición de documentos electrónicos, todos los elementos parcialmente indizados se colocan en espera. Esto incluye elementos parcialmente indizados que no coinciden con los criterios de consulta de búsqueda para la retención. Para obtener más información acerca de cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Create an eDiscovery hold](create-ediscovery-holds.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Investigar elementos parcialmente indizados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)

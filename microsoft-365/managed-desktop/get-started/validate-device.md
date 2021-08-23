@@ -11,16 +11,16 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a7baac7b4af572884e329964ea30831976ec5f0258d81e6b9a1d44e4ed28fd6b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1654998a69b364ebf399c2aabac185bc98fb9388
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890916"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372837"
 ---
 # <a name="validate-new-devices"></a>Validar los dispositivos nuevos
 
-Independientemente de si eres completamente nuevo en Escritorio administrado de Microsoft o un suscriptor de larga duración, lo mejor es probar un ejemplo de cualquier modelo de dispositivo que estés inscribiendo en el servicio por primera vez. Esto es así si está ordenando dispositivos nuevos o reusando los existentes, incluidos los dispositivos recomendados para Escritorio administrado de Microsoft en el sitio de dispositivos profesionales Windows 10 Pro [tienda.](https://www.microsoft.com/windowsforbusiness/view-all-devices) En ese sitio, vea los dispositivos recomendados para  su uso con el servicio expandiendo **Características** en el área Filtrar por y, a continuación, **seleccionando Escritorio administrado de Microsoft**. La validación de dispositivos garantiza que ofrecerán la experiencia de usuario que esperas.
+Independientemente de si eres completamente nuevo en Escritorio administrado de Microsoft o un suscriptor de larga duración, lo mejor es probar un ejemplo de cualquier modelo de dispositivo que estés inscribiendo en el servicio por primera vez. Esto es así si está ordenando dispositivos nuevos o reusando los existentes, incluidos los dispositivos recomendados para Escritorio administrado de Microsoft en el sitio de dispositivos profesionales Windows 10 Pro [tienda.](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) En ese sitio, vea los dispositivos recomendados para  su uso con el servicio expandiendo **Características** en el área Filtrar por y, a continuación, **seleccionando Escritorio administrado de Microsoft**. La validación de dispositivos garantiza que ofrecerán la experiencia de usuario que esperas.
 
 ## <a name="validate-devices"></a>Validar dispositivos
 

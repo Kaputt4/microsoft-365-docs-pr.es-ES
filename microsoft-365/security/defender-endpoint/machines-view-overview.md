@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4cf27d7d65df613969f46f05c6b5085a448675f2cae3a325f4308d9f72ba8c4c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c6a148c6ee332800a80e0ca9f3aea8403d2053b
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868013"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58360038"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Ver y organizar la lista de Microsoft Defender para dispositivos de punto de conexión
 
@@ -56,6 +56,14 @@ Durante el proceso de incorporación, la lista **de** dispositivos se rellena gr
 
 Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener una vista más centrada.
 
+### <a name="device-name"></a>Nombre del dispositivo
+
+Selecciona el nombre del dispositivo que te interesa investigar.
+
+### <a name="domain"></a>Dominio
+
+Seleccione el dominio que le interesa investigar.
+
 ### <a name="risk-level"></a>Nivel de riesgo
 
 El nivel de riesgo refleja la evaluación general del riesgo del dispositivo en función de una combinación de factores, incluidos los tipos y la gravedad de las alertas activas en el dispositivo. Resolver alertas activas, aprobar actividades de corrección y suprimir alertas posteriores puede reducir el nivel de riesgo.
@@ -66,49 +74,53 @@ El nivel de exposición refleja la exposición actual del dispositivo en funció
 
 Si el nivel de exposición indica "No hay datos disponibles", hay algunas razones por las que esto puede ser así:
 
-- El dispositivo dejó de informar durante más de 30 días. En ese caso, se considera inactivo y no se calcula la exposición
-- Sistema operativo de dispositivo no compatible: consulta [requisitos mínimos para Microsoft Defender para endpoint](minimum-requirements.md)
-- Dispositivo con agente obsoleto (muy poco probable)
+- El dispositivo dejó de informar durante más de 30 días. En ese caso, se considera inactivo y no se calcula la exposición.
+- El sistema operativo del dispositivo no es compatible: consulta [requisitos mínimos para Microsoft Defender para endpoint](minimum-requirements.md).
+- Dispositivo con agente obsoleto (poco probable).
 
 ### <a name="os-platform"></a>Plataforma del sistema operativo
 
 Seleccione solo las plataformas del sistema operativo que le interesa investigar.
+
+### <a name="windows-10-versions"></a>Windows 10 versiones anteriores
+
+Seleccione solo las Windows 10 que está interesado en investigar.
 
 ### <a name="health-state"></a>Estado
 
 Filtre por los siguientes estados de estado del dispositivo:
 
 - **Activo:** dispositivos que informan activamente de los datos del sensor al servicio.
-- **Inactivo:** dispositivos que han dejado de enviar señales por completo durante más de 7 días.
+- **Inactivo:** dispositivos que han dejado de enviar señales durante más de 7 días.
 - **Configuración errónea:** dispositivos que tienen comunicaciones deficientes con el servicio o que no pueden enviar datos del sensor. Los dispositivos mal configurados se pueden clasificar en:
   - Sin datos del sensor
   - Comunicaciones deficientes
 
   Para obtener más información sobre cómo solucionar problemas en dispositivos mal configurados, consulte [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
-### <a name="antivirus-status"></a>Estado del antivirus
+### <a name="onboarding-status"></a>Estado de incorporación
 
-Filtrar dispositivos por estado antivirus. Solo se aplica a dispositivos Windows 10 activo.
+El estado de incorporación indica si el dispositivo está incorporado actualmente a Microsoft Defender para Endpoint o no. Puede filtrar por los siguientes estados:
 
-- **Deshabilitado:** la protección contra & virus está desactivada.
-- **Not reporting:** la protección contra & amenazas de virus no está informando.
-- **No actualizado:** la protección contra & virus no está actualizada.
+- **Incorporado:** el punto de conexión se incorpora a Microsoft Defender para endpoint.
 
-Para obtener más información, [vea View the Threat & Vulnerability Management dashboard](tvm-dashboard-insights.md).
+- **Se puede incorporar:** el punto de conexión se descubrió en la red como un dispositivo compatible, pero no está incorporado actualmente. Microsoft recomienda encarecidamente la incorporación de estos dispositivos.
 
-### <a name="threat-mitigation-status"></a>Estado de mitigación de amenazas
+- **No compatible:** el punto de conexión se ha detectado en la red, pero Microsoft Defender no admite endpoint.
 
-Para ver los dispositivos que pueden verse afectados por una amenaza determinada, selecciona la amenaza en el menú desplegable y, a continuación, selecciona qué aspecto de vulnerabilidad debe mitigarse.
+- **Información insuficiente:** el sistema no pudo determinar la compatibilidad del dispositivo.
 
-Para obtener más información sobre determinadas amenazas, consulte [Análisis de amenazas.](threat-analytics.md) Para obtener información sobre mitigación, [vea Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md).
+### <a name="last-device-update"></a>Última actualización del dispositivo
 
-### <a name="windows-10-version"></a>Versión de Windows 10
+Filtra la vista en función de cuándo se actualizó por última vez el dispositivo.
 
-Seleccione solo las Windows 10 que está interesado en investigar.
+### <a name="first-seen"></a>Primera vista
 
-### <a name="tags--groups"></a>Etiquetas & grupos
+Filtra la vista en función del momento en que el dispositivo se vio por primera vez en la red o cuando el sensor de Microsoft Defender para endpoints lo informó por primera vez.
 
-Filtre la lista en función de la agrupación y el etiquetado que haya agregado a dispositivos individuales. Consulta [Crear y administrar etiquetas de dispositivo](machine-tags.md) y Crear y administrar grupos de [dispositivos.](machine-groups.md)
+### <a name="tags"></a>Etiquetas
+
+Filtre la lista en función de la agrupación y el etiquetado que haya agregado a dispositivos individuales. Consulta [Crear y administrar etiquetas de dispositivo.](machine-tags.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

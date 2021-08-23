@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: e17c343dbda957144d227c1c82ee83356147a6f80402846c62e5fb75342eb908
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f61c05608bfb9f3b528cf0a717dbe9effbaf31a5
+ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883552"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58418004"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Para identidad y más allá: un punto de vista de un arquitecto
 
@@ -133,7 +133,7 @@ La combinación de todas estas señales permite directivas dinámicas como estas
 Si está de acuerdo con esta definición expandida de autorización, debe implementar soluciones adicionales. Las soluciones que implemente dependerán de la dinámica que desee que sea la directiva y de las amenazas que desee priorizar. Algunos ejemplos de estos sistemas son:
 
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/)
-- [Microsoft Defender para la identidad](/azure-advanced-threat-protection/)
+- [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
@@ -314,7 +314,7 @@ Es importante comprender las relaciones entre varios servicios del mismo inquili
 2. Enviar cada uno de ellos a través de un proceso de aprobación (Power Platform)
 3. Después de que se aprueben todos los componentes, ensamble estos en una API de Microsoft [Graph](/azure/active-directory/develop/microsoft-graph-intro) de entrega unificada (Azure) es su mejor amigo para estos.  No es imposible, pero es mucho más complejo diseñar una solución que abarca [varios inquilinos.](/azure/active-directory/develop/single-and-multi-tenant-apps)
 
-Azure Role-Based Access Control (RBAC) permite una administración de acceso detallada para Azure. Con RBAC, puede administrar el acceso a los recursos concediendo a los usuarios el menor número de permisos necesarios para realizar sus trabajos. Los detalles están fuera del ámbito de este documento, pero para obtener más información sobre RBAC, vea ¿Qué es el control de acceso basado en roles [(RBAC) en Azure?](/azure/role-based-access-control/overview) RBAC es importante, pero solo una parte de las consideraciones de gobierno para Azure. [Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/) es un excelente punto de partida para obtener más información. Me gusta cómo mi amigo, Andrés Ravinet guía a los clientes paso a paso a través de varios componentes para decidir sobre el enfoque. La vista de alto nivel para varios elementos (no es tan buena como el proceso para llegar al modelo de cliente real) es algo así:
+Azure Role-Based Access Control (RBAC) permite una administración de acceso detallada para Azure. Con RBAC, puede administrar el acceso a los recursos concediendo a los usuarios el menor número de permisos necesarios para realizar sus trabajos. Los detalles están fuera del ámbito de este documento, pero para obtener más información sobre RBAC, vea ¿Qué es el control de acceso basado en roles [(RBAC) en Azure?](/azure/role-based-access-control/overview) RBAC es importante, pero solo una parte de las consideraciones de gobierno para Azure. [Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/) es un excelente punto de partida para obtener más información. Me gusta cómo mi amigo, [Andrés Ravinet](https://www.linkedin.com/in/andres-ravinet/), guía a los clientes paso a paso a través de varios componentes para decidir sobre el enfoque. La vista de alto nivel para varios elementos (no es tan buena como el proceso para llegar al modelo de cliente real) es algo así:
 
 ![Vista de alto nivel de componentes de Azure para administración delegada](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 

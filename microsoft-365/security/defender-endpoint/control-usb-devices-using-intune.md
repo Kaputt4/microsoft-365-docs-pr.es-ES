@@ -13,12 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 44d00bfd073b41f608a26106488e38c88d59bbecc4747c401fc70690bef1a110
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ROBOTS: NOINDEX
+ms.openlocfilehash: 05123ecb52f38e87c8a2c5360d17b39605a44cfd
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53903948"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399760"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint
 
@@ -48,7 +49,7 @@ Microsoft recomienda un enfoque por capas para proteger los medios extraíbles y
 Puedes ver eventos conectados plug and play en La búsqueda avanzada de Microsoft Defender para endpoint para identificar actividad de uso sospechosa o realizar investigaciones internas.
 Para obtener ejemplos de consultas de búsqueda avanzada de Defender for Endpoint, consulta las consultas de búsqueda de [Microsoft Defender para endpoints GitHub repositorio](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries).
 
-Las plantillas de Power BI de informes de ejemplo están disponibles para Microsoft Defender para endpoint que puede usar para consultas de búsqueda avanzadas. Con estas plantillas de ejemplo, incluida una para el control de dispositivos, puedes integrar la potencia de la búsqueda avanzada en Power BI. Vea el [repositorio GitHub de plantillas de PowerBI](https://github.com/microsoft/MDATP-PowerBI-Templates) para obtener más información. Consulte [Create custom reports using Power BI](/microsoft-365/security/defender-endpoint/api-power-bi) para obtener más información sobre Power BI integración.
+Las plantillas de Power BI de informes de ejemplo están disponibles para Microsoft Defender para endpoint que puede usar para consultas de búsqueda avanzadas. Con estas plantillas de ejemplo, incluida una para el control de dispositivos, puedes integrar la potencia de la búsqueda avanzada en Power BI. Vea el [repositorio GitHub para obtener Power BI plantillas para](https://github.com/microsoft/MDATP-PowerBI-Templates) obtener más información. Consulte [Create custom reports using Power BI](/microsoft-365/security/defender-endpoint/api-power-bi) para obtener más información sobre Power BI integración.
 
 ## <a name="allow-or-block-removable-devices"></a>Permitir o bloquear dispositivos extraíbles
 En la tabla siguiente se describen las formas en que Microsoft Defender para endpoint puede permitir o bloquear dispositivos extraíbles en función de la configuración granular.
@@ -66,7 +67,6 @@ En la tabla siguiente se describen las formas en que Microsoft Defender para end
 |[Permitir la instalación y el uso de periféricos aprobados específicamente con los IDs de instancia del dispositivo que coincidan](#allow-installation-and-usage-of-specifically-approved-peripherals-with-matching-device-instance-ids)|Solo puedes instalar y usar periféricos aprobados que coincidan con cualquiera de estos IDs de instancia de dispositivo.|
 |[Impedir la instalación y el uso de periféricos específicamente prohibidos con los IDs de instancia del dispositivo que coincidan](#prevent-installation-and-usage-of-specifically-prohibited-peripherals-with-matching-device-instance-ids)|No puedes instalar ni usar periféricos prohibidos que coincidan con ninguno de estos IDs de instancia de dispositivo.|
 |[Limitar servicios que usan Bluetooth](#limit-services-that-use-bluetooth)|Puede limitar los servicios que pueden usar Bluetooth.|
-|[Usar Microsoft Defender para la configuración de línea base de punto de conexión](#use-microsoft-defender-for-endpoint-baseline-settings)|Puede establecer la configuración recomendada para ATP mediante la línea base de seguridad defender para puntos de conexión.|
 |
 
 ### <a name="restrict-usb-drives-and-other-peripherals"></a>Restringir unidades USB y otros periféricos
@@ -238,12 +238,6 @@ Con Intune, puede limitar los servicios que pueden usar Bluetooth a través de [
 > [!div class="mx-imgBorder"]
 > ![captura de pantalla de Bluetooth de configuración](images/bluetooth.png)
 
-### <a name="use-microsoft-defender-for-endpoint-baseline-settings"></a>Usar Microsoft Defender para la configuración de línea base de punto de conexión
-
-La configuración de línea base de Microsoft Defender para extremo representa la configuración recomendada para la protección contra amenazas. Las opciones de configuración para la línea base se encuentran en la página editar perfil de las opciones de configuración.
-
-> [!div class="mx-imgBorder"]
-> ![Líneas base en MEM](images/baselines.png)
 
 ## <a name="prevent-threats-from-removable-storage"></a>Impedir que las amenazas quiten el almacenamiento
   
@@ -361,7 +355,7 @@ Para obtener información sobre eventos de búsqueda avanzada relacionados con e
 
 ## <a name="respond-to-threats"></a>Responder a amenazas
 
-Puede crear alertas personalizadas y acciones de respuesta automáticas con las reglas de detección personalizadas de punto de conexión [de Microsoft Defender.](/microsoft-365/security/defender-endpoint/custom-detection-rules) Las acciones de respuesta dentro de la detección personalizada cubren tanto las acciones de nivel de máquina como de archivo. También puede crear alertas y acciones de respuesta automáticas mediante [PowerApps](https://powerapps.microsoft.com/) [y Flow](https://flow.microsoft.com/) con el conector de Microsoft Defender [para endpoint](/connectors/wdatp/). El conector admite acciones para la investigación, el examen de amenazas y la restricción de aplicaciones en ejecución. Es uno de los más de 200 conectores predefinidos, incluidos Outlook, Teams, Slack y mucho más. También se pueden crear conectores personalizados. Consulte [Conectores](/connectors/) para obtener más información sobre los conectores.
+Puede crear alertas personalizadas y acciones de respuesta automáticas con las reglas de detección personalizadas de punto de conexión [de Microsoft Defender.](/microsoft-365/security/defender-endpoint/custom-detection-rules) Las acciones de respuesta dentro de la detección personalizada cubren tanto las acciones de nivel de máquina como de archivo. También puede crear alertas y acciones de respuesta automática mediante [Power Apps](https://powerapps.microsoft.com/) y [Flow](https://flow.microsoft.com/) con el conector de Microsoft Defender [para endpoint](/connectors/wdatp/). El conector admite acciones para la investigación, el examen de amenazas y la restricción de aplicaciones en ejecución. Es uno de los más de 200 conectores predefinidos, incluidos Outlook, Teams, Slack y mucho más. También se pueden crear conectores personalizados. Consulte [Conectores](/connectors/) para obtener más información sobre los conectores.
 
 Por ejemplo, con cualquiera de los dos métodos, puedes hacer que el Antivirus de Microsoft Defender se ejecute automáticamente cuando un dispositivo USB se monta en una máquina.
 
@@ -371,6 +365,6 @@ Por ejemplo, con cualquiera de los dos métodos, puedes hacer que el Antivirus d
 - [Defender/AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 - [CSP de directiva/DeviceInstallation](/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [Realizar un examen personalizado de un dispositivo extraíble](/samples/browse/?redirectedfrom=TechNet-Gallery)
-- [Plantilla PowerBI de control de dispositivos para informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates)
+- [Plantilla de control Power BI dispositivo para informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates)
 - [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) 
 - [Windows Information Protection](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md)

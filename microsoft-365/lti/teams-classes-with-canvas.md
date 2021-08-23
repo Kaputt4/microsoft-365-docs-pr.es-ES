@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrar Microsoft Teams clases con Canvas
-ms.openlocfilehash: 4ee5be86498c5a9eed3ebb47a7857b7cc401f00d
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 09c0033f6deca5d941dee5003391b1a0b171a0ee
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255566"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387025"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Usar Microsoft Teams clases con Canvas
 
@@ -30,7 +30,7 @@ Microsoft Teams clases es una aplicación Learning Tools Interoperability (LTI) 
 > La clase actual Teams LTI solo admite la sincronización de usuarios de Canvas con Microsoft Azure Active Directory (AAD) en un ámbito limitado. 
 > - El inquilino debe tener una licencia de Microsoft Education.
 > - Solo se puede usar un único espacio empresarial de Microsoft para asignar usuarios entre Canvas y Microsoft.
-> - Tendrá que desactivar SDS antes de usar la clase Teams LTI para evitar la duplicación de grupos.
+> - Tendrá que desactivar School Data Sync (SDS) antes de usar la clase Teams LTI para evitar la duplicación de grupos.
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administrador
 
@@ -83,7 +83,7 @@ Como administrador de Canvas, tendrás que agregar la aplicación LTI de Microso
 
    Observarás el nombre de la aplicación Microsoft Teams clases LTI para el identificador de cliente para confirmación.
 
-5. Seleccione **Instalar**.
+5. Haga clic en **Instalar**.
 
    La Microsoft Teams clases de aplicación LTI se agregará a la lista de aplicaciones externas.
    

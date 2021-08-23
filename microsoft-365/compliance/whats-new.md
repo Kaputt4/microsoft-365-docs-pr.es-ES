@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c24108d7ccc140fecac9c6a7444a697d1526e95c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ebb491ccd84e328ea3d4d1151a2c141ca3a69168
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58244005"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450073"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -286,7 +286,6 @@ Estos son algunos de los cambios realizados en Microsoft 365 de cumplimiento nor
 El contenido se agregó o actualizó en los temas siguientes:
 
 - [Introducción al explorador de contenido](/microsoft-365/compliance/data-classification-content-explorer)
-- [Notas de la versión de clasificación de datos](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
 

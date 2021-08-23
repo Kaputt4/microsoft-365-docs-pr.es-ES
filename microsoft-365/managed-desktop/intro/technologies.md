@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9cd36b1d536ae6bcfe22fdc6088b3dd0de87184ee085b60bb7e5f1423a536ab8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 89a495d5832d1a16e062c7df8e31ea3a3333bf00
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863924"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399712"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías del Escritorio administrado de Microsoft
 
@@ -35,7 +35,7 @@ Aplicaciones Microsoft 365 para empresas (64 bits) | Estas Office se enviarán c
 OneDrive |Azure Active Directory El inicio de sesión único está habilitado para los usuarios cuando inician sesión por primera vez en OneDrive.<br><br>Se incluye la redirección de carpetas conocidas para las carpetas "Escritorio", "Documento" e "Imágenes"; habilitado y configurado por Escritorio administrado de Microsoft.
 Aplicaciones de la Tienda | Microsoft Sway y Power BI se envían con el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
 Aplicaciones de Win32 | Teams no se incluye con el dispositivo, sino que Microsoft lo empaqueta y proporciona para Escritorio administrado de Microsoft dispositivos. El cliente de Azure Information Protection no se incluye con el dispositivo, pero puede empaquetar para su implementación.
-Aplicaciones web | Yammer, Office en un explorador, Delve, Flow, StaffHub, PowerApps y Planner no se envían con el dispositivo. Los usuarios pueden acceder a la versión web de estas aplicaciones con un explorador.
+Aplicaciones web | Yammer, Office en un explorador, Delve, Flow, StaffHub, Power Apps y Planner no se envían con el dispositivo. Los usuarios pueden acceder a la versión web de estas aplicaciones con un explorador.
 
 ## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Enterprise E5 o E3 con Microsoft Defender para endpoint
 
