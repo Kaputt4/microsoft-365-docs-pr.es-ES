@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c9cbcd9ef9e4557e30409cd471d80cbcca5a2947438ef988c7892c18eddd8a2d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3037225e2d628345b672bfae145bcba570cbbc23
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890987"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364630"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Experiencia de primera ejecución con piloto automático y la página de estado de inscripción
 
@@ -68,7 +68,7 @@ Escritorio administrado de Microsoft esta configuración para la experiencia de 
 |Permitir a los usuarios restablecer el dispositivo si se produce un error de instalación|Sí|
 |Permitir a los usuarios usar el dispositivo si se produce un error de instalación|Sí|
 |Bloquear el uso del dispositivo hasta que se instalen estas aplicaciones necesarias si están asignadas al usuario o dispositivo.|Lugar de trabajo moderno: corrección de tiempo|Modern Workplace: biblioteca de cliente|
-|
+
 
 La experiencia de la página de estado de inscripción se produce en tres fases. Para obtener más información, vea [Enrollment Status Page tracking information](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
 
@@ -132,3 +132,17 @@ Es posible que quieras solicitar una plantilla de nombre de dispositivo diferent
 - Mantenga el tamaño total de todas las aplicaciones colectivamente por debajo de 1 GB para evitar tiempos de espera durante la fase de instalación de la aplicación.
 - Lo ideal es que las aplicaciones no tengan dependencias. Si tienes aplicaciones que deben *tener* dependencias, asegúrate de configurarlas, probarlas y validarlas como parte de la evaluación de ESP.
 - Microsoft Teams puede incluirse en ESP.
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
+
+1. Portal [de administración de Access](access-admin-portal.md).
+1. [Agregar y comprobar contactos de administrador en el portal de administración.](add-admin-contacts.md)
+1. [Ajustar la configuración después de la inscripción](conditional-access.md).
+1. Implemente y asigne [Portal de empresa de Intune](company-portal.md).
+1. [Asignar licencias](assign-licenses.md).
+1. [Implementar aplicaciones](deploy-apps.md).
+1. [Configurar dispositivos](set-up-devices.md).
+1. Configure la experiencia de primera ejecución con Autopilot y la página Estado de inscripción (en este artículo).
+1. [Habilitar las características de soporte técnico del usuario](enable-support.md).
+1. [Prepare a los usuarios para usar dispositivos](get-started-devices.md).
+1. [Introducción al control de aplicaciones](get-started-app-control.md).

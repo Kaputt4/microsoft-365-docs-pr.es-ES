@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre las distintas formas de notificar mensajes y archivos buenos y malos a Microsoft para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b257033c4dc5ebe8d6b28c315484cdccf48b5d6581d23c038433f4fc21424aa4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 898fd42e687ec9d5776c1791ed353937921af4ff
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56885424"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400288"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Notificar mensajes y archivos a Microsoft
 
@@ -41,7 +41,7 @@ En Microsoft 365 organizaciones con buzones de correo en organizaciones de Excha
 
 |Método|Descripción|
 |---|---|
-|[Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md)|El método de informes recomendado para administradores de organizaciones con Exchange Online buzones de correo (no disponible en EOP independiente).|
+|[Usar el portal de envíos para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md)|El método de informes recomendado para administradores de organizaciones con Exchange Online buzones de correo (no disponible en EOP independiente).|
 |[Habilitar el mensaje de informe o los complementos de suplantación de identidad de informes](enable-the-report-message-add-in.md)|Funciona con Outlook y Outlook en la Web (anteriormente conocido como Outlook Web App). <p> En función de la suscripción, los mensajes que los usuarios notificaron con los complementos están disponibles [](view-email-security-reports.md#user-reported-messages-report)en el portal de envíos de administración, los [resultados](admin-submission.md)de investigación y respuesta [automatizadas (AIR),](air-view-investigation-results.md)el informe de mensajes notificados por el usuario y el [Explorador](threat-explorer-views.md#email--submissions). <p> Puede configurar los mensajes notificados para que se copien o redirijan a un buzón que especifique. Para obtener más información, vea [Directivas de envío de usuarios](user-submission.md).
 |[Informar de falsos positivos y falsos negativos en Outlook](report-false-positives-and-false-negatives.md)|Enviar falsos positivos (correo electrónico bueno bloqueado o enviado a la carpeta de correo no deseado) y falsos negativos (correo electrónico no deseado o suplantación de identidad que se entregó a la bandeja de entrada) a Exchange Online Protection (EOP) mediante la característica Mensaje de informe.|
 |[Enviar mensajes manualmente a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Envíe manualmente mensajes adjuntos a direcciones de correo electrónico específicas de Microsoft para correo no deseado, no correo no deseado y suplantación de identidad.|

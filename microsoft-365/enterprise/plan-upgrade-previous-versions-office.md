@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene recursos para los usuarios que usan Office 2007 o Office 2010 para ayudarles a planear su actualización.
-ms.openlocfilehash: 1fbbf13f267f191f567f413dd777d12e43abc096
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 1e4379510ba6c4cf36200a6f49f56aa11a151140
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356905"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58378040"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planear la actualización desde servidores y clientes de Office 2007 o 2010
 
@@ -47,7 +47,7 @@ Microsoft 365 es la forma de transformar digitalmente su negocio con la mejora c
 |Recurso|Descripción|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Obtenga información sobre las versiones de Microsoft 365.|
-|[Microsoft 365 para empresas](../business/index.yml)|Obtenga información detallada sobre la versión de Microsoft 365 para pequeñas y medianas empresas.|
+|[Microsoft 365 para empresas](../admin/index.yml)|Obtenga información detallada sobre la versión de Microsoft 365 para pequeñas y medianas empresas.|
 |[Microsoft 365 documentación de Microsoft 365 educación](/microsoft-365/education/)|Obtenga información detallada sobre la versión de Microsoft 365 para organizaciones educativas.|
 |[Microsoft 365 para obtener Enterprise documentación](./index.yml)|Obtenga información detallada sobre la versión de Microsoft 365 para organizaciones empresariales.|
 |||
@@ -107,7 +107,7 @@ Si está usando Office 2007 o Office 2010 en casa, tenga en cuenta las siguiente
 
 Si decides no actualizar ahora, las aplicaciones Office seguirán funcionando según las [escalas de tiempo](https://support.microsoft.com/lifecycle/search/13615). Sin embargo, para obtener actualizaciones de seguridad o características nuevas y mejoradas, debe actualizar.
    
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Actualizar los clientes y servidores de Office 2007](upgrade-from-office-2007-servers-and-products.md)
 - [Actualizar los clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)

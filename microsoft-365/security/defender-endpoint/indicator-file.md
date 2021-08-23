@@ -17,18 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0c3f4dea703a5d146cab9382be3e991bf8c50bd545ee26ac2781d9542a1f5f90
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f0475d6adc1f97255665e3a32fe05e7d88c41b5
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894256"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400184"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -78,16 +79,62 @@ Una de las opciones al realizar acciones [de respuesta en un archivo](respond-
 
 Los archivos bloqueados automáticamente por un indicador no aparecerán en el Centro de acciones del archivo, pero las alertas seguirán estando visibles en la cola de alertas.
 
+## <a name="private-preview-alerting-on-file-blocking-actions"></a>Vista previa privada: alertar sobre acciones de bloqueo de archivos
+
+> [!IMPORTANT]
+> La información de esta sección (**Public Preview for Automated investigation and remediation engine**) se relaciona con el producto de versión preliminar que podría modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+
+Las acciones actuales admitidas para el IOC de archivos son permitir, auditar y bloquear y corregir.
+Después de elegir bloquear un archivo, puede elegir si es necesario activar una alerta. De este modo, podrá controlar el número de alertas que se van a recibir en los equipos de operaciones de seguridad y asegurarse de que solo se generarán las alertas necesarias.
+En Microsoft 365 Defender, vaya a Configuración > Endpoints > Indicators > add new File hash Choose to Block and remediate the file Choose if to Generate an alert on the file block event and define the alerts settings:
+
+- El título de alerta
+- Gravedad de la alerta
+- Categoría
+- Descripción
+- Acciones recomendadas
+
+![Configuración de alertas para indicadores de archivo](images/indicators-generate-alert.png)
+
 > [!IMPORTANT]
 >
 >- Normalmente, los bloques de archivos se aplican y se quitan en un par de minutos, pero pueden tardar más de 30 minutos.
 >
 >- Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro. Una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo SHA-1, que ganará una directiva de IoC de hash de archivo MD5 si los tipos hash definen el mismo archivo. Esto siempre es así independientemente del grupo de dispositivos.
->  En todos los demás casos, si las directivas de IoC de archivos en conflicto con el mismo destino de aplicación se aplican a todos los dispositivos y al grupo del dispositivo, en el caso de un dispositivo, la directiva del grupo de dispositivos ganará.
 >
-> - Si la directiva de grupo EnableFileHashComputation está deshabilitada, se reduce la precisión de bloqueo del archivo IoC. Sin embargo, la `EnableFileHashComputation` habilitación puede afectar al rendimiento del dispositivo. Por ejemplo, copiar archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN, puede tener un efecto en el rendimiento del dispositivo.
+>- En todos los demás casos, si las directivas de IoC de archivos en conflicto con el mismo destino de aplicación se aplican a todos los dispositivos y al grupo del dispositivo, en el caso de un dispositivo, la directiva del grupo de dispositivos ganará.
 >
->   Para obtener más información acerca de la directiva de grupo EnableFileHashComputation, vea [Defender CSP](/windows/client-management/mdm/defender-csp)
+>- Si la directiva de grupo EnableFileHashComputation está deshabilitada, se reduce la precisión de bloqueo del archivo IoC. Sin embargo, la `EnableFileHashComputation` habilitación puede afectar al rendimiento del dispositivo. Por ejemplo, copiar archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN, puede tener un efecto en el rendimiento del dispositivo.
+>
+>   Para obtener más información acerca de la directiva de grupo EnableFileHashComputation, vea [Defender CSP](/windows/client-management/mdm/defender-csp).
+
+## <a name="private-preview-advanced-hunting-capabilities"></a>Vista previa privada: capacidades avanzadas de búsqueda
+
+> [!IMPORTANT]
+> La información de esta sección (**Public Preview for Automated investigation and remediation engine**) se relaciona con el producto de versión preliminar que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+
+Puede consultar la actividad de acción de respuesta en la búsqueda previa. A continuación se muestra una consulta de búsqueda anticipada de ejemplo:
+
+```console
+search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEvents, DeviceNetworkEvents, DeviceImageLoadEvents, DeviceLogonEvents)
+Timestamp > ago(30d)
+| where AdditionalFields contains "EUS:Win32/CustomEnterpriseBlock!cl"
+```
+
+Para obtener más información acerca de la búsqueda avanzada, vea [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
+
+A continuación se muestran nombres de subprocesos adicionales que se pueden usar en la consulta de ejemplo de arriba:
+
+Archivos:
+
+- EUS:Win32/CustomEnterpriseBlock!cl
+- EUS:Win32/CustomEnterpriseNoAlertBlock!cl
+
+Certificados:
+
+- EUS:Win32/CustomCertEnterpriseBlock!cl  
+
+La actividad de acción de respuesta también se puede ver en la escala de tiempo del dispositivo.
 
 ## <a name="policy-conflict-handling"></a>Control de conflictos de directivas
 
@@ -102,6 +149,9 @@ Los conflictos de administración de directivas de Cert y File IoC seguirán el 
 
 Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro (es decir, más largo). Por ejemplo, una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo MD5 si ambos tipos de hash definen el mismo archivo.
 
+> [!WARNING]
+> El control de conflictos de directivas para archivos y certificados difiere del control de conflictos de directivas para dominios/DIRECCIONES URL/direcciones IP.
+
 Las características de aplicación vulnerables de bloqueo de amenazas y administración de vulnerabilidades usan el archivo IoCs para la aplicación y seguirán el orden de control de conflictos anterior.
 
 ### <a name="examples"></a>Ejemplos
@@ -114,7 +164,7 @@ Las características de aplicación vulnerables de bloqueo de amenazas y adminis
 |Control de aplicaciones de Windows Defender|Bloquear|Permitir|Bloquear
 |Antivirus de Microsoft Defender exclusión|Permitir|Bloquear|Permitir
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

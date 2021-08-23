@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 779aac99a71a15fc204ffc10091459d9a05a0ee0e21166bb1404ad4ad6863c83
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e60abb0e8d3cd4d5124c5e82bf4aa0ce8bb1b08f
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863947"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364534"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Ajustar la configuración después de la inscripción
 
@@ -55,11 +55,14 @@ En esta consulta, reemplace @TENANT por el nombre de dominio del espacio empresa
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
 
-1. [Agregar y verificar los contactos de administración en el portal de administración ](add-admin-contacts.md)
-2. Ajustar la configuración después de la inscripción (este artículo)
-3. [Asignar licencias](assign-licenses.md)
-4. [Desplegar el portal de empresa de Intune](company-portal.md)
-5. [Habilitar Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Instalar dispositivos](set-up-devices.md)
-7. [Prepare a los usuarios para que usen los dispositivos](get-started-devices.md)
-8. [Implementar aplicaciones](deploy-apps.md)
+1. Portal [de administración de Access](access-admin-portal.md).
+1. [Agregar y comprobar contactos de administrador en el portal de administración.](add-admin-contacts.md)
+1. Ajuste la configuración después de la inscripción (en este artículo).
+1. Implemente y asigne [Portal de empresa de Intune](company-portal.md).
+1. [Asignar licencias](assign-licenses.md).
+1. [Implementar aplicaciones](deploy-apps.md).
+1. [Configurar dispositivos](set-up-devices.md).
+1. Configurar la [experiencia de primera ejecución con Autopilot y la página Estado de inscripción](esp-first-run.md).
+1. [Habilitar las características de soporte técnico del usuario](enable-support.md).
+1. [Prepare a los usuarios para usar dispositivos](get-started-devices.md).
+1. [Introducción al control de aplicaciones](get-started-app-control.md).

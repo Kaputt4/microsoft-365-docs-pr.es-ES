@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Los administradores pueden obtener información sobre cómo administrar SharePoint y OneDrive en un entorno multige geográfico.
-ms.openlocfilehash: e1c608425c25c018eddebe14023537b2739694d110d3683829c861dd96a61c73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5089a63f4c4f3406c146188151a145cf4b6aa7f2
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795211"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400132"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administración de un entorno de Multi-Geo
 
@@ -58,9 +58,9 @@ Las directivas DLP se sincronizan automáticamente en función de su aplicabilid
 
 La implementación de directivas de prevención de pérdida de datos e Information Protection a todos los usuarios de una ubicación geográfica no es una opción disponible en la interfaz de usuario. Debe seleccionar las cuentas a las que quiere aplicar la directiva o aplicar la directiva globalmente a todas las cuentas.
 
-## <a name="microsoft-powerapps"></a>Microsoft PowerApps
+## <a name="microsoft-power-apps"></a>Microsoft Power Apps
 
-PowerApps creado para la ubicación satélite usará el punto final en la ubicación central del espacio empresarial. Microsoft PowerApps no es un servicio multigeográfico. 
+Power Apps creado para la ubicación satélite usará el punto final ubicado en la ubicación central del espacio empresarial. Microsoft Power Apps no es un servicio Multi-Geo. 
 
 ## <a name="power-automate"></a>Power Automate
 

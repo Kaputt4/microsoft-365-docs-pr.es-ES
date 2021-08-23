@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: d65f6f0aa2d1d4d4017ffa768102be5b3d25cfb9e5ad08f167f98b87651fcfbc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ead7dd16eb69bccfe556872f278b20f4079caa45
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880019"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392170"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -44,6 +44,10 @@ Antes de empezar y crear directivas de administración de riesgos internas, es i
 Proteger la privacidad de los usuarios que tienen coincidencias de directivas es importante y puede ayudar a promover la objetividad en las revisiones de análisis e investigaciones de datos de alertas de riesgos internos. Para los usuarios con una coincidencia de directiva de riesgo de insider, puede elegir una de las siguientes opciones:
 
 - **Mostrar versiones anónimas** de nombres de usuario: los nombres de los usuarios se anonimizan para impedir que administradores, investigadores de datos y revisores vean quién está asociado con alertas de directiva. Por ejemplo, el usuario “Grace Taylor” aparecería con un pseudónimo aleatorizado, como “AnonIS8-988” en todas las áreas relacionadas con la experiencia de administración de riesgos internos. Al elegir esta configuración, se anonimizan todos los usuarios con coincidencias de directivas actuales y pasadas, y se aplica a todas las directivas. La información del perfil de usuario en la alerta de riesgo insider y los detalles del caso no estarán disponibles cuando se elija esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta configuración, se mostrarán nombres de usuario para todos los usuarios que tengan coincidencias de directiva actuales o pasadas.
+
+    >[!IMPORTANT]
+    >Para mantener la integridad referencial entre varios usuarios con alertas y casos de administración de riesgos de insider en otros sistemas, la anonimización de nombres de usuario no se conserva para las alertas exportadas. Las alertas exportadas mostrarán nombres de usuario para cada alerta.
+
 - **No mostrar versiones anónimas de** nombres de usuario: los nombres de usuario se muestran para todas las coincidencias de directiva actuales y pasadas para alertas y casos. La información de perfil de usuario (nombre, título, alias y organización o departamento) se muestra para el usuario para todas las alertas y casos de administración de riesgos de insider.
 
 ![Configuración de privacidad de la administración de riesgos insider](../media/insider-risk-settings-privacy.png)
@@ -225,6 +229,9 @@ Para cada una de las siguientes opciones de configuración de dominio, puede esp
 
 La información de alertas de administración de riesgos de Insider se puede exportar a los servicios de administración de eventos y de información de seguridad (SIEM) mediante el esquema de la API de Office 365 [actividad de administración.](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema) Puede usar las API de Office 365 actividad de administración para exportar información de alerta a otras aplicaciones que su organización puede usar para administrar o agregar información de riesgo de información interna.
 
+>[!IMPORTANT]
+>Para mantener la integridad referencial entre varios usuarios con alertas y casos de administración de riesgos de insider en otros sistemas, la anonimización de nombres de usuario no se conserva para las alertas exportadas. Las alertas exportadas mostrarán nombres de usuario para cada alerta.
+
 Para usar las API para revisar la información de alerta de riesgo de insider:
 
 1. Habilite la Office 365 api de actividad de administración en la administración de riesgos de **Insider**  >  **Configuración**  >  **exportar alertas**. De forma predeterminada, esta configuración está deshabilitada para la Microsoft 365 organización.
@@ -242,11 +249,11 @@ Los siguientes campos y valores se exportan para alertas de administración de r
 | AlertType | El tipo de alerta es *Custom*.  |
 | AlertId | GUID de la alerta. Las alertas de administración de riesgos de Insider son mutables. A medida que cambia el estado de alerta, se genera un nuevo registro con el mismo AlertID. Este AlertID se puede usar para correlacionar las actualizaciones de una alerta. |
 | Categoría | La categoría de la alerta *es InsiderRiskManagement*. Esta categoría se puede usar para distinguir de estas alertas de otras alertas de seguridad & cumplimiento. |
-| Comentarios | Comentarios predeterminados para la alerta. Los valores *son Nueva alerta* (registrada cuando se crea una alerta) y Alerta *actualizada* (registrada cuando hay una actualización de una alerta). Use alertID para correlacionar las actualizaciones de una alerta. |
+| Comments | Comentarios predeterminados para la alerta. Los valores *son Nueva alerta* (registrada cuando se crea una alerta) y Alerta *actualizada* (registrada cuando hay una actualización de una alerta). Use alertID para correlacionar las actualizaciones de una alerta. |
 | Datos | Los datos de la alerta incluyen el identificador de usuario único, el nombre principal del usuario y la fecha y hora (UTC) cuando el usuario se desencadenó en una directiva. |
 | Nombre | Nombre de la directiva para la directiva de administración de riesgos insider que generó la alerta. |
 | PolicyId | GUID de la directiva de administración de riesgos insider que desencadenó la alerta. |
-| Severity | Gravedad de la alerta. Los valores *son High,* *Medium* o *Low*. |
+| Gravedad | Gravedad de la alerta. Los valores *son High,* *Medium* o *Low*. |
 | Origen | El origen de la alerta. El valor es *Office 365 seguridad & cumplimiento*. |
 | Estado | El estado de la alerta. Los valores *son Active* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), Resolved ( *Resolved* in insider risk), Dismissed (  *Dismissed* in insider risk). |
 | Versión | La versión del esquema de alerta de seguridad y cumplimiento. |

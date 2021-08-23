@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La solución de solicitud de derechos de sujeto en administración de privacidad de Microsoft le ayuda a encontrar datos personales y colaborar en la revisión del contenido y la creación de informes.
-ms.openlocfilehash: 4db9c744468cd75fb09bc8ff45ef9f15d26684a7c2b446557914be9e26b45ccc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d8f8a636d5322666b3a60ce7310c8cd66ac89538
+ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807689"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380241"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Administrar solicitudes de derechos de sujeto en la administración de privacidad (versión preliminar)
 
@@ -149,7 +149,7 @@ Los clientes con Microsoft 365 que incluyan la administración de privacidad no 
 
 Las siguientes Power Automate se incluyen en la administración de privacidad:
 
-- **Cree un registro para casos de administración** de privacidad en ServiceNow: esta plantilla es para las organizaciones que desean usar su solución ServiceNow para realizar un seguimiento de los casos de solicitud de derechos de sujeto. Se le pedirá que escriba los detalles de la instancia de ServiceNow. Una vez conectado a la instancia, los administradores de solicitudes de derechos de sujeto podrán crear un registro para el caso en ServiceNow y personalizar lo que la plantilla rellenará en campos seleccionados si es necesario. Para obtener más información sobre el conector, vea la página de referencia [de ServiceNow Connector](/connectors/service-now/).
+- **Cree un registro para casos de administración** de privacidad en ServiceNow: esta plantilla es para las organizaciones que desean usar su solución ServiceNow para realizar un seguimiento de los casos de solicitud de derechos de sujeto. Se le pedirá que escriba los detalles de la instancia de ServiceNow, incluida una cuenta para conectarse a ServiceNow. Esta cuenta debe tener la capacidad de crear un incidente en ServiceNow y rellenar los detalles del incidente. Una vez conectado a la instancia, los administradores de solicitudes de derechos de sujeto podrán crear un registro para el caso en ServiceNow y personalizar lo que la plantilla rellenará en campos seleccionados si es necesario. Para obtener más información sobre el conector, vea la página de referencia [de ServiceNow Connector](/connectors/service-now/).
 - **Crear un aviso de calendario:** esta plantilla es para establecer avisos de fecha de vencimiento en el calendario de Outlook para solicitudes de derechos de sujeto. La herramienta rellenará determinados detalles de las propiedades de la solicitud, como el nombre de la solicitud y su fecha de vencimiento. Puede agregar detalles descriptivos, especificar destinatarios y ajustar otras configuraciones avanzadas.
 
 ### <a name="create-a-new-power-automate-flow-from-a-template"></a>Crear un nuevo flujo Power Automate de una plantilla

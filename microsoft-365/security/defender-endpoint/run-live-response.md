@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3edacef44021211d82b1b7d8c477683185c87f00
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f94e4d5e51b6a846a0439e3833a01d252c51bd0a
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247613"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392139"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
 
@@ -60,7 +60,9 @@ Ejecuta una secuencia de comandos de respuesta en directo en un dispositivo
 
 5.  Los comandos de respuesta activa no se pueden poner en cola y solo se pueden ejecutar uno a la vez. 
 
-6.  Se pueden ejecutar varios comandos de respuesta en directo en una sola llamada a la API. Sin embargo, cuando se produce un error en un comando de respuesta en directo, no se ejecutarán todas las acciones siguientes.
+6.  Si la máquina que intenta ejecutar esta llamada a la API se encuentra en un grupo de dispositivos RBAC que no tiene asignado un nivel de corrección automatizado, deberá habilitar al menos el nivel mínimo de corrección para un grupo de dispositivos determinado.
+
+7.  Se pueden ejecutar varios comandos de respuesta en directo en una sola llamada a la API. Sin embargo, cuando se produce un error en un comando de respuesta en directo, no se ejecutarán todas las acciones posteriores.
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
@@ -100,7 +102,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Autorización|String|Portador\<token>\. Obligatorio.|
+|Authorization|Cadena|Portador\<token>\. Obligatorio.|
 |Content-Type|string|application/json. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d3926521b86c12ad875b4fac6bf8b864987ff754
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: cddf687c4d269772b264711b7359bc338958164c
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246730"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392108"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -99,8 +99,9 @@ Independientemente de dónde empiece a revisar las alertas o el filtrado que con
 
 ### <a name="step-2-examine-the-message-details"></a>Paso 2: Examinar los detalles del mensaje
 
-Después de revisar los conceptos básicos del mensaje, es el momento de abrir un mensaje para examinar los detalles y determinar acciones de corrección adicionales. Seleccione un mensaje para ver la información completa del encabezado y el cuerpo del mensaje. Hay disponibles varias vistas diferentes para ayudarle a decidir el curso correcto de la acción:
+Después de revisar los conceptos básicos del mensaje, es el momento de abrir un mensaje para examinar los detalles y determinar acciones de corrección adicionales. Seleccione un mensaje para ver la información completa del encabezado y el cuerpo del mensaje. Hay varias opciones y vistas diferentes disponibles para ayudarle a decidir el curso de acción correcto:
 
+- **Datos** adjuntos: esta opción permite examinar los datos adjuntos modernos que coinciden con las condiciones de la directiva. El contenido de datos adjuntos modernos se extrae como texto y se puede ver en el panel de alertas pendientes de una directiva. Para obtener más información, vea la [referencia de característica de cumplimiento de comunicación](/microsoft-365/compliance/communication-compliance-feature-reference#supported-communication-types).
 - **Source:** esta vista es la vista de mensajes estándar que se ve habitualmente en la mayoría de las plataformas de mensajería basadas en web. La información del encabezado tiene formato en el estilo normal y el cuerpo del mensaje admite archivos gráficos y texto ajustado por palabras. Si el reconocimiento óptico de caracteres [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) está habilitado para la directiva, las imágenes que contienen texto impreso o escrito a mano que coinciden con la directiva condicional se ven como un elemento secundario para el mensaje asociado en esta vista.
 - **Texto** sin formato: la vista Texto muestra una vista de solo texto numerada de línea del mensaje e incluye resaltado de palabras clave en mensajes y datos adjuntos para términos de tipo de información confidencial o palabras clave coincidentes en la directiva de cumplimiento de comunicación asociada. El resaltado de palabras clave puede ayudarle a examinar rápidamente mensajes largos y datos adjuntos para el área de interés. En algunos casos, el texto resaltado puede estar solo en los datos adjuntos de los mensajes que coinciden con las condiciones de la directiva. El resaltado de palabras clave no es compatible con los términos identificados por clasificadores integrados asignados a una directiva. Los archivos incrustados no se muestran y la numeración de línea de esta vista es útil para hacer referencia a detalles pertinentes entre varios revisores.
 - **Anotación:** esta vista permite a los revisores agregar anotaciones directamente en el mensaje que se guardan en la vista del mensaje. Si [OCR está](communication-compliance-feature-reference.md#optical-character-recognition-ocr) habilitado para la directiva, las imágenes que contienen texto impreso o escrito a mano que coinciden con el condicional de la directiva se ven como un elemento secundario para el mensaje asociado en esta vista y pueden anotarse.

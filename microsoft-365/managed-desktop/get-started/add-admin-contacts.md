@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 99a2d6d5a5617c66143df2a4f91d80abdafd5f90005ad5401c86bcfd669dd1cc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0f7490ce1bbf1ef7666ce44f6101054d6acc7703
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819120"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364558"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Agregar y verificar los contactos de administración en el portal de administración
 
@@ -33,7 +33,7 @@ Empaquetado de aplicaciones | Solución de problemas de empaquetado de aplicacio
 Dispositivos | Estado del dispositivo, solución de problemas con Escritorio administrado de Microsoft dispositivos
 Seguridad | Solución de problemas de seguridad con Escritorio administrado de Microsoft dispositivos
 Servicio de ayuda de IT | en los casos en que nuestro personal de soporte técnico entrega los vales de usuario fuera de Escritorio administrado de Microsoft áreas de soporte técnico 
-Otro | Para problemas no cubiertos por otras áreas
+Otros | Para problemas no cubiertos por otras áreas
 
 **Quien elija para estos contactos debe tener el conocimiento y la autoridad para tomar decisiones para su entorno Escritorio administrado de Microsoft contactos.** Al incorporar el entorno Escritorio administrado de Microsoft, se le pedirá que agregue contactos para el departamento de soporte técnico y seguridad local. 
 
@@ -55,11 +55,14 @@ Los contactos de administrador son necesarios al [enviar una solicitud de soport
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
 
-1. Agregar y comprobar contactos de administrador en el portal de administración (este tema)
-2. [Ajustar el acceso condicional](conditional-access.md)
-3. [Asignar licencias](assign-licenses.md)
-4. [Instalar el Portal de empresa de Intune en dispositivos](company-portal.md)
-5. [Habilitar Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Configurar dispositivos del Escritorio administrado por Microsoft](set-up-devices.md)
-7. [Prepare a los usuarios para que usen los dispositivos](get-started-devices.md)
-8. [Implementar aplicaciones en dispositivos](deploy-apps.md)
+1. Portal [de administración de Access](access-admin-portal.md).
+1. Agregar y comprobar contactos de administrador en el portal de administración (en este artículo).
+1. [Ajustar la configuración después de la inscripción](conditional-access.md).
+1. Implemente y asigne [Portal de empresa de Intune](company-portal.md).
+1. [Asignar licencias](assign-licenses.md).
+1. [Implementar aplicaciones](deploy-apps.md).
+1. [Configurar dispositivos](set-up-devices.md).
+1. Configurar la [experiencia de primera ejecución con Autopilot y la página Estado de inscripción](esp-first-run.md).
+1. [Habilitar las características de soporte técnico del usuario](enable-support.md).
+1. [Prepare a los usuarios para usar dispositivos](get-started-devices.md).
+1. [Introducción al control de aplicaciones](get-started-app-control.md).

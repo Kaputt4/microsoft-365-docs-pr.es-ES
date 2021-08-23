@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3b1e74289046f7c04b77b25448af409966117fd9836f22dfdf813bdfd732b524
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 83681c2258a140c4e7bc4757e0d4f9f63c9991db
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890964"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364594"
 ---
 # <a name="get-started-with-app-control"></a>Introducción al control de aplicaciones
 
@@ -57,5 +57,17 @@ Si ya tiene al menos Escritorio administrado de Microsoft dispositivo en uso, si
 
 Siempre puede abrir otra solicitud de servicio para pausar o revertir parte de esta implementación en cualquier momento durante el lanzamiento.
 
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
 
+1. Portal [de administración de Access](access-admin-portal.md).
+1. [Agregar y comprobar contactos de administrador en el portal de administración.](add-admin-contacts.md)
+1. [Ajustar la configuración después de la inscripción](conditional-access.md).
+1. Implemente y asigne [Portal de empresa de Intune](company-portal.md).
+1. [Asignar licencias](assign-licenses.md).
+1. [Implementar aplicaciones](deploy-apps.md).
+1. [Configurar dispositivos](set-up-devices.md).
+1. Configurar la [experiencia de primera ejecución con Autopilot y la página Estado de inscripción](esp-first-run.md).
+1. [Habilitar las características de soporte técnico del usuario](enable-support.md).
+1. [Prepare a los usuarios para usar dispositivos](get-started-devices.md).
+1. Introducción al control de aplicaciones (en este artículo).
 

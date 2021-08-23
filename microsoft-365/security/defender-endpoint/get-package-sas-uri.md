@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f04fac6783f07918639e54b3f318b63ed32838fe
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 2a3a1817b1a56ed5c3b529179a6f5253677211de
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349289"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392122"
 ---
 # <a name="get-package-sas-uri-api"></a>Obtener api de URI de SAS del paquete
 
@@ -52,7 +52,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación|Machine.CollectForensics|'Recopilar forenses'
+Aplicación|Machine.Read.All|''Leer todos los perfiles de máquina''
+Aplicación|"Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
 Delegado (cuenta profesional o educativa)|Machine.CollectForensics|'Recopilar forenses'
 
 > [!NOTE]
@@ -71,7 +72,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 44b5fed8c99f9d2c738abfcdad99e1f4c020d3bca97591c3645ae3c8ac6c1029
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44bc897cd2ead4c6c8568e8dc5048cf0118e35fc
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869848"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364546"
 ---
 # <a name="access-the-admin-portal"></a>Acceso al portal de administración
 
@@ -83,3 +83,17 @@ Si necesita asignar uno o varios de los roles integrados a un grupo existente, s
 6. Busque el grupo que desee de **Usuarios y grupos**.
 7. Busque el rol aplicable en **Seleccionar un rol** y, a continuación, selecciónelo.
 8. Seleccione **Asignar**.
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
+
+1. Portal de administración de Access (este artículo).
+1. [Agregar y comprobar contactos de administrador en el portal de administración.](add-admin-contacts.md)
+1. [Ajustar la configuración después de la inscripción](conditional-access.md).
+1. Implemente y asigne [Portal de empresa de Intune](company-portal.md).
+1. [Asignar licencias](assign-licenses.md).
+1. [Implementar aplicaciones](deploy-apps.md).
+1. [Configurar dispositivos](set-up-devices.md).
+1. Configurar la [experiencia de primera ejecución con Autopilot y la página Estado de inscripción](esp-first-run.md).
+1. [Habilitar las características de soporte técnico del usuario](enable-support.md).
+1. [Prepare a los usuarios para usar dispositivos](get-started-devices.md).
+1. [Introducción al control de aplicaciones](get-started-app-control.md).

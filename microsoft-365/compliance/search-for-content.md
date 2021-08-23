@@ -11,12 +11,12 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en Centro de cumplimiento de Microsoft 365 para buscar rápidamente correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones OneDrive y conversaciones de mensajería instantánea en Skype Empresarial.
-ms.openlocfilehash: d56c2e9532611593fe41df8ac2bee4860b3920b175e50a188abbc8de67812473
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6161b84fa04b461835777ba769129b9cc32f5ab7
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855640"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377970"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Buscar contenido con la herramienta de búsqueda de contenido
 
@@ -41,8 +41,6 @@ El primer paso es empezar a usar la herramienta de búsqueda de contenido para e
 - [Ver estadísticas de palabras clave](view-keyword-statistics-for-content-search.md) para los resultados de una búsqueda y, a continuación, refinar la consulta si es necesario
 
 - [Busque datos de terceros que](use-content-search-to-search-third-party-data-that-was-imported.md) su organización haya importado a Microsoft 365
-
-- [Editar de forma masiva](bulk-edit-content-searches.md) las ubicaciones de consulta y contenido de varias búsquedas
 
 - [Reintentar una búsqueda de](retry-failed-content-search.md) contenido para resolver un error de ubicación de contenido
 

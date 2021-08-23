@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Información general del programador para Microsoft 365.
-ms.openlocfilehash: f7dd1fb05e2519a72538f5563396a509d44f826c4067ef2abc756eca0c1f2c85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 970d4a37c154e3049dcbd2f5987ff9055af6bbec
+ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898437"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380229"
 ---
 # <a name="welcome-to-scheduler-for-microsoft-365"></a>Bienvenido al Programador para Microsoft 365
 
@@ -52,3 +52,10 @@ Después de que un usuario envíe una solicitud de reunión Cortana, el servicio
 - Busca una hora para reunirse en función de la disponibilidad del organizador y los asistentes en el mismo espacio empresarial.
 - Si el organizador no tiene acceso a la disponibilidad de los asistentes, Cortana negocia una hora para reunirse con esos asistentes por correo electrónico. 
 - Una vez que se ha encontrado un tiempo mutuamente aceptable, Cortana agrega una Teams reunión y envía las invitaciones del calendario. 
+
+## <a name="pricing-and-licensing"></a>Precios y licencias
+
+Más información: [Programador para Microsoft 365 licencias](https://wwww.microsoft.com/microsoft-365/meeting-scheduler-pricing)
+
+>[Nota: los asistentes a la reunión no necesitan un Programador ni una Microsoft 365 licencia. <br>El buzón del asistente programador no requiere una Microsoft 365 o una licencia de programador.
+

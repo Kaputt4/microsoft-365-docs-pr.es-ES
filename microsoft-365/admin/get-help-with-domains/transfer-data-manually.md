@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Encuentre cómo transferir datos manualmente entre dos cuentas Microsoft 365 cuando cambie el plan o el nombre de la compañía, o combine varias suscripciones en una.
-ms.openlocfilehash: 560dc52c97d588a43e28420c62df18a00b552c7ffa9e38ff0df51ebd02998648
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e06136195481abcce66afa6ecc21d1c3c54415d7
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825696"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400144"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Transferir datos manualmente entre dos cuentas
 
@@ -44,9 +44,9 @@ Prepárese para enrollar las mangas y bloquear un fragmento de tiempo en el cale
 > [!IMPORTANT]
 > Si necesita cambiar su [plan](../../commerce/subscriptions/switch-to-a-different-plan.md) de suscripción y puede usar el Asistente para cambiar de planes, o si necesita transferir a un nuevo plan de suscripción en la misma familia de suscripciones incluso cuando el Asistente para cambiar de planes no funciona, no es necesario transferir manualmente los datos y no hay tiempo de inversiones.
 
-|**Tasks**|**Pasos**|
+|**Tareas**|**Pasos**|
 |:-----|:-----|
-|Compra el plan al que quieres moverte.  <br/> |Cuando se registra, especifica el nombre de la compañía que se usará en los nombres de dominio *iniciales:* su empresa .onmicrosoft.com,  su empresa -public.sharepoint.com y su empresa *.sharepoint.com.* Debes usar un nombre de  *empresa*  diferente al que tenías para las suscripciones existentes.  <br/> > [!NOTE]> Suele ser necesario un mínimo de varios meses después de cancelar una suscripción para liberar los nombres de dominio iniciales que usan su empresa  *desde*  nuestros sistemas. Incluso si planea guardar todos los datos de su antigua suscripción de Microsoft 365  y cancelar esa suscripción, el valor antiguo de su empresa no está disponible inmediatamente para su uso en una nueva suscripción.           |
+|Compra el plan al que quieres moverte.  <br/> |Cuando se registra, especifica el nombre de la compañía que se usará en los nombres de dominio *iniciales:* su empresa .onmicrosoft.com,  su empresa -public.sharepoint.com y su empresa *.sharepoint.com.* Debes usar un nombre de  *empresa*  diferente al que tenías para las suscripciones existentes.  <br/> > [!NOTE]> suele ser necesario un mínimo de varios meses después de cancelar una suscripción para liberar los nombres de dominio iniciales que usan su empresa  *desde*  nuestros sistemas. Incluso si planea guardar todos los datos de su antigua suscripción de Microsoft 365  y cancelar esa suscripción, el valor antiguo de su empresa no está disponible inmediatamente para su uso en una nueva suscripción.           |
 |Quite el dominio personalizado de la suscripción Microsoft 365 anterior.  <br/> | Siga los [pasos necesarios antes de](remove-a-domain.md) quitar un dominio para quitar el nombre de dominio de las direcciones de correo electrónico de usuario y quitar los registros DNS para el correo electrónico y Lync para el dominio personalizado. Si hospeda el sitio web público en Microsoft 365, también tendrá que quitar el registro CNAME que apunta a él.  <br/> > [!IMPORTANT]> Después de quitar el registro MX que enruta el correo electrónico a este dominio personalizado, el correo electrónico dejará de funcionar hasta que haya agregado el dominio a su nueva cuenta, configure el nuevo registro MX y configure los usuarios. Al quitar los registros DNS de Lync, Lync dejará de funcionar. Y después de quitar el registro CNAME que apunta a su sitio web público, no estará disponible.           [Quite el dominio](remove-a-domain.md) .  <br/> |
 |Configure el dominio personalizado para la nueva suscripción y configure los usuarios.  <br/> | Configure la nueva suscripción, incluida la creación de los registros DNS necesarios para su dominio personalizado.  <br/>  Cree los usuarios, con direcciones de correo electrónico en su dominio personalizado.  <br/> |
 |Transferir datos de la suscripción antigua a la nueva suscripción.  <br/> | Inicie sesión en ambas cuentas en ventanas de explorador independientes:  <br/>  Haga clic con el botón secundario en el icono del explorador y abra dos ventanas de explorador privado. Puede usar credenciales diferentes en las dos ventanas para iniciar sesión en ambas cuentas.  <br/> [Transferir la configuración administrativa entre suscripciones](#email) <br/> [Transferir datos y estructura de sitio de grupo](#transfer-team-site-structure-and-data) <br/> [Transferir un sitio web público entre suscripciones](#transfer-a-public-website-between-subscriptions) <br/> [Transferir la configuración administrativa entre suscripciones](#email) <br/> |
@@ -103,7 +103,7 @@ Hay varias maneras de guardar o transferir datos del sitio de grupo:
 
 Pida a los usuarios [que muevan su correo electrónico, contactos, tareas](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) e información de calendario después de configurar la nueva suscripción. Pueden llegar a su correo electrónico antiguo usando su nombre de usuario inicial, como sue@contoso.onmicrosoft.com.
   
-### <a name="onedrive-for-business-data"></a>OneDrive Datos para empresas:
+### <a name="onedrive-for-business-data"></a>OneDrive para la Empresa datos:
 
 Pida a los usuarios que copien [o sincronicen OneDrive para la Empresa contenido en su equipo](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)y, a continuación, vuelvan a agregarlo a su nueva suscripción.
 

@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrar Microsoft Teams reuniones con Canvas
-ms.openlocfilehash: b9507847b569ea999b45c1ea33b336360cc485d5
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 3883459d6d8fce9d8e150c9de82faf5dad75e7a5
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257464"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387157"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>Usar Microsoft Teams reuniones con Canvas
 
@@ -30,7 +30,7 @@ Microsoft Teams reuniones es una aplicación de interoperabilidad de Learning To
 > El LTI Teams meetings actual solo admite la sincronización de usuarios de Canvas con Microsoft Azure Active Directory (AAD) en un ámbito limitado. 
 > - El inquilino debe tener una licencia de Microsoft Education.
 > - Solo se puede usar un único espacio empresarial de Microsoft para asignar usuarios entre Canvas y Microsoft.
-> - Tendrá que desactivar SDS antes de usar la clase Teams LTI para evitar la duplicación de grupos.
+> - Tendrá que desactivar School Data Sync (SDS) antes de usar la clase Teams LTI para evitar la duplicación de grupos.
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administrador
 
@@ -86,7 +86,7 @@ Como administrador de Canvas, tendrás que agregar la aplicación LTI Microsoft 
 
    Verás el nombre de la aplicación LTI Microsoft Teams reuniones para el identificador de cliente para confirmación.
 
-5. Seleccione **Instalar**.
+5. Haga clic en **Instalar**.
 
    La Microsoft Teams LTI de reuniones de reuniones se agregará a la lista de aplicaciones externas.
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo Excel formato.
-ms.openlocfilehash: 1b1bc9ea01905e38f695707db1b302c160ea5818
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: fe6b8a946edb84fbeb5eb002eb33c4af2790b23b
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349877"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393369"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Trabajar con plantillas de evaluación en el Administrador de cumplimiento
 
@@ -49,13 +49,33 @@ Vea la [lista completa de plantillas disponibles](compliance-manager-templates-l
 
 ### <a name="purchase-premium-template-licenses"></a>Comprar licencias de plantilla premium
 
-Las licencias de plantilla se pueden comprar en el Centro de administración (obtenga más información sobre[suscripciones, licencias y facturación).](/microsoft-365/commerce/) Seleccione la cantidad de licencias que desea comprar y su plan de pago. También puede adquirir licencias a través de su participación en el programa [Proveedor de soluciones en la nube o](https://partner.microsoft.com/membership/cloud-solution-provider) licencias [por volumen](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+Las licencias de plantilla se pueden obtener mediante uno o varios de estos métodos, según el contrato de licencia del Administrador de cumplimiento. Una vez que se haya finalizado la compra, las plantillas deben estar disponibles en el espacio empresarial en un plazo de 48 horas.
 
-Una vez que se haya finalizado la compra, las plantillas deben estar disponibles en el espacio empresarial en un plazo de 48 horas.
+**Comercial y GCC moderado**
+
+Las cuentas GCC comerciales y moderadas pueden comprar licencias de plantilla en el Centro de administración (obtenga más información sobre suscripciones, licencias[y facturación).](/microsoft-365/commerce/) Seleccione la cantidad de licencias que desea comprar y su plan de pago.
+
+Vínculos de compra:
+
+- [Comercial](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
+- [GCC Moderado](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+
+También puede adquirir licencias a través de su participación en el programa [Proveedor de soluciones en la nube o](https://partner.microsoft.com/membership/cloud-solution-provider) licencias [por volumen](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+
+**GCC Cuentas altas y de DOD**
+
+GCC Las cuentas high y DOD deben comprar licencias de plantilla a través [de licencias por volumen.](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)
 
 ### <a name="try-out-premium-templates"></a>Probar plantillas premium
 
 Para probar las plantillas premium antes de realizar una compra, también puede adquirir versiones de prueba de las licencias. Las licencias de prueba son válidas para un máximo de 25 plantillas durante 90 días. Una vez que obtenga la licencia de prueba, las plantillas deben estar disponibles en el espacio empresarial en un plazo de 48 horas.
+
+Para iniciar una prueba, elija el vínculo adecuado para su organización:
+
+- [Comercial](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/e320704d-b7c9-4012-b6a6-0a2679790360)
+- [GCC Moderado](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
+- [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
+- [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
 
 #### <a name="active-and-inactive-templates"></a>Plantillas activas e inactivas
 

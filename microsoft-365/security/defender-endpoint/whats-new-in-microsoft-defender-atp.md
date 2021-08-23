@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56752128d68fae579ab1b15fbfb8ab1b2320f5f8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6f38c052c6c1755c0717d8b64987dd69b1a5826d
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257272"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387145"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -60,6 +60,13 @@ Para obtener más información sobre las características de vista previa, vea [
    > La detección estándar será el modo predeterminado para todos los clientes a partir del 19 de julio de 2021. Puede optar por conservar el modo básico a través de la página de configuración.
 
 - [Las definiciones de grupo de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups) ahora pueden incluir varios valores para cada condición. Puedes establecer varias etiquetas, nombres de dispositivo y dominios en la definición de un único grupo de dispositivos.
+
+- [Compatibilidad con administración de aplicaciones móviles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Esta mejora permite a Microsoft Defender para endpoint proteger los datos de una organización dentro de una aplicación administrada cuando Intune se usa para administrar aplicaciones móviles. Para obtener más información acerca de la administración de aplicaciones móviles, vea [esta documentación](/microsoft-365/mem/intune/apps/mam-faq).
+
+- [Microsoft Tunnel Integración de VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel Las funcionalidades de VPN ahora están integradas con la aplicación Microsoft Defender para Endpoint para Android. Esta unificación permite a las organizaciones ofrecer una experiencia de usuario final simplificada con una aplicación de seguridad, que ofrece tanto la defensa contra amenazas móviles como la capacidad de acceder a recursos locales desde su dispositivo móvil, mientras que los equipos de seguridad y TI pueden mantener las mismas experiencias de administrador con las que están familiarizados.
+
+- [Detección de jailbreak en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> La funcionalidad de detección de jailbreak en Microsoft Defender para endpoint en iOS ya está disponible en general. Esto se suma a la protección de suplantación de identidad que ya existe.  Para obtener más información, consulte [Setup Conditional Access Policy based on device risk signals](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
+
 
 ## <a name="march-2021"></a>Marzo 2021
 - [Administrar la protección contra alteraciones mediante el Centro de seguridad de Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016 y Windows Server 2019 mediante un método denominado *tenant attach*.

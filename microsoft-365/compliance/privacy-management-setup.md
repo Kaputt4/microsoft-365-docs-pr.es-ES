@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo configurar la administración de privacidad para su organización, establecer roles y permisos y configurar opciones importantes.
-ms.openlocfilehash: 63a6919b2aa4c368360414c683614d8bb4305fd0
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 2603a41fd4afb83c353854e5bed4c236138dd21d
+ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350045"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380217"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Introducción a la administración de privacidad (versión preliminar)
 
@@ -48,7 +48,7 @@ Después de obtener la suscripción, espere hasta 30 minutos para que se active.
 
 ### <a name="accept-privacy-management-terms"></a>Aceptar términos de administración de privacidad
 
-Cuando abra por primera vez la administración de privacidad, se le pedirá que confirme que está de acuerdo con los términos y el proceso de evaluación de datos personales ([más información](privacy-management.md#how-we-evaluate-your-data)). Puede revisar los vínculos proporcionados en su totalidad antes de continuar. Una vez que acepte, puede tardar hasta 24 horas antes de que la administración de privacidad comience a proporcionar información sobre los datos de su organización.
+Cuando abra por primera vez la administración de privacidad, se le pedirá que confirme que está de acuerdo con los términos y el proceso de evaluación de datos personales ([más información](privacy-management.md#where-privacy-management-identifies-personal-data)). Puede revisar los vínculos proporcionados en su totalidad antes de continuar. Una vez que acepte, puede tardar hasta 24 horas antes de que la administración de privacidad comience a proporcionar información sobre los datos de su organización.
 
 Si no tienes el rol necesario para obtener la suscripción o el consentimiento a los términos de uso de la administración de privacidad, se te pedirá que te contactes con el administrador global para obtener ayuda.
 

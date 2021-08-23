@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0d76c34ae2c610933285f93e349459497de7cb79
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5b1221e47d3e34832ac798fa3be0a37d607c3975
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255530"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392146"
 ---
 #  <a name="get-live-response-results"></a>Obtener resultados de respuesta en directo
 
@@ -76,7 +76,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso|Permiso|Nombre para mostrar de permisos|
 |---|---|---|
-|Aplicación|Machine.LiveResponse|Ejecutar respuesta en directo en un equipo específico|
+Aplicación|Machine.Read.All|''Leer todos los perfiles de máquina''
+Aplicación|"Machine.ReadWrite.All|'Leer y escribir toda la información de la máquina'
 |Delegado (cuenta profesional o educativa)|Machine.LiveResponse|Ejecutar respuesta en directo en un equipo específico|
 
 ## <a name="http-request"></a>Solicitud HTTP
@@ -90,7 +91,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Autorización|String|{token} de portador. Obligatorio.|
+|Authorization|Cadena|{token} de portador. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

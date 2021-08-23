@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 15268fb8203aad48c0515277851f38f22719d8f06a1fc2af12c84e37df8b6b46
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2964c79c586962df31c70b25f13d974a1aa90cd5
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877658"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392074"
 ---
 # <a name="overview"></a>Información general
 
@@ -80,7 +80,22 @@ Aplicaciones Microsoft 365 para empresas recopila y comparte datos con Escritori
 Escritorio administrado de Microsoft un proceso de control de cambios tal como se describe en nuestro marco de comunicación de servicio. Notificamos a los clientes a través Microsoft 365 centro de mensajes y el portal de administración Escritorio administrado de Microsoft de incidentes de seguridad y cambios importantes en el servicio. Los cambios en los tipos de datos recopilados y donde se almacenan se consideran un cambio material. Proporcionaremos un mínimo de 30 días de notificación avanzada de este cambio, como es la práctica estándar para Microsoft 365 productos y servicios. Para obtener más información, vea [Service changes and communication](/microsoft-365/managed-desktop/service-description/servicechanges).
 
 ## <a name="compliance"></a>Cumplimiento
-Escritorio administrado de Microsoft se ha sometido a auditorías externas y ha obtenido un conjunto completo de ofertas de cumplimiento. Puede encontrar más información en Escritorio administrado de Microsoft [Compliance](/microsoft-365/managed-desktop/intro/compliance). Los informes de auditoría están disponibles para su descarga en Microsoft [Service Trust Portal,](https://aka.ms/stp)que sirve como repositorio central para Microsoft Enterprise Online Services. (Escritorio administrado de Microsoft se incluye en estos documentos en la categoría "Supervisión y administración"). 
+Escritorio administrado de Microsoft se ha sometido a auditorías externas y ha obtenido un conjunto completo de ofertas de cumplimiento. Puede encontrar más información en Escritorio administrado de Microsoft [Compliance](/microsoft-365/managed-desktop/intro/compliance). Los informes de auditoría están disponibles para su descarga en Microsoft [Service Trust Portal,](https://aka.ms/stp)que sirve como repositorio central para Microsoft Enterprise Online Services. (Escritorio administrado de Microsoft se incluye en estos documentos en la categoría "Supervisión y administración").
+
+## <a name="data-subject-rights"></a>Derechos del titular de los datos (DSR)
+
+Escritorio administrado de Microsoft las regulaciones de privacidad del RGPD y ccPA, que dan a los interesados derechos específicos sobre sus datos personales. Estos derechos incluyen la obtención de copias de datos personales, la solicitud de correcciones, la restricción del procesamiento de los mismos, la eliminación o la recepción en un formato electrónico para que se puedan mover a otro controlador. Para obtener más información sobre solicitudes de interesados (DSR) en general, vea Solicitudes del interesado y [el RGPD y CCPA](/compliance/regulatory/gdpr-data-subject-requests).
+
+Para ejercer los derechos del interesado (DSR) sobre los datos recopilados por el Escritorio administrado de Microsoft de administración de casos, vea lo siguiente:
+
+- Datos de Microsoft Defender para alertas de extremo: el administrador de seguridad puede solicitar la eliminación o extracción de datos personales relacionados con las alertas de Extremo de Microsoft Defender enviando una solicitud de informe en el [Portal de administración.](https://aka.ms/memadmin) En la solicitud, seleccione tipo de solicitud **Cambiar solicitud**, categoría **Seguridad** y subcategoría **Otros**. Proporcione los nombres de dispositivo relevantes en la descripción de la solicitud.
+- Datos de Escritorio administrado de Microsoft de soporte técnico: el administrador de TI puede solicitar la eliminación o extracción de solicitudes de soporte técnico relacionadas con datos personales mediante el envío de una solicitud de informe en el [Portal de administración.](https://aka.ms/memadmin) En la solicitud, seleccione tipo de solicitud **Cambiar solicitud**, categoría **Seguridad** y subcategoría **Otros**. Proporcione los nombres de dispositivo o los nombres de usuario relevantes en la descripción de la solicitud.
+
+Para obtener DSR de otros productos relacionados con el servicio, vea los siguientes artículos:
+
+- Windows de [diagnóstico](/compliance/regulatory/gdpr-dsr-windows)
+- Datos de Microsoft [Intune](/compliance/regulatory/gdpr-dsr-intune)
+- Datos de Azure Active [Directory](/compliance/regulatory/gdpr-dsr-azure)
 
 ## <a name="legal"></a>Legal
 Aviso de privacidad de **Microsoft** a los usuarios finales de productos proporcionados por clientes de la organización: la Declaración de privacidad de [Microsoft](https://privacy.microsoft.com/privacystatement) notifica a los usuarios finales que cuando inician sesión en productos de Microsoft con una cuenta profesional, a) su organización puede controlar y administrar su cuenta (incluido el control de la configuración relacionada con la privacidad) y acceder y procesar sus datos, y b) Microsoft puede recopilar y procesar los datos para proporcionar el servicio a la organización y los usuarios finales.

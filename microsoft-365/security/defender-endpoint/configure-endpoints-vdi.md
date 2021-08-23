@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 1577b20cfa4f18a8db4fcba8d05a27bdacd693074ed3d14319101c6122cb443f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7e4d2d9813081785f3883c11a3a4ae8e8420855
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834112"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58378064"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>Incorporación de dispositivos de infraestructura de escritorio virtual no persistente
 
@@ -73,9 +73,9 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 
     1. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
-2. Copie los archivos de la carpeta WindowsDefenderATPOnboardingPackage extraída del archivo .zip en la imagen `golden/master` de la ruta de acceso `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
+2. Copie los archivos de la carpeta WindowsDefenderATPOnboardingPackage extraída del archivo .zip en la imagen dorada/maestra de la ruta de acceso `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
 
-    1. Si no estás implementando una sola entrada para cada dispositivo, copia WindowsDefenderATPOnboardingScript.cmd.
+    1. Si va a implementar varias entradas para cada dispositivo, una para cada sesión, copie WindowsDefenderATPOnboardingScript.cmd.
 
     1. Si estás implementando una sola entrada para cada dispositivo, copia tanto Onboard-NonPersistentMachine.ps1 como WindowsDefenderATPOnboardingScript.cmd.
     
@@ -123,7 +123,7 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 7. Para usar la función de búsqueda, escriba el nombre del dispositivo y seleccione **Dispositivo** como tipo de búsqueda.
 
 
-## <a name="for-downlevel-skus"></a>Para SKU de nivel inferior
+## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>Para SKU de nivel inferior (Windows Server 2008 R2/2012 R2/2016)
 
 > [!NOTE]
 > El registro siguiente es relevante solo cuando el objetivo es lograr una "entrada única para cada dispositivo".

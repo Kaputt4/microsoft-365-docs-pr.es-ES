@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d3e8e68f8bdb8f2fa6f539605d2603a57e22c624
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 517938951c6bf772097f15dca1a8d3b79c568ca1
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257509"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392059"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 
@@ -98,6 +98,7 @@ Los flujos de trabajo de corrección integrados le permiten identificar y tomar 
 - **Historial de** usuarios: vista histórica de todas las actividades de corrección de mensajes de usuario, como notificaciones anteriores y escalaciones de coincidencias de directivas, ahora proporciona a los revisores más contexto durante el proceso de flujo de trabajo de corrección. Las instancias por primera vez o repetidas de coincidencias de directiva para los usuarios ahora se archivan y se pueden ver fácilmente.
 - **Notificación de patrón detectado:** muchas acciones de acoso y acoso se llevan a cabo con el tiempo e implican instancias recurrentes del mismo comportamiento por parte de un usuario. El nuevo patrón detectado de notificación que se muestra en detalles de alerta ayuda a llamar la atención sobre estas alertas y este tipo de comportamiento.
 - **Traducción:** investigue rápidamente los detalles del mensaje en ocho idiomas mediante la compatibilidad con la traducción en el flujo de trabajo de corrección. Los mensajes en otros idiomas se convierten automáticamente al idioma para mostrar del revisor.
+- **Detección de** datos adjuntos: examinar, detectar e investigar contenido vinculado (datos adjuntos modernos) de OneDrive y Microsoft Teams que coinciden con clasificadores de directivas y condiciones para Microsoft Teams mensajes. El contenido de los datos adjuntos se extrae automáticamente en un archivo de texto para una revisión y acción detalladas.
 
 ### <a name="actionable-insights"></a>Detalles accionables.
 
@@ -152,7 +153,7 @@ En este paso, se profundiza en los problemas detectados como coincidencias con l
 - **Revisión del historial de** actividades de usuario: vea el historial de actividades de mensajes de usuario y acciones de corrección, como notificaciones anteriores y escalaciones, para ver las coincidencias de directivas.
 - **Filtros:** use filtros como el remitente, el destinatario, la fecha y el sujeto para limitar rápidamente las alertas de mensajes que desea revisar.
 
-### <a name="remediate"></a>Corregir
+### <a name="remediate"></a>Corrección
 
 El siguiente paso es corregir los problemas de cumplimiento de comunicaciones que ha investigado con las siguientes opciones:
 

@@ -15,13 +15,13 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.date: 06/02/2021
-ms.openlocfilehash: 1120d695bd8dd81931b92f11b92308ae363db4ea
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.date: 08/17/2021
+ms.openlocfilehash: 7fff73b2887418d47358b5424e537e5de4d60ce9
+ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257841"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380253"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -263,7 +263,7 @@ Ejemplo:
 
 1. Escriba **powershell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**.
 
-2. Escriba el siguiente cmdlet:
+2. Escriba uno de los cmdlets siguientes. (Consulte [Reglas de reducción de superficie de ataque](attack-surface-reduction-rules.md) para obtener más información, como id. de regla).
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
@@ -321,7 +321,7 @@ Ejemplo:
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Reducir superficies de ataque con reglas de reducción de superficie de ataque](attack-surface-reduction.md)
+- [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction-rules.md)
 
 - [Evaluar la reducción de superficie de ataque](evaluate-attack-surface-reduction.md)
 

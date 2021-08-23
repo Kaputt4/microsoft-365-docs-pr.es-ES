@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 93e76fb5730140d06f9805e91ecd1a175a4f7cfb
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: ba2c6e913b8768e0b905631a248435638db98939
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347149"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364510"
 ---
 # <a name="get-domain-statistics-api"></a>Obtener API de estadísticas de dominio
 
@@ -84,7 +84,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el dominio existe: 200 Ok, con el objeto statistics en el cuerpo de la respuesta. Si el dominio no existe: 404 No encontrado.
+Si se realiza correctamente y el dominio existe: 200 Ok, con el objeto statistics en el cuerpo de la respuesta. Si el dominio no existe: 200 Aceptar con una prevalencia establecida en 0.
 
 ## <a name="example"></a>Ejemplo
 

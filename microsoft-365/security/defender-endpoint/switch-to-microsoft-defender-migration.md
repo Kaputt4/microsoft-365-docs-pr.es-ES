@@ -1,7 +1,7 @@
 ---
 title: Cambiar de la protección de puntos de conexión que no son de Microsoft a Microsoft Defender para el extremo
-description: Realice el cambio a Microsoft Defender para endpoint. Lea este artículo para obtener información general.
-keywords: migración, protección avanzada de puntos de conexión de Windows Defender, para Endpoint, edr
+description: Cambia a Microsoft Defender para Endpoint, que incluye Antivirus de Microsoft Defender para la solución de protección de puntos de conexión.
+keywords: migración, Windows Defender, protección avanzada de puntos de conexión, antivirus, antimalware, modo pasivo, modo activo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,29 +21,29 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 06/14/2021
+ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 50a2a17987c78b1a5f7aca7046a8cfd34e0ec467
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 27f1dff34e8e403afb3a8e45263d30a587952da5
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247596"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364486"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Cambiar de la protección de puntos de conexión que no son de Microsoft a Microsoft Defender para el extremo
 
 Si está pensando en cambiar de una solución de protección de puntos de conexión que no es de Microsoft a [Microsoft Defender para](microsoft-defender-endpoint.md) Endpoint (Defender para endpoint), está en el lugar correcto. Use este artículo como guía.
 
-:::image type="content" source="images/nonms-mde-migration.png" alt-text="Información general sobre la migración a Defender for Endpoint":::
+:::image type="content" source="images/nonms-mde-migration.png" alt-text="Cambiar la solución de protección de puntos de conexión a Defender for Endpoint":::
 
-Cuando cambias a Defender for Endpoint, comienzas con la solución que no es microsoft funcionando en modo activo. Después, configuras Defender para Endpoint en modo pasivo e incorporas tus dispositivos a Defender para endpoint. A continuación, establece Defender para Endpoint en modo activo. Por último, se quita la solución que no es de Microsoft.
+Al cambiar a Defender for Endpoint, comienza con la protección contra antivirus o antimalware que no es de Microsoft en modo activo. A continuación, configuras Antivirus de Microsoft Defender modo pasivo e incorporas tus dispositivos a Defender para endpoint. A continuación, configure las características de protección de puntos de conexión, establezca Antivirus de Microsoft Defender en modo activo y compruebe que todo funciona correctamente. Por último, se quita la solución que no es de Microsoft.
 
 ## <a name="the-migration-process"></a>Proceso de migración
 
 El proceso de migración a Defender for Endpoint se puede dividir en tres fases, como se describe en la tabla siguiente:
 
-![Fases de migración: preparar, configurar, incorporar](images/phase-diagrams/migration-phases.png)
+![Proceso de migración de MDE](images/phase-diagrams/migration-phases.png)
 
 |Fase |Descripción |
 |--|--|

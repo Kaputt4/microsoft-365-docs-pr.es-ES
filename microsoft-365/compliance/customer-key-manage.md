@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Después de configurar la clave de cliente, aprenda a administrarla restaurando claves AKV y administrando permisos y creando y asignando directivas de cifrado de datos.
-ms.openlocfilehash: 263f5d13a554ab06c140101595e39c98ae1bc9488dbeff13da0eda9c02d334fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cbfc93413aa7abfb37c201b8446050b1242461ac
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835840"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400264"
 ---
 # <a name="manage-customer-key"></a>Administrar clave de cliente
 
@@ -140,13 +140,13 @@ Para crear un DEP, debe conectarse de forma remota a SharePoint Online mediante 
 2. En el Shell Microsoft Office SharePoint Online administración, ejecute el cmdlet Register-SPODataEncryptionPolicy de la siguiente manera:
 
    ```powershell
-   Register-SPODataEncryptionPolicy -Identity <adminSiteCollectionURL> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
+   Register-SPODataEncryptionPolicy <adminSiteCollectionURL> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
    ```
 
    Ejemplo:
   
    ```powershell
-   Register-SPODataEncryptionPolicy -Identity https://contoso.sharepoint.com -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
+   Register-SPODataEncryptionPolicy  https://contoso.sharepoint.com -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
    ```
 
    Al registrar el DEP, el cifrado comienza en los datos de la geo. El cifrado puede tardar algo de tiempo. Para obtener más información sobre el uso de este parámetro, [vea Register-SPODataEncryptionPolicy](/powershell/module/sharepoint-online/register-spodataencryptionpolicy?preserve-view=true&view=sharepoint-ps).
@@ -370,7 +370,7 @@ Microsoft 365 auditorías y valida la ruta de depuración de datos. Para obtener
 
 - [Consideraciones sobre la planeación de salida de O365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-La depuración de DEP de varias cargas de trabajo no se admite Microsoft 365 clave de cliente. El DEP de varias cargas de trabajo se usa para cifrar datos en varias cargas de trabajo en todos los usuarios del espacio empresarial. La depuración de este DEP daría como resultado que los datos de varias cargas de trabajo se vuelvan inaccesibles. Si decide salir de Microsoft 365 servicios, podría seguir la ruta de eliminación del espacio empresarial por el proceso documentado. Vea [cómo eliminar un inquilino en Azure Active Directoy](/azure/active-directory/enterprise-users/directory-delete-howto).
+La depuración de DEP de varias cargas de trabajo no se admite Microsoft 365 clave de cliente. El DEP de varias cargas de trabajo se usa para cifrar datos en varias cargas de trabajo en todos los usuarios del espacio empresarial. La depuración de este DEP daría como resultado que los datos de varias cargas de trabajo se vuelvan inaccesibles. Si decide salir de Microsoft 365 servicios, podría seguir la ruta de eliminación del espacio empresarial por el proceso documentado. Vea [cómo eliminar un espacio empresarial en Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Revocar las claves de cliente y la clave de disponibilidad para Exchange Online y Skype Empresarial
 
@@ -397,7 +397,7 @@ Para iniciar la ruta de depuración de datos, siga estos pasos:
 
 4. Póngase en contacto con el soporte técnico de Microsoft y solicite el eDocument de purga de datos.
 
-    A su solicitud, Microsoft le envía un documento legal para confirmar y autorizar la eliminación de datos. La persona de la organización que se inscribió como aprobador en la oferta de FastTrack durante la incorporación debe firmar este documento. Normalmente, se trata de una persona ejecutiva u otra persona designada en su empresa que tiene autorización legal para firmar los documentos en nombre de su organización.
+    A su solicitud, Microsoft le envía un documento legal para confirmar y autorizar la eliminación de datos. La persona de la organización que se inscribió como aprobador en la FastTrack durante la incorporación debe firmar este documento. Normalmente, se trata de una persona ejecutiva u otra persona designada en su empresa que tiene autorización legal para firmar los documentos en nombre de su organización.
 
 5. Una vez que el representante haya firmado el documento legal, descóyalo a Microsoft (normalmente a través de una firma de eDoc).
 
@@ -413,7 +413,7 @@ Para iniciar la ruta de depuración de datos para SharePoint Online, OneDrive pa
 
 2. Póngase en contacto con Microsoft para eliminar la clave de disponibilidad.
 
-    Cuando se contacte con Microsoft para eliminar la clave de disponibilidad, le enviaremos un documento legal. La persona de la organización que se inscribió como aprobador en la oferta de FastTrack durante la incorporación debe firmar este documento. Normalmente, se trata de una persona ejecutiva u otra persona designada en su empresa que tiene autorización legal para firmar los documentos en nombre de su organización.
+    Cuando se contacte con Microsoft para eliminar la clave de disponibilidad, le enviaremos un documento legal. La persona de la organización que se inscribió como aprobador en la FastTrack durante la incorporación debe firmar este documento. Normalmente, se trata de una persona ejecutiva u otra persona designada en su empresa que tiene autorización legal para firmar los documentos en nombre de su organización.
 
 3. Una vez que el representante firme el documento legal, descóyalo a Microsoft (normalmente a través de una firma de eDoc).
 

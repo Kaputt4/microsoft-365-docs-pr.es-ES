@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d4f87a292c93bd5d29d9abdcef8ce3134f65b0f0afe7430d22a64c677be7a1ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 856379aeb0264cf1c6d604050ad2a0052dab4e0b
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811235"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400252"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Lista de dispositivos expuestos de una actividad de corrección
 
@@ -56,7 +56,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación|RemediationTask.Read.All|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
+Aplicación|RemediationTasks.Read.All|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
 Delegado (cuenta profesional o educativa)|RemediationTask.Read.Read|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
 
 ## <a name="properties-details"></a>Detalles de propiedades
@@ -114,7 +114,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
 - [Obtener una actividad de corrección por id.](get-remediation-one-activity.md)
