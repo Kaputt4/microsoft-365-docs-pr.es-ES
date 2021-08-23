@@ -118,6 +118,8 @@
           items:
             - name: Configuración y estado del sensor
               href: ../defender-identity/sensor-health.md
+            - name: Cuenta de servicios de directorio
+              href: ../defender-identity/directory-service-accounts.md
             - name: Integración de VPN
               href: ../defender-identity/vpn-integration.md
             - name: Establecer etiquetas de entidad

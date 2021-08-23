@@ -20,12 +20,12 @@ ms.custom:
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a6b3827260f95cdef84d5cce463cad06bfc670d
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: efd82e5fc321b9a9c7a586b75e2b96ae44cc38c1
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349857"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450205"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
@@ -85,33 +85,7 @@ Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365
 
    Cuando haya terminado, haga clic en **Aplicar**.
 
-3. Para filtrar los resultados, haga clic en **Filtrar**. Los filtros disponibles son:
-
-   - Mensaje
-
-   - **Hora de expiración**: Filtrar los mensajes según cuando expiran de la cuarentena:
-     - **Hoy**
-     - **Próximos 2 días**
-     - **Próximos 7 días**
-     - **Personalizado**: Introduzca **Fecha de inicio** y **Fecha de finalización**.
-
-   - **Hora de recepción**: Introduzca **Fecha de inicio** y **Fecha de finalización**.
-
-   - **Motivo de la cuarentena**:
-     - **Masivo**
-     - **Correo no deseado**
-     - **Suplantación de identidad**
-
-   - **Tipo de directiva**: Filtrar mensajes por tipo de directiva:
-     - **directiva antimalware**
-     - **Directiva de datos adjuntos seguros** (Defender para Office 365)
-     - **Política Antiphishing**
-     - **Directiva de correo no deseado**
-     - **Regla de transporte** (regla de flujo de correo)
-
-   Para borrar el filtro, haga clic en **Borrar**. Para ocultar el control flotante del filtro, haga clic de nuevo en **Filtrar**.
-
-4. Para filtrar los resultados, haga clic en **Filtrar**. Los siguientes filtros están disponibles en el control flotante **Filtros** que aparece:
+3. Para filtrar los resultados, haga clic en **Filtrar**. Los siguientes filtros están disponibles en el control flotante **Filtros** que aparece:
    - **Id. de mensaje**: El identificador único global del mensaje.
    - **Dirección del remitente**
    - **Dirección del destinatario**
@@ -121,7 +95,7 @@ Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365
      - **Hoy**
      - **Próximos 2 días**
      - **Próximos 7 días**
-     - **Personalizado**: Introduzca **Fecha de inicio** y **Fecha de finalización**.
+     - **Personalizado**: Introduzca una **hora de inicio** y una **hora de finalización** (fecha).
    - **Motivo de la cuarentena**:
      - **Masivo**
      - **Correo no deseado**
@@ -138,11 +112,10 @@ Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365
      - **Directiva de datos adjuntos seguros**
      - **Directiva contra phishing**
      - **Directiva de correo no deseado**
-     - **Regla de transporte** (regla de flujo de correo)
 
    Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros, haga clic en ![el icono Borrar filtros](../../media/m365-cc-sc-clear-filters-icon.png)**Borrar filtros**.
 
-5. Use el cuadro de **Búsqueda** y el valor correspondiente para buscar mensajes específicos. No se admiten los caracteres comodín. Puede buscar según los siguientes valores:
+4. Use el cuadro de **Búsqueda** y el valor correspondiente para buscar mensajes específicos. No se admiten los caracteres comodín. Puede buscar según los siguientes valores:
    - Id. del mensaje
    - Dirección de correo electrónico del remitente
    - Dirección de correo electrónico del destinatario

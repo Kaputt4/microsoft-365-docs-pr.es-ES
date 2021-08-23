@@ -252,7 +252,7 @@
           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
         - name: Información de estado de flujo de correo de dominio superior
           href: mfi-domain-mail-flow-status-insight.md
-        - name: Usar el envío para administradores
+        - name: Administrar envíos
           href: admin-submission.md
         - name: Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
