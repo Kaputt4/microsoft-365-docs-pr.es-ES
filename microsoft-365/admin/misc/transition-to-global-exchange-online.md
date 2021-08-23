@@ -9,15 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkMAC
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo realizar la transición de Microsoft Cloud Germany Exchange Online al servicio de Exchange Online global
-ms.openlocfilehash: c2bebc52557dd143d010546574418c165e1a7002
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 4d3baf3fa0a34d7f8a6bbae0e761260f1a7841a8
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346057"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394161"
 ---
 # <a name="update-your-mx-records-to-transition-to-the-global-exchange-online-service"></a>Actualizar los registros MX para realizar la transición al servicio de Exchange Online global
 

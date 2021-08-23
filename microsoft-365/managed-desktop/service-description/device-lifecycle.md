@@ -8,16 +8,20 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f7c2a72fdd212eb9a549d3b855a693f095949e0dbb203caf05d37e9ad8ace226
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a459c120e0bfb4da5c4b98ee576ff347052e358
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904341"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400384"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Escritorio administrado de Microsoft ciclo de vida del producto
 
-Escritorio administrado de Microsoft a los usuarios asegurando que siempre usan dispositivos que ofrecen las mejores capacidades de rendimiento, confiabilidad, diseño y seguridad (como la compatibilidad con características como Windows Hello). Para ello, Escritorio administrado de Microsoft un breve catálogo de dispositivos aprobados actualizados continuamente. Para ver los dispositivos aprobados, Escritorio administrado de Microsoft en el sitio [de Windows 10 Pro de dispositivos](https://www.microsoft.com/windowsforbusiness/view-all-devices) empresariales.
+> [!NOTE]
+> A partir del 18 de septiembre de 2021, este ciclo de vida del producto Escritorio administrado de Microsoft ya no se aplicará. Ninguno de los requisitos enumerados aquí se aplicará a los dispositivos del servicio. Solo los [requisitos de hardware](device-requirements.md) serán relevantes. 
+
+
+Escritorio administrado de Microsoft beneficia a los usuarios al asegurar que siempre usan dispositivos que ofrecen las mejores capacidades de rendimiento, confiabilidad, diseño y seguridad (como la compatibilidad con características como Windows Hello). Para ello, Escritorio administrado de Microsoft un breve catálogo de dispositivos aprobados actualizados continuamente. Para ver los dispositivos aprobados, Escritorio administrado de Microsoft en el sitio [de Windows 10 Pro de dispositivos](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) empresariales.
  
 En este artículo se detalla el ciclo de vida de los dispositivos a medida que se agregan y quitan del catálogo aprobado. 
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dc6b2f1edcd7387ac144f4cd989cf3c65889dd232d887360187fbf84062cba78
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f743e4960267f98496585163d963c720ab9d0c5c
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874104"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365038"
 ---
 # <a name="get-domain-related-machines-api"></a>Obtener API de máquinas relacionadas con el dominio
 
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/machines
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -81,7 +81,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el dominio existe: 200 Aceptar con la lista de [entidades](machine.md) de máquina. Si el dominio no existe: 404 No encontrado.
+Si se realiza correctamente y el dominio existe: 200 Aceptar con la lista de [entidades](machine.md) de máquina. Si el dominio no existe: 200 Aceptar con un conjunto vacío.
 
 ## <a name="example"></a>Ejemplo
 

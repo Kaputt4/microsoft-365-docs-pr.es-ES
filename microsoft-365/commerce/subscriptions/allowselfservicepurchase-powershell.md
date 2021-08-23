@@ -21,12 +21,12 @@ search.appverid:
 description: Obtenga información sobre cómo usar el cmdlet De PowerShell AllowSelfServicePurchase para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/16/2021
-ms.openlocfilehash: 8714334d2c05d312d8a7895c943e21816e31c9297e879b9681639efb92aec426
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1de0b99954883b301110689c72e10e05c16e7576
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900284"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408051"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Usar AllowSelfServicePurchase para el módulo de PowerShell de MSCommerce
 
@@ -38,7 +38,7 @@ Puede usar el módulo **MSCommerce** PowerShell para:
 - Ver una lista de productos aplicables y si la compra de autoservicio está habilitada o deshabilitada
 - Ver o modificar la configuración actual de un producto específico para habilitarlo o deshabilitarlo
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Para usar el **módulo de PowerShell de MSCommerce,** necesita:
 
@@ -140,6 +140,14 @@ $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | wh
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
 
+Si hay varios valores para el producto, puede ejecutar el comando individualmente para cada valor, como se muestra en el ejemplo siguiente:
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
+```
+
+
 ## <a name="troubleshooting"></a>Solución de problemas
 
 ### <a name="problem"></a>Problema
@@ -152,7 +160,13 @@ Esto puede deberse a una versión anterior de Seguridad de la capa de transporte
 
 ### <a name="solution"></a>Solución
 
-Actualización a TLS 1.2: (/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+Actualizar a TLS 1.2. La sintaxis siguiente actualiza el Protocolo de seguridad de ServicePointManager a TLS1.2:
+
+```powershell
+ [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+```
+
+Para obtener más información, [vea How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).
 
 <!--
 ## Uninstall the MSCommerce module

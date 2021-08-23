@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Obtenga información sobre cómo ver los informes mediante pestañas y filtros de navegación.
-ms.openlocfilehash: 242a5f27c47fc1db0d807906f725201d2574712afe75ef421abf8848a334f2f5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8bf7d82b3c7ab8bab175da57a120ecf91e96e535
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901248"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400312"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Navegar y usar los informes en Análisis de uso de Microsoft 365
 
@@ -61,7 +61,7 @@ El usuario que haya instanciado la aplicación de plantilla tendrá la capacidad
 
 - Cree sus propios objetos visuales con los [conjuntos de datos](usage-analytics-data-model.md) subyacentes.
 
-- Use Power BI Desktop para agregar sus propios orígenes de datos.
+- Use Power BI Desktop para traer sus propios orígenes de datos.
 
 Para compartir los informes, solo tiene que seleccionar el botón compartir ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) en la parte superior de la página.
 

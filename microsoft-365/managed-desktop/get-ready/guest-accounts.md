@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9daf0ded219165f692c3e5b1b6512ab264f25d41b2fda97d085a3443cbe506a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb181ab213cc02e5289681b8c3965a96bd8b8dcb
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819132"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365002"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Requisitos previos para las cuentas de invitado
 
@@ -46,14 +46,16 @@ Para habilitar esta configuración, siga estos pasos:
 
 Para obtener más información, vea [Administradores sin licencia en Microsoft Intune](/mem/intune/fundamentals/unlicensed-admins).
 
-## <a name="steps-to-get-ready"></a>Pasos para prepararse
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
 
 1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
-2. Usar las [herramientas para evaluar la preparación](readiness-assessment-tool.md)
-3. [Requisitos previos para cuentas invitadas](guest-accounts.md) (este artículo)
-4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
-5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
-6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
-7. [Aplicaciones en el Escritorio administrado de Microsoft](apps.md)
-8. [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
-9. [Preparar recursos de impresión para el Escritorio administrado de Microsoft](printing.md)
+2. Ejecutar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
+1. Comprar [Portal de empresa](../get-started/company-portal.md).
+1. Revise los requisitos previos de las cuentas invitadas (en este artículo).
+1. Compruebe [la configuración de red](network.md).
+1. [Preparar certificados y perfiles de red](certs-wifi-lan.md).
+1. [Preparar el acceso del usuario a los datos](authentication.md).
+1. [Preparar aplicaciones](apps.md).
+1. [Preparar unidades asignadas](mapped-drives.md).
+1. [Preparar recursos de impresión](printing.md).
+1. Nombres [de dispositivo de dirección](address-device-names.md).

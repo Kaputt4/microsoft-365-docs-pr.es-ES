@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 0acca0a1c04fa1391527991ff63e0cc19364d548937a8fb2d4a7f33ef73060a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf885a3d0bba2cf3abe85bc54f5e761f286716b9
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870006"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364978"
 ---
 # <a name="address-device-name-dependency"></a>Dependencia de nombre de dispositivo de dirección
 
@@ -24,3 +24,17 @@ Escritorio administrado de Microsoft aplica un formato de nombre estandarizado c
 
 > [!IMPORTANT]
 > Si el entorno depende de nombres de dispositivo específicos (por ejemplo, para admitir una configuración de red determinada), debes investigar las opciones para quitar esa dependencia antes de inscribirte en Escritorio administrado de Microsoft. Si debe mantener la dependencia de nombre, puede enviar una solicitud a través del portal de [administración](../working-with-managed-desktop/admin-support.md) para deshabilitar la función de cambio de nombre y usar el formato de nombre deseado.
+
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
+
+1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
+2. Ejecutar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
+1. Comprar [Portal de empresa](../get-started/company-portal.md).
+1. Revisar [los requisitos previos de las cuentas invitadas](guest-accounts.md).
+1. Compruebe [la configuración de red](network.md).
+1. [Preparar certificados y perfiles de red](certs-wifi-lan.md).
+1. [Preparar el acceso del usuario a los datos](authentication.md).
+1. [Preparar aplicaciones](apps.md).
+1. [Preparar unidades asignadas](mapped-drives.md).
+1. [Preparar recursos de impresión](printing.md).
+1. Dirección [nombres de dispositivos (este artículo).

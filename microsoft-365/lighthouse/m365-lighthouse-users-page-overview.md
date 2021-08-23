@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Usuarios.
-ms.openlocfilehash: 722650462d5403e24c2ac0e9b087e5f5710860b145a1a233c0f05a29ca77bbab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 102dcca973fed7a883dead0212a6f2965457cf9f
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898893"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365062"
 ---
 # <a name="microsoft-365-lighthouse-users-page-overview"></a>Microsoft 365 Lighthouse Introducción a la página de usuarios 
 
 > [!NOTE]
 > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse permite administrar usuarios en cuentas de inquilino seleccionando **Usuarios** en el panel de navegación izquierdo para abrir la página Usuarios. Desde esta página, puede buscar usuarios y evaluar y actuar en función del estado de seguridad de sus cuentas de usuario. También puede ver información sobre usuarios arriesgados y el estado de la autenticación multifactor y el restablecimiento de contraseñas de autoservicio.  
+Microsoft 365 Lighthouse permite administrar usuarios en cuentas de inquilino de clientes seleccionando **Usuarios** en el panel de navegación izquierdo para abrir la página Usuarios. Desde esta página, puede buscar usuarios y evaluar y actuar en función del estado de seguridad de sus cuentas de usuario. También puede ver información sobre usuarios arriesgados y el estado de la autenticación multifactor y el restablecimiento de contraseñas de autoservicio.  
   
 ## <a name="search-users-tab"></a>Pestaña Buscar usuarios  
   

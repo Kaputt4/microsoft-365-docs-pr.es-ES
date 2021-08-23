@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e6c6c6f2e77ef81efae29f98baa85feafada9724cc12623bf1501316a91a38f5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5722a0261a0e336b5d6e6b2f5a0e3bb0c21f2b6
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819204"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365026"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft  
  
@@ -87,14 +87,16 @@ Para implementar certificados y perfiles, siga estos pasos:
 4. Crea un perfil para cada VPN corporativa (consulta Windows 10 y Windows configuración del dispositivo [Holographic](/intune/vpn-settings-windows-10)para agregar conexiones VPN con Intune ).
 5. Envíe una solicitud de soporte técnico titulada "Implementación de certificados" o "Implementación de perfiles Wi-Fi" a las operaciones de TI de Escritorio administrado de Microsoft mediante el portal de administración de Escritorio administrado de Microsoft para revisar e implementar el perfil de configuración en "Dispositivos modernos del lugar de trabajo: prueba". Escritorio administrado de Microsoft Las operaciones de TI le permitirán saber cuándo se ha completado la solicitud a través de la solicitud de soporte técnico en el portal de administración. 
  
-## <a name="steps-to-get-ready"></a>Pasos para prepararse
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
 
-1. Revisar [Requisitos previos para Escritorio administrado de Microsoft](prerequisites.md).
-2. Usar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
-3. [Requisitos previos para las cuentas de invitado](guest-accounts.md)
-4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
-5. [Preparar certificados y perfiles de red para Escritorio administrado de Microsoft](certs-wifi-lan.md) (este artículo)
-6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
-7. [Aplicaciones en el Escritorio administrado de Microsoft](apps.md)
-8. [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
-9. [Preparar recursos de impresión para el Escritorio administrado de Microsoft](printing.md) 
+1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
+2. Ejecutar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
+1. Comprar [Portal de empresa](../get-started/company-portal.md).
+1. Revisar [los requisitos previos de las cuentas invitadas](guest-accounts.md).
+1. Compruebe [la configuración de red](network.md).
+1. Preparar certificados y perfiles de red (este artículo).
+1. [Preparar el acceso del usuario a los datos](authentication.md).
+1. [Preparar aplicaciones](apps.md).
+1. [Preparar unidades asignadas](mapped-drives.md).
+1. [Preparar recursos de impresión](printing.md).
+1. Nombres [de dispositivo de dirección](address-device-names.md).

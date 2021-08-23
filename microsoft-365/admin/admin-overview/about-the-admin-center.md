@@ -19,18 +19,19 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Iniciar sesión con permisos de administrador en el Centro de administración de Microsoft 365 para configurar la organización en la nube y administrar usuarios y suscripciones.
-ms.openlocfilehash: e1a5ebf22f874700510ff34a0f1d1fa7bb923fe0
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 2e7495b4c5fc039720d3e58cacebf1e86dcaaff2
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346981"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393405"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Acerca del Centro de administración de Microsoft 365
 

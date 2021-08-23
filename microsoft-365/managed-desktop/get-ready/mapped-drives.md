@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: d272c08287dd6198d4c33b4d1df3ff8662eda12781d676b75c93189d08409de7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 01b26ff33e02a1b26e91bb6399a73c9b22a6ba19
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819096"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364966"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparar unidades asignadas para el Escritorio administrado de Microsoft
 
@@ -25,7 +25,7 @@ Muchos entornos empresariales tienen requisitos heredados para las unidades asig
 - Migre las unidades asignadas que usan los equipos para compartir archivos a SharePoint Online. 
 - Modernice o reemplace las aplicaciones que usan recursos compartidos de archivos locales para quitar ese requisito.
   
-La modernización de estos servicios permitirá la mejor experiencia del usuario con Escritorio administrado de Microsoft. Los Servicios de Microsoft FastTrack pueden ayudarle a modernizar su entorno con Servicios en la nube de Microsoft. Puedes comprobar si eres elegible para los servicios de FastTrack en [Servicios](/fasttrack/m365-eligible-services-and-plans) y Planes elegibles y, a continuación, ponte en contacto con ellos directamente para prepararte para Escritorio administrado de Microsoft. Para obtener información general sobre fasttrack OneDrive para la Empresa o SharePoint online migration, vea [Data Migration](/fasttrack/o365-data-migration).
+La modernización de estos servicios permitirá la mejor experiencia del usuario con Escritorio administrado de Microsoft. Microsoft FastTrack Services puede ayudarle a modernizar su entorno con Microsoft Cloud Services. Puedes comprobar si eres elegible para los servicios FastTrack en [Los](/fasttrack/m365-eligible-services-and-plans) planes y servicios elegibles y, a continuación, ponte en contacto con ellos directamente para prepararte para Escritorio administrado de Microsoft. Para obtener información sobre FastTrack OneDrive para la Empresa o SharePoint online migration, vea [Data Migration](/fasttrack/o365-data-migration).
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Unidades asignadas en Escritorio administrado de Microsoft
  
@@ -55,14 +55,16 @@ Asegúrese de que las unidades asignadas no se pueden evitar y ha revisado cuida
 4. Debe probar y confirmar si la configuración implementada por el Escritorio administrado de Microsoft operaciones de TI funciona como espera. Responda con la pestaña Discusión en los detalles de la misma solicitud de soporte técnico para notificar a Escritorio administrado de Microsoft operaciones de TI una vez completadas las pruebas.  
 5. Escritorio administrado de Microsoft A continuación, el equipo de operaciones de TI implementará la configuración en los otros grupos de implementación. 
 
-## <a name="steps-to-get-ready"></a>Pasos para prepararse
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
 
-1. Revisar [Requisitos previos para Escritorio administrado de Microsoft](prerequisites.md).
-2. [Usar herramientas de evaluación de preparación](readiness-assessment-tool.md).
-3. [Requisitos previos para las cuentas de invitado](guest-accounts.md)
-4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
-5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
-6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
-7. [Aplicaciones en el Escritorio administrado de Microsoft](apps.md)
-8. [Preparar unidades asignadas para Escritorio administrado de Microsoft](mapped-drives.md) (este artículo)
-9. [Preparar recursos de impresión para el Escritorio administrado de Microsoft](printing.md)
+1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
+2. Ejecutar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
+1. Comprar [Portal de empresa](../get-started/company-portal.md).
+1. Revisar [los requisitos previos de las cuentas invitadas](guest-accounts.md).
+1. Compruebe [la configuración de red](network.md).
+1. [Preparar certificados y perfiles de red](certs-wifi-lan.md).
+1. [Preparar el acceso del usuario a los datos](authentication.md).
+1. [Preparar aplicaciones](apps.md).
+1. Preparar unidades asignadas (en este artículo).
+1. [Preparar recursos de impresión](printing.md).
+1. Nombres [de dispositivo de dirección](address-device-names.md).

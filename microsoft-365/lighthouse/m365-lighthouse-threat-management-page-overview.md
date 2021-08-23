@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Administración de amenazas.
-ms.openlocfilehash: 2c53c10922befea999a8025e35d53da2225aafc4a9543f13f04a35ca8e7f2ecd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9ed274b295b40f9784a193a02dad925462a6e9e
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898988"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365014"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse Introducción a la página de administración de amenazas 
 
@@ -34,7 +34,7 @@ ms.locfileid: "53898988"
 
 Antivirus de Microsoft Defender protege a los inquilinos, usuarios y dispositivos de amenazas de software, incluidos virus, malware y spyware. Es una protección sólida y continua que está integrada en Windows 10 y se incluye con Microsoft 365 Empresa Premium.  
   
-Para obtener acceso a la página Administración de amenazas en Microsoft 365 Lighthouse, seleccione **Administración** de amenazas en el panel de navegación izquierdo para ver la posición de seguridad de los inquilinos frente a las amenazas. Verás inquilinos, usuarios y dispositivos que requieren tu atención y recomendaciones que te ayudarán a reducir el riesgo.  
+Para obtener acceso a la página Administración de amenazas en Microsoft 365 Lighthouse, seleccione **Administración** de amenazas en el panel de navegación izquierdo para ver la posición de seguridad de los inquilinos del cliente frente a las amenazas. Verás inquilinos, usuarios y dispositivos que requieren tu atención y recomendaciones que te ayudarán a reducir el riesgo.  
   
 ## <a name="overview-tab"></a>Ficha Información general  
   
@@ -59,7 +59,7 @@ En la tabla siguiente se enumeran los distintos estados de amenaza y su definici
 
 | Estado de la amenaza | Definición |
 |--|--|
-| Activo | La amenaza está activa en el dispositivo. |
+| Activa | La amenaza está activa en el dispositivo. |
 | Sin estado | El estado de la amenaza no está disponible. Ejecuta un examen completo en el dispositivo para que Antivirus de Microsoft Defender vuelva a detectar la amenaza. |
 | Error en la acción | El dispositivo no está en riesgo. Se ha fallado una acción, pero se ha detenido una amenaza potencial y no está activa en el dispositivo. Ejecuta un examen completo en el dispositivo. |
 | Pasos manuales necesarios | La amenaza se ha detenido, pero requiere un paso manual para completarse, como un examen completo o un reinicio del dispositivo. |
@@ -67,7 +67,7 @@ En la tabla siguiente se enumeran los distintos estados de amenaza y su definici
 | Se requiere reiniciar | Es necesario reiniciar el dispositivo. |
 | Corregido con errores no críticos | La amenaza se ha corregido y no se necesitan más acciones. |
 | En cuarentena | La amenaza se ha puesto en cuarentena. No se necesitan más acciones. |
-| Eliminado | La amenaza se ha quitado correctamente del dispositivo. No se necesitan más acciones. |
+| Eliminación | La amenaza se ha quitado correctamente del dispositivo. No se necesitan más acciones. |
 | Limpiado | Antivirus de Microsoft Defender archivos recuperados y desinfectados. No se necesitan más acciones. |
 | Permitido | Un administrador permite que la amenaza permanezca en el dispositivo. | 
 

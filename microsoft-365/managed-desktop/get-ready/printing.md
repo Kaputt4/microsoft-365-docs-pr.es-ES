@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 480106eacbcc809007ff1aa45d776bb89beaf78cb7aaeefce41df33dfc000af9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: feba220d4e31443c85e600a7ab367a5f3c970e16
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869946"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364918"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Preparar recursos de impresión para el Escritorio administrado de Microsoft
 
@@ -41,12 +41,14 @@ Si ha decidido implementar impresoras mediante un script de PowerShell personali
 
 ## <a name="steps-to-get-ready"></a>Pasos para prepararse
 
-1. Revisar [Requisitos previos para Escritorio administrado de Microsoft](prerequisites.md).
-2. Usar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
-3. [Requisitos previos para las cuentas de invitado](guest-accounts.md)
-4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
-5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
-6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
-7. [Aplicaciones en el Escritorio administrado de Microsoft](apps.md)
-8. [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
-9. [Preparar recursos de impresión para Escritorio administrado de Microsoft](printing.md) (este artículo)
+1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
+2. Ejecutar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
+1. Comprar [Portal de empresa](../get-started/company-portal.md).
+1. Revisar [los requisitos previos de las cuentas invitadas](guest-accounts.md).
+1. Compruebe [la configuración de red](network.md).
+1. [Preparar certificados y perfiles de red](certs-wifi-lan.md).
+1. [Preparar el acceso del usuario a los datos](authentication.md).
+1. [Preparar aplicaciones](apps.md).
+1. [Preparar unidades asignadas](mapped-drives.md).
+1. Preparar los recursos de impresión (en este artículo).
+1. Nombres [de dispositivo de dirección](address-device-names.md).

@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 7138933c1ef3b849374cda16f5072f408877dd66910808c0ce771fcd2c317d0c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc06faa8a5a18f8f63a984e6ce3f7b6bfb6cbc4b
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869860"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364954"
 ---
 # <a name="readiness-assessment-tools"></a>Herramientas de evaluación de preparación
 
@@ -66,7 +66,7 @@ La herramienta de evaluación comprueba estos elementos:
 |Nombres de cuenta de seguridad   | Comprueba que ningún nombre de usuario entre en conflicto con los que Escritorio administrado de Microsoft reserva para su propio uso        |
 |Roles de administrador de seguridad     | Confirma que los usuarios con roles de Lector de seguridad, Operador de seguridad o Lector global se han asignado esos roles en Microsoft Defender para endpoint         |
 |Valores predeterminados de seguridad | Comprueba si la organización de Azure AD tiene habilitados los valores predeterminados de seguridad en Azure Active Directory |
-|Autoservicio de restablecimiento de contraseña     | Confirma que el restablecimiento de contraseñas de autoservicio está habilitado        |
+|Restablecimiento de contraseñas de autoservicio     | Confirma que el restablecimiento de contraseñas de autoservicio está habilitado        |
 |Rol de usuario estándar     | Comprueba que los usuarios son usuarios estándar y que no tienen derechos de administrador local         |
 
 
@@ -91,14 +91,16 @@ Para cada comprobación, la herramienta mostrará uno de los cuatro resultados p
 
 Después de completar la inscripción en Escritorio administrado de Microsoft, recuerda volver atrás y ajustar determinadas opciones de Configuración de Intune y Azure AD. Para obtener más información, vea [Ajustar la configuración después de la inscripción.](../get-started/conditional-access.md)
 
-## <a name="steps-to-get-ready"></a>Pasos para prepararse
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
 
 1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
-2. Usar las [herramientas para evaluar la preparación](readiness-assessment-tool.md) (Este artículo)
-3. [Requisitos previos para las cuentas de invitado](guest-accounts.md)
-4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
-5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
-6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
-7. [Aplicaciones en el Escritorio administrado de Microsoft](apps.md)
-8. [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
-9. [Preparar recursos de impresión para el Escritorio administrado de Microsoft](printing.md)
+2. Ejecute herramientas de evaluación de preparación (este artículo).
+1. Comprar [Portal de empresa](../get-started/company-portal.md).
+1. Revisar [los requisitos previos de las cuentas invitadas](guest-accounts.md).
+1. Compruebe [la configuración de red](network.md).
+1. [Preparar certificados y perfiles de red](certs-wifi-lan.md).
+1. [Preparar el acceso del usuario a los datos](authentication.md).
+1. [Preparar aplicaciones](apps.md).
+1. [Preparar unidades asignadas](mapped-drives.md).
+1. [Preparar recursos de impresión](printing.md).
+1. Nombres [de dispositivo de dirección](address-device-names.md).

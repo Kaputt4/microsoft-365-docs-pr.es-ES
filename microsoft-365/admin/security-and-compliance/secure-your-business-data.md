@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Cómo proteger el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, incluidos ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: 0088e3404227d1340af2801157027c250f5066f11604b2d46afd9910cd622d3e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 808bd8942c077ae1ab0bc78dbaebc8fc860da120
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822756"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393465"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las 10 formas principales de proteger Microsoft 365 planes empresariales
 
@@ -40,14 +41,14 @@ Microsoft recomienda completar las tareas enumeradas en la tabla siguiente que s
 |---|---|---|---|
 |1|[Configurar la autenticación multifactor](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Proporcionar formación a los usuarios](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Aumentar el nivel de protección contra malware en el correo](secure-your-business-data.md#malware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Protección contra ransomware](secure-your-business-data.md#ransomware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Detener el reenvío automático para correo electrónico](secure-your-business-data.md#forwarding)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Usar Office cifrado de mensajes](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Proteger el correo electrónico de ataques de suplantación de identidad](secure-your-business-data.md#phishing)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Proteger contra archivos adjuntos y archivos malintencionados con Caja fuerte adjuntos](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[Proteger contra ataques de suplantación de identidad con Caja fuerte links](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10|[Proteger contra ataques de suplantación de identidad con Caja fuerte links](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: [Microsoft 365 para empresas y campañas pequeñas](../../campaigns/index.md). Esta guía fue desarrollada en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de empresas pequeñas de las amenazas cibernéticas por parte de hackers sofisticados.
 
@@ -166,7 +167,7 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 > [!TIP]
 > También puede agregar los archivos que desea bloquear a la lista Antimalware en el [paso 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Para obtener más información, vea:
+Para más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 

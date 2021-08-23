@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: comprender la migración de Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios de Office 365 en las nuevas regiones del centro de datos alemán'
-ms.openlocfilehash: 327c7e5d15b006acd9a8b0df829cd2aadbdf8010
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: e301f58c3a194c6af8989f4081e733c50a4c104e
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349913"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400336"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migración de Microsoft Cloud Deutschland a Office 365 servicios en las nuevas regiones del centro de datos alemán
 
@@ -188,7 +188,7 @@ Actualmente hay 39 servicios disponibles como parte de Office 365 en las nuevas 
 30. Microsoft Forms
 31. Power Automate para Office 365
 32. Power Virtual Agents para Office 365
-33. PowerApps para Office 365
+33. Power Apps para Office 365
 34. Microsoft Bookings
 35. To-Do
 36. Whiteboard

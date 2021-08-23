@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4ca75cdd3721f8a49f36b59f4ada0cd6f3dee49e1bf1d139240d52f83899fbb7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 999667771bc33ff6e09b5afdff80c61c91daa601
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869958"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364930"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Requisitos previos del Escritorio administrado de Microsoft
 
@@ -56,14 +56,16 @@ Escritorio administrado de Microsoft requiere ciertas opciones de licencia para 
 > [!TIP]
 > El Administrador de cuentas de Microsoft le ayudará a revisar sus licencias y planes de servicio actuales y a encontrar la ruta de acceso más eficaz para obtener las licencias o planes de servicio adicionales que pueda necesitar, a la vez que evitará la duplicación.
 
-## <a name="steps-to-get-ready"></a>Pasos para prepararse
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
 
-1. Revisar [Requisitos previos para Escritorio administrado de Microsoft](prerequisites.md). (Este artículo)
-2. Usar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
-3. [Requisitos previos para las cuentas de invitado](guest-accounts.md)
-4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
-5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
-6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
-7. [Aplicaciones en el Escritorio administrado de Microsoft](apps.md)
-8. [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
-9. [Preparar recursos de impresión para el Escritorio administrado de Microsoft](printing.md)
+1. Revisar los requisitos previos (en este artículo).
+2. Ejecutar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
+1. Comprar [Portal de empresa](../get-started/company-portal.md).
+1. Revisar [los requisitos previos de las cuentas invitadas](guest-accounts.md).
+1. Compruebe [la configuración de red](network.md).
+1. [Preparar certificados y perfiles de red](certs-wifi-lan.md).
+1. [Preparar el acceso del usuario a los datos](authentication.md).
+1. [Preparar aplicaciones](apps.md).
+1. [Preparar unidades asignadas](mapped-drives.md).
+1. [Preparar recursos de impresión](printing.md).
+1. Nombres [de dispositivo de dirección](address-device-names.md).

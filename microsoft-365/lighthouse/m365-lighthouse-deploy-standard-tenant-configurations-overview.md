@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo usar líneas base para implementar configuraciones de inquilino estándar.
-ms.openlocfilehash: 1daaeba481f65018eaa9f82f9ef889c7e5dbd3e7fffb4421ae24aa1facf39354
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5eea1deae1c8cf56315e121baa29273fc98feca8
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800779"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365206"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Introducción al uso de líneas base para implementar configuraciones de inquilino estándar 
 
 > [!NOTE]
 > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse línea base proporcionan una forma repetible y escalable de evaluar y administrar la configuración Microsoft 365 seguridad en varios inquilinos. Las líneas base también ayudan a supervisar las directivas de seguridad principales y los estándares de cumplimiento de inquilinos con configuraciones que protegen usuarios, dispositivos y datos.
+Microsoft 365 Lighthouse línea base proporcionan una forma repetible y escalable de evaluar y administrar la configuración de seguridad Microsoft 365 en varios inquilinos de clientes. Las líneas base también ayudan a supervisar las directivas de seguridad principales y los estándares de cumplimiento de inquilinos con configuraciones que protegen usuarios, dispositivos y datos.
 
 Diseñado para ayudar a los partners a permitir que los clientes adopten la seguridad a su propio ritmo, Microsoft 365 Lighthouse proporciona un conjunto estándar de parámetros de línea base y configuraciones predefinidas para Microsoft 365 servicios. Estas configuraciones de seguridad ayudan a medir el progreso Microsoft 365 seguridad y cumplimiento de los inquilinos.
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d5307eba16184c8eb3aa3dadf32ad3d2ea69448fd53bdbc27d1db13bef1a40ec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 465aba55225aed74c838cb8ce09acf6d8b284491
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857816"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408063"
 ---
 # <a name="batch-update-alerts"></a>Alertas de actualización por lotes
 
@@ -55,7 +55,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso | Permiso | Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación | Alerts.ReadWrite.All | 'Leer y escribir todas las alertas'
+Aplicación | Alert.ReadWrite.All | 'Leer y escribir todas las alertas'
 Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
 
 > [!NOTE]
@@ -85,10 +85,10 @@ Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mante
 
 Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado.
 
-Propiedad | Tipo | Description
+Propiedad | Tipo | Descripción
 :---|:---|:---
 alertIds | Cadena de &lt; lista&gt;| Una lista de los IDs de las alertas que se actualizarán. **Required**
-status | String | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
+status | Cadena | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
 assignedTo | Cadena | Propietario de las alertas especificadas
 classification | String | Especifica la especificación de las alertas especificadas. Los valores de propiedad son: 'Unknown', 'FalsePositive', 'TruePositive'. 
 determinación | Cadena | Especifica la determinación de las alertas especificadas. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'

@@ -16,14 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 description: Obtenga información sobre cómo administrar la configuración Office scripts para los usuarios de su organización.
-ms.openlocfilehash: 103c8a6ce2e71cf5cb3660d4ed8b3aadbd249ff3b37b76ef5243c6132b8cfe54
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4af5d318552b371e9b7eef5be6750fde2c0b2ace
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825060"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394209"
 ---
 # <a name="manage-office-scripts-settings"></a>Administrar la configuración de los Scripts de Office
 

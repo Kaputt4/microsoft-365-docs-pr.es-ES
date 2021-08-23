@@ -17,17 +17,18 @@ ms.custom:
 - Lean
 - MSStore_Link
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Cree un buzón de sala o equipamiento para que todos los usuarios de su organización puedan reservarlo para reuniones o eventos con Outlook. '
-ms.openlocfilehash: 7b5db5cfbbcacf501a280df98c4d1f9fc21fe509
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 3bbaaf8b1074acd7abdd2cd7ce205eabcec11634
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346777"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394221"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Buzones de sala y equipamiento
 

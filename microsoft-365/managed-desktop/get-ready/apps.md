@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: b248af7d098fa8b78632b248e37248840f0f1d8302a658061489f6ea68e4fd85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c8a501c178ae0cffb98870d4fccd44028cbf6ec0
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877750"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365110"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Aplicaciones en Escritorio administrado de Microsoft
 
@@ -56,14 +56,16 @@ Revisa tus aplicaciones y comprueba:
 - Las aplicaciones deben estar listas para la administración Microsoft Intune. Para obtener más información sobre este tema, consulta [Windows 10 implementación de aplicaciones con Microsoft Intune](/intune/apps-windows-10-app-deploy) y Agregar aplicaciones a [Microsoft Intune](/intune/apps-add).
 - Otros requisitos de empaquetado previo, como proporcionar claves de licencia, acuerdo con términos de licencia y establecer previamente conexiones de servidor.
 
-## <a name="steps-to-get-ready"></a>Pasos para prepararse
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
 
-1. Revisar [Requisitos previos para Escritorio administrado de Microsoft](prerequisites.md).
-2. Usar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
-3. [Requisitos previos para las cuentas de invitado](guest-accounts.md)
-4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
-5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
-6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
-7. [Aplicaciones en Escritorio administrado de Microsoft](apps.md) (este artículo)
-8. [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
-9. [Preparar recursos de impresión para el Escritorio administrado de Microsoft](printing.md)
+1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
+2. Ejecutar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
+1. Comprar [Portal de empresa](../get-started/company-portal.md).
+1. Revisar [los requisitos previos de las cuentas invitadas](guest-accounts.md).
+1. Compruebe [la configuración de red](network.md).
+1. [Preparar certificados y perfiles de red](certs-wifi-lan.md).
+1. [Preparar el acceso del usuario a los datos](authentication.md).
+1. Preparar aplicaciones (en este artículo).
+1. [Preparar unidades asignadas](mapped-drives.md).
+1. [Preparar recursos de impresión](printing.md).
+1. Nombres [de dispositivo de dirección](address-device-names.md).

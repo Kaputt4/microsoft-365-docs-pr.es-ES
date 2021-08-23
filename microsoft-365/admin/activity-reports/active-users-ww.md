@@ -14,6 +14,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365 y averiguar cuántas licencias de productos se usan.
-ms.openlocfilehash: 685373b41d86239f8c552fef0252472d82be3c235babcec77d1b6c806ad4116f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 456d561246a1c2073b571fa5c48ed97cc9f71849
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798292"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393453"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Evaluar el informe Microsoft 365 usuarios activos
 

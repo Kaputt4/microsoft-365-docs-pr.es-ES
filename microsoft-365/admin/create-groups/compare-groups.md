@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Los miembros de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, Stream y un Planner.
-ms.openlocfilehash: c5e616e95cf56a67799f4edc2608a54758a7aa0b
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 0b622f791de7615e45e49faec47558b0e67067f2
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346885"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393429"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 

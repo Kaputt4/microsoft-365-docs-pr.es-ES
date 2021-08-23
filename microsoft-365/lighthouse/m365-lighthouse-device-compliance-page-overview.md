@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Cumplimiento de dispositivos.
-ms.openlocfilehash: 8143f6d987145001a502616ea4a3672fba24a7f3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c87f808a3694c1f256a8a4787591a93444cf792f
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257623"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364942"
 ---
 # <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse Introducción a la página de cumplimiento de dispositivos
 
 > [!NOTE]
 > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse permite ver información e información relacionada con el cumplimiento de dispositivos  de Intune para todos los inquilinos seleccionando Dispositivos en el panel de navegación izquierdo para abrir la página Cumplimiento de dispositivos. En esta página, puede obtener información general sobre el estado de cumplimiento entre inquilinos, ver una lista de dispositivos para cada inquilino y obtener informes de estado sobre las directivas y la configuración de cumplimiento.
+Microsoft 365 Lighthouse permite ver información e información relacionada con el cumplimiento de dispositivos  de Intune para todos los inquilinos de clientes seleccionando Dispositivos en el panel de navegación izquierdo para abrir la página Cumplimiento de dispositivos. En esta página, puede obtener información general sobre el estado de cumplimiento entre inquilinos, ver una lista de dispositivos para cada inquilino y obtener informes de estado sobre las directivas y la configuración de cumplimiento.
 
 ## <a name="overview-tab"></a>Ficha Información general  
   
@@ -79,7 +79,7 @@ La pestaña Directivas también incluye las siguientes opciones:
 
 ## <a name="settings-tab"></a>Configuración pestaña
 
-La pestaña configuración proporciona un informe agregado de la configuración no compatible en todos los dispositivos de inquilino. 
+La pestaña Configuración proporciona un informe agregado de la configuración no compatible en todos los dispositivos de inquilino. 
 
 Para ver la configuración no compatible para dispositivos en una plataforma específica, use el **menú** desplegable Plataforma para filtrar la lista. Para ver la configuración no compatible para uno o varios inquilinos de clientes específicos, use el menú desplegable **Inquilinos** para filtrar la lista.
 

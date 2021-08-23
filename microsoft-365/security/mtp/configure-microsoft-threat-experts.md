@@ -1,6 +1,6 @@
 ---
 title: Configurar y administrar las Expertos en amenazas de Microsoft a través de Microsoft 365 Defender
-description: Suscríbete a Microsoft Threats Experts a través de Microsoft 365 Defender para configurarlo, administrarlo y usarlo en tus operaciones de seguridad diarias y en el trabajo de administración de seguridad.
+description: Suscríbete a Microsoft Threats Experts Microsoft 365 Defender para configurarlo, administrarlo y usarlo en el trabajo diario de administración de seguridad y operaciones de seguridad.
 keywords: Expertos en amenazas de Microsoft, servicio de búsqueda de amenazas administradas, MTE, servicio de búsqueda administrada de Microsoft
 search.product: Windows 10
 search.appverid: met150
@@ -14,12 +14,12 @@ localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 0ccb8482dae94de4a9f43a5ecaf7c701e6dd82a5
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: db98e147ef4453f62d4d17431286aaa99959712d
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844795"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58357523"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurar y administrar las Expertos en amenazas de Microsoft a través de Microsoft 365 Defender
 
@@ -37,13 +37,13 @@ ms.locfileid: "52844795"
 > [!IMPORTANT]
 > Antes de aplicar, asegúrese de analizar los requisitos de elegibilidad para el servicio de búsqueda de amenazas administradas Expertos en amenazas de Microsoft– Targeted Attack Notifications con el proveedor de servicio técnico de Microsoft y el equipo de cuenta.
 
-Para recibir notificaciones de ataques dirigidos, deberás tener Microsoft 365 Defender implementado con dispositivos inscritos. A continuación, envíe una aplicación a través del portal M365 para Expertos en amenazas de Microsoft- Notificaciones de ataque dirigidas.
+Para recibir notificaciones de ataques dirigidos, deberás tener Microsoft 365 Defender con dispositivos inscritos. A continuación, envíe una aplicación a través del portal M365 para Expertos en amenazas de Microsoft- Notificaciones de ataque dirigidas.
 
 Póngase en contacto con su equipo de cuenta o representante de Microsoft para suscribirse a Expertos en amenazas de Microsoft : Expertos a petición. Expertos a petición le permite consultar con nuestros expertos en amenazas sobre cómo proteger su organización de detecciones y adversarias relevantes.
 
 ## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Aplicar para Expertos en amenazas de Microsoft: servicio de notificaciones de ataques dirigidos
 
-Si ya tienes Microsoft Defender para Endpoint y Microsoft 365 Defender, puedes solicitar Expertos en amenazas de Microsoft: Notificaciones de ataques dirigidos a través de su portal de Microsoft 365 Defender.  Las notificaciones de ataques dirigidos le proporcionan información y análisis especiales que le ayudarán a identificar las amenazas más críticas para su organización, de modo que pueda responder a ellas rápidamente.
+Si ya tienes Microsoft Defender para endpoint y Microsoft 365 Defender, puedes solicitar Expertos en amenazas de Microsoft notificaciones de ataque dirigidas a través de su portal Microsoft 365 Defender web.  Las notificaciones de ataques dirigidos le proporcionan información y análisis especiales que le ayudarán a identificar las amenazas más críticas para su organización, de modo que pueda responder a ellas rápidamente.
 
 1. En el panel de navegación, vaya **a Configuración > Endpoints > General > Advanced features > Expertos en amenazas de Microsoft - Targeted Attack Notifications**.
 
@@ -67,8 +67,8 @@ Si ya tienes Microsoft Defender para Endpoint y Microsoft 365 Defender, puedes s
 
 Puedes recibir una notificación de ataque dirigida desde Expertos en amenazas de Microsoft a través de los siguientes medios:
 
-- Página Microsoft 365 incidentes del portal  de Defender
-- Panel de Microsoft 365 **alertas** del portal de Defender
+- Página Microsoft 365 Defender incidentes **del** portal
+- Panel de Microsoft 365 Defender de **alertas del** portal de aplicaciones
 - API de alerta [de](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) OData y API de [REST](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
 - [Tabla DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) en búsqueda avanzada
 - La bandeja de entrada, si decides enviarte notificaciones de ataque dirigidas por correo electrónico. Consulta [Crear una regla de notificación de correo electrónico a](#create-an-email-notification-rule) continuación.
@@ -91,12 +91,12 @@ Si ya eres cliente de Microsoft Defender para Endpoint, puedes ponerse en contac
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Consulte a un experto en amenazas de Microsoft sobre actividades de ciberseguridad sospechosas en su organización
 
-Puede ponerse en contacto Expertos en amenazas de Microsoft desde dentro del portal de Microsoft 365 Defender. Los expertos pueden ayudarle a comprender las amenazas complejas y las notificaciones de ataque dirigidas. Asociate con expertos para obtener más detalles sobre alertas e incidentes, o consejos sobre cómo controlar el riesgo. Obtenga información sobre el contexto de inteligencia de amenazas descrito por el panel del portal.
+Puede ponerse en contacto Expertos en amenazas de Microsoft desde dentro del portal Microsoft 365 Defender web. Los expertos pueden ayudarle a comprender las amenazas complejas y las notificaciones de ataque dirigidas. Asociate con expertos para obtener más detalles sobre alertas e incidentes, o consejos sobre cómo controlar el riesgo. Obtenga información sobre el contexto de inteligencia de amenazas descrito por el panel del portal.
 
 > [!NOTE]
 >
 > - Actualmente, no se admiten las consultas de alerta relacionadas con los datos de inteligencia de amenazas personalizados de la organización. Consulte con el equipo de operaciones de seguridad o respuesta a incidentes para obtener más información.
-> - Debe tener el  permiso Administrar la configuración de seguridad en el Centro de seguridad en el portal de Microsoft 365 Defender para enviar una consulta a través del formulario Consultar **a un** experto en amenazas.
+> - Debe tener el  permiso Administrar la configuración de seguridad en el Centro de seguridad en el portal de Microsoft 365 Defender para enviar una consulta a través del formulario **Consultar a un** experto en amenazas.
 
 1. Vaya a la página del portal relacionada con la información que le gustaría investigar: por ejemplo, **Device**, **Alert** o **Incident**. Asegúrese de que la página del portal relacionada con la consulta esté en vista antes de enviar una solicitud de investigación.
 
@@ -151,7 +151,7 @@ Vea este vídeo para obtener una introducción rápida al Centro de servicios de
 - Recibimos una notificación de ataque dirigida de Expertos en amenazas de Microsoft. ¿Qué datos nos puede proporcionar que podamos transmitir a nuestro equipo de respuesta a incidentes?
 
 > [!NOTE]
-> Expertos en amenazas de Microsoft es un servicio administrado de búsqueda de amenazas y no un servicio de respuesta a incidentes. Sin embargo, los expertos pueden realizar una transición sin problemas de la investigación a los servicios del Equipo de detección y respuesta (DART) de Microsoft Cybersecurity Solutions Group (CSG), cuando sea necesario. También puede optar por interactuar con su propio equipo de respuesta a incidentes para solucionar problemas que requieren una respuesta a incidentes.
+> Expertos en amenazas de Microsoft es un servicio administrado de búsqueda de amenazas y no un servicio de respuesta a incidentes. Sin embargo, puede interactuar con su propio equipo de respuesta a incidentes para solucionar problemas que requieren una respuesta a incidentes. Si no tienes tu propio equipo de respuesta a incidentes y quieres la ayuda de Microsoft, puedes interactuar con el Equipo de respuesta a incidentes de ciberseguridad (CIRT) de CSS. Pueden abrir un vale para ayudar a resolver su consulta.
 
 ## <a name="scenario"></a>Escenario
 
@@ -166,6 +166,6 @@ La respuesta de Expertos en amenazas de Microsoft variará según la consulta. P
 
 Si un experto solicita más información o muestras de archivos, es fundamental responder rápidamente para mantener la investigación en movimiento.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre Expertos en amenazas de Microsoft](microsoft-threat-experts.md)
