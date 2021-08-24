@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 02cc958f816c2335a24923cf7fc16b80b9806d9c7811457e88080be50438ce48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c33677d483eadca4526d2c7f977ad91de6c7340c
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814199"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450133"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
-Este artículo le guiará a través de tres escenarios donde puede crear y modificar una directiva DLP que use dispositivos como una ubicación.
+Este artículo le guiará a través de cuatro escenarios en los que puede crear y modificar una directiva DLP que use dispositivos como una ubicación.
 
 ## <a name="dlp-settings"></a>Configuración DLP
 
@@ -65,16 +65,28 @@ Puede usar esta lógica para crear sus rutas de exclusión:
 
 ### <a name="unallowed-apps"></a>Aplicaciones no permitidas
 
-Cuando la configuración de **Acceso por aplicaciones y exploradores no permitidos** de una directiva esté activada y los usuarios intenten usar estas aplicaciones para acceder a un archivo protegido, la actividad se permitirá, se bloqueará, o se bloqueará pero los usuarios podrán invalidar la restricción. Toda actividad es auditada y está disponible para su revisión en el explorador de actividades.
+Las aplicaciones no permitidas son una serie de aplicaciones que crea que no tienen acceso a un archivo protegido por la prevención de pérdida de datos (DLP).
+Cuando la configuración de **Acceso por parte de aplicaciones y exploradores no permitidos** de una directiva esté activada y una aplicación que esté en esta lista de aplicaciones no permitidas intente acceder a un archivo protegido, la actividad se permitirá, se bloqueará o se bloqueará, y los usuarios podrán invalidar la restricción. Toda actividad es auditada y está disponible para su revisión en el explorador de actividades.
 
 > [!IMPORTANT]
 > No incluya la ruta de acceso al archivo ejecutable, solo el nombre del archivo ejecutable (por ejemplo, browser.exe).
+
+#### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>Protección de datos confidenciales de aplicaciones con sincronización en la nube
+
+Para evitar que las aplicaciones con sincronización en la nube sincronicen elementos confidenciales en la nube, como *onedrive.exe*, agregue la aplicación de sincronización en la nube a la lista **Aplicaciones no permitidas**. Cuando una aplicación con sincronización en la nube no permitida intenta acceder a un elemento protegido por una directiva DLP de bloqueo, la DLP puede generar notificaciones repetidas. Puede evitar estas notificaciones repetidas habilitando la opción **Cuarentena automática** en **Aplicaciones no permitidas**.  
+
+##### <a name="auto-quarantine-preview"></a>Cuarentena automática (vista previa)
+
+Cuando está habilitada, la cuarentena automática se inicia en el momento en el que una aplicación no permitida intenta acceder a un elemento confidencial protegido por una DLP. La cuarentena automática mueve el elemento confidencial a una carpeta configurada por el administrador y puede dejar un archivo **.txt** como marcador de posición en el lugar del original. Puede configurar el texto del archivo del marcador de posición para indicar a los usuarios a dónde se movió el elemento y cualquier otra información pertinente.  
+
+Puede usar la cuarentena automática para evitar una cadena infinita de notificaciones de la DLP dirigida al usuario y los administradores. Vea [Escenario 4: evitar el bucle de notificaciones de la DLP en las aplicaciones con sincronización en la nube con cuarentena automática (vista previa)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
 
 ### <a name="unallowed-bluetooth-apps"></a>Aplicaciones de Bluetooth no permitidas
 
 Evite que los usuarios transfieran archivos protegidos por las directivas a través de aplicaciones Bluetooth específicas.
 
 ### <a name="browser-and-domain-restrictions"></a>Restricciones del dominio y del explorador:
+
 Restrinja el uso compartido de los archivos confidenciales que coincidan con las directivas con dominios de servicio en la nube sin restricciones.
 
 #### <a name="service-domains"></a>Dominios de servicio
@@ -220,6 +232,115 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
    > ![notificación de invalidación de cliente bloqueado por dlp en punto de conexión](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. Compruebe que el evento se encuentre en el Explorador de actividades.
+
+### <a name="scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview"></a>Escenario 4: evitar el bucle de notificaciones de la DLP en las aplicaciones con sincronización en la nube con cuarentena automática (vista previa)
+
+#### <a name="before-you-begin"></a>Antes de empezar
+
+En este escenario, se bloquea la sincronización de archivos con la etiqueta de confidencialidad **Extremadamente confidencial** para OneDrive. Se trata de un escenario complejo con varios componentes y procedimientos. Necesitará:
+
+- Una cuenta de usuario de AAD de destino y un equipo Windows 10 incorporado que ya esté sincronizando una carpeta local de OneDrive con el almacenamiento en la nube de OneDrive.
+- Microsoft Word instalado en el equipo Windows 10 de destino
+- Etiquetas de confidencialidad configuradas y publicadas. Consulte [Empiece a usar las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) y [Crear y configurar etiquetas de confidencialidad y sus directivas](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
+
+Hay tres pasos:
+
+1. Configure las opciones de cuarentena automática de la DLP del punto de conexión.
+2. Cree una directiva que bloquee los elementos confidenciales que tengan la etiqueta de confidencialidad **Extremadamente confidencial**.
+3. Cree un documento de Word en el dispositivo Windows 10 al que se destina la directiva, aplique la etiqueta y cópiela en la carpeta local de OneDrive de las cuentas de usuario que se está sincronizando.  
+
+#### <a name="configure-endpoint-dlp-unallowed-app-and-auto-quarantine-settings"></a>Configure las aplicaciones no permitidas y la configuración de cuarentena automática de la DLP.
+
+1. Abra la [configuración del punto de conexión de la DLP](https://compliance.microsoft.com/datalossprevention?viewid=globalsettings)
+
+2. Expanda las **Aplicaciones no permitidas**.
+
+3. Elija **Agregar o editar aplicaciones no permitidas** y agregue *OneDrive* como nombre para mostrar y *onedrive.exe* como nombre del ejecutable para impedir que onedrive.exe acceda a los elementos con la etiqueta **Extremadamente confidencial**.
+
+4. Seleccione **cuarentena automática** y **Guardar**.
+
+5. En **Configuración de la cuarentena automática** elija **Editar la configuración de la cuarentena automática**.
+
+6. Habilite **Cuarentena automática para las aplicaciones no permitidas**.
+
+7. Escriba la ruta de acceso a la carpeta de los equipos locales a las que desea mover los archivos confidenciales originales. Por ejemplo:
+   
+**'%homedrive%%homepath%\Microsoft DLP\Cuarentena'** para el nombre de usuario *Isaiah Langer* colocará los elementos movidos en una 
+
+carpeta *C:\Usuarios\IsaiahLanger\Microsoft DLP\Cuarentena\OneDrive* y se anexará una marca de fecha y hora al nombre de archivo original.
+
+> [!NOTE]
+> La cuarentena automática de la DLP creará subcarpetas para los archivos de cada aplicación no permitida. Por lo tanto, si tiene tanto el *Bloc de notas* como *OneDrive* en la lista de aplicaciones no permitidas, se creará una subcarpeta para **\OneDrive** y otra subcarpeta para **\Bloc de notas**.
+
+8. Elija **Reemplace los archivos por un archivo .txt que contenga el siguiente texto** y escriba el texto que desee en el archivo del marcador de posición. Por ejemplo, para un archivo denominado *cuar auto 1.docx*:
+    
+**%%FileName%% contiene información confidencial que su empresa está protegiendo con la directiva de prevención de pérdida de datos (DLP) %%PolicyName%% y se ha movido a la carpeta en cuarentena: %%QuarantinePath%%.** 
+
+dejará un archivo .txt que contiene este mensaje
+
+*cuar auto 1.docx contiene información confidencial que su empresa está protegiendo con la directiva de prevención de pérdida de datos (DLP) y se ha movido a la carpeta en cuarentena: C:\Usuarios\IsaiahLanger\Microsoft DLP\Cuarentena\OneDrive\cuar auto 1_20210728_151541.docx.*
+
+9. Elija **Guardar**
+
+#### <a name="configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential"></a>Configurar una directiva para bloquear la sincronización de archivos de OneDrive con la etiqueta de confidencialidad Extremadamente confidencial
+
+1. Abra la [página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+
+2. Elija **Crear directiva**.
+
+3. En este escenario, elija **Personalizado** y, a continuación, **Directiva personalizada** y elija **Siguiente**.
+
+4. Rellene los campos **Nombre** y **Descripción** y elija **Siguiente**.
+
+5. Desactive el campo **Estado** para todas las ubicaciones excepto para **Dispositivos**. Si tiene una cuenta de usuario final específica desde la que desea hacer una prueba, asegúrese de seleccionarla en el ámbito de búsqueda. Elija **Siguiente**.
+
+6. Acepte la selección **Crear o personalizar reglas DLP avanzadas** que viene predeterminada y elija **Siguiente**.
+
+7. Cree una regla con estos valores:
+    1. **Nombre** > *Escenario 4 de la cuarentena automática*
+    1. **Condiciones** > **Contenido contiene** > **Etiquetas de confidencialidad** > **Extremadamente confidencial**
+    1.  **Acciones** > **Auditar o restringir actividades en dispositivos Windows** > **Acceso de aplicaciones no permitidas** > **Bloquear**. Para los fines de este escenario, borre todas las demás actividades.
+    1. **Notificaciones del usuario** > **Activadas**
+    1. **Dispositivos de punto de conexión** > Elegir **Mostrar a los usuarios una notificación de sugerencia de directiva cuando una actividad** siempre que no esté ya activada.
+    
+8. Elija **Guardar** y **Siguiente**.
+
+9. Elija **Activar inmediatamente**. Elija **Siguiente**.
+
+10. Revise la configuración y elija **Enviar**.
+
+> [!NOTE]
+> Espere al menos una hora para que la nueva directiva se replique y se aplique al equipo de Windows 10 de destino.
+
+11. La nueva directiva DLP se mostrará en la lista de directivas.
+
+#### <a name="test-auto-quarantine-on-the-windows-10-device"></a>Probar la cuarentena automática en el dispositivo Windows 10
+
+1. Inicie sesión en el equipo Windows 10 con la cuenta de usuario que especificó en [Configurar una directiva para bloquear la sincronización de archivos de OneDrive con la etiqueta de confidencialidad Extremadamente confidencial](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) del paso 5.
+
+2. Cree una carpeta con un contenido que no se sincronizará en OneDrive. Por ejemplo:
+
+    *carpeta de origen C:\auto-cuarentena*
+
+3. Abra Microsoft Word y cree un archivo en la carpeta de origen de cuarentena automática. Aplique la etiqueta de confidencialidad **Extremadamente confidencial**. Consulte [Aplicar etiquetas de confidencialidad a sus archivos y correos electrónicos en Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+
+4. Copie el archivo que acaba de crear en la carpeta de sincronización de OneDrive. Debe aparecer una notificación del sistema para el usuario que indica que la acción no está permitida y que el archivo se pondrá en cuarentena. Por ejemplo, para el nombre de usuario *Isaiah Langer* y un documento titulado *doc auto-cuarentena 1.docx* vería este mensaje:
+
+![Ventana emergente de notificación de prevención de pérdida de datos para el usuario que indica que la acción de sincronización de OneDrive no está permitida para el archivo especificado y que el archivo se pondrá en cuarentena](../media/auto-quarantine-user-notification-toast.png)
+
+El mensaje indica:
+
+«No se permite abrir doc auto-cuarentena 1.docx con esta aplicación. El archivo se pondrá en cuarentena en 'C:\Usuarios\IsaiahLanger\Microsoft DLP\OneDrive'».
+
+5. Elija **Descartar**
+
+6. Abra el archivo .txt del marcador de posición. Se denominará **doc auto-cuarentena 1.docx_ *fecha_hora*.txt**. 
+
+7. Abra la carpeta de cuarentena y confirme que el archivo original está allí.
+ 
+8. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al explorador de actividades](data-classification-activity-explorer.md), de ser necesario. 
+
+9. Compruebe que el evento se encuentre en el Explorador de actividades.
 
 ## <a name="see-also"></a>Consulte también
 

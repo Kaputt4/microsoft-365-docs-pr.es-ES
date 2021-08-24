@@ -188,6 +188,8 @@
               href: m365d-autoir-results.md
             - name: Abordar falsos positivos y falsos negativos
               href: m365d-autoir-report-false-positives-negatives.md
+            - name: Usar Power Automate
+              href: use-power-automate.md
         - name: Búsqueda avanzada
           items:
             - name: Información general sobre la búsqueda avanzada

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 332a81e1433714ed3a2d962e09777a1c4dcf5a90b40172e31bae483bd4177bbd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a099ab2241e1e2a4705fd54760a48cb3f95b421
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851820"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387013"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Soluciones de auditoría en Microsoft 365
 
@@ -65,7 +65,7 @@ La auditoría avanzada se desarrolla a partir de las funcionalidades de la audit
 
 - **Retención prolongada de registros de auditoría**. Los registros de auditoría de Exchange, SharePoint y Azure Active Directory se conservan durante un año de forma predeterminada. Los registros de auditoría del resto de las actividades se conservan durante 90 días de forma predeterminada, pero puede usar directivas de retención de registros de auditoría para configurar períodos de retención más largos.
 
-- **Eventos cruciales de gran valor**. Los registros de auditoría de eventos cruciales pueden ayudar a su organización a llevar a cabo investigaciones forenses y de cumplimiento proporcionando visibilidad de eventos como, por ejemplo, cuándo se accede a los elementos de correo o cuándo se responde a, y se reenvían los elementos de correo, y cuándo y qué ha buscado un usuario en Exchange Online y SharePoint Online. Estos eventos cruciales pueden ayudarle a investigar posibles infracciones y a determinar el ámbito del compromiso.
+- **Eventos de auditoría avanzada fundamentales y de alto valor**. Los registros de auditoría de eventos cruciales pueden ayudar a su organización a llevar a cabo investigaciones forenses y de cumplimiento proporcionando visibilidad de eventos como, por ejemplo, cuándo se accede a los elementos de correo o cuándo se responde a, y se reenvían los elementos de correo, y cuándo y qué ha buscado un usuario en Exchange Online y SharePoint Online. Estos eventos cruciales pueden ayudarle a investigar posibles infracciones y a determinar el ámbito del compromiso.
 
 - **Mayor ancho de banda para la API de Actividad de administración de Office 365** La auditoría avanzada proporciona a las organizaciones más ancho de banda para tener acceso a los registros de auditoría a través de la API de Actividad de administración de Office 365. Aunque inicialmente todas las organizaciones (que tienen auditoría básica o auditoría avanzada) asignan una línea base de 2 000 solicitudes por minuto, este límite aumentará dinámicamente según el recuento de puestos de una organización y su suscripción a las licencias. El resultado es que las organizaciones con auditoría avanzada pueden obtener aproximadamente el doble de ancho de banda que las organizaciones con auditoría básica.
 
@@ -155,11 +155,11 @@ Si su organización tiene una suscripción compatible con la auditoría avanzada
   
    - Habilitar la auditoría de eventos cruciales y, después, activar el plan de servicio/aplicación de auditoría avanzada para esos usuarios.
 
-2. Habilitar los eventos cruciales que se registrarán cuando los usuarios realicen búsquedas en Exchange Online y SharePoint Online.
+2. Habilitar los eventos de auditoría avanzada para que se registren cuando los usuarios realicen búsquedas en Exchange Online y SharePoint Online.
 
 3. Configurar las directivas de retención de registros de auditoría. Además de la directiva predeterminada que conserva los registros de auditoría de Exchange, SharePoint y Azure AD durante un año, puede crear otras directivas de retención de registros de auditoría para cumplir los requisitos de los equipos de operaciones de seguridad, TI y cumplimiento de su organización.
 
-4. Busque eventos cruciales y otras actividades al llevar a cabo investigaciones forenses. Después de completar los pasos 1 y 2 puede buscar en el registro de auditoría eventos cruciales y otras actividades durante investigaciones exhaustivas de cuentas comprometidas y otros tipos de investigaciones de seguridad o cumplimiento.
+4. Busque eventos fundamentales de auditoría avanzada y otras actividades al realizar investigaciones exhaustivas. Después de completar los pasos 1 y 2, puede buscar en el registro de auditoría eventos de auditoría avanzada y otras actividades durante investigaciones exhaustivas de cuentas comprometidas y otros tipos de investigaciones de seguridad o cumplimiento.
 
 Para obtener instrucciones más detalladas, consulte [Configurar la auditoría avanzada](set-up-advanced-audit.md).
 
