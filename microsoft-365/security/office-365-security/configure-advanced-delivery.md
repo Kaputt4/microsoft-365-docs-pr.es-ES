@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa92adbcca8f01f878649081472ef600075a06d3
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 14e952aacf20350fb264fecd72f626b0f3a30729
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386977"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483360"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -108,11 +108,11 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
      > [!NOTE]
      > Use el dominio de la dirección (también conocida como dirección `5321.MailFrom` **MAIL FROM,** remitente P1 o remitente de sobre) que se usa en la transmisión SMTP del mensaje.
 
-   - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores admitidos son:
+   - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores válidos son:
      - IP única: por ejemplo, 192.168.1.1.
      - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
      - IP cidr: por ejemplo, 192.168.0.1/25.
-   - Direcciones **URL** de simulación para permitir: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que forman parte de la campaña de simulación de suplantación de identidad que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas. Para obtener el formato de sintaxis de dirección URL, vea [Sintaxis url para la lista de inquilinos permitidos o bloqueados.](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)
+   - Direcciones **URL** de simulación para permitir: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que forman parte de la campaña de simulación de suplantación de identidad que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas. Para obtener el formato de sintaxis de dirección URL, vea [Sintaxis url para la lista de inquilinos permitidos o bloqueados.](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)
 
    Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
@@ -269,6 +269,7 @@ En PowerShell & centro de seguridad y cumplimiento, los elementos básicos de la
 
 - **La directiva de invalidación de simulación de suplantación de** identidad : controlada por los **\* cmdlets -PhishSimOverridePolicy.**
 - **La regla de invalidación de simulación de** suplantación de identidad : controlada por los **\* cmdlets -PhishSimOverrideRule.**
+- **Las direcciones URL de** simulación de phishing permitidas (desbloqueadas): controladas por los cmdlets **\* -TenantAllowBlockListItems.**
 
 Este comportamiento tiene los siguientes resultados:
 
@@ -279,10 +280,13 @@ Este comportamiento tiene los siguientes resultados:
 
 ### <a name="use-powershell-to-configure-third-party-phishing-simulations"></a>Usar PowerShell para configurar simulaciones de suplantación de identidad de terceros
 
-Configurar una simulación de suplantación de identidad de terceros en la directiva de entrega avanzada en PowerShell es un proceso de dos pasos:
+Configurar una simulación de suplantación de identidad de terceros en PowerShell es un proceso de varios pasos:
 
 1. Crear la directiva de invalidación de simulación de suplantación de identidad.
-2. Cree la regla de invalidación de simulación de suplantación de identidad (phishing) que especifica la directiva a la que se aplica la regla.
+2. Cree la regla de invalidación de simulación de suplantación de identidad (phishing) que especifica:
+   - La directiva a la que se aplica la regla.
+   - La dirección IP de origen de los mensajes de simulación de suplantación de identidad.
+3. Opcionalmente, identidad de las direcciones URL de simulación de suplantación de identidad que se deben permitir (es decir, no bloqueados ni examinados).
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>Paso 1: Usar PowerShell para crear la directiva de invalidación de simulación de suplantación de identidad
 
@@ -320,6 +324,24 @@ New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePoli
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [vea New-PhishSimOverrideRule](/powershell/module/exchange/new-phishsimoverriderule).
 
+#### <a name="step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow"></a>Paso 3: (opcional) Usar PowerShell para identificar las direcciones URL de simulación de suplantación de identidad
+
+Utilice la siguiente sintaxis:
+
+```powershell
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URLN>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
+```
+
+Para obtener más información acerca de la sintaxis de la dirección URL, vea [Sintaxis url para la lista de inquilinos permitidos o bloqueados.](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)
+
+En este ejemplo se agrega una entrada de dirección URL para la dirección URL de simulación de suplantación de identidad de terceros especificada sin expiración.
+
+```powershell
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries *.fabrikam.com -NoExpiration
+```
+
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
+
 ### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>Usar PowerShell para ver la directiva de invalidación de simulación de suplantación de identidad
 
 En este ejemplo se devuelve información detallada sobre la única directiva de invalidación de simulación de suplantación de identidad.
@@ -350,6 +372,16 @@ Después de identificar las reglas no válidas, puede quitarlas mediante el cmdl
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-PhishSimOverrideRule](/powershell/module/exchange/get-phishsimoverriderule).
 
+### <a name="use-powershell-to-view-the-allowed-phishing-simulation-url-entries"></a>Usar PowerShell para ver las entradas de url de simulación de suplantación de identidad permitidas
+
+Para ver las direcciones URL de simulación de suplantación de identidad permitidas, ejecute el siguiente comando:
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery
+```
+
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+
 ### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>Usar PowerShell para modificar la directiva de invalidación de simulación de suplantación de identidad
 
 Para modificar la directiva de invalidación de simulación de suplantación de identidad,use la siguiente sintaxis:
@@ -366,24 +398,7 @@ Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Set-PhishSimOverridePolicy](/powershell/module/exchange/set-phishsimoverridepolicy).
 
-### <a name="use-powershell-to-modify-the-simulation-url-settings"></a>Usar PowerShell para modificar la configuración de la dirección URL de simulación
-
-Para modificar la directiva de invalidación de simulación de suplantación de identidad,use la siguiente sintaxis:
-
-```powershell
-New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "<url>"
-```
-Para obtener el formato de sintaxis de dirección URL, vea [Sintaxis url para la lista de inquilinos permitidos o bloqueados.](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)
-
-En este ejemplo se agrega una dirección URL de simulación para subdominios de contoso.com.
-
-```powershell
-New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "*.contoso.com"
-```
-
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-### <a name="use-powershell-to-modify-a-phishing-simulation-override-rule"></a>Usar PowerShell para modificar una regla de invalidación de simulación de suplantación de identidad
+### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Usar PowerShell para modificar reglas de invalidación de simulación de suplantación de identidad
 
 Para modificar la regla de invalidación de simulación de suplantación de identidad, use la siguiente sintaxis:
 
@@ -403,6 +418,26 @@ Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b
 ```
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Set-PhishSimOverrideRule](/powershell/module/exchange/set-phishsimoverriderule).
+
+### <a name="use-powershell-to-modify-the-allowed-phishing-simulation-url-entries"></a>Usar PowerShell para modificar las entradas de url de simulación de suplantación de identidad permitidas
+
+No puede modificar los valores de dirección URL directamente. Puede quitar [entradas de dirección URL existentes](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries) y agregar nuevas entradas de dirección [URL](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow) como se describe en este artículo.
+
+Para modificar otras propiedades de una entrada url de simulación de suplantación de identidad (por ejemplo, la fecha de expiración o los comentarios), use la siguiente sintaxis:
+
+```powershell
+Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
+```
+
+Identifica la entrada que se va a modificar por sus valores de dirección URL (el parámetro _Entries)_ o el valor Identity del resultado del cmdlet **Get-TenantAllowBlockListItems** (el _parámetro Ids)._
+
+En este ejemplo se modificó la fecha de expiración de la entrada especificada.
+
+```powershell
+Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+```
+
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
 ### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>Usar PowerShell para quitar una directiva de invalidación de simulación de suplantación de identidad
 
@@ -429,3 +464,22 @@ Remove-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-932
 ```
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Remove-PhishSimOverrideRule](/powershell/module/exchange/remove-phishsimoverriderule).
+
+### <a name="use-powershell-to-remove-the-allowed-phishing-simulation-url-entries"></a>Usar PowerShell para quitar las entradas de url de simulación de suplantación de identidad permitidas
+
+Para quitar una entrada de dirección URL de simulación de suplantación de identidad existente, use la siguiente sintaxis:
+
+```powershell
+Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery
+```
+
+Identifica la entrada que se va a modificar por sus valores de dirección URL (el parámetro _Entries)_ o el valor Identity del resultado del cmdlet **Get-TenantAllowBlockListItems** (el _parámetro Ids)._
+
+En este ejemplo se modificó la fecha de expiración de la entrada especificada.
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+```
+
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
+

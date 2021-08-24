@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido de usuario que un administrador de exhibición de documentos electrónicos puede buscar en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 956260de2b522e2a84e6dffbf1fa50de4e7ced5e2dd9505534d35fed1450bcfd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c0e79a5bd2f00a76222f6b0a44df86579f73ca4f
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885583"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483372"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de exhibición de documentos electrónicos
 
@@ -36,7 +36,7 @@ Usamos el ejemplo de la siguiente ilustración para explicar cómo funcionan los
   
 ![Los límites de cumplimiento constan de filtros de permisos de búsqueda que controlan el acceso a agencias y grupos de roles de administración que controlan el acceso a casos de exhibición de documentos electrónicos](../media/M365_ComplianceBoundary_OrgChart_v2.png)
   
-En este ejemplo, Contoso LTD es una organización formada por dos subsidiarias, Fourth Coffee y Coho Winery. La empresa requiere que los administradores e investigadores de exhibición de documentos electrónicos solo puedan buscar en los buzones de correo Exchange, las cuentas OneDrive y los SharePoint de su agencia. Además, los administradores e investigadores de exhibición de documentos electrónicos solo pueden ver casos de exhibición de documentos electrónicos en su agencia y solo pueden acceder a los casos de los que son miembros. Además, en este escenario, los investigadores no pueden poner ubicaciones de contenido en espera ni exportar contenido de un caso. Este es el modo en que los límites de cumplimiento cumplen estos requisitos.
+En este ejemplo, Contoso LTD es una organización formada por dos subsidiarias, Fourth Coffee y Coho Winery. La empresa requiere que los administradores e investigadores de exhibición de documentos electrónicos solo puedan buscar en los buzones de correo Exchange, las OneDrive y los SharePoint de su agencia. Además, los administradores e investigadores de exhibición de documentos electrónicos solo pueden ver casos de exhibición de documentos electrónicos en su agencia y solo pueden acceder a los casos de los que son miembros. Además, en este escenario, los investigadores no pueden poner ubicaciones de contenido en espera ni exportar contenido de un caso. Este es el modo en que los límites de cumplimiento cumplen estos requisitos.
   
 - La funcionalidad de filtrado de permisos de búsqueda en búsqueda de contenido controla las ubicaciones de contenido que pueden buscar los administradores e investigadores de exhibición de documentos electrónicos. Esto significa que los gerentes e investigadores de eDiscovery en la agencia Fourth Coffee solo pueden buscar ubicaciones de contenido en la subsidiaria Fourth Coffee. La misma restricción se aplica a la subsidiaria Coho Winery.
 
@@ -68,7 +68,7 @@ El primer paso es elegir un atributo que se usará para definir las agencias. Es
   
 Estos son algunos ejemplos de atributos de usuario que puede usar para los límites de cumplimiento:
   
-- Empresa
+- Company
 
 - CustomAttribute1 - CustomAttribute15
 
@@ -275,7 +275,7 @@ Tenga en cuenta las siguientes limitaciones al administrar casos e investigacion
 
 - No se recomienda usar filtros de exclusión (como usar en un filtro de permisos de búsqueda) para un límite de cumplimiento `-not()` basado en contenido. El uso de un filtro de exclusión puede tener resultados inesperados si no se ha indizado el contenido con atributos actualizados recientemente.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **Quién puede crear y administrar filtros de permisos de búsqueda (con New-ComplianceSecurityFilter y Set-ComplianceSecurityFilter cmdlets)?**
   
@@ -303,4 +303,26 @@ Si la región especificada en el filtro de permisos de búsqueda no existe en la
   
 **¿Cuál es el número máximo de filtros de permisos de búsqueda que se pueden crear en una organización?**
   
-No hay ningún límite en el número de filtros de permisos de búsqueda que se pueden crear en una organización. Sin embargo, el rendimiento de la búsqueda se verá afectado cuando haya más de 100 filtros de permisos de búsqueda. Para mantener el número de filtros de permisos de búsqueda en la organización lo más pequeño posible, cree filtros que combinen reglas para Exchange, SharePoint y OneDrive en un único filtro de permisos de búsqueda siempre que sea posible.
+No hay ningún límite en el número de filtros de permisos de búsqueda que se pueden crear en una organización. Sin embargo, una consulta de búsqueda puede tener un máximo de 100 condiciones. En este caso, una condición se define como algo que está conectado a la consulta por un operador booleano (como **AND**, **OR** y **NEAR**). El límite del número de condiciones incluye la propia consulta de búsqueda y todos los filtros de permisos de búsqueda que se aplican al usuario que ejecuta la búsqueda. Por lo tanto, cuanto más filtros de permisos de búsqueda tenga (especialmente si estos filtros se aplican al mismo usuario o grupo de usuarios), mayor será la posibilidad de superar el número máximo de condiciones para una búsqueda.
+
+Para comprender cómo funciona este límite, debe comprender que un filtro de permisos de búsqueda se anexa a la consulta de búsqueda cuando se ejecuta una búsqueda. El operador **booleano AND** une un filtro de permisos de búsqueda a la consulta de búsqueda. La lógica de consulta para la consulta de búsqueda y un único filtro de permisos de búsqueda tendría este aspecto:
+
+```text
+<SearchQuery> AND <PermissionsFilter>
+```
+
+El operador **booleano OR** combina varios filtros de permisos de búsqueda y, a continuación, el operador AND conecta esas condiciones a la **consulta de** búsqueda.
+
+La lógica de consulta para la consulta de búsqueda y varios filtros de permisos de búsqueda tendría este aspecto:
+
+```text
+<SearchQuery> AND (<PermissionsFilter1> OR <PermissionsFilter2> OR <PermissionsFilter3>...)
+```
+
+Es posible que la consulta de búsqueda en sí conste de varias condiciones conectadas por operadores booleanos. Cada condición de la consulta de búsqueda también contaría con el límite de 100 condiciones.
+
+Además, el número de filtros de permisos de búsqueda anexados a una consulta depende del usuario que ejecuta la búsqueda. Cuando un usuario específico ejecuta una búsqueda, los filtros de permisos de búsqueda que se aplican al usuario (que se define mediante el parámetro *Users* en el filtro) se anexan a la consulta. Su organización podría tener cientos de filtros de permisos de búsqueda, pero si se aplican más de 100 filtros a los mismos usuarios, es probable que se supere el límite de 100 condiciones cuando esos usuarios ejecuten búsquedas.
+
+Hay una cosa más que tener en cuenta sobre el límite de condición. El número de sitios SharePoint específicos que se incluyen en los filtros de permisos de búsqueda o consulta de búsqueda también cuentan con este límite. 
+
+Para evitar que su organización alcance el límite de condiciones, mantenga el número de filtros de permisos de búsqueda en su organización en pocos minutos como sea posible para cumplir los requisitos de su empresa.

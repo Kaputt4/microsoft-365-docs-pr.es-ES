@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94e796304ed562c7464ad64362159d231ace8882
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1b7b830c35443f47af72ed0d76303b96491648bc
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258624"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483324"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -71,19 +71,19 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 - Para modificar la configuración de envíos de usuarios, debe ser miembro de uno de los siguientes grupos de roles:
 
   - **Administración de** la organización **o Administrador** de seguridad en permisos en el portal de [Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)
-  
+
 - Necesita tener acceso a Exchange Online PowerShell. Si la cuenta que está intentando usar no tiene acceso Exchange Online PowerShell, recibirá un error similar al siguiente al especificar el buzón de envío:
 
   > Especificar una dirección de correo electrónico en el dominio
 
   Para obtener más información acerca de cómo habilitar o deshabilitar el acceso a Exchange Online PowerShell, consulte los siguientes temas:
 
-  - [Habilitar o deshabilitar el acceso al PowerShell de Exchange Online](/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Habilitar o deshabilitar el acceso al PowerShell de Exchange Online](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Reglas de acceso de cliente en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Usar el portal Microsoft 365 Defender para configurar el buzón de envíos de usuario
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** reglas de amenazas Sección Otras secciones Configuración de mensajes \>  \>  \>  \> **notificados por el usuario Envíos de usuario**.
+1. En el portal Microsoft 365 Defender, vaya a **Directivas &** directivas de amenazas Configuración de mensajes notificados por el usuario en \>  \>  **los** \> **envíos de otros usuarios**.
 
 2. En la **página Envíos de** usuario, lo que ve está determinado por si la configuración del botón Mensaje de informe de **Microsoft Outlook** es **Off** o **On**:
 
@@ -94,7 +94,6 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
        - **Buzón de mi** organización: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de correo Exchange Online existente. Los grupos de distribución no están permitidos. Use esta opción si desea que el mensaje solo vaya a un administrador o al equipo de operaciones de seguridad para su análisis primero. Los mensajes no irán a Microsoft a menos que el administrador lo reenvía ellos mismos.
 
           > [!IMPORTANT]
-          >
           > Las organizaciones gubernamentales de Estados Unidos (GCC, GCC High y DoD) solo pueden configurar el **buzón de Mi organización.** Las otras dos opciones están deshabilitadas.
           >
           > Si las organizaciones están configuradas para enviar solo al buzón personalizado, los mensajes notificados no se enviarán para volver a examinarse y los resultados en el portal de mensajes notificados por el usuario siempre estarán vacíos.
@@ -109,6 +108,8 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
           > [!CAUTION]
           > Si ha deshabilitado los informes de correo no deseado en [Outlook en la Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) mediante directivas de buzón de correo de Outlook en la Web, pero ha configurado cualquiera de las opciones anteriores para notificar mensajes a Microsoft, los usuarios podrán notificar mensajes a Microsoft en Outlook en la Web mediante el complemento Mensaje de informe o el complemento Report Phishing.
+
+     Deje la **configuración del botón Outlook** mensaje de informe de Microsoft Activar para permitir a los usuarios finales notificar mensajes falsos positivos desde el portal de ![ ](../../media/scc-toggle-on.png)  cuarentena.
 
      - **Sección Experiencia de informes de usuarios**
        - **Antes de informar:**  en  los cuadros de cuerpo Título y Mensaje, escriba el texto descriptivo que los usuarios ven antes de informar de un mensaje mediante el complemento Report Message o el complemento Report Phishing. Puede usar la variable %type% para incluir el tipo de envío (correo no deseado, no deseado, phish, etc.).
