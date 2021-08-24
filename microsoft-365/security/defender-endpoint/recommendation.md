@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 65486a046967ef3a3961220af0c9077a7d3fbd94
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bc00136b3ca404efc2a39eb8cf7bac6dcbc84d2e
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253420"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502032"
 ---
 # <a name="recommendation-resource-type"></a>Tipo de recurso Recomendación
 
@@ -52,23 +52,25 @@ Método |Tipo de valor devuelto |Descripción
 ## <a name="properties"></a>Propiedades
 Propiedad |   Tipo   |   Descripción
 :---|:---|:---
-id | String | Id. de recomendación
+id | Cadena | Id. de recomendación
 productName | cadena | Nombre de software relacionado  
-recommendationName | String | Nombre de recomendación
+recommendationName | Cadena | Nombre de recomendación
 Debilidades | Long | Número de vulnerabilidades detectadas
-Proveedor | String | Nombre de proveedor relacionado
-recommendedVersion | String | Versión recomendada
-recommendationCategory | String | Categoría de recomendación. Los valores posibles son: "Accounts", "Application", "Network", "OS", "SecurityStack
-subCategory | String | Subcategoría recomendación
+Proveedor | Cadena | Nombre de proveedor relacionado
+recommendedVersion | Cadena | Versión recomendada
+recommendedProgram | Cadena | Programa recomendado
+recommendedVendor | Cadena | Proveedor recomendado
+recommendationCategory | Cadena | Categoría de recomendación. Los valores posibles son: "Accounts", "Application", "Network", "OS", "SecurityControls"
+subCategory | Cadena | Subcategoría recomendación
 severityScore | Doble | Posible impacto de la configuración en la puntuación segura de Microsoft para dispositivos de la organización (1-10)
-publicExploit | Booleano | La vulnerabilidad pública está disponible 
-activeAlert | Booleano | La alerta activa está asociada con esta recomendación
-associatedThreats | Colección String | El informe de análisis de amenazas está asociado a esta recomendación
-remediationType | String | Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"
+publicExploit | Boolean | La vulnerabilidad pública está disponible 
+activeAlert | Boolean | La alerta activa está asociada con esta recomendación
+associatedThreats | Colección de cadenas | El informe de análisis de amenazas está asociado a esta recomendación
+remediationType | Cadena | Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"
 Estado | Enum | Estado de excepción de recomendación. Los valores posibles son: "Active" y "Exception"
 configScoreImpact | Doble | Impacto de puntuación segura de Microsoft para dispositivos
-exposureImpacte | Doble | Impacto de la puntuación de exposición
+exposureImpact | Doble | Impacto de la puntuación de exposición
 totalMachineCount | Long | Número de dispositivos instalados
 exposedMachinesCount | Long | Número de dispositivos instalados expuestos a vulnerabilidades
 nonProductivityImpactedAssets | Long | Número de dispositivos que no se ven afectados  
-relatedComponent | String |  Componente de software relacionado
+relatedComponent | Cadena |  Componente de software relacionado

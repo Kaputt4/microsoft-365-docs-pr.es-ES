@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprende a usar directivas de dlp para aplicaciones en la nube que no son de Microsoft.
-ms.openlocfilehash: ef4482c66f9774057d5027b191cb32c8cf40becb0e28faa36fc0641fe2e51832
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 10e5f8e78b57932c18acfe18631ae8b08d543dd5
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814305"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502824"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft
 
@@ -43,7 +43,7 @@ Antes de empezar a usar directivas DLP en aplicaciones en la nube que no son de 
 - Cumplimiento de Microsoft 365 E5
 - Seguridad de Microsoft 365 E5
 
-### <a name="permissions"></a>Permisos
+### <a name="permissions"></a>Permissions
 El usuario que crea la directiva DLP debe ser:
 - Administrador global
 - Administrador de cumplimiento
@@ -59,7 +59,7 @@ Para usar la directiva DLP en una aplicación en la nube específica que no sea 
 
 - [Conectar Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
 - [Conectar Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Conectar G-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [Conectar G-Workspace](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
 - [Conectar Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
 - [Conectar Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 

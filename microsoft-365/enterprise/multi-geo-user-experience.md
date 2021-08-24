@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Información sobre la experiencia del usuario de SharePoint, OneDrive y Exchange en un entorno multigeográfico para Microsoft 365.
-ms.openlocfilehash: d81220cae6e78ddb387742a83affd3e8f803a75cef0cbc292d252f7b302f4959
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5ecdfd41c496149e04bfb9586f76807db7957d0d
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848512"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502908"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Experiencia del usuario en un entorno multigeográfico
 
@@ -78,7 +78,7 @@ Se admiten los siguientes clientes de búsqueda:
 
 ## <a name="sharepoint-home"></a>Página principal de SharePoint 
 
-En SharePoint Multi-Geo su SharePoint se hospeda en la ubicación donde reside el usuario según lo determinado por su OneDrive ubicación. Por ejemplo: si el usuario tiene hospedado OneDrive en una ubicación satélite de Europa, la página principal de SharePoint se representará desde Europa. La página principal de SharePoint incluye todo el contenido relevante para el usuario independientemente de su ubicación geográfica. 
+En SharePoint Multi-Geo su SharePoint se hospeda en la ubicación donde reside el usuario según lo determinado por su OneDrive ubicación. Por ejemplo: si el usuario tiene su OneDrive hospedado en una ubicación satélite europea, su SharePoint home se representará desde Europa. La página principal de SharePoint incluye todo el contenido relevante para el usuario independientemente de su ubicación geográfica. 
 
 **Sitios seguidos, noticias de sitios, sitios recientes, sitios frecuentes y sitios sugeridos**
 
@@ -94,7 +94,7 @@ El cliente móvil de SharePoint es compatible con las capacidades multigeográfi
 
 ## <a name="sharing"></a>Uso compartido
 
-La experiencia de selector de personas muestra todos los usuarios, independientemente de su ubicación geográfica. Esto permite que un usuario pueda compartir con otro de su misma ubicación geográfica o en cualquier otra ubicación geográfica de su inquilino. El contenido de diferentes ubicaciones  geográficas se mostrará en la vista Compartido conmigo en el OneDrive del usuario y se puede acceder a él con una experiencia de Sign-On única independientemente de la ubicación geográfica en la que se hospeda.
+La experiencia de selector de personas muestra todos los usuarios, independientemente de su ubicación geográfica. Esto permite que un usuario pueda compartir con otro de su misma ubicación geográfica o en cualquier otra ubicación geográfica de su inquilino. El contenido de diferentes ubicaciones  geográficas se mostrará en la vista Compartido conmigo en la vista OneDrive, Word, Excel, PowerPoint y Office.com del usuario y se puede acceder a él con una experiencia de Sign-On independientemente de la ubicación geográfica en la que se hospeda.
 
 ## <a name="teams-experience"></a>Experiencia de Teams
 

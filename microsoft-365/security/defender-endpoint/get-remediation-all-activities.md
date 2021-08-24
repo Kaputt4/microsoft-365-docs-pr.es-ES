@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ae861a5490880c4521e4e7b6521fa724a5dd4da4
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 37cccbc8447f10288369185da8fe1374b4e6690e
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400204"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503148"
 ---
 # <a name="list-all-remediation-activities"></a>Enumerar todas las actividades de corrección
 
@@ -47,6 +47,12 @@ Devuelve información sobre todas las actividades de corrección.
 [Obtenga más información sobre las actividades de corrección](tvm-remediation.md).
 
 **DIRECCIÓN URL:** GET: /api/remediationTasks
+<br>Admite [consultas de OData V4](https://www.odata.org/documentation/).
+<br>Operadores compatibles con OData:
+<br>```$filter``` en:  ```createdon``` y ```status``` propiedades.
+<br>```$top``` con un valor máximo de 10 000.
+<br>```$skip```.
+<br>Vea ejemplos en [consultas de OData con Microsoft Defender para Endpoint](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Permisos
 
@@ -83,12 +89,12 @@ requesterEmail|Cadena|Dirección de correo electrónico del creador|globaladmin@
 requesterId|Cadena|Id. de objeto Creator|r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes|Cadena|Las notas (texto libre) que el creador agregó para esta actividad de corrección|nulo
 scid|Cadena|SCID de la recomendación de seguridad relacionada|nulo
-status|Cadena|Estado de la actividad de corrección (Activo/Completado)|Activa
+status|String|Estado de la actividad de corrección (Activo/Completado)|Activa
 statusLastModifiedOn|DateTime|Fecha en la que se actualizó el campo de estado|2021-01-12T18:54:11.5499487Z
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección|43
 title|String|Título de esta actividad de corrección|Actualizar Microsoft Silverlight
 type|String|Tipo de corrección|Actualizar
-vendorId|String|Nombre de proveedor relacionado|Microsoft
+vendorId|Cadena|Nombre de proveedor relacionado|Microsoft
 
 ## <a name="example"></a>Ejemplo
 
@@ -141,7 +147,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
 - [Obtener una actividad de corrección por id.](get-remediation-one-activity.md)

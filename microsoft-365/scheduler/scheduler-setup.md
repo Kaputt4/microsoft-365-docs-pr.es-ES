@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Configuración del Programador para Microsoft 365.
-ms.openlocfilehash: a6d642364abcf4672d59494614daaf2d9e248208
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: c47c866748fd4635c581acb3737e67bc72658538
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386941"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502800"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Configuración del Planificador para Microsoft 365
 
@@ -21,7 +21,7 @@ Los administradores de inquilinos deben configurar un buzón del asistente progr
 
 ## <a name="licensing"></a>Licencias
 
-Más información: [Programador para Microsoft 365 licencias](https://wwww.microsoft.com/microsoft-365/meeting-scheduler-pricing)
+Más información: [Programador para Microsoft 365 licencias](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing)
 
 >[Nota] Los asistentes a la reunión no necesitan un Programador ni Microsoft 365 licencia. <br>El buzón del asistente programador no requiere una Microsoft 365 o una licencia de programador.
 

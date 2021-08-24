@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: Conserve el contenido de los buzones eliminados mediante la característica de buzones inactivos en Microsoft 365.
-ms.openlocfilehash: b8d9043d066f2500074b79b6eb06183f093907ba
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6f533cf213f28d42dee1bb470cefaa2ced186778
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247536"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503172"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
 
@@ -58,7 +58,7 @@ Para obtener procedimientos paso a paso para colocar un buzón en retención por
   
 - [Poner un buzón en retención por juicio](create-a-litigation-hold.md)
 
-- [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
+- [Más información sobre las directivas y las etiquetas de retención](retention.md)
 
 > [!NOTE]
 > Para las directivas de retención y retención por juicio, puede crear una retención indefinida o en una retención basada en tiempo. En una retención indefinida, el contenido del buzón inactivo se conservará siempre, hasta que se elimine la retención o hasta que se cambie la duración de la retención. Después de quitar la directiva de retención o retención (suponiendo que el buzón se eliminó hace más de 183 días), el buzón inactivo se marcará para su eliminación permanente y el contenido del buzón ya no se conservará ni se podrá detectar. En una directiva de retención o retención basada en tiempo, especifique la duración de la retención. Esta duración se establece para cada elemento, y se calcula a partir de la fecha en que un elemento de buzón se ha recibido o creado. Una vez que ha expirado la retención para un elemento de buzón, y ese elemento se ha movido a la carpeta Elementos recuperables del buzón inactivo o se encuentra en ella, el elemento se elimina permanentemente (purga) del buzón inactivo. 
@@ -105,7 +105,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## <a name="search-and-export-the-contents-of-an-inactive-mailbox"></a>Buscar y exportar el contenido de un buzón inactivo
 
-Puede tener acceso al contenido del buzón inactivo mediante la herramienta búsqueda de contenido en el Centro de seguridad & cumplimiento. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
+Puede obtener acceso al contenido del buzón inactivo mediante la herramienta búsqueda de contenido de la Centro de cumplimiento de Microsoft 365. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
   
 - [Búsqueda de contenido](content-search.md)
 

@@ -20,14 +20,14 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: En lugar de exportar los resultados reales de una búsqueda de contenido en el Centro de seguridad & cumplimiento en Office 365, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportaría.
+description: En lugar de exportar los resultados reales de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportaría.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0eae866625c9fd2424263ebfa6bff03ecc5c09a820017ffde5dad6d66f1c2164
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b5307bab55f838697e63559834653b54f06c86e7
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819993"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503100"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
@@ -37,7 +37,7 @@ Al exportar un informe, los archivos de informe se descargan en una carpeta del 
 
 ## <a name="before-you-export-a-search-report"></a>Antes de exportar un informe de búsqueda
 
-- Para exportar un informe de búsqueda, debe tener asignado el rol de administración Búsqueda de cumplimiento en el Centro de seguridad & cumplimiento. Este rol se asigna de forma predeterminada a los grupos de roles integrados eDiscovery Manager y Organization Management. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
+- Para exportar un informe de búsqueda, debe tener asignado el rol de administración Búsqueda de cumplimiento en Centro de cumplimiento de Microsoft 365. Este rol se asigna de forma predeterminada a los grupos de roles integrados eDiscovery Manager y Organization Management. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
 
 - Al exportar un informe, los datos se almacenan temporalmente en una ubicación Azure Storage en la nube de Microsoft antes de que se descarguen en el equipo local. Asegúrese de que su organización puede conectarse al punto de conexión de Azure, que **\* es .blob.core.windows.net** (el comodín representa un identificador único para la exportación). Los datos de resultados de búsqueda se eliminan de la Azure Storage dos semanas después de su creación.
 
@@ -51,7 +51,7 @@ Al exportar un informe, los archivos de informe se descargan en una carpeta del 
 
   - Microsoft Edge <sup>2</sup>
 
-    O
+    OR
 
   - Microsoft Internet Explorer 10 y versiones posteriores
 

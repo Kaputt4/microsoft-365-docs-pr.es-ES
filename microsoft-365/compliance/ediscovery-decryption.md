@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft 365 herramientas de exhibición de documentos electrónicos administran documentos cifrados adjuntos a mensajes de correo electrónico y almacenados en SharePoint Online y OneDrive para la Empresa.
-ms.openlocfilehash: e03f5813fcd5f232119f3586cd173c40ca846cc7a7cb6908b5b71fab8e26361c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7d0f4acd34fc67738258e0f0df23535e759bd8dd
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842296"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503052"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos
 
@@ -73,4 +73,4 @@ Los documentos cifrados con la configuración anterior aún pueden devolverse me
 
 Debe tener asignado el rol Descifrar RMS para obtener una vista previa, revisar y exportar archivos cifrados con tecnologías de cifrado de Microsoft. También debe tener asignado este rol para revisar y consultar archivos cifrados que se agregan a un conjunto de revisión en Advanced eDiscovery.
 
-Este rol se asigna de forma predeterminada al  grupo de roles administrador de exhibición de documentos electrónicos en la página Permisos del Centro de Office 365 seguridad & cumplimiento. Para obtener más información acerca del rol Descifrar RMS, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md#rms-decrypt).
+Este rol se asigna de forma predeterminada al grupo de roles administrador de exhibición de documentos electrónicos en la **página** Permisos de la Centro de cumplimiento de Microsoft 365. Para obtener más información acerca del rol Descifrar RMS, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md#rms-decrypt).

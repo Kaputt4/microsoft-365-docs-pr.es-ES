@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar la herramienta de Microsoft 365 de búsqueda de registro de auditoría para ayudar a solucionar problemas comunes de soporte técnico para cuentas de correo electrónico.
-ms.openlocfilehash: 8a925bd425d04a3df8971b1cf983763f2093aa68
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b24306b65a6f5eab59865f09c996892ef24660a0
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255723"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502728"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría para investigar problemas de soporte técnico comunes
 
@@ -39,7 +39,7 @@ En este artículo se describe cómo usar la herramienta de búsqueda de registro
 
 ## <a name="using-the-audit-log-search-tool"></a>Uso de la herramienta de búsqueda de registro de auditoría
 
-Cada uno de los escenarios de solución de problemas descritos en este artículo se basa en el uso de la herramienta de búsqueda de registro de auditoría en el Centro de seguridad & cumplimiento. En esta sección se enumeran los permisos necesarios para buscar en el registro de auditoría y se describen los pasos para obtener acceso y ejecutar búsquedas de registro de auditoría. En cada sección de escenario se explica cómo configurar una consulta de búsqueda de registro de auditoría y qué buscar en la información detallada de los registros de auditoría que coinciden con los criterios de búsqueda.
+Cada uno de los escenarios de solución de problemas descritos en este artículo se basa en el uso de la herramienta de búsqueda de registro de auditoría en el Centro de cumplimiento de Microsoft 365. En esta sección se enumeran los permisos necesarios para buscar en el registro de auditoría y se describen los pasos para obtener acceso y ejecutar búsquedas de registro de auditoría. En cada sección de escenario se explica cómo configurar una consulta de búsqueda de registro de auditoría y qué buscar en la información detallada de los registros de auditoría que coinciden con los criterios de búsqueda.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Permisos necesarios para usar la herramienta de búsqueda de registro de auditoría
 

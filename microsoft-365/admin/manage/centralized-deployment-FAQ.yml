@@ -20,48 +20,48 @@ metadata:
   - MET150
   - MOE150
   description: Revise las respuestas a preguntas frecuentes acerca de la implementación centralizada desde el Centro de administración de Microsoft 365.
-  ms.openlocfilehash: aace2db69a50f574ac6d48c95496ff65a535d150
-  ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+  ms.openlocfilehash: e2b4717fb2e1d5e82d22ce5288c40187722495df
+  ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "58255005"
+  ms.lasthandoff: 08/24/2021
+  ms.locfileid: "58502008"
 title: Preguntas frecuentes sobre la implementación centralizada
 summary: La implementación centralizada es la forma recomendada para que un administrador de Office 365 implemente complementos de Office (Word, Excel, PowerPoint y Outlook) en usuarios y grupos de una organización, siempre que la organización cumpla todos los requisitos para usar la implementación centralizada, tal como se describe en este artículo.
 sections:
 - name: Omitidas
   questions:
   - question: >
-      How do I know if my organization is set up for Centralized Deployment?
-    answer: "Centralized deployment of add-ins requires that users are using Microsoft 365 Apps for enterprise (and are signed into Office using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Azure Active Directory. \n \nCentralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.\n\nYou can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. \n  \n"
+      ¿Cómo sé si mi organización está configurada para la implementación centralizada?
+    answer: "La implementación centralizada de complementos requiere que los usuarios estén usando Aplicaciones Microsoft 365 para empresas (y que inicien sesión en Office con sus credenciales de inicio de sesión de la organización) y tengan Exchange Online buzones de correo. El directorio de suscripción debe estar en, o federado para, Azure Active Directory. \n \nLa implementación centralizada solo es compatible con buzones en línea. No admite la implementación en buzones de correo Exchange local.\n\nPuede usar el Control de compatibilidad [de](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)implementación centralizada   para determinar si la suscripción es apta. \n  \n"
   - question: >
-      How do you target add-in user assignments with Centralized Deployment?
-    answer: "Centralized Deployment supports assignments to individual users, groups, and everyone in the tenant. Centralized Deployment can be used for users in top-level groups or groups without parent groups, but not for users in nested groups or groups that have parent groups. Centralized Deployment is also part of most Azure Active Directory groups, including Office 365 Groups, distribution lists, and security groups. \n\nIt is better to use groups assignments instead of individual user assignment for easier management.\n \nFor more details, see [User and Group assignments](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments).\n \n"
-  - question: "How long does it take for add-ins to show up for all users? \n"
-    answer: "It can take up to 24 hours for an add-in to show up for all users. It can take the same amount of time for add-in updates, changes from turn on or turn off, or add-in removals. \n"
+      ¿Cómo se apuntan las asignaciones de usuario de complementos con implementación centralizada?
+    answer: "La implementación centralizada admite asignaciones a usuarios individuales, grupos y todos los usuarios del espacio empresarial. La implementación centralizada se puede usar para usuarios de grupos de nivel superior o grupos sin grupos primarios, pero no para usuarios de grupos anidados o grupos que tienen grupos primarios. La implementación centralizada también forma parte de la mayoría de Azure Active Directory, incluidos Office 365, listas de distribución y grupos de seguridad. \n\nEs mejor usar asignaciones de grupos en lugar de asignaciones de usuario individuales para facilitar la administración.\n \nPara obtener más información, vea [Asignaciones de usuario y grupo.](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)\n \n"
+  - question: "¿Cuánto tiempo se necesita para que los complementos se muestren para todos los usuarios? \n"
+    answer: "Un complemento puede tardar hasta 24 horas en aparecer para todos los usuarios. Puede tardar la misma cantidad de tiempo en actualizaciones de complementos, cambios desde activar o desactivar, o eliminaciones de complementos. \n"
   - question: >
-      As an administrator, how do I manage the user access to add-ins for my organization?
+      Como administrador, ¿cómo puedo administrar el acceso de usuario a los complementos de mi organización?
     answer: >
-      For easy deployment of add-ins to users, groups, or to your entire organization, we recommend administrators use Centralized Deployment.
+      Para facilitar la implementación de complementos a usuarios, grupos o a toda la organización, se recomienda que los administradores usen la implementación centralizada.
 
 
-      For more information about managing user access, see:
-       - [Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
-       - [Specify the administrators and users who can install and manage add-ins for Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
-  - question: "Will Centralized Deployment provide admins the flexibility to choose the deployment method for Outlook add-ins? \n"
-    answer: "Yes. Centralized Deployment provides admins the flexibility to choose one of three deployment methods for Outlook add-ins during add-in deployment:\n\n**Fixed (Default)** \nThe add-in is deployed automatically to the assigned users, and they cannot remove it.\n \n**Available**\nUsers can install the add-in in Outlook by choosing **Home > Get More add-ins > Admin-managed**.\n \n**Optional**\nThe add-in is deployed automatically to the assigned users, but they can choose to remove it.\n    \n"
-  - question: "Can admins update Line-of-Business (LOB) add-ins? \n"
-    answer: "Yes. Admins can upload a new manifest file to support metadata changes for admin-deployed LOB add-ins. The add-in updates the next time the Office applications starts. The web application can change at any time.\n \nFor more information, see [line-of-business add-in](./manage-addins-in-the-admin-center.md).  \n"
-  - question: "Can admins turn off add-ins? \n"
+      Para obtener más información acerca de cómo administrar el acceso de usuarios, vea:
+       - [Impedir descargas de complementos desactivando la Tienda Office en todos los clientes (excepto Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+       - [Especifique qué administradores y usuarios pueden instalar y administrar complementos para Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
+  - question: "¿La implementación centralizada proporcionará a los administradores la flexibilidad para elegir el método de implementación para Outlook complementos? \n"
+    answer: "Sí. La implementación centralizada proporciona a los administradores la flexibilidad de elegir uno de los dos métodos de implementación para Outlook complementos durante la implementación del complemento:\n         \n**Disponible** Los usuarios pueden instalar el complemento en Outlook seleccionando Inicio > Obtener más complementos > **administrados por el administrador.**\n \n**Opcional** El complemento se implementa automáticamente en los usuarios asignados, pero pueden elegir quitarlo.\n    \n"
+  - question: "¿Pueden los administradores actualizar los complementos de línea de negocio (LOB) \n"
+    answer: "Sí. Los administradores pueden cargar un nuevo archivo de manifiesto para admitir los cambios de metadatos de los complementos de LOB implementados por el administrador. El complemento se actualiza la próxima vez que se inicien Office aplicaciones. La aplicación web puede cambiar en cualquier momento.\n \nPara obtener más información, [vea line-of-business add-in](./manage-addins-in-the-admin-center.md).  \n"
+  - question: "¿Pueden los administradores desactivar los complementos? \n"
     answer: >
-      Yes. Admins can turn on or off the add-ins they deploy for all users from the Microsoft admin center.
+      Sí. Los administradores pueden activar o desactivar los complementos que implementan para todos los usuarios desde el Centro de administración de Microsoft.
 
 
-      For more information, see [Add-in states](./manage-addins-in-the-admin-center.md#add-in-states).
+      Para obtener más información, vea [Estados del complemento](./manage-addins-in-the-admin-center.md#add-in-states).
   - question: >
-      Can admins delete or remove add-ins?
-    answer: "Yes. Admins can delete add-ins they deployed for all users from the Microsoft admin center.\n\nFor more information, see [Delete an add-in](./manage-addins-in-the-admin-center.md#delete-an-add-in). \n  \n"
-  - question: "Can admins deploy paid add-ins from the Office Store using Centralized Deployment? \n"
-    answer: "No. You can't deploy paid add-ins from the Office Store using Centralized Deployment at this time. \n \nWe suggest reaching out to the ISV Developer for the paid add-in to request a manifest file or a URL. The tenant admin can then deploy the add-in as a LOB add-in using Centralized Deployment.\n   \n"
-  - question: "Which admin role do I need to manage add-ins for my organization? \n"
-    answer: "Global Admin is the recommended role with complete access to add-in management lifecycle. If you're the person who purchased your Microsoft 365 Business subscription, you are the Global admin.\n\nYour subscription comes with a set of admin roles that you can assign to other users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to perform specific tasks in the Microsoft 365 admin center.  \n \nFor more information, see [Assign admin roles](../add-users/assign-admin-roles.md?view=o365-worldwide)."
+      ¿Pueden los administradores eliminar o quitar complementos?
+    answer: "Sí. Los administradores pueden eliminar los complementos que implementaron para todos los usuarios del Centro de administración de Microsoft.\n\nPara obtener más información, [vea Delete an add-in](./manage-addins-in-the-admin-center.md#delete-an-add-in). \n  \n"
+  - question: "¿Pueden los administradores implementar complementos de pago desde Office store mediante la implementación centralizada? \n"
+    answer: "No. No puedes implementar complementos de pago desde la Tienda Office con la implementación centralizada en este momento. \n \nTe recomendamos que te llegues al desarrollador de ISV para que el complemento de pago solicite un archivo de manifiesto o una dirección URL. A continuación, el administrador del espacio empresarial puede implementar el complemento como complemento de LOB mediante la implementación centralizada.\n   \n"
+  - question: "¿Qué rol de administrador necesito para administrar complementos para mi organización? \n"
+    answer: "Administración global es el rol recomendado con acceso completo al ciclo de vida de administración de complementos. Si eres la persona que compró tu suscripción Microsoft 365 empresa, eres el administrador global.\n\nLa suscripción viene con un conjunto de roles de administrador que puede asignar a otros usuarios de la organización. Cada rol de administrador se asigna a funciones empresariales comunes y proporciona a los usuarios de la organización permisos para realizar tareas específicas en el Centro de administración de Microsoft 365.  \n \nPara obtener más información, vea [Asignar roles de administrador](../add-users/assign-admin-roles.md?view=o365-worldwide)."

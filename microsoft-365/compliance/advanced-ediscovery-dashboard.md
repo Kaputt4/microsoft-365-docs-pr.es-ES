@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el panel Advanced eDiscovery para conjuntos de revisión para analizar rápidamente su corpus para identificar tendencias o estadísticas clave que le ayudarán a desarrollar su estrategia de revisión.
-ms.openlocfilehash: 2128f2b2caa719cf2fc9b966ff70e1cfc74a1852896a10c85a17c407ffdddfea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 14baa47a73ac3cc4917d6e2f04614a80960ef085
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836536"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502980"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery panel para conjuntos de revisión
 
@@ -29,7 +29,7 @@ En algunos casos Advanced eDiscovery, es posible que tenga un gran volumen de do
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>Paso 1: Crear un widget en el panel del conjunto de revisión
 
-1. En el Centro de seguridad & cumplimiento, vaya a **eDiscovery > Advanced eDiscovery** para mostrar la lista de casos de su organización.
+1. En el Centro de cumplimiento de Microsoft 365, vaya a **eDiscovery > Advanced eDiscovery** para mostrar la lista de casos de la organización.
   
 2. Seleccione un caso existente.
   
@@ -77,7 +77,7 @@ En algunos casos Advanced eDiscovery, es posible que tenga un gran volumen de do
 
 4. Cuando haya terminado, haga clic en **Guardar como** consulta para guardar las condiciones como una nueva consulta de búsqueda para el conjunto de revisión.
 
-   ![Query](../media/savequery.png)
+   ![Consulta](../media/savequery.png)
 
 5. Cierre la **vista Perfil de búsqueda** para volver a la vista de resultados de búsqueda.
 

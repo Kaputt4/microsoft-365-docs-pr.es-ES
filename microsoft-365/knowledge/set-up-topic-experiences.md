@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo configurar Temas Microsoft Viva
-ms.openlocfilehash: 65c679889c60b69ae60a4649b64224f7970f57e58feb5f40a391e0acc257966c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fedf5efd6021dc425dcd7c26666edb66b1b780d6
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834893"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502776"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurar Temas Microsoft Viva
 
@@ -25,9 +25,10 @@ Es importante planear la mejor forma de configurar y configurar temas en el ento
 
 Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso a la Centro de administración de Microsoft 365 y configurar temas.
 
-Si has configurado SharePoint [para requerir dispositivos administrados,](/sharepoint/control-access-from-unmanaged-devices)asegúrate de configurar Temas desde un dispositivo administrado.
+> [!IMPORTANT]
+> Si has configurado SharePoint para [requerir dispositivos administrados,](/sharepoint/control-access-from-unmanaged-devices)debes configurar Temas desde un dispositivo administrado.
 
-## <a name="video-demonstration"></a>Demostración de vídeo
+## <a name="video-demonstration"></a>Vídeo de demostración
 
 En este vídeo se muestra el proceso de configuración de temas en Microsoft 365.
 
@@ -71,7 +72,7 @@ Para configurar temas
 
 3. En la **página Conectar personas al conocimiento,** haga clic en Introducción para que le guía por el proceso de configuración. 
 
-    ![Introducción](../media/k-get-started.png) 
+    ![Comenzar](../media/k-get-started.png) 
 
 4. En la página Elegir cómo pueden encontrarse los temas de **Viva Topics,** configurará la detección de temas. En la **sección Seleccionar SharePoint** temas, seleccione qué sitios SharePoint se rastrearán como orígenes de los temas durante la detección. Elija entre:
     - **Todos los sitios**: Todos los sitios de SharePoint de su organización. Esto incluye los sitios actuales y futuros.
@@ -158,6 +159,6 @@ Una vez configurados los temas, puede cambiar la configuración que eligió dura
 - [Administrar permisos de temas en Temas Microsoft Viva](topic-experiences-user-permissions.md)
 - [Cambie el nombre del centro de temas en Temas Microsoft Viva](topic-experiences-administration.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Introducción a las experiencias del tema](topic-experiences-overview.md)

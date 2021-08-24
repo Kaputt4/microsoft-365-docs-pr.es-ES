@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar & un conector en el Centro de cumplimiento de Microsoft 365 para importar datos & archivo de páginas de Facebook Empresa a Microsoft 365.
-ms.openlocfilehash: 9327da8f3e37d64300ff1bafeb375f65e77fda67cc2d13bf0d1a3227b9bca693
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 766f7858c6e5117190712d3daad68b2b7b4e37c2
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866660"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502656"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configurar un conector para archivar datos de Facebook (versión preliminar)
 
@@ -41,7 +41,7 @@ Complete los siguientes requisitos previos antes de configurar y configurar un c
     - [Registrarse para una suscripción de Azure de pago por uso](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > La [suscripción Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) gratuita que se incluye con la suscripción Microsoft 365 no admite los conectores del Centro de seguridad & cumplimiento.
+    > La [suscripción Azure Active Directory gratuita](use-your-free-azure-ad-subscription-in-office-365.md) que se incluye con la suscripción Microsoft 365 no admite los conectores de la Centro de cumplimiento de Microsoft 365.
 
 - El conector para páginas de Facebook Empresa puede importar un total de 200 000 elementos en un solo día. Si hay más de 200 000 elementos de Facebook Business en un día, ninguno de esos elementos se importará a Microsoft 365.
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: El registro de auditoría de buzones está activado de forma predeterminada en Microsoft 365 (también denominada auditoría de buzones predeterminada o auditoría de buzones de correo activada de forma predeterminada). Esto significa que determinadas acciones realizadas por propietarios de buzones, delegados y administradores se registran automáticamente en un registro de auditoría de buzones de correo, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: 9b649e1e81ba9a70e11d255ba35af17869744e9bbb9b26ba7cc84294e10afafb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62f1c7009e2d0e4dff5b6ab31efa35b8f17624bd
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796063"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503196"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 
@@ -39,7 +39,7 @@ Estas son algunas de las ventajas de la auditoría de buzones de correo de forma
 > [!NOTE]
 >
 > - Lo importante que debe recordar acerca de la versión de la auditoría de buzones de correo de forma predeterminada es: no es necesario hacer nada para administrar la auditoría de buzones. Sin embargo, para obtener más información, personalizar la auditoría de buzones de correo desde la configuración predeterminada o desactivarla por completo, este artículo puede ayudarle.
-> - De forma predeterminada, solo los eventos de auditoría de buzones de correo para los usuarios de E5 están disponibles en las búsquedas del registro de auditoría en el Centro de seguridad y cumplimiento de & o a través de la API de actividad de Office 365 administración. Para obtener más información, vea la [sección Más información](#more-information) de este artículo.
+> - De forma predeterminada, solo los eventos de auditoría de buzones de correo para los usuarios de E5 están disponibles en las búsquedas de registro de auditoría en el Centro de cumplimiento de Microsoft 365 o a través de la API Office 365 actividad de administración. Para obtener más información, vea la [sección Más información](#more-information) de este artículo.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Comprobar que la auditoría del buzón está activada de forma predeterminada
 
@@ -100,7 +100,7 @@ En la tabla siguiente se describen las acciones de buzón que están disponibles
 
 ****
 
-|Acción buzón|Descripción|Admin|Delegado|Propietario|
+|Acción buzón|Descripción|Administrador|Delegado|Propietario|
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|Aunque este valor se acepta como una acción de buzón de correo, ya está incluido en la acción **UpdateFolderPermissions** y no se audita por separado. En otras palabras, no use este valor.||||
 |**ApplyRecord**|Un elemento se etiqueta como un registro.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
@@ -143,7 +143,7 @@ Recuerde que un administrador con permiso de acceso total a un buzón Microsoft 
 
 ****
 
-|Acción buzón|Descripción|Admin|Delegado|Propietario|
+|Acción buzón|Descripción|Administrador|Delegado|Propietario|
 |---|---|:---:|:---:|:---:|
 |**Crear**|Creación de un elemento de calendario. No se audita la creación, el envío ni la recepción de un mensaje.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
 |**HardDelete**|Un mensaje se purgó de la carpeta Elementos recuperables.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
@@ -333,11 +333,11 @@ El valor **True** indica que el registro de auditoría de buzones se omite para 
 
 ## <a name="more-information"></a>Más información
 
-- Aunque el registro de auditoría de buzones de correo está habilitado de forma predeterminada para todas las organizaciones, solo los usuarios con licencias E5 devolverán eventos de registro de auditoría de buzones en las búsquedas de registro de auditoría en el Centro de seguridad [& Cumplimiento](search-the-audit-log-in-security-and-compliance.md) o a través de la API de actividad de administración de [Office 365](/office/office-365-management-api/office-365-management-activity-api-reference) de forma **predeterminada.**
+- Aunque el inicio de sesión de auditoría de buzones de correo está habilitado de forma predeterminada para todas las organizaciones, solo los usuarios con licencias E5 devolverán eventos de registro de auditoría de buzones en las búsquedas de registro de auditoría en [Centro de cumplimiento de Microsoft 365](search-the-audit-log-in-security-and-compliance.md) o a través de la API de actividad de administración de [Office 365](/office/office-365-management-api/office-365-management-activity-api-reference) de forma predeterminada **.**
 
   Para recuperar entradas de registro de auditoría de buzones de correo para usuarios sin licencias E5, puede:
 
-  - Habilitar manualmente la auditoría de buzones en buzones individuales (ejecute el comando , `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` ). Después de hacerlo, puede usar las búsquedas de registro de auditoría en el Centro de seguridad & cumplimiento o a través de la API Office 365 actividad de administración.
+  - Habilitar manualmente la auditoría de buzones en buzones individuales (ejecute el comando , `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` ). Después de hacerlo, puede usar las búsquedas de registro de auditoría en el Centro de cumplimiento de Microsoft 365 o a través de la API de Office 365 actividad de administración.
 
     > [!NOTE]
     > Si la auditoría de buzones ya parece estar habilitada en el buzón de correo, pero las búsquedas no devuelven ningún resultado, cambie el valor del parámetro _AuditEnabled_ a y vuelva a `$false` `$true` .

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 658aba2a3061e247c9be0aaa159708bb24e97a20649fa67c2ceba0aa127e48b3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b6f682cab22b5838234e16091001c1b0be0f4126
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894244"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502812"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender para punto de conexión en iOS
 
@@ -62,7 +62,8 @@ ms.locfileid: "53894244"
 - Acceso a [Microsoft Endpoint Manager de administración](https://go.microsoft.com/fwlink/?linkid=2109431), para implementar la aplicación en grupos de usuarios inscritos en su organización.
 
     > [!NOTE]
-    > Microsoft Intune es la única solución de administración unificada de puntos de conexión (UEM) compatible para implementar Microsoft Defender para endpoints y aplicar directivas de cumplimiento de dispositivos relacionados con Defender for Endpoint en Intune.
+    > Microsoft Defender para endpoint ahora amplía la compatibilidad con los datos de una organización dentro de una aplicación administrada para aquellos que no usan la administración de dispositivos móviles (MDM) pero usan Intune para administrar aplicaciones móviles. También amplía esta compatibilidad a los clientes que usan otras soluciones de administración de movilidad empresarial, mientras que sigue usando Intune para la administración de aplicaciones móviles [(MAM).](/mem/intune/apps/mam-faq)
+    > Antes de esta actualización, Microsoft Defender para Endpoint funcionaba en dispositivos inscritos solo con MDM de Intune.  
 
 **Requisitos del sistema**
 
@@ -87,3 +88,4 @@ Para obtener más información, vea [Deploy Microsoft Defender for Endpoint on i
 - [Configurar Microsoft Defender para endpoint en características de iOS](ios-configure-features.md)
 - [Configurar la directiva de protección de aplicaciones para incluir las señales de riesgo de Defender for Endpoint (MAM)](ios-install-unmanaged.md)
 - [Configurar la directiva de acceso condicional en función de la puntuación de riesgo del dispositivo de Microsoft Defender para el extremo](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+- [Conceptos básicos de administración de aplicaciones móviles (MAM)](/mem/intune/apps/app-management#mobile-application-management-mam-basics)

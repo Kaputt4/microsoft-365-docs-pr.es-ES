@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Usa la herramienta Comunicaciones en un Advanced eDiscovery caso para enviar, recopilar y realizar un seguimiento de las notificaciones de retención legal.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8b33165e6d39a1829f99e0a0194bc7938b95b9600e2977dec920e0dbb97c56d9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b5bf8d070e5e1bf8fc44e16a6550a6e376e2716f
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802446"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502704"
 ---
 # <a name="create-a-legal-hold-notice"></a>Crear un aviso de retención legal
 
@@ -38,7 +38,7 @@ El primer paso es especificar los detalles adecuados para los avisos de retenci�
 
 ![Página de comunicación de nombres](../media/NameCommunication.PNG)
 
-1. En el Centro de seguridad & cumplimiento, vaya a **eDiscovery > Advanced eDiscovery** para mostrar la lista de casos de su organización.
+1. En el Centro de cumplimiento de Microsoft 365, vaya a **eDiscovery > Advanced** para mostrar la lista de casos de su organización.
 
 2. Seleccione un caso, haga clic en la **pestaña** Comunicaciones y, a continuación, haga clic **en Nueva comunicación.**
 

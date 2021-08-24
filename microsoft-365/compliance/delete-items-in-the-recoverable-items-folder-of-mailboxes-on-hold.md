@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Obtenga información sobre cómo los administradores pueden eliminar elementos de la carpeta Elementos recuperables de un usuario para un buzón Exchange Online, incluso si ese buzón está en retención legal.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03745d13a7f2a76302f2ef5687f98eacb9da0628b9518c81944b1451dc6da898
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 01242e2c5f00cd1e5aef0ac0f6f7f6e1d47a56ce
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842332"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502668"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube
 
@@ -48,7 +48,7 @@ En este artículo se explica cómo los administradores pueden eliminar elementos
   
 ## <a name="before-you-delete-items"></a>Antes de eliminar elementos
 
-- Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles Administrador de eDiscovery o tener asignado el rol de administración Búsqueda de cumplimiento. Para eliminar mensajes, tiene que ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Búsqueda y eliminación. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](./assign-ediscovery-permissions.md).
+- Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles Administrador de eDiscovery o tener asignado el rol de administración Búsqueda de cumplimiento. Para eliminar mensajes, tiene que ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Búsqueda y eliminación. Para obtener información sobre cómo agregar usuarios a un grupo de roles, vea [Asignar permisos de exhibición de documentos electrónicos](./assign-ediscovery-permissions.md).
 
 - El procedimiento descrito en este artículo no es compatible con buzones inactivos. Esto se debe a que no puede volver a aplicar una retención (o directiva de retención) a un buzón inactivo después de quitarla. Al quitar una retención de un buzón inactivo, se cambia a un buzón de correo normal eliminado temporalmente y se eliminará permanentemente de la organización después de que el Asistente para carpetas administradas lo procese.
 
@@ -66,7 +66,7 @@ Este primer paso consiste en recopilar las propiedades seleccionadas del buzón 
 
 Además, debe obtener la configuración de acceso de cliente de buzón para poder deshabilitarlas temporalmente para que el propietario (u otros usuarios) no pueda acceder al buzón durante este procedimiento. Por último, puede obtener el tamaño actual y el número de elementos en la carpeta Elementos recuperables. Después de eliminar elementos de la carpeta Elementos recuperables del paso 5, usará esta información para comprobar que se quitaron los elementos.
   
-1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Asegúrese de usar un nombre de usuario y una contraseña para una cuenta de administrador a la que se han asignado los roles de administración adecuados en Exchange Online.
+1. [Conexión al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Asegúrese de usar un nombre de usuario y una contraseña para una cuenta de administrador a la que se han asignado los roles de administración adecuados en Exchange Online.
 
 2. Ejecute el siguiente comando para obtener información sobre la recuperación de un solo elemento y el período de retención de elementos eliminados.
 
@@ -208,7 +208,7 @@ Ejecute el siguiente comando en [PowerShell del Centro de & seguridad](/powershe
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Después de identificar la directiva de retención, vaya a la página Retención de gobierno de información en el Centro de seguridad & Cumplimiento, edite la directiva de retención que identificó en el paso anterior y quite el buzón de la lista de destinatarios que se incluyen en la directiva de  >   retención.
+Después de identificar la directiva de retención, vaya a la página Retención de gobierno de información del Centro de cumplimiento de Microsoft 365, edite la directiva de retención que identificó en el paso anterior y quite el buzón de la lista de destinatarios que se incluyen en la directiva de  >   retención.
   
 ### <a name="organization-wide-retention-policies"></a>Directivas de retención en toda la organización
   
@@ -218,7 +218,7 @@ Las directivas de retención Exchange toda la organización, Teams de toda la or
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Después de identificar las directivas de retención de toda la organización, vaya a la página Retención de gobierno de información del Centro de cumplimiento de seguridad &, edite cada directiva de retención de toda la organización que identificó en el paso anterior y agregue el buzón a la lista de destinatarios  >   excluidos. Al hacerlo, se quitará el buzón del usuario de la directiva de retención. El cambio puede tardar hasta 24 horas.
+Después de identificar las directivas de retención de toda la organización, vaya a la página Retención de gobierno de información del Centro de cumplimiento de Microsoft 365, edite cada directiva de retención de toda la organización que identificó en el paso anterior y agregue el buzón a la lista de destinatarios  >   excluidos. Al hacerlo, se quitará el buzón del usuario de la directiva de retención. El cambio puede tardar hasta 24 horas.
 
 ### <a name="retention-labels"></a>Etiquetas de retención
 
@@ -337,7 +337,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Paso 6: Revertir el buzón a su estado anterior
 
-El último paso es revertir el buzón a su configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las retenciones que quitó en el paso 3. Esto incluye lo siguiente:
+El último paso es revertir el buzón a su configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las retenciones que quitó en el paso 3. Incluye lo siguiente:
   
 - Cambiar el período de retención de elementos eliminados a su valor anterior. Como alternativa, puede dejar este conjunto en 30 días, el valor máximo en Exchange Online.
 
@@ -388,15 +388,15 @@ Realice los siguientes pasos (en la secuencia especificada) en Exchange Online P
 
     **Directivas de retención aplicadas a buzones específicos**
 
-    Use el Centro de seguridad & cumplimiento para volver a agregar el buzón a la directiva de retención. Vaya a la página Retención de gobierno de información en el Centro de seguridad y cumplimiento de &, edite la directiva de retención y vuelva a agregar el buzón a la lista de destinatarios a los que se aplica la directiva de  >   retención.
+    Use el Centro de cumplimiento de Microsoft 365 para volver a agregar el buzón a la directiva de retención. Vaya a la **página Retención** de gobierno de información en el centro de cumplimiento, edite la directiva de retención y vuelva a agregar el buzón a la lista de destinatarios a los que se aplica la directiva  >   de retención.
 
     **Directivas de retención en toda la organización**
 
-    Si quitó una directiva de retención de toda la organización o Exchange para toda la organización excluyéndola de la directiva, use el Centro de seguridad y cumplimiento de & para quitar el buzón de la lista de usuarios excluidos. Vaya a la página **Retención** de gobierno de información en el Centro de seguridad & cumplimiento, edite la directiva de retención de toda la organización y quite el buzón de la lista de  >   destinatarios excluidos. Al hacerlo, se volverá a aplicar la directiva de retención al buzón del usuario.
+    Si quitó una directiva de retención de toda la organización o Exchange, excluyéndola de la directiva, use el Centro de cumplimiento de Microsoft 365 para quitar el buzón de la lista de usuarios excluidos. Vaya a la **página Retención** de gobierno de información en el centro de cumplimiento, edite la directiva de retención de toda la organización y quite el buzón de la lista de destinatarios  >   excluidos. Al hacerlo, se volverá a aplicar la directiva de retención al buzón del usuario.
 
     **Retenciones de casos de exhibición de documentos electrónicos**
 
-    Use el Centro de seguridad & cumplimiento para agregar el buzón de correo de nuevo la retención asociada a un caso de exhibición de documentos electrónicos. Vaya a la **página eDiscovery**  >  **eDiscovery,** abra el caso y vuelva a agregar el buzón a la retención. 
+    Use el Centro de cumplimiento de Microsoft 365 para agregar el buzón de correo de nuevo la retención asociada a un caso de exhibición de documentos electrónicos. Vaya a la **página eDiscovery**  >  **Core,** abra el caso y vuelva a agregar el buzón a la retención. 
 
 5. Ejecute el siguiente comando para permitir que el Asistente para carpetas administradas vuelva a procesar el buzón. Como se ha indicado anteriormente, se recomienda esperar 24 horas después de volver a aplicar una directiva de retención o retención (y comprobar que está en su lugar) antes de volver a habilitar el Asistente para carpetas administradas.
 
@@ -424,6 +424,6 @@ Como se explicó anteriormente, debe quitar todas las retenciones y directivas d
 |:-----|:-----|:-----|
 |Retención por litigio  <br/> | `True` <br/> |La  *propiedad LitigationHoldEnabled*  se establece en  `True` .  <br/> |
 |Retención en contexto  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |La  *propiedad InPlaceHolds*  contiene el GUID de la In-Place que se coloca en el buzón. Puede saber que se trata de una retención In-Place porque el GUID no comienza con un prefijo.  <br/> Puede usar el comando en Exchange Online PowerShell para obtener información sobre la retención In-Place `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` en el buzón.  <br/> |
-| Directivas de retención en el Centro de seguridad & cumplimiento aplicado a buzones específicos  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> o  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Al ejecutar el cmdlet **Get-Mailbox,** la propiedad  *InPlaceHolds*  también contiene GUID de directivas de retención aplicadas al buzón. Puede identificar directivas de retención porque el GUID comienza por el  `mbx` prefijo. Si el GUID de la directiva de retención comienza por el prefijo, eso indica que la directiva de retención se aplica a `skp` Skype Empresarial conversaciones.  <br/> Para identificar la directiva de retención que se aplica al buzón de correo, ejecute el siguiente comando en PowerShell del Centro de seguridad & cumplimiento: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Asegúrese de quitar el  `mbx` prefijo o al ejecutar este  `skp` comando.  <br/> |
-|Directivas de retención de toda la organización en el Centro de & seguridad  <br/> |Sin valor  <br/> o  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696` (indica que el buzón está excluido de una directiva de toda la organización)  <br/> |Incluso si la  *propiedad InPlaceHolds*  está vacía al ejecutar el cmdlet **Get-Mailbox,** es posible que aún haya una o más directivas de retención en toda la organización aplicadas al buzón.  <br/> Para comprobar esto, puede ejecutar el comando en Exchange Online PowerShell para obtener una lista de los GUID para directivas de retención de `Get-OrganizationConfig | FL InPlaceHolds` toda la organización. El GUID de las directivas de retención de toda la organización aplicadas Exchange buzones comienza por el `mbx` prefijo; por ejemplo, `mbxa3056bb15562480fadb46ce523ff7b02` .  <br/> Para identificar la directiva de retención de toda la organización que se aplica al buzón de correo, ejecute el siguiente comando en PowerShell del Centro de seguridad & cumplimiento: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Si se excluye un buzón de correo de una directiva de retención de toda la organización, el GUID de la directiva de retención se muestra en la propiedad  *InPlaceHolds*  del buzón del usuario al ejecutar el cmdlet **Get-Mailbox;** se identifica por el  `-mbx` prefijo; por ejemplo,  `-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
-|Retención de casos de exhibición de documentos electrónicos en el Centro de & seguridad  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |La  *propiedad InPlaceHolds*  también contiene el GUID de cualquier retención asociada a un caso de exhibición de documentos electrónicos en el Centro de seguridad & cumplimiento que se puede colocar en el buzón. Puede saber que se trata de una retención de casos de exhibición de documentos electrónicos porque el GUID comienza por el  `UniH` prefijo.  <br/> Puede usar el cmdlet de PowerShell del Centro de seguridad & cumplimiento para obtener información sobre el caso de exhibición de documentos electrónicos al que está asociada la  `Get-CaseHoldPolicy` retención en el buzón. Por ejemplo, puede ejecutar el comando para mostrar el nombre de la retención  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` de casos que está en el buzón. Asegúrese de quitar el  `UniH` prefijo al ejecutar este comando.  <br/><br/> Para identificar el caso de exhibición de documentos electrónicos al que está asociada la retención en el buzón de correo, ejecute los siguientes comandos:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
+| Directivas de retención en el Centro de cumplimiento de Microsoft 365 aplicadas a buzones específicos  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> o  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Al ejecutar el cmdlet **Get-Mailbox,** la propiedad  *InPlaceHolds*  también contiene GUID de directivas de retención aplicadas al buzón. Puede identificar directivas de retención porque el GUID comienza por el  `mbx` prefijo. Si el GUID de la directiva de retención comienza por el prefijo, eso indica que la directiva de retención se aplica a `skp` Skype Empresarial conversaciones.  <br/> Para identificar la directiva de retención que se aplica al buzón de correo, ejecute el siguiente comando en PowerShell del Centro de seguridad & cumplimiento: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Asegúrese de quitar el  `mbx` prefijo o al ejecutar este  `skp` comando.  <br/> |
+|Directivas de retención de toda la organización en el Centro de cumplimiento de Microsoft 365  <br/> |Sin valor  <br/> o  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696` (indica que el buzón está excluido de una directiva de toda la organización)  <br/> |Incluso si la  *propiedad InPlaceHolds*  está vacía al ejecutar el cmdlet **Get-Mailbox,** es posible que aún haya una o más directivas de retención en toda la organización aplicadas al buzón.  <br/> Para comprobar esto, puede ejecutar el comando en Exchange Online PowerShell para obtener una lista de los GUID para directivas de retención de `Get-OrganizationConfig | FL InPlaceHolds` toda la organización. El GUID de las directivas de retención de toda la organización aplicadas Exchange buzones comienza por el `mbx` prefijo; por ejemplo, `mbxa3056bb15562480fadb46ce523ff7b02` .  <br/> Para identificar la directiva de retención de toda la organización que se aplica al buzón de correo, ejecute el siguiente comando en PowerShell del Centro de seguridad & cumplimiento: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Si se excluye un buzón de correo de una directiva de retención de toda la organización, el GUID de la directiva de retención se muestra en la propiedad  *InPlaceHolds*  del buzón del usuario al ejecutar el cmdlet **Get-Mailbox;** se identifica por el  `-mbx` prefijo; por ejemplo,  `-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
+|Retención de casos de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |La *propiedad InPlaceHolds* también contiene el GUID de cualquier retención asociada a un caso de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 que se pueda colocar en el buzón. Puede saber que se trata de una retención de casos de exhibición de documentos electrónicos porque el GUID comienza por el  `UniH` prefijo.  <br/> Puede usar el cmdlet de PowerShell del Centro de seguridad & cumplimiento para obtener información sobre el caso de exhibición de documentos electrónicos al que está asociada la  `Get-CaseHoldPolicy` retención en el buzón. Por ejemplo, puede ejecutar el comando para mostrar el nombre de la retención  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` de casos que está en el buzón. Asegúrese de quitar el  `UniH` prefijo al ejecutar este comando.  <br/><br/> Para identificar el caso de exhibición de documentos electrónicos al que está asociada la retención en el buzón de correo, ejecute los siguientes comandos:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`

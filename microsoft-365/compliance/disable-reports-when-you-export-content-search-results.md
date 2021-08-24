@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: Edite el Windows en el equipo local para deshabilitar los informes al exportar los resultados de una búsqueda de contenido desde el Centro de seguridad & cumplimiento.
-ms.openlocfilehash: 6424f1763a297cd2fee0e6c8b5b1b06236b95ad0173bc6e117bedd2da5502ed9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Edite el Windows en el equipo local para deshabilitar los informes al exportar los resultados de una búsqueda de contenido desde el Centro de cumplimiento de Microsoft 365.
+ms.openlocfilehash: efe9ea768b68524dbfda003796a10d60453862bc
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808001"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503160"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Deshabilitar informes al exportar los resultados de búsqueda de contenido
 
-Cuando se usa la herramienta de exportación de exhibición de documentos electrónicos para exportar los resultados de una búsqueda de contenido en el Centro de cumplimiento de seguridad &, la herramienta crea y exporta automáticamente dos informes que contienen información adicional sobre el contenido exportado. Estos informes son el archivo Results.csv y el archivo [](#frequently-asked-questions-about-disabling-export-reports) Manifest.xml (consulte la sección Preguntas más frecuentes sobre cómo deshabilitar informes de exportación en este tema para obtener descripciones detalladas de estos informes). Dado que estos archivos pueden ser muy grandes, puede acelerar el tiempo de descarga y ahorrar espacio en disco al impedir que estos archivos se exporten. Para ello, cambie el registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Si desea incluir los informes más adelante, puede editar la configuración del Registro. 
+Cuando se usa la herramienta de exportación de exhibición de documentos electrónicos para exportar los resultados de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365, la herramienta crea y exporta automáticamente dos informes que contienen información adicional sobre el contenido exportado. Estos informes son el archivo Results.csv y el archivo [](#frequently-asked-questions-about-disabling-export-reports) Manifest.xml (consulte la sección Preguntas más frecuentes sobre cómo deshabilitar informes de exportación en este tema para obtener descripciones detalladas de estos informes). Dado que estos archivos pueden ser muy grandes, puede acelerar el tiempo de descarga y ahorrar espacio en disco al impedir que estos archivos se exporten. Para ello, cambie el registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Si desea incluir los informes más adelante, puede editar la configuración del Registro. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Crear la configuración del Registro para deshabilitar los informes de exportación
 

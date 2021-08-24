@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9e0b1da197b93fdae0cf0254b5af81808e3b744a73cbf74428dc7cc9f2da41d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bce19d10c26bbd34874af32fe493dafdc63064d6
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829404"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503244"
 ---
 # <a name="list-vulnerabilities"></a>Enumerar vulnerabilidades
 
@@ -39,7 +39,15 @@ ms.locfileid: "53829404"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## <a name="api-description"></a>Descripción de la API
+
 Recupera una lista de todas las vulnerabilidades.
+<br>Admite [consultas de OData V4](https://www.odata.org/documentation/).
+<br>Operadores compatibles con OData:
+<br>```$filter``` on:  ```id``` , , , , , y ```name``` ```description``` ```cvssV3``` ```publishedOn``` ```severity``` ```updatedOn``` properties.
+<br>```$top``` con un valor máximo de 10 000.
+<br>```$skip```.
+<br>Vea ejemplos en [consultas de OData con Microsoft Defender para Endpoint](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Permisos
 

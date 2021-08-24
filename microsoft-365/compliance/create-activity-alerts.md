@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Agregar y administrar alertas de actividad en el Centro de seguridad & cumplimiento para que Microsoft 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas
-ms.openlocfilehash: 1411e69229dc2baa60578bfa60a7c2c18184fd10a759081e68c13d87a482d7cb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Agregar y administrar alertas de actividad en el Centro de cumplimiento de Microsoft 365 para que Microsoft 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas
+ms.openlocfilehash: b9f73a8f61bf1d9ef303ce0ef0b4a60320cae4df
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886557"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503124"
 ---
 # <a name="create-activity-alerts"></a>Crear alertas de actividad
 
@@ -36,13 +36,13 @@ Puede crear una alerta de actividad que le enviará una notificación por correo
 
 ## <a name="confirm-roles-and-configure-audit-logging"></a>Confirmar roles y configurar el registro de auditoría
 
-- Debe tener asignado el rol Configuración de la organización en el Centro de seguridad & cumplimiento para administrar alertas de actividad. De forma predeterminada, este rol se asigna a los grupos de roles Administrador de cumplimiento y Administración de la organización. Para obtener más información acerca de cómo agregar miembros a grupos de roles, vea Dar acceso a los usuarios al Centro de [seguridad & cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Debe tener asignado el rol Configuración de la organización en el Centro de cumplimiento de Microsoft 365 para administrar alertas de actividad. De forma predeterminada, este rol se asigna a los grupos de roles Administrador de cumplimiento y Administración de la organización. Para obtener más información acerca de cómo agregar miembros a grupos de roles, vea Dar acceso a los usuarios [a la Centro de cumplimiento de Microsoft 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
-- Usted (u otro administrador) primero debe activar el registro de auditoría para su organización antes de poder empezar a usar alertas de actividad. Para ello, solo tienes que hacer clic **en Iniciar la grabación de** la actividad de usuario y administrador en la página **Alertas de** actividad. (Si no ve este vínculo, la auditoría ya se ha activado para su organización). También puede activar la auditoría  en la página Búsqueda del registro de auditoría en el Centro de seguridad y & cumplimiento (vaya a **Búsqueda** de registro \> **de auditoría de búsqueda).** Solo tiene que hacerlo una vez para su organización.
+- Usted (u otro administrador) primero debe activar el registro de auditoría para su organización antes de poder empezar a usar alertas de actividad. Para ello, solo tienes que hacer clic **en Iniciar la grabación de** la actividad de usuario y administrador en la página **Alertas de** actividad. (Si no ve este vínculo, la auditoría ya se ha activado para su organización). También puede activar la auditoría  en la página Búsqueda del registro de auditoría en el Centro de cumplimiento de Microsoft 365 (vaya a **Auditoría**). Solo tiene que hacerlo una vez para su organización.
 
 - Puede crear alertas para las mismas actividades que puede buscar en el registro de auditoría. Consulta la [sección Más información](#more-information) para obtener una lista de escenarios comunes (y la actividad específica que se va a supervisar) para la que puedes crear alertas.
 
-- Puede usar la página **Alertas de** actividad del Centro de seguridad y cumplimiento de & para crear alertas solo para la actividad realizada por los usuarios que aparecen en la libreta de direcciones de su organización. No puede usar esta página para crear alertas para actividades realizadas por usuarios externos que no aparecen en la libreta de direcciones.
+- Puede usar la página **Alertas de** actividad de la Centro de cumplimiento de Microsoft 365 para crear alertas solo para la actividad realizada por los usuarios que aparecen en la libreta de direcciones de su organización. No puede usar esta página para crear alertas para actividades realizadas por usuarios externos que no aparecen en la libreta de direcciones.
 
 ## <a name="create-an-activity-alert"></a>Crear una alerta de actividad
 
@@ -99,7 +99,7 @@ Para volver a activar una alerta de actividad, repita estos pasos y haga clic en
 
 ## <a name="more-information"></a>Más información
 
-- Este es un ejemplo de la notificación de correo electrónico que se envía a los usuarios que  se especifican en el campo Enviar esta alerta a (y que aparece en Destinatarios en la página **Alertas** de actividad) en el Centro de seguridad & cumplimiento.
+- Este es un ejemplo de la notificación de correo electrónico que se envía a los usuarios que  se especifican en el campo Enviar esta alerta a (y que aparece en Destinatarios en la página **Alertas** de actividad) en el Centro de cumplimiento de Microsoft 365.
 
     ![Ejemplo de una notificación de correo electrónico enviada para una alerta de actividad](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9916f0d7f41354decbe935a635dd709e2cfe1f6320cdb6edf9cc84c59559a964
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5ac9de03cec817f469fe096689e4badf615bb4c
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839560"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503268"
 ---
 # <a name="machineaction-resource-type"></a>Tipo de recurso MachineAction
 
@@ -40,7 +40,7 @@ ms.locfileid: "53839560"
 
 - Para obtener más información, vea [Response Actions](respond-machine-alerts.md).
 
-|Método|Tipo de valor devuelto|Description|
+|Método|Tipo de valor devuelto|Descripción|
 |---|---|---|
 |[Enumerar MachineActions](get-machineactions-collection.md)|[Acción de máquina](machineaction.md)|Enumerar [entidades de acción](machineaction.md) de máquina.|
 |[Obtener MachineAction](get-machineaction-object.md)|[Acción de máquina](machineaction.md)|Obtener una sola [entidad De acción de](machineaction.md) máquina.|
@@ -64,15 +64,22 @@ ms.locfileid: "53839560"
 |Propiedad|Tipo|Descripción|
 |---|---|---|
 |Id.|Guid|Identidad de la [entidad Acción de](machineaction.md) máquina.|
-|type|Enum|Tipo de la acción. Los valores posibles son: "RunAntiVirusScan", "Offboard", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" y "UnrestrictCodeExecution"|
+|type|Enum|Tipo de la acción. Los valores posibles son: "RunAntiVirusScan", "Offboard", "Live Response", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" y "UnrestrictCodeExecution".|
 |scope|cadena|Ámbito de la acción. "Completo" o "Selectivo" para aislamiento, "Rápido" o "Completo" para el examen antivirus.|
-|solicitante|String|Identidad de la persona que ejecutó la acción.|
-|requestorComment|String|Comentario que se escribió al emitir la acción.|
-|status|Enum|Estado actual del comando. Los valores posibles son: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" y "Canceled".|
-|machineId|Cadena|Id. de [la máquina](machine.md) en la que se ejecutó la acción.|
+|solicitante|Cadena|Identidad de la persona que ejecutó la acción.|
+|externalID|Cadena|Id que el cliente puede enviar en la solicitud de correlación personalizada.|
+|requestSource|cadena|Nombre del usuario o aplicación que envió la acción.|
+|Comandos |matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|
+|cancellationRequestor|String|Identidad de la persona que canceló la acción.|
+|requestorComment|Cadena|Comentario que se escribió al emitir la acción.|
+|cancellationComment|Cadena|Comentario que se escribió al cancelar la acción.|
+|status|Enum|Estado actual del comando. Los valores posibles son: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" y "Cancelled".|
+|machineId|String|Id. de [la máquina](machine.md) en la que se ejecutó la acción.|
 |machineId|Cadena|Nombre de la [máquina](machine.md) en la que se ejecutó la acción.|
 |creationDateTimeUtc|DateTimeOffset|Fecha y hora en que se creó la acción.|
-|lastUpdateTimeUtc|DateTimeOffset|La última fecha y hora en que se actualizó el estado de la acción.|
+|cancellationDateTimeUtc|DateTimeOffset|Fecha y hora en que se canceló la acción.|
+|lastUpdateDateTimeUtc|DateTimeOffset|La última fecha y hora en que se actualizó el estado de la acción.|
+|title|Cadena|Título de acción de máquina.|
 |relatedFileInfo|Clase|Contiene dos propiedades. string `fileIdentifier` , `fileIdentifierType` Enumerar con los valores posibles: "Sha1", "Sha256" y "Md5".|
 
 ## <a name="json-representation"></a>Representación json

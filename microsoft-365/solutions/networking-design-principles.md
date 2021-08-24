@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f1d3bcf269211dc00702c08c22ff0c6f6055b1b63f6bfd351d5aba7679b82978
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f259f7379d0b3f723880d8734488b2004581ff6f
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804761"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502056"
 ---
 # <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>Creación de redes (en la nube): punto de vista de un arquitecto
 
@@ -28,15 +28,15 @@ En este artículo, [Ed Fisher](https://www.linkedin.com/in/edfisher/), Security 
 
 ![Foto de Ed Fisher](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
 
-Actualmente soy un especialista técnico principal en la región sudoriental centrado en la seguridad y & cumplimiento. He trabajado con clientes que se han mudado a Office 365 durante los últimos 10 años. He trabajado con tiendas más pequeñas con un puñado de ubicaciones para agencias gubernamentales y empresas con millones de usuarios distribuidos por todo el mundo, y muchos otros clientes en el medio, con la mayoría de decenas de miles de usuarios, varias ubicaciones en varias partes del mundo, la necesidad de un mayor grado de seguridad y una gran variedad de requisitos de cumplimiento. He ayudado a cientos de empresas y millones de usuarios a moverse a la nube de forma segura y segura.
+Actualmente soy un especialista técnico principal en nuestro equipo comercial y de bienes de consumo, centrándome en la seguridad y & cumplimiento. He trabajado con clientes que se han mudado a Office 365 durante los últimos diez años. He trabajado con tiendas más pequeñas con un puñado de ubicaciones para agencias gubernamentales y empresas con millones de usuarios distribuidos por todo el mundo, y muchos otros clientes en el medio, con la mayoría de decenas de miles de usuarios, varias ubicaciones en varias partes del mundo, la necesidad de un mayor grado de seguridad y una gran variedad de requisitos de cumplimiento. He ayudado a cientos de empresas y millones de usuarios a moverse a la nube de forma segura y segura.
 
 Con un fondo en los últimos 25 años que incluye seguridad, infraestructura e ingeniería de red, y después de haber movido dos de mis anteriores empleadores a Office 365 antes de unirse a Microsoft, he estado muchas veces de su lado de la tabla y me acuerdo de cómo es eso. Aunque no hay dos clientes iguales, la mayoría tiene necesidades similares y al consumir un servicio estandarizado como cualquier plataforma SaaS o PaaS, los mejores enfoques tienden a ser los mismos.
 
-## <a name="its-not-the-networkits-how-youre-misusing-it"></a>No es la red, es como la usas (mal)
+## <a name="its-not-the-network--its-how-youre-misusing-it"></a>No es la red, es como la usas (mis)!
 
-No importa cuántas veces suceda, nunca deja  de sorprenderme cómo los equipos creativos de seguridad y los equipos de redes intentan llegar con la forma en que creen que deben conectarse a los servicios en la nube de Microsoft. Siempre hay alguna directiva de seguridad, estándar de cumplimiento o mejor manera en que insisten en el uso,  sin estar dispuestos a participar en una conversación sobre lo que están intentando lograr o cómo son mejores, más fáciles, más rentables y formas más eficaces de hacerlo.
+No importa cuántas veces suceda, nunca deja  de sorprenderme cómo los equipos creativos de seguridad y los equipos de redes intentan llegar con la forma en que creen que deben conectarse a los servicios en la nube de Microsoft. Siempre hay alguna directiva de seguridad, estándar de cumplimiento o mejor manera de que insisten en el uso,  sin estar dispuestos a participar en una conversación sobre lo que están intentando lograr, o cómo hay formas mejores, más fáciles, más rentables y más eficaces de hacerlo. 
 
-When this sort of thing is escalated to me, I'm usually willing to take the challenge and walk them through the how's and the why's and get them to where they need to be. Pero si estoy siendo completamente franco, tengo que compartir que a veces solo quiero dejarles hacer lo que quieran y volver a decir que se lo he dicho cuando finalmente conceden que no funciona. Es posible que quiera hacerlo a veces, pero *no*. Lo que hago es intentar explicar todo lo que voy a incluir en esta publicación. Independientemente de su rol, si su organización quiere usar los servicios en la nube de Microsoft, probablemente haya cierta prudencia en lo que sigue que puede ayudarle.
+When this sort of thing is escalated to me, I'm usually willing to take the challenge and walk them through the hows and the whys and get them to where they need to be. Pero si soy completamente franco, tengo que compartir que a veces solo quiero dejarles hacer lo que quieran y volver a decir que se lo he dicho cuando finalmente conceden que no funciona. Es posible que quiera hacerlo a veces, pero *no*. Lo que hago es intentar explicar todo lo que voy a incluir en esta publicación. Independientemente de su rol, si su organización quiere usar los servicios en la nube de Microsoft, probablemente haya cierta prudencia en lo que sigue que puede ayudarle.
 
 ## <a name="guiding-principles"></a>Principios de guía
 
@@ -108,7 +108,7 @@ Si va a permitir la tunelización dividida pero también usar un proxy para el t
 
 Decenas de miles de organizaciones, incluidas casi todas las de La Fortuna 500, usan Office 365 todos los días para sus funciones críticas de misión. Lo hacen de forma segura y lo hacen a través de Internet.
 
-Independientemente de los objetivos de seguridad que tenga en juego, hay maneras de lograrlos que no requieren conexiones VPN, servidores proxy, interrupción e inspección de TLS, o salida centralizada de Internet para que el tráfico de los usuarios se despegue de la red y el nuestro lo antes posible, lo que proporciona el mejor rendimiento, independientemente de si la red es la sede de la empresa. , una oficina remota o ese usuario que trabaja en casa. Nuestra guía se basa en cómo se Office 365 los servicios de seguridad y para garantizar una experiencia de usuario segura y de rendimiento.
+Independientemente de los objetivos de seguridad que tenga en juego, hay maneras de lograrlos que no requieren conexiones VPN, servidores proxy, interrupción e inspección de TLS, o salida centralizada de Internet para sacar el tráfico de los usuarios de la red y el nuestro tan rápido como pueda, lo que proporciona el mejor rendimiento, independientemente de si la red es la sede de la compañía,  una oficina remota o ese usuario que trabaja en casa. Nuestra guía se basa en cómo se Office 365 los servicios de seguridad y para garantizar una experiencia de usuario segura y de rendimiento.
 
 ## <a name="further-reading"></a>Lectura adicional
 
@@ -132,7 +132,7 @@ Independientemente de los objetivos de seguridad que tenga en juego, hay maneras
 
 [Redes de entrega de contenido](../enterprise/content-delivery-networks.md)
 
-[Prueba de conectividad de Microsoft 365](https://connectivity.office.com/)
+[Prueba de conectividad de Microsoft 365](https://connectivity.office.com/)
 
 [Cómo construye Microsoft su red global rápida y confiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

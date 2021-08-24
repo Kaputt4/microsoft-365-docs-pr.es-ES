@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f4c50b9058510f07ef1e64bbfe2c01198a2cc78d02af1d4474e0cf1e6ba362c5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7a339c3083c69b926f46134061a263bdb5bfeba
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793879"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502752"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>Enumerar vulnerabilidades por máquina y software
 
@@ -41,7 +41,9 @@ Recupera una lista de todas las vulnerabilidades que afectan a la organización 
 
 - Si la vulnerabilidad tiene un KB de corrección, aparecerá en la respuesta.
 - Admite [consultas de OData V4](https://www.odata.org/documentation/).
-- OData ```$filter``` se admite en todas las propiedades.
+- La consulta de OData `$filter` se admite en: `id` , , , , , , y `cveId` `machineId` `fixingKbId` `productName` `productVersion` `severity` `productVendor` propiedades.
+<br>```$stop``` con un valor máximo de 10 000
+<br>```$skip```
 
 > [!TIP]
 > Esta es una excelente API para [Power BI integración.](api-power-bi.md)
@@ -65,7 +67,7 @@ GET /api/vulnerabilities/machinesVulnerabilities
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

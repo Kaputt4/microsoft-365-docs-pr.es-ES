@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4b407e99b65fd3f8deb28f4e76496f64b0160150558f200149abaed896d8717a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 184d3a09c0dd4d01ad074563603e6a4f5cbc0a99
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817836"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502788"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender para punto de conexión en Android
 
@@ -62,7 +62,9 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Defender 
     -   Acceso al portal Microsoft 365 Defender web.
 
         > [!NOTE]
-        > Microsoft Intune es la única solución de administración de dispositivos móviles (MDM) compatible para implementar Microsoft Defender para Endpoint en Android. Actualmente, solo se admiten dispositivos inscritos para aplicar las directivas de cumplimiento de dispositivos relacionados con Defender for Endpoint en Android en Intune. 
+        > Microsoft Defender para endpoint ahora puede extender la protección a los datos de una organización dentro de una aplicación administrada para aquellos que no usan la administración de dispositivos móviles (MDM), pero que usan Intune para administrar aplicaciones móviles. También amplía esta compatibilidad a los clientes que usan otras soluciones de administración de movilidad empresarial, mientras que sigue usando Intune para la administración de aplicaciones móviles [(MAM).](/mem/intune/apps/mam-faq)
+         > Antes de esta actualización, Microsoft Defender para Endpoint funcionaba en dispositivos inscritos solo con MDM de Intune.  
+ 
 
     -   Accede [Microsoft Endpoint Manager centro de administración](https://go.microsoft.com/fwlink/?linkid=2109431), para implementar la aplicación en grupos de usuarios inscritos en tu organización.
         
@@ -97,4 +99,5 @@ Encontrará instrucciones sobre cómo configurar las características de Microso
 ## <a name="related-topics"></a>Temas relacionados
 - [Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune](android-intune.md)
 - [Configurar Microsoft Defender para punto de conexión en funciones de Android](android-configure.md)
+- [Conceptos básicos de administración de aplicaciones móviles (MAM)](/mem/intune/apps/app-management#mobile-application-management-mam-basics)
 

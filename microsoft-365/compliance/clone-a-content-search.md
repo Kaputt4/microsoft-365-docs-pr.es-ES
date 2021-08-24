@@ -18,12 +18,12 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: Use el script de PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente en el centro de cumplimiento en Office 365 o Microsoft 365.
-ms.openlocfilehash: 526c07ac3ce3ee30137bcb4d51f2c5fee32cc546bdcc5b56795ddea7f0449ac5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80dd6911f387a7912d92bfbcfac3c94e6ee804eb
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872028"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503208"
 ---
 # <a name="clone-a-content-search"></a>Clonar una búsqueda de contenido
 
@@ -39,7 +39,7 @@ Crear una búsqueda de contenido en el centro de cumplimiento en Office 365 o Mi
   
 ## <a name="script-information"></a>Información de script
 
-- Debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de seguridad & cumplimiento para ejecutar el script descrito en este tema.
+- Debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 para ejecutar el script descrito en este tema.
     
 - El script incluye un control de errores mínimo. El propósito principal del script es clonar rápidamente una búsqueda de contenido.
     
@@ -53,7 +53,7 @@ Crear una búsqueda de contenido en el centro de cumplimiento en Office 365 o Mi
 
 El script de este paso creará una nueva búsqueda de contenido clonando una existente. Al ejecutar este script, se le pedirá la siguiente información:
   
-- **Sus credenciales de usuario:** el script usará sus credenciales para conectarse al Centro de seguridad y & cumplimiento para su organización con Windows PowerShell. Como se ha indicado anteriormente, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de & de seguridad para ejecutar el script. 
+- **Sus credenciales de usuario:** el script usará sus credenciales para conectarse a PowerShell del Centro de & seguridad. Como se ha indicado anteriormente, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de & de seguridad para ejecutar el script. 
     
 - **Nombre de la búsqueda existente:** se trata de la búsqueda de contenido que desea clonar. 
     
@@ -141,7 +141,7 @@ Para clonar una búsqueda:
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Paso 2: Editar y ejecutar la búsqueda clonada en el centro de cumplimiento
 
-Después de ejecutar el script para clonar una búsqueda de contenido existente, el siguiente paso es ir al Centro de cumplimiento para editar y ejecutar la nueva búsqueda. Como se ha indicado anteriormente, puede editar una búsqueda cambiando la consulta de búsqueda de palabras clave y agregando o eliminando condiciones de búsqueda. Para obtener más información, vea:
+Después de ejecutar el script para clonar una búsqueda de contenido existente, el siguiente paso es ir al Centro de cumplimiento para editar y ejecutar la nueva búsqueda. Como se ha indicado anteriormente, puede editar una búsqueda cambiando la consulta de búsqueda de palabras clave y agregando o eliminando condiciones de búsqueda. Para más información vea:
   
 - [Búsqueda de contenido de Office 365](content-search.md)
     

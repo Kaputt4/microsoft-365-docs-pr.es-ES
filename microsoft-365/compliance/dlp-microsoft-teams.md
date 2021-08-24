@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams chats y canales admiten directivas de prevención de pérdida de datos (DLP).
-ms.openlocfilehash: c71001ec81326df07362c4caa34a2f9d382fb3eb3b18d790a3883f369b41aba7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a2ad3cdb3666550f5205eb3e1b7d1a7f6c6b3a66
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851341"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502968"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams.
 
@@ -37,10 +37,10 @@ Si su organización tiene prevención de pérdida de datos (DLP), puede definir 
 
 [Las capacidades de prevención](dlp-learn-about-dlp.md) de pérdida de datos se ampliaron para incluir Microsoft Teams chat y mensajes de canal, **incluidos** los mensajes de canal privado para:
 
-- Office 365 E5/A5
-- Microsoft 365 E5/A5
-- Gobierno y protección de información de Microsoft 365
-- Cumplimiento avanzado de Office 365
+- Office 365 E5/A5/G5
+- Microsoft 365 E5/A5/G5
+- Microsoft 365 E5/A5/G5 Information Protection and Governance
+- Microsoft 365 E5/A5/G5/F5 Compliance y F5 Security & Compliance
 
 Office 365 y Microsoft 365 E3 protección DLP para SharePoint Online, OneDrive y Exchange Online. Esto también incluye archivos que se comparten a través de Teams porque Teams usa SharePoint Online y OneDrive para compartir archivos.
 

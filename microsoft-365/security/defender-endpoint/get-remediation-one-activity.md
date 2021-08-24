@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4f1c9ee4c5a4581bf9af73a9474574b31c253ca9f00488c7a7168f687c42f538
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 445267eef56c50dfce4bb1349c8188b47c2bbc06
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53903769"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502944"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Obtener una actividad de corrección por id.
 
@@ -56,7 +56,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación|RemediationTask.Read.All|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
+Aplicación|RemediationTasks.Read.All|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
 Delegado (cuenta profesional o educativa)|RemediationTask.Read.Read|\'Leer información sobre vulnerabilidades de administración de amenazas y vulnerabilidades\'
 
 ## <a name="properties"></a>Propiedades
@@ -66,7 +66,7 @@ Propiedad (id)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 categoría|Cadena|Categoría de la actividad de corrección (configuración software/seguridad)|Software
 completerEmail|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico|nulo
 completerId|Cadena|Si alguien completó la actividad de corrección manualmente, esta columna contiene su identificador de objeto|nulo
-completionMethod|Cadena|Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están parcheados) o "manualmente" por una persona que selecciona "marcar como completada"|Automatic
+completionMethod|Cadena|Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están parcheados) o "manualmente" por una persona que selecciona "marcar como completada"|Automático
 createdOn|DateTime|Hora en que se creó esta actividad de corrección|2021-01-12T18:54:11.5499478Z
 description|Cadena|Descripción de esta actividad de corrección|Actualiza Microsoft Silverlight a una versión posterior para mitigar las vulnerabilidades conocidas que afectan a los dispositivos.
 dueOn|DateTime|Fecha de vencimiento que el creador estableció para esta actividad de corrección|2021-01-13T00:00:00Z
@@ -80,17 +80,17 @@ rbacGroupNames|Cadena|Nombres de grupo de dispositivos relacionados|[ "Windows s
 recommendedProgram|Cadena|Programa recomendado para actualizar a|nulo
 recommendedVendor|Cadena|Proveedor recomendado para actualizar a|nulo
 recommendedVersion|Cadena|Versión recomendada para actualizar o actualizar a|nulo
-relatedComponent|String|Componente relacionado de esta actividad de corrección (similar al componente relacionado para una recomendación de seguridad)|Microsoft Microsoft Silverlight
+relatedComponent|Cadena|Componente relacionado de esta actividad de corrección (similar al componente relacionado para una recomendación de seguridad)|Microsoft Microsoft Silverlight
 requesterEmail|Cadena|Dirección de correo electrónico del creador|globaladmin@UserName.contoso.com
 requesterId|Cadena|Id. de objeto Creator|r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes|Cadena|Las notas (texto libre) que el creador agregó para esta actividad de corrección|nulo
 scid|Cadena|SCID de la recomendación de seguridad relacionada|nulo
-status|String|Estado de la actividad de corrección (Activo/Completado)|Activo
+status|Cadena|Estado de la actividad de corrección (Activo/Completado)|Activa
 statusLastModifiedOn|DateTime|Fecha en la que se actualizó el campo de estado|2021-01-12T18:54:11.5499487Z
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección|43
 title|Cadena|Título de esta actividad de corrección|Microsoft Silverlight
 type|Cadena|Tipo de corrección|Actualizar
-vendorId|Cadena|Nombre de proveedor relacionado|Microsoft
+vendorId|String|Nombre de proveedor relacionado|Microsoft
 
 ## <a name="example"></a>Ejemplo
 
@@ -139,7 +139,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 } 
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
 - [Enumerar todas las actividades de corrección](get-remediation-all-activities.md)

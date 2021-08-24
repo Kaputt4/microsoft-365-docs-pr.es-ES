@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5a27bebc9be678119703f931d99e07627c4355e0c64febecb067a12666edb73d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e39a1833157210e3d5e4c6a5bcc77deede295f3c
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793807"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58501996"
 ---
 # <a name="list-exposure-score-by-device-group"></a>Puntuación de exposición de lista por grupo de dispositivos
 
@@ -39,7 +39,7 @@ ms.locfileid: "53793807"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Recupera una colección de alertas relacionadas con una dirección de dominio determinada.
+Recupera la puntuación de exposición de cada grupo de máquinas.
 
 ## <a name="permissions"></a>Permisos
 
@@ -60,7 +60,7 @@ GET /api/exposureScore/ByMachineGroups
 
 Nombre|Tipo|Descripción
 ---|---|---
-|Authorization|String|Portador {token}. **Obligatorio**.
+|Authorization|Cadena|Portador {token}. **Obligatorio**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

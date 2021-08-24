@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden configurar y usar un conector nativo para importar datos de Twitter a Microsoft 365.
-ms.openlocfilehash: ad72f5ea621579ea6d2837931e94140e25cce934d38dca8c48a3db8e8790c3b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1b55a9af001e2ed2f67e7847fc7b70eee974bb88
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820680"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502716"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Configurar un conector para archivar datos de Twitter (versión preliminar)
 
@@ -43,7 +43,7 @@ Complete los siguientes requisitos previos antes de configurar y configurar un c
     - [Registrarse para una suscripción de Azure de pago por uso](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > La [suscripción Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) gratuita que se incluye con la suscripción Microsoft 365 no admite los conectores del Centro de seguridad & cumplimiento.
+    > La [suscripción Azure Active Directory gratuita](use-your-free-azure-ad-subscription-in-office-365.md) que se incluye con la suscripción Microsoft 365 no admite los conectores de la Centro de cumplimiento de Microsoft 365.
 
 - El conector de Twitter puede importar un total de 200 000 elementos en un solo día. Si hay más de 200 000 elementos de Twitter en un día, ninguno de esos elementos se importará a Microsoft 365.
 
