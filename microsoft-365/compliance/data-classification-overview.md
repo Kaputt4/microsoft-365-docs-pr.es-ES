@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: c85129d13b836b8eab8b15fa5fcbbc3813d908e2c49f11ca70d887b283944370
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 367b37493b22074ca4d8006c8d8f8067c2b3d29b
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860899"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450121"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
@@ -53,8 +53,6 @@ La clasificación de datos analizará su contenido confidencial y el contenido e
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Un numero de diferentes suscripciones admite punto de conexión DLP. Para ver las opciones de licencia para el punto de conexión DLP, vea [Concesión de licencias de protección de la información para obtener instrucciones](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
-
 ### <a name="permissions"></a>Permissions
 
  Para obtener acceso a la página de clasificación de datos, una cuenta debe tener asignada una suscripción en cualquiera de estos roles o grupos de roles.
@@ -82,7 +80,7 @@ Para averiguar cuántos elementos hay en una categoría de clasificación determ
 ![detalle de los tipos principales de información confidencial](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
-> Si la tarjeta muestra el mensaje "No se ha encontrado ningún dato que contenga información confidencial". Significa que no hay ningún elemento de la organización que se haya clasificado como un tipo de información confidencial o que no se ha rastreado ningún elemento. Para comenzar a usar las etiquetas, vea:
+> Si la tarjeta muestra el mensaje "No se encontraron datos con información confidencial" significa que no hay ningún elemento de la organización que se haya clasificado como un tipo de información confidencial o que no se ha rastreado ningún elemento. Para comenzar a usar las etiquetas, vea:
 >- [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md)
 >- [Introducción a las directivas de retención y las etiquetas de retención](get-started-with-retention.md)
 >- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
@@ -91,8 +89,8 @@ Para averiguar cuántos elementos hay en una categoría de clasificación determ
 
 Al aplicar una etiqueta de confidencialidad a un elemento a través de Microsoft 365 o de Azure Information Protection (AIP), ocurren dos cosas:
 
-- se incrusta en el documento una etiqueta que indica el valor que tiene el elemento para la organización y que acompañará al documento a cualquier lugar al que vaya;
-- la presencia de la etiqueta habilita varios comportamientos de protección, como, por ejemplo, la marca de agua o el cifrado obligatorios. Con la protección del punto de conexión habilitada, podrá incluso evitar que un elemento abandone el control de la organización.
+- Se incrusta en el documento una etiqueta que indica el valor que tiene el elemento para la organización y que acompañará al documento a cualquier lugar al que vaya.
+- La presencia de la etiqueta habilita varios comportamientos de protección, como por ejemplo, la marca de agua o el cifrado obligatorios. Con la protección del punto de conexión habilitada, podrá incluso evitar que un elemento abandone el control de la organización.
 
 Para obtener más información sobre las etiquetas de confidencialidad, vea: [Información general de etiquetas de confidencialidad](sensitivity-labels.md).
 
@@ -108,7 +106,7 @@ La tarjeta de la etiqueta de confidencialidad muestra el número de elementos (c
 
 ## <a name="top-retention-labels-applied-to-content"></a>Etiquetas principales de retención que se aplican al contenido
 
-Las etiquetas de retención se usan para administrar la retención y la eliminación de contenido en la organización. Cuando se aplican, pueden usarse para controlar la forma en que se conservará un documento antes de eliminarlo, si debe revisarse antes de eliminarlo, cuándo expira su periodo de retención o si debe marcarse como un registro que no puede eliminarse nunca. Para obtener más información, consulte [Información sobre las etiquetas y directivas de retención](retention.md).
+Las etiquetas de retención se usan para administrar la retención y la eliminación de contenido en la organización. Cuando se aplican, pueden usarse para controlar por cuánto tiempo se conservará un documento antes de ser eliminado, si debería revisarse antes de ser eliminado, cuándo expira su periodo de retención o si debería marcarse como un registro. Para obtener más información, consulte [Información sobre las etiquetas y directivas de retención](retention.md).
 
 La tarjeta de etiquetas principales de retención aplicadas muestra el número de elementos que tienen una etiqueta de retención determinada.
 
@@ -133,6 +131,20 @@ El informe de la clasificación de datos tiene la finalidad de ofrecer informaci
 > [!NOTE]
 > Si esta tarjeta muestra el mensaje "No se ha detectado ninguna ubicación", significa que no se ha creado ni publicado ninguna etiqueta de confidencialidad o que no hay ningún contenido con una etiqueta de retención aplicada. Para empezar a usar las etiquetas de confidencialidad, consulte:
 >- [Etiquetas de confidencialidad](sensitivity-labels.md)
+
+## <a name="public-preview-release-notes"></a>Notas de la versión preliminar pública 
+
+> [!NOTE]
+> **Recuento de buzones de Exchange**: observará que aparece una pequeña información sobre herramientas al profundizar en los buzones de Exchange. Esto sirve para llamar la atención sobre el hecho de que el recuento total mostrado sobre el tipo de información confidencial, etiquetas de confidencialidad y retención puede no coincidir exactamente con el número de elementos que se encuentran en el interior del buzón de correo. Esto se debe a la profunda exploración de la carpeta para obtener la vista en vivo del contenido, el cual es clasificado, mientras se calcula el recuento agregado. Información que el usuario debería notar incluso al echar un vistazo
+
+> [!NOTE]
+> **La representación de documentos cifrados**: los archivos de SharePoint, Exchange y OneDrive cifrados no se representan en el explorador de contenido. Este es un problema de confidencialidad que requiere de un equilibrio entre la necesidad de ver el contenido del archivo en el explorador de contenido y la necesidad de mantener el contenido cifrado. Con los permisos concedidos por los grupos de roles del **visor de listas del explorador de contenido** y el **visor del explorador de contenido**, obtendrá una vista de la lista de los archivos, los metadatos y un vínculo que puede usar para obtener acceso al contenido a través del cliente web. Información que el usuario debería notar incluso al echar un vistazo
+
+> [!NOTE]
+> **Caracteres admitidos en los nombres de etiquetas de retención en la búsqueda de SharePoint**: la búsqueda de SharePoint no admite nombres de etiquetas de retención con `-`. o `_` en ellos. Por ejemplo, `Label-MIP` y `Label_MIP` no son admitidos. La búsqueda en SharePoint admite el uso de esos caracteres en los nombres de las etiquetas de confidencialidad y en los nombres de los tipos de información confidencial.
+
+> [!NOTE]
+> **OneDrive permanece en versión preliminar**: gracias por sus valiosos comentarios sobre la integración de OneDrive durante nuestro programa de versión preliminar. Mientras trabajamos en las especificaciones, es posible que se puedan producir datos/flujos incoherentes. Seguiremos mostrando OneDrive en la versión preliminar hasta que todas las correcciones estén en su sitio. Agradecemos su apoyo continuo.
 
 ## <a name="see-also"></a>Vea también
 

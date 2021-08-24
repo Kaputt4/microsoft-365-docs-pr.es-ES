@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: cafe6fe2628d58b80ea86753734e56996c5fdfcd
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 44caa372797e627a05bc40b3fb816d50dcd5a88c
+ms.sourcegitcommit: 0ec4a6cc94ebc2ae18846011a34bbd1dd9a7ace0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357058"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470781"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Este escenario no es compatible con los [registros normativos](records-management.md#records).
+> Este escenario no se admite para [registros normativos](records-management.md#records) o etiquetas predeterminadas para una estructura de organización, como un conjunto de documentos o una biblioteca en SharePoint, o una carpeta en Exchange. Estos escenarios requieren una [directiva de etiqueta de retención publicada](create-apply-retention-labels.md#step-2-publish-retention-labels).
 
 Una de las características más eficaces de las [etiquetas de retención](retention.md) es la capacidad de aplicarlas automáticamente al contenido que coincide con condiciones especificadas. En este caso, no es necesario que las personas de la organización apliquen las etiquetas de retención. Microsoft 365 realiza el trabajo por ellos.
   
@@ -53,7 +53,7 @@ Los procesos para aplicar automáticamente una etiqueta de retención se basan e
 Utilice las siguientes instrucciones para los dos pasos de administrador.
 
 > [!NOTE]
-> Las directivas automáticas emplean etiquetado del lado del servicio con condiciones para aplicar etiquetas de retención automáticamente. También puede aplicar automáticamente una etiqueta de retención con una directiva de etiqueta al hacer lo siguiente: 
+> Las directivas automáticas emplean etiquetado del lado del servicio con condiciones para aplicar etiquetas de retención a los elementos automáticamente. También puede aplicar automáticamente una etiqueta de retención con una directiva de etiqueta al hacer lo siguiente: 
 >
 > - Puede aplicar fácilmente una etiqueta de retención a un modelo de comprensión mediante documentos en SharePoint Syntex.
 > - Aplicar una etiqueta de retención predeterminada para SharePoint y Outlook
@@ -136,6 +136,7 @@ Las tres condiciones pueden aplicar automáticamente etiquetas de retención a l
 |Palabras clave específicas o propiedades que se pueden buscar| Sí |Sí |
 |Clasificadores que se pueden entrenar| Sí | Sí (solo los últimos seis meses) |
 
+Además, los elementos de SharePoint que están en borrador o que nunca se han publicado no se admiten para este escenario.
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Aplicar automáticamente etiquetas a los contenidos con tipos específicos de información sensible
 

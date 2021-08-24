@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Más información sobre las opciones de configuración de uso compartido de invitados disponibles en Microsoft 365 que pueden afectar al uso compartido con personas de fuera de su organización.
-ms.openlocfilehash: 33cec29afa04c3f2829f055e01760a19b47f1405acd618d630641135779976a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b8b8b8481dca5074d2db6c3022d65e160cdf7b04
+ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862508"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58418024"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -149,7 +149,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 
 **Navegación:** Centro de administración de SharePoint > Uso compartido
 
-![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint](../media/sharepoint-organization-external-sharing-controls.png)
+![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint](../media/external-sharing.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -160,7 +160,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 
 **Navegación:** Centro de administración de SharePoint > Uso compartido
 
-![Captura de pantalla de la configuración de uso compartido adicional en el nivel de organización de SharePoint](../media/sharepoint-organization-advanced-sharing-settings.png)
+![Captura de pantalla de la configuración de uso compartido adicional en el nivel de organización de SharePoint](../media/external-sharing.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -169,6 +169,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 |Los invitados deben iniciar sesión con la misma cuenta a la que se enviaron las invitaciones para el uso compartido|Desactivado|Impide que los invitados canjeen las invitaciones de uso compartido de sitios con una dirección de correo electrónico distinta a la que se envió la invitación. <p> La [Integración de SharePoint y OneDrive con Azure AD B2B (versión preliminar)](/sharepoint/sharepoint-azureb2b-integration-preview) no usa esta opción, ya que todos los invitados se agregan al directorio basándose en la dirección de correo electrónico a la que se envió la invitación. No se pueden usar direcciones de correo electrónico alternativas para tener acceso al sitio.|
 |Permitir que los invitados compartan elementos que no poseen|Activado|Si está **Activado**, los invitados pueden compartir elementos que no poseen con otros usuarios o invitados; si está **Desactivado**, no pueden hacerlo. Los invitados siempre podrán compartir elementos sobre los que tengan control total.|
 |Las personas que usan un código de verificación deben volver a autenticarse después de estos días|Desactivado|Este valor permite requerir que los usuarios que se autentiquen con un código de acceso de un solo uso tengan que volver a autenticarse después de un determinado número de días.|
+|El acceso de invitado a un sitio o a OneDrive expirará automáticamente después de este número de días|Activado|Si el administrador ha establecido un tiempo de expiración para el acceso de invitado, cada individuo al que invite al sitio o con el que comparta archivos y carpetas individuales tendrá acceso durante un determinado número de días. Para más información, visite [Administrar la expiración de invitados para un sitio](https://support.microsoft.com/en-us/office/manage-guest-expiration-for-a-site-25bee24f-42ad-4ee8-8402-4186eed74dea)
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>Configuración de vínculos a archivos y carpetas de SharePoint y OneDrive
 

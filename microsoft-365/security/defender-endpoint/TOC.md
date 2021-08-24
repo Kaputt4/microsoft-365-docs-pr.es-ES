@@ -268,9 +268,9 @@
 #### [Habilitar y configurar la protección siempre activa del Antivirus de Windows Defender en la directiva de grupo](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [Corregir la detección de correcciones para el Antivirus de Windows Defender](configure-remediation-microsoft-defender-antivirus.md)
 #### [Configurar el examen bajo petición en el Antivirus de Microsoft Defender](schedule-antivirus-scans.md)
-##### [Programar los exámenes de antivirus con la directiva de grupo](schedule-antivirus-scans-group-policy.md)
-##### [Programar los exámenes de antivirus con PowerShell](schedule-antivirus-scans-powershell.md)
-##### [Programar los exámenes de antivirus con Instrumental de administración de Windows (WMI)](schedule-antivirus-scans-wmi.md)
+##### [Programar exámenes mediante directiva de grupo](schedule-antivirus-scans-group-policy.md)
+##### [Programar exámenes mediante PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Programar exámenes mediante WMI](schedule-antivirus-scans-wmi.md)
 #### [Usar el análisis rápido limitado en el Antivirus de Windows Defender](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Compatibilidad con otros productos para la seguridad](microsoft-defender-antivirus-compatibility.md)
 
@@ -308,7 +308,7 @@
 ##### [Exclusiones en función del archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusiones para los archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusiones para Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
-##### [Errores comunes para evitarlos cuando se definen exclusiones](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+##### [Errores comunes que debe evitar](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
 #### Solución de problemas del Antivirus de Microsoft Defender
 ##### [Solucionar problemas de informes del Antivirus de Windows Defender en la comprobación de actualizaciones](troubleshoot-reporting.md)
@@ -347,11 +347,11 @@
 ##### [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
 
 #### [Control de dispositivo]()
-##### [Informes del control de dispositivo](device-control-report.md)
-##### [Controlar dispositivos USB](control-usb-devices-using-intune.md)
+##### [Control de dispositivos USB y otros medios extraíbles](control-usb-devices-using-intune.md)
 ##### [Protección de almacenamiento extraíble](device-control-removable-storage-protection.md)
 ##### [Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)
 ##### [Protección de la impresora de control de dispositivo](printer-protection.md)
+##### [Informes del control de dispositivo](device-control-report.md)
 
 #### [Bloqueo y contención de comportamientos]()
 ##### [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)
@@ -659,38 +659,38 @@
 
 ### [Recursos útiles](helpful-resources.md)
 
-### [Solucionar problemas de Microsoft Defender para punto de conexión]()
-#### [Solucionar problemas de estado del sensor]()
-##### [Comprobar estado del sensor](check-sensor-status.md)
-##### [Corregir sensores con estado incorrecto](fix-unhealthy-sensors.md)
-##### [Dispositivos inactivos](fix-unhealthy-sensors.md#inactive-devices)
-##### [Dispositivos mal configurados](fix-unhealthy-sensors.md#misconfigured-devices)
-##### [Revisar los eventos de sensor y los errores en máquinas con el Visor de eventos](event-error-codes.md)
+## [Solucionar problemas]()
+### [Solucionar problemas de estado del sensor]()
+#### [Comprobar estado del sensor](check-sensor-status.md)
+#### [Corregir sensores con estado incorrecto](fix-unhealthy-sensors.md)
+#### [Dispositivos inactivos](fix-unhealthy-sensors.md#inactive-devices)
+#### [Dispositivos mal configurados](fix-unhealthy-sensors.md#misconfigured-devices)
+#### [Revisar los eventos de sensor y los errores en máquinas con el Visor de eventos](event-error-codes.md)
 
-#### [Solución de problemas de mantenimiento del sensor mediante el Analizador de clientes]()
-##### [Información general del Analizador de clientes](overview-client-analyzer.md)
-##### [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)
-##### [Ejecutar el Analizador de clientes en Windows](run-analyzer-windows.md)
-##### [Ejecutar el Analizador de clientes en macOS o Linux](run-analyzer-macos-linux.md)
-##### [ Recopilación de datos para solucionar problemas avanzados en Windows](data-collection-analyzer.md)
-##### [Comprender el informe HTML del analizador](analyzer-report.md)
-##### [Proporcionar comentarios sobre la herramienta del Analizador de clientes](analyzer-feedback.md)
+### [Solución de problemas de mantenimiento del sensor mediante el Analizador de clientes]()
+#### [Información general del Analizador de clientes](overview-client-analyzer.md)
+#### [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)
+#### [Ejecutar el Analizador de clientes en Windows](run-analyzer-windows.md)
+#### [Ejecutar el Analizador de clientes en macOS o Linux](run-analyzer-macos-linux.md)
+#### [ Recopilación de datos para solucionar problemas avanzados en Windows](data-collection-analyzer.md)
+#### [Comprender el informe HTML del analizador](analyzer-report.md)
+#### [Proporcionar comentarios sobre la herramienta del Analizador de clientes](analyzer-feedback.md)
 
-  
+ 
 
-#### [Solucionar problemas de servicio de Microsoft Defender para punto de conexión]()
-##### [Solucionar problemas de servicio](troubleshoot-mdatp.md)
-##### [Comprobar el estado del servicio](service-status.md)
-##### [Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión](contact-support.md)
+### [Solucionar problemas de servicio de Microsoft Defender para punto de conexión]()
+#### [Solucionar problemas de servicio](troubleshoot-mdatp.md)
+#### [Comprobar el estado del servicio](service-status.md)
+#### [Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión](contact-support.md)
 
-#### [Solucionar problemas de respuesta en vivo](troubleshoot-live-response.md)
+### [Solucionar problemas de respuesta en vivo](troubleshoot-live-response.md)
 
-#### [Recopilar registros de soporte técnico con LiveAnalyzer](troubleshoot-collect-support-log.md)
+### [Recopilar registros de soporte técnico con LiveAnalyzer](troubleshoot-collect-support-log.md)
 
-#### [Solucionar problemas de la reducción de la superficie expuesta a ataques]()
-##### [Protección de red](troubleshoot-np.md)
-##### [Reglas de la reducción de la superficie expuesta a ataques](troubleshoot-asr.md)
-##### [Migrar las reglas de la reducción de la superficie expuesta a ataques](migrating-asr-rules.md)
+### [Solucionar problemas de la reducción de la superficie expuesta a ataques]()
+#### [Protección de red](troubleshoot-np.md)
+#### [Reglas de la reducción de la superficie expuesta a ataques](troubleshoot-asr.md)
+#### [Migrar las reglas de la reducción de la superficie expuesta a ataques](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../defender/index.yml)
 # [Defender para Office 365](../office-365-security/index.yml)
