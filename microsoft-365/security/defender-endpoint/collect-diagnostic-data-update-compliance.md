@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 9952e2ce2862e8a811cc490ca7cf61812fb9c702c3784fc487515a5349154024
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 273dc08dd3778451f14f9c78c984be8affc2d8fd
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834196"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58510018"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Recopilar datos de diagnóstico de cumplimiento de actualizaciones para Antivirus de Microsoft Defender evaluación
 
@@ -37,30 +37,30 @@ Antes de intentar este proceso, asegúrese de que ha leído Solucionar problemas
 En al menos dos dispositivos que no se informen o se muestren en Update Compliance, obtenga el .cab de diagnóstico siguiendo los pasos siguientes:
 
 1. Abra una versión de nivel de administrador del símbolo del sistema de la siguiente manera:
-        
+
     a. Abra el **menú** Inicio.
 
     b. Escriba **cmd**. Haga clic con el botón secundario en **el símbolo del sistema** y, a continuación, seleccione Ejecutar como **administrador**.
 
     c. Especifique las credenciales de administrador o apruebe el símbolo del sistema.
-        
+
 2. Navegue hasta el Windows Defender directorio. El valor predeterminado es `C:\Program Files\Windows Defender`
 
 3. Escriba el siguiente comando y, a continuación, presione **ENTRAR**
-        
+
     ```Dos
     mpcmdrun -getfiles
     ```
-    
+
 4. Se generará .cab archivo de diagnóstico que contenga varios registros de diagnóstico. La ubicación del archivo se especificará en la salida del símbolo del sistema. De forma predeterminada, la ubicación es `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .
 
 5. Copie estos .cab en una ubicación a la que pueda tener acceso el soporte técnico de Microsoft. Un ejemplo podría ser una carpeta OneDrive contraseña que puede compartir con nosotros.
 
 6. Envíe un correo electrónico con la plantilla <a href="mailto:ucsupport@microsoft.com?subject=MDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">de</a>correo electrónico de soporte técnico de actualización y rellene la plantilla con la siguiente información:
-  
-    ```
+
+    ```text
     I am encountering the following issue when using Microsoft Defender Antivirus in Update Compliance:
-    
+
     I have provided at least 2 support .cab files at the following location: <accessible share, including access details such as password>
 
     My OMS workspace ID is:
@@ -68,6 +68,6 @@ En al menos dos dispositivos que no se informen o se muestren en Update Complian
     Please contact me at:
     ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Solucionar problemas Windows Defender Antivirus de Microsoft Defender informes](troubleshoot-reporting.md)

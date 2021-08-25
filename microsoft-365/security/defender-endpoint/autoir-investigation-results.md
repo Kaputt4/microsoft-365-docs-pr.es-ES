@@ -21,23 +21,23 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 31d272705fa5b93f57c34b811fea2a7717058df415df065885ced2537b692941
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 49c5dcacc12e6811fa692aade9cf6d462fc963fe
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884792"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509886"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Ver los detalles y los resultados de una investigación automatizada
 
 **Se aplica a:**
 - Microsoft Defender para punto de conexión
 
-Con Microsoft Defender para [](automated-investigations.md) endpoint, cuando se ejecuta una investigación automatizada, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los permisos necesarios, puede ver esos detalles en la vista de detalles de la investigación. La vista de detalles de la investigación ofrece un estado actualizado y la capacidad de aprobar las acciones pendientes. 
+Con Microsoft Defender para [](automated-investigations.md) endpoint, cuando se ejecuta una investigación automatizada, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los permisos necesarios, puede ver esos detalles en la vista de detalles de la investigación. La vista de detalles de la investigación ofrece un estado actualizado y la capacidad de aprobar las acciones pendientes.
 
 ## <a name="new-unified-investigation-page"></a>(¡NUEVO!) Página de investigación unificada
 
-La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](microsoft-defender-endpoint.md) para endpoint y Microsoft Defender [para Office 365](/microsoft-365/security/office-365-security/office-365-atp). 
+La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](microsoft-defender-endpoint.md) para endpoint y Microsoft Defender [para Office 365](/microsoft-365/security/office-365-security/office-365-atp).
 
 > [!TIP]
 > Para obtener más información sobre lo que está cambiando, vea [(¡NUEVO!) Página de investigación unificada](/microsoft-365/security/mtp/mtp-autoir-results).
@@ -53,8 +53,8 @@ Puede abrir un informe en la vista previa de impresión utilizando uno de los m�
 
 El Centro [de acción mejorado](auto-investigation-action-center.md) reúne acciones de [corrección](manage-auto-investigation.md#remediation-actions) en todos los dispositivos, correo & contenido de colaboración e identidades. Las acciones enumeradas incluyen acciones de corrección que se realizaron de forma automática o manual. En el Centro de acciones, puede ver las acciones que están esperando la aprobación y las acciones que ya se aprobaron o completaron. También puede navegar a más detalles, como una página de investigación.
 
-1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. 
-2. En el panel de navegación, elija **Centro de actividades**. 
+1. Vaya a <https://security.microsoft.com> e inicie sesión.
+2. En el panel de navegación, elija **Centro de actividades**.
 3. En la pestaña **pendiente** o **historial**, seleccione un elemento. Se abre el panel desplegable.
 4. Revise la información del panel desplegable y, a continuación, siga uno de los pasos siguientes:
    - Seleccione **Abrir página de investigación** para ver más detalles sobre la investigación.
@@ -66,11 +66,11 @@ El Centro [de acción mejorado](auto-investigation-action-center.md) reúne acci
 
 Use una página de detalles de un incidente para ver información detallada sobre un incidente, incluidas las alertas que contenían información acerca de cualquier dispositivo, cuenta de usuario o buzón que les afecten.
 
-1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. 
-2. En el panel de navegación, elija **Incidentes &**  >  **alertas incidentes**. 
+1. Vaya a <https://security.microsoft.com> e inicie sesión.
+2. En el panel de navegación, elija **Incidentes &** \> **alertas incidentes**.
 3. Seleccione un elemento de la lista y, a continuación, elija **Abrir página de incidentes**.
 4. Seleccione la **pestaña Investigaciones** y, a continuación, seleccione una investigación en la lista. Se abre el panel desplegable.
-5. Seleccione **Abrir página de investigación**. 
+5. Seleccione **Abrir página de investigación**.
 
 ## <a name="investigation-details"></a>Detalles de la investigación
 
@@ -81,19 +81,19 @@ En la vista de detalles de la investigación, puede ver información en las pest
 > [!NOTE]
 > Las pestañas específicas que se ven en una página de detalles de investigación dependen de lo que incluya la suscripción. Por ejemplo, si su suscripción no incluye Microsoft Defender para Office 365 plan 2, no verá una pestaña **Buzones.**
 
-| Pestaña | Descripción |
-|:--------|:--------|
-| **Gráfico de investigación** | Proporciona una representación visual de la investigación. Se muestra una lista de las entidades y se muestran las amenazas, junto con las alertas y si hay acciones pendientes de aprobación.<br/>Puede seleccionar un elemento en el gráfico para ver más detalles. Por ejemplo, al seleccionar el icono  **Evidencia,** te llevará a la pestaña Evidencia, donde puedes ver las entidades detectadas y sus veredictos. |
-| **Alertas** | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones Office, Cloud App Security y otras características Microsoft 365 Defender usuario.|
-| **Dispositivos** | Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden al [nivel de automatización de los grupos de dispositivos](automation-levels.md)).) |
-| **Buzones** |Enumera los buzones que se verán afectados por las amenazas detectadas.  |
-| **Usuarios**  | Enumera las cuentas de usuario afectadas por las amenazas detectadas. |
-| **Evidencia** | Enumera partes de evidencias generadas por alertas/investigaciones. Incluye veredictos ( Malintencionado , *Sospechoso* o *No se encontraron* amenazas ) y estado de corrección. |
-| **Entities** | Proporciona detalles sobre cada entidad analizada, incluido un veredicto para cada tipo de entidad ( Malintencionada , *Sospechosa* o *Sin amenazas encontradas*).|
-|**Log** | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
-| **Acciones pendientes** | Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) para aprobar acciones pendientes. |
+|Pestaña|Descripción|
+|---|---|
+|**Gráfico de investigación**|Proporciona una representación visual de la investigación. Se muestra una lista de las entidades y se muestran las amenazas, junto con las alertas y si hay acciones pendientes de aprobación. <p> Puede seleccionar un elemento en el gráfico para ver más detalles. Por ejemplo, al seleccionar el icono  **Evidencia,** te llevará a la pestaña Evidencia, donde puedes ver las entidades detectadas y sus veredictos.|
+|**Alertas**|Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones Office, Cloud App Security y otras características Microsoft 365 Defender usuario.|
+|**Devices**|Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden al [nivel de automatización de los grupos de dispositivos](automation-levels.md)).)|
+|**Buzones**|Enumera los buzones que se verán afectados por las amenazas detectadas.|
+|**Usuarios**|Enumera las cuentas de usuario afectadas por las amenazas detectadas.|
+|**Evidencia**|Enumera partes de evidencias generadas por alertas/investigaciones. Incluye veredictos ( Malintencionado , *Sospechoso* o *No se encontraron* amenazas ) y estado de corrección.|
+|**Entities**|Proporciona detalles sobre cada entidad analizada, incluido un veredicto para cada tipo de entidad ( Malintencionada , *Sospechosa* o *Sin amenazas encontradas*).|
+|**Log**|Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
+|**Acciones pendientes**|Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( <https://security.microsoft.com/action-center> ) para aprobar acciones pendientes.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Revisar acciones de corrección tras una investigación automatizada](manage-auto-investigation.md)
 - [Ver y organizar la cola de incidentes de Microsoft Defender para punto de conexión](view-incidents-queue.md)

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 4c79d3b1d53a046772ee84c809aab96bff5ae762c0e946000e11d5f8f46a9de0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ccb0bf5392bcfd8b520c1124d5daa568f1bc8be
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818748"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509934"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Experiencia de Microsoft Defender para endpoint a través de ataques simulados 
 
@@ -50,14 +50,14 @@ Lea el documento del tutorial proporcionado con cada escenario de ataque. Cada d
 
 ## <a name="run-a-simulation"></a>Ejecutar una simulación
 
-1. En **Endpoints**  >  **Evaluation &**  >  **tutoriales & simulaciones**, seleccione cuál de los escenarios de ataque disponibles desea simular:
+1. En **Endpoints** \> **Evaluation &** \> **tutoriales & simulaciones**, seleccione cuál de los escenarios de ataque disponibles desea simular:
    - **Escenario 1: El documento deja la puerta trasera:** simula la entrega de un documento de señuelo de ingeniería social. El documento inicia una puerta trasera especialmente diseñada que proporciona control a los atacantes.
    - **Escenario 2: Script** de PowerShell en ataque sin archivos: simula un ataque sin archivos que se basa en PowerShell, que muestra la reducción de superficie de ataque y la detección de aprendizaje de dispositivos de actividad de memoria malintencionada.
    - **Escenario 3: Respuesta** automatizada a incidentes: desencadena la investigación automatizada, que busca y corrige automáticamente artefactos de infracción para escalar la capacidad de respuesta a incidentes.
 
 2. Descargue y lea el documento de tutorial correspondiente proporcionado con el escenario seleccionado.
 
-3. Para descargar el archivo de simulación o copiar el script de simulación, vaya a Tutoriales de evaluación **&**  >  **tutoriales & simulaciones**. Puedes elegir descargar el archivo o script en el dispositivo de prueba, pero no es obligatorio.
+3. Para descargar el archivo de simulación o copiar el script de simulación, vaya a Tutoriales de evaluación **&** \> **tutoriales & simulaciones**. Puedes elegir descargar el archivo o script en el dispositivo de prueba, pero no es obligatorio.
 
 4. Ejecute el archivo de simulación o el script en el dispositivo de prueba como se indica en el documento del tutorial.
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: acb2c0cc3b75ac5491f2653c60e1e9d9bab7b22292caaeb698b1c9eed70df85c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 00cf587af9eaeb6199b8058ff231c5704ca19f78
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884816"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58510066"
 ---
 # <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
@@ -35,7 +35,6 @@ ms.locfileid: "53884816"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 ¿Quiere ver cómo funciona? Vea el siguiente vídeo:
 
@@ -52,10 +51,15 @@ En este artículo se proporciona información general sobre AIR e incluye víncu
 
 Una investigación automatizada puede iniciarse cuando se desencadena una alerta o cuando un operador de seguridad inicia la investigación.
 
+<br>
+
+****
+
 |Situación|Qué ocurre|
 |---|---|
 |Se desencadena una alerta|En general, una investigación automatizada se inicia cuando se [desencadena una](review-alerts.md) alerta y [se crea](view-incidents-queue.md) un incidente. Por ejemplo, supongamos que un archivo malintencionado reside en un dispositivo. Cuando se detecta ese archivo, se desencadena una alerta y se crea un incidente. Comienza un proceso de investigación automatizado en el dispositivo. Como otras alertas se generan debido al mismo archivo en otros dispositivos, se agregan al incidente asociado y a la investigación automatizada.|
 |Una investigación se inicia manualmente|El equipo de operaciones de seguridad puede iniciar manualmente una investigación automatizada. Por ejemplo, supongamos que un operador de seguridad está revisando una lista de dispositivos y observa que un dispositivo tiene un nivel de riesgo alto. El operador de seguridad puede seleccionar el dispositivo en la lista para abrir su control remoto y, a continuación, seleccionar **Iniciar investigación automatizada**.|
+|
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>Cómo una investigación automatizada expande su ámbito
 
@@ -71,9 +75,9 @@ A medida que se desencadenan las alertas y se ejecuta una investigación automat
 - *Sospechoso*; o
 - *No se han encontrado amenazas*.
 
-A medida que se alcanzan los veredictos, las investigaciones automatizadas pueden dar lugar a una o más acciones de corrección. Entre los ejemplos de acciones de corrección se incluyen el envío de un archivo a la cuarentena, la detención de un servicio, la eliminación de una tarea programada y mucho más. Para obtener más información, vea [Acciones de corrección](manage-auto-investigation.md#remediation-actions).  
+A medida que se alcanzan los veredictos, las investigaciones automatizadas pueden dar lugar a una o más acciones de corrección. Entre los ejemplos de acciones de corrección se incluyen el envío de un archivo a la cuarentena, la detención de un servicio, la eliminación de una tarea programada y mucho más. Para obtener más información, vea [Acciones de corrección](manage-auto-investigation.md#remediation-actions).
 
-Según el nivel [de](automation-levels.md) automatización establecido para su organización, así como otras opciones de configuración de seguridad, las acciones de corrección pueden producirse automáticamente o solo tras la aprobación del equipo de operaciones de seguridad. La configuración de seguridad adicional que puede afectar a la corrección automática incluye [la protección de aplicaciones potencialmente no deseadas](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA). 
+Según el nivel [de](automation-levels.md) automatización establecido para su organización, así como otras opciones de configuración de seguridad, las acciones de corrección pueden producirse automáticamente o solo tras la aprobación del equipo de operaciones de seguridad. La configuración de seguridad adicional que puede afectar a la corrección automática incluye [la protección de aplicaciones potencialmente no deseadas](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA).
 
 Todas las acciones de corrección, ya sean pendientes o completadas, se realiza un seguimiento en el [Centro de acciones.](auto-investigation-action-center.md) Si es necesario, el equipo de operaciones de seguridad puede deshacer una acción de corrección. Para obtener más información, vea [Review and approve remediation actions following an automated investigation](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
@@ -97,7 +101,7 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Ver también
 
 - [Protección PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-air)

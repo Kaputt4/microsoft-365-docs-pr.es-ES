@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.openlocfilehash: 81aba6c432747563820556341d12f81d8e09b5ca
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 44f75b2912a8e54df6584a8f97d0f6e76cac6b15
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507571"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509874"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -46,11 +46,16 @@ La protección de red amplía la protección de [la protección web](web-protect
 
 La protección de red Windows 10 Pro o Enterprise y Antivirus de Microsoft Defender protección en tiempo real.
 
-| Versión de Windows | Antivirus de Microsoft Defender |
-|:---|:---|
-| Windows 10 versión 1709 o posterior <p>Windows Servidor 1803 o posterior | [Antivirus de Microsoft Defender la protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y la protección [en](enable-cloud-protection-microsoft-defender-antivirus.md) la nube deben estar habilitadas |
+<br>
 
-Después de habilitar los servicios, es posible que deba configurar la red o firewall para permitir las conexiones entre los servicios y los dispositivos (también denominados puntos de conexión).  
+****
+
+|Versión de Windows|Antivirus de Microsoft Defender|
+|---|---|
+|Windows 10 versión 1709 o posterior <p> Windows Servidor 1803 o posterior|[Antivirus de Microsoft Defender la protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y la protección [en](enable-cloud-protection-microsoft-defender-antivirus.md) la nube deben estar habilitadas|
+|
+
+Después de habilitar los servicios, es posible que deba configurar la red o firewall para permitir las conexiones entre los servicios y los dispositivos (también denominados puntos de conexión).
 
 - `.smartscreen.microsoft.com`
 - `.smartscreen-prod.microsoft.com`
@@ -75,7 +80,7 @@ Esta es una consulta de ejemplo para la búsqueda avanzada:
 
 ```kusto
 DeviceEvents
-| where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 ```
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en Windows visor de eventos
@@ -88,11 +93,16 @@ Puede revisar el registro Windows eventos para ver los eventos que se crean cuan
 
 Este procedimiento crea una vista personalizada que filtra para mostrar solo los siguientes eventos relacionados con la protección de red:
 
-| Id. de evento | Descripción |
-|:---|:---|
-| 5007 | Evento cuando se cambia la configuración |
-| 1125 | Evento cuando la protección de red se dispara en modo auditoría |
-| 1126 | Evento cuando la protección de red se desen llamas en modo de bloqueo |
+<br>
+
+****
+
+|Id. de evento|Descripción|
+|---|---|
+|5007|Evento cuando se cambia la configuración|
+|1125|Evento cuando la protección de red se dispara en modo auditoría|
+|1126|Evento cuando la protección de red se desen llamas en modo de bloqueo|
+|
 
 ## <a name="network-protection-and-the-tcp-three-way-handshake"></a>Protección de red y el protocolo de enlace triple TCP
 
@@ -116,7 +126,7 @@ Debido a la naturaleza de varios usuarios de Windows 10 Enterprise, tenga en cue
 
 3. Si necesita diferenciar entre grupos de usuarios, considere la posibilidad de crear asignaciones Windows grupos de host de Escritorio virtual.
 
-4. Pruebe la protección de red en modo auditoría para evaluar su comportamiento antes de implementarla. 
+4. Pruebe la protección de red en modo auditoría para evaluar su comportamiento antes de implementarla.
 
 5. Considere la posibilidad de redimensionar la implementación si tiene un gran número de usuarios o un gran número de sesiones de varios usuarios.
 
@@ -141,7 +151,5 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 ## <a name="see-also"></a>Ver también
 
 - [Evaluar la protección de](evaluate-network-protection.md) red | Realice un escenario rápido que demuestre cómo funciona la característica y qué eventos se crearían normalmente.
-
 - [Habilitar la protección de](enable-network-protection.md) red | Use directivas de grupo, PowerShell o CSP mdm para habilitar y administrar la protección de red en la red.
-
 - [Configuración de capacidades de reducción de superficie de ataque en Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)

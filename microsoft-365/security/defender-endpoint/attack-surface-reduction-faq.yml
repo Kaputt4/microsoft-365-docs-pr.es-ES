@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: 1310ec8aafc41276e8c2e4e13d93310a4400d95d376b61612df30959683e019e
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 8b040f0de8ba510582e5201e7722137d164f2880
+  ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53869721"
+  ms.lasthandoff: 08/25/2021
+  ms.locfileid: "58509598"
 title: Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -49,7 +49,8 @@ sections:
       Para obtener más información sobre Windows licencias, consulte [Windows 10 Licensing y](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) obtenga la Guía de licencias por volumen para [Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
   - question: >
       ¿Se admite ASR si tengo una licencia E3?
-    answer: "Sí. ASR es compatible con Windows Enterprise E3 y versiones posteriores. \n"
+    answer: >
+      Sí. ASR es compatible con Windows Enterprise E3 y versiones posteriores.
   - question: >
       ¿Qué características se admiten con una licencia E5?
     answer: >
@@ -75,7 +76,7 @@ sections:
 
       |Nombre de regla|GUID|Exclusiones & carpetas de archivos|
 
-      |:--|:--|:--|
+      |---|---|---|
 
       |Impedir que JavaScript o VBScript inicien contenido ejecutable descargado|d3e037e1-3eb8-44c8-a917-57927947596d|No admitido|
 
@@ -175,7 +176,14 @@ sections:
       Mantenga la regla en modo auditoría durante unos 30 días para obtener una buena línea base de cómo funcionará la regla una vez que entre en funcionamiento en toda la organización. Durante el período de auditoría, puede identificar cualquier aplicación de línea de negocio que pueda bloquearse por la regla y configurar la regla para excluirlas.
   - question: >
       Estoy cambiando de una solución de seguridad de terceros a Defender for Endpoint. ¿Hay una forma "fácil" de exportar reglas de otra solución de seguridad a ASR?
-    answer: "En la mayoría de los casos, es más fácil y mejor empezar con las recomendaciones de línea base sugeridas por [Defender for Endpoint](/windows/security/threat-protection) que intentar importar reglas de otra solución de seguridad. A continuación, usa herramientas como el modo de auditoría, la supervisión y el análisis para configurar la nueva solución para que se adapte a tus necesidades únicas. \n\nLa configuración predeterminada para la mayoría de las reglas ASR, combinada con la protección en tiempo real de Defender for Endpoint, protegerá contra un gran número de vulnerabilidades y vulnerabilidades.\n\nDesde Defender para endpoint, puedes actualizar tus defensas con indicadores personalizados para permitir y bloquear determinados comportamientos de software. ASR también permite algunas personalizaciones de reglas, en forma de exclusiones de archivos y carpetas. Como regla general, es mejor auditar una regla durante un período de tiempo y configurar exclusiones para cualquier aplicación de línea de negocio que pueda bloquearse.\n"
+    answer: >
+      En la mayoría de los casos, es más fácil y mejor empezar con las recomendaciones de línea base sugeridas por [Defender for Endpoint](/windows/security/threat-protection) que intentar importar reglas de otra solución de seguridad. A continuación, usa herramientas como el modo de auditoría, la supervisión y el análisis para configurar la nueva solución para que se adapte a tus necesidades únicas.
+
+
+      La configuración predeterminada para la mayoría de las reglas ASR, combinada con la protección en tiempo real de Defender for Endpoint, protegerá contra un gran número de vulnerabilidades y vulnerabilidades.
+
+
+      Desde Defender para endpoint, puedes actualizar tus defensas con indicadores personalizados para permitir y bloquear determinados comportamientos de software. ASR también permite algunas personalizaciones de reglas, en forma de exclusiones de archivos y carpetas. Como regla general, es mejor auditar una regla durante un período de tiempo y configurar exclusiones para cualquier aplicación de línea de negocio que pueda bloquearse.
   - question: >
       ¿ASR admite exclusiones de archivos o carpetas que incluyen variables del sistema y caracteres comodín en la ruta de acceso?
     answer: >
@@ -225,7 +233,7 @@ sections:
     answer: >
       Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA.](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
   - question: >
-      Consulte también
+      Ver también
     answer: >-
       * [Introducción a la reducción de superficie de ataque](attack-surface-reduction.md)
 

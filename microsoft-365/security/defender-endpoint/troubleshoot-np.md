@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: a31da45e56adc8838ed85df338e423070aac1a15
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 981e7962db35429e5f7bf02ee4a6f57fd19655d4
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507667"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509898"
 ---
 # <a name="troubleshoot-network-protection"></a>Solucionar problemas de protección de red
 
@@ -49,7 +49,8 @@ Hay cuatro pasos para solucionar estos problemas:
 
 La protección de red solo funcionará en dispositivos con las siguientes condiciones:
 
->[!div class="checklist"]
+> [!div class="checklist"]
+>
 > - Los puntos de conexión se Windows 10 Pro o Enterprise edición, versión 1709 o posterior.
 > - Los puntos de conexión usan Antivirus de Microsoft Defender como la única aplicación de protección antivirus. [Vea lo que sucede cuando usa una solución antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)que no sea de Microsoft .
 > - [La protección en tiempo real](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) está habilitada.
@@ -69,7 +70,7 @@ Puede habilitar la protección de red en modo auditoría y, a continuación, vis
 2. Realice la actividad de conexión que está causando un problema (por ejemplo, intentar visitar el sitio o conectarse a la dirección IP que hace o no desea bloquear).
 
 3. [Revise los registros de](network-protection.md#review-network-protection-events-in-windows-event-viewer) eventos de protección de red para ver si la característica hubiera bloqueado la conexión si se hubiera establecido en **Enabled**.
-   
+
    Si la protección de red no bloquea una conexión que espera que se bloquee, habilite la característica.
 
    ```PowerShell
@@ -102,7 +103,7 @@ Cuando informe de un problema con la protección de red, se le pedirá que recop
    mpcmdrun -getfiles
    ```
 
-3. Adjunte el archivo al formulario de envío. De forma predeterminada, los registros de diagnóstico se guardan en `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` . 
+3. Adjunte el archivo al formulario de envío. De forma predeterminada, los registros de diagnóstico se guardan en `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .
 
 ## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>Resolver problemas de conectividad con la protección de red (para clientes de E5)
 
@@ -114,12 +115,12 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 
 ---OR---
 
-
 ```powershell
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
 Puede configurar la clave del Registro mediante PowerShell, Microsoft Endpoint Manager o directiva de grupo. Estos son algunos recursos para ayudar:
+
 - [Trabajar con claves del Registro](/powershell/scripting/samples/working-with-registry-keys)
 - [Configurar las opciones de cliente personalizadas para Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [Usar la configuración de directiva de grupo para administrar Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
@@ -127,11 +128,7 @@ Puede configurar la clave del Registro mediante PowerShell, Microsoft Endpoint M
 ## <a name="see-also"></a>Ver también
 
 - [Protección de red](network-protection.md)
-
 - [Protección de red y el protocolo de enlace triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
-
 - [Evaluar protección de red](evaluate-network-protection.md)
-
 - [Habilitar la protección de red](enable-network-protection.md)
-
 - [Dirección de falsos positivos/negativos en Defender for Endpoint](defender-endpoint-false-positives-negatives.md)

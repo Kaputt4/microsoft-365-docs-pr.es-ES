@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 409eed3462c386c7cf55968fdab5111f49080cab139d86e6058c05ad9881fb1e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6e5f21a5d0c22ff4149adc0779ce78b31ee12725
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839884"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58510006"
 ---
 # <a name="common-rest-api-error-codes"></a>Códigos de error comunes de API de REST
 
@@ -35,40 +35,44 @@ ms.locfileid: "53839884"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Código de error |Código de estado HTTP |Mensaje 
-:---|:---|:---
-BadRequest | BadRequest (400) | Mensaje de error General Bad Request.
-ODataError | BadRequest (400) | Consulta URI de OData no válida (se especifica el error específico).
-InvalidInput | BadRequest (400) | Entrada no válida {la entrada no válida}.
-InvalidRequestBody | BadRequest (400) | Cuerpo de la solicitud no válido.
-InvalidHashValue | BadRequest (400) | El valor hash {el hash no válido} no es válido.
-InvalidDomainName | BadRequest (400) | El nombre de dominio {el dominio no válido} no es válido.
-InvalidIpAddress | BadRequest (400) | La dirección IP {la IP no válida} no es válida.
-InvalidUrl | BadRequest (400) | La dirección URL {la dirección URL no válida} no es válida.
-MaximumBatchSizeExceeded | BadRequest (400) | Se ha superado el tamaño máximo de lote. Received: {batch size received}, allowed: {batch size allowed}.
-MissingRequiredParameter | BadRequest (400) | Falta el parámetro {el parámetro que falta}.
-OsPlatformNotSupported | BadRequest (400) | La plataforma del sistema operativo {la plataforma del sistema operativo cliente} no es compatible con esta acción.
-ClientVersionNotSupported | BadRequest (400) | {La acción solicitada} se admite en la versión de cliente {versión de cliente admitida} y versiones posteriores.
-No autorizado (Unauthorized) | No autorizado (401) | No autorizado (encabezado de autorización no válido o expirado).
-Prohibido (Forbidden) | Prohibido (403) | Prohibido (token válido pero permiso insuficiente para la acción).
-DisabledFeature | Prohibido (403) | La característica inquilino no está habilitada.
-DisallowedOperation | Prohibido (403) | {la operación no permitido y el motivo}.
-NotFound | No encontrado (404) | Mensaje de error General No encontrado.
-ResourceNotFound | No encontrado (404) | No se encontró el recurso {el recurso solicitado}.
-InternalServerError | Error interno del servidor (500) | (Sin mensaje de error, vuelva a intentar la operación)
-TooManyRequests | Demasiadas solicitudes (429) | La respuesta representará alcanzar el límite de cuota por número de solicitudes o por CPU.
+Código de error|Código de estado HTTP|Mensaje
+---|---|---
+BadRequest|BadRequest (400)|Mensaje de error General Bad Request.
+ODataError|BadRequest (400)|Consulta URI de OData no válida (se especifica el error específico).
+InvalidInput|BadRequest (400)|Entrada no válida {la entrada no válida}.
+InvalidRequestBody|BadRequest (400)|Cuerpo de la solicitud no válido.
+InvalidHashValue|BadRequest (400)|El valor hash {el hash no válido} no es válido.
+InvalidDomainName|BadRequest (400)|El nombre de dominio {el dominio no válido} no es válido.
+InvalidIpAddress|BadRequest (400)|La dirección IP {la IP no válida} no es válida.
+InvalidUrl|BadRequest (400)|La dirección URL {la dirección URL no válida} no es válida.
+MaximumBatchSizeExceeded|BadRequest (400)|Se ha superado el tamaño máximo de lote. Received: {batch size received}, allowed: {batch size allowed}.
+MissingRequiredParameter|BadRequest (400)|Falta el parámetro {el parámetro que falta}.
+OsPlatformNotSupported|BadRequest (400)|La plataforma del sistema operativo {la plataforma del sistema operativo cliente} no es compatible con esta acción.
+ClientVersionNotSupported|BadRequest (400)|{La acción solicitada} se admite en la versión de cliente {versión de cliente admitida} y versiones posteriores.
+No autorizado (Unauthorized)|No autorizado (401)|No autorizado (encabezado de autorización no válido o expirado).
+Prohibido (Forbidden)|Prohibido (403)|Prohibido (token válido pero permiso insuficiente para la acción).
+DisabledFeature|Prohibido (403)|La característica inquilino no está habilitada.
+DisallowedOperation|Prohibido (403)|{la operación no permitido y el motivo}.
+NotFound|No encontrado (404)|Mensaje de error General No encontrado.
+ResourceNotFound|No encontrado (404)|No se encontró el recurso {el recurso solicitado}.
+InternalServerError|Error interno del servidor (500)|(Sin mensaje de error, vuelva a intentar la operación)
+TooManyRequests|Demasiadas solicitudes (429)|La respuesta representará alcanzar el límite de cuota por número de solicitudes o por CPU.
 
 ## <a name="body-parameters-are-case-sensitive"></a>Los parámetros de cuerpo distinguen mayúsculas de minúsculas
 
 Los parámetros de cuerpo enviados distinguen entre mayúsculas y minúsculas.
-<br>Si experimenta errores **InvalidRequestBody** o **MissingRequiredParameter,** es posible que se deba a un capital de parámetro incorrecto o a una letra minúscula.
-<br>Revise la página de documentación de la API y compruebe que los parámetros enviados coinciden con el ejemplo correspondiente.
+
+Si experimenta errores **InvalidRequestBody** o **MissingRequiredParameter,** es posible que se deba a un capital de parámetro incorrecto o a una letra minúscula.
+
+Revise la página de documentación de la API y compruebe que los parámetros enviados coinciden con el ejemplo correspondiente.
 
 ## <a name="correlation-request-id"></a>Identificador de solicitud de correlación
 
 Cada respuesta de error contiene un parámetro id. único para el seguimiento.
-<br>El nombre de la propiedad de este parámetro es "target".
-<br>Al ponerse en contacto con nosotros sobre un error, adjuntar este identificador ayudará a encontrar la causa raíz del problema.
+
+El nombre de la propiedad de este parámetro es "target".
+
+Al ponerse en contacto con nosotros sobre un error, adjuntar este identificador ayudará a encontrar la causa raíz del problema.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -81,7 +85,6 @@ Cada respuesta de error contiene un parámetro id. único para el seguimiento.
     }
 }
 ```
-
 
 ```json
 {

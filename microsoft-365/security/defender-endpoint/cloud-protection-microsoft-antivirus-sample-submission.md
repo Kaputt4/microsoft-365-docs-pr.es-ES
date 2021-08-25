@@ -1,6 +1,6 @@
 ---
 title: 'Protección proporcionada en la nube Antivirus de Microsoft Defender: envío de muestra'
-description: Obtenga información sobre la protección y la protección entregadas en la nube Antivirus de Microsoft Defender
+description: Obtenga información sobre la protección entregada en la nube y el Antivirus de Microsoft Defender de ejemplo
 keywords: Antivirus de Microsoft Defender, tecnologías de última generación, envío de ejemplo antivirus, av de próxima generación, aprendizaje automático, antimalware, seguridad, defender, nube, protección entregada en la nube
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 07/22/2021
-ms.openlocfilehash: d9330a2ce9403885e3a843619a07aaf5b5ca5847
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c2fafe62c5fecbc1e7ed9f7e622daf6a1b6c7faa
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253563"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58510054"
 ---
 # <a name="cloud-delivered-protection-antivirus-sample-submission"></a>Envío de ejemplo de antivirus de protección entregado en la nube
 
@@ -28,14 +28,14 @@ Microsoft Defender para Endpoint Antivirus (Defender para endpoint antivirus) us
 
 ## <a name="microsoft-defender-for-endpoint-antivirus-cloud-protection-overview"></a>Introducción a la protección en la nube de Microsoft Defender para Endpoint Antivirus
 
-La protección en la nube está habilitada de forma predeterminada en Defender para Endpoint Antivirus. Se recomienda que los clientes no deshabiliten la protección en la nube en Defender para Endpoint Antivirus.  Cuando la protección en la nube está habilitada, tiene la opción de configurar la información que defender para el antivirus de extremo proporcionará a la nube (incluido el envío de ejemplo). La protección en la nube habilitada es útil cuando no se puede tomar una determinación de elevada confianza en función de otras características.
+La protección en la nube está habilitada de forma predeterminada en Defender para Endpoint Antivirus. Se recomienda que los clientes no deshabiliten la protección en la nube en Defender para Endpoint Antivirus. Cuando la protección en la nube está habilitada, tiene la opción de configurar la información que defender para el antivirus de extremo proporcionará a la nube (incluido el envío de ejemplo). La protección en la nube habilitada es útil cuando no se puede tomar una determinación de elevada confianza en función de otras características.
 La configuración del envío de ejemplo genera preguntas sobre cómo funciona; por ejemplo, cómo se almacenan y usan los datos. Las tres opciones de envío de ejemplo de protección en la nube que más preguntas plantean son:
 
 - "Enviar muestras seguras automáticamente", (el comportamiento predeterminado)
-- "Enviar todos los ejemplos automáticamente",  
-- "No enviar muestras".  
+- "Enviar todos los ejemplos automáticamente",
+- "No enviar muestras".
 
-Para obtener información sobre las opciones de configuración mediante Intune, Configuration Manager, GPO o PowerShell, vea Activar la protección entregada en la [nube en Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).  
+Para obtener información sobre las opciones de configuración mediante Intune, Configuration Manager, GPO o PowerShell, vea Activar la protección entregada en la [nube en Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ## <a name="customer-data-cloud-protection-and-sample-submission"></a>Datos del cliente, protección en la nube y envío de ejemplo
 
@@ -63,7 +63,7 @@ Defender for Endpoint antivirus and cloud protection bloquea automáticamente la
 
 4. La protección avanzada basada en la nube se proporciona para los casos en los que el antivirus de Defender for Endpoint que se ejecuta en el punto de conexión necesita más inteligencia para comprobar la intención de un archivo sospechoso.
 
-   1. En caso de que el antivirus de Microsoft Defender para endpoint no pueda tomar una determinación clara, los metadatos de archivo se envían al servicio de protección en la nube. Normalmente, el servicio de protección en la nube puede determinar si el archivo es seguro o malintencionado, en milisegundos.  
+   1. En caso de que el antivirus de Microsoft Defender para endpoint no pueda tomar una determinación clara, los metadatos de archivo se envían al servicio de protección en la nube. Normalmente, el servicio de protección en la nube puede determinar si el archivo es seguro o malintencionado, en milisegundos.
       - La consulta en la nube de metadatos de archivo puede ser el resultado del comportamiento, la marca de la web u otras características en las que no se determina un veredicto claro.
       - Se envía una pequeña carga de metadatos, con el objetivo de alcanzar un veredicto de malware contra limpio
       - Los metadatos pueden incluir atributos PE, atributos de archivo estáticos, atributos dinámicos y contextuales, y más (figura 1).
@@ -83,7 +83,7 @@ Defender for Endpoint antivirus and cloud protection bloquea automáticamente la
 
       3. **Enviar todas las muestras automáticamente**
          - Si se configura, todos los ejemplos se enviarán automáticamente
-         - Si desea que el envío de ejemplo incluya macros incrustadas en documentos de Word, debe elegir "Enviar todos los ejemplos automáticamente"  
+         - Si desea que el envío de ejemplo incluya macros incrustadas en documentos de Word, debe elegir "Enviar todos los ejemplos automáticamente"
          - Esta configuración no está disponible en la protección en la nube de macOS
 
       4. **No enviar**
@@ -93,34 +93,34 @@ Defender for Endpoint antivirus and cloud protection bloquea automáticamente la
 
    3. Después de enviar metadatos y/o archivos a la nube de Defender for Endpoint, puede usar **ejemplos,** **detonaciones** o modelos de aprendizaje automático de análisis de big **data** para llegar a un veredicto. Este modelo se muestra en la figura 3. Desactivar la protección entregada en la nube limitará el análisis solo a lo que el cliente puede proporcionar a través de modelos de aprendizaje automático locales y funciones similares.
 
-_Figura 1: Ejemplos de metadatos enviados a Microsoft Defender Cloud Protection_
+_Figura 1: Ejemplos de metadatos enviados a Microsoft Defender Cloud Protection:_
 
 :::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figura 1. Ejemplos de metadatos enviados a Microsoft Defender Cloud Protection":::
 
-_Figura 2. Flujo de protección entregado en la nube_
+_Figura 2. Flujo de protección entregado en la nube:_
 
 :::image type="content" source="images/cloud-protection-flow.png" alt-text="Figura 2. Flujo de protección entregado en la nube":::
 
-_Figura 3. Protección entregada en la nube y aprendizaje automático en capas_
+_Figura 3. Protección entregada en la nube y aprendizaje automático en capas:_
 
 :::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="Figura 3. Protección entregada en la nube y aprendizaje automático en capas":::
 
-> [!Note]
+> [!NOTE]
 >
 > Es posible que también haya escuchado la frase "Bloquear a primera vista (BAFS)". BAFS hace referencia al análisis más amplio que la nube puede proporcionar, incluidos aspectos como la detonación para proporcionar un veredicto más preciso. Esto también puede incluir retrasar la apertura de un archivo que está siendo interrogado por la protección de la nube hasta que se llegue a un veredicto. Si deshabilita "Envío de ejemplo", BAFS está deshabilitado y no puede realizar el análisis más extenso y se limita a analizar solo metadatos de archivo.
 
 ## <a name="cloud-delivered-protection-levels"></a>Niveles de protección entregados en la nube
 
-La detección de malware requiere lograr un equilibrio entre proporcionar la protección más sólida posible, al tiempo que se minimiza el número de falsos positivos. Diferentes entornos pueden tener tolerancia a la protección frente al riesgo de falso positivo. Los niveles de protección entregados en la nube permiten al cliente definir el nivel de tolerancia adecuado para el entorno específico. Al habilitar la protección entregada en la nube, el nivel de protección se configura automáticamente para proporcionar una detección segura sin aumentar el riesgo de detectar archivos legítimos. Si desea configurar un nivel de protección diferente, consulte [Specify the cloud-delivered protection level for Antivirus de Microsoft Defender](specify-cloud-protection-level-microsoft-defender-antivirus.md).  
+La detección de malware requiere lograr un equilibrio entre proporcionar la protección más sólida posible, al tiempo que se minimiza el número de falsos positivos. Diferentes entornos pueden tener tolerancia a la protección frente al riesgo de falso positivo. Los niveles de protección entregados en la nube permiten al cliente definir el nivel de tolerancia adecuado para el entorno específico. Al habilitar la protección entregada en la nube, el nivel de protección se configura automáticamente para proporcionar una detección segura sin aumentar el riesgo de detectar archivos legítimos. Si desea configurar un nivel de protección diferente, consulte [Specify the cloud-delivered protection level for Antivirus de Microsoft Defender](specify-cloud-protection-level-microsoft-defender-antivirus.md).
 
-> [!Note]
+> [!NOTE]
 >
 > Cambiar el nivel de protección puede dar como resultado un mayor nivel de falsos positivos y debe evaluarse cuidadosamente antes de cambiar.
 >
 
 ## <a name="other-file-sample-submission-scenarios"></a>Otros escenarios de envío de ejemplo de archivo
 
-Hay dos escenarios más en los que Defender for Endpoint puede solicitar un ejemplo de archivo que no está relacionado con la configuración de protección en la nube descrita anteriormente.  
+Hay dos escenarios más en los que Defender for Endpoint puede solicitar un ejemplo de archivo que no está relacionado con la configuración de protección en la nube descrita anteriormente.
 
 ### <a name="manual-file-sample-collection-by-security-admin-from-defender-for-endpoint-management-portal"></a>Colección manual de ejemplos de archivos por parte del administrador de seguridad de Defender for Endpoint Management Portal
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 60898f85825efab44aea59c4eb8de9b8927f1c1f5c99d077bd54f830f22a5b37
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87e1532f126488e21d869d4f04a04d56c483f6b6
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794416"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509862"
 ---
 # <a name="client-behavioral-blocking"></a>Contención y bloqueo de comportamiento del cliente
 
@@ -36,7 +36,7 @@ ms.locfileid: "53794416"
 
 ## <a name="overview"></a>Información general
 
-El bloqueo de comportamiento del cliente es un componente de las capacidades de [contención](behavioral-blocking-containment.md) y bloqueo de comportamiento en Defender para endpoint. A medida que se detectan comportamientos sospechosos en dispositivos (también denominados clientes o extremos), los artefactos (como archivos o aplicaciones) se bloquean, comprueban y corrigen automáticamente. 
+El bloqueo de comportamiento del cliente es un componente de las capacidades de [contención](behavioral-blocking-containment.md) y bloqueo de comportamiento en Defender para endpoint. A medida que se detectan comportamientos sospechosos en dispositivos (también denominados clientes o extremos), los artefactos (como archivos o aplicaciones) se bloquean, comprueban y corrigen automáticamente.
 
 :::image type="content" alt-text="Protección de cliente y nube" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
@@ -44,7 +44,7 @@ La protección antivirus funciona mejor cuando se combina con la protección en 
 
 ## <a name="how-client-behavioral-blocking-works"></a>Cómo funciona el bloqueo de comportamiento del cliente
 
-[Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) detectar comportamientos sospechosos, código malintencionado, ataques sin archivos y en memoria, y mucho más en un dispositivo. Cuando se detectan comportamientos sospechosos, Antivirus de Microsoft Defender supervisa y envía esos comportamientos sospechosos y sus árboles de proceso al servicio de protección en la nube. El aprendizaje automático diferencia entre aplicaciones malintencionadas y comportamientos buenos en milisegundos y clasifica cada artefacto. En tiempo casi real, tan pronto como se encuentra que un artefacto es malintencionado, se bloquea en el dispositivo. 
+[Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) detectar comportamientos sospechosos, código malintencionado, ataques sin archivos y en memoria, y mucho más en un dispositivo. Cuando se detectan comportamientos sospechosos, Antivirus de Microsoft Defender supervisa y envía esos comportamientos sospechosos y sus árboles de proceso al servicio de protección en la nube. El aprendizaje automático diferencia entre aplicaciones malintencionadas y comportamientos buenos en milisegundos y clasifica cada artefacto. En tiempo casi real, tan pronto como se encuentra que un artefacto es malintencionado, se bloquea en el dispositivo.
 
 Cada vez que se [](alerts-queue.md) detecta un comportamiento sospechoso, se genera una alerta y está visible en el [portal](microsoft-defender-security-center.md) de Microsoft 365 Defender (anteriormente Microsoft 365 Defender).
 
@@ -54,21 +54,21 @@ El bloqueo de comportamiento del cliente es eficaz porque no solo ayuda a evitar
 
 Las detecciones basadas en comportamiento se denominan según la [matriz de CK&MITRE ATT para Enterprise](https://attack.mitre.org/matrices/enterprise). La convención de nomenclatura ayuda a identificar la fase de ataque donde se observó el comportamiento malintencionado:
 
-|Táctica | Nombre de la amenaza de detección |
-|----|----|
-|Acceso inicial | `Behavior:Win32/InitialAccess.*!ml` |
-|Ejecución | `Behavior:Win32/Execution.*!ml` |
-|Persistencia | `Behavior:Win32/Persistence.*!ml` |
-|Elevación de privilegios | `Behavior:Win32/PrivilegeEscalation.*!ml` |
-|Evasión de defensa | `Behavior:Win32/DefenseEvasion.*!ml` |
-|Acceso a credenciales | `Behavior:Win32/CredentialAccess.*!ml` |
-|Descubrimiento | `Behavior:Win32/Discovery.*!ml` |
-|Movimiento lateral | `Behavior:Win32/LateralMovement.*!ml` |
-|Colección | `Behavior:Win32/Collection.*!ml` |
-|Comando y control | `Behavior:Win32/CommandAndControl.*!ml` |
-|Exfiltración | `Behavior:Win32/Exfiltration.*!ml` |
-|Impacto | `Behavior:Win32/Impact.*!ml` |
-|Sin categorizar | `Behavior:Win32/Generic.*!ml` |
+|Táctica|Nombre de la amenaza de detección|
+|---|---|
+|Acceso inicial|`Behavior:Win32/InitialAccess.*!ml`|
+|Ejecución|`Behavior:Win32/Execution.*!ml`|
+|Persistencia|`Behavior:Win32/Persistence.*!ml`|
+|Elevación de privilegios|`Behavior:Win32/PrivilegeEscalation.*!ml`|
+|Evasión de defensa|`Behavior:Win32/DefenseEvasion.*!ml`|
+|Acceso a credenciales|`Behavior:Win32/CredentialAccess.*!ml`|
+|Descubrimiento|`Behavior:Win32/Discovery.*!ml`|
+|Movimiento lateral|`Behavior:Win32/LateralMovement.*!ml`|
+|Colección|`Behavior:Win32/Collection.*!ml`|
+|Comando y control|`Behavior:Win32/CommandAndControl.*!ml`|
+|Exfiltración|`Behavior:Win32/Exfiltration.*!ml`|
+|Impacto|`Behavior:Win32/Impact.*!ml`|
+|Sin categorizar|`Behavior:Win32/Generic.*!ml`|
 
 > [!TIP]
 > Para obtener más información acerca de las amenazas específicas, **[vea actividad de amenazas globales recientes](https://www.microsoft.com/wdsi/threats)**.
@@ -78,11 +78,7 @@ Las detecciones basadas en comportamiento se denominan según la [matriz de CK&M
 Si su organización usa Defender para endpoint, el bloqueo de comportamiento del cliente está habilitado de forma predeterminada. Sin embargo, para beneficiarse de todas las capacidades de Defender for Endpoint, incluido el bloqueo y la contención del [comportamiento,](behavioral-blocking-containment.md)asegúrese de que las siguientes características y capacidades de Defender para endpoint están habilitadas y configuradas:
 
 - [Defender for Endpoint baselines](configure-machines-security-baseline.md)
-
 - [Dispositivos incorporados a Defender para endpoint](onboard-configure.md)
-
 - [EDR en modo bloqueo](edr-in-block-mode.md)
-
 - [Reducción de la superficie expuesta a ataques](attack-surface-reduction.md)
-
 - [Protección de última generación](configure-microsoft-defender-antivirus-features.md) (antivirus, antimalware y otras funcionalidades de protección contra amenazas)

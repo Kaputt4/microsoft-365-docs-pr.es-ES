@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dad9a59bd4aff0126440e3967fd81e8e80a45c509a9f424a6ea10c7e28ba0ba5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: abdf9f72c4ae023cdc8bde76d96ce641b2e48b9a
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811403"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509622"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Uso de permisos básicos para acceder al portal
 
@@ -37,33 +37,34 @@ ms.locfileid: "53811403"
 Consulte las instrucciones siguientes para usar la administración de permisos básicos.
 
 Puede usar cualquiera de las siguientes soluciones:
+
 - Azure PowerShell
 - Portal de Azure
 
 Para el control granular sobre los permisos, [cambie al control de](rbac.md)acceso basado en roles .
 
 ## <a name="assign-user-access-using-azure-powershell"></a>Asignar acceso de usuario mediante Azure PowerShell
+
 Puede asignar usuarios con uno de los siguientes niveles de permisos:
+
 - Acceso completo (lectura y escritura)
 - Acceso de solo lectura
 
 ### <a name="before-you-begin"></a>Antes de empezar
 
-- Instale Azure PowerShell. Para obtener más información, vea [How to install and configure Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).<br>
+- Instale Azure PowerShell. Para obtener más información, vea [How to install and configure Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).
 
-    > [!NOTE]
-    > Debe ejecutar los cmdlets de PowerShell en una línea de comandos con privilegios elevados.
+  > [!NOTE]
+  > Debe ejecutar los cmdlets de PowerShell en una línea de comandos con privilegios elevados.
 
 - Conectar a su Azure Active Directory. Para obtener más información, [vea Conectar-MsolService](/powershell/module/msonline/connect-msolservice).
 
-**Acceso completo** <br>
-Los usuarios con acceso completo pueden iniciar sesión, ver toda la información del sistema y resolver alertas, enviar archivos para un análisis profundo y descargar el paquete de incorporación.
-La asignación de derechos de acceso completo requiere agregar los usuarios a los roles integrados "Administrador de seguridad" o "Administrador global" de AAD.
+  - **Acceso completo:** los usuarios con acceso completo pueden iniciar sesión, ver toda la información del sistema y resolver alertas, enviar archivos para un análisis profundo y descargar el paquete de incorporación. La asignación de derechos de acceso completo requiere agregar los usuarios a los roles integrados "Administrador de seguridad" o "Administrador global" de AAD.
+  - **Acceso de solo lectura:** los usuarios con acceso de solo lectura pueden iniciar sesión, ver todas las alertas e información relacionada.
 
-**Acceso de solo lectura** <br>
-Los usuarios con acceso de solo lectura pueden iniciar sesión, ver todas las alertas e información relacionada.
-No podrán cambiar los estados de alerta, enviar archivos para un análisis profundo o realizar operaciones de cambio de estado.
-La asignación de derechos de acceso de solo lectura requiere agregar los usuarios al rol integrado de Azure AD "Lector de seguridad".
+    No podrán cambiar los estados de alerta, enviar archivos para un análisis profundo o realizar operaciones de cambio de estado.
+
+    La asignación de derechos de acceso de solo lectura requiere agregar los usuarios al rol integrado de Azure AD "Lector de seguridad".
 
 Siga estos pasos para asignar roles de seguridad:
 
@@ -72,7 +73,7 @@ Siga estos pasos para asignar roles de seguridad:
   ```PowerShell
   Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress "secadmin@Contoso.onmicrosoft.com"
   ```
-  
+
 - Para **el acceso de solo** lectura, asigne usuarios al rol de lector de seguridad mediante el siguiente comando:
 
   ```PowerShell

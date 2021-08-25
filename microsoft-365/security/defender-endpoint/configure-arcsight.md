@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 66186c3e1b4509cf64cc4105975f15995523fc67b942fa8d9cfccad3a8134d2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ab7e1f31fff1e4b553d5d301eb7fbe4749de19e
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854332"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509539"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>Configurar Micro Focus ArcSight para extraer Defender para detecciones de puntos de conexión
 
@@ -38,8 +38,8 @@ Tendrás que instalar y configurar algunos archivos y herramientas para usar Mic
 
 > [!NOTE]
 >
->- [Defender for Endpoint Alert](alerts.md) se compone de una o más detecciones
->- [Defender para la detección de](api-portal-mapping.md) puntos de conexión se compone del evento sospechoso que se produjo en el dispositivo y sus detalles de alerta relacionados.
+> - [Defender for Endpoint Alert](alerts.md) se compone de una o más detecciones
+> - [Defender para la detección de](api-portal-mapping.md) puntos de conexión se compone del evento sospechoso que se produjo en el dispositivo y sus detalles de alerta relacionados.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -55,6 +55,7 @@ Esta sección le guía para obtener la información necesaria para establecer y 
   - Secreto de cliente de OAuth 2.0
 
 - Tenga los siguientes archivos de configuración listos:
+- 
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
@@ -85,7 +86,6 @@ En los pasos siguientes se supone que ha completado todos los pasos necesarios e
 3. Abra el Explorador de archivos y busque los dos archivos de configuración que guardó al habilitar la característica de integración siem. Ponga los dos archivos en la ubicación de instalación de FlexConnector, por ejemplo:
 
    - WDATP-connector.jsonparser.properties: C: \\ *folder_location*\current\user\agent\flexagent\
-
    - WDATP-connector.properties: C: \\ *folder_location*\current\user\agent\flexagent\
 
    > [!NOTE]
@@ -112,7 +112,7 @@ En los pasos siguientes se supone que ha completado todos los pasos necesarios e
 
 7. El conector abre una ventana del explorador. Inicie sesión con las credenciales de la aplicación. Después de iniciar sesión, se le pedirá que le dé permiso a su cliente de OAuth2. Debe conceder permiso al cliente de OAuth 2 para que la configuración del conector pueda autenticarse.
 
-   Si la <code>redirect_uri</code> dirección URL es https, se le redirigirá a una dirección URL en el host local. Verá una página que solicita que confíe en el certificado proporcionado por el conector que se ejecuta en el host local. Deberá confiar en este certificado si el redirect_uri es https.
+   Si la `redirect_uri` dirección URL es https, se le redirigirá a una dirección URL en el host local. Verá una página que solicita que confíe en el certificado proporcionado por el conector que se ejecuta en el host local. Deberá confiar en este certificado si el redirect_uri es https.
 
    Sin embargo, si especifica una dirección URL http para el redirect_uri, no es necesario proporcionar consentimiento para confiar en el certificado.
 
@@ -160,7 +160,7 @@ En los pasos siguientes se supone que ha completado todos los pasos necesarios e
 
 8. Inicie sesión en la consola de Micro Focus ArcSight.
 
-9. Vaya a **Active channel set** New  >  **Condition**  >  **Device**  >  **Device Product**.
+9. Vaya a **Active channel set** New \> **Condition** \> **Device** \> **Device Product**.
 
 10. Establecer **producto de dispositivo = ATP de Microsoft Defender**. Cuando haya comprobado que los eventos fluyen a la herramienta, detenga el proceso de nuevo y vaya a Windows Services e inicie el REST de ArcSight FlexConnector.
 
@@ -180,9 +180,13 @@ Defender para detecciones de puntos de conexión aparecerá como eventos discret
 
 1. Detenga el proceso haciendo clic en Ctrl + C en la ventana Conector. Haga **clic en Y** cuando se le pregunte "¿Finalizar el trabajo por lotes Y/N?".
 
-2. Navegue hasta la carpeta donde ha almacenado el archivo WDATP-connector.properties y edúzcalo para agregar el siguiente valor: `reauthenticate=true` .
+2. Navegue a la carpeta donde ha almacenado el archivo WDATP-connector.properties y edúzcalo para agregar el siguiente valor:
 
-3. Reinicie el conector ejecutando el siguiente comando: `arcsight.bat connectors` .
+   `reauthenticate=true`.
+
+3. Reinicie el conector ejecutando el siguiente comando:
+
+   `arcsight.bat connectors`.
 
    Aparece una ventana del explorador. Permitir que se ejecute, debe desaparecer y el conector debería estar en ejecución.
 

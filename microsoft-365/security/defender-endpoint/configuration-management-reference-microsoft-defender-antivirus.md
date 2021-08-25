@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: c0d82741a30bb57f7b7df4ceb642557c97f979ea446f3be41b98666bd3d5f0dd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f28c209ce179cc019a8b0edbdc698f9f9eb7daf6
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834214"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509910"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>Administrar Antivirus de Microsoft Defender en su empresa
 
@@ -44,10 +44,10 @@ Puede administrar y configurar Antivirus de Microsoft Defender con las siguiente
 
 Los artículos siguientes proporcionan más información, vínculos y recursos para usar estas herramientas para administrar y configurar Antivirus de Microsoft Defender.
 
-| Artículo | Descripción |
+|Artículo|Descripción|
 |:---|:---|
-|[Administrar Antivirus de Microsoft Defender con Microsoft Intune y Microsoft Endpoint Configuration Manager](use-intune-config-manager-microsoft-defender-antivirus.md)|Información sobre cómo usar Intune y Configuration Manager para implementar, administrar, informar y configurar Antivirus de Microsoft Defender |
-|[Administrar Antivirus de Microsoft Defender con la configuración de directiva de grupo](use-group-policy-microsoft-defender-antivirus.md)|Lista de todas las opciones de configuración de directiva de grupo ubicadas en plantillas ADMX |
-|[Administrar Antivirus de Microsoft Defender con cmdlets de PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)|Instrucciones para usar cmdlets de PowerShell para administrar Antivirus de Microsoft Defender, además de vínculos a documentación para todos los cmdlets y parámetros permitidos |
-|[Administrar Antivirus de Microsoft Defender con Windows Management Instrumentation (WMI)](use-wmi-microsoft-defender-antivirus.md)| Instrucciones para usar WMI para administrar Antivirus de Microsoft Defender, además de vínculos a la documentación de las API WMIv2 (incluidas todas las clases, métodos y propiedades) |
-|[Administrar Antivirus de Microsoft Defender con la MpCmdRun.exe de línea de comandos](command-line-arguments-microsoft-defender-antivirus.md)| Instrucciones sobre cómo usar la herramienta de línea de comandos dedicada para administrar y usar Antivirus de Microsoft Defender |
+|[Administrar Antivirus de Microsoft Defender con Microsoft Intune y Microsoft Endpoint Configuration Manager](use-intune-config-manager-microsoft-defender-antivirus.md)|Información sobre cómo usar Intune y Configuration Manager para implementar, administrar, informar y configurar Antivirus de Microsoft Defender|
+|[Administrar Antivirus de Microsoft Defender con la configuración de directiva de grupo](use-group-policy-microsoft-defender-antivirus.md)|Lista de todas las opciones de configuración de directiva de grupo ubicadas en plantillas ADMX|
+|[Administrar Antivirus de Microsoft Defender con cmdlets de PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)|Instrucciones para usar cmdlets de PowerShell para administrar Antivirus de Microsoft Defender, además de vínculos a documentación para todos los cmdlets y parámetros permitidos|
+|[Administrar Antivirus de Microsoft Defender con Windows Management Instrumentation (WMI)](use-wmi-microsoft-defender-antivirus.md)|Instrucciones para usar WMI para administrar Antivirus de Microsoft Defender, además de vínculos a la documentación de las API WMIv2 (incluidas todas las clases, métodos y propiedades)|
+|[Administrar Antivirus de Microsoft Defender con la MpCmdRun.exe de línea de comandos](command-line-arguments-microsoft-defender-antivirus.md)|Instrucciones sobre cómo usar la herramienta de línea de comandos dedicada para administrar y usar Antivirus de Microsoft Defender|
