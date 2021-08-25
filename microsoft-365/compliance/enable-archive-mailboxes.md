@@ -1,5 +1,5 @@
 ---
-title: Habilitar buzones de archivo en el Centro de seguridad y cumplimiento
+title: Habilitar buzones de archivo en el Centro de cumplimiento de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: Aprenda a usar el centro de cumplimiento para habilitar los buzones de correo de archivo a fin de respaldar los requisitos de retención de mensajes, eDiscovery y retención de su organización.
-ms.openlocfilehash: 7a65a8347c1da2baf08c135a1818cf0d60dc13838e6acf858a6e0e70a10fcf97
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cade5f3b089a5e6f98c234d9498635eb48e881c8
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796099"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503076"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Habilitar los buzones de archivo en el centro de cumplimiento
 
@@ -36,7 +36,7 @@ El archivado en Microsoft 365 (también llamado *archivado local*) proporciona a
 
 ## <a name="get-the-necessary-permissions"></a>Obtener los permisos necesarios
 
-Debe tener asignado el rol de Destinatarios de correo de Exchange Online para habilitar o deshabilitar los buzones de archivo. De manera predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en la página **Permisos** del centro de administración de Exchange. Si no ve la página **Archivo** en el Centro de seguridad y cumplimiento, pida al administrador que le asigne los permisos necesarios.
+Debe tener asignado el rol de Destinatarios de correo de Exchange Online para habilitar o deshabilitar los buzones de archivo. De manera predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en la página **Permisos** del centro de administración de Exchange. Si no ve la página **Archivo** en el Centro de cumplimiento de Microsoft 365, pida al administrador que le asigne los permisos necesarios.
 
 ## <a name="enable-an-archive-mailbox"></a>Habilitación de un buzón de archivo
 
@@ -66,7 +66,7 @@ Debe tener asignado el rol de Destinatarios de correo de Exchange Online para ha
 
 ## <a name="disable-an-archive-mailbox"></a>Deshabilitar un buzón de archivo
 
-También puede usar la página **Archivo** en el Centro de seguridad y cumplimiento para deshabilitar el buzón de archivo del usuario. Después de deshabilitar un buzón de archivo, puede volver a conectarlo al buzón de correo principal del usuario en un plazo de 30 días tras la deshabilitación. En este caso, se restaura el contenido original del buzón de archivo. Transcurridos los 30 días, el contenido del buzón de archivo original se elimina definitivamente y no se puede recuperar. Así, si vuelve a habilitar el archivo después de los 30 días posteriores a la deshabilitación, se crea un buzón de archivo nuevo.
+También puede usar la página **Archivo** en el Centro de cumplimiento de Microsoft 365 para deshabilitar el buzón de archivo del usuario. Después de deshabilitar un buzón de archivo, puede volver a conectarlo al buzón de correo principal del usuario en un plazo de 30 días tras la deshabilitación. En este caso, se restaura el contenido original del buzón de archivo. Transcurridos los 30 días, el contenido del buzón de archivo original se elimina definitivamente y no se puede recuperar. Así, si vuelve a habilitar el archivo después de los 30 días posteriores a la deshabilitación, se crea un buzón de archivo nuevo.
 
 La directiva de archivo predeterminada asignada a los buzones de usuarios mueve elementos al buzón de archivo dos años después de la fecha en que el elemento se entregó. Si deshabilita el buzón de archivo de un usuario, no se realizará ninguna acción en los elementos del buzón y permanecerán en el buzón principal del usuario.
 
@@ -136,7 +136,7 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
   Para obtener una lista de las licencias de Outlook que son compatibles con el archivado local, vea [Requisitos de licencia de Outlook para las funciones de Exchange](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99).
 
-- Los buzones de archivo permiten que usted y sus usuarios cumplan con los requisitos de retención de mensajes de la organización, eDiscovery y conservación. Por ejemplo, puede usar la directiva de retención de Exchange de su organización para mover el contenido del buzón al buzón de archivo de los usuarios. Cuando se usa la herramienta de Búsqueda de contenido en el Centro de seguridad y cumplimiento para buscar contenido específico en el buzón de un usuario, también se buscará en el buzón de archivo del usuario. Y, cuando se coloca una Retención por juicio o se aplica una directiva de retención en el buzón de un usuario, también se retienen los elementos del buzón de archivo.
+- Los buzones de archivo permiten que usted y sus usuarios cumplan con los requisitos de retención de mensajes de la organización, eDiscovery y conservación. Por ejemplo, puede usar la directiva de retención de Exchange de su organización para mover el contenido del buzón al buzón de archivo de los usuarios. Cuando se usa la herramienta de Búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar contenido específico en el buzón de un usuario, también se buscará en el buzón de archivo del usuario. Y, cuando se coloca una Retención por juicio o se aplica una directiva de retención en el buzón de un usuario, también se retienen los elementos del buzón de archivo.
 
 - Cuando se habilitan los buzones de archivo, la organización puede beneficiarse de la directiva de retención de Exchange predeterminada (también llamada directiva de Administración de registros de mensajería o MRM) que se asigna automáticamente a todos los buzones. Cuando se habilita un buzón de archivo, la directiva de retención de Exchange predeterminada hace automáticamente lo siguiente:
 

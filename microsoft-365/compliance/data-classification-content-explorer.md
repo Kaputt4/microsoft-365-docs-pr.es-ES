@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 9fbe99e07a9fa881656df15e2be1d673f87bc523
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5cebf4f53a331712df6a480a6d813da7232b5858
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58251911"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502920"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -77,7 +77,7 @@ La cuenta que use para tener acceso al explorador de contenido debe estar en uno
 
 También puede asignar uno o ambos roles a un grupo de roles personalizado para ajustar el acceso a Content Explorer.
 
-Un administrador global, un administrador de cumplimiento o un administrador de datos pueden asignar el visor de listas del explorador de contenido cuando sea necesario y la pertenencia al grupo de funciones del visor del explorador de contenido.
+Un administrador global puede asignar el visor de listas del explorador de contenido cuando sea necesario y la pertenencia al grupo de funciones del visor del explorador de contenido.
 
 ## <a name="content-explorer"></a>Explorador de contenido
 
@@ -145,7 +145,7 @@ Puede buscar en:
 
 ## <a name="see-also"></a>Recursos adicionales
 
-- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial.md](sensitive-information-type-entity-definitions.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

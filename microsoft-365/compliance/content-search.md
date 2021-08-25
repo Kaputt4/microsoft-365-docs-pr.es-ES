@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: e3d4f090ebe53175e2957d040ad18c226a7d3177159e2552586cac4a7b259734
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0d99321c02c4604219e5c6fcb247666f88cf4a08
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892344"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502860"
 ---
 # <a name="create-a-content-search"></a>Crear una búsqueda de contenido
 
@@ -45,7 +45,7 @@ Después de ejecutar una búsqueda, se mostrará el número de ubicaciones de co
 
 ## <a name="create-and-run-a-search"></a>Crear y ejecutar una búsqueda
 
-Para acceder a la página de **Búsqueda de contenido** en el Centro de cumplimiento de Microsoft 365 (para buscar, obtener una vista previa o exportar los resultados de búsqueda), es necesario que un administrador, responsable de cumplimento normativo o administrador de eDiscovery sea miembro del grupo de roles de administradores de eDiscovery en el Centro de seguridad y cumplimiento. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
+Para acceder a la página de **Búsqueda de contenido** en el Centro de cumplimiento de Microsoft 365 (para buscar, obtener una vista previa o exportar los resultados de búsqueda), es necesario que un administrador, responsable de cumplimento normativo o administrador de eDiscovery sea miembro del grupo de roles de administradores de eDiscovery en el Centro de cumplimiento de Microsoft 365. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta a la que se han asignado los permisos adecuados.
 

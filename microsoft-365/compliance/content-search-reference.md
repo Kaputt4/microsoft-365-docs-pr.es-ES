@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene información de referencia sobre la herramienta de eDiscovery de búsqueda de contenido del Centro de cumplimiento de Microsoft 365 para ayudarle a obtener una gran cantidad de detalles sobre la búsqueda de contenido.
-ms.openlocfilehash: 0bde0c6610e1280a23a7382babf302cc1a8839497e06361a5d4554274903315d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3c764dd1fb79906061b9b9b4c1408d83c8dbe0c
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892491"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502080"
 ---
 # <a name="feature-reference-for-content-search"></a>Referencia de características para la búsqueda de contenido
 
@@ -189,7 +189,7 @@ Para buscar elementos de conversación específicos en los Grupos Yammer puede u
 
 ## <a name="searching-inactive-mailboxes"></a>Buscar en buzones inactivos
 
-Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **gobernanza de la información** \> **Retención** en el centro de cumplimiento de seguridad y, a continuación, haga clic en **Más**![](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\>**de la barra de navegación los buzones inactivos**.
+Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **Gobierno de información** \> **Retención** en el Centro de cumplimiento de Microsoft 365 y hacer clic en **Más**![Puntos suspensivos en la barra de navegación](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Buzones inactivos**.
 
 A continuación, se detallan algunos aspectos que se deben tener en cuenta al buscar buzones inactivos:
 

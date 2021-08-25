@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 44caa372797e627a05bc40b3fb816d50dcd5a88c
-ms.sourcegitcommit: 0ec4a6cc94ebc2ae18846011a34bbd1dd9a7ace0
+ms.openlocfilehash: 55fa863dca2caf3a88c7127993c392c510953af8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470781"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506459"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -127,7 +127,16 @@ Puede aplicar etiquetas de retención al contenido automáticamente cuando éste
 
 - [Una coincidencia para clasificadores que se pueden entrenar](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-Las tres condiciones pueden aplicar automáticamente etiquetas de retención a los correos electrónicos a medida que se envían y reciben (datos en tránsito), pero no a los elementos existentes en el buzón (datos en reposo). Para los elementos de SharePoint y OneDrive, use la tabla siguiente para identificar cuándo se les pueden aplicar automáticamente las etiquetas de retención:
+Use la tabla siguiente para identificar cuándo se pueden aplicar automáticamente las etiquetas de retención a los elementos de Exchange:
+
+|Condición|Elementos en tránsito (enviados o recibidos) |Elementos existentes (datos en reposo)|
+|:-----|:-----|:-----|
+|Tipos de información confidencial: integrado| Sí | No |
+|Tipos de información confidencial: personalizado| Sí | No |
+|Palabras clave específicas o propiedades que se pueden buscar| Sí |Sí |
+|Clasificadores que se pueden entrenar| Sí | Sí (solo los últimos seis meses) |
+
+Use la tabla siguiente para identificar cuándo se pueden aplicar automáticamente las etiquetas de retención a los elementos de SharePoint y OneDrive:
 
 |Condición|Elementos nuevos o modificados |Elementos existentes (datos en reposo)|
 |:-----|:-----|:-----|

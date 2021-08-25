@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 48b014c808a2d8d91f7a0adb01938bf289c1985aece314fd5ab49d3ef9542c4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 20918b3412a5534675c873fdfd9d2fb94a73ab75
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829825"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509946"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -28,7 +28,7 @@ ms.locfileid: "53829825"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-En este artículo se describe una característica de antivirus o antimalware conocida como "bloqueo a primera vista" y se describe cómo habilitar el bloqueo a primera vista para la organización. 
+En este artículo se describe una característica de antivirus o antimalware conocida como "bloqueo a primera vista" y se describe cómo habilitar el bloqueo a primera vista para la organización.
 
 > [!TIP]
 > Este artículo está destinado a administradores empresariales y profesionales de TI que administran la configuración de seguridad para organizaciones. Si no es un administrador empresarial o un profesional de TI, pero tiene preguntas sobre el bloqueo a primera vista, consulte la sección[¿No es un administrador empresarial o un profesional de TI?](#not-an-enterprise-admin-or-it-pro).
@@ -37,19 +37,19 @@ En este artículo se describe una característica de antivirus o antimalware con
 
 El bloqueo a primera vista es una característica de protección contra amenazas de protección de nueva generación que detecta nuevo malware y lo bloquea en pocos segundos. El bloqueo a primera vista se habilita cuando se habilitan determinadas opciones de configuración de seguridad. Entre estas opciones se incluyen:
 
-- Protección entregada en la nube; 
-- Un tiempo de espera de envío de ejemplo especificado (como 50 segundos); y 
-- Un nivel de bloqueo de archivos alto. 
+- Protección entregada en la nube;
+- Un tiempo de espera de envío de ejemplo especificado (como 50 segundos); y
+- Un nivel de bloqueo de archivos alto.
 
-En la mayoría de las organizaciones empresariales, la configuración necesaria para habilitar el bloqueo a primera vista se configura con las implementaciones de Antivirus de Microsoft Defender. 
+En la mayoría de las organizaciones empresariales, la configuración necesaria para habilitar el bloqueo a primera vista se configura con las implementaciones de Antivirus de Microsoft Defender.
 
 ## <a name="how-it-works"></a>Cómo funciona
 
 Cuando Antivirus de Microsoft Defender encuentra un archivo sospechoso pero no detectado, consulta nuestro back-end de protección de la nube. El back-end de la nube aplica heurística, aprendizaje automático y análisis automatizado del archivo para determinar si los archivos son malintencionados o no son una amenaza.
 
-Antivirus de Microsoft Defender usa varias tecnologías de detección y prevención para ofrecer una protección inteligente, en tiempo real y precisa. 
+Antivirus de Microsoft Defender usa varias tecnologías de detección y prevención para ofrecer una protección inteligente, en tiempo real y precisa.
 
-![Lista de motores AV de Microsoft Defender](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+![Lista de motores AV de Microsoft Defender](images/microsoft-defender-atp-next-generation-protection-engines.png)
 
 > [!TIP]
 > Para más información, consulte este blog: [Conozca las tecnologías avanzadas en el núcleo de la protección de última generación de Microsoft Defender para punto de conexión](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
@@ -71,7 +71,7 @@ Antivirus de Microsoft Defender usa varias tecnologías de detección y prevenci
 > [!TIP]
 > Microsoft Intune ahora forma parte de Microsoft Endpoint Manager.
 
-1. En el Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), vaya a **Dispositivos** > **Perfiles de configuración**.
+1. En el Centro de administración de Microsoft Endpoint Manager (<https://endpoint.microsoft.com>), vaya a **Dispositivos** \> **Perfiles de configuración**.
 
 2. Seleccione o cree un perfil con el tipo de perfil **Restricciones de dispositivo**.
 
@@ -87,6 +87,7 @@ Antivirus de Microsoft Defender usa varias tecnologías de detección y prevenci
 4. Guarde la configuración.
 
 > [!TIP]
+>
 > - Si establece el nivel de bloqueo de archivos en **Alto**, se aplica un nivel de detección muy riguroso. En el caso poco probable de que el bloqueo de archivos cause una detección de falso positivo de archivos legítimos, el equipo de operaciones de seguridad puede [restaurar los archivos en cuarentena](./restore-quarantined-files-microsoft-defender-antivirus.md).
 > - Para obtener más información sobre cómo configurar las restricciones de dispositivos de Antivirus de Microsoft Defender en Intune, consulte[ Configurar las opciones de restricción de dispositivos en Microsoft Intune](/intune/device-restrictions-configure).
 > - Para obtener una lista de las restricciones de los dispositivos de Antivirus de Microsoft Defender en Intune, consulte [Configuración de restricción de dispositivos para Windows 10 (y posteriores) en Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
@@ -96,7 +97,7 @@ Antivirus de Microsoft Defender usa varias tecnologías de detección y prevenci
 > [!TIP]
 > Si está buscando Microsoft Endpoint Configuration Manager, ahora forma parte de Microsoft Endpoint Manager.
 
-1. En Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), vaya a **Seguridad de punto de conexión** > **Antivirus**.
+1. En Microsoft Endpoint Manager (<https://endpoint.microsoft.com>), vaya a **Seguridad de punto de conexión** \> **Antivirus**.
 
 2. Seleccione una directiva existente o cree una directiva con el tipo de perfil **Antivirus de Microsoft Defender**.
 
@@ -113,11 +114,11 @@ Antivirus de Microsoft Defender usa varias tecnologías de detección y prevenci
 ## <a name="turn-on-block-at-first-sight-with-group-policy"></a>Activar el bloqueo a primera vista con la directiva de grupo
 
 > [!NOTE]
-> Se recomienda usar Intune o Microsoft Endpoint Manager para activar el bloqueo a primera vista. 
+> Se recomienda usar Intune o Microsoft Endpoint Manager para activar el bloqueo a primera vista.
 
-1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón secundario en el objeto de directiva de grupo que quiera configurar y seleccione **Editar**. 
+1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón secundario en el objeto de directiva de grupo que quiera configurar y seleccione **Editar**.
 
-2. Con el **Editor de administración de directivas de grupo** vaya a **Configuración del equipo** > **Plantillas administrativas** > **Componentes de Windows** > **Antivirus de Microsoft Defender** > **MAPAS**. 
+2. Con el **Editor de administración de directivas de grupo** vaya a **Configuración del equipo**\>**Plantillas administrativas**\>**Componentes de Windows**\>**Antivirus de Microsoft Defender**\>**MAPAS**.
 
 3. En la sección MAPAS, haga doble clic en **Configurar la característica "Bloquear a primera vista"**, establezca esta opción en **Habilitado** y seleccione **Aceptar**.
 
@@ -141,14 +142,15 @@ Puede confirmar que el bloqueo a primera vista está habilitado en dispositivos 
 3. Confirme que las opciones **Protección basada en la nube** y **Envío de muestras automático** estén activadas.
 
 > [!NOTE]
-> - Si la configuración de requisitos previos se configura e implementa mediante la directiva de grupo, la configuración que se describe en esta sección aparecerá atenuada y su uso no estará disponible en los puntos de conexión individuales. 
+>
+> - Si la configuración de requisitos previos se configura e implementa mediante la directiva de grupo, la configuración que se describe en esta sección aparecerá atenuada y su uso no estará disponible en los puntos de conexión individuales.
 > - Los cambios realizados a través de un objeto de directiva de grupo deben implementarse en primer lugar en los extremos individuales antes de que se actualice la configuración en la configuración de Windows.
 
 ## <a name="validate-block-at-first-sight-is-working"></a>Validar que esté funcionando el bloqueo a primera vista
 
 Para validar que la característica funciona, descargue el archivo de ejemplo [Bloquear a primera vista](https://demo.wd.microsoft.com/Page/BAFS). Para descargar el archivo, necesitará una cuenta en Azure AD que tenga asignado el rol Administrador de seguridad o Administrador global.
 
-Para validar que la protección habilitada para la nube funciona, siga las instrucciones de [Validar las conexiones entre la red y la nube](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud). 
+Para validar que la protección habilitada para la nube funciona, siga las instrucciones de [Validar las conexiones entre la red y la nube](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
 ## <a name="turn-off-block-at-first-sight"></a>Desactivar el bloqueo a primera vista
 
@@ -159,9 +161,9 @@ Puede optar por deshabilitar el bloqueo a primera vista si quiere conservar la c
 
 ### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>Desactivar el bloqueo a primera vista con Microsoft Endpoint Manager
 
-1. Vaya al Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
+1. Vaya al Centro de administración de Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) e inicie sesión.
 
-2. Vaya a **Seguridad de punto de conexión** > **Antivirus** y, después, seleccione la directiva de Antivirus de Microsoft Defender.
+2. Vaya a **Seguridad de punto de conexión** \> **Antivirus** y, después, seleccione la directiva de Antivirus de Microsoft Defender.
 
 3. En **Administrar**, elija **Propiedades**.
 
@@ -181,7 +183,7 @@ Puede optar por deshabilitar el bloqueo a primera vista si quiere conservar la c
 
 2. Con el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol en **Componentes de Windows** > **Antivirus de Windows Defender** > **MAPAS**.
+3. Expanda el árbol en **Componentes de Windows**\>**Antivirus de Microsoft Defender** \> **MAPAS**.
 
 4. Haz doble clic en **Configurar la característica 'Bloqueo a primera vista'** y establezca la opción en **Deshabilitado**.
 
@@ -206,10 +208,10 @@ Si tiene un dispositivo personal que no está administrado por una organización
 
    - Para habilitar el bloqueo a primera vista, asegúrese de que **Protección proporcionada en la nube** y **Envío de muestras automático** están activados.
 
-   - Para deshabilitar el bloqueo a primera vista, desactive la **Protección proporcionada en la nube** o **Envío de muestras automático**. <br/>
-    
+   - Para deshabilitar el bloqueo a primera vista, desactive la **Protección proporcionada en la nube** o **Envío de muestras automático**.
+
      > [!CAUTION]
-     > Desactivar el bloque a primera vista disminuye el nivel de protección del dispositivo. No se recomienda deshabilitar permanentemente el bloqueo a primera vista. 
+     > Desactivar el bloque a primera vista disminuye el nivel de protección del dispositivo. No se recomienda deshabilitar permanentemente el bloqueo a primera vista.
 
 
 ## <a name="see-also"></a>Vea también
