@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
-ms.openlocfilehash: 5e05dd44f6e89794f196099c878843f024b58d40e81637bd15e9fb46cc724146
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aa5112eeedcfd0c46bba1d96a43e49051eb3ed9e
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808421"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503088"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Administrar directivas de retención de registros de auditoría
 
-Puede crear y administrar directivas de retención de registros de auditoría en el Centro de seguridad y cumplimiento. Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización. Puede conservar los registros de auditoría hasta por 10 años. Puede crear directivas en función de los siguientes criterios:
+Puede crear y administrar directivas de retención de registros de auditoría en el Centro de cumplimiento de Microsoft 365. Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización. Puede conservar los registros de auditoría hasta por 10 años. Puede crear directivas en función de los siguientes criterios:
 
 - Todas las actividades en uno o más servicios de Microsoft 365
 - Actividades específicas (en un servicio de Microsoft 365) realizadas por todos los usuarios o por usuarios específicos
@@ -41,7 +41,7 @@ Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de 
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>Antes de crear una directiva de retención de registros de auditoría
 
-- Debe tener asignado el rol de Configuración de la organización en el Centro de seguridad y cumplimiento para crear o modificar una directiva de retención de auditoría.
+- Debe tener asignado el rol de Configuración de la organización en el Centro de cumplimiento de Microsoft 365 para crear o modificar una directiva de retención de auditoría.
 
 - Puede tener un máximo de 50 directivas de retención de registros de auditoría en su organización.
 
@@ -51,9 +51,9 @@ Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de 
 
 ## <a name="create-an-audit-log-retention-policy"></a>Crear una directiva de retención de registros de auditoría
 
-1. Vaya a <https://compliance.microsoft.com> e inicie sesión con la cuenta de usuario que tenga asignado el rol de Configuración en la página Permisos de la organización en el Centro de seguridad y cumplimiento.
+1. Vaya a <https://compliance.microsoft.com> e inicie sesión con una cuenta de usuario que tenga asignado el rol Configuración de la organización en la página de Permisos del Centro de cumplimiento de Microsoft 365.
 
-2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo**, y luego haga clic en **Auditoría**.
+2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Auditoría**.
 
 3. Haga clic en la pestaña **Auditar directivas de retención**.
 
