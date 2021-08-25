@@ -14,12 +14,12 @@ ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo crear una conservación local en un buzón eliminado temporalmente para que se convierta en inactivo y se conserve su contenido.
-ms.openlocfilehash: 5c10a170f3c6e4d7d692be7719f9514e892f154cdc1ba1a021f45ab7c92eebf8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 906ae8aded9bdf996f89c01db5ada6a36b00d77e
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795823"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507547"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Colocar una conservación local en un buzón eliminado temporalmente en Exchange Online
 
@@ -28,7 +28,7 @@ Obtenga información sobre cómo crear una conservación local en un buzón elim
 > [!IMPORTANT]
 > A medida que seguimos invirtiendo en diferentes formas de conservar el contenido del buzón, anunciamos la retirada de las retenciones de In-Place en el Centro de administración de Exchange (EAC). A partir del 1 de julio de 2020 no podrá crear nuevas retenciones In-Place en Exchange Online. Pero aún podrá administrar las In-Place en el EAC o mediante el cmdlet **Set-MailboxSearch** en Exchange Online PowerShell. Sin embargo, a partir del 1 de octubre de 2020, no podrá administrar las In-Place retenciones. Solo se quitarán en el EAC o mediante el cmdlet **Remove-MailboxSearch.** Para obtener más información acerca de la retirada de In-Place, vea [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
 
-You might have a situation where a person has left your organization, and their corresponding user account and mailbox were deleted. Afterwards, you realize there's information in the mailbox that needs to be preserved. What can you do? Si el período de retención de buzones eliminados no ha expirado, puede colocar una retención de In-Place en el buzón eliminado (denominado buzón eliminado temporalmente) y convertirlo en un buzón inactivo. An  *inactive mailbox*  is used to preserve a former employee's email after he or she leaves your organization. The contents of an inactive mailbox are preserved for the duration of the In-Place Hold that was is placed on the soft-deleted mailbox when it was made inactive. Una vez inactivo el buzón, puede buscar en el buzón mediante la exhibición de documentos electrónicos de In-Place en Exchange Online, la búsqueda de contenido en el Centro de cumplimiento de & de seguridad o el Centro de exhibición de documentos electrónicos en SharePoint Online.
+You might have a situation where a person has left your organization, and their corresponding user account and mailbox were deleted. Afterwards, you realize there's information in the mailbox that needs to be preserved. What can you do? Si el período de retención de buzones eliminados no ha expirado, puede colocar una retención de In-Place en el buzón eliminado (denominado buzón eliminado temporalmente) y convertirlo en un buzón inactivo. An  *inactive mailbox*  is used to preserve a former employee's email after he or she leaves your organization. The contents of an inactive mailbox are preserved for the duration of the In-Place Hold that was is placed on the soft-deleted mailbox when it was made inactive. Después de que el buzón esté inactivo, puede buscar en el buzón mediante una herramienta de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365.
 
 > [!NOTE]
 > En Exchange Online, un buzón eliminado temporalmente es un buzón que se ha eliminado, pero se puede recuperar en un período de retención específico. El período de retención de buzón eliminado temporalmente en Exchange Online es de 30 días. Esto significa que el buzón se puede recuperar (o convertirse en un buzón inactivo) en un plazo de 30 días después de eliminarse. Transcurrido este período, un buzón eliminado temporalmente se marca para su eliminación permanente y no puede recuperarse ni convertirse en inactivo.

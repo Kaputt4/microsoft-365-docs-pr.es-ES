@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use la exhibición de documentos electrónicos y las herramientas de búsqueda para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 40addc161b40a4b9068fbe0c3041078086d21c6a
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 96cb6362149fe056249e7ffe2d6858785335a00c
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503136"
+ms.locfileid: "58508195"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie de soluciones de exhibición de documentos electrónicos: escenario de derrame de datos: búsqueda y purga
 
@@ -172,7 +172,7 @@ Asegúrese de revertir el buzón a configuraciones anteriores después de compro
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>Paso 7: Eliminar permanentemente los datos derramados
 
-Con las ubicaciones de buzones de correo que recopiló y preparó en el paso 6 y la consulta de búsqueda que se creó y refinó en el paso 3 para buscar mensajes de correo electrónico que contengan los datos derramados, ahora puede eliminar permanentemente los datos derramados.  Como se explicó anteriormente, para eliminar mensajes, debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Buscar y purgar. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](./assign-ediscovery-permissions.md).
+Con las ubicaciones de buzones de correo que recopiló y preparó en el paso 6 y la consulta de búsqueda que se creó y refinó en el paso 3 para buscar mensajes de correo electrónico que contengan los datos derramados, ahora puede eliminar permanentemente los datos derramados.  Como se explicó anteriormente, para eliminar mensajes, debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Buscar y purgar. Para obtener información sobre cómo agregar usuarios a un grupo de roles, vea [Asignar permisos de exhibición de documentos electrónicos](./assign-ediscovery-permissions.md).
 
 Para eliminar los mensajes derramados, vea [Buscar y eliminar mensajes de correo electrónico.](search-for-and-delete-messages-in-your-organization.md)
 

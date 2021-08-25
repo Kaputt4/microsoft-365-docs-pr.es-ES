@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8c804aa9b557e87b15cf40721239957c122fec22
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bbc215c24c514799e617977152a7c71dd2e995e7
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247484"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507369"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -162,10 +162,9 @@ Nombre de la característica|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Detección de redes|![No](images/svg/check-no.svg) Implementando|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo
 Filtrado de contenido web|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo
-Integraciones: Azure Sentinel|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg) Alertas <p> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar|![Sí](images/svg/check-yes.svg) Alertas <p> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar
-Integraciones: Microsoft Cloud App Security|![Sí](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo
-Integraciones: Administrador de cumplimiento de Microsoft|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Integraciones: Microsoft Defender para la identidad|![No](images/svg/check-no.svg) Implementando|![No](images/svg/check-no.svg) Implementando|![No](images/svg/check-no.svg) Implementando
+Integraciones: Azure Sentinel|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg) Alertas <p> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar privada|![Sí](images/svg/check-yes.svg) Alertas <p> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar privada
+Integraciones: Microsoft Cloud App Security|![Sí](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) Implementando|![No](images/svg/check-no.svg) Implementando
+Integraciones: Microsoft Defender para la identidad|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Integraciones: DLP de punto de conexión de Microsoft|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) Implementando
 Integraciones: Microsoft Power Automate & Azure Logic Apps|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg) Azure Logic Apps <p> ![No](images/svg/check-no.svg) Power Automate: En desarrollo
 Expertos en amenazas de Microsoft|![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería|![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería|![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería

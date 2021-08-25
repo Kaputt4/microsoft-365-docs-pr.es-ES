@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo ejecutar un script para agregar buzones & OneDrive para la Empresa sitios a una nueva retención asociada con un caso de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: 7f1b5f9d3b8106ca899079d22fd4a46a8270771470be5a288ef5d1f77f1a6cce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 058dae2fdffa67492b611ebe8fc9f1bdb5254706
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859772"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508243"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Usar un script para agregar usuarios a una retención en un caso de exhibición de documentos electrónicos principal
 
-PowerShell & Centro de seguridad y cumplimiento proporciona cmdlets que le permiten automatizar tareas que consumen mucho tiempo relacionadas con la creación y administración de casos de exhibición de documentos electrónicos. Actualmente, el uso del caso de exhibición de documentos electrónicos principal en el Centro de seguridad y cumplimiento de & para poner un gran número de ubicaciones de contenido de custodia en espera lleva tiempo y preparación. Por ejemplo, antes de crear una retención, debe recopilar la dirección URL de cada OneDrive para la Empresa sitio que desee poner en espera. A continuación, para cada usuario que desee poner en espera, debe agregar su buzón y su OneDrive para la Empresa sitio a la retención. Puede usar el script de este artículo para automatizar este proceso.
+PowerShell & Centro de seguridad y cumplimiento proporciona cmdlets que le permiten automatizar tareas que consumen mucho tiempo relacionadas con la creación y administración de casos de exhibición de documentos electrónicos. Actualmente, el uso del caso de exhibición de documentos electrónicos principal en el Centro de cumplimiento de Microsoft 365 para poner un gran número de ubicaciones de contenido de custodia en espera lleva tiempo y preparación. Por ejemplo, antes de crear una retención, debe recopilar la dirección URL de cada OneDrive para la Empresa sitio que desee poner en espera. A continuación, para cada usuario que desee poner en espera, debe agregar su buzón y su OneDrive para la Empresa sitio a la retención. Puede usar el script de este artículo para automatizar este proceso.
   
 El script le pide el nombre del dominio de Mi sitio de su organización (por ejemplo, en la dirección URL , el nombre de un caso de exhibición de documentos electrónicos existente, el nombre de la nueva retención asociada al caso, una lista de direcciones de correo electrónico de los usuarios que desea poner en espera y una consulta de búsqueda que se usará si desea crear una retención basada en `contoso` https://contoso-my.sharepoint.com) consultas. A continuación, el script obtiene la dirección URL del sitio de OneDrive para la Empresa para cada usuario de la lista, crea la nueva retención y, a continuación, agrega el buzón y el sitio OneDrive para la Empresa para cada usuario de la lista a la retención. El script también genera archivos de registro que contienen información sobre la nueva retención.
   
@@ -43,9 +43,9 @@ Estos son los pasos para que esto suceda:
   
 ## <a name="before-you-add-users-to-a-hold"></a>Antes de agregar usuarios a una retención
 
-- Debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento de & y administrador de SharePoint Online para ejecutar el script en el paso 3. Para obtener más información, vea [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
+- Debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 y un administrador de SharePoint Online para ejecutar el script en el paso 3. Para obtener más información, vea [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
 
-- Se puede agregar un máximo de 1.000 buzones y 100 sitios a una retención asociada a un caso de exhibición de documentos electrónicos en el Centro de seguridad & cumplimiento. Suponiendo que todos los usuarios que desee poner en espera tienen un sitio de OneDrive para la Empresa, puede agregar un máximo de 100 usuarios a una retención mediante el script de este artículo.
+- Se puede agregar un máximo de 1.000 buzones y 100 sitios a una retención asociada a un caso de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365. Suponiendo que todos los usuarios que desee poner en espera tienen un sitio de OneDrive para la Empresa, puede agregar un máximo de 100 usuarios a una retención mediante el script de este artículo.
 
 - Asegúrese de guardar la lista de usuarios que cree en el paso 2 y el script del paso 3 en la misma carpeta. Esto facilitará la ejecución del script.
 
@@ -91,7 +91,7 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
 
 - **Consulta de búsqueda para una retención basada en consulta:** Puede crear una retención basada en consultas para que solo se mantenga en espera el contenido que cumpla los criterios de búsqueda especificados. Para poner todo el contenido en espera, simplemente presione **ENTRAR** cuando se le pida una consulta de búsqueda.
 
-- **Activar o no la retención:** Puede hacer que el script se active después de crearlo o que el script cree la retención sin habilitarlo. Si no tiene el script en espera, puede activarlo más adelante en el Centro de seguridad y cumplimiento de & o ejecutando los siguientes comandos de PowerShell:
+- **Activar o no la retención:** Puede hacer que el script se active después de crearlo o que el script cree la retención sin habilitarlo. Si no tiene el script en espera, puede activarlo más adelante en el Centro de cumplimiento de Microsoft 365 o ejecutando los siguientes comandos de PowerShell:
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -281,7 +281,7 @@ Write-host "Script complete!" -foregroundColor Yellow
 
 4. Escriba la información que el script le pida.
 
-   El script se conecta a PowerShell del Centro de seguridad & cumplimiento y, a continuación, crea la nueva retención en el caso de exhibición de documentos electrónicos y agrega los buzones y OneDrive para la Empresa para los usuarios de la lista. Puede ir al caso en la página **exhibición** de documentos electrónicos del Centro de seguridad y & cumplimiento para ver la nueva retención.
+   El script se conecta a PowerShell del Centro de seguridad & cumplimiento y, a continuación, crea la nueva retención en el caso de exhibición de documentos electrónicos y agrega los buzones y OneDrive para la Empresa para los usuarios de la lista. Puede ir al caso en la página **exhibición** de documentos electrónicos de la Centro de cumplimiento de Microsoft 365 para ver la nueva retención.
 
 Una vez que el script ha terminado de ejecutarse, crea los siguientes archivos de registro y los guarda en la carpeta donde se encuentra el script.
   

@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 817840c1c6a234523962667992e59225adb49b190feaaabdcb9d4ab420ad4ad8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a49c4993e6d81c90139e043683193f2ee6e532bf
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857864"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506519"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Acceder a las API de Microsoft Defender para punto de conexión 
+# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Acceder a las API de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ Defender for Endpoint expone gran parte de sus datos y acciones a través de un 
 
 Vea este vídeo para obtener una introducción rápida a las API de Defender para Endpoint.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
 En general, deberá seguir los pasos siguientes para usar las API:
 
@@ -55,7 +55,7 @@ Puede obtener acceso a defender para la API de extremo con **contexto de aplicac
   Pasos que deben seguirse para obtener acceso a la API de Defender para Endpoint con el contexto de la aplicación:
 
   1. Crear una aplicación web de AAD.
-  2. Asigne el permiso deseado a la aplicación, por ejemplo, "Leer alertas", "Aislar máquinas". 
+  2. Asigne el permiso deseado a la aplicación, por ejemplo, "Leer alertas", "Aislar máquinas".
   3. Cree una clave para esta aplicación.
   4. Obtener token con la aplicación con su clave.
   5. Usar el token para obtener acceso a la API de Microsoft Defender para endpoint
@@ -69,7 +69,7 @@ Puede obtener acceso a defender para la API de extremo con **contexto de aplicac
   Pasos a seguir para obtener acceso a la API de Defender for Endpoint con el contexto de la aplicación:
 
   1. Crear una aplicación nativa de AAD.
-  2. Asigne el permiso deseado a la aplicación, por ejemplo, "Leer alertas", "Aislar máquinas", etc. 
+  2. Asigne el permiso deseado a la aplicación, por ejemplo, "Leer alertas", "Aislar máquinas", etc.
   3. Obtener token con la aplicación con credenciales de usuario.
   4. Usar el token para obtener acceso a la API de Microsoft Defender para endpoint
 

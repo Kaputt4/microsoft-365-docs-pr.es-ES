@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2ed53a3e8feb9531e4cb75bc9531718d33528870
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 38f7ff40416835e9908757456520f0a90a745dfd
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246399"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508279"
 ---
-# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Solución de problemas en Microsoft Defender para Endpoint en Android
+# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Solución de problemas en Microsoft Defender para punto de conexión en Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,9 +38,10 @@ Al incorporar un dispositivo, es posible que veas problemas de inicio de sesión
 
 Durante la incorporación, es posible que encuentres problemas de inicio de sesión después de instalar la aplicación en el dispositivo.
 
-En este artículo se proporcionan soluciones para ayudar a solucionar los problemas de inicio de sesión.  
+En este artículo se proporcionan soluciones para ayudar a solucionar los problemas de inicio de sesión.
 
 ## <a name="sign-in-failed---unexpected-error"></a>Error de inicio de sesión: error inesperado
+
 **Error de inicio de sesión:** *error inesperado, inténtelo más tarde*
 
 ![Imagen del error de inicio de sesión Error inesperado](images/f9c3bad127d636c1f150d79814f35d4c.png)
@@ -81,12 +82,11 @@ Los sitios web de suplantación de identidad suplantan sitios web de confianza c
 
 **Se aplica a:** Oem específicos solo
 
--   **Xiaomi**
+- **Xiaomi**
 
 El phishing y las amenazas web nocivas detectadas por Defender para Endpoint para Android no se bloquean en algunos dispositivos Xiaomi. La siguiente funcionalidad no funciona en estos dispositivos.
 
 ![Imagen del sitio notificado no seguro](images/0c04975c74746a5cdb085e1d9386e713.png)
-
 
 **Causa:**
 
@@ -102,39 +102,41 @@ Habilite el permiso necesario en dispositivos Xiaomi.
 
 - Mostrar ventanas emergentes mientras se ejecuta en segundo plano.
 
-
 ## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>No se puede permitir el permiso para la "protección permanente" durante la incorporación en algunos dispositivos OEM
 
 **Se aplica a:** Solo dispositivos OEM específicos.
 
--   **Xiaomi con Android 11** 
+- **Xiaomi con Android 11**
 
 Defender App pide permiso de optimización de batería/protección permanente en  dispositivos como parte de la incorporación de aplicaciones y al seleccionar Permitir se devuelve un error que no se pudo establecer el permiso. Solo afecta al último permiso denominado "Protección permanente". 
- 
-**Causa:** Xiomi cambió los permisos de optimización de batería en Android 11. Defender no puede configurar esta configuración para omitir las optimizaciones de batería.
 
-**Solución:** Estamos trabajando con OEM para encontrar una solución que habilite este permiso desde la pantalla de incorporación de aplicaciones. Actualizaremos la documentación cuando se resuelva.
+**Causa:**
+
+Xiomi cambió los permisos de optimización de batería en Android 11. Defender no puede configurar esta configuración para omitir las optimizaciones de batería.
+
+**Solución:**
+
+Estamos trabajando con OEM para encontrar una solución que habilite este permiso desde la pantalla de incorporación de aplicaciones. Actualizaremos la documentación cuando se resuelva.
 Los usuarios pueden seguir estos pasos para habilitar los mismos permisos desde la configuración del dispositivo: 
 
 1. Ve a **Configuración** en el dispositivo.
-   
+
 2. Busque y seleccione **Optimización de batería.**
-   
+
    ![Busque y seleccione "Optimización de batería".](images/search-battery-optimisation.png)
 
 3. En **Acceso especial a la aplicación,** selecciona **Optimización de batería.**
-   
+
    ![En Acceso especial a la aplicación, selecciona "Optimización de batería".](images/special-app-access.png)
 
 4. Cambie el menú desplegable para mostrar **Todas las aplicaciones**.
 
-   ![Cambiar desplegable para mostrar "Todas las aplicaciones".](images/show-all-apps-2.png)
+   ![Paso uno para cambiar el desplegable para mostrar "Todas las aplicaciones".](images/show-all-apps-2.png)
 
-   ![Cambiar desplegable para mostrar "Todas las aplicaciones".](images/show-all-apps-1.png)
+   ![Paso dos para cambiar el desplegable para mostrar "Todas las aplicaciones".](images/show-all-apps-1.png)
 
 5. Busque "Punto de conexión de Microsoft Defender" y seleccione **No optimizar**.
 
    ![Busque "Punto de conexión de Microsoft Defender" y seleccione "No optimizar".](images/select-dont-optimise.png)
-
 
 Vuelva a la pantalla de incorporación de Puntos de conexión de Microsoft Defender, seleccione **Permitir** y se le redirigirá a la pantalla del panel.

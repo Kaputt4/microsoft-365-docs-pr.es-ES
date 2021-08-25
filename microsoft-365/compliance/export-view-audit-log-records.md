@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá a exportar, configurar y ver Microsoft 365 registros de auditoría.
-ms.openlocfilehash: 14bdd1a8a2576f622c4be63f463e5d42111fc02cd518cf488a8e4df5d39b1241
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf35f1936cebf9d3d8ba89d39f18a4977835f954
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905787"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507919"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportar, configurar y ver registros de registro de auditoría
 
@@ -104,7 +104,7 @@ El siguiente paso es usar la característica de transformación JSON en el Edito
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Usar PowerShell para buscar y exportar registros de registro de auditoría
 
-En lugar de usar la herramienta de búsqueda de registro de auditoría en el Centro de seguridad y cumplimiento de &, puede usar el cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell para exportar los resultados de una búsqueda de registro de auditoría a un archivo CSV. A continuación, puede seguir el mismo procedimiento descrito en el paso 2 para dar formato al registro de auditoría mediante el editor de Power Query. Una ventaja de usar el cmdlet de PowerShell es que puede buscar eventos de un servicio específico mediante el *parámetro RecordType.* Estos son algunos ejemplos de uso de PowerShell para exportar registros de auditoría a un archivo CSV para que pueda usar el editor de Power Query para transformar el objeto JSON en la columna **AuditData** tal como se describe en el paso 2.
+En lugar de usar la herramienta de búsqueda de registro de auditoría en el Centro de cumplimiento de Microsoft 365, puede usar el cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell para exportar los resultados de una búsqueda de registro de auditoría a un archivo CSV. A continuación, puede seguir el mismo procedimiento descrito en el paso 2 para dar formato al registro de auditoría mediante el editor de Power Query. Una ventaja de usar el cmdlet de PowerShell es que puede buscar eventos de un servicio específico mediante el *parámetro RecordType.* Estos son algunos ejemplos de uso de PowerShell para exportar registros de auditoría a un archivo CSV para que pueda usar el editor de Power Query para transformar el objeto JSON en la columna **AuditData** tal como se describe en el paso 2.
 
 En este ejemplo, ejecute los siguientes comandos para devolver todos los registros relacionados con SharePoint operaciones de uso compartido.
 
@@ -136,4 +136,4 @@ Estos son algunos consejos y ejemplos de exportación y visualización del regis
 
 - Filtre **la columna RecordType** para mostrar solo los registros de un servicio o área funcional específicos. Por ejemplo, para mostrar eventos relacionados SharePoint uso compartido, seleccionaría **14** (el valor de enumeración de los registros desencadenados por SharePoint de uso compartido). Para obtener una lista de los servicios que corresponden a los valores de enumeración que se muestran en la **columna RecordType,** vea Propiedades detalladas [en el registro de auditoría](detailed-properties-in-the-office-365-audit-log.md).
 
-- Filtre la **columna** Operaciones para mostrar los registros de actividades específicas. Para obtener una lista de la mayoría de las operaciones que corresponden a una actividad que se puede buscar en la herramienta de búsqueda del registro de auditoría en el Centro de cumplimiento de seguridad &, vea la sección "Actividades auditadas" en Buscar el registro de auditoría en el Centro de seguridad y cumplimiento de [&](search-the-audit-log-in-security-and-compliance.md#audited-activities).
+- Filtre la **columna** Operaciones para mostrar los registros de actividades específicas. Para obtener una lista de la mayoría de las operaciones que corresponden a una actividad que se puede buscar en la herramienta de búsqueda del registro de auditoría en el Centro de cumplimiento de Microsoft 365, vea la sección "Actividades auditadas" en Buscar en el registro de [auditoría](search-the-audit-log-in-security-and-compliance.md#audited-activities).

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 35538ab792fb766ec58cdaca95262888bb483c6b3567b9352792803af1ea64e5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3f3eef756d37bf1552120a05e351c844b37b863b
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874231"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506543"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Campos de la API de Microsoft Defender para detecciones de puntos de conexión
 
@@ -54,20 +54,20 @@ Los números de campo coinciden con los números de las imágenes siguientes.
 > |Etiqueta del portal|Nombre del campo SIEM|Campo ArcSight|Valor de ejemplo|Descripción|
 > |---|---|---|---|---|
 > |1|AlertTitle|name|Antivirus de Microsoft Defender detectado malware de alta gravedad de "Mikatz"|Valor disponible para cada detección.|
-> |2|Severity|deviceSeverity|Alto|Valor disponible para cada detección.|
-> |3|Categoría|deviceEventCategory|Malware|Valor disponible para cada detección.|
+> |2|Gravedad|deviceSeverity|Alto|Valor disponible para cada detección.|
+> |3 |Categoría|deviceEventCategory|Malware|Valor disponible para cada detección.|
 > |4 |Origen de detección|sourceServiceName|Antivirus|Antivirus de Microsoft Defender o Defender para endpoint. Valor disponible para cada detección.|
 > |5 |MachineName|sourceHostName|desktop-4a5ngd6|Valor disponible para cada detección.|
 > |6 |FileName|fileName|Robocopy.exe|Disponible para detecciones asociadas a un archivo o proceso.|
 > |7 |FilePath|filePath|C:\Windows\System32\Robocopy.exe|Disponible para detecciones asociadas a un archivo o proceso.|
 > |8 |UserDomain|sourceNtDomain|CONTOSO|Dominio del contexto de usuario que ejecuta la actividad, disponible para detecciones basadas en comportamiento de Defender para endpoint.|
 > |9 |UserName|sourceUserName|liz.bean|El contexto de usuario que ejecuta la actividad, disponible para detecciones basadas en comportamiento de Defender para endpoint.|
-> |10 |Sha1|fileHash|3da065e07b990034e9db7842167f70b63aa5329|Disponible para detecciones asociadas a un archivo o proceso.|
-> |11|Sha256|deviceCustomString6|ebf54f745dc81e1958f75e4ca91d0ab989fc9787bb6b0bf993e2f5|Disponible para detecciones de ANTIVIRUS de Microsoft Defender.|
+> |10|Sha1|fileHash|3da065e07b990034e9db7842167f70b63aa5329|Disponible para detecciones asociadas a un archivo o proceso.|
+> |11 |Sha256|deviceCustomString6|ebf54f745dc81e1958f75e4ca91d0ab989fc9787bb6b0bf993e2f5|Disponible para detecciones de ANTIVIRUS de Microsoft Defender.|
 > |12 |Md5|deviceCustomString5|db979c04a99b96d370988325bb5a8b21|Disponible para detecciones de ANTIVIRUS de Microsoft Defender.|
-> |13|ThreatName|deviceCustomString1|HackTool:Win32/Mikatz!dha|Disponible para detecciones de ANTIVIRUS de Microsoft Defender.|
+> |13 |ThreatName|deviceCustomString1|HackTool:Win32/Mikatz!dha|Disponible para detecciones de ANTIVIRUS de Microsoft Defender.|
 > |14 |IpAddress|sourceAddress|218.90.204.141|Disponible para detecciones asociadas a eventos de red. Por ejemplo, "Comunicación a un destino de red malintencionado".|
-> |15|Url|requestUrl|down.esales360.cn|Disponible para detecciones asociadas a eventos de red. Por ejemplo, "Comunicación a un destino de red malintencionado".|
+> |15 |Url|requestUrl|down.esales360.cn|Disponible para detecciones asociadas a eventos de red. Por ejemplo, "Comunicación a un destino de red malintencionado".|
 > |16 |RemediationIsSuccess|deviceCustomNumber2|TRUE|Disponible para detecciones de ANTIVIRUS de Microsoft Defender. El valor de ArcSight es 1 cuando TRUE y 0 cuando FALSE.|
 > |17 |WasExecutingWhileDetected|deviceCustomNumber1|FALSE|Disponible para detecciones de ANTIVIRUS de Microsoft Defender. El valor de ArcSight es 1 cuando TRUE y 0 cuando FALSE.|
 > |18 |AlertId|externalId|636210704265059241_673569822|Valor disponible para cada detección.|
@@ -79,9 +79,9 @@ Los números de campo coinciden con los números de las imágenes siguientes.
 > ||LogOnUsers|sourceUserId|contoso\liz-bean; contoso\jay-hardee|El dominio y el usuario de los usuarios de inicio de sesión interactivos en el momento del evento. Nota: Para los dispositivos Windows 10 versión 1607, la información del dominio no estará disponible.|
 > ||InternalIPv4List|Sin asignación|192.168.1.7, 10.1.14.1|Lista de direcciones IP internas IPV4 para interfaces de red activas.|
 > ||InternalIPv6List|Sin asignación|fd30:0000:0000:0001:ff4e:003e:0009:000e, FE80:CD00:0000:0CDE:1257:0000:211E:729C|Lista de direcciones IP internas IPV6 para interfaces de red activas.|
-||LinkToMTP|Sin asignación|`https://securitycenter.windows.com/alert/da637370718981685665_16349121`|Valor disponible para cada detección.
-||IncidentLinkToMTP|Sin asignación|`"https://securitycenter.windows.com/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM`|Valor disponible para cada detección.
-||IncidentLinkToWDATP|Sin asignación|`https://securitycenter.windows.com/preferences2/integration/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM`|Valor disponible para cada detección.
+> ||LinkToMTP|Sin asignación|`https://securitycenter.windows.com/alert/da637370718981685665_16349121`|Valor disponible para cada detección.
+> ||IncidentLinkToMTP|Sin asignación|`"https://securitycenter.windows.com/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM`|Valor disponible para cada detección.
+> ||IncidentLinkToWDATP|Sin asignación|`https://securitycenter.windows.com/preferences2/integration/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM`|Valor disponible para cada detección.
 > |Campo interno|LastProcessedTimeUtc|Sin asignación|2017-05-07T01:56:58.9936648Z|Hora en que el evento llegó al back-end. Este campo se puede usar al establecer el parámetro de solicitud para el intervalo de tiempo que se recuperan las detecciones.|
 > ||No forma parte del esquema|deviceVendor||Valor estático en la asignación de ArcSight: 'Microsoft'.|
 > ||No forma parte del esquema|deviceProduct||Valor estático en la asignación de ArcSight: "ATP de Microsoft Defender".|

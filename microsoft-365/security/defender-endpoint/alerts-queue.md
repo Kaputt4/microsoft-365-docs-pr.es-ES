@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 478495601673a92075366d4497ac35f40c84172468b44926546d05c7b3b02edb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a9b483230cbd2406d11709844a62c150bce48731
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794476"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508111"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 
@@ -38,12 +38,12 @@ La **cola De alertas** muestra una lista de alertas marcadas desde dispositivos 
 > [!NOTE]
 > La cola de alertas se reduce considerablemente con la investigación automatizada y la corrección, lo que permite a los expertos en operaciones de seguridad centrarse en amenazas más sofisticadas y otras iniciativas de alto valor. Cuando una alerta contiene una entidad compatible para la investigación automatizada (por ejemplo, un archivo) en un dispositivo que tiene un sistema operativo compatible, se puede iniciar una investigación y corrección automatizadas. Para obtener más información sobre las investigaciones automatizadas, vea [Overview of Automated investigations](automated-investigations.md).
 
-Hay varias opciones entre las que puede elegir para personalizar la vista de cola de alertas. 
+Hay varias opciones entre las que puede elegir para personalizar la vista de cola de alertas.
 
 En la navegación superior puede:
 
 - Seleccionar vista agrupada o vista de lista
-- Personalizar columnas para agregar o quitar columnas 
+- Personalizar columnas para agregar o quitar columnas
 - Seleccionar los elementos que se mostrarán por página
 - Navegar entre páginas
 - Aplicar filtros
@@ -54,14 +54,14 @@ En la navegación superior puede:
 
 Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener una vista más centrada de las alertas.
 
-### <a name="severity"></a>Severity
+### <a name="severity"></a>Gravedad
 
-Gravedad de alerta | Descripción
-:---|:---
-Alto </br>(Rojo) | Alertas que se ven comúnmente asociadas con amenazas persistentes avanzadas (APT). Estas alertas indican un alto riesgo debido a la gravedad del daño que pueden causar en los dispositivos. Algunos ejemplos son: actividades de herramientas de robo de credenciales, actividades de ransomware no asociadas con ningún grupo, manipulación de sensores de seguridad o cualquier actividad malintencionada indicativa de un adversario humano.
-Medio </br>(Naranja) | Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
-Bajo </br>(Amarillo) | Alertas sobre amenazas asociadas con malware frecuente. Por ejemplo, herramientas de piratería, herramientas de piratería no malware, como ejecutar comandos de exploración, borrar registros, etc., que a menudo no indican una amenaza avanzada dirigida a la organización. También podría venir de una prueba de herramienta de seguridad aislada por un usuario de la organización.
-Informativo </br>(Gris) | Alertas que podrían no considerarse nocivas para la red, pero que pueden aumentar el conocimiento de la seguridad de la organización en posibles problemas de seguridad.
+Gravedad de alerta|Descripción
+---|---
+Alto <br> (Rojo)|Alertas que se ven comúnmente asociadas con amenazas persistentes avanzadas (APT). Estas alertas indican un alto riesgo debido a la gravedad del daño que pueden causar en los dispositivos. Algunos ejemplos son: actividades de herramientas de robo de credenciales, actividades de ransomware no asociadas con ningún grupo, manipulación de sensores de seguridad o cualquier actividad malintencionada indicativa de un adversario humano.
+Medio <br> (Naranja)|Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
+Bajo <br> (Amarillo)|Alertas sobre amenazas asociadas con malware frecuente. Por ejemplo, herramientas de piratería, herramientas de piratería no malware, como ejecutar comandos de exploración, borrar registros, etc., que a menudo no indican una amenaza avanzada dirigida a la organización. También podría venir de una prueba de herramienta de seguridad aislada por un usuario de la organización.
+Informativo <br> (Gris)|Alertas que podrían no considerarse nocivas para la red, pero que pueden aumentar el conocimiento de la seguridad de la organización en posibles problemas de seguridad.
 
 #### <a name="understanding-alert-severity"></a>Descripción de la gravedad de la alerta
 
@@ -82,26 +82,26 @@ Por ejemplo:
 
 Hemos redefinido las categorías de alertas para alinearlas con las [tácticas](https://attack.mitre.org/tactics/enterprise/) de ataque empresarial en la matriz DE [ATT de MITRE&CK](https://attack.mitre.org/). Los nuevos nombres de categoría se aplican a todas las alertas nuevas. Las alertas existentes conservarán los nombres de categoría anteriores.
 
-En la tabla siguiente se enumeran las categorías actuales y cómo se asignan generalmente a categorías anteriores. 
+En la tabla siguiente se enumeran las categorías actuales y cómo se asignan generalmente a categorías anteriores.
 
-| Nueva categoría       | Nombre de categoría api   | Componente o actividad de amenazas detectadas                                                                                                 |
-|----------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Colección           | Colección          | Localización y recopilación de datos para exfiltración                                                                                         |
-| Comando y control  | CommandAndControl   | Conexión a una infraestructura de red controlada por atacantes para retransmitir datos o recibir comandos                                          |
-| Acceso a credenciales    | CredentialAccess    | Obtener credenciales válidas para extender el control sobre dispositivos y otros recursos de la red                                       |
-| Evasión de defensa      | DefenseEvasion      | Evitar controles de seguridad, por ejemplo, desactivar aplicaciones de seguridad, eliminar implantes y ejecutar rootkits                        |
-| Descubrimiento            | Descubrimiento           | Recopilación de información sobre dispositivos y recursos importantes, como equipos de administrador, controladores de dominio y servidores de archivos  |
-| Ejecución            | Ejecución           | Iniciar herramientas de atacante y código malintencionado, incluidos los RAT y puertas traseras                                                             |
-| Exfiltración         | Exfiltración        | Extraer datos de la red a una ubicación externa controlada por atacantes                                                         |
-| Exploit              | Exploit             | Código de vulnerabilidad y posible actividad de explotación                                                                                       |
-| Acceso inicial       | InitialAccess       | Obtener una entrada inicial a la red de destino, que suele implicar la suposición de contraseñas, vulnerabilidades de seguridad o correos electrónicos de suplantación de identidad                      |
-| Movimiento lateral     | LateralMovement     | Mover entre dispositivos de la red de destino para alcanzar recursos críticos o obtener persistencia de red                                |
-| Malware              | Malware             | Puertas traseras, troyanos y otros tipos de código malintencionado                                                                                 |
-| Persistencia          | Persistencia         | Creación de puntos de extensibilidad de inicio automático (ASEP) para permanecer activo y sobrevivir a los reinicios del sistema                                        |
-| Escalamiento de privilegios | PrivilegeEscalation | Obtener niveles de permisos más altos para el código ejecutándose en el contexto de un proceso o cuenta con privilegios                         |
-| Ransomware           | Ransomware          | Malware que cifra archivos y extorsiona el pago para restaurar el acceso                                                                     |
-| Actividad sospechosa  | SuspiciousActivity  | Actividad atípica que podría ser actividad de malware o parte de un ataque                                                                 |
-| Software no deseado    | UnwantedSoftware    | Aplicaciones y aplicaciones de baja reputación que afectan a la productividad y a la experiencia del usuario; detectados como aplicaciones potencialmente no deseadas (PUA) |
+|Nueva categoría|Nombre de categoría api|Componente o actividad de amenazas detectadas|
+|---|---|---|
+|Colección|Colección|Localización y recopilación de datos para la exfiltración.|
+|Comando y control|CommandAndControl|Conectarse a una infraestructura de red controlada por el atacante para retransmitir datos o recibir comandos.|
+|Acceso a credenciales|CredentialAccess|Obtener credenciales válidas para extender el control sobre los dispositivos y otros recursos de la red.|
+|Evasión de defensa|DefenseEvasion|Evitando controles de seguridad, por ejemplo, desactivando aplicaciones de seguridad, eliminando implantes y ejecutando rootkits.|
+|Descubrimiento|Descubrimiento|Recopilación de información sobre dispositivos y recursos importantes, como equipos de administrador, controladores de dominio y servidores de archivos.|
+|Ejecución|Ejecución|Iniciar herramientas de atacante y código malintencionado, incluidos LOS RAT y puertas traseras.|
+|Exfiltración|Exfiltración|Extraer datos de la red a una ubicación externa controlada por atacantes.|
+|Exploit|Exploit|Código de vulnerabilidad y posible actividad de explotación.|
+|Acceso inicial|InitialAccess|Obtener una entrada inicial a la red de destino, normalmente implicando la suposición de contraseñas, vulnerabilidades de seguridad o correos electrónicos de suplantación de identidad.|
+|Movimiento lateral|LateralMovement|Mover entre dispositivos de la red de destino para alcanzar recursos críticos o obtener persistencia de red.|
+|Malware|Malware|Puertas traseras, troyanos y otros tipos de código malintencionado.|
+|Persistencia|Persistencia|Creación de puntos de extensibilidad de inicio automático (ASEP) para permanecer activo y sobrevivir a los reinicios del sistema.|
+|Escalamiento de privilegios|PrivilegeEscalation|Obtener niveles de permisos más altos para el código ejecutándose en el contexto de un proceso o cuenta con privilegios.|
+|Ransomware|Ransomware|Malware que cifra archivos y extorsiona el pago para restaurar el acceso.|
+|Actividad sospechosa|SuspiciousActivity|Actividad atípica que podría ser actividad de malware o parte de un ataque.|
+|Software no deseado|UnwantedSoftware|Aplicaciones y aplicaciones de baja reputación que afectan a la productividad y a la experiencia del usuario; detectados como aplicaciones potencialmente no deseadas (PUA).|
 
 ### <a name="status"></a>Estado
 
@@ -123,21 +123,21 @@ Puede elegir entre mostrar las alertas que se le han asignado o la automatizaci�
 
 Seleccione el origen que desencadenó la detección de alertas. Expertos en amenazas de Microsoft los participantes de vista previa ahora pueden filtrar y ver detecciones desde el nuevo servicio de búsqueda administrado por expertos en amenazas.
 
->[!NOTE]
->El filtro Antivirus solo aparecerá si los dispositivos usan Antivirus de Microsoft Defender como el producto antimalware de protección en tiempo real predeterminado.
+> [!NOTE]
+> El filtro Antivirus solo aparecerá si los dispositivos usan Antivirus de Microsoft Defender como el producto antimalware de protección en tiempo real predeterminado.
 
-| Origen de detección                  | Valor de API                  |
-|-----------------------------------|----------------------------|
-| Sensores de terceros                 | ThirdPartySensors          |
-| Antivirus                         | WindowsDefenderAv          |
-| Investigación automatizada           | AutomatedInvestigation     |
-| Detección personalizada                  | CustomDetection            |
-| TI personalizada                         | CustomerTI                 |
-| EDR                               | WindowsDefenderAtp         |
-| Microsoft 365 Defender            | MTP                        |
-| Microsoft Defender para Office 365 | OfficeATP                  |
-| Expertos en amenazas de Microsoft          | ThreatExperts              |
-| SmartScreen                       | WindowsDefenderSmartScreen |
+|Origen de detección|Valor de API|
+|---|---|
+|Sensores de terceros|ThirdPartySensors|
+|Antivirus|WindowsDefenderAv|
+|Investigación automatizada|AutomatedInvestigation|
+|Detección personalizada|CustomDetection|
+|TI personalizada|CustomerTI|
+|EDR|WindowsDefenderAtp|
+|Microsoft 365 Defender|MTP|
+|Microsoft Defender para Office 365|OfficeATP|
+|Expertos en amenazas de Microsoft|ThreatExperts|
+|SmartScreen|WindowsDefenderSmartScreen|
 
 ### <a name="os-platform"></a>Plataforma del sistema operativo
 
@@ -145,7 +145,7 @@ Limite la vista de cola de alertas seleccionando la plataforma del sistema opera
 
 ### <a name="device-group"></a>Grupo de dispositivos
 
-Si tienes grupos de dispositivos específicos que te interesan comprobar, puedes seleccionar los grupos para limitar la vista de cola de alertas. 
+Si tienes grupos de dispositivos específicos que te interesan comprobar, puedes seleccionar los grupos para limitar la vista de cola de alertas.
 
 ### <a name="associated-threat"></a>Amenaza asociada
 

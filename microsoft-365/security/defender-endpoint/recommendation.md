@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bc00136b3ca404efc2a39eb8cf7bac6dcbc84d2e
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: d3c29e5112a2cf68452bcb830681dac853eb8e1b
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502032"
+ms.locfileid: "58507691"
 ---
 # <a name="recommendation-resource-type"></a>Tipo de recurso Recomendación
 
@@ -36,41 +36,51 @@ ms.locfileid: "58502032"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="methods"></a>Métodos
-Método |Tipo de valor devuelto |Descripción
-:---|:---|:---
-[Enumerar todas las recomendaciones](get-all-recommendations.md) | Colección de recomendaciones | Recupera una lista de todas las recomendaciones de seguridad que afectan a la organización
-[Obtener recomendación por identificador](get-recommendation-by-id.md) | Recomendación | Recupera una recomendación de seguridad por su identificador
-[Obtener software de recomendación](list-recommendation-software.md)| [Software](software.md) | Recupera una recomendación de seguridad relacionada con un software específico
-[Obtener dispositivos de recomendación](get-recommendation-machines.md)|Colección MachineRef | Recupera una lista de dispositivos asociados con la recomendación de seguridad
-[Obtener vulnerabilidades de recomendación](get-recommendation-vulnerabilities.md) | [Colección Vulnerability](vulnerability.md) | Recupera una lista de vulnerabilidades asociadas con la recomendación de seguridad
 
+<br>
+
+****
+
+|Método|Tipo de valor devuelto|Descripción|
+|---|---|---|
+|[Enumerar todas las recomendaciones](get-all-recommendations.md)|Colección de recomendaciones|Recupera una lista de todas las recomendaciones de seguridad que afectan a la organización|
+|[Obtener recomendación por identificador](get-recommendation-by-id.md)|Recomendación|Recupera una recomendación de seguridad por su identificador|
+|[Obtener software de recomendación](list-recommendation-software.md)|[Software](software.md)|Recupera una recomendación de seguridad relacionada con un software específico|
+|[Obtener dispositivos de recomendación](get-recommendation-machines.md)|Colección MachineRef|Recupera una lista de dispositivos asociados con la recomendación de seguridad|
+|[Obtener vulnerabilidades de recomendación](get-recommendation-vulnerabilities.md)|[Colección Vulnerability](vulnerability.md)|Recupera una lista de vulnerabilidades asociadas con la recomendación de seguridad|
+|
 
 ## <a name="properties"></a>Propiedades
-Propiedad |   Tipo   |   Descripción
-:---|:---|:---
-id | Cadena | Id. de recomendación
-productName | cadena | Nombre de software relacionado  
-recommendationName | Cadena | Nombre de recomendación
-Debilidades | Long | Número de vulnerabilidades detectadas
-Proveedor | Cadena | Nombre de proveedor relacionado
-recommendedVersion | Cadena | Versión recomendada
-recommendedProgram | Cadena | Programa recomendado
-recommendedVendor | Cadena | Proveedor recomendado
-recommendationCategory | Cadena | Categoría de recomendación. Los valores posibles son: "Accounts", "Application", "Network", "OS", "SecurityControls"
-subCategory | Cadena | Subcategoría recomendación
-severityScore | Doble | Posible impacto de la configuración en la puntuación segura de Microsoft para dispositivos de la organización (1-10)
-publicExploit | Boolean | La vulnerabilidad pública está disponible 
-activeAlert | Boolean | La alerta activa está asociada con esta recomendación
-associatedThreats | Colección de cadenas | El informe de análisis de amenazas está asociado a esta recomendación
-remediationType | Cadena | Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"
-Estado | Enum | Estado de excepción de recomendación. Los valores posibles son: "Active" y "Exception"
-configScoreImpact | Doble | Impacto de puntuación segura de Microsoft para dispositivos
-exposureImpact | Doble | Impacto de la puntuación de exposición
-totalMachineCount | Long | Número de dispositivos instalados
-exposedMachinesCount | Long | Número de dispositivos instalados expuestos a vulnerabilidades
-nonProductivityImpactedAssets | Long | Número de dispositivos que no se ven afectados  
-relatedComponent | Cadena |  Componente de software relacionado
+
+<br>
+
+****
+
+|Propiedad|Tipo|Descripción|
+|---|---|---|
+|id|Cadena|Id. de recomendación|
+|productName|cadena|Nombre de software relacionado|
+|recommendationName|Cadena|Nombre de recomendación|
+|Debilidades|Long|Número de vulnerabilidades detectadas|
+|Proveedor|Cadena|Nombre de proveedor relacionado|
+|recommendedVersion|Cadena|Versión recomendada|
+|recommendedProgram|Cadena|Programa recomendado|
+|recommendedVendor|Cadena|Proveedor recomendado|
+|recommendationCategory|Cadena|Categoría de recomendación. Los valores posibles son: "Accounts", "Application", "Network", "OS", "SecurityControls"|
+|subCategory|Cadena|Subcategoría recomendación|
+|severityScore|Doble|Posible impacto de la configuración en la puntuación segura de Microsoft para dispositivos de la organización (1-10)|
+|publicExploit|Boolean|La vulnerabilidad pública está disponible|
+|activeAlert|Boolean|La alerta activa está asociada con esta recomendación|
+|associatedThreats|Colección de cadenas|El informe de análisis de amenazas está asociado a esta recomendación|
+|remediationType|Cadena|Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"|
+|Estado|Enum|Estado de excepción de recomendación. Los valores posibles son: "Active" y "Exception"|
+|configScoreImpact|Doble|Impacto de puntuación segura de Microsoft para dispositivos|
+|exposureImpact|Doble|Impacto de la puntuación de exposición|
+|totalMachineCount|Long|Número de dispositivos instalados|
+|exposedMachinesCount|Long|Número de dispositivos instalados expuestos a vulnerabilidades|
+|nonProductivityImpactedAssets|Long|Número de dispositivos que no se ven afectados|
+|relatedComponent|Cadena|Componente de software relacionado|
+|

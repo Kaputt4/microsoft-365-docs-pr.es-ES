@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2c58fb68ec96f802621c3b4c3a25d4174fc6017dd7f2855850fbcd6ea052d82d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c70a21ad3e47b2e2347c3f88ba276b3e9fd9801
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863828"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506483"
 ---
 # <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 
@@ -35,10 +35,9 @@ ms.locfileid: "53863828"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-La detección se puede configurar para que esté en modo estándar o básico. Usa la opción estándar para buscar activamente dispositivos en tu red, lo que garantizará mejor la detección de puntos de conexión y proporcionará una clasificación de dispositivos más enriquecte. 
+La detección se puede configurar para que esté en modo estándar o básico. Usa la opción estándar para buscar activamente dispositivos en tu red, lo que garantizará mejor la detección de puntos de conexión y proporcionará una clasificación de dispositivos más enriquecte.
 
 Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puedes habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente, solo dispositivos Windows 10) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo.
 
@@ -55,17 +54,18 @@ Siga los siguientes pasos de configuración en Microsoft 365 de seguridad:
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>Excluir dispositivos de ser sondeados activamente en la detección estándar
 
-Si hay dispositivos en la red que no deben examinarse activamente (por ejemplo, dispositivos usados como almacenes de miel para otra herramienta de seguridad), también puede definir una lista de exclusiones para evitar que se puedan examinar. Ten en cuenta que los dispositivos aún se pueden detectar mediante el modo de detección básico. Esos dispositivos se detectarán pasivamente, pero no se sondean activamente. 
+Si hay dispositivos en la red que no deben examinarse activamente (por ejemplo, dispositivos usados como almacenes de miel para otra herramienta de seguridad), también puede definir una lista de exclusiones para evitar que se puedan examinar. Ten en cuenta que los dispositivos aún se pueden detectar mediante el modo de detección básico. Esos dispositivos se detectarán pasivamente, pero no se sondean activamente.
 
 ## <a name="select-networks-to-monitor"></a>Seleccionar redes para supervisar
- Microsoft Defender para endpoint analiza una red y determina si es una red corporativa que debe supervisarse o una red no corporativa que se puede omitir. Las redes corporativas suelen elegirse para supervisarse. Sin embargo, puedes invalidar esta decisión si eliges supervisar redes no corporativas donde se encuentran dispositivos incorporados. 
 
-Puedes configurar dónde se puede realizar la detección de dispositivos especificando qué redes supervisar. Cuando se supervisa una red, se puede realizar la detección de dispositivos en ella. 
+ Microsoft Defender para endpoint analiza una red y determina si es una red corporativa que debe supervisarse o una red no corporativa que se puede omitir. Las redes corporativas suelen elegirse para supervisarse. Sin embargo, puedes invalidar esta decisión si eliges supervisar redes no corporativas donde se encuentran dispositivos incorporados.
 
-En la página Redes supervisadas se muestra una lista de redes en las que se puede realizar la detección **de** dispositivos. 
+Puedes configurar dónde se puede realizar la detección de dispositivos especificando qué redes supervisar. Cuando se supervisa una red, se puede realizar la detección de dispositivos en ella.
+
+En la página Redes supervisadas se muestra una lista de redes en las que se puede realizar la detección **de** dispositivos.
 
 > [!NOTE]
-> Solo las 50 redes principales (según el número de dispositivos asociados) estarán disponibles en la lista de red. 
+> Solo las 50 redes principales (según el número de dispositivos asociados) estarán disponibles en la lista de red.
 
 La lista de redes supervisadas se ordena en función del número total de dispositivos vistos en la red en los últimos 7 días.
 
@@ -73,7 +73,7 @@ Puede aplicar un filtro para ver cualquiera de los siguientes estados de detecci
 
 - **Redes supervisadas:** redes donde se realiza la detección de dispositivos.
 - **Redes ignoradas:** se omitirá esta red y no se realizará la detección de dispositivos en ella.
-- **All:** se mostrarán las redes supervisadas e ignoradas. 
+- **All:** se mostrarán las redes supervisadas e ignoradas.
 
 ### <a name="configure-the-network-monitor-state"></a>Configurar el estado del monitor de red
 
@@ -88,11 +88,12 @@ Elegir la clasificación de detección inicial significa aplicar el estado prede
 5. Elija si desea supervisar, omitir o usar la clasificación de detección inicial.
 
     > [!WARNING]
-    > - La elección de supervisar una red que no se identificó por Microsoft Defender para Endpoint como una red corporativa puede provocar la detección de dispositivos fuera de la red corporativa y, por lo tanto, detectar dispositivos hogareños u otros dispositivos no corporativos. 
+    >
+    > - La elección de supervisar una red que no se identificó por Microsoft Defender para Endpoint como una red corporativa puede provocar la detección de dispositivos fuera de la red corporativa y, por lo tanto, detectar dispositivos hogareños u otros dispositivos no corporativos.
     > - Si se elige omitir una red, se dejará de supervisar y detectar dispositivos en esa red. Los dispositivos que ya se detectaron no se quitarán del inventario, pero ya no se actualizarán y los detalles se conservarán hasta que expire el período de retención de datos de Defender for Endpoint.
     > - Antes de elegir supervisar redes no corporativas, debe asegurarse de que tiene permiso para hacerlo. <br>
 
-6. Confirme que desea realizar el cambio. 
+6. Confirme que desea realizar el cambio.
 
 ## <a name="explore-devices-in-the-network"></a>Explorar dispositivos en la red
 
@@ -101,12 +102,12 @@ Puede usar la siguiente consulta de búsqueda avanzada para obtener más context
 ```kusto
 DeviceNetworkInfo
 | where Timestamp > ago(7d)
-| summarize arg_max(Timestamp, *) by DeviceId
 | where ConnectedNetworks  != ""
 | extend ConnectedNetworksExp = parse_json(ConnectedNetworks)
 | mv-expand bagexpansion = array ConnectedNetworks=ConnectedNetworksExp
 | extend NetworkName = tostring(ConnectedNetworks ["Name"]), Description = tostring(ConnectedNetworks ["Description"]), NetworkCategory = tostring(ConnectedNetworks ["Category"])
 | where NetworkName == "<your network name here>"
+| summarize arg_max(Timestamp, *) by DeviceId
 ```
 
 ## <a name="get-information-on-device"></a>Obtener información sobre el dispositivo
@@ -116,13 +117,10 @@ Puedes usar la siguiente consulta de búsqueda avanzada para obtener la informac
 ```kusto
 DeviceInfo
 | where DeviceName == "<device name here>" and isnotempty(OSPlatform)
-| summarize arg_max(Timestamp, *) by DeviceId 
+| summarize arg_max(Timestamp, *) by DeviceId
 ```
 
-
-
-
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Información general de la detección de dispositivo](device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

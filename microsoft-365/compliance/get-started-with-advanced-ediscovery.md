@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar Advanced eDiscovery para que pueda empezar a crear y administrar casos. También describe las suscripciones y licencias de Microsoft necesarias. Después de completar algunos pasos rápidos, la Advanced eDiscovery está lista para usarse.
-ms.openlocfilehash: 1b2f7a26c96af40f28ef69cfc70d07c90b229dc86b4a78df68247c30ab4ff323
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb54b43e4361750f66371f224cd7bf6bce58d604
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814140"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508027"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>Configurar Microsoft 365 Advanced eDiscovery
 
@@ -42,7 +42,7 @@ Las licencias Advanced eDiscovery requieren la suscripción de la organización 
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Paso 2: Asignar permisos de exhibición de documentos electrónicos
 
-Para obtener Advanced eDiscovery o agregar como miembro de un Advanced eDiscovery caso, se deben asignar los permisos adecuados a un usuario. Específicamente, un usuario debe agregarse como miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de seguridad & cumplimiento. Los miembros de este grupo de roles pueden crear y administrar Advanced eDiscovery casos. Pueden agregar y quitar miembros, poner a los custodios y ubicaciones de contenido en espera, administrar notificaciones de retención legal, crear y editar búsquedas asociadas en un caso, agregar resultados de búsqueda a un conjunto de revisión, analizar datos de un conjunto de revisión y exportar y descargar desde un caso Advanced eDiscovery.
+Para obtener Advanced eDiscovery o agregar como miembro de un Advanced eDiscovery caso, se deben asignar los permisos adecuados a un usuario. Específicamente, un usuario debe agregarse como miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365. Los miembros de este grupo de roles pueden crear y administrar Advanced eDiscovery casos. Pueden agregar y quitar miembros, poner a los custodios y ubicaciones de contenido en espera, administrar notificaciones de retención legal, crear y editar búsquedas asociadas en un caso, agregar resultados de búsqueda a un conjunto de revisión, analizar datos de un conjunto de revisión y exportar y descargar desde un caso Advanced eDiscovery.
 
 Siga estos pasos para agregar usuarios al grupo de roles administrador de exhibición de documentos electrónicos:
 
@@ -87,6 +87,6 @@ Para obtener más información acerca de cómo configurar y usar el modelo de de
 > [!NOTE]
 > Este es un paso opcional que puede realizar en cualquier momento. No implementar el modelo de detección de privilegios abogado-cliente no le impide crear y usar Advanced eDiscovery casos.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de configurar Advanced eDiscovery, está listo para [crear un caso](create-and-manage-advanced-ediscoveryv2-case.md).

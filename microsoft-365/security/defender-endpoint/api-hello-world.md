@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5081822d31d3e127dbe6511719afdaddd6f6b4fdf078bf5c6e09aee4caff725e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ec2057eefc5cb1e8ce59138a1f5a15b7ed0fdd01
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884946"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508219"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender para la API de punto de conexión: Hello World
 
@@ -43,18 +43,21 @@ ms.locfileid: "53884946"
 ## <a name="get-alerts-using-a-simple-powershell-script"></a>Obtener alertas con un script de PowerShell simple
 
 ### <a name="how-long-it-takes-to-go-through-this-example"></a>¿Cuánto tiempo se tarda en pasar por este ejemplo?
+
 Solo se tardan 5 minutos en dos pasos:
+
 - Registro de la aplicación
 - Usar ejemplos: solo requiere copiar y pegar un script corto de PowerShell
 
 ### <a name="do-i-need-a-permission-to-connect"></a>¿Necesito un permiso para conectarme?
+
 Para la fase de registro de aplicaciones, debe tener un rol de administrador **global** en el espacio empresarial Azure Active Directory (Azure AD).
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
 
 1. Inicie sesión en [Azure](https://portal.azure.com) con el **usuario administrador** global.
 
-2. Vaya a **Azure Active Directory**  >  **registros de aplicaciones** Nuevo  >  **registro**.
+2. Vaya a **Azure Active Directory** \> **registros de aplicaciones** Nuevo \> **registro**.
 
    ![Imagen de Microsoft Azure navegación al registro de aplicaciones](images/atp-azure-new-app2.png)
 
@@ -62,13 +65,13 @@ Para la fase de registro de aplicaciones, debe tener un rol de administrador **g
 
 4. Permitir que la aplicación tenga acceso a Defender for Endpoint y asignarle el permiso **"Leer todas las** alertas":
 
-   - En la página de la aplicación, haga clic en Permisos de **API** Agregar API de permisos que mi organización usa > tipo  >    >   **WindowsDefenderATP** y haga clic en **WindowsDefenderATP**.
+   - En la página de la aplicación, haga clic en Permisos de **API** Agregar API de permisos que mi organización usa > tipo \>  \>  **WindowsDefenderATP** y haga clic en **WindowsDefenderATP**.
 
    - **Nota:** WindowsDefenderATP no aparece en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para verlo aparecer.
 
    ![Imagen de acceso api y selección de API1](images/add-permission.png)
 
-   - Elija **Permisos de aplicación**  >  **Alert.Read.All** > Haga clic en Agregar **permisos**
+   - Elija **Permisos de aplicación** \> **Alert.Read.All** > Haga clic en Agregar **permisos**
 
    ![Imagen de acceso a la API y selección de API2](images/application-permissions.png)
 

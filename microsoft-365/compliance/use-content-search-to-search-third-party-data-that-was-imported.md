@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido para buscar elementos importados a buzones de correo en Microsoft 365 desde un origen de datos de terceros mediante la creación de consultas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3f493640ecb1e0e0bb03ce315055e2faac37d0a5a05b47711c29d68e13a46a6c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afed5e519b789baffca4f16b95c842ccfe575b4f
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891672"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507643"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Usar la búsqueda de contenido para buscar datos de terceros importados por un conector de asociado personalizado
 
-Puede usar la herramienta [de](content-search.md) exhibición de documentos electrónicos de búsqueda de contenido en el Centro de seguridad y cumplimiento de & para buscar elementos importados a buzones de correo en Microsoft 365 de un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos de terceros importados o puede crear una consulta para buscar elementos de datos de terceros específicos. Además, también puede crear una directiva de retención basada en consultas o una retención de exhibición de documentos electrónicos basada en consultas para conservar datos de terceros.
+Puede usar la herramienta [de](content-search.md) exhibición de documentos electrónicos de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar elementos importados a buzones de correo en Microsoft 365 de un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos de terceros importados o puede crear una consulta para buscar elementos de datos de terceros específicos. Además, también puede crear una directiva de retención basada en consultas o una retención de exhibición de documentos electrónicos basada en consultas para conservar datos de terceros.
   
 Para obtener más información sobre cómo trabajar con un partner para importar datos de terceros y una lista de los tipos de datos de terceros que puede importar a Microsoft 365, vea Trabajar con un partner para archivar datos de terceros en [Office 365](work-with-partner-to-archive-third-party-data.md).
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c824afa68b42639a82d46d70f13f4a70b266a0492f1d41ebf463cb7975bff7f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d52fe03786e4fff94ca08fdc7e5c7951a0d6e33
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829872"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506512"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Búsqueda proactiva de amenazas con búsqueda avanzada
 
@@ -61,13 +61,12 @@ Le recomendamos que siga los pasos siguientes para empezar a trabajar rápidamen
 |**Obtenga información sobre cómo usar los resultados de la consulta**|Obtenga información sobre gráficos y diversas formas de ver o exportar los resultados. Explore cómo puede ajustar rápidamente las consultas y profundizar para obtener información más enriquecente.|[Trabajar con resultados de consulta](advanced-hunting-query-results.md)|
 |**Entender el esquema**|Obtenga una visión adecuada y de alto nivel de las tablas en el esquema y sus columnas. Obtenga información sobre dónde buscar datos al crear las consultas.|[Referencia del esquema](advanced-hunting-schema-reference.md)|
 |**Usar consultas predefinidas**|Explore colecciones de consultas predefinidas que cubren diferentes escenarios de búsqueda de amenazas.|[Consultas compartidas](advanced-hunting-shared-queries.md)|
-|**Optimizar consultas y controlar errores**|Comprenda cómo crear consultas eficientes y libres de errores.|- [Procedimientos recomendados de consulta](advanced-hunting-best-practices.md)<br>- [Controlar errores](advanced-hunting-errors.md)|
-|**Obtener la cobertura más completa**|Use la configuración de auditoría para proporcionar una mejor cobertura de datos para su organización.|- [Ampliar la cobertura de búsqueda avanzada](advanced-hunting-extend-data.md)|
-|**Ejecutar una investigación rápida**|Ejecute rápidamente una consulta de búsqueda avanzada para investigar la actividad sospechosa.|- [Búsqueda rápida de información de entidad o evento con *go hunt*](advanced-hunting-go-hunt.md)|
-|**Contener amenazas y solucionar compromisos**|Responder a los ataques mediante la quarantining de archivos, la restricción de la ejecución de aplicaciones y otras acciones|- [Realizar acciones en los resultados avanzados de la consulta de búsqueda](advanced-hunting-take-action.md)|
-|**Crear reglas de detección personalizadas**|Comprenda cómo puede usar consultas de búsqueda avanzadas para desencadenar alertas y realizar acciones de respuesta automáticamente.|- [Introducción a las detecciones personalizadas](overview-custom-detections.md)<br>- [Reglas de detección personalizadas](custom-detection-rules.md)|
+|**Optimizar consultas y controlar errores**|Comprenda cómo crear consultas eficientes y libres de errores.|[Procedimientos recomendados de consulta](advanced-hunting-best-practices.md) <p> [Controlar los errores](advanced-hunting-errors.md)|
+|**Obtener la cobertura más completa**|Use la configuración de auditoría para proporcionar una mejor cobertura de datos para su organización.|[Ampliar la cobertura de búsqueda avanzada](advanced-hunting-extend-data.md)|
+|**Ejecutar una investigación rápida**|Ejecute rápidamente una consulta de búsqueda avanzada para investigar la actividad sospechosa.|[Búsqueda rápida de información de entidad o evento con *go hunt*](advanced-hunting-go-hunt.md)|
+|**Contener amenazas y solucionar compromisos**|Responder a los ataques mediante la quarantining de archivos, la restricción de la ejecución de aplicaciones y otras acciones|[Realizar acciones en los resultados avanzados de la consulta de búsqueda](advanced-hunting-take-action.md)|
+|**Crear reglas de detección personalizadas**|Comprenda cómo puede usar consultas de búsqueda avanzadas para desencadenar alertas y realizar acciones de respuesta automáticamente.|[Introducción a las detecciones personalizadas](overview-custom-detections.md) <p> [Reglas de detección personalizada](custom-detection-rules.md)|
 |
-
 
 ## <a name="data-freshness-and-update-frequency"></a>Actualización de datos y frecuencia de actualización
 

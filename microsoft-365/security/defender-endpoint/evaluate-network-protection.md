@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f32e6be475ad61b83220a76527b625f2aa06580d6a181cdd8f8133eba2d27211
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: be5cbc03fa75d65d2c3fabbbf42594098d0d9d69
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898422"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507979"
 ---
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
@@ -51,24 +51,31 @@ Habilite la protección de red en modo auditoría para ver qué direcciones IP y
 
 1. Abre Internet Explorer, Google Chrome o cualquier otro explorador de tu elección.
 
-1. Vaya a [https://smartscreentestratings2.net](https://smartscreentestratings2.net).
+2. Vaya a [https://smartscreentestratings2.net](https://smartscreentestratings2.net).
 
 Se permitirá la conexión de red y se mostrará un mensaje de prueba.
 
 ![Notificación de ejemplo que indica Conexión bloqueada: el administrador de TI Seguridad de Windows bloquear esta conexión de red. Póngase en contacto con el servicio de soporte de IT.](images/np-notif.png)
+
+> [!NOTE]
+> Las conexiones de red pueden ser correctas aunque la protección de red bloquee un sitio. Para obtener más información, vea [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en Windows visor de eventos
 
 Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de eventos y filtre el identificador de evento 1125 en el registro de Microsoft-Windows-Windows-Defender/Operational. En la tabla siguiente se enumeran todos los eventos de protección de red.
 
 | Id. de evento | Provide/Source | Descripción |
-|-|-|-|
-|5007 | Windows Defender (operativo) | Evento cuando se cambia la configuración |
-|1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
-|1126 | Windows Defender (operativo) | Evento cuando se bloquea una conexión de red |
+|---|---|---|
+| 5007 | Windows Defender (operativo) | Evento cuando se cambia la configuración |
+| 1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
+| 1126 | Windows Defender (operativo) | Evento cuando se bloquea una conexión de red |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
-* [Protección de red](network-protection.md)
-* [Habilitar la protección de red](enable-network-protection.md)
-* [Solucionar problemas de protección de red](troubleshoot-np.md)
+- [Protección de red](network-protection.md)
+
+- [Protección de red y el protocolo de enlace triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
+- [Habilitar la protección de red](enable-network-protection.md)
+
+- [Solucionar problemas de protección de red](troubleshoot-np.md)

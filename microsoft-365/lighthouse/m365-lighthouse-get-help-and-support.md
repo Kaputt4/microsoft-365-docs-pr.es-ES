@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: For Managed Service Providers (MSP) using Microsoft 365 Lighthouse, learn how to get help and support.
-ms.openlocfilehash: 1b800a9b06cf83ff6014d2377c847204d7aaa568bc7feac65631adec22772ccc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 392eed01b5519c512c89460776ec9f4391b7bda2
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830136"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506435"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Obtenga ayuda y soporte técnico para Microsoft 365 Lighthouse 
 
@@ -30,10 +30,10 @@ ms.locfileid: "53830136"
 
 Hay varias opciones disponibles si necesita ayuda. Comience comprobando el estado actual de los servicios de inquilinos del cliente:
 
-1. En el panel de navegación izquierdo de Microsoft 365 Lighthouse, seleccione **Estado del servicio**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Estado del servicio**.
 2. Ver información detallada acerca de los problemas actuales y anteriores.
 
-Para comprobar el estado actual de los servicios Microsoft 365 Lighthouse inquilinos:
+Para comprobar el estado actual de los servicios de inquilinos de Lighthouse:
 
 1. Vaya a la Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 2. En el panel de navegación izquierdo, seleccione **Estado del** servicio  >  **de mantenimiento**.
@@ -43,7 +43,7 @@ Para comprobar el estado actual de los servicios Microsoft 365 Lighthouse inquil
 Si tiene un problema que no aparece en ninguno de los paneles de mantenimiento del servicio, siga las instrucciones de este artículo para ver las opciones de auto help o para crear una solicitud de servicio.
 
 > [!NOTE]
-> El soporte técnico está limitado al inglés Microsoft 365 Lighthouse está en versión preliminar.
+> El soporte técnico está limitado al inglés mientras Lighthouse está en versión preliminar.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -53,7 +53,7 @@ Si tiene un problema que no aparece en ninguno de los paneles de mantenimiento d
 
 ## <a name="access-help-and-support"></a>Asistencia y soporte técnico de Access
 
-1.  En Microsoft 365 Lighthouse, seleccione **el ?** en la parte superior del portal para abrir **el** panel de ayuda y, a continuación, realice una de las siguientes acciones:
+1.  En Faro, seleccione **el ?** en la parte superior del portal para abrir **el** panel de ayuda y, a continuación, realice una de las siguientes acciones:
     
     -  Si está en la página del portal donde se produjo el problema, seleccione **Mostrar diagnósticos**.
 
@@ -69,7 +69,7 @@ Si tiene un problema que no aparece en ninguno de los paneles de mantenimiento d
     > [!NOTE]
     > Si el panel ¿Cómo podemos **ayudar?** no se abre, tendrá que comunicarse con alguien de su inquilino asociado que tenga permisos de administrador global y pedirle que le ayude.
 
-3.  En el **panel ¿Cómo podemos ayudar?,** escriba una descripción del problema y, a continuación, presione **ENTRAR**. Se recomienda incluir el nombre completo del *producto Microsoft 365 faro* en la descripción para garantizar que los resultados de la búsqueda incluyan artículos de ayuda relevantes.
+3.  En el **panel ¿Cómo podemos ayudar?,** escriba una descripción del problema y, a continuación, presione **ENTRAR**. Se recomienda incluir el nombre completo del *producto Microsoft 365 Lighthouse* en la descripción para garantizar que los resultados de la búsqueda incluyan artículos de ayuda relevantes.
 
 4.  Consulte la lista de artículos recomendados para ver si alguno de ellos ayuda a resolver el problema.
 

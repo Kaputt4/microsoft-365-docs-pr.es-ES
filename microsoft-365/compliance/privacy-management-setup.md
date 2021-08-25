@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo configurar la administración de privacidad para su organización, establecer roles y permisos y configurar opciones importantes.
-ms.openlocfilehash: 2603a41fd4afb83c353854e5bed4c236138dd21d
-ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
+ms.openlocfilehash: 8f45e779cc6ce8deaf20a5f49b597f4ad6139a08
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380217"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507703"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Introducción a la administración de privacidad (versión preliminar)
 
@@ -38,15 +38,13 @@ Para una guía detallada sobre las licencias, vea: [Guía de licencias de Micros
 
 ## <a name="set-up-privacy-management"></a>Configurar la administración de privacidad
 
-Para empezar con la administración de privacidad, primero obtén la licencia de prueba. A continuación, puede iniciar sesión en la administración de privacidad, asignar permisos para los usuarios y revisar la configuración.
+Para empezar con la administración de privacidad, primero obtén tu licencia de prueba gratuita. A continuación, puede iniciar sesión, asignar permisos a los usuarios, revisar la configuración y empezar a usar las características de la administración de privacidad.
 
-### <a name="get-trial-license"></a>Obtener licencia de prueba
+### <a name="get-free-trial-license"></a>Obtener licencia de prueba gratuita
 
 Para empezar con la vista previa pública, el administrador global puede obtener la licencia de prueba de administración de privacidad gratuita del [Centro de administración.](https://aka.ms/purchasem365privacy) Seleccione "Iniciar prueba" para comenzar. La licencia dura un mes y puede renovarla sin costo según sea necesario durante la versión preliminar pública.
 
 Después de obtener la suscripción, espere hasta 30 minutos para que se active. A continuación, vuelva a la administración de privacidad en el centro de cumplimiento para empezar.
-
-### <a name="accept-privacy-management-terms"></a>Aceptar términos de administración de privacidad
 
 Cuando abra por primera vez la administración de privacidad, se le pedirá que confirme que está de acuerdo con los términos y el proceso de evaluación de datos personales ([más información](privacy-management.md#where-privacy-management-identifies-personal-data)). Puede revisar los vínculos proporcionados en su totalidad antes de continuar. Una vez que acepte, puede tardar hasta 24 horas antes de que la administración de privacidad comience a proporcionar información sobre los datos de su organización.
 
@@ -62,11 +60,11 @@ Para obtener más información sobre los grupos de roles y cómo conceder acceso
 
 ### <a name="manage-settings"></a>Administrar la configuración
 
-Se puede Configuración la página a través del engranaje de la esquina superior derecha de las páginas principales de la administración de privacidad. Permite a los administradores de administración de privacidad configurar propiedades esenciales en la administración de privacidad.
+Se puede Configuración la página a través del engranaje de la esquina superior derecha de las páginas principales de la administración de privacidad. Permite a los administradores de administración de privacidad configurar propiedades esenciales en la administración de privacidad, como la configuración global para el anonimización, las notificaciones de correo electrónico y mucho más.
 
 Es posible que desee revisar la configuración predeterminada y realizar los ajustes deseados antes de comenzar. Para obtener más información sobre sus opciones, vea [Administrar la configuración de administración de privacidad.](privacy-management-settings.md)
 
-## <a name="get-initial-data-insights"></a>Obtener información de datos inicial
+## <a name="start-visualizing-your-data"></a>Empezar a visualizar los datos
 
 Después de iniciar sesión en la administración de privacidad, llegarás a la página **Información** general. Esta página proporciona información sobre los datos personales almacenados en su entorno de Microsoft 365 con el fin de ayudarle a detectar rápidamente problemas, identificar indicadores de riesgo y tomar medidas para solucionar problemas. Su información general debe rellenarse con información inicial en las primeras 24 horas de registrarse. A medida que siga usando la administración de privacidad, la página de información general se actualizará para continuar con la información actual.
 
@@ -74,6 +72,10 @@ Para obtener más información sobre los  datos a lo largo del tiempo, la págin
 
 Para obtener más información sobre estas páginas, vea [Buscar y visualizar los datos](privacy-management-data-profile.md).
 
-## <a name="get-started-with-default-policies"></a>Introducción a las directivas predeterminadas
+## <a name="start-managing-risks-with-default-policies"></a>Empezar a administrar riesgos con directivas predeterminadas
 
-La administración de privacidad ayudará a iniciar el proceso de evaluación de datos creando tres directivas con la configuración predeterminada, usando las plantillas para la minimización de datos, la sobreexposición de datos y las transferencias de datos. Estas directivas estarán activas de forma predeterminada, pero no desencadenarán automáticamente los mensajes de notificación ni los mensajes de corrección. Después de la configuración inicial, puede continuar con la creación y personalización de sus propias directivas. Para obtener más información, vea [Create and manage policies](privacy-management-policies.md).
+La administración de privacidad comenzará a evaluar los datos y le ayudará a echar un vistazo a escenarios de riesgo clave mediante la creación de tres directivas con la configuración predeterminada, mediante las plantillas para la minimización de datos, la sobreexposición de datos y las transferencias de datos. Estas directivas estarán activas de forma predeterminada, pero no desencadenarán automáticamente los mensajes de notificación ni los mensajes de corrección. Después de la configuración inicial, puede continuar con la creación y personalización de sus propias directivas. Para obtener más información, vea [Create and manage policies](privacy-management-policies.md).
+
+## <a name="get-started-with-subject-rights-requests"></a>Introducción a las solicitudes de derechos de sujeto
+
+La solución de solicitudes de derechos de sujeto de la administración de privacidad puede ayudarle a administrar las solicitudes de personas que desean revisar o administrar los datos personales que almacena sobre ellos. Para obtener más información sobre el uso de estas características, vea [Manage subject rights requests](privacy-management-subject-rights-requests.md).

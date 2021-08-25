@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo configurar la seguridad del portal.
-ms.openlocfilehash: 1d9dd77fb0d8ea21985b430b00c5366d70fadbf6fc047dbd7735883bb2fb77f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9701ecc002144f791be6caad1e93230be5a83bf0
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891000"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508087"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurar Microsoft 365 Lighthouse seguridad del portal
 
 > [!NOTE]
 > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Proteger el acceso a los datos de los clientes cuando un proveedor de servicios administrados (MSP) ha delegado permisos de acceso a sus inquilinos es una prioridad de ciberseguridad. Microsoft 365 Lighthouse incluye funciones necesarias y opcionales que le ayudarán a configurar Microsoft 365 Lighthouse seguridad del portal.
+Proteger el acceso a los datos de los clientes cuando un proveedor de servicios administrados (MSP) ha delegado permisos de acceso a sus inquilinos es una prioridad de ciberseguridad. Microsoft 365 Lighthouse incluye funciones necesarias y opcionales que le ayudarán a configurar la seguridad del portal de Lighthouse.
 
 ## <a name="set-up-multifactor-authentication-mfa"></a>Configurar la autenticación multifactor (MFA)
 
@@ -36,17 +36,17 @@ Como se mencionó en la entrada de blog [Su pa$$word no importa:](https://techco
 
 > "La contraseña no importa, pero MFA sí. Según nuestros estudios, es más del 99,9 % menos probable que su cuenta se vea comprometida si usa MFA".
 
-Cuando los usuarios Microsoft 365 Lighthouse por primera vez, se les pedirá que configuren MFA si su cuenta de Microsoft 365 aún no la tiene configurada. Los usuarios no podrán obtener acceso a Microsoft 365 Lighthouse hasta que se complete el paso de configuración de MFA requerido. Para obtener más información acerca de los métodos de autenticación, vea Configurar el Microsoft 365 inicio de sesión [para la autenticación multifactor](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
+Cuando los usuarios tengan acceso a Lighthouse por primera vez, se les pedirá que configuren MFA si su cuenta de Microsoft 365 aún no la tiene configurada. Los usuarios no podrán acceder a Lighthouse hasta que se complete el paso de configuración de MFA requerido. Para obtener más información acerca de los métodos de autenticación, vea Configurar el Microsoft 365 inicio de sesión [para la autenticación multifactor](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
 ## <a name="set-up-roles-to-manage-customer-tenants"></a>Configurar roles para administrar inquilinos de clientes
 
-El acceso a los datos y la configuración del inquilino del cliente en Microsoft 365 Lighthouse está restringido a los roles agente de administración y agente de soporte técnico desde el programa Proveedor de soluciones en la nube (CSP).
+El acceso a los datos y la configuración del inquilino del cliente en Lighthouse está restringido a los roles agente de administración y agente de soporte técnico desde el programa proveedor de soluciones en la nube (CSP).
 
 Puede comprobar qué usuarios del espacio empresarial asociado tienen los roles Agente de administración y Agente de soporte técnico revisando las pertenencias a grupos de seguridad en la página [Azure AD – Todos los](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) grupos. Para obtener información sobre cómo asignar roles de programa CSP y otros permisos a los usuarios, vea [Asignar roles y permisos a los usuarios](/partner-center/permissions-overview). Como MSP, si aún no tiene privilegios de acceso delegados a los inquilinos del cliente, obtenga información sobre cómo obtenerlos en el artículo Obtener permisos para administrar el servicio o la suscripción de un [cliente.](/partner-center/customers-revoke-admin-privileges)
 
-En la tabla siguiente se enumeran las distintas Microsoft 365 Lighthouse y los permisos necesarios para ver y actuar en los datos del inquilino del cliente y la configuración de los roles agente de administración y agente de soporte técnico.<br><br>
+En la tabla siguiente se enumeran las distintas páginas de Lighthouse y los permisos necesarios para ver y actuar sobre los datos del inquilino del cliente y la configuración de los roles Agente de administración y Agente de soporte técnico.<br><br>
 
-| Microsoft 365 Lighthouse página | Permisos del agente de administración | Permisos del agente de soporte técnico |
+| Página de Faro | Permisos del agente de administración | Permisos del agente de soporte técnico |
 |--|--|--|
 | Inicio | <ul><li>Ver todas </li></ul> | <ul><li>Ver todas </li></ul> |
 | Espacios empresariales | <ul><li>Ver todas </li><li>Actualizar contactos de clientes y sitio web</li><li>Ver y aplicar planes de implementación</li></ul> | <ul><li>Ver todas </li><li>Actualizar contactos de clientes y sitio web</li><li>Ver planes de implementación</li></ul> |
@@ -84,8 +84,8 @@ En la tabla siguiente se enumeran los roles de inquilino de asociados y sus perm
 
 | Roles de inquilino de partners | Permisos dentro del espacio empresarial asociado |
 |--|--|
-| Administrador global del inquilino asociado | <ul><li>Regístrate para Microsoft 365 Lighthouse en el Centro de administración de Microsoft 365.</li><li>Aceptar modificaciones de contrato de partner durante la experiencia de primera ejecución.</li><li>Ver inquilinos de clientes en la página Inquilinos.\*</li><li>Activar e desactivar un espacio empresarial.\*</li><li>Actualizar los contactos del cliente y el sitio web.\*</li><li>Crear, actualizar y eliminar etiquetas.\*</li><li>Asignar y quitar etiquetas de un inquilino de cliente.\*</li></ul> |
-| Administrador del inquilino asociado con al menos uno<br> Rol de Azure AD asignado con el siguiente conjunto de propiedades:<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (Para obtener una lista de los roles de Azure AD, consulte [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference).) | <ul><li>Crear Microsoft 365 Lighthouse de servicio.</li></ul> |
+| Administrador global del inquilino asociado | <ul><li>Regístrate en Lighthouse en el Centro de administración de Microsoft 365.</li><li>Aceptar modificaciones de contrato de partner durante la experiencia de primera ejecución.</li><li>Ver inquilinos de clientes en la página Inquilinos.\*</li><li>Activar e desactivar un espacio empresarial.\*</li><li>Actualizar los contactos del cliente y el sitio web.\*</li><li>Crear, actualizar y eliminar etiquetas.\*</li><li>Asignar y quitar etiquetas de un inquilino de cliente.\*</li></ul> |
+| Administrador del inquilino asociado con al menos uno<br> Rol de Azure AD asignado con el siguiente conjunto de propiedades:<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (Para obtener una lista de los roles de Azure AD, consulte [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference).) | <ul><li>Crear solicitudes de servicio de Lighthouse.</li></ul> |
 
 > [!NOTE]
 > Actualmente, para realizar las acciones marcadas con * en la tabla, el administrador global debe asumir el rol Agente de administración.

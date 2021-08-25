@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1b121ca196ba1b416b0031e3a0a7a8516bc7299
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b19b3c23716e7a9b1f78b82b3663271310603df8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256509"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508315"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Centro de eventos de Azure
 
@@ -39,7 +39,7 @@ ms.locfileid: "58256509"
 
 2. Inicie sesión en el inquilino [de Azure,](https://ms.portal.azure.com/)vaya a Suscripciones > Su suscripción > proveedores de recursos > **Registrarse en Microsoft.Ideas**.
 
-3. Cree un espacio de nombres de centro de eventos, vaya a **Event Hub > Agregar** y seleccione el nivel de precios, las unidades de rendimiento y la opción Autoinflate adecuada para la carga esperada. Para obtener más información, vea [Event Hubs pricing](https://azure.microsoft.com/pricing/details/event-hubs/).  
+3. Cree un espacio de nombres de centro de eventos, vaya a **Event Hub > Agregar** y seleccione el nivel de precios, las unidades de rendimiento y la opción Autoinflate adecuada para la carga esperada. Para obtener más información, vea [Event Hubs pricing](https://azure.microsoft.com/pricing/details/event-hubs/).
 
 ### <a name="add-contributor-permissions"></a>Agregar permisos de colaborador
 
@@ -47,7 +47,7 @@ Una vez creado el espacio de nombres de Event Hub, tendrá que:
 
 1. Defina el usuario que va a iniciar sesión en Microsoft 365 Defender como colaborador.
 
-2. Si se está conectando a una aplicación, agregue la entidad de seguridad del servicio de registro de aplicaciones como Lector, receptor de datos del centro de eventos de Azure (esto también se puede hacer en el nivel de grupo de recursos o suscripción). 
+2. Si se está conectando a una aplicación, agregue la entidad de seguridad del servicio de registro de aplicaciones como Lector, receptor de datos del centro de eventos de Azure (esto también se puede hacer en el nivel de grupo de recursos o suscripción).
 
     Vaya al espacio de nombres Event hubs > Control de **acceso (IAM)** > Agregar y comprobar en **Asignaciones de roles**.
 
@@ -63,7 +63,7 @@ Una vez creado el espacio de nombres de Event Hub, tendrá que:
 
 5. Elija **Reenviar eventos a Azure Event Hub**.
 
-6. Puede seleccionar si desea exportar los datos del evento a un único centro de eventos o exportar cada tabla de eventos a un centro de eventos diferente en el espacio de nombres del Centro de eventos. 
+6. Puede seleccionar si desea exportar los datos del evento a un único centro de eventos o exportar cada tabla de eventos a un centro de eventos diferente en el espacio de nombres del Centro de eventos.
 
 7. Para exportar los datos del evento a un único centro de eventos, escriba el nombre del centro de eventos **y** el identificador de recurso del centro **de eventos**.
 
@@ -95,7 +95,7 @@ Una vez creado el espacio de nombres de Event Hub, tendrá que:
 
 - Para obtener más información sobre el esquema de Microsoft 365 Defender eventos, vea [Advanced Hunting overview](advanced-hunting-overview.md).
 
-- En Búsqueda avanzada, la **tabla DeviceInfo** tiene una columna denominada **MachineGroup** que contiene el grupo del dispositivo. Aquí todos los eventos también se decorarán con esta columna. 
+- En Búsqueda avanzada, la **tabla DeviceInfo** tiene una columna denominada **MachineGroup** que contiene el grupo del dispositivo. Aquí todos los eventos también se decorarán con esta columna.
 
 ## <a name="data-types-mapping"></a>Asignación de tipos de datos
 
@@ -108,10 +108,10 @@ Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:
    ```kusto
    {EventType}
    | getschema
-   | project ColumnName, ColumnType 
+   | project ColumnName, ColumnType
    ```
 
-- Este es un ejemplo para el evento Device Info: 
+- Este es un ejemplo para el evento Device Info:
 
   ![Imagen del id. de recurso del centro de eventos2](../defender-endpoint/images/machine-info-datatype-example.png)
 

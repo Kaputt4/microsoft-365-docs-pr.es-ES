@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indizar en Exchange y SharePoint que puede incluir en una búsqueda de exhibición de documentos electrónicos que se ejecuta en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: 77d85582d4e30d45854ae6dd3a80f6cc26ba2195
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 2bc319a7330dbdad9abe3c7d43ae76764aca5cca
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372801"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507955"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos parcialmente indizados en eDiscovery
 
@@ -69,7 +69,7 @@ No todos los mensajes de correo electrónico con datos adjuntos de archivos parc
   
 Del mismo modo, los mensajes con datos adjuntos de archivo parcialmente indizados y documentos de un tipo de archivo parcialmente indizado se incluyen en los resultados de búsqueda cuando otras propiedades de mensaje o documento, indizadas y que se pueden buscar, coinciden con los criterios de búsqueda. Las propiedades de los mensajes que se indexan para la búsqueda son las fechas de envío y recepción, el remitente y el destinatario, el nombre de archivo de un adjunto, y el texto del cuerpo del mensaje. Las propiedades de los documentos que se indexan para la búsqueda son las fechas de creación y modificación. Por lo tanto, aunque los datos adjuntos de un mensaje pueden ser un elemento parcialmente indizado, el mensaje se incluirá en los resultados de búsqueda normales si el valor de otras propiedades de mensaje o documento coincide con los criterios de búsqueda.
   
-Para obtener una lista de propiedades de correo electrónico y documentos que puede buscar mediante la característica de búsqueda en el Centro de seguridad y cumplimiento de &, vea Consultas de palabras clave y condiciones de búsqueda para [eDiscovery](keyword-queries-and-search-conditions.md).
+Para obtener una lista de las propiedades de correo electrónico y documentos que puede buscar mediante el uso de herramientas de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365, vea Consultas de palabras clave y condiciones de búsqueda para [eDiscovery](keyword-queries-and-search-conditions.md).
   
 > [!NOTE]
 > Si se mueve un elemento de buzón de correo de una carpeta indizada a una carpeta que no está indizada, se establece una marca para desindexar el elemento y el elemento se quita del índice y no se puede buscar. Más adelante, si ese mismo elemento se vuelve a mover a una carpeta indizada, la marca no se restablecerá. Esto significa que el elemento permanecerá sin indexar y no se podrá buscar.
@@ -137,6 +137,6 @@ Para obtener una lista de los límites de indización SharePoint documentos, vea
 
 - Si crea una retención basada en consultas asociada a un caso de exhibición de documentos electrónicos, todos los elementos parcialmente indizados se colocan en espera. Esto incluye elementos parcialmente indizados que no coinciden con los criterios de consulta de búsqueda para la retención. Para obtener más información acerca de cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Create an eDiscovery hold](create-ediscovery-holds.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Investigar elementos parcialmente indizados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)

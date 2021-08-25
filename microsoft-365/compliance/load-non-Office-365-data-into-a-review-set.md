@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo importar datos no Microsoft 365 a un conjunto de revisión para su análisis en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 169b7438ced3d34f31cd793cd615ae189af52322ba67497dcc3eee950e9724ec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fe4863321997ba6b81be2257b6ef44c83bc34cb2
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807905"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508267"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Cargar datos que no son de Microsoft 365 en un conjunto de revisión
 
@@ -89,7 +89,7 @@ El uso de la característica de carga no Microsoft 365 descrita en este artícul
    > [!NOTE]
    > Como se ha indicado anteriormente, debe usar AzCopy v8.1 para usar correctamente el comando que se proporciona en la **página Upload archivos.** Si se produce un error en el comando AzCopy proporcionado, consulte [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
 
-8. Vuelva al Centro de seguridad & cumplimiento y haga clic en **Siguiente: Procesar archivos** en el asistente.  Se iniciará el procesamiento, la extracción de texto y la indexación de los archivos que no son de Microsoft 365 y que se cargaron en la ubicación de Azure Storage.  
+8. Vuelva a la Centro de cumplimiento de Microsoft 365 y haga clic en **Siguiente: Procesar archivos** en el asistente.  Se iniciará el procesamiento, la extracción de texto y la indexación de los archivos que no son de Microsoft 365 y que se cargaron en la ubicación de Azure Storage.  
 
 9. Realice un seguimiento del progreso  del procesamiento de  los archivos en la página Archivos de proceso o en la pestaña Trabajos al ver un trabajo denominado Agregar datos no Microsoft 365 a un conjunto **de revisión**.  Una vez finalizado el trabajo, los nuevos archivos estarán disponibles en el conjunto de revisión.
 

@@ -19,20 +19,20 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Use búsqueda de contenido y el script de este artículo para buscar en los buzones y OneDrive para la Empresa para un grupo de usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01014f991ba832b54b703458ca1eac7cc40902a49bf18d2b79e4e6e89d37d49e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c6dea7423eefbbbba6efdf3b9fe2bbd320cb4d7d
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813672"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508183"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa
 
-El Centro de seguridad & cumplimiento proporciona una serie de cmdlets Windows PowerShell que le permiten automatizar tareas relacionadas con la exhibición de documentos electrónicos que requieren mucho tiempo. Actualmente, la creación de una búsqueda de contenido en el Centro de seguridad & cumplimiento para buscar un gran número de ubicaciones de contenido de custodia lleva tiempo y preparación. Antes de crear una búsqueda, debe recopilar la dirección URL de cada sitio OneDrive para la Empresa y, a continuación, agregar cada buzón OneDrive para la Empresa sitio a la búsqueda. En versiones futuras, esto será más fácil de hacer en el Centro de seguridad & cumplimiento. Hasta entonces, puede usar el script de este artículo para automatizar este proceso. Este script solicita el nombre del dominio MySite de la organización (por ejemplo, **contoso** en la dirección URL), una lista de direcciones de correo electrónico de usuario, el nombre de la nueva búsqueda de contenido y la consulta de búsqueda que se va `https://contoso-my.sharepoint.com` a usar. El script obtiene la dirección URL de OneDrive para la Empresa para cada usuario de la lista y, a continuación, crea e inicia una búsqueda de contenido que busca en el buzón y el sitio OneDrive para la Empresa para cada usuario de la lista, mediante la consulta de búsqueda que proporcione.
+PowerShell & centro de seguridad y cumplimiento proporciona una serie de cmdlets que le permiten automatizar tareas relacionadas con la exhibición de documentos electrónicos que requieren mucho tiempo. Actualmente, la creación de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar un gran número de ubicaciones de contenido de custodia lleva tiempo y preparación. Antes de crear una búsqueda, debe recopilar la dirección URL de cada sitio OneDrive para la Empresa y, a continuación, agregar cada buzón OneDrive para la Empresa sitio a la búsqueda. En futuras versiones, esto será más fácil de hacer en el Centro de cumplimiento de Microsoft 365. Hasta entonces, puede usar el script de este artículo para automatizar este proceso. Este script solicita el nombre del dominio MySite de la organización (por ejemplo, **contoso** en la dirección URL), una lista de direcciones de correo electrónico de usuario, el nombre de la nueva búsqueda de contenido y la consulta de búsqueda que se va `https://contoso-my.sharepoint.com` a usar. El script obtiene la dirección URL de OneDrive para la Empresa para cada usuario de la lista y, a continuación, crea e inicia una búsqueda de contenido que busca en el buzón y el sitio OneDrive para la Empresa para cada usuario de la lista, mediante la consulta de búsqueda que proporcione.
   
 ## <a name="permissions-and-script-information"></a>Permisos e información de script
 
-- Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento de & y administrador global de SharePoint Online para ejecutar el script en el paso 3.
+- Debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 y un administrador global de SharePoint Online para ejecutar el script en el paso 3.
 
 - Asegúrese de guardar la lista de usuarios que cree en el paso 2 y el script del paso 3 en la misma carpeta. Esto facilitará la ejecución del script.
 
@@ -62,7 +62,7 @@ Después de ejecutar este comando, asegúrese de abrir el archivo y quitar el en
 
 Al ejecutar el script en este paso, se le pedirá la siguiente información. Asegúrese de tener esta información lista antes de ejecutar el script.
   
-- **Sus credenciales de** usuario: el script usará sus credenciales para obtener acceso a SharePoint Online para obtener las direcciones URL de OneDrive para la Empresa y para conectarse al Centro de seguridad & cumplimiento con PowerShell remoto. 
+- **Sus credenciales de** usuario: el script usará sus credenciales para obtener acceso a SharePoint Online para obtener las direcciones URL de OneDrive para la Empresa y para conectarse a PowerShell del Centro de seguridad & cumplimiento. 
     
 - **Nombre del dominio de MySite:** el dominio MySite es el dominio que contiene todos los OneDrive para la Empresa de la organización. Por ejemplo, si la dirección URL del dominio de MySite es , escribiría cuando el script le pida el nombre del **https://contoso-my.sharepoint.com**  `contoso` dominio de MySite. 
     
@@ -70,7 +70,7 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
     
 - **Nombre de la búsqueda de contenido:** el nombre de la búsqueda de contenido que creará el script. 
     
-- **Consulta de búsqueda:** se crea y se ejecuta la consulta de búsqueda que se usará con la búsqueda de contenido. Para obtener más información acerca de las consultas de búsqueda, vea [Consultas de palabras clave y condiciones de búsqueda para Búsqueda de contenido](keyword-queries-and-search-conditions.md).
+- **Consulta de búsqueda:** se crea y se ejecuta la consulta de búsqueda que se usará con la búsqueda de contenido. Para obtener más información acerca de las consultas de búsqueda, vea Consultas de palabras clave y condiciones [de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md).
 
 
 **Para ejecutar el script:**
@@ -187,4 +187,4 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
     
     - La consulta de búsqueda (deje esto en blanco para devolver todos los elementos de las ubicaciones de contenido).
     
-    El script obtiene las direcciones URL de cada OneDrive para la Empresa sitio y, a continuación, crea e inicia la búsqueda. Puede ejecutar el cmdlet **Get-ComplianceSearch** en PowerShell del Centro de seguridad & cumplimiento para mostrar las  estadísticas y los resultados de la búsqueda, o bien puede ir a la página Búsqueda de contenido en el Centro de seguridad & cumplimiento para ver información sobre la búsqueda.
+    El script obtiene las direcciones URL de cada OneDrive para la Empresa sitio y, a continuación, crea e inicia la búsqueda. Puede ejecutar el cmdlet **Get-ComplianceSearch** en PowerShell del Centro de seguridad & cumplimiento para mostrar las  estadísticas y los resultados de la búsqueda, o bien puede ir a la página Búsqueda de contenido del Centro de cumplimiento de Microsoft 365 para ver información sobre la búsqueda.

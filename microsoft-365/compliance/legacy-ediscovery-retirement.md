@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place exhibición de documentos electrónicos y retención In-Place (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Advanced eDiscovery v1.0 también se retiran en el mismo período de tiempo.
-ms.openlocfilehash: 5fbcb980d941ddd54ce76d5a44f93e5cdd9f7e052466d01a727668ffac2c89ea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 16a43122ce16a134a6068f78dadea02ac8605625
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860084"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507237"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
@@ -56,7 +56,7 @@ Como resultado de esta nueva y mejorada funcionalidad de exhibición de document
 
    - [GetHoldOnMailboxes](/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
-- [eDiscovery avanzado de Office 365 v1.0](./overview-ediscovery-20.md), que es la primera versión de Advanced eDiscovery a la que se tiene acceso a través de un caso de exhibición de documentos electrónicos principal en el Centro de Office 365 seguridad & cumplimiento. La retirada de Advanced eDiscovery v1.0 no afecta a su capacidad para crear y administrar casos de exhibición de documentos electrónicos principales.
+- [eDiscovery avanzado de Office 365 v1.0](./overview-ediscovery-20.md), que es la primera versión de Advanced eDiscovery a la que se tiene acceso a través de un caso de exhibición de documentos electrónicos principal en el Centro de cumplimiento de Microsoft 365. La retirada de Advanced eDiscovery v1.0 no afecta a su capacidad para crear y administrar casos de exhibición de documentos electrónicos principales.
 
 > [!NOTE]
 > La funcionalidad de exhibición de documentos electrónicos que se retira solo se aplica a las versiones basadas en la nube de Microsoft 365 y Office 365. La funcionalidad de exhibición de documentos electrónicos en versiones locales de Exchange y SharePoint seguirá siendo compatible hasta nuevo aviso.
@@ -77,7 +77,7 @@ Dado que todas estas funcionalidades (excepto para copiar resultados de búsqued
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; esto incluye GCC, GCC High y DoD
 
-- Office 365 Alemania
+- Office 365 Germany
 
 ### <a name="timeline-for-retirement"></a>Escala de tiempo para la retirada
 
@@ -94,7 +94,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="header">
 <th>Funcionalidad</th>
 <th>Herramienta alternativa</th>
-<th>Comentarios</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -180,7 +180,7 @@ Dado que estas funcionalidades ya están disponibles en [<span class="underline"
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; esto incluye GCC, GCC High y DoD
 
-- Office 365 Alemania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -197,7 +197,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="header">
 <th>Funcionalidad</th>
 <th>Herramientas alternativas</th>
-<th>Comentarios</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -261,7 +261,7 @@ El cmdlet **Search-Mailbox** en Exchange Online PowerShell se está retirando co
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; esto incluye GCC, GCC High y DoD
 
-- Office 365 Alemania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -276,7 +276,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="header">
 <th>Funcionalidad</th>
 <th>Herramientas alternativas</th>
-<th>Comentarios</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -333,7 +333,7 @@ Estas operaciones en la API de servicios web de Exchange las usa la característ
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; esto incluye GCC, GCC High y DoD
 
-- Office 365 Alemania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -369,7 +369,7 @@ En este momento, se recomienda comenzar a realizar la transición del flujo de t
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; esto incluye GCC, GCC High y DoD
 
-- Office 365 Alemania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Escala de tiempo
 

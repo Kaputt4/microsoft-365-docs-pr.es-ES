@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo implementar Microsoft 365 Lighthouse líneas base.
-ms.openlocfilehash: 85e9c9031575aae3aec43b4200caf2338422f563
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 62fc9afcbf10a0cd77c2fe2d2f7140b5197dd42a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365218"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507907"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Implementar Microsoft 365 Lighthouse base 
 
 > [!NOTE]
 > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse línea base le permiten implementar configuraciones de inquilino administrado estándar para proteger usuarios, dispositivos y datos dentro de los inquilinos del cliente. Hay seis configuraciones de línea base predeterminadas que vienen estándar con Microsoft 365 Lighthouse:
+Microsoft 365 Lighthouse línea base le permiten implementar configuraciones de inquilino administrado estándar para proteger usuarios, dispositivos y datos dentro de los inquilinos del cliente. Hay seis configuraciones de línea base predeterminadas que vienen estándar con Lighthouse:
 
 - Requerir MFA para administradores
 - Requerir MFA para usuarios finales

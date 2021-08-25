@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 84a2cba9c2711be8812ee25d38c7c3eb19746e346e5c475270a42ff55c7645dd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a31da45e56adc8838ed85df338e423070aac1a15
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873720"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507667"
 ---
 # <a name="troubleshoot-network-protection"></a>Solucionar problemas de protección de red
 
@@ -33,8 +33,7 @@ ms.locfileid: "53873720"
 > [!TIP]
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-
-Cuando usa la [protección de red,](network-protection.md) puede encontrar problemas, como:
+En este artículo se proporciona información de solución de problemas para la protección de [red,](network-protection.md)en casos como:
 
 - La protección de red bloquea un sitio web seguro (falso positivo)
 - La protección de red no puede bloquear un sitio web malintencionado sospechoso o conocido (falso negativo)
@@ -125,9 +124,14 @@ Puede configurar la clave del Registro mediante PowerShell, Microsoft Endpoint M
 - [Configurar las opciones de cliente personalizadas para Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [Usar la configuración de directiva de grupo para administrar Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Ver también
 
 - [Protección de red](network-protection.md)
+
+- [Protección de red y el protocolo de enlace triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
 - [Evaluar protección de red](evaluate-network-protection.md)
+
 - [Habilitar la protección de red](enable-network-protection.md)
+
 - [Dirección de falsos positivos/negativos en Defender for Endpoint](defender-endpoint-false-positives-negatives.md)

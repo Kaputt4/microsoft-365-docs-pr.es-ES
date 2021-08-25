@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo solucionar problemas de configuración Windows equipos de 365 Business Cloud.
 ms.date: 08/13/2021
-ms.openlocfilehash: 420046e063bbf12ad9c3dc4cbe9bf4dca289168a
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: b639453ef55960a3526fa8354dc95efb2653f9c5
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58357550"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507345"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>Solucionar Windows problemas de configuración de 365 Business Cloud PC
 
@@ -49,7 +49,7 @@ Asegúrese de **que los usuarios pueden unir dispositivos a Azure AD** está est
 
 ## <a name="step-2-verify-that-the-cloudpcbrt-system-account-is-active"></a>Paso 2. Comprobar que la cuenta del sistema CloudPCBRT está activa
 
-La primera vez que Windows una licencia de 365 en la organización, se crea automáticamente en Azure AD una cuenta del sistema denominada "CloudPCBPRT". No elimine esta cuenta. Si se elimina la cuenta del sistema, se producirá un error en la configuración. Esta cuenta del sistema garantiza un proceso de configuración sin problemas y no tiene ninguna capacidad de escritura ni acceso a su organización más allá de las capacidades de servicio de ámbito de Windows 365 Empresa. Si elimina esta cuenta del sistema, debe abrir una nueva solicitud de soporte técnico para que se restaure.
+La primera vez que Windows una licencia de 365 en la organización, se crea automáticamente en Azure AD una cuenta del sistema denominada "CloudPCBPRT". No elimine esta cuenta ni realice ningún cambio en ella (como cambiar el nombre o UPN). Si se elimina la cuenta del sistema, se producirá un error en la configuración. Esta cuenta del sistema garantiza un proceso de configuración sin problemas y no tiene ninguna capacidad de escritura ni acceso a su organización más allá de las capacidades de servicio de ámbito de Windows 365 Empresa. Si elimina esta cuenta del sistema, debe abrir una nueva solicitud de soporte técnico para que se restaure.
 
 Para asegurarse de que la cuenta del sistema CloudPCBRT está activa en Azure AD, siga estos pasos.
 
@@ -105,7 +105,7 @@ Si ya usas Microsoft Intune, o planeas usarlo para administrar los equipos en la
 3. En la **página Configurar,** junto al ámbito **de usuario MDM,** seleccione **Algunos** o **Todos** y, a continuación, **seleccione Guardar**.
 4. En la navegación izquierda, en **Administrar**, seleccione **Movilidad (MDM y MAM),** seleccione **Microsoft Intune Inscripción** y, a continuación, repita el paso 3.
 
-También debe asignar una licencia de Intune a la cuenta del sistema CloudPCBPRT y a cualquier otro usuario al que se le asigne un equipo en la nube.
+Los usuarios a los que se les asigna un equipo en la nube deben tener asignada una licencia de Intune. No es necesario asignar una licencia de Intune a la cuenta del sistema CloudPCBPRT.
 
 > [!IMPORTANT]
 > Para asignar licencias, debe ser administrador global o de licencias o tener un rol con permisos de licencia.

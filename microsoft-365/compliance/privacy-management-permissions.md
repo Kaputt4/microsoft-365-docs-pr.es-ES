@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo configurar los permisos de administración de privacidad y asignar usuarios a grupos de roles.
-ms.openlocfilehash: 644c32aad3e4c25e5ca74e6ae973a7305476af37
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ebdd5610253ecb5bd490eb9b8bb8beb45f8b6458
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255040"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507715"
 ---
 # <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>Establecer permisos de usuario y asignar roles en la administración de privacidad (versión preliminar)
 
@@ -66,7 +66,7 @@ Los roles incluyen:
 
 ## <a name="privacy-management-administrators-role-group"></a>Grupo de roles Administradores de administración de privacidad
 
-Los miembros de este grupo de roles se centran en tareas de configuración y administración y tienen un amplio acceso a funciones de administración de privacidad, como crear, leer, actualizar y eliminar directivas de administración de privacidad, solicitudes de derechos de sujeto, permisos de administración de privacidad y configuración de administración de privacidad.
+Los miembros de este grupo de roles tienen un amplio acceso a las funciones de administración de privacidad, como crear, leer, actualizar y eliminar directivas de administración de privacidad, solicitudes de derechos de sujeto, permisos de administración de privacidad y configuración de administración de privacidad.
 
 Los roles incluyen:
 
@@ -87,7 +87,7 @@ Los roles incluyen:
 
 ### <a name="privacy-management-investigators-role-group"></a>Grupo de roles De investigadores de administración de privacidad
 
-Los miembros de este grupo actúan como investigadores de datos de administración de privacidad. Pueden investigar coincidencias de directivas, ver el contenido del archivo asociado y realizar acciones de corrección. Este grupo puede tener acceso a los archivos a través del Explorador de contenido. 
+Los miembros de este grupo actúan como investigadores de datos de administración de privacidad. Pueden investigar coincidencias de directivas, ver el contenido del archivo asociado y realizar acciones de corrección. Este grupo puede tener acceso a los archivos a través del Explorador de contenido.
 
 Los roles incluyen:
 

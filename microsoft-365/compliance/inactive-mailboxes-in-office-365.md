@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo conservar el contenido del buzón de correo para antiguos empleados convirtiendo el buzón en un buzón inactivo.
-ms.openlocfilehash: 3badfacad1ffc58a686efd1f1971ce6dd015398e6662512c1de4ccb463ee98ef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c2e4ce0bb60d29652d66a778c16579646392d21
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801931"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507261"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Información general sobre buzones inactivos
 
@@ -35,7 +35,7 @@ Es posible que su organización necesite conservar el correo electrónico de los
 
 Cuando un empleado deja la organización (o se retira de una licencia extendida), puede quitar su Microsoft 365 cuenta. Los datos del buzón del empleado se conservan durante 30 días después de quitar la cuenta. Durante este período, puede recuperar los datos del buzón eliminando la cuenta. Después de 30 días, los datos se quitan permanentemente.
 
-Pero si su organización necesita conservar el contenido del buzón para antiguos empleados, puede convertir el buzón en un buzón inactivo colocando el buzón en retención por juicio o aplicando una directiva de retención de Microsoft 365 al buzón en el Centro de cumplimiento de & y, a continuación, quitando la cuenta Microsoft 365 correspondiente. El contenido de un buzón inactivo se conserva durante la retención por juicio colocada en el buzón o el período de retención de la directiva de retención aplicada antes de eliminar el buzón. Todavía puede recuperar la cuenta de usuario correspondiente durante un período de 30 días. Sin embargo, después de 30 días, el buzón inactivo se conserva en Microsoft 365 hasta que se quita la directiva de retención o retención.
+Pero si su organización necesita conservar el contenido del buzón para antiguos empleados, puede convertir el buzón en un buzón inactivo colocando el buzón en retención por juicio o aplicando una directiva de retención de Microsoft 365 al buzón de correo en el Centro de cumplimiento de Microsoft 365 y, a continuación, quitando la cuenta Microsoft 365 correspondiente. El contenido de un buzón inactivo se conserva durante la retención por juicio colocada en el buzón o el período de retención de la directiva de retención aplicada antes de eliminar el buzón. Todavía puede recuperar la cuenta de usuario correspondiente durante un período de 30 días. Sin embargo, después de 30 días, el buzón inactivo se conserva en Microsoft 365 hasta que se quita la directiva de retención o retención.
 
 > [!IMPORTANT]
 > A medida que seguimos invirtiendo de diferentes maneras para conservar el contenido del buzón, estamos anunciando la retirada de las In-Place en el centro Exchange administración. Esto significa que debe usar las retenciones por juicio y las Microsoft 365 de retención para crear un buzón inactivo. A partir del 1 de julio de 2020 no podrá crear nuevas retenciones In-Place en Exchange Online. Pero aún podrá cambiar la duración de retención de una retención In-Place en un buzón inactivo. Sin embargo, a partir del 1 de octubre de 2020, no podrá cambiar la duración de la retención. Solo podrá eliminar un buzón inactivo quitando la In-Place espera. Los buzones inactivos existentes que están en In-Place conservación se conservarán hasta que se quite la retención. Para obtener más información sobre cuándo In-Place se retirarán las retenciones, vea [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
@@ -60,7 +60,7 @@ Es posible que considere la posibilidad de crear Microsoft 365 directiva de rete
 
 - Es una buena forma de identificar buzones inactivos porque la directiva de retención solo se aplicará a buzones inactivos.
 
-- Puede identificar rápidamente la directiva de retención asignada a los buzones inactivos de la organización. Esto facilita cambiar la configuración de retención (o eliminación) si es necesario. También facilitará la eliminación permanente de un buzón inactivo porque puede quitarlo de la directiva mediante el Centro de seguridad & cumplimiento. De lo contrario, debe usar Exchange Online PowerShell para quitar una retención por juicio de un buzón inactivo o usar PowerShell del Centro de seguridad & cumplimiento para excluir un buzón inactivo de una directiva de retención de Microsoft 365 organización.
+- Puede identificar rápidamente la directiva de retención asignada a los buzones inactivos de la organización. Esto facilita cambiar la configuración de retención (o eliminación) si es necesario. También facilitará la eliminación permanente de un buzón inactivo porque puede quitarlo de la directiva mediante el Centro de cumplimiento de Microsoft 365. De lo contrario, debe usar Exchange Online PowerShell para quitar una retención por juicio de un buzón inactivo o usar PowerShell del Centro de seguridad & cumplimiento para excluir un buzón inactivo de una directiva de retención de Microsoft 365 organización.
 
 - Si crea una directiva Microsoft 365 de retención específicamente para buzones inactivos, puede agregar un máximo de 1.000 buzones a la directiva. Si es una organización grande, es posible que tenga que crear más de una directiva de retención Microsoft 365 usar para buzones inactivos.
 
@@ -69,7 +69,7 @@ Es posible que considere la posibilidad de crear Microsoft 365 directiva de rete
 
 ## <a name="inactive-mailboxes-and-ediscovery-case-holds"></a>Buzones inactivos y retenciones de casos de exhibición de documentos electrónicos
 
-Si una retención asociada a un caso de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento de & se coloca en un buzón y, a continuación, se elimina el buzón o la cuenta del usuario, el buzón se convierte en un buzón inactivo. Sin embargo, no recomendamos usar retenciones de casos de exhibición de documentos electrónicos para hacer que un buzón sea inactivo. Esto se debe a que los casos de exhibición de documentos electrónicos están destinados a casos específicos con límite de tiempo relacionados con un problema legal. En algún momento, un caso legal probablemente finalizará y se quitarán las retenciones asociadas al caso y se cerrará el caso de exhibición de documentos electrónicos. De hecho, si una retención que se coloca en un buzón inactivo está asociada a un caso de exhibición de documentos electrónicos y, a continuación, la retención se libera o el caso de exhibición de documentos electrónicos se cierra (o elimina), el buzón inactivo se eliminará permanentemente. Además, no puede crear una retención de exhibición de documentos electrónicos basada en tiempo. Esto significa que el contenido de un buzón inactivo se conserva para siempre o hasta que se quita la retención y se elimina el buzón inactivo. Por lo tanto, se recomienda usar una retención por juicio o una directiva de retención para buzones inactivos.
+Si una retención asociada a un caso de exhibición de documentos electrónicos en Centro de cumplimiento de Microsoft 365 se coloca en un buzón y, a continuación, se elimina el buzón o la cuenta del usuario, el buzón se convierte en un buzón inactivo. Sin embargo, no recomendamos usar retenciones de casos de exhibición de documentos electrónicos para hacer que un buzón sea inactivo. Esto se debe a que los casos de exhibición de documentos electrónicos están destinados a casos específicos con límite de tiempo relacionados con un problema legal. En algún momento, un caso legal probablemente finalizará y se quitarán las retenciones asociadas al caso y se cerrará el caso de exhibición de documentos electrónicos. De hecho, si una retención que se coloca en un buzón inactivo está asociada a un caso de exhibición de documentos electrónicos y, a continuación, la retención se libera o el caso de exhibición de documentos electrónicos se cierra (o elimina), el buzón inactivo se eliminará permanentemente. Además, no puede crear una retención de exhibición de documentos electrónicos basada en tiempo. Esto significa que el contenido de un buzón inactivo se conserva para siempre o hasta que se quita la retención y se elimina el buzón inactivo. Por lo tanto, se recomienda usar una retención por juicio o una directiva de retención para buzones inactivos.
 
 Para obtener más información acerca de los casos y las retenciones de exhibición de documentos electrónicos, vea [casos de exhibición de documentos electrónicos](./get-started-core-ediscovery.md).
 

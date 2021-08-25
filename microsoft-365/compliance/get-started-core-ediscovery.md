@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Describe cómo empezar a usar eDiscovery principal en Microsoft 365. Después de asignar permisos de exhibición de documentos electrónicos y crear un caso, puede agregar miembros, crear retenciones de exhibición de documentos electrónicos y, a continuación, buscar y exportar contenido relevante para la investigación.
-ms.openlocfilehash: 8b0e1c91f0816df3b443933d4e14c6c36f41b143a27d06516cf66e46a0f054a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9662045a77b1af69de68729697972821a7a7a589
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819921"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508039"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Introducción a la exhibición de documentos electrónicos principal en Microsoft 365
 
@@ -34,17 +34,17 @@ En este artículo se analizan los pasos necesarios para configurar la exhibició
 
 Las licencias para la exhibición de documentos electrónicos principales requieren la suscripción de la organización adecuada y las licencias por usuario.
 
-- **Suscripción a la organización:** Para tener acceso a la exhibición de documentos electrónicos principal en el centro de cumplimiento de Centro de cumplimiento de Microsoft 365 o Office 365 Security & y usar las características de retención y exportación, la organización debe tener una suscripción Microsoft 365 E3 o Office 365 E3 o superior.
+- **Suscripción a la organización:** Para tener acceso a eDiscovery principal en el Centro de cumplimiento de Microsoft 365 y usar las características de retención y exportación, la organización debe tener una Microsoft 365 E3 o Office 365 E3 suscripción o superior.
 
 - **Licencias por usuario:** Para colocar una retención de exhibición de documentos electrónicos en buzones y sitios, se debe asignar a un usuario una de las siguientes licencias, según la suscripción de la organización:
 
   - Una Microsoft 365 E3 o Office 365 E3 o posterior
 
-   O
+   OR
 
   - Office 365 E1 con una licencia Exchange Online plan 2 o Archivado de Exchange Online de complementos
 
-  Y
+  AND
 
   - Office 365 E1 licencia con una SharePoint de complemento de Plan 2 o OneDrive para la Empresa plan 2
   
@@ -58,7 +58,7 @@ Para obtener información sobre las licencias:
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Paso 2: Asignar permisos de exhibición de documentos electrónicos
 
-Para obtener acceso a eDiscovery principal o agregarse como miembro de un caso de exhibición de documentos electrónicos principales, se deben asignar a un usuario los permisos adecuados. Específicamente, un usuario debe agregarse como miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de Office 365 seguridad & cumplimiento. Los miembros de este grupo de roles pueden crear y administrar casos principales de exhibición de documentos electrónicos. Pueden agregar y quitar miembros, colocar una retención de exhibición de documentos electrónicos en los usuarios, crear y editar búsquedas y exportar contenido desde un caso de exhibición de documentos electrónicos principal.
+Para obtener acceso a eDiscovery principal o agregarse como miembro de un caso de exhibición de documentos electrónicos principales, se deben asignar a un usuario los permisos adecuados. Específicamente, un usuario debe agregarse como miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365. Los miembros de este grupo de roles pueden crear y administrar casos principales de exhibición de documentos electrónicos. Pueden agregar y quitar miembros, colocar una retención de exhibición de documentos electrónicos en los usuarios, crear y editar búsquedas y exportar contenido desde un caso de exhibición de documentos electrónicos principal.
 
 Siga estos pasos para agregar usuarios al grupo de roles administrador de exhibición de documentos electrónicos:
 

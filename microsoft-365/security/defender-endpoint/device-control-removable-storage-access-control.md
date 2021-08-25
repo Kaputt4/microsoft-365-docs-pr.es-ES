@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c65fcb93740f975c34534e1af244dcca20ce043c
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 73d863584a1712f5619bd045a51e651edb4ff636
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387133"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507991"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
@@ -36,14 +36,15 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 ****
 
-| Privilegio | Permiso |
-|:---|:---|
-| Acceso | Lectura, Escritura, Ejecución |
-| Modo de acción | Auditoría, Permitir, Impedir |
-| Compatibilidad con CSP | Sí |
-| Compatibilidad con GPO | Sí |
-| Soporte técnico basado en usuarios | Sí |
-| Compatibilidad basada en máquina | Sí |
+|Privilegio|Permiso|
+|---|---|
+|Acceso|Lectura, Escritura, Ejecución|
+|Modo de acción|Auditoría, Permitir, Impedir|
+|Compatibilidad con CSP|Sí|
+|Compatibilidad con GPO|Sí|
+|Soporte técnico basado en usuarios|Sí|
+|Compatibilidad basada en máquina|Sí|
+|
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
@@ -62,27 +63,36 @@ Implemente el control Storage de acceso extraíble en Windows 10 dispositivos co
 
 Puede usar las siguientes propiedades para crear un grupo de almacenamiento extraíble:
 
-#### <a name="removable-storage-group"></a>Grupo Storage extraíble
-|Nombre de propiedad  |Descripción  |Opciones  |
-|---------|---------|---------|
-|**GroupId**     |   [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un identificador único, representa el grupo y se usará en la directiva.      |         |
-|**DescriptorIdList**     |  Enumera las propiedades del dispositivo que quieres usar para cubrir en el grupo. Para cada propiedad de dispositivo, consulta [Propiedades del dispositivo](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true) para obtener más detalles.       |  - **PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</br> - **DeviceId** </br>- **HardwareId**</br>- **InstancePathId**: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. El número al final (por ejemplo, &0) representa la ranura disponible y puede cambiar de un dispositivo a otro. Para obtener los mejores resultados, use un comodín al final. Por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*</br>- **FriendlyNameId**</br>- **SerialNumberId**</br>- **VID**</br>- **PID**</br>- **VID_PID**</br> 0751_55E0: coincide con este par VID/PID exacto </br>_55E0: hacer coincidir cualquier medio con PID=55E0 </br> 0751_: coincidir con cualquier medio con VID=0751 |
-|**MatchType**     |    Cuando se usan varias propiedades de dispositivo en descriptorIDList, MatchType define la relación.     |  **MatchAll**: </br>Cualquier atributo bajo descriptorIdList será **relación And;** por ejemplo, si el administrador pone DeviceID e InstancePathID, por cada USB conectado, el sistema comprobará si el USB cumple ambos valores. </br> </br>**MatchAny**:</br> Los atributos de descriptorIdList serán **o** relación; por ejemplo, si el administrador pone DeviceID e InstancePathID, por cada USB conectado, el sistema hará la aplicación siempre que el USB tenga un valor **DeviceID** o **InstanceID** idéntico.       |
+### <a name="removable-storage-group"></a>Grupo Storage extraíble
+
+<br>
+
+****
+
+|Nombre de propiedad|Descripción|Opciones|
+|---|---|---|
+|**GroupId**|[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un identificador único, representa el grupo y se usará en la directiva.||
+|**DescriptorIdList**|Enumera las propiedades del dispositivo que quieres usar para cubrir en el grupo. Para cada propiedad de dispositivo, consulta [Propiedades del dispositivo](device-control-removable-storage-protection.md) para obtener más detalles.|<ul><li>**PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` . El número al final (por ejemplo, &0) representa la ranura disponible y puede cambiar de un dispositivo a otro. Para obtener los mejores resultados, use un comodín al final. Por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.</li><li>**FriendlyNameId**</li><li>**SerialNumberId**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0: coincide con este par VID/PID exacto</li><li>55E0: hacer coincidir cualquier medio con PID=55E0 </li><li>0751: hacer coincidir cualquier medio con VID=0751</li></ul></li></ul>|
+|**MatchType**|Cuando se usan varias propiedades de dispositivo en descriptorIDList, MatchType define la relación.|**MatchAll:** cualquier atributo bajo descriptorIdList será **relación And;** por ejemplo, si el administrador pone DeviceID e InstancePathID, por cada USB conectado, el sistema comprobará si el USB cumple ambos valores. <p> **MatchAny:** los atributos de descriptorIdList serán **o** relación; por ejemplo, si el administrador pone DeviceID e InstancePathID, por cada USB conectado, el sistema hará la aplicación siempre que el USB tenga un valor **DeviceID** o **InstanceID** idéntico.|
 ||||
 
-#### <a name="access-control-policy"></a>Directiva de control de acceso
+### <a name="access-control-policy"></a>Directiva de control de acceso
 
-|Nombre de propiedad  |Descripción  |Opciones  |
-|---------|---------|---------|
-|PolicyRuleId     |     [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un identificador único, representa la directiva y se usará en los informes y la solución de problemas.    |         |
-|IncludedIdList     | Los grupos a los que se aplicará la directiva. Si se agregan varios grupos, la directiva se aplicará a cualquier medio de todos esos grupos.        |    El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia. </br> En el ejemplo siguiente se muestra el uso de GroupID: </br> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`    |
-|ExcludedIDList     | Los grupos a los que no se aplicará la directiva.        |    El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia.     |
-|Id. de entrada     |  Un PolicyRule puede tener varias entradas; cada entrada con un GUID único indica al Control de dispositivos una restricción.       |         |
-|Tipo|Define la acción de los grupos de almacenamiento extraíbles en IncludedIDList. </br>- Aplicación: Permitir o denegar </br>- Auditoría: AuditAllowed o AuditDenied|- Permitir </br>- Denegar</br> - AuditAllowed: define la notificación y el evento cuando se permite el acceso</br>- AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Denegar.** </br></br> Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el primero de la directiva. Un ejemplo de tipo de conflicto **es Allow** y **Deny**.|
+<br>
+
+****
+
+|Nombre de propiedad|Descripción|Opciones|
+|---|---|---|
+|PolicyRuleId|[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un identificador único, representa la directiva y se usará en los informes y la solución de problemas.||
+|IncludedIdList|Los grupos a los que se aplicará la directiva. Si se agregan varios grupos, la directiva se aplicará a cualquier medio de todos esos grupos.|El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia. <p> En el ejemplo siguiente se muestra el uso de GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`|
+|ExcludedIDList|Los grupos a los que no se aplicará la directiva.|El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia.|
+|Id. de entrada|Un PolicyRule puede tener varias entradas; cada entrada con un GUID único indica al Control de dispositivos una restricción.||
+|Tipo|Define la acción de los grupos de almacenamiento extraíbles en IncludedIDList. <ul><li>Aplicación: Permitir o denegar</li><li>Auditoría: AuditAllowed o AuditDenied</ul></li>|<ul><li>Permitir</li><li>Denegar</li><li>AuditAllowed: define la notificación y el evento cuando se permite el acceso</li><li>AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Denegar.**</li></ul> <p> Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el primero de la directiva. Un ejemplo de tipo de conflicto **es Allow** y **Deny**.|
 |Sid|El sid del equipo local o el Sid del objeto AD, define si se va a aplicar esta directiva a un usuario o grupo de usuarios específicos; una entrada puede tener un máximo de un Sid y una entrada sin que ningún Sid signifique aplicar la directiva sobre la máquina.||
 |ComputerSid|Sid de equipo local o Sid del objeto AD, define si se va a aplicar esta directiva sobre un equipo o grupo de máquinas específicos; una entrada puede tener un máximo de un ComputerSid y una entrada sin que ComputerSid signifique aplicar la directiva sobre el equipo. Si desea aplicar una entrada a un usuario específico y a un equipo específico, agregue Sid y ComputerSid a la misma entrada.||
-|Opciones|Define si se va a mostrar la notificación o no|**0-4:** cuando se selecciona Tipo Permitir o Denegar.</br></br>0: nada</br>4: deshabilitar **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **se produce** block y la configuración auditDenied está configurada, el sistema no mostrará la notificación. </br> </br>Cuando se **selecciona Tipo AuditAllowed** **o AuditDenied:**</br>0: nada</br>1: mostrar notificación</br>2: evento send</br>3: mostrar notificación y enviar evento|
-|AccessMask|Define el acceso.|**1-7**: </br></br>1: Leer</br>2: Escribir</br>3: Lectura y escritura</br>4: Ejecutar</br>5: Leer y ejecutar</br>6: Escribir y ejecutar</br>7: Lectura y escritura y ejecución|
+|Opciones|Define si se va a mostrar la notificación o no|**0-4:** cuando se selecciona Tipo Permitir o Denegar. <ul><li>0: nada</li><li>4: deshabilitar **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **se produce** block y la configuración auditDenied está configurada, el sistema no mostrará la notificación.</li></ul> <p> Cuando se **selecciona Tipo AuditAllowed** **o AuditDenied:** <ul><li>0: nada</li><li>1: mostrar notificación</li><li>2: evento send</li><li>3: mostrar notificación y enviar evento</li></ul>|
+|AccessMask|Define el acceso.|**1-7**: <ol><li>Lectura</li><li>Escritura</li><li>Lectura y escritura</li><li>Ejecutar</li><li>Lectura y ejecución</li><li>Escritura y ejecución</li><li>Lectura y escritura y ejecución</li></ol>|
 ||||
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Escenarios comunes Storage control de acceso extraíble
@@ -165,7 +175,7 @@ Para la implementación de directivas en Intune, la cuenta debe tener permisos p
 
 ### <a name="deploying-policy-via-oma-uri"></a>Implementación de directivas mediante OMA-URI
 
-**Microsoft Endpoint Manager de administración ( https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 and later & Profile: Custom**
+Microsoft Endpoint Manager centro de administración ( ) Perfiles de configuración de dispositivos Crear perfil Plataforma: Windows 10 y posterior <https://endpoint.microsoft.com/> \>  \>  \>  \> **&: Personalizado**
 
 1. Para cada grupo, cree una regla OMA-URI:
     - OMA-URI: 
@@ -197,7 +207,7 @@ Esta funcionalidad (en Microsoft Endpoint Manager centro de administración ( ) 
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Ver datos extraíbles Storage control de acceso en Microsoft Defender para endpoint
 
-El Microsoft 365 de seguridad muestra el almacenamiento extraíble bloqueado por el control de dispositivo extraíble Storage control de acceso. Para obtener acceso a Microsoft 365 seguridad, debe tener la siguiente suscripción:
+El [Microsoft 365 Defender muestra](https://security.microsoft.com/advanced-hunting) los eventos desencadenados por el control de dispositivo extraíble Storage control de acceso. Para obtener acceso a Microsoft 365 seguridad, debe tener la siguiente suscripción:
 
 - Microsoft 365 para informes E5
 
@@ -218,7 +228,7 @@ DeviceEvents
 | extend MediaProductId = tostring(parsed.ProductId) 
 | extend MediaVendorId = tostring(parsed.VendorId) 
 | extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
+|project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
 | order by Timestamp desc
 ```
 

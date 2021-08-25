@@ -188,8 +188,6 @@
               href: m365d-autoir-results.md
             - name: Abordar falsos positivos y falsos negativos
               href: m365d-autoir-report-false-positives-negatives.md
-            - name: Usar Power Automate
-              href: use-power-automate.md
         - name: Búsqueda avanzada
           items:
             - name: Información general sobre la búsqueda avanzada
@@ -324,6 +322,8 @@
               href: integrate-microsoft-365-defender-secops-use-cases.md
             - name: Paso 6. Tareas de mantenimiento de SOC
               href: integrate-microsoft-365-defender-secops-tasks.md
+        - name: Usar Power Automate
+          href: use-power-automate.md
     - name: Guías de procedimientos
       items:
         - name: Crear un entorno piloto o de laboratorio de pruebas

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 19ef2336983f315af5731fc1cf166ffef4a014bd5c9ddcb660e8cb90ef040e03
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e64ccef09af6a8ab9ff3f798a0754a605a7f122
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847711"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507751"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Crear informes personalizados mediante Power BI
 
@@ -47,7 +47,7 @@ El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada
 
 - Abra Microsoft Power BI
 
-- Haga **clic en Obtener consulta en** blanco de  >  **datos**
+- Haga **clic en Obtener consulta en** blanco de \> **datos**
 
   ![Imagen de crear consulta en blanco](images/power-bi-create-blank-query.png)
 
@@ -101,7 +101,7 @@ El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada
 
     ![Imagen de las credenciales de edición0](images/power-bi-edit-credentials.png)
 
-- Seleccionar **Inicio de sesión de cuenta**  >  **organizativa**
+- Seleccionar **Inicio de sesión de cuenta** \> **organizativa**
 
     ![Imagen de set credentials1](images/power-bi-set-credentials-organizational.png)
 

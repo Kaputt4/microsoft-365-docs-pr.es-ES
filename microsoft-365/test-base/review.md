@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: b70a2b9446d845f08ea5f309d4c1f1900d6f882e0f1da1e56f301537145dcd11
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8763d07db48f86a1c4224fc6bde4d992ef6d3701
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804474"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507559"
 ---
 # <a name="step-6-review-your-selections-to-create-your-package"></a>Paso 6: Revisar las selecciones para crear el paquete.
 
@@ -31,7 +31,7 @@ ms.locfileid: "53804474"
 
     :::image type="content" alt-text="Ver validación." source="Media/validation.png" lightbox="Media/validation.png":::
 
-3. Esto incorporará el paquete al entorno base de prueba. Si el paquete se crea correctamente, se desencadenará una prueba automatizada que compruebe si el paquete se puede ejecutar correctamente en Azure.
+3. Esto incorporará el paquete al entorno base de prueba. Si el paquete se crea correctamente, se activará una prueba automatizada que compruebe si el paquete se puede ejecutar correctamente en Azure.
 
     ![Resultado correcto](Media/successful.png)
 
@@ -44,15 +44,15 @@ ms.locfileid: "53804474"
 
       :::image type="content" alt-text="Imagen para administrar paquetes." source="Media/managepackages.png" lightbox="Media/managepackages.png":::
 
-    - Para las pruebas de éxito, sus resultados se  pueden ver  a través de las páginas Resumen de **prueba,** Resultados de actualizaciones de seguridad y Resultados de actualizaciones de características a intervalos programados, a menudo a partir de unos días después de la carga.
-
-    - Si bien se han fallado las pruebas, es necesario cargar un nuevo paquete.
+    - Para las pruebas correctas, sus resultados  se pueden  ver a través de las páginas Resumen de **prueba,** Resultados de actualizaciones de seguridad y Resultados de actualizaciones de características a intervalos programados, a menudo a partir de unos días después de la carga.
+  
+    - Si bien se han fallado las pruebas, es necesario cargar un nuevo paquete. 
 
       Puede descargar los registros **de prueba para** realizar más análisis desde las páginas De **resultados** de actualización de seguridad y **Actualizaciones de** características.
 
     - Si experimenta errores de prueba repetidos, póngase en contacto testbasepreview@microsoft.com con los detalles del error.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Descubra nuestras Directrices de contenido a través del siguiente vínculo.
 

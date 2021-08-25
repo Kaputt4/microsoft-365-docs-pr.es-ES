@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 468abdd5db01cdf5450bfb8efefae0e93852da8be867ebdbc7345587a89779d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 69b78b3670f8c43309a11cba9e012bc245c30010
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858215"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508291"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune
 
@@ -180,12 +180,12 @@ Sigue los pasos siguientes para agregar la aplicación Microsoft Defender para e
        > [!div class="mx-imgBorder"]
        > ![Imagen de la directiva de configuración de creación automática de aplicaciones de Android](images/android-auto-grant.png)
 
-    1. En la **página Asignaciones,** seleccione el grupo de usuarios al que se asignaría esta directiva de configuración de aplicaciones. Haga **clic en Seleccionar grupos para** incluir y seleccionar el grupo aplicable y, a continuación, seleccione **Siguiente**.  El grupo seleccionado aquí suele ser el mismo grupo al que asignaría Microsoft Defender para la aplicación Android de punto de conexión.
+    1. En la **página Asignaciones,** seleccione el grupo de usuarios al que se asignaría esta directiva de configuración de aplicaciones. Haga **clic en Seleccionar grupos para** incluir y seleccionar el grupo aplicable y, a continuación, seleccione **Siguiente**. El grupo seleccionado aquí suele ser el mismo grupo al que asignaría Microsoft Defender para la aplicación Android de punto de conexión.
 
        > [!div class="mx-imgBorder"]
        > ![Imagen de la directiva de configuración de la aplicación de creación](images/android-select-group.png)
 
-    1. En la **página Revisar + Crear** que aparece a continuación, revise toda la información y, a continuación, seleccione **Crear**. <br>
+    1. En la **página Revisar + Crear** que aparece a continuación, revise toda la información y, a continuación, seleccione **Crear**.
 
         La directiva de configuración de la aplicación para Defender for Endpoint autogranting the storage permission is now assigned to the selected user group.
 
@@ -207,7 +207,7 @@ Sigue los pasos siguientes para agregar la aplicación Microsoft Defender para e
 
 Defender for Endpoint admite directivas de configuración de dispositivos para dispositivos administrados a través de Intune. Esta funcionalidad se puede aprovechar para la configuración automática de **VPN** siempre en Android Enterprise los dispositivos inscritos, por lo que el usuario final no necesita configurar el servicio VPN durante la incorporación.
 
-1. En **Dispositivos,** seleccione **Perfiles de configuración** Crear  >  **plataforma** de  >    >  **perfiles Android Enterprise**
+1. En **Dispositivos,** seleccione **Perfiles de configuración** Crear \> **plataforma** de \>  \> **perfiles Android Enterprise**
 
    Selecciona **Restricciones de dispositivo en** una de las siguientes opciones, según el tipo de inscripción del dispositivo:
    - **Perfil de trabajo totalmente administrado, dedicado y Corporate-Owned trabajo**
@@ -249,14 +249,14 @@ El perfil de configuración del dispositivo ahora se asigna al grupo de usuarios
 
     ![Imagen del perfil de configuración de dispositivos Revisar y crear](images/5autosetupofvpn.png)
 
-## <a name="complete-onboarding-and-check-status"></a>Completar la incorporación y comprobar el estado
+## <a name="check-status-and-complete-onboarding"></a>Comprobar el estado y completar la incorporación
 
 1. Confirme el estado de instalación de Microsoft Defender para Endpoint en Android haciendo clic en **el estado de instalación del dispositivo**. Comprueba que el dispositivo se muestra aquí.
 
     > [!div class="mx-imgBorder"]
     > ![Imagen del estado de instalación del dispositivo](images/900c0197aa59f9b7abd762ab2b32e80c.png)
 
-2. En el dispositivo, puedes validar el estado de incorporación yendo al **perfil de trabajo**. Confirme que Defender for Endpoint está disponible y que está inscrito en los dispositivos de propiedad **personal con perfil de trabajo**.  Si estás inscrito en un dispositivo de usuario totalmente administrado propiedad de la **empresa,** tendrá un único perfil en el dispositivo donde puedes confirmar que Defender for Endpoint está disponible.
+2. En el dispositivo, puedes validar el estado de incorporación yendo al **perfil de trabajo**. Confirme que Defender for Endpoint está disponible y que está inscrito en los dispositivos de propiedad **personal con perfil de trabajo**. Si estás inscrito en un dispositivo de usuario totalmente administrado propiedad de la **empresa,** tendrá un único perfil en el dispositivo donde puedes confirmar que Defender for Endpoint está disponible.
 
     ![Imagen de la aplicación en un dispositivo móvil](images/c2e647fc8fa31c4f2349c76f2497bc0e.png)
 

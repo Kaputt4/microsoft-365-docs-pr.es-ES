@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo filtrar datos mediante la característica de importación inteligente en el Microsoft 365 importar archivos PST al Microsoft 365.
-ms.openlocfilehash: e7faa346e78e74246264b0751a4f8648b42aca22b0465c9bb75382136dd6b736
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f56f80f635013e785918406c3edbc64621223c2
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895575"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508051"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrar datos al importar archivos PST
 
@@ -56,7 +56,7 @@ El siguiente gráfico muestra el proceso de importación inteligente y resalta l
     
   - [Use el envío de unidades para importar archivos PST a Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- Después de crear un trabajo de importación mediante la carga de red, el estado del trabajo de importación en la página Importar del Centro de cumplimiento de seguridad & se establece en Análisis en **curso,** lo que significa que Microsoft 365 está analizando los datos de los archivos PST que cargó. Haga **clic en** Actualizar actualización para actualizar el estado del trabajo de ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) importación. 
+- Después de crear un trabajo de importación mediante la carga de red, el estado del trabajo de importación en la página Importar del Centro de cumplimiento de Microsoft 365 se establece en **Análisis** en curso, lo que significa que Microsoft 365 está analizando los datos de los archivos PST que cargó. Haga **clic en** Actualizar actualización para actualizar el estado del trabajo de ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) importación. 
     
 - Para los trabajos de importación de envío de unidades, Microsoft 365 analizará los datos después de que el personal del centro de datos de Microsoft reciba el disco duro y cargue los archivos PST en el área de almacenamiento de Azure para su organización.
   

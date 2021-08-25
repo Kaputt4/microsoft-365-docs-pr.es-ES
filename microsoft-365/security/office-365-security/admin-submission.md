@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el portal de envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13520774191e9b593f962b8291c873303ddf8580
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: cb8df2eba816a5d70804bf47190c094ac9790073
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400156"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507631"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el portal de envíos para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft
 
@@ -37,11 +37,11 @@ ms.locfileid: "58400156"
 
 En Microsoft 365 organizaciones con buzones de correo Exchange Online, los administradores pueden usar el portal de envíos en el portal de Microsoft 365 Defender para enviar mensajes de correo electrónico, direcciones URL y datos adjuntos a Microsoft para examinarlos.
 
-Cuando envíe un mensaje de correo electrónico, recibirá:
+Cuando envíe un mensaje de correo electrónico para su análisis, recibirá:
 
 - **Comprobación de autenticación de** correo electrónico: detalles sobre si la autenticación de correo electrónico se ha pasado o no cuando se entregó.
 - **Aciertos de** directiva: información sobre las directivas que pueden haber permitido o bloqueado el correo electrónico entrante en su inquilino, invalidando nuestros veredictos de filtro de servicio.
-- **Reputación/detonación de carga:** examen de las direcciones URL y los datos adjuntos del mensaje.
+- **Reputación/detonación de carga:** examen actualizado de las direcciones URL y datos adjuntos del mensaje.
 - **Análisis del calificador:** revisión realizada por calificadores humanos para confirmar si los mensajes son malintencionados o no.
 
 > [!IMPORTANT]

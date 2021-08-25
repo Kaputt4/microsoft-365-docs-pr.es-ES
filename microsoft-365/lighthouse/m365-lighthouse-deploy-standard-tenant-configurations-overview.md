@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo usar líneas base para implementar configuraciones de inquilino estándar.
-ms.openlocfilehash: 5eea1deae1c8cf56315e121baa29273fc98feca8
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 5dc1f7da329ab1630d857ee337048a47ad06c9e9
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365206"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507943"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Introducción al uso de líneas base para implementar configuraciones de inquilino estándar 
 
@@ -30,15 +30,15 @@ ms.locfileid: "58365206"
 
 Microsoft 365 Lighthouse línea base proporcionan una forma repetible y escalable de evaluar y administrar la configuración de seguridad Microsoft 365 en varios inquilinos de clientes. Las líneas base también ayudan a supervisar las directivas de seguridad principales y los estándares de cumplimiento de inquilinos con configuraciones que protegen usuarios, dispositivos y datos.
 
-Diseñado para ayudar a los partners a permitir que los clientes adopten la seguridad a su propio ritmo, Microsoft 365 Lighthouse proporciona un conjunto estándar de parámetros de línea base y configuraciones predefinidas para Microsoft 365 servicios. Estas configuraciones de seguridad ayudan a medir el progreso Microsoft 365 seguridad y cumplimiento de los inquilinos.
+Diseñado para ayudar a los partners a permitir que los clientes adopten la seguridad a su propio ritmo, Lighthouse proporciona un conjunto estándar de parámetros de línea base y configuraciones predefinidas para Microsoft 365 servicios. Estas configuraciones de seguridad ayudan a medir el progreso Microsoft 365 seguridad y cumplimiento de los inquilinos.
 
-Puede ver la línea base predeterminada y sus pasos de implementación desde dentro de Microsoft 365 Lighthouse. Para aplicar líneas base a un inquilino, seleccione **Inquilinos** en el panel de navegación izquierdo y, a continuación, seleccione un espacio empresarial. A continuación, vaya a la **pestaña Planes de** implementación e implemente la línea base deseada.
+Puede ver la línea base predeterminada y sus pasos de implementación desde Lighthouse. Para aplicar líneas base a un inquilino, seleccione **Inquilinos** en el panel de navegación izquierdo y, a continuación, seleccione un espacio empresarial. A continuación, vaya a la **pestaña Planes de** implementación e implemente la línea base deseada.
 
 ## <a name="standard-baseline-security-templates"></a>Plantillas de seguridad de línea base estándar
 
-Microsoft 365 Lighthouse configuraciones de línea base estándar para cargas de trabajo de seguridad están diseñadas para ayudar a todos los inquilinos administrados a alcanzar un estado aceptable de cobertura y cumplimiento de seguridad.
+Las configuraciones de línea base estándar de Faro para cargas de trabajo de seguridad están diseñadas para ayudar a todos los inquilinos administrados a alcanzar un estado aceptable de cobertura y cumplimiento de seguridad.
 
-Las configuraciones de línea base de la tabla siguiente vienen estándar con la Microsoft 365 Lighthouse línea base predeterminada.<br><br>
+Las configuraciones de línea base de la tabla siguiente vienen estándar con la línea base predeterminada de Lighthouse.<br><br>
 
 | Configuración de línea base | Descripción |
 |--|--|

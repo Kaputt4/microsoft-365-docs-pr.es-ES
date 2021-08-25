@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c2758fd51d88be2447ae6ea63ca9ff3f7349ca2f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 4027d31cd66a783b6bb83742912f94a3a017c74a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247344"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508075"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>Comprender el informe HTML del analizador de cliente
 
@@ -40,17 +40,14 @@ Use el siguiente ejemplo para comprender el informe.
 
 ![Imagen del resultado del analizador de cliente](images/147cbcf0f7b6f0ff65d200bf3e4674cb.png)
 
--   En la parte superior, la versión de script y el tiempo de ejecución de script se enumeran como referencia
+- En la parte superior, la versión de script y el tiempo de ejecución de script se enumeran como referencia
+- La **sección Información del** dispositivo proporciona un sistema operativo básico e identificadores de dispositivo para identificar de forma única el dispositivo en el que se ha ejecutado el analizador.
+- Los **detalles de seguridad de** puntos de conexión proporcionan información general sobre Microsoft Defender para los procesos relacionados con endpoints, incluidos Antivirus de Microsoft Defender y el proceso del sensor. Si los procesos importantes no están en línea como se esperaba, el color cambiará a rojo.
 
--   La **sección Información del** dispositivo proporciona un sistema operativo básico e identificadores de dispositivo para identificar de forma única el dispositivo en el que se ha ejecutado el analizador.
+  ![Imagen del resultado detallado del analizador de cliente](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
--   Los **detalles de seguridad de** puntos de conexión proporcionan información general sobre Microsoft Defender para los procesos relacionados con endpoints, incluidos Antivirus de Microsoft Defender y el proceso del sensor. Si los procesos importantes no están en línea como se esperaba, el color cambiará a rojo.
-
-![Imagen del resultado detallado del analizador de cliente](images/85f56004dc6bd1679c3d2c063e36cb80.png)
-
--   En **Comprobar resumen de** resultados, tendrá un recuento agregado de eventos de error, advertencia o informativos detectados por el analizador.
-
--   En **los resultados detallados** verá una lista (ordenada por gravedad) con los resultados y las instrucciones basadas en las observaciones realizadas por el analizador.
+- En **Comprobar resumen de** resultados, tendrá un recuento agregado de eventos de error, advertencia o informativos detectados por el analizador.
+- En **los resultados detallados** verá una lista (ordenada por gravedad) con los resultados y las instrucciones basadas en las observaciones realizadas por el analizador.
 
 ## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>Abrir un vale de soporte técnico a Microsoft e incluir los resultados del analizador
 

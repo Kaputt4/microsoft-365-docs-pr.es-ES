@@ -477,6 +477,7 @@
 ####### [Propiedades y métodos de alerta](alerts.md)
 ####### [Listar alertas](get-alerts.md)
 ####### [Crear alerta](create-alert-by-reference.md)
+####### [Alertas de actualización por lotes](batch-update-alerts.md)
 ####### [Actualizar alerta](update-alert.md)
 ####### [Obtener información de alertas por id](get-alert-info-by-id.md)
 ####### [Obtener información de dominios relacionada con alertas](get-alert-related-domain-info.md)

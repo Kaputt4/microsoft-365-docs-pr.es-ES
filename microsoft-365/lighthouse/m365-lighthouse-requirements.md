@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga una lista de requisitos para usar Microsoft 365 Lighthouse.
-ms.openlocfilehash: 1d2f2812e2f22060c2e401519f18ae8dc6f1959993ef7703fa1a9add69e9ae14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2247afb35e3b0e4757d7a6786b3a6a9027491e06
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847960"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507811"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Requisitos para Microsoft 365 Lighthouse
 
@@ -30,9 +30,9 @@ ms.locfileid: "53847960"
 
 Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (MSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB).  
 
-Los MSP deben estar inscritos en el programa Proveedor de soluciones en la nube (CSP) como revendedor indirecto o socio de factura directa para usar Microsoft 365 Lighthouse.  
+Los MSP deben estar inscritos en el programa Proveedor de soluciones en la nube (CSP) como revendedor indirecto o socio de facturación directa para usar Lighthouse.  
 
-Además, cada inquilino de cliente MSP debe cumplir los requisitos Microsoft 365 Lighthouse requisitos siguientes: 
+Además, cada inquilino de cliente MSP debe cumplir los siguientes requisitos: 
  
 - Privilegios de administrador delegados (DAP) para msp 
 - Al menos una Microsoft 365 Empresa Premium licencia 

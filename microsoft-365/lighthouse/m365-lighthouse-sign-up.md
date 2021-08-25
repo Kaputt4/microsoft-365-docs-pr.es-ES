@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: 60d78f243c757596aa5b3d493d0b79848ebe033a109858e8fd8fbd7ae6bf5f9c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80e56055a89d73f53c025de05dfc1e8dabedda78
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877796"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507895"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrate para Microsoft 365 Lighthouse
 
@@ -49,16 +49,16 @@ ms.locfileid: "53877796"
 1. Seleccione **Comprar**.
 
     > [!NOTE]
-    > Microsoft 365 Lighthouse requiere una licencia solo para el inquilino asociado. No se requieren licencias adicionales por usuario para el partner y no se requieren Microsoft 365 Lighthouse licencias en ningún inquilino del cliente. 
+    > Lighthouse requiere una licencia solo para el inquilino asociado. No se requieren licencias adicionales por usuario para el partner y no se requieren licencias de Lighthouse en ningún inquilino del cliente. 
 
-    Para comprobar que Microsoft 365 Lighthouse se agregó correctamente al inquilino, busque Microsoft 365 Lighthouse en **Facturación >** Sus productos en el Centro de administración de Microsoft 365.
+    Para comprobar que Lighthouse se agregó correctamente a su inquilino, busque Microsoft 365 Lighthouse **en Facturación >** Sus productos en el Centro de administración de Microsoft 365.
 
-1. Si no se le redirige al portal de Microsoft 365 Lighthouse, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> .
+1. Si no se le redirige al portal de Lighthouse, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> .
 
 1. Seleccione **Aceptar & Continuar** para completar la modificación del contrato de socio.
 
     > [!NOTE]
-    > Después de completar el registro, los datos del cliente pueden tardar hasta 48 horas en aparecer en Microsoft 365 Lighthouse.
+    > Después de completar el registro, los datos del cliente pueden tardar hasta 48 horas en aparecer en Lighthouse.
 
 ## <a name="next-steps"></a>Siguientes pasos
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: El administrador puede aprender a usar la auditoría de uso compartido en el registro de auditoría Microsoft 365 para identificar los recursos compartidos con usuarios fuera de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e77d02351763caee74137108a8d4f7b6a6f7bd3dd59abc8ce312a9290e6a7789
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 54041bfc9ea2c35ab241ca5509ea8c6dd1a101f2
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801496"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508231"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Usar el uso compartido de auditoría en el registro de auditoría
 
@@ -94,7 +94,7 @@ Un requisito común para los administradores es crear una lista de todos los rec
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Paso 1: Buscar eventos de uso compartido y exportar los resultados a un archivo CSV
 
-El primer paso es buscar eventos de uso compartido en el registro de auditoría. Para obtener más información (incluidos los permisos necesarios) sobre cómo buscar en el registro de auditoría, vea Buscar en el registro de auditoría en el Centro de [seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md).
+El primer paso es buscar eventos de uso compartido en el registro de auditoría. Para obtener más información (incluidos los permisos necesarios) sobre cómo buscar en el registro de auditoría, vea [Buscar en el registro de auditoría.](search-the-audit-log-in-security-and-compliance.md)
   
 1. Vaya a <https://compliance.microsoft.com>.
 

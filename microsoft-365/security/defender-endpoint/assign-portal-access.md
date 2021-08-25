@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
 ms.technology: mde
-ms.openlocfilehash: 0970314509efbcfad79d7f9f52f5ae3605f3d8fe538a18b142340fe6a2cf8d1f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2d290352006b09be0d15a5df55533500db2fadb0
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857828"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507775"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>Asignar acceso de usuario a Centro de seguridad de Microsoft Defender
 
@@ -35,7 +35,6 @@ ms.locfileid: "53857828"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint admite dos formas de administrar permisos:
@@ -45,8 +44,8 @@ Defender for Endpoint admite dos formas de administrar permisos:
 
 > [!NOTE]
 > Si ya ha asignado permisos básicos, puede cambiar a RBAC en cualquier momento. Tenga en cuenta lo siguiente antes de realizar el cambio:
-> 
-> - A los usuarios con acceso completo (usuarios a los que se les asigna el rol de directorio Administrador global o Administrador de seguridad en Azure AD), se les asigna automáticamente el rol de administrador de Defender for Endpoint predeterminado, que también tiene acceso completo. Después de cambiar a RBAC, se pueden asignar grupos de usuarios de Azure AD adicionales al rol de administrador Defender for Endpoint.  Solo los usuarios asignados al rol de administrador Defender for Endpoint pueden administrar permisos mediante RBAC. 
+>
+> - A los usuarios con acceso completo (usuarios a los que se les asigna el rol de directorio Administrador global o Administrador de seguridad en Azure AD), se les asigna automáticamente el rol de administrador de Defender for Endpoint predeterminado, que también tiene acceso completo. Después de cambiar a RBAC, se pueden asignar grupos de usuarios de Azure AD adicionales al rol de administrador Defender for Endpoint. Solo los usuarios asignados al rol de administrador Defender for Endpoint pueden administrar permisos mediante RBAC. 
 > - Los usuarios con acceso de solo lectura (lectores de seguridad) perderán el acceso al portal hasta que se les asigne un rol. Tenga en cuenta que solo se puede asignar un rol a los grupos de usuarios de Azure AD en RBAC.
 > - Después de cambiar a RBAC, no podrá volver a usar la administración de permisos básicos.
 

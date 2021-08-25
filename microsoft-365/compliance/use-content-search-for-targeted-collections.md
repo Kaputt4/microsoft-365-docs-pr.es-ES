@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Use la búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
-ms.openlocfilehash: b165e52835165980da3621634ef29247a87490fe
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: fb7b6e9f1115aae64a2e0e2a3776acf535d71509
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257348"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508147"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Usar la búsqueda de contenido para colecciones dirigidas
 
@@ -35,7 +35,7 @@ La herramienta de búsqueda de contenido del Centro de cumplimiento de Microsoft
 
 ## <a name="before-you-run-a-targeted-collection"></a>Antes de ejecutar una colección de destino
 
-- Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos en el Centro de seguridad y & cumplimiento para ejecutar el script en el paso 1. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
+- Debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 para ejecutar el script en el paso 1. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
 
 - También debe tener asignado el rol Destinatarios de correo en su Exchange Online organización. Esto es necesario para ejecutar el cmdlet **Get-MailboxFolderStatistics,** que se incluye en el script. De forma predeterminada, el rol Destinatarios de correo se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en Exchange Online. Para obtener más información acerca de cómo asignar permisos en Exchange Online, vea [Manage role group members](/exchange/manage-role-group-members-exchange-2013-help). También puede crear un grupo de roles personalizado, asignarle el rol Destinatarios de correo y, a continuación, agregar los miembros que necesitan ejecutar el script en el paso 1. Para obtener más información, consulte [Administrar grupos de roles](/Exchange/permissions-exo/role-groups).
 
@@ -75,7 +75,7 @@ Para mostrar una lista de carpetas de buzones o nombres de vínculo de documento
    #########################################################################################################
    # This PowerShell script will prompt you for:                                #
    #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-   #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
+   #      Online and who is an eDiscovery Manager in the Microsoft 365 compliance center.            #
    # The script will then:                                            #
    #    * If an email address is supplied: list the folders for the target mailbox.            #
    #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
@@ -92,7 +92,7 @@ Para mostrar una lista de carpetas de buzones o nombres de vínculo de documento
    #########################################################################################################
    # Collect the target email address or SharePoint Url
    $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-   # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
+   # Authenticate with Exchange Online and the Microsoft 365 compliance center (Exchange Online Protection - EOP)
    if ($addressOrSite.IndexOf("@") -ige 0)
    {
       # List the folder Ids for the target mailbox
@@ -236,7 +236,7 @@ Después de ejecutar el script para recopilar una lista de id. de carpeta o vín
 
     - Junto a Exchange correo electrónico, haga clic en Elegir usuarios, grupos o equipos **y,** **a** continuación, agregue el mismo buzón que especificó al ejecutar el script en el paso 1.
 
-      O bien:
+      O bien
 
     - Junto a **SharePoint,** haga  clic en Elegir sitios y, a continuación, agregue la misma dirección URL del sitio que especificó al ejecutar el script en el paso 1.
 

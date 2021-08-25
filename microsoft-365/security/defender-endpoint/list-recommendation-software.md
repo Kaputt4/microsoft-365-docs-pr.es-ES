@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 64efe4f7e0c4b022c300d3e52551f64b73fcae20
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 488450f43de17904cbcac97e2aceaf11f1e12f17
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258672"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507595"
 ---
 # <a name="list-software-by-recommendation"></a>Enumerar software por recomendación
 
@@ -46,7 +46,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación|SecurityRecommendation.Read.All|'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
+Aplicación|Software.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
 Delegado (cuenta profesional o educativa)|SecurityRecommendation.Read|'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
 
 ## <a name="http-request"></a>Solicitud HTTP
@@ -59,7 +59,7 @@ GET /api/recommendations/{id}/software
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

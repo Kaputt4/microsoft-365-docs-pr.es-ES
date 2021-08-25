@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
-ms.openlocfilehash: bd105f1f6c75ae084ce5b60e9585ef30be1058e2e1f9f1d4ad1ba8f3241f8d8e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c67f5ff58ab62e6a2a4c42446f66b753d774dfbb
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794455"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507739"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>Cola de alertas en Microsoft 365 Defender
 
@@ -37,15 +37,14 @@ ms.locfileid: "53794455"
 Obtenga información sobre cómo puede ver y administrar la cola para que pueda investigar eficazmente las amenazas que se ven en entidades como dispositivos, archivos o cuentas de usuario.
 
 ## <a name="in-this-section"></a>En esta sección
-Tema | Descripción 
+
+Tema|Descripción
 :---|:---
-[Ver y organizar la cola de alertas](alerts-queue.md) | Muestra una lista de alertas marcadas en la red.
-[Administrar alertas](manage-alerts.md) | Obtenga información sobre cómo administrar alertas como cambiar su estado, asignarla a un miembro de operaciones de seguridad y ver el historial de una alerta.
-[Investigar alertas](investigate-alerts.md)| Investigue las alertas que afectan a la red, comprenda lo que significan y cómo resolverlas.
-[Investigar archivos](investigate-files.md)| Investigue los detalles de un archivo asociado a una alerta, comportamiento o evento específicos. 
-[Investigar dispositivos](investigate-machines.md)| Investigar los detalles de un dispositivo asociado a una alerta, comportamiento o evento específicos. 
-[Investigar una dirección IP](investigate-ip.md) | Examine las posibles comunicaciones entre dispositivos de la red y las direcciones IP (protocolos de Internet externos).
-[Investigar un dominio](investigate-domain.md) | Investigue un dominio para ver si los dispositivos y servidores de la red se han estado comunicando con un dominio malintencionado conocido. 
-[Reactivar una cuenta de usuario](investigate-user.md) | Identifique las cuentas de usuario con las alertas más activas e investigue los casos de posibles credenciales comprometidas.  
-
-
+[Ver y organizar la cola de alertas](alerts-queue.md)|Muestra una lista de alertas marcadas en la red.
+[Administrar alertas](manage-alerts.md)|Obtenga información sobre cómo administrar alertas como cambiar su estado, asignarla a un miembro de operaciones de seguridad y ver el historial de una alerta.
+[Investigar alertas](investigate-alerts.md)|Investigue las alertas que afectan a la red, comprenda lo que significan y cómo resolverlas.
+[Investigar archivos](investigate-files.md)|Investigue los detalles de un archivo asociado a una alerta, comportamiento o evento específicos.
+[Investigar dispositivos](investigate-machines.md)|Investigar los detalles de un dispositivo asociado a una alerta, comportamiento o evento específicos.
+[Investigar una dirección IP](investigate-ip.md)|Examine las posibles comunicaciones entre dispositivos de la red y las direcciones IP (protocolos de Internet externos).
+[Investigar un dominio](investigate-domain.md)|Investigue un dominio para ver si los dispositivos y servidores de la red se han estado comunicando con un dominio malintencionado conocido.
+[Reactivar una cuenta de usuario](investigate-user.md)|Identifique las cuentas de usuario con las alertas más activas e investigue los casos de posibles credenciales comprometidas.

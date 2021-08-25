@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77e7b86de5369b6a65224579de214d32c1f628e3
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377982"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508255"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso Alert
 
@@ -36,55 +36,64 @@ ms.locfileid: "58377982"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="methods"></a>Métodos
 
-Método |Tipo de valor devuelto |Descripción
-:---|:---|:---
-[Obtener alerta](get-alert-info-by-id.md) | [Alerta](alerts.md) | Obtener un único [objeto de](alerts.md) alerta.
-[List alerts](get-alerts.md) | [Colección Alert](alerts.md) | Enumerar [la colección de](alerts.md) alertas.
-[Update alert](update-alert.md) | [Alerta](alerts.md) | Actualizar alerta [específica](alerts.md).
-[Alertas de actualización por lotes](batch-update-alerts.md) | | Actualizar un lote de [alertas](alerts.md).
-[Crear alerta](create-alert-by-reference.md)|[Alerta](alerts.md)|Crear una alerta basada en los datos de eventos obtenidos de [la búsqueda avanzada](run-advanced-query-api.md).
-[Enumerar dominios relacionados](get-alert-related-domain-info.md)|Colección domain| Enumerar las direcciones URL asociadas con la alerta.
-[Enumerar archivos relacionados](get-alert-related-files-info.md) | [Colección de](files.md) archivos |  Enumerar [las entidades](files.md) de archivo asociadas a la [alerta](alerts.md).
-[Enumerar direcciones IP relacionadas](get-alert-related-ip-info.md) | Colección IP | Enumerar direcciones IP asociadas a la alerta.
-[Obtener máquinas relacionadas](get-alert-related-machine-info.md) | [Máquina](machine.md) | El [equipo](machine.md) asociado a la [alerta](alerts.md).
-[Obtener usuarios relacionados](get-alert-related-user-info.md) | [User](user.md) | El [usuario](user.md) asociado a la [alerta](alerts.md).
+<br>
+
+****
+
+|Método|Tipo de valor devuelto|Descripción|
+|---|---|---|
+|[Obtener alerta](get-alert-info-by-id.md)|[Alerta](alerts.md)|Obtener un único [objeto de](alerts.md) alerta.|
+|[Listar alertas](get-alerts.md)|[Colección Alert](alerts.md)|Enumerar [la colección de](alerts.md) alertas.|
+|[Update alert](update-alert.md)|[Alerta](alerts.md)|Actualizar alerta [específica](alerts.md).|
+|[Alertas de actualización por lotes](batch-update-alerts.md)||Actualizar un lote de [alertas](alerts.md).|
+|[Crear alerta](create-alert-by-reference.md)|[Alerta](alerts.md)|Crear una alerta basada en los datos de eventos obtenidos de [la búsqueda avanzada](run-advanced-query-api.md).|
+|[Enumerar dominios relacionados](get-alert-related-domain-info.md)|Colección domain|Enumerar las direcciones URL asociadas con la alerta.|
+|[Enumerar archivos relacionados](get-alert-related-files-info.md)|[Colección de](files.md) archivos|Enumerar [las entidades](files.md) de archivo asociadas a la [alerta](alerts.md).|
+|[Enumerar direcciones IP relacionadas](get-alert-related-ip-info.md)|Colección IP|Enumerar direcciones IP asociadas a la alerta.|
+|[Obtener máquinas relacionadas](get-alert-related-machine-info.md)|[Máquina](machine.md)|El [equipo](machine.md) asociado a la [alerta](alerts.md).|
+|[Obtener usuarios relacionados](get-alert-related-user-info.md)|[Usuario](user.md)|El [usuario](user.md) asociado a la [alerta](alerts.md).|
+|
 
 ## <a name="properties"></a>Propiedades
 
-Propiedad |    Tipo    |    Descripción
-:---|:---|:---
-id | Cadena | Id. de alerta.
-title | String | Título de la alerta.
-description | String | Descripción de la alerta.
-alertCreationTime | DateTimeOffset que admite valores NULL | La fecha y hora (en UTC) se creó la alerta.
-lastEventTime | DateTimeOffset que admite valores NULL | La última aparición del evento que desencadenó la alerta en el mismo dispositivo.
-firstEventTime | DateTimeOffset que admite valores NULL | La primera aparición del evento que desencadenó la alerta en ese dispositivo.
-lastUpdateTime | DateTimeOffset que admite valores NULL | La fecha y hora (en UTC) la alerta se actualizó por última vez.
-resolvedTime | DateTimeOffset que admite valores NULL | La fecha y hora en que se cambió el estado de la alerta a "Resuelto".
-incidentId | Long que admite valores NULL | El [identificador de](view-incidents-queue.md) incidente de la alerta.
-investigationId | Long que admite valores NULL | El [identificador de](automated-investigations.md) investigación relacionado con la alerta.
-investigationState | Enumeración que admite valores null | El estado actual de la [investigación](automated-investigations.md). Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
-assignedTo | Cadena | Propietario de la alerta.
-rbacGroupName | Cadena | Nombre del grupo de dispositivos RBAC.
-mitreTechniques | Cadena | Mitre Enterprise id. de técnica.
-relatedUser | Cadena |  Detalles del usuario relacionados con una alerta específica.
-severity | Enum | Gravedad de la alerta. Los valores posibles son: 'UnSpecified', 'Informational', 'Low', 'Medium' y 'High'.
-status | Enum | Especifica el estado actual de la alerta. Los valores posibles son: "Desconocido", "Nuevo", "InProgress" y "Resuelto".
-classification | Enumeración que admite valores null | Especificación de la alerta. Los valores posibles son: 'Unknown', 'FalsePositive', 'TruePositive'.
-determinación | Enumeración que admite valores null | Especifica la determinación de la alerta. Los valores posibles son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.
-categoría| Cadena | Categoría de la alerta.
-detectionSource | Cadena | Origen de detección.
-threatFamilyName | Cadena | Familia de amenazas.
-threatName | Cadena | Nombre de la amenaza.
-machineId | Cadena | Id. de una [entidad de](machine.md) máquina asociada a la alerta.
-computerDnsName | Cadena | [nombre](machine.md) completo de la máquina.
-aadTenantId | Cadena | El Azure Active Directory de usuario.
-detectorId | Cadena | El identificador del detector que desencadenó la alerta.
-comments | Lista de comentarios de alerta | El objeto Alert Comment contiene: cadena de comentario, createdBy string y createTime date time.
-Evidencia | Lista de pruebas de alerta | Evidencia relacionada con la alerta. Vea el ejemplo abajo.
+<br>
+
+****
+
+|Propiedad|Tipo|Descripción|
+|---|---|---|
+|id|Cadena|Id. de alerta.|
+|title|String|Título de la alerta.|
+|description|String|Descripción de la alerta.|
+|alertCreationTime|DateTimeOffset que admite valores NULL|La fecha y hora (en UTC) se creó la alerta.|
+|lastEventTime|DateTimeOffset que admite valores NULL|La última aparición del evento que desencadenó la alerta en el mismo dispositivo.|
+|firstEventTime|DateTimeOffset que admite valores NULL|La primera aparición del evento que desencadenó la alerta en ese dispositivo.|
+|lastUpdateTime|DateTimeOffset que admite valores NULL|La fecha y hora (en UTC) la alerta se actualizó por última vez.|
+|resolvedTime|DateTimeOffset que admite valores NULL|La fecha y hora en que se cambió el estado de la alerta a "Resuelto".|
+|incidentId|Long que admite valores NULL|El [identificador de](view-incidents-queue.md) incidente de la alerta.|
+|investigationId|Long que admite valores NULL|El [identificador de](automated-investigations.md) investigación relacionado con la alerta.|
+|investigationState|Enumeración que admite valores null|El estado actual de la [investigación](automated-investigations.md). Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
+|assignedTo|Cadena|Propietario de la alerta.|
+|rbacGroupName|Cadena|Nombre del grupo de dispositivos RBAC.|
+|mitreTechniques|Cadena|Mitre Enterprise id. de técnica.|
+|relatedUser|Cadena|Detalles del usuario relacionados con una alerta específica.|
+|severity|Enum|Gravedad de la alerta. Los valores posibles son: 'UnSpecified', 'Informational', 'Low', 'Medium' y 'High'.|
+|status|Enum|Especifica el estado actual de la alerta. Los valores posibles son: "Desconocido", "Nuevo", "InProgress" y "Resuelto".|
+|classification|Enumeración que admite valores null|Especificación de la alerta. Los valores posibles son: 'Unknown', 'FalsePositive', 'TruePositive'.|
+|determinación|Enumeración que admite valores null|Especifica la determinación de la alerta. Los valores posibles son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
+|categoría|Cadena|Categoría de la alerta.|
+|detectionSource|Cadena|Origen de detección.|
+|threatFamilyName|Cadena|Familia de amenazas.|
+|threatName|Cadena|Nombre de la amenaza.|
+|machineId|Cadena|Id. de una [entidad de](machine.md) máquina asociada a la alerta.|
+|computerDnsName|Cadena|[nombre](machine.md) completo de la máquina.|
+|aadTenantId|Cadena|El Azure Active Directory de usuario.|
+|detectorId|Cadena|El identificador del detector que desencadenó la alerta.|
+|comments|Lista de comentarios de alerta|El objeto Alert Comment contiene: cadena de comentario, createdBy string y createTime date time.|
+|Evidencia|Lista de pruebas de alerta|Evidencia relacionada con la alerta. Vea el ejemplo abajo.|
+|
 
 ### <a name="response-example-for-getting-single-alert"></a>Ejemplo de respuesta para obtener una sola alerta:
 

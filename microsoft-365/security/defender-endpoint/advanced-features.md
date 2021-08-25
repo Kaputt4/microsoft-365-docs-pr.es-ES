@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5fb05070f23781dd65cad1d1c359e139d12b5a5d23efa7a0b1b437c621f71bf7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bd56ab7daef91fb06aca8bc9d60213877b9696b8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829896"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507763"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -38,7 +38,7 @@ Según los productos de seguridad de Microsoft que use, algunas características
 
 ## <a name="enable-advanced-features"></a>Habilitar características avanzadas
 
-1. En el panel de navegación, **seleccione Configuración** Características avanzadas  >   **de**  >  **endpoints**.
+1. En el panel de navegación, **seleccione Configuración** Características avanzadas \> **de** \> **endpoints**.
 2. Seleccione la característica avanzada que desea configurar y alternar la configuración entre **On** y **Off**.
 3. Haga clic **en Guardar preferencias**.
 
@@ -55,33 +55,35 @@ Active esta característica para que los usuarios con los permisos adecuados pue
 Para obtener más información acerca de las asignaciones de roles, vea [Create and manage roles](user-roles.md).
 
 ## <a name="live-response-for-servers"></a>Respuesta en directo para servidores
+
 Active esta característica para que los usuarios con los permisos adecuados puedan iniciar una sesión de respuesta en directo en los servidores.
 
 Para obtener más información acerca de las asignaciones de roles, vea [Create and manage roles](user-roles.md).
-
 
 ## <a name="live-response-unsigned-script-execution"></a>Ejecución de script sin signo de respuesta en directo
 
 Habilitar esta característica permite ejecutar scripts sin signo en una sesión de respuesta en directo.
 
 ## <a name="always-remediate-pua"></a>Corregir siempre la PUA
-Las aplicaciones potencialmente no deseadas (PUA) son una categoría de software que puede hacer que el equipo se ejecute lentamente, mostrar anuncios inesperados o, en el peor de los casos, instalar otro software, que puede ser inesperado o no deseado. 
 
-Active esta característica para que las aplicaciones potencialmente no deseadas (PUA) se corrija en todos los dispositivos del espacio empresarial, incluso si la protección pua no está configurada en los dispositivos. Esto ayudará a proteger a los usuarios de la instalación involuntaria de aplicaciones no deseadas en su dispositivo. Cuando está desactivada, la corrección depende de la configuración del dispositivo. 
+Las aplicaciones potencialmente no deseadas (PUA) son una categoría de software que puede hacer que el equipo se ejecute lentamente, mostrar anuncios inesperados o, en el peor de los casos, instalar otro software, que puede ser inesperado o no deseado.
 
+Active esta característica para que las aplicaciones potencialmente no deseadas (PUA) se corrija en todos los dispositivos del espacio empresarial, incluso si la protección pua no está configurada en los dispositivos. Esto ayudará a proteger a los usuarios de la instalación involuntaria de aplicaciones no deseadas en su dispositivo. Cuando está desactivada, la corrección depende de la configuración del dispositivo.
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Restringir la correlación a grupos de dispositivos con ámbito
-Esta configuración se puede usar para escenarios en los que las operaciones SOC locales quisieran limitar las correlaciones de alertas solo a los grupos de dispositivos a los que pueden tener acceso. Al activar esta configuración, un incidente compuesto por alertas que se cruzan entre grupos de dispositivos ya no se considerará un solo incidente. A continuación, el SOC local puede tomar medidas sobre el incidente porque tienen acceso a uno de los grupos de dispositivos implicados. Sin embargo, soc global verá varios incidentes diferentes por grupo de dispositivos en lugar de un incidente. No recomendamos activar esta configuración a menos que esto supere las ventajas de la correlación de incidentes en toda la organización
->[!NOTE]
->Cambiar esta configuración afecta solo a las correlaciones futuras de alertas.
+
+Esta configuración se puede usar para escenarios en los que las operaciones SOC locales quisieran limitar las correlaciones de alertas solo a los grupos de dispositivos a los que pueden tener acceso. Al activar esta configuración, un incidente compuesto por alertas que se cruzan entre grupos de dispositivos ya no se considerará un solo incidente. A continuación, el SOC local puede tomar medidas sobre el incidente porque tienen acceso a uno de los grupos de dispositivos implicados. Sin embargo, soc global verá varios incidentes diferentes por grupo de dispositivos en lugar de un incidente. No recomendamos activar esta configuración a menos que esto supere las ventajas de la correlación de incidentes en toda la organización.
+
+> [!NOTE]
+> Cambiar esta configuración afecta solo a las correlaciones futuras de alertas.
 
 ## <a name="enable-edr-in-block-mode"></a>Habilitar EDR en modo de bloque
-La detección y respuesta de puntos de conexión (EDR) en modo de bloqueo proporciona protección contra artefactos malintencionados, incluso cuando Antivirus de Microsoft Defender se ejecuta en modo pasivo. Cuando está activado, EDR en modo de bloqueo bloquea los artefactos o comportamientos malintencionados que se detectan en un dispositivo. EDR en modo de bloqueo funciona en segundo plano para corregir artefactos malintencionados detectados después de la infracción.
 
+La detección y respuesta de puntos de conexión (EDR) en modo de bloqueo proporciona protección contra artefactos malintencionados, incluso cuando Antivirus de Microsoft Defender se ejecuta en modo pasivo. Cuando está activado, EDR en modo de bloqueo bloquea los artefactos o comportamientos malintencionados que se detectan en un dispositivo. EDR en modo de bloqueo funciona en segundo plano para corregir artefactos malintencionados detectados después de la infracción.
 
 ## <a name="autoresolve-remediated-alerts"></a>Alertas remediadas de Autoresolve
 
-Para los inquilinos creados en o después de Windows 10, versión 1809, la capacidad de investigación automatizada y corrección está configurada de forma predeterminada para resolver alertas en las que el estado del resultado del análisis automatizado es "No se encontraron amenazas" o "Corregido".  Si no quieres que las alertas se resuelvan automáticamente, tendrás que desactivar manualmente la característica.
+Para los inquilinos creados en o después de Windows 10, versión 1809, la capacidad de investigación automatizada y corrección está configurada de forma predeterminada para resolver alertas en las que el estado del resultado del análisis automatizado es "No se encontraron amenazas" o "Corregido". Si no quieres que las alertas se resuelvan automáticamente, tendrás que desactivar manualmente la característica.
 
 > [!TIP]
 > Para los inquilinos creados antes de esa versión, deberá activar manualmente esta característica desde la [página Características avanzadas.](https://security.microsoft.com//preferences2/integration)
@@ -102,10 +104,10 @@ Esta característica permite bloquear archivos potencialmente malintencionados e
 
 Para activar **Permitir o bloquear** archivos:
 
-1. En el panel de navegación, **seleccione Configuración**  >  **Características avanzadas**  >    >  **generales de**  >  puntos de conexión Permitir o bloquear archivo .
+1. En el panel de navegación, **seleccione Configuración** \> **Características avanzadas** \>  \> **generales de** \> puntos de conexión Permitir o bloquear archivo .
 
 1. Alterna la configuración entre **On** y **Off**.
- 
+
     :::image type="content" source="../../media/alloworblockfile.png" alt-text="Imagen de la configuración avanzada para la característica de archivo de bloqueo":::
 
 1. Seleccione **Guardar preferencias** en la parte inferior de la página.
@@ -132,7 +134,6 @@ Esta característica está disponible si su organización usa Antivirus de Micro
 
 Mantenga activada la protección contra alteraciones para evitar cambios no deseados en la solución de seguridad y sus características esenciales.
 
-
 ## <a name="show-user-details"></a>Mostrar detalles de usuario
 
 Active esta característica para que pueda ver los detalles del usuario almacenados en Azure Active Directory. Los detalles incluyen la imagen, el nombre, el título y la información del departamento de un usuario al investigar entidades de cuenta de usuario. Puede encontrar información de cuenta de usuario en las siguientes vistas:
@@ -142,7 +143,6 @@ Active esta característica para que pueda ver los detalles del usuario almacena
 - Página de detalles del dispositivo
 
 Para obtener más información, vea [Investigar una cuenta de usuario](investigate-user.md).
-
 
 ## <a name="skype-for-business-integration"></a>Skype Empresarial integración
 
@@ -175,6 +175,7 @@ De los dos componentes de Microsoft Threat Expert, la notificación de ataques d
 
 > [!NOTE]
 > La Expertos en amenazas de Microsoft de Defender for Endpoint está disponible con una licencia de E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
+
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 Al habilitar esta configuración, Defender para las señales de punto de conexión Microsoft Cloud App Security para proporcionar una mayor visibilidad del uso de aplicaciones en la nube. Los datos reenviados se almacenan y procesan en la misma ubicación que los Cloud App Security datos.
@@ -185,7 +186,6 @@ Al habilitar esta configuración, Defender para las señales de punto de conexi�
 ## <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
 Reenvía las señales de Punto de conexión de Microsoft Defender a Puntuación segura de Microsoft en el centro Microsoft 365 seguridad. Al activar esta característica, Microsoft Secure Score ofrece visibilidad sobre la posición de seguridad del dispositivo. Los datos reenviados se almacenan y procesan en la misma ubicación que los datos de puntuación segura de Microsoft.
-
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Habilitar la integración de Microsoft Defender para endpoints desde el portal de Microsoft Defender para identidades
 
@@ -200,15 +200,15 @@ Para recibir la integración contextual de dispositivos en Microsoft Defender fo
 Después de completar los pasos de integración en ambos portales, podrás ver alertas relevantes en la página detalles del dispositivo o detalles del usuario.
 
 ## <a name="web-content-filtering"></a>Filtrado de contenido web
+
 Bloquear el acceso a sitios web que contengan contenido no deseado y realizar un seguimiento de la actividad web en todos los dominios. Para especificar las categorías de contenido web que desea bloquear, cree una [directiva de filtrado de contenido web](https://security.microsoft.com/preferences2/web_content_filtering_policy). Asegúrese de que tiene protección de red en modo de bloqueo al implementar la línea base de seguridad de [Microsoft Defender para](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)endpoints .
 
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Compartir alertas de extremo con el Centro de cumplimiento de Microsoft
+
 Reenvía las alertas de seguridad de puntos de conexión y su estado de evaluación al Centro de cumplimiento de Microsoft, lo que le permite mejorar las directivas de administración de riesgos internos con alertas y corregir los riesgos internos antes de que causen daños. Los datos reenviados se procesan y almacenan en la misma ubicación que los Office 365 datos.
 
 Después de configurar los indicadores de infracción de directivas de seguridad en la configuración de administración de riesgos de insider, las [alertas](/microsoft-365/compliance/insider-risk-management-settings#indicators) de Defender for Endpoint se compartirán con la administración de riesgos de insider para los usuarios aplicables.
-
-
 
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune conexión
 
@@ -222,7 +222,6 @@ Esta característica solo está disponible si tiene lo siguiente:
 - Un inquilino con licencia para Enterprise Mobility + Security E3 y Windows E5 (o Microsoft 365 Enterprise E5)
 - Un entorno Microsoft Intune activo, con dispositivos administrados por Intune Windows 10 [unidos a Azure AD.](/azure/active-directory/devices/concept-azure-ad-join/)
 
-
 ### <a name="conditional-access-policy"></a>Directiva de acceso condicional
 
 Al habilitar la integración de Intune, Intune creará automáticamente una directiva clásica de acceso condicional (CA). Esta directiva de ca clásica es un requisito previo para configurar informes de estado en Intune. No debe eliminarse.
@@ -235,7 +234,7 @@ Al habilitar la integración de Intune, Intune creará automáticamente una dire
 Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. Para obtener más información, consulta [Detección de dispositivos](device-discovery.md).
 
 > [!NOTE]
-> Siempre puedes aplicar filtros para excluir dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados. 
+> Siempre puedes aplicar filtros para excluir dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados.
 
 ## <a name="preview-features"></a>Versión preliminar de las características
 

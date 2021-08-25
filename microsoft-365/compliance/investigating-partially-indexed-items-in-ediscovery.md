@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indizados (también denominados elementos no indexados) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: bd3e9f1da3b3404f1ca99d44c01fc4fa85ad391c3b0ede8889319044072bed8a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 173ff913e9e355e9032e83d5c197a4ced9865257
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860240"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507273"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigar elementos parcialmente indizados en eDiscovery
 
@@ -94,7 +94,7 @@ Las etiquetas de error están hechas de dos partes de información, el error y e
   
 A continuación se muestra una lista de errores de indización y una descripción de la posible causa del error.
   
-| Etiqueta Error | Description |
+| Etiqueta Error | Descripción |
 |:-----|:-----|
 | `attachmentcount` <br/> |Un mensaje de correo electrónico tenía demasiados datos adjuntos y algunos de estos datos adjuntos no se procesaron.  <br/> |
 | `attachmentdepth` <br/> |El recuperador de contenido y el analizador de documentos encontraron demasiados niveles de datos adjuntos anidados dentro de otros datos adjuntos. Algunos de estos datos adjuntos no se procesaron.  <br/> |
@@ -123,7 +123,7 @@ Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca t
 
    ```powershell
      write-host "**************************************************"
-     write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "     Security & Compliance Center PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "**************************************************"
      " " 
@@ -164,7 +164,7 @@ Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca t
      }
    ```
 
-2. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/exchange-online-powershell).
+2. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/exchange-online-powershell).
 
 3. En PowerShell & Centro de seguridad y cumplimiento, vaya a la carpeta donde guardó el script en el paso 1 y, a continuación, ejecute el script; por ejemplo:
 
@@ -183,6 +183,6 @@ Este es un ejemplo de la salida devuelta por el script.
 > 
 > - Etiquetas de error de lista y los tipos de archivo correspondientes para los que se produjo el error.
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Elementos parcialmente indizados en eDiscovery](partially-indexed-items-in-content-search.md)

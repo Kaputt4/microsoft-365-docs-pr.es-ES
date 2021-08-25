@@ -11,12 +11,12 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en Centro de cumplimiento de Microsoft 365 para buscar rápidamente correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones OneDrive y conversaciones de mensajería instantánea en Skype Empresarial.
-ms.openlocfilehash: 6161b84fa04b461835777ba769129b9cc32f5ab7
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 577b3af2bbeb1856f55de31123b71f2597c6604a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377970"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508303"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Buscar contenido con la herramienta de búsqueda de contenido
 
@@ -72,7 +72,7 @@ La búsqueda de contenido es fácil de usar, pero también es una herramienta ef
 
 ## <a name="use-scripts-for-advanced-scenarios"></a>Usar scripts para escenarios avanzados
 
-A veces, debe realizar tareas de búsqueda de contenido más avanzadas, complejas y repetitivas. En estos casos, es más fácil y rápido usar comandos de PowerShell en el Centro de seguridad & cumplimiento. Para facilitar esta tarea, hemos creado una serie de scripts de PowerShell del Centro de seguridad & cumplimiento para ayudarle a completar tareas complejas relacionadas con la búsqueda de contenido.
+A veces, debe realizar tareas de búsqueda de contenido más avanzadas, complejas y repetitivas. En estos casos, es más fácil y rápido usar comandos en PowerShell del Centro de & seguridad. Para facilitar esta tarea, hemos creado una serie de scripts de PowerShell del Centro de seguridad & cumplimiento para ayudarle a completar tareas complejas relacionadas con la búsqueda de contenido.
 
 - [Buscar carpetas de sitios](use-content-search-for-targeted-collections.md) y buzones específicos (denominadas colecciones *dirigidas) cuando esté seguro de que los elementos que responden a un caso se encuentran en esa carpeta.
 

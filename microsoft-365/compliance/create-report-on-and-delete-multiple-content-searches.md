@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Obtenga información sobre cómo automatizar tareas de búsqueda de contenido como crear búsquedas y ejecutar informes a través de scripts de PowerShell en el Centro de seguridad & cumplimiento en Office 365.
+description: Obtenga información sobre cómo automatizar tareas de búsqueda de contenido, como crear búsquedas y ejecutar informes con PowerShell del Centro de & seguridad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ca99a00c57de1c376ae3840324bd869abb73042
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: c49cc0da930d6502df2ae88652c3b9fb23c36d3f
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58501984"
+ms.locfileid: "58508099"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Crear, informar sobre y eliminar varias búsquedas de contenido
 
