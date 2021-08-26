@@ -15,12 +15,12 @@ ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 8a4cd421121f9cfae94724bfaab29df2bf873ab8748f1605d68f5a9813f99102
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cbf1cae088af2606e8fea1e40e0cfe34c7a74832
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794371"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533524"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
@@ -65,7 +65,7 @@ En Windows 10, versión 1903, presentamos la característica de inteligencia de 
 
 3. Haga clic **en Plantillas administrativas**.
 
-4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones  >    >  **de inteligencia de seguridad**.
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones \>  \> **de inteligencia de seguridad**.
 
 5. Haga doble clic en **Definir ubicación de inteligencia de seguridad para clientes VDI** y, a continuación, establezca la opción en **Habilitado**. Aparece automáticamente un campo.
 
@@ -111,7 +111,7 @@ Los paquetes de inteligencia de seguridad suelen publicarse una vez cada tres o 
 
 1. En el equipo de administración, abra el menú Inicio y escriba **Programador de tareas**. Ábrala y **seleccione Crear tarea...** en el panel lateral.
 
-2. Escriba el nombre como **Desempaquete de inteligencia de seguridad**. Vaya a la **pestaña Desencadenador.** Seleccione **Nuevo...**  >  **Diario** y seleccione **Aceptar**.
+2. Escriba el nombre como **Desempaquete de inteligencia de seguridad**. Vaya a la **pestaña Desencadenador.** Seleccione **Nuevo...** \> **Diario** y seleccione **Aceptar**.
 
 3. Vaya a la **pestaña** Acciones. Seleccione **Nuevo...** Escriba **PowerShell** en el **campo Programa/Script.** Escriba `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` en el campo Agregar **argumentos.** Seleccione **Aceptar**.
 
@@ -153,7 +153,7 @@ Consulte [Programar exámenes para](scheduled-catch-up-scans-microsoft-defender-
 
 Puede especificar el tipo de examen que se debe realizar durante un examen programado. Los exámenes rápidos son el enfoque preferido, ya que están diseñados para buscar en todos los lugares donde el malware debe residir para estar activo. El siguiente procedimiento describe cómo configurar exámenes rápidos mediante la directiva de grupo.
 
-1. En el Editor de directivas de grupo, vaya a **Plantillas administrativas** Windows  >  **componentes**  >  **Antivirus de Microsoft Defender**  >  **Examinar**.
+1. En el Editor de directivas de grupo, vaya a **Plantillas administrativas** Windows \> **componentes** \> **Antivirus de Microsoft Defender** \> **Examinar**.
 
 2. Seleccione **Especificar el tipo de examen que se usará para un examen programado** y, a continuación, edite la configuración de directiva.
 
@@ -167,7 +167,7 @@ Puede especificar el tipo de examen que se debe realizar durante un examen progr
 
 A veces, Antivirus de Microsoft Defender notificaciones se pueden enviar o conservar en varias sesiones. Para minimizar este problema, puede bloquear la interfaz Antivirus de Microsoft Defender usuario. En el siguiente procedimiento se describe cómo suprimir las notificaciones con la directiva de grupo.
 
-1. En el Editor de directivas de grupo, vaya **a Windows componentes Antivirus de Microsoft Defender** interfaz de  >    >  **cliente**.
+1. En el Editor de directivas de grupo, vaya **a Windows componentes Antivirus de Microsoft Defender** interfaz de \>  \> **cliente**.
 
 2. Seleccione **Suprimir todas las notificaciones** y, a continuación, edite la configuración de directiva.
 
@@ -191,7 +191,7 @@ Deshabilitar un examen después de una actualización impedirá que se produzca 
 > [!IMPORTANT]
 > La ejecución de exámenes después de una actualización ayudará a garantizar que las máquinas virtuales estén protegidas con las últimas actualizaciones de inteligencia de seguridad. Deshabilitar esta opción reducirá el nivel de protección de las máquinas virtuales y solo se debe usar al crear o implementar la imagen base por primera vez.
 
-1. En el Editor de directivas de grupo, vaya **a Windows componentes Antivirus de Microsoft Defender** actualizaciones de inteligencia de  >    >  **seguridad**.
+1. En el Editor de directivas de grupo, vaya **a Windows componentes Antivirus de Microsoft Defender** actualizaciones de inteligencia de \>  \> **seguridad**.
 
 2. Seleccione **Activar el examen después de la actualización de inteligencia de seguridad** y, a continuación, edite la configuración de directiva.
 
@@ -205,7 +205,7 @@ Esta directiva impide que un examen se ejecute inmediatamente después de una ac
 
 ## <a name="scan-vms-that-have-been-offline"></a>Examinar máquinas virtuales sin conexión
 
-1. En el Editor de directivas de grupo, vaya a Windows **componentes Antivirus de Microsoft Defender**  >    >  **Scan**.
+1. En el Editor de directivas de grupo, vaya a Windows **componentes Antivirus de Microsoft Defender** \>  \> **Scan**.
 
 2. Seleccione **Activar el examen rápido de puesta al día** y, a continuación, edite la configuración de directiva.
 
@@ -219,7 +219,7 @@ Esta directiva fuerza un examen si la máquina virtual ha perdido dos o más ex�
 
 ## <a name="enable-headless-ui-mode"></a>Habilitar el modo de interfaz de usuario sin cabeza
 
-1. En el Editor de directivas de grupo, vaya **a Windows componentes Antivirus de Microsoft Defender** interfaz de  >    >  **cliente**.
+1. En el Editor de directivas de grupo, vaya **a Windows componentes Antivirus de Microsoft Defender** interfaz de \>  \> **cliente**.
 
 2. Selecciona **Habilitar el modo de interfaz de usuario sin** cabeza y edita la directiva.
 

@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 localization_priority: None
 description: Obtenga información sobre Learning Tools Interoperability (LTI) Office aplicaciones en M365 y cómo ayudarán a los formadores al integrar aplicaciones de Office en su sistema de administración de Learning (LMS).
-ms.openlocfilehash: 350d0d2618275ec628f9ac884fb0de4f019021aaa4397af57129fa29bbfcb86b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7aa85369151dcb1ce1628dbd8a969ac31e7caada
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898844"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533512"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Integración de productos de Microsoft con su Learning management system (LMS)
 
@@ -63,7 +63,7 @@ La Microsoft OneDrive LTI app te permite:
 - Integre Office 365 archivos con los módulos del curso.
 - Use su cuenta microsoft para el inicio de sesión único con su LMS.
 
-Para ver los pasos de configuración, [vea Usar Microsoft OneDrive LTI con Canvas](use-onedrive-with-lms.md).
+Para ver los pasos de configuración, [vea Integrar Microsoft OneDrive LTI con Canvas](onedrive-lti.md).
 
 ## <a name="teams-lti-apps"></a>Teams Aplicaciones LTI
 

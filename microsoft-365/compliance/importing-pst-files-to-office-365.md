@@ -19,20 +19,20 @@ search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información acerca de cómo usar el servicio de importación en el Centro de seguridad y cumplimiento para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
-ms.openlocfilehash: 268fcc1239370d55a112c60192fb37f42df2203b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+description: Obtenga información acerca de cómo usar el servicio de importación en el Centro de cumplimiento de Microsoft 365 para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
+ms.openlocfilehash: 48696b10e10abafa50e866e52b4601e73c746c6c
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58243983"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507859"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Información general sobre la importación de archivos PST de su organización
 
 > [!NOTE]
 > Este artículo está dirigido a administradores. ¿Está intentando importar archivos PST a su propio buzón? Consulte [Importar el correo electrónico, los contactos y el calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
 
-Puede usar el servicio de importación en el Centro de seguridad y cumplimiento para importar archivos PST de forma masiva rápidamente a buzones de Exchange Online de su organización. Hay dos maneras de importar archivos PST a Office 365:
+Puede usar el servicio de importación en el Centro de cumplimiento de Microsoft 365 para importar archivos PST de forma masiva rápidamente a buzones de Exchange Online de su organización. Hay dos maneras de importar archivos PST a Office 365:
 
 - **Carga en la red** ![Carga en la nube](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png): cargue los archivos PST a través de la red en una ubicación temporal de Azure Storage en la nube de Microsoft. Después, use el servicio de importación de Office 365 para importar los datos PST a los buzones de su organización.
 
@@ -52,7 +52,7 @@ A continuación, le presentamos una ilustración y una descripción del proceso 
 
 ![Flujo de trabajo del proceso de importación de PST](../media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
 
-1. **Descargar las herramientas de importación de PST y la clave de la ubicación privada de Azure Storage**: el primer paso es descargar la herramienta y la clave de acceso utilizadas para cargar los archivos PST o copiarlos en una unidad de disco duro. Puede obtenerlas en la página **Importar** en el Centro de seguridad y cumplimiento. La clave le ofrece (a usted o al personal del centro de datos de Microsoft en el caso de envío de unidades) los permisos necesarios para cargar los archivos PST a una ubicación privada y segura de Azure Storage. Esta clave de acceso es exclusiva para su organización y le ayuda a evitar el acceso no autorizado a archivos PST tras su carga en la nube de Microsoft. Tenga en cuenta que para importar archivos PST a Microsoft 365 su organización no necesita una suscripción a Azure separada.
+1. **Descargar las herramientas de importación de PST y la clave de la ubicación privada de Azure Storage**: el primer paso es descargar la herramienta y la clave de acceso utilizadas para cargar los archivos PST o copiarlos en una unidad de disco duro. Puede obtenerlas en la página **Importar** en el Centro de cumplimiento de Microsoft 365. La clave le ofrece (a usted o al personal del centro de datos de Microsoft en el caso de envío de unidades) los permisos necesarios para cargar los archivos PST a una ubicación privada y segura de Azure Storage. Esta clave de acceso es exclusiva para su organización y le ayuda a evitar el acceso no autorizado a archivos PST tras su carga en la nube de Microsoft. Tenga en cuenta que para importar archivos PST a Microsoft 365 su organización no necesita una suscripción a Azure separada.
 
 2. **Cargar o copiar los archivos PST**: El siguiente paso depende de si decidió importar los archivos PST mediante la carga en la red o el envío de unidades. En ambos casos, usará la herramienta y la clave de almacenamiento segura que obtuvo en el paso anterior.
 
@@ -64,7 +64,7 @@ A continuación, le presentamos una ilustración y una descripción del proceso 
 
 3. **Crear un archivo de asignación para importar PST**: una vez que los archivos PST se han cargado en la ubicación de Azure Storage o se han copiado en un disco duro, el siguiente paso es crear un archivo de valores separados por comas (CSV) que especifique qué buzones de usuario se usarán para importar los archivos PST (un archivo PST se puede importar al buzón principal de un usuario o a su buzón de archivo). [Descargue una copia del archivo de asignación de importación de PST](https://go.microsoft.com/fwlink/p/?LinkId=544717). El servicio de importación de Office 365 usará la información para importar los archivos PST.
 
-4. **Crear un trabajo de importación de PST**: el siguiente paso es crear un trabajo de importación de PST en la página **Importar archivos PST** del Centro de seguridad y cumplimiento, y enviar el archivo de asignación de importación de PST creado en el paso anterior. Para la carga en la red (debido a que los archivos PST se han cargado en Azure), Microsoft 365 analiza los datos de los archivos PST y, a continuación, le permite establecer filtros para controlar qué datos se importan a los buzones especificados en el archivo de asignación de importación de PST.
+4. **Crear un trabajo de** importación de PST: el siguiente paso es crear un trabajo de importación de PST en la página Importar archivos **PST** en el Centro de cumplimiento de Microsoft 365 y enviar el archivo de asignación de importación de PST creado en el paso anterior. Para la carga en la red (debido a que los archivos PST se han cargado en Azure), Microsoft 365 analiza los datos de los archivos PST y, a continuación, le permite establecer filtros para controlar qué datos se importan a los buzones especificados en el archivo de asignación de importación de PST.
 
     El método de envío de unidades conlleva algunos pasos adicionales en esta parte del proceso.
 
@@ -81,7 +81,7 @@ A continuación, le presentamos una ilustración y una descripción del proceso 
 
 5. **Filtrar los datos PST que se importarán a los buzones**: después de crear el trabajo de importación (y de que los archivos PST se carguen en la ubicación de Azure Storage tras el envío de la unidad), Microsoft 365 analiza los datos de los archivos PST (de forma segura) identificando la antigüedad de los elementos y los diferentes tipos de mensajes incluidos en los archivos PST. Una vez se haya completado el análisis y los datos estén listos para la importación, tiene la opción de importar todos los datos incluidos en los archivos PST o de recortar solo algunos de ellos, estableciendo filtros para controlar los datos para importar.
 
-6. **Iniciar el trabajo de importación de PST**: después de que se inicia el trabajo de importación, Microsoft 365 usa la información del archivo de asignación para importar los archivos PST desde la ubicación de Azure Storage a los buzones de los usuarios. En la página **Importar archivos PST** del Centro de seguridad y cumplimiento se mostrará la información de estado sobre el trabajo de importación (incluida información individual de cada archivo PST importado). Cuando finalice el trabajo de importación, el estado del trabajo aparecerá como **Completado**.
+6. **Iniciar el trabajo de importación de PST**: después de que se inicia el trabajo de importación, Microsoft 365 usa la información del archivo de asignación para importar los archivos PST desde la ubicación de Azure Storage a los buzones de los usuarios. En la página **Importar archivos PST** del Centro de cumplimiento de Microsoft 365, se mostrará la información de estado sobre el trabajo de importación (incluida información individual de cada archivo PST importado). Cuando finalice el trabajo de importación, el estado del trabajo aparecerá como **Completado**.
 
 ## <a name="why-import-email-data-to-microsoft-365"></a>¿Por qué importar datos de correo electrónico a Microsoft 365?
 
@@ -99,7 +99,7 @@ A continuación, le presentamos una ilustración y una descripción del proceso 
 
   - Use los [casos de eDiscovery](./get-started-core-ediscovery.md) para administrar las investigaciones legales de su organización.
 
-  - Use las [directivas de conservación](retention.md) del Centro de cumplimiento y seguridad para establecer cuánto tiempo se debe conservar el contenido del buzón y elimine el contenido cuando expire el período de conservación.
+  - Use [directivas de](retention.md) retención en el Centro de cumplimiento de Microsoft 365 control de cuánto tiempo se conserva el contenido del buzón y, a continuación, elimine el contenido después de que expire el período de retención.
 
   - Use [las directivas de cumplimiento con la comunidad](communication-compliance.md) para examinar los mensajes, asegurarse de que son compatibles con los estándares de mensaje y agregar un tipo de clasificación.
 
@@ -133,7 +133,7 @@ Estas son algunas de las preguntas más frecuentes sobre el uso del servicio de 
 
 Debe tener asignado el rol importación y exportación de buzón de Exchange Online para importar archivos PST a los buzones de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Mailbox Import Export al grupo de roles Administración de la organización. O puede crear un nuevo grupo de rol, asignar el rol de exportación e importación de buzón y, después, agregarse o agregar a otros usuarios como miembro. Para obtener más información, vea las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles en Exchange Online](/Exchange/permissions-exo/role-groups).
 
-Además, para crear trabajos de importación en el Centro de seguridad y cumplimiento, debe cumplirse uno de estos requisitos:
+Adicionalmente, para crear trabajos de importación en el Centro de cumplimiento de Microsoft 365, debe cumplirse uno de estos requisitos:
 
 - Debe tener asignado el rol de Destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles de Administración de la organización y Administración de destinatarios.
 
@@ -162,9 +162,9 @@ Además, los archivos PST de Outlook 2007 y versiones posteriores se pueden impo
 
 #### <a name="after-i-upload-my-pst-files-to-the-azure-storage-area-how-long-are-they-kept-in-azure-before-theyre-deleted"></a>Después de cargar mis archivos PST en el área de Azure Storage, ¿cuánto tiempo se mantienen en Azure antes de eliminarse?
 
-Cuando use el método de carga en la red para importar archivos PST, cárguelos en un contenedor de blobs de Azure denominado `ingestiondata`. Si no hay ningún trabajo de importación en curso en la página **Importar archivos PST** en el Centro de seguridad y cumplimiento, entonces todos los archivos PST del contenedor `ingestiondata` en Azure se eliminarán en un plazo de 30 días después de que se haya creado el trabajo de importación más reciente en el Centro de seguridad y cumplimiento. Eso significa también tendrá que crear una nueva tarea de importación en el Centro de seguridad y cumplimiento (se describe en el paso 5 de las instrucciones de carga de red) en un plazo de 30 días posteriores a la carga de archivos PST en Azure.
+Cuando use el método de carga en la red para importar archivos PST, cárguelos en un contenedor de blobs de Azure denominado `ingestiondata`. Si no hay trabajos de importación en curso en la página Importar archivos **PST** en el Centro de cumplimiento de Microsoft 365), todos los archivos PST del contenedor en Azure se eliminan 30 días después de que se haya creado el trabajo de importación más reciente en el `ingestiondata` Centro de cumplimiento de Microsoft 365. Eso significa también tendrá que crear una nueva tarea de importación en el Centro de cumplimiento de Microsoft 365 (se describe en el paso 5 de las instrucciones de carga de red) en un plazo de 30 días posteriores a la carga de archivos PST en Azure.
 
-Esto también significa que después de que los archivos PST se eliminen del área de Azure Storage, ya no se mostrarán en la lista de archivos para un trabajo de importación completado en el Centro de seguridad y cumplimiento. Aunque todavía puede aparecer un trabajo de importación en la página **Importar archivos PST** en el Centro de seguridad y cumplimiento, la lista de archivos PST puede estar vacía cuando vea los detalles de los trabajos de importación más antiguos.
+Esto también significa que después de que los archivos PST se eliminen del área de Azure Storage, ya no se mostrarán en la lista de archivos para un trabajo de importación completado en el Centro de cumplimiento de Microsoft 365. Aunque es posible que un trabajo de importación todavía aparezca en la página Importar archivos **PST** en el Centro de cumplimiento de Microsoft 365, la lista de archivos PST puede estar vacía al ver los detalles de los trabajos de importación anteriores.
 
 #### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-network-upload"></a>¿Cuánto tiempo se tarda en importar un archivo PST a un buzón mediante la carga de red?
 
@@ -208,7 +208,7 @@ No, no puede importar archivos PST en carpetas públicas.
 
 Debe tener asignado el rol Importación o exportación de buzón para poder importar archivos PST a los buzones de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Mailbox Import Export al grupo de roles Administración de la organización. O puede crear un nuevo grupo de rol, asignar el rol de exportación e importación de buzón y, después, agregarse o agregar a otros usuarios como miembro. Para obtener más información, vea las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles en Exchange Online](/Exchange/permissions-exo/role-groups).
 
-Además, para crear trabajos de importación en el Centro de seguridad y cumplimiento, debe cumplirse uno de estos requisitos:
+Adicionalmente, para crear trabajos de importación en el Centro de cumplimiento de Microsoft 365, debe cumplirse uno de estos requisitos:
 
 - Debe tener asignado el rol de Destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles de Administración de la organización y Administración de destinatarios.
 
@@ -261,9 +261,9 @@ Si se importan distintos archivos PST a diferentes buzones de destino, el proces
 
 #### <a name="after-microsoft-uploads-my-pst-files-to-azure-how-long-are-they-kept-in-azure-before-theyre-deleted"></a>Después de que Microsoft cargue mis archivos PST a Azure, ¿cuánto tiempo se conservarán en Azure antes de su eliminación?
 
-Todos los archivos PST en la ubicación de Azure Storage para su organización (en el contenedor denominado blob `ingestiondata`) se eliminan 30 días después de la creación del trabajo de importación más reciente en la página **Importar archivos PST** del Centro de seguridad y cumplimiento.
+Todos los archivos PST de la ubicación Azure Storage de la organización (en el contenedor de blobs denominado `ingestiondata`), se eliminan 30 días después de crear el trabajo de importación más reciente en la página **Importar archivos PST** del Centro de cumplimiento de Microsoft 365.
 
-Esto también significa que después de que los archivos PST se eliminen del área de Azure Storage, ya no se mostrarán en la lista de archivos para un trabajo de importación completado en el Centro de seguridad y cumplimiento. Aunque todavía puede aparecer un trabajo de importación en la página **Importar archivos PST** en el Centro de seguridad y cumplimiento, la lista de archivos PST puede estar vacía cuando vea los detalles de los trabajos de importación más antiguos.
+Esto también significa que después de que los archivos PST se eliminen del área de Azure Storage, ya no se mostrarán en la lista de archivos para un trabajo de importación completado en el Centro de cumplimiento de Microsoft 365. Aunque es posible que un trabajo de importación todavía aparezca en la página Importar archivos **PST** en el Centro de cumplimiento de Microsoft 365, la lista de archivos PST puede estar vacía al ver los detalles de los trabajos de importación anteriores.
 
 #### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-microsoft-365"></a>¿Qué versión del formato de archivo PST se admite para la importación en Microsoft 365?
 

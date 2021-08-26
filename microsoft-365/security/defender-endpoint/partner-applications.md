@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 147f74b75a7c6954fb595d3fd8a0976ea821bdd5ac61a819bbffd98730bbd9d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 18100adb1ecaeb2d9863fba207702b26e4483cd6
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53903432"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533656"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Aplicaciones de partners en Microsoft Defender para endpoint
 
@@ -73,7 +73,7 @@ Logotipo|Nombre del partner|Descripción
 ![Imagen del logotipo de CyberSponse CyOps](images/cybersponse-logo.png)|[CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943)|CyOps se integra con Defender for Endpoint para automatizar los libros de reproducción de respuesta a incidentes de alta velocidad de los clientes
 ![Imagen del logotipo de Delta Risk ActiveEye](images/delta-risk-activeeye-logo.png)|[Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Delta Risk, un proveedor líder de servicios de seguridad y SOC-as-a-Service, integra Defender for Endpoint con su plataforma SOAR nativa de la nube, ActiveEye.
 ![Imagen de Demisto, un logotipo de palo alto networks company](images/demisto-logo.png)|[Demisto, una compañía de redes de Palo Alto](https://go.microsoft.com/fwlink/?linkid=2108414)|Demisto se integra con Defender for Endpoint para permitir a los equipos de seguridad organizar y automatizar la supervisión, el enriquecimiento y la respuesta de la seguridad de los puntos de conexión
-![Imagen de Microsoft Flow & logotipo de Azure Functions](images/ms-flow-logo.png)|[Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300)|Usar los conectores de Defender for Endpoint Azure Logic Apps & Microsoft Flow para automatizar los procedimientos de seguridad
+![Imagen de Power Automate & logotipo de Azure Functions](images/ms-flow-logo.png)|[Power Automate & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300)|Usar los conectores de Defender for Endpoint Azure Logic Apps & Power Automate para automatizar los procedimientos de seguridad
 ![Imagen del logotipo de Rapid7 InsightConnect](images/rapid7-logo.png)|[Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040)|InsightConnect se integra con Defender for Endpoint para acelerar, simplificar e integrar los procesos de seguridad que requieren mucho tiempo.
 ![Imagen del logotipo de ServiceNow](images/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|Ingerir alertas en la solución ServiceNow Security Operations basada en la integración Graph API de Microsoft
 ![Imagen del logotipo de Swimlane](images/swimlane-logo.png)|[Swimlane](https://go.microsoft.com/fwlink/?linkid=2113902)|Maximizar las capacidades de respuesta a incidentes mediante Swimlane y Defender for Endpoint juntos

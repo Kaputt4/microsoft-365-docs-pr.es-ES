@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.
-ms.openlocfilehash: 4b1f30b8aaa072b328307a90f2828d7b8dd0187d3fd3767d8eb13bc6104bd033
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9f5ca3c0941d2f7c72d72da34d1a840ecf42c68e
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906009"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531532"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Iniciar la retención cuando se produzca un evento
 
@@ -208,7 +208,7 @@ Una API de REST es un punto de conexión de servicio que admite conjuntos de ope
 
 Hay dos opciones para usar la API de REST:
 
-- **Usar Microsoft Power Automate o una aplicación similar** para desencadenar un evento automáticamente. Microsoft Power Automate es un orquestador para conectarse a otros sistemas, por lo que no tiene que escribir una solución personalizada. Para obtener más información, consulte el [sitio de Power Automate](https://flow.microsoft.com/es-ES/).
+- **Usar Microsoft Power Automate o una aplicación similar** para desencadenar un evento automáticamente. Microsoft Power Automate es un orquestador para conectarse a otros sistemas, por lo que no tiene que escribir una solución personalizada. Para obtener más información, consulte el [sitio de Power Automate](https://flow.microsoft.com/en-us/).
 
 - **Usar PowerShell o un cliente HTTP para llamar a la API de REST** a fin de crear eventos con PowerShell (versión 6 o posterior), lo que forma parte de una solución personalizada.
 
@@ -226,9 +226,9 @@ Los eventos que se crean automáticamente se pueden visualizar y confirmar en el
 
 Cree un flujo que cree un evento mediante la API de REST de Microsoft 365:
 
-![Usar Flow para crear un evento](../media/automate-event-driven-retention-flow-1.png)
+![Usar Power Automate para crear un evento](../media/automate-event-driven-retention-flow-1.png)
 
-![Usar Flow para llamar a la API de REST](../media/automate-event-driven-retention-flow-2.png)
+![Usar Power Automate para llamar a la API de REST](../media/automate-event-driven-retention-flow-2.png)
 
 #### <a name="create-an-event"></a>Crear un evento
 

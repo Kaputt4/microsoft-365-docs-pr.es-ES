@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfacd679a48c81b7a952638f2944d0fe6a8d9123
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.openlocfilehash: 34d3f7fa8c12d1509b864bc45e97717dbf01f534
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408099"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533284"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -408,7 +408,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Archivo eliminado marcado como un registro|RecordDelete|Se eliminó un documento o un correo electrónico que se marcó como un registro. Un documento se considera un registro cuando se le aplica una etiqueta de retención que marca el contenido como un registro.|
 |Desfase detectado de la sensibilidad del documento |DocumentSensitivityMismatchDetected|El usuario carga un documento a un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de confidencialidad de mayor prioridad que la que se aplica al sitio. Por ejemplo, un documento con la etiqueta Confidential se carga en un sitio con la etiqueta General. <br/><br/> Este evento no se activa si el documento tiene una etiqueta de confidencialidad de menor prioridad que la que se ha aplicado al sitio. Por ejemplo, un documento con la etiqueta General se carga en un sitio con la etiqueta Confidential. Para obtener más información sobre la prioridad de las etiquetas de confidencialidad, vea [prioridad de etiquetas (el orden importa)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware detectado en archivo|FileMalwareDetected|El antivirus de SharePoint detecta el malware en un archivo.|
-|Extracción del archivo descartada|FileCheckOutDiscarded|El usuario descarta (o deshace) un archivo extraído. Esto significa que los cambios que realice en el archivo cuando se desprotegieron se descartan y no se guardan en la versión del documento de la biblioteca de documentos.|
+|Extracción del archivo descartada|FileCheckOutDiscarded|El usuario descarta (o deshace) un archivo extraído. Esto significa que los cambios que se realizaron en el archivo cuando estaba desprotegido se descartan y no se guardan en la versión del documento de la biblioteca de documentos.|
 |Archivo descargado|FileDownloaded|El usuario descarga un documento de un sitio.|
 |Archivo modificado|FileModified|La cuenta del sistema o usuario modifica el contenido o las propiedades de un documento ubicado en un sitio.|
 |(ninguno)|FileModifiedExtended|Esto está relacionado con la actividad "Archivo modificado" (FileModified). Un evento de FileModifiedExtended se registra cuando la misma persona modifica continuamente un archivo durante un período prolongado (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileModifiedExtended es reducir el número de eventos FileModified que se registran cuando se modifica continuamente un archivo. Esto ayuda a reducir el ruido de varios registros de FileModified para lo que básicamente es la misma actividad de usuario, y le permite centrarse en el evento FileModified inicial (el más importante).|
@@ -844,7 +844,7 @@ En la siguiente tabla, se enumeran las actividades de usuario y de administrador
 
 ### <a name="microsoft-power-automate-activities"></a>Actividades en Microsoft Power Automate 
 
-Puede buscar el registro de auditoría para actividades en Power Automate (antes llamado Microsoft Flow). Entre estas actividades se incluyen la creación, edición y eliminación de flujos, y cambios en los permisos de flujo. Para obtener información sobre las auditorías de las actividades en Power Automate, consulte el blog [Eventos de auditoría de Microsoft Flow ahora disponibles en el Centro de cumplimiento de Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+Puede buscar el registro de auditoría para actividades en Power Automate (antes llamado Microsoft Flow). Entre estas actividades se incluyen la creación, edición y eliminación de flujos, y cambios en los permisos de flujo. Para más información sobre las auditorías de actividades de Power Automate, consulte el blog [Eventos de auditoría de Power Automate ahora disponible en el Centro de cumplimiento de Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-power-apps-activities"></a>Actividades en Microsoft Power Apps
 
@@ -852,7 +852,7 @@ Puede buscar el registro de auditorías para actividades relacionadas con aplica
 
 ### <a name="microsoft-stream-activities"></a>Actividades de Microsoft Stream
 
-Puede buscar el registro de auditoría para actividades en Microsoft Stream. Entre estas actividades se incluyen las actividades de vídeo efectuadas por los usuarios, las actividades de canal de grupo y las actividades de administración, como la administración de usuarios, administración de la configuración de la organización y exportación de informes. Para obtener una descripción de estas actividades, consulte la sección "acciones registradas en Microsoft Stream " en [Registros de auditoría en Microsoft Stream](/stream/audit-logs#actions-logged-in-stream).
+Puede buscar el registro de auditoría para actividades en Microsoft Stream. Entre estas actividades se incluyen las actividades de vídeo efectuadas por los usuarios, las actividades de canal de grupo y las actividades de administración, como la administración de usuarios, administración de la configuración de la organización y exportación de informes. Para obtener una descripción de estas actividades, consulte la sección "acciones registradas en Microsoft Stream" en [Registros de auditoría en Microsoft Stream](/stream/audit-logs#actions-logged-in-stream).
 
 ### <a name="content-explorer-activities"></a>Actividades del explorador de contenido
 

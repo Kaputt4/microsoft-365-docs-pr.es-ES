@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Obtenga información sobre cómo el análisis de uso se conecta a una API y proporciona una tendencia mensual de uso de varios Microsoft 365 servicios.  '
-ms.openlocfilehash: e18233532f7a570129f31141bb21e7c3dd9450603d09f6db636db846fea20edc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf53007e062db85bb17bd64851022218c0d220ba
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867276"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533548"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modelo de datos de análisis de uso de Microsoft 365
 
@@ -115,8 +115,8 @@ Esta tabla contiene datos sobre los usuarios que realizaron alguna actividad en 
 |SPO_GroupFileSynched  <br/> |Número de archivos que sincronizó el usuario en cualquier sitio de grupo.  <br/> |
 |SPO_GroupFileSharedInternally  <br/> |Recuento de archivos que se han compartido con usuarios de la organización o con usuarios de grupos (que pueden incluir usuarios externos).  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |Número de archivos que compartió el usuario de forma externa desde cualquier sitio de grupo.  <br/> |
-|SPO_GroupAccessByOwner  <br/> |Número de archivos con los que interactuó el usuario que residen en un sitio de grupo de su propiedad.  <br/> |
-|SPO_GroupAccessByOthers  <br/> |Número de archivos con los que interactuó el usuario que residen en un sitio de grupo que son propiedad de otro usuario.  <br/> |
+|SPO_GroupAccessedByOwner  <br/> |Número de sitios con los que el usuario interactuó y que residen en un sitio de grupo de su propiedad.  <br/> |
+|SPO_GroupAccessedByOthers  <br/> |Número de sitios con los que interactuó el usuario que residen en un sitio de grupo que otro usuario posee.  <br/> |
 |SPO_OtherFileViewedModified  <br/> |Número de archivos con los que este usuario interactuó en cualquier otro sitio.  <br/> |
 |SPO_OtherFileSynched  <br/> |Número de archivos que este usuario ha sincronizado desde cualquier otro sitio.  <br/> |
 |SPO_OtherFileSharedInternally  <br/> |Número de archivos que este usuario compartió internamente desde cualquier otro sitio o con usuarios dentro de grupos (que pueden incluir usuarios externos). <br/> |
@@ -127,8 +127,8 @@ Esta tabla contiene datos sobre los usuarios que realizaron alguna actividad en 
 |SPO_TeamFileSynched  <br/> |Número de archivos que sincronizó el usuario desde cualquier sitio de grupo.  <br/> |
 |SPO_TeamFileSharedInternally  <br/> |Número de archivos que este usuario compartió internamente desde cualquier sitio de grupo o con usuarios dentro de grupos (que pueden incluir usuarios externos).  <br/> |
 |SPO_TeamFileSharedExternally  <br/> |Número de archivos que compartió de forma externa el usuario desde cualquier sitio de grupo.  <br/> |
-|SPO_TeamAccessByOwner  <br/> |Número de archivos con los que interactuó el usuario que residen en un sitio de grupo de su propiedad.  <br/> |
-|SPO_TeamAccessByOthers  <br/> |Número de archivos con los que interactuó el usuario que residen en un sitio de grupo que son propiedad de otro usuario.  <br/> |
+|SPO_TeamAccessedByOwner  <br/> |Número de sitios con los que interactuó el usuario que residen en un sitio de grupo de su propiedad.  <br/> |
+|SPO_TeamAccessedByOthers  <br/> |Número de sitios con los que interactuó el usuario que residen en un sitio de grupo que otro usuario posee.  <br/> |
 |Teams_ChatMessages  <br/> |Número de mensajes de chat enviados.  <br/> |
 |Teams_ChannelMessage  <br/> |Número de mensajes publicados en canales.  <br/> |
 |Teams_CallParticipate  <br/> |Número de llamadas en las que participó el usuario.  <br/> |

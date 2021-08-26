@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a administrar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 09a710a5fb1518b819704e881534efda15236520
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 6223720f6977d3c4399ad36e1ad29894feabe63d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349973"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533692"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -35,7 +35,7 @@ ms.locfileid: "58349973"
 > [!NOTE]
 >
 > Algunas de las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y no están disponibles en todas las organizaciones.
-> 
+>
 > Si su organización no tiene las características de suplantación de identidad como se describe en este artículo, vea la experiencia de administración de suplantación de identidad anterior en [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un mensaje bueno puede marcarse como malo (un falso positivo) o un mensaje malo se puede permitir a través (un falso negativo).
@@ -154,22 +154,22 @@ Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista
    Haga **clic en** Filtrar para filtrar los resultados. Los valores que están disponibles en **el** control desplegable Filtro que aparece dependen de la pestaña seleccionada:
 
    - **Remitentes**
-     - **Action**
+     - **Acción**
      - **No expirar nunca**
      - **Fecha de última actualización**
      - **Quitar en**
    - **DIRECCIONES URL**
-     - **Action**
+     - **Acción**
      - **No expirar nunca**
      - **Fecha de última actualización**
      - **Quitar en**
    - **Files**
-     - **Action**
+     - **Acción**
      - **No expirar nunca**
      - **Actualizado por última vez**
      - **Quitar en**
    - **Spoofing**
-     - **Action**
+     - **Acción**
      - **Tipo de suplantación**
 
    Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros existentes, haga clic **en Filtrar** y, en el **menú** desplegable Filtro que aparece, haga clic en **Borrar filtros**.

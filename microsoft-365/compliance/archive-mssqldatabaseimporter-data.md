@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de MS SQL Database. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 9f42e7616a844849d0c77b62c307e2c53972a4ceffce91223b68e3cc6040dc8f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf0e4d1bc9d5cf6db7538f5f75174488532871e8
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866641"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533608"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>Configurar un conector para archivar datos de MS SQL Database
 
@@ -47,7 +47,7 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 ## <a name="step-1-set-up-the-ms-sql-database-importer-connector"></a>Paso 1: Configurar el conector MS SQL Database Importer
 
-El primer paso consiste en obtener acceso a la página **Conectores** de datos en el Centro de cumplimiento de Microsoft365 y crear un conector para MS SQL Database.
+El primer paso es obtener acceso a la página **Conectores** de datos de la Centro de cumplimiento de Microsoft 365 y crear un conector para la MS SQL Database.
 
 1. Vaya a y, a continuación, haga clic en [https://compliance.microsoft.com](https://compliance.microsoft.com) **Conectores** de  >  **datos MS SQL Database Importer**.
 

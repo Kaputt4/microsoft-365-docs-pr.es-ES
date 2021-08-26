@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con sus mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e855b0c0a32cbfe6ed6b2f47cb7436f8ffa0fa64
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: 581b465ddc8197e2f029b149c57d5d83aacf7a15
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450192"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533476"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -228,7 +228,7 @@ En _las características_ de protección admitidas que ponen en cuarentena mensa
 |Directivas contra suplantación de identidad: <ul><li>[Protección de inteligencia suplantada](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección de suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si se detecta message como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia de buzones detecta y suplanta al usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Sí|<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>Protección de suplantación:<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li></ul></li></ul>|
 |[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (sin acceso)|
 |[Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md) (Defender para Office 365)|Sí|AdminOnlyAccessPolicy (sin acceso)|
-|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|N/D|
+|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|No aplicable|
 |
 
 Si está satisfecho con los permisos predeterminados del usuario final proporcionados por las directivas de cuarentena predeterminadas, no necesita hacer nada. Si desea agregar o quitar funcionalidades de usuario final (botones disponibles) en notificaciones de correo no deseado del usuario final o en detalles de mensajes en cuarentena, puede asignar una directiva de cuarentena personalizada.
@@ -634,6 +634,18 @@ Remove-QuarantineTag -Identity "<QuarantinePolicyName>"
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Remove-QuarantineTag](/powershell/module/exchange/remove-quarantinetag).
 
+## <a name="system-alerts-for-quarantine-release-requests"></a>Alertas del sistema para solicitudes de lanzamiento de cuarentena
+
+De forma predeterminada, la  directiva de alerta predeterminada denominada Usuario solicitado para liberar un mensaje en cuarentena genera automáticamente una alerta de gravedad media y envía mensajes de notificación a los miembros de los siguientes grupos de roles siempre que un usuario solicite la publicación de un mensaje en cuarentena:
+
+- Administrador de cuarentena
+- Administrador de seguridad
+- Administración de la organización (administrador global)
+
+Los administradores pueden personalizar los destinatarios de notificaciones por correo electrónico o crear una directiva de alerta personalizada para opciones adicionales.
+
+Para obtener más información sobre las directivas de alerta, consulte [Directivas de alerta en Microsoft 365](../../compliance/alert-policies.md).
+
 ## <a name="quarantine-policy-permission-details"></a>Detalles de permisos de directiva de cuarentena
 
 En las secciones siguientes se describen los efectos de los grupos de permisos preestablecidos y los permisos individuales en los detalles de los mensajes en cuarentena y en las notificaciones de correo no deseado del usuario final.
@@ -684,7 +696,7 @@ Si la directiva de cuarentena asigna los **permisos de** acceso completo (todos 
 
 - **Notificaciones de correo no deseado del** usuario final: los botones siguientes están disponibles:
   - **Bloquear remitente**
-  - **Versión**
+  - **Liberar**
   - **Revisar**
 
   ![Botones disponibles en la notificación de correo no deseado del usuario final si la directiva de cuarentena concede al usuario permisos de acceso completo](../../media/quarantine-tags-esn-full-access.png)

@@ -15,12 +15,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 0e91a48d41aded93974b47745869e5ab220170d4e41ed82726aeb9e50c1aa075
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2db625e98bd685c0dffb7820847c483b54f600fb
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834064"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533596"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Configurar la protección en tiempo real, heurística y de comportamiento
 
@@ -43,7 +43,7 @@ Consulte [Use next-gen Antivirus de Microsoft Defender a través](cloud-protecti
 
 ## <a name="in-this-section"></a>En esta sección
 
- Tema | Descripción
+ Tema|Descripción
 ---|---
-[Detectar y bloquear aplicaciones potencialmente no deseadas](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Detectar y bloquear aplicaciones que pueden no ser deseadas en la red, como el software publicitario, modificadores de explorador y barras de herramientas, y aplicaciones antivirus falsas o falsas
-[Habilitar y configurar las Antivirus de Microsoft Defender de protección](configure-real-time-protection-microsoft-defender-antivirus.md) | Habilitar y configurar la protección en tiempo real, la heurística y otras características de supervisión Antivirus de Microsoft Defender siempre activas
+[Detectar y bloquear aplicaciones potencialmente no deseadas](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)|Detectar y bloquear aplicaciones que pueden no ser deseadas en la red, como el software publicitario, modificadores de explorador y barras de herramientas, y aplicaciones antivirus falsas o falsas
+[Habilitar y configurar las Antivirus de Microsoft Defender de protección](configure-real-time-protection-microsoft-defender-antivirus.md)|Habilitar y configurar la protección en tiempo real, la heurística y otras características de supervisión Antivirus de Microsoft Defender siempre activas

@@ -17,12 +17,12 @@ ms.collection:
 description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a8ad98029fdc7f008ff6b22c2e8fa3e738b9fc7c0caa13b0aaca918a40f4d3e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9bed3c24fee91d746957a6418e5f5ea61babef6b
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56886174"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533644"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servicios para no clientes que envían correo a Microsoft 365
 
@@ -67,4 +67,4 @@ Este es un portal de autoservicio que puede usar para quitarse de la lista Micro
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Notificación de abusos y spam relativos a correos electrónicos no deseados procedentes de Exchange Online
 
-A veces, Microsoft365 es usado por terceros para enviar correo electrónico no deseado, en violación de nuestros términos de uso y directiva. Si recibe algún correo electrónico no deseado de Office 365, puede notificar estos mensajes a Microsoft. Para obtener instrucciones, vea [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+A veces Microsoft 365 terceros los usa para enviar correo no deseado, en violación de nuestros términos de uso y directiva. Si recibe algún correo electrónico no deseado de Office 365, puede notificar estos mensajes a Microsoft. Para obtener instrucciones, vea [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).

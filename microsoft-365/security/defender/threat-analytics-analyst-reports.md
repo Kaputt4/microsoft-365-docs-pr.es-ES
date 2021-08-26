@@ -1,5 +1,5 @@
 ---
-title: Comprender la sección de informe de analistas en análisis de amenazas
+title: Comprender la sección de informe de analistas en análisis de amenazas en Microsoft 365 Defender
 ms.reviewer: ''
 description: Obtenga información sobre la sección de informe de analistas de cada informe de análisis de amenazas. Comprenda cómo proporciona información sobre amenazas, mitigaciones, detecciones, consultas avanzadas de búsqueda y mucho más.
 keywords: informe de analistas, análisis de amenazas, detecciones, consultas avanzadas de búsqueda, mitigaciones,
@@ -21,14 +21,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f916137be71dffeaed7e3718286032a17c9f8e04
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a939bd03f983904f438aaa2efe8e3be18c6831cd
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498477"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533560"
 ---
-# <a name="understand-the-analyst-report-in-threat-analytics"></a>Comprender el informe de analistas en análisis de amenazas
+# <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Comprender el informe de analistas en análisis de amenazas en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -100,7 +100,7 @@ Los analistas de Microsoft han consultado consultas avanzadas de búsqueda en lo
 
 
 >[!NOTE]
-> El análisis de amenazas también está disponible en [Microsoft Defender para Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). Sin embargo, no tiene la integración de datos entre Microsoft Defender para Office y Microsoft Defender para endpoint que Microsoft 365 análisis de amenazas de Defender.
+> El análisis de amenazas también está disponible en [Microsoft Defender para Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). Sin embargo, no tiene la integración de datos entre Microsoft Defender para Office y Microsoft Defender para endpoint que Microsoft 365 Defender análisis de amenazas.
 
 
 ## <a name="related-topics"></a>Temas relacionados

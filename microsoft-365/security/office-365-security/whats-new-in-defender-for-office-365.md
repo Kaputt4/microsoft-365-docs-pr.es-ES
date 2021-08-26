@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c046bf15cf3ccfbbbfb8969b0f0bc48db1ad4f5
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: ae01a929121488399ac3a016f0b33ae7b28ff96d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349901"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533620"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -39,13 +39,25 @@ ms.locfileid: "58349901"
 En este artículo se enumeran las nuevas características de la versión más reciente de Microsoft Defender para Office 365. Las características que están actualmente en versión preliminar se indican con **(versión preliminar)**.
 
 Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
+
 > [!TIP]
 > ¿Aún no tiene Microsoft Defender para Office 365? [Póngase en contacto con ventas para iniciar una versión de prueba.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
 ## <a name="august-2021"></a>Agosto de 2021
 
+- [Revisión de administrador para los mensajes notificados:](admin-review-reported-message.md)los administradores ahora pueden enviar mensajes con plantilla de vuelta a los usuarios finales después de revisar los mensajes notificados. Esto se puede personalizar para su organización y también en función del veredicto del administrador. 
+=======
+## <a name="september-2021"></a>Septiembre de 2021
+
+- [Directivas de cuarentena:](quarantine-policies.md)los administradores pueden configurar un control pormenorizado para el acceso de los destinatarios a los mensajes en cuarentena y personalizar las notificaciones de correo no deseado del usuario final.
+  - [Vídeo de la experiencia de administrador](https://youtu.be/vnar4HowfpY)
+  - [Vídeo de la experiencia del usuario final](https://youtu.be/s-vozLO43rI)
+  - Otras nuevas funcionalidades que llegan a la experiencia de cuarentena se describen en esta entrada de blog: [Simplificación de la experiencia de cuarentena](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388).
+
+## <a name="august-2021"></a>Agosto de 2021
+
 - [Revisión de administrador para los mensajes notificados:](admin-review-reported-message.md)los administradores ahora pueden enviar mensajes con plantilla de vuelta a los usuarios finales después de revisar los mensajes notificados. Las plantillas se pueden personalizar para su organización y también en función del veredicto del administrador.
-- [Add allows in the Tenant Allow/Block List](manage-tenant-allows.md): Allows cannot be added directly to the Tenant Allow/Block List but now can be if the blocked message is submitted as part of the admin submission process. Según el bloque que se haya producido, se agregará una dirección URL, un archivo o un remitente a la lista de inquilinos permitidos o bloqueados. En la mayoría de los casos, se agregan los permitidos para dar al sistema algo de tiempo y permitirlo de forma natural si se garantiza. En algunos casos, Microsoft administra la opción para usted.
+- Agregar permite en la lista de inquilinos [permitir/bloquear:](manage-tenant-allows.md)ahora puede agregar entradas de permitido a la lista de inquilinos permitidos o bloqueados si el mensaje bloqueado se envió como parte del proceso de envío de administrador. Según la naturaleza del bloque, la dirección URL, el archivo y/o la opción de remitente enviadas se agregarán a la lista de inquilinos permitidos o bloqueados. En la mayoría de los casos, se agregan los permitidos para dar al sistema algo de tiempo y permitirlo de forma natural si se garantiza. En algunos casos, Microsoft administra la opción para usted.
 
 ## <a name="july-2021"></a>Julio de 2021
 
@@ -61,7 +73,6 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
 - Las alertas de Microsoft Defender para Office 365 están ahora integradas en Microsoft 365 Defender: Microsoft 365 Defender cola de alertas unificadas y [cola de alertas unificadas](../defender/investigate-alerts.md)
 - [](user-tags.md) Las etiquetas de usuario ahora se integran en Microsoft Defender para obtener experiencias de alerta de Office 365, incluidos: la cola de alertas y los detalles de Office 365 Security & Compliance y el ámbito de las directivas de alerta personalizadas para las etiquetas de usuario para crear directivas de alertas dirigidas. 
   - Las etiquetas también están disponibles en la cola de alertas unificadas en el centro de Microsoft 365 Defender (Microsoft Defender para Office 365 Plan 2)
-
 
 ## <a name="june-2021"></a>Junio de 2021
 

@@ -14,12 +14,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: c70110afb23dbe8e7853b34b1b7322385ede45a0
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f8d274443e67ab89952508870aa118d7e13378e0
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256362"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533428"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
@@ -28,13 +28,14 @@ ms.locfileid: "58256362"
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 - Antivirus de Microsoft Defender
 
-Puede definir exclusiones para Antivirus de Microsoft Defender que se aplican [](run-scan-microsoft-defender-antivirus.md)a exámenes programados, [](schedule-antivirus-scans.md)exámenes a petición y protección y supervisión siempre activas en tiempo [real.](configure-real-time-protection-microsoft-defender-antivirus.md) **Por lo general, no es necesario aplicar exclusiones**. Si necesita aplicar exclusiones, puede elegir entre varios tipos diferentes: 
+Puede definir exclusiones para Antivirus de Microsoft Defender que se aplican [](run-scan-microsoft-defender-antivirus.md)a exámenes programados, [](schedule-antivirus-scans.md)exámenes a petición y protección y supervisión siempre activas en tiempo [real.](configure-real-time-protection-microsoft-defender-antivirus.md) **Por lo general, no es necesario aplicar exclusiones**. Si necesita aplicar exclusiones, puede elegir entre varios tipos diferentes:
 
 - Exclusiones basadas en extensiones de archivo y ubicaciones de carpetas (descritas en este artículo)
-- [Exclusiones de archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) 
+- [Exclusiones de archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Antivirus de Microsoft Defender exclusiones no se aplican a otras funcionalidades de Microsoft Defender para endpoints, como [detección y respuesta de puntos de conexión (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)reglas de reducción de superficie de ataque [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)y acceso controlado a carpetas [.](/microsoft-365/security/defender-endpoint/controlled-folders) Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar EDR alertas y otras detecciones. Para excluir archivos de forma general, agrégálos a los indicadores [personalizados](/microsoft-365/security/defender-endpoint/manage-indicators)de Microsoft Defender para endpoint .
+> Antivirus de Microsoft Defender exclusiones no se aplican a otras funcionalidades de Microsoft Defender para endpoints, como [detección y respuesta de puntos de conexión (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)reglas de reducción de superficie de ataque [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)y acceso controlado a carpetas [.](/microsoft-365/security/defender-endpoint/controlled-folders) Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar EDR alertas y otras detecciones.
+> Para excluir archivos de forma general, agrégálos a los indicadores [personalizados](/microsoft-365/security/defender-endpoint/manage-indicators)de Microsoft Defender para endpoint .
 
 ## <a name="before-you-begin"></a>Antes de empezar...
 
@@ -49,19 +50,23 @@ Para excluir determinados archivos de Antivirus de Microsoft Defender exámenes,
 >
 > Las exclusiones automáticas solo se aplican Windows Server 2016 y versiones posteriores. Estas exclusiones no son visibles en la Seguridad de Windows y en PowerShell.
 
-En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta. <br/><br/>
+En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta.
 
-| Exclusión | Ejemplos | Lista de exclusión |
-|:---|:---|:---|
-|Cualquier archivo con una extensión específica | Todos los archivos con la extensión especificada, en cualquier lugar del equipo. <p> Sintaxis válida: `.test` y `test`  | Exclusiones de extensión |
-|Cualquier archivo de una carpeta específica | Todos los archivos de la `c:\test\sample` carpeta | Exclusiones de archivos y carpetas |
-| Un archivo específico en una carpeta específica | Solo el `c:\sample\sample.test` archivo | Exclusiones de archivos y carpetas |
-| Un proceso específico | El archivo ejecutable `c:\test\process.exe` | Exclusiones de archivos y carpetas |
+<br>
+
+****
+
+|Exclusión|Ejemplos|Lista de exclusión|
+|---|---|---|
+|Cualquier archivo con una extensión específica|Todos los archivos con la extensión especificada, en cualquier lugar del equipo. <p> Sintaxis válida: `.test` y `test`|Exclusiones de extensión|
+|Cualquier archivo de una carpeta específica|Todos los archivos de la `c:\test\sample` carpeta|Exclusiones de archivos y carpetas|
+|Un archivo específico en una carpeta específica|Solo el `c:\sample\sample.test` archivo|Exclusiones de archivos y carpetas|
+|Un proceso específico|El archivo ejecutable `c:\test\process.exe`|Exclusiones de archivos y carpetas|
+|
 
 ## <a name="characteristics-of-exclusion-lists"></a>Características de las listas de exclusión
 
 - Las exclusiones de carpetas se aplican a todos los archivos y carpetas de esa carpeta, a menos que la subcarpeta sea un punto de repetición. Las subcarpetas de punto de repetición deben excluirse por separado.
-
 - Las extensiones de archivo se aplican a cualquier nombre de archivo con la extensión definida si no se define una ruta de acceso o carpeta.
 
 ## <a name="important-notes-about-exclusions-based-on-file-extensions-and-folder-locations"></a>Notas importantes sobre exclusiones basadas en extensiones de archivo y ubicaciones de carpetas
@@ -84,10 +89,9 @@ Puede elegir entre varios métodos para definir exclusiones para Antivirus de Mi
 
 ### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Usar Intune para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
 
-Consulte los siguientes artículos:   
+Consulte los siguientes artículos:
 
 - [Configurar las opciones de restricción de dispositivo en Microsoft Intune](/intune/device-restrictions-configure)
-
 - [Antivirus de Microsoft Defender de restricción de dispositivos para Windows 10 en Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Usar Configuration Manager para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
@@ -96,17 +100,16 @@ Vea [How to create and deploy antimalware policies: Exclusion settings](/configm
 
 ### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Usar la directiva de grupo para configurar exclusiones de extensiones de archivo o carpetas
 
->[!NOTE]
->Si especifica una ruta de acceso completa a un archivo, solo se excluye ese archivo. Si se define una carpeta en la exclusión, se excluyen todos los archivos y subdirectorios de esa carpeta.
+> [!NOTE]
+> Si especifica una ruta de acceso completa a un archivo, solo se excluye ese archivo. Si se define una carpeta en la exclusión, se excluyen todos los archivos y subdirectorios de esa carpeta.
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón secundario en el objeto de directiva de grupo que quiera configurar y seleccione **Editar**.
 
 2. En el **Editor de administración de directivas de grupo,** vaya a Configuración del **equipo** y seleccione **Plantillas administrativas.**
 
-3. Expanda el árbol para **Windows componentes**  >  **Antivirus de Microsoft Defender**  >  **exclusiones**.
+3. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **exclusiones**.
 
 4. Abra la **configuración Exclusiones de ruta de** acceso para su edición y agregue las exclusiones.
-
     1. Establezca la opción en **Habilitado**.
     2. En la **sección Opciones,** seleccione **Mostrar**.
     3. Especifique cada carpeta en su propia línea en la **columna Nombre de** valor.
@@ -115,10 +118,9 @@ Vea [How to create and deploy antimalware policies: Exclusion settings](/configm
 5. Elija **Aceptar**.
 
 6. Abra la **configuración Exclusiones de extensión** para editar y agregue las exclusiones.
-
     1. Establezca la opción en **Habilitado**.
     2. En la **sección Opciones,** seleccione **Mostrar**.
-    3. Escriba cada extensión de archivo en su propia línea en la **columna Nombre de** valor.  Escriba **0** en la **columna** Valor.
+    3. Escriba cada extensión de archivo en su propia línea en la columna **Nombre** de valorEnter **0** en la **columna** Valor.
 
 7. Elija **Aceptar**.
 
@@ -136,18 +138,28 @@ El formato de los cmdlets es el siguiente:
 
 En la tabla siguiente se enumeran los cmdlets que puede usar en la `<cmdlet>` parte del cmdlet de PowerShell:
 
-| Acción de configuración | Cmdlet de PowerShell |
+<br>
+
+****
+
+|Acción de configuración|Cmdlet de PowerShell|
 |:---|:---|
-|Crear o sobrescribir la lista | `Set-MpPreference` |
-|Agregar a la lista | `Add-MpPreference` |
-|Quitar elemento de la lista | `Remove-MpPreference` |
+|Crear o sobrescribir la lista|`Set-MpPreference`|
+|Agregar a la lista|`Add-MpPreference`|
+|Quitar elemento de la lista|`Remove-MpPreference`|
+|
 
 En la tabla siguiente se enumeran los valores que puede usar en la `<exclusion list>` parte del cmdlet de PowerShell:
 
-| Tipo de exclusión | Parámetro de PowerShell |
-|:---|:---|
-| Todos los archivos con una extensión de archivo especificada | `-ExclusionExtension` |
-| Todos los archivos de una carpeta (incluidos los archivos en subdirectorios) o un archivo específico | `-ExclusionPath` |
+<br>
+
+****
+
+|Tipo de exclusión|Parámetro de PowerShell|
+|---|---|
+|Todos los archivos con una extensión de archivo especificada|`-ExclusionExtension`|
+|Todos los archivos de una carpeta (incluidos los archivos en subdirectorios) o un archivo específico|`-ExclusionPath`|
+|
 
 > [!IMPORTANT]
 > Si ha creado una lista, ya sea con o con el `Set-MpPreference` `Add-MpPreference` cmdlet de nuevo `Set-MpPreference` sobrescribirá la lista existente.
@@ -189,107 +201,119 @@ Puede usar el asterisco, el signo de interrogación o las variables de entorno (
 
 > [!IMPORTANT]
 > Existen limitaciones clave y escenarios de uso para estos caracteres comodín:
+>
 > - El uso de variables de entorno se limita a las variables de máquina y las aplicables a los procesos que se ejecutan como una cuenta NT AUTHORITY\SYSTEM.
 > - No puede usar un comodín en lugar de una letra de unidad.
 > - Un asterisco `*` en una exclusión de carpeta se mantiene en su lugar para una sola carpeta. Use varias instancias de para `\*\` indicar varias carpetas anidadas con nombres no especificados.
 
 En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y se proporcionan algunos ejemplos.
 
-| Carácter comodín  | Ejemplos  |
-|:---------|:---------|
-| `*` (asterisco) <p> En **las inclusiones de** nombre de archivo y extensión de archivo, el asterisco reemplaza cualquier número de caracteres y solo se aplica a los archivos de la última carpeta definida en el argumento. <p> En **las exclusiones de carpetas,** el asterisco reemplaza a una sola carpeta. Use varias `*` barras diagonales de carpeta `\` para indicar varias carpetas anidadas. Después de hacer coincidir el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.   | `C:\MyData\*.txt` incluye `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` incluye cualquier archivo y `C:\somepath\Archives\Data` sus subcarpetas, `C:\somepath\Authorized\Data` y sus subcarpetas <p> `C:\Serv\*\*\Backup` incluye cualquier archivo y `C:\Serv\Primary\Denied\Backup` sus subcarpetas y `C:\Serv\Secondary\Allowed\Backup` sus subcarpetas     |
-| `?` (signo de interrogación)  <p> En **las inclusiones** de nombre de archivo y extensión de archivo, el signo de interrogación reemplaza a un solo carácter y solo se aplica a los archivos de la última carpeta definida en el argumento. <p> En **las exclusiones de carpetas,** el signo de interrogación reemplaza un solo carácter en un nombre de carpeta. Después de hacer coincidir el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.   | `C:\MyData\my?.zip` incluye `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` incluye cualquier archivo en `C:\somepath\P\Data` y sus subcarpetas  <p> `C:\somepath\test0?\Data` incluiría cualquier archivo en `C:\somepath\test01\Data` y sus subcarpetas          |
-| Variables de entorno <p> La variable definida se rellena como una ruta de acceso cuando se evalúa la exclusión.          |`%ALLUSERSPROFILE%\CustomLogFiles` incluiría `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
-        
+<br>
+
+****
+
+|Carácter comodín|Ejemplos|
+|---|---|
+|`*` (asterisco) <p> En **las inclusiones de** nombre de archivo y extensión de archivo, el asterisco reemplaza cualquier número de caracteres y solo se aplica a los archivos de la última carpeta definida en el argumento. <p> En **las exclusiones de carpetas,** el asterisco reemplaza a una sola carpeta. Use varias `*` barras diagonales de carpeta `\` para indicar varias carpetas anidadas. Después de hacer coincidir el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.|`C:\MyData\*.txt` incluye `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` incluye cualquier archivo y `C:\somepath\Archives\Data` sus subcarpetas, `C:\somepath\Authorized\Data` y sus subcarpetas <p> `C:\Serv\*\*\Backup` incluye cualquier archivo y `C:\Serv\Primary\Denied\Backup` sus subcarpetas y `C:\Serv\Secondary\Allowed\Backup` sus subcarpetas|
+|`?` (signo de interrogación)  <p> En **las inclusiones** de nombre de archivo y extensión de archivo, el signo de interrogación reemplaza a un solo carácter y solo se aplica a los archivos de la última carpeta definida en el argumento. <p> En **las exclusiones de carpetas,** el signo de interrogación reemplaza un solo carácter en un nombre de carpeta. Después de hacer coincidir el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.|`C:\MyData\my?.zip` incluye `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` incluye cualquier archivo en `C:\somepath\P\Data` y sus subcarpetas  <p> `C:\somepath\test0?\Data` incluiría cualquier archivo en `C:\somepath\test01\Data` y sus subcarpetas|
+|Variables de entorno <p> La variable definida se rellena como una ruta de acceso cuando se evalúa la exclusión.|`%ALLUSERSPROFILE%\CustomLogFiles` incluiría `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
+|
 
 > [!IMPORTANT]
 > Si mezcla un argumento de exclusión de archivos con un argumento de exclusión de carpeta, las reglas se detendrán en la coincidencia del argumento de archivo en la carpeta coincidente y no buscarán coincidencias de archivos en ninguna subcarpeta.
+>
 > Por ejemplo, puede excluir todos los archivos que comiencen por "date" en las carpetas `c:\data\final\marked` y mediante el argumento rule `c:\data\review\marked` `c:\data\*\marked\date*` .
+>
 > Sin embargo, este argumento no coincidirá con ningún archivo de subcarpetas en `c:\data\final\marked` o `c:\data\review\marked` .
 
 <a id="review"></a>
 
 ### <a name="system-environment-variables"></a>Variables de entorno del sistema
 
-En la tabla siguiente se enumeran y describen las variables de entorno de cuentas del sistema. 
+En la tabla siguiente se enumeran y describen las variables de entorno de cuentas del sistema.
 
-| Esta variable de entorno del sistema... | Redirige a esto |
-|:--|:--|
-| `%APPDATA%`| `C:\Users\UserName.DomainName\AppData\Roaming` |
-| `%APPDATA%\Microsoft\Internet Explorer\Quick Launch` | `C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch` |
-| `%APPDATA%\Microsoft\Windows\Start Menu` | `C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu` |
-| `%APPDATA%\Microsoft\Windows\Start Menu\Programs` | `C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs` |
-| `%LOCALAPPDATA%` | `C:\Windows\System32\config\systemprofile\AppData\Local` |
-| `%ProgramData%` | `C:\ProgramData` |
-| `%ProgramFiles%` | `C:\Program Files` |
-| `%ProgramFiles%\Common Files` | `C:\Program Files\Common Files` |
-| `%ProgramFiles%\Windows Sidebar\Gadgets` | `C:\Program Files\Windows Sidebar\Gadgets` |
-| `%ProgramFiles%\Common Files` | `C:\Program Files\Common Files` |
-| `%ProgramFiles(x86)%` | `C:\Program Files (x86)` |
-| `%ProgramFiles(x86)%\Common Files` | `C:\Program Files (x86)\Common Files` |
-| `%SystemDrive%` | `C:` |
-| `%SystemDrive%\Program Files` | `C:\Program Files` |
-| `%SystemDrive%\Program Files (x86)` | `C:\Program Files (x86)` |
-| `%SystemDrive%\Users` | `C:\Users` |
-| `%SystemDrive%\Users\Public` | `C:\Users\Public` |
-| `%SystemRoot%` | `C:\Windows` |
-| `%windir%` | `C:\Windows` |
-| `%windir%\Fonts` | `C:\Windows\Fonts` |
-| `%windir%\Resources` | `C:\Windows\Resources` |
-| `%windir%\resources\0409` | `C:\Windows\resources\0409` |
-| `%windir%\system32` | `C:\Windows\System32` |
-| `%ALLUSERSPROFILE%` | `C:\ProgramData` |
-| `%ALLUSERSPROFILE%\Application Data` | `C:\ProgramData\Application Data` |
-| `%ALLUSERSPROFILE%\Documents` | `C:\ProgramData\Documents` |
-| `%ALLUSERSPROFILE%\Documents\My Music\Sample Music` | `C:\ProgramData\Documents\My Music\Sample Music` |
-| `%ALLUSERSPROFILE%\Documents\My Music` | `C:\ProgramData\Documents\My Music` |
-| `%ALLUSERSPROFILE%\Documents\My Pictures` | `C:\ProgramData\Documents\My Pictures` |
-| `%ALLUSERSPROFILE%\Documents\My Pictures\Sample Pictures` | `C:\ProgramData\Documents\My Pictures\Sample Pictures` |
-| `%ALLUSERSPROFILE%\Documents\My Videos` | `C:\ProgramData\Documents\My Videos` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\DeviceMetadataStore` | `C:\ProgramData\Microsoft\Windows\DeviceMetadataStore` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\GameExplorer` | `C:\ProgramData\Microsoft\Windows\GameExplorer` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Ringtones` | `C:\ProgramData\Microsoft\Windows\Ringtones` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu` | `C:\ProgramData\Microsoft\Windows\Start Menu` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs` | `C:\ProgramData\Microsoft\Windows\Start Menu\Programs` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools` | `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp` | `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Templates` | `C:\ProgramData\Microsoft\Windows\Templates` |
-| `%ALLUSERSPROFILE%\Start Menu` | `C:\ProgramData\Start Menu` |
-| `%ALLUSERSPROFILE%\Start Menu\Programs` | C:\ProgramData\Menú Inicio\Programas |
-| `%ALLUSERSPROFILE%\Start Menu\Programs\Administrative Tools` | `C:\ProgramData\Start Menu\Programs\Administrative Tools` | 
-| `%ALLUSERSPROFILE%\Templates` | `C:\ProgramData\Templates` |
-| `%LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\Templates` | `C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\ConnectedSearch\Templates` |
-| `%LOCALAPPDATA%\Microsoft\Windows\History` | `C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\History` |
-| `%PUBLIC%` | `C:\Users\Public` |
-| `%PUBLIC%\AccountPictures` | `C:\Users\Public\AccountPictures` |
-| `%PUBLIC%\Desktop` | `C:\Users\Public\Desktop` |
-| `%PUBLIC%\Documents` | `C:\Users\Public\Documents` |
-| `%PUBLIC%\Downloads` | `C:\Users\Public\Downloads` |
-| `%PUBLIC%\Music\Sample Music` | `C:\Users\Public\Music\Sample Music` |
-| `%PUBLIC%\Music\Sample Playlists` | `C:\Users\Public\Music\Sample Playlists` |
-| `%PUBLIC%\Pictures\Sample Pictures` | `C:\Users\Public\Pictures\Sample Pictures` |
-| `%PUBLIC%\RecordedTV.library-ms` | `C:\Users\Public\RecordedTV.library-ms` |
-| `%PUBLIC%\Videos` | `C:\Users\Public\Videos` |
-| `%PUBLIC%\Videos\Sample Videos` | `C:\Users\Public\Videos\Sample Videos` | 
-| `%USERPROFILE%` | `C:\Windows\System32\config\systemprofile` |
-| `%USERPROFILE%\AppData\Local` | `C:\Windows\System32\config\systemprofile\AppData\Local` |
-| `%USERPROFILE%\AppData\LocalLow` | `C:\Windows\System32\config\systemprofile\AppData\LocalLow` |
-| `%USERPROFILE%\AppData\Roaming` | `C:\Windows\System32\config\systemprofile\AppData\Roaming` |
+<br>
 
+****
+
+|Esta variable de entorno del sistema...|Redirige a esto|
+|---|---|
+|`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
+|`%APPDATA%\Microsoft\Internet Explorer\Quick Launch`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch`|
+|`%APPDATA%\Microsoft\Windows\Start Menu`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu`|
+|`%APPDATA%\Microsoft\Windows\Start Menu\Programs`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`|
+|`%LOCALAPPDATA%`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
+|`%ProgramData%`|`C:\ProgramData`|
+|`%ProgramFiles%`|`C:\Program Files`|
+|`%ProgramFiles%\Common Files`|`C:\Program Files\Common Files`|
+|`%ProgramFiles%\Windows Sidebar\Gadgets`|`C:\Program Files\Windows Sidebar\Gadgets`|
+|`%ProgramFiles%\Common Files`|`C:\Program Files\Common Files`|
+|`%ProgramFiles(x86)%`|`C:\Program Files (x86)`|
+|`%ProgramFiles(x86)%\Common Files`|`C:\Program Files (x86)\Common Files`|
+|`%SystemDrive%`|`C:`|
+|`%SystemDrive%\Program Files`|`C:\Program Files`|
+|`%SystemDrive%\Program Files (x86)`|`C:\Program Files (x86)`|
+|`%SystemDrive%\Users`|`C:\Users`|
+|`%SystemDrive%\Users\Public`|`C:\Users\Public`|
+|`%SystemRoot%`|`C:\Windows`|
+|`%windir%`|`C:\Windows`|
+|`%windir%\Fonts`|`C:\Windows\Fonts`|
+|`%windir%\Resources`|`C:\Windows\Resources`|
+|`%windir%\resources\0409`|`C:\Windows\resources\0409`|
+|`%windir%\system32`|`C:\Windows\System32`|
+|`%ALLUSERSPROFILE%`|`C:\ProgramData`|
+|`%ALLUSERSPROFILE%\Application Data`|`C:\ProgramData\Application Data`|
+|`%ALLUSERSPROFILE%\Documents`|`C:\ProgramData\Documents`|
+|`%ALLUSERSPROFILE%\Documents\My Music\Sample Music`|`C:\ProgramData\Documents\My Music\Sample Music`|
+|`%ALLUSERSPROFILE%\Documents\My Music`|`C:\ProgramData\Documents\My Music`|
+|`%ALLUSERSPROFILE%\Documents\My Pictures`|`C:\ProgramData\Documents\My Pictures`|
+|`%ALLUSERSPROFILE%\Documents\My Pictures\Sample Pictures`|`C:\ProgramData\Documents\My Pictures\Sample Pictures`|
+|`%ALLUSERSPROFILE%\Documents\My Videos`|`C:\ProgramData\Documents\My Videos`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\DeviceMetadataStore`|`C:\ProgramData\Microsoft\Windows\DeviceMetadataStore`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\GameExplorer`|`C:\ProgramData\Microsoft\Windows\GameExplorer`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Ringtones`|`C:\ProgramData\Microsoft\Windows\Ringtones`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu`|`C:\ProgramData\Microsoft\Windows\Start Menu`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs`|`C:\ProgramData\Microsoft\Windows\Start Menu\Programs`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools`|`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp`|`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Templates`|`C:\ProgramData\Microsoft\Windows\Templates`|
+|`%ALLUSERSPROFILE%\Start Menu`|`C:\ProgramData\Start Menu`|
+|`%ALLUSERSPROFILE%\Start Menu\Programs`|C:\ProgramData\Menú Inicio\Programas|
+|`%ALLUSERSPROFILE%\Start Menu\Programs\Administrative Tools`|`C:\ProgramData\Start Menu\Programs\Administrative Tools`|
+|`%ALLUSERSPROFILE%\Templates`|`C:\ProgramData\Templates`|
+|`%LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\Templates`|`C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\ConnectedSearch\Templates`|
+|`%LOCALAPPDATA%\Microsoft\Windows\History`|`C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\History`|
+|`%PUBLIC%`|`C:\Users\Public`|
+|`%PUBLIC%\AccountPictures`|`C:\Users\Public\AccountPictures`|
+|`%PUBLIC%\Desktop`|`C:\Users\Public\Desktop`|
+|`%PUBLIC%\Documents`|`C:\Users\Public\Documents`|
+|`%PUBLIC%\Downloads`|`C:\Users\Public\Downloads`|
+|`%PUBLIC%\Music\Sample Music`|`C:\Users\Public\Music\Sample Music`|
+|`%PUBLIC%\Music\Sample Playlists`|`C:\Users\Public\Music\Sample Playlists`|
+|`%PUBLIC%\Pictures\Sample Pictures`|`C:\Users\Public\Pictures\Sample Pictures`|
+|`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
+|`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
+|`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
+|`%USERPROFILE%`|`C:\Windows\System32\config\systemprofile`|
+|`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
+|
 
 ## <a name="review-the-list-of-exclusions"></a>Revisar la lista de exclusiones
 
 Puede recuperar los elementos de la lista de exclusión mediante uno de los siguientes métodos:
+
 - [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - MpCmdRun
 - PowerShell
 - [Seguridad de Windows app](microsoft-defender-security-center-antivirus.md)
 
->[!IMPORTANT]
->Los cambios de lista de exclusión realizados con la directiva de **grupo se** mostrarán en las listas de la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
+> [!IMPORTANT]
+> Los cambios de lista de exclusión realizados con la directiva de **grupo se** mostrarán en las listas de la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
 >
->Los cambios realizados en la Seguridad de Windows **no se mostrarán** en las listas de directivas de grupo.
+> Los cambios realizados en la Seguridad de Windows **no se mostrarán** en las listas de directivas de grupo.
 
 Si usa PowerShell, puede recuperar la lista de dos maneras:
 
@@ -307,8 +331,8 @@ cd 4.18.1812.3 (Where 4.18.1812.3 is this month's MDAV "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
->[!NOTE]
->La comprobación de exclusiones con MpCmdRun requiere Antivirus de Microsoft Defender versión 4.18.1812.3 de CAMP (publicada en diciembre de 2018) o posterior.
+> [!NOTE]
+> La comprobación de exclusiones con MpCmdRun requiere Antivirus de Microsoft Defender versión 4.18.1812.3 de CAMP (publicada en diciembre de 2018) o posterior.
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Revise la lista de exclusiones junto con el resto de Antivirus de Microsoft Defender preferencias mediante PowerShell
 
@@ -369,12 +393,9 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarla con el nombre de archivo o en la carpeta que está intentando excluir.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
-
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-
 - [Configurar Antivirus de Microsoft Defender exclusiones en Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
-
 - [Errores comunes para evitarlos cuando se definen exclusiones](common-exclusion-mistakes-microsoft-defender-antivirus.md)
