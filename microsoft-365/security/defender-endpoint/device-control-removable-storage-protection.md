@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 732fe4748db6f3a2f1d055ee900fa87e84de57ea
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 80a3d5bee2f26e708969832c67982f679b95c0b4
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58359990"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531508"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender para Endpoint Device Control Removable Storage Protection
 
@@ -103,13 +103,13 @@ Microsoft Defender para Endpoint Device Control Removable Storage Protection le 
 ****
 
 |Nombre de la propiedad|Directivas aplicables|Se aplica a sistemas operativos|Descripción|
-|---------|---------|---------|---------|
-|Clase device|- [Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint](control-usb-devices-using-intune.md)|Windows|Para obtener información acerca de los formatos de id. de dispositivo, consulta [clase de configuración del dispositivo](/windows-hardware/drivers/install/overview-of-device-setup-classes). Los dos vínculos siguientes proporcionan la lista completa de clases de configuración de dispositivos. Las clases de "Uso del sistema" se refieren principalmente a dispositivos que vienen con un equipo o máquina de fábrica, mientras que las clases de "Proveedor" se refieren principalmente a dispositivos que podrían conectarse a un equipo o máquina existentes: Clases de configuración de dispositivos definidas por el sistema disponibles para proveedores - controladores de Windows y clases de configuración de dispositivos definidas por el sistema [reservadas](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors) para el uso del sistema [- controladores Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use). **Nota:** La instalación del dispositivo se puede aplicar a cualquier dispositivo, no solo al almacenamiento extraíble.|
-|Id. principal|- [Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows|El identificador principal incluye almacenamiento extraíble y CD/DVD y Windows dispositivo portátil/WPD.|
-|Id. de dispositivo|- [Control de acceso de almacenamiento extraíble;](device-control-removable-storage-access-control.md)</br>- [Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint](control-usb-devices-using-intune.md)|Windows|Para obtener información sobre los formatos de id. de dispositivo, consulte [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers), por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
-|Id. de hardware|- [Control de acceso de almacenamiento extraíble;](device-control-removable-storage-access-control.md)</br>- [Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint](control-usb-devices-using-intune.md)|Windows|Una cadena identificó el dispositivo en el sistema, por ejemplo, USBSTOR\DiskGeneric_Flash_Disk___8.07; **Nota:** El identificador de hardware no es único; diferentes dispositivos pueden compartir el mismo valor.|
-|Id. de instancia|- [Control de acceso de almacenamiento extraíble;](device-control-removable-storage-access-control.md)</br>- Instalación de dispositivos|Windows|Una cadena identifica de forma única el dispositivo en el sistema, por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
-|Nombre descriptivo|- [Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows|Una cadena adjunta al dispositivo, por ejemplo, Dispositivo USB de disco flash genérico|
-|Id. de proveedor /Id. de producto|- [Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows <br/> macOS |Id. de proveedor es el código de proveedor de cuatro dígitos que el comité USB asigna al proveedor. Id. de producto es el código de producto de cuatro dígitos que el proveedor asigna al dispositivo; Admite caracteres comodín.|
-|NumberId de serie|- [Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows <br/> macOS |Por ejemplo, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>|
-
+|---|---|---|---|
+|Clase device|[Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint](control-usb-devices-using-intune.md)|Windows|Para obtener información acerca de los formatos de id. de dispositivo, consulta [clase de configuración del dispositivo](/windows-hardware/drivers/install/overview-of-device-setup-classes). Los dos vínculos siguientes proporcionan la lista completa de clases de configuración de dispositivos. Las clases de "Uso del sistema" se refieren principalmente a dispositivos que vienen con un equipo o máquina de fábrica, mientras que las clases de "Proveedor" se refieren principalmente a dispositivos que podrían conectarse a un equipo o máquina existentes: Clases de configuración de dispositivos definidas por el sistema disponibles para proveedores - controladores de Windows y clases de configuración de dispositivos definidas por el sistema [reservadas](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors) para el uso del sistema [- controladores Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use). **Nota:** La instalación del dispositivo se puede aplicar a cualquier dispositivo, no solo al almacenamiento extraíble.|
+|Id. principal|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows|El identificador principal incluye almacenamiento extraíble y CD/DVD y Windows dispositivo portátil/WPD.|
+|Id. de dispositivo|[Control de acceso de almacenamiento extraíble;](device-control-removable-storage-access-control.md) <p> [Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint](control-usb-devices-using-intune.md)|Windows|Para obtener información sobre los formatos de id. de dispositivo, consulte [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers), por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
+|Id. de hardware|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md) <p> [Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint](control-usb-devices-using-intune.md)|Windows|Una cadena identificó el dispositivo en el sistema, por ejemplo, USBSTOR\DiskGeneric_Flash_Disk___8.07; **Nota:** El identificador de hardware no es único; diferentes dispositivos pueden compartir el mismo valor.|
+|Id. de instancia|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md) <p> Instalación de dispositivos|Windows|Una cadena identifica de forma única el dispositivo en el sistema, por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
+|Nombre descriptivo|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows|Una cadena adjunta al dispositivo, por ejemplo, Dispositivo USB de disco flash genérico|
+|Id. de proveedor /Id. de producto|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows <p> macOS|Id. de proveedor es el código de proveedor de cuatro dígitos que el comité USB asigna al proveedor. Id. de producto es el código de producto de cuatro dígitos que el proveedor asigna al dispositivo; Admite caracteres comodín.|
+|NumberId de serie|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows <p> macOS |Por ejemplo, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>|
+|

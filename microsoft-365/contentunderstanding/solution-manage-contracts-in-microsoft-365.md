@@ -13,18 +13,22 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Obtenga información sobre cómo administrar contratos mediante una Microsoft 365 de SharePoint Syntex, listas de SharePoint, Microsoft Teams y Power Automate.
-ms.openlocfilehash: 9a80a97ad87d407e6b0cb56fae99712b0f3b403c416fcfa67c57d4f2c9e0236d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d890305912c8b86065a89dac1b7da8f797604405
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813476"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533380"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Administrar contratos con una solución de Microsoft 365
 
 En este artículo se describe cómo crear una solución de administración de contratos para su organización mediante SharePoint Syntex y componentes de Microsoft 365. Le proporciona un marco para ayudarle a planear y crear una solución que se adapte a sus necesidades empresariales únicas. Aunque esta solución habla de administración de contratos, puede adaptarla para crear otras soluciones de administración de documentos, como las instrucciones de trabajo o las facturas.
 
-*Este conjunto de contenido documenta una Microsoft 365 desarrollada por Tomás Molbach con el Equipo de estrategia de soluciones de trabajo moderno de Microsoft.*
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJUR0]
+
+</br>
 
 ## <a name="identify-the-business-problem"></a>Identificar el problema empresarial
 
@@ -81,6 +85,12 @@ Esta solución se basa en las siguientes funciones, todas disponibles como parte
 - Microsoft SharePoint Syntex
 - Microsoft Teams
 - Power Automate
+
+### <a name="learn-how-to-use-sharepoint-syntex"></a>Obtenga información sobre cómo usar SharePoint Syntex
+
+¿Es nuevo SharePoint Syntex? Obtenga información sobre cómo usar SharePoint Syntex para administrar contenido mediante IA.
+
+La ruta de aprendizaje Introducción SharePoint Syntex le enseñará [cómo](/learn/paths/syntex-get-started) puede usar los modelos de comprensión de documentos y procesamiento de formularios para clasificar documentos, extraer texto y etiquetar los documentos para una administración rápida y fácil del conocimiento.
 
 ## <a name="create-the-solution"></a>Crear la solución
 

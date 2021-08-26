@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo solucionar problemas de configuración Windows equipos de 365 Business Cloud.
 ms.date: 08/13/2021
-ms.openlocfilehash: b639453ef55960a3526fa8354dc95efb2653f9c5
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 5602df4eaf140fec86a28252bb88763bd6417f50
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507345"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532936"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>Solucionar Windows problemas de configuración de 365 Business Cloud PC
 
@@ -45,19 +45,19 @@ Asegúrese de **que los usuarios pueden unir dispositivos a Azure AD** está est
 2. En **Administrar Azure Active Directory**, seleccione **Ver**.
 3. En el panel de navegación izquierdo, en **Administrar**, seleccione **Dispositivos** y, a continuación, **seleccione Configuración del dispositivo**.
 4. Si **los usuarios pueden unir dispositivos** a Azure AD no está establecido en **Todos**, seleccione Todo **y,** a continuación, **seleccione Guardar**.
-5. Vaya al [paso 2. Compruebe que la cuenta del sistema CloudPCBRT está activa.](#step-2-verify-that-the-cloudpcbrt-system-account-is-active)
+5. Vaya al [paso 2. Compruebe que la cuenta Windows 365 BPRT Permanent User system está activa.](#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active)
 
-## <a name="step-2-verify-that-the-cloudpcbrt-system-account-is-active"></a>Paso 2. Comprobar que la cuenta del sistema CloudPCBRT está activa
+## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>Paso 2. Comprobar que la cuenta Windows 365 BPRT Permanent User system está activa
 
-La primera vez que Windows una licencia de 365 en la organización, se crea automáticamente en Azure AD una cuenta del sistema denominada "CloudPCBPRT". No elimine esta cuenta ni realice ningún cambio en ella (como cambiar el nombre o UPN). Si se elimina la cuenta del sistema, se producirá un error en la configuración. Esta cuenta del sistema garantiza un proceso de configuración sin problemas y no tiene ninguna capacidad de escritura ni acceso a su organización más allá de las capacidades de servicio de ámbito de Windows 365 Empresa. Si elimina esta cuenta del sistema, debe abrir una nueva solicitud de soporte técnico para que se restaure.
+La primera vez que se asigna una licencia Windows 365 en la organización, se crea automáticamente en Azure AD una cuenta del sistema denominada **Windows 365 usuario permanente de BPRT.** No elimine esta cuenta ni realice ningún cambio en ella (como cambiar el nombre o UPN). Si se elimina la cuenta del sistema, se producirá un error en la configuración. Esta cuenta del sistema garantiza un proceso de configuración sin problemas y no tiene ninguna capacidad de escritura ni acceso a su organización más allá de las capacidades de servicio de ámbito de Windows 365 Empresa. Si elimina esta cuenta del sistema, debe abrir una nueva solicitud de soporte técnico para que se restaure.
 
-Para asegurarse de que la cuenta del sistema CloudPCBRT está activa en Azure AD, siga estos pasos.
+Para asegurarse de que Windows cuenta del sistema de usuario permanente de 365 BPRT está activa en Azure AD, siga estos pasos.
 
 1. En Azure Portal, vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">página Azure Active Directory información general.</a>
 2. En la navegación izquierda, en **Administrar**, seleccione **Usuarios**.
-3. En el cuadro de búsqueda, escriba **CloudPCBRT** y, a continuación, presione **ENTRAR**.
-4. Si la cuenta del sistema CloudPCBRT está presente, vaya al [paso 3. Compruebe que MFA basada en dispositivos está desactivada.](#step-3-verify-that-device-based-mfa-is-turned-off)
-5. Si falta la cuenta del sistema CloudPCBRT, en la navegación izquierda, seleccione **Nueva** solicitud de soporte técnico para abrir un vale de soporte técnico. Después de cerrar el vale de soporte técnico, vaya directamente al [paso 6. Restablecer los equipos en la nube](#step-6-reset-your-cloud-pcs).
+3. En el cuadro de búsqueda, **escriba Windows 365 BPRT Permanent User** y, a continuación, presione **ENTRAR**.
+4. Si la Windows del sistema de usuario permanente de 365 BPRT está presente, vaya al [paso 3. Compruebe que MFA basada en dispositivos está desactivada.](#step-3-verify-that-device-based-mfa-is-turned-off)
+5. Si falta Windows cuenta del sistema de usuario permanente de 365  BPRT, en la navegación izquierda, seleccione Nueva solicitud de soporte técnico para abrir un vale de soporte técnico. Después de cerrar el vale de soporte técnico, vaya directamente al [paso 6. Restablecer los equipos en la nube](#step-6-reset-your-cloud-pcs).
 
 ## <a name="step-3-verify-that-device-based-mfa-is-turned-off"></a>Paso 3. Comprobar que MFA basada en dispositivos está desactivada
 

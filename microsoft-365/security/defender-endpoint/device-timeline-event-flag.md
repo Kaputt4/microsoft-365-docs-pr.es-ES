@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ca9a0c814ba41d5d0272966b879d23a766ff6d002d142a7c7725ec87afff9fff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 74bfa73ff9c647a0e6979eb18b06342fe2bea1ed
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890660"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532948"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión
 
@@ -34,25 +34,26 @@ ms.locfileid: "53890660"
 
 Las marcas de eventos en la escala de tiempo del dispositivo Defender para endpoint te ayudan a filtrar y organizar eventos específicos cuando se investigan posibles ataques.
 
-La escala de tiempo del dispositivo Defender for Endpoint proporciona una vista cronológica de los eventos y las alertas asociadas observadas en un dispositivo. Esta lista de eventos proporciona visibilidad completa de los eventos, archivos y direcciones IP observados en el dispositivo. La lista a veces puede ser larga. Las marcas de eventos de escala de tiempo del dispositivo te ayudan a realizar un seguimiento de los eventos que podrían estar relacionados. 
+La escala de tiempo del dispositivo Defender for Endpoint proporciona una vista cronológica de los eventos y las alertas asociadas observadas en un dispositivo. Esta lista de eventos proporciona visibilidad completa de los eventos, archivos y direcciones IP observados en el dispositivo. La lista a veces puede ser larga. Las marcas de eventos de escala de tiempo del dispositivo te ayudan a realizar un seguimiento de los eventos que podrían estar relacionados.
 
 Después de pasar por una escala de tiempo del dispositivo, puedes ordenar, filtrar y exportar los eventos específicos marcados.
 
-Al navegar por la escala de tiempo del dispositivo, puedes buscar y filtrar eventos específicos. Puede establecer las marcas de eventos mediante: 
+Al navegar por la escala de tiempo del dispositivo, puedes buscar y filtrar eventos específicos. Puede establecer las marcas de eventos mediante:
 
-- Resaltar los eventos más importantes 
-- Marcar eventos que requieren profundizar 
+- Resaltar los eventos más importantes
+- Marcar eventos que requieren profundizar
 - Creación de una escala de tiempo de vulneración limpia
 
-
-
 ## <a name="flag-an-event"></a>Marcar un evento
-1. Buscar el evento que desea marcar
-2. Haga clic en el icono de marca de la columna Marca. 
-![Imagen de la marca de escala de tiempo del dispositivo](images/device-flags.png)
 
-## <a name="view-flagged-events"></a>Ver eventos marcados  
+1. Buscar el evento que desea marcar
+2. Haga clic en el icono de marca de la columna Marca.
+
+   ![Imagen de la marca de escala de tiempo del dispositivo](images/device-flags.png)
+
+## <a name="view-flagged-events"></a>Ver eventos marcados
+
 1. En la sección **Filtros de** escala de tiempo, habilite **Eventos marcados**.
-2. Haga clic en **Aplicar**. Solo se muestran los eventos marcados.
-Puede aplicar filtros adicionales haciendo clic en la barra de horas. Solo se mostrarán los eventos anteriores al evento marcado.  
-![Imagen de la marca de escala de tiempo del dispositivo con el filtro en](images/device-flag-filter.png)
+2. Haga clic en **Aplicar**. Solo se muestran los eventos marcados. Puede aplicar filtros adicionales haciendo clic en la barra de horas. Solo se mostrarán los eventos anteriores al evento marcado.
+
+   ![Imagen de la marca de escala de tiempo del dispositivo con el filtro en](images/device-flag-filter.png)

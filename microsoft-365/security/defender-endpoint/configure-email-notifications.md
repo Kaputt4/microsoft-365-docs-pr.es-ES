@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f0a28aa76189388a5e7943d8a662ddcb0b28d56828d53a4b62e6d64a34518454
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 857df1a9f088c316349fbbe02618a7345df5a075
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854308"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532780"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurar notificaciones de alertas en Microsoft Defender para endpoint
 
@@ -50,7 +50,7 @@ La notificación por correo electrónico incluye información básica sobre la a
 Puede crear reglas que determinen los dispositivos y las gravedades de alerta para enviar notificaciones por correo electrónico y los destinatarios de las notificaciones.
 
 
-1. En el panel de navegación, **seleccione Configuración** notificaciones de correo electrónico  >    >  **general**  >  **de extremos.**
+1. En el panel de navegación, **seleccione Configuración** notificaciones de correo electrónico \>  \> **general** \> **de extremos.**
 
 2. Haga clic **en Agregar elemento**.
 

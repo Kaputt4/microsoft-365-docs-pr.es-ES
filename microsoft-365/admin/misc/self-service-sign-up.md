@@ -18,14 +18,14 @@ ms.custom:
 - okr_SMB
 - commerce_signup
 search.appverid: MET150
-description: Obtenga información sobre el Microsoft 365 de autoservicio y los programas de autoservicio disponibles, como Microsoft Power Apps, Microsoft Flow y Dynamics 365 for Finance.
+description: Obtenga información sobre el Microsoft 365 de autoservicio y los programas de autoservicio disponibles, como Microsoft Power Apps, Microsoft Power Automate y Dynamics 365 for Finance.
 ms.date: 03/17/2021
-ms.openlocfilehash: e03f82903b8aa81db2425769a23d7ec379120526
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 7c4986beb1c920865cee28f2729859e426944f3f
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400216"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532792"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso del registro de autoservicio en la organización
 

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c5722a0261a0e336b5d6e6b2f5a0e3bb0c21f2b6
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: e09bcee08051663191a12c4e2916d7d6512eb514
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365026"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533236"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft  
  
@@ -74,29 +74,32 @@ Una vez exportado el perfil de LAN, puede preparar la directiva para Escritorio 
     - OMA-URI (distingue mayúsculas de minúsculas): escriba *./Device/Vendor/MSFT/WiredNetwork/LanXML*
     - Tipo de datos: seleccione **String (archivo XML).** 
     - XML personalizado: Upload archivo XML exportado.
-2. Envíe una solicitud de soporte técnico Escritorio administrado de Microsoft operaciones de TI mediante el portal de administración de Escritorio administrado de Microsoft para revisar e implementar el perfil de configuración en "Modern Workplace Devices : Test". Escritorio administrado de Microsoft Las operaciones de TI le permitirán saber cuándo se completa la solicitud a través de la solicitud de soporte técnico en el portal de administración.
+2. Asignar el perfil personalizado al grupo *Dispositivos modernos del lugar de trabajo: prueba.*
+3. Realiza las pruebas que sientas necesarias con un dispositivo que se encuentra en el grupo De prueba de implementación. Si se realiza correctamente, asigne el perfil personalizado a los grupos Dispositivos modernos del lugar de trabajo (en primer *lugar,* Dispositivos modernos del lugar de trabajo – Dispositivos rápidos y dispositivos modernos del lugar *de trabajo).*
  
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Implementar certificados y perfil de Wi-Fi/VPN 
  
  
 Para implementar certificados y perfiles, siga estos pasos:
 
-1. Cree un perfil para cada uno de los certificados raíz e intermedio (vea [Crear perfiles de certificado de confianza](/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles). Cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en formato DD/MM/AYYY. **Los perfiles de certificado sin fecha de expiración no se implementarán.**
-2. Cree un perfil para cada certificado SCEP o PKCS (vea Crear un perfil de certificado [SCEP](/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) o Crear un perfil de certificado [PKCS](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en formato DD/MM/AYYY. **Los perfiles de certificado sin fecha de expiración no se implementarán.**
+1. Cree un perfil para cada uno de los certificados raíz e intermedio (vea [Crear perfiles de certificado de confianza](/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles). Cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en formato DD/MM/AYYY. **Los perfiles de certificado deben tener una fecha de expiración.**
+2. Cree un perfil para cada certificado SCEP o PKCS (vea Crear un perfil de certificado [SCEP](/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) o Crear un perfil de certificado [PKCS](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en formato DD/MM/AYYY. **Los perfiles de certificado deben tener una fecha de expiración.**
 3. Crea un perfil para cada red WiFi corporativa (consulta Configuración de [Wi-Fi para Windows 10 dispositivos posteriores).](/intune/wi-fi-settings-windows)
 4. Crea un perfil para cada VPN corporativa (consulta Windows 10 y Windows configuración del dispositivo [Holographic](/intune/vpn-settings-windows-10)para agregar conexiones VPN con Intune ).
-5. Envíe una solicitud de soporte técnico titulada "Implementación de certificados" o "Implementación de perfiles Wi-Fi" a las operaciones de TI de Escritorio administrado de Microsoft mediante el portal de administración de Escritorio administrado de Microsoft para revisar e implementar el perfil de configuración en "Dispositivos modernos del lugar de trabajo: prueba". Escritorio administrado de Microsoft Las operaciones de TI le permitirán saber cuándo se ha completado la solicitud a través de la solicitud de soporte técnico en el portal de administración. 
+5. Asignar los perfiles al grupo *Dispositivos modernos del lugar de trabajo: prueba.*
+6. Realiza las pruebas que sientas necesarias con un dispositivo que se encuentra en el grupo De prueba de implementación. Si se realiza correctamente, asigne el perfil personalizado a los grupos Dispositivos modernos del lugar de trabajo (en primer *lugar,* Dispositivos modernos del lugar de trabajo – Dispositivos rápidos y dispositivos modernos del lugar *de trabajo).*
+
  
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
 
 1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
-2. Ejecutar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
-1. Comprar [Portal de empresa](../get-started/company-portal.md).
-1. Revisar [los requisitos previos de las cuentas invitadas](guest-accounts.md).
-1. Compruebe [la configuración de red](network.md).
+2. Ejecutar las [herramientas para evaluar la preparación](readiness-assessment-tool.md).
+1. Comprar el [Portal de empresa](../get-started/company-portal.md).
+1. Revisar los [requisitos previos para las cuentas de invitado](guest-accounts.md).
+1. Comprobar la [configuración de red](network.md).
 1. Preparar certificados y perfiles de red (este artículo).
-1. [Preparar el acceso del usuario a los datos](authentication.md).
-1. [Preparar aplicaciones](apps.md).
-1. [Preparar unidades asignadas](mapped-drives.md).
-1. [Preparar recursos de impresión](printing.md).
-1. Nombres [de dispositivo de dirección](address-device-names.md).
+1. [Preparar el acceso de usuario a los datos](authentication.md).
+1. [Preparar las aplicaciones](apps.md).
+1. [Preparar las unidades asignadas](mapped-drives.md).
+1. [Preparar los recursos de impresión](printing.md).
+1. [Nombres del dispositivo](address-device-names.md) de dirección.

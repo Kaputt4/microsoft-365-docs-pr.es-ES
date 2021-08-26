@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 8ddc078e2d62881706c4e78d269268373c7e5fef9f25df3980ff411517f2b056
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ba233cf780ad428a9ecfdb6c4a3466b4ec4282da
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869924"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533368"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>Comprobador de la evaluación de preparación descargable
 
@@ -53,7 +53,7 @@ La herramienta descargable comprueba estos elementos relacionados con el disposi
 
 ### <a name="hardware"></a>Hardware
 
-Los dispositivos deben cumplir requisitos de hardware específicos para trabajar con Escritorio administrado de Microsoft. Actualmente, solo se [pueden](../service-description/device-list.md) inscribir dispositivos aprobados específicos. 
+Los dispositivos deben cumplir requisitos de hardware específicos para trabajar con Escritorio administrado de Microsoft. Para obtener más información, consulta [Requisitos del dispositivo](../service-description/device-list.md).
 
 Si el dispositivo falla alguna de las comprobaciones, no es compatible con Escritorio administrado de Microsoft.
 

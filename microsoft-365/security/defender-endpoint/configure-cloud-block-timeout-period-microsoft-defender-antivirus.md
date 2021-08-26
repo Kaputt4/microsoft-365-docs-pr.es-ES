@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/04/2021
-ms.openlocfilehash: 4bca279f4fbb9a521fb436a91d2ff772dc4660e7d7c72f861bf010dfc03194cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 85313f279a46dbb278dbdb0014d44124a147394d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874152"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533224"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurar el período de espera de bloqueo en la nube
 
@@ -63,7 +63,7 @@ Puede usar la directiva de grupo para especificar un tiempo de espera extendido 
 
 3. En el **Editor de administración de directivas de** grupo, vaya a Configuración **del** equipo y, a continuación, seleccione **Plantillas administrativas.**
 
-3. Expanda el árbol para **Windows componentes**  >  **Antivirus de Microsoft Defender**  >  **MpEngine**.
+3. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **MpEngine**.
 
 4. Haga doble clic en **Configurar la comprobación de nube extendida** y asegúrese de que la opción está habilitada. 
 

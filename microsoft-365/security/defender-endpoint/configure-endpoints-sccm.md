@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: deac72ddab08d180daf1c71885217c2a93ba1938
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 8c701dc0fb038e573b39067dd40f75e9394b4083
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255554"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533008"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Incorporar los dispositivos Windows 10 con Configuration Manager
 
@@ -41,50 +41,39 @@ ms.locfileid: "58255554"
 
 En función de la versión de Configuration Manager que esté ejecutando, se pueden incorporar los siguientes sistemas operativos cliente:
 
-#### <a name="configuration-manager-version-1910-and-prior"></a>Configuration Manager versión 1910 y anterior
+- **Configuration Manager versión 1910 y anterior:**
+  - Equipos clientes que ejecutan Windows 10
+- **Configuration Manager versión 2002 y versiones posteriores:**
 
-- Equipos clientes que ejecutan Windows 10 
+  A partir de la versión 2002 de Configuration Manager, puede incorporar los siguientes sistemas operativos:
 
-#### <a name="configuration-manager-version-2002-and-later"></a>Configuration Manager versión 2002 y versiones posteriores
+  - Windows 8.1
+  - Windows 10
+  - Windows Server 2012 R2
+  - Windows Server 2016
+  - Windows Server 2016 versión 1803 o posterior
+  - Windows Server 2019
 
-A partir de la versión 2002 de Configuration Manager, puede incorporar los siguientes sistemas operativos:
-
-- Windows 8.1
-- Windows 10
-- Windows Server 2012 R2
-- Windows Server 2016
-- Windows Server 2016 versión 1803 o posterior
-- Windows Server 2019
-
->[!NOTE]
->Para obtener más información sobre cómo incorporar Windows Server 2012 R2, Windows Server 2016 y Windows Server 2019, vea [Onboard Windows servers](configure-server-endpoints.md).
-
-
+> [!NOTE]
+> Para obtener más información sobre cómo incorporar Windows Server 2012 R2, Windows Server 2016 y Windows Server 2019, vea [Onboard Windows servers](configure-server-endpoints.md).
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>Incorporar dispositivos con System Center Configuration Manager
 
-
 [![Imagen del PDF que muestra las distintas rutas de implementación](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
-
-Consulte el [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) o [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso para implementar Microsoft Defender para endpoint. 
-
+Consulte el [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) o [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso para implementar Microsoft Defender para endpoint.
 
 1. Abra el paquete de configuración de Configuration Manager .zip archivo (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Defender portal:](https://security.microsoft.com/)
-
-    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints**  >  **Device management**  >  **Onboarding**.
-    
-    1. Seleccione Windows 10 como sistema operativo.
-
-    1. En el **campo Método de** implementación, seleccione System Center Configuration Manager **2012/2012 R2/1511/1602**.
-    
-    1. Seleccione **Descargar paquete** y guarde el .zip archivo.
+    1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** \> **Device management** \> **Onboarding**.
+    2. Seleccione Windows 10 como sistema operativo.
+    3. En el **campo Método de** implementación, seleccione System Center Configuration Manager **2012/2012 R2/1511/1602**.
+    4. Seleccione **Descargar paquete** y guarde el .zip archivo.
 
 2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que puedan tener acceso los administradores de red que implementarán el paquete. Debe tener un archivo denominado *WindowsDefenderATPOnboardingScript.cmd*.
 
 3. Implemente el paquete siguiendo los pasos descritos en el artículo Paquetes y [programas System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
 
-    a. Elija una colección de dispositivos predefinida en la que implementar el paquete.
+   Elija una colección de dispositivos predefinida en la que implementar el paquete.
 
 > [!NOTE]
 > Defender for Endpoint no admite la incorporación durante la fase de la experiencia de implementación [(OOBE).](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Asegúrese de que los usuarios completen OOBE después de ejecutar Windows instalación o actualización.
@@ -183,9 +172,8 @@ Si usa una Microsoft Endpoint Manager actual, vea [Create an offboarding configu
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Dispositivos offboard con System Center Configuration Manager de 2012 R2
 
-
 1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
-    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints** Administración  >  **de dispositivos**  >   **Offboarding**.
+    1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** Administración \> **de dispositivos** \> **Offboarding**.  
     1. Seleccione Windows 10 como sistema operativo.
     1. En el **campo Método de** implementación, seleccione System Center Configuration Manager **2012/2012 R2/1511/1602**.
     1. Seleccione **Descargar paquete** y guarde el .zip archivo.

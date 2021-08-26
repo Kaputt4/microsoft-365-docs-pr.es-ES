@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ce3ef7cd0861f8f094a873e39ae010ac87e4e18549ce0337911c327741f5e4f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d0688a9ccae293e68d54ec9f00d74d9829d85d4e
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53903821"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532816"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Implementar Microsoft Defender para endpoint en anillos
 
@@ -35,9 +35,10 @@ ms.locfileid: "53903821"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-La implementación de Microsoft Defender para endpoint se puede realizar mediante un enfoque de implementación basado en anillos. 
+La implementación de Microsoft Defender para endpoint se puede realizar mediante un enfoque de implementación basado en anillos.
 
 Los anillos de implementación se pueden aplicar en los siguientes escenarios:
+
 - [Nuevas implementaciones](#new-deployments)
 - [Implementaciones existentes](#existing-deployments)
 
@@ -45,20 +46,24 @@ Los anillos de implementación se pueden aplicar en los siguientes escenarios:
 
 ![Imagen de anillos de implementación](images/deployment-rings.png)
 
-
 Un enfoque basado en anillos es un método para identificar un conjunto de puntos de conexión a incorporar y comprobar que se cumplen ciertos criterios antes de continuar con la implementación del servicio en un conjunto de dispositivos más grande. Puede definir los criterios de salida de cada anillo y asegurarse de que se cumplen antes de pasar al siguiente anillo.
 
-La adopción de una implementación basada en anillos ayuda a reducir los posibles problemas que podrían surgir al implementar el servicio. Al pilotar un determinado número de dispositivos en primer lugar, puedes identificar posibles problemas y mitigar los posibles riesgos que puedan surgir. 
+La adopción de una implementación basada en anillos ayuda a reducir los posibles problemas que podrían surgir al implementar el servicio. Al pilotar un determinado número de dispositivos en primer lugar, puedes identificar posibles problemas y mitigar los posibles riesgos que puedan surgir.
 
 La tabla 1 proporciona un ejemplo de los anillos de implementación que puede usar.
 
-**Tabla 1**
+**Tabla 1**:
 
-|Anillo de implementación|Descripción
+<br>
+
+****
+
+|Anillo de implementación|Descripción|
 |---|---|
-Calcular | Anillo 1: Identificar 50 sistemas para pruebas piloto
-Piloto | Anillo 2: Identificar los siguientes 50-100 puntos de conexión en el entorno de producción
-Implementación completa | Anillo 3: Implementación del servicio en el resto del entorno en incrementos más grandes
+|Calcular|Anillo 1: Identificar 50 sistemas para pruebas piloto|
+|Piloto|Anillo 2: Identificar los siguientes 50-100 puntos de conexión en el entorno de producción|
+|Implementación completa|Anillo 3: Implementación del servicio en el resto del entorno en incrementos más grandes|
+|
 
 ### <a name="exit-criteria"></a>Criterios de salida
 
@@ -77,25 +82,34 @@ Identifique un pequeño número de máquinas de prueba en su entorno para incorp
 
 Microsoft Defender para endpoint admite una variedad de puntos de conexión que puede incorporar al servicio. En este anillo, identifique varios dispositivos que se incorporarán y en función de los criterios de salida que defina, decida continuar con el siguiente anillo de implementación.
 
-En la tabla siguiente se muestran los puntos de conexión compatibles y la herramienta correspondiente que puede usar para incorporar dispositivos al servicio. 
+En la tabla siguiente se muestran los puntos de conexión compatibles y la herramienta correspondiente que puede usar para incorporar dispositivos al servicio.
 
-| Punto de conexión     | Herramienta de implementación                       |
-|--------------|------------------------------------------|
-| **Windows**  |  [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br> NOTA: Si desea implementar más de 10 dispositivos en un entorno de producción, use el método de directiva de grupo en su lugar o las otras herramientas compatibles que se enumeran a continuación.<br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)  |
-| **macOS**    | [Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
-| **Servidor Linux** | [Script local](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-| **iOS**      | [Basado en aplicaciones](ios-install.md)                                |
-| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               |
+<br>
+
+****
+
+|Extremo|Herramienta de implementación|
+|---|---|
+|**Windows**|[Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <p> **NOTA:** Si desea implementar más de 10 dispositivos en un entorno de producción, use el método de directiva de grupo en su lugar u otras herramientas compatibles que se enumeran a continuación. <p> [Directiva de grupo](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [Scripts VDI](configure-endpoints-vdi.md) <p> [Integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
+|**macOS**|[Script local](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [Jamf Pro](mac-install-with-jamf.md) <p> [Administración de dispositivos móviles](mac-install-with-other-mdm.md)|
+|**Servidor Linux**|[Script local](linux-install-manually.md) <p> [Puppet](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
+|**iOS**|[Basado en aplicaciones](ios-install.md)|
+|**Android**|[Microsoft Endpoint Manager](android-intune.md)|
+|
 
 ### <a name="full-deployment"></a>Implementación completa
 
-En esta fase, puede usar el material de planeación [de implementación](deployment-strategy.md) para ayudarle a planear la implementación. 
+En esta fase, puede usar el material de planeación [de implementación](deployment-strategy.md) para ayudarle a planear la implementación.
 
 Use el siguiente material para seleccionar la arquitectura de Microsoft Defender para endpoint adecuada que mejor se adapte a su organización.
 
-|**Elemento**|**Descripción**|
-|:-----|:-----|
-|[![Imagen digital de la estrategia de implementación de Microsoft Defender para endpoints](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li></ul>
+<br>
+
+****
+
+|Elemento|Descripción|
+|---|---|
+|[![Imagen digital de la estrategia de implementación de Microsoft Defender para endpoints](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)  |El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li></ul>|
 
 ## <a name="existing-deployments"></a>Implementaciones existentes
 
@@ -103,7 +117,7 @@ Use el siguiente material para seleccionar la arquitectura de Microsoft Defender
 
 Para Windows y/o servidores Windows, seleccione varias máquinas para probar con antelación (antes del martes de revisión) mediante el programa de validación de actualización de seguridad **(SUVP).**
 
-Para obtener más información, vea:
+Para más información, consulte lo siguiente:
 
 - [¿Qué es el programa de validación de actualización de seguridad?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Software Update Validation Program and Centro de protección contra malware de Microsoft Establishment : TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)

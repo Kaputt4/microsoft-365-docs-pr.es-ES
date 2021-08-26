@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Introducción a la conectividad de red
+title: Información general de conectividad de red de Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -17,16 +17,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Explica por qué la optimización de red es importante para los servicios SaaS, el objetivo de Microsoft 365 redes y cómo SaaS requiere redes diferentes de otras cargas de trabajo.
-ms.openlocfilehash: 8c1d4b3f661cc10723b9419687ed5f5acbefeb8dedb39963992290ecba289aec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ce9b7f7f8011e0d0b12d9b0524cf540948f7aab8
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904940"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533164"
 ---
-# <a name="microsoft-365-network-connectivity-overview"></a>Información general de conectividad de red de Microsoft 365
+# <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365 de conectividad de red
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Microsoft 365 es una nube de software como servicio (SaaS) distribuida que proporciona escenarios de productividad y colaboración a través de un conjunto diverso de microservicios y aplicaciones. Los componentes de cliente de Microsoft 365 como Outlook, Word y PowerPoint se ejecutan en equipos de usuario y se conectan a otros componentes de Microsoft 365 que se ejecutan en centros de datos de Microsoft. El factor más significativo que determina la calidad de la experiencia del usuario final de Microsoft 365 es la confiabilidad de la red y la baja latencia entre clientes de Microsoft 365 y puertas Microsoft 365 de servicio.
 
@@ -57,7 +57,7 @@ En las arquitecturas de red tradicionales, una mayor latencia para el tráfico g
 Estamos facilitando la identificación de Microsoft 365 de red y facilitando la administración de la identificación de red.
 
 - Nuevas categorías de extremos de red para diferenciar el tráfico de red muy crítico del tráfico de red, que no se ve afectado por las latencias de Internet. Solo hay un puñado de direcciones URL y direcciones IP compatibles en la categoría más crítica "Optimizar".
-- Servicios web para el uso de scripts o la configuración directa de dispositivos y la administración de cambios Microsoft 365 identificación de red. Los cambios están disponibles desde el servicio web, o en formato RSS, o en el correo electrónico mediante una Microsoft Flow plantilla.
+- Servicios web para el uso de scripts o la configuración directa de dispositivos y la administración de cambios Microsoft 365 identificación de red. Los cambios están disponibles desde el servicio web, o en formato RSS, o en el correo electrónico mediante una Power Automate plantilla.
 - [Office 365 de partners de](./microsoft-365-networking-partner-program.md) red con partners de Microsoft que proporcionan dispositivos o servicios que siguen Microsoft 365 principios de conectividad de red y tienen una configuración sencilla.
 
 ## <a name="securing-microsoft-365-connections"></a>Proteger Microsoft 365 conexiones
@@ -115,7 +115,7 @@ La optimización Microsoft 365 rendimiento de red realmente se debe a la elimina
 
 [Redes de entrega de contenido](content-delivery-networks.md)
 
-[Prueba de conectividad de Microsoft 365](https://aka.ms/netonboard)
+[Prueba de conectividad de Microsoft 365](https://aka.ms/netonboard)
 
 [Cómo construye Microsoft su red global rápida y confiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Summary: Understand what has changed for moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: cacc6d75b890585aa7b219b8bbb8f49b3f2d6714fe4502fe1b6b1030f54b9763
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 42ac9e61632305a9e75bf7ba9de2cec3e3d658fb
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885176"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531520"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Qué cambiará después de la migración a Office 365 en las nuevas regiones del centro de datos alemán
 
@@ -66,7 +66,7 @@ Consideraciones a tener en cuenta:
 
 - A medida que el inquilino se pasa a Office 365 servicios, sus suscripciones y licencias específicas de Alemania se estandarizan con nuevas ofertas de Office 365 servicios. Las Office 365 de servicios de correo electrónico correspondientes se adquieren para las suscripciones transferidas de Alemania. A los usuarios que tengan licencias de Alemania se les asignarán Office 365 de servicios. Una vez completadas, las suscripciones heredadas de Alemania se cancelan y se quitan del inquilino Office 365 servicios de correo electrónico actual.
 
-- Después de la migración de las cargas de trabajo individuales, las funciones adicionales están disponibles a través de los servicios Office 365 (como Microsoft Planner y Microsoft Flow) debido a las nuevas suscripciones de Office 365 servicios. Si es apropiado para su organización, el inquilino o el administrador de licencias pueden deshabilitar los nuevos planes de servicio mientras planea la administración de cambios para introducir los nuevos servicios. Para obtener instrucciones sobre cómo deshabilitar los planes de servicio asignados a las licencias de los usuarios, [vea Disable access to Microsoft 365 services while assigning user licenses](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
+- Después de la migración de las cargas de trabajo individuales, la funcionalidad adicional está disponible a través de los servicios Office 365 (como Microsoft Planner y Power Automate) debido a las nuevas suscripciones de Office 365 servicios. Si es apropiado para su organización, el inquilino o el administrador de licencias pueden deshabilitar los nuevos planes de servicio mientras planea la administración de cambios para introducir los nuevos servicios. Para obtener instrucciones sobre cómo deshabilitar los planes de servicio asignados a las licencias de los usuarios, [vea Disable access to Microsoft 365 services while assigning user licenses](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
 
 ## <a name="exchange-online"></a>Exchange Online
 

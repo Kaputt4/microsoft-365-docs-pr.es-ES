@@ -21,14 +21,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c03dfef28744e2ee565c25d921902b8d11ecb7a3
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: da726aeaf82f13cef862b105e951f28c9fdf80e3
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290248"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533056"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Hacer seguimiento y responder a amenazas emergentes con el análisis de amenazas 
+# <a name="track-and-respond-to-emerging-threats-with-threat-analytics-in-microsoft-365-defender"></a>Seguimiento y respuesta a amenazas emergentes con análisis de amenazas en Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 44db65f08c84cdcce819773958881320d7c99705
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 1f61fa2e2d5231d6e9c6a879a0827144282f1285
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507787"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533260"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (anteriormente Microsoft Flow) y Azure Functions
 
@@ -37,7 +37,7 @@ ms.locfileid: "58507787"
 
 Automatizar los procedimientos de seguridad es un requisito estándar para todos los centros de operaciones de seguridad modernos. La falta de ciberdelincuntes profesionales obliga a SOC a trabajar de la manera más eficiente y la automatización es una obligación. Microsoft Power Automate diferentes conectores creados exactamente para ello. Puede crear una automatización de procedimientos de extremo a extremo en unos minutos.
 
-La API de Microsoft Defender tiene un Flow Connector con muchas funcionalidades.
+La API de Microsoft Defender tiene un Power Automate Connector con muchas funcionalidades.
 
 ![Imagen de las credenciales de edición1](images/api-flow-0.png)
 

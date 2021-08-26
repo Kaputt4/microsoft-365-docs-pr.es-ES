@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar la protección contra suplantación de identidad (phishing).
-ms.openlocfilehash: 71acaf070ea121db93947423e9824ae93d90b53c3ccbd3cc47e57df23a92a40f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 91d8db572bff73fca5515e224c96201260f8855c
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887520"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531496"
 ---
 # <a name="set-up-anti-phishing"></a>Configurar directivas contra suplantación de identidad
 
@@ -36,16 +36,13 @@ La suplantación de identidad (phishing) es un ataque malintencionado en el que 
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el Centro de administración en , seleccione Seguridad , Administración de amenazas , Directiva y, a continuación, [https://admin.microsoft.com](https://admin.microsoft.com) ATP  **Anti-phishing**.  
+1. En el Centro de administración en , seleccione Seguridad , Directivas & reglas , Directivas de amenazas y, a [https://admin.microsoft.com](https://admin.microsoft.com) continuación,  **Anti-phishing**.  
 1. Seleccione **Directiva predeterminada para** refinarla.
-1. En la **sección Suplantación,** seleccione **Editar**.
-1. Ve **a Agregar dominios para proteger y** seleccionar la alternancia para incluir automáticamente los dominios que posees.
-1. Vaya a **Acciones**, abra la lista desplegable Si un usuario **suplantado** envía el correo electrónico y elija la acción que desee.
-
-    Abra la lista desplegable Si un dominio **suplantado envía** el correo electrónico y elige la acción que quieras.
-1. Seleccione **Activar sugerencias de seguridad de suplantación.** Elija si se deben proporcionar sugerencias a los usuarios cuando el sistema detecte usuarios suplantados, dominios o caracteres inusuales. Seleccione **Guardar**.
-1. Seleccione **Inteligencia de buzones** y compruebe que está activada. Esto permite que el correo electrónico sea más eficiente mediante el aprendizaje de patrones de uso.
+1. En la **sección Protección contra & umbral** de suplantación de identidad, seleccione **Editar configuración de protección**.
+1. Elija **Habilitar dominios para proteger y** seleccione Incluir los dominios que posee e Incluir dominio personalizado y, a continuación, seleccione Administrar dominios personalizados **para** agregar un dominio.  
 1. Elija **Agregar remitentes y dominios de confianza.** Aquí puede agregar direcciones de correo electrónico o dominios que no deben clasificarse como suplantación.
-1. Elija **Revisar la configuración,** asegúrese de que todo es correcto, **seleccione Guardar** y, a continuación, **Cerrar**.
+1. Elija **Habilitar inteligencia de** buzones y **Habilitar** inteligencia para la protección de suplantación para habilitar resultados de suplantación mejorados en función del mapa de remitentes individual de cada usuario.
+1. Seleccione **Habilitar la inteligencia de** suplantación para elegir cómo desea filtrar el correo electrónico de los remitentes que suplantan dominios.
+1. Seleccione **Guardar** y, a continuación, **Cerrar**.
 
     Su organización ahora tiene una mejor protección frente a las amenazas de suplantación de identidad.

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ead7dd16eb69bccfe556872f278b20f4079caa45
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: b6c8a616dc4040437a8caec91ab8a5e8fdc1e586
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392170"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533176"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -46,7 +46,7 @@ Proteger la privacidad de los usuarios que tienen coincidencias de directivas es
 - **Mostrar versiones anónimas** de nombres de usuario: los nombres de los usuarios se anonimizan para impedir que administradores, investigadores de datos y revisores vean quién está asociado con alertas de directiva. Por ejemplo, el usuario “Grace Taylor” aparecería con un pseudónimo aleatorizado, como “AnonIS8-988” en todas las áreas relacionadas con la experiencia de administración de riesgos internos. Al elegir esta configuración, se anonimizan todos los usuarios con coincidencias de directivas actuales y pasadas, y se aplica a todas las directivas. La información del perfil de usuario en la alerta de riesgo insider y los detalles del caso no estarán disponibles cuando se elija esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta configuración, se mostrarán nombres de usuario para todos los usuarios que tengan coincidencias de directiva actuales o pasadas.
 
     >[!IMPORTANT]
-    >Para mantener la integridad referencial entre varios usuarios con alertas y casos de administración de riesgos de insider en otros sistemas, la anonimización de nombres de usuario no se conserva para las alertas exportadas. Las alertas exportadas mostrarán nombres de usuario para cada alerta.
+    >Para mantener la integridad referencial de los usuarios que tienen alertas de riesgo de información interna o casos en Microsoft 365 u otros sistemas, el anonimización de nombres de usuario no se conserva para las alertas exportadas. Las alertas exportadas mostrarán nombres de usuario para cada alerta.
 
 - **No mostrar versiones anónimas de** nombres de usuario: los nombres de usuario se muestran para todas las coincidencias de directiva actuales y pasadas para alertas y casos. La información de perfil de usuario (nombre, título, alias y organización o departamento) se muestra para el usuario para todas las alertas y casos de administración de riesgos de insider.
 
@@ -230,7 +230,7 @@ Para cada una de las siguientes opciones de configuración de dominio, puede esp
 La información de alertas de administración de riesgos de Insider se puede exportar a los servicios de administración de eventos y de información de seguridad (SIEM) mediante el esquema de la API de Office 365 [actividad de administración.](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema) Puede usar las API de Office 365 actividad de administración para exportar información de alerta a otras aplicaciones que su organización puede usar para administrar o agregar información de riesgo de información interna.
 
 >[!IMPORTANT]
->Para mantener la integridad referencial entre varios usuarios con alertas y casos de administración de riesgos de insider en otros sistemas, la anonimización de nombres de usuario no se conserva para las alertas exportadas. Las alertas exportadas mostrarán nombres de usuario para cada alerta.
+>Para mantener la integridad referencial de los usuarios que tienen alertas de riesgo de información interna o casos en Microsoft 365 u otros sistemas, el anonimización de nombres de usuario no se conserva para las alertas exportadas. Las alertas exportadas mostrarán nombres de usuario para cada alerta.
 
 Para usar las API para revisar la información de alerta de riesgo de insider:
 

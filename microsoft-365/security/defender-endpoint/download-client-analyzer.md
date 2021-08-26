@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a9184805ee56a5a1154387a91734f1dd2665f82d
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c3a115cc972fa6eeb7d30395f11873c4eb409a09
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255000"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533032"
 ---
-#  <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Descargar el analizador de cliente de Microsoft Defender para endpoint
+# <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Descargar el analizador de cliente de Microsoft Defender para endpoint
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
@@ -36,15 +36,11 @@ Obtenga información sobre cómo descargar el analizador de cliente de Microsoft
 
 ## <a name="download-client-analyzer-for-windows-os"></a>Descargar analizador de cliente para Windows sistema operativo
 
-1.  La última edición estable está disponible para su descarga desde la siguiente dirección URL: <https://aka.ms/MDEAnalyzer>
+1. La última edición estable está disponible para su descarga desde la siguiente dirección URL: <https://aka.ms/MDEAnalyzer>
+2. La última edición de vista previa está disponible para su descarga desde la siguiente dirección URL: <https://aka.ms/BetaMDEAnalyzer>
 
-2.  La última edición de vista previa está disponible para su descarga desde la siguiente dirección URL: <https://aka.ms/BetaMDEAnalyzer>
+## <a name="download-client-analyzer-for-macos-or-linux"></a>Descargar analizador de cliente para macOS o Linux
 
-##  <a name="download-client-analyzer-for-macos-or-linux"></a>Descargar analizador de cliente para macOS o Linux
+1. La última edición estable se integrará en el agente MDE for Endpoint. Asegúrese de que está ejecutando la última edición para [macOS](mac-whatsnew.md) o [Linux](linux-whatsnew.md).
 
-1.  La última edición estable se integrará en el agente MDE for Endpoint.  
-    Asegúrese de que está ejecutando la última edición para [macOS](mac-whatsnew.md) o [Linux](linux-whatsnew.md).
-
-2.  La última edición de vista previa está disponible para descarga directa desde la siguiente dirección URL: <https://aka.ms/XMDEClientAnalyzer>
-
-
+2. La última edición de vista previa está disponible para descarga directa desde la siguiente dirección URL: <https://aka.ms/XMDEClientAnalyzer>

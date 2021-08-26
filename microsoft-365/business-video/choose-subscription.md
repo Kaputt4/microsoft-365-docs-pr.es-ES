@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información Microsoft 365 suscripción adecuada para su organización.
-ms.openlocfilehash: 099104eae31cc7a615880bf9b778e6bfed548021
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 2c269ff7dc620da0c638f2c82a836ae9b0406780
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400348"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533188"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Elegir una Microsoft 365 suscripción
 
@@ -51,7 +51,7 @@ Elegir la suscripción Microsoft 365 es clave para sacar el máximo partido al s
 | **Calendario de &amp; correo electrónico** | Outlook, Exchange Online | 50 GB | 50 GB | 100 GB |
 | **Centro para el trabajo en equipo** | Área de trabajo basada en chat, reuniones en línea y mucho más en Microsoft Teams | Sí | Sí | Sí |
 | **Almacenamiento de archivos.** | OneDrive para la Empresa | 1 TB por usuario | 1 TB por usuario | Ilimitado |
-| **Redes sociales, vídeo, sitios** | Stream, Yammer, Planner, SharePoint Online \* , Power Apps , \* Microsoft Flow\* | Sí | Sí | Sí |
+| **Redes sociales, vídeo, sitios** | Stream, Yammer, Planner, SharePoint Online \* , Power Apps \* , Power Automate\* | Sí | Sí | Sí |
 | **Aplicaciones empresariales** | Programación de aplicaciones: Bookings\*\* | Sí | Sí | Sí |
 | **Protección contra amenazas** | Protección contra amenazas avanzada de Office 365 | No | Sí | No |
  | Windows Protección contra vulnerabilidades de seguridad| | No | Sí | No |

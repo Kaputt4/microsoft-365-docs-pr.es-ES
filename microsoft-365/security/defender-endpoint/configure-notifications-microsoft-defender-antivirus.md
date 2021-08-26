@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 6829e12cdfd6a2942b60e8a0b8df166686ff0485c65d739ef19285628d140305
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 143722108ef1c5df8432610ff372697fdd3407df
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857656"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532528"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Configurar Antivirus de Microsoft Defender notificaciones que aparecen en los puntos de conexión
 
@@ -38,7 +38,7 @@ Si forma parte del equipo de seguridad de su organización, puede configurar có
 Puedes configurar la presentación de notificaciones adicionales, como resúmenes recientes de detección de amenazas, en la [aplicación](microsoft-defender-security-center-antivirus.md) Seguridad de Windows y con la directiva de grupo.
 
 > [!NOTE]
-> En Windows 10 versión 1607, la característica se denomina **notificaciones mejoradas** y se configuró en Windows Configuración   >  **Actualización & seguridad**  >  **Windows Defender**. En Configuración de directiva de grupo para todas las versiones Windows 10, la característica de notificación se denomina **Notificaciones mejoradas.**
+> En Windows 10 versión 1607, la característica se denomina **notificaciones mejoradas** y se configuró en Windows Configuración  \> **Actualización & seguridad** \> **Windows Defender**. En Configuración de directiva de grupo para todas las versiones Windows 10, la característica de notificación se denomina **Notificaciones mejoradas.**
 
 ### <a name="use-group-policy-to-disable-additional-notifications"></a>Usar la directiva de grupo para deshabilitar notificaciones adicionales
 
@@ -50,7 +50,7 @@ Puedes configurar la presentación de notificaciones adicionales, como resúmene
 
 4. Seleccione **Plantillas administrativas**.
 
-5. Expanda el árbol para **Windows componentes**  >  **Antivirus de Microsoft Defender** > reporting**.
+5. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** > reporting**.
 
 6. Haga doble clic **en Desactivar notificaciones mejoradas** y establezca la opción en **Habilitado**. A continuación, seleccione **Aceptar**. Esto impedirá que aparezcan notificaciones adicionales.
 
@@ -90,7 +90,7 @@ Para agregar información de contacto personalizada a las notificaciones de punt
 
 3. En el **Editor de administración de directivas de grupo,** vaya a Configuración del equipo **y,** a continuación, seleccione **Plantillas administrativas.**
 
-4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** interfaz  >    >  **de cliente**. 
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** interfaz \>  \> **de cliente**. 
 
 5. Haga doble clic **en Suprimir todas las notificaciones** y establezca la opción en **Habilitado**. 
 
@@ -106,7 +106,7 @@ Para agregar información de contacto personalizada a las notificaciones de punt
 
 3. Haga clic **en Plantillas administrativas**.
 
-4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** interfaz  >    >  **de cliente**.
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** interfaz \>  \> **de cliente**.
 
 5. Haz doble clic **en Suprimir notificaciones de reinicio** y establece la opción en **Habilitado**. 
 

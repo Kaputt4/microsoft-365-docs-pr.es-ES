@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Obtenga información sobre cómo administrar los Office 365 para que funcionen con la arquitectura de red de la organización empresarial.
-ms.openlocfilehash: 4c6f291627fc3b0b24f53ef3dd11698dba7d1fa4958886dd8f70ce7f34ccb9e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a8460dbc9dbbc8b7b7a5a8e720b8c55c0ed918c
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870567"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532660"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 
@@ -111,11 +111,11 @@ Para más información, consulte [Dirección IP y servicio web de URL de Office 
 
 La dirección IP de Office 365 y el servicio web de URL proporcionan una fuente RSS a la que puede suscribirse en Outlook. Hay vínculos a las direcciones URL de RSS en cada una de las páginas específicas de las instancias del servicio de Office 365 para las direcciones IP y URL. Para más información, consulte [Dirección IP y servicio web de URL de Office 365 ](microsoft-365-ip-web-service.md).
 
-### <a name="change-notification-and-approval-review-using-microsoft-flow"></a>Revisión de aprobación y notificación de cambios con Microsoft Flow
+### <a name="change-notification-and-approval-review-using-power-automate"></a>Cambiar la notificación y la revisión de aprobación mediante Power Automate
 
-Sabemos que es posible que siga requiriendo procesamiento manual para los cambios en los puntos de conexión de red que llegan cada mes. Puede usar Microsoft Flow para crear un flujo que le notifique por correo electrónico y, opcionalmente, realice un proceso de aprobación de los cambios cuando los puntos de conexión de la red de Office 365 cambien. Una vez completada la revisión, puede hacer que el flujo envíe los cambios por correo automáticamente al equipo de administración del servidor proxy y del firewall.
+Sabemos que es posible que siga requiriendo procesamiento manual para los cambios en los puntos de conexión de red que llegan cada mes. Puede usar Power Automate para crear un flujo que le notifite por correo electrónico y, opcionalmente, ejecute un proceso de aprobación para los cambios cuando Office 365 extremos de red tengan cambios. Una vez completada la revisión, puede hacer que el flujo envíe los cambios por correo automáticamente al equipo de administración del servidor proxy y del firewall.
 
-Para obtener información sobre una plantilla y un ejemplo de Microsoft Flow, vea [Usar Microsoft Flow para recibir un correo electrónico para los cambios en las direcciones IP y URL de Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
+Para obtener información acerca de Power Automate ejemplo y plantilla, vea Usar Power Automate para recibir un correo electrónico para los cambios en direcciones IP y direcciones IP de Office 365 direcciones IP y [direcciones URL](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Preguntas más frecuentes sobre puntos de conexión de red de Office 365

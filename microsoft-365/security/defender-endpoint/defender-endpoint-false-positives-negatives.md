@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 904ea83c6a4a2c8267341ae5fb324c5f2f3678e0c5458720af13f6a932c8c25f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de33384b6292fecc502e958385c2286b255002b1
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854034"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533068"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -93,7 +93,7 @@ Las alertas se pueden clasificar como falsos positivos o como verdaderos positiv
 
 2. Seleccione **Cola de alertas** y, a continuación, seleccione una alerta.
 
-3. Para la alerta seleccionada, seleccione **Acciones**  >  **Administrar alerta**. Se abre un panel desplegable.
+3. Para la alerta seleccionada, seleccione **Acciones** \> **Administrar alerta**. Se abre un panel desplegable.
 
 4. En la **sección Administrar alerta,** seleccione **True alert** o False **alert**. (Use **False alert** para clasificar un falso positivo).
 
@@ -134,7 +134,7 @@ Después de revisar las alertas, el siguiente paso es revisar [las acciones de c
 
 - [Restaurar un archivo en cuarentena desde el Centro de acciones](#restore-a-quarantined-file-from-the-action-center)
 - [Deshacer varias acciones a la vez](#undo-multiple-actions-at-one-time)
-- [Quitar un archivo de la cuarentena en varios dispositivos.](#remove-a-file-from-quarantine-across-multiple-devices)  y
+- [Quitar un archivo de la cuarentena en varios dispositivos.](#remove-a-file-from-quarantine-across-multiple-devices) y
 - [Restaurar archivo de la cuarentena](#restore-file-from-quarantine)
 
 Cuando haya terminado de revisar y deshacer acciones que se realizaron como resultado de falsos positivos, continúe con la revisión [o definición de exclusiones](#part-3-review-or-define-exclusions).
@@ -220,7 +220,7 @@ En general, no es necesario definir exclusiones para Antivirus de Microsoft Defe
 
 1. Vaya al Centro Microsoft Endpoint Manager de administración ( <https://endpoint.microsoft.com> ) e inicie sesión.
 
-2. Elija **Endpoint security**  >  **Antivirus** y, a continuación, seleccione una directiva existente. (Si no tiene una directiva existente o desea crear una nueva directiva, vaya [al siguiente procedimiento](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
+2. Elija **Endpoint security** \> **Antivirus** y, a continuación, seleccione una directiva existente. (Si no tiene una directiva existente o desea crear una nueva directiva, vaya [al siguiente procedimiento](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
 
 3. Elija **Propiedades** y, junto **a Configuración,** elija **Editar**.
 
@@ -232,7 +232,7 @@ En general, no es necesario definir exclusiones para Antivirus de Microsoft Defe
 
 1. Vaya al Centro Microsoft Endpoint Manager de administración ( <https://endpoint.microsoft.com> ) e inicie sesión.
 
-2. Elija **Endpoint security**  >  **Antivirus**+ Create  >  **Policy**.
+2. Elija **Endpoint security** \> **Antivirus** + Create \> **Policy**.
 
 3. Seleccione una plataforma (como **Windows 10 y** versiones posteriores, **macOS** o **Windows 10 y Windows Server**).
 
@@ -361,7 +361,7 @@ Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 1. Vaya al Centro Microsoft Endpoint Manager de administración ( <https://endpoint.microsoft.com> ) e inicie sesión.
 
-2. Elija **Endpoint security**  >  **Antivirus** y, a continuación, seleccione una directiva existente. (Si no tiene una directiva existente o desea crear una nueva directiva, vaya [al siguiente procedimiento](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
+2. Elija **Endpoint security** \> **Antivirus** y, a continuación, seleccione una directiva existente. (Si no tiene una directiva existente o desea crear una nueva directiva, vaya [al siguiente procedimiento](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 
 3. En **Administrar**, seleccione **Propiedades**. A continuación, junto **a Configuración,** elija **Editar**.
 
@@ -373,7 +373,7 @@ Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 1. Vaya al Centro Microsoft Endpoint Manager de administración ( <https://endpoint.microsoft.com> ) e inicie sesión.
 
-2. Elija **Endpoint security**  >  **Antivirus**+ Create  >  **policy**.
+2. Elija **Endpoint security** \> **Antivirus** + Create \> **policy**.
 
 3. Para **Plataforma**, seleccione una opción y, a continuación, para **Perfil,** seleccione **Antivirus** o **Antivirus de Microsoft Defender** (la opción específica depende de lo que haya seleccionado para Plataforma ).) A continuación, **elija Crear**.
 
@@ -404,7 +404,7 @@ Se recomienda [usar](/mem/endpoint-manager-overview) Microsoft Endpoint Manager 
 
 1. Vaya al Centro Microsoft Endpoint Manager de administración ( <https://endpoint.microsoft.com> ) e inicie sesión.
 
-2. Elija   >  **Perfiles de configuración de dispositivos** y, a continuación, seleccione una directiva existente. (Si no tiene una directiva existente o desea crear una nueva directiva, vaya [al siguiente procedimiento](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
+2. Elija  \> **Perfiles de configuración de dispositivos** y, a continuación, seleccione una directiva existente. (Si no tiene una directiva existente o desea crear una nueva directiva, vaya [al siguiente procedimiento](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
 
 3. En **Administrar**, elija **Propiedades** y, a continuación, junto **a Configuración,** elija **Editar**.
 
@@ -418,7 +418,7 @@ Se recomienda [usar](/mem/endpoint-manager-overview) Microsoft Endpoint Manager 
 
 1. Vaya al Centro Microsoft Endpoint Manager de administración ( <https://endpoint.microsoft.com> ) e inicie sesión.
 
-2. Elija   >  **Perfiles de configuración de dispositivos**  >  **+ Crear perfil**.
+2. Elija  \> **Perfiles de configuración de dispositivos** \> **+ Crear perfil**.
 
 3. Para la **plataforma**, elija **Windows 10 y posteriores** **y, en Perfil,** seleccione **Restricciones de dispositivo.**
 
@@ -456,7 +456,7 @@ Si ha trabajado en todos los pasos de este artículo y todavía necesita ayuda, 
 
 3. En la **ventana Asistente de** soporte técnico, describa el problema y, a continuación, envíe el mensaje. Desde allí, puede abrir una solicitud de servicio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar Microsoft Defender para el punto de conexión](manage-atp-post-migration.md)
 

@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: f83c62b3ae642bcff59910f668d2915bb143b8e42f818eb33d014b5540a8e30a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d70d35bc1e2baa795e024da79ea613087bf511d4
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857744"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533416"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedir o permitir que los usuarios modifiquen localmente Antivirus de Microsoft Defender configuración de directiva
 
@@ -54,21 +54,21 @@ Para configurar estas opciones:
 
 5. Implemente el objeto de directiva de grupo como de costumbre.
 
-Ubicación | Configuración | Artículo
+Ubicación|Valor|Artículo
 ---|---|---|---
-MAPAS | Configurar la invalidación de configuración local para los informes en Microsoft MAPS | [Habilitar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
-Cuarentena | Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena | [Configurar la corrección para exámenes](configure-remediation-microsoft-defender-antivirus.md)
-Protección en tiempo real | Configurar la invalidación de configuración local para la actividad del programa y el archivo de supervisión en el equipo | [Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protección en tiempo real | Configurar la invalidación de configuración local para la supervisión de la actividad de archivos entrantes y salientes | [Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protección en tiempo real | Configurar la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados | [Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protección en tiempo real | Configurar la invalidación de configuración local para activar la supervisión del comportamiento | [Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
-Protección en tiempo real | Configurar la invalidación de configuración local para activar la protección en tiempo real | [Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
-Corrección | Configurar la invalidación de configuración local para la hora del día para ejecutar un examen completo programado para completar la corrección | [Configurar la corrección para exámenes](configure-remediation-microsoft-defender-antivirus.md)
-Examinar | Configurar la invalidación de configuración local para el porcentaje máximo de uso de LA CPU | [Configurar y ejecutar exámenes](run-scan-microsoft-defender-antivirus.md)
-Examinar | Configurar la invalidación de configuración local para el día de examen de programación | [Configurar exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Examinar | Configurar la invalidación de configuración local para el tiempo de examen rápido programado | [Configurar exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Examinar | Configurar la invalidación de configuración local para el tiempo de examen programado | [Configurar exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Examinar | Configurar la invalidación de configuración local para el tipo de examen que se usará para un examen programado | [Configurar exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+MAPAS|Configurar la invalidación de configuración local para los informes en Microsoft MAPS|[Habilitar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
+Cuarentena|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para exámenes](configure-remediation-microsoft-defender-antivirus.md)
+Protección en tiempo real|Configurar la invalidación de configuración local para la actividad del programa y el archivo de supervisión en el equipo|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protección en tiempo real|Configurar la invalidación de configuración local para la supervisión de la actividad de archivos entrantes y salientes|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protección en tiempo real|Configurar la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protección en tiempo real|Configurar la invalidación de configuración local para activar la supervisión del comportamiento|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
+Protección en tiempo real|Configurar la invalidación de configuración local para activar la protección en tiempo real|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
+Corrección|Configurar la invalidación de configuración local para la hora del día para ejecutar un examen completo programado para completar la corrección|[Configurar la corrección para exámenes](configure-remediation-microsoft-defender-antivirus.md)
+Examinar|Configurar la invalidación de configuración local para el porcentaje máximo de uso de LA CPU|[Configurar y ejecutar exámenes](run-scan-microsoft-defender-antivirus.md)
+Examinar|Configurar la invalidación de configuración local para el día de examen de programación|[Configurar exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+Examinar|Configurar la invalidación de configuración local para el tiempo de examen rápido programado|[Configurar exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+Examinar|Configurar la invalidación de configuración local para el tiempo de examen programado|[Configurar exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+Examinar|Configurar la invalidación de configuración local para el tipo de examen que se usará para un examen programado|[Configurar exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 
 <a id="merge-lists"></a>
 

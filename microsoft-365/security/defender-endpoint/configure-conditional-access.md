@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 281a9391fdc512882a4a7aef2dfecf51e28ce77a9724f0ba1882d75f7bbff935
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a0be19a974f7a065333ff0a5045512a2eb98a85
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839860"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532924"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurar el acceso condicional en Microsoft Defender para el extremo
 
@@ -68,21 +68,21 @@ Siga estos pasos para habilitar el acceso condicional:
 
 ### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>Paso 1: Activar la conexión Microsoft Intune conexión
 
-1. En el panel de navegación, **seleccione Configuración**  >  **características avanzadas** generales  >    >  **Microsoft Intune**  >  **conexión**.
+1. En el panel de navegación, **seleccione Configuración** \> **características avanzadas** generales \>  \> **Microsoft Intune** \> **conexión**.
 2. Alterna la Microsoft Intune a **On**.
 3. Haga clic **en Guardar preferencias**.
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Paso 2: Activar la integración de Defender for Endpoint en Intune
 
-1. Inicie sesión en el [portal de Azure](https://portal.azure.com).
-2. Seleccione **Cumplimiento de**  >  **dispositivos ATP de Microsoft Defender**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Seleccione **Cumplimiento de** \> **dispositivos ATP de Microsoft Defender**.
 3. Establece **Conectar Windows 10.0.15063+** en Protección contra amenazas avanzada de Microsoft Defender en **On**.
 4. Haga clic en **Guardar**.
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>Paso 3: Crear la directiva de cumplimiento en Intune
 
 1. En [Azure Portal,](https://portal.azure.com)seleccione **Todos los servicios**, filtre en **Intune** y **seleccione Microsoft Intune**.
-2. Seleccione **Directivas de cumplimiento de**  >    >  **dispositivos Crear directiva**.
+2. Seleccione **Directivas de cumplimiento de** \>  \> **dispositivos Crear directiva**.
 3. Escriba un **nombre** y **una descripción**.
 4. En **Plataforma,** **seleccione Windows 10 y versiones posteriores**.
 5. En la **configuración estado del** dispositivo, establece Requerir que el dispositivo esté en el nivel de amenaza del dispositivo o en el nivel **que** prefieras:
@@ -97,20 +97,20 @@ Siga estos pasos para habilitar el acceso condicional:
 ### <a name="step-4-assign-the-policy"></a>Paso 4: Asignar la directiva
 
 1. En [Azure Portal,](https://portal.azure.com)seleccione **Todos los servicios**, filtre en **Intune** y **seleccione Microsoft Intune**.
-2. Selecciona **Directivas de cumplimiento**  >  **de** dispositivos> la directiva de cumplimiento de Microsoft Defender para puntos de conexión.
+2. Selecciona **Directivas de cumplimiento** \> **de** dispositivos> la directiva de cumplimiento de Microsoft Defender para puntos de conexión.
 3. Seleccione **Asignaciones**.
 4. Incluya o excluya los grupos de Azure AD para asignarles la directiva.
 5. Para implementar la directiva en los grupos, seleccione **Guardar**. Los dispositivos de usuario dirigidos por la directiva se evalúan para el cumplimiento.
 
 ### <a name="step-5-create-an-azure-ad-conditional-access-policy"></a>Paso 5: Crear una directiva de acceso condicional de Azure AD
 
-1. En [Azure Portal,](https://portal.azure.com)abra **Azure Active Directory**  >  **Acceso condicional** Nueva  >  **directiva**.
+1. En [Azure Portal,](https://portal.azure.com)abra **Azure Active Directory** \> **Acceso condicional** Nueva \> **directiva**.
 2. Escriba un nombre **de directiva** y seleccione Usuarios **y grupos**. Use las opciones Incluir o Excluir para agregar los grupos para la directiva y seleccione **Listo**.
 3. Selecciona **Aplicaciones en la** nube y elige qué aplicaciones proteger. Por ejemplo, elija **Seleccionar aplicaciones** y seleccione **Office 365 SharePoint Online** y **Office 365 Exchange Online**. Seleccione **Listo** para guardar los cambios.
 
-4. Selecciona **Condiciones**  >  **Aplicaciones cliente para** aplicar la directiva a aplicaciones y exploradores. Por ejemplo, seleccione **Sí** y, a continuación, habilite **Explorador** y **Aplicaciones móviles y clientes de escritorio.** Seleccione **Listo** para guardar los cambios.
+4. Selecciona **Condiciones** \> **Aplicaciones cliente para** aplicar la directiva a aplicaciones y exploradores. Por ejemplo, seleccione **Sí** y, a continuación, habilite **Explorador** y **Aplicaciones móviles y clientes de escritorio.** Seleccione **Listo** para guardar los cambios.
 
-5. Selecciona **Conceder para** aplicar el acceso condicional en función del cumplimiento del dispositivo. Por ejemplo, seleccione **Conceder acceso Requerir** que el dispositivo se marque como  >  **compatible.** Elija **Seleccionar** para guardar los cambios.
+5. Selecciona **Conceder para** aplicar el acceso condicional en función del cumplimiento del dispositivo. Por ejemplo, seleccione **Conceder acceso Requerir** que el dispositivo se marque como \> **compatible.** Elija **Seleccionar** para guardar los cambios.
 
 6. Seleccione **Habilitar directiva** y, a **continuación, Crear** para guardar los cambios.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1f85e4a517b4af5120e88a76ef9dd46eda3011ec88383c9391bca0faaa2d5edd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fbf9561e214be2180d57b3b4dcd2369061d7a7d6
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857632"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532852"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Comprobar la ubicación de almacenamiento de datos y actualizar la configuración de retención de datos para Microsoft Defender para endpoint
 
@@ -43,14 +43,14 @@ Después de completar la incorporación, puede comprobar la selección en la pá
 Durante la [fase de configuración,](production-deployment.md)habría seleccionado la ubicación para almacenar los datos. 
 
 
-Para comprobar la ubicación de los datos, vaya a **Configuración** de datos de puntos de conexión  >    >   (en **General**).
+Para comprobar la ubicación de los datos, vaya a **Configuración** de datos de puntos de conexión \>  \>  (en **General**).
 
 
 ## <a name="update-data-retention-settings"></a>Actualizar la configuración de retención de datos
 
 Puede actualizar la configuración de retención de datos. De forma predeterminada, el período de retención es de 180 días. 
 
-1. En el panel de navegación, **seleccione Configuración** Datos de puntos de  >  **conexión**  >   (en **General**).
+1. En el panel de navegación, **seleccione Configuración** Datos de puntos de \> **conexión** \>  (en **General**).
 
 2. Seleccione la duración de retención de datos de la lista desplegable.
 

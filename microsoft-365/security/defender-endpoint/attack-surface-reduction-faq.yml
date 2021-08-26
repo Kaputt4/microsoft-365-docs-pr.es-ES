@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: 8b040f0de8ba510582e5201e7722137d164f2880
-  ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+  ms.openlocfilehash: 4d229ac94c7a1eb25e30c80f8e72a17d1b547be0
+  ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/25/2021
-  ms.locfileid: "58509598"
+  ms.lasthandoff: 08/26/2021
+  ms.locfileid: "58533140"
 title: Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -71,17 +71,6 @@ sections:
     answer: >
       Para las reglas ASR, si agrega una exclusión, afectará a todas las reglas ASR.
 
-      Las dos reglas específicas siguientes no admiten exclusiones:
-
-
-      |Nombre de regla|GUID|Exclusiones & carpetas de archivos|
-
-      |---|---|---|
-
-      |Impedir que JavaScript o VBScript inicien contenido ejecutable descargado|d3e037e1-3eb8-44c8-a917-57927947596d|No admitido|
-
-      |Bloquear la persistencia a través de la suscripción de eventos WMI|e6db77e5-3df2-4cf1-b95a-636979351e5b|No admitido|
-
 
       Las exclusiones de reglas ASR admiten caracteres comodín, rutas de acceso y variables de entorno. Para obtener más información sobre cómo usar caracteres comodín en reglas ASR, vea [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
 
@@ -89,7 +78,7 @@ sections:
       Tenga en cuenta los siguientes elementos sobre las exclusiones de reglas ASR (incluidos caracteres comodín y env. variables):
 
 
-      - Las exclusiones de reglas ASR son independientes de las exclusiones de Antivirus de Defender
+      - Las exclusiones de reglas ASR son independientes Antivirus de Microsoft Defender exclusiones
 
       - Los caracteres comodín no se pueden usar para definir una letra de unidad
 
@@ -233,7 +222,7 @@ sections:
     answer: >
       Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA.](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
   - question: >
-      Ver también
+      Vea también
     answer: >-
       * [Introducción a la reducción de superficie de ataque](attack-surface-reduction.md)
 

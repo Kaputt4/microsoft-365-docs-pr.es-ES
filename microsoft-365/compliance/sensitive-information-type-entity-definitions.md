@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hay 200 tipos de información confidencial que están listos para su uso en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 3103940cdf3ead5e513e21a9328e85dd07409f46
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 1a883c1ac31e61ef5aa24fbeca65f27f87fa3467
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508171"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532888"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -8832,39 +8832,39 @@ Cualquier término del diccionario de palabras clave Dictionary_icd_9_updated, q
 
 Cualquier término del diccionario de palabras clave Dictionary_icd_9_codes, que se basa en la clasificación internacional de las enfermedades,la noveno revisión, la modificación clínica [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo solo busca códigos de seguro, no la descripción.
 
-<!-- ## IP address
+## <a name="ip-address"></a>Dirección IP
 
-### Format
+### <a name="format"></a>Formato
 
-#### IPv4:
-Complex pattern that accounts for formatted (periods) and unformatted (no periods) versions of the IPv4 addresses
+#### <a name="ipv4"></a>IPv4:
+Patrón complejo que representa versiones con formato (puntos) y sin formato (sin puntos) de las direcciones IPv4
 
-#### IPv6:
-Complex pattern that accounts for formatted IPv6 numbers (which include colons)
+#### <a name="ipv6"></a>IPv6:
+Patrón complejo que representa números IPv6 con formato (que incluyen dos puntos)
 
-### Pattern
+### <a name="pattern"></a>Patrón
 
-### Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
-### Definition
+### <a name="definition"></a>Definición
 
-For IPv6, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_ipv6_address finds content that matches the pattern.
-- No keyword from Keyword_ipaddress is found.
+Para IPv6, una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular Regex_ipv6_address encuentra contenido que coincide con el patrón.
+- No se encuentra ninguna palabra clave de Keyword_ipaddress.
 
-For IPv4, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_ipv4_address finds content that matches the pattern.
-- A keyword from Keyword_ipaddress is found.
+Para IPv4, una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular Regex_ipv4_address encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de Keyword_ipaddress.
 
-For IPv6, a DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_ipv6_address finds content that matches the pattern.
-- No keyword from Keyword_ipaddress is found.
+Para IPv6, una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular Regex_ipv6_address encuentra contenido que coincide con el patrón.
+- No se encuentra ninguna palabra clave de Keyword_ipaddress.
 
 ```xml
     <!-- IP Address --> 
-<!--    <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
+    <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Regex_ipv6_address" />
         <Any minMatches="0" maxMatches="0">
@@ -8886,16 +8886,15 @@ For IPv6, a DLP policy has high confidence that it's detected this type of sensi
     </Entity>
 ```
 
-### Keywords
+### <a name="keywords"></a>Palabras clave
 
-#### Keyword_ipaddress
+#### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
-- IP (this keyword is case-sensitive)
-- ip address
-- ip addresses
+- IP (esta palabra clave distingue mayúsculas de minúsculas)
+- dirección IP
+- Direcciones IP
 - internet protocol
-- IP-כתובת ה
- -->
+- IP-כתובת -->
 
 ## <a name="ireland-drivers-license-number"></a>Número de licencia de conducir de Irlanda
 

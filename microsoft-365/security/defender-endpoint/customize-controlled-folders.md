@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: de715a0b19b708932f6094a02561e414e2758ea643d5cdeb84f35ff5c520ed4e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24e144b6134c4d32b15220ed3b3608b3b4a1c1df
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829777"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533092"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
 
@@ -71,9 +71,9 @@ Puede usar la aplicación Seguridad de Windows, la directiva de grupo, los cmdle
 
 2. Haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y, a continuación, **seleccione Editar**.
 
-3. En el **Editor de administración de directivas de** grupo, vaya a Directivas de **configuración** del equipo  >    >  **Plantillas administrativas.**
+3. En el **Editor de administración de directivas de** grupo, vaya a Directivas de **configuración** del equipo \>  \> **Plantillas administrativas.**
 
-4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** Windows Defender acceso controlado a carpetas de Protección contra  >    >    >  **vulnerabilidades de seguridad**. <br/>**NOTA**: En las versiones anteriores de Windows, es posible que vea Antivirus de Windows Defender **en** lugar de **Antivirus de Microsoft Defender**.
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** Windows Defender acceso controlado a carpetas de Protección contra \>  \>  \> **vulnerabilidades de seguridad**. <br/>**NOTA**: En las versiones anteriores de Windows, es posible que vea Antivirus de Windows Defender **en** lugar de **Antivirus de Microsoft Defender**.
 
 5. Haga doble clic en **Carpetas protegidas configuradas** y, a continuación, establezca la opción en **Habilitado**. Seleccione **Mostrar** y especifique cada carpeta que desee proteger.
 
@@ -128,7 +128,7 @@ Una aplicación o servicio permitido solo tiene acceso de escritura a una carpet
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** Windows Defender acceso controlado a carpetas de Protección contra  >    >    >  **vulnerabilidades de seguridad**.
+3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** Windows Defender acceso controlado a carpetas de Protección contra \>  \>  \> **vulnerabilidades de seguridad**.
 
 4. Haga doble clic en **la configuración Configurar aplicaciones permitidas** y establezca la opción en **Habilitado**. Selecciona **Mostrar** y escribe cada aplicación.
 
@@ -169,7 +169,7 @@ Los indicadores de archivo y certificado de Microsoft Defender para endpoint pue
 
 Para obtener más información acerca de cómo personalizar la notificación cuando se desencadena una regla y bloquea una aplicación o archivo, consulte [Configure alert notifications in Microsoft Defender for Endpoint](configure-email-notifications.md).
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)

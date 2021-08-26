@@ -14,12 +14,12 @@ audience: ITPro
 ms.topic: conceptual
 ms.technology: mde
 ROBOTS: NOINDEX
-ms.openlocfilehash: 05123ecb52f38e87c8a2c5360d17b39605a44cfd
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: b8e44aa81c0985b296d0f19b8ead2e6251b53c1c
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399760"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533344"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint
 
@@ -32,10 +32,10 @@ Microsoft recomienda un enfoque por capas para proteger los medios extraíbles y
 2. Configure para permitir o bloquear solo determinados dispositivos extraíbles y evitar amenazas.
     1. [Permitir o bloquear dispositivos extraíbles](#allow-or-block-removable-devices) en función de la configuración granular para denegar el acceso de escritura a discos extraíbles y aprobar o denegar dispositivos mediante el uso de los IDs de dispositivo USB. Asignación de directiva flexible de la configuración de instalación de dispositivos en función de un usuario o grupo de Azure Active Directory (Azure AD) usuarios y dispositivos.
 
-    2. [Impedir que las amenazas quiten el](#prevent-threats-from-removable-storage) almacenamiento introducido por los dispositivos de almacenamiento extraíbles habilitando:  
-        - Antivirus de Microsoft Defender protección en tiempo real (RTP) para examinar el almacenamiento extraíble en busca de malware.  
-        - La regla USB de reducción de superficie de ataque (ASR) para bloquear procesos que no son de confianza y que no se firman y que se ejecutan desde USB.  
-        - Configuración de protección de Acceso directo a la memoria (DMA) para mitigar los ataques de DMA, incluida la protección de kernel DMA para Thunderbolt y el bloqueo de DMA hasta que un usuario inicia sesión.  
+    2. [Impedir que las amenazas quiten el](#prevent-threats-from-removable-storage) almacenamiento introducido por los dispositivos de almacenamiento extraíbles habilitando:
+        - Antivirus de Microsoft Defender protección en tiempo real (RTP) para examinar el almacenamiento extraíble en busca de malware.
+        - La regla USB de reducción de superficie de ataque (ASR) para bloquear procesos que no son de confianza y que no se firman y que se ejecutan desde USB.
+        - Configuración de protección de Acceso directo a la memoria (DMA) para mitigar los ataques de DMA, incluida la protección de kernel DMA para Thunderbolt y el bloqueo de DMA hasta que un usuario inicia sesión.
 
 3. [Cree alertas](#create-customized-alerts-and-response-actions) personalizadas y acciones de respuesta para supervisar el uso de dispositivos extraíbles basados en estos eventos plug and play o en cualquier otro evento de Microsoft Defender para endpoint con reglas [de detección personalizadas.](/microsoft-365/security/defender-endpoint/custom-detection-rules)
 
@@ -114,14 +114,14 @@ En este ejemplo, es necesario agregar las siguientes clases: HID, Keyboard y {36
 
 ![Controlador de host de dispositivo](images/devicehostcontroller.jpg)
 
-Si quieres restringir a determinados dispositivos, quita la clase de configuración del dispositivo del periférico que quieres limitar. A continuación, agrega el identificador de dispositivo que quieras agregar. El id. de dispositivo se basa en los valores de id. de proveedor y de producto de un dispositivo. Para obtener información sobre los formatos de id. de dispositivo, [consulte Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers). 
+Si quieres restringir a determinados dispositivos, quita la clase de configuración del dispositivo del periférico que quieres limitar. A continuación, agrega el identificador de dispositivo que quieras agregar. El id. de dispositivo se basa en los valores de id. de proveedor y de producto de un dispositivo. Para obtener información sobre los formatos de id. de dispositivo, [consulte Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 
-Para buscar los identificadores de dispositivo, [consulta Buscar identificador de dispositivo](#look-up-device-id). 
+Para buscar los identificadores de dispositivo, [consulta Buscar identificador de dispositivo](#look-up-device-id).
 
 Por ejemplo:
 
 1. Quite la clase USBDevice de **Permitir la instalación de dispositivos con controladores que coincidan con la configuración de estos dispositivos.**
-2. Agrega el identificador del dispositivo para permitir la instalación del dispositivo **que coincida con cualquiera de estos identificadores de dispositivo.** 
+2. Agrega el identificador del dispositivo para permitir la instalación del dispositivo **que coincida con cualquiera de estos identificadores de dispositivo.**
 
 #### <a name="prevent-installation-and-usage-of-usb-drives-and-other-peripherals"></a>Impedir la instalación y el uso de unidades USB y otros periféricos
 
@@ -135,7 +135,7 @@ Si quieres impedir la instalación de una clase de dispositivo o determinados di
 
 La directiva Impedir la instalación de dispositivos que coincidan con cualquiera de estos **IDs** de dispositivo te permite especificar una lista de dispositivos que Windows se impide la instalación.
 
-Para evitar la instalación de dispositivos que coincidan con cualquiera de estos IDs de dispositivo: 
+Para evitar la instalación de dispositivos que coincidan con cualquiera de estos IDs de dispositivo:
 
 1. [Busca el identificador de](#look-up-device-id) dispositivo para los dispositivos que quieras Windows impedir la instalación.
 
@@ -160,10 +160,10 @@ Para obtener información acerca de los formatos de id. [de dispositivo, consult
 
 Para obtener información sobre los IDs de proveedor, vea [Miembros USB](https://www.usb.org/members).
 
-A continuación se muestra un ejemplo para buscar un identificador de proveedor de dispositivos o un id. de producto (que forma parte del identificador del dispositivo) con PowerShell: 
+A continuación se muestra un ejemplo para buscar un identificador de proveedor de dispositivos o un id. de producto (que forma parte del identificador del dispositivo) con PowerShell:
 
 ```powershell
-Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property * 
+Get-WMIObject -Class Win32_DiskDrive | Select-Object -Property *
 ```
 
 La **directiva Impedir la instalación de dispositivos** con controladores que coincidan con estas clases de configuración de dispositivos te permite especificar las clases de configuración de dispositivo que Windows se impide la instalación.
@@ -181,7 +181,7 @@ Para evitar la instalación de determinadas clases de dispositivos:
 
 1. Inicie sesión en el centro [Microsoft Endpoint Manager administración](https://endpoint.microsoft.com/).
 
-2. Haga clic **en**  >  **Perfiles de configuración de dispositivos**  >  **Crear perfil**.
+2. Haga clic **en** \> **Perfiles de configuración de dispositivos** \> **Crear perfil**.
 
     > [!div class="mx-imgBorder"]
     > ![Crear perfil de configuración de dispositivo](images/create-device-configuration-profile.png)
@@ -195,9 +195,9 @@ Para evitar la instalación de determinadas clases de dispositivos:
    > [!div class="mx-imgBorder"]
    > ![Crear perfil](images/create-profile.png)
 
-4. Haga clic **en**  >  **Configurar general**.  
+4. Haga clic **en** \> **Configurar general**.
 
-5. Para **Almacenamiento extraíble y** conexión USB **(solo móvil),** elija **Bloquear**. **El almacenamiento extraíble** incluye unidades USB, mientras que la conexión **USB (solo móvil)** excluye la carga USB, pero solo incluye otras conexiones USB en dispositivos móviles. 
+5. Para **Almacenamiento extraíble y** conexión USB **(solo móvil),** elija **Bloquear**. **El almacenamiento extraíble** incluye unidades USB, mientras que la conexión **USB (solo móvil)** excluye la carga USB, pero solo incluye otras conexiones USB en dispositivos móviles.
 
    ![Configuración general](images/general-settings.png)
 
@@ -216,7 +216,7 @@ Para permitir la instalación de dispositivos específicos también es necesario
 
 Microsoft Defender para endpoint bloquea la instalación y el uso de periféricos prohibidos mediante cualquiera de estas opciones:
 
-- [Las plantillas administrativas](/intune/administrative-templates-windows) pueden bloquear cualquier dispositivo con un identificador de hardware o una clase de configuración que coincida.  
+- [Las plantillas administrativas](/intune/administrative-templates-windows) pueden bloquear cualquier dispositivo con un identificador de hardware o una clase de configuración que coincida.
 - [Configuración de CSP de instalación de dispositivos](/windows/client-management/mdm/policy-csp-deviceinstallation) con un perfil personalizado en Intune. Puedes impedir [la instalación de determinados IDs de dispositivo o](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) impedir clases de dispositivo [específicas.](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses)
 
 ### <a name="allow-installation-and-usage-of-specifically-approved-peripherals-with-matching-device-instance-ids"></a>Permitir la instalación y el uso de periféricos aprobados específicamente con los IDs de instancia del dispositivo que coincidan
@@ -238,9 +238,8 @@ Con Intune, puede limitar los servicios que pueden usar Bluetooth a través de [
 > [!div class="mx-imgBorder"]
 > ![captura de pantalla de Bluetooth de configuración](images/bluetooth.png)
 
-
 ## <a name="prevent-threats-from-removable-storage"></a>Impedir que las amenazas quiten el almacenamiento
-  
+
 Los dispositivos de almacenamiento extraíbles pueden introducir riesgos de seguridad adicionales para la organización. Microsoft Defender para endpoint puede ayudar a identificar y bloquear archivos malintencionados en dispositivos de almacenamiento extraíbles.
 
 Microsoft Defender para endpoint también puede impedir que se utilicen periféricos USB en dispositivos para ayudar a evitar amenazas externas. Para ello, usa las propiedades notificadas por periféricos USB para determinar si se pueden instalar y usar en el dispositivo.
@@ -248,7 +247,7 @@ Microsoft Defender para endpoint también puede impedir que se utilicen perifér
 Ten en cuenta que si bloqueas dispositivos USB o cualquier otra clase de dispositivo mediante las directivas de instalación del dispositivo, los dispositivos conectados, como los teléfonos, aún pueden cargarse.
 
 > [!NOTE]
-> Pruebe y refine siempre esta configuración con un grupo piloto de usuarios y dispositivos primero antes de distribuirla ampliamente a su organización. 
+> Pruebe y refine siempre esta configuración con un grupo piloto de usuarios y dispositivos primero antes de distribuirla ampliamente a su organización.
 
 En la tabla siguiente se describen las formas en que Microsoft Defender para endpoint puede ayudar a evitar que las amenazas se puedan quitar.
 
@@ -277,9 +276,9 @@ Proteger el almacenamiento extraíble autorizado con Antivirus de Microsoft Defe
 - Si se usan exámenes programados, debes deshabilitar la configuración DisableRemovableDriveScanning (habilitada de forma predeterminada) para examinar el dispositivo extraíble durante un examen completo. Los dispositivos extraíbles se examinan durante un examen rápido o personalizado independientemente de la configuración DisableRemovableDriveScanning.
 
 > [!NOTE]
-> Se recomienda habilitar la supervisión en tiempo real para el examen. En Intune, puedes habilitar la supervisión en tiempo real para Windows 10 **en Restricciones** de dispositivo Configurar  >    >  **Antivirus de Microsoft Defender**  >  **supervisión en tiempo real.**
+> Se recomienda habilitar la supervisión en tiempo real para el examen. En Intune, puedes habilitar la supervisión en tiempo real para Windows 10 **en Restricciones** de dispositivo Configurar \>  \> **Antivirus de Microsoft Defender** \> **supervisión en tiempo real.**
 
-<!-- Need to build out point in the preceding note. 
+<!-- Need to build out point in the preceding note.
 -->
 
 ### <a name="block-untrusted-and-unsigned-processes-on-usb-peripherals"></a>Bloquear procesos no de confianza y sin firma en periféricos USB
@@ -295,18 +294,18 @@ Esta configuración requiere [habilitar la protección en tiempo real](/microsof
 
 1. Inicie sesión en el [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
 
-2. Haga **clic en**  >  **Dispositivos Windows**  >  **Directivas de configuración** Crear  >  **perfil**. 
+2. Haga **clic en** \> **Dispositivos Windows** \> **Directivas de configuración** Crear \> **perfil**.
 
     ![Crear perfil de configuración de dispositivo](images/create-device-configuration-profile.png)
 
 3. Use la configuración siguiente:
-   - Plataforma: Windows 10 y versiones posteriores 
+   - Plataforma: Windows 10 y versiones posteriores
    - Tipo de perfil: restricciones de dispositivo
 
    > [!div class="mx-imgBorder"]
    > ![Crear perfil de protección de puntos de conexión](images/create-endpoint-protection-profile.png)
 
-4. Haga clic en **Crear**.  
+4. Haga clic en **Crear**.
 
 5. Para **los procesos no firmados y que no** son de confianza que se ejecutan desde USB, elija **Bloquear**.
 
@@ -366,5 +365,5 @@ Por ejemplo, con cualquiera de los dos métodos, puedes hacer que el Antivirus d
 - [CSP de directiva/DeviceInstallation](/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [Realizar un examen personalizado de un dispositivo extraíble](/samples/browse/?redirectedfrom=TechNet-Gallery)
 - [Plantilla de control Power BI dispositivo para informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates)
-- [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) 
+- [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md)
 - [Windows Information Protection](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md)

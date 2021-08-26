@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5221c7c715e6722ada2acabe2d9752cb51c18914c4b5e77ddbb6d5cac55c7ac2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 018b432ec792610c2f3d232a7ead4dfc8c75639f
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854128"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532432"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>Extraer detecciones a las herramientas SIEM
 
@@ -35,10 +35,11 @@ ms.locfileid: "53854128"
 
 ## <a name="pull-detections-using-security-information-and-events-management-siem-tools"></a>Extraer detecciones mediante herramientas de administración de eventos y información de seguridad (SIEM)
 
->[!NOTE]
->- [Microsoft Defender para alerta de](alerts.md) extremo se compone de una o más detecciones.
->- [Microsoft Defender para la detección de](api-portal-mapping.md) puntos de conexión se compone del evento sospechoso que se produjo en el dispositivo y sus detalles de alerta relacionados.
->-La API de alertas de punto de conexión de Microsoft Defender es la API más reciente para el consumo de alertas y contiene una lista detallada de pruebas relacionadas para cada alerta. Para obtener más información, vea [Alert methods and properties y](alerts.md) List [alerts](get-alerts.md).
+> [!NOTE]
+>
+> - [Microsoft Defender para alerta de](alerts.md) extremo se compone de una o más detecciones.
+> - [Microsoft Defender para la detección de](api-portal-mapping.md) puntos de conexión se compone del evento sospechoso que se produjo en el dispositivo y sus detalles de alerta relacionados.
+> -La API de alertas de punto de conexión de Microsoft Defender es la API más reciente para el consumo de alertas y contiene una lista detallada de pruebas relacionadas para cada alerta. Para obtener más información, vea [Alert methods and properties y](alerts.md) List [alerts](get-alerts.md).
 
 Defender for Endpoint admite las herramientas de administración de eventos y de información de seguridad (SIEM) para extraer detecciones. Defender for Endpoint expone alertas a través de un extremo HTTPS hospedado en Azure. El extremo se puede configurar para extraer detecciones del inquilino de la empresa en Azure Active Directory (AAD) mediante el protocolo de autenticación de OAuth 2.0 para una aplicación de AAD que representa el conector SIEM específico instalado en el entorno.
 
@@ -53,7 +54,7 @@ Para usar cualquiera de estas herramientas SIEM compatibles, deberá:
 
 - [Habilitar la integración de SIEM en Defender for Endpoint](enable-siem-integration.md)
 - Configurar la herramienta SIEM compatible:
-     - [Configurar Micro Focus ArcSight para extraer Defender para detecciones de puntos de conexión](configure-arcsight.md)
-     - Configurar IBM QRadar para extraer Defender para detecciones de puntos de conexión Para obtener más información, vea [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
+  - [Configurar Micro Focus ArcSight para extraer Defender para detecciones de puntos de conexión](configure-arcsight.md)
+  - Configurar IBM QRadar para extraer Defender para detecciones de puntos de conexión Para obtener más información, vea [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
 
 Para obtener más información sobre la lista de campos expuestos en la API de detección, vea [Defender for Endpoint Detection fields](api-portal-mapping.md).

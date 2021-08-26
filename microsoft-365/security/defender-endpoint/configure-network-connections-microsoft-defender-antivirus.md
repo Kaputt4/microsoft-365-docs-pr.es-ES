@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 2facf41d8d2f695c67b7609fe8aec222413ba23c855b94d8b1d1ecd0da177173
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 989e392071de0ed90b2daa964307989f664cb53a
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863703"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532960"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -42,7 +42,7 @@ Consulta la entrada de blog [Cambios importantes en el punto](https://techcommun
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Permitir conexiones al servicio Antivirus de Microsoft Defender nube
 
-El Antivirus de Microsoft Defender nube proporciona una protección rápida y segura para los puntos de conexión. Habilitar el servicio de protección entregado en la nube es opcional, pero es muy recomendable porque proporciona protección importante contra malware en los puntos de conexión y en toda la red. Consulte [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) para obtener más información sobre cómo habilitar el servicio con Intune, Microsoft Endpoint Configuration Manager, directiva de grupo, cmdlets de PowerShell o en clientes individuales en la Seguridad de Windows aplicación. 
+El Antivirus de Microsoft Defender nube proporciona una protección rápida y segura para los puntos de conexión. Habilitar el servicio de protección entregado en la nube es opcional, pero es muy recomendable porque proporciona protección importante contra malware en los puntos de conexión y en toda la red. Consulte [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) para obtener más información sobre cómo habilitar el servicio con Intune, Microsoft Endpoint Configuration Manager, directiva de grupo, cmdlets de PowerShell o en clientes individuales en la Seguridad de Windows aplicación.
 
 Después de habilitar el servicio, es posible que deba configurar la red o firewall para permitir conexiones entre él y los puntos de conexión. Dado que la protección es un servicio en la nube, los equipos deben tener acceso a Internet y llegar a Microsoft Defender para obtener Office 365 aprendizaje automático. No excluya la dirección URL `*.blob.core.windows.net` de ningún tipo de inspección de red.
 
@@ -51,19 +51,23 @@ Después de habilitar el servicio, es posible que deba configurar la red o firew
 
 ## <a name="services-and-urls"></a>Servicios y direcciones URL
 
-En la tabla de esta sección se enumeran los servicios y sus direcciones de sitio web asociadas (DIRECCIONES URL). 
+En la tabla de esta sección se enumeran los servicios y sus direcciones de sitio web asociadas (DIRECCIONES URL).
 
 Asegúrese de que no hay reglas de filtrado de red o firewall que denieguen el acceso a estas direcciones URL. De lo contrario, es posible que deba crear una regla de permitir específicamente para ellos (excluyendo la dirección `*.blob.core.windows.net` URL). Las direcciones URL de la tabla siguiente usan el puerto 443 para la comunicación.
 
-| Servicio y descripción | URL |
-|----|---- |
-| Antivirus de Microsoft Defender servicio de protección entregado en la nube, también denominado Microsoft Active Protection Service (MAPS)<p>Este servicio lo usa Antivirus de Microsoft Defender para proporcionar protección entregada en la nube|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
-| Microsoft Update Service (MU) y Windows Update Service (WU) <p>Estos servicios permiten la inteligencia de seguridad y las actualizaciones de productos |`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Para obtener más información, consulte [Connection endpoints for Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
-|Actualizaciones de inteligencia de seguridad Ubicación alternativa de descarga (ADL)<p>Esta es una ubicación alternativa para las Antivirus de Microsoft Defender de inteligencia de seguridad si la inteligencia de seguridad instalada está des actualizada (7 o más días después)| `*.download.microsoft.com`  <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
-| Almacenamiento de envío de malware <p>Esta es la ubicación de carga de los archivos enviados a Microsoft mediante el formulario de envío o el envío automático de muestra | `ussus1eastprod.blob.core.windows.net` <p>    `ussus2eastprod.blob.core.windows.net` <p>    `ussus3eastprod.blob.core.windows.net` <p>    `ussus4eastprod.blob.core.windows.net` <p>    `wsus1eastprod.blob.core.windows.net` <p>    `wsus2eastprod.blob.core.windows.net` <p>    `ussus1westprod.blob.core.windows.net` <p>    `ussus2westprod.blob.core.windows.net` <p>    `ussus3westprod.blob.core.windows.net` <p>    `ussus4westprod.blob.core.windows.net` <p>    `wsus1westprod.blob.core.windows.net` <p>    `wsus2westprod.blob.core.windows.net` <p>    `usseu1northprod.blob.core.windows.net` <p>    `wseu1northprod.blob.core.windows.net` <p>    `usseu1westprod.blob.core.windows.net` <p>    `wseu1westprod.blob.core.windows.net` <p>    `ussuk1southprod.blob.core.windows.net` <p>    `wsuk1southprod.blob.core.windows.net` <p>    `ussuk1westprod.blob.core.windows.net` <p>    `wsuk1westprod.blob.core.windows.net` |
-| Lista de revocación de certificados (CRL) <p>Esta lista la usa Windows al crear la conexión SSL a MAPS para actualizar la CRL | `http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p>   `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs` |
-| Almacén de símbolos <p>El almacén de símbolos lo usa Antivirus de Microsoft Defender restaurar ciertos archivos críticos durante los flujos de corrección | `https://msdl.microsoft.com/download/symbols` |
-| Cliente de telemetría universal <p>Este cliente lo usa Windows para enviar datos de diagnóstico de cliente<p> Antivirus de Microsoft Defender telemetría con fines de supervisión de la calidad del producto | La actualización usa SSL (puerto TCP 443) para descargar manifiestos y cargar datos de diagnóstico en Microsoft que usa los siguientes extremos DNS: <p> `vortex-win.data.microsoft.com` <p>   `settings-win.data.microsoft.com`|
+<br>
+
+****
+
+|Servicio y descripción|URL|
+|---|---|
+|Antivirus de Microsoft Defender servicio de protección entregado en la nube, también denominado Microsoft Active Protection Service (MAPS)<p>Este servicio lo usa Antivirus de Microsoft Defender para proporcionar protección entregada en la nube|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
+|Microsoft Update Service (MU) y Windows Update Service (WU) <p>Estos servicios permiten la inteligencia de seguridad y las actualizaciones de productos|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Para obtener más información, consulte [Connection endpoints for Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
+|Actualizaciones de inteligencia de seguridad Ubicación alternativa de descarga (ADL)<p>Esta es una ubicación alternativa para las Antivirus de Microsoft Defender de inteligencia de seguridad si la inteligencia de seguridad instalada está des actualizada (7 o más días después)|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+|Almacenamiento de envío de malware <p>Esta es la ubicación de carga de los archivos enviados a Microsoft mediante el formulario de envío o el envío automático de muestra|`ussus1eastprod.blob.core.windows.net` <p> `ussus2eastprod.blob.core.windows.net` <p> `ussus3eastprod.blob.core.windows.net` <p> `ussus4eastprod.blob.core.windows.net` <p> `wsus1eastprod.blob.core.windows.net` <p> `wsus2eastprod.blob.core.windows.net` <p> `ussus1westprod.blob.core.windows.net` <p> `ussus2westprod.blob.core.windows.net` <p> `ussus3westprod.blob.core.windows.net` <p> `ussus4westprod.blob.core.windows.net` <p> `wsus1westprod.blob.core.windows.net` <p> `wsus2westprod.blob.core.windows.net` <p> `usseu1northprod.blob.core.windows.net` <p> `wseu1northprod.blob.core.windows.net` <p> `usseu1westprod.blob.core.windows.net` <p> `wseu1westprod.blob.core.windows.net` <p> `ussuk1southprod.blob.core.windows.net` <p> `wsuk1southprod.blob.core.windows.net` <p> `ussuk1westprod.blob.core.windows.net` <p> `wsuk1westprod.blob.core.windows.net`|
+|Lista de revocación de certificados (CRL) <p>Esta lista la usa Windows al crear la conexión SSL a MAPS para actualizar la CRL|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
+|Almacén de símbolos <p>El almacén de símbolos lo usa Antivirus de Microsoft Defender restaurar ciertos archivos críticos durante los flujos de corrección|`https://msdl.microsoft.com/download/symbols`|
+|Cliente de telemetría universal <p> Este cliente lo usa Windows para enviar datos de diagnóstico de cliente <p> Antivirus de Microsoft Defender telemetría con fines de supervisión de la calidad del producto|La actualización usa SSL (puerto TCP 443) para descargar manifiestos y cargar datos de diagnóstico en Microsoft que usa los siguientes extremos DNS: <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
 
 ## <a name="validate-connections-between-your-network-and-the-cloud"></a>Validar conexiones entre la red y la nube
 

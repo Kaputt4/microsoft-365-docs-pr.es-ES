@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 693575d507d77d7ac34422f0ddef0b0d4a41ecf2
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 23f6b23d958a51bd84498c08ef95672ec62ff6e5
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257867"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532768"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -97,7 +97,7 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: [Configure and update
 1. Descargue el archivo de instalación del [agente: Windows agente de 64 bits](https://go.microsoft.com/fwlink/?LinkId=828603).
 
 2. Mediante el identificador de área de trabajo y la clave de área de trabajo obtenidas en el procedimiento anterior, elija cualquiera de los siguientes métodos de instalación para instalar el agente en el Windows servidor:
-    - [Instale manualmente el agente mediante el programa de instalación](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard). 
+    - [Instale manualmente el agente mediante el programa de instalación](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard).
     En la **página Opciones de configuración del** agente, elija Conectar el agente a Azure Log Analytics **(OMS).**
     - [Instale el agente mediante la línea de comandos](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
     - [Configure el agente mediante un script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
@@ -118,7 +118,7 @@ Una vez completado, debería ver los servidores Windows incorporados en el porta
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>Opción 2: Incorporar servidores Windows a través del Centro de seguridad de Azure
 
-En el panel Microsoft 365 Defender de navegación, **seleccione Configuración** de administración de  >  **dispositivos**  >  **endpoints**  >  .
+En el panel Microsoft 365 Defender de navegación, **seleccione Configuración** de administración de \> **dispositivos** \> **endpoints** \> .
 
 1. Seleccione **Windows Server 2008 R2 SP1, 2012 R2 y 2016** como sistema operativo.
 
@@ -198,7 +198,7 @@ En esta integración se incluyen las siguientes funcionalidades:
     > [!NOTE]
     > La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha expandido para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- Windows servidores supervisados por Azure Defender también estarán disponibles en Defender para endpoint: Azure Defender se conecta perfectamente al inquilino de Defender para endpoint, lo que proporciona una vista única entre clientes y servidores.  Además, las alertas de Defender para extremo estarán disponibles en la consola de Azure Defender.
+- Windows servidores supervisados por Azure Defender también estarán disponibles en Defender para endpoint: Azure Defender se conecta perfectamente al inquilino de Defender para endpoint, lo que proporciona una vista única entre clientes y servidores. Además, las alertas de Defender para extremo estarán disponibles en la consola de Azure Defender.
 
 - Investigación del servidor: los clientes de Azure Defender pueden acceder a Microsoft 365 Defender realizar una investigación detallada para descubrir el ámbito de una posible infracción.
 
@@ -222,8 +222,8 @@ Se requieren los siguientes pasos para habilitar esta integración:
 - [Configure la pertenencia al servicio de protección](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) en la nube del cliente SCEP a la **configuración** Avanzada.
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecutar una prueba de detección para comprobar la incorporación
-Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.
 
+Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.
 
 ## <a name="offboard-windows-servers"></a>Servidores de Windows offboard
 
@@ -266,7 +266,7 @@ Para salir del servidor Windows, puede usar cualquiera de los siguientes método
 
 1. Obtener el id. de área de trabajo:
 
-   1. En el panel Microsoft 365 Defender de navegación, **seleccione Configuración** de administración de  >  **dispositivos**  >  **endpoints**  >  .
+   1. En el panel Microsoft 365 Defender de navegación, **seleccione Configuración** de administración de \> **dispositivos** \> **endpoints** \> .
 
    1. Seleccione **Windows Server 2008 R2 SP1, 2012 R2 y 2016** como sistema operativo y obtenga el identificador de área de trabajo:
 
@@ -306,9 +306,9 @@ Para salir del servidor Windows, puede usar cualquiera de los siguientes método
 **Paso 2: Crear un nombre de archivo DeployMMA.cmd (con bloc de notas)** Agregue las siguientes líneas al archivo cmd. Ten en cuenta que necesitarás el identificador de área de trabajo y la clave.
 
 ```dos
-@echo off 
+@echo off
 cd "C:"
-IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" ( 
+IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" (
 exit
 ) ELSE (
 wusa.exe c:\Windows\MMA\Windows6.1-KB123456-x86.msu /quiet /norestart
@@ -369,7 +369,7 @@ Como se mencionó en la documentación de incorporación de Server específicame
 Para Windows Server 2008 R2 PS1, asegúrese de cumplir los siguientes requisitos:
 
 - Instalar el paquete acumulativo de actualizaciones [mensuales de febrero de 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-  
+
 - Instalar [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (o posterior) o [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
 Compruebe que los KB están presentes antes de incorporar Windows Server 2008 R2 Este proceso le permite incorporar todos los servidores si no tiene configuration manager managing Servers.

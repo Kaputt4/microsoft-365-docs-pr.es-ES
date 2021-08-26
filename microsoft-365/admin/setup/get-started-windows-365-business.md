@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo comprar Windows 365 Empresa para su organización y ayudar a los usuarios a empezar a usar sus equipos en la nube.
-ms.openlocfilehash: a1dfb4ad2cdda501b699423d03e257dbe314976c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 281700a15ef7f0560a5fa2171653eddc7048011d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394581"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532900"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Introducción a Windows 365 Empresa y equipos en la nube
 
@@ -87,7 +87,7 @@ Tanto si compró sus suscripciones a través del sitio de productos de Windows 3
 Puede asignar diferentes tipos de Windows 365 Business a un usuario, en función de las necesidades empresariales de los usuarios. Consulte [Windows de tamaño de 365 Empresa](windows-365-business-sizing.md) para obtener instrucciones sobre qué tipo de licencia puede ser adecuado para los usuarios.
 
 > [!IMPORTANT]
-> La primera vez que se asigna una licencia Windows 365 en el inquilino, se crea automáticamente una cuenta del sistema denominada "CloudPCBPRT" en Azure Active Directory. No elimine esta cuenta. Si se elimina la cuenta del sistema, es posible que se producirá un error en la instalación. Esta cuenta del sistema garantiza un proceso de configuración sin problemas y no tiene capacidades de escritura ni acceso a su espacio empresarial más allá de las capacidades de servicio de ámbito de Windows 365 Empresa. Si elimina este usuario, presente un vale a través del Centro de soporte técnico.
+> La primera vez que se asigna una licencia Windows 365 en el espacio empresarial, se crea automáticamente una cuenta del sistema denominada **Windows 365 BPRT Permanent User** en Azure Active Directory. No elimine esta cuenta ni realice ningún cambio en ella (como cambiar el nombre o UPN). Si se elimina la cuenta del sistema, es posible que se producirá un error en la instalación. Esta cuenta del sistema garantiza un proceso de configuración sin problemas y no tiene capacidades de escritura ni acceso a su espacio empresarial más allá de las capacidades de servicio de ámbito de Windows 365 Empresa. Si elimina este usuario, presente un vale a través del Centro de soporte técnico.
 
 ## <a name="get-your-users-started-with-cloud-pc"></a>Introducción a los usuarios con el equipo en la nube
 

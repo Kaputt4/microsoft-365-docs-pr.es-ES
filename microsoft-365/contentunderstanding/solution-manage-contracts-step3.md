@@ -12,14 +12,14 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Obtenga información sobre cómo usar Power Automate para crear el flujo para procesar los contratos mediante una Microsoft 365 solución.
-ms.openlocfilehash: ddf9df71c53af9f3a68dcbfd9a5b1882b67c4fbd4600e89ecec36e283848ac3e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1de8c0c5ed25ee9934077d015f4e66c43e07c7c8
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859363"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533248"
 ---
-# <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Paso 3. Usar Power Automate para crear el flujo para procesar los contratos
+# <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Paso 3. Usar Power Automate para crear el flujo para procesar los contratos
 
 Ha creado el canal de administración de contratos y ha adjuntado su SharePoint de documentos. El siguiente paso es crear un flujo de Power Automate para procesar los contratos que el SharePoint Syntex identifica y clasifica. Puede realizar este paso creando [un flujo de Power Automate en la SharePoint de documentos](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 

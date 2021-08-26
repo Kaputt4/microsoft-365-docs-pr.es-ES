@@ -1,6 +1,6 @@
 ---
 title: Habilitar el entorno de evaluación de Microsoft Defender para Office 365 en el entorno de producción
-description: Pasos para activar la evaluación de Microsoft Defender para Office365, con licencias de prueba, control de registros MX, & auditoría de dominios aceptados y conexiones entrantes.
+description: Pasos para activar Microsoft Defender para Office 365 evaluación, con licencias de prueba, control de registros MX, & auditoría de dominios aceptados y conexiones entrantes.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 09c3b40b54133f43dba5ab09e600cf89206adca4
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a64f217b88c41ca256d1ee343629741fd2ad880b
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254503"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533152"
 ---
 # <a name="enable-the-evaluation-environment"></a>Habilitar el entorno de evaluación
 
@@ -128,7 +128,7 @@ Use las instrucciones aquí para activar microsoft defender para Office 365 eval
    |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="Este panel tiene una lista desplegable para revisar la configuración. También tiene un vínculo que permite hacer clic en Editar el tipo de enrutamiento si es necesario. Cuando esté listo, haga clic en el botón azul grande Crear evaluación.":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="Y ahora la configuración se ha completado. El botón azul de esta página dice &quot;Ir a evaluación&quot;.":::|
    |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Paso 3 de 3: Configurar el piloto de Microsoft Defender para Office 365
 

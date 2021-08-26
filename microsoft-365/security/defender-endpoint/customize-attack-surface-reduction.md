@@ -8,18 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 68b322c3ddea8a1f361adc81226c20b6e7febada7f3c1b59662523fc729a2574
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bfdfd2badce75294376d6406ba3d3078f26a9857
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874092"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533080"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personalizar las reglas de la reducción de superficie expuesta a ataques
 
@@ -56,7 +56,7 @@ Por ejemplo, considere la regla de ransomware:
 
 La regla ransomware está diseñada para ayudar a los clientes empresariales a reducir los riesgos de ataques de ransomware al mismo tiempo que garantiza la continuidad del negocio. De forma predeterminada, los errores de la regla ransomware en el lado de la precaución y proteger contra archivos que aún no han alcanzado suficiente reputación y confianza. To reemphasize, the ransomware rule only triggers on files that have not gained enough positive reputation and prevalence, based on usage metrics of millions of our customers. Normalmente, los bloques se resuelven automáticamente, ya que los valores de "reputación y confianza" de cada archivo se actualizan incrementalmente a medida que aumenta el uso no problemático.
 
-En los casos en los que los bloques no  se resuelven automáticamente de forma oportuna, los clientes pueden , bajo su propio riesgo, usar el mecanismo de autoservicio o una funcionalidad de "lista de permitidos" basada en indicador de compromiso (IOC) para desbloquear los propios archivos.  
+En los casos en los que los bloques no  se resuelven automáticamente de forma oportuna, los clientes pueden , bajo su propio riesgo, usar el mecanismo de autoservicio o una funcionalidad de "lista de permitidos" basada en indicador de compromiso (IOC) para desbloquear los propios archivos.
 
 > [!WARNING]
 > Excluir o desbloquear archivos o carpetas podría permitir potencialmente que los archivos no seguros se ejecuten e infecten los dispositivos. Excluir archivos o carpetas puede reducir considerablemente la protección proporcionada por las reglas de reducción de la superficie expuesta a ataques. Los archivos que se habrían bloqueado por una regla podrán ejecutarse y no se registrará ningún informe o evento.
@@ -68,24 +68,29 @@ Solo se aplica una exclusión cuando se inicia la aplicación o servicio excluid
 La reducción de superficie de ataque admite variables de entorno y caracteres comodín. Para obtener información acerca del uso de caracteres comodín, vea usar caracteres comodín en las listas de exclusión de extensión o ruta de acceso de [carpeta y nombre de archivo.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
 Si tiene problemas con las reglas que detectan archivos que cree que no deben detectarse, use el modo de auditoría [para probar la regla](evaluate-attack-surface-reduction.md).
 
-| Descripción de la regla | GUID |
-|:----|:----|
-| Bloquear el uso indebido de controladores firmados vulnerables explotados | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
-| Impedir que Adobe Reader cree procesos secundarios | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| Bloquear todas Office aplicaciones de creación de procesos secundarios | `d4f940ab-401b-4efc-aadc-ad5f3c50688a` |
-| Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
-| Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web | `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550` |
-| Bloquear la ejecución de archivos ejecutables a menos que cumplan con criterios de prevalencia, antigüedad o lista de confianza | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
-| Bloquear la ejecución de scripts potencialmente ofuscados | `5beb7efe-fd9a-4556-801d-275e5ffc04cc` |
-| Impedir que JavaScript o VBScript inicien contenido ejecutable descargado | `d3e037e1-3eb8-44c8-a917-57927947596d` |
-| Bloquear Office aplicaciones de creación de contenido ejecutable | `3b576869-a4ec-4529-8536-b80a7769e899` |
-| Bloquear Office aplicaciones para que no inyecten código en otros procesos | `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84` |
-| Bloquear Office aplicaciones de comunicación para que no creen procesos secundarios | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
-| Bloquear la persistencia a través de la suscripción de eventos WMI | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
-| Bloquear creaciones de proceso que se originen en comandos PSExec y WMI | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
-| Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| Bloquear llamadas a la API de Win32 desde Office macro | `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b` |
-| Usar protección avanzada contra ransomware | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
+<br>
+
+****
+
+|Descripción de la regla|GUID|
+|---|---|
+|Bloquear el uso indebido de controladores firmados vulnerables explotados|`56a863a9-875e-4185-98a7-b882c64b5ce5`|
+|Impedir que Adobe Reader cree procesos secundarios|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|
+|Bloquear todas Office aplicaciones de creación de procesos secundarios|`d4f940ab-401b-4efc-aadc-ad5f3c50688a`|
+|Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
+|Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web|`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`|
+|Bloquear la ejecución de archivos ejecutables a menos que cumplan con criterios de prevalencia, antigüedad o lista de confianza|`01443614-cd74-433a-b99e-2ecdc07bfc25`|
+|Bloquear la ejecución de scripts potencialmente ofuscados|`5beb7efe-fd9a-4556-801d-275e5ffc04cc`|
+|Impedir que JavaScript o VBScript inicien contenido ejecutable descargado|`d3e037e1-3eb8-44c8-a917-57927947596d`|
+|Bloquear Office aplicaciones de creación de contenido ejecutable|`3b576869-a4ec-4529-8536-b80a7769e899`|
+|Bloquear Office aplicaciones para que no inyecten código en otros procesos|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
+|Bloquear Office aplicaciones de comunicación para que no creen procesos secundarios|`26190899-1602-49e8-8b27-eb1d0a1ce869`|
+|Bloquear la persistencia a través de la suscripción de eventos WMI|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|
+|Bloquear creaciones de proceso que se originen en comandos PSExec y WMI|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|
+|Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|
+|Bloquear llamadas a la API de Win32 desde Office macro|`92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`|
+|Usar protección avanzada contra ransomware|`c1db55ab-c21a-4637-bb3f-a12568109d35`|
+|
 
 Consulta el tema [de reducción de](attack-surface-reduction.md) superficie de ataque para obtener más información sobre cada regla.
 
@@ -95,7 +100,7 @@ Consulta el tema [de reducción de](attack-surface-reduction.md) superficie de a
 
 2. En el **Editor de administración de directivas de** grupo, vaya a Configuración del equipo **y** haga clic en **Plantillas administrativas.**
 
-3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender**  >    >  **Protección contra vulnerabilidades de seguridad de Microsoft Defender**  >  **reducción de superficie de ataque**.
+3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** \>  \> **Protección contra vulnerabilidades de seguridad de Microsoft Defender** \> **reducción de superficie de ataque**.
 
 4. Haga doble clic en la **configuración Excluir archivos y rutas** de acceso de las reglas de reducción de superficie de ataque y establezca la opción en **Habilitado**. Seleccione **Mostrar** e introduzca cada archivo o carpeta en la **columna Nombre de** valor. Escriba **0 en** la **columna Valor** de cada elemento.
 

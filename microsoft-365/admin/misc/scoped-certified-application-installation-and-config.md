@@ -16,12 +16,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: 0bac2a0c12c1997627da77419a7b47d6cd4c74cb
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: f5c562122fafcbb05115519d7841800be3e71a73
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508599"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531664"
 ---
 # <a name="scoped-certified-application-installation-and-configuration-guide"></a>Guía de instalación y configuración de aplicaciones certificadas con ámbito
 
@@ -162,9 +162,9 @@ Algunos requisitos previos son necesarios para configurar la Microsoft 365 la in
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image8.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
-### <a name="optional-whitelist-the-services-ips-of-microsoft-365-support-integration"></a>\[Lista blanca opcional de ips del servicio de Microsoft 365 \] integración de compatibilidad
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[Opcional Permitir ips del servicio de \] Microsoft 365 integración de soporte técnico
 
-Si su empresa limita el acceso a Internet con sus propias directivas, habilite el acceso de red para el servicio de Microsoft 365 admitir la integración mediante la lista blanca de las direcciones IP siguientes para el acceso a la API entrante y saliente.
+Si su empresa limita el acceso a Internet con sus propias directivas, habilite el acceso de red para el servicio de Microsoft 365 admitir la integración al permitir las direcciones IP siguientes para el acceso a la API entrante y saliente.
 
 - 52.149.152.32
 
@@ -224,13 +224,13 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
 - Seleccione el usuario de integración creado en [requisitos previos (autenticación básica)](#prerequisites-basic-authentication) paso \# 4 y seleccione **Siguiente**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
+:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
 7. \[La persona que es administrador de ServiceNow \] Configure up Repository ID.
 
 Especifique el identificador del repositorio y, a continuación, **seleccione Siguiente**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
+:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
 8. \[La persona que es administrador de ServiceNow \] Configurar la configuración de la aplicación.
 
@@ -411,9 +411,9 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image26.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
-### <a name="optional-whitelist-the-services-ips-of-microsoft-365-support-integration"></a>\[Lista blanca opcional de ips del servicio de Microsoft 365 \] integración de compatibilidad
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[Opcional Permitir ips del servicio de \] Microsoft 365 integración de soporte técnico
 
-Si su empresa limita el acceso a Internet con sus propias directivas, habilite el acceso de red para el servicio de Microsoft 365 admitir la integración mediante la lista blanca de estas direcciones IP para el acceso a la API entrante y saliente:
+Si su empresa limita el acceso a Internet con sus propias directivas, habilite el acceso de red para el servicio de Microsoft 365 admitir la integración al permitir estas direcciones IP para el acceso a la API entrante y saliente:
 
 - 52.149.152.32
 
@@ -473,7 +473,7 @@ Seleccione Perfil de OAuth para proveedor de OAuth saliente creado [en Requisito
 
     1. Introduzca el identificador de cliente de la aplicación que se creó en el paso 3 [requisitos previos (token de OAuth de AAD)](#prerequisites-aad-oauth-token) \# y seleccione **Siguiente**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image29.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 7. \[La persona que es administrador de ServiceNow \] Configure el id. de repositorio.
 
@@ -499,7 +499,7 @@ Seleccione Perfil de OAuth para proveedor de OAuth saliente creado [en Requisito
 
     1. Compruebe la siguiente información para asegurarse de que es correcta.
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image30.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
     1. Vaya a Microsoft 365 [Portal de administración Configuración](https://admin.microsoft.com)  >    >  **Configuración**  >  **perfiles de la organización**.
 
