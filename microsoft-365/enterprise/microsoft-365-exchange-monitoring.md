@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Usar supervisión de Exchange Online para obtener información sobre avisos o incidentes de correo electrónico en Microsoft 365.
-ms.openlocfilehash: e3d0761cffdf9cffdf044476a2e29cef00e77d09
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 4de4104f3112126b20d51fb6fcf0616cd413b884
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503020"
+ms.locfileid: "58506447"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Supervisión de Exchange Online para Microsoft 365
 
@@ -30,9 +30,9 @@ Puede usar la supervisión de Exchange Online en el Centro de administración de
 - **Infraestructura de terceros**: se detecta un problema en una infraestructura de terceros en la que la organización tiene una dependencia y necesita una acción de su organización para su resolución. Por ejemplo, las transacciones de autenticación de usuario se limitan con un proveedor de servicio de token de seguridad (STS) de terceros que impide que los usuarios se conecten a Exchange Online.
 - **Infraestructura del cliente**: se detecta un problema en la infraestructura de la organización y requiere una acción de su organización para su resolución. Por ejemplo, los usuarios no pueden acceder a Exchange Online porque no pueden obtener un token de autenticación de un proveedor de STS hospedado por la organización debido a un certificado caducado.
 
-Este es un ejemplo de la página **Estado del servicio** en el Centro de administración de Microsoft 365, disponible en **Estado > Estado del servicio** para escenarios de la organización.
+Este es un ejemplo de la página **Estado del servicio** en el Centro de administración de Microsoft 365, disponible en Health > **Servicio > Estado del servicio** para escenarios de la organización.
 
-**Los problemas de la organización** se identificarán y usarán en la supervisión de nivel organizativo.
+**los problemas de la organización** se identificarán y usarán en la supervisión de nivel organizativo.
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text="La página de Estado del servicio en el Centro de administración de Microsoft 365":::
 
@@ -44,13 +44,13 @@ Este es un ejemplo de la página de supervisión de Exchange Online en el Centro
 
 :::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png" alt-text="La página de supervisión de Exchange Online en el Centro de administración de Microsoft 365":::
 
-Con la página de supervisión de **Exchange Online**, puede ver si el servicio de Exchange Online está en buen estado o no y si hay incidentes o avisos asociados. Con la supervisión de Exchange Online, puede observar el estado del servicio para escenarios de correo electrónico específicos y ver señales casi en tiempo real para determinar el impacto por escenario de nivel de organización.
+Con la página de supervisión de **Exchange Online**, puede ver si el servicio de Exchange Online está en buen estado o no y si hay incidentes o avisos asociados. Con la supervisión de Exchange Online, puede observar el estado del servicio para escenarios de correo electrónico específicos y ver señales casi en tiempo real para determinar el impacto por escenario a nivel de organización.
 
 ## <a name="requirements"></a>Requisitos
 
 Esta vista previa está habilitada para los clientes que cumplan estos requisitos: 
 
-- Su organización necesita tener al menos 5 000 licencias de uno o varios de estos productos: Office 365 E3, Microsoft 365 E3, Office 365 E5 o Microsoft 365 E5.
+- Su organización necesita tener al menos 5000 licencias de uno o varios de estos productos: Office 365 E3, Microsoft 365 E3, Office 365 E5 o Microsoft 365 E5.
 
   Por ejemplo, su organización podría tener 3000 licencias de Office 365 E3 y 2500 de Microsoft 365 E5, con un total de 5500 licencias de productos aptos.
 
@@ -76,13 +76,13 @@ Con la supervisión de Exchange Online se admiten los siguientes escenarios:
    >[!Note]
    > El recuento de usuarios activos se mide por una única actividad, por ejemplo, cuando un usuario lee un correo electrónico. Solo se tienen en cuenta los últimos 30 minutos de actividad.
 
-- **Aplicar conectividad**: la conectividad estimada se basa en el porcentaje de conexiones sintéticas correctas entre los dispositivos de la organización y Exchange Online, y puede incluir problemas fuera del control de Microsoft. 
-
-- **Flujo de correo**: el número de mensajes entregados correctamente a un buzón sin retraso desde que el mensaje llegó a la red Microsoft 365.
+- **Conectividad de aplicaciones**: la conectividad estimada se basa en el porcentaje de conexiones sintéticas correctas entre los dispositivos de la organización y Exchange Online, y puede incluir problemas fuera del control de Microsoft. 
 
 - **Autenticación básica y autenticación moderna**: número de usuarios validados correctamente en el servicio de Exchange Online.
 
-![Un ejemplo de supervisión del estado de Exchange para la entrega de correo](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+- **Flujo de correo**: el número de mensajes entregados correctamente a un buzón sin retraso desde que el mensaje llegó a la red Microsoft 365.
+
+  ![Un ejemplo de supervisión del estado de Exchange para la entrega de correo](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
 Para todos estos escenarios, los números clave son para los últimos 30 minutos en el panel principal. Las vistas detalladas de cada uno de estos escenarios muestran la tendencia en tiempo casi real durante siete días con un agregado de 30 minutos en comparación con la semana anterior.
 
@@ -108,7 +108,7 @@ Después, asegúrese de que cumple los siguientes requisitos:
 
 - Su organización necesita tener al menos 50 usuarios activos de Exchange Online mensuales.
 
-Si el número de licencias de la organización es inferior a 5 000 usuarios y los usuarios activos mensuales son menos de 50, no se habilitará la supervisión de Exchange Online hasta que se cumplan estos requisitos.
+Si el número de licencias de la organización es inferior a 5000 usuarios y los usuarios activos mensuales son menos de 50, no se habilitará la supervisión de Exchange Online hasta que se cumplan estos requisitos.
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. El número de usuarios activos en el panel de control de cada cliente parece ser bajo. Tenemos muchas licencias activas asignadas a los usuarios. ¿Qué significa esto?
 

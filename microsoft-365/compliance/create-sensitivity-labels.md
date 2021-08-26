@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Information Protection: crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: 63a798d0656fbbdd0bd78cf47974befa3dad7b42d2413a98486504f6c5cf3e96
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4b37aeecabdeaef3afebb7144330a5c9df811729
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851483"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508123"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -101,7 +101,7 @@ Por ejemplo:
 
 - Use el parámetro *LocaleSettings* para las implementaciones multinacionales para que los usuarios vean el nombre de la etiqueta y la información sobre herramientas en su idioma local. En la [siguiente sección](#example-configuration-to-configure-a-sensitivity-label-for-different-languages), se muestra una configuración de ejemplo que especifica el nombre de la etiqueta y el texto de información sobre herramientas para francés, italiano y alemán.
 
-- Solo en el caso del cliente de etiquetado unificado de Azure Information Protection, puede especificar [configuración avanzada](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) que incluya la configuración de un color de etiqueta, y aplicar una propiedad personalizada cuando se aplique una etiqueta. Para obtener la lista completa, consulte [Configuración avanzada disponible para las etiquetas ](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) de la guía de administrador de este cliente.
+- El cliente de etiquetado unificado de Azure Information Protection admite una amplia lista de [configuraciones avanzadas](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) que incluyen la configuración de un color de etiqueta y la aplicación de una propiedad personalizada cuando se aplica una etiqueta. Para obtener la lista completa, consulte [Configuración avanzada disponible para las etiquetas ](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) de la guía de administrador de este cliente.
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Ejemplo de configuración para configurar una etiqueta de confidencialidad para diferentes idiomas
 
@@ -181,8 +181,12 @@ Este botón inicia el asistente para **Crear directivas**, que le permite editar
 
 Al usar etiquetas integradas para aplicaciones de Office en Windows, macOS, iOS y Android, los usuarios verán las nuevas etiquetas en un plazo de cuatro horas, y en una hora para Word, Excel y PowerPoint en la Web al actualizar el explorador. Sin embargo, permita hasta 24 horas para que los cambios se repliquen en todas las aplicaciones y servicios.
 
-> [!NOTE]
-> Otras aplicaciones y servicios que admiten etiquetas de confidencialidad pueden actualizarse con una frecuencia superior a las 24 horas con sus propios programas de actualización y desencadenadores de actualizaciones de directivas. Consulte la documentación para obtener más información. Por ejemplo, para el cliente de etiquetas unificado de Azure Information Protection, vea la fila **Actualización de la directiva** en la tabla [Comparaciones detalladas de los clientes de Azure Information Protection](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
+Otras aplicaciones y servicios que admiten etiquetas de confidencialidad pueden actualizarse con una frecuencia superior a las 24 horas con sus propios programas de actualización y desencadenadores de actualizaciones de directivas. Consulte la documentación para obtener más información. Por ejemplo, para el cliente de etiquetas unificado de Azure Information Protection, vea la fila **Actualización de la directiva** en la tabla [Comparaciones detalladas de los clientes de Azure Information Protection](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
+
+> [!TIP]
+> Recuerde tener en cuenta las dependencias de tiempo que a veces pueden retrasar que las etiquetas de confidencialidad y las directivas de etiquetas funcionen según lo esperado. Por ejemplo, rellenar un nuevo grupo y cambios de pertenencia a grupos, restricciones de ancho de banda y latencia de replicación de red, y [almacenamiento en caché de pertenencia a grupos por parte del servicio Azure Information Protection](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) para las etiquetas que aplican cifrado.
+> 
+> Con muchas dependencias externas en las que cada una tiene sus propios ciclos de tiempo, es buena idea esperar 24 horas antes de dedicar tiempo a solucionar problemas de etiquetas y directivas de etiquetas para los cambios recientes.
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Configuración adicional de las directivas de etiquetas con PowerShell del Centro de seguridad y cumplimiento
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información acerca de los registros para que pueda implementar la solución de administración de registros en Microsoft 365.
-ms.openlocfilehash: 1259065e2f2fb3e2ee3ad09405e365df7fd98767
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: be85632bb4b85231f3a95680c960846fa245d97a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356329"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506531"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usar el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive
 
@@ -102,7 +102,7 @@ Para obtener más información sobre la Biblioteca de suspensión para conservac
 
 Las acciones para bloquear y desbloquear registros se registran en el registro de auditoría. Desde **Actividad de archivos y páginas**, seleccione **Estado de registro cambiado a bloqueado** y **Estado de registro cambiado a**.
 
-Para obtener más información sobre cómo buscar estos eventos, vea [Buscar en el registro de auditoría del Centro de Seguridad y Cumplimiento](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+Para obtener más información sobre cómo buscar estos eventos, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
