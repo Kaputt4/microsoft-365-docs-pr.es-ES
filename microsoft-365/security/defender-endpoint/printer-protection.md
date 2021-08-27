@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 03bae05ba35b8ee332fbbb1083aa4a5763fc1cf4
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: d1a0b8af6dbf725623986582f5ee8e0b3912f0b5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507727"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561295"
 ---
 # <a name="device-control-printer-protection"></a>Protección de la impresora de control de dispositivo
 
@@ -64,7 +64,7 @@ Puedes implementar la directiva a través de la directiva de grupo o Intune.
 
 ****
 
-|Título|Descripción|Compatibilidad con CSP | Compatibilidad con GPO | Soporte técnico basado en usuarios | Compatibilidad basada en máquina |
+|Título|Description|Compatibilidad con CSP | Compatibilidad con GPO | Soporte técnico basado en usuarios | Compatibilidad basada en máquina |
 |---|---|:---:|:---:|:---:|:---:|
 |**Habilitar restricciones de impresión del control de dispositivos**|Bloquear la impresión de personas a través de impresoras no corporativas|Sí|Sí|Sí|Sí|
 |**Lista de dispositivos de impresión conectados a USB aprobados**\*|Permitir una impresora USB específica|Sí|Sí|Sí|Sí|
@@ -88,7 +88,7 @@ En Intune, actualmente Device Control Printer Protection solo admite OMA-URI.
 
 La cadena de compatibilidad de CSP con `<enabled/>` :
 
-:::image type="content" source="../../media/customeditrow.png" alt-text="fila de edición personalizada":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="fila de edición personalizada.":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>Escenario 2: Permitir impresoras USB aprobadas específicas con Intune
 
@@ -102,7 +102,7 @@ La cadena de compatibilidad de CSP con `<enabled/>` :
 
 La cadena de compatibilidad de CSP con impresoras USB aprobadas a través de la propiedad "ApprovedUsbPrintDevices", por `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">` ejemplo:
 
-:::image type="content" source="../../media/editrow.png" alt-text="editar fila":::
+:::image type="content" source="../../media/editrow.png" alt-text="editar fila.":::
 
 ## <a name="deploy-policy-via-group-policy"></a>Implementar la directiva a través de la directiva de grupo
 
@@ -118,7 +118,7 @@ Si el dispositivo no está unido a Intune, también puedes implementar la direct
 
   Configuración de usuario \> Plantillas administrativas \> Impresoras del panel de \> control: Habilitar restricciones de impresión del control de dispositivos
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="habilitar restricciones de impresión de dispositivos":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="habilitar las restricciones de impresión de dispositivos.":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>Escenario 2: Permitir impresoras USB aprobadas específicas con la directiva de grupo
 
@@ -130,7 +130,7 @@ Si el dispositivo no está unido a Intune, también puedes implementar la direct
 
   Impresoras de panel de control de plantillas administrativas de configuración \> \> de \> usuario: lista de dispositivos de impresión conectados a USB aprobados
 
-:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="lista de dispositivos de impresión conectados usb aprobados":::
+:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="lista de dispositivos de impresión conectados usb aprobados.":::
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Ver datos de protección de impresoras de control de dispositivos en Microsoft Defender para el portal de puntos de conexión
 
@@ -148,7 +148,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="búsqueda avanzada":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="búsqueda avanzada.":::
  
  Puede usar el evento PnP para buscar la impresora USB usada en la organización:
  

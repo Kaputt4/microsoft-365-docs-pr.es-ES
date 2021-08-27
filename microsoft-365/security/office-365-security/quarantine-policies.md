@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con sus mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 581b465ddc8197e2f029b149c57d5d83aacf7a15
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: b35a53973c64447fe01b3657969cc7289165538d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533476"
+ms.locfileid: "58561223"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -49,10 +49,10 @@ Los permisos individuales disponibles y lo que se incluye o no en los grupos de 
 
 |Permiso|Sin acceso|Acceso limitado|Acceso completo|
 |---|:---:|:---:|:---:|
-|**Bloquear remitente** (_PermissionToBlockSender_)||![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|**Delete** (_PermissionToDelete_)||![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|**Vista** previa (_PermissionToPreview_)||![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|**Permitir que los destinatarios liberen un mensaje de cuarentena** (_PermissionToRelease_)|||![Marca de verificación](../../media/checkmark.png)|
+|**Bloquear remitente** (_PermissionToBlockSender_)||![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|**Vista** previa (_PermissionToPreview_)||![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|**Permitir que los destinatarios liberen un mensaje de cuarentena** (_PermissionToRelease_)|||![Marca de verificación.](../../media/checkmark.png)|
 |**Permitir que los destinatarios soliciten la puesta en** cuarentena de un mensaje (_PermissionToRequestRelease_)||![Marca de verificación](../../media/checkmark.png)||
 |
 
@@ -82,7 +82,7 @@ Puede crear y asignar directivas de cuarentena en el portal de Microsoft 365 Def
 
 1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** sección Directivas de amenazas Sección Directivas de cuarentena y, a continuación, \>  \>  \>  seleccione Directivas **de cuarentena**.
 
-2. En la **página Directiva de** cuarentena, haga clic en Agregar icono de directiva personalizada Agregar directiva ![ ](../../media/m365-cc-sc-create-icon.png) **personalizada.**
+2. En la **página Directiva de** cuarentena, haga clic en Agregar icono de directiva ![ personalizada.](../../media/m365-cc-sc-create-icon.png) **Agregar directiva personalizada**.
 
 3. Se **abrirá el Asistente para nueva** directiva. En la **página Nombre de** directiva, escriba un nombre breve pero único en el cuadro Nombre **de** directiva. Deberá identificar y seleccionar la directiva de cuarentena por su nombre en los próximos pasos. Cuando termine, haga clic en **Siguiente**.
 
@@ -253,7 +253,7 @@ Si está satisfecho con los permisos predeterminados del usuario final proporcio
 
    **Nota:** Al crear una nueva directiva, se usa un valor de directiva de cuarentena **Select** en blanco que indica la directiva de cuarentena predeterminada para ese veredicto. Cuando más adelante edite la directiva, los valores en blanco se reemplazan por los nombres de directiva de cuarentena predeterminados reales, como se describe en la tabla anterior.
 
-   ![Selecciones de directivas de cuarentena en una directiva contra correo no deseado](../../media/quarantine-tags-in-anti-spam-policies.png)
+   ![Selecciones de directiva de cuarentena en una directiva contra correo no deseado.](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 Las instrucciones completas para crear y modificar directivas contra correo no deseado se describen en [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
@@ -333,7 +333,7 @@ La inteligencia de suplantación está disponible en EOP y Defender para Office 
 
    **Nota:** Al crear una nueva directiva, se usa un valor de directiva de cuarentena **Apply** en blanco que indica la directiva de cuarentena predeterminada para esa acción. Cuando más adelante edite la directiva, los valores en blanco se reemplazan por los nombres de directiva de cuarentena predeterminados reales, como se describe en la tabla anterior.
 
-   ![Selecciones de directivas de cuarentena en una directiva contra correo no deseado](../../media/quarantine-tags-in-anti-phishing-policies.png)
+   ![Selecciones de directiva de cuarentena en una directiva contra correo no deseado.](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
 Las instrucciones completas para crear y modificar las policías contra suplantación de identidad están disponibles en los siguientes temas:
 
@@ -519,7 +519,7 @@ La configuración global de las directivas de cuarentena permite personalizar la
 
      La siguiente captura de pantalla muestra el nombre para mostrar personalizado en una notificación de correo no deseado del usuario final:
 
-     ![Un nombre para mostrar del remitente personalizado en una notificación de correo no deseado del usuario final](../../media/quarantine-tags-esn-customization-display-name.png)
+     ![Un nombre para mostrar del remitente personalizado en una notificación de correo no deseado del usuario final.](../../media/quarantine-tags-esn-customization-display-name.png)
 
    - **Aviso** de declinación de responsabilidades: agregue un aviso de declinación de responsabilidades personalizado a la parte inferior de las notificaciones de correo no deseado del usuario final. El texto localizado, **Un aviso de declinación de responsabilidades de su organización:** siempre se incluye primero, seguido del texto que especifique.
 
@@ -527,19 +527,19 @@ La configuración global de las directivas de cuarentena permite personalizar la
 
      La siguiente captura de pantalla muestra el aviso de declinación de responsabilidades personalizado en una notificación de correo no deseado del usuario final:
 
-     ![Un aviso de declinación de responsabilidades personalizado en la parte inferior de una notificación de correo no deseado para el usuario final](../../media/quarantine-tags-esn-customization-disclaimer.png)
+     ![Una declinación de responsabilidades personalizada en la parte inferior de una notificación de correo no deseado del usuario final.](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
    - **Elegir idioma:** las notificaciones de correo no deseado del usuario final ya están localizadas en función de la configuración de idioma del destinatario. Puede especificar texto personalizado en diferentes idiomas para los valores **Nombre para mostrar** y **Declinación de** responsabilidades.
 
      Seleccione al menos un idioma en el primer cuadro de idioma y, a continuación, haga clic **en Agregar**. Puede seleccionar varios idiomas haciendo clic **en Agregar** después de cada uno. Un cuadro de idioma de sección muestra todos los idiomas que ha seleccionado:
 
-     ![Idiomas seleccionados en el segundo cuadro de idioma de la configuración de notificación de cuarentena global de directivas de cuarentena](../../media/quarantine-tags-esn-customization-selected-languages.png)
+     ![Idiomas seleccionados en el segundo cuadro de idioma de la configuración de notificación de cuarentena global de las directivas de cuarentena.](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
    - **Usar el logotipo de mi** empresa: seleccione esta opción para reemplazar el logotipo predeterminado de Microsoft que se usa en la parte superior de las notificaciones de correo no deseado del usuario final. Antes de hacerlo, debes seguir las instrucciones de Personalizar el [tema Microsoft 365 de](../../admin/setup/customize-your-organization-theme.md) la organización para cargar el logotipo personalizado.
 
      La siguiente captura de pantalla muestra un logotipo personalizado en una notificación de correo no deseado del usuario final:
 
-     ![Logotipo personalizado en una notificación de correo no deseado del usuario final](../../media/quarantine-tags-esn-customization-logo.png)
+     ![Logotipo personalizado en una notificación de correo no deseado del usuario final.](../../media/quarantine-tags-esn-customization-logo.png)
 
    - Enviar notificación de correo no deseado del usuario final **cada (días):** seleccione la frecuencia con la que desea que la notificación del usuario final salga.
 
@@ -583,7 +583,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 2. En la **página Directivas de** cuarentena, seleccione la directiva haciendo clic en el nombre.
 
-3. Después de seleccionar la directiva, haga clic en el icono Editar directiva ![ ](../../media/m365-cc-sc-edit-icon.png) **Editar** icono de directiva que aparece.
+3. Después de seleccionar la directiva, haga clic en ![ el icono Editar directiva.](../../media/m365-cc-sc-edit-icon.png) **Editar icono de** directiva que aparece.
 
 4. El **Asistente para editar** directivas que  se abre es prácticamente idéntico al Asistente para nueva directiva, tal como se describe en la sección Crear directivas de cuarentena en la sección del portal [de Microsoft 365 Defender](#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal) anteriormente en este artículo.
 
@@ -620,7 +620,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 2. En la **página Directiva de** cuarentena, seleccione la directiva de cuarentena personalizada que desea quitar haciendo clic en el nombre.
 
-3. Después de seleccionar la directiva, haga clic en el icono Eliminar directiva ![ ](../../media/m365-cc-sc-delete-icon.png) **Eliminar** icono de directiva que aparece.
+3. Después de seleccionar la directiva, haga clic en ![ el icono Eliminar directiva.](../../media/m365-cc-sc-delete-icon.png) **Eliminar icono de** directiva que aparece.
 
 4. Haga **clic en Quitar** directiva en el cuadro de diálogo de confirmación que aparece.
 
@@ -672,14 +672,14 @@ Si la directiva de cuarentena asigna los **permisos de** acceso limitado, los us
   - **Quitar de cuarentena**
   - **Bloquear remitente**
 
-  ![Botones disponibles en los detalles del mensaje en cuarentena si la directiva de cuarentena concede al usuario permisos de acceso limitado](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+  ![Botones disponibles en los detalles del mensaje en cuarentena si la directiva de cuarentena concede al usuario permisos de acceso limitado.](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
 - **Notificaciones de correo no deseado del** usuario final: los botones siguientes están disponibles:
   - **Bloquear remitente**
   - **Versión de solicitud**
   - **Revisar**
 
-  ![Botones disponibles en la notificación de correo no deseado del usuario final si la directiva de cuarentena concede al usuario permisos de acceso limitado](../../media/quarantine-tags-esn-limited-access.png)
+  ![Botones disponibles en la notificación de correo no deseado del usuario final si la directiva de cuarentena concede al usuario permisos de acceso limitado.](../../media/quarantine-tags-esn-limited-access.png)
 
 #### <a name="full-access"></a>Acceso completo
 
@@ -692,14 +692,14 @@ Si la directiva de cuarentena asigna los **permisos de** acceso completo (todos 
   - **Quitar de cuarentena**
   - **Bloquear remitente**
 
-  ![Botones disponibles en los detalles del mensaje en cuarentena si la directiva de cuarentena concede al usuario permisos de acceso total](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+  ![Botones disponibles en los detalles del mensaje en cuarentena si la directiva de cuarentena concede al usuario permisos de acceso total.](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
 - **Notificaciones de correo no deseado del** usuario final: los botones siguientes están disponibles:
   - **Bloquear remitente**
   - **Liberar**
   - **Revisar**
 
-  ![Botones disponibles en la notificación de correo no deseado del usuario final si la directiva de cuarentena concede al usuario permisos de acceso completo](../../media/quarantine-tags-esn-full-access.png)
+  ![Botones disponibles en la notificación de correo no deseado del usuario final si la directiva de cuarentena concede al usuario permisos de acceso total.](../../media/quarantine-tags-esn-full-access.png)
 
 ### <a name="individual-permissions"></a>Permisos individuales
 

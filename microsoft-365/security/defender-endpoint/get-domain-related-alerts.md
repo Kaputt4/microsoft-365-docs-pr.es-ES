@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1511a31dfd7c86d24f3a91ceebfca65d1ce777e3
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 7712500caf2e30d6ecdb8146ecfa4173e087f154
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365074"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611152"
 ---
 # <a name="get-domain-related-alerts-api"></a>Obtener api de alertas relacionadas con el dominio
 
@@ -37,43 +37,43 @@ ms.locfileid: "58365074"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>Descripción de la API
+
 Recupera una colección de [alertas relacionadas](alerts.md) con una dirección de dominio determinada.
 
-
 ## <a name="limitations"></a>Limitaciones
+
 1. Puede consultar las alertas actualizadas por última vez de acuerdo con el período de retención configurado.
 2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
-
 
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |   Alert.Read.All |    'Leer todas las alertas'
-Aplicación |   Alert.ReadWrite.All |   'Leer y escribir todas las alertas'
-Delegado (cuenta profesional o educativa) | Alert.Read | 'Leer alertas'
-Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir alertas'
+Aplicación|Alert.Read.All|'Leer todas las alertas'
+Aplicación|Alert.ReadWrite.All|'Leer y escribir todas las alertas'
+Delegado (cuenta profesional o educativa)|Alert.Read|'Leer alertas'
+Delegado (cuenta profesional o educativa)|Alert.ReadWrite|'Leer y escribir alertas'
 
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
 > - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
->- La respuesta incluirá solo alertas, asociadas con dispositivos, a las que el usuario tiene acceso, según la configuración del grupo de dispositivos (vea [Crear y](machine-groups.md) administrar grupos de dispositivos para obtener más información)
+> - La respuesta incluirá solo alertas, asociadas con dispositivos, a las que el usuario tiene acceso, según la configuración del grupo de dispositivos (vea [Crear y](machine-groups.md) administrar grupos de dispositivos para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
+
 ```http
 GET /api/domains/{domain}/alerts
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Encabezado        | Valor  |
-|:--------------|:-------|
-| Authorization | Cadena |
+|Encabezado|Valor|
+|---|---|
+|Authorization|Cadena|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

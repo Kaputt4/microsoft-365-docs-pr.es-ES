@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Migre Windows dispositivos, Office aplicaciones cliente y Office servidores para sus Microsoft 365 inquilinos.
-ms.openlocfilehash: 9bef3b3128a43c75f5f465d22c82b0bc4431b53b7a86059dfc09ba982e4f94fd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9570a34c1c1884452ee9090ca0b7d280411e0016
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798560"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571584"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 4. Migración de su Microsoft 365 para inquilinos empresariales
 
@@ -82,7 +82,7 @@ Para la migración de su Microsoft 365 inquilino, ha determinado:
 
 Este es un ejemplo de un inquilino con una migración completada de servidores locales.
 
-![Ejemplo de un inquilino con una migración completada de servidores locales](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
+![Ejemplo de un inquilino con una migración completada de servidores locales.](../media/tenant-management-overview/tenant-management-tenant-build-step4.png)
 
 En esta ilustración, la organización tiene:
 
@@ -98,6 +98,6 @@ De forma continua, es posible que deba:
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 5. Implementar la administración de dispositivos y aplicaciones](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
+[![Paso 5. Implementar la administración de dispositivos y aplicaciones.](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
 
 Continúe con [la administración de dispositivos y aplicaciones](tenant-management-device-management.md) para implementar la administración de dispositivos y aplicaciones.

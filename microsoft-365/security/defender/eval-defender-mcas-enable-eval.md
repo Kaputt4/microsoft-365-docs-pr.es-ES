@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: efb6bcde04411b3409d3076d09251423d436265c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1b5e664e6675b477ecb2507fd52588aa159bcc9b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58252146"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571800"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>Habilitar el entorno de evaluación para Microsoft Cloud App Security
 
@@ -47,7 +47,7 @@ En este artículo se incluyen instrucciones para ambos métodos.
 
 Siga estos pasos para configurar Microsoft Cloud App Security.
 
-![Pasos para habilitar Microsoft Microsoft Cloud App Security en el entorno de evaluación de Microsoft Defender](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
+![Pasos para habilitar Microsoft Microsoft Cloud App Security en el entorno de evaluación de Microsoft Defender.](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
 
 - [Paso 1. Conectar al portal de Cloud App Security web](#step-1-connect-to-the-cloud-app-security-portal)
 - [Paso 2. Integrar con Microsoft Defender para endpoint](#step-2-integrate-with-microsoft-defender-for-endpoint)
@@ -87,7 +87,7 @@ El panel de detección de nube está diseñado para ofrecerte más información 
 
 Para empezar a usar el panel de detección en la nube, consulta [Trabajar con aplicaciones detectadas.](/cloud-app-security/discovered-apps)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Paso 3 de 3: [Piloto Microsoft Cloud App Security](eval-defender-mcas-pilot.md)
 

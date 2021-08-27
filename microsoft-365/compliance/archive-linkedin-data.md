@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores & usar un conector nativo para importar datos de una página de empresa de LinkedIn a Microsoft 365.
-ms.openlocfilehash: 950647d1795e63763631c06a949cf05843420f34a2bc451886eacc88649ddb75
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2d34a424b11c9489d54a87bfb9f81de9a74ed5e6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861029"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571500"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurar un conector para archivar datos de LinkedIn
 
@@ -48,13 +48,13 @@ Después de almacenar los datos de página de linkedin company en un buzón de c
 
    Se muestra la página de inicio de sesión de LinkedIn.
 
-   ![Página de inicio de sesión de LinkedIn](../media/LinkedInSigninPage.png)
+   ![Página de inicio de sesión de LinkedIn.](../media/LinkedInSigninPage.png)
 
 5. En la página de inicio de sesión de LinkedIn, escriba la dirección de correo electrónico (o número de teléfono) y la contraseña de la cuenta de LinkedIn asociada a la página de la empresa que desea archivar y, a continuación, haga clic en **Iniciar sesión**.
 
    Se muestra una página del asistente con una lista de todas las páginas de empresa de LinkedIn asociadas con la cuenta en la que ha iniciado sesión. Un conector solo se puede configurar para una página de empresa. Si su organización tiene varias páginas de empresa de LinkedIn, debe crear un conector para cada una.
 
-   ![Se muestra una página con una lista de páginas de empresa de LinkedIn](../media/LinkedInSelectCompanyPage.png)
+   ![Se muestra una página con una lista de páginas de empresa de LinkedIn.](../media/LinkedInSelectCompanyPage.png)
 
 6. Seleccione la página de empresa desde la que desea archivar elementos y, a continuación, haga clic en **Siguiente**.
 

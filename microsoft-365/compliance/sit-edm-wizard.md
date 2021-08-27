@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga más información sobre como utilizar el esquema de coincidencia de datos exactos y el asistente de tipo de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 082bc5e9731a7abb0a8f1d9bd9b6f2e4e4a77dd07363dd475ec350c0c983b250
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dbba5e0e63f473d12b40c902001332c1689e4d12
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895358"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572172"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Utilice el esquema de coincidencia de datos exactos y el asistente para tipos de información confidencial
 
@@ -47,7 +47,7 @@ pasos en la[Parte 1: establecer la clasificación basada en el EDM.](create-cust
 
 2. Elija **Crear esquema EDM** para abrir el flotante de configuración del asistente de esquemas.
 
-![Volante de configuración del asistente de creación de esquemas EDM](../media/edm-schema-wizard-1.png)
+![Menú desplegable de configuración del Asistente para la creación de esquemas de EDM.](../media/edm-schema-wizard-1.png)
 
 3. Rellene con un **Nombre** y una **Descripción apropiados**.
 

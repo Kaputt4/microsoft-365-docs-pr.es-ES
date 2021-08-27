@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar El analizador de configuración de cumplimiento de Microsoft para rápida ejecución con El Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: 7d7a711514e471a3d239918eaa576746a43dded02da81f8103f5c6213df20839
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9bf88a79de07accbf8487f09f642324efcbaf086
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872067"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572076"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)
 
@@ -103,17 +103,17 @@ Siga estas instrucciones para ejecutar un informe en función de una ubicación 
   | :------------- | :------------: |
   | 1 | Asia-Pacífico |
   | 2 | Australia |
-  | 3 | Canadá |
+  | 3  | Canadá |
   | 4  | Europa (excluyendo Francia) / Oriente Medio / África |
   | 5  | Francia |
   | 6  | India |
   | 7  | Japón |
   | 8  | Corea |
   | 9  | Norteamérica (excepto Canadá) |
-  | 10  | Sudamérica |
-  | 11 | Sudáfrica |
+  | 10 | Sudamérica |
+  | 11  | Sudáfrica |
   | 12  | Suiza |
-  | 13 | Emiratos Árabes Unidos |
+  | 13  | Emiratos Árabes Unidos |
   | 14  | Reino Unido |
 
 
@@ -126,7 +126,7 @@ El informe también se personalizará en función del rol.
 
 En la tabla siguiente se muestran los roles a los que tienen acceso las secciones del informe. Es posible que otros roles de la organización (no incluidos en la tabla siguiente) no puedan ejecutar la herramienta o que ejecuten la herramienta y tengan acceso limitado a la información del informe final.
 
-![MCCA: roles](../media/compliance-manager-mcca-roles.png "Roles mcca")
+![MCCA: roles.](../media/compliance-manager-mcca-roles.png "Roles mcca")
 
 Excepciones:
 1. Los usuarios no podrán generar informes para IP aparte de la sección "Usar IRM para Exchange Online".
@@ -139,7 +139,7 @@ Excepciones:
 
 La **sección Resumen de** soluciones del informe ofrece información general sobre las acciones de mejora que su organización puede llevar a cabo en el Administrador de cumplimiento para ayudar a mejorar su posición de cumplimiento.
 
-![MCCA: resumen de soluciones](../media/compliance-manager-mcca-solutions.png "Pantalla Resumen de soluciones mcca")
+![MCCA: resumen de soluciones.](../media/compliance-manager-mcca-solutions.png "Pantalla Resumen de soluciones mcca")
 
 MCCA evalúa las configuraciones actuales con respecto a las acciones de mejora recomendadas en el Administrador de cumplimiento. Cualquier acción de mejora identificada por la herramienta MCCA como que necesita atención se enumerará en esta sección.
 

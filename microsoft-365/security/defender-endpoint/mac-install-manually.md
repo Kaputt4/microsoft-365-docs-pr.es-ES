@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b7a3ae0c7dcf64792f61cb183e2bee5f34f2c1a6d7009b421ea767ef44aea06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 32da15254d011e67959c7ebeff42ab7024eb0895
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902952"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571836"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para endpoint en macOS
 
@@ -55,7 +55,7 @@ Descargue los paquetes de instalación e incorporación de Microsoft 365 Defende
 3. En la sección 2 de la página, seleccione **Descargar paquete de instalación**. Guárdelo como wdav.pkg en un directorio local.
 4. En la sección 2 de la página, seleccione **Descargar paquete de incorporación**. Guárdelo WindowsDefenderATPOnboardingPackage.zip en el mismo directorio.
 
-    ![Microsoft 365 Defender captura de pantalla del portal](images/portal-onboarding-macos.png)
+    ![Microsoft 365 Defender captura de pantalla del portal.](images/portal-onboarding-macos.png)
 
 5. Desde un símbolo del sistema, compruebe que tiene los dos archivos.
 
@@ -65,20 +65,20 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
 1. Navegue hasta el wdav.pkg descargado en Finder y ábralo.
 
-    ![Captura de pantalla de instalación de aplicaciones1](images/mdatp-28-appinstall.png)
+    ![Captura de pantalla de instalación de la aplicación1.](images/mdatp-28-appinstall.png)
 
 2. Seleccione **Continuar,** acepte los términos de licencia y escriba la contraseña cuando se le pida.
 
-    ![Captura de pantalla de instalación de la aplicación2](images/mdatp-29-appinstalllogin.png)
+    ![Captura de pantalla de instalación de la aplicación2.](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
    > Se le pedirá que permita que se instale un controlador de Microsoft (ya sea "System Extension Blocked" o "Installation is on hold" o ambos. Se debe permitir la instalación del controlador.
 
-   ![Captura de pantalla de instalación de la aplicación3](images/mdatp-30-systemextension.png)
+   ![Captura de pantalla de instalación de la aplicación3.](images/mdatp-30-systemextension.png)
 
 3. Seleccione **Abrir preferencias de seguridad** o Abrir preferencias del sistema > Seguridad & **privacidad**. Seleccione **Permitir**:
 
-    ![Captura de pantalla de la ventana seguridad y privacidad](images/mdatp-31-securityprivacysettings.png)
+    ![Captura de pantalla de la ventana seguridad y privacidad.](images/mdatp-31-securityprivacysettings.png)
 
    La instalación continúa.
 
@@ -94,27 +94,27 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
 1. Navegue hasta el wdav.pkg descargado en Finder y ábralo.
 
-    ![Captura de pantalla de instalación de la aplicación4](images/big-sur-install-1.png)
+    ![Captura de pantalla de instalación de la aplicación4.](images/big-sur-install-1.png)
 
 2. Seleccione **Continuar,** acepte los términos de licencia y escriba la contraseña cuando se le pida.
 
 3. Al final del proceso de instalación, se te promocionará para aprobar las extensiones del sistema usadas por el producto. Seleccione **Abrir preferencias de seguridad**.
 
-    ![Aprobación de extensión del sistema](images/big-sur-install-2.png)
+    ![Aprobación de extensión del sistema.](images/big-sur-install-2.png)
 
 4. En la **ventana Seguridad & privacidad,** seleccione **Permitir**.
 
-    ![Preferencias de seguridad de extensión del sistema1](images/big-sur-install-3.png)
+    ![Preferencias de seguridad de extensión del sistema1.](images/big-sur-install-3.png)
 
 5. Repita los pasos 3 & 4 para todas las extensiones del sistema distribuidas con Microsoft Defender para Endpoint en Mac.
 
 6. Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en Mac inspecciona el tráfico de sockets e informa de esta información al portal Microsoft 365 Defender punto de conexión. Cuando se le pida que conceda a Microsoft Defender permisos de extremo para filtrar el tráfico de red, seleccione **Permitir**.
 
-    ![Preferencias de seguridad de extensión del sistema2](images/big-sur-install-4.png)
+    ![Preferencias de seguridad de extensión del sistema2.](images/big-sur-install-4.png)
 
 7. Abra **System Preferences** Security & Privacidad y vaya a la pestaña Privacidad. Conceda permiso de acceso en disco completo a Atp de Microsoft Defender y Extensión de seguridad de punto de conexión de ATP de Microsoft  >   **Defender.**   
 
-    ![Acceso en disco completo](images/big-sur-install-5.png)
+    ![Acceso en disco completo.](images/big-sur-install-5.png)
 
 ## <a name="client-configuration"></a>Configuración de clientes
 
@@ -141,7 +141,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
     Después de la instalación, verás el icono de Microsoft Defender en la barra de estado de macOS en la esquina superior derecha.
 
     > [!div class="mx-imgBorder"]
-    > ![Icono de Microsoft Defender en la captura de pantalla de la barra de estado](images/mdatp-icon-bar.png)
+    > ![Icono de Microsoft Defender en la captura de pantalla de la barra de estado.](images/mdatp-icon-bar.png)
 
 ## <a name="how-to-allow-full-disk-access"></a>Cómo permitir el acceso en disco completo
 

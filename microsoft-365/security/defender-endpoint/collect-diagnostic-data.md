@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8a016ab0e73af99ce47c30b598daade864e041eb
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: a7f85d20dfa59fbe21f811d8bef30a6c21a69125
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510030"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561403"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Recopilar datos de diagnóstico antivirus de Microsoft Defender
 
@@ -98,7 +98,7 @@ Cuando se usa el parámetro SupportLogLocation, se creará una estructura de car
 
 ****
 
-|campo|Descripción|
+|campo|Description|
 |---|---|
 |path|Ruta de acceso especificada en la línea de comandos o recuperada de la configuración|
 |MMDD|Mes y día en que se recopilaron los datos de diagnóstico (por ejemplo, 0530)|
@@ -121,14 +121,15 @@ También puede especificar dónde se creará el .cab de diagnóstico mediante un
 
    ![Captura de pantalla de definición de ruta de acceso para la configuración de archivos de registro](images/GPO2-SupportLogLocationGPPage.png)
 
+    ![Captura de pantalla del editor de directivas de grupo local.](images/GPO1-SupportLogLocationDefender.png)  
+        
+     ![Captura de pantalla de definir la ruta de acceso para la configuración de los archivos de registro.](images/GPO2-SupportLogLocationGPPage.png)  
 3. Dentro del editor de directivas, seleccione **Habilitado**.
 
 4. Especifique la ruta de acceso del directorio en la que desea copiar los archivos de registro de soporte técnico en el **campo** Opciones.
-
-   ![Captura de pantalla de configuración personalizada de ruta de acceso de directorio habilitada](images/GPO3-SupportLogLocationGPPageEnabledExample.png)
-
+     ![Captura de pantalla de configuración personalizada de ruta de acceso de directorio habilitada.](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
 5. Seleccione **Aceptar** o **Aplicar**.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Solucionar problemas Antivirus de Microsoft Defender informes](troubleshoot-reporting.md)

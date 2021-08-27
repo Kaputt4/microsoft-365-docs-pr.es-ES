@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: ba929dad3fa7797db736907d085d9beb28835332ba79e3a02ce1363fdb129d4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a6285b63c67572ec363303e1d850c08d9c8e0c5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843892"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571932"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -50,7 +50,7 @@ Vea este vídeo para obtener información general del proceso.
 
 <a name="poster"></a> Para ver un resumen de una página de este escenario, consulte el [Póster de aislamiento de seguridad de Microsoft Teams](../downloads/team-security-isolation-poster.pdf).
 
-[![Póster de aislamiento de seguridad de Microsoft Teams](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+[![Póster de aislamiento de seguridad de Microsoft Teams.](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 También puede descargar este póster en los formatos [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) o [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
 

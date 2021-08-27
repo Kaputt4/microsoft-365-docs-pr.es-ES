@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 07/22/2021
-ms.openlocfilehash: c2fafe62c5fecbc1e7ed9f7e622daf6a1b6c7faa
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 6063aed4fcbd215e4acfcc1e265df5775c3105b7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510054"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561391"
 ---
 # <a name="cloud-delivered-protection-antivirus-sample-submission"></a>Envío de ejemplo de antivirus de protección entregado en la nube
 
@@ -95,15 +95,15 @@ Defender for Endpoint antivirus and cloud protection bloquea automáticamente la
 
 _Figura 1: Ejemplos de metadatos enviados a Microsoft Defender Cloud Protection:_
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figura 1. Ejemplos de metadatos enviados a Microsoft Defender Cloud Protection":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figura 1. Ejemplos de metadatos enviados a Microsoft Defender Cloud Protection.":::
 
 _Figura 2. Flujo de protección entregado en la nube:_
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="Figura 2. Flujo de protección entregado en la nube":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="Figura 2. Flujo de protección entregado en la nube.":::
 
 _Figura 3. Protección entregada en la nube y aprendizaje automático en capas:_
 
-:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="Figura 3. Protección entregada en la nube y aprendizaje automático en capas":::
+:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="Figura 3. Protección entregada en la nube y aprendizaje automático en capas.":::
 
 > [!NOTE]
 >

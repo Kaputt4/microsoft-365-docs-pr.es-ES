@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c4a8fa37ab1fcce73961d9f8f1b349cc96f94498db36a71e238c9a2aeff914a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bbb0cfe262687a22277dda99f47690a4932d8abc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880346"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561475"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigar actividades de administración de riesgos de insider
 
@@ -31,7 +31,7 @@ Después de configurar los indicadores en  la página de administración de ries
 
 Después de examinar las actividades de un usuario, los investigadores pueden descartar actividades individuales como benignas, compartir o enviar por correo electrónico un vínculo al informe con otros investigadores, o elegir asignar al usuario de forma temporal o explícita a una directiva de administración de riesgos de insider. Los usuarios deben estar asignados al grupo de *roles Investigadores* de administración de riesgos de Insider para ver la **página Informes de actividad de** usuario.  
 
-![Información general sobre la actividad del usuario de administración de riesgos de Insider](../media/insider-risk-user-activity-report-overview.png)
+![Información general sobre el informe de actividad del usuario de administración de riesgos de Insider.](../media/insider-risk-user-activity-report-overview.png)
 
 Para empezar, seleccione Administrar **informes**  en la sección Investigar actividad del usuario en la página Información general sobre la administración de riesgos **de** insider. Para ver las actividades de un usuario, seleccione primero **Crear informe** de actividad de usuario y complete los siguientes campos en el panel Nuevo informe de **actividad de** usuario:
 
@@ -40,7 +40,7 @@ Para empezar, seleccione Administrar **informes**  en la sección Investigar act
 - **Fecha de finalización:** use el control de calendario para seleccionar la fecha de finalización de las actividades del usuario. La fecha de finalización seleccionada debe ser mayor que dos días después de la fecha de inicio seleccionada y no más de 90 días a partir de la fecha de inicio seleccionada.
 Los nuevos informes suelen tardar hasta 10 horas antes de que estén listos para su revisión. Cuando el informe esté listo, verá Informe  *listo* en la columna Estado de la página Informe de actividad de usuario. Seleccione el usuario para ver el informe detallado:
 
-![Informe de actividad de usuario de administración de riesgos de Insider](../media/insider-risk-user-activity-report.png)
+![Informe de actividad de usuario de administración de riesgos de Insider.](../media/insider-risk-user-activity-report.png)
 
 El **informe de actividad de usuario** del usuario seleccionado contiene las pestañas Actividad **de** usuario y Explorador **de** actividades:
 
@@ -62,7 +62,7 @@ El panel de alertas de riesgo **interno** le permite ver y actuar en las alertas
   - Tiempo medio para resolver alertas de gravedad media, expresado en horas, días o meses.
   - Tiempo medio para resolver alertas de gravedad baja, expresado en horas, días o meses.
 
-![Panel de alertas de administración de riesgos de Insider](../media/insider-risk-alerts-dashboard.png)
+![Panel de alertas de administración de riesgos insider.](../media/insider-risk-alerts-dashboard.png)
 
 > [!NOTE]
 > La administración de riesgos internos usa la limitación de alertas integrada para ayudar a proteger y optimizar su investigación de riesgos y experiencia de revisión. Esta limitación protege contra problemas que pueden causar una sobrecarga de alertas de directiva, como conectores de datos mal configurados o directivas DLP. Como resultado, es posible que haya un retraso al mostrar nuevas alertas para un usuario.
@@ -134,7 +134,7 @@ Para realizar una evaluación de una alerta de riesgo insider, siga estos pasos:
 
 El explorador de actividades proporciona a los investigadores y analistas de riesgos una herramienta de análisis completa que proporciona información detallada sobre las alertas. Con el explorador de actividades, los revisores pueden revisar rápidamente una escala de tiempo de actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas con alertas. Para filtrar alertas en el Explorador de actividades, seleccione el control Filtro. Puede filtrar las alertas por uno o varios atributos enumerados en el panel de detalles de la alerta. El explorador de actividades también admite columnas personalizables para ayudar a los investigadores y analistas a centrar el panel en la información más importante para ellos.
 
-![Introducción al explorador de actividades de administración de riesgos de Insider](../media/insider-risk-activity-explorer.png)
+![Introducción al explorador de actividades de administración de riesgos de Insider.](../media/insider-risk-activity-explorer.png)
 
 Para usar el **explorador de actividades,** siga estos pasos:
 
@@ -145,7 +145,7 @@ Para usar el **explorador de actividades,** siga estos pasos:
 
 Al revisar las actividades en el explorador de actividades, los investigadores y analistas pueden seleccionar una actividad específica y abrir el panel de detalles de la actividad. El panel muestra información detallada sobre la actividad que los investigadores y analistas pueden usar durante el proceso de evaluación de alertas. La información detallada puede proporcionar contexto para la alerta y ayudar a identificar el ámbito completo de la actividad de riesgo que desencadenó la alerta.
 
-![Detalles del explorador de actividades de administración de riesgos de Insider](../media/insider-risk-activity-explorer-details.png)
+![Detalles del explorador de actividades de administración de riesgos de Insider.](../media/insider-risk-activity-explorer-details.png)
 
 ## <a name="create-a-case-for-an-alert"></a>Crear un caso para una alerta
 

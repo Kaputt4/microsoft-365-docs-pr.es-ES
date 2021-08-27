@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las características de seguridad incluidas con Microsoft 365 para empresas.
-ms.openlocfilehash: 3c5348eb268373ff11b7e926f39d385451a4b2760978029484a2116885c7e9ea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 686ced4c4612470d25ab3a39fdd824b576bbeab7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887784"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572112"
 ---
 # <a name="overview-of-security"></a>Información general sobre la seguridad
 
@@ -34,7 +34,7 @@ ms.locfileid: "53887784"
 
 Microsoft 365 Empresa Premium proporciona características de protección contra amenazas, protección de datos y administración de dispositivos para ayudarle a proteger su empresa de las amenazas en línea y el acceso no autorizado, así como proteger y administrar los datos de la empresa en sus teléfonos, tabletas y equipos.
 
-|![Protección contra amenazas](../media/m365-business-security-threat-protection.png)<br/>[Protección contra amenazas](#threat-protection)|![Colaborar con un cliente](../media/m365-business-security-data-protection.png) <br/>[Protección de datos](#data-protection) | ![Administración de dispositivos](../media/m365-business-security-device-management.png) <br/>[Administración de dispositivos](#device-management) |
+|![Protección contra amenazas.](../media/m365-business-security-threat-protection.png)<br/>[Protección contra amenazas](#threat-protection)|![Colaborar con un cliente](../media/m365-business-security-data-protection.png) <br/>[Protección de datos](#data-protection) | ![Administración de dispositivos](../media/m365-business-security-device-management.png) <br/>[Administración de dispositivos](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>Protección contra amenazas

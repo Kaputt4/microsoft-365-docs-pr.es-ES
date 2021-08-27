@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo mover un SharePoint a una ubicación geográfica diferente dentro de su entorno multige geográfico y comunicar las expectativas de los cambios a los usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 97f19b0f4ae1e00eb1d81bb20052efa158bc55cf
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 9c7ad267dcb32e055038e5186595db5776999263
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400396"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571944"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
@@ -80,7 +80,7 @@ Por ejemplo, si la dirección URL del sitio es , conéctese a la dirección URL 
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint Ventana del Shell de administración en línea que muestra Connect-SPOService comando](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint Ventana Shell de administración en línea que muestra Connect-SPOService comando.](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>Validación del entorno
 
@@ -118,7 +118,7 @@ Para iniciar el movimiento del sitio, ejecute:
 Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
 ```
 
-![Captura de pantalla de la ventana de PowerShell que muestra el cmdlet Start-SPOSiteContentMove](../media/multi-geo-sharepoint-site-move-powershell.png)
+![Captura de pantalla de la ventana de PowerShell que muestra Start-SPOSiteContentMove cmdlet.](../media/multi-geo-sharepoint-site-move-powershell.png)
 
 ### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Iniciar el movimiento geográfico de sitios de SharePoint para un sitio conectado a Grupos de Microsoft 365
 

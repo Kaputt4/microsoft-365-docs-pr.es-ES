@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 70957d49f818424062002b8604854bf3bd5e60cb
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ae54134f681568a193b7a99c166aa025d6358eec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58252490"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561235"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Piloto de Microsoft Defender para identidad
 
@@ -38,7 +38,7 @@ Este artículo es [el paso 3 de 3](eval-defender-identity-overview.md) en el pro
 
 Siga estos pasos para configurar y configurar el piloto de Microsoft Defender para la identidad. Tenga en cuenta que las recomendaciones no incluyen la configuración de un grupo piloto. El procedimiento recomendado es continuar e instalar el sensor en todos los servidores que ejecutan Servicios de dominio de Active Directory (AD DS) y Servicios federados de Active Directory (AD FS).
 
-![Pasos para agregar Microsoft Defender for Identity al entorno de evaluación de Defender](../../media/defender/m365-defender-identity-pilot-steps.png)
+![Pasos para agregar Microsoft Defender for Identity al entorno de evaluación de Defender.](../../media/defender/m365-defender-identity-pilot-steps.png)
 
 En la tabla siguiente se describen los pasos de la ilustración.
 
@@ -66,7 +66,7 @@ Pruebe los tutoriales de Defender for Identity:
 - [Investigar rutas de movimiento lateral](/defender-for-identity/investigate-lateral-movement-path)
 - [Investigar entidades](/defender-for-identity/investigate-entity)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Evaluar Microsoft Defender para Office 365](eval-defender-office-365-overview.md)
 

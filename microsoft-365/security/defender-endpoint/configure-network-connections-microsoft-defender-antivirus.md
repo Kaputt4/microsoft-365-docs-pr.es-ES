@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 989e392071de0ed90b2daa964307989f664cb53a
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e7631647d97abc7f67129c9d40887996cfc7eb0b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532960"
+ms.locfileid: "58572160"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -99,11 +99,11 @@ Si está conectado correctamente, verá una notificación de Antivirus de Micros
 
 Si usas Microsoft Edge, también verás un mensaje de notificación:
 
-:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Captura de pantalla de notificación de que se encontró malware en Edge":::
+:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Captura de pantalla de notificación de que se encontró malware en Edge.":::
 
 Si usa Internet Explorer, se produce un mensaje similar:
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Notificación antivirus de Microsoft Defender de que se encontró malware":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Notificación antivirus de Microsoft Defender de que se encontró malware.":::
 
 También verás una detección en Amenazas en cuarentena **en** **la** sección Historial de análisis de la Seguridad de Windows aplicación:
 

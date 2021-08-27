@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un sitio de comunicaciones para su campaña o negocio.
-ms.openlocfilehash: d34ab2f5360db1d756cb97a66bb87e443b86605f4864b1f8fdd827504c8829c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d40311a616e51ed665248dded45ef7d0432b6f94
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843467"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571560"
 ---
 # <a name="create-a-communications-site"></a>Crear un sitio de comunicaciones
 
@@ -44,13 +44,13 @@ Incluya los siguientes elementos en el sitio de comunicaciones:
 4. Agregue eventos a un **elemento web Eventos para** que todos puedan ver lo que se está acercando.
 5. Agregar fotos que los usuarios pueden usar o compartir en un **elemento web galería de imágenes**.
 
-![Diagrama de una página SharePoint comunicaciones con espacio para elementos comunes que una campaña necesita](../media/m365-democracy-comms-site.png)
+![Diagrama de una página SharePoint comunicaciones con espacio para elementos comunes que una campaña necesita.](../media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>Infográfico: Crear una infografía del sitio de comunicaciones
 
 Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en formato tabloide (también conocido como libro mayor, 11 x 17 o A3).
 
-[![Imagen de la infografía del sitio de comunicaciones](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+[![Imagen de la infografía del sitio de comunicaciones.](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](downloads/M365CampaignsCreateCommunicationSite.pdf)  |  [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 

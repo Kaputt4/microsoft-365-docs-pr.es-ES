@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0051b138d155ed4bdf41786f4a73439bba22c738ba7d2a73da44341437ba5c0c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4668ecc352b9e972dcef544e87c7f29b8287cafb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838576"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561211"
 ---
 # <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>Directivas Microsoft Cloud App Security recomendadas para aplicaciones SaaS
 Microsoft Cloud App Security se basa en directivas de acceso condicional de Azure AD para permitir la supervisión y el control en tiempo real de acciones granulares con aplicaciones SaaS, como bloquear descargas, cargas, copiar y pegar e imprimir. Esta característica agrega seguridad a las sesiones que conllevan riesgos inherentes, como cuando se accede a los recursos corporativos desde dispositivos no administrados o por usuarios invitados.
@@ -46,7 +46,7 @@ Los permisos para aplicaciones SaaS suelen basarse en la necesidad empresarial d
 
 Para proteger los datos en toda la colección de aplicaciones SaaS, el siguiente diagrama ilustra la directiva de acceso condicional de Azure AD necesaria y las directivas sugeridas que puede crear en Cloud App Security. En este ejemplo, las directivas creadas en Cloud App Security se aplican a todas las aplicaciones SaaS que se administran. Están diseñados para aplicar controles adecuados en función de si los dispositivos se administran, así como de las etiquetas de confidencialidad que ya se aplican a los archivos.
 
-![Directivas para administrar aplicaciones SaaS en Cloud App Security](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
+![Directivas para administrar aplicaciones SaaS en Cloud App Security.](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
 
 En la tabla siguiente se muestra la nueva directiva de acceso condicional que debe crear en Azure AD.
 
@@ -95,7 +95,7 @@ Cloud App Security puede ser una herramienta valiosa para configurar la protecci
 
 En la siguiente ilustración y tabla se proporcionan varios ejemplos de directivas que se pueden configurar para ayudar a cumplir con el Reglamento general de protección de datos (RGPD). En estos ejemplos, las directivas buscan datos específicos. En función de la confidencialidad de los datos, cada directiva está configurada para realizar las acciones adecuadas.
 
-![Ejemplo Cloud App Security directivas de prevención de pérdida de datos](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
+![Ejemplo Cloud App Security directivas de prevención de pérdida de datos.](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
 
 |Nivel de protección|Directivas de ejemplo|
 |---|---|

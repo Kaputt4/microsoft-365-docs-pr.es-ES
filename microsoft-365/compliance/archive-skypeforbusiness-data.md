@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector en el Centro de cumplimiento de Microsoft 365 importar y archivar datos de Skype Empresarial a Microsoft 365.
-ms.openlocfilehash: f265d0599525cc6fd9f9d26a0d8d04f0c8e7e008927a2b4215d4fc40ad771215
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3f772bfa7b59eac7292cd869aee2688ac1a132b6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796564"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563112"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Configurar un conector para archivar Skype Empresarial datos
 
@@ -29,7 +29,7 @@ Después Skype Empresarial datos se almacenan en buzones de usuario, puede aplic
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar los Skype Empresarial en Microsoft 365.
 
-![Flujo de trabajo de archivado para Skype Empresarial datos](../media/SkypeforBusinessConnectorWorkflow.png)
+![Flujo de trabajo de archivado Skype Empresarial datos.](../media/SkypeforBusinessConnectorWorkflow.png)
 
 1. Su organización trabaja con Skype Empresarial configurar y configurar un Skype Empresarial web.
 

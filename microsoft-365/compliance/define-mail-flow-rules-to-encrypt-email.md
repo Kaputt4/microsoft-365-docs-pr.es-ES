@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes mediante Cifrado de mensajes de Office 365.
-ms.openlocfilehash: 1acd670e2faf2fbb2ebd6e6df51569e983bf4090818a604242a20b0fbb8c5e76
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e786a6ac688adbae22f7161ada18cffc27811f97
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808217"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572196"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico
 
@@ -48,7 +48,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **Exchange**.
 
-4. En el EAC, vaya a **Flujo de correo** \> **Reglas** y **seleccione Nuevo** icono Nuevo ![ Crear una nueva ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
+4. En el EAC, vaya a **Flujo de correo Reglas** \> **y** seleccione **Nuevo** ![ icono Nuevo.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Crear una nueva regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
 
 5. En **Nombre**, escriba un nombre para la regla, como Cifrar correo para DrToniRamos@hotmail.com.
 
@@ -82,7 +82,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 4. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
-5. En la lista de reglas de flujo de correo, seleccione la regla que desea modificar para usar las nuevas funcionalidades de OME y, a continuación, elija **Editar** ![ icono Editar ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
+5. En la lista de reglas de flujo de correo, seleccione la regla que desea modificar para usar las nuevas funcionalidades de OME y, a continuación, elija **Editar** ![ icono Editar. ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
 
 6. Para habilitar el cifrado con las nuevas funcionalidades  de OME, en **Hacer** lo siguiente, elija Modificar la seguridad del mensaje y, a continuación, elija Aplicar Cifrado de mensajes de Office 365 **y protección de derechos**. Seleccione una plantilla RMS de la lista, elija **Guardar** y, a continuación, elija **Aceptar**.
 
@@ -108,7 +108,7 @@ Puede quitar el cifrado que aplica la organización.
 
 3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **Exchange**.
 
-4. En el EAC, vaya a **Flujo de correo** \> **Reglas** y **seleccione Nuevo** icono Nuevo ![ Crear una nueva ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
+4. En el EAC, vaya a **Flujo de correo Reglas** \> **y** seleccione **Nuevo** ![ icono Nuevo.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Crear una nueva regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
 
 5. En **Nombre**, escriba un nombre para la regla, como Quitar cifrado del correo saliente.
 
@@ -116,7 +116,7 @@ Puede quitar el cifrado que aplica la organización.
 
 7. En **Hacer lo siguiente,** seleccione **Modificar la seguridad del** mensaje Quitar Cifrado de mensajes de Office 365 y protección \> **de derechos**.
 
-8. Seleccione **Guardar**.
+8. Haga clic en **Guardar**.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Crear reglas de flujo de correo Cifrado de mensajes de Office 365 sin las nuevas funcionalidades
 

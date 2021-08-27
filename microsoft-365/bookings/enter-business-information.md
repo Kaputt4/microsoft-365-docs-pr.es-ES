@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Siga estas instrucciones para crear su página Acerca de nosotros, incluido el nombre de empresa, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
-ms.openlocfilehash: fae790405d6691d35f5c0bfe806b6d7d46c3b555ecfd14660d3fb89b34b3efe8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fdf96347a080d24cfb06353c96622484ed54c683
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803872"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571572"
 ---
 # <a name="enter-your-business-information"></a>Escribir la información de su empresa
 
@@ -22,7 +22,7 @@ En Microsoft Bookings, la página Información empresarial de la aplicación web
 
 La información que proporciones aquí se mostrará en la página que los clientes y clientes usan para reservar citas (conocida como página de reserva) y en los mensajes y avisos enviados por Bookings. A continuación se resalta un ejemplo de esta información en la página de reserva.
 
-   ![Ejemplo de página Imagen de información empresarial en Microsoft Bookings](../media/bookings-business-info.png)
+   ![Ejemplo de página De información empresarial en Microsoft Bookings.](../media/bookings-business-info.png)
 
 > [!NOTE]
 > Para empezar, consulte [Obtener acceso a Microsoft Bookings](get-access.md). Para activar o desactivar Bookings, consulte Activar o desactivar [Bookings para su organización.](turn-bookings-on-or-off.md)
@@ -41,7 +41,7 @@ La información que proporciones aquí se mostrará en la página que los client
 
 1. Escriba la **directiva de privacidad** y los **términos & las direcciones** URL de condiciones.
 
-1. Seleccione **Guardar**.
+1. Haga clic en **Guardar**.
 
 ## <a name="set-your-business-hours"></a>Establecer el horario comercial
 
@@ -63,11 +63,11 @@ Por ejemplo, tiene reuniones de personal todos los jueves de 1 a 2:30 y desea bl
 
 1. Seleccione **+** esta opción para crear una nueva fila para el jueves.
 
-   ![Imagen de la interfaz de usuario de horario comercial](../media/bookings-split-shift.png)
+   ![Imagen de la interfaz de usuario de horario comercial.](../media/bookings-split-shift.png)
 
 1. En la nueva fila, seleccione 2:30 p.m. hora de inicio y 6:00 p.m. para la hora de finalización.
 
-   ![Imagen de la interfaz de usuario de horario comercial con horas agregadas](../media/bookings-split-shift-hours.png)
+   ![Imagen de la interfaz de usuario de horario comercial con horas agregadas.](../media/bookings-split-shift-hours.png)
 
 1. Seleccione Guardar.
 
@@ -81,6 +81,6 @@ Si aún no has cargado el logotipo de tu empresa en la aplicación Bookings, pue
 
 1. Seleccione **Upload foto**.
 
-   ![Imagen del botón cargar foto](../media/bookings-upload-photo.png)
+   ![Imagen del botón cargar foto.](../media/bookings-upload-photo.png)
 
 1. Haga clic en **Guardar**.

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e2d2addf5195f52eac94c22453e8cef08a4c6cc18bd3a21b6178bca527cc8038
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4fff8c3f461a84d7bb6616c2264120a4c8fcd0ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894188"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571824"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurar Microsoft Defender para la implementación de puntos de conexión
 
@@ -39,7 +39,7 @@ ms.locfileid: "53894188"
 
 La implementación de Defender for Endpoint es un proceso de tres fases:
 
-|[![fase de implementación: preparar](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fase 1: Preparación](prepare-deployment.md) | ![fase de implementación: configuración](images/phase-diagrams/setup.png)<br>Fase 2: Configuración | [![fase de implementación: incorporación](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fase 3: Incorporación](onboarding.md)|
+|[![fase de implementación: preparar.](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fase 1: Preparación](prepare-deployment.md) | ![fase de implementación: configuración](images/phase-diagrams/setup.png)<br>Fase 2: Configuración | [![fase de implementación: incorporación](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fase 3: Incorporación](onboarding.md)|
 |---|---|---|
 ||*¡Estás aquí!*||
 
@@ -60,13 +60,13 @@ Comprobar el estado de la licencia y si se aprovisionó correctamente, se puede 
 
 1. Para ver las licencias, vaya al **portal de** Microsoft Azure y vaya a la sección Microsoft Azure licencia [del portal.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
-   ![Imagen de la página licencias de Azure](images/atp-licensing-azure-portal.png)
+   ![Imagen de la página Licencias de Azure.](images/atp-licensing-azure-portal.png)
 
 1. Como alternativa, en el Centro de administración, vaya a **Suscripciones de**  >  **facturación.**
 
     En la pantalla, verá todas las licencias aprovisionadas y su estado **actual.**
 
-    ![Imagen de las licencias de facturación](images/atp-billing-subscriptions.png)
+    ![Imagen de las licencias de facturación.](images/atp-billing-subscriptions.png)
 
 ## <a name="cloud-service-provider-validation"></a>Validación del proveedor de servicios en la nube
 
@@ -76,7 +76,7 @@ Para obtener acceso a las licencias que se aprovisionan a su empresa y comprobar
 
 2. Al hacer clic en **el vínculo Portal** de partners, se abrirá la opción **Administrador** en nombre del usuario y se le dará acceso al Centro de administración de clientes.
 
-   ![Imagen del portal de administración de O365](images/atp-O365-admin-portal-customer.png)
+   ![Imagen del portal de administración de O365.](images/atp-O365-admin-portal-customer.png)
 
 ## <a name="tenant-configuration"></a>Configuración del espacio empresarial
 
@@ -113,13 +113,13 @@ Configure un proxy estático basado en el Registro para permitir que solo el sen
 2. Cree una directiva o edite una directiva existente basada en las prácticas organizativas.
 3. Edite la directiva de grupo y vaya a Plantillas administrativas Windows Componentes de recopilación de datos y versiones preliminares Configure **\> \> \> Authenticated Proxy usage for the Connected User Experience and Telemetry Service**. 
 
-   ![Imagen de configuración de directiva de grupo](images/atp-gpo-proxy1.png)
+   ![Imagen de configuración de directiva de grupo.](images/atp-gpo-proxy1.png)
 
 4. Seleccione **Habilitado**.
 5. Seleccione **Deshabilitar el uso de proxy autenticado**.
 6. Vaya a Plantillas administrativas Windows de datos componentes y versiones **\> \> preliminares \> Configure las experiencias de usuario conectadas y la telemetría**.
 
-    ![Imagen de la configuración de directiva de grupo](images/atp-gpo-proxy2.png)
+    ![Imagen de la configuración de directiva de grupo.](images/atp-gpo-proxy2.png)
 
 7. Seleccione **Habilitado**.
 8. Escriba el **nombre del servidor proxy**.
@@ -173,9 +173,9 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 
 ****
 
-|Hoja de cálculo de la lista de dominios|Description|
+|Hoja de cálculo de la lista de dominios|Descripción|
 |---|---|
-|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 ### <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Intervalos IP de back-end de Servicio de extremo de Microsoft Defender para Endpoint
@@ -202,4 +202,4 @@ Puede encontrar los intervalos IP de Azure en Intervalos IP de [Azure y etiqueta
 
 ## <a name="next-step"></a>Paso siguiente
 
-![**Fase 3: Incorporación**](images/onboard.png) <br> [Fase 3: Incorporación](onboarding.md)de dispositivos al servicio para que el servicio de Microsoft Defender para endpoints pueda obtener datos de sensores de ellos.
+![**Fase 3: Incorporación**.](images/onboard.png) <br> [Fase 3: Incorporación](onboarding.md)de dispositivos al servicio para que el servicio de Microsoft Defender para endpoints pueda obtener datos de sensores de ellos.

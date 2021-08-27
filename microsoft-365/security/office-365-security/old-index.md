@@ -16,12 +16,12 @@ ms.collection:
 description: Seguridad en Office 365, desde EOP a Defender para Office 365 Planes 1 y 2, Configuraciones de seguridad estándar vs. estrictas y mucho más. Comprenda lo que tiene y aprenda a proteger sus propiedades.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 471817772327a761e1903d0074c41ad3a4bd5fbac1ddb501b2d8887e35d51b34
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8ef88d80a4d02a51055c9bfe338617b04162888a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838504"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571968"
 ---
 # <a name="office-365-security"></a>Seguridad de Office 365
 
@@ -58,7 +58,7 @@ Puede que esté acostumbrado a ver estos tres componentes de esta manera:
 
 En cuanto a la arquitectura, podemos imaginar las piezas como capas acumulativas de seguridad, cada una con un énfasis de seguridad. Más resultados similares:
 
-<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
+<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic.":::-->
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP y Microsoft Defender para Office 365 y sus relaciones entre sí con énfasis de servicio, incluida una nota para la autenticación de correo electrónico.":::
 

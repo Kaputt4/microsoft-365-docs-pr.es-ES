@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Obtenga información sobre cómo usar SharePoint Syntex para identificar archivos de contrato y extraer datos mediante una Microsoft 365 solución.
-ms.openlocfilehash: d26a11edfbfadfa9b8905e9cb7643cfefeef9b1e1f6e7e0516c50305fe974d71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f6097a7573037f8efc2467bb3a9f1037a12bf7ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859530"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561427"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Paso 1. Usar SharePoint Syntex para identificar archivos de contrato y extraer datos
 
@@ -37,7 +37,7 @@ En los modelos de comprensión mediante documentos se usa la tecnología de reco
 
 4. Después de crear correctamente el modelo, [apliquenlo a](apply-a-model.md)una biblioteca SharePoint documentos . Al cargar documentos en la biblioteca de documentos, el modelo de descripción de documentos se ejecutará e identificará y clasificará todos los archivos que coincidan con el tipo de contenido de contratos definido en el modelo. Todos los archivos clasificados como contratos se mostrarán en una vista de biblioteca personalizada. Los archivos también mostrarán los valores de cada contrato definido en el extractor.
 
-   ![Contratos en la biblioteca de documentos](../media/content-understanding/doc-lib-solution.png)
+   ![Contratos en la biblioteca de documentos.](../media/content-understanding/doc-lib-solution.png)
 
 5. Si tiene requisitos de retención o seguridad para sus contratos, también [](apply-a-sensitivity-label-to-a-model.md) puede usar el modelo para aplicar una etiqueta de retención o una etiqueta de confidencialidad que impedirá que los contratos se eliminen durante un período de tiempo especificado o para restringir quién puede acceder [a](apply-a-retention-label-to-a-model.md) los contratos.
 
@@ -81,7 +81,7 @@ Debe agregar al menos cinco archivos de ejemplo que sean documentos de contrato 
 
 3. En la **lista Ejemplos etiquetados** de la izquierda, seleccione otros archivos que desee usar como ejemplos y rótulos. 
 
-    ![Página principal del Clasificador](../media/content-understanding/models-contract-classifier.png) 
+    ![Página principal del Clasificador.](../media/content-understanding/models-contract-classifier.png) 
 
 #### <a name="add-at-least-one-explanation-to-train-the-classifier&quot;></a>Agregar al menos una explicación para entrenar al clasificador 
 
@@ -111,7 +111,7 @@ Puede probar el modelo de contrato en archivos de ejemplo que no haya visto ante
 
 2. En la **lista Archivos de** prueba, los archivos de ejemplo se muestran y muestran si el modelo predijo que son positivos o negativos. Utilice esta información para ayudar a determinar la eficacia de su clasificador en la identificación de sus documentos.
 
-    ![Captura de pantalla de los archivos sin etiquetar en la lista Archivos de texto](../media/content-understanding/test-on-files.png) 
+    ![Captura de pantalla de los archivos sin etiquetar en la lista Archivos de texto.](../media/content-understanding/test-on-files.png) 
 
 3. Cuando haya terminado, seleccione **Salir del aprendizaje**.
 

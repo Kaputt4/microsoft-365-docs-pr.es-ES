@@ -12,11 +12,11 @@ Los colaboradores que solo realicen actualizaciones poco frecuentes o pequeñas 
 2. Vaya a la página que desea editar en docs.microsoft.com.
 3. En el lado derecho de la página, haga clic **en Editar** (icono de lápiz).
 
-   ![Botón Editar en docs.microsoft.com](microsoft-365/media/quick-update-edit.png)
+   ![Botón Editar en docs.microsoft.com.](microsoft-365/media/quick-update-edit.png)
 
 4. Se abre el archivo de tema correspondiente GitHub, donde debe hacer clic en **el icono Editar este lápiz** de archivo.
 
-   ![Botón Editar en github.com](microsoft-365/media/quick-update-github.png)
+   ![Botón Editar en github.com.](microsoft-365/media/quick-update-github.png)
 
 5. El tema se abre en una página de edición numerada de línea donde puede realizar cambios en el archivo. Los archivos GitHub se escriben y editan con el lenguaje Markdown. Para obtener ayuda sobre el uso de Markdown, vea [Mastering Markdown](https://guides.github.com/features/mastering-markdown/). Seleccione la **pestaña Vista previa de los** cambios para ver los cambios a medida que vaya.
 
@@ -27,15 +27,15 @@ Los colaboradores que solo realicen actualizaciones poco frecuentes o pequeñas 
 
    Cuando esté listo, haga clic en el botón verde **Proponer cambio de** archivo.
 
-   ![Sección Proponer cambio de archivo](microsoft-365/media/propose-file-change.png)
+   ![Sección Proponer cambio de archivo.](microsoft-365/media/propose-file-change.png)
 
 7. En la **página Comparar cambios** que aparece, haga clic en el botón verde Crear solicitud **de** extracción.
 
-   ![Comparar la página de cambios](microsoft-365/media/comparing-changes-page.png)
+   ![Comparar la página de cambios.](microsoft-365/media/comparing-changes-page.png)
 
 8. En la **página Abrir una solicitud de** extracción que aparece, haga clic en el botón verde Crear solicitud **de** extracción.
 
-   ![Abrir una página de solicitud de extracción](microsoft-365/media/open-a-pull-request-page.png)
+   ![Abra una página de solicitud de extracción.](microsoft-365/media/open-a-pull-request-page.png)
 
 > [!NOTE]
 > Los permisos del repositorio determinan lo que ve en los últimos pasos. Las personas sin privilegios especiales verán la sección **Proponer** cambio de archivo y las páginas de confirmación posteriores como se describe. Las personas con permisos para crear y aprobar sus propias solicitudes de extracción verán una sección **confirmar** cambios similar con opciones adicionales para crear una rama nueva y menos páginas de confirmación.<br/><br/>El punto es: haga clic en los botones verdes que se le presenten hasta que no haya más.

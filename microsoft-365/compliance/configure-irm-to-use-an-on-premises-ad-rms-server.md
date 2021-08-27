@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar Information Rights Management (IRM) en Exchange Online usar un servidor de Active Directory Rights Management Service (AD RMS).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d2685994e35f88d92ab6b6854e88607cd84f153692a22f29c966e701f8d30f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 64d89d52b4e835c81ed1e2c8bbd54eaaae6f1823
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830844"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572064"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar IRM para usar un servidor de AD RMS local
 
@@ -168,4 +168,4 @@ Para comprobar si ha importado el TPD y ha habilitado IRM correctamente, haga lo
 
 - Use el cmdlet **Test-IRMConfiguration** para probar si IRM funciona. Para obtener más información, vea "Ejemplo 1" en [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
 
-- Redacte un nuevo mensaje en Outlook en la Web y protegerlo  mediante la selección de la opción Establecer permisos en el menú extendido ( ![ Icono Más opciones ](../media/ITPro-EAC-MoreOptionsIcon.gif) ).
+- Redacte un nuevo mensaje en Outlook en la Web y protegerlo  mediante la selección de la opción Establecer permisos en el menú extendido ( ![ Icono Más opciones). ](../media/ITPro-EAC-MoreOptionsIcon.gif)

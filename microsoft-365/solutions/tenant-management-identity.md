@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente el modelo de identidad correcto para sus Microsoft 365 inquilinos y aplique inicios de sesión de usuario fuertes.
-ms.openlocfilehash: 01a69a326195514d0aa0a7eef1124bb820a211a508a1ed5cf79a520b82d0afa9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cd67db1c70c4f3aaa4ec9784e1de6992dd40300a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798664"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571620"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 3. Identidad de su Microsoft 365 para inquilinos empresariales
 
@@ -32,7 +32,7 @@ El inquilino Microsoft 365 incluye un inquilino de Azure Active Directory (Azure
 Estos son los dos tipos de modelos de identidad y su mejor ajuste y ventajas.
 
 
-| Model | Descripción | Cómo Microsoft 365 autentica las credenciales de usuario | Ideal para | Mayor beneficio |
+| Model | Description | Cómo Microsoft 365 autentica las credenciales de usuario | Ideal para | Mayor beneficio |
 |:-------|:-----|:-----|:-----|:-----|
 | Solo de nube | La cuenta de usuario solo existe en el inquilino de Azure AD para Microsoft 365 inquilino. | El inquilino de Azure AD para su Microsoft 365 inquilino realiza la autenticación con la cuenta de identidad de la nube. | Organizaciones que no tienen o necesitan un AD DS local. | Fácil de usar. No se requieren servidores ni herramientas de directorio adicionales. |
 | Híbrido |  La cuenta de usuario existe en los Servicios de dominio de Active Directory (AD DS) locales y también hay una copia en el inquilino de Azure AD para el inquilino Microsoft 365 cliente. Azure AD Conectar se ejecuta en un servidor local para sincronizar los cambios de AD DS en el inquilino de Azure AD. La cuenta de usuario de Azure AD también puede incluir una versión hash de la contraseña de la cuenta de usuario de AD DS ya hash. | El inquilino de Azure AD para el inquilino Microsoft 365 administra el proceso de autenticación o redirige al usuario a otro proveedor de identidades. | Organizaciones que usan AD DS u otro proveedor de identidades. | Los usuarios pueden usar las mismas credenciales al obtener acceso a recursos locales o basados en la nube. |
@@ -40,13 +40,13 @@ Estos son los dos tipos de modelos de identidad y su mejor ajuste y ventajas.
 
 Estos son los componentes básicos de la identidad de solo nube.
 
-![Componentes básicos de identidad de solo nube](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![Componentes básicos de identidad de solo nube.](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 En esta ilustración, los usuarios locales y remotos inician sesión con cuentas en el inquilino de Azure AD de su Microsoft 365 inquilino.
 
 Estos son los componentes básicos de la identidad híbrida.
 
-![Componentes básicos de identidad híbrida](../media/about-microsoft-365-identity/hybrid-identity.png)
+![Componentes básicos de identidad híbrida.](../media/about-microsoft-365-identity/hybrid-identity.png)
 
 En esta ilustración, los usuarios locales y remotos inician sesión en su inquilino de Microsoft 365 con cuentas en el inquilino de Azure AD que se han copiado de su AD DS local.
 
@@ -59,7 +59,7 @@ Según las necesidades empresariales y los requisitos técnicos, el modelo de id
 
 Estos son los dos tipos de autenticación al usar el modelo de identidad híbrida.
 
-| Tipo de autenticación | Descripción |
+| Tipo de autenticación | Description |
 |:-------|:-----|
 | Autenticación administrada | Azure AD controla el proceso de autenticación mediante una versión hash almacenada localmente de la contraseña o envía las credenciales a un agente de software local para que ad DS local lo autentique. <br> <br>  Hay dos tipos de autenticación administrada: sincronización de hash de contraseña (PHS) y autenticación de paso a través (PTA). Con PHS, Azure AD realiza la autenticación en sí. Con la PTA, Azure AD tiene AD DS que realiza la autenticación. |
 | Autenticación federada | Azure AD redirige el equipo cliente que solicita autenticación a otro proveedor de identidades. |
@@ -91,7 +91,7 @@ Para la identidad de su Microsoft 365 inquilino, ha determinado:
 
 Este es un ejemplo de inquilino con los nuevos elementos de identidad híbrida resaltados.
 
-![Ejemplo de identidad híbrida para un inquilino](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
+![Ejemplo de identidad híbrida para un inquilino.](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
 
 En esta ilustración, el inquilino tiene:
 
@@ -108,6 +108,6 @@ De forma continua, es posible que deba:
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 4. Migrar los servidores y datos Office local](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
+[![Paso 4. Migre los servidores y los Office locales.](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
 
 Continúe con [la migración](tenant-management-migration.md) para migrar los servidores Office local y sus datos a Microsoft 365.

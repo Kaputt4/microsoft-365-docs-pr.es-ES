@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de MS SQL Database. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: cf0e4d1bc9d5cf6db7538f5f75174488532871e8
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9bd83226973b0a51990382f02b17fba0da28d91b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533608"
+ms.locfileid: "58571488"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>Configurar un conector para archivar datos de MS SQL Database
 
@@ -29,7 +29,7 @@ Después de almacenar contenido de MS SQL Database en buzones de usuario, puede 
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos SQL MS en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos SQL MS](../media/MSSQLDatabaseConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos SQL MS.](../media/MSSQLDatabaseConnectorWorkflow.png)
 
 1. Su organización trabaja con un proveedor de SQL Database MS para configurar y configurar un sitio de MS SQL Database MS.
 

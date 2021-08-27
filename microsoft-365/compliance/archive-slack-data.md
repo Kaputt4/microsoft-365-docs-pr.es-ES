@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de la exhibición de documentos electrónicos de Veritas Slack en Microsoft 365. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 090552adbdb210ca44aeaba75f404364e4bf61362c0a16c34ecf0e5d6b552fe2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3cbc19ab41b7916de76924cd69598335e8834322
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842637"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572220"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Configurar un conector para archivar datos de exhibición de documentos electrónicos de Slack
 
@@ -29,7 +29,7 @@ Una vez que los datos de exhibición de documentos electrónicos de Slack se alm
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar la información de Slack en Microsoft 365.
 
-![Flujo de trabajo de archivado de Slack](../media/SlackConnectorWorkflow.png)
+![Flujo de trabajo de archivado de Slack.](../media/SlackConnectorWorkflow.png)
 
 1. Su organización trabaja con Slack para configurar y configurar un sitio de Slack.
 

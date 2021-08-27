@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Veritas Symphony en Microsoft 365. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 25c463d8afdf51aa3267a33aeb46008727b2096fd83f97510a92b28e04d99117
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4a02843315e6bd40bf650f5e5162c330519d4fbb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796540"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58562870"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>Configurar un conector para archivar datos de Symphony
 
@@ -29,7 +29,7 @@ Una vez almacenadas las comunicaciones de Symphony en buzones de usuario, puede 
 
 En la siguiente introducción se explica el proceso de uso de un conector de datos para archivar las comunicaciones de Sinfónico en Microsoft 365.
 
-![Flujo de trabajo de archivado sinfónico](../media/SymphonyConnectorWorkflow.png)
+![Flujo de trabajo de archivado sinfónico.](../media/SymphonyConnectorWorkflow.png)
 
 1. Su organización trabaja con Symphony para configurar y configurar un sitio de Sinfónico.
 

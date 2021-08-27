@@ -23,12 +23,12 @@ f1.keywords:
 - NOCSH
 description: Comience a planear la actualización Office servidores y aplicaciones cliente de 2010, ya que la compatibilidad finaliza pronto y los acuerdos de soporte personalizados no están disponibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15d70ba1a090af9c378f7a041313620703c2a667
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: f4f90a34bd4f6c4585cc8900b11808a11f4a2947
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354181"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571920"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos para ayudarle a actualizar desde servidores y clientes de Office 2010
 
@@ -46,7 +46,7 @@ Mientras planea la actualización, considere la posibilidad de pasar a Microsoft
 
 Para obtener un resumen visual de las opciones de actualización, migración y movimiento a la nube para clientes y servidores de Office 2010 y Windows 7, vea el póster de fin de soporte [.](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-[![Fin de la compatibilidad con Office clientes y servidores de 2010 y Windows póster de 7](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Fin de la compatibilidad con Office clientes y servidores de 2010 y Windows póster de 7.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 En este póster de una página se resumen las distintas rutas de acceso que puede tomar para controlar Office productos de cliente y servidor de 2010 y Windows 7 desde el fin de la compatibilidad. Las rutas de acceso preferidas y la compatibilidad con Microsoft 365 Enterprise se resaltan.
 

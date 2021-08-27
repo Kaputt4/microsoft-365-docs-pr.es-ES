@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 618ead20e8ce9fb3772fb86bb5f4687cd2026552342f8e8cdd975423cfda051d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3bf6d527092a4dc5ed340a2d9548fea41d875d31
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810464"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561259"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrar consultas de búsqueda avanzada desde Microsoft Defender para endpoint
 
@@ -94,7 +94,7 @@ Use la tabla siguiente para comprobar cómo se asignan `DeviceAlertEvents` las c
 ## <a name="adjust-existing-microsoft-defender-for-endpoint-queries"></a>Ajustar las consultas existentes de Microsoft Defender para puntos de conexión
 Las consultas de Microsoft Defender para puntos de conexión funcionarán tal como están a menos que haga referencia a la `DeviceAlertEvents` tabla. Para usar estas consultas en Microsoft 365 Defender, aplique estos cambios:
 
-- Reemplace `DeviceAlertEvents` por `AlertInfo` .
+- Reemplazar `DeviceAlertEvents` por `AlertInfo`.
 - Une `AlertInfo` las tablas y las para obtener datos `AlertEvidence` `AlertId` equivalentes.
 
 ### <a name="original-query"></a>Consulta original
@@ -141,7 +141,7 @@ Las nuevas alertas generadas por reglas de detección personalizadas en Microsof
 - Información sobre la regla de detección personalizada 
  
 > [!div class="mx-imgBorder"]
-> ![Imagen de la nueva página de alerta](../../media/new-alert-page.png)
+> ![Imagen de la nueva página de alerta.](../../media/new-alert-page.png)
 
 ## <a name="write-queries-without-devicealertevents"></a>Escribir consultas sin DeviceAlertEvents
 
@@ -178,7 +178,7 @@ AlertInfo
 | where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Activar Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)

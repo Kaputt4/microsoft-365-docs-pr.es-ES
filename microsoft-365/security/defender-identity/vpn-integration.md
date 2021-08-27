@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 5c208440287723367b875f3278fc69425a03b80d93a8f8b1ec4c574a31efb7ec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e6b8015cc8b6ac073c689bde3b15a411c859cada
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844318"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561283"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Defender para la integración de VPN de identidad en Microsoft 365 Defender
 
@@ -58,11 +58,11 @@ Realice los pasos siguientes en el servidor RRAS.
 1. Haga clic con el botón secundario en el nombre del servidor y seleccione **Propiedades**.
 1. En la **pestaña Seguridad,** en **Proveedor de contabilidad,** seleccione **Contabilidad RADIUS** y **seleccione Configurar**.
 
-    ![Configuración de RADIUS](../../media/defender-identity/radius-setup.png)
+    ![Configuración de RADIUS.](../../media/defender-identity/radius-setup.png)
 
 1. En la **ventana Agregar servidor RADIUS,** escriba el nombre **del** servidor del sensor más [!INCLUDE [Product short](includes/product-short.md)] cercano (que tiene conectividad de red). Para una alta disponibilidad, puede agregar [!INCLUDE [Product short](includes/product-short.md)] sensores adicionales como servidores RADIUS. En **Puerto**, asegúrese de que el valor predeterminado de 1813 está configurado. Seleccione **Cambiar** y escriba una nueva cadena secreta compartida de caracteres alfanuméricos. Tome nota de la nueva cadena secreta compartida, ya que tendrá que rellenarla más adelante durante la [!INCLUDE [Product short](includes/product-short.md)] configuración. Active el cuadro Enviar mensajes de cuenta **RADIUS y Desasoyéndolo** y seleccione **Aceptar en** todos los cuadros de diálogo abiertos.
 
-    ![Configuración de VPN](../../media/defender-identity/vpn-set-accounting.png)
+    ![Configuración de VPN.](../../media/defender-identity/vpn-set-accounting.png)
 
 ## <a name="configure-vpn-in-defender-for-identity"></a>Configurar VPN en Defender for Identity
 
@@ -72,17 +72,17 @@ Para configurar los datos de VPN [!INCLUDE [Product short](includes/product-shor
 
 1. En [Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Configuración** y, a continuación, **Identities**.
 
-    ![Vaya a Configuración, a continuación, Identidades](../../media/defender-identity/settings-identities.png)
+    ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Seleccione **VPN**.
 1. Seleccione **Habilitar la contabilidad de** radio y escriba el secreto **compartido** que configuró anteriormente en el servidor VPN de RRAS. Después, seleccione **Guardar**.
 
-    ![Integración de VPN](../../media/defender-identity/vpn-integration.png)
+    ![Integración de VPN.](../../media/defender-identity/vpn-integration.png)
 
 Una vez habilitado, todos los sensores de Defender for Identity escucharán en el puerto 1813 eventos de contabilidad RADIUS y la configuración de VPN se completará.
 
 Después de que el sensor Defender for Identity reciba los eventos VPN y los envíe al servicio en la nube de Defender for Identity para su procesamiento, el perfil de entidad indicará las distintas ubicaciones y actividades de VPN a las que se accede en el perfil indicará las ubicaciones.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Investigar alertas en Microsoft 365 Defender](../defender/investigate-alerts.md)

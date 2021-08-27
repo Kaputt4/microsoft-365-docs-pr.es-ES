@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo generar un informe que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos.
-ms.openlocfilehash: 2a169290743c21c947edbb600f00b64a68d8cee2
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 5ccb74960a7b0d051b0c7754710f35e81b3edae0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507619"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572052"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Crear un informe de suspensiones en casos de eDiscovery
 
@@ -160,7 +160,7 @@ Después de conectarse a PowerShell del Centro de seguridad & cumplimiento, el s
 
    Este es un ejemplo de ejecución del CaseHoldsReport.ps1 script.
 
-   ![El resultado después de ejecutar el script CaseHoldsReport.ps1 script](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+   ![El resultado después de ejecutar el CaseHoldsReport.ps1 script.](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
 ## <a name="more-information"></a>Más información
 

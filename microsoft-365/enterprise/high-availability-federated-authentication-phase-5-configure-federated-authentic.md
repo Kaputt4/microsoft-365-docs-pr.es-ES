@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Resumen: configure Azure AD Conectar para la autenticación federada de alta disponibilidad para Microsoft 365 en Microsoft Azure.'
-ms.openlocfilehash: ecd5eac14279bb79c0e4bc574a9340314cc77574
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 8d8636c10947562037093991fa3a3cee5a867af3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356533"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561415"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Fase 5 de autenticación federada de alta disponibilidad: Configurar la autenticación federada para Microsoft 365
 
@@ -65,7 +65,7 @@ Este es un ejemplo de la organización Contoso:
   
 **Ejemplo de configuración de una infraestructura de autenticación federada de alta disponibilidad en Azure**
 
-![Una configuración de ejemplo de la infraestructura de autenticación federada Microsoft 365 alta disponibilidad en Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Una configuración de ejemplo de la alta disponibilidad Microsoft 365 de autenticación federada en Azure.](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Ejecutar Azure AD Connect para configurar la autenticación federada
 
@@ -135,11 +135,11 @@ Esta es la configuración final, con nombres de marcador de posición para los s
   
 **Fase 5: Configuración final de una infraestructura de autenticación federada de alta disponibilidad en Azure**
 
-![La configuración final de la infraestructura de autenticación federada Microsoft 365 alta disponibilidad en Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![La configuración final de la infraestructura de autenticación federada Microsoft 365 alta disponibilidad en Azure.](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Se ha completado la infraestructura de autenticación federada de alta Microsoft 365 en Azure.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo seleccionar y descargar contenido de un conjunto de opiniones Advanced eDiscovery para presentaciones o revisiones externas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: adda9d1ee8594137a68994f8fc908297991ff525341af4421535536cf77b346f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ec4c82acdc7958cb17def5660f51109f1ff32e0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905874"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572184"
 ---
 # <a name="download-selected-documents-from-a-review-set"></a>Descargar documentos seleccionados de un conjunto de revisión
 
@@ -30,4 +30,4 @@ La descarga ofrece una forma sencilla de descargar contenido de un conjunto de r
 
 Para descargar contenido de un conjunto de revisión en un caso Advanced eDiscovery, empiece seleccionando los archivos que desea descargar y seleccione **Elementos de** acción  >  **Descargar**.
 
-![Acción de descarga en Advanced eDiscovery de revisión](../media/eDiscoDownload.png)
+![Descargue la acción en Advanced eDiscovery conjunto de revisión.](../media/eDiscoDownload.png)

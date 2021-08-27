@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: En este artículo, obtenga información sobre cómo realizar tareas de administración comunes para Microsoft 365 en PowerShell.
-ms.openlocfilehash: 48555dd41ff18941a6cbce3ef9f25cb5e3727735c7c7cedfe1e6050556e96dfb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 023b0a4264af5989e93c70f959584bcef9a89075
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899432"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571956"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Administrar Microsoft 365 grupos con PowerShell
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 En este artículo se proporcionan los pasos para realizar tareas de administración comunes para grupos en Microsoft PowerShell. También enumera los cmdlets de PowerShell para grupos. Para obtener información sobre cómo administrar SharePoint sitios web, [vea Manage SharePoint Online sites using PowerShell](/sharepoint/manage-team-and-communication-sites-in-powershell).
 
@@ -41,9 +41,9 @@ Cuando los [usuarios crean o editan](https://support.office.com/article/04d0c9cf
 
 Use powershell Azure Active Directory (Azure AD) para apuntar a los usuarios a las directrices de uso de la organización para Microsoft 365 grupos. Consulte los [cmdlets Azure Active Directory](/azure/active-directory/enterprise-users/groups-settings-cmdlets) para configurar la configuración de  grupo y siga los pasos descritos en Crear configuración en el nivel de directorio para definir el hipervínculo de la directriz de uso. Una vez que ejecute el cmdlet AAD, los usuarios verán el vínculo a las directrices cuando creen o editan un grupo en Outlook.
 
-![Crear un nuevo grupo con el vínculo directrices de uso](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
+![Crear un nuevo grupo con el vínculo directrices de uso.](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
 
-![Haga clic en Directrices de uso de grupos para ver las directrices Office 365 grupos de organizaciones](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
+![Haga clic en Directrices de uso de grupos para ver las directrices Office 365 grupos de organizaciones.](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
 
 ## <a name="allow-users-to-send-as-the-microsoft-365-group"></a>Permitir que los usuarios envíen como grupo Microsoft 365 usuario
 <a name="BK_LinkToGuideLines"> </a>
@@ -109,7 +109,7 @@ Consulte [Using PowerShell with Exchange Online](/powershell/exchange/exchange-o
 
 Una vez habilitada esta configuración, el propietario del grupo podrá elegir una clasificación en el menú desplegable de Outlook  en la web y Outlook y guardarla en la página Editar grupo.
 
-![Elegir Microsoft 365 de grupo](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
+![Elija Microsoft 365 de grupo.](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
 
 ## <a name="hide-microsoft-365-groups-from-the-global-address-list"></a>Ocultar Microsoft 365 grupos de direcciones de la lista global de direcciones.
 <a name="BKMK_CreateClassification"> </a>

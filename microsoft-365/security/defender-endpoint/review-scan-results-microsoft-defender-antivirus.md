@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: c7860c284d82ee2fbdb9f8e2eae6299f56f6387b45b8c6f3d88eb2733ee7cd72
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d23d2c7f0d6fc12a3365d1c4f50d37384f5ca349
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799783"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561271"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Revisar Antivirus de Microsoft Defender de examen
 
@@ -47,7 +47,7 @@ El siguiente cmdlet devolverá cada detección en el extremo. Si hay varias dete
 Get-MpThreatDetection
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="captura de pantalla de cmdlets y salidas de PowerShell":::
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="captura de pantalla de cmdlets y salidas de PowerShell.":::
 
 Puede especificar limitar `-ThreatID` el resultado para mostrar solo las detecciones de una amenaza específica.
 
@@ -57,7 +57,7 @@ Si desea enumerar las detecciones de amenazas, pero combinar las detecciones de 
 Get-MpThreat
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="Código de PowerShell":::
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="Código de PowerShell.":::
 
 Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
 

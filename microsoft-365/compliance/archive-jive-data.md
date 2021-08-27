@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos Jive de Veritas en Microsoft 365. Este conector le permite archivar datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: dee3f3b758d79c769a923330e07c20be168e03953f8904fd91d5fca222831dc4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b2842d3d9dff71292b5ff47e62b1915850106e42
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886938"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571512"
 ---
 # <a name="set-up-a-connector-to-archive-jive-data"></a>Configurar un conector para archivar datos Jive
 
@@ -29,7 +29,7 @@ Una vez que los datos de Jive se almacenan en buzones de usuario, puede aplicar 
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar los datos de Jive en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos Jive](../media/JiveConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos Jive.](../media/JiveConnectorWorkflow.png)
 
 1. Su organización trabaja con Jive para configurar y configurar un sitio de Jive.
 

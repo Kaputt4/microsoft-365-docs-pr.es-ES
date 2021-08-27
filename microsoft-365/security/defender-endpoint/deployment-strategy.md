@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 50abaa4033f00225cb4b456949d57618741e8016
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 528e7ed0f7655cd873a42a5b953049d078d19803
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532804"
+ms.locfileid: "58571848"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Planee su cuenta de Microsoft Defender para punto de conexión
 
@@ -36,7 +36,7 @@ Planee la implementación de Microsoft Defender para puntos de conexión para qu
 
 Esta solución proporciona instrucciones sobre cómo identificar la arquitectura del entorno, seleccionar el tipo de herramienta de implementación que mejor se adapte a sus necesidades y instrucciones sobre cómo configurar las capacidades.
 
-![Imagen del flujo de implementación](images/deployment-guide-plan.png)
+![Imagen del flujo de implementación.](images/deployment-guide-plan.png)
 
 ## <a name="step-1-identify-architecture"></a>Paso 1: Identificar arquitectura
 
@@ -46,9 +46,9 @@ Dependiendo de su entorno, algunas herramientas son más adecuadas para determin
 
 Use el siguiente material para seleccionar la arquitectura de Defender for Endpoint adecuada que mejor se adapte a su organización.
 
-|Elemento|Descripción|
-|---|---|
-|[![Imagen digital de la estrategia de implementación de Defender for Endpoint](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) <br> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)  |El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li>Nativo en la nube</li><li>Administración conjunta</li><li>Local</li><li>Evaluación e incorporación local</li></ul>|
+| Elemento | Description |
+|:-----|:-----|
+|[![Imagen digital de la estrategia de implementación de Defender for Endpoint.](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li>
 
 ## <a name="step-2-select-deployment-method"></a>Paso 2: Seleccionar método de implementación
 

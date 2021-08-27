@@ -19,12 +19,12 @@ search.appverid:
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0d5803560ea965e222669027be30860d8a17328b2d097705dabe9bb88e5c42c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1711ce8154afb976ce89ac7760f5bec9afca7292
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57049505"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532576"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -39,7 +39,7 @@ En la ilustración:
 
 - Comience con los informes de prevención de pérdida de datos de Microsoft 365 para supervisar datos personales en SharePoint Online, OneDrive para la Empresa y correo electrónico en tránsito. Estos informes proporcionan mayor nivel de detalle de supervisión de datos personales. No obstante, estos informes no incluyen todos los servicios de Office 365.
 
-- Después, use directivas de alerta y el registro de auditoría para supervisar la actividad de los servicios. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría funciona en todos los servicios: Sway, Power BI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo electrónico en tránsito, y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
+- Después, use directivas de alerta y el registro de auditoría para supervisar la actividad de los servicios. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría funciona en todos los servicios: Sway, Power BI, eDiscovery, Dynamics 365, Power Automate, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo electrónico en tránsito, y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
 
 - Por último, use Microsoft Cloud App Security para supervisar los archivos con datos confidenciales de otros proveedores SaaS. Próximamente, se podrán usar los tipos de información confidencial y las etiquetas unificadas en Azure Information Protection y Office con Cloud App Security. Puede configurar directivas que se apliquen a todas las aplicaciones específicas (como Box) o a aplicaciones SaaS. Cloud App Security no busca archivos en Exchange Online, incluidos los archivos adjuntos de correo electrónico.
 

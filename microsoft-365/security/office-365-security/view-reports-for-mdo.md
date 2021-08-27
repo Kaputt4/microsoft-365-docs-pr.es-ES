@@ -20,12 +20,12 @@ description: Los administradores pueden aprender a buscar y usar defender para O
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca1013e631c0a041d2fa4475081588a65c299129fc017e98235f57c95cba88f1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5cc6c39c9d18e1fcc206f1d8cb81451201541e61
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56817120"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614963"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver Defender para obtener Office 365 informes en el portal Microsoft 365 Defender web
 
@@ -37,7 +37,7 @@ ms.locfileid: "56817120"
 
 Microsoft Defender para organizaciones Office 365 (por ejemplo, suscripciones Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 1 o Microsoft Defender para complementos del Plan 2 de Office 365) contienen una variedad de informes relacionados con la seguridad. Si tiene los [permisos](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)necesarios, puede ver estos informes en el  portal de Microsoft 365 Defender yendo a Informes de correo electrónico & colaboración Correo electrónico & informes \>  \> **de colaboración**. Para ir directamente a la página **Informes de colaboración & correo** electrónico, abra <https://security.microsoft.com/emailandcollabreport> .
 
-![Página & informes de colaboración de correo electrónico en el portal de Microsoft 365 Defender web](../../media/email-collaboration-reports.png)
+![Página & informes de colaboración en el portal de Microsoft 365 Defender correo electrónico.](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
@@ -63,7 +63,7 @@ La latencia de red y del lado cliente no se incluyen.
 
 Para ver el informe, abra el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración.** En la página **Informes de colaboración &** correo electrónico, busque Informe de latencia **de** correo y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/mailLatencyReport> .
 
-![Widget de informe de latencia de correo en la página Informes de colaboración & correo electrónico](../../media/mail-latency-report-widget.png)
+![Widget de informe de latencia de correo en la página Informes de colaboración & correo electrónico.](../../media/mail-latency-report-widget.png)
 
 En la **página Informe de latencia de** correo, las pestañas siguientes están disponibles en la página Informe de latencia **de** correo:
 
@@ -78,7 +78,7 @@ Independientemente de la pestaña que seleccione, el gráfico muestra los mensaj
 
 Al pasar el mouse sobre una categoría del gráfico, puede ver un desglose de la latencia en cada categoría.
 
-![Vista percentil 50 del informe de latencia de correo](../../media/mail-latency-report-50th-percentile-view.png)
+![Vista percentil 50 del informe de latencia de correo.](../../media/mail-latency-report-50th-percentile-view.png)
 
 Si hace clic **en Filtrar,** puede filtrar el gráfico y la tabla de detalles por los siguientes valores:
 
@@ -107,7 +107,7 @@ El **informe de protección contra** amenazas url proporciona vistas de resumen 
 
 Para ver el informe, abra el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración.** En la página **Informes de colaboración &** correo electrónico, busque la página protección de direcciones **URL** y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/URLProtectionActionReport> .
 
-![Widget de informe de protección de direcciones URL en la página Informes de & de colaboración](../../media/url-protection-report-widget.png)
+![Widget de informe de protección de direcciones URL en la página & informes de colaboración de correo electrónico.](../../media/url-protection-report-widget.png)
 
 Las vistas disponibles en la página **informe de protección contra** amenazas de url se describen en las secciones siguientes.
 
@@ -116,7 +116,7 @@ Las vistas disponibles en la página **informe de protección contra** amenazas 
 
 ### <a name="view-data-by-url-click-protection-action"></a>Ver datos por acción de protección de clics de dirección URL
 
-![Vista de acción de protección de clic de url en el informe de protección contra amenazas de url](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+![Url click protection action view in the URL threat protection report.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 La **vista Ver datos por acción** de protección de clics de dirección URL muestra el número de clics de dirección URL de los usuarios de la organización y los resultados del clic:
 
@@ -145,12 +145,12 @@ La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en 
 - **Hora de hacer clic**
 - **Usuario**
 - **URL**
-- **Action**
+- **Acción**
 - **Aplicación**
 
 ### <a name="view-data-by-url-click-by-application"></a>Ver datos por dirección URL hacer clic por aplicación
 
-![Url click by application view in the URL threat protection report](../../media/url-threat-protection-report-url-click-by-application-view.png)
+![Url click by application view in the URL threat protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
 La **vista Ver datos por dirección URL clic** por aplicación muestra el número de clics de dirección URL de las aplicaciones que admiten Caja fuerte vínculos:
 
@@ -177,7 +177,7 @@ La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en 
 - **Hora de hacer clic**
 - **Usuario**
 - **URL**
-- **Action**
+- **Acción**
 - **Aplicación**
 
 ## <a name="additional-reports-to-view"></a>Informes adicionales para ver
@@ -222,7 +222,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 
@@ -232,4 +232,4 @@ Si no ve datos en defender para los informes Office 365, compruebe que las direc
 
 [Informes e información inteligentes en el portal Microsoft 365 Defender web](reports-and-insights-in-security-and-compliance.md)
 
-[Permisos de función (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)

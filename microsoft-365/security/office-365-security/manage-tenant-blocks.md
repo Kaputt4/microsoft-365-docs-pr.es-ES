@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd3ff63482340cb69a432e73d7ca8ff258f86522
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 2dc45779f7e5656e2edfcb1ea89ef19f95cc3d2e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349961"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561247"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Agregar bloques a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -38,16 +38,16 @@ ms.locfileid: "58349961"
 
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
 
-2. En la **página Lista de inquilinos permitidos o** **bloqueados,** compruebe que la pestaña Remitentes está seleccionada y, a continuación, haga clic ![ en Bloquear icono ](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+2. En la **página Lista de inquilinos permitidos o** **bloqueados,** compruebe que la pestaña Remitentes está seleccionada y, a continuación, haga clic ![ en Bloquear icono.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
 3. En el **menú desplegable Bloquear remitentes** que aparece, configure las siguientes opciones:
    - **Direcciones de correo electrónico del** remitente o dominios: escriba un remitente (dirección de correo electrónico o dominio) por línea, hasta un máximo de 20.
    - **Nunca expire:** realice uno de los siguientes pasos:
-     - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
+     - Compruebe que la configuración está desactivada ( Desactivar. ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
 
        o
 
-     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
+     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Activar.](../../media/scc-toggle-on.png).
    - **Nota opcional:** escriba texto descriptivo para las entradas.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
@@ -56,16 +56,16 @@ ms.locfileid: "58349961"
 
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
 
-2. En la **página Lista de inquilinos permitidos o** bloqueados, compruebe que la pestaña **Direcciones** URL está seleccionada y, a continuación, haga clic en Bloquear ![ icono ](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+2. En la **página Lista de inquilinos permitidos o** bloqueados, compruebe que la pestaña **Direcciones** URL está seleccionada y, a continuación, haga clic en ![ Bloquear icono.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
 3. En el **menú desplegable Bloquear direcciones URL** que aparece, configure las siguientes opciones:
    - **Agregar direcciones URL con caracteres comodín:** escriba una dirección URL por línea, hasta un máximo de 20. Para obtener más información acerca de la sintaxis de las entradas url, consulte la sección Sintaxis de dirección URL en Administrar la lista de [inquilinos permitidos o bloqueados.](tenant-allow-block-list.md)
    - **Nunca expire:** realice uno de los siguientes pasos:
-     - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
+     - Compruebe que la configuración está desactivada ( Desactivar. ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
 
        o
 
-     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
+     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Activar.](../../media/scc-toggle-on.png).
    - **Nota opcional:** escriba texto descriptivo para las entradas.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
@@ -74,16 +74,16 @@ ms.locfileid: "58349961"
 
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
 
-2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la **pestaña** Archivos y, a continuación, haga clic en Bloquear ![ icono ](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la **pestaña** Archivos y, a continuación, haga clic en ![ Bloquear icono.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
 3. En el menú desplegable **Bloquear** archivos que aparece, configure las siguientes opciones:
    - **Agregar hash de archivo:** escriba un valor hash SHA256 por línea, hasta un máximo de 20.
    - **Nunca expire:** realice uno de los siguientes pasos:
-     - Compruebe que la configuración está desactivada ( Desactivar ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
+     - Compruebe que la configuración está desactivada ( Desactivar. ) y use el cuadro Quitar en para especificar la fecha ![ ](../../media/scc-toggle-off.png) de expiración de las entradas. 
 
      o
 
-     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Habilitar](../../media/scc-toggle-on.png).
+     - Mueva el botón de alternancia a la derecha para configurar las entradas para que nunca expiren: ![Activar.](../../media/scc-toggle-on.png).
    - **Nota opcional:** escriba texto descriptivo para las entradas.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
@@ -99,7 +99,7 @@ ms.locfileid: "58349961"
 
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
 
-2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la pestaña **Suplantación** y, a continuación, haga clic ![ en Bloquear icono ](../../media/m365-cc-sc-create-icon.png) **Agregar**.
+2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la pestaña **Suplantación** y, a continuación, haga clic ![ en Bloquear icono.](../../media/m365-cc-sc-create-icon.png) **Agregar**.
 
 3. En el **menú desplegable Agregar nuevos pares de** dominio que aparece, configure las siguientes opciones:
    - **Agregar nuevos pares de dominio con caracteres comodín:** escriba un par de dominio por línea, hasta un máximo de 20. Para obtener más información sobre la sintaxis de las entradas de remitente suplantadas, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).

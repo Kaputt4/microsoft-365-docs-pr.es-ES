@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8bfca50816f0efc3ea0c2c8fa17521d038570b839508d6fe67b5db7ba03b379b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a9397eeaf9edd58903a50cf3f9194b995c56d216
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902403"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614889"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>Escala de tiempo del evento: Administración de amenazas y vulnerabilidades
 
@@ -40,8 +40,8 @@ La escala de tiempo del evento es una fuente de noticias de riesgo que le ayuda 
 
 La escala de tiempo [](tvm-exposure-score.md) del evento también cuenta la historia de la puntuación de exposición y la puntuación segura de [Microsoft](tvm-microsoft-secure-score-devices.md) para dispositivos para que puedas determinar la causa de grandes cambios. Los eventos pueden afectar a los dispositivos o a la puntuación de los dispositivos. Reduzca la exposición abordando lo que debe corregirse en función de las recomendaciones de [seguridad prioritarias.](tvm-security-recommendation.md)
 
->[!TIP]
->Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
+> [!TIP]
+> Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-event-timeline-page"></a>Vaya a la página Escala de tiempo de eventos
 
@@ -57,22 +57,22 @@ En el panel Administración de amenazas y vulnerabilidades, mantenga el mouse so
 
 Si no hay eventos que afecten a los dispositivos o a la puntuación de los dispositivos, no se mostrará ninguno.
 
-![Puntuación de exposición activa ](images/tvm-event-timeline-exposure-score350.png) 
- ![ el puntero puntuación segura de Microsoft para dispositivos](images/tvm-event-timeline-device-hover360.png)
+![Puntero de puntuación de exposición. ](images/tvm-event-timeline-exposure-score350.png) 
+ ![ Puntuación segura de Microsoft para dispositivos activa.](images/tvm-event-timeline-device-hover360.png)
 
 ### <a name="drill-down-to-events-from-that-day"></a>Profundizar en los eventos de ese día
 
 Si selecciona Mostrar todos los eventos de este **día,** podrá ir a la página Escala de tiempo de eventos con un intervalo de fechas personalizado para ese día.
 
-![Intervalo de fechas personalizado seleccionado de escala de tiempo de eventos](images/tvm-event-timeline-drilldown.png)
+![Intervalo de fechas personalizado seleccionado por la escala de tiempo del evento.](images/tvm-event-timeline-drilldown.png)
 
 Seleccione **Intervalo personalizado** para cambiar el intervalo de fechas a otro personalizado o a un intervalo de tiempo predefinido.
 
-![Opciones del intervalo de fechas de escala de tiempo de eventos](images/tvm-event-timeline-dates.png)
+![Opciones de intervalo de fechas de escala de tiempo de eventos.](images/tvm-event-timeline-dates.png)
 
 ## <a name="event-timeline-overview"></a>Introducción a la escala de tiempo de eventos
 
-En la página Escala de tiempo del evento, puedes ver toda la información necesaria relacionada con un evento. 
+En la página Escala de tiempo del evento, puedes ver toda la información necesaria relacionada con un evento.
 
 Características:
 
@@ -82,9 +82,9 @@ Características:
 
 Los dos números grandes en la parte superior de la página muestran el número de nuevas vulnerabilidades y vulnerabilidades aprovechables, no eventos. Algunos eventos pueden tener varias vulnerabilidades y algunas vulnerabilidades pueden tener varios eventos.
 
-![Página escala de tiempo de eventos](images/tvm-event-timeline-overview-mixed-type.png)
+![Página escala de tiempo de eventos.](images/tvm-event-timeline-overview-mixed-type.png)
 
-### <a name="columns"></a>Columns
+### <a name="columns"></a>Columnas
 
 - **Fecha:** mes, día, año
 - **Evento:** evento de impacto, incluido el componente, el tipo y el número de dispositivos afectados
@@ -92,21 +92,21 @@ Los dos números grandes en la parte superior de la página muestran el número 
 - **Dispositivos afectados originalmente:** el número y el porcentaje de dispositivos afectados cuando se produjo este evento originalmente. También puedes filtrar por el porcentaje de dispositivos afectados originalmente, de tu número total de dispositivos.
 - **Dispositivos afectados actualmente:** el número actual y el porcentaje de dispositivos que este evento afecta actualmente. Puede encontrar este campo seleccionando **Personalizar columnas**.
 - **Tipos:** reflejan eventos con marca de tiempo que afectan a la puntuación. Se pueden filtrar.
-    - Exploit agregado a un kit de vulnerabilidades
-    - Se ha comprobado la vulnerabilidad
-    - Nueva vulnerabilidad pública
-    - Nueva vulnerabilidad
-    - Nueva evaluación de configuración
+  - Exploit agregado a un kit de vulnerabilidades
+  - Se ha comprobado la vulnerabilidad
+  - Nueva vulnerabilidad pública
+  - Nueva vulnerabilidad
+  - Nueva evaluación de configuración
 - **Tendencia de puntuación:** tendencia de puntuación de exposición
 
 ### <a name="icons"></a>Iconos
 
 Los siguientes iconos se muestran junto a los eventos:
 
-- ![icono de error](images/tvm-black-bug-icon.png) Nueva vulnerabilidad pública
-- ![icono de advertencia de informe](images/report-warning-icon.png) Se publicó una nueva vulnerabilidad
-- ![exploit kit](images/bug-lightning-icon2.png) Exploit encontrado en el kit de vulnerabilidades
-- ![icono de error con icono de advertencia](images/bug-caution-icon2.png) Exploit verified
+- ![icono de error.](images/tvm-black-bug-icon.png) Nueva vulnerabilidad pública
+- ![icono de advertencia de informe.](images/report-warning-icon.png) Se publicó una nueva vulnerabilidad
+- ![exploit kit.](images/bug-lightning-icon2.png) Exploit encontrado en el kit de vulnerabilidades
+- ![icono de error con icono de advertencia.](images/bug-caution-icon2.png) Exploit verified
 
 ### <a name="drill-down-to-a-specific-event"></a>Profundizar en un evento específico
 
@@ -114,9 +114,9 @@ Una vez que selecciones un evento, aparecerá un flyout con una lista de los det
 
 La flecha debajo de "tendencia de puntuación" te ayuda a determinar si este evento potencialmente ha elevado o reducido la puntuación de exposición de la organización. Una mayor puntuación de exposición significa que los dispositivos son más vulnerables a la explotación.
 
-![Control desplegable de escala de tiempo de eventos](images/tvm-event-timeline-flyout500.png)
+![Control de escala de tiempo de eventos.](images/tvm-event-timeline-flyout500.png)
 
-Desde allí, seleccione **Ir a la vista de** recomendación de seguridad relacionada la recomendación que aborda la nueva vulnerabilidad de software en la página recomendaciones de [seguridad](tvm-security-recommendation.md). Después de leer la descripción y los detalles de vulnerabilidad en la recomendación de seguridad, puede enviar una solicitud de corrección y realizar un seguimiento de la solicitud en la [página de corrección](tvm-remediation.md).  
+Desde allí, seleccione **Ir a la vista de** recomendación de seguridad relacionada la recomendación que aborda la nueva vulnerabilidad de software en la página recomendaciones de [seguridad](tvm-security-recommendation.md). Después de leer la descripción y los detalles de vulnerabilidad en la recomendación de seguridad, puede enviar una solicitud de corrección y realizar un seguimiento de la solicitud en la [página de corrección](tvm-remediation.md).
 
 ## <a name="view-event-timelines-in-software-pages"></a>Ver escalas de tiempo de eventos en páginas de software
 
@@ -124,11 +124,11 @@ Para abrir una página de software, seleccione un evento > el nombre de software
 
 Aparecerá una página completa con todos los detalles de un software específico. Pase el mouse sobre el gráfico para ver la escala de tiempo de los eventos de ese software específico.
 
-![Página de software con un gráfico de escala de tiempo de eventos](images/tvm-event-timeline-software2.png)
+![Página de software con un gráfico de escala de tiempo de eventos.](images/tvm-event-timeline-software2.png)
 
 Vaya a la pestaña escala de tiempo del evento para ver todos los eventos relacionados con ese software. También puede ver recomendaciones de seguridad, vulnerabilidades detectadas, dispositivos instalados y distribución de versiones.
 
-![Página de software con una pestaña Escala de tiempo de eventos](images/tvm-event-timeline-software-pages.png)
+![Página de software con una pestaña Escala de tiempo de eventos.](images/tvm-event-timeline-software-pages.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -138,4 +138,3 @@ Vaya a la pestaña escala de tiempo del evento para ver todos los eventos relaci
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)
 - [Corregir puntos vulnerables](tvm-remediation.md)
 - [Inventario de software](tvm-software-inventory.md)
-

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7cfb066ec2eaf486a3cb3e708720436098bb01d0
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 158888fec2be8f310085836e1d34fbcbd8aa93df
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400240"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585659"
 ---
 # <a name="indicator-resource-type"></a>Tipo de recurso Indicator
 
@@ -53,11 +53,12 @@ Propiedad|Tipo|Descripción
 :---|:---|:---
 id|Cadena|Identidad de la [entidad Indicator.](ti-indicator.md)
 indicatorValue|Cadena|El valor del [indicador](ti-indicator.md).
-indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileSha256", "IpAddress", "DomainName" y "Url".
+indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileSha256", "FileMd5", "CertificateThumbprint", "IpAddress", "DomainName" y "Url".
 aplicación|Cadena|La aplicación asociada al indicador.
-acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "AlertAndBlock" y "Allowed".
+acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Warn", "Block", "Audit", "Alert", "AlertAndBlock", "BlockAndRemediate" y "Allowed".
+|externalID|Cadena|Id que el cliente puede enviar en la solicitud de correlación personalizada.|
 sourceType|Enum|"Usuario" en caso de que el indicador creado por un usuario (por ejemplo, desde el portal), "AadApp" en caso de que se haya enviado mediante una aplicación automatizada a través de la API.
-source|cadena|Nombre del usuario o aplicación que envió el indicador.
+createdBySource|string|Nombre del usuario o aplicación que envió el indicador.
 createdBy|String|Identidad única del usuario/aplicación que envió el indicador.
 lastUpdatedBy|Cadena|Identidad del usuario/aplicación que actualizó por última vez el indicador.
 creationTimeDateTimeUtc|DateTimeOffset|La fecha y hora en que se creó el indicador.
@@ -68,7 +69,7 @@ title|Cadena|Título del indicador.
 description|Cadena|Descripción del indicador.
 recommendedActions|Cadena|Acciones recomendadas para el indicador.
 rbacGroupNames|Lista de cadenas|Nombres de grupo de dispositivo RBAC donde se expone y activa el indicador. Lista vacía en caso de que se exponga a todos los dispositivos.
-
+rbacGroupIds|Lista de cadenas|Id. de grupo de dispositivo RBAC donde se expone y activa el indicador. Lista vacía en caso de que se exponga a todos los dispositivos.
 ## <a name="public-preview-indicator-types"></a>Vista previa pública: tipos de indicador
 
 > [!IMPORTANT]

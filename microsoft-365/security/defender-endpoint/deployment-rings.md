@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d0688a9ccae293e68d54ec9f00d74d9829d85d4e
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 55b1e33483b4ba9d3480b1e1c1c8dc2f37557039
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532816"
+ms.locfileid: "58571860"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Implementar Microsoft Defender para endpoint en anillos
 
@@ -44,7 +44,7 @@ Los anillos de implementación se pueden aplicar en los siguientes escenarios:
 
 ## <a name="new-deployments"></a>Nuevas implementaciones
 
-![Imagen de anillos de implementación](images/deployment-rings.png)
+![Imagen de los anillos de implementación.](images/deployment-rings.png)
 
 Un enfoque basado en anillos es un método para identificar un conjunto de puntos de conexión a incorporar y comprobar que se cumplen ciertos criterios antes de continuar con la implementación del servicio en un conjunto de dispositivos más grande. Puede definir los criterios de salida de cada anillo y asegurarse de que se cumplen antes de pasar al siguiente anillo.
 
@@ -103,13 +103,9 @@ En esta fase, puede usar el material de planeación [de implementación](deploym
 
 Use el siguiente material para seleccionar la arquitectura de Microsoft Defender para endpoint adecuada que mejor se adapte a su organización.
 
-<br>
-
-****
-
-|Elemento|Descripción|
-|---|---|
-|[![Imagen digital de la estrategia de implementación de Microsoft Defender para endpoints](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)  |El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li></ul>|
+|**Elemento**|**Descripción**|
+|:-----|:-----|
+|[![Imagen digital de la estrategia de implementación de Microsoft Defender para endpoints.](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li></ul>
 
 ## <a name="existing-deployments"></a>Implementaciones existentes
 
@@ -117,7 +113,7 @@ Use el siguiente material para seleccionar la arquitectura de Microsoft Defender
 
 Para Windows y/o servidores Windows, seleccione varias máquinas para probar con antelación (antes del martes de revisión) mediante el programa de validación de actualización de seguridad **(SUVP).**
 
-Para más información, consulte lo siguiente:
+Para obtener más información, vea:
 
 - [¿Qué es el programa de validación de actualización de seguridad?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Software Update Validation Program and Centro de protección contra malware de Microsoft Establishment : TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
@@ -131,7 +127,7 @@ Con macOS y Linux, puede usar un par de sistemas y ejecutarse en el canal Beta.
 
 La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos en Beta son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante por Preview y, por último, por Current.
 
-![Imagen de anillos insider](images/insider-rings.png)
+![Imagen de los anillos insider.](images/insider-rings.png)
 
 Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa para que usen Beta o Preview.
 

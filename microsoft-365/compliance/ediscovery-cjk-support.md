@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre Advanced eDiscovery en Microsoft 365 idiomas chino, japonés y coreano (CJK), que usan un juego de caracteres de doble byte.
-ms.openlocfilehash: 7301903effa11dbe090197f0445f572b754fb44ca267b39b8cdc18ed27459fb4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bcab34e8232a77cecf7d7331d75d140f73e4db37
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905888"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572040"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>Compatibilidad con lenguaje CJK para Advanced eDiscovery
 
@@ -33,7 +33,7 @@ Advanced eDiscovery admite idiomas de juego de caracteres de doble byte (estos i
 
 - Al analizar [los datos de casos en un conjunto de revisión](analyzing-data-in-review-set.md) mediante la detección casi duplicada, el subproceso de correo electrónico y el análisis de temas.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Cómo puedo crear una búsqueda para recopilar elementos que contengan caracteres CJK?**
 
@@ -41,7 +41,7 @@ Puede usar caracteres CJK para [búsquedas](building-search-queries.md#keyword-s
 
 Proporcionamos compatibilidad con CJK para todos [los](keyword-queries-and-search-conditions.md#search-operators) operadores de búsqueda y las condiciones de [búsqueda,](keyword-queries-and-search-conditions.md#search-conditions)incluidos los operadores **booleanos AND**, **OR**, **NOT** y **NEAR**.
 
-Si está seguro de que las ubicaciones de contenido o los elementos contienen caracteres CJK, pero las búsquedas no devuelven ningún resultado, haga clic en el icono idioma-país o región de la consulta ![Icono de idioma-país/región de consulta en búsqueda de contenido](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccione el valor de código de referencia cultural idioma-país correspondiente para la búsqueda. Por defecto, la versión del idioma/región es la neutra.
+Si está seguro de que las ubicaciones de contenido o los elementos contienen caracteres CJK, pero las búsquedas no devuelven ningún resultado, haga clic en el icono idioma-país o región de la consulta ![Icono de idioma-país o región de consulta en búsqueda de contenido.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccione el valor de código de referencia cultural idioma-país correspondiente para la búsqueda. Por defecto, la versión del idioma/región es la neutra.
 
 **¿Puedo buscar varios idiomas a la vez?**
 
