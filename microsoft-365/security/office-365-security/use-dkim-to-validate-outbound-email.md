@@ -20,12 +20,12 @@ ms.custom:
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a7b1522046926fb0ec3998564f83fdb3d28cb74
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d9f425f94843f2e37026a87a5eab2c8743acc494
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258660"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533272"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -87,7 +87,7 @@ En este ejemplo, si solo había publicado un registro TXT de SPF en su dominio, 
 Todos los dominios aceptados de su espacio empresarial se mostrarán en el portal Microsoft 365 Defender en la página DKIM. Si no lo ve, agregue el dominio aceptado desde la [página dominios](/microsoft-365/admin/setup/add-domain#add-a-domain).
 Una vez agregado el dominio, siga los pasos que se muestran a continuación para configurar DKIM.
 
-Paso 1: Haga clic en el dominio en el que desea configurar DKIM en la página de DKIM
+Paso 1: Haga clic en el dominio en el que quiere configurar DKIM en la página de DKIM (https://security.microsoft.com/dkimv2 o https://protection.office.com/dkimv2).
 
 ![Página DKIM en el portal de Microsoft 365 Defender con un dominio seleccionado](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 

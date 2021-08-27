@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4dac86ca9125359b07c4acfb7500b6920baa019bd2d4df2ca6eff32dde412735
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3c944ea79adc22f587e2a0e20e3d783f845d15f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867773"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548779"
 ---
 # <a name="hunt-for-ransomware"></a>Buscar ransomware
 
@@ -235,7 +235,7 @@ La consulta consolidada devuelve los siguientes resultados:
 - **TotalEvidenceCount:** número de signos observados
 - **UniqueEvidenceCount:** número de tipos de signos observados
 
-![Imagen de los resultados de la consulta para la actividad ransomware](../../media/advanced-hunting-ransomware-query.png)
+![Imagen de los resultados de la consulta para la actividad ransomware.](../../media/advanced-hunting-ransomware-query.png)
 
 *Resultados de consulta que muestran dispositivos afectados y recuentos de diversos signos de actividad ransomware*
 

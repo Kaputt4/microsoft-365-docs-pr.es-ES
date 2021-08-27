@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: ee2e3630901f5c18382f2671ba72f684602a309edd2b28efa22f3ea14567a326
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2bc2af6fcb91b916ef3d4ff9f6397fca71aabb27
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864188"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532864"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -86,7 +86,7 @@ Consulte la página [productos disponibles por región](https://go.microsoft.com
 
 ### <a name="what-services-support-multi-geo"></a>¿Qué servicios son compatibles con Multi-Geo?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) está disponible para Exchange Online, OneDrive y SharePoint Online. Microsoft está examinando Multi-Geo para su funcionamiento en otros servicios de Microsoft 365.
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) está disponible para Exchange Online, OneDrive para la Empresa, SharePoint Online y Teams.
 
 ### <a name="what-are-the-exceptions-for-intune-data-locations"></a>¿Cuáles son las excepciones para las ubicaciones de datos de Intune?
 
@@ -114,7 +114,7 @@ Las siguientes ubicaciones geográficas globales pueden almacenar datos en repos
 | Ubicaciones geográficas globales | Ubicaciones en las que se almacenan los datos de los clientes |
 | --- | --- |
 | Geografía global 1: EMEA (Europa, Oriente Medio y África) | Austria, Finlandia, Francia, Irlanda, Países Bajos |
-| Geografía global 2: Asia Pacífico | Hong Kong, Japón, Malasia, Singapur, Corea del Sur |
+| Geografía global 2: Asia Pacífico | RAE de Hong Kong, Japón, Malasia, Singapur, Corea del Sur |
 | Geografía global 3: América | Brasil, Chile, Estados Unidos |
 
 ## <a name="countryregion-specific-data-center-city-locations"></a>Ubicaciones de ciudades de centros de datos específicos por país o región

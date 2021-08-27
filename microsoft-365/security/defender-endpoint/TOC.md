@@ -600,7 +600,7 @@
 ####### [Enumerar máquinas por vulnerabilidad](get-machines-by-vulnerability.md)
 
 ##### [Cómo usar las API: Ejemplos]()
-###### [Microsoft Flow](api-microsoft-flow.md)
+###### [Power Automate](api-microsoft-flow.md)
 ###### [Power BI](api-power-bi.md)
 ###### [Búsqueda avanzada de amenazas con Python](run-advanced-query-sample-python.md)
 ###### [Búsqueda avanzada de amenazas con PowerShell](run-advanced-query-sample-powershell.md)

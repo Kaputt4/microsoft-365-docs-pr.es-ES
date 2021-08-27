@@ -20,12 +20,12 @@ ms.custom:
 description: En este tema se le guía a través de la configuración recomendada para la configuración de todo el espacio empresarial que afecta a la seguridad del Microsoft 365 empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e8008bafe2aae7f3076257662fb3eb0bd513310431cf7711db344379e6923b8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 838b9b01790b85c3903206285356cc6c22507821
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56885419"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548647"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar el inquilino de Microsoft 365 para aumentar la seguridad
 
@@ -71,7 +71,7 @@ Visite estos informes y paneles para obtener más información sobre el estado d
 
 ****
 
-|Panel|Descripción|
+|Panel|Description|
 |---|---|
 |Informes de seguridad de correo electrónico|Estos informes están disponibles en Exchange Online Protection. Para obtener más información, vea [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).|
 |Defender para Office 365 informes|Los informes solo están disponibles en Defender para Office 365. Para obtener más información, vea [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).|
@@ -147,7 +147,7 @@ Más información:
 - [Más información sobre Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 - [¿Qué es Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)
 
-![Panel de Cloud App Security](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+![Cloud App Security panel.](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

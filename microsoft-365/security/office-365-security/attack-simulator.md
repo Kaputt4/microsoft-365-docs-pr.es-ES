@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar Attack Simulator en el Centro de seguridad & Complance para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 902673c39e0f2c9c68e8408073dc25bb7f92c87189e10568c80a1be21e2c7b02
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 631c6d9ecfeb24ddfad16391990043d283b02a82
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56878259"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548671"
 ---
 # <a name="attack-simulator-in-the-security--compliance-center"></a>Simulador de ataque en el Centro de seguridad & cumplimiento
 
@@ -69,7 +69,7 @@ En Attack Simulator, hay disponibles dos tipos diferentes de campañas de suplan
 
   - Una página predeterminada que explica que se trataba de una prueba y proporciona sugerencias para reconocer mensajes de suplantación de identidad.
 
-    ![Qué ven los usuarios si hacen clic en el vínculo de suplantación de identidad (phishing) y escriben sus credenciales](../../media/attack-simulator-phishing-result.png)
+    ![Qué ven los usuarios si hacen clic en el vínculo de suplantación de identidad y escriben sus credenciales.](../../media/attack-simulator-phishing-result.png)
 
   - Una página personalizada (DIRECCIÓN URL) que especifique.
 
@@ -164,7 +164,7 @@ Si va a usar una de las plantillas integradas o crear el mensaje de correo elect
    - Haga **clic en Usar plantilla** y seleccione una plantilla de correo electrónico integrada o personalizada. Después de seleccionar la plantilla, **el** cuadro Nombre se rellena automáticamente en función de la plantilla, pero puede cambiar el nombre.
 
    > [!div class="mx-imgBorder"]
-   > ![Página de inicio de phishing](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   > ![Página de inicio de phishing.](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -228,7 +228,7 @@ Si va a usar una de las plantillas integradas o crear el mensaje de correo elect
    Para las campañas de suplantación de identidad **(datos adjuntos),** debes quitar el vínculo  del cuerpo del mensaje (de lo contrario, el mensaje contendrá un vínculo y un archivo adjunto, y los clics de vínculo no se realizarán en una campaña de datos adjuntos).
 
    > [!div class="mx-imgBorder"]
-   > ![Redacción del cuerpo del correo electrónico](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+   > ![Redacción del cuerpo del correo electrónico.](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
    Cuando termine, haga clic en **Siguiente**.
 

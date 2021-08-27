@@ -18,12 +18,12 @@ description: Los administradores pueden obtener información sobre los campos de
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c25679e6b997756d9af1ccfd16eb5fd41565c4d4472e7ebc22fe572277997a6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4e115c6bda6e2a9ac8da089f9b13f3acdddd2713
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56885534"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533440"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Encabezados de mensajes de correo no deseado en Microsoft 365
 
@@ -74,7 +74,7 @@ Los campos y valores individuales se describen en la siguiente tabla.
 |`LANG`|El idioma en que se redactó el mensaje, que está definido por el código de país (por ejemplo, ru_RU indica ruso).|
 |`PTR:[ReverseDNS]`|El registro PTR (también conocido como la búsqueda inversa de DNS) de la dirección IP de la fuente.|
 |`SCL`|Nivel de confianza de correo electrónico no deseado (SCL) del mensaje. Un valor superior indica que el mensaje tiene más posibilidades de ser correo no deseado. Para obtener más información, consulte [Nivel de confianza del correo no deseado (SCL)](spam-confidence-levels.md).|
-|`SFTY`|El mensaje se identificó como suplantación de identidad (phishing) y también se marcará con uno de los siguientes valores: <ul><li>9.19: Suplantación de dominio. El dominio remitente está intentando [suplantar un dominio protegido](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). La sugerencia de seguridad para la suplantación del dominio se agrega al mensaje (si está habilitada).</li><li>9.20: Suplantación de usuario. El usuario remitente está intentando suplantar a un usuario en la organización del destinatario, o bien [a un usuario protegido que se especificó en una directiva contra la suplantación de identidad](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en Microsoft Defender para Office 365. La sugerencia de seguridad para la suplantación del usuario se agrega al mensaje (si está habilitada).</li></ul>|
+|`SFTY`|El mensaje se identificó como suplantación de identidad (phishing) y también se marcará con uno de los siguientes valores: <ul><li>9.19: Suplantación de dominio. El dominio remitente está intentando [suplantar un dominio protegido](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). La sugerencia de seguridad para la suplantación del dominio se agrega al mensaje (si está habilitada).</li><li>9.20: Suplantación de usuario. El usuario remitente está intentando suplantar a otro usuario de la organización del destinatario, o bien a un [usuario protegido que se especificó en una directiva contra la suplantación de identidad](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en Microsoft Defender para Office 365. La sugerencia de seguridad para la suplantación del usuario se agrega al mensaje (si está habilitada).</li></ul>|
 |`SFV:BLK`|Se omitió el filtrado y se bloqueó el mensaje porque se envió desde una dirección de la lista de remitentes bloqueados de un usuario. <p> Para más información sobre cómo los administradores pueden administrar la lista de Remitentes bloqueados de un usuario, consulte [Configurar las opciones de correo electrónico no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:NSPM`|El filtrado de correo no deseado marcó el mensaje como deseado y se envió a los destinatarios correspondientes.|
 |`SFV:SFE`|Se omitió el filtrado y el mensaje se permitió porque se envió desde una dirección de la lista de remitentes seguros de un usuario. <p> Para más información sobre cómo los administradores pueden administrar la lista de Remitentes seguros de un usuario, consulte [Configurar las opciones de correo electrónico no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).|

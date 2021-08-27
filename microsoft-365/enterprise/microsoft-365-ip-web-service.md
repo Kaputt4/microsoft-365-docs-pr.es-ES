@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Aprenda a usar la dirección IP de Office 365 y el servicio web URL para identificar y diferenciar mejor el tráfico de red de Office 365.
-ms.openlocfilehash: fd9951d78757c07d543c502515304e6d8792ed5493665aebfb21b1b3ed84d725
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62e9b638b0f767aef3b7f52bb3d129310d2bcbd5
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864548"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533452"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>El servicio web de URL y dirección IP de Office 365
 
@@ -605,7 +605,7 @@ Las actualizaciones de los parámetros o los resultados de estos métodos de ser
 
 Puede usar algunos métodos diferentes para recibir notificaciones de correo electrónico cuando se publiquen cambios en las direcciones IP y URL en el servicio web.
 
-- Para usar una solución de Microsoft Flow, vea [Usar Microsoft Flow para recibir un correo electrónico de cambios en las direcciones IP y URL de Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
+- Para usar una solución de Power Automate, vea [Usar Power Automate para recibir un correo electrónico de cambios en las direcciones IP y URL de Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - Para implementar una aplicación lógica de Azure con una plantilla de ARM, vea [Notificación de actualización de Office 365 (v1.1)](https://aka.ms/ipurlws-updates-template).
 - Para escribir su propio script de notificación con PowerShell, vea [Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage).
 

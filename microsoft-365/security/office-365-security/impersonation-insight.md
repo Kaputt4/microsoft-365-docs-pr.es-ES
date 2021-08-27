@@ -19,12 +19,12 @@ description: Los administradores pueden aprender cómo funciona la información 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b17fd2f0b14cd7dfd6d8a4326a911c7e9a8db5f8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b01da861b3d85bee1f89a92da0d973679fca3c0c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254984"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548731"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Información de suplantación en Defender para Office 365
 
@@ -60,7 +60,7 @@ Puede usar la información de suplantación en el portal de Microsoft 365 Defend
 
   Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-  **Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  **Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 - Habilitas y configuras la protección de suplantación en las directivas contra suplantación de identidad en Microsoft Defender para Office 365. La protección de suplantación no está habilitada de forma predeterminada. Para obtener más información, vea [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
@@ -70,7 +70,7 @@ Puede usar la información de suplantación en el portal de Microsoft 365 Defend
 
 2. En la **página Anti-phishing,** la información de suplantación tiene este aspecto:
 
-   ![Información sobre suplantación y suplantación de identidad en la página De directivas contra suplantación de identidad](../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png)
+   ![Información sobre suplantación y suplantación de identidad en la página Directiva contra suplantación de identidad.](../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png)
 
    La información tiene dos modos:
 
@@ -98,7 +98,7 @@ En la **página Información de suplantación** que aparece después de hacer cl
 
 Puede hacer clic en los encabezados de columna seleccionados para ordenar los resultados.
 
-Para filtrar los resultados, puede usar el cuadro Buscar icono de búsqueda para escribir una lista separada por comas de ![ valores para filtrar los ](../../media/m365-cc-sc-search-icon.png)  resultados.
+Para filtrar los resultados, puede usar el ![ icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Cuadro** de búsqueda para escribir una lista separada por comas de valores para filtrar los resultados.
 
 ### <a name="view-details-about-messages-from-senders-in-impersonated-domains"></a>Ver detalles sobre los mensajes de remitentes en dominios suplantados
 
@@ -106,8 +106,8 @@ En la **pestaña Dominios** de la página Información **de suplantación,** sel
 
 - **Directiva de suplantación de selección para modificar:** Seleccione la directiva contra suplantación de identidad afectada que desea modificar. Solo están disponibles las directivas en las que se define el dominio suplantado en la directiva. Consulte la página anterior para ver qué directiva era realmente responsable de detectar el dominio suplantado (probablemente en función del destinatario y la prioridad de la directiva).
 - **Agregar** a la lista de suplantación permitida: use esta alternancia para agregar o quitar el remitente de los dominios y **remitentes** de confianza (excepciones de suplantación) para la directiva contra suplantación de identidad que seleccionó:
-  - Si el **valor Permitido para suplantar** esta entrada era **No**, la alternancia está desactivada. Para eximir a todos los remitentes de este dominio de la evaluación por protección de suplantación, deslice el botón de alternancia a on: ![ Toggle on ](../../media/scc-toggle-on.png) . El dominio se agrega a la **lista Dominios de** confianza en la configuración de protección de suplantación de la directiva contra suplantación de identidad.
-  - Si el **valor Permitido para suplantar** esta entrada era **Sí**, la alternancia está activa. Para devolver todos los remitentes de este dominio a la evaluación mediante la protección de suplantación, deslice el botón de alternancia a desactivado: ![ Desactivar ](../../media/scc-toggle-off.png) . El dominio se quita de la **lista Dominios de** confianza en la configuración de protección de suplantación de la directiva contra suplantación de identidad.
+  - Si el **valor Permitido para suplantar** esta entrada era **No**, la alternancia está desactivada. Para eximir a todos los remitentes de este dominio de la evaluación por protección de suplantación, deslice la palanca para activar: ![ Activar. ](../../media/scc-toggle-on.png) . El dominio se agrega a la **lista Dominios de** confianza en la configuración de protección de suplantación de la directiva contra suplantación de identidad.
+  - Si el **valor Permitido para suplantar** esta entrada era **Sí**, la alternancia está activa. Para devolver todos los remitentes de este dominio a la evaluación por protección de suplantación, deslice la palanca a desactivado: ![ Desactivar. ](../../media/scc-toggle-off.png) . El dominio se quita de la **lista Dominios de** confianza en la configuración de protección de suplantación de la directiva contra suplantación de identidad.
 - Por qué lo capturamos.
 - Lo que necesita hacer.
 - Un resumen de dominio que enumera el dominio suplantado.
@@ -139,8 +139,8 @@ En la **pestaña Usuarios** de la página Información **de suplantación,** sel
 
 - **Directiva de suplantación de selección para modificar:** Seleccione la directiva contra suplantación de identidad afectada que desea modificar. Solo están disponibles las directivas en las que el remitente suplantado está definido en la directiva. Consulte la página anterior para ver qué directiva era realmente responsable de detectar el remitente suplantado (probablemente en función del destinatario y la prioridad de la directiva).
 - **Agregar** a la lista de suplantación permitida: use esta alternancia para agregar o quitar el remitente de los dominios y **remitentes** de confianza (excepciones de suplantación) para la directiva contra suplantación de identidad que seleccionó:
-  - Si el **valor Permitido para suplantar** esta entrada era **No**, la alternancia está desactivada. Para eximir al remitente de la evaluación mediante protección de suplantación, deslice la palanca para activar: ![ Activar ](../../media/scc-toggle-on.png) . El remitente se agrega a la **lista Usuarios de** confianza en la configuración de protección de suplantación de la directiva contra suplantación.
-  - Si el **valor Permitido para suplantar** esta entrada era **Sí**, la alternancia está activa. Para devolver al remitente a la evaluación mediante la protección de suplantación, deslice la alternancia a desactivado: ![ Desactivar ](../../media/scc-toggle-off.png) . El remitente se quita de la **lista Usuarios de confianza** en la configuración de protección de suplantación de la directiva contra suplantación de identidad.
+  - Si el **valor Permitido para suplantar** esta entrada era **No**, la alternancia está desactivada. Para eximir al remitente de la evaluación mediante la protección de suplantación, deslice la palanca para activar: ![ Activar. ](../../media/scc-toggle-on.png) . El remitente se agrega a la **lista Usuarios de** confianza en la configuración de protección de suplantación de la directiva contra suplantación.
+  - Si el **valor Permitido para suplantar** esta entrada era **Sí**, la alternancia está activa. Para devolver al remitente a la evaluación mediante la protección de suplantación, deslice el botón de alternancia a desactivado: ![ Desactivar. ](../../media/scc-toggle-off.png) . El remitente se quita de la **lista Usuarios de confianza** en la configuración de protección de suplantación de la directiva contra suplantación de identidad.
 - Por qué lo capturamos.
 - Lo que necesita hacer.
 - Un resumen del remitente que enumera el remitente suplantado.

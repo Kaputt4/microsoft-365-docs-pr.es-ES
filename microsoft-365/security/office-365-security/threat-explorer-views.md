@@ -17,12 +17,12 @@ description: Obtenga información sobre cómo usar el Explorador de amenazas y e
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb58b8c605354dcecf82f11176955f89e9aeae04403af1f0ae591f14ae5f9141
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae46d8540ec0d2bd9ae8d906a9a44fd0e397ee2f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56815707"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548719"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el Explorador de amenazas y detecciones en tiempo real
 
@@ -33,7 +33,7 @@ ms.locfileid: "56815707"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-![Explorador de amenazas](../../media/explorer.png)
+![Explorador de amenazas.](../../media/explorer.png)
 
 [El Explorador de](threat-explorer.md) amenazas (y el informe de detecciones en tiempo real) es una herramienta eficaz y casi en tiempo real que ayuda a los equipos de operaciones de seguridad a investigar y responder a las amenazas en el portal de Microsoft 365 Defender. El Explorador (y el informe de detecciones en tiempo real) muestra información sobre el malware sospechoso y la suplantación de identidad (phish) en el correo electrónico y los archivos de Office 365, así como otras amenazas y riesgos de seguridad para su organización.
 
@@ -58,7 +58,7 @@ Al abrir por primera vez el Explorador (o el informe de detecciones en tiempo re
 
 Use el **menú** Ver para cambiar la información que se muestra. Las herramientas le ayudan a determinar qué vista usar.
 
-![Menú Vista del Explorador de amenazas](../../media/all-email.png)
+![Menú Vista del Explorador de amenazas.](../../media/all-email.png)
 
 Una vez que haya seleccionado una vista, puede aplicar filtros y configurar consultas para realizar análisis adicionales. Las secciones siguientes proporcionan una breve introducción a las distintas vistas disponibles en el Explorador (o detecciones en tiempo real).
 
@@ -66,53 +66,53 @@ Una vez que haya seleccionado una vista, puede aplicar filtros y configurar cons
 
 Para ver este informe, en el Explorador (o detecciones en tiempo real), elija **Ver** malware \>  \> **de correo electrónico**. Esta vista muestra información sobre los mensajes de correo electrónico que se identificaron como que contienen malware.
 
-![Ver datos sobre el correo electrónico identificado como malware](../../media/detection-technology.png)
+![Ver datos sobre el correo electrónico identificado como malware.](../../media/detection-technology.png)
 
 Haga **clic en** Remitente para abrir la lista de opciones de visualización. Use esta lista para ver datos por remitente, destinatarios, dominio del remitente, asunto, tecnología de detección, estado de protección y mucho más.
 
 Por ejemplo, para ver qué acciones se realizaron en los mensajes de correo electrónico detectados, elija **Estado de protección en** la lista. Seleccione una opción y, a continuación, haga clic en el botón Actualizar para aplicar ese filtro al informe.
 
-![Opciones de estado de protección contra amenazas para el Explorador de amenazas](../../media/ThreatExplorerProtectionStatusOptions.png)
+![Opciones de estado de protección contra amenazas para el Explorador de amenazas.](../../media/ThreatExplorerProtectionStatusOptions.png)
 
 Debajo del gráfico, vea más detalles sobre mensajes específicos. Al seleccionar un elemento de la lista, se abre un panel desplegable, donde puede obtener más información sobre el elemento seleccionado.
 
-![Explorador de amenazas con el menú desplegable abierto](../../media/ThreatExplorerMalwareItemSelectedFlyout.png)
+![Explorador de amenazas con el menú desplegable abierto.](../../media/ThreatExplorerMalwareItemSelectedFlyout.png)
 
 ## <a name="email--phish"></a>Correo electrónico > phish
 
 Para ver este informe, en el Explorador (o detecciones en tiempo real), elija **Ver** \> **suplantación de** identidad \> **de correo electrónico**. En esta vista se muestran los mensajes de correo electrónico identificados como intentos de suplantación de identidad.
 
-![Ver datos sobre el correo electrónico identificado como intentos de suplantación de identidad](../../media/phish.png)
+![Ver datos sobre el correo electrónico identificado como intentos de suplantación de identidad.](../../media/phish.png)
 
 Haga **clic en** Remitente para abrir la lista de opciones de visualización. Use esta lista para ver los datos por remitente, destinatarios, dominio del remitente, IP del remitente, dominio url, veredicto de clic y mucho más.
 
 Por ejemplo, para ver qué acciones se realizaron cuando las personas hicieron clic en direcciones URL que se identificaron como intentos de suplantación de identidad, elija Hacer clic en veredicto en la lista, seleccione una o más opciones y, a continuación, haga clic en el botón Actualizar. 
 
-![Haga clic en opciones de veredicto para el informe de suplantación de identidad](../../media/click-verdict.png)
+![Haga clic en Opciones de veredicto para el informe de suplantación de identidad.](../../media/click-verdict.png)
 
 Debajo del gráfico, vea más detalles sobre mensajes específicos, clics de dirección URL, direcciones URL y origen de correo electrónico.
 
-![Direcciones URL detectadas como suplantación de identidad en mensajes de correo electrónico](../../media/ThreatExplorerEmailPhishURLs.png)
+![Direcciones URL detectadas como suplantación de identidad en mensajes de correo electrónico.](../../media/ThreatExplorerEmailPhishURLs.png)
 
 Al seleccionar un elemento de la lista, como una dirección URL que se detectó, se abrirá un panel desplegable, donde podrá obtener más información sobre el elemento que seleccionó.
 
-![Detalles sobre una dirección URL detectada](../../media/ThreatExplorerEmailPhishURLDetails.png)
+![Detalles sobre una dirección URL detectada.](../../media/ThreatExplorerEmailPhishURLDetails.png)
 
 ## <a name="email--submissions"></a>Envíos > correo electrónico
 
 Para ver este informe, en el Explorador (o detecciones en tiempo real), elija **Ver** \>  \> **envíos de correo electrónico**. Esta vista muestra el correo electrónico que los usuarios han notificado como correo no deseado, no como correo no deseado o correo electrónico de suplantación de identidad.
 
-![Mensajes de correo electrónico notificados por los usuarios](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
+![Mensajes de correo electrónico notificados por los usuarios.](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
 Haga **clic en** Remitente para abrir la lista de opciones de visualización. Use esta lista para ver información por remitente, destinatarios, tipo de informe (la determinación del usuario de que el correo electrónico era correo no deseado, no correo no deseado o suplantación de identidad) y mucho más.
 
 Por ejemplo, para ver información sobre los mensajes de  correo electrónico que se notificaron como intentos de suplantación de identidad, haga clic en Tipo de informe del remitente, seleccione Suplantación de identidad y, a continuación, haga clic en \> el botón Actualizar. 
 
-![Phish seleccionado para el filtro tipo de informe](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
+![Suplantación de identidad seleccionada para el filtro Tipo de informe.](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
 Debajo del gráfico, vea más detalles sobre mensajes de correo electrónico específicos, como la línea de asunto, la dirección IP del remitente, el usuario que informó del mensaje como correo no deseado, no correo no deseado o suplantación de identidad, etc.
 
-![Mensajes que se han notificado como intentos de suplantación de identidad](../../media/ThreatExplorerEmailPhishUserReportedPhishDetails.png)
+![Mensajes que se han notificado como intentos de suplantación de identidad.](../../media/ThreatExplorerEmailPhishUserReportedPhishDetails.png)
 
 Seleccione un elemento de la lista para ver detalles adicionales.
 
@@ -125,7 +125,7 @@ Para ver este informe, en el Explorador, elija **Ver** \> **correo electrónico*
 
 Para aplicar un filtro, elija **Remitente**, seleccione un elemento de la lista y, a continuación, haga clic en el botón Actualizar. En nuestro ejemplo, utilizamos la **tecnología de detección** como filtro (hay varias opciones disponibles). Ver información por remitente, dominio del remitente, destinatarios, asunto, nombre de archivo de datos adjuntos, familia de malware, estado de protección (acciones realizadas por las características y directivas de protección contra amenazas en Office 365), tecnología de detección (cómo se detectó el malware) y mucho más.
 
-![Ver datos sobre el correo electrónico detectado mediante tecnología de detección](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
+![Ver datos sobre el correo electrónico detectado mediante tecnología de detección.](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
 Debajo del gráfico, vea más detalles sobre mensajes de correo electrónico específicos, como la línea de asunto, el destinatario, el remitente, el estado, etc.
 
@@ -135,7 +135,7 @@ Para ver este informe, en el Explorador (o detecciones en tiempo real), elija **
 
 Ver información por familia de malware, tecnología de detección (cómo se detectó el malware) y carga de trabajo (OneDrive, SharePoint o Teams).
 
-![Ver datos sobre malware detectado](../../media/malware-family.png)
+![Ver datos sobre malware detectado.](../../media/malware-family.png)
 
 Debajo del gráfico, vea más detalles sobre archivos específicos, como el nombre de archivo de datos adjuntos, la carga de trabajo, el tamaño del archivo, quién modificó por última vez el archivo y mucho más.
 
@@ -143,19 +143,19 @@ Debajo del gráfico, vea más detalles sobre archivos específicos, como el nomb
 
 Con el Explorador (y las detecciones en tiempo real), puede aplicar un filtro en un clic. Haga clic en un elemento de la leyenda y ese elemento se convierte en un filtro para el informe. Por ejemplo, supongamos que estamos viendo la vista Malware en el Explorador:
 
-![Ir al Explorador de administración de \> amenazas](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Vaya al Explorador de administración de \> amenazas.](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Al **hacer clic en Detonación de ATP** en este gráfico, se muestra una vista como esta:
 
-![Explorador filtrado para mostrar solo Defender para obtener Office 365 detonación](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Explorador filtrado para mostrar solo Defender para los Office 365 de detonación.](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
 En esta vista, ahora estamos buscando datos para los archivos que fueron detonados [por Caja fuerte datos adjuntos](safe-attachments.md). Debajo del gráfico, podemos ver detalles sobre mensajes de correo electrónico específicos que tenían datos adjuntos detectados por Caja fuerte datos adjuntos.
 
-![Detalles específicos sobre los mensajes de correo electrónico con datos adjuntos detectados](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
+![Detalles específicos sobre los mensajes de correo electrónico con datos adjuntos detectados.](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 
 Al seleccionar uno o varios elementos, se activa el menú **Acciones,** que ofrece varias opciones entre las que elegir para los elementos seleccionados.
 
-![Al seleccionar un elemento se activa el menú Acciones](../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
+![Al seleccionar un elemento, se activa el menú Acciones.](../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
 
 La capacidad de filtrar en un clic y navegar a detalles específicos puede ahorrarle mucho tiempo en investigar amenazas.
 
