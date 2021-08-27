@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 10d4d531acc0e4a323cde6d1034c626419a58a4b06b40be76c0d292c7679ac28
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 165843edcd890f4f7fc743a2b4c4181638409ff7
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852036"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599402"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprender el flujo de trabajo de propuestas
 
@@ -62,8 +62,8 @@ Para obtener más información acerca de los roles de cuenta de facturación, ve
 Si se trata de una nueva cuenta de facturación y nadie ha aceptado un contrato, se convierte automáticamente en el propietario de la cuenta de facturación, siempre que:
 
 - ¿La persona que se nombra en la propuesta\
-    O
-- Ya son un [Azure Active Directory global de](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) la organización
+    OR
+- Ya son un [Azure Active Directory global de](/azure/active-directory/roles/permissions-reference#global-administrator) la organización
 
 ## <a name="what-is-the-overall-workflow"></a>¿Cuál es el flujo de trabajo general?
 
@@ -118,11 +118,11 @@ Si desea realizar cualquier cambio en la propuesta después de la revisión, pó
 
 La propuesta contiene la siguiente información:
 
-| Sección | Description |
+| Sección | Descripción |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nombre de la organización | Nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | La fecha en que expira la oferta de propuesta. Si se pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para comunicarles que aún está interesado en la propuesta. |
-| Divisa | Moneda usada para calcular el costo de los elementos de la propuesta. |
+| Moneda | Moneda usada para calcular el costo de los elementos de la propuesta. |
 | Preparado para | Nombre de cuenta de facturación, dirección, dirección de correo electrónico de contacto y número de teléfono de la persona que solicitó la propuesta. |
 | Preparado por | La dirección de correo electrónico del representante de Microsoft que preparó la propuesta. |
 | Resumen | Muestra el subtotal asociado a la propuesta. Si es necesario, también mostrará la tasa de divisas (FX) que se usa para calcular los costos. |

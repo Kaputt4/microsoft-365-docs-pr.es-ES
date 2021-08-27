@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bba4d6546454b16090910809cf8b99ec907853ad0ac0d810a2ab091b0939f36e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 06f87213131f8fccdd9cfd83d7bdf4ead10c0667
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56881954"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594321"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -75,7 +75,7 @@ Para configurar Defender para Office 365 directivas, se le debe asignar un rol a
 |Rol o grupo de roles|Dónde obtener más información|
 |---|---|
 |administrador global|[Acerca de los roles de administración de Microsoft 365](../../admin/add-users/about-admin-roles.md)|
-|Administrador de seguridad|[Permisos de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Administrador de seguridad|[Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Administración de la organización en Exchange Online|[Permisos de Exchange Online](/exchange/permissions-exo/permissions-exo)|
 |
 
@@ -206,17 +206,17 @@ Para obtener más información acerca de la configuración recomendada para Caja
 1. Abra la **página Caja fuerte datos adjuntos** en el portal Microsoft 365 Defender en <https://security.microsoft.com/safeattachmentv2> .
 
 2. En la **página Caja fuerte datos adjuntos,** haga clic en **Configuración global** y, a continuación, configure las siguientes opciones en el menú desplegable que aparece:
-   - **Activa Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams**: Activa esta opción ( ![ Activar ](../../media/scc-toggle-on.png) ).
+   - Activa Defender para Office 365 para **SharePoint, OneDrive y Microsoft Teams**: Activa esta opción ( ![ Activar. ](../../media/scc-toggle-on.png) ).
 
      > [!IMPORTANT]
      > Antes de activar Caja fuerte datos adjuntos para **SharePoint, OneDrive y Microsoft Teams,** compruebe que el registro de auditoría esté activado en la organización . Normalmente, esta acción la realiza alguien que tiene el rol Registros de auditoría asignado en Exchange Online. Para obtener más información, vea Activar o desactivar la búsqueda [del registro de auditoría!](../../compliance/turn-audit-log-search-on-or-off.md)
 
-   - **Activar documentos Caja fuerte para clientes Office**: Active esta opción ( Activar ![ ](../../media/scc-toggle-on.png) ). Tenga en cuenta que esta característica solo está disponible y es significativa Microsoft 365 E5 o Seguridad de Microsoft 365 E5 licencias.
-   - **Permitir a los usuarios hacer clic** en la vista protegida incluso si Caja fuerte documentos identificaron el archivo como malintencionado : Compruebe que esta configuración está desactivada ( ![ Desactivar ](../../media/scc-toggle-off.png) ).
+   - **Activar documentos Caja fuerte para Office** clientes: Active esta opción ( ![ Activar. ](../../media/scc-toggle-on.png) ). Tenga en cuenta que esta característica solo está disponible y es significativa Microsoft 365 E5 o Seguridad de Microsoft 365 E5 licencias.
+   - **Permitir que los usuarios haga** clic en la vista protegida incluso si Caja fuerte Documentos identifica el archivo como malintencionado : Compruebe que esta configuración está desactivada ( ![ Desactivar. ](../../media/scc-toggle-off.png) ).
 
    Cuando haya terminado, haga clic en **Guardar**
 
-3. En la página **Caja fuerte datos adjuntos,** haga clic ![ en Crear icono ](../../media/m365-cc-sc-create-icon.png) .
+3. En la página **Caja fuerte datos adjuntos,** haga clic ![ en Crear icono. ](../../media/m365-cc-sc-create-icon.png) .
 
 4. En el **Asistente para crear Caja fuerte de directivas de** datos adjuntos que se abre, configure las siguientes opciones:
    - **Asigne un nombre a la página de** directiva:
@@ -250,13 +250,13 @@ Para obtener más información acerca de la configuración recomendada para Caja
 
 2. En la **página Caja fuerte,** haga clic en **Configuración global** y, a continuación, configure las siguientes opciones en el menú desplegable que aparece:
    - **Configuración que se aplican al contenido de la sección Office 365 aplicaciones compatibles:**
-     - **Usa Caja fuerte vínculos en Office 365** aplicaciones: comprueba que esta configuración está activada ( ![ Activar ](../../media/scc-toggle-on.png) ).
-     - **No realice un seguimiento cuando los usuarios hagan clic en vínculos protegidos en Office 365** aplicaciones: desactive esta opción ( ![ Desactivar ](../../media/scc-toggle-off.png) ).
-     - **No permitir que los usuarios hagan clic en la dirección URL original** en Office 365 aplicaciones : Compruebe que esta configuración está activada ( Activar ![ ](../../media/scc-toggle-on.png) ).
+     - **Usar Caja fuerte vínculos en Office 365** aplicaciones: compruebe que esta configuración esté activada ( ![ Activar. ](../../media/scc-toggle-on.png) ).
+     - **No realice un seguimiento cuando los usuarios hagan** clic en vínculos protegidos en Office 365 : Desactive esta opción ( ![ Desactivar. ](../../media/scc-toggle-off.png) ).
+     - **No permitir que los usuarios hagan clic en** la dirección URL original en Office 365 aplicaciones : Compruebe que esta configuración está activada ( ![ Activar. ](../../media/scc-toggle-on.png) ).
 
    Cuando haya terminado, haga clic en **Guardar**
 
-3. En la página **Vínculos Caja fuerte,** haga clic ![ en Crear icono ](../../media/m365-cc-sc-create-icon.png) .
+3. De nuevo en la **página Caja fuerte vínculos,** haga clic ![ en Crear icono. ](../../media/m365-cc-sc-create-icon.png) .
 
 4. En el **Asistente para crear Caja fuerte de directivas de** vínculos que se abre, configure las siguientes opciones:
    - **Asigne un nombre a la página de** directiva:
@@ -306,7 +306,7 @@ Para recibir una notificación cuando un archivo de SharePoint Online o OneDrive
    Cuando haya terminado, haga clic en **Siguiente**
 
 5. En la **página Establecer los destinatarios,** configure las siguientes opciones:
-   - **Enviar notificaciones por correo** electrónico: compruebe que esta configuración está secmentada.
+   - **Enviar notificaciones por correo** electrónico: compruebe que esta configuración está seleccionada.
    - **Destinatarios de correo** electrónico: seleccione uno o varios administradores globales, administradores de seguridad o lectores de seguridad que deben recibir notificaciones cuando se detecte un archivo malintencionado.
    - **Límite de notificación diario:** compruebe **que no hay** ningún límite seleccionado.
 

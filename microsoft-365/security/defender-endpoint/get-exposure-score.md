@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bc7e1cc6cb19f19fcd9cdd826a6df591abb388313f6680c74a6393e13decd3be
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 903176b8c163dcd47e1e11c6c5a82c1ff7363540
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884811"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610992"
 ---
 # <a name="get-exposure-score"></a>Obtener puntuación de exposición
 
@@ -37,7 +37,6 @@ ms.locfileid: "53884811"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Recupera la puntuación de exposición organizativa.
@@ -46,10 +45,10 @@ Recupera la puntuación de exposición organizativa.
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
-:---|:---|:---
-Aplicación | Score.Read.All | 'Leer puntuación de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa) | Score.Read | 'Leer puntuación de administración de amenazas y vulnerabilidades'
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
+---|---|---
+Aplicación|Score.Read.All|'Leer puntuación de administración de amenazas y vulnerabilidades'
+Delegado (cuenta profesional o educativa)|Score.Read|'Leer puntuación de administración de amenazas y vulnerabilidades'
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -60,8 +59,8 @@ GET /api/exposureScore
 ## <a name="request-headers"></a>Encabezados de solicitud
 
 Nombre|Tipo|Descripción
-:---|:---|:---
-Authorization | String | Portador {token}. **Necesario**.
+---|---|---
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -85,8 +84,8 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
 
 Aquí tiene un ejemplo de la respuesta.
 
->[!NOTE]
->La lista de respuestas que se muestra aquí puede truncarse por brevedad. 
+> [!NOTE]
+> La lista de respuestas que se muestra aquí puede truncarse por brevedad.
 
 ```json
 {
@@ -94,10 +93,9 @@ Aquí tiene un ejemplo de la respuesta.
     "time": "2019-12-03T07:23:53.280499Z",
     "score": 33.491554051195706
 }
-
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 - [Administración de vulnerabilidades basada & riesgos](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Puntuación de & vulnerabilidad de amenazas](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

@@ -20,12 +20,12 @@ description: Los administradores pueden aprender a activar los datos adjuntos de
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 396a1fa3ee2c6ba4f9ffb75c57513bb97f94f93dee677372b930eed4d3ec4b6d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a1020193a49dd7b4871b9b9fec53d21073b03e6
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56816064"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585577"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 
@@ -45,7 +45,7 @@ Este artículo contiene los pasos para habilitar y configurar Caja fuerte datos 
 
 - Para activar Caja fuerte datos adjuntos de SharePoint, OneDrive y Microsoft Teams, debe ser miembro de los  grupos  de roles Administración de la organización o Administrador de seguridad en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-- Para usar SharePoint PowerShell en línea para evitar que los usuarios descarguen archivos [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) malintencionados, debe ser miembro de los roles administrador [global](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) o administrador SharePoint en Azure AD.
+- Para usar SharePoint PowerShell en línea para evitar que los usuarios descarguen archivos [](/azure/active-directory/roles/permissions-reference#sharepoint-administrator) malintencionados, debe ser miembro de los roles administrador [global](/azure/active-directory/roles/permissions-reference#global-administrator) o administrador SharePoint en Azure AD.
 
 - Compruebe que el registro de auditoría está habilitado para su organización. Para obtener más información, consulte [Desactivar o activar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
 
@@ -59,7 +59,7 @@ Este artículo contiene los pasos para habilitar y configurar Caja fuerte datos 
 
 3. En el **menú desplegable Configuración global** que aparece, vaya a la sección Proteger archivos de **SharePoint, OneDrive y Microsoft Teams.**
 
-   Mueva la palanca Activar defender para Office 365 para **SharePoint, OneDrive** y Microsoft Teams a la derecha Activar para activar los datos adjuntos de Caja fuerte para SharePoint, OneDrive y ![ ](../../media/scc-toggle-on.png) Microsoft Teams.
+   Mueva el botón Activar defender para Office 365 para **SharePoint, OneDrive y** Microsoft Teams a la derecha ![ Activar.](../../media/scc-toggle-on.png) para activar los Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams.
 
    Cuando haya terminado, haga clic en **Guardar**.
 

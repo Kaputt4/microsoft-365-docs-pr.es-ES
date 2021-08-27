@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 60fdb02da960d10b875fcd064c665ecd615ae04c0093f0f90f40ae77e4028f50
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c6e62db4a83e238c840e7e953a78c6e8856a25a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871619"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552965"
 ---
 # <a name="privileged-access-management-in-microsoft-365"></a>Administración de acceso con privilegios en Microsoft 365
 
@@ -31,7 +31,7 @@ Tener acceso permanente por parte de algunos usuarios a información confidencia
 
 Siga estos pasos para configurar la administración de acceso con privilegios para su organización:
 
-![Pasos de administración de acceso con privilegios de solución de riesgo insider](../media/ir-solution-pam-steps.png)
+![Pasos de administración de acceso con privilegios de solución de riesgo insider.](../media/ir-solution-pam-steps.png)
 
 1. Obtenga información [sobre la administración de acceso con](privileged-access-management-overview.md) privilegios en Microsoft 365
 2. Crear un [grupo de aprobadores](privileged-access-management-configuration.md#step-1-create-an-approvers-group)

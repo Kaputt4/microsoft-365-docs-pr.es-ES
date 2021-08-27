@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para crear y usar etiquetas de retención en documentos Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: c4527f751881750c5f6427ea085baa9516f0bd73
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: b5cc84a4d8b73b9f7dc3f64934a18b549846ba17
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354313"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552605"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Clasificación de datos para su Microsoft 365 entorno de prueba empresarial
 
@@ -32,7 +32,7 @@ Clasificar datos en el entorno de prueba implica tres fases:
 - [Fase 2: Crear etiquetas de retención](#phase-2-create-retention-labels)
 - [Fase 3: Aplicar etiquetas de retención a documentos](#phase-3-apply-retention-labels-to-documents)
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).

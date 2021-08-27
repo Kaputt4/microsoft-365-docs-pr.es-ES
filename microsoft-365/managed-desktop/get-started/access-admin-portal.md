@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 44bc897cd2ead4c6c8568e8dc5048cf0118e35fc
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: e438e9a84b86bd4c3360022c0558480f317144e7
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364546"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602918"
 ---
 # <a name="access-the-admin-portal"></a>Acceso al portal de administración
 
@@ -28,7 +28,7 @@ La puerta de enlace al servicio Escritorio administrado de Microsoft es [Microso
 > - Chrome (versión más reciente)
 > - Firefox (versión más reciente)
 
-Su cuenta administrativa necesitará permisos específicos para tener acceso a las características Escritorio administrado de Microsoft administrativas de Microsoft Endpoint Manager. Puede administrar el acceso de administrador a estas características dentro de la organización mediante el control de acceso basado en roles. Hay Azure Active Directory roles de administrador (Azure AD) y roles Escritorio administrado de Microsoft integrados para proporcionar un control más detallado a las distintas características dentro del portal de administración Escritorio administrado de Microsoft administración. Para obtener más información acerca Azure Active Directory roles, vea [Permisos de roles de](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)administrador en Azure Active Directory . A diferencia de los roles de administrador de Azure AD que se aplican a varios productos y servicios de Microsoft, los roles integrados son específicos de Escritorio administrado de Microsoft y solo garantizarán el acceso a las características de administrador de este servicio. Los administradores pueden asignar roles integrados a los usuarios individualmente o en combinación con roles de administrador de Azure AD para agregar Escritorio administrado de Microsoft a cuentas de administrador existentes.
+Su cuenta administrativa necesitará permisos específicos para tener acceso a las características Escritorio administrado de Microsoft administrativas de Microsoft Endpoint Manager. Puede administrar el acceso de administrador a estas características dentro de la organización mediante el control de acceso basado en roles. Hay Azure Active Directory roles de administrador (Azure AD) y roles Escritorio administrado de Microsoft integrados para proporcionar un control más detallado a las distintas características dentro del portal de administración Escritorio administrado de Microsoft administración. Para obtener más información acerca Azure Active Directory roles integrados, vea [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference). A diferencia de los roles de administrador de Azure AD que se aplican a varios productos y servicios de Microsoft, los roles integrados son específicos de Escritorio administrado de Microsoft y solo garantizarán el acceso a las características de administrador de este servicio. Los administradores pueden asignar roles integrados a los usuarios individualmente o en combinación con roles de administrador de Azure AD para agregar Escritorio administrado de Microsoft a cuentas de administrador existentes.
 
 ## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directory roles con Escritorio administrado de Microsoft acceso
 
@@ -41,7 +41,7 @@ Su cuenta administrativa necesitará permisos específicos para tener acceso a l
 |Administrador de seguridad | Los administradores con este rol **tendrán** permisos  de solo lectura para todas las características y permisos de escritura para las características relacionadas con la seguridad Escritorio administrado de Microsoft en el portal de administración. |
 |Lector de seguridad |Los administradores con este rol tendrán permisos de **solo** lectura para todas las características del portal Escritorio administrado de Microsoft administración.|
 
-Si necesita ayuda con la asignación de Azure Active Directory, vea Permisos de roles de administrador [en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+Si necesita ayuda para asignar Azure Active Directory roles, consulte [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference).
 
 > [!IMPORTANT]
 > Solo el rol Administrador global tiene los permisos necesarios para *inscribir* la organización en Escritorio administrado de Microsoft. Ten en cuenta que Azure Active Directory roles de usuario darán privilegios a las cuentas de usuario en una variedad de servicios Microsoft. Después de completar la inscripción Escritorio administrado de Microsoft, siempre debe  usar el rol con los privilegios mínimos necesarios para realizar sus otras tareas.
@@ -87,13 +87,13 @@ Si necesita asignar uno o varios de los roles integrados a un grupo existente, s
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
 
 1. Portal de administración de Access (este artículo).
-1. [Agregar y comprobar contactos de administrador en el portal de administración.](add-admin-contacts.md)
+1. [Agregar y verificar los contactos de administración en el portal de administrador](add-admin-contacts.md).
 1. [Ajustar la configuración después de la inscripción](conditional-access.md).
-1. Implemente y asigne [Portal de empresa de Intune](company-portal.md).
-1. [Asignar licencias](assign-licenses.md).
-1. [Implementar aplicaciones](deploy-apps.md).
-1. [Configurar dispositivos](set-up-devices.md).
-1. Configurar la [experiencia de primera ejecución con Autopilot y la página Estado de inscripción](esp-first-run.md).
-1. [Habilitar las características de soporte técnico del usuario](enable-support.md).
-1. [Prepare a los usuarios para usar dispositivos](get-started-devices.md).
-1. [Introducción al control de aplicaciones](get-started-app-control.md).
+1. Implementar y asignar el [Portal de empresa de Intune](company-portal.md).
+1. [Asignar las licencias](assign-licenses.md).
+1. [Implementar las aplicaciones](deploy-apps.md).
+1. [Configurar los dispositivos](set-up-devices.md).
+1. Configurar la [experiencia de primera ejecución con el Autopilot y la página de estado de inscripción](esp-first-run.md).
+1. [Habilitar las características de soporte técnico para el usuario](enable-support.md).
+1. [Preparar a los usuarios para que usen los dispositivos](get-started-devices.md).
+1. [Comenzar a usar el control de aplicaciones](get-started-app-control.md).

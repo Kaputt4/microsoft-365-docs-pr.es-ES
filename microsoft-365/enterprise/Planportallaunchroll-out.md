@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo planear el inicio del portal en SharePoint Online y qué pasos seguir para un inicio correcto
-ms.openlocfilehash: abbcb1b69860046d479c4e2808a83b67cfd9e3427e16da5c175ee37cda36a4f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 82c4db0ccf544c66746c2a8b01e9b932a7f64564
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891346"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552881"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planeación del plan de lanzamiento del portal en SharePoint Online
 
@@ -70,7 +70,7 @@ El enfoque tradicional de big bang para los inicios de sitios no permitirá comp
   
 Como se muestra en la siguiente imagen, a menudo el número de usuarios invitados es significativamente mayor que los que usan realmente el sitio. Esta imagen muestra una estrategia sobre cómo lanzar una versión. Este método ayuda a identificar formas de mejorar SharePoint sitio antes de que la mayoría de los usuarios lo vean.
   
-![Gráfico que muestra los usuarios invitados y activos](../media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
+![Graph mostrar usuarios invitados y activos.](../media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
   
 En la fase piloto, es bueno obtener comentarios de los usuarios en los que la organización confía y sabe que participarán. De esta forma, es posible medir cómo se usa el sistema y cómo se está realizando.
   

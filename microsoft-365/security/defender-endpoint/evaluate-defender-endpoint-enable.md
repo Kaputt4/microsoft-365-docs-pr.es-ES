@@ -21,17 +21,17 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 873dd032b0f53b95327fcc8b517031cfed80501e55fbc74c65daf06be2f75a15
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e25e9dd18e66509c2512a56b5b64304c23ddb916
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898385"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610980"
 ---
 # <a name="pilot-mde-evaluation"></a>Evaluación piloto de MDE
 
->[!NOTE]
->Con el fin de guiarlo a través de una implementación típica, este escenario solo abarcará el uso de Microsoft Endpoint Configuration Manager. Defender for Endpoint admite el uso de otras herramientas de incorporación, pero no cubrirá esos escenarios en la guía de implementación. Para obtener más información, consulta [Incorporación de dispositivos a Microsoft Defender para Endpoint](onboard-configure.md).
+> [!NOTE]
+> Con el fin de guiarlo a través de una implementación típica, este escenario solo abarcará el uso de Microsoft Endpoint Configuration Manager. Defender for Endpoint admite el uso de otras herramientas de incorporación, pero no cubrirá esos escenarios en la guía de implementación. Para obtener más información, consulta [Incorporación de dispositivos a Microsoft Defender para Endpoint](onboard-configure.md).
 
 ## <a name="step-1-check-license-state"></a>Paso 1. Comprobar el estado de la licencia
 
@@ -39,17 +39,17 @@ Comprobar el estado de la licencia y si se aprovisionó correctamente, se puede 
 
 1. Para ver las licencias, vaya al **portal de** Microsoft Azure y vaya a la sección Microsoft Azure licencia [del portal.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
-   ![Imagen de la página licencias de Azure](images/atp-licensing-azure-portal.png)
+   ![Imagen de la página Licencias de Azure.](images/atp-licensing-azure-portal.png)
 
-1. Como alternativa, en el Centro de administración, vaya a **Suscripciones de**  >  **facturación.**
+1. Como alternativa, en el Centro de administración, vaya a **Suscripciones de** \> **facturación.**
 
     En la pantalla, verá todas las licencias aprovisionadas y su estado **actual.**
 
-    ![Imagen de las licencias de facturación](images/atp-billing-subscriptions.png)
+    ![Imagen de las licencias de facturación.](images/atp-billing-subscriptions.png)
 
 ## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Paso 2. Incorporación de puntos de conexión con cualquiera de las herramientas de administración admitidas
 
-En [el tema Plan deployment](deployment-strategy.md) se describen los pasos generales que debe seguir para implementar Defender for Endpoint.  
+En [el tema Plan deployment](deployment-strategy.md) se describen los pasos generales que debe seguir para implementar Defender for Endpoint.
 
 Vea este vídeo para obtener una introducción rápida al proceso de incorporación y obtenga información sobre las herramientas y métodos disponibles.
 
@@ -61,10 +61,15 @@ Después de identificar la arquitectura, deberá decidir qué método de impleme
 
 En la tabla siguiente se enumeran las herramientas disponibles en función del extremo que necesita incorporar.
 
-| Punto de conexión     | Opciones de herramientas                       |
-|--------------|------------------------------------------|
-| **Windows**  |  [Script local (hasta 10 dispositivos)](../defender-endpoint/configure-endpoints-script.md) <br> [Directiva de grupo](../defender-endpoint/configure-endpoints-gp.md) <br> [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](../defender-endpoint/configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) <br> [Scripts VDI](../defender-endpoint/configure-endpoints-vdi.md) <br> [Integración con Azure Defender](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender) |
-| **macOS**    | [Scripts locales](../defender-endpoint/mac-install-manually.md) <br> [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md) <br> [Jamf Pro](../defender-endpoint/mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](../defender-endpoint/mac-install-with-other-mdm.md) |
-| **Servidor Linux** | [Script local](../defender-endpoint/linux-install-manually.md) <br> [Puppet](../defender-endpoint/linux-install-with-puppet.md) <br> [Ansible](../defender-endpoint/linux-install-with-ansible.md)|
-| **iOS**      | [Basado en aplicaciones](../defender-endpoint/ios-install.md)                                |
-| **Android**  | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)               |
+<br>
+
+****
+
+|Extremo|Opciones de herramientas|
+|---|---|
+|**Windows**|[Script local (hasta 10 dispositivos)](../defender-endpoint/configure-endpoints-script.md) <p> [Directiva de grupo](../defender-endpoint/configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](../defender-endpoint/configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) <p> [Scripts VDI](../defender-endpoint/configure-endpoints-vdi.md) <p> [Integración con Azure Defender](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)|
+|**macOS**|[Scripts locales](../defender-endpoint/mac-install-manually.md) <p> [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md) <p> [Jamf Pro](../defender-endpoint/mac-install-with-jamf.md) <p> [Administración de dispositivos móviles](../defender-endpoint/mac-install-with-other-mdm.md)|
+|**Servidor Linux**|[Script local](../defender-endpoint/linux-install-manually.md) <p> [Puppet](../defender-endpoint/linux-install-with-puppet.md) <p> [Ansible](../defender-endpoint/linux-install-with-ansible.md)|
+|**iOS**|[Basado en aplicaciones](../defender-endpoint/ios-install.md)|
+|**Android**|[Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)|
+|

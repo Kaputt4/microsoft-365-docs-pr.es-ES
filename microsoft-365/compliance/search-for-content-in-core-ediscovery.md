@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos principal.
-ms.openlocfilehash: b71dfdbdee715c41c5aa2f5f1fe235c8a42412c01184a54172cf8846c3e48a14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1637d5dafcf088dd2b069cda5e951aef3a2fcd1e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871434"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569026"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos principal
 
@@ -38,7 +38,7 @@ Para crear una búsqueda de exhibición de documentos electrónicos principal:
 
 4. En la **página principal** del caso, haga clic en la **pestaña Búsquedas** y, a continuación, haga clic **en Nueva búsqueda**.
 
-   ![Haga clic en Nueva búsqueda para crear una búsqueda de exhibición de documentos electrónicos principal](../media/CoreeDiscoverySearch1.png)
+   ![Haga clic en Nueva búsqueda para crear una búsqueda de eDiscovery principal.](../media/CoreeDiscoverySearch1.png)
 
    > [!NOTE]
    > La opción **Buscar por lista de id.** le permite buscar mensajes de correo específicos y otros elementos del buzón con una lista de Id. de Exchange. Para crear una búsqueda por lista de id., debe enviar un archivo CSV que identifique los elementos de buzón específicos que desee buscar. Para sabe cómo hacerlo, consulte [Preparar un archivo CSV para una búsqueda por lista de id.](csv-file-for-an-id-list-content-search.md)
@@ -47,7 +47,7 @@ Para crear una búsqueda de exhibición de documentos electrónicos principal:
 
 6. En la página **Ubicaciones**, elija las ubicaciones de contenido que quiere buscar. Puede buscar en buzones, sitios y carpetas públicas.
 
-    ![Elegir las ubicaciones de contenido para colocar en suspensión](../media/ContentSearchLocations.png)
+    ![Elija las ubicaciones de contenido que desea poner en espera.](../media/ContentSearchLocations.png)
   
    1. **Buzones de Exchange**: establezca el botón de alternancia en **Activado** y después haga clic en **Elegir usuarios, grupos o equipos** para especificar los buzones para colocar en suspensión. Use el cuadro de búsqueda para encontrar buzones de usuario y grupos de distribución (para colocar una suspensión en los buzones de miembros de grupo) para suspenderlos. También puede buscar en el buzón asociado a un equipo de Microsoft (para los mensajes del canal), grupo de Office 365 y grupo de Yammer. Para más información sobre los datos de la aplicación almacenados en buzones, vea [Contenido almacenado en buzones de eDiscovery](what-is-stored-in-exo-mailbox.md).
 
@@ -59,7 +59,7 @@ Para crear una búsqueda de exhibición de documentos electrónicos principal:
 
 7. En la página **Definir las condiciones de búsqueda**, escriba una consulta de palabra clave y agregue condiciones a la consulta de búsqueda si es necesario.
 
-   ![Configurar la consulta de búsqueda](../media/ContentSearchQuery.png)
+   ![Configure la consulta de búsqueda.](../media/ContentSearchQuery.png)
 
    1. Especifique palabras clave, propiedades del mensaje como la fecha de envío y de recepción, o propiedades del documento como nombres de archivo o la fecha de la última modificación de un documento. También puede usar consultas más complejas con operadores booleanos como **Y**, **O**, **NOT** y **NEAR**. Si deja el cuadro de la palabra clave en blanco, todo el contenido en las ubicaciones especificadas se incluye en los resultados de la búsqueda. Para más información, consulte [Consultas de palabras clave y condiciones de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md).
 

@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: f61c05608bfb9f3b528cf0a717dbe9effbaf31a5
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: 6d0599d11dd5892b032bda1285b92fbc8a09354b
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58418004"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595167"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Para identidad y más allá: un punto de vista de un arquitecto
 
@@ -27,7 +27,7 @@ En este artículo, [Alex Shteynberg,](https://www.linkedin.com/in/alex-shteynber
 
 ## <a name="about-the-author"></a>Acerca del autor
 
-![Foto de Alex Shteynberg](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)
+![Foto de Alex Shteynberg.](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)
 
 Soy arquitecto técnico principal en el Centro de tecnología [de Microsoft de Nueva](https://www.microsoft.com/mtc?rtc=1)York. Trabajo principalmente con clientes grandes y requisitos complejos. Mi punto de vista y opiniones se basan en estas interacciones y puede que no se apliquen a todas las situaciones. Sin embargo, en mi experiencia, si podemos ayudar a los clientes con los desafíos más complejos, podemos ayudar a todos los clientes.
 
@@ -50,7 +50,7 @@ No omita esta sección. A menudo encuentro que debo dar un paso atrás en estos 
 Lamentablemente, el idioma no es una herramienta precisa. A menudo usamos la misma palabra para significar conceptos diferentes o palabras diferentes para significar el mismo concepto. A menudo uso este diagrama siguiente para establecer alguna terminología de línea base y "modelo de jerarquía".
 <br><br>
 
-![Ilustración de inquilino, suscripción, servicio y datos](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)
+![Ilustración de inquilino, suscripción, servicio y datos.](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)
 
 <br>
 
@@ -108,7 +108,7 @@ Algunos clientes habilitan la federación + PHS principalmente para:
 
 A menudo, paso a los clientes por el flujo de autenticación de cliente para aclarar algunos conceptos erróneos. El resultado es similar a la imagen siguiente, que no es tan bueno como el proceso interactivo de llegar allí.
 
-![Conversación de pizarra de ejemplo](../media/solutions-architecture-center/identity-beyond-whiteboard-example.png)
+![Conversación de pizarra de ejemplo.](../media/solutions-architecture-center/identity-beyond-whiteboard-example.png)
 
 Este tipo de dibujo de pizarra ilustra dónde se aplican directivas de seguridad dentro del flujo de una solicitud de autenticación. En este ejemplo, las directivas aplicadas a través del servicio de federación de Active Directory (AD FS) se aplican a la primera solicitud de servicio, pero no a las solicitudes de servicio posteriores. Este es al menos un motivo para mover los controles de seguridad a la nube tanto como sea posible.
 
@@ -122,7 +122,7 @@ Por [Wikipedia,](https://en.wikipedia.org/wiki/Authorization)"autorizar" es defi
 
 El motor de directivas de Azure AD se implementa mediante directivas [de acceso condicional.](/azure/active-directory/conditional-access/overview) Este sistema depende de la información de una variedad de otros sistemas de detección de amenazas para tomar decisiones dinámicas. Una vista sencilla sería algo parecido a la siguiente ilustración:
 
-![Motor de directivas en Azure AD](../media/solutions-architecture-center/identity-and-beyond-illustration-3.png)
+![Motor de directivas en Azure AD.](../media/solutions-architecture-center/identity-and-beyond-illustration-3.png)
 
 La combinación de todas estas señales permite directivas dinámicas como estas:
 
@@ -152,11 +152,11 @@ Azure AD tiene funciones detalladas [de auditoría e informes.](/azure/active-di
 
 No entres en pánico. Esto no significa que Exchange esté en desuso (o SharePoint, y así sucesivamente). Sigue siendo un servicio básico. Lo que quiero decir es que, desde hace bastante tiempo, los proveedores de tecnología han estado transfiriendo experiencias de usuario (UX) para abarcar componentes de varios servicios. En Microsoft 365, un ejemplo sencillo es "[datos](https://support.office.com/article/Attach-files-or-insert-pictures-in-Outlook-email-messages-BDFAFEF5-792A-42B1-9A7B-84512D7DE7FC)adjuntos modernos " donde los datos adjuntos al correo electrónico se almacenan en SharePoint Online o OneDrive para la Empresa.
 
-![Adjuntar un archivo a un correo electrónico](../media/solutions-architecture-center/modern-attachments.png)
+![Adjuntar un archivo a un correo electrónico.](../media/solutions-architecture-center/modern-attachments.png)
 
 Si observa el Outlook cliente, puede ver muchos servicios que están "conectados" como parte de esta experiencia, no solo Exchange. Esto incluye Azure AD, Búsqueda de Microsoft, Aplicaciones, Perfil, cumplimiento y Office 365 grupos.
 
-![Outlook interfaz con llamadas](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
+![Outlook interfaz con llamadas.](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
 
 Obtenga información [Microsoft Fluid Framework](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268) para obtener una vista previa de las próximas funcionalidades. En vista previa ahora, puedo leer y responder a Teams conversaciones directamente en Outlook. De hecho, el [Teams cliente es](https://products.office.com/microsoft-teams/download-app) uno de los ejemplos más destacados de esta estrategia.
 
@@ -203,7 +203,7 @@ En la mayoría de las organizaciones grandes, la separación de funciones y el c
 
 ### <a name="azure-ad-and-microsoft-365-admin-centers"></a>Centros de administración de Azure AD y Microsoft 365 administración
 
-Hay una larga y creciente lista de roles [integrados.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Cada función consta de una lista de permisos de función agrupados para permitir que se realicen acciones específicas. Puede ver estos permisos en la pestaña "Descripción" dentro de cada rol. Como alternativa, puede ver una versión más legible de estos en el Centro de Administración de Microsoft 365 humanos. Las definiciones de roles integrados no se pueden modificar. Por lo general, los agrupa en tres categorías:
+Hay una larga y creciente lista de roles [integrados.](/azure/active-directory/roles/permissions-reference) Cada función consta de una lista de permisos de función agrupados para permitir que se realicen acciones específicas. Puede ver estos permisos en la pestaña "Descripción" dentro de cada rol. Como alternativa, puede ver una versión más legible de estos en el Centro de Administración de Microsoft 365 humanos. Las definiciones de roles integrados no se pueden modificar. Por lo general, los agrupa en tres categorías:
 
 - **Administrador global:** este rol "todo eficaz" debe estar [altamente protegido](../enterprise/protect-your-global-administrator-accounts.md) como lo haría en otros sistemas. Entre las recomendaciones típicas se incluyen: sin asignación permanente y usar azure ad Privileged Identity Management (PIM); autenticación segura; y así sucesivamente. Es interesante que este rol no le dé acceso a todo de forma predeterminada. Por lo general, veo confusión sobre el acceso de cumplimiento y el acceso de Azure, que se describe más adelante. Sin embargo, este rol siempre puede asignar acceso a otros servicios en el espacio empresarial.
 - **Administradores de servicios específicos:** algunos servicios (Exchange, SharePoint, Power BI, y así sucesivamente) consumen roles de administración de alto nivel de Azure AD. Esto no es coherente en todos los servicios y hay más roles específicos del servicio que se debate más adelante.
@@ -292,7 +292,7 @@ Desde la perspectiva de delegación de administración, la mayoría Microsoft 36
 
 Diagrama de alto nivel:
 
-![diagrama de orígenes de registro para un programa de seguridad y cumplimiento](../media/solutions-architecture-center/identity-beyond-illustration-4.png)
+![diagrama de orígenes de registro para un programa de seguridad y cumplimiento.](../media/solutions-architecture-center/identity-beyond-illustration-4.png)
 
 El diagrama anterior representa las capacidades integradas para enviar registros a Event Hub y/o Azure Storage y/o Azure Log Analytics. Todavía no todos los sistemas incluyen esta opción. Pero hay otros métodos para enviar estos registros al mismo repositorio. Por ejemplo, vea [Protecting your Teams with Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761).
 
@@ -316,7 +316,7 @@ Es importante comprender las relaciones entre varios servicios del mismo inquili
 
 Azure Role-Based Access Control (RBAC) permite una administración de acceso detallada para Azure. Con RBAC, puede administrar el acceso a los recursos concediendo a los usuarios el menor número de permisos necesarios para realizar sus trabajos. Los detalles están fuera del ámbito de este documento, pero para obtener más información sobre RBAC, vea ¿Qué es el control de acceso basado en roles [(RBAC) en Azure?](/azure/role-based-access-control/overview) RBAC es importante, pero solo una parte de las consideraciones de gobierno para Azure. [Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/) es un excelente punto de partida para obtener más información. Me gusta cómo mi amigo, [Andrés Ravinet](https://www.linkedin.com/in/andres-ravinet/), guía a los clientes paso a paso a través de varios componentes para decidir sobre el enfoque. La vista de alto nivel para varios elementos (no es tan buena como el proceso para llegar al modelo de cliente real) es algo así:
 
-![Vista de alto nivel de componentes de Azure para administración delegada](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
+![Vista de alto nivel de componentes de Azure para administración delegada.](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 
 Como puede ver en la imagen anterior, muchos otros servicios deben considerarse como parte del diseño (por ejemplo: Directivas de [Azure,](/azure/governance/policy/overview)Planos de [Azure,](/azure/governance/blueprints/overview)Grupos de [administración,](/azure/governance/management-groups/)y así sucesivamente).
 

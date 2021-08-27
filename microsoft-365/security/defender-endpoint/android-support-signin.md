@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 38f7ff40416835e9908757456520f0a90a745dfd
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: daedf3ebbf88c70cf5b3889a9d7560800ad16f5f
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508279"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595249"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Solución de problemas en Microsoft Defender para punto de conexión en Android
 
@@ -44,7 +44,7 @@ En este artículo se proporcionan soluciones para ayudar a solucionar los proble
 
 **Error de inicio de sesión:** *error inesperado, inténtelo más tarde*
 
-![Imagen del error de inicio de sesión Error inesperado](images/f9c3bad127d636c1f150d79814f35d4c.png)
+![Imagen de error de inicio de sesión Error inesperado.](images/f9c3bad127d636c1f150d79814f35d4c.png)
 
 **Mensaje:**
 
@@ -62,7 +62,7 @@ Instalar la versión más reciente [y Microsoft Authenticator](https://play.goog
 
 **Error al iniciar sesión: licencia** *no válida, póngase en contacto con el administrador*
 
-![Imagen del error de inicio de sesión póngase en contacto con el administrador](images/920e433f440fa1d3d298e6a2a43d4811.png)
+![Imagen del error de inicio de sesión póngase en contacto con el administrador.](images/920e433f440fa1d3d298e6a2a43d4811.png)
 
 **Mensaje: Licencia** *no válida, póngase en contacto con el administrador*
 
@@ -86,7 +86,7 @@ Los sitios web de suplantación de identidad suplantan sitios web de confianza c
 
 El phishing y las amenazas web nocivas detectadas por Defender para Endpoint para Android no se bloquean en algunos dispositivos Xiaomi. La siguiente funcionalidad no funciona en estos dispositivos.
 
-![Imagen del sitio notificado no seguro](images/0c04975c74746a5cdb085e1d9386e713.png)
+![Imagen del sitio notificado no seguro.](images/0c04975c74746a5cdb085e1d9386e713.png)
 
 **Causa:**
 
@@ -94,7 +94,7 @@ Los dispositivos Xiaomi incluyen un nuevo modelo de permisos. Esto impide que De
 
 Permiso de dispositivos Xiaomi: "Mostrar ventanas emergentes mientras se ejecuta en segundo plano".
 
-![Imagen de configuración emergente](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
+![Imagen de configuración emergente.](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
 
 **Solución:**
 
@@ -112,7 +112,7 @@ Defender App pide permiso de optimización de batería/protección permanente en
 
 **Causa:**
 
-Xiomi cambió los permisos de optimización de batería en Android 11. Defender no puede configurar esta configuración para omitir las optimizaciones de batería.
+Xiaomi cambió los permisos de optimización de batería en Android 11. Defender no puede configurar esta configuración para omitir las optimizaciones de batería.
 
 **Solución:**
 

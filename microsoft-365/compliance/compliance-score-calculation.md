@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Comprenda cómo Microsoft Compliance Manager calcula una puntuación personalizada en función de las acciones realizadas para abordar los riesgos y mejorar su posición de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cbbef643005904e8ca913df69382e9e6012e5b371c9cb5ff132990e1ba74c535
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 26ef0f73a8da9403c2d1fd8248f828d6faf7f6e3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820485"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569098"
 ---
 # <a name="compliance-score-calculation"></a>Cálculo de la puntuación de cumplimiento
 
@@ -114,9 +114,9 @@ Cada acción tiene un valor asignado en el Administrador de cumplimiento en func
 |:-----|:-----|
 | Obligatorio preventivo | 27 |
 | Discrecional preventiva | 9  |
-| Detective obligatorio | 3 |
+| Detective obligatorio | 3  |
 | Detective discrecional | 1 |
-| Obligatoria correctiva | 3 |
+| Correctiva obligatoria | 3  |
 | Discrecionalidad correctiva | 1 |
   
-![Valores de punto de acción del Administrador de cumplimiento](../media/compliance-score-action-scoring.png "Valores de punto de acción del Administrador de cumplimiento")
+![Valores de punto de acción del Administrador de cumplimiento.](../media/compliance-score-action-scoring.png "Valores de punto de acción del Administrador de cumplimiento")

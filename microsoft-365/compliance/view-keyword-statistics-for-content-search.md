@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar estadísticas de búsquedas de contenido y búsquedas asociadas con un caso de exhibición de documentos electrónicos principales en el Centro de cumplimiento de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 25884f0b450c1bc90cb6487e64fe636ef5f8af16dd30ad7bb4e7ed28402da03f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f9948a5ae194a475f5bdcf319aa48fa32cc282f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835552"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552917"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Ver estadísticas de resultados de búsqueda de exhibición de documentos electrónicos
 
@@ -39,13 +39,13 @@ Para mostrar estadísticas de una búsqueda de contenido o una búsqueda asociad
 
    - Haga **clic en Búsqueda de** contenido y, a continuación, seleccione una búsqueda para mostrar la página desplegable.
 
-     O
+     OR
 
    - Haga **clic en eDiscovery** Core , seleccione un caso y, a continuación, seleccione una búsqueda en la pestaña  >  Búsquedas para mostrar la página desplegable. 
 
 2. En la página desplegable de la búsqueda seleccionada, haga clic en la **pestaña Estadísticas de** búsqueda.
   
-   ![Ficha Estadísticas de búsqueda](../media/SearchStatistics1.png)
+   ![Pestaña Estadísticas de búsqueda.](../media/SearchStatistics1.png)
 
 La **pestaña Estadísticas de** búsqueda contiene las siguientes secciones que contienen diferentes tipos de estadísticas sobre la búsqueda.
 
@@ -53,7 +53,7 @@ La **pestaña Estadísticas de** búsqueda contiene las siguientes secciones que
 
 En esta sección se muestra un resumen gráfico de los elementos estimados devueltos por la búsqueda. Esto indica el número de elementos que coinciden con los criterios de búsqueda. Esta información le ofrece una idea sobre el número estimado de elementos devueltos por la búsqueda.
 
-![Estimaciones de búsqueda para una búsqueda](../media/SearchContentReport.png)
+![Estimaciones de búsqueda para una búsqueda.](../media/SearchContentReport.png)
 
 - **Elementos estimados por ubicaciones:** el número total de elementos estimados devueltos por la búsqueda. También se muestra el número específico de elementos ubicados en buzones de correo y ubicados en sitios.
 
@@ -65,7 +65,7 @@ En esta sección se muestra un resumen gráfico de los elementos estimados devue
 
 En esta sección se muestran estadísticas sobre la consulta de búsqueda y el número de elementos estimados que coinciden con distintas partes de la consulta de búsqueda. Puede usar estas estadísticas para analizar el número de elementos que coinciden con cada componente de la consulta de búsqueda. Esto puede ayudarle a refinar los criterios de búsqueda y, si es necesario, restringir el ámbito del ámbito. También puede descargar una copia de este informe en formato CSV.
 
-![Informe de condiciones](../media/SearchContentReportNoKeywordList.png)
+![Informe de condiciones.](../media/SearchContentReportNoKeywordList.png)
 
 - **Tipo de ubicación:** tipo de ubicación de contenido a la que se aplican las estadísticas de consulta. El valor de **Exchange** indica una ubicación de buzón; un valor de **SharePoint** indica una ubicación del sitio.
 
@@ -101,11 +101,11 @@ Para crear una lista de palabras clave y ver estadísticas de palabras clave par
 
 2. En la **página Condiciones** del asistente para búsqueda. active la casilla **Mostrar lista de palabras clave.**
 
-   ![Casilla mostrar lista de palabras clave](../media/SearchKeywordsList1.png)
+   ![Casilla mostrar lista de palabras clave.](../media/SearchKeywordsList1.png)
 
 3. Escriba una palabra clave o fase de palabra clave en una fila de la tabla de palabras clave. Por ejemplo, escriba **presupuesto en** la primera fila, escriba **seguridad** en la segunda fila y escriba **FY2021** en la tercera fila.
 
-   ![Escriba hasta 20 palabras clave o frases de palabras clave en la lista](../media/SearchKeywordsList2.png)
+   ![Escriba hasta 20 palabras clave o frases de palabras clave en la lista.](../media/SearchKeywordsList2.png)
 
    > [!NOTE]
    > Para ayudar a reducir los problemas causados por listas de palabras clave grandes, está limitado a un máximo de 20 filas en la lista de palabras clave de una consulta de búsqueda.
@@ -116,7 +116,7 @@ Para crear una lista de palabras clave y ver estadísticas de palabras clave par
 
 6. En la **pestaña Estadísticas de búsqueda,** haga clic en el **informe Condición** para mostrar las estadísticas de palabras clave de la búsqueda.
 
-    ![Se muestran las estadísticas de cada palabra clave](../media/SearchKeywordsList3.png)
+    ![Se muestran las estadísticas de cada palabra clave.](../media/SearchKeywordsList3.png)
   
     Como se muestra en la captura de pantalla anterior, se muestran las estadísticas de cada palabra clave; esto incluye:
 

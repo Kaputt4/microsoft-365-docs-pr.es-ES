@@ -13,12 +13,12 @@ description: Los administradores pueden obtener información sobre los conocimie
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b38bb50bd72ea3391cd908e6e058e050003a17b41777df9d8d2663a50977904
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6c960b34933c6a90dcf4a1675ced63dd43f00c07
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56882509"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607074"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -31,7 +31,7 @@ ms.locfileid: "56882509"
 
 Los administradores pueden usar el panel flujo de correo en el Centro de seguridad & cumplimiento para detectar tendencias, información y realizar acciones para solucionar problemas relacionados con el flujo de correo en su organización.
 
-![Panel flujo de correo en el Centro de seguridad & cumplimiento](../../media/mail-flow-dashboard-v2.png)
+![Panel flujo de correo en el Centro de seguridad & cumplimiento.](../../media/mail-flow-dashboard-v2.png)
 
 Las perspectivas disponibles son:
 
@@ -69,7 +69,7 @@ El panel flujo de correo está disponible para los miembros de los siguientes gr
 
 - **Administración de la** organización en el Centro de & seguridad (administradores globales).
 
-- **[Exchange administrador de](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Azure Active Directory.
+- **[Exchange administrador de](/azure/active-directory/roles/permissions-reference#exchange-administrator)** Azure Active Directory.
 
 - **Administrador de MailFlow** en el Centro de seguridad & cumplimiento. Si la cuenta no es también miembro de los grupos de roles administración de la organización o Exchange administrador, tenga en cuenta los siguientes problemas:
   - El usuario debe iniciar sesión en el Centro de seguridad & cumplimiento directamente en <https://protection.office.com> .

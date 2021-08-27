@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo Contoso usa las características de protección de la información Microsoft 365 para que la empresa proteja sus activos digitales en la nube.
-ms.openlocfilehash: 7240e226cf70b2666f6e0bc9180aea3ee63bdc91
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: c61d6ee0a3f577d27c306631ea9f57d8cb3d7c2a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356305"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552869"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protección de la información en Contoso Corporation
 
@@ -41,7 +41,7 @@ Contoso realizó un análisis de sus datos y determinó los siguientes niveles d
 En la tabla siguiente se enumeran las directivas de información de Contoso.
 
 
-| Valor | Acceso | Retención de datos | Protección de la información |
+| Valor | Access | Retención de datos | Protección de la información |
 |:-------|:-----|:-----|:-----|
 | Valor empresarial bajo (Nivel 1: Básico) | Permitir el acceso a todos.  | 6 meses | Se usa el cifrado. |
 | Valor empresarial medio (Nivel 2: Confidencial) | Permitir el acceso a los empleados, subcontratistas y partners de Contoso. <BR><BR> Se usa MFA, seguridad de la capa de transporte (TLS) y administración de aplicaciones móviles (MAM). | 2 años  | Se usan valores de hash para la integridad de datos.  |
@@ -82,7 +82,7 @@ Como parte de su implementación de Exchange Online y SharePoint, Contoso config
 
 Este es el conjunto resultante de directivas de Contoso para la protección de la información.
 
-![Directivas de acceso condicional de SharePoint, Exchange Online y dispositivo](../media/contoso-info-protect/contoso-info-protect-fig1.png)
+![Dispositivo, Exchange Online y SharePoint de acceso condicional.](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 >[!Note]
 >Contoso también configuró directivas de acceso condicional adicionales para identidad e inicio de sesión. Vea [Identidad para Contoso Corporation](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
@@ -109,7 +109,7 @@ En la tabla siguiente se asigna los niveles de datos de Contoso a las caracterí
 
 Esta es la configuración resultante de Contoso information-protection.
 
-![Configuración de protección de información resultante de Contoso](../media/contoso-info-protect/contoso-info-protect-fig2.png)
+![Configuración de protección de la información resultante de Contoso.](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## <a name="next-step"></a>Paso siguiente
 

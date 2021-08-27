@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo habilitar Microsoft 365 proteger los dispositivos locales unidos a Active-Directory Windows 10 en unos pocos pasos.
-ms.openlocfilehash: 9dfc54f334fe8a6eb636bc0d120af479239d41a0
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 2a60437bafc7aae1928d73342555c030a71689cd
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360712"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595509"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Habilitar dispositivos de Windows 10 unidos a un dominio para que los pueda administrar Microsoft 365 Empresa Premium
 
@@ -124,4 +124,4 @@ En este punto, debería poder ver la directiva Habilitar la inscripción **autom
 
 [Sincronizar usuarios de dominio Microsoft 365](manage-domain-users.md) (artículo)\
 [Crear un grupo en el Centro de administración](../create-groups/create-groups.md) (artículo)\
-[Tutorial: Configurar la combinación Azure Active Directory híbrida para dominios administrados](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (artículo)
+[Tutorial: Configurar la combinación Azure Active Directory híbrida para dominios administrados](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (artículo)

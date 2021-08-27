@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: c4093ca351873f3f16742f6c0d131ac39d70c5f6360a3a52bb1dbed1985158d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 52da535c376af5775f2c75d9259529d2a011791a
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853295"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594213"
 ---
 # <a name="the-action-center"></a>El Centro de actividades
 
@@ -47,7 +47,7 @@ Dado que el Centro de acciones proporciona una vista completa de Microsoft 365 D
 
 El Centro de acciones unificado ( ) enumera las acciones de corrección pendientes y completadas para los dispositivos, el correo electrónico & de colaboración y las identidades [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) en una ubicación.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificado en Microsoft 365 Defender":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificado en Microsoft 365 Defender.":::
 
 Por ejemplo: 
 
@@ -101,7 +101,7 @@ Todas las acciones, tanto si están pendientes de aprobación como si ya se han 
 - Ejemplo de solicitud 
 - Restringir la ejecución de código (esta acción se puede deshacer) 
 - Ejecutar examen antivirus 
-- Detener y poner en cuarentena 
+- Detener y poner en cuarentena un archivo 
 
 Además de las acciones de corrección que se toman automáticamente como resultado de investigaciones [automatizadas,](m365d-autoir.md)el Centro de acción también realiza un seguimiento de las acciones que el equipo de seguridad ha realizado para abordar las amenazas detectadas y las acciones que se han realizado como resultado de las características de protección contra amenazas de Microsoft 365 Defender. Para obtener más información acerca de las acciones de corrección automáticas y manuales, vea [Acciones de corrección](m365d-remediation-actions.md).
 
@@ -109,7 +109,7 @@ Además de las acciones de corrección que se toman automáticamente como result
 
 (**¡NUEVO!**) El Centro de acciones mejorado ahora incluye una **columna de origen** de acción que indica de dónde provenía cada acción. En la tabla siguiente se describen los **posibles valores de origen action:**
 
-| Valor de origen de la acción | Description |
+| Valor de origen de la acción | Descripción |
 |:-----|:---|
 | **Acción manual del dispositivo** | Una acción manual realizada en un dispositivo. Algunos ejemplos son [el aislamiento de dispositivos](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) o [la cuarentena de archivos.](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files) |
 | **Acción de correo electrónico manual** | Una acción manual realizada en el correo electrónico. Un ejemplo incluye la eliminación de mensajes de correo electrónico o [la corrección de un mensaje de correo electrónico](../office-365-security/remediate-malicious-email-delivered-office-365.md). |
@@ -126,8 +126,8 @@ Para realizar tareas, como aprobar o rechazar acciones pendientes en el Centro d
 
 |Acción de corrección |Permisos y roles necesarios |
 |--|----|
-|Microsoft Defender para la corrección de puntos de conexión (dispositivos) |**Rol administrador** de seguridad asignado en Azure Active Directory (Azure AD) ( [https://portal.azure.com](https://portal.azure.com) ) o en el Centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- o ---<br/>**Rol acciones de corrección activas** asignadas en Microsoft Defender para endpoint <br/> <br/> Para obtener más información, consulte los siguientes recursos: <br/>- [Permisos de roles de administrador en Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Crear y administrar roles para el control de acceso basado en roles (Microsoft Defender para endpoint)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender para la Office 365 (Office contenido y correo electrónico)  |**Rol de administrador** de seguridad asignado en Azure AD ( [https://portal.azure.com](https://portal.azure.com) ) o en el Centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- y --- <br/>**Función De búsqueda y** purga asignada en el Centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANTE:** Si tiene  asignado el rol Administrador de seguridad solo en el Centro de cumplimiento de & seguridad de Office 365 ( ), no podrá acceder al Centro de acciones ni a Microsoft 365 Defender [https://protection.office.com](https://protection.office.com) capacidades. Debe tener asignado el rol **administrador de** seguridad en Azure AD o el Centro de administración de Microsoft 365. <br/><br/>Para obtener más información, consulte los siguientes recursos: <br/>- [Permisos de roles de administrador en Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Permisos en el Centro de seguridad & cumplimiento](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender para la corrección de puntos de conexión (dispositivos) |**Rol administrador** de seguridad asignado en Azure Active Directory (Azure AD) ( [https://portal.azure.com](https://portal.azure.com) ) o en el Centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- o ---<br/>**Rol acciones de corrección activas** asignadas en Microsoft Defender para endpoint <br/> <br/> Para obtener más información, consulte los siguientes recursos: <br/>- [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Crear y administrar roles para el control de acceso basado en roles (Microsoft Defender para endpoint)](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender para la Office 365 (Office contenido y correo electrónico)  |**Rol de administrador** de seguridad asignado en Azure AD ( [https://portal.azure.com](https://portal.azure.com) ) o en el Centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- y --- <br/>**Función De búsqueda y** purga asignada en el Centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANTE:** Si tiene  asignado el rol Administrador de seguridad solo en el Centro de cumplimiento de & seguridad de Office 365 ( ), no podrá acceder al Centro de acciones ni a Microsoft 365 Defender [https://protection.office.com](https://protection.office.com) capacidades. Debe tener asignado el rol **administrador de** seguridad en Azure AD o el Centro de administración de Microsoft 365. <br/><br/>Para obtener más información, consulte los siguientes recursos: <br/>- [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Permisos en el Centro de seguridad & cumplimiento](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Los usuarios que tengan asignada la función **Administrador global** en Azure AD pueden aprobar o rechazar cualquier acción pendiente en el Centro de acciones. Sin embargo, como práctica recomendada, la organización debe limitar el número de personas que tienen asignado el rol **de administrador** global. Se recomienda usar los roles Administrador de  **seguridad,** **Acciones** de corrección activas y Roles de búsqueda y purga enumerados en la tabla anterior para permisos del Centro de acciones.

@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo crear su plan de gobierno de colaboración
-ms.openlocfilehash: 062648ca2e4eb2c3909b38d376f568df726ac2bef3abb5b82b1e86db879a1887
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cd6da85f43d3dc72ee7b9ccd763872dbccfbeb78
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843988"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585601"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Crear el plan de gobierno de colaboración
 
@@ -117,7 +117,7 @@ Los objetivos de resultados empresariales deben ser el impulsor principal de las
 
 ### <a name="define-roles-and-responsibilities"></a>Definir roles y responsabilidades
 
-Además del equipo de gobierno, hay varios otros roles o equipos clave que querrás pensar en posicionar para el éxito con Microsoft 365. Algunos roles pueden ser combinados o ocupados por la misma persona y otros pueden no ser adecuados para todas las organizaciones. La mayoría de las organizaciones tienen un patrocinador ejecutivo para Microsoft 365 en su conjunto y algunas también tienen un comité de dirección o un equipo para Microsoft 365 como un todo o solo para la intranet. [Obtenga más información sobre los roles y](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)permisos de administración completos disponibles en Microsoft 365 .
+Además del equipo de gobierno, hay varios otros roles o equipos clave que querrás pensar en posicionar para el éxito con Microsoft 365. Algunos roles pueden ser combinados o ocupados por la misma persona y otros pueden no ser adecuados para todas las organizaciones. La mayoría de las organizaciones tienen un patrocinador ejecutivo para Microsoft 365 en su conjunto y algunas también tienen un comité de dirección o un equipo para Microsoft 365 como un todo o solo para la intranet. [Obtenga más información sobre los roles y](../admin/add-users/admin-roles-page.md)permisos de administración completos disponibles en Microsoft 365 .
 
 ### <a name="revisit-as-business-and-technology-changes"></a>Revisar a medida que cambian las empresas y la tecnología
 

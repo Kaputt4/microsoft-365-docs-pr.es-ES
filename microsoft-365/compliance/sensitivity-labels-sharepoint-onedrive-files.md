@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con etiquetas de confidencialidad para Word, Excel y PowerPoint archivos en SharePoint y OneDrive.
-ms.openlocfilehash: 5a1358b86ebd3385dbe66fd075a9aa6bd4d739d58e98120ec7e82f5217ac1e73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3a15b59fc1c1c5c3f0f8497a126c590edd5b20ea
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842016"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569002"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
@@ -65,7 +65,7 @@ Siempre tienes la opción de deshabilitar las etiquetas de confidencialidad de O
 
 Si actualmente está protegiendo documentos en SharePoint mediante SharePoint Information Rights Management (IRM), asegúrese de comprobar la sección [SharePoint Information Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels) y las etiquetas de confidencialidad de esta página.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Estas nuevas funcionalidades solo funcionan con [etiquetas de](sensitivity-labels.md) confidencialidad. Si actualmente tiene etiquetas de Azure Information Protection, migre primero a etiquetas de confidencialidad para que pueda habilitar estas características para los nuevos archivos que cargue. Para obtener más información acerca de este proceso, consulte [Cómo migrar las etiquetas de Azure Information Protection a etiquetas de confidencialidad unificadas](/azure/information-protection/configure-policy-migrate-labels)
 
@@ -137,7 +137,7 @@ Esta opción es la forma más sencilla de habilitar etiquetas de confidencialida
 
 2. Si ve un mensaje para activar la capacidad de procesar contenido en Office en línea, seleccione **Activar ahora**:
 
-    ![Botón Activar ahora para habilitar etiquetas de confidencialidad para Office Online](../media/sensitivity-labels-turn-on-banner.png)
+    ![Active el botón ahora para habilitar las etiquetas de confidencialidad para Office Online.](../media/sensitivity-labels-turn-on-banner.png)
 
     El comando se ejecuta inmediatamente y cuando se actualiza la página, ya no verá el mensaje ni el botón.
 

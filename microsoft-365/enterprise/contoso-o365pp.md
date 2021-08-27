@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usa Microsoft Endpoint Configuration Manager para implementar Aplicaciones de Microsoft 365 para empresas.
-ms.openlocfilehash: 65c73ccccd3e0ca5a3d9e09d1643692d56f5c341
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 8e0a88c85a3a2af35a83c71e7eb385b9edbdde77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356293"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552653"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Implementación de Aplicaciones de Microsoft 365 para empresas en Contoso
 
@@ -74,7 +74,7 @@ Dado que Contoso decidió actualizar automáticamente los dispositivos desde la 
 
 Esta es la arquitectura de implementación Aplicaciones Microsoft 365 para empresas instalación y actualizaciones continuas de Contoso.
 
-![La infraestructura de implementación de Contoso para Aplicaciones Microsoft 365 para empresas](../media/contoso-o365pp/contoso-o365pp-fig1.png)
+![La infraestructura de implementación de Contoso para Aplicaciones Microsoft 365 para empresas.](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
 ## <a name="next-step"></a>Paso siguiente
 

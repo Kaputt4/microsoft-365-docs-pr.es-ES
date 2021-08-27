@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: e13620413c81e5a6492c85d54d284f48308f5578
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: e6d6c1bb9555f0cc0c80b4a4727a761bd2e99999
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256037"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603202"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -80,7 +80,7 @@ Los usuarios con identidades de Azure AD que no tienen Office 365 o Microsoft 36
 
 ### <a name="role-types"></a>Tipos de función
 
-En la tabla siguiente se muestran las funciones permitidas por cada rol en el Administrador de cumplimiento. En la tabla también se muestra cómo cada rol [de Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) se asigna a los roles del Administrador de cumplimiento. Los usuarios necesitarán al menos el rol de lector administrador de cumplimiento o el rol de lector global de Azure AD para tener acceso al Administrador de cumplimiento.
+En la tabla siguiente se muestran las funciones permitidas por cada rol en el Administrador de cumplimiento. En la tabla también se muestra cómo cada rol [de Azure AD](/azure/active-directory/roles/permissions-reference) se asigna a los roles del Administrador de cumplimiento. Los usuarios necesitarán al menos el rol de lector administrador de cumplimiento o el rol de lector global de Azure AD para tener acceso al Administrador de cumplimiento.
 
 
 | El usuario puede: | Rol Administrador de cumplimiento | Rol de Azure AD | 

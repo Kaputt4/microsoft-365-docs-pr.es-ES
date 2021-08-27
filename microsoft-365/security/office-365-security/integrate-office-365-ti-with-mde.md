@@ -19,12 +19,12 @@ description: Usa Microsoft Defender para Office 365 junto con Microsoft Defender
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b9bf8bcd15b52ea94cfc823c04f5501e17c2364e708f6375dd3000a376ed800
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed8d433cd997166ed7fd96034f91eb117b9309cd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56786555"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558583"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Usar Microsoft Defender para Office 365 junto con Microsoft Defender para endpoint
 
@@ -62,15 +62,15 @@ La integración de Microsoft Defender para Office 365 con Microsoft Defender par
 
 3. En la **página Explorador,** en la esquina superior derecha de la pantalla, seleccione **MDE Configuración**.
 
-3. En el control desplegable de conexión de **Microsoft Defender** para puntos de conexión que aparece, activa Conectar a Microsoft Defender **para** Endpoint ( Toggle on ) y, a ![ continuación, selecciona ](../../media/scc-toggle-on.png) **Cerrar**.
+3. En el control desplegable de conexión de **Microsoft Defender** para puntos de conexión que aparece, active Conectar a Microsoft Defender para **Endpoint** ( ![ Toggle on. ) y, a continuación, seleccione ](../../media/scc-toggle-on.png) **Cerrar**.
 
-    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="Conexión MDE":::
+    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="Conexión MDE.":::
 
 4. En el panel de navegación, **elija Configuración**. En la **Configuración,** elija **Extremos**
 
 5. En la **página Extremos que** se abre, elija Características **avanzadas**.
 
-6. Desplácese hacia abajo **hasta Office 365 de inteligencia** de amenazas y actóla ( Activar ![ ](../../media/scc-toggle-on.png) ).
+6. Desplácese hacia abajo **hasta Office 365 de inteligencia** de amenazas y actiébala ( ![ Activar. ](../../media/scc-toggle-on.png) ).
 
    Cuando haya terminado, seleccione **Guardar preferencias**.
 

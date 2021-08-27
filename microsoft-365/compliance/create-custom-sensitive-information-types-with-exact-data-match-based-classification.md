@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f142ecb530e5b6b3a1db7c146feadbe1a02c314ecd115911e531f6cf94ebd778
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 03843707ebffc6798b3d73526a2e95b884047b13
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802543"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594027"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -44,7 +44,7 @@ Pero ¿qué sucede si quiere un tipo de información confidencial personalizado 
 - trabajar con información confidencial de forma más segura
 - usarse con varios servicios en la nube de Microsoft.
 
-![Clasificación basada en EDM](../media/EDMClassification.png)
+![Clasificación basada en EDM.](../media/EDMClassification.png)
 
 La clasificación basada en EDM le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. La base de datos se puede actualizar diariamente y puede contener hasta 100 millones de filas de datos. Así que mientras los empleados, clientes o pacientes van y vienen y cambian los registros, los tipos de información confidencial se mantienen al día y aplicables. Y puede usar la clasificación basada en EDM con directivas, como [directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) o [directivas de archivo de Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
 
@@ -73,7 +73,7 @@ La clasificación basada en EDM se incluye en estas suscripciones
 
 |Portal|World Wide/GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
 |Centro de seguridad de Microsoft 365|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Centro de cumplimiento de Microsoft 365|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
@@ -651,7 +651,7 @@ Estas ubicaciones son compatibles con los tipos de información confidencial de 
 
 10. En la sección **Condiciones** en la lista **+ Agregar una condición**, elija **El contenido incluye tipo confidencial**.
 
-      ![El contenido incluye tipos de información confidencial](../media/edm-dlp-newrule-conditions.png)
+      ![El contenido contiene tipos de información confidencial.](../media/edm-dlp-newrule-conditions.png)
 
 11. Busque el tipo de información confidencial que creó al configurar el paquete de reglas y elija **+ Agregar**.
     Elija **Hecho**.

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 37cccbc8447f10288369185da8fe1374b4e6690e
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 670656ff15f33b28f66da5af9fa105606b99ca01
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503148"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594247"
 ---
 # <a name="list-all-remediation-activities"></a>Enumerar todas las actividades de corrección
 
@@ -75,7 +75,7 @@ createdOn|DateTime|Hora en que se creó esta actividad de corrección|2021-01-12
 description|Cadena|Descripción de esta actividad de corrección|Actualiza Microsoft Silverlight a una versión posterior para mitigar las vulnerabilidades conocidas que afectan a los dispositivos.
 dueOn|DateTime|Fecha de vencimiento que el creador estableció para esta actividad de corrección|2021-01-13T00:00:00Z
 fixedDevices|.|Número de dispositivos que se han corregido|2
-id|String|Identificador de esta actividad de corrección|097d9735-5479-4899-b1b7-77398899df92
+id|Cadena|Identificador de esta actividad de corrección|097d9735-5479-4899-b1b7-77398899df92
 nameId|Cadena|Nombre del producto relacionado|Microsoft Silverlight
 priority|Cadena|Prioridad del conjunto de creadores para esta actividad de corrección (High\Medium\Low)|Alto
 productId|Cadena|Id. de producto relacionado|microsoft-_-silverlight
@@ -89,11 +89,11 @@ requesterEmail|Cadena|Dirección de correo electrónico del creador|globaladmin@
 requesterId|Cadena|Id. de objeto Creator|r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes|Cadena|Las notas (texto libre) que el creador agregó para esta actividad de corrección|nulo
 scid|Cadena|SCID de la recomendación de seguridad relacionada|nulo
-status|String|Estado de la actividad de corrección (Activo/Completado)|Activa
+status|Cadena|Estado de la actividad de corrección (Activo/Completado)|Activa
 statusLastModifiedOn|DateTime|Fecha en la que se actualizó el campo de estado|2021-01-12T18:54:11.5499487Z
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección|43
-title|String|Título de esta actividad de corrección|Actualizar Microsoft Silverlight
-type|String|Tipo de corrección|Actualizar
+title|Cadena|Título de esta actividad de corrección|Actualizar Microsoft Silverlight
+type|Cadena|Tipo de corrección|Actualizar
 vendorId|Cadena|Nombre de proveedor relacionado|Microsoft
 
 ## <a name="example"></a>Ejemplo
@@ -118,7 +118,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
             "requesterEmail": "user1@contoso.com",
             "status": "Active",
             "statusLastModifiedOn": "2021-02-10T13:20:36.4719698Z",
-            "description": "Update Silverlight to a later version  to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.  ",
+            "description": "Update Silverlight to a later version  to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.",
             "relatedComponent": "Microsoft Silverlight",
             "targetDevices": 18511,
             "rbacGroupNames": [
@@ -147,7 +147,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 }
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
 - [Obtener una actividad de corrección por id.](get-remediation-one-activity.md)

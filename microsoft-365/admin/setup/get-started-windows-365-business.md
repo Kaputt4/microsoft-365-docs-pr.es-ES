@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo comprar Windows 365 Empresa para su organización y ayudar a los usuarios a empezar a usar sus equipos en la nube.
-ms.openlocfilehash: 281700a15ef7f0560a5fa2171653eddc7048011d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 19b45f3b3b26bf553830061bf63879647bfeec8f
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532900"
+ms.locfileid: "58602970"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Introducción a Windows 365 Empresa y equipos en la nube
 
@@ -38,7 +38,7 @@ Este artículo está pensado para las personas que planean comprar y configurar 
 > [!NOTE]  
 > Antes de empezar, asegúrese de que la configuración del dispositivo de [Azure AD](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) para los usuarios pueda unir dispositivos a **Azure AD** está establecida en **Todos**.
 
-   ![Los usuarios pueden unir dispositivos a la configuración de Azure AD](../../media/deschutes/azure-device-settings.png)
+   ![Los usuarios pueden unir dispositivos a la configuración de Azure AD.](../../media/deschutes/azure-device-settings.png)
 ## <a name="prerequisites"></a>Requisitos previos
 No hay requisitos previos de licencia para configurar Windows 365 Empresa.
 
@@ -87,7 +87,7 @@ Tanto si compró sus suscripciones a través del sitio de productos de Windows 3
 Puede asignar diferentes tipos de Windows 365 Business a un usuario, en función de las necesidades empresariales de los usuarios. Consulte [Windows de tamaño de 365 Empresa](windows-365-business-sizing.md) para obtener instrucciones sobre qué tipo de licencia puede ser adecuado para los usuarios.
 
 > [!IMPORTANT]
-> La primera vez que se asigna una licencia Windows 365 en el espacio empresarial, se crea automáticamente una cuenta del sistema denominada **Windows 365 BPRT Permanent User** en Azure Active Directory. No elimine esta cuenta ni realice ningún cambio en ella (como cambiar el nombre o UPN). Si se elimina la cuenta del sistema, es posible que se producirá un error en la instalación. Esta cuenta del sistema garantiza un proceso de configuración sin problemas y no tiene capacidades de escritura ni acceso a su espacio empresarial más allá de las capacidades de servicio de ámbito de Windows 365 Empresa. Si elimina este usuario, presente un vale a través del Centro de soporte técnico.
+> La primera vez que se asigna una licencia Windows 365 en el espacio empresarial, se crea automáticamente una cuenta del sistema denominada **Windows 365 BPRT Permanent User** en Azure Active Directory. No elimine esta cuenta ni realice ningún cambio en ella (como cambiar el nombre o UPN). Si se elimina la cuenta del sistema, es posible que se producirá un error en la instalación. Esta cuenta del sistema garantiza un proceso de configuración sin problemas y no tiene capacidades de escritura ni acceso a su espacio empresarial más allá de las capacidades de servicio de ámbito de Windows 365 Empresa. Si elimina este usuario, siga estos pasos [de solución de problemas](/microsoft-365/admin/setup/troubleshoot-windows-365-business?#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active).
 
 ## <a name="get-your-users-started-with-cloud-pc"></a>Introducción a los usuarios con el equipo en la nube
 
@@ -102,7 +102,7 @@ Los usuarios pueden navegar hasta **https://windows365.microsoft.com** obtener a
 
 En su Windows principal de 365, los usuarios ven los equipos en la nube a los que tienen acceso en la sección Sus equipos **en** la nube.
 
-![Windows 365 hogar](../../media/deschutes/cloudpc-home.png)
+![Windows 365 home.](../../media/deschutes/cloudpc-home.png)
 
 Los usuarios pueden **seleccionar Abrir en el explorador** para abrir su equipo en la nube.
 
@@ -113,7 +113,7 @@ Los usuarios pueden **seleccionar Abrir en el explorador** para abrir su equipo 
 
 Mientras que en la Windows principal de 365, los usuarios pueden realizar acciones en sus equipos en la nube seleccionando el icono de engranaje en una tarjeta de pc en la nube.
 
-![Menú Tarjeta](../../media/deschutes/cloudpc-gear.png)
+![Menú Tarjeta.](../../media/deschutes/cloudpc-gear.png)
 
 - **Reiniciar:** reinicia el equipo en la nube.
 
@@ -149,7 +149,7 @@ Para configurar su cliente de Escritorio remoto, los usuarios siguen estos pasos
 1. En la **Windows principal de 365**, seleccione el icono **Escritorio remoto de Microsoft aplicaciones** (debajo del icono principal).
 2. En la **página Escritorio remoto de Microsoft aplicaciones,** descarga e instala la aplicación de Escritorio remoto que necesitas.
 
-   ![Clientes de escritorio remoto](../../media/deschutes/remote-desktop-apps.png)
+   ![Clientes de escritorio remoto.](../../media/deschutes/remote-desktop-apps.png)
 
 Para obtener una lista de clientes por sistema operativo, vea [Clientes de Escritorio remoto](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients).
 

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: ed8fd13aa84fc807c75db99f7ed06fab8dcfbf65631c51bf51afcf295f66c965
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c7a7b3a09a8e8c7cc1a20beab8e2a895702eea27
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794167"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595343"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>Activar la protección proporcionada en la nube
 
@@ -59,7 +59,7 @@ Para obtener más información acerca de los requisitos específicos de conectiv
 
 3. Seleccione el **tipo de perfil Restricciones de** dispositivo que desea configurar. Si necesitas crear un nuevo tipo de perfil **de restricciones** de dispositivo, consulta Configurar la configuración de restricción de dispositivo [en Microsoft Intune](/intune/device-restrictions-configure).
 
-4. Seleccionar **opciones de** configuración de  >  **propiedades: editar**  >  **Antivirus de Microsoft Defender**.
+4. Seleccionar **opciones de** configuración de \> **propiedades: editar** \> **Antivirus de Microsoft Defender**.
 
 5. En el **conmutador de protección entregado en** la nube, seleccione **Habilitar**.
 
@@ -71,7 +71,7 @@ Para obtener más información acerca de los perfiles de dispositivo de Intune, 
 
 1. Vaya al Centro Microsoft Endpoint Manager administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
 
-2. Elija **Endpoint security**  >  **Antivirus**.
+2. Elija **Endpoint security** \> **Antivirus**.
 
 3. Seleccione un perfil antivirus. (Si aún no tienes uno, o si quieres crear un perfil nuevo, consulta Configurar la configuración de restricción de [dispositivos en Microsoft Intune](/intune/device-restrictions-configure).
 
@@ -99,12 +99,12 @@ Para obtener más información sobre cómo configurar Microsoft Endpoint Configu
 5. Haga doble clic **en Unirse a Microsoft MAPS**. Asegúrese de que la opción está activada y establecida en **Mapas** básicos o **mapas avanzados**. Seleccione **Aceptar**.
 
 6. Haga doble clic en **Enviar ejemplos de archivos cuando sea necesario realizar un análisis adicional.** Asegúrese de que la primera opción esté establecida en **Enabled** y de que las demás opciones estén establecidas en:
-
     1. **Enviar muestras seguras** (1)
     2. **Enviar todos los ejemplos** (3)
 
-        >[!NOTE]
+        > [!NOTE]
         > La **opción Enviar muestras seguras** (1) significa que la mayoría de las muestras se enviarán automáticamente. Los archivos que probablemente contengan información personal seguirán solicitando y necesitarán confirmación adicional.
+        >
         > Al establecer la opción **en Preguntar siempre** (0), se disminuirá el estado de protección del dispositivo. Establecerlo en **Nunca enviar** (2) significa que la característica Bloquear a primera [vista](configure-block-at-first-sight-microsoft-defender-antivirus.md) de Microsoft Defender para endpoint no funcionará.
 
 7. Seleccione **Aceptar**.
@@ -120,10 +120,10 @@ Set-MpPreference -SubmitSamplesConsent SendAllSamples
 
 Para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/). [CSP de directiva: Defender](/windows/client-management/mdm/policy-csp-defender) también tiene más información específica sobre [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
->[!NOTE]
+> [!NOTE]
 > También puede establecer **-SubmitSamplesConsent** en `SendSafeSamples` (la configuración predeterminada), `NeverSend` o `AlwaysPrompt` . La `SendSafeSamples` configuración significa que la mayoría de las muestras se enviarán automáticamente. Los archivos que probablemente contengan información personal seguirán solicitando y necesitarán confirmación adicional.
 
->[!WARNING]
+> [!WARNING]
 > Establecer **-SubmitSamplesConsent** en `NeverSend` o `AlwaysPrompt` disminuirá el nivel de protección del dispositivo. Además, establecerlo en significa que la característica Bloquear a primera vista de Microsoft Defender para endpoint `NeverSend` no funcionará. [](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
 ## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-delivered-protection"></a>Use Windows Management Instruction (WMI) para activar la protección entregada en la nube

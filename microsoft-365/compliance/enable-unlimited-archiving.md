@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: obtenga información sobre cómo habilitar el archivado de expansión automática, que proporciona a los usuarios almacenamiento ilimitado para sus Exchange Online buzones de correo. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a094d61ce40365bd21c278d479f84a3018ee52bb
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: b2e439d511badce9e7010b3949f299686c0487ff
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502764"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569086"
 ---
 # <a name="enable-unlimited-archiving---admin-help"></a>Habilitar archivado ilimitado: Ayuda para administradores
 
@@ -111,7 +111,7 @@ Tenga en cuenta lo siguiente después de habilitar el archivado de expansión au
 
 - Del mismo modo, los valores de las propiedades del buzón  *ArchiveQuota*  y  *ArchiveWarningQuota*  no se modifican al habilitar el archivado de expansión automática. De hecho, cuando habilita el archivado de expansión automática para un buzón de usuario y la propiedad *AutoExpandingArchiveEnabled* se establece en , se omiten las propiedades `True` *ArchiveQuota* y *ArchiveWarningQuota.* Este es un ejemplo de estas propiedades de buzón después de habilitar el archivado de expansión automática para el buzón de un usuario. 
 
-    ![Las propiedades ArchiveQuota y ArchiveWarningQuota se omiten después de habilitar el archivado de expansión automática](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
+    ![Las propiedades ArchiveQuota y ArchiveWarningQuota se omiten después de habilitar el archivado de expansión automática.](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
 ## <a name="more-information"></a>Más información
 

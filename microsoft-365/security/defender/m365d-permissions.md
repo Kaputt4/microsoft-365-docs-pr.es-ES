@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 61d76d873005c2bdd37fc37f05cf6e520a302647
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7a4176e5b375c32edb1e1fae3ab74f0760f28366
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247961"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595155"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Administrar el acceso a Microsoft 365 Defender con Azure Active Directory roles globales
 
@@ -54,7 +54,7 @@ Para revisar las cuentas con estos roles, [vea Permisos en el portal de Microsof
 > Este artículo solo se aplica a la administración de roles Azure Active Directory global. Para obtener más información acerca del uso del control de acceso basado en roles personalizado, vea [Roles personalizados para el control de](custom-roles.md) acceso basado en roles
 
 ## <a name="access-to-functionality"></a>Acceso a la funcionalidad
-El acceso a la funcionalidad específica está determinado por el de [roles de de Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Póngase en contacto con un administrador global si necesita tener acceso a funciones específicas que requieren que usted o el grupo de usuarios tenga asignado un nuevo rol.
+El acceso a la funcionalidad específica está determinado por el de [roles de de Azure AD](/azure/active-directory/roles/permissions-reference). Póngase en contacto con un administrador global si necesita tener acceso a funciones específicas que requieren que usted o el grupo de usuarios tenga asignado un nuevo rol.
 
 ### <a name="approve-pending-automated-tasks"></a>Aprobar tareas automatizadas pendientes
 [Investigación y corrección automatizadas](m365d-autoir-actions.md)puede actuar en los mensajes de correo electrónico, las reglas de reenvío, los archivos, los mecanismos de persistencia y otros artefactos presentes durante las investigaciones. Para aprobar o rechazar acciones pendientes que requieran aprobación explícita, debe tener determinadas funciones asignadas en Microsoft 365. Para obtener más información, consulte [permisos del centro de actividades](m365d-action-center.md#required-permissions-for-action-center-tasks).
@@ -69,6 +69,6 @@ Durante la vista previa, Microsoft 365 Defender aplica controles de acceso en fu
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Roles personalizados en el control de acceso basado en roles para Microsoft 365 Defender](custom-roles.md)
-- [Roles de Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+- [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)
 - [Rbac de Microsoft Defender para extremo](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Roles de Cloud App Security](/cloud-app-security/manage-admins)

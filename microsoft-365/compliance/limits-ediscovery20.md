@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de casos, los límites de indización y los límites de búsqueda en vigor para la solución Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: ba4abe52c668799f379780221b46042c8f515393ecd6f395cb45a49bad9295e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7771f653550c050250126b7ff93b83ee2e175937
+ms.sourcegitcommit: fce9a89b8280f41779835b18dceb59fa17384acf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807977"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58666759"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
@@ -34,14 +34,14 @@ En la tabla siguiente se enumeran los límites de los casos y los conjuntos de r
 | Descripción del límite | Límite |
 |:-----|:-----|
 |Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de revisión de un caso).  <br/> |3 millones <br/> |
-|Tamaño total del archivo por conjunto de carga. Esto incluye la carga de Office 365 en un conjunto de revisión.  <br/> |300 GB <br/> |
+|Tamaño total del archivo por conjunto de carga. Esto incluye la carga de Office 365 en un conjunto de revisión.  <br/> |300 GB <br/> |
 |Cantidad total de datos cargados en todos los conjuntos de revisión de la organización por día.<br/> |2 TB <br/> |
 |Número máximo de conjuntos de carga por caso.  <br/> |200 <br/> |
 |Número máximo de conjuntos de revisión por caso.  <br/> |20 <br/> |
 |Número máximo de grupos de etiquetas por caso.  <br/> |1000 <br/> |
 |Número máximo de etiquetas por caso.  <br/> |1000 <br/> |
 |Trabajos simultáneos máximos en la organización para agregar contenido a un conjunto de revisión. Estos trabajos se **denominan Agregar datos a un conjunto** de revisión y se muestran en la **pestaña** Trabajos en un caso.| 10 <sup>4</sup> |
-|Trabajos simultáneos máximos para agregar contenido a un conjunto de opiniones por usuario. Estos trabajos se **denominan Agregar datos a un conjunto** de revisión y se muestran en la **pestaña** Trabajos en un caso. | 3 |
+|Trabajos simultáneos máximos para agregar contenido a un conjunto de opiniones por usuario. Estos trabajos se **denominan Agregar datos a un conjunto** de revisión y se muestran en la **pestaña** Trabajos en un caso. | 3  |
 |||
 
 ## <a name="hold-limits"></a>Límites de retención
@@ -50,7 +50,7 @@ En la tabla siguiente se enumeran los límites para las retenciones asociadas co
 
 | Descripción del límite | Límite |
 |:-----|:-----|
-|Número máximo de buzones en una única retención de casos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos. <br/> |1.000  <br/> |
+|Número máximo de buzones en una única retención de casos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos. <br/> |1,000  <br/> |
 |Número máximo de sitios en una única retención de casos. Este límite incluye el total combinado de sitios OneDrive para la Empresa, SharePoint y los sitios asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Límites de indexación
@@ -60,10 +60,9 @@ En la tabla siguiente se enumeran los límites de indización en Advanced eDisco
 | Descripción del límite | Límite |
 |:-----|:-----|
 |Número máximo de caracteres extraídos de un único archivo.  <br/> |10 millones<sup>1</sup> <br/> |
-|Tamaño máximo de un solo archivo.   <br/> |100 MB<sup>1</sup> <br/> |
+|Tamaño máximo de un solo archivo.   <br/> |150 MB<sup>1</sup> <br/> |
 |Profundidad máxima de los elementos incrustados en un documento.  <br/> |25<sup>1</sup> <br/> |
-|Tamaño máximo de los archivos procesados por reconocimiento óptico de caracteres (OCR).  <br/> |24 MB<sup>1</sup> <br/> 
-|Número máximo de trabajos de indización por organización y día. <br/> |10<sup>6</sup> <br/>|  
+|Tamaño máximo de los archivos procesados por reconocimiento óptico de caracteres (OCR).  <br/> |24 MB<sup>1</sup> <br/>  
 |||
 
 ## <a name="search-limits"></a>Límites de búsqueda
@@ -74,14 +73,14 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 |:-----|:-----|
 |Número máximo de buzones o sitios que se pueden buscar en una sola búsqueda. |Sin límite|
 |Número máximo de búsquedas que se pueden ejecutar al mismo tiempo. |Sin límite |
-|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. |10  | 
+|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. |10 | 
 |Número máximo de caracteres para una consulta de búsqueda (incluidos los operadores y las condiciones). |10 000 &nbsp; <sup>2</sup>|
 |Número máximo de caracteres para una consulta de búsqueda para SharePoint y OneDrive para la Empresa (incluidos los operadores y las condiciones). |10,000<br>4.000 con caracteres comodín &nbsp; <sup>2</sup>|
-|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo, **un \* *_ o _* set \***.|3 |  
+|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo, **un \* *_ o _* set \***.|3  |  
 |Variantes máximas devueltas cuando se usa el carácter comodín de prefijo para buscar una frase exacta o cuando se usa un prefijo comodín y el **operador booleano NEAR.** |10 000 &nbsp; <sup>3</sup>|
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes. |100|
-|Número máximo de elementos de todos los buzones que se muestran en la página de vista previa para las búsquedas.|1.000|
-|Número máximo de buzones que se pueden obtener una vista previa de los resultados de la búsqueda.  Si hay más de 1000 buzones que contienen elementos que coinciden con la consulta de búsqueda, solo los 1.000 buzones con más resultados están disponibles para la vista previa.|1.000|
+|Número máximo de elementos de todos los buzones que se muestran en la página de vista previa para las búsquedas.|1,000|
+|Número máximo de buzones que se pueden obtener una vista previa de los resultados de la búsqueda.  Si hay más de 1000 buzones que contienen elementos que coinciden con la consulta de búsqueda, solo los 1.000 buzones con más resultados están disponibles para la vista previa.|1,000|
 |Número máximo de elementos de los sitios SharePoint y OneDrive para la Empresa que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes. |200|
 |Número máximo de SharePoint y OneDrive para la Empresa que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 200 sitios que contienen elementos que coinciden con la consulta de búsqueda, solo los 200 sitios principales con más resultados están disponibles para la vista previa.|200|
 |Número máximo de elementos por buzón de carpetas públicas que se muestran en la página de vista previa para las búsquedas. |100|
@@ -96,7 +95,7 @@ Microsoft recopila información de rendimiento para las búsquedas ejecutadas po
   | Número de buzones | Promedio de tiempo de búsqueda |
   |:-----|:-----|
   |100  <br/> |30 segundos  <br/> |
-  |1.000  <br/> |45 segundos  <br/> |
+  |1,000  <br/> |45 segundos  <br/> |
   |10 000  <br/> |4 minutos  <br/> |
   |25 000  <br/> |10 minutos  <br/> |
   |50 000  <br/> |20 minutos  <br/> |
@@ -145,4 +144,3 @@ Los límites descritos en esta sección están relacionados con la exportación 
 >
 > <sup>5</sup> Este límite se aplica a la descarga de documentos seleccionados de un conjunto de opiniones. No se aplica a la exportación de documentos de un conjunto de revisión. Para obtener más información acerca de la descarga y exportación de documentos, vea [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md).
 >
-> <sup>6</sup> Límites de indización por organización y día. Como solución alternativa, puede seleccionar varios custodios en la  pestaña **Orígenes** de datos en un caso y, a continuación, hacer clic en Actualizar índice para evitar crear un trabajo de índice independiente para cada custodio. 

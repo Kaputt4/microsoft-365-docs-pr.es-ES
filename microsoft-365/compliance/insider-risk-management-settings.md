@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: b6c8a616dc4040437a8caec91ab8a5e8fdc1e586
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 2d9914dec5abcf87885404adbc5092605402a045
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533176"
+ms.locfileid: "58599172"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -50,7 +50,7 @@ Proteger la privacidad de los usuarios que tienen coincidencias de directivas es
 
 - **No mostrar versiones anónimas de** nombres de usuario: los nombres de usuario se muestran para todas las coincidencias de directiva actuales y pasadas para alertas y casos. La información de perfil de usuario (nombre, título, alias y organización o departamento) se muestra para el usuario para todas las alertas y casos de administración de riesgos de insider.
 
-![Configuración de privacidad de la administración de riesgos insider](../media/insider-risk-settings-privacy.png)
+![Configuración de privacidad de la administración de riesgos de Insider.](../media/insider-risk-settings-privacy.png)
 
 ## <a name="indicators"></a>Indicadores
 
@@ -150,7 +150,7 @@ Al crear una directiva en el asistente para directivas, puede configurar cómo e
 
 Por ejemplo, decide habilitar los indicadores SharePoint en la configuración de la directiva de riesgo de insider y establecer umbrales personalizados para eventos SharePoint al configurar indicadores para una nueva directiva de *pérdidas* de datos de riesgo interno. Mientras se encuentra en el asistente para directivas de riesgo insider, se configuran tres niveles de eventos diarios diferentes para cada indicador SharePoint para influir en la puntuación de riesgo de las alertas asociadas a estos eventos.
 
-![Configuración personalizada del indicador de administración de riesgos de Insider](../media/insider-risk-custom-indicators.png)
+![Configuración del indicador personalizado de administración de riesgos de Insider.](../media/insider-risk-custom-indicators.png)
 
 Para el primer nivel de evento diario, se establece el umbral en *10* o más eventos por día para un menor impacto en la puntuación de riesgo de los eventos, *20* o más eventos por día para un impacto medio en la puntuación de riesgo de los eventos y *30* o más eventos por día un impacto mayor en la puntuación de riesgo para los eventos. Estas configuraciones significan de forma eficaz:
 
@@ -166,7 +166,7 @@ Los períodos de tiempo de las directivas permiten definir períodos de revisió
 - **Ventana activación:** disponible para todas  las plantillas de directiva, la ventana Activación es el número definido de días que la ventana se activa **después** de un evento desencadenante. La ventana se activa de 1 a 30 días después de que se produzca un evento desencadenante para cualquier usuario asignado a la directiva. Por ejemplo, ha configurado una directiva de administración de riesgos insider y ha establecido la *ventana* Activación en 30 días. Han pasado varios meses desde que configuró la directiva y se produce un evento desencadenante para uno de los usuarios incluidos en la directiva. El evento desencadenante  activa la ventana Activación y la directiva está activa para ese usuario durante 30 días después de que se produjo el evento desencadenante.
 - **Detección de** actividad pasada: disponible  para todas las plantillas de directiva, la detección de actividad Pasada es el número definido de días que se activa la ventana antes **de** un evento desencadenante. La ventana se activa de 0 a 180 días antes de que se produzca un evento desencadenante para cualquier usuario asignado a la directiva. Por ejemplo, ha configurado una directiva de administración de riesgos de insider y ha establecido la detección de actividad *pasada* en 90 días. Han pasado varios meses desde que configuró la directiva y se produce un evento desencadenante para uno de los usuarios incluidos en la directiva. El evento desencadenante  activa la detección de actividad Past y la directiva recopila actividades históricas para ese usuario durante 90 días antes del evento desencadenante.
 
-![Configuración del período de tiempo de administración de riesgos de Insider](../media/insider-risk-settings-timeframes.png)
+![Configuración del período de tiempo de administración de riesgos de Insider.](../media/insider-risk-settings-timeframes.png)
 
 ## <a name="intelligent-detections"></a>Detecciones inteligentes
 
@@ -238,7 +238,7 @@ Para usar las API para revisar la información de alerta de riesgo de insider:
 2. Filtre las actividades Office 365 auditoría comunes *por SecurityComplianceAlerts*.
 3. Filtrar *SecurityComplianceAlerts* por la *categoría InsiderRiskManagement.*
 
-![Configuración de alertas de exportación de la administración de riesgos insider](../media/insider-risk-settings-export.png)
+![Configuración de alertas de exportación de la administración de riesgos insider.](../media/insider-risk-settings-export.png)
 
 La información de alerta contiene información del esquema de alerta de seguridad y cumplimiento y el esquema Office 365 de la API de actividad de administración.
 
@@ -273,7 +273,7 @@ Los siguientes campos y valores se exportan para alertas de administración de r
 
 Los usuarios de la organización pueden tener diferentes niveles de riesgo según su posición, nivel de acceso a información confidencial o historial de riesgos. Priorizar el examen y la puntuación de las actividades de estos usuarios puede ayudarle a alertar sobre posibles riesgos que pueden tener mayores consecuencias para su organización. Los grupos de usuarios prioritarios en la administración de riesgos de insider ayudan a definir los usuarios de la organización que necesitan una inspección más estrecha y una puntuación de riesgos más confidencial. Junto con las infracciones de la directiva de seguridad por parte de los usuarios prioritarios y las pérdidas de datos por plantillas de directiva de usuarios *prioritarios,* los usuarios agregados a un grupo de usuarios prioritarios tienen una mayor probabilidad de *alertas* y alertas de riesgo interno con niveles de gravedad más altos.
 
-![Configuración de grupo de usuarios de prioridad de administración de riesgos de Insider](../media/insider-risk-settings-priority-users.png)
+![Configuración de grupo de usuarios de prioridad de administración de riesgos insider.](../media/insider-risk-settings-priority-users.png)
 
 En lugar de estar abiertos a la revisión por parte de todos los analistas e investigadores, es posible que los grupos de usuarios prioritarios también necesiten restringir las actividades de revisión a usuarios específicos o grupos de roles de riesgo de insider. Puede elegir asignar usuarios individuales y grupos de roles para revisar usuarios, alertas, casos e informes para cada grupo de usuarios prioritarios. Los grupos de usuarios prioritarios pueden tener permisos de revisión asignados a los grupos de roles integrados *Insider Risk Management*, *Insider Risk Management Analysts* y *Insider Risk Management Investigators,* uno o varios de estos grupos de roles, o a una selección personalizada de usuarios.
 
@@ -339,7 +339,7 @@ Por ejemplo, la organización tiene un sistema de mala gestión para los usuario
 
 Puede habilitar el conector de datos de protección física en Microsoft 365 importar información de acceso desde el sistema de protección física y especificar activos físicos prioritarios en la administración de riesgos de insider. Al importar información desde el sistema de administración de proyectos y correlacionar la información de acceso físico con otras actividades de riesgo identificadas en la administración de riesgos de información interna, observa que uno de los usuarios del proyecto está accediendo a las oficinas del proyecto después del horario laboral normal y también exporta grandes cantidades de datos a un servicio de almacenamiento en la nube personal desde su área de trabajo normal. Esta actividad de acceso físico asociada a la actividad en línea puede apuntar a posibles robos de datos y los investigadores y analistas de cumplimiento pueden tomar las acciones adecuadas según las circunstancias de este usuario.
 
-![Activos físicos prioritarios de la administración de riesgos insider](../media/insider-risk-settings-priority-assets.png)
+![Activos físicos prioritarios de la administración de riesgos de Insider.](../media/insider-risk-settings-priority-assets.png)
 
 ### <a name="configure-priority-physical-assets"></a>Configurar activos físicos prioritarios
 
@@ -408,8 +408,6 @@ Siga estos pasos para crear un flujo Power Automate de una plantilla de administ
 
 > [!IMPORTANT]
 > Si otros usuarios de la organización necesitan acceso al flujo, el flujo debe compartirse.
-
-![El poder de administración de riesgos de Insider automatiza los flujos](../media/insider-risk-settings-power-automate-flows.png)
 
 ### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>Crear un flujo de Power Automate personalizado para la administración de riesgos de insider
 
@@ -488,7 +486,7 @@ Habilitar Microsoft Teams compatibilidad con casos es rápido y fácil de config
 3. Habilite Microsoft Teams integración para la administración de riesgos de insider.
 4. Seleccione **Guardar** para configurar y salir.
 
-![Administración de riesgos insider Microsoft Teams](../media/insider-risk-settings-teams.png)
+![Administración de riesgos insider Microsoft Teams.](../media/insider-risk-settings-teams.png)
 
 ### <a name="create-a-microsoft-teams-team-for-existing-cases"></a>Crear un equipo Microsoft Teams para casos existentes
 
@@ -533,13 +531,13 @@ Siga estos pasos para habilitar el análisis de riesgos de insider:
 2. Seleccione **Ejecutar examen en** la pestaña Examinar los riesgos de **insider en** la tarjeta de la organización en la pestaña Información general sobre la administración de riesgos de insider.  Esto activa el análisis de la organización. También puede activar el examen en su organización navegando a Configuración de riesgos de **Insider** Analytics y habilitando Examinar la actividad del usuario del inquilino para identificar posibles riesgos de  >   **insider**.
 3. En el **panel de detalles de Analytics,** seleccione Ejecutar **examen** para iniciar el examen de su organización. Los resultados del examen de análisis pueden tardar hasta 24 horas antes de que la información esté disponible como informes para su revisión.
 
-![Configuración de análisis de administración de riesgos de Insider](../media/insider-risk-settings-analytics-enable.png)
+![Configuración de análisis de administración de riesgos de Insider.](../media/insider-risk-settings-analytics-enable.png)
 
 ### <a name="viewing-analytics-insights-and-creating-new-policies"></a>Visualización de información de análisis y creación de nuevas directivas
 
 Una vez completado el primer examen de análisis para su organización, puede ver los conocimientos y recomendaciones de las actividades potencialmente arriesgadas por los usuarios. Los exámenes diarios continuarán a menos que desactives los análisis de tu organización. Para ver posibles riesgos para su  organización, vaya a la pestaña Información general y seleccione **Ver** resultados en la tarjeta análisis de riesgos **de Insider (versión** preliminar). Si el examen de la organización no se ha completado, verá un mensaje que indica que el examen sigue activo.
 
-![Tarjeta lista para informes de análisis de administración de riesgos de Insider](../media/insider-risk-analytics-ready-card.png)
+![Tarjeta lista para informes de análisis de administración de riesgos de Insider.](../media/insider-risk-analytics-ready-card.png)
 
 Para los exámenes completados, verá los posibles riesgos detectados en su organización y los conocimientos y recomendaciones para abordar estos riesgos. Los riesgos identificados y los conocimientos específicos se incluyen en los informes agrupados por área, el número total de usuarios con riesgos identificados, el porcentaje de estos usuarios con actividades potencialmente arriesgadas y una directiva de riesgos insider recomendada para ayudar a mitigar estos riesgos. Los informes incluyen:
 
@@ -547,11 +545,11 @@ Para los exámenes completados, verá los posibles riesgos detectados en su orga
 - Información sobre el robo de datos: actividades para usuarios que salen o usuarios con cuentas de Azure Active Directory **eliminadas** que pueden incluir el uso compartido arriesgado de información fuera de la organización o el robo de datos por parte de usuarios con intenciones malintencionadas.
 - **Información de exfiltración** superior: actividades de todos los usuarios que pueden incluir el uso compartido de datos fuera de la organización.
 
-![Informe de información general de análisis de administración de riesgos de Insider](../media/insider-risk-analytics-overview.png)
+![Informe de información general de análisis de administración de riesgos de Insider.](../media/insider-risk-analytics-overview.png)
 
 Para mostrar más información para una información, seleccione **Ver detalles** para mostrar el panel de detalles de la información. El panel de detalles incluye los resultados completos  de la información, una recomendación de directiva de riesgo interno y el botón Crear directiva para ayudarle a crear rápidamente la directiva recomendada. Si selecciona Crear directiva, se le llevará al Asistente para directivas y seleccionará automáticamente la plantilla de directiva recomendada relacionada con la información. Por ejemplo, si la información de análisis es para la actividad *de* pérdida de datos, la plantilla de directiva de *pérdidas* de datos generales se seleccionará previamente en el asistente para directivas.
 
-![Informe de detalles de análisis de administración de riesgos de Insider](../media/insider-risk-analytics-details.png)
+![Informe de detalles de análisis de administración de riesgos de Insider.](../media/insider-risk-analytics-details.png)
 
 ### <a name="turn-off-analytics"></a>Desactivar análisis
 

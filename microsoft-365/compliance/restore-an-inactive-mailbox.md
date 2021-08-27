@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Obtenga información sobre cómo restaurar (o combinar) el contenido de un buzón inactivo en un buzón existente en Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 19d54f239fb092f8dc29b986461028b990b8e4446bc506440d15ff704f5c3618
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09ab8893b2c663d87417fbedf0c157100b3693da
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795799"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569014"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Restaurar un buzón inactivo
 
@@ -132,8 +132,8 @@ Si un buzón inactivo tiene un buzón de archivo, también puede restaurarlo en 
 
   **Jerarquía de carpetas en el buzón de destino cuando no se usa el parámetro TargetRootFolder**
 
-  ![Captura de pantalla cuando no se utiliza el parámetro TargetRootFolder](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
+  ![Captura de pantalla cuando no se usa el parámetro TargetRootFolder.](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
 
   **Jerarquía de carpetas en el buzón de destino cuando se usa el parámetro TargetRootFolder**
 
-  ![Captura de pantalla cuando se usa el parámetro TargetRootFolder](../media/300da592-7323-48db-b8a4-07012259d113.png)
+  ![Captura de pantalla cuando se usa el parámetro TargetRootFolder.](../media/300da592-7323-48db-b8a4-07012259d113.png)

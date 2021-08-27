@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo proteger Windows 10 equipos después de configurar Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 73bfa1c1c2c10daa73e6bd7b024cd8d3dcefc107
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 23b2879b22299ad6c43ae5a8e03ee8060ec26789
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377958"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595531"
 ---
 # <a name="secure-windows-10-computers"></a>Proteger equipos con Windows 10
 
@@ -44,7 +44,7 @@ Una vez que haya configurado [Microsoft 365 Empresa Premium,](business-set-up.md
 
     En la parte superior de la página, elija **Introducción.**
 
-4. En el **panel Proteger Windows 10 equipos,** seleccione las opciones que desea activar. Para obtener más información acerca de la configuración, vea [Secure Windows 10 devices](/misc/secure-windows-10-devices.md) (article)\
+4. En el **panel Proteger Windows 10 equipos,** seleccione las opciones que desea activar. Para obtener más información acerca de la configuración, vea [Secure Windows 10 devices](../misc/secure-windows-10-devices.md) (article)\
 ). 
     
     Para la mayoría de las organizaciones, las opciones aquí ofrecen un buen nivel de seguridad, pero si su organización tiene necesidades de seguridad más complejas, también puede usar líneas base de seguridad predefinidas para proteger los dispositivos Windows 10 seguridad. Para obtener más información, consulte [security baselines for Windows 10 devices](/mem/intune/protect/security-baselines).   

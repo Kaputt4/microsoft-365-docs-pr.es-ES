@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 155195ef2c7083bf6d792ccd1b77584d43ba3be27414ac3b27013af6f774cd09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37918c9078231b80f1b41ddf063df92f5cd2aace
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905529"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569062"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -36,7 +36,7 @@ El **Panel de control de la directiva** le permite ver rápidamente las directiv
 - **Acciones realizadas en alertas**: el número total de alertas que se confirmaron o descartaron durante los últimos 365 días.
 - **Efectividad de la alerta de la directiva**: el porcentaje determinado por el total de alertas confirmadas dividido entre el total de acciones realizadas en alertas (que es la suma de alertas que se confirmaron o descartaron durante el año pasado).
 
-![Panel de directiva de administración de riesgos internos](../media/insider-risk-policy-dashboard.png)
+![Panel de directivas de administración de riesgos de Insider.](../media/insider-risk-policy-dashboard.png)
 
 ## <a name="policy-recommendations-from-analytics-preview"></a>Recomendaciones de directivas a partir de los análisis (versión preliminar)
 
@@ -72,7 +72,7 @@ Al crear o modificar las directivas DLP para usarlas con las directivas de admin
 
 - Asegúrese de que la configuración de la regla de **Informes de incidentes** en la directiva DLP usada para esta plantilla de administración de riesgos internos esté configurada para alertas de nivel de gravedad *Alto*. El nivel de gravedad *Alto* es el de los eventos desencadenantes y las alertas de administración de riesgos internos no se generarán a partir de las reglas de las directivas DLP con el campo **Informes de incidentes** configurado en *Bajo* o *Medio*.
 
-    ![Configuración de alertas de la directiva DLP](../media/insider-risk-DLP-policy-high-severity.png)
+    ![Configuración de alerta de directiva DLP.](../media/insider-risk-DLP-policy-high-severity.png)
 
      > [!NOTE]
      > Al crear una nueva directiva DLP usando las plantillas incorporadas, tendrá que seleccionar la opción **Crear o personalizar reglas DLP avanzadas** para configurar el ajuste de **Informes de incidentes** para el nivel de gravedad *Alto*.
@@ -208,7 +208,9 @@ Para ver rápidamente el estado de la directiva, navegue por la pestaña Directi
 
 Para obtener más detalles sobre cualquier recomendación o advertencia, seleccione una directiva en la pestaña **Directiva** para abrir la tarjeta de detalles de la misma. En la sección de notificaciones de la tarjeta de datos se mostrará más información sobre las recomendaciones y advertencias, incluidas las directrices sobre cómo resolver estos problemas.
 
-![Estado de directiva de administración de riesgos internos](../media/insider-risk-policy-health.png)
+![Mantenimiento de la directiva de administración de riesgos insider.](../media/insider-risk-policy-health.png)
+
+### <a name="notification-messages"></a>Mensajes de notificación
 
 Use la siguiente tabla para obtener más información sobre las recomendaciones y las notificaciones de advertencia, así como sobre las acciones a realizar para resolver posibles problemas.
 

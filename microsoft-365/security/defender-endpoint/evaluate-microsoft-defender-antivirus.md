@@ -15,12 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 93bc842f64139bce2ce5615868e77b4418e40f5dac7956711b7f5a08e60fcd42
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f68efdcf74317efeb1683b1cc5efcdf1f43fafa
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794023"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599296"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>Evaluar Antivirus de Microsoft Defender
 
@@ -33,11 +33,12 @@ ms.locfileid: "53794023"
 
 Use esta guía para determinar qué tan bien Antivirus de Microsoft Defender protege contra virus, malware y aplicaciones potencialmente no deseadas.
 
->[!TIP]
+> [!TIP]
 >También puede visitar el sitio web de demostración de Microsoft Defender para endpoint en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que las siguientes características funcionan y ver cómo funcionan:
->- Protección entregada en la nube
->- Aprendizaje rápido (incluido Bloquear a primera vista)
->- Bloqueo de aplicaciones potencialmente no deseado
+>
+> - Protección entregada en la nube
+> - Aprendizaje rápido (incluido Bloquear a primera vista)
+> - Bloqueo de aplicaciones potencialmente no deseado
 
 Explica las características importantes de protección de próxima generación de Antivirus de Microsoft Defender disponibles para pequeñas y grandes empresas, y cómo aumentan la detección y protección de malware en toda la red.
 

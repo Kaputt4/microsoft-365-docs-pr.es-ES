@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9c1a07c1e68694c64c185f612e237e909d2612d7eb5940aca169e6eaad0e47cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15c3ad6eef732f36a425a54673a694613c0f4b66
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874056"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598998"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Obtener KBs ausentes por id. de software
 
@@ -41,10 +41,10 @@ Recupera KBs ausentes (actualizaciones de seguridad) por identificador de softwa
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md) para obtener más información.
 
-Tipo de permiso |   Permiso   |   Nombre para mostrar de permisos
+Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación |Software.Read.All |   'Leer información de software de administración de amenazas y vulnerabilidades'
-Delegado (cuenta profesional o educativa) | Software.Read |   'Leer información de software de administración de amenazas y vulnerabilidades'
+Aplicación|Software.Read.All|'Leer información de software de administración de amenazas y vulnerabilidades'
+Delegado (cuenta profesional o educativa)|Software.Read|'Leer información de software de administración de amenazas y vulnerabilidades'
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -56,7 +56,7 @@ GET /api/Software/{Id}/getmissingkbs
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | String | Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft protege los datos de los clientes y sepa cómo puede cumplir con ISO, HIPAA, FINRA y FedRAMP cuando use Office 365.
-ms.openlocfilehash: 6d0c80389364279425e8539fd9c065d34776692e9e4d189cb2105e0e078027ef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a6e6de646df2048d880ce099a90c793d11aaff89
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841602"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568978"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el Centro de seguridad y cumplimiento
 
@@ -73,7 +73,7 @@ Para revisar y descargar contenido, seleccione una opción en el panel de navega
   
 - **Confíe en los** documentos para ver información sobre cómo funciona Microsoft Office 365 como se muestra en la siguiente captura de pantalla. 
     
-    ![Muestra la página Garantía de servicio: Documentos de confianza proporcionados por Microsoft](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![Muestra la página Garantía de servicio: Documentos de confianza proporcionados por Microsoft.](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - **Controles auditados para** ver información sobre cómo los Office 365 cumplen los requisitos de seguridad, cumplimiento y privacidad, como se muestra en la siguiente captura de pantalla. 
     
@@ -97,7 +97,7 @@ Según la configuración específica, las opciones incluidas en la vista pueden 
 
 [Contactar con el soporte técnico para productos empresariales: ayuda para administradores](../business-video/get-help-support.md)
   
-## <a name="frequently-asked-questions"></a>preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 <a name="addother"> </a>
 
  **¿Por qué se produce un error que dice que los documentos de la garantía de servicio están dañados?**

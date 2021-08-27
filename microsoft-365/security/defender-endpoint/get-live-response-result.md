@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5b1221e47d3e34832ac798fa3be0a37d607c3975
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: 4e52906cda48314967e40039caabfd81e38514c1
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392146"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611128"
 ---
-#  <a name="get-live-response-results"></a>Obtener resultados de respuesta en directo
+# <a name="get-live-response-results"></a>Obtener resultados de respuesta en directo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

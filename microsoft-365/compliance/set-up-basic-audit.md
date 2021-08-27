@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar auditoría básica para que pueda empezar a buscar actividades de auditoría realizadas por usuarios y administradores de su organización.
-ms.openlocfilehash: 59a1af0946fbfbef6f2a1f5f6b8c3d7be002786239f1665d0ddbff09af254d1e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: caa87a34234597e36949a1a2c47b695a02b5c2b7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871309"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568966"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>Configurar auditoría básica en Microsoft 365
 
@@ -32,7 +32,7 @@ Auditoría básica en Microsoft 365 permite buscar registros de auditoría para 
 
 En este artículo se de abordan los siguientes pasos necesarios para configurar la auditoría básica.
 
-![Pasos para configurar auditoría básica](../media/BasicAuditingWorkflow.png)
+![Pasos para configurar auditoría básica.](../media/BasicAuditingWorkflow.png)
 
 Estos pasos incluyen garantizar las suscripciones organizativas adecuadas y las licencias de usuario necesarias para generar y conservar registros de auditoría y asignar permisos a los miembros del equipo de las operaciones de seguridad, TI, cumplimiento y equipos legales para que puedan buscar en el registro de auditoría.
 
@@ -52,7 +52,7 @@ A los administradores y miembros de los equipos de investigación se les debe as
 
 En la siguiente captura de pantalla se muestran los dos roles relacionados con la auditoría asignados al grupo de roles administración de la organización en el centro Exchange administración.
 
-![Funciones de auditoría asignadas al grupo de roles en Exchange Online](../media/EACAuditRoles.png)
+![Auditar roles asignados al grupo de roles en Exchange Online.](../media/EACAuditRoles.png)
 
 ## <a name="step-3-search-the-audit-log"></a>Paso 3: Buscar en el registro de auditoría
 
@@ -64,7 +64,7 @@ Ahora ya está listo para buscar el registro de auditoría en el Centro de cumpl
 
 3. En la **página Auditoría,** configure la búsqueda con las siguientes condiciones en la **pestaña** Buscar. 
 
-   ![Opciones de configuración para la búsqueda de registros de auditoría](../media/AuditLogSearchToolMCCCallouts.png)
+   ![Opciones de configuración para la búsqueda de registros de auditoría.](../media/AuditLogSearchToolMCCCallouts.png)
 
    1. **Intervalo de fecha y hora**. Seleccione un intervalo de fecha y hora para mostrar los eventos que han sucedido en ese período. La fecha y la hora se muestran en hora local. Los últimos siete días están seleccionados de forma predeterminada.
   

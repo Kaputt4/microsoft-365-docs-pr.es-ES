@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo importar datos no Microsoft 365 a un conjunto de revisión para su análisis en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fe4863321997ba6b81be2257b6ef44c83bc34cb2
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 65244b74cd868c4ec308327d15a070e67b9ac551
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508267"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569050"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Cargar datos que no son de Microsoft 365 en un conjunto de revisión
 
@@ -49,7 +49,7 @@ El uso de la característica de carga no Microsoft 365 descrita en este artícul
 
    Donde abraham.mcmahon@contoso.com, jewell.gordon@contoso.com y staci.gonzalez@contoso.com son las direcciones SMTP de los custodios en el caso.
 
-   ![Estructura de carpetas Microsoft 365 carga de datos no Microsoft 365 datos](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+   ![Estructura de carpetas Microsoft 365 carga de datos sin formato.](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
 - Una cuenta que se asigna al grupo de roles administrador de exhibición de documentos electrónicos (y se agrega como administrador de exhibición de documentos electrónicos).
 
@@ -66,17 +66,17 @@ El uso de la característica de carga no Microsoft 365 descrita en este artícul
 
 4. Haga clic **Cargar archivos** para iniciar el asistente para importar datos.
 
-   ![Cargar archivos](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+   ![Upload archivos.](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
    El primer paso del asistente prepara una ubicación segura de Azure Storage proporcionada por Microsoft en la que se pueden cargar los archivos.  Cuando se complete la preparación, se activará el botón **Siguiente: cargar archivos**.
 
-   ![Importación no Microsoft 365: Preparar](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![Importación no Microsoft 365: Preparar.](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 5. Haga clic en **Siguiente: Cargar archivos**.
 
 6. En la **página Upload archivos,** haga lo siguiente:
 
-   ![Importación sin Microsoft 365: Upload archivos](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   ![Importación no Microsoft 365: Upload archivos.](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
    a. En el **cuadro Ruta** de acceso a la ubicación de los archivos, compruebe o escriba la ubicación de la carpeta raíz donde ha almacenado los datos que no Microsoft 365 desea cargar. Por ejemplo, para la ubicación de los archivos de ejemplo que se muestran en la sección Antes de **empezar,** escriba **%USERPROFILE\Downloads\nonO365**. Al proporcionar la ubicación correcta, se garantiza que el comando AzCopy que se muestra en el cuadro debajo de la ruta de acceso se actualice correctamente.
 
@@ -84,7 +84,7 @@ El uso de la característica de carga no Microsoft 365 descrita en este artícul
 
 7. Inicie un Windows de comandos, pegue el comando que copió en el paso anterior y, a continuación, presione **ENTRAR** para iniciar el comando AzCopy.  Después de iniciar el comando, los archivos que no Microsoft 365 se cargarán en la ubicación Azure Storage que se preparó en el paso 4.
 
-   ![Importación sin Microsoft 365: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   ![Importación no Microsoft 365: AzCopy.](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
    > Como se ha indicado anteriormente, debe usar AzCopy v8.1 para usar correctamente el comando que se proporciona en la **página Upload archivos.** Si se produce un error en el comando AzCopy proporcionado, consulte [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -93,6 +93,6 @@ El uso de la característica de carga no Microsoft 365 descrita en este artícul
 
 9. Realice un seguimiento del progreso  del procesamiento de  los archivos en la página Archivos de proceso o en la pestaña Trabajos al ver un trabajo denominado Agregar datos no Microsoft 365 a un conjunto **de revisión**.  Una vez finalizado el trabajo, los nuevos archivos estarán disponibles en el conjunto de revisión.
 
-   ![Importación sin Microsoft 365: procesar archivos](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+   ![Importación no Microsoft 365: procesar archivos.](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 
 10. Una vez finalizado el proceso, puede cerrar el asistente.

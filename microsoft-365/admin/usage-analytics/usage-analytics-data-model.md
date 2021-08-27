@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Obtenga información sobre cómo el análisis de uso se conecta a una API y proporciona una tendencia mensual de uso de varios Microsoft 365 servicios.  '
-ms.openlocfilehash: cf53007e062db85bb17bd64851022218c0d220ba
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 2f271414f515d2c3a86c6e59d64dc62f44f8ef01
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533548"
+ms.locfileid: "58603308"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modelo de datos de análisis de uso de Microsoft 365
 
@@ -109,9 +109,9 @@ Esta tabla contiene datos sobre los usuarios que realizaron alguna actividad en 
 |ODB_FileSynched  <br/> |Número de archivos que sincronizó el usuario en cualquier cuenta de OneDrive para la Empresa.  <br/> |
 |ODB_FileSharedInternally  <br/> |Número de archivos que este usuario compartió internamente desde cualquier OneDrive para la Empresa o con usuarios dentro de grupos (que pueden incluir usuarios externos).  <br/> |
 |ODB_FileSharedExternally  <br/> |Número de archivos que compartió de forma externa el usuario desde cualquier cuenta de OneDrive para la Empresa.  <br/> |
-|ODB_AccessByOwner  <br/> |Número de archivos con los que interactuó el usuario que residen en su propia cuenta de OneDrive para la Empresa.  <br/> |
-|ODB_AccessOthers  <br/> |Número de archivos con los que interactuó el usuario que residen en la cuenta de otro usuario de OneDrive para la Empresa.  <br/> |
-|SPO_GroupFileViewedModified  <br/> |Número de archivos con los que interactuó el usuario en cualquier sitio de grupo.  <br/> |
+|ODB_AccessedByOwner  <br/> |Número de sitios con los que el usuario interactuó y que residen en su propia OneDrive para la Empresa.  <br/> |
+|ODB_AccessedByOthers  <br/> |Número de sitios con los que interactuó este usuario que residen en el sitio de otro OneDrive para la Empresa.  <br/> |
+|SPO_GroupFileViewedModified  <br/> |Número de archivos con los que el usuario interactuó en cualquier sitio de grupo.  <br/> |
 |SPO_GroupFileSynched  <br/> |Número de archivos que sincronizó el usuario en cualquier sitio de grupo.  <br/> |
 |SPO_GroupFileSharedInternally  <br/> |Recuento de archivos que se han compartido con usuarios de la organización o con usuarios de grupos (que pueden incluir usuarios externos).  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |Número de archivos que compartió el usuario de forma externa desde cualquier sitio de grupo.  <br/> |
@@ -278,7 +278,17 @@ En esta tabla se proporcionan datos sobre cómo Microsoft 365 se usan los grupos
 |YAM_LikedActivities  <br/> |Número de Yammer como actividades.  <br/> |
 |YAM_PostedActivties  <br/> |Número de Yammer de publicación.  <br/> |
 |YAM_ReadActivites  <br/> |Número de Yammer actividades de lectura.  <br/> |
-   
+
+### <a name="data-table---tenant-office-licenses"></a>Tabla de datos: licencias de Office inquilino
+
+En esta tabla se proporcionan datos de resumen mes a mes sobre la asignación de licencias para los usuarios. 
+  
+|**Nombre de columna**|**Descripción de columna**|
+|:-----|:-----|
+|LicenseName  <br/> |Nombre de la licencia.  <br/> |
+|AssignedCount  <br/> |Número de licencias asignadas.  <br/> |
+|Timeframe  <br/> |Valor del mes.  <br/> |
+
 ### <a name="data-table---tenant-office-activation"></a>Tabla de datos: Activación de Office de espacio empresarial
 
 La tabla proporciona datos sobre el número de activaciones de suscripción Office en los planes de servicio, por ejemplo, Aplicaciones Microsoft 365 para empresas, Visio, Project. También proporciona datos sobre el número de activaciones por dispositivo (Android/iOS/Mac/PC).

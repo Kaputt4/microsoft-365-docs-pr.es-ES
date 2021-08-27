@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7357c05809ffc31783f985adc04cabc70742dbe9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5fb3ee5abfb2f6d8f86832967ed6f88386421c9e
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247944"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607106"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -74,18 +74,18 @@ Microsoft 365 Defender la capa entre productos única de Microsoft 365 Defender 
 - Automatizar la respuesta al riesgo desencadenando la recuperación automática de activos afectados a través de la corrección automatizada
 - Permitir que los equipos de seguridad realicen búsquedas de amenazas detalladas y eficaces en todos los puntos de conexión y Office datos
 
-![Imagen de la página de información general sobre incidentes](../../media/overview-incident.png) <br>
+![Imagen de la página de información general sobre incidentes.](../../media/overview-incident.png) <br>
 Incidente entre productos (Información general)
 
-![Imagen de la cola de alertas](../../media/incident-list.png)<br>
+![Imagen de la cola de alertas.](../../media/incident-list.png)<br>
 Todas las alertas relacionadas en los productos del conjunto de servicios se correlacionan en un solo incidente (vista de alertas)
 
-![Imagen de la cola de incidentes](../../media/advanced-hunting.png)<br>
+![Imagen de la cola de incidentes.](../../media/advanced-hunting.png)<br>
 Búsqueda basada en consultas en la parte superior de los datos sin procesar de correo electrónico y punto de conexión
 
 
 Microsoft 365 Defender características entre productos incluyen: 
-- **Panel único de** vidrio entre productos: vista central de toda la información sobre detecciones, activos afectados, acciones automatizadas realizadas y pruebas relacionadas en una sola cola y un único panel en [security.microsoft.com](https://security.microsoft.com). 
+- **Panel único de** vidrio entre productos: vista central para toda la información sobre detecciones, activos afectados, acciones automatizadas realizadas y pruebas relacionadas en una sola cola y un único panel en [security.microsoft.com](https://security.microsoft.com). 
 - Cola de incidentes **combinados:** para ayudar a los profesionales de seguridad a centrarse en lo que es fundamental al garantizar que el ámbito de ataque completo, los activos afectados y las acciones de corrección automatizadas se agrupan y se ponen a la superficie de forma oportuna. 
 - **Respuesta automática a las amenazas:** la información crítica sobre amenazas se comparte en tiempo real entre los Microsoft 365 Defender para ayudar a detener la progresión de un ataque. Por ejemplo, si se detecta un archivo malintencionado en un punto de conexión protegido por Microsoft Defender para Endpoint, le indicará a Defender que Office 365 analice y quite el archivo de todos los mensajes de correo electrónico. Todo el conjunto de seguridad del conjunto de Microsoft 365 bloqueará el archivo a la vista.
 - **Recuperación** automática para dispositivos, identidades de usuario y buzones en peligro: Microsoft 365 Defender usa acciones automáticas con tecnología de IA y libros de reproducción para corregir los activos afectados de nuevo a un estado seguro. Microsoft 365 Defender aprovecha las capacidades de corrección automática de los productos del conjunto de programas para garantizar que todos los activos afectados relacionados con un incidente se remedian automáticamente siempre que sea posible.
@@ -98,5 +98,5 @@ Microsoft 365 Defender requisitos de licencia deben cumplirse para poder habilit
 - [Activar Microsoft 365 Defender](m365d-enable.md)
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Implementar capacidades de protección contra amenazas en Microsoft 365 E5](/microsoft-365/solutions/deploy-threat-protection)

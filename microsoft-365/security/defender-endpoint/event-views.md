@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7752c5af144ca5b02f05bbdd6632df808cf2f63c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257659"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607222"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Ver eventos de la reducción de la superficie expuesta a ataques
 
@@ -57,10 +57,10 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 2. Escriba **el visor de** eventos en el menú Inicio y abra el Visor de **eventos**.
 
-3. Seleccionar **acción**  >  **Importar vista personalizada...**
+3. Seleccionar **acción** \> **Importar vista personalizada...**
 
    > [!div class="mx-imgBorder"]
-   > ![Animación resaltando Importar vista personalizada a la izquierda de la ventana Visor par](images/events-import.gif)
+   > ![Animación resaltando Importar vista personalizada a la izquierda de la ventana Visor de par.](images/events-import.gif)
 
 4. Navegue hasta donde extrajo el archivo XML para la vista personalizada que desee y selecciónelo.
 
@@ -75,7 +75,7 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 2. En el panel izquierdo, en **Acciones,** seleccione **Crear vista personalizada...**
 
    > [!div class="mx-imgBorder"]
-   > ![Animación que resalta la opción crear vista personalizada en la ventana Visor de eventos](images/events-create.gif)
+   > ![Animación que resalta la opción crear vista personalizada en la ventana Visor de eventos.](images/events-create.gif)
 
 3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente.** Verá una advertencia de que no puede editar  la consulta mediante la pestaña Filtro si usa la opción XML. Seleccione **Sí**.
 
@@ -146,7 +146,7 @@ Puede tener acceso a estos eventos en Windows visor de eventos:
 2. Expanda Registros de aplicaciones y **servicios > Microsoft > Windows** y, a continuación, vaya a la carpeta que aparece en **Proveedor/origen** en la tabla siguiente.
 3. Haga doble clic en el sub elemento para ver los eventos. Desplácese por los eventos para encontrar el que está buscando.
 
-   ![Animación que muestra con el Visor de eventos](images/event-viewer.gif)
+   ![Animación que se muestra con el Visor de eventos.](images/event-viewer.gif)
 
 <br>
 
@@ -154,8 +154,8 @@ Puede tener acceso a estos eventos en Windows visor de eventos:
 
 |Característica|Proveedor u origen|Id. de evento|Descripción|
 |---|---|:---:|---|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|1 |Auditoría de ACG|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|2 |Aplicación de ACG|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|1|Auditoría de ACG|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|2|Aplicación de ACG|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|3 |No permitir procesos secundarios de auditoría|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|4 |No permitir procesos secundarios de bloqueo|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|5 |Bloquear auditoría de imágenes de integridad baja|

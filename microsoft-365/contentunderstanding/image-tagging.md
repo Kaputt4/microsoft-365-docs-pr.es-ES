@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga más información sobre el etiquetado de imágenes en SharePoint Syntex
-ms.openlocfilehash: b125193b057d506bd18e2bdedcc0fafcefc41f4eae9bd8d73228d1e005bca544
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62055f8cb6b01fcd285aa01bb5934963b13fae6b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891694"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552905"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>Etiquetado de imágenes en SharePoint Syntex
 
@@ -54,4 +54,4 @@ Para activar o desactivar el etiquetado de imágenes
 
 6. Haga clic en **Guardar**.
 
-    ![Captura de pantalla del control de etiquetado de imágenes](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
+    ![Captura de pantalla del control de etiquetado de imágenes.](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
