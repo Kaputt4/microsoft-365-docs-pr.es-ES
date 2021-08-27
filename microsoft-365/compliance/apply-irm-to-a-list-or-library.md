@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Puede usar Information Rights Management (IRM) para ayudar a controlar y proteger los archivos que se descargan de listas o bibliotecas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e6390e20b19c291ea79417082d926e670d7b59a27572d58e25b888e8a18d023
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 84f0443cd31f26549dc1f5dc06be6e7bf52b05dc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887044"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573672"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Aplicar Information Rights Management (IRM) a una lista o biblioteca
 
@@ -48,13 +48,13 @@ Puede usar Information Rights Management (IRM) para ayudar a controlar y protege
 ## <a name="apply-irm-to-a-list-or-library"></a>Aplicar IRM a una lista o biblioteca
 <a name="__toc256598179"> </a>
 
-![Information Rights Management Configuración](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
+![Information Rights Management Configuración.](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
   
 1. Vaya a la lista o biblioteca para la que desea configurar IRM.
 
 2. En la cinta de opciones, seleccione la **pestaña** Biblioteca y, a continuación, **seleccione Biblioteca Configuración**. (Si está trabajando en una lista, seleccione la pestaña **Lista** y, a continuación, seleccione **Lista Configuración**).
     
-    ![SharePoint Botones Configuración biblioteca en la cinta de opciones](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
+    ![SharePoint Botones Configuración biblioteca en la cinta de opciones.](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
 3. En **Permisos y administración,** seleccione **Information Rights Management**. Si no aparece el vínculo Information Rights Management, es posible que IRM no esté habilitado para el sitio. Póngase en contacto con el administrador del servidor para ver si puede habilitar IRM para su sitio. El **vínculo Information Rights Management** no aparece para las bibliotecas de imágenes.
 
@@ -136,7 +136,7 @@ Los tipos de restricciones que se aplican a un archivo cuando se descarga de una
 |Administrar permisos, administrar sitio web|**Control total** (tal como lo define el programa cliente): este permiso generalmente permite a un usuario leer, editar, copiar, guardar y modificar permisos de contenido administrado con derechos.|
 |Editar elementos, administrar listas, agregar y personalizar páginas|**Editar**, **Copiar** y **Guardar:** un usuario solo  puede imprimir un archivo si la casilla Permitir que los usuarios impriman documentos está activada en la página Information Rights Management Configuración para la lista o biblioteca.|
 |Ver elementos|**Lea:** Un usuario puede leer el documento, pero no puede copiar ni modificar su contenido. Un usuario solo puede  imprimir si la casilla Permitir que los usuarios impriman documentos está activada en la página Information Rights Management Configuración la lista o biblioteca.|
-|Otro|Ningún otro permiso corresponde directamente a los permisos de IRM.|
+|Otros|Ningún otro permiso corresponde directamente a los permisos de IRM.|
    
 Cuando habilita IRM para una lista o biblioteca en SharePoint Server 2013, solo puede proteger los tipos de archivo de esa lista o biblioteca para la que está instalado un protector en todos los servidores front-end web. Un protector es un programa que controla el cifrado y descifrado de archivos administrados con derechos de un formato de archivo específico. SharePoint incluye protectores para los siguientes tipos de archivo:
   

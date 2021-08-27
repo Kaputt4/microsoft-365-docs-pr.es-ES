@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar la característica de búsqueda en el Centro de administración para obtener resultados mejores y más rápidos.
-ms.openlocfilehash: 64a578f8b7ebf71fbfc162936e8efa09440834d362fcc2b359a18bb9d8c1469a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eca365ed7c25ac908fe5ea1679ceedb9765fb3c7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824817"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566993"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Búsqueda en el Centro de administración de Microsoft 365
 
@@ -85,7 +85,7 @@ Busque la configuración de nivel de aplicación compatible relacionada con su o
 
 Puede encontrar vínculos rápidos a sus dominios y, a continuación, el vínculo le llevará a la página de información general de ese dominio.
 
-:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Resultados de búsqueda que muestran dominios propiedad del Centro de administración":::
+:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Resultados de búsqueda que muestran dominios propiedad del Centro de administración.":::
 
 ## <a name="documentation"></a>Documentación
 

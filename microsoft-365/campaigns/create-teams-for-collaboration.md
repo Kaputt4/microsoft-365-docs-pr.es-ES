@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un espacio de colaboración para su equipo con Microsoft Teams.
-ms.openlocfilehash: 6ca87115a55a91d1e00534556c4fa6d3b3bf72f4682f9ab4f562b772286b3fe9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c787f2c493643dcba2bbd5985fa518210aa8a5c6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837535"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567149"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Crear equipos para la colaboración en Microsoft Teams
 
@@ -47,7 +47,7 @@ Por ejemplo, una empresa, una firma legal o una práctica de salud podrían crea
 1. **Equipos individuales:** Configure equipos para grupos más pequeños para que colaboren en su trabajo diario.
 1. **Un equipo o equipos de comunicaciones externos:** Coordine con sus proveedores, partners o clientes sin permitirles nada confidencial. Configurar canales diferentes para grupos específicos.
 
-![Diagrama de una ventana Microsoft Teams con tres equipos independientes para permitir una comunicación y colaboración seguras dentro de una empresa](../media/m365-democracy-teams-business-collab.png)
+![Diagrama de una ventana Microsoft Teams con tres equipos independientes para permitir una comunicación y colaboración seguras dentro de una empresa.](../media/m365-democracy-teams-business-collab.png)
 
 Además, las campañas podrían crear los siguientes equipos para comunicarse y colaborar de forma segura:
 
@@ -55,7 +55,7 @@ Además, las campañas podrían crear los siguientes equipos para comunicarse y 
 2. **Un equipo de campaña general:** Esto es para que todos los usuarios puedan usar para las comunicaciones y el trabajo diarios. Los individuos, grupos o comités pueden configurar canales en este equipo para realizar su trabajo. Por ejemplo, los usuarios de planeación de eventos pueden configurar un canal para chatear y coordinar la logística de los eventos de campaña.
 3. **Un equipo de partners:** Coordine con sus proveedores, socios o voluntarios sin permitirles nada confidencial.
 
-![Diagrama de una ventana Microsoft Teams con tres equipos independientes para permitir una comunicación y colaboración seguras dentro de una campaña](../media/m365-democracy-teams-collab.png)
+![Diagrama de una ventana Microsoft Teams con tres equipos independientes para permitir la comunicación y colaboración seguras dentro de una campaña.](../media/m365-democracy-teams-collab.png)
 
 Al crear un equipo, esto es lo que se crea:
 

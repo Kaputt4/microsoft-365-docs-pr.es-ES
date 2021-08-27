@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el Microsoft 365 de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
-ms.openlocfilehash: ec011330541e9b1c03ba5bb12f3e41645ace5abdecba4de357906e93f9cbfc37
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fec3b0e88f7f399fcde821d1cdc55baa99c477e9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825143"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567005"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -58,7 +58,7 @@ También puedes usar la aplicación [Administración de Microsoft 365 en](https:
 
 Para cancelar la suscripción a los correos electrónicos del Centro de mensajes, consulte Cancelar la suscripción a los correos [electrónicos del Centro](#unsubscribe-from-message-center-emails) de mensajes en este artículo.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 <br>
 
@@ -90,7 +90,7 @@ Use los menús desplegables **Servicio**, **Etiqueta** y **Estado del mensaje** 
 
 Puede seleccionar cualquier encabezado de columna, salvo **Servicio** y **Etiqueta** para ordenar los mensajes en orden ascendente o descendente.
 
-:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Vista del Centro de mensajes ordenada por Impacto del administrador.":::
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Vista del centro de mensajes ordenada por impacto de administrador.":::
 
 ::: moniker-end
 
@@ -100,7 +100,7 @@ Utilice el menú desplegable **Vista** para seleccionar una vista filtrada de lo
 
 Puede seleccionar cualquier encabezado de columna para ordenar los mensajes en orden ascendente o descendente. Por ejemplo, en esta ilustración los mensajes se ordenan por fecha en **Acción hecha el**.
 
-![Vista del Centro de mensajes ordenada por la etiqueta del Impacto del administrador](../../media/message-center-filter-act-by.png)
+![Vista del centro de mensajes ordenada por etiqueta de impacto de administrador.](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
@@ -216,7 +216,7 @@ Esta es una introducción rápida a la información que verá en cada columna.
 |Categoría| Esto no se muestra de forma predeterminada, pero se puede especificar en el panel **Elegir** columnas. Los mensajes se identifican mediante una de las tres categorías siguientes: <p> **Evitar o solucionar problemas:** le informa de los problemas conocidos que afectan a su organización y puede requerir que tome medidas para evitar interrupciones en el servicio. Evitar o solucionar problemas son diferentes de los mensajes de mantenimiento del servicio porque le piden que sea proactivo para evitar problemas. <p> **Planear el cambio:** le informa de los cambios realizados Microsoft 365 que pueden requerir que actúe para evitar interrupciones en el servicio. Por ejemplo, le haremos saber sobre los cambios en los requisitos del sistema o sobre las características que se están quitando. Intentamos proporcionar al menos 30 días de aviso de cualquier cambio que requiera que un administrador actúe para mantener el servicio funcionando con normalidad. <p> **Mantenerse informado:** le informa sobre las características nuevas o actualizadas que estamos activar en su organización. Las características normalmente se anuncian primero en el [Microsoft 365 guía básica](https://go.microsoft.com/fwlink/?linkid=2070821). <p> También puede que le permita saber sobre el mantenimiento planeado de acuerdo con nuestro Contrato de nivel de servicio. El mantenimiento planeado puede dar lugar a tiempo de inatención, donde usted o sus usuarios no pueden acceder a Microsoft 365, una característica específica o un servicio como correo electrónico o OneDrive para la Empresa.|
 |Actuar por|Solo tendremos fechas aquí si estamos realizando un cambio que requiere que hagas una acción antes de una fecha límite determinada. Dado que rara vez usamos **la ley por** columna, si ves algo aquí, debes prestarle más atención.|
 |Actualizado por última vez|Fecha en que el mensaje se publicó o se actualizó por última vez.|
-|Id. de mensaje|Microsoft realiza un seguimiento de nuestras publicaciones del Centro de mensajes por identificador de mensaje. Puede hacer referencia a este identificador si desea enviar comentarios o si llama al soporte técnico sobre un mensaje en particular.|
+|Id. del mensaje|Microsoft realiza un seguimiento de nuestras publicaciones del Centro de mensajes por identificador de mensaje. Puede hacer referencia a este identificador si desea enviar comentarios o si llama al soporte técnico sobre un mensaje en particular.|
 |
 
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Roles de administrador que no tienen acceso al Centro de mensajes

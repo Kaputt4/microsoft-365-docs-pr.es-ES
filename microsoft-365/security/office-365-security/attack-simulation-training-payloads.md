@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear cargas personalizadas para el aprendizaje de simulación de ataques en Microsoft Defender para Office 365.
 ms.technology: mdo
-ms.openlocfilehash: 9a597fd05c9b975c54518828ebbd2433bc47b835
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 72600b787f1570839b0d6ee3fefc7467af5ac08b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257440"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573840"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Crear una carga personalizada para la simulación de ataques formación
 
@@ -45,7 +45,7 @@ Ahora es el momento de crear la carga útil. Introduzca el nombre del remitente,
 
 Hay disponible un editor de texto enriquecido para crear la carga. También puedes importar un correo electrónico que hayas creado previamente. A medida que cree el cuerpo del correo electrónico, aproveche las etiquetas **dinámicas** para personalizar el correo electrónico a sus destinos. Haga clic en El vínculo Suplantación de identidad **(phishing)** para agregar la dirección URL de suplantación de identidad seleccionada anteriormente en el cuerpo del mensaje.
 
-![Vínculo de suplantación de identidad y etiquetas dinámicas resaltadas en la creación de cargas para Microsoft Defender para Office 365](../../media/attack-sim-preview-payload-email-body.png)
+![Vínculo de suplantación de identidad y etiquetas dinámicas resaltadas en la creación de cargas para Microsoft Defender para Office 365.](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > Para ahorrar tiempo, active la opción para reemplazar todos los vínculos del mensaje **de correo electrónico por el vínculo de suplantación de identidad**.
@@ -58,7 +58,7 @@ Los indicadores ayudarán a los empleados que pasan por la simulación de ataque
 
 Selecciona un indicador que quieras usar en la lista desplegable. Esta lista está curada para contener las pistas más comunes que aparecen en los mensajes de correo electrónico de suplantación de identidad. Una vez seleccionado, asegúrese de que la ubicación del indicador está establecida en **Desde el cuerpo** del correo electrónico y haga clic en Seleccionar **texto**. Resalte la parte de la carga donde aparece este indicador y haga clic **en Seleccionar**.
 
-![Texto resaltado en el cuerpo del mensaje para agregarlo a un indicador en el entrenamiento de simulación de ataques](../../media/attack-sim-preview-select-text.png)
+![Texto resaltado en el cuerpo del mensaje para agregarlo a un indicador en el entrenamiento de simulación de ataques.](../../media/attack-sim-preview-select-text.png)
 
 Agregue una descripción personalizada para describir el indicador y haga clic en el marco de vista previa del indicador para ver una vista previa del indicador. Una vez hecho esto, haga clic **en Agregar**. Repita estos pasos hasta que haya cubierto todos los indicadores de la carga.
 

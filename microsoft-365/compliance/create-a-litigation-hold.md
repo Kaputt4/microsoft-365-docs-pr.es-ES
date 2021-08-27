@@ -16,12 +16,12 @@ description: Obtenga información sobre cómo colocar un buzón en retención po
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: a8386eba6373be26ccd3e4a9cb9884ca44cb61237e33d93c33528db4b318c71e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 58de1f44c6c58125b37c8cf0800d48dc0ae86f2a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886629"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566885"
 ---
 # <a name="create-a-litigation-hold"></a>Crear una retención por juicio
 
@@ -56,7 +56,7 @@ Estos son los pasos para colocar un buzón en retención por juicio mediante el 
 
 4. En la página desplegable propiedades, haga clic en la pestaña **Correo** y, a continuación, en **Más** acciones, haga clic **en Administrar retención por juicio.**
 
-   ![Haga clic en Administrar retención por juicio en la pestaña Correo de la página desplegable propiedades de usuario](../media/M365AdminCenterLitHold1.png)
+   ![Haga clic en Administrar retención por juicio en la pestaña Correo de la página desplegable propiedades de usuario.](../media/M365AdminCenterLitHold1.png)
 
 5. En la **página Administrar** suspensión  por juicio, active la casilla Activar retención por juicio y, a continuación, escriba la siguiente información opcional:
 
@@ -102,7 +102,7 @@ Cuando un buzón se coloca en retención por juicio, los elementos de la subcarp
 
 En la ilustración siguiente se muestran las subcarpetas en las carpetas Elementos recuperables y el proceso de flujo de trabajo de retención.
 
-![Ciclo de vida de retención por juicio](../media/LitigationHoldLifeCycle.png)
+![Ciclo de vida de retención por juicio.](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > Si se coloca una retención asociada a un caso de exhibición de documentos electrónicos en un buzón, los elementos purgados se mueven de la subcarpeta Eliminaciones a la subcarpeta DiscoveryHolds y se conservan hasta que el buzón se libera de la retención de exhibición de documentos electrónicos.

@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 34fd5ed4338e42ea37d4ad9eacb1d881bb2bf0e6
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 6b2ef03984e6ed7c9b93476869e998bb06b78a30
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399808"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566837"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -62,7 +62,7 @@ Este es el funcionamiento del proceso.
 [Vea una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png).
 
 <!--
-[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
+[![Tenant preparation for mailbox migration.](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
 -->
 
 ### <a name="prepare-tenants"></a>Preparar inquilinos
@@ -148,7 +148,7 @@ Preparar el espacio empresarial de origen:
 
 8. Inicie sesión con sus credenciales de administrador global. Cuando se presente la siguiente pantalla, seleccione **Aceptar**.
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Cuadro de diálogo Aceptar permisos":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Cuadro de diálogo Aceptar permisos.":::
 
 9. Vuelva a la sesión remota de PowerShell y presione Entrar para continuar.
 
@@ -171,7 +171,7 @@ La configuración de administración de destino ya está completa.
 
 2. Seleccione **Aceptar** para aceptar la invitación.
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Cuadro de diálogo para aceptar permisos":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Cuadro de diálogo para aceptar permisos.":::
 
    > [!NOTE]
    > Si no recibe este correo electrónico o no lo encuentra, al administrador de inquilinos de destino se le proporcionó una dirección URL directa que se le puede dar para aceptar la invitación. La dirección URL debe incluirse en la transcripción de la sesión remota de PowerShell del administrador de inquilino de destino.
@@ -432,7 +432,7 @@ El envío por lotes de migración también se admite desde el nuevo Centro Excha
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo locales, tanto de origen como de destino, se actualicen con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del movimiento?**
 

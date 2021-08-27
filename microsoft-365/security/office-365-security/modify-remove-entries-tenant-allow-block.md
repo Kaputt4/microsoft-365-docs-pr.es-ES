@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a modificar y quitar entradas en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 951468fb9b3245135356d956e488c55390e9c6f9
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: d2d5ce65836accd94dec497e5be0087a94742ca0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349793"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573816"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modificar y quitar entradas a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -46,7 +46,7 @@ Puede usar el portal Microsoft 365 Defender o PowerShell para modificar y quitar
    - **Files**
    - **Spoofing**
 
-3. Seleccione la entrada que desea modificar y, a continuación, haga clic ![ en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**. Los valores que puede modificar en el control desplegable que aparece dependen de la pestaña seleccionada en el paso anterior:
+3. Seleccione la entrada que desea modificar y, a continuación, haga clic ![ en Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Edición**. Los valores que puede modificar en el control desplegable que aparece dependen de la pestaña seleccionada en el paso anterior:
    - **Remitentes**
      - **No expire nunca** ni la fecha de expiración.
      - **Nota opcional**
@@ -73,7 +73,7 @@ Puede usar el portal Microsoft 365 Defender o PowerShell para modificar y quitar
    - **Files**
    - **Spoofing**
 
-3. Seleccione la entrada que desea quitar y, a continuación, haga clic ![ en Eliminar icono ](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
+3. Seleccione la entrada que desea quitar y, a continuación, haga clic en ![ Eliminar icono.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
 
 4. En el cuadro de diálogo de advertencia que aparece, haga clic **en Eliminar**.
 

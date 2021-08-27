@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información sobre los modelos de comprensión de documentos a través del modelo de ejemplo.
-ms.openlocfilehash: 52b66a30bb9b28dabde0a9af092e942522db58150acaacc48a23bc105fcb1dce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e89c0723b978b4d5a206119e10b5a712668b406a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795415"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573744"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>Obtenga información sobre los modelos de comprensión mediante documentos con un modelo de ejemplo
 
@@ -31,11 +31,11 @@ Para obtener acceso al modelo de ejemplo, necesita importar el modelo al centro 
 1. Desde el centro de contenido, seleccione **Modelos** para ver la lista de modelos.</br>
 2. En la página de **Modelos**, seleccione **Importar modelo de ejemplo**.</br>
 
-    ![Importar modelo de ejemplo](../media/content-understanding/import-sample-model.png) </br>
+    ![Importar modelo de ejemplo.](../media/content-understanding/import-sample-model.png) </br>
 
 3. Cuando termine la importación, se abrirá la página principal del modelo **BenefitsChangeNotice**. Si necesita abrir el modelo de ejemplo en el futuro, puede hacerlo desde la lista modelos en el centro de contenido. </br>
 
-     ![Página principal del ejemplo](../media/content-understanding/sample-home-page.png)</br>
+     ![Página principal del ejemplo.](../media/content-understanding/sample-home-page.png)</br>
 
 No solo puede analizar el modelo de ejemplo para comprender mejor cómo se crea el modelo, sino, al ser un modelo de trabajo, puede ir más allá y llevar a cabo acciones como:
 

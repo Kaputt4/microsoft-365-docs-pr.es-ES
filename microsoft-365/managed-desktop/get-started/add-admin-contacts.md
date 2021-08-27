@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0f7490ce1bbf1ef7666ce44f6101054d6acc7703
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: fe048005736e39623effc13751a66f195008ff96
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364558"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550267"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Agregar y verificar los contactos de administración en el portal de administración
 
@@ -49,20 +49,20 @@ Los contactos de administrador son necesarios al [enviar una solicitud de soport
 
 4. Selecciona un **área de foco** y escribe la información del contacto. 
 
-    ![la lista de áreas de foco, como Otras, Aplicaciones y Seguridad](../../media/areaoffocus.png)
+    ![la lista de áreas de foco, como Otros, Aplicaciones y Seguridad.](../../media/areaoffocus.png)
 
 5. Repita cada área de foco.
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
 
-1. Portal [de administración de Access](access-admin-portal.md).
+1. Acceder al [portal de administrador](access-admin-portal.md).
 1. Agregar y comprobar contactos de administrador en el portal de administración (en este artículo).
 1. [Ajustar la configuración después de la inscripción](conditional-access.md).
-1. Implemente y asigne [Portal de empresa de Intune](company-portal.md).
-1. [Asignar licencias](assign-licenses.md).
-1. [Implementar aplicaciones](deploy-apps.md).
-1. [Configurar dispositivos](set-up-devices.md).
-1. Configurar la [experiencia de primera ejecución con Autopilot y la página Estado de inscripción](esp-first-run.md).
-1. [Habilitar las características de soporte técnico del usuario](enable-support.md).
-1. [Prepare a los usuarios para usar dispositivos](get-started-devices.md).
-1. [Introducción al control de aplicaciones](get-started-app-control.md).
+1. Implementar y asignar el [Portal de empresa de Intune](company-portal.md).
+1. [Asignar las licencias](assign-licenses.md).
+1. [Implementar las aplicaciones](deploy-apps.md).
+1. [Configurar los dispositivos](set-up-devices.md).
+1. Configurar la [experiencia de primera ejecución con el Autopilot y la página de estado de inscripción](esp-first-run.md).
+1. [Habilitar las características de soporte técnico para el usuario](enable-support.md).
+1. [Preparar a los usuarios para que usen los dispositivos](get-started-devices.md).
+1. [Comenzar a usar el control de aplicaciones](get-started-app-control.md).

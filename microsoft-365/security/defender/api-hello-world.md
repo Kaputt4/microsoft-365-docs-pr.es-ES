@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 50316659caf811410b9422151e47feb17fbead8055bec08a3e4e342d61f2d83b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1aa843bb1e9ca57d6264f34cbfc7c593f9590c2a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888862"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573900"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World para la API Microsoft 365 Defender REST
 
@@ -48,7 +48,7 @@ Este proyecto debe tardar entre 5 y 10 minutos. Esta estimación de tiempo inclu
 
 2. Vaya a **Azure Active Directory**  >  **registros de aplicaciones** Nuevo  >  **registro**.
 
-   ![Imagen de Microsoft Azure navegación al registro de aplicaciones](../../media/atp-azure-new-app2.png)
+   ![Imagen de Microsoft Azure navegación al registro de aplicaciones.](../../media/atp-azure-new-app2.png)
 
 3. En el formulario de registro, elija un nombre para la aplicación y, a continuación, **seleccione Registrar**. Seleccionar un URI de redireccionamiento es opcional. No necesitará uno para completar este ejemplo.
 
@@ -56,26 +56,26 @@ Este proyecto debe tardar entre 5 y 10 minutos. Esta estimación de tiempo inclu
 
    > [!TIP]
    > *Microsoft Threat Protection* es un nombre antiguo para Microsoft 365 Defender y no aparecerá en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para verlo aparecer.
-   ![Imagen de selección de permisos de API](../../media/apis-in-my-org-tab.PNG)
+   ![Imagen de selección de permisos de API.](../../media/apis-in-my-org-tab.PNG)
 
    - Elija **Permisos de aplicación**  >  **Incident.Read.All** y seleccione Agregar **permisos**.
 
-   ![Imagen de acceso a api y selección de API](../../media/request-api-permissions.PNG)
+   ![Imagen de acceso a la API y selección de API.](../../media/request-api-permissions.PNG)
 
 5. Seleccione **Conceder consentimiento de administrador**. Cada vez que agregue un permiso, debe seleccionar Conceder consentimiento **de administrador** para que su efecto.
 
-    ![Imagen de concesión de permisos](../../media/grant-consent.PNG)
+    ![Imagen de Conceder permisos.](../../media/grant-consent.PNG)
 
 6. Agregue un secreto a la aplicación. Seleccione **Certificados & secretos,** agregue una descripción al secreto y, a continuación, **seleccione Agregar**.
 
     > [!TIP]
     > Después de seleccionar **Agregar**, seleccione **copiar el valor secreto generado**. No podrá recuperar el valor secreto después de salir.
 
-    ![Imagen de crear clave de aplicación](../../media/webapp-create-key2.png)
+    ![Imagen de crear clave de aplicación.](../../media/webapp-create-key2.png)
 
 7. Registre el identificador de la aplicación y el identificador de inquilino en un lugar seguro. Aparecen en Información **general en** la página de la aplicación.
 
-   ![Imagen del identificador de aplicación creado](../../media/app-and-tenant-ids.png)
+   ![Imagen del identificador de aplicación creado.](../../media/app-and-tenant-ids.png)
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Obtener un token con la aplicación y usar el token para obtener acceso a la API
 
@@ -117,7 +117,7 @@ Para obtener más información sobre Azure Active Directory tokens, consulte el 
 
     En la siguiente imagen, puedes ver un token descodificado adquirido desde una aplicación, con ```Incidents.Read.All``` , ```Incidents.ReadWrite.All``` y ```AdvancedHunting.Read.All``` permisos:
 
-    ![Imagen jwt.ms](../../media/api-jwt-ms.png)
+    ![Imagen jwt.ms.](../../media/api-jwt-ms.png)
 
 ### <a name="get-a-list-of-recent-incidents"></a>Obtener una lista de incidentes recientes
 

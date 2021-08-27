@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Normal
 description: Obtenga información sobre cómo usar el modo de accesibilidad al entrenar un modelo en SharePoint Syntex.
-ms.openlocfilehash: 349c9ff2fee37e4f40185c4d61592eb379d83382d373961980bfb615db7040c3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 73a867c3157d3debc584995708a337c36b6b0028
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795463"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573756"
 ---
 # <a name="sharepoint-syntex-accessibility-mode"></a>Modo de accesibilidad de SharePoint Syntex
 
@@ -23,13 +23,13 @@ En [SharePoint Syntex,](index.md)los usuarios pueden activar el modo de accesibi
 Esto ayuda a los usuarios a usar sus teclados para navegar por el texto en el visor de documentos y escuchar una narración no solo de los valores seleccionados, sino también de acciones (como etiquetar o quitar el etiquetado del texto seleccionado) o valores de etiquetas predichos al entrenar el modelo con documentos de ejemplo adicionales. 
 
 
-![Modo de accesibilidad](../media/content-understanding/accessibility-mode.png)
+![Modo de accesibilidad.](../media/content-understanding/accessibility-mode.png)
 
 ## <a name="requirements"></a>Requisitos
 
 Para escuchar el audio de la narración, asegúrate de activar la aplicación [narrador](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) en la configuración del narrador en tu Windows 10 sistema.
 
-![Activar narrador](../media/content-understanding/narrator-settings.png)
+![Activar narrador.](../media/content-understanding/narrator-settings.png)
 
 ## <a name="labeling-for-keyboard-users"></a>Etiquetado para usuarios de teclado
 

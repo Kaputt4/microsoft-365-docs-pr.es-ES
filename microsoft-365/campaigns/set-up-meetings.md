@@ -25,18 +25,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurar reuniones en línea con Microsoft Teams.
-ms.openlocfilehash: a1b11429aaf43e913d9f2def902e73299e68c6e295a04bc19f7f995db1d5d823
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 40858f43794736a6b2a9696b84409ca376ed8706
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866977"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567101"
 ---
 # <a name="set-up-meetings"></a>Configurar reuniones
 
 Las reuniones en Microsoft Teams incluyen audio, vídeo y uso compartido. Y como están en línea, siempre tendrás un espacio de reuniones (sin necesidad de una sala o un proyector), incluso si el personal está distribuido geográficamente o trabajando de forma remota. Microsoft Teams reuniones son una excelente manera de reunirse con su personal tanto dentro como fuera de su organización. No es necesario ser miembro de la organización o incluso tener una cuenta para unirse a una reunión. Puede programar y ejecutar reuniones en línea con Microsoft Teams. Durante una reunión, puedes compartir la pantalla, compartir archivos, asignar tareas y mucho más. Las campañas políticas pueden incluir personal, voluntarios e invitados fuera de la organización en la reunión. Las pequeñas empresas o prácticas pueden reunirse con su personal o reunirse con clientes o asociados a Microsoft Teams.
 
-[![Ilustración de dos usuarios en una reunión](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![Ilustración de dos usuarios en una reunión.](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 Descargue una infografía en [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) [o PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) para obtener una introducción rápida sobre cómo unirse o hospedar una reunión en línea con Microsoft Teams.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la colaboración de contenido: las personas experimenta la puntuación de productividad.'
-ms.openlocfilehash: 13bee74b901bef4a4d4086e5cbed97a1bdddbabb145acaee5e68af9f5fdac010
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa4e84f0cf454e28cd773292f2a4065cb1252acf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823296"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566933"
 ---
 # <a name="content-collaboration--people-experiences"></a>Colaboración de contenido: experiencias de personas
 
@@ -110,7 +110,7 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 ### <a name="creating-files-in-onedrive-or-sharepoint"></a>Crear archivos en OneDrive o SharePoint
 
-:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Gráfico que muestra el número de personas que crean archivos en OneDrive o SharePoint":::
+:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Gráfico que muestra el número de personas que crean archivos en OneDrive o SharePoint.":::
 
 1. **Encabezado:** Resalta el porcentaje de personas activas en Microsoft 365 Office que crean archivos en OneDrive o SharePoint.
 2. **Cuerpo:** Proporciona información sobre el valor de la creación de contenido en OneDrive y SharePoint.

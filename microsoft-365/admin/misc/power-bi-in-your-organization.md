@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Obtenga información sobre Power BI y cómo los usuarios de su organización pueden usar este servicio de análisis empresarial.
-ms.openlocfilehash: d9e7aa90803dc87aece4246a369f9b4ae83bb7e867fae5790cb82ba615b8385b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5301d3cd6b10101543741637014455aa2b2a207a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823869"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566957"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI en su organización
 
@@ -101,7 +101,7 @@ Si un inquilino ha sido creado por Microsoft, puede reclamar y administrar dicho
 
 4. Seleccione el icono del iniciador de aplicaciones en la esquina superior izquierda y elija **Administrador**.
 
-    ![Iniciador de aplicaciones con la aplicación de administración resaltada](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![Iniciador de aplicaciones con la aplicación Administrador resaltada.](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. Lea las instrucciones de la **página Convertirse en administrador** y, a continuación, seleccione **Sí, quiero ser el administrador**.
 
@@ -126,7 +126,7 @@ Si desea que todos los usuarios estén en el mismo inquilino independientemente 
 
 Hay pasos que puede seguir como administrador para impedir que los usuarios se unan a su inquilino existente. Si bloquea que los usuarios se unan al inquilino, los intentos de los usuarios de iniciar sesión producirán un error y se les dirigirá para ponerse en contacto con el administrador de su organización. No es necesario repetir este proceso si ya ha deshabilitado la distribución automática de licencias antes (por ejemplo, Office 365 Educación para estudiantes, profesores y personal).
   
-Estos pasos requieren el uso de Windows PowerShell. Para empezar a trabajar con Windows PowerShell, consulte la [Guía de introducción a PowerShell](/powershell/scripting/overview).
+Estos pasos requieren el uso de Windows PowerShell. Para empezar a trabajar con Windows PowerShell, consulte la [Guía de introducción de PowerShell](/powershell/scripting/overview).
   
 Para realizar los siguientes pasos, debe instalar la versión más reciente de 64 bits del módulo [de PowerShell Azure Active Directory V2](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5).
   
@@ -200,7 +200,7 @@ Para crear esta nueva vista, en el Centro de administración, siga los pasos des
   
 ## <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>¿Debería estar preparado para alguna otra cuestión?
 
-Puede experimentar un aumento de solicitudes de recuperación de contraseña. Para obtener más información sobre este proceso, vea [Restablecer la contraseña de un usuario](../add-users/reset-passwords.md).
+Puede experimentar un aumento de solicitudes de recuperación de contraseñas. Para más información sobre este proceso, vea [Restablecer la contraseña de un usuario](../add-users/reset-passwords.md).
   
 Puede quitar un usuario del espacio empresarial mediante el proceso estándar en el Centro de administración. Sin embargo, si el usuario aún tiene una dirección de correo electrónico activa de su organización, podrá unirse de nuevo a menos que lo bloquee.
   

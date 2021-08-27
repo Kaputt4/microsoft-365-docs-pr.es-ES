@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4bfbf817279512c32f3862baa1aba75720eb81a8e5d385a5433951eaa4c29aff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1806a0a21dc5f3fc300442f31da5016ffcf99e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877709"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567381"
 ---
 # <a name="device-profiles"></a>Perfiles de dispositivo
 
@@ -29,7 +29,7 @@ Puedes asignar diferentes configuraciones predefinidas ("perfiles de dispositivo
 
 Puedes pensar que los perfiles de dispositivo forman parte de una jerarquía de opciones de configuración de dispositivos.
 
-:::image type="content" source="../../media/mmd-profile-options-heirarchy.png" alt-text="Configuraciones de dispositivos que se muestran como una pirámide. Descripción siguiente":::
+:::image type="content" source="../../media/mmd-profile-options-heirarchy.png" alt-text="Configuraciones de dispositivos que se muestran como una pirámide. A continuación se muestra la descripción.":::
 
 Fundamentalmente, cada Escritorio administrado de Microsoft dispositivo tiene una base que incluye una línea base de seguridad estándar, directivas de cumplimiento, Windows de actualización y grupos. Para trabajar con Escritorio administrado de Microsoft, todos los dispositivos deben incluir todos estos elementos, que los administradores no pueden cambiar sin una solicitud para Escritorio administrado de Microsoft.
 

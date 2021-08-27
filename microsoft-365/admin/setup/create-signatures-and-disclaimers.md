@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Administrar firmas de correo electrónico, incluidas declinaciones de responsabilidades legales o declaraciones de divulgación para todos los mensajes de correo electrónico que entran o salen de la organización.
-ms.openlocfilehash: b9496ebe150839deb23823dc0a7492c849c7f076ba1934a847621eb553486016
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 47087f2d09428214237dba226e680aa3c332625d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822082"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567173"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidades en toda la organización
 
@@ -66,7 +66,7 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
 
 ::: moniker-end
 
-1. Selecciona el iniciador de aplicaciones ![ El icono del iniciador de aplicaciones ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) y, a continuación, selecciona **Administrador**.
+1. Selecciona el iniciador de ![ aplicaciones El icono del iniciador de aplicaciones. ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) y, a continuación, selecciona **Administrador**.
    
     ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, selecciona **Todas las aplicaciones** para ver una lista alfabética de las aplicaciones disponibles. Ahí podrá buscar una aplicación específica. 
     

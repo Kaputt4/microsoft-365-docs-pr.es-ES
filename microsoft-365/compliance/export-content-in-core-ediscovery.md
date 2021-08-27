@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Describe cómo exportar y descargar contenido de un caso de exhibición de documentos electrónicos principal en Microsoft 365.
-ms.openlocfilehash: c74cf79ffc5defe495ed03ac45182dbd8e36582418879d6cf367242b96095eb9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 68535f8623b26aa4f2b30dc88362f4550c256162
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850825"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567029"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>Exportar contenido desde un caso básico de eDiscovery
 
@@ -40,7 +40,7 @@ Después de ejecutar correctamente una búsqueda asociada a un caso de exhibici�
 
 5. En el **menú** Acciones de la parte inferior de la página desplegable, haga clic **en Exportar resultados**.
 
-   ![Opción Exportar resultados en el menú Acciones](../media/ActionMenuExportResults.png)
+   ![Opción Exportar resultados en el menú Acciones.](../media/ActionMenuExportResults.png)
 
    El flujo de trabajo para exportar los resultados de una búsqueda asociada a un caso de exhibición de documentos electrónicos principal es el mismo que exportar los resultados de búsqueda de una búsqueda en la página **Búsqueda de** contenido. Para obtener instrucciones paso a paso, vea [Exportar resultados de búsqueda de contenido](export-search-results.md).
 
@@ -51,7 +51,7 @@ Después de ejecutar correctamente una búsqueda asociada a un caso de exhibici�
   
 6. Haga clic **en la pestaña** Exportaciones en el caso para mostrar la lista de trabajos de exportación.
   
-   ![Exportar trabajos en la pestaña Exportar en el caso de exhibición de documentos electrónicos principales](../media/CoreeDiscoveryExport.png)
+   ![Exportar trabajos en la pestaña Exportar en el caso de exhibición de documentos electrónicos principales.](../media/CoreeDiscoveryExport.png)
 
    Es posible que tenga que hacer clic **en Actualizar** para actualizar la lista de trabajos de exportación para que muestre el trabajo de exportación que creó. Los trabajos de exportación tienen el mismo nombre que la búsqueda correspondiente **_Export** anexado al nombre de búsqueda.
 

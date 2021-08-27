@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Cómo proteger el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, incluidos ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: 808bd8942c077ae1ab0bc78dbaebc8fc860da120
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 301aa152d462dc7fc712d4b6aa56f4a521463690
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393465"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566921"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las 10 formas principales de proteger Microsoft 365 planes empresariales
 
@@ -39,14 +39,14 @@ Microsoft recomienda completar las tareas enumeradas en la tabla siguiente que s
 
 |*Number*|Tarea|Microsoft 365 Empresa Estándar|Microsoft 365 Empresa Premium|
 |---|---|---|---|
-|1|[Configurar la autenticación multifactor](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2|[Proporcionar formación a los usuarios](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4 |[Aumentar el nivel de protección contra malware en el correo](secure-your-business-data.md#malware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Protección contra ransomware](secure-your-business-data.md#ransomware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|6 |[Detener el reenvío automático para correo electrónico](secure-your-business-data.md#forwarding)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7 |[Usar Office cifrado de mensajes](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8 |[Proteger el correo electrónico de ataques de suplantación de identidad](secure-your-business-data.md#phishing)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Configurar la autenticación multifactor](secure-your-business-data.md#setup)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2|[Proporcionar formación a los usuarios](secure-your-business-data.md#train)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|4 |[Aumentar el nivel de protección contra malware en el correo](secure-your-business-data.md#malware)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[Protección contra ransomware](secure-your-business-data.md#ransomware)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|6 |[Detener el reenvío automático para correo electrónico](secure-your-business-data.md#forwarding)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|7 |[Usar Office cifrado de mensajes](secure-your-business-data.md#encryption)||![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|8 |[Proteger el correo electrónico de ataques de suplantación de identidad](secure-your-business-data.md#phishing)||![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Proteger contra archivos adjuntos y archivos malintencionados con Caja fuerte adjuntos](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10|[Proteger contra ataques de suplantación de identidad con Caja fuerte links](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
@@ -54,7 +54,7 @@ Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la segur
 
 Antes de empezar, compruebe su Microsoft 365 [puntuación segura](../../security/defender/microsoft-secure-score.md) en el centro Microsoft 365 seguridad. Desde un panel centralizado, puede supervisar y mejorar la seguridad de su Microsoft 365 identidades, datos, aplicaciones, dispositivos e infraestructura. Se le dan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o abordar recomendaciones con una aplicación o software de terceros. Con información adicional y más visibilidad de un conjunto más amplio de productos y servicios de Microsoft, puede tener confianza en los informes sobre el estado de seguridad de su organización.
 
-![Captura de pantalla de Puntuación segura de Microsoft](../../media/secure-score.png)
+![Captura de pantalla de Puntuación segura de Microsoft.](../../media/secure-score.png)
 
 ## <a name="1-set-up-multi-factor-authentication"></a>1: Configurar la autenticación multifactor
 <a name="setup"> </a>
@@ -154,9 +154,9 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 
 5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiar estos valores.
 
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
     
-| Configuración | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
+| Valor | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
 |:-----|:-----|:-----|
 |Nombre  <br/> |Regla anti ransomware: advertir a los usuarios  <br/> |Regla anti ransomware: bloquear tipos de archivo  <br/> |
 |Aplique esta regla si . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |
@@ -167,7 +167,7 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 > [!TIP]
 > También puede agregar los archivos que desea bloquear a la lista Antimalware en el [paso 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Para más información, vea:
+Para obtener más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -190,9 +190,9 @@ Para crear una regla de transporte de correo:
 
 5. Aplique la configuración en la tabla siguiente. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiar estos valores.
 
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
-|Configuración|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
+|Valor|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
 |---|---|
 |Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
@@ -218,11 +218,11 @@ Es posible que la organización haya configurado opciones adicionales que aplica
 
 En Outlook para PC, seleccione **Opciones** en el correo electrónico y, a continuación, elija **Permisos**.
 
-![Cifrado de mensajes de correo electrónico en Outlook](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
+![Cifrado de mensajes de correo electrónico en Outlook.](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
 
 En Outlook.com, seleccione **Proteger** en el correo electrónico. La protección predeterminada es **No reenviar**. Para cambiar esto para cifrar, seleccione **Cambiar permisos** \> **Cifrar**.
 
-![Cifrado de mensajes de correo electrónico en Outlook.com](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
+![Cifrado de mensajes de correo electrónico en Outlook.com.](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
 
 ### <a name="to-receive-encrypted-email"></a>Para recibir correo electrónico cifrado
 
@@ -239,7 +239,7 @@ Si ha configurado uno o varios dominios personalizados para su entorno Microsoft
 
 Se recomienda empezar a usar esta protección mediante la creación de una directiva para proteger a los usuarios más importantes y al dominio personalizado.
 
-![Crear una directiva contra la suplantación de identidad en Microsoft Defender para Office 365](../../media/security-and-compliance-center.png)
+![Crear una directiva contra la suplantación de identidad en Microsoft Defender para Office 365.](../../media/security-and-compliance-center.png)
 
 Para crear una directiva contra la suplantación de identidad en Defender para Office 365, vea un breve [vídeo](../../business-video/setup-anti-phishing.md)de aprendizaje o siga estos pasos:
 
@@ -293,7 +293,7 @@ Para crear una directiva Caja fuerte datos adjuntos, vea un [breve vídeo de apr
 |Configuración u opción|Valor recomendado|
 |---|---|
 |Nombre|Bloquear los correos electrónicos actuales y futuros con malware detectado.|
-|Descripción|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
+|Description|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
 |Guardar datos adjuntos respuesta de malware desconocido|Seleccione **Bloquear: bloquee los correos electrónicos y** los datos adjuntos actuales y futuros con malware detectado.|
 |Redirigir datos adjuntos al detectar|Habilitar redirección (seleccione este cuadro) <br/> Escriba la cuenta de administrador o una configuración de buzón para la cuarentena. <br/> Aplica la selección anterior si el examen de malware para datos adjuntos se encuentra en tiempo de espera o si se produce un error (selecciona este cuadro).|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
@@ -328,7 +328,7 @@ Para modificar la directiva predeterminada:
 
 3. En **Configuración** que se aplican al contenido excepto el correo electrónico , seleccione Office 365 **aplicaciones**, No realizar un seguimiento cuando los usuarios hacen clic en vínculos seguros y No permitir que los usuarios hagan clic a través de vínculos seguros **a** la dirección **URL original.**
 
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
@@ -336,7 +336,7 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
 2. Aplique la configuración que se muestra en la tabla siguiente.
 
-3. Seleccione **Guardar**.
+3. Haga clic en **Guardar**.
 
 |Configuración u opción|Valor recomendado|
 |---|---|

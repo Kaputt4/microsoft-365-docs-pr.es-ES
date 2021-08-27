@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Explica por qué la optimización de red es importante para los servicios SaaS, el objetivo de Microsoft 365 redes y cómo SaaS requiere redes diferentes de otras cargas de trabajo.
-ms.openlocfilehash: ce9b7f7f8011e0d0b12d9b0524cf540948f7aab8
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 05e30c7ef3caedff54b45b95f90b4a9f1036193d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533164"
+ms.locfileid: "58566783"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365 de conectividad de red
 
@@ -78,7 +78,7 @@ Algunos problemas comunes de rendimiento se crean cuando Microsoft 365 tráfico 
 
 Acortar la ruta de acceso de red Microsoft 365 los puntos de entrada al permitir que el tráfico del cliente se cierre lo más cerca posible de su ubicación geográfica puede mejorar el rendimiento de conectividad y la experiencia del usuario final en Microsoft 365. También puede ayudar a reducir el impacto de futuros cambios en la arquitectura de red en Microsoft 365 rendimiento y confiabilidad. El modelo de conectividad óptimo es proporcionar siempre salida de red en la ubicación del usuario, independientemente de si se encuentra en la red corporativa o en ubicaciones remotas como hogar, hoteles, cafeterías y aeropuertos. El tráfico genérico de Internet y el tráfico de red corporativa basado en WAN se enrutaría por separado y no usaría el modelo de salida directa local. El siguiente diagrama representa este modelo de salida directa local.
 
-![Arquitectura de red de salida local](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Arquitectura de red de salida local.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
 La arquitectura de salida local presenta las siguientes ventajas para el tráfico de red de Microsoft 365 respecto al modelo tradicional:
   

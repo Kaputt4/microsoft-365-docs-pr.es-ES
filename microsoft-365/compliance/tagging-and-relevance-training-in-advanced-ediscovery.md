@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Aprenda los pasos para etiquetar y, a continuación, trabajar con una muestra de aprendizaje de 40 archivos durante la fase de aprendizaje de relevancia de Advanced eDiscovery.
-ms.openlocfilehash: a510d331da39cfec7e861148a20200c6f3a1239f7ca0fc6387ffc7de56fa38fd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8cb1de2b2f02ec9c2fd94e07574b638a001ec235
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813613"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573768"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Formación de etiquetas y relevancia en Advanced eDiscovery
   
@@ -34,7 +34,7 @@ Una vez completada la evaluación en Advanced eDiscovery y entras en la fase de 
 
 1. En la **pestaña Etiqueta \>** de relevancia, el panel Etiquetado se muestra de forma predeterminada en el panel izquierdo y se muestran los archivos de ejemplo, uno a uno para el etiquetado.
 
-    ![Panel de etiquetas de relevancia](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![Panel Etiqueta de relevancia.](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
     En la **pestaña Etiqueta,** se muestra el nombre para mostrar del archivo. Podría ser la ruta de acceso, el asunto del correo electrónico, el título o el nombre definido por el usuario. El identificador, la ruta de acceso de archivo o la ruta de texto se pueden copiar haciendo clic con el botón secundario en la ruta de acceso del archivo.
 
@@ -48,7 +48,7 @@ Una vez completada la evaluación en Advanced eDiscovery y entras en la fase de 
    |-----|-----|-----|-----|
    |R  <br/> |Relevante  <br/> |Z  <br/> |`Shift + Z`  <br/> |
    |NR  <br/> |No relevante  <br/> |X  <br/> |`Shift + X`  <br/> |
-   |Omitir  <br/> |Omitir  <br/> |C  <br/> |`Shift + A`  <br/> |
+   |Skip  <br/> |Skip  <br/> |C  <br/> |`Shift + A`  <br/> |
    |||||
 
    - Cuando existen varios problemas para un archivo, después de etiquetar un problema, la selección pasa al siguiente problema (si existe).  
@@ -57,7 +57,7 @@ Una vez completada la evaluación en Advanced eDiscovery y entras en la fase de 
 
      Opcionalmente, en la **pestaña Etiqueta,** haga clic en **Configuración de etiqueta** para establecer las siguientes opciones:
 
-      ![Configuración de etiquetas de relevancia](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
+      ![Configuración de etiquetas de relevancia.](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
    - **Etiqueta masiva:** use esta opción para asignar varios  problemas a un archivo seleccionando Todo para establecer la etiqueta del  archivo seleccionado para todos los problemas (invalida problemas ya etiquetados) o seleccionando El resto para aplicar la etiqueta a los problemas no etiquetados restantes. La opción seleccionada permanece en vigor para todos los casos de este usuario hasta que ese usuario lo cambie (la configuración es por usuario para todos los casos del usuario).
 
@@ -79,7 +79,7 @@ La lista de archivos de ejemplo permite ver una lista de los archivos de un ejem
   
 1. En la **pestaña Etiqueta \> de** relevancia, seleccione los archivos de ejemplo de la lista desplegable panel izquierdo. Los archivos de ejemplo se enumeran en el panel izquierdo.
 
-    ![Lista de archivos de ejemplo de etiqueta de relevancia](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
+    ![Lista de archivos de ejemplo de etiquetas de relevancia.](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
 2. Seleccione un ejemplo específico o un número de archivo especificando o seleccionando su número en los cuadros **Ejemplo** **o** Archivo.
 

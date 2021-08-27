@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b38cf9c56f3c518ed7dace01b174b21b280baa23a9e71edb290edd797283f40d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7c3fac607f470018b4c6c5a025b3b2ac09464cc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857495"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550231"
 ---
 # <a name="information-protection-in-windows-overview"></a>Information Protection en Introducción de Windows
 
@@ -66,7 +66,7 @@ Cuando se crea o edita un archivo en un dispositivo Windows, Defender for Endpoi
 
 Active la integración de Azure Information Protection para que, cuando Defender for Endpoint detecta un archivo que contiene información confidencial a través de etiquetas o tipos de información, se reenvía automáticamente a Azure Information Protection desde el dispositivo.
 
-![Imagen de la página de configuración con Azure Information Protection](images/atp-settings-aip.png)
+![Imagen de la página de configuración con Azure Information Protection.](images/atp-settings-aip.png)
 
 Las señales notificadas se pueden ver en el Panel de Azure Information Protection : detección de datos.
 
@@ -74,7 +74,7 @@ Las señales notificadas se pueden ver en el Panel de Azure Information Protecti
 
 Este panel presenta una información resumida de detección de datos detectados por Defender para Endpoint y Azure Information Protection. Los datos de Defender para endpoint se marcan con Tipo de ubicación: extremo.
 
-![Imagen de Azure Information Protection: detección de datos](images/azure-data-discovery.png)
+![Imagen de Azure Information Protection: detección de datos.](images/azure-data-discovery.png)
 
 Observe la columna Riesgo de dispositivo a la derecha, este riesgo de dispositivo se deriva directamente de Defender para endpoint, lo que indica el nivel de riesgo del dispositivo de seguridad donde se detectó el archivo, en función de las amenazas de seguridad activas detectadas por Defender para endpoint.
 

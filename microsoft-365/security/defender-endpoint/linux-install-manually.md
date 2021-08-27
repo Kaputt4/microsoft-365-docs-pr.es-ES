@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 10fba72dbd22419d9941b20609c45d507cb0b206
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 24659a1e928143c79b3ab7324114d5c8b0fa1f43
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372537"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550159"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -285,7 +285,7 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **Script local** como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender captura de pantalla del portal](images/portal-onboarding-linux.png)
+    ![Microsoft 365 Defender captura de pantalla del portal.](images/portal-onboarding-linux.png)
 
 4. Desde un símbolo del sistema, compruebe que tiene el archivo.
     Extraiga el contenido del archivo:

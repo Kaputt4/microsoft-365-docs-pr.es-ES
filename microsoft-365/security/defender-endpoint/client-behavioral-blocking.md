@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 87e1532f126488e21d869d4f04a04d56c483f6b6
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 5afa8ec7fc6d4adeef5a099a18e335b7a9e68f5b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509862"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567369"
 ---
 # <a name="client-behavioral-blocking"></a>Contención y bloqueo de comportamiento del cliente
 
@@ -38,7 +38,7 @@ ms.locfileid: "58509862"
 
 El bloqueo de comportamiento del cliente es un componente de las capacidades de [contención](behavioral-blocking-containment.md) y bloqueo de comportamiento en Defender para endpoint. A medida que se detectan comportamientos sospechosos en dispositivos (también denominados clientes o extremos), los artefactos (como archivos o aplicaciones) se bloquean, comprueban y corrigen automáticamente.
 
-:::image type="content" alt-text="Protección de cliente y nube" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
+:::image type="content" alt-text="Protección de cliente y nube." source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 La protección antivirus funciona mejor cuando se combina con la protección en la nube.
 

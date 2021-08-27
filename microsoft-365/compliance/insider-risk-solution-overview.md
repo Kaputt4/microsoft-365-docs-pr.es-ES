@@ -16,35 +16,35 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 6967931f2c6a9382825218f36cdf6480d39b9ec3070d4c5f659ec881f1bd6c6e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 40d1076f9c6706b9a24c1a6af23a32b02809c7ba
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879838"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566861"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Soluciones de riesgos internos en Microsoft 365
 
 Los riesgos de Insider son una de las principales preocupaciones de los profesionales de seguridad y cumplimiento en el lugar de trabajo moderno. Los estudios del sector han demostrado que los riesgos de información interna suelen asociarse con actividades o eventos de usuario específicos. Proteger su organización contra estos riesgos puede ser difícil de identificar y difícil de mitigar. Los riesgos de Insider incluyen vulnerabilidades en una variedad de áreas y pueden causar problemas importantes para su organización, que van desde la pérdida de propiedad intelectual hasta el acoso en el lugar de trabajo, etc. En la siguiente figura se describen los riesgos comunes de insider:
 
-![Amenazas de riesgo de Insider](../media/ir-solution-threats.png)
+![Amenazas de riesgo de Insider.](../media/ir-solution-threats.png)
 
 Microsoft 365 características de prevención de riesgos están diseñadas e integradas en nuestros productos y soluciones de riesgo de insider. Estas soluciones funcionan juntas y usan indicadores avanzados de servicio e indicadores de terceros para ayudarle a identificar, recortar y actuar rápidamente en la actividad de riesgo. La mayoría de las soluciones ofrecen un flujo de trabajo completo de detección, alerta y corrección para que los analistas de datos e investigadores lo usen para actuar rápidamente y minimizar estos riesgos.
 
 | Icono de riesgo | Riesgos | Cumplimiento de comunicaciones | Administración de riesgos internos | Barreras de la información | Administración del acceso con privilegios |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
-| ![Icono de derrame de datos](../media/ir-risk-data-spillage.png)| Derrame de datos | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |  |
-| ![Icono de infracciones de confidencialidad](../media/ir-risk-confidentiality-violations.png)| Infracciones de confidencialidad | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |
-| ![Icono de robo de IP](../media/ir-risk-ip-theft.png)| Robo de IP | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |
-| ![Icono de violencia en el lugar de trabajo](../media/ir-risk-workplace-violence.png)| Violencia en el lugar de trabajo | ![Compatible](../media/check-mark.png) |  |  |  |
-| ![Icono de fraude/robo](../media/ir-risk-fraud.png)| Fraude | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |  |
-| ![Icono de infracciones de directiva](../media/ir-risk-policy-violations.png)| Infracciones de directivas | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |
-| ![Icono de negociación/protocolo de enlace de Insider](../media/ir-risk-insider-trading.png)| Tráfico de información privilegiada | ![Compatible](../media/check-mark.png) |  |  |  |
-| ![Icono conflictos de interés](../media/ir-risk-conflicts-of-interest.png)| Conflictos de interés | ![Compatible](../media/check-mark.png) |  | ![Compatible](../media/check-mark.png) |  |
-| ![Icono de dispositivos/pérdidas de datos confidenciales](../media/ir-risk-sensitive-data-leaks.png)| Pérdidas de datos confidenciales | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |  |
-| ![Icono de hostigamiento en el lugar de trabajo/personas](../media/ir-risk-workplace-harassment.png)| Acoso en el lugar de trabajo | ![Compatible](../media/check-mark.png) |  |  |  |
-| ![Icono de infracciones de seguridad](../media/ir-risk-security-violations.png)| Infracciones de seguridad |  | ![Compatible](../media/check-mark.png) |  | ![Compatible](../media/check-mark.png) |
-| ![Icono de infracciones de cumplimiento normativo](../media/ir-risk-regulatory-compliance-violations.png)| Infracciones de cumplimiento normativo | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |
+| ![Icono de derrame de datos.](../media/ir-risk-data-spillage.png)| Derrame de datos | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |  |
+| ![Icono de infracciones de confidencialidad.](../media/ir-risk-confidentiality-violations.png)| Infracciones de confidencialidad | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |
+| ![Icono de robo de IP.](../media/ir-risk-ip-theft.png)| Robo de IP | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |
+| ![Icono de violencia en el lugar de trabajo.](../media/ir-risk-workplace-violence.png)| Violencia en el lugar de trabajo | ![Compatible](../media/check-mark.png) |  |  |  |
+| ![Icono de fraude/robo.](../media/ir-risk-fraud.png)| Fraude | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |  |
+| ![Icono de infracciones de directiva.](../media/ir-risk-policy-violations.png)| Infracciones de directivas | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |
+| ![Icono de negociación/protocolo de enlace de Insider.](../media/ir-risk-insider-trading.png)| Tráfico de información privilegiada | ![Compatible](../media/check-mark.png) |  |  |  |
+| ![Icono de conflictos de interés.](../media/ir-risk-conflicts-of-interest.png)| Conflictos de interés | ![Compatible](../media/check-mark.png) |  | ![Compatible](../media/check-mark.png) |  |
+| ![Icono de dispositivos/pérdidas de datos confidenciales.](../media/ir-risk-sensitive-data-leaks.png)| Pérdidas de datos confidenciales | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |  |
+| ![Icono de acoso o personas en el lugar de trabajo.](../media/ir-risk-workplace-harassment.png)| Acoso en el lugar de trabajo | ![Compatible](../media/check-mark.png) |  |  |  |
+| ![Icono de infracciones de seguridad.](../media/ir-risk-security-violations.png)| Infracciones de seguridad |  | ![Compatible](../media/check-mark.png) |  | ![Compatible](../media/check-mark.png) |
+| ![Icono de infracciones de cumplimiento normativo.](../media/ir-risk-regulatory-compliance-violations.png)| Infracciones de cumplimiento normativo | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |
 
 ## <a name="microsoft-365-insider-risk-solutions"></a>Soluciones de riesgos internos de Microsoft 365
 
@@ -100,7 +100,7 @@ Las barreras de información están disponibles en las siguientes suscripciones:
 - Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
 - Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
 
-### <a name="privileged-access-management"></a>Administración del acceso con privilegios
+### <a name="privileged-access-management"></a>Privileged Access Management
 
 La administración de acceso con privilegios permite un control de acceso granular sobre las Exchange Online de administración con privilegios en Office 365. Permite proteger la organización ante vulneraciones que puedan usar las cuentas existentes de administrador con privilegios y acceso permanente para acceder a datos confidenciales o a opciones de configuración críticas.
 
@@ -119,7 +119,7 @@ La administración de acceso con privilegios está disponible en las siguientes 
 
 Para ayudar a proteger su organización contra riesgos de insider, configure e implemente las siguientes Microsoft 365 soluciones:
 
-![Defensa en profundidad de la solución de riesgo insider](../media/ir-solution-defense-in-depth.png)
+![Defensa en profundidad de la solución de riesgo insider.](../media/ir-solution-defense-in-depth.png)
 
 1. Configurar y crear directivas [de cumplimiento de comunicaciones.](communication-compliance-solution-overview.md)
 2. Configurar y crear [directivas de administración de riesgos insider](insider-risk-management-solution-overview.md).
@@ -130,11 +130,11 @@ Para ayudar a proteger su organización contra riesgos de insider, configure e i
 
 Para ayudarle a planear una estrategia integrada para implementar Microsoft 365  capacidades de riesgo de insider, descargue el conjunto de ilustraciones Microsoft 365 de capacidades de protección de la información y cumplimiento. Para obtener funciones de riesgo interno, consulte las páginas de ilustración de arquitectura 5-7. Siéntase libre de adaptar estas ilustraciones para su propio uso.
 
-| Elemento | Descripción |
+| Elemento | Description |
 |:-----|:------------|
-|[![Póster modelo: capacidades de protección y cumplimiento de la información de Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Descargar como PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Actualizado en octubre de 2020|Incluye: <ul><li>  Protección de la información y prevención de la pérdida de datos de Microsoft</li><li>Directivas y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de comunicaciones</li><li>Administración de riesgos internos</li><li>Ingesta de datos de terceros</li>|
+|[![Póster del modelo: Microsoft 365 de protección de la información y cumplimiento.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Descargar como PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Actualizado en octubre de 2020|Incluye: <ul><li>  Protección de la información y prevención de la pérdida de datos de Microsoft</li><li>Directivas y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de comunicaciones</li><li>Administración de riesgos internos</li><li>Ingesta de datos de terceros</li>|
 
-## <a name="training"></a>Aprendizaje
+## <a name="training"></a>Formación
 
 La formación de los administradores y el equipo de cumplimiento en los conceptos básicos para cada solución de riesgo de insider puede ayudar a su organización a empezar más rápidamente con los esfuerzos de implementación e implementación. 
 
@@ -146,4 +146,4 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar y forma
 | Cumplimiento de comunicaciones | [Learning: Preparar el cumplimiento de la comunicación en Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Este módulo le ayuda a aprender los conceptos básicos sobre cómo identificar y corregir infracciones de directivas de código de conducta con el cumplimiento de la comunicación, cubrir los requisitos previos necesarios antes de crear directivas de cumplimiento de comunicaciones y obtener información sobre los tipos de plantillas de directivas predefinidas integradas en el cumplimiento de las comunicaciones. |
 | Administración de riesgos internos | [Learning: administración de riesgos de Insider en Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> Este módulo le ayuda a aprender cómo la administración de riesgos internos en Microsoft 365 puede ayudar a prevenir, detectar y contener riesgos internos en una organización, aprender sobre los tipos de plantillas de directivas predefinidas integradas, comprender los requisitos previos básicos necesarios antes de crear directivas de riesgo de insider y explica los tipos de acciones que puede llevar a cabo en casos de administración de riesgos internos. |
 | Barreras de información | [Learning: Planear las barreras de información](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Este módulo le ayuda a aprender cómo las directivas de barreras de información pueden ayudar a su organización a mantener el cumplimiento de los estándares y normativas relevantes del sector, enumera los tipos de situaciones en las que se aplicarían las barreras de información, ayuda a explicar el proceso de creación de una directiva de barrera de información y ayuda a explicar cómo solucionar problemas inesperados después de que haya barreras de información. |
-| Administración del acceso con privilegios | [Learning: implementar la administración de acceso con privilegios](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Este módulo le ayuda a comprender la diferencia entre la administración de acceso con privilegios y la administración de identidades privilegiadas, comprender el flujo del proceso de administración de acceso con privilegios y comprender los conceptos básicos de cómo configurar y habilitar la administración de acceso con privilegios. |
+| Privileged Access Management | [Learning: implementar la administración de acceso con privilegios](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Este módulo le ayuda a comprender la diferencia entre la administración de acceso con privilegios y la administración de identidades privilegiadas, comprender el flujo del proceso de administración de acceso con privilegios y comprender los conceptos básicos de cómo configurar y habilitar la administración de acceso con privilegios. |

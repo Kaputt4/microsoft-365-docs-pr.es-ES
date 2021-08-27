@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 215c652520dd7267ec38e1eabc79f4268b3fcc1c0b85c19a7555816ed6eb80c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 142ce23d87c1f793a0192270e6d041b33d9bc126
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839617"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573972"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de licencia para Microsoft Defender para Endpoint en macOS
 
@@ -40,7 +40,7 @@ ms.locfileid: "53839617"
 
 Mientras estás pasando por Microsoft Defender para endpoint en [macOS](microsoft-defender-endpoint-mac.md) [y](mac-install-manually.md) pruebas de implementación manual o una prueba de concepto (PoC), es posible que recibas el siguiente error:
 
-![Imagen de error de licencia](images/no-license-found.png)
+![Imagen de error de licencia.](images/no-license-found.png)
 
 **Mensaje:** 
 

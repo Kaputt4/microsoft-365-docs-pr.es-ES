@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4e3665e148cd08bfef2fd56e1d51595ed7626a57a82cc6c3b3577b8d157bb1a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b365be018fafb487fb689acb09749804f849ce3b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884588"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550063"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Detección de dispositivos de red y administración de vulnerabilidades
 
@@ -32,7 +32,7 @@ ms.locfileid: "53884588"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -110,7 +110,7 @@ Para configurar trabajos de evaluación, se requiere la siguiente opción de per
 2. Descargue el escáner de red e instállo en el dispositivo de evaluación de Defender para endpoint designado.
 
     > [!div class="mx-imgBorder"]
-    > ![Botón Descargar escáner](images/assessment-jobs-download-scanner.png)
+    > ![Botón Descargar escáner.](images/assessment-jobs-download-scanner.png)
 
 ## <a name="network-scanner-installation--registration"></a>Instalación del escáner de red & registro
 
@@ -134,7 +134,7 @@ En la página Trabajos de evaluación **de Configuración**, seleccione Agregar 
 Para evitar la duplicación de dispositivos en el inventario de dispositivos de red, asegúrese de que cada dirección IP esté configurada solo una vez en varios dispositivos de evaluación.
 
 > [!div class="mx-imgBorder"]
-> ![Botón Agregar trabajo de evaluación de red](images/assessment-jobs-add.png)
+> ![Botón Agregar trabajo de evaluación de red.](images/assessment-jobs-add.png)
 
 Adición de pasos de trabajo de evaluación de red:
 
@@ -164,7 +164,7 @@ Una vez que se muestren los resultados, puedes elegir qué dispositivos se inclu
 Los dispositivos recién detectados se mostrarán en la nueva **pestaña Dispositivos de** red en la **página Inventario de** dispositivos. Puede tardar hasta dos horas después de agregar un trabajo de evaluación hasta que los dispositivos se actualicen.
 
 > [!div class="mx-imgBorder"]
-> ![Sección Dispositivos de red en el inventario de dispositivos](images/assessment-jobs-device-inventory.png)
+> ![Sección Dispositivos de red en el inventario de dispositivos.](images/assessment-jobs-device-inventory.png)
 
 ## <a name="troubleshooting"></a>Solución de problemas
 

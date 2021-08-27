@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use esta Guía del laboratorio de pruebas para crear un entorno de prueba ligero para realizar pruebas Microsoft 365 empresa.
-ms.openlocfilehash: 3b59b6ce6ac0ff9f6ba51bcd7c8ab150152dc6a9
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 818b013d8d18a7686e88e99eff2f0be2fb12b8d9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356377"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566795"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuración básica ligera
 
@@ -31,7 +31,7 @@ ms.locfileid: "58356377"
 
 En este artículo se describe cómo crear un entorno simplificado con una suscripción Microsoft 365 E5 y un equipo que ejecuta Windows 10 Enterprise.
 
-![El entorno de pruebas ligero de Microsoft 365 Enterprise](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![El entorno de prueba ligero de Microsoft 3656 Enterprise de prueba.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 La creación de un entorno de prueba ligero implica cinco fases:
 - [Fase 1: Crear su Microsoft 365 E5 suscripción](#phase-1-create-your-microsoft-365-e5-subscription)
@@ -42,7 +42,7 @@ La creación de un entorno de prueba ligero implica cinco fases:
 
 Use el entorno resultante para probar las características y la funcionalidad de [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise).
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vea [Microsoft 365 enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -59,13 +59,13 @@ Empezamos con una Microsoft 365 E5 de prueba y, a continuación, agregamos la Mi
 
 Para iniciar la suscripción de prueba de Microsoft 365 E5, en primer lugar necesita un nombre de compañía ficticio y una nueva cuenta de Microsoft.
   
-1. Le recomendamos que use una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una compañía ficticia usada en contenido de ejemplo de Microsoft, pero no es imprescindible. Anote aquí el nombre de la compañía ficticia: ![Línea](../media/Common-Images/TableLine.png)
+1. Le recomendamos que use una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una compañía ficticia usada en contenido de ejemplo de Microsoft, pero no es imprescindible. Anote aquí el nombre de la compañía ficticia: ![Línea.](../media/Common-Images/TableLine.png)
     
 2. Para registrarse para obtener una nueva cuenta Microsoft, vaya a [https://outlook.com](https://outlook.com) y cree una cuenta con una nueva cuenta y una dirección de correo electrónico. Usará esta cuenta para suscribirse a Office 365.
     
-    - Anote aquí el nombre y los apellidos de la nueva cuenta: ![Línea](../media/Common-Images/TableLine.png)
+    - Anote aquí el nombre y los apellidos de la nueva cuenta: ![Línea.](../media/Common-Images/TableLine.png)
     
-    - Anote la dirección de la cuenta de correo electrónico nueva aquí: ![Línea](../media/Common-Images/TableLine.png)Outlook.com
+    - Anote la dirección de la cuenta de correo electrónico nueva aquí: ![Línea.](../media/Common-Images/TableLine.png)Outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrarse para una suscripción de prueba de Office 365 E5
 
@@ -74,8 +74,8 @@ Para iniciar la suscripción de prueba de Microsoft 365 E5, en primer lugar nece
 2. En el paso 1 de la página Gracias **por elegir** Office 365 E5, escriba la nueva dirección de su cuenta de correo electrónico.
 3. En el paso 2 del proceso de suscripción a trail, escriba la información solicitada y, a continuación, realice la comprobación.
 4. En el paso 3, escriba un nombre de organización y, a continuación, un nombre de cuenta que será el administrador global de la suscripción.
-5. En el paso 4, registre la página de inicio de sesión aquí (seleccionar y copiar):  ![Línea](../media/Common-Images/TableLine.png)
-6. Registre aquí el identificador de usuario: ![Linea](../media/Common-Images/TableLine.png).onmicrosoft.com  
+5. En el paso 4, registre la página de inicio de sesión aquí (seleccionar y copiar):  ![Línea.](../media/Common-Images/TableLine.png)
+6. Registre el identificador de usuario aquí: ![ Line. ](../media/Common-Images/TableLine.png) . onmicrosoft.com  
    Registre la contraseña que escribió en una ubicación segura.
    Este valor se denominará **nombre de administrador global**.
 7. Seleccione **Ir a Instalación**.
@@ -119,11 +119,11 @@ for($i=2;$i -le 4; $i++) {
 
 Si aún no ha registrado estos valores, indómelos ahora:
   
-- Nombre de administrador global: ![Línea](../media/Common-Images/TableLine.png). onmicrosoft.com (del paso 6 de la fase 1)
+- Nombre de administrador global: ![Línea.](../media/Common-Images/TableLine.png). onmicrosoft.com (del paso 6 de la fase 1)
     
     Guarde también la contraseña de esta cuenta en una ubicación segura.
     
-- Nombre de la organización de la suscripción de prueba: ![Línea](../media/Common-Images/TableLine.png) (en el paso 4 de la fase 1)
+- Nombre de la organización de la suscripción de prueba: ![Línea.](../media/Common-Images/TableLine.png) (en el paso 4 de la fase 1)
     
 - Para mostrar las cuentas de los usuarios 2, 3, 4 y 5, ejecute los siguientes comandos desde el símbolo del sistema del Módulo de Windows Azure Active Directory para Windows PowerShell.
     
@@ -133,13 +133,13 @@ Si aún no ha registrado estos valores, indómelos ahora:
 
     Anote aquí los nombres de las cuentas:
     
-  - Nombre de la cuenta de usuario 2: usuario2 @![Línea](../media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 2: usuario2 @![Línea.](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 3: usuario3 @![Línea](../media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 3: usuario3 @![Línea.](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 4: usuario4 @![Línea](../media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 4: usuario4 @![Línea.](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nombre de la cuenta de usuario 5: usuario5 @![Línea](../media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nombre de la cuenta de usuario 5: usuario5 @![Línea.](../media/Common-Images/TableLine.png).onmicrosoft.com
     
     También puede guardar la contraseña común de estas cuentas en un lugar seguro.
    
@@ -189,7 +189,7 @@ Su entorno de desarrollo y prueba ahora tiene:
     
 La configuración resultante, que agrega Microsoft 365 E5, tiene este aspecto:
   
-![Fase 3 del entorno de prueba de Microsoft 365 Enterprise](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Fase 3 del entorno de prueba Enterprise Microsoft 3656.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 ## <a name="phase-4-create-a-windows-10-enterprise-computer"></a>Fase 4: crear un equipo con Windows 10 Enterprise
 
@@ -300,7 +300,7 @@ A continuación, Aplicaciones Microsoft 365 para empresas en el equipo WIN10:
     
 El entorno resultante tiene este aspecto:
 
-![Fase 5 del entorno de prueba de Microsoft 365 Enterprise](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Fase 5 del entorno de prueba Enterprise Microsoft 3656.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 Esto incluye el equipo WIN10 que tiene:
 

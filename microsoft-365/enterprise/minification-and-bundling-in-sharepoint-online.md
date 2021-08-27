@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Obtenga información sobre cómo usar técnicas de minificación y agrupación con Web Essentials para reducir las solicitudes HTTP y el tiempo que tarda en cargar páginas en SharePoint Online.
-ms.openlocfilehash: a7ed45dbc06f4d5cc58742ee545edac212f1ce181896907b889c41e7b3645486
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5ba1e174cbb016bdf88a1d4006a0b8aafd5ec042
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858630"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567393"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minificación y agrupación en SharePoint Online
 
@@ -51,7 +51,7 @@ Web Essentials ofrece dos formas de agrupación:
     
 Puede usar Web Essentials si tiene una característica existente con algunos elementos de personalización de marca a los que se hace referencia dentro de una página maestra personalizada, como:
   
-![Captura de pantalla de un elemento que identifica la marca en la página maestra personalizada](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
+![Captura de pantalla del elemento brand en la página maestra personalizada.](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
   
  **Para crear un paquete TE000127218 y CSS en Web Essentials**
   
@@ -59,31 +59,31 @@ Puede usar Web Essentials si tiene una característica existente con algunos ele
     
 2. Haga clic con el botón secundario en los archivos seleccionados y, a continuación, seleccione **Web Essentials** Crear archivo de agrupación de \> **JavaScript** en el menú contextual. Por ejemplo: 
     
-    ![Captura de pantalla que muestra las opciones de menú de Web Essentials](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
+    ![Captura de pantalla que muestra las opciones de menú de Web Essentials.](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
 ## <a name="viewing-the-results-of-bundling-javascript-and-css-files"></a>Visualización de los resultados de la agrupación de archivos JavaScript y CSS
 
 Al crear una agrupación de JavaScript y CSS, Web Essentials crea un archivo XML denominado archivo de receta que identifica los archivos JavaScript y CSS, así como otra información de configuración: 
   
-![Captura de pantalla del archivo receta de JavaScript y CSS](../media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
+![Captura de pantalla del archivo de recetas de JavaScript y CSS.](../media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
   
 Además, si la marca de minify se establece en true en la receta de agrupación, los archivos se reducen en tamaño y se agrupan juntos. Esto significa que se crearon nuevas versiones minificadas de los archivos JavaScript a las que puede hacer referencia en la página maestra.
   
-![Captura de pantalla de la marca de minify establecida en verdadero](../media/50523af2-6412-4117-ac3d-5bd26f6d562e.png)
+![Captura de pantalla de la marca de minify establecida en true.](../media/50523af2-6412-4117-ac3d-5bd26f6d562e.png)
   
 Al cargar una página desde el sitio web, puede usar las herramientas de desarrollo del explorador web, como Internet Explorer 11, para ver el número de solicitudes enviadas al servidor y el tiempo que tardó cada archivo en cargarse.
   
 La siguiente figura es el resultado de cargar los archivos JavaScript y CSS antes de la minificación.
   
-![Captura de pantalla que muestra los 80 artículos descargándose](../media/e2df3912-1923-46e6-8cf2-3015a31554e1.png)
+![Captura de pantalla que muestra 80 elementos que se descargan.](../media/e2df3912-1923-46e6-8cf2-3015a31554e1.png)
   
 Después de agrupar los archivos CSS y JavaScript, el número de solicitudes se redujo a 74 y cada archivo tardó un poco más que los archivos originales en descargarse individualmente:
   
-![Captura de pantalla que muestra los 74 artículos descargándose](../media/686c4387-70e8-4a74-9d45-059f33a91184.png)
+![Captura de pantalla que muestra 74 elementos que se descargan.](../media/686c4387-70e8-4a74-9d45-059f33a91184.png)
   
 Después de la agrupación, el archivo de agrupación de JavaScript se reduce significativamente de 815 KB a 365 KB:
   
-![Captura de pantalla que muestra el tamaño de la descarga reducido](../media/5e7dbd98-faff-4f68-b320-108fb252e395.png)
+![Captura de pantalla que muestra el tamaño de descarga reducido.](../media/5e7dbd98-faff-4f68-b320-108fb252e395.png)
   
 ## <a name="bundling-images-by-creating-an-image-sprite"></a>Agrupación de imágenes mediante la creación de un sprite de imagen
 
@@ -95,12 +95,12 @@ De forma similar a la forma en que agrupa archivos JavaScript y CSS, puede combi
     
 2. Haga clic con el botón secundario en los archivos seleccionados y, a continuación, seleccione **Web Essentials** Crear sprite de imagen \>  en el menú contextual. Por ejemplo: 
     
-    ![Captura de pantalla que muestra cómo crear un objeto sprite de imagen](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
+    ![Captura de pantalla que muestra cómo crear un sprite de imagen.](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   
 3. Elija una ubicación para guardar el archivo sprite. El archivo .sprite es un archivo XML que describe la configuración y los archivos del sprite. Las siguientes figuras muestran un ejemplo de un archivo PNG sprite y su correspondiente archivo XML .sprite.
     
-    ![Captura de pantalla de un archivo de sprite](../media/0876bb2a-d1b9-4169-8e95-9c290d628d90.png)
+    ![Captura de pantalla de un archivo sprite.](../media/0876bb2a-d1b9-4169-8e95-9c290d628d90.png)
   
-    ![Captura de pantalla de archivo XML de sprite](../media/d1f94776-280d-4d56-abb5-384f145d9989.png)
+    ![Captura de pantalla del archivo XML sprite.](../media/d1f94776-280d-4d56-abb5-384f145d9989.png)
   
 

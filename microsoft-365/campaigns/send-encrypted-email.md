@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre cómo enviar correo electrónico cifrado Outlook.
-ms.openlocfilehash: c9ce78b744f903427b5e88bfb9fc1695279ebe30535ee97eca32a5fc3b6b35f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 789477557801f2c8b89fa2bb281d0b0f2faf993a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867004"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567113"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Cifre o etiquete su correo electrónico confidencial
 
@@ -43,7 +43,7 @@ Antes de enviar correo electrónico con información confidencial o confidencial
 - **Cifrado:** Puede cifrar el correo electrónico para proteger la privacidad de la información del correo electrónico. Al cifrar un mensaje de correo electrónico, se convierte de texto sin formato legible en texto de chipher codificado. Solo el destinatario que tiene la clave privada que coincide con la clave pública usada para cifrar el mensaje puede descifrar el mensaje para su lectura. Sin embargo, cualquier destinatario sin la clave privada correspondiente ve texto indescifrable. El administrador puede definir reglas para cifrar automáticamente los mensajes que cumplan determinados criterios. Por ejemplo, el administrador puede crear una regla que cifre todos los mensajes enviados fuera de la organización o todos los mensajes que mencionen palabras o frases específicas. Las reglas de cifrado se aplicarán automáticamente.
 - **Etiquetas de confidencialidad:** Tu campaña también puede configurar etiquetas de confidencialidad que puedes aplicar a tus archivos y correo electrónico para que cumplan con las directivas de protección de la información de la campaña. Al establecer una etiqueta, la etiqueta persiste con el correo electrónico, incluso cuando se envía; por ejemplo, aparece como un encabezado en el mensaje.
 
-![Diagrama de un correo electrónico con llamadas para etiquetas y cifrado](../media/m365-campaign-email-encrypt.png)
+![Diagrama de un correo electrónico con llamadas para etiquetas y cifrado.](../media/m365-campaign-email-encrypt.png)
 
 ## <a name="set-it-up"></a>Configúrelo
 

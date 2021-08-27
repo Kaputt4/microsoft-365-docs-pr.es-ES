@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 00d42e237e5fbe5d0c9fd904bd51c3dc94fd3668d0a12249a46d9cd48f06adad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 202fe1c38b6846f52361f3e55baf9050cae36fb5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817860"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550171"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Investigar una cuenta de usuario en Microsoft Defender para endpoint
 
@@ -56,7 +56,7 @@ Cuando investigue una entidad de cuenta de usuario, verá:
 - Alertas relacionadas con este usuario
 - Observado en la organización (dispositivos que iniciaron sesión en)
 
-![Imagen de la página de detalles de la entidad de la cuenta de usuario](images/atp-user-details-view.png)
+![Imagen de la página de detalles de la entidad de la cuenta de usuario.](images/atp-user-details-view.png)
 
 ### <a name="user-details"></a>Detalles del usuario
 

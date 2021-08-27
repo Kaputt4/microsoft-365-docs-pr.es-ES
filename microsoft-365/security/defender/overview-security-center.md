@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 58cc9548983d75593ae77af016ef894dc9f82547
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7f4df3c6903194b00a4469f52fb0e15e2f8748ad
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256324"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573876"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender introducción
 
@@ -86,7 +86,7 @@ Al seleccionar un nombre de incidente, se muestra una página que muestra el val
 :::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Ejemplo de la página Resumen de un incidente en Microsoft 365 Defender":::
 
 <!--
-![Example of the Summary page for an incident in Microsoft 365 Defender](../../media/converged-incident-info-3.png)
+![Example of the Summary page for an incident in Microsoft 365 Defender.](../../media/converged-incident-info-3.png)
 --> 
 
 En la parte superior de una página de incidentes, verá las pestañas **Resumen** **,** Alertas , **Dispositivos**, **Usuarios,** **Buzones, Investigaciones** **y** Evidencia.  Seleccione estas pestañas para obtener información más detallada. Por ejemplo,  la pestaña Usuarios muestra información para los usuarios de cargas de trabajo convergentes (Microsoft Defender para endpoint, Microsoft Defender para identidad y Microsoft Cloud App Security) y una amplia variedad de orígenes, como servicios de dominio locales de Active Directory (AD DS), Azure Active Directory (Azure AD) y proveedores de identidades de terceros. Para obtener más información, vea [investigar usuarios](investigate-users.md).
@@ -101,7 +101,7 @@ Los controles y el contenido comunes aparecen en el mismo lugar o se condensan e
 
 ### <a name="unified-settings"></a>Configuración unificada
 
-![Hizo clic en "Roles" y abrió la página Configuración, que incluye configuración general, permisos, API y reglas. Abra Permisos y, a continuación, Roles. Muestra todos los roles](../../media/converged-add-role-9.png)
+![Hizo clic en "Roles" y abrió la página Configuración, que incluye configuración general, permisos, API y reglas. Abra Permisos y, a continuación, Roles. Muestra todos los roles.](../../media/converged-add-role-9.png)
 
 ### <a name="permissions--roles"></a>Permisos & roles
 

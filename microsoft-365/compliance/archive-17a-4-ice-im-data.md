@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector 17a-4 ICE Conectar Chat DataParser para importar y archivar datos de chat de ICE Conectar en Microsoft 365.
-ms.openlocfilehash: 3a81db4cfc5881ee8f68637fa50755a1967f365055fdc4382469526a4e76dc78
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf759aaecdfcde8f951cc09271b7e32226324664
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836161"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567077"
 ---
 # <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>Configurar un conector para archivar datos de chat Conectar ICE
 
@@ -29,7 +29,7 @@ Una vez que los datos de chat de Conectar ICE se almacenan en buzones de usuario
 
 En la siguiente introducción se explica el proceso de uso de un conector de datos para archivar datos de ice Conectar chat en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos de chat Conectar ICE de 17a-4](../media/ICEChatDataParserConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos de chat Conectar ICE de 17a-4.](../media/ICEChatDataParserConnectorWorkflow.png)
 
 1. Su organización trabaja con 17a-4 para configurar y configurar el DataParser de ICE.
 

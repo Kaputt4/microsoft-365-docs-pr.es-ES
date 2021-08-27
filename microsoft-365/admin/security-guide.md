@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las amenazas de seguridad que enfrenta su empresa y las formas fáciles en que usted y sus empleados pueden proteger sus datos, cuentas y dispositivos.
-ms.openlocfilehash: 537630b551777e1eedf254de82c11e2286326ccf8973319245cacd5a7da80359
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f5b31fe2056e95ae4477480ac16e80222beeb565
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822621"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566909"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>Gráfico de información de seguridad para pequeñas empresas
 
@@ -30,6 +30,6 @@ ms.locfileid: "53822621"
 
 Los vínculos de PowerPoint y PDF a continuación se pueden descargar e imprimir en formato tabloide (también conocido como libro mayor, 11 x 17 o A3).
 
-![Imagen para proteger el gráfico de información de pequeña empresa](../media/smbthreatprotectioninfographic-thumbnail.png)
+![Imagen para proteger el gráfico de información de pequeña empresa.](../media/smbthreatprotectioninfographic-thumbnail.png)
 
 [PDF](downloads/smbthreatprotection-infographic.pdf)  |  [PowerPoint](downloads/smbthreatprotection-infographic.pptx)

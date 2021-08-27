@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Establece el tiempo de búfer antes o después de una cita en Microsoft Bookings para permitir tiempo para limpiar o restablecer el equipo.
-ms.openlocfilehash: 932dc842b5e81589c4120bf23e53c5d66709830053879a67e30468e72eb4e4b7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 21830b0cc1ec2f14bc845937387e700fb7a2ee72
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838120"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573684"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Establecer tiempo de búfer en Microsoft Bookings
 
@@ -28,7 +28,7 @@ Los valores predeterminados de tiempo de búfer se establecen en **la página De
 
 La configuración de tiempo de búfer se encuentra justo debajo de los **selectores** de duración predeterminada en la **página Detalles del** servicio. Para poder establecerlo para un servicio determinado, debe habilitar la configuración de tiempo del búfer seleccionando la alternancia de tiempo del búfer. Esto hace **que** aparezcan las desplegables Antes y Después, que se usan para elegir la cantidad predeterminada de tiempo para retener antes y después de cada reserva, como se muestra aquí: 
 
-   ![Imagen de Bookings con tiempo de búfer habilitado](../media/bookings-buffertime.png)
+   ![Imagen de Bookings con tiempo de búfer habilitado.](../media/bookings-buffertime.png)
 
 ## <a name="buffer-time-and-appointment-timing"></a>Tiempo de búfer y tiempo de cita
 
@@ -36,7 +36,7 @@ Para evitar confusiones sobre cuándo los clientes esperan reunirse con usted, B
 
 Tenga en cuenta que el evento en sí (a la izquierda de la imagen siguiente) muestra sombreado más claro para el tiempo de búfer y sombreado más oscuro para la cita real del cliente. La llamada de cita (que se abre al seleccionar el evento) indica específicamente que la cita es de 9:00AM a 10:00AM con Katie Jordan e incluye 15 minutos de tiempo de búfer antes de la cita y 0 minutos después de la cita. Las confirmaciones y avisos al personal hacen referencia de forma similar al búfer específico y la hora de cita, mientras que el cliente solo recibiría confirmaciones y avisos que hacen referencia a una hora de cita de 9:00AM a 10:00AM.
 
-   ![Imagen de la llamada de cita de Bookings con tiempo de búfer que se muestra](../media/bookings-buffertime-callout.png)
+   ![Imagen de la llamada de cita de Bookings con tiempo de búfer que se muestra.](../media/bookings-buffertime-callout.png)
 
 ## <a name="buffer-time-and-availability"></a>Tiempo y disponibilidad del búfer
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 33d86ff6b63bd8b21ba233ff8b28672a3688fd0c4b20565f69cb9f11b4959426
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 892dbcccfc8f224f80a538f9736405cb012b69ca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857972"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573696"
 ---
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
@@ -36,11 +36,11 @@ Cuando Escritorio administrado de Microsoft usuarios reciben un nuevo dispositiv
 
 1. El sistema indica a los usuarios OneDrive se han configurado y que han iniciado sesión automáticamente en OneDrive.
 
-:::image type="content" source="media/onedrive-sync.png" alt-text="La lectura de notificaciones que ahora está sincronizando OneDrive y puede editar archivos en OneDrive. haga clic aquí para ver los archivos":::
+:::image type="content" source="media/onedrive-sync.png" alt-text="La lectura de notificaciones que ahora está sincronizando OneDrive y puede editar archivos en OneDrive. haga clic aquí para ver los archivos.":::
 
 2. El sistema indica a los usuarios OneDrive se ha configurado el movimiento de carpetas conocidos para ellos.
 
-:::image type="content" source="media/onedrive-folders.png" alt-text="Notificación en la que el departamento de TI ha copiado de seguridad de las carpetas importantes. Las carpetas ahora se copian de seguridad OneDrive y están disponibles desde otros dispositivos":::
+:::image type="content" source="media/onedrive-folders.png" alt-text="Notificación en la que el departamento de TI ha copiado de seguridad de las carpetas importantes. Las carpetas ahora se copian de seguridad OneDrive y están disponibles desde otros dispositivos.":::
 
 3. Para evitar iconos duplicados en el escritorio cuando los dispositivos se restablecen o se restablecen, el sistema quita automáticamente Microsoft Edge y Microsoft Teams iconos del Sincronización de OneDrive, como se muestra en esta vista en el Explorador de archivos.
 

@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar resultados de búsqueda o ejemplos de esos resultados de búsqueda a un Advanced eDiscovery de revisión de casos.
-ms.openlocfilehash: dd3b04812f1284d8a95a158f1ef47317bc89c9f28b743a723fc8d21287116e48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aeb7942fc12089bd458236221dd7394a8018e780
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837064"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567089"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Agregar los resultados de búsqueda a un conjunto de revisión
 
@@ -43,7 +43,7 @@ Para agregar datos a un conjunto de  revisión, haga clic en una búsqueda en la
 
 Puede agregar a un conjunto de revisión existente o crear un nuevo conjunto de revisión.  Si agrega a un nuevo conjunto de revisión, especifique el nombre y, a continuación, haga clic en **Agregar** para mostrar la página desplegable.
 
-![Seleccionar un conjunto de revisión y configurar opciones de colección](../media/AeD_AddToReviewSet.png)
+![Seleccione un conjunto de revisión y configure las opciones de colección.](../media/AeD_AddToReviewSet.png)
 
 Agregar datos a un conjunto de revisión es un proceso de larga ejecución. Este proceso incluye la recopilación de elementos de los orígenes de datos originales de Microsoft 365 (por ejemplo, de buzones y sitios), copiarlos en la ubicación de Azure Storage (este proceso de copia también se denomina *ingesta)* y, a continuación, volver a indizar los elementos. Puede realizar un seguimiento del progreso  en la pestaña **Trabajos** o en la pestaña Búsquedas supervisando el estado de la columna Datos agregados **para revisar el conjunto.** Una vez completado el procesamiento  del conjunto de revisión, haga clic en la pestaña Conjuntos de revisión del caso y, a continuación, haga clic en el conjunto de revisión para iniciar el proceso de filtrado, revisión, etiquetado y exportación de datos en el conjunto de revisión.
 

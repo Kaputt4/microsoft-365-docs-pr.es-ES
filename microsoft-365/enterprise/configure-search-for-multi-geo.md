@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo configurar la búsqueda en un entorno multige geográfico. Solo algunos clientes, como OneDrive, pueden devolver resultados en un entorno multige geográfico.
-ms.openlocfilehash: 65f74ce9d21fd9323cd2a3421875399c3a5d8346fd55e9820398c3363e099e9b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a991638e5f0b1270950b50823def61eb4d60669b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864951"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566849"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurar la búsqueda para Microsoft 365 Multi-Geo
 
@@ -131,7 +131,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, n
 
 Todos los clientes de búsqueda usan la API REST de SharePoint Search existente para interactuar con los índices de búsqueda.
 
-![Diagrama que muestra cómo interactúan SharePoint API de REST de búsqueda con los índices de búsqueda](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagrama que muestra SharePoint las API de REST de búsqueda interactúan con los índices de búsqueda.](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un cliente de búsqueda llama al punto de conexión de REST de búsqueda con la propiedad EnableMultiGeoSearch= true.
 2. La consulta se envía a todas las ubicaciones geográficas del espacio empresarial.
@@ -151,11 +151,11 @@ Cada Centro de búsqueda tiene varios sectores verticales y hay que configurar i
 
 3. Seleccione el sector vertical que quiere configurar, haga clic en el icono de engranaje **Configuración** de la esquina superior derecha y luego en **Editar página**. La página de resultados de búsqueda se abre en modo de edición.
 
-   ![Editar selección de página en Configuración](../media/configure-search-for-multi-geo-image2.png)
+   ![Edite la selección de página en Configuración.](../media/configure-search-for-multi-geo-image2.png)
 
 4. En el elemento web Resultados de búsqueda, mueva el puntero a la esquina superior derecha del elemento web, haga clic en la flecha y, a continuación, haga clic en **Editar elemento web** en el menú. El panel de herramientas del elemento web de resultados de búsqueda se abrirá debajo de la cinta en la parte superior derecha de la página.
 
-   ![Editar selección de elementos web](../media/configure-search-for-multi-geo-image3.png)
+   ![Editar selección de elementos web.](../media/configure-search-for-multi-geo-image3.png)
 
 5. En la sección **Configuración** del panel de herramientas del elemento web de resultados de búsqueda, en **Configuración de control de resultados**, seleccione **Show Multi-Geo results** (Mostrar resultados multigeográficos) para que el elemento web de resultados de la búsqueda muestre los resultados de todas las ubicaciones geográficas.
 

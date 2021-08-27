@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporte los resultados de la búsqueda de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido SharePoint y OneDrive para la Empresa se exportan como documentos Office nativos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cab1cfc3814c2b0f2f38a920c7d97cdc5b6817dd
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 8ce3317dbd9b1d21ab1e703fce1b168885b81aa2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502932"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567041"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -94,13 +94,13 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
   
 2. En el **menú** Acciones de la parte inferior de la página desplegable, haga clic **en Exportar resultados**.
 
-   ![Opción Exportar resultados en el menú Acciones](../media/ActionMenuExportResults.png)
+   ![Opción Exportar resultados en el menú Acciones.](../media/ActionMenuExportResults.png)
 
    Se **muestra la página** desplegable Exportar resultados. Las opciones de exportación disponibles para exportar contenido dependen de si los resultados de la búsqueda se encuentran en buzones o sitios o en una combinación de ambos.
 
 3. En **Opciones de salida,** elija una de las siguientes opciones:
   
-   ![Exportar opciones de salida](../media/ExportOutputOptions.png)
+   ![Exportar opciones de salida.](../media/ExportOutputOptions.png)
 
     - Todos los elementos, excepto los que tienen formato no reconocido, se cifran o no se **indizan por otras razones.** Esta opción exporta solo elementos indizados.
   
@@ -112,7 +112,7 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
 
 4. En **Exportar Exchange contenido como**, elija una de las siguientes opciones:
   
-   ![Opciones de Exchange](../media/ExchangeExportOptions.png)
+   ![Exchange opciones.](../media/ExchangeExportOptions.png)
 
     - **Un archivo PST para cada buzón:** exporta un archivo PST para cada buzón de usuario que contiene los resultados de la búsqueda. Los resultados del buzón de archivo del usuario se incluyen en el mismo archivo PST. Esta opción reproduce la estructura de carpetas del buzón de correo del buzón de origen.
   
@@ -124,7 +124,7 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
   
 5. Configure las siguientes opciones adicionales:
 
-   ![Configurar otras opciones de exportación](../media/OtherExportOptions.png)
+   ![Configure otras opciones de exportación.](../media/OtherExportOptions.png)
 
    1. Active la **casilla Habilitar desduplicación para Exchange contenido para** excluir mensajes duplicados.
   
@@ -161,7 +161,7 @@ El siguiente paso es descargar los resultados de la búsqueda desde la Azure Sto
 
 6. En la **herramienta de exportación de exhibición de** documentos electrónicos , haga lo siguiente:
 
-   ![Herramienta de exportación de eDiscovery](../media/eDiscoveryExportTool.png)
+   ![Herramienta de exportación de exhibición de documentos electrónicos.](../media/eDiscoveryExportTool.png)
 
    1. Pegue la clave de exportación que copió en el paso 3 en el cuadro correspondiente.
   
@@ -252,11 +252,11 @@ Para obtener información acerca de los límites al exportar resultados de búsq
 
     Para exportar elementos parcialmente indizados desde todas las ubicaciones de contenido de una búsqueda, configure la búsqueda para devolver todos los elementos (quitando las palabras clave de la consulta de búsqueda) y, a continuación, exporte solo elementos parcialmente indizados al exportar los resultados de la búsqueda.
 
-    ![Usar la tercera opción de exportación para exportar solo elementos no indexados](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![Use la tercera opción de exportación para exportar solo elementos no indexados.](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
 - Al exportar resultados de búsqueda de sitios SharePoint o OneDrive para la Empresa, la capacidad de exportar elementos no indexados también depende de la opción de exportación que seleccione y de si un sitio que se ha buscado contiene un elemento indizado que coincida con los criterios de búsqueda. Por ejemplo, si busca sitios de SharePoint o OneDrive para la Empresa específicos y no se encuentran resultados de búsqueda, no se exportarán elementos sin indizar de esos sitios si elige la segunda opción de exportación para exportar elementos indexados y no indexados. Si un elemento indizado de un sitio coincide con los criterios de búsqueda, todos los elementos no indexados de ese sitio se exportarán al exportar elementos indexados y no indexados. En la siguiente ilustración se describen las opciones de exportación en función de si un sitio contiene un elemento indizado que coincide con los criterios de búsqueda.
 
-    ![Elija la opción de exportación en función de si un sitio contiene un elemento indizado que coincida con los criterios de búsqueda](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
+    ![Elija la opción de exportación en función de si un sitio contiene un elemento indizado que coincida con los criterios de búsqueda.](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     a. Solo se exportan elementos indizados que coincidan con los criterios de búsqueda. No se exportan elementos parcialmente indizados.
 

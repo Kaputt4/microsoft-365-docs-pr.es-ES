@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1c6a148c6ee332800a80e0ca9f3aea8403d2053b
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 993516c20629ddf4466325c547cd9208440dc41d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360038"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573924"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Ver y organizar la lista de Microsoft Defender para dispositivos de punto de conexión
 
@@ -50,7 +50,7 @@ Durante el proceso de incorporación, la lista **de** dispositivos se rellena gr
 >[!NOTE]
 > Si exportas la lista de dispositivos, contendrá todos los dispositivos de tu organización. Puede tardar mucho tiempo en descargarse, según el tamaño de la organización. Al exportar la lista en formato CSV, se muestran los datos sin filtrar. El archivo CSV incluirá todos los dispositivos de la organización, independientemente de cualquier filtrado aplicado en la vista en sí.
 
-![Imagen de la lista de dispositivos con lista de dispositivos](images/device-inventory.png)
+![Imagen de la lista de dispositivos con lista de dispositivos.](images/device-inventory.png)
 
 ## <a name="sort-and-filter-the-device-list"></a>Ordenar y filtrar la lista de dispositivos
 

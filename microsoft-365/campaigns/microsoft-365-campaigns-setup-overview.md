@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Introducción a la configuración Microsoft 365 Empresa Premium para campañas u otras empresas
-ms.openlocfilehash: a31a0046bd37b7bb905f96d054ea5c9809e744fa
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 41d3f0829829233c70e091f27225f7756a0e4f46
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378018"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567125"
 ---
 # <a name="set-up-microsoft-365"></a>Configurar Microsoft 365
 
@@ -40,7 +40,7 @@ En este artículo se describe el proceso de configuración de Microsoft 365. Cua
 
 En el siguiente diagrama se describe cómo los administradores se Microsoft 365.
 
-![Pasos para configurar Microsoft 365](../media/M365-democracy-SetUpProcess.png)
+![Pasos para configurar Microsoft 365.](../media/M365-democracy-SetUpProcess.png)
 
 Para las campañas que califican para precios especiales, empezar solicitando una invitación de [Microsoft](https://m365forcampaigns.microsoft.com/)y, a continuación, registrarse [para Microsoft 365 campañas](m365-campaigns-sign-up.md). Para completar la instalación, [ejecute el Asistente para la](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) instalación para configurar la configuración principal.
 
@@ -52,7 +52,7 @@ Para todas las organizaciones, aumente la protección de seguridad [mediante:](m
 
 Los usuarios tendrán que tardar unos minutos en configurar dispositivos para que funcionen con este entorno. Para los usuarios clave (aquellos que son los destinos de mayor valor para los hackers), puedes configurar y configurar previamente nuevos dispositivos. Esto les ayuda a empezar a iniciar sesión con sus Microsoft 365 credenciales.
 
-![Proceso de configuración de dispositivos de usuario](../media/m365-democracy-user-device-setup.png)
+![Proceso de configuración del dispositivo de usuario.](../media/m365-democracy-user-device-setup.png)
   
 Para configurar dispositivos de usuario:
 

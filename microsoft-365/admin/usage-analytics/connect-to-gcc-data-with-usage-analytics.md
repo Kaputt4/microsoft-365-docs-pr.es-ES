@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtenga información sobre cómo conectarse a los datos del espacio empresarial Microsoft 365 Government Community Cloud (GCC) mediante la aplicación de plantilla Microsoft 365 análisis de uso en Power BI.
-ms.openlocfilehash: e831cae78c90eeafae38117b6939d506f37632f30e3bd456ca9242b9d81c402c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a0ea6985b9f9d09498e4ad086bf89f529b24c17
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53907216"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567161"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Conectar para Microsoft 365 Government Community Cloud datos (GCC) con Análisis de uso
 
@@ -50,7 +50,7 @@ Para configurar inicialmente Microsoft 365 análisis de uso:
 2. En la **página Informes de** uso, en la Microsoft 365 Análisis de uso, seleccione **Introducción**. 
 3. En **Habilitar Power BI para análisis** de uso, seleccione Hacer que los datos de uso de la organización estén disponibles para el análisis de uso de Microsoft para **Power BI** y, a continuación, seleccione **Guardar**.
 
-    ![Hacer que los datos del espacio empresarial estén disponibles](../../media/usage-analytics/make-data-available.png) 
+    ![Haga que los datos del espacio empresarial estén disponibles.](../../media/usage-analytics/make-data-available.png) 
 
 
 
@@ -58,7 +58,7 @@ Para configurar inicialmente Microsoft 365 análisis de uso:
 
 4. Cuando los datos de la organización estén listos, la actualización de la página mostrará un mensaje que indica que los datos ya están disponibles y también proporcionará su número **de identificador de** inquilino. Deberá usar el identificador de inquilino en un paso posterior cuando intente conectarse a los datos del espacio empresarial. 
  
-    ![Identificación del inquilino](../../media/usage-analytics/tenant-id-gcc.png) 
+    ![Identificador del inquilino.](../../media/usage-analytics/tenant-id-gcc.png) 
  
     > [!IMPORTANT]
     > Cuando los datos estén disponibles, no seleccione **Ir a Power BI**, lo que le llevará al Power BI Marketplace.  La aplicación de plantilla para este informe requerida por GCC inquilinos no está disponible en el Power BI Marketplace.  
@@ -74,13 +74,13 @@ Microsoft 365 GCC los usuarios pueden descargar y usar el archivo de plantilla d
 1. Después de descargar la [Power BI ,](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)ábrala con Power BI Desktop. 
 2. Cuando se le pida un **TenantID,** escriba el identificador de inquilino que recibió al preparar los datos de la organización para este informe en el paso 1. A continuación, **seleccione Cargar**. Los datos tardarán varios minutos en cargarse. 
 
-    ![Escriba el identificador de inquilino](../../media/usage-analytics/add-tenant-id.png) 
+    ![Escriba el identificador de inquilino.](../../media/usage-analytics/add-tenant-id.png) 
 
 
 
 3. Cuando se complete la carga, se mostrará el informe y verá un resumen ejecutivo de los datos. 
 
-    ![Resumen ejecutivo](../../media/usage-analytics/exec-summary.png) 
+    ![Resumen ejecutivo.](../../media/usage-analytics/exec-summary.png) 
  
 
 4. Guarde los cambios en el informe. 

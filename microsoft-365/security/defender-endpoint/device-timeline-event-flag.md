@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74bfa73ff9c647a0e6979eb18b06342fe2bea1ed
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 92d9a6dabc2d8f6251b46d58207170d0c460aa90
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532948"
+ms.locfileid: "58567185"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión
 
@@ -47,6 +47,8 @@ Al navegar por la escala de tiempo del dispositivo, puedes buscar y filtrar even
 ## <a name="flag-an-event"></a>Marcar un evento
 
 1. Buscar el evento que desea marcar
+2. Haga clic en el icono de marca de la columna Marca. 
+![Imagen de la marca de escala de tiempo del dispositivo.](images/device-flags.png)
 2. Haga clic en el icono de marca de la columna Marca.
 
    ![Imagen de la marca de escala de tiempo del dispositivo](images/device-flags.png)
@@ -54,6 +56,9 @@ Al navegar por la escala de tiempo del dispositivo, puedes buscar y filtrar even
 ## <a name="view-flagged-events"></a>Ver eventos marcados
 
 1. En la sección **Filtros de** escala de tiempo, habilite **Eventos marcados**.
+2. Haga clic en **Aplicar**. Solo se muestran los eventos marcados.
+Puede aplicar filtros adicionales haciendo clic en la barra de horas. Solo se mostrarán los eventos anteriores al evento marcado.  
+![Imagen de la marca de escala de tiempo del dispositivo con el filtro en.](images/device-flag-filter.png)
 2. Haga clic en **Aplicar**. Solo se muestran los eventos marcados. Puede aplicar filtros adicionales haciendo clic en la barra de horas. Solo se mostrarán los eventos anteriores al evento marcado.
 
    ![Imagen de la marca de escala de tiempo del dispositivo con el filtro en](images/device-flag-filter.png)

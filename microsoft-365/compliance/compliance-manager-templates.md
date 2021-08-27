@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo Excel formato.
-ms.openlocfilehash: fe6b8a946edb84fbeb5eb002eb33c4af2790b23b
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 9031d94bfe3c9fba0ba53e23c229a6b207d0e4b2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393369"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567065"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Trabajar con plantillas de evaluación en el Administrador de cumplimiento
 
@@ -159,7 +159,7 @@ Se **requiere la pestaña** Acciones.  Designa acciones de mejora administradas 
 
 - **actionScore:** en este campo obligatorio, proporcione un valor de puntuación numérico para la acción. El valor debe ser un número entero que va de 1 a 99; no puede ser 0, nulo o en blanco. Cuanto mayor sea el número, mayor será su valor para mejorar la posición de cumplimiento. En la imagen siguiente se muestra cómo puntua el Administrador de cumplimiento los controles:
 
-  ![El Administrador de cumplimiento controla los valores de puntos](../media/compliance-score-action-scoring.png "El Administrador de cumplimiento controla los valores de puntos")
+  ![El Administrador de cumplimiento controla los valores de puntos.](../media/compliance-score-action-scoring.png "El Administrador de cumplimiento controla los valores de puntos")
 
 - **actionDescriptionTitle:** este es el título de la descripción y es obligatorio. Este título de descripción te permite tener la misma acción en varias plantillas y mostrar una descripción diferente en cada plantilla.  Este campo le ayuda a aclarar la plantilla a la que hace referencia la descripción. En la mayoría de los casos, puede colocar el nombre de la plantilla que está creando en este campo.
 

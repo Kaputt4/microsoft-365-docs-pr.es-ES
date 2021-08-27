@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ec2057eefc5cb1e8ce59138a1f5a15b7ed0fdd01
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 1e04c9a817bfe799c15e3609e190980bfc4145e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508219"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550291"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender para la API de punto de conexión: Hello World
 
@@ -59,7 +59,7 @@ Para la fase de registro de aplicaciones, debe tener un rol de administrador **g
 
 2. Vaya a **Azure Active Directory** \> **registros de aplicaciones** Nuevo \> **registro**.
 
-   ![Imagen de Microsoft Azure navegación al registro de aplicaciones](images/atp-azure-new-app2.png)
+   ![Imagen de Microsoft Azure navegación al registro de aplicaciones.](images/atp-azure-new-app2.png)
 
 3. En el formulario de registro, elija un nombre para la aplicación y, a continuación, haga clic **en Registrar**.
 
@@ -69,11 +69,11 @@ Para la fase de registro de aplicaciones, debe tener un rol de administrador **g
 
    - **Nota:** WindowsDefenderATP no aparece en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para verlo aparecer.
 
-   ![Imagen de acceso api y selección de API1](images/add-permission.png)
+   ![Imagen de acceso a la API y selección de API1.](images/add-permission.png)
 
    - Elija **Permisos de aplicación** \> **Alert.Read.All** > Haga clic en Agregar **permisos**
 
-   ![Imagen de acceso a la API y selección de API2](images/application-permissions.png)
+   ![Imagen de acceso a la API y selección de API2.](images/application-permissions.png)
 
    **Nota importante:** Debe seleccionar los permisos pertinentes. "Leer todas las alertas" es solo un ejemplo.
 
@@ -87,7 +87,7 @@ Para la fase de registro de aplicaciones, debe tener un rol de administrador **g
 
    - **Nota:** Cada vez que agregue permiso, debe hacer clic en **Conceder consentimiento** para que el nuevo permiso suba a efecto.
 
-   ![Imagen de concesión de permisos](images/grant-consent.png)
+   ![Imagen de Conceder permisos.](images/grant-consent.png)
 
 6. Agregue un secreto a la aplicación.
 
@@ -95,13 +95,13 @@ Para la fase de registro de aplicaciones, debe tener un rol de administrador **g
 
     **Importante:** Después de hacer clic en Agregar, **copie el valor secreto generado**. No podrás recuperarlo después de salir.
 
-    ![Imagen de crear clave de aplicación](images/webapp-create-key2.png)
+    ![Imagen de crear clave de aplicación.](images/webapp-create-key2.png)
 
 7. Anote el identificador de la aplicación y el identificador de inquilino:
 
    - En la página de la aplicación, vaya a **Información general** y copie lo siguiente:
 
-   ![Imagen del identificador de aplicación creado](images/app-and-tenant-ids.png)
+   ![Imagen del identificador de aplicación creado.](images/app-and-tenant-ids.png)
 
 ¡Listo! Ha registrado correctamente una aplicación.
 
@@ -139,7 +139,7 @@ Para la fase de registro de aplicaciones, debe tener un rol de administrador **g
   - Pegue en el cuadro superior.
   - Busque la sección "roles". Busque el rol Alert.Read.All.
 
-  ![Imagen jwt.ms](images/api-jwt-ms.png)
+  ![Imagen jwt.ms.](images/api-jwt-ms.png)
 
 ### <a name="lets-get-the-alerts"></a>Vamos a obtener las alertas.
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77d3968e0eb96d100149582f021da2f050c12262f26628beee2c60c097a435cd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9c61d870f15536ceadd000da5d9123e0dd918e5
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800479"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611276"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Crear una aplicación para tener acceso a Microsoft Defender para endpoint sin un usuario
 
@@ -52,22 +52,22 @@ En este artículo se explica cómo crear una aplicación de Azure AD, obtener un
 
 1. Inicie sesión en [Azure](https://portal.azure.com) con un usuario que tenga el rol **De administrador** global.
 
-2. Vaya a **Azure Active Directory**  >  **registros de aplicaciones** Nuevo  >  **registro**. 
+2. Vaya a **Azure Active Directory** \> **registros de aplicaciones** Nuevo \> **registro**. 
 
-   ![Imagen de Microsoft Azure navegación al registro de aplicaciones](images/atp-azure-new-app2.png)
+   ![Imagen de Microsoft Azure navegación al registro de aplicaciones.](images/atp-azure-new-app2.png)
 
 3. En el formulario de registro, elija un nombre para la aplicación y, a continuación, **seleccione Registrar**.
 
-4. Para habilitar la aplicación para tener acceso a Defender for Endpoint y asignarle el permiso **"Leer** todas las **alertas",** en la página de la aplicación, seleccione Permisos de api Agregar api de permisos que mi organización usa >, escriba WindowsDefenderATP y, a continuación,  >    >   **seleccione WindowsDefenderATP**. 
+4. Para habilitar la aplicación para tener acceso a Defender for Endpoint y asignarle el permiso **"Leer** todas las **alertas",** en la página de la aplicación, seleccione Permisos de api Agregar api de permisos que mi organización usa >, escriba WindowsDefenderATP y, a continuación, \>  \>  **seleccione WindowsDefenderATP**. 
 
    > [!NOTE]
    > *WindowsDefenderATP* no aparece en la lista original. Comience a escribir su nombre en el cuadro de texto para verlo aparecer.
 
-   ![agregar permiso](images/add-permission.png)
+   ![agregar permiso.](images/add-permission.png)
 
-   - Seleccione **Permisos de aplicación**  >  **Alert.Read.All** y, a continuación, seleccione Agregar **permisos**.
+   - Seleccione **Permisos de aplicación** \> **Alert.Read.All** y, a continuación, seleccione Agregar **permisos**.
 
-   ![permiso de la aplicación](images/application-permissions.png)
+   ![permiso de la aplicación.](images/application-permissions.png)
 
      Debe seleccionar los permisos pertinentes. "Leer todas las alertas" es solo un ejemplo. Por ejemplo:
 
@@ -80,18 +80,18 @@ En este artículo se explica cómo crear una aplicación de Azure AD, obtener un
      > [!NOTE]
      > Cada vez que agregue un permiso, debe seleccionar Conceder **consentimiento** para que el nuevo permiso suba a efecto.
 
-    ![Conceder permisos](images/grant-consent.png)
+    ![Conceder permisos.](images/grant-consent.png)
 
 6. Para agregar un secreto a la aplicación, seleccione Certificados **& secretos,** agregue una descripción al secreto y, a continuación, **seleccione Agregar**.
 
     > [!NOTE]
     > Después de seleccionar **Agregar**, seleccione **copiar el valor secreto generado**. No podrá recuperar este valor después de salir.
 
-    ![Imagen de crear clave de aplicación](images/webapp-create-key2.png)
+    ![Imagen de crear clave de aplicación.](images/webapp-create-key2.png)
 
 7. Anote el identificador de aplicación y el identificador de inquilino. En la página de la aplicación, vaya a **Información general** y copie lo siguiente.
 
-   ![Imagen del identificador de aplicación creado](images/app-and-tenant-ids.png)
+   ![Imagen del identificador de aplicación creado.](images/app-and-tenant-ids.png)
 
 8. **Solo para Microsoft Defender para socios de punto de conexión**. Establece la aplicación para que sea multiinquilino (disponible en todos los inquilinos después del consentimiento). Esto es **necesario para** aplicaciones de terceros (por ejemplo, si creas una aplicación destinada a ejecutarse en el inquilino de varios clientes). Esto no **es** necesario si crea un servicio que desea ejecutar solo en el espacio empresarial (por ejemplo, si crea una aplicación para su propio uso que solo interactuará con sus propios datos). Para establecer la aplicación como multiinquilino:
 
@@ -181,7 +181,7 @@ Consulta [Obtener token con Python](run-advanced-query-sample-python.md#get-toke
 1. Abra un símbolo del sistema y establezca CLIENT_ID en el identificador de la aplicación de Azure.
 1. Establece CLIENT_SECRET en el secreto de la aplicación de Azure.
 1. Establece TENANT_ID en el identificador de inquilino de Azure del cliente que desea usar la aplicación para tener acceso a Defender for Endpoint.
-1. Ejecute el comando siguiente:
+1. Ejecute el siguiente comando:
 
 ```
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
@@ -201,7 +201,7 @@ Asegúrese de que obtuvo el token correcto:
 1. Validar que obtiene una notificación de "roles" con los permisos deseados
 1. En la siguiente imagen, puedes ver un token descodificado adquirido desde una aplicación con permisos para todos los roles de Microsoft Defender para endpoint:
 
-![Imagen de validación de tokens](images/webapp-decoded-token.png)
+![Imagen de validación de tokens.](images/webapp-decoded-token.png)
 
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Usar el token para obtener acceso a la API de Microsoft Defender para endpoint
 

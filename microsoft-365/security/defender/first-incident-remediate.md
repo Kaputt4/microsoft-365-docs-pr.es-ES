@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 787fd55e9ad17607cfa0fa5f787a279bb0e2d1839d2029b9a7ec6a4bb5f1b65a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 954fa4d9879e9654847f50ad15f8ff3c3a88caf4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838973"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573868"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corregir el primer incidente
 
@@ -68,7 +68,7 @@ Continuando con el ejemplo [de Detectar, analizar](first-incident-analyze.md#ana
 7. Crear un indicador personalizado en Microsoft Defender para endpoint para bloquear una dirección IP de Tor
 8. Cree una acción de gobierno en Microsoft Cloud App Security para este tipo de alerta, como las que se muestran en la siguiente imagen:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Ejemplo de acciones de gobierno en el portal Microsoft Cloud App Security web"::: 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Ejemplo de acciones de gobierno en el portal Microsoft Cloud App Security web."::: 
  
 La mayoría de las acciones de corrección se pueden aplicar y realizar un seguimiento en Microsoft 365 Defender. 
 
@@ -85,17 +85,17 @@ Los playbooks usan Power Automate para crear flujos de automatización de proces
 
 Por ejemplo:
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Ejemplo de un flujo Power Automate automatización de procesos robotizados personalizados"::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Ejemplo de un flujo Power Automate automatización de procesos robotizados personalizados."::: 
  
 Los libros de reproducción también se pueden crear durante [la revisión posterior al](first-incident-post.md) incidente para crear acciones de corrección a partir de incidentes para acciones de corrección más rápidas. 
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 3: Aprender a realizar una revisión posterior al incidente de un incidente](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
+[![Paso 3: Aprenda a realizar una revisión posterior al incidente de un incidente.](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 
 Obtenga información sobre cómo [realizar una revisión posterior al incidente de un incidente](first-incident-post.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

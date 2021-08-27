@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 232cb81080a8d478b57b2f87a8b98752e51b0c20
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f5ef47fd03614c34e9cb459442e8c1f2a144f4b8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258642"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573888"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Proporcionar acceso al proveedor de servicios de seguridad administrado (MSSP) 
 
@@ -58,7 +58,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Para habilitar RBAC en el portal de Microsoft 365 Defender del cliente, acceda a permisos > roles de puntos de conexión & grupos > **Roles** con una cuenta de usuario con derechos de administrador global o administrador de seguridad.
 
-    ![Imagen del acceso de MSSP](../../media/mssp-access.png)
+    ![Imagen del acceso de MSSP.](../../media/mssp-access.png)
 
     A continuación, cree roles RBAC para satisfacer las necesidades de nivel SOC de MSSP. Vincule estos roles a los grupos de usuarios creados mediante "Grupos de usuarios asignados".
 
@@ -86,7 +86,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Para ello, en el inquilino de AD del cliente, acceda a Identity Governance: Catalogs y agregue **New Catalog**. En nuestro ejemplo, lo llamaremos **MSSP Accesses**.
 
-    ![Imagen del nuevo catálogo](../../media/goverance-catalog.png)
+    ![Imagen del nuevo catálogo.](../../media/goverance-catalog.png)
 
     Para obtener más información, vea [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
@@ -101,7 +101,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
     - Los usuarios solo pueden solicitarlo en el inquilino soc de MSSP
     - Access auto expira después de 365 días
 
-    ![Imagen del nuevo paquete de acceso](../../media/new-access-package.png)
+    ![Imagen del nuevo paquete de acceso.](../../media/new-access-package.png)
 
     Para obtener más información, vea [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
@@ -109,7 +109,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Los analistas de SOC de MSSP usan el vínculo Portal de My Access para solicitar acceso a través de los paquetes de acceso creados. El vínculo es duradero, lo que significa que el mismo vínculo puede usarse con el tiempo para los nuevos analistas. La solicitud de analista entra en una cola para su aprobación por parte de los aprobadores de analistas de **MSSP**.
 
-    ![Imagen de las propiedades de access](../../media/access-properties.png)
+    ![Imagen de las propiedades de acceso.](../../media/access-properties.png)
 
     El vínculo se encuentra en la página de información general de cada paquete de acceso.
 
