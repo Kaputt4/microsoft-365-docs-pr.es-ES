@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instrucciones para especificar información sobre ofertas de servicio, incluidos el nombre del servicio, la descripción, la ubicación, la duración y los precios. También puede etiquetar a los empleados que están cualificados para proporcionar el servicio.
-ms.openlocfilehash: 8a287e08a64fd2f7ca94e83f7b99c277f9e0124673697b202eda9ad86b0ff9e4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: acf7f7be1a5c5d70215406ec0a3f375eb0dfa89d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804031"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572364"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definir las ofertas de servicio en Bookings
 
@@ -39,7 +39,7 @@ También puede agregar información personalizada y direcciones URL a la confirm
         - Un vínculo a una reunión de Teams o Skype, única para la reserva, se agregará al evento de calendario en los calendarios del personal y de los clientes, junto con la información de acceso telefónico.
         - El vínculo para unirse a la reunión se agregará a todos los correos electrónicos de confirmación y aviso, como se muestra en el siguiente ejemplo:
 
-        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Ejemplo de vínculo para unirse Teams reunión en Bookings":::
+        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Ejemplo de vínculo para unirse Teams reunión en Bookings.":::
 
         > [!NOTE]
         > Teams reuniones pueden unirse a través de la aplicación móvil de Teams, la aplicación de escritorio de Teams, en un explorador web o a través del acceso telefónico telefónico. Recomendamos encarecidamente habilitar Teams como el servicio de reuniones en línea predeterminado para su inquilino, para obtener la mejor experiencia al reservar citas virtuales.
@@ -62,7 +62,7 @@ También puede agregar información personalizada y direcciones URL a la confirm
         - **Cancelar reserva** Esto cancela la reserva y la quita del calendario del personal.
         - **Nueva reserva** Esta opción lleva al usuario a la Self-Service con todos los servicios y el personal enumerados, para programar una nueva reserva.
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="El botón Administrar reservas en Bookings":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="El botón Administrar reservas en Bookings.":::
 
         Solo se recomienda dejar esta configuración habilitada si se siente cómodo con los clientes que acceden a la Self-Service web.
 
@@ -74,7 +74,7 @@ También puede agregar información personalizada y direcciones URL a la confirm
 
 9. **Máximo de asistentes por evento** Esta configuración le permite crear servicios que requieren la capacidad de varias personas para reservar la misma hora de cita y el mismo personal (como una clase de fitness). La franja horaria de cita para el servicio, el personal y la hora seleccionados estarán disponibles para reservar hasta que se haya alcanzado el número máximo de asistentes, especificado por usted. La capacidad y los asistentes a citas actuales se pueden ver en la pestaña Calendario de la aplicación web de Bookings.
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Ejemplo de configuración de asistentes máximos en Bookings":::
+    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Ejemplo de configuración del número máximo de asistentes en Bookings.":::
 
 10. **Precio predeterminado**  Este es el precio que se mostrará en la Self-Service página. Si **el precio no establecido** está seleccionado, no aparecerá ningún precio ni referencia al costo o al precio.
 
@@ -92,21 +92,21 @@ También puede agregar información personalizada y direcciones URL a la confirm
 
     - Los correos electrónicos de confirmación y aviso predeterminados incluyen información básica sobre la cita, como el nombre del cliente o cliente, el nombre del miembro del personal, el servicio o la cita reservada y la hora de la cita. Para las reuniones en línea, también se incluirá un vínculo para unirse. También se puede incluir la capacidad de administrar la reserva, si esta configuración está habilitada (como se describe anteriormente en el paso 8).
 
-        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Un correo electrónico de confirmación de Bookings":::
+        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Un correo electrónico de confirmación de Bookings.":::
 
     - Opcionalmente, puede incluir cualquier texto adicional que quiera aquí, como información sobre la reprogramación o lo que los clientes deben traer para la cita. A continuación se muestra un ejemplo de texto personalizado agregado al correo electrónico de confirmación original, que se muestra en el **campo Información adicional para** confirmación de correo electrónico:
 
-        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Información adicional en un correo electrónico de Bookings":::
+        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Información adicional en un correo electrónico de Bookings.":::
 
 14. **Habilitar notificaciones de mensajes de texto para el cliente** Si se selecciona, los mensajes SMS se envían al cliente, pero solo si optan por participar.
 
     - Cuadro de suscripción en la página manual de reserva y Self-Service:
 
-        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="El cuadro de suscripción en Bookings":::
+        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="El cuadro de suscripción en Bookings.":::
 
     - Las notificaciones de mensajes de texto tendrán un aspecto parecido al siguiente (tenga en cuenta que las notificaciones SMS solo están disponibles actualmente en Norteamérica):
 
-        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Una notificación de texto de Bookings":::
+        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Una notificación de texto de Bookings.":::
 
 15. **Opciones de publicación** Elige si este servicio aparece como reservable en la página Self-Service o para que el servicio se pueda reservar solo en la pestaña Calendario de la aplicación web de Bookings.
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: 'Obtenga información sobre cómo agregar varios usuarios a Microsoft 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Microsoft 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón Microsoft 365 correo. '
-ms.openlocfilehash: bb0ed6212cde61693024bcd2fdca9f1d6c3f42dbb063f67324be3d87219f46cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5df43af8d01dce11c063b3d29fb2323b997580bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835420"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572700"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Agregar varios usuarios al mismo tiempo a Microsoft 365: Ayuda para administradores
 
@@ -88,11 +88,11 @@ Puede descargar [esta hoja de cálculo de muestra](https://www.microsoft.com/dow
   
 Guarde el archivo con un nuevo nombre y especifique el formato CSV.
   
-![Imagen de cómo guardar un archivo de Excel en formato CSV](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
+![Una imagen de cómo guardar un archivo en Excel en formato CSV.](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
   
 Cuando guarde el archivo, probablemente recibirá un mensaje que le informará de que se perderán algunas características del libro si guarda el archivo en formato CSV. No pasa nada. Haga clic en **Sí** para continuar.
   
-![Imagen del mensaje que obtendría en Excel que pregunta si realmente quiere guardar el archivo como formato CSV](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
+![Una imagen del mensaje que puedes obtener de Excel preguntar si realmente quieres guardar el archivo como formato CSV.](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Consejos para aplicar formato a la hoja de cálculo
 

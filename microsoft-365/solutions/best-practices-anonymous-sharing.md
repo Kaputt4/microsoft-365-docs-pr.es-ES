@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: 6aba41705f519e973447653b2a4c9b32b97e43bc44864374b142955c45c17d11
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 19791a532b6ea9a7167ac85dfe1eb1b58b9f8f1b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857187"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575677"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
@@ -45,7 +45,7 @@ Establezca una fecha de expiración para los vínculos para Cualquiera a través
 1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
 2. En el panel de navegación izquierdo, expanda **Directivas** y haga clic en **Uso compartido**.
 3. En la **Elegir opciones de permisos y expiración para vínculos para Cualquiera**, seleccione la casilla **Los vínculos deben expirar dentro de este número de días**.</br>
-   ![Captura de pantalla de la configuración de los vínculos para Cualquiera en el nivel de organización de SharePoint](../media/sharepoint-organization-anyone-link-expiration.png)
+   ![Captura de pantalla de la configuración de los vínculos para cualquier usuario en el nivel de organización de SharePoint.](../media/sharepoint-organization-anyone-link-expiration.png)
 4. Escriba un número de días en el cuadro y después haga clic en **Guardar**.
 
 Establezca una fecha de expiración para los vínculos para Cualquiera de un sitio concreto
@@ -54,7 +54,7 @@ Establezca una fecha de expiración para los vínculos para Cualquiera de un sit
 2. En el panel de navegación izquierdo, expanda **Sitios** y, después, haga clic en **Sitios activos**.
 3. Seleccione el sitio web que quiera cambiar y haga clic en **Uso compartido**.
 4. En **Configuración avanzada para los vínculos para Cualquiera**, en **Expiración de los vínculos para Cualquiera**, desactive la casilla **Igual que la configuración de nivel de organización**.</br>
-   ![Recorte de pantalla de la configuración de la expiración de los vínculos para Cualquiera en el nivel del sitio de SharePoint](../media/sharepoint-organization-anyone-link-expiration-site.png)
+   ![Recorte de pantalla de la configuración de la expiración de los vínculos para cualquier usuario en el nivel del sitio de SharePoint.](../media/sharepoint-organization-anyone-link-expiration-site.png)
 5. Seleccione la opción **Los vínculos deben expirar dentro de este número de días** y escriba un número de días en el cuadro.
 6. Haga clic en **Guardar**.
 
@@ -73,7 +73,7 @@ Establezca los permisos para los vínculos para Cualquiera a través de la organ
 1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
 2. En el panel de navegación izquierdo, haga clic en **Uso compartido**.
 3. En **Configuración avanzada de vínculos para "Cualquiera"**, seleccione los permisos de los archivos y carpetas que quiera usar.</br>
-   ![Captura de pantalla de la configuración de permisos de los vínculos para Cualquiera en el nivel de organización de SharePoint](../media/sharepoint-organization-anyone-link-permissions.png)
+   ![Captura de pantalla de la configuración de permisos de los vínculos para cualquier usuario en el nivel de organización de SharePoint.](../media/sharepoint-organization-anyone-link-permissions.png)
 
 Con los vínculos para *Cualquiera* que se establecen en **Vista**, los usuarios pueden seguir compartiendo archivos y carpetas con los invitados y concederles permisos de edición mediante vínculos para *Personas específicas*. Estos vínculos requieren la autenticación de los usuarios externos a la organización. Puede realizar un seguimiento de la actividad de los invitados en los archivos y carpetas compartidos con dichos vínculos.
 
@@ -88,7 +88,7 @@ Para establecer el vínculo de uso compartido de archivos y carpetas predetermin
 2. En el panel de navegación izquierdo, haga clic en **Uso compartido**.
 3. En **Vínculos de archivos y carpetas**, seleccione **Solo personas de la organización**.
 
-   ![Recorte de pantalla de la configuración del tipo de vínculo predeterminado de SharePoint](../media/sharepoint-default-sharing-link-company-link.png)
+   ![Captura de pantalla de la configuración del tipo de vínculo predeterminado de SharePoint.](../media/sharepoint-default-sharing-link-company-link.png)
 
 4. Haga clic en **Guardar**
 
@@ -98,7 +98,7 @@ Para establecer el vínculo de uso compartido de archivos y carpetas predetermin
 3. Seleccione el sitio web que quiera cambiar y haga clic en **Uso compartido**.
 4. En **Tipo de vínculo de uso compartido predeterminado**, desactive la casilla **Igual que la configuración de nivel de organización**.
 
-   ![Recorte de pantalla de la configuración del tipo de vínculo predeterminado para el nivel del sitio de SharePoint](../media/sharepoint-organization-anyone-link-permissions-site.png)
+   ![Recorte de pantalla de la configuración del tipo de vínculo predeterminado para el nivel del sitio de SharePoint.](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
 5. Seleccione la opción **Solo personas de la organización** y haga clic en **Guardar**.
 
@@ -122,7 +122,7 @@ Crear una regla DLP
 10. En **Acciones** haga clic en **Agregar una acción** y elija **Restringir el acceso o cifrar el contenido en la ubicaciones de Microsoft 365**.
 11. Active la casilla **Restringir el acceso o cifrar el contenido de las ubicaciones de Microsoft 365** y, después, elija la opción **Solo personas a las que se les ha concedido el acceso al contenido mediante las opciones "Cualquiera con el vínculo"**.
 
-      ![Recorte de pantalla de las opciones de acción de reglas DLP](../media/limit-accidental-exposure-dlp-anyone-links.png)
+      ![Recorte de pantalla de las opciones de acción de reglas DLP.](../media/limit-accidental-exposure-dlp-anyone-links.png)
 
 12. Haga clic en **Guardar** y, a continuación, en **Siguiente**.
 13. Elija las opciones de prueba y haga clic en **Siguiente**.
@@ -137,7 +137,7 @@ Para activar los datos adjuntos seguros
 2. Haga clic en **Configuración global**.
 3. Habilite ATP para SharePoint, OneDrive y Microsoft Teams.
 
-   ![Recorte de pantalla de la opción datos adjuntos seguros en el Centro de seguridad y cumplimiento](../media/safe-attachments-setting.png)
+   ![Captura de pantalla de la opción datos adjuntos seguros en el Centro de seguridad y cumplimiento.](../media/safe-attachments-setting.png)
 
 4. De manera opcional, habilite también Documentos seguros y, a continuación, haga clic en **Guardar**
 
@@ -155,7 +155,7 @@ Para agregar un pie de página a un archivo con etiqueta
 4. Haga clic en **Siguiente** para ampliar la pestaña **Marcado de contenido** y, a continuación, seleccione **Activar** el marcado de contenido.
 5. Active la casilla de verificación del tipo de texto que desee añadir y después, haga clic en **Personalizar texto**.
 6. Escriba el texto que quiere agregar a sus documentos, seleccione las opciones de texto que desee y después, haga clic en **Guardar**.</br>
-   ![Captura de pantalla de la configuración de marcado de contenido para una etiqueta de sensibilidad](../media/content-marking-for-anonymous-sharing.png)
+   ![Captura de pantalla de la configuración de marcado de contenido para una etiqueta de confidencialidad.](../media/content-marking-for-anonymous-sharing.png)
 7. Haga clic en **Siguiente** para ir al final del asistente y, a continuación, en **Guardar etiqueta**.
 
 Con el marcado de contenido habilitado para la etiqueta, el texto que haya especificado se agregará a los documentos de Office cuando un usuario aplique dicha etiqueta.

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9b097336cadcc4c76c0a9d8026d9a73d079d3572f39dd53a3b98e52caa59cb65
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e50e9b0dfa9119cd3c3f6fe8b45158ca9f8c5cc3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879555"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571042"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Panel de usuarios de administración de riesgos de Insider
 
@@ -69,7 +69,7 @@ Cada usuario que se muestra en el **panel Usuarios** tiene la siguiente informac
 - **Infracciones confirmadas:** el número de casos resueltos como *infracción de directiva confirmada* para el usuario.
 - **Case:** el caso activo actual del usuario.
 
-![Panel de usuarios de administración de riesgos de Insider](../media/insider-risk-users-dashboard.png)
+![Panel de usuarios de administración de riesgos insider.](../media/insider-risk-users-dashboard.png)
 
 > [!NOTE]
 > El número de usuarios que se muestran en el **panel** Usuarios puede ser limitado en algunos casos, según el volumen de alertas activas y las directivas de coincidencia. Los usuarios con alertas  activas se muestran en el panel Usuarios a medida que se generan las alertas y puede haber casos raros cuando se alcanza el número máximo de usuarios mostrados. Si se produce este límite, los usuarios con alertas activas que no se muestran se agregarán al panel Usuarios a medida que se triagen las alertas de usuario existentes. 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 682b7729bbfe49a0889065b9cabcae980e031881
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a8efc37b3ae5177540242bca5fdbeab5f4e613ba
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247371"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576181"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Piloto de Microsoft Defender para punto de conexión
 
@@ -34,7 +34,7 @@ Este artículo le guiará en el proceso de ejecución de un piloto para Microsof
 
 Siga estos pasos para configurar y configurar el piloto de Microsoft Defender para endpoint. 
 
-![Pasos para agregar Microsoft Defender for Identity al entorno de evaluación de Defender](../../media/defender/m365-defender-endpoint-pilot-steps.png)
+![Pasos para agregar Microsoft Defender for Identity al entorno de evaluación de Defender.](../../media/defender/m365-defender-endpoint-pilot-steps.png)
 
 - Paso 1. Comprobar grupo piloto
 - Paso 2. Probar funcionalidades
@@ -83,7 +83,7 @@ Para ejecutar cualquiera de las simulaciones proporcionadas, necesita al menos [
 > [!NOTE]
 > Los archivos de simulación o scripts imitan la actividad de ataque, pero en realidad son benignos y no dañan ni comprometen el dispositivo de prueba.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 [Evaluar Microsoft Cloud App Security](eval-defender-mcas-overview.md)
 
 Vuelva a la introducción a [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)

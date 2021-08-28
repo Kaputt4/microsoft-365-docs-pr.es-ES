@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7863cc2f6ee11f5736fca8077d766a9c1b5ba39819623a3a91bb853bfe09257d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 173135d9cc1ecf45ad5c0485b2bab4bb39b88a5e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863612"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576001"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Incorporar al servicio Microsoft Defender para punto de conexión
 
@@ -39,7 +39,7 @@ Obtenga información sobre las distintas fases de implementación de Microsoft D
 
 La implementación de Defender for Endpoint es un proceso de tres fases:
 
-|[![fase de implementación: preparar](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [Fase 1: Preparación](prepare-deployment.md)|[![fase de implementación: configuración](images/phase-diagrams/setup.png)](production-deployment.md) <br> [Fase 2: Configuración](production-deployment.md)|![fase de implementación: incorporación](images/phase-diagrams/onboard.png) <br> Fase 3: Incorporación|
+|[![fase de implementación: preparar.](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [Fase 1: Preparación](prepare-deployment.md)|[![fase de implementación: configuración](images/phase-diagrams/setup.png)](production-deployment.md) <br> [Fase 2: Configuración](production-deployment.md)|![fase de implementación: incorporación](images/phase-diagrams/onboard.png) <br> Fase 3: Incorporación|
 |---|---|---|
 |||*¡Estás aquí!*|
 
@@ -65,7 +65,7 @@ Después de identificar la arquitectura, deberá decidir qué método de impleme
 
 En la tabla siguiente se enumeran las herramientas disponibles en función del extremo que necesita incorporar.
 
-|Punto de conexión|Opciones de herramientas|
+|Extremo|Opciones de herramientas|
 |---|---|
 |**Windows**|[Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md)|

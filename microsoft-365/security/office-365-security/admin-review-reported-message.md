@@ -13,12 +13,12 @@ ms.collection:
 description: Aprende a revisar los mensajes que se notifican y a enviar comentarios a los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8f278d94235f4fc36e2c05c1cfe8724843f9ff3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: fb023d68e81c5592078bdd89e4826537790e7d53
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258750"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572472"
 ---
 # <a name="admin-review-for-reported-messages"></a>Revisión del administrador para los mensajes de los que se informe
 
@@ -58,7 +58,7 @@ Solo podrá marcar y notificar a los usuarios los resultados de la revisión si 
 3. Seleccione la **lista desplegable Marcar** como y notificar y, a continuación, seleccione **No** se encontraron amenazas, **Suplantación** de identidad o **Correo no deseado.**
 
    > [!div class="mx-imgBorder"]
-   > ![Enviar mensajes desde el portal](../../media/admin-review-send-message-from-portal.png)
+   > ![Enviar mensajes desde el portal.](../../media/admin-review-send-message-from-portal.png)
 
 El mensaje notificado se marcará como falso positivo o falso negativo, y se enviará automáticamente un correo electrónico desde el portal que notificará al usuario que ha notificado el mensaje.
 
@@ -76,6 +76,6 @@ El mensaje notificado se marcará como falso positivo o falso negativo, y se env
     - Pie de página
 
     > [!div class="mx-imgBorder"]
-    > ![Personalizar los mensajes enviados a los usuarios](../../media/admin-review-customize-message.png)
+    > ![Personalizar los mensajes enviados a los usuarios.](../../media/admin-review-customize-message.png)
 
 4. Cuando haya terminado, haga clic en **Guardar**. Para borrar estos valores, haga clic en **Descartar** en la página Envíos de usuario.

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre el centro de temas en Temas Microsoft Viva.
-ms.openlocfilehash: 5373fbf35bd068228aed653535288ada4eb532c52122f01b12a317d3a98713a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5456ef27b23ff36cd1919274424c179f8ec3d683
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840208"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572640"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Introducción al centro de temas en Temas Microsoft Viva
 
@@ -36,11 +36,11 @@ El centro de temas se crea durante la instalación de Viva Topics. Una vez compl
 1. En el Centro de administración de Microsoft 365, seleccione **Configuración** y, a continuación, seleccione **Configuración de la organización**.
 2. En la **pestaña Servicios,** seleccione **Experiencias del tema**.
 
-    ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png)
+    ![Conectar personas al conocimiento.](../media/admin-org-knowledge-options-completed.png)
 
 3. Seleccione la **pestaña Centro de** temas. En **Dirección del sitio** es un vínculo al centro de temas.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png)
+    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-center.png)
 
 ## <a name="home-page"></a>Página principal
 
@@ -54,11 +54,11 @@ En la página principal del centro de temas, puede ver los temas de su organizac
 
 - Conexiones sugeridas: verá los temas enumerados en **We've listed you on these topics. ¿Lo hemos hecho bien?** Estos son temas en los que se ha sugerido la conexión al tema a través de la IA. Por ejemplo, puede ser un autor de un archivo o sitio relacionado. Se le pedirá que confirme que debe mantenerse en la lista como una persona relacionada para el tema.
 
-   ![Conexiones sugeridas](../media/knowledge-management/my-topics.png)
+   ![Conexiones sugeridas.](../media/knowledge-management/my-topics.png)
 
 - Conexiones confirmadas: se trata de temas en los que está anclado en la página del tema o ha confirmado una conexión sugerida al tema. Los temas pasarán de la sección sugerida a confirmada cuando confirme una conexión sugerida.
 
-   ![Temas confirmados](../media/knowledge-management/my-topics-confirmed.png)
+   ![Temas confirmados.](../media/knowledge-management/my-topics-confirmed.png)
 
 Una vez que un usuario confirma su conexión a un tema, el usuario puede realizar modificaciones en la página del tema para seleccionar su conexión. Por ejemplo, pueden proporcionar más información sobre su conexión con el tema.
 
@@ -84,6 +84,6 @@ Si tiene permisos crear y editar temas, puede:
 
 - [Crear nuevos temas:](create-a-topic.md)puede crear nuevos temas para los que no se encontraron a través de la detección, o si las herramientas de inteligencia artificial no encontraron suficiente evidencia para crear un tema.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar temas en el centro de temas](manage-topics.md)

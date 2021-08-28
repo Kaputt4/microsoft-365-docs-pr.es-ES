@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: En este artículo, aprenderá a agregar ubicaciones de satélite y a configurar su espacio empresarial de Microsoft 365 Multi-Geo
-ms.openlocfilehash: 76b6b16a0673495abfe5ce920c7f916d37a43f619eacd1c4a2765989e639295b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c60e590f7eddc7f9e03c4754867600a39879cc49
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794985"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576025"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuración de inquilino de Microsoft 365 Multi-Geo
 
@@ -40,7 +40,7 @@ Debe añadir una ubicación satélite para cada ubicación geográfica donde qui
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-![Captura de pantalla de la página de ubicaciones geográficas en el Centro de administración de SharePoint](../media/sharepoint-multi-geo-admin-center.png)
+![Captura de pantalla de la página de ubicaciones geográficas en SharePoint centro de administración.](../media/sharepoint-multi-geo-admin-center.png)
 
 Para agregar una ubicación de satélite
 
@@ -101,7 +101,7 @@ Los procedimientos de esta sección requieren el [Módulo de Microsoft Azure Act
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![Captura de pantalla de la ventana de PowerShell que muestra set-msoluser](../media/multi-geo-tenant-configuration-image3.png)
+![Captura de pantalla de la ventana de PowerShell que muestra set-msoluser.](../media/multi-geo-tenant-configuration-image3.png)
 
 Se recomienda incluir el establecimiento de la ubicación de datos preferida del usuario como parte del flujo de trabajo de creación de usuarios estándar.
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 85fe3921aab67e9edb1c79c3c1e89caf945e3279d73e1287f7b7b7733ba40ace
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 028c099dc046d6402d187e5bde0a1536e44657a4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862575"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572988"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Detalles y resultados de una investigación automatizada
 
@@ -37,7 +37,7 @@ ms.locfileid: "53862575"
 
 Con Microsoft 365 Defender, cuando [se](m365d-autoir.md) ejecuta una investigación automatizada, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los [permisos necesarios](m365d-action-center.md#required-permissions-for-action-center-tasks), puede ver esos detalles en la vista de detalles de la investigación. Esta vista le proporciona el estado actualizado y la capacidad de aprobar cualquier acción pendiente. 
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Detalles de la investigación":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Detalles de la investigación.":::
 
 ## <a name="new-unified-investigation-page"></a>(¡NUEVO!) Página de investigación unificada
 
@@ -89,13 +89,13 @@ Use una página de detalles de un incidente para ver información detallada sobr
 
 Por ejemplo:
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Detalles del incidente":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Detalles del incidente.":::
 
 ## <a name="investigation-details"></a>Detalles de la investigación
 
 Use la vista detalles de la investigación para ver la actividad pasada, actual y pendiente relacionada con una investigación. Por ejemplo:
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Detalles de la investigación":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Detalles de la investigación.":::
 
 En la vista de detalles de la investigación, puede ver información en las pestañas **gráfico de investigación**, **alertas**, **dispositivos**, **identidades**, **resultados clave**, **entidades**, **registro**, y **acciones pendientes**, que se describen en la siguiente tabla.
 
@@ -106,7 +106,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 |:--------|:--------|
 | **Gráfico de investigación** | Proporciona una representación visual de la investigación. Se muestra una lista de las entidades y se muestran las amenazas, junto con las alertas y si hay acciones pendientes de aprobación.<br/>Puede seleccionar un elemento en el gráfico para ver más detalles. Por ejemplo, al seleccionar el icono  **Evidencia,** te llevará a la pestaña Evidencia, donde puedes ver las entidades detectadas y sus veredictos. |
 | **Alertas** | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones Office, Microsoft Cloud App Security y otras características Microsoft 365 Defender usuario.|
-| **Dispositivos** | Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden [al nivel de automatización de los grupos de dispositivos](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)).) |
+| **Devices** | Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden [al nivel de automatización de los grupos de dispositivos](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)).) |
 | **Buzones** |Enumera los buzones que se verán afectados por las amenazas detectadas.  |
 | **Usuarios**  | Enumera las cuentas de usuario afectadas por las amenazas detectadas. |
 | **Evidencia** | Enumera partes de pruebas generadas por alertas o investigaciones. Incluye veredictos ( Malintencionado , *Sospechoso*, Desconocido o *Sin* amenazas encontradas ) y estado de corrección. |

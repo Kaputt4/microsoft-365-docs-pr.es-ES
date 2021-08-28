@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40301b0fd16b7d0b29b6a89ec009fc07c85b33ba587833866dd2e2b49741f85d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e91f0947f9622c81fb9340c09ea52c85ea567af6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56816532"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572460"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Cómo funciona la investigación automatizada y la respuesta en Microsoft Defender para Office 365
 
@@ -81,11 +81,11 @@ Además de las investigaciones automatizadas desencadenadas por una alerta, el e
 
 Por ejemplo, supongamos que está usando la **vista Malware** en el Explorador. Con las pestañas debajo del gráfico, seleccione la **pestaña Correo** electrónico. Si selecciona uno o más elementos de la lista, se activa el **botón +** Acciones.
 
-![Explorador con mensajes seleccionados](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![Explorador con mensajes seleccionados.](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 Con el **menú** Acciones, puede seleccionar **Activar investigación**.
 
-![Menú Acciones para los mensajes seleccionados](../../media/explorer-malwareview-selectedemails-actions.jpg)
+![Menú Acciones para los mensajes seleccionados.](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
 Al igual que los libros de reproducción desencadenados por una alerta, las investigaciones automáticas que se desencadenan desde una vista en el Explorador incluyen una investigación raíz, pasos para identificar y correlacionar amenazas y acciones recomendadas para mitigar esas amenazas.
 
@@ -95,7 +95,7 @@ Las funcionalidades de AIR en Microsoft Defender para Office 365 [incluyen infor
 
 Por ejemplo, recientemente, una organización estableció una forma de que su equipo de operaciones de seguridad vea alertas de suplantación de identidad notificadas por el usuario que air ya ha procesado. Su solución integra alertas relevantes con el servidor SIEM de la organización y su sistema de administración de casos. La solución reduce en gran medida el número de falsos positivos para que su equipo de operaciones de seguridad pueda centrar su tiempo y esfuerzo en amenazas reales. Para obtener más información sobre esta solución personalizada, vea el blog tech Community: Mejorar la eficacia de su SOC con Microsoft Defender para Office 365 y la API de administración [de O365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Introducción al uso de AIR](office-365-air.md)
 - [Ver acciones de corrección pendientes o completadas](air-review-approve-pending-completed-actions.md)

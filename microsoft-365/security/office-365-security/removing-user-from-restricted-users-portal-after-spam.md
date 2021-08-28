@@ -20,12 +20,12 @@ description: Los administradores pueden aprender a quitar usuarios de la página
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b06cf477ab8d713e0684c0d62567199c6c57cb32
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 774f47c65f98a2e93ee6e50406afe897a315de12
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258701"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572400"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Quitar usuarios bloqueados del portal de Usuarios restringidos en Microsoft 365
 
@@ -97,10 +97,10 @@ La directiva de alerta predeterminada denominada **Usuario con restricción de e
 2. En la página **Directiva de alertas**, busque y seleccione la alerta denominada **Usuario no puede enviar correo electrónico**. Puede ordenar las directivas por nombre o usar el **Cuadro de búsqueda** para buscar la directiva.
 
 3. En el control flotante **Usuario no puede enviar correo electrónico** que aparece, compruebe o configure las siguientes opciones:
-   - **Estado**: Compruebe que la alerta está activada![Activación](../../media/scc-toggle-on.png).
+   - **Estado**: compruebe que la alerta está activada ![Activación](../../media/scc-toggle-on.png).
    - **Destinatarios de correo electrónico**: Haga clic en **Editar** y compruebe o configure las siguientes opciones en el control flotante **Editar destinatarios** que aparece:
      - **Enviar notificaciones por correo electrónico**: compruebe que está seleccionado (**Activado**).
-     - **Destinatarios de correo electrónico**: El valor predeterminado es **TenantAdmins** (lo que significa miembros de **Administrador global**). Para agregar más destinatarios, haga clic en un área en blanco del cuadro. Se mostrará una lista de destinatarios y puede empezar a escribir un nombre para filtrar y seleccionar un destinatario. Para quitar un destinatario existente del cuadro, haga clic en el ![Icono quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto a su nombre.
+     - **Destinatarios de correo electrónico**: El valor predeterminado es **TenantAdmins** (lo que significa miembros de **Administrador global**). Para agregar más destinatarios, haga clic en un área en blanco del cuadro. Se mostrará una lista de destinatarios y puede empezar a escribir un nombre para filtrar y seleccionar un destinatario. Para quitar un destinatario existente del cuadro, haga clic en el ![Icono Quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto a su nombre.
      - **Límite diario de notificaciones**: El valor predeterminado es **Sin límite**, pero puede seleccionar un límite para el número máximo de notificaciones al día.
 
      Cuando haya terminado, haga clic en **Guardar**.

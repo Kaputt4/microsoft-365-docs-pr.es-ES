@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Information Protection: crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: 4b37aeecabdeaef3afebb7144330a5c9df811729
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 2851fd356efe4405d4355547f364f4a147cb26d0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508123"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571428"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -54,14 +54,14 @@ El administrador global de su organización tiene permisos totales para crear y 
 
     Por ejemplo, desde el centro de cumplimiento de Microsoft 365:
 
-    ![Creación de una etiqueta de confidencialidad](../media/create-sensitivity-label-full.png)
+    ![Cree una etiqueta de confidencialidad.](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
     > De forma predeterminada, los inquilinos no tienen etiquetas, por lo que deben crearse. En la imagen de ejemplo se muestran etiquetas predeterminadas que se [migraron de Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
 
 3. En la página **Definir el ámbito para esta etiqueta**, las opciones seleccionadas determinan el ámbito de la etiqueta para las opciones de configuración que puede configurar y donde serán visibles cuando se publiquen:
 
-    ![Ámbitos para etiquetas de confidencialidad](../media/sensitivity-labels-scopes.png)
+    ![Ámbitos para etiquetas de confidencialidad.](../media/sensitivity-labels-scopes.png)
 
     - Si está seleccionada la opción **Archivos y mensajes de correo electrónico**, puede configurar en este asistente las opciones que correspondan a aplicaciones que admiten etiquetas de confidencialidad, como Office Word y Outlook. Si esta opción no está seleccionada, el asistente mostrará la primera página de estas opciones de configuración, pero no podrá configurarlas, y las etiquetas no estarán disponibles para que los usuarios puedan seleccionarlas en estas aplicaciones.
 
@@ -79,7 +79,7 @@ El administrador global de su organización tiene permisos totales para crear y 
 
 Para editar una etiqueta existente, selecciónela, y luego seleccione el botón **Editar etiqueta**:
 
-![Botón Editar etiqueta para editar una etiqueta de confidencialidad](../media/edit-sensitivity-label-full.png)
+![Botón Editar etiqueta para editar una etiqueta de confidencialidad.](../media/edit-sensitivity-label-full.png)
 
 Este botón inicia el asistente para **Editar etiquetas de confidencialidad**, lo que le permite cambiar todas las configuraciones de la etiqueta en el paso 4.
 
@@ -147,7 +147,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     Por ejemplo, desde el centro de cumplimiento de Microsoft 365:
 
-    ![Publicar etiquetas](../media/publish-sensitivity-labels-full.png)
+    ![Publique etiquetas.](../media/publish-sensitivity-labels-full.png)
 
     > [!NOTE]
     > De forma predeterminada, los inquilinos no tienen directivas de etiquetas, por lo que deben crearse. 
@@ -175,7 +175,7 @@ Al completar el asistente, se publica automáticamente la directiva de etiqueta.
 
 Para editar una directiva de etiquetas existente, selecciónela y, a continuación, seleccione el botón **Editar directiva**: 
 
-![Edición de una etiqueta de confidencialidad](../media/edit-sensitivity-label-policy-full.png)
+![Edite una etiqueta de confidencialidad.](../media/edit-sensitivity-label-policy-full.png)
 
 Este botón inicia el asistente para **Crear directivas**, que le permite editar las etiquetas que se incluirán y su configuración. Cuando finalice el asistente, todos los cambios se aplicarán automáticamente a los usuarios y servicios seleccionados.
 

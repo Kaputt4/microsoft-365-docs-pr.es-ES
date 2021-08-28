@@ -20,12 +20,12 @@ ms.collection:
 description: Los administradores pueden aprender a elevar la configuración de seguridad y usar informes, alertas e investigaciones para cuentas de prioridad en Microsoft 365 organizaciones.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1cf813706a5fc0180ed36943c6bc7ae54e35ae346aba3d2b0251489e05cc715b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2fc9c95389bd72ebea11dcfe808101a6ca5ab40
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844104"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576049"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas de prioridad en Microsoft 365
 
@@ -35,7 +35,7 @@ Para los atacantes, los ataques de phishing normales que convierten una red alea
 
 Microsoft 365 y Microsoft Defender para Office 365 contienen varias características clave que proporcionan capas de seguridad adicionales para las cuentas de prioridad. En este artículo se describen estas funcionalidades y cómo usarlas.
 
-![Resumen de las recomendaciones de seguridad en forma de icono](../../media/security-recommendations-for-priority-users.png)
+![Resumen de las recomendaciones de seguridad en forma de icono.](../../media/security-recommendations-for-priority-users.png)
 
 <br>
 
@@ -43,11 +43,11 @@ Microsoft 365 y Microsoft Defender para Office 365 contienen varias característ
 
 |Tarea|Todos Office 365 Enterprise planes|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
-|[Aumentar la seguridad de inicio de sesión para cuentas de prioridad](#increase-sign-in-security-for-priority-accounts)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[Usar directivas de seguridad preestablecidas estrictas para cuentas de prioridad](#use-strict-preset-security-policies-for-priority-accounts)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Aumentar la seguridad de inicio de sesión para cuentas de prioridad](#increase-sign-in-security-for-priority-accounts)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Usar directivas de seguridad preestablecidas estrictas para cuentas de prioridad](#use-strict-preset-security-policies-for-priority-accounts)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Aplicar etiquetas de usuario a cuentas de prioridad](#apply-user-tags-to-priority-accounts)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Supervisar cuentas de prioridad en alertas, informes y detecciones](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[Entrenar a los usuarios](#train-users)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Entrenar a los usuarios](#train-users)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
 > [!NOTE]
@@ -131,6 +131,6 @@ Además, Microsoft recomienda que los usuarios tomen las acciones descritas en e
 - Protección de dispositivos
 - Habilitar características de seguridad en Windows 10 y equipos Mac (para dispositivos no administrados)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Anuncio de protección de cuenta de prioridad en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

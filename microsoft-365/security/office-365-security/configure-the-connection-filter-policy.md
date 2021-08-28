@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a configurar el filtrado de conexiones en Exchange Online Protection (EOP) para permitir o bloquear correos electrónicos de servidores de correo electrónico.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8aa760990eff4bff8e8c4dd26efa74042f4a9208
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6edcbbe885f8271b073afdff248106ce0d209960
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258708"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572448"
 ---
 # <a name="configure-connection-filtering"></a>Configurar el filtrado de la conexión
 
@@ -74,7 +74,7 @@ En este artículo se describe cómo configurar la directiva de filtro de conexi�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>Usar el portal Microsoft 365 Defender para modificar la directiva de filtro de conexión predeterminada
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas en \>  \>  \>  la **sección** Directivas.
+1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
 
 2. En la **página Directivas contra correo** no deseado, seleccione Directiva de filtro de conexión **(Predeterminada)** de la lista haciendo clic en el nombre de la directiva.
 
@@ -91,9 +91,9 @@ En este artículo se describe cómo configurar la directiva de filtro de conexi�
        - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
        - IP cidr: por ejemplo, 192.168.0.1/25. Los valores válidos de máscara de subred son de /24 a /32. Para omitir el filtrado de correo no deseado para /1 a /23, vea la sección Omitir filtrado de correo no deseado para una [DIRECCIÓN IP cidr](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) fuera del intervalo disponible más adelante en este artículo.
 
-       Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+       Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-     Para agregar la dirección IP o el intervalo de direcciones, haga clic en el cuadro y escriba itclick **Add** ![ Add Icon ](../../media/ITPro-EAC-AddIcon.png) . Para quitar una entrada, seleccione la entrada en **Dirección IP permitida** y, a continuación, haga clic en **Quitar** ![ quitar ](../../media/scc-remove-icon.png) . Cuando haya terminado, haga clic en **Guardar**.
+     Para agregar la dirección IP o el intervalo de direcciones, haga clic en el cuadro y escriba itclick **Add** ![ Add Icon. ](../../media/ITPro-EAC-AddIcon.png) . Para quitar una entrada, seleccione la entrada en **Dirección IP permitida** y, a continuación, haga clic en **Quitar** ![ quitar ](../../media/scc-remove-icon.png) . Cuando haya terminado, haga clic en **Guardar**.
 
    - **Siempre bloquee los mensajes de las siguientes direcciones IP o intervalo de direcciones:** se trata de la lista de direcciones IP bloqueados. Escriba una sola IP, intervalo IP o IP CIDR en el cuadro tal como se describió anteriormente en la configuración Permitir siempre mensajes de las siguientes direcciones IP o intervalo **de direcciones.**
 
@@ -105,7 +105,7 @@ En este artículo se describe cómo configurar la directiva de filtro de conexi�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>Usar el portal Microsoft 365 Defender para ver la directiva de filtro de conexión predeterminada
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas en \>  \>  \>  la **sección** Directivas.
+1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
 
 2. En la **página Directivas contra correo** no deseado, se muestran las siguientes propiedades en la lista de directivas:
 
@@ -148,7 +148,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-HostedConnectionFilterPolicy](/powershell/module/exchange/set-hostedconnectionfilterpolicy).
 
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
 Para comprobar que ha modificado correctamente la directiva de filtro de conexión predeterminada, siga estos pasos:
 
@@ -207,4 +207,4 @@ Si encuentra cualquiera de estos escenarios, puede crear una regla de flujo de c
 
 ****
 
-![El icono corto de LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nuevo en Microsoft 365?** Descubra cursos de vídeo gratuitos **para Microsoft 365 administradores** y profesionales de TI, que LinkedIn Learning.
+![El icono corto de LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **¿Es nuevo Microsoft 365?** Descubra cursos de vídeo gratuitos **para Microsoft 365 administradores** y profesionales de TI, que LinkedIn Learning.

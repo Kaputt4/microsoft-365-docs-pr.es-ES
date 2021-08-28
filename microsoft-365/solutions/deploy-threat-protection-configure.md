@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 4b2775bfe94eb53851e108ed7b7d436f233beea267b3485385801534748ef16c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a372ae3b15b35c03449973fba2b1181a8ed68ac2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844084"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575581"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurar las capacidades de protección contra amenazas en Microsoft 365
 
@@ -33,12 +33,12 @@ Siga estos pasos para configurar la protección contra amenazas en Microsoft 365
 
 Microsoft ha probado y recomendado un conjunto específico de directivas relacionadas y de acceso condicional para proteger el acceso a todas las aplicaciones SaaS, especialmente Microsoft 365. Las directivas se recomiendan para la protección de línea base, confidencial y altamente regulada. Comience implementando las directivas para la protección de línea base.
 
-[ ![ Directivas comunes para configurar la identidad y el acceso](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png) 
- [a dispositivos Vea una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
+[ ![ Directivas comunes para configurar la identidad y el acceso a dispositivos.](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png) 
+ [Ver una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>Para implementar la protección de línea base para Microsoft 365
 
-![Proceso para implementar la protección de línea base](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
+![Proceso para implementar la protección de línea base.](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
 1. [Configure los requisitos previos, incluido Azure AD Identity Protection](../security/office-365-security/identity-access-prerequisites.md).
 2. [Configure directivas comunes de acceso a dispositivos y identidades](../security/office-365-security/identity-access-policies.md) para la protección de línea base.
@@ -62,7 +62,7 @@ Microsoft Defender for Identity permite a los analistas y profesionales de segur
 
 ### <a name="to-set-up-microsoft-defender-for-identity"></a>Para configurar Microsoft Defender for Identity
 
-![Proceso para implementar Microsoft Defender for Identity](../media/deploy-threat-protection/deploy-azure-atp-steps.png) 
+![Proceso para implementar Microsoft Defender for Identity.](../media/deploy-threat-protection/deploy-azure-atp-steps.png) 
 
 1. [Configure Microsoft Defender for Identity para](/azure-advanced-threat-protection/install-atp-step1) proteger los entornos principales.
 2. Proteger todos los [controladores de dominio](/azure-advanced-threat-protection/atp-sensor-monitoring) y [bosques](/azure-advanced-threat-protection/atp-multi-forest).
@@ -82,7 +82,7 @@ Microsoft 365 Defender unifica alertas, incidentes, investigación y respuesta a
 
 ### <a name="to-set-up-microsoft-365-defender"></a>Para configurar Microsoft 365 Defender
 
-![Proceso para implementar Microsoft 365 Defender](../media/deploy-threat-protection/deploy-mtp-steps.png) 
+![Proceso para implementar Microsoft 365 Defender.](../media/deploy-threat-protection/deploy-mtp-steps.png) 
 
 1. [Revise los requisitos previos](../security/defender/prerequisites.md).
 2. [Active la Microsoft 365 Defender](../security/defender/m365d-enable.md).
@@ -110,7 +110,7 @@ Con Microsoft Defender para Office 365, las personas de toda la organización pu
 
 ### <a name="to-set-up-microsoft-defender-for-office-365"></a>Para configurar Microsoft Defender para Office 365
 
-![Proceso para implementar Microsoft Defender para Office 365](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
+![Proceso para implementar Microsoft Defender para Office 365.](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
 1. [Configurar y configurar Microsoft Defender para Office 365 directivas](../security/office-365-security/protect-against-threats.md).
 2. [Ver y usar Microsoft Defender para Office 365 informes](../security/office-365-security/view-reports-for-mdo.md).
@@ -127,7 +127,7 @@ Con Microsoft Defender para Office 365, las personas de toda la organización pu
 
 ### <a name="set-up-microsoft-defender-for-endpoint"></a>Configurar Microsoft Defender para punto de conexión
 
-![Proceso para implementar Microsoft Defender para endpoint](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
+![Proceso para implementar Microsoft Defender para endpoint.](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
 1. [Prepare su entorno para Microsoft Defender para Endpoint](../security/defender-endpoint/deployment-phases.md).
 2. [Implementar Microsoft Defender para endpoint](../security/defender-endpoint/production-deployment.md).
@@ -145,7 +145,7 @@ Con Microsoft Defender para Office 365, las personas de toda la organización pu
 
 ### <a name="set-up-microsoft-cloud-app-security"></a>Configurar Microsoft Cloud App Security
 
-![Proceso para implementar Microsoft Cloud App Security](../media/deploy-threat-protection/deploy-mcas-steps.png) 
+![Proceso para implementar Microsoft Cloud App Security.](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
 1. [Configurar el portal y otros requisitos básicos](/cloud-app-security/general-setup).
 2. [Configurar la detección en la nube](/cloud-app-security/set-up-cloud-discovery) [y conectar aplicaciones](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
@@ -161,7 +161,7 @@ Con Microsoft Defender para Office 365, las personas de toda la organización pu
 
 Después de configurar e implementar los servicios y capacidades de protección contra amenazas, el siguiente paso es supervisar las detecciones de amenazas y realizar las acciones adecuadas. El mejor punto de partida es el centro de seguridad de Microsoft 365 ( ), donde puede supervisar y administrar la seguridad en todas las identidades, datos, dispositivos, aplicaciones e infraestructura de [https://security.microsoft.com](https://security.microsoft.com) Microsoft.
 
-![Centro de seguridad de Microsoft 365](../media/solutions-architecture-center/m365-security-center.png)
+![Microsoft 365 de seguridad.](../media/solutions-architecture-center/m365-security-center.png)
 
 El Microsoft 365 de seguridad está pensado para los administradores de seguridad y los equipos de operaciones de seguridad. En el Microsoft 365 de seguridad, puede:
 

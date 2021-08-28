@@ -12,18 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: fad8d20e0c3e6e1d3e8a9587a211fb109d869d1ab849c8e6948b9f476e543820
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6fa7ab5b30a4cfad8ec4305c0ddf8fcda1c6f284
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880181"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571355"
 ---
 # <a name="insider-risk-management-audit-log"></a>Registro de auditoría de administración de riesgos de Insider
 
 El registro de auditoría de administración de riesgos insider le permite mantenerse informado sobre las acciones realizadas en las características de administración de riesgos internas. Este registro permite revisar de forma independiente las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos de información interna. El registro de auditoría de administración de riesgos interno se habilita automáticamente en la organización y no se puede deshabilitar.
 
-![Registro de auditoría de administración de riesgos de Insider](../media/insider-risk-audit-log.png)
+![Registro de auditoría de administración de riesgos de Insider.](../media/insider-risk-audit-log.png)
 
 El registro de auditoría se actualiza automáticamente e inmediatamente siempre que se produzcan actividades supervisadas y el registro conserva información sobre la actividad durante 180 días (unos seis meses). Después de 180 días, los datos de la actividad se eliminan permanentemente del registro.
 
@@ -32,7 +32,7 @@ Entre las áreas incluidas en la supervisión de actividades se incluyen:
 - Directivas
 - Casos
 - Alertas
-- Configuración
+- Configuraciones
 - Usuarios
 - Plantillas de aviso
 

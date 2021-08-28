@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Encuentre información sobre cómo mover un sitio OneDrive a una ubicación geográfica diferente, incluido cómo programar los movimientos del sitio y comunicar las expectativas a los usuarios.
-ms.openlocfilehash: 1e571993a4d83d3e9a61f783fee9b1df5f9de4bb3d9184a9565c280677faf21c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 50c23555a91aecfbbaf6aa30bae2c3a741a18c45
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854865"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575665"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover un sitio de OneDrive a otra ubicación geográfica 
 
@@ -64,7 +64,7 @@ Por ejemplo: para mover OneDrive de usuario "Matt@contosoenergy.onmicrosoft.com"
 
 `Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![Captura de pantalla de la ventana de PowerShell que muestra el cmdlet connect-sposervice](../media/move-onedrive-between-geo-locations-image1.png)
+![Captura de pantalla de la ventana de PowerShell que muestra el cmdlet connect-sposervice.](../media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>Validación del entorno
 
@@ -98,7 +98,7 @@ Por ejemplo, para mover la instancia de OneDrive de matt@contosoenergy.onmicroso
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![Captura de pantalla de la ventana de PowerShell que muestra el cmdlet Start-SPOUserAndContentMove](../media/move-onedrive-between-geo-locations-image2.png)
+![Captura de pantalla de la ventana de PowerShell que muestra Start-SPOUserAndContentMove cmdlet.](../media/move-onedrive-between-geo-locations-image2.png)
 
 Para programar una transferencia geográfica para más adelante, use uno de los parámetros siguientes:
 

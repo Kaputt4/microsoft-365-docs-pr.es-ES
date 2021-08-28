@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en todas las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cfabb6a33c2d107e4f4822ed57e6e9ff1f8cc718
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 50558ef4ff9c4f05f0e7833ef8a1697330c35362
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258666"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572844"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365
 
@@ -117,7 +117,7 @@ Por ejemplo, si existe una configuración de seguridad  en protección estándar
 
   Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  **Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Usar el portal Microsoft 365 Defender para asignar directivas de seguridad preestablecidas a los usuarios
 
@@ -126,11 +126,11 @@ Por ejemplo, si existe una configuración de seguridad  en protección estándar
 2. En **Protección estándar o** Protección **estricta,** haga clic **en Editar**.
 
 3. Se **inicia el asistente** Aplicar protección estándar o Aplicar **protección** estricta. En la **página Las protecciones de EOP** se aplican a la página, identifique los destinatarios internos a los que se aplican las protecciones [de EOP](#policies-in-preset-security-policies) (condiciones de destinatario):
-   - **Users**
+   - **Usuarios**
    - **Grupos**
    - **Dominios**
 
-   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    Para los usuarios o grupos, puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, escriba un asterisco (\*) para ver todos los valores disponibles.
 
@@ -150,7 +150,7 @@ Por ejemplo, si existe una configuración de seguridad  en protección estándar
 
 Los pasos para modificar la asignación de la **directiva** de seguridad de protección estándar o de protección estricta son los mismos que cuando se asignaron inicialmente las directivas de seguridad preestablecidas [a los usuarios.](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users) 
 
-Para deshabilitar las  **directivas de** seguridad Protección estándar o Protección estricta a la vez que se conservan las condiciones y excepciones existentes, deslice el botón de alternancia a **Desactivado.** ![ ](../../media/scc-toggle-off.png) Para habilitar las directivas, deslice el botón de alternancia a **Activado** ![ activar ](../../media/scc-toggle-on.png) .
+Para deshabilitar las  **directivas de seguridad Protección** estándar o Protección estricta a la vez que se conservan las condiciones y excepciones existentes, deslice el botón de alternancia a **Desactivar** ![ deshabilitado. ](../../media/scc-toggle-off.png) . Para habilitar las directivas, deslice el botón de alternancia a **Activado** ![ activar ](../../media/scc-toggle-on.png) .
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 

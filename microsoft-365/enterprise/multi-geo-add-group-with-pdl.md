@@ -13,12 +13,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: Obtenga información sobre cómo crear un grupo Microsoft 365 con una ubicación de datos preferida especificada en un entorno multige geográfico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a3f878e17a6d3956458be8705b43cb8e4b8fc4b843499c4ebab5998fb57eede
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a035856344cf49e3a7221a00b98c175b95f9a72
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53812984"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575845"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>Crear un grupo Microsoft 365 con una ubicación de datos preferida específica
 
@@ -47,7 +47,7 @@ Por ejemplo:
 New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Public -MailboxRegion EUR 
 ```
 
-![Captura de pantalla del cmdlet de PowerShell New-UnifiedGroup con la sintaxis](../media/multi-geo-new-group-with-pdl-powershell.png)
+![Captura de pantalla New-UnifiedGroup cmdlet de PowerShell con sintaxis.](../media/multi-geo-new-group-with-pdl-powershell.png)
 
 Tenga en cuenta que el aprovisionamiento de sitios de grupo de SharePoint se realiza a petición. El sitio se aprovisionará la primera vez que un propietario o miembro del grupo intente acceder a él.
 

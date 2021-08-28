@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: cddf687c4d269772b264711b7359bc338958164c
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: 125e622b39b6ec868cb6dffaf30eb8d64a346759
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392108"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571440"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -61,7 +61,7 @@ Para obtener una lista completa de filtros y detalles de campo, vea [Filters](co
 
 8. Si desea guardar los filtros seleccionados como una consulta de filtro, seleccione **Guardar** el control de consulta después de configurar al menos un valor de filtro. Escriba un nombre para la consulta de filtro y seleccione **Guardar**. Este filtro solo está disponible para esta directiva y se muestra en la sección Consultas **de filtro guardadas** de la **página Detalles** de filtros.
 
-    ![Controles de detalles del filtro de cumplimiento de comunicaciones](../media/communication-compliance-filter-detail-controls.png)
+    ![Controles de detalles del filtro de cumplimiento de comunicaciones.](../media/communication-compliance-filter-detail-controls.png)
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Usar análisis duplicados cercanos y exactos
 
@@ -85,7 +85,7 @@ Las directivas de cumplimiento de comunicaciones analizan y agrupan automáticam
 
 8. Seleccione **Cerrar** después de completar las acciones de corrección en los mensajes.
 
-    ![Controles duplicados exactos de cumplimiento de comunicación](../media/communication-compliance-duplicates-controls.png)
+    ![Los controles duplicados exactos de cumplimiento de la comunicación.](../media/communication-compliance-duplicates-controls.png)
 
 ## <a name="remediate-alerts"></a>Corregir alertas
 
@@ -95,7 +95,7 @@ Independientemente de dónde empiece a revisar las alertas o el filtrado que con
 
  A veces es obvio desde el origen o el asunto que un mensaje se puede corregir inmediatamente. Puede ser que el mensaje es falso o coincide incorrectamente con una directiva y debe resolverse como mal clasificado. Seleccione el **control Informe como** mal clasificado para compartir contenido mal clasificado con Microsoft, resolver inmediatamente la alerta y quitar de la cola de alertas pendientes. Desde la información de origen o del remitente, puede que ya sepa cómo se debe enrutar o administrar el mensaje en estas circunstancias. Considere la posibilidad de usar los controles **Etiquetar como** o **Escalar** para asignar una etiqueta a los mensajes aplicables o enviar mensajes a un revisor designado.
 
-![Controles de corrección de cumplimiento de comunicaciones](../media/communication-compliance-remediation-controls.png)
+![Controles de corrección de cumplimiento de comunicaciones.](../media/communication-compliance-remediation-controls.png)
 
 ### <a name="step-2-examine-the-message-details"></a>Paso 2: Examinar los detalles del mensaje
 
@@ -123,7 +123,7 @@ Ahora que ha revisado los detalles del mensaje para la alerta, puede elegir vari
 - **Escala para la investigación:** con el control **Escalate para** la investigación, puede crear un nuevo Advanced eDiscovery [caso](overview-ediscovery-20.md) para mensajes individuales o múltiples. Proporcionará un nombre y notas para el nuevo caso, y el usuario que envió el mensaje que coincide con la directiva se asigna automáticamente como el custodio del caso. No necesita permisos adicionales para administrar el caso. La creación de un caso no resuelve ni crea una nueva etiqueta para el mensaje. Puede seleccionar un total de 100 mensajes al crear un Advanced eDiscovery caso durante el proceso de corrección. Se admiten mensajes en todos los canales de comunicación supervisados por el cumplimiento de la comunicación. Por ejemplo, puede seleccionar 50 chats de Microsoft Teams, 25 mensajes de correo electrónico Exchange Online y 25 mensajes de Yammer al abrir un nuevo caso Advanced eDiscovery para un usuario.
 - **Quitar mensaje en Teams:** mediante el control Quitar mensaje de **Teams,** puede bloquear mensajes inapropiados y contenido identificado en alertas de canales de Microsoft Teams y chats de grupo y 1:1. Los mensajes y el contenido eliminados se reemplazan por una sugerencia de directiva que explica que está bloqueado y la directiva que se aplica a su eliminación de la vista. A los destinatarios se les proporciona un vínculo en la sugerencia de directiva para obtener más información sobre la directiva aplicable y el proceso de revisión. El remitente recibe una sugerencia de directiva para el mensaje bloqueado y el contenido, pero puede revisar los detalles del mensaje bloqueado y el contenido para obtener contexto con respecto a la eliminación.
 
-    ![Quitar un mensaje de Microsoft Teams](../media/communication-compliance-remove-teams-message.png)
+    ![Quite un mensaje de Microsoft Teams.](../media/communication-compliance-remove-teams-message.png)
 
 ### <a name="step-4-determine-if-message-details-should-be-archived-outside-of-communication-compliance"></a>Paso 4: Determinar si los detalles del mensaje deben archivarse fuera del cumplimiento de la comunicación
 

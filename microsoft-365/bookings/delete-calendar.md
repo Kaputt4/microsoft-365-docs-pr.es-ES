@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Use el Centro de administración de Microsoft 365 o Windows PowerShell para eliminar calendarios de Bookings.
-ms.openlocfilehash: 5dd04033cc5a7485d606503f5cd2c72c5fabbe83d10102e118b0ef1451ec136e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fc5975e25fa3b1f2d2aab991cc7aac8038181f3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882735"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572760"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Eliminar un calendario de reserva en Bookings
 
@@ -38,11 +38,11 @@ El calendario de reserva es donde se almacena toda la información relevante sob
 
 1. En el Centro de administración, seleccione **Usuarios**.
 
-   ![Imagen de la interfaz de usuario de usuarios en Centro de administración de Microsoft 365](../media/bookings-admin-center-users.png)
+   ![Imagen de la interfaz de usuario de Centro de administración de Microsoft 365.](../media/bookings-admin-center-users.png)
 
 1. En la página **Usuarios activos**, elija los nombres de los usuarios que quiera eliminar y después seleccione **Eliminar usuario**.
 
-   ![Imagen de Eliminar interfaz de usuario en Centro de administración de Microsoft 365](../media/bookings-delete-user.png)
+   ![Imagen de Eliminar interfaz de usuario en Centro de administración de Microsoft 365.](../media/bookings-delete-user.png)
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Eliminar un calendario de reserva con Exchange Online PowerShell
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el Centro de cumplimiento de Microsoft 365 o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: ef822ef9b661677839c4d393ebff19071a16ca49
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c6e233ec90c9143b07d32e71933c4c81b94f252b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256642"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572352"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
@@ -38,7 +38,7 @@ Las directivas de alerta le permiten clasificar las alertas que desencadena una 
 
 Este es un resumen rápido de cómo funcionan las directivas de alertas y las alertas que se desencadenan cuando la actividad de usuario o administrador coincide con las condiciones de una directiva de alerta.
 
-![Información general sobre cómo funcionan las directivas de alertas](../media/M365ComplianceDefender-AlertPolicies-Overview.png)
+![Información general sobre cómo funcionan las directivas de alertas.](../media/M365ComplianceDefender-AlertPolicies-Overview.png)
 
 1. Un administrador de la organización crea, configura y activa  una directiva de alerta mediante la página Directivas de alerta del portal de Centro de cumplimiento de Microsoft 365 o Microsoft 365 Defender alerta. También puede crear directivas de alerta mediante el cmdlet [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) en PowerShell del Centro de & seguridad.
 
@@ -63,13 +63,13 @@ Para ver y crear directivas de alerta:
 
 Vaya a <https://compliance.microsoft.com> y, a continuación, **seleccione Directivas**  >  **directivas de alerta** de  >  **alerta.** Como alternativa, puede ir directamente a <https://compliance.microsoft.com/alertpolicies> .
 
-![En el Centro de cumplimiento, seleccione Directivas y, en Alerta, seleccione Directivas de alerta para ver y crear directivas de alerta](../media/LaunchAlertPoliciesMCC.png)
+![En el Centro de cumplimiento, seleccione Directivas y, en Alerta, seleccione Directivas de alerta para ver y crear directivas de alerta.](../media/LaunchAlertPoliciesMCC.png)
 
 ### <a name="microsoft-365-defender-portal"></a>Portal de Microsoft 365 Defender
 
 Vaya a <https://security.microsoft.com> y, en **Correo & colaboración,** seleccione **Directivas & reglas de alerta** directiva de  >  **alerta**. Como alternativa, puede ir directamente a <https://security.microsoft.com/alertpolicies> .
 
-![En el portal de Defender, seleccione Directivas & reglas en Correo & colaboración y, a continuación, seleccione Directiva de alerta para ver y crear directivas de alertas](../media/LaunchAlertPoliciesDefenderPortal.png)
+![En el portal de Defender, seleccione Directivas & reglas en Correo & colaboración y, a continuación, seleccione Directiva de alerta para ver y crear directivas de alerta.](../media/LaunchAlertPoliciesDefenderPortal.png)
 
 > [!NOTE]
 > Debe tener asignado el rol administrar View-Only alertas para ver las directivas de alerta en el centro de cumplimiento o el portal de Defender. Debe tener asignado el rol Administrar alertas para crear y editar directivas de alertas. Para obtener más información, vea [Permissions in the security and compliance center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
@@ -87,7 +87,7 @@ También puede definir etiquetas de usuario como condición de una directiva de 
 
 - **Cuando se desencadena la alerta**. Puede configurar una configuración que defina la frecuencia con la que puede producirse una actividad antes de que se desencadene una alerta. Esto le permite configurar una directiva para generar una alerta cada vez que una actividad coincide con las condiciones de la directiva, cuando se supera un umbral determinado o cuando la aparición de la actividad que la alerta está rastreando se vuelve inusual para su organización.
 
-    ![Configurar cómo se desencadenan las alertas, en función del momento en que se produce la actividad, un umbral o una actividad inusual para la organización](../media/howalertsaretriggered.png)
+    ![Configure cómo se desencadenan las alertas, en función del momento en que se produzca la actividad, un umbral o una actividad inusual para su organización.](../media/howalertsaretriggered.png)
 
     Si selecciona la configuración en función de la actividad inusual, Microsoft establece un valor de línea base que define la frecuencia normal de la actividad seleccionada. Se tarda hasta siete días en establecer esta línea base, durante la cual no se generarán alertas. Una vez establecida la línea base, se desencadena una alerta cuando la frecuencia de la actividad rastreada por la directiva de alerta supera en gran parte el valor de línea base. Para las actividades relacionadas con la auditoría (como las actividades de archivos y carpetas), puede establecer una línea base basada en un único usuario o en función de todos los usuarios de la organización; para actividades relacionadas con malware, puede establecer una línea base basada en una única familia de malware, un solo destinatario o todos los mensajes de la organización.
 
@@ -125,7 +125,7 @@ En la tabla siguiente se enumeran y describen las directivas de alerta predeterm
 
 En la tabla también se indica Office 365 Enterprise y Office 365 plan del Gobierno de Estados Unidos necesario para cada uno de ellos. Algunas directivas de alerta predeterminadas están disponibles si su organización tiene la suscripción de complemento adecuada además de una suscripción E1/F1/G1 o E3/F3/G3.
 
-| Directiva de alerta predeterminada | Descripción | Categoría | Enterprise suscripción |
+| Directiva de alerta predeterminada | Description | Categoría | Enterprise suscripción |
 |:-----|:-----|:-----|:-----|
 |**Se detectó un clic de dirección URL potencialmente malintencionado**|Genera una alerta cuando un usuario protegido por [Caja fuerte vínculos de](../security/office-365-security/safe-links.md) la organización hace clic en un vínculo malintencionado. Este evento se desencadena cuando Microsoft Defender identifica los cambios de veredicto de url para Office 365 o cuando los usuarios invalidan las páginas de vínculos de Caja fuerte (según la directiva de vínculos de Microsoft 365 para empresas de Caja fuerte de la organización). Esta directiva de alerta tiene **una configuración de** gravedad alta. Para los clientes de Defender Office 365 P2, E5, G5, esta alerta desencadena automáticamente la investigación automatizada y la respuesta [en Office 365](../security/office-365-security/office-365-air.md). Para obtener más información sobre los eventos que desencadenan esta alerta, vea [Configurar Caja fuerte de vínculos](../security/office-365-security/set-up-safe-links-policies.md).|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Resultado de envío de administrador completado**|Genera una alerta cuando un [envío de](../security/office-365-security/admin-submission.md) administrador completa el nuevo análisis de la entidad enviada. Se activará una alerta cada vez que se represente un resultado de nuevo análisis desde un envío de administrador. Estas alertas están diseñadas para recordarle que revise los resultados de envíos anteriores, envíe mensajes [notificados](https://compliance.microsoft.com/reportsubmission)por el usuario para obtener los últimos veredictos de comprobación de directivas y volver a examinar, y le ayudarán a determinar si las directivas de filtrado de su organización están teniendo el impacto previsto. Esta directiva tiene una **configuración de gravedad informativo.**|Administración de amenazas|E1/F1, E3/F3 o E5|
@@ -177,13 +177,13 @@ Para ver alertas:
 
  Vaya a <https://compliance.microsoft.com> y, a continuación, seleccione **Alertas**. Como alternativa, puede ir directamente a <https://compliance.microsoft.com/compliancealerts> .
 
-![En el Centro de cumplimiento de Microsoft 365, seleccione Alertas](../media/ViewAlertsMCC.png)
+![En el Centro de cumplimiento de Microsoft 365, seleccione Alertas.](../media/ViewAlertsMCC.png)
 
 ### <a name="microsoft-365-defender-portal"></a>Portal de Microsoft 365 Defender
 
 Vaya a <https://security.microsoft.com> y, a continuación, seleccione **Incidentes &**  >  **alertas .** Como alternativa, puede ir directamente a <https://security.microsoft.com/alerts> .
 
-![En el portal Microsoft 365 Defender, seleccione Incidentes & alertas y, a continuación, seleccione Alertas](../media/ViewAlertsDefenderPortal.png)
+![En el portal Microsoft 365 Defender, seleccione Incidentes & alertas y, a continuación, seleccione Alertas.](../media/ViewAlertsDefenderPortal.png)
 
 Puede usar los siguientes filtros para ver un subconjunto de todas las alertas en la página **Alertas.**
 
@@ -224,7 +224,7 @@ Cuando se producen eventos que coinciden con la misma directiva de alerta en el 
 
 La siguiente captura de pantalla muestra una alerta con cuatro eventos agregados. La lista de actividades contiene información sobre los cuatro mensajes de correo electrónico relevantes para la alerta.
 
-![Ejemplo de agregación de alertas](../media/AggregatedAlertExample.png)
+![Ejemplo de agregación de alertas.](../media/AggregatedAlertExample.png)
 
 Tenga en cuenta lo siguiente acerca de la agregación de alertas:
 
@@ -234,7 +234,7 @@ Tenga en cuenta lo siguiente acerca de la agregación de alertas:
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Permisos RBAC necesarios para ver alertas
 
-Los permisos de control de acceso basado en roles (RBAC) asignados a los usuarios de la organización determinan qué alertas puede ver un usuario en la **página Alertas.** ¿Cómo se logra esto? Los roles de administración asignados a los usuarios (en función de su pertenencia a grupos de roles en el portal de Centro de cumplimiento de Microsoft 365 o Microsoft 365 Defender) determinan qué categorías de alertas puede ver un **usuario** en la página Alertas. Aquí le mostramos otros ejemplos:
+Los permisos de control de acceso basado en roles (RBAC) asignados a los usuarios de la organización determinan qué alertas puede ver un usuario en la **página Alertas.** ¿Cómo se logra esto? Los roles de administración asignados a los usuarios (en función de su pertenencia a grupos de roles en el portal de Centro de cumplimiento de Microsoft 365 o Microsoft 365 Defender) determinan qué categorías de alertas puede ver un **usuario** en la página Alertas. Estos son algunos ejemplos:
 
 - Los miembros del grupo de roles Administración de registros solo pueden ver las alertas generadas por las directivas de alerta a las que se asigna la **categoría Gobierno de** información.
 
@@ -252,29 +252,29 @@ Para ver a qué categoría está asignada una directiva de alerta predeterminada
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||
-|Administrador de cumplimiento|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||![Marca de verificación](../media/checkmark.png)||![Marca de verificación](../media/checkmark.png)|
+|Administrador de cumplimiento|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)||![Marca de verificación.](../media/checkmark.png)||![Marca de verificación.](../media/checkmark.png)|
 |Búsqueda de cumplimiento|||||||
 |Administración de dispositivos|||||||
 |Administración de disposición|||||||
-|Administración de cumplimiento de DLP||![Marca de verificación](../media/checkmark.png)|||||
+|Administración de cumplimiento de DLP||![Marca de verificación.](../media/checkmark.png)|||||
 |Exportar|||||||
 |Hold|||||||
-|Administrar alertas||||||![Marca de verificación](../media/checkmark.png)|
-|Configuración de la organización||||||![Marca de verificación](../media/checkmark.png)|
+|Administrar alertas||||||![Marca de verificación.](../media/checkmark.png)|
+|Configuración de la organización||||||![Marca de verificación.](../media/checkmark.png)|
 |Vista previa|||||||
-|Administración de registros|![Marca de verificación](../media/checkmark.png)||||||
-|Administración de retención|![Marca de verificación](../media/checkmark.png)||||||
+|Administración de registros|![Marca de verificación.](../media/checkmark.png)||||||
+|Administración de retención|![Marca de verificación.](../media/checkmark.png)||||||
 |Revisar|||||||
 |Descifrado de RMS|||||||
-|Administración de roles||||![Marca de verificación](../media/checkmark.png)|||
+|Administración de roles||||![Marca de verificación.](../media/checkmark.png)|||
 |Buscar y purgar|||||||
-|Administrador de seguridad||![Marca de verificación](../media/checkmark.png)||![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|
-|Lector de seguridad||![Marca de verificación](../media/checkmark.png)||![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)
+|Administrador de seguridad||![Marca de verificación.](../media/checkmark.png)||![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|
+|Lector de seguridad||![Marca de verificación.](../media/checkmark.png)||![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)
 |Vista Service Assurance|||||||
 |Administrador de revisión de supervisión|||||||
 |Registros de auditoría de solo vista|||||||
 |View-Only administración de dispositivos|||||||
-|View-Only de cumplimiento dlp||![Marca de verificación](../media/checkmark.png)|||||
+|View-Only de cumplimiento dlp||![Marca de verificación.](../media/checkmark.png)|||||
 |View-Only administrar alertas||||||![Marca de verificación](../media/checkmark.png)|
 |Destinatarios con permiso de vista|||![Marca de verificación](../media/checkmark.png)||||
 |View-Only administración de registros|![Marca de verificación](../media/checkmark.png)||||||
@@ -328,11 +328,11 @@ Las organizaciones que tienen Microsoft Cloud App Security como parte de una sus
 
 Para mostrar solo Cloud App Security alertas en el centro de  cumplimiento o en el portal de Defender, use el filtro Origen y **seleccione Cloud App Security**.
 
-![Usar el filtro De origen para mostrar solo Cloud App Security alertas](../media/FilterCASAlerts.png)
+![Use el filtro Origen para mostrar solo Cloud App Security alertas.](../media/FilterCASAlerts.png)
 
 De forma similar a una alerta desencadenada por una directiva de alerta en el centro de cumplimiento, puede seleccionar una alerta de Cloud App Security para mostrar una página desplegable con detalles sobre la alerta. La alerta incluye un vínculo para ver los detalles y administrar la alerta en el portal de Cloud App Security y un vínculo a la directiva de Cloud App Security correspondiente que desencadenó la alerta. Vea [Supervisar alertas en Cloud App Security](/cloud-app-security/monitor-alerts).
 
-![Los detalles de alerta contienen vínculos al portal Cloud App Security web](../media/CASAlertDetail.png)
+![Los detalles de alerta contienen vínculos al Cloud App Security portal.](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
 > Al cambiar el estado de una Cloud App Security en el centro de cumplimiento, no se actualizará el estado de resolución de la misma alerta en el portal Cloud App Security cumplimiento. Por ejemplo, si marca el estado de la alerta como **Resuelto** en el centro de cumplimiento, el estado de la alerta en el portal de Cloud App Security no cambia. Para resolver o descartar una alerta Cloud App Security, administre la alerta en el portal Cloud App Security cliente.

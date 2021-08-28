@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: En este artículo, obtenga información sobre cómo funcionan el aislamiento y el control de acceso para mantener los datos de varios inquilinos aislados entre sí en Azure Active Directory.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e48ffaee5927010aa9e2cea2d231a194a33008d1d0c0ca7ed260fe6adc3c834b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d9305bd6c58abd7d3fa5d9b7c6761b64eab279f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864567"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571018"
 ---
 # <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Microsoft 365 Aislamiento y control de acceso en Azure Active Directory
 
@@ -35,13 +35,13 @@ Ninguna aplicación, usuario, servidor o servicio puede tener acceso a Azure AD 
 
 De forma eficaz, Azure AD hospeda cada inquilino en su propio contenedor protegido, con directivas y permisos para y dentro del contenedor solo propiedad y administrado por el inquilino.
  
-![Contenedor de Azure](../media/office-365-isolation-azure-container.png)
+![Contenedor de Azure.](../media/office-365-isolation-azure-container.png)
 
 El concepto de contenedores de inquilinos está profundamente arraigado en el servicio de directorio en todas las capas, desde portales hasta almacenamiento persistente. Incluso cuando se almacenan varios metadatos de inquilino de Azure AD en el mismo disco físico, no hay ninguna relación entre los contenedores distintos de lo definido por el servicio de directorio, que a su vez lo dicta el administrador de inquilinos. No puede haber conexiones directas al almacenamiento de Azure AD desde cualquier aplicación o servicio solicitante sin pasar primero por la capa de autorización.
 
 En el ejemplo siguiente, Contoso y Fabrikam tienen contenedores independientes y dedicados, y aunque estos contenedores pueden compartir parte de la misma infraestructura subyacente, como servidores y almacenamiento, permanecen separados y aislados entre sí, y cerrados por capas de autorización y control de acceso.
  
-![Contenedores dedicados de Azure](../media/office-365-isolation-azure-dedicated-containers.png)
+![Contenedores dedicados de Azure.](../media/office-365-isolation-azure-dedicated-containers.png)
 
 Además, no hay componentes de aplicación que se puedan ejecutar desde Azure AD y no es posible que un inquilino incumbe por la fuerza la integridad de otro inquilino, acceda a claves de cifrado de otro inquilino o lea datos sin procesar del servidor.
 

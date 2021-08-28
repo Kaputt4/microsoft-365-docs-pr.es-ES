@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de seguridad del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede acceder a sus datos cuando se encuentra con un problema.
-ms.openlocfilehash: fa1a53e2f18f186a31673fa240e1d7bd9b71b5f8
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: cb22e34e6bc1d6bb65aceabc874395be83b28724
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350057"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571416"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de seguridad del cliente en Office 365
 
@@ -54,7 +54,7 @@ Estos pasos describen el flujo de trabajo típico cuando un ingeniero de Microso
 
 5. Después de que un administrador de Soporte técnico de Microsoft apruebe la solicitud, la Caja de seguridad del cliente envía al aprobador designado en la organización una notificación por correo electrónico sobre la solicitud de acceso pendiente de Microsoft.
 
-    ![Ejemplo de una notificación de correo electrónico de caja de seguridad del cliente](../media/CustomerLockbox1.png)
+    ![Ejemplo de una notificación de correo electrónico de caja de seguridad del cliente.](../media/CustomerLockbox1.png)
 
    Cualquier persona a la que se le haya asignado el rol de administrador de [aprobador](/office365/admin/add-users/about-admin-roles) de acceso de la caja de seguridad del cliente Centro de administración de Microsoft 365 puede aprobar solicitudes de caja de seguridad del cliente.
 
@@ -80,7 +80,7 @@ Puede activar los controles de Caja de seguridad del cliente en el Centro de adm
 
 3. Seleccione **Seguridad & privacidad Del** cuadro de bloqueo del cliente Editar y, a continuación, mueva la alternancia a Activar o Desactivar para activar  >    >  o desactivar la característica.  
 
-    ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
+    ![Requerir la aprobación de la caja de seguridad del cliente.](../media/CustomerLockbox4.png)
 
 ## <a name="approve-or-deny-a-customer-lockbox-request"></a>Aprobar o denegar una solicitud de Caja de seguridad del cliente
 
@@ -88,19 +88,19 @@ Puede activar los controles de Caja de seguridad del cliente en el Centro de adm
 
 2. Elija **Soporte > solicitudes de caja de seguridad del cliente.**
 
-    ![Haga clic en Soporte técnico y, a continuación, en Solicitudes de caja de seguridad del cliente](../media/CustomerLockbox5.png)
+    ![Haga clic en Soporte técnico y, a continuación, en Solicitudes de caja de seguridad del cliente.](../media/CustomerLockbox5.png)
 
     Se muestra una lista de solicitudes de caja de seguridad del cliente.
 
-    ![Lista de solicitudes de caja de seguridad del cliente](../media/CustomerLockbox6.png)
+    ![Lista de solicitudes de caja de seguridad del cliente.](../media/CustomerLockbox6.png)
 
 3. Seleccione una solicitud de caja de seguridad del cliente y, a continuación, **elija Aprobar** o **Denegar**.
 
-    ![Aprobar solicitudes de caja de seguridad del cliente](../media/CustomerLockbox7.png)
+    ![Aprobar solicitudes de caja de seguridad del cliente.](../media/CustomerLockbox7.png)
 
     Se muestra un mensaje de confirmación sobre la aprobación de la solicitud de caja de seguridad del cliente.
 
-    ![Denegar solicitudes de caja de seguridad del cliente](../media/CustomerLockbox8.png)
+    ![Denegar solicitudes de caja de seguridad del cliente.](../media/CustomerLockbox8.png)
 
 > [!NOTE]
 > Use el cmdlet Set-AccessToCustomerDataRequest para aprobar, rechazar o cancelar solicitudes de caja de seguridad del cliente de Microsoft 365 que controlan el acceso a los datos por parte de los ingenieros de soporte técnico de Microsoft. Para obtener más información, [vea Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
@@ -121,7 +121,7 @@ Para poder usar el registro de auditoría para realizar un seguimiento de las so
 
     Se **muestra la página De búsqueda del registro** de auditoría.
 
-    ![Página de búsqueda de registro de auditoría](../media/auditlogsearch1.png)
+    ![Página de búsqueda de registro de auditoría.](../media/auditlogsearch1.png)
   
 4. Configurar los siguientes criterios de búsqueda: 
 
@@ -157,11 +157,11 @@ Cuando una persona de la organización aprueba o deniega una solicitud de caja d
 | Dirección IP | La dirección IP del equipo en el que el aprobador ha aprobado o denegado una solicitud. |
 | Usuario       | La cuenta de servicio BOXServiceAccount@ \[ customerforest \] .prod.outlook.com.            |
 | Actividad   | Set-AccessToCustomerDataRequest; esta es la actividad de auditoría que se registra cuando usted aprueba o deniega una solicitud de Caja de seguridad del cliente.                                |
-| Item       | Guid de la solicitud de caja de seguridad del cliente                             |
+| Elemento       | Guid de la solicitud de caja de seguridad del cliente                             |
 
 La siguiente captura de pantalla muestra un ejemplo de un registro de registro de auditoría que corresponde a una solicitud de caja de seguridad de cliente aprobada. Si se denegó una solicitud de caja de seguridad del cliente, el valor del parámetro **ApprovalDecision** sería **Deny**.
 
-![Registro de auditoría de una solicitud de caja de seguridad de cliente aprobada](../media/CustomerLockbox9.png)
+![Registro de auditoría de una solicitud de caja de seguridad de cliente aprobada.](../media/CustomerLockbox9.png)
 
 > [!TIP]
 > Para mostrar información más detallada en un registro de auditoría, haga clic **en Más información**.

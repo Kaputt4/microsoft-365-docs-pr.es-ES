@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 8763d07db48f86a1c4224fc6bde4d992ef6d3701
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: fa046aa0a488b11f172d9ac7182b67e705aad69b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507559"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571186"
 ---
 # <a name="step-6-review-your-selections-to-create-your-package"></a>Paso 6: Revisar las selecciones para crear el paquete.
 
@@ -33,7 +33,7 @@ ms.locfileid: "58507559"
 
 3. Esto incorporará el paquete al entorno base de prueba. Si el paquete se crea correctamente, se activará una prueba automatizada que compruebe si el paquete se puede ejecutar correctamente en Azure.
 
-    ![Resultado correcto](Media/successful.png)
+    ![Resultado correcto.](Media/successful.png)
 
     > [!NOTE]
     > Recibirá una notificación de Azure Portal para notificarle sobre el éxito o el error de la comprobación del paquete.
@@ -52,7 +52,7 @@ ms.locfileid: "58507559"
 
     - Si experimenta errores de prueba repetidos, póngase en contacto testbasepreview@microsoft.com con los detalles del error.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Descubra nuestras Directrices de contenido a través del siguiente vínculo.
 

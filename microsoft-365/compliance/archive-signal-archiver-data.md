@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos de comunicaciones de señal en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: d6d129c69f2258457c2cdcc0dee28ac4e6738dff
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: be070c16c74375c2dad3fc09ebd549d2b9df359d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256630"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572232"
 ---
 # <a name="set-up-a-connector-to-archive-signal-communications-data"></a>Configurar un conector para archivar datos de comunicaciones de señal
 
@@ -29,7 +29,7 @@ Después de almacenar los datos del conector del archivador de señales en buzon
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de comunicación de señal en Microsoft 365.
 
-![Flujo de trabajo de archivado de comunicaciones de señal](../media/SignalConnectorWorkflow.png)
+![Flujo de trabajo de archivado de comunicaciones de señal.](../media/SignalConnectorWorkflow.png)
 
 1. Su organización trabaja con TeleMessage para configurar un conector de archivador de señales. Para obtener más información, vea [Activating the TeleMessage Signal Archiver for Microsoft 365](https://www.telemessage.com/microsoft-365-activation-for-signal-archiver/).
 

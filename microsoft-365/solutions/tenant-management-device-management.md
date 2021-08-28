@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente la opción correcta para la administración de dispositivos y aplicaciones para Microsoft 365 inquilinos.
-ms.openlocfilehash: eb15f5805308c6f575beb9eebd8f7825ebdd13173037870a3770fd306bb090bb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1d96042f2733a69919fd0dbaa9f30be6835d6469
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804618"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571198"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 5. Administración de dispositivos y aplicaciones para Microsoft 365 para inquilinos empresariales
 
@@ -29,7 +29,7 @@ Microsoft 365 para empresas incluye características para ayudar a administrar d
 
 Este es un ejemplo de validación y administración de los usuarios, sus dispositivos y el uso de aplicaciones de productividad locales y en la nube como Microsoft Teams.
 
-![Validación y administración de usuarios, dispositivos y aplicaciones](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
+![Validación y administración de usuarios, dispositivos y aplicaciones.](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
 Para ayudarle a proteger y proteger los recursos de su organización, Microsoft 365 para empresas incluye características para ayudar a administrar dispositivos y su acceso a aplicaciones. Hay dos opciones para la administración de dispositivos:
 
@@ -57,7 +57,7 @@ Microsoft proporciona un conjunto de configuraciones para el acceso a identidade
 
 Este es un ejemplo de la aplicación de estas directivas y configuraciones para validar y restringir a los usuarios, sus dispositivos y su uso de aplicaciones de productividad locales y en la nube, como Microsoft Teams.
 
-![Configuraciones de acceso a identidades y dispositivos para requisitos y restricciones en los usuarios, sus dispositivos y el uso de aplicaciones](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
+![Configuraciones de acceso de identidad y dispositivo para requisitos y restricciones en los usuarios, sus dispositivos y el uso de aplicaciones.](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 
 Para el acceso a dispositivos y la administración de aplicaciones, usa las configuraciones de estos artículos:
 
@@ -70,7 +70,7 @@ Para la administración de dispositivos y aplicaciones para su inquilino de Micr
 
 Este es un ejemplo de un inquilino con la administración de dispositivos y aplicaciones de Intune con los nuevos elementos resaltados.
 
-![Ejemplo de inquilino con administración de dispositivos y aplicaciones de Intune](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
+![Ejemplo de inquilino con administración de dispositivos y aplicaciones de Intune.](../media/tenant-management-overview/tenant-management-tenant-build-step5.png)
 
 En esta ilustración, el inquilino tiene:
 

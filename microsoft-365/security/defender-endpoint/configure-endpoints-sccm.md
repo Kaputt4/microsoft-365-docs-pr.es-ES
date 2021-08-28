@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 8c701dc0fb038e573b39067dd40f75e9394b4083
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 6d4c63bbf13ec4149a9250b3b4240926ece0d2c4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533008"
+ms.locfileid: "58571331"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Incorporar los dispositivos Windows 10 con Configuration Manager
 
@@ -59,7 +59,8 @@ En función de la versión de Configuration Manager que esté ejecutando, se pue
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>Incorporar dispositivos con System Center Configuration Manager
 
-[![Imagen del PDF que muestra las distintas rutas de implementación](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
+
+[![Imagen del PDF que muestra las distintas rutas de implementación.](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
 Consulte el [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) o [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso para implementar Microsoft Defender para endpoint.
 
@@ -209,7 +210,7 @@ Si usa System Center Configuration Manager de 2012 R2, la supervisión consta de
 
     Si hay implementaciones con errores (dispositivos con **errores,** requisitos no cumplidos o estados **con errores),** es posible que deba solucionar los problemas de los dispositivos. Para obtener más información, vea [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
-    ![Configuration Manager que muestra una implementación correcta sin errores](images/sccm-deployment.png)
+    ![Configuration Manager que muestra una implementación correcta sin errores.](images/sccm-deployment.png)
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Comprobar que los dispositivos son compatibles con el servicio de Microsoft Defender para endpoints
 

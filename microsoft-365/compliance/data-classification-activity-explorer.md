@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de actividad complementa la funcionalidad de la característica de clasificación de datos permitiéndole ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: 5570cecdf3b7e6b6959bb20ca2c2fcdd0ad2e6ebd6b579f7caf7a018049beaeb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8aff58bfd37fbf4e8573546f84f7670424e6b4d8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886423"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571404"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introducción al explorador de actividad
 
 La [introducción a la](data-classification-overview.md) clasificación de datos y las pestañas del [explorador](data-classification-content-explorer.md) de contenido le dan visibilidad sobre qué contenido se ha detectado y etiquetado, y dónde está ese contenido. El explorador de actividad complementa este conjunto de funciones permitiéndole supervisar lo que se lleva a cabo con el contenido de la etiqueta. El explorador de actividades proporciona una vista histórica de las actividades en el contenido etiquetado. La información de actividad se recopila Microsoft 365 registros de auditoría unificados, transformados y puestos a disposición en la interfaz de usuario del explorador de actividades. 
 
-![Marcador de posición captura de pantalla información general explorador de actividad](../media/data-classification-activity-explorer-1.png)
+![Explorador de actividades de información general de captura de pantalla de marcador de posición.](../media/data-classification-activity-explorer-1.png)
 
 Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
@@ -112,7 +112,7 @@ El valor de comprender qué acciones se están haciendo con el contenido etiquet
 
 ## <a name="see-also"></a>Recursos adicionales
 
-- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Más información sobre las directivas y las etiquetas de retención](retention.md)
 - [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md)
 - [Obtenga información sobre la clasificación de datos](data-classification-overview.md)

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo administrar la detección de temas en Temas Microsoft Viva.
-ms.openlocfilehash: 39ecd7ab79267d560b614e981f1ef7ad14fd807db94c64a9483b1603d0e2733a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2316df8df7a1d8fb2b8e0951e12810398bcb2e40
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870114"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575569"
 ---
 # <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>Administrar la detección de temas en Temas Microsoft Viva
 
@@ -26,11 +26,11 @@ Puede administrar la configuración de detección de temas [en el Centro de admi
 1. En la Centro de administración de Microsoft 365, haga clic **en Configuración** y, a continuación, en Configuración de **la organización**.
 2. En la **pestaña Servicios,** haga clic en **Experiencias del tema**.
 
-    ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) 
+    ![Conectar personas al conocimiento.](../media/admin-org-knowledge-options-completed.png) 
 
 3. Seleccione la **pestaña Detección de** temas. Vea las secciones siguientes para obtener información sobre cada configuración.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-discovery.png) 
+    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-discovery.png) 
 
 ## <a name="select-sharepoint-topic-sources"></a>Seleccionar SharePoint de temas
 
@@ -47,13 +47,13 @@ Si añade sitios utilizando el selector de sitios, éstos se añaden a la lista 
 Para elegir sitios para la detección de temas
 
 1. En la pestaña **Descubrimiento de temas** en **Seleccionar fuentes de temas de SharePoint**, seleccione **Editar**.
-2. En la **página Seleccionar SharePoint** de temas, seleccione qué sitios SharePoint se rastrearán como orígenes de los temas durante la detección. Esto incluye lo siguiente:
+2. En la **página Seleccionar SharePoint** de temas, seleccione qué sitios SharePoint se rastrearán como orígenes de los temas durante la detección. Incluye lo siguiente:
     - **Todos los sitios:** todos SharePoint en el espacio empresarial. Esto captura los sitios actuales y futuros.
     - **Todos, excepto los sitios seleccionados:** escriba los nombres de los sitios que desea excluir.  También puede cargar una lista de sitios que desea excluir de la detección. Los sitios creados en el futuro se incluirán como fuentes para el descubrimiento de temas. 
     - **Solo sitios seleccionados:** escriba los nombres de los sitios que desea incluir. También puede cargar una lista de sitios. Los sitios creados en el futuro no se incluirán como fuentes para el descubrimiento de temas.
     - **No hay sitios:** los temas no se generarán ni actualizarán automáticamente con SharePoint contenido. Los temas existentes permanecen en el centro de temas.
 
-    ![Captura de pantalla de SharePoint interfaz de usuario de orígenes de temas](../media/k-manage-select-topic-source.png)
+    ![Captura de pantalla de SharePoint interfaz de usuario de orígenes de temas.](../media/k-manage-select-topic-source.png)
    
 3. Haga clic en **Guardar**.
 
@@ -66,7 +66,7 @@ Puede excluir temas de la detección cargando una lista mediante un archivo .csv
 3. Si necesita crear una lista, descargue la plantilla .csv y agregue los temas que desea excluir (vea Trabajar con la *plantilla .csv a* continuación). Cuando el archivo esté listo, haga clic **en Examinar** y cargue el archivo. Si hay una lista existente, puede descargar el .csv que contiene la lista.
 4. Haga clic en **Guardar**.
 
-    ![Captura de pantalla de la interfaz de usuario de excluir temas](../media/km-manage-exclude-topics.png)
+    ![Captura de pantalla de la interfaz de usuario de excluir temas.](../media/km-manage-exclude-topics.png)
 
 ### <a name="working-with-the-csv-template"></a>Trabajar con la plantilla .csv plantilla
 
@@ -84,9 +84,9 @@ En la plantilla CSV, introduzca la siguiente información sobre los temas que de
 - **Significa (opcional):** si desea excluir un acrónimo, escriba las palabras que el acrónimo representa.
 - **MatchType-Exact/Partial:** escriba si el nombre que escribió era *un tipo de* coincidencia exacto *o* parcial.
 
-    ![Excluir temas en plantilla CSV](../media/exclude-topics-csv.png) 
+    ![Excluir temas de la plantilla CSV.](../media/exclude-topics-csv.png) 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar la visibilidad del tema en Microsoft 365](topic-experiences-knowledge-rules.md)
 

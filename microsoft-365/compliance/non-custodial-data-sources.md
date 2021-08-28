@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede agregar orígenes de datos que no son custodiados a Advanced eDiscovery caso y colocar una retención en el origen de datos. Los orígenes de datos que no son custodiados se reindexa, por lo que cualquier contenido que se marcó como parcialmente indizado se vuelve a procesar para que pueda realizar búsquedas de forma completa y rápida.
-ms.openlocfilehash: bb43c7fe6a57a45e8eea9ff87601c13e018bff5707e474206e97fe05c6c3a6e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afa28ce8be5f7a051c84111c65d6b993b97b6c04
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855952"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571030"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>Agregar orígenes de datos sin custodia a un Advanced eDiscovery caso
 
@@ -36,7 +36,7 @@ Siga estos pasos para agregar y administrar orígenes de datos sin custodia en u
 
 3. En la **página desplegable Nuevas ubicaciones** de datos no custodiales, elija los orígenes de datos que desea agregar al caso. Puede agregar varios buzones y sitios  expandiendo las secciones SharePoint o **Exchange** y, a continuación, haciendo clic en **Editar**.
 
-   ![Agregar SharePoint sitios y Exchange buzones de correo como orígenes de datos sin custodia](../media/NonCustodialDataSources1.png)
+   ![Agregue SharePoint sitios y Exchange buzones de correo como orígenes de datos sin custodia.](../media/NonCustodialDataSources1.png)
 
    - **SharePoint:** haga clic **en Editar** para agregar sitios. Seleccione un sitio en la lista o puede buscar un sitio escribiendo la dirección URL del sitio en la barra de búsqueda. Seleccione los sitios que desea agregar como orígenes de datos que no son custodios y haga clic en **Agregar**.
 
@@ -51,7 +51,7 @@ Siga estos pasos para agregar y administrar orígenes de datos sin custodia en u
 
    Cada origen de datos no custodiado que agregó aparece en la **página Orígenes de** datos. Los orígenes de datos que no son custodiados se identifican mediante el **valor Ubicación de** datos en la columna Tipo **de** origen.
 
-   ![Orígenes de datos no custodiados en la pestaña Orígenes de datos](../media/NonCustodialDataSources2.png)
+   ![Orígenes de datos no custodiados en la pestaña Orígenes de datos.](../media/NonCustodialDataSources2.png)
 
 Después de agregar orígenes de datos no custodiales al caso, se crea un trabajo denominado  *Reindexing non-custodial data* y se muestra en la pestaña Trabajos del caso. Una vez creado el trabajo, se inicia el proceso de indización avanzada y se vuelve a indizar los orígenes de datos.
 
@@ -65,7 +65,7 @@ Después de realizar una retención en un origen de datos sin custodia, se crea 
 
    La página desplegable muestra información y estadísticas sobre los orígenes de datos no custodiados en espera.
 
-   ![La página desplegable para la retención de orígenes de datos no custodiados muestra estadísticas](../media/NonCustodialDataSourcesHoldFlyout.png)
+   ![La página desplegable para la retención de orígenes de datos no custodiados muestra estadísticas.](../media/NonCustodialDataSourcesHoldFlyout.png)
 
 3. Haga **clic en** Editar retención para ver los orígenes de datos que no son custodiados y realizar las siguientes tareas de administración:
 

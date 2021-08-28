@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: a3895b2d3e5ee435f0aeb1bb9b2becf23b6da71ecd387bbbc06fac3f1941a8d7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e65d7e869011cbbc6a55828f693782a6b7e0dfd6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838828"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575941"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender para Office 365 en Microsoft 365 Defender
 
@@ -48,11 +48,11 @@ En la tabla siguiente se enumeran los cambios en la navegación entre el Centro 
 |Administración de registros||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Información de gobierno||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Administración de amenazas|[Colaboración & correo electrónico](https://security.microsoft.com/homepage)|||
-|Permissions|[Permisos & roles](https://security.microsoft.com/emailandcollabpermissions)|Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
+|Permisos|[Permisos & roles](https://security.microsoft.com/emailandcollabpermissions)|Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Flujo del correo|||Consulta [Exchange de administración](https://admin.exchange.microsoft.com/#/)|
 |Privacidad de datos||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Búsqueda|[Auditoría](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Búsqueda (búsqueda de contenido)||
-|Informes|[Informe](https://security.microsoft.com/emailandcollabreport)|||
+|Informes|[Report](https://security.microsoft.com/emailandcollabreport)|||
 |Garantía de servicio||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Supervisión||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
 |eDiscovery||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
@@ -72,11 +72,11 @@ La navegación izquierda o la barra de inicio rápido tienen un aspecto familiar
 
 Con la solución Microsoft 365 Defender unificada, puede unir las señales de amenaza y determinar el ámbito completo y el impacto de la amenaza, y cómo afecta actualmente a la organización.
 
-:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Imagen de Microsoft 365 Defender experiencia convergente":::
+:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Imagen de Microsoft 365 Defender experiencia convergente.":::
 
 Defender for Office 365 protege su organización contra las amenazas malintencionadas que suponen los mensajes de correo electrónico, los vínculos (URL) y las herramientas de colaboración.
 
-:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Imagen de Defender para Office 365":::
+:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Imagen de Defender para Office 365.":::
 
 ### <a name="incidents-and-alerts"></a>Incidentes y alertas
 
@@ -85,7 +85,7 @@ Aúna la administración de incidentes y de alertas en todos sus correos electr�
 - [Más información acerca de las Investigaciones](incidents-overview.md)
 - [Obtenga más información sobre cómo administrar alertas](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-![La barra de inicio rápido de alertas y acciones](../../media/converge-1-alerts-and-actions.png)
+![La barra De alertas y acciones de inicio rápido.](../../media/converge-1-alerts-and-actions.png)
 
 ### <a name="hunting"></a>Búsqueda
 

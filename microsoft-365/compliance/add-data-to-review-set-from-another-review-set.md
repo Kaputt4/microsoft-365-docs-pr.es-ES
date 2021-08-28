@@ -19,12 +19,12 @@ description: Obtenga información sobre cómo seleccionar documentos de un conju
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: b307f538d40a0c1be1a3355f26fdfcae3dc061a29a242cfcedff51f4c7471ee3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 830f107a3935db23f771e2691fe6e83a5d8d2eff
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837136"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571174"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Agregar datos a un conjunto de revisión desde otro conjunto de revisión
 
@@ -40,12 +40,12 @@ Antes de empezar, deberá crear un conjunto de revisión para agregar los datos.
 
 Para agregar contenido de un conjunto de revisión a otro, seleccione documentos específicos en el conjunto de revisión de origen o seleccione todos los elementos devueltos por la consulta del conjunto de revisión. Si va a agregar elementos seleccionados, seleccione los elementos, **seleccione Acción** y, a continuación, seleccione Agregar a otro conjunto **de revisión**.
 
-![Agregar a otro conjunto de revisión en el menú Acción](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
+![Agregar a otro conjunto de revisión en el menú Acción.](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
 
 ## <a name="step-2-specify-options-for-adding-to-another-review-set"></a>Paso 2: Especificar opciones para agregar a otro conjunto de revisión
 
 En la **página desplegable Agregar a otro** conjunto de revisión, elija el conjunto de revisión al que desea agregar los elementos. Elija si desea agregar **Todos los resultados de búsqueda** o Elementos **seleccionados**.  **La** información adicional proporciona opciones para incluir todos los metadatos de  los elementos y si se deben incluir las etiquetas (seleccionando la casilla Etiquetas) del conjunto de revisión de origen cuando se agregan los documentos al nuevo conjunto de revisión.  
 
-![Opciones para agregar datos a otro conjunto de revisión](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
+![Opciones para agregar datos a otro conjunto de revisión.](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 
 Después de hacer clic **en Aceptar,** se crea un nuevo trabajo (denominado **Agregar datos** a otro conjunto de revisión) para agregar el contenido a otro conjunto de opiniones. Puede ir a la pestaña **Trabajos** y supervisar el progreso de este trabajo. Para obtener más información, vea [Administrar trabajos](managing-jobs-ediscovery20.md).

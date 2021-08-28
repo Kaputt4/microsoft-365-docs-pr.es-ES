@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector de Slack DataParser de 17a-4 para importar y archivar datos de Slack en Microsoft 365.
-ms.openlocfilehash: bffa5c769cedc61f1447a08fecc3290f8c1d45d6374fe4192ed59a615aef4119
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0d94a86b32fbd7269b8fc9d6a47990c29278c5d2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808670"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572748"
 ---
 # <a name="set-up-a-connector-to-archive-slack-data"></a>Configurar un conector para archivar datos de Slack
 
@@ -29,7 +29,7 @@ Una vez que los datos de Slack se almacenan en buzones de usuario, puede aplicar
 
 En la siguiente introducción se explica el proceso de uso de un conector de datos para archivar datos de Slack en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos de Slack de 17a-4](../media/SlackDataParserConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos de Slack de 17a-4.](../media/SlackDataParserConnectorWorkflow.png)
 
 1. Su organización trabaja con 17a-4 para configurar y configurar Slack DataParser.
 

@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar la herramienta Diagnóstico de página para optimizar el peso de la página SharePoint páginas de sitio modernas en línea.
-ms.openlocfilehash: 95a8a978d0451c36416fbe22ae3135962d34bf22a3dae68688a9dafe59be52c0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 04c3e94abef062bbd37db268da56f21c2dd7dc65
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848815"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573108"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimizar el peso de la página en páginas de sitio modernas de SharePoint Online
 
@@ -53,7 +53,7 @@ Puede encontrarse con los siguientes resultados:
 
 Si el resultado **Peso de página inferior a 500KB** aparece en la sección **Requiere atención**, puede hacer clic en el resultado para obtener detalles.
 
-![Solicitudes a resultados de SharePoint](../media/modern-portal-optimization/pagediag-page-weight.png)
+![Solicitudes para obtener SharePoint resultados.](../media/modern-portal-optimization/pagediag-page-weight.png)
 
 ## <a name="remediate-page-weight-issues"></a>Corrección de problemas de peso de página
 
@@ -72,7 +72,7 @@ Puede encontrar más información para limitar el peso de la página en el artí
 
 Antes de realizar revisiones de página para corregir problemas de rendimiento, anote el tiempo de carga de la página en los resultados del análisis. Ejecute la herramienta de nuevo después de la revisión y compruebe si los nuevos resultados están en línea con su valor de referencia. Luego, compruebe el nuevo tiempo de carga de la página para ver si se ha producido alguna mejora.
 
-![Resultados de tiempo de carga de la página](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Resultados de tiempo de carga de página.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >El tiempo de carga de la página puede variar en función de varios factores, como la carga de la red, la hora del día y otras condiciones transitorias. Debe probar el tiempo de carga de la página varias veces, antes y después de realizar cambios, para obtener un promedio.

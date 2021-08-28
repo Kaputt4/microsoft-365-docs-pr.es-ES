@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Proteja el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, como ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: 06f253afdceb7d41b7cd1f3a6c891260a48771b0bef9d18e04b65fd1012dea49
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f0918f9cd6d23e5ebafb0a7aaf8208e1a06bfee5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798774"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571234"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa
 
@@ -42,23 +42,23 @@ Para los clientes que usan nuestros planes de empresa, Microsoft recomienda comp
 
 |Paso|Tarea|Todos Office 365 Enterprise planes|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|1|[Habilitar la autenticación multifactor de Azure AD (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2|[Protección contra amenazas](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Configurar Microsoft Defender para Office 365](#3-configure-microsoft-defender-for-office-365)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4 |[Configurar Microsoft Defender para la identidad](#4-configure-microsoft-defender-for-identity)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Activar Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|6 |[Configurar la protección de aplicaciones móviles de Intune para teléfonos y tabletas](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7 |[Configurar MFA y acceso condicional para invitados, incluida la protección de aplicaciones de Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8 |[Inscribir equipos en la administración de dispositivos y requerir equipos compatibles](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9 |[Optimizar la red para la conectividad en la nube](#9-optimize-your-network-for-cloud-connectivity)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[Entrenar a los usuarios](#10-train-users)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11|[Introducción a Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|12 |[Supervisar amenazas y tomar medidas](#12-monitor-for-threats-and-take-action)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Habilitar la autenticación multifactor de Azure AD (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2|[Protección contra amenazas](#2-protect-against-threats)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[Configurar Microsoft Defender para Office 365](#3-configure-microsoft-defender-for-office-365)|||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|4 |[Configurar Microsoft Defender para la identidad](#4-configure-microsoft-defender-for-identity)|||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[Activar Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|6 |[Configurar la protección de aplicaciones móviles de Intune para teléfonos y tabletas](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|7 |[Configurar MFA y acceso condicional para invitados, incluida la protección de aplicaciones de Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|8 |[Inscribir equipos en la administración de dispositivos y requerir equipos compatibles](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9 |[Optimizar la red para la conectividad en la nube](#9-optimize-your-network-for-cloud-connectivity)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10|[Entrenar a los usuarios](#10-train-users)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11 |[Introducción a Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|12 |[Supervisar amenazas y tomar medidas](#12-monitor-for-threats-and-take-action)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
 Antes de empezar, compruebe su Microsoft 365 [puntuación segura](./defender/microsoft-secure-score.md) en el centro Microsoft 365 seguridad. Desde un panel centralizado, puede supervisar y mejorar la seguridad de su Microsoft 365 identidades, datos, aplicaciones, dispositivos e infraestructura. Se le dan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o abordar recomendaciones con una aplicación o software de terceros. Las tareas recomendadas en este artículo elevarán la puntuación.
 
-![Captura de pantalla de Puntuación segura de Microsoft](../media/secure-score.png)
+![Captura de pantalla de Puntuación segura de Microsoft.](../media/secure-score.png)
 
 ## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1: Habilitar Azure AD Multi-Factor Authentication (MFA)
 
@@ -122,7 +122,7 @@ Deberá trabajar con el administrador de Exchange Online y el administrador de S
 
 Ahora que tienes configurado Microsoft Defender para Office 365 y Microsoft Defender para identity, puedes ver las señales combinadas de estas funciones en un panel. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) reúne alertas, incidentes, investigación y respuesta automatizadas y búsqueda avanzada entre cargas de trabajo (Microsoft Defender para la identidad, Defender para Office 365, Microsoft Defender para endpoint y Microsoft Cloud App Security) en un único panel en [security.microsoft.com](https://security.microsoft.com).
 
-![Ilustración del panel MTP](../media/top-ten-security-remote-work-mtp-dashboard.png)
+![Ilustración del panel MTP.](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
 Después de configurar uno o varios de los servicios de Defender Office 365, active MTP. Las nuevas características se agregan continuamente a MTP; considere la posibilidad de participar para recibir características de vista previa.
 

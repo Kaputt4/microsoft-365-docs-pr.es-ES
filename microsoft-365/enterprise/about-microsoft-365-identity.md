@@ -23,16 +23,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo administrar el servicio de identidad de usuario de Azure AD en Microsoft 365 modelos de identidad híbrida o solo en la nube.
-ms.openlocfilehash: 65cfd736ca12c91094d841277c00c42a916c6cda
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 0e83d94c6c82df3f47989433cf20ebf402b265df
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354157"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572712"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 modelos de identidad y Azure Active Directory
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Microsoft 365 usa Azure Active Directory (Azure AD), un servicio de autenticación y identidad de usuario basado en la nube que se incluye con la suscripción Microsoft 365, para administrar identidades y autenticación para Microsoft 365. La configuración correcta de la infraestructura de identidad es fundamental para administrar Microsoft 365 acceso de usuario y permisos para la organización.
 
@@ -64,7 +64,7 @@ Una identidad solo en la nube usa cuentas de usuario que solo existen en Azure A
 
 Estos son los componentes básicos de la identidad de solo nube.
 
-![Componentes básicos de identidad de solo nube](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![Componentes básicos de identidad de solo nube.](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 Tanto los usuarios locales como los remotos (en línea) usan sus cuentas de usuario y contraseñas de Azure AD para acceder a Microsoft 365 servicios en la nube. Azure AD autentica las credenciales de usuario en función de sus cuentas de usuario y contraseñas almacenadas.
 
@@ -81,7 +81,7 @@ Al implementar la identidad híbrida, su AD DS local es el origen autoritativo p
 
 Estos son los componentes de la identidad híbrida.
 
-![Componentes de identidad híbrida](../media/about-microsoft-365-identity/hybrid-identity.png)
+![Componentes de identidad híbrida.](../media/about-microsoft-365-identity/hybrid-identity.png)
 
 El inquilino de Azure AD tiene una copia de las cuentas de AD DS. En esta configuración, los usuarios locales y remotos que acceden a Microsoft 365 servicios en la nube se autentican en Azure AD.
 

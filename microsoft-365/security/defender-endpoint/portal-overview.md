@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94b546026e5a8a060cfe97776392b0f4b12fc1e94a3e80560748c8c361080713
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 63a3592e2bb8a89c373910e73b0bc91d544415d6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868812"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572580"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Información general del portal del Centro de Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ Cuando abra el portal, verá:
 - (1) Panel de navegación (seleccione las líneas horizontales en la parte superior del panel de navegación para mostrarlo u ocultarlo)
 - (2) Búsqueda, Community, Localización, Ayuda y soporte técnico, Comentarios
 
- ![Portal de Microsoft Defender para puntos de conexión](images/mdatp-portal-overview.png)
+ ![Portal de Microsoft Defender para endpoint.](images/mdatp-portal-overview.png)
 
 > [!NOTE]
 > Las detecciones relacionadas con malware solo aparecerán si los dispositivos usan Antivirus de Microsoft Defender como el producto antimalware de protección en tiempo real predeterminado.
@@ -84,50 +84,50 @@ En la tabla siguiente se proporciona información sobre los iconos usados en tod
 
 Icono|Descripción
 :---|:---
-![Icono del logotipo de ATP](images/atp-logo-icon.png)|Logotipo de Microsoft Defender para endpoint
-![Icono de alerta](images/alert-icon.png)|Alerta: indicación de una actividad correlacionada con ataques avanzados.
-![Icono de detección](images/detection-icon.png)|Detección: indicación de una detección de amenazas de malware.
-![Icono de amenaza activa](images/active-threat-icon.png)|Amenaza activa: amenazas que se ejecutan activamente en el momento de la detección.
-![Icono corregido1](images/remediated-icon.png)|Corregido: amenaza eliminada del dispositivo.
-![Icono no corregido](images/not-remediated-icon.png)|Not remediated: Threat not removed from the device.
-![Icono de Rayo](images/atp-thunderbolt-icon.png)|Indica los eventos que desencadenaron una alerta en el **árbol de proceso de alerta**.
-![Icono de dispositivo](images/atp-machine-icon.png)|Icono de dispositivo
-![Icono de eventos antivirus de Microsoft Defender](images/atp-windows-defender-av-events-icon.png)|Antivirus de Microsoft Defender eventos
-![Icono de eventos de Protección de aplicaciones](images/atp-Application-Guard-events-icon.png)|Protección de aplicaciones de Windows Defender eventos
-![Icono de eventos de Device Guard](images/atp-Device-Guard-events-icon.png)|Device Guard de Windows Defender eventos
-![Icono de eventos de Protección contra vulnerabilidades](images/atp-Exploit-Guard-events-icon.png)|Windows Defender Eventos de Protección contra vulnerabilidades de seguridad
-![Icono de eventos de SmartScreen](images/atp-Smart-Screen-events-icon.png)|Windows Defender Eventos de SmartScreen
-![Icono de eventos de firewall](images/atp-Firewall-events-icon.png)|Windows Eventos de firewall
-![Icono de acción de respuesta](images/atp-respond-action-icon.png)|Acción de respuesta
-![Icono de eventos de proceso](images/atp-process-event-icon.png)|Eventos de proceso
-![Icono de eventos de comunicación de red](images/atp-network-communications-icon.png)|Eventos de red
-![Icono de eventos observados de archivo](images/atp-file-observed-icon.png)|Eventos de archivo
-![Icono de eventos del Registro](images/atp-registry-event-icon.png)|Eventos del Registro
-![Icono de eventos DLL de carga de módulo](images/atp-module-load-icon.png)|Cargar eventos DLL
-![Icono de otros eventos](images/atp-Other-events-icon.png)|Otros eventos
-![Icono de modificación de token de acceso](images/atp-access-token-modification-icon.png)|Modificación del token de acceso
-![Icono de creación de archivos](images/atp-file-creation-icon.png)|Creación de archivos
-![Icono de firmante](images/atp-signer-icon.png)|Firmante
-![Icono de ruta de acceso de archivo](images/atp-File-path-icon.png)|Ruta de acceso de archivo
-![Icono de línea de comandos](images/atp-command-line-icon.png)|Línea de comandos
-![Icono de archivo sin signo](images/atp-unsigned-file-icon.png)|Archivo sin signo
-![Icono de árbol de proceso](images/atp-process-tree.png)|Árbol de procesos
-![Icono de asignación de memoria](images/atp-memory-allocation-icon.png)|Asignación de memoria
-![Icono de inserción de procesos](images/atp-process-injection.png)|Inyección de procesos
-![Icono de ejecución de comandos de Powershell](images/atp-powershell-command-run-icon.png)|Ejecución de comandos de Powershell
-![Community icono del centro](images/atp-community-center.png)|Community centro
-![Icono de notificaciones](images/atp-notifications.png)|Notificaciones
-![No se encontraron amenazas](images/no-threats-found.png)|Investigación automatizada: no se han encontrado amenazas
-![Icono de error](images/failed.png)|Investigación automatizada: error
-![Icono parcialmente corregido](images/partially-investigated.png)|Investigación automatizada: parcialmente investigada
-![Finalizada por el sistema](images/terminated-by-system.png)|Investigación automatizada: finalizada por el sistema
-![Icono pendiente](images/pending.png)|Investigación automatizada: pendiente
-![Icono de ejecución](images/running.png)|Investigación automatizada: ejecución
-![Icono corregido2](images/remediated.png)|Investigación automatizada: corregido
-![Icono parcialmente investigado](images/partially_remediated.png)|Investigación automatizada: parcialmente subsanada
-![Icono de información de amenazas](images/tvm_bug_icon.png)|Administración & vulnerabilidad de amenazas: información sobre amenazas
-![Icono de alerta activa posible](images/tvm_alert_icon.png)|Administración & vulnerabilidad de amenazas: posible alerta activa
-![Icono de información de recomendación](images/tvm_insight_icon.png)|Administración & vulnerabilidad de amenazas: información de recomendaciones
+![Icono del logotipo de ATP.](images/atp-logo-icon.png)|Logotipo de Microsoft Defender para endpoint
+![Icono de alerta.](images/alert-icon.png)|Alerta: indicación de una actividad correlacionada con ataques avanzados.
+![Icono de detección.](images/detection-icon.png)|Detección: indicación de una detección de amenazas de malware.
+![Icono de amenaza activa.](images/active-threat-icon.png)|Amenaza activa: amenazas que se ejecutan activamente en el momento de la detección.
+![Icono corregido1.](images/remediated-icon.png)|Corregido: amenaza eliminada del dispositivo.
+![Icono no corregido.](images/not-remediated-icon.png)|Not remediated: Threat not removed from the device.
+![Icono de Rayo.](images/atp-thunderbolt-icon.png)|Indica los eventos que desencadenaron una alerta en el **árbol de proceso de alerta**.
+![Icono de dispositivo.](images/atp-machine-icon.png)|Icono de dispositivo
+![Icono de eventos AV de Microsoft Defender.](images/atp-windows-defender-av-events-icon.png)|Antivirus de Microsoft Defender eventos
+![Icono de eventos de Protección de aplicaciones.](images/atp-Application-Guard-events-icon.png)|Protección de aplicaciones de Windows Defender eventos
+![Icono de eventos de Device Guard.](images/atp-Device-Guard-events-icon.png)|Device Guard de Windows Defender eventos
+![Icono de eventos de Protección contra vulnerabilidades de seguridad.](images/atp-Exploit-Guard-events-icon.png)|Windows Defender Eventos de Protección contra vulnerabilidades de seguridad
+![Icono de eventos de SmartScreen.](images/atp-Smart-Screen-events-icon.png)|Windows Defender Eventos de SmartScreen
+![Icono de eventos de firewall.](images/atp-Firewall-events-icon.png)|Windows Eventos de firewall
+![Icono de acción de respuesta.](images/atp-respond-action-icon.png)|Acción de respuesta
+![Icono procesar eventos.](images/atp-process-event-icon.png)|Eventos de proceso
+![Icono de eventos de comunicación de red.](images/atp-network-communications-icon.png)|Eventos de red
+![Icono de eventos observados en el archivo.](images/atp-file-observed-icon.png)|Eventos de archivo
+![Icono de eventos del Registro.](images/atp-registry-event-icon.png)|Eventos del Registro
+![Icono de eventos DLL de carga de módulo.](images/atp-module-load-icon.png)|Cargar eventos DLL
+![Icono de otros eventos.](images/atp-Other-events-icon.png)|Otros eventos
+![Icono de modificación de token de acceso.](images/atp-access-token-modification-icon.png)|Modificación del token de acceso
+![Icono de creación de archivos.](images/atp-file-creation-icon.png)|Creación de archivos
+![Icono de firmante.](images/atp-signer-icon.png)|Firmante
+![Icono de ruta de acceso de archivo.](images/atp-File-path-icon.png)|Ruta de acceso de archivo
+![Icono de línea de comandos.](images/atp-command-line-icon.png)|Línea de comandos
+![Icono de archivo sin signo.](images/atp-unsigned-file-icon.png)|Archivo sin signo
+![Icono de árbol de proceso.](images/atp-process-tree.png)|Árbol de procesos
+![Icono de asignación de memoria.](images/atp-memory-allocation-icon.png)|Asignación de memoria
+![Icono de inserción de procesos.](images/atp-process-injection.png)|Inyección de procesos
+![Icono de ejecución de comandos de Powershell.](images/atp-powershell-command-run-icon.png)|Ejecución de comandos de Powershell
+![Community icono central.](images/atp-community-center.png)|Community centro
+![Icono de notificaciones.](images/atp-notifications.png)|Notificaciones
+![No se han encontrado amenazas.](images/no-threats-found.png)|Investigación automatizada: no se han encontrado amenazas
+![Icono con error.](images/failed.png)|Investigación automatizada: error
+![Icono parcialmente corregido.](images/partially-investigated.png)|Investigación automatizada: parcialmente investigada
+![Terminado por el sistema.](images/terminated-by-system.png)|Investigación automatizada: finalizada por el sistema
+![Icono pendiente.](images/pending.png)|Investigación automatizada: pendiente
+![Icono de ejecución.](images/running.png)|Investigación automatizada: ejecución
+![Icono corregido2.](images/remediated.png)|Investigación automatizada: corregido
+![Icono parcialmente investigado.](images/partially_remediated.png)|Investigación automatizada: parcialmente subsanada
+![Icono de información sobre amenazas.](images/tvm_bug_icon.png)|Administración & vulnerabilidad de amenazas: información sobre amenazas
+![Icono de alerta activa posible.](images/tvm_alert_icon.png)|Administración & vulnerabilidad de amenazas: posible alerta activa
+![Icono de información de recomendación.](images/tvm_insight_icon.png)|Administración & vulnerabilidad de amenazas: información de recomendaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

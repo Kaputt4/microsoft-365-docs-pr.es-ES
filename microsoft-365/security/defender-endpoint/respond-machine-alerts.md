@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cf685c61df92a2a5599e2ba8deb407edb5b6a5f1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f27049b518f13d0ddfd204b2aed16b60f07b8090
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255089"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573036"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -46,7 +46,7 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 - Consultar a un experto en amenazas
 - Centro de actividades
 
-[![Imagen de las acciones de respuesta](images/response-actions.png)](images/response-actions.png#lightbox)
+[![Imagen de las acciones de respuesta.](images/response-actions.png)](images/response-actions.png#lightbox)
 
  Puedes encontrar páginas de dispositivo en cualquiera de las siguientes vistas:
 
@@ -99,11 +99,11 @@ Forma alternativa:
 
 1. Selecciona **Centro de acciones** en la sección acciones de respuesta de la página del dispositivo.
 
-    ![Imagen del botón centro de acción](images/action-center-package-collection.png)
+    ![Imagen del botón centro de acción.](images/action-center-package-collection.png)
 
 2. En el control desplegable del Centro de acciones, seleccione **Paquete de colección de paquetes disponible** para descargar el archivo zip.
 
-    ![Imagen del botón descargar paquete](images/collect-package.png)
+    ![Imagen del botón descargar paquete.](images/collect-package.png)
 
 El paquete contiene las siguientes carpetas:
 
@@ -111,7 +111,7 @@ El paquete contiene las siguientes carpetas:
 
 ****
 
-|Folder|Descripción|
+|Folder|Description|
 |:---|:---------|
 |Autoruns|Contiene un conjunto de archivos que cada uno representa el contenido del registro de un punto de entrada de inicio automático (ASEP) conocido para ayudar a identificar la persistencia del atacante en el dispositivo. <p> <div class="alert"><b>NOTA:</b> Si no se encuentra la clave del Registro, el archivo contendrá el siguiente mensaje: "ERROR: el sistema no pudo encontrar la clave o el valor del Registro especificados".<div>|
 |Programas instalados|Este .CSV contiene la lista de programas instalados que pueden ayudar a identificar lo que está instalado actualmente en el dispositivo. Para obtener más información, [vea Win32_Product clase](https://go.microsoft.com/fwlink/?linkid=841509).|
@@ -140,7 +140,7 @@ Como parte del proceso de investigación o respuesta, puedes iniciar de forma re
 
 Uno que haya seleccionado **Ejecutar examen antivirus,** seleccione el tipo de examen que desea ejecutar (rápido o completo) y agregue un comentario antes de confirmar el examen.
 
-![Imagen de notificación para seleccionar examen rápido o examen completo y agregar comentario](images/run-antivirus.png)
+![Imagen de notificación para seleccionar el examen rápido o el examen completo y agregar comentario.](images/run-antivirus.png)
 
 El Centro de acciones mostrará la información del examen y la escala de tiempo del dispositivo incluirá un nuevo evento, lo que refleja que se envió una acción de examen en el dispositivo. Las alertas antivirus de Microsoft Defender reflejarán las detecciones que se han producido durante el examen.
 
@@ -168,13 +168,13 @@ Para restringir la ejecución de una aplicación, se aplica una directiva de int
 
 Una vez que haya seleccionado Restringir la ejecución **de la** aplicación en la página del dispositivo, escriba un comentario y seleccione **Confirmar**. El Centro de acciones mostrará la información del examen y la escala de tiempo del dispositivo incluirá un nuevo evento.
 
-![Imagen de notificación de restricción de aplicaciones](images/restrict-app-execution.png)
+![Imagen de notificación de restricción de aplicaciones.](images/restrict-app-execution.png)
 
 ### <a name="notification-on-device-user"></a>Notificación en el usuario del dispositivo
 
 Cuando una aplicación está restringida, se muestra la siguiente notificación para informar al usuario de que una aplicación está siendo restringida para que no se ejecute:
 
-![Imagen de la restricción de la aplicación](images/atp-app-restriction.png)
+![Imagen de la restricción de la aplicación.](images/atp-app-restriction.png)
 
 ## <a name="isolate-devices-from-the-network"></a>Aislar dispositivos de la red
 
@@ -195,7 +195,7 @@ En Windows 10 versión 1709 o posterior, tendrás control adicional sobre el niv
 
 Una vez que haya seleccionado **Aislar dispositivo** en la página del dispositivo, escriba un comentario y seleccione **Confirmar**. El Centro de acciones mostrará la información del examen y la escala de tiempo del dispositivo incluirá un nuevo evento.
 
-![Imagen del dispositivo aislado](images/isolate-device.png)
+![Imagen del dispositivo aislado.](images/isolate-device.png)
 
 > [!NOTE]
 > El dispositivo permanecerá conectado al servicio Defender for Endpoint incluso si está aislado de la red. Si has elegido habilitar la Outlook y Skype Empresarial, podrás comunicarte con el usuario mientras el dispositivo está aislado.
@@ -204,7 +204,7 @@ Una vez que haya seleccionado **Aislar dispositivo** en la página del dispositi
 
 Cuando se aísla un dispositivo, se muestra la siguiente notificación para informar al usuario de que el dispositivo está aislado de la red:
 
-![Imagen de no conexión de red](images/atp-notification-isolate.png)
+![Imagen de no conexión de red.](images/atp-notification-isolate.png)
 
 ## <a name="consult-a-threat-expert"></a>Consultar a un experto en amenazas
 
@@ -223,7 +223,7 @@ El **Centro de acciones** proporciona información sobre las acciones realizadas
 
 También se muestran todos los demás detalles relacionados, por ejemplo, fecha y hora de envío, el envío del usuario y si la acción se ha hecho correctamente o se ha fallado.
 
-![Imagen del centro de acción con información](images/action-center-details.png)
+![Imagen del centro de acción con información.](images/action-center-details.png)
 
 ## <a name="related-topic"></a>Tema relacionado
 

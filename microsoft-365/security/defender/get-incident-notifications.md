@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 33de1e3adc004e05a8c383c8277c358d769bf520528c4c7332e23c5d05635051
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 028723dfb41f8e4cca71ea67aea5a88a46c9bb50
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838945"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572964"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtener notificaciones de incidentes por correo electrónico
 
@@ -65,7 +65,7 @@ Siga estos pasos para crear una nueva regla y personalizar la configuración de 
     - **Incluir el nombre de la organización en el correo** electrónico: seleccione si desea que el nombre de la organización aparezca en la notificación de correo electrónico.
     - **Incluir vínculo de portal específico** del inquilino: seleccione si desea agregar un vínculo con el identificador de inquilino en la notificación de correo electrónico para obtener acceso a un inquilino Microsoft 365 inquilino específico.
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Configuración de notificaciones para notificaciones de correo electrónico de incidentes":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Configuración de notificaciones para notificaciones de correo electrónico de incidentes.":::
 
 5. Seleccione **Siguiente**. En la **página Destinatarios,** agregue las direcciones de correo electrónico que recibirán las notificaciones de incidentes. Seleccione **Agregar después** de escribir cada nueva dirección de correo electrónico. Para probar las notificaciones y asegurarse de que los destinatarios las reciben en las bandejas de entrada, seleccione **Enviar correo electrónico de prueba.** 
 6. Seleccione **Siguiente**. En la **página Revisar regla,** revise la configuración de la regla y, a continuación, **seleccione Crear regla**. Los destinatarios empezarán a recibir notificaciones de incidentes a través del correo electrónico en función de la configuración.
@@ -74,7 +74,7 @@ Para editar una regla existente, selecciónelo en la lista de reglas. En el pane
 
 Para eliminar una regla, selecciónelo en la lista de reglas. En el panel con el nombre de regla, seleccione **Eliminar**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)
 - [Investigar incidentes](investigate-incidents.md)

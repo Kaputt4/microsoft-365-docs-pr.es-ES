@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: Obtenga información sobre qué SharePoint soluciones de 2013 se pueden hospedar en Microsoft Azure máquinas virtuales y cómo configurar Azure para hospedar una.
-ms.openlocfilehash: d7405909e25078086147e2bab7504375b6527ff07c14a1750c9b5971592a4858
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 937072dfec55618a4bfb8f9405bd525023ca3d44
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858833"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571343"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquitecturas de Microsoft Azure para SharePoint 2013
 
@@ -113,7 +113,7 @@ Para la recuperación ante desastres en Azure, debe implementar Windows Server A
   
 **Figura 3: Configuración híbrida de dominios de Active Directory**
 
-![Dos máquinas virtuales implementadas en la red virtual de Azure y la subred de la granja de servidores de SharePoint son réplicas de controladores de dominio y servidores DNS.](../media/AZarch-HyADdomainConfig.png)
+![Las máquinas virtuales STwo implementadas en la red virtual de Azure y la subred SharePoint farm son controladores de dominio de réplica y servidores DNS.](../media/AZarch-HyADdomainConfig.png)
   
 Este diagrama es una continuación de los diagramas previos al agregar dos máquinas virtuales en una subred de Windows Server AD y DNS. Estas máquinas virtuales son réplicas de servidores DNS y controladores de dominio. Son una extensión del entorno de Windows Server AD local. 
   
@@ -137,7 +137,7 @@ Coloque las máquinas virtuales de la granja de servidores de SharePoint en nive
   
 **Figura 4: Colocación de máquinas virtuales de SharePoint**
 
-![Servidores de bases de datos y roles de servidor de SharePoint agregados a la red virtual Azure dentro de la subred de la granja de servidores de SharePoint.](../media/AZarch-SPVMsinCloudSer.png)
+![Los servidores de base de SharePoint y los roles de servidor agregados a la red virtual de Azure dentro de la subred SharePoint granja de servidores.](../media/AZarch-SPVMsinCloudSer.png)
   
 Este diagrama es una continuación de los diagramas previos al agregar los roles de servidor de granja de SharePoint en sus respectivos niveles.
   
@@ -153,7 +153,7 @@ Cuando diseñe la arquitectura de Azure para una granja de SharePoint, configure
   
 **Figura 5: Uso de Conjuntos de disponibilidad de Azure para proporcionar alta disponibilidad para niveles de granja de servidores de SharePoint**
 
-![Configuración de conjuntos de disponibilidad en la infraestructura de Azure para una solución de SharePoint 2013.](../media/AZenv-WinAzureAvailSetsHA.png)
+![Configuración de conjuntos de disponibilidad en la infraestructura de Azure para una SharePoint de 2013.](../media/AZenv-WinAzureAvailSetsHA.png)
   
 Este diagrama llama a la configuración de conjuntos de disponibilidad dentro de la infraestructura de Azure. Cada uno de los siguientes roles comparte un conjunto de disponibilidad separado:
   
@@ -173,7 +173,7 @@ Este es un ejemplo que muestra una arquitectura estándar de Sitios de Internet 
   
 **Figura 6: Ejemplo de planeación para objetivos de capacidad y rendimiento en una granja de tres niveles**
 
-![Arquitectura estándar de sitios de Internet de SharePoint 2013 con asignaciones de componentes que cumplen objetivos específicos de rendimiento y capacidad.](../media/AZarch-CapPerfexmpArch.png)
+![Estándar SharePoint arquitectura de sitios de Internet de 2013 con asignaciones de componentes que cumplen objetivos específicos de capacidad y rendimiento.](../media/AZarch-CapPerfexmpArch.png)
   
 En este diagrama:
   
@@ -189,7 +189,7 @@ Observemos más cerca el nivel de servidor de aplicaciones
   
 **Figura 7: Nivel de servidor de aplicaciones antes del ajuste**
 
-![Ejemplo de nivel de servidor de la aplicación de SharePoint Server 2013 antes de la optimización para conjuntos de disponibilidad de Microsoft Azure.](../media/AZarch-AppServtierBefore.png)
+![Ejemplo SharePoint de servidor de aplicaciones de Server 2013 antes de ajustar Microsoft Azure de disponibilidad.](../media/AZarch-AppServtierBefore.png)
   
 En este diagrama:
   
@@ -205,7 +205,7 @@ Los objetivos de rendimiento y capacidad para la granja permiten determinar el n
   
 **Figura 8: Nivel de servidor de aplicaciones después del ajuste**
 
-![Ejemplo de nivel de servidor de la aplicación de SharePoint Server 2013 después de la optimización para conjuntos de disponibilidad de Microsoft Azure.](../media/AZarch-AppServtierAfter.png)
+![Ejemplo SharePoint de servidor de aplicaciones de Server 2013 después de ajustar Microsoft Azure de disponibilidad.](../media/AZarch-AppServtierAfter.png)
   
 Este diagrama muestra los tres servidores de aplicaciones configurados de forma idéntica con los mismos cuatro componentes.
   
@@ -213,7 +213,7 @@ Cuando agregamos conjuntos de disponibilidad a los niveles de la granja de servi
   
 **Figura 9: La granja de SharePoint completada en los servicios de infraestructura de Azure**
 
-![Ejemplo de granja de servidores de SharePoint 2013 en los servicios de infraestructura de Azure con red virtual, conectividad entre locales, subredes, máquinas virtuales y conjuntos de disponibilidad.](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Ejemplo SharePoint 2013 en servicios de infraestructura de Azure con red virtual, conectividad entre locales, subredes, máquinas virtuales y conjuntos de disponibilidad.](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 Este diagrama muestra el conjunto de servidores de SharePoint implementado en los servicios de infraestructura de Azure, con conjuntos de disponibilidad para proporcionar dominios de error para los servidores de cada nivel.
   

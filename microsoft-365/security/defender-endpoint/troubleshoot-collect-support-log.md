@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 518194e3cbf185da415104991e1d7186f5912953
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 83f6853217112741168876d92b9440869e29a5c1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250569"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575509"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Recopilar registros de soporte técnico en Microsoft Defender para endpoint mediante respuesta en directo
 
@@ -47,15 +47,15 @@ En este tema se proporcionan instrucciones sobre cómo ejecutar la herramienta m
 
 3. Seleccione **Upload archivo a la biblioteca**.
 
-    ![Imagen del archivo de carga](images/upload-file.png)
+    ![Imagen del archivo de carga.](images/upload-file.png)
 
 4. Seleccione **Elegir archivo**.
 
-    ![Imagen del botón elegir archivo1](images/choose-file.png)
+    ![Imagen del botón elegir archivo1.](images/choose-file.png)
 
 5. Seleccione el archivo descargado denominado MDELiveAnalyzer.ps1 y, a continuación, haga clic en **Confirmar**
 
-   ![Imagen del botón elegir archivo2](images/analyzer-file.png)
+   ![Imagen del botón elegir archivo2.](images/analyzer-file.png)
 
 6. Mientras sigue en la sesión de LiveResponse, use los comandos siguientes para ejecutar el analizador y recopilar el archivo de resultados:
 
@@ -64,7 +64,7 @@ En este tema se proporcionan instrucciones sobre cómo ejecutar la herramienta m
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
     ```
 
-    [![Imagen de comandos](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
+    [![Imagen de comandos.](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
 
 > [!NOTE]
 >

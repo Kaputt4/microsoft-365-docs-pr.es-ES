@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo Contoso Corporation respondió a la pandemia de COVID-19 e ingenió su infraestructura de instalación y actualización de software para el trabajo híbrido.
-ms.openlocfilehash: e40e655801cb8a980dcde4e9be2167b81f12f74cccd2bd43878c66a5aeac5ca5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 06ce48969d35017da47be1e75ec3c374b9afb9a1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816708"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575449"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Respuesta y compatibilidad de COVID-19 de Contoso para el trabajo híbrido
 
@@ -35,7 +35,7 @@ Contoso también actualizó la configuración de los clientes VPN instalados en 
 
 Esta es la configuración resultante con dispositivos VPN instalados en la sede central de París y en cada una de las oficinas satélite. 
 
-![Infraestructura VPN de Contoso](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
+![Infraestructura VPN de Contoso.](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
 
 Un trabajador remoto con el cliente VPN instalado usa DNS para buscar la oficina regionalmente más cercana y se conecta al dispositivo VPN instalado allí. Con la tunelización dividida, el tráfico Microsoft 365 los puntos de conexión optimizar se envía directamente a la ubicación de red Microsoft 365 regional. El resto del tráfico se envía a través de la conexión VPN al dispositivo VPN.
 
@@ -67,7 +67,7 @@ Esto significa que algunas de las instalaciones y actualizaciones del dispositiv
 
 Esta es la infraestructura resultante.
 
-![Infraestructura de instalación y actualizaciones de Contoso](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
+![Infraestructura de instalación y actualizaciones de Contoso.](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
 
 El comportamiento de instalación y actualización se determina al convertir las cuentas de equipo de los dispositivos en miembros de uno de estos grupos:
 

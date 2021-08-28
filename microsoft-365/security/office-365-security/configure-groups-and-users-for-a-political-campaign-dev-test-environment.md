@@ -19,12 +19,12 @@ description: 'Resumen: Cree suscripciones de evaluación de Office 365 y Enterpr
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d96d91d264911343bac32baee5eee7da08064f5546ac787730ad62a80c441cac
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f39a898a6926938790b7adb3d18ec66641224bd9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56816874"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575737"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política
 
@@ -194,11 +194,11 @@ Siga estos pasos para comprobar que las licencias basadas en grupos y la pertene
 
 Registre estos valores para trabajar con las suscripciones de prueba de Office 365 y EMS en este entorno de desarrollo y pruebas:
 
-- Nombre de la organización de la suscripción de prueba: ![Subrayado](../../media/Common-Images/TableLine.png)
+- Nombre de la organización de la suscripción de prueba: ![Subrayado.](../../media/Common-Images/TableLine.png)
 
   Por ejemplo, en el nombre de dominio de la suscripción de prueba de contoso.onmicrosoft.com, el nombre de la organización es “contoso”.
 
-- El nombre del administrador global: ![Subrayado](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- El nombre del administrador global: ![Subrayado.](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Registre la contraseña de esta cuenta y la contraseña inicial común de las demás cuentas de usuario en una ubicación segura.
 

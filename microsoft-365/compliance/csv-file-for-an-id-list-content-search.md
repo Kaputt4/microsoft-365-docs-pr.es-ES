@@ -18,12 +18,12 @@ ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
 description: Use un archivo CSV de una búsqueda de contenido existente para crear una búsqueda de lista de identificadores que devuelva elementos de correo electrónico específicos.
-ms.openlocfilehash: db22ac702e71004d73728350acf4242c9a5ac25d59749584dc8a7948ff2d1065
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3fc43f410d6361ac655f7f839b6b4f8752483ef9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871955"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571078"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Preparar un archivo CSV para una búsqueda de contenido de lista de identificadores
 
@@ -69,7 +69,7 @@ Puede usar un archivo CSV de una búsqueda que incluye sitios SharePoint y cuent
 
     Este es un ejemplo de un archivo CSV que está listo para enviarse para una búsqueda de contenido de lista de identificadores.
 
-    ![Ejemplo de un archivo CSV para una búsqueda de contenido de destino](../media/SearchIDListCSVFile.png)
+    ![Ejemplo de un archivo CSV para una búsqueda de contenido de destino.](../media/SearchIDListCSVFile.png)
 
 6. Guarde el archivo CSV o use **Guardar como** para guardar el archivo con un nombre de archivo diferente. En ambos casos, asegúrese de guardar el archivo con el formato CSV.
 
@@ -94,7 +94,7 @@ El siguiente paso es crear una nueva búsqueda de lista de identificadores y env
 
     Este es un ejemplo de la página desplegable de una búsqueda de lista de identificadores que muestra la consulta generada y el número estimado de resultados de búsqueda.
 
-    ![Consulta de búsqueda de búsqueda de lista de identificadores](../media/SearchIDListFlyout.png)
+    ![Consulta de búsqueda para la búsqueda de lista de identificadores.](../media/SearchIDListFlyout.png)
 
     El número de elementos estimados que se muestran en las estadísticas para la búsqueda de id. debe coincidir con el número de elementos seleccionados en el archivo CSV.
 

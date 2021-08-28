@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos SMS y MMS de la red de Verizon en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: a484d8919c549bedf43bdf3895da5d0a7795f041f6514ac2720681894bfeabc4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d95b78267dc74fb78eb9db6fcf3df25c4a4ac59a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820665"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571102"
 ---
 # <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Configurar un conector para archivar datos de Red De Verizon
 
@@ -29,7 +29,7 @@ Después de almacenar los datos del conector de red De Verizon en buzones de usu
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de Red De Verizon en Microsoft 365.
 
-![Flujo de trabajo de archivado de Red De Verizon](../media/VerizonNetworkConnectorWorkflow.png)
+![Flujo de trabajo de archivado de Red De Verizon.](../media/VerizonNetworkConnectorWorkflow.png)
 
 1. Su organización trabaja con TeleMessage y Verizon para configurar un conector de red de Verizon. Para obtener más información, vea [Verizon Network Archiver](https://www.telemessage.com/office365-activation-for-verizon-network-archiver/).
 

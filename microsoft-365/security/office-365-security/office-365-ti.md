@@ -21,12 +21,12 @@ ms.custom:
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en Microsoft Defender para Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2e6a237295a979797cd8884d07d1afe8e284cace
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: a3af6aec423fd77dc04954974be05d3e299279e2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589295"
+ms.locfileid: "58572856"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
@@ -100,7 +100,7 @@ Microsoft Defender para Office 365 usa control de acceso basado en roles. Los pe
 > Aunque algunos roles, como el administrador de seguridad, se pueden asignar en el portal de Microsoft 365 Defender, considere la posibilidad de usar el Centro de administración de Microsoft 365 o Azure Active Directory en su lugar. Para obtener información sobre roles, grupos de roles y permisos, vea los siguientes recursos:
 >
 > - [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
-> - [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)
+> - [Permisos de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 <br>
 

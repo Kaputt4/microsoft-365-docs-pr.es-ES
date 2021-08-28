@@ -17,12 +17,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo crear un sitio de extranet B2B o un equipo con invitados administrados de una organización asociada.
-ms.openlocfilehash: ab88ba8b12c6eb53bc3c0b3c4b22cb09919ce38256b68fa65256e64d7ff81bdd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7e3ddf12473095b0a7ac91ded01256e77c299ddf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883800"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572388"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Crear una extranet B2B con invitados administrados
 
@@ -40,7 +40,7 @@ El uso de esta característica requiere una Azure AD Premium P2 licencia.
 
 Las nubes especializadas, como Azure Germany y Azure China 21Vianet, no están disponibles actualmente para su uso.
 
-## <a name="video-demonstration"></a>Demostración de vídeo
+## <a name="video-demonstration"></a>Vídeo de demostración
 
 En este vídeo se muestran los procedimientos descritos en este artículo.
 
@@ -62,7 +62,7 @@ Para agregar una organización conectada
 10. Haga clic en **Siguiente: Revisar + Crear**.
 11. Revise la configuración que ha elegido y, a continuación, haga clic **en Crear**.
 
-    ![Captura de pantalla de la página de organizaciones conectadas en Azure Active Directory](../media/identity-governance-connected-organizations.png)
+    ![Captura de pantalla de la página de organizaciones conectadas en Azure Active Directory.](../media/identity-governance-connected-organizations.png)
 
 ## <a name="choose-the-resources-to-share"></a>Elegir los recursos que se compartirán
 
@@ -75,7 +75,7 @@ Para crear un catálogo
 4. Escriba un nombre y una descripción para el catálogo y asegúrese de que **Enabled** y **Enabled para** usuarios externos estén establecidos en **Sí**.
 5. Haga clic en **Crear**.
 
-   ![Captura de pantalla de la página catálogos en Azure Active Directory Identity Governance](../media/identity-governance-catalogs.png)
+   ![Captura de pantalla de la página catálogos Azure Active Directory Identity Governance.](../media/identity-governance-catalogs.png)
 
 Una vez creado el catálogo, se agrega el SharePoint sitio o equipo que desea compartir con la organización asociada.
 
@@ -84,7 +84,7 @@ Para agregar recursos a un catálogo
 2. Haga **clic en Recursos** y, a **continuación, en Agregar recursos.**
 3. Seleccione los equipos o SharePoint que desea incluir en la extranet y, a continuación, haga clic en **Agregar**.
 
-   ![Captura de pantalla de la página de recursos del catálogo Azure Active Directory identity governance](../media/identity-governance-catalog-resource.png)
+   ![Captura de pantalla de la página de recursos del catálogo Azure Active Directory Identity Governance.](../media/identity-governance-catalog-resource.png)
 
 Una vez definidos los recursos que desea compartir, el siguiente paso es crear un paquete de acceso, que defina el tipo de acceso que se concede a los usuarios asociados y el proceso de aprobación de los nuevos usuarios asociados que solicitan acceso.
 
@@ -106,7 +106,7 @@ Para crear un paquete de acceso
 15. Elija la configuración de expiración y acceso a la revisión que desea usar y, a continuación, haga clic en **Siguiente: Revisar + Crear**.
 16. Revise la configuración y, a continuación, haga clic **en Crear**.
 
-    ![Captura de pantalla de la pantalla de paquetes de acceso Azure Active Directory Identity Governance](../media/identity-governance-access-packages.png)
+    ![Captura de pantalla de la pantalla de paquetes de acceso Azure Active Directory Identity Governance.](../media/identity-governance-access-packages.png)
 
 Si te asocias con una organización grande, es posible que quieras ocultar el paquete de acceso. Si el paquete está oculto, los usuarios de la organización asociada no verán el paquete en su portal *de My Access.* En su lugar, se les debe enviar un vínculo directo para registrarse en el paquete. Ocultar el paquete de acceso puede reducir el número de solicitudes de acceso inadecuadas y también puede ayudar a mantener los paquetes de acceso disponibles organizados en el portal de la organización asociada.
 
@@ -115,7 +115,7 @@ Para establecer un paquete de acceso en oculto
 2. En la **página Información** general, haga clic **en Editar**.
 3. En **Propiedades**, elija **Sí** **para Oculto** y, a continuación, haga clic en **Guardar**.
 
-   ![Captura de pantalla de una pantalla de propiedades del paquete de acceso de edición](../media/identity-governance-access-package-hidden.png)
+   ![Captura de pantalla de una pantalla de propiedades del paquete de acceso de edición.](../media/identity-governance-access-package-hidden.png)
 
 ## <a name="invite-partner-users"></a>Invitar a usuarios asociados
 
@@ -125,7 +125,7 @@ Para buscar el vínculo del portal de acceso
 1. En Gobierno de identidades de Azure AD, haga clic **en Paquetes de Access** y, a continuación, haga clic en el paquete de acceso.
 2. En la **página Información** general, haga clic en Copiar **en el** portapapeles para el vínculo Portal de **My Access**.
 
-   ![Captura de pantalla de las propiedades del paquete de acceso con el vínculo del portal de acceso](../media/identity-governance-access-portal-link.png)
+   ![Captura de pantalla de las propiedades del paquete de acceso con el vínculo del portal de acceso.](../media/identity-governance-access-portal-link.png)
 
 Una vez copiado el vínculo, puede compartirlo con su contacto en la organización asociada y puede enviarlo a los usuarios de su equipo de colaboración.
 

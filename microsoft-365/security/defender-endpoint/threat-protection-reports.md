@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a82b88683eaf1e7033115ce98773abf810602264dda8e48f5004d4ee5bf1cdc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 327217a9682e8a50c41c2696292d1a453fbd8cf9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817281"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575989"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Informe de protección contra amenazas en Microsoft Defender para punto de conexión
 
@@ -39,7 +39,7 @@ El informe de protección contra amenazas proporciona información de alto nivel
 
 El panel está estructurado en dos secciones:
 
-![Imagen del informe de protección contra amenazas](images/threat-protection-reports.png)
+![Imagen del informe de protección contra amenazas.](images/threat-protection-reports.png)
 
 Sección | Descripción 
 :---|:---

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d9c244b048685824abfece8302c2528fa51a5802
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: c9a9cfa6e790cd179c0f9a13ce4fd312c0819411
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349997"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575537"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidentes en Microsoft 365 Defender
 
@@ -46,7 +46,7 @@ Microsoft 365 servicios y aplicaciones crean alertas cuando detectan un evento o
 
 Dado que unir las alertas individuales para obtener información sobre un ataque puede ser un desafío y un consumo de tiempo, Microsoft 365 Defender agrega automáticamente las alertas y su información asociada a un incidente.
 
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Cómo Microsoft 365 Defender los eventos de entidades en un incidente":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Cómo Microsoft 365 Defender los eventos de las entidades en un incidente.":::
 
 Vea esta breve introducción a los incidentes en Microsoft 365 Defender (4 minutos).
 
@@ -68,7 +68,7 @@ Si [está habilitado,](m365d-enable.md)Microsoft 365 Defender investigar y resol
 
 Puede administrar incidentes de incidentes **& alertas** > incidentes en el inicio rápido del portal de Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="La página Incidentes del portal de Microsoft 365 Defender web":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="La página Incidentes del portal de Microsoft 365 Defender datos.":::
 
 Al seleccionar un nombre de incidente, se muestra un resumen del incidente y se proporciona acceso a las pestañas con información adicional.
 
@@ -102,13 +102,13 @@ Las pestañas adicionales para un incidente son:
 
 Esta es la relación entre un incidente y sus datos y las pestañas de un incidente en Microsoft 365 Defender portal.
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="La relación de un incidente y sus datos con las pestañas de un incidente en el portal de Microsoft 365 Defender web":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="La relación de un incidente y sus datos con las pestañas de un incidente en el portal Microsoft 365 Defender web.":::
 
 ## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Flujo de trabajo de respuesta a incidentes de ejemplo para Microsoft 365 Defender
 
 Este es un flujo de trabajo de ejemplo para responder a incidentes en Microsoft 365 con el portal Microsoft 365 Defender web.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Ejemplo de flujo de trabajo de respuesta a incidentes para Microsoft 365":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Ejemplo de flujo de trabajo de respuesta a incidentes para Microsoft 365.":::
 
 De forma continua, identifique los incidentes de mayor prioridad para el análisis y la resolución en la cola de incidentes y prepárese para la respuesta. Esta es una combinación de:
 
@@ -146,7 +146,7 @@ Para obtener más información acerca de la respuesta a incidentes en todos los 
 
 Este es un ejemplo de operaciones de seguridad (SecOps) para Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Un ejemplo de operaciones de seguridad para Microsoft 365 Defender":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Un ejemplo de operaciones de seguridad para Microsoft 365 Defender.":::
 
 Las tareas diarias pueden incluir:
 
@@ -177,7 +177,7 @@ Para obtener más información acerca de SecOps en todos los productos de Micros
 - [Procedimientos recomendados](/security/compass/security-operations)
 - [Vídeos y diapositivas](/security/compass/security-operations-videos-and-decks)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 **Si es nuevo en el análisis** de seguridad y la respuesta a incidentes:
 

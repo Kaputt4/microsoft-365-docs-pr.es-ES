@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Obtenga información sobre cómo usar Azure ExpressRoute con Office 365 y planear el proyecto de implementación de red si está implementando con él.
-ms.openlocfilehash: 742beb28db325b61c837d205b9463be3fcc551087628d39e3c1ce3839a1fd3d5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 599b1b6a40e8b74f7ca4e3ad90723f201b74592d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830406"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573168"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute para Office 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cómo planear el proyecto de implementación de red que será necesario si va a implementar Azure ExpressRoute para su uso con Office 365. Los servicios de infraestructura y plataforma que se ejecutan en Azure suelen beneficiarse al abordar las consideraciones de rendimiento y arquitectura de red. Se recomienda ExpressRoute para Azure en estos casos. Las ofertas de software como servicio como Office 365 y Dynamics 365 se han creado para tener acceso de forma segura y confiable a través de Internet. Puede leer sobre el rendimiento y la seguridad de Internet y cuándo puede considerar Azure ExpressRoute para Office 365 en el artículo [Assessing Office 365 network connectivity](assessing-network-connectivity.md).
 
@@ -49,11 +49,11 @@ Independientemente de si tiene una WAN de MPLS existente, ExpressRoute se puede 
 
 Tenga en cuenta el siguiente diagrama de red de alto nivel que muestra un cliente de Office 365 típico que se conecta a los centros de datos de Microsoft a través de Internet para obtener acceso a todas las aplicaciones de Microsoft, como Office 365, Windows Update y TechNet. Los clientes usan una ruta de acceso de red similar independientemente de si se conectan desde una red local o desde una conexión a Internet independiente.
 
-![Office 365 de red](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
+![Office 365 de red.](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
 
 Ahora vea el diagrama actualizado que muestra un cliente Office 365 que usa Internet y ExpressRoute para conectarse a Office 365. Tenga en cuenta que algunas conexiones como DNS público y Content Delivery Network nodos siguen necesitando la conexión pública a Internet. Observe también que los usuarios del cliente que no están ubicados en su edificio conectado a ExpressRoute se conectan a través de Internet.
 
-![Office 365 conectividad con ExpressRoute](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
+![Office 365 conectividad con ExpressRoute.](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
 
 ¿Todavía quiere más información? Obtenga información sobre cómo administrar el tráfico de red con [Azure ExpressRoute](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408) para Office 365 y obtenga información sobre cómo configurar [Azure ExpressRoute para Office 365](/azure/expressroute/expressroute-faqs). También hemos grabado una serie de aprendizaje de [Azure ExpressRoute](https://channel9.msdn.com/series/aer) para Office 365 de 10 partes en channel 9 para ayudar a explicar los conceptos de forma más exhaustiva.
 
@@ -123,10 +123,10 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/express
 
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
 
-[Intervalos de direcciones IP y direcciones URL de Office 365.](urls-and-ip-address-ranges.md)
+[Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
 
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

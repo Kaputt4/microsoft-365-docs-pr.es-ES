@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de aplicación.
-ms.openlocfilehash: 22836d5eff088d8bf76a418f6713a9ae84d0cb5e85d2065fcd64faec62131c26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3b5f4bda7855f79e8a0e731cd6c26793ac9c6927
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842711"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572268"
 ---
 # <a name="create-app-policies"></a>Crear directivas de aplicación
 
@@ -169,7 +169,7 @@ Publish metadata-based policies
 
 Ahora que su directiva de aplicación está creada, debe supervisarla en la página de **Directivas** para asegurarse de que está registrando un número esperado de alertas activas y alertas totales durante las pruebas.
 
-![La página de resumen de las directivas de MAPG en el Centro de cumplimiento de Microsoft 365 con una directiva resaltada](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
+![La página de resumen de las directivas de MAPG en el Centro de cumplimiento de Microsoft 365 con una directiva resaltada.](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
 
 Si el número de alertas es un valor inesperadamente bajo, edite la configuración de la directiva de la aplicación para asegurarse de que la ha configurado correctamente antes de establecer su estado.
 
@@ -180,7 +180,7 @@ Este es un ejemplo de un proceso para crear una nueva directiva, probarla y lueg
 3. Si el comportamiento no es el esperado, edite las aplicaciones de la directiva, las condiciones y la configuración de la acción según sea necesario y vuelva al paso 2.
 4. Si el comportamiento es el esperado, edite la directiva y cambie su estado a **Activo**.
 
-![El flujo de trabajo para crear una directiva de aplicación](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
+![El flujo de trabajo para crear una directiva de aplicación.](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
 
 ## <a name="next-step"></a>Paso siguiente
 

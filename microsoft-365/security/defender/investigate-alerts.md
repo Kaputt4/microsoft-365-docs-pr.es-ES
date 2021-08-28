@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d27f8849efa9b1548fdb189ff6b1d97e1af5e424
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 92c74ae2f7e7236138f28cf30b3e835eb10b636d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58249140"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572508"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ En Microsoft 365 Defender, las alertas relacionadas se agregan juntas para forma
 
 La **cola De alertas** muestra el conjunto actual de alertas. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Ejemplo de la cola de alertas":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Ejemplo de la cola de alertas.":::
 
 Las alertas de diferentes soluciones de seguridad de Microsoft como Microsoft Defender para endpoint, Microsoft Defender para Office 365 y Microsoft 365 Defender aparecen aquí.
 
@@ -50,7 +50,7 @@ De forma predeterminada, la cola de alertas del portal de Microsoft 365 Defender
 
 En la cola de alertas predeterminada, puede seleccionar Filtros **para** ver un panel **Filtros,** desde el que puede especificar un subconjunto de las alertas. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Ejemplo del panel de filtros de la cola de alertas":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Ejemplo del panel de filtros de la cola de alertas.":::
 
 Puede filtrar alertas según estos criterios:
 
@@ -115,7 +115,7 @@ Una vez que haya seleccionado una entidad de interés, la página de detalles ca
 
 Para administrar una alerta, seleccione la alerta en la cola de alertas de su fila para ver un **panel Administrar alertas.** Por ejemplo:
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Ejemplo del panel de resumen de una alerta":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Ejemplo del panel de resumen de una alerta.":::
 
 El **panel Administrar alerta** permite especificar:
 
@@ -149,7 +149,7 @@ Una vez que haya terminado de analizar una alerta  y se pueda resolver, vaya al 
 
 Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365 Defender para proporcionar alertas más verdaderas y menos falsas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 

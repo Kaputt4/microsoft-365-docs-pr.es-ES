@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 55fa863dca2caf3a88c7127993c392c510953af8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: cb693fb60277e5262578cc442df7e1c5ba3f3c16
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506459"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572256"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -48,7 +48,7 @@ Las etiquetas de retención se pueden aplicar a contenido automáticamente cuand
 
 Los procesos para aplicar automáticamente una etiqueta de retención se basan en estas condiciones:
 
-![Diagrama de roles y tareas para etiquetas de aplicación automática](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+![Diagrama de roles y tareas para etiquetas de aplicación automática.](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
 
 Utilice las siguientes instrucciones para los dos pasos de administrador.
 
@@ -154,7 +154,7 @@ Además, los elementos de SharePoint que están en borrador o que nunca se han p
 
 Al crear directivas de etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que cuando se crea una directiva de prevención de pérdida de datos (DLP). Cada plantilla está preconfigurada para buscar determinados tipos de información confidencial. En el siguiente ejemplo, los tipos de información confidencial son de la categoría **Privacidad**, y **la plantilla de datos de información personal identificable (PII) de Estados Unidos** :
 
-![Plantillas de directiva con tipos de información confidencial](../media/sensitive-info-configuration.png)
+![Plantillas de directiva con tipos de información confidencial.](../media/sensitive-info-configuration.png)
 
 Para obtener más información sobre los tipos de información confidencial, consulte [Definiciones de entidad del tipo de información confidencial](sensitive-information-type-entity-definitions.md). Actualmente, las [coincidencias exactas de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) y la [creación de huella digital de documento](document-fingerprinting.md) no son compatibles con este escenario.
 
@@ -174,7 +174,7 @@ Que debe tener en cuenta al usar tipos de información confidencial para aplicar
 
 Puede aplicar etiquetas automáticamente al contenido mediante una consulta que contenga palabras, frases o valores de propiedades que permiten búsquedas específicos. Puede restringir la consulta con operadores de búsqueda como Y, O y NO.
 
-![Editor de consultas](../media/new-retention-query-editor.png)
+![Editor de consultas.](../media/new-retention-query-editor.png)
 
 Para obtener más información sobre la sintaxis de consulta que usa el Lenguaje de consultas de palabras clave (KQL), vea [Referencia de la sintaxis del Lenguaje de consultas de palabras clave (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
@@ -259,7 +259,7 @@ La mayoría de las veces, las grabaciones de reuniones se guardan en OneDrive. P
 
 Si elige la opción para un clasificador que se puede entrenar, puede seleccionar uno de los clasificadores integrado o un clasificador personalizado. Los clasificadores integrados incluyen **Currículum**, **Código fuente**, **Código fuente**, **Acoso selectivo**, **Amenazas**:
 
-![Elegir clasificador que se puede entrenar](../media/retention-label-classifers.png)
+![Elegir clasificador que se puede entrenar.](../media/retention-label-classifers.png)
 
 > [!CAUTION]
 > Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No use este clasificador incorporado y si lo está usando actualmente, debería mover sus procesos de negocios fuera de él. Recomendamos que usen los clasificadores integrados de **Acoso selectivo**, **Blasfemias**, **Amenazas**
@@ -279,7 +279,7 @@ Que debe tener en cuenta al usar clasificadores que se pueden entrenar para apli
 
 Si aplica automáticamente las etiquetas de retención, puede tardar hasta siete días en aplicar las etiquetas de retención a todo el contenido existente que coincida con las condiciones.
   
-![Diagrama de cuándo entran en vigor las etiquetas de aplicación automática](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![Diagrama de cuándo entran en vigor las etiquetas de aplicación automática.](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
 Si las etiquetas que esperaba no aparecen después de siete días, compruebe el **Estado** de la directiva de aplicación automática seleccionándola en la página **Directivas de etiqueta** en el Centro de cumplimiento. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) en PowerShell para volver a intentar la distribución de la directiva:
 

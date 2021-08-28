@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden configurar y usar un conector de datos para importar y archivar datos de la herramienta de chat Instant Bloomberg en Microsoft 365.
-ms.openlocfilehash: f1851c23f8011e0caa98c52861cd686f12832a112c62353f18076d35671a8cf3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 98c9cd9077a8c2e11f8d51db983cbfbd0620c6f3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808767"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572736"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurar un conector para archivar datos de Instant Bloomberg
 
@@ -32,7 +32,7 @@ Una vez almacenados los datos de Instant Bloomberg en buzones de usuario, puede 
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de chat de Instant Bloomberg en Microsoft 365. 
 
-![Proceso de importación y archivo de Instant Bloomberg](../media/InstantBloombergDataArchiving.png)
+![Proceso de importación y archivo instantáneo de Bloomberg.](../media/InstantBloombergDataArchiving.png)
 
 1. Su organización trabaja con Bloomberg para configurar un sitio SFTP de Bloomberg. También trabajarás con Bloomberg para configurar Instant Bloomberg para copiar mensajes de chat en tu sitio sftp de Bloomberg.
 
@@ -92,11 +92,11 @@ El primer paso es obtener una copia de las claves públicas de Pretty Good Priva
 
 5. En la **página Agregar credenciales para origen de** contenido, haga clic en Deseo usar claves públicas PGP y SSH **proporcionadas por Microsoft**.
 
-   ![Seleccione la opción para usar claves públicas](../media/InstantBloombergPublicKeysOption.png)
+   ![Seleccione la opción para usar claves públicas.](../media/InstantBloombergPublicKeysOption.png)
 
 6. En el paso 1, haga clic en los vínculos Descargar clave **SSH**, **Descargar clave PGP** y Descargar dirección **IP** para guardar una copia de cada archivo en el equipo local.
 
-   ![Vínculos para descargar claves públicas y dirección IP](../media/InstantBloombergPublicKeyDownloadLinks.png)
+   ![Vínculos para descargar claves públicas y dirección IP.](../media/InstantBloombergPublicKeyDownloadLinks.png)
 
    Estos archivos contienen los siguientes elementos que se usan para configurar el sitio SFTP de Bloomberg en el paso 2:
 
@@ -171,7 +171,7 @@ Para obtener la dirección IP:
 
 6. En el paso 1, haga clic **en Descargar dirección IP** para guardar una copia del archivo de dirección IP en el equipo local.
 
-   ![Descargar la dirección IP](../media/InstantBloombergConnectorIPAddress.png)
+   ![Descargue la dirección IP.](../media/InstantBloombergConnectorIPAddress.png)
 
 7. Haga **clic en** Cancelar para cerrar el asistente. Vuelve a este asistente en el paso 2 para crear el conector.
 
@@ -191,7 +191,7 @@ Una vez configurado el sitio SFTP de Bloomberg, el siguiente paso es crear un co
 
 5. En la **página Agregar credenciales para origen de contenido,** haga clic en Deseo usar claves privadas **PGP y SSH.**
 
-   ![Seleccione la opción para usar claves privadas](../media/InstantBloombergPrivateKeysOption.png)
+   ![Seleccione la opción para usar claves privadas.](../media/InstantBloombergPrivateKeysOption.png)
 
 6. En el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic **en Validar conexión**.
 

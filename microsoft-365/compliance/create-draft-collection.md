@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Una colección borrador es una búsqueda de exhibición de documentos electrónicos de orígenes de datos custodiales y no custodiales en un caso Advanced eDiscovery que devuelve una estimación de búsqueda que coincide con la consulta de búsqueda de la colección. Puede revisar las estadísticas de búsqueda, obtener una vista previa de un muestreo de elementos y revisar y volver a ejecutar la colección antes de confirmar los resultados en un conjunto de revisión.
-ms.openlocfilehash: 42497a8f5f8d5d8e5ecf58ff8f486bffa578e6f0ca9375ab1924d2f2100b5729
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0354f2a04dfff82f995fe74663633f42ed01e677
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820441"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572724"
 ---
 # <a name="create-a-draft-collection-in-advanced-ediscovery"></a>Crear una colección borrador en Advanced eDiscovery
 
@@ -84,7 +84,7 @@ Después de crear una colección borrador, aparece en la página **Colecciones**
 
 Durante el proceso de borrador de colección, Advanced eDiscovery realiza una estimación de búsqueda con los criterios de búsqueda y los orígenes de datos especificados en la colección. Advanced eDiscovery también prepara un muestreo de elementos que puede obtener una vista previa. Una vez completada la colección, se actualizan las siguientes columnas y valores correspondientes en la **página** Colección:
 
-![Estados de estado de una colección borrador](../media/DraftCollectionStatus.png)
+![Estados de estado de una colección borrador.](../media/DraftCollectionStatus.png)
 
 - **Status:** indica el estado y el tipo de colección. Un valor de **Estimated** indica que se ha completado una colección borrador. Este mismo valor también indica que la colección es un borrador de colección y que no se ha agregado a un conjunto de revisión. Un valor **de Committed** en la columna **Estado** indica que la colección se ha agregado a un conjunto de revisión.
 
@@ -96,7 +96,7 @@ Durante el proceso de borrador de colección, Advanced eDiscovery realiza una es
 
 Una vez completada correctamente el borrador de la colección, puede realizar varias tareas. Para realizar la mayoría de estas tareas, simplemente vaya a la pestaña **Colecciones** y haga clic en el nombre de la colección borrador para mostrar la página desplegable.
 
-![Página desplegable de una colección de borradores](../media/DraftCollectionFlyoutPage.png)
+![Página desplegable de una colección borrador.](../media/DraftCollectionFlyoutPage.png)
 
 Esta es una lista de las cosas que puede hacer desde la página desplegable de la colección:
 
@@ -114,7 +114,7 @@ Esta es una lista de las cosas que puede hacer desde la página desplegable de l
 
 Puede usar las opciones del menú **Acciones** de la página desplegable de una colección de borradores para realizar varias tareas de administración.
 
-![Opciones en el menú Acciones para la colección borrador](../media/DraftCollectionActionsMenu.png)
+![Opciones en el menú Acciones para la colección borrador.](../media/DraftCollectionActionsMenu.png)
 
 A continuación se descripciones de las opciones de administración.
 

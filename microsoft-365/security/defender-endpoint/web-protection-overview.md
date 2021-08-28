@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f45de173b8f316c93d8a65f1c20dbd523038c8855c2c0524770eed3334edee2d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 345088af66e08cb693d2b0a8a1e9bfbc51400aab
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884438"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571270"
 ---
 # <a name="web-protection"></a>Protección web
 
@@ -40,7 +40,7 @@ ms.locfileid: "53884438"
 
 La protección web en Microsoft Defender para endpoint es una funcionalidad de protección contra amenazas [web,](web-threat-protection.md)filtrado de contenido [web](web-content-filtering.md)e [indicadores personalizados.](manage-indicators.md) La protección web te permite proteger los dispositivos contra amenazas web y te ayuda a regular el contenido no deseado. Para encontrar informes de protección web en el portal de Microsoft 365 Defender, vaya a **Informes > protección web**.
 
-:::image type="content" alt-text="Imagen de todas las tarjetas de protección web" source="images/web-protection.png" lightbox="images/web-protection.png":::
+:::image type="content" alt-text="Imagen de todas las tarjetas de protección web." source="images/web-protection.png" lightbox="images/web-protection.png":::
 
 ### <a name="web-threat-protection"></a>Protección contra amenazas web
 
@@ -177,17 +177,17 @@ Para enumerar los bloques que se deben a otras características (como indicadore
 Si un usuario visita una página web que supone un riesgo de malware, suplantación de identidad u otras amenazas web, Microsoft Edge desencadenará una página de bloqueo que lea "Este sitio se ha notificado como no seguro" junto con la información relacionada con la amenaza.
 
 > [!div class="mx-imgBorder"]
-> ![Página bloqueada por Microsoft Edge](../../media/web-protection-malicious-block.png)
+> ![Página bloqueada por Microsoft Edge.](../../media/web-protection-malicious-block.png)
 
 Si está bloqueado por WCF o un indicador personalizado, se muestra una página de bloque en Microsoft Edge que indica al usuario que su organización bloquea este sitio.
 
 > [!div class="mx-imgBorder"]
-> ![Página bloqueada por la organización](../../media/web-protection-indicator-blockpage.png)
+> ![Página bloqueada por la organización.](../../media/web-protection-indicator-blockpage.png)
 
 En cualquier caso, no se muestran páginas de bloqueo en exploradores de terceros y el usuario ve una página "Error de conexión segura" junto con una notificación del sistema. Según la directiva responsable del bloque, un usuario verá un mensaje diferente en la notificación del sistema. Por ejemplo, el filtrado de contenido web mostrará el mensaje "Este contenido está bloqueado". 
 
 > [!div class="mx-imgBorder"]
-> ![Página bloqueada por WCF](../../media/web-protection-np-block.png)
+> ![Página bloqueada por WCF.](../../media/web-protection-np-block.png)
 
 ## <a name="report-false-positives"></a>Notificar falsos positivos
 

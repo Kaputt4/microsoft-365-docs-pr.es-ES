@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los Microsoft 365 de configuración necesarios para configurar un sitio SharePoint para la colaboración con invitados.
-ms.openlocfilehash: 054de924b2cf5041694ca12dcf2fb4137242d16fb53060421aedb51aed9668a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5cb1b34832c8a7b4c5152efd5ab151218de1cd36
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810179"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572808"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -43,7 +43,7 @@ El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configu
 
 Compruebe la configuración de colaboración externa B2B para asegurarse de que no se bloquee el uso compartido con invitados.
 
-![Captura de pantalla Azure Active Directory página Colaboración Configuración externa](../media/azure-ad-organizational-relationships-settings.png)
+![Captura de pantalla Azure Active Directory página Colaboración Configuración externa.](../media/azure-ad-organizational-relationships-settings.png)
 
 Para establecer la configuración de colaboración externa
 
@@ -62,7 +62,7 @@ Si trabaja con invitados de varias organizaciones, tal vez quiera restringir su 
 
 Los SharePoint modernos usan Microsoft 365 para controlar el acceso al sitio. La configuración Microsoft 365 invitado de grupos de usuarios debe estar activada para que el acceso de invitado en SharePoint sitios funcione.
 
-![Captura de pantalla de la configuración de invitados de Grupos de Microsoft 365 en el Centro de administración de Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Captura de pantalla de Microsoft 365 configuración de invitado de grupos en Centro de administración de Microsoft 365.](../media/office-365-groups-guest-settings.png)
 
 Para establecer la configuración de invitado de Grupos de Microsoft 365
 
@@ -80,7 +80,7 @@ La configuración de nivel de organización determina la configuración que esta
 
 Si desea permitir el uso compartido de archivos y carpetas sin autenticar, elija **Cualquiera**. Si desea asegurarse de que todas las personas fuera de la organización tienen que autenticarse, elija **Invitados nuevos y existentes.** Elija la configuración más permisiva que cualquier sitio de su organización necesite.
 
-![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint](../media/sharepoint-organization-external-sharing-controls.png)
+![Captura de pantalla SharePoint configuración de uso compartido a nivel de organización.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 Para establecer la configuración de uso compartido de nivel de organización de SharePoint
@@ -113,7 +113,7 @@ Tenga en cuenta que el sitio no se puede compartir con personas no autenticadas 
 
 También puede usar etiquetas [de confidencialidad para controlar la configuración de uso compartido externo para SharePoint sitios](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](../media/sharepoint-site-external-sharing-settings.png)
+![Captura de pantalla SharePoint configuración de uso compartido externo del sitio.](../media/sharepoint-site-external-sharing-settings.png)
 
 Para establecer la configuración de uso compartido de nivel de sitio
 1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **Sitios** y haga clic en **Sitios activos**.

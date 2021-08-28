@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure las licencias basadas en grupos y la pertenencia a grupos dinámicos en su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: f7c871c7005163aa81e911b15f8a3c91e8ea9c43
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 7d754b937296fbd852904022c45492b6890f2f04
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356593"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572688"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatizar las licencias y la pertenencia a grupos para Microsoft 365 entorno de pruebas empresariales
 
@@ -33,7 +33,7 @@ La configuración de licencias automáticas y la pertenencia a grupos dinámicos
 - [Fase 1: Crear su Microsoft 365 entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Fase 2: Configurar y probar la pertenencia dinámica a grupos y las licencias automáticas](#phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing)
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -63,7 +63,7 @@ En primer lugar, cree un nuevo grupo denominado Ventas y agregue  una regla de p
    - Seleccione la **propiedad department.**
    - Seleccione el **operador Equals.**
    - En el **cuadro** Valor, escriba **Ventas**.
-10. Seleccione **Guardar**.
+10. Haga clic en **Guardar**.
 11. Seleccione **Crear**.
 
 A continuación, configure el grupo Ventas para que los miembros se asignen automáticamente la Microsoft 365 E5 licencia.

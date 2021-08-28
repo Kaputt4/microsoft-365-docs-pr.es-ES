@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Implemente Microsoft 365 seguridad y cumplimiento normativo y proteja su información personal.
-ms.openlocfilehash: 3cb4cefb0e7d93964eb10e97e44db9acee9331a795a5fd48defdceb843be1b60
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 084faec3b9c2d7bc9c7da17ee69f7821dd79a754
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857078"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575893"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteger la información sujeta a la regulación de privacidad de datos
 
@@ -35,7 +35,7 @@ Estos controles se encuentran dentro de las siguientes áreas de solución:
 - Cifrado de mensajes de Office (OME)
 - Teams y los controles de acceso a sitios
 
-![Servicios clave para proteger la información personal sujeta a la regulación de privacidad de datos](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
+![Servicios clave para proteger la información personal sujeta a la regulación de privacidad de datos.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 > [!NOTE]
 > Esta solución describe las características de seguridad y cumplimiento para proteger la información sujeta a las normativas de privacidad de datos. Para obtener una lista completa de las características de seguridad en Microsoft 365, vea [Microsoft 365 de seguridad](../security/index.yml). Para obtener una lista completa de las características de cumplimiento en Microsoft 365, vea [Microsoft 365 documentación de cumplimiento](../compliance/index.yml).
@@ -89,7 +89,7 @@ Para obtener información sobre otras capacidades de protección de información
 Las etiquetas de confidencialidad del marco Microsoft Information Protection permiten clasificar y proteger los datos de la organización sin obstaculizar la productividad de los usuarios y su capacidad de colaboración.
 
 > [!div class="mx-imgBorder"]
-> ![Etiquetas de confidencialidad en Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+> ![Etiquetas de confidencialidad en Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 ### <a name="prerequisites-for-sensitivity-labels"></a>Requisitos previos para etiquetas de confidencialidad
 
@@ -160,7 +160,7 @@ Cuando esté listo para empezar a proteger los datos de su organización con eti
 
 Una vez que publiques etiquetas de confidencialidad desde el Centro de cumplimiento de Microsoft 365, [empezarán a](../compliance/sensitivity-labels-office-apps.md) aparecer en aplicaciones de Office para que los usuarios clasifiquen y protejan el contenido a medida que se crea o edita.
 
-![Flujo de implementación de etiquetas de confidencialidad en Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
+![Flujo de implementación de etiquetas de confidencialidad Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
 Para la privacidad de datos, se aplica manualmente una etiqueta de confidencialidad con cifrado y otras reglas al correo electrónico o al contenido que contiene información personal confidencial.
 
@@ -215,12 +215,12 @@ Por ejemplo, puede identificar cualquier documento que contenga un número de ta
 También puede supervisar y proteger elementos confidenciales en las versiones instaladas localmente de Excel, PowerPoint y Word, que incluyen la capacidad de identificar elementos confidenciales y aplicar directivas DLP. DLP proporciona supervisión continua cuando las personas comparten contenido de estas Office aplicaciones.
 
 > [!div class="mx-imgBorder"]
-> ![Cargas de trabajo admitidas para DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
+> ![Cargas de trabajo admitidas para DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
 En esta figura se muestra un ejemplo de DLP que protege los datos personales.
 
 > [!div class="mx-imgBorder"]
-> ![Ejemplo de protección de datos personales con DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+> ![Ejemplo de protección de datos personales mediante DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
 DLP se usa para identificar un documento o correo electrónico que contiene un registro de mantenimiento y, a continuación, bloquea automáticamente el acceso a ese documento o bloquea el envío del correo electrónico. A continuación, DLP notifica al destinatario con una sugerencia de directiva y envía una alerta al usuario final y al administrador.
 
@@ -254,11 +254,11 @@ Aunque las etiquetas de confidencialidad no se pueden usar en condiciones de dir
 Las directivas DLP se configuran en el Centro de administración de Cumplimiento de Microsoft y especifican el nivel de protección, el tipo de información confidencial que está buscando la directiva y las cargas de trabajo de destino. Sus componentes básicos consisten en identificar la protección y los tipos de datos.
 
 > [!div class="mx-imgBorder"]
-> ![Configuración de directiva DLP en Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> ![Configuración de directiva DLP en Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 A continuación se muestra una directiva DLP de ejemplo para conocer el RGPD.
 
-![Ejemplo de directiva DLP para el reconocimiento del RGPD](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
+![Ejemplo de directiva DLP para el reconocimiento del RGPD.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
 Vea [este artículo para](../compliance/create-test-tune-dlp-policy.md) obtener más información sobre cómo crear y aplicar directivas DLP.
 
@@ -266,7 +266,7 @@ Vea [este artículo para](../compliance/create-test-tune-dlp-policy.md) obtener 
 
 En la tabla siguiente se enumeran tres configuraciones de aumento de la protección mediante DLP.
 
-![Niveles de protección de privacidad de datos con DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
+![Niveles de protección de privacidad de datos con DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
 
 La primera configuración, Awareness, se puede usar como punto de partida y nivel mínimo de protección para satisfacer las necesidades de cumplimiento de las normativas de privacidad de datos.
 
@@ -287,7 +287,7 @@ Las etiquetas de confidencialidad pueden funcionar junto con DLP para proporcion
 Una vez determinados estos elementos, puede usar los tipos de información confidencial, la taxonomía de etiquetado de confidencialidad y las directivas DLP juntas. En esta figura se muestra un ejemplo.
 
 > [!div class="mx-imgBorder"]
-> ![Ejemplo de etiquetas de confidencialidad que funcionan con DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+> ![Ejemplo de etiquetas de confidencialidad que funcionan con DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 [Ver una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 

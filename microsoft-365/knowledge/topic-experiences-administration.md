@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo cambiar el nombre del centro de temas en Temas Microsoft Viva.
-ms.openlocfilehash: ba172df38a42ac00267496e2126c9d01058bb45bc925bfa8f75b3e3e98111247
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 262ae46fadf8fc390a4ccf591aa97175ff63a68f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794684"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573072"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Cambie el nombre del centro de temas en Temas Microsoft Viva
 
@@ -26,11 +26,11 @@ Puede cambiar el nombre del centro de temas en el [Centro de administración de 
 1. En la Centro de administración de Microsoft 365, haga clic **en Configuración** y, a continuación, en Configuración de **la organización**.
 2. En la **pestaña Servicios,** haga clic en **Experiencias del tema**.
 
-    ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) 
+    ![Conectar personas al conocimiento.](../media/admin-org-knowledge-options-completed.png) 
 
 3. Seleccione la **pestaña Centro de** temas. Vea las secciones siguientes para obtener información sobre cada configuración.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
+    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-center.png) 
 
 ##  <a name="update-your-topic-center-name"></a>Actualizar el nombre del centro de temas
 
@@ -40,9 +40,9 @@ Para cambiar el nombre del centro de temas
 2. En la **página Editar nombre del centro de** temas, en el cuadro Nombre del centro de temas, escriba el nuevo nombre del centro de temas. 
 3. Seleccione **Guardar**.
 
-    ![Editar nombre del centro de temas](../media/manage-topic-center-name.png)  
+    ![Editar el nombre del centro de temas.](../media/manage-topic-center-name.png)  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar la detección de temas en Temas Microsoft Viva](topic-experiences-discovery.md)
 

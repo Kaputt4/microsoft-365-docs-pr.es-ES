@@ -15,12 +15,12 @@ ms.date: 06/10/2021
 description: Obtenga información sobre cómo acelerar el proceso de detección y tratamiento de cuentas de usuario comprometidas con capacidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0f72b876570f7551694053d81d716dce8f92379c1d57a3f4bd8b1a83ffa57f7b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4a90768038bde3126dd4ac3e5016f4d04aded9af
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867528"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572484"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Solucionar cuentas de usuario comprometidas con investigación y respuesta automatizadas
 
@@ -32,7 +32,7 @@ ms.locfileid: "53867528"
 
 [Microsoft Defender para Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) incluye potentes capacidades de investigación y respuesta [automatizadas](office-365-air.md) (AIR). Estas capacidades pueden ahorrarle mucho tiempo y esfuerzo al equipo de operaciones de seguridad que se ocupa de las amenazas. Microsoft sigue mejorando las capacidades de seguridad. Recientemente, las capacidades de AIR se han mejorado para incluir un libro de juegos de seguridad de usuario en peligro (actualmente en versión preliminar). Lea este artículo para obtener más información sobre el libro de juegos de seguridad del usuario en peligro. Y consulta la entrada de blog Acelerar el tiempo para detectar y responder a los compromisos del usuario y limitar el ámbito de infracción con [Microsoft Defender](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) para obtener Office 365 detalles adicionales.
 
-![Investigación automatizada para un usuario en peligro](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
+![Investigación automatizada para un usuario en peligro.](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
 El libro de juegos de seguridad de usuario comprometido permite al equipo de seguridad de la organización:
 
@@ -46,11 +46,11 @@ Cuando una cuenta de usuario está en peligro, se producen comportamientos atíp
 
 Por ejemplo, esta es una alerta que se desencadenó debido al envío de correo electrónico sospechoso:
 
-![Alerta activada debido al envío de correo electrónico sospechoso](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
+![Alerta activada debido al envío de correo electrónico sospechoso.](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
 
 Y este es un ejemplo de una alerta que se desencadenó cuando se alcanzó un límite de envío para un usuario:
 
-![Alerta desencadenada por el límite de envío alcanzado](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
+![Alerta desencadenada por el límite de envío alcanzado.](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
 
 ## <a name="investigate-and-respond-to-a-compromised-user"></a>Investigar y responder a un usuario en peligro
 
@@ -71,11 +71,11 @@ Tiene algunas opciones para navegar a una lista de usuarios restringidos. Por ej
 
 2. En la **página Alertas,** filtre los resultados por período de tiempo y la directiva denominada Usuario restringido **para enviar correo electrónico**.
 
-   ![La página Alertas del portal de Microsoft 365 Defender filtrado para usuarios restringidos](../../media/m365-sc-alerts-page-with-restricted-user.png)
+   ![La página Alertas del portal Microsoft 365 Defender filtrado para usuarios restringidos.](../../media/m365-sc-alerts-page-with-restricted-user.png)
 
-3. Si selecciona la entrada haciendo clic  en el nombre, se abrirá una página de usuario con restricciones para enviar correo electrónico con detalles adicionales para que lo revise. Junto al  botón Administrar alerta, puede hacer clic en El icono Más opciones Más opciones y, a continuación, seleccione Ver detalles de usuario restringido para ir a la página Usuarios restringidos, donde puede liberar el usuario ![ ](../../media/m365-cc-sc-more-actions-icon.png)  [restringido.](removing-user-from-restricted-users-portal-after-spam.md)  
+3. Si selecciona la entrada haciendo clic  en el nombre, se abrirá una página de usuario con restricciones para enviar correo electrónico con detalles adicionales para que lo revise. Junto al botón **Administrar alerta,** puedes hacer clic en ![ El icono Más opciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más opciones** y, a continuación, seleccione  **Ver** detalles de usuario restringido para ir a la página Usuarios restringidos, donde puede liberar el [usuario restringido.](removing-user-from-restricted-users-portal-after-spam.md)
 
-   ![El usuario no puede enviar correo electrónico desde el Centro de alertas](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
+   ![El usuario ha restringido el envío de la página de correo electrónico desde el Centro de alertas.](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
 
 ### <a name="view-details-about-automated-investigations"></a>Ver detalles sobre las investigaciones automatizadas
 
@@ -91,7 +91,7 @@ Para obtener más información, [vea Ver detalles de una investigación](air-vie
 
 - **No confíe en una alerta de inicio de sesión sospechosa como su único indicador**. Cuando una cuenta de usuario está en peligro, es posible que desencadene o no una alerta de inicio de sesión sospechosa. A veces es la serie de actividades que se producen después de que se pone en peligro una cuenta que desencadena una alerta. ¿Desea obtener más información sobre las alertas? Vea [Directivas de alerta](../../compliance/alert-policies.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisar los permisos necesarios para usar las funcionalidades de AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

@@ -14,12 +14,12 @@ localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: db98e147ef4453f62d4d17431286aaa99959712d
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 1137ef50c5e3fb72b6bc0532b021de05c7eff1ce
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58357523"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576133"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurar y administrar las Expertos en amenazas de Microsoft a través de Microsoft 365 Defender
 
@@ -49,15 +49,15 @@ Si ya tienes Microsoft Defender para endpoint y Microsoft 365 Defender, puedes s
 
 2. Seleccione **Aplicar**.
 
-    ![Imagen de la Expertos en amenazas de Microsoft configuración](../../media/mte/mte-collaboratewithmte.png)
+    ![Imagen de Expertos en amenazas de Microsoft configuración.](../../media/mte/mte-collaboratewithmte.png)
 
 3. Escriba su nombre y dirección de correo electrónico para que Microsoft pueda ponerse en contacto con usted sobre su aplicación.
 
-    ![Imagen de Expertos en amenazas de Microsoft aplicación](../../media/mte/mte-apply.png)
+    ![Imagen de Expertos en amenazas de Microsoft aplicación.](../../media/mte/mte-apply.png)
 
 4. Lea la [declaración de privacidad](https://privacy.microsoft.com/en-us/privacystatement)y, a continuación, seleccione **Enviar** cuando haya terminado. Recibirá un correo electrónico de bienvenida una vez que se apruebe la aplicación.
 
-    ![Imagen de la Expertos en amenazas de Microsoft de la aplicación](../../media/mte/mte-applicationconfirmation.png)
+    ![Imagen de la Expertos en amenazas de Microsoft de la aplicación.](../../media/mte/mte-applicationconfirmation.png)
 
 5. Después de recibir el correo electrónico de bienvenida, empezarás a recibir automáticamente notificaciones de ataques dirigidos.
 
@@ -102,13 +102,13 @@ Puede ponerse en contacto Expertos en amenazas de Microsoft desde dentro del por
 
 2. En el menú superior, seleccione **? Consulte a un experto en amenazas**.
 
-    ![Imagen de Expertos en amenazas de Microsoft expertos a petición desde el menú](../../media/mte/incidents-action-mte-highlighted.png)
+    ![Imagen de Expertos en amenazas de Microsoft expertos a petición del menú.](../../media/mte/incidents-action-mte-highlighted.png)
 
     Se abrirá una pantalla desplegable.
 
     El encabezado indicará si está en una suscripción de prueba o una suscripción completa Expertos en amenazas de Microsoft: suscripción a petición de expertos.
 
-    ![Imagen de la Expertos en amenazas de Microsoft de suscripción de prueba de expertos a petición](../../media/mte/mte-trial.png)
+    ![Imagen de la Expertos en amenazas de Microsoft de suscripción de prueba de expertos a petición.](../../media/mte/mte-trial.png)
 
     El **campo Tema** investigación ya se rellenará con el vínculo a la página correspondiente para la solicitud.
 

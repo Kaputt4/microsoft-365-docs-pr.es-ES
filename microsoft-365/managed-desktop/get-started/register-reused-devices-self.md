@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 6e5db8d641c4b38f6b660479be451ddaa5a23aac440e8d98757cac99f2160fb1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c817805994662b080f530b76b76cbb111ee36795
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890952"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575557"
 ---
 # <a name="register-existing-devices-yourself"></a>Registre dispositivos existentes usted mismo
 
@@ -137,7 +137,7 @@ Con los datos hash combinados en un archivo CSV, ahora puede continuar con [el r
 
 En [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), seleccione **Dispositivos** en el panel de navegación izquierdo. Busque la sección Escritorio administrado de Microsoft del menú y seleccione **Dispositivos**. En el área Escritorio administrado de Microsoft de trabajo Dispositivos, Seleccione **+ Registrar** dispositivos , que abre un control fly-in para registrar nuevos dispositivos.
 
-<!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
+<!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
@@ -157,7 +157,7 @@ Puedes supervisar el progreso del registro del dispositivo en la página princip
 | Registro pendiente | El registro aún no se ha realizado. Vuelva más tarde. |
 | Error de registro | No se pudo completar el registro. Consulte [Troubleshooting device registration para](#troubleshooting-device-registration) obtener más información. |
 | Listo para el usuario | El registro se ha registrado correctamente y el dispositivo ya está listo para entregarse al usuario. Escritorio administrado de Microsoft los guiará a través de la configuración por primera vez, por lo que no es necesario realizar ninguna preparación adicional. |
-| Activo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Esto también indica que usan regularmente el dispositivo. |
+| Activa | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Esto también indica que usan regularmente el dispositivo. |
 | Inactivo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Sin embargo, no han usado el dispositivo recientemente (en los últimos 7 días).  | 
 
 ### <a name="troubleshooting-device-registration"></a>Solución de problemas de registro de dispositivos

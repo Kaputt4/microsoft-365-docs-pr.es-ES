@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14e952aacf20350fb264fecd72f626b0f3a30729
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: 028735c7d340d63d2f952eabf683e512d261a913
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483360"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576085"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -78,7 +78,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas avanzada en \>  \>  \>  la **sección** Reglas.
 
 2. En la **página Entrega avanzada,** compruebe que la pestaña buzón **de SecOps** está seleccionada y, a continuación, siga uno de los pasos siguientes:
-   - Haga ![ clic en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**.
+   - Haga clic ![ en Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Edición**.
    - Si no hay simulaciones de suplantación de identidad configuradas, haga clic en **Agregar**.
 
 3. En el control desplegable Editar buzones de SecOps que se abre, escriba un buzón de Exchange Online existente que desee designar como buzón de **SecOps** siguiendo uno de los pasos siguientes:
@@ -87,18 +87,18 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 
      Repita este paso tantas veces como sea necesario. Los grupos de distribución no están permitidos.
 
-     Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+     Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
 4. Cuando haya terminado, haga clic en **Guardar**.
 
-Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buzón de SecOps.** Para realizar cambios, haga clic ![ en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar** en la pestaña.
+Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buzón de SecOps.** Para realizar cambios, haga clic ![ en Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Editar** en la pestaña.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Use el portal Microsoft 365 Defender para configurar simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
 
 1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas avanzada en \>  \>  \>  la **sección** Reglas.
 
 2. En la **página Entrega avanzada,** seleccione la pestaña **Simulación de suplantación** de identidad y, a continuación, realice uno de los siguientes pasos:
-   - Haga ![ clic en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar**.
+   - Haga clic ![ en Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Edición**.
    - Si no hay simulaciones de suplantación de identidad configuradas, haga clic en **Agregar**.
 
 3. En el **control desplegable Editar simulación de suplantación** de identidad de terceros que se abre, configure las siguientes opciones:
@@ -114,7 +114,7 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
      - IP cidr: por ejemplo, 192.168.0.1/25.
    - Direcciones **URL** de simulación para permitir: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que forman parte de la campaña de simulación de suplantación de identidad que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas. Para obtener el formato de sintaxis de dirección URL, vea [Sintaxis url para la lista de inquilinos permitidos o bloqueados.](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)
 
-   Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    > [!NOTE]
    > Debe especificar al menos un dominio **de** envío y al menos un **IP** de envío para configurar una simulación de suplantación de identidad de terceros en entrega avanzada. Opcionalmente, puede incluir direcciones **URL de Simulation para garantizar** que las direcciones URL presentes en los mensajes de simulación no se bloqueen. Puede especificar hasta 10 entradas para cada campo. Debe haber una coincidencia en al menos un dominio de **envío y** un **IP** de envío, pero no se mantiene ninguna asociación entre valores.
@@ -123,7 +123,7 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
    - **Primera vez:** haga clic **en Agregar** y, a continuación, en **Cerrar**.
    - **Editar existente:** haga clic **en Guardar** y, a continuación, en **Cerrar**.
 
-Las entradas de simulación de suplantación de identidad de terceros que configuró se muestran en la pestaña **Simulación de suplantación de** identidad. Para realizar cambios, haga clic ![ en Editar icono ](../../media/m365-cc-sc-edit-icon.png) **Editar** en la pestaña.
+Las entradas de simulación de suplantación de identidad de terceros que configuró se muestran en la pestaña **Simulación de suplantación de** identidad. Para realizar cambios, haga clic ![ en Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Editar** en la pestaña.
 
 ## <a name="additional-scenarios-that-require-filtering-bypass"></a>Escenarios adicionales que requieren la omisión de filtrado
 

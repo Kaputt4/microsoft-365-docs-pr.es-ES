@@ -22,16 +22,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: En este artículo, obtenga información sobre cómo integrar Microsoft 365 con los servicios de directorio existentes y los entornos locales.
-ms.openlocfilehash: 0f9f6d053affeae56fd9d26b93680e1f2d6eb139
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 87b456a0b44e4b38df6cec8e72713c6573917805
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353725"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575593"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365 integración con entornos locales
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Puede integrar Microsoft 365 con los servicios de dominio de Active Directory (AD DS) locales existentes y con instalaciones locales de Exchange Server, Skype Empresarial Server 2015 o SharePoint Server.
   
@@ -54,11 +54,11 @@ Consulta [administrar Microsoft 365 cuentas de usuario](manage-microsoft-365-acc
 
 Si tienes cuentas de usuario existentes en AD DS, no quieres volver a crear todas esas cuentas en Microsoft 365 y te arriesgas a introducir diferencias o errores entre los entornos. La sincronización de directorios le ayuda a reflejar esas cuentas entre sus entornos locales y en línea. Con la sincronización de directorios, los usuarios no tienen que recordar información nueva para cada entorno y no tiene que crear o actualizar cuentas dos veces. Deberá preparar el [directorio local](prepare-for-directory-synchronization.md) para la sincronización de directorios.
   
-![Usar la sincronización de directorios para mantener sincronizada la información de cuenta de usuario local y en línea](../media/microsoft-365-integration/directory-synchronization.png)
+![Use la sincronización de directorios para mantener sincronizada la información de cuenta de usuario local y en línea.](../media/microsoft-365-integration/directory-synchronization.png)
   
 Si desea que los usuarios puedan iniciar sesión en Microsoft 365 con sus credenciales locales, también puede configurar SSO. Con SSO, Microsoft 365 está configurado para confiar en el entorno local para la autenticación de usuario.
   
-![Con el inicio de sesión único, la misma cuenta está disponible en los entornos locales y en línea](../media/microsoft-365-integration/single-sign-on.png)
+![Con el inicio de sesión único, la misma cuenta está disponible en los entornos locales y en línea.](../media/microsoft-365-integration/single-sign-on.png)
 
 ### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication-pta"></a>Sincronización de directorios con o sin sincronización de hash de contraseña o autenticación de paso a través (PTA)
 

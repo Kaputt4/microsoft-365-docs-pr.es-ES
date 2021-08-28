@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 6d0599d11dd5892b032bda1285b92fbc8a09354b
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 02038b627acdd084eda34f13d7bbb5cf0658fb95
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595167"
+ms.locfileid: "58572376"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Para identidad y más allá: un punto de vista de un arquitecto
 
@@ -203,7 +203,7 @@ En la mayoría de las organizaciones grandes, la separación de funciones y el c
 
 ### <a name="azure-ad-and-microsoft-365-admin-centers"></a>Centros de administración de Azure AD y Microsoft 365 administración
 
-Hay una larga y creciente lista de roles [integrados.](/azure/active-directory/roles/permissions-reference) Cada función consta de una lista de permisos de función agrupados para permitir que se realicen acciones específicas. Puede ver estos permisos en la pestaña "Descripción" dentro de cada rol. Como alternativa, puede ver una versión más legible de estos en el Centro de Administración de Microsoft 365 humanos. Las definiciones de roles integrados no se pueden modificar. Por lo general, los agrupa en tres categorías:
+Hay una larga y creciente lista de roles [integrados.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Cada función consta de una lista de permisos de función agrupados para permitir que se realicen acciones específicas. Puede ver estos permisos en la pestaña "Descripción" dentro de cada rol. Como alternativa, puede ver una versión más legible de estos en el Centro de Administración de Microsoft 365 humanos. Las definiciones de roles integrados no se pueden modificar. Por lo general, los agrupa en tres categorías:
 
 - **Administrador global:** este rol "todo eficaz" debe estar [altamente protegido](../enterprise/protect-your-global-administrator-accounts.md) como lo haría en otros sistemas. Entre las recomendaciones típicas se incluyen: sin asignación permanente y usar azure ad Privileged Identity Management (PIM); autenticación segura; y así sucesivamente. Es interesante que este rol no le dé acceso a todo de forma predeterminada. Por lo general, veo confusión sobre el acceso de cumplimiento y el acceso de Azure, que se describe más adelante. Sin embargo, este rol siempre puede asignar acceso a otros servicios en el espacio empresarial.
 - **Administradores de servicios específicos:** algunos servicios (Exchange, SharePoint, Power BI, y así sucesivamente) consumen roles de administración de alto nivel de Azure AD. Esto no es coherente en todos los servicios y hay más roles específicos del servicio que se debate más adelante.

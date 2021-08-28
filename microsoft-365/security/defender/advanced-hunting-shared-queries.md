@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ab6115ba08e18c8240868e14561db821b4a00b3f439c8e06aeca5bb8ec142e1a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37960ef9b7ff1431a2d1344e6a234b0106782100
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799448"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575965"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utilice las consultas compartidas en la búsqueda avanzada
 
@@ -40,7 +40,7 @@ ms.locfileid: "53799448"
 
 Las consultas en la [búsqueda avanzada](advanced-hunting-overview.md) pueden ser compartidas entre usuarios de la misma organización. También puede buscar las consultas compartidas de forma pública en GitHub. Estas consultas le permitirán seguir rápidamente los escenarios específicos de búsqueda contra amenazas sin tener que escribir las consultas desde cero.
 
-![Imagen de las consultas compartidas](../../media/advanced-hunting-shared-queries.png)
+![Imagen de consultas compartidas.](../../media/advanced-hunting-shared-queries.png)
 
 ## <a name="save-modify-and-share-a-query"></a>Guardar, modificar y compartir la consulta
 Puede guardar una consulta nueva o existente para que sólo sea accesible para usted o compartida con otros usuarios en su organización. 
@@ -51,7 +51,7 @@ Puede guardar una consulta nueva o existente para que sólo sea accesible para u
     
 3. Escriba un nombre para la consulta. 
 
-   ![Imagen de una consulta guardada](../../media/advanced-hunting-save-query.png)
+   ![Imagen de guardar una consulta.](../../media/advanced-hunting-save-query.png)
 
 4. Seleccione la carpeta en la que desea guardar la consulta.
     - **Consultas compartidas** — compartidas con todos los usuarios de su organización
@@ -62,7 +62,7 @@ Puede guardar una consulta nueva o existente para que sólo sea accesible para u
 ## <a name="delete-or-rename-a-query"></a>Eliminar o cambiar el nombre de la consulta
 1. Haga clic con el botón derecho en la consulta que desee cambiar o eliminar el nombre.
 
-    ![Imagen de una consulta eliminada](../../media/advanced_hunting_delete_rename.png)
+    ![Imagen de la consulta de eliminación.](../../media/advanced_hunting_delete_rename.png)
 
 2. Seleccione **Eliminar** y confirme su eliminación. O seleccione **Cambiar el nombre** y proporcione un nombre nuevo para la consulta.
 

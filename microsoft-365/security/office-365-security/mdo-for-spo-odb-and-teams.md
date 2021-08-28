@@ -23,12 +23,12 @@ ms.custom:
 description: Obtenga información sobre Microsoft Defender para Office 365 para archivos en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7a3333e228ffdb5b3bf38ed2b4ab119a1e973e9dd71c8db94e26f27d9cb44d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9ab3c10292aed5f6f39a8534680cb8e9c5d3551
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56885479"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572436"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 
@@ -46,17 +46,17 @@ Caja fuerte Los datos adjuntos SharePoint, OneDrive y Microsoft Teams no están 
 
 Cuando Caja fuerte datos adjuntos de SharePoint, OneDrive y Microsoft Teams está habilitado e identifica un archivo como malintencionado, el archivo se bloquea mediante la integración directa con los almacenes de archivos. La imagen siguiente muestra un ejemplo de un archivo malintencionado detectado en una biblioteca.
 
-![Archivos en OneDrive para la Empresa con uno detectado como malintencionado](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+![Los archivos OneDrive para la Empresa con uno detectado como malintencionado.](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 Aunque el archivo bloqueado todavía se muestra en la biblioteca de documentos y en aplicaciones web, móviles o de escritorio, las personas no pueden abrir, copiar, mover o compartir el archivo. Pero pueden eliminar el archivo bloqueado.
 
 Este es un ejemplo de cómo es un archivo bloqueado en un dispositivo móvil:
 
-![Eliminación de un archivo bloqueado OneDrive para la Empresa desde la aplicación OneDrive móvil](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
+![Eliminar un archivo bloqueado de OneDrive para la Empresa desde la aplicación OneDrive móvil.](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
 De forma predeterminada, los usuarios pueden descargar un archivo bloqueado. Este es el aspecto que tiene la descarga de un archivo bloqueado en un dispositivo móvil:
 
-![Descargar un archivo bloqueado en OneDrive para la Empresa](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
+![Descargar un archivo bloqueado en OneDrive para la Empresa.](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
 SharePoint Los administradores en línea pueden impedir que los usuarios descarguen archivos malintencionados. Para obtener instrucciones, vea [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 

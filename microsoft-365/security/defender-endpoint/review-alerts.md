@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: e379e50eb0b7762f42a7ae945a31ec8b82bd83a625fd171f007d541802fc12b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 01b9fb5a3483d287f4d43db0a95af6add284b023
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833656"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571282"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Revisar alertas en Microsoft Defender para endpoint
 
@@ -53,19 +53,19 @@ Tenga en cuenta el estado de detección de la alerta.
 
 - Prevenido: se evitó el intento de acción sospechosa. Por ejemplo, un archivo no se escribió en el disco o se ejecutó.
 
-  ![Se ha evitado una página de alerta que muestra la amenaza](images/detstat-prevented.png)
+  ![Se ha evitado una página de alerta que muestra la amenaza.](images/detstat-prevented.png)
 
 - Bloqueado: se ejecutó un comportamiento sospechoso y, a continuación, se bloqueó. Por ejemplo, se ejecutó un proceso, pero como posteriormente mostró comportamientos sospechosos, se finalizó el proceso.
 
-  ![Se bloqueó una página de alerta que muestra la amenaza](images/detstat-blocked.png)
+  ![Se bloqueó una página de alerta que muestra la amenaza.](images/detstat-blocked.png)
 
 - Detectado: se detectó un ataque y posiblemente aún esté activo.
 
-  ![Se detectó una página de alerta que muestra la amenaza](images/detstat-detected.png)
+  ![Se detectó una página de alerta que muestra la amenaza.](images/detstat-detected.png)
 
 A continuación,  también puede revisar los detalles de la investigación automatizada en el panel de detalles de la alerta, para ver qué acciones ya se han realizado, así como leer la descripción de la alerta para las acciones recomendadas.
 
-![Fragmento de código del panel de detalles con la descripción de alerta y las secciones de investigación automática resaltadas](images/alert-air-and-alert-description.png)
+![Fragmento de código del panel de detalles con la descripción de la alerta y las secciones de investigación automática resaltadas.](images/alert-air-and-alert-description.png)
 
 Otra información disponible en el panel de detalles cuando se abre la alerta incluye técnicas MITRE, origen y detalles contextuales adicionales.
 
@@ -75,11 +75,11 @@ Al seleccionar un dispositivo o una tarjeta de usuario en las secciones activos 
 
 - **En el caso de** los dispositivos, el panel de detalles mostrará información sobre el propio dispositivo, como Dominio, Sistema operativo e IP. Las alertas activas y los usuarios que han iniciado sesión en ese dispositivo también están disponibles. Puedes tomar medidas inmediatas al aislar el dispositivo, restringir la ejecución de la aplicación o ejecutar un examen antivirus. Como alternativa, puedes recopilar un paquete de investigación, iniciar una investigación automatizada o ir a la página del dispositivo para investigar desde el punto de vista del dispositivo.
 
-   ![Fragmento de código del panel de detalles cuando se selecciona un dispositivo](images/device-page-details.png)
+   ![Fragmento de código del panel de detalles cuando se selecciona un dispositivo.](images/device-page-details.png)
 
 - Para los **usuarios,** el panel de detalles mostrará información detallada del usuario, como el nombre SAM del usuario y SID, así como los tipos de inicio de sesión realizados por este usuario y las alertas e incidentes relacionados con él. Puede seleccionar Abrir *página de usuario para* continuar la investigación desde el punto de vista de ese usuario.
 
-   ![Fragmento de código del panel de detalles cuando se selecciona un usuario](images/user-page-details.png)
+   ![Fragmento de código del panel de detalles cuando se selecciona un usuario.](images/user-page-details.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

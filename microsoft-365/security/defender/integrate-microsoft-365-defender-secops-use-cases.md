@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0f2d0888c9dbe7550f4967f85691d4e56e4320c2d0220812fc095aa2c1cd96dc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 710e2adef0d04d9a7c45506f8b1bd4ec00d1d044
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862775"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576145"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Paso 5. Desarrollar y probar casos de uso
 
@@ -46,7 +46,7 @@ El SOC debe definir un estándar de alto nivel y un proceso para desarrollar cas
 
 Las actividades de supervisión de SOC relacionadas con el desarrollo de casos de uso incluyen: 
 
-- Requirements
+- Requisitos
 - Necesidades de personal o formación
 - Licencias de software
 - Contratación de proveedores
@@ -56,7 +56,7 @@ Las actividades de supervisión de SOC relacionadas con el desarrollo de casos d
 
 Para facilitar los procesos de creación del runbook y del libro de juegos, cree un árbol de decisión de casos de uso. En esta figura se muestra un ejemplo.
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Proceso de decisión de caso de uso":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Proceso de decisión de caso de uso.":::
 
 Una vez definido y aprobado un estándar de caso de uso de alto nivel, el siguiente paso es crear y probar un caso de uso real. En las secciones siguientes se usan escenarios de análisis de vulnerabilidades y amenazas y contra suplantación de identidad como ejemplos.
 
@@ -64,13 +64,13 @@ Una vez definido y aprobado un estándar de caso de uso de alto nivel, el siguie
 
 El primer paso para crear un caso de uso es describir el flujo de trabajo mediante un story board. Este es un ejemplo de un panel de artículos de alto nivel para una nueva notificación de vulnerabilidad de suplantación de identidad (phishing) a un equipo de inteligencia de amenazas.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Un ejemplo de flujo de trabajo de casos de uso para una campaña contra la suplantación de identidad":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Un ejemplo de flujo de trabajo de casos de uso para una campaña contra la suplantación de identidad.":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-1"></a>Invocar el flujo de trabajo de casos de uso por ejemplo 1
 
 Una vez aprobado el story board, el siguiente paso es invocar el flujo de trabajo de casos de uso. Este es un proceso de ejemplo para una campaña contra el phishing. 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Un ejemplo de flujo de trabajo de casos de uso detallado para una campaña contra la suplantación de identidad":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Un ejemplo de flujo de trabajo de casos de uso detallado para una campaña contra la suplantación de identidad.":::
 
 ## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>Ejemplo de caso de uso 2: Análisis de amenazas y vulnerabilidades
 
@@ -78,13 +78,13 @@ Otro escenario en el que se podría usar un caso de uso es para el examen de ame
 
 Este es un guión gráfico de alto nivel de ejemplo para el Administración de amenazas y vulnerabilidades de activos.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Un ejemplo de flujo de trabajo de caso de uso para Administración de amenazas y vulnerabilidades":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Un ejemplo de flujo de trabajo de casos de Administración de amenazas y vulnerabilidades.":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-2"></a>Invocar el flujo de trabajo de casos de uso por ejemplo 2
 
 Este es un proceso de ejemplo para el examen de amenazas y vulnerabilidades.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Un ejemplo de flujo de trabajo de casos de uso detallado para Administración de amenazas y vulnerabilidades":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Un ejemplo de flujo de trabajo de casos de uso detallado para Administración de amenazas y vulnerabilidades.":::
  
 ### <a name="analyze-the-use-case-output-and-lessons-learned"></a>Analizar el resultado del caso de uso y las lecciones aprendidas
 
@@ -97,7 +97,7 @@ Por ejemplo, en el ejemplo de escenario anti phishing, los equipos soc podrían 
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
 | Equipo de inteligencia y análisis de amenazas | Los orígenes de datos están alimentando correctamente los motores de inteligencia de amenazas. | Analista/ingeniero de inteligencia de amenazas | Requisitos de fuente de datos establecidos, desencadenadores de inteligencia de amenazas de orígenes aprobados | Microsoft Defender para identity, Microsoft Defender para endpoint | El equipo de inteligencia de amenazas no usaba script de automatización para vincular Microsoft 365 Defender API con motores intel de amenazas | Agregar Microsoft 365 Defender como orígenes de datos a motores de amenazas <BR> <BR> Actualizar la libreta de casos de uso | N |
 | Equipo de supervisión | Los orígenes de datos están alimentando correctamente los paneles de supervisión | Alertas de supervisión y supervisión de SO & C de nivel 1,2 | Flujo de trabajo para informar sobre la puntuación & seguridad del Centro de cumplimiento | [Alertas en el Centro de & seguridad](/microsoft-365/security/office-365-security/alerts)  <br><br> Supervisión de puntuación segura  | Ningún mecanismo para que los analistas de SOC informen sobre la detección correcta de nuevas variantes de suplantación de identidad (phishing) para mejorar la puntuación segura <br><br> [Informes en el Centro de & seguridad](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Agregar un proceso para realizar un seguimiento de la mejora de puntuación segura en los flujos de trabajo de informes | N | 
-| Equipo de Ingeniería y SecOps | Las actualizaciones de control de cambios se realizan en los runbooks de equipo soc | Ingeniero soc de nivel 2 | Procedimiento de notificación de control de cambios para runbooks de equipo SOC | Cambios aprobados en dispositivos de seguridad | Los cambios en Microsoft 365 Defender conectividad a la tecnología de seguridad SOC requieren aprobación | Agregar Microsoft Cloud App Security, Defender for Identity, Defender for Endpoint, Security & Compliance Center a runbooks soc | v |
+| Equipo de Ingeniería y SecOps | Las actualizaciones de control de cambios se realizan en los runbooks de equipo soc | Ingeniero soc de nivel 2 | Procedimiento de notificación de control de cambios para runbooks de equipo SOC | Cambios aprobados en dispositivos de seguridad | Los cambios en Microsoft 365 Defender conectividad a la tecnología de seguridad SOC requieren aprobación | Agregar Microsoft Cloud App Security, Defender for Identity, Defender for Endpoint, Security & Compliance Center a runbooks soc | Y |
 |||||||||
 
 Además, los equipos SOC podrían haber realizado los descubrimientos descritos en la tabla siguiente con respecto al escenario Administración de amenazas y vulnerabilidades descrito anteriormente:

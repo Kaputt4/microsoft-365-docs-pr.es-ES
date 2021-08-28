@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: En este artículo, obtenga información sobre los requisitos de enrutamiento de Azure ExpressRoute, los circuitos y los dominios de enrutamiento para su uso con Office 365.
-ms.openlocfilehash: e36730f457f17ca6e789bd0ba06998824a6c590a45c53f9050f497c762f5985b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d157515f60a68a46b033571a0fd39e6a5711b884
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904504"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575833"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Para comprender correctamente el tráfico de enrutamiento a Office 365 mediante Azure ExpressRoute, necesitará una comprensión firme de los principales requisitos de enrutamiento de [ExpressRoute](/azure/expressroute/expressroute-routing) y los circuitos y dominios de enrutamiento de [ExpressRoute.](/azure/expressroute/expressroute-circuit-peerings) Estos se basan en los aspectos básicos para usar ExpressRoute Office 365 en los que los clientes se basarán.
   
@@ -146,7 +146,7 @@ En este escenario de ejemplo, Trey Research usa un dispositivo proxy saliente. D
   
 Los FQDN de mayor volumen para Exchange Online, SharePoint Online y Skype Empresarial Online son los siguientes:
   
-![Red perimetral de cliente de ExpressRoute](../media/dab8cc42-b1d6-46d6-b2f6-d70f9e16d5ea.png)
+![Red perimetral de cliente de ExpressRoute.](../media/dab8cc42-b1d6-46d6-b2f6-d70f9e16d5ea.png)
   
 - outlook.office365.com, outlook.office.com
 
@@ -199,7 +199,7 @@ En la situación de Humongous Insurance, deben continuar en función de las apli
   
 Si Humongous Insurance no está usando o no planea usar Skype Empresarial Online de ninguna manera, el enrutamiento del tráfico de red destinado Office 365 un continente con una conexión de ExpressRoute puede ser factible, aunque puede causar latencia innecesaria o congestión TCP. En ambos casos, se recomienda enrutar el tráfico destinado a Internet en el sitio local para aprovechar las redes de entrega de contenido en las que Office 365 se basa.
   
-![Multi-geography de ExpressRoute](../media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
+![Multi-geography de ExpressRoute.](../media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
   
 Cuando Humongous Insurance está planeando su estrategia multi-geografía, hay una serie de cosas que se deben tener en cuenta en torno al tamaño del circuito, el número de circuitos, la conmutación por error, y así sucesivamente.
   
@@ -251,6 +251,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/erorout
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Intervalos de direcciones IP y direcciones URL de Office 365.](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)

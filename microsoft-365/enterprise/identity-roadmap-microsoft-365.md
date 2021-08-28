@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: El mapa de ruta para la identidad de Microsoft 365.
-ms.openlocfilehash: 520f80152bccfd9a01b812f08e7c75f6770a9bc4
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 27abe04da2fed0eaae09fa0ed42a83286fe74f5d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356713"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573120"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Plan de identidad para Microsoft 365
 
@@ -35,13 +35,13 @@ Para obtener información general sobre los modelos de identidad y la autenticac
 
 Para obtener información sobre las características de identidad de cada plan de Microsoft 365 para empresas, el rol de Azure Active Directory, tanto los componentes locales y basados en la nube, como las configuraciones de autenticación más comunes, vea el póster infraestructura de identidad [.](../downloads/m365e-identity-infra.pdf)
 
-[![El póster Infraestructura de identidad](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
+[![Póster de infraestructura de identidad.](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
 Revise este póster de dos páginas para aumentar rápidamente los conceptos de identidad y las configuraciones para Microsoft 365 empresa.
 
 También puede descargar [este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) y imprimirlo en formato carta, legal o tabloide (11 x 17).
 
-## <a name="plan"></a>Planear
+## <a name="plan"></a>Plan
 
 Para planear la implementación de identidad:
 

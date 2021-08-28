@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
-ms.openlocfilehash: e6caa9fb493c84331ea164b8a3f0f0ec2122fd5fb86e113253cd243644bbced8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24bdb7a5d5f4c124365a6b5b7cdc67d53adf8278
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862384"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575701"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 
@@ -46,7 +46,7 @@ También recomendamos activar las características básicas de Microsoft Defende
 
 En cada uno de los niveles tenemos la opción de compartir con personas de fuera de la organización. En el caso de los niveles de confidencialidad y alta confidencialidad, tendremos la opción de desactivar el uso compartido de invitados en el nivel de equipo usando etiquetas de confidencialidad. Pero la configuración de uso compartido de invitados en el nivel de la organización tiene que estar activada para que el uso compartido de invitados funcione en Teams.
 
-![Captura de pantalla de la opción de acceso de invitados de Teams](../media/teams-guest-access-toggle-on.png)
+![Captura de pantalla de la opción de acceso de invitado de Teams](../media/teams-guest-access-toggle-on.png)
 
 Para establecer la configuración de acceso de invitados de Teams
 

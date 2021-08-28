@@ -20,12 +20,12 @@ description: Los usuarios deben tener asignados permisos en el Centro de Microso
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 93588d7a467c1a3274a803edfc15a4eb51327cdaa320c644d5214defa79798c8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2123cad54bcb1a608447d53a08e61211052e3cca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56884579"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572868"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 
@@ -54,9 +54,9 @@ Para obtener más información acerca de los diferentes permisos que puede conce
 
 1. Abra el Centro de seguridad & cumplimiento en y, a <https://protection.office.com> continuación, vaya a **Permisos**. Para ir directamente a la **pestaña Permisos,** abra <https://protection.office.com/permissions> .
 
-2. En la lista de grupos de roles, elija el grupo de funciones y, a continuación, haga clic **en Editar** icono ![ Editar ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
+2. En la lista de grupos de roles, elija el grupo de funciones y, a continuación, haga clic **en Editar** ![ icono Editar. ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
 
-3. En la página propiedades del grupo de roles en Miembros, haga clic en Agregar icono y seleccione el nombre del usuario ![ ](../../media/ITPro-EAC-AddIcon.gif) (o usuarios) que desea agregar.
+3. En la página propiedades del grupo de roles, en **Miembros,** haga clic **en Agregar** ![ icono.](../../media/ITPro-EAC-AddIcon.gif) y seleccione el nombre del usuario (o usuarios) que desea agregar.
 
 4. Cuando haya seleccionado todos los usuarios que desea agregar al grupo de roles, haga clic en **agregar \> y,** a continuación, **en Aceptar**.
 
@@ -64,7 +64,7 @@ Para obtener más información acerca de los diferentes permisos que puede conce
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Usar PowerShell & centro de seguridad y cumplimiento para dar a otro usuario acceso al Centro de seguridad & cumplimiento
 
-1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
 2. Utilice la siguiente sintaxis:
 
@@ -82,7 +82,7 @@ Para obtener más información acerca de los diferentes permisos que puede conce
 
 Para obtener información detallada acerca de los problemas de sintaxis y parámetros, [vea Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
 Para comprobar que ha concedido acceso correctamente al Centro de seguridad y & cumplimiento, siga uno de estos pasos:
 

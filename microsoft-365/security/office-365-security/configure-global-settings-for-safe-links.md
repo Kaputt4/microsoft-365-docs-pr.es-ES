@@ -18,12 +18,12 @@ ms.collection:
 description: Los administradores pueden aprender a ver y configurar la configuración global (la lista "Bloquear las siguientes direcciones URL" y la protección para aplicaciones de Office 365) para Caja fuerte Vínculos en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e17aad0910c1e069fe80445c76882aa239217f2
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 099ff894cc350ecedbd7743ab348aede540874ab
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247354"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575497"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurar la configuración global para Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -125,11 +125,11 @@ Caja fuerte La protección de vínculos Office 365 aplicaciones se aplica a docu
 
 2. En la **página Caja fuerte,** haga clic en **Configuración global**. En la **directiva Caja fuerte vínculos** de la organización que aparece, configure las siguientes opciones en la sección Configuración que se aplican al contenido de las **aplicaciones** Office 365 compatibles:
 
-   - **Usar Caja fuerte en Office 365** aplicaciones: compruebe que la alternancia está a la derecha para habilitar Caja fuerte vínculos para aplicaciones Office 365 compatibles: ![ Activar ](../../media/scc-toggle-on.png) .
+   - **Usar Caja fuerte en Office 365** aplicaciones: compruebe que la alternancia está a la derecha para habilitar Caja fuerte vínculos para aplicaciones Office 365 compatibles: ![ Activar. ](../../media/scc-toggle-on.png) .
 
-   - No realizar un seguimiento cuando los usuarios hacen clic en vínculos protegidos en aplicaciones de **Office 365:** mueva el botón de alternancia a la izquierda para realizar un seguimiento de los clics de usuario relacionados con las direcciones URL bloqueadas en las aplicaciones Office 365 compatibles: Desactivar ![ ](../../media/scc-toggle-off.png) .
+   - No realice un seguimiento cuando los usuarios hagan clic en vínculos protegidos en aplicaciones de **Office 365:** mueva el botón de alternancia a la izquierda para realizar un seguimiento de los clics de usuario relacionados con las direcciones URL bloqueadas en las aplicaciones Office 365 compatibles: ![ Desactivar. ](../../media/scc-toggle-off.png) .
 
-   - No permitir que los usuarios hagan clic en la dirección URL original de las aplicaciones de **Office 365:** compruebe que la alternancia está a la derecha para impedir que los usuarios hagan clic en la dirección URL bloqueada original en las aplicaciones de Office 365 compatibles: Activar ![ ](../../media/scc-toggle-on.png) .
+   - No permitir que los usuarios hagan clic en la dirección URL original de las aplicaciones de **Office 365:** compruebe que la alternancia está a la derecha para impedir que los usuarios hagan clic en la dirección URL bloqueada original en las aplicaciones Office 365 compatibles: ![ Activar. ](../../media/scc-toggle-on.png) .
 
    Cuando haya terminado, haga clic en **Guardar**.
 

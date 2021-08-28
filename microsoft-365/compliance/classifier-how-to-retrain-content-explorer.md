@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo proporcionar comentarios a un clasificador que se puede entrenar en el Explorador de contenido.
-ms.openlocfilehash: fddb25bb1ebf702d19767c13f65df4f925fcfc78a7036eb769b96241b271471c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c021a1fb7a79e335f53fd99b162c9062c4f43a0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796351"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571090"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Cómo volver a entrenar un clasificador en el explorador de contenido
 
@@ -88,11 +88,11 @@ Para obtener más información sobre el flujo de trabajo general de reentrenamie
 9. Abra **clasificadores trainables**.
 10. El clasificador que se usó en la directiva de cumplimiento de comunicaciones aparecerá en el **encabezado Volver a entrenar.**
 
-![clasificador en estado de reentrenamiento](../media/classifier-retraining.png)
+![clasificador en estado de reentrenamiento.](../media/classifier-retraining.png)
 
 11. Una vez completado el reentrenamiento, elija el clasificador para abrir la introducción al reentrenamiento.
 
-![Introducción a los resultados de reentrenamiento de clasificadores](../media/classifier-retraining-overview.png)
+![introducción a los resultados de reentrenamiento del clasificador.](../media/classifier-retraining-overview.png)
 
 12. Revise la acción recomendada y las comparaciones de predicción de las versiones reentrenadas y publicadas actualmente del clasificador.
 13. Si está satisfecho con los resultados de la readaptación, elija **Volver a publicar**.
@@ -109,7 +109,7 @@ Después de un reentrenamiento, se evalúa el rendimiento del clasificador tanto
 
 Comparamos los números de rendimiento en ambos conjuntos de elementos para el clasificador reentrenado y publicado para proporcionar una recomendación sobre si hubo mejoras para volver a publicar. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtenga información sobre los clasificadores entrenables](classifier-learn-about.md)
 - [Extensiones de nombres de archivo rastreados y tipos de archivo analizados de forma predeterminada en SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

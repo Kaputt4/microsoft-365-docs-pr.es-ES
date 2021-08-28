@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administre las directivas de gobernanza de aplicaciones.
-ms.openlocfilehash: 7da710675ab76a9bdbbf81b0186e4364ce77b84b4c6d2d6ae910ba33ea26a8a5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 270315e15a79b97b55aa729d4b7e9b39930ee82c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820737"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571150"
 ---
 # <a name="manage-app-policies"></a>Administrar directivas de aplicación
 
@@ -43,7 +43,7 @@ Este es un ejemplo de un proceso para administrar una directiva existente:
 1. Si el comportamiento no es el esperado, vuelva al paso 1.
 1. Si el comportamiento es el esperado, edite la directiva y cambie su estado a activo (si es necesario).
 
-![Flujo de trabajo de administración de directivas de aplicaciones](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
+![Flujo de trabajo de administración de directivas de aplicaciones.](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
 
 ## <a name="editing-an-app-policy-configuration"></a>Editar la configuración de una directiva de aplicación
 

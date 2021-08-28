@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 38e62021346f3802070f40176955d02656bf563e0fc4318c3df96bad1cad610f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8395a9c5dd2389fe25761dcbe76a13051baaa1b4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828957"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573024"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>Informar y solucionar problemas de Microsoft Defender para las reglas ASR de ATP
 
@@ -37,7 +37,7 @@ El Microsoft 365 de seguridad es la nueva interfaz para supervisar y administrar
 En Microsoft 365 de seguridad, le ofrecemos una vista completa de la configuración y los eventos de reglas ASR actuales en su estado. Tenga en cuenta que los dispositivos deben incorporarse al servicio Microsoft Defender para endpoints para que estos informes se rellenen.
 Esta es una captura de pantalla del centro Microsoft 365 de seguridad (en **Reports** \> **Devices** \> **Attack surface reduction**). En el nivel de dispositivo, selecciona **Configuración en** el panel Reglas de reducción de **superficie de** ataque. Se muestra la siguiente pantalla, donde puedes seleccionar un dispositivo específico y comprobar su configuración de regla ASR individual.
 
-:::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="Pantalla de reglas ASR":::
+:::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="Pantalla reglas ASR.":::
 
 ## <a name="microsoft-defender-for-endpoint---advanced-hunting"></a>Microsoft Defender para endpoint: búsqueda avanzada
 
@@ -49,9 +49,9 @@ Mediante la búsqueda avanzada, es posible extraer información de reglas ASR, c
 
 Los eventos de reglas ASR están disponibles para consultarse en la tabla DeviceEvents de la sección de búsqueda avanzada de la Microsoft 365 Defender. Por ejemplo, una consulta sencilla, como la siguiente, puede informar de todos los eventos que tienen reglas ASR como origen de datos durante los últimos 30 días y los resumirá mediante el recuento ActionType, que en este caso será el nombre de código real de la regla ASR.
 
-:::image type="content" source="images/adv-hunt-querynew.png" alt-text="Consulta de búsqueda avanzada":::
+:::image type="content" source="images/adv-hunt-querynew.png" alt-text="Consulta de búsqueda avanzada.":::
 
-:::image type="content" source="images/adv-hunt-sc-2new.png" lightbox="images/adv-hunt-sc-2new.png" alt-text="pantalla de búsqueda avanzada":::
+:::image type="content" source="images/adv-hunt-sc-2new.png" lightbox="images/adv-hunt-sc-2new.png" alt-text="pantalla de búsqueda avanzada.":::
 
 Con la búsqueda avanzada puedes dar forma a las consultas a tu gusto, para que puedas ver lo que está sucediendo, independientemente de si quieres identificar algo en una máquina individual o quieres extraer información de todo el entorno.
 
@@ -61,7 +61,7 @@ Una alternativa a la búsqueda avanzada, pero con un ámbito más estrecho, es l
 
 A continuación se muestra una captura de pantalla de la vista Escala de tiempo de estos eventos en un punto de conexión determinado.  Desde esta vista, puede filtrar la lista de eventos en función de cualquiera de los grupos de eventos a lo largo del panel derecho. También puedes habilitar o deshabilitar eventos marcados y detallados al ver alertas y desplazarte por la escala de tiempo histórica.
 
-:::image type="content" source="images/mic-sec-def-timelinenew.png" lightbox="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defender escala de tiempo":::
+:::image type="content" source="images/mic-sec-def-timelinenew.png" lightbox="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defender escala de tiempo.":::
 
 ## <a name="how-to-troubleshoot-asr-rules"></a>¿Cómo solucionar problemas de reglas ASR?
 
@@ -75,7 +75,7 @@ Una de las formas más sencillas de determinar si las reglas ASR ya están habil
 
 Aquí le mostramos un ejemplo:
 
-:::image type="content" source="images/getmpreferencescriptnew.png" lightbox="images/getmpreferencescriptnew.png" alt-text="obtener script mppreference":::
+:::image type="content" source="images/getmpreferencescriptnew.png" lightbox="images/getmpreferencescriptnew.png" alt-text="obtener script mppreference.":::
 
 Hay varias reglas ASR activas, con distintas acciones configuradas.
 
@@ -87,7 +87,7 @@ Ejemplo:
 Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids
 ```
 
-:::image type="content" source="images/getmpref-examplenew.png" alt-text="ejemplo de obtener mpreference":::
+:::image type="content" source="images/getmpref-examplenew.png" alt-text="ejemplo de obtener mpreference.":::
 
 Lo anterior muestra todos los IDs de las reglas ASR que tienen una configuración diferente de 0 (No configurado).
 
@@ -97,7 +97,7 @@ A continuación, el siguiente paso es enumerar las acciones reales (Bloquear o A
 Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions
 ```
 
-:::image type="content" source="images/getmpref-example2new.png" alt-text="get mppreference example2":::
+:::image type="content" source="images/getmpref-example2new.png" alt-text="get mppreference example2.":::
 
 ### <a name="querying-blocking-and-auditing-events"></a>Consulta de eventos de bloqueo y auditoría
 
@@ -105,7 +105,7 @@ Los eventos de regla ASR se pueden ver en el Windows Defender registro.
 
 Para acceder a él, abra Windows visor de eventos y vaya a Registros de aplicaciones y servicios  >  **de Microsoft**  >  **Windows**  >  **Windows Defender**  >  **Operativo**.
 
-:::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="scr del visor de eventos":::
+:::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="scr del visor de eventos.":::
 
 ## <a name="microsoft-defender-malware-protection-logs"></a>Registros de Protección contra malware de Microsoft Defender
 
@@ -115,7 +115,7 @@ Puede encontrar esta utilidad en *%ProgramFiles%\Windows Defender\MpCmdRun.exe*.
 
 Para generar la información de compatibilidad, *escribaMpCmdRun.exe -getfiles*. Después de un tiempo, varios registros se empaquetarán en un archivo (MpSupportFiles.cab) y estarán disponibles en *C:\ProgramData\Microsoft\Windows Defender\Support*.
 
-:::image type="content" source="images/malware-prot-logsnew.png" alt-text="registros de protección contra malware":::
+:::image type="content" source="images/malware-prot-logsnew.png" alt-text="registros de protección contra malware.":::
 
 Extrae ese archivo y tendrás muchos archivos disponibles para solucionar problemas.
 

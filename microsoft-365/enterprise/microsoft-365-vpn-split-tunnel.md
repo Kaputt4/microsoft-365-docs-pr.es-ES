@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Guía para usar el túnel dividido VPN con Office 365 para optimizar la conectividad de Office 365 para usuarios remotos.
-ms.openlocfilehash: dc9e9fa6b730ac6a98879c692f349b2480d3dcf14320c7817d5d5b14eb6ac825
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bfb774f6404f8eec1c517b2e2e4e434694f9673f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848928"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575857"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimizar la conectividad de Office 365 para usuarios remotos usando el túnel dividido de VPN
 <!---
@@ -35,7 +35,7 @@ ms.locfileid: "53848928"
 
 Para los clientes que conectan sus dispositivos de trabajo remoto a la red corporativa o a la infraestructura en la nube a través de VPN, Microsoft recomienda que los escenarios clave Office 365 **Microsoft Teams,** **SharePoint Online** y **Exchange Online** se enruten a través de una configuración de túnel dividido de _VPN._ Esto adquiere especial importancia como estrategia de primera línea para facilitar la productividad continua de los empleados durante eventos de trabajo desde casa a gran escala, como la crisis de COVID-19.
 
-![Configuración del túnel dividido de VPN](../media/vpn-split-tunneling/vpn-model-2.png)
+![Dividir Tunnel VPN.](../media/vpn-split-tunneling/vpn-model-2.png)
 
 _Figura 1: una solución de túnel dividido de VPN con excepciones de Office 365 definidas enviada directamente al servicio. El resto del tráfico recorre el túnel de VPN independientemente del destino._
 
@@ -68,7 +68,7 @@ Para obtener un proceso paso a paso para configurar Microsoft 365 para los traba
 
 Las redes corporativas tradicionales suelen diseñarse para trabajar de forma segura en estructuras prenube en las que la mayoría de los datos, servicios y aplicaciones importantes se hospedan de forma local y se conectan directamente a la red corporativa interna, al igual que la mayoría de los usuarios. Por lo tanto, la infraestructura de red se crea en torno a estos elementos. Las oficinas delegadas se conectan a la oficina central _a través de redes de Alternancia de etiquetas multiprotocolo (MPLS)_ y los usuarios remotos deben conectarse a la red corporativa a través de una VPN para acceder a los puntos de conexión locales y a Internet. En este modelo, todo el tráfico de usuarios remotos recorre la red corporativa y se enruta al servicio en la nube mediante un punto de salida común.
 
-![Configuración de VPN forzada](../media/vpn-split-tunneling/vpn-model-1.png)
+![Configuración de VPN forzada.](../media/vpn-split-tunneling/vpn-model-1.png)
 
 _Figura 2: una solución de VPN común para usuarios remotos en la que todo el tráfico se transfiere de nuevo obligatoriamente a la red corporativa, independientemente del destino_
 
@@ -92,7 +92,7 @@ Este conjunto de puntos de conexión de ámbito estricto se puede dividir y sepa
 
 Los elementos de seguridad como DLP, protección antivirus, autenticación y control de acceso se pueden entregar de forma mucho más eficaz en estos puntos de conexión en diferentes capas del servicio. As we also divert the bulk of the traffic volume away from the VPN solution, this frees the VPN capacity up for business critical traffic that still relies on it. Asimismo, en muchos casos elimina la necesidad de usar un programa de actualización prolongado y costoso que pueda lidiar con esta nueva forma de operar.
 
-![Detalles Tunnel configuración de VPN de división](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Dividir Tunnel de configuración de VPN.](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Figura 3: una solución de túnel dividido de VPN con excepciones de Office 365 definidas con envío directo al servicio. El resto del tráfico es forzado de vuelta a la red corporativa independientemente del destino._
 

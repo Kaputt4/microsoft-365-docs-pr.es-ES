@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las directivas de aplicación.
-ms.openlocfilehash: fae9afa65c4bef1d7288493e92c8b78c6fb9d08fa4426c1087622856b4cec921
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f22e56195b94f07a6b8499bd69c60d65f37cce8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861313"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572244"
 ---
 # <a name="get-started-with-app-policies"></a>Introducción a las directivas de aplicación
 
@@ -29,9 +29,9 @@ Las directivas de aplicación para la gobernanza de aplicaciones de Microsoft le
 
 Para ver una lista de las directivas de aplicaciones actuales, vaya al **Centro de cumplimiento de Microsoft 365 > Gobernanza de aplicaciones > Directivas**.
 
-![La página de resumen de directivas de MAPG en el Centro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-policies.png)
+![La página de resumen de directivas de MAPG en el Centro de cumplimiento de Microsoft 365.](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
-## <a name="whats-available-on-the-app-policies-dashboard"></a>Que información está disponible en el panel de políticas de aplicaciones
+## <a name="whats-available-on-the-app-policies-dashboard"></a>Qué información está disponible en el panel de directivas de aplicaciones
 
 Puede ver la cantidad de directivas activas, inactivas y de auditoría, así como la información relativa a cada directiva:
 

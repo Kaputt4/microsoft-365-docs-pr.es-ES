@@ -17,12 +17,12 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Obtenga información sobre cómo la pestaña Decidir en Advanced eDiscovery proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de archivos de casos.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b1bab0cc7460e9260dd8f7bc6b5adb90d5a06a9b0e7832b28f7d3a2cb4e35f85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: deb47c0c795a828804722085f8cfa3b002580307
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842349"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571367"
 ---
 # <a name="decisions-based-on-relevance-results-in-advanced-ediscovery"></a>Las decisiones basadas en relevancia se traducen en Advanced eDiscovery
   
@@ -30,7 +30,7 @@ En el módulo Relevancia de Advanced eDiscovery, la pestaña Decidir proporciona
   
 ## <a name="using-the-decide-tab"></a>Uso de la pestaña Decidir
 
-![Decisión de relevancia](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
+![Decisión de relevancia.](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
 Esta pestaña incluye los siguientes componentes:
   

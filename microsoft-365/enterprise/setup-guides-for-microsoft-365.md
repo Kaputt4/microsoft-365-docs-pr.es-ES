@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenga herramientas paso a paso para planear, migrar e implementar las características de las licencias de su inquilino. Busca una guía para configurar un servicio o una aplicación que necesites ejecutar.
-ms.openlocfilehash: 819a53d10f3793ec337828747ec7cf3bbae3aaea
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 47377a8b8e6733442dc08980c876f36a795fbfdf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356461"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575629"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
@@ -216,11 +216,11 @@ Se puede obtener acceso a las guías de configuración desde la página [de](htt
 
 2. Busque la **tarjeta guías de &** aprendizaje.
 
-   ![Tarjeta & guías de aprendizaje en el Centro de administración de Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   ![Tarjeta & guía de aprendizaje en el Centro de administración de Microsoft 365.](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
 3. Seleccione **Guías paso a paso**.
 
-   ![Captura de pantalla de la página de instrucciones del programa de instalación en el Centro de administración de Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ![Captura de pantalla de la página de instrucciones del programa de instalación Centro de administración de Microsoft 365.](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
 > [!NOTE]
 > Los permisos de administrador de inquilinos son necesarios para tener acceso al Centro de administración de Microsoft 365.
@@ -229,6 +229,6 @@ Se puede obtener acceso a las guías de configuración desde la página [de](htt
 
 Cada guía le proporciona instrucciones paso a paso, recursos, artículos y, cuando sea necesario, scripts que puede usar para realizar cambios de configuración. Estas guías le proporcionan opciones que reflejan las necesidades específicas de organizaciones pequeñas y grandes. Además, la guía incluye asistencia para administradores nuevos y con más experiencia.
 
-![Ejemplo de una guía de configuración](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
+![Ejemplo de una guía de configuración.](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
 Puede usar las guías para obtener más información sobre características específicas de Microsoft 365 y Office 365 durante la fase de planeación, durante la implementación y la implementación, o para volver a visitarlas después de completar una implementación para modificar una configuración.

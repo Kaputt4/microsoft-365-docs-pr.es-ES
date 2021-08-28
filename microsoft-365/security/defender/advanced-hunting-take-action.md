@@ -1,5 +1,5 @@
 ---
-title: Realizar acciones en los resultados de consulta de búsqueda avanzada en Microsoft 365 Defender
+title: Tome medidas en los resultados de la consulta de búsqueda avanzada en Microsoft 365 Defender
 description: Abordar rápidamente las amenazas y los activos afectados en los resultados avanzados de la consulta de búsqueda
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, tomar medidas
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 15eebbba102640a92f9c7712194aaef685a96cfb
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: b708fa898d1f84efdb5e885b786619e481099ac0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952613"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573000"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Realizar acciones en los resultados avanzados de la consulta de búsqueda
 
@@ -75,13 +75,13 @@ Para obtener más información sobre cómo se toman las acciones de cuarentena y
 ## <a name="take-action"></a>Tomar medidas
 Para realizar cualquiera de las acciones descritas, seleccione uno o más registros en los resultados de la consulta y, a continuación, **seleccione Realizar acciones**. Un asistente le guiará a través del proceso de selección y envío de las acciones preferidas.
 
-![Imagen del registro seleccionado con panel para inspeccionar el registro](../../media/mtp-ah/ah-take-actions.png)
+![Imagen del registro seleccionado con panel para inspeccionar el registro.](../../media/mtp-ah/ah-take-actions.png)
 
 ## <a name="review-actions-taken"></a>Revisar acciones realizadas
 Cada acción se registra individualmente en el centro [de acciones](m365d-action-center.md) en Historial **del centro** de acciones (  >   [security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Vaya al centro de acciones para comprobar el estado de cada acción.
  
 >[!NOTE]
->Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo avanzados de búsqueda de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
+>Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

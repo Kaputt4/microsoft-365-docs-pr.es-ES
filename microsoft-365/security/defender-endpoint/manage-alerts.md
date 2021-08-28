@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 17e75cd8e12cf83a3581118dbe453314e659760b10c5960f6529d40c38deb303
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b91773a5cfa411c762aba939ba53d8f35be16f7a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902826"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573048"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Administrar alertas de Microsoft Defender para puntos de conexión
 
@@ -40,7 +40,7 @@ Puedes administrar alertas seleccionando una alerta en  la cola de alertas **o**
 
 Al seleccionar una alerta en cualquiera de esos lugares, se muestra el panel **de administración de alertas**.
 
-![Imagen del panel de administración de alertas y la cola de alertas](images/atp-alerts-selected.png)
+![Imagen del panel de administración de alertas y la cola de alertas.](images/atp-alerts-selected.png)
 
 ## <a name="link-to-another-incident"></a>Vincular a otro incidente
 Puede crear un nuevo incidente a partir de la alerta o vínculo a un incidente existente. 

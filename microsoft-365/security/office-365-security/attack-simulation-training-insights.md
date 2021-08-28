@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender cómo el aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender afecta a los empleados y puede obtener información sobre los resultados de simulación y aprendizaje.
 ms.technology: mdo
-ms.openlocfilehash: 7df504bb5f94a5c14792e278c03776ff45df7e8cdf788720c717e83b28baeb96
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 725b5c0310d4412f0901526a8111c686f69898a2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862541"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576097"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Obtenga información a través de la formación de simulación de ataques
 
@@ -39,7 +39,7 @@ En el gráfico puede ver:
 Además, refleja la diferencia entre el número real de empleados comprometidos por el ataque y la tasa de compromiso `<number> less susceptible to phishing` predicho. Es menos probable que este número de empleados se vea comprometido por ataques similares en el futuro, mientras que indica cómo lo hacían los empleados en general en contraste con la tasa de `<percent%> better than predicted rate` compromiso predicho.
 
 > [!div class="mx-imgBorder"]
-> ![Información general sobre la tarjeta de impacto de comportamiento en el aprendizaje de simulación de ataque](../../media/attack-sim-preview-behavior-impact-card.png)
+> ![Información general sobre la tarjeta de impacto de comportamiento en el aprendizaje de simulación de ataque.](../../media/attack-sim-preview-behavior-impact-card.png)
 
 Para ver un informe más detallado, haga clic **en Ver simulaciones y informe de eficacia de aprendizaje.** Este informe proporciona la misma información con contexto adicional de la propia simulación (por ejemplo, la técnica de simulación y el total de usuarios dirigidos).
 
@@ -50,7 +50,7 @@ En la [ **pestaña Simulaciones,**](https://security.microsoft.com/attacksimulat
 En la sección acciones recomendadas se detallan las recomendaciones disponibles en [Puntuación segura de Microsoft](../defender/microsoft-secure-score.md). Estas recomendaciones se basan en la carga usada en la simulación y le ayudarán a proteger a sus empleados y su entorno. Hacer clic en cada acción de mejora le llevará a sus detalles.
 
 > [!div class="mx-imgBorder"]
-> ![Sección Acciones de recomendación sobre el aprendizaje de simulación de ataques](../../media/attack-sim-preview-recommended-actions.png)
+> ![Sección Acciones de recomendación en el entrenamiento de simulación de ataques.](../../media/attack-sim-preview-recommended-actions.png)
 
 ## <a name="related-links"></a>Vínculos relacionados
 

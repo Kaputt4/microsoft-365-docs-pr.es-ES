@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49d5dcf70a2bf9f94233ad7274faab5f697e790276d4347933ab51174e707c8c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9deece85ec5a310cea652af1dd1da39cea386848
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806345"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571306"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Administrar Microsoft Defender para incidentes de punto de conexión
 
@@ -42,7 +42,7 @@ La administración de incidentes es una parte importante de todas las operacione
 Al seleccionar un incidente de la cola **Incidentes,** se abre el panel **Administración** de incidentes, donde puede abrir la página de incidentes para obtener más información.
 
 
-![Imagen del panel de administración de incidentes](images/atp-incidents-mgt-pane-updated.png)
+![Imagen del panel de administración de incidentes.](images/atp-incidents-mgt-pane-updated.png)
 
 Puedes asignar incidentes a ti mismo, cambiar el estado y la clasificación, cambiar el nombre o comentarlos para realizar un seguimiento de su progreso.
 
@@ -55,7 +55,7 @@ Puedes asignar incidentes a ti mismo, cambiar el estado y la clasificación, cam
 >
 
 
-![Imagen de la página de detalles de incidentes](images/atp-incident-details-updated.png)
+![Imagen de la página de detalles del incidente.](images/atp-incident-details-updated.png)
 
 ## <a name="assign-incidents"></a>Asignar incidentes
 Si aún no se ha asignado un incidente, puedes seleccionar **Asignarme** para asignarte el incidente. Esta asignación no incluye solo el incidente, sino también todas las alertas asociadas a él.

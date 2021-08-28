@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: '
-ms.openlocfilehash: b7207a175a900b45e081e40e438495c0b0ed6874
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 003a643bd861d3937d9e0c62f487d36e950f14c9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356173"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575653"
 ---
 # <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Cómo participar en la nueva migración de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a los servicios Office 365 en las nuevas regiones del centro de datos alemán
 
@@ -41,15 +41,15 @@ En la página **Perfil de la organización**, desplácese hacia abajo hasta la s
 
 Si desea migrar el servicio de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a los servicios Office 365 en las nuevas regiones del centro de datos alemán, haga clic en **Participar.**
  
-![Introducción a la participación](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
+![Introducción de la suscripción.](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
 Aparecerá una nueva sección en el lado derecho de la pantalla para aceptar la confirmación. Seleccione **Sí** y, a continuación, haga clic **en Guardar**.
  
-![Aceptación de la participación](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
+![Aceptación de la suscripción.](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
 Una vez que haya optado por participar en nombre de su inquilino, todos los administradores verán la confirmación en Migrar de **Microsoft Cloud Germany (Microsoft Cloud Deutschland) a** los servicios Office 365 en la sección nuevas regiones del centro de datos alemán, incluida la fecha de la suscripción. Los administradores también recibirán una confirmación en el Centro de mensajes de la Centro de administración de Microsoft 365. 
  
-![Confirmación de participación](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
+![Confirmación de la suscripción.](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>¿Qué sucede después de participar en la migración?
 

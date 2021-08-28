@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 989ec90af003d3b0a488e4ab32afa70e5640dd93cbfab4195d6b048105b80e80
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cfa07a795e99144e168b06b99e9f1feacd7fa9be
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888147"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572772"
 ---
 # <a name="functional-testing"></a>Pruebas de funcionamiento
 
@@ -47,7 +47,7 @@ Ficha 1: escriba información básica. Proporcione el nombre y la versión de la
 *Tenga en cuenta que la opción De fábrica (OOB) es obligatoria de forma predeterminada.*
 
 
-![Seleccionar la pestaña de pruebas funcionales](Media/functional_testing_tab1.png)
+![Seleccione la pestaña de prueba funcional.](Media/functional_testing_tab1.png)
 
 Ficha 2: Upload los componentes del paquete cargando un archivo zip con toda la prueba (archivos binarios, dependencias, scripts, etc.). 
 
@@ -57,7 +57,7 @@ Ficha 3: Configurar las tareas de pruebas de lista de pruebas y funcionales. Aqu
 
 Actualmente, puede cargar entre 1 y 8 scripts para las pruebas funcionales. (Comentario amable en esta entrada si necesita más scripts!)
 
-![Upload hasta 8 scripts con pruebas funcionales](Media/functional_testing_tab3.png)
+![Upload hasta 8 scripts con pruebas funcionales.](Media/functional_testing_tab3.png)
 
 (Opcional) Configure un reinicio después de la instalación. Algunas aplicaciones requieren un reinicio después de la instalación. 
 
@@ -65,7 +65,7 @@ Seleccione el script específico en la pestaña Tareas si desea que se realice u
 
 Ficha 4: elija cuándo se instala la actualización Windows: la aplicación de la revisión Windows Update se realiza antes de cualquier script de su elección. Se recomienda instalar una actualización de Windows después de la instalación de la aplicación para imitar estrechamente los escenarios de uso de aplicaciones reales.
 
-![La actualización Windows puede instalarse después de un script específico](Media/functional_testing_tab4.png)
+![La Windows puede instalarse después de un script específico.](Media/functional_testing_tab4.png)
 
 Ficha 5: revisar y crear el paquete. Una vez que haya completado los pasos enumerados anteriormente, seleccione ```Create``` para finalizar el proceso de carga.
 

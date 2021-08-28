@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b7f884fa55d0f3514aae36761642e2589d1ea51e
-ms.sourcegitcommit: fce9a89b8280f41779835b18dceb59fa17384acf
+ms.openlocfilehash: baff7ea6f32233cc05291dd3de124e964751192e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58666771"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571294"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
 
@@ -87,7 +87,7 @@ Se admiten las tres versiones principales más recientes de macOS.
 
 No se admiten versiones beta de macOS.
 
-Actualmente, la compatibilidad con dispositivos macOS con procesadores basados en chip M1 está en versión preliminar.
+No se admiten dispositivos macOS con procesadores M1.
 
 Después de habilitar el servicio, es posible que deba configurar la red o el firewall para permitir conexiones salientes entre él y los puntos de conexión.
 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 66f9f571411c61bd8944ceb01a13f237ecd1d483
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 73a802f158b8804d7cf94708ecf3a6ac9355baae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255787"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575785"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario
 
@@ -40,11 +40,11 @@ En Windows 10, versión 1703, ocultar la interfaz ocultará las notificaciones d
 
 Con la configuración establecida en **Enabled**:
 
-:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="Captura de pantalla Seguridad de Windows sin el icono de escudo y las secciones de protección contra virus y amenazas":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="Captura de pantalla Seguridad de Windows sin el icono de escudo y las secciones de protección contra virus y amenazas.":::
 
 Con la configuración establecida en **Deshabilitado** o no configurada:
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Captura de pantalla Seguridad de Windows con el icono de escudo y las secciones de protección contra amenazas":::
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Captura de pantalla Seguridad de Windows con el icono de escudo y las secciones de protección contra amenazas.":::
 
 >[!NOTE]
 >Ocultar la interfaz también impedirá que Antivirus de Microsoft Defender notificaciones en el punto de conexión. Las notificaciones de Microsoft Defender para puntos de conexión seguirán apareciendo. También puede configurar [individualmente las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)

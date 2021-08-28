@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c4fa624d6c0fb6ea299834fd4b57f37dd5f8f7c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9b00d971afa714b89a473ff75cf6022f8bba9ef8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531568"
+ms.locfileid: "58572568"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Crear una regla de notificación cuando se usa un script local de incorporación o offboarding
 
@@ -54,18 +54,18 @@ Tendrás que tener acceso a:
 
 2. Vaya a **Mis flujos > Nuevo > Programado - desde en blanco**.
 
-    ![Imagen del flujo](images/new-flow.png)
+    ![Imagen del flujo.](images/new-flow.png)
 
 3. Cree un flujo programado.
    1. Escriba un nombre de flujo.
    2. Especifique el inicio y la hora.
    3. Especifique la frecuencia. Por ejemplo, cada 5 minutos.
 
-    ![Imagen del flujo de notificación](images/build-flow.png)
+    ![Imagen del flujo de notificación.](images/build-flow.png)
 
 4. Seleccione el botón + para agregar una nueva acción. La nueva acción será una solicitud HTTP a la API del Centro de seguridad de Defender para puntos de conexión. También puede reemplazarlo por el "Conector WDATP&quot; (acción: &quot;Máquinas- Obtener lista de máquinas").
 
-    ![Imagen de periodicidad y acción de agregar](images/recurrence-add.png)
+    ![Imagen de periodicidad y acción de agregar.](images/recurrence-add.png)
 
 5. Escriba los siguientes campos HTTP:
 
@@ -78,19 +78,19 @@ Tendrás que tener acceso a:
    - Tipo de credencial: seleccione "Secreto".
    - Secreto: inicie sesión y navegue hasta Azure Active Directory > https://portal.azure.com **registros de aplicaciones** y obtenga el valor de Identificador de inquilino.
 
-    ![Imagen de las condiciones HTTP](images/http-conditions.png)
+    ![Imagen de las condiciones HTTP.](images/http-conditions.png)
 
 6. Para agregar un paso nuevo, seleccione **Agregar nueva** acción y, a continuación, busque Operaciones de **datos** y seleccione **Analizar JSON**.
 
-    ![Imagen de operaciones de datos](images/data-operations.png)
+    ![Imagen de operaciones de datos.](images/data-operations.png)
 
 7. Agregue Body en el **campo Contenido.**
 
-    ![Imagen de JSON de análisis](images/parse-json.png)
+    ![Imagen de JSON de análisis.](images/parse-json.png)
 
 8. Seleccione el **vínculo Usar carga de ejemplo para generar el** esquema.
 
-    ![Imagen de json de análisis con carga](images/parse-json-schema.png)
+    ![Imagen de analizar json con carga.](images/parse-json-schema.png)
 
 9. Copie y pegue el siguiente fragmento de código JSON:
 
@@ -179,22 +179,22 @@ Tendrás que tener acceso a:
     - Si es así, no se activará ninguna notificación
     - Si no, registrará los nuevos dispositivos incorporados en la lista SharePoint y se enviará una notificación al administrador de Defender for Endpoint
 
-    ![Imagen de aplicar a cada uno](images/flow-apply.png)
+    ![Imagen de aplicar a cada uno.](images/flow-apply.png)
 
-    ![Imagen de aplicar a cada uno con obtener elementos](images/apply-to-each.png)
+    ![Imagen de aplicar a cada uno con obtener elementos.](images/apply-to-each.png)
 
 11. En **Condición**, agregue la siguiente expresión: "length(body('Get_items')?[' value'])" y establece la condición en igual a 0.
 
-    ![Imagen de aplicar a cada condición ](images/apply-to-each-value.png)
-     ![ Imagen de condición1 ](images/conditions-2.png)
-     ![ Imagen de condición2 ](images/condition3.png)
-     ![ Imagen de envío de correo electrónico](images/send-email.png)
+    ![Imagen de aplicar a cada condición. ](images/apply-to-each-value.png)
+     ![ Imagen de condition1. ](images/conditions-2.png)
+     ![ Imagen de condition2. ](images/condition3.png)
+     ![ Imagen de enviar correo electrónico.](images/send-email.png)
 
 ## <a name="alert-notification"></a>Notificación de alerta
 
 La siguiente imagen es un ejemplo de una notificación por correo electrónico.
 
-![Imagen de notificación de correo electrónico](images/alert-notification.png)
+![Imagen de notificación de correo electrónico.](images/alert-notification.png)
 
 ## <a name="tips"></a>Sugerencias
 

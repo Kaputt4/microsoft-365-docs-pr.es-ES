@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: 0164d7f5017ebf3b2076bf7231da4ca30a36427500c6782602e6e50812f914df
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a11528df6960293ba4b5a3f6e4d287989049556a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817017"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572496"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de microsoft defender para Office 365 prueba
 
@@ -43,7 +43,7 @@ Una prueba de Microsoft Defender para Office 365 es la forma más sencilla de pr
 |Característica|Descripción|
 |---|---|
 |[Configuración exclusiva en directivas contra suplantación de identidad](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Obtenga protección de suplantación de usuario, protección de suplantación de dominio, inteligencia de buzones de correo y umbrales avanzados de suplantación de identidad.|
-|[Datos adjuntos seguros](safe-attachments.md)|Inspeccione los datos adjuntos de correo electrónico y otros archivos en un entorno de detonación controlada para detectar malware nuevo y evasivo.|
+|[Archivos adjuntos seguros](safe-attachments.md)|Inspeccione los datos adjuntos de correo electrónico y otros archivos en un entorno de detonación controlada para detectar malware nuevo y evasivo.|
 |[Vínculos seguros](safe-links.md)|Realice comprobaciones de tiempo de clic para asegurarse de que las direcciones URL que podrían haber pasado la inspección inicial no se hayan armado.|
 |[Rastreadores de amenazas](threat-trackers.md)<sup>\*</sup>|Use widgets informativos y vistas para identificar problemas de ciberseguridad que puedan afectar a su organización.|
 |[Explorador de amenazas](threat-explorer.md)<sup>\*</sup>|Busca con información casi en tiempo real sobre amenazas en tu correo Office 365 correo electrónico.|
@@ -93,7 +93,7 @@ Defender para Office 365 ayuda a las organizaciones a proteger su empresa ofreci
 
 También puede obtener más información sobre Defender para Office 365 en esta [guía interactiva](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189).
 
-![Diagrama conceptual de Microsoft Defender para Office 365 conceptual](../../media/microsoft-defender-for-office-365.png)
+![Microsoft Defender para Office 365 diagrama conceptual.](../../media/microsoft-defender-for-office-365.png)
 
 ### <a name="prevention"></a>Prevención
 

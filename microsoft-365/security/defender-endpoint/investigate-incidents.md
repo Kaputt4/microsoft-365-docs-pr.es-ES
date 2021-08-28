@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 064d157fb59e8f8dba3e268b4658f8f6b8fa674925bf6287bdf10eea39a441bd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6453ce0607ed7dee66622b64705d88e91cd67bf4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839740"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575821"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Investigar incidentes en Microsoft Defender para punto de conexión
 
@@ -48,7 +48,7 @@ Cuando investigues un incidente, verás lo siguiente:
 
 Haga clic en un incidente para ver **el panel Incidente**. Seleccione **Abrir página de incidentes** para ver los detalles del incidente y la información relacionada (alertas, dispositivos, investigaciones, evidencias, gráfico).
 
-![Imagen de detalles de incidentes1](images/atp-incident-details.png)
+![Imagen de detalles del incidente1.](images/atp-incident-details.png)
 
 ### <a name="alerts"></a>Alertas
 
@@ -61,7 +61,7 @@ Puede investigar las alertas y ver cómo se vincularon en un incidente. Las aler
 - Mismo archivo: los archivos asociados con la alerta son exactamente los mismos
 - Misma dirección URL: la dirección URL que desencadenó la alerta es exactamente la misma
 
-![Imagen de la pestaña alertas con la página de detalles del incidente que muestra los motivos por los que las alertas se vincularon juntas en ese incidente](images/atp-incidents-alerts-reason.png)
+![Imagen de la pestaña alertas con la página de detalles de incidentes que muestra los motivos por los que las alertas se vincularon en ese incidente.](images/atp-incidents-alerts-reason.png)
 
 También puede administrar una alerta y ver metadatos de alerta junto con otra información. Para obtener más información, vea [Investigar alertas](investigate-alerts.md).
 
@@ -69,13 +69,13 @@ También puede administrar una alerta y ver metadatos de alerta junto con otra i
 
 También puedes investigar los dispositivos que forman parte de un incidente determinado o están relacionados con ellos. Para obtener más información, vea [Investigar dispositivos](investigate-machines.md).
 
-![Pestaña Imagen de dispositivos en la página detalles de incidentes](images/atp-incident-device-tab.png)
+![Imagen de la pestaña dispositivos en la página detalles de incidentes.](images/atp-incident-device-tab.png)
 
 ### <a name="investigations"></a>Investigaciones
 
 Seleccione **Investigaciones para** ver todas las investigaciones automáticas iniciadas por el sistema en respuesta a las alertas de incidentes.
 
-![Imagen de la pestaña investigaciones en la página de detalles de incidentes](images/atp-incident-investigations-tab.png)
+![Imagen de la pestaña investigaciones en la página de detalles del incidente.](images/atp-incident-investigations-tab.png)
 
 ## <a name="going-through-the-evidence"></a>Pasar por la evidencia
 
@@ -83,7 +83,7 @@ Microsoft Defender para endpoint investiga automáticamente todos los eventos ad
 
 Cada una de las entidades analizadas se marcará como infectado, corregido o sospechoso.
 
-![Imagen de la pestaña evidencia en la página de detalles del incidente](images/atp-incident-evidence-tab.png)
+![Imagen de la pestaña evidencia en la página de detalles del incidente.](images/atp-incident-evidence-tab.png)
 
 ## <a name="visualizing-associated-cybersecurity-threats"></a>Visualización de amenazas de ciberseguridad asociadas
 
@@ -93,11 +93,11 @@ Microsoft Defender para endpoint agrega la información de amenazas en un incide
 
 El **Graph** cuenta la historia del ataque de ciberseguridad. Por ejemplo, muestra cuál era el punto de entrada, qué indicador de riesgo o actividad se observó en qué dispositivo. etc.
 
-![Imagen del gráfico de incidentes](images/atp-incident-graph-tab.png)
+![Imagen del gráfico de incidentes.](images/atp-incident-graph-tab.png)
 
 Puede hacer clic en los círculos del gráfico de incidentes para ver los detalles de los archivos malintencionados, las detecciones de archivos asociados, cuántas instancias ha habido en todo el mundo, si se ha observado en su organización, si es así, cuántas instancias.
 
-![Imagen de los detalles del incidente](images/atp-incident-graph-details.png)
+![Imagen de los detalles del incidente.](images/atp-incident-graph-details.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

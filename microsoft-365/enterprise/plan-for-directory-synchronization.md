@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Describe la sincronización de directorios Microsoft 365, la limpieza de servicios de dominio de Active Directory y la herramienta Azure Active Directory Conectar directorio.
-ms.openlocfilehash: 62c8246e6a825ff57583dbbccb1028cd9035f72e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5ad437e4f8abcf2a6d59d17ce41a2b1adeac0649
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354409"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575641"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Identidad híbrida y sincronización de directorios para Microsoft 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Según las necesidades empresariales y los requisitos técnicos, el modelo de identidad híbrida y la sincronización de directorios es la opción más común para los clientes empresariales que adoptan Microsoft 365. La sincronización de directorios permite administrar identidades en los Servicios de dominio de Active Directory (AD DS) y todas las actualizaciones de cuentas de usuario, grupos y contactos se sincronizan con el inquilino de Azure Active Directory (Azure AD) de su suscripción Microsoft 365.
 
@@ -65,7 +65,7 @@ Hay dos tipos de autenticación administrada:
 
 Con PHS, sincronizas tus cuentas de usuario de AD DS con Microsoft 365 y administras los usuarios locales. Los hash de contraseñas de usuario se sincronizan desde AD DS a Azure AD para que los usuarios tengan la misma contraseña local y en la nube. Esta es la forma más sencilla de habilitar la autenticación para identidades de AD DS en Azure AD. 
 
-![Sincronización de hash de contraseña (PHS)](../media/plan-for-directory-synchronization/phs-authentication.png)
+![Sincronización de hash de contraseña (PHS).](../media/plan-for-directory-synchronization/phs-authentication.png)
 
 Cuando se cambian o restablecen las contraseñas locales, los nuevos hashes de contraseña se sincronizan con Azure AD para que los usuarios siempre puedan usar la misma contraseña para los recursos en la nube y los recursos locales. Las contraseñas de usuario nunca se envían a Azure AD ni se almacenan en Azure AD en texto sin formato. Algunas características premium de Azure AD, como Identity Protection, requieren PHS independientemente del método de autenticación seleccionado.
   
@@ -75,7 +75,7 @@ Consulta [elegir el método de autenticación correcto](/azure/active-directory/
 
 LA PTA proporciona una validación de contraseña sencilla para los servicios de autenticación de Azure AD mediante un agente de software que se ejecuta en uno o varios servidores locales para validar a los usuarios directamente con su AD DS. Con la PTA, sincronizas las cuentas de usuario de AD DS Microsoft 365 y administras los usuarios locales. 
 
-![Autenticación de paso a través (PTA)](../media/plan-for-directory-synchronization/pta-authentication.png)
+![Autenticación de paso a través (PTA).](../media/plan-for-directory-synchronization/pta-authentication.png)
 
 LA PTA permite a los usuarios iniciar sesión en recursos y aplicaciones locales y Microsoft 365 con su cuenta y contraseña locales. Esta configuración valida las contraseñas de los usuarios directamente en su AD DS local sin almacenar hashes de contraseña en Azure AD. 
 

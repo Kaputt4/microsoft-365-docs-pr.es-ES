@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 49a9d668182a065f3b0a5168f14ed9c7472e00ac37615518c31a252d22191861
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 29a9e73ec4204b8083b22f427cf0271955f0ba2d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902802"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576205"
 ---
 # <a name="overview-of-management-and-apis"></a>Introducción a la administración y las API
 
@@ -55,7 +55,7 @@ La solución de Microsoft Defender para endpoint se basa en una plataforma lista
 
 Defender for Endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API le permitirán automatizar flujos de trabajo e innovar en función de las capacidades de Defender para endpoints.
 
-![Imagen de la API e integración disponibles en Microsoft Defender para endpoint](images/mdatp-apis.png)
+![Imagen de la API e integración disponibles en Microsoft Defender para endpoint.](images/mdatp-apis.png)
 
 Las API de Defender for Endpoint se pueden agrupar en tres:
 

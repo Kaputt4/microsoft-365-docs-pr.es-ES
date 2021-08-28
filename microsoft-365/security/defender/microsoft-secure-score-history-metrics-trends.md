@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b5fbfae845c320e0d38293cff0d859165217a385
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 0bb4b57e3f212820852f23af2665f11f99e5be95
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255165"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575917"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir objetivos
 
@@ -40,13 +40,13 @@ Vea un gráfico de la puntuación de su organización con el tiempo en la **pest
 
 Debajo del gráfico se muestra una lista de todas las acciones realizadas en el intervalo de tiempo seleccionado y sus atributos, como los puntos resultantes y la categoría. Puede personalizar un intervalo de fechas y filtrar por categoría.
 
-![Historial de actividades](../../media/secure-score/secure-score-history-activity.png)
+![Historial de actividades.](../../media/secure-score/secure-score-history-activity.png)
 
 Si selecciona la acción de mejora asociada a una actividad, aparecerá el control desplegable de la acción de mejora completa.
 
 Para ver todo el historial de esa acción de mejora específica, seleccione el vínculo historial en el menú desplegable.
 
-![Historial de acciones de mejora](../../media/secure-score/secure-score-history-flyout.png)
+![Historial de acciones de mejora.](../../media/secure-score/secure-score-history-flyout.png)
 
 ## <a name="discover-trends-and-set-goals"></a>Descubrir tendencias y establecer objetivos
 
@@ -66,7 +66,7 @@ Hay dos lugares para ver cómo se compara su puntuación con las organizaciones 
 
 El gráfico de barras de comparación es la **pestaña Información** general. Mantenga el mouse sobre el gráfico para ver la puntuación y la oportunidad de puntuación. Los datos de comparación se anonimizan, por lo que no sabemos exactamente qué otros inquilinos están en la combinación.
 
-![Gráfico de barras de las puntuaciones de una organización similar](../../media/secure-score/secure-score-comparison-bar.png)
+![Gráfico de barras de las puntuaciones de una organización similar.](../../media/secure-score/secure-score-comparison-bar.png)
 
 - **Organizaciones como la tuyo:** una puntuación promedio de otros inquilinos (siempre que disponen de al menos cinco o más inquilinos para comparar) que cumplen los siguientes criterios:
     1. Misma industria
@@ -89,7 +89,7 @@ Si ha realizado una selección personalizada pero los resultados tienen menos de
 
 En la **pestaña Métricas & tendencias,** vea cómo se compara la puntuación segura de su organización con la de otros usuarios con el tiempo.
 
-![Gráfico de líneas de puntuaciones de una organización similar con el tiempo](../../media/secure-score/secure-score-comparison-trend.png)
+![Gráfico de líneas de puntuaciones de una organización similar con el tiempo.](../../media/secure-score/secure-score-comparison-trend.png)
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 

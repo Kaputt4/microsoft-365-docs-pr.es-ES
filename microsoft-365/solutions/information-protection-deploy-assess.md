@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Determine las normativas de privacidad de datos, los escenarios relevantes, la preparación y los tipos de información confidencial que se encuentran en su Microsoft 365 datos.
-ms.openlocfilehash: 04dc67ee6316f4549e7d215f997cdc171b0038024f3740d544d6acb214f9be1e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eefa80d85a9b03317b2021c73152e2e63f772cea
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883447"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571222"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluar los riesgos de privacidad de datos e identificar elementos confidenciales con Microsoft 365
 
@@ -60,22 +60,22 @@ Para referencia posterior en los artículos de esta solución general, esta tabl
 
 |Reglamento|Artículo o sección|Extracto|Categorías de control técnico aplicables|
 |---|---|---|---|
-|RGPD|Artículo 5(1)(f)|Los datos personales se procesarán de manera que se garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra pérdidas, destrucción o daños accidentales, mediante las medidas técnicas o organizativas apropiadas ("integridad y confidencialidad".|(Todos) <br> Identidad <br> Dispositivo <br> Protección contra amenazas <br> Protección de la información <br> Gobernanza de la información <br> Detectar y responder|
-||Artículo (32)(1)(a)|Teniendo en cuenta el estado de la técnica, los costos de implementación y la naturaleza, el ámbito, el contexto y los fines del procesamiento, así como el riesgo de que la probabilidad y la gravedad de los derechos y libertades de las personas físicas varían, el responsable del tratamiento y el encargado implementarán las medidas técnicas y organizativas adecuadas para garantizar un nivel de seguridad adecuado para el riesgo. , incluyendo, entre otras cosas, según corresponda: (a) la seudónimo y el cifrado de datos personales.|Protección de la información|
+|RGPD|Artículo 5(1)(f)|Los datos personales se procesarán de manera que se garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra pérdidas, destrucción o daños accidentales, mediante las medidas técnicas o organizativas apropiadas ("integridad y confidencialidad".|(Todos) <br> Identidad <br> Dispositivo <br> Protección contra amenazas <br> Protección de la información <br> Gobernanza de la información <br> Detección y respuesta|
+||Artículo (32)(1)(a)|Teniendo en cuenta el estado de la técnica, los costos de implementación y la naturaleza, el ámbito, el contexto y los propósitos del procesamiento, así como el riesgo de variación de probabilidad y gravedad para los derechos y libertades de las personas físicas, el responsable del tratamiento y el encargado implementarán las medidas técnicas y organizativas adecuadas para garantizar un nivel de seguridad adecuado para el riesgo,  incluyendo, entre otras cosas, según corresponda: (a) la seudónimo y el cifrado de datos personales.|Protección de la información|
 ||Artículo (13)(2)(a)|"... el responsable del tratamiento, en el momento en que se obtengan los datos personales, proporcionará al interesado la siguiente información adicional necesaria para garantizar un procesamiento justo y transparente: (a) el período durante el cual se almacenarán los datos personales o, si no es posible, los criterios usados para determinar dicho período.|Gobernanza de la información|
-||Artículo (15)(1)(e)|El interesado tendrá derecho a obtener de la confirmación del responsable del tratamiento si se están procesando o no los datos personales que le conciernen y, en ese caso, el acceso a los datos personales y la siguiente información: (e) la existencia del derecho a solicitar al responsable rectificar o eliminar datos personales o restringir el tratamiento de datos personales relativos al interesado o a oponerse a dichos datos. procesamiento|Detectar y responder|
-|LGPD|Artículo 46|Los agentes de procesamiento adoptarán medidas de seguridad, técnicas y administrativas que puedan proteger los datos personales de accesos no autorizados y situaciones accidentales o ilegales de destrucción, pérdida, alteración, comunicación o cualquier tipo de procesamiento incorrecto o ilegal.|Protección de la información <br> Gobernanza de la información <br> Detectar y responder|
-||Artículo 48|El responsable debe comunicar a la autoridad nacional y al interesado todo incidente de seguridad que pueda dar lugar a riesgos o daños relevantes a los interesados.|Detectar y responder|
+||Artículo (15)(1)(e)|El interesado tendrá derecho a obtener de la confirmación del responsable del tratamiento si se están procesando o no los datos personales que le conciernen y, en ese caso, el acceso a los datos personales y la siguiente información: (e) la existencia del derecho a solicitar al responsable rectificar o eliminar datos personales o restringir el tratamiento de datos personales relativos al interesado o a oponerse a dichos datos. procesamiento|Detección y respuesta|
+|LGPD|Artículo 46|Los agentes de procesamiento adoptarán medidas de seguridad, técnicas y administrativas que puedan proteger los datos personales de accesos no autorizados y situaciones accidentales o ilegales de destrucción, pérdida, alteración, comunicación o cualquier tipo de procesamiento incorrecto o ilegal.|Protección de la información <br> Gobernanza de la información <br> Detección y respuesta|
+||Artículo 48|El responsable debe comunicar a la autoridad nacional y al interesado todo incidente de seguridad que pueda dar lugar a riesgos o daños relevantes a los interesados.|Detección y respuesta|
 |HIPPA-HITECH|45 CFR 164.312(e)(1)|Implementar medidas técnicas de seguridad para protegerse contra el acceso no autorizado a información de salud protegida electrónicamente que se transmite a través de una red de comunicaciones electrónicas.|Protección de la información|
 ||45 C.F.R. 164.312(e)(2)(ii)|Implementar un mecanismo para cifrar información de salud protegida electrónicamente cuando se considere necesario.|Protección de la información|
 ||45 CFR 164.312(c)(2)|Implementar mecanismos electrónicos para corroborar que la información de salud protegida electrónicamente no se ha modificado o destruido de forma no autorizada.|Gobernanza de la información|
 ||45 CFR 164.316(b)(1)(i)|Si esta subparte requiere que se documente una acción, actividad o evaluación, mantenga un registro escrito (que puede ser electrónico) de la acción, actividad o evaluación|Gobernanza de la información|
 ||45 CFR 164.316(b)(1)(ii)|Conservar la documentación exigida por el párrafo (b)(1) de esta sección durante 6 años a partir de la fecha de creación o la fecha en que fue efectiva por última vez, la que sea posterior.|Gobernanza de la información|
-||45 C.F.R. 164.308(a)(1)(ii)(D)|Implementar procedimientos para revisar periódicamente los registros de actividad del sistema de información, como registros de auditoría, informes de acceso e informes de seguimiento de incidentes de seguridad|Detectar y responder|
-||45 C.F.R. 164.308(a)(6)(ii)|Identificar y responder a incidentes de seguridad sospechosos o conocidos; mitigar, en la medida de lo posible, efectos negativos de los incidentes de seguridad que se conozcan en la entidad cubierta o la empresa asociada y documentar incidencias de seguridad y sus resultados.|Detectar y responder|
-||45 C.F.R. 164.312(b)|Implemente mecanismos de hardware, software y procedimientos que registren y examinen la actividad en sistemas de información que contienen o usan información de salud protegida electrónicamente.|Detectar y responder|
-|CCPA|1798.105(c)|Una empresa que reciba una solicitud verificable de un consumidor para eliminar la información personal del consumidor de acuerdo con la subdivisión (a) de esta sección eliminará la información personal del consumidor de sus registros y dirigirá a los proveedores de servicios a eliminar la información personal del consumidor de sus registros.|Detectar y responder|
-||1798.105(d)|(excepciones a 1798.105(c) <br> No se requiere que una empresa o un proveedor de servicios cumplan con la solicitud de un consumidor de eliminar la información personal del consumidor si es necesario que la empresa o el proveedor de servicios mantengan la información personal del consumidor con el fin de: (consulte el reglamento actual para obtener información adicional).|Detectar y responder|
+||45 C.F.R. 164.308(a)(1)(ii)(D)|Implementar procedimientos para revisar periódicamente los registros de actividad del sistema de información, como registros de auditoría, informes de acceso e informes de seguimiento de incidentes de seguridad|Detección y respuesta|
+||45 C.F.R. 164.308(a)(6)(ii)|Identificar y responder a incidentes de seguridad sospechosos o conocidos; mitigar, en la medida de lo posible, efectos negativos de los incidentes de seguridad que se conozcan en la entidad cubierta o la empresa asociada y documentar incidencias de seguridad y sus resultados.|Detección y respuesta|
+||45 C.F.R. 164.312(b)|Implemente mecanismos de hardware, software y procedimientos que registren y examinen la actividad en sistemas de información que contienen o usan información de salud protegida electrónicamente.|Detección y respuesta|
+|CCPA|1798.105(c)|Una empresa que reciba una solicitud verificable de un consumidor para eliminar la información personal del consumidor de acuerdo con la subdivisión (a) de esta sección eliminará la información personal del consumidor de sus registros y dirigirá a los proveedores de servicios a eliminar la información personal del consumidor de sus registros.|Detección y respuesta|
+||1798.105(d)|(excepciones a 1798.105(c) <br> No se requiere que una empresa o un proveedor de servicios cumplan con la solicitud de un consumidor de eliminar la información personal del consumidor si es necesario que la empresa o el proveedor de servicios mantengan la información personal del consumidor con el fin de: (consulte el reglamento actual para obtener información adicional).|Detección y respuesta|
 |||||
 
 > [!IMPORTANT]
@@ -91,7 +91,7 @@ Independientemente de las normativas a las que está sujeto, donde los distintos
 
 Los datos también se mueven con el tiempo a medida que se procesan, se refina y otras versiones se derivan de ellos. Una instantánea inicial nunca es suficiente. Debe haber un proceso continuo para conocer los datos. Esto representa uno de los mayores desafíos para las organizaciones grandes que administran volúmenes significativos de datos personales. Las organizaciones que no abordan el problema de "conocer sus datos" podrían acabar con un riesgo muy alto y posibles multas de las agencias reglamentarias.
 
-![Ciclo de vida de datos](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
+![Ciclo de vida de datos.](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
 
 ### <a name="where-the-personal-data-is"></a>Dónde están los datos personales
 
@@ -99,7 +99,7 @@ Para abordar las regulaciones de privacidad de datos, no puede basarse en nocion
 
 Si aún no ha evaluado la preparación general y los riesgos asociados con las normativas de privacidad de datos, use el siguiente marco de 3 pasos para empezar.
 
-![Pasos para evaluar la preparación general y los riesgos asociados con las normativas de privacidad de datos](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
+![Pasos para evaluar la preparación general y los riesgos asociados con las regulaciones de privacidad de datos.](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
 > [!NOTE]
 > Este artículo y su contenido no están destinados a tomar el lugar de los servicios de asesoramiento jurídico. Solo proporciona algunas instrucciones básicas y vínculos a herramientas que pueden ser de ayuda en las primeras etapas de la evaluación.
@@ -116,7 +116,7 @@ Como punto de partida, es importante realizar un inventario de los tipos de dato
 
 Este es un ejemplo de los diferentes tipos de datos para los departamentos típicos de una organización.
 
-![Tipos de datos personales](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
+![Tipos de datos personales.](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
 La mayoría de los datos personales que están sujetos a la regulación de privacidad de datos normalmente se recopilan y almacenan fuera de Microsoft 365. Los datos personales de aplicaciones móviles o web orientadas al consumidor tendrían que haber sido exportados de dichas aplicaciones a Microsoft 365 para estar sujetos al examen de privacidad de datos dentro de Microsoft 365.
 
@@ -180,7 +180,7 @@ La evaluación del RGPD consta de estas secciones:
 
 |Sección|Description|
 |:-------|:-----|
-|Gobernanza|<ol><li>¿La directiva de privacidad establece explícitamente qué información de datos se está procesando? </li><li>¿Ejecuta periódicamente evaluaciones de impacto en la privacidad (CA)? </li><li> ¿Usa una herramienta para administrar la información personal (PI)? </li><li> ¿Tiene autoridad legal para llevar a cabo negocios con datos de PI en una determinada persona? ¿Realiza un seguimiento del consentimiento de los datos? </li><li> ¿Realiza un seguimiento, implementa y administra controles de auditoría? ¿Supervisa las pérdidas de datos? </li></ol>|
+|Gobierno|<ol><li>¿La directiva de privacidad establece explícitamente qué información de datos se está procesando? </li><li>¿Ejecuta periódicamente evaluaciones de impacto en la privacidad (CA)? </li><li> ¿Usa una herramienta para administrar la información personal (PI)? </li><li> ¿Tiene autoridad legal para llevar a cabo negocios con datos de PI en una determinada persona? ¿Realiza un seguimiento del consentimiento de los datos? </li><li> ¿Realiza un seguimiento, implementa y administra controles de auditoría? ¿Supervisa las pérdidas de datos? </li></ol>|
 |Eliminación y notificación|<ol><li>¿Da instrucciones explícitas sobre cómo se puede acceder a los datos de los usuarios? </li><li> ¿Tiene procesos documentados para controlar el consentimiento de no participar? </li><li> ¿Tiene un proceso de eliminación automatizada para los datos? </li><li> ¿Tiene un proceso para validar la identidad al interactuar con un cliente? </li></ol>|
 |Mitigación de riesgos y seguridad de la información|<ol><li>¿Usa herramientas para examinar datos no estructurados? </li><li>¿Están todos los servidores actualizados y aprovecha los firewalls para protegerlos? </li><li>¿Ejecuta copias de seguridad regulares de los servidores? </li><li>¿Supervisa activamente las pérdidas de datos? </li><li>¿Cifra los datos en reposo y en transmisión? </li></ol>|
 |Administración de directivas|<ol><li>¿Cómo administra las reglas corporativas de enlace (BCR)? </li><li>¿Realiza un seguimiento del consentimiento de los datos? </li><li> En una escala de 1 a 5, con 5 cubiertos por completo, ¿los contratos cubren las clasificaciones de datos y los requisitos de tratamiento? </li><li>¿Tiene y prueba periódicamente un plan de respuesta a incidentes? </li><li>¿Qué directiva usa para administrar el acceso? </li></ol>|

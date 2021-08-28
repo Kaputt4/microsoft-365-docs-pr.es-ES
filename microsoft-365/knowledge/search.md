@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Obtenga información sobre cómo buscar temas en Temas Microsoft Viva.
-ms.openlocfilehash: c73cfba29aaa95463e75e46b81bcfc464ae9a64782d5fb7a7fc76dd6c9144393
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 525ec03621d28c26ecdc717648b3e9d6dcf51024
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794644"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573084"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Use Búsqueda de Microsoft para buscar temas en Temas Microsoft Viva
 
@@ -33,7 +33,7 @@ La respuesta al tema mostrará:
 - Personas sugeridas o ancladas: personas sugeridas por AI o ancladas al tema por una persona
 - Recursos sugeridos o anclados: archivos, páginas o sitios sugeridos por AI o anclados al tema por una persona. 
 
-   ![Tema de búsqueda](../media/knowledge-management/search-topic-answer.png) 
+   ![Tema de búsqueda.](../media/knowledge-management/search-topic-answer.png) 
 
 La página del tema puede mostrarse en los resultados de búsqueda incluso si no aparece la tarjeta de respuesta del tema.
 
@@ -59,6 +59,6 @@ Para los usuarios que buscan información sobre cómo reservar un viaje de traba
 
 En la experiencia de búsqueda del usuario, cuando un usuario busca un término como "viajes", aparecerá un marcador en lugar de un tema, si hay un marcador disponible.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Introducción a Temas de Viva](topic-experiences-overview.md)

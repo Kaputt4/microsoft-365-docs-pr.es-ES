@@ -19,12 +19,12 @@ description: Los administradores pueden aprender a administrar los permisos en e
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9f417bbb784a328970c32602d52a76f5c855016f325b316af53ed0a4ff137db1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3eb4f424ba8b9fd73f5cad62c2a136da8fd8249
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56815236"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576073"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Permisos en el portal de Microsoft 365 Defender
 
@@ -54,7 +54,7 @@ Un **grupo de roles** es un conjunto de roles que permite a las personas hacer s
 
 El portal de Microsoft 365 Defender incluye grupos de roles predeterminados para las tareas y funciones más comunes que debe asignar. Por lo general, le recomendamos que simplemente agregue usuarios individuales como **miembros** a los grupos de roles predeterminados.
 
-![Diagrama que muestra la relación de los grupos de roles con los roles y miembros](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagrama que muestra la relación de los grupos de roles con los roles y miembros.](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Roles y grupos de roles en el portal de Microsoft 365 Defender
 
@@ -64,7 +64,7 @@ Los siguientes tipos de roles y grupos de roles están disponibles en **Permisos
 
 - **Roles de colaboración y correo electrónico**: son los mismos grupos de roles que están disponibles en el Centro de seguridad y cumplimiento, pero puede administrarlos directamente en el portal de Microsoft 365 Defender. Los permisos que asigna aquí son específicos del portal de Microsoft 365 Defender, el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad y cumplimiento, y no cubren todos los permisos necesarios en otras cargas de trabajo de Microsoft 365.
 
-![Página Permisos y roles en el portal de Microsoft 365 Defender](../../media/m365-sc-permissions-and-roles-page.png)
+![Página Permisos y roles en el portal de Microsoft 365 Defender.](../../media/m365-sc-permissions-and-roles-page.png)
 
 ### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Roles de Azure AD en el portal de Microsoft 365 Defender
 
@@ -72,7 +72,7 @@ Si va a **Roles de colaboración y correo electrónico** \> **Permisos y roles**
 
 Al seleccionar un rol, se muestra un desplegable con detalles que contiene la descripción del rol y las asignaciones de usuario. Para administrar esas asignaciones, debe hacer clic en **Administrar miembros en Azure AD** en el desplegable de detalles.
 
-![Vínculo a administrar permisos en Azure Active Directory](../../media/permissions-manage-in-azure-ad-link.png)
+![Vincular a administrar permisos en Azure Active Directory.](../../media/permissions-manage-in-azure-ad-link.png)
 
 Para más información, consulte [Visualización y asignación de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
@@ -103,7 +103,7 @@ Para ver la información completa sobre estos grupos de roles, vea [Permisos en 
 
 1. En el portal de Microsoft 365 Defender, vaya a **Roles de colaboración y correo electrónico** \> **Permisos y roles** \> **Roles de colaboración y correo electrónico** \> **Roles**.
 
-2. En la página de **Permisos** que aparece, seleccione en la lista el grupo de roles que quiere modificar. Puede seleccionar el encabezado de columna **Nombre** para ordenar la lista por nombre o **Búsqueda** ![Icono de búsqueda](../../media/m365-cc-sc-search-icon.png) para buscar el grupo de roles.
+2. En la página de **Permisos** que aparece, seleccione en la lista el grupo de roles que quiere modificar. Puede seleccionar el encabezado de columna **Nombre** para ordenar la lista por nombre o puede hacer clic en **Búsqueda** ![Icono de búsqueda](../../media/m365-cc-sc-search-icon.png) para buscar el grupo de roles.
 
 3. En el desplegable de detalles del grupo de roles que aparece, seleccione **Editar** en la sección **Miembros**.
 
@@ -113,11 +113,11 @@ Para ver la información completa sobre estos grupos de roles, vea [Permisos en 
 
 5. En el desplegable **Elegir miembros** que aparece, siga uno de estos pasos:
 
-   - Seleccione **Agregar**. En la lista de usuarios que aparece, seleccione uno o más usuarios. O bien, puede seleccionar **Búsqueda**![Icono de búsqueda](../../media/m365-cc-sc-search-icon.png) para buscar y seleccionar usuarios.
+   - Seleccione **Agregar**. En la lista de usuarios que aparece, seleccione uno o más usuarios. O bien, puede hacer clic en **Búsqueda** ![Icono de búsqueda](../../media/m365-cc-sc-search-icon.png) para buscar y seleccionar usuarios.
 
      Cuando haya seleccionado los usuarios que quiera, seleccione **Agregar**.
 
-   - Seleccione **Quitar**. Seleccione uno o varios de los miembros existentes. O bien, puede seleccionar **Búsqueda**![Icono de búsqueda](../../media/m365-cc-sc-search-icon.png) para buscar y seleccionar miembros.
+   - Seleccione **Quitar**. Seleccione uno o varios de los miembros existentes. O bien, puede hacer clic en **Búsqueda** ![Icono de búsqueda](../../media/m365-cc-sc-search-icon.png) para buscar y seleccionar miembros.
 
      Después de seleccionar los usuarios que quiera, seleccione **Quitar**.
 

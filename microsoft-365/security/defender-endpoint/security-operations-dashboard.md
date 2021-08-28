@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a011d3cf8879b9f4b82d055693edfea98dbeb83a829c153b20e579b015fc80e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2612fc618c8bd3dd8362d86413bad386856a3063
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898006"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572556"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Centro de seguridad de Microsoft Defender Panel de operaciones de seguridad
 
@@ -47,7 +47,7 @@ El panel muestra una instantánea de:
 - Usuarios en riesgo
 - Actividades sospechosas
 
-![Imagen del panel de operaciones de seguridad](images/atp-sec-ops-dashboard.png)
+![Imagen del panel de operaciones de seguridad.](images/atp-sec-ops-dashboard.png)
 
 Puedes explorar e investigar alertas y dispositivos para determinar rápidamente si, dónde y cuándo se produjeron actividades sospechosas en la red para ayudarte a comprender el contexto en el que aparecieron.
 
@@ -59,7 +59,7 @@ También tiene iconos en los que se puede hacer clic que dan indicaciones visual
 
 Puede ver el número total de alertas activas de los últimos 30 días en la red desde el icono. Las alertas se agrupan **en Nuevo** y **En curso.**
 
-![Haga clic en cada segmento o gravedad para ver una lista de alertas de los últimos 30 días](images/active-alerts-tile.png)
+![Haga clic en cada segmento o gravedad para ver una lista de alertas de los últimos 30 días.](images/active-alerts-tile.png)
 
 Cada grupo se subcategorizó aún más en sus niveles de gravedad de alerta correspondientes. Haga clic en el número de alertas dentro de cada anillo de alerta para ver una vista ordenada de la cola de esa categoría (**Nuevo** **o En curso**).
 
@@ -71,7 +71,7 @@ Cada fila incluye una categoría de gravedad de alerta y una breve descripción 
 
 Este icono muestra una lista de dispositivos con el mayor número de alertas activas. El número total de alertas para cada dispositivo se muestra en un círculo junto al nombre del dispositivo y, a continuación, se clasifica por niveles de gravedad en el extremo del icono (mantenga el puntero sobre cada barra de gravedad para ver su etiqueta).
 
-![El icono Dispositivos en riesgo muestra una lista de dispositivos con el mayor número de alertas y un desglose de la gravedad de las alertas](images/devices-at-risk-tile.png)
+![El icono Dispositivos en riesgo muestra una lista de dispositivos con el mayor número de alertas y un desglose de la gravedad de las alertas.](images/devices-at-risk-tile.png)
 
 Haz clic en el nombre del dispositivo para ver detalles sobre ese dispositivo. Para obtener más información, vea [Investigar dispositivos en la lista Microsoft Defender para dispositivos de punto de conexión](investigate-machines.md).
 
@@ -81,7 +81,7 @@ También puedes hacer clic en **Lista de** dispositivos en la parte superior del
 
 El **icono Dispositivos con** problemas de sensor proporciona información sobre la capacidad del dispositivo individual para proporcionar datos del sensor al servicio de Microsoft Defender para puntos de conexión. Informa de cuántos dispositivos requieren atención y le ayuda a identificar dispositivos problemáticos.
 
-![Icono dispositivos con problemas de sensor](images/atp-tile-sensor-health.png)
+![Dispositivos con icono de problemas de sensor.](images/atp-tile-sensor-health.png)
 
 Hay dos indicadores de estado que proporcionan información sobre el número de dispositivos que no están informando correctamente al servicio:
 
@@ -94,7 +94,7 @@ Cuando hagas clic en cualquiera de los grupos, se te dirigirá a la lista de dis
 
 El **icono Estado** del servicio le informa si el servicio está activo o si hay problemas.
 
-![El icono Estado del servicio muestra un indicador general del servicio](images/status-tile.png)
+![El icono Estado del servicio muestra un indicador general del servicio.](images/status-tile.png)
 
 Para obtener más información sobre el estado del servicio, vea [Check the Microsoft Defender for Endpoint service health](service-status.md).
 
@@ -102,19 +102,19 @@ Para obtener más información sobre el estado del servicio, vea [Check the Micr
 
 El **icono Informes de dispositivos** diarios muestra un gráfico de barras que representa el número de dispositivos que informan diariamente en los últimos 30 días. Mantenga el mouse sobre barras individuales en el gráfico para ver el número exacto de dispositivos que se informan en cada día.
 
-![Imagen del icono de informes de dispositivos diarios](images/atp-daily-devices-reporting.png)
+![Imagen del icono de informes de dispositivos diarios.](images/atp-daily-devices-reporting.png)
 
 ## <a name="active-automated-investigations"></a>Investigaciones automatizadas activas
 
 Puede ver el número total de investigaciones automatizadas de los últimos 30 días en la red desde el icono **Investigaciones automatizadas activas.** Las investigaciones se agrupan en **Pending action**, **Waiting for device** y **Running**.
 
-![Inmaage of active automated investigations](images/atp-active-investigations-tile.png)
+![Inmaage of active automated investigations.](images/atp-active-investigations-tile.png)
 
 ## <a name="automated-investigations-statistics"></a>Estadísticas de investigaciones automatizadas
 
 Este icono muestra estadísticas relacionadas con investigaciones automatizadas en los últimos siete días. Muestra el número de investigaciones completadas, el número de investigaciones correctamente subsanadas, el promedio de tiempo pendiente que tarda en iniciarse una investigación, el tiempo promedio que se tarda en corregir una alerta, el número de alertas investigadas y el número de horas de automatización guardadas de una investigación manual típica. 
 
-![Imagen de las estadísticas de investigaciones automatizadas](images/atp-automated-investigations-statistics.png)
+![Imagen de las estadísticas de investigaciones automatizadas.](images/atp-automated-investigations-statistics.png)
 
 Puede hacer clic en **Investigaciones automatizadas,** Investigaciones **subsanadas** y Alertas investigadas para navegar a la página **Investigaciones,** filtrada por la categoría correspondiente.  Esto le permite ver un desglose detallado de las investigaciones en contexto.
 
@@ -122,7 +122,7 @@ Puede hacer clic en **Investigaciones automatizadas,** Investigaciones **subsana
 
 El icono muestra una lista de cuentas de usuario con las alertas más activas y el número de alertas vistas en alertas altas, medianas o bajas. 
 
-![El icono Cuentas de usuario en riesgo muestra una lista de cuentas de usuario con el mayor número de alertas y un desglose de la gravedad de las alertas](images/atp-users-at-risk.png)
+![El icono Cuentas de usuario en riesgo muestra una lista de cuentas de usuario con el mayor número de alertas y un desglose de la gravedad de las alertas.](images/atp-users-at-risk.png)
 
 Haga clic en la cuenta de usuario para ver detalles sobre la cuenta de usuario. Para obtener más información, [vea Investigar una cuenta de usuario](investigate-user.md).
 

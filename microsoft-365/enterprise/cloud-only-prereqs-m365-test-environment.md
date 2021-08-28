@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades con los requisitos previos de autenticación solo para la nube.
-ms.openlocfilehash: 242f17fc2f8241e5a17078286e6e23d4920ca99d
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5fc29acce595cab33086ea868d927b93b9281167
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357094"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573132"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Requisitos previos de acceso de dispositivos e identidades solo para la nube en el entorno de prueba de Microsoft 365
 
@@ -45,7 +45,7 @@ Existen ocho fases para configurar el entorno de pruebas:
 Siga las instrucciones de [Configuración básica ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
 Esta es la configuración resultante.
 
-![El entorno de prueba ligero de Microsoft 365 Enterprise](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![El entorno de prueba ligero de Microsoft 3656 Enterprise de prueba.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
 ## <a name="phase-2-configure-named-locations"></a>Fase 2: Configurar ubicaciones con nombre
 

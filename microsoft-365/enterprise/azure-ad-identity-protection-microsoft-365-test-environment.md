@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure Azure AD Identity Protection y analice las cuentas actuales de su entorno de prueba Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 68b77803b4a2955efe58f742e27cb4fa6cfbb58c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 446462215069c0bcc72e36c7c62260de0694f600
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356317"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572676"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>Azure AD Identity Protection para el entorno de prueba Microsoft 365 para empresas
 
@@ -33,7 +33,7 @@ La configuración de Azure AD Identity Protection en el entorno Microsoft 365 de
 - [Fase 1: Crear su Microsoft 365 entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Fase 2: Usar Azure AD Identity Protection](#phase-2-use-azure-ad-identity-protection)
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -55,7 +55,7 @@ Si desea probar Azure AD Identity Protection en una empresa simulada, siga las i
 4. En **Notificar**, seleccione **Usuarios en riesgo alertas detectadas**.
 5. En el panel **Usuarios en riesgo de alertas detectadas,** seleccione **Medio**.
 6. Para **los correos electrónicos se envían a los siguientes usuarios,** seleccione **Incluido** y compruebe que su cuenta de administrador global esté en la lista de miembros seleccionados.
-7. Seleccione **Guardar**.
+7. Haga clic en **Guardar**.
 
 En **Proteger,** seleccione varias directivas para ver cómo configurarlas. Si crea y activa una directiva, asegúrese de que no está bloqueando el acceso para todos los usuarios, o puede que no pueda iniciar sesión. Para evitar esto, excluya cuentas de usuario específicas, como administradores globales.
 

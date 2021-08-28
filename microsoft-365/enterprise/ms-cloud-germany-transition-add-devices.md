@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información adicional del dispositivo sobre los servicios al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
-ms.openlocfilehash: 49db57e49a7f3bc603b6d6b88368569ee2b326d6e3f568961eab028faa7e28c5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 79234b1398e26af5a2848002ea606d97137e3053
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795103"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573096"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información adicional del dispositivo para la migración desde Microsoft Cloud Deutschland
 
@@ -32,7 +32,7 @@ Los dispositivos unidos y registrados de Azure AD conectados a Microsoft Cloud D
 ## <a name="azure-ad-joined-windows-10-devices"></a>Dispositivos unidos Windows 10 Azure AD
 Si un Windows 10 está unido a Azure AD, debe desconectarse de Azure AD y debe conectarse de nuevo.
 
-[![Azure AD Device Re-Join Flow ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD Device Re-Join Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
 Si el usuario es un administrador en el dispositivo Windows 10, el usuario puede anular el registro del dispositivo de Azure AD y volver a unirlo en tres pasos.
@@ -74,7 +74,7 @@ Cualquier otra cuenta de trabajo de la organización puede iniciar sesión en el
 
 Si un Windows 10 está registrado en Azure AD, debe desconectarse de Azure AD y conectarse de nuevo.
 
-[![Azure AD Device Re-Registration Flow ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD Device Re-Registration Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-registered"></a>Paso 1: Determinar si el dispositivo está registrado en Azure ID.
 
@@ -153,7 +153,7 @@ En dispositivos iOS, un usuario tendrá que quitar manualmente las cuentas almac
 
 Los usuarios pueden ir a aplicaciones individuales como Outlook, Teams y OneDrive y quitar cuentas de esas aplicaciones.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Cómo puedo saber si mi organización está afectada?**
 

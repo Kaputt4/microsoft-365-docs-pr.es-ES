@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 91fcbdfeeec0a4127f0e1642049fd421a30df00ed4bd757a89d582015d477fc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a0a60a061959a5aff038c3e74da7e1775f66e237
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888336"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576037"
 ---
 # <a name="windows-feature-update-validation"></a>Windows Validación de actualización de características
 
@@ -37,22 +37,22 @@ A continuación se indican los pasos que debe seguir al rellenar los detalles **
 
 1. Seleccione **Actualización de características** como tipo de actualización del sistema operativo:
 
-![Tipo de sistema operativo de validación de actualización de características](Media/Feature-update-validation-01.png)
+![Tipo de sistema operativo de validación de actualización de características.](Media/Feature-update-validation-01.png)
 
 2. Elija el Windows Insider channel con el que desea que se valide la aplicación.  
 
-![Validación de actualización de características. Elegir el canal beta de Insider](Media/Feature-update-validation-02.png)
+![Validación de actualización de características. Elegir el canal beta de Insider.](Media/Feature-update-validation-02.png)
 
 3. Seleccione una versión en el mercado de Windows 10 o Windows 11 como línea base para la prueba (y obtener información resultante) y proporcione los demás detalles necesarios para incorporar el paquete correctamente.
 
-![Validación de actualización de características con versiones publicadas de Windows 10 y Windows 11](Media/Feature-update-validation-03.png)
+![Validación de actualización de características con versiones publicadas de Windows 10 y Windows 11.](Media/Feature-update-validation-03.png)
 
 4. Para ver los resultados de la validación de la aplicación en las actualizaciones de características Windows 10 versión anterior, visite ```Feature Updates Test Results``` el archivo .
 
-![La validación de actualización de características le permite revisar los resultados rápidamente](Media/Feature-update-validation-04.png)
+![La validación de actualización de características le permite revisar los resultados rápidamente.](Media/Feature-update-validation-04.png)
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Avance al siguiente artículo para empezar a comprender el análisis de regresión de memoria.
 > [!div class="nextstepaction"]

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: af66b41af4d4d427988bf46d266329777d3a908c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: fb8e77a11b3844d78c99b56863bdb9ea424c48f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394701"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572976"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Habilitar el entorno de evaluación de Microsoft Defender para puntos de conexión
 
@@ -39,7 +39,7 @@ Este artículo le guiará a través de los pasos para configurar el entorno de e
 
 Siga estos pasos para habilitar la evaluación de Microsoft Defender para endpoint.
 
-![Pasos para habilitar Microsoft Defender para endpoint en el entorno de evaluación de Microsoft Defender](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
+![Pasos para habilitar Microsoft Defender para endpoint en el entorno de evaluación de Microsoft Defender.](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
 
 - [Paso 1. Comprobar el estado de la licencia](#step-1-check-license-state)
 - [Paso 2. Puntos de conexión integrados](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
@@ -52,13 +52,13 @@ Primero tendrá que comprobar el estado de la licencia para comprobar que se apr
 
 1. Para ver las licencias, vaya al **portal de** Microsoft Azure y vaya a la sección Microsoft Azure licencia [del portal.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
-   ![Imagen de la página licencias de Azure](../../media/defender/atp-licensing-azure-portal.png)
+   ![Imagen de la página Licencias de Azure.](../../media/defender/atp-licensing-azure-portal.png)
 
 1. Como alternativa, en el Centro de administración, vaya a **Suscripciones de**  >  **facturación.**
 
     En la pantalla, verá todas las licencias aprovisionadas y su estado **actual.**
 
-    ![Imagen de las licencias de facturación](../../media/defender/atp-billing-subscriptions.png)
+    ![Imagen de las licencias de facturación.](../../media/defender/atp-billing-subscriptions.png)
 
 ## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Paso 2. Incorporación de puntos de conexión con cualquiera de las herramientas de administración admitidas
 

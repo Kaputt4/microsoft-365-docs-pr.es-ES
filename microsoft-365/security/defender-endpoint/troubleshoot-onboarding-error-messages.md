@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b14501463233ef98d49023c4afde85b02714857b05efc73a6eafcff867387e23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24d6873df2432adf5e56b62f01e784f65df4e980
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839293"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576193"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Solucionar problemas de acceso a la suscripción y al portal
 
@@ -49,7 +49,7 @@ Posibles razones:
 
 En ambos casos, debes ponerse en contacto con el soporte técnico de Microsoft en [General Microsoft Defender para](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) soporte técnico de endpoints o compatibilidad con licencias por [volumen.](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)
 
-![Imagen de no se encontró ninguna suscripción](images/atp-no-subscriptions-found.png)
+![Imagen de no se encontró ninguna suscripción.](images/atp-no-subscriptions-found.png)
 
 ## <a name="your-subscription-has-expired"></a>Su suscripción ha expirado
 
@@ -60,19 +60,19 @@ Puede elegir renovar o ampliar la licencia en cualquier momento. Al acceder al p
 > [!NOTE]
 > Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se le notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
 
-![Imagen de la suscripción expirada](images/atp-subscription-expired.png)
+![Imagen de la suscripción expirada.](images/atp-subscription-expired.png)
 
 ## <a name="you-are-not-authorized-to-access-the-portal"></a>No está autorizado a acceder al portal
 
 Si recibe un You **are not authorized to access the portal**, tenga en cuenta que Microsoft Defender for Endpoint es un producto de supervisión de seguridad, investigación de incidentes y respuesta y, como tal, el acceso a él está restringido y controlado por el usuario.
 Para obtener más información, vea [**Asignar acceso de usuario al portal**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
 
-![Imagen de portal de acceso no autorizado](images/atp-not-authorized-to-access-portal.png)
+![Imagen de no autorizado para acceder al portal.](images/atp-not-authorized-to-access-portal.png)
 
 ## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>Actualmente, los datos no están disponibles en algunas secciones del portal
 Si el panel del portal y otras secciones muestran un mensaje de error como "Los datos actualmente no están disponibles":
 
-![La imagen de los datos actualmente no está disponible](images/atp-data-not-available.png)
+![La imagen de los datos actualmente no está disponible.](images/atp-data-not-available.png)
 
 Tendrás que permitir los `security.windows.com` subdominios y todos los subdominios que hay en él. Por ejemplo, `*.security.windows.com`.
 

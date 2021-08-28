@@ -20,12 +20,12 @@ ms.custom:
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9f425f94843f2e37026a87a5eab2c8743acc494
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 25c83dedaa9f1606744e54459a0ebfb5627be752
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533272"
+ms.locfileid: "58575485"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -89,15 +89,15 @@ Una vez agregado el dominio, siga los pasos que se muestran a continuación para
 
 Paso 1: Haga clic en el dominio en el que quiere configurar DKIM en la página de DKIM (https://security.microsoft.com/dkimv2 o https://protection.office.com/dkimv2).
 
-![Página DKIM en el portal de Microsoft 365 Defender con un dominio seleccionado](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+![Página DKIM en el portal de Microsoft 365 Defender con un dominio seleccionado.](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
-Paso 2: haga clic en Crear claves DKIM
+Paso 2: Haga clic en Crear claves DKIM.
 
-![Control flotante de detalles del dominio con el botón Crear claves DKIM](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+![Control flotante de detalles del dominio con el botón Crear claves DKIM.](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
 
-Paso 3: copiar los CNAMES que se muestran en la ventana emergente
+Paso 3: Copiar los CNAMES que se muestran en la ventana emergente.
 
-![Ventana emergente Publicar CNAME que contiene los dos registros CNAME que se van a copiar](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
+![Ventana emergente Publicar CNAME que contiene los dos registros CNAME que se van a copiar.](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
 Paso 4: Publicar los registros CNAME copiados en el proveedor de servicios DNS.
 
@@ -112,7 +112,7 @@ TTL: 3600 (or your provider default)
 
 Paso 5: volver a la página DKIM para habilitar DKIM
 
-![Deslice el botón de alternancia a Habilitado para habilitar DKIM](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+![Deslice el botón de alternancia a Habilitado para habilitar DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
 
 Si ve el error El registro CNAME no existe, es posible que se deba a:
 
@@ -241,7 +241,7 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
 
 3. En la página **DKIM**, haga clic en el nombre para seleccionar el dominio.
 
-4. En el control flotante de detalles que aparece, cambie el ajuste **Firmar mensajes para este dominio con firmas DKIM** a **Habilitado** (![activar](../../media/scc-toggle-on.png))
+4. En el control flotante de detalles que aparece, cambie el ajuste **Firmar mensajes para este dominio con firmas DKIM** a **Habilitado** (![activar).](../../media/scc-toggle-on.png)
 
    Cuando haya terminado, haga clic en **Girar claves DKIM**.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 30b8b78bafab66957927c3802eb3ec739ccd91c5
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 14eeb2051cf4b071139c5849583901d3cc3186c9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257038"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572592"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -166,7 +166,7 @@ De forma predeterminada, este servicio está habilitado. Es una buena práctica 
 
    Si el servicio está habilitado, el resultado debería ser parecido a la siguiente captura de pantalla:
 
-   ![Resultado del comando de consulta sc para diagtrack](images/windefatp-sc-qc-diagtrack.png)
+   ![Resultado del comando de consulta sc para diagtrack.](images/windefatp-sc-qc-diagtrack.png)
 
 
 Deberá establecer el servicio para que se  inicie automáticamente si el START_TYPE no está establecido en **AUTO_START**.

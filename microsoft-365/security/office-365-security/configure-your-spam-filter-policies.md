@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f896888a90e855926fc8840f4bd936819ed25142
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f12a416a95f55a73bd0bbd80bfb1a4fe5121aeec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258743"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575905"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -85,7 +85,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
 1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
 
-2. En la página de directivas **antispam**, haga clic en el![icono para crea](../../media/m365-cc-sc-create-icon.png) **Crear directiva**, y luego, seleccione **Entrada** en la lista desplegable.
+2. En la página de **directivas antispam**, haga clic en el ![icono Crear.](../../media/m365-cc-sc-create-icon.png) **Crear directiva**, y luego, seleccione **Entrada** en la lista desplegable.
 
 3. Se abrirá el asistente para directivas. En la **página Asigne un nombre a la directiva**, configure estas opciones:
    - **Nombre**: escriba un nombre único y descriptivo para la directiva.
@@ -98,7 +98,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
    - **Grupos**: los grupos de distribución, los grupos de seguridad habilitados para correo electrónico o los Grupos de Microsoft 365 especificados de la organización.
    - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
-   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    Para los usuarios o grupos, puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, escriba un asterisco (\*) para ver todos los valores disponibles.
 
@@ -123,9 +123,9 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
       <sup>\*</sup> **Contiene idiomas específicos** y **de estos países** no forman parte de la configuración de ASF.
 
-   - **Contiene idiomas específicos**: Haga clic en la casilla y seleccione **Activado** o **Desactivado** en la lista desplegable. Si la activa, aparecerá un cuadro. Empiece a escribir el nombre de un idioma en el cuadro. Aparecerá una lista filtrada de idiomas admitidos. Cuando encuentre el idioma que está buscando, selecciónelo. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar en ![Quitar icono](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   - **Contiene idiomas específicos**: Haga clic en la casilla y seleccione **Activado** o **Desactivado** en la lista desplegable. Si la activa, aparecerá un cuadro. Empiece a escribir el nombre de un idioma en el cuadro. Aparecerá una lista filtrada de idiomas admitidos. Cuando encuentre el idioma que está buscando, selecciónelo. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-   - **De estos países** _: Haga clic en la casilla y seleccione_ *Activar** o **Desactivar** en la lista desplegable. Si la activa, aparecerá un cuadro. Empiece a escribir el nombre de un país en el cuadro. Se mostrará una lista filtrada de países admitidos. Cuando encuentre el país que está buscando, selecciónelo. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar en ![Quitar icono](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   - **De estos países** _: Haga clic en la casilla y seleccione_ *Activar** o **Desactivar** en la lista desplegable. Si la activa, aparecerá un cuadro. Empiece a escribir el nombre de un país en el cuadro. Se mostrará una lista filtrada de países admitidos. Cuando encuentre el país que está buscando, selecciónelo. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -140,7 +140,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
      En la siguiente tabla se describen las acciones disponibles en los veredictos de filtrado de correo no deseado.
 
-     - Una marca de verificación ( ![Marca de verificación](../../media/checkmark.png)) indica que la acción está disponible (no todas las acciones están disponibles para todos los veredictos).
+     - Una marca de verificación ( ![Marca de verificación.](../../media/checkmark.png)) indica que la acción está disponible (no todas las acciones están disponibles para todos los veredictos).
      - Un asterisco (<sup>\*</sup>) después de la marca de verificación indica la acción predeterminada para el veredicto de filtrado de correo no deseado.
 
      <br>
@@ -149,12 +149,12 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
      |Acción|Correo no deseado|Alto<br>confianza<br>correo no deseado|Suplantación de identidad (phishing)|Alto<br>confianza<br>suplantación de identidad (phishing)|Masivo|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Mover el mensaje a la carpeta Correo no deseado**: el mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1</sup>|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|
-     |**Agregar encabezado X**: agrega un encabezado X al encabezado del mensaje y entrega el mensaje al buzón. <p> Especifique el nombre de campo del encabezado X (no el valor) más adelante en el cuadro **Agregar este texto de encabezado X**. <p> Para los veredictos **Correo no deseado** y **Correo no deseado de alta confianza**, el mensaje se mueve a la carpeta Correo no deseado.<sup>1,2</sup>|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
-     |**Anteponer la línea de asunto al texto**: agrega texto al principio de la línea de asunto del mensaje. El mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1,2</sup> <p> Especifique el texto más adelante en el cuadro **Prefijo de línea de asunto con este texto**.|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
-     |**Redirigir el mensaje a la dirección de correo electrónico**: envía el mensaje a otros destinatarios en vez de a los especificados. <p> Especifique los destinatarios más tarde en el cuadro **Redirigir a esta dirección de correo electrónico**.|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-     |**Eliminar mensaje**: elimina el mensaje completo, incluidos todos los datos adjuntos.|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
-     |**Colocar el mensaje en cuarentena**: envía el mensaje a la cuarentena en lugar de a los destinatarios. <p> Especifique cuánto tiempo se debe conservar el mensaje en cuarentena más adelante en el cuadro **Cuarentena**.|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)|
+     |**Mover el mensaje a la carpeta Correo no deseado**: el mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1</sup>|![Marca de verificación.](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|
+     |**Agregar encabezado X**: agrega un encabezado X al encabezado del mensaje y entrega el mensaje al buzón. <p> Especifique el nombre de campo del encabezado X (no el valor) más adelante en el cuadro **Agregar este texto de encabezado X**. <p> Para los veredictos **Correo no deseado** y **Correo no deseado de alta confianza**, el mensaje se mueve a la carpeta Correo no deseado.<sup>1,2</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
+     |**Anteponer la línea de asunto al texto**: agrega texto al principio de la línea de asunto del mensaje. El mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1,2</sup> <p> Especifique el texto más adelante en el cuadro **Prefijo de línea de asunto con este texto**.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
+     |**Redirigir el mensaje a la dirección de correo electrónico**: envía el mensaje a otros destinatarios en vez de a los especificados. <p> Especifique los destinatarios más tarde en el cuadro **Redirigir a esta dirección de correo electrónico**.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+     |**Eliminar mensaje**: elimina el mensaje completo, incluidos todos los datos adjuntos.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
+     |**Colocar el mensaje en cuarentena**: envía el mensaje a la cuarentena en lugar de a los destinatarios. <p> Especifique cuánto tiempo se debe conservar el mensaje en cuarentena más adelante en el cuadro **Cuarentena**.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)|
      |**Ninguna acción**|||||![Marca de verificación](../../media/checkmark.png)|
      |
 
@@ -164,7 +164,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      >
      > <sup>2</sup> Puede usar este valor como condición en las reglas de flujo de correo (también conocidas como reglas de transporte) para filtrar o redirigir el mensaje.
 
-   - **Mantener correo no deseado en cuarentena durante este número de días**: especifica cuánto tiempo debe mantenerse el mensaje en cuarentena si ha seleccionado **Mensaje en cuarentena** como la acción para un veredicto de filtrado de correo no deseado. Cuando expire el período de tiempo, el mensaje se eliminará. El valor predeterminado es 30 días. Los valores válidos están comprendidos entre 1 y 30 días. Para obtener más información acerca de la cuarentena, consulte los siguientes temas:
+   - **Mantener correo no deseado en cuarentena durante este número de días**: especifica cuánto tiempo debe mantenerse el mensaje en cuarentena si ha seleccionado **Mensaje en cuarentena** como la acción para un veredicto de filtrado de correo no deseado. Cuando expire el período de tiempo, el mensaje se eliminará. El valor predeterminado es 30 días. Los valores válidos están comprendidos entre 1 y 30 días. Para más información acerca de la cuarentena, consulte los siguientes artículos:
 
      - [Mensajes en cuarentena en EOP](quarantine-email-messages.md)
      - [Administración de mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md)
@@ -191,7 +191,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      - **Habilitar ZAP para los mensajes de suplantación de identidad**: de manera predeterminada, ZAP está habilitada para la detección de la suplantación de identidad, pero puede deshabilitarla si desactiva la casilla.
      - **Habilitar ZAP para los mensajes de correo no deseado**: de forma predeterminada, ZAP está habilitada para la detección de correo no deseado, pero puede deshabilitarla si desactiva la casilla.
 
-   - **Habilitar notificaciones de correo no deseado para el usuario final**: Para más información, vea la sección [Configurar las notificaciones de correo no deseado para el usuario final](#configure-end-user-spam-notifications) más adelante en este tema.
+   - **Habilitar notificaciones de correo no deseado para el usuario final**: para más información, vea la sección [Configurar las notificaciones de correo no deseado para el usuario final](#configure-end-user-spam-notifications) más adelante en este artículo.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -218,17 +218,17 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
       - **Dominios** \> **bloqueados**: haga clic en **Bloquear dominios**.
 
    2. En el control flotante que aparece, siga los pasos siguientes:
-      1. Haga clic en ![Crear icono](../../media/m365-cc-sc-create-icon.png) **Agregar remitentes** o **Agregar dominios**.
+      1. Haga clic en el ![icono Crear.](../../media/m365-cc-sc-create-icon.png) **Agregar remitentes** o **Agregar dominios**.
       2. En el control flotante **Agregar remitentes** o **Agregar dominios** que aparece, escriba la dirección de correo electrónico del remitente en el cuadro **Remitente** o el dominio en el cuadro **Dominio**. Mientras escribe, el valor aparece debajo del cuadro. Cuando haya terminado de escribir la dirección de correo electrónico o el dominio, seleccione el valor debajo del cuadro.
-      3. Repita el paso anterior tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+      3. Repita el paso anterior tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
       Cuando haya terminado, haga clic en **Agregar remitentes** o **Agregar dominios**.
 
       De nuevo en el control flotante principal, los remitentes o dominios que agregó aparecerán en la página. Para quitar una entrada de esta página, siga los pasos siguientes:
 
       1. Seleccione una o más entradas de la lista. También puede usar el cuadro **Búsqueda** para buscar valores en la lista.
-      2. Después de seleccionar al menos una entrada, el icono Eliminar ![Icono Eliminar](../../media/m365-cc-sc-delete-icon.png) aparece.
-      3. Haga clic en el icono Eliminar ![Icono Eliminar](../../media/m365-cc-sc-delete-icon.png) para quitar las entradas seleccionadas.
+      2. Después de seleccionar al menos una entrada, el icono Eliminar ![Icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) aparece.
+      3. Haga clic en el icono Eliminar ![Icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) para quitar las entradas seleccionadas.
 
       Cuando haya terminado, haga clic en **Listo**.
 
@@ -280,8 +280,8 @@ No se puede deshabilitar la directiva contra correo no deseado predeterminada.
 2. En la página **Directivas contra correo no deseado**, seleccione una directiva con el **Valor de tipo** de **Directiva personalizada contra el correo no deseado** de la lista. Para ello, haga clic en el nombre.
 
 3. En la parte superior del control flotante de detalles de la directiva que aparece, verá uno de los siguientes valores:
-   - **Directiva desactivada**: para activar la directiva, haga clic en el ![Icono Activar](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar**.
-   - **Directiva activada**: Para desactivar la directiva, haga clic en el ![Icono desactivar](../../media/m365-cc-sc-turn-on-off-icon.png) y **Desactivar**.
+   - **Directiva desactivada**: para activar la directiva, haga clic en ![icono Activar.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar** .
+   - **Directiva activada**: para desactivar la directiva, haga clic en el ![Icono Desactivar](../../media/m365-cc-sc-turn-on-off-icon.png) **Desactivar**.
 
 4. En el cuadro de diálogo de confirmación que aparece, haga clic **Activar** o **Desactivar**.
 
@@ -309,11 +309,14 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad
    - La directiva contra correo no deseado con el valor de **Prioridad** inferior (por ejemplo, **3**) solo tiene disponible la opción **Aumentar la prioridad**.
    - Si tiene tres o más directivas contra correo no deseado, las directivas entre los valores de prioridad más alto y más bajo tienen disponibles tanto las opciones de **Aumentar la prioridad** como de **Disminuir la prioridad**.
 
-   Haga clic en el ![Icono Aumentar la prioridad](../../media/m365-cc-sc-increase-icon.png) **Aumentar la prioridad** o en el ![Icono Disminuir la prioridad](../../media/m365-cc-sc-decrease-icon.png) **Reducir la prioridad** para cambiar el valor de **Prioridad**.
+   Haga clic en el ![Icono Aumentar la prioridad.](../../media/m365-cc-sc-increase-icon.png) **Aumentar la prioridad** o en el ![Icono Disminuir la prioridad](../../media/m365-cc-sc-decrease-icon.png) **Reducir la prioridad** para cambiar el valor de **Prioridad**.
 
 4. Cuando haya terminado, haga clic en **Cerrar** en el control flotante de detalles de la directiva.
 
 ### <a name="configure-end-user-spam-notifications"></a>Configurar notificaciones de correo no deseado para el usuario final
+
+> [!NOTE]
+> No se admiten las notificaciones de correo no deseado del usuario final para los grupos.
 
 Cuando un veredicto de filtrado de correo no deseado pone en cuarentena un mensaje, puede configurar las notificaciones de correo no deseado para el usuario final para que los destinatarios sepan lo que ha sucedido con los mensajes que se les han enviado. Para obtener más información acerca de estas notificaciones, consulte [Notificaciones de correo no deseado para el usuario final en EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
@@ -346,7 +349,7 @@ Cuando se utiliza el portal de Microsoft 365 Defender para eliminar una directiv
 
 1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
 
-2. En la página **Directivas contra correo no deseado**, seleccione una directiva con el **Valor de tipo** de **Directiva personalizada contra el correo no deseado** de la lista. Para ello, haga clic en el nombre. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en el ![Icono Más acciones](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
+2. En la página **Directivas contra correo no deseado**, seleccione una directiva con el **Valor de tipo** de **Directiva personalizada contra el correo no deseado** de la lista. Para ello, haga clic en el nombre. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en ![icono Más acciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png)**Eliminar directiva**.
 
 3. En el cuadro de diálogo de confirmación que aparece, haga clic en **Sí**.
 

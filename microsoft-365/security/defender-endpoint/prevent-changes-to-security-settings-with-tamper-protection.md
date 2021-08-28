@@ -17,12 +17,12 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 07/27/2021
-ms.openlocfilehash: 5b8abf4f07c1e0a136c456cf5b83adf64e974d7c67ae512c0edb991935afb423
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e8388721d11d25d17bc8b8bbbe505e968d243c9f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873920"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575797"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -115,7 +115,7 @@ La protección contra alteraciones puede estar activada o desactivada para el in
 
 ### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-365-defender-portal"></a>Activar (o desactivar) la protección contra alteraciones en el portal de Microsoft 365 Defender datos
 
-:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Activar la protección contra alteraciones en el portal Microsoft 365 Defender datos":::
+:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Active la protección contra alteraciones en el Microsoft 365 Defender de seguridad.":::
 
 1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
@@ -141,7 +141,7 @@ Si forma parte del equipo de seguridad de su organización y la suscripción inc
 
 ### <a name="turn-tamper-protection-on-or-off-in-intune"></a>Activar o desactivar la protección contra manipulaciones en Intune
 
-![Activar la protección contra alteraciones con Intune](images/turnontamperprotect-MEM.png)
+![Activa la protección contra alteraciones con Intune.](images/turnontamperprotect-MEM.png)
 
 1. Vaya al Centro [Microsoft Endpoint Manager administración e](https://endpoint.microsoft.com) inicie sesión.
 
@@ -206,7 +206,7 @@ Si eres usuario principal o no estás sujeto a la configuración administrada po
 
 Esto es lo que ves en la Seguridad de Windows aplicación:
 
-![Protección contra alteraciones activada en Windows 10 Home](images/tamperprotectionturnedon.png)
+![Protección contra alteraciones activada en Windows 10 Home.](images/tamperprotectionturnedon.png)
 
 1. Seleccione **Inicio** y empiece a escribir *Seguridad*. En los resultados de búsqueda, **seleccione Seguridad de Windows**.
 
@@ -220,7 +220,7 @@ Los intentos de manipulación suelen indicar ataques cibernéticos más grandes.
 
 Cuando se detecta un intento de manipulación, se genera una alerta en [el portal de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/portal-overview) ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
-![Microsoft 365 Defender](images/tamperattemptalert.png)
+![Microsoft 365 Defender.](images/tamperattemptalert.png)
 
 Con [detección y respuesta de puntos de conexión](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) y [capacidades avanzadas](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) de búsqueda en Microsoft Defender para endpoint, el equipo de operaciones de seguridad puede investigar y solucionar estos intentos.
 
@@ -228,11 +228,11 @@ Con [detección y respuesta de puntos de conexión](/microsoft-365/security/defe
 
 La protección contra alteraciones se integra [con las & de administración de vulnerabilidades.](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) [Las recomendaciones de seguridad](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) incluyen asegurarse de que la protección contra manipulaciones está activada. Por ejemplo, puede buscar en *tamper*. En los resultados, puedes seleccionar **Activar protección contra** manipulaciones para obtener más información y activarla.
 
-![Activar la protección contra manipulaciones](images/tamperprotectsecurityrecos.png)
+![Activar la protección contra manipulaciones.](images/tamperprotectsecurityrecos.png)
 
 Para obtener más información sobre la administración & vulnerabilidad de amenazas, consulte [Threat & Vulnerability Management en Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>¿En qué versiones de Windows puedo configurar la protección contra alteraciones?
 
@@ -298,7 +298,7 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 
 [Ver información sobre intentos de manipulación](#view-information-about-tampering-attempts).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Ayudar a proteger Windows equipos con Endpoint Protection para Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 
