@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Aprenda a integrar PIM para conceder acceso Just-In-Time limitado a los usuarios para que realicen tareas con privilegios elevados en Microsoft Defender para Office 365 y reducir asi el riesgo para los datos.
+description: Aprenda a integrar PIM para conceder acceso Just-In-Time limitado a los usuarios para que realicen tareas con privilegios elevados en Microsoft Defender para Office 365 y reducir así el riesgo para los datos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a894f1c4652dbea4a0c5ab9a7df9027f4d42c75c
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: 4d1333963f841a9d9263f44263ad43d20ec75057
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483957"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615045"
 ---
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) y por qué usarlo con Microsoft Defender para Office 365
 
@@ -62,7 +62,7 @@ El nombre de su usuario (aquí "Alex") aparecerá en Asignaciones Aptas en la p�
 
 ***paso 2***. Cree el segundo grupo de permisos necesario (con privilegios elevados) para tareas adicionales y asigne elegibilidad.
 
-Con [grupos de acceso con privilegios])https://docs.microsoft.com/es-ES/azure/active-directory/privileged-identity-management/groups-features) ahora podemos crear nuestros propios grupos personalizados y combinar permisos o aumentar la granularidad cuando sea necesario para satisfacer las prácticas y necesidades organizativas.
+Con los [Grupos de acceso con privilegios](/azure/active-directory/privileged-identity-management/groups-features) ya se pueden crear grupos personalizados y combinar permisos o aumentar la granularidad cuando sea necesario para satisfacer las prácticas y necesidades de la organización.
 
 ### <a name="create-a-role-group-requiring-the-permissions-we-need"></a>Cree un grupo de roles que requiera los permisos que necesitamos.
 

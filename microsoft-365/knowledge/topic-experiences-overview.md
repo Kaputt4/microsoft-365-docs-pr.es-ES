@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre cómo usar Viva Topics en su organización.
-ms.openlocfilehash: d8e8de3cead0fc389212b2f3b028769d6b2850138b864c379b87bc9f00dfd8bd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 902628d53f651073b1d08ce3f1915808da22b03f
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864096"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684138"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de los temas de Microsoft Viva 
 
@@ -134,7 +134,7 @@ Los controles de administración Centro de administración de Microsoft 365 perm
 
 Para obtener más información acerca de los controles de administración, vea [asignar permisos de usuario,](./plan-topic-experiences.md#user-permissions)administrar la [visibilidad del](./topic-experiences-knowledge-rules.md)tema y administrar la [detección de temas.](./topic-experiences-discovery.md)
 
-## <a name="topic-curation--feedback"></a>Comentarios y conservación de temas
+## <a name="topic-curation-and-suggestions"></a>Sugerencias y curación de temas
 
 La inteligencia artificial trabajará sin descanso para ofrecerle sugerencias para mejorar los temas a medida que se produzcan cambios en su entorno. 
 
@@ -143,6 +143,22 @@ Los usuarios con permisos de edición o creación de temas pueden hacer actualiz
 Es posible que se pregunte a los usuarios a los que permite acceder a ver temas en su trabajo diario si estos les han resultado útiles. El sistema examina estas respuestas y las usa para mejorar el contenido resaltado del tema y ayudar a determinar lo que se muestra en los resúmenes y detalles de los temas.
 
 Para obtener más información, vea [Detección de temas y curación.](./topic-experiences-discovery-curation.md)
+
+## <a name="provide-us-feedback"></a>Proporcionarnos comentarios
+
+En Microsoft nos tomamos muy en serio los comentarios de nuestros clientes. Los comentarios que proporciones para Temas de Viva se usarán para solucionar problemas, corregir errores, mejorar las características existentes y desarrollar otras nuevas. 
+
+Puede enviar comentarios a Microsoft directamente desde una página de temas y desde las páginas Administrar **temas** y **Mis temas.** Busque este botón en la esquina inferior derecha de la página.
+
+   ![Captura de pantalla que muestra el botón Comentarios.](../media/knowledge-management/feedback-icon.png)
+
+En la página Enviar comentarios a **Microsoft,** háganos saber si le gusta algo, si no le gusta algo o si tiene una sugerencia.
+
+   ![Captura de pantalla que muestra la página Enviar comentarios a Microsoft.](../media/knowledge-management/feedback-page.png)
+
+Al enviar comentarios, le pedimos que no incluya información confidencial, como números de teléfono, direcciones o historias muy personales. En su lugar, proporcione información sobre el problema específico que está experimentando con Temas de Viva o su experiencia en general con Temas de Viva. De esta manera podremos garantizar su privacidad mientras revisamos y tomamos las medidas pertinentes en función de sus comentarios.
+
+Gracias por tomarse el tiempo para compartir sus ideas con nosotros. Su perspectiva nos ayuda a mejorar nuestras características existentes y desarrollar otras nuevas.
 
 ## <a name="see-also"></a>Consulte también
 

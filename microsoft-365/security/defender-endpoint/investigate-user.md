@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 202fe1c38b6846f52361f3e55baf9050cae36fb5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 73c16691dc56ad478912b85cb1b712bc7b1b44a8
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550171"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684189"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Investigar una cuenta de usuario en Microsoft Defender para endpoint
 
@@ -62,8 +62,8 @@ Cuando investigue una entidad de cuenta de usuario, verá:
 
 El  panel De detalles del usuario a la izquierda proporciona información sobre el usuario, como incidentes abiertos relacionados, alertas activas, nombre SAM, SID, Alertas de Identidad de Microsoft Defender, número de dispositivos en los que el usuario ha iniciado sesión, cuándo se ha visto por primera vez y por última vez, tipos de rol e inicio de sesión. Dependiendo de las características de integración que haya habilitado, verá otros detalles. Por ejemplo, si habilita la Skype para la integración empresarial, podrá ponerse en contacto con el usuario desde el portal. La sección Alertas **de ATP** de Azure contiene un vínculo que te llevará a la página de Microsoft Defender para identidad, si has habilitado la característica Microsoft Defender para identidad y hay alertas relacionadas con el usuario. La página microsoft defender para la identidad proporcionará más información sobre las alertas.
 
->[!NOTE]
->Tendrás que habilitar la integración en Microsoft Defender para Identidad y Defender para endpoint para usar esta característica. En Defender para endpoint, puedes habilitar esta característica en características avanzadas. Para obtener más información sobre cómo habilitar características avanzadas, vea [Activar características avanzadas.](advanced-features.md)
+> [!NOTE]
+> Tendrás que habilitar la integración en Microsoft Defender para Identidad y Defender para endpoint para usar esta característica. En Defender para endpoint, puedes habilitar esta característica en características avanzadas. Para obtener más información sobre cómo habilitar características avanzadas, vea [Activar características avanzadas.](advanced-features.md)
 
 Overview, Alerts y Observed in organization son pestañas diferentes que muestran varios atributos sobre la cuenta de usuario.
 

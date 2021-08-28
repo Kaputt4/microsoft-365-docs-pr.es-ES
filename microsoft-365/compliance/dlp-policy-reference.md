@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 9ee8db55a43f75fe31a64bced1adad6aecbfdb6c
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: daae280fa4c08a47f74cec6a71ec11ac9739ebd6
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621521"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684117"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -549,3 +549,10 @@ DLP analiza el correo electrónico de forma diferente desde elementos en SharePo
 #### <a name="additional-options"></a>Opciones adicionales
 
 Si tiene varias reglas en una directiva, puede usar las opciones adicionales para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla. 
+
+## <a name="see-also"></a>Consulte también
+
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
+- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md#create-a-dlp-policy-from-a-template)
+- [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)

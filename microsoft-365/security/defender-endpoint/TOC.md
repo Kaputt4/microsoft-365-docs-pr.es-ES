@@ -377,6 +377,7 @@
 ##### [Investigar incidentes](investigate-incidents.md)
 
 #### [Cola de alertas]()
+##### [Cola de alertas en Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
 ##### [Ver y organizar la cola de alertas](alerts-queue.md)
 ##### [Alertas de revisión](review-alerts.md)
 ##### [Administrar alertas](manage-alerts.md)
@@ -485,7 +486,7 @@
 ####### [Obtener información de IP relacionada con alertas](get-alert-related-ip-info.md)
 ####### [Obtener información de dispositivo relacionada con alertas](get-alert-related-machine-info.md)
 ####### [Obtener información de usuario relacionada con alertas](get-alert-related-user-info.md)
-####### [Cola de alertas en Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
+
 
 ###### [Evaluaciones de vulnerabilidades y configuraciones seguras]()
 ####### [Exportar métodos y propiedades de evaluación](get-assessment-methods-properties.md)

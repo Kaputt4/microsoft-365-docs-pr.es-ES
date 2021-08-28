@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 27727cc237eb6737cc5ca799237f3d0d7d6ce8a68b105c3eedb2c825cc880d59
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7463ea7cd8a6d458e467ab213560be7d0f16a394
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811211"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684237"
 ---
 # <a name="manage-indicators"></a>Administrar indicadores
 
@@ -36,7 +36,7 @@ ms.locfileid: "53811211"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-1. En el panel de navegación, **seleccione Configuración**  >  **indicadores** de puntos de  >  **conexión** (en **Reglas**).
+1. En el panel de navegación, **seleccione Configuración** \> **indicadores** de puntos de \> **conexión** (en **Reglas**).
 
 2. Seleccione la pestaña del tipo de entidad que desea administrar.
 
@@ -52,7 +52,7 @@ Descargue el CSV de ejemplo para conocer los atributos de columna admitidos.
 
 2. Seleccione la pestaña del tipo de entidad para la que desea importar los indicadores.
 
-3. Seleccione **Importar**  >  **elegir archivo**.
+3. Seleccione **Importar** \> **elegir archivo**.
 
 4. Seleccione **Importar**. Haga esto para todos los archivos que desea importar.
 
@@ -63,15 +63,15 @@ En la tabla siguiente se muestran los parámetros admitidos.
 Parámetro|Tipo|Descripción
 :---|:---|:---
 indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileSha256", "IpAddress", "DomainName" y "Url". **Required**
-indicatorValue|String|Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
+indicatorValue|Cadena|Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
 acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "AlertAndBlock" y "Allowed". **Required**
-title|String|Título de alerta del indicador. **Required**
+title|Cadena|Título de alerta del indicador. **Required**
 description|Cadena| Descripción del indicador. **Required**
 expirationTime|DateTimeOffset|La hora de expiración del indicador con el siguiente formato YYYY-MM-DDTHH:MM:SS.0Z. **Optional**
 severity|Enum|Gravedad del indicador. Los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
-recommendedActions|String|Acciones recomendadas de alerta del indicador TI. **Optional**
+recommendedActions|Cadena|Acciones recomendadas de alerta del indicador TI. **Optional**
 rbacGroupNames|Cadena|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
-categoría|String|Categoría de la alerta. Algunos ejemplos son: Ejecución y acceso a credenciales. **Optional**
+categoría|Cadena|Categoría de la alerta. Algunos ejemplos son: Ejecución y acceso a credenciales. **Optional**
 mitretechniques|Cadena|Código/id de técnicas MITRE (separados por comas). Para obtener más información, [vea Enterprise tácticas](https://attack.mitre.org/tactics/enterprise/). **Opcional** Se recomienda agregar un valor en categoría cuando se utiliza una técnica MITRE.
 
 Para obtener más información, vea Microsoft Defender para las categorías de alertas de punto de conexión ahora están alineadas con [MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).

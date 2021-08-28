@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Aprenda cómo encontrar recursos para Temas Microsoft Viva
-ms.openlocfilehash: ec078f1a3e1e4dd963111f0c60529173d2aedbcffcd2b61e3248a3021b5eea69
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e66252f93b3c32815e3a3a13217a59bb40fa17e6
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840172"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684225"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Introducción a Temas Microsoft Viva
 
@@ -46,10 +46,9 @@ Los recursos de esta sección le ayudarán a obtener más información sobre los
 |Consultar recursos en el Centro de recursos de Microsoft Tech Community|[Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
-
 ## <a name="adoption"></a>Adopción
 
-Obtenga más información sobre cómo usar e implementar Temas Microsoft Viva en su organización para ayudarle a resolver los problemas de su empresa: 
+Obtenga más información sobre cómo usar e implementar Temas de Viva en su organización para ayudarle a resolver sus problemas empresariales. 
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
@@ -78,6 +77,12 @@ Los recursos de esta sección ayudan a los usuarios a aprender a usar y administ
 |Entender por qué los temas pueden diferir de diferentes usuarios|[Recorte de seguridad de Temas Viva](topic-experiences-security-trimming.md)|
 |Obtenga información sobre cómo evitar que determinados temas se identifiquen y visualizó|[Restringir el acceso a temas](restrict-access-to-topics.md)|
 
+## <a name="provide-us-feedback"></a>Proporcionarnos comentarios
 
+Proporcione comentarios sobre su experiencia con Temas de Viva directamente a Microsoft.
+
+| Si busca esta información: | Vea este recurso: |
+|:-----|:-----|
+|Cómo proporcionar comentarios sobre Temas de Viva|[Proporcionarnos comentarios](topic-experiences-overview.md#provide-us-feedback)|
 
 

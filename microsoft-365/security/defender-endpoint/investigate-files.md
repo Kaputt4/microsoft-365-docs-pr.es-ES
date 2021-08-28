@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 6b879fddc96c69727a7c5deb49ce2a926152ec326605167ac075b5d37f8ab448
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 52e7a3098f157e52ecf32802a9f69328b28e2e52
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829161"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684165"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Investigar un archivo asociado a una alerta de Microsoft Defender para punto de conexión
 
@@ -58,7 +58,7 @@ También puede realizar acciones en un archivo de esta página.
 
 En la parte superior de la página de perfil, encima de las tarjetas de información del archivo. Las acciones que puede realizar aquí incluyen:
 
-- Detener y poner en cuarentena
+- Detener y poner en cuarentena un archivo
 - Indicador Agregar o editar
 - Descargar archivo
 - Consultar a un experto en amenazas
@@ -72,27 +72,27 @@ Los detalles del archivo, incidentes, detección de malware y tarjetas de preval
 
 Verá detalles como MD5 del archivo, la relación de detección total de virus y la detección de antivirus de Microsoft Defender si está disponible y la prevalencia del archivo.
 
-La tarjeta de prevalencia de archivos muestra dónde se ha visto el archivo en dispositivos de la organización y en todo el mundo. 
+La tarjeta de prevalencia de archivos muestra dónde se ha visto el archivo en dispositivos de la organización y en todo el mundo.
 
-> [!NOTE] 
+> [!NOTE]
 > Los diferentes usuarios pueden ver valores distintos en los dispositivos *de la* sección de organización de la tarjeta de prevalencia de archivos. Esto se debe a que la tarjeta muestra información basada en el ámbito RBAC que tiene un usuario. Es decir, si a un usuario se le ha concedido visibilidad en un conjunto específico de dispositivos, solo verá la prevalencia organizativa de archivos en esos dispositivos.
 
-![Imagen de información de archivo](images/atp-file-information.png)
+![Imagen de la información del archivo.](images/atp-file-information.png)
 
 ## <a name="alerts"></a>Alertas
 
 La **pestaña** Alertas proporciona una lista de alertas asociadas con el archivo. Esta lista cubre gran parte de la misma información que la cola de alertas, excepto para el grupo de dispositivos, si existe, al que pertenece el dispositivo afectado. Puede elegir qué tipo de información se muestra seleccionando Personalizar columnas **de** la barra de herramientas encima de los encabezados de columna.
 
-![Imagen de alertas relacionadas con la sección de archivos](images/atp-alerts-related-to-file.png)
+![Imagen de alertas relacionadas con la sección de archivos.](images/atp-alerts-related-to-file.png)
 
 ## <a name="observed-in-organization"></a>Observado en la organización
 
 La **pestaña Observed in organization** le permite especificar un intervalo de fechas para ver qué dispositivos se han observado con el archivo.
 
->[!NOTE]
->Esta pestaña mostrará un número máximo de 100 dispositivos. Para ver _todos los_ dispositivos con el archivo, exporte la pestaña a un archivo CSV **seleccionando Exportar** en el menú de acciones encima de los encabezados de columna de la pestaña.
+> [!NOTE]
+> Esta pestaña mostrará un número máximo de 100 dispositivos. Para ver _todos los_ dispositivos con el archivo, exporte la pestaña a un archivo CSV **seleccionando Exportar** en el menú de acciones encima de los encabezados de columna de la pestaña.
 
-![Imagen del dispositivo observado más reciente con el archivo](images/atp-observed-machines.png)
+![Imagen del dispositivo observado más reciente con el archivo.](images/atp-observed-machines.png)
 
 Use el control deslizante o el selector de intervalos para especificar rápidamente un período de tiempo que desea comprobar si hay eventos relacionados con el archivo. Puede especificar una ventana de tiempo tan pequeña como un solo día. Esto le permitirá ver solo los archivos que se comunicaron con esa dirección IP en ese momento, lo que reduce drásticamente el desplazamiento y la búsqueda innecesarios.
 
@@ -100,13 +100,13 @@ Use el control deslizante o el selector de intervalos para especificar rápidame
 
 La **pestaña Análisis** profundo le permite enviar el archivo para un análisis profundo, para descubrir más detalles sobre el comportamiento del archivo, así como el efecto que está teniendo dentro de sus organizaciones. [](respond-file-alerts.md#deep-analysis) Después de enviar el archivo, el informe de análisis profundo aparecerá en esta pestaña una vez que estén disponibles los resultados. Si el análisis profundo no encontró nada, el informe estará vacío y el espacio de resultados permanecerá en blanco.
 
-![Imagen de la pestaña análisis profundo](images/submit-file.png)
+![Imagen de la pestaña análisis profundo.](images/submit-file.png)
 
 ## <a name="file-names"></a>Nombres de archivo
 
 La **pestaña Nombres de** archivo enumera todos los nombres que se ha observado que el archivo debe usar en las organizaciones.
 
-![Ficha Imagen de nombres de archivo](images/atp-file-names.png)
+![Imagen de la pestaña nombres de archivo.](images/atp-file-names.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

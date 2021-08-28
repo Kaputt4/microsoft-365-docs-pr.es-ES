@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 28ea0cfa3d22405d80fdf457cc60ce4627caf9de
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: a9dc5b908534cf791d8538069a8d8db9f10e0e48
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349601"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684249"
 ---
 # <a name="get-user-related-alerts-api"></a>Obtener la API de alertas relacionadas con el usuario
 
@@ -33,18 +33,17 @@ ms.locfileid: "58349601"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Descripción de la API
+
 Recupera una colección de alertas relacionadas con un identificador de usuario determinado.
 
-
 ## <a name="limitations"></a>Limitaciones
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
+1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
@@ -61,7 +60,7 @@ Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir a
 > Al obtener un token con credenciales de usuario:
 >
 > - El usuario debe tener al menos el siguiente permiso de función: "Ver datos". Para obtener más información, vea [Create and manage roles](user-roles.md).
->- La respuesta incluirá solo alertas, asociadas con dispositivos, a las que el usuario tiene acceso, según la configuración del grupo de dispositivos (vea [Crear y](machine-groups.md) administrar grupos de dispositivos para obtener más información)
+> - La respuesta incluirá solo alertas, asociadas con dispositivos, a las que el usuario tiene acceso, según la configuración del grupo de dispositivos (vea [Crear y](machine-groups.md) administrar grupos de dispositivos para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -75,7 +74,7 @@ GET /api/users/{id}/alerts
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización | String | Portador {token}. **Necesario**.
+Authorization | Cadena | Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -83,7 +82,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente y el usuario existe: 200 Aceptar. Si el usuario no existe: 200 Aceptar con un conjunto vacío. 
+Si se realiza correctamente y el usuario existe: 200 Aceptar. Si el usuario no existe: 200 Aceptar con un conjunto vacío.
 
 ## <a name="example"></a>Ejemplo
 

@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c8ef316dbd25436221a15777f992faf943c3dc6ee2783dd92afa270d4e72cfdf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1d5771be82c687144759fd321dfc44b8c6158d57
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863660"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684201"
 ---
-# <a name="list-software-version-distribution"></a>Enumerar distribución de versión de software 
+# <a name="list-software-version-distribution"></a>Enumerar distribución de versión de software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "53863660"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Recupera una lista de la distribución de versiones de software de su organización. 
+Recupera una lista de la distribución de versiones de software de su organización.
 
 ## <a name="permissions"></a>Permisos
 
@@ -58,7 +58,7 @@ GET /api/Software/{Id}/distributions
 
 |Nombre|Tipo|Descripción
 |---|---|---|
-|Authorization|String|Portador {token}. **Obligatorio**.
+|Authorization|Cadena|Portador {token}. **Obligatorio**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -66,7 +66,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok con una lista de datos de distribuciones de software en el cuerpo. 
+Si se realiza correctamente, este método devuelve 200 Ok con una lista de datos de distribuciones de software en el cuerpo.
 
 ## <a name="example"></a>Ejemplo
 
