@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos y sugiere acciones recomendadas para ayudar a solucionar los riesgos.
-ms.openlocfilehash: b763560d48f4e07a01fdd3baaf7286327c78cca508984c65f88aff1c73ee47b6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0e8d4595f883f33dc7714cd41c8cb49002321a1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895752"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556401"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
@@ -49,7 +49,7 @@ El Administrador de cumplimiento ayuda a simplificar el cumplimiento y reducir l
 
 El panel del Administrador de cumplimiento muestra la puntuación de cumplimiento actual, le ayuda a ver qué necesita atención y le guía a las acciones de mejora clave. A continuación se muestra un ejemplo de cómo será el panel del Administrador de cumplimiento:
 
-![Administrador de cumplimiento: panel](../media/compliance-manager-dashboard.png "Panel del Administrador de cumplimiento")
+![Administrador de cumplimiento: panel.](../media/compliance-manager-dashboard.png "Panel del Administrador de cumplimiento")
 
 ## <a name="understanding-your-compliance-score"></a>Descripción de la puntuación de cumplimiento
 

@@ -16,12 +16,12 @@ description: Ver e investigar intentos de suplantación de identidad de malware.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cfefbbbdcba0b7ff909892e982abf2ca534e978ead74a6263e23fa443fa8125d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e067431c4c27b4e249f404852e24a197e492ce31
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897368"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558847"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Seguridad de correo electrónico con el Explorador de amenazas en Microsoft Defender para Office 365
 
@@ -53,13 +53,13 @@ Para ver el malware detectado en el correo electrónico ordenado Microsoft 365 t
 
 3. Haga **clic en Remitente** y, a continuación, elija **Tecnología** básica \> **de detección** en la lista desplegable.
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="Tecnología de detección de malware":::
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="tecnología de detección de malware.":::
 
    Las tecnologías de detección ahora están disponibles como filtros para el informe.
 
 4. Elija una opción y, a continuación, haga clic en **Actualizar** para aplicar ese filtro (no actualice la ventana del explorador).
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="tecnología de detección seleccionada":::
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="tecnología de detección seleccionada.":::
 
    El informe se actualiza para mostrar los resultados que el malware detectó en el correo electrónico, mediante la opción de tecnología seleccionada. Desde aquí, puede realizar más análisis.
 
@@ -72,13 +72,13 @@ Puede ver los intentos de suplantación de identidad a través de direcciones UR
 2. En la **lista** desplegable Ver, elija **Email** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menú Ver para explorador en contexto de suplantación de identidad](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![Menú Ver para explorador en contexto de suplantación de identidad.](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. Haga **clic en Remitente** y, a continuación, elija Direcciones URL **Haga** clic en \> **Veredicto** en la lista desplegable.
 
 4. En las opciones que aparecen, seleccione una o más opciones, como **Bloqueado** y Bloquear invalidados y, a continuación, haga clic en **Actualizar** (no actualice la ventana del explorador).
 
-    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="Direcciones URL y veredictos de clic":::
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="Direcciones URL y veredictos de clic.":::
 
    El informe se actualiza para mostrar dos tablas de direcciones URL diferentes en la pestaña **Direcciones** URL del informe:
 
@@ -89,7 +89,7 @@ Puede ver los intentos de suplantación de identidad a través de direcciones UR
    Las dos tablas de dirección URL muestran las direcciones URL principales en los mensajes de correo electrónico de suplantación de identidad por acción de entrega y ubicación. Las tablas muestran los clics de dirección URL bloqueados o visitados a pesar de una advertencia, por lo que puede ver qué posibles vínculos no se han presentado a los usuarios y que los usuarios han hecho clic. Desde aquí, puede realizar más análisis. Por ejemplo, debajo del gráfico puede ver las direcciones URL principales de los mensajes de correo electrónico bloqueados en el entorno de su organización.
 
    > [!div class="mx-imgBorder"]
-   > ![Direcciones URL del explorador bloqueadas](../../media/ExplorerPhishClickVerdictURLs.png)
+   > ![Direcciones URL del explorador bloqueadas.](../../media/ExplorerPhishClickVerdictURLs.png)
 
    Seleccione una dirección URL para ver información más detallada.
 

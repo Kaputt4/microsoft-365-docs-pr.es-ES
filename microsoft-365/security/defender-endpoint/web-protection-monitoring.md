@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d0cb507f0d221916e73bfa7261df59d33529639f8197f70fdf88c87b708131f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a134dced8eb749bebdf7e486c6d06c9cc19048b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884512"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558967"
 ---
 # <a name="monitor-web-browsing-security"></a>Supervisar la seguridad de exploración web
 
@@ -37,11 +37,11 @@ La protección web le permite supervisar la seguridad de navegación web de su o
 
 - **Detecciones** de protección contra amenazas web con el tiempo: esta tarjeta de tendencia muestra el número de amenazas web detectadas por tipo durante el período de tiempo seleccionado (Últimos 30 días, Últimos 3 meses, Últimos 6 meses)
 
-  :::image type="content" alt-text="Imagen de la tarjeta que muestra detecciones de protección contra amenazas web con el tiempo" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
+  :::image type="content" alt-text="Imagen de la tarjeta que muestra detecciones de protección contra amenazas web con el tiempo." source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
 
 - **Resumen de protección contra** amenazas web: esta tarjeta muestra el total de detecciones de amenazas web en los últimos 30 días, mostrando la distribución entre los diferentes tipos de amenazas web. Al seleccionar un segmento, se abre la lista de dominios que se encontraron con sitios web malintencionados o no deseados.
 
-  :::image type="content" alt-text="Imagen de la tarjeta que muestra el resumen de protección contra amenazas web" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
+  :::image type="content" alt-text="Imagen de la tarjeta que muestra el resumen de protección contra amenazas web." source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
 
 > [!NOTE]
 > Puede tardar hasta 12 horas antes de que un bloque se refleje en las tarjetas o en la lista de dominios.

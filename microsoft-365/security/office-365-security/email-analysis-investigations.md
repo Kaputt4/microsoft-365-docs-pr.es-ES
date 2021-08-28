@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc30c59df53341d26ab07799a88084d1e3ddde3c81b21503441607a520d218e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 598f8713103a49dad01eb9bb6cf74257128e25f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56814762"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558883"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Análisis de correo electrónico en investigaciones para Microsoft Defender para Office 365
 
@@ -74,7 +74,7 @@ Para garantizar que las acciones de investigación estén actualizadas, cualquie
 
 Las pruebas basadas en correo electrónico en la pestaña Evidencia y respuesta de un incidente ahora muestran la siguiente información.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Ejemplo de información de análisis de correo electrónico en Evidencia y respuesta" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Ejemplo de información de análisis de correo electrónico en Evidencia y respuesta." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 
 De las llamadas numeradas de la figura:
 
@@ -91,10 +91,10 @@ De las llamadas numeradas de la figura:
 
 Para los clústeres de  correo electrónico o correo electrónico de la pestaña Entidades de un **incidente,** Prevenido significa que no había correos electrónicos malintencionados en el buzón para este elemento (correo o clúster). Aquí le mostramos un ejemplo.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Ejemplo de un correo electrónico impedido" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Ejemplo de un correo electrónico impedido." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 
 En este ejemplo, el correo electrónico es malintencionado, pero no en un buzón.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver acciones de corrección pendientes o completadas](air-review-approve-pending-completed-actions.md)

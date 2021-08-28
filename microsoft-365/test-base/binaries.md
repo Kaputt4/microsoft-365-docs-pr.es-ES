@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 72300374c90e0142bdbf713ffee1dba40869fff3293014e1b9884d5e148fed8e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38c21f69680d6e9d6a3231c8bf2dc44f15e057f6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827589"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556509"
 ---
 # <a name="step-3-upload-your-binaries-dependencies-and-scripts"></a>Paso 3: Upload archivos binarios, dependencias y scripts
 
@@ -27,7 +27,7 @@ En esta pestaña, cargará un único paquete zip que contenga los archivos binar
 
 ## <a name="upload-package-zip-file"></a>Upload archivo zip del paquete
 
-![Upload archivos binarios](Media/AddBinaries.png)
+![Upload los archivos binarios.](Media/AddBinaries.png)
 
   - Las dependencias cargadas pueden incluir marcos de prueba, motores de scripting o datos a los que se tendrá acceso para ejecutar los casos de prueba o aplicación. Por ejemplo, puede cargar Selenio y un instalador de webdriver para ayudar a ejecutar pruebas basadas en explorador.
   - Es una práctica recomendada asegurarse de que las actividades de script se mantienen modulares, por ejemplo. 

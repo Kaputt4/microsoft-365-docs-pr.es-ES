@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1a51ec4d2e17275379eb40521f506e4a83d19ef
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 67229e22a3efbb24cd733d07a4ae78e257fd9d71
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595417"
+ms.locfileid: "58559147"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio de evaluación de Microsoft Defender para puntos de conexión
 
@@ -48,7 +48,7 @@ Puede agregar dispositivos Windows 10 o Windows Server 2019 que vienen preconfig
 
 También puedes instalar simuladores de amenazas. Defender for Endpoint se ha asociado con plataformas de simulación de amenazas líderes del sector para ayudarle a probar las capacidades de Defender for Endpoint sin tener que salir del portal.
 
-Instale el simulador preferido, ejecute escenarios en el laboratorio de evaluación y vea al instante el rendimiento de la plataforma, todo disponible cómodamente sin costo adicional para usted. También tendrás acceso conveniente a una amplia variedad de simulaciones a las que puedes acceder y ejecutar desde el catálogo de simulaciones.
+ Instale el simulador preferido, ejecute escenarios en el laboratorio de evaluación y vea al instante el rendimiento de la plataforma, todo disponible cómodamente sin costo adicional para usted. También tendrás acceso conveniente a una amplia variedad de simulaciones a las que puedes acceder y ejecutar desde el catálogo de simulaciones.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -81,7 +81,7 @@ Puede acceder al laboratorio desde el menú. En el menú de navegación, selecci
 
 ## <a name="setup-the-evaluation-lab"></a>Configurar el laboratorio de evaluación
 
-1. En el panel de navegación, seleccione **Evaluación & tutoriales** Laboratorio de evaluación y, a continuación, \> seleccione Laboratorio **de instalación**.
+1. En el panel de navegación, seleccione **Evaluación & tutoriales** Laboratorio de evaluación y, a continuación,  >  seleccione Laboratorio **de instalación**.
 
     :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="Imagen de la página de bienvenida del laboratorio de evaluación.":::
 
@@ -93,8 +93,8 @@ Puede acceder al laboratorio desde el menú. En el menú de navegación, selecci
 
     ![Imagen del agente de simuladores de instalación.](images/install-agent.png)
 
-   > [!IMPORTANT]
-   > Primero deberá aceptar y dar su consentimiento a los términos y las instrucciones de uso compartido de información.
+    >[!IMPORTANT]
+    >Primero deberá aceptar y dar su consentimiento a los términos y las instrucciones de uso compartido de información.
 
 4. Selecciona el agente de simulación de amenazas que quieras usar y escribe los detalles. También puedes elegir instalar simuladores de amenazas más adelante. Si elige instalar agentes de simulación de amenazas durante la configuración del laboratorio, podrá disfrutar de la ventaja de que se instalen cómodamente en los dispositivos que agregue.
 
@@ -139,13 +139,13 @@ La configuración de investigación automatizada dependerá de la configuración
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="configuración del laboratorio con opciones de dispositivo.":::
 
-   > [!NOTE]
-   > Si algo sale mal con el proceso de creación del dispositivo, se te notificará y tendrás que enviar una nueva solicitud. Si se produce un error en la creación del dispositivo, no se contará con la cuota total permitida.
+    > [!NOTE]
+    > Si algo sale mal con el proceso de creación del dispositivo, se te notificará y tendrás que enviar una nueva solicitud. Si se produce un error en la creación del dispositivo, no se contará con la cuota total permitida.
 
 3. Se muestran los detalles de conexión. Selecciona **Copiar** para guardar la contraseña del dispositivo.
 
-   > [!NOTE]
-   > La contraseña solo se muestra una vez. Asegúrese de guardarlo para su uso posterior.
+    > [!NOTE]
+    > La contraseña solo se muestra una vez. Asegúrese de guardarlo para su uso posterior.
 
     :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="Imagen del dispositivo agregado con detalles de conexión.":::
 
@@ -155,8 +155,8 @@ La configuración de investigación automatizada dependerá de la configuración
 
     ![Imagen de la pestaña dispositivos.](images/machines-tab.png)
 
-   > [!TIP]
-   > En la **columna Estado del** simulador, puede pasar el mouse sobre el icono de información para conocer el estado de instalación de un agente.
+    > [!TIP]
+    > En la **columna Estado del** simulador, puede pasar el mouse sobre el icono de información para conocer el estado de instalación de un agente.
 
 ## <a name="request-for-more-devices"></a>Solicitud de más dispositivos
 
@@ -206,11 +206,8 @@ Si está buscando una simulación pre-made, puede usar nuestros escenarios de at
 
     ![Imagen de conexión de escritorio remoto.](images/remote-connection.png)
 
-    > [!NOTE]
-    > Si no tiene una copia de la contraseña guardada durante la configuración inicial, puede restablecer la contraseña seleccionando **Restablecer** contraseña en el menú:
-    >
-    > ![Imagen de la contraseña de restablecimiento.](images/reset-password-test-machine.png)
-    >
+    >[!NOTE]
+    >Si no tiene una copia de la contraseña guardada durante la configuración inicial, puede restablecer la contraseña seleccionando **Restablecer** contraseña en el menú: Imagen de la contraseña de ![ restablecimiento.](images/reset-password-test-machine.png)<br>
     > El dispositivo cambiará su estado a "Ejecutar el restablecimiento de contraseña" y, a continuación, se te presentará la nueva contraseña en unos minutos.
 
 3. Escribe la contraseña que se ha mostrado durante el paso de creación del dispositivo.
@@ -242,7 +239,7 @@ Ejecutar simulaciones de amenazas con plataformas de terceros es una buena maner
 
     Puede acceder a la galería de simulación desde:
     - El panel de evaluación principal en el icono de información general de **Simulaciones** o
-    - Al navegar desde el panel de navegación Evaluación y tutoriales De **simulación** & \> **tutoriales** y, a continuación, seleccione **Catálogo de simulaciones**.
+    - Al navegar desde el panel de navegación Evaluación y tutoriales De **simulación**&  >  **tutoriales** y, a continuación, seleccione **Catálogo de simulaciones**.
 
 4. Selecciona los dispositivos en los que quieres ejecutar la simulación.
 
@@ -260,7 +257,7 @@ Busca pruebas de ataque mediante la búsqueda avanzada mediante el lenguaje de c
 
 Microsoft Defender para endpoint se ha asociado con varias plataformas de simulación de amenazas para ofrecerte un acceso cómodo para probar las capacidades de la plataforma desde el portal.
 
-Para ver todas las simulaciones disponibles, vaya al catálogo **Simulaciones** y tutoriales Simulaciones \>  desde el menú.
+Para ver todas las simulaciones disponibles, vaya al catálogo **Simulaciones** y tutoriales Simulaciones  >   desde el menú.
 
 Se muestra una lista de agentes de simulación de amenazas de terceros compatibles y se proporcionan tipos específicos de simulaciones junto con descripciones detalladas en el catálogo.
 
