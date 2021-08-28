@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cd07c40692bb70d64a7bde6f5f7fd13a08ecf0b8f7c5b7e8db2e8cfa4a9b4501
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: edc1caef21714d76cf06dd065b4963bdc4a7ea7b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53903098"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573552"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>Inscribir Microsoft Defender para endpoint en dispositivos macOS en Jamf Pro 
 
@@ -52,37 +52,37 @@ Para obtener una lista completa, vea [About Computer Enrollment](https://docs.ja
 
 1. En el panel de Pro Jamf, vaya a **Invitaciones de inscripción**.
 
-    ![Imagen de las opciones de configuración1](images/a347307458d6a9bbfa88df7dbe15398f.png)
+    ![Imagen de las opciones de configuración1.](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
 2. Seleccione **+ Nuevo**.
 
-    ![Un cierre de un logotipo Description generado automáticamente](images/b6c7ad56d50f497c38fc14c1e315456c.png)
+    ![Un cierre de un logotipo Description generado automáticamente.](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
 3. En **Especificar destinatarios para la lista** de > en Direcciones de correo electrónico, escriba las direcciones de correo electrónico de los destinatarios. 
 
-    ![Imagen de las opciones de configuración2](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
+    ![Imagen de las opciones de configuración2.](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
 
-    ![Imagen de configuración3](images/ae3597247b6bc7c5347cf56ab1e820c0.png)
+    ![Imagen de las opciones de configuración3.](images/ae3597247b6bc7c5347cf56ab1e820c0.png)
 
     Por ejemplo: janedoe@contoso.com
 
-    ![Imagen de las opciones de configuración4](images/4922c0fcdde4c7f73242b13bf5e35c19.png)
+    ![Imagen de configuración4.](images/4922c0fcdde4c7f73242b13bf5e35c19.png)
 
 4. Configure el mensaje de la invitación.
 
-    ![Imagen de configuración5](images/ce580aec080512d44a37ff8e82e5c2ac.png)
+    ![Imagen de configuración5.](images/ce580aec080512d44a37ff8e82e5c2ac.png)
 
-    ![Imagen de las opciones de configuración6](images/5856b765a6ce677caacb130ca36b1a62.png)
+    ![Imagen de las opciones de configuración6.](images/5856b765a6ce677caacb130ca36b1a62.png)
 
-    ![Imagen de configuración7](images/3ced5383a6be788486d89d407d042f28.png)
+    ![Imagen de configuración7.](images/3ced5383a6be788486d89d407d042f28.png)
 
-    ![Imagen de las opciones de configuración8](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
+    ![Imagen de configuración8.](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>Método enrollment 2: Prestage Enrollments
 
 1. En el panel de Pro Jamf, vaya a **Prestage enrollments**.
 
-    ![Imagen de configuración9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
+    ![Imagen de configuración9.](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
 2. Siga las instrucciones de [Computer PreStage Enrollments](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html).
 
@@ -90,24 +90,24 @@ Para obtener una lista completa, vea [About Computer Enrollment](https://docs.ja
 
 1. Seleccione **Continuar** e instale el certificado de ca desde una **ventana preferencias del** sistema.
 
-    ![Imagen de Jamf Pro enrollment1](images/jamfpro-ca-certificate.png)
+    ![Imagen de Jamf Pro inscripción1.](images/jamfpro-ca-certificate.png)
 
 2. Una vez instalado el certificado de entidad de certificación, vuelva a la ventana del explorador y seleccione **Continuar** e instale el perfil mdm. 
 
-    ![Imagen de Jamf Pro enrollment2](images/jamfpro-install-mdm-profile.png)
+    ![Imagen de Jamf Pro enrollment2.](images/jamfpro-install-mdm-profile.png)
 
 3. Selecciona **Permitir** descargas desde JAMF.
 
-    ![Imagen de Jamf Pro enrollment3](images/jamfpro-download.png)
+    ![Imagen de Jamf Pro enrollment3.](images/jamfpro-download.png)
 
 4. Selecciona **Continuar** para continuar con la instalación del perfil MDM. 
 
-    ![Imagen de Jamf Pro enrollment4](images/jamfpro-install-mdm.png)
+    ![Imagen de Jamf Pro enrollment4.](images/jamfpro-install-mdm.png)
 
 5. Selecciona **Continuar** para instalar el perfil mdm.
 
-    ![Imagen de Jamf Pro enrollment5](images/jamfpro-mdm-unverified.png)
+    ![Imagen de Jamf Pro enrollment5.](images/jamfpro-mdm-unverified.png)
 
 6. Seleccione **Continuar**  para completar la configuración. 
 
-    ![Imagen de Jamf Pro enrollment6](images/jamfpro-mdm-profile.png)
+    ![Imagen de Jamf Pro enrollment6.](images/jamfpro-mdm-profile.png)

@@ -8,12 +8,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 2a817f863102df09c457d759151bfa516f6b2da4
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: c8d0c712a0d2e9c575f55041b3182e3c77b2c687
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365132"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575233"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Introducción al Escritorio administrado de Microsoft
 
@@ -24,7 +24,7 @@ Ahora qu está listo para inscribirse, abra [Microsoft Endpoint Manager](https:/
 
 Una vez finalizada la inscripción, siga los siguientes pasos para configurar el servicio. Este es el orden recomendado para seguir, pero tiene cierta flexibilidad en la secuencia.
 
-![Secuencia sugerida de pasos para empezar que se enumeran en este artículo](../../media/mmd-getstarted-sequence.png) 
+![Secuencia sugerida de pasos para empezar que se enumeran en este artículo.](../../media/mmd-getstarted-sequence.png) 
 
 1. Acceder al [portal de administrador](access-admin-portal.md).
 1. [Agregar y verificar los contactos de administración en el portal de administrador](add-admin-contacts.md).

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e5222214d4a5f98b140bbfc1f094de4733ceebe88ce298b434de0ed01c057dc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ab81054cf2c2f4d6394730651a891c7d47b1794
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817488"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573504"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Técnicas en la escala de tiempo del dispositivo
 
@@ -43,7 +43,7 @@ Esta característica simplifica la experiencia de investigación al ayudar a los
 
 Para la vista previa pública, las técnicas están disponibles de forma predeterminada y se muestran junto con los eventos cuando se visualiza la escala de tiempo de un dispositivo. 
 
-![Técnicas en la captura de pantalla de la escala de tiempo del dispositivo](images/device-timeline-2.png)
+![Técnicas en la captura de pantalla de la escala de tiempo del dispositivo.](images/device-timeline-2.png)
 
 Las técnicas se resaltan en texto en negrita y aparecen con un icono azul a la izquierda. El nombre de la técnica y el identificador de CK&MITRE ATT correspondiente también aparecen como etiquetas en Información adicional. 
 
@@ -57,18 +57,18 @@ Seleccione la técnica *de ataque específica* para abrir la página relacionada
 
 Puede copiar los detalles de una entidad cuando vea un icono azul a la derecha. Por ejemplo, para copiar el SHA1 de un archivo relacionado, seleccione el icono de página azul.
 
-![Copiar detalles de entidad](images/techniques-side-pane-clickable.png)
+![Copiar detalles de entidad.](images/techniques-side-pane-clickable.png)
 
 Puede hacer lo mismo con las líneas de comandos.
 
-![Copiar línea de comandos](images/techniques-side-pane-command.png)
+![Copiar línea de comandos.](images/techniques-side-pane-command.png)
 
 
 ## <a name="investigate-related-events"></a>Investigar eventos relacionados
 
 Para usar [la búsqueda avanzada](advanced-hunting-overview.md) para buscar eventos relacionados con la técnica seleccionada, seleccione Buscar para eventos **relacionados.** Esto lleva a la página de búsqueda avanzada con una consulta para encontrar eventos relacionados con la técnica.
 
-![Buscar eventos relacionados](images/techniques-hunt-for-related-events.png)
+![Buscar eventos relacionados.](images/techniques-hunt-for-related-events.png)
 
 >[!NOTE]
 >Las consultas con el botón **Buscar** eventos relacionados desde un panel lateral Técnica muestran todos los eventos relacionados con la técnica identificada, pero no incluyen la técnica en sí en los resultados de la consulta.
@@ -83,7 +83,7 @@ Puede personalizar las columnas que se deben exponer. También puede filtrar los
 ### <a name="choose-columns-to-expose"></a>Elegir columnas para exponer
 Puede elegir qué columnas exponer en la escala de tiempo seleccionando el **botón Elegir** columnas.
 
-![Personalizar columnas](images/filter-customize-columns.png)
+![Personalizar columnas.](images/filter-customize-columns.png)
 
 Desde allí, puede seleccionar qué conjunto de información incluir.
 
@@ -91,11 +91,11 @@ Desde allí, puede seleccionar qué conjunto de información incluir.
 
 Para ver solo eventos o técnicas, selecciona **Filtros en** la escala de tiempo del dispositivo y elige el tipo de datos que prefieras ver.
 
-![Captura de pantalla de filtros](images/device-timeline-filters.png)
+![Filtra la captura de pantalla.](images/device-timeline-filters.png)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Ver y organizar la lista de dispositivos](machines-view-overview.md)
 - [Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión](device-timeline-event-flag.md) 
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en Advanced eDiscovery.
-ms.openlocfilehash: e5e899b3ee6268c0214dbcfe6b53566072fc75ed045e728a0f7845f25354e552
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 462442d2319c2c199d39795b77b67c6dcefdb758
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841348"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573240"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams casos grandes (versión preliminar)
 
@@ -69,7 +69,7 @@ Para crear un caso grande:
 
    Se **muestra la página desplegable Nuevo** caso de exhibición de documentos electrónicos. La **sección Formato de** caso proporciona la opción de crear un caso grande.
 
-   ![Opción de caso grande en la página Nuevo caso de exhibición de documentos electrónicos](..\media\AeDLargeCases1.png)
+   ![Opción de caso grande en la página Nuevo caso de exhibición de documentos electrónicos.](..\media\AeDLargeCases1.png)
 
 4. Después de asignar un nombre al caso, seleccione la **opción Caso grande** y, a continuación, haga clic en **Guardar** para crear el caso grande.
 
@@ -87,7 +87,7 @@ Para agregar custodios a un caso y conservar orígenes de datos de custodia:
 
 4. Expanda cada custodio para ver los orígenes de datos principales que se han asociado automáticamente al custodio y para seleccionar otras ubicaciones para asociar al custodio.
 
-   ![Orígenes de datos custodios](..\media\TeamsCustodialDataLocations1.png)
+   ![Orígenes de datos custodios.](..\media\TeamsCustodialDataLocations1.png)
 
 5. Siga estas directrices para agregar orígenes de datos de custodia Teams contenido. Haga **clic en** Editar para agregar una ubicación de datos.
 
@@ -156,11 +156,11 @@ Para crear una colección de Teams contenido:
 
    Para ayudar a garantizar la colección más completa de conversaciones de chat de Teams (incluidos  1:1, grupos, canales y chats privados) use la condición Tipo y seleccione la opción **Mensajes instantáneos.** También se recomienda incluir un intervalo de fechas o varias palabras clave para restringir el ámbito de la colección a los elementos relevantes para la investigación. Esta es una captura de pantalla de una consulta de ejemplo con las **opciones Tipo** **y** Fecha:
 
-   ![Consulta para recopilar Teams contenido](..\media\TeamsConditionsQueryType.png)
+   ![Consulta para recopilar Teams contenido.](..\media\TeamsConditionsQueryType.png)
 
 9. En la **página Guardar** borrador o asistente para recopilar, realice una de las siguientes acciones en función de si desea crear una colección de borradores o confirmar la colección en un conjunto de revisión.
 
-   ![Guardar colección borrador o confirmar colección](..\media\TeamsDraftCommitCollection.png)
+   ![Guardar colección borrador o confirmar colección.](..\media\TeamsDraftCommitCollection.png)
 
    1. **Guardar colección como borrador**. Elija esta opción para crear una colección borrador. Como se explicó anteriormente, un borrador de colección no agrega los resultados de la colección a un conjunto de revisión. Devuelve una estimación de los resultados de búsqueda que coinciden con la consulta de búsqueda de los orígenes de datos en el ámbito de la colección. Esto le ofrece la oportunidad de ver [estadísticas e informes de colecciones[(collection-statistics-reports.md)] y editar y volver a ejecutar la colección borrador. Cuando esté satisfecho con el resultado de una colección borrador, puede confirmarlo en un conjunto de revisión. Para obtener más información, vea [Create a draft collection](create-draft-collection.md).
 
@@ -198,7 +198,7 @@ En la tabla siguiente se describe cómo los diferentes tipos de contenido Teams 
 
 Use el control **Grupo** en la barra de comandos de un conjunto de revisión para ver Teams contenido agrupado por familia o conversación.
 
-![Control de grupo en la barra de comandos](..\media\TeamsGroupControl.png)
+![Control de grupo en la barra de comandos.](..\media\TeamsGroupControl.png)
 
 - Seleccione **Datos adjuntos de familia** de grupo para ver Teams contenido agrupado por familia. Cada archivo de transcripción se muestra en una línea de la lista de elementos del conjunto de revisión. Los datos adjuntos se anidan en el elemento.
 
@@ -215,11 +215,11 @@ Las capturas de pantalla siguientes muestran un ejemplo de conversación en el T
 
 ##### <a name="conversation-in-teams-client"></a>Conversación en Teams cliente
 
-![Conversación que se muestra en el archivo de transcripción del conjunto de revisión](..\media\TeamsClient1.png)
+![Conversación que se muestra en el archivo de transcripción del conjunto de revisión.](..\media\TeamsClient1.png)
 
 ##### <a name="conversation-in-transcript-file"></a>Conversación en archivo de transcripción
 
-![Misma conversación que se muestra en Teams cliente](..\media\TeamsTranscript1.png)
+![La misma conversación que se muestra Teams cliente.](..\media\TeamsTranscript1.png)
 
 ### <a name="transcript-conversation-threading"></a>Subprocesos de conversación de transcripción
 
@@ -289,7 +289,7 @@ Estos son algunos consejos y procedimientos recomendados para ver Teams contenid
 
 - Use el control **Personalizar columnas** de la barra de comandos para agregar y organizar columnas para optimizar la revisión de Teams contenido.
 
-  ![Usar la página desplegable Editar columna para agregar, quitar y organizar columnas](..\media\EditReviewSetColumns.png)
+  ![Use la página desplegable Editar columna para agregar, quitar y organizar columnas.](..\media\EditReviewSetColumns.png)
 
    Puede agregar y quitar columnas que sean útiles para Teams contenido. También puede secuenciar el orden de las columnas arrastrándolas y soltándolas en la **página desplegable Editar** columna. También puede ordenar las columnas para agrupar Teams contenido con valores similares para la columna en la que se ordena.
 

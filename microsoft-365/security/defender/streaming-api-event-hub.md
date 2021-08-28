@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b19b3c23716e7a9b1f78b82b3663271310603df8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: ecfc8281c642e7240832a7c057f37f9df4caad68
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508315"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573468"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Centro de eventos de Azure
 
@@ -69,7 +69,7 @@ Una vez creado el espacio de nombres de Event Hub, tendrá que:
 
    Para obtener el identificador **de** recurso del Centro de eventos, vaya a la página de espacio de nombres del Centro de eventos de Azure en la pestaña Propiedades de [Azure](https://ms.portal.azure.com/)> copiar el texto en  >   **Id. de recurso:**
 
-   ![Imagen del id. de recurso del centro de eventos1](../defender-endpoint/images/event-hub-resource-id.png)
+   ![Imagen del recurso del centro de eventos Id1.](../defender-endpoint/images/event-hub-resource-id.png)
 
 8. Elija los eventos que desea transmitir y haga clic en **Guardar**.
 
@@ -113,7 +113,7 @@ Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:
 
 - Este es un ejemplo para el evento Device Info:
 
-  ![Imagen del id. de recurso del centro de eventos2](../defender-endpoint/images/machine-info-datatype-example.png)
+  ![Imagen del recurso del centro de eventos Id2.](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

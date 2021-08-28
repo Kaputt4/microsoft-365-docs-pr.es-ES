@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Use los informes DLP de Office 365 para ver el número de coincidencias de directivas DLP, invalidaciones o falsos positivos y ver si van hacia arriba o hacia abajo con el tiempo.
-ms.openlocfilehash: 936c8aaba7d50cbb775c98babe751b357738e617d55ea8a8517a86c4f7cdb188
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 12ee109a348657aa8ca04c55e496047a82772e22
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795500"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574068"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 
@@ -60,19 +60,19 @@ Todos los informes de DLP pueden mostrar los datos del período de tiempo de cua
   
 Puede encontrar estos informes en el Panel de informes del &amp; Centro de seguridad y \>  \> **cumplimiento.**
   
-![Informe de coincidencias de directivas DLP](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![Informe de coincidencias de directivas DLP.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Ver la justificación enviada por un usuario para una invalidación
 
 Si la directiva DLP permite a los usuarios invalidarla, puede usar el informe de falsos positivos e invalidaciones para ver el texto enviado por los usuarios en la sugerencia de directiva.
   
-![Campo De justificación en los detalles del informe de falso positivo e invalidación de DLP](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![Campo De justificación en los detalles del informe dlp falso positivo e invalidación.](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
 ## <a name="take-action-on-insights-and-recommendations"></a>Tomar medidas sobre información y recomendaciones
 
 Los informes pueden mostrar información y recomendaciones en las que puede hacer clic en el icono rojo de advertencia para ver detalles sobre posibles problemas y realizar posibles acciones correctivas.
   
-![Hacer clic en un icono de información para ver los detalles y las acciones que se deben realizar](../media/51782036-7299-4960-8175-75c2b1637159.png)
+![Haga clic en un icono de información para ver los detalles y las acciones que debe realizar.](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## <a name="permissions-for-dlp-reports"></a>Permisos para informes DLP
 

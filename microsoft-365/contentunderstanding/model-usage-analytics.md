@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información sobre cómo buscar y usar el análisis de uso para un modelo de comprensión de documentos.
-ms.openlocfilehash: 9ea408485a7cf1ff935192775eab2325e0e268aad927a72dedf237f0e81a3e0f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d39b2417a90716200d33831bfef7e9cb2ff1d523
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871164"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574044"
 ---
 # <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Documentación sobre el análisis de modelos en Microsoft SharePoint Syntex.
 
@@ -35,7 +35,7 @@ Su centro de contenido de SharePoint Syntex proporciona el análisis de uso de m
 - Clasificación por biblioteca
 - Uso del modelo 
 
- ![Análisis del modelo](../media/content-understanding/model-analytics.png) </br>
+ ![Análisis del modelo.](../media/content-understanding/model-analytics.png) </br>
 
 ### <a name="roll-up-of-model-usage-data-in-the-default-content-center"></a>Resumen de datos de uso del modelo en el centro de contenido predeterminado
 
@@ -49,7 +49,7 @@ En lo que respecta a los análisis de uso del modelo, tenga en cuenta que:
 
 ## <a name="classification-by-model"></a>Clasificación por modelo
 
-   ![Porcentaje de modelo total](../media/content-understanding/total-model-percentage.png) </br>
+   ![Porcentaje total del modelo.](../media/content-understanding/total-model-percentage.png) </br>
 
 En el gráfico circular **Clasificación por modelo**, se muestran los modelos que han clasificado la mayoría de los archivos. Muestra cada modelo publicado como porcentaje del total de los archivos procesados por todos los modelos publicados en el centro de contenido.
 
@@ -57,7 +57,7 @@ Asimismo, cada modelo presenta una **Tasa de exhaustividad**. Es decir, el porce
 
 ## <a name="classification-by-library"></a>Clasificación por biblioteca
 
-   ![Archivos procesados](../media/content-understanding/files-processed-over-time.png) </br>
+   ![Archivos procesados.](../media/content-understanding/files-processed-over-time.png) </br>
 
 El gráfico de barras **Clasificación por biblioteca** le ayuda a determinar la eficacia de la comprensión de contenidos en su organización.  Le muestra no solo el número de archivos que se procesó a lo largo del tiempo para cada modelo, sino también las bibliotecas de documentos a las que se aplicó el modelo si selecciona una columna del gráfico.
 

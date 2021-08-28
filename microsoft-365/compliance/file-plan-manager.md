@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 81400dd6cad1caa83bb5dcfa3fc530f6db38796bd0ed4e28d908c3041b87a902
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c270e3b03c8c8373cc3fcb204f5f5a654eeb001
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820123"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573276"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Use el plan de archivos para administrar las etiquetas de retención
 
@@ -54,7 +54,7 @@ En el Centro de cumplimiento de Microsoft 365, vaya a **Soluciones** > **Adminis
 
 Si **Administración de registros** no se muestra en el panel de navegación, desplácese hacia abajo y seleccione **Mostrar todo**.
 
-![Página del plan de archivos](../media/compliance-file-plan.png)
+![Página del plan de archivos.](../media/compliance-file-plan.png)
 
 ## <a name="navigating-your-file-plan"></a>Navegar por el plan de archivos
 
@@ -107,11 +107,11 @@ Para empezar, hay algunos valores predeterminados para los siguientes descriptor
 
 Ejemplo de descriptores del plan de archivos al crear o editar una etiqueta de retención:
 
-![Descriptores del plan de archivos al crear o editar una etiqueta de retención](../media/file-plan-descriptors.png)
+![Descriptores del plan de archivos al crear o editar una etiqueta de retención.](../media/file-plan-descriptors.png)
 
 Al seleccionar **Elegir** para cada uno de estos descriptores opcionales, puede seleccionar uno de los valores predefinidos o crear uno propio y, a continuación, seleccionarlo. Por ejemplo: 
 
-![Crear nuevo descriptor de plan de archivos para aprovisionar o citar](../media/file-plan-descriptors-create.png)
+![Crear nuevo descriptor de plan de archivos para aprovisionar o citar.](../media/file-plan-descriptors-create.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Exportar todas las etiquetas de retención para analizar o habilitar las revisiones sin conexión
 
@@ -119,11 +119,11 @@ Desde su administrador del plan de archivos, puede exportar los detalles de toda
 
 Para exportar todas las etiquetas de retención: en la página **Plan de archivos**, haga clic en **Exportar**:
 
-![Opción para exportar el plan de archivos](../media/compliance-file-plan-export-labels.png)
+![Opción para exportar el plan de archivos.](../media/compliance-file-plan-export-labels.png)
 
 Se abrirá un archivo *.csv que contiene todas las etiquetas de retención existentes. Por ejemplo:
 
-![Archivo CSV que muestra todas las etiquetas de retención](../media/file-plan-csv-file.png)
+![Archivo CSV que muestra todas las etiquetas de retención.](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Importar las etiquetas de retención al plan de archivos
 
@@ -131,13 +131,13 @@ En el plan de archivos, puede importar en masa nuevas etiquetas de retención me
 
 1. En la página **Plan de archivos**, haga clic en **Importar** para usar la página **Rellenar e importar su plan de archivos**:
 
-   ![Opción para importar el plan de archivos](../media/compliance-file-plan-import-labels.png)
+   ![Opción para importar el plan de archivos.](../media/compliance-file-plan-import-labels.png)
 
-   ![Opción para descargar una plantilla de plan de archivos en blanco](../media/file-plan-blank-template-option.png)
+   ![Opción para descargar una plantilla de plan de archivos en blanco.](../media/file-plan-blank-template-option.png)
 
-2. Descargue una plantilla en blanco como se indica a continuación:
+2. Descargue una plantilla en blanco según las instrucciones:
 
-   ![La plantilla en blanco del plan de archivos se abre en Excel](../media/file-plan-blank-template.png)
+   ![Se abre una plantilla del plan de archivos en blanco en Excel.](../media/file-plan-blank-template.png)
 
 3. Rellene la plantilla con la siguiente información que describe las propiedades y los valores válidos para cada propiedad. Para la importación, algunos valores tienen un límite de longitud:
     
@@ -170,13 +170,13 @@ En el plan de archivos, puede importar en masa nuevas etiquetas de retención me
 
    Este es un ejemplo de la plantilla que contiene información sobre las etiquetas de retención.
 
-   ![Plantilla del plan de archivos con información ya completada](../media/file-plan-filled-out-template.png)
+   ![Plantilla del plan de archivos con información rellenada.](../media/file-plan-filled-out-template.png)
 
 4. En el paso 3, en la página **Rellenar e importar el plan de archivos**, haga clic en **Buscar archivos** para cargar la plantilla completada y seleccione **Siguiente**.
 
    El plan de archivos carga el archivo y valida las entradas, mostrando las estadísticas de importación.
 
-   ![Estadísticas de importación del plan de archivos](../media/file-plan-import-statistics.png)
+   ![Estadísticas de importación del plan de archivos.](../media/file-plan-import-statistics.png)
 
 5. En función de los resultados de la validación:
     

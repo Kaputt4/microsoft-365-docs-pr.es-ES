@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: 8a223a49e0fe648dee3bb8c47449538b8f0bfa5614066f4bfecc76e622e1ae65
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b949b712721acc7921d3c6ac25a07c14338d7609
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895947"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567945"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -106,18 +106,18 @@ Una revisión para eliminación puede incluir contenido en buzones de Exchange, 
 
 Los administradores pueden ver una descripción general de todas las eliminaciones pendientes en la pestaña **Información general**. Los revisores solo ven sus elementos pendientes de eliminación. Por ejemplo:
 
-![Disposiciones pendientes en la información general de Administración de registros](../media/dispositions-overview.png)
+![Disposiciones pendientes en la información general de Administración de registros.](../media/dispositions-overview.png)
 
 Al seleccionar **Ver todas las eliminaciones pendientes**, se le dirigirá a la página **Eliminación**. Por ejemplo:
 
-![Página Eliminaciones en el Centro de cumplimiento de Microsoft 365](../media/disposition-tab.png)
+![Página Eliminaciones en el Centro de cumplimiento de Microsoft 365.](../media/disposition-tab.png)
 
 
 ### <a name="workflow-for-a-disposition-review"></a>Flujo de trabajo para una revisión para eliminación
 
 El siguiente diagrama muestra el flujo de trabajo básico de una revisión para eliminación cuando se publica una etiqueta de retención y un usuario la aplica de forma manual. Como alternativa, puede aplicar automáticamente la etiqueta de retención configurada para una revisión para eliminación al contenido.
   
-![Gráfico que muestra el flujo de trabajo de eliminación](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Gráfico que muestra el flujo de trabajo de eliminación.](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
 
 ### <a name="how-to-configure-a-retention-label-for-disposition-review"></a>Cómo configurar una etiqueta de retención para la revisión para eliminación
 
@@ -125,11 +125,11 @@ Desencadenar una revisión para eliminación al final del período de retención
 
 En la página **Definir la configuración de retención** de una etiqueta de retención:
 
-![Configuración de retención para una etiqueta](../media/disposition-review-option.png)
+![Configuración de retención para una etiqueta.](../media/disposition-review-option.png)
  
 Después de seleccionar la opción **Desencadenar una revisión para eliminación**, en la siguiente página del asistente, especifique cuántas fases consecutivas de eliminación quiere y los revisores de eliminación para cada fase:
 
-![Especificar revisores de eliminación](../media/disposition-reviewers.png) 
+![Especificar revisores de eliminación.](../media/disposition-reviewers.png) 
 
 Seleccione **Agregar una fase** y asigne un nombre a la fase para fines de identificación. Después, especifique los revisores de esa fase.
 
@@ -144,7 +144,7 @@ Dentro de cada fase individual de eliminación, cualquiera de los usuarios que e
 
 Durante la fase de configuración, para cada fase especificada, puede cambiar el nombre, cambiar el orden o quitarla seleccionando la opción de Acciones de fase (**...**): 
 
-![Acciones de fase para revisiones para eliminación](../media/stage-actions-disposition-review.png)
+![Acciones de fase para revisiones para eliminación.](../media/stage-actions-disposition-review.png)
 
 Sin embargo, no puede reordenar o quitar una fase después de haber creado la etiqueta de retención.
 
@@ -154,13 +154,13 @@ Después de especificar a los revisores, recuerde concederles el permiso de rol 
 
 Ejemplo de notificación de correo electrónico predeterminada que se envía a un revisor:
 
-![Ejemplo de notificación por correo electrónico con texto predeterminado cuando un elemento está listo para la revisión para eliminación](../media/disposition-review-email.png)
+![Ejemplo de notificación por correo electrónico con texto predeterminado cuando un elemento está listo para la revisión para eliminación.](../media/disposition-review-email.png)
 
 También en la vista previa, puede personalizar los mensajes de correo electrónico que se envían a los revisores para eliminación para la notificación inicial y los avisos.
 
 En cualquiera de las páginas de Eliminación del Centro de cumplimiento, seleccione **Configuración de administración de registros**:  
 
-![Configuración de administración de registros](../media/record-management-settings.png)
+![Configuración de administración de registros.](../media/record-management-settings.png)
 
 Después, seleccione la pestaña **Notificaciones de eliminación** y especifique si desea usar solo el mensaje de correo electrónico predeterminado o agregar su propio texto al mensaje predeterminado. El texto personalizado se agrega a las instrucciones de correo electrónico después de la información sobre la etiqueta de retención y antes de las instrucciones de los pasos siguientes.
 
@@ -178,11 +178,11 @@ Seleccione **Guardar** para guardar los cambios.
 
 Cuando un revisor recibe una notificación por correo electrónico de que el contenido está listo para revisar, puede hacer clic en un vínculo del correo electrónico que le lleve directamente a la página **Eliminación** de **Administración de registros** en el Centro de cumplimiento de Microsoft 365. Los revisores pueden ver cuántos elementos para cada etiqueta de retención están pendientes de eliminación con el **Tipo** que muestra **Eliminación pendiente**. Después, seleccionan una etiqueta de retención y **Abrir en ventana nueva** para ver todo el contenido con esa etiqueta:
 
-![Abrir en una nueva ventana para revisión para eliminación](../media/open-in-new-window.png)
+![Abrir en una nueva ventana para revisión para eliminación.](../media/open-in-new-window.png)
 
 En la página **Eliminaciones pendientes**, pueden ven todas las eliminacións pendientes para esa etiqueta. Cuando se seleccionan uno o más elementos, pueden usar el panel de vista previa en miniatura y las pestañas de **Origen**, **Detalles** e **Historial** para inspeccionar el contenido antes de realizar alguna acción:
 
-![Opciones de eliminación](../media/retention-disposition-options.png)
+![Opciones de eliminación.](../media/retention-disposition-options.png)
 
 Si utiliza la barra de desplazamiento horizontal o cierra el panel de revisión en miniatura, verá más columnas que incluyen la fecha de expiración y el nombre de la fase de revisión para eliminación.
 
@@ -214,7 +214,7 @@ Use la pestaña **Eliminación** en la página **Administración de registros** 
 
 Estos elementos muestran **Registros eliminados** en la columna **Tipo**. Por ejemplo:
 
-![Elementos que se eliminaron sin una revisión para eliminación](../media/records-disposed2.png)
+![Elementos que se eliminaron sin una revisión para eliminación.](../media/records-disposed2.png)
 
 > [!NOTE]
 > Esta funcionalidad usa la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría se [habilite y se pueda buscar](turn-audit-log-search-on-or-off.md) para que se puedan capturar los eventos correspondientes.

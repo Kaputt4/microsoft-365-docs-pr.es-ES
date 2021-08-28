@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo crear y administrar Advanced eDiscovery casos. El primer paso es crear un caso y empezar a usar Advanced eDiscovery características y funcionalidades.
-ms.openlocfilehash: 31b19f48ba6deabe3d4150544ce16c3669d18efe1607652d8224a2ebb1f81bb2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 69d2f22a3792f2217ea8ef58ae9771dd4a10f32d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886470"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573252"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Crear y administrar un Advanced eDiscovery caso
 
@@ -64,7 +64,7 @@ Complete los pasos siguientes para crear un caso y agregar miembros. El usuario 
 
 Para empezar a usar Advanced eDiscovery, este es un flujo de trabajo básico que se alinea con los procedimientos comunes [de exhibición de documentos electrónicos](advanced-ediscovery-edrm.md). En cada uno de estos pasos, también destacaremos algunas funciones de Advanced eDiscovery que puede explorar.
 
-![Advanced eDiscovery de trabajo](../media/AeDWorkflow.png)
+![Advanced eDiscovery de trabajo.](../media/AeDWorkflow.png)
 
 1. **[Agregue custodios](add-custodians-to-case.md) y orígenes de datos [no custodiados](non-custodial-data-sources.md) al caso**. El primer paso después de crear un caso es agregar custodios. Un *custodio* es una persona que tiene el control administrativo de un documento o archivo electrónico que puede ser relevante para el caso. Además, puede agregar orígenes de datos que no están asociados con un usuario específico, pero que pueden ser relevantes para el caso.
 
@@ -110,7 +110,7 @@ Para empezar a usar Advanced eDiscovery, este es un flujo de trabajo básico que
 
 Este es un diagrama de arquitectura que muestra el flujo de trabajo completo de Advanced eDiscovery en un entorno de una sola ubicación geográfica y en un entorno multige geográfico, y el flujo de datos de un extremo a otro alineado con el modelo de referencia de detección electrónica [.](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
 
-[![Póster del modelo: Advanced eDiscovery arquitectura en Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![Póster del modelo: Advanced eDiscovery arquitectura en Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Ver como una imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 

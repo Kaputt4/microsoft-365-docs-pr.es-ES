@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 367b37493b22074ca4d8006c8d8f8067c2b3d29b
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: 41dda8573b66fa217fb92b0ee179de2cad9bc861
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450121"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567477"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
@@ -73,14 +73,14 @@ Microsoft 365 dispone de un gran número de definiciones de tipos de informació
 
 En la tarjeta del tipo de información confidencial se muestran los tipos de información confidencial principales que se han encontrado y etiquetado en la organización.
 
-![tipos principales de información confidencial](../media/data-classification-sens-info-types-card.png)
+![tipos principales de información confidencial.](../media/data-classification-sens-info-types-card.png)
 
 Para averiguar cuántos elementos hay en una categoría de clasificación determinada, mueva el puntero sobre la barra de la categoría.
 
-![detalle de los tipos principales de información confidencial](../media/data-classification-sens-info-types-hover.png)
+![detalle de los tipos principales de información confidencial.](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
-> Si la tarjeta muestra el mensaje "No se encontraron datos con información confidencial" significa que no hay ningún elemento de la organización que se haya clasificado como un tipo de información confidencial o que no se ha rastreado ningún elemento. Para comenzar a usar las etiquetas, vea:
+> Si la tarjeta muestra el mensaje "No se encontraron datos con información confidencial" significa que no hay ningún elemento de la organización que se haya clasificado como un tipo de información confidencial o que no se ha rastreado ningún elemento. Para comenzar a usar las etiquetas, consulte:
 >- [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md)
 >- [Introducción a las directivas de retención y las etiquetas de retención](get-started-with-retention.md)
 >- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
@@ -98,7 +98,7 @@ Las etiquetas de confidencialidad deben habilitarse para los archivos de SharePo
 
 La tarjeta de la etiqueta de confidencialidad muestra el número de elementos (correo electrónico o documento) por nivel de confidencialidad.
 
-![captura de pantalla de marcador de posición del desglose del contenido según la clasificación de las etiquetas de confidencialidad](../media/data-classification-top-sensitivity-labels-applied.png)
+![captura de pantalla de marcador de posición del desglose del contenido según la clasificación de las etiquetas de confidencialidad.](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
 > Si no ha creado ni publicado ninguna etiqueta de confidencialidad o si el contenido no tiene ninguna etiqueta de confidencialidad aplicada, esta tarjeta mostrará el mensaje "No se ha detectado ninguna etiqueta de confidencialidad". Para empezar a usar las etiquetas de confidencialidad, consulte:
@@ -110,7 +110,7 @@ Las etiquetas de retención se usan para administrar la retención y la eliminac
 
 La tarjeta de etiquetas principales de retención aplicadas muestra el número de elementos que tienen una etiqueta de retención determinada.
 
-![captura de pantalla de marcador de posición de etiquetas principales de retención aplicadas](../media/data-classification-top-retention-labels-applied.png)
+![captura de pantalla de marcador de posición de etiquetas principales de retención aplicadas.](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
 > Si esta tarjeta muestra el mensaje "No se detectó ninguna etiqueta de retención", significa que no se ha creado ni publicado ninguna etiqueta de retención o que no se han aplicado etiquetas de retención a ningún contenido. Para empezar a usar las etiquetas de retención, vea:

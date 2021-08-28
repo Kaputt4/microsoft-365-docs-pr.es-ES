@@ -19,12 +19,12 @@ search.appverid:
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1711ce8154afb976ce89ac7760f5bec9afca7292
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9c40078626948e51c0e43f06dd567967f3cff516
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532576"
+ms.locfileid: "58565653"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -33,13 +33,13 @@ ms.locfileid: "58532576"
 
 Existen muchas herramientas que pueden usarse para supervisar el uso y transporte de datos personales. En este tema se describen tres herramientas que funcionan bien.
 
-![Herramientas para supervisar el uso y transporte de datos personales](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+![Herramientas para supervisar el uso y transporte de datos personales.](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 En la ilustración:
 
 - Comience con los informes de prevención de pérdida de datos de Microsoft 365 para supervisar datos personales en SharePoint Online, OneDrive para la Empresa y correo electrónico en tránsito. Estos informes proporcionan mayor nivel de detalle de supervisión de datos personales. No obstante, estos informes no incluyen todos los servicios de Office 365.
 
-- Después, use directivas de alerta y el registro de auditoría para supervisar la actividad de los servicios. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría funciona en todos los servicios: Sway, Power BI, eDiscovery, Dynamics 365, Power Automate, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo electrónico en tránsito, y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
+- Después, use directivas de alerta y el registro de auditoría para supervisar la actividad de los servicios. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría funciona en todos los servicios: Sway, Power BI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo electrónico en tránsito, y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
 
 - Por último, use Microsoft Cloud App Security para supervisar los archivos con datos confidenciales de otros proveedores SaaS. Próximamente, se podrán usar los tipos de información confidencial y las etiquetas unificadas en Azure Information Protection y Office con Cloud App Security. Puede configurar directivas que se apliquen a todas las aplicaciones específicas (como Box) o a aplicaciones SaaS. Cloud App Security no busca archivos en Exchange Online, incluidos los archivos adjuntos de correo electrónico.
 
@@ -62,7 +62,7 @@ Los informes DLP están en el Centro de cumplimiento de Microsoft 365. Vaya a **
 
 Para obtener más información, consulte [Ver los informes de prevención de pérdida de datos](../../compliance/view-the-dlp-reports.md).
 
-![Informe que muestra coincidencias de directivas DLP](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+![Informe que muestra coincidencias de directivas DLP.](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## <a name="audit-log-and-alert-policies"></a>Directivas de alerta y registro de auditoría
 
@@ -98,7 +98,7 @@ Para entender mejor su entorno de nube, la característica de investigación de 
 
 Para obtener ejemplos, la siguiente ilustración muestra dos directivas Cloud App Security que pueden ayudarle con el RGPD.
 
-![Directivas de Cloud App Security de ejemplo](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+![Directivas de Cloud App Security de ejemplo.](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 Las primera directiva envía una alerta cuando se comparten archivos con un atributo DCP predefinido o una expresión personalizada que elija fuera de la organización desde las aplicaciones SaaS que elija.
 
@@ -116,7 +116,7 @@ Si aún no empezó a usar Cloud App Security, inícielo. Para obtener acceso a C
 > [!NOTE]
 > No olvide habilitar "Analizar automáticamente archivos de etiquetas de clasificación de Azure Information Protection" (en la configuración General) al comenzar a usar Cloud App Security o antes de asignar etiquetas. Tras la configuración, Cloud App Security no vuelve a examinar los archivos existentes hasta que se modifican.
 
-![Panel en el que se muestra información de alertas](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+![Panel en el que se muestra información de alertas.](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Más información:
 

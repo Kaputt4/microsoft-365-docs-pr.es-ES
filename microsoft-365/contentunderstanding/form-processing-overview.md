@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Más información sobre el procesamiento de formularios en Microsoft SharePoint Syntex
-ms.openlocfilehash: 6914cf4a8427f505bf39e2b157beb0dbfee0336d
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 7a411a4150f09d62ae539ca35dee05df201e707c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399724"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561175"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Resumen del procesamiento de formularios en Microsoft SharePoint Syntex
 
- ![Generador de IA](../media/content-understanding/ai-builder.png)</br>
+ ![Generador de IA.](../media/content-understanding/ai-builder.png)</br>
 
 Microsoft SharePoint Syntex usa el procesamiento de formularios del [generador de IA](/ai-builder/overview) de Microsoft PowerApps para crear modelos en las bibliotecas de documentos de SharePoint.
 
@@ -35,7 +35,7 @@ La mayoría de las organizaciones suelen recibir facturas en grandes cantidades 
 
 Por ejemplo, puede crear un modelo de procesamiento de formularios que identifique todos los documentos de pedido de compra que se hayan cargado en la biblioteca de documentos. A partir de cada pedido de compra, puede extraer y mostrar datos específicos que sean importantes para usted, como el *Número de pedido de compra*, la *Fecha* o el *Coste total*.
 
-![Vista de la biblioteca de documentos](../media/content-understanding/doc-lib-done.png)</br>  
+![Vista de la biblioteca de documentos.](../media/content-understanding/doc-lib-done.png)</br>  
 
 Use archivos de ejemplo para entrenar el modelo y definir la información que se extrae del formulario. El diseño del documento viene se aprende al entrenar el modelo. Solo necesita cinco documentos de formulario para empezar. El generador de IA analizará los archivos de ejemplo para pares de clave y valor, y también puede identificar manualmente los que no se hayan detectado.  El generador de IA le permite probar la precisión de su modelo en los archivos de ejemplo.
 

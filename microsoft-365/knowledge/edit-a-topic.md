@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 localization_priority: Normal
 description: Obtenga información sobre cómo editar un tema existente en Temas Microsoft Viva.
-ms.openlocfilehash: 748b626dcdf6d118794872d5865a06678293d90da95d7e74057f019df749a1c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4fb3089d0ce701477542fec7710db5de17638469
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840411"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573612"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Editar un tema existente en Temas Microsoft Viva 
 
@@ -34,7 +34,7 @@ En Temas de Viva, puede editar un tema existente. Es posible que deba hacerlo si
 > [!Note] 
 > Aunque la información de un tema recopilado por AI está recortada en [seguridad,](topic-experiences-security-trimming.md)la descripción del tema y la información de personas que agrega manualmente al editar un tema existente son visibles para todos los usuarios que tienen permisos para ver temas. 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Para editar un tema existente, debe:
 - Tener una licencia de Temas Microsoft Viva.
@@ -103,7 +103,7 @@ Los administradores de conocimientos también pueden editar temas directamente d
 
 8. La **sección Sitios sugeridos** muestra los sitios que AI sugiere que se asocie al tema. 
 
-   ![Captura de pantalla de la sección Sitios sugeridos](../media/knowledge-management/suggested-sites-section.png)  
+   ![Captura de pantalla de la sección Sitios sugeridos.](../media/knowledge-management/suggested-sites-section.png)  
 
     Puede cambiar un sitio sugerido a un sitio anclado seleccionando el icono anclado.
 

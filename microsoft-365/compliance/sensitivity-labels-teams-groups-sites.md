@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 8c78cf0f8ff49d2b81533e064a16089d8fe75d15
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: edd6aea4aade2378a195aa471ba0aa329afb7582
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400408"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569038"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -50,11 +50,11 @@ Sin embargo, el contenido de estos contenedores no hereda las etiquetas para la 
 
 Antes de habilitar etiquetas de confidencialidad para contenedores y establecerlas para la nueva configuración, los usuarios pueden ver y aplicar etiquetas de confidencialidad en sus aplicaciones. Por ejemplo, en Word:
 
-![Una etiqueta de sensibilidad que se muestra en la aplicación de escritorio de Word](../media/sensitivity-label-word.png)
+![Una etiqueta de sensibilidad que se muestra en la aplicación de escritorio de Word.](../media/sensitivity-label-word.png)
 
 Después de habilitar y configurar las etiquetas de confidencialidad para los contenedores, los usuarios también pueden ver y aplicar etiquetas de confidencialidad a los sitios de grupo de Microsoft, los grupos de Microsoft 365 y los sitios de SharePoint. Por ejemplo, cuando crea un nuevo sitio de grupo desde SharePoint:
 
-![Una etiqueta de sensibilidad al crear un sitio de equipo desde SharePoint](../media/sensitivity-labels-new-team-site.png)
+![Una etiqueta de sensibilidad al crear un sitio de equipo desde SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Cómo habilitar etiquetas de confidencialidad para contenedores y sincronizarlas
 
@@ -78,7 +78,7 @@ Después de habilitar las etiquetas de confidencialidad para contenedores, como 
 
 1. Siga las instrucciones generales para [crear o editar una etiqueta de confidencialidad](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) y asegúrese de que **Archivos y sitios** está seleccionada para el ámbito de la etiqueta: 
     
-    ![Opciones de ámbito de etiquetas de confidencialidad para archivos y mensajes de correo electrónico](../media/groupsandsites-scope-options-sensitivity-label.png)
+    ![Opciones de ámbito de etiquetas de confidencialidad para archivos y mensajes de correo electrónico.](../media/groupsandsites-scope-options-sensitivity-label.png)
     
     Cuando solo este ámbito para la etiqueta esté seleccionado, la etiqueta no se mostrará en las aplicaciones de Office que admiten etiquetas de confidencialidad y no se podrá aplicar a archivos y mensajes de correo electrónico. Tener esta separación de etiquetas puede ser útil tanto para los usuarios como para los administradores, pero también puede aumentar la complejidad de la implementación de la etiqueta.
     
@@ -241,11 +241,11 @@ Los usuarios pueden seleccionar etiquetas de confidencialidad al crear nuevos eq
 
 [Más información sobre las etiquetas de confidencialidad para Teams](/microsoftteams/sensitivity-labels)
 
-![La configuración de privacidad al crear un nuevo equipo](../media/privacy-setting-new-team.png)
+![La configuración de privacidad al crear un nuevo equipo.](../media/privacy-setting-new-team.png)
 
 Después de crear el equipo, se muestra la etiqueta de confidencialidad en la esquina superior derecha de todos los canales.
 
-![La etiqueta de confidencialidad se muestra en el equipo](../media/privacy-setting-teams.png)
+![La etiqueta de confidencialidad se muestra en el equipo.](../media/privacy-setting-teams.png)
 
 El servicio aplica automáticamente la misma etiqueta de confidencialidad al grupo de Microsoft 365 y al sitio de grupo de SharePoint conectado.
 
@@ -253,19 +253,19 @@ El servicio aplica automáticamente la misma etiqueta de confidencialidad al gru
 
 En Outlook en la Web, al crear un grupo, puede seleccionar o cambiar la opción **confidencialidad** para las etiquetas publicadas:
 
-![Crear un grupo y seleccionar una opción en Confidencialidad](../media/sensitivity-label-new-group.png)
+![Crear un grupo y seleccionar una opción en Confidencialidad.](../media/sensitivity-label-new-group.png)
 
 ### <a name="apply-a-sensitivity-label-to-a-new-site"></a>Aplicar una etiqueta de confidencialidad a un nuevo sitio
 
 Los administradores y los usuarios finales pueden seleccionar las etiquetas de confidencialidad cuando [crean sitios de grupo y de comunicación modernos](/sharepoint/create-site-collection) y expandir la **configuración avanzada**:
 
-![Crear un sitio y seleccionar una opción en Confidencialidad](../media/sensitivity-label-new-communication-site.png)
+![Crear un sitio y seleccionar una opción en Confidencialidad.](../media/sensitivity-label-new-communication-site.png)
 
 En el cuadro desplegable se mostrarán los nombres de etiqueta de la selección, y en el icono de ayuda se mostrarán todos los nombres de etiqueta con la información sobre herramientas, que puede ayudar a los usuarios a determinar la etiqueta correcta que debe aplicar.
 
 Cuando los usuarios exploren el sitio, podrán ver el nombre de la etiqueta y las directivas aplicadas. Por ejemplo, este sitio se ha etiquetado como **confidencial** y la configuración de privacidad se ha establecido en **privada**:
 
-![Un sitio en el que se ha aplicado una etiqueta de confidencialidad](../media/sensitivity-label-site.png)
+![Un sitio en el que se ha aplicado una etiqueta de confidencialidad.](../media/sensitivity-label-site.png)
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>Usar PowerShell para aplicar una etiqueta de confidencialidad a varios sitios
 
@@ -305,7 +305,7 @@ Esta serie de comandos le permite etiquetar varios sitios en el espacio empresar
 
 Para ver, ordenar y buscar las etiquetas de confidencialidad aplicadas, use la página **Sitios activos** en el nuevo Centro de administración de SharePoint. Es posible que primero tenga que agregar la columna **confidencialidad**:
 
-![La columna Confidencialidad en la página Sitios activos](../media/manage-site-sensitivity-labels.png)
+![La columna Confidencialidad en la página Sitios activos.](../media/manage-site-sensitivity-labels.png)
 
 Para obtener más información sobre la administración de sitios desde la página Sitios activos, incluido cómo agregar una columna, vea [Administrar sitios en el nuevo centro de administración de SharePoint](/sharepoint/manage-sites-in-new-admin-center).
 

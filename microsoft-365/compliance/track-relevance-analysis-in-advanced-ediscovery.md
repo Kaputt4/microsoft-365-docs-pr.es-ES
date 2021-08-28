@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo ver e interpretar el estado de aprendizaje de relevancia y los resultados de los problemas de casos en Advanced eDiscovery.
-ms.openlocfilehash: f0c0ab94b328a715739c7c8aec32ac041b6dc97f6fd998865a5b2e282bff42eb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac575ebf073afa8eb4ba13e63202f8b634c52f60
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801739"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573204"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery"></a>Realizar un seguimiento del análisis de relevancia en Advanced eDiscovery
   
@@ -42,7 +42,7 @@ En Advanced eDiscovery, la pestaña Pista de relevancia muestra la validez calcu
   
     En el ejemplo, se muestra una evaluación completada correctamente para un problema, indicada por el indicador de progreso de color completado y la marca de verificación. El etiquetado está en curso, pero el caso aún se considera inestable (el estado de estabilidad también se muestra en una sugerencia de herramienta). El siguiente paso recomendado es "Training". 
   
-    ![Formación del seguimiento de relevancia paso 1](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
+    ![Paso de aprendizaje de seguimiento de relevancia 1.](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
     La vista expandida muestra información y opciones adicionales. El margen de error actual mostrado es el margen de error de la recuperación en el estado actual de evaluación, dados los archivos de evaluación existentes (ya etiquetados).
   
@@ -53,7 +53,7 @@ En Advanced eDiscovery, la pestaña Pista de relevancia muestra la validez calcu
   
     En **Pista de** \> **relevancia,** el indicador de progreso de aprendizaje y la sugerencia de herramienta indican el número estimado de muestras adicionales necesarias para alcanzar la estabilidad. Esta estimación proporciona una guía para la formación adicional necesaria.
   
-    ![Formación del seguimiento de relevancia](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
+    ![Curso de seguimiento de relevancia.](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
 2. Cuando haya terminado de etiquetar y si necesita continuar con el aprendizaje, haga clic en **Aprendizaje**. Otro conjunto de archivos de ejemplo se genera a partir del conjunto de archivos cargado para un aprendizaje adicional. A continuación, se le devuelve a la pestaña Etiqueta para etiquetar y entrenar más archivos.
 
@@ -98,13 +98,13 @@ Si hay incoherencias en el etiquetado de archivos, puede afectar al análisis. E
 
 En la **pestaña Pista \> de** relevancia, expanda la fila de un problema y, junto a **Resultados detallados,** haga clic en **Ver**. Se muestran los paneles de resultados detallados, como se muestra y se describe a continuación.
   
-![Resultados detallados de la formación de relevancia](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
+![Resultados detallados del aprendizaje de relevancia.](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### <a name="tagging-summary"></a>Resumen de etiquetado
 
  En el ejemplo siguiente, el resumen de etiquetado muestra totales para cada uno de los procesos de etiquetado de archivos de evaluación, aprendizaje y ponerse al día. 
   
-![Resumen de etiquetado del seguimiento de relevancia](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
+![Resumen de etiquetado de seguimiento de relevancia.](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
 ### <a name="keywords"></a>Palabras clave
 
@@ -118,7 +118,7 @@ La Advanced eDiscovery lista de palabras clave se puede usar para complementar u
 
 El **panel Progreso de** aprendizaje incluye un gráfico de progreso de aprendizaje y una presentación del indicador de calidad, como se muestra en el ejemplo siguiente.
   
-![Progreso de formación del seguimiento de relevancia](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
+![Relevancia Realizar un seguimiento del progreso del aprendizaje.](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
 **Indicador de calidad de aprendizaje:** muestra la clasificación de la coherencia de etiquetado de la siguiente manera:
   
@@ -154,7 +154,7 @@ El **panel de resultados del** cálculo por lotes incluye el número de archivos
 
 El **panel Estadísticas de aprendizaje** muestra estadísticas y gráficos basados en los resultados del Advanced eDiscovery de relevancia. 
   
-![Estadísticas de formación del seguimiento de relevancia](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
+![Estadísticas de aprendizaje de seguimiento de relevancia.](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
 Esta vista muestra lo siguiente:
   

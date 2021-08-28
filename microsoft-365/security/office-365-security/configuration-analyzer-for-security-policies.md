@@ -18,12 +18,12 @@ ms.collection:
 description: Los administradores pueden aprender a usar el analizador de configuración para buscar y corregir directivas de seguridad que se encuentran por debajo de la configuración en Protección estándar y Protección estricta en directivas de seguridad preestablecidas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae0655b2f05962418e736242200d65be34a20d58
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 2b732922cf0a7d9f1d44a24d3b7b6f025f3c2a27
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255032"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573432"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365
 
@@ -57,7 +57,7 @@ Los valores de configuración de directiva Estándar y Estricto que se usan como
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Analizador de configuración,** use <https://security.microsoft.com/configurationAnalyzer> .
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Debe tener asignados permisos en el portal de Microsoft 365 Defender para poder realizar los procedimientos descritos en este artículo:
   - Para usar el analizador de configuración **y** realizar actualizaciones de directivas de seguridad, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
@@ -67,7 +67,7 @@ Los valores de configuración de directiva Estándar y Estricto que se usan como
 
   > [!NOTE]
   >
-  > - Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > - Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 ## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Usar el analizador de configuración en el portal Microsoft 365 Defender configuración
@@ -84,7 +84,7 @@ La **página Analizador de** configuración tiene tres pestañas principales:
 
 De forma predeterminada, el analizador de configuración se abre en la **pestaña Recomendaciones estándar.** Puede cambiar a la pestaña **Recomendaciones estrictas.** La configuración, el diseño y las acciones son iguales en ambas pestañas.
 
-![Configuración y recomendaciones en el analizador de configuración](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![Configuración y recomendaciones en el analizador de configuración.](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
 La primera sección de la pestaña muestra el número de configuraciones de cada tipo de directiva que necesitan mejoras en comparación con la protección estándar o estricta. Los tipos de directivas son:
 
@@ -147,4 +147,4 @@ Para exportar los resultados a un .csv, haga clic en **Exportar**.
 
 Para filtrar los resultados por un valor **específico Modificado por**, Nombre **de** configuración **o** Tipo, use el **cuadro** Buscar.
 
-![Análisis de deriva de configuración y vista de historial en el analizador de configuración](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+![Análisis de deriva de configuración y vista de historial en el analizador de configuración.](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

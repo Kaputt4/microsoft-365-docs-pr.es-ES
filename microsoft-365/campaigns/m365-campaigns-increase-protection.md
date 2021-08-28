@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365
-ms.openlocfilehash: 840c9ba2db5408d539722db45528a3db728698b311e55a7c3803cee32468aafa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 96aee5716374fda43c0258c55ab22d425001b8b5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887725"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573372"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Aumentar la protección contra amenazas para Microsoft 365 suscripción
 
@@ -82,7 +82,7 @@ Para crear una regla de transporte de correo:
 
 6. Haga clic en **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Valor|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
 |Nombre|Regla anti ransomware: advertir a los usuarios|
 |Aplique esta regla si . . .|Cualquier dato adjunto . . . extensión de archivo coincide con . . .|
@@ -114,7 +114,7 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
 
 6. Haga clic en **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Valor|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
 |Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
@@ -202,7 +202,7 @@ Para crear una directiva Caja fuerte datos adjuntos, vea [este breve vídeo](htt
 |Configuración u opción|Valor recomendado|
 |---|---|
 |Nombre|Bloquear los correos electrónicos actuales y futuros con malware detectado.|
-|Descripción|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
+|Description|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
 |Guardar datos adjuntos respuesta de malware desconocido|Seleccione **Bloquear: bloquee los correos electrónicos y** los datos adjuntos actuales y futuros con malware detectado.|
 |Redirigir datos adjuntos al detectar|Habilitar redirección (seleccione este cuadro) <br/> Escriba la cuenta de administrador o una configuración de buzón para la cuarentena. <br/> Aplica la selección anterior si el examen de malware para datos adjuntos se encuentra en tiempo de espera o si se produce un error (selecciona este cuadro).|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
@@ -283,7 +283,7 @@ Puede usar alertas de actividad para realizar un seguimiento de las actividades 
 
 En la siguiente figura se muestran las directivas predeterminadas que se incluyen con Microsoft 365.
 
-![Directivas de alerta predeterminadas incluidas con Microsoft 365](../media/alertpolicies.png)
+![Directivas de alerta predeterminadas incluidas Microsoft 365.](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>Deshabilitar o administrar el uso compartido de calendarios
 

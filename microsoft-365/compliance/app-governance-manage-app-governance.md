@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Implemente funcionalidades de gobernanza de aplicaciones de Microsoft para controlar sus aplicaciones.
-ms.openlocfilehash: 2b11893b17c93bb92301bc07fda3422ad4c36228
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a105ba8d1e0a0127cccb772ad60bb7bd0c6c8b4c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256844"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567561"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Complemento de gobernanza de aplicaciones para Microsoft Cloud App Security (en versión preliminar)
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 > [!NOTE]
-> Para suscribirse a la gobernanza de aplicaciones, consulte [Introducción a la gobernanza de aplicaciones (en versión preliminar)](app-governance-get-started.md#sign-up-for-free-trial-of-app-governance).
+> Para suscribirse a la gobernanza de aplicaciones, consulte [Introducción a la gobernanza de aplicaciones (en versión preliminar)](app-governance-get-started.md).
 
 Los ciberataques se han vuelto cada vez más sofisticados en las formas en que aprovechan las aplicaciones que ha implementado en sus infraestructuras locales y en la nube, estableciendo un punto de partida para la elevación de privilegios, el movimiento lateral y la filtración de los datos. Para comprender los posibles riesgos y detener estos tipos de ataques, debe obtener una visibilidad clara de la posición de cumplimiento de aplicaciones de su organización para identificar rápidamente cuándo una aplicación muestra comportamientos anómalos y responder cuando estos comportamientos presentan riesgos para su entorno, datos y usuarios.
 
@@ -77,7 +77,7 @@ Al compartir información entre el gobierno de aplicaciones, Azure AD y Microsof
 
 Este es un resumen de la integración.
 
-![La Integración de gobernanza de aplicaciones con Azure AD y Microsoft Cloud App Security](..\media\manage-app-protection-governance\mapg-integration.png)
+![La Integración de gobernanza de aplicaciones con Azure AD y Microsoft Cloud App Security.](..\media\manage-app-protection-governance\mapg-integration.png)
 
 Además, la gobernanza de aplicaciones envía sus alertas como señales a Microsoft Cloud App Security y Microsoft 365 Defender, y la gobernanza de aplicaciones recibe alertas de Microsoft Cloud App Security para permitir un análisis más detallado de los incidentes de seguridad basados en aplicaciones.
 

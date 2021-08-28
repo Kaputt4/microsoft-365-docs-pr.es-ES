@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: Si es el responsable de configurar las opciones de correo electrónico para todos los usuarios de una empresa, en este artículo se explica cómo configurar Bandeja de entrada Prioritarios para los usuarios.
-ms.openlocfilehash: 3e296bbfd45955cf7ba97a90e565be3ec6d4412f
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 6bc33211af5ee0cd064b63f95e720f19cee196e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394545"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567813"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurar la Bandeja de entrada Prioritarios para todos los usuarios de la organización
 
@@ -122,13 +122,13 @@ En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker A
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
 
-2. Vaya a **flujo de correo** \> **Reglas**. Seleccione ![Agregar icono EAC](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) y, a continuación, seleccione **Crear una nueva regla...**. 
+2. Vaya a **flujo de correo** \> **Reglas**. Seleccione ![ EAC Agregar icono.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) y, a continuación, seleccione **Crear una nueva regla...**. 
 
 3. Cuando termine de crear la regla, seleccione **Guardar** para iniciarla.
 
     En la siguiente imagen, se muestra un ejemplo en el que todos los mensajes del "Departamento de nóminas" se entregarán en la Bandeja de entrada Prioritarios.
 
-    ![Bandeja de entrada Prioritarios de nóminas](../../media/focusedinbox-transport-rule.PNG)
+    ![nómina de la bandeja de entrada prioritarios.](../../media/focusedinbox-transport-rule.PNG)
 
     > [!NOTE]
     > El texto del valor del encabezado del mensaje en este ejemplo es **X-MS-Exchange-Organization-BypassFocusedInbox**.

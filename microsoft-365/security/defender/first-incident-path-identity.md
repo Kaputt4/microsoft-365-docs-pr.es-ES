@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 57a324310458dc15f5edcd6012ab381bb4d5041d902b8871d85cb318f0e7023e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f0695f406bdc2063c58d87c61032d120442928e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873679"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573516"
 ---
 # <a name="example-of-an-identity-based-attack"></a>Ejemplo de un ataque basado en identidad
 
@@ -42,25 +42,25 @@ Microsoft Defender for Identity puede ayudar a detectar intentos malintencionado
 
 Microsoft 365 Defender permite a los analistas filtrar alertas por origen de detección en la **pestaña** Alertas de la página incidentes. En el siguiente ejemplo, el origen de detección se filtra a **Defender for Identity**. 
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Ejemplo de filtrado del origen de detección de Defender for Identity":::
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Ejemplo de filtrado del origen de detección de Defender for Identity.":::
 
 Al seleccionar la **alerta de ataque** sospechoso de sobrepaso de hash, se pasa a una página de Microsoft Cloud App Security que muestra información más detallada. Siempre puedes obtener más información sobre una  alerta o ataque seleccionando [](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) Obtener más información sobre este tipo de alerta para leer una descripción del ataque, así como sugerencias de corrección.
  
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="Ejemplo de una alerta de ataque sospechoso de sobrepaso de hash"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="Ejemplo de una alerta de ataque sospechoso de sobrepaso de hash."::: 
 
 ## <a name="investigating-the-same-attack-in-microsoft-defender-for-endpoint"></a>Investigar el mismo ataque en Microsoft Defender para endpoint
 
 Como alternativa, un analista puede usar Defender for Endpoint para obtener más información sobre la actividad en un punto de conexión. Seleccione el incidente en la cola de incidentes y, a continuación, seleccione la **pestaña Alertas.** Desde aquí, también pueden identificar el origen de detección. Un origen de detección etiquetado como EDR significa Detección y respuesta de puntos de conexión, que es Defender para endpoint. Desde aquí, el analista selecciona una alerta detectada por EDR.
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="Ejemplo de detección y respuesta de puntos de conexión en Defender for Endpoint"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="Ejemplo de detección y respuesta de puntos de conexión en Defender para endpoint."::: 
 
 La página de alertas muestra varias informaciones pertinentes, como el nombre del dispositivo afectado, el nombre de usuario, el estado de la investigación automática y los detalles de la alerta. El artículo de alerta representa una representación visual del árbol de procesos. El árbol de procesos es una representación jerárquica de los procesos primarios y secundarios relacionados con la alerta.
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-tree.png" alt-text="Ejemplo de un árbol de proceso de alerta en Defender for Endpoint"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-tree.png" alt-text="Ejemplo de un árbol de proceso de alerta en Defender para endpoint."::: 
 
 Cada proceso se puede expandir para ver detalles adicionales. Los detalles que puede ver un analista son los comandos reales que se especificaron como parte de un script malintencionado, direcciones IP de conexión salientes y otra información útil.
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-process-details.png" alt-text="Ejemplo de detalles del proceso en Defender para endpoint":::
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-process-details.png" alt-text="Ejemplo de detalles del proceso en Defender para endpoint.":::
  
 Al seleccionar **Ver en la escala de** tiempo, un analista puede profundizar aún más para determinar la hora exacta del compromiso. 
 
@@ -68,13 +68,13 @@ Microsoft Defender para endpoint puede detectar muchos archivos y scripts malint
 
 Para ello, un analista comenzaría en el momento de la detección de alertas (en rojo) y se desplazaría hacia abajo en el tiempo para determinar cuándo se inició realmente la actividad original que condujo a la actividad malintencionada. 
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="Ejemplo de inicio en el momento de la detección de alertas"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="Ejemplo de inicio en el momento de la detección de alerta."::: 
 
 Es importante comprender y distinguir la actividad común, como las conexiones de actualización de Windows, el tráfico de activación de software de confianza Windows, otras conexiones comunes a sitios de Microsoft, actividad de Internet de terceros, actividad Microsoft Endpoint Configuration Manager y otra actividad benigna de actividad sospechosa. Una forma de lograrlo es usando filtros de escala de tiempo. Hay muchos filtros que pueden resaltar una actividad específica al filtrar todo lo que el analista no quiera ver. 
 
 En la imagen siguiente, el analista se filtra para ver solo eventos de red y proceso. Esto permite al analista ver las conexiones de red y los procesos que rodean el evento donde Bloc de notas una conexión con una dirección IP, que también vimos en el árbol de procesos. 
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="Ejemplo de cómo Bloc de notas se usó para realizar una conexión saliente malintencionada"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="Ejemplo de cómo Bloc de notas se usó para realizar una conexión saliente malintencionada."::: 
 
 En este evento en particular, Bloc de notas se usó para realizar una conexión saliente malintencionada. Sin embargo, a menudo los atacantes simplemente usan iexplorer.exe establecer conexiones para descargar una carga malintencionada, ya que normalmente iexplorer.exe procesos se consideran actividad regular del explorador web.
 
@@ -91,7 +91,7 @@ Un analista puede buscar rápidamente palabras clave escribiendo la palabra clav
 
 Consulta la ruta [de la investigación de suplantación](first-incident-path-phishing.md) de identidad.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

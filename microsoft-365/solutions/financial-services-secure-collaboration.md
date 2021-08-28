@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Conozca la forma en que las instituciones de servicios financieros pueden mantener el cumplimiento de la seguridad financiera y colaborar de forma eficaz al usar Microsoft 365 y Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 88aa46e08a450953e940d625e7f35cf9732d668d
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 0e3fada6a74776e4edf2c8c41ef9026ce17871ad
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400276"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568005"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave de cumplimiento y seguridad para los mercados de capital y los bancos de Estados Unidos
 
@@ -51,9 +51,9 @@ Las siguientes ilustraciones descargables complementan este artículo. El Woodgr
 
 **Ilustraciones de protección de información y cumplimiento de Microsoft 365**
 
-| Elemento | Descripción |
+| Elemento | Description |
 |:-----|:-----|
-|[![Póster modelo: capacidades de protección y cumplimiento de la información de Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>Inglés: [Descargar como PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonés: [Descargar como PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> Actualizado en noviembre de 2020|Incluye: <ul><li>  Protección de la información y prevención de la pérdida de datos de Microsoft</li><li>Directivas y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de comunicaciones</li><li>Riesgo de Insider</li><li>Ingesta de datos de terceros</li>|
+|[![Póster modelo: capacidades de protección y cumplimiento de la información de Microsoft 365.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>Inglés: [Descargar como PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonés: [Descargar como PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> Actualizado en noviembre de 2020|Incluye: <ul><li>  Protección de la información y prevención de la pérdida de datos de Microsoft</li><li>Directivas y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de comunicaciones</li><li>Riesgo de Insider</li><li>Ingesta de datos de terceros</li>|
 
 
 ## <a name="empower-organizational-and-employee-productivity-by-using-microsoft-365-and-teams"></a>Permitir la productividad de los empleados y de la organización con Microsoft 365 y Teams
@@ -75,7 +75,7 @@ Teams puede ofrecer un espacio de colaboración para almacenar de forma segura d
 
 Otro escenario común es usar Teams como "sala de datos virtual" para colaborar de forma segura, como al almacenar y administrar documentos. Los miembros del equipo y los sindicatos en la banca de inversiones, la administración de activos o las empresas de capitales privadas pueden colaborar de forma segura en un negocio o una inversión. Los equipos multifuncionales suelen participar en la planeación y finalización de estos acuerdos, y la capacidad de compartir datos y entablar conversaciones de forma segura es una exigencia principal. Compartir de forma segura documentos relacionados con inversores externos también es un requisito clave. Teams proporciona una ubicación segura y totalmente auditable desde la que se pueden almacenar, proteger y compartir datos de la inversión de forma centralizada.
 
-![Un grupo de trabajadores de oficina en una reunión comentan imágenes de una pantalla grande](../media/m365cO19-ent-dell-latitude13-5951.jpg)
+![Un grupo de trabajadores de oficina en una reunión comentan imágenes de una pantalla grande.](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: mejorar la colaboración y reducir el riesgo de cumplimiento
 
@@ -187,7 +187,7 @@ Las señales generadas por Identity Protection o añadidas también pueden inclu
 
 Identity Protection ayuda a las organizaciones a protegerse de forma automática frente al compromiso de identidades aprovechando la inteligencia en la nube con tecnología de detección avanzada basada en heurística, análisis de comportamiento de usuarios y entidades y aprendizaje automático en el ecosistema de Microsoft.
 
-![Se muestra un profesional de la información delante de un gran número de monitores](../media/clo1718-portrait-006.jpg)
+![Se muestra un profesional de la información delante de un gran número de monitores.](../media/clo1718-portrait-006.jpg)
 
 ## <a name="defend-the-fortress"></a>Defender la fortaleza
 
@@ -328,7 +328,7 @@ Las organizaciones que trabajan con datos confidenciales y ponen énfasis estric
 
 Microsoft 365 proporciona a las [restricciones](/azure/active-directory/manage-apps/tenant-restrictions) del espacio empresarial la capacidad de afrontar este desafío. Las restricciones de espacio empresarial pueden configurarse para restringir el acceso a los espacios empresariales externos de Office 365 que usan identidades malintencionadas (identidades que no forman parte de su directorio corporativo). En la actualidad, las restricciones de espacios empresariales se aplican en todo el espacio empresarial, lo que permite el acceso solo a esos espacios empresariales que aparecen en la lista que configure. Microsoft continúa desarrollando esta solución para incrementar la granularidad del control y mejorar las protecciones que proporciona.
 
-![GRÁFICO](../media/clo1717-corporate-office-001.jpg)
+![GRÁFICO.](../media/clo1717-corporate-office-001.jpg)
  
 ## <a name="conclusion"></a>Conclusión
 

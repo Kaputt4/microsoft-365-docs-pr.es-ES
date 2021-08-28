@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Use esta página para crear la lista de personal y administrar los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
-ms.openlocfilehash: fca6ac7d76c4ce680209eba297894b582a824355b3a9c6f736c861dc9559fe82
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3b61c2f3e5597208ace2a87a7d203e8d724e4f5f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900856"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573348"
 ---
 # <a name="add-staff-to-bookings"></a>Agregar personal a Bookings
 
@@ -49,13 +49,13 @@ Aunque Bookings es una característica de Microsoft 365, no todos los miembros d
 
 6. Seleccione **Notificar a todo el personal por correo electrónico** cuando se cree o cambie una reserva asignada para habilitar los correos electrónicos del personal. A continuación se muestra un ejemplo de correo electrónico:
 
-    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Un correo electrónico de notificación de Bookings":::
+    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Un correo electrónico de notificación de Bookings.":::
 
 7. Seleccione **Eventos en Office 365 que afecten a** la disponibilidad si desea que la información de disponibilidad de los calendarios de los miembros del personal afecte a la disponibilidad de los servicios de reservas a través de Bookings.
 
     Por ejemplo, si un miembro del personal tiene una reunión de equipo o una cita personal programada para las 15:00 un miércoles, Bookings mostrará a ese miembro del personal como no disponible para ser reservado en esa franja horaria. Esa hora aparecerá como ocupada o provisional en la vista de calendario Bookings, como se muestra en el ejemplo siguiente.
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Vista de un calendario de Bookings":::
+    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Vista de un calendario de Bookings.":::
 
 > [!IMPORTANT]
 > Se recomienda encarecidamente dejar esta configuración activada (está activada de forma predeterminada) para evitar reservas dobles y optimizar la disponibilidad de los miembros del personal.

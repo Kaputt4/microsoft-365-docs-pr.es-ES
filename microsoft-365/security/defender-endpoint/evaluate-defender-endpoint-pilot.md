@@ -21,19 +21,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6f41739a1f48ff73b8acd1a365a34d6a721b7151
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: f9c0fc486816adc1ed2ee96dd6962b64195a90c3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599338"
+ms.locfileid: "58573984"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-mde-through-simulated-attacks"></a>Experiencia de Microsoft Defender para endpoint (MDE) a través de ataques simulados
 
-> [!TIP]
+>[!TIP]
 >
-> - Obtenga información sobre las mejoras más recientes en Microsoft Defender para endpoint: ¿Qué hay [de nuevo en Defender para endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
-> - Defender for Endpoint demostró las capacidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Lectura: [Insights de la evaluación basada en MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+>- Obtenga información sobre las mejoras más recientes en Microsoft Defender para endpoint: ¿Qué hay [de nuevo en Defender para endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+>- Defender for Endpoint demostró las capacidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Lectura: [Insights de la evaluación basada en MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 Es posible que quieras experimentar Defender for Endpoint antes de incorporar más de unos pocos dispositivos al servicio. Para ello, puedes ejecutar simulaciones de ataque controlado en algunos dispositivos de prueba. Después de ejecutar los ataques simulados, puedes revisar cómo Defender for Endpoint muestra actividad malintencionada y explorar cómo habilita una respuesta eficaz.
 
@@ -45,7 +45,7 @@ Lea el documento del tutorial proporcionado con cada escenario de ataque. Cada d
 
 ## <a name="run-a-simulation"></a>Ejecutar una simulación
 
-1. En **help** \> **simulations & tutoriales**, seleccione cuál de los escenarios de ataque disponibles desea simular:
+1. En **help**  >  **simulations & tutoriales**, seleccione cuál de los escenarios de ataque disponibles desea simular:
 
    - **Escenario 1: El documento deja la puerta trasera:** simula la entrega de un documento de señuelo de ingeniería social. El documento inicia una puerta trasera especialmente diseñada que proporciona control a los atacantes.
 
@@ -55,12 +55,13 @@ Lea el documento del tutorial proporcionado con cada escenario de ataque. Cada d
 
 2. Descargue y lea el documento de tutorial correspondiente proporcionado con el escenario seleccionado.
 
-3. Descargue el archivo de simulación o copie el script de simulación navegando a **Help** \> **Simulations & tutoriales**. Puedes elegir descargar el archivo o script en el dispositivo de prueba, pero no es obligatorio.
+3. Descargue el archivo de simulación o copie el script de simulación navegando a **Help**  >  **Simulations & tutoriales**. Puedes elegir descargar el archivo o script en el dispositivo de prueba, pero no es obligatorio.
 
 4. Ejecute el archivo de simulación o el script en el dispositivo de prueba como se indica en el documento del tutorial.
 
 > [!NOTE]
 > Los archivos de simulación o scripts imitan la actividad de ataque, pero en realidad son benignos y no dañan ni comprometen el dispositivo de prueba.
+>
 
 ## <a name="alternate-topic-text"></a>TEXTO DE TEMA ALTERNATIVO
 
@@ -79,8 +80,8 @@ También puede usar búsqueda avanzada [para consultar](advanced-hunting-overvie
 
 Si está buscando una simulación pre-made, puede usar nuestros escenarios de ataque ["Do It Yourself".](https://securitycenter.windows.com/tutorials) Estos scripts son seguros, documentados y fáciles de usar. Estos escenarios reflejarán las capacidades de Defender for Endpoint y le ayudarán a través de la experiencia de investigación.
 
-> [!NOTE]
-> La conexión a los dispositivos de prueba se realiza con RDP. Asegúrese de que la configuración del firewall permite conexiones RDP.
+>[!NOTE]
+>La conexión a los dispositivos de prueba se realiza con RDP. Asegúrese de que la configuración del firewall permite conexiones RDP.
 
 1. Conectar a tu dispositivo y ejecuta una simulación de ataque seleccionando **Conectar**.
 
@@ -90,10 +91,8 @@ Si está buscando una simulación pre-made, puede usar nuestros escenarios de at
 
     ![Imagen de conexión de escritorio remoto.](images/remote-connection.png)
 
-    > [!NOTE]
-    > Si no tiene una copia de la contraseña guardada durante la configuración inicial, puede restablecer la contraseña seleccionando **Restablecer** contraseña en el menú:
-    >
-    > ![Imagen de la contraseña de restablecimiento.](images/reset-password-test-machine.png)
+    >[!NOTE]
+    >Si no tiene una copia de la contraseña guardada durante la configuración inicial, puede restablecer la contraseña seleccionando **Restablecer** contraseña en el menú: Imagen de la contraseña de ![ restablecimiento.](images/reset-password-test-machine.png)
     >
     > El dispositivo cambiará su estado a "Ejecutar el restablecimiento de contraseña" y, a continuación, se te presentará la nueva contraseña en unos minutos.
 
@@ -109,11 +108,12 @@ Si optó por instalar cualquiera de los simuladores de amenazas compatibles dura
 
 Ejecutar simulaciones de amenazas con plataformas de terceros es una buena manera de evaluar las capacidades de Punto de conexión de Microsoft Defender en los límites de un entorno de laboratorio.
 
-> [!NOTE]
-> Antes de poder ejecutar simulaciones, asegúrese de que se cumplen los siguientes requisitos:
+>[!NOTE]
 >
-> - Los dispositivos deben agregarse al laboratorio de evaluación
-> - Los simuladores de amenazas deben instalarse en el laboratorio de evaluación
+>Antes de poder ejecutar simulaciones, asegúrese de que se cumplen los siguientes requisitos:
+
+>- Los dispositivos deben agregarse al laboratorio de evaluación
+>- Los simuladores de amenazas deben instalarse en el laboratorio de evaluación
 
 1. En el portal, seleccione **Crear simulación**.
 
@@ -123,10 +123,9 @@ Ejecutar simulaciones de amenazas con plataformas de terceros es una buena maner
 
 3. Elija una simulación o busque en la galería de simulación para examinar las simulaciones disponibles.
 
-   Puede acceder a la galería de simulación desde:
-
-   - El panel de evaluación principal en el icono de información general de **Simulaciones** o
-   - Al navegar desde el panel de navegación Evaluación y tutoriales De **simulación** & \> **tutoriales** y, a continuación, seleccione **Catálogo de simulaciones**.
+    Puede acceder a la galería de simulación desde:
+    - El panel de evaluación principal en el icono de información general de **Simulaciones** o
+    - Al navegar desde el panel de navegación Evaluación y tutoriales De **simulación**&  >  **tutoriales** y, a continuación, seleccione **Catálogo de simulaciones**.
 
 4. Selecciona los dispositivos en los que quieres ejecutar la simulación.
 
@@ -135,6 +134,7 @@ Ejecutar simulaciones de amenazas con plataformas de terceros es una buena maner
 6. Para ver el progreso de una simulación, seleccione la **pestaña Simulaciones.** Vea el estado de simulación, las alertas activas y otros detalles.
 
     ![Imagen de la pestaña simulaciones.](images/simulations-tab.png)
+<br>
 
 Después de ejecutar las simulaciones, te animamos a recorrer la barra de progreso del laboratorio y explorar Microsoft Defender for Endpoint desencadenando una **investigación y corrección automatizadas.** Consulte las pruebas recopiladas y analizadas por la característica.
 

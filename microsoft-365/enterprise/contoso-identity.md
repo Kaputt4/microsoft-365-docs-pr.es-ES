@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso aprovecha la Identidad como servicio (IDaaS) y proporciona autenticación basada en la nube a sus empleados y autenticación federada a sus partners y clientes.
-ms.openlocfilehash: 9138e0743e5194e98213ab2d2c2bfe457500b0de
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: b8943f0af678ed3d86d1428fe44cd6ab67554470
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353797"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574056"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidad para Contoso Corporation
 
@@ -31,7 +31,7 @@ Contoso usa un único bosque de Servicios de dominio de Active Directory (AD DS)
 
 Este es el bosque contoso con dominios regionales para las diferentes partes del mundo que contienen concentradores regionales.
 
-![Bosque y dominios de Contoso en todo el mundo](../media/contoso-identity/contoso-identity-fig1.png)
+![Bosque y dominios de Contoso en todo el mundo.](../media/contoso-identity/contoso-identity-fig1.png)
  
 Contoso decidió usar las cuentas y grupos del bosque com contoso para la autenticación y autorización para sus \. Microsoft 365 cargas de trabajo y servicios.
 
@@ -44,7 +44,7 @@ Contoso permite lo siguiente:
 
 Esta es la DMZ de Contoso que contiene un sitio web público, una extranet de asociado y un conjunto de servidores de Servicios de federación de Active Directory (AD FS). La DMZ está conectada a Internet que contiene clientes, partners y servicios de Internet.
 
-![Compatibilidad de Contoso con autenticación federada para clientes y partners](../media/contoso-identity/contoso-identity-fig2.png)
+![Compatibilidad con Contoso para la autenticación federada para clientes y partners.](../media/contoso-identity/contoso-identity-fig2.png)
  
 Los servidores de AD FS en la DMZ facilitan la autenticación de credenciales de cliente por parte de sus proveedores de identidades para obtener acceso al sitio web público y a las credenciales de socio para acceder a la extranet de partners.
 
@@ -60,7 +60,7 @@ Para realizar la sincronización de directorios, Contoso implementó la herramie
 
 Este es el servidor que ejecuta Azure AD Conectar el bosque de Contoso AD DS en busca de cambios y, a continuación, sincroniza esos cambios con el inquilino de Azure AD.
 
-![La infraestructura de sincronización de directorios de CONTOSO PHS](../media/contoso-identity/contoso-identity-fig4.png)
+![La infraestructura de sincronización de directorios de PHS de Contoso.](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Directivas de Acceso Condicional a identidades y dispositivos
 
@@ -72,7 +72,7 @@ Contoso creó un conjunto de [directivas de Acceso Condicional](../security/offi
 
 Este es el conjunto resultante de directivas de identidad y dispositivo de acceso condicional de Contoso.
 
-![Directivas de acceso condicional a identidades y dispositivos de Contoso](../media/contoso-identity/contoso-identity-fig5.png)
+![Directivas de identidad y dispositivo de acceso condicional de Contoso.](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>Paso siguiente
 

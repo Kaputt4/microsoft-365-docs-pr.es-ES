@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: a9b483230cbd2406d11709844a62c150bce48731
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 42d8662ade476e23e3a7e8d8af31bf782f6ccf6b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508111"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573996"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 
@@ -48,7 +48,7 @@ En la navegación superior puede:
 - Navegar entre páginas
 - Aplicar filtros
 
-![Imagen de la cola de alertas](images/alerts-queue-list.png)
+![Imagen de la cola de alertas.](images/alerts-queue-list.png)
 
 ## <a name="sort-filter-and-group-the-alerts-queue"></a>Ordenar, filtrar y agrupar la cola de alertas
 
@@ -56,7 +56,7 @@ Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener 
 
 ### <a name="severity"></a>Gravedad
 
-Gravedad de alerta|Descripción
+Gravedad de alerta|Description
 ---|---
 Alto <br> (Rojo)|Alertas que se ven comúnmente asociadas con amenazas persistentes avanzadas (APT). Estas alertas indican un alto riesgo debido a la gravedad del daño que pueden causar en los dispositivos. Algunos ejemplos son: actividades de herramientas de robo de credenciales, actividades de ransomware no asociadas con ningún grupo, manipulación de sensores de seguridad o cualquier actividad malintencionada indicativa de un adversario humano.
 Medio <br> (Naranja)|Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.

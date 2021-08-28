@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implemente Microsoft Information Protection (MIP) para proteger la información confidencial donde esta resida o hacia donde se transfiera.
-ms.openlocfilehash: 76e2da01dd9fbcbb7d053b61b515aeb998d86c5147893a822dfa2695e43f58a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8b576ca7f6fd3914d160592c0d1e34d20c3bdcc1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860788"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567441"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection en Microsoft 365.
 
@@ -33,7 +33,7 @@ Implemente Microsoft Information Protection (MIP) para descubrir, clasificar y p
 
 Las características de MIP se incluyen con el Centro de cumplimiento de Microsoft 365 y proporcionan las herramientas necesarias para [conocer](#know-your-data), [proteger](#protect-your-data) y [evitar la pérdida](#prevent-data-loss) de sus datos.
 
-![Imagen de cómo MIP le ayuda a descubrir, clasificar y proteger los datos confidenciales](../media/powered-by-intelligent-platform.png)
+![Imagen de cómo MIP le ayuda a descubrir, clasificar y proteger los datos confidenciales.](../media/powered-by-intelligent-platform.png)
 
 Para obtener información sobre la gobernanza de los datos, consulte [Gobernanza de información de Microsoft en Microsoft 365](manage-Information-governance.md).
 

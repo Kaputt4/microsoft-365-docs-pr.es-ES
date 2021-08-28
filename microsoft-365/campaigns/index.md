@@ -25,19 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Recomendaciones de Seguridad de Microsoft 365 Empresa Premium y de colaboración para pequeñas empresas, incluidas firmas, despachos y campañas políticas pequeñas.
-ms.openlocfilehash: bf795b0e5a89532a0b0d30f1c9436eb73739b7cc0d28dbe227dcc52ef5c76c06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8e1da206a23a58d568d6e0e4a9efe04cef510a85
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861544"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573792"
 ---
 # <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 para pequeñas empresas y campañas
 
 Si tiene Microsoft 365 Empresa Premium, la guía de esta biblioteca es la forma más rápida para configurar la seguridad y empezar a colaborar de forma segura. En nuestro mundo actual, mantener la seguridad de los datos y las comunicaciones es prioritario, especialmente en el caso de campañas políticas, consultorios médicos y jurídicos y muchas otras pequeñas empresas. Esta solución ofrece un conjunto de recomendaciones diseñadas para ayudarle a protegerse y a proteger sus datos. Esta biblioteca incluye ayuda para configurar y usar este entorno recomendado, sea cual sea su tipo de empresa.
 
 
-![Microsoft 365 Empresa Premium protege sus herramientas de productividad, sus herramientas de colaboración, el almacenamiento de archivos, el correo electrónico, los dispositivos y su identidad](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
+![Microsoft 365 Empresa Premium protege sus herramientas de productividad, sus herramientas de colaboración, el almacenamiento de archivos, el correo electrónico, los dispositivos y su identidad.](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
 
 Esta configuración incluye las siguientes instrucciones para la productividad, colaboración, almacenamiento de archivos, correo electrónico, dispositivos e identidad para proteger su negocio:
 
@@ -83,7 +83,7 @@ Después de configurar el entorno seguro de Microsoft 365, puede usar las soluci
 
 | Crear equipos para colaboración | Configurar reuniones en línea |
 | ------------- | ------------- |
-| ![Un sitio de comunicación de SharePoint](../media/sm-m365-democracy-teams-collab.png) | ![Una reunión en línea](../media/m365-democracy-teams-meetings.png) |
+| ![un sitio de comunicación de SharePoint.](../media/sm-m365-democracy-teams-collab.png) | ![Una reunión en línea](../media/m365-democracy-teams-meetings.png) |
 | Colabore con equipos determinados para el personal clave, todos los miembros del personal y los socios o proveedores.<br>[Cree su equipo](create-teams-for-collaboration.md) | Programe una reunión con audio, vídeo y uso compartido con Microsoft Teams.<br>[Configurar una reunión](set-up-meetings.md) |
 
 | Cifre o etiquete su correo electrónico confidencial | Crear un sitio de comunicaciones |
@@ -93,5 +93,5 @@ Después de configurar el entorno seguro de Microsoft 365, puede usar las soluci
 
 | Compartir archivos y vídeos |
 | ------------- |
-| ![compartir un archivo en Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) |
+| ![compartir un archivo en Microsoft Teams.](../media/m365-democracy-teams-sharefiles.png) |
 | Guarde sus archivos y vídeos en la nube para que estén disponibles <br>a todas las personas adecuadas.<br>[Empezar a compartir](share-files-and-videos.md) |

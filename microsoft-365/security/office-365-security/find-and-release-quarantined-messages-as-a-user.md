@@ -20,12 +20,12 @@ ms.custom:
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efd82e5fc321b9a9c7a586b75e2b96ae44cc38c1
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: d8aab84cd406366182650e6fbf6c39aee9810ce3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450205"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548707"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
@@ -46,9 +46,9 @@ En tanto que destinatario de un mensaje en cuarentena, lo que puede hacer con el
 
 |Motivo de la cuarentena:|Ver|Liberar|Eliminar|
 |---|:---:|:---:|:---:|
-|Masivo|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|Correo no deseado|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|Suplantación de identidad (suplantación de identidad no de alta confianza)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|Masivo|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|Correo no deseado|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|Suplantación de identidad (suplantación de identidad no de alta confianza)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
 |
 
 Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365 Defender o, si un administrador lo ha configurado, en [notificaciones de correo no deseado para el usuario](use-spam-notifications-to-release-and-report-quarantined-messages.md).
@@ -113,7 +113,7 @@ Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365
      - **Directiva contra phishing**
      - **Directiva de correo no deseado**
 
-   Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros, haga clic en ![el icono Borrar filtros](../../media/m365-cc-sc-clear-filters-icon.png)**Borrar filtros**.
+   Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros, haga clic en el ![icono Borrar filtros.](../../media/m365-cc-sc-clear-filters-icon.png) **Borrar filtros**.
 
 4. Use el cuadro de **Búsqueda** y el valor correspondiente para buscar mensajes específicos. No se admiten los caracteres comodín. Puede buscar según los siguientes valores:
    - Id. del mensaje
@@ -130,7 +130,7 @@ Cuando encuentre un mensaje en cuarentena específico, seleccione el mensaje par
 
 Cuando selecciona un mensaje en cuarentena de la lista, la siguiente información está disponible en el control flotante de detalles que aparece.
 
-![Control flotante de detalles de un mensaje en cuarentena](../../media/quarantine-user-message-details.png)
+![Control flotante de detalles de un mensaje en cuarentena.](../../media/quarantine-user-message-details.png)
 
 Cuando selecciona un mensaje de correo electrónico de la lista, aparecen los detalles de mensaje siguientes en el panel flotante **Detalles**:
 
@@ -149,17 +149,17 @@ Para actuar sobre el mensaje, consulte la siguiente sección.
 > [!NOTE]
 > Para permanecer en el control flotante de detalles, pero cambiar el mensaje en cuarentena que está visualizando, use las flechas arriba y abajo en la parte superior del control flotante.
 >
-> ![Las flechas arriba y abajo del control flotante de detalles de un mensaje en cuarentena](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> ![Las flechas arriba y abajo del control flotante de detalles de un mensaje en cuarentena.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### <a name="take-action-on-quarantined-email"></a>Llevar a cabo una acción en un correo electrónico en cuarentena
 
 Después de seleccionar un mensaje en cuarentena de la lista, las siguientes acciones están disponibles en el control flotante de detalles:
 
-![Acciones disponibles en el control flotante de detalles de un mensaje en cuarentena](../../media/quarantine-user-message-details-flyout-actions.png)
+![Acciones disponibles en el control flotante de detalles de un mensaje en cuarentena.](../../media/quarantine-user-message-details-flyout-actions.png)
 
 - ![Icono de liberar correo electrónico](../../media/m365-cc-sc-check-mark-icon.png) **Liberar correo electrónico**<sup>\*</sup>: Entrega el mensaje a su Bandeja de entrada.
 
-- ![icono Ver encabezados del mensaje](../../media/m365-cc-sc-eye-icon.png) **Ver encabezados del mensaje**: Seleccione este vínculo para ver el texto del encabezado del mensaje. Aparece el control flotante **Encabezado de mensaje** con los vínculos siguientes:
+- ![Icono Ver encabezados de mensaje.](../../media/m365-cc-sc-eye-icon.png) icono Ver encabezados del mensaje **Ver encabezados del mensaje**: Seleccione este vínculo para ver el texto del encabezado del mensaje. Aparece el control flotante **Encabezado de mensaje** con los vínculos siguientes:
 - **Copiar el encabezado de mensaje**: Haga clic en este vínculo para copiar el encabezado de mensaje (todos los campos de encabezado) en el portapapeles.
 - **Analizador de encabezados de mensajes de Microsoft**: Para analizar los campos de encabezado y los valores en profundidad, haga clic en este vínculo para ir al Analizador de encabezados de mensajes. Pegue el encabezado del mensaje en la sección **Inserte el encabezado del mensaje que desea analizar** (CTRL+V o haga clic con el botón derecho del ratón y elija **Pegar**) y, a continuación, haga clic en **Analizar encabezados**.
 
@@ -173,7 +173,7 @@ Las siguientes acciones están disponibles después de hacer clic en el ![icono 
 
 - ![Icono Descargar correo electrónico](../../media/m365-cc-sc-download-icon.png) **Descargar correo electrónico**: En el control flotante que aparece, seleccione **entiendo los riesgos que conlleva la descarga de este mensaje** y, a continuación, haga clic en **Descargar** para guardar una copia local del mensaje en formato .eml.
 
-- ![Icono Bloquear remitente](../../media/m365-cc-sc-block-sender-icon.png) **Bloquear remitente**: añade el remitente a la lista de remitentes bloqueados del **Buzón**. Para más información, consulte [Bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- ![Icono Bloquear remitente.](../../media/m365-cc-sc-block-sender-icon.png) Icono Bloquear remitente **Bloquear remitente**: añade el remitente a la lista de remitentes bloqueados del **Buzón**. Para más información, consulte [Bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 <sup>\*</sup> Esta opción no está disponible para los mensajes que ya se han liberado (el valor del **estado liberado** es **Liberado**).
 
@@ -188,17 +188,17 @@ Si no libera o elimina el mensaje, se eliminará cuando expire el período de re
 >
 > |Icono|Descripción|
 > |---:|---|
-> |![Icono Liberar correo electrónico](../../media/m365-cc-sc-check-mark-icon.png)|**Liberar correo electrónico**|
-> |![Icono Ver encabezados de mensaje](../../media/m365-cc-sc-eye-icon.png)|**Ver encabezados de mensaje**|
-> |![Icono Vista previa de mensaje](../../media/m365-cc-sc-eye-icon.png)|**Vista previa de mensaje**|
-> |![Icono Quitar de cuarentena](../../media/m365-cc-sc-delete-icon.png)|**Quitar de cuarentena**|
-> |![Icono Bloquear remitente](../../media/m365-cc-sc-block-sender-icon.png)|**Bloquear remitente**|
+> |![Icono Liberar correo electrónico.](../../media/m365-cc-sc-check-mark-icon.png)|**Liberar correo electrónico**|
+> |![Icono Ver encabezados de mensaje.](../../media/m365-cc-sc-eye-icon.png)|**Ver encabezados de mensaje**|
+> |![Icono Vista previa de mensaje.](../../media/m365-cc-sc-eye-icon.png)|**Vista previa de mensaje**|
+> |![Icono Quitar de cuarentena.](../../media/m365-cc-sc-delete-icon.png)|**Quitar de cuarentena**|
+> |![Icono Bloquear remitente.](../../media/m365-cc-sc-block-sender-icon.png)|**Bloquear remitente**|
 
 #### <a name="take-action-on-multiple-quarantined-email-messages"></a>Realice una acción en varios mensajes de correo electrónico en cuarentena
 
 Cuando se seleccionan varios mensajes en cuarentena en la lista (hasta 100) haciendo clic en el área en blanco situada a la izquierda de la primera columna, aparece la lista desplegable **Acciones masivas** en la que se pueden realizar las siguientes acciones:
 
-![Lista desplegable de acciones masivas para mensajes en cuarentena](../../media/quarantine-user-message-bulk-actions.png)
+![Lista desplegable de acciones masivas para mensajes en cuarentena.](../../media/quarantine-user-message-bulk-actions.png)
 
 - ![Icono de liberar correo electrónico](../../media/m365-cc-sc-check-mark-icon.png) **Liberar correo mensajes**: Entrega el mensaje a su Bandeja de entrada.
 - ![Icono Quitar de cuarentena](../../media/m365-cc-sc-delete-icon.png)**Eliminar mensajes**: Después de hacer clic en **Sí** en la advertencia que aparece, los mensajes se elimina inmediatamente de la cuarentena sin enviarse a los destinatarios originales.

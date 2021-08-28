@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: c2eb18d6cce471dda73cefee65dfd024b81a815988e015ccc42fd891841b37b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 645ecafc1ebad3031dc7ca3b70f5ceb95e72af39
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865364"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569746"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
@@ -54,7 +54,7 @@ Crear el extractor abre la página del extractor. Aquí, podrá ver una lista de
 2. Seleccione **Siguiente archivo** para guardarlo automáticamente y abra el siguiente archivo de la lista en el visor. O seleccione **Guardar** y luego seleccione otro archivo de la lista de **Ejemplos etiquetados**.
 3. En el visor, repita los pasos 1 y 2, y luego repita hasta que haya guardado la etiqueta en los cinco archivos.
 
-    ![Configuración avanzada](../media/content-understanding/select-service-start-date.png) 
+    ![Configuración avanzada.](../media/content-understanding/select-service-start-date.png) 
 
  
 Una vez que etiquetó cinco archivos, se muestra un banner de notificación que le informa de pasar al entrenamiento. Puedes elegir entre etiquetar más documentos o avanzar a la formación. 

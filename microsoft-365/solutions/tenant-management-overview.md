@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Información general sobre la planeación, la implementación y el funcionamiento continuo de los Microsoft 365 inquilinos.
-ms.openlocfilehash: 18a4f4f39b2c3fd530aecb9202032a2b571a9c7f4cf38fec489dfa88a81a2a98
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5d98f715b9233a29c8710966099667075eae0020
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883244"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573384"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Administración de inquilinos para Microsoft 365 para empresas
 
@@ -47,7 +47,7 @@ El Microsoft 365 también incluye un inquilino de Azure Active Directory (Azure 
 
 A continuación le mostramos un ejemplo:
 
-![Un ejemplo Microsoft 365 inquilino con su inquilino de Azure AD](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Un ejemplo Microsoft 365 inquilino con su inquilino de Azure AD.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 *La administración de* inquilinos es la planeación, la implementación y el funcionamiento continuo de los Microsoft 365 inquilinos.
 
@@ -77,7 +77,7 @@ Estos son los elementos:
 
 Este es un ejemplo de un inquilino Microsoft 365 con todos estos elementos en su lugar.
 
-![Un ejemplo Microsoft 365 inquilino](../media/tenant-management-overview/tenant-management-tenant-config.png)
+![Un ejemplo Microsoft 365 inquilino.](../media/tenant-management-overview/tenant-management-tenant-config.png)
 
 En esta ilustración, el Microsoft 365 incluye:
 
@@ -90,7 +90,7 @@ En esta ilustración, el Microsoft 365 incluye:
 
 En las siguientes secciones y tabla se indican las funciones clave y las licencias para los pasos de esta solución.
 
-### <a name="tenant"></a>Tenant
+### <a name="tenant"></a>Espacio empresarial
 
 |Funcionalidad o característica|Description|Licencias|
 |---|---|---|
@@ -136,7 +136,7 @@ En las siguientes secciones y tabla se indican las funciones clave y las licenci
 |Movilidad y seguridad básicas|Protege y administra los dispositivos móviles de tus usuarios como iPhones, iPads, Androids y Windows teléfonos con este servicio integrado.|Microsoft 365 E3 o E5|
 ||||
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Siga estos pasos para configurar y administrar sus Microsoft 365 inquilinos.
 
@@ -146,7 +146,7 @@ Siga estos pasos para configurar y administrar sus Microsoft 365 inquilinos.
 4. [Migrar los servidores y datos Office local](tenant-management-migration.md)
 5. [Implementar la administración de dispositivos y aplicaciones](tenant-management-device-management.md)
 
-[![Los pasos para implementar y administrar un Microsoft 365 inquilino](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
+[![Los pasos para implementar y administrar un Microsoft 365 inquilino.](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
 Cada paso describe las opciones de implementación, resume los resultados y las tareas de mantenimiento en curso.
 

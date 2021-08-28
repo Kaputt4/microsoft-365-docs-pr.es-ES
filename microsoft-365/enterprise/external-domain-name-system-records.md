@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Una lista de referencia de registros externos del sistema de nombres de dominio que se usan al planear una implementación de Office 365.
-ms.openlocfilehash: e3f66326d314246b3cde5c88dfc00ea394d8119e92cf9dcd14840f559aa7cd6f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e54a25aef956784fd74ad65dc54357ea3db0f57c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53849197"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568930"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros externos del Sistema de nombres de dominio para Office 365
 
-![Dominio](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
+![Dominio.](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
 
 **¿Desea ver una lista personalizada de registros DNS para su organización de Office 365?** Puede [encontrar la información que necesita para crear los registros DNS de Office 365](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) para su dominio en Office 365.  
 

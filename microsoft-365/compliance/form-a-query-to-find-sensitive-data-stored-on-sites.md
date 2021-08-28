@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use prevención de pérdida de datos (DLP) en SharePoint Online para detectar documentos que contienen datos confidenciales en todo el espacio empresarial.
-ms.openlocfilehash: cd92fafe5a04de0339c0afb5f5b7cc2b4cc1772fc46dabe6477dd23aa981af23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2ecaa6b4b230db09095a9f9e5008dfdf0698043
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905586"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573228"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Crear una consulta para buscar datos confidenciales almacenados en los sitios
 
@@ -35,7 +35,7 @@ Los usuarios suelen almacenar datos confidenciales, como números de tarjeta de 
 
 Una consulta básica de DLP está formada por tres partes: SensitiveType, intervalo de recuento e intervalo de confianza. Como se muestra en el siguiente gráfico, **Es necesario SensitiveType:" \<type\> "** y ambos y **|\<count range\>** son **|\<confidence range\>** opcionales.
 
-![Consulta de ejemplo dividida entre obligatorio y opcional](../media/DLP-query-example-text.png)
+![Consulta de ejemplo dividida en obligatorio y opcional.](../media/DLP-query-example-text.png)
 
 ### <a name="sensitive-type---required"></a>Tipo confidencial: obligatorio
 
@@ -68,7 +68,7 @@ En los ejemplos siguientes se usan diferentes tipos, propiedades y operadores co
 
 ****
 
-|Query|Explicación|
+|Consulta|Explicación|
 |---|---|
 |`SensitiveType:"International Banking Account Number (IBAN)"`|El nombre puede parecer extraño porque es tan largo, pero es el nombre correcto para ese tipo confidencial. Asegúrese de usar nombres exactos del inventario [de tipos de información confidencial](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help). También puede usar el nombre de un tipo [de información confidencial personalizado](create-a-custom-sensitive-information-type.md) que creó para su organización.|
 |`SensitiveType:"Credit Card Number|1..4294967295|1..100"`|Esto devuelve documentos con al menos una coincidencia con el tipo confidencial "Número de tarjeta de crédito". Los valores de cada intervalo son los respectivos valores mínimos y máximos. Una forma más sencilla de escribir esta consulta es  `SensitiveType:"Credit Card Number"` , pero ¿dónde está la diversión en eso?|
@@ -85,7 +85,7 @@ No todas las consultas son iguales. En la tabla siguiente se proporcionan ejempl
 
 ****
 
-|Consulta no compatible|Reason|
+|Consulta no compatible|Motivo|
 |---|---|
 |`SensitiveType:"Credit Card Number|.."`|Debe agregar, al menos, un número.|
 |`SensitiveType:"NotARule"`|"NotARule" no es un nombre de tipo confidencial válido. Solo los nombres en el inventario [de tipos de información](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) confidencial funcionan en consultas DLP.|

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 21864ec94b4b7cd9ef19d23bb5c141d6458d63544361c52b023b6eaeafee6444
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7853a7b0439ee42cbe4b653f0572b055b19c3a2b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886247"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573648"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -61,7 +61,7 @@ Cuando usa esta solución de cifrado, la característica de **superusuario** gar
 
 2. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico**
     
-    ![Opciones de protección de etiquetas de confidencialidad para archivos y mensajes de correo electrónico](../media/protection-options-sensitivity-label.png)
+    ![Opciones de protección de etiquetas de confidencialidad para archivos y mensajes de correo electrónico.](../media/protection-options-sensitivity-label.png)
 
 4.  En la página **Cifrado** del asistente, seleccione una de las siguientes opciones:
     
@@ -71,7 +71,7 @@ Cuando usa esta solución de cifrado, la característica de **superusuario** gar
     
     - **Configurar las opciones de cifrado**: activa el cifrado y hace que la configuración de cifrado sea visible:
         
-        ![Opciones de etiqueta de confidencialidad para el cifrado](../media/encrytion-options-sensitivity-label.png)
+        ![Opciones de etiqueta de confidencialidad para el cifrado.](../media/encrytion-options-sensitivity-label.png)
         
         Las instrucciones para estas opciones de configuración están en la sección [Establecer la configuración de cifrado](#configure-encryption-settings).
 
@@ -125,7 +125,7 @@ Por otra parte, si tiene una etiqueta de confidencialidad denominada **Contratos
 
 Elegir si asignar permisos ahora o permitir a los usuarios asignar permisos:
 
-![Opción para agregar permisos definidos por el usuario o un administrador](../media/sensitivity-label-user-or-admin-defined-permissions.png)
+![Opción para agregar permisos definidos por el usuario o un administrador.](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 ## <a name="assign-permissions-now"></a>Asignar permisos ahora
 
@@ -137,7 +137,7 @@ Use las siguientes opciones para controlar quién puede tener acceso al correo e
 
 Configuración de control de acceso para contenido cifrado:
 
-![Configuración de permisos definidos por el administrador](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![Configuración de permisos definidos por el administrador.](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licencia de uso de administración de derechos para el acceso sin conexión
 
@@ -159,7 +159,7 @@ Puede conceder permisos a usuarios específicos para que solo pueden interactuar
 
 Asignación de permisos:
 
-![Opciones para asignar permisos a usuarios](../media/Sensitivity-Assign-permissions-settings.png)
+![Opciones para asignar permisos a usuarios.](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### <a name="add-users-or-groups"></a>Agregar usuarios o grupos
 
@@ -202,13 +202,13 @@ Al elegir qué permisos permitir para los usuarios o grupos, puede seleccionar e
 
 Para obtener más información sobre cómo seleccionar los permisos adecuados, consulte [derechos y descripciones de uso](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Opciones para elegir permisos predefinidos o personalizados](../media/Sensitivity-Choose-permissions-settings.png)
+![Opciones para elegir permisos predefinidos o personalizados.](../media/Sensitivity-Choose-permissions-settings.png)
 
 Tenga en cuenta que la misma etiqueta puede conceder diferentes permisos a diferentes usuarios. Por ejemplo, una sola etiqueta puede asignar a algunos usuarios como revisor y a otros usuarios como coautor, como se muestra en la siguiente captura.
 
 Para ello, agregue usuarios o grupos, asigne sus permisos y guarde las opciones de configuración. Luego repita estos pasos, agregue usuarios y asigne permisos para guardar la configuración de nuevo. Puede repetir esta configuración tantas veces como sea necesario para definir permisos diferentes para distintos usuarios.
 
-![Usuarios distintos con permisos diferentes](../media/Sensitivity-Multiple-users-permissions.png)
+![Usuarios distintos con permisos diferentes.](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>El emisor de administración de derechos (el usuario que aplica la etiqueta de confidencialidad) siempre tiene control total
 
@@ -263,13 +263,13 @@ Una etiqueta de confidencialidad que permite a los usuarios asignar permisos se 
 
 Configurar los permisos asignados por el usuario:
 
-![Configuración de cifrado para los permisos definidos por el usuario](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![Configuración de cifrado para los permisos definidos por el usuario.](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### <a name="outlook-restrictions"></a>Restricciones de Outlook
 
 En Outlook, cuando un usuario aplica una etiqueta de confidencialidad que le permite asignar permisos a un mensaje, puede elegir la opción **No reenviar** o **Solo cifrar**. El usuario verá el nombre y la descripción de la etiqueta en la parte superior del mensaje, lo que indica que se está protegiendo el contenido. A diferencia de Word, PowerPoint y Excel (vea la [siguiente sección](#word-powerpoint-and-excel-permissions)), no se pide a los usuarios que seleccionen permisos específicos.
 
-![Etiqueta de confidencialidad aplicada al mensaje en Outlook](../media/sensitivity-label-outlook-protection-applied.png)
+![Etiqueta de confidencialidad aplicada a mensajes en Outlook.](../media/sensitivity-label-outlook-protection-applied.png)
 
 Cuando cualquiera de estas opciones se aplica a un correo electrónico, este se cifra y los destinatarios tienen que autenticarse. Luego, el destinatario obtiene automáticamente derechos de uso restringido:
 
@@ -293,7 +293,7 @@ Por ejemplo, con el cliente de etiquetas unificado de Azure Information Protecti
 - Seleccionar organizaciones, usuarios o grupos. Esto puede incluir usuarios dentro o fuera de su organización.
 - Establecer una fecha de expiración, después de la que los usuarios seleccionados no pueden tener acceso al contenido. Para obtener más información, vea la sección anterior [Licencia de uso de Rights Management para el acceso sin conexión](#rights-management-use-license-for-offline-access).
 
-![Opciones de protección para el usuario con permisos personalizados](../media/sensitivity-aip-custom-permissions-dialog.png)
+![Opciones de protección para el usuario con permisos personalizados.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 Para las etiquetas integradas, los usuarios verán el mismo cuadro de diálogo si seleccionan lo siguiente:
 
@@ -305,7 +305,7 @@ Para las etiquetas integradas, los usuarios verán el mismo cuadro de diálogo s
 
 Para cada ejemplo que se muestra a continuación, lleve a cabo la configuración desde la página **Cifrado** del asistente, cuando **Establecer la configuración de cifrado** esté seleccionada:
 
-![Opción Aplicar cifrado en el Asistente de etiquetas de confidencialidad](../media/apply-encryption-option.png)
+![Opción de aplicar cifrado en el Asistente de etiquetas de confidencialidad.](../media/apply-encryption-option.png)
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>Ejemplo 1: etiqueta que aplica No reenviar para enviar un correo electrónico cifrado a una cuenta de Gmail
 

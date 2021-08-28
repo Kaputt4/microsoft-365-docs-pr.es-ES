@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a98f3a4d1bda182331f81de0c0c5cf232940819c864b638fb738ae192ff9cc4f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f1318b2c062e3db848b60edbb9ad60e1b38723f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854505"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573576"
 ---
 # <a name="windows-10-location-service"></a>Servicio de ubicación de Windows 10
 
@@ -45,7 +45,7 @@ Si opta por usar el servicio de ubicación, usamos la configuración mínima nec
 
 Escritorio administrado de Microsoft la configuración **De privacidad de** ubicación en Windows **configuración** para Permitir el acceso a la ubicación en este **dispositivo**. La interfaz de usuario tiene este aspecto:
 
- :::image type="content" source="../../media/MMD-location-services-UI.png" alt-text="Configuración de ubicación en Windows configuración":::
+ :::image type="content" source="../../media/MMD-location-services-UI.png" alt-text="Configuración de ubicación en Windows configuración.":::
 
 > [!NOTE]
 > Si opta por usar el servicio de ubicación, esto solo se aplica al Windows sistema operativo en sí. Las aplicaciones no pueden usar servicios de ubicación. Cada usuario puede elegir si desea permitir que las aplicaciones accedan a su ubicación.

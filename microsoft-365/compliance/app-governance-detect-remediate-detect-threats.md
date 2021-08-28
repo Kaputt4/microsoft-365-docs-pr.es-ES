@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Corregir amenazas de la aplicación.
-ms.openlocfilehash: 3b84594aa990516b6ecb340d6b8ffbd8d6d1a544c9c1e3dddeb691044e221424
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 103616c9bee47455b75e0750194d876fc7a13600
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836458"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564235"
 ---
 # <a name="remediate-app-threats"></a>Corregir amenazas de la aplicación
 
@@ -27,7 +27,7 @@ ms.locfileid: "53836458"
 
 Las amenazas de aplicación se corrigen a su usuario de Microsoft 365 a través de la página **Alertas** de la sección de gobernanza de aplicaciones de Microsoft del Centro de cumplimiento de Microsoft 365.
 
-![Página de resumen de alertas de gobernanza de aplicaciones en el Centro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
+![Página de resumen de alertas de gobernanza de aplicaciones en el Centro de cumplimiento de Microsoft 365.](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
 
 La página **Alertas** enumera de forma predeterminada las nuevas alertas de amenazas generadas por la gobernanza de aplicaciones y las alertas basadas en directivas generadas por las directivas de aplicaciones activas. Puede ver los detalles de una alerta específica seleccionándola, lo cual abre un panel de alertas con información de alerta adicional y la capacidad de cambiar su estado.
 

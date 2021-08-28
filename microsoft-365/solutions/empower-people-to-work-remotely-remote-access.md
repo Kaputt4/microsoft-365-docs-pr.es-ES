@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Asegúrese de que los trabajadores remotos puedan tener acceso a los recursos locales y optimizar el acceso a los servicios en la nube de Microsoft 365.
-ms.openlocfilehash: 2097507c79d9c2f1738e0fee45464e90e7887551836fd8895c99cfb22de1d094
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 52711e0c43f4121728968a0d2ddcc0e0c9b25e3d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816804"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566495"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Paso 2: Proporcionar acceso remoto a los servicios y aplicaciones locales
 
@@ -39,7 +39,7 @@ Estas son las principales configuraciones para acceso remoto:
 
 Vea este diagrama de flujo para ver las opciones de configuración de acceso remoto descritas en este artículo.
 
-![Diagrama de flujo de configuración de acceso remoto](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
+![Diagrama de flujo de configuración de acceso remoto.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
 
 Con conexiones de acceso remoto, también puede usar [Escritorio remoto](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop) para conectar a los usuarios a un equipo local. Por ejemplo, un trabajador remoto puede usar Escritorio remoto para conectarse al equipo en su oficina desde su dispositivo Windows, iOS o Android. Una vez que estén conectados de forma remota, podrán usarlo como si estuvieran sentados frente a él.
 
@@ -49,7 +49,7 @@ Si los trabajadores remotos usan un cliente VPN tradicional para obtener acceso 
 
 Sin el túnel dividido, todo el tráfico de trabajo remoto se envía por la conexión VPN, donde debe reenviarse a los dispositivos perimetrales de la organización, procesarse y, después, enviarse por Internet.
 
-![Tráfico de red de clientes de VPN sin túneles](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
+![Tráfico de red de clientes de VPN sin túneles.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
 El tráfico de Microsoft 365 debe tomar una ruta indirecta a través de su organización, que podría reenviarse a un punto de entrada de la red de Microsoft lejos de la ubicación física del cliente VPN. Esta ruta indirecta agrega latencia al tráfico de la red y disminuye el rendimiento general.
 
@@ -59,7 +59,7 @@ Para optimizar el acceso a los recursos en la nube de Microsoft 365, configure l
 
 Este es el flujo de tráfico resultante, en el que la mayoría del tráfico para las aplicaciones en la nube de Microsoft 365 omiten la conexión VPN.
 
-![Tráfico de red de clientes de VPN sin túneles](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
+![Tráfico de red de clientes de VPN con túneles.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
 Esto permite que el cliente VPN envíe y reciba tráfico esencial de servicio en la nube de Microsoft 365 directamente por Internet y al punto de entrada más cercano a la red de Microsoft.
 
@@ -71,7 +71,7 @@ Si sus trabajadores remotos no usan un cliente VPN tradicional y sus grupos y cu
 
 Estos son los componentes del proxy de la aplicación Azure AD.
 
-![Componentes del proxy de la aplicación Azure AD](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
+![Componentes del proxy de la aplicación Azure AD.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
 Para más información, vea esta [información general sobre el proxy de aplicación de Azure AD](/azure/active-directory/manage-apps/application-proxy).
 
@@ -84,7 +84,7 @@ Si sus trabajadores remotos no usan un cliente VPN tradicional y tiene aplicacio
 
 Una conexión VPN de P2S crea una conexión segura desde el dispositivo de un trabajador remoto a la red de la organización a través de una red virtual de Azure.
 
-![Componentes de la red privada virtual de Azure P2S](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
+![Componentes de la red privada virtual de Azure P2S.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
 Para obtener más información, vea esta [introducción a la red virtual privada de P2S](/azure/vpn-gateway/point-to-site-about).
 
@@ -95,7 +95,7 @@ Para obtener más información, vea esta [introducción a la red virtual privada
 
 Para admitir a los trabajadores remotos que solo pueden usar sus dispositivos personales y no administrados, use Windows Virtual Desktop en Azure para crear y asignar escritorios virtuales para que los usuarios los usen desde casa. Las PC virtualizadas pueden actuar como las PC conectadas a la red de su organización.
 
-![Componentes de Azure en Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
+![Componentes de Azure en Windows Virtual Desktop.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
 Para obtener más información, consulte [esta introducción a Windows Virtual Desktop](/azure/virtual-desktop/overview).
 
@@ -106,7 +106,7 @@ Para obtener más información, consulte [esta introducción a Windows Virtual D
 
 Si usa los servicios de escritorio remoto (RDS) para permitir que los empleados se conecten a equipos con Windows de su red local, debería usar una puerta de enlace de servicios de escritorio remoto de Microsoft en su red perimetral. La puerta de enlace usa la Seguridad de la capa de transporte (TLS) para cifrar el tráfico e impide que el equipo local que hospeda RDS se exponga directamente a Internet.
 
-![Conexiones de los servicios de escritorio remoto con la puerta de enlace de servicios de escritorio remoto](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
+![Conexiones de los servicios de escritorio remoto con la puerta de enlace de servicios de escritorio remoto.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 
 Vea [este artículo](https://www.microsoft.com/security/blog/2020/04/16/security-guidance-remote-desktop-adoption/) para obtener más información.
 
@@ -130,6 +130,6 @@ Después de implementar una solución de acceso remoto para los trabajadores rem
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 3: Implementar los servicios de cumplimiento y seguridad de Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
+[![Paso 3: Implementar los servicios de cumplimiento y seguridad de Microsoft 365.](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
 
 Continúe con el [paso 3](empower-people-to-work-remotely-security-compliance.md) para implementar los servicios de seguridad y cumplimiento de Microsoft 365 para proteger sus aplicaciones, datos y dispositivos.

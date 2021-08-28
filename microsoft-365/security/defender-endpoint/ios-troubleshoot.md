@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 713abbf65edcf36c1e9015093c4f4933732a5fec
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 9a77662d1473a56031a30e44a1d39df8e3964541
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257604"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573564"
 ---
-# <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas frecuentes en Microsoft Defender para endpoint en iOS
+# <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -53,7 +53,7 @@ Aunque está habilitado de forma predeterminada, puede haber algunos casos que r
 1. Desactiva la **Conectar a petición** para deshabilitar VPN.
 
     > [!div class="mx-imgBorder"]
-    > ![Configuración de VPN conectarse a petición](images/ios-vpn-config.png)
+    > ![Los config de VPN se conectan a petición.](images/ios-vpn-config.png)
 
 > [!NOTE]
 > La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar Protección web, abra la aplicación Microsoft Defender para endpoint en el dispositivo y haga clic o pulse **Iniciar VPN**.
@@ -91,7 +91,7 @@ Microsoft Defender para endpoint le protege contra la suplantación de identidad
 Además, se muestra una notificación en el dispositivo iOS. Al pulsar en la notificación se abre la siguiente pantalla para que el usuario revise los detalles.
 
 > [!div class="mx-imgBorder"]
-> ![Imagen del sitio notificado como notificación no segura](images/ios-phish-alert.png)
+> ![Imagen del sitio notificado como notificación no segura.](images/ios-phish-alert.png)
 
 ## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>El dispositivo no se ve en la consola de Defender for Endpoint después de la incorporación.
 

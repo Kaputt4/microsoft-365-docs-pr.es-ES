@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión.
-ms.openlocfilehash: a05afb4ac8d5c66e1bbcbba0e8cd8e13b3d8a6d46c73899ea40e5205898036e4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0de08bd27f2222589343fe66715198645fbeb29
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886048"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567465"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión
 
@@ -55,13 +55,13 @@ El proxy estático se puede configurar mediante la directiva de grupo (GP). La d
 
 2. Establece la opción en **Habilitado** y seleccione **Deshabilitar el uso de proxy autenticado**:
 
-   ![Imagen de la configuración de directiva de grupo 1](../media/atp-gpo-proxy1.png)
+   ![Imagen de la configuración de directiva de grupo 1.](../media/atp-gpo-proxy1.png)
 
 3. Abra **Plantillas administrativas > Componentes de Windows > Recopilación de datos y versiones preliminares > Configurar Experiencia del usuario y telemetría asociadas**:
 
    Configurar el servidor proxy
 
-   ![Imagen de la configuración de directiva de grupo 2](../media/atp-gpo-proxy2.png)
+   ![Imagen de la configuración de directiva de grupo 2.](../media/atp-gpo-proxy2.png)
 
    La directiva establece dos valores del registro `TelemetryProxyServer` como REG_SZ y `DisableEnterpriseAuthProxy` como REG_DWORD en la clave del registro `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 

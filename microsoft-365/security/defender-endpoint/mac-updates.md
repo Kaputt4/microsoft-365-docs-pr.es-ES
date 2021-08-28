@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d64b3998aabf7ff6435ea9cf32518eb4f827dd833fd05a650339ec3a96d25ef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dd299db1f8894851cb6d26d82756014b942c8240
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868337"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573532"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en macOS
 
@@ -42,7 +42,7 @@ Microsoft publica periódicamente actualizaciones de software para mejorar el re
 
 Para actualizar Microsoft Defender para Endpoint en macOS, se usa un programa denominado Microsoft AutoUpdate (MAU). De forma predeterminada, MAU comprueba automáticamente las actualizaciones diariamente, pero puede cambiarla a semanal, mensual o manual.
 
-![Captura de pantalla mau](images/MDATP-34-MAU.png)
+![Captura de pantalla mau.](images/MDATP-34-MAU.png)
 
 Si decide implementar actualizaciones mediante las herramientas de distribución de software, debe configurar MAU para comprobar manualmente si hay actualizaciones de software. Puede implementar preferencias para configurar cómo y cuándo MAU busca actualizaciones para los Mac de su organización.
 
@@ -81,7 +81,7 @@ El `Current` canal contiene la versión más estable del producto.
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|ChannelName|
 |**Tipo de datos**|Cadena|
-|**Posibles valores**|Beta <p> Preview <p> Current|
+|**Posibles valores**|Beta <p> Vista previa <p> Current|
 |||
 
 >[!WARNING]

@@ -20,12 +20,12 @@ search.appverid:
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico comprometida utilizando las herramientas disponibles en Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc34894998fda5ec28db6752f50c9122d3a2b416c5e5d7bd443e756681ce50b7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 193afd61509b7361ac18dd32d827182752fb61ed
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56815374"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563347"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Responder a una cuenta de correo electrónico en peligro
 
@@ -137,7 +137,7 @@ Para desbloquear el envío de correo de un buzón, siga los procedimientos descr
 4. Abra el Centro de administración de Exchange (EAC) en <https://admin.exchange.microsoft.com> y vaya a **Destinatarios** \> **Buzones**.
 
 5. Busque y seleccione el usuario. Se abrirá el control flotante de detalles del buzón y deberá seguir estos pasos:
-   - En la sección **Aplicaciones de correo electrónico**, bloquee todas las opciones de configuración disponibles. Para ello, mueva el botón de alternancia a la derecha ![Deshabilitar](../../media/scc-toggle-on.png):
+   - En la sección **Aplicaciones de correo electrónico**, bloquee todas las opciones de configuración disponibles. Para ello, mueva el botón de alternancia a la derecha ![Deshabilitar.](../../media/scc-toggle-on.png):
      - **Outlook en la Web**
      - **Outlook para escritorio (MAPI)**
      - **Servicios Web de Exchange**
@@ -171,7 +171,7 @@ Para desbloquear el envío de correo de un buzón, siga los procedimientos descr
    1. Seleccione **Roles** \> **Roles de administrador**.
    2. En la página **Roles de administrador**, seleccione manualmente cada grupo de roles y, en el panel de detalles, seleccione la pestaña **Asignado** para comprobar las cuentas de usuario. Si el grupo de roles contiene la cuenta de usuario, siga estos pasos:
       1. Seleccione la cuenta de usuario.
-      2. Haga clic en el ![icono Eliminar](../../media/m365-cc-sc-delete-icon.png).
+      2. Haga clic en el ![icono Eliminar.](../../media/m365-cc-sc-delete-icon.png).
 
          Cuando haya terminado, haga clic en **Guardar**.
 

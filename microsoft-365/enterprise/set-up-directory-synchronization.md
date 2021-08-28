@@ -22,22 +22,22 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Obtenga información sobre cómo configurar la sincronización de directorios entre Microsoft 365 y su Active Directory local.
-ms.openlocfilehash: db6fc46eb4659b0c41f46b2828044af3bdaf02e2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: f6537e1c813e564b728891ffb13f644c3850a07e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356197"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574020"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurar la sincronización de directorios para Microsoft 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Microsoft 365 usa un inquilino Azure Active Directory (Azure AD) para almacenar y administrar identidades para autenticación y permisos para obtener acceso a recursos basados en la nube. 
 
 Si tiene un bosque o dominio de Servicios de dominio de Active Directory (AD DS) local, puede sincronizar sus cuentas de usuario, grupos y contactos de AD DS con el inquilino de Azure AD de su suscripción de Microsoft 365. Se trata de una identidad híbrida para Microsoft 365. Estos son sus componentes.
 
-![Componentes de sincronización de directorios para Microsoft 365](../media/about-microsoft-365-identity/hybrid-identity.png)
+![Componentes de sincronización de directorios para Microsoft 365.](../media/about-microsoft-365-identity/hybrid-identity.png)
 
 Azure AD Conectar se ejecuta en un servidor local y sincroniza su AD DS con el inquilino de Azure AD. Junto con la sincronización de directorios, también puede especificar estas opciones de autenticación:
 

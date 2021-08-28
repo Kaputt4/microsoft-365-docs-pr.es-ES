@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Architecture
 description: Use Guías del laboratorio de pruebas para crear Microsoft 365 soluciones y escenarios en un entorno de desarrollo y pruebas.
-ms.openlocfilehash: 2e7544c7d1b39e8cba198b0fce6bbf2814e7332d0af00bdeca748b4b660f8a1a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d380c77d9a94b5c08fe97b9874d15e0272711653
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816636"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573360"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>Guías del entorno de pruebas para soluciones y escenarios
 
@@ -32,7 +32,7 @@ Las TLG están diseñadas para ser modulares. Se desarrollan entre sí para crea
 
 Las TLG también le permiten crear entornos representativos para desarrollo y prueba de aplicaciones, también conocidos como entornos de desarrollo y prueba.
   
-![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 Pruebe [esta Guía del laboratorio de pruebas](team-security-isolation-dev-test.md) para configurar un equipo con aislamiento de seguridad.
 

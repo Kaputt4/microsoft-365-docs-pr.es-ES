@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protéjase contra el phishing y otros ataques con Microsoft 365.
-ms.openlocfilehash: a31922fe269f42390ffc0d742287487e4288b5d2938741e36ecaf3d79bad5889
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2bce59394d5ed6a402983798c656e3515ceb08f2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803099"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573336"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protegerse contra la suplantación de identidad (phishing) y otros ataques
 
@@ -69,7 +69,7 @@ Ayude a sus clientes a confiar en sus comunicaciones agregando una firma digital
 
 Descargue esta infografía con sugerencias para usted y los miembros de su equipo de campaña:
 
-[![La ayuda para proteger el gráfico de información de campaña](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[![Ayuda a proteger el gráfico de información de la campaña.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)  |  [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 

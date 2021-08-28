@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector de datos CellTrust SL2 para importar y archivar datos de comunicaciones móviles.
-ms.openlocfilehash: 802d5e08354d5fbdc179c01a7c72145a5d0c7ac3f12907b06632cd5db758ee0f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65f887e067b84414fe09f2ff39b3f1c0d7012f5b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861104"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573324"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archivar datos de CellTrust SL2 a Microsoft 365
 
@@ -29,7 +29,7 @@ Después de importar datos a buzones de usuario en Microsoft 365, puede aplicar 
 
 La plataforma SL2 de CellTrust captura datos de comunicación de varios orígenes. Los orígenes de datos sl2 son de persona a persona (P2P) o de aplicación a persona (A2P). El proceso descrito en este artículo solo pertenece a orígenes de datos P2P. Para todos los orígenes de datos P2P, al menos una parte de la colaboración es un usuario sl2 que está suscrito al servicio SL2. En la siguiente introducción se explica el proceso de uso de CellTrust SL2 Data Connector en Microsoft 365.
 
-![Flujo de trabajo de archivado para el servicio CellTrust SL2](../media/CellTrustSL2ConnectorWorkflow.png)
+![Flujo de trabajo de archivado para el servicio CellTrust SL2.](../media/CellTrustSL2ConnectorWorkflow.png)
 
 1. Los usuarios de SL2 envían y reciben datos desde y hacia los servicios SL2 en Microsoft Azure.
 
@@ -55,7 +55,7 @@ El primer paso es crear un conector de datos en el Centro de cumplimiento de Mic
 
 2. En la **pestaña Información** general, haga clic **en Filtrar** y seleccione **Por CellTrust** y, a continuación, aplique el filtro.
 
-   ![Configurar el filtro para mostrar conectores CellTrust](../media/DataConnectorsFilter.png)
+   ![Configure el filtro para mostrar los conectores cellTrust.](../media/DataConnectorsFilter.png)
 
 3. Haga **clic en CellTrust SL2 (versión preliminar).**
 
@@ -81,7 +81,7 @@ El siguiente paso es iniciar sesión en una cuenta de administrador para su domi
 
 3. Habilite las unidades de negocio que desea archivar. Al seleccionar el dominio no se seleccionarán automáticamente las us. Debe habilitar cada unidad organizativa por separado para archivarla.
 
-   ![Habilitar US para archivar](../media/EnableCellTrustOUs.png)
+   ![Habilitar las US para archivar.](../media/EnableCellTrustOUs.png)
 
 4. Cuando haya terminado con las selecciones, cierre la ventana del explorador y vuelva a la página del asistente en Centro de cumplimiento de Microsoft 365. Después de unos segundos, el asistente avanza automáticamente al siguiente paso de asignación de usuarios.
 

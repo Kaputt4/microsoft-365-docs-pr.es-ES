@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Información general sobre el proceso de planeación para la prevención de pérdida de datos
-ms.openlocfilehash: 2f1c37cee6b3fee9d317314b67736d627e4f7e4306be7f063383656e54fe374d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 130675ad15a872ed14041289fb24aeec471014ff
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814557"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573264"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planear la prevención de pérdida de datos (DLP)
 
@@ -113,7 +113,7 @@ El plan de implementación debe incluir:
 
 Documentar cómo la organización va a pasar de su estado inicial al estado final deseado es esencial para comunicarse con las partes interesadas y establecer el ámbito del proyecto. Este es un conjunto de pasos que se usan habitualmente para implementar DLP. Querrás más detalles que esto, pero puedes usarlo para enmarcar la ruta de adopción de DLP.
 
-![gráfico que muestra el orden común para implementar DLP](../media/dlp-deployment-planning.png)
+![gráfico que muestra el orden común para implementar DLP.](../media/dlp-deployment-planning.png)
 
 #### <a name="sensitive-item-discovery"></a>Detección de elementos confidenciales
 
@@ -177,15 +177,15 @@ Si está creando directivas DLP con un gran impacto potencial, se recomienda seg
     
 3. **Comience el cumplimiento completo de las directivas** para que se apliquen las acciones en las reglas y se proteja el contenido. Continúe supervisando los informes DLP y los informes de incidentes o las notificaciones para asegurarse de que los resultados sean los deseados. 
 
-    ![Opciones para usar el modo de prueba y activar la directiva](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Opciones para usar el modo de prueba y activar la directiva.](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
     Puede desactivar una directiva DLP en cualquier momento, lo que afecta a todas las reglas de la directiva. No obstante, también es posible desactivar reglas individuales mediante el botón de alternancia de estado del editor de reglas.
 
-    ![Opciones para desactivar una regla de una directiva](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+    ![Opciones para desactivar una regla en una directiva.](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
     También puede cambiar la prioridad de varias reglas en una directiva. Para hacerlo, abra una directiva para editarla. En una fila de una regla, elija el signo de puntos suspensivos (**...**) y elija una opción, como **Bajar** o **Llevar al final**. 
 
-    ![Establecer la prioridad de la regla](../media/dlp-set-rule-priority.png)
+    ![Establecer prioridad de regla.](../media/dlp-set-rule-priority.png)
 
 #### <a name="end-user-training"></a>Aprendizaje para el usuario final
 
@@ -222,5 +222,5 @@ Las normativas, las leyes y los estándares del sector a los que está sujeta su
 ### On-premises Scanner
 -->
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)

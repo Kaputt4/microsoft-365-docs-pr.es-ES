@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Este artículo proporciona las instrucciones más recientes para optimizar de forma segura la conectividad de red de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8f710793dd8ce1e5a2835a05bbf366559a38a0aa
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7aebf4e210c3e4feb94ec3c6deb6523e5742152c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247510"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568365"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principios de conectividad de red de Microsoft 365
 
@@ -63,7 +63,7 @@ El objetivo principal del diseño de la red debe ser minimizar la latencia media
 <a name="BKMK_P1"> </a>
 ### <a name="identify-and-differentiate-microsoft-365-traffic"></a>Identificar y diferenciar el tráfico de Microsoft 365
 
-![Identificar el tráfico de Microsoft 365](../media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
+![Identificar el tráfico de Microsoft 365.](../media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
   
 Identificar el tráfico de red 365 de Microsoft es el primer paso para poder diferenciar dicho tráfico del tráfico de red genérico de Internet. La conectividad de Microsoft 365 puede optimizarse mediante la implementación de una combinación de enfoques como la optimización de rutas de red, reglas de firewall, la configuración de proxy del explorador y la omisión de dispositivos de inspección de red en determinados puntos de conexión.
   
@@ -76,7 +76,7 @@ Microsoft publica ahora todos los puntos de conexión de Microsoft 365 como un s
 <a name="BKMK_P2"> </a>
 ### <a name="egress-network-connections-locally"></a>Conexiones de red de salida de forma local
 
-![Conexiones de red de salida de forma local](../media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![Conexiones de red de salida de forma local.](../media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
 La salida local de DNS y de Internet resulta fundamental para reducir la latencia de la conexión y garantizar que las conexiones del usuario se realicen al punto más cercano de entrada a los servicios de Microsoft 365. Dado que se trata de una topología de la red compleja, es importante implementar juntas la salida local de DNS y la salida local de Internet. Para más información sobre cómo Microsoft 365 redirige conexiones de cliente al punto de entrada más cercano, consulte el artículo [Conectividad de cliente](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
   
@@ -86,11 +86,11 @@ En una arquitectura de red tradicional, todas las conexiones de Internet salient
   
 Las redes WAN empresariales suelen diseñarse para transmitir en la red de retorno (backhaul) el tráfico de red a una oficina central de la empresa para su inspección antes de su salida a Internet, normalmente mediante uno o varios servidores proxy. El siguiente diagrama ilustra esta tipología de red.
   
-![Modelo de red empresarial tradicional](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
+![Modelo de red empresarial tradicional.](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
   
 Dado que Microsoft 365 se ejecuta en la Red Global de Microsoft, que incluye servidores front-end distribuidos por todo el mundo, con frecuencia se podrá encontrar servidor front-end cerca de la ubicación del usuario. Si se proporciona la salida local de Internet y se configuran los servidores internos DNS para ofrecer resolución de nombres locales para los puntos de conexión de Microsoft 365, el tráfico de red destinado a Microsoft 365 puede conectarse a los servidores front-end de Microsoft 365 más cercanos al usuario. El siguiente diagrama muestra un ejemplo de una topología de red que permite a usuarios —que se conectan desde la oficina principal, desde la sucursal y desde ubicaciones remotas— seguir la ruta más corta al punto de entrada de Microsoft 365 más cercano.
   
-![Modelo de red WAN con puntos de salida regionales](../media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
+![Modelo de red WAN con puntos de salida regionales.](../media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
   
 Acortar de esta forma la ruta de red a los puntos de entrada de Microsoft 365 puede mejorar el rendimiento de la conectividad y la experiencia del usuario final en Microsoft 365. Asimismo, puede contribuir a reducir el impacto que los cambios futuros en la arquitectura de la red puedan tener en el rendimiento y la confiabilidad de Microsoft 365.
   
@@ -98,7 +98,7 @@ Además, las solicitudes DNS pueden introducir latencia si el servidor DNS de re
   
 Aunque las salidas regionales pueden funcionar bien con Microsoft 365, el modelo de conectividad óptimo consiste en ofrecer siempre la salida de red en la ubicación del usuario, independientemente de si se encuentra en la red corporativa o en ubicaciones remotas como hogares, hoteles, cafeterías y aeropuertos. A continuación, un diagrama que representa el modelo de salida local directo.
   
-![Arquitectura de red de salida local](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Arquitectura de red de salida local.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
   
 Para aprovechar la arquitectura de puerta frontal de servicio distribuido de la Red Global de Microsoft, las empresas que han adoptado Microsoft 365 deben asegurarse de que las conexiones de los usuarios a Microsoft 365 empleen la ruta más corta posible al punto de entrada más cercano de la Red Global de Microsoft. La arquitectura de la red de salida local realiza esto al permitir redirigir el tráfico de Microsoft 365 a la salida más cercana, sea cual sea la ubicación del usuario.
   
@@ -111,7 +111,7 @@ La arquitectura de salida local presenta las siguientes ventajas respecto al mod
 <a name="BKMK_P3"> </a>
 ### <a name="avoid-network-hairpins"></a>Evitar las redirecciones de red
 
-![Evite las redirecciones](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
+![Evite las redirecciones.](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
 Como regla general, la ruta más corta y directa entre el usuario y el punto de conexión más cercano de Microsoft 365 le ofrecerá el mejor rendimiento. Las redirecciones de red tienen lugar cuando el tráfico WAN o VPN con un destino en particular se dirige por primera vez a otra ubicación intermedia (como puede ser una pila de seguridad, un agente de acceso a la nube o una puerta de enlace web basada en la nube), lo que introduce latencia y un posible redireccionamiento a un extremo geográficamente lejano. Las redirecciones de red también pueden deberse a las ineficiencias de enrutamiento/emparejamiento o a búsquedas DNS no ideales (remotas).
   
@@ -124,7 +124,7 @@ Debido a la gran cantidad de ubicaciones distribuidas con puntos de entrada de M
 <a name="BKMK_P4"> </a>
 ### <a name="assess-bypassing-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Evaluar la omisión de servidores proxy, dispositivos de inspección del tráfico y tecnologías de seguridad duplicadas
 
-![Omitir servidores proxy, dispositivos de inspección del tráfico y tecnologías de seguridad duplicadas](../media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
+![Omitir servidores proxy, dispositivos de inspección del tráfico y tecnologías de seguridad duplicadas.](../media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
 Los clientes empresariales deberían revisar sus métodos de seguridad y de reducción de riesgos de la red específicamente para el tráfico vinculado de Microsoft 365, así como usar las características de seguridad de Microsoft 365 para reducir su dependencia de tecnologías de seguridad de red para el tráfico de red de Microsoft 365 que son invasivas y costosas y tienen un impacto en el rendimiento.
   

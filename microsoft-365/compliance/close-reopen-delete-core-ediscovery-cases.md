@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo administrar los casos principales de exhibición de documentos electrónicos. Esto incluye cerrar un caso, volver a abrir un caso cerrado y eliminar un caso.
-ms.openlocfilehash: 407956540e8881f34244e920fe9e49e6fe48ca7f417d084dcbd1845a2c53c4f6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 67961d2404f54ca3fbb33dabc71508ba65bfa205
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906153"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573300"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos principal
 
@@ -36,7 +36,7 @@ Cuando se complete el caso legal o la investigación admitida por un caso de exh
 
 - Cerrar un caso solo desactiva las retenciones que están asociadas a ese caso. Si otras retenciones se colocan en una ubicación de contenido (como una retención por juicio, una directiva de retención o una retención de un caso de exhibición de documentos electrónicos principal diferente) esas retenciones se mantendrán.
 
-- El caso sigue estando en la página eDiscovery principal de la Centro de cumplimiento de Microsoft 365. Se conservan los detalles, las retenciones, las búsquedas y los miembros de un caso cerrado.
+- El caso sigue estando en la página eDiscovery principal de la Centro de cumplimiento de Microsoft 365. Se conservan los detalles, las suspensiones, las búsquedas y los miembros de un caso cerrado.
 
 - Puede editar un caso después de cerrarlo. Por ejemplo, puede agregar o quitar miembros, crear búsquedas y exportar resultados de búsqueda. La diferencia principal entre los casos activos y cerrados es que las retenciones de exhibición de documentos electrónicos se apagan cuando se cierra un caso.
 
@@ -46,7 +46,7 @@ Para cerrar un caso:
 
 2. Haga clic en el nombre del caso que desea cerrar.
 
-   ![Cerrar caso en la página principal del caso](../media/eDiscoveryCaseHomePage.png)
+   ![Cerrar caso en la página principal del caso.](../media/eDiscoveryCaseHomePage.png)
 
 3. En la página principal, en **Estado**, haga clic **en Cerrar caso**.
 
@@ -68,7 +68,7 @@ Al volver a abrir un caso, las retenciones de exhibición de documentos electró
 
 2. Haga clic en el nombre del caso que desea volver a abrir.
 
-   ![Volver a abrir un caso cerrado](../media/eDiscoveryCaseHomePageReopen.png)
+   ![Vuelva a abrir un caso cerrado.](../media/eDiscoveryCaseHomePageReopen.png)
 
 3. En la página principal, en **Estado,** haga clic **en Abrir caso**.
 
@@ -98,7 +98,7 @@ Para eliminar una retención de exhibición de documentos electrónicos:
 
 3. En la página desplegable, haga clic en **Eliminar**.
 
-      ![Eliminar una retención de exhibición de documentos electrónicos](../media/DeleteeDiscoveryHold.png)
+      ![Eliminar una retención de exhibición de documentos electrónicos.](../media/DeleteeDiscoveryHold.png)
 
 Para eliminar un caso:
 
@@ -108,6 +108,6 @@ Para eliminar un caso:
 
 3. En la página principal del caso, en **Estado**, haga clic **en Eliminar caso**.
 
-      ![Eliminar un caso](../media/eDiscoveryCaseHomePageDelete.png)
+      ![Eliminar un caso.](../media/eDiscoveryCaseHomePageDelete.png)
 
 Si el caso que intenta eliminar aún contiene retenciones de exhibición de documentos electrónicos, recibirá un mensaje de error. Tendrás que eliminar todas las retenciones asociadas con el caso e intentar de nuevo eliminar el caso.

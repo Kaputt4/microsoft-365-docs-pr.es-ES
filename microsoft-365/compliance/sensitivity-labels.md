@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 5604a6021150a7de4b287d91064c60f55be92500
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: ff26c2f6f219db066b4be00e6d97e8d4e4e4babc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360100"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568990"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -44,7 +44,7 @@ Las etiquetas de confidencial de la solución de Microsoft Information Protectio
 
 Ejemplo que muestra las etiquetas de confidencialidad disponibles en Excel, en la pestaña **Inicio** de la cinta de opciones. En este ejemplo, la etiqueta aplicada se muestra en la barra de estado:
 
-![Etiqueta de confidencialidad en la barra de herramientas de Excel y en la barra de estado](../media/Sensitivity-label-in-Excel.png)
+![Etiqueta de confidencialidad en la barra de herramientas de Excel y en la barra de estado.](../media/Sensitivity-label-in-Excel.png)
 
 Para aplicar etiquetas de confidencialidad, los usuarios tienen que haber iniciado sesión en Microsoft 365 con su cuenta profesional o educativa.
 
@@ -90,7 +90,7 @@ Para los usuarios, una etiqueta de confidencialidad se muestra como una etiqueta
 Cada elemento que admite las etiquetas de confidencialidad puede tener una sola etiqueta aplicada. Los documentos y mensajes de correo electrónico pueden tener aplicadas tanto una etiqueta de confidencialidad como una [etiqueta de retención](retention.md#retention-labels).
 
 > [!div class="mx-imgBorder"]
-> ![Etiqueta de confidencialidad aplicada a un correo electrónico](../media/Sensitivity-label-on-email.png)
+> ![Etiqueta de confidencialidad aplicada a un correo electrónico.](../media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>Qué pueden hacer las etiquetas de confidencialidad
 
@@ -102,7 +102,7 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
 
 - **Marcar el contenido** cuando utilice las aplicaciones de Office, agregando marcas de agua, encabezados o pies de página a correos electrónicos o documentos que tengan aplicada la etiqueta. Las marcas de agua se pueden aplicar en documentos, pero no en mensajes de correo electrónico. Encabezado y marca de agua de ejemplo:
     
-    ![Marca de agua y encabezado aplicados a un documento](../media/Sensitivity-label-watermark-header.png)
+    ![Marca de agua y encabezado aplicados a un documento.](../media/Sensitivity-label-watermark-header.png)
     
     ¿Necesita comprobar cuándo se aplican marcas de contenido? Consulte [Cuándo las aplicaciones de Office aplican marcado de contenido y cifrado](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
@@ -116,7 +116,7 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
 
 - **Aplicar la etiqueta automáticamente a archivos y mensajes de correo electrónico o recomendar una etiqueta.** Elija cómo identificar la información confidencial que quiere etiquetar y la etiqueta se podrá aplicar automáticamente o podrá solicitar a los usuarios que apliquen la etiqueta que recomiende usar. Si recomienda una etiqueta, el mensaje mostrará el texto que elija. Por ejemplo:
     
-    ![Aviso para asignar una etiqueta necesaria](../media/Sensitivity-label-Prompt-for-required-label.png)
+    ![Aviso para asignar una etiqueta necesaria.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
     Para obtener más información sobre la configuración para **Etiquetar automáticamente archivos y mensajes de correo electrónico** al crear o editar una etiqueta de confidencialidad, vea [Aplicar una etiqueta de confidencialidad al contenido automáticamente](apply-sensitivity-label-automatically.md) para las aplicaciones de Office y [Etiquetar automáticamente los datos en Azure Purview](/azure/purview/create-sensitivity-label).
 
@@ -128,7 +128,7 @@ Cuando cree una etiqueta de confidencialidad, se le pedirá que configure el ám
 
 Esta configuración de ámbito le permite tener etiquetas de confidencialidad únicamente para documentos y mensajes de correo electrónico, y no se pueden seleccionar para contenedores. De la misma forma, las etiquetas de confidencialidad que son solo para contenedores, no pueden seleccionarse para documentos y mensajes de correo electrónico. Como novedad, y actualmente en versión preliminar, también puede seleccionar el ámbito de activos de Azure Purview:
 
-![Opciones de ámbito para etiquetas de confidencialidad](../media/sensitivity-labels-scopes.png)
+![Opciones de ámbito para etiquetas de confidencialidad.](../media/sensitivity-labels-scopes.png)
 
 De forma predeterminada, el ámbito de **Archivos y correo electrónico** siempre están seleccionados. Los demás ámbitos se seleccionan de manera predeterminada cuando se habilitan las características de su espacio empresarial:
 
@@ -138,7 +138,7 @@ De forma predeterminada, el ámbito de **Archivos y correo electrónico** siempr
 
 Si cambia los valores predeterminados, de modo que no se seleccionen todos los ámbitos, verá la primera página de la configuración de los ámbitos que no ha seleccionado, pero no podrá establecer la configuración. Por ejemplo, si el ámbito para archivos y mensajes de correo electrónico no está seleccionado, no podrá seleccionar las opciones en la página siguiente:
 
-![Opciones para etiquetas de confidencialidad no disponibles](../media/sensitivity-labels-unavailable-settings.png)
+![Opciones para etiquetas de confidencialidad no disponibles.](../media/sensitivity-labels-unavailable-settings.png)
 
 En las páginas que no tengan opciones disponibles, seleccione **Siguiente** para continuar. O bien, seleccione **Atrás** para cambiar el ámbito de la etiqueta.
 
@@ -150,7 +150,7 @@ Solo puede aplicar una etiqueta de confidencialidad a un elemento, como un docum
 
 Aunque, el orden de las subetiquetas se usa en el [ etiquetado automático](apply-sensitivity-label-automatically.md). Cuando configure etiquetas para aplicarlas automáticamente o como recomendación, pueden producirse varias coincidencias para más de una etiqueta. Para determinar la etiqueta que se va a aplicar o recomendar, se usa el orden de las etiquetas: se selecciona la última etiqueta de confidencialidad y, a continuación, si procede, la última subetiqueta.
 
-![Opción para crear una subetiqueta](../media/Sensitivity-label-sublabel-options.png)
+![Opción para crear una subetiqueta.](../media/Sensitivity-label-sublabel-options.png)
 
 ### <a name="sublabels-grouping-labels"></a>Subetiquetas (agrupación de etiquetas)
 
@@ -162,7 +162,7 @@ No elija una etiqueta principal como predeterminada o configure una etiqueta pri
 
 Ejemplo de cómo se muestran las subetiquetas para los usuarios:
 
-![Subetiquetas agrupadas en la cinta de opciones](../media/Sensitivity-label-grouped-labels2.png)
+![Subetiquetas agrupadas en la cinta de opciones.](../media/Sensitivity-label-grouped-labels2.png)
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>Modificar o eliminar una etiqueta de confidencialidad
 
@@ -189,13 +189,13 @@ Cuando configura una directiva de etiqueta, puede:
 
 - **Solicitar una justificación para cambiar una etiqueta.** Si un usuario intenta quitar una etiqueta o reemplazarla por una etiqueta con un número de pedido inferior, puede solicitar que el usuario proporcione una justificación para realizar esa acción. Por ejemplo, un usuario abre un documento con la etiqueta Confidencial (número de pedido 3) y reemplaza dicha etiqueta por una llamada Público (número de pedido 1). Para las aplicaciones de Office, este mensaje de justificación se desencadena una vez por sesión de aplicación cuando se usa el etiquetado integrado y por archivo cuando se usa el cliente de etiquetado unificado de Azure Information Protection. Los administradores pueden leer el motivo de la justificación junto con el cambio de etiqueta en [explorador de actividades](data-classification-activity-explorer.md).
 
-    ![Aviso en el que los usuarios especifican una justificación](../media/Sensitivity-label-justification-required.png)
+    ![Aviso en el que los usuarios especifican una justificación.](../media/Sensitivity-label-justification-required.png)
 
 - **Solicite a los usuarios que apliquen una etiqueta** para documentos y correos electrónicos, solo documentos, para contenedores y contenido de Power BI. También conocidas como etiquetado obligatorio, estas opciones garantizan que se debe aplicar una etiqueta antes de que los usuarios puedan guardar documentos y enviar correos electrónicos, crear nuevos grupos o sitios y cuando usen contenido sin etiquetar para Power BI.
     
     Para documentos y mensajes de correo electrónico, el usuario puede asignar una etiqueta manualmente. Todo ello de forma automática como resultado de una condición que ha configurado. O bien, se puede asignar de forma predeterminada (opción de etiqueta predeterminada descrita anteriormente). Se muestra un ejemplo de cuando un usuario debe asignar una etiqueta:
 
-    ![Aviso en Outlook donde se pide a un usuario que aplique una etiqueta necesaria](../media/sensitivity-labels-mandatory-prompt-outlook.png)
+    ![Aviso en Outlook donde se pide a un usuario que aplique una etiqueta necesaria.](../media/sensitivity-labels-mandatory-prompt-outlook.png)
     
     Para obtener más información sobre las etiquetas obligatorias para documentos y correos electrónicos, consulte [Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
     
@@ -207,7 +207,7 @@ Cuando configura una directiva de etiqueta, puede:
 
 - **Proporcionar un vínculo de ayuda a una página de asistencia.** Si los usuarios no están seguros de lo que significan las etiquetas de confidencialidad o cómo deben usarse, puede proporcionar una dirección URL con más información que aparecerá en la parte inferior del menú **Etiqueta de confidencialidad** en las aplicaciones de Office:
 
-    ![Vínculo para obtener más información en la cinta o botón de confidencialidad](../media/Sensitivity-label-learn-more.png)
+    ![Vínculo para obtener más información en la cinta o botón de confidencialidad.](../media/Sensitivity-label-learn-more.png)
 
 Después de crear una directiva de etiquetas que asigne nuevas etiquetas de confidencialidad a los usuarios y grupos, los usuarios comenzarán a ver las etiquetas en las aplicaciones de Office. Espere hasta 24 horas para que los cambios más recientes se repliquen en toda la organización.
 
@@ -227,7 +227,7 @@ Puede incluir un usuario en varias directivas de etiquetas, y el usuario recibir
 
 Si no ve la etiqueta o el comportamiento del valor de la directiva de etiquetas que esperaba para un usuario o un grupo, compruebe el orden de las directivas de etiqueta de sensibilidad. Es posible que necesite mover la directiva hacia abajo. Para cambiar el orden de las directivas de etiqueta, seleccione una directiva de etiqueta de confidencialidad > seleccione los puntos suspensivos a la derecha > **Mover hacia abajo** o **Mover hacia arriba**.
 
-![Opción Mover en la página de directivas de etiquetas de confidencialidad](../media/sensitivity-label-policy-priority.png)
+![Opción Mover en la página de directivas de etiquetas de confidencialidad.](../media/sensitivity-label-policy-priority.png)
 
 > [!NOTE]
 > Recuerde: Cuando haya un conflicto de configuración para un usuario que tiene varias directivas asignadas, se aplicará la configuración de la directiva con la prioridad más alta (la posición más baja).

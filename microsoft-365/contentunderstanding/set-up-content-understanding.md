@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Configurar SharePoint Syntex
-ms.openlocfilehash: b856cafb7c2be292ed912fc94329ae6f3f23bb5f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 3b03b36e58b9f5cbb97a967be941fc43285892fd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257110"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552893"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -64,7 +64,7 @@ Para usar el procesamiento de formularios, también necesita créditos de AI Bui
 3. En la página para **Automatizar la comprensión del contenido**, haga clic en **Introducción** para recorrer el proceso de configuración. <br/>
 
     > [!div class="mx-imgBorder"]
-    > ![Iniciar la instalación](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > ![Iniciar la instalación.](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. En la página **Configurar el procesamiento** de formularios, puede elegir si desea que los usuarios puedan crear modelos de procesamiento de formularios en bibliotecas de documentos específicos de SharePoint. En la cinta de opciones de la biblioteca de documentos estará disponible una opción de menú para **Crear un modelo de procesamiento de formularios** en las bibliotecas de documentos de SharePoint en las que esté habilitado.
  
@@ -74,14 +74,14 @@ Para usar el procesamiento de formularios, también necesita créditos de AI Bui
       - **No hay bibliotecas de SharePoint** si no quiere que esté disponible para ningún sitio (puede cambiar esto después de la configuración).
 
    > [!div class="mx-imgBorder"]
-   > ![Configurar las opciones del sitio de procesamiento de formularios](../media/content-understanding/admin-configforms.png)
+   > ![Configurar las opciones del sitio de procesamiento de formularios.](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > Quitando un sitio después de incluirlo no afecta a los modelos existentes aplicados a las bibliotecas de ese sitio ni a la capacidad de aplicar modelos de comprensión de documentos a una biblioteca. 
     
     Si tiene varios entornos de Power Platform configurados, puede elegir cuál desea usar para el procesamiento de formularios. (Esta opción no aparecerá si solo tiene un entorno).
 
-    ![Configurar las opciones de Power Platform de procesamiento de formularios](../media/content-understanding/setup-power-platform-env.png)
+    ![Configurar las opciones de Power Platform de procesamiento de formularios.](../media/content-understanding/setup-power-platform-env.png)
 
     Para el **entorno de Power Platform**, puede seleccionar:
     - **Usar el entorno predeterminado** para utilizar su entorno de Power Platform predeterminado.
@@ -96,7 +96,7 @@ Para usar el procesamiento de formularios, también necesita créditos de AI Bui
     1. La **Dirección del sitio** mostrará el URL de su sitio, basado en lo que usted seleccionó para el nombre del sitio. Si desea cambiar la configuración, haga clic en **Editar**.
 
        > [!div class="mx-imgBorder"]
-       > ![Crear el centro de contenido](../media/content-understanding/admin-cu-create-cc.png)</br>
+       > ![Crear el centro de contenido.](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        Seleccione **Siguiente**.
 
@@ -121,7 +121,7 @@ Para asignar licencias:
 4. Seleccione **Mostrar aplicaciones para SharePoint Syntex**. En **Aplicaciones**, asegúrese de estén seleccionadas las opciones **Servicio de datos común para SharePoint Syntex**, **SharePoint Syntex** y **SharePoint Syntex: tipo SPO**.
 
     > [!div class="mx-imgBorder"]
-    > ![Licencias de SharePoint Syntex en el Centro de administración de Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > ![Licencias de SharePoint Syntex en el Centro de administración de Microsoft 365.](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Haga clic en **Guardar cambios**.
 

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 91800483b5a40e028eb71a03d190fd262f4ce3c1cd71d262ca31dcbd8867d833
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c3323466d79137251be1f8d9ee764b42b643bb1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798259"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565201"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -59,7 +59,7 @@ Los informes están disponibles para los últimos 7, 30, 90 o 180 días. Los dat
 
 ::: moniker-end
 
-2. Haga clic en el botón **Ver más** en la tarjeta de vista rápida de actividad de un servicio (como el correo electrónico o OneDrive) para ver la página de detalles del informe. En las pestañas, se proporcionan diferentes informes para el servicio. <br/>![Panel de utilización](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. Haga clic en el botón **Ver más** en la tarjeta de vista rápida de actividad de un servicio (como el correo electrónico o OneDrive) para ver la página de detalles del informe. En las pestañas, se proporcionan diferentes informes para el servicio. <br/>![Panel de utilización.](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
 ## <a name="who-can-see-reports"></a>Quién puede ver los informes
 

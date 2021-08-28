@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Usar supervisión de Exchange Online para obtener información sobre avisos o incidentes de correo electrónico en Microsoft 365.
-ms.openlocfilehash: 4de4104f3112126b20d51fb6fcf0616cd413b884
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: e7e0a39f00b4d23ed870d501a3aefbabaf362e13
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506447"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603022"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Supervisión de Exchange Online para Microsoft 365
 
@@ -32,9 +32,9 @@ Puede usar la supervisión de Exchange Online en el Centro de administración de
 
 Este es un ejemplo de la página **Estado del servicio** en el Centro de administración de Microsoft 365, disponible en Health > **Servicio > Estado del servicio** para escenarios de la organización.
 
-**los problemas de la organización** se identificarán y usarán en la supervisión de nivel organizativo.
+![La página de Estado del servicio en el Centro de administración de Microsoft 365.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text="La página de Estado del servicio en el Centro de administración de Microsoft 365":::
+**Los problemas de la organización** se identificarán y usarán en la supervisión a nivel organizativo.
 
 El valor de la columna **Estado** en **Problemas de la organización** indica si la infraestructura de la organización o el software de terceros afectan a la experiencia de mantenimiento del servicio de los usuarios de la organización con Exchange Online. Los avisos o incidencias requieren *sus* acciones para resolverse.
 
@@ -42,7 +42,7 @@ El valor de la columna **Estado** en **Estado del servicio Microsoft** indica qu
 
 Este es un ejemplo de la página de supervisión de Exchange Online en el Centro de administración de Microsoft 365 que muestra el estado de los escenarios de nivel de organización, disponible en **Estado > Estado del servicio > Exchange Online**.
 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png" alt-text="La página de supervisión de Exchange Online en el Centro de administración de Microsoft 365":::
+![La página de supervisión de Exchange Online en el Centro de administración de Microsoft 365.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
 Con la página de supervisión de **Exchange Online**, puede ver si el servicio de Exchange Online está en buen estado o no y si hay incidentes o avisos asociados. Con la supervisión de Exchange Online, puede observar el estado del servicio para escenarios de correo electrónico específicos y ver señales casi en tiempo real para determinar el impacto por escenario a nivel de organización.
 
@@ -82,7 +82,7 @@ Con la supervisión de Exchange Online se admiten los siguientes escenarios:
 
 - **Flujo de correo**: el número de mensajes entregados correctamente a un buzón sin retraso desde que el mensaje llegó a la red Microsoft 365.
 
-  ![Un ejemplo de supervisión del estado de Exchange para la entrega de correo](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+  ![Un ejemplo de supervisión del estado de Exchange para la entrega de correo.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
 Para todos estos escenarios, los números clave son para los últimos 30 minutos en el panel principal. Las vistas detalladas de cada uno de estos escenarios muestran la tendencia en tiempo casi real durante siete días con un agregado de 30 minutos en comparación con la semana anterior.
 
@@ -94,7 +94,7 @@ Hay dos formas de proporcionar comentarios:
 
 - Enviar comentarios usando el vínculo **¿Es útil esta publicación?** para un incidente o aviso específico.
 
-![El vínculo "¿Es útil esta publicación?" para un incidente o aviso específico](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
+  ![El vínculo "¿Es útil esta publicación?" para un incidente o aviso específico.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
 
 ## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
@@ -126,7 +126,7 @@ Con esta nueva experiencia integrada, el plan de Microsoft es recopilar sus come
 
 #### <a name="5-is-this-a-free-included-or-paid-extra-feature"></a>5. ¿Es una característica gratuita (incluida) o de pago (extra)? 
 
-Esta es una característica gratuita que está en versión preliminar y solo está disponible para los clientes que cumplen los requisitos de la pregunta 1. No hay una opción de pago para recibir este contenido.
+Esta es una característica gratuita que está en versión preliminar y solo está disponible para los clientes que cumplen los requisitos de la pregunta 1. No existe una opción de pago para recibir este contenido.
 
 #### <a name="6-how-do-i-provide-feedback"></a>6. ¿Cómo puedo proporcionar comentarios?
 

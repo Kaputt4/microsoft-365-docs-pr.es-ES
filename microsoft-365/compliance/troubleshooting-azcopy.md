@@ -19,18 +19,18 @@ description: Solucionar errores de Azure AzCopy al cargar datos no Office 365 pa
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: f8f8ea4cfcd38aa3680fc1aeef3317a6a16a90b909530061beb6c03a95a45f89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87f4e62f05e29147213d70b28e1778ea9e3ea683
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885438"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573192"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Solucionar problemas de AzCopy en Advanced eDiscovery
 
 Al cargar datos o documentos que no son de Microsoft 365 para la corrección de errores en Advanced eDiscovery, la interfaz de usuario proporciona un comando de Azure AzCopy que contiene parámetros con la ubicación de dónde se almacenan los archivos que desea cargar y la ubicación de almacenamiento de Azure en la que se cargarán los archivos. Para cargar los documentos, copie este comando y, a continuación, ejecutarlo en un símbolo del sistema en el equipo local.  La captura de pantalla siguiente muestra un ejemplo de un comando AzCopy:
 
-![Upload no Microsoft 365 archivos](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![Upload no Microsoft 365 archivos.](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 Normalmente, el comando que se proporciona funciona al ejecutarlo. Sin embargo, puede haber casos en los que el comando que se muestra no se ejecutará correctamente. Estos son algunos motivos posibles.
 

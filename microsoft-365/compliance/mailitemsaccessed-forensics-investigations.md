@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use la acción de auditoría del buzón MailItemsAccessed para realizar investigaciones forenses de cuentas de usuarios comprometidas.
-ms.openlocfilehash: b168cc25afc1a21044d00eb2dece1cee4da5f9cb6b7c70ecea05874ad6fcefd4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b0fac6e4ac5d6cc4bb20b6853cb67cf301c6295a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830796"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566001"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usar auditoría avanzada para investigar cuentas comprometidas
 
@@ -194,7 +194,7 @@ Si alguna de las propiedades que aparecen en la tabla de la [sección anterior](
 
 Por ejemplo, en los registros de auditoría que se muestran en la captura de pantalla siguiente, aunque estamos accediendo al correo de EWSEditor y OWA simultáneamente, la actividad de acceso se intercala en diferentes registros de auditoría en función del contexto en el que se produjo el acceso. En este caso, el contexto se define mediante distintos valores para la propiedad ClientInfoString.
 
-![Registros de auditoría diferentes en función del contexto](../media/MailItemsAccessed4.png)
+![Registros de auditoría diferentes en función del contexto.](../media/MailItemsAccessed4.png)
 
 Sintaxis para el comando del recorte de pantalla antarior:
 

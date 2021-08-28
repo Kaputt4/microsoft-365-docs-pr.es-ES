@@ -9,18 +9,18 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 8e65dd554a07158d3df3b11323e158c1ea8afd20
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 4af99d0fa87d8d11d3dfcc21d37e332e890c8f7f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364580"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575053"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Prepararse para la inscripción en el Escritorio administrado de Microsoft
 
 En estos temas, se describen los pasos necesarios que llevar a cabo en la organización para preparar la inscripción, incluida la comprobación de que su entorno cumple los requisitos previos clave, la configuración de redes, la configuración de certificados y la preparación de las aplicaciones para que se incluyan en el servicio. Una vez que haya ejecutado las herramientas para evaluar la preparación, puede completar los demás pasos en cualquier orden o en paralelo. Dependiendo de su entorno, es posible que algunos de los pasos no sean relevantes para usted.
 
-![Secuencia sugerida de pasos para prepararse para la inscripción que se muestra en este artículo](../../media/mmd-getready-sequence.png)
+![Secuencia sugerida de pasos para prepararse para la inscripción que se muestra en este artículo.](../../media/mmd-getready-sequence.png)
 
 1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
 2. Ejecutar las [herramientas para evaluar la preparación](readiness-assessment-tool.md).
