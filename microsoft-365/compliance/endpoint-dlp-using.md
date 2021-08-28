@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: c33677d483eadca4526d2c7f977ad91de6c7340c
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: 26f5723d604cb9f57000f13eb799cd0afba593e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450133"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556305"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -41,7 +41,7 @@ O bien
 - Si desea excluir de la supervisión las rutas de archivo ruidosas
 
   > [!div class="mx-imgBorder"]
-  > ![Configuración DLP](../media/endpoint-dlp-1-using-dlp-settings.png)
+  > ![Configuración DLP](../media/endpoint-dlp-1-using-dlp-settings.png).
 
 ### <a name="file-path-exclusions"></a>Exclusiones de ruta de archivo
 
@@ -216,7 +216,7 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 5. Desplácese hacia abajo hasta la sección **Auditar o restringir actividades en dispositivos Windows** y configure la acción correspondiente en **Bloquear con invalidación** para cada actividad.
 
    > [!div class="mx-imgBorder"]
-   > ![configurar bloqueo con acción de invalidación](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+   > ![configurar bloqueo con acción de invalidación.](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
    
 6. Seleccione **Guardar**.
 
@@ -229,7 +229,7 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
    Verá un elemento emergente como el siguiente en el dispositivo cliente:
 
    > [!div class="mx-imgBorder"]
-   > ![notificación de invalidación de cliente bloqueado por dlp en punto de conexión](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
+   > ![notificación de invalidación de cliente bloqueado por dlp en punto de conexión.](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. Compruebe que el evento se encuentre en el Explorador de actividades.
 
@@ -263,7 +263,7 @@ Hay tres pasos:
 
 6. Habilite **Cuarentena automática para las aplicaciones no permitidas**.
 
-7. Escriba la ruta de acceso a la carpeta de los equipos locales a las que desea mover los archivos confidenciales originales. Por ejemplo:
+7. Escriba la ruta de acceso a la carpeta de los equipos locales a las que quiere mover los archivos confidenciales originales. Por ejemplo:
    
 **'%homedrive%%homepath%\Microsoft DLP\Cuarentena'** para el nombre de usuario *Isaiah Langer* colocará los elementos movidos en una 
 
@@ -326,7 +326,7 @@ dejará un archivo .txt que contiene este mensaje
 
 4. Copie el archivo que acaba de crear en la carpeta de sincronización de OneDrive. Debe aparecer una notificación del sistema para el usuario que indica que la acción no está permitida y que el archivo se pondrá en cuarentena. Por ejemplo, para el nombre de usuario *Isaiah Langer* y un documento titulado *doc auto-cuarentena 1.docx* vería este mensaje:
 
-![Ventana emergente de notificación de prevención de pérdida de datos para el usuario que indica que la acción de sincronización de OneDrive no está permitida para el archivo especificado y que el archivo se pondrá en cuarentena](../media/auto-quarantine-user-notification-toast.png)
+![Ventana emergente de notificación de prevención de pérdida de datos para el usuario que indica que la acción de sincronización de OneDrive no está permitida para el archivo especificado y que el archivo se pondrá en cuarentena.](../media/auto-quarantine-user-notification-toast.png)
 
 El mensaje indica:
 

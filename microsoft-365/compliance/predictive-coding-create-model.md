@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo crear un modelo de codificación predictiva en Advanced eDiscovery. Este es el primer paso para usar las capacidades de aprendizaje automático de Advanced eDiscovery para ayudarle a identificar contenido relevante y no relevante en un conjunto de revisión.
-ms.openlocfilehash: 37ff12ea723127b322e7a2b2a1e049b66b72bb92a7625c97efdff4dcdb64b976
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed5092f2730ade5e349cec77e5c264e67d957927
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891996"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58555693"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Crear un modelo de codificación predictiva (versión preliminar)
 
@@ -41,7 +41,7 @@ Para revisar el flujo de trabajo de codificación predictiva, vea [Learn about p
 
 2. Abra un conjunto de opiniones y, a continuación, haga clic **en Analytics Administrar**  >  **codificación predictiva (versión preliminar).**
 
-   ![Haga clic en el menú desplegable Analizar en el conjunto de revisión para ir a la página Codificación predictiva](..\media\ManagePredictiveCoding.png)
+   ![Haga clic en el menú desplegable Analizar del conjunto de revisión para ir a la página Codificación predictiva.](..\media\ManagePredictiveCoding.png)
 
 3. En la **página Modelos de codificación predictiva (versión preliminar),** haga clic **en Nuevo modelo**.
 
@@ -61,6 +61,6 @@ Después de crear un modelo, se producen lo siguiente en segundo plano durante l
 
 - El sistema selecciona aleatoriamente 40 elementos del conjunto de opiniones que se incluirán en el conjunto de aprendizaje de la primera ronda de aprendizaje. Por lo tanto, la primera ronda de aprendizaje incluye 50 elementos para el etiquetado: 40 elementos del conjunto de aprendizaje y 10 elementos del conjunto de control.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de crear un modelo para un conjunto de revisión, el siguiente paso es realizar rondas de aprendizaje para "enseñar" el modelo para identificar el contenido que es relevante para la investigación. Para obtener más información, vea [Train a predictive coding model](predictive-coding-train-model.md).
