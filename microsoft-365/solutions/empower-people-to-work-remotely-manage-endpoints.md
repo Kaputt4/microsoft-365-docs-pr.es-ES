@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use Microsoft Endpoint Manager para administrar sus dispositivos, equipos y otros puntos de conexión.
-ms.openlocfilehash: b1c3b565ddbe3741d60f547ba45fc5891a01b406a2401e64147696aa1934b3e9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a5326743bc1673facff864a562ebb0accb8d483c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902013"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575365"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 4. Implementar la administración de puntos de conexión para sus dispositivos, PCs y otros puntos de conexión
 
@@ -30,7 +30,7 @@ Con los trabajadores remotos, es necesario admitir un número creciente de dispo
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) proporciona servicios y herramientas para administrar dispositivos móviles, equipos de escritorio, equipos virtuales, dispositivos incorporados y servidores mediante la combinación de los siguientes servicios, los cuales puede que ya conozca o esté usando.
 
-![Los componentes de Endpoint Management para Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![Los componentes de Endpoint Management para Microsoft 365.](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -93,6 +93,6 @@ Ya está usando el conjunto de características y funcionalidades de Endpoint Ma
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 5: Implementar servicios y aplicaciones de productividad para los trabajadores remotos](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
+[![Paso 5: Implementar servicios y aplicaciones de productividad para los trabajadores remotos](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md).
 
 Continúe con el [paso 5](empower-people-to-work-remotely-teams-productivity-apps.md)para que sus trabajadores remotos utilicen las aplicaciones de productividad de Microsoft 365, como Microsoft Teams.

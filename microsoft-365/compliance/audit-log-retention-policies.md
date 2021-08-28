@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
-ms.openlocfilehash: aa5112eeedcfd0c46bba1d96a43e49051eb3ed9e
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 5427bbfc63381ab2763c0bf74adda978f4fc6af3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503088"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574873"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Administrar directivas de retención de registros de auditoría
 
@@ -59,7 +59,7 @@ Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de 
 
 4. Haga clic en **Crear directiva de retención de auditoría** y, después, complete los siguientes campos en la página flotante:
 
-   ![Página flotante de la directiva de retención de la nueva auditoría](../media/CreateAuditLogRetentionPolicy.png)
+   ![Página flotante de la directiva de retención de la nueva auditoría.](../media/CreateAuditLogRetentionPolicy.png)
 
    1. **Nombre de directiva:** el nombre de la directiva de retención de registros de auditoría. Este nombre debe ser único en su organización y no puede cambiarse después de crear la directiva.
 
@@ -87,7 +87,7 @@ Las directivas de retención de registros de auditoría se muestran en la pesta�
 
 Las directivas de retención de registros de auditoría se muestran en el panel. Una ventaja de ver las directivas en el panel es que puede hacer clic en la columna **Prioridad** para enumerar las directivas en la prioridad en que se aplican. Como se explicó previamente, un valor más alto indica una prioridad mayor.
 
-![Columna Prioridad en el panel de directivas de retención de auditoría](../media/AuditLogRetentionDashboardPriority.png)
+![Columna Prioridad en el panel de directivas de retención de auditoría.](../media/AuditLogRetentionDashboardPriority.png)
 
 También puede seleccionar una directiva para mostrar su configuración en la página flotante.
 
@@ -106,7 +106,7 @@ Para editar una directiva, selecciónela para mostrar la página de control flot
 
 ### <a name="delete-policies-in-the-dashboard"></a>Eliminar directivas en el panel
 
-Para eliminar una directiva, haga clic en el icono **Eliminar** ![Eliminar icono](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) y, después, confirme que quiere eliminar la directiva. La directiva se quita del panel, pero puede tardar hasta 30 minutos en quitarse la directiva de la organización.
+Para eliminar una directiva, haga clic en **Eliminar** ![icono Eliminar.](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) icono y, después, confirme que quiere eliminar la directiva. La directiva se quita del panel, pero puede tardar hasta 30 minutos en quitarse la directiva de la organización.
 
 ## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>Crear y administrar directivas de retención de registros de auditoría en PowerShell
 

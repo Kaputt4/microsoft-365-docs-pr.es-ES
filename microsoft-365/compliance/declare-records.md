@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: 0d2614709c22347c3a2a9f2bedf952cd5d70508f54fd8e6edcdae0dec3e7791b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 53db42de769600de3a6190ee4b7f0de2d9e5505e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842375"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574248"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
@@ -59,7 +59,7 @@ Al crear una etiqueta de retención de la solución **administración de registr
 
 Por ejemplo:
 
-![Configurar una etiqueta de retención para marcar contenido como un registro o como un registro normativo](../media/recordversioning6.png)
+![Configurar una etiqueta de retención para marcar contenido como un registro o como un registro normativo.](../media/recordversioning6.png)
 
 Ahora puede aplicar esta etiqueta de retención a documentos de SharePoint o OneDrive y a correos electrónicos de Exchange, según sea necesario.
 
@@ -79,7 +79,7 @@ Cuando las etiquetas de retención que marcan elementos como un registro o como 
 
 Ejemplo de un documento marcado como registro con una etiqueta de retención:
 
-![Panel de detalles para los documentos etiquetados como registro](../media/recordversioning7.png)
+![Panel de detalles para los documentos etiquetados como registro.](../media/recordversioning7.png)
 
 ## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a>Buscar en el registro de auditoría elementos etiquetados que se declararon como registros
 

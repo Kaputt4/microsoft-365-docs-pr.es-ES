@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Brinda una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: 428211e890bcff816209b003566fc76072749bda
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 404670e42f46b249b748d0a54f882c631c6f91ee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378006"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570082"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 para empresas
 
@@ -68,7 +68,7 @@ El [póster de Microsoft 365 para empresas](../downloads/Microsoft365Enterprise.
 - Los componentes clave del ambiente de trabajo moderno que propicia Microsoft 365 para empresas.
 - La [Biblioteca de productividad de Microsoft 365](https://www.microsoft.com/microsoft-365/success/) y escenarios representativos para algunos de los departamentos comunes de la organización.
 
-[![Imagen del póster para Microsoft 365 para empresas](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
+[![Imagen del póster para Microsoft 365 para empresas.](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
 
 También puede [descargar una copia del póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf).
 
@@ -77,7 +77,7 @@ También puede [descargar una copia del póster](https://github.com/MicrosoftDoc
 
 Para tener una mejor idea de cómo trasladar a toda la organización a los productos y servicios de Microsoft 365 para empresas, consulte el [póster de transición](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Imagen del póster de Transición a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![Imagen del póster de Transición a Microsoft 365.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 Este póster de dos páginas es una forma rápida de hacer un inventario de la infraestructura existente. Le ayuda a encontrar las instrucciones para pasar al producto o servicio correspondiente en Microsoft 365 para empresas. Incluye los productos de Windows y Office, así como otros elementos de infraestructura y seguridad, como la administración de dispositivos, la identidad y la información y protección contra amenazas.
 
@@ -94,7 +94,7 @@ El soporte técnico para [SharePoint Server 2010](upgrade-from-sharepoint-2010.m
 
 Para obtener un resumen visual de las opciones de actualización, migración y desplazamiento a la nube de estos productos, vea el [póster de fin de soporte técnico.](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-[![Imagen de final del soporte técnico para servidores y clientes de Office 2010 y póster de Windows 7](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Imagen de final del soporte técnico para servidores y clientes de Office 2010 y póster de Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 En este póster de una página verá de forma rápida las distintas rutas para evitar que finalice el soporte técnico de los productos de cliente y servidor de Windows 7 y Office 2010. Se han resaltado las rutas de acceso preferentes y la compatibilidad con las opciones de Microsoft 365 para empresas.
 
@@ -143,16 +143,16 @@ Optimice la productividad segura e integrada del usuario con la combinación óp
 
 Este es un ejemplo para una organización empresarial.
 
-![Una organización empresarial con Microsoft 365, dispositivos Surface y el explorador Microsoft Edge](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+![Una organización empresarial con Microsoft 365, dispositivos Surface y el explorador Microsoft Edge.](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
 
 Para más información y ejemplos de configuración de una pequeña y mediana empresa y una institución educativa, descargue el [póster "Mejor juntos"](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf).
 
-[![Imagen del póster Mejor juntos con Surface y el explorador Microsoft Edge](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+[![Imagen del póster Mejor juntos con Surface y el explorador Microsoft Edge.](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
 
 
 ## <a name="microsoft-365-training"></a>Formación de Microsoft 365
 
-![Aprendizaje de aspectos básicos de Microsoft 365](../media/microsoft-365-overview/m365-fundamentals.svg)
+![Aprendizaje de aspectos básicos de Microsoft 365.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
 Para obtener más información sobre Microsoft 365 y sobre cómo obtener la certificación de Microsoft 365, puede empezar con los [Fundamentos de la certificación de Microsoft 365](/learn/paths/m365-fundamentals/).
 

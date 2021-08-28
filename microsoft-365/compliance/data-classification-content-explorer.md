@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 5cebf4f53a331712df6a480a6d813da7232b5858
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: e1cae053c7b13ceec9c7f3274122cf004c7277e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502920"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571391"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
 El explorador de contenido de la clasificación de datos le permite ver de forma nativa los elementos que se resumiendo en la página información general.
 
-![captura de pantalla contraída del explorador de contenido](../media/data-classification-content-explorer-1.png)
+![captura de pantalla contraída del explorador de contenido.](../media/data-classification-content-explorer-1.png)
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -111,14 +111,14 @@ Una [etiqueta de retención](retention.md) le permite definir durante cuánto ti
 ### <a name="export"></a>Exportar
 El control de **Exportación** creará un archivo .csv que contiene una lista de lo que se muestra en el panel **Todas las ubicaciones**.
 
-![control de exportación de clasificación de datos](../media/data_classification_export_control.png)
+![control de exportación de clasificación de datos.](../media/data_classification_export_control.png)
 
 
 ### <a name="search"></a>Búsqueda
 
 Cuando profundiza en una ubicación, como una carpeta de Exchange o un sitio de SharePoint o de OneDrive, aparece la herramienta de **búsqueda**.
 
-![herramienta de búsqueda del explorador de contenido](../media/data_classification_search_tool.png)
+![herramienta de búsqueda del explorador de contenido.](../media/data_classification_search_tool.png)
 
 
 El ámbito de la herramienta de búsqueda es lo que se muestra en el panel **Todas las ubicaciones** y lo que puede buscar varía en función de la ubicación seleccionada. 

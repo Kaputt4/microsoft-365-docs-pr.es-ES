@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 2adc733247ddfe9570b02c197e18b02bcf500921
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 9415b7aa8e258264095de41a7f820751d3794a13
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387049"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571992"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -166,7 +166,7 @@ Aunque el propósito principal de las etiquetas de retención es conservar o eli
   
 Por ejemplo, puede crear y aplicar una etiqueta de retención denominada "revisar más adelante" sin acciones y, a continuación, usar esa etiqueta para buscar el contenido posteriormente.
   
-![Configuración de etiquetas solo para clasificar](../media/retention-label-retentionoff.png)
+![Configuración de etiquetas solo para clasificar.](../media/retention-label-retentionoff.png)
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta de retención como condición en una directiva DLP
 
@@ -182,7 +182,7 @@ Cuando se publican las etiquetas de retención, se incluyen en una **directiva d
 
 2. Las directivas de etiquetas de retención especifican las ubicaciones donde se publicarán las etiquetas de retención. La misma ubicación se puede incluir en varias directivas de etiquetas de retención.
 
-![Cómo se pueden agregar las etiquetas de retención a las directivas de etiquetas que especifican ubicaciones](../media/retention-labels-and-policies.png)
+![Cómo se pueden agregar las etiquetas de retención a las directivas de etiquetas que especifican ubicaciones.](../media/retention-labels-and-policies.png)
 
 También puede crear una o varias **directivas de etiquetas de retención de aplicación automática**, cada una con una sola etiqueta de retención. Con esta directiva, se aplica una etiqueta de retención automáticamente cuando se cumplan las condiciones especificadas en la directiva.
 
@@ -238,7 +238,7 @@ Después de asignar las etiquetas de retención al contenido (ya sea a través d
 
 Cuando cree una búsqueda de contenido, elija la condición de **Etiqueta de retención**, y luego introduzca el nombre completo de la etiqueta de retención o parte del nombre de la etiqueta y utilice un comodín. Para obtener más información, consulte [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de Contenido](keyword-queries-and-search-conditions.md).
   
-![Condición de la etiqueta de retención](../media/retention-label-condition.png)
+![Condición de la etiqueta de retención.](../media/retention-label-condition.png)
 
 
 ## <a name="compare-capabilities-for-retention-policies-and-retention-labels"></a>Comparar las funcionalidades de las directivas de retención y las etiquetas de retención
@@ -295,7 +295,7 @@ Use el siguiente flujo para comprender los resultados de la retención y elimina
 > [!IMPORTANT]
 > Si usa etiquetas de retención: antes de aplicar los principios para determinar el resultado de varias opciones de retención en el mismo elemento, asegúrese de saber que [etiqueta de retención se aplica](#only-one-retention-label-at-a-time).
 
-![Diagrama de los principios de retención](../media/principles-of-retention.png)
+![Diagrama de los principios de retención.](../media/principles-of-retention.png)
 
 Antes de explicar cada principio con más detalle, es importante comprender la diferencia entre el período de retención del elemento y el período de retención especificado en la directiva o la etiqueta de retención. Esto se debe a que, aunque la configuración predeterminada es iniciar el período de retención cuando se crea un elemento, de modo que el final del período de retención sea corregido para el elemento, los archivos también admiten la configuración para iniciar el período de retención desde la última modificación del archivo. Con esta configuración alternativa, cada vez que se modifica el archivo, se restablece el inicio del período de retención, lo que amplía el final del período de retención del elemento. Las etiquetas de retención también admiten el inicio del período de retención cuando se etiquetan y al inicio de un evento.
 

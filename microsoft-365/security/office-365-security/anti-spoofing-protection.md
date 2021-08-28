@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61735abbce8445d4c3293085c320c9d253c745dcef66ace90fbfb8ba73ebe89b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1d9980240f0c45eb708a668dfea028ce5259fcab
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56886209"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576109"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -48,7 +48,7 @@ Las siguientes tecnologías contra la suplantación de identidad están disponib
 
   EOP analiza y bloquea los mensajes que no se pueden autenticar con la combinación de métodos de autenticación de correo electrónico estándar y técnicas de reputación del remitente.
 
-  ![Pruebas contra la suplantación de identidad de EOP](../../media/eop-anti-spoofing-protection.png)
+  ![Pruebas contra la suplantación de identidad de EOP.](../../media/eop-anti-spoofing-protection.png)
 
 - **Información de la inteligencia contra la suplantación de identidad**: Revisa mensajes falsificados de remitentes en dominios durante los últimos 7 días internos y externos, y permite o bloquea el acceso de los remitentes. Para obtener más información, consulte [Información de inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md).
 
@@ -75,13 +75,13 @@ Los mensajes de suplantación de identidad tienen estas implicaciones negativas 
 
   Por ejemplo, el siguiente es un ejemplo de suplantación de identidad que usa el remitente falsificado msoutlook94@service.outlook.com:
 
-  ![Mensaje de suplantación de identidad que suplanta service.outlook.com](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+  ![Mensaje de suplantación de identidad que suplanta service.outlook.com.](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
   Este mensaje no proviene de service.outlook.com, pero el atacante ha falsificado el campo de encabezado **De** para que parezca que es así. Este era un intento de engañar al destinatario para que hiciese clic en el vínculo **cambiar la contraseña** y proporcionase sus credenciales.
 
   El siguiente mensaje es un ejemplo de BEC que usa el dominio de correo electrónico falsificado contoso.com:
 
-  ![Mensaje de suplantación de identidad: compromiso de correo electrónico empresarial](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+  ![Mensaje de suplantación de identidad: compromiso de correo electrónico empresarial.](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
   El mensaje parece legítimo, pero el remitente es falso.
 
@@ -89,7 +89,7 @@ Los mensajes de suplantación de identidad tienen estas implicaciones negativas 
 
   El siguiente mensaje es un ejemplo de un mensaje de restablecimiento de contraseña real desde la cuenta de Microsoft Security:
 
-  ![Restablecimiento de contraseña legítimo de Microsoft](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+  ![Restablecimiento de contraseña legítimo de Microsoft.](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
   El mensaje sí procede de Microsoft, pero los usuarios se han acostumbrado a sospechar. Como es difícil notar la diferencia entre un mensaje de restablecimiento de contraseña verdadero y uno falso, los usuarios pueden ignorar estos mensajes, marcarlos como correo no deseado o informar innecesariamente sobre ellos a Microsoft como intentos de suplantaciones de identidad.
 

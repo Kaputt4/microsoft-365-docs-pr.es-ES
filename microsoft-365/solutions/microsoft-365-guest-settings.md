@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Más información sobre las opciones de configuración de uso compartido de invitados disponibles en Microsoft 365 que pueden afectar al uso compartido con personas de fuera de su organización.
-ms.openlocfilehash: b8b8b8481dca5074d2db6c3022d65e160cdf7b04
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: 056152e44dbe2fc11265e64c548b1056fd72e517
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58418024"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573828"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -42,7 +42,7 @@ Azure Active Directory es el servicio de directorio que usa Microsoft 365. La co
 
 **Navegación:** [Centro de administración de Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Identidades externas > Configuración de colaboración externa
 
-![Captura de pantalla de la página de configuración de relaciones de organización de Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
+![Captura de pantalla de la página de configuración de relaciones de organización de Azure Active Directory.](../media/azure-ad-organizational-relationships-settings.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -63,7 +63,7 @@ El Centro de administración de Microsoft 365 tiene configuración a nivel de or
 
 **Navegación:** [Centro de administración de Microsoft 365](https://admin.microsoft.com) > Configuración > Configuración de la organización > pestaña Seguridad y privacidad > Uso compartido
 
-![Captura de pantalla de la configuración de uso compartido de invitados de seguridad y privacidad en el Centro de administración de Microsoft 365](../media/sharepoint-security-privacy-sharing-setting.png)
+![Captura de pantalla de la configuración de uso compartido de invitados de seguridad y privacidad en el Centro de administración de Microsoft 365.](../media/sharepoint-security-privacy-sharing-setting.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -73,7 +73,7 @@ El Centro de administración de Microsoft 365 tiene configuración a nivel de or
 
 **Navegación:**[Centro de administración de Microsoft 365](https://admin.microsoft.com) > Configuración > Configuración > Grupos de Microsoft 365
 
-![Captura de pantalla de la configuración de invitados de los grupos de Microsoft 365 en el Centro de administración de Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Captura de pantalla de la configuración de invitados de Grupos de Microsoft 365 en el Centro de administración de Microsoft 365.](../media/office-365-groups-guest-settings.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -92,7 +92,7 @@ El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de 
 
 **Navegación:** [Centro de administración de Teams](https://admin.teams.microsoft.com) > Configuración de toda la organización > Acceso de invitado
 
-![Captura de pantalla de la opción de acceso de invitado de Teams](../media/teams-guest-access-toggle.png)
+![Captura de pantalla de la opción de acceso de invitados de Teams.](../media/teams-guest-access-toggle.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -102,7 +102,7 @@ El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de 
 
 **Navegación:** [Centro de administración de Teams](https://admin.teams.microsoft.com) > Configuración de toda la organización > Acceso de invitado
 
-![Captura de pantalla de las opciones de llamada de invitado de Teams](../media/teams-guest-calling-setting.png)
+![Captura de pantalla de las opciones de llamada de invitado de Teams.](../media/teams-guest-calling-setting.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -112,7 +112,7 @@ El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de 
 
 **Navegación:** [Centro de administración de Teams](https://admin.teams.microsoft.com) > Configuración de toda la organización > Acceso de invitado
 
-![Captura de pantalla de la configuración de reunión de invitado de Teams](../media/teams-guest-meeting-settings.png)
+![Captura de pantalla de la configuración de reunión de invitado de Teams.](../media/teams-guest-meeting-settings.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -124,7 +124,7 @@ El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de 
 
 **Navegación:** [Centro de administración de Teams](https://admin.teams.microsoft.com) > Configuración de toda la organización > Acceso de invitado
 
-![Captura de pantalla de la configuración de mensajería de invitado de Teams](../media/teams-guest-messaging-settings.png)
+![Captura de pantalla de la configuración de mensajería de invitado de Teams.](../media/teams-guest-messaging-settings.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -149,7 +149,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 
 **Navegación:** Centro de administración de SharePoint > Uso compartido
 
-![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint](../media/external-sharing.png)
+![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint.](../media/external-sharing.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -160,7 +160,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 
 **Navegación:** Centro de administración de SharePoint > Uso compartido
 
-![Captura de pantalla de la configuración de uso compartido adicional en el nivel de organización de SharePoint](../media/external-sharing.png)
+![Captura de pantalla de la configuración de uso compartido adicional en el nivel de organización de SharePoint.](../media/external-sharing.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -177,7 +177,7 @@ Cuando se comparten archivos y carpetas en SharePoint y OneDrive, los destinatar
 
 **Navegación:** Centro de administración de SharePoint > Uso compartido
 
-![Captura de pantalla de la configuración de uso compartido de los archivos y carpetas de nivel de organización de SharePoint ](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![Captura de pantalla de la configuración de uso compartido de los archivos y carpetas de nivel de organización de SharePoint.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -200,7 +200,7 @@ Si en el sitio se ha aplicado una etiqueta de confidencialidad, puede que dicha 
 
 **Navegación:** Centro de administración de SharePoint > Sitios activos > seleccione el sitio > Editar uso compartido externo
 
-![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](../media/sharepoint-site-external-sharing-settings.png)
+![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint.](../media/sharepoint-site-external-sharing-settings.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
@@ -212,7 +212,7 @@ Puede establecer valores predeterminados para los tipos de vínculos y permisos,
 
 **Navegación:** Centro de administración de SharePoint > Sitios activos > seleccione el sitio > Editar uso compartido externo
 
-![Captura de pantalla de la configuración de vínculos para compartir en el nivel de sitio de SharePoint](../media/sharepoint-site-link-sharing-settings.png)
+![Captura de pantalla de la configuración de vínculos para compartir en el nivel de sitio de SharePoint.](../media/sharepoint-site-link-sharing-settings.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|

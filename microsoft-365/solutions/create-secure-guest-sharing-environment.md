@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
-ms.openlocfilehash: 37db4eaaf6c6cd8c6c173d52f68c23c16cfb1f3c7cccfc1eb35e610f679dff9d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1986140e2aa809e81415a8e581ce626c5100809d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53777830"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575437"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -81,7 +81,7 @@ Para crearlos, primero elabore el documento en Word u otro programa de creación
 2. Vaya a [Términos de uso](https://aka.ms/catou).
 3. Haga clic en **Nuevos términos**.
 
-   ![Captura de pantalla de la configuración de nuevos términos de uso de Azure AD](../media/azure-ad-guest-terms-of-use.png)
+   ![Captura de pantalla de la configuración de nuevos términos de uso de Azure AD.](../media/azure-ad-guest-terms-of-use.png)
 
 4. Escriba un **Nombre** y **Nombre para mostrar**.
 6. En **Documento de términos de uso** explore hasta encontrar el archivo PDF que creó y selecciónelo.
@@ -132,11 +132,11 @@ Crear una revisión de acceso de invitados
 9. Seleccione una fecha de inicio y duración.
 10. Para **Finalizar**, elija **Nunca** y haga clic en **Siguiente: configuración**.
 
-    ![Captura de pantalla de la pestaña de revisión de acceso en Azure AD](../media/azure-ad-create-access-review.png)
+    ![Captura de pantalla de la pestaña de revisión de acceso en Azure AD.](../media/azure-ad-create-access-review.png)
 
 11. En la pestaña **Configuración**, revise la configuración de cumplimiento con las normas de su empresa.
 
-    ![Captura de pantalla de la configuración de revisión de acceso en Azure AD](../media/azure-ad-create-access-review-settings.png)
+    ![Captura de pantalla de la configuración de revisión de acceso en Azure AD.](../media/azure-ad-create-access-review-settings.png)
 
 12. Haga clic en **Siguiente: Revisar + Crear**.
 13. Escriba un **Nombre de revisión** y revise la configuración.
@@ -170,7 +170,7 @@ Cómo restringir el acceso de los invitados a solo web para Grupos y Equipos:
 10. En la hoja **Condiciones**, haga clic en **Aplicaciones cliente**.
 11. En la hoja **Aplicaciones cliente**, haga clic en **Sí** para **Configurar**, y seleccione la configuración de **Clientes de aplicaciones móviles y de escritorio**, **Clientes de Exchange ActiveSync** y de **Otros clientes**. Desactive la casilla **Explorador**.
 
-    ![Captura de pantalla de la configuración de acceso condicional para aplicaciones cliente en Azure AD](../media/azure-ad-conditional-access-client-mobile.png)
+    ![Captura de pantalla de la configuración de acceso condicional para aplicaciones cliente en Azure AD.](../media/azure-ad-conditional-access-client-mobile.png)
 
 12. Haga clic en **Listo**.
 13. En **Controles de acceso**, haga clic en **Conceder**.
@@ -276,7 +276,7 @@ Crear una regla DLP
 10. En **Acciones** haga clic en **Agregar una acción** y elija **Restringir el acceso o cifrar el contenido en la ubicaciones de Microsoft 365**.
 11. Active la casilla **Restringir el acceso o cifrar el contenido en las ubicaciones de Microsoft 365** y, después, elija la opción **Solo los usuarios de fuera de la organización**.
 
-      ![Recorte de pantalla de las opciones de acción de reglas DLP](../media/dlp-remove-guest-access-sensitive-files.png)
+      ![Recorte de pantalla de las opciones de acción de reglas DLP.](../media/dlp-remove-guest-access-sensitive-files.png)
 
 12. Haga clic en **Guardar** y, a continuación, en **Siguiente**.
 13. Elija las opciones de prueba y haga clic en **Siguiente**.

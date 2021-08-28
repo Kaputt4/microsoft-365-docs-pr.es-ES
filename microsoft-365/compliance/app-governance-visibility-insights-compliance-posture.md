@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Determine la posición de cumplimiento de las aplicaciones.
-ms.openlocfilehash: 2f53a3267b4c33b532251b34e0f2509a1075486996c01e8aaeecf68a12c70609
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4cc54e5ea0fdaf0a8a196b90b09e2e8be970c7c1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887108"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572100"
 ---
 # <a name="determine-your-app-compliance-posture"></a>Determinación de la posición de cumplimiento de las aplicaciones
 
@@ -27,7 +27,7 @@ ms.locfileid: "53887108"
 
 La gobernanza de aplicaciones de Microsoft le permite evaluar rápidamente la posición de cumplimiento de las aplicaciones de terceros, y el acceso que tienen a los datos del inquilino de Microsoft 365, desde la página de información general de gobernanza de aplicaciones del Centro de cumplimiento de Microsoft 365.
 
-![Página de información general de gobernanza de aplicaciones en el Centro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-overview.png)
+![Página de información general de gobernanza de aplicaciones en el Centro de cumplimiento de Microsoft 365.](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
 >[!Note]
 > Su cuenta de inicio de sesión debe tener uno de los [estos roles](app-governance-get-started.md#administrator-roles) para ver datos de gobernanza de aplicaciones.

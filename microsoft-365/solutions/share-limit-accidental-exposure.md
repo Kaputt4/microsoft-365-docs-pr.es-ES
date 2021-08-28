@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo limitar la exposición accidental de información al compartir archivos con usuarios externos a la organización.
-ms.openlocfilehash: be5dfaa0549d96c93befc5c59947651391acf6e9f0b029d4745f717d87c7cccb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3769239951b409afe7596b6f4fecf83c87a9131
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804690"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573396"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización
 
@@ -46,7 +46,7 @@ Para desactivar los vínculos de tipo *Cualquiera* de su organización, haga lo 
 1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
 2. Establezca la configuración de uso compartido externo de SharePoint como **Invitados nuevos y existentes**.
 
-   ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint a nivel de organización](../media/sharepoint-organization-external-sharing-controls-new-users.png)
+   ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint a nivel de organización.](../media/sharepoint-organization-external-sharing-controls-new-users.png)
 
 3. Haga clic en **Guardar**.
 
@@ -56,7 +56,7 @@ Desactivar los vínculos de tipo *Cualquiera*
 3. En la cinta de opciones, haga clic en **Uso compartido**.
 4. Asegúrese de que el uso compartido está establecido como **Invitados nuevos y existentes**.
 
-   ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint a nivel de sitio](../media/sharepoint-site-external-sharing-settings.png)
+   ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint a nivel de sitio.](../media/sharepoint-site-external-sharing-settings.png)
 
 5. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -76,7 +76,7 @@ Para configurar una lista de dominios permitidos o denegados
 3. Haga clic en **Agregar dominios**.
 4. Seleccione si quiere bloquear dominios, escriba los dominios y haga clic en **Aceptar**.
 
-   ![Captura de pantalla de la configuración de SharePoint para limitar el uso compartido externo por dominio](../media/sharepoint-sharing-block-domain.png)
+   ![Captura de pantalla de la configuración de SharePoint para limitar el uso compartido externo por dominio.](../media/sharepoint-sharing-block-domain.png)
 
 5. Haga clic en **Guardar**.
 
@@ -92,7 +92,7 @@ Para limitar el uso compartido externo a los miembros de un grupo de seguridad
 
 3. Seleccione **Permitir que solo los usuarios de grupos de seguridad específicos compartan externamente** y luego seleccione **Administrar grupos de seguridad**.
 
-    ![Captura de pantalla del panel Administrar grupos de seguridad](/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![Captura de pantalla del panel Administrar grupos de seguridad.](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
 4. En el cuadro **Agregar un grupo de seguridad**, escriba un nombre para el grupo de seguridad. Se mostrará el cuadro de grupo de seguridad.
 

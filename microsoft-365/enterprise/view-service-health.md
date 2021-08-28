@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Antes de llamar al soporte técnico, consulte el estado de mantenimiento de los servicios de Microsoft 365 para comprobar si existe alguna interrupción del servicio.
-ms.openlocfilehash: dc925a1ce1e61f2a67d258c12baabddf29dd880b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 64a0d4816ce9afdd8ee4bf1c2a4522ef9fc56afc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356341"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570490"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Cómo comprobar el estado del servicio de Microsoft 365
 
@@ -52,7 +52,7 @@ Si no puede iniciar sesión en el centro de administración, puede usar la [pág
 
 3. En la página de **Estado del servicio**, podrá ver el estado de mantenimiento de los servicios en la nube en formato de tabla.
 
-   ![Vista de los problemas actuales del estado del servicio](../media/shd-landing-page.png)
+   ![Vista de los problemas actuales del estado del servicio.](../media/shd-landing-page.png)
 
 La pestaña de **Todos los servicios** (vista predeterminada) muestra todos los servicios junto con los estados de mantenimiento y cualquier incidente o aviso activo. El icono y estado en la columna de **Estado** indica cómo está cada servicio.
 
@@ -86,7 +86,7 @@ También puede suscribirse a notificaciones por correo electrónico de eventos i
 
 En la vista de **Todos los servicios** seleccione el título del problema y podrá ver una página con información detallada del problema, incluidos los mensajes que iremos publicando mientras trabajamos en la solución.
 
-[![Captura de pantalla de avisos del servicio](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
+[![Captura de pantalla de avisos del servicio.](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 En el resumen del aviso o del incidente, se proporciona la siguiente información:
 
@@ -99,7 +99,7 @@ En el resumen del aviso o del incidente, se proporciona la siguiente informació
 - **Impacto en el usuario**: breve descripción del impacto que tiene el problema en el usuario final.
 - **Actualizaciones**: publicamos mensajes con frecuencia para informarle del progreso que estamos haciendo para encontrar una solución.
 
-![Captura de pantalla que muestra los detalles del problema](../media/service-health-advisory-detail.png)
+![Captura de pantalla que muestra los detalles del problema.](../media/service-health-advisory-detail.png)
 
 ### <a name="translate-service-health-details"></a>Traducción de los detalles del estado del servicio
 
@@ -116,8 +116,8 @@ La mayoría de las veces, los servicios aparecerán como correctos sin especific
 
 | Icono | Descripción |
 |:-----|:-----|
-|![Information icon for advisory](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|Si se muestra un aviso en un servicio, significa que somos conscientes de que existe un problema que está afectando a algunos usuarios, pero el servicio todavía está disponible. En los avisos, suele haber una solución alternativa para el problema y es posible que este se produzca de forma intermitente o que esté limitado a unas consecuencias para el usuario y a un ámbito específicos.  <br/> |
-|![Exclamation point icon for incident](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|Si, en un servicio, se muestra un incidente activo, significa que existe un problema crítico y que el servicio o una de las características principales del servicio no está disponible. Por ejemplo, es posible que los usuarios no puedan enviar ni recibir correo electrónico o que no puedan iniciar sesión. Los incidentes tendrán un impacto notable sobre los usuarios. Cuando haya un incidente en curso, ofreceremos actualizaciones en relación con la investigación, las acciones llevadas a cabo y la confirmación de la resolución en el panel Estado del servicio.  <br/> |
+|![Icono de información de avisos.](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|Si se muestra un aviso en un servicio, significa que somos conscientes de que existe un problema que está afectando a algunos usuarios, pero el servicio todavía está disponible. En los avisos, suele haber una solución alternativa para el problema y es posible que este se produzca de forma intermitente o que esté limitado a unas consecuencias para el usuario y a un ámbito específicos.  <br/> |
+|![Icono de signo de exclamación de incidentes.](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|Si, en un servicio, se muestra un incidente activo, significa que existe un problema crítico y que el servicio o una de las características principales del servicio no está disponible. Por ejemplo, es posible que los usuarios no puedan enviar ni recibir correo electrónico o que no puedan iniciar sesión. Los incidentes tendrán un impacto notable sobre los usuarios. Cuando haya un incidente en curso, ofreceremos actualizaciones en relación con la investigación, las acciones llevadas a cabo y la confirmación de la resolución en el panel Estado del servicio.  <br/> |
 
 ### <a name="status-definitions"></a>Definiciones del estado
 

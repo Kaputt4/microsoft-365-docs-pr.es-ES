@@ -19,12 +19,12 @@ localization_priority: Priority
 description: Los administradores pueden obtener información sobre cómo EOP usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38fccc89b7fa3717bd000a23a61b1cf6b69e10488756678d862598f290cf1832
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4662b036ebc92f69e4cba1c1a7b6c8d8231a4b2c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56813775"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575725"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticación de correo electrónico en EOP
 
@@ -54,7 +54,7 @@ Sin embargo, los registros DNS para SPF, DKIM y DMARC (denominados directivas de
 
 En marzo de 2018, sólo un 9 % de los dominios de las empresas en la Fortune 500 publicaron directivas de autenticación de correo electrónico seguras. Un atacante podría suplantar electrónicamente al 91 % restante de empresas. A no ser que haya otro mecanismo de filtrado de correo electrónico en contexto, el correo electrónico de los remitentes falsos de estos dominios podría entregarse a los usuarios.
 
-![Directivas DMARC de las empresas en Fortune 500](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![Directivas DMARC de las empresas en Fortune 500.](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
 La proporción de pequeñas y medianas empresas que publican directivas de autenticación de correo electrónico seguras es menor y es incluso más pequeña para los dominios de correo electrónico que están fuera de Norteamérica y Europa occidental.
 

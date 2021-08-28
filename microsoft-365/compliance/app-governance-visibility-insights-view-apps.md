@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ver sus aplicaciones.
-ms.openlocfilehash: 9e67f5115e715f804cf91d95c24760a25fdf869c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 8e9ac5fda62e015bc1e2a5df11b618afa508a4a4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394533"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574417"
 ---
 # <a name="view-your-apps"></a>Ver sus aplicaciones
 
@@ -34,7 +34,7 @@ La gobernanza de aplicaciones de Microsoft le permite obtener rápidamente infor
 
 Para obtener un resumen de las aplicaciones de su usuario, diríjase a **Centro de cumplimiento de Microsoft 365 > Gobernanza de aplicaciones > Aplicaciones**.
 
-![La página de resumen de la aplicación MAPG en el centro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-apps.png)
+![La página de resumen de la aplicación MAPG en el centro de cumplimiento de Microsoft 365.](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
 >[!Note]
 > Su cuenta de inicio de sesión debe tener uno de los [estos roles](app-governance-get-started.md#administrator-roles) para ver cualquier dato de gobernanza de aplicaciones.
@@ -67,7 +67,7 @@ También puede seleccionar **Buscar** para buscar una aplicación por nombre.
 
 Para obtener información detallada sobre una aplicación específica de su usuario, vaya a **Centro de cumplimiento de Microsoft 365 > Gobernanza de aplicaciones > Página de aplicaciones > *nombre de la aplicación***.
 
-![El panel de detalles de aplicaciones de gobernanza de aplicaciones en el Cetro de cumplimiento de Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
+![El panel de detalles de aplicaciones de gobernanza de aplicaciones en el Cetro de cumplimiento de Microsoft 365.](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
 
 El panel de detalles de la aplicación proporciona información adicional sobre estas pestañas:
 

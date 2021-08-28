@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Use la taxonomía del almacén de términos al crear un extractor en el modelo de comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 56286014a1d5067e5d2c365eaf0470711e78e27dc86177e0596af116d361b819
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 97ceace09ed4c8b1a8ea8daf6d562d8013533cea
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871236"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573732"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Aprovechar la taxonomía del almacén de términos al crear un extractor en Microsoft SharePoint Syntex
 
@@ -32,23 +32,23 @@ Cuando se crea un extractor en el modelo de comprensión de documentos en ShareP
 
 Por ejemplo, el modelo identifica y clasifica todos los documentos de **Contrato** cargados en la biblioteca de documentos.  Además, el modelo también extrae un valor de **Servicio de contrato** de cada contrato, y lo mostrará en una columna de la vista de la biblioteca. Entre los distintos valores de Servicios de contrato en los contratos, hay varios valores anteriores que la empresa ya no usa y a los que se les ha cambiado el nombre. Por ejemplo, todas las referencias a los términos de los servicios de contratos *Diseño*, *Gráficos* o *Topografía* ahora deberían llamarse *Creativo*. Siempre que el modelo extrae uno de los términos desactualizado de un documento de contrato, quiere que muestre el término actual, "Creativo", en la vista de la biblioteca. En el ejemplo siguiente, al entrenar el modelo, observamos que un documento de muestra contiene el término desactualizado de *Diseño*.
 
-   ![Almacén de términos](../media/content-understanding/design.png)</br>
+   ![Almacén de términos.](../media/content-understanding/design.png)</br>
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Usar una columna de metadatos administrados en el extractor
 
 Los conjuntos de términos están configurados en el almacén de términos de los servicios de metadatos administrados (MMS) en el Centro de Administración de SharePoint. En el ejemplo siguiente, el *conjunto de términos* de [Servicios de contrato](/sharepoint/managed-metadata#term-set) se configura para incluir varios términos, incluido *Creativo*.  En los detalles, se muestra que el término tiene tres sinónimos (*Diseño*, *Gráficos* y *Topografía*) y los sinónimos se deberían traducir como *Creativo*. 
 
-   ![Conjunto de términos](../media/content-understanding/term-store.png)</br>
+   ![Conjunto de términos.](../media/content-understanding/term-store.png)</br>
 
 Puede haber varios motivos por los que quiera usar un sinónimo en el conjunto de términos. Por ejemplo, es posible que haya términos no actualizados, términos con nombre cambiado o variaciones en la denominación entre los departamentos de su organización.
 
 Para que el campo de metadatos administrados esté disponible para que lo seleccione cuando cree el extractor en el modelo, debe [agregarlo como una columna de sitio de metadatos administrados](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). Después de agregar la columna de sitio, puede seleccionarla cuando cree el extractor para el modelo.
 
-   ![Servicio de contrato](../media/content-understanding/contract-services.png)</br>
+   ![Servicio de contrato.](../media/content-understanding/contract-services.png)</br>
 
 Después de aplicar el modelo a la biblioteca de documentos, cuando los documentos se carguen en la biblioteca, en la columna *Servicios creativos* se mostrará el término preferido (*Creativo*) cuando el extractor encuentre cualquiera de los valores de los sinónimos (*Diseño*, *Gráficos* y *Topografía*).
 
-   ![Columna de servicio de contrato](../media/content-understanding/creative.png)</br>
+   ![Columna de servicio de contrato.](../media/content-understanding/creative.png)</br>
 
 
 ## <a name="see-also"></a>Consulte también

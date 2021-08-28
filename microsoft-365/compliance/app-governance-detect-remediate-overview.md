@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre la detección y corrección de aplicaciones.
-ms.openlocfilehash: 9d4a4b9f6ed7b10cb6e0626625f334063289a5905488325895be6e6ed6aa5a3f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0812615a8a0ed78f0649a59a0f884f1c37a9e368
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842661"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571548"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>Más información sobre la detección y corrección de aplicaciones
 
@@ -58,7 +58,7 @@ Al compartir información entre el gobierno de aplicaciones, Azure AD y Microsof
 
 Este es un resumen de la integración.
 
-![La Integración de gobernanza de aplicaciones con Azure AD y Microsoft Cloud App Security](..\media\manage-app-protection-governance\mapg-integration.png)
+![La Integración de gobernanza de aplicaciones con Azure AD y Microsoft Cloud App Security.](..\media\manage-app-protection-governance\mapg-integration.png)
 
 Además, la gobernanza de aplicaciones envía sus alertas como señales a Microsoft Cloud App Security y Microsoft 365 Defender para obtener un análisis más detallado de los incidentes de seguridad basados en aplicaciones.
 
