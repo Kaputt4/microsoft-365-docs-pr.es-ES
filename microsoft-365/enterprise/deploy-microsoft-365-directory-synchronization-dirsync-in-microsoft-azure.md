@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Obtenga información sobre cómo implementar Azure AD Conectar una máquina virtual en Azure para sincronizar cuentas entre el directorio local y el inquilino de Azure AD.
-ms.openlocfilehash: c7a3c8a3800f7dc866895606277ca7dc5bd9ddd6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: df41c88330eb71c67505d8a75e8268ae2acb9b01
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356809"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575293"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Implementar Microsoft 365 sincronización de directorios en Microsoft Azure
 
@@ -46,7 +46,7 @@ Esta solución requiere conectividad entre la red local y la red virtual de Azur
 
 En el diagrama siguiente se muestra azure ad Conectar que se ejecuta en una máquina virtual en Azure (el servidor de sincronización de directorios) que sincroniza un bosque de AD DS local con una Microsoft 365 suscripción.
   
-![Herramienta de Conectar azure AD en una máquina virtual de Azure sincronizando cuentas locales con el inquilino de Azure AD de una suscripción Microsoft 365 con flujo de tráfico](../media/CP-DirSyncOverview.png)
+![Herramienta de Conectar azure AD en una máquina virtual de Azure sincronizando cuentas locales con el inquilino de Azure AD de una suscripción Microsoft 365 con flujo de tráfico.](../media/CP-DirSyncOverview.png)
   
 En el diagrama hay dos redes conectadas por una conexión VPN de sitio a sitio o ExpressRoute. Hay una red local donde se encuentran los controladores de dominio de AD DS y una red virtual de Azure con un servidor de sincronización de directorios, que es una máquina virtual en ejecución en [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). Hay dos flujos de tráfico principal que se originan en el servidor de sincronización de directorios:
   
@@ -128,7 +128,7 @@ Para crear y configurar la red virtual de Azure, complete la [Fase 1: Preparar l
   
 Esta es la configuración resultante.
   
-![Fase 1 del servidor de sincronización de directorios Microsoft 365 hospedado en Azure](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Fase 1 del servidor de sincronización de directorios Microsoft 365 hospedado en Azure.](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 En esta figura se muestra una red local conectada a una red virtual de Azure mediante una conexión de ExpressRoute o VPN de sitio a sitio.
   
@@ -150,7 +150,7 @@ Para que Azure AD Connect obtenga acceso a recursos de Internet, hay que configu
   
 Esta es la configuración resultante.
   
-![Fase 2 del servidor de sincronización de directorios Microsoft 365 hospedado en Azure](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Fase 2 del servidor de sincronización de directorios para Microsoft 365 hospedado en Azure.](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 En esta figura se muestra la máquina virtual del servidor de sincronización de directorios en la red virtual de Azure entre locales.
   
@@ -167,7 +167,7 @@ Haga lo siguiente:
   
 Esta es la configuración resultante.
   
-![Fase 3 del servidor de sincronización de directorios Microsoft 365 hospedado en Azure](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Fase 3 del servidor de sincronización de directorios para Microsoft 365 hospedado en Azure.](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 En esta figura se muestra el servidor de sincronización de directorios con Azure AD Connect en la red virtual de Azure entre locales.
   

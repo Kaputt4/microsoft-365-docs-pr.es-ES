@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo seleccionar y exportar contenido de un conjunto de Advanced eDiscovery para presentaciones o revisiones externas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4ec92c432d693a46151cd92e9d65e5b6fc9c2734
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5021428dc1ee82b5fb0aeed58d4e055710dec2ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246598"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570862"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exportar documentos de un conjunto de revisión en Advanced eDiscovery
 
@@ -36,7 +36,7 @@ Para exportar documentos de un conjunto de revisión:
 
    La herramienta Exportar muestra la página desplegable con la configuración para configurar la exportación. Algunas opciones están seleccionadas de forma predeterminada, pero puede cambiar estas opciones. Consulte la siguiente sección para obtener descripciones de las opciones de exportación que puede configurar.
 
-   ![Opciones de configuración para exportar elementos de un conjunto de revisión](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
+   ![Opciones de configuración para exportar elementos de un conjunto de revisión.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
 3. Después de configurar la exportación, haga clic **en Exportar** para iniciar el proceso de exportación. Según la opción seleccionada  en la sección Opciones de salida, puede tener acceso a los archivos de exportación mediante descarga directa o en la cuenta de Azure Storage organización.
 

@@ -20,12 +20,12 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo eliminar resultados de búsqueda de exhibición de documentos electrónicos duplicados para que solo se exporte una copia de un mensaje de correo electrónico.
-ms.openlocfilehash: 08318019f9fc56b70d2eae3ea80b82da85e37e69e8d0ff1401517ae1a84ea327
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 67c856d9f245e3856ba1bd4f3ac1942391dab8fa
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842423"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570262"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
 
@@ -49,11 +49,11 @@ Los siguientes gráficos muestran cómo se muestran los mensajes duplicados en l
   
  ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv (se ve en Excel)
   
-![Ver información sobre elementos duplicados en el informe Results.csv datos](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Ver información sobre elementos duplicados en el informe Results.csv datos.](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
  ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml (se ve en Excel)
   
-![Ver información sobre elementos duplicados en el informe Manifest.xml datos](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Ver información sobre elementos duplicados en el informe Manifest.xml datos.](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 Además, otras propiedades de mensajes duplicados se incluyen en los informes de exportación. Esto incluye el buzón en el que se encuentra el mensaje duplicado, si el mensaje se envió a un grupo de distribución y si el mensaje era Cc'd o CCO'd a otro usuario.
   

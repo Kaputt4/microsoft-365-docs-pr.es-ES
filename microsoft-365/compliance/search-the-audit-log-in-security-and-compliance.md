@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34d3f7fa8c12d1509b864bc45e97717dbf01f534
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9aff58f4175cd7615ad2de2a9659bec71f3f1cb8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533284"
+ms.locfileid: "58574116"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -105,25 +105,25 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
   |Característica o servicio de Microsoft 365|30 minutos|24 horas|
   |---|:---:|:---:|
-  |Microsoft Defender para Office 365 e Inteligencia sobre amenazas|![Marca de verificación](../media/checkmark.png)||
-  |Azure Active Directory (eventos de inicio de sesión de usuario)||![Marca de verificación](../media/checkmark.png)|
-  |Azure Active Directory (eventos administrativos)||![Marca de verificación](../media/checkmark.png)|
-  |Prevención de pérdida de datos|![Marca de verificación](../media/checkmark.png)||
-  |Dynamics 365 CRM||![Marca de verificación](../media/checkmark.png)|
-  |eDiscovery|![Marca de verificación](../media/checkmark.png)||
-  |Exchange en línea|![Marca de verificación](../media/checkmark.png)||
-  |Microsoft Power Automate||![Marca de verificación](../media/checkmark.png)|
-  |Microsoft Project|![Marca de verificación](../media/checkmark.png)||
-  |Microsoft Stream|![Marca de verificación](../media/checkmark.png)||
-  |Microsoft Teams|![Marca de verificación](../media/checkmark.png)||
-  |PowerApps||![Marca de verificación](../media/checkmark.png)|
-  |Power BI|![Marca de verificación](../media/checkmark.png)||
-  |Centro de cumplimiento de Microsoft 365|![Marca de verificación](../media/checkmark.png)||
-  |Etiquetas de confidencialidad||![Marca de verificación](../media/checkmark.png)|
-  |SharePoint en línea y OneDrive para Empresas|![Marca de verificación](../media/checkmark.png)||
-  |Workplace Analytics|![Marca de verificación](../media/checkmark.png)||
-  |Yammer||![Marca de verificación](../media/checkmark.png)|
-  |Microsoft Forms|![Marca de verificación](../media/checkmark.png)||
+  |Microsoft Defender para Office 365 e Inteligencia sobre amenazas|![Marca de verificación.](../media/checkmark.png)||
+  |Azure Active Directory (eventos de inicio de sesión de usuario)||![Marca de verificación.](../media/checkmark.png)|
+  |Azure Active Directory (eventos administrativos)||![Marca de verificación.](../media/checkmark.png)|
+  |Prevención de pérdida de datos|![Marca de verificación.](../media/checkmark.png)||
+  |Dynamics 365 CRM||![Marca de verificación.](../media/checkmark.png)|
+  |eDiscovery|![Marca de verificación.](../media/checkmark.png)||
+  |Exchange Online|![Marca de verificación.](../media/checkmark.png)||
+  |Microsoft Power Automate||![Marca de verificación.](../media/checkmark.png)|
+  |Microsoft Project|![Marca de verificación.](../media/checkmark.png)||
+  |Microsoft Stream|![Marca de verificación.](../media/checkmark.png)||
+  |Microsoft Teams|![Marca de verificación.](../media/checkmark.png)||
+  |Power Apps||![Marca de verificación.](../media/checkmark.png)|
+  |Power BI|![Marca de verificación.](../media/checkmark.png)||
+  |Centro de cumplimiento de Microsoft 365|![Marca de verificación.](../media/checkmark.png)||
+  |Etiquetas de confidencialidad||![Marca de verificación.](../media/checkmark.png)|
+  |SharePoint Online y OneDrive para la Empresa|![Marca de verificación.](../media/checkmark.png)||
+  |Workplace Analytics|![Marca de verificación.](../media/checkmark.png)||
+  |Yammer||![Marca de verificación.](../media/checkmark.png)|
+  |Microsoft Forms|![Marca de verificación.](../media/checkmark.png)||
   |
 
 - Azure Active Directory (AD) es el servicio de directorio para Office 365. El registro de auditoría unificado contiene actividades de usuario, dominio, aplicación, grupo y de directorio que se han realizado en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte[Eventos del informe de auditoría de Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
@@ -151,7 +151,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 
     Aparecerá la página **Auditoría**.
 
-    ![Configure los criterios y luego, haga clic en Buscar para ejecutar el informe.](../media/AuditLogSearchPage1.png)
+    ![Configure los criterios y luego haga clic en Buscar para ejecutar el informe.](../media/AuditLogSearchPage1.png)
 
     > [!NOTE]
     > Si se muestra el vínculo **Iniciar el registro de la actividad administrativa y de usuario**, haga clic en él para activar la auditoría. Si no ve este vínculo, la auditoría está habilitada para la organización.
@@ -179,13 +179,13 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 
    Los resultados de la búsqueda se cargan y, después de unos minutos, se muestran en una nueva página. Cuando finaliza la búsqueda, se muestra el número de resultados que se ha encontrado. Se mostrará un máximo de 5 000 eventos en incrementos de 150 eventos. Si hay más de 5 000 eventos que cumplen los criterios de búsqueda, se muestran los 5 000 eventos más recientes.
 
-   ![El número de resultados se muestra cuando haya terminado la búsqueda](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+   ![El número de resultados se muestra al acabar la búsqueda.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### <a name="tips-for-searching-the-audit-log"></a>Sugerencias para buscar el registro de auditoría
 
 - Puede seleccionar actividades específicas de búsqueda haciendo clic en el nombre de la actividad. O puede buscar todas las actividades en un grupo (como **Actividades de archivos y carpetas**) haciendo clic en el nombre de grupo. Si se selecciona una actividad, puede hacer clic en ella para cancelar la selección. También puede usar el cuadro de búsqueda para mostrar las actividades que contengan la palabra clave que usted escriba.
 
-  ![Haga clic en el nombre de grupo de actividades para seleccionar todas las actividades](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+  ![Haga clic en el nombre del grupo de actividades para seleccionar todas las actividades.](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
 - Tiene que seleccionar **Mostrar resultados para todas las actividades** en la lista de **Actividades** para mostrar los eventos del registro de auditoría de administración de Exchange. Los eventos de este registro de auditoría muestran un nombre de cmdlet (por ejemplo,**Set-Mailbox**) en la columna de **Actividad** en los resultados. Para obtener más información, haga clic en la pestaña **actividades auditadas** de este tema y luego haga clic en **actividades de administración de Exchange**.
 
@@ -798,7 +798,7 @@ Puede buscar en el registro de auditoría actividades administrativas y de usuar
 
 Si su organización usa la [aplicación Pacientes](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) en Microsoft Teams, puede buscar el registro de auditoría para las actividades relacionadas con el uso de la aplicación Pacientes. Si su entorno está configurado para admitir la aplicación Pacientes, un grupo adicional de actividad está disponible para estas actividades en la lista del selector **Actividades**.
 
-![Actividades de Microsoft Teams para Sanidad en la lista del selector Actividades](../media/TeamsHealthcareAuditActivities.png)
+![Actividades de Microsoft Teams para Atención sanitaria en la lista del selector Actividades.](../media/TeamsHealthcareAuditActivities.png)
 
 Para obtener una descripción de las actividades de la aplicación Pacientes, consulte [Registros de auditoría de la aplicación para Pacientes](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
@@ -1021,7 +1021,7 @@ Aquí se muestran algunas sugerencias para buscar actividades de administrador d
 
 - Para mostrar los eventos del registro de auditoría de administración de Exchange, filtre los resultados de búsqueda y escriba un **-** (guion) en el cuadro de filtro **Actividad**. Esto mostrará los nombres de los cmdlet, que se muestran en la columna **Actividad** de los eventos de administración de Exchange. Luego usted puede ordenar los nombres de cmdlet en orden alfabético.
 
-  ![Escriba un guión en el cuadro de actividades para filtrar los eventos de administración de Exchange](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![Escriba un guión en el cuadro de actividades para filtrar los eventos de la administración de Exchange.](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - Para obtener información sobre qué cmdlet se ha ejecutado, qué parámetros y valores de parámetro se han usado y qué objetos se han visto afectados, tendrá que exportar los resultados de búsqueda y seleccionar la opción **Descargar todos los resultados**. Para más información, consulte[Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos de red de Rogers en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 686b348d7d19c43ae8bb8938201d697da6222664
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 19f92d5d8d241818588ef32ad7560b8e9a7e9239
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400168"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570646"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data"></a>Configurar un conector para archivar datos de red De Rogers
 
@@ -29,7 +29,7 @@ Una vez que los datos de la red móvil de Rogers se almacenan en buzones de usua
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de SMS y MMS de Rogers en Microsoft 365.
 
-![Flujo de trabajo de archivado de Red Rogers](../media/RogersNetworkConnectorWorkflow.png)
+![Flujo de trabajo de archivado de red de Rogers.](../media/RogersNetworkConnectorWorkflow.png)
 
 1. Su organización trabaja con TeleMessage para configurar un conector de Archivador de red de Rogers. Para obtener más información, vea [Activating the TeleMessage Rogers Network Archiver for Microsoft 365](https://www.telemessage.com/microsoft-365-activation-for-the-rogers-network-archiver/).
 

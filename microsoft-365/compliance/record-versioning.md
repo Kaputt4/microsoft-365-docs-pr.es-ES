@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información acerca de los registros para que pueda implementar la solución de administración de registros en Microsoft 365.
-ms.openlocfilehash: be85632bb4b85231f3a95680c960846fa245d97a
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 5e77d38ed6e3b122ceb85a6cff901a09dbe782d1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506531"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574969"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usar el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive
 
@@ -53,14 +53,14 @@ El control de versiones de registros está disponible automáticamente para cual
 Cuando el documento esté desbloqueado, todos los usuarios con permisos de edición estándar podrán editar el archivo. Sin embargo, los usuarios no pueden eliminar el archivo porque aún es un registro. Cuando termine de editar, el usuario puede cambiar el **Estado de registro** de **Desbloqueado** a **Bloqueado**, lo que impide que se realicen otras modificaciones mientras se encuentre en este estado.
 <br/><br/>
 
-![Propiedad de estado de registro en un documento etiquetado como registro](../media/recordversioning8.png)
+![Propiedad de estado de registro en un documento etiquetado como registro.](../media/recordversioning8.png)
 
 ## <a name="locking-and-unlocking-a-record"></a>Bloquear y desbloquear un registro
 
 Cuando se aplica a un documento una etiqueta de retención que marca contenido como un registro, cualquier usuario con permisos de contribución o un nivel de permisos más limitado puede desbloquear un registro o bloquear un registro desbloqueado.
 <br/><br/>
 
-![El estado del registro muestra que el documento de registro está desbloqueado](../media/recordversioning9.png)
+![Estado del registro muestra que el documento de registro está desbloqueado.](../media/recordversioning9.png)
 
 Cuando un usuario desbloquea un registro, tienen lugar las siguientes acciones:
 
@@ -81,7 +81,7 @@ Cuando un usuario bloquea un registro, no se puede editar el documento original.
 Cada vez que un usuario desbloquea un registro, la versión más reciente se copia en la biblioteca de conservación de documentos y esa versión contiene el valor del **Registro** en el campo **Comentarios** del historial de versiones.
 <br/><br/>
 
-![Registro que se muestra en la biblioteca de conservación de documentos](../media/recordversioning10.png)
+![Registro que se muestra en la biblioteca de suspensión para conservación.](../media/recordversioning10.png)
 
 Para ver el historial de versiones, seleccione un documento de la biblioteca de documentos y, a continuación, haga clic en **Historial de versiones** en el menú elemento.
 
@@ -90,11 +90,11 @@ Para ver el historial de versiones, seleccione un documento de la biblioteca de 
 Los registros se almacenan en la carpeta registros de la biblioteca de suspensión para conservación en el sitio de nivel superior de la colección de sitios. En el panel de navegación izquierdo en el sitio de nivel superior, elija **Contenidos del sitio** \> **Biblioteca de suspensión para conservación**.
 <br/><br/>
 
-![Biblioteca de conservación de documentos](../media/recordversioning11.png)
+![Biblioteca de suspensión para conservación.](../media/recordversioning11.png)
 
 <br/><br/>
 
-![La carpeta registros en la biblioteca de conservación de documentos](../media/recordversioning12.png)
+![La carpeta Registros en la biblioteca de suspensión para conservación.](../media/recordversioning12.png)
 
 Para obtener más información sobre la Biblioteca de suspensión para conservación, vea [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 

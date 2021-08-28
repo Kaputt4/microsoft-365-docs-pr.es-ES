@@ -15,24 +15,24 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro Administración de Microsoft 365 red
-ms.openlocfilehash: 3d22d3d3ee4081ab905c3848a39f5f9df9a9e667b503899b946c1ebec8110dc8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9dbb65bc9c6060b58c3629e7e1863d9cf7d8e9e3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870463"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574729"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Conectividad de red en el Centro Administración de Microsoft 365 red
 
 El Centro Administración de Microsoft 365 ahora incluye métricas de conectividad de red agregadas recopiladas desde el inquilino de Microsoft 365 y disponibles para que solo las puedan ver los usuarios administrativos del espacio empresarial.
 
 > [!div class="mx-imgBorder"]
-> ![Herramienta de prueba de conectividad de red](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+> ![Herramienta de prueba de conectividad de red.](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 **Las evaluaciones de** red **y las perspectivas** de red se muestran en el Centro de Administración de Microsoft 365 en **Health | Conectividad de red**.
 
 > [!div class="mx-imgBorder"]
-> ![Página de rendimiento de red](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+> ![Página de rendimiento de red.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 >[!NOTE]
 >La conectividad de red en el Centro de administración admite inquilinos en WW Commercial y Alemania, pero no GCC moderado, GCC High, DoD o China.
@@ -94,7 +94,7 @@ Las empresas complejas con varias ubicaciones de oficina y arquitecturas perimet
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise de conectividad de red
 
 > [!div class="mx-imgBorder"]
-> ![Red de cliente a nube](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
+> ![Red de cliente a la nube.](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
 Muchas empresas tienen configuraciones perimetrales de red que han aumentado con el tiempo y están diseñadas principalmente para dar cabida al acceso de los empleados a sitios web de Internet, donde la mayoría de los sitios web no se conocen de antemano y no son de confianza. El enfoque prevaleciendo y necesario es evitar ataques de malware y suplantación de identidad desde estos sitios web desconocidos. Esta estrategia de configuración de red, si bien es útil por motivos de seguridad, puede provocar la degradación del rendimiento Microsoft 365 usuario y la experiencia del usuario.
 
@@ -113,17 +113,17 @@ Microsoft tiene medidas de red existentes de varios Office de escritorio y web q
 De forma predeterminada, la información de ubicación aproximada asociada a las medidas de red identifica la ciudad donde se encuentran los dispositivos cliente. La evaluación de red en cada ubicación se muestra con color y el número relativo de usuarios en cada ubicación se representa por el tamaño del círculo.
 
 > [!div class="mx-imgBorder"]
-> ![Mapa de información general de red](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
+> ![Mapa de información general de red.](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
 
 La página de información general también muestra la evaluación de red del cliente como promedio ponderado en todas las ubicaciones de oficina.
 
 > [!div class="mx-imgBorder"]
-> ![Evaluación de la red](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> ![Evaluación de red.](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 Puede ver una vista de tabla de las ubicaciones donde se pueden filtrar, ordenar y editar en la **pestaña** Ubicaciones. Las ubicaciones con recomendaciones específicas también pueden incluir una posible mejora de latencia estimada. Esto se calcula tomando la latencia mediana de los usuarios de la organización en la ubicación y restando la latencia mediana para todas las organizaciones de la misma ciudad.
 
 > [!div class="mx-imgBorder"]
-> ![Ubicaciones de información de red](../media/m365-mac-perf/m365-mac-perf-locations.png)
+> ![Ubicaciones de información de red.](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
 ## <a name="remote-worker-assessment-and-user-connection-metrics"></a>Evaluación de trabajadores remotos y métricas de conexión de usuario
 
@@ -138,7 +138,7 @@ Sin embargo, las ubicaciones se clasifican automáticamente como in situ o remot
 Al seleccionar una ubicación de oficina, se abre una página de resumen específica de la ubicación que muestra los detalles de la salida de red que se ha identificado a partir de las medidas de esa ubicación de oficina.
 
 > [!div class="mx-imgBorder"]
-> ![Detalles de información de red por ubicación](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
+> ![Detalles de información de red por ubicación.](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
 Se muestra un mapa de la red perimetral para los usuarios de la organización en la ubicación con algunos o todos estos elementos:
 
@@ -160,7 +160,7 @@ Los nombres de ubicación se pueden personalizar al agregar una nueva ubicación
 La pestaña detalles de la página de ubicación de la oficina muestra los resultados de medida específicos que se usaron para obtener información, recomendaciones y la evaluación de la red. Esto se proporciona para que los ingenieros de red puedan validar las recomendaciones y factores en cualquier restricción o especificación en su entorno. También encontrará el número estimado de usuarios para las muestras recopiladas en esa oficina, así como los trabajadores remotos de esa ciudad.
 
 > [!div class="mx-imgBorder"]
-> ![Detalles específicos de la ubicación](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+> ![Detalles específicos de la ubicación.](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
 ## <a name="sharing-network-assessment-data-with-microsoft"></a>Compartir datos de evaluación de red con Microsoft
 
@@ -177,7 +177,7 @@ En el archivo CSV, una ubicación de ciudad detectada se muestra en la columna u
 1. Haga clic en **el botón** Importar justo encima de la lista de ubicaciones. Aparecerá el menú desplegable **Importar** ubicaciones de oficina.
 
    > [!div class="mx-imgBorder"]
-   > ![Mensaje de importación CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
+   > ![Mensaje de importación CSV.](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Haga clic en el vínculo Descargar ubicaciones de oficina **actuales (.csv)** para exportar la lista de ubicaciones actuales a un archivo CSV y guárdelo en el disco duro local. Esto le proporcionará un CSV con el formato correcto con encabezados de columna a los que puede agregar ubicaciones. Puede dejar las ubicaciones exportadas existentes tal como están; no se duplicarán al importar el CSV actualizado. Si desea cambiar la dirección de una ubicación existente, se actualizará al importar el CSV. No puede cambiar la dirección de una ciudad detectada.
 
@@ -196,12 +196,12 @@ En el archivo CSV, una ubicación de ciudad detectada se muestra en la columna u
 1. El archivo se validará automáticamente. Si hay errores de validación, verá el mensaje de error: Hay algunos _errores en el archivo de importación. Revise los errores, corrija el archivo de importación y vuelva a intentarlo._ Haga clic en el vínculo **Abrir detalles de error** para obtener una lista de errores de validación de campo específicos.
 
    > [!div class="mx-imgBorder"]
-   > ![Mensaje de error de importación CSV](../media/m365-mac-perf/m365-mac-perf-import-error.png)
+   > ![Mensaje de error de importación CSV.](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
 1. Si no hay errores en el archivo, verá el mensaje: _el informe está listo. Se encontraron x ubicaciones para agregar y x ubicaciones para actualizar._ Haga clic **en el botón** Importar para cargar el CSV.
 
    > [!div class="mx-imgBorder"]
-   > ![Mensaje listo para importar CSV](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
+   > ![Mensaje listo para importar CSV.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
 ## <a name="faq"></a>Preguntas más frecuentes
 

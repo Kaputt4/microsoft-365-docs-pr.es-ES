@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo crear, definir y elegir custodios y ubicaciones de custodia para una búsqueda en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f5eadf89d0f4eae3c206c82609f7b7d33fbe1ad15953808acab52880f00da274
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3050e176f495bd2fc23ac6237f1dac28b04088ec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886446"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574308"
 ---
 # <a name="create-a-search"></a>Crear una búsqueda
 
 En la **pestaña** Búsquedas del caso, puede crear una nueva búsqueda haciendo clic en **Nueva búsqueda** y siguiendo el asistente.
 
-![El asistente de búsqueda en un Advanced eDiscovery caso](../media/AeDSearch1.png)
+![El asistente de búsqueda en un Advanced eDiscovery caso.](../media/AeDSearch1.png)
 
 ## <a name="name-the-search-and-give-it-a-description"></a>Asigne un nombre a la búsqueda y déle una descripción.
 

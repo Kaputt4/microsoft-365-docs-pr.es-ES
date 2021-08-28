@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0a465458026c7da21ff60d62c7566d01e77d3e584ba487adf842074578066662
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a1b91c888e1ee91d03d5a2d315e4d4fc38b2d10
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801603"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570826"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
@@ -50,7 +50,7 @@ La cola de casos enumera todos los casos activos y cerrados de la organización,
 - **Case last updated:** el tiempo transcurrido desde que se ha agregado una nota de caso o un cambio en el estado del caso.
 - **Last updated by**: The name of the insider risk management analyst or researcher that last updated the case.
 
-![Panel de casos de administración de riesgos de Insider](../media/insider-risk-cases-dashboard.png)
+![Panel de casos de administración de riesgos de Insider.](../media/insider-risk-cases-dashboard.png)
 
 Use el control **Search** para buscar nombres de casos para texto específico y usar el filtro de casos para ordenar los casos por los atributos siguientes:
 
@@ -91,14 +91,14 @@ La **pestaña Información general** del caso también incluye una sección **Al
 - **Gravedad:** gravedad de la alerta.
 - **Hora detectada:** el tiempo transcurrido desde que se generó la alerta.
 
-![Detalles de casos de administración de riesgos de Insider](../media/insider-risk-case-details.png)
+![Detalles de casos de administración de riesgos de Insider.](../media/insider-risk-case-details.png)
 
 ### <a name="alerts"></a>Alertas
 
 La **pestaña** Alertas resume las alertas actuales incluidas en el caso. Se pueden agregar nuevas alertas a un caso existente y se agregarán a la cola de **alertas** a medida que estén asignadas. Los siguientes atributos de alerta se enumeran en la cola:
 
 - Estado
-- Severity
+- Gravedad
 - Tiempo detectado
 
 Seleccione una alerta de la cola para mostrar la **página Detalles de** alerta.
@@ -106,7 +106,7 @@ Seleccione una alerta de la cola para mostrar la **página Detalles de** alerta.
 Use el control de búsqueda para buscar nombres de alerta para texto específico y usar el filtro de alertas para ordenar los casos por los atributos siguientes:
 
 - Estado
-- Severity
+- Gravedad
 - Hora detectada, fecha de inicio y fecha de finalización
 
 Use el control de filtro para filtrar alertas por varios atributos, incluidos:
@@ -120,7 +120,7 @@ Use el control de filtro para filtrar alertas por varios atributos, incluidos:
 
 La pestaña de **Actividade del usuario** es una de las herramientas más eficaces para analizar los riesgos internos e investigar casos en la solución de administración de riesgos internos. Esta pestaña está estructurada para permitir la revisión rápida de un caso, incluida una escala de tiempo histórica de todas las alertas, detalles de alerta, la puntuación de riesgo actual para el usuario en el caso, la secuencia de eventos de riesgo y controles para tomar medidas eficaces para contener los riesgos en el caso.
 
-![Actividad de usuario de administración de riesgos insider](../media/insider-risk-user-activities.png)
+![Actividad de usuario de administración de riesgos insider.](../media/insider-risk-user-activities.png)
 
 1. **Filtros de tiempo:** de forma predeterminada, los últimos seis meses de alertas confirmadas en el caso se muestran en el gráfico de actividad de usuario. Puede filtrar fácilmente la vista de gráfico seleccionando las pestañas *6 Meses,* *3 Meses* o *1* Mes en el gráfico de burbujas.
 2. **Actividad y detalles de alerta de** riesgo: las actividades de riesgo se muestran visualmente como burbujas de color en el gráfico de actividades de usuario. Las burbujas se crean para diferentes categorías de riesgo y el tamaño de la burbuja es proporcional al número de actividades de riesgo para la categoría. Seleccione una burbuja para mostrar los detalles de cada actividad de riesgo. Los detalles incluyen:
@@ -155,7 +155,7 @@ La **pestaña Explorador de contenido** permite a los investigadores de riesgos 
 
 El explorador de contenido es una herramienta eficaz con características básicas y avanzadas de búsqueda y filtrado. Para obtener más información sobre cómo usar el explorador de contenido, vea [Insider risk management Content explorer](insider-risk-management-content-explorer.md).
 
-![Explorador de contenido de casos de administración de riesgos de Insider](../media/insider-risk-content-explorer.png)
+![Explorador de contenido de casos de administración de riesgos de Insider.](../media/insider-risk-content-explorer.png)
 
 ### <a name="case-notes"></a>Notas del caso
 
@@ -206,9 +206,9 @@ Para enviar un aviso al usuario asignado a un caso:
 4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí invalidarán los valores de la plantilla.
 5. Seleccione **Enviar** para enviar el aviso al usuario o **seleccione Cancelar** cerrar el cuadro de diálogo sin enviar el aviso al usuario. Todos los avisos enviados se agregan a la cola de notas de caso en el panel **notas del** caso.
 
-### <a name="escalate-for-investigation"></a>Escalar para investigación
+### <a name="escalate-for-investigation"></a>Remitir para investigación
 
-Escala el caso para la investigación del usuario en situaciones en las que se necesita una revisión legal adicional para la actividad de riesgo del usuario. Esta extensión abre un nuevo caso de exhibición avanzada de documentos electrónicos en su organización de Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Asignar un revisor como custodio en un caso de eDiscovery avanzado creado a partir de un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la preservación del contenido. Para obtener más información sobre los casos de exhibición avanzada de documentos electrónicos, [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
+Escala el caso para la investigación del usuario en situaciones en las que se necesita una revisión legal adicional para la actividad de riesgo del usuario. Esta extensión abre un nuevo caso de eDiscovery avanzado en su organización de Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Asignar un revisor como custodio en un caso de eDiscovery avanzado creado a partir de un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la preservación del contenido. Para obtener más información sobre los casos de exhibición avanzada de documentos electrónicos, [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
 
 Para escalar un caso a una investigación de usuario:
 

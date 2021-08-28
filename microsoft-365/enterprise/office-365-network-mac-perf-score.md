@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de red
-ms.openlocfilehash: c9533cb4189709ad4e32194371fb0863b4b5fa3f38eb035f7f0bdc505152b731
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 00ce0bb2f0f6b93df9f0eeb8e8bd63629edae9d7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854735"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574705"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365 de red
 
@@ -28,7 +28,7 @@ En la conectividad Administración de Microsoft 365 red del Centro de administra
 El valor de puntos de evaluación de red va de 0 a 100 y es un promedio de métricas de latencia TCP, velocidad de descarga y calidad de conexión UDP. Estas métricas se compilan una vez al día. Las métricas de rendimiento de las redes propiedad de Microsoft se excluyen de estas medidas para garantizar que los resultados de la evaluación sean inequívocos y específicos para la red corporativa.
 
 > [!div class="mx-imgBorder"]
-> ![Valor de evaluación de red](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
+> ![Valor de evaluación de red.](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
 Un valor de evaluación de red muy bajo sugiere que Microsoft 365 clientes tendrán problemas importantes para conectarse al inquilino o mantener una experiencia de usuario con capacidad de respuesta. Un valor alto indica una red configurada correctamente con pocos problemas de rendimiento continuos. Un valor del 80 % representa una línea base en buen estado, por encima de la cual no debería esperar recibir quejas de usuarios regulares sobre la conectividad Microsoft 365 capacidad de respuesta debido al rendimiento de la red. A medida que se realizan mejoras de conectividad de red iterativa, este valor aumentará junto con la experiencia del usuario.
 
@@ -49,7 +49,7 @@ Un valor de evaluación de red muy bajo sugiere que Microsoft 365 clientes tendr
 Cada evaluación de red, ya sea en el ámbito del inquilino o en una ubicación de oficina específica, muestra un panel con detalles sobre la evaluación. Este panel muestra un gráfico de barras de la evaluación como porcentaje y como puntos totales de cada carga de trabajo de componentes, incluidas solo las cargas de trabajo donde se recibieron los datos de medida. Para una evaluación de red de ubicación de oficina, también mostramos una comparación con el porcentaje de clientes de Microsoft 365 en cada uno de los cinco quintos que informaron de datos en la misma ciudad que la ubicación de la oficina.
 
 > [!div class="mx-imgBorder"]
-> ![Valor de evaluación de red de ejemplo](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> ![Valor de evaluación de red de ejemplo.](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 El **desglose de evaluación** del panel muestra la evaluación de cada una de las cargas de trabajo del componente.
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 5b585fb5ada85bfedebc4787620c70a610143a79
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 4bd6726550e444ffc31e241b8fb5c52c9967a267
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533320"
+ms.locfileid: "58570670"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>Incorporar los dispositivos Windows 10 con la directiva de grupo
 
@@ -43,7 +43,7 @@ ms.locfileid: "58533320"
 
 ## <a name="onboard-devices-using-group-policy"></a>Incorporar dispositivos con la directiva de grupo
 
-[![Imagen del PDF que muestra las distintas rutas de implementación](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
+[![Imagen del PDF que muestra las distintas rutas de implementación.](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
 Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
 
@@ -179,7 +179,7 @@ Obtener la lista actual de GUID de reducción de superficie de ataque de [Person
 
    Esto configurará cada uno solo para auditoría.
 
-   ![Imagen de configuración de reducción de superficie de ataque](images/asr-guid.png)
+   ![Imagen de configuración de reducción de superficie de ataque.](images/asr-guid.png)
 
 Directiva|Valor
 ---|---
@@ -241,72 +241,70 @@ Con la directiva de grupo no hay una opción para supervisar la implementación 
 Crea una nueva directiva de grupo o agrupa esta configuración con las otras directivas. Esto depende del entorno de los clientes y del modo en que les gustaría implantar el servicio al dirigirse a distintas OU (unidades organizativas).
 
 1. Después de elegir el GP o crear uno nuevo, edite el GP.
-2. Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** administrativas Windows componentes \>  \> **Antivirus de Microsoft Defender** Protección en \> **tiempo real**.
+2. Vaya a **Directivas de configuración del** equipo  >    >  **Plantillas** administrativas Windows componentes  >    >  **Antivirus de Microsoft Defender** Protección en  >  **tiempo real**.
+:::image type="content" source="images/realtime-protect.png" alt-text="protección en tiempo real.":::
+1. En la carpeta Cuarentena, configure la eliminación de elementos de la carpeta Cuarentena.
 
-   :::image type="content" source="images/realtime-protect.png" alt-text="protección en tiempo real":::
+    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="carpeta de cuarentena de elementos de eliminación.":::
 
-3. En la carpeta Cuarentena, configure la eliminación de elementos de la carpeta Cuarentena.
-
-    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="carpeta de cuarentena de elementos de eliminación":::
-
-    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="cuarentena de eliminación de config":::
+    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="cuarentena de eliminación de config.":::
 
 4. En la carpeta Examinar, configure las opciones de examen.
 
-    :::image type="content" source="images/gpo-scans.png" alt-text="exámenes de gpo":::
+    :::image type="content" source="images/gpo-scans.png" alt-text="análisis de gpo.":::
 
 ### <a name="monitor-all-files-in-real-time-protection"></a>Supervisar todos los archivos en protección en tiempo real
 
 Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** administrativas Windows componentes \>  \> **Antivirus de Microsoft Defender** Protección en \> **tiempo real**.
 
-:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configurar la supervisión para la actividad de archivos salientes entrantes":::
+:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configurar la supervisión de la actividad de archivos salientes entrantes.":::
 
 ### <a name="configure-windows-defender-smart-screen-settings"></a>Configurar Windows Defender de pantalla inteligente
 
 1. Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** administrativas Windows componentes \> **Windows Defender** \> **SmartScreen** \> **Explorer**.
 
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config explorador de pantalla inteligente de Windows Defender":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config explorador de pantalla inteligente de Windows Defender.":::
+ 
+2. Vaya a **Directivas de configuración del** equipo  >    >  **Plantillas** administrativas Windows componentes  >  **Windows Defender**  >  **SmartScreen**  >  **Microsoft Edge**.
 
-2. Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** administrativas Windows componentes \> **Windows Defender** \> **SmartScreen** \> **Microsoft Edge**.
-
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config Windows Defender smart screen Edge":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config Windows Defender smart screen Edge.":::
 
 ### <a name="configure-potentially-unwanted-applications"></a>Configurar aplicaciones potencialmente no deseadas
 
 Vaya a **Directivas de configuración** \> **del** equipo \> **Plantillas** \> **administrativas Windows componentes** \> **Antivirus de Microsoft Defender**.
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config posible aplicación no deseada":::
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config posible aplicación no deseada.":::
 
-:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="potencial de configuración":::
+:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="potencial de configuración.":::
 
 ### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>Configurar la protección de entrega en la nube y enviar muestras automáticamente
 
 Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** administrativas Windows componentes \>  \> **Antivirus de Microsoft Defender** \> **MAPS**.
 
-:::image type="content" source="images/gpo-maps1.png" alt-text="mapas":::
+:::image type="content" source="images/gpo-maps1.png" alt-text="mapas.":::
 
-:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="bloque a primera vista":::
+:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="bloque a primera vista.":::
 
-:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="unirse a mapas de Microsoft":::
+:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="unirse a mapas de Microsoft.":::
 
-:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="ejemplo de archivo de envío cuando se requiere un análisis adicional":::
+:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="enviar ejemplo de archivo cuando sea necesario realizar un análisis adicional.":::
 
 ### <a name="check-for-signature-update"></a>Buscar la actualización de firmas
 
 Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** administrativas Windows componentes \> **Antivirus de Microsoft Defender** de \>  \> **firma**
 
-:::image type="content" source="images/signature-update-1.png" alt-text="actualización de firma":::
+:::image type="content" source="images/signature-update-1.png" alt-text="actualización de firma.":::
 
-:::image type="content" source="images/signature-update-2.png" alt-text="actualización de definición de firma":::
+:::image type="content" source="images/signature-update-2.png" alt-text="actualización de definición de firma.":::
 
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Configurar el tiempo de espera de entrega en la nube y el nivel de protección
 
 Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** administrativas Windows componentes \>  \> **Antivirus de Microsoft Defender** \> **MpEngine**.
 Al configurar la directiva de nivel de protección en la nube en Antivirus de Microsoft Defender directiva de **bloqueo,** se deshabilitará la directiva. Esto es lo que se necesita para establecer el nivel de protección en el valor predeterminado de Windows.
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="comprobación de nube extendida de config":::
+:::image type="content" source="images/config-extended-cloud-check.png" alt-text="comprobación de nube extendida de config.":::
 
-:::image type="content" source="images/cloud-protection-level.png" alt-text="nivel de protección de la nube config":::
+:::image type="content" source="images/cloud-protection-level.png" alt-text="nivel de protección de la nube config.":::
 
 ## <a name="related-topics"></a>Temas relacionados
 

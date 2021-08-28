@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 646a391d469470b780010e4293d1433153419b23
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 99081712f3c762f6818df1f6e390b50ae450a7a8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248055"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574152"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -81,7 +81,7 @@ Una vez que se configura una directiva de retención para los mensajes del chat 
 
 Cuando la directiva de retención es retener y luego eliminar:
 
-![Diagrama de flujo de retención para los mensajes del chat y de los canales de Teams](../media/teamsretentionlifecycle.png)
+![Diagrama de flujo de retención para los chat de Teams y mensajes de canal](../media/teamsretentionlifecycle.png)
 
 Para las dos rutas en el diagrama:
 

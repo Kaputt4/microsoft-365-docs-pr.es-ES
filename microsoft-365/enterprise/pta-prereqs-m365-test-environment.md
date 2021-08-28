@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades con los requisitos previos para la autenticación de paso a través.
-ms.openlocfilehash: 9df7fce98678797091c83efa01190b457221b308
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: da97f8b18105b148eb5c87fecef12335eacd8f07
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356473"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574693"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Requisitos previos de acceso de dispositivos e identidades para la autenticación de paso a través en el entorno de prueba de Microsoft 365
 
@@ -48,7 +48,7 @@ Siga las instrucciones de [Autenticación de paso a través](pass-through-auth-m
 
 Esta es la configuración resultante.
 
-![La empresa simulada con el entorno de prueba de la autenticación de paso a través](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![La empresa simulada con entorno de prueba de autenticación de paso a través.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
  
 ## <a name="phase-2-configure-azure-ad-seamless-single-sign-on"></a>Fase 2: Configurar el inicio de sesión único de conexión directa de Azure AD
 

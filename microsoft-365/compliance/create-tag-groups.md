@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 985ce31ae9c88e6124e559ef200cfbecfc7ab8de63b63244f399b7c0c96c30f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 94bbcac31a3dd533ee589496989e60b739ca3b3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866015"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575017"
 ---
 # <a name="create-tag-groups"></a>Crear grupos de etiquetas
 
@@ -31,17 +31,17 @@ Para crear un grupo de etiquetas:
 
 1.  En un conjunto de revisión, haga clic **en Administrar conjunto de revisión.**
 
-    ![Haga clic en Administrar conjunto de revisión](../media/ED-managews.png)
+    ![Haga clic en Administrar conjunto de revisión.](../media/ED-managews.png)
 
 2.  En el icono **Etiquetas,** haga clic **en Administrar etiquetas**.
 
-    ![Haga clic en Administrar etiquetas en el icono Etiquetas](../media/ED-managetags.png)
+    ![Haga clic en Administrar etiquetas en el icono Etiquetas.](../media/ED-managetags.png)
 
 Una vez dentro de la administración de etiquetas, se pueden crear etiquetas para cumplir los requisitos de su caso. Puede empezar creando un grupo de etiquetas.
 
 1.  Haga clic **en Agregar sección**.
 
-    ![Agregar un grupo de etiquetas](../media/ED-addtagsection.png)
+    ![Agregar un grupo de etiquetas.](../media/ED-addtagsection.png)
 
     La pantalla de vista previa se actualizará al guardar para poder obtener una vista previa del panel de etiquetas sin tener que cerrar la pantalla de administración de etiquetas y volver al conjunto de trabajo.
 
@@ -49,7 +49,7 @@ Una vez dentro de la administración de etiquetas, se pueden crear etiquetas par
 
 3. Para crear una etiqueta dentro de ese grupo, haga clic en los puntos suspensivos del nuevo grupo de etiquetas para crear etiquetas en esa nueva sección.
     
-    ![Creación de etiquetas en un grupo de etiquetas](../media/ED-createtag.png)
+    ![Crear etiquetas en un grupo de etiquetas.](../media/ED-createtag.png)
 
    - **Las etiquetas** de opción forzarán a los usuarios a seleccionar una etiqueta de un grupo de etiquetas.
    
@@ -59,5 +59,5 @@ Una vez dentro de la administración de etiquetas, se pueden crear etiquetas par
 
 Para anidar etiquetas, haga clic en los puntos suspensivos situados junto a una etiqueta y, a continuación, seleccione una nueva etiqueta para agregar.
 
-![Etiquetas de anidamiento](../media/ED-tagnesting.png)
+![Etiquetas de anidamiento.](../media/ED-tagnesting.png)
 

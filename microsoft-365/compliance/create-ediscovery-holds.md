@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal en Microsoft 365 para conservar el contenido relevante para una investigación o un caso legal.
-ms.openlocfilehash: cefe45b02be4f8449753270142a92983ef547898
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 69689bc2f23b2be16ded9a6546c66a7d9ee18caf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502882"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574381"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -54,7 +54,7 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
 
 7. En la **página Asistente** para elegir ubicaciones, elija las ubicaciones de contenido que desea poner en espera. Puede retener buzones, sitios y carpetas públicas.
 
-    ![Elegir las ubicaciones de contenido para colocar en suspensión](../media/eDiscoveryHoldLocations.png)
+    ![Elija las ubicaciones de contenido que desea poner en espera.](../media/eDiscoveryHoldLocations.png)
   
    1. **Buzones de Exchange**: establezca el botón de alternancia en **Activado** y después haga clic en **Elegir usuarios, grupos o equipos** para especificar los buzones para colocar en suspensión. Use el cuadro de búsqueda para encontrar buzones de usuario y grupos de distribución (para colocar una suspensión en los buzones de miembros de grupo) para suspenderlos. También puede colocar una retención en el buzón asociado para un grupo de Microsoft, Office 365 grupo y Yammer grupo. Para obtener más información acerca de los datos de la aplicación que se conservan cuando se coloca un buzón en espera, vea Contenido almacenado en buzones [para exhibición de](what-is-stored-in-exo-mailbox.md)documentos electrónicos.
 
@@ -69,7 +69,7 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
 
 9. Para crear una retención basada en consultas con palabras clave o condiciones, siga estos pasos. Para conservar todo el contenido en las ubicaciones de contenido especificadas, haga clic en **Siguiente**.
 
-    ![Crear una retención basada en consultas con palabras clave y condiciones](../media/eDiscoveryHoldQuery.png)
+    ![Cree una retención basada en consultas con palabras clave y condiciones.](../media/eDiscoveryHoldQuery.png)
   
     1. En el cuadro palabras **clave**, escriba una consulta para conservar solo el contenido que coincida con los criterios de consulta. Puede especificar palabras clave, propiedades de mensaje de correo electrónico o propiedades de sitio, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como **AND**, **OR** o **NOT**.
 
@@ -93,7 +93,7 @@ Tenga en cuenta lo siguiente al colocar una retención de exhibición de documen
 
 Después de crear una retención de exhibición de documentos electrónicos, se muestra información sobre la nueva retención en la página desplegable de la retención seleccionada. Esta información incluye el número de buzones y sitios en espera y estadísticas sobre el contenido que se colocó en espera, como el número total y el tamaño de los elementos puestos en espera y la última vez que se calcularon las estadísticas de retención. Estas estadísticas de retención le ayudan a identificar la cantidad de contenido relacionado con el caso que se está conservando.
   
-![Mantener estadísticas](../media/eDiscoveryHoldStatistics.png)
+![Mantener las estadísticas.](../media/eDiscoveryHoldStatistics.png)
   
 Tenga en cuenta lo siguiente sobre las estadísticas de retención de exhibición de documentos electrónicos:
   
@@ -222,7 +222,7 @@ En la tabla siguiente se enumeran los límites para los casos de exhibición de 
   |Número máximo de casos para una organización.  <br/> |Sin límite  <br/> |
   |Número máximo de retenciones de exhibición de documentos electrónicos para una organización.  <br/> |10,000  <br/> |
   |Número máximo de buzones en una única retención de exhibición de documentos electrónicos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |1,000  <br/> |
-  |Número máximo de sitios en una única retención de exhibición de documentos electrónicos. Este límite incluye el total combinado de sitios OneDrive para la Empresa, SharePoint y los sitios asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |60W  <br/> |
+  |Número máximo de sitios en una única retención de exhibición de documentos electrónicos. Este límite incluye el total combinado de sitios OneDrive para la Empresa, SharePoint y los sitios asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |100  <br/> |
   |Número máximo de casos que se muestran en la página principal de exhibición de documentos electrónicos y el número máximo de elementos que se muestran en las pestañas Retenciones, Búsquedas y Exportación dentro de un caso. <sup>1</sup> |1,000|
   |||
 

@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indizados (también denominados elementos no indexados) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: 173ff913e9e355e9032e83d5c197a4ced9865257
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: f578b5ba4b89338c5d6ef861b20d42c4aebbb3b2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507273"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574176"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigar elementos parcialmente indizados en eDiscovery
 
@@ -51,7 +51,7 @@ Después de ejecutar una búsqueda de exhibición de documentos electrónicos, e
 
 Para comprender la exposición de su organización a elementos parcialmente indizados, puede ejecutar una búsqueda de todo el contenido en todos los buzones (mediante una consulta de palabra clave en blanco). En el siguiente ejemplo, hay 1.629.904 (146,46 GB) elementos totalmente indizados y 10.025 (10,27 GB) elementos parcialmente indizados.
   
-![Ejemplo de estadísticas de búsqueda que muestran elementos parcialmente indizados](../media/PartiallyIndexedItemsTest.png)
+![Ejemplo de estadísticas de búsqueda que muestran elementos parcialmente indizados.](../media/PartiallyIndexedItemsTest.png)
   
 Puede determinar el porcentaje de elementos parcialmente indizados mediante los siguientes cálculos.
   
@@ -75,7 +75,7 @@ Por lo tanto, en el ejemplo anterior, el 7 % del tamaño total de los elementos 
 
 En los casos en que necesite examinar parcialmente los elementos para [](export-a-content-search-report.md) validar que no contienen información relevante, puede exportar un informe de búsqueda de contenido que contenga información sobre elementos parcialmente indizados. Al exportar un informe de búsqueda de contenido, asegúrese de elegir una de las opciones de exportación que incluye elementos parcialmente indizados.
   
-![Elija la segunda o tercera opción para exportar elementos parcialmente indizados](../media/PartiallyIndexedItemsExportOptions.png)
+![Elija la segunda o tercera opción para exportar elementos parcialmente indizados.](../media/PartiallyIndexedItemsExportOptions.png)
   
 Al exportar resultados de búsqueda de exhibición de documentos electrónicos o un informe de búsqueda mediante una de estas opciones, la exportación incluye un informe denominado Unindexed Items.csv. Este informe incluye la mayor parte de la misma información que el ResultsLog.csv archivo; sin embargo, el archivo Items.csv unindexed también incluye dos campos relacionados con elementos parcialmente indizados: **Etiquetas** de error y **Propiedades de error**. Estos campos contienen información sobre el error de indización de cada elemento parcialmente indizado. El uso de la información de estos dos campos puede ayudarle a determinar si el error de indización de un determinado impacto en la investigación. Si lo hace, puede realizar una búsqueda dirigida y recuperar y exportar mensajes de correo electrónico específicos y documentos SharePoint o OneDrive para que pueda examinarlos para determinar si son relevantes para la investigación. Para obtener instrucciones paso a paso, vea [Prepare a CSV file for a targeted search in Office 365](csv-file-for-an-id-list-content-search.md).
 
@@ -94,7 +94,7 @@ Las etiquetas de error están hechas de dos partes de información, el error y e
   
 A continuación se muestra una lista de errores de indización y una descripción de la posible causa del error.
   
-| Etiqueta Error | Descripción |
+| Etiqueta Error | Description |
 |:-----|:-----|
 | `attachmentcount` <br/> |Un mensaje de correo electrónico tenía demasiados datos adjuntos y algunos de estos datos adjuntos no se procesaron.  <br/> |
 | `attachmentdepth` <br/> |El recuperador de contenido y el analizador de documentos encontraron demasiados niveles de datos adjuntos anidados dentro de otros datos adjuntos. Algunos de estos datos adjuntos no se procesaron.  <br/> |
@@ -164,7 +164,7 @@ Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca t
      }
    ```
 
-2. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/exchange-online-powershell).
+2. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/exchange-online-powershell).
 
 3. En PowerShell & Centro de seguridad y cumplimiento, vaya a la carpeta donde guardó el script en el paso 1 y, a continuación, ejecute el script; por ejemplo:
 
@@ -174,7 +174,7 @@ Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca t
 
 Este es un ejemplo de la salida devuelta por el script.
   
-![Ejemplo de salida de script que genera un informe sobre la exposición de la organización a elementos de correo electrónico parcialmente indizados](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Ejemplo de salida del script que genera un informe sobre la exposición de la organización a elementos de correo electrónico parcialmente indizados.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
 
 > [!NOTE]
 > Tenga en cuenta lo siguiente:
@@ -183,6 +183,6 @@ Este es un ejemplo de la salida devuelta por el script.
 > 
 > - Etiquetas de error de lista y los tipos de archivo correspondientes para los que se produjo el error.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Elementos parcialmente indizados en eDiscovery](partially-indexed-items-in-content-search.md)

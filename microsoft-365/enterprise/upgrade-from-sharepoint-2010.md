@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Busque información y recursos para actualizar desde SharePoint 2010 y SharePoint Server 2010. La compatibilidad con ambos finaliza el 13 de abril de 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5f0919bd80b68167ccfae38a461c79b704e2b803
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 8c57aa4d15ba6fbb95a59f28039db41303a536fd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394521"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575245"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
@@ -68,7 +68,7 @@ Si elige una opción en el extremo bajo de la escala (buena), deberá empezar a 
 
 Estas son las tres rutas de acceso que puede tomar para evitar el fin de la compatibilidad con SharePoint Server 2010.
 
-![SharePoint Rutas de actualización de Server 2010](../media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
+![SharePoint Rutas de actualización de Server 2010.](../media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 > [!NOTE]
 > El fin de la compatibilidad con SharePoint Server 2010 y SharePoint Foundation 2010 está programado actualmente para el 13 de abril de 2021. Pero asegúrese de comprobar el sitio [del ciclo de](https://support.microsoft.com/lifecycle) vida del producto para las fechas más actuales.
@@ -181,7 +181,7 @@ Si una granja de servidores SharePoint servidor híbrido es su objetivo de migra
 
 Asegúrese de familiarizarse con los tipos de híbridos existentes y cómo configurar la conexión entre la granja de servidores SharePoint local y la Microsoft 365 suscripción.
 
-|Opción|Descripción|
+|Opción|Description|
 |---|---|
 |[Ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home).|[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) asistencia para la migración es limitada.<br/><br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en SharePoint [Online y OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).|
 |Los ingenieros de soporte técnico de Microsoft y los empleados del centro de datos no tienen acceso de administrador sin restricciones a su suscripción.|Puede haber costos adicionales si es necesario actualizar la infraestructura de hardware para admitir la versión más reciente de SharePoint o si se requiere una granja de servidores secundaria.|
@@ -260,7 +260,7 @@ Es posible que desee crear un Microsoft 365 de desarrollo y pruebas, que puede c
 
 Para obtener un resumen visual de las opciones de actualización y migración a la nube para clientes de Office 2010 y servidores de Windows 7, consulte el [póster de final del soporte técnico.](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-[![Fin de la compatibilidad con Office clientes y servidores de 2010 y Windows póster de 7](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Fin de la compatibilidad con Office clientes y servidores de 2010 y Windows póster de 7.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 Este póster ilustra las distintas rutas de acceso que puede tomar para evitar Office productos de cliente y servidor de 2010 y un Windows 7 final de soporte técnico, con rutas de acceso preferidas y compatibilidades de opciones en Microsoft 365 Enterprise resaltado.
 

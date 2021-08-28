@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 Content Delivery Network inicio rápido (CDN)
-ms.openlocfilehash: b005c670bce80d84e7d1762eb2d8b2fc57bc7b55d0f5da9e7de13ec144742169
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 30c5d301af6e4ca20646c46cc63cde38f2b28aed
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870307"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570538"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 Content Delivery Network inicio rápido (CDN)
 
@@ -43,7 +43,7 @@ La **herramienta Diagnóstico de** página para SharePoint es una extensión de 
 
 Al ejecutar la herramienta Diagnósticos de página para SharePoint en una página de  SharePoint Online, puede hacer clic en la pestaña Pruebas de diagnóstico para ver una lista de activos que el CDN. Estos activos se mostrarán bajo el encabezado **Content Delivery Network (CDN) como** se muestra en la captura de pantalla siguiente.
 
-![Diagnósticos de página](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
+![Diagnósticos de página.](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
 >[!NOTE]
 >La herramienta de Diagnóstico de páginas solo funciona para SharePoint Online y no se puede usar en una página del sistema de SharePoint. 
@@ -78,9 +78,9 @@ Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 
 El resultado de estos cmdlets debe tener el siguiente aspecto:
 
-![Salida de Set-SPOTenantCdnEnabled](../media/O365-CDN/o365-cdn-enable-output.png)
+![Salida de Set-SPOTenantCdnEnabled.](../media/O365-CDN/o365-cdn-enable-output.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Usar la herramienta Diagnóstico de página para SharePoint Online](./page-diagnostics-for-spo.md)
 

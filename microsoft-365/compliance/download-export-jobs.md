@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Exporte documentos en un conjunto de revisión en una cuenta Azure Storage y, a continuación, use Explorador de Azure Storage para descargarlos en un equipo local.
-ms.openlocfilehash: e4dee3eb6da53b58e79993f39e4540e0c2d1951f41be13c370fb3631138f5208
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 352bce7134f92a7f6759673f28d388aac4957d1c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906047"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570874"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exportar documentos en un conjunto de revisión a una Azure Storage cuenta
 
@@ -53,7 +53,7 @@ El primer paso es crear un trabajo de exportación para exportar documentos fuer
 
 6. Pegue la dirección URL del contenedor y el token SAS de la cuenta de almacenamiento en los campos correspondientes.
 
-   ![Pegue la dirección URL de conexión y el token SAS en los campos correspondientes](../media/AzureStorageOutputOptions.png)
+   ![Pegue la dirección URL de conexión y el token SAS en los campos correspondientes.](../media/AzureStorageOutputOptions.png)
 
 7. Haga **clic en** Exportar para crear el trabajo de exportación.
 
@@ -67,7 +67,7 @@ El siguiente paso es obtener la dirección URL de SAS que se genera después de 
 
 3. En la página desplegable, en **Ubicaciones**, copie la dirección URL de SAS que se muestra. Si es necesario, puede guardarlo en un archivo de texto para que pueda acceder a él en el paso 3.
 
-   ![Copiar la dirección URL de SAS mostrada en Ubicaciones](../media/eDiscoExportJob.png)
+   ![Copie la dirección URL de SAS que se muestra en Ubicaciones.](../media/eDiscoExportJob.png)
 
    > [!TIP]
    > La dirección URL de SAS que se muestra en el trabajo de exportación es una concatenación de la dirección URL del contenedor y el token sas para la cuenta Azure Storage usuario. Puede copiarlo desde el trabajo de exportación o crearlo usted mismo combinando la dirección URL y el token sas.
@@ -80,7 +80,7 @@ El paso final es usar el Explorador de Azure Storage y la dirección URL de SAS 
 
 2. Haga clic **en el icono Abrir Conectar cuadro de** diálogo.
 
-   ![Haga clic en el icono Agregar cuenta](../media/AzureStorageConnect.png)
+   ![Haga clic en el icono Agregar cuenta.](../media/AzureStorageConnect.png)
 
 3. En la **Conectar para Azure Storage,** haga clic en **Contenedor de blobs**.
 
@@ -88,7 +88,7 @@ El paso final es usar el Explorador de Azure Storage y la dirección URL de SAS 
 
 5. En la **página Escribir** información de conexión, pegue la dirección URL de SAS (que obtuvo en el trabajo de exportación del paso 2) en el cuadro Dirección URL sas del contenedor **de blobs.**
 
-    ![Pegar la dirección URL de SAS en el cuadro URI](../media/AzureStorageConnect3.png)
+    ![Pegue la dirección URL de SAS en el cuadro URI.](../media/AzureStorageConnect3.png)
 
     Observe que el nombre del contenedor se muestra en el **cuadro Nombre para** mostrar. Puede editar este nombre.
 
@@ -96,7 +96,7 @@ El paso final es usar el Explorador de Azure Storage y la dirección URL de SAS 
 
     Se **abre el nodo Contenedores** de **blobs**(en Storage  >  **cuentas adjuntas (contenedores** \> adjuntos).
 
-    ![Exportar trabajos en el nodo contenedores blobs](../media/AzureStorageConnect5.png)
+    ![Exportar trabajos en el nodo contenedores blobs.](../media/AzureStorageConnect5.png)
 
     Contiene un contenedor denominado con el nombre para mostrar del paso 5. Este contenedor contiene una carpeta para cada trabajo de exportación que haya descargado en el contenedor de su cuenta Azure Storage exportación. Estas carpetas se denominan con un identificador que corresponde al identificador del trabajo de exportación. Puede encontrar estos IDs de exportación (y  el nombre de la exportación) en Información de  soporte técnico en la página desplegable para cada trabajo de preparación de exportación que aparece en la pestaña Trabajos en el Advanced eDiscovery caso. 
 
@@ -104,7 +104,7 @@ El paso final es usar el Explorador de Azure Storage y la dirección URL de SAS 
 
    Se muestra una lista de carpetas e informes de exportación.
 
-    ![La carpeta de exportación contiene archivos exportados e informes de exportación](../media/AzureStorageConnect6.png)
+    ![La carpeta de exportación contiene archivos exportados e informes de exportación.](../media/AzureStorageConnect6.png)
 
 8. Para exportar todo el contenido del trabajo de exportación, haga clic en la flecha **arriba** para volver a la carpeta de trabajos de exportación y, a continuación, haga clic en **Descargar**.
 

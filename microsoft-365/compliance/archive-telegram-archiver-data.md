@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos de comunicaciones de Telegram en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: a4f1e5232883602cd8102793b4fbfaa6439b60bb
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 20732bedee07369a05bd26deca6154f08981ef34
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257528"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570634"
 ---
 # <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>Configurar un conector para archivar datos de comunicaciones de Telegram
 
@@ -29,7 +29,7 @@ Una vez que los datos del conector del archivador de Telegram se almacenan en bu
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de comunicaciones de Telegram en Microsoft 365.
 
-![Flujo de trabajo de archivado de comunicaciones de Telegram](../media/TelegramConnectorWorkflow.png)
+![Flujo de trabajo de archivado de comunicaciones de Telegram.](../media/TelegramConnectorWorkflow.png)
 
 1. Su organización trabaja con TeleMessage para configurar un conector de archivador de Telegram. Para obtener más información, vea [Activating the TeleMessage Telegram Archiver for Microsoft 365](https://www.telemessage.com/microsoft-365-activation-for-telegram-archiver/).
 

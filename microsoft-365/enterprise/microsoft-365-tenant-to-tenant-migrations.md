@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo migrar Microsoft 365 inquilinos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a368f92fbbe946d0cb7842f0e38bd301552fad8f
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5bc0c7b61c33f5de5e0896d9947419f553226d30
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355969"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574284"
 ---
 # <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 de inquilino a inquilino
 
@@ -32,7 +32,7 @@ Existen varios enfoques de arquitectura para fusiones, adquisiciones, desinstitu
 
 Use el [modelo de arquitectura de](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) migración de inquilino a inquilino para comprender cómo planear Microsoft 365 de inquilino a inquilino y los pasos de una migración.
 
-[![Modelo de migración de inquilino a inquilino](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
+[![Modelo de migración de inquilino a inquilino.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 
 Puede descargar este modelo en [formato PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) e imprimirlo en papel de tamaño carta, legal o tabloide (11 x 17).
 

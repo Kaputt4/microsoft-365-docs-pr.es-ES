@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 'Resumen: cree una red virtual entre locales simulada en Microsoft Azure como entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 911732917b380a7668c1a04dda385446a4d20663
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 55fff394e077bf67e67e951778b927d6c892f2f2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354265"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570502"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Red virtual entre locales simulada en un entorno de prueba de Microsoft 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "58354265"
 
 En este artículo se le indicará el proceso de creación de un entorno de nube híbrida simulado con Microsoft Azure mediante dos redes virtuales de Azure. Esta es la configuración resultante. 
   
-![Fase 3 del entorno de pruebas de la red virtual simulada entre locales, con la máquina virtual DC2 en la VNet XPrem](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Fase 3 del entorno de prueba de red virtual entre locales simulado, con la máquina virtual DC2 en la red virtual XPrem.](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Esta configuración simula un entorno de producción de nube híbrida de IaaS de Azure y está formada por:
   
@@ -61,7 +61,7 @@ Existen tres fases principales para configurar el entorno de pruebas:
 
 Puede usar el entorno resultante para probar las características y la funcionalidad de [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) para empresas con guías de laboratorio de prueba [adicionales](m365-enterprise-test-lab-guides.md) o por su cuenta.
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Vaya a Microsoft 365 para enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf) para obtener un mapa visual de todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas empresarial.
@@ -72,7 +72,7 @@ Siga las instrucciones que se indican en **fase 1** de la [configuración base E
   
 Esta es su configuración actual. 
   
-![La configuración base de Enterprise simulada en Azure](../media/simulated-cross-premises-microsoft-365-enterprise/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![La configuración base de empresa simulada en Azure.](../media/simulated-cross-premises-microsoft-365-enterprise/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 ## <a name="phase-2-create-the-xprem-virtual-network"></a>Fase 2: Crear la red virtual XPrem
 
@@ -129,7 +129,7 @@ Add-AzVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVi
 
 Esta es su configuración actual. 
   
-![Fase 2 del entorno de pruebas de la red virtual simulada entre locales, con la relación de emparejamiento de VNet y la VNet XPrem](../media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
+![Fase 2 del entorno de prueba de red virtual entre locales simulado, con la red virtual XPrem y la relación de emparejamiento de VNet.](../media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
 ## <a name="phase-3-configure-dc2"></a>Fase 3: Configurar DC2
 
@@ -201,7 +201,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 Esta es su configuración actual. 
   
-![Fase 3 del entorno de pruebas de la red virtual simulada entre locales, con la máquina virtual DC2 en la VNet XPrem](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Fase 3 del entorno de prueba de red virtual entre locales simulado, con la máquina virtual DC2 en la red virtual XPrem.](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Ya puede probar el entorno simulado de nube híbrida de Azure.
   

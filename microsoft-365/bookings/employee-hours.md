@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Establecer la disponibilidad y el horario laboral de los empleados en Microsoft Bookings.
-ms.openlocfilehash: 04e6d3e079fec1c75536f3ac30dbab12026dabe2207f985b87410af77a7b832f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fffee6addd5f2d816fc7639661f2e03f53a96de
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803792"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575041"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Horario laboral de los empleados en Microsoft Bookings
 
@@ -34,13 +34,13 @@ Vea este vídeo o siga los pasos siguientes para establecer el horario laboral d
 
 1. En el panel de navegación, seleccione **Staff** y, a continuación, seleccione el miembro del personal cuyas horas desea establecer.
 
-   ![Imagen de la pantalla de personal de Bookings con el nombre resaltado](../media/bookings-staff-name-highlight.png)
+   ![Imagen de la pantalla del personal de Bookings con el nombre resaltado.](../media/bookings-staff-name-highlight.png)
 
 1. En Horario laboral, desactive la **casilla Usar horario** comercial.
 
 1. Usa los desplegables para seleccionar las horas de inicio y finalización de cada día. Los tiempos están disponibles en incrementos de 15 minutos.
 
-   ![Imagen de la pantalla horario laboral del personal de Bookings](../media/bookings-staff-hours.png)
+   ![Imagen de la pantalla Horario laboral del personal de Bookings.](../media/bookings-staff-hours.png)
 
 1. Haga clic para agregar selectores de inicio **+** y fin.
 
@@ -52,7 +52,7 @@ Al programar un día de descanso para un empleado, ese empleado aparecerá no di
 
 1. En la pantalla horario laboral, seleccione **la x** junto al día que el empleado tendrá desactivado.
 
-   ![Imagen de la pantalla horario laboral del personal de Bookings con el mouse sobre el botón x](../media/bookings-staff-time-off.png)
+   ![Imagen de la pantalla horario laboral del personal de Bookings con el mouse sobre el botón x.](../media/bookings-staff-time-off.png)
 
 1. Si desea programar un día que se marcó anteriormente como un día de descanso, seleccione el signo junto al día **+** que desea programar.
 

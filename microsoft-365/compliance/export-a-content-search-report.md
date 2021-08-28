@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: En lugar de exportar los resultados reales de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportaría.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5307bab55f838697e63559834653b54f06c86e7
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 56a61bb1cd0fa9952f85d75ae50f42754c583ce7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503100"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570250"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
@@ -73,13 +73,13 @@ El primer paso es preparar el informe para su descarga en el equipo que exporta.
   
 2. En el **menú** Acciones de la parte inferior de la página desplegable de búsqueda, haga clic **en Exportar informe**.
 
-   ![Opción Exportar informe en el menú Acciones](../media/ActionMenuExportReport.png)
+   ![Opción Exportar informe en el menú Acciones.](../media/ActionMenuExportReport.png)
 
    Se **muestra la página** desplegable Exportar informe. Las opciones de informe de exportación disponibles para exportar información sobre la búsqueda dependen de si los resultados de la búsqueda se encuentran en buzones o sitios o en una combinación de ambos.
   
 3. En **Opciones de salida,** elija una de las siguientes opciones:
   
-   ![Exportar opciones de salida](../media/ExportOutputOptions.png)
+   ![Exportar opciones de salida.](../media/ExportOutputOptions.png)
 
     - Todos los elementos, excepto los que tienen formato no reconocido, se cifran o no se **indizan por otras razones.** Esta opción solo exporta información sobre elementos indizados.
   
@@ -122,7 +122,7 @@ El siguiente paso es descargar el informe del área Azure Storage en el equipo l
 
 6. En la **herramienta de exportación de exhibición de** documentos electrónicos , haga lo siguiente:
 
-   ![Herramienta de exportación de eDiscovery](../media/eDiscoveryExportTool.png)
+   ![Herramienta de exportación de exhibición de documentos electrónicos.](../media/eDiscoveryExportTool.png)
 
    1. Pegue la clave de exportación que copió en el paso 3 en el cuadro correspondiente.
   

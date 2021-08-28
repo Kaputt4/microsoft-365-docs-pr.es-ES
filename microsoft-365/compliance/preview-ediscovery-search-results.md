@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga una vista previa de un ejemplo de los resultados devueltos por una búsqueda de contenido o una búsqueda de eDiscovery Core en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: fa9d69672f86cb58ef362b4b3fbaec5ba00bd50ac48778a96a0358910a35f311
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac9929ee8639c4d653f8e9dfe680a5df5c6c3a7d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891752"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570802"
 ---
 # <a name="preview-ediscovery-search-results"></a>Vista previa de los resultados de búsqueda de eDiscovery
 
@@ -39,13 +39,13 @@ Para obtener una vista previa de un ejemplo de resultados devuelto por una búsq
 
 3. En la parte inferior de la página de controles flotantes, haga clic en **Revisar muestra**.
 
-   ![Haga clic en Revisar muestra en la página de control flotante para previsualizar los resultados](../media/PreviewSearchResults1.png)
+   ![Haga clic en Revisar muestra en la página de control flotante para previsualizar los resultados.](../media/PreviewSearchResults1.png)
 
    Se muestra una página que contiene un ejemplo de los resultados de búsqueda.
 
 4. Seleccione un elemento para ver su contenido en el panel de lectura.
 
-   ![Previsualizar elementos en el panel de lectura](../media/PreviewSearchResults2.png)
+   ![Previsualizar elementos en el panel de lectura.](../media/PreviewSearchResults2.png)
 
    En el recorte de pantalla anterior, observe que las palabras clave de búsqueda están resaltadas al previsualizar los elementos.
 

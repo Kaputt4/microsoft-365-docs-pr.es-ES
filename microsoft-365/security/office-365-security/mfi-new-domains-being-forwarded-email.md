@@ -12,12 +12,12 @@ ms.assetid: ''
 description: Los administradores pueden aprender a usar la información de correo electrónico nuevos dominios que se reenvía en el panel flujo de correo del Centro de cumplimiento de seguridad & para investigar cuándo sus usuarios reenvía mensajes a dominios externos a los que nunca se ha reenviado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98705d1f865886db91c8073188beaa0b3bc6b6da711839c0e43f6c81b1a7eae4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87af41d4c6fe1964510944f0ad06554056ce4f37
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57049512"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570406"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nuevos dominios que se reenvía información de correo electrónico en el Centro de seguridad & cumplimiento
 
@@ -36,11 +36,11 @@ La **información de correo electrónico** nuevos dominios que se reenvía en el
 
 Esta información solo aparece cuando se detecta el problema y aparece en la página [Informe de reenvío.](view-mail-flow-reports.md#forwarding-report)
 
-![Información de nuevos dominios a los que se reenvía correo electrónico](../../media/mfi-new-domains-being-forwarded.png)
+![Nuevos dominios que se reenvía información de correo electrónico.](../../media/mfi-new-domains-being-forwarded.png)
 
 Al hacer clic en el widget, aparece un control flotante donde puede encontrar más detalles sobre los mensajes reenviados, incluido un vínculo al informe [de reenvío](view-mail-flow-reports.md#forwarding-report).
 
-![Flyout de detalles que aparece después de hacer clic en la información de correo electrónico nuevos dominios que se reenvía](../../media/mfi-new-domains-being-forwarded-details.png)
+![El menú desplegable de detalles que aparece después de hacer clic en la información de correo electrónico nuevos dominios que se reenvía.](../../media/mfi-new-domains-being-forwarded-details.png)
 
 También puede acceder a esta página de detalles  al seleccionar la información después de hacer clic en Ver todo en el área Información **principal & recomendaciones** en (**Panel** de informes \>  o <https://protection.office.com/insightdashboard> ).
 

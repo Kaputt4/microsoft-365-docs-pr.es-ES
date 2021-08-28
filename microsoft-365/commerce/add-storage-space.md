@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Agregue almacenamiento de archivos en su Microsoft 365 suscripción. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint Online y OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: 381a11fe6c2a320b2864561975f516f9684acb11c4c9757ad4d125e6d31acba9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c08b105271f3b5297c1ca7258f7b723164e1fe0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872944"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574993"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Agregar espacio de almacenamiento para la suscripción
 
@@ -47,7 +47,7 @@ Debe ser un administrador global o SharePoint para realizar las tareas de este a
 
 2. En la esquina superior derecha de la página, puede ver la cantidad de almacenamiento empleado en todos los sitios, así como el almacenamiento total de su suscripción. Si su organización ha configurado Multi-Geo en Office 365, la barra también muestra la cantidad de almacenamiento usada en todas las ubicaciones geográficas.
 
-   ![Barra de almacenamiento en la página de Sitios activos](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+   ![Storage en la página Sitios activos.](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
    > [!NOTE]
    > El almacenamiento usado no incluye cambios realizados en las últimas 24-48 horas.
@@ -77,7 +77,7 @@ Si ya compró almacenamiento de archivos adicional a través del complemento **O
 3. En la página detalles del producto, en la **sección Complementos,** seleccione **Administrar complementos**.
 4. En el **panel Administrar complementos,** en la **lista Complementos,** elija **Office 365 Extra File Storage**.
 5. En el **cuadro de texto** Cantidad, escriba el número de GB de espacio de almacenamiento que desea para la suscripción.
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>¿Mi plan me permite optar a Office 365 Extra File Storage?
 

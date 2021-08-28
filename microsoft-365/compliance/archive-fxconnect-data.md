@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Veritas FX Conectar en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de la organización.
-ms.openlocfilehash: 61ccbbcea7c9222b68c6fed9fdb954533eab86830c07079dc9c5b5c71cc43d36
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2669ab21d0746d680a3029c2be998ab5d3ab6f82
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866677"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570334"
 ---
 # <a name="set-up-a-connector-to-archive-fx-connect-data"></a>Configurar un conector para archivar datos Conectar FX
 
@@ -29,7 +29,7 @@ Después de almacenar Conectar fx en buzones de usuario, puede aplicar caracter�
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar la información Conectar FX en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos Conectar FX](../media/FXConnectConnectorWorkflow.png)
+![Flujo de trabajo de archivado para fx Conectar datos.](../media/FXConnectConnectorWorkflow.png)
 
 1. Su organización trabaja con FX Conectar para configurar y configurar un sitio Conectar FX.
 

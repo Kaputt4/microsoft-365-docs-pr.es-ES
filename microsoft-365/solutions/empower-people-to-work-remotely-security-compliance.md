@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilice los servicios de seguridad y cumplimiento de Microsoft 365 para proteger sus aplicaciones, datos y dispositivos para los trabajadores híbridos.
-ms.openlocfilehash: 7c3d57dbe1783ff487ec40fa5deea29899c54f696d6cb653f2f2320a41916aba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aa43b2b30395def36d1c1210ef07edd379996b15
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805133"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575317"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Paso 3: implementar la seguridad y el cumplimiento de la normativa para los trabajadores híbridos
 
@@ -41,7 +41,7 @@ El trabajo remoto necesita los siguientes elementos de seguridad y cumplimiento:
 
 Estas son las características de Microsoft 365 que proporcionan servicios de seguridad y cumplimiento para los trabajadores híbridos.
 
-![Utilice estos servicios de Microsoft 365 para mantener la seguridad y el cumplimiento](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+![Utilice estos servicios de Microsoft 365 para mantener la seguridad y el cumplimiento.](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## <a name="security"></a>Seguridad
 
@@ -95,6 +95,6 @@ Para sus trabajadores híbridos, ha implementado:
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 4: Administrar sus dispositivos, equipos PC y otros puntos de conexión](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
+[![Paso 4: Administrar sus dispositivos, equipos PC y otros puntos de conexión.](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
 
 Continúe con el [Paso 4](empower-people-to-work-remotely-manage-endpoints.md) para administrar los dispositivos, equipos y otros puntos de conexión.

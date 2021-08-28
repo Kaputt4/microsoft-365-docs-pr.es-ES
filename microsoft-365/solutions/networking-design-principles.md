@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f259f7379d0b3f723880d8734488b2004581ff6f
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 6ab911fa9ad4e39a59b7acc58cae7686dd330ed4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502056"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574477"
 ---
 # <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>Creación de redes (en la nube): punto de vista de un arquitecto
 
@@ -26,7 +26,7 @@ En este artículo, [Ed Fisher](https://www.linkedin.com/in/edfisher/), Security 
 
 ## <a name="about-the-author"></a>Acerca del autor
 
-![Foto de Ed Fisher](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
+![Foto de Ed Fisher.](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
 
 Actualmente soy un especialista técnico principal en nuestro equipo comercial y de bienes de consumo, centrándome en la seguridad y & cumplimiento. He trabajado con clientes que se han mudado a Office 365 durante los últimos diez años. He trabajado con tiendas más pequeñas con un puñado de ubicaciones para agencias gubernamentales y empresas con millones de usuarios distribuidos por todo el mundo, y muchos otros clientes en el medio, con la mayoría de decenas de miles de usuarios, varias ubicaciones en varias partes del mundo, la necesidad de un mayor grado de seguridad y una gran variedad de requisitos de cumplimiento. He ayudado a cientos de empresas y millones de usuarios a moverse a la nube de forma segura y segura.
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: cómo Contoso usó un equipo con aislamiento de seguridad para un proyecto secreto para desarrollar un nuevo conjunto de productos y servicios.'
-ms.openlocfilehash: 86c2b0cbf53df07ac956138e096ad53a67f0bd7226b8583214d0e666ddbafe9e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3a14a5c7ba844e31b8e96d209eb21a9daac45e00
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883587"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575425"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Equipo aislado para un proyecto secreto de Contoso Corporation
 
@@ -77,7 +77,7 @@ Cuando se crearon canales privados para el Project 2X, el propietario del grupo 
 
 Esta es la configuración resultante del equipo Project 2X con aislamiento de seguridad.
 
-![La configuración resultante del equipo Project 2X](../media/contoso-team-for-top-secret-project.png)
+![Configuración resultante del equipo Project 2X.](../media/contoso-team-for-top-secret-project.png)
 
  ## <a name="step-4-trained-project-2x-team-members"></a>Paso 4: Formación Project miembros del equipo 2X
 
@@ -92,7 +92,7 @@ El resultado final fue un entorno seguro en el que Project miembros del equipo 2
 
 Este es un ejemplo de un archivo almacenado en el sitio Project 2X con la Project de confidencialidad 2X asignada.
 
-![Un ejemplo de un archivo almacenado en el sitio Project sitio 2X](../media/contoso-team-for-top-secret-project-example.png)
+![Un ejemplo de un archivo almacenado en el sitio Project sitio 2X.](../media/contoso-team-for-top-secret-project-example.png)
 
 En un par de instancias, Project miembros del equipo 2X descargaron archivos protegidos por la etiqueta Project 2X en una unidad local para el trabajo sin conexión. 
 

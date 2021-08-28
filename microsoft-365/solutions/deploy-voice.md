@@ -17,18 +17,18 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo elegir e implementar la solución Teams de voz adecuada para su organización.
-ms.openlocfilehash: bfcad56d54eb29fdf9d2b48b74d7811dee5dc2df1be9fdf2ddcd5373a1b1be48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 359242ea66fc1be9af18ff10cb7e33fe26ddd83e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883371"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575377"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>Planear e implementar una solución de voz de Teams
 
 Una Teams de voz permite a los usuarios de la organización realizar llamadas tanto dentro como fuera de la organización. Una solución de voz completa consta de Teams, Teléfono Microsoft system y una selección de opciones para conectarse a la red telefónica conmutada (RTC).
 
-![Teams de soluciones de voz](..\media\solutions-architecture-center\voice-concepts.png)
+![Teams de soluciones de voz.](..\media\solutions-architecture-center\voice-concepts.png)
 
 Sistema telefónico proporciona funcionalidades completas de Exchange de sucursal privada (PBX) para su organización. Las llamadas entre usuarios de la organización, independientemente de su ubicación geográfica, se controlan internamente en Sistema telefónico lo que se quitan los costos de larga distancia en estas llamadas internas.  
 
@@ -41,7 +41,7 @@ Esta guía de solución le ayuda a:
 
 Siga estos pasos para elegir, planear y configurar la solución de voz:
 
-![Elija su solución de voz](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
+![Elija la solución de voz.](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
 
 1. [Elija su solución de voz](/MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 

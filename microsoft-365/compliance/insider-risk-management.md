@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 553e27bf4f3d3b34749bb0b45375ee646e7c28ed20f5f3f0751626752b07b0d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 33d32918316b997b2cc97d63dac8c8deff135528
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879677"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570814"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Obtenga información sobre la administración de riesgos de insider en Microsoft 365
 
@@ -71,7 +71,7 @@ El flujo de trabajo de administración de riesgos internos le ayuda a identifica
 
 La identificación y resolución de actividades de riesgo interno y problemas de cumplimiento con la administración de riesgos internos en Microsoft 365 usa el siguiente flujo de trabajo:
 
-![Flujo de trabajo de la administración de riesgos internos](../media/insider-risk-workflow.png)
+![Flujo de trabajo de administración de riesgos de Insider.](../media/insider-risk-workflow.png)
 
 ### <a name="policies"></a>Directivas
 
@@ -88,19 +88,19 @@ Puede seleccionar entre las siguientes plantillas de directiva para empezar ráp
 - [Infracciones de la directiva de seguridad por parte de los usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-![Panel de directiva de administración de riesgos internos](../media/insider-risk-policy-dashboard.png)
+![Panel de directivas de administración de riesgos de Insider.](../media/insider-risk-policy-dashboard.png)
 
 ### <a name="alerts"></a>Alertas
 
 Las alertas se generan automáticamente mediante indicadores de riesgo que coinciden con las condiciones de la directiva y se muestran en el panel [Alertas.](insider-risk-management-activities.md#alert-dashboard) Este panel ofrece una vista rápida de todas las alertas que se deben revisar, alertas abiertas a lo largo del tiempo y estadísticas de alertas de la organización. Todas las alertas de directiva se muestran con la siguiente información para ayudarle a identificar rápidamente el estado de las alertas existentes y las alertas nuevas que necesitan acción:
 
 - Estado
-- Severity
+- Gravedad
 - Tiempo detectado
 - Case
 - Estado del caso
 
-![Panel de alertas de administración de riesgos de Insider](../media/insider-risk-alerts-dashboard.png)
+![Panel de alertas de administración de riesgos insider.](../media/insider-risk-alerts-dashboard.png)
 
 ### <a name="triage"></a>Triage
 
@@ -108,7 +108,7 @@ Las nuevas actividades de usuario que necesitan investigación generan automáti
 
 Para resolver las alertas, se abre un nuevo caso, se asigna la alerta a un caso existente o se descarta la alerta. Con los filtros de alerta, es fácil identificar rápidamente las alertas por estado, gravedad o tiempo detectados. Como parte del proceso de evaluación, los revisores pueden ver los detalles de alerta de las actividades identificadas por la directiva, ver la actividad de usuario asociada con la coincidencia de directiva, ver la gravedad de la alerta y revisar la información del perfil de usuario.
 
-![Evaluación de la administración de riesgos de Insider](../media/insider-risk-triage.png)
+![Evaluación de la administración de riesgos de Insider.](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>Investigación
 
@@ -122,11 +122,11 @@ Si se selecciona un caso en el panel de casos, se abre el caso para su investiga
 - **Explorador de contenido:** todos los archivos de datos y mensajes de correo electrónico asociados con actividades de alerta se capturan y muestran automáticamente en el explorador de contenido. Los revisores pueden filtrar y ver archivos y mensajes por origen de datos, tipo de archivo, etiquetas, conversación y muchos más atributos.
 - **Notas del caso:** los revisores pueden proporcionar notas para un caso en la sección Notas del caso. Esta lista consolida todas las notas en una vista central e incluye información de revisor y fecha enviada.
 
-![Investigación de administración de riesgos insider](../media/insider-risk-investigate.png)
+![Investigación de administración de riesgos de Insider.](../media/insider-risk-investigate.png)
 
 Además, el nuevo registro de [auditoría (versión preliminar)](insider-risk-management-audit-log.md) permite mantenerse informado de las acciones realizadas en las características de administración de riesgos internas. Este recurso permite una revisión independiente de las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos insider.
 
-### <a name="action"></a>Action
+### <a name="action"></a>Acción
 
 Una vez que se investigan los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas en riesgos de la organización. Si los usuarios infringen accidentalmente o inadvertidamente las condiciones de la directiva, se puede enviar un aviso simple al usuario desde plantillas de aviso que puede personalizar para su organización. Estos avisos pueden servir como recordatorios sencillos o pueden dirigir al usuario a cursos de actualización o instrucciones para ayudar a evitar comportamientos de riesgo futuros. Para más información, consulte [plantillas de notificación de administración de riesgos internos](insider-risk-management-notices.md).
 

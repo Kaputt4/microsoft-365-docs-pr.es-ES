@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: aec8eeeacb520c8ac035a099639e8f788c4cf1c96f8d42588cda8d992fb9d2f3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: edebf145a754d58e4650492eefa6d67276127afb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795406"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574753"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adopción SharePoint Syntex Microsoft: Introducción
 
@@ -70,7 +70,7 @@ Use los [escenarios de ejemplo y los casos de uso](adoption-scenarios.md) para p
 
 Determine who in your organization will build and manage the models? Los siguientes roles pueden estar implicados:
 
-| Administrador de información/SharePoint | Administrador de Power Platform | Administrador de conocimientos | Propietario del modelo |
+| Administrador de conocimiento/SharePoint | Administrador de Power Platform | Responsable de la información | Propietario del modelo |
 |:-------|:-------|:-------|:-------|
 | Rol AAD| Rol AAD | Rol AAD | Expertos: |
 | Configurar el procesamiento de formularios | Configurar el entorno de servicio de datos común para el procesamiento de formularios | Recopilar casos de uso | Recopilar casos de uso empresarial |
@@ -118,7 +118,7 @@ Identifique las partes interesadas del proyecto.
 
 Para prepararse para implementar SharePoint Syntex, debe:
 
-![Preparación para la comprensión del contenido](../media/content-understanding/cu-adoption-readinesschecklist.png)
+![Preparación para la comprensión del contenido.](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. Planear el estado final
     - Los modelos de comprensión de documentos son los medios, no el final.
@@ -144,6 +144,6 @@ Para prepararse para implementar SharePoint Syntex, debe:
 1. Recopilar comentarios e iterar.
 1. A medida que aumenta el uso, planee los créditos de AI Builder según sea necesario.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Escenarios y casos de uso de SharePoint Syntex](adoption-scenarios.md) 

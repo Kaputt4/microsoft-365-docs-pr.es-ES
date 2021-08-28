@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Obtenga información sobre qué hacer si tiene un dominio no enrutable asociado a sus cuentas de usuario locales antes de sincronizarlas con su Microsoft 365 inquilino.
-ms.openlocfilehash: cecaee814d19f78b973ebd2f06c8d2c665d905de
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: dd93cfd85aa6f6f5788b6ae5562c2a2def3ffaa0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356917"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574296"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar un dominio no enrutable para la sincronización de directorios
 
@@ -63,11 +63,11 @@ Después de actualizar los UPN para usar el dominio comprobado, estás listo par
   
 2. En la **ventana Dominios y confianzas** de Active Directory, haga clic con el botón secundario en Dominios y **confianzas** de Active Directory y, a continuación, **elija Propiedades**.
     
-    ![Haga clic con el botón secundario en Dominios y confianzas de Active Directory y elija Propiedades](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
+    ![Haga clic con el botón secundario en Dominios y confianzas de Active Directory y elija Propiedades.](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
 3. En la pestaña Sufijos **UPN,** en el cuadro Sufijos **UPN** alternativos, escriba el sufijo o sufijos UPN nuevo y, a continuación, **elija** \> **Agregar aplicar**.
     
-    ![Agregar un sufijo UPN nuevo](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
+    ![Agregue un sufijo UPN nuevo.](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
     Elija **Aceptar** cuando haya terminado de agregar sufijos. 
     
@@ -83,7 +83,7 @@ Después de actualizar los UPN para usar el dominio comprobado, estás listo par
     
 3. En la **pestaña** Cuenta, en la lista desplegable Sufijo UPN, elija el nuevo sufijo UPN y, a continuación, **elija Aceptar**.
     
-    ![Agregar nuevo sufijo UPN para un usuario](../media/54876751-49f0-48cc-b864-2623c4835563.png)
+    ![Agregue un sufijo UPN nuevo para un usuario.](../media/54876751-49f0-48cc-b864-2623c4835563.png)
   
 4. Complete estos pasos para cada usuario.
     

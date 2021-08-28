@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Este artículo le guía a través de los procedimientos recomendados que puede adoptar para usar Office 365 en una red lenta.
-ms.openlocfilehash: b09fe2a38cd98a09e7d6375abccb0486b59c34c092f60c78144ebc695453f7c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 928e2156a6d559fab4b838118d972a4ae730e328
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819609"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575137"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Procedimientos recomendados para usar Office 365 en una red lenta
 
@@ -40,7 +40,7 @@ Aunque no tiene control sobre el rendimiento de la red en sí, ayuda a comprende
 
 ### <a name="major-factors-that-affect-network-performance"></a>Factores principales que afectan al rendimiento de la red
 
-![Factores de rendimiento de red](../media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
+![Factores de rendimiento de red.](../media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
 
  **Ancho de banda y latencia:** las dos medidas más importantes del rendimiento de la red son el ancho de banda y la latencia:
 
@@ -177,7 +177,7 @@ Para obtener más información, vea [Tune Project Online performance](https://su
 
 Microsoft mejora continuamente el rendimiento general de Office 365 mediante la supervisión de la red, la medición del ancho de banda y la latencia, la mejora del tiempo de carga de la página, la reducción de E/S de disco, el rediseño de páginas para usar la estrategia de descarga mínima, la adición de hardware a los centros de datos y la adición de más centros de datos. Para obtener más información sobre cómo comprobar el estado actual y los problemas de informes, vea [How to check Office 365 service health](view-service-health.md).
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Planeamiento de red y ajuste del rendimiento para Office 365](network-planning-and-performance.md)
 

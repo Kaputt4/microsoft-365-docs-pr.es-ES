@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: En este artículo, obtenga información sobre cómo expandir su Microsoft 365 a varias regiones geográficas con Microsoft 365 Multi-Geo.
-ms.openlocfilehash: a7bed2ddea25ccd808d0b92d6cdeb689c004d2a409ee553fb3862b539fab9c28
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b421be44711172729e228083b6682ac387473e6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864361"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575113"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -32,7 +32,7 @@ Para obtener una introducción en vídeo Microsoft 365 Multi-Geo, vea [SharePoin
 
 En un entorno multigeográfico, su espacio empresarial de Microsoft 365 cuenta con una ubicación central (donde se aprovisionó originalmente la suscripción a Microsoft 365) y una o varias ubicaciones satélites. En un espacio empresarial multigeográfico, la información sobre las ubicaciones geográficas, grupos y la información de usuario, se controla en Azure Active Directory (Azure AD). Como la información del espacio empresarial se controla de forma centralizada y se sincroniza en cada ubicación geográfica, el uso compartido y las experiencias que involucran a todos los empleados de su compañía comparten una conciencia global.
 
-![Captura de pantalla del mapa multigeográfico desde el Centro de administración de SharePoint Online](../media/multi-geo-world-map.png)
+![Captura de pantalla del mapa multige SharePoint centro de administración.](../media/multi-geo-world-map.png)
 
 Tenga en cuenta que Microsoft 365 Multi-Geo no está diseñado principalmente para optimizar el rendimiento, sino para cumplir con los requisitos de residencia de datos. Para obtener información sobre la optimización del rendimiento de Microsoft 365, vea [Network planning and performance tuning for Microsoft 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) (Planeamiento de red y ajuste de rendimiento para Microsoft 365) o póngase en contacto con su grupo de soporte técnico.
 

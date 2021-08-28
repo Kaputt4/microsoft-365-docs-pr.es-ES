@@ -11,18 +11,18 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 591b83823aac1679209ed6cdd0069d559e9fe3e7adfbf7a3f24f0730f37ce912
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c1c8f46c3d569b6b43a87a6481d93b76729e48d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834713"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570946"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Introducción a la adopción de Temas Microsoft Viva
 
 Antes de empezar con la adopción, debe comprender los conceptos relacionados con la administración de conocimientos y los temas de Viva. En el siguiente diagrama se muestra lo que sucede durante la detección y la curación de temas:
 
-![Arquitectura de Temas de Viva](../media/knowledge-management/topic-management-architecture.png)
+![Arquitectura de Temas de Viva.](../media/knowledge-management/topic-management-architecture.png)
 
 - **Detección**: los usuarios pueden descubrir información en las aplicaciones que usan a diario a través de tarjetas de tema; también pueden descubrir temas en Búsqueda de Microsoft.
 - **Conservación**: los expertos en la materia (SME) refinan los temas a través de las páginas de temas e IA se enriquece de su entrada. El Centro de temas contiene páginas de temas que los usuarios pueden explorar y los expertos pueden administrar.
@@ -56,7 +56,7 @@ Revise esta lista de requisitos previos para sacar el máximo partido a Temas Vi
 
 Para planear la adopción de Viva Topics, debe:
 
-![Pasos para planear la adopción](../media/knowledge-management/km-adoption-plan-adoption.png)
+![Pasos para planear la adopción.](../media/knowledge-management/km-adoption-plan-adoption.png)
 
 1. Planee los escenarios de enfoque y de destino:
     - Piense en definir y priorizar los [escenarios](#target-scenarios).
@@ -121,7 +121,7 @@ Después de identificar los escenarios, puede priorizar los escenarios:
 
 Una forma de priorizarlos es trazar los escenarios en una cuadrícula que muestre el impacto frente a la facilidad de implementación. Busque escenarios que tengan un alto impacto y que sean fáciles de implementar y hagan de esos escenarios su prioridad principal. Los escenarios de impacto bajo y difíciles de implementar son la prioridad más baja. Cuando usted obtiene un resultado rápido con un escenario de alto impacto y fácil de implementar, este ayuda a que las personas se entusiasmen y vean las posibilidades de usar temas.
 
-![Los escenarios de alto impacto y fáciles de implementar son de alta prioridad](../media/knowledge-management/topics-prioritize-scenarios.png)
+![Los escenarios de alto impacto y fáciles de implementar son de alta prioridad.](../media/knowledge-management/topics-prioritize-scenarios.png)
 
 Seleccione un par de escenarios clave en los que centrarse inicialmente, trabaje con sus primeras adopciones para obtener algunos comentarios y, a continuación, impleméntelos en fases. De esta forma, puede iterar, realizar mejoras y obtener comentarios para que pueda aumentar la adopción con el tiempo.
 

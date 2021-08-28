@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador Microsoft 365 es una herramienta que se puede entrenar para reconocer varios tipos de contenido para la aplicación de directivas o de la formación, ya que le proporciona ejemplos positivos y negativos que buscar.
-ms.openlocfilehash: 25bbec395b1bb229f62122caf23845c18f5305e324a37cd0a6856e81286d1ee5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b54ab2f905d77ae59ba94e15768c7664007baaa
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872120"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574861"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -74,7 +74,7 @@ Microsoft 365 viene con cinco clasificadores previamente formados:
 - **Código fuente:** detecta elementos que contienen un conjunto de instrucciones y instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub
     - ActionScript
     - C
-    - C#
+    - C #
     - C++
     - Clojure
     - CoffeeScript
@@ -109,7 +109,7 @@ Microsoft 365 viene con cinco clasificadores previamente formados:
 
 Aparecen en la vista **clasificadores Centro de cumplimiento de Microsoft 365** clasificación de datos  >    >  **trainable con** el estado de `Ready to use` .
 
-![clasificadores-clasificadores previamente formados](../media/classifiers-ready-to-use-classifiers.png)
+![clasificadores-clasificadores previamente formados.](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > Tenga en cuenta que el lenguaje ofensivo, el acoso, la profanación, la discriminación y los clasificadores de amenazas solo funcionan con texto que admite búsquedas y no son una lista exhaustiva o completa de términos o idiomas en estas áreas. Además, los estándares lingüísticos y culturales cambian continuamente y, a la luz de estas realidades, Microsoft se reserva el derecho de actualizar estos clasificadores a su discreción. Aunque los clasificadores pueden ayudar a su organización a detectar estas áreas, los clasificadores no están diseñados para proporcionar el único medio de su organización para detectar o abordar el uso de dicho idioma. Su organización, no Microsoft ni sus subsidiarias, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, el examen, el bloqueo, la eliminación y la retención de cualquier contenido identificado por un clasificador previamente formado, incluido el cumplimiento de la privacidad local y otras leyes aplicables. Microsoft anima a consultar con abogados antes de la implementación y el uso.
@@ -130,15 +130,15 @@ Por ejemplo, podría crear clasificadores que se puedan entrenar para:
 
 La creación y publicación de un clasificador para su uso en soluciones de cumplimiento, como directivas de retención y supervisión de comunicaciones, sigue este flujo. Para obtener más información sobre cómo crear un clasificador personalizado, vea [Creating a custom classifier](classifier-get-started-with.md).
 
-![clasificador personalizado de flujo de proceso](../media/classifier-trainable-classifier-flow.png)
+![clasificador personalizado de flujo de proceso.](../media/classifier-trainable-classifier-flow.png)
 
 ### <a name="retraining-classifiers"></a>Reentrenamiento de clasificadores
 
 Puede ayudar a mejorar la precisión de todos los clasificadores personalizados y algunos clasificadores previamente formados al proporcionarles comentarios sobre la precisión de la clasificación que realizan. Esto se denomina reciclaje y seguir este flujo de trabajo.
 
-![Flujo de trabajo de reciclaje de clasificadores](../media/classifier-retraining-workflow.png)
+![flujo de trabajo de reciclaje de clasificadores.](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos SMS y MMS de TeleMessage Enterprise Archivo de números. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 1fb13b5c35aa71d3ed2d83a28dbcedcb764a10506e38381032052f39b2970cf0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d164f2087e0e172cd948549090b750cfefe947b2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814833"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570346"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configurar un conector para archivar datos Enterprise número
 
@@ -29,7 +29,7 @@ Después de almacenar los datos del conector del archivador de números de TeleM
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar Enterprise de red en Microsoft 365.
 
-![Enterprise Flujo de trabajo de archivado de números](../media/EnterpriseNumberConnectorWorkflow.png)
+![Enterprise Flujo de trabajo de archivado de números.](../media/EnterpriseNumberConnectorWorkflow.png)
 
 1. Su organización trabaja con TeleMessage para configurar un conector Enterprise archivo de números. Para obtener más información, consulte [aquí](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/).
 

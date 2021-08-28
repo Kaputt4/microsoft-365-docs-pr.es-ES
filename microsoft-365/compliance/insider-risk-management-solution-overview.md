@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: d2676c827cc6771d4a8b9a140c06365321695f9f12674c7a41a846b76f210044
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7f1f1c4a6655142401f121def17999d4f07d9f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835801"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570562"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos insider en Microsoft 365
 
@@ -44,7 +44,7 @@ Vea los vídeos siguientes para obtener información sobre cómo la administraci
 
 Siga estos pasos para configurar la administración de riesgos de insider para su organización:
 
-![Pasos de administración de riesgos de insider risk solution insider](../media/ir-solution-ir-steps.png)
+![Pasos de administración de riesgos de insider risk solution insider.](../media/ir-solution-ir-steps.png)
 
 1. Obtenga información [sobre la administración de riesgos de insider](insider-risk-management.md) en Microsoft 365
 2. Planear la administración [de riesgos de insider y comprobar licencias](insider-risk-management-plan.md)

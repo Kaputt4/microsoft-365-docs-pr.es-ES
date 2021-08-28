@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el Microsoft 365 de soluciones, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7ca34e9bb091d98af999b0c7e019421bbd2b023961c2b9c348c38fdd65dd6e51
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b7c7f299201a25518b187eed1bd78e7f67d678b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807819"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574957"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
@@ -30,17 +30,17 @@ Lea este artículo para familiarizarse con el nuevo catálogo de soluciones en e
 
 El catálogo de soluciones se organiza en secciones que contienen tarjetas de información para cada solución de cumplimiento disponible en su Microsoft 365 suscripción. Cada sección contiene tarjetas para soluciones agrupadas por área de cumplimiento.
 
-![Microsoft 365 principal del catálogo de soluciones](../media/m365-solution-catalog-home.png)
+![Microsoft 365 página principal del catálogo de soluciones.](../media/m365-solution-catalog-home.png)
 
 Al seleccionar **Ver para** una tarjeta de solución, verá información detallada sobre la solución de cumplimiento y cómo empezar. Esta información incluye información general, requisitos de configuración previa, recursos de aprendizaje, controles que permiten anclar la tarjeta al panel de navegación y una opción para compartir la solución como un vínculo, correo electrónico o Microsoft Teams mensaje.
 
-![Microsoft 365 de cumplimiento de comunicaciones](../media/m365-solution-catalog-communication-compliance.png)
+![Microsoft 365 de cumplimiento de comunicaciones.](../media/m365-solution-catalog-communication-compliance.png)
 
 ## <a name="information-protection--governance-section"></a>Sección de gobierno & protección de la información
 
 La **sección Information protection & governance** muestra de un vistazo cómo puede usar Microsoft 365 de cumplimiento normativo para proteger y gobernar los datos de su organización.
 
-![Microsoft 365 de administración y protección de la información del catálogo de soluciones](../media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft 365 de protección de la información y gobierno del catálogo de soluciones.](../media/m365-solution-catalog-information-protection-governance.png)
 
 Desde aquí, verá las tarjetas para las siguientes soluciones:
 
@@ -53,7 +53,7 @@ Desde aquí, verá las tarjetas para las siguientes soluciones:
 
 La sección Administración de riesgos de **Insider** de la página principal muestra de un vistazo cómo su organización puede identificar, analizar y tomar medidas en los riesgos internos antes de causar daños.
 
-![Microsoft 365 de administración de riesgos de insider del catálogo de soluciones](../media/m365-solution-catalog-insider-risk-management.png)
+![Microsoft 365 de administración de riesgos de insider del catálogo de soluciones.](../media/m365-solution-catalog-insider-risk-management.png)
 
 Desde aquí, verá las tarjetas para las siguientes soluciones:
 
@@ -64,7 +64,7 @@ Desde aquí, verá las tarjetas para las siguientes soluciones:
 
 La **sección Detección &** respuesta en la página principal muestra de un vistazo cómo su organización puede encontrar, investigar y responder rápidamente a problemas de cumplimiento con datos relevantes.
 
-![Microsoft 365 de detección y respuesta del catálogo de soluciones](../media/m365-solution-catalog-discovery-response.png)
+![Microsoft 365 de detección y respuesta del catálogo de soluciones.](../media/m365-solution-catalog-discovery-response.png)
 
 Desde aquí, verá las tarjetas para las siguientes soluciones:
 
@@ -78,7 +78,7 @@ Desde aquí, verá las tarjetas para las siguientes soluciones:
 
 Para visitar el catálogo Microsoft 365 soluciones, vaya a e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos [https://compliance.microsoft.com](https://compliance.microsoft.com) de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la página principal del catálogo.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Por qué no veo el catálogo Microsoft 365 soluciones?**
 

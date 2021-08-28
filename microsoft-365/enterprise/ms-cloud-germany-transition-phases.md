@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 51fb2da1bd30a01ed61eef612450feaf5ca4609f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 73b50d52094526857e3787c29b764f55976bde12
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532972"
+ms.locfileid: "58570754"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland
 
 Las migraciones de inquilinos de Microsoft Cloud Deutschland (MCD) a la región "Alemania" de los servicios globales de Office 365 de Microsoft se ejecutan como un conjunto de fases y sus acciones configuradas para cada carga de trabajo. Esta figura muestra las diez fases de migración a los nuevos centros de datos alemanes.
 
-[![Las diez fases de migración a los nuevos centros de datos de Alemania ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
+[![Las diez fases de migración a los nuevos centros de datos de Alemania. ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
 El proceso de migración se completará durante varias semanas en función del tamaño general y la complejidad de la organización. Mientras la migración está en curso, los usuarios y administradores pueden seguir usando los servicios con cambios notables detallados en esta documentación. El gráfico y la tabla definen fases y pasos durante la migración.
 
@@ -40,7 +40,7 @@ El proceso de migración se completará durante varias semanas en función del t
 
 ****
 
-|Pasos|Duración|Responsable|Descripción|
+|Pasos|Duración|Responsable|Description|
 |---|---|---|---|
 |Opt-In|Horas|Clientes|Opte por la organización en la migración.|
 |Pre-Work|Días|Clientes|Complete el trabajo necesario para preparar usuarios, estaciones de trabajo y red para la migración.|
@@ -69,7 +69,7 @@ Las secciones siguientes contienen acciones y efectos para las cargas de trabajo
 
 ****
 
-|Pasos|Descripción|Impacto|
+|Pasos|Description|Impacto|
 |---|---|---|
 |**Tarea del cliente:** conceder el consentimiento para la migración|El cliente concede el consentimiento para la migración de modo que Microsoft obtiene el derecho de migrar y de organizar la transición de datos y servicios a la instancia de servicios Office 365 global. Hay dos formas: <ol><li>El Office 365 de inquilinos opta por la migración controlada por Microsoft.</li><li>Los clientes han renovado cualquier suscripción en su mcd Office 365 inquilino después del 1 de mayo de 2020. Microsoft notifica a estos clientes el derecho de migración cada mes, espera 30 días para dar a los clientes la oportunidad de cancelar y luego participar directamente.</li></ol>|<ul><li>El espacio empresarial se marca como consentido para la migración y el Centro de administración muestra la confirmación.</li><li>La confirmación se publica en el Centro de mensajes Office 365 inquilino. La configuración del servicio continúa desde los puntos de conexión de Microsoft Cloud Deutschland.</li></ul>
 |**Administrador de inquilinos:** supervisar mensajes|El administrador de inquilinos debe supervisar el centro Office 365 mensajes para obtener actualizaciones sobre el estado de la fase de migración a partir de este momento.|El cliente puede ejecutar las tareas necesarias a tiempo.
@@ -145,7 +145,7 @@ En caso de que aún SharePoint flujos de trabajo de 2013, limite el uso de flujo
 
 ****
 
-|Pasos|Descripción|Impacto|
+|Pasos|Description|Impacto|
 |---|---|---|
 |SharePoint y OneDrive se transiciónn|SharePoint Online y OneDrive para la Empresa se migran de Microsoft Cloud Deutschland a Office 365 global en esta fase. <ul><li>Las direcciones URL existentes de Microsoft Cloud Deutschland se conservan (por ejemplo, `contoso.sharepoint.de` ).</li><li>Los sitios existentes se conservan.</li><li>Los tokens de autenticación del lado cliente emitidos por el Servicio de tokens de seguridad (STS) en la instancia de servicios globales de Microsoft Cloud Deutschland o Office 365 son válidos durante la transición.</li></ul>|<ul><li>El contenido será de solo lectura durante dos breves períodos durante la migración. Durante este tiempo, espere un banner "no se puede editar contenido" en SharePoint.</li><li>El índice de búsqueda no se conservará y puede tardar hasta 10 días en volver a crearse.</li><li>SharePoint El contenido OneDrive para la Empresa y en línea será de solo lectura durante dos breves períodos durante la migración. Los usuarios verán un banner "no se puede editar contenido" brevemente durante este tiempo.</li><li>Una vez completada la migración de SharePoint Online, es posible que los resultados de la búsqueda de SharePoint Online y OneDrive para la Empresa contenido no estén disponibles mientras se recompile el índice. Durante este período, es posible que las consultas de búsqueda no devuelvan resultados completos. Las características que dependen de los índices de búsqueda, como SharePoint Online News, pueden verse afectadas al volver a indizar.</li><li>SharePoint flujos de trabajo de 2013 se romperán durante la migración y deben volver a publicarse después de la migración.</li></ul>|
 |**Administrador de SPO:** volver a publicar SharePoint flujos de trabajo de 2013|Un administrador SharePoint Online vuelve a publicar los flujos SharePoint 2013 después de la migración.|Se trata de una acción necesaria. Si no lo hace, puede provocar confusión del usuario, llamadas al servicio de ayuda y disminución de la productividad.|
@@ -296,7 +296,7 @@ Los clientes con Dynamics 365 requieren una participación adicional para migrar
 
 ****
 
-|Pasos|Descripción|Impacto|
+|Pasos|Description|Impacto|
 |---|---|---|
 |Recursos de Microsoft Dynamics|Microsoft Engineering o Microsoft FastTrack contratará a los clientes con Microsoft Dynamics para realizar la transición de Microsoft Dynamics 365 a la Office 365 de servicios globales.\*|<ul><li>Después de la migración, el administrador valida la organización.</li><li>El administrador modifica los flujos de trabajo según sea necesario.</li><li>El administrador borra el modo AdminOnly según corresponda.</li><li>El administrador cambia el tipo de organización de _Espacio aislado_, según corresponda</li><li>Notificar a los usuarios finales de la nueva dirección URL para obtener acceso a la instancia (org).</li><li>Actualice las conexiones entrantes a la nueva dirección URL del extremo.</li><li>El servicio Dynamics no estará disponible para los usuarios durante la transición.</li><li>Los usuarios deben validar el estado de la organización y las características después de la migración de cada organización.</li></ul>|
 |
@@ -360,7 +360,7 @@ Microsoft Azure clientes deben realizar la transición de sus cargas de trabajo 
 
 ****
 
-|Pasos|Descripción|Impacto|
+|Pasos|Description|Impacto|
 |---|---|---|
 |Actualizar puntos de conexión de usuario|Garantizar que todos los usuarios accedan al servicio con los extremos de Microsoft en todo el mundo adecuados|30 días después de finalizar la migración, los puntos de conexión de Microsoft Cloud Deutschland dejarán de cumplir las solicitudes; se producirá un error en el tráfico de cliente o aplicación.|
 |Actualizar puntos de conexión de aplicaciones de Azure AD|Debe actualizar los puntos de conexión de autenticación, Azure Active Directory (Azure AD) (Azure AD) Graph y MS Graph para las aplicaciones a los del servicio de Microsoft Worldwide.|30 días después de finalizar la migración, los puntos de conexión de Microsoft Cloud Deutschland dejarán de cumplir las solicitudes; se producirá un error en el tráfico de cliente o aplicación.|
@@ -380,7 +380,7 @@ Es posible que los dispositivos que no se vuelvan a unir a Azure AD ya no funcio
 
 ****
 
-|Pasos|Descripción|Impacto|
+|Pasos|Description|Impacto|
 |---|---|---|
 |Actualice Azure AD Conectar.|Una vez completado el recorte a Azure AD, la organización usa completamente los servicios Office 365 y ya no está conectada a Microsoft Cloud Deutschland. En este momento, el cliente debe asegurarse de que el proceso de sincronización delta se ha finalizado y, después, cambiar el valor de cadena de `AzureInstance` 3 (Microsoft Cloud Deutschland) a 0 en la ruta de acceso del Registro `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` .|Cambie el valor de `AzureInstance` , la clave del Registro. Si no lo hace, los objetos no se sincronizarán después de que los puntos de conexión de Microsoft Cloud Deutschland ya no estén disponibles.|
 |

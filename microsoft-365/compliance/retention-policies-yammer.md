@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Yammer.
-ms.openlocfilehash: 63583fcdb0860bfba60d8847e9130f671d916bbf
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 352c66ad34508d06d4673dab4ebc2b98a27649d7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255267"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574140"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Más información sobre la retención para Yammer
 
@@ -78,7 +78,7 @@ Una vez que se configura una directiva de retención para los mensajes de Yammer
 
 Cuando la directiva de retención consiste en retener y luego eliminar:
 
-![Diagrama de flujo de retención de los mensajes de Yammer](../media/yammerretentionlifecycle.png)
+![Diagrama de flujo de retención para mensajes de Yammer.](../media/yammerretentionlifecycle.png)
 
 Para las dos rutas en el diagrama:
 

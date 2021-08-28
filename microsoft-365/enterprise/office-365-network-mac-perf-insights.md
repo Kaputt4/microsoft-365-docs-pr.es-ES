@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Red Ideas
-ms.openlocfilehash: ef844598d505e42f4fb99cb52321fc9709dbd4a2411884f7b8b4fff51c3a62d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e5b46b4a19a52807a0690722e9a5f5f46727c7ae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854790"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570514"
 ---
 # <a name="microsoft-365-network-insights"></a>Microsoft 365 Red Ideas
 
@@ -52,7 +52,7 @@ Esta información se mostrará si el servicio de información de red detecta que
 Esta información se abrevia como "Egress" en algunas vistas de resumen.
 
 > [!div class="mx-imgBorder"]
-> ![Salida de red backhauled](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+> ![Salida de red backhauled.](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
 ### <a name="what-does-this-mean"></a>¿Qué significa esto?
 
@@ -87,7 +87,7 @@ Esta información se mostrará si el servicio de información de red detecta que
 Esta información se abrevia como "Peers" en algunas vistas de resumen.
 
 > [!div class="mx-imgBorder"]
-> ![Rendimiento relativo de la red](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
+> ![Rendimiento relativo de la red.](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
 
 ### <a name="what-does-this-mean"></a>¿Qué significa esto?
 
@@ -104,7 +104,7 @@ Esta información se mostrará si el servicio de información de red detecta que
 Esta información se abrevia como "Enrutamiento" en algunas vistas de resumen.
 
 > [!div class="mx-imgBorder"]
-> ![Puerta frontal exo no óptima](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+> ![Puerta frontal EXO no óptima.](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### <a name="what-does-this-mean"></a>¿Qué significa esto?
 
@@ -121,7 +121,7 @@ Esta información se mostrará si el servicio de información de red detecta que
 Esta información se abrevia como "Afd" en algunas vistas de resumen.
 
 > [!div class="mx-imgBorder"]
-> ![Puerta principal de SPO no óptima](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+> ![Puerta frontal de SPO no óptima.](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
 ### <a name="what-does-this-mean"></a>¿Qué significa esto?
 

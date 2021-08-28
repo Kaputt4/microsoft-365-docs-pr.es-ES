@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Cambia el tema de color de la página de reserva en la aplicación Microsoft Bookings.
-ms.openlocfilehash: e1d5eeea44194ea0ad152c51fbf506f1c4e3cbd1e41f59621c76bd955f49dd6b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d1cd08d33d90424fa091f6dcce3a9878bb662dfe
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896740"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570358"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personalizar y publicar la página de reserva
 
@@ -32,7 +32,7 @@ En la sección siguiente se proporciona información sobre cómo configurar la p
 
     La página de reserva interna tiene este aspecto:
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="La página Bookings":::
+    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="La página Bookings.":::
 
 - **Control de acceso a** páginas de reserva: requerir una cuenta Microsoft 365 de mi organización para reservar  La selección de esta opción solo permitirá a los miembros de la organización ver la página o reservar cualquier servicio. El acceso a la página se autoriza mediante comprobaciones de credenciales para garantizar que el visitante pertenece a una cuenta dentro del espacio empresarial.
 
@@ -50,7 +50,7 @@ En la sección siguiente se proporciona información sobre cómo configurar la p
 
 Una vez publicada la página de reserva, los clientes verán la página de reserva donde pueden reservar citas con usted. La página de reserva orientada al cliente tiene este aspecto:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Página de reserva orientada al cliente":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="Página de reserva orientada al cliente.":::
 
 ## <a name="publish-the-booking-page"></a>Publicar la página de reserva
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a099ab2241e1e2a4705fd54760a48cb3f95b421
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: f89303e22432f2e3297bec01912710daf21d7379
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387013"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570598"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Soluciones de auditoría en Microsoft 365
 
@@ -34,7 +34,7 @@ Las soluciones de auditoría de Microsoft 365 proporcionan una solución integra
 
 Microsoft 365 ofrece dos soluciones de auditoría: auditoría básica y auditoría avanzada.
 
-![Funcionalidades clave de auditoría básica y auditoría avanzada](..\media\AuditingSolutionsComparison.png)
+![Funcionalidades clave de auditoría básica y auditoría avanzada.](..\media\AuditingSolutionsComparison.png)
 
 ### <a name="basic-audit"></a>Auditoría básica
 
@@ -44,7 +44,7 @@ La auditoría básica le proporciona la capacidad de registrar y buscar activida
 - **Miles de eventos de auditoría que se pueden buscar**. Puede buscar una amplia gama de actividades auditadas que se producen en la mayoría de los servicios de Microsoft 365 de la organización. Para obtener una lista parcial de las actividades que puede buscar, vea [Actividades auditadas](search-the-audit-log-in-security-and-compliance.md#audited-activities). Para obtener una lista de los servicios y características compatibles con actividades auditadas, vea [Tipos de registros de auditoría](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
 - **Herramienta de búsqueda de auditorías del Centro de cumplimiento de Microsoft 365**. Use la herramienta de búsqueda de registros de auditoría del Centro de cumplimiento de Microsoft 365 para buscar registros de auditoría. Puede buscar actividades específicas, actividades realizadas por usuarios específicos y actividades realizadas en un intervalo de fechas. Aquí tiene una captura de pantalla de la herramienta de búsqueda de auditorías del Centro de cumplimiento.
 
-   ![Herramienta de búsqueda de registros de auditoría del Centro de cumplimiento de Microsoft 365](../media/AuditLogSearchToolMCC.png)
+   ![Herramienta de búsqueda de registros de auditoría del Centro de cumplimiento de Microsoft 365.](../media/AuditLogSearchToolMCC.png)
 
 - **cmdlet Search-UnifiedAuditLog**. También puede usar el cmdlet **Search-UnifiedAudtLog** en PowerShell de Exchange Online (el cmdlet subyacente de la herramienta de búsqueda) para buscar eventos de auditoría o para usarlo en un script. Para más información vea:
 
@@ -77,14 +77,14 @@ En la tabla siguiente se comparan las funcionalidades clave disponibles en audit
 
 |Funcionalidad|Auditoría básica|Auditoría avanzada|
 |:------|:-------------|:-------------|
-|Habilitado de forma predeterminada|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|Miles de eventos de auditoría que se pueden buscar|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|Herramienta de búsqueda de auditorías del Centro de cumplimiento de Microsoft 365|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|cmdlet Search-UnifiedAuditLog|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|Exportar registros de auditoría a un archivo CSV|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|Acceso a registros de auditoría a través de la API de Actividad de administración de Office 365 <sup>1</sup>|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)</sup>|
-|Retención de 90 días del registro de auditoría|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|Retención de 1 año de registros de auditoría||![Compatible](../media/check-mark.png)|
+|Habilitado de forma predeterminada|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Miles de eventos de auditoría que se pueden buscar|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Herramienta de búsqueda de auditorías del Centro de cumplimiento de Microsoft 365|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Cmdlet Search-UnifiedAuditLog|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Exportar registros de auditoría a un archivo CSV|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Acceso a registros de auditoría a través de la API de Actividad de administración de Office 365 <sup>1</sup>|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)</sup>|
+|Retención de 90 días del registro de auditoría|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Retención de 1 año de registros de auditoría||![Se admite.](../media/check-mark.png)|
 |Retención de 10 años de registros de auditoría <sup>2</sup>||![Compatible](../media/check-mark.png)|
 |Directivas de retención de los registros de auditoría||![Compatible](../media/check-mark.png)|
 |Eventos cruciales de gran valor||![Compatible](../media/check-mark.png)|
@@ -131,7 +131,7 @@ Para empezar a usar las soluciones de auditoría de Microsoft 365 vea las siguie
 
 El primer paso es configurar la auditoría básica y, después, empezar a ejecutar las búsquedas de registros de auditoría.
 
-![Flujo de trabajo para configurar la auditoría básica](../media/BasicAuditingWorkflow.png)
+![Flujo de trabajo para configurar la auditoría básica.](../media/BasicAuditingWorkflow.png)
 
 1. Compruebe que su organización tiene una suscripción compatible con auditoría básica y, si procede, una suscripción que admita auditoría avanzada.
 
@@ -145,7 +145,7 @@ Para obtener instrucciones más detalladas, consulte [Configurar la auditoría b
 
 Si su organización tiene una suscripción compatible con la auditoría avanzada, realice los pasos siguientes para configurar y usar las funcionalidades adicionales de auditoría avanzada.
 
-![Flujo de trabajo para configurar la auditoría avanzada](../media/AdvancedAuditWorkflow.png)
+![Flujo de trabajo para configurar la auditoría avanzada.](../media/AdvancedAuditWorkflow.png)
 
 1. Configurar la auditoría avanzada para usuarios Este paso consta de las siguientes tareas:
 

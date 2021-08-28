@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial como números de cuenta bancaria, tarjeta de crédito o seguridad social para identificar elementos confidenciales
-ms.openlocfilehash: ac293eea8b81125b124265d2546d562393a81f8f
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 6c2f54900c3e08531a57501ff6eda8b2ccc14911
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684009"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574777"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -38,7 +38,7 @@ Los tipos de información confidencial son clasificadores basados en patrones. D
 - [Directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md)
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Etiquetas de retención](retention.md)
-- [Administración de riesgos de Insider](insider-risk-management.md)
+- [Administración de riesgos internos](insider-risk-management.md)
 - [Cumplimiento de las comunicaciones](communication-compliance.md)
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Administración de privacidad (versión preliminar)](privacy-management.md)
@@ -65,7 +65,7 @@ Obtenga más información sobre los niveles de confianza en este vídeo
 ### <a name="example-sensitive-information-type"></a>Tipo de información confidencial de ejemplo
 
 
-#### <a name="argentina-national-identity-dni-number"></a>Número de identidad nacional (DNI) de Argentina
+## <a name="argentina-national-identity-dni-number"></a>Número de identidad nacional (DNI) de Argentina
 
 ### <a name="format"></a>Formato
 

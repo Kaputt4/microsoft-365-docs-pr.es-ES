@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use el Bloqueo de conservación con las directivas de retención y las directivas de etiquetas de retención para ayudar a cumplir los requisitos normativos y protegerse frente a administradores no autorizados.
-ms.openlocfilehash: e1d0077567fdfd529e4c81f6c2ecf4c00f847f0cc5a10e2c74d80aa5d320c813
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb842a3d5add719338773f088b07dcf4c32ede53
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830529"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574164"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Usar el Bloqueo de conservación para restringir los cambios en las directivas de retención y en las directivas de las etiquetas de retención
 
@@ -60,7 +60,7 @@ Todas las directivas de retención, con cualquier configuración, admiten el Blo
 
 2. Busque el nombre de la directiva que quiere bloquear ejecutando [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). Por ejemplo:
     
-   ![Lista de las directivas de retención en PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+   ![Lista de las directivas de retención en PowerShell.](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 3. Para colocar un Bloqueo de preservación en la directiva, ejecute el cmdlet [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) con el nombre de la directiva, y con el parámetro *RestrictiveRetention* establecido en true:
     
@@ -70,11 +70,11 @@ Todas las directivas de retención, con cualquier configuración, admiten el Blo
     
     Por ejemplo:
     
-    ![Parámetro RestrictiveRetention de PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+    ![Parámetro RestrictiveRetention de PowerShell.](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
      Cuando se le solicite, lea y acepte las restricciones que se incluyen en esta configuración y elija **Sí**:
     
-   ![Preguntar para confirmar que desea bloquear una directiva de retención en PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+   ![Preguntar para confirmar que desea bloquear una directiva de retención en PowerShell.](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 Ahora, se coloca un Bloqueo de preservación en la directiva. Para confirmar, vuelva a ejecutar `Get-RetentionCompliancePolicy`, pero especifique el nombre de la directiva y muestre los parámetros de la directiva:
 
@@ -84,7 +84,7 @@ Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 
 Debería ver que **RestrictiveRetention** esté establecida en **True**. Por ejemplo:
 
-![Directiva bloqueada con todos los parámetros visibles en PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
+![Directiva bloqueada con todos los parámetros visibles en PowerShell.](../media/retention-policy-preservation-lock-locked-policy.PNG)
 
 ## <a name="see-also"></a>Consulte también
 

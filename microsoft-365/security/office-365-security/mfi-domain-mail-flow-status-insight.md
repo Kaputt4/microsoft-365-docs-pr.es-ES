@@ -14,12 +14,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar la información sobre el estado del flujo de correo de dominio superior en el panel flujo de correo del Centro de seguridad & cumplimiento para solucionar problemas de flujo de correo relacionados con sus registros MX.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0258aeb57f9821091f29f884a42266da47e63dee4adf44a99b3f22154549d19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c0c0eed3cffaadd76f18b9b446ac14873712f6f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56786308"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574561"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Información de estado del flujo de correo de dominio superior en el Centro de seguridad & cumplimiento
 
@@ -34,7 +34,7 @@ La **información sobre el** estado [](mail-flow-insights-v2.md) del flujo de co
 
 Esta información le ayuda a identificar y solucionar problemas de dominios que están experimentando problemas ***de flujo de*** correo. Por ejemplo, el dominio no puede recibir correo electrónico externo porque el dominio ha expirado o el dominio tiene un registro MX incorrecto.
 
-![Widget de estado de flujo de dominio superior en el panel Flujo de correo del Centro de seguridad & cumplimiento](../../media/mfi-top-domain-mail-flow-status-widget.png)
+![Widget de estado de flujo de dominio superior en el panel Flujo de correo del Centro de seguridad & cumplimiento.](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
 Al hacer clic **en Ver detalles** en el widget, aparece un control flotante Estado del dominio que muestra más detalles sobre el estado de cada dominio: 
 
@@ -48,7 +48,7 @@ Al hacer clic **en Ver detalles** en el widget, aparece un control flotante Esta
 
 Puede hacer clic **en Ver más** para ver la misma información para más dominios.
 
-![Control remoto de detalles en la información de estado del flujo de correo de dominio superior](../../media/mfi-top-domain-mail-flow-status-view-details.png)
+![Los detalles se desván de la información de estado del flujo de correo de dominio superior.](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
 ## <a name="see-also"></a>Vea también
 

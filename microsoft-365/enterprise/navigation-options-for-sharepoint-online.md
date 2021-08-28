@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: En este artículo se describen los sitios de opciones de navegación con SharePoint publicación habilitada en SharePoint Online.
-ms.openlocfilehash: 38e72811eca6487a862beb8b1d197186783d3c48
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 7c890f61beae9ae98045861bbb08e3f6752d0037
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394665"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574741"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 
@@ -75,15 +75,15 @@ Esta es la navegación rápida que se usa de forma predeterminada y es la soluci
 
 En **Navegación Configuración** y aspecto del sitio, puede validar si la navegación estructural está seleccionada para la navegación global o la navegación  >    >  actual. Seleccionar Mostrar **páginas tendrá** un impacto negativo en el rendimiento.
 
-![Navegación estructural con Mostrar subsitios seleccionado](../media/SPONavOptionsStructuredShowSubsites.png)
+![Navegación estructural con Mostrar subsitios seleccionado.](../media/SPONavOptionsStructuredShowSubsites.png)
 
 El almacenamiento en caché se puede habilitar o deshabilitar en el nivel de colección de sitios y en el nivel de sitio, y está habilitado para ambos de forma predeterminada. Para habilitar en el nivel de colección de sitios, **en Navegación** de la colección de sitios Configuración de la colección de sitios, active la casilla Habilitar almacenamiento  >    >   **en caché.**
 
-![Habilitar el almacenamiento en caché en el nivel de sitio](../media/structural-nav/structural-nav-caching-site-coll.png)
+![Habilitar el almacenamiento en caché en el nivel del sitio.](../media/structural-nav/structural-nav-caching-site-coll.png)
 
 Para habilitar en el nivel de sitio, en **Navegación Configuración**  >  **sitio,** active la casilla **Habilitar almacenamiento en caché**.
 
-![Habilitar el almacenamiento en caché en el nivel de sitio](../media/structural-nav/structural-nav-caching-site.png)
+![Habilitar el almacenamiento en caché en el nivel del sitio.](../media/structural-nav/structural-nav-caching-site.png)
 
 ## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Uso de la navegación administrada y los metadatos en SharePoint Online
 
@@ -103,7 +103,7 @@ Hay varios artículos sobre docs.microsoft.com sobre los detalles de la navegaci
 
 Para implementar la navegación administrada, se establecen términos con direcciones URL correspondientes a la estructura de navegación del sitio. La navegación administrada incluso se puede seleccionar manualmente para reemplazar la navegación estructural en muchos casos. Por ejemplo:
 
-![SharePoint Estructura del sitio en línea](../media/SPONavOptionsListOfSites.png))
+![SharePoint Estructura de sitio en línea.](../media/SPONavOptionsListOfSites.png))
 
 ## <a name="using-search-driven-client-side-scripting"></a>Uso de scripts del lado cliente controlados por búsqueda
 
@@ -128,7 +128,7 @@ Este enfoque implica crear una página maestra personalizada y reemplazar el có
 1. Vaya a la página De Configuración sitio.
 2. Abra la galería de páginas maestras haciendo clic en **Páginas maestras**.
 3. Desde aquí puede navegar por la biblioteca y descargar el archivo `seattle.master` .
-4. Edite el código con un editor de texto y elimine el bloque de código en la siguiente captura de pantalla.<br/>![Eliminar el bloque de código mostrado](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
+4. Edite el código con un editor de texto y elimine el bloque de código en la siguiente captura de pantalla.<br/>![Elimine el bloque de código que se muestra.](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. Quite el código entre las `<SharePoint:AjaxDelta id="DeltaTopNavigation">` etiquetas y `<\SharePoint:AjaxDelta>` y reempláctelo por el siguiente fragmento de código:<br/>
 
 ```javascript

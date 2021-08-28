@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4470ce4bc2ee671a24c319b817162b10cb89dbb4917feda51010147bb46fd814
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: db48122ea5551fe3e9f8cd676785bbd3eef81d0b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854553"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570934"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Trabajar con los servicios de consultoría de Microsoft
 
@@ -41,7 +41,7 @@ Para trabajar con el empaquetado de la aplicación MCS, **debes proporcionar est
 
 Inicie el proceso de empaquetado cargando la información de la aplicación en el portal Escritorio administrado de Microsoft paquete. El equipo de empaquetado revisa los nuevos envíos cada jueves. Después de revisar y empaquetar, las aplicaciones empaquetadas se entregan el viernes siguiente. Se pueden empaquetar hasta cinco aplicaciones por semana para iniciarse, pero el servicio puede escalar para satisfacer sus necesidades.
 
-![calendario que muestra la entrada de aplicaciones en un jueves (el día 21 en este ejemplo), validación de medios al día siguiente, empaquetado el lunes siguiente (día 25) y entrega de aplicaciones el viernes siguiente (el día 29)](../../media/MCS-cal.png)
+![calendario que muestra la entrada de aplicaciones un jueves (el día 21 en este ejemplo), validación de medios al día siguiente, empaquetado el lunes siguiente (día 25) y entrega de aplicaciones el viernes siguiente (el día 29).](../../media/MCS-cal.png)
 
 Se te notificará una vez que se haya entregado la aplicación. En ese momento, tiene 21 días para realizar pruebas de aceptación y aprobar el trabajo en el portal Escritorio administrado de Microsoft web. Si descubre algún problema con la aplicación durante las pruebas de aceptación, rechace la aplicación en el portal de Escritorio administrado de Microsoft y se conectará por correo electrónico con un empaquetador de MCS para comprender y resolver el problema.
 

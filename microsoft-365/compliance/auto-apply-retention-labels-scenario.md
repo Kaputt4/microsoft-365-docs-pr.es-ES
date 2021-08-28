@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cómo puede usar las etiquetas de retención para administrar el ciclo de vida de los documentos en SharePoint con metadatos para clasificar el contenido, aplicar las etiquetas automáticamente y usar la retención basada en eventos para iniciar el período de retención.
-ms.openlocfilehash: b26cdbe7f2b8f0d6ac3845941418b189cb3d9083
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 8c34e8fe860f3704ac96e852393e6661115bb58a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533020"
+ms.locfileid: "58574933"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
 
@@ -45,7 +45,7 @@ Nuestro escenario es una empresa de fabricación que usa SharePoint para almacen
 
 Estos metadatos forman un tipo de contenido base denominado *Documento de producción* para todos los documentos.
 
-![Tabla de metadatos de la documentación del producto](../media/SPRetention1.png)
+![Tabla de metadatos de documentación del producto.](../media/SPRetention1.png)
 
 > [!NOTE]
 > Las directivas de retención usan las propiedades **Tipo de documento** y **Estado** más tarde en este escenario para clasificar y aplicar automáticamente las etiquetas de retención.
@@ -54,20 +54,20 @@ Es posible que tengamos varios tipos de contenido que representen diferentes tip
 
 En este escenario, usamos el servicio de metadatos administrados y el almacén de términos para crear un conjunto de términos para *Tipo de documento* y otro para *Nombre de producto*. Para cada conjunto de términos, creamos un término para cada valor. Tendría un aspecto similar a este en el almacén de términos de su organización de SharePoint:
 
-![Conjunto de términos de prueba para la documentación del producto en el almacén de términos](../media/SPRetention2.png)
+![Conjunto de términos de prueba para la documentación del producto en el almacén de términos.](../media/SPRetention2.png)
 
 *Tipo de contenido* se puede crear y publicar con el [Concentrador de tipo de contenido](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b). También puede crear y publicar un tipo de contenido con herramientas de aprovisionamiento de sitios, como el [Marco de aprovisionamiento PnP](/sharepoint/dev/solution-guidance/pnp-provisioning-framework) o el [Esquema JSON de diseño de sitio](/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type).
 
 Cada producto tiene un sitio de SharePoint dedicado que contiene una biblioteca de documentos que tiene habilitados los tipos de contenido correctos. Todos los documentos se almacenan en esta biblioteca de documentos.
 
-[ ![Documentación de la biblioteca de documentos para productos](../media/SPRetention3.png) ](../media/SPRetention3.png#lightbox)
+[ ![Biblioteca de documentos para la documentación del producto.](../media/SPRetention3.png) ](../media/SPRetention3.png#lightbox)
 
 > [!NOTE]
 > En lugar de tener un sitio de SharePoint por producto, en este escenario, la empresa de fabricación podría usar un equipo de Microsoft Teams por producto para permitir la colaboración entre los miembros del equipo, como a través del chat persistente y el uso de la pestaña **Archivos** en Teams para la administración de documentos. En este artículo nos centraremos solo en los documentos, por lo tanto solo usaremos un sitio.
 
 La siguiente es una vista de la biblioteca de documentos para el producto Spinning Widget:
 
-[ ![Biblioteca de documentos de Spinning Widget](../media/SPRetention4.png) ](../media/SPRetention4.png#lightbox)
+[ ![Biblioteca de documentos de Spinning Widget.](../media/SPRetention4.png) ](../media/SPRetention4.png#lightbox)
 
 Ahora que tenemos la arquitectura de información básica para la administración de documentos, echemos un vistazo a la estrategia de retención y eliminación de los documentos que usan los metadatos y cómo clasificamos esos documentos.
 
@@ -113,7 +113,7 @@ Este es el [plan de archivo](file-plan-manager.md) para la etiqueta de retenció
 
 La siguiente captura de pantalla muestra la configuración al crear la etiqueta de retención Especificaciones del producto en el Centro de cumplimiento de Microsoft 365. Cuando cree la etiqueta de retención, puede crear el tipo de evento *Cese de producción*. Vea el procedimiento en la sección siguiente.
 
-![Configuración de retención para la etiqueta Especificaciones del producto](../media/SPRetention5.png)
+![Configuración de retención para la etiqueta Especificaciones del producto.](../media/SPRetention5.png)
 
 > [!NOTE]
 > Para no tener que esperar 5 años para eliminar documentos, configure la duración de la retención en ***1 día*** si está creando este escenario en un entorno de prueba.
@@ -122,7 +122,7 @@ La siguiente captura de pantalla muestra la configuración al crear la etiqueta 
 
 1. Entre en la página **Definir la configuración de retención** del asistente para crear etiquetas de retención, después en **Iniciar el período de retención adecuado** y seleccione **Crear nuevo tipo de evento**:
 
-    ![Crear un nuevo tipo de evento para el cuadro de diálogo etiqueta de especificaciones del producto](../media/SPRetention6.png)
+    ![Crear un nuevo tipo de evento para el cuadro de diálogo de etiqueta de Especificaciones del producto](../media/SPRetention6.png)
 
 3. En la página **Asignar un nombre al tipo de evento**, escriba **Cese de producción** y una descripción opcional. Luego, seleccione **Siguiente**, **Enviar** y **Hecho**.
 
@@ -130,7 +130,7 @@ La siguiente captura de pantalla muestra la configuración al crear la etiqueta 
 
     Este es el aspecto que tiene la configuración de la etiqueta de retención Especificaciones del producto:
 
-   ![Configuración para la nueva etiqueta Especificaciones del producto](../media/SPRetention7.png)
+   ![Configuración para la nueva etiqueta Especificaciones del producto.](../media/SPRetention7.png)
 
 6. Seleccione **Crear etiqueta** y, en la siguiente página donde puede ver las opciones para publicarla, Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplicarla automáticamente o guardarla: seleccione **Solo guardar la etiqueta por ahora** y, a continuación, **Hecho**.
 
@@ -149,17 +149,17 @@ Cuando SharePoint indexa contenido, genera automáticamente propiedades rastread
 
 En el Centro de administración de SharePoint, abra la configuración de búsqueda y seleccionar **Administrar el esquema de búsqueda** para ver y configurar las propiedades rastreadas.
 
-![Propiedades rastreadas en el esquema de búsqueda](../media/SPRetention8.png)
+![Propiedades rastreadas en el esquema de búsqueda.](../media/SPRetention8.png)
 
-Si escribimos **status** _ en el cuadro _ *Propiedades rastreadas** y seleccionamos la flecha verde, deberíamos ver un resultado similar al siguiente:
+Si escribimos ***status** _ en el cuadro _ *Propiedades rastreadas** y seleccionamos la flecha verde, deberíamos ver un resultado similar al siguiente:
 
-![La propiedad rastreada ows_Status](../media/SPRetention9.png)
+![La propiedad ows_Status rastreada.](../media/SPRetention9.png)
 
 La propiedad **ows\_\_Status** (con doble guión bajo) es la que nos interesa. Esta se asigna a la propiedad **Estado** del tipo de contenido de Documento de producción.
 
 Ahora, si escribimos ***ows\_doc*** y seleccionamos la flecha verde, deberíamos ver algo así:
 
-![La propiedad rastreada ows_Doc_Type](../media/SPRetention10.png)
+![La propiedad ows_Doc_Type rastreada.](../media/SPRetention10.png)
 
 La propiedad **ows\_Doc\_x0020\_Type** es la segunda propiedad que nos interesa. Se asigna a la propiedad **Tipo de documento** del tipo de contenido de Documento de producción.
 
@@ -180,7 +180,7 @@ KQL no puede usar propiedades rastreadas en las consultas de búsqueda. Necesita
 
 Para que la consulta KQL aplique automáticamente la etiqueta de retención correcta en el contenido de documentos del producto, asignamos las propiedades rastreadas **ows\_Doc\_x0020\_Type* y *ows\_\_Status** a dos propiedades administradas que se pueden refinar. En nuestro entorno de prueba para este escenario, no se usan **RefinableString00** ni **RefinableString01**. Determinamos esto al analizar las **Propiedades administradas** en **Administrar esquema de búsqueda** en el Centro de administración de SharePoint.
 
-[ ![Propiedades administradas en el esquema de búsqueda](../media/SPRetention12.png) ](../media/SPRetention12.png#lightbox)
+[ ![Propiedades administradas en el esquema de búsqueda.](../media/SPRetention12.png) ](../media/SPRetention12.png#lightbox)
 
 Observe que la columna **Propiedades rastreadas asignadas** en la captura de pantalla anterior está vacía.
 
@@ -196,7 +196,7 @@ Para asignar la propiedad rastreada **ows\_Doc\_x0020\_Type**, siga estos pasos:
 
    En la sección **Propiedades rastreadas asignadas**, verá algo parecido a esta captura de pantalla:
 
-   [ ![Seleccione Agregar una asignación en la sección Propiedades rastreadas asignadas](../media/SPRetention13.png) ](../media/SPRetention13.png#lightbox)
+   [ ![Seleccione Agregar una asignación en la sección Propiedades rastreadas asignadas.](../media/SPRetention13.png) ](../media/SPRetention13.png#lightbox)
 
 
 5. Desplácese hasta la parte inferior de la página y seleccione **Aceptar** para guardar la asignación.
@@ -205,7 +205,7 @@ Repita estos pasos para asignar **RefinableString01** y **ows\_\_Status**.
 
 Ahora debería haber dos propiedades administradas asignadas a las dos propiedades rastreadas:
 
-[ ![Propiedades administradas mostradas asignadas a las propiedades rastreadas](../media/SPRetention14.png) ](../media/SPRetention14.png#lightbox)
+[ ![Propiedades administradas mostradas asignadas a las propiedades rastreadas.](../media/SPRetention14.png) ](../media/SPRetention14.png#lightbox)
 
 Comprobemos que nuestra configuración es correcta mediante la ejecución de una búsqueda empresarial. En un explorador, vaya a *https://\<your_tenant>.sharepoint.com/search*. En el cuadro de búsqueda, escriba ***RefinableString00:"Especificaciones del producto"** _ y presione Entrar. Esta búsqueda debería devolver todos los documentos que tengan *Especificación del producto** como **_Tipo de documento_**.
 
@@ -223,17 +223,17 @@ Ahora que hemos comprobado que la consulta de KQL funciona, crearemos una direct
 
 3. En la página **Elegir el tipo de contenido al que quiere aplicar la etiqueta**, seleccione **Aplicar la etiqueta al contenido que tenga palabras, frases o propiedades específicas** y, a continuación, seleccione **Siguiente**.
 
-   [ ![Seleccione Aplicar la etiqueta al contenido que tenga palabras, frases o propiedades específicas](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
+   [ ![Seleccione Aplicar la etiqueta al contenido que tenga palabras, frases o propiedades específicas.](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
 
    Esta opción nos permite proporcionar la misma consulta de búsqueda de KQL que probamos en la sección anterior. La consulta devuelve todos los documentos de Especificaciones del producto que tienen el estado *Final*. Cuando usamos esta misma consulta en la directiva de etiqueta aplicada automáticamente, la etiqueta de retención de Especificaciones del producto se aplicará de manera automática a todos los documentos que coincidan con esta consulta.
 
 4. En la página **Aplicar la etiqueta al contenido que coincida con esta consulta**, escriba **RefinableString00:"Especificaciones del producto" AND RefinableString01:Final** y seleccione **Siguiente**.
 
-   ![Especificar la consulta en el cuadro editor de Consulta de palabras clave](../media/SPRetention19.png)
+   ![Especificar la consulta en el cuadro Editor de consulta de palabras clave](../media/SPRetention19.png)
 
 5. En la página **Elegir ubicaciones para aplicar la directiva**, seleccione las ubicaciones de contenido a las que desea aplicar la directiva. Para este escenario, solo aplicamos la directiva a las ubicaciones de SharePoint, ya que todos los documentos de producción se almacenan en las bibliotecas de documentos de SharePoint. Cambie el estado para el **Correo electrónico de Exchange**, las **cuentas de OneDrive** y los **Grupos de Microsoft 365** a **Desactivado**. Asegúrese de que el estado de los sitios de SharePoint esté **Activado** antes de seleccionar **Siguiente**:
 
-    ![Elegir sitios específicos a los que aplicar etiquetas automáticamente](../media/SPRetentionSPlocations.png)
+    ![Elegir sitios específicos a los que aplicar etiquetas automáticamente.](../media/SPRetentionSPlocations.png)
 
    > [!TIP]
    > En lugar de aplicar la directiva a todos los sitios de SharePoint, puede seleccionar **Elegir sitio** y agregar las direcciones URL de sitios específicos de SharePoint.
@@ -244,7 +244,7 @@ Ahora que hemos comprobado que la consulta de KQL funciona, crearemos una direct
 
 8. Revisar la configuración:
 
-    ![Configuración para aplicar la etiqueta automáticamente](../media/SPRetention18.png)
+    ![Configuración para aplicar la etiqueta automáticamente.](../media/SPRetention18.png)
 
 9. Seleccione **Enviar** para crear la directiva de etiqueta aplicable automáticamente.
 
@@ -257,7 +257,7 @@ Después de 7 días, utilice el [Explorador de actividad](data-classification-ac
 
 También examine las propiedades de los documentos en la biblioteca de documentos. En el panel de información, puede ver que la etiqueta de retención se ha aplicado a un documento seleccionado.
 
-[ ![Compruebe que la etiqueta se aplicó. Para ello, observe las propiedades del documento den la Biblioteca de documentos](../media/SPRetention21.png) ](../media/SPRetention21.png#lightbox)
+[ ![Compruebe que la etiqueta se aplicó. Para ello, observe las propiedades del documento den la Biblioteca de documentos.](../media/SPRetention21.png) ](../media/SPRetention21.png#lightbox)
 
 Puesto que las etiquetas de retención se aplicaron automáticamente a los documentos, esos documentos no se pueden eliminar porque la etiqueta de retención se configuró para declarar los documentos como *registros*. Como ejemplo de esta protección, al intentar eliminar uno de estos documentos, obtenemos el mensaje de error siguiente:
 
@@ -273,13 +273,13 @@ Pero para este escenario, generaremos automáticamente el evento desde un sistem
 
 La siguiente captura de pantalla muestra la lista de SharePoint que se usará para desencadenar el evento:
 
-[ ![La lista que desencadenará el evento de retención](../media/SPRetention23.png) ](../media/SPRetention23.png#lightbox)
+[ ![La lista que desencadenará el evento de retención.](../media/SPRetention23.png) ](../media/SPRetention23.png#lightbox)
 
 Hay dos productos actualmente en producción, como indica el valor ***Sí** _ en la columna _ *En producción**. Cuando el valor de esta columna se establezca en ***_No_** para un producto, el flujo asociado con la lista generará automáticamente el evento. El evento desencadena el inicio del periodo de retención de la etiqueta de retención que se aplicó automáticamente a los documentos de producto correspondientes.
 
 En este escenario, usamos el flujo siguiente para desencadenar el evento:
 
-[ ![Configurando el flujo que desencadenará el evento](../media/SPRetention24.png) ](../media/SPRetention24.png#lightbox)
+[ ![Configuración del flujo que activará el evento.](../media/SPRetention24.png)](../media/SPRetention24.png#lightbox)
 
 Para crear este flujo, parta de un conector de SharePoint y seleccione el desencadenador **Cuando se crea o modifica un elemento**. Especifique la dirección del sitio y el nombre de la lista. Luego, agregue una condición basada en que el valor de la columna de lista **En producción** se establezca en **_No_* _ (o que sea igual a _falso* en la tarjeta condicional). Después, agregue una acción basada en la plantilla HTTP integrada. Use los valores de la sección siguiente para configurar la acción HTTP. Puede copiar los valores de las propiedades **URI** y **Body** de la sección siguiente y pegarlos en la plantilla.
 
@@ -310,7 +310,7 @@ Esta lista describe los parámetros de la propiedad **Body** de la acción que d
 - **EventType**: el valor de este parámetro corresponde al tipo de evento al que se aplicará el evento creado. Este tipo de evento se definió al crear la etiqueta de retención. Para este escenario, el tipo de evento es "Cese de producción".
 - **SharePointAssetIdQuery**: este parámetro define el Id. de activo del evento. La retención basada en eventos necesita un identificador único para el documento. Podemos usar Id. de activo para identificar los documentos a los que se aplica un evento determinado, o bien, como se hace para este escenario, la columna de metadatos **NombreProducto**. Para ello, debemos crear una propiedad administrada **NombreProducto** nueva que pueda usarse en la consulta KQL. (También podríamos usar **RefinableString00** en lugar de crear una nueva propiedad administrada). También necesitamos asignar esta nueva propiedad administrada a la propiedad rastreada **ows_Product_x0020_Name**. Esta es una captura de pantalla de esta propiedad administrada.
 
-    [ ![Propiedad administrada de retención](../media/SPRetention25.png) ](../media/SPRetention25.png#lightbox)
+    [ ![Propiedad administrada de retención.](../media/SPRetention25.png) ](../media/SPRetention25.png#lightbox)
 
 - **EventDateTime**: este parámetro define la fecha en la que se produce el evento. Usar el formato de fecha actual:<br/><br/>*formatDateTime(utcNow(),'aaaa-MM-dd'*)
 
@@ -322,7 +322,7 @@ Ahora la etiqueta de retención se crea y se aplica automáticamente, y el flujo
 
 Seleccione el evento para ver los detalles en la página de control flotante. Observe que, aunque se creó el evento, el estado del evento muestra que no se han procesado documentos o sitios de SharePoint.
 
-![Detalles del evento](../media/SPRetention29.png)
+![Detalles del evento.](../media/SPRetention29.png)
 
 Pero luego de un retraso, el estado del evento muestra que se han procesado un sitio de SharePoint y un documento de SharePoint.
 
@@ -338,7 +338,7 @@ Como se explica en el artículo [Iniciar la retención cuando se produzca un eve
 
 Como se muestra en la siguiente captura de pantalla, la propiedad administrada Id. de activo se denomina **ComplianceAssetId**.
 
-[ ![Propiedad administrada ComplianceAssetId](../media/SPRetention27.png) ](../media/SPRetention27.png#lightbox)
+[ ![Propiedad administrada ComplianceAssetId.](../media/SPRetention27.png) ](../media/SPRetention27.png#lightbox)
 
 En lugar de usar la propiedad **Id. de activo** predeterminada, como hacemos en este escenario, puede usar cualquier otra propiedad. Pero es importante comprender que, si no especifica palabras clave o un Id. de activo para un evento, el evento desencadenará el período de retención de todo el contenido que tenga aplicada una etiqueta de ese tipo de evento.
 

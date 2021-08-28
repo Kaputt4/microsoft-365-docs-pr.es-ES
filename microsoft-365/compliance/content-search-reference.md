@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene información de referencia sobre la herramienta de eDiscovery de búsqueda de contenido del Centro de cumplimiento de Microsoft 365 para ayudarle a obtener una gran cantidad de detalles sobre la búsqueda de contenido.
-ms.openlocfilehash: e3c764dd1fb79906061b9b9b4c1408d83c8dbe0c
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: f6c720973f91ae9a202b232d821c33c7f487b76a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502080"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574453"
 ---
 # <a name="feature-reference-for-content-search"></a>Referencia de características para la búsqueda de contenido
 
@@ -45,21 +45,21 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
 
     **Incorrecto:**
 
-    ![La forma incorrecta de dar formato a una lista de palabras clave (pegar la lista en el cuadro de palabras clave)](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![La forma incorrecta de dar formato a una lista de palabras clave (pegar la lista en el cuadro de palabras clave).](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
 
     **Correcto:**
 
-    ![La forma correcta de dar formato a una lista de palabras clave (seleccionar la casilla y, después, pegar la lista)](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![La forma correcta de dar formato a una lista de palabras clave (seleccionar la casilla y, después, pegar la lista).](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
 
 - También puede crear una lista de palabras clave o frases clave en un archivo de Excel o en un archivo de texto sin formato y, después, pegarla en la lista de palabras clave. Para hacerlo, seleccione la casilla **Mostrar lista de palabras clave**. Después, haga clic en la primera fila de la lista de palabras clave y pegue la lista. Cada línea del archivo de texto o Excel se pegará en la línea correspondiente de la lista de palabras clave.
 
 - Después de crear la consulta con la lista de palabras clave, es recomendable comprobar la sintaxis de la consulta para asegurarse de que es lo que desea buscar. En la consulta de búsqueda, que puede ver debajo de **Consulta** en el panel de detalles, las palabras clave quedan separadas por **(c:s)**. Esto significa que están conectadas por un operador lógico similar al operador **O**. Del mismo modo, si la consulta de búsqueda incluye condiciones, las palabras clave aparecen separadas de las condiciones por **(c:c)**. Esto significa que están conectadas a las condiciones por un operador lógico similar a **Y**. Este ejemplo muestra una consulta de búsqueda (situada en el panel de detalles) obtenida al usar la lista de palabras clave con una condición.
 
-    ![Ejemplo de consulta creada utilizando la lista de palabras clave y una condición](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![Ejemplo de consulta creada utilizando la lista de palabras clave y una condición.](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
 
 - Cuando ejecuta una búsqueda de contenido, Microsoft 365 comprueba automáticamente la búsqueda para verificar que no haya caracteres no admitidos ni operadores booleanos en minúsculas. Los caracteres no admitidos suelen estar ocultos y pueden provocar un error de búsqueda o devolver resultados no deseados. Para obtener más información acerca de la verificación de caracteres no compatibles, vea [Comprobar si hay errores en la consulta de búsqueda de contenido](check-your-content-search-query-for-errors.md).
 
-- Si su consulta de búsqueda contiene palabras clave con caracteres especiales (que no pertenecen al alfabeto inglés), puede hacer clic en **Consulta idioma-país/región**![el icono Consulta idioma-país/región](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccionar el código cultural del idioma y país relevantes para la búsqueda. Por defecto, la versión del idioma/región es la neutra. ¿Cómo saber si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si sabe que las ubicaciones de contenido contienen los caracteres especiales que busca, pero la búsqueda no devuelve ningún resultado, la configuración de idioma puede ser la causa.
+- Si su consulta de búsqueda contiene palabras clave con caracteres especiales (que no pertenecen al alfabeto inglés), puede hacer clic en **Consulta idioma-país/región**![el icono Consulta idioma-país/región en la búsqueda de contenido](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png). y seleccione un valor de código de referencia cultural idioma-país para la búsqueda. Por defecto, la versión del idioma/región es la neutra. ¿Cómo saber si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si sabe que las ubicaciones de contenido contienen los caracteres especiales que busca, pero la búsqueda no devuelve ningún resultado, la configuración de idioma puede ser la causa.
 
 ## <a name="partially-indexed-items"></a>Elementos indexados parcialmente
 
@@ -133,7 +133,7 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de 
 
   En los resultados de búsqueda, los resúmenes de reunión se identifican como **Reunión** en el **campo Tipo** y los resúmenes de llamadas se identifican como **Llamada**. Asimismo, las conversaciones que forman parte de un canal de Teams y los chats de Teams (conocidos como 1xN) se identifican como **Mensajería instantánea** en el campo **Tipo**.
 
-  ![Las reuniones de Teams, las llamadas y los chats 1xN se identifican en el campo Tipo](../media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Las reuniones de Teams, las llamadas y los chats 1xN se identifican en el campo Tipo.](../media/O365-ContentSearch-Teams-MessageKind.png)
 
    Para más información, consulte [Microsoft Teams lanza eDiscovery para llamadas y reuniones](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
@@ -147,11 +147,11 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de 
 
   **Contenido de tarjetas en Teams**
 
-  ![Contenido de tarjetas en un mensaje de canal de Teams](../media/CardContentTeams.png)
+  ![Contenido de tarjetas en un mensaje de canal de Teams.](../media/CardContentTeams.png)
 
-  **Contenido de tarjetas en resultados de búsquedas**
+  **Contenido de tarjetas en resultados de la búsqueda**
 
-  ![Mismo contenido de tarjetas en los resultados de una búsqueda de contenido](../media/CardContentEdiscoverySearchResults.png)
+  ![Mismo contenido de tarjetas en los resultados de una búsqueda de contenido.](../media/CardContentEdiscoverySearchResults.png)
 
   > [!NOTE]
   > Para ver las imágenes del contenido de tarjetas en los resultados de la búsqueda en este momento (como las marcas de verificación del recorte de pantalla anterior), debe iniciar sesión en Teams (enhttps://teams.microsoft.com) en una pestaña diferente en la misma sesión del navegador que utiliza para ver los resultados de la búsqueda. De lo contrario, se mostrarán marcadores de posición de las imágenes.
@@ -160,7 +160,7 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de 
 
   - Para usar la propiedad **Tipo** como parte de la consulta de búsqueda de palabras clave, escriba `kind:microsoftteams` en el cuadro de **palabras clave** de una consulta de búsqueda.
 
-    ![Escriba kind:microsoftteams en el cuadro de palabras clave](../media/O365-ContentSearch-Teams-Keywords.png)
+    ![Escriba kind:microsoftteams en el cuadro de palabras clave.](../media/O365-ContentSearch-Teams-Keywords.png)
 
   - Para usar una condición de búsqueda, agregue la condición de **Tipo de mensaje** y use el valor `microsoftteams`.
 
@@ -181,15 +181,15 @@ Para buscar elementos de conversación específicos en los Grupos Yammer puede u
 
     Por ejemplo, puede usar la siguiente consulta de búsqueda para devolver mensajes de Yammer y elementos de elogio de Yammer:
 
-    ![Utilice la propiedad ItemClass para buscar elementos de Yammer](../media/YammerContentSearch1.png)
+    ![Utilice la propiedad ItemClass para buscar elementos de Yammer.](../media/YammerContentSearch1.png)
 
   - Como alternativa, puede utilizar la condición de **Escribir** el correo electrónico y seleccionar los **mensajes Yammer** para devolver los elementos Yammer. Por ejemplo, la siguiente consulta de búsqueda devolverá todos los elementos de conversación de Yammer que contengan la palabra clave "confidencial".
 
-    ![Utilice la tarjeta de condición de tipo para buscar elementos de conversación de Yammer](../media/YammerContentSearch2.png)
+    ![Utilice la tarjeta de condición de tipo para buscar elementos de conversación de Yammer.](../media/YammerContentSearch2.png)
 
 ## <a name="searching-inactive-mailboxes"></a>Buscar en buzones inactivos
 
-Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **Gobierno de información** \> **Retención** en el Centro de cumplimiento de Microsoft 365 y hacer clic en **Más**![Puntos suspensivos en la barra de navegación](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Buzones inactivos**.
+Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **Gobernanza de la información** \> **Retención** en el Centro de seguridad y cumplimiento y, a continuación, haga clic en **Más**![Puntos suspensivos en la barra de navegación](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif). \> **Buzones de correo inactivos**.
 
 A continuación, se detallan algunos aspectos que se deben tener en cuenta al buscar buzones inactivos:
 

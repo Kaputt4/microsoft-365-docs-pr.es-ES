@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Cómo activar o desactivar la característica de búsqueda de registro de auditoría en el Centro de cumplimiento de Microsoft 365 para habilitar o deshabilitar la capacidad de los administradores de buscar en el registro de auditoría.
-ms.openlocfilehash: d0d6937a8a4f8f6fd6a8a6e6e3873f2ad8f51b56431268d3108d7808dba8467b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 793c76d45f2cd7aed43a959dfcb94edeb9869310
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841252"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575329"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activar o desactivar la auditoría
 
@@ -67,7 +67,7 @@ Si la auditoría no está activada para su organización, puede activarla en el 
 
    Si la auditoría no está activada para su organización, se muestra un banner que le pedirá que comience a grabar la actividad de usuario y administrador.
 
-   ![Banner en la página Auditoría](../media/AuditingBanner.png)
+   ![Banner en la página Auditoría.](../media/AuditingBanner.png)
 
 3. Haga clic en **el banner Iniciar registro de actividad de usuario y** administrador.
 

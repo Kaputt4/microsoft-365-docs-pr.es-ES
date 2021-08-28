@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: 043b3b25fb311de162e3e3299413d21036e7090d1c8bf60df1229952df53bb35
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 41f36354fa94da9cae8e7794dca778c1bfe8ac2e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851680"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570298"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -139,7 +139,7 @@ En este tema, el formato XML usa una regla para significar los patrones que defi
 
 Este es el escenario más sencillo. Quiere que su directiva identifique contenido donde haya presente un id. de empleado de su organización, que tiene un formato de número de nueve dígitos. Por lo tanto, el patrón hace referencia a una expresión regular contenida en la regla que identifica números de nueve dígitos. Cualquier contenido donde haya presente un número de nueve dígitos cumplirá con el patrón.
   
-![Diagrama de una entidad con un patrón](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
+![Diagrama de entidad con un patrón.](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
 Pero, aunque es sencillo, este patrón puede identificar un gran número de falsos positivos si coincide con contenido donde aparezcan números de nueve dígitos que no sean necesariamente id. de empleado.
   
@@ -149,7 +149,7 @@ Por este motivo, es más común definir una entidad con más de un patrón, dond
   
 Por ejemplo, para incrementar la probabilidad de identificar contenido donde haya un id. de empleado, puede definir un patrón que también identifique una fecha de contratación y, además, definir otro patrón que identifique una fecha de contratación y una palabra clave (como "Id. de empleado"), además del número de nueve dígitos.
   
-![Diagrama de una entidad con varios patrones](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
+![Diagrama de entidad con varios patrones.](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
   
 Debe tener en cuenta un par de aspectos importantes de esta estructura:
   
@@ -167,7 +167,7 @@ Una entidad es un tipo de información confidencial (como un número de tarjeta 
 2. Agregue un comentario que contenga el nombre de la entidad personalizada (en este ejemplo, "Id. de empleado"). Más tarde, agregará el nombre de la entidad a la sección de cadenas localizadas, y ese nombre es lo que se mostrará en la interfaz de usuario al crear una directiva.
 3. Después, genere un GUID para la entidad. Hay varias maneras de generar los GUID, pero puede hacerlo fácilmente en PowerShell escribiendo **[guid]:: NewGuid()**. Posteriormente, agregará también el GUID de la entidad a la sección de cadenas localizadas.
   
-![Marcado XML donde se muestran los elementos Rules y Entity](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
+![Marcado XML que muestra elementos Rules y Entity.](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
 ## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>¿Qué patrón quiere hacer coincidir? [Elemento Pattern, elemento IdMatch, elemento Regex]
 
@@ -175,11 +175,11 @@ El patrón contiene la lista de lo que busca el tipo de información confidencia
   
 Lo que tienen en común todos los patrones siguientes es que hacen referencia a la misma expresión regular, que busca un número de nueve dígitos (\d{9}) rodeado de espacios en blanco (\s) … (\s). El elemento IdMatch hace referencia a esta expresión regular y es el requisito común para todos los patrones que buscan la entidad Id. de empleado. IdMatch es el identificador que el patrón intenta hacer coincidir, como un id. de empleado, un número de tarjeta de crédito o un número del seguro social. Un elemento Pattern necesita tener exactamente un elemento IdMatch.
   
-![Marcado XML donde se muestran varios elementos Pattern que hacen referencia a un único elemento Regex](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
+![Marcado XML que muestra varios elementos Pattern que hacen referencia a un único elemento Regex.](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
 Cuando se cumpla un patrón, este devolverá un recuento y un nivel de confianza que puede usar en las condiciones de la directiva. Al agregar a una directiva una condición para detectar un tipo de información confidencial, puede editar el recuento y el nivel de confianza, como se muestra aquí. El nivel de confianza (que también se denomina "precisión de coincidencia") se explica más adelante en este tema.
   
-![Opciones de precisión de coincidencia y recuento de instancias](../media/sit-confidence-level.png)
+![Opciones de recuento de instancias y precisión de coincidencia.](../media/sit-confidence-level.png)
   
 Al crear una expresión regular, tenga en cuenta que pueden producirse algunos problemas. Por ejemplo, si escribe y carga una expresión regular que identifica demasiado contenido, esto podría afectar al rendimiento. Para obtener más información sobre estos posibles problemas, vea la sección posterior [Posibles problemas de validación](#potential-validation-issues-to-be-aware-of).
   
@@ -191,7 +191,7 @@ En un elemento Pattern, se pueden incluir varios elementos Match, ya sea directa
   
 Puede usar el atributo minCount opcional para especificar el número de instancias que necesita encontrar una coincidencia por cada uno de los elementos Match. Por ejemplo, puede especificar que un patrón se cumpla únicamente cuando se encuentren, como mínimo, dos palabras clave de una lista de palabras clave.
   
-![Marcado XML donde se muestra el elemento Match con el atributo minOccurs](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
+![Marcado XML que muestra el elemento Match con el atributo minOccurs.](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Palabras clave [elementos Keyword, Group y Term, atributos matchStyle y caseSensitive]
 
@@ -205,7 +205,7 @@ Las palabras clave se incluyen como una lista de elementos Term en un elemento G
     
 Por último, puede usar el atributo caseSensitive del elemento Term para especificar que el contenido tiene que coincidir exactamente con la palabra clave, incluidas las letras en minúscula y mayúscula.
   
-![Marcado XML donde se muestran elementos Match que hacen referencia palabras clave](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
+![Marcado XML que muestra elementos Match que hacen referencia a palabras clave.](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
   
 ### <a name="regular-expressions-regex-element"></a>Expresiones regulares [elemento Regex]
 
@@ -219,7 +219,7 @@ Por ejemplo, una tarjeta de identificación de empleado contiene una fecha de co
   
 Para obtener más información, vea [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md).
   
-![Marcado XML donde se muestra el elemento Match que hace referencia a una función integrada](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
+![Marcado XML que muestra el elemento Match que hace referencia a la función integrada.](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
   
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>Diferentes combinaciones de pruebas [elemento Any, atributos minMatches y maxMatches]
 
@@ -281,15 +281,15 @@ En este ejemplo, se define un patrón para la revisión del salario con al menos
 
 El tipo de información confidencial busca un patrón que represente un id. de empleado y, como parte de ese patrón, también busca pruebas corroboradoras, como una palabra clave (por ejemplo, "id."). Cuanto más cerca se encuentre esta prueba, más probable es que el patrón sea el id. de empleado adecuado. Puede determinar la proximidad de otras pruebas en el patrón con la entidad mediante el atributo patternsProximity obligatorio del elemento Entity.
   
-![Marcado XML donde se muestra el atributo patternsProximity](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
+![Marcado XML que muestra el atributo patternsProximity.](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
   
 Por cada patrón en la entidad, el valor del atributo patternsProximity define la distancia (en caracteres Unicode) desde la ubicación de IdMatch para el resto de las coincidencias especificadas para ese patrón. La ventana de proximidad se ancla mediante la ubicación IdMatch, con la ventana extendiéndose hacia la izquierda y la derecha de la ubicación IdMatch.
   
-![Diagrama de la ventana de proximidad](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
+![Diagrama de ventana de proximidad.](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
   
 En el ejemplo siguiente, se muestra cómo la ventana de proximidad afecta a la coincidencia de patrones donde el elemento IdMatch de la entidad personalizada "Id. de empleado" exige como mínimo una coincidencia corroboradora de una palabra clave o fecha. Solo ID1 coincide porque, en el caso de ID2 e ID3, en la ventana de proximidad no se encuentra ninguna prueba corroboradora, o bien se encuentra una parcial.
   
-![Diagrama de prueba corroboradora y ventana de proximidad](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![Diagrama de evidencia corroborativa y ventana de proximidad.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
   
 Tenga en cuenta que, en el caso del correo electrónico, el cuerpo del mensaje y los datos adjuntos se consideran elementos independientes. Esto significa que la ventana de proximidad no se extiende más allá del final de cada uno de estos elementos. Por cada elemento (datos adjuntos o cuerpo), tanto idMatch como la prueba corroboradora necesitan residir en ese elemento.
   
@@ -299,7 +299,7 @@ Cuantas más pruebas necesite un patrón, más seguro estará de que se haya ide
   
 El elemento Pattern tiene un atributo confidenceLevel obligatorio. Piense en el valor de confidenceLevel (un número entero entre 1 y 100) como un id. único para cada patrón de una entidad (los patrones de una entidad deben tener asignados distintos niveles de confianza). El valor preciso del número entero no importa: solo tiene que elegir números que tengan sentido para el equipo de cumplimiento. Después de cargar el tipo de información confidencial personalizado y crear una directiva, puede hacer referencia a esos niveles de confianza en las condiciones de las reglas que cree.
   
-![Marcado XML donde se muestran los elementos Pattern con distintos valores para el atributo confidenceLevel](../media/sit-xml-markedup-2.png)
+![Marcado XML que muestra elementos Pattern con valores diferentes para el atributo confidenceLevel.](../media/sit-xml-markedup-2.png)
   
 Además del atributo confidenceLevel de cada elemento Pattern, el elemento Entity tiene un atributo recommendedConfidence. El atributo de confianza recomendada puede considerarse como el nivel de confianza predeterminado de la regla. Cuando se crea una regla en una directiva, si no se especifica el uso de un nivel de confianza para la regla, buscará coincidencias en función del nivel de confianza recomendado para la entidad. Tenga en cuenta que el atributo recommendedConfidence es obligatorio para cada identificador de entidad en el paquete de reglas, si no está, no podrá guardar directivas que usen el tipo de Información confidencial. 
   
@@ -307,11 +307,11 @@ Además del atributo confidenceLevel de cada elemento Pattern, el elemento Entit
 
 Si el equipo de cumplimiento usa el Centro de cumplimiento de Microsoft 365 para crear directivas en distintas configuraciones regionales y diferentes idiomas, puede proporcionar versiones localizadas del nombre y la descripción del tipo de información confidencial personalizado. Cuando el equipo de cumplimiento use Microsoft 365 en un idioma admitido, verán el nombre localizado en la interfaz de usuario.
   
-![Opciones de precisión de coincidencia y recuento de instancias](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Opciones de recuento de instancias y precisión de coincidencia.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 El elemento Rules necesita contener un elemento LocalizedStrings, que contiene un elemento Resource que hace referencia al GUID de la entidad personalizada. A su vez, cada elemento Resource contiene uno o más elementos Name y Description, y cada uno usa el atributo langcode para especificar una cadena localizada para un idioma específico.
   
-![Marcado XML donde se muestra el contenido del elemento LocalizedStrings](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
+![Marcado XML que muestra el contenido del elemento LocalizedStrings.](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
 Tenga en cuenta que las cadenas localizadas solo se usan para mostrar el tipo de información confidencial personalizado en la interfaz de usuario del Centro de cumplimiento. No se pueden usar cadenas localizadas para proporcionar otras versiones localizadas de una lista de palabras clave o una expresión regular.
   
@@ -347,7 +347,7 @@ El elemento Versión también es importante. Al cargar por primera vez un paquet
 
 Una vez completado, el elemento RulePack será parecido a este.
   
-![Marcado XML donde se muestra el elemento RulePack](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+![Marcado XML que muestra el elemento RulePack.](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
 
 ## <a name="validators"></a>Validadores
 

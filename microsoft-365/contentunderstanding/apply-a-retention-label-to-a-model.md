@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Normal
 description: Obtenga información sobre cómo aplicar una etiqueta de retención a un modelo en SharePoint Syntex.
-ms.openlocfilehash: afc131654a536e37834b0a01bc6c46362debeb05ea0e4a372f9f713639032f88
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 505a1a90fa1a85c6d125343d49d9a0dbd01443b7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859648"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574909"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Puede aplicar fácilmente una etiqueta de retención a un modelo en SharePoint Syntex.
 
@@ -42,7 +42,7 @@ Puede aplicar una etiqueta de retención preexistente al modelo en la página pr
 
 1. En la página principal del modelo, seleccione **Configuración del modelo**.</br>
 2. En **Configuración del modelo**, en la sección **Seguridad y cumplimiento**, seleccione el menú **Etiqueta de retención** para ver una lista de las etiquetas de retención disponibles para que se apliquen al modelo.</br>
- ![Menú Etiqueta de retención](../media/content-understanding/retention-labels-menu.png)</br> 
+ ![Menú etiqueta de retención.](../media/content-understanding/retention-labels-menu.png)</br> 
 3. Seleccione la etiqueta de retención que desea aplicar al modelo y, a continuación, seleccione **Guardar**.</br>
 
 Después de aplicar la etiqueta de retención al modelo, podrá aplicarla a:
@@ -55,7 +55,7 @@ Si ya se ha aplicado el modelo de comprensión mediante documentos a una bibliot
 
 1. En la Página principal del modelo, en la sección **Bibliotecas con este modelo**, seleccione la biblioteca de documentos a la que quiera aplicar la actualización de la etiqueta de retención. </br> 
 2. Seleccione **Sincronizar**. </br>
- ![Modelo de sincronización](../media/content-understanding/sync-model.png)</br> 
+ ![Modelo de sincronización.](../media/content-understanding/sync-model.png)</br> 
 
 
 Después de aplicar la actualización y sincronizarla con el modelo, puede confirmar que se ha aplicado haciendo lo siguiente:
@@ -84,7 +84,7 @@ Puede aplicar una etiqueta de retención a un modelo de procesamiento de formula
 2. En <b>Configuración avanzada</b>, en la sección <b>Etiqueta de retención</b>, seleccione el menú y, después, seleccione la etiqueta de retención que quiere aplicar al modelo.</b>
 
  
-     ![Agregar a un nuevo modelo de procesamiento de formularios](../media/content-understanding/retention-label-forms.png)</br>
+     ![Agregar a un nuevo modelo de procesamiento de formularios.](../media/content-understanding/retention-label-forms.png)</br>
 
 3.  Cuando haya completado la configuración del modelo restante, seleccione <b>Crear</b> para crear el modelo.
 
@@ -102,11 +102,11 @@ Puede agregar una etiqueta de retención a un modelo de procesamiento de formula
 
 1. En la biblioteca de documentos a la que se aplica el modelo de procesamiento de formularios, seleccione el menú <b>Automatizar</b>, luego <b>AI Builder</b> y finalmente <b>Ver detalles del modelo de procesamiento de formularios</b>.
 
-   ![Menú Automatizar](../media/content-understanding/automate-menu.png)</br>
+   ![Menú Automatizar.](../media/content-understanding/automate-menu.png)</br>
 
 2. En los detalles del modelo, en <b>Etiqueta de retención</b>, seleccione la etiqueta de retención que quiera aplicar.  Después, seleccione <b>Guardar</b>.
 
-     ![Agregar a un modelo de procesamiento de formularios ya existente](../media/content-understanding/retention-label-model-details.png)</br> 
+     ![Agregar a un modelo de procesamiento de formularios existente.](../media/content-understanding/retention-label-model-details.png)</br> 
 
 #### <a name="to-add-a-retention-label-to-an-existing-form-processing-model-in-the-active-model-settings"></a>Agregar una etiqueta de retención a un modelo de procesamiento de formularios existente en la configuración del modelo activo
 
@@ -114,11 +114,11 @@ Puede agregar una etiqueta de retención a un modelo de procesamiento de formula
 
 1. En la biblioteca de documentos de SharePoint en la que se aplica el modelo, seleccione el icono <b>Ver modelos activos</b> y, después, seleccione <b>Ver modelos activos</b>.</b>
 
-   ![Ver modelos activos](../media/content-understanding/info-du.png)</br> 
+   ![Ver modelos activos.](../media/content-understanding/info-du.png)</br> 
 
 2. En <b>Modelos activos</b>, seleccione el modelo de procesamiento de formularios al que quiere aplicar la etiqueta de retención.
 
-     ![Detalles del modelo](../media/content-understanding/retention-label-model-details.png)</br> 
+     ![Detalles del modelo.](../media/content-understanding/retention-label-model-details.png)</br> 
 
 
 3. En los detalles del modelo, en <b>Etiqueta de retención</b>, seleccione la etiqueta de retención que quiera aplicar.  Después, seleccione <b>Guardar</b>.

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre cómo administrar temas en el centro de temas en Temas Microsoft Viva.
-ms.openlocfilehash: 33d706a0801d8a91d22767b5b03461ba79cf8ff7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 87e944c232d552f5a0808765a1303750eb840387
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255617"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570958"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Administrar temas en el centro de temas en Temas Microsoft Viva
 
@@ -118,7 +118,7 @@ Tenga en cuenta que todavía puede optar por rechazar un tema confirmado. Para e
 
 En la **página Administrar temas,** los temas que se detectaron en las ubicaciones SharePoint de origen especificadas aparecerán en la **pestaña Publicado.** Los temas publicados se han editado para que la información específica siempre aparezca a quien encuentre la página. Aquí también se muestran los temas creados manualmente.
 
-   ![Administrar temas](../media/knowledge-management/manage-topics-new.png)
+   ![Administrar temas.](../media/knowledge-management/manage-topics-new.png)
 
 ## <a name="removed-topics"></a>Temas eliminados
 

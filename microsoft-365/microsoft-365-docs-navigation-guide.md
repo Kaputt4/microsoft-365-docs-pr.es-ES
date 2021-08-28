@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: samanro
 ms.author: samanro
 manager: pamgreen
-ms.openlocfilehash: 289c9ed0dc0291ed44c1c10f0d33a362ce30723c0ddaf1bf1e27552edec1bd6b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 23d8750b05781df858328b581056a9502b4f685e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847835"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575221"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 de navegación de documentos
 
@@ -27,7 +27,7 @@ La Microsoft 365 de concentradores se puede encontrar en y es el punto de entrad
 
 Siempre puede volver a esta página  seleccionando Microsoft 365 del encabezado en la parte superior de cada página dentro del conjunto de documentación Microsoft 365 documentación técnica:
 
-![Microsoft 365 en el encabezado](media/m365-header-cursor.png)
+![Microsoft 365 en el encabezado.](media/m365-header-cursor.png)
 
 ## <a name="offline-documentation"></a>Documentación sin conexión
 
@@ -35,37 +35,37 @@ Si desea ver la documentación Microsoft 365 en un sistema sin conexión, puede 
 
 Si desea crear un PDF, seleccione el vínculo **Descargar PDF** que se encuentra en la parte inferior de cada tabla de contenido.
 
-![Descargar PDF](media/m365-download-pdf-cursor.png)
+![Descargar PDF.](media/m365-download-pdf-cursor.png)
 
 ## <a name="toc-search"></a>Búsqueda de TOC 
 On docs.microsoft.com, you can search the content in the table of contents by using the filter search box at the top:
 
-![Usar cuadro de filtro](media/m365-filter-by-title.png)
+![Use el cuadro de filtro.](media/m365-filter-by-title.png)
 
 ## <a name="version-filter"></a>Filtro de versión
 La Microsoft 365 técnica proporciona contenido para productos adicionales, incluidos Office 365 Alemania y Office 365 operado por 21 Vianet (China). Las características pueden variar entre estas versiones y, como tal, a veces el contenido en sí puede variar.
 
 Puede usar el filtro de versión para asegurarse de que está viendo contenido para la versión adecuada de Microsoft 365:
 
-![Microsoft 365 de versión](media/m365-version-filter.png)
+![Microsoft 365 de versión.](media/m365-version-filter.png)
 
 ## <a name="breadcrumbs"></a>Rutas de navegación
 
 Se pueden encontrar rutas de navegación debajo del encabezado y encima de la tabla de contenido, e indicar dónde se encuentra el artículo actual en la tabla de contenido.  Esta ayuda no solo permite establecer el contexto en qué tipo de contenido está leyendo, sino que también le permite navegar por la copia de seguridad del árbol de la tabla de contenido:
 
-![Microsoft 365 rutas de navegación](media/m365-breadcrumb.png)
+![Microsoft 365 rutas de navegación.](media/m365-breadcrumb.png)
 
 ## <a name="article-section-navigation"></a>Navegación de sección de artículos
 
 El panel de navegación derecho le permite navegar rápidamente a las secciones de un artículo, así como identificar su ubicación dentro del artículo.  
 
-![Navegación a la derecha](media/m365-article-sections.png)
+![Navegación a la derecha.](media/m365-article-sections.png)
 
 ## <a name="submit-docs-feedback"></a>Enviar comentarios de documentos
 
 Si encuentra algo incorrecto en un artículo, puede enviar comentarios al equipo de contenido de SQL para ese artículo desplazándose hacia abajo hasta la parte inferior de la página y seleccionando Comentarios de **contenido**.
 
-![Comentarios de contenido de Git Issue](media/m365-article-feedback.png)
+![Comentarios de contenido de Git Issue.](media/m365-article-feedback.png)
 
 ## <a name="contribute-to-microsoft-365-documentation"></a>Contribuir a la Microsoft 365 documentación
 

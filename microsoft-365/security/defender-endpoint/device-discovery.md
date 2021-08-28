@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 75b47d9d7c95bd2e1f0c2654e59c3d24e7e838fc6a4d1d543976829e9c96c149
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4c1d24119ee8f403b168d6b2f2d97b9842f89d9b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834137"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575197"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -90,7 +90,7 @@ Los dispositivos que se han detectado pero aún no se han incorporado y protegid
 - No compatible: el punto de conexión se ha detectado en la red, pero Microsoft Defender no admite endpoint.
 - Información insuficiente: el sistema no pudo determinar la compatibilidad del dispositivo. Habilitar la detección estándar en más dispositivos de la red puede enriquecer los atributos detectados.
 
-![Imagen del panel de inventario de dispositivos](images/2b62255cd3a9dd42f3219e437b956fb9.png)
+![Imagen del panel de inventario de dispositivos.](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
 > [!TIP]
 > Siempre puedes aplicar filtros para excluir dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados.
@@ -100,14 +100,14 @@ Los dispositivos que se han detectado pero aún no se han incorporado y protegid
 Las vulnerabilidades y riesgos en los dispositivos, así como otros dispositivos no administrados detectados en la red, forman parte de los flujos actuales de TVM en "Security Recomendaciones" y se representan en páginas de entidad en todo el portal.
 Busque recomendaciones de seguridad relacionadas con "SSH" para buscar vulnerabilidades SSH relacionadas con dispositivos administrados y no administrados.
 
-![Imagen del panel de recomendaciones de seguridad](images/1156c82ffadd356ce329d1cf551e806c.png)
+![Imagen del panel de recomendaciones de seguridad.](images/1156c82ffadd356ce329d1cf551e806c.png)
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>Usar la búsqueda avanzada en dispositivos detectados
 
 Puedes usar consultas de búsqueda avanzada para obtener visibilidad en dispositivos detectados.
 Encuentre detalles sobre los puntos de conexión detectados en la tabla DeviceInfo o información relacionada con la red sobre esos dispositivos en la tabla DeviceNetworkInfo.
 
-![Imagen del uso avanzado de la búsqueda](images/f48ba1779eddee9872f167453c24e5c9.png)
+![Imagen del uso avanzado de la búsqueda.](images/f48ba1779eddee9872f167453c24e5c9.png)
 
 La detección de dispositivos aprovecha los dispositivos integrados de Microsoft Defender para endpoint como origen de datos de red para atribuir actividades a dispositivos no incorporados. Esto significa que si un dispositivo integrado de Microsoft Defender para endpoint se comunica con un dispositivo no incorporado, las actividades del dispositivo no incorporado se pueden ver en la escala de tiempo y a través de la tabla DeviceNetworkEvents de búsqueda avanzada.
 

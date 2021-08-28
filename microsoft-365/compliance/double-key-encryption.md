@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 3e6fcb5f91a90bc062e12a38cf58d5666ec868ab35aa448250d2da8eb3b1b6a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1489671754f26d37abbc9bfbc84f59be26099c9b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820359"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570898"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Cifrado de clave doble para Microsoft 365
 
@@ -97,7 +97,7 @@ Seguirá estos pasos generales para configurar el cifrado de clave doble para su
 1. [Clonar el repositorio de GitHub clave doble](#clone-the-dke-github-repository)
 1. [Modificar la configuración de la aplicación](#modify-application-settings)
 1. [Generar claves de prueba](#generate-test-keys)
-1. [Compile el proyecto.](#build-the-project)
+1. [Crear el proyecto](#build-the-project)
 1. [Implementar el servicio DKE y publicar el almacén de claves](#deploy-the-dke-service-and-publish-the-key-store)
 1. [Validar la implementación](#validate-your-deployment)
 1. [Registrar el almacén de claves](#register-your-key-store)
@@ -142,12 +142,12 @@ Las siguientes instrucciones están destinadas a usuarios de git o usuarios Visu
     Por ejemplo:
 
    > [!div class="mx-imgBorder"]
-   > ![Clone el repositorio del servicio de cifrado de clave doble desde GitHub](../media/dke-clone.png)
+   > ![Clone el repositorio del servicio de cifrado de clave doble GitHub.](../media/dke-clone.png)
 
 3. En Visual Studio Code, seleccione **Ver paleta** \> **de comandos** y seleccione **Git: Clonar**. Para ir a la opción de la lista, empiece a escribir para filtrar las entradas y, a continuación, `git: clone` selecciónelo en la lista desplegable. Por ejemplo:
 
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Code Opción GIT:Clone](../media/dke-vscode-clone.png)
+   > ![Visual Studio Code Opción GIT:Clone.](../media/dke-vscode-clone.png)
 
 4. En el cuadro de texto, pegue la dirección URL que copió de Git y seleccione **Clonar de GitHub**.
 
@@ -155,7 +155,7 @@ Las siguientes instrucciones están destinadas a usuarios de git o usuarios Visu
 
     El repositorio se abre en Visual Studio Code y muestra la rama git actual en la parte inferior izquierda. Por ejemplo, la rama debe ser **principal**. Por ejemplo:
 
-   ![Captura de pantalla del repositorio de DKE en Visual Studio Code muestra la rama principal](../media/dke-vscode-main-branch.jpg)
+   ![Captura de pantalla del repositorio de DKE en Visual Studio Code muestra la rama principal.](../media/dke-vscode-main-branch.jpg)
 
 6. Si no está en la rama principal, tendrá que seleccionarla. En Visual Studio Code, seleccione la rama y elija **main** en la lista de ramas que se muestra.
 
@@ -203,7 +203,7 @@ Elija si desea usar la autorización de correo electrónico o de roles. DKE solo
 
 Esta imagen muestra el **appsettings.jsen el** archivo con el formato correcto para la autorización de correo electrónico.
 
-   ![El appsettings.jsarchivo que muestra el método de autorización de correo electrónico](../media/dke-email-accesssetting.png)
+   ![El appsettings.jsarchivo que muestra el método de autorización de correo electrónico.](../media/dke-email-accesssetting.png)
 
 ##### <a name="to-set-key-access-settings-for-dke-using-role-authorization"></a>Para establecer la configuración de acceso de clave para DKE mediante la autorización de roles
 
@@ -225,7 +225,7 @@ Esta imagen muestra el **appsettings.jsen el** archivo con el formato correcto p
 
 Esta imagen muestra el **appsettings.jsen el** archivo con el formato correcto para la autorización de roles.
 
-   ![appsettings.jsen el archivo que muestra el método de autorización de roles](../media/dke-role-accesssetting.png)
+   ![appsettings.jsen el archivo que muestra el método de autorización de roles.](../media/dke-role-accesssetting.png)
 
 #### <a name="tenant-and-key-settings"></a>Configuración de inquilino y clave
 
@@ -315,7 +315,7 @@ Para generar claves:
 
     Los resultados finales deben ser similares a los siguientes.
 
-    ![archivo startup.cs para vista previa pública](../media/dke-startupcs-usetestkeys.png)
+    ![archivo startup.cs para la vista previa pública.](../media/dke-startupcs-usetestkeys.png)
 
 Ahora ya está listo para [crear el proyecto DKE](#build-the-project).
 
@@ -329,15 +329,15 @@ Use las siguientes instrucciones para crear el proyecto DKE localmente:
 
    Si no se encuentran tareas de compilación, seleccione **Configurar tarea de compilación** y cree una para .NET core de la siguiente manera.
 
-   ![Configurar la tarea de compilación que falta para .NET](../media/dke-configurebuildtask.png)
+   ![Configurar la tarea de compilación que falta para .NET.](../media/dke-configurebuildtask.png)
 
    1. Elija **Crear tasks.jsdesde la plantilla**.
 
-      ![Crear tasks.jsarchivo desde la plantilla para DKE](../media/dke-createtasksjsonfromtemplate.png)
+      ![Cree tasks.jsarchivo desde la plantilla para DKE.](../media/dke-createtasksjsonfromtemplate.png)
 
    2. En la lista de tipos de plantilla, seleccione **.NET Core**.
 
-      ![Seleccione la plantilla correcta para DKE](../media/dke-tasksjsontemplate.png)
+      ![Seleccione la plantilla correcta para DKE.](../media/dke-tasksjsontemplate.png)
 
    3. En la sección compilación, busque la ruta de acceso al **archivo customerkeystore.csproj.** Si no está ahí, agregue la siguiente línea:
 
@@ -386,7 +386,7 @@ Para publicar el almacén de claves, creará una instancia de Azure App Service 
    Por ejemplo:
 
    > [!div class="mx-imgBorder"]
-   > ![Agregar el Servicio de aplicaciones](../media/dke-azure-add-app-service.png)
+   > ![Agregue el Servicio de aplicaciones.](../media/dke-azure-add-app-service.png)
 
 3. En la parte inferior de la página, seleccione **Revisar + crear** y, a continuación, seleccione **Agregar**.
 
@@ -426,7 +426,7 @@ DKE se implementa y puede examinar las claves de prueba que ha creado. Continúe
 
    Por ejemplo:
 
-   ![Copiar cadenas de conexión desde el panel FTP](../media/dke-ftp-dashboard.png)
+   ![Copie las cadenas de conexión desde el panel FTP.](../media/dke-ftp-dashboard.png)
 
 3. En la base de código para el almacenamiento de claves, vaya al **directorio customer-key-store\src\customer-key-store**.
 
@@ -448,7 +448,7 @@ DKE se implementa y puede examinar las claves de prueba que creó. A continuaci�
 
 Después de implementar DKE con uno de los métodos descritos anteriormente, valide la implementación y la configuración del almacén de claves.
 
-Ejecutar:
+Ejecute: 
 
 ```powershell
 src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
@@ -481,7 +481,7 @@ Para registrar el servicio DKE:
    Por ejemplo:
 
    > [!div class="mx-imgBorder"]
-   > ![Registro de nueva aplicación](../media/dke-app-registration.png)
+   > ![Nuevo registro de aplicaciones.](../media/dke-app-registration.png)
 
 4. En la parte inferior de la página, selecciona **Registrar** para crear el nuevo registro de aplicaciones.
 
@@ -542,7 +542,7 @@ En el Centro de cumplimiento de Microsoft 365, crea una nueva etiqueta de confid
 Por ejemplo:
 
 > [!div class="mx-imgBorder"]
-> ![Seleccione Usar cifrado de clave doble en el Centro de cumplimiento de Microsoft 365](../media/dke-use-dke.png)
+> ![Seleccione Usar cifrado de clave doble en el Centro de cumplimiento de Microsoft 365.](../media/dke-use-dke.png)
 
 Las etiquetas DKE que agregue empezarán a aparecer para los usuarios en las versiones más recientes de Aplicaciones Microsoft 365 para empresas.
 

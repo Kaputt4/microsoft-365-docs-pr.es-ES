@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de prueba de conectividad de red
-ms.openlocfilehash: f143cf8f9cd838bafa8e21ac258d0fcc09f3221d738f14013ee81e09e9dbdc1c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 60817f54586fd23270edc4e67be8b41a994bf50c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841035"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570970"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de prueba de conectividad de red
 
@@ -29,7 +29,7 @@ La Microsoft 365 de prueba de conectividad de red se encuentra en <https://conne
 > Es importante iniciar sesión en el inquilino de Microsoft 365 ya que todos los informes de prueba se comparten con el administrador y se cargan en el inquilino mientras se inicia sesión.
 
 > [!div class="mx-imgBorder"]
-> ![Herramienta de prueba de conectividad](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+> ![Herramienta de prueba de conectividad.](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
 >[!NOTE]
 >La herramienta de prueba de conectividad de red admite inquilinos en WW Commercial y Alemania, pero no GCC moderados, GCC High, DoD o China.
@@ -60,7 +60,7 @@ Hay dos partes en la prueba Microsoft 365 conectividad de red: el sitio web y un
 Se le pedirá que descargue la aplicación de prueba de cliente avanzada del sitio web una vez completadas las pruebas del explorador web. Abra y ejecute el archivo cuando se le pida.
 
 > [!div class="mx-imgBorder"]
-> ![Aplicación cliente de pruebas avanzadas](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+> ![Aplicación cliente de pruebas avanzadas.](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
 
 ### <a name="start-the-advanced-tests-client-application"></a>Iniciar la aplicación cliente de pruebas avanzadas
 
@@ -87,26 +87,26 @@ Los informes de prueba (excepto cualquier identificación personal) se comparten
 Puede elegir los usuarios con los que compartir el informe. La posibilidad de elegir está habilitada de forma predeterminada, pero el administrador puede deshabilitarla.
 
 > [!div class="mx-imgBorder"]
-> ![Compartir un vínculo a los resultados de la prueba con un usuario](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
+> ![Compartir un vínculo a los resultados de la prueba con un usuario.](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
 
 ### <a name="sharing-with-anyone-using-a-reportid-link"></a>Compartir con cualquier persona que use un vínculo ReportID
 
 Puede compartir el informe de prueba con cualquier persona proporcionando acceso a un vínculo ReportID. Este vínculo genera una dirección URL que puede enviar a alguien para que pueda presentar el informe de prueba sin iniciar sesión. Este uso compartido está deshabilitado de forma predeterminada y el administrador debe habilitarlo.
 
 > [!div class="mx-imgBorder"]
-> ![Compartir un vínculo a los resultados de la prueba](../media/m365-mac-perf/m365-mac-perf-share-link.png)
+> ![Compartir un vínculo a los resultados de la prueba.](../media/m365-mac-perf/m365-mac-perf-share-link.png)
 
 ## <a name="network-connectivity-test-results"></a>Resultados de la prueba de conectividad de red
 
 Los resultados se muestran en **las** pestañas Resumen **y** Detalles. La pestaña resumen muestra un mapa del perímetro de red detectado y una comparación de la evaluación de red con otros Office 365 clientes cercanos. También permite compartir el informe de prueba. Este es el aspecto de la vista de resultados de resumen:
 
 > [!div class="mx-imgBorder"]
-> ![Resultados de resumen de la herramienta de prueba de conectividad de red](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
+> ![Resultados de resumen de la herramienta de prueba de conectividad de red.](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
 
 Este es un ejemplo de la salida de pestaña de detalles que muestra la herramienta. En la pestaña detalles se muestra una marca de verificación de círculo verde si el resultado se comparó de forma favorable con un umbral. Se muestra un signo de exclamación de triángulo rojo si el resultado superó un umbral que indica una información de red. En las secciones siguientes se describen cada una de las filas de resultados de pestañas de detalles y se explican los umbrales usados para la información de red.
 
 > [!div class="mx-imgBorder"]
-> ![Resultados de pruebas de la herramienta de prueba de conectividad de red](../media/m365-mac-perf/m365-mac-perf-all-details.png)
+> ![Resultados de prueba de la herramienta de prueba de conectividad de red.](../media/m365-mac-perf/m365-mac-perf-all-details.png)
 
 ### <a name="your-location-information"></a>Información de ubicación
 
@@ -241,14 +241,14 @@ En esta sección se muestran los resultados de una ruta de seguimiento ICMP a la
 Cuando haya iniciado sesión, puede revisar los informes anteriores que haya ejecutado. También puede compartirlos o eliminarlos de la lista.
 
 > [!div class="mx-imgBorder"]
-> ![Informes](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
+> ![Informes.](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
 
 ## <a name="network-health-status"></a>Estado de mantenimiento de la red
 
 Esto muestra cualquier problema de mantenimiento significativo con la red global de Microsoft, que podría afectar a Microsoft 365 clientes.
 
 > [!div class="mx-imgBorder"]
-> ![Estado de mantenimiento de la red](../media/m365-mac-perf/m365-mac-perf-status-page.png)
+> ![Estado de mantenimiento de la red.](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
 ## <a name="faq"></a>Preguntas más frecuentes
 

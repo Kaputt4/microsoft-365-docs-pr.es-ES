@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Usa la herramienta Comunicaciones en un Advanced eDiscovery caso para enviar, recopilar y realizar un seguimiento de las notificaciones de retención legal.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b5bf8d070e5e1bf8fc44e16a6550a6e376e2716f
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: cc9e8c424550c2be12711d7ef098c95230b0b1a4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502704"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574369"
 ---
 # <a name="create-a-legal-hold-notice"></a>Crear un aviso de retención legal
 
 Con Advanced eDiscovery de custodia, las organizaciones pueden administrar su flujo de trabajo en torno a la comunicación con los custodios. A través de la herramienta comunicaciones, los equipos legales pueden enviar, recopilar y realizar un seguimiento sistemático de las notificaciones de retención legal. El proceso de creación flexible también permite a los equipos personalizar el flujo de trabajo de notificación de retención y el contenido de los avisos enviados a los custodios.
 
-![Página comunicaciones](../media/CommunicationPage.PNG)
+![Página comunicaciones.](../media/CommunicationPage.PNG)
 
 En el artículo se describen los pasos del flujo de trabajo de notificación de retención.
 
@@ -36,7 +36,7 @@ En el artículo se describen los pasos del flujo de trabajo de notificación de 
 
 El primer paso es especificar los detalles adecuados para los avisos de retención legal u otras comunicaciones de custodia.
 
-![Página de comunicación de nombres](../media/NameCommunication.PNG)
+![Página de comunicación de nombre.](../media/NameCommunication.PNG)
 
 1. En el Centro de cumplimiento de Microsoft 365, vaya a **eDiscovery > Advanced** para mostrar la lista de casos de su organización.
 
@@ -58,7 +58,7 @@ El primer paso es especificar los detalles adecuados para los avisos de retenci�
 
 A continuación, puede crear y agregar el contenido del aviso de retención. En la **página Definir contenido del portal** del Asistente para crear **comunicación,** especifique el contenido del aviso de retención. Este contenido se anexará automáticamente a los avisos de emisión, reedición, aviso y escalación. Además, este contenido aparecerá en el Portal de cumplimiento del custodio.
 
-![Página de contenido del portal](../media/PortalContent.PNG)
+![Página de contenido del portal.](../media/PortalContent.PNG)
 
 Para crear el contenido del portal:
 
@@ -132,7 +132,7 @@ Para crear una notificación de lanzamiento:
 
 Opcionalmente, puede simplificar el flujo de trabajo para realizar un seguimiento con custodios no responsables mediante la creación y programación de notificaciones automatizadas de avisos y escalamiento.
 
-![Página aviso/escalación](../media/ReminderEscalations.PNG)
+![Página aviso/escalación.](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>Reminders
 
@@ -178,7 +178,7 @@ Para programar escalaciones:
 
 Después de finalizar el contenido de las notificaciones, seleccione los custodios a los que desea enviar notificaciones.
 
-![Seleccionar página de custodios](../media/SelectCustodians.PNG)
+![Seleccione Página de custodios.](../media/SelectCustodians.PNG)
 
 Para agregar custodios:
 

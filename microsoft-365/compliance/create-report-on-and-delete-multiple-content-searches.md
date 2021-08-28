@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Obtenga información sobre cómo automatizar tareas de búsqueda de contenido, como crear búsquedas y ejecutar informes con PowerShell del Centro de & seguridad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c49cc0da930d6502df2ae88652c3b9fb23c36d3f
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: fff69aac3ab30e0fe1ea60f9d097602a5390ba87
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508099"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574344"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Crear, informar sobre y eliminar varias búsquedas de contenido
 
@@ -64,7 +64,7 @@ El archivo de valores separados por comas (CSV) que cree en este paso contiene u
 
    ****
 
-   |Parámetro|Descripción|
+   |Parámetro|Description|
    |---|---|
    |`ExchangeLocation`|La dirección SMTP del buzón del usuario.|
    |`SharePointLocation`|La dirección URL del sitio OneDrive para la Empresa usuario o la dirección URL de cualquier sitio de la organización. Para la dirección URL de OneDrive para la Empresa, use este formato: ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` . Por ejemplo, `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
@@ -180,7 +180,7 @@ Para ejecutar el script:
 
    El script muestra el progreso de la creación y ejecución de las búsquedas. Cuando el script se completa, vuelve al símbolo del sistema.
 
-   ![Resultado de ejemplo de la ejecución de la secuencia de comandos para crear varias búsquedas de cumplimiento](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+   ![Salida de ejemplo de la ejecución del script para crear varias búsquedas de cumplimiento.](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
 
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Paso 4: Ejecutar el script para informar de las estimaciones de búsqueda
 
@@ -255,7 +255,7 @@ Después de crear las búsquedas, el siguiente paso es ejecutar un script que mu
 
    El script muestra el progreso de la creación y ejecución de las búsquedas. Cuando se completa el script, se muestra el informe.
 
-   ![Ejecutar el informe de búsqueda para mostrar las estimaciones para el grupo de búsqueda](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+   ![Ejecute el informe de búsqueda para mostrar las estimaciones del grupo de búsqueda.](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
 > Si se especifica el mismo buzón o sitio como una ubicación de contenido en más de una búsqueda de un grupo de búsqueda, la estimación total de resultados del informe (tanto para el número de elementos como para el tamaño total) puede incluir resultados para los mismos elementos. Esto se debe a que el mismo mensaje de correo electrónico o documento se contará más de una vez si coincide con la consulta de distintas búsquedas en el grupo de búsqueda.
@@ -290,4 +290,4 @@ Dado que es posible que esté creando muchas búsquedas, este último script fac
 
    El script muestra el nombre de cada búsqueda que se elimina.
 
-   ![Ejecutar la secuencia de comandos para eliminar las búsquedas en el grupo de búsqueda](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+   ![Ejecute el script para eliminar las búsquedas en el grupo de búsqueda.](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

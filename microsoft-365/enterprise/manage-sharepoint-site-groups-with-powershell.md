@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: En este artículo, busque procedimientos para usar PowerShell para Microsoft 365 administrar SharePoint grupos de sitios en línea.
-ms.openlocfilehash: 2004d4720eb693cb2a9bd0a7304f9c2e2cc5ab58
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 975c6ee7e1b3d62bf5a4c06791ed510b8fa61c31
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353710"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575125"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Administrar grupos de sitio de SharePoint Online con PowerShell
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Aunque puede usar el Centro de administración de Microsoft 365, también puede usar PowerShell para Microsoft 365 administrar los grupos de sitios de SharePoint Online.
 
@@ -70,7 +70,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 En ambos casos, el resultado será parecido a lo siguiente:
 
-![SharePoint Grupos de sitios en línea](../media/SPO-site-groups.png)
+![SharePoint Grupos de sitios en línea.](../media/SPO-site-groups.png)
 
 Estos son todos los grupos que se han creado para el sitio `https://litwareinc.sharepoint.com/sites/finance` y todos los usuarios asignados a esos grupos. Los nombres de grupo están en amarillo para ayudarle a separar los nombres de grupo de sus miembros.
 

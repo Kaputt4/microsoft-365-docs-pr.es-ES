@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 ROBOTS: NOINDEX, NOFOLLOW
 description: Revise los pasos para realizar el aprendizaje de evaluación, incluidos los archivos de etiquetado, y revise los resultados de la evaluación en Advanced eDiscovery.
-ms.openlocfilehash: 4e1b9f3e79ee35866322e713412690af068ce1837c668c0331d1091cd84a2786
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 539d4e8f28aa8e4e3ab98807c5019711edbdcc4f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899866"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574921"
 ---
 # <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Etiquetado y evaluación en el módulo Relevancia en Advanced eDiscovery
   
@@ -34,7 +34,7 @@ En esta sección se describe el procedimiento de evaluación en el módulo Relev
 
     Por ejemplo, en este procedimiento, se crea un conjunto de  evaluación de muestra de 500 archivos y se muestra la pestaña Etiqueta, que contiene el panel Etiquetado, el contenido del archivo mostrado y otras opciones de etiquetado. 
 
-    ![Pestaña de etiqueta de relevancia para la evaluación](../media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
+    ![Pestaña Etiqueta de relevancia para evaluación.](../media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
   
 2. Revise cada archivo del ejemplo, determine la relevancia del archivo para cada problema de caso y etiquete el archivo con los botones Relevancia (R), No relevante (NR) y Omitir en el **panel Panel** de etiquetado. 
 
@@ -45,14 +45,14 @@ En esta sección se describe el procedimiento de evaluación en el módulo Relev
 
     El margen de error actual de evaluación y la riqueza se calculan y se muestran en la pestaña **Pista** de relevancia, con detalles expandido por problema, como se muestra a continuación. En la sección Revisar resultados de evaluación se describen más detalles sobre este cuadro [de](#reviewing-assessment-results) diálogo.
 
-    ![Seguimiento de relevancia: evaluación](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
+    ![Pista de relevancia: evaluación.](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
     > De forma predeterminada, se recomienda continuar con el paso siguiente predeterminado cuando se haya completado el indicador de progreso de evaluación del problema, lo que indica que se revisó la muestra de evaluación y se etiquetaron suficientes archivos relevantes. > De lo contrario, si desea  ver los resultados de la pestaña Seguimiento  y controlar el margen de error y el paso siguiente, haga clic en Modificar junto a Paso siguiente **,** seleccione Continuar evaluación y, a continuación, haga clic en **Aceptar**.
   
 4. Haga **clic en** Modificar a la derecha de la **casilla** Evaluación para ver y especificar parámetros de evaluación por problema. Se **muestra un** cuadro de diálogo Nivel de evaluación para cada problema, como se muestra en el ejemplo siguiente: 
 
-    ![Problema de caso del nivel de evaluación](../media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
+    ![Problema de caso de nivel de evaluación.](../media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
   
     Los siguientes parámetros para el problema se calculan y se muestran en el cuadro **de diálogo Nivel de** evaluación: 
 
@@ -70,7 +70,7 @@ En esta sección se describe el procedimiento de evaluación en el módulo Relev
 
 9. Haga **clic en** Avanzadas en el cuadro de diálogo Nivel **de** evaluación para ver los siguientes parámetros y detalles adicionales: 
 
-    ![Vista avanzada del problema de caso del nivel de evaluación](../media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
+    ![Vista avanzada de problema de caso de nivel de evaluación.](../media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
   
     - **Riqueza estimada:** riqueza estimada según los resultados de la evaluación actuales
 
@@ -90,7 +90,7 @@ En esta sección se describe el procedimiento de evaluación en el módulo Relev
 
     Cuando hay varios problemas, después de revisar o ajustar todos los problemas, se muestra un cuadro de diálogo Nivel de **evaluación:** resumen, como se muestra en el ejemplo siguiente. 
 
-    ![Resumen del nivel de evaluación](../media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
+    ![Resumen del nivel de evaluación.](../media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
   
     Una vez completada correctamente la evaluación, continúe con la siguiente fase de la formación en relevancia.
 

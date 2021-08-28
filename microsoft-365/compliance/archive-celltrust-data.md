@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de CellTrust de Veritas a Microsoft 365. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 88d443cb9c840d41727c3804450484bf15f0adc7ba2c0cfcb25e488e4b21ea39
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7d2a7bd1129fcd24388782458ecd8503b45b64e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861205"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575005"
 ---
 # <a name="set-up-a-connector-to-archive-celltrust-data"></a>Configurar un conector para archivar datos de CellTrust
 
@@ -29,7 +29,7 @@ Una vez que los datos de CellTrust se almacenan en buzones de usuario, puede apl
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de CellTrust en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos de CellTrust](../media/CellTrustConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos cellTrust.](../media/CellTrustConnectorWorkflow.png)
 
 1. Su organización trabaja con CellTrust para configurar y configurar un sitio de CellTrust.
 

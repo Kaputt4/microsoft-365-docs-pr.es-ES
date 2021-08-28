@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 0f4ccadd48759f3aa3de959df3ef8104df21520e2dcd59b65567891be31d314a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a0f806da62378ca21c1693fd96105bb89eaf5708
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871839"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570838"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>Barreras de información en Microsoft 365
 
@@ -38,7 +38,7 @@ Las barreras de información se admiten Microsoft Teams, SharePoint Online y One
 
 Siga estos pasos para configurar las barreras de información de su organización:
 
-![Pasos de barreras de información de soluciones de riesgo de Insider](../media/ir-solution-ib-steps.png)
+![Pasos de barreras de información de soluciones de riesgo de Insider.](../media/ir-solution-ib-steps.png)
 
 1. Obtenga información [sobre las barreras de información](information-barriers.md) en Microsoft 365
 2. Configurar [requisitos previos y permisos](information-barriers-policies.md#prerequisites)

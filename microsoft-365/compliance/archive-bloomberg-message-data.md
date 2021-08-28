@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar y archivar datos de la herramienta de correo electrónico mensaje de Bloomberg en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 6fe3f50576ef01868c335823f09970f9a3bf88ccdbe06eef73cc1e04ea8d7e61
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2fabe34f7172c67442474359c8eefe4078c4bdd6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861251"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575029"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Configurar un conector para archivar datos de mensajes de Bloomberg
 
@@ -29,7 +29,7 @@ Después de almacenar los datos del mensaje de Bloomberg en buzones de usuario, 
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar los datos del mensaje de Bloomberg en Microsoft 365.
 
-![Proceso de importación y archivo de mensajes de Bloomberg](../media/BloombergMessageArchiving.png)
+![Proceso de importación y archivo de mensajes de Bloomberg.](../media/BloombergMessageArchiving.png)
 
 1. Su organización trabaja con Bloomberg para configurar un sitio SFTP de Bloomberg. También trabajarás con Bloomberg para configurar El mensaje de Bloomberg para copiar mensajes de correo electrónico en el sitio SFTP de Bloomberg.
 
@@ -91,11 +91,11 @@ El primer paso es obtener una copia de las claves públicas PGP y SSH. Estas cla
 
 5. En la **página Agregar credenciales para origen de** contenido, haga clic en Deseo usar claves públicas PGP y SSH **proporcionadas por Microsoft**.
 
-   ![Seleccione la opción para usar claves públicas](../media/BloombergMessagePublicKeysOption.png)
+   ![Seleccione la opción para usar claves públicas.](../media/BloombergMessagePublicKeysOption.png)
 
 6. En el paso 1, haga clic en los vínculos Descargar clave **SSH**, **Descargar clave PGP** y Descargar dirección **IP** para guardar una copia de cada archivo en el equipo local.
 
-   ![Vínculos para descargar claves públicas y dirección IP](../media/BloombergMessagePublicKeyDownloadLinks.png)
+   ![Vínculos para descargar claves públicas y dirección IP.](../media/BloombergMessagePublicKeyDownloadLinks.png)
 
    Estos archivos contienen los siguientes elementos que se usan para configurar el sitio SFTP de Bloomberg en el paso 2:
 
@@ -179,7 +179,7 @@ Para obtener la dirección IP:
 
 6. En el paso 1, haga clic **en Descargar dirección IP** para guardar una copia del archivo de dirección IP en el equipo local.
 
-   ![Descargar la dirección IP](../media/BloombergMessageConnectorIPAddress.png)
+   ![Descargue la dirección IP.](../media/BloombergMessageConnectorIPAddress.png)
 
 7. Haga **clic en** Cancelar para cerrar el asistente. Vuelve a este asistente en el paso 2 para crear el conector.
 
@@ -199,7 +199,7 @@ Una vez configurado el sitio SFTP de Bloomberg, el siguiente paso es crear un co
 
 5. En la **página Agregar credenciales para origen de contenido,** haga clic en Deseo usar claves privadas **PGP y SSH.**
 
-   ![Seleccione la opción para usar claves privadas](../media/BloombergMessagePrivateKeysOption.png)
+   ![Seleccione la opción para usar claves privadas.](../media/BloombergMessagePrivateKeysOption.png)
 
 6. En el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic **en Validar conexión**.
 

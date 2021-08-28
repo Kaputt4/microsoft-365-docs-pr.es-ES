@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar Advanced eDiscovery para que pueda empezar a crear y administrar casos. También describe las suscripciones y licencias de Microsoft necesarias. Después de completar algunos pasos rápidos, la Advanced eDiscovery está lista para usarse.
-ms.openlocfilehash: eb54b43e4361750f66371f224cd7bf6bce58d604
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 42ff8a7ef49949b9061972f08ebafeebd6d1a85d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508027"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570850"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>Configurar Microsoft 365 Advanced eDiscovery
 
@@ -32,7 +32,7 @@ Advanced eDiscovery en Microsoft 365 proporciona un flujo de trabajo completo pa
 
 En este artículo se analizan los siguientes pasos necesarios para configurar Advanced eDiscovery.
 
-![Pasos para configurar Advanced eDiscovery](../media/set-up-advanced-ediscovery.png)
+![Pasos para configurar Advanced eDiscovery.](../media/set-up-advanced-ediscovery.png)
 
 Esto incluye garantizar la licencia adecuada necesaria para tener acceso a Advanced eDiscovery y agregar custodios a los casos, y asignar permisos al equipo legal e investigador para que puedan acceder y administrar los casos.
 
@@ -87,6 +87,6 @@ Para obtener más información acerca de cómo configurar y usar el modelo de de
 > [!NOTE]
 > Este es un paso opcional que puede realizar en cualquier momento. No implementar el modelo de detección de privilegios abogado-cliente no le impide crear y usar Advanced eDiscovery casos.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de configurar Advanced eDiscovery, está listo para [crear un caso](create-and-manage-advanced-ediscoveryv2-case.md).

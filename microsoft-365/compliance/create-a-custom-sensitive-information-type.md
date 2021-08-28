@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b0a1a081f0eaad8be9b3afefc65f10c79eb5264cf5ce300dd454ccad6cf37fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1fcb52d99f939d686ac423c80caa0fe00cec24c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900194"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574825"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -144,7 +144,7 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 > [!NOTE]
 > Si el dígito de comprobación no forma parte del cálculo de suma de comprobación, use 0 como el peso del dígito de comprobación. Por ejemplo, en el caso anterior, el peso 8 será igual a 0 si el dígito de comprobación no se va a usar para calcular el dígito de comprobación.  Modulo_operation).
 
-![captura de pantalla del validador de suma de comprobación configurado](../media/checksum-validator.png)
+![captura de pantalla del validador de suma de comprobación configurado.](../media/checksum-validator.png)
 
 ### <a name="date-validator"></a>Validador de fechas
 
@@ -159,7 +159,7 @@ Si un valor de fecha incrustado en la expresión regular forma parte  de un nuev
 2. A continuación, agregue el validador de fecha.
 3. Seleccione el formato de fecha y el desplazamiento de inicio. Dado que la cadena de fecha es los seis primeros dígitos, el desplazamiento es `0` .
 
-![captura de pantalla del validador de fecha configurado](../media/date-validator.png)
+![captura de pantalla del validador de fecha configurado.](../media/date-validator.png)
 
 ### <a name="functional-processors-as-validators"></a>Procesadores funcionales como validadores
 

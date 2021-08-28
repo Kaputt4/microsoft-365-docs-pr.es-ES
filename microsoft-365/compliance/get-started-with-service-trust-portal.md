@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Obtenga información sobre cómo obtener acceso y usar el Portal de confianza de servicio de Microsoft para ayudar con las prácticas de seguridad, privacidad y cumplimiento.
-ms.openlocfilehash: 38a5295d225df1ec04fba756b0e88639ab5c3dad7a67e8597456ca318f004d09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 63901d6b71be98c0474b5ede840b6914b38609b4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814091"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574224"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al Portal de confianza de servicio de Microsoft
 
@@ -58,7 +58,7 @@ Cuando se registra para una versión de prueba gratuita o una suscripción, debe
 
 Se puede obtener acceso a las características y al contenido del Portal de confianza de servicios desde el menú principal.
 
-![Menú Portal de confianza de servicio](../media/STPMenus1.png)
+![Menú Portal de confianza de servicio.](../media/STPMenus1.png)
 
 En las secciones siguientes se describe cada elemento del menú principal.
 
@@ -115,13 +115,13 @@ Vaya a **Más > administrador para** obtener acceso a funciones administrativas 
 
 Haga clic en la lupa de la esquina superior derecha de la página Portal de confianza de servicio para expandir el cuadro, escriba los términos de búsqueda y presione **Entrar**. Se **muestra** la página Búsqueda, con el término de búsqueda que se muestra en el cuadro de búsqueda y los resultados de búsqueda enumerados a continuación.
 
-![Portal de confianza de servicios: Buscar en documentos con filtro aplicado](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Portal de confianza de servicio: búsqueda en documentos con filtro aplicado.](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 De forma predeterminada, la búsqueda devuelve los resultados del documento. Puede filtrar los resultados mediante las listas desplegables para refinar la lista de documentos que se muestran. Puede usar varios filtros para restringir la lista de documentos. Los filtros incluyen los servicios en la nube específicos, categorías de prácticas de cumplimiento o seguridad, regiones e industrias. Haga clic en el vínculo nombre del documento para descargar el documento.
 
 Para enumerar los controles de evaluaciones en el Administrador de cumplimiento (clásico) relacionados con los términos de búsqueda, haga clic en **Administrador de cumplimiento**. Los resultados de la búsqueda muestran la fecha en que se creó la evaluación, el nombre de la agrupación de evaluación, el servicio en la nube de Microsoft aplicable y si el control es Administrado por el cliente o Microsoft. Haga clic en el nombre del control para ver el control en el Administrador de evaluación en cumplimiento (clásico).
 
-![Portal de confianza de servicios: Búsqueda en controles del Administrador de cumplimiento](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Portal de confianza de servicio: búsqueda en controles del Administrador de cumplimiento.](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
 > Los informes y documentos del Portal de confianza de servicio están disponibles para su descarga durante al menos 12 meses después de la publicación o hasta que una nueva versión del documento esté disponible.
@@ -150,7 +150,7 @@ Para obtener acceso a estos paquetes de inicio, vaya a **Service Trust Portal > 
 
 El Portal de confianza de servicios le permite ver el contenido de la página en diferentes idiomas. Para cambiar el idioma de la página, solo tiene que hacer clic en el icono de globo terráqueo de la esquina inferior izquierda de la página y seleccionar el idioma que quiera.
 
-![Portal de confianza de servicios: Opciones de contenido localizado](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Portal de confianza de servicio: opciones de contenido localizado.](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="give-feedback"></a>Enviar comentarios
 

@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Obtenga información sobre cómo usar el Office 365 Content Delivery Network (CDN) para acelerar la entrega de los activos SharePoint Online.
-ms.openlocfilehash: f2e23217e18c51bb865dd46a692db50bf3fa81ade1a09e833305cdb9a5fbadc9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 494f0574707693f7d36fa2e1c61ee942e4c088a6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885116"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574272"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -37,7 +37,7 @@ Puede usar la red de entrega de contenido (CDN) de Office 365 integrada para hos
 
 La CDN de Office 365 se compone de varias redes CDN que permite hospedar archivos estáticos en varias ubicaciones u _orígenes_ y a realizar la entrega desde redes de alta velocidad globales. Según el tipo de contenido que quiera hospedar en la CDN de Office 365, puede agregar orígenes **públicos**, **privados** o ambos. Vea [Elegir si cada origen debe ser público o privado](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) para obtener más información sobre la diferencia entre orígenes públicos y privados.
 
-![Office 365 CDN diagrama conceptual](../media/O365-CDN/o365-cdn-flow-transparent.png "Diagrama conceptual de cdn de Office 365")
+![Office 365 CDN diagrama conceptual.](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN diagrama conceptual")
 
 Si ya está familiarizado con la forma en que funcionan las CDN, solo tiene que completar unos pasos para habilitar el Office 365 CDN para el inquilino. En este tema se describe cómo. Sigue leyendo para obtener información sobre cómo empezar a hospedar los activos estáticos.
 
@@ -920,7 +920,7 @@ A continuación, se muestra información general sobre los vínculos que la cara
 
 El siguiente diagrama ilustra el flujo de trabajo cuando SharePoint una solicitud de una página que contiene activos de un origen público.
 
-![Diagrama de flujo de trabajo: recuperar Office 365 CDN activos de un origen público](../media/O365-CDN/o365-cdn-public-steps-transparent.png "Flujo de trabajo: recuperación de activos de RED CDN de Office 365 desde un origen público")
+![Diagrama de flujo de trabajo: recuperación Office 365 CDN activos desde un origen público.](../media/O365-CDN/o365-cdn-public-steps-transparent.png "Flujo de trabajo: recuperación Office 365 CDN activos desde un origen público")
 
 > [!TIP]
 > Si desea deshabilitar la reescritura automática para direcciones URL específicas de una página, puede desangre la página y agregar el parámetro de cadena de consulta **? NoAutoReWrites=true** al final de cada vínculo que desea deshabilitar.
@@ -956,7 +956,7 @@ El acceso a activos en orígenes privados está protegido por tokens generados d
 
 El diagrama siguiente ilustra el flujo de trabajo cuando SharePoint una solicitud de una página que contiene activos de un origen privado.
 
-![Diagrama de flujo de trabajo: recuperación Office 365 CDN activos desde un origen privado](../media/O365-CDN/o365-cdn-private-steps-transparent.png "Flujo de trabajo: recuperación de activos de CDN de Office 365 desde un origen privado")
+![Diagrama de flujo de trabajo: recuperar Office 365 CDN activos de un origen privado.](../media/O365-CDN/o365-cdn-private-steps-transparent.png "Flujo de trabajo: recuperación Office 365 CDN activos desde un origen privado")
 
 #### <a name="token-based-authorization-in-private-origins"></a>Autorización basada en tokens en orígenes privados
 
@@ -1002,17 +1002,17 @@ Para obtener más información sobre el uso de las herramientas de desarrollador
 Para ver un vídeo breve hospedado en el canal de [YouTube](https://aka.ms/sppnp-videos) de patrones y prácticas para desarrolladores de SharePoint que muestra cómo comprobar que su CDN funciona, consulte [Verifying your CDN usage y ensuring optimal network connectivity](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5).
 
 ### <a name="why-are-assets-from-a-new-origin-unavailable"></a>¿Por qué los activos de un nuevo origen no están disponibles?
-Los activos de nuevos orígenes no estarán disponibles inmediatamente para su uso, ya que el registro tarda en propagarse a través de la red CDN y para que los activos se carguen desde el origen al almacenamiento de la red CDN. El tiempo necesario para que los activos estén disponibles en la red CDN depende del número de activos y el tamaño de los archivos.
+Los activos de nuevos orígenes no estarán disponibles inmediatamente para su uso, ya que el registro tarda en propagarse a través del CDN y para que los activos se carguen desde el origen a CDN almacenamiento. El tiempo necesario para que los activos estén disponibles en el CDN depende del número de activos y el tamaño de los archivos.
 
-### <a name="my-client-side-web-part-or-sharepoint-framework-solution-isnt-working"></a>Mi elemento web del lado cliente o la solución de SharePoint Framework no funciona
+### <a name="my-client-side-web-part-or-sharepoint-framework-solution-isnt-working"></a>Mi elemento web del lado cliente o SharePoint Framework solución no funciona
 
-Al habilitar la red CDN de Office 365 para orígenes públicos, el servicio de red CDN crea automáticamente estos orígenes predeterminados:
+Cuando se habilita el Office 365 CDN para orígenes públicos, el servicio CDN crea automáticamente estos orígenes predeterminados:
 
 + */MASTERPAGE
 + */BIBLIOTECA DE ESTILOS
 + */CLIENTSIDEASSETS
 
-Si falta el origen */clientsideassets, las soluciones de SharePoint Framework producirán un error y no se generarán mensajes de advertencia o error. Este origen puede faltar porque la red CDN se ha habilitado con el parámetro _-NoDefaultOrigins_ establecido en **$true**, o porque el origen se eliminó manualmente.
+Si falta el origen */clientsideassets, SharePoint Framework se producirá un error en las soluciones y no se generarán mensajes de advertencia o error. Este origen puede faltar porque el CDN se ha habilitado con el parámetro _-NoDefaultOrigins_ establecido en **$true**, o porque el origen se eliminó manualmente.
 
 Puede comprobar qué orígenes están presentes con el siguiente comando de PowerShell:
 
@@ -1020,7 +1020,7 @@ Puede comprobar qué orígenes están presentes con el siguiente comando de Powe
 Get-SPOTenantCdnOrigins -CdnType Public
 ```
 
-O puede comprobar con la CLI de Office 365:
+O puede comprobar con la CLI Office 365:
 
 ```cli
 spo cdn origin list
@@ -1032,23 +1032,23 @@ Para agregar el origen en PowerShell:
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
 ```
 
-Para agregar el origen en la CLI de Office 365:
+Para agregar el origen en la CLI Office 365:
 
 ```cli
 spo cdn origin add --origin */CLIENTSIDEASSETS
 ```
 
-### <a name="what-powershell-modules-and-cli-shells-do-i-need-to-work-with-the-office-365-cdn"></a>¿Qué módulos de PowerShell y shells de CLI necesito para trabajar con la red CDN de Office 365?
+### <a name="what-powershell-modules-and-cli-shells-do-i-need-to-work-with-the-office-365-cdn"></a>¿Qué módulos de PowerShell y shells de CLI necesito para trabajar con el Office 365 CDN?
 
-Puede elegir trabajar con la red CDN de Office 365 mediante el módulo PowerShell del Shell de administración de **SharePoint Online** o la CLI de **Office 365.**
+Puede elegir trabajar con el Office 365 CDN mediante el módulo de **PowerShell** SharePoint Shell de administración en línea o la **CLI Office 365 .**
 
 + [Introducción al Shell de administración de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 + [Instalar Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Redes de entrega de contenido](./content-delivery-networks.md)
 
 [Planeamiento de red y ajuste del rendimiento para Office 365](./network-planning-and-performance.md)
 
-[Serie de rendimiento de SharePoint: serie de vídeo cdn de Office 365](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)
+[SharePoint Serie de rendimiento: Office 365 CDN de vídeo](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

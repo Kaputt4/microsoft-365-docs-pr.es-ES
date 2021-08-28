@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 20918b3412a5534675c873fdfd9d2fb94a73ab75
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: f38bb019d3f04b4e0be19cf93062ac75005495cb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509946"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570682"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -49,7 +49,7 @@ Cuando Antivirus de Microsoft Defender encuentra un archivo sospechoso pero no d
 
 Antivirus de Microsoft Defender usa varias tecnologías de detección y prevención para ofrecer una protección inteligente, en tiempo real y precisa.
 
-![Lista de motores AV de Microsoft Defender](images/microsoft-defender-atp-next-generation-protection-engines.png)
+![Lista de motores AV de Microsoft Defender.](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
 > Para más información, consulte este blog: [Conozca las tecnologías avanzadas en el núcleo de la protección de última generación de Microsoft Defender para punto de conexión](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
@@ -82,7 +82,7 @@ Antivirus de Microsoft Defender usa varias tecnologías de detección y prevenci
    - **Extensión de tiempo para el análisis de archivos de la nube**: 50
    - **Avisar a los usuarios antes del envío de muestras**: Enviar todos los datos sin avisar
 
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Bloque de configuración de Intune a primera vista":::
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Bloque de configuración de Intune a primera vista.":::
 
 4. Guarde la configuración.
 
@@ -107,7 +107,7 @@ Antivirus de Microsoft Defender usa varias tecnologías de detección y prevenci
    - **Nivel de protección proporcionada en la nube**: Alto
    - **Tiempo de espera extendido de la nube de Defender**: 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Configuración de bloqueo a primera vista en Endpoint Manager":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Configuración de bloqueo a primera vista en Endpoint Manager.":::
 
 4. Aplique el perfil del Antivirus de Microsoft Defender a un grupo, como **Todos los usuarios**, **Todos los dispositivos** o **Todos los usuarios y dispositivos**.
 

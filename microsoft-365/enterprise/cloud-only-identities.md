@@ -26,20 +26,20 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo crear usuarios y grupos cuando la suscripción Microsoft 365 está usando la identidad de solo nube.
-ms.openlocfilehash: fa3bef4b25327b675f18b2ea0bb9dfea15b2a81a
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 9b58b831f2a338e5fb79726b8de66c11bba96d0e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356101"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570766"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 identidad de solo nube
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Con la identidad de solo nube, todos los usuarios, grupos y contactos se almacenan en el inquilino de Azure Active Directory (Azure AD) de su Microsoft 365 suscripción. Estos son los componentes básicos de la identidad de solo nube.
  
-![Los componentes básicos de la identidad de solo nube](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![Los componentes básicos de la identidad de solo nube.](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 Los usuarios y sus cuentas de usuario en las organizaciones se pueden clasificar de varias maneras. Por ejemplo, algunos son empleados y tienen un estado permanente. Algunos son proveedores, contratistas o socios que tienen un estado temporal. Algunos son usuarios externos que no tienen cuentas de usuario, pero que aún deben tener acceso a servicios y recursos específicos para admitir la interacción y la colaboración. Por ejemplo:
 

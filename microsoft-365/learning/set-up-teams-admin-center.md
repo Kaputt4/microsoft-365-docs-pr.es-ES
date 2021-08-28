@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Obtenga información sobre cómo configurar Aprendizaje Microsoft Viva (versión preliminar) en el centro Teams administración.
-ms.openlocfilehash: 0db999306cc9cf7153d649e7ca49aca709425d6f
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: f8e5ac5695fd5d68da22883974ccafc8c6bf0f85
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483396"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570718"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurar Aprendizaje Microsoft Viva (versión preliminar) en el Centro Teams administración
 
@@ -58,11 +58,11 @@ Los usuarios que se han habilitado para las pruebas de vista previa pública (ha
 
 1. Los usuarios deben seleccionar su imagen de perfil > **Acerca de** la vista  >  **previa pública**.
 
-    ![Navegación superior en la Teams que muestra el perfil del usuario](../media/learning/learning-app-select-profile-teams.png)
+    ![Navegación superior en la Teams que muestra el perfil del usuario.](../media/learning/learning-app-select-profile-teams.png)
 
 2. Los usuarios deben aceptar los términos y condiciones de Public Preview.
 
-    ![Cambiar a la compilación de vista previa pública](../media/learning/learning-app-switch-to-public-preview.png)
+    ![Cambie a la compilación de vista previa pública.](../media/learning/learning-app-switch-to-public-preview.png)
 
 3. Los usuarios ahora pueden encontrar Viva Learning (versión preliminar) en la Teams de aplicaciones y empezar a usarlo.
 
@@ -101,11 +101,11 @@ The Teams admin installs Viva Learning (Preview) and applies permission policies
 
     1. Users must select their profile image > **About** > **Public Preview**.
    
-        ![Upper navigation in the Teams application showing user's profile](../media/learning/learning-app-select-profile-teams.png)
+        ![Upper navigation in the Teams application showing user's profile.](../media/learning/learning-app-select-profile-teams.png)
     
     2. Users must accept the **Public preview** terms and conditions.
 
-        ![Switch to public preview build](../media/learning/learning-app-switch-to-public-preview.png)
+        ![Switch to public preview build.](../media/learning/learning-app-switch-to-public-preview.png)
  
 3. For organizations that have restrictive policies and need to enable Viva Learning (Preview), follow the process in the next section.
 

@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrar Microsoft Teams clases con Canvas
-ms.openlocfilehash: 09c0033f6deca5d941dee5003391b1a0b171a0ee
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 44ba24e5c8bd7107f9cba199ce290c10b31e0806
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387025"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575077"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Usar Microsoft Teams clases con Canvas
 
@@ -44,7 +44,7 @@ Antes de administrar la integración de Microsoft Teams en Instructure Canvas, e
 
 4. Habilite Microsoft Teams sincronización activando la alternancia.
    
-   ![Canvas Teams Sync Updated png](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
+   ![Canvas Teams Sync Updated png.](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
 
 5. Escriba el nombre del inquilino de Microsoft, el atributo de inicio de sesión, el sufijo de dominio y el atributo de búsqueda de AAD.
 
@@ -57,7 +57,7 @@ Antes de administrar la integración de Microsoft Teams en Instructure Canvas, e
 
 7. Para aprobar el acceso a la aplicación azure de **Microsoft-Teams-Sync-for-Canvas** de Canvas de Canvas, seleccione el vínculo Conceder acceso **al** espacio empresarial. Se le redirigirá al punto de conexión de consentimiento de administrador de la plataforma de identidad de Microsoft.
 
-   ![permissions](media/permissions.png)
+   ![permisos.](media/permissions.png)
 
 8. Seleccione **Aceptar**.
 
@@ -73,11 +73,11 @@ Como administrador de Canvas, tendrás que agregar la aplicación LTI de Microso
 
 2. Selecciona **+ Aplicación** para agregar las Teams LTI.
 
-   ![external-apps](media/external-apps.png)
+   ![external-apps.](media/external-apps.png)
 
 3. Seleccione **Por identificador de cliente** para el tipo de configuración.
 
-   ![agregar aplicación](media/add-app.png)
+   ![agregar aplicación.](media/add-app.png)
 
 4. Escriba el id. de cliente proporcionado y, a continuación, **seleccione Enviar**.
 

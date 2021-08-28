@@ -22,12 +22,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar una directiva de administración de información para controlar cuánto tiempo se conserva la información y realizar un seguimiento de quién usa la información.
-ms.openlocfilehash: 94a97aed83f2b0b7b68ba1fb1bb1533718a00b44c1e02df565f8762dd941a013
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb5d493cfc8f442c5210b99ec394ebf72f30086e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802390"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574357"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Crear y aplicar directivas de administración de información
 
@@ -52,7 +52,7 @@ Para asegurarse de que se aplica una directiva de información a todos los docum
 
 2. En la página Site Configuración, en **Site Collection Administration** Content Type Policy \> **Templates**.
 
-   ![Vínculo Plantilla de directiva de tipo de contenido en la Configuración sitio](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Vínculo Plantilla de directiva de tipo de contenido en la Configuración sitio.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. En la página Directivas \> **Crear**.
 
@@ -75,7 +75,7 @@ Agregar una directiva de administración de información a un tipo de contenido 
 
 2. En la página Sitio Configuración, en Tipos de contenido **del sitio galerías de** diseñador \> **web**.
 
-   ![Vínculo Tipos de contenido del sitio en la Configuración sitio](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+   ![Vínculo Tipos de contenido del sitio en la Configuración sitio.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
 
 3. En la página De tipo de Configuración sitio, seleccione el tipo de contenido al que desea agregar una directiva.
 
@@ -85,7 +85,7 @@ Agregar una directiva de administración de información a un tipo de contenido 
 
 6. En las siguientes secciones, seleccione las características de directiva individuales que desea agregar a la directiva de administración de información.
 
-   ![Tipos de directivas de contenido](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
+   ![Tipos de directivas de contenido.](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
 
 7. Para especificar un período de retención para documentos y elementos que están sujetos a esta directiva, elija **Habilitar** retención y, a continuación, especifique el período de retención y las acciones que desea que se produzcan cuando expiren los elementos.
 
@@ -191,7 +191,7 @@ Necesita al menos el permiso Administrar listas para cambiar la configuración d
 
 3. En **Permisos y configuración de directiva de** administración de \> **información.**
 
-   ![Vínculo Directivas de administración de información en la página de configuración de la biblioteca de documentos](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+   ![Vínculo Directivas de administración de información en la página de configuración de la biblioteca de documentos.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
 4. En la página Directiva de administración Configuración información, asegúrese de que el origen de retención de la lista o biblioteca esté establecido en Biblioteca y carpetas.
 
@@ -238,7 +238,7 @@ Si ya se han creado directivas de administración de información para el sitio 
 
 3. En **Permisos y configuración de directiva de** administración de \> **información.**
 
-   ![Vínculo Directivas de administración de información en la página de configuración de la biblioteca de documentos](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+   ![Vínculo Directivas de administración de información en la página de configuración de la biblioteca de documentos.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
 4. Compruebe que el origen de directiva está establecido en **Tipos** de contenido y, en **Directivas** de tipo de contenido, seleccione el tipo de contenido al que desea aplicar la directiva.
 
@@ -273,7 +273,7 @@ Puede definir una directiva de administración de información y, a continuació
 
 2. En la página Site Configuración, en **Site Collection Administration** Content Type Policy \> **Templates**.
 
-   ![Vínculo Plantilla de directiva de tipo de contenido en la Configuración sitio](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Vínculo Plantilla de directiva de tipo de contenido en la Configuración sitio.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. Elija la directiva que desea exportar y \> desplácese hasta la parte \> **inferior Exportar**.
 

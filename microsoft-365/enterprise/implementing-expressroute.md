@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Obtenga información sobre cómo implementar ExpressRoute para Office 365, que proporciona una ruta de enrutamiento alternativa a muchos servicios Office 365 Internet.
-ms.openlocfilehash: f0f429d2fce1c83109e19191f1f3c60190046176c1ce03a31c159aa3591e21b4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 66ff6157c8f2fb28b1a57af42295a6ba0ed93dad
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801176"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575341"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 ExpressRoute para Office 365 proporciona una ruta de enrutamiento alternativa a muchos servicios Office 365 Internet. La arquitectura de ExpressRoute para Office 365 se basa en la publicidad de prefijos IP públicos de servicios de Office 365 que ya son accesibles a través de Internet en los circuitos de ExpressRoute aprovisionados para la redistribución posterior de esos prefijos IP en la red. Con ExpressRoute, habilita varias rutas de enrutamiento diferentes, a través de Internet y a través de ExpressRoute, para muchos Office 365 servicios. Este estado de enrutamiento en la red puede representar un cambio significativo en la forma en que se diseñó la topología de red interna.
   
@@ -159,7 +159,7 @@ Una vez que comprenda los servicios y sus flujos de tráfico de red asociados, p
 
 El diagrama siguiente muestra cada ubicación en la que las personas usarán Office 365 los anuncios de enrutamiento entrantes y salientes para Office 365.
   
-![Reunión geográfica regional de ExpressRoute](../media/d866b36b-49bf-416b-af1b-d054e24989d2.png)
+![ExpressRoute regional geographic meet-me.](../media/d866b36b-49bf-416b-af1b-d054e24989d2.png)
   
 Para el tráfico saliente, el acceso de Office 365 de tres maneras:
   
@@ -169,7 +169,7 @@ Para el tráfico saliente, el acceso de Office 365 de tres maneras:
 
 3. A través de Internet en Bangladesh donde hay menos personas y ningún circuito de ExpressRoute aprovisionado.
 
-![Conexiones salientes para diagrama regional](../media/8319943d-08f0-4781-9ef3-d23de2ad4671.png)
+![Conexiones salientes para diagrama regional.](../media/8319943d-08f0-4781-9ef3-d23de2ad4671.png)
   
 Del mismo modo, el tráfico de red entrante de Office 365 devuelve de tres maneras:
   
@@ -179,7 +179,7 @@ Del mismo modo, el tráfico de red entrante de Office 365 devuelve de tres maner
 
 3. A través de Internet en Bangladesh donde hay menos personas y ningún circuito de ExpressRoute aprovisionado.
 
-![Conexiones entrantes para diagrama regional](../media/d6d6160d-bf28-4de3-a787-186c7432b306.png)
+![Conexiones entrantes para diagrama regional.](../media/d6d6160d-bf28-4de3-a787-186c7432b306.png)
   
 ### <a name="determine-the-appropriate-meet-me-location"></a>Determinar la ubicación de reunión adecuada
 
@@ -195,7 +195,7 @@ A menudo, hay varias ubicaciones de reunión que podrían seleccionarse dentro d
 |----------|-----------|----------|-----------|
 |Los Ángeles  <br/> |10,000  <br/> |~15 ms  <br/> |~10ms (a través de Silicon Valley)  <br/> |
 |Washington DC  <br/> |15 000  <br/> |~20ms  <br/> |~10ms (a través de Nueva York)  <br/> |
-|Dallas  <br/> |5.000  <br/> |~15 ms  <br/> |~40ms (a través de Nueva York)  <br/> |
+|Dallas  <br/> |5,000  <br/> |~15 ms  <br/> |~40ms (a través de Nueva York)  <br/> |
 
 Una vez desarrollada la arquitectura de red global que muestra la región de Office 365, las ubicaciones de reunión del proveedor de servicios de red de ExpressRoute y la cantidad de personas por ubicación, se puede usar para identificar si se puede realizar alguna optimización. También puede mostrar conexiones de red de horquilla global en las que el tráfico se enruta a una ubicación lejana para obtener la ubicación de reunión. Si se detecta una horquilla en la red global, debe corregirse antes de continuar. Busque otra ubicación de reunión o use puntos de salida de interrupción selectiva de Internet para evitar la horquilla.
   
@@ -205,13 +205,13 @@ El primer diagrama muestra un ejemplo de un cliente con dos ubicaciones físicas
 
 2. Más cerca de un centro de datos de Microsoft donde Office 365 está hospedado.
 
-![ExpressRoute US geographic meet-me](../media/5ec38274-b317-4ec1-91c8-90c2a7fd32ca.png)
+![ExpressRoute US geographic meet-me.](../media/5ec38274-b317-4ec1-91c8-90c2a7fd32ca.png)
   
 Expandiendo este concepto un poco más lejos, el segundo diagrama muestra un ejemplo de cliente multinacionales frente a información y toma de decisiones similares. Este cliente tiene una pequeña oficina en Bangladesh con un pequeño equipo de diez personas centrado en aumentar su superficie en la región. Hay una ubicación de reunión en Chennai y un centro de datos de Microsoft con Office 365 hospedado en Chennai para que una ubicación de reunión tenga sentido; sin embargo, para diez personas, el gasto del circuito adicional es gravoso. Al mirar la red, deberá determinar si la latencia que implica enviar el tráfico de red a través de la red es más eficaz que gastar el capital para adquirir otro circuito de ExpressRoute.
   
 Como alternativa, las diez personas de Bangladesh pueden experimentar un mejor rendimiento con su tráfico de red enviado a través de Internet a la red de Microsoft que enrutar en su red interna, como mostramos en los diagramas introductorios y reproducimos a continuación.
   
-![Conexiones salientes para diagrama regional](../media/8319943d-08f0-4781-9ef3-d23de2ad4671.png)
+![Conexiones salientes para diagrama regional.](../media/8319943d-08f0-4781-9ef3-d23de2ad4671.png)
   
 ## <a name="create-your-expressroute-for-office-365-implementation-plan"></a>Crear el plan de implementación de ExpressRoute Office 365 de implementación
 <a name="implementation"> </a>
@@ -329,7 +329,7 @@ Para empezar, examinaremos algunas situaciones diferentes asociadas con el sigui
 
 2. Los servidores del centro de datos de Nueva Jersey pueden ver las rutas de Internet y ExpressRoute.
 
-![Introducción a la conectividad de ExpressRoute](../media/8f074af6-ef38-44e8-bc5a-8b4d981fbb20.png)
+![Introducción a la conectividad de ExpressRoute.](../media/8f074af6-ef38-44e8-bc5a-8b4d981fbb20.png)
   
 También tenemos sugerencias sobre cómo corregirlas.
   
@@ -345,7 +345,7 @@ En el siguiente diagrama se muestra la ruta de acceso de red asimétrica que se 
 
   - El resultado es una ruta asimétrica para que ese flujo Office 365, lo que da como resultado una conexión rota.
 
-![Problema de enrutamiento asimétrico de ExpressRoute 1](../media/9c210c2a-e0ea-4180-8ede-1bf41746ce7a.png)
+![Problema de enrutamiento asimétrico de ExpressRoute 1.](../media/9c210c2a-e0ea-4180-8ede-1bf41746ce7a.png)
   
 ##### <a name="solution-1a-source-nat"></a>Solución 1a: NAT de origen
   
@@ -355,7 +355,7 @@ Simplemente agregar un NAT de origen a la solicitud entrante resuelve esta red m
 
 2. La respuesta del servidor se enruta de nuevo hacia la DIRECCIÓN IP asociada con nat de origen en lugar de la dirección IP original, lo que da como resultado que la respuesta vuelva a lo largo de la misma ruta de red.
 
-![Solución de enrutamiento Asymetric de ExpressRoute 1](../media/0e87a155-f8de-48ed-92ac-27367b727a82.png)
+![Solución de enrutamiento Asymetric de ExpressRoute 1.](../media/0e87a155-f8de-48ed-92ac-27367b727a82.png)
   
 ##### <a name="solution-1b-route-scoping"></a>Solución 1b: Ámbito de ruta
   
@@ -365,7 +365,7 @@ Como alternativa, puede optar por no permitir la publicidad de los prefijos BGP 
 
 2. La respuesta del servidor se enruta hacia la DIRECCIÓN IP asociada a la dirección IP original a través de la única ruta disponible, lo que da como resultado que la respuesta vuelva a lo largo de la misma ruta de red.
 
-![Solución de enrutamiento Asymetric de ExpressRoute 2](../media/9cb4b2bf-7aa6-487a-bc02-e02af8a979f6.png)
+![Solución de enrutamiento Asymetric de ExpressRoute 2.](../media/9cb4b2bf-7aa6-487a-bc02-e02af8a979f6.png)
   
 #### <a name="problem-2-cloud-to-on-premises-connection-over-expressroute"></a>Problema 2: Conexión de nube a local a través de ExpressRoute
   
@@ -379,7 +379,7 @@ En el siguiente diagrama se muestra la ruta de acceso de red asimétrica que se 
 
   - El resultado es una conexión asimétrica a Office 365.
 
-![Problema de enrutamiento asimétrico de ExpressRoute 2](../media/f6fd155b-bbb7-472a-846e-039a99f09913.png)
+![Problema de enrutamiento asimétrico de ExpressRoute 2.](../media/f6fd155b-bbb7-472a-846e-039a99f09913.png)
   
 ##### <a name="solution-2-source-nat"></a>Solución 2: NAT de origen
   
@@ -389,7 +389,7 @@ Simplemente agregar un NAT de origen a la solicitud entrante resuelve esta red m
 
 2. La respuesta del servidor se enruta de nuevo hacia la DIRECCIÓN IP asociada con nat de origen en lugar de la dirección IP original, lo que da como resultado que la respuesta vuelva a lo largo de la misma ruta de red.
 
-![Solución de enrutamiento Asymetric de ExpressRoute 3](../media/a5d2b90d-a3ec-4047-afbf-6e6e99f376a7.png)
+![Solución de enrutamiento Asymetric de ExpressRoute 3.](../media/a5d2b90d-a3ec-4047-afbf-6e6e99f376a7.png)
   
 ### <a name="paper-verify-that-the-network-design-has-path-symmetry"></a>Papel para comprobar que el diseño de red tiene simetría de ruta de acceso
 
@@ -402,7 +402,7 @@ Ayuda a hacer este recorrido por las rutas con una segunda persona. Explíqueles
 ### <a name="design-client-connectivity-configuration"></a>Configuración de conectividad de cliente de diseño
 <a name="asymmetric"> </a>
 
-![Uso de archivos PAC con ExpressRoute](../media/7cfa6482-dbae-416a-ae6f-a45e5f4de23b.png)
+![Uso de archivos PAC con ExpressRoute.](../media/7cfa6482-dbae-416a-ae6f-a45e5f4de23b.png)
   
 Si usa un servidor proxy para el tráfico enlazado a Internet, debe ajustar los archivos de configuración de cliente o PAC para asegurarse de que los equipos cliente de la red estén configurados correctamente para enviar el tráfico de ExpressRoute que desea Office 365 sin transitar el servidor proxy y el tráfico restante, incluido algún tráfico de Office 365, se envía al proxy correspondiente. Lea nuestra guía sobre [cómo administrar Office 365 puntos de conexión como,](./managing-office-365-endpoints.md) por ejemplo, los archivos PAC.
   
@@ -599,6 +599,6 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/impleme
   
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
   
-[Intervalos de direcciones IP y direcciones URL de Office 365.](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Direcciones URL e intervalos de direcciones IP de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)

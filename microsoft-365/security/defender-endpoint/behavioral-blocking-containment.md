@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: acddaecf5a845c442a7c3acfe967057abee9502fb9f1ef0179dd138418c564db
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7d9dad6b2f2f1b37525faf0a4a90d143650c49d1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811473"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570370"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
@@ -40,7 +40,7 @@ El panorama de amenazas actual está saturado por [malware](/windows/security/th
 
 Las capacidades de bloqueo y contención del comportamiento pueden ayudar a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. Las características y los componentes de protección de última generación, EDR y Defender para endpoint funcionan juntos en las capacidades de contención y bloqueo de comportamiento.
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Bloqueo y contención de comportamientos":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Bloqueo y contención de comportamiento.":::
 
 Las capacidades de bloqueo de comportamiento y contención funcionan con varios componentes y características de Defender para endpoint para detener los ataques inmediatamente e impedir que los ataques progresen.
 
@@ -54,7 +54,7 @@ Con estas capacidades, se pueden evitar o bloquear más amenazas, incluso si com
 
 En la siguiente imagen se muestra un ejemplo de una alerta que se desencadenó mediante funciones de bloqueo de comportamiento y contención:
 
-:::image type="content" alt-text="Ejemplo de alerta mediante bloqueo de comportamiento y contención" source="images/blocked-behav-alert.png" lightbox="images/blocked-behav-alert.png":::
+:::image type="content" alt-text="Ejemplo de alerta a través del bloqueo y la contención del comportamiento." source="images/blocked-behav-alert.png" lightbox="images/blocked-behav-alert.png":::
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Componentes del bloqueo y la contención del comportamiento
 
@@ -97,7 +97,7 @@ Los modelos de aprendizaje de dispositivos basados en comportamiento en Defender
 
 Mientras se detectó y detuvo el ataque, las alertas, como una "alerta de acceso inicial", se desencadenaron y aparecieron en [el portal Microsoft 365 Defender .](microsoft-defender-security-center.md)
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Alerta de acceso inicial en el Microsoft 365 Defender de acceso":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Alerta de acceso inicial en el Microsoft 365 Defender portal.":::
 
 En este ejemplo se muestra cómo los modelos de aprendizaje de dispositivos basados en comportamientos en la nube agregan nuevas capas de protección contra ataques, incluso después de que se han empezado a ejecutar.
 
@@ -105,13 +105,13 @@ En este ejemplo se muestra cómo los modelos de aprendizaje de dispositivos basa
 
 Tal como se describe en la entrada de blog reciente, Bloqueo y contención del comportamiento: Transformar la óptica en protección , en enero de 2020, Defender for Endpoint detectó una actividad de escalamiento de [privilegios](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection)en un dispositivo de una organización. Se desencadenó una alerta denominada "Posible escalada de privilegios mediante retransmisión NTLM".
 
-:::image type="content" alt-text="Alerta NTLM para malware juicy potato" source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
+:::image type="content" alt-text="Alerta NTLM para malware Despúes juicy." source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
 
 La amenaza resultó ser malware; era una nueva variante no vista antes de una herramienta de piratería notoria llamada Juicy Potato, que los atacantes usan para obtener la escalación de privilegios en un dispositivo.
 
 Minutos después de que se desencadenó la alerta, se analizó el archivo y se confirmó que era malintencionado. Su proceso se detuvo y bloqueó, como se muestra en la siguiente imagen:
 
-:::image type="content" alt-text="Artefacto bloqueado" source="images/Artifactblockedjuicypotato.png" lightbox="images/Artifactblockedjuicypotato.png":::
+:::image type="content" alt-text="Artefacto bloqueado." source="images/Artifactblockedjuicypotato.png" lightbox="images/Artifactblockedjuicypotato.png":::
 
 Unos minutos después de bloquear el artefacto, se bloquearon varias instancias del mismo archivo en el mismo dispositivo, lo que impidió que se implementara más atacantes u otro malware en el dispositivo.
 

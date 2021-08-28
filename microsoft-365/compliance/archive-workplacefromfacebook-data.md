@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Workplace desde Facebook, que se archiva en el sitio Merge1 de Veritas, en Microsoft 365. La configuración de un conector requiere que trabaje con Veritas Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: c62424aaa87927828fc87a8e4bdf22f2e824a5e7659acb601668a67756166f28
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 97a2664a92b4383d08becb610640e7e8553e90da
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842565"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570910"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Configurar un conector para archivar datos de Workplace desde Facebook
 
@@ -29,7 +29,7 @@ Después de almacenar los datos de Workplace en buzones de usuario, puede aplica
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de Workplace en Microsoft 365.
 
-![Flujo de trabajo de archivado para Workplace desde datos de Facebook](../media/WorkplaceConnectorWorkflow.png)
+![Flujo de trabajo de archivado para Workplace desde datos de Facebook.](../media/WorkplaceConnectorWorkflow.png)
 
 1. Su organización trabaja con Workplace desde Facebook para configurar y configurar un sitio workplace.
 

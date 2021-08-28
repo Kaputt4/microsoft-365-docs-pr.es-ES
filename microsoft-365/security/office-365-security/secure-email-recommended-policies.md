@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 755dbd892d5e772a2bfda3b8e6e959027b74815a2e69ab27659f7f5e4a29bf26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de1a66fcf2b057e2f1254d64286b521928d2c560
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805253"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570394"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -43,7 +43,7 @@ Estas recomendaciones requieren que los usuarios usen clientes de correo electr�
 
 Para proteger el correo electrónico, en el siguiente diagrama se muestran las directivas que se actualizarán a partir de las directivas comunes de acceso a dispositivos y identidades.
 
-[![Resumen de las actualizaciones de directivas para proteger el acceso a Teams y sus servicios dependientes](../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
+[![Resumen de las actualizaciones de directivas para proteger el acceso a Teams y sus servicios dependientes.](../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
 Tenga en cuenta la adición de una nueva directiva para Exchange Online bloquear los clientes de ActiveSync. Esto fuerza el uso de Outlook móvil.
 
@@ -112,7 +112,7 @@ Para obtener más información, vea [Set up new Cifrado de mensajes de Office 36
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configurar directivas de acceso condicional para:
 

@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Lea las opciones de gobierno del ciclo de vida para herramientas de colaboración en Microsoft 365
-ms.openlocfilehash: d49fb6cfe9f181a7e79c9984aa54deb0cf2f3a8e4008512132c980ce1623ea59
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5421f12109fb40e4e5cc6f68568a3b5f1873c7ce
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827721"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574465"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planear la organización y el gobierno del ciclo de vida Microsoft 365 grupos y Microsoft Teams
 
@@ -33,7 +33,7 @@ En la siguiente sección se describen las capacidades, se recomiendan los proced
 
 Los usuarios finales pueden crear grupos desde varios puntos finales, incluidos Outlook, SharePoint, Teams y otros entornos.
 
-![image desc](../media/04.png)
+![image desc.](../media/04.png)
 
 Recomendamos encarecidamente el autoservicio para habilitar a los propietarios de grupos y ayudar a los usuarios a realizar su trabajo con más facilidad. Limitar la creación de grupos y equipos puede ralentizar la productividad de los usuarios, ya que muchos Microsoft 365 requieren que se cree un grupo para que el servicio funcione.
 

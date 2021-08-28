@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido encontrado en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, grupos de Microsoft 365, conversaciones de Microsoft Teams y Skype Empresarial. La exhibición de documentos electrónicos Advanced eDiscovery proporciona muchas características adicionales que le ayudarán a administrar las investigaciones.
-ms.openlocfilehash: 50f2048ef3c8c2d0a333eeb93a8eeb79b63db31c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: d44c0b30bc6256f98063f33d838d2cabb6ceebf1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394557"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570574"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Soluciones de exhibición de documentos electrónicos en Microsoft 365
 
@@ -35,7 +35,7 @@ La exhibición de documentos electrónicos, o eDiscovery, es el proceso de ident
 
 Microsoft 365 proporciona tres soluciones de exhibición de documentos electrónicos: búsqueda de contenido, eDiscovery principal y Advanced eDiscovery.
 
-![Funcionalidades clave de Microsoft 365 herramientas de exhibición de documentos electrónicos](..\media\m365-ediscovery-solution-graphic.png)
+![Funciones clave de Microsoft 365 herramientas de exhibición de documentos electrónicos.](..\media\m365-ediscovery-solution-graphic.png)
 
 - **Búsqueda de contenido**. Use la herramienta de búsqueda de contenido para buscar contenido en Microsoft 365 de datos y, a continuación, exporte los resultados de la búsqueda al equipo local.
 
@@ -49,29 +49,29 @@ En la tabla siguiente se comparan las funciones clave disponibles en Búsqueda d
 
 |Funcionalidad|Búsqueda de contenido|Core eDiscovery|eDiscovery avanzado|
 |:------|:-------------|:-------------|:-------------|
-|Buscar contenido|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|Consultas de palabras clave y condiciones de búsqueda|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|Estadísticas de búsqueda|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|Exportar resultados de búsqueda|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|Permisos basados en roles|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|Administración de casos||![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|Colocar ubicaciones de contenido en retención legal||![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|La administración de los administradores|||![Admitido](../media/check-mark.png)|
-|Notificaciones de retención legal|||![Compatible](../media/check-mark.png)|
-|Indización avanzada|||![Admitido](../media/check-mark.png)|
-|Corrección de errores|||![Compatible](../media/check-mark.png)|
-|Conjuntos de revisión|||![Admitido](../media/check-mark.png)|
-|Compatibilidad con datos adjuntos y versiones SharePoint nube|||![Compatible](../media/check-mark.png)|
-|Reconocimiento óptico de caracteres|||![Admitido](../media/check-mark.png)|
-|Agrupación de conversaciones|||![Compatible](../media/check-mark.png)|
-|Estadística e informes de colecciones|||![Admitido](../media/check-mark.png)|
-|Revisar el filtrado de conjunto de revisión|||![Compatible](../media/check-mark.png)|
-|Etiquetado|||![Compatible](../media/check-mark.png)|
-|Análisis|||![Admitido](../media/check-mark.png)|
-|Modelos de codificación predictiva|||![Compatible](../media/check-mark.png)|
-|Metadatos de documento calculados|||![Admitido](../media/check-mark.png)|
-|Transparencia de los trabajos de larga ejecución|||![Compatible](../media/check-mark.png)|
-|Exportar a una ubicación de Azure Storage cliente|||![Admitido](../media/check-mark.png)|
+|Buscar contenido|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Consultas de palabras clave y condiciones de búsqueda|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Estadísticas de búsqueda|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Exportar resultados de búsqueda|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Permisos basados en roles|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Administración de casos||![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Colocar ubicaciones de contenido en retención legal||![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|La administración de los administradores|||![Se admite.](../media/check-mark.png)|
+|Notificaciones de retención legal|||![Se admite.](../media/check-mark.png)|
+|Indización avanzada|||![Se admite.](../media/check-mark.png)|
+|Corrección de errores|||![Se admite.](../media/check-mark.png)|
+|Conjuntos de revisión|||![Se admite.](../media/check-mark.png)|
+|Compatibilidad con datos adjuntos y versiones SharePoint nube|||![Se admite.](../media/check-mark.png)|
+|Reconocimiento óptico de caracteres|||![Se admite.](../media/check-mark.png)|
+|Agrupación de conversaciones|||![Se admite.](../media/check-mark.png)|
+|Estadística e informes de colecciones|||![Se admite.](../media/check-mark.png)|
+|Revisar el filtrado de conjunto de revisión|||![Se admite.](../media/check-mark.png)|
+|Etiquetado|||![Se admite.](../media/check-mark.png)|
+|Análisis|||![Se admite.](../media/check-mark.png)|
+|Modelos de codificación predictiva|||![Se admite.](../media/check-mark.png)|
+|Metadatos de documento calculados|||![Se admite.](../media/check-mark.png)|
+|Transparencia de los trabajos de larga ejecución|||![Se admite.](../media/check-mark.png)|
+|Exportar a una ubicación de Azure Storage cliente|||![Se admite.](../media/check-mark.png)|
 |||||
 
 Esta es la descripción de cada funcionalidad de exhibición de documentos electrónicos.
@@ -174,6 +174,6 @@ Consulte los siguientes artículos para obtener más información y empezar a us
 
 Para ver qué características de exhibición de documentos electrónicos se han iniciado, están implementando o en desarrollo, vea el [Microsoft 365 guía básica](https://aka.ms/eDiscoRoadMap).
 
-## <a name="training"></a>Aprendizaje
+## <a name="training"></a>Formación
 
 La formación de los administradores de TI, los administradores de exhibición de documentos electrónicos y los equipos de investigación de cumplimiento en los conceptos básicos para la búsqueda de contenido, la exhibición de documentos electrónicos principal y Advanced eDiscovery pueden ayudar a su organización a empezar a usar más rápidamente Microsoft 365 herramientas de exhibición de documentos electrónicos. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de la organización a empezar con la exhibición de documentos electrónicos: Describir las capacidades de [eDiscovery y auditoría](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)de Microsoft 365 .

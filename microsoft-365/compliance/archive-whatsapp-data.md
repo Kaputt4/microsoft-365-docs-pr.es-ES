@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos de WhatsApp en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 3d329a97948e36f380d0d42dc59555a967c4f25223cdd34a932b99f89ecd9869
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a56e365b58ce545b62149a44659f21994c03caf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896135"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574393"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>Configurar un conector para archivar datos de WhatsApp
 
@@ -29,7 +29,7 @@ Después de almacenar los datos de WhatsApp en buzones de usuario, puede aplicar
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de WhatsApp en Microsoft 365.
 
-![Flujo de trabajo de archivado de WhatsApp](../media/WhatsAppConnectorWorkflow.png)
+![Flujo de trabajo de archivado de WhatsApp.](../media/WhatsAppConnectorWorkflow.png)
 
 1. Su organización trabaja con TeleMessage para configurar un conector de archivador de WhatsApp. Para obtener más información, [vea WhatsApp Archiver](https://www.telemessage.com/office365-activation-for-whatsapp-archiver).
 

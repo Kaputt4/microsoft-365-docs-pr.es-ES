@@ -15,12 +15,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: Busque escenarios sobre cómo usar SharePoint Syntex en su organización.
-ms.openlocfilehash: 0be3424acd6d3d1b547feedb6854beced4a2453f88530271c1376a8fd07ea09d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 619acd5d71bc6f3ab1aa99d3b7fd068faa51d696
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819696"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575281"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Escenarios y casos de uso de Microsoft SharePoint Syntex
 
@@ -46,7 +46,7 @@ Por ejemplo, puede configurar un proceso mediante SharePoint Syntex y Power Auto
     - Una factura ha pasado de su fecha de vencimiento.
     - Una factura es para un importe que es mayor que el importe de aprobación automática.
 
-![Seguimiento y supervisión de facturas con SharePoint Syntex y Power Automate](../media/content-understanding/process-invoices-flow.png)
+![Seguimiento y supervisión de facturas con SharePoint Syntex y Power Automate.](../media/content-understanding/process-invoices-flow.png)
 
 Al automatizar este escenario, puede:
 
@@ -63,7 +63,7 @@ Como otro ejemplo, puede configurar un proceso para identificar contratos que su
 1. Cuando se complete el modelo, aplique el modelo a una biblioteca donde pueda cargar contratos.
 1. Aplique una etiqueta de retención al campo fecha, de modo que los contratos se conserven en la biblioteca durante el período de tiempo necesario.
 
-![Seguimiento y supervisión de contratos con SharePoint Syntex y etiquetas de retención](../media/content-understanding/process-contracts-flow.png)
+![Seguimiento y supervisión de contratos con SharePoint Syntex y etiquetas de retención.](../media/content-understanding/process-contracts-flow.png)
 
 Al automatizar este escenario, puede:
 
@@ -137,6 +137,6 @@ Al automatizar este escenario, puede asegurarse de que:
 - Se reduce el número de avisos manuales.
 - Se reduce el número de multas por incumplimiento.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Adopción SharePoint Syntex Microsoft: Introducción](adoption-getstarted.md)

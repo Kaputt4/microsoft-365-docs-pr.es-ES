@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores de la nube del gobierno de Estados Unidos pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: 3c471fed07fc1f9cb5c86a027884f2973bf05ac5db53522f4e21a8eded5e7c7a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a8edc80d9663165608a23d3d3e03fbd6c57933f8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813849"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574212"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurar un conector para importar datos de recursos humanos en US Government
 
@@ -60,7 +60,7 @@ La primera fila, o fila de encabezado, del archivo CSV enumera los nombres de co
 
 En la tabla siguiente se describe cada columna del archivo CSV:
 
-| Nombre de columna | Descripción |
+| Nombre de columna | Description |
 |:-----|:-----|
 | **EmailAddress** <br/> |Especifica la dirección de correo electrónico del empleado terminado.|
 | **TerminationDate** <br/> |Especifica la fecha en que el empleo de la persona terminó oficialmente en su organización. Por ejemplo, esta puede ser la fecha en la que el empleado dio su aviso sobre la salida de la organización. Esta fecha puede ser diferente de la fecha del último día de trabajo de la persona. Use el siguiente formato de fecha: , que es el formato de fecha y hora `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -87,13 +87,13 @@ El siguiente paso es crear un conector de recursos humanos en el Centro de cumpl
 
 5. En la **página** Asignación de archivos, escriba los nombres de los tres encabezados de columna (también denominados *parámetros)* del archivo CSV que creó en el paso 2 en cada uno de los cuadros correspondientes. Los nombres no distinguen mayúsculas de minúsculas. Como se ha explicado anteriormente, los nombres que escriba en estos cuadros deben coincidir con los nombres de parámetro del archivo CSV. Por ejemplo, la siguiente captura de pantalla muestra los nombres de los parámetros del ejemplo del archivo CSV de ejemplo que se muestra en el paso 2.
 
-   ![Los nombres de encabezado de columna coinciden con los del archivo CSV](../media/HRConnectorWizard3.png)
+   ![Los nombres de encabezado de columna coinciden con los del archivo CSV.](../media/HRConnectorWizard3.png)
 
 6. En la **página Revisar,** revise la configuración y, a continuación, haga clic **en Finalizar** para crear el conector.
 
    Se muestra una página de estado que confirma que se creó el conector. Esta página contiene dos cosas importantes que debe completar el siguiente paso para ejecutar el script de ejemplo para cargar los datos de RECURSOS humanos.
 
-   ![Página de revisión con identificador de trabajo y vínculo a github para script de ejemplo](../media/HRConnector_Confirmation.png)
+   ![Revise la página con el identificador de trabajo y el vínculo a github para ver el script de ejemplo.](../media/HRConnector_Confirmation.png)
 
    1. **Id. de trabajo.** Necesitará este identificador de trabajo para ejecutar el script en el paso siguiente. Puede copiarlo desde esta página o desde la página desplegable del conector.
    
@@ -105,7 +105,7 @@ El siguiente paso es crear un conector de recursos humanos en el Centro de cumpl
 
 8. Haga clic en el conector de RECURSOS que acaba de crear para mostrar la página desplegable, que contiene propiedades y otra información sobre el conector.
 
-   ![Página desplegable para el nuevo conector de RECURSOS HUMANOS](../media/HRConnectorWizard7.png)
+   ![Página desplegable para el nuevo conector de RRHH.](../media/HRConnectorWizard7.png)
 
    Si aún no lo ha hecho, puede copiar los valores del identificador de aplicación **de Azure** y el identificador de trabajo **de conector**. Los necesitará para ejecutar el script en el paso siguiente. También puede descargar el script desde la página desplegable (o descargarlo mediante el vínculo en el paso siguiente).
 
@@ -163,11 +163,11 @@ Después de crear el conector de recursos humanos y ejecutar el script para carg
 
 2. Haga clic **en la pestaña Conectores** y, a continuación, seleccione el conector de RECURSOS para mostrar la página desplegable. Esta página contiene las propiedades y la información sobre el conector.
 
-   ![Página desplegable del conector de RECURSOS con propiedades y estado](../media/HRConnectorFlyout1.png)
+   ![Página desplegable del conector de RECURSOS con propiedades y estado.](../media/HRConnectorFlyout1.png)
 
 3. En **Progreso,** haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo CSV en la nube de Microsoft. 
 
-   ![El archivo de registro del conector de RECURSOS muestra las filas de números del archivo CSV que se cargaron](../media/HRConnectorLogFile.png)
+   ![El archivo de registro del conector de RECURSOS muestra las filas de números del archivo CSV que se cargaron.](../media/HRConnectorLogFile.png)
 
    El `RecordsSaved` campo indica el número de filas del archivo CSV que se cargó. Por ejemplo, si el archivo CSV contiene cuatro filas, el valor de los campos es 4, si el script cargó correctamente todas las filas `RecordsSaved` del archivo CSV.
 
@@ -203,7 +203,7 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
 7. Seleccione la **pestaña Acciones,** haga clic **en Nuevo** y, a continuación, haga lo siguiente:
 
-   ![Configuración de la acción para crear una nueva tarea programada para el script del conector de RECURSOS HUMANOS](../media/HRConnectorScheduleTask1.png)
+   ![Configuración de acción para crear una nueva tarea programada para el script del conector de recursos humanos.](../media/HRConnectorScheduleTask1.png)
 
    1. En la **lista** desplegable Acción, asegúrese de que está seleccionado **Iniciar un** programa.
 
@@ -219,7 +219,7 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
    La nueva tarea se muestra en la Biblioteca del programador de tareas.
 
-   ![La nueva tarea se muestra en la Biblioteca del programador de tareas](../media/HRConnectorTaskSchedulerLibrary.png)
+   ![La nueva tarea se muestra en la Biblioteca del programador de tareas.](../media/HRConnectorTaskSchedulerLibrary.png)
 
    Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede hacer doble clic en la tarea para editarla.
 

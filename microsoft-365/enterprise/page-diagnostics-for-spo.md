@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Use la herramienta Diagnóstico de página para SharePoint para analizar SharePoint portal moderno en línea y páginas de publicación clásicas con un conjunto predefinido de criterios de rendimiento.
-ms.openlocfilehash: 742c55fcdcb527b3544650918d2e404045318619abba7df79f736dead31d07ca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e741e8e2da62d2361578e31edcb6dbbafafbb7dc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878416"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574717"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Usar la herramienta Diagnóstico de página SharePoint página
 
@@ -45,14 +45,14 @@ La herramienta genera un informe para cada página analizada que muestra el rend
 La herramienta Diagnóstico de página está diseñada para analizar solo SharePoint sitio web, no páginas del sistema como *allitems.aspx* o *sharepoint.aspx*. Si intenta ejecutar la herramienta en una página del sistema o en cualquier otra página que no sea de sitio, recibirá un mensaje de error que le aconseja que la herramienta no se puede ejecutar para ese tipo de página.
 
 > [!div class="mx-imgBorder"]
-> ![Debe ejecutarse en una SharePoint de datos](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
+> ![Debe ejecutarse en una SharePoint página.](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
 
 No se trata de un error en la herramienta, ya que no hay ningún valor en la evaluación de bibliotecas o páginas del sistema. Vaya a una página SharePoint sitio para usar la herramienta. Si este error se produce en una SharePoint, compruebe la página maestra para asegurarse de que SharePoint metatags no se han quitado.
 
 Para proporcionar comentarios sobre la herramienta, seleccione los puntos suspensivos en la esquina superior derecha de la herramienta y, a continuación, [seleccione Dar comentarios](https://go.microsoft.com/fwlink/?linkid=874109).
 
 > [!div class="mx-imgBorder"]
-> ![Enviar comentarios](../media/page-diagnostics-for-spo/pagediag-feedback.png)
+> ![Enviar comentarios.](../media/page-diagnostics-for-spo/pagediag-feedback.png)
   
 ## <a name="install-the-page-diagnostics-for-sharepoint-tool"></a>Instalar el diagnóstico de página para SharePoint herramienta
 
@@ -64,7 +64,7 @@ El procedimiento de instalación de esta sección funcionará para los explorado
 1. Instale la herramienta De diagnóstico de página SharePoint para **Microsoft Edge** [(extensión perimetral)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) o **Chrome** [(extensión de Chrome).](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) Revisa la Directiva de privacidad del usuario que se proporciona en la página de descripción de la tienda. Al agregar la herramienta al explorador, verá el siguiente aviso de permisos.
 
     > [!div class="mx-imgBorder"]
-    > ![Permisos de extensión](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
+    > ![Permisos de extensión.](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
     Este aviso está en su lugar porque una página puede contener contenido de ubicaciones fuera de SharePoint según los elementos web y las personalizaciones de la página. Esto significa que la herramienta leerá las solicitudes y respuestas cuando se haga clic en el botón inicio y solo para la pestaña SharePoint donde se ejecuta la herramienta. Esta información la captura localmente el explorador web y está disponible a través del botón  Exportar a **JSON** o Exportar a **HAR** en la pestaña Seguimiento de red de la herramienta. Microsoft no envía ni captura la **información.** (La herramienta respeta la directiva de privacidad de Microsoft accesible [aquí).)](https://go.microsoft.com/fwlink/p/?linkid=857875)
 
@@ -73,9 +73,9 @@ El procedimiento de instalación de esta sección funcionará para los explorado
     1. En Microsoft Edge, vaya a **Extensiones** o _escriba edge://extensions_ en la barra de direcciones URL y seleccione **Detalles** para la extensión. En la configuración de extensión, active la casilla **permitir en InPrivate**.
     1. En Chrome, vaya a **Extensiones** o escriba _chrome://extensions_ en la barra url y seleccione **Detalles** para la extensión. En la configuración de extensión, seleccione el control deslizante para **permitir en Incognito**.
 1. Vaya a la página SharePoint sitio en SharePoint Online que le gustaría revisar. Hemos permitido "retrasar la carga" de elementos en las páginas; por lo tanto, la herramienta no se detendrá automáticamente (esto es por diseño para dar cabida a todos los escenarios de carga de página). Para detener la colección, seleccione **Detener**. Asegúrese de que la carga de página se haya completado antes de detener la recopilación de datos o de que solo capturará un seguimiento parcial.
-1. Haga clic en el botón de la barra de herramientas de la extensión ![Diagnósticos de página para SharePoint logotipo](../media/page-diagnostics-for-spo/pagediag-icon32.png) para cargar la herramienta y se le mostrará la siguiente ventana emergente de extensión:
+1. Haga clic en el botón de la barra de herramientas de la extensión ![Page Diagnostics for SharePoint logo.](../media/page-diagnostics-for-spo/pagediag-icon32.png) para cargar la herramienta y se le mostrará la siguiente ventana emergente de extensión:
 
-    ![Ventana emergente de la herramienta de diagnóstico de página](../media/page-diagnostics-for-spo/pagediag-Landing.png)
+    ![Herramienta de diagnóstico de página Popup.](../media/page-diagnostics-for-spo/pagediag-Landing.png)
 
 Seleccione **Inicio para** empezar a recopilar datos para su análisis.
 
@@ -88,7 +88,7 @@ Seleccione **Inicio para** empezar a recopilar datos para su análisis.
 1. El **identificador de correlación, SPRequestDuration, SPIISLatency,** **el** tiempo de carga de página y los detalles de la **dirección URL** son informativos y se pueden usar para algunos fines.
 
     > [!div class="mx-imgBorder"]
-    > ![Detalles de diagnóstico de página](../media/page-diagnostics-for-spo/pagediag-details.PNG)
+    > ![Detalles de diagnóstico de página.](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
    - **CorrelationID** es un elemento importante al trabajar con el soporte técnico de Microsoft, ya que les permite recopilar datos de diagnóstico adicionales para la página específica.
    - **SPRequestDuration** es el tiempo que se SharePoint procesar la página. La navegación estructural, las imágenes grandes y muchas llamadas API podrían contribuir a duraciones más largas.
@@ -98,14 +98,14 @@ Seleccione **Inicio para** empezar a recopilar datos para su análisis.
 
 1. La [**pestaña Pruebas de**](#how-to-use-the-diagnostic-tests-tab) diagnóstico muestra los resultados del análisis en tres categorías; **No se requiere ninguna acción,** **se requieren oportunidades de mejora** y **atención**. Cada resultado de la prueba se representa mediante un elemento en una de estas categorías, tal como se describe en la tabla siguiente:
 
-    |Categoría  |Color  |Descripción  |
+    |Categoría  |Color  |Description  |
     |---------|---------|---------|
     |**Atención necesaria** |Rojo |El resultado de la prueba está fuera del valor de línea base y está afectando al rendimiento de la página. Siga las instrucciones de corrección.|
     |**Oportunidades de mejora** |Amarillo |El resultado de la prueba está fuera del valor de línea base y podría contribuir a problemas de rendimiento. Pueden aplicarse criterios específicos de la prueba.|
     |**No se requiere ninguna acción.** |Verde |El resultado de la prueba se encuentra dentro del valor de línea base de la prueba.|
 
     > [!div class="mx-imgBorder"]
-    > ![Diagnósticos de página](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
+    > ![Diagnósticos de página.](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
 1. Una [**pestaña Seguimiento de**](#how-to-use-the-network-trace-tab-and-how-to-export-a-har-file) red proporciona detalles sobre las solicitudes de compilación de páginas y las respuestas.
 
@@ -135,7 +135,7 @@ La **pestaña Seguimiento de** red proporciona información detallada sobre amba
     - Rojo: \> 1000 ms
 
     > [!div class="mx-imgBorder"]
-    > ![Seguimiento de red](../media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
+    > ![Seguimiento de red.](../media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
     En la imagen anterior, el elemento rojo pertenece a la página predeterminada. Siempre se mostrará en rojo a menos que la página se cargue en \< 1000 ms (menos de 1 segundo).
 
@@ -144,12 +144,12 @@ La **pestaña Seguimiento de** red proporciona información detallada sobre amba
 3. **Compartir detalles relevantes con otras personas que puedan ayudar a investigar problemas**. Para compartir los detalles o la información proporcionada en la herramienta con los desarrolladores o una persona de soporte técnico, el método recomendado es habilitar la exportación a **HTTP Archive (HAR).** 
 
    > [!div class="mx-imgBorder"]
-   > ![Habilitar la exportación a HAR](../media/page-diagnostics-for-spo/pagediag-submithar.png)
+   > ![Habilitar la exportación a HAR.](../media/page-diagnostics-for-spo/pagediag-submithar.png)
 
 Debe habilitarse antes de hacer clic en Inicio, que habilitará el modo de depuración en el explorador. Generará un archivo de archivo HTTP (HAR) al que se puede acceder a través de la pestaña "Seguimiento de red". Haga clic en el botón "Exportar a HAR" y descargará el archivo en el equipo y, a continuación, podrá compartirlo en consecuencia. El archivo se puede abrir en una variedad de herramientas de depuración, como F12 Developer Tools y Fiddler.
 
 > [!div class="mx-imgBorder"]
-> ![Seguimiento de la red](../media/page-diagnostics-for-spo/pagediag-networktracehar.png)
+> ![Seguimiento de red.](../media/page-diagnostics-for-spo/pagediag-networktracehar.png)
 
 > [!IMPORTANT]
 > Estos resultados contienen direcciones URL y se pueden clasificar como PII (Información de identificación personal). Asegúrese de seguir las directrices de su organización antes de distribuir esa información.
@@ -167,7 +167,7 @@ No hay ningún cambio visible, excepto que se le notificará que lo ha habilitad
 3. Active la casilla y, a continuación, haga clic en **Inicio** para volver a cargar la página y generar un registro detallado.
 
    > [!div class="mx-imgBorder"]
-   > ![Opción de soporte habilitado](../media/page-diagnostics-for-spo/pagediag-support.png)
+   > ![Opción de soporte habilitado.](../media/page-diagnostics-for-spo/pagediag-support.png)
   
     Debe tener en cuenta correlationID (que se muestra en la parte superior de la herramienta) y proporcionarlo al representante de soporte técnico para que pueda recopilar información adicional acerca de la sesión de diagnóstico.
 

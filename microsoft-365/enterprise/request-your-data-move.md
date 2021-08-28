@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Los Office 365 clientes deben enviar una solicitud antes de la fecha límite para que su país pueda mover sus datos de servicios Microsoft 365 a su nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dbd1984520019296026bc5f57328a20837591c27830f4fe9b32fc425123b6550
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa3464a33143f442a38adb8693bb77b9d174114d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904650"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574681"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -36,7 +36,7 @@ Los Microsoft 365 pueden solicitar la migración de los datos principales de cli
 |Japón  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Australia, Nueva Zelanda, Fiyi  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |India  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
-|Canadá  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
+|Canada  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Reino Unido  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Corea del Sur  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Francia  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
@@ -56,7 +56,7 @@ Seleccione la pestaña **Perfil de organización** y, a continuación, seleccion
   
 No verá esta sección si su inquilino no es apto para el programa Microsoft 365 Mover.  Si su organización tiene requisitos de residencia de datos y necesita solicitar la migración, marque la casilla y, a **continuación, Guarde**.
   
-![Pantalla de opción de suscripción de Datacenter](../media/dataresidencyflyoutae.jpg)
+![Pantalla de acción de suscripción al centro de datos.](../media/dataresidencyflyoutae.jpg)
   
 El texto de la **sección Residencia**  de datos cambiará para indicar que su organización ha solicitado mover sus datos al país y fecha adecuados. También tendrás un mensaje de confirmación en el centro de mensajes. Esto confirma que ha solicitado correctamente un movimiento. 
   

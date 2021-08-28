@@ -16,12 +16,12 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: En este artículo se proporcionan instrucciones para optimizar el rendimiento de la red para los usuarios de China de Microsoft 365 inquilinos globales.
-ms.openlocfilehash: 36ae5bf08cfb529c7c6a23b5b3c1a8e17c73f412a0de196296b14226d5ec88a8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 06be7db700114db6111ff7f3c4a8d70e0c3f2243
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864327"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570202"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365 optimización global del rendimiento de inquilinos para usuarios de China
 
@@ -32,7 +32,7 @@ Para las empresas con inquilinos de Microsoft 365 globales y una presencia corpo
 
 Los ISP de China han regulado conexiones offshore a Internet pública global que pasan por dispositivos perimetrales propensos a altos niveles de congestión de red transfronteriza. Esta congestión crea pérdida de paquetes y latencia para todo el tráfico de Internet que entra y sale de China.
 
-![Microsoft 365 tráfico sin optimizar](../media/O365-networking/China-O365-unoptimized.png)
+![Microsoft 365 tráfico sin optimizar.](../media/O365-networking/China-O365-unoptimized.png)
 
 La pérdida de paquetes y la latencia son perjudiciales para el rendimiento de los servicios de red, especialmente los servicios que requieren grandes intercambios de datos (como transferencias de archivos grandes) o que requieren un rendimiento casi en tiempo real (aplicaciones de audio y vídeo).
 
@@ -54,7 +54,7 @@ Como primer paso, es fundamental que siga nuestras instrucciones de red comparat
 
 Para obtener información sobre cómo enrutar selectivamente Microsoft 365 tráfico, vea [Managing Office 365 endpoints](managing-office-365-endpoints.md). Para obtener una lista de todas las direcciones URL y direcciones IP Office 365 todo el mundo, vea Office 365 direcciones URL e [intervalos de direcciones IP](urls-and-ip-address-ranges.md).
 
-![Microsoft 365 de tráfico optimizado](../media/O365-networking/China-O365-optimized.png)
+![Microsoft 365 tráfico optimizado.](../media/O365-networking/China-O365-optimized.png)
 
 ## <a name="user-best-practices"></a>Procedimientos recomendados para el usuario
 

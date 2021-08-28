@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: En este artículo, aprenderá a crear directivas DLP con una de las plantillas incluidas en Office 365.
-ms.openlocfilehash: 3c2b4d6164b56cdfdc00cf030046fcb7ba07ea49755a4e9a4b79d12fffb8c56c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea4922e05e1bcee69eff350afa9a5f4f28f01846
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886775"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570286"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
@@ -61,7 +61,7 @@ En este ejemplo, creará una directiva DLP que identifique los datos de PII de E
 
 3. En el Centro de seguridad y cumplimiento de la izquierda navegación Directiva de prevención &amp; \> de pérdida de \> **datos** \>  \> **+ Crear una directiva**.
 
-    ![Crear un botón de directiva](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+    ![Crear un botón de directiva.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
 4. Elija la plantilla de directiva DLP que protege los tipos de información confidencial que necesita \> **Next**.
 
@@ -69,7 +69,7 @@ En este ejemplo, creará una directiva DLP que identifique los datos de PII de E
 
     Al seleccionar una plantilla, puede leer la descripción a la derecha para obtener información sobre los tipos de información confidencial que protege la plantilla.
 
-    ![Página para elegir una plantilla de directiva DLP](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
+    ![Página para elegir una plantilla de directiva DLP.](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
 
 5. Asigne a la directiva el nombre \> **Siguiente**.
 
@@ -82,7 +82,7 @@ En este ejemplo, creará una directiva DLP que identifique los datos de PII de E
 
    Para incluir solo sitios SharePoint específicos o cuentas OneDrive para la Empresa, cambie estado a y,  a continuación, haga clic en los vínculos en Incluir para elegir sitios o cuentas específicos.  Cuando se aplica una directiva a un sitio, las reglas configuradas en dicha directiva se aplican automáticamente a todos los subsitios de ese sitio.
 
-   ![Opciones de ubicaciones donde se puede aplicar una directiva DLP](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+   ![Opciones de ubicaciones donde se puede aplicar una directiva DLP.](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
    En este ejemplo, para proteger la información confidencial almacenada  en todas las cuentas de OneDrive para la Empresa, desactive el  estado de los sitios de **correo** electrónico Exchange y **SharePoint** y deje el estado en para las **cuentas OneDrive**.
 
@@ -90,7 +90,7 @@ En este ejemplo, creará una directiva DLP que identifique los datos de PII de E
 
 8. Una plantilla de directiva DLP contiene reglas predefinidas con condiciones y acciones que detectan y actúan sobre tipos específicos de información confidencial. Puede editar, eliminar o desactivar cualquiera de las reglas existentes o agregar otras nuevas. Cuando haya terminado, haga clic **en Siguiente**.
 
-    ![Reglas expandida en la plantilla de directiva de PII de EE. UU.](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
+    ![Reglas expandida en la plantilla de directiva DE PII de EE. UU.](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
 
     En este ejemplo, la plantilla Datos de PII de EE. UU. incluye dos reglas predefinidas:
 
@@ -102,23 +102,23 @@ En este ejemplo, creará una directiva DLP que identifique los datos de PII de E
 
     Por lo tanto, expande la regla denominada **Bajo volumen de contenido detectado en ee. UU. Regla de eliminación de PII** \> .
 
-    ![Botón Eliminar regla](../media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
+    ![Botón Eliminar regla.](../media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
 
 9. Ahora, en este ejemplo, debe agregar dos tipos de información confidencial (números de cuenta bancaria de Estados Unidos y números de licencia de conducir de ESTADOS UNIDOS), permitir que las personas invalide una regla y cambiar el recuento a cualquier repetición. Puede hacer todo esto editando una regla, por lo que seleccione Alto volumen de contenido detectado en **EE. UU. Regla de edición de PII** \> .
 
-    ![Botón Editar regla](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
+    ![Botón Editar regla.](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
 
 10. Para agregar un tipo de información confidencial, en la **sección** \> **Condiciones, agregue o cambie los tipos**. A continuación, en Agregar o **cambiar tipos,** elija Agregar seleccione Número de cuenta bancaria de EE. UU. y Número de licencia de conductor de \>  \> **EE. UU.**  \> **Agregar** \> **listo**.
 
-    ![Opción para agregar o cambiar tipos](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
+    ![Opción para Agregar o cambiar tipos.](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
 
-    ![Panel Agregar o cambiar tipos](../media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
+    ![Panel Agregar o cambiar tipos.](../media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
 
 11. Para cambiar el recuento (el número de instancias de información confidencial necesarias para desencadenar la regla), en **Recuento** de instancias, elija el valor mínimo para cada tipo \> escriba  \> 1. El recuento mínimo no puede estar vacío. El recuento máximo puede estar vacío; un valor **máximo** vacío convertir a **cualquier**.
 
     Cuando termine, el recuento mínimo de todos los tipos de información confidencial debe ser **1** y el recuento máximo debe ser **cualquier**. En otras palabras, cualquier aparición de este tipo de información confidencial cumplirá esta condición.
 
-    ![Recuentos de instancias para tipos de información confidencial](../media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
+    ![Recuentos de instancias para tipos de información confidencial.](../media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
 
 12. Para la personalización final, no desea que las directivas DLP bloqueen a los usuarios para que no trabajen cuando tienen una justificación empresarial válida o cuando encuentran un falso positivo, por lo que desea que la notificación del usuario incluya opciones para invalidar la acción de bloqueo.
 
@@ -126,7 +126,7 @@ En este ejemplo, creará una directiva DLP que identifique los datos de PII de E
 
     En la **sección Invalidaciones de** usuario, puede ver que las invalidaciones de una justificación empresarial están activadas, pero las invalidaciones para informar de falsos positivos no lo están. Elija **Invalidar la regla automáticamente si la informan como un falso positivo**.
 
-    ![Sección notificaciones de usuario y sección Invalidaciones de usuario](../media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
+    ![Sección notificaciones de usuario y sección Invalidaciones de usuario.](../media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
 
 13. En la parte superior del editor de reglas, cambie el nombre de esta regla del valor predeterminado De alto volumen de contenido detectado **DE EE. UU. PII** a Cualquier contenido detectado con **PII** de ESTADOS UNIDOS porque ahora se desencadena por cualquier aparición de sus tipos de información confidencial.
 
@@ -148,7 +148,7 @@ En este ejemplo, creará una directiva DLP que identifique los datos de PII de E
 
 19. Active las directivas para que se cumplan las reglas y se protege el contenido. Continúe supervisando los informes DLP y los informes de incidentes o las notificaciones para asegurarse de que los resultados sean los deseados.
 
-    ![Opciones para usar el modo de prueba y activar la directiva](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Opciones para usar el modo de prueba y activar la directiva.](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
 20. Revise la configuración de esta directiva \> elija **Crear**.
 
@@ -181,7 +181,7 @@ Puede editar o desactivar una directiva DLP en cualquier momento. Desactivar una
 
 Para editar o desactivar una directiva DLP, en la **página** Directiva \> seleccione la directiva Editar \> **directiva**.
 
-![Botón Editar directiva](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
+![Botón Editar directiva.](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
 
 Además, puede desactivar cada regla individualmente editando la directiva  y, a continuación, regateando el estado de esa regla, como se describió anteriormente.
 

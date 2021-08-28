@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: d628922d5c6933acc386abf14cf6436a3e595419741a4f816fc374b0570b4a73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 94351858da196edfd719d7b07ab6f125abf9d658
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865225"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570238"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Entrenar un modelo de codificación predictiva (versión preliminar)
 
@@ -45,7 +45,7 @@ Para revisar el flujo de trabajo de codificación predictiva, vea [Learn about p
 
 5. Revise cada documento y, a continuación, **seleccione** el botón Relevante o No **relevante** en la parte inferior del panel de lectura para etiquetar.
 
-   ![Etiquetar cada documento como relevante o no relevante](..\media\TrainModel1.png)
+   ![Etiquete cada documento como relevante o no relevante.](..\media\TrainModel1.png)
 
 6. Después de etiquetar los 50 elementos, haga clic en **Finalizar**.
 

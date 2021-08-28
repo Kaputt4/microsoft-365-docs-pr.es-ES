@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: Configure la autenticación multifactor mediante mensajes de texto enviados a un teléfono inteligente en su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 772fc5d5a05ca08f2fcb851f1e5399c1dd77828f
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 92c60819c2e32661b4af9cfba76553c59b784519
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356233"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570730"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Autenticación multifactor para su Microsoft 365 entorno de prueba empresarial
 
@@ -38,7 +38,7 @@ La configuración de la autenticación multifactor para una cuenta en su Microso
 - [Fase 2: habilitar y probar la autenticación multifactor para la cuenta Usuario 2](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
 - [Fase 3: Habilitar y probar la autenticación multifactor con una directiva de acceso condicional](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).

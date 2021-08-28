@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante Microsoft 365 y herramientas de prevención de pérdida de datos y haga un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 3f2b8ff6bd099164e288a244e45a2aa646e5bf391c7a192450a02b3689038101
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b1a310a5ea9eea37930dbbc7ea84a8a48577af7e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835825"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574236"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -184,12 +184,12 @@ DLP informa de una gran cantidad de información en Microsoft 365 de supervisió
 Cuando DLP realiza una acción en un elemento confidencial, puede recibir una notificación de esa acción a través de una alerta configurable. En lugar de que estas alertas se apilen en un buzón de correo para que las haga, el Centro de cumplimiento las pone a disposición en el Panel de administración de alertas [DLP.](dlp-configure-view-alerts-policies.md) Use el panel de alertas DLP para configurar alertas, revisarlas, analizarlas y realizar un seguimiento de la resolución de alertas DLP. Este es un ejemplo de alertas generadas por coincidencias de directiva y actividades desde Windows 10 dispositivos.
 
 > [!div class="mx-imgBorder"]
-> ![Información de la alerta](../media/Alert-info-1.png)
+> ![Información de alerta.](../media/Alert-info-1.png)
 
 También puede ver los detalles del evento asociado con metadatos enriquecidos en el mismo panel
 
 > [!div class="mx-imgBorder"]
-> ![información del evento](../media/Event-info-1.png)
+> ![información del evento.](../media/Event-info-1.png)
 
 ### <a name="reports"></a>Informes
 
@@ -203,7 +203,7 @@ Los [informes DLP](view-the-dlp-reports.md#view-the-reports-for-data-loss-preven
 
 La pestaña Explorador de actividades de la página DLP tiene el filtro *De* actividad preestablecido en *DLPRuleMatch*. Use esta herramienta para revisar la actividad relacionada con el contenido que contiene información confidencial o que tiene etiquetas aplicadas, como qué etiquetas se cambiaron, los archivos se modificaron y coincidieron con una regla.
 
-![captura de pantalla del explorador de actividades con ámbito DLPRuleMatch](../media/dlp-activity-explorer.png)
+![captura de pantalla del explorador de actividades con ámbito DLPRuleMatch.](../media/dlp-activity-explorer.png)
 
 Para obtener más información, vea [Introducción al explorador de actividades](data-classification-activity-explorer.md)
 

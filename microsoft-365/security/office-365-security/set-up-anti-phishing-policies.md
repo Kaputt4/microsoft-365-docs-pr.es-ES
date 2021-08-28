@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d74bba395854f582a609fec6bbd0b9d504c90eebb8c1328389fefe7c5a3da15
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b0b7e93c59484bb3f7b1e34d33dd3ee7a19f7634
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56880154"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574525"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -50,11 +50,11 @@ Las diferencias de alto nivel entre las directivas contra suplantación de ident
 
 |Característica|Directivas contra suplantación de identidad en EOP|Directivas contra la suplantación de identidad en Defender para Office 365|
 |---|:---:|:---:|
-|Directiva predeterminada creada automáticamente|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|Crear directivas personalizadas|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|Configuración de directiva común<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|Configuración de suplantación|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|Primer contacto consejo de seguridad|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|Directiva predeterminada creada automáticamente|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Crear directivas personalizadas|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Configuración de directiva común<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Configuración de suplantación|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Primer contacto consejo de seguridad|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
 |Configuración de suplantación||![Marca de verificación](../../media/checkmark.png)|
 |Umbrales de suplantación de identidad avanzada||![Marca de verificación](../../media/checkmark.png)|
 |
@@ -85,7 +85,7 @@ La siguiente configuración de directiva está disponible en las directivas cont
   - **Dominios:** uno o varios de los dominios [aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) configurados en Microsoft 365.
 
   - **Excluir estos usuarios, grupos y dominios:** excepciones para la directiva. La configuración y el comportamiento son exactamente iguales a las condiciones:
-    - **Users**
+    - **Usuarios**
     - **Grupos**
     - **Dominios**
 

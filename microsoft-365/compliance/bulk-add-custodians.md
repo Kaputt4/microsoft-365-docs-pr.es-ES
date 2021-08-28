@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use la herramienta de importación dto agregar rápidamente varios custodios y sus orígenes de datos asociados a un caso en Advanced eDiscovery.
-ms.openlocfilehash: ccce04b5821eaff2d2ba65c846d58f3f474fb7277931da1d986f7b7ebe8beccb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ccb180766df47de39e3deb61faab60396c74bb9e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906114"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570310"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importar custodios a un Advanced eDiscovery caso
 
@@ -34,7 +34,7 @@ Para Advanced eDiscovery casos en los que participan muchos custodios, puede imp
 
 3. En la página desplegable Importar **custodios,** haga clic en **Descargar una** plantilla en blanco para descargar un archivo CSV de plantilla de custodia.
 
-   ![Descargar una plantilla CSV desde la página desplegable Importar custodios](../media/ImportCustodians1.png)
+   ![Descargue una plantilla CSV de la página desplegable Importar custodios.](../media/ImportCustodians1.png)
 
 4. Agregue la información de custodia al archivo CSV y guárdela en el equipo local. Consulte la [sección Archivo CSV de](#custodian-csv-file) custodia para obtener información sobre las propiedades necesarias en el archivo CSV.
 
@@ -48,7 +48,7 @@ Para Advanced eDiscovery casos en los que participan muchos custodios, puede imp
 
 Después de descargar la plantilla de custodia CSV, puede agregar custodios y su origen de datos en cada fila. Asegúrese de no cambiar los nombres de columna de la fila de encabezado. Use el tipo de carga de trabajo y las columnas de ubicación de carga de trabajo para asociar otros orígenes de datos a un administrador.
 
-| Nombre de columna|Descripción|
+| Nombre de columna|Description|
 |:------- |:------------------------------------------------------------|
 |**Contacto de custodiaEmail**     |Dirección de correo electrónico UPN del custodio. Por ejemplo, sarad@contoso.onmicrosoft.com.           |
 |**Exchange Habilitado** | Valor TRUE/FALSE para incluir o no incluir el buzón del custodio.      |

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Debe ser administrador de una suscripción empresarial para obtener ayuda de administrador o soporte técnico en línea o por teléfono con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 56aae6fc6ad966aeefb7d1fede4b86e1300babd393f51f5c28839f3220d985e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f38e07cb7db25cbc6d6fa3e813d8f7c5863e4055
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882538"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570658"
 ---
 # <a name="get-support"></a>Obtener soporte técnico
 
@@ -220,7 +220,7 @@ Para ver la disponibilidad de características entre planes de Office 365, consu
 
 Digitalice este código QR para seguirnos en WeChat y obtener las actualizaciones más recientes para Office 365 ofrecido por 21Vianet.
 
-![Código QR para las actualizaciones de Office 365 ofrecido por 21Vianet](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![Código QR para las actualizaciones de Office 365 operado por 21Vianet.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 

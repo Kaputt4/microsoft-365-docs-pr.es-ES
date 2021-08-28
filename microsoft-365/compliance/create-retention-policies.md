@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 3053740119c09b56b6fa01434d79fe9cd31d826e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5ada5a4e4c7bd65ef0be6f273548bebba6e342ea
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256709"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574332"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -232,7 +232,7 @@ Para volver al valor predeterminado del buzón y del sitio de SharePoint para lo
 
 A diferencia de otras ubicaciones, no se puede activar o desactivar el estado de la ubicación de Skype para incluir a todos los usuarios automáticamente. En su lugar, al activar esa ubicación, debe seleccionar la opción **Editar** para elegir manualmente los usuarios cuyas conversaciones desee conservar:
 
-![Editar la ubicación de Skype para las directivas de retención](../media/skype-location-retention-policies.png)
+![Editar la ubicación de Skype para las directivas de retención.](../media/skype-location-retention-policies.png)
 
 Después de seleccionar la opción **Editar**, en el panel **Skype Empresarial**, puede seleccionar el cuadro oculto antes de la columna **Nombre** para incluir rápidamente a todos los usuarios. Sin embargo, es importante entender que cada usuario tiene que contar con una inclusión específica en la directiva. Por lo tanto, si selecciona esta casilla para incluir 1 000, será lo mismo que si selecciona manualmente 1 000 usuarios, que es el máximo admitido en Skype Empresarial.
 
@@ -270,7 +270,7 @@ Ejemplos:
 
 Al final del período de retención, usted elige si desea que el contenido se elimine de forma permanente:
 
-![Página de configuración de retenciones](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![Página de configuración de retenciones.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Eliminar el contenido que supera una antigüedad determinada
 

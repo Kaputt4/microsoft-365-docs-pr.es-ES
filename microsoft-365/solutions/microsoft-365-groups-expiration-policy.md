@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Obtenga información sobre Microsoft 365 de expiración de grupos.
-ms.openlocfilehash: 831253a64ad30cf37370ec9e93e3f1d8172befc94705758e77367c3697c41686
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4617124801ed0400481bd81a453c6520a0c8d73a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816669"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574489"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 de expiración de grupo
 
@@ -66,7 +66,7 @@ Si el grupo no tiene un propietario, los correos electrónicos de expiración ir
 
 Puede establecer la directiva para todos los grupos, solo los grupos seleccionados (hasta 500) o desactivarla completamente **seleccionando Ninguno**. Tenga en cuenta que actualmente no puede tener directivas diferentes para diferentes grupos.
 
-![Captura de pantalla de la configuración de expiración de grupos en Azure Active Directory](../media/azure-groups-expiration-settings.png)
+![Captura de pantalla de la configuración de expiración de grupos Azure Active Directory.](../media/azure-groups-expiration-settings.png)
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>Cómo funciona la expiración con la directiva de retención
 

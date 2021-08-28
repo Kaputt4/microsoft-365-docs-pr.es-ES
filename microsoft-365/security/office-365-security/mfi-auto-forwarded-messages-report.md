@@ -12,12 +12,12 @@ ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Los administradores pueden obtener información sobre el informe de mensajes reenviados automáticamente en el panel flujo de correo del Centro de seguridad & cumplimiento.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0c03321b1bdada7145a19d0d2147594eb039c716b61feebbf26c4becab286f3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 94700aa4fc08d0c462aa186a0f0847d73151a82a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56815716"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574573"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Información de mensajes reenviados automáticamente en el Centro de seguridad & cumplimiento
 
@@ -30,7 +30,7 @@ ms.locfileid: "56815716"
 
 La **información de mensajes** reenviados automáticamente en el panel flujo de correo del Centro de seguridad & cumplimiento muestra información sobre los mensajes que se reenvía automáticamente desde su organización [a](https://protection.office.com) los destinatarios de dominios externos. [](mail-flow-insights-v2.md)
 
-![Widget de mensajes reenviados automáticamente en el Centro de seguridad & cumplimiento](../../media/mfi-auto-forwarded-messages.png)
+![Widget De mensajes reenviados automáticamente en el Centro de seguridad & cumplimiento.](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>Detalles de mensajes reenviados automáticamente
 
@@ -51,7 +51,7 @@ Al hacer clic en el número de mensajes del widget, aparece un panel flotante qu
   - **Nuevos usuarios (la semana pasada)**
   - Un vínculo al informe [de modificaciones de reenvío](mfi-new-users-forwarding-email.md#forwarding-modifications-report) para obtener más información.
 
-![Control de detalles del informe de mensajes reenviados automáticamente en el Centro de seguridad y & cumplimiento](../../media/mfi-auto-forwarded-messages-details.png)
+![Control de detalles para el informe de mensajes reenviados automáticamente en el Centro de seguridad & cumplimiento.](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>Insights
 

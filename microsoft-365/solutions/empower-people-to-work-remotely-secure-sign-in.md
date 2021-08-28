@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Requerir que los trabajadores híbridos inicien sesión con autenticación multifactor (MFA).
-ms.openlocfilehash: 19a249e25aaa2db21d8b2dea4b4bdd86e673e4f9761a3adcd530b0a21b5c3bfc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d59f990cd7acf576247d75e6544ad045179e3c81
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805097"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575353"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Paso 1. Aumentar la seguridad del inicio de sesión de los trabajadores híbridos con MFA
 
 Para aumentar la seguridad de los inicios de sesión de sus trabajadores híbridos, utilice la autenticación multifactor (MFA). MFA requiere que los inicios de sesión de usuario estén sujetos a una comprobación adicional más allá de la contraseña de la cuenta de usuario. Incluso si un usuario malintencionado determina la contraseña de una cuenta de usuario, también debe poder responder a una comprobación adicional, como un mensaje de texto que se envía a un smartphone, antes de que se otorgue el acceso.
 
-![La contraseña correcta más una comprobación adicional produce un inicio de sesión correcto](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
+![La contraseña correcta más una comprobación adicional produce un inicio de sesión correcto.](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
 Para todos los usuarios, incluidos los trabajadores híbridos y especialmente los administradores, Microsoft recomienda encarecidamente la MFA.
 
@@ -119,6 +119,6 @@ Después de la implementación de MFA, los usuarios:
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 2: Proporcionar acceso remoto a los servicios y aplicaciones locales](../media/empower-people-to-work-remotely/remote-workers-step-grid-2.png)](empower-people-to-work-remotely-remote-access.md)
+[![Paso 2: Proporcionar acceso remoto a los servicios y aplicaciones locales.](../media/empower-people-to-work-remotely/remote-workers-step-grid-2.png)](empower-people-to-work-remotely-remote-access.md)
 
 Continúe con el [paso 2](empower-people-to-work-remotely-remote-access.md) para proporcionar acceso remoto a servicios y aplicaciones locales.
