@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Interacciones de servicios de grupos
-ms.openlocfilehash: 3cf68b0abcf15515ebe724fe795b9b31c5ebd2b6f8b3dd6c9ca76b7b706c8508
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 54d8cd0ff31bad9af4269b3a4d8af23ccb618e16
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853072"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563711"
 ---
 # <a name="groups-services-interactions"></a>Interacciones de servicios de grupos
 
@@ -109,7 +109,7 @@ La experiencia de restricción de creación de grupos varía entre aplicaciones 
 
 Vea el póster Grupos en Microsoft 365 para obtener información sobre los distintos tipos de grupos, cómo se crean y administran, y algunas recomendaciones de gobierno.
 
-[![Imagen en miniatura para la infografía de grupos](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)
+[![Imagen digital para la infografía de grupos.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)
 
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)
 
@@ -124,11 +124,11 @@ En la tabla siguiente se proporciona información general sobre Microsoft 365 de
 |Planner|Panel de tareas|No|Sí|Sí|
 |Power Apps app|Aplicación|Sí|No|No|
 |Power Automate|Flujo de trabajo|Sí|No|No|
-|Power BI (clásico)|Workspace|No|Sí|Sí|
-|Power BI (nuevo)|Workspace|Sí|No|Sí|
+|Power BI (clásico)|Área de trabajo|No|Sí|Sí|
+|Power BI (nuevo)|Área de trabajo|Sí|No|Sí|
 |Project para la Web|Project plan|Sí|Sí|No|
 |Guía básica|Guía básica|Sí|Sí|No|
-|SharePoint|Site|Sí|Sí|Sí|
+|SharePoint|Sitio|Sí|Sí|Sí|
 |Stream|Canal, vídeo|Sí|Sí|Sí|
 |Teams|Equipo|No|Sí|Sí|
 |Yammer|Group|Sí|Sí|Sí|
@@ -181,7 +181,7 @@ De forma predeterminada, cuando se crea un equipo, el buzón y el calendario aso
 
 - Conversaciones
 - Canales & pestañas
-- Meetings
+- Reuniones
 
 **¿Teams crear un grupo?**
 
@@ -340,7 +340,7 @@ No, sin embargo, al copiar un plan se crea un nuevo grupo.
 
 Sí, al eliminar el plan se eliminará el contenido y los servicios asociados al grupo.
 
-## <a name="power-apps"></a>Power Apps
+## <a name="power-apps"></a>PowerApps
 
 Power Apps proporciona un lienzo para el desarrollo de aplicaciones sin código.
 

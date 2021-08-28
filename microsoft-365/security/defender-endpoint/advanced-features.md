@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd56ab7daef91fb06aca8bc9d60213877b9696b8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: f9fbeb7d0fbaee05e86c89749ffc62695e8ff9e9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507763"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563599"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -107,8 +107,8 @@ Para activar **Permitir o bloquear** archivos:
 1. En el panel de navegación, **seleccione Configuración** \> **Características avanzadas** \>  \> **generales de** \> puntos de conexión Permitir o bloquear archivo .
 
 1. Alterna la configuración entre **On** y **Off**.
-
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Imagen de la configuración avanzada para la característica de archivo de bloqueo":::
+ 
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Imagen de la configuración avanzada de la característica de archivo de bloqueo.":::
 
 1. Seleccione **Guardar preferencias** en la parte inferior de la página.
 
