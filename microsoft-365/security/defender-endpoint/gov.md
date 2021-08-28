@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 494c653f3817fbad53a5d791a9929ded1619db45
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 359b08510b888772b3ef9face320ab526724544a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509586"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568317"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -86,34 +86,29 @@ Las siguientes son las direcciones URL del portal de Microsoft Defender para pun
 
 Se admiten las siguientes versiones del sistema operativo:
 
-<br>
-
-****
-
-|Versión del sistema operativo|GCC|GCC High|DoD|
-|---|:---:|:---:|:---:|
-|Windows 10 versión 21H1 y versiones posteriores|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows 10, versión 20H2 (con [KB4586853](https://support.microsoft.com/help/4586853))|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows 10, versión 2004 (con [KB4586853](https://support.microsoft.com/help/4586853))|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows 10, versión 1909 (con [KB4586819](https://support.microsoft.com/help/4586819))|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows 10, versión 1903 (con [KB4586819](https://support.microsoft.com/help/4586819))|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows 10, versión 1809 (con [KB4586839](https://support.microsoft.com/help/4586839))|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows 10, versión 1803 (con [KB4598245](https://support.microsoft.com/help/4598245))|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows 10, versión 1709|![No](images/svg/check-no.svg) <p> Nota: No se admite|![Sí ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147) <p> Nota: [En desuso,](/lifecycle/announcements/revised-end-of-service-windows-10-1709)actualice|![No](images/svg/check-no.svg) <p> Nota: No se admite|
-|Windows 10, versión 1703 y versiones anteriores|![No](images/svg/check-no.svg) <p> Nota: No se admite|![No](images/svg/check-no.svg) <p> Nota: No se admite|![No](images/svg/check-no.svg) <p> Nota: No se admite|
-|Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839))|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows Server 2016|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows Server 2012 R2|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows Server 2008 R2 SP1|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows 8.1 Enterprise|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows 8 Pro|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows 7 SP1 Enterprise|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows 7 SP1 Pro|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Linux|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|macOS|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Android|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
-|iOS|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
-|
+Versión del sistema operativo|GCC|GCC High|DoD
+:---|:---:|:---:|:---:
+Windows 10 versión 21H1 y versiones posteriores|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 10, versión 20H2 (con [KB4586853](https://support.microsoft.com/help/4586853))|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 10, versión 2004 (con [KB4586853](https://support.microsoft.com/help/4586853))|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 10, versión 1909 (con [KB4586819](https://support.microsoft.com/help/4586819))|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 10, versión 1903 (con [KB4586819](https://support.microsoft.com/help/4586819))|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 10, versión 1809 (con [KB4586839](https://support.microsoft.com/help/4586839))|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 10, versión 1803 (con [KB4598245](https://support.microsoft.com/help/4598245))|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 10, versión 1709|![No.](images/svg/check-no.svg) <p> Nota: No se admite|![Sí ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147) <p> Nota: [En desuso,](/lifecycle/announcements/revised-end-of-service-windows-10-1709)actualice|![No](images/svg/check-no.svg) <p> Nota: No se admite
+Windows 10, versión 1703 y versiones anteriores|![No.](images/svg/check-no.svg) <p> Nota: No se admite|![No](images/svg/check-no.svg) <p> Nota: No se admite|![No](images/svg/check-no.svg) <p> Nota: No se admite
+Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839))|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2016|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 8.1 Enterprise|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 8 Pro|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 7 SP1 Enterprise|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 7 SP1 Pro|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Linux|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+macOS|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Android|![No.](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo
+iOS|![No.](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo
 
 > [!NOTE]
 > Cuando se especifica una revisión, debe implementarse antes de la incorporación del dispositivo para configurar Defender for Endpoint en el entorno correcto.
@@ -124,17 +119,12 @@ Se admiten las siguientes versiones del sistema operativo:
 
 Las siguientes versiones del sistema operativo se admiten al [usar Azure Defender para servidores:](/azure/security-center/security-center-wdatp)
 
-<br>
-
-****
-
-|Versión del sistema operativo|GCC|GCC High|DoD|
-|---|:---:|:---:|:---:|
-|Windows Server 2019|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows Server 2016|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows Server 2012 R2|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Windows Server 2008 R2 SP1|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|
+Versión del sistema operativo|GCC|GCC High|DoD
+:---|:---:|:---:|:---:
+Windows Server 2019|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2016|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 
 ## <a name="required-connectivity-settings"></a>Configuración de conectividad necesaria
 
@@ -142,14 +132,9 @@ Si un servidor proxy o firewall bloquea todo el tráfico de forma predeterminada
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Compruebe que no hay reglas de filtrado de red o firewall que denieguen el acceso *a* estas direcciones URL o cree una regla de permitir específicamente para ellas.
 
-<br>
-
-****
-
-|Hoja de cálculo de la lista de dominios|Descripción|
-|---|---|
-|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
-|
+Hoja de cálculo de la lista de dominios|Descripción
+:-----|:-----
+![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 Para obtener más información, vea [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 

@@ -24,18 +24,18 @@ ms.custom: migrationguides
 ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 27f1dff34e8e403afb3a8e45263d30a587952da5
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 6fa205147dc3fa042d9bdb3a1d03c67f2b2efecb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364486"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568881"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Cambiar de la protección de puntos de conexión que no son de Microsoft a Microsoft Defender para el extremo
 
 Si está pensando en cambiar de una solución de protección de puntos de conexión que no es de Microsoft a [Microsoft Defender para](microsoft-defender-endpoint.md) Endpoint (Defender para endpoint), está en el lugar correcto. Use este artículo como guía.
 
-:::image type="content" source="images/nonms-mde-migration.png" alt-text="Cambiar la solución de protección de puntos de conexión a Defender for Endpoint":::
+:::image type="content" source="images/nonms-mde-migration.png" alt-text="Cambie la solución de protección de puntos de conexión a Defender for Endpoint.":::
 
 Al cambiar a Defender for Endpoint, comienza con la protección contra antivirus o antimalware que no es de Microsoft en modo activo. A continuación, configuras Antivirus de Microsoft Defender modo pasivo e incorporas tus dispositivos a Defender para endpoint. A continuación, configure las características de protección de puntos de conexión, establezca Antivirus de Microsoft Defender en modo activo y compruebe que todo funciona correctamente. Por último, se quita la solución que no es de Microsoft.
 
@@ -43,7 +43,7 @@ Al cambiar a Defender for Endpoint, comienza con la protección contra antivirus
 
 El proceso de migración a Defender for Endpoint se puede dividir en tres fases, como se describe en la tabla siguiente:
 
-![Proceso de migración de MDE](images/phase-diagrams/migration-phases.png)
+![Proceso de migración de MDE.](images/phase-diagrams/migration-phases.png)
 
 |Fase |Descripción |
 |--|--|
@@ -55,7 +55,7 @@ El proceso de migración a Defender for Endpoint se puede dividir en tres fases,
 
 En esta guía de [](microsoft-defender-antivirus-in-windows-10.md) migración, nos centramos en la protección de próxima generación y las [detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md) como punto de partida para pasar a Defender for Endpoint. Sin embargo, Defender for Endpoint incluye mucho más que antivirus y protección de puntos de conexión. Defender for Endpoint es una plataforma unificada para la protección preventiva, la detección posterior a la infracción, la investigación automatizada y la respuesta. En la tabla siguiente se resumen las características y capacidades de Defender para endpoint. 
 
-| Característica/funcionalidad | Descripción |
+| Característica/funcionalidad | Description |
 |---|---|
 | [Administración de vulnerabilidades y amenazas](next-gen-threat-and-vuln-mgt.md) | Las & administración de vulnerabilidades de amenazas ayudan a identificar, evaluar y corregir puntos débiles en los puntos de conexión (como dispositivos). |
 | [Reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md) | Las reglas de reducción de superficie de ataque ayudan a proteger los dispositivos y aplicaciones de la organización de ciberamenazas y ataques. |

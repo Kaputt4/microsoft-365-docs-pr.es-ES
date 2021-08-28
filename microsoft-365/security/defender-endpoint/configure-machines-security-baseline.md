@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d0f2d14a6005ff067e0c46d7bc582199ec7d2e4fbf7112705e7acebd4891dbf5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 907925669176135944f2327c39ac86ed823a9fd9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894522"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568653"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Aumentar el cumplimiento de la línea base de seguridad de Microsoft Defender para endpoints
 
@@ -58,7 +58,7 @@ Lo ideal es que los dispositivos incorporados a Defender for Endpoint se impleme
 
 La tarjeta de [](configure-machines.md) línea **base** de seguridad en la administración de configuración de dispositivos proporciona una introducción al cumplimiento entre Windows 10 dispositivos a los que se asignó la línea base de seguridad defender para puntos de conexión.
 
-![Tarjeta de línea base de seguridad](images/secconmgmt_baseline_card.png)
+![Tarjeta de línea base de seguridad.](images/secconmgmt_baseline_card.png)
 
 *Tarjeta que muestra el cumplimiento de la línea base de seguridad de Defender for Endpoint*
 
@@ -85,22 +85,22 @@ La administración de configuración de dispositivos supervisa el cumplimiento d
 
 2. Crear un perfil nuevo.
 
-   ![Introducción a la línea base de seguridad de Microsoft Defender para endpoints en Intune](images/secconmgmt_baseline_intuneprofile1.png)<br>
+   ![Información general sobre la línea base de seguridad de Microsoft Defender para endpoints en Intune.](images/secconmgmt_baseline_intuneprofile1.png)<br>
    *Introducción a la línea base de seguridad de Microsoft Defender para endpoints en Intune*
 
 3. Durante la creación de perfiles, puede revisar y ajustar la configuración específica de la línea base.
 
-   ![Opciones de línea base de seguridad durante la creación de perfiles en Intune](images/secconmgmt_baseline_intuneprofile2.png)<br>
+   ![Opciones de línea base de seguridad durante la creación de perfiles en Intune.](images/secconmgmt_baseline_intuneprofile2.png)<br>
    *Opciones de línea base de seguridad durante la creación de perfiles en Intune*
 
 4. Asigna el perfil al grupo de dispositivos adecuado.
 
-   ![Perfiles de línea base de seguridad en Intune](images/secconmgmt_baseline_intuneprofile3.png)<br>
+   ![Perfiles de línea base de seguridad en Intune.](images/secconmgmt_baseline_intuneprofile3.png)<br>
    *Asignar el perfil de línea base de seguridad en Intune*
 
 5. Crea el perfil para guardarlo e implementarlo en el grupo de dispositivos asignado.
 
-   ![Asignar la línea base de seguridad en Intune](images/secconmgmt_baseline_intuneprofile4.png)<br>
+   ![Asignar la línea base de seguridad en Intune.](images/secconmgmt_baseline_intuneprofile4.png)<br>
    *Creación del perfil de línea base de seguridad en Intune*
 
 > [!TIP]

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de protección física de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a sus edificios físicos por usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: 800614ef38e065027238d32bf877a059e2022378a1a86b2f33c6f11f3827de2a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae513d01917c0fe4148d265865a77775a5ff2555
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895445"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567933"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos de badging físicos (versión preliminar)
 
@@ -63,13 +63,13 @@ El siguiente paso es crear un archivo JSON que contenga información sobre los d
 
 El archivo JSON debe cumplir con la definición de esquema requerida por el conector. A continuación se descripciones de las propiedades de esquema necesarias para el archivo JSON:
 
-|Propiedad|Descripción|Tipo de datos|
+|Propiedad|Description|Tipo de datos|
 |---|---|---|
 |UserId|Un empleado puede tener varias identidades digitales en todos los sistemas. La entrada debe tener el identificador de Azure AD ya resuelto por el sistema de origen.|UPN o dirección de correo electrónico|
 |AssetId|El identificador de referencia del activo físico o punto de acceso físico.|Cadena alfanumérica|
 |AssetName|Nombre descriptivo del activo físico o punto de acceso físico.|Cadena alfanumérica|
 |EventTime|La marca de tiempo de acceso.|Fecha y hora, en formato UTC|
-|AccessStatus|Valor de `Success` o `Failed`|String|
+|AccessStatus|Valor de `Success` o `Failed`|Cadena|
 |||
 
 Este es un ejemplo de un archivo JSON que se ajusta al esquema requerido:
@@ -219,11 +219,11 @@ Después de crear el conector de descarga física e insertar los datos de pérdi
 
 2. Haga clic **en la pestaña Conectores** y, a continuación, seleccione el conector de bloqueo físico para mostrar la página desplegable. Esta página contiene las propiedades y la información sobre el conector.
 
-   ![Página desplegable de estado para el conector de badging físico](..\media\PhysicalBadgingStatusFlyout.png)
+   ![Página desplegable de estado para el conector de badging físico.](..\media\PhysicalBadgingStatusFlyout.png)
 
 3. En **Última importación,** haga clic en **el vínculo** Descargar registro para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo CSV en la nube de Microsoft.
 
-   ![El archivo de registro del conector de error físico muestra las filas de números del archivo JSON que se cargaron](..\media\PhysicalBadgingConnectorLogFile.png)
+   ![El archivo de registro del conector de descarga física muestra las filas de números del archivo JSON que se cargaron.](..\media\PhysicalBadgingConnectorLogFile.png)
 
    El **campo RecordsSaved** indica el número de filas del archivo CSV que se cargó. Por ejemplo, si el archivo CSV contiene cuatro filas, el valor de los campos **RecordsSaved** es 4, si el script cargó correctamente todas las filas del archivo CSV.
 
@@ -259,7 +259,7 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
 7. Seleccione la **pestaña Acciones,** haga clic **en Nuevo** y, a continuación, haga lo siguiente:
 
-   ![Configuración de la acción para crear una nueva tarea programada para el script del conector de badging físico](..\media\SchedulePhysicalBadgingScript1.png)
+   ![Configuración de la acción para crear una nueva tarea programada para el script del conector de badging físico.](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. En la **lista** desplegable Acción, asegúrese de que está seleccionado **Iniciar un** programa.
 
@@ -275,7 +275,7 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
    La nueva tarea se muestra en la Biblioteca del programador de tareas.
 
-   ![La nueva tarea se muestra en la Biblioteca del programador de tareas](..\media\SchedulePhysicalBadgingScript2.png)
+   ![La nueva tarea se muestra en la Biblioteca del programador de tareas.](..\media\SchedulePhysicalBadgingScript2.png)
 
 Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede hacer doble clic en la tarea para editarla.
 

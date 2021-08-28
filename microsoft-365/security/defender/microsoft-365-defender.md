@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5fb3ee5abfb2f6d8f86832967ed6f88386421c9e
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 1e8b5745e67741535f0c521fc6c6dc1f83868b3c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607106"
+ms.locfileid: "58568797"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -85,7 +85,7 @@ Búsqueda basada en consultas en la parte superior de los datos sin procesar de 
 
 
 Microsoft 365 Defender características entre productos incluyen: 
-- **Panel único de** vidrio entre productos: vista central para toda la información sobre detecciones, activos afectados, acciones automatizadas realizadas y pruebas relacionadas en una sola cola y un único panel en [security.microsoft.com](https://security.microsoft.com). 
+- **Panel único de** vidrio entre productos: vista central de toda la información sobre detecciones, activos afectados, acciones automatizadas realizadas y pruebas relacionadas en una sola cola y un único panel en [security.microsoft.com](https://security.microsoft.com). 
 - Cola de incidentes **combinados:** para ayudar a los profesionales de seguridad a centrarse en lo que es fundamental al garantizar que el ámbito de ataque completo, los activos afectados y las acciones de corrección automatizadas se agrupan y se ponen a la superficie de forma oportuna. 
 - **Respuesta automática a las amenazas:** la información crítica sobre amenazas se comparte en tiempo real entre los Microsoft 365 Defender para ayudar a detener la progresión de un ataque. Por ejemplo, si se detecta un archivo malintencionado en un punto de conexión protegido por Microsoft Defender para Endpoint, le indicará a Defender que Office 365 analice y quite el archivo de todos los mensajes de correo electrónico. Todo el conjunto de seguridad del conjunto de Microsoft 365 bloqueará el archivo a la vista.
 - **Recuperación** automática para dispositivos, identidades de usuario y buzones en peligro: Microsoft 365 Defender usa acciones automáticas con tecnología de IA y libros de reproducción para corregir los activos afectados de nuevo a un estado seguro. Microsoft 365 Defender aprovecha las capacidades de corrección automática de los productos del conjunto de programas para garantizar que todos los activos afectados relacionados con un incidente se remedian automáticamente siempre que sea posible.
@@ -98,5 +98,5 @@ Microsoft 365 Defender requisitos de licencia deben cumplirse para poder habilit
 - [Activar Microsoft 365 Defender](m365d-enable.md)
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Implementar capacidades de protección contra amenazas en Microsoft 365 E5](/microsoft-365/solutions/deploy-threat-protection)

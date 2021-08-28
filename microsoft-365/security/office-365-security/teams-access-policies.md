@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 18044d469e90137ea14fa2dde9a6afe75e5dd0998d67e015e71d20b049ad30fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b135c6dd691607dd128bfd83e0d2b484bb3a97ae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853235"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568065"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directiva para proteger Teams chats, grupos y archivos
 
@@ -49,7 +49,7 @@ No es necesario habilitar los servicios dependientes para empezar a trabajar con
 
 Para proteger el chat, los grupos y el contenido de Teams, en el siguiente diagrama se muestran las directivas que se actualizarán a partir de las directivas comunes de acceso a dispositivos y identidades. Para que cada directiva se actualice, asegúrese de que los servicios Teams y dependientes se incluyan en la asignación de aplicaciones en la nube.
 
-[![Resumen de las actualizaciones de directivas para proteger el acceso a Teams y sus servicios dependientes](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+[![Resumen de las actualizaciones de directivas para proteger el acceso a Teams y sus servicios dependientes.](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
 Estos servicios son los servicios dependientes que se deben incluir en la asignación de aplicaciones en la nube para Teams:
 
@@ -79,7 +79,7 @@ En esta tabla se enumeran las directivas que deben [](identity-access-policies.m
 
 Como referencia, el siguiente diagrama ilustra los servicios en los que Teams se basa. Para obtener más información e ilustraciones, vea Microsoft Teams servicios de productividad relacionados [en Microsoft 365 para arquitectos de TI.](../../solutions/productivity-illustrations.md)
 
-[![Diagrama que muestra Teams dependencias de SharePoint, OneDrive para la Empresa y Exchange](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[![Diagrama que muestra Teams dependencias SharePoint, OneDrive para la Empresa y Exchange.](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
 [Ver una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
@@ -144,7 +144,7 @@ Para obtener más información sobre las directivas de permisos de aplicación, 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configurar directivas de acceso condicional para:
 

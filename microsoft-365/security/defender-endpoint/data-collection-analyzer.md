@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: dcf7ecede8eb870edbeb015d0c7a5005ed006ab2
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 7fa72bc6e96199fb7773e4df385e3527ac14938e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533572"
+ms.locfileid: "58568629"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a> Recopilación de datos para solucionar problemas avanzados en Windows
 
@@ -36,7 +36,7 @@ Al colaborar con profesionales de soporte técnico de Microsoft, es posible que 
 
 Ejecute '**MDEClientAnalyzer.cmd /?** para ver la lista de parámetros disponibles y su descripción:
 
-![Imagen de los parámetros del analizador de cliente en la línea de comandos](images/d89a1c04cf8441e4df72005879871bd0.png)
+![Imagen de los parámetros del analizador de cliente en la línea de comandos.](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
 > Cuando se usa cualquier parámetro de solución de problemas avanzado, el analizador también llama a [MpCmdRun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance) para recopilar Antivirus de Microsoft Defender registros de soporte técnico relacionados.
@@ -72,7 +72,7 @@ Ejecute '**MDEClientAnalyzer.cmd /?** para ver la lista de parámetros disponibl
 
 El analizador y todas las marcas de escenario anteriores se pueden iniciar de forma remota ejecutando 'RemoteMDEClientAnalyzer.cmd', que también se incluye en el conjunto de herramientas del analizador:
 
-![Imagen de línea de comandos con información del analizador](images/57cab9d82d08f672a92bf9e748ac9572.png)
+![Imagen de la línea de comandos con información del analizador.](images/57cab9d82d08f672a92bf9e748ac9572.png)
 
 > [!NOTE]
 >

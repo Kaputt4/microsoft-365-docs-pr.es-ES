@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Guía básica para implementar Microsoft 365 red.
-ms.openlocfilehash: 7c8c67305ef67e9e7a20b2d341f339b8bdbab4090426861e37b5b5277bb249e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3fb9c99bd0381730a41bd65012efe5488b85509d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800992"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570058"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>Guía básica de redes para Microsoft 365
 
@@ -66,7 +66,7 @@ Si es un proveedor de equipamiento de red, únase a [la Microsoft 365 Programa p
 
 Vea cómo Contoso Corporation, una empresa multinacional ficticia pero representativa, [optimizó sus dispositivos de red y conexión a Internet](contoso-networking.md) para los servicios en la nube de Microsoft 365.
 
-![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation.](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Paso siguiente
 

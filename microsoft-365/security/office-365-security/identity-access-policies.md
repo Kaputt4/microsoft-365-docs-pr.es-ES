@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 564747e31f7ab412d14790e42e6c8e901e382de4e08834b9a5b2f7c775454c74
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b3e5e5f404d2758597b81a11d204baa629bff31
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816994"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568761"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -42,11 +42,11 @@ En esta guía se describe cómo implementar las directivas recomendadas en un en
 
 En el siguiente diagrama se muestra el conjunto de directivas recomendado. Muestra a qué nivel de protección se aplica cada directiva y si las directivas se aplican a equipos, teléfonos y tabletas, o ambas categorías de dispositivos. También indica dónde se configuran estas directivas.
 
-[![Directivas comunes para configurar la identidad y el acceso a dispositivos](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
+[![Directivas comunes para configurar la identidad y el acceso a dispositivos.](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 Este es un resumen pdf de una página con vínculos a las directivas individuales:
 
-[![Imagen digital de identidad y protección de dispositivos para Microsoft 365 documento](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Ver como un PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Imagen digital de identidad y protección de dispositivos para Microsoft 365 entrega.](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Ver como un PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 El resto de este artículo describe cómo configurar estas directivas.
 
@@ -77,7 +77,7 @@ Una práctica recomendada es crear un grupo de Azure AD para la exclusión de ac
 
 Este es un ejemplo de asignación de grupo y exclusiones para requerir MFA.
 
-![Ejemplo de asignación de grupos y exclusiones para directivas de MFA](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![Ejemplo de asignación de grupos y exclusiones para directivas de MFA.](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 Estos son los resultados:
 
@@ -95,7 +95,7 @@ Tenga cuidado al aplicar niveles más altos de protección a grupos y usuarios. 
 
 Todos los grupos de Azure AD creados como parte de estas recomendaciones deben crearse como Microsoft 365 grupos. Esto es importante para la implementación de etiquetas de confidencialidad al proteger documentos en Microsoft Teams y SharePoint.
 
-![Ejemplo de creación de un Microsoft 365 grupo](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![Ejemplo de creación de un Microsoft 365 grupo.](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Requerir MFA en función del riesgo de inicio de sesión
 
@@ -112,7 +112,7 @@ En las tablas siguientes se describe la configuración de la directiva de acceso
 
 En la **sección Asignaciones:**
 
-|Configuración|Propiedades|Valores|Notas|
+|Valor|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos:** seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos:** seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -134,7 +134,7 @@ Aplica la configuración del nivel de riesgo en función del nivel de protecció
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Acción|
+|Valor|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Conceder acceso**||Seleccionar|
 |||**Requerir autenticación multifactor**|Cheque|
@@ -155,7 +155,7 @@ Vea [este artículo](../../enterprise/microsoft-365-client-support-multi-factor-
 
 En la **sección Asignaciones:**
 
-|Configuración|Propiedades|Valores|Notas|
+|Valor|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos:** seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos:** seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -165,7 +165,7 @@ En la **sección Asignaciones:**
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Acción|
+|Valor|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Bloquear acceso**||Seleccionar|
 ||**Exigir todos los controles seleccionados**||Seleccionar|
@@ -378,7 +378,7 @@ Para **Seguridad del sistema,** consulte esta tabla.
 ||Contraseñas sencillas|Bloquear|Seleccionar|
 ||Tipo de contraseña|Valor predeterminado del dispositivo|Seleccionar|
 ||Longitud mínima de la contraseña|6 |Tipo|
-||Minutos máximos de inactividad antes de que se requiera la contraseña|15|Tipo <p> Esta configuración es compatible con las versiones 4.0 y posteriores de Android o KNOX 4.0 y versiones posteriores. Para dispositivos iOS, es compatible con iOS 8.0 y versiones posteriores.|
+||Minutos máximos de inactividad antes de que se requiera la contraseña|15 |Tipo <p> Esta configuración es compatible con las versiones 4.0 y posteriores de Android o KNOX 4.0 y versiones posteriores. Para dispositivos iOS, es compatible con iOS 8.0 y versiones posteriores.|
 ||Expiración de contraseña (días)|41|Tipo|
 ||Número de contraseñas anteriores para evitar la reutilización|5 |Tipo|
 ||Requerir contraseña cuando el dispositivo devuelve el estado de inactividad (móvil y holográfico)|Obligatoria|Disponible para Windows 10 y versiones posteriores|
@@ -453,6 +453,6 @@ Para requerir el cumplimiento de todos los dispositivos:
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 3: Directivas para usuarios invitados y externos](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
+[![Paso 3: Directivas para usuarios invitados y externos.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
 [Más información sobre las recomendaciones de directiva para usuarios invitados y externos](identity-access-policies-guest-access.md)

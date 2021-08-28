@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector en el Centro de cumplimiento de Microsoft 365 importar y archivar datos de Cisco Jabber en Oracle para Microsoft 365.
-ms.openlocfilehash: 5765cbd761bda785c1b6d617455d41cb39abc78008c4083f37a7e12dbf00b4a2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 34096f06d3516470fb203b87efa98e0bde2ec669
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861133"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569854"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Configurar un conector para archivar datos de Cisco Jabber en Oracle
 
@@ -29,7 +29,7 @@ Una vez que los datos de Cisco Jabber en Oracle se almacenan en buzones de usuar
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar los datos de Cisco Jabber en Oracle en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos de Cisco Jabber en Oracle](../media/CiscoJabberOnOracleConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos de Cisco Jabber en Oracle.](../media/CiscoJabberOnOracleConnectorWorkflow.png)
 
 1. Su organización trabaja con Cisco Jabber en Oracle para configurar y configurar un Cisco Jabber en un sitio de Oracle.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b81a01ed239ec58dd736be51074117de1dae9e97386431e89a6343e9c01a1142
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c296ab7f5f01c62b7342d2027ab90a894e1e55c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894636"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569722"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Obtener dispositivos incorporados a Microsoft Defender para endpoint
 
@@ -44,7 +44,7 @@ Antes de poder realizar un seguimiento y administrar la incorporación de dispos
 
 La **tarjeta** de incorporación proporciona una descripción general de alto nivel de la tasa de incorporación comparando el número de dispositivos Windows 10 que realmente se han incorporado a Defender for Endpoint con el número total de dispositivos Windows 10 administrados por Intune.
 
-![Tarjeta de incorporación de administración de configuración de dispositivos](images/secconmgmt_onboarding_card.png)
+![Tarjeta de incorporación de administración de configuración de dispositivos.](images/secconmgmt_onboarding_card.png)
 
 *Tarjeta que muestra dispositivos incorporados en comparación con el número total de dispositivos administrados Windows 10 Intune*
 
@@ -57,7 +57,7 @@ Defender for Endpoint proporciona varias opciones convenientes para [la incorpor
 
 En la **tarjeta incorporación,** selecciona **Incorporar más dispositivos** para crear y asignar un perfil en Intune. El vínculo te lleva a la página de cumplimiento del dispositivo en Intune, que proporciona una introducción similar al estado de incorporación.
 
-![Página de cumplimiento de dispositivos de Microsoft Defender para endpoint en la administración de dispositivos de Intune](images/secconmgmt_onboarding_1deviceconfprofile.png)
+![Página de cumplimiento de dispositivos de Microsoft Defender para endpoint en la administración de dispositivos de Intune.](images/secconmgmt_onboarding_1deviceconfprofile.png)
 
 *Página de cumplimiento de dispositivos de Microsoft Defender para endpoint en la administración de dispositivos de Intune*
 

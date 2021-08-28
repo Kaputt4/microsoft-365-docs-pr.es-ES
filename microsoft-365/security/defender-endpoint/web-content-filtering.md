@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 011e816a7a01c0065f46113962d2b4fab356639b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 0a8d6ea1805d4783a9326ebd0eeed269ff5fef72
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255923"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568869"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -119,7 +119,7 @@ Se abrirá un panel donde puede seleccionar la prioridad y agregar detalles adic
 
 Para determinar la categoría de un sitio web, puede usar la función de búsqueda de dirección URL disponible en el portal de Microsoft 365 Defender ( en https://security.microsoft.com) **Búsqueda de extremos**  >  . En los resultados de búsqueda url, la categoría de filtrado de contenido web aparece en **Dirección URL/Detalles del dominio**. Los administradores también pueden disputar la categoría del dominio directamente desde esta página, como se muestra en la imagen siguiente. Si no se muestra el resultado de la categoría, la dirección URL no está asignada actualmente a una categoría de filtrado de contenido web existente.
 
-![Imagen de resultados de búsqueda de categorías de filtrado de contenido web](../../media/web-content-filtering-category-lookup.png)
+![Imagen de los resultados de búsqueda de categorías de filtrado de contenido web.](../../media/web-content-filtering-category-lookup.png)
 
 ## <a name="web-content-filtering-cards-and-details"></a>Detalles y tarjetas de filtrado de contenido web
 
@@ -131,25 +131,25 @@ Esta tarjeta enumera las categorías de contenido web principales con el mayor a
 
 En los primeros 30 días de uso de esta característica, es posible que la organización no tenga suficientes datos para mostrar esta información.
 
-![Imagen de la actividad web por tarjeta de categoría](images/web-activity-by-category600.png)
+![Imagen de actividad web por tarjeta de categoría.](images/web-activity-by-category600.png)
 
 ### <a name="web-content-filtering--summary-card"></a>Tarjeta de resumen de filtrado de contenido web
 
 Esta tarjeta muestra la distribución de los intentos de acceso bloqueado en las diferentes categorías de contenido web primario. Seleccione una de las barras de color para ver más información sobre una categoría web primaria específica.
 
-![Imagen de la tarjeta de resumen de filtrado de contenido web](images/web-content-filtering-summary.png)
+![Imagen de la tarjeta de resumen de filtrado de contenido web.](images/web-content-filtering-summary.png)
 
 ### <a name="web-activity-summary-card"></a>Tarjeta de resumen de actividad web
 
 Esta tarjeta muestra el número total de solicitudes de contenido web en todas las direcciones URL.
 
-![Imagen de la tarjeta de resumen de actividad web](images/web-activity-summary.png)
+![Imagen de la tarjeta de resumen de actividad web.](images/web-activity-summary.png)
 
 ### <a name="view-card-details"></a>Ver detalles de la tarjeta
 
 Para obtener acceso a los **detalles del informe** para cada tarjeta, seleccione una fila de tabla o una barra coloreada en el gráfico de la tarjeta. La página de detalles del informe para cada tarjeta contiene amplios datos estadísticos sobre categorías de contenido web, dominios de sitio web y grupos de dispositivos.
 
-![Imagen de los detalles del informe de protección web](images/web-protection-report-details.png)
+![Imagen de los detalles del informe de protección web.](images/web-protection-report-details.png)
 
 - **Categorías web:** enumera las categorías de contenido web que han tenido intentos de acceso en su organización. Seleccione una categoría específica para abrir un menú desplegable de resumen.
 

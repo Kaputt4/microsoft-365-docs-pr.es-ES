@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo Contoso usa Microsoft Intune en Microsoft 365 empresa para administrar sus dispositivos y las aplicaciones que se ejecutan en ellos.
-ms.openlocfilehash: 7c7a3a40867e15059c527edb0069ff639d68ae7c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: c9acdbaa66af212a57bf66b2c64200b02ade6ad7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354901"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569482"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Administración de dispositivos móviles para Contoso
 
@@ -66,7 +66,7 @@ Contoso inscribió equipos implementados y smartphones y tabletas de propiedad d
 
 Esta es la arquitectura de implementación de administración de dispositivos móviles contoso.
 
-![Infraestructura de implementación de administración de dispositivos móviles contoso](../media/contoso-mdm/contoso-mdm-fig1.png)
+![Infraestructura de implementación de administración de dispositivos móviles contoso.](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>Paso siguiente
 

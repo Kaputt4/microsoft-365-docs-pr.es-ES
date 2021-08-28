@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Configure los dispositivos Windows que ejecutan Windows 10 Pro para Microsoft 365 Empresa Premium usuarios, lo que habilita controles de seguridad y administración centralizados.
-ms.openlocfilehash: 8c1b8c4c670e5314a5fc524459cbe13c5a3b1db8
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 4b390b1217cd3af7b5f2cc49dc2fb3507a7fe04c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377780"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570178"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios
 
@@ -63,7 +63,7 @@ En el caso de los dispositivos nuevos que ejecuten Windows 10 Pro Creators Updat
   
 1. Siga el proceso de configuración de dispositivos Windows 10 hasta que llegue a la página **¿Cómo quiere realizar la configuración?**. 
     
-    ![On the How would you like to set up page, choose Set up for an organization](../../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
+    ![En la página Cómo desea configurar, elija Configurar para una organización.](../../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
 2. Aquí, elija **Configurar para una organización** y, a continuación, escriba su nombre de usuario y contraseña para Microsoft 365 Empresa Premium. 
     
@@ -77,31 +77,31 @@ En el caso de los dispositivos nuevos que ejecuten Windows 10 Pro Creators Updat
   
 1. En el equipo Windows del usuario, que está ejecutando Windows 10 Pro, versión 1703 (Creators Update) (vea [Requisitos previos](../security-and-compliance/pre-requisites-for-data-protection.md)), haga clic en el logotipo de Windows y, después, en el icono Configuración.
   
-   ![In the Start menu, click Windows Settings icon](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
+   ![En el menú Inicio, haga clic Windows Configuración icono.](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
 2. En **Configuración**, vaya a **Cuentas**.
   
-   ![In Windows Settings, go to Accounts](../../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
+   ![En Windows Configuración, vaya a Cuentas.](../../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
   
 3. En la página **Tu información**, haga clic en **Obtener acceso a trabajo o escuela** \> **Conectar**.
   
-   ![Choose Connect under Access work or school](../../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
+   ![Elija Conectar en Access work or school.](../../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
   
 4. En el cuadro de diálogo **Configurar una cuenta de trabajo o escuela**, en **Acciones alternativas**, elija **Unir este dispositivo a Azure Active Directory**.
   
-   ![Click Join this device to Azure Active Directory](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
+   ![Haz clic en Unirse a este dispositivo Azure Active Directory.](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
 5. En la página **Vamos a iniciar sesión**, escriba su cuenta profesional o educativa \> **Siguiente**.
   
    En la página **Escribir contraseña**, escriba la contraseña \> **Iniciar sesión**.
   
-   ![Enter your work or school email on the Let's get you signed in page](../../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
+   ![Escriba su correo electrónico de trabajo o escuela en la página Vamos a empezar a trabajar.](../../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
 6. En la **página Asegúrese de que esta es su organización,** compruebe que la información es correcta y elija **Unirse.**
   
    En el **conjunto You're all!** page, chosse **Done**.
   
-   ![En la pantalla Asegúrese de que esta es su organización, elija Unirse](../../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
+   ![On the Make sure this is your organization screen, choose Join.](../../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
 Si ha cargado archivos a OneDrive para la Empresa, vuelva a sincronizarlos. Si usó una herramienta de terceros para migrar perfiles y archivos, sincronice también los con el nuevo perfil.
   
@@ -113,7 +113,7 @@ En la **página Estado de sincronización,** elija **Sincronizar** para obtener 
   
 Para empezar a usar la cuenta Microsoft 365 Empresa Premium, vaya  al botón Inicio Windows, haga clic con el botón secundario en la imagen de la cuenta actual y, a continuación, **Cambie cuenta**. Inicie sesión con el correo electrónico y la contraseña de la organización.
   
-![Click Info button to view synchronization status](../../media/818f7043-adbf-402a-844a-59d50034911d.png)
+![Haga clic en el botón Información para ver el estado de sincronización.](../../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>Comprobar que el equipo se actualiza a Windows 10 Business
 

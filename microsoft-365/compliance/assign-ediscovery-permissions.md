@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el Centro de cumplimiento de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 080514ba2d802ca0aa3438e00966cc84df59f32149ff9392a180344949d9ec26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87fe1f6a6f02e00e6c4884ac8ddb439939ed8c74
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808469"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569122"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365
 
@@ -64,9 +64,9 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
   
 5. En la página desplegable **del Administrador** de exhibición de documentos electrónicos, realice una de las siguientes acciones en función de los permisos de exhibición de documentos electrónicos que desee asignar.
   
-    **Para convertir a un usuario en administrador de exhibición de documentos electrónicos:** Junto al **Administrador de exhibición de documentos electrónicos,** seleccione **Editar**. En la página **Elegir asistente del Administrador de** exhibición de documentos electrónicos, haga clic en Agregar icono ![ ](../media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, **seleccione Agregar**. Cuando haya terminado de agregar usuarios, seleccione **Listo**. A continuación, en la página **Asistente**  para editar Elegir administrador de exhibición de documentos electrónicos, seleccione Guardar para guardar los cambios en la pertenencia al Administrador de exhibición de documentos electrónicos.
+    **Para convertir a un usuario en administrador de exhibición de documentos electrónicos:** Junto al **Administrador de exhibición de documentos electrónicos,** seleccione **Editar**. En la página **Elegir asistente del Administrador de exhibición de** documentos electrónicos, haga clic en Agregar ![ icono.](../media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, **seleccione Agregar**. Cuando haya terminado de agregar usuarios, seleccione **Listo**. A continuación, en la página **Asistente**  para editar Elegir administrador de exhibición de documentos electrónicos, seleccione Guardar para guardar los cambios en la pertenencia al Administrador de exhibición de documentos electrónicos.
   
-    **Para convertir a un usuario en administrador de exhibición de documentos electrónicos:** Junto a **Administrador de exhibición de documentos electrónicos,** seleccione **Editar**. En la página **Elegir administrador de exhibición de** documentos electrónicos, haga clic en Agregar icono ![ ](../media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de **exhibición** de documentos electrónicos y, a continuación,  **Agregue**. Cuando haya terminado de agregar usuarios, seleccione **Listo**. A continuación, en la página Asistente  para editar **elegir** administrador de exhibición de documentos electrónicos, seleccione Guardar para guardar los cambios en la pertenencia al administrador de exhibición de documentos electrónicos.
+    **Para convertir a un usuario en administrador de exhibición de documentos electrónicos:** Junto a **Administrador de exhibición de documentos electrónicos,** seleccione **Editar**. En la página **Elegir administrador de exhibición de** documentos electrónicos, haga clic en Agregar ![ icono.](../media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de **exhibición** de documentos electrónicos y, a continuación,  **Agregue**. Cuando haya terminado de agregar usuarios, seleccione **Listo**. A continuación, en la página Asistente  para editar **elegir** administrador de exhibición de documentos electrónicos, seleccione Guardar para guardar los cambios en la pertenencia al administrador de exhibición de documentos electrónicos.
   
 > [!NOTE]
 > También puede usar el cmdlet **Add-eDiscoveryCaseAdmin** para convertir a un usuario en administrador de exhibición de documentos electrónicos. Sin embargo, el usuario debe tener asignado el rol de administración de casos antes de poder usar este cmdlet para que sea un administrador de exhibición de documentos electrónicos. Para obtener más información, [vea Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin). 
@@ -79,14 +79,14 @@ En la tabla siguiente se enumeran los roles RBAC relacionados con la exhibición
   
 | Rol | Administrador de cumplimiento | Administrador de eDiscovery & administrador | Administración de la organización | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Administración de casos <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> |
-|Comunicación <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Búsqueda de cumplimiento <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> |
-|Custodio <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Exportar <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> |
-|Preview <br/>  | <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Revisar <br/>  | <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> |
+|Administración de casos <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |
+|Comunicación <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Búsqueda de cumplimiento <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |
+|Custodio <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Exportar <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Hold <br/>  |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |
+|Vista previa <br/>  | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Revisar <br/>  | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> |
 |Descifrado de RMS <br/>  ||![Marca de verificación](../media/checkmark.png) <br/> |||
 |Buscar y purgar <br/> | <br/> | <br/> |![Marca de verificación](../media/checkmark.png)           <br/> | <br/> |
 ||||
@@ -141,7 +141,7 @@ Para obtener más información acerca de las retenciones, vea:
 
 - [Crear una retención en Advanced eDiscovery](add-custodians-to-case.md)
 
-### <a name="preview"></a>Preview
+### <a name="preview"></a>Vista previa
 
 Este rol permite a los usuarios ver una lista de elementos devueltos desde una búsqueda de contenido. También pueden abrir y ver cada elemento de la lista para ver su contenido.
 

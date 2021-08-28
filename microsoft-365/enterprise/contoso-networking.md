@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la infraestructura de red de Contoso y cómo la empresa usa su tecnología SD-WAN para obtener un rendimiento de red óptimo para Microsoft 365 servicios en la nube empresariales.
-ms.openlocfilehash: ad7bac187a81564c3d222069bce06756dd176a58
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: af2c68cb31450fe17449f95391dd3e5c298a2395
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354325"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569494"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Redes para Contoso Corporation
 
@@ -43,7 +43,7 @@ Estos son los elementos de red que vinculan las oficinas de Contoso en todo el m
 
 En la figura 1 se muestra la infraestructura de red de Contoso y sus conexiones a Internet.
 
-![La red contoso](../media/contoso-networking/contoso-networking-fig1.png)
+![La red contoso.](../media/contoso-networking/contoso-networking-fig1.png)
  
 **Figura 1: La red contoso**
 
@@ -76,7 +76,7 @@ Contoso diseñó su infraestructura de intranet de servidor y aplicación de lí
 
 La figura 2 muestra el porcentaje de capacidad de tráfico de red que se usa al obtener acceso a los servidores en toda la intranet de Contoso.
 
-![La infraestructura de Contoso para aplicaciones internas](../media/contoso-networking/contoso-networking-fig2.png)
+![La infraestructura de Contoso para aplicaciones internas.](../media/contoso-networking/contoso-networking-fig2.png)
  
 **Figura 2: La infraestructura de Contoso para aplicaciones internas**
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 64643873c9032af92d7093d5d75535cf3af118bc
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 7d2c18c080f6f8fc313f17a5e2820b8a8b8a69fa
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509550"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568353"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Comprobar el estado del sensor en Microsoft Defender para endpoint
 
@@ -43,7 +43,7 @@ Hay dos indicadores de estado en el icono que proporcionan información sobre el
 
 Hacer clic en cualquiera de los grupos te dirige a **la lista Dispositivos,** filtrada según tu elección.
 
-![Captura de pantalla de dispositivos con icono de problemas de sensor](images/atp-devices-with-sensor-issues-tile.png)
+![Captura de pantalla de dispositivos con problemas de sensor.](images/atp-devices-with-sensor-issues-tile.png)
 
 En **la lista dispositivos,** puede filtrar la lista de estado de mantenimiento por el siguiente estado:
 
@@ -58,11 +58,11 @@ También puede descargar toda la lista en formato CSV mediante la **característ
 > [!NOTE]
 > Exporte la lista en formato CSV para mostrar los datos sin filtrar. El archivo CSV incluirá todos los dispositivos de la organización, independientemente de cualquier filtrado aplicado en la vista en sí y puede tardar una cantidad significativa de tiempo en descargarse, según el tamaño de la organización.
 
-![Captura de pantalla de la página de lista Dispositivos](images/atp-devices-list-page.png)
+![Captura de pantalla de la página de lista Dispositivos.](images/atp-devices-list-page.png)
 
 Puedes ver los detalles del dispositivo al hacer clic en un dispositivo mal configurado o inactivo.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Corregir sensores incorrectos en Defender for Endpoint](fix-unhealthy-sensors.md)
 - [Información general del Analizador de clientes](overview-client-analyzer.md)

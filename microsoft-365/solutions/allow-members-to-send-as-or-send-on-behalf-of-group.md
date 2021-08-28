@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Obtenga información sobre cómo permitir que los miembros del grupo envíen correo electrónico como Microsoft 365 grupo o envíen correo electrónico en nombre de un Microsoft 365 grupo.
-ms.openlocfilehash: 9e214614ea8ab1cba7809251219546410c9778f35f231a6e5cf48540251ff8e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f2147e49c66e4ad8b4504c00cbd7902dd482cdfc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883654"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568029"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Permitir que los miembros envíen como o envíen en nombre de un grupo
 
@@ -47,17 +47,17 @@ En esta sección se explica cómo permitir a [](https://go.microsoft.com/fwlink/
   
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración,</a>vaya a **Grupos de** \> **destinatarios**.
     
-2. Seleccione **Editar icono** editar grupo en el grupo que desea permitir que los usuarios envíen ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) como.   
+2. Seleccione **Editar icono** editar ![ grupo.  ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) en el grupo que desea permitir que los usuarios envíen como. 
     
 3. Seleccione **delegación de grupo**.
     
 4. En la **sección Enviar como,** seleccione el signo para agregar los **+** usuarios que desea enviar como grupo. 
     
-    ![Captura de pantalla del cuadro de diálogo Enviar como](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Captura de pantalla del cuadro de diálogo Enviar como.](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Escriba para buscar o seleccionar un usuario de la lista. Seleccione **Aceptar** y **Guardar**.
     
-    ![Escriba para buscar o seleccionar un usuario de la lista](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Escriba para buscar o seleccionar un usuario de la lista.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
 ## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>Permitir que los miembros envíen correo electrónico en nombre de un grupo
 
@@ -65,17 +65,17 @@ En esta sección se explica cómo permitir a los usuarios enviar correo electró
   
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración,</a>vaya a **Grupos de** \> **destinatarios**.
     
-2. Seleccione **Editar icono** editar grupo en el grupo que desea permitir que los usuarios envíen ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) como. 
+2. Seleccione **Editar icono** editar ![ grupo.](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) en el grupo que desea permitir que los usuarios envíen como. 
     
 3. Seleccione **delegación de grupo**.
     
 4. En la sección Enviar en nombre, seleccione el signo para agregar los **+** usuarios que desea enviar como grupo. 
     
-    ![Captura de pantalla del envío en nombre del cuadro de diálogo](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Captura de pantalla del envío en nombre del cuadro de diálogo.](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Escriba para buscar o seleccionar un usuario de la lista. Seleccione **Aceptar** y **Guardar**.
     
-    ![Escriba para buscar o seleccionar un usuario de la lista](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Escriba para buscar o seleccionar un usuario de la lista.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -12,12 +12,12 @@ ms.assetid: ''
 description: Los administradores pueden aprender a usar la información sobre nuevos usuarios que reenvía correo electrónico en el Centro de seguridad & cumplimiento para investigar cuándo los usuarios de su organización reenvía mensajes a nuevos dominios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1791f8663e7ffa0e9d0fb0b55f625f73f1482cf4f61e5f4ce03cdf1e1e525552
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d517b5f9a7146d7256b89ae4e4d4d5f4aa6fc14f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56817141"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568473"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuevos usuarios reenviar información de correo electrónico en el Centro de seguridad & cumplimiento
 
@@ -34,11 +34,11 @@ La **información sobre nuevos** dominios que se reenvía de correo electrónico
 
 Esta información solo aparece cuando se detecta el problema y aparece en la página [Informe de reenvío.](view-mail-flow-reports.md#forwarding-report)
 
-![Información de nuevos usuarios que reenvían correo electrónico](../../media/mfi-new-users-forwarding-email.png)
+![Nuevos usuarios que reenván información de correo electrónico.](../../media/mfi-new-users-forwarding-email.png)
 
 Al hacer clic en el widget, aparece un control flotante donde puede encontrar más [](#forwarding-modifications-report) detalles sobre los mensajes reenviados, incluido un vínculo al informe de modificaciones de reenvío, tal como se describe más adelante en este artículo.
 
-![El menú desplegable de detalles que aparece después de hacer clic en la información sobre el reenvío de correo electrónico de nuevos usuarios](../../media/mfi-new-users-forwarding-email-details.png)
+![El menú desplegable de detalles que aparece después de hacer clic en la información sobre el reenvío de correo electrónico de nuevos usuarios.](../../media/mfi-new-users-forwarding-email-details.png)
 
 También puede acceder a esta página de detalles  al seleccionar la información después de hacer clic en Ver todo en el área Información **principal & recomendaciones** en (**Panel** de informes \>  o <https://protection.office.com/insightdashboard> ).
 
@@ -66,11 +66,11 @@ Los gráficos siguientes están disponibles en la vista informe:
 
 - **Mostrar datos para: Nuevos usuarios de reenvío:**
 
-  ![Vista Nuevos usuarios de reenvío en el informe de modificaciones de reenvío](../../media/forwarding-modifications-report-new-forwarding-users.png)
+  ![Nueva vista de usuarios de reenvío en el informe de modificaciones de reenvío.](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
 - **Mostrar datos para: Nuevos dominios de reenvío:**
 
-  ![Vista Nuevos dominios reenviados en el informe de modificaciones de reenvío](../../media/forwarding-modifications-report-new-forwarded-domains.png)
+  ![Vista Nuevos dominios reenviados en el informe de modificaciones de reenvío.](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
 Si hace clic **en Filtros** en una vista de informe, puede especificar un intervalo de fechas con Fecha **de inicio** y Fecha **de finalización.**
 
@@ -82,7 +82,7 @@ Si hace clic **en Ver tabla de detalles,** la información que se muestra depend
 
   - **Nombre:** la dirección de correo electrónico del remitente.
   - **Tipo de reenvío**
-  - **Dirección de destinatario**
+  - **Dirección del destinatario**
   - **Detalles**
   - **Count**
   - **Primera fecha de reenvío**
@@ -91,7 +91,7 @@ Si hace clic **en Ver tabla de detalles,** la información que se muestra depend
 
   - **Nombre:** el dominio de correo electrónico del remitente.
   - **Tipo de reenvío**
-  - **Dirección de destinatario**
+  - **Dirección del destinatario**
   - **Detalles**
   - **Count**
   - **Primera fecha de reenvío**
@@ -108,7 +108,7 @@ Si selecciona una fila de la tabla, **aparecerá** un menú desplegable Detalles
 - **Fecha de comienzo**
 - **Recomendación:** Desde aquí, puede hacer clic en el vínculo para administrar el usuario en el Centro de administración de Microsoft 365.
 
-![Los detalles se desván de la tabla de detalles de la vista Nuevos usuarios de reenvío en el informe Modificaciones de reenvío](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
+![Los detalles se desván de la tabla de detalles de la vista Nuevos usuarios de reenvío en el informe Modificaciones de reenvío.](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 
 Para volver a la vista informes, haga clic **en Ver informe**.
 

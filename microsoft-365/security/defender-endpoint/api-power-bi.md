@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0e64ccef09af6a8ab9ff3f798a0754a605a7f122
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 04c95cffec8f0c5bde417526d6b0cbc8dbe760ee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507751"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568665"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Crear informes personalizados mediante Power BI
 
@@ -49,11 +49,11 @@ El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada
 
 - Haga **clic en Obtener consulta en** blanco de \> **datos**
 
-  ![Imagen de crear consulta en blanco](images/power-bi-create-blank-query.png)
+  ![Imagen de crear consulta en blanco.](images/power-bi-create-blank-query.png)
 
 - Haga **clic en Editor avanzado**
 
-  ![Imagen del editor avanzado abierto](images/power-bi-open-advanced-editor.png)
+  ![Imagen del editor avanzado abierto.](images/power-bi-open-advanced-editor.png)
 
 - Copie lo siguiente y péguelo en el editor:
 
@@ -99,17 +99,17 @@ El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada
 
 - Haga clic **en Editar credenciales**
 
-    ![Imagen de las credenciales de edición0](images/power-bi-edit-credentials.png)
+    ![Imagen de las credenciales de edición0.](images/power-bi-edit-credentials.png)
 
 - Seleccionar **Inicio de sesión de cuenta** \> **organizativa**
 
-    ![Imagen de set credentials1](images/power-bi-set-credentials-organizational.png)
+    ![Imagen de set credentials1.](images/power-bi-set-credentials-organizational.png)
 
 - Escriba sus credenciales y espere a que se haya iniciado sesión
 
 - Haga **clic en Conectar**
 
-    ![Imagen de set credentials2](images/power-bi-set-credentials-organizational-cont.png)
+    ![Imagen de set credentials2.](images/power-bi-set-credentials-organizational-cont.png)
 
 - Ahora los resultados de la consulta aparecerán como tabla y puedes empezar a crear visualizaciones encima de ella.
 

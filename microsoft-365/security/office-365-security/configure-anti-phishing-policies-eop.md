@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas contra suplantación de identidad que están disponibles en organizaciones de Exchange Online Protection (EOP) con o sin buzones Exchange Online correo.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f841dd74b05d1d72224a6443bac81b3bbab2dcf
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: e8e6ccbc75e7c9081a3d6f4753bd7c9415cdb296
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255056"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568785"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configuración de directivas contra phishing en EOP
 
@@ -62,11 +62,11 @@ Para aumentar la eficacia de la protección contra phishing, puede crear directi
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
   No puede administrar directivas contra suplantación de identidad (phishing) en PowerShell de EOP independiente.
 
-- Debe tener permisos asignados en **Exchange Online** antes de poder realizar los procedimientos de este artículo:
+- Debe tener permisos asignados en la **Exchange Online** antes de poder realizar los procedimientos de este artículo:
   - Para agregar, modificar y eliminar directivas contra suplantación de identidad, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
   - Para obtener acceso de solo lectura a directivas contra suplantación de identidad, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
 
@@ -89,7 +89,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
 1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & Reglas de protección Contra la suplantación de identidad en \>  \>  \>  la **sección** Directivas.
 
-2. En la **página Anti-phishing,** haga clic ![ en Crear icono ](../../media/m365-cc-sc-create-icon.png) **Crear**.
+2. En la **página Anti-phishing,** haga clic ![ en Crear icono.](../../media/m365-cc-sc-create-icon.png) **Create**.
 
 3. Se abrirá el asistente para directivas. En la **página Nombre de directiva,** configure estas opciones:
    - **Nombre**: escriba un nombre único y descriptivo para la directiva.
@@ -102,7 +102,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
    - **Grupos**: los grupos de distribución, los grupos de seguridad habilitados para correo electrónico o los Grupos de Microsoft 365 especificados de la organización.
    - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
-   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    Para los usuarios o grupos, puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, escriba un asterisco (\*) para ver todos los valores disponibles.
 
@@ -177,8 +177,8 @@ No puede deshabilitar la directiva contra suplantación de identidad predetermin
 2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre.
 
 3. En la parte superior del control flotante de detalles de la directiva que aparece, verá uno de los siguientes valores:
-   - **Directiva desactivada**: para activar la directiva, haga clic en el ![Icono Activar](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar**.
-   - **Directiva activada**: Para desactivar la directiva, haga clic en el ![Icono desactivar](../../media/m365-cc-sc-turn-on-off-icon.png) y **Desactivar**.
+   - **Directiva desactivada:** para activar la directiva, haga clic ![ en Activar icono.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar** .
+   - **Directiva en:** Para desactivar la directiva, haga clic ![ en Desactivar icono.](../../media/m365-cc-sc-turn-on-off-icon.png) **Desactivar**.
 
 4. En el cuadro de diálogo de confirmación que aparece, haga clic **Activar** o **Desactivar**.
 
@@ -206,7 +206,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad
    - La directiva con el valor **de prioridad** más bajo (por ejemplo, **3**) solo tiene disponible **la opción Aumentar** prioridad.
    - Si tiene tres o más directivas, las directivas entre los valores de prioridad más alta y más baja tienen disponibles las opciones **Aumentar** prioridad y **Disminuir** prioridad.
 
-   Haga clic en el ![Icono Aumentar la prioridad](../../media/m365-cc-sc-increase-icon.png) **Aumentar la prioridad** o en el ![Icono Disminuir la prioridad](../../media/m365-cc-sc-decrease-icon.png) **Reducir la prioridad** para cambiar el valor de **Prioridad**.
+   Haga clic ![ en Aumentar icono de prioridad.](../../media/m365-cc-sc-increase-icon.png) **Aumentar prioridad o** ![ Disminuir icono de prioridad Disminuir la ](../../media/m365-cc-sc-decrease-icon.png) **prioridad** para cambiar el **valor de** prioridad.
 
 4. Cuando haya terminado, haga clic en **Cerrar** en el control flotante de detalles de la directiva.
 
@@ -218,7 +218,7 @@ Cuando se usa el portal de Microsoft 365 Defender para quitar una directiva de a
 
 2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre.
 
-3. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en el ![Icono Más acciones](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
+3. En la parte superior del menú desplegable de detalles de la directiva que aparece, haga clic ![ en El icono Más acciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Eliminar icono de directiva ](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
 
 4. En el cuadro de diálogo de confirmación que aparece, haga clic en **Sí**.
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: aa083adfc6734ad8fbb230f4fa35097a16698e23
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 402ae897717e935b59f0f63a48f7307a2ff522e4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247420"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568173"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware
 
@@ -48,7 +48,7 @@ Para obtener más información sobre cómo configurar reglas de reducción de su
 
 Puedes evaluar cómo una regla de reducción de superficie de ataque puede afectar a la red abriendo la recomendación de seguridad para esa regla en [Administración de amenazas y vulnerabilidades](/windows/security/threat-protection/#tvm).
 
-:::image type="content" source="images/asrrecommendation.png" alt-text="Reco de seguridad para la regla de reducción de superficie de ataque":::
+:::image type="content" source="images/asrrecommendation.png" alt-text="Reco de seguridad para la regla de reducción de superficie de ataque.":::
 
 En el panel de detalles de recomendación, comprueba el impacto del usuario para determinar qué porcentaje de dispositivos pueden aceptar una nueva directiva que habilite la regla en modo de bloqueo sin afectar negativamente a la productividad.
 

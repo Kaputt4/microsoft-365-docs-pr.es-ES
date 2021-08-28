@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las consideraciones de implementación y las preguntas más frecuentes sobre la simulación de ataques y el aprendizaje en Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12d00fee09ca21245812917fb00cff89c322e4112df970b25f853032344f6faf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a47f953b0c87e3ab88df45f150bd2e6d71611664
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873410"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568101"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  
 
@@ -41,7 +41,7 @@ Aunque toda la experiencia de creación y programación de simulación se ha dis
 
 Un servicio de reputación de direcciones URL puede identificar una o varias de las direcciones URL que usa el entrenamiento de simulación de ataques como no seguras. Google Caja fuerte Exploración en Google Chrome bloquea algunas de las direcciones URL de suplantación de identidad simuladas con un **mensaje de** sitio engañoso. Aunque trabajamos con muchos proveedores de reputación de direcciones URL para permitir siempre nuestras direcciones URL de simulación, no siempre tenemos cobertura completa.
 
-![Advertencia de sitio engañoso en Google Chrome](../../media/attack-sim-chrome-deceptive-site-message.png)
+![Advertencia de sitio engañoso en Google Chrome.](../../media/attack-sim-chrome-deceptive-site-message.png)
 
 Tenga en cuenta que este problema no afecta Microsoft Edge.
 
@@ -98,11 +98,11 @@ Cada campaña de simulación tiene un ciclo de vida. Cuando se crea por primera 
 
 Mientras una simulación está en **estado programado,** los informes de simulación estarán en su mayoría vacíos. Durante esta fase, el motor de simulación está resolviendo las direcciones de correo electrónico del usuario de destino, expandiendo grupos de distribución, quitando usuarios invitados de la lista, etc.:
 
-![Informes en estado programado](../../media/attack-sim-empty-reporting.png)
+![Informes en estado programado.](../../media/attack-sim-empty-reporting.png)
 
 Una vez que la simulación entra en la **fase en** curso, observará que la información empieza a engañarse en los informes:
 
-![Informes en el estado En curso](../../media/attack-sim-in-progress.png)
+![Informes en el estado En curso.](../../media/attack-sim-in-progress.png)
 
 Los informes de simulación individuales pueden tardar hasta 30 minutos en actualizarse después de la transición al **estado En** curso. Los datos del informe siguen compilando hasta que la simulación alcanza el **estado Completado.** Las actualizaciones de informes se producen en los siguientes intervalos:
 
@@ -168,7 +168,7 @@ Tenga en cuenta que el cambio de configuración puede tardar hasta 30 minutos en
 
 A: ¡Sí se puede! En la última página **Revisar simulación** del asistente para crear una nueva simulación, hay una opción para **Enviar una prueba**. Esta opción enviará un mensaje de simulación de suplantación de identidad (phishing) de ejemplo al usuario que ha iniciado sesión actualmente. Después de validar el mensaje de suplantación de identidad en la Bandeja de entrada, puede enviar la simulación.
 
-![Enviar un botón de prueba en la página Revisar simulación](../../media/attack-sim-review-simulation-page.png)
+![Enviar un botón de prueba en la página Revisar simulación.](../../media/attack-sim-review-simulation-page.png)
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>P: ¿Puedo dirigirme a usuarios que pertenecen a un inquilino diferente como parte de la misma campaña de simulación?
 

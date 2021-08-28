@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo definir directivas Caja fuerte dat
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a99189331b3bbfd7b0ae28ca3b7e5a33692c5bf
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: ffe207eb1f1aab42f3a0c2639410d308fbfb64e0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533464"
+ms.locfileid: "58568245"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte datos adjuntos en Microsoft Defender para Office 365
 
@@ -85,7 +85,7 @@ La creación de una directiva Caja fuerte datos adjuntos personalizada en el por
 
 1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas Caja fuerte datos adjuntos en \>  \>  \>  la **sección** Directivas.
 
-2. En la **página Caja fuerte datos adjuntos,** haga clic en Crear ![ icono ](../../media/m365-cc-sc-create-icon.png) **Crear**.
+2. En la **página Caja fuerte datos adjuntos,** haga clic en ![ Crear icono.](../../media/m365-cc-sc-create-icon.png) **Create**.
 
 3. Se abrirá el asistente para directivas. En la **página Nombre de la directiva,** configure las siguientes opciones:
    - **Nombre**: escriba un nombre único y descriptivo para la directiva.
@@ -98,7 +98,7 @@ La creación de una directiva Caja fuerte datos adjuntos personalizada en el por
    - **Grupos**: los grupos de distribución, los grupos de seguridad habilitados para correo electrónico o los Grupos de Microsoft 365 especificados de la organización.
    - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
-   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono de quitar](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    Para los usuarios o grupos, puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, escriba un asterisco (\*) para ver todos los valores disponibles.
 
@@ -161,8 +161,8 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 2. En la **Caja fuerte datos adjuntos,** seleccione una directiva de la lista haciendo clic en el nombre.
 
 3. En la parte superior del control flotante de detalles de la directiva que aparece, verá uno de los siguientes valores:
-   - **Directiva desactivada**: para activar la directiva, haga clic en el ![Icono Activar](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar**.
-   - **Directiva activada**: Para desactivar la directiva, haga clic en el ![Icono desactivar](../../media/m365-cc-sc-turn-on-off-icon.png) y **Desactivar**.
+   - **Directiva desactivada:** para activar la directiva, haga clic ![ en Activar icono.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar** .
+   - **Directiva en:** Para desactivar la directiva, haga clic ![ en Desactivar icono.](../../media/m365-cc-sc-turn-on-off-icon.png) **Desactivar**.
 
 4. En el cuadro de diálogo de confirmación que aparece, haga clic **Activar** o **Desactivar**.
 
@@ -191,7 +191,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad
    - La directiva con el valor **de prioridad** más bajo (por ejemplo, **3**) solo tiene disponible **la opción Aumentar** prioridad.
    - Si tiene tres o más directivas, las directivas entre los valores de prioridad más alta y más baja tienen disponibles las opciones **Aumentar** prioridad y **Disminuir** prioridad.
 
-   Haga clic en el ![Icono Aumentar la prioridad](../../media/m365-cc-sc-increase-icon.png) **Aumentar la prioridad** o en el ![Icono Disminuir la prioridad](../../media/m365-cc-sc-decrease-icon.png) **Reducir la prioridad** para cambiar el valor de **Prioridad**.
+   Haga clic ![ en Aumentar icono de prioridad.](../../media/m365-cc-sc-increase-icon.png) **Aumentar prioridad o** ![ Disminuir icono de prioridad Disminuir la ](../../media/m365-cc-sc-decrease-icon.png) **prioridad** para cambiar el **valor de** prioridad.
 
 4. Cuando haya terminado, haga clic en **Cerrar** en el control flotante de detalles de la directiva.
 
@@ -201,7 +201,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad
 
 2. En la **Caja fuerte datos adjuntos,** seleccione una directiva personalizada de la lista haciendo clic en el nombre de la directiva.
 
-3. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en el ![Icono Más acciones](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
+3. En la parte superior del menú desplegable de detalles de la directiva que aparece, haga clic ![ en El icono Más acciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Eliminar icono de directiva ](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
 
 4. En el cuadro de diálogo de confirmación que aparece, haga clic en **Sí**.
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga más información sobre la lista de frases, las expresiones regulares y los tipos de explicación de proximidad en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 45b5e472623d8122dad47be5b28df5f89766936b9dc444c35b90ed4cc00c521a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 405080575f48f439e7d978a8fc7ca00ecf956be0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865658"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568401"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Tipos de explicación en Microsoft SharePoint Syntex
 
@@ -42,17 +42,17 @@ Aunque no es obligatorio, puede tener más éxito con su explicación si la fras
 
 Si la distinción de mayúsculas y minúsculas es un requisito para identificar la etiqueta, usar el tipo Lista de frases le permite especificarla en la explicación si activa la casilla de verificación **Solo mayúsculas exactas**.
 
-![Distinción entre mayúsculas y minúsculas](../media/content-understanding/case-sensitivity.png)
+![Distinción entre mayúsculas y minúsculas.](../media/content-understanding/case-sensitivity.png)
 
 Un tipo de frase es especialmente útil cuando crea una explicación que identifica y extrae información en diferentes formatos, como fechas, números de teléfono y números de tarjetas de crédito. Por ejemplo, una fecha puede mostrarse en diferentes formatos (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, 1 de enero de 2020, etc.). Definir una lista de frases hace que su explicación sea más eficiente cuando capture cualquier posible variación en los datos que trata de identificar y extraer.
 
 Para el ejemplo del *número de teléfono*, extraiga el número de teléfono de cada médico remitente de todos los documentos de derivación médica que el modelo identifique. Cuando cree la explicación, escriba los distintos formatos que pueda mostrar un número de teléfono en el documento para poder capturar posibles variaciones.
 
-![Patrones de frases de número de teléfono](../media/content-understanding/pattern-list.png)
+![Patrones de frases de número de teléfono.](../media/content-understanding/pattern-list.png)
 
 Para este ejemplo, en **Configuración avanzada**, seleccione la casilla **Cualquier dígito entre 0 y 9** para reconocer cada valor de "0" usado en la lista de frases para ser cualquier dígito del 0 al 9.
 
-![Cualquier dígito entre 0-9](../media/content-understanding/digit-identity.png)
+![Cualquier dígito entre 0-9.](../media/content-understanding/digit-identity.png)
 
 De forma similar, si crea una lista de frases que incluya caracteres de texto, active la casilla de verificación **Cualquier letra de la a a la z** para reconocer cada carácter "a" que se use en la lista de frases como un carácter entre "a" y "z".
 
@@ -61,14 +61,14 @@ Por ejemplo, si crea una lista de frases de **Fecha** y quiere asegurarse de que
 - Agregar *aaa 0, 0000* y *aaa 00, 0000* a la lista de frases.
 - Asegúrese de que **Cualquier letra de la a a la z** también esté seleccionada.
 
-![Cualquier letra de la a a la z](../media/content-understanding/any-letter.png)
+![Cualquier letra de la a a la z.](../media/content-understanding/any-letter.png)
 
 Si tiene requisitos de usar mayúsculas y minúsculas en su lista de frases, puede seleccionar la casilla de verificación **Solo usar mayúsculas y minúsculas exactamente**. Para el ejemplo de fecha, si requiere que la primera letra del mes esté en mayúscula, debe:
 
 - Agregar *Aaa 0, 0000* y *Aaa 00, 0000* a la lista de frases.
 - Asegúrese de que **Solo usar mayúsculas y minúsculas exactamente** también está seleccionado.
 
-![Solo usar mayúsculas y minúsculas exactamente](../media/content-understanding/exact-caps.png)
+![Solo mayúsculas y minúsculas exactas.](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
 > En lugar de crear manualmente una explicación de las listas de frases, utilice la [Biblioteca de explicación](explanation-types-overview.md#use-explanation-templates) para usar plantillas de listas de frases para las listas de frases comunes, como *fecha*, *números de teléfono* o *número de tarjeta de crédito*.
@@ -137,7 +137,7 @@ Redmond, WA 98034<br>
 
 Use la explicación de proximidad para definir el número de teléfono que se debe desplazar para identificar mejor el número de la calle en los documentos.
 
-![Explicación de Proximidad](../media/content-understanding/proximity.png)
+![Explicación de proximidad.](../media/content-understanding/proximity.png)
 
 #### <a name="what-are-tokens"></a>¿Qué son los tokens?
 
@@ -173,7 +173,7 @@ Hay tres tokens en *(móvil)*:
 
 Configure la opción de proximidad para tener un intervalo de 0 a 3.
 
-![Ejemplo, Proximity](../media/content-understanding/proximity-example.png)
+![Ejemplo de proximidad.](../media/content-understanding/proximity-example.png)
 
 ## <a name="configure-where-phrases-occur-in-the-document"></a>Configurar dónde aparecen frases en el documento
 
@@ -181,7 +181,7 @@ Cuando crea una explicación, de forma predeterminada se busca en todo el docume
 
 Si nos referimos a nuestro ejemplo de documento de derivación médica, siempre se menciona el *médico remitente* en el primer párrafo del documento. Con la opción **Dónde se aparezcan estas frases**, en este ejemplo puede configurar su explicación para que busque esta etiqueta solo en la sección inicial del documento o en cualquier otra ubicación en la que pueda aparecer.
 
-![Opción Dónde se aparezcan estas frases](../media/content-understanding/phrase-location.png)
+![Opción Dónde aparezcan estas frases.](../media/content-understanding/phrase-location.png)
 
 Puede seleccionar una de las siguientes opciones para este valor:
 
@@ -189,23 +189,23 @@ Puede seleccionar una de las siguientes opciones para este valor:
 
 - Principio del archivo: se busca en el documento desde el principio hasta la ubicación de la frase.
 
-   ![Principio del archivo](../media/content-understanding/beginning-of-file.png)
+   ![Principio del archivo.](../media/content-understanding/beginning-of-file.png)
 
     En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. El valor **Posición final** se actualizará para mostrar el número de tokens que incluye el área seleccionada. Puede actualizar el valor de la **posición final** para ajustar el área seleccionada.
 
-   ![Cuadro de posición Principio del archivo](../media/content-understanding/beginning-box.png)
+   ![Cuadro de posición Principio del archivo.](../media/content-understanding/beginning-box.png)
 
 - Final del archivo: se busca en el documento desde el principio hasta la ubicación de la frase.
 
-   ![Final del archivo](../media/content-understanding/end-of-file.png)
+   ![Final del archivo.](../media/content-understanding/end-of-file.png)
 
     En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. El valor **Posición inicial** se actualizará para mostrar el número de tokens que incluye el área seleccionada. También puede actualizar el valor Posición inicial para ajustar el área seleccionada.
 
-   ![Cuadro de posición Final del archivo](../media/content-understanding/end-box.png)
+   ![Cuadro de posición Final del archivo.](../media/content-understanding/end-box.png)
 
 - Intervalo personalizado: se busca dentro de un rango especificado en el documento.
 
-   ![Intervalo personalizado](../media/content-understanding/custom-file.png)
+   ![Intervalo personalizado.](../media/content-understanding/custom-file.png)
 
     En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. Para esta opción, necesita seleccionar una posición **Inicio** y una posición **Fin**. Estos valores representan el número de tokens desde el principio del documento. Aunque puede escribir los valores manualmente, es más fácil ajustarlos en el cuadro de selección en el visor.
 
@@ -215,7 +215,7 @@ Aunque se pueden agregar manualmente varios valores de la lista de frases para l
 
 Por ejemplo, en lugar de añadir manualmente todas las variaciones para *fecha*, puede utilizar la plantilla de la lista de frases para *fecha* que ya incluye una serie de valores de la lista de frases:
 
-![Biblioteca de explicación](../media/content-understanding/explanation-template.png)
+![Biblioteca de explicación.](../media/content-understanding/explanation-template.png)
 
 La biblioteca de explicación incluye varias explicaciones de la *lista de frases* más utilizadas, entre las que se incluyen:
 
@@ -229,7 +229,7 @@ La biblioteca de explicación incluye varias explicaciones de la *lista de frase
 - Primera palabra de una frase: patrones comunes para palabras de hasta nueve caracteres.
 - Final de una oración: signos de puntuación comunes para el final de una oración
 - Tarjeta de crédito: formatos de número de tarjeta de crédito comunes. Por ejemplo, 1111-1111-1111-1111.
-- Número de la seguridad social: formato de número del seguro social de EE. UU. Por ejemplo, 111-11-1111.
+- Número de la seguridad social: formato de número del seguro social de EE. UU. Por ejemplo, 111-11-1111.
 - Casilla: una lista de frases que representa variaciones en una casilla rellenada. Por ejemplo, _X_, _ _X_.
 - Moneda: principales símbolos internacionales. Por ejemplo: .$
 - Correo electrónico CC: lista de frases con el término "CC:" que se suele encontrar cerca de los nombres o direcciones de correo electrónico de otras personas o grupos a los que se envió el mensaje.
@@ -254,28 +254,28 @@ La biblioteca de explicación también incluye tres tipos de plantillas automát
 
 Para ilustrar cómo funcionan las plantillas automáticas, en el siguiente archivo de ejemplo usaremos la plantilla de explicación Antes de la etiqueta para dar más información al modelo y obtener una coincidencia más precisa.
 
-![Archivos de ejemplo](../media/content-understanding/before-label.png)
+![Archivo de ejemplo.](../media/content-understanding/before-label.png)
 
 Al seleccionar la plantilla de explicación Antes de la etiqueta, buscará el primer conjunto de palabras que aparezca antes de la etiqueta en los archivos de ejemplo. Como puede ver en la imagen, las palabras que se identifican en el primer archivo de ejemplo son "As of".
 
-![Plantilla Antes de la etiqueta](../media/content-understanding/before-label-explanation.png)
+![Plantilla Antes de la etiqueta.](../media/content-understanding/before-label-explanation.png)
 
 Puede seleccionar **Agregar** para crear una explicación a partir de la plantilla.  A medida que agregue más archivos de ejemplo, se identificarán y agregarán palabras adicionales a la lista de frases.
 
-![Agregar la etiqueta](../media/content-understanding/before-label-add.png)
+![Agregar la etiqueta.](../media/content-understanding/before-label-add.png)
 
 #### <a name="to-use-a-template-from-the-explanation-library"></a>Para usar una plantilla de la biblioteca de explicación
 
 1. En la sección de **Explicaciones** de la página de **Entrenamiento** de su modelo, seleccione **Nuevo**, y luego seleccione **De Una Plantilla**.
 
-   ![Agregar Antes de etiqueta](../media/content-understanding/from-template.png)
+   ![Agregar Antes de etiqueta.](../media/content-understanding/from-template.png)
 
-2.  En la página **Plantillas de explicación**, seleccione la explicación que desee usar y, a continuación, seleccione **Agregar**.
+2.  En la página **Plantillas de explicación**, seleccione la explicación que desee usar y seleccione **Agregar**.
 
-    ![Seleccionar una plantilla](../media/content-understanding/phone-template.png)
+    ![Seleccione una plantilla.](../media/content-understanding/phone-template.png)
 
 3. La información de la plantilla que ha seleccionado se mostrará en la página **Crear una explicación**. Si es necesario, edite el nombre de la explicación y agregue o elimine elementos de la lista de frases.
 
-    ![Editar plantilla](../media/content-understanding/phone-template-live.png)
+    ![Editar plantilla.](../media/content-understanding/phone-template-live.png)
 
 4. Cuando finalice, haga clic en **Guardar**.

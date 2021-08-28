@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Usa esta Guía del laboratorio de pruebas para inscribir dispositivos Microsoft 365 entorno de prueba y administrarlos de forma remota.
-ms.openlocfilehash: ee7933a5e111b33ac7d3b17c0de2ef14483f9714
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5e27f2eecc9edda0a0fe7225d4ed47c7431eee77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356749"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568389"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscribir dispositivos iOS y Android en su Microsoft 365 entorno de prueba empresarial
 
@@ -32,7 +32,7 @@ Inscribir dispositivos iOS/iPadOS y Android en el entorno de prueba implica tres
 - [Fase 2: Inscribir los dispositivos iOS/iPadOS y Android](#phase-2-enroll-your-ios-and-android-devices)
 - [Fase 3: Administrar los dispositivos iOS/iPadOS y Android de forma remota](#phase-3-manage-your-ios-and-android-devices-remotely)
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -74,7 +74,7 @@ Para otras tareas que puedes ejecutar de forma remota, consulta [acciones de dis
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#mobile-device-management) de administración de dispositivos móviles en el entorno de prueba.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
   

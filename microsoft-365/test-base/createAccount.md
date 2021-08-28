@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: fb639139e083ed613dea018131e7748cd063e37c
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 114c0809aab3dcd219b49fd015752a8dec166cee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372534"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567993"
 ---
 # <a name="step-1-create-a-test-base-account"></a>Paso 1: Crear una cuenta base de prueba
 
@@ -29,15 +29,15 @@ Si no tienes una suscripción a Azure, crea una [cuenta gratuita antes](https://
  
 1. Busque **"Base de prueba"** en Azure Portal.
 
-![Crear una imagen de búsqueda de cuenta base de prueba](Media/CreateTestAccount1.png)
+![Crear una imagen de búsqueda de cuenta base de prueba.](Media/CreateTestAccount1.png)
 
 2. Haga **clic en "Agregar"** para crear una cuenta base de prueba.
 
-![Hacer clic en agregar para crear la cuenta](Media/CreateTestAccount2.png)
+![Al hacer clic en agregar para crear la cuenta.](Media/CreateTestAccount2.png)
 
 3.  Lea la casilla ```Terms of Use``` de verificación para confirmar su satisfacción con el archivo ```Terms of Use``` .
 
-![Revisar los términos de uso](Media/CreateTestAccount3.png)
+![Revise los términos de uso.](Media/CreateTestAccount3.png)
 
 4.  Rellene la información correcta en los siguientes requisitos: 
     -   Suscripción: Grupo de recursos
@@ -45,7 +45,7 @@ Si no tienes una suscripción a Azure, crea una [cuenta gratuita antes](https://
 
 **Actualmente, Test Base solo admite el nivel de precios estándar.**
 
-![Seleccione suscripción, grupo de recursos y tipo en los detalles](Media/CreateTestAccount4.png)
+![Seleccione suscripción, grupo de recursos y escriba los detalles.](Media/CreateTestAccount4.png)
 
 5.  Por último, haga clic en ```Review + Create``` para validar y habilitar la cuenta recién creada.
 

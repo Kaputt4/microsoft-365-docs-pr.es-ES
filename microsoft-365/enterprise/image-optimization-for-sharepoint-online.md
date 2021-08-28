@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Aprende a usar representaciones y sprites para mejorar el rendimiento de la imagen en tus SharePoint de publicación clásica en línea.
-ms.openlocfilehash: d3bc078bd462e6695afd74d36712757d291215a7b9bbdb6158c1862c034f8158
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1400b3f3bd78f6c3fda4b587b6974e3aaef18199
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864730"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568377"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Optimización de imágenes para SharePoint de publicación clásica en línea
 
@@ -35,7 +35,7 @@ La velocidad de carga de una página web depende del tamaño combinado de todos 
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>Uso de sprites para acelerar la carga de imágenes
 
-![Captura de pantalla de spcommon](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
+![Captura de pantalla de spcommon.](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
 
 Un sprite de imagen contiene muchas imágenes más pequeñas. Con CSS, se selecciona una parte de la imagen compuesta para mostrar en una parte determinada de la página con posicionamiento absoluto. Básicamente, mueves una sola imagen alrededor de la página en lugar de cargar varias imágenes y haces que una pequeña parte de esa imagen sea visible a través de una pequeña ventana donde se muestra al usuario final la parte necesaria de la imagen sprite. SharePoint Online usa sprites para mostrar sus diversos iconos en el archivo spcommon.png sprite.
 
@@ -75,17 +75,17 @@ Los pasos son relativamente sencillos, pero para que las imágenes usen las repr
 
     Puedes usar las representaciones listas para usar o elegir **Representaciones** de imagen para crear una nueva.
 
-    ![Captura de pantalla de representación de imágenes](../media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
+    ![Captura de pantalla de representación de imágenes.](../media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
   
 5. En la página **Representaciones de imágenes**, elija **Agregar nuevo elemento**.
 
-    ![Captura de pantalla de Agregar nuevo elemento](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
+    ![Captura de pantalla de Agregar nuevo elemento.](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
   
 6. En la página **Nueva representación de imagen**, en el cuadro **Nombre**, escriba un nombre para la representación.
 
 7. En los cuadros de texto **Ancho** y **Alto**, escriba el ancho y alto, en píxeles, de la representación y luego elija **Guardar**.
 
-    ![Captura de pantalla del nombre de la representación de imagen](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
+    ![Captura de pantalla de Image Rendition Name.](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
   
 ## <a name="custom-cropping-with-image-renditions"></a>Recorte personalizado con representaciones de imágenes
 

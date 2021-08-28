@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1563d44aded4c018a659b70d16800decf4bcd46f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: a1f51fcf497db0ca36a06fdcb5554e5cdc2861d7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533404"
+ms.locfileid: "58569734"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>Optimizar la implementación y las detecciones de reglas de ASR
 
@@ -36,7 +36,7 @@ ms.locfileid: "58533404"
 Las reglas de reducción de superficie de ataque [(ASR)](./attack-surface-reduction.md) identifican y evitan vulnerabilidades de malware típicas. Controlan cuándo y cómo se puede ejecutar el código potencialmente malintencionado. Por ejemplo, pueden impedir que JavaScript o VBScript inicien un archivo ejecutable descargado, bloquear llamadas a la API de Win32 de macros Office y bloquear procesos que se ejecutan desde unidades USB.
 
 
-:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="Tarjeta de administración de superficie de ataque":::
+:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="Tarjeta de administración de superficie de ataque.":::
 <br>
 *Tarjeta de administración de superficie de ataque*
 
@@ -48,7 +48,7 @@ La *tarjeta de administración de superficie de* ataque es un punto de entrada a
 
 Selecciona **Ir a administración de superficie de ataque** Informes Reglas de reducción de superficie de \>  \> **ataque** Agregar \> **exclusiones.** Desde allí, puede navegar a otras secciones del centro Microsoft 365 seguridad.
 
-![Pestaña Agregar exclusiones en la página Reglas de reducción de superficie de ataque en Microsoft 365 centro de seguridad](images/secconmgmt_asr_m365exlusions.png)<br>
+![Agregue la pestaña exclusiones en la página Reglas de reducción de superficie de ataque en Microsoft 365 de seguridad.](images/secconmgmt_asr_m365exlusions.png)<br>
 La ***pestaña Agregar exclusiones** de la página Reglas de reducción de superficie de ataque en Microsoft 365 centro de seguridad*
 
 > [!NOTE]

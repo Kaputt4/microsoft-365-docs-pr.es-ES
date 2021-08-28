@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá cómo funciona el cifrado de servicio con la clave de cliente en Microsoft 365.
-ms.openlocfilehash: 291f1161eb820efe6bc09149ae73b911888013844d9c2dd107b357018ba6a51f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4798c3fb2193fbd3c513a16246e288fb8e9177c4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842605"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568413"
 ---
 # <a name="service-encryption-with-customer-key"></a>Cifrado de servicio con clave de cliente
 
@@ -95,11 +95,11 @@ La jerarquía de claves usada para los DEP que cifran los datos de varias cargas
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Cifrados usados para cifrar claves para Exchange Online y Skype Empresarial
 
-![Cifrado de cifrado para Exchange Online clave de cliente](../media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Cifrado de cifrado para Exchange Online clave de cliente.](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Cifrados usados para cifrar claves para SharePoint online, OneDrive para la Empresa y Teams archivos
 
-![Cifrado de cifrado para SharePoint clave de cliente en línea](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Cifrado de cifrado para SharePoint clave de cliente en línea.](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente y administre una o varias Microsoft 365 inquilinos, con opciones para ubicaciones multige geográficas y en movimiento.
-ms.openlocfilehash: 6cf7ca2a754077172aa5d90752109ea6773378f7a6b7457ac158cc599ad06ba9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5dee78835de1e3e64f52f653f52ea4f32dcf6547
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888412"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568449"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Paso 1. Su Microsoft 365 para inquilinos empresariales
 
@@ -34,7 +34,7 @@ Un único inquilino proporciona la experiencia de productividad y colaboración 
 
 Este es un ejemplo que muestra la ubicación predeterminada y el inquilino de Azure AD de un Microsoft 365 inquilino.
 
-![Un único Microsoft 365 con su inquilino de Azure AD](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Un único Microsoft 365 inquilino con su inquilino de Azure AD.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 ## <a name="multiple-tenants"></a>Varios inquilinos
 
@@ -49,7 +49,7 @@ Hay muchas razones por las que su organización podría tener varios inquilinos:
 
 Este es un ejemplo de una organización que tiene dos inquilinos (inquilino A y inquilino B) en la misma ubicación geográfica predeterminada del centro de datos. Cada inquilino como inquilino de Azure AD independiente.
 
-![Varios Microsoft 365 inquilinos con sus propios inquilinos de Azure AD](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
+![Varios Microsoft 365 inquilinos con sus propios inquilinos de Azure AD.](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
 Cuando tiene varios inquilinos, hay restricciones y consideraciones adicionales al administrarlos y proporcionar servicios a los usuarios.
 
@@ -65,13 +65,13 @@ Antes de la migración de buzones entre inquilinos (en versión preliminar), al 
 
 Estos son dos inquilinos de ejemplo y sus buzones antes de la migración de buzones entre inquilinos.
 
-![Varios Microsoft 365 inquilinos y sus buzones](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
+![Varios Microsoft 365 inquilinos y sus buzones.](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
 
 En esta ilustración, dos inquilinos independientes tienen sus propios dominios y un conjunto de Exchange buzones de correo.
 
 Este es el inquilino de destino (inquilino A) después de la migración de buzones entre inquilinos.
 
-![El inquilino de destino después de la migración de buzones entre inquilinos](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-after.png)
+![El inquilino de destino después de la migración de buzones entre inquilinos.](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-after.png)
 
 En esta ilustración, un único inquilino tiene dominios y ambos conjuntos de Exchange buzones de correo.
 
@@ -91,7 +91,7 @@ En un entorno Multi-Geo, el inquilino Microsoft 365 consiste en una ubicación c
 
 Este es un ejemplo de una organización que tiene su ubicación predeterminada en Europa y una ubicación satélite en Norteamérica. Ambas ubicaciones comparten el mismo inquilino global de Azure AD para el único Microsoft 365 inquilino.
 
-![Ejemplo de un espacio empresarial multige Microsoft 365 geo](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
+![Ejemplo de un espacio empresarial multige Microsoft 365 geo.](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
 Para más información, vea [Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
 
@@ -103,7 +103,7 @@ Aunque la apertura de una nueva ubicación geográfica del centro de datos no af
 
 Este es un ejemplo en el que un inquilino Microsoft 365 se movió de la ubicación geográfica del centro de datos de la Unión Europea (UE) al ubicado en el Reino Unido (Reino Unido).
 
-![Ejemplo de mover un espacio empresarial Microsoft 365 entre geos del centro de datos](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
+![Ejemplo de mover un espacio Microsoft 365 entre las geos del centro de datos.](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
 
 Para obtener más información, vea [Moving core data to new Microsoft 365 datacenter geos](../enterprise/moving-data-to-new-datacenter-geos.md).
 
@@ -130,7 +130,7 @@ Para su Microsoft 365 inquilinos empresariales, ha determinado:
 
 Este es un ejemplo de un nuevo inquilino.
 
-![Ejemplo de un nuevo inquilino](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
+![Ejemplo de un nuevo inquilino.](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
 
 En esta ilustración, el inquilino tiene:
 
@@ -154,6 +154,6 @@ De forma continua, es posible que deba:
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 2. Optimizar el espacio empresarial para la red para el acceso](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
+[![Paso 2. Optimizar el espacio empresarial para la red para el acceso.](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
 
 Continúe con [las redes](tenant-management-networking.md) para proporcionar redes óptimas de sus trabajadores Microsoft 365 servicios en la nube.

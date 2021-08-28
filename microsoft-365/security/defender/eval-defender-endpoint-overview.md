@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8f5ddd873d5303748bab5ba391cfbf1d4f2b0066
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b630c1b10722056c3d201eb300aba8f68a38bbca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256521"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568857"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>Evaluación de Información general sobre puntos de conexión de Microsoft Defender
 
@@ -40,7 +40,7 @@ En este artículo se describe el proceso para habilitar y pilotar Microsoft Defe
 
 Siga estos pasos para habilitar y pilotar Microsoft Defender para endpoint.
 
-![Pasos para agregar Microsoft Defender para endpoint al entorno de evaluación de Defender](../../media/defender/m365-defender-endpoint-eval-steps.png)
+![Pasos para agregar Microsoft Defender para endpoint al entorno de evaluación de Defender.](../../media/defender/m365-defender-endpoint-eval-steps.png)
 
 
 En la tabla siguiente se describen los pasos de la ilustración.

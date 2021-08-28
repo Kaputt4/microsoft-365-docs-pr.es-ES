@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft Defender para Office 365 Plan 2. El filtrado de etiquetas está disponible en alertas, informes e investigaciones en Microsoft Defender para Office 365 identificar rápidamente a los usuarios etiquetados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9f3a3f82b510d0910858784bedae3f1be724efd099398e3b1dcbfe57978e3f8b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d224718502725e760c6a844f3bfd289bf3dd179c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883928"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568053"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft Defender para Office 365
 
@@ -46,6 +46,7 @@ Después de aplicar etiquetas del sistema o etiquetas personalizadas a los usuar
 - [Página de la entidad de correo electrónico](mdo-email-entity-page.md#other-innovations)
 - [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
 - [Vistas de campañas](campaigns.md)
+- [Envíos de usuarios y administradores](admin-submission.md)
 - Para las cuentas de prioridad, puede usar el [informe](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) Problemas de correo electrónico para cuentas de prioridad en el Centro Exchange administración (EAC).
 
 En este artículo se explica cómo configurar etiquetas de usuario en el portal Microsoft 365 Defender usuario. No hay cmdlets en Microsoft 365 Defender portal para administrar etiquetas de usuario.
@@ -77,7 +78,7 @@ Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayuda
 
 1. En el portal Microsoft 365 Defender, vaya **a** Configuración \> **Correo electrónico & etiquetas de usuario de** \> **colaboración.**
 
-2. En la **página Etiquetas de** usuario, haga clic ![ en Crear icono de etiqueta Crear ](../../media/m365-cc-sc-create-icon.png) **etiqueta**.
+2. En la **página Etiquetas de** usuario, haga clic ![ en Crear icono de etiqueta.](../../media/m365-cc-sc-create-icon.png) **Crear etiqueta**.
 
 3. El **Asistente para crear** etiquetas se abre en un nuevo menú desplegable. En la **página Definir etiqueta,** configure las siguientes opciones:
    - **Nombre:** escriba un nombre descriptivo único para la etiqueta. Este es el valor que verá y usará. Tenga en cuenta que no puede cambiar el nombre de una etiqueta después de crearla.
@@ -86,16 +87,16 @@ Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayuda
    Cuando termine, haga clic en **Siguiente**.
 
 4. En la página Asignar **miembros,** realice uno de los pasos siguientes:
-   - Haga ![ clic en Agregar miembros icono Agregar ](../../media/m365-cc-sc-create-icon.png) **miembros**. En el menú desplegable que aparece, siga uno de los pasos siguientes para agregar usuarios o grupos individuales:
+   - Haga clic ![ en Agregar icono de miembros.](../../media/m365-cc-sc-create-icon.png) **Agregar miembros**. En el menú desplegable que aparece, siga uno de los pasos siguientes para agregar usuarios o grupos individuales:
      - Haga clic en el cuadro y desplácese por la lista para seleccionar un usuario o grupo.
      - Haga clic en el cuadro y empiece a escribir para filtrar la lista y seleccionar un usuario o grupo.
      - Para agregar valores adicionales, haga clic en un área vacía del cuadro.
-     - Para quitar entradas individuales, haga clic en ![Quitar icono de entrada](../../media/m365-cc-sc-remove-selection-icon.png) junto a la entrada del cuadro.
-     - Para quitar todas las entradas, haga clic en Quitar icono de entrada en el elemento Usuarios nn seleccionados y ![ ](../../media/m365-cc-sc-remove-selection-icon.png) **nn grupos** situado debajo del cuadro.
+     - Para quitar entradas individuales, haga clic en ![Quitar icono de entrada.](../../media/m365-cc-sc-remove-selection-icon.png) junto a la entrada del cuadro.
+     - Para quitar todas las entradas, haga clic ![ en Quitar icono de entrada.](../../media/m365-cc-sc-remove-selection-icon.png) en el **elemento Usuarios nn seleccionados y grupos nn** debajo del cuadro.
 
      Cuando haya terminado, haga clic en **Agregar**.
 
-     Back on the **Assign members** page, you can also remove entries by clicking Delete icon next to ![ the ](../../media/m365-cc-sc-delete-icon.png) entry.
+     En la página **Asignar miembros,** también puede quitar entradas haciendo clic en ![ Eliminar icono.](../../media/m365-cc-sc-delete-icon.png) junto a la entrada.
 
    - Haga **clic en** Importar para seleccionar un archivo de texto que contenga las direcciones de correo electrónico de los usuarios o grupos. Asegúrese de que el archivo de texto contiene una entrada por línea.
 
@@ -122,7 +123,7 @@ Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayuda
 
 1. En el portal Microsoft 365 Defender, vaya **a** Configuración \> **Correo electrónico & etiquetas de usuario de** \> **colaboración.**
 
-2. En la **página Etiquetas de** usuario, seleccione la etiqueta de usuario de la lista y, a continuación, haga clic en Editar icono ![ de etiqueta Editar ](../../media/m365-cc-sc-edit-icon.png) **etiqueta**.
+2. En la **página Etiquetas de** usuario, seleccione la etiqueta de usuario de la lista y, a continuación, haga clic ![ en Editar icono de etiqueta.](../../media/m365-cc-sc-edit-icon.png) **Editar etiqueta**.
 
 3. En el control desplegable de detalles que aparece, el mismo asistente y la misma configuración están disponibles como se describe en la sección Usar el [portal de Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-user-tags) para crear etiquetas de usuario anteriormente en este artículo.
 
@@ -138,6 +139,6 @@ Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayuda
 
 1. En el portal Microsoft 365 Defender, vaya **a** Configuración \> **Correo electrónico & etiquetas de usuario de** \> **colaboración.**
 
-2. En la **página Etiquetas de** usuario, seleccione la etiqueta de usuario de la lista y, a continuación, haga clic en Eliminar icono ![ de etiqueta Eliminar ](../../media/m365-cc-sc-delete-icon.png) **etiqueta**.
+2. En la **página Etiquetas de** usuario, seleccione la etiqueta de usuario de la lista y, a continuación, haga clic ![ en Eliminar icono de etiqueta.](../../media/m365-cc-sc-delete-icon.png) **Eliminar etiqueta**.
 
 3. Lea la advertencia en el cuadro de diálogo de confirmación que aparece y, a continuación, haga clic **en Sí, quite**.

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da145578dd8dedcd5358d9bb9ef850c17ea282729dc16503cddcd7fc75b07414
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 33022fa1ad57b7adf13139272bcdca09a1d9487b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828779"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568833"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Triage and analyze your first incident
 
@@ -69,15 +69,15 @@ A continuación se muestra un solo enfoque para el triage:
 
 1. Vaya a la [página incidentes](incidents-overview.md) para iniciar el triaje. Aquí puede ver una lista de incidentes que afectan a su organización. De forma predeterminada, se organizan desde el incidente más reciente hasta el más antiguo. Desde aquí, también puede ver diferentes columnas para cada incidente que muestran su gravedad, categoría, número de alertas activas y entidades afectadas, entre otras. Puede personalizar el conjunto de columnas y ordenar la cola de incidentes por algunas de estas columnas seleccionando el nombre de columna. También puede filtrar la cola de incidentes según sus necesidades. Para obtener una lista completa de los filtros disponibles, vea [Priorizar incidentes](incident-queue.md#available-filters).
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-queue.png" alt-text="Ejemplo de la cola de incidentes":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-queue.png" alt-text="Ejemplo de la cola de incidentes.":::
 
     Un ejemplo de cómo puede realizar una triaje para este conjunto de incidentes es priorizar los incidentes que afectaron a más usuarios y dispositivos. En este ejemplo, puede priorizar el identificador de incidente 6769 porque afecta al mayor número de entidades: 7 dispositivos, 6 usuarios y 2 buzones. Además, el incidente parece contener alertas de Microsoft Defender for Identity que indican una alerta basada en identidad y un posible robo de credenciales.
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="Ejemplo de un incidente de alto impacto":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="Ejemplo de un incidente de alto impacto.":::
 
 2. Seleccione el círculo junto al nombre del incidente para revisar los detalles. Aparecerá un panel lateral en el lado derecho, que contiene información adicional que puede ayudar a su triage más.
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="Ejemplo de un panel lateral de incidentes":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="Ejemplo de un panel lateral de incidentes.":::
 
    Por ejemplo, al ver qué tácticas de [MITRE ATT&CK](https://attack.mitre.org/) usó el atacante en función de las categorías del incidente, puede priorizar este incidente porque el atacante usó credenciales robadas, estableció el comando y el control, realizó movimiento lateral y exfiltró algunos datos. Esto sugiere que el atacante ya ha entrado en profundidad en la red y posiblemente ha robado información confidencial.
 
@@ -85,13 +85,13 @@ A continuación se muestra un solo enfoque para el triage:
 
    Al desplazarse hacia abajo en el panel lateral, verá las entidades afectadas específicas, como usuarios, dispositivos y buzones. Puedes comprobar el nivel de exposición de cada dispositivo y los propietarios de los buzones afectados.
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-details.png" alt-text="Ejemplo de detalles de un panel lateral de incidentes":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-details.png" alt-text="Ejemplo de detalles del panel lateral de incidentes.":::
 
 3. Más abajo del panel lateral, puede encontrar las alertas asociadas. Microsoft 365 Defender ya ha realizado la correlación de estas alertas en un solo incidente, lo que le ahorra tiempo y recursos mejor invertidos en corregir el ataque. Las alertas son sospechosas y, por lo tanto, posiblemente eventos malintencionados del sistema que sugieren la presencia de un atacante en una red.
 
    En este ejemplo, se determinó que 87 alertas individuales formaban parte de un incidente de seguridad. Puedes ver todas las alertas para obtener una vista rápida de cómo se ha reproduciendo el ataque.
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-alerts.png" alt-text="Ejemplo de alertas en un panel lateral de incidentes":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-alerts.png" alt-text="Ejemplo de alertas en un panel lateral de incidentes.":::
 
 ## <a name="analyze-your-first-incident"></a>Analizar el primer incidente
 
@@ -103,37 +103,37 @@ Aquí le mostramos un ejemplo:
 
 1. Una vez determinada la prioridad del triage, un analista comienza un análisis en profundidad seleccionando el nombre del incidente. En esta página se muestra el **resumen de incidentes** donde se muestran los datos en las pestañas para ayudar con el análisis. En la **pestaña** Alertas se muestra el tipo de alertas. Los analistas pueden hacer clic en cada alerta para profundizar en el origen de detección correspondiente.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Ejemplo de la pestaña Resumen de un incidente":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Ejemplo de la pestaña Resumen de un incidente.":::
 
     Para obtener una guía rápida sobre qué dominio cubre cada origen de detección, revise la [sección Detectar](#detection-by-microsoft-365-defender) de este artículo.
 
 2. Desde la **pestaña Alertas,** un analista puede pivotar al origen de detección para llevar a cabo una investigación y un análisis más exhaustivos. Por ejemplo, al seleccionar Detección de malware Microsoft Cloud App Security como origen de detección, el analista se lleva a la página de alerta correspondiente.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="Ejemplo de selección de una alerta de un incidente":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="Ejemplo de selección de una alerta de un incidente.":::
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Ejemplo de una página correspondiente en Microsoft Cloud App Security":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Ejemplo de una página correspondiente en Microsoft Cloud App Security.":::
 
 3. Para investigar nuestro ejemplo más adelante, desplácese hasta la parte inferior de la página para ver los **usuarios afectados**. Para ver la actividad y el contexto que rodea la detección de malware, seleccione La página de usuario de Annette Hill .
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="Ejemplo de una página de usuario":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="Ejemplo de una página de usuario.":::
 
 4. En la página de usuario hay una lista cronológica de eventos a partir de un inicio de sesión arriesgado desde una alerta de dirección IP de red *TOR.* Aunque la desconfianza de una actividad depende de la naturaleza de la forma en que una organización lleva a cabo su negocio, en la mayoría de los casos el uso de The Onion Router (TOR), una red que permite a los usuarios navegar por la web de forma anónima, en un entorno empresarial puede considerarse altamente improbable e innecesario para operaciones en línea regulares.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="Ejemplo de la lista cronológica de eventos para un usuario":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="Ejemplo de la lista cronológica de eventos de un usuario.":::
 
 5. Cada alerta se puede seleccionar para obtener más información sobre la actividad. Por ejemplo, al seleccionar Actividad desde una alerta de **dirección IP de Tor,** se llega a la propia página de esa alerta. Annette es administradora de Office 365, lo que significa que tiene privilegios elevados y el incidente de origen podría haber llevado al acceso a información confidencial.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Ejemplo de detalles de alertas para Microsoft Cloud App Security":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Ejemplo de detalles de alertas para Microsoft Cloud App Security .":::
 
 6. Al seleccionar otras alertas, un analista puede obtener una imagen completa del ataque.
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 2: Información sobre cómo corregir incidentes](../../media/first-incident-overview/first-incident-path-step2.png)](first-incident-remediate.md)
+[![Paso 2: Obtenga información sobre cómo corregir incidentes.](../../media/first-incident-overview/first-incident-path-step2.png)](first-incident-remediate.md)
 
 Obtenga información sobre [cómo corregir incidentes](first-incident-remediate.md).
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

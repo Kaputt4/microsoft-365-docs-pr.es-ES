@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 98cd67154d1fb4ac7d0be741e1adee4fe71ab1ff
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 303b32499d73b14751ece094dfd6f900386cbba0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589713"
+ms.locfileid: "58568305"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 
@@ -39,15 +39,25 @@ Esta página le guiará a través de los pasos que debe seguir para configurar d
 Deberá seguir los pasos siguientes:
 
 1. [Obtener el paquete de incorporación de Microsoft Defender para endpoint](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
+
 2. [Crear un perfil de configuración en Jamf Pro el paquete de incorporación](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
+
 3. [Configurar Microsoft Defender para la configuración del punto de conexión](#step-3-configure-microsoft-defender-for-endpoint-settings)
+
 4. [Configurar Microsoft Defender para la configuración de notificación de extremo](#step-4-configure-notifications-settings)
+
 5. [Configurar Microsoft AutoUpdate (MAU)](#step-5-configure-microsoft-autoupdate-mau)
+
 6. [Conceder acceso en disco completo a Microsoft Defender para endpoint](#step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint)
+
 7. [Aprobar extensión de kernel para Microsoft Defender para endpoint](#step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint)
+
 8. [Aprobar extensiones del sistema para Microsoft Defender para endpoint](#step-8-approve-system-extensions-for-microsoft-defender-for-endpoint)
+
 9. [Configurar extensión de red](#step-9-configure-network-extension)
+
 10. [Programar exámenes con Microsoft Defender para endpoint en macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+
 11. [Implementar Microsoft Defender para endpoint en macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>Paso 1: Obtener el paquete de incorporación de Microsoft Defender para endpoint
@@ -64,6 +74,7 @@ Deberá seguir los pasos siguientes:
 
 5. Copie el archivo en su ubicación preferida. Por ejemplo, `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
 
+
 ## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>Paso 2: Crear un perfil de configuración en Jamf Pro el paquete de incorporación
 
 1. Busque el archivo `WindowsDefenderATPOnboarding.plist` de la sección anterior.
@@ -76,8 +87,7 @@ Deberá seguir los pasos siguientes:
 
 3. Escriba los siguientes detalles:
 
-   **General**:
-
+   **General**
    - Nombre: incorporación de MDATP para macOS
    - Descripción: MDATP EDR incorporación para macOS
    - Categoría: Ninguna
@@ -360,9 +370,8 @@ Todo lo que necesita hacer para tener actualizaciones es descargar un esquema ac
 
     ![Imagen de la imagen de carga de opciones de configuración.](images/f624de59b3cc86e3e2d32ae5de093e02.png)
 
-    > [!NOTE]
-    > Si se carga el archivo de Intune, se producirá el siguiente error:
-    >
+    >[!NOTE]
+    >Si se carga el archivo de Intune, se producirá el siguiente error:<br>
     >![Imagen de la carga de archivos de Intune de configuración.](images/8e69f867664668796a3b2904896f0436.png)
 
 11. Haga clic en **Guardar**.
@@ -440,7 +449,6 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
     ![Imagen de las opciones de configuración agregar guardar.](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
 6. Seleccione **Listo**. Verá el nuevo perfil **de configuración**.
-
     ![Imagen de la configuración realizada img.](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
 ## <a name="step-5-configure-microsoft-autoupdate-mau"></a>Paso 5: Configurar Microsoft AutoUpdate (MAU)
@@ -544,6 +552,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
     - Método de distribución: Instalar automáticamente
     - Nivel: nivel de equipo
 
+
     ![Imagen de configuración general.](images/ba3d40399e1a6d09214ecbb2b341923f.png)
 
 4. En **Configurar el control de directiva de preferencias de privacidad,** seleccione **Configurar**.
@@ -555,6 +564,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
     - Identificador: `com.microsoft.wdav`
     - Tipo de identificador: Id. de agrupación
     - Requisito de código: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+
 
     ![Imagen de los detalles de control de la directiva de preferencias de privacidad de configuración.](images/22cb439de958101c0a12f3038f905b27.png)
 
@@ -817,9 +827,9 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpo
 
     **El archivo de** manifiesto no es necesario. Microsoft Defender para endpoint funciona sin archivo de manifiesto.
 
-    **Ficha Opciones:** Mantenga los valores predeterminados.
+    **Pestaña Opciones**<br> Mantenga los valores predeterminados.
 
-    **Pestaña Limitaciones:** Mantenga los valores predeterminados.
+    **Pestaña Limitaciones**<br> Mantenga los valores predeterminados.
 
      ![Imagen de la pestaña de limitación de configuración.](images/56dac54634d13b2d3948ab50e8d3ef21.png)
 

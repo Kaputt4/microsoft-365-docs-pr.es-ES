@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Obtenga información sobre cómo ver los informes mediante pestañas y filtros de navegación.
-ms.openlocfilehash: 8bf7d82b3c7ab8bab175da57a120ecf91e96e535
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 4cd39fea09f4204701b4183d02cd64d87d591933
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400312"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569266"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Navegar y usar los informes en Análisis de uso de Microsoft 365
 
@@ -35,35 +35,35 @@ Para empezar a usar los informes, aquí tiene algunas sugerencias:
 
 - Use las pestañas de navegación a la izquierda o en una métrica relacionada en la página **Resumen** ejecutivo para navegar a cada informe de nivel superior.
 
-    ![Muestra las pestañas de navegación a la izquierda](../../media/navigate-usage-analytics1.png)
+    ![Muestra las pestañas de navegación a la izquierda.](../../media/navigate-usage-analytics1.png)
 
 - Use las pestañas de navegación en la parte superior de cada informe de nivel superior para navegar a diferentes informes dentro de ese nivel.
 
-    ![Muestra las pestañas de navegación en la parte superior de cada informe](../../media/navigate-usage-analytics2.png)
+    ![Muestra las pestañas de navegación en la parte superior de cada informe.](../../media/navigate-usage-analytics2.png)
 
 - Muchos informes contienen una segmentación de datos donde puede filtrar el producto, el atributo AAD o la actividad que desea ver. Pueden ser de selección única o de selección múltiple.
 
-    ![Muestra una segmentación de datos](../../media/navigate-usage-analytics3.png)
+    ![Muestra una segmentación de datos.](../../media/navigate-usage-analytics3.png)
 
-    ![Muestra una segmentación de datos](../../media/navigate-usage-analytics4.png)
+    ![Muestra una segmentación de datos.](../../media/navigate-usage-analytics4.png)
 
 
 - Mantenga el mouse sobre puntos de datos para ver un globo que contiene detalles.
 
-    ![Muestra el ejemplo de puntero](../../media/navigate-usage-analytics6.png)
+    ![Muestra el ejemplo de puntero.](../../media/navigate-usage-analytics6.png)
 
 El usuario que haya instanciado la aplicación de plantilla tendrá la capacidad de personalizar el informe según sus necesidades. Para personalizar la aplicación de plantilla:
 
 - Seleccione **Editar informe** en la parte superior del informe.
 
-    ![Muestra el informe Editar](../../media/navigate-usage-analytics7.png)
+    ![Muestra Editar informe.](../../media/navigate-usage-analytics7.png)
 
 
 - Cree sus propios objetos visuales con los [conjuntos de datos](usage-analytics-data-model.md) subyacentes.
 
 - Use Power BI Desktop para traer sus propios orígenes de datos.
 
-Para compartir los informes, solo tiene que seleccionar el botón compartir ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) en la parte superior de la página.
+Para compartir los informes, solo tiene que seleccionar el botón compartir ![Power BI Icono Compartir.](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) en la parte superior de la página.
 
 Para obtener información sobre cómo personalizar los informes, consulte [Customizing the reports in Microsoft 365 usage analytics](customize-reports.md).
 

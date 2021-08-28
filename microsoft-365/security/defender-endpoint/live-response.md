@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b72291e1c5b63cea65b6990a82e9de24cfc8fd5ea2ae75e31b82bc4033a0bc5f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0fb08635f50eedbf5fd96b8abc64ef9dfae60cbf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800128"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569698"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -85,7 +85,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 
   Recibirá el siguiente error:
 
-  ![Imagen del mensaje de error](images/live-response-error.png)
+  ![Imagen del mensaje de error.](images/live-response-error.png)
 
 - **Habilitar la ejecución de script sin signo de respuesta** en directo (opcional).
 

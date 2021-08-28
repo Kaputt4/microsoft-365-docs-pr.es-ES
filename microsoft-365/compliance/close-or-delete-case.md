@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre qué sucede cuando se cierra o elimina una investigación o un caso legal admitido por un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f67fbbbc57af2802da8aa73803c3ba106b1a9fc55d608a1468feec327bc99fec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1096223c3bc6d0648aa45207595c816e26e70da8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900139"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569638"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Cerrar o eliminar un Advanced eDiscovery caso
 
@@ -36,7 +36,7 @@ Esto es lo que sucede al cerrar un Advanced eDiscovery caso:
 
 - Cerrar un caso solo desactiva las retenciones que están asociadas a ese caso. Si otras retenciones se encuentran en una ubicación de contenido (como una retención por juicio, una retención de exhibición de documentos electrónicos principal o una retención de un caso Advanced eDiscovery diferente) esas retenciones se mantendrán.
 
-- El caso sigue estando en la página exhibición de documentos electrónicos de la Centro de cumplimiento de Microsoft 365. Se conservan los detalles, las retenciones, las búsquedas y los miembros de un caso cerrado.
+- El caso sigue estando en la página exhibición de documentos electrónicos de la Centro de cumplimiento de Microsoft 365. Se conservan los detalles, las suspensiones, las búsquedas y los miembros de un caso cerrado.
 
 - Puede editar un caso después de cerrarlo. Por ejemplo, puede agregar o quitar miembros, crear búsquedas, exportar resultados de búsqueda y preparar resultados de búsqueda para el análisis en Advanced eDiscovery. La principal diferencia entre los casos activos y cerrados es que las retenciones se desactivarán cuando se cierra un caso.
 
@@ -46,7 +46,7 @@ Para cerrar un caso:
 
 2. En la pestaña **Configuración**, en **Información del**, haga clic en **Seleccionar**.
 
-   ![Obtener acceso a la página desplegable de información de caso en un Advanced eDiscovery caso](..\media\AeDSelectCaseInformation.png) 
+   ![Obtenga acceso a la página desplegable de información del caso en un Advanced eDiscovery caso.](..\media\AeDSelectCaseInformation.png) 
 
 3. En la parte inferior de la **página desplegable Información** del caso, haga clic en Acciones y, a continuación, haga clic en Cerrar **caso**. 
 

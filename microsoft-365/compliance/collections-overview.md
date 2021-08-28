@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use colecciones en Advanced eDiscovery para buscar y recopilar contenido relacionado con su caso o investigación.
-ms.openlocfilehash: e808db2829c8742fe34faa56965bacb79283b14b67a6ffbfccd8c43c88f12bac
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dabc321f432996d888686b16e05d8ad6cb6cfc3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866485"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568425"
 ---
 # <a name="learn-about-collections-in-advanced-ediscovery"></a>Obtenga información sobre las colecciones en Advanced eDiscovery
 
@@ -44,7 +44,7 @@ Con el lanzamiento de colecciones en un  Advanced eDiscovery, la pestaña Búsqu
 
 Para empezar a usar colecciones en Advanced eDiscovery, este es un flujo de trabajo básico y descripciones de cada paso del proceso.
 
-![Flujo de trabajo de colecciones en Advanced eDiscovery](../media/CollectionsWorkflow.png)
+![Flujo de trabajo de colecciones en Advanced eDiscovery.](../media/CollectionsWorkflow.png)
 
 1. **Crear y ejecutar una colección borrador**. El primer paso es crear un borrador de colección y definir los orígenes de datos de custodia y no custodia que se buscarán. También puede buscar en otros orígenes de datos que no se han agregado al caso. Después de agregar los orígenes de datos, configure la consulta de búsqueda para buscar en los orígenes de datos contenido relevante para el caso. Puede usar palabras clave, propiedades y condiciones para crear consultas de búsqueda que devuelvan contenido que probablemente sea más relevante para el caso. Para obtener más información, vea [Create a draft collection](create-draft-collection.md).
 

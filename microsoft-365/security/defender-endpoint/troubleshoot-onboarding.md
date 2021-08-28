@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: e74ca9a12938028d3e9710e46de8b2f82bca00a3c01f241c74b344f9e211d082
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fbf7b2328a453f1fb20d77553548a71a0e1ca8ab
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890158"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569986"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -134,7 +134,7 @@ Nombre del registro: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Pr
 
 Nombre del canal: Administrador
 
-ID | Severity | Descripción del evento | Pasos para la solución de problemas
+ID | Gravedad | Descripción del evento | Pasos para la solución de problemas
 :---|:---|:---|:---
 1819 | Error | Microsoft Defender para CSP de extremo: no se pudo establecer el valor del nodo. NodeId: (%1), TokenName: (%2), Result: (%3). | Descargue la [actualización acumulativa para Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
@@ -163,7 +163,7 @@ Si las herramientas de implementación usadas no indican un error en el proceso 
 
 5. En la **ficha Filtro,** en **Nivel de evento:** seleccione **Crítico**, **Advertencia** y **Error** y haga clic en **Aceptar**.
 
-   ![Imagen del filtro de registro del Visor de eventos](images/filter-log.png)
+   ![Imagen del filtro de registro del Visor de eventos.](images/filter-log.png)
 
 6. Los eventos que pueden indicar problemas aparecerán en el **panel** Operativo. Puede intentar solucionarlos en función de las soluciones de la tabla siguiente:
 
@@ -217,7 +217,7 @@ En primer lugar, debe comprobar que el servicio está configurado para iniciarse
 
    Si el servicio está habilitado, el resultado debería ser parecido a la siguiente captura de pantalla:
 
-   ![Resultado del comando de consulta sc para diagtrack](images/windefatp-sc-qc-diagtrack.png)
+   ![Resultado del comando de consulta sc para diagtrack.](images/windefatp-sc-qc-diagtrack.png)
 
    Si el valor no está establecido en , tendrás que establecer el servicio para `START_TYPE` `AUTO_START` que se inicie automáticamente.
 
@@ -289,7 +289,7 @@ Si se produce un error en la comprobación y el entorno usa un proxy para conect
 
 - También puede comprobar los valores de clave del Registro anteriores para comprobar que la directiva está deshabilitada, abriendo la clave del Registro `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` .
 
-    ![Imagen de clave del Registro para Antivirus de Microsoft Defender](images/atp-disableantispyware-regkey.png)
+    ![Imagen de clave del Registro para Antivirus de Microsoft Defender.](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
    > Todos Windows Defender (wdboot, wdfilter, wdnisdrv, wdnissvc y windefend) deben estar en su estado predeterminado. Cambiar el inicio de estos servicios no es compatible y puede forzarte a volver a crear una imagen del sistema.
@@ -312,17 +312,17 @@ También es posible que tenga que comprobar lo siguiente:
 
 - Compruebe que hay un Microsoft Defender para Endpoint Service ejecutándose en la **pestaña Procesos** del Administrador **de tareas**. Por ejemplo:
 
-    ![Imagen de la vista de proceso con Microsoft Defender para Endpoint Service en ejecución](images/atp-task-manager.png)
+    ![Imagen de la vista de proceso con Microsoft Defender para Endpoint Service en ejecución.](images/atp-task-manager.png)
 
 - Compruebe **Event Viewer** Applications and Services  >  **Logs** Operation  >  **Manager** para ver si hay algún error.
 
 - En **Servicios,** compruebe si **el Microsoft Monitoring Agent** se está ejecutando en el servidor. Por ejemplo,
 
-    ![Imagen de los servicios](images/atp-services.png)
+    ![Imagen de los servicios.](images/atp-services.png)
 
 - En **Microsoft Monitoring Agent**  >  **Azure Log Analytics (OMS),** compruebe los espacios de trabajo y compruebe que el estado se está ejecutando.
 
-    ![Imagen de Microsoft Monitoring Agent propiedades](images/atp-mma-properties.png)
+    ![Imagen de Microsoft Monitoring Agent propiedades.](images/atp-mma-properties.png)
 
 - Compruebe que los dispositivos se reflejan en la **lista Dispositivos** del portal.
 
@@ -346,119 +346,119 @@ Los pasos siguientes proporcionan instrucciones para el siguiente escenario:
 
 1. Cree una aplicación en Microsoft Endpoint Configuration Manager.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration1](images/mecm-1.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration1.](images/mecm-1.png)
 
 2. Seleccione **Especificar manualmente la información de la aplicación**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration2](images/mecm-2.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration2.](images/mecm-2.png)
 
 3. Especifique información sobre la aplicación y, a continuación, **seleccione Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration3](images/mecm-3.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration3.](images/mecm-3.png)
 
 4. Especifique información sobre el centro de software y, a continuación, **seleccione Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuración4](images/mecm-4.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration4.](images/mecm-4.png)
 
 5. En **Tipos de implementación,** **seleccione Agregar**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuración5](images/mecm-5.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration5.](images/mecm-5.png)
 
 6. Seleccione **Especificar manualmente la información del tipo de implementación** y, a continuación, seleccione **Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration6](images/mecm-6.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration6.](images/mecm-6.png)
 
 7. Especifique información sobre el tipo de implementación y, a continuación, **seleccione Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration7](images/mecm-7.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration7.](images/mecm-7.png)
 
 8. En **el programa de** instalación de  >  **contenido,** especifique el comando: `net start sense` .
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration8](images/mecm-8.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration8.](images/mecm-8.png)
 
 9. En **El método Detection**, seleccione Configurar reglas para detectar la presencia **de** este tipo de implementación y, a continuación, seleccione **Agregar cláusula**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration9](images/mecm-9.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration9.](images/mecm-9.png)
 
 10. Especifique los siguientes detalles de la regla de detección y, a continuación, **seleccione Aceptar**:
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuración10](images/mecm-10.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuración10.](images/mecm-10.png)
 
 11. En **Método de detección,** **seleccione Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration11](images/mecm-11.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuración11.](images/mecm-11.png)
 
 12. En **Experiencia de usuario,** especifique la siguiente información y, a continuación, **seleccione Siguiente**:
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration12](images/mecm-12.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration12.](images/mecm-12.png)
 
 13. En **Requisitos**, seleccione **Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuración13](images/mecm-13.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuración13.](images/mecm-13.png)
 
 14. En **Dependencias**, seleccione **Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuración14](images/mecm-14.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuración14.](images/mecm-14.png)
 
 15. En **Resumen,** seleccione **Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuración15](images/mecm-15.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuración15.](images/mecm-15.png)
 
 16. En **Finalización,** seleccione **Cerrar**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration16](images/mecm-16.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuración16.](images/mecm-16.png)
 
 17. En **Tipos de implementación,** seleccione **Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration17](images/mecm-17.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuración17.](images/mecm-17.png)
 
 18. En **Resumen,** seleccione **Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuración18](images/mecm-18.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuración18.](images/mecm-18.png)
 
-    A continuación, se muestra el estado: ![ Imagen de Microsoft Endpoint Configuration Manager configuración19](images/mecm-19.png)
+    A continuación, se muestra el estado: ![ Imagen de Microsoft Endpoint Configuration Manager configuración19.](images/mecm-19.png)
 
 19. En **Finalización,** seleccione **Cerrar**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuración20](images/mecm-20.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuración20.](images/mecm-20.png)
 
 20. Ahora puedes implementar la aplicación haciendo clic con el botón secundario en la aplicación y **seleccionando Implementar**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration21](images/mecm-21.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration21.](images/mecm-21.png)
 
 21. En **General,** **seleccione Distribuir automáticamente contenido para dependencias** y **Examinar**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration22](images/mecm-22.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration22.](images/mecm-22.png)
 
 22. En **Contenido,** **seleccione Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration23](images/mecm-23.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration23.](images/mecm-23.png)
 
 23. En **Configuración de implementación,** seleccione **Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration24](images/mecm-24.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration24.](images/mecm-24.png)
 
 24. En **Programación,** **seleccione Tan pronto como sea posible después de la hora disponible**, luego seleccione **Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration25](images/mecm-25.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration25.](images/mecm-25.png)
 
 25. En **Experiencia del usuario,** seleccione Confirmar cambios en la fecha límite o durante una ventana de **mantenimiento (requiere reinicios)** y, a continuación, **seleccione Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration26](images/mecm-26.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration26.](images/mecm-26.png)
 
 26. En **Alertas,** **seleccione Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration27](images/mecm-27.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration27.](images/mecm-27.png)
 
 27. En **Resumen,** seleccione **Siguiente**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration28](images/mecm-28.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuración28.](images/mecm-28.png)
 
-    A continuación, se muestra el estado ![ Imagen de Microsoft Endpoint Configuration Manager configuración29](images/mecm-29.png)
+    A continuación, se muestra el estado ![ Imagen de Microsoft Endpoint Configuration Manager configuración29.](images/mecm-29.png)
 
 28. En **Finalización,** seleccione **Cerrar**.
 
-    ![Imagen de Microsoft Endpoint Configuration Manager configuration30](images/mecm-30.png)
+    ![Imagen de Microsoft Endpoint Configuration Manager configuration30.](images/mecm-30.png)
 
 
 ## <a name="related-topics"></a>Temas relacionados

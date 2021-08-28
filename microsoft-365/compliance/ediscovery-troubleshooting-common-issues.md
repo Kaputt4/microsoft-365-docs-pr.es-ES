@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Obtenga información sobre los pasos básicos de solución de problemas que puede seguir para resolver problemas comunes en Office 365 exhibición de documentos electrónicos.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b4c5389ec650be18c9f65e7fc85f4166a8eef14
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: b562e3d22557133630fa8c7c7d343432736b9f4f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394593"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569614"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar y resolver problemas comunes de exhibición de documentos electrónicos
 
@@ -60,7 +60,7 @@ Compruebe si hay usuarios duplicados o una lista de distribución con el mismo i
 
 Una exhibición de documentos electrónicos o una búsqueda de contenido pueden producir el siguiente error: `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
-![Error en la captura de pantalla de error de ubicación específica de la búsqueda](../media/edisc-tshoot-specific-location-search-fails.png)
+![Error en la captura de pantalla de la ubicación específica de la búsqueda.](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>Solución
 
@@ -159,7 +159,7 @@ Al exportar resultados de búsqueda desde la exhibición de documentos electrón
 
 Al ejecutar una búsqueda de exhibición de documentos electrónicos, si la búsqueda falla continuamente con un error similar al "Error interno del servidor (500) ocurrido", es posible que necesite volver a ejecutar la búsqueda solo en ubicaciones de buzones específicas.
 
-![Captura de pantalla de error interno del servidor 500](../media/edisc-tshoot-error-500.png)
+![Captura de pantalla del error interno del servidor 500.](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>Solución
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtén información sobre cómo empezar a recopilar datos para el inquilino mediante la aplicación de plantilla Microsoft 365 de análisis de uso en Power BI.
-ms.openlocfilehash: 4d569c40283eb7f88c734de91821e1fe7a7793ab
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 6c2dfef0d925df92316d407e5a425a7ddfa03952
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394641"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569686"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitar análisis de uso de Microsoft 365
 
@@ -74,7 +74,7 @@ Para iniciar la aplicación de plantilla, debe ser un administrador **global,** 
 
 3. En la **pestaña** Aplicaciones, escriba Microsoft 365 en el cuadro de búsqueda y, a continuación, **seleccione Microsoft 365 análisis de** uso Obtener \> **ahora**.
 
-    [![Seleccione Obtener ahora](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    [![Selecciona Obtener ahora.](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
 
 4. Una vez instalada la aplicación. Seleccione el icono para abrirlo.
 
@@ -84,7 +84,7 @@ Para iniciar la aplicación de plantilla, debe ser un administrador **global,** 
 
 7. En la siguiente pantalla, seleccione **OAuth2** como el **método de autenticación** \> **Iniciar sesión**. Si eliges cualquier otro método de autenticación, se producirá un error en la conexión a la aplicación de plantilla.
 
-    ![Elegir cuenta de Microsoft como método de autenticación](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
+    ![Elija Cuenta de Microsoft como método de autenticación.](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
 
 8. Después de crear una instancia de la aplicación de plantilla, Microsoft 365 panel de análisis de uso estará disponible en Power BI en la web. La carga inicial del panel llevará entre 2 y 30 minutos.
 

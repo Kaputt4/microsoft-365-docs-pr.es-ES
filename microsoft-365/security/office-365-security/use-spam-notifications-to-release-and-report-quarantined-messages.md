@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las notificaciones de correo no deseado del usuario final para mensajes en cuarentena en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ed012977bdd8c05e0dae2e77e81ea64498e6db2dcbc795e697d6289660d2beec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a07a4196b9ad936c6dc83d8eb300332ad9aaac47
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56886164"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568461"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Usar notificaciones de correo no deseado de usuario para liberar e informar de mensajes en cuarentena
 
@@ -39,14 +39,14 @@ ms.locfileid: "56886164"
 
 En las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, la cuarentena retiene los mensajes que pueden ser peligrosos o no deseados. Para obtener más información, vea [Mensajes en cuarentena en EOP](quarantine-email-messages.md).
 
-De forma predeterminada, las notificaciones de correo no deseado del usuario final están deshabilitadas en las directivas contra correo no deseado. Cuando un administrador habilita las notificaciones de [correo](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)no deseado del usuario final, los destinatarios (incluidos los buzones compartidos con automapping habilitado) recibirán notificaciones periódicas sobre sus mensajes que se han puesto en cuarentena como correo no deseado, correo electrónico masivo o suplantación de identidad (a partir de abril de 2020).
+De forma predeterminada, las notificaciones de correo no deseado del usuario final están deshabilitadas en las directivas contra correo no deseado. Cuando un administrador habilita las notificaciones de [correo](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)no deseado del usuario final, los destinatarios (incluidos los buzones compartidos) recibirán notificaciones periódicas sobre sus mensajes que se han puesto en cuarentena como correo no deseado, correo electrónico masivo o suplantación de identidad (a partir de abril de 2020).
 
 En el caso de los buzones compartidos, las notificaciones de correo no deseado del usuario final solo se admiten para los usuarios a los que se les concede permiso FullAccess para el buzón compartido. Para obtener más información, [vea Use the EAC to edit shared mailbox delegation](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
 
-La notificación de correo no deseado del usuario final no es compatible con los grupos.
-
 > [!NOTE]
 > Los mensajes que se han puesto en cuarentena como phishing de elevada confianza, malware o por reglas de flujo de correo (también conocidas como reglas de transporte) solo están disponibles para los administradores. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
+>
+> Las notificaciones de correo no deseado del usuario final no son compatibles con los grupos.
 
 Una notificación de correo no deseado del usuario final contiene la siguiente información para cada mensaje en cuarentena:
 
@@ -57,7 +57,7 @@ Una notificación de correo no deseado del usuario final contiene la siguiente i
 - **Versión:** para mensajes de correo no deseado (no suplantación de identidad), puede liberar el mensaje aquí sin ir a **Poner** en cuarentena el portal Microsoft 365 Defender correo electrónico.
 - **Revisión:** haga clic en este vínculo para ir a **Cuarentena** en el portal de Microsoft 365 Defender, donde puede (según por qué el mensaje se ha puesto en cuarentena), liberar, eliminar o notificar los mensajes en cuarentena. Para obtener más información, vea Buscar y liberar mensajes [en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md).
 
-![Ejemplo de notificación de correo no deseado para el usuario final](../../media/end-user-spam-notification.png)
+![Ejemplo de notificación de correo no deseado del usuario final.](../../media/end-user-spam-notification.png)
 
 > [!NOTE]
 > Un remitente bloqueado aún puede enviarle correo. Los mensajes de este remitente que se envían a su buzón se mueven inmediatamente a la carpeta Correo no deseado. Los mensajes futuros de este remitente irán a la carpeta correo no deseado o a la cuarentena del usuario final. Si desea eliminar estos mensajes al llegar en lugar de anularlos, use reglas de flujo de correo [(también](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) conocidas como reglas de transporte) para eliminar los mensajes al llegar.

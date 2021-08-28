@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo configurar Temas Microsoft Viva
-ms.openlocfilehash: fedf5efd6021dc425dcd7c26666edb66b1b780d6
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: fc5647b65a62afdff55c22b8a8b5526a7ddfa14a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502776"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568701"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurar Temas Microsoft Viva
 
@@ -53,7 +53,7 @@ Para asignar licencias:
 4. En **Aplicaciones,** asegúrese de que Graph conectores de búsqueda con **Index (Temas de Viva)** y **Temas de Viva** estén seleccionados.
 
    > [!div class="mx-imgBorder"]
-   > ![Temas Microsoft Viva licencias en el Centro de administración de Microsoft 365](../media/topic-experiences-licenses.png)
+   > ![Temas Microsoft Viva licencias en el Centro de administración de Microsoft 365.](../media/topic-experiences-licenses.png)
 
 5. Haga clic en **Guardar cambios**.
 
@@ -68,11 +68,11 @@ Para configurar temas
 1. En el [Centro de administración de Microsoft 365](https://admin.microsoft.com), seleccione **Configurar** y, a continuación, vea la sección **Archivos y** contenido.
 2. En la **sección Archivos y contenido,** haga **clic Conectar para que los usuarios lo den a conocer.**
 
-    ![Conectar personas al conocimiento](../media/admin-org-knowledge-options.png) 
+    ![Conectar personas al conocimiento.](../media/admin-org-knowledge-options.png) 
 
 3. En la **página Conectar personas al conocimiento,** haga clic en Introducción para que le guía por el proceso de configuración. 
 
-    ![Comenzar](../media/k-get-started.png) 
+    ![Introducción.](../media/k-get-started.png) 
 
 4. En la página Elegir cómo pueden encontrarse los temas de **Viva Topics,** configurará la detección de temas. En la **sección Seleccionar SharePoint** temas, seleccione qué sitios SharePoint se rastrearán como orígenes de los temas durante la detección. Elija entre:
     - **Todos los sitios**: Todos los sitios de SharePoint de su organización. Esto incluye los sitios actuales y futuros.
@@ -80,13 +80,13 @@ Para configurar temas
     - **Solo sitios seleccionados:** escriba los nombres de los sitios que desea incluir. También puede cargar una lista de sitios. Los sitios creados en el futuro no se incluirán como fuentes para el descubrimiento de temas.
     - **Ningún sitio**: No incluya ningún sitio de SharePoint.
 
-    ![Elegir cómo buscar temas](../media/ksetup1.png) 
+    ![Elija cómo buscar temas.](../media/ksetup1.png) 
    
 5. En la **sección Excluir temas por** nombre, puede agregar nombres de los temas que desea excluir de la detección de temas. Use esta configuración para evitar que la información confidencial se incluya como temas. Las opciones son:
     - **No excluir ningún tema** 
     - **Excluir temas por nombre**
 
-    ![Excluir temas](../media/topics-excluded-by-name.png) 
+    ![Excluir temas.](../media/topics-excluded-by-name.png) 
 
     (Los administradores de conocimientos también pueden excluir los temas del centro de temas después de la detección).
 
@@ -94,7 +94,7 @@ Para configurar temas
 
     Si necesita excluir temas, después de seleccionar Excluir temas por su **nombre,** descargue la plantilla .csv y actualícelo con la lista de temas que desea excluir de los resultados de detección.
 
-    ![Excluir temas en plantilla CSV](../media/exclude-topics-csv.png) 
+    ![Excluir temas de la plantilla CSV.](../media/exclude-topics-csv.png) 
 
     En la plantilla CSV, introduzca la siguiente información sobre los temas que desea excluir:
 
@@ -113,7 +113,7 @@ Para configurar temas
     - **Solo personas o grupos de seguridad seleccionados**
     - **Nadie**
 
-    ![Quién puede ver temas](../media/ksetup2.png)  
+    ![Quién puede ver temas.](../media/ksetup2.png)  
 
     > [!Note] 
     > Aunque esta configuración le permite seleccionar cualquier usuario de su organización, solo los usuarios que tengan licencias de Experiencias de tema asignadas podrán ver temas.
@@ -123,13 +123,13 @@ Para configurar temas
     - **Solo personas o grupos de seguridad seleccionados**
     - **Nadie**
 
-    ![Permisos para la administración de temas, que pueden crear y editar temas](../media/ksetup3.png) 
+    ![Permisos para la administración de temas, que pueden crear y editar temas.](../media/ksetup3.png) 
 
 8. En la **Quién puede administrar temas,** puede seleccionar:
     - **Todos los miembros de mi organización**
     - **Solo personas o grupos de seguridad seleccionados**
 
-    ![Permisos para la administración de temas](../media/km-setup-create-edit-topics.png) 
+    ![Permisos para la administración de temas.](../media/km-setup-create-edit-topics.png) 
 
     Seleccione **Siguiente**.
 
@@ -140,7 +140,7 @@ Para configurar temas
 
    Seleccione **Siguiente**.
 
-   ![Crear centro de conocimiento](../media/ksetup4.png)  
+   ![Crear el Centro de conocimientos.](../media/ksetup4.png)  
 
 10. En la página **Revisar y finalizar**, puede mirar el ajuste seleccionado y elegir hacer cambios. Si está de acuerdo con las selecciones, seleccione **Activar**.
 
@@ -148,7 +148,7 @@ Para configurar temas
 
 12. Se le devolverá a la página de **Conectar a la página de** conocimientos. Desde esta página, puede seleccionar **administrar** para realizar cambios en las opciones de configuración. 
 
-    ![Configuración aplicada](../media/ksetup7.png)    
+    ![Configuración se aplica.](../media/ksetup7.png)    
 
 ## <a name="manage-topic-experiences"></a>Administrar experiencias de temas
 
@@ -159,6 +159,6 @@ Una vez configurados los temas, puede cambiar la configuración que eligió dura
 - [Administrar permisos de temas en Temas Microsoft Viva](topic-experiences-user-permissions.md)
 - [Cambie el nombre del centro de temas en Temas Microsoft Viva](topic-experiences-administration.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Introducción a las experiencias del tema](topic-experiences-overview.md)

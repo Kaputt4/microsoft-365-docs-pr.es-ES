@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: d0d4fe867664d090359b1a9f7ab13d3ad46497ce8673a9d1615a112bfe8d78ff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ce1715baaf9b23fe53d900d67fc378d8fa624bb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827697"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568209"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>Obstáculos de seguridad por los que puede navegar: el punto de vista de un arquitecto
 
@@ -27,7 +27,7 @@ En este artículo, [Kozeta Garrett,](https://www.linkedin.com/in/kozeta-garrett-
 
 ## <a name="about-the-author"></a>Acerca del autor
 
-![Foto de KozetaRetret](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
+![Foto de Kozeta Garrett.](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
 
 En mi rol como arquitecto de seguridad en la nube, he trabajado con varias organizaciones para proporcionar orientación estratégica y técnica centrada en diseñar e implementar la arquitectura de seguridad para los clientes que migran a Microsoft 365 y Azure, desarrollan soluciones de seguridad empresariales y ayudan a transformar la arquitectura de seguridad y la cultura para la resistencia empresarial. Mi experiencia incluye la detección y respuesta de incidentes, el análisis de malware, las pruebas de penetración y la recomendación de mejoras en la posición de seguridad y defensa de IT. Me apasionan las transformaciones líderes que resultan en la seguridad como un habilitador para la empresa, incluidos los esfuerzos de modernización.
 
@@ -75,7 +75,7 @@ La mayoría de los desafíos que he experimentado con la implementación de la s
 
 Para ayudarle a eliminar estos obstáculos, Microsoft ha seleccionado varios recursos diseñados para ayudarle a tomar un enfoque metódico de la estrategia de seguridad y la implementación.
 
-|Recurso   |Más información  |
+|Resource   |Más información  |
 |---------|---------|
 |[Las tareas principales de los equipos de seguridad para dar soporte al trabajo desde casa](../security/top-security-tasks-for-remote-work.md)      | Si de repente se encuentra con un equipo de trabajo en casa, este artículo le ayuda a aumentar la seguridad rápidamente. Incluye las tareas recomendadas más importantes en función del plan de licencias.    |
 |[Microsoft 365 Responsables de la seguridad de las decisiones empresariales](../security/Microsoft-365-security-for-bdm.md)    | Cuando tienes tiempo para un plan más completo, este artículo incluye recomendaciones que abarcan Microsoft 365, priorizado por superficie de ataque. Incluso viene con una hoja de cálculo que puedes usar para ordenar las licencias y el área (como identidad, protección contra amenazas y supervisión).  |

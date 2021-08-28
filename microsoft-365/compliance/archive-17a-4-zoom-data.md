@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector DataParser de Zoom de 17a-4 para importar y archivar datos de Zoom en Microsoft 365.
-ms.openlocfilehash: f62861214ca8265961d09f84560f347fe007e3e85788e0ee8af2bd30fbedb00c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2412969e2cbe5e6f601b9cf789585d931a4e7a3a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796720"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569170"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-data"></a>Configurar un conector para archivar datos de Zoom
 
@@ -29,7 +29,7 @@ Una vez que los datos de Zoom se almacenan en buzones de usuario, puede aplicar 
 
 En la siguiente introducción se explica el proceso de uso de un conector de datos para archivar datos de Zoom en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos de Zoom de 17a-4](../media/ZoomDataParserConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos de zoom de 17a-4.](../media/ZoomDataParserConnectorWorkflow.png)
 
 1. Su organización funciona con 17a-4 para configurar y configurar el DataParser de Zoom.
 

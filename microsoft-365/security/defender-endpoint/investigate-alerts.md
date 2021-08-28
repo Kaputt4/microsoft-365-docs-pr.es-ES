@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 7f8ecf697049f5e4fe6f4c1ee153dc621b66a1c9433e1e13dff2717d0adec74f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 45bf3204a092bac6597c4e43f4ca29dbc06cd631
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793604"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569350"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Investigar alertas en Microsoft Defender para endpoint
 
@@ -53,7 +53,7 @@ Expanda entidades para ver los detalles de un vistazo. Al seleccionar una entida
 > [!NOTE]
 > La sección de artículo de alerta puede contener más de una alerta, con alertas adicionales relacionadas con el mismo árbol de ejecución que aparecen antes o después de la alerta seleccionada.
 
-![Un ejemplo de un artículo de alerta con una alerta en el foco y algunas tarjetas expandida](images/alert-story-tree.png)
+![Un ejemplo de un artículo de alerta con una alerta en el foco y algunas tarjetas expandida.](images/alert-story-tree.png)
 
 ## <a name="take-action-from-the-details-pane"></a>Realizar acciones desde el panel de detalles
 
@@ -63,11 +63,11 @@ Una vez que haya terminado de investigar, vuelva a la alerta con la que inició,
 
 Si la clasifica como una alerta verdadera, también puede seleccionar una determinación, como se muestra en la imagen siguiente.
 
-![Fragmento de código del panel de detalles con una alerta resuelta y la lista desplegable de determinación expandida](images/alert-details-resolved-true.png)
+![Fragmento de código del panel de detalles con una alerta resuelta y la lista desplegable de determinación expandida.](images/alert-details-resolved-true.png)
 
 Si experimenta una alerta falsa con una aplicación de línea de negocio, cree una regla de supresión para evitar este tipo de alerta en el futuro.
 
-![acciones y clasificación en el panel de detalles con la regla de supresión resaltada](images/alert-false-suppression-rule.png)
+![acciones y clasificación en el panel de detalles con la regla de supresión resaltada.](images/alert-false-suppression-rule.png)
 
 > [!TIP]
 > Si tienes algún problema que no se describe anteriormente, usa el botón para proporcionar comentarios 🙂 o abrir un vale de soporte técnico.

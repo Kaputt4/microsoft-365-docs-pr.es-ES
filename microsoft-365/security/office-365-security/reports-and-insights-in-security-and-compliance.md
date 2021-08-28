@@ -19,12 +19,12 @@ description: Obtenga información sobre los informes e información inteligentes
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 360151fa68309d53f788c18637aa95d61374b62be4815669dc22a6325caa1283
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ef92717dc43e5af7a6c98d497405160fec45b7cd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56814744"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569290"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
 
@@ -41,7 +41,7 @@ Si forma parte del equipo de seguridad de Microsoft para 365 para empresas de su
 
 Las capacidades de supervisión disponibles en el Centro de seguridad y cumplimiento de & incluyen informes e información inteligentes que permiten a los administradores de cumplimiento y seguridad centrarse en problemas de alta prioridad, como ataques de seguridad o mayor actividad sospechosa. En un panel, los informes e información inteligentes se asemejan a la siguiente imagen:
 
-![El panel Informes del Centro de seguridad & cumplimiento](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![El panel Informes del Centro de seguridad & cumplimiento.](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
 
 Además de destacar las áreas problemáticas, los informes inteligentes y los conocimientos incluyen recomendaciones y vínculos para ver y explorar datos y también realizar acciones rápidas. Por ejemplo, si su organización repentinamente tiene un gran número de mensajes de correo electrónico marcados como correo no deseado por los usuarios finales, es posible que se le aconseje que vuelva a visitar las directivas contra correo no deseado para asegurarse de que el nivel de protección correcto está en su lugar.
 

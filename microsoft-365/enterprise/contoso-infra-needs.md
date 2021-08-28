@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo se cumplen las necesidades empresariales de la empresa Microsoft 365 empresa.
-ms.openlocfilehash: abed7e47ab0654c44c047ef09a9a75a46d2a0e17
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 36fec158926bfa4530c0dfa6a862e877204be0cd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354349"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569506"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infraestructura de TI contoso y necesidades empresariales
 
@@ -31,7 +31,7 @@ Contoso usa una infraestructura de TI local mayoritariamente centralizada, con c
 
 Esta es la oficina central con centros de datos de aplicaciones, una DMZ e Internet.
 
-![Infraestructura de TI de Contoso existente](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Infraestructura de TI de Contoso existente.](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 En los centros de datos de aplicaciones locales se hospeda lo siguiente: 
 

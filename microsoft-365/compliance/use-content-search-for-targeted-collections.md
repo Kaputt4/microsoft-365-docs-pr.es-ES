@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Use la búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
-ms.openlocfilehash: fb7b6e9f1115aae64a2e0e2a3776acf535d71509
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: e5da234d78d2f26af70f3e69ff6a1917f9d99b34
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508147"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569554"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Usar la búsqueda de contenido para colecciones dirigidas
 
@@ -57,7 +57,7 @@ La herramienta de búsqueda de contenido del Centro de cumplimiento de Microsoft
 
 El script que ejecute en este primer paso devolverá una lista de carpetas de buzones de correo o carpetas SharePoint y OneDrive para la Empresa carpetas, y el identificador de carpeta o ruta de acceso correspondiente para cada carpeta. Al ejecutar este script, se le pedirá la siguiente información.
 
-- **Dirección de correo electrónico o dirección URL** del sitio: escriba una dirección de correo electrónico del custodio para devolver una lista de Exchange carpetas de buzones de correo e IDs de carpeta. O escriba la dirección URL de un SharePoint o un sitio OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Aquí le mostramos otros ejemplos:
+- **Dirección de correo electrónico o dirección URL** del sitio: escriba una dirección de correo electrónico del custodio para devolver una lista de Exchange carpetas de buzones de correo e IDs de carpeta. O escriba la dirección URL de un SharePoint o un sitio OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Estos son algunos ejemplos:
 
   - **Exchange**:`stacig@contoso.onmicrosoft.com`
 
@@ -202,7 +202,7 @@ Si va a obtener id. de carpeta de buzón, el script se conecta Exchange Online P
 
 Este es un ejemplo de la salida devuelta por el script para carpetas de buzones.
 
-![Ejemplo de la lista de carpetas de buzones e IDs de carpetas devueltos por el script](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![Ejemplo de la lista de carpetas de buzones e IDs de carpetas devueltos por el script.](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
 
 El ejemplo del paso 2 muestra la consulta usada para buscar en la subcarpeta Purgas de la carpeta Elementos recuperables del usuario.
 
@@ -212,7 +212,7 @@ Si está obteniendo la ruta de acceso de la propiedad **documentlink** de sitios
 
 Este es un ejemplo de la salida devuelta por el script para las carpetas del sitio.
 
-![Ejemplo de la lista de nombres de vínculo de documento para carpetas de sitio devueltas por el script](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Ejemplo de la lista de nombres de vínculo de documento para carpetas de sitio devueltas por el script.](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
 
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Paso 2: Usar un identificador de carpeta o un vínculo de documento para realizar una colección de destino
 
@@ -226,7 +226,7 @@ Después de ejecutar el script para recopilar una lista de id. de carpeta o vín
 
     Por ejemplo, la consulta de la siguiente captura de pantalla buscará cualquier elemento de la subcarpeta Purgas de la carpeta Elementos recuperables del usuario (el valor de la propiedad de la subcarpeta Purgas se muestra en la captura de pantalla del paso `folderid` 1):
 
-    ![Pegue el folderid o documentlink en el cuadro de palabra clave de la consulta de búsqueda](../media/FolderIDSearchQuery.png)
+    ![Pegue el folderid o documentlink en el cuadro de palabra clave de la consulta de búsqueda.](../media/FolderIDSearchQuery.png)
     > [!IMPORTANT]
     > Las búsquedas de vínculo de documento requieren el uso de un archivo  `asterisk '/*'` final .  
 
@@ -236,7 +236,7 @@ Después de ejecutar el script para recopilar una lista de id. de carpeta o vín
 
     - Junto a Exchange correo electrónico, haga clic en Elegir usuarios, grupos o equipos **y,** **a** continuación, agregue el mismo buzón que especificó al ejecutar el script en el paso 1.
 
-      O bien
+      O bien:
 
     - Junto a **SharePoint,** haga  clic en Elegir sitios y, a continuación, agregue la misma dirección URL del sitio que especificó al ejecutar el script en el paso 1.
 

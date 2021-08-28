@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 150ae09184298cf57887cfb7e9b7efe96a600445ea1a246944e5085b48d9ec0d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3de298100e5a66e53bd34e110c35749e15e58044
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817353"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568605"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>El informe de analistas en análisis de amenazas
 
@@ -36,7 +36,7 @@ ms.locfileid: "53817353"
 
 Cada [informe de análisis de](threat-analytics.md) amenazas incluye secciones dinámicas y una sección escrita completa denominada informe de _analista._ Para obtener acceso a esta sección, abra el informe sobre la amenaza rastreada y seleccione la **pestaña Informe de** analista.
 
-![Imagen de la sección de informe de analista de un informe de análisis de amenazas](images/ta-analyst-report-small.png)
+![Imagen de la sección de informe de analista de un informe de análisis de amenazas.](images/ta-analyst-report-small.png)
 
 _Sección de informe de analista de un informe de análisis de amenazas_
 
@@ -48,7 +48,7 @@ Cada sección del informe de analista está diseñada para proporcionar informac
 
 ****
 
-|Sección Informe|Descripción|
+|Sección Informe|Description|
 |---|---|
 |Resumen ejecutivo|Información general sobre la amenaza, incluso cuando se vio por primera vez, sus motivaciones, eventos notables, objetivos principales y distintas herramientas y técnicas. Puede usar esta información para evaluar aún más cómo priorizar la amenaza en el contexto de su industria, ubicación geográfica y red.|
 |Análisis|Información técnica sobre las amenazas, incluidos los detalles de un ataque y cómo los atacantes pueden usar una nueva técnica o superficie de ataque|

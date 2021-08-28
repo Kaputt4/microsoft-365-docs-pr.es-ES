@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 40f783e8a99ef5bcbd3db516f65ff43812e83091fe93ace49562f5b45926afd1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f24a610e82388cead88b68e33b76c6404d68ec9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868431"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570034"
 ---
 # <a name="device-control-for-macos"></a>Control de dispositivos para macOS
 
@@ -35,7 +35,7 @@ ms.locfileid: "53868431"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 El control de dispositivos para macOS tiene los siguientes requisitos previos:
 
@@ -68,7 +68,7 @@ La directiva de control de dispositivos se puede usar para:
 
 Cuando se aplica la directiva de control de dispositivos que has puesto en marcha en un dispositivo (por ejemplo, el acceso a un dispositivo multimedia extraíble está restringido), se muestra una notificación al usuario.
 
-![Notificación de control de dispositivos](images/mac-device-control-notification.png)
+![Notificación de control de dispositivos.](images/mac-device-control-notification.png)
 
 Cuando los usuarios finales hacen clic en esta notificación, se abre una página web en el explorador predeterminado. Puede configurar la dirección URL que se abre cuando los usuarios finales hacen clic en la notificación.
 
@@ -76,7 +76,7 @@ Cuando los usuarios finales hacen clic en esta notificación, se abre una págin
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Clave** | navigationTarget |
-| **Tipo de datos** | String |
+| **Tipo de datos** | Cadena |
 | **Comments** | Si no se define, el producto usa una dirección URL predeterminada que apunta a una página genérica que explica la acción realizada por el producto. |
 
 ### <a name="allow-or-block-removable-devices"></a>Permitir o bloquear dispositivos extraíbles
@@ -150,7 +150,7 @@ Esta configuración se puede establecer en:
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permiso |
+| **Clave** | permission |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | ninguno <br/> read <br/> write <br/> execute |
 
@@ -173,7 +173,7 @@ Para cada proveedor, puede especificar el nivel de permisos deseado para los dis
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permiso |
+| **Clave** | permission |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 
@@ -190,7 +190,7 @@ Para cada producto, puede especificar el nivel de permisos deseado para ese prod
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permiso |
+| **Clave** | permission |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 
@@ -209,7 +209,7 @@ Para cada número de serie, puede especificar el nivel de permisos deseado.
 |Sección|Valor|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permiso |
+| **Clave** | permission |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
 
@@ -287,19 +287,19 @@ Para buscar el identificador de proveedor, el id. de producto y el número de se
 1. Conecta el dispositivo USB para el que quieres buscar los identificadores.
 1. En el menú de nivel superior de macOS, seleccione **Acerca de este Mac**.
 
-    ![Acerca de este Mac](images/mac-device-control-lookup-1.png)
+    ![Acerca de este Mac.](images/mac-device-control-lookup-1.png)
 
 1. Seleccione **Informe del sistema**.
 
-    ![Informe del sistema](images/mac-device-control-lookup-2.png)
+    ![Informe del sistema.](images/mac-device-control-lookup-2.png)
 
 1. En la columna izquierda, seleccione **USB**.
 
-    ![Vista de todos los dispositivos USB](images/mac-device-control-lookup-3.png)
+    ![Vista de todos los dispositivos USB.](images/mac-device-control-lookup-3.png)
 
 1. En **Árbol de dispositivos USB,** vaya al dispositivo USB que enchufó.
 
-    ![Detalles de un dispositivo USB](images/mac-device-control-lookup-4.png)
+    ![Detalles de un dispositivo USB.](images/mac-device-control-lookup-4.png)
 
 1. Se muestran el id. de proveedor, el id. de producto y el número de serie. Al agregar el identificador de proveedor y el id. de producto a la directiva de medios extraíbles, solo debe agregar la parte después de `0x` . Por ejemplo, en la imagen siguiente, el id. de proveedor `1000` es y el id. de producto es `090c` .
 

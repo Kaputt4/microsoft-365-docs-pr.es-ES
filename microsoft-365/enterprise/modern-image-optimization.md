@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar las herramientas incluidas en SharePoint Online para optimizar las imágenes en SharePoint páginas de sitio modernas en línea.
-ms.openlocfilehash: 68e309974cca8af2280dddfc76e744234a1e17ae8b5deac465c1bbadcf4722fa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0bc9132a890c25804fa262bd494452db702d2a06
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870497"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570070"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Optimizar imágenes en páginas de sitio modernas de SharePoint Online
 
@@ -53,7 +53,7 @@ Puede encontrarse con los siguientes resultados:
 
 Si aparece **Se han detectado imágenes grandes** en la sección **Atención requerida** de los resultados, puede hacer clic en el propio resultado para ver más detalles.
 
-![Resultados de la herramienta Diagnóstico de página](../media/modern-portal-optimization/pagediag-large-images.png)
+![Resultados de la herramienta diagnóstico de página.](../media/modern-portal-optimization/pagediag-large-images.png)
 
 ## <a name="remediate-large-image-issues"></a>Corrección de problemas causados por imágenes grandes
 
@@ -61,7 +61,7 @@ Si una página contiene imágenes con un tamaño superior a 300 KB, seleccione e
 
 Antes de realizar revisiones de página para corregir problemas de rendimiento, anote el tiempo de carga de la página en los resultados del análisis. Ejecute la herramienta de nuevo después de la revisión y compruebe si los nuevos resultados están en línea con su valor de referencia. Luego, compruebe el nuevo tiempo de carga de la página para ver si se ha producido alguna mejora.
 
-![Resultados de tiempo de carga de la página](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Resultados de tiempo de carga de página.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >El tiempo de carga de la página puede variar en función de varios factores, como la carga de la red, la hora del día y otras condiciones transitorias. Debe probar el tiempo de carga de la página varias veces, antes y después de realizar cambios, para obtener un promedio.

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f79372a210a256720654c92e5ce580d772ef4527
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 591a98e07f47717f0475c88584a161c93198c084
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58249672"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569314"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>Revise los requisitos de arquitectura y los conceptos clave para Microsoft Cloud App Security
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security es un agente de seguridad de Acceso a la nube (CASB
 
 Sin Cloud App Security, las aplicaciones en la nube que usa la organización no se administran y no están protegidas, como se muestra.
 
-![Arquitectura para Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture-a.png)
+![Arquitectura para Microsoft Cloud App Security.](../../media/defender/m365-defender-mcas-architecture-a.png)
 
 En la ilustración:
 - El uso de aplicaciones en la nube por parte de una organización no se supervisa y no está protegido. 
@@ -55,7 +55,7 @@ En la ilustración:
 
 El primer paso para administrar el uso de aplicaciones en la nube es descubrir qué aplicaciones en la nube usan su organización. En este diagrama siguiente se muestra cómo funciona la detección en la nube con Cloud App Security.
 
-![Arquitectura para Microsoft Cloud App Security: detección en la nube](../../media/defender/m365-defender-mcas-architecture-b.png)
+![Arquitectura para Microsoft Cloud App Security: detección en la nube.](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 En esta ilustración, hay dos métodos que se pueden usar para supervisar el tráfico de red y detectar las aplicaciones en la nube que está utilizando la organización.
 - R. Cloud App Discovery se integra con Microsoft Defender para Endpoint de forma nativa. Defender para endpoint informa de los servicios y aplicaciones en la nube a los que se accede desde dispositivos Windows 10 ti. 
@@ -65,7 +65,7 @@ En esta ilustración, hay dos métodos que se pueden usar para supervisar el tr�
 
 Después de descubrir aplicaciones en la nube y analizar el comportamiento de cómo las usa su organización, puede empezar a administrar las aplicaciones en la nube que elija. 
 
-![Arquitectura para Microsoft Cloud App Security: administración de aplicaciones en la nube](../../media/defender/m365-defender-mcas-architecture-c.png)
+![Arquitectura para Microsoft Cloud App Security: administración de aplicaciones en la nube.](../../media/defender/m365-defender-mcas-architecture-c.png)
 
 En esta ilustración:
 - Algunas aplicaciones se sancionan por su uso. Esta es una forma sencilla de empezar a administrar aplicaciones.
@@ -76,7 +76,7 @@ En esta ilustración:
 
 Microsoft Cloud App Security sirve como proxy inverso, lo que proporciona acceso de proxy a aplicaciones en la nube sancionadas. Esto permite Cloud App Security los controles de sesión que configure. 
 
-![Arquitectura para Microsoft Cloud App Security: control de sesión de acceso proxy](../../media/defender/m365-defender-mcas-architecture-d.png)
+![Arquitectura para Microsoft Cloud App Security: control de sesión de acceso proxy.](../../media/defender/m365-defender-mcas-architecture-d.png)
 
 En esta ilustración:
 - El acceso a aplicaciones en la nube sancionadas de usuarios y dispositivos de la organización se enruta a través de Cloud App Security.
@@ -89,7 +89,7 @@ Los controles de sesión te permiten aplicar parámetros a la forma en que tu or
 
 Es posible que ya tenga aplicaciones SaaS agregadas al inquilino de Azure AD para aplicar la autenticación multifactor y otras directivas de acceso condicional. Microsoft Cloud App Security se integra de forma nativa con Azure AD. Todo lo que tiene que hacer es configurar una directiva en Azure AD para usar el control de aplicaciones de acceso condicional en Cloud App Security. Esto enruta el tráfico de red de estas aplicaciones SaaS administradas a través de Cloud App Security como proxy, lo que permite a Cloud App Security supervisar este tráfico y aplicar controles de sesión. 
 
-![Arquitectura para Microsoft Cloud App Security: aplicaciones SaaS](../../media/defender/m365-defender-mcas-architecture-e.png)
+![Arquitectura para Microsoft Cloud App Security: aplicaciones SaaS.](../../media/defender/m365-defender-mcas-architecture-e.png)
 
 En esta ilustración:
 - Las aplicaciones SaaS están integradas con el inquilino de Azure AD. Esto permite que Azure AD aplique directivas de acceso condicional, incluida la autenticación multifactor.
@@ -104,7 +104,7 @@ Cloud App Security proporciona una protección eficaz por sí sola. Sin embargo,
 
 Vale la pena repetir esta ilustración de la introducción a esta Microsoft 365 Defender evaluación y guía piloto. 
 
-![Cómo Microsoft 365 Defender detiene una cadena de amenazas](../../media/defender/m365-defender-eval-threat-chain.png)
+![Cómo Microsoft 365 Defender detiene una cadena de amenazas.](../../media/defender/m365-defender-eval-threat-chain.png)
 
 Centrándose en el lado derecho de esta ilustración, Microsoft Cloud App Security observa un comportamiento anómalo como viajes imposibles, acceso a credenciales y descarga inusual, recurso compartido de archivos o actividad de reenvío de correo e informa de ello al equipo de seguridad. Por lo tanto, Cloud App Security ayuda a evitar el movimiento lateral por parte de los hackers y la filtración de datos confidenciales. Microsoft 356 Defender correlaciona las señales de todos los componentes para proporcionar la historia de ataque completa.
 
@@ -146,7 +146,7 @@ Además, Azure Sentinel incluye un conector Microsoft Cloud App Security para pr
 - [Integración de SIEM genérica](/cloud-app-security/siem)
 - [Transmitir alertas y registros de detección en la nube desde MCAS a Azure Sentinel](/azure/sentinel/connect-cloud-app-security)
 
-### <a name="next-steps"></a>Siguientes pasos
+### <a name="next-steps"></a>Pasos siguientes
 
 Paso 2 de 3: [Habilitar el entorno de evaluación para Microsoft Cloud App Security](eval-defender-mcas-enable-eval.md)
 

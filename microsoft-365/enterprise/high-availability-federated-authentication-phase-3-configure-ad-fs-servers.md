@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: Obtenga información sobre cómo crear y configurar los servidores de AD FS para la autenticación federada de alta disponibilidad Microsoft 365 en Microsoft Azure.
-ms.openlocfilehash: 83e8dd5f97017f19e709dd5a65a89275e7be12b3
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 7f6e7801c8185cebc66e653a39930ee9af120946
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354481"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569434"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Fase 3 de la autenticación federada de alta disponibilidad: Configurar servidores de AD FS
 
@@ -148,13 +148,13 @@ Esta es la configuración completada después de la finalización correcta de es
   
 **Fase 3: Equilibrador de carga interno y servidores de AD FS para la infraestructura de autenticación federada de alta disponibilidad en Azure**
 
-![Fase 3 de la infraestructura de autenticación federada Microsoft 365 alta disponibilidad en Azure con los servidores de AD FS](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Fase 3 de la alta disponibilidad Microsoft 365 de autenticación federada en Azure con los servidores de AD FS.](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Paso siguiente
 
 Use [phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) to continue configuring this workload.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   

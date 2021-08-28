@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a administrar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6223720f6977d3c4399ad36e1ad29894feabe63d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 4ff987128047522a5f8cb20a76c81bd950c1b7cf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533692"
+ms.locfileid: "58568737"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -149,7 +149,7 @@ Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista
    - **Archivos:** puede agrupar los resultados por **Acción**.
    - **Suplantación:** puede agrupar los resultados por **tipo Action** o **Spoof**.
 
-   Haga **clic en** Buscar, escriba todo o parte de un valor y, a continuación, presione ENTRAR para buscar un valor específico. Cuando haya terminado, haga clic en ![ Borrar icono de búsqueda Borrar ](../../media/m365-cc-sc-close-icon.png) **búsqueda.**
+   Haga **clic en** Buscar, escriba todo o parte de un valor y, a continuación, presione ENTRAR para buscar un valor específico. Cuando haya terminado, haga clic en ![ Borrar icono de búsqueda.](../../media/m365-cc-sc-close-icon.png) **Borrar búsqueda**.
 
    Haga **clic en** Filtrar para filtrar los resultados. Los valores que están disponibles en **el** control desplegable Filtro que aparece dependen de la pestaña seleccionada:
 

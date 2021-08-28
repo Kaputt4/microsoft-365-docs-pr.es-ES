@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bc709de74135dfbee58b98dd0133b1e43c3c14ad
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e1a681fb7d521c26327bec3d22bff233926a279f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533116"
+ms.locfileid: "58569386"
 ---
 # <a name="onboard-the-windows-10-devices-using-a-local-script"></a>Incorporación de Windows 10 dispositivos con un script local
 
@@ -40,7 +40,7 @@ También puedes incorporar manualmente dispositivos individuales a Defender para
 
 ## <a name="onboard-devices"></a>Incorporar dispositivos
 
-[![Imagen del PDF que muestra las distintas rutas de implementación](images/onboard-script.png)](images/onboard-script.png#lightbox)
+[![Imagen del PDF que muestra las distintas rutas de implementación.](images/onboard-script.png)](images/onboard-script.png#lightbox)
 
 Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
 
@@ -56,11 +56,11 @@ Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
    1. Vaya a **Inicio** y escriba **cmd**.
    2. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-     ![Ventana menú Inicio apuntar a Ejecutar como administrador](images/run-as-admin.png)
+    ![Window menú Inicio que apunta a Ejecutar como administrador.](images/run-as-admin.png)
 
-4. Escriba la ubicación del archivo de script. Si copió el archivo en el escritorio, escriba: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
+4.  Escriba la ubicación del archivo de script. Si copió el archivo en el escritorio, escriba: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
-5. Presione la **tecla Entrar** o haga clic en **Aceptar**.
+5.  Presione la **tecla Entrar** o haga clic en **Aceptar**.
 
 Para obtener información sobre cómo validar manualmente que el dispositivo es compatible e informa correctamente de los datos del sensor, consulte [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
@@ -111,7 +111,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
    1. Vaya a **Inicio** y escriba **cmd**.
    2. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-      ![Ventana menú Inicio apuntar a Ejecutar como administrador](images/run-as-admin.png)
+        ![Window menú Inicio que apunta a Ejecutar como administrador.](images/run-as-admin.png)
 
 4. Escriba la ubicación del archivo de script. Si copió el archivo en el escritorio, escriba: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 

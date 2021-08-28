@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a930b04db04eff491cd646634c9cbbd2595629030e7d6c5f5de095f6fc4ca9cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7ccd05a2848b673d511a89c93cdbfed81f26c3d3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810572"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568581"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Crear una aplicación con acceso de asociado a Microsoft 365 Defender API
 
@@ -76,7 +76,7 @@ Los siguientes pasos le guían sobre cómo crear una aplicación multiinquilino 
 
 2. Vaya a **Azure Active Directory**  >  **registros de aplicaciones** Nuevo  >  **registro**.
 
-   ![Imagen de Microsoft Azure navegación al registro de aplicaciones](../../media/atp-azure-new-app2.png)
+   ![Imagen de Microsoft Azure navegación al registro de aplicaciones.](../../media/atp-azure-new-app2.png)
 
 3. En el formulario de registro:
 
@@ -86,18 +86,18 @@ Los siguientes pasos le guían sobre cómo crear una aplicación multiinquilino 
 
    Una vez que haya terminado de rellenar el formulario, seleccione **Registrar**.
 
-   ![Imagen del formulario Registrar una aplicación](../..//media/atp-api-new-app-partner.png)
+   ![Imagen del formulario Registrar una aplicación.](../..//media/atp-api-new-app-partner.png)
 
 4. En la página de la aplicación, seleccione **Permisos** de API Agregar API de permisos que mi organización usa  >    >   >, escriba Protección contra amenazas de Microsoft y seleccione **Protección contra** amenazas de Microsoft . La aplicación ahora puede acceder a Microsoft 365 Defender.
 
    > [!TIP]
    > *Microsoft Threat Protection* es un nombre antiguo para Microsoft 365 Defender y no aparecerá en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para verlo aparecer.
 
-   ![Imagen de selección de permisos de API](../../media/apis-in-my-org-tab.PNG)
+   ![Imagen de selección de permisos de API.](../../media/apis-in-my-org-tab.PNG)
 
 5. Seleccione **Permisos de aplicación**. Elija los permisos relevantes para su escenario (por ejemplo, **Incident.Read.All**) y, a continuación, **seleccione Agregar permisos**.
 
-   ![Imagen de acceso a api y selección de API](../../media/request-api-permissions.PNG)
+   ![Imagen de acceso a la API y selección de API.](../../media/request-api-permissions.PNG)
 
     > [!NOTE]
     > Debe seleccionar los permisos relevantes para su escenario. *Leer todos los incidentes* es solo un ejemplo. Para determinar qué permiso necesita, consulte la sección **Permisos** de la API a la que desea llamar.
@@ -106,18 +106,18 @@ Los siguientes pasos le guían sobre cómo crear una aplicación multiinquilino 
 
 6. Seleccione **Conceder consentimiento de administrador**. Cada vez que agregue un permiso, debe seleccionar Conceder consentimiento **de administrador** para que su efecto.
 
-    ![Imagen de concesión de permisos](../../media/grant-consent.PNG)
+    ![Imagen de Conceder permisos.](../../media/grant-consent.PNG)
 
 7. Para agregar un secreto a la aplicación, seleccione Certificados **& secretos,** agregue una descripción al secreto y, a continuación, **seleccione Agregar**.
 
     > [!TIP]
     > Después de seleccionar **Agregar**, seleccione **copiar el valor secreto generado**. No podrá recuperar el valor secreto después de salir.
 
-    ![Imagen de crear clave de aplicación](../../media/webapp-create-key2.png)
+    ![Imagen de crear clave de aplicación.](../../media/webapp-create-key2.png)
 
 8. Registre el identificador de la aplicación y el identificador de inquilino en un lugar seguro. Aparecen en Información **general en** la página de la aplicación.
 
-   ![Imagen del identificador de aplicación creado](../../media/app-and-tenant-ids.png)
+   ![Imagen del identificador de aplicación creado.](../../media/app-and-tenant-ids.png)
 
 9. Agregue la aplicación al inquilino del usuario.
 
@@ -135,7 +135,7 @@ Los siguientes pasos le guían sobre cómo crear una aplicación multiinquilino 
 
    Después de hacer clic en el vínculo de consentimiento, inicie sesión con el administrador global del inquilino del usuario y consiente la aplicación.
 
-   ![Imagen de consentimiento](../../media/app-consent-partner.png)
+   ![Imagen de consentimiento.](../../media/app-consent-partner.png)
 
    También tendrás que pedir al usuario su identificador de inquilino. El identificador de inquilino es uno de los identificadores usados para adquirir tokens de acceso.
 
@@ -246,7 +246,7 @@ aadToken = jsonResponse["access_token"]
 1. Abra un símbolo del sistema y establezca CLIENT_ID en el identificador de la aplicación de Azure.
 1. Establece CLIENT_SECRET en el secreto de la aplicación de Azure.
 1. Establece TENANT_ID en el identificador de inquilino de Azure del usuario que desea usar la aplicación para acceder a Microsoft 365 Defender.
-1. Ejecute el comando siguiente:
+1. Ejecute el siguiente comando:
 
 ```bash
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
@@ -265,7 +265,7 @@ Una respuesta correcta tendrá este aspecto:
 
 En la siguiente imagen, puedes ver un token descodificado adquirido desde una aplicación, con ```Incidents.Read.All``` , ```Incidents.ReadWrite.All``` y ```AdvancedHunting.Read.All``` permisos:
 
-![Imagen de validación de tokens](../../media/webapp-decoded-token.png)
+![Imagen de validación de tokens.](../../media/webapp-decoded-token.png)
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Usar el token para obtener acceso a la API Microsoft 365 Defender usuario
 

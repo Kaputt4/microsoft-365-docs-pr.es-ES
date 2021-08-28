@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar SMS, MMS y llamadas de voz desde teléfonos móviles Android. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 6ef42c5e5fe1fe42ca88c1f464ee5321d1560a21679f933bc23ce4026b0605d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dce5599e4402e60c163e1ed770b091df012a616a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866761"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569158"
 ---
 # <a name="set-up-a-connector-to-archive-android-mobile-data"></a>Configurar un conector para archivar datos móviles de Android
 
@@ -29,7 +29,7 @@ Una vez que los datos de los teléfonos móviles Android se almacenan en buzones
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos móviles de Android en Microsoft 365.
 
-![Flujo de trabajo del conector de archivador de Android](../media/AndroidArchiverConnectorWorkflow.png)
+![Flujo de trabajo del conector archiver de Android.](../media/AndroidArchiverConnectorWorkflow.png)
 
 1. Su organización trabaja con TeleMessage para configurar un conector de archivador de Android. Para obtener más información, consulta [Archivador de Android](https://www.telemessage.com/office365-activation-for-android-archiver/).
 

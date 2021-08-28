@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9039b02e34b57e2a594b0db1c4b16e59a962e1d3
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 8f8bdfed9075f2ebc8d189874c6854c4d4a0e50a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603234"
+ms.locfileid: "58568257"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 
@@ -116,8 +116,8 @@ Los permisos se conceden a través de determinados roles, como los que se descri
 
 |Tarea|Rol(s) obligatorio(s)|
 |---|---|
-|Configurar características de AIR|Uno de los siguientes roles: <ul><li>Administrador global</li><li>Administrador de seguridad</li></ul> <p> Estos roles se pueden asignar en [Azure Active Directory](/azure/active-directory/roles/permissions-reference) o en el [portal Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)|
-|Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar acciones recomendadas|Uno de los siguientes roles, asignados [en Azure Active Directory](/azure/active-directory/roles/permissions-reference) o en el portal [de Microsoft 365 Defender:](permissions-microsoft-365-security-center.md) <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Operador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Buscar y purgar (este rol solo se asigna en [el portal Microsoft 365 Defender .](permissions-microsoft-365-security-center.md) Es posible que necesite crear un nuevo grupo de roles de **colaboración** & correo electrónico y agregar el rol Buscar y purgar a ese nuevo grupo de roles.</li></ul>|
+|Configurar características de AIR|Uno de los siguientes roles: <ul><li>Administrador global</li><li>Administrador de seguridad</li></ul> <p> Estos roles se pueden asignar en [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [portal Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)|
+|Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar acciones recomendadas|Uno de los siguientes roles, asignados [en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el portal [de Microsoft 365 Defender:](permissions-microsoft-365-security-center.md) <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Operador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Buscar y purgar (este rol solo se asigna en [el portal Microsoft 365 Defender .](permissions-microsoft-365-security-center.md) Es posible que necesite crear un nuevo grupo de roles de **colaboración** & correo electrónico y agregar el rol Buscar y purgar a ese nuevo grupo de roles.</li></ul>|
 
 ## <a name="required-licenses"></a>Licencias necesarias
 

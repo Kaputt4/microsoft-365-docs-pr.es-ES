@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e2ba8b02bc6be4001e7083677fc69824c98ec7a2bc0ca61a6beadcd1199c9de
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65ed76f115b9e9f39e18d69a50e736c561d18c7c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817236"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569974"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender de zona horaria
 
@@ -33,7 +33,7 @@ ms.locfileid: "53817236"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)
 
-Use el **icono 1 de** configuración de zona horaria del menú Zona ![ horaria para configurar la zona horaria y ver la información de ](images/atp-time-zone.png) licencia.
+Use el **icono Configuración de zona** horaria del menú Zona ![ horaria1.](images/atp-time-zone.png) para configurar la zona horaria y ver la información de licencia.
 
 ## <a name="time-zone-settings"></a>Configuración de zona horaria
 
@@ -45,7 +45,7 @@ Microsoft Defender para endpoint puede mostrar la hora universal coordinada (UTC
 
 La configuración actual de la zona horaria se muestra en el menú Microsoft Defender para endpoint. Puede cambiar la zona horaria mostrada en el **menú Zona** horaria.
 
-![Icono de configuración de zona horaria2](images/atp-time-zone-menu.png).
+![Icono de configuración de zona horaria2.](images/atp-time-zone-menu.png).
 
 ### <a name="utc-time-zone"></a>Zona horaria UTC
 
@@ -67,7 +67,7 @@ La zona horaria de Microsoft Defender para extremo se establece de forma predete
 
 Para establecer la zona horaria:
 
-1. Haga clic en **el icono Configuración** de zona horaria del menú Zona ![ horaria3 ](images/atp-time-zone.png) .
+1. Haga clic en **el icono Configuración** de zona horaria del menú Zona ![ horaria3. ](images/atp-time-zone.png) .
 2. Seleccione el **indicador UTC de zona** horaria.
 3. Seleccione **Zona horaria UTC** o la zona horaria local, por ejemplo -7:00.
 

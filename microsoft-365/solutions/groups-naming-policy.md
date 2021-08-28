@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: Obtenga información sobre cómo crear una directiva de nomenclatura para Microsoft 365 grupos.
-ms.openlocfilehash: 20d993ed4a799c68b33c9187c8b4b2021731e9415c6dc39726543343bec4517a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c13e946644d25fc76745dc2c9f286bf204f6ba1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853089"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568233"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 de nomenclatura de grupos
 
@@ -128,7 +128,7 @@ Para configurar una directiva de nomenclatura:
 5. Elija entre **Atributo** y **Cadena** para cada línea y, a continuación, especifique el atributo o cadena.
 6. Cuando haya agregado los prefijos y sufijos que necesita, haga clic en **Guardar**.
 
-![Captura de pantalla de la configuración de directiva de nomenclatura de grupos en Azure Active Directory](../media/groups-naming-policy-azure.png)
+![Captura de pantalla de la configuración de directiva de nomenclatura de grupos en Azure Active Directory.](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

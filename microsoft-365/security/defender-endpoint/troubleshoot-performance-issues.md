@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: d760a122527c3d5c9578188043ec2fdc56c5840b457a2f177263bfb9fcc4ad93
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 29b174af6755718ef8c2fd446cf84aeb0f390310
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889483"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568593"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Solucionar problemas de rendimiento relacionados con la protección en tiempo real
 
@@ -58,11 +58,11 @@ En **MPLog-xxxxxxxx-xxxxxx.log**, puede encontrar la información de impacto en 
 
 `Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%`
 
-|Nombre del campo|Description|
+|Nombre del campo|Descripción|
 |---|---|
 |ProcessImageName|Nombre de imagen de proceso|
 |TotalTime|Duración acumulativa en milisegundos invertidos en exámenes de archivos a los que se accede mediante este proceso|
-|Count|Número de archivos escaneados a los que accede este proceso|
+|Recuento|Número de archivos escaneados a los que accede este proceso|
 |MaxTime|Duración en milisegundos en el examen único más largo de un archivo al que tiene acceso este proceso|
 |MaxTimeFile|Ruta de acceso del archivo al que ha accedido este proceso para el que se registró el examen más largo `MaxTime` de duración|
 |EstimatedImpact|El porcentaje de tiempo invertido en exámenes para los archivos a los que tiene acceso este proceso fuera del período en el que este proceso experimentó actividad de examen|
@@ -83,7 +83,7 @@ Process Monitor (ProcMon) es una herramienta de supervisión avanzada que puede 
     1. Active la casilla situada junto **a Desbloquear**.
     1. Seleccione **Aplicar**.
 
-    ![Quitar MOTW](images/procmon-motw.png)
+    ![Quite MOTW.](images/procmon-motw.png)
 
 3. Descomprima el archivo `C:\temp` para que la ruta de acceso de carpeta sea `C:\temp\ProcessMonitor` .
 
@@ -96,21 +96,21 @@ Process Monitor (ProcMon) es una herramienta de supervisión avanzada que puede 
 
         Dado que el registro se inicia automáticamente, seleccione el icono de lupa para detener la captura actual o use el método abreviado **de teclado Ctrl+E**.
 
-        ![icono de lupa](images/procmon-magglass.png)
+        ![icono de lupa.](images/procmon-magglass.png)
 
         Para comprobar que ha detenido la captura, compruebe si el icono de lupa aparece ahora con una X roja.
 
-        ![barra diagonal roja](images/procmon-magglass-stop.png)
+        ![barra diagonal roja.](images/procmon-magglass-stop.png)
 
         Después, para borrar la captura anterior, seleccione el icono del borrador.
 
-        ![icono clear](images/procmon-eraser-clear.png)
+        ![icono claro.](images/procmon-eraser-clear.png)
 
         O use el método abreviado **de teclado Ctrl+X**.
 
     2. La segunda forma es ejecutar la línea **de** comandos como administrador y, a continuación, desde la ruta de acceso del Monitor de procesos, ejecute:
 
-        ![cmd procmon](images/cmd-procmon.png)
+        ![cmd procmon.](images/cmd-procmon.png)
 
         ```console
         Procmon.exe /AcceptEula /Noconnect /Profiling
@@ -119,11 +119,11 @@ Process Monitor (ProcMon) es una herramienta de supervisión avanzada que puede 
         > [!TIP]
         > Haga que la ventana de ProcMon sea lo más pequeña posible al capturar datos para que pueda iniciar y detener fácilmente el seguimiento.
         >
-        > ![Minimizar Procmon](images/procmon-minimize.png)
+        > ![Minimizar Procmon.](images/procmon-minimize.png)
 
 7. Después de seguir uno de los procedimientos del paso 6, verá una opción para establecer filtros. Seleccione **Aceptar**. Siempre puede filtrar los resultados una vez completada la captura.
 
-    ![Filter out Process Name is System Exclude](images/procmon-filter-options.png)
+    ![Filtrar Nombre del proceso es Excluir sistema.](images/procmon-filter-options.png)
 
 8. Para iniciar la captura, vuelva a seleccionar el icono de lupa.
 
@@ -136,7 +136,7 @@ Process Monitor (ProcMon) es una herramienta de supervisión avanzada que puede 
 
 11. Para guardar la captura con un nombre único y  con el formato .pml, seleccione Archivo y, a continuación, **seleccione Guardar...**. Asegúrese de seleccionar los botones de radio **Todos los eventos** y Formato de monitor de proceso nativo **(PML).**
 
-    ![guardar configuración](images/procmon-savesettings1.png)
+    ![guardar la configuración.](images/procmon-savesettings1.png)
 
 12. Para un mejor seguimiento, cambie la ruta de acceso predeterminada `C:\temp\ProcessMonitor\LogFile.PML` desde `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` donde:
     - `%ComputerName%` es el nombre del dispositivo
@@ -167,25 +167,25 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
 
 2. En *Windows kits,* haga clic con el botón secundario **en Windows Grabadora de rendimiento**.
 
-    ![Menú Inicio](images/wpr-01.png)
+    ![menú Inicio.](images/wpr-01.png)
 
     Seleccione **Más**. Seleccione **Ejecutar como administrador**.
 
 3. Cuando aparezca el cuadro de diálogo Control de cuentas de usuario, seleccione **Sí**.
 
-    ![UAC](images/wpt-yes.png)
+    ![UAC.](images/wpt-yes.png)
 
 4. A continuación, descargue el perfil [de análisis de Microsoft Defender para](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) puntos de conexión y guárdelo en una carpeta como `MDAV.wprp` `C:\temp` .
 
 5. En el cuadro de diálogo WPR, seleccione **Más opciones**.
 
-    ![Seleccionar más opciones](images/wpr-03.png)
+    ![Seleccione más opciones.](images/wpr-03.png)
 
 6. Seleccione **Agregar perfiles...** y vaya a la ruta de acceso del `MDAV.wprp` archivo.
 
 7. Después de eso, debería ver un nuevo conjunto de perfiles en *Medidas personalizadas* denominada *Microsoft Defender para el análisis de puntos de conexión* debajo de él.
 
-    ![in-file](images/wpr-infile.png)
+    ![in-file.](images/wpr-infile.png)
 
     >[!WARNING]
     >Si el servidor Windows tiene 64 GB de RAM o más, use la medida personalizada `Microsoft Defender for Endpoint analysis for large servers` en lugar de `Microsoft Defender for Endpoint analysis` . De lo contrario, el sistema podría consumir una gran cantidad de memoria de grupo no paginada o búferes que pueden provocar inestabilidad en el sistema. Puede elegir qué perfiles agregar expandiendo **Análisis de recursos**.
@@ -204,42 +204,42 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
 
 9. Ahora ya está listo para recopilar datos. Salga de todas las aplicaciones que no son relevantes para reproducir el problema de rendimiento. Puede seleccionar Ocultar **opciones para** que el espacio ocupado por la ventana de WPR sea pequeño.
 
-    ![Ocultar opciones](images/wpr-08.png)
+    ![Ocultar opciones.](images/wpr-08.png)
 
     > [!TIP]
     > Intente iniciar el seguimiento en segundos enteros. Por ejemplo, 01:30:00. Esto facilitará el análisis de los datos. También intente realizar un seguimiento de la marca de tiempo de exactamente cuando se reproduce el problema.
 
 10. Seleccione **Inicio**.
 
-    ![Seleccionar inicio del seguimiento](images/wpr-09.png)
+    ![Seleccione inicio del seguimiento.](images/wpr-09.png)
 
 11. Reproduce el problema.
 
     > [!TIP]
     > Mantenga la colección de datos en no más de cinco minutos. De dos a tres minutos es un buen intervalo, ya que se recopilan muchos datos.
 
-12. Seleccione **Guardar**.
+12. Haga clic en **Guardar**.
 
-    ![Seleccionar guardar](images/wpr-10.png)
+    ![Seleccione guardar.](images/wpr-10.png)
 
 13. Rellene **Tipo en una descripción detallada del problema:** con información sobre el problema y cómo se reprodujo el problema.
 
-    ![Rellenar detalles](images/wpr-12.png)
+    ![Rellene los detalles.](images/wpr-12.png)
 
     1. Seleccione **Nombre de archivo:** para determinar dónde se guardará el archivo de seguimiento. De forma predeterminada, 1.is guardado en `%user%\Documents\WPR Files\` .
-    1. Seleccione **Guardar**.
+    1. Haga clic en **Guardar**.
 
 14. Espere mientras se combina el seguimiento.
 
-    ![Seguimiento general de la recopilación de WPR](images/wpr-13.png)
+    ![Seguimiento general de la recopilación de WPR.](images/wpr-13.png)
 
 15. Una vez guardado el seguimiento, seleccione **Abrir carpeta**.
 
-    ![Seguimiento de WPR guardado](images/wpr-14.png)
+    ![Seguimiento de WPR guardado.](images/wpr-14.png)
 
     Incluya el archivo y la carpeta en el envío al soporte técnico de Microsoft.
 
-    ![Archivo y carpeta](images/wpr-15.png)
+    ![Archivo y carpeta.](images/wpr-15.png)
 
 ### <a name="capture-performance-logs-using-the-wpr-cli"></a>Capturar registros de rendimiento con la CLI de WPR
 
@@ -275,7 +275,7 @@ La herramienta de línea *de comandoswpr.exe* forma parte del sistema operativo 
 
 8. Incluya el archivo y la carpeta en el envío al soporte técnico de Microsoft.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Recopilar Antivirus de Microsoft Defender de diagnóstico](collect-diagnostic-data.md)
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)

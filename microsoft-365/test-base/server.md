@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 70ad9d19fac15f7fb0b996a5afc759a0c3e69279d79bea406da9d22d314a4f56
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7db257ddd1645c5a2ba8ecd992a65d08962660c7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798512"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568437"
 ---
 # <a name="windows-server-application-testing"></a>Windows Pruebas de aplicaciones de servidor
 
@@ -31,17 +31,17 @@ Para empezar a validar las aplicaciones cargadas con actualizaciones previas a l
 
 2. Seleccione `Security updates` como tipo de actualización del sistema operativo:
 
-   ![Seleccionar actualizaciones de seguridad](Media/selecting-security-updates.png)
+   ![Seleccione actualizaciones de seguridad.](Media/selecting-security-updates.png)
 
 3. En Versiones del sistema operativo para probar, seleccione las versiones del sistema operativo aplicables. Puede seleccionar Windows del sistema operativo del servidor o una combinación de versiones del sistema operativo de servidor y cliente.
 
-   ![Seleccionar versión del sistema operativo](Media/selecting-OS-versions.png)
+   ![Seleccione Versión del sistema operativo.](Media/selecting-OS-versions.png)
 
 4. Proporcione otra información necesaria, revise los detalles proporcionados y cargue el paquete de la aplicación. Después de cargarlo, puedes ver el estado del paquete en la pestaña de menú Administrar paquetes.
 
 5. Para ver los resultados de las pruebas y las perspectivas de la validación de la aplicación en las actualizaciones de seguridad previas a la versión Windows Server 2016 y 2019, vaya a la página Resumen de prueba o a la página De resultados de actualización de seguridad.
 
-   ![Ver resultados de pruebas](Media/access-test-results.png)
+   ![Ver los resultados de la prueba.](Media/access-test-results.png)
 
 Avance al siguiente artículo para empezar con las **pruebas funcionales**
 > [!div class="nextstepaction"]

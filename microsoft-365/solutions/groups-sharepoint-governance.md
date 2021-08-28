@@ -16,18 +16,18 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre las interacciones de configuración entre Microsoft 365 grupos y SharePoint
-ms.openlocfilehash: 6f24f18a91e897467a85a31945efe34c78b51db74dd2ffc0aa65322fd936a9ae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb2f4ff9745eb73f23c48630582aa455ee2bb561
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853053"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567981"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Configuración interacciones entre Microsoft 365 grupos y SharePoint
 
 Algunas opciones de configuración Microsoft 365 grupos y SharePoint en Microsoft 365, especialmente relacionadas con el uso compartido y la creación de sitios de grupo y grupo, se superponen entre sí. En este artículo se proporcionan descripciones de estas interacciones y procedimientos recomendados para trabajar con esta configuración.
 
-![Diagrama venn de características SharePoint, Yammer y grupos](../media/groups-sharepoint-venn.png)
+![Diagrama venn de características SharePoint, Yammer y grupos.](../media/groups-sharepoint-venn.png)
 
 ## <a name="the-effects-of-sharepoint-settings-on-microsoft-365-groups"></a>Los efectos de la SharePoint configuración en Microsoft 365 grupos
 

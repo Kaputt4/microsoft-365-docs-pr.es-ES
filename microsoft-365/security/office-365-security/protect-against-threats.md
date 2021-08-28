@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06f87213131f8fccdd9cfd83d7bdf4ead10c0667
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 69f36a26792d37f66fca46ec7905be89483c61f6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594321"
+ms.locfileid: "58568077"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -75,7 +75,7 @@ Para configurar Defender para Office 365 directivas, se le debe asignar un rol a
 |Rol o grupo de roles|Dónde obtener más información|
 |---|---|
 |administrador global|[Acerca de los roles de administración de Microsoft 365](../../admin/add-users/about-admin-roles.md)|
-|Administrador de seguridad|[Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference#security-administrator)
+|Administrador de seguridad|[Permisos de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Administración de la organización en Exchange Online|[Permisos de Exchange Online](/exchange/permissions-exo/permissions-exo)|
 |
 
@@ -306,7 +306,7 @@ Para recibir una notificación cuando un archivo de SharePoint Online o OneDrive
    Cuando haya terminado, haga clic en **Siguiente**
 
 5. En la **página Establecer los destinatarios,** configure las siguientes opciones:
-   - **Enviar notificaciones por correo** electrónico: compruebe que esta configuración está seleccionada.
+   - **Enviar notificaciones por correo** electrónico: compruebe que esta configuración está secmentada.
    - **Destinatarios de correo** electrónico: seleccione uno o varios administradores globales, administradores de seguridad o lectores de seguridad que deben recibir notificaciones cuando se detecte un archivo malintencionado.
    - **Límite de notificación diario:** compruebe **que no hay** ningún límite seleccionado.
 

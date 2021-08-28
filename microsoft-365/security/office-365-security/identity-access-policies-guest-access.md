@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: cfcbe9f330940f32ffff605bf4c2aa17689611e8af26e8f41b8ce10915c6a8d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 719b754e8e3486c281b23f4c38c7e33f548b118c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805289"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569866"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Directivas para permitir el acceso de invitado y el acceso de usuarios externos B2B
 
@@ -38,7 +38,7 @@ Proporcionar una ruta de acceso para que las cuentas B2B se autentiquen con el i
 
 En este diagrama se muestran las directivas que se agregarán o actualizarán entre las directivas comunes de acceso a dispositivos y identidades, para el acceso de invitado b2B y de usuario externo.
 
-[![Resumen de las actualizaciones de directivas para proteger el acceso de invitados](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
+[![Resumen de las actualizaciones de directivas para proteger el acceso de invitados.](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
 En la tabla siguiente se enumeran las directivas que debe crear y actualizar. Las directivas comunes se vinculan a las instrucciones de configuración asociadas en [el artículo Identidad común y directivas de acceso a dispositivos.](identity-access-policies.md)
 
@@ -50,7 +50,7 @@ En la tabla siguiente se enumeran las directivas que debe crear y actualizar. La
 
 Para incluir o excluir **invitados** y usuarios externos en directivas de acceso condicional, para Asignaciones > Usuarios y grupos > Incluir o **Excluir**, compruebe Todos los usuarios invitados **y externos**.
 
-![captura de pantalla de controles para excluir invitados y usuarios externos](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+![captura de pantalla de controles para excluir invitados y usuarios externos.](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
 ## <a name="more-information"></a>Más información
 
@@ -82,7 +82,7 @@ Solo una organización puede administrar un dispositivo. Si no excluyes a los in
 
 ## <a name="next-step"></a>Paso siguiente
 
-![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube y Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube y Microsoft Cloud App Security.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configurar directivas de acceso condicional para:
 

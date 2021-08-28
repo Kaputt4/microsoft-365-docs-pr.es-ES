@@ -19,12 +19,12 @@ description: Los administradores pueden aprender a buscar y usar los informes de
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78764102c873c784d03fdb7df4c1e27c5c9227ad
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 06817f5ce73800e3688820534404cb2893307dc2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394921"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568725"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -37,7 +37,7 @@ ms.locfileid: "58394921"
 
 Hay una variedad de informes disponibles en el portal de Microsoft 365 Defender para ayudarle a ver cómo las características de seguridad del correo electrónico, como el correo no deseado, antimalware y las características de cifrado en Microsoft 365 protegen su <https://security.microsoft.com> organización. Si tiene los [permisos](#what-permissions-are-needed-to-view-these-reports)necesarios, puede ver estos informes en el  portal de Microsoft 365 Defender yendo a Informes de correo electrónico & colaboración Correo electrónico & informes \>  \> **de colaboración**. Para ir directamente a la página **Informes de colaboración & correo** electrónico, abra <https://security.microsoft.com/emailandcollabreport> .
 
-![Página & informes de colaboración de correo electrónico en el portal de Microsoft 365 Defender web](../../media/email-collaboration-reports.png)
+![Página & informes de colaboración en el portal de Microsoft 365 Defender correo electrónico.](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
@@ -52,7 +52,7 @@ Hay una variedad de informes disponibles en el portal de Microsoft 365 Defender 
 
 El **informe Usuarios comprometidos** muestra el número de  cuentas  de usuario que se marcaron como Sospechosas o Restringidas en los últimos 7 días. Las cuentas en cualquiera de estos estados son problemáticas o incluso están en peligro. Con el uso frecuente, puede usar el informe para detectar picos e incluso tendencias en cuentas sospechosas o restringidas. Para obtener más información acerca de los usuarios en peligro, vea [Responder a una cuenta de correo electrónico comprometida.](responding-to-a-compromised-email-account.md)
 
-![Widget Usuarios comprometidos en la página Informes de colaboración & correo electrónico](../../media/compromised-users-report-widget.png)
+![Widget Usuarios comprometidos en la página Informes de colaboración & correo electrónico.](../../media/compromised-users-report-widget.png)
 
 La vista de agregado muestra los datos de los últimos 90 días y la vista de detalles muestra los datos de los últimos 30 días.
 
@@ -76,7 +76,7 @@ Puede filtrar tanto el gráfico como  la tabla de detalles haciendo clic en Filt
 
 Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Cancelar** o **Borrar filtros**.
 
-![Vista Informe en el informe usuarios comprometidos](../../media/compromised-users-report-activity-view.png)
+![Vista Informe en el informe Usuarios en peligro.](../../media/compromised-users-report-activity-view.png)
 
 ## <a name="exchange-transport-rule-report"></a>Exchange de regla de transporte
 
@@ -84,13 +84,13 @@ El **Exchange de regla de** transporte muestra el efecto de las reglas de flujo 
 
 Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque Exchange de transporte **y, a** continuación, haga clic en Ver **detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/ETRRuleReport> .
 
-![Exchange de regla de transporte en la página Informes de colaboración & correo electrónico](../../media/transport-rule-report-widget.png)
+![Exchange de regla de transporte en la página Informes de colaboración de & correo electrónico.](../../media/transport-rule-report-widget.png)
 
 En la página Exchange informe de reglas de **transporte,** los gráficos y datos disponibles se describen en las secciones siguientes.
 
 ### <a name="chart-breakdown-by-direction"></a>Desglose del gráfico por dirección
 
-![Vista Dirección para las Exchange de transporte en el informe Exchange regla de transporte](../../media/transport-rule-report-etr-direction-view.png)
+![Vista Dirección para las Exchange de transporte en el informe Exchange regla de transporte.](../../media/transport-rule-report-etr-direction-view.png)
 
 Si selecciona Desglose **de gráficos por dirección,** los siguientes gráficos estarán disponibles:
 
@@ -102,7 +102,7 @@ La siguiente información se muestra en la tabla de detalles debajo del gráfico
 - **Fecha**
 - **Directiva DLP** (**Ver datos por DLP Exchange reglas de transporte)**
 - **Regla de transporte**
-- **Asunto**
+- **Subject**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
@@ -118,7 +118,7 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 
 ### <a name="chart-breakdown-by-severity"></a>Desglose del gráfico por gravedad
 
-![Vista gravedad de las Exchange de transporte en el informe Exchange regla de transporte](../../media/transport-rule-report-etr-severity-view.png)
+![Vista gravedad de las Exchange de transporte en el informe Exchange regla de transporte.](../../media/transport-rule-report-etr-severity-view.png)
 
 Si selecciona Desglose **de gráficos por gravedad,** los siguientes gráficos están disponibles:
 
@@ -131,7 +131,7 @@ La siguiente información se muestra en la tabla de detalles debajo del gráfico
 - **Fecha**
 - **Directiva DLP** (**Ver datos por DLP Exchange reglas de transporte)**
 - **Regla de transporte**
-- **Asunto**
+- **Subject**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
@@ -156,11 +156,11 @@ El **informe de** estado de flujo de correo es un informe inteligente que muestr
 
 Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque Resumen de estado de **flujo** de correo y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/mailflowStatusReport> .
 
-![Widget de resumen de estado de flujo de correo en la página Informes de colaboración & correo electrónico](../../media/mail-flow-status-report-widget.png)
+![Widget de resumen de estado de flujo de correo en la página Informes de colaboración & correo electrónico.](../../media/mail-flow-status-report-widget.png)
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>Vista de tipo para el informe de estado de flujo de correo
 
-![Vista De tipo en el informe de estado de flujo de correo](../../media/mail-flow-status-report-type-view.png)
+![Escriba la vista en el informe de estado de flujo de correo.](../../media/mail-flow-status-report-type-view.png)
 
 En la **página Informe de estado de flujo de** correo, la **pestaña** Tipo está seleccionada de forma predeterminada. El gráfico muestra la siguiente información para el intervalo de fechas especificado:
 
@@ -215,7 +215,7 @@ Cada archivo .csv exportada está limitado a 150 000 filas. Si los datos de ese 
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Vista Dirección del informe de estado de flujo de correo
 
-![Vista Dirección en el informe de estado de flujo de correo](../../media/mail-flow-status-report-direction-view.png)
+![Vista Dirección en el informe de estado de flujo de correo.](../../media/mail-flow-status-report-direction-view.png)
 
 Si hace clic en la **pestaña Dirección,** el gráfico muestra la siguiente información para el intervalo de fechas especificado:
 
@@ -239,7 +239,7 @@ Cada archivo .csv exportada está limitado a 150 000 filas. Si los datos de ese 
 
 La **vista Embudo** muestra cómo las características de protección contra amenazas de correo electrónico de Microsoft filtran el correo electrónico entrante y saliente en su organización. Proporciona detalles sobre el recuento total de correo electrónico y cómo afectan a este recuento las características de protección contra amenazas configuradas, como la protección perimetral, el antimalware, la suplantación de identidad (phishing), el correo no deseado y la suplantación de identidad.
 
-![Vista embudo en el informe de estado de flujo de correo](../../media/mail-flow-status-report-funnel-view.png)
+![Vista Embudo en el informe de estado de flujo de correo.](../../media/mail-flow-status-report-funnel-view.png)
 
 La vista de agregado y la vista de tabla de detalles permiten 90 días de filtrado.
 
@@ -306,7 +306,7 @@ Cada archivo .csv exportada está limitado a 150 000 filas. Si los datos contien
 
 La **vista Tech es** similar a la vista **Embudo,** lo que proporciona más detalles pormenorizados para las características de protección contra amenazas configuradas. En el gráfico, puede ver cómo se clasifican los mensajes en las distintas etapas de protección contra amenazas.
 
-![Vista técnica en el informe de estado del flujo de correo](../../media/mail-flow-status-report-tech-view.png)
+![Vista técnica en el informe de estado de flujo de correo.](../../media/mail-flow-status-report-tech-view.png)
 
 La vista de agregado y la tabla de detalles permiten 90 días de filtrado.
 
@@ -372,14 +372,14 @@ El filtro de vista agregado permite 90 días, mientras que el filtro de tabla de
 
 Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la **página Informes de colaboración &** correo electrónico, busque Malware detectado en el correo **electrónico** y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/MalwareDetections> .
 
-![Detecciones de malware en el widget de correo electrónico en la página Informes de & de colaboración](../../media/malware-detections-widget.png)
+![Detecciones de malware en el widget de correo electrónico en la página & informes de colaboración.](../../media/malware-detections-widget.png)
 
 En la **página Informe de detecciones de malware,** el gráfico muestra la siguiente información para el intervalo de fechas especificado:
 
 - **Salida**
 - **Entrante**
 
-![Vista Informe en el informe de detección de malware en el correo electrónico](../../media/malware-detections-report-view.png)
+![Vista Informe en el informe Detección de malware en el correo electrónico.](../../media/malware-detections-report-view.png)
 
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 
@@ -387,7 +387,7 @@ La tabla de detalles debajo del gráfico muestra la siguiente información:
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Id. de** mensaje: disponible en el **campo de encabezado Id. de** mensaje en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (tenga en cuenta los corchetes angulares).
-- **Asunto**
+- **Subject**
 - **Filename**
 - **Nombre de malware**
 
@@ -420,7 +420,7 @@ La vista de agregado del informe permite 45 días de filtrado, mientras que la v
 
 Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Detecciones** de suplantación de suplantación y, a continuación, haga clic **en Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/SpoofMailReportV2> .
 
-![Widget Detecciones de suplantación en la página Informes de colaboración & correo electrónico](../../media/spoof-detections-widget.png)
+![Widget Detecciones de suplantación en la página Informes de colaboración & correo electrónico.](../../media/spoof-detections-widget.png)
 
 El gráfico muestra la siguiente información:
 
@@ -443,7 +443,7 @@ En la **página Informe** de correo suplantado, puede filtrar tanto el gráfico 
   - **Otros**
 - **Tipo de suplantación:** **Interno** y **Externo**
 
-![Página de informe de correo suplantación en el portal Microsoft 365 Defender correo](../../media/spoof-detections-report-page.png)
+![Página de informe de correo suplantación en el portal Microsoft 365 Defender correo electrónico.](../../media/spoof-detections-report-page.png)
 
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 
@@ -466,7 +466,7 @@ El **informe Envíos** muestra información sobre los elementos que los administ
 
 Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Envíos** y, a continuación, haga clic **en Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/adminSubmissionReport> . Para ir a [envíos de administrador en el portal de Microsoft 365 Defender,](admin-submission.md)haga clic **en Ir a Envíos**. Los administradores podrán ver el informe durante los últimos 30 días. 
 
-![Widget Envíos en la página Informes de colaboración & correo electrónico](../../media/submissions-report-widget.png)
+![Widget Envíos en la página Informes de colaboración & correo electrónico.](../../media/submissions-report-widget.png)
 
 El gráfico muestra la siguiente información:
 
@@ -496,7 +496,7 @@ En la **página Envíos,** puede filtrar tanto el gráfico como la tabla de deta
 
 La tabla de detalles debajo del gráfico  muestra la misma información  y tiene las mismas opciones de grupo o personalizar columnas que en la pestaña Enviado para el análisis en Correo electrónico **& envíos** de  \> **colaboración.** Para obtener más información, vea [Ver envíos de administrador a Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
 
-![Página de informe de envíos en el portal Microsoft 365 Defender envío](../../media/submissions-report-page.png)
+![Página de informe de envíos en Microsoft 365 Defender portal.](../../media/submissions-report-page.png)
 
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 
@@ -511,7 +511,7 @@ Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** 
 - Defender para Office 365:<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
 
-![Widget de estado de protección contra amenazas en la página Informes de colaboración & correo electrónico](../../media/threat-protection-status-report-widget.png)
+![Widget de estado de protección contra amenazas en la página Informes de colaboración & correo electrónico.](../../media/threat-protection-status-report-widget.png)
 
 De forma predeterminada, el gráfico muestra los datos de los últimos 7 días. Si hace clic **en Filtrar** en la página **Informe** de estado de protección contra amenazas, puede seleccionar un intervalo de fechas de 90 días (las suscripciones de prueba podrían limitarse a 30 días). La tabla de detalles permite filtrar durante 30 días.
 
@@ -519,7 +519,7 @@ Las vistas disponibles se describen en las secciones siguientes.
 
 ### <a name="view-data-by-overview"></a>Ver datos por información general
 
-![Vista general en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-overview-view.png)
+![Vista general en el informe de estado de protección contra amenazas.](../../media/threat-protection-status-report-overview-view.png)
 
 En la **vista Ver datos por información** general, se muestra la siguiente información de detección en el gráfico:
 
@@ -543,7 +543,7 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 
 ### <a name="view-data-by-email--phish-and-chart-breakdown-by-detection-technology"></a>Ver datos por phishing de \> correo electrónico y desglose de gráficos por tecnología de detección
 
-![Vista de tecnología de detección para correo electrónico de suplantación de identidad (phishing) en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
+![Vista de tecnología de detección para correo electrónico de suplantación de identidad (phishing) en el informe de estado de protección contra amenazas.](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 En la vista Ver  **datos por \> phishing** de correo electrónico y desglose de gráficos por tecnología de detección, se muestra la siguiente información en el gráfico:
 
@@ -568,7 +568,7 @@ En la vista Ver  **datos por \> phishing** de correo electrónico y desglose de 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Fecha**
-- **Asunto**
+- **Subject**
 - **Remitente**
 - **Destinatarios**
 - **Detectado por**
@@ -592,7 +592,7 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 
 ### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a>Ver datos por malware de \> correo electrónico y desglose de gráficos por tecnología de detección
 
-![Vista de tecnología de detección de malware en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+![Vista de tecnología de detección de malware en el informe de estado de protección contra amenazas.](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
 En la vista Ver  **datos por malware de \> correo** electrónico y desglose de gráficos por tecnología de detección, se muestra la siguiente información en el gráfico:
 
@@ -633,7 +633,7 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 
 ### <a name="chart-breakdown-by-policy-type-and-view-data-by-email--phish-or-view-data-by-email--malware"></a>Desglose de gráficos por tipo de directiva y Ver datos por \> correo electrónico Phish o Ver datos por malware de correo \> electrónico
 
-![Vista de tipo de directiva para correo electrónico de suplantación de identidad (phishing) o correo electrónico de malware en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-phishing-policy-type-view.png)
+![Vista de tipo de directiva para correo electrónico de suplantación de identidad (phishing) o correo electrónico de malware en el informe de estado de protección contra amenazas.](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
 En las **vistas Desglose** de gráficos por tipo de directiva y Ver datos por correo electrónico **\> phish** o Ver datos por **\> correo** electrónico malintencionado, se muestra la siguiente información en los gráficos:
 
@@ -646,7 +646,7 @@ En las **vistas Desglose** de gráficos por tipo de directiva y Ver datos por co
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**
@@ -671,7 +671,7 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 
 ### <a name="chart-breakdown-by-delivery-status-and-view-data-by-email--phish-or-view-data-by-email--malware"></a>Desglose del gráfico por estado de entrega y Ver datos por correo electrónico \> phish o ver datos por malware de correo \> electrónico
 
-![Vista Estado de entrega para correo electrónico de suplantación de identidad (phishing) y correo electrónico de malware en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
+![Vista Estado de entrega para correo electrónico de suplantación de identidad (phishing) y correo electrónico de malware en el informe de estado de protección contra amenazas.](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
 En las **vistas Desglose** del gráfico por estado de entrega y Ver datos por correo electrónico **\> phish** o **Ver \>** datos por correo electrónico malintencionado, se muestra la siguiente información en los gráficos:
 
@@ -688,7 +688,7 @@ En las **vistas Desglose** del gráfico por estado de entrega y Ver datos por co
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Fecha**
-- **Asunto**
+- **Subject**
 - **Remitente**
 - **Destinatarios**
 - **Detectado por**
@@ -712,7 +712,7 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 
 ### <a name="view-data-by-content--malware"></a>Ver datos por malware \> de contenido
 
-![Vista de malware de contenido en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-content-malware-view.png)
+![Vista de malware de contenido en el informe de estado de protección contra amenazas.](../../media/threat-protection-status-report-content-malware-view.png)
 
 En la **vista Ver datos por \> malware** de contenido, la siguiente información se muestra en el gráfico de Microsoft Defender para Office 365 organizaciones:
 
@@ -735,7 +735,7 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-reason"></a>Ver datos por invalidación del sistema y desglose de gráficos por motivo
 
-![Invalidación de mensajes y desglose de gráficos por motivo en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
+![Invalidación de mensajes y Desglose de gráficos por motivo en el informe de estado de protección contra amenazas.](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
 
 En la **vista Ver datos por invalidación del** sistema y Desglose de gráficos por motivo, se muestra la siguiente información de motivo de invalidación en el gráfico: 
 
@@ -787,7 +787,7 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-delivery-location"></a>Ver datos por invalidación del sistema y desglose de gráficos por ubicación de entrega
 
-![Invalidación de mensajes y desglose de gráficos por ubicación de entrega en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
+![Invalidación de mensajes y Desglose de gráficos por ubicación de entrega en el informe de estado de protección contra amenazas.](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
 
 En la **vista Ver datos por invalidación** del sistema y Desglose del gráfico por ubicación de entrega, se muestra la siguiente información de motivo de invalidación en el gráfico: 
 
@@ -797,7 +797,7 @@ En la **vista Ver datos por invalidación** del sistema y Desglose del gráfico 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Fecha**
-- **Asunto**
+- **Subject**
 - **Remitente**
 - **Destinatarios**
 - **Invalidación del sistema**
@@ -835,7 +835,7 @@ El **informe de malware** top muestra los distintos tipos de malware detectados 
 
 Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque Top **malware** y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/TopMalware> .
 
-![Widget de malware superior en la página Informes de colaboración & correo electrónico](../../media/top-malware-report-widget.png)
+![Widget de malware superior en la página Informes de colaboración & correo electrónico.](../../media/top-malware-report-widget.png)
 
 Al pasar el mouse sobre una cuña en el gráfico circular, puede ver el nombre de un tipo de malware y cuántos mensajes se detectaron como que tienen ese malware.
 
@@ -846,7 +846,7 @@ En la **página Informe de malware superior,** se muestra una versión más gran
 
 Si hace clic **en Filtrar**, puede especificar un intervalo de fechas con Fecha de **inicio y** Fecha **de finalización.**
 
-![Vista de informe de malware superior](../../media/top-malware-report-view.png)
+![Vista de informe de malware superior.](../../media/top-malware-report-view.png)
 
 ## <a name="url-threat-protection-report"></a>Informe de protección contra amenazas de url
 
@@ -861,7 +861,7 @@ El  informe de mensajes notificados por el usuario muestra información acerca d
 
 Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Mensajes** notificados por el usuario y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/userSubmissionReport> . Para ir a [envíos de administrador en el portal de Microsoft 365 Defender,](admin-submission.md)haga clic **en Ir a Envíos**.
 
-![Widget Mensajes notificados por el usuario en la página Informes de & de colaboración](../../media/user-reported-messages-widget.png)
+![Widget Mensajes notificados por el usuario en la página Informes de colaboración & correo electrónico.](../../media/user-reported-messages-widget.png)
 
 En **la página Mensajes** notificados por el usuario, puede  filtrar tanto el gráfico como la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el control desplegable que aparece:
 
@@ -888,7 +888,7 @@ Para agrupar las entradas, haga clic **en Agrupar** y seleccione uno de los sigu
 - **Volver a examinar el resultado**
 - **Simulación de phishing**
 
-![Informe de mensajes notificados por el usuario](../../media/user-reported-messages-report.png)
+![Informe de mensajes notificados por el usuario.](../../media/user-reported-messages-report.png)
 
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 

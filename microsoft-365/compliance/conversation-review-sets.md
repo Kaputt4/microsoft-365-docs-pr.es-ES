@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre la característica de reconstrucción de conversación en Advanced eDiscovery (denominado subproceso de conversación) para reconstruir, revisar y exportar conversaciones de chat en Microsoft Teams y Yammer grupos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2c1790646587d46f39a13b153a8cd152fb21468f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 62ebfc054db260fd5e41fec3809ba1efdf46b44b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256464"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569626"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>Subprocesos de conversación en Advanced eDiscovery
 
@@ -48,7 +48,7 @@ Estas son algunas definiciones que le ayudarán a empezar a usar la reconstrucci
 
 - **Conversación:** Representa una agrupación de uno o varios mensajes. En diferentes aplicaciones, las conversaciones pueden representarse de diferentes maneras. En algunas aplicaciones, hay una acción explícita que resulta de responder a un mensaje existente. Las conversaciones se forman explícitamente como resultado de esta acción del usuario. Por ejemplo, esta es una captura de pantalla de una conversación de canal en Microsoft Teams.
 
-   ![Microsoft Teams Conversación de canal](../media/threadedchat.png)
+   ![Microsoft Teams Conversación de canal.](../media/threadedchat.png)
 
    En otras aplicaciones (como los mensajes de chat en grupo en Teams), no hay una cadena de respuesta formal y, en su lugar, los mensajes aparecen como un "río plano de mensajes" dentro de un único subproceso. En estos tipos de aplicaciones, las conversaciones se deducen de un grupo de mensajes que se producen en un tiempo determinado. Esta "agrupación suave" de mensajes (en lugar de una cadena de respuesta) representa la conversación "ida y vuelta" sobre un tema específico de interés.
 
@@ -62,7 +62,7 @@ Después de revisar y finalizar la consulta de búsqueda en una colección, pued
 
 Al agregar elementos de conversaciones a un conjunto de revisión, puede usar la opción conversaciones en subprocesos para recopilar mensajes contextuales de conversaciones que contienen elementos que coinciden con los criterios de búsqueda de la colección. Después de seleccionar la opción conversaciones de subprocesos, pueden suceder lo siguiente:
 
-  ![Recuperación de conversaciones](../media/messagesandconversations.png)
+  ![Recuperación de conversaciones.](../media/messagesandconversations.png)
 
 1. Con una consulta de palabra clave y intervalo de fechas, la búsqueda devolvió un éxito en *el mensaje 3*. Este mensaje formaba parte de una conversación más grande, ilustrada por *CRC1*.
 
@@ -76,7 +76,7 @@ Para habilitar la opción conversaciones enhebradas, vea [Commit a draft collect
 
 Después de procesar y agregar el contenido al conjunto de revisión, puede empezar a revisar los datos del conjunto de revisión. Los mensajes individuales se enhebran juntos y se presentan como conversaciones. Esto le permite revisar y exportar conversaciones contextuales.
 
-  ![Conjunto de revisión de conversación](../media/ConversationRSOptions.PNG)
+  ![Conjunto de revisión de conversación.](../media/ConversationRSOptions.PNG)
 
 En las secciones siguientes se describe la revisión y exportación de conversaciones.
 

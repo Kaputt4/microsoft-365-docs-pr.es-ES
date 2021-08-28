@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: abadce38582408ec7105bdfcec7181210a775e85af2354be08bb33aca3b5764e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dfc770e22f0fb4fc6dbb7e7d24bc1a8690d44032
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853773"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569962"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Información del panel: Administración de amenazas y vulnerabilidades
 
@@ -32,7 +32,7 @@ ms.locfileid: "53853773"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -59,7 +59,7 @@ Vea este vídeo para obtener una introducción rápida de lo que se encuentra en
 
 ## <a name="threat-and-vulnerability-management-dashboard"></a>Panel de administración de vulnerabilidades amenazas
 
-:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="Panel de administración de amenazas y vulnerabilidades para dispositivos":::
+:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="Panel de administración de amenazas y vulnerabilidades para dispositivos.":::
 
 Área|Description
 :---|:---

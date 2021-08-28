@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f9c61d870f15536ceadd000da5d9123e0dd918e5
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 8d68a7fc815227f267f79245c7861da8f8afde4d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611276"
+ms.locfileid: "58569518"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Crear una aplicación para tener acceso a Microsoft Defender para endpoint sin un usuario
 
@@ -52,20 +52,20 @@ En este artículo se explica cómo crear una aplicación de Azure AD, obtener un
 
 1. Inicie sesión en [Azure](https://portal.azure.com) con un usuario que tenga el rol **De administrador** global.
 
-2. Vaya a **Azure Active Directory** \> **registros de aplicaciones** Nuevo \> **registro**. 
+2. Vaya a **Azure Active Directory**  >  **registros de aplicaciones** Nuevo  >  **registro**. 
 
    ![Imagen de Microsoft Azure navegación al registro de aplicaciones.](images/atp-azure-new-app2.png)
 
 3. En el formulario de registro, elija un nombre para la aplicación y, a continuación, **seleccione Registrar**.
 
-4. Para habilitar la aplicación para tener acceso a Defender for Endpoint y asignarle el permiso **"Leer** todas las **alertas",** en la página de la aplicación, seleccione Permisos de api Agregar api de permisos que mi organización usa >, escriba WindowsDefenderATP y, a continuación, \>  \>  **seleccione WindowsDefenderATP**. 
+4. Para habilitar la aplicación para tener acceso a Defender for Endpoint y asignarle el permiso **"Leer** todas las **alertas",** en la página de la aplicación, seleccione Permisos de api Agregar api de permisos que mi organización usa >, escriba WindowsDefenderATP y, a continuación,  >    >   **seleccione WindowsDefenderATP**. 
 
    > [!NOTE]
    > *WindowsDefenderATP* no aparece en la lista original. Comience a escribir su nombre en el cuadro de texto para verlo aparecer.
 
    ![agregar permiso.](images/add-permission.png)
 
-   - Seleccione **Permisos de aplicación** \> **Alert.Read.All** y, a continuación, seleccione Agregar **permisos**.
+   - Seleccione **Permisos de aplicación**  >  **Alert.Read.All** y, a continuación, seleccione Agregar **permisos**.
 
    ![permiso de la aplicación.](images/application-permissions.png)
 
@@ -222,6 +222,6 @@ A continuación se muestra un ejemplo de envío de una solicitud para obtener un
     // Do something useful with the response
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [API compatibles de Microsoft Defender para punto de conexión](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint en nombre de un usuario](exposed-apis-create-app-nativeapp.md)

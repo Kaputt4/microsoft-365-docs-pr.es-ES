@@ -20,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0ea429fb9817f7daa9cbae62b4a56837a1592d34
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d23e6ab170b200626b422163daaafdbdd11e5fca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254965"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568041"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Administrar remitentes suplantados con la directiva de inteligencia suplantada y la información de inteligencia suplantada en EOP
 
@@ -83,11 +83,11 @@ Hay dos maneras de permitir y bloquear remitentes suplantados:
 > [!IMPORTANT]
 > En este artículo se describe la experiencia de administración de remitentes suplantada anterior que se está reemplazando (la directiva de inteligencia suplantada **en** la página Directivas contra **correo** no deseado). Para obtener más información acerca  de la nueva experiencia (la pestaña Suplantación de dominio en la lista de inquilinos permitidos o bloqueados), vea [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas en \>  \>  \>  la **sección** Directivas.
+1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
 
 2. En la **página Directivas contra correo** no deseado, seleccione **Suplantar** la directiva de inteligencia haciendo clic en el nombre.
 
-   ![Seleccionar la directiva de inteligencia suplantación](../../media/anti-spam-settings-spoof-intelligence-policy.png)
+   ![Seleccione la directiva de inteligencia suplantación.](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
 3. En el **menú desplegable De la directiva de inteligencia** suplantación que aparece, realice una de las siguientes selecciones:
    - **Mostrarme remitentes que ya revisé**
@@ -97,11 +97,11 @@ Hay dos maneras de permitir y bloquear remitentes suplantados:
    - **Dominios:** remitentes que suplanta a los usuarios de los dominios internos.
    - **Dominios externos:** remitentes que suplanta a los usuarios en dominios externos.
 
-5. Haga clic en Expandir icono de la columna ![ ](../../media/scc-expand-icon.png) **¿Permitido suplantación de identidad?** y realice una de las siguientes selecciones:
+5. Haga clic ![ en Expandir icono.](../../media/scc-expand-icon.png) en la **columna Allowed to spoof?** y realice una de las siguientes selecciones:
    - **Sí:** permitir al remitente suplantado.
    - **No:** marque el mensaje como suplantado. La acción está controlada por la directiva contra suplantación de identidad predeterminada o las directivas personalizadas contra suplantación de identidad. Para obtener más información, consulte [Configuración de suplantación de identidad en las directivas contra phishing](set-up-anti-phishing-policies.md#spoof-settings).
 
-   ![Captura de pantalla que muestra el flyout de remitentes suplantados y si el remitente puede suplantar](../../media/spoof-allow-block-flyout.png)
+   ![Captura de pantalla que muestra la suplantación de identidad de los remitentes y si el remitente puede suplantar.](../../media/spoof-allow-block-flyout.png)
 
    Las columnas y valores que se muestran se explican en la siguiente lista:
 
@@ -196,7 +196,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 3. La información del panel muestra información como esta:
 
-   ![Captura de pantalla de información de inteligencia suplantación](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+   ![Captura de pantalla de información de inteligencia suplantación.](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
 
    Esta información tiene dos modos:
 
@@ -232,7 +232,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
    Desde aquí, también puede elegir agregar o quitar el par de infraestructura dominio/envío de la lista permitido para **suplantación** de remitente. Simplemente establece la alternancia según corresponda.
 
-   ![Captura de pantalla de un dominio en el panel de detalles de Spoof intelligence insight](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+   ![Captura de pantalla de un dominio en el panel de detalles de Spoof intelligence insight.](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 

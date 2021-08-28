@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use esta información para obtener información sobre cómo Office 365 redes de entrega de contenido (CDN) para mejorar el rendimiento.
-ms.openlocfilehash: d50fc51307cdddb6e77a661ca5319d81ad1a0afc
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: a5213c1718db00cfeb49c437fc7178a527adb07f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585625"
+ms.locfileid: "58569530"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de entrega de contenido (CDN)
 
@@ -37,7 +37,7 @@ Las CDN ayudan a Office 365 rápidas y confiables para los usuarios finales. Los
 
 Un CDN es una red distribuida geográficamente formada por servidores proxy y de archivos en centros de datos conectados por redes troncales de alta velocidad. Las CDN se usan para reducir los tiempos de latencia y carga de un conjunto especificado de archivos y objetos en un sitio web o servicio. Un CDN puede tener muchos miles de puntos de conexión para el mantenimiento óptimo de las solicitudes entrantes desde cualquier ubicación.
 
-Las CDN se usan normalmente para proporcionar descargas más rápidas de contenido genérico para un sitio web o servicio, como archivos Javascript, iconos e imágenes, y también pueden proporcionar acceso privado al contenido del usuario, como archivos de bibliotecas de documentos en línea de SharePoint, archivos multimedia de streaming y código personalizado.
+Las CDN se usan normalmente para proporcionar descargas más rápidas de contenido genérico para un sitio web o servicio, como archivos javascript, iconos e imágenes, y también pueden proporcionar acceso privado al contenido del usuario, como archivos de bibliotecas de documentos en línea de SharePoint, archivos multimedia de streaming y código personalizado.
 
 La mayoría de los servicios en la nube de empresa usan las CDN. Los servicios en la nube como Office 365 millones de clientes descargan una mezcla de contenido propietario (como correos electrónicos) y contenido genérico (como iconos) a la vez. Es más eficaz colocar imágenes que todos los usuarios usan, como iconos, lo más cerca posible del equipo del usuario. No es práctico para todos los servicios en la nube crear centros de datos CDN que almacenen este contenido genérico en todas las áreas metropolitanas, o incluso en todos los principales centros de Internet de todo el mundo, por lo que algunas de estas CDN se comparten.
 
@@ -62,7 +62,7 @@ La CDN de Office 365 se compone de varias redes CDN que permite hospedar archivo
 
 ![Office 365 CDN diagrama conceptual.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN diagrama conceptual")
 
-El contenido en orígenes **públicos** dentro de la CDN de Office 365 es accesible de forma anónima y cualquier persona que tenga la URL a los activos hospedado puede acceder. Dado que el acceso al contenido en orígenes públicos es anónimo, solo debe usarlos para almacenar en caché contenido genérico no confidencial, como archivos Javascript, scripts, iconos e imágenes. La CDN de Office 365 se usa de forma predeterminada para descargar activos de recurso genéricos como las aplicaciones cliente de Office 365 desde un origen público.
+El contenido en orígenes **públicos** dentro de la CDN de Office 365 es accesible de forma anónima y cualquier persona que tenga la URL a los activos hospedado puede acceder. Como el acceso al contenido en orígenes públicos es anónimo, solo debe usarlos para almacenar en caché contenido genérico y no confidencial, como archivos javascript, scripts, iconos e imágenes. La CDN de Office 365 se usa de forma predeterminada para descargar activos de recurso genéricos como las aplicaciones cliente de Office 365 desde un origen público.
 
 **Los** orígenes privados dentro del Office 365 CDN proporcionan acceso privado al contenido del usuario, como bibliotecas de documentos en línea, sitios e imágenes propietarias de SharePoint en línea. El acceso al contenido de orígenes privados está protegido con tokens generados de forma dinámica, por lo que pueden acceder los usuarios con permisos para la ubicación de almacenamiento o de biblioteca de documentos original. Los orígenes privados en la CDN de Office 365 solo pueden usarse para el contenido de SharePoint Online y solo se puede acceder a los activos mediante el redireccionamiento de su espacio empresarial de SharePoint Online.
 
@@ -129,7 +129,7 @@ Las CDN en uso por Office 365 siempre están sujetas a cambios y, en muchos caso
 
 |CDN  |Company  |Uso  |Vínculo  |
 |---------|---------|---------|---------|
-|Office 365 CDN     |Microsoft Azure         |Activos genéricos en orígenes públicos, SharePoint de usuario en orígenes privados         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
+|Office 365 CDN     |Akamai         |Activos genéricos en orígenes públicos, SharePoint de usuario en orígenes privados         |[Uso de la red de entrega de contenido de Office 365 con SharePoint Online](use-microsoft-365-cdn-with-spo.md)         |
 |CDN de Azure     |Microsoft         |Código personalizado, SharePoint Framework soluciones         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
 |Microsoft Ajax CDN (solo lectura)     |Microsoft         |Bibliotecas comunes para Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js etc.         |[Microsoft Ajax CDN](/aspnet/ajax/cdn/overview)         |
 
@@ -137,15 +137,15 @@ Las CDN en uso por Office 365 siempre están sujetas a cambios y, en muchos caso
 
 Hay muchos factores implicados en la medición de diferencias específicas en el rendimiento entre los datos descargados directamente de Office 365 y los datos descargados de un CDN específico, como la ubicación relativa al inquilino y al punto de conexión CDN más cercano, el número de activos de una página que sirve el CDN y los cambios transitorios en la latencia de red y el ancho de banda. Sin embargo, una prueba A/B sencilla puede ayudar a mostrar la diferencia en el tiempo de descarga de un archivo específico.
 
-Las capturas de pantalla siguientes ilustran la diferencia en la velocidad de descarga entre la ubicación del archivo nativo en Office 365 y el mismo archivo hospedado en microsoft [Ajax Content Delivery Network](/aspnet/ajax/cdn/overview). Estas capturas de pantalla se encuentran en la **pestaña Red** de las herramientas para desarrolladores de Internet Explorer 11. Estas capturas de pantalla muestran la latencia en la popular biblioteca jQuery. Para mostrar esta pantalla, en Internet Explorer, presione  **F12** y seleccione la pestaña Red, que está Wi-Fi icono.
+Las siguientes capturas de pantalla ilustran la diferencia en la velocidad de descarga entre la ubicación del archivo nativo en Office 365 y el mismo archivo hospedado en microsoft [Ajax Content Delivery Network](/aspnet/ajax/cdn/overview). Estas capturas de pantalla se encuentran en la **pestaña Red** de las herramientas para desarrolladores de Internet Explorer 11. Estas capturas de pantalla muestran la latencia en la popular biblioteca jQuery. Para mostrar esta pantalla, en Internet Explorer, presione  **F12** y seleccione la pestaña Red, que está Wi-Fi icono.
   
 ![Captura de pantalla de F12 Network.](../media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
-Esta captura de pantalla muestra la biblioteca cargada en la galería de páginas maestras del SharePoint sitio en línea. El tiempo que tardó en cargar la biblioteca es de 1,51 segundos.
+En esta captura de pantalla se muestra la biblioteca cargada en la galería de páginas maestras del SharePoint sitio en línea. El tiempo que tardó en cargar la biblioteca es de 1,51 segundos.
   
 ![Captura de pantalla del tiempo de carga 1,51s.](../media/64225c79-fa53-480f-81cd-0d351674320e.png)
   
-La segunda captura de pantalla muestra el mismo archivo entregado por microsoft CDN. Esta vez, la latencia ronda los 496 milisegundos. Se trata de una gran mejora y muestra que se afeita un segundo completo el tiempo total para descargar el objeto.
+La segunda captura de pantalla muestra el mismo archivo entregado por el CDN de Microsoft. Esta vez, la latencia ronda los 496 milisegundos. Se trata de una gran mejora y muestra que se afeita un segundo completo el tiempo total para descargar el objeto.
   
 ![Captura de pantalla de los tiempos de carga en 469 ms.](../media/6a553cc3-25a0-42c1-aae7-4aebbc2eb4c3.png)
 

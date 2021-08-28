@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 778ff1aebf7ea0a559d2ec5fb036de7218865df9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d7474a3cb2f04627c5da16f84dbde6d195021551
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256887"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569926"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Revisar los requisitos de arquitectura y los conceptos clave para Microsoft Defender for Identity
 
@@ -46,7 +46,7 @@ Defender for Identity protege los usuarios locales de Active Directory o los usu
 
 En el siguiente diagrama se muestra la arquitectura de línea base de Defender for Identity. 
 
-![Arquitectura de Microsoft Defender para identidad](../../media/defender/m365-defender-identity-architecture.png)
+![Arquitectura de Microsoft Defender para Identity.](../../media/defender/m365-defender-identity-architecture.png)
 
 En esta ilustración:
 - Los sensores instalados en los controladores de dominio de AD analizan los registros y el tráfico de red y los envían a Microsoft Defender for Identity para su análisis e informes.
@@ -86,7 +86,7 @@ En la siguiente tabla se identificaron conceptos clave que son importantes para 
 Defender for Identity requiere algunos requisitos previos para garantizar que la identidad local y los componentes de red cumplan los requisitos mínimos. Use este artículo como una lista de comprobación para asegurarse de que el entorno está listo: [requisitos previos](/defender-for-identity/prerequisites)de Microsoft Defender para la identidad .
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Paso 2 de 3: [Habilitar el entorno de evaluación Defender for Identity](eval-defender-identity-enable-eval.md)
 

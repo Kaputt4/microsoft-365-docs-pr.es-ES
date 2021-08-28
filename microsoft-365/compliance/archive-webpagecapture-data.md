@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de captura de páginas web de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de la organización.
-ms.openlocfilehash: 333c97661267b662fe9743649a54cd8725f4d2511805eba36064a2d030c8e592
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9d35f23371bfdf0f3f3c9d29d059d862f9cd93ac
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820569"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570166"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Configurar un conector para archivar datos de páginas web
 
@@ -29,7 +29,7 @@ Después de almacenar el contenido de la página web en buzones de usuario, pued
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar el contenido de la página web en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos de página web](../media/WebPageCaptureConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos de páginas web.](../media/WebPageCaptureConnectorWorkflow.png)
 
 1. Su organización trabaja con el origen de la página web para configurar y configurar un sitio de captura de páginas web.
 

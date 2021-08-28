@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4c2b33a319b98215241f13f80adc8e2e1cc849a02c6044b939465adead69e683
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f80c0edeeb0d05287dc43aa9e3dea906504ac4e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888996"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568125"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Crear una aplicación para obtener acceso Microsoft 365 Defender API en nombre de un usuario
 
@@ -52,7 +52,7 @@ En general, deberá seguir los siguientes pasos para usar estas API:
 
 En este artículo se explica cómo:
 
-- Crear una aplicación de Azure AD
+- Crear una aplicación Azure AD
 - Obtener un token de acceso para Microsoft 365 Defender
 - Validar el token
 
@@ -68,11 +68,11 @@ En este artículo se explica cómo:
 
 2. Vaya a **Azure Active Directory**  >  **registros de aplicaciones** Nuevo  >  **registro**.
 
-   ![Imagen de Microsoft Azure navegación al registro de aplicaciones](../../media/atp-azure-new-app2.png)
+   ![Imagen de Microsoft Azure navegación al registro de aplicaciones.](../../media/atp-azure-new-app2.png)
 
 3. En el formulario, elija un nombre para la aplicación y escriba la siguiente información para el URI de redireccionamiento y, a continuación, **seleccione Registrar**.
 
-   ![Imagen de la ventana Crear aplicación](../../media/nativeapp-create2.PNG)
+   ![Imagen de la ventana Crear aplicación.](../../media/nativeapp-create2.PNG)
 
    - **Tipo de aplicación:** Cliente público
    - **URI de redireccionamiento:**https://portal.azure.com
@@ -82,11 +82,11 @@ En este artículo se explica cómo:
    > [!TIP]
    > *Microsoft Threat Protection* es un nombre antiguo para Microsoft 365 Defender y no aparecerá en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para verlo aparecer.
 
-   ![Imagen de selección de permisos de API](../../media/apis-in-my-org-tab.PNG)
+   ![Imagen de selección de permisos de API.](../../media/apis-in-my-org-tab.PNG)
 
    - Elija **Permisos delegados**. Elija los permisos relevantes para su escenario (por **ejemplo, Incident.Read**) y, a continuación, **seleccione Agregar permisos**.
 
-   ![Imagen de acceso a api y selección de API](../../media/request-api-permissions-delegated.PNG)
+   ![Imagen de acceso a la API y selección de API.](../../media/request-api-permissions-delegated.PNG)
 
     > [!NOTE]
     > Debe seleccionar los permisos relevantes para su escenario. *Leer todos los incidentes* es solo un ejemplo. Para determinar qué permiso necesita, consulte la sección **Permisos** de la API a la que desea llamar.
@@ -95,11 +95,11 @@ En este artículo se explica cómo:
 
 5. Seleccione **Conceder consentimiento de administrador**. Cada vez que agregue un permiso, debe seleccionar Conceder consentimiento **de administrador** para que su efecto.
 
-   ![Imagen de concesión de permisos](../../media/grant-consent-delegated.PNG)
+   ![Imagen de Conceder permisos.](../../media/grant-consent-delegated.PNG)
 
 6. Registre el identificador de la aplicación y el identificador de inquilino en un lugar seguro. Aparecen en Información **general en** la página de la aplicación.
 
-   ![Imagen del identificador de aplicación creado](../../media/app-and-tenant-ids.png)
+   ![Imagen del identificador de aplicación creado.](../../media/app-and-tenant-ids.png)
 
 ## <a name="get-an-access-token"></a>Obtener un token de acceso
 
@@ -130,7 +130,7 @@ $response.AccessToken
 
 En la siguiente imagen, puedes ver un token descodificado adquirido desde una aplicación, con ```Incidents.Read.All``` , ```Incidents.ReadWrite.All``` y ```AdvancedHunting.Read.All``` permisos:
 
-![Imagen de validación de tokens](../../media/webapp-decoded-token.png)
+![Imagen de validación de tokens.](../../media/webapp-decoded-token.png)
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Usar el token para obtener acceso a la API Microsoft 365 Defender usuario
 

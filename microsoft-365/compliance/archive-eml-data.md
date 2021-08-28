@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos EML de Veritas en Microsoft 365. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 389eaccc4153afcc63bd069a1ff412068c6b429f97ead97a9b2c5711880bfd1d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 81d6ccc2ca364fed536b802a3b922ebc25c02557
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814857"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569830"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data"></a>Configurar un conector para archivar datos EML
 
@@ -29,7 +29,7 @@ Una vez que los mensajes EML se almacenan en buzones de usuario, puede aplicar M
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos eml en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos EML](../media/EMLConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos EML.](../media/EMLConnectorWorkflow.png)
 
 1. Su organización trabaja con el origen eml para configurar y configurar un sitio EML.
 

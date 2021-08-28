@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03843707ebffc6798b3d73526a2e95b884047b13
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: c785941529823048b55ab3590c91f365ea17a1ba
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594027"
+ms.locfileid: "58570142"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -73,7 +73,7 @@ La clasificación basada en EDM se incluye en estas suscripciones
 
 |Portal|World Wide/GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
 |Centro de seguridad de Microsoft 365|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Centro de cumplimiento de Microsoft 365|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 

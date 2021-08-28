@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: Obtenga información sobre la administración de permisos en el Centro de cumplimiento de Microsoft 365.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8787deb94cbe8a0f2f5b3a17b220c933df48e7b21fb023f5bbc78f154e7008d5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 717b8cd312aad805107536b174b3a9cd58e72a55
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871770"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570094"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Permisos en el Centro de cumplimiento de Microsoft 365
 
@@ -24,7 +24,7 @@ El Centro de cumplimiento de Microsoft 365 se actualizó recientemente y ahora a
 
 Para ver  la pestaña Permisos en el Centro de cumplimiento de Microsoft 365, los usuarios deben ser administradores globales o deben tener asignado el rol Administración de roles (un rol se asigna solo al grupo de roles Administración *de* la organización).  El *rol Administración de* roles permite a los usuarios ver, crear y modificar grupos de roles.
 
-![Página Permisos en Centro de cumplimiento de Microsoft 365](../media/m365-compliance-center-permissions.png)
+![Página permisos en Centro de cumplimiento de Microsoft 365.](../media/m365-compliance-center-permissions.png)
 
 Los permisos de la Centro de cumplimiento de Microsoft 365 se basan en el modelo de permisos de control de acceso basado en roles (RBAC). RBAC es el mismo modelo de permisos que usa la mayoría de los servicios de Microsoft 365, por lo que si está familiarizado con la estructura de permisos de estos servicios, la concesión de permisos en el Centro de cumplimiento de Microsoft 365 será familiar. Es importante recordar que los permisos administrados en el Centro de cumplimiento de Microsoft 365 no cubren la administración de todos los permisos necesarios en cada servicio individual. Todavía tendrá que administrar ciertos permisos específicos del servicio en el Centro de administración para el servicio específico. Por ejemplo, si necesita asignar permisos para las directivas de archivado, auditoría y retención de MRM, deberá administrar estos permisos en el Centro de administración de Exchange administración.
 
@@ -34,7 +34,7 @@ Un rol concede permisos para realizar un conjunto de tareas; por ejemplo, el rol
 
 Un grupo de roles es un conjunto de roles que permiten a los usuarios realizar su trabajo en las soluciones de cumplimiento del Centro de cumplimiento de Microsoft 365. Por ejemplo, al agregar usuarios al grupo de roles De administración de riesgos de *Insider,* los administradores, analistas, investigadores y auditores designados se configuran para los permisos de administración de riesgos insider necesarios en un solo grupo. El Centro de cumplimiento de Microsoft 365 incluye grupos de roles predeterminados para tareas y funciones para cada solución de cumplimiento a la que deberá asignar personas. Por lo general, se recomienda simplemente agregar usuarios individuales como miembros a los grupos de roles de cumplimiento predeterminados según sea necesario.
 
-![Diagrama que muestra la relación de los grupos de roles con los roles y miembros](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagrama que muestra la relación de los grupos de roles con roles y miembros.](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## <a name="permissions-needed-to-use-features-in-the-microsoft-365-compliance-center"></a>Permisos necesarios para usar características en el Centro de cumplimiento de Microsoft 365
 
@@ -46,7 +46,7 @@ La administración de permisos en el Centro de cumplimiento de Microsoft 365 sol
 
 Los roles que aparecen en la sección **Roles de Azure AD** de la página Centro de cumplimiento de Microsoft 365 permisos  >   **son** Azure Active Directory roles. Estos roles están diseñados para alinearse con las funciones de trabajo en el grupo de TI de su organización, lo que facilita otorgar a una persona todos los permisos necesarios para realizar su trabajo. Puede ver los usuarios asignados actualmente a cada función seleccionando un rol de administrador y viendo los detalles del panel de funciones. Para administrar miembros de un rol de Azure AD, seleccione Administrar miembros en Azure AD. Esta opción le redirige al Portal de administración de Azure.
 
-|Función|Descripción|
+|Role|Descripción|
 |:---|:----------|
 |**Administrador global**|Acceso a todas las características administrativas en todos los servicios de Microsoft 365. Los administradores globales son los únicos que pueden asignar otros roles de administrador. Para más información, consulte [Administrador global / Administrador de empresa](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
 |**Administrador de datos de cumplimiento**|Realizar un seguimiento de los datos de su organización a través de Microsoft 365, asegurarse de que están protegidos y obtener información sobre los problemas para ayudar a reducir los riesgos. Para obtener más información, consulte [Administrador de datos de cumplimiento](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|

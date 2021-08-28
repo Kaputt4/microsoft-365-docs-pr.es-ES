@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bec4ca87c3827c8b24fa7017c01b40a60fce80eecb636d6d91adf0ceb9b8ecf1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4176b718105643b59f23024c1a70cd8fe220eea9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897786"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568821"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>Introducción a la respuesta a su primer incidente
 
@@ -52,11 +52,11 @@ Los incidentes en Microsoft 365 Defender son los puntos de partida lógicos para
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Preparar la organización y Microsoft 365 inquilino](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+[![Prepare su organización y Microsoft 365 inquilino.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
 Asegúrese de que su organización y Microsoft 365 inquilino esté [preparado para el tratamiento de incidentes.](first-incident-prepare.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Instrucciones de respuesta a incidentes para Microsoft 365 Defender:
 

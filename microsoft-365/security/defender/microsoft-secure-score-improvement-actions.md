@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 6b1d684687c271150fa7e297c0a243ba61bd1b39
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d67d92029ccb4da6711010b291dc2ad71bcaff70
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247942"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569890"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la posición de seguridad con Puntuación segura de Microsoft
 
@@ -44,7 +44,7 @@ Para ayudarle a encontrar la información que necesita más rápidamente, las ac
 
 En la página Introducción a la puntuación segura de Microsoft, vea cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. También puedes obtener una vista general de la puntuación total, la tendencia histórica de tu puntuación segura con comparaciones comparativas comparativas y las acciones de mejora prioritarias que se pueden realizar para mejorar la puntuación.
 
-![Página principal de puntuación segura](../../media/secure-score/secure-score-home-page.png)
+![Página principal de puntuación segura.](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="check-your-current-score"></a>Comprobar la puntuación actual
 
@@ -60,7 +60,7 @@ Las siguientes son las puntuaciones que puedes agregar a tu vista de la puntuaci
 
 Esta vista es la que tendrá si has incluido todas las vistas de puntuación posibles:
 
-![Su puntuación segura, incluida la puntuación planeada, la puntuación de licencia actual y la puntuación alcanzable](../../media/secure-score/secure-score-achievable.png)
+![Su puntuación segura, incluida la puntuación planeada, la puntuación de licencia actual y la puntuación alcanzable.](../../media/secure-score/secure-score-achievable.png)
 
 ## <a name="take-action-to-improve-your-score"></a>Tomar medidas para mejorar la puntuación
 
@@ -74,7 +74,7 @@ La clasificación se basa en el número de puntos que queda por lograr, la dific
 
 Al seleccionar una acción de mejora específica, aparece un control desplegable de página completa.  
 
-![Ejemplo de acción de mejora](../../media/secure-score/secure-score-improvement-action-details.png)
+![Ejemplo de acción de mejora.](../../media/secure-score/secure-score-improvement-action-details.png)
 
 Para completar la acción, tienes algunas opciones:
 

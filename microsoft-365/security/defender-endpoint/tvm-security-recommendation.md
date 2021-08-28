@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dde4eef3382c3a1c5e22a78b1965c30b46c9749dcb847c707ea418898aa7a3e5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de94125566985447b10997cd354c7c9aed01630d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863558"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569950"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -32,7 +32,7 @@ ms.locfileid: "53863558"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -91,9 +91,9 @@ El color del gráfico de **dispositivos expuestos** cambia a medida que cambia l
 
 Los iconos útiles también llaman rápidamente la atención sobre:
 
-- ![flecha que alcanza un destino](images/tvm_alert_icon.png) posibles alertas activas
-- ![error rojo](images/tvm_bug_icon.png) vulnerabilidades públicas asociadas
-- ![bombilla](images/tvm_insight_icon.png) recomendaciones
+- ![flecha que alcanza un destino.](images/tvm_alert_icon.png) posibles alertas activas
+- ![error rojo.](images/tvm_bug_icon.png) vulnerabilidades públicas asociadas
+- ![bombilla.](images/tvm_insight_icon.png) recomendaciones
 
 ### <a name="explore-security-recommendation-options"></a>Explorar opciones de recomendación de seguridad
 

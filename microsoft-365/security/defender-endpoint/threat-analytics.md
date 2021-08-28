@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 211d8071d0b8fcf8c650acb15f2fa29ac9bed456b0c8eed8829a0c4502817d8d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a69a90db168bd58266c65c8573a233e1932e025c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817309"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568905"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Seguimiento y respuesta a amenazas emergentes a través del análisis de amenazas
 
@@ -66,7 +66,7 @@ El panel de análisis de amenazas es un gran punto de partida para llegar a los 
 
 Seleccione una amenaza en el panel para ver el informe de esa amenaza.
 
-![Imagen de un panel de análisis de amenazas](images/ta_dashboard.png)
+![Imagen de un panel de análisis de amenazas.](images/ta_dashboard.png)
 
 ## <a name="view-a-threat-analytics-report"></a>Ver un informe de análisis de amenazas
 
@@ -76,7 +76,7 @@ Cada informe de análisis de amenazas proporciona información en tres secciones
 
 La **sección** Información general proporciona una vista previa del informe detallado del analista. También proporciona gráficos que resaltan el impacto de la amenaza para su organización y su exposición a través de dispositivos mal configurados y sin aparear.
 
-![Imagen de la sección información general de un informe de análisis de amenazas ](images/ta-overview.png)
+![Imagen de la sección de información general de un informe de análisis de amenazas. ](images/ta-overview.png)
  _Sección información general de un informe de análisis de amenazas_
 
 #### <a name="assess-the-impact-to-your-organization"></a>Evaluar el impacto en la organización
@@ -112,7 +112,7 @@ En la **sección Mitigaciones,** revise la lista de recomendaciones específicas
 
 La información de mitigación de esta sección incorpora datos de [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md), que también proporciona información detallada de detalles de varios vínculos del informe.
 
-![Imagen de la sección mitigaciones de un informe de análisis de amenazas](images/ta-mitigations.png)
+![Imagen de la sección mitigaciones de un informe de análisis de amenazas.](images/ta-mitigations.png)
 
 _Sección Mitigaciones de un informe de análisis de amenazas_
 

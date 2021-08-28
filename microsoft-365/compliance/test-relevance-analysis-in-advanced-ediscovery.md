@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo usar la pestaña Prueba después del cálculo por lotes Advanced eDiscovery probar, comparar y validar la calidad general del procesamiento.
-ms.openlocfilehash: 97adafae8cc6113fbc2f34a1c9a95276439fc834e14ef0b45b345e1deb577ca9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 16f8004afb5a0731f684c0d35e55ebf2d06f91f0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865251"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569542"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery"></a>Análisis de relevancia de prueba en Advanced eDiscovery
   
@@ -46,7 +46,7 @@ Para ejecutar la prueba "Probar el resto":
 
 2. En la **pestaña Prueba,** haga clic **en Nueva prueba**. Se **muestra el cuadro** de diálogo Crear prueba, como se muestra en el ejemplo siguiente.
 
-    ![Resultados de Probar el resto de relevancia](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
+    ![Prueba de relevancia los resultados del resto.](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
 3. En **Nombre de prueba** y **Descripción,** escriba el nombre y la descripción.
 
@@ -66,7 +66,7 @@ Para ejecutar la prueba "Probar el resto":
 
 11. En la pestaña Prueba, puede hacer clic en **Ver resultados** para ver los resultados de la prueba. En la siguiente captura de pantalla se muestra un ejemplo.
 
-    ![Resultados de Probar el resto](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
+    ![Pruebe los resultados del resto.](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
 En la captura  de pantalla anterior, la sección Parámetros de ejemplo de la tabla contiene detalles sobre el número de archivos de la muestra etiquetados por el experto y el número de archivos relevantes que se encuentran en esa muestra.
   

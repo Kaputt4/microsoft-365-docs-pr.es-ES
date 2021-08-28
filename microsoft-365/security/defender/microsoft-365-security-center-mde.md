@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 7fee84e9be504427bb4320599310c3872ea311d6e2c640d87d83b938a27131ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c808bd8c742666c407a59cc6a3bc654d96257b3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828429"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569914"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender para endpoint en Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "53828429"
 La imagen y la tabla siguiente enumeran los cambios en la navegación entre el Centro de seguridad de Microsoft Defender y Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
-> ![Imagen de lo que se movió a dónde](../../media/mde-m3d-security-center.png)
+> ![Imagen de lo que se movió a dónde.](../../media/mde-m3d-security-center.png)
 
 | Centro de seguridad de Microsoft Defender | Microsoft 365 Defender |
 |---------|---------|
@@ -129,7 +129,7 @@ Aúna la administración de incidentes y de alertas en todos sus correos electr�
 - [Más información sobre incidentes](incidents-overview.md)
 - [Obtenga más información sobre cómo administrar alertas](investigate-alerts.md)
 
-![La barra de inicio rápido de alertas y acciones](../../media/converge-1-alerts-and-actions.png)
+![La barra De alertas y acciones de inicio rápido.](../../media/converge-1-alerts-and-actions.png)
 
 ### <a name="hunting"></a>Búsqueda
 
@@ -160,13 +160,13 @@ Obtenga más información sobre cómo [realizar un seguimiento y responder a las
 
 Ver y administrar la seguridad de los puntos de conexión en la organización. Si ha usado el Centro de seguridad de Microsoft Defender, será familiar.
 
-![La barra de inicio rápido de puntos de conexión](../../media/converge-2-endpoints.png)
+![La barra de inicio rápido de extremos.](../../media/converge-2-endpoints.png)
 
 ### <a name="access-and-reports"></a>Acceso e informes
 
 Ver informes, cambiar la configuración y modificar roles de usuario.
 
-![La barra de inicio rápido de Access e Reporting](../../media/converge-4-access-and-reporting-new.png)
+![La barra de inicio rápido de Access e Reporting.](../../media/converge-4-access-and-reporting-new.png)
 
 ### <a name="siem-api-connections"></a>Conexiones de LA API siem
 

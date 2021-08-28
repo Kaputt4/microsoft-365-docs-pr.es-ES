@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0de5817d4eb741885be6e43133b0886e90488bd4af04699a8c9dd970fbae8491
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a247aac370ba65e4ede48b0232ded1d93f6e8b99
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793339"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568893"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación
 
@@ -45,7 +45,7 @@ La Seguridad de Windows es una interfaz de cliente en Windows 10 versión 1703 y
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Revisar la configuración de protección contra virus y amenazas en la Seguridad de Windows aplicación
 
-:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Configuración de protección contra virus y amenazas en Seguridad de Windows aplicación":::
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Configuración de protección contra virus y amenazas en Seguridad de Windows aplicación.":::
 
 1. Abra la Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio de **Defender**.
 
@@ -66,7 +66,7 @@ En las secciones siguientes se describe cómo realizar algunas de las tareas má
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>Revisa la versión de actualización de inteligencia de seguridad y descarga las actualizaciones más recientes en la aplicación Seguridad de Windows seguridad
 
-:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Número de versión de inteligencia de seguridad":::
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Número de versión de inteligencia de seguridad.":::
 
 1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad y, a continuación, seleccione **Seguridad de Windows**.
 
@@ -135,5 +135,5 @@ Para obtener más información, consulte los siguientes recursos:
 
 5. Para configurar las opciones  de recuperación de ransomware, selecciona Configurar en Recuperación de datos ransomware y sigue las instrucciones para vincular o configurar tu cuenta de OneDrive para que puedas recuperarte fácilmente de un ataque de ransomware. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Reuters FX de Veritas a Microsoft 365. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 8063839c9857a62bdb75714cf5871e18c812ed3d82b1f94bae7d0937c1a5155e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1252fd1c2f54e08a29c12b19c1cc07791b89a027
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796612"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569146"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-fx-data"></a>Configurar un conector para archivar datos de Reuters FX
 
@@ -29,7 +29,7 @@ Una vez que los datos de Reuters FX se almacenan en buzones de usuario, puede ap
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de Reuters FX en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos de Reuters FX](../media/ReutersFXConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos de Reuters FX.](../media/ReutersFXConnectorWorkflow.png)
 
 1. Su organización trabaja con Reuters FX para configurar y configurar un sitio de Reuters FX.
 

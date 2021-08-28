@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 386a7efcc5cb47df835e8465c323e5cdfdf486c7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 43792367d4ec1cd31c2122badd74a32bc7ae8a19
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247573"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569302"
 ---
 # <a name="evaluate-microsoft-cloud-app-security"></a>Evaluar Microsoft Cloud App Security
 
@@ -39,7 +39,7 @@ En este artículo se describe el proceso para habilitar y Microsoft Cloud App Se
 
 Siga estos pasos para habilitar y pilotar la seguridad de aplicaciones en la nube de Microsoft.
 
-![Pasos para agregar Microsoft Defender para Office al entorno de evaluación de Defender](../../media/defender/m365-defender-office-eval-steps.png)
+![Pasos para agregar Microsoft Defender para Office al entorno de evaluación de Defender.](../../media/defender/m365-defender-office-eval-steps.png)
 
 
 

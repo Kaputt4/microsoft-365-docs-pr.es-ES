@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Descubra los pasos de configuración para Microsoft 365 Empresa Premium, como agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
-ms.openlocfilehash: b3e15ecefd2130d1a15875128d0519b80b486eca
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 7e01a27361ba681a6475c5e0165d8efbb16371a8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377922"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568197"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurar Microsoft 365 Empresa Premium en el Asistente para configuración
 
@@ -83,7 +83,7 @@ Puede agregar usuarios en el asistente, pero también puede [agregarlos más ade
 
 A los usuarios que agregues en el asistente se les asignará automáticamente una Microsoft 365 Empresa Premium licencia.
 
-![Captura de pantalla de la página Agregar nuevos usuarios en el asistente](../../media/addnewuserspage.png)
+![Captura de pantalla de la página Agregar nuevos usuarios en el asistente.](../../media/addnewuserspage.png)
 
 1. Si la Microsoft 365 Empresa Premium cuenta con usuarios existentes (por ejemplo, si usó Azure AD Conectar), ahora obtiene una opción para asignarles licencias. Proceda y agrégueles licencias también.
 

@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 17b850cb26e9743afc807e3d72e3067eec2c7bd1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7338292b784cdad17548efc3dd148f3ea6a72b28
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256899"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568269"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
 
@@ -50,7 +50,7 @@ Una vez que haya realizado una respuesta [a incidentes para](eval-defender-inves
 
 You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes.":::
 
 La **sección Incidentes y alertas** más recientes muestra un gráfico del número de alertas recibidas e incidentes creados en las últimas 24 horas.
 
@@ -62,7 +62,7 @@ Para examinar la lista de incidentes y priorizar su importancia para la asignaci
 
 En la cola de incidentes predeterminada, seleccione **Filtros** para ver un panel **Filtros,** desde el que puede especificar un conjunto específico de incidentes. Aquí le mostramos un ejemplo.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Ejemplo del panel de filtros de la cola de incidentes":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Ejemplo del panel de filtros de la cola de incidentes.":::
 
 Para obtener más información, vea [Priorizar incidentes](incident-queue.md).
 
@@ -70,7 +70,7 @@ Para obtener más información, vea [Priorizar incidentes](incident-queue.md).
 
 Puede administrar incidentes desde el panel **Administrar incidentes** para un incidente. Por ejemplo:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Ejemplo del panel Administrar incidentes de un incidente":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Ejemplo del panel Administrar incidentes de un incidente.":::
 
 Puede mostrar este panel desde el vínculo **Administrar incidentes** en:
 
@@ -111,11 +111,11 @@ En función de cómo se configuren las capacidades automatizadas de investigaci�
 
 Por ejemplo:
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificado en Microsoft 365 Defender":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificado en Microsoft 365 Defender.":::
 
 En el Centro de acciones, puede seleccionar acciones pendientes y, a continuación, aprobarlas o rechazarlas en el panel desplegable. Por ejemplo:
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Aprobar o rechazar una acción":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Aprobar o rechazar una acción.":::
 
 Aprobar (o rechazar) acciones pendientes tan pronto como sea posible para que las investigaciones automatizadas puedan continuar y completarse de forma oportuna.
 
@@ -186,7 +186,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
       > [!NOTE]
       > Consulta el siguiente paso para filtrar opciones para limitar la devolución de datos.
 
-      ![Ejemplo de los resultados avanzados de la consulta de búsqueda](../../media/mtp/fig19.png)
+      ![Ejemplo de los resultados avanzados de la consulta de búsqueda.](../../media/mtp/fig19.png)
 
         > [!NOTE]
         > La búsqueda avanzada muestra los resultados de la consulta como datos tabulares. También puede optar por ver los datos en otros tipos de formato, como gráficos.
@@ -200,7 +200,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
 
    1. Haga clic en las filas resultantes de la consulta para poder inspeccionar el registro.
 
-      ![Ejemplo del panel lateral del registro de inspección que se abre cuando se selecciona un resultado de búsqueda avanzada](../../media/mtp/fig21.png)
+      ![Ejemplo del panel lateral inspeccionar registro que se abre cuando se selecciona un resultado de búsqueda avanzado.](../../media/mtp/fig21.png)
 
 4. Ahora que ha comprobado que puede ver el correo electrónico, agregue un filtro para los datos adjuntos. Céntrate en todos los correos electrónicos con datos adjuntos en el entorno. Para esta simulación, céntrate en los correos electrónicos entrantes, no en los que se envían desde el entorno. Quite los filtros que haya agregado para buscar el mensaje y agregar "| donde **AttachmentCount > 0** y **EmailDirection**  ==  **"Inbound""**
 
@@ -258,40 +258,40 @@ Las detecciones personalizadas ejecutarán la consulta según la frecuencia que 
 
 1. En la página de consulta, quite las líneas 7 y 8 que se agregaron en el paso 7 de las instrucciones Ir a buscar y haga clic en **Crear regla de detección.**
 
-   ![Ejemplo de dónde puede hacer clic en Crear regla de detección en la página de búsqueda avanzada](../../media/mtp/fig22.png)
+   ![Ejemplo de dónde puede hacer clic en Crear regla de detección en la página de búsqueda avanzada.](../../media/mtp/fig22.png)
 
    > [!NOTE]
    > Si hace clic en **Crear regla de detección** y tiene errores de sintaxis en la consulta, la regla de detección no se guardará. Compruebe doblemente la consulta para asegurarse de que no hay errores.
 
 2. Rellene los campos requeridos con la información que permitirá al equipo de seguridad comprender la alerta, por qué se generó y qué acciones espera que lleve a cabo.
 
-   ![Ejemplo de la página crear regla de detección donde puede definir los detalles de la alerta](../../media/mtp/fig23.png)
+   ![Ejemplo de la página crear regla de detección donde puede definir los detalles de la alerta.](../../media/mtp/fig23.png)
 
    Asegúrese de rellenar los campos con claridad para ayudar a dar al siguiente usuario una decisión fundamentada sobre esta alerta de regla de detección
 
 3. Seleccione las entidades que se verán afectadas en esta alerta. En este caso, seleccione **Dispositivo** y **buzón**.
 
-   ![Ejemplo de la página crear regla de detección donde puede elegir los parámetros de las entidades afectadas](../../media/mtp/fig24.png)
+   ![Ejemplo de la página crear regla de detección donde puede elegir los parámetros de las entidades afectadas.](../../media/mtp/fig24.png)
 
 4. Determine qué acciones deben tener lugar si se desencadena la alerta. En este caso, ejecute un examen antivirus, aunque se podrían realizar otras acciones.
 
-   ![Ejemplo de la página crear regla de detección en la que puede ejecutar un examen antivirus cuando se desencadena una alerta para ayudar a solucionar amenazas](../../media/mtp/fig25.png)
+   ![Ejemplo de la página Crear regla de detección en la que puede ejecutar un examen antivirus cuando se desencadena una alerta para ayudar a solucionar las amenazas.](../../media/mtp/fig25.png)
 
 5. Seleccione el ámbito de la regla de alerta. Dado que esta consulta implica dispositivos, los grupos de dispositivos son relevantes en esta detección personalizada según el contexto de Microsoft Defender para endpoint. Al crear una detección personalizada que no incluya dispositivos como entidades afectadas, el ámbito no se aplica.
 
-   ![Ejemplo de la página crear regla de detección donde puede establecer el ámbito de la regla de alerta administra las expectativas de los resultados que verá](../../media/mtp/fig26.png)
+   ![Ejemplo de la página crear regla de detección donde puede establecer el ámbito de la regla de alerta administra las expectativas de los resultados que verá.](../../media/mtp/fig26.png)
 
    Para este piloto, es posible que quieras limitar esta regla a un subconjunto de dispositivos de prueba en el entorno de producción.
 
 6. Seleccione **Crear**. A continuación, **seleccione Reglas de detección personalizadas** en el panel de navegación.
 
-   ![Ejemplo de la opción Reglas de detección personalizadas en el menú](../../media/mtp/fig27a.png)
+   ![Ejemplo de la opción Reglas de detección personalizadas en el menú.](../../media/mtp/fig27a.png)
 
-   ![Ejemplo de la página de reglas de detección que muestra los detalles de regla y ejecución](../../media/mtp/fig27b.png)
+   ![Ejemplo de la página de reglas de detección que muestra los detalles de regla y ejecución.](../../media/mtp/fig27b.png)
 
    En esta página, puede seleccionar la regla de detección, que abrirá una página de detalles.
 
-   ![Ejemplo de la página de datos adjuntos de correo electrónico donde puede ver el estado de la ejecución de la regla, alertas y acciones desencadenadas, editar la detección, y así sucesivamente](../../media/mtp/fig28.png)
+   ![Ejemplo de la página de datos adjuntos de correo electrónico donde puede ver el estado de la ejecución de la regla, alertas y acciones desencadenadas, editar la detección, y así sucesivamente.](../../media/mtp/fig28.png)
 
 <!--
 

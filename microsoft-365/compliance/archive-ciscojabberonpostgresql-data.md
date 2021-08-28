@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar y usar un conector en el Centro de cumplimiento de Microsoft 365 importar y archivar datos de Cisco Jabber en PostgreSQL para Microsoft 365.
-ms.openlocfilehash: fc73fe178c59a50da81dd6e17ccf63e2e8b655419e24d0f17adcfffabc9449a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7372c61e70ca23108c6bb6d5aa98549738f553a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861061"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569842"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>Configurar un conector para archivar datos de Cisco Jabber en PostgreSQL
 
@@ -32,7 +32,7 @@ Una vez que los datos de Cisco Jabber on PostgreSQL se almacenan en buzones de u
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar los datos de Cisco Jabber on PostgreSQL en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos de Cisco Jabber en PostgreSQL](../media/CiscoJabberonPostgreSQLConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos de Cisco Jabber en PostgreSQL.](../media/CiscoJabberonPostgreSQLConnectorWorkflow.png)
 
 1. Su organización trabaja con Cisco Jabber en PostgreSQL para configurar y configurar un sitio de Cisco Jabber en PostgreSQL.
 

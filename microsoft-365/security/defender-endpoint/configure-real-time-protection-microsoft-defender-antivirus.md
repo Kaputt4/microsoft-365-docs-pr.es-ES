@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
-ms.openlocfilehash: 63fcaf72f487f162c93f89723ba9e87b5881f509
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 93a22ef86be7067c8bda955fdfd085f7ef6cbd64
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532588"
+ms.locfileid: "58568329"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Habilitar y configurar la protección siempre activa del Antivirus de Windows Defender en la directiva de grupo
 
@@ -44,8 +44,8 @@ Para habilitar y configurar la protección siempre activa:
     1. En el Windows 10 de búsqueda de la barra de tareas, escriba **gpedit**.
 
     2. En **Coincidencia recomendada,** seleccione **Editar directiva de grupo** para iniciar el Editor de directivas de grupo **local.**
-
-       ![Resultado de búsqueda de la barra de tareas de GPEdit](images/gpedit-search.png)
+    
+       ![Resultado de búsqueda de la barra de tareas GPEdit.](images/gpedit-search.png)
 
 2. En el panel izquierdo del Editor de  directivas de grupo **local,** expanda el árbol a Configuración del equipo Plantillas administrativas \>  \> **Windows componentes** \> **Antivirus de Microsoft Defender**.
 
@@ -79,7 +79,9 @@ Para habilitar y configurar la protección siempre activa:
 
 5. Configure la configuración Antivirus de Microsoft Defender directiva de análisis, de la siguiente manera:
 
-   1. En el **Antivirus de Microsoft Defender** en el panel izquierdo, seleccione **Examinar**.
+    1. En el **Antivirus de Microsoft Defender** en el panel izquierdo, seleccione **Examinar**.
+    
+       ![Antivirus de Microsoft Defender Opciones de examen.](images/gpedit-windows-defender-antivirus-scan.png)
 
       ![Antivirus de Microsoft Defender Opciones de examen](images/gpedit-windows-defender-antivirus-scan.png)
 
@@ -139,12 +141,12 @@ La principal funcionalidad de protección en tiempo real está habilitada de for
 
 3. En el **panel detalles de protección** en tiempo real a la derecha, haga doble clic en Desactivar la protección en tiempo **real.**
 
-   ![Desactivar la protección en tiempo real](images/gpedit-turn-off-real-time-protection.png)
+   ![Desactivar la protección en tiempo real.](images/gpedit-turn-off-real-time-protection.png)
 
 4. En la ventana Desactivar la configuración de protección en tiempo **real,** establezca la opción en **Habilitado**.
 
-   ![Desactivar la protección en tiempo real habilitada](images/gpedit-turn-off-real-time-protection-enabled.png)
-
+   ![Desactivar la protección en tiempo real habilitada.](images/gpedit-turn-off-real-time-protection-enabled.png)
+   
 5. seleccione **Aceptar**.
 
 6. Cierre **el Editor de directivas de grupo local**.

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre la solución Advanced eDiscovery en Microsoft 365. En este artículo se proporciona información general Advanced eDiscovery en Microsoft 365, una herramienta que le ayudará a administrar investigaciones internas y externas. También enmarca las razones empresariales para usar Advanced eDiscovery para administrar las investigaciones legales.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 611748b00df53f4988d37e92a93e63ef8348d9937f8092209c6b2320939c3af0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 59052e862e84b5cf9eabdf2cdce58e8e743887ee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895515"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569770"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Información general sobre Microsoft 365 Advanced eDiscovery
 
@@ -37,7 +37,7 @@ Advanced eDiscovery puede ayudar a su organización a responder a asuntos legale
 
 En las secciones siguientes se describe cómo estas Advanced eDiscovery pueden ayudar a su organización.
 
-![Advanced eDiscovery capacidades](../media/advanced-ediscovery-capabilities.png)
+![Advanced eDiscovery funcionalidades.](../media/advanced-ediscovery-capabilities.png)
 
 ### <a name="discover-and-collect-data-in-place"></a>Detectar y recopilar datos en el lugar
 
@@ -71,7 +71,7 @@ Las capacidades adicionales de aprendizaje automático pueden refinar e identifi
 
 El flujo de trabajo integrado de Advanced eDiscovery en Microsoft 365 se alinea con el proceso de exhibición de documentos electrónicos descrito por el Modelo de referencia de detección electrónica (EDRM).
 
-![Modelo de referencia de detección electrónica (EDRM)](../media/EDRMv1.png)
+![Modelo de referencia de detección electrónica (EDRM).](../media/EDRMv1.png)
 
 (Origen de la imagen cortesía de edrm.net. La imagen de origen estaba disponible en Creative Commons Attribution 3.0 Unported License).)
 
@@ -122,7 +122,7 @@ Las licencias Advanced eDiscovery requieren la suscripción de la organización 
 
 Hay dos pasos rápidos y fáciles para empezar con Advanced eDiscovery.
 
-![Introducción al flujo de trabajo Advanced eDiscovery](../media/get-started-AeD.png)
+![Introducción al flujo de trabajo Advanced eDiscovery.](../media/get-started-AeD.png)
 
 |Pasos  |Descripción  |
 |:---------|:---------|
@@ -134,7 +134,7 @@ Hay dos pasos rápidos y fáciles para empezar con Advanced eDiscovery.
 
 Este es un diagrama de arquitectura Advanced eDiscovery que muestra el flujo de trabajo de un extremo a otro en un entorno de una sola ubicación geográfica y en un entorno multigeografía, y el flujo de datos de un extremo a otro alineado con [EDRM.](#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
 
-[![Póster del modelo: Advanced eDiscovery arquitectura en Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![Póster del modelo: Advanced eDiscovery arquitectura en Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Ver como una imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
@@ -142,6 +142,6 @@ Este es un diagrama de arquitectura Advanced eDiscovery que muestra el flujo de 
 
 [Descargar como archivo Visio archivo](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
 
-## <a name="training"></a>Aprendizaje
+## <a name="training"></a>Formación
 
 La formación de los administradores de TI, los administradores de exhibición de documentos electrónicos y los equipos de investigación de cumplimiento en los conceptos básicos de Advanced eDiscovery puede ayudar a su organización a empezar a usar más rápidamente Microsoft 365 herramientas de exhibición de documentos electrónicos. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de la organización a empezar con la exhibición de documentos electrónicos: Describir las capacidades de [eDiscovery y auditoría](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)de Microsoft 365 .

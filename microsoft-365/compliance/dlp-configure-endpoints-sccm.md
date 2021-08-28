@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Use Configuration Manager para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
-ms.openlocfilehash: febe5148d6f4a341cd29d3950bc319d36bcfa0a6f0d4a4afe2c4ebb9038613b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 309f6b7ee396baba0fcec0061d48f062510d7350
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886350"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569806"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Incorporar dispositivos Windows 10 con Configuration Manager
 
@@ -182,7 +182,7 @@ Si usa System Center Configuration Manager de 2012 R2, la supervisión consta de
 
     Si hay implementaciones con errores (dispositivos con **errores,** requisitos no cumplidos o estados **con errores),** es posible que deba solucionar los problemas de los dispositivos. Para obtener más información, vea [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding).
 
-    ![Configuration Manager que muestra una implementación correcta sin errores](../media/sccm-deployment.png)
+    ![Configuration Manager que muestra una implementación correcta sin errores.](../media/sccm-deployment.png)
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-365-endpoint-data-loss-prevention-service"></a>Comprobar que los dispositivos son compatibles con el servicio de Microsoft 365 de prevención de pérdida de datos del punto de conexión
 

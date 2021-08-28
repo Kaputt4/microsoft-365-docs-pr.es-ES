@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Compare las opciones de cifrado de Microsoft 365, incluido el Cifrado de mensajes de Office 365 (OME), S/MIME e Information Rights Management (IRM), y obtenga más información sobre la Seguridad de la capa de transporte (TLS).
-ms.openlocfilehash: 2101e1e4f02e5a3c017be7737e37feb3ac4414b205ffc6df7b219d57cc4496e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a882a0bb9597fdb1eb0bf5dcf520b8ced834af5e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850956"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569602"
 ---
 # <a name="email-encryption"></a>Cifrado de correo electrónico
 
@@ -58,7 +58,7 @@ Para obtener más información sobre cómo Microsoft 365 protege la comunicació
     
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>Comparación de las opciones de cifrado de correo electrónico disponibles en Office 365 
 
-|Tecnología de cifrado de correo electrónico|![Ilustración conceptual que describe OME](../media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![Ilustración conceptual que describe IRM](../media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![Ilustración conceptual que describe SMIME](../media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|
+|Tecnología de cifrado de correo electrónico|![Ilustración conceptual que describe OME.](../media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![Ilustración conceptual que describe IRM](../media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![Ilustración conceptual que describe SMIME](../media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|
 |:-----|:-----|:-----|:-----|
 |¿Qué es?|El cifrado de mensajes de Office 365 (OME) es un servicio basado en Azure Rights Management (Azure RMS) que permite enviar correo electrónico cifrado a otras personas dentro o fuera de la organización, independientemente de la dirección de correo electrónico de destino (Gmail, Yahoo! Mail, Outlook.com, etc.). <br/> Como administrador, puede configurar reglas de transporte que definen las condiciones para el cifrado. Cuando un usuario envía un mensaje que coincide con una regla, se aplica automáticamente el cifrado. <br/> Para ver los mensajes cifrados, los destinatarios pueden obtener un código de acceso único, iniciar sesión con una cuenta de Microsoft, o iniciar sesión con una cuenta profesional o educativa asociada a Office 365. Los destinatarios también pueden enviar respuestas cifradas. No necesitan una suscripción de Microsoft 365 para ver los mensajes cifrados o enviar respuestas cifradas.|IRM es una solución de cifrado que también se aplica a las restricciones de uso para los mensajes de correo electrónico. Ayuda a evitar que personas no autorizadas impriman, reenvíen o copien información confidencial. <br/> Las capacidades IRM de Microsoft 365 usan Azure Rights Management (Azure RMS).|S/MIME es una solución de cifrado basada en certificados que permite cifrar y firmar digitalmente un mensaje. El cifrado de mensajes ayuda a garantizar que solo el destinatario pueda abrir y leer el mensaje. Una firma digital ayuda a que el destinatario valide la identidad del remitente. <br/> Las firmas digitales y el cifrado de mensajes son posibles gracias al uso exclusivo de certificados digitales que contienen las claves para comprobar las firmas digitales y cifrar o descifrar mensajes. <br/> Para usar S/MIME, debe tener las claves públicas en el archivo para cada destinatario. Los destinatarios deben conservar sus propias claves privadas, que deben permanecer protegidas. Si se ponen en peligro las claves privadas de un destinatario, el destinatario debe obtener una nueva clave privada y redistribuir las claves públicas a todos los remitentes potenciales.|
 |¿Qué hace?|OME: <br/> Cifra los mensajes enviados a destinatarios internos o externos. <br/>  Permite a los usuarios enviar mensajes cifrados a cualquier dirección de correo electrónico, incluidos Outlook.com, Yahoo! Mail y Gmail. <br/>  Le permite, como administrador, personalizar el portal de visualización de correo electrónico para reflejar la marca de su organización. <br/> Microsoft administra y almacena de forma segura las claves, por lo que no es necesario que usted lo haga. <br/> No se necesita ningún software de cliente especial siempre y cuando el mensaje cifrado (enviado como datos adjuntos HTML) pueda abrirse en un explorador.|IRM: <br/> Usa cifrado y restricciones de uso para proporcionar protección en línea y sin conexión para los mensajes de correo electrónico y datos adjuntos. <br/> Ofrece, como administrador, la capacidad de configurar reglas de transporte o reglas de protección de Outlook para aplicar automáticamente IRM a mensajes seleccionados. <br/> Le permite a los usuarios aplicar plantillas manualmente en Outlook o en Outlook en la Web (anteriormente denominado Outlook Web App).|S/MIME aborda la autenticación de remitentes con firmas digitales y la confidencialidad de mensajes con cifrado.|

@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 7ab3a0a533c9e2f74087a3c43e0678e99297e16a
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 37a0ff60f9f12bd2738d6d587d5cad5e6d55af55
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509514"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568161"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visite el Centro de acciones para ver acciones de corrección
 
@@ -40,15 +40,15 @@ Durante y después de una investigación automatizada, se identifican las accion
 
 Nos complace anunciar un nuevo centro de acción unificado ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) )!
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="Centro de acciones en Microsoft 365 de seguridad":::
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="Centro de acciones en Microsoft 365 de seguridad.":::
 
 En la tabla siguiente se compara el nuevo centro de acciones unificado con el centro de acciones anterior.
 
-|El nuevo centro de acciones unificado|El centro de acciones anterior|
-|---|---|
-|Enumera las acciones pendientes y completadas para dispositivos y correo electrónico en una ubicación <br/>([Microsoft Defender para endpoint](microsoft-defender-endpoint.md) más Microsoft Defender para [Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Enumera las acciones pendientes y completadas para dispositivos <br> ([Solo Microsoft Defender para punto de](microsoft-defender-endpoint.md) conexión)|
-|Se encuentra en:<br/><https://security.microsoft.com/action-center>|Se encuentra en:<br/><https://securitycenter.windows.com/action-center>|
-|En el centro Microsoft 365 seguridad, elija **Centro de acciones**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navegar al Centro de acciones en el centro de Microsoft 365 seguridad":::|En el Centro de seguridad de Microsoft Defender, elija **Centro de acciones de** \> **investigaciones automatizadas**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navegar al Centro de acciones desde el Centro de seguridad de Microsoft Defender":::|
+|El nuevo centro de acciones unificado  |El centro de acciones anterior  |
+|---------|---------|
+|Enumera las acciones pendientes y completadas para dispositivos y correo electrónico en una ubicación <br/>([Microsoft Defender para endpoint](microsoft-defender-endpoint.md) más Microsoft Defender para [Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Enumera las acciones pendientes y completadas para dispositivos <br/> ([Solo Microsoft Defender para punto de](microsoft-defender-endpoint.md) conexión)   |
+|Se encuentra en:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Se encuentra en:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
+| En el centro Microsoft 365 seguridad, elija **Centro de acciones**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Vaya al Centro de acciones en el centro de Microsoft 365 seguridad."::: | En el Centro de seguridad de Microsoft Defender, elija **Centro de acciones de**  >  **investigaciones automatizadas**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Vaya al Centro de acciones desde el Centro de seguridad de Microsoft Defender.":::  |
 
 El Centro de acción unificado reúne acciones de corrección en Defender para Endpoint y Defender para Office 365. Define un lenguaje común para todas las acciones de corrección y proporciona una experiencia de investigación unificada.
 
@@ -77,7 +77,7 @@ Al visitar el Centro de acciones, verá dos pestañas: **Acciones pendientes** e
 
 Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
 
-:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="Columnas y filtros en el Centro de acciones":::
+:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="Columnas y filtros en el Centro de acciones.":::
 
 - Seleccione un encabezado de columna para ordenar los elementos en orden ascendente o descendente.
 - Use el filtro de período de tiempo para ver los datos del último día, semana, 30 días o 6 meses.
@@ -86,11 +86,11 @@ Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
 - Use filtros para ver solo los elementos que desea ver.
 - Seleccione **Exportar** para exportar resultados a un .csv archivo.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver y aprobar acciones de corrección](manage-auto-investigation.md)
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)

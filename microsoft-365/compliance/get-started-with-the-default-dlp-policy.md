@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar el informe para refinar la directiva predeterminada de prevención de pérdida de datos (DLP) de su organización.
-ms.openlocfilehash: d2b140c6cd55896739c2500c7bc5a9196dfdf7e2e5971c4a45ef312acdcd75ca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 95c4ebae431bea1db033826459ca1595614ab5cb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813998"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569578"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introducción a la directiva predeterminada de DLP
 
@@ -32,7 +32,7 @@ Antes incluso de crear la primera directiva de prevención de pérdida de datos 
   
 Puede usar este widget para ver rápidamente cuándo y cuánta información confidencial se ha compartido y, a continuación, refinar la directiva DLP predeterminada en uno o dos clics. También puede editar la directiva DLP predeterminada en cualquier momento porque es totalmente personalizable. Tenga en cuenta que si no ve la recomendación al principio, intente hacer clic en **+Más** en la parte inferior de la sección Recomendado **para usted.** 
   
-![Widget denominado Proteger aún más el contenido compartido](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
+![Widget denominado Proteger aún más el contenido compartido.](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
 ## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Ver el informe y refinar la directiva DLP predeterminada
 
@@ -60,7 +60,7 @@ Para obtener más información sobre los informes de incidentes o restringir el 
   
 Si quieres cambiar estas opciones más adelante, puedes editar la directiva DLP predeterminada en cualquier momento: consulta la siguiente sección.
   
-![Configuración para el widget denominado Proteger aún más el contenido compartido](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Configuración para el widget denominado Proteger aún más el contenido compartido.](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>Editar la directiva DLP predeterminada
 
@@ -68,7 +68,7 @@ Esta directiva se denomina **Directiva DLP predeterminada** y aparece en **Preve
   
 Esta directiva es totalmente personalizable, igual que cualquier directiva DLP que cree usted mismo desde cero. También puede desactivar o eliminar la directiva para que los usuarios ya no reciban sugerencias de directiva ni notificaciones por correo electrónico.
   
-![Directiva DLP denominada Directiva DLP predeterminada](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![Directiva DLP denominada Directiva DLP predeterminada.](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Cuando el widget lo hace y no aparece
 

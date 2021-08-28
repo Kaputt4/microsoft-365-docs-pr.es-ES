@@ -14,12 +14,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar la información y el informe de autenticación SMTP en el panel flujo de correo del Centro de seguridad y cumplimiento de & para supervisar los remitentes de correo electrónico de su organización que usan SMTP autenticado (AUTH SMTP) para enviar mensajes de correo electrónico.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68dc38bb04697a59f606131d6674074d2822f6e369d850835f02125f0c83fdcb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3d4c39e722ed7d9853a4fb328a8e87aac535bea9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56883814"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568089"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Información e informes de clientes de autenticación SMTP en el Centro de seguridad & cumplimiento
 
@@ -34,11 +34,11 @@ La información de los [](mail-flow-insights-v2.md) clientes de autenticación *
 
 El widget indica el número de usuarios o cuentas de servicio que han usado el protocolo de autenticación SMTP en los últimos 7 días.
 
-![Widget de clientes de autenticación SMTP en el panel flujo de correo del Centro de seguridad & cumplimiento](../../media/mfi-smtp-auth-clients-report-widget.png)
+![Widget Clientes de autenticación SMTP en el panel Flujo de correo del Centro de & cumplimiento.](../../media/mfi-smtp-auth-clients-report-widget.png)
 
 Si hace clic en el número de mensajes del widget, aparecerá un control flotante de **clientes de autenticación SMTP.** El menú desplegable proporciona una vista agregada del uso y los volúmenes de TLS de la última semana.
 
-![Control flotante de detalles después de hacer clic en el widget Clientes de autenticación SMTP en el panel flujo de correo](../../media/mfi-smtp-auth-clients-report-details.png)
+![Los detalles se flotanten después de hacer clic en el widget Clientes de autenticación SMTP en el panel flujo de correo.](../../media/mfi-smtp-auth-clients-report-details.png)
 
 Puede hacer clic en el vínculo Informe de clientes **de autenticación SMTP** para ir al informe de clientes de autenticación SMTP, tal como se describe en la sección siguiente.
 
@@ -52,11 +52,11 @@ La sección de información general contiene los siguientes gráficos:
 
 - **Ver datos por: Enviar** volumen: De forma predeterminada, el gráfico muestra el número de mensajes de cliente de autenticación SMTP que se enviaron desde todos los dominios ( Mostrar datos **para:** Todos los dominios de remitente están seleccionados de forma predeterminada). Puede filtrar los resultados a un dominio de remitente específico haciendo clic en Mostrar **datos** para y seleccionando el dominio del remitente en la lista desplegable. Si mantiene el puntero sobre un punto de datos específico (día), se muestra el número de mensajes.
 
-  ![Vista de envío de volumen en el informe de clientes de autenticación SMTP en el Centro de seguridad & cumplimiento](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
+  ![Vista de volumen de envío en el informe de clientes de autenticación SMTP en el Centro de & cumplimiento.](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
 - **Ver datos por: Uso de TLS:** el gráfico muestra el porcentaje de uso de TLS para todos los mensajes de cliente de autenticación SMTP durante el período de tiempo seleccionado. Este gráfico le permite identificar y realizar acciones en usuarios y cuentas del sistema que siguen usando versiones anteriores de TLS.
 
-  ![Vista de uso de TLS en el informe de clientes de autenticación SMTP en el Centro de seguridad & cumplimiento](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
+  ![Vista de uso de TLS en el informe de clientes de autenticación SMTP en el Centro de & seguridad.](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
 Si hace clic **en Filtros** en una vista de informe, puede especificar un intervalo de fechas con Fecha **de inicio** y Fecha **de finalización.**
 
@@ -87,7 +87,7 @@ Si hace clic **en Filtros en** una vista de tabla de detalles, puede especificar
 
 Si selecciona una fila, se muestran detalles similares en un menú desplegable:
 
-![Los detalles se desván de la tabla de detalles de la vista de uso de TLS en el informe de clientes de autenticación SMTP](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+![Los detalles se desván de la tabla de detalles de la vista de uso de TLS en el informe de clientes de autenticación SMTP.](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
 
 Haga **clic en** Solicitar informe para recibir una versión más detallada del informe en un mensaje de correo electrónico. Puede especificar el intervalo de fechas y los destinatarios para recibir el informe.
 

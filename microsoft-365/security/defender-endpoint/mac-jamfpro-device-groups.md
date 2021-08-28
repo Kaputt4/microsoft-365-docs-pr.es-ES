@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7994ac207f6f066b5cfe69de75ddfb608ddd40fa53105492a5076aced01de5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a9c3a567bed4ac337e804e53807570c53304027
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833717"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568149"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Configurar Microsoft Defender para endpoint en grupos de dispositivos macOS en Jamf Pro
 
@@ -41,15 +41,15 @@ Configure los grupos de dispositivos de forma similar a La organización de dire
 
 2. Seleccione **Nuevo**. 
 
-    ![Imagen de Jamf Pro1](images/jamf-pro-static-group.png)
+    ![Imagen de Jamf Pro1.](images/jamf-pro-static-group.png)
 
 3. Proporcione un nombre para mostrar y seleccione **Guardar**.
 
-    ![Imagen de Jamf Pro2](images/jamfpro-machine-group.png)
+    ![Imagen de Jamf Pro2.](images/jamfpro-machine-group.png)
 
 4. Ahora verá el grupo de máquinas **de Contoso en** Grupos de equipos **estáticos**.
 
-    ![Imagen de Jamf Pro3](images/contoso-machine-group.png)
+    ![Imagen de Jamf Pro3.](images/contoso-machine-group.png)
 
 ## <a name="next-step"></a>Paso siguiente
 - [Configurar Microsoft Defender para endpoint en directivas de macOS en Jamf Pro](mac-jamfpro-policies.md)

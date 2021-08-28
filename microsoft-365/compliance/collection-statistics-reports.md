@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo obtener acceso y usar estadísticas e informes para borradores de colecciones y colecciones que se han confirmado en un conjunto de revisión en Advanced eDiscovery.
-ms.openlocfilehash: 050c2f026e0d821befde5aa4437a1e1c5ecfcfd2c0ad4c267995f7d2eefb0fac
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d5c1fa3ccb8d9657570b7d0bf3640ac1834248d9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866583"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569110"
 ---
 # <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>Estadísticas e informes de colección en Advanced eDiscovery
 
@@ -37,7 +37,7 @@ En esta sección se describen las estadísticas disponibles para las colecciones
 
 En esta sección se muestra un resumen gráfico de los elementos estimados devueltos por la colección. Esto indica el número de elementos que coinciden con los criterios de búsqueda de la colección. Esta información le ofrece una idea sobre el número estimado de elementos devueltos por la colección.
 
-![Estimaciones de colección para una colección borrador](../media/AeDCollectionEstimates.png)
+![Estimaciones de colección para una colección borrador.](../media/AeDCollectionEstimates.png)
 
 - **Elementos estimados por ubicaciones:** el número total de elementos estimados devueltos por la colección. También se muestra el número específico de elementos ubicados en buzones de correo y ubicados en sitios.
 
@@ -79,7 +79,7 @@ En esta sección se describen las estadísticas disponibles después de confirma
 
 Después de confirmar una colección en un conjunto de revisión, se muestran las siguientes pestañas en la página desplegable de la conexión comprometida. Cada una de estas pestañas contiene diferentes tipos de información sobre la colección.
 
-![Pestañas en la página desplegable de la colección comprometida](../media/CommittedCollectionFlyoutPage.png)
+![Pestañas en la página desplegable de la colección confirmada.](../media/CommittedCollectionFlyoutPage.png)
 
 ### <a name="collection-contents"></a>Contenido de la colección
 

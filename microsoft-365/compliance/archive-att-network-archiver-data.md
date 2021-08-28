@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos DE SMS y MMS desde la red&T Mobile Network. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: ec3b134dd5d26848e3a3b00d4aa66f81abc64363268ce91b329dfc7d79fba7f9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e17f5d369eefd5a2d7b2d9b8e55df0d1a4c9714b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820716"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567957"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurar un conector para archivar datos de AT&SMS/MMS T
 
@@ -29,7 +29,7 @@ Una vez que los mensajes SMS y MMS se almacenan en buzones de usuario, puede apl
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de red de AT&T en Microsoft 365.
 
-![Flujo de trabajo de archivado de red ATT](../media/ATTNetworkConnectorWorkflow.png)
+![Flujo de trabajo de archivado de red ATT.](../media/ATTNetworkConnectorWorkflow.png)
 
 1. Su organización trabaja con TeleMessage para configurar un conector de red&T. Para obtener información, [vea AT&T Network Archiver](https://www.telemessage.com/office365-activation-for-atnt-network-archiver/).
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1f61fa2e2d5231d6e9c6a879a0827144282f1285
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: bd3e933d759d40f41ef585f0b5bcf68229386ba1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533260"
+ms.locfileid: "58568677"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (anteriormente Microsoft Flow) y Azure Functions
 
@@ -39,7 +39,7 @@ Automatizar los procedimientos de seguridad es un requisito estándar para todos
 
 La API de Microsoft Defender tiene un Power Automate Connector con muchas funcionalidades.
 
-![Imagen de las credenciales de edición1](images/api-flow-0.png)
+![Imagen de las credenciales de edición1.](images/api-flow-0.png)
 
 > [!NOTE]
 > Para obtener más información acerca de los requisitos previos de licencias de conectores premium, vea [Licensing for premium connectors](/power-automate/triggers-introduction#licensing-for-premium-connectors).
@@ -53,15 +53,15 @@ En el ejemplo siguiente se muestra cómo crear un Flow que se desencadena cada v
 
 2. Vaya a **Mis flujos** \> **Nuevo** \> **automatizado desde en blanco**.
 
-    ![Imagen de las credenciales de edición2](images/api-flow-1.png)
+    ![Imagen de las credenciales de edición2.](images/api-flow-1.png)
 
 3. Elija un nombre para su Flow, busque "Desencadenadores de ATP de Microsoft Defender" como desencadenador y, a continuación, seleccione el nuevo desencadenador de alertas.
 
-    ![Imagen de las credenciales de edición3](images/api-flow-2.png)
+    ![Imagen de las credenciales de edición3.](images/api-flow-2.png)
 
 Ahora tiene un Flow que se desencadena cada vez que se produce una nueva alerta.
 
-![Imagen de las credenciales de edición4](images/api-flow-3.png)
+![Imagen de las credenciales de edición4.](images/api-flow-3.png)
 
 Todo lo que necesita hacer ahora es elegir los pasos siguientes.
 Por ejemplo, puedes aislar el dispositivo si la gravedad de la alerta es alta y enviar un correo electrónico al respecto.
@@ -75,7 +75,7 @@ El desencadenador de alerta solo proporciona el identificador de alerta y el id.
 
 3. Establezca el **identificador de alerta** del último paso como **Input**.
 
-    ![Imagen de las credenciales de edición5](images/api-flow-4.png)
+    ![Imagen de las credenciales de edición5.](images/api-flow-4.png)
 
 ### <a name="isolate-the-device-if-the-alerts-severity-is-high"></a>Aislar el dispositivo si la gravedad de la alerta es alta
 
@@ -85,7 +85,7 @@ El desencadenador de alerta solo proporciona el identificador de alerta y el id.
 
    Si es así, agrega la **acción Atp de Microsoft Defender:** aislar la acción del equipo con el id. de máquina y un comentario.
 
-    ![Imagen de las credenciales de edición6](images/api-flow-5.png)
+    ![Imagen de las credenciales de edición6.](images/api-flow-5.png)
 
 3. Agregue un nuevo paso para enviar mensajes de correo electrónico sobre la alerta y el aislamiento. Hay varios conectores de correo electrónico que son muy fáciles de usar, como Outlook o Gmail.
 

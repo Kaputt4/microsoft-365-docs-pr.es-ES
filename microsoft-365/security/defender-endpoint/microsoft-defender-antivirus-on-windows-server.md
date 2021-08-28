@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
-ms.openlocfilehash: 85e3eea9eb2b19bde7516c91409e73e0747a0523
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: fe4f3dbd85ca71aabfca87cecc6478acdb21ecae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257585"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568137"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -67,7 +67,7 @@ Si la GUI no está instalada en el servidor y desea instalarla, el Asistente par
 
    En Windows Server 2016, el **Asistente** para agregar roles y características tiene este aspecto:
 
-   ![Agregar roles y asistente para características que muestran la gui Windows Defender opción](images/server-add-gui.png)
+   ![Agregar roles y asistente para características que muestren la gui Windows Defender opción.](images/server-add-gui.png)
 
    En Windows Server 2019, el Asistente para agregar **roles y** características es similar.
 
@@ -143,7 +143,7 @@ Para garantizar que se mantiene la protección contra malware, se recomienda hab
 
 En la tabla siguiente se enumeran los servicios Antivirus de Microsoft Defender y los servicios dependientes.
 
-|Nombre del servicio|Ubicación del archivo|Descripción|
+|Nombre del servicio|Ubicación del archivo|Description|
 |--------|---------|--------|
 |Windows Defender Servicio (WinDefend)|`C:\Program Files\Windows Defender\MsMpEng.exe`|Este es el servicio Antivirus de Microsoft Defender principal que debe ejecutarse en todo momento.|
 |Informe de errores de Windows Servicio (Wersvc)|`C:\WINDOWS\System32\svchost.exe -k WerSvcGroup`|Este servicio devuelve informes de error a Microsoft.|
@@ -165,7 +165,7 @@ El envío de ejemplo permite a Microsoft recopilar muestras de software potencia
 
 Para habilitar el envío automático de ejemplo, inicie una consola Windows PowerShell como administrador y establezca los datos de valor **SubmitSamplesConsent** de acuerdo con una de las opciones siguientes:
 
-|Configuración  |Descripción  |
+|Valor  |Descripción  |
 |---------|---------|
 |**0**  -  **Preguntar siempre**     |El Antivirus de Microsoft Defender solicita que confirme el envío de todos los archivos necesarios. Esta es la configuración predeterminada para Antivirus de Microsoft Defender, pero no se recomienda para instalaciones en Windows Server 2016 o 2019 sin una GUI.         |
 |**1**   -  **Enviar muestras seguras automáticamente**     |El Antivirus de Microsoft Defender envía todos los archivos marcados como "seguros" y solicita el resto de los archivos.         |
@@ -220,7 +220,7 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 Si usas Windows Server 2016 con un producto antivirus o antimalware que no sea de Microsoft, tendrás que deshabilitar o desinstalar Antivirus de Microsoft Defender. Puede usar uno de varios métodos:
 
-| Procedure  | Descripción  |
+| Procedure  | Description  |
 |---------|---------|
 | Deshabilitar Antivirus de Microsoft Defender con la directiva de grupo     | En el Editor de directivas de grupo local, vaya **a Windows Defender** y, a continuación, seleccione **Desactivar Antivirus de Windows Defender**.        |
 | Deshabilitar Antivirus de Microsoft Defender con una clave del Registro     | Para usar la clave del Registro [DisableAntiSpyware,](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) vaya `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` a y establezca o cree una entrada DWORD denominada `DisableAntiSpyware` . Establezca su valor en (que establece el valor de la `1` clave del Registro en *true*).         |

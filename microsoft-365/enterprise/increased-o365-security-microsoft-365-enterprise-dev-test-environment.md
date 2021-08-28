@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para habilitar la configuración Microsoft 365 seguridad adicional de su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: ad739ed76d903ece388dde4c4fbc6337bb230051
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 08b1db95a35debfa465d57d30ab0a8a2bd9f9732
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354445"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567909"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Mayor Microsoft 365 seguridad para su Microsoft 365 entorno de prueba empresarial
 
@@ -27,7 +27,7 @@ ms.locfileid: "58354445"
 
 Con las instrucciones de este artículo, se configuran opciones Microsoft 365 adicionales para aumentar la seguridad en el entorno Microsoft 365 de prueba empresarial.
 
-![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Haga clic [aquí](../downloads/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual con todos los artículos en la pila de la guías de laboratorio para pruebas de Microsoft 365 para empresas.
@@ -113,7 +113,7 @@ Puntuación segura de Microsoft muestra su posición de seguridad como un númer
 
 Para obtener más información, vea [Puntuación segura de Microsoft](../security/defender/microsoft-secure-score.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#information-protection) de protección de la información en el entorno de prueba.
 

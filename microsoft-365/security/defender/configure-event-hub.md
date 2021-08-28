@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: 8d313bd66930754116c26e0c231e8928d0aa963d
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 29a369c2813cfe3c9c17b6b11f765d4d6162f8bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508063"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569938"
 ---
 # <a name="configure-your-event-hub"></a>Configurar el centro de eventos
 
@@ -42,7 +42,7 @@ Obtén información sobre cómo configurar el Centro de eventos para que pueda i
 1. Select **Subscriptions** \> { Select the subscription the event hub will be ***deployed to***} \> **Resource providers**.
 1. Compruebe que el **proveedor de microsoft.Ideas** está registrado. De lo contrario, regístrelo.
 
-![Imagen de proveedores de recursos en Microsoft Azure](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
+![Imagen de proveedores de recursos en Microsoft Azure.](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
 
 ## <a name="set-up-azure-active-directory-app-registration"></a>Configurar el registro Azure Active Directory aplicación
 
@@ -52,13 +52,13 @@ Obtén información sobre cómo configurar el Centro de eventos para que pueda i
 
 1. Rellene el formulario con solo el nombre (no se requiere URI de redireccionamiento).
 
-    ![Imagen del registro de una aplicación](../../media/336bc84e6be23900c43232b4ef0c253c.png)
+    ![Imagen de registrar una aplicación.](../../media/336bc84e6be23900c43232b4ef0c253c.png)
 
-    ![Imagen de información general](../../media/06ac04c4ff713c2065cec2ef2f99a294.png)
+    ![Imagen de información general.](../../media/06ac04c4ff713c2065cec2ef2f99a294.png)
 
 1. Crear un secreto haciendo clic en **Certificados & secretos Nuevo** secreto de \> **cliente:**
 
-    ![Imagen de certificados y secretos](../../media/d2ef88d3d2310d2c60c294b569cdf02e.png)
+    ![Imagen de certificados y secretos.](../../media/d2ef88d3d2310d2c60c294b569cdf02e.png)
 
 > [!WARNING]
 > **No podrá volver a tener acceso al secreto de cliente,** así que asegúrese de guardarlo.
@@ -72,17 +72,17 @@ Obtén información sobre cómo configurar el Centro de eventos para que pueda i
     > [!NOTE]
     > Puede usar un centro de eventos existente, pero el rendimiento y el escalado se establecen en el nivel de espacio de nombres, por lo que se recomienda colocar un centro de eventos en su espacio de nombres.
 
-   ![Imagen del espacio de nombres del centro de eventos](../../media/ebc4ca37c342ad1da75c4aee4018e51a.png)
+   ![Imagen del espacio de nombres del centro de eventos.](../../media/ebc4ca37c342ad1da75c4aee4018e51a.png)
 
 1. También necesitará el identificador de recurso de este espacio de nombres de centro de eventos. Vaya a la página de espacio de nombres de Azure Event Hubs \> Propiedades. Copie el texto en Id. de recurso y grabe para usarlo durante la Microsoft 365 configuración siguiente.
 
-    ![Imagen de propiedades](../../media/759498162a4e93cbf17c4130d704d164.png)
+    ![Imagen de propiedades.](../../media/759498162a4e93cbf17c4130d704d164.png)
 
 1. Una vez creado el espacio de nombres del centro de eventos, deberá agregar la entidad de seguridad del servicio de registro de aplicaciones como Reader, el receptor de datos de Azure Event Hubs y el usuario que inicia sesión en Microsoft 365 Defender como colaborador (también puede hacerlo en el nivel de grupo de recursos o suscripción).
 
     Realice este paso en **Event Hubs Namespace** \> **Access Control (IAM)** \> **Agregar** y comprobar en **Asignaciones de roles**:
 
-    ![Imagen del control de acceso](../../media/9c9c29137b90d5858920202d87680d16.png)
+    ![Imagen del control de acceso.](../../media/9c9c29137b90d5858920202d87680d16.png)
 
 ## <a name="set-up-event-hub"></a>Configurar el centro de eventos
 
@@ -101,7 +101,7 @@ En esta opción, Microsoft 365 Defender creará centros de eventos.
 
 Por ejemplo:
 
-![Imagen del centro de eventos de ejemplo](../../media/005c1f6c10c34420d387f594987f9ffe.png)
+![Imagen del centro de eventos de ejemplo.](../../media/005c1f6c10c34420d387f594987f9ffe.png)
 
 Si elige esta opción, puede ir a la sección [Configurar Microsoft 365 Defender para enviar tablas de correo](#configure-microsoft-365-defender-to-send-email-tables) electrónico.
 
@@ -109,11 +109,11 @@ Para crear un centro de eventos en el espacio de nombres, seleccione **Event Hub
 
 El recuento de particiones permite más rendimiento a través del paralelismo, por lo que se recomienda aumentar este número en función de la carga que se espera. Se recomiendan los valores predeterminados de retención y captura de mensajes de 1 y Off.
 
-![Imagen de create Event Hub](../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png)
+![Imagen de create Event Hub.](../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png)
 
 Para este Centro de eventos (no espacio de nombres) deberá configurar una directiva de acceso compartido con Enviar, Escuchar notificaciones. Haga clic en las **directivas de** acceso compartido del centro de eventos + Agregar y, a continuación, déle un nombre de directiva (no se usa en ningún otro \>  \>  lugar) y **compruebe Enviar** y **escuchar**.
 
-![Imagen de directivas de acceso compartido](../../media/1867d13f46dc6a0f4cdae6cf00df24db.png)
+![Imagen de directivas de acceso compartido.](../../media/1867d13f46dc6a0f4cdae6cf00df24db.png)
 
 ## <a name="configure-microsoft-365-defender-to-send-email-tables"></a>Configurar Microsoft 365 Defender para enviar tablas de correo electrónico
 
@@ -125,7 +125,7 @@ Para este Centro de eventos (no espacio de nombres) deberá configurar una direc
 
     - Rol de administrador global o de administración de seguridad en el inquilino vinculado a Microsoft 365 Defender y Azure.
 
-    ![Imagen del portal de seguridad](../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png)
+    ![Imagen del portal de seguridad.](../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png)
 
 1. Haga clic **en Exportación de datos sin procesar \> +Agregar**.
 
@@ -143,7 +143,7 @@ Para este Centro de eventos (no espacio de nombres) deberá configurar una direc
 
     **Tipos de eventos:** selecciona las tablas de búsqueda avanzada que quieres reenviar al Centro de eventos y, a continuación, a la aplicación personalizada. Las tablas de alertas son de Microsoft 365 Defender, las tablas de dispositivos son de Microsoft Defender para endpoint (EDR) y las tablas de correo electrónico son de Microsoft Defender para Office 365. Eventos de correo electrónico registra todas las transacciones de correo electrónico. La dirección URL (vínculos Caja fuerte), datos adjuntos (datos adjuntos de Caja fuerte) y eventos posteriores a la entrega (ZAP) también se registran y se pueden unir a los eventos de correo electrónico en el campo NetworkMessageId.
 
-    ![Imagen de la configuración de la API de streaming](../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png)
+    ![Imagen de la configuración de la API de streaming.](../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png)
 
 1. Asegúrese de hacer clic en **Enviar**.
 
@@ -162,11 +162,11 @@ EmailEvents
 
 Esto le mostrará cuántos correos electrónicos se recibieron en la última hora unidos en todas las demás tablas. También le mostrará si está viendo eventos que podrían exportarse al centro de eventos. Si este recuento muestra 0, no verá ningún dato que vaya al Centro de eventos.
 
-![Imagen de la búsqueda avanzada](../../media/c305e57dc6f72fa9eb035943f244738e.png)
+![Imagen de la búsqueda avanzada.](../../media/c305e57dc6f72fa9eb035943f244738e.png)
 
 Una vez que haya comprobado que hay datos que exportar, puede ver el Centro de eventos para comprobar que los mensajes están entrantes. Esto puede tardar hasta una hora.
 
 1. En Azure, vaya a **Event Hubs Click** \> on the **Namespace** \> **Event Hubs** \> Click on the Event **Hub**.
 1. En **Información** general, desplácese hacia abajo y en el gráfico Mensajes debería ver Mensajes entrantes. Si no ves ningún resultado, no habrá mensajes para que la aplicación personalizada ingieren.
 
-    ![Imagen de la pestaña información general con mensajes](../../media/e88060e315d76e74269a3fc866df047f.png)
+    ![Imagen de la pestaña información general con mensajes.](../../media/e88060e315d76e74269a3fc866df047f.png)

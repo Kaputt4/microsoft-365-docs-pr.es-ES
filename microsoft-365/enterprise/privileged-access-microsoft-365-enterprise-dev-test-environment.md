@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Use esta Guía del laboratorio de pruebas para habilitar la administración de acceso con privilegios Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 9599048ae7ed4f4b3627da15d22d00e795bf28fc
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d4d3658ad8c7533e2540dde6c390b4f2b4691cb8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250776"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569410"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Administración de acceso con privilegios para Microsoft 365 entorno de prueba de empresa
 
@@ -34,7 +34,7 @@ La configuración de la administración de acceso con privilegios implica tres f
 - [Fase 2: Configurar la administración de acceso con privilegios](#phase-2-configure-privileged-access-management)
 - [Fase 3: Comprobar que la aprobación es necesaria para tareas con privilegios y privilegios elevados](#phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks)
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -154,7 +154,7 @@ En primer lugar, conéctese a Exchange Management PowerShell con las credenciale
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#information-protection) de protección de la información en el entorno de prueba.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 - [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

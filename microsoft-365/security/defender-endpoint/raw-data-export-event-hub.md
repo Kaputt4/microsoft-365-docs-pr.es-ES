@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 613ed8427f5068ab9a2709b68e5a6bf5586676a9f9fb36383b772458f16f3332
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d0e872390fbcc80a7427c28b2a7cdf5382ac839c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845054"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570010"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a los centros de eventos de Azure
 
@@ -57,7 +57,7 @@ ms.locfileid: "53845054"
 
    Para obtener el identificador de recurso **de Event Hubs,** vaya a la página de espacio de nombres de Azure Event Hubs en la pestaña propiedades de [Azure](https://ms.portal.azure.com/) > copie el texto en \> **Id. de recurso:**
 
-   ![Imagen del recurso del centro de eventos Id1](images/event-hub-resource-id.png)
+   ![Imagen del recurso del centro de eventos Id1.](images/event-hub-resource-id.png)
 
 7. Elija los eventos que desea transmitir y haga clic en **Guardar**.
 
@@ -101,7 +101,7 @@ Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:
 
 - Este es un ejemplo para el evento Device Info:
 
-  ![Imagen del recurso del centro de eventos Id2](images/machine-info-datatype-example.png)
+  ![Imagen del recurso del centro de eventos Id2.](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

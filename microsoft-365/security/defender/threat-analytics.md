@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: da726aeaf82f13cef862b105e951f28c9fdf80e3
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 43b15b8fb43a06fa56e18c735868058fcfd6d24f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533056"
+ms.locfileid: "58568557"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics-in-microsoft-365-defender"></a>Seguimiento y respuesta a amenazas emergentes con análisis de amenazas en Microsoft 365 Defender 
 
@@ -54,7 +54,7 @@ Vea este breve vídeo para obtener más información sobre cómo los análisis d
 
 Puedes acceder al análisis de amenazas desde la parte superior izquierda de la barra de navegación del portal de seguridad de Microsoft 365 o desde una tarjeta de panel dedicada que muestra las principales amenazas de la organización. Obtener visibilidad de las campañas activas o en curso y saber qué hacer a través del análisis de amenazas puede ayudar a dotar a su equipo de operaciones de seguridad de decisiones fundamentadas. 
 
-![Imagen del panel de análisis de amenazas](../../media/threat-analytics/ta_inlandingpage_mtp.png)
+![Imagen del panel de análisis de amenazas.](../../media/threat-analytics/ta_inlandingpage_mtp.png)
 
 _Dónde acceder al análisis de amenazas_
 
@@ -78,7 +78,7 @@ El panel de análisis de amenazas ([security.microsoft.com/threatanalytics3](htt
 
 Seleccione una amenaza en el panel para ver el informe de esa amenaza.
 
-![Captura de pantalla del panel de análisis de amenazas](../../media/threat-analytics/ta_dashboard_mtp.png)
+![Captura de pantalla del panel de análisis de amenazas.](../../media/threat-analytics/ta_dashboard_mtp.png)
 
 _Panel de análisis de amenazas. También puedes hacer clic en el icono Buscar para claver una palabra clave relacionada con el informe de análisis de amenazas que quieras leer._ 
 
@@ -97,7 +97,7 @@ Cada informe de análisis de amenazas proporciona información en varias seccion
 
 La **sección** Información general proporciona una vista previa del informe detallado del analista. También proporciona gráficos que resaltan el impacto de la amenaza para su organización y su exposición a través de dispositivos mal configurados y sin aparear.
 
-![Imagen de la sección de información general de un informe de análisis de amenazas](../../media/threat-analytics/ta_overview_mtp.png)
+![Imagen de la sección de información general de un informe de análisis de amenazas.](../../media/threat-analytics/ta_overview_mtp.png)
 
 _Sección información general de un informe de análisis de amenazas_
 
@@ -138,15 +138,15 @@ El equipo de Inteligencia de amenazas de Microsoft ha agregado etiquetas de amen
   - Grupo de actividades
 - Las etiquetas de amenazas se presentan en la parte superior de la página análisis de amenazas, con contadores para el número de informes disponibles en cada etiqueta.
 
-  ![etiquetas de amenazas](../../media/threat-analytics/ta-threattags-mtp.png)
+  ![etiquetas de amenazas.](../../media/threat-analytics/ta-threattags-mtp.png)
 
 - La lista también se puede ordenar por etiquetas de amenaza:
 
-  ![lists](../../media/threat-analytics//ta-taglist-mtp.png)
+  ![listas.](../../media/threat-analytics//ta-taglist-mtp.png)
 
 - Los filtros están disponibles por etiqueta de amenaza y tipo de informe:
 
-  ![filtros](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+  ![filtros.](../../media/threat-analytics/ta-threattag-filters-mtp.png)
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Informe de analistas: obtener información de expertos de los investigadores de seguridad de Microsoft
 
@@ -159,7 +159,7 @@ En la **sección Informe de** analistas, lea la escritura detallada del experto.
 La **pestaña Incidentes relacionados** proporciona la lista de todos los incidentes relacionados con la amenaza rastreada. Puede asignar incidentes o administrar alertas vinculadas a cada incidente. 
 
 
-![Imagen de la sección incidentes relacionados de un informe de análisis de amenazas](../../media/threat-analytics/ta_related_incidents_mtp.png)
+![Imagen de la sección incidentes relacionados de un informe de análisis de amenazas.](../../media/threat-analytics/ta_related_incidents_mtp.png)
 
 _Sección incidentes relacionados de un informe de análisis de amenazas_
 
@@ -170,7 +170,7 @@ Un activo se considera afectado si se ve afectado por una alerta activa y sin re
 - **Dispositivos afectados:** puntos de conexión que tienen alertas de Microsoft Defender para puntos de conexión sin resolver. Estas alertas suelen dispararse en avistamientos de indicadores y actividades de amenazas conocidos.
 - **Buzones afectados:** buzones que han recibido mensajes de correo electrónico que han desencadenado Microsoft Defender para Office 365 alertas. Aunque la mayoría de los mensajes que desencadenan alertas suelen estar bloqueados, las directivas de nivel de usuario o de organización pueden invalidar los filtros.
 
-![Imagen de la sección activos afectados de un informe de análisis de amenazas](../../media/threat-analytics/ta_impacted_assets_mtp.png)
+![Imagen de la sección activos afectados de un informe de análisis de amenazas.](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
 _Sección activos afectados de un informe de análisis de amenazas_
 
@@ -180,7 +180,7 @@ Microsoft Defender para Office 365 normalmente bloquea los correos electrónicos
 
 La **pestaña Intentos** de correo electrónico impedido enumera todos los correos electrónicos que Microsoft Defender ha bloqueado antes de la entrega o que Microsoft Defender ha enviado a la carpeta de correo no deseado Office 365. 
 
-![Imagen de la sección intentos de correo electrónico impedidos de un informe de análisis de amenazas](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
+![Imagen de la sección intentos de correo electrónico impedidos de un informe de análisis de amenazas.](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
 _Sección Intentos de correo electrónico impedidos de un informe de análisis de amenazas_
 
@@ -196,9 +196,9 @@ En la **sección Mitigaciones,** revise la lista de recomendaciones específicas
 
 La información de mitigación de esta sección incorpora datos de [Administración de amenazas y vulnerabilidades](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), que también proporciona información detallada de detalles de varios vínculos del informe.
 
-![Imagen de la sección mitigaciones de un informe de análisis de amenazas que muestra detalles de configuración segura](../../media/threat-analytics/ta_mitigations_mtp.png)
+![Imagen de la sección mitigaciones de un informe de análisis de amenazas que muestra detalles de configuración segura.](../../media/threat-analytics/ta_mitigations_mtp.png)
 
-![Imagen de la sección mitigaciones de un informe de análisis de amenazas que muestra detalles de vulnerabilidad](../../media/threat-analytics/ta_mitigations_mtp2.png)
+![Imagen de la sección mitigaciones de un informe de análisis de amenazas que muestra detalles de vulnerabilidad.](../../media/threat-analytics/ta_mitigations_mtp2.png)
 
 _Sección Mitigaciones de un informe de análisis de amenazas_
 

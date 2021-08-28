@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda cómo optimizar el rendimiento de los iFrames en las páginas de sitio de publicación moderna y clásica de SharePoint Online
-ms.openlocfilehash: cd7d6a09581e716b0b1179bb251d24d927b0c03e06552d381d809f54887238b5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f50b6582a0a65cd29a91f450642e5d38b346d77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848873"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569422"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimizar los iFrames en las páginas de sitio de publicación moderna y clásica de SharePoint Online
 
@@ -50,7 +50,7 @@ Puede encontrarse con los siguientes resultados:
 
 Si se muestra el resultado **se han detectado elementos Web que usan iFrames** en la sección **Oportunidades de mejora** o **Atención requerida** de los resultados, puede hacer clic en el resultado para ver los elementos web que contienen iFrames.
 
-![Resultados de la herramienta Diagnóstico de página](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
+![Resultados de la herramienta diagnóstico de página.](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
 
 ## <a name="remediate-iframe-performance-issues"></a>Corrección de problemas de rendimiento de iFrame
 
@@ -69,7 +69,7 @@ Siga las instrucciones que se indican a continuación para hacer un uso óptimo 
 
 Antes de realizar revisiones de página para corregir problemas de rendimiento, anote el tiempo de carga de la página en los resultados del análisis. Ejecute la herramienta de nuevo después de la revisión y compruebe si los nuevos resultados están en línea con su valor de referencia. Luego, compruebe el nuevo tiempo de carga de la página para ver si se ha producido alguna mejora.
 
-![Resultados de tiempo de carga de la página](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Resultados de tiempo de carga de página.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >El tiempo de carga de la página puede variar en función de varios factores, como la carga de la red, la hora del día y otras condiciones transitorias. Debe probar el tiempo de carga de la página varias veces, antes y después de realizar cambios, para obtener un promedio.

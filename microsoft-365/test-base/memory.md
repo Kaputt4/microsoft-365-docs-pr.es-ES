@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: ea4ce5d4883f3e3263a8885f1c347cf9f6fb8fb0c1d4062c1c2a843387d9aea3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 714cea98e5dd876a5a9e2568a6c8488f595f2f39
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888073"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568713"
 ---
 # <a name="memory-regression-analysis"></a>Análisis de regresión de memoria
 
@@ -39,12 +39,12 @@ Ahora echemos un vistazo a esta característica en detalle y analicemos cómo pu
 
 La señal de error causada por una regresión de memoria se muestra en el panel Base de pruebas para M365 en la página Resultados de la prueba en Uso de memoria:
 
-![Resultados de uso de memoria](Media/01_memory-utilization-results.png)
+![Resultados de uso de memoria.](Media/01_memory-utilization-results.png)
 
 
 Error en la aplicación debido a un mayor consumo de memoria, también se mostrará como en ```Fail``` la página Resumen de prueba:
 
-![Resultados de resumen de prueba](Media/02_test-summary.png)
+![Resultados de resumen de prueba.](Media/02_test-summary.png)
 
 Al proporcionar estas señales de error por adelantado, nuestro objetivo es marcar claramente los posibles problemas que pueden interrumpir e afectar a la experiencia del usuario final de la aplicación. 
 
@@ -52,7 +52,7 @@ A continuación, puede descargar los archivos de registro y usar el analizador d
 
 Las señales de memoria se capturan en la pestaña Uso de memoria del servicio Base de prueba para M365 para todas las ejecuciones de prueba. En el ejemplo siguiente se muestra una ejecución de prueba reciente con la aplicación incorporada "Estrés de memoria de prueba de humo" en la actualización de seguridad de agosto de 2020. (Nuestro equipo escribió esta aplicación para ilustrar las regresión de la memoria).
 
-![Resultados de regresión de memoria](Media/03_memory-regression%20comparison.png)
+![Resultados de regresión de memoria.](Media/03_memory-regression%20comparison.png)
 
 En este ejemplo, el proceso favorito "USLTestMemoryStress.exe" consumió un promedio de aproximadamente 100 MB en la actualización de agosto anterior a la actualización de julio publicada, de ahí que la Base de pruebas para M365 identificara una regresión. 
 
@@ -66,11 +66,11 @@ El siguiente paso es comprender qué causó la regresión de la memoria. Puede d
 
 Estos archivos zip contienen los resultados de la ejecución de prueba, incluidos los resultados del script y la memoria y los datos de rendimiento de la CPU que se incluyen en el archivo ETL.
 
-![Archivos de prueba de regresión de memoria](Media/04_memory-regression-test-files.png)
+![Archivos de prueba de regresión de memoria.](Media/04_memory-regression-test-files.png)
 
 Puede descargar y descomprimir los registros de las dos ejecuciones de prueba, localizar el archivo ETL en cada carpeta y cambiar su nombre como target.etl (para la ejecución de prueba en la actualización de versión anterior) y baseline.etl (para la ejecución de prueba en la última actualización publicada) para simplificar la exploración y la navegación.
  
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Avance al siguiente artículo para empezar a comprender el análisis de regresión inteligente de la CPU.
 > [!div class="nextstepaction"]

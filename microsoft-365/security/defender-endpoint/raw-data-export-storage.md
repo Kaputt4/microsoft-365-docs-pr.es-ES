@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a403cfa7e4e2348827a9ff7f127a815c5ec4fdca0a239716dfc8453e16d116d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5a38f1347c959cd52e0ae393fa60b4e9c371eb2a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793051"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569998"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a su Storage cuenta
 
@@ -54,7 +54,7 @@ ms.locfileid: "53793051"
 
 6. Escriba su **Storage de recurso de cuenta**. Para obtener el identificador de recurso de cuenta **de Storage,** vaya a la página de la cuenta de Storage en la pestaña propiedades de [Azure Portal](https://ms.portal.azure.com/) > > copie el texto en el identificador de recurso de cuenta Storage **:**
 
-   ![Imagen del id. de recurso del centro de eventos1](images/storage-account-resource-id.png)
+   ![Imagen del id. de recurso del centro de eventos1.](images/storage-account-resource-id.png)
 
 7. Elija los eventos que desea transmitir y haga clic en **Guardar**.
 
@@ -62,7 +62,7 @@ ms.locfileid: "53793051"
 
 - Se creará un contenedor de blobs para cada tipo de evento: 
 
-  ![Imagen del id. de recurso del centro de eventos2](images/storage-account-event-schema.png)
+  ![Imagen del id. de recurso del centro de eventos2.](images/storage-account-event-schema.png)
 
 - El esquema de cada fila de un blob es el siguiente JSON: 
 
@@ -99,7 +99,7 @@ Para obtener los tipos de datos de nuestras propiedades de eventos, haga lo sigu
 
 - Este es un ejemplo para el evento Device Info: 
 
-  ![Imagen del id. de recurso del centro de eventos3](images/machine-info-datatype-example.png)
+  ![Imagen del recurso del centro de eventos ID3.](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)

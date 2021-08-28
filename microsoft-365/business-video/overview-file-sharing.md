@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general sobre cómo compartir los archivos de negocio.
-ms.openlocfilehash: a377735f077df81556621a06e2367929d966aaf45f36e9f4425309f5dabaae0e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d762620cf07cd9f1201bf173e6e6aa0c16e050eb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867204"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569674"
 ---
 # <a name="overview-of-sharing-business-files"></a>Información general sobre cómo compartir archivos empresariales
 
 Debe compartir archivos con clientes, clientes, socios, proveedores y otras personas de su empresa. ¿Cómo compartir archivos para que todos puedan encontrarlos, abrirlos y editarlos?
 
-|![Compartir de forma segura](../media/securely-share-file.png)<br/>[Compartir un archivo con alguien externo a su empresa](#share-a-file-with-someone-outside-of-your-company)|![Colaborar con un cliente](../media/share-and-collab-with-partner.png) <br/>[Compartir y colaborar con un cliente o socio comercial](#share-and-collaborate-with-a-client-or-business-partner) | ![Compartir dentro de la organización](../media/share-inside-your-org.png) <br/>[Compartir dentro de su empresa](#share-inside-your-business) |
+|![Compartir de forma segura.](../media/securely-share-file.png)<br/>[Compartir un archivo con alguien externo a su empresa](#share-a-file-with-someone-outside-of-your-company)|![Colaborar con un cliente](../media/share-and-collab-with-partner.png) <br/>[Compartir y colaborar con un cliente o socio comercial](#share-and-collaborate-with-a-client-or-business-partner) | ![Compartir dentro de la organización](../media/share-inside-your-org.png) <br/>[Compartir dentro de su empresa](#share-inside-your-business) |
 |--|--|--|
 
 Descargue una infografía para obtener una introducción rápida a las formas de compartir sus archivos empresariales. 
