@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: b13e3974e71ca5cb24598720b2fe273df7fe82b34e13e24bd2ed53e926c519ba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7795f4d7f02a9b60e0bbd58fb97608733385dc9c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829917"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563587"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Comprender el esquema de búsqueda avanzada en Microsoft Defender para endpoint
 
@@ -50,7 +50,7 @@ Al crear consultas, use la referencia de esquema integrado para obtener rápidam
 
 Para obtener acceso rápidamente a la referencia de esquema, seleccione la acción **Ver** referencia junto al nombre de tabla en la representación del esquema. También puede seleccionar Referencia **de esquema para** buscar una tabla.
 
-![Imagen que muestra cómo obtener acceso a la referencia de esquema en el portal](images/ah-reference.png)
+![Imagen que muestra cómo obtener acceso a la referencia de esquema en el portal.](images/ah-reference.png)
 
 ## <a name="learn-the-schema-tables"></a>Obtenga información sobre las tablas de esquema
 

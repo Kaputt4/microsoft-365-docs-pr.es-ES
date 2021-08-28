@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: En este artículo se muestra cómo diagnosticar problemas comunes con el sitio SharePoint Online mediante las herramientas de desarrollador de Internet Explorer.
-ms.openlocfilehash: ff552963923fd6b3fe8d482a5892e8e4ad2779a41c08c0c554a65b98be5a408f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44e60a2144b1a9a8ecc9ef5572e5cfd988c4b8af
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891494"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561103"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosticar problemas de rendimiento con SharePoint Online
 
@@ -51,7 +51,7 @@ En este artículo usamos Internet Explorer 11. Las versiones de las herramientas
 
 Para mostrar las herramientas de desarrollador, **presione F12** y, a continuación, haga clic en Wi-Fi icono:
   
-![Captura de pantalla del icono wifi de herramientas de desarrollo F12](../media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
+![Captura de pantalla del icono wifi de las herramientas de desarrollo F12.](../media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
   
 En la **pestaña Red,** presione el botón de reproducción verde para cargar una página. La herramienta devuelve todos los archivos que el explorador solicita para obtener la página que solicitó. En la siguiente captura de pantalla se muestra una de estas listas.
   
@@ -59,7 +59,7 @@ En la **pestaña Red,** presione el botón de reproducción verde para cargar un
   
 También puede ver los tiempos de descarga de los archivos en el lado derecho, como se muestra en esta captura de pantalla.
   
-![Diagrama que muestra el tiempo empleado en cargar las páginas solicitadas desde SharePoint](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
+![Diagrama que muestra el tiempo necesario para cargar las páginas solicitadas desde SharePoint.](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
   
 Esto proporciona una representación visual del tiempo que tardó el archivo en cargarse. La línea verde representa cuándo está lista la página para representarla el explorador. Esto puede proporcionar una vista rápida de los diferentes archivos que pueden estar provocando cargas de página lentas en el sitio.
   
@@ -81,11 +81,11 @@ En SharePoint Online, puede obtener acceso a la información que se envía de nu
 
 3. Haga clic en uno de los archivos .aspx devueltos por la herramienta y, a continuación, haga clic **en DETALLES**.
 
-    ![Muestra los detalles del encabezado de respuesta](../media/1f8a044a-caf8-4613-be2b-7e064141ac8a.png)
+    ![Muestra detalles del encabezado de respuesta.](../media/1f8a044a-caf8-4613-be2b-7e064141ac8a.png)
   
 4. Haga clic **en Encabezados de respuesta**.
 
-    ![Diagrama que muestra la dirección URL del encabezado de respuesta](../media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
+    ![Diagrama que muestra la dirección URL del encabezado de respuesta.](../media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
   
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>¿Qué está causando problemas de rendimiento en SharePoint Online?
 <a name="F12ToolInfo"> </a>

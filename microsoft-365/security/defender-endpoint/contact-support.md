@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07d810f1588de01e4ee53294b39cc6b09b372046
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 12a796765e21e674ef46334dbd03478e843ef663
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594533"
+ms.locfileid: "58563575"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión
 
@@ -47,7 +47,7 @@ Es importante conocer los roles específicos que tienen permiso para abrir casos
 
 Como mínimo, debe tener un rol de administrador de soporte técnico **o** de administrador de soporte técnico.
 
-Para obtener más información sobre qué roles tienen permiso, vea [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator). Los roles que incluyen la acción `microsoft.office365.supportTickets/allEntities/allTasks` pueden enviar un caso.
+Para obtener más información sobre qué roles tienen permiso, vea [Security Administrator permissions](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions). Los roles que incluyen la acción `microsoft.office365.supportTickets/allEntities/allTasks` pueden enviar un caso.
 
 Para obtener información general sobre los roles de administrador, vea [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 

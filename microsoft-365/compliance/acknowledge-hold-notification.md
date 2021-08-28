@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar Advanced eDiscovery enviar y hacer un seguimiento de las notificaciones de retención legal a través del correo electrónico, así como supervisar el estado de las obligaciones.
-ms.openlocfilehash: 1826d6376dffc6717909accc7d4c3844cdf6b8a1206cdfad1dc655d7dee5b508
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43c2474bdc485a87c30d1fa2a31c3d008d2a383e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837205"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563289"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confirmar una notificación de retención
 
@@ -54,4 +54,4 @@ En función de la configuración de la notificación de retención legal, los cu
 
 Además de las notificaciones por correo electrónico, cada custodio tendrá acceso a un portal de cumplimiento único. A través del portal, cada custodio puede ver, acceder y confirmar sus notificaciones de retención activas.
 
-![Portal de cumplimiento para un custodio](../media/CustodianPortal.jpg)
+![Portal de cumplimiento para un custodio.](../media/CustodianPortal.jpg)

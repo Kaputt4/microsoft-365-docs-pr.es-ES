@@ -13,12 +13,12 @@ ms.collection:
 description: Obtenga información sobre cómo notificar falsos positivos y falsos negativos en Outlook la característica Mensaje de informe.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a0e69b16167ff796b68a2eea492a4dea180a4fb7
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 34afd8d8e15bc301f42850763d39e1846a66e6d4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400372"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563491"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Informar de falsos positivos y falsos negativos en Outlook
 
@@ -34,7 +34,7 @@ ms.locfileid: "58400372"
 
 En las organizaciones de Microsoft 365 con buzones en buzones de Exchange Online o locales mediante autenticación moderna híbrida, puede enviar falsos positivos (correo electrónico bueno bloqueado o enviado a la carpeta no deseado) y falsos negativos (correo electrónico no deseado o suplantación de identidad que se entregó a la bandeja de entrada) a Exchange Online Protection (EOP).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Para obtener la mejor experiencia de envío de usuario, use el complemento Report Message o el complemento Report Phishing.
 
@@ -59,9 +59,9 @@ Para los mensajes de la Bandeja de entrada o cualquier otra carpeta de correo el
 
 1. Seleccione los **puntos suspensivos** Más acciones en la  esquina superior derecha del mensaje seleccionado, seleccione Informar del mensaje en el menú desplegable y, a continuación, seleccione Correo no deseado **o** **Suplantación de identidad**.
 
-   ![Mensaje de informe: más acciones](../../media/report-message-more-actions.png)
+   ![Mensaje de informe: más acciones.](../../media/report-message-more-actions.png)
 
-   ![Mensaje de informe: correo no deseado y suplantación de identidad](../../media/report-message-junk-phishing.png)
+   ![Mensaje de informe: correo no deseado y suplantación de identidad.](../../media/report-message-junk-phishing.png)
 
 2. Los mensajes seleccionados se enviarán a Microsoft para su análisis y:
    - Se ha movido a la carpeta correo no deseado si se han notificado como correo no deseado.
@@ -71,9 +71,9 @@ Para los mensajes de la Bandeja de entrada o cualquier otra carpeta de correo el
 
 1. Seleccione los **puntos suspensivos** Más acciones en la  esquina superior derecha del mensaje seleccionado, seleccione Informar mensaje en el menú desplegable y, a continuación, **seleccione No deseado**.
 
-   ![Mensaje de informe: más acciones](../../media/report-message-more-actions.png)
+   ![Mensaje de informe: más acciones.](../../media/report-message-more-actions.png)
 
-   ![Mensaje de informe: no deseado](../../media/report-message-not-junk.png)
+   ![Mensaje de informe: no es correo no deseado.](../../media/report-message-not-junk.png)
 
 2. El mensaje seleccionado se enviará a Microsoft para su análisis y se trasladará a la Bandeja de entrada o a cualquier otra carpeta especificada.
 

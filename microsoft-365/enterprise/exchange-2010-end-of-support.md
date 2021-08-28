@@ -12,16 +12,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 ha llegado al final del soporte técnico. Use esta guía básica de planeación para prepararse para actualizar a Exchange Online o una versión más reciente de Exchange Server local.
-ms.openlocfilehash: dc7a9355be8232daefb158ca143fac377949480e714de77a644b5f8b1bdc3c6a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 14875c793380c509c578d86d2d835596fa57cc73
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904962"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561079"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Plan de final del soporte técnico de Exchange 2010
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Exchange Server 2010 llegó a su fin de soporte el 13 de octubre de **2020**. Si aún no ha iniciado la migración de Exchange 2010 a Microsoft 365, Office 365 o Exchange 2016, ahora es el momento de empezar a planear.
 
@@ -40,7 +40,7 @@ Para obtener más información sobre cómo acercarse al final de la compatibilid
 
 ## <a name="what-are-my-options"></a>¿Cuáles son mis opciones?
 
-Es un buen momento para explorar sus opciones y preparar un plan de migración. Puede:
+Es un buen momento para explorar sus opciones y preparar un plan de migración. Podrá:
 
 - Migre completamente a Microsoft 365. Migre los buzones mediante la migración total, híbrida mínima o híbrida completa. A continuación, quite los servidores Exchange locales y Active Directory.
 - Migre Exchange servidores de 2010 a Exchange 2016 en los servidores locales.
@@ -56,7 +56,7 @@ Es un buen momento para explorar sus opciones y preparar un plan de migración. 
 
 Estas son las tres rutas de acceso que puede tomar para evitar el fin de la compatibilidad Exchange Server 2010.
 
-![Exchange Server de actualización de 2010](../media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
+![Exchange Server de actualización de 2010.](../media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
 
 Las secciones siguientes exploran cada opción con más detalle.
 
@@ -221,7 +221,7 @@ Use los siguientes recursos para ayudar con la migración:
 
 Para obtener un resumen visual de las opciones de actualización y migración a la nube para clientes de Office 2010 y servidores de Windows 7, consulte el [póster de final del soporte técnico.](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-[![Fin de la compatibilidad con Office clientes y servidores de 2010 y Windows póster de 7](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Fin de la compatibilidad con Office clientes y servidores de 2010 y Windows póster de 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 Este póster de una página ilustra las distintas rutas de acceso que puede tomar para responder Office los productos de cliente y servidor de Office 2010 y Windows 7 que llegan al final de la compatibilidad, con rutas de acceso preferidas y compatibilidad con opciones en Microsoft 365 Enterprise resaltado.
 
@@ -229,9 +229,9 @@ También puede descargar [este](https://github.com/MicrosoftDocs/microsoft-365-d
 
 ## <a name="what-if-i-need-help"></a>¿Qué ocurre si necesito ayuda?
 
-Si está migrando a Microsoft 365, puede ser elegible para usar nuestro servicio De FastTrack de Microsoft. FastTrack proporciona procedimientos recomendados, herramientas y recursos para que la migración a Microsoft 365 sea lo más sencilla posible. Lo mejor de todo es que un ingeniero de soporte técnico le ayudará desde la planeación y el diseño hasta la migración del último buzón. Para obtener más información sobre FastTrack, vea [Microsoft FastTrack](https://fasttrack.microsoft.com/).
+Si está migrando a Microsoft 365, puede ser elegible para usar nuestro servicio de FastTrack Microsoft. FastTrack proporciona procedimientos recomendados, herramientas y recursos para que la migración a Microsoft 365 sea lo más sencilla posible. Lo mejor de todo es que un ingeniero de soporte técnico le ayudará desde la planeación y el diseño hasta la migración del último buzón. Para obtener más información FastTrack, vea [Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
-Si tiene problemas durante la migración a Microsoft 365 y no está usando FastTrack o está migrando a una versión más reciente de Exchange Server, estos son algunos recursos que puede usar:
+Si tiene problemas durante la migración a Microsoft 365 y no usa FastTrack o está migrando a una versión más reciente de Exchange Server, estos son algunos recursos que puede usar:
 
 - [Comunidad de soporte técnico](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
 - [Soporte al cliente](https://support.microsoft.com/gp/support-options-for-business)

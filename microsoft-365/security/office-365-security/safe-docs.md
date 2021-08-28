@@ -16,12 +16,12 @@ ms.collection:
 description: Obtenga información sobre Caja fuerte documentos en Microsoft 365 E5 o Seguridad de Microsoft 365 E5.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd9928034c8043f7852df0eeecdae870c9393c66
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b1009e3c8e75497b32222b61b95810d7a50b33d2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255048"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563335"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
@@ -40,7 +40,7 @@ Caja fuerte Documents es una característica de Microsoft 365 E5 o Seguridad de 
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Caja fuerte datos adjuntos,** use <https://security.microsoft.com/safeattachmentv2> .
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Necesita permisos en Exchange Online **para** poder realizar los procedimientos de este artículo:
   - Para configurar Caja fuerte documentos, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
@@ -67,8 +67,8 @@ Los archivos enviados por Caja fuerte documentos no se conservan en Defender má
 2. En la **página Caja fuerte datos adjuntos,** haga clic en **Configuración global**.
 
 3. En el **menú desplegable Configuración global** que aparece, configure las siguientes opciones:
-   - **Activar documentos Caja fuerte para clientes Office**: Mueva el botón de alternancia a la derecha para activar la característica: Activar ![ ](../../media/scc-toggle-on.png) .
-   - **Permitir que** los usuarios haga clic en la vista protegida incluso si Caja fuerte Documentos identifica el archivo como malintencionado : Se recomienda dejar esta opción desactivada (dejar el botón de alternancia a la izquierda: ![ Desactivar ](../../media/scc-toggle-off.png) ).
+   - **Activar Caja fuerte documentos** para Office clientes: mueva el botón de alternancia a la derecha para activar la característica: ![ Activar. ](../../media/scc-toggle-on.png) .
+   - **Permitir** que los usuarios haga clic en la vista protegida incluso si Caja fuerte Documents identificó el archivo como malintencionado : Se recomienda que deje esta opción desactivada (deje el botón de alternancia a la izquierda: ![ Desactivar. ](../../media/scc-toggle-off.png) ).
 
    Cuando haya terminado, haga clic en **Guardar**.
 

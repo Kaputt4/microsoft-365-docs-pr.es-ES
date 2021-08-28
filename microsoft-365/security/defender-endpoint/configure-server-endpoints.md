@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 23f6b23d958a51bd84498c08ef95672ec62ff6e5
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 6c3adb8b07de50ca655c27a2d70f7868efd32332
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532768"
+ms.locfileid: "58561043"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -175,7 +175,7 @@ La compatibilidad con Windows Server proporciona información más detallada sob
 
     1. Confirme que se encuentra un evento reciente que contiene el evento de modo pasivo:
 
-       ![Imagen del resultado de comprobación del modo pasivo](images/atp-verify-passive-mode.png)
+       ![Imagen del resultado de comprobación del modo pasivo.](images/atp-verify-passive-mode.png)
 
 3. Ejecute el siguiente comando para comprobar si Microsoft Defender AV está instalado:
 
@@ -260,7 +260,7 @@ Para salir del servidor Windows, puede usar cualquiera de los siguientes método
 
 2. Seleccione el área de trabajo Defender para extremo y haga clic en **Quitar**.
 
-    ![Imagen de Microsoft Monitoring Agent propiedades](images/atp-mma.png)
+    ![Imagen de Microsoft Monitoring Agent propiedades.](images/atp-mma.png)
 
 #### <a name="run-a-powershell-command-to-remove-the-configuration"></a>Ejecutar un comando de PowerShell para quitar la configuración
 
@@ -270,7 +270,7 @@ Para salir del servidor Windows, puede usar cualquiera de los siguientes método
 
    1. Seleccione **Windows Server 2008 R2 SP1, 2012 R2 y 2016** como sistema operativo y obtenga el identificador de área de trabajo:
 
-      ![Imagen de Windows de servidor](images/atp-server-offboarding-workspaceid.png)
+      ![Imagen de Windows de servidor.](images/atp-server-offboarding-workspaceid.png)
 
 2. Abra un PowerShell con privilegios elevados y ejecute el siguiente comando. Use el identificador de área de trabajo que obtuvo y reemplace `WorkspaceID` :
 
@@ -325,28 +325,28 @@ Crea una nueva directiva de grupo específicamente para los dispositivos de inco
 
 - Crear una carpeta de directiva de grupo denominada "c:\windows\MMA"
 
-     :::image type="content" source="images/grppolicyconfig1.png" alt-text="carpetas":::
+     :::image type="content" source="images/grppolicyconfig1.png" alt-text="carpetas.":::
 
     **Esto agregará una nueva carpeta en cada servidor que obtiene el GPO aplicado, denominado MMA, y se almacenará en c:\windows. Esto contendrá los archivos de instalación del MMA, los requisitos previos y el script de instalación.**
 
 - Cree una preferencia de archivos de directiva de grupo para cada uno de los archivos almacenados en el inicio de sesión de red.
 
-     :::image type="content" source="images/grppolicyconfig2.png" alt-text="imagen de directiva de grupo1":::
+     :::image type="content" source="images/grppolicyconfig2.png" alt-text="imagen de directiva de grupo1.":::
 
 Copia los archivos de DOMAIN\NETLOGON\MMA\filename a C:\windows\MMA\filename, por lo que los archivos de instalación son **locales en el servidor:**
 
-:::image type="content" source="images/deploymma.png" alt-text="implementar mma cmd":::
+:::image type="content" source="images/deploymma.png" alt-text="implementar mma cmd.":::
 
 Para los dos KB (uno para Windows Server 2008R2/Windows 7 y el otro para Windows Server 2012 R2) repita el proceso pero cree la segmentación de nivel de elemento en la pestaña COMMON, por lo que el archivo solo se copia en la versión de plataforma o sistema operativo correspondiente en el ámbito:
 
-:::image type="content" source="images/targeteditor.png" alt-text="editor de destino":::
+:::image type="content" source="images/targeteditor.png" alt-text="editor de destino.":::
 
 - Para Windows Server 2008 R2 necesita (y solo copiará hacia abajo) Windows6.1-BJ3080149-x64.msu
 - Para Windows Server 2012 R2 que necesitas (y solo se copiará hacia abajo) Windows8.1-BJ3080149-x64.msu
 
 Una vez hecho esto, deberá crear una directiva de script de inicio:
 
-:::image type="content" source="images/startupprops.png" alt-text="propiedades de inicio":::
+:::image type="content" source="images/startupprops.png" alt-text="propiedades de inicio.":::
 
 El nombre del archivo que se va a ejecutar aquí es c:\windows\MMA\DeployMMA.cmd.
 Una vez reiniciado el servidor como parte del proceso de inicio, se instalará la actualización de la experiencia del cliente y la telemetría de diagnóstico KB y, a continuación, se instalará el agente mma, mientras se establece el identificador de área de trabajo y la clave, y se incorporará el servidor.
@@ -356,13 +356,13 @@ Esto se podría hacer en dos fases. En primer **lugar, cree los archivos y la ca
 
 Dado que el script tiene un método exit y no se vuelve a ejecutar si está instalado el MMA, también puede usar una tarea programada diariamente para lograr el mismo resultado. De forma similar a una directiva de cumplimiento de Configuration Manager, se comprobará diariamente para asegurarse de que la MMA está presente.
 
-:::image type="content" source="images/schtask.png" alt-text="tarea de programación":::
+:::image type="content" source="images/schtask.png" alt-text="tarea de programación.":::
 
-:::image type="content" source="images/newtaskprops.png" alt-text="nuevas propiedades de tarea":::
+:::image type="content" source="images/newtaskprops.png" alt-text="nuevas propiedades de tarea.":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="implementar aplicaciones de descarga de mma":::
+:::image type="content" source="images/deploymmadowmload.png" alt-text="implementar aplicaciones de descarga mma.":::
 
-:::image type="content" source="images/tasksch.png" alt-text="programador de tareas":::
+:::image type="content" source="images/tasksch.png" alt-text="programador de tareas.":::
 
 Como se mencionó en la documentación de incorporación de Server específicamente en torno a Server 2008 R2, vea a continuación:
 

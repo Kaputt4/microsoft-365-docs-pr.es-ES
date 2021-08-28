@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1188f1310ce06c2d3e695294f2212df1f5a9c60
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: b5d7f7384d60a5353ce4c0363e07d3451e146598
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532828"
+ms.locfileid: "58563563"
 ---
 # <a name="deployment-phases"></a>Fases de implementación
 
@@ -41,9 +41,10 @@ Esta guía le ayuda a trabajar entre partes interesadas para preparar su entorno
 
 Cada sección corresponde a un artículo independiente de esta solución.
 
-![Imagen de las fases de implementación con detalles de la tabla](images/deployment-guide-phases.png)
+![Imagen de fases de implementación con detalles de la tabla.](images/deployment-guide-phases.png)
 
-![Resumen de las fases de implementación: preparar, configurar, incorporar](images/phase-diagrams/deployment-phases.png)
+
+![Resumen de las fases de implementación: preparar, configurar, incorporar.](images/phase-diagrams/deployment-phases.png)
 
 <br>
 

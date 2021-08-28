@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 24e144b6134c4d32b15220ed3b3608b3b4a1c1df
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e104a8180ad9099e795a014060921387de642668
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533092"
+ms.locfileid: "58560911"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
 
@@ -90,7 +90,7 @@ Puede usar la aplicación Seguridad de Windows, la directiva de grupo, los cmdle
     ```
 3. Repita el paso 2 para cada carpeta que desee proteger. Las carpetas que están protegidas están visibles en la Seguridad de Windows aplicación.
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="Ventana de PowerShell con cmdlet mostrado":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="Ventana de PowerShell con cmdlet mostrado.":::
 
 > [!IMPORTANT]
 > Se `Add-MpPreference` usa para anexar o agregar aplicaciones a la lista y no `Set-MpPreference` para . El `Set-MpPreference` uso del cmdlet sobrescribirá la lista existente.
@@ -120,7 +120,7 @@ Una aplicación o servicio permitido solo tiene acceso de escritura a una carpet
 
 4. Selecciona **Agregar una aplicación permitida** y sigue las indicaciones para agregar aplicaciones.
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="Agregar un botón de aplicación permitido":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="Agregar un botón de aplicación permitido.":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>Usar la directiva de grupo para permitir aplicaciones específicas
 
@@ -149,7 +149,7 @@ Una aplicación o servicio permitido solo tiene acceso de escritura a una carpet
 
    Sigue usando para `Add-MpPreference -ControlledFolderAccessAllowedApplications` agregar más aplicaciones a la lista. Las aplicaciones agregadas con este cmdlet aparecerán en la Seguridad de Windows aplicación.
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Cmdlet de PowerShell para permitir una aplicación":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Cmdlet de PowerShell para permitir una aplicación.":::
 
 > [!IMPORTANT]
 > Se `Add-MpPreference` usa para anexar o agregar aplicaciones a la lista. El `Set-MpPreference` uso del cmdlet sobrescribirá la lista existente.

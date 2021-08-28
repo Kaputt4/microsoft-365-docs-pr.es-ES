@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: En este artículo, aprenderá a colaborar con invitados en un documento en SharePoint y OneDrive.
-ms.openlocfilehash: 725e500990697a54b1892c428353790f2aaf9091d2789e0d20f648eb7af87266
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: db7e619e674a270745b783e85bca803b85ee54ff
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810143"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563311"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar con invitados en un documento
 
@@ -41,7 +41,7 @@ El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configu
 
 Compruebe la configuración de colaboración externa B2B para asegurarse de que no se bloquee el uso compartido con invitados.
 
-![Captura de pantalla de la página de configuración de relaciones de organización de Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
+![Captura de pantalla Azure Active Directory página relaciones Configuración organización.](../media/azure-ad-organizational-relationships-settings.png)
 
 Para establecer la configuración de colaboración externa
 
@@ -66,7 +66,7 @@ Para SharePoint y OneDrive, si desea permitir el uso compartido de archivos y ca
 
 Para SharePoint, elija la configuración más permisiva que necesite cualquier sitio de la organización.
 
-![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint](../media/sharepoint-organization-external-sharing-controls.png)
+![Captura de pantalla SharePoint configuración de uso compartido a nivel de organización.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 Para establecer la configuración de uso compartido de nivel de organización de SharePoint
@@ -88,7 +88,7 @@ Elija un vínculo entre cualquiera de los siguientes tipos que se seleccionan de
 - **Solo las personas de su organización**: elija esta opción si espera que la mayoría del uso compartido de archivos y carpetas sea con usuarios dentro de su organización.
 - **Usuarios específicos**: considere esta opción si espera realizar una gran cantidad de uso compartido de archivos y carpetas con invitados. Este tipo de vínculo funciona con los invitados y requiere su autenticación.
  
-![Captura de pantalla de la configuración de uso compartido de los archivos y carpetas de nivel de organización de SharePoint ](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![Captura de pantalla SharePoint configuración de uso compartido de carpetas y archivos de la organización.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 Para establecer la configuración SharePoint y OneDrive configuración predeterminada de vínculos de nivel de organización
@@ -118,7 +118,7 @@ Para establecer permisos para vínculos que permiten compartir con cualquier per
 
 Si está compartiendo archivos y carpetas que se encuentran en un sitio SharePoint, también debe comprobar la configuración de uso compartido de nivel de sitio para ese sitio.
 
-![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](../media/sharepoint-site-external-sharing-settings.png)
+![Captura de pantalla SharePoint configuración de uso compartido externo del sitio.](../media/sharepoint-site-external-sharing-settings.png)
 
 Para establecer la configuración de uso compartido de nivel de sitio
 

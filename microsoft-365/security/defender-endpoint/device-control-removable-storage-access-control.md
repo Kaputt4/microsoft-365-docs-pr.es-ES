@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 73d863584a1712f5619bd045a51e651edb4ff636
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 8220fee635fde5551c76e9b6b8a88301bb8b41ec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507991"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563551"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
@@ -38,7 +38,7 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 |Privilegio|Permiso|
 |---|---|
-|Acceso|Lectura, Escritura, Ejecución|
+|Access|Lectura, Escritura, Ejecución|
 |Modo de acción|Auditoría, Permitir, Impedir|
 |Compatibilidad con CSP|Sí|
 |Compatibilidad con GPO|Sí|
@@ -54,7 +54,7 @@ Implemente el control Storage de acceso extraíble en Windows 10 dispositivos co
 - **4.18.2105** o posterior: Agregar compatibilidad con caracteres comodín para HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinación de usuario específico en una máquina específica, SSD extraíble (un SSD extremo de SanDisk)/compatibilidad con SCSI conectada a USB (UAS)
 - **4.18.2107** o posterior: Agregar compatibilidad Windows dispositivo portátil (WPD) (para dispositivos móviles, como tabletas); agregar AccountName a la [búsqueda avanzada](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-:::image type="content" source="images/powershell.png" alt-text="La interfaz de PowerShell":::
+:::image type="content" source="images/powershell.png" alt-text="La interfaz de PowerShell.":::
 
 > [!NOTE]
 > Ninguno de Seguridad de Windows componentes debe estar activo, ya que puede ejecutar Removable Storage Access Control independientemente Seguridad de Windows estado.
@@ -139,7 +139,7 @@ Antes de empezar con Removable Storage Access Control, debe confirmar su [Micr
 
     En la siguiente imagen se muestra el ejemplo del escenario 1: Impedir el acceso de escritura y ejecución a todos los usuarios, pero permitir [usbs aprobados específicos.](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)
 
-    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="Pantalla que muestra las opciones de configuración que permiten usbs aprobados específicos en dispositivos":::
+    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="Pantalla que muestra las opciones de configuración que permiten USB aprobados específicos en dispositivos.":::
 
 2. Combine todas las reglas `<PolicyRules>` `</PolicyRules>` dentro de un archivo xml.
 
@@ -147,7 +147,7 @@ Antes de empezar con Removable Storage Access Control, debe confirmar su [Micr
 
     La siguiente imagen ilustra el uso de la propiedad SID y un ejemplo de Escenario 1: Impedir el acceso de escritura y ejecución a todos, pero permitir [usbs aprobados específicos](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
-    :::image type="content" source="images/usage-sid-property.png" alt-text="Pantalla que muestra un código que indica el uso del atributo de propiedad SID":::
+    :::image type="content" source="images/usage-sid-property.png" alt-text="Pantalla que muestra un código que indica el uso del atributo de la propiedad SID.":::
 
 3. Guarde los archivos XML de regla y grupo en la carpeta de recurso compartido de red y coloque la ruta de acceso de la carpeta de recurso compartido de red en la configuración de directiva de **grupo:** Configuración del equipo Plantillas administrativas Windows Componentes Antivirus de Microsoft Defender Control de dispositivos: 'Definir grupos de directivas de control de dispositivos' y 'Definir reglas de directiva de control de \>  \>  \>  \>  **dispositivos'.** 
 
@@ -155,7 +155,7 @@ Antes de empezar con Removable Storage Access Control, debe confirmar su [Micr
 
    - El equipo de destino debe poder tener acceso al recurso compartido de red para tener la directiva. Sin embargo, una vez que se lee la directiva, la conexión de recurso compartido de red ya no es necesaria, incluso después del reinicio de la máquina.
 
-    :::image type="content" source="images/device-control.png" alt-text="Pantalla Control de dispositivos":::
+    :::image type="content" source="images/device-control.png" alt-text="Pantalla Control de dispositivos.":::
 
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>Implementación y administración de directivas a través de Intune OMA-URI
 
@@ -188,7 +188,7 @@ Microsoft Endpoint Manager centro de administración ( ) Perfiles de configuraci
 
     - Tipo de datos: String (archivo XML)
 
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="El archivo xml para el tipo de datos STRING":::
+      :::image type="content" source="images/xml-data-type-string.png" alt-text="Archivo xml para el tipo de datos STRING.":::
 
 2. Para cada directiva, también cree un OMA-URI:
     - OMA-URI: 
@@ -232,9 +232,9 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
-:::image type="content" source="images/block-removable-storage.png" alt-text="La pantalla que muestra el bloqueo del almacenamiento extraíble":::
+:::image type="content" source="images/block-removable-storage.png" alt-text="Pantalla que muestra el bloqueo del almacenamiento extraíble.":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="what-is-the-removable-storage-media-limitation-for-the-maximum-number-of-usbs"></a>¿Cuál es la limitación de medios de almacenamiento extraíbles para el número máximo de USB?
 

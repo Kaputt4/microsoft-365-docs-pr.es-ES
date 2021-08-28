@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo administrar la visibilidad del tema en Temas Microsoft Viva.
-ms.openlocfilehash: 6ac247ba758929f367c99b963a19b0619ab588c077687c8027c2807d98732211
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b1ea14ccd1872825cd9ce7edb35ddc8c0a7f176e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864123"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561067"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Administrar la visibilidad del tema en Temas Microsoft Viva
 
@@ -26,11 +26,11 @@ Puede administrar quién puede ver los aspectos destacados del tema, las tarjeta
 1. En la Centro de administración de Microsoft 365, haga clic **en Configuración** y, a continuación, en Configuración de **la organización**.
 2. En la **pestaña Servicios,** haga clic en **Experiencias del tema**.
 
-    ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) 
+    ![Conectar personas al conocimiento.](../media/admin-org-knowledge-options-completed.png) 
 
 3. Seleccione la **pestaña Visibilidad del** tema. Vea las secciones siguientes para obtener información sobre cada configuración.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-visibility.png) 
+    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-visibility.png) 
 
 ##  <a name="change-who-can-see-topics-in-your-organization"></a>Cambiar quién puede ver los temas de su organización
 
@@ -42,14 +42,14 @@ Puede cambiar los usuarios que pueden ver temas de su organización.
     - **Solo personas o grupos de seguridad seleccionados**
     - **Nadie**
 
-    ![Quién puede ver temas](../media/k-manage-who-can-see-topics.png) 
+    ![Quién puede ver temas.](../media/k-manage-who-can-see-topics.png) 
 
-3. Seleccione **Guardar**.  
+3. Haga clic en **Guardar**.  
  
 > [!Note] 
 > Aunque esta configuración le permite seleccionar cualquier usuario de su organización, solo los usuarios que tengan licencias de Experiencias de tema asignadas podrán ver temas.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar la detección de temas en Temas Microsoft Viva](topic-experiences-discovery.md)
 

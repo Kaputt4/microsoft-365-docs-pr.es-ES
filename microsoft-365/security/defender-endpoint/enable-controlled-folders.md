@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 37a95fedede173578f23b48286e846f95a495479
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 2b6d31dd2c8498820c9ffcdbd2579de4d645e0d0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603098"
+ms.locfileid: "58560719"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
@@ -69,26 +69,26 @@ Para obtener más información sobre cómo deshabilitar la combinación de lista
 
 1. Inicie sesión en el [Endpoint Manager](https://endpoint.microsoft.com) y abra **Endpoint Security**.
 
-2. Ve a **Directiva de reducción de superficie de** \> **ataque**.
+2. Ve a **Directiva de reducción de superficie de**  >  **ataque**.
 
-3. Selecciona **Plataforma,** elige **Windows 10 y posteriores** y selecciona el perfil Reglas de **reducción** de superficie de ataque \> **Crear**.
+3. Selecciona **Plataforma,** elige **Windows 10 y posteriores** y selecciona el perfil Reglas de **reducción** de superficie de ataque  >  **Crear**.
 
-4. Asigne un nombre a la directiva y agregue una descripción. Seleccione **Siguiente**.
+4.  Asigne un nombre a la directiva y agregue una descripción. Seleccione **Siguiente**.
 
-5. Desplácese hacia abajo hasta la parte inferior, seleccione la lista desplegable **Habilitar** protección de carpetas y elija **Habilitar**.
+5.  Desplácese hacia abajo hasta la parte inferior, seleccione la lista desplegable **Habilitar** protección de carpetas y elija **Habilitar**.
 
-6. Seleccione **Lista de carpetas adicionales que deben protegerse** y agregue las carpetas que deben protegerse.
+6.  Seleccione **Lista de carpetas adicionales que deben protegerse** y agregue las carpetas que deben protegerse.
 
-7. Selecciona **Lista de aplicaciones que tienen acceso a carpetas** protegidas y agrega las aplicaciones que tienen acceso a carpetas protegidas.
+7.  Selecciona **Lista de aplicaciones que tienen acceso a carpetas** protegidas y agrega las aplicaciones que tienen acceso a carpetas protegidas.
 
-8. Selecciona **Excluir archivos y rutas de acceso de** las reglas de reducción de superficie de ataque y agrega los archivos y rutas de acceso que deben excluirse de las reglas de reducción de superficie de ataque.
+8.  Selecciona **Excluir archivos y rutas de acceso de** las reglas de reducción de superficie de ataque y agrega los archivos y rutas de acceso que deben excluirse de las reglas de reducción de superficie de ataque.
 
-9. Seleccione el perfil Asignaciones , asignar a **Todos los usuarios & Todos** los **dispositivos** y seleccione **Guardar**.
+9.  Seleccione el perfil Asignaciones , asignar a **Todos los usuarios & Todos** los **dispositivos** y seleccione **Guardar**.
 
-10. Seleccione **Siguiente** para guardar cada hoja abierta y, a continuación, **Crear**.
+10.  Seleccione **Siguiente** para guardar cada hoja abierta y, a continuación, **Crear**.
 
-    > [!NOTE]
-    > Los caracteres comodín se admiten para aplicaciones, pero no para carpetas. Las subcarpetas no están protegidas. Las aplicaciones permitidas seguirán desencadenando eventos hasta que se reinicien.
+   > [!NOTE]
+   > Los caracteres comodín se admiten para aplicaciones, pero no para carpetas. Las subcarpetas no están protegidas. Las aplicaciones permitidas seguirán desencadenando eventos hasta que se reinicien.
 
 ## <a name="mobile-device-management-mdm"></a>Administración de dispositivos móviles (MDM)
 
@@ -96,14 +96,13 @@ Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Con
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. En Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance** \> **Endpoint Protection** Windows Defender Exploit \> **Guard**.
+1. En Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance**  >  **Endpoint Protection** Windows Defender Exploit  >  **Guard**.
 
-2. Seleccione **Inicio Crear** directiva de protección contra \> **vulnerabilidades** de seguridad .
+2. Seleccione **Inicio Crear** directiva de protección contra  >  **vulnerabilidades** de seguridad .
 
 3. Escriba un nombre y una descripción, seleccione Acceso controlado a **carpetas** y seleccione **Siguiente**.
 
 4. Elige si bloquea o audita los cambios, permite otras aplicaciones o agrega otras carpetas y selecciona **Siguiente**.
-
    > [!NOTE]
    > Wilcard es compatible con aplicaciones, pero no para carpetas. Las subcarpetas no están protegidas. Las aplicaciones permitidas seguirán desencadenando eventos hasta que se reinicien.
 
@@ -124,7 +123,7 @@ Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Con
    - **Deshabilitar (valor predeterminado):** la característica acceso controlado a carpetas no funcionará. Todas las aplicaciones pueden realizar cambios en los archivos de carpetas protegidas.
    - **Modo auditoría:** se permitirán cambios si una aplicación malintencionada o sospechosa intenta realizar un cambio en un archivo de una carpeta protegida. Sin embargo, se registrará en el registro Windows eventos donde puede evaluar el impacto en su organización.
    - **Bloquear solo modificación de disco:** los intentos de las aplicaciones que no son de confianza de escribir en los sectores de disco se iniciarán en Windows registro de eventos. Estos registros se pueden encontrar en **Registros de aplicaciones** y servicios de Microsoft Windows Windows Defender Operational ID \> \> \> \> \> 1123.
-   - **Solo modificación** de disco de auditoría: solo se registrarán los intentos de  escritura en los sectores de disco protegido en el registro de eventos de Windows (en Registros de aplicaciones y servicios Microsoft Windows Windows Defender Identificador operativo \>  \>  \>  \>  \> **1124**). No se registrarán los intentos de modificar o eliminar archivos en carpetas protegidas.
+   - **Solo modificación** de disco de auditoría: solo se registrarán los intentos de escritura en los sectores de disco protegido en el registro de eventos de Windows (en Registros de aplicaciones y servicios Microsoft Windows Windows Defender Identificador operativo  >   \>  \>  \>  \> **1124**). No se registrarán los intentos de modificar o eliminar archivos en carpetas protegidas.
 
       ![Captura de pantalla de la opción de directiva de grupo Habilitada y modo auditoría seleccionada en la lista desplegable.](../../media/cfa-gp-enable.png)
 
@@ -145,7 +144,7 @@ Puede habilitar la característica en modo auditoría especificando en `AuditMod
 
 Se `Disabled` usa para desactivar la característica.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)

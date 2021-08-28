@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo ilimitado para Exchange Online buzones de correo.
-ms.openlocfilehash: 3473145231a70942311b5855036220fa247f0716
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: be6fc33879a43d01dfde1312d7144994ff18fd18
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372681"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561187"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Información general sobre el archivado ilimitado
 
@@ -41,7 +41,7 @@ Como se explicó anteriormente, se crea espacio de almacenamiento de buzones de 
 
 Este es un resumen rápido del proceso.
 
-![Información general sobre el proceso de archivado de expansión automática](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
+![Información general sobre el proceso de archivado de expansión automática.](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
 1. El archivado está habilitado para un buzón de usuario o un buzón compartido. Se crea un buzón de archivo con 100 GB de espacio de almacenamiento y la cuota de advertencia para el buzón de archivo se establece en 90 GB.
 
@@ -67,11 +67,11 @@ Las capturas de pantalla siguientes muestran una lista de carpetas antes y despu
 
  **Antes de agregar almacenamiento adicional**
 
-![Lista de carpetas del buzón de archivo antes de aprovisionar el archivo de expansión automática](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
+![Lista de carpetas del buzón de archivo antes de aprovisionar el archivo de expansión automática.](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
 
  **Después de agregar almacenamiento adicional**
 
-![Lista de carpetas del buzón de archivo después de aprovisionar el archivo de expansión automática](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
+![Lista de carpetas del buzón de archivo después de aprovisionar el archivo de expansión automática.](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
 > Como se describió anteriormente, Microsoft 365 los elementos a subcarpetas (y los nombra mediante la convención de nomenclatura descrita anteriormente) para ayudar a distribuir contenido a un archivo auxiliar. Pero es posible que no siempre se muevan elementos a subcarpetas. A veces, se puede mover una carpeta completa a un archivo auxiliar. En este caso, la carpeta conservará su nombre original.  No se mostrará en la lista de carpetas de Outlook que la carpeta se movió a un archivo auxiliar.

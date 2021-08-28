@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 50898cf6062719b81b75de07ffab6b9a8c58cd8759d92c7cccc330a1389feb5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9a44e4fcaff4ff774e0884fb78ec7399049d6d11
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828179"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563503"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -85,7 +85,7 @@ Cada sector además tiene su propio conjunto de normas especializadas. En lugar 
 - **Protección confidencial:** algunos clientes tienen un subconjunto de datos que deben protegerse en niveles superiores o pueden requerir que todos los datos estén protegidos en un nivel superior. Puede aplicar una mayor protección a todos o conjuntos de datos específicos en su Microsoft 365 de datos. Se recomienda proteger las identidades y los dispositivos que acceden a información confidencial con niveles de seguridad comparables.
 - **Altamente regulado:** algunas organizaciones pueden tener una pequeña cantidad de datos altamente clasificados, constituyen secretos comerciales o son datos regulados. Microsoft proporciona capacidades para ayudar a las organizaciones a cumplir estos requisitos, incluida protección adicional para identidades y dispositivos.
 
-![Cono de seguridad: todos los > algunos clientes > clientes específicos. Aplicación general a una aplicación específica](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+![Cono de seguridad: todos los > algunos clientes > clientes específicos. Aplicación general a una aplicación específica.](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
 En esta guía se muestra cómo implementar la protección de identidades y dispositivos para cada uno de estos niveles de protección. Use esta guía como punto de partida para su organización y ajuste las directivas para satisfacer los requisitos específicos de su organización.
 
@@ -93,7 +93,7 @@ Es importante usar niveles coherentes de protección en los datos, identidades y
 
 El **modelo identity and device protection for Microsoft 365** architecture muestra qué capacidades son comparables.
 
-[![Imagen digital de identidad y protección de dispositivos para Microsoft 365 póster](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [Ver como un PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Descargar como un Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![Imagen digital de identidad y protección del dispositivo para Microsoft 365 póster.](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [Ver como un PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Descargar como un Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 Además, vea la solución Implementar protección de [información para normativas](../../solutions/information-protection-deploy.md) de privacidad de datos para proteger la información almacenada en Microsoft 365.
 
@@ -131,7 +131,7 @@ Azure AD proporciona un conjunto completo de funcionalidades de administración 
 
 Estos son los componentes del acceso a dispositivos y identidades, incluidos los objetos, la configuración y los subservicios de Intune y Azure AD.
 
-![Componentes de identidad y acceso a dispositivos](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+![Componentes de identidad y acceso a dispositivos.](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
