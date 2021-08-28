@@ -21,12 +21,12 @@ ms.custom:
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en Microsoft Defender para Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 19e41fbca984ed74dc204eb665fdee481738a1a02e078cd8c0aa0f7f8bd3180e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2e6a237295a979797cd8884d07d1afe8e284cace
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56885464"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589295"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
@@ -58,7 +58,7 @@ Las capacidades de investigación y respuesta de amenazas se incluyen en el port
 
 Usa [el Explorador (y](threat-explorer.md) detecciones en tiempo real) para analizar amenazas, ver el volumen de ataques a lo largo del tiempo y analizar datos por familias de amenazas, infraestructura de atacantes y mucho más. Explorer (también conocido como Explorador de amenazas) es el punto de partida del flujo de trabajo de investigación de cualquier analista de seguridad.
 
-![Explorador de amenazas](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+![Explorador de amenazas.](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
 
 Para ver y usar este informe, en el portal de Microsoft 365 Defender, vaya a **Email & collaboration**  >  **Explorer**.
 
@@ -66,11 +66,11 @@ Para ver y usar este informe, en el portal de Microsoft 365 Defender, vaya a **E
 
 Use la lista Incidentes (esto también se denomina Investigaciones) para ver una lista de incidentes de seguridad piloto. Los incidentes se usan para realizar un seguimiento de amenazas, como mensajes de correo electrónico sospechosos, y para llevar a cabo una investigación y corrección adicionales.
 
-![Lista de incidentes de amenazas actuales en Office 365](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+![Lista de incidentes de amenazas actuales en Office 365.](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
 Para ver la lista de incidentes actuales de su organización, en el portal de Microsoft 365 Defender, vaya a **Incidentes**&  >  **alertas incidentes**.
 
-![En el Centro de seguridad & cumplimiento, elija Revisión de administración de \> amenazas](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+![En el Centro de & cumplimiento, elija Revisión de administración de \> amenazas.](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
 ### <a name="attack-simulation-training"></a>Aprendizaje de simulación de ataque
 
@@ -86,7 +86,7 @@ Use las capacidades de investigación y respuesta automatizadas (AIR) para ahorr
 
 Como parte de la oferta del Plan 2 de Microsoft Defender para Office 365, los analistas de seguridad pueden revisar detalles sobre una amenaza conocida. Esto es útil para determinar si hay medidas o pasos preventivos adicionales que se pueden tomar para mantener a los usuarios seguros.
 
-![Tendencias de seguridad que muestran información sobre amenazas recientes](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png)
+![Tendencias de seguridad que muestran información sobre amenazas recientes.](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png)
 
 ## <a name="how-do-we-get-these-capabilities"></a>¿Cómo se obtienen estas capacidades?
 
@@ -100,7 +100,7 @@ Microsoft Defender para Office 365 usa control de acceso basado en roles. Los pe
 > Aunque algunos roles, como el administrador de seguridad, se pueden asignar en el portal de Microsoft 365 Defender, considere la posibilidad de usar el Centro de administración de Microsoft 365 o Azure Active Directory en su lugar. Para obtener información sobre roles, grupos de roles y permisos, vea los siguientes recursos:
 >
 > - [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
-> - [Permisos de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+> - [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)
 
 <br>
 
@@ -115,7 +115,7 @@ Microsoft Defender para Office 365 usa control de acceso basado en roles. Los pe
 |Integrar Microsoft Defender para Office 365 Plan 2 con Microsoft Defender para endpoint <p> Integrar Microsoft Defender para Office 365 Plan 2 con un servidor SIEM|El rol **Administrador global o** administrador de seguridad asignado Azure Active Directory ( ) o el Centro de administración de Microsoft 365 (  <https://portal.azure.com> <https://admin.microsoft.com> ). <p> --- **más** --- <p> Un rol adecuado asignado en aplicaciones adicionales [(como Centro de seguridad de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor SIEM).|
 |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre los rastreadores de amenazas: nuevos y notables](threat-trackers.md)
 - [Buscar e investigar el correo electrónico malintencionado que se entregó (Office 365 de amenazas y respuesta)](investigate-malicious-email-that-was-delivered.md)

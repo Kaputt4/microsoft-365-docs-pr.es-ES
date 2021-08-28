@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a la visibilidad y la información.
-ms.openlocfilehash: 63b55b6c943d1ccd274477aff9b3327f58aade5da9e6fd4b89db2c73c21d809c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a986bec512c665372ef2e98155533a49500c5d8
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887070"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589405"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>Introducción a la visibilidad y la información
 
@@ -38,16 +38,16 @@ El panel contiene un resumen de los componentes del ecosistema de aplicaciones M
 - **Resumen de usuarios**: rel recuento de categorías de alertas y aplicaciones clave.
 - **Principales alertas**: las diez alertas activas más recientes del espacio empresarial
 - **Acceso a datos y recursos**: pase el mouse por cada columna de mes en el gráfico para ver el valor correspondiente.
-    - **Acceso a datos durante los últimos cuatro meses**: rastrea la totalidad de datos a los que acceden las aplicaciones del espacio empresarial a través de la API de Graph durante los últimos cuatro meses naturales. Actualmente solo incluye el uso de carga y descarga de archivos y el del correo.
-    - **Acceso a los datos de los recursos principales durante los últimos cuatro meses**: uso de datos de los últimos cuatro meses naturales desglosados por tipo de recurso. Actualmente solo incluye el uso de carga y descarga de archivos y el del correo.
+  - **Acceso a datos durante los últimos cuatro meses**: rastrea la totalidad de datos a los que acceden las aplicaciones del espacio empresarial a través de la API de Graph durante los últimos cuatro meses naturales. Actualmente solo incluye el uso de carga y descarga de archivos y el del correo.
+  - **Acceso a los datos de los recursos principales durante los últimos cuatro meses**: uso de datos de los últimos cuatro meses naturales desglosados por tipo de recurso. Actualmente solo incluye el uso de carga y descarga de archivos y el del correo.
 - **Mejore la protección y la gobernanza de sus aplicaciones**: acciones recomendadas tales como la creación de una directiva de permisos o de uso de aplicaciones.
 - **Principales aplicaciones por categorías**: las aplicaciones principales ordenadas por estas categorías:
   
   - **Todas las categorías**: se ordena entre todas las categorías disponibles.
   - **Privilegios elevados**: privilegios elevados es una categoría determinada internamente basada en el aprendizaje automático y las señales de la plataforma.
   - **Privilegios excesivos**: cuando la gobernanza de aplicaciones recibe datos de telemetría que indican que no se ha usado un permiso concedido a una aplicación en los últimos 90 días, esa aplicación tiene privilegios excesivos. La gobernanza de aplicaciones debe funcionar durante al menos 90 días para determinar si alguna aplicación tiene privilegios excesivos.  
-  - **Sin verificar**: las aplicaciones que no han recibido [certificación de editorial](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) se consideran sin verificar.
-  - **Solo aplicaciones**: [los permisos de aplicaciones](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types) se utilizan por aplicaciones que pueden ejecutarse sin un usuario que haya iniciado sesión. Las aplicaciones con permisos para acceder a los datos en el usuario son potencialmente de mayor riesgo.
+  - **Sin verificar**: las aplicaciones que no han recibido [certificación de editorial](/azure/active-directory/develop/publisher-verification-overview) se consideran sin verificar.
+  - **Solo aplicaciones**: [los permisos de aplicaciones](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) se utilizan por aplicaciones que pueden ejecutarse sin un usuario que haya iniciado sesión. Las aplicaciones con permisos para acceder a los datos en el usuario son potencialmente de mayor riesgo.
   - **Aplicaciones nuevas**: nuevas aplicaciones de Microsoft 365 que se han registrado en los últimos siete días.  
 
 ## <a name="next-step"></a>Paso siguiente

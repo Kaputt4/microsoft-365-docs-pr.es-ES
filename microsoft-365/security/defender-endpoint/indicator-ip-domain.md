@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 612c1629869a5cc777c0d00ba8169fe1707b78ed
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 0b28d4088b8475794989d777bf58ccc7550b3f7c
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355837"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683557"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y URL/dominios
 
@@ -51,8 +51,8 @@ Puedes hacerlo a través de la página de configuración o por grupos de máquin
 Es importante comprender los siguientes requisitos previos antes de crear indicadores para IPS, direcciones URL o dominios:
 
 - La dirección URL/IP permiten y bloquean la protección de red del componente Defender for Endpoint para habilitarse en modo de bloqueo. Para obtener más información sobre la protección de red y las instrucciones de configuración, vea [Enable network protection](enable-network-protection.md).
-- La versión del cliente Antimalware debe ser 4.18.1906.x o posterior. 
-- Compatible con máquinas en Windows 10, versión 1709 o posterior. 
+- La versión del cliente Antimalware debe ser 4.18.1906.x o posterior.
+- Compatible con máquinas en Windows 10, versión 1709 o posterior.
 - Asegúrese de **que los indicadores de red personalizados** están **habilitados Microsoft 365 Defender > Configuración > endpoints > características avanzadas**. Para obtener más información, vea [Características avanzadas](advanced-features.md).
 - Para obtener compatibilidad con indicadores en iOS, vea [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
@@ -72,16 +72,17 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 >
 > Puede haber hasta 2 horas de latencia (normalmente menos) entre el momento en que se realiza la acción y la dirección URL e IP bloqueadas.
 
-
 Al usar el modo de advertencia, puede configurar los siguientes controles:
 
-**Capacidad de omisión**
+**Capacidad de omisión**:
+
 - Botón Permitir en edge
 - Botón Permitir en notificaciones del sistema (exploradores que no son de Microsoft)
 - Parámetro de duración de omisión en el indicador
-- Omitir la aplicación en exploradores de Microsoft y no microsoft 
+- Omitir la aplicación en exploradores de Microsoft y no microsoft
 
-**Dirección URL de redireccionamiento** 
+**Dirección URL de redireccionamiento:**
+
 - Parámetro de dirección URL de redireccionamiento en el indicador
 - Dirección URL de redireccionamiento en el perímetro
 - Dirección URL de redireccionamiento en notificaciones del sistema (exploradores que no son de Microsoft)
@@ -90,7 +91,7 @@ Para obtener más información, vea [Govern apps discovered by Microsoft Defende
 
 ## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Crear un indicador de direcciones IP, direcciones URL o dominios desde la página de configuración
 
-1. En el panel de navegación, **seleccione Configuración**  >  **indicadores** de puntos de  >  **conexión** (en **Reglas**).
+1. En el panel de navegación, **seleccione Configuración** \> **indicadores** de puntos de \> **conexión** (en **Reglas**).
 
 2. Seleccione la **pestaña Direcciones IP o DIRECCIONES URL/Dominios.**
 

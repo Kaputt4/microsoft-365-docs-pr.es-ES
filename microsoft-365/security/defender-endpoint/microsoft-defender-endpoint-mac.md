@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 81c64c7a73a7d298c4468f5c7735ee3e16cf55ac630e502364170b71a1b32a5e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7f884fa55d0f3514aae36761642e2589d1ea51e
+ms.sourcegitcommit: fce9a89b8280f41779835b18dceb59fa17384acf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894220"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58666771"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
 
@@ -87,7 +87,7 @@ Se admiten las tres versiones principales más recientes de macOS.
 
 No se admiten versiones beta de macOS.
 
-No se admiten dispositivos macOS con procesadores M1.
+Actualmente, la compatibilidad con dispositivos macOS con procesadores basados en chip M1 está en versión preliminar.
 
 Después de habilitar el servicio, es posible que deba configurar la red o el firewall para permitir conexiones salientes entre él y los puntos de conexión.
 
@@ -109,9 +109,9 @@ Microsoft Defender para Endpoint en Mac requiere una de las siguientes ofertas d
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Debe asegurarse de que no hay reglas de filtrado de red o firewall que denieguen el acceso *a* estas direcciones URL, o puede que necesite crear una regla de permitir específicamente para ellas.
 
-|Hoja de cálculo de la lista de dominios|Description|
+|Hoja de cálculo de la lista de dominios|Descripción|
 |---|---|
-|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> Descargue la hoja de cálculo aquí: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
+|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> Descargue la hoja de cálculo aquí: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
 
 Microsoft Defender para endpoint puede detectar un servidor proxy mediante los siguientes métodos de detección:
 

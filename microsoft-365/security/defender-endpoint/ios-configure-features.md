@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9a5f4eda743e20f94da576c9292a54f091d575789b148df727b6fb384b6f5a85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3916217467892a46fd8a2534a7852b928d2b5215
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898231"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684093"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para endpoint en características de iOS
 
@@ -58,7 +58,7 @@ Aunque está habilitado de forma predeterminada, puede haber algunos casos que r
 1. Desactiva la **Conectar a petición** para deshabilitar VPN.
 
     > [!div class="mx-imgBorder"]
-    > ![Configuración de VPN conectarse a petición](images/ios-vpn-config.png)
+    > ![Los config de VPN se conectan a petición.](images/ios-vpn-config.png)
 
 > [!NOTE]
 > La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar Protección web, abra la aplicación Microsoft Defender para endpoint en el dispositivo y haga clic o pulse **Iniciar VPN**.
@@ -73,11 +73,11 @@ Microsoft Defender para endpoint se puede configurar para enviar señales de ame
 
 Los pasos para configurar directivas de protección de aplicaciones con Microsoft Defender para endpoint son los siguientes:
 
-1. Configure la conexión desde el espacio empresarial Microsoft Endpoint Manager a Microsoft Defender para Endpoint. En el Centro de administración de [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Conectores de administración de inquilinos y tokens de Microsoft Defender para Endpoint (en Plataforma cruzada) o Endpoint Security Microsoft Defender para Endpoint  >    >     >   (en Configuración) y active los alternancias en Directiva de protección de **aplicaciones Configuración para iOS**.
+1. Configure la conexión desde el espacio empresarial Microsoft Endpoint Manager a Microsoft Defender para Endpoint. En el Centro de administración  de [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Conectores de administración de inquilinos y tokens de Microsoft Defender para Endpoint (en Plataforma cruzada) o Endpoint Security Microsoft Defender para Endpoint \>  \>   \>  (en Configuración) y active los alternancias en Directiva de protección de **aplicaciones Configuración para iOS**.
 1. Seleccione Guardar. Debería ver que **el estado de** conexión ahora está establecido en **Habilitado**.
-1. Crear directiva de protección de aplicaciones: una vez completada la configuración del conector de Microsoft Defender para puntos de conexión, vaya a **Directivas** de protección de aplicaciones  >   (en Directiva) para crear una nueva directiva o actualizar una existente.
+1. Crear directiva de protección de aplicaciones: una vez completada la configuración del conector de Microsoft Defender para puntos de conexión, vaya a **Directivas** de protección de aplicaciones \>  (en Directiva) para crear una nueva directiva o actualizar una existente.
 1. Seleccione la plataforma, **Aplicaciones, Protección de datos, Configuración** de requisitos de Acceso que su organización requiere para la directiva.
-1. En **Condiciones del** dispositivo de inicio  >  **condicional,** encontrarás la configuración Nivel máximo de amenaza del dispositivo **permitido.** Esto tendrá que configurarse en Low, Medium, High o Secured. Las acciones disponibles serán Bloquear acceso **o** **Borrar datos**. Es posible que vea un cuadro de diálogo informativo para asegurarse de que el conector está configurado antes de que esta configuración suba a efecto. Si el conector ya está configurado, puede omitir este cuadro de diálogo.
+1. En **Condiciones del** dispositivo de inicio \> **condicional,** encontrarás la configuración Nivel máximo de amenaza del dispositivo **permitido.** Esto tendrá que configurarse en Low, Medium, High o Secured. Las acciones disponibles serán Bloquear acceso **o** **Borrar datos**. Es posible que vea un cuadro de diálogo informativo para asegurarse de que el conector está configurado antes de que esta configuración suba a efecto. Si el conector ya está configurado, puede omitir este cuadro de diálogo.
 1. Termina con Asignaciones y guarda la directiva.
 
 Para obtener más información sobre mam o directiva de protección de aplicaciones, consulta configuración de la directiva de protección de aplicaciones [de iOS](/mem/intune/apps/app-protection-policy-settings-ios).
@@ -100,18 +100,18 @@ Siga los pasos siguientes para crear una directiva de cumplimiento contra dispos
 1. En [Microsoft Endpoint Manager de administración,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a **Directivas de** cumplimiento de  ->  **dispositivos** Crear  ->  **directiva**. Seleccione "iOS/iPadOS" como plataforma y haga clic **en Crear**.
 
     > [!div class="mx-imgBorder"]
-    > ![Crear directiva](images/ios-jb-policy.png)
+    > ![Crear directiva.](images/ios-jb-policy.png)
 
 2. Especifique un nombre de la directiva, por ejemplo, "Compliance Policy for Jailbreak".
 3. En la página Configuración de cumplimiento, haga clic para expandir **la sección Estado del** dispositivo y haga clic en **Bloquear** para el **campo Dispositivos con jailbreak.**
 
     > [!div class="mx-imgBorder"]
-    > ![Directiva Configuración](images/ios-jb-settings.png)
+    > ![Directiva Configuración.](images/ios-jb-settings.png)
 
 4. En la **sección Acción por** incumplimiento, seleccione las acciones según sus requisitos y seleccione **Siguiente**.
 
     > [!div class="mx-imgBorder"]
-    > ![Acciones de directiva](images/ios-jb-actions.png)
+    > ![Acciones de directiva.](images/ios-jb-actions.png)
 
 5. En la **sección Asignaciones,** seleccione los grupos de usuarios que desea incluir para esta directiva y, a continuación, **seleccione Siguiente**.
 6. En la **sección Review+Create,** compruebe que toda la información especificada es correcta y, a continuación, **seleccione Crear**.

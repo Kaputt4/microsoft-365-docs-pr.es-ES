@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 24659a1e928143c79b3ab7324114d5c8b0fa1f43
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: aeafcec8c3ee3e557ac8ac429530a35cd8f7561e
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550159"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683581"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -74,14 +74,20 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     ```bash
     sudo yum install yum-utils
     ```
+
 - Tenga en cuenta la distribución y la versión e identifique la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/config/rhel/` .
 
-    Use la siguiente tabla para ayudarle a localizar el paquete: 
+    Use la siguiente tabla para ayudarle a localizar el paquete:
 
-    |     Distro & versión    |     Paquete    |
+    <br>
+
+    ****
+
+    |Distro & versión|Paquete|
     |---|---|
-    |     Para RHEL 8.0-8.5    |     https://packages.microsoft.com/config/rhel/8/prod/    |
-    |     Para RHEL 7.2-7.9    |     https://packages.microsoft.com/config/rhel/7/prod/    |
+    |Para RHEL 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod/>|
+    |Para RHEL 7.2-7.9|<https://packages.microsoft.com/config/rhel/7/prod/>|
+    |
 
     En los siguientes comandos, reemplace *[versión]* y *[canal]* por la información que haya identificado:
 
@@ -440,6 +446,6 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 Consulta [Desinstalar para](linux-resources.md#uninstall) obtener más información sobre cómo quitar Defender for Endpoint en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Investigar problemas de estado del agente](health-status.md)

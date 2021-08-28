@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: a5d050bfe61af9754b7cb1dd45c46a419314f5220a36630c8b1a528d694dc9c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ca0c033a92f7607db2b1ad6e00f13cd33ad9c8f9
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818712"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589551"
 ---
 # <a name="get-kb-collection-api"></a>Obtener API de colección KB
 
@@ -36,10 +36,10 @@ ms.locfileid: "53818712"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Recupera una colección de grupos de dispositivos RBAC.
 
 ## <a name="permissions"></a>Permisos
+
 El usuario necesita permisos de lectura.
 
 ## <a name="http-request"></a>Solicitud HTTP
@@ -50,7 +50,7 @@ GET /testwdatppreview/machinegroups
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-Encabezado | Valor 
+Encabezado|Valor
 :---|:---
 Authorization | Portador {token}. **Necesario**.
 Tipo de contenido | application/json
@@ -77,9 +77,10 @@ Content-type: application/json
 ### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
-El identificador de campo contiene el identificador de **grupo de** dispositivos y es igual al **campo rbacGroupId** en la información de dispositivos. El **campo desagrupado** solo se aplica a un grupo para todos los dispositivos que no se han asignado a ningún grupo. Este grupo, como siempre, tiene el nombre "UnassignedGroup".
+El identificador de campo contiene el identificador de **grupo de** dispositivos y es igual al **campo rbacGroupId** en la información de dispositivos.
+El **campo desagrupado** solo se aplica a un grupo para todos los dispositivos que no se han asignado a ningún grupo. Este grupo, como siempre, tiene el nombre "UnassignedGroup".
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {

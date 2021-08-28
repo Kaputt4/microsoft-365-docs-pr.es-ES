@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 28eb524645ecbc3867a342bea1fa34a717a3dde5
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 68583eeb7daaf755f3e095ef80e0a221f54f0766
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349805"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589373"
 ---
 # <a name="list-machineactions-api"></a>Enumerar API MachineActions
 
@@ -43,15 +43,17 @@ Recupera una colección de [acciones de máquina](machineaction.md).
 Admite [consultas de OData V4](https://www.odata.org/documentation/).
 
 La consulta de OData `$filter` se admite en: `id` , , , , y `status` `machineId` `type` `requestor` `creationDateTimeUtc` propiedades.
-<br>```$stop``` con un valor máximo de 10 000
-<br>```$skip```
+
+`$stop` con un valor máximo de 10 000
+
+`$skip`
 
 Vea ejemplos en [consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>Limitaciones
 
 1. El tamaño máximo de página es 10.000.
-2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora. 
+2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
@@ -67,7 +69,7 @@ Delegado (cuenta profesional o educativa)|Machine.ReadWrite|'Leer y escribir inf
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
+> El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -79,7 +81,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

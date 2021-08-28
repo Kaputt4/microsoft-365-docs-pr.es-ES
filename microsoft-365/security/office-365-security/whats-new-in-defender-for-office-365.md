@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae01a929121488399ac3a016f0b33ae7b28ff96d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: eab119de2f4058d853a85c6ec5ba3a99056b595e
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533620"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684081"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -43,10 +43,6 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
 > [!TIP]
 > ¿Aún no tiene Microsoft Defender para Office 365? [Póngase en contacto con ventas para iniciar una versión de prueba.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
-## <a name="august-2021"></a>Agosto de 2021
-
-- [Revisión de administrador para los mensajes notificados:](admin-review-reported-message.md)los administradores ahora pueden enviar mensajes con plantilla de vuelta a los usuarios finales después de revisar los mensajes notificados. Esto se puede personalizar para su organización y también en función del veredicto del administrador. 
-=======
 ## <a name="september-2021"></a>Septiembre de 2021
 
 - [Directivas de cuarentena:](quarantine-policies.md)los administradores pueden configurar un control pormenorizado para el acceso de los destinatarios a los mensajes en cuarentena y personalizar las notificaciones de correo no deseado del usuario final.
@@ -167,7 +163,7 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
 
 ¿Sabía que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que cada plan incluye](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Microsoft 365 guía básica](https://www.microsoft.com/microsoft-365/roadmap)
 

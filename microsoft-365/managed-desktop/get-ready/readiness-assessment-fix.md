@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c153d664ca658c50789b7372de0bd20e3423199f5f82242f76470c375b3a530c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f3ccb47c2facffed0a259b4807f8155b4c87cb70
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869882"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684045"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -231,13 +231,9 @@ Puede solicitar al representante de la cuenta microsoft una consulta en Microsof
 
 Escritorio administrado de Microsoft requiere que Windows Hello para empresas esté habilitada.
 
-**No preparado**
-
-Windows Hello para empresas está deshabilitado. Para habilitarla, siga los pasos descritos en [Crear una directiva Windows Hello para empresas](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
-
 **Advertencia**
 
-Windows Hello para empresas no está configurado. Para habilitarla, siga los pasos descritos en [Crear una Windows Hello directiva para empresas](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
+Windows Hello para empresas está deshabilitado o no está configurado. Para habilitarla, siga los pasos descritos en [Crear una Windows Hello directiva para empresas](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
 
 
 ### <a name="windows-10-update-rings"></a>Windows 10 anillos de actualización

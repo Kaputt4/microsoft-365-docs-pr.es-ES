@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d4a7d53286f93b1d2cede9921061d237f65be3fba5750aee797c8ded56a45b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1983e023a0236ea1e0ad9ac82b8d089e120cd7d
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902840"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683939"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Información de privacidad: Microsoft Defender para endpoint en iOS
 
@@ -40,65 +40,50 @@ Defender para endpoint en iOS recopila información de los dispositivos iOS conf
 
 Para obtener más información sobre el almacenamiento de datos, vea [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
 
-
 Para obtener más información sobre las preguntas de privacidad más comunes sobre Microsoft Defender para endpoint en dispositivos móviles Android e iOS, consulta Microsoft Defender para endpoint y tu privacidad en dispositivos móviles Android e [iOS.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
 
-## <a name="required-data"></a>Datos necesarios 
+## <a name="required-data"></a>Datos necesarios
 
-Los datos requeridos constan de datos necesarios para que Defender for Endpoint en iOS funcione como se esperaba. Estos datos son esenciales para el funcionamiento del servicio y pueden incluir datos relacionados con el usuario final, la organización, el dispositivo y las aplicaciones. 
+Los datos requeridos constan de datos necesarios para que Defender for Endpoint en iOS funcione como se esperaba. Estos datos son esenciales para el funcionamiento del servicio y pueden incluir datos relacionados con el usuario final, la organización, el dispositivo y las aplicaciones.
 
-Esta es una lista de los tipos de datos que se recopilan: 
+Esta es una lista de los tipos de datos que se recopilan:
 
-### <a name="web-page-or-network-information"></a>Información de red o página web 
+### <a name="web-page-or-network-information"></a>Información de red o página web
 
-- Nombre de dominio y dirección IP del sitio web solo cuando se detecta una conexión malintencionada o una página web. 
+- Nombre de dominio y dirección IP del sitio web solo cuando se detecta una conexión malintencionada o una página web.
 
-### <a name="device-and-account-information"></a>Información de dispositivo y cuenta 
+### <a name="device-and-account-information"></a>Información de dispositivo y cuenta
 
-- Información del dispositivo, como fecha &, versión de iOS, información de CPU e identificador de dispositivo, donde el identificador de dispositivo es uno de los siguientes: 
+- Información del dispositivo, como fecha &, versión de iOS, información de CPU e identificador de dispositivo, donde el identificador de dispositivo es uno de los siguientes:
+  - Wi-Fi mac del adaptador
+  - Identificador único global (GUID) generado aleatoriamente
+- Información de inquilino, dispositivo y usuario
+  - Azure Active Directory de dispositivo (AD) y el id. de usuario de Azure: identifica de forma única el dispositivo, el usuario respectivamente en Azure Active Directory.
+  - Identificador de inquilino de Azure: GUID que identifica la organización dentro de Azure Active Directory.
+  - Id. de la organización de Microsoft Defender para extremo: identificador único asociado a la empresa a la que pertenece el dispositivo. Permite a Microsoft identificar si hay problemas que afectan a un conjunto selecto de empresas y al número de empresas afectadas.
+  - Nombre principal de usuario: identificador de correo electrónico del usuario.
 
-    - Wi-Fi mac del adaptador 
+### <a name="product-and-service-usage-data"></a>Datos de uso de productos y servicios
 
-    - Identificador único global (GUID) generado aleatoriamente 
+La siguiente información se recopila solo para la aplicación de Microsoft Defender para endpoint instalada en el dispositivo.
 
-- Información de inquilino, dispositivo y usuario 
+- Información del paquete de la aplicación, incluido el nombre, la versión y el estado de actualización de la aplicación.
+- Acciones realizadas en la aplicación.
+- Registros de informes de bloqueo generados por iOS.
+- Datos de uso de memoria.
 
-    - Azure Active Directory de dispositivo (AD) y el id. de usuario de Azure: identifica de forma única el dispositivo, el usuario respectivamente en Azure Active Directory. 
+## <a name="optional-data"></a>Datos opcionales
 
-    - Identificador de inquilino de Azure: GUID que identifica la organización dentro de Azure Active Directory. 
+Los datos opcionales incluyen datos de diagnóstico y datos de comentarios del cliente. Los datos de diagnóstico opcionales son datos adicionales que nos ayudan a realizar mejoras en el producto y proporcionan información mejorada que nos ayuda a detectar, diagnosticar y solucionar problemas. Estos datos solo tienen fines de diagnóstico y no son necesarios para el servicio en sí.
 
-    - Id. de la organización de Microsoft Defender para extremo: identificador único asociado a la empresa a la que pertenece el dispositivo. Permite a Microsoft identificar si hay problemas que afectan a un conjunto selecto de empresas y al número de empresas afectadas. 
+Los datos de diagnóstico opcionales incluyen:
 
-    - Nombre principal de usuario: identificador de correo electrónico del usuario. 
+- Uso de aplicaciones, CPU y red para Defender for Endpoint.
+- Características configuradas por el administrador para Defender for Endpoint.
 
-### <a name="product-and-service-usage-data"></a>Datos de uso de productos y servicios 
-
-La siguiente información se recopila solo para la aplicación de Microsoft Defender para endpoint instalada en el dispositivo. 
-
-- Información del paquete de la aplicación, incluido el nombre, la versión y el estado de actualización de la aplicación. 
-
-- Acciones realizadas en la aplicación. 
-
-- Registros de informes de bloqueo generados por iOS. 
-
-- Datos de uso de memoria. 
-
-## <a name="optional-data"></a>Datos opcionales 
-
-Los datos opcionales incluyen datos de diagnóstico y datos de comentarios del cliente. Los datos de diagnóstico opcionales son datos adicionales que nos ayudan a realizar mejoras en el producto y proporcionan información mejorada que nos ayuda a detectar, diagnosticar y solucionar problemas. Estos datos solo tienen fines de diagnóstico y no son necesarios para el servicio en sí. 
-
-Los datos de diagnóstico opcionales incluyen: 
-
-- Uso de aplicaciones, CPU y red para Defender for Endpoint. 
-
-- Características configuradas por el administrador para Defender for Endpoint. 
-
-Los datos de comentarios se recopilan a través de los comentarios desde la aplicación proporcionados por el usuario. 
+Los datos de comentarios se recopilan a través de los comentarios desde la aplicación proporcionados por el usuario.
 
 - La dirección de correo electrónico del usuario, si decide proporcionarla.
-
-- Tipo de comentarios (sonreir, fruncir, idea) y los comentarios enviados por el usuario. 
+- Tipo de comentarios (sonreir, fruncir, idea) y los comentarios enviados por el usuario.
 
 Para obtener más información, consulta [Más información sobre privacidad.](https://aka.ms/mdatpiosprivacystatement)
-
-

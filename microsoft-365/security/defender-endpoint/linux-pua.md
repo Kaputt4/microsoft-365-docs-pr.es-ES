@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 16a0222b1d72099cf1d6f9cba23f599ad722804fc1d0b04c9953e94aa3ab1d80
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8e3484d07263063c9fab04a056cd09ac9b5d67a5
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811205"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684057"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Detectar y bloquear aplicaciones potencialmente no deseadas con Microsoft Defender para Endpoint en Linux
 
@@ -55,8 +55,8 @@ La protección de PUA en Defender para Endpoint en Linux se puede configurar de 
 - **Auditoría:** los archivos PUA se notifican en los registros del producto, pero no en Microsoft 365 Defender. No se almacena ningún registro de la infección en el historial de amenazas y el producto no toma ninguna acción.
 - **Bloquear:** los archivos PUA se notifican en los registros del producto y en Microsoft 365 Defender. Un registro de la infección se almacena en el historial de amenazas y el producto toma medidas.
 
->[!WARNING]
->De forma predeterminada, la protección pua está configurada en **modo auditoría.**
+> [!WARNING]
+> De forma predeterminada, la protección pua está configurada en **modo auditoría.**
 
 Puede configurar cómo se controlan los archivos PUA desde la línea de comandos o desde la consola de administración.
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f70cba0d749238b9602f88b27d96aec87a5139b
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 98852db88f2b586d8e69a529a838e785dc22654c
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502848"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683997"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Enumerar vulnerabilidades por software
 
@@ -37,10 +37,9 @@ ms.locfileid: "58502848"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Recupera una lista de vulnerabilidades en el software instalado. 
+Recupera una lista de vulnerabilidades en el software instalado.
 
 ## <a name="permissions"></a>Permisos
 
@@ -69,7 +68,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok con una lista de vulnerabilidades expuestas por el software especificado. 
+Si se realiza correctamente, este método devuelve 200 Ok con una lista de vulnerabilidades expuestas por el software especificado.
 
 ## <a name="example"></a>Ejemplo
 
@@ -78,7 +77,7 @@ Si se realiza correctamente, este método devuelve 200 Ok con una lista de vulne
 Aquí tiene un ejemplo de la solicitud.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities 
+GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities
 ```
 
 ### <a name="response-example"></a>Ejemplo de respuesta

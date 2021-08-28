@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 445267eef56c50dfce4bb1349c8188b47c2bbc06
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 4bc5b5b1ec612bc8f14c6ac67a2c00ce75ac4516
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502944"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684069"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Obtener una actividad de corrección por id.
 
@@ -90,7 +90,7 @@ statusLastModifiedOn|DateTime|Fecha en la que se actualizó el campo de estado|2
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección|43
 title|Cadena|Título de esta actividad de corrección|Microsoft Silverlight
 type|Cadena|Tipo de corrección|Actualizar
-vendorId|String|Nombre de proveedor relacionado|Microsoft
+vendorId|Cadena|Nombre de proveedor relacionado|Microsoft
 
 ## <a name="example"></a>Ejemplo
 
@@ -103,43 +103,43 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 ### <a name="response-example"></a>Ejemplo de respuesta
 
 ```json
-{ 
-    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#RemediationTasks/$entity", 
-    "id": "03942ef5-aecb-4c6e-b555-d6a97013844c", 
-    "title": "Update Microsoft Silverlight", 
-    "createdOn": "2021-02-10T13:20:36.4718166Z", 
-    "requesterId": "65548a1d-efo0-4a7a-8d19-1b967b5c36f4", 
-    "requesterEmail": "user1@contoso.com", 
-    "status": "Active", 
-    "statusLastModifiedOn": "2021-02-10T13:20:36.4719698Z", 
-    "description": "Update Silverlight to a later version to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.  ", 
-    "relatedComponent": "Microsoft Silverlight", 
-    "targetDevices": 18511, 
-    "rbacGroupNames": [ 
-        "UnassignedGroup", 
-        "hhh" 
-    ], 
-    "fixedDevices": 2866, 
-    "requesterNotes": "test", 
-    "dueOn": "2021-02-11T00:00:00Z", 
-    "category": "Software", 
-    "productivityImpactRemediationType": null, 
-    "priority": "Medium", 
-    "completionMethod": null, 
-    "completerId": null, 
-    "completerEmail": null, 
-    "scid": null, 
-    "type": "Update", 
-    "productId": "microsoft-_-silverlight", 
-    "vendorId": "microsoft", 
-    "nameId": "silverlight", 
-    "recommendedVersion": null, 
-    "recommendedVendor": null, 
-    "recommendedProgram": null 
-} 
+{
+    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#RemediationTasks/$entity",
+    "id": "03942ef5-aecb-4c6e-b555-d6a97013844c",
+    "title": "Update Microsoft Silverlight",
+    "createdOn": "2021-02-10T13:20:36.4718166Z",
+    "requesterId": "65548a1d-efo0-4a7a-8d19-1b967b5c36f4",
+    "requesterEmail": "user1@contoso.com",
+    "status": "Active",
+    "statusLastModifiedOn": "2021-02-10T13:20:36.4719698Z",
+    "description": "Update Silverlight to a later version to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.",
+    "relatedComponent": "Microsoft Silverlight",
+    "targetDevices": 18511,
+    "rbacGroupNames": [
+        "UnassignedGroup",
+        "hhh"
+    ],
+    "fixedDevices": 2866,
+    "requesterNotes": "test",
+    "dueOn": "2021-02-11T00:00:00Z",
+    "category": "Software",
+    "productivityImpactRemediationType": null,
+    "priority": "Medium",
+    "completionMethod": null,
+    "completerId": null,
+    "completerEmail": null,
+    "scid": null,
+    "type": "Update",
+    "productId": "microsoft-_-silverlight",
+    "vendorId": "microsoft",
+    "nameId": "silverlight",
+    "recommendedVersion": null,
+    "recommendedVendor": null,
+    "recommendedProgram": null
+}
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
 - [Enumerar todas las actividades de corrección](get-remediation-all-activities.md)

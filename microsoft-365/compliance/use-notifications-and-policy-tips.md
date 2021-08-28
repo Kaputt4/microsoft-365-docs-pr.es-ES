@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
-ms.openlocfilehash: 0eb30101dc42ab25eef5625f2fa952cac8f8bda89e6c72a5f7f46186ac96f652
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5dba275d274ebc97ec934f6b43d8a913b80c8d84
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860030"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589439"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -33,21 +33,15 @@ Puede usar una directiva de prevención de pérdida de datos (DLP) para identifi
 
 ![La barra de mensajes muestra sugerencia de directiva en Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien está trabajando con contenido que entra en conflicto con una directiva DLP( por ejemplo, contenido como un libro de Excel en un sitio de OneDrive para la Empresa que contiene información de identificación personal (PII) y se comparte con un usuario externo.
-
-Puede usar notificaciones de correo electrónico y sugerencias de directivas para aumentar el conocimiento y ayudar a educar a los usuarios sobre las directivas de su organización. También puede dar a los usuarios la opción de invalidar la directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la directiva detecta un falso positivo.
-
 En el Centro de cumplimiento, al crear una directiva DLP, puede configurar las notificaciones de usuario para:
 
 - Envíe una notificación por correo electrónico a las personas que elija que describen el problema.
-> [!NOTE]
-> Los correos electrónicos de notificación se envían desprotegidos.
 
 - Mostrar una sugerencia de directiva para el contenido que entre en conflicto con la directiva DLP:
 
   - Para el correo Outlook en la Web y Outlook 2013 y versiones posteriores, la sugerencia de directiva aparece en la parte superior de un mensaje encima de los destinatarios mientras se está compuesto el mensaje.
 
-  - Para los documentos de OneDrive para la Empresa cuenta o SharePoint sitio en línea, la sugerencia de directiva se indica mediante un icono de advertencia que aparece en el elemento. Para ver más información, puede seleccionar  un elemento y, a continuación, elegir el icono del panel Información en la esquina superior derecha de la página para ![ abrir el panel de ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) detalles.
+  - Para los documentos de OneDrive para la Empresa cuenta o SharePoint sitio en línea, la sugerencia de directiva se indica mediante un icono de advertencia que aparece en el elemento. Para ver más información, puede seleccionar un elemento y, a continuación, elegir el icono **del** panel ![ Información.](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) en la esquina superior derecha de la página para abrir el panel de detalles.
 
   - Para los documentos Excel, PowerPoint y Word almacenados en un sitio de OneDrive para la Empresa o en un sitio de SharePoint Online que se incluye en la directiva DLP, la sugerencia de directiva aparece en la barra de mensajes y en la vista Backstage (**Información** del menú Archivo \> ).
 
@@ -61,7 +55,7 @@ Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. C
 
 3. En el Centro de seguridad y cumplimiento de la izquierda navegación Directiva de prevención &amp; \> de pérdida de \> **datos** \>  \> **+ Crear una directiva**.
 
-    ![Crear un botón de directiva](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+    ![Crear un botón de directiva.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
 4. Elija la plantilla de directiva DLP que protege los tipos de información confidencial que necesita \> **Next**.
 
@@ -85,10 +79,10 @@ Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. C
 
 9. En el editor de reglas, en **Notificaciones de usuario,** active el estado.
 
-    ![Sección notificaciones de usuario del editor de reglas](../media/47705927-c60b-4054-a072-ab914f33d15d.png)
+    ![Sección notificaciones de usuario del editor de reglas.](../media/47705927-c60b-4054-a072-ab914f33d15d.png)
 
 > [!NOTE]
-> Las directivas DLP se aplican a todos los documentos que coinciden con la directiva, independientemente de si esos documentos son nuevos o existentes. Sin embargo, una notificación de correo electrónico solo se genera cuando el contenido nuevo coincide con una directiva DLP existente. El contenido existente está protegido, pero no generará una notificación de usuario por correo electrónico.
+> Los correos electrónicos de notificación se envían desprotegidos.
 
 ## <a name="options-for-configuring-email-notifications"></a>Opciones para configurar las notificaciones de correo electrónico
 
@@ -101,13 +95,13 @@ Para cada regla en una directiva DLP, puede:
 > [!NOTE]
 >  Las notificaciones por correo electrónico solo se pueden enviar a destinatarios individuales, no a grupos o listas de distribución. Tenga en cuenta que solo el contenido nuevo desencadenará una notificación por correo electrónico. La edición del contenido existente desencadenará sugerencias de directiva, pero no una notificación por correo electrónico.
 
-![Opciones de notificación por correo electrónico](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
+![Opciones de notificación por correo electrónico.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
 ### <a name="default-email-notification"></a>Notificación de correo electrónico predeterminada
 
 Las notificaciones tienen una línea asunto que comienza con la acción realizada, como "Notificación", "Mensaje bloqueado" para correo electrónico o "Acceso bloqueado" para documentos. Si la notificación trata de un documento, el cuerpo del mensaje de notificación incluye un vínculo que le lleva al sitio donde se almacena el documento y abre la sugerencia de directiva para el documento, donde puede resolver cualquier problema (consulte la sección siguiente sobre sugerencias de directiva). Si la notificación trata de un mensaje, la notificación incluye como datos adjuntos el mensaje que coincide con una directiva DLP.
 
-![Mensaje de notificación](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
+![Mensaje de notificación.](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
 
 De forma predeterminada, las notificaciones muestran texto similar al siguiente para un elemento de un sitio. El texto de notificación se configura por separado para cada regla, por lo que el texto que se muestra es diferente en función de qué regla coincida.
 
@@ -129,7 +123,7 @@ También puedes usar los siguientes tokens para personalizar la notificación po
 |%%ContentURL%%  <br/> |Dirección URL del documento en el sitio SharePoint online o OneDrive para la Empresa sitio.  <br/> |
 |%%MatchedConditions%%  <br/> |Las condiciones que coincidieron con el contenido. Use este token para informar a los usuarios de posibles problemas con el contenido.  <br/> |
 
-![Mensaje de notificación que muestra dónde aparecen los tokens](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
+![Mensaje de notificación que muestra dónde aparecen los tokens.](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
 
 ## <a name="options-for-configuring-policy-tips"></a>Opciones para configurar sugerencias de directiva
 
@@ -143,7 +137,7 @@ Para cada regla de una directiva DLP, puede configurar sugerencias de directiva 
 
   - Permitir que la persona informe de un falso positivo e invalide la directiva DLP. Esta información también se registra en los informes, de modo que puede usar falsos positivos para ajustar las reglas.
 
-![Opciones de sugerencias de directiva](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
+![Opciones de sugerencia de directiva.](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
 
 Por ejemplo, es posible que se aplique una directiva DLP a OneDrive para la Empresa que detecte información de identificación personal (PII) y esta directiva tenga tres reglas:
 
@@ -161,6 +155,7 @@ Estos son algunos puntos clave para comprender el uso de una sugerencia de direc
 
 - Si las sugerencias de directiva en la regla más restrictiva permite que los usuarios invaliden la regla, la invalidación de esta regla invalida también otras reglas que coinciden con el contenido.
 
+
 ## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>Sugerencias de directiva en sitios de OneDrive para la Empresa y sitios de SharePoint Online
 
 Cuando un documento de un sitio OneDrive para la Empresa o un sitio de SharePoint Online coincide con una regla de una directiva DLP y esa regla usa sugerencias de directiva, las sugerencias de directiva muestran iconos especiales en el documento:
@@ -169,15 +164,15 @@ Cuando un documento de un sitio OneDrive para la Empresa o un sitio de SharePoin
 
 2. Si la regla bloquea el acceso al documento, aparece el icono de bloqueado.
 
-   ![Iconos de sugerencias de directiva en documentos de una OneDrive cuenta](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
+   ![Iconos de sugerencias de directiva en documentos de una OneDrive cuenta.](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
 
-Para realizar acciones en un documento, puede seleccionar un elemento para elegir el icono del panel Información en la esquina superior derecha de la página para abrir el panel de detalles Ver sugerencia \>  ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) de \> **directiva**.
+Para realizar acciones en un documento, puede seleccionar un elemento para \> elegir el icono del panel **Información.** ![](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) en la esquina superior derecha de la página para abrir el panel de detalles \> **Ver sugerencia de directiva**.
 
 La sugerencia de directiva enumera los problemas con el contenido y, si las sugerencias de directiva están configuradas con estas opciones, puede elegir **Resolver** y luego **Invalidar** la sugerencia de directiva o **Informar** de un falso positivo.
 
-![Panel de información que muestra la sugerencia de directiva](../media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
+![Panel de información que muestra la sugerencia de directiva.](../media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
 
-![Sugerencia de directiva con la opción de invalidar](../media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
+![Sugerencia de directiva con opción para invalidar.](../media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
 
 Las directivas DLP se sincronizan con los sitios y el contenido se evalúa con estas periódicamente y de forma asincrónica, por lo que puede haber un breve retraso entre el momento en que se crea la directiva DLP y el momento en que se empiezan a ver sugerencias de directiva. Puede haber un retraso similar desde el momento en que se invalida o resuelve una sugerencia de directiva hasta cuando desaparece el icono en el documento en el sitio.
 
@@ -199,17 +194,17 @@ Puede personalizar el texto de las sugerencias de directiva de forma independien
 
 Al redactar un nuevo correo electrónico en Outlook en la Web y Outlook 2013 y versiones posteriores, verá una sugerencia de directiva si agrega contenido que coincida con una regla en una directiva DLP y esa regla usa sugerencias de directiva. La sugerencia de directiva aparece en la parte superior del mensaje, encima de los destinatarios, mientras se está compuesto el mensaje.
 
-![Sugerencia de directiva en la parte superior de un mensaje que se va a componer](../media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
+![Sugerencia de directiva en la parte superior de un mensaje que se va a componer.](../media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
 
 Las sugerencias de directiva funcionan si la información confidencial aparece en el cuerpo del mensaje, en la línea de asunto o incluso en los datos adjuntos de un mensaje, como se muestra aquí.
 
-![Sugerencia de directiva que muestra que un dato adjunto entra en conflicto con una directiva DLP](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
+![Sugerencia de directiva que muestra que un dato adjunto entra en conflicto con una directiva DLP.](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
 
 Si las sugerencias de directiva están configuradas para permitir la invalidación, puede elegir **Mostrar** invalidación de detalles escriba una justificación empresarial o \>  \> informe de una invalidación de falso \> **positivo**.
 
-![Sugerencia de directiva en el mensaje expandido para mostrar la opción Invalidar](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
+![Sugerencia de directiva en el mensaje expandido para mostrar la opción Invalidar.](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
 
-![Cuadro de diálogo sugerencia de directiva en el que puede invalidar la sugerencia de directiva](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
+![Cuadro de diálogo sugerencia de directiva en el que puede invalidar la sugerencia de directiva.](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
 
 Tenga en cuenta que al agregar información confidencial a un correo electrónico, puede haber latencia entre el momento en que se agrega la información confidencial y cuando aparece la sugerencia de directiva.
 
@@ -257,15 +252,15 @@ En función de cómo se configuran las sugerencias de directiva en la directiva 
 
 Las sugerencias de directiva aparecen en la barra de mensajes.
 
-![La barra de mensajes muestra sugerencia de directiva en Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
+![La barra de mensajes muestra la sugerencia de directiva Excel 2016.](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
 Y las sugerencias de directiva también aparecen en la vista Backstage (en la pestaña **Archivo**).
 
-![Backstage muestra una sugerencia de directiva en Excel 2016](../media/44c561f6-8f3f-4878-b1b0-b7543f8a4120.png)
+![Backstage muestra la sugerencia de directiva en Excel 2016.](../media/44c561f6-8f3f-4878-b1b0-b7543f8a4120.png)
 
 Si las sugerencias de directiva en la directiva DLP se configuran con estas opciones, puede elegir **Resolver** para **Invalidar** una sugerencia de directiva o **Informar** de un falso positivo.
 
-![Opciones de la sugerencia de directiva en Backstage en Excel 2016](../media/5b3857ba-907e-456e-ae43-888b594c049c.png)
+![Opciones en la sugerencia de directiva en Backstage en Excel 2016.](../media/5b3857ba-907e-456e-ae43-888b594c049c.png)
 
 En cada uno de estos Office de escritorio, los usuarios pueden optar por desactivar las sugerencias de directiva. Si se desactivan, las sugerencias de directiva que son notificaciones simples no aparecerán en la barra de mensajes o la vista Backstage (en la pestaña **Archivo**). Sin embargo, seguirán apareciendo las sugerencias de directiva de bloqueo e invalidación y seguirán recibiendo la notificación por correo electrónico. Además, la desactivación de las sugerencias de directiva no exime al documento de las directivas DLP que se le han aplicado.
 
@@ -286,7 +281,7 @@ Puede personalizar el texto de las sugerencias de directiva de forma independien
 ## <a name="more-information"></a>Más información
 
 - [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
-- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
+- [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
 - [Condiciones de directiva DLP, excepciones y acciones (versión preliminar)](./dlp-microsoft-teams.md)
 - [Crear una directiva DLP para proteger documentos con FCI u otras propiedades](protect-documents-that-have-fci-or-other-properties.md)
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)

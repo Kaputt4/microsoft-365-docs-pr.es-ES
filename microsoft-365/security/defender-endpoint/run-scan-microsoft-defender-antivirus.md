@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a39d62d2c0ff0cf4ac4257100bd1acccdb3a178a84ed5235f8ac4e0b2719f128
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cb7478b62797764f25de79cca1d8c261bca351b8
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833473"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589329"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender
 
@@ -29,9 +29,9 @@ ms.locfileid: "53833473"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-Puede ejecutar un examen a petición en puntos de conexión individuales. Estos exámenes se iniciarán inmediatamente y puede definir parámetros para el examen, como la ubicación o el tipo. Al ejecutar un examen, puede elegir entre tres tipos: Examen rápido, examen completo y examen personalizado. En la mayoría de los casos, use un examen rápido. Un examen rápido examina todas las ubicaciones donde podría haber malware registrado para empezar con el sistema, como las claves del Registro y las carpetas de inicio Windows de inicio. 
+Puede ejecutar un examen a petición en puntos de conexión individuales. Estos exámenes se iniciarán inmediatamente y puede definir parámetros para el examen, como la ubicación o el tipo. Al ejecutar un examen, puede elegir entre tres tipos: Examen rápido, examen completo y examen personalizado. En la mayoría de los casos, use un examen rápido. Un examen rápido examina todas las ubicaciones donde podría haber malware registrado para empezar con el sistema, como las claves del Registro y las carpetas de inicio Windows de inicio.
 
-Combinado con la protección siempre activa y en tiempo real, que revisa los archivos cuando se abren y cierran, y siempre que un usuario navega a una carpeta, un examen rápido ayuda a proporcionar una protección segura contra malware que comienza con el malware del sistema y el nivel de kernel. En la mayoría de los casos, un examen rápido es suficiente y es la opción recomendada para exámenes programados o a petición.  [Obtenga más información sobre los tipos de examen](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
+Combinado con la protección siempre activa y en tiempo real, que revisa los archivos cuando se abren y cierran, y siempre que un usuario navega a una carpeta, un examen rápido ayuda a proporcionar una protección segura contra malware que comienza con el malware del sistema y el nivel de kernel. En la mayoría de los casos, un examen rápido es suficiente y es la opción recomendada para exámenes programados o a petición. [Obtenga más información sobre los tipos de examen](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 
 > [!IMPORTANT]
 > Antivirus de Microsoft Defender se ejecuta en el contexto de la cuenta [LocalSystem](/windows/win32/services/localsystem-account) al realizar un examen local. Para los exámenes de red, usa el contexto de la cuenta del dispositivo. Si la cuenta de dispositivo de dominio no tiene los permisos adecuados para acceder al recurso compartido, el examen no funcionará. Asegúrese de que el dispositivo tiene permisos para el recurso compartido de red de acceso.
@@ -40,13 +40,13 @@ Combinado con la protección siempre activa y en tiempo real, que revisa los arc
 
 1. Vaya al Centro Microsoft Endpoint Manager administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
 
-2. Elija **Endpoint security**  >  **Antivirus**.
+2. Elija **Endpoint security** \> **Antivirus**.
 
 3. En la lista de pestañas, **seleccione Windows 10 extremos en mal estado.**
 
 4. En la lista de acciones proporcionadas, seleccione **Examen rápido** (recomendado) o **Examen completo**.
 
-[![IMAGE ](images/mem-antivirus-scan-on-demand.png)](images/mem-antivirus-scan-on-demand.png#lightbox)
+   [![Analice las opciones de la Windows 10 de puntos de conexión en mal estado.](images/mem-antivirus-scan-on-demand.png)](images/mem-antivirus-scan-on-demand.png#lightbox)
 
 > [!TIP]
 > Para obtener más información acerca del Microsoft Endpoint Manager para ejecutar un examen, vea [Antimalware and firewall tasks: How to perform an on-demand scan](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
@@ -65,7 +65,7 @@ Para obtener más información acerca de cómo usar la herramienta y los paráme
 
 1. Vaya al Centro Microsoft Endpoint Manager administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
 
-2. En la barra lateral, selecciona  >  **Dispositivos todos los dispositivos** y elige el dispositivo que quieras examinar.
+2. En la barra  lateral, selecciona \> **Dispositivos todos los dispositivos** y elige el dispositivo que quieras examinar.
 
 3. Seleccione **... Más**. En las opciones, **seleccione Examen rápido** (recomendado) o Examen **completo**.
 
@@ -88,4 +88,3 @@ Para obtener más información sobre cómo usar PowerShell con Antivirus de Micr
 Use el [ **método Start**](/previous-versions/windows/desktop/defender/start-msft-mpscan) de la **MSFT_MpScan** clase.
 
 Para obtener más información acerca de los parámetros permitidos, [vea Windows Defender API de WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
-

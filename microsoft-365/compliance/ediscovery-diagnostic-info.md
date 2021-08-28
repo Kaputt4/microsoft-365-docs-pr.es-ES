@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo recopilar información de diagnóstico de exhibición de documentos electrónicos para un caso de soporte técnico de Microsoft.
-ms.openlocfilehash: 99edb19e61e3b403f283fcb3b73636308cf494ddbea199c01858007e8844d960
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e5dd4f9bd26121fd5879b2322549a801a3376be0
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886328"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589351"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Recopilar información de diagnóstico de eDiscovery
 
@@ -77,13 +77,13 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-C
 
 La **Configuración** en un caso Advanced eDiscovery permite copiar rápidamente la información de diagnóstico del caso. La información de diagnóstico se guarda en el Portapapeles para que puedas pegarla en un archivo de texto y enviarla al Soporte técnico de Microsoft.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic **en Mostrar > eDiscovery > Advanced**.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic **en eDiscovery > Advanced**.
 
 2. Seleccione un caso y, a **continuación, haga** clic en Configuración pestaña.
 
 3. En **Información de casos**, haga clic **en Seleccionar**.
 
-4. En la página desplegable, haz clic en **Copiar información de diagnóstico** para copiar la información en el Portapapeles.
+4. En la página desplegable, haga clic en **Acciones** Copiar información de soporte  >   técnico para copiar la información en el Portapapeles.
 
 5. Abra un archivo de texto (en Bloc de notas) y pegue la información en el archivo de texto.
 

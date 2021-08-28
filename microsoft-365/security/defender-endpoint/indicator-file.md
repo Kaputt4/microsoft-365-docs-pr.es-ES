@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2f0475d6adc1f97255665e3a32fe05e7d88c41b5
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 6b0655f0a4e6a0d00ab93409367b4e98e57b059e
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400184"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683973"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -94,19 +94,16 @@ En Microsoft 365 Defender, vaya a Configuración > Endpoints > Indicators > add 
 - Descripción
 - Acciones recomendadas
 
-![Configuración de alertas para indicadores de archivo](images/indicators-generate-alert.png)
+![Configuración de alertas para indicadores de archivo.](images/indicators-generate-alert.png)
 
 > [!IMPORTANT]
 >
->- Normalmente, los bloques de archivos se aplican y se quitan en un par de minutos, pero pueden tardar más de 30 minutos.
+> - Normalmente, los bloques de archivos se aplican y se quitan en un par de minutos, pero pueden tardar más de 30 minutos.
+> - Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro. Una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo SHA-1, que ganará una directiva de IoC de hash de archivo MD5 si los tipos hash definen el mismo archivo. Esto siempre es así independientemente del grupo de dispositivos.
+> - En todos los demás casos, si las directivas de IoC de archivos en conflicto con el mismo destino de aplicación se aplican a todos los dispositivos y al grupo del dispositivo, en el caso de un dispositivo, la directiva del grupo de dispositivos ganará.
+> - Si la directiva de grupo EnableFileHashComputation está deshabilitada, se reduce la precisión de bloqueo del archivo IoC. Sin embargo, la `EnableFileHashComputation` habilitación puede afectar al rendimiento del dispositivo. Por ejemplo, copiar archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN, puede tener un efecto en el rendimiento del dispositivo.
 >
->- Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro. Una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo SHA-1, que ganará una directiva de IoC de hash de archivo MD5 si los tipos hash definen el mismo archivo. Esto siempre es así independientemente del grupo de dispositivos.
->
->- En todos los demás casos, si las directivas de IoC de archivos en conflicto con el mismo destino de aplicación se aplican a todos los dispositivos y al grupo del dispositivo, en el caso de un dispositivo, la directiva del grupo de dispositivos ganará.
->
->- Si la directiva de grupo EnableFileHashComputation está deshabilitada, se reduce la precisión de bloqueo del archivo IoC. Sin embargo, la `EnableFileHashComputation` habilitación puede afectar al rendimiento del dispositivo. Por ejemplo, copiar archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN, puede tener un efecto en el rendimiento del dispositivo.
->
->   Para obtener más información acerca de la directiva de grupo EnableFileHashComputation, vea [Defender CSP](/windows/client-management/mdm/defender-csp).
+> Para obtener más información acerca de la directiva de grupo EnableFileHashComputation, vea [Defender CSP](/windows/client-management/mdm/defender-csp).
 
 ## <a name="private-preview-advanced-hunting-capabilities"></a>Vista previa privada: capacidades avanzadas de búsqueda
 
@@ -132,7 +129,7 @@ Archivos:
 
 Certificados:
 
-- EUS:Win32/CustomCertEnterpriseBlock!cl  
+- EUS:Win32/CustomCertEnterpriseBlock!cl
 
 La actividad de acción de respuesta también se puede ver en la escala de tiempo del dispositivo.
 
@@ -156,15 +153,20 @@ Las características de aplicación vulnerables de bloqueo de amenazas y adminis
 
 ### <a name="examples"></a>Ejemplos
 
-|Componente|Aplicación de componentes|Indicador de archivo Acción|Resultado
-|---|---|---|---|
-|Exclusión de ruta de acceso de archivo de reducción de superficie de ataque|Permitir|Bloquear|Bloquear
-|Regla de reducción de superficie de ataque|Bloquear|Permitir|Permitir
-|Control de aplicaciones de Windows Defender|Permitir|Bloquear|Permitir
-|Control de aplicaciones de Windows Defender|Bloquear|Permitir|Bloquear
-|Antivirus de Microsoft Defender exclusión|Permitir|Bloquear|Permitir
+<br>
 
-## <a name="see-also"></a>Vea también
+****
+
+|Componente|Aplicación de componentes|Indicador de archivo Acción|Resultado|
+|---|---|---|---|
+|Exclusión de ruta de acceso de archivo de reducción de superficie de ataque|Permitir|Bloquear|Bloquear|
+|Regla de reducción de superficie de ataque|Bloquear|Permitir|Permitir|
+|Control de aplicaciones de Windows Defender|Permitir|Bloquear|Permitir|
+|Control de aplicaciones de Windows Defender|Bloquear|Permitir|Bloquear|
+|Antivirus de Microsoft Defender exclusión|Permitir|Bloquear|Permitir|
+|
+
+## <a name="see-also"></a>Consulte también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

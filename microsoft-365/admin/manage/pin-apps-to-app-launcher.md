@@ -14,16 +14,16 @@ ms.service: o365-administration
 ms.custom: admindeeplinkMAC
 localization_priority: Normal
 description: Como administrador global, puedes anclar hasta tres aplicaciones al iniciador de aplicaciones de los usuarios.
-ms.openlocfilehash: b26f77d819f41517add59be14f26931f14001c65
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: bbb41dfcb72849287bb9ce87ab2c9d250b1b4d99
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394473"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589233"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>Anclar aplicaciones al iniciador de aplicaciones de los usuarios
 
-Puedes usar controles en el portal de Azure Active Directory para anclar hasta tres aplicaciones a Office.com y el iniciador de aplicaciones para todos los usuarios de la organización. También puede organizar grupos de aplicaciones. Cualquier aplicación que agregues más adelante puede desanclarla el usuario en cualquier momento. Para anclar una aplicación para los usuarios, debes ser un administrador de aplicaciones en la nube o un administrador de aplicaciones en Azure Active Directory o un administrador global en Office 365. Para obtener más información acerca de los roles de administrador, [vea roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) de administrador en Azure Active Directory y roles de administrador en [Microsoft 365](../add-users/about-admin-roles.md). 
+Puedes usar controles en el portal de Azure Active Directory para anclar hasta tres aplicaciones a Office.com y el iniciador de aplicaciones para todos los usuarios de la organización. También puede organizar grupos de aplicaciones. Cualquier aplicación que agregues más adelante puede desanclarla el usuario en cualquier momento. Para anclar una aplicación para los usuarios, debes ser un administrador de aplicaciones en la nube o un administrador de aplicaciones en Azure Active Directory o un administrador global en Office 365. Para obtener más información acerca de los roles de administrador, vea Roles integrados y roles de administrador de [Azure AD](/azure/active-directory/roles/permissions-reference) [en Microsoft 365](../add-users/about-admin-roles.md). 
 
 Para obtener más información sobre el iniciador de [](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) aplicaciones y Office.com, consulta el artículo sobre el iniciador de aplicaciones y las actualizaciones de [office.com](https://techcommunity.microsoft.com/t5/office-365-blog/updates-to-office-com-and-the-office-365-app-launcher/ba-p/1150503) y el blog del iniciador Office 365 aplicaciones.
 

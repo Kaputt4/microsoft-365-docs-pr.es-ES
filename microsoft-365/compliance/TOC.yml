@@ -259,6 +259,8 @@
           items:
             - name: Plan de prevención de pérdida de datos
               href: dlp-overview-plan-for-dlp.md
+            - name: Referencia de directiva de prevención de pérdida de datos
+              href: dlp-policy-reference.md
         - name: Introducción a DLP
           items:
             - name: Introducción a la directiva predeterminada de DLP

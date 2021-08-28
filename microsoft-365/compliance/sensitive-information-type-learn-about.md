@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial como números de cuenta bancaria, tarjeta de crédito o seguridad social para identificar elementos confidenciales
-ms.openlocfilehash: 76812349bc6916483d1e8f56f9c3eaca381d373690a375a3ba1e34a98ee30afc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac293eea8b81125b124265d2546d562393a81f8f
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842052"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684009"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -38,7 +38,7 @@ Los tipos de información confidencial son clasificadores basados en patrones. D
 - [Directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md)
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Etiquetas de retención](retention.md)
-- [Administración de riesgos internos](insider-risk-management.md)
+- [Administración de riesgos de Insider](insider-risk-management.md)
 - [Cumplimiento de las comunicaciones](communication-compliance.md)
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Administración de privacidad (versión preliminar)](privacy-management.md)
@@ -55,7 +55,7 @@ Cada entidad de tipo de información confidencial se define mediante estos campo
     - Nivel de confianza: los niveles de confianza (altos, medianos, bajos) reflejan la cantidad de evidencia de soporte que se detectó junto con el elemento principal. Cuanto más evidencia de soporte técnico contenga un elemento, mayor será la confianza de que un elemento coincidente contenga la información confidencial que está buscando.
     - Proximidad: número de caracteres entre el elemento principal y el elemento de soporte técnico
 
-![Diagrama de prueba corroboradora y ventana de proximidad](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![Diagrama de evidencia corroborativa y ventana de proximidad.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 Obtenga más información sobre los niveles de confianza en este vídeo
 
@@ -65,7 +65,7 @@ Obtenga más información sobre los niveles de confianza en este vídeo
 ### <a name="example-sensitive-information-type"></a>Tipo de información confidencial de ejemplo
 
 
-## <a name="argentina-national-identity-dni-number"></a>Número de identidad nacional (DNI) de Argentina
+#### <a name="argentina-national-identity-dni-number"></a>Número de identidad nacional (DNI) de Argentina
 
 ### <a name="format"></a>Formato
 

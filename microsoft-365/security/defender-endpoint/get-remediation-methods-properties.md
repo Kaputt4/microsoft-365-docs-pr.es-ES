@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bdd3e822403b6ad48989723626ce5a6d2d4a8bc3a18ca01c3c1d9915aabfa03d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0ca1bc84d5e8cf5498ed3dc19cba3928823796ff
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811247"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684105"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Propiedades y métodos de la actividad de corrección
 
@@ -40,7 +40,7 @@ ms.locfileid: "53811247"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-La respuesta de la API contiene [& administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)   de corrección de amenazas que se han creado en el espacio empresarial.  
+La respuesta de la API contiene [& administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)   de corrección de amenazas que se han creado en el espacio empresarial.
 
 ## <a name="methods"></a>Métodos
 
@@ -57,33 +57,33 @@ Obtenga más información sobre [las actividades de corrección](tvm-remediation
 Id. de propiedad|Tipo de datos|Descripción
 :---|:---|:---
 categoría|Cadena|Categoría de la actividad de corrección (configuración software/seguridad)
-completerEmail|String|Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico
-completerId|String|Si alguien completó la actividad de corrección manualmente, esta columna contiene su identificador de objeto
-completionMethod|String|Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están parcheados) o "manualmente" por una persona que selecciona "marcar como completada".
+completerEmail|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico
+completerId|Cadena|Si alguien completó la actividad de corrección manualmente, esta columna contiene su identificador de objeto
+completionMethod|Cadena|Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están parcheados) o "manualmente" por una persona que selecciona "marcar como completada".
 createdOn|DateTime|Hora en que se creó esta actividad de corrección
 description|Cadena|Descripción de esta actividad de corrección
 dueOn|DateTime|Fecha de vencimiento que el creador estableció para esta actividad de corrección
 fixedDevices||Número de dispositivos que se han corregido
-id|String|Identificador de esta actividad de corrección
-nameId|String|Nombre del producto relacionado
+id|Cadena|Identificador de esta actividad de corrección
+nameId|Cadena|Nombre del producto relacionado
 priority|Cadena|Prioridad del conjunto de creadores para esta actividad de corrección (High\Medium\Low)
-productId|String|Id. de producto relacionado
-productivityImpactRemediationType|String|Solo se podrían solicitar algunos cambios de configuración para dispositivos sin impacto del usuario. Este valor indica la selección entre "todos los dispositivos expuestos" o "solo dispositivos sin impacto del usuario".
+productId|Cadena|Id. de producto relacionado
+productivityImpactRemediationType|Cadena|Solo se podrían solicitar algunos cambios de configuración para dispositivos sin impacto del usuario. Este valor indica la selección entre "todos los dispositivos expuestos" o "solo dispositivos sin impacto del usuario".
 rbacGroupNames|Cadena|Nombres de grupo de dispositivos relacionados
 recommendedProgram|Cadena|Programa recomendado para actualizar a
-recommendedVendor|String|Proveedor recomendado para actualizar a
-recommendedVersion|String|Versión recomendada para actualizar o actualizar a
+recommendedVendor|Cadena|Proveedor recomendado para actualizar a
+recommendedVersion|Cadena|Versión recomendada para actualizar o actualizar a
 relatedComponent|Cadena|Componente relacionado de esta actividad de corrección (similar al componente relacionado para una recomendación de seguridad)
-requesterEmail|String|Dirección de correo electrónico del creador
+requesterEmail|Cadena|Dirección de correo electrónico del creador
 requesterId|Cadena|Id. de objeto Creator
-requesterNotes|String|Las notas (texto libre) que el creador agregó para esta actividad de corrección
+requesterNotes|Cadena|Las notas (texto libre) que el creador agregó para esta actividad de corrección
 scid|Cadena|SCID de la recomendación de seguridad relacionada
-status|String|Estado de la actividad de corrección (Activo/Completado)
+status|Cadena|Estado de la actividad de corrección (Activo/Completado)
 statusLastModifiedOn|DateTime|Fecha en la que se actualizó el campo de estado
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección
-title|String|Título de esta actividad de corrección
+title|Cadena|Título de esta actividad de corrección
 type|Cadena|Tipo de corrección
-vendorId|String|Nombre de proveedor relacionado
+vendorId|Cadena|Nombre de proveedor relacionado
 
 ## <a name="see-also"></a>Consulte también
 

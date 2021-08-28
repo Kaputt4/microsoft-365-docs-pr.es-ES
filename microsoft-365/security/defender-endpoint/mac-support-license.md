@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 142ce23d87c1f793a0192270e6d041b33d9bc126
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5b1cee16f4eccaa8f6fd36d8764b1305cba3131f
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573972"
+ms.locfileid: "58611288"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de licencia para Microsoft Defender para Endpoint en macOS
 
@@ -52,7 +52,7 @@ Póngase en contacto con el administrador para obtener ayuda.
 
 **Causa:** 
 
-Implementó o instaló el paquete de Microsoft Defender para endpoint para macOS ("Descargar paquete de instalación"), pero es posible que haya ejecutado el script de configuración ("Descargar paquete de incorporación") o que no haya asignado una licencia al usuario.
+Implementó o instaló el paquete de Microsoft Defender para endpoint para macOS ("Descargar paquete de instalación"), pero es posible que no haya ejecutado el script de configuración ("Descargar paquete de incorporación") o que no haya asignado una licencia al usuario.
 
 **Solución:**
 
