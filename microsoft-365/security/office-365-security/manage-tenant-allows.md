@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9a9b682307c9891aab8e73496916205368734b369ecea2f6e43d73f2c2640fbf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 977cd2d099d9c5be7fc0db9ef61f31f28afdc9fe
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56884529"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563771"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -40,7 +40,7 @@ Permitir archivos, direcciones URL y remitentes en la sección Envíos de Micros
 
 1. En el portal Microsoft 365 Defender, vaya a **Correo electrónico &** \> **envíos de colaboración**.
 
-2. En la **página Envíos,** compruebe que la pestaña **Enviado** para el análisis está seleccionada y, a continuación, haga clic en Icono de anuncio ![ Enviar a Microsoft para su ](../../media/m365-cc-sc-create-icon.png) **análisis.**
+2. En la **página Envíos,** compruebe que la pestaña **Enviado** para el análisis está seleccionada y, a continuación, haga clic ![ en Icono de anuncio.](../../media/m365-cc-sc-create-icon.png) **Enviar a Microsoft para su análisis**.
 
 3. Use el menú desplegable **Enviar a Microsoft para** revisión para marcar el remitente, el archivo o la dirección URL como falso positivo. 
 
@@ -53,7 +53,7 @@ Permitir archivos, direcciones URL y remitentes en la sección Envíos de Micros
 7. Cuando haya terminado, haga clic en el **botón Enviar.**
 
 > [!div class="mx-imgBorder"]
-> ![Ejemplo de envío falso positivo](../../media/admin-submission-allow-messages.png)
+> ![Ejemplo de envío falso positivo.](../../media/admin-submission-allow-messages.png)
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>Crear entradas de permitido de remitente suplantado mediante Microsoft 365 Defender
 
@@ -66,7 +66,7 @@ Permitir archivos, direcciones URL y remitentes en la sección Envíos de Micros
 
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
 
-2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la pestaña **Suplantación** y, a continuación, haga clic ![ en Bloquear icono ](../../media/m365-cc-sc-create-icon.png) **Agregar**.
+2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la pestaña **Suplantación** y, a continuación, haga clic ![ en Bloquear icono.](../../media/m365-cc-sc-create-icon.png) **Agregar**.
 
 3. En el **menú desplegable Agregar nuevos pares de** dominio que aparece, configure las siguientes opciones:
    - **Agregar nuevos pares de dominio con caracteres comodín:** escriba un par de dominio por línea, hasta un máximo de 20. Para obtener más información sobre la sintaxis de las entradas de remitente suplantadas, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).

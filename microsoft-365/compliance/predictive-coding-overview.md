@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: El nuevo módulo de codificación predictiva de Advanced eDiscovery usa el aprendizaje automático para analizar elementos de un conjunto de revisión para predictiva cuáles son los elementos relevantes para su caso o investigación.
-ms.openlocfilehash: 5588f65af5d987eb5094a605331d9efd46f8fe999b5983e5a546f19564b09f26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b453713d986572dae8d80efe6dcd60b0616d789
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891910"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567693"
 ---
 # <a name="learn-about-predictive-coding-in-advanced-ediscovery-preview"></a>Obtenga información sobre la codificación predictiva en Advanced eDiscovery (versión preliminar)
 
@@ -31,7 +31,7 @@ El módulo de codificación predictiva está diseñado para simplificar la compl
 
 A continuación se ofrece información general y una descripción de cada flujo de trabajo de codificación predictiva de cada paso. Para obtener una descripción más detallada de los conceptos y terminología del proceso de codificación [predictiva,](predictive-coding-reference.md)vea Predictive coding reference .
 
-![Flujo de trabajo de codificación predictiva](..\media\PredictiveCodingWorkflow.png)
+![Flujo de trabajo de codificación predictiva.](..\media\PredictiveCodingWorkflow.png)
 
 1. **Cree un nuevo modelo de codificación predictiva en el conjunto de revisión**. El primer paso es crear un nuevo modelo de codificación predictiva en el conjunto de revisión. Debe tener al menos 2.000 elementos en el conjunto de revisión para crear un modelo. Después de crear un modelo, el sistema determinará el número de elementos que se van a usar como un *conjunto de controles*. El conjunto de controles se usa durante el proceso de aprendizaje para evaluar las puntuaciones de predicción que el modelo asigna a los elementos con el etiquetado que se realiza durante las rondas de aprendizaje. El tamaño del conjunto de controles se basa en el número de elementos del conjunto de revisión y el nivel de confianza y el margen de error que se establecen al crear el modelo. Los elementos del conjunto de controles nunca cambian y no son identificables para los usuarios.
 

@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2aa3cab705b8ed872c0f06c3f215fe8fde713322d9bfa45a0123b0ca5fbcb682
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3c9829ecee2bddcff392d9f58fe11e2a7de7486a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53777731"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563723"
 ---
 # <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365 y plantillas de arquitectura
 
@@ -43,8 +43,8 @@ Puede usar estos iconos y plantillas para crear diagramas como los ejemplos sigu
 
 1. Diagrama de arquitectura de búsqueda de ejemplo para SharePoint:
 
-    ![Arquitectura de búsqueda de ejemplo para SharePoint](../media/configure-search-for-multi-geo-image1-1.png)
+    ![Arquitectura de búsqueda de ejemplo para SharePoint.](../media/configure-search-for-multi-geo-image1-1.png)
 
 2. Teams arquitectura del ciclo de vida de retención:
 
-    ![Teams de retención](../media/TeamsRetentionLifecycle.png)
+    ![Teams de retención.](../media/TeamsRetentionLifecycle.png)

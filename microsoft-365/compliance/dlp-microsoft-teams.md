@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams chats y canales admiten directivas de prevención de pérdida de datos (DLP).
-ms.openlocfilehash: a2ad3cdb3666550f5205eb3e1b7d1a7f6c6b3a66
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 8dbc7ce992840101c464f64bd981c65e7703f8bd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502968"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567765"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams.
 
@@ -72,18 +72,18 @@ La protección DLP se aplica de forma diferente a Teams entidades.
 
 De forma similar a cómo funciona DLP en [Exchange, Outlook, Outlook en la Web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web), [SharePoint Online,](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)sitios de OneDrive para la Empresa y clientes de escritorio de [Office,](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)aparecen sugerencias de directiva cuando se desencadena una acción con una directiva DLP. Este es un ejemplo de una sugerencia de directiva:
 
-![Notificación de mensaje bloqueado en Teams](../media/dlp-teams-blockedmessage-notification.png)
+![Notificación de mensaje bloqueado en Teams.](../media/dlp-teams-blockedmessage-notification.png)
 
 Aquí, el remitente intentó compartir un número de seguridad social en un canal Microsoft Teams. El **vínculo ¿Qué puedo hacer?** abre un cuadro de diálogo que proporciona opciones para que el remitente resuelva el problema. Tenga en cuenta que, el remitente puede optar por invalidar la directiva o notificar a un administrador que la revise y resuelva.
 
-![Opciones para resolver el mensaje bloqueado](../media/dlp-teams-blockedmessage-possibleactions.png)
+![Opciones para resolver el mensaje bloqueado.](../media/dlp-teams-blockedmessage-possibleactions.png)
 
 En su organización, puede elegir permitir que los usuarios invalide una directiva DLP. Al configurar las directivas DLP, puede usar las sugerencias de directiva predeterminadas o personalizar [las sugerencias de directiva](#to-customize-policy-tips) para su organización.
 
 Volviendo a nuestro ejemplo, donde un remitente compartió un número de seguridad social en un canal de Teams, esto es lo que vio el destinatario:
 
 > [!div class="mx-imgBorder"]
-> ![Mensaje bloqueado](../media/dlp-teams-blockedmessage-notification-to-user.png)
+> ![Mensaje bloqueado.](../media/dlp-teams-blockedmessage-notification-to-user.png)
 
 ### <a name="to-customize-policy-tips"></a>Personalizar sugerencias de directiva
 
@@ -98,12 +98,12 @@ Para llevar a cabo esta tarea, debe tener asignado un rol de administración que
 4. Cree una nueva regla o edite una regla existente para la directiva.
 
     > [!div class="mx-imgBorder"]
-    > ![Edición de una regla para una directiva](../media/dlp-teams-editrule.png)
+    > ![Edición de una regla para una directiva.](../media/dlp-teams-editrule.png)
 
 5. En la **pestaña Notificaciones de usuario,** seleccione **Personalizar el** texto del correo electrónico o Personalizar las opciones de texto de **sugerencia de** directiva.
 
     > [!div class="mx-imgBorder"]
-    > ![Personalizar notificaciones de usuario y sugerencias de directivas](../media/dlp-teams-editrule-usernotifications.png)<br/>  
+    > ![Personalizar las notificaciones de usuario y las sugerencias de directiva.](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
 6. Especifique el texto que desea usar para notificaciones por correo electrónico o sugerencias de directiva y, a continuación, **elija Guardar**.
 
@@ -123,12 +123,12 @@ Para llevar a cabo esta tarea, debe tener asignado un rol de administración que
 3. Seleccione una directiva y vea los valores en **Ubicaciones**. Si ves **Teams chat y mensajes de canal,** estás todo configurado. Si no lo hace, haga clic en **Editar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Ubicaciones de la directiva existente](../media/dlp-teams-editexistingpolicy.png)
+    > ![Ubicaciones de la directiva existente.](../media/dlp-teams-editexistingpolicy.png)
 
 4. En la **columna Estado,** active la directiva para los **mensajes Teams chat y canal**.
 
     > [!div class="mx-imgBorder"]
-    > ![DLP para Teams chats y canales](../media/dlp-teams-addteamschatschannels.png)
+    > ![DLP para Teams chats y canales.](../media/dlp-teams-addteamschatschannels.png)
 
 5. En la **pestaña Elegir ubicaciones,** mantenga la configuración predeterminada de todas las cuentas o seleccione **Permitirme elegir ubicaciones específicas.** Puede especificar lo siguiente:
 
@@ -156,7 +156,7 @@ Para llevar a cabo esta tarea, debe tener asignado un rol de administración que
     En nuestro ejemplo, elegimos la plantilla Datos de información de identificación personal de Estados Unidos.
 
     > [!div class="mx-imgBorder"]
-    > ![Plantilla de privacidad para la directiva DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
+    > ![Plantilla de privacidad para la directiva DLP.](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
 4. En la **pestaña Nombre de la directiva,** especifique un nombre y una descripción para la directiva y, a continuación, elija **Siguiente**.
 
@@ -166,7 +166,7 @@ Para llevar a cabo esta tarea, debe tener asignado un rol de administración que
     1. listas de distribución y grupos de seguridad para incluir o excluir. **Se trata de una característica de vista previa pública.**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
-    ![Ubicaciones de directivas DLP](../media/dlp-teams-selectlocationsnewpolicy.png)
+    ![Ubicaciones de directivas DLP.](../media/dlp-teams-selectlocationsnewpolicy.png)
 
     > [!NOTE]
     > Si desea asegurarse de que los documentos que contienen información confidencial no  se compartan de forma inadecuada en Teams, asegúrese de que SharePoint sitios y cuentas **de OneDrive** estén activados, junto con los mensajes de **chat** y canal Teams .
@@ -176,14 +176,14 @@ Para llevar a cabo esta tarea, debe tener asignado un rol de administración que
 7.  En la **pestaña Configuración de** directiva, en ¿Qué desea hacer si detectamos información **confidencial?**, revise la configuración. Aquí es donde puede elegir mantener las sugerencias de directiva [predeterminadas](use-notifications-and-policy-tips.md)y las notificaciones de correo electrónico, o personalizarlas.
 
     > [!div class="mx-imgBorder"]
-    > ![Configuración de directiva DLP con sugerencias y notificaciones](../media/dlp-teams-policysettings-tipsemails.png)
+    > ![Configuración de directiva DLP con sugerencias y notificaciones.](../media/dlp-teams-policysettings-tipsemails.png)
 
     Cuando haya terminado de revisar o editar la configuración, elija **Siguiente**.
 
 8. En la **pestaña** Configuración de directiva, en ¿Desea activar la directiva o probar primero **las cosas?**, elija si desea activar la [directiva,](dlp-overview-plan-for-dlp.md#policy-deployment)probarla primero o mantenerla desactivada por ahora y, a continuación, elija **Siguiente**.
 
     > [!div class="mx-imgBorder"]
-    > ![Especificar si se debe activar la directiva](../media/dlp-teams-policysettings-turnonnow.png)
+    > ![Especifique si se debe activar la directiva.](../media/dlp-teams-policysettings-turnonnow.png)
 
 9. En la **pestaña Revisar la configuración,** revisa la configuración de la nueva directiva. Elija **Editar** para realizar cambios. Cuando haya terminado, elija **Crear**.
 
@@ -203,7 +203,7 @@ Para asegurarse de que SharePoint documentos que contienen información confiden
         - El contenido se comparte Microsoft 365 con personas de fuera de mi organización
         
           > [!div class="mx-imgBorder"]
-          > ![Condiciones dlp para detectar el uso compartido externo de contenido confidencial](../media/dlp-teams-external-sharing/external-condition.png)
+          > ![Condiciones dlp para detectar el uso compartido externo de contenido confidencial.](../media/dlp-teams-external-sharing/external-condition.png)
 
     - **Actions**
         - Restringir el acceso de usuarios externos al contenido
@@ -213,18 +213,18 @@ Para asegurarse de que SharePoint documentos que contienen información confiden
         - Enviar informes de incidentes al administrador
         
         > [!div class="mx-imgBorder"]
-        > ![Acción DLP para bloquear el uso compartido externo de contenido confidencial](../media/dlp-teams-external-sharing/external-action.png)
+        > ![Acción DLP para bloquear el uso compartido externo de contenido confidencial.](../media/dlp-teams-external-sharing/external-action.png)
 
 Directiva DLP en acción al intentar compartir un documento en SharePoint que contiene información confidencial con un invitado externo:
 
 > [!div class="mx-imgBorder"]
-> ![Uso compartido externo bloqueado](../media/dlp-teams-external-sharing/external-sharing-blocked.png)
+> ![Se ha bloqueado el uso compartido externo.](../media/dlp-teams-external-sharing/external-sharing-blocked.png)
 
 
 Directiva DLP en acción cuando el invitado intenta abrir un documento en Teams con bloqueo externo:
 
 > [!div class="mx-imgBorder"]
-> ![Acceso externo bloqueado](../media/dlp-teams-external-sharing/external-access-blocked.png)
+> ![Acceso externo bloqueado.](../media/dlp-teams-external-sharing/external-access-blocked.png)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

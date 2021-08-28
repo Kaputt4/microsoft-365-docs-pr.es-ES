@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use casos grandes en Advanced eDiscovery para que pueda agregar más elementos para revisar conjuntos y aprovechar otros límites aumentados.
-ms.openlocfilehash: 592b9d60a1275be0e12ddce238621d5ef02ab06e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 43211dbeed7621de64d696e21fa647d5023350bb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255866"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565489"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>Usar casos grandes en Advanced eDiscovery (versión preliminar)
 
@@ -39,7 +39,7 @@ Para crear un caso grande:
 
    Se **muestra la página desplegable Nuevo** caso de exhibición de documentos electrónicos. La **sección Formato de** caso proporciona la opción de crear un caso grande. Elija este tipo de caso si necesita recopilar una gran cantidad de contenido en un breve período de tiempo.
 
-   ![Opción de caso grande en la página Nuevo caso de exhibición de documentos electrónicos](..\media\AeDLargeCases1.png)
+   ![Opción de caso grande en la página Nuevo caso de exhibición de documentos electrónicos.](..\media\AeDLargeCases1.png)
 
 4. Después de asignar un nombre al caso, seleccione la **opción Caso grande** y, a continuación, haga clic en **Guardar** para crear el caso grande.
 
@@ -59,7 +59,7 @@ Esta es una lista de otras ventajas de los casos grandes en el flujo Advanced eD
 
 Además, el nuevo formato de caso grande incluye una interfaz de usuario actualizada que muestra el tamaño total de cada conjunto de opiniones en el caso. Los tamaños de conjunto de revisión se muestran en una columna de la ficha **Conjuntos** de revisión y en un panel desplegable que persiste de todas las pestañas del caso.
 
-![Estadísticas de casos grandes en Advanced eDiscovery interfaz de usuario](..\media\LargeCaseUI.png)
+![Estadísticas de casos grandes Advanced eDiscovery interfaz de usuario.](..\media\LargeCaseUI.png)
 
 ## <a name="known-issues"></a>Problemas conocidos
 

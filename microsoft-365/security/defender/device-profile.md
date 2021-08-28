@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: b9f73150d858efc8eecf7a027035011d88098e9359ab87c9ce5c2f992cd8857e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f33b16cb08f7573a579f46327f126071ed726e42
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805742"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563943"
 ---
 # <a name="device-profile-page"></a>Página de perfil de dispositivo
 
@@ -36,7 +36,7 @@ Si el dispositivo está inscrito en Microsoft Defender para Endpoint, también p
 
 La página de perfil se divide en varias secciones generales.
 
-![Imagen de la página de perfil de dispositivo con (1) área de pestaña (2) Barra lateral y (3) Acciones resaltadas en rojo](../../media/mtp-device-profile/hybrid-device-overall.png)
+![Imagen de la página de perfil de dispositivo con (1) área de pestaña (2) Barra lateral y (3) Acciones resaltadas en rojo.](../../media/mtp-device-profile/hybrid-device-overall.png)
 
 En la barra lateral (1) se enumeran los detalles básicos sobre el dispositivo.
 
@@ -48,7 +48,7 @@ Si el dispositivo está inscrito en Microsoft Defender para Endpoint, también v
 
 Junto al área de contenido principal de la página de perfil de dispositivo se encuentra la barra lateral.
 
-![Imagen de la pestaña de la barra lateral para el perfil del dispositivo](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
+![Imagen de la pestaña de la barra lateral para el perfil del dispositivo.](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
 
 En la barra lateral se muestra el nombre completo y el nivel de exposición del dispositivo. También proporciona información básica importante en subsecciones pequeñas que se pueden alternar abiertas o cerradas, como:
 
@@ -66,7 +66,7 @@ En la barra lateral se muestra el nombre completo y el nivel de exposición del 
 
 Las acciones de respuesta ofrecen una forma rápida de defenderse y analizar las amenazas.
 
-![Imagen de la barra de acciones para el perfil de dispositivo](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
+![Imagen de la barra de acciones para el perfil de dispositivo.](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
 > * [Las acciones de](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) respuesta solo están disponibles si el dispositivo está inscrito en Microsoft Defender para endpoint.
@@ -94,7 +94,7 @@ Los dispositivos inscritos en Microsoft Defender para endpoint también mostrar�
 
 La pestaña predeterminada es **Overview**. Proporciona un vistazo rápido al hecho de seguridad más importante sobre el dispositivo.
 
-![Imagen de la pestaña información general del perfil de dispositivo](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
+![Imagen de la pestaña información general del perfil del dispositivo.](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
 Aquí puedes ver rápidamente las alertas activas del dispositivo y los usuarios que han iniciado sesión actualmente.
 
@@ -104,7 +104,7 @@ Si el dispositivo está inscrito en Microsoft Defender para Endpoint, también v
 
 La **pestaña** Alertas contiene una lista de alertas que se han elevado en el dispositivo, tanto de Microsoft Defender para Identity como de Microsoft Defender para endpoint.
 
-![Imagen de la pestaña alertas para el perfil de dispositivo](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
+![Imagen de la pestaña alertas para el perfil del dispositivo.](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
 Puede personalizar el número de elementos que se muestran, así como las columnas que se muestran para cada elemento. El comportamiento predeterminado es enumerar treinta elementos por página.
 
@@ -122,7 +122,7 @@ La **pestaña Escala** de tiempo incluye un gráfico cronológico interactivo de
 
 Debajo del gráfico hay una lista de eventos para el intervalo de fechas seleccionado.
 
-![Imagen de la pestaña escala de tiempo para el perfil de dispositivo](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
+![Imagen de la pestaña escala de tiempo del perfil del dispositivo.](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
 
 El número de elementos que se muestran y las columnas de la lista se pueden personalizar. Las columnas predeterminadas muestran la hora del evento, el usuario activo, el tipo de acción, las entidades (procesos) y la información adicional sobre el evento.
 
@@ -136,7 +136,7 @@ La lista también se puede exportar a un archivo CSV, para su descarga. Aunque e
 
 En **la pestaña Recomendaciones de** seguridad se enumeran las acciones que puedes realizar para proteger el dispositivo. Si selecciona un elemento en esta lista, se abrirá un menú desplegable donde podrá obtener instrucciones sobre cómo aplicar la recomendación.
 
-![Imagen de la pestaña recomendaciones de seguridad para el perfil del dispositivo](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
+![Imagen de la pestaña recomendaciones de seguridad para el perfil del dispositivo.](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
 
 Al igual que con las pestañas anteriores, se puede personalizar el número de elementos que se muestran por página, así como las columnas visibles.
 
@@ -146,7 +146,7 @@ La vista predeterminada incluye columnas que detallan las debilidades de segurid
 
 La **pestaña Inventario de** software muestra el software instalado en el dispositivo.
 
-![Imagen de la pestaña de inventario de software para el perfil del dispositivo](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
+![Imagen de la pestaña de inventario de software para el perfil del dispositivo.](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
 
 La vista predeterminada muestra el proveedor de software, el número de versión instalada, el número de debilidades de software conocidas, las perspectivas de amenazas, el código del producto y las etiquetas. El número de elementos que se muestran y las columnas que se muestran se pueden personalizar.
 
@@ -158,7 +158,7 @@ Esta lista se puede filtrar por código de producto.
 
 En **la pestaña Vulnerabilidades detectadas** se enumeran las vulnerabilidades y vulnerabilidades comunes (CVEs) que pueden afectar al dispositivo.
 
-![Imagen de la pestaña vulnerabilidades detectadas para el perfil de dispositivo](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
+![Imagen de la pestaña vulnerabilidades detectadas para el perfil del dispositivo.](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
 
 La vista predeterminada enumera la gravedad de CVE, la puntuación de vulnerabilidad común (CVS), el software relacionado con CVE, cuando se publicó la CVE, cuando se actualizó por última vez la CVE y las amenazas asociadas con la CVE.
 
@@ -170,7 +170,7 @@ Si selecciona un elemento de esta lista, se abrirá un desplegable que describe 
 
 En **la pestaña KBs que** faltan se enumeran las actualizaciones de Microsoft que aún no se han aplicado al dispositivo. Los "KBs" en cuestión son [artículos de Knowledge Base](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) que describen estas actualizaciones; por ejemplo, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
-![Imagen de la pestaña kbs que falta para el perfil de dispositivo](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
+![Imagen de la pestaña kbs que falta para el perfil de dispositivo.](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
 
 La vista predeterminada enumera el boletín que contiene las actualizaciones, la versión del sistema operativo, los productos afectados, las CVE dirigidas, el número KB y las etiquetas.
 

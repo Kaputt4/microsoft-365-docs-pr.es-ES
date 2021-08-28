@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a0daf8c36a4b216cd79d43e6832816350f554b8d9e7a307649552a6bf9c97e23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: be60d8f4c8adae02a1a5e388a5b75e717dd5eb51
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853581"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565827"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Puntuación de exposición: Administración de amenazas y vulnerabilidades
 
@@ -32,7 +32,7 @@ ms.locfileid: "53853581"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -45,7 +45,7 @@ La puntuación de exposición está visible en el panel [de amenazas y administr
 
 La tarjeta te ofrece una vista de alto nivel de la tendencia de puntuación de exposición con el tiempo. Los picos del gráfico le dan una indicación visual de una alta exposición a amenazas de ciberseguridad que puede investigar más a fondo.
 
-![Tarjeta de puntuación de exposición](images/tvm_exp_score.png)
+![Tarjeta de puntuación de exposición.](images/tvm_exp_score.png)
 
 ## <a name="how-it-works"></a>Cómo funciona
 

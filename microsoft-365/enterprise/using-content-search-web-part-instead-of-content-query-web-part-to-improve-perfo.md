@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: Obtenga información sobre cómo aumentar el rendimiento reemplazando el elemento web consulta de contenido por el elemento web búsqueda de contenido en SharePoint Server 2013 y SharePoint Online.
-ms.openlocfilehash: 1fbddb662d87f135d90dfb1303ba75097da4650eefdf57dfe2f9ca50fcf186a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 270019b59666c3f52d67648a88c453278149fccd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840797"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566749"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Uso del elemento web de búsqueda de contenido en lugar del elemento web consulta de contenido para mejorar el rendimiento en SharePoint Online
 
@@ -52,15 +52,15 @@ Este sitio de ejemplo tiene las siguientes características:
     
 Esta es una captura de pantalla de los resultados del elemento web consulta de contenido.
   
-![Gráfico que muestra la consulta de contenido del elemento web](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
+![Gráfico que muestra la consulta de contenido del elemento web.](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
   
 En Internet Explorer, use la **pestaña Red** de las herramientas para desarrolladores F12 para ver los detalles del encabezado de respuesta. En la siguiente captura de pantalla, el valor de **SPRequestDuration para** esta carga de página es de 924 milisegundos. 
   
-![Captura de pantalla que muestra la duración de la solicitud de 924](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
+![Captura de pantalla que muestra la duración de la solicitud de 924.](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
  **SPRequestDuration** indica la cantidad de trabajo que se realiza en el servidor para preparar la página. Cambiar el contenido por consulta elementos web contenido por búsqueda elementos web reduce considerablemente el tiempo necesario para representar la página. En cambio, una página con un elemento web de búsqueda de contenido equivalente, que devuelve el mismo número de resultados, tiene un valor **SPRequestDuration** de 106 milisegundos como se muestra en esta captura de pantalla: 
   
-![Captura de pantalla que muestra la duración de la solicitud de 106](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
+![Captura de pantalla que muestra la duración de la solicitud de 106.](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
 ## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Agregar un elemento web de búsqueda de contenido en SharePoint Online
 

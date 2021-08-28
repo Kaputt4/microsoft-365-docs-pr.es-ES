@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 555e5964c5fe846f6fb07b426ae55b6dd603691ccb8cd14fda57701071b47290
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f730f590b9ba604596dc9230fc22c451e99630e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833578"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565213"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de extensión de kernel en Microsoft Defender para endpoint en macOS
 
@@ -44,7 +44,7 @@ A partir de macOS High Sierra (10.13), macOS requiere que todas las extensiones 
 
 Si no aprobaba la extensión del kernel durante la implementación o instalación de Microsoft Defender para Endpoint en macOS, la aplicación muestra un banner que le pide que lo habilite:
 
-   ![Captura de pantalla deshabilitada de RTP](images/mdatp-32-main-app-fix.png)
+   ![Captura de pantalla deshabilitada de RTP.](images/mdatp-32-main-app-fix.png)
 
 También puede ejecutar ```mdatp health``` . Informa si la protección en tiempo real está habilitada pero no está disponible. Esto indica que la extensión del kernel no está aprobada para ejecutarse en el dispositivo.
 
@@ -73,7 +73,7 @@ Si han transcurrido menos de 30 minutos desde que se instaló el producto, vaya 
 
 Si no ves este mensaje, significa que han transcurrido 30 o más minutos y la extensión del kernel aún no se ha aprobado para ejecutarse en el dispositivo:
 
-![Ventana seguridad y privacidad después de la captura de pantalla de aviso expirada](images/mdatp-33-securityprivacysettings-noprompt.png)
+![Ventana de seguridad y privacidad después de que la captura de pantalla del mensaje haya expirado.](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 En este caso, debe realizar los siguientes pasos para desencadenar de nuevo el flujo de aprobación.
 

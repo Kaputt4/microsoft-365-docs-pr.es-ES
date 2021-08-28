@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure y pruebe el restablecimiento de contraseña para su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 999709558a468d53bc809662dbcc270fa8a9945b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: aa332b2778aefa84948a9bc57d20d28f117a4df3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356509"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565883"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Restablecimiento de contraseña para el entorno de prueba de Microsoft 365
 
@@ -38,7 +38,7 @@ La configuración de SSPR implica tres fases:
 - [Fase 2: habilitar escritura diferida de contraseñas](#phase-2-enable-password-writeback)
 - [Fase 3: configurar y probar el restablecimiento de contraseña](#phase-3-configure-and-test-password-reset)
     
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -49,7 +49,7 @@ En primer lugar, siga las instrucciones de sincronización [de hash de contrase�
 
 La configuración resultante tiene este aspecto:
   
-![La empresa simulada con el entorno de prueba con la sincronización de hash de contraseñas](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![La empresa simulada con el entorno de prueba de sincronización de hash de contraseña.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 Esta configuración se compone de:
   

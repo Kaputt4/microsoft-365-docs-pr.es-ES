@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las aplicaciones Microsoft Teams que se usan en su organización obteniendo el Microsoft Teams de uso de aplicaciones de Microsoft 365 Informes.
-ms.openlocfilehash: 6691520f7fc2f05f58d83ea97ab07f1f0bfeb144fc6b6bd9036e0773be10bb78
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a64664c6d9e78499501d16f56b41aa9be6058eaa
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797805"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565005"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365 Informes en el Centro de administración: Microsoft Teams de dispositivos
 
@@ -44,13 +44,13 @@ El panel Microsoft 365 **informes le** muestra la introducción a la actividad e
 
 Puedes ver el uso del dispositivo en el informe Teams seleccionando la **pestaña Uso del** dispositivo.<br/>![Microsoft 365: Microsoft Teams de dispositivos.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
 
-Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Teams de dispositivo de usuario: elija columnas](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
+Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Teams de dispositivo de usuario: elija columnas.](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
 Puede visualizar el informe **Uso de dispositivos de Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Item|Descripción|
+|Elemento|Description|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |El nombre para mostrar del usuario.  <br/> |

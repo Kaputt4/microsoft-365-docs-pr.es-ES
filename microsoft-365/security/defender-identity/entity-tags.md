@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: e3e8ff4f94b0295b4ce42e20175a3547cfb4ae23
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 7b09c12c1d4c519a47fc60057ab26741a7145469
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58359925"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566691"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Etiquetas de entidad Defender for Identity en Microsoft 365 Defender
 
@@ -32,11 +32,11 @@ En Microsoft 365 Defender, puede establecer tres tipos de etiquetas de entidad d
 
 Para establecer estas etiquetas, [en Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Configuración** y, a continuación, **Identities**.
 
-![Vaya a Configuración, a continuación, Identidades](../../media/defender-identity/settings-identities.png)
+![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
 La configuración de etiquetas aparecerá en **Etiquetas de entidad**.
 
-![Tipos de configuración de etiquetas](../../media/defender-identity/tag-settings.png)
+![Tipos de configuración de etiquetas.](../../media/defender-identity/tag-settings.png)
 
 Para establecer cada tipo de etiqueta, siga las instrucciones siguientes.
 
@@ -48,15 +48,15 @@ También puede etiquetar manualmente usuarios, dispositivos o grupos como confid
 
 1. Seleccione **Confidencial**. A continuación, verá los **usuarios,** **dispositivos** y grupos confidenciales **existentes.**
 
-    ![Entidades confidenciales](../../media/defender-identity/sensitive-entities.png)
+    ![Entidades confidenciales.](../../media/defender-identity/sensitive-entities.png)
 
 1. En cada categoría, seleccione **Etiqueta...** para etiquetar ese tipo de entidad. Por ejemplo, en **Grupos**, seleccione **Grupos de etiquetas.** Se abrirá un panel con los grupos que puede seleccionar para etiquetar. Para buscar un grupo, escriba su nombre en el cuadro de búsqueda.
 
-    ![Agregar grupos](../../media/defender-identity/add-groups.png)
+    ![Agregar grupos.](../../media/defender-identity/add-groups.png)
 
 1. Seleccione el grupo y haga clic **en Agregar selección.**
 
-    ![Agregar selección](../../media/defender-identity/add-selection.png)
+    ![Agregar selección.](../../media/defender-identity/add-selection.png)
 
 ## <a name="honeytoken-tags"></a>Etiquetas de Honeytoken
 
@@ -66,15 +66,15 @@ Puede etiquetar usuarios o dispositivos con **la etiqueta Honeytoken** de la mis
 
 1. Seleccione **Honeytoken**. A continuación, verá los dispositivos y usuarios de **honeytoken** **existentes.**
 
-    ![Entidades de Honeytoken](../../media/defender-identity/honeytoken-entities.png)
+    ![Entidades de Honeytoken.](../../media/defender-identity/honeytoken-entities.png)
 
 1. En cada categoría, seleccione **Etiqueta...** para etiquetar ese tipo de entidad. Por ejemplo, en **Usuarios**, seleccione **Etiquetar usuarios.** Se abrirá un panel con los grupos que puede seleccionar para etiquetar. Para buscar un grupo, escriba su nombre en el cuadro de búsqueda.
 
-    ![Agregar usuarios](../../media/defender-identity/add-users.png)
+    ![Agregar usuarios.](../../media/defender-identity/add-users.png)
 
 1. Seleccione el usuario y haga clic **en Agregar selección.**
 
-    ![Agregar usuario seleccionado](../../media/defender-identity/add-selected-user.png)
+    ![Agregar usuario seleccionado.](../../media/defender-identity/add-selected-user.png)
 
 ## <a name="exchange-server-tags"></a>Exchange de servidor
 
@@ -82,15 +82,15 @@ Defender for Identity considera que Exchange servidores como activos de alto val
 
 1. Seleccione **Exchange servidor**. A continuación, verá los dispositivos existentes etiquetados con la **etiqueta Exchange de servidor.**
 
-    ![Exchange servidores](../../media/defender-identity/exchange-servers.png)
+    ![Exchange servidores.](../../media/defender-identity/exchange-servers.png)
 
 1. Para etiquetar un dispositivo como servidor Exchange, seleccione **Etiquetar dispositivos**.  Se abrirá un panel con los dispositivos que puede seleccionar para etiquetar. Para buscar un dispositivo, escriba su nombre en el cuadro de búsqueda.
 
-    ![Agregar dispositivos](../../media/defender-identity/add-devices.png)
+    ![Agregar dispositivos.](../../media/defender-identity/add-devices.png)
 
 1. Selecciona el dispositivo y haz clic **en Agregar selección.**
 
-    ![Seleccionar dispositivo](../../media/defender-identity/select-device.png)
+    ![Selecciona dispositivo.](../../media/defender-identity/select-device.png)
 
 ## <a name="see-also"></a>Vea también
 

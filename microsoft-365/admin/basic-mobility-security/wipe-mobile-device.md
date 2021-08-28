@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa la movilidad básica y la seguridad integradas para quitar información de los dispositivos inscritos.
-ms.openlocfilehash: d9c31a037dfce1ad2a13cce8b384ebdbcc5164b9
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: b687b3d13f95cb05d9261064d385d35ef6d7f7bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394317"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564422"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Borrar un dispositivo móvil en Movilidad básica y seguridad
 
@@ -50,7 +50,7 @@ Los dispositivos móviles pueden almacenar información confidencial de la organ
 
 2. Escribe Administración de dispositivos móviles en el campo de búsqueda y selecciona **Administración de dispositivos móviles** en la lista de resultados.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opción de administración de dispositivos móviles Basic Mobility y Secruity":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opción básica de administración de dispositivos móviles Movilidad y Secruity.":::
 
 3. Seleccione **Administrar dispositivos**.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Después de crear e iterar en una colección borrador, puede confirmarla en un conjunto de revisión. Cuando se confirma un borrador de colección, los elementos recopilados se agregan al conjunto de revisión en el caso. Después de que los elementos recopilados estén en el conjunto de revisión, puede analizarlos, revisarlos y exportarlos.
-ms.openlocfilehash: c5e2ebaec734efed1c310e13a8d66badefac860dfaf59ea8c6189104656185df
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9b63117a90f6373e485f74e2edccfa0992ca2ded
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814773"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567513"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Confirmar un borrador de colección en un conjunto de revisión en Advanced eDiscovery
 
@@ -31,7 +31,7 @@ Cuando esté satisfecho con los elementos que haya recopilado en una colección 
 
 1. En el Centro de cumplimiento de Microsoft 365, abra el Advanced eDiscovery y, a continuación, seleccione la pestaña **Colecciones** para mostrar una lista de las colecciones en el caso.
 
-   ![Lista de colecciones en un caso](../media/CommitDraftCollections1.png)
+   ![Lista de colecciones en un caso.](../media/CommitDraftCollections1.png)
 
    > [!TIP]
    > Un valor de en la columna Estado identifica las colecciones de borrador que se pueden `Estimated` agregar a un conjunto de revisión.  Un estado de indica que ya se ha agregado una colección `Committed` a un conjunto de revisión.

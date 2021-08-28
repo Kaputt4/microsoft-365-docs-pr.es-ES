@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: 41838fae932dbe8c6d24388f5ce3b241a6742f0412fdb05435f2baf5702047c7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2928d1f6c7cc01819eab6c3f3dcd2f41291191e3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802051"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567729"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
@@ -233,7 +233,7 @@ Después de completar este paso, asegúrese de copiar el identificador de trabaj
 
    - **Upload un archivo de ejemplo**. Si selecciona esta opción, haga clic Upload **archivo de ejemplo** para cargar el archivo CSV que preparó en el paso 1. Esta opción permite seleccionar rápidamente los nombres de columna en el archivo CSV de una lista desplegable para asignarlos a los tipos de datos de los escenarios de RECURSOS humanos que seleccionó anteriormente.
 
-   O
+   OR
 
    - **Proporcione manualmente los detalles de asignación**. Si selecciona esta opción, debe escribir el nombre de las columnas del archivo CSV para asignarlas a los tipos de datos de los escenarios de RECURSOS humanos que seleccionó anteriormente.
 
@@ -247,7 +247,7 @@ Después de completar este paso, asegúrese de copiar el identificador de trabaj
 
    Se muestra una página de estado que confirma que se creó el conector. Esta página contiene dos cosas importantes que debe completar el siguiente paso para ejecutar el script de ejemplo para cargar los datos de RECURSOS humanos.
 
-   ![Página de revisión con identificador de trabajo y vínculo a github para script de ejemplo](../media/HRConnector_Confirmation.png)
+   ![Revise la página con el identificador de trabajo y el vínculo a github para ver el script de ejemplo.](../media/HRConnector_Confirmation.png)
 
    1. **Id. de trabajo.** Necesitará este identificador de trabajo para ejecutar el script en el paso siguiente. Puede copiarlo desde esta página o desde la página desplegable del conector.
 
@@ -259,7 +259,7 @@ Después de completar este paso, asegúrese de copiar el identificador de trabaj
 
 10. Haga clic en el conector de RECURSOS que acaba de crear para mostrar la página desplegable, que contiene propiedades y otra información sobre el conector.
 
-   ![Página desplegable para el nuevo conector de RECURSOS HUMANOS](../media/HRConnectorWizard7.png)
+   ![Página desplegable para el nuevo conector de RRHH.](../media/HRConnectorWizard7.png)
 
 Si aún no lo ha hecho, puede copiar los valores del identificador de aplicación **de Azure** y el identificador de trabajo **de conector**. Los necesitará para ejecutar el script en el paso siguiente. También puede descargar el script desde la página desplegable (o descargarlo mediante el vínculo en el paso siguiente).
 
@@ -289,7 +289,7 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 
    En la tabla siguiente se describen los parámetros que se deben usar con este script y sus valores necesarios. La información obtenida en los pasos anteriores se usa en los valores de estos parámetros.
 
-   | Parámetro | Descripción |
+   | Parámetro | Description |
    |:-----|:-----|:-----|
    |`tenantId`|Este es el identificador de la Microsoft 365 que obtuvo en el paso 2. También puede obtener el identificador de  inquilino de su organización en la hoja Información general del Centro de administración de Azure AD. Esto se usa para identificar la organización.|
    |`appId` |Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 2. Azure AD lo usa para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización. | 
@@ -317,11 +317,11 @@ Después de crear el conector de recursos humanos y ejecutar el script para carg
 
 2. Haga clic **en la pestaña Conectores** y, a continuación, seleccione el conector de RECURSOS para mostrar la página desplegable. Esta página contiene las propiedades y la información sobre el conector.
 
-   ![Página desplegable del conector de RECURSOS con propiedades y estado](../media/HRConnectorFlyout1.png)
+   ![Página desplegable del conector de RECURSOS con propiedades y estado.](../media/HRConnectorFlyout1.png)
 
 3. En **Progreso,** haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo CSV en la nube de Microsoft. 
 
-   ![El archivo de registro del conector de RECURSOS muestra las filas de números del archivo CSV que se cargaron](../media/HRConnectorLogFile.png)
+   ![El archivo de registro del conector de RECURSOS muestra las filas de números del archivo CSV que se cargaron.](../media/HRConnectorLogFile.png)
 
    El `RecordsSaved` campo indica el número de filas del archivo CSV que se cargó. Por ejemplo, si el archivo CSV contiene cuatro filas, el valor de los campos es 4, si el script cargó correctamente todas las filas `RecordsSaved` del archivo CSV.
 
@@ -357,7 +357,7 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
 7. Seleccione la **pestaña Acciones,** haga clic **en Nuevo** y, a continuación, haga lo siguiente:
 
-   ![Configuración de la acción para crear una nueva tarea programada para el script del conector de RECURSOS HUMANOS](../media/HRConnectorScheduleTask1.png)
+   ![Configuración de acción para crear una nueva tarea programada para el script del conector de recursos humanos.](../media/HRConnectorScheduleTask1.png)
 
    1. En la **lista** desplegable Acción, asegúrese de que está seleccionado **Iniciar un** programa.
 
@@ -373,7 +373,7 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
    La nueva tarea se muestra en la Biblioteca del programador de tareas.
 
-   ![La nueva tarea se muestra en la Biblioteca del programador de tareas](../media/HRConnectorTaskSchedulerLibrary.png)
+   ![La nueva tarea se muestra en la Biblioteca del programador de tareas.](../media/HRConnectorTaskSchedulerLibrary.png)
 
    Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede hacer doble clic en la tarea para editarla.
 

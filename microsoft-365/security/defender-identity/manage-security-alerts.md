@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: dac11b5a2284a15965fd4305968dd6f3961b3df1b7dbc8932f7fec7944714353
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 98df694002d31e330fff1b5d53618044bc6c5dae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844417"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566669"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Alertas de seguridad de Defender for Identity en Microsoft 365 Defender
 
@@ -40,21 +40,21 @@ Se puede acceder a las alertas desde varias ubicaciones, incluida la página **A
 
 En [Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Incidentes & y,** a continuación, a **Alertas**.
 
-![Vaya a Incidentes y alertas y, a continuación, Alertas](../../media/defender-identity/incidents-alerts.png)
+![Vaya a Incidentes y alertas y, a continuación, Alertas.](../../media/defender-identity/incidents-alerts.png)
 
 Para ver alertas de Defender for Identity, en la  parte superior derecha, seleccione **Filtrar** y, a continuación, en Orígenes de servicio, seleccione **Microsoft Defender para Identidad** y **seleccione Aplicar**:
 
-![Filtrar para eventos de Defender for Identity](../../media/defender-identity/filter-defender-for-identity.png)
+![Filtrar para eventos Defender para Identity.](../../media/defender-identity/filter-defender-for-identity.png)
 
 Las alertas se muestran con información en las siguientes columnas: **Nombre** de alerta **,** **Etiquetas**, Gravedad **,** Estado de investigación , **Estado**, **Categoría** **,** Origen de detección **,** Activos afectados **,** Primera actividad y Última **actividad**.
 
-![Eventos de Defender for Identity](../../media/defender-identity/filtered-alerts.png)
+![Defender para eventos Identity.](../../media/defender-identity/filtered-alerts.png)
 
 ## <a name="manage-alerts"></a>Administrar alertas
 
 Si hace clic en **el nombre de alerta** de una de las alertas, irá a la página con detalles sobre la alerta. En el panel izquierdo, verá un resumen de Lo que **ocurrió**:
 
-![Lo que ocurrió en alerta](../../media/defender-identity/what-happened.png)
+![Lo que ocurrió en alerta.](../../media/defender-identity/what-happened.png)
 
 Encima del **cuadro Qué sucedió** hay botones para **cuentas,** **host de destino** y host de origen **de** la alerta. Para otras alertas, es posible que vea los botones para obtener información sobre hosts, cuentas, direcciones IP, dominios y grupos de seguridad adicionales. Seleccione cualquiera de ellos para obtener más detalles sobre las entidades implicadas.
 
@@ -62,19 +62,19 @@ En el panel derecho, verá los detalles **de la alerta**. Aquí puede ver más d
 
 - **Clasificar esta alerta:** aquí puede designar esta alerta como **alerta True** o **False alert**
 
-    ![Clasificar alerta](../../media/defender-identity/classify-alert.png)
+    ![Clasificar alerta.](../../media/defender-identity/classify-alert.png)
 
 - **Estado de alerta:** en **Establecer clasificación,** puede clasificar la alerta como **True** o **False**. En **Asignado a**, puede asignar la alerta a usted mismo o desasignación.
 
-    ![Estado de alerta](../../media/defender-identity/alert-state.png)
+    ![Estado de alerta.](../../media/defender-identity/alert-state.png)
 
 - Detalles de **alerta:** en Detalles de **alerta,** puede encontrar más información sobre la alerta específica, seguir un vínculo a la documentación sobre el tipo de alerta, ver a qué incidente está asociada la alerta, revisar las investigaciones automatizadas vinculadas a este tipo de alerta y ver los dispositivos y usuarios afectados.
 
-    ![Detalles de la alerta](../../media/defender-identity/alert-details.png)
+    ![Detalles de alerta.](../../media/defender-identity/alert-details.png)
 
 - **Comentarios & historial:** aquí puede agregar sus comentarios a la alerta y ver el historial de todas las acciones asociadas con la alerta.
 
-    ![Comentarios e historial](../../media/defender-identity/comments-history.png)
+    ![Comentarios e historial.](../../media/defender-identity/comments-history.png)
 
 - **Administrar alerta:** si selecciona **Administrar alerta,** irá a un panel que le permitirá editar:
   - **Estado:** puede elegir **Nuevo**, **Resuelto** o **En curso**.
@@ -83,11 +83,11 @@ En el panel derecho, verá los detalles **de la alerta**. Aquí puede ver más d
 
     Si selecciona los tres puntos junto a Administrar alerta **,** puede consultar a un experto en **amenazas,** Exportar la alerta **a** un archivo Excel o Vincular a **otro incidente**.
 
-    ![Administrar alerta](../../media/defender-identity/manage-alert.png)
+    ![Administrar alerta.](../../media/defender-identity/manage-alert.png)
 
     > [!NOTE]
     > En el Excel, ahora tiene dos vínculos disponibles: Ver en **Microsoft Defender** para identidad y ver **en Microsoft 365 Defender**. Cada vínculo le llevará al portal correspondiente y le proporcionará información sobre la alerta allí.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Investigar alertas en Microsoft 365 Defender](../defender/investigate-alerts.md)

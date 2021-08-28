@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 2d9914dec5abcf87885404adbc5092605402a045
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 6629672ec43b157c2ce1c70d383d6772e5671260
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599172"
+ms.locfileid: "58564027"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -408,6 +408,8 @@ Siga estos pasos para crear un flujo Power Automate de una plantilla de administ
 
 > [!IMPORTANT]
 > Si otros usuarios de la organización necesitan acceso al flujo, el flujo debe compartirse.
+
+![El poder de administración de riesgos de Insider automatiza los flujos.](../media/insider-risk-settings-power-automate-flows.png)
 
 ### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>Crear un flujo de Power Automate personalizado para la administración de riesgos de insider
 

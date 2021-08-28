@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 815b962d56ca75dbd864579d7f26e24a587b74df
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a253d1224f1c7a0e0be0b5478efcc78204cb4a27
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256545"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565753"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -117,7 +117,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 Seleccione **Ejecutar consulta** para ver los resultados. Use el icono expandir situado en la parte superior derecha del editor de consultas para centrarse en la consulta de búsqueda y los resultados. 
 
-![Imagen del control Expand en el editor de consultas de búsqueda avanzada](../../media/advanced-hunting-expand.png)
+![Imagen del control Expand en el editor de consultas de búsqueda avanzada.](../../media/advanced-hunting-expand.png)
 
 >[!TIP]
 >Puede ver los resultados de la consulta como gráficos y ajustar rápidamente los filtros. Para obtener instrucciones, [lea sobre cómo trabajar con resultados de consulta](advanced-hunting-query-results.md)
@@ -167,13 +167,13 @@ Puede usar el editor de consultas para experimentar con varias consultas. Para u
 - Separe cada consulta con una línea vacía.
 - Coloque el cursor en cualquier parte de una consulta para seleccionar esa consulta antes de ejecutarla. Solo se ejecutará la consulta seleccionada. Para ejecutar otra consulta, mueva el cursor en consecuencia y seleccione **Ejecutar consulta**.
 
-![Imagen del editor de consultas con varias consultas](../../media/mtp-ah/ah-multi-query.png)
+![Imagen del editor de consultas con varias consultas.](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>Usar las consultas de ejemplo
 
 La sección **Comenzar** ofrece algunas consultas sencillas con operadores de uso habitual. Pruebe a ejecutar estas consultas y realizar pequeñas modificaciones en ellas.
 
-![Imagen de la ventana de búsqueda avanzada](../../media/advanced-hunting-get-started.png)
+![Imagen de la ventana de búsqueda avanzada.](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >Además de los ejemplos de consultas básicas, también puede acceder a [consultas compartidas](advanced-hunting-shared-queries.md) done encontrará escenarios específicos de búsqueda de amenazas. Explore las consultas compartidas en el lado izquierdo de la página o el [GitHub de consultas](https://aka.ms/hunting-queries).

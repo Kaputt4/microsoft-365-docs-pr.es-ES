@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fcf3e170752cfc31c2117b51b9be9fba719db30c
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: d49446ff602c0354ee7702c9f8325f5cc5fa0409
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392086"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564175"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -334,7 +334,7 @@ Las plantillas de avisos son plantillas de correo electrónico personalizadas do
 |**Nombre de la plantilla** | Sí | Nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
 | **Dirección del remitente** | Sí | La dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva, seleccionada en Active Directory para la suscripción. |
 | **Direcciones CC y CCO** | No | Usuarios o grupos opcionales que se notificarán de la coincidencia de directiva, seleccionados desde Active Directory para su suscripción. |
-| **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
+| **Subject** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
 | **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite valores de texto o HTML. |
 
 ### <a name="html-for-notices"></a>HTML para avisos
@@ -422,7 +422,7 @@ Los clientes con Microsoft 365 que incluyen el cumplimiento de la comunicación 
 > [!IMPORTANT]
 > ¿Recibe avisos para la validación de licencias adicionales al probar Power Automate flujos? Es posible que su organización aún no haya recibido actualizaciones de servicio para esta característica de vista previa. Las actualizaciones se implementan y todas las organizaciones con suscripciones Microsoft 365 que incluyan el cumplimiento de comunicaciones deben tener compatibilidad con licencias para los flujos creados a partir de las plantillas Power Automate recomendadas antes del 30 de octubre de 2020.
 
-![Cumplimiento de Power Automate](../media/communication-compliance-power-automate.png)
+![Cumplimiento de Power Automate.](../media/communication-compliance-power-automate.png)
 
 La siguiente Power Automate se proporciona a los clientes para admitir la automatización de procesos para alertas de cumplimiento de comunicaciones:
 
@@ -491,7 +491,7 @@ Siga estos pasos para eliminar un flujo Power Automate datos:
 
 El nuevo **panel de** informes es la ubicación central para ver todos los informes de cumplimiento de comunicaciones. Los widgets de informe proporcionan una vista rápida de los conocimientos más necesarios para una evaluación general del estado de las actividades de cumplimiento de comunicaciones. La información contenida en los widgets del informe no es exportable. Los informes detallados proporcionan información detallada relacionada con áreas específicas de cumplimiento de comunicaciones y ofrecen la capacidad de filtrar, agrupar, ordenar y exportar información durante la revisión. Para los filtros de intervalo de fecha y hora, la fecha y hora de los eventos se enumeran en Hora universal coordinada (UTC).
 
-![Panel de informes de cumplimiento de comunicaciones](../media/communication-compliance-reports-dashboard.png)
+![Panel de informes de cumplimiento de comunicaciones.](../media/communication-compliance-reports-dashboard.png)
 
 El **panel informes contiene** los siguientes widgets de informe y vínculos de informes detallados:
 

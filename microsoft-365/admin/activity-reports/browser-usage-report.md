@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso del explorador de Microsoft mediante el panel Microsoft 365 informes en la Centro de administración de Microsoft 365.
-ms.openlocfilehash: 7225b3b1d2c86dd917bc4cb69d2cf3ca398221619710e9f0268e9d861d8d261b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 666f3c77267fdb19bdacd3340a0c691f66ffa3b8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798220"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565189"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Informes en el Centro de administración: uso del explorador de Microsoft
 
@@ -39,9 +39,9 @@ El panel Microsoft 365 **informes le** muestra una introducción a la actividad 
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>Interpretar el informe de uso del explorador de Microsoft
 
-![Informe de uso del explorador de Microsoft](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
+![Informe de uso del explorador de Microsoft.](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
 
-|Item|Descripción|
+|Elemento|Description|
  |:-----|:-----|
  |1. <br/> |El **informe de uso del** explorador de Microsoft se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días.  <br/> |
  |2. <br/> |Los datos de cada informe suelen abarcar hasta los últimos siete días. <br/> |

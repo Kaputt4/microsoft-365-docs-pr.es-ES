@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos ringcentral de Veritas a Microsoft 365. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, exhibición de documentos electrónicos y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 6c5e6bee86a4d333931d93350b2f8875850cdc5c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 67dd74e9eb4effbeb938d16585f1e465d835e56e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257421"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567537"
 ---
 # <a name="set-up-a-connector-to-archive-ringcentral-data"></a>Configurar un conector para archivar datos de RingCentral
 
-Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos desde la plataforma RingCentral a los buzones de usuario de su Microsoft 365 organización. Veritas proporciona el conector RingCentral configurado para capturar elementos del origen de datos de terceros e importarlos a Microsoft 365. El conector convierte contenido como chats, datos adjuntos, tareas, notas y publicaciones de RingCentral a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a los buzones de usuario en Microsoft 365.
+Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos desde la plataforma RingCentral a los buzones de usuario de su Microsoft 365 organización. Veritas proporciona un [conector RingCentral](https://www.veritas.com/insights/merge1/ringcentral) configurado para capturar elementos del origen de datos de terceros e importarlos a Microsoft 365. El conector convierte contenido como chats, datos adjuntos, tareas, notas y publicaciones de RingCentral a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a los buzones de usuario en Microsoft 365.
 
 Una vez que los datos de RingCentral se almacenan en buzones de usuario, puede aplicar Microsoft 365 de cumplimiento, como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención. El uso de un conector RingCentral para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
@@ -29,7 +29,7 @@ Una vez que los datos de RingCentral se almacenan en buzones de usuario, puede a
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar los datos ringcentral en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos RingCentral](../media/RingCentralConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos RingCentral.](../media/RingCentralConnectorWorkflow.png)
 
 1. Su organización trabaja con RingCentral para configurar y configurar un sitio RingCentral.
 

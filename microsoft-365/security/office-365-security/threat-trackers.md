@@ -18,12 +18,12 @@ ms.collection:
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos rastreadores notables, para ayudar a su organización a mantenerse al tanto de los problemas de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8beeceec6c98af093d2fff30e4553a36cdcce28634fadc03cc37c22b96fc4848
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ab8cf03b7ceb1ec01e6b30d3b0c11bbb7223b6f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56877739"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566529"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -42,11 +42,11 @@ ms.locfileid: "56877739"
 
 Los rastreadores de amenazas son widgets informativos y vistas que le proporcionan inteligencia sobre diferentes problemas de ciberseguridad que pueden afectar a su empresa. Por ejemplo, puedes ver información sobre las campañas de malware de tendencias con rastreadores de amenazas.
 
-![Ejemplo de rastreador de amenazas que muestra campañas de malware](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![Ejemplo de Rastreador de amenazas que muestra campañas de malware.](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
 
 La mayoría de las páginas de seguimiento incluyen números de tendencia que se actualizan periódicamente, widgets que  le ayudarán a comprender qué problemas son los más grandes o han aumentado más, y un vínculo rápido en la columna Acciones que le lleva al Explorador, donde puede ver información más detallada.
 
-![Ejemplo de información de campaña en el Explorador](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+![Ejemplo de información de campaña en el Explorador.](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
 
 Los rastreadores son solo algunas de las muchas características excelentes que obtienes con [Microsoft Defender para Office 365 Plan 2](office-365-ti.md). Los rastreadores de amenazas [incluyen rastreadores notables,](#noteworthy-trackers)rastreadores [de tendencias,](#trending-trackers)consultas rastreadas [y](#tracked-queries) [consultas guardadas.](#saved-queries)
 
@@ -65,7 +65,7 @@ Normalmente, los rastreadores destacados se publicarán solo durante un par de s
 
 Los rastreadores de tendencias (anteriormente denominados Campañas) destacan las nuevas amenazas recibidas en el correo electrónico de la organización en la última semana.
 
-![Ejemplo de widget de campañas de malware de tendencia](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![Ejemplo de widget de campañas de malware de tendencia.](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
 
 Los rastreadores de tendencias te dan una idea de las nuevas amenazas que debes revisar para asegurarte de que tu entorno corporativo más amplio esté preparado contra ataques.
 
@@ -73,13 +73,13 @@ Los rastreadores de tendencias te dan una idea de las nuevas amenazas que debes 
 
 Las consultas rastreadas aprovechan las consultas guardadas para evaluar periódicamente Microsoft 365 actividad de la organización. Esto le ofrece tendencias de eventos, con más que venir en los próximos meses. Las consultas rastreadas se ejecutan automáticamente, lo que le proporciona información actualizada sin tener que recordar volver a ejecutar las consultas.
 
-![Ejemplo de consultas de seguimiento con una seleccionada](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+![Ejemplo de consultas de seguimiento con una seleccionada.](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
 
 ### <a name="saved-queries"></a>Consultas guardadas
 
 Las consultas guardadas también se encuentran en la sección Rastreadores. Puede usar consultas guardadas para almacenar las búsquedas comunes del Explorador a las que desea volver más rápido y repetidamente, sin tener que volver a crear la búsqueda cada vez.
 
-![Ejemplo de consultas guardadas con una seleccionada](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+![Ejemplo de consultas guardadas con una seleccionada.](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
 
 Siempre puede guardar una consulta de rastreador notable o cualquiera  de sus propias consultas del Explorador con el botón Guardar consulta en la parte superior de la página Explorador. Cualquier cosa guardada allí aparecerá en la **lista Consultas guardadas** en la página Rastreador.
 
@@ -89,19 +89,19 @@ Tanto si está revisando el correo electrónico, el contenido o las actividades 
 
 Y recuerde que siempre puede proporcionarnos comentarios sobre esta u otras  características de seguridad de Microsoft 365 haciendo clic en el botón Comentarios de la esquina inferior derecha.
 
-![Portal de Microsoft 365 Defender](../../media/microsoft-365-defender-portal.png)
+![Microsoft 365 Defender portal.](../../media/microsoft-365-defender-portal.png)
 
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>Rastreadores y Microsoft Defender para Office 365
 
 Con nuestra amenaza notable, destacamos las amenazas de malware avanzadas detectadas [por Caja fuerte datos adjuntos](safe-attachments.md). Si es un cliente Office 365 Enterprise E5 y no usa [Microsoft Defender](defender-for-office-365.md)para Office 365 , debería estarlo: está incluido en su suscripción. Defender for Office 365 proporciona valor incluso si tiene otras herramientas de seguridad que filtran el flujo de correo electrónico con sus Office 365 servicios. Sin embargo, las características de vínculos de correo no deseado [y Caja fuerte](safe-links.md) funcionan mejor cuando la solución de seguridad de correo electrónico principal es a través de Office 365.
 
-![Microsoft Defender para Office 365 en el portal Microsoft 365 Defender web](../../media/policies.png)
+![Microsoft Defender para Office 365 en el portal Microsoft 365 Defender web.](../../media/policies.png)
 
 In today's threat-riddled world, running only traditional anti-malware scans means you are not protected well enough against attacks. Los atacantes más sofisticados de hoy en día usan herramientas disponibles habitualmente para crear ataques nuevos, ofuscados o retrasados que no serán reconocidos por los motores antimalware tradicionales basados en firmas. La característica Caja fuerte datos adjuntos toma datos adjuntos de correo electrónico y los detona en un entorno virtual para determinar si son seguros o malintencionados. Este proceso de detonación abre cada archivo en un entorno de equipo virtual y, a continuación, observa lo que sucede después de abrir el archivo. Ya sea un archivo PDF y comprimido, o un documento Office, el código malintencionado puede ocultarse en un archivo, activando solo una vez que la víctima lo abra en su equipo. Al detonar y analizar el archivo en el flujo de correo electrónico, las capacidades de Defender para Office 365 encuentran estas amenazas en función de comportamientos, reputación de archivos y una serie de reglas heurísticas.
 
 El nuevo filtro de amenazas notables resalta los elementos que se detectaron recientemente a través de Caja fuerte datos adjuntos. Estas detecciones representan elementos que son nuevos archivos malintencionados, que no se han encontrado anteriormente Microsoft 365 en el flujo de correo electrónico o en el correo electrónico de otros clientes. Preste atención a los elementos del Rastreador de amenazas notables, vea quién fue el objetivo de ellos y revise los detalles de detonación que se muestran en la pestaña Análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el Explorador). Nota Solo encontrará esta pestaña en los correos electrónicos detectados por la funcionalidad de datos adjuntos de Caja fuerte: este rastreador notable incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el Explorador.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si su organización aún no tiene estas Office 365 de investigación y respuesta de amenazas, vea [How do we get Office 365 Threat Investigation and Response capabilities?](office-365-ti.md).
 

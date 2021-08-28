@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f504ac86dcef68bf4427819babea119b2418512bee59e169ffd72e51a6dd92dd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5436494d8d94097e15f67e3b568727fe510113ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873468"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565719"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ La **cola Incidentes muestra** una colección de incidentes que se crearon en di
 
 You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes.":::
 
 La **sección Incidentes y alertas** más recientes muestra un gráfico del número de alertas recibidas e incidentes creados en las últimas 24 horas.
 
@@ -63,14 +63,14 @@ La cola de incidentes también expone varias opciones de filtrado que, cuando se
 
 En la cola de incidentes  predeterminada, puede seleccionar Filtros para ver un panel Filtros, desde el que puede ver un conjunto filtrado de incidentes. Aquí le mostramos un ejemplo.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Ejemplo del panel de filtros de la cola de incidentes":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Ejemplo del panel de filtros de la cola de incidentes.":::
 
 En esta tabla se enumeran los nombres de filtro disponibles.
 
-| Nombre del filtro | Description |
+| Nombre del filtro | Descripción |
 |:-------|:-----|
 | Asignado a | Puede elegir mostrar las alertas que se le han asignado o las que controla la automatización. |
-| Categorías | Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. |
+| Categories | Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. |
 | Clasificación | Filtrar incidentes en función de las clasificaciones establecidas de las alertas relacionadas. Los valores incluyen alertas verdaderas, alertas falsas o no establecidas. |
 | Confidencialidad de datos | Algunos ataques tienen por objetivo extraer datos confidenciales o importantes. Al aplicar un filtro para ver si hay datos confidenciales implicados en el incidente, puede determinar rápidamente si la información confidencial se ha visto comprometida y así dar prioridad a estos incidentes. <br><br> Solo se aplica si se ha activado Microsoft Information Protection. |
 | Grupo de dispositivos | Filtrar por grupos de dispositivos definidos. |
@@ -79,7 +79,7 @@ En esta tabla se enumeran los nombres de filtro disponibles.
 | Múltiples orígenes del servicio  | Filtra para ver solo incidentes que contienen alertas de diferentes orígenes (Microsoft Defender para endpoint, Microsoft Cloud App Security, Microsoft Defender para Identity, Microsoft Defender para Office 365). |
 | Plataforma del sistema operativo | Limitar la vista de cola de incidentes por sistema operativo. |
 | Orígenes del servicio | Al elegir un origen específico, puede concentrarse en los incidentes que contienen al menos una alerta del origen seleccionado. |
-| Severity | La gravedad de un incidente indica el impacto que puede tener en los activos. Cuanto mayor sea la gravedad, mayor será el impacto y, por lo general, se requiere la atención más inmediata. |
+| Gravedad | La gravedad de un incidente indica el impacto que puede tener en los activos. Cuanto mayor sea la gravedad, mayor será el impacto y, por lo general, se requiere la atención más inmediata. |
 | Estado | Puede limitar la lista de incidentes que se muestra en función de su estado para ver cuáles están activos o resueltos. |
 |||
 
@@ -100,14 +100,14 @@ Una vez que haya configurado un filtro útil en la cola de incidentes, puede mar
 
 Una vez que haya compilado y almacenado la lista de vistas de filtro útiles como direcciones URL, puede usarla para procesar y priorizar rápidamente los incidentes de la cola y administrarlos para su posterior asignación y análisis. [](manage-incidents.md)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de determinar qué incidente requiere la prioridad más alta, selecciónelo y:
 
 - [Administrar](manage-incidents.md) las propiedades del incidente para etiquetas, asignación, resolución inmediata de incidentes falsos positivos y comentarios.
 - Comience las [investigaciones](investigate-incidents.md).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)

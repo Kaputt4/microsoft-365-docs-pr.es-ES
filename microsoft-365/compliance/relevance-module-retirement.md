@@ -14,12 +14,12 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 description: El módulo relevancia en Advanced eDiscovery se retirará el 10 de marzo de 2021. En este artículo se explica qué hacer antes de retirar relevancia. En concreto, para finalizar cualquier modelo sin terminar, ejecute el cálculo por lotes para que pueda conservar los metadatos del modelo.
-ms.openlocfilehash: c64a0e1f42fc1904c91c4ac30a74cecb975b1b18c0a3426e63bd5ca2aac45feb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1005c7a1c065adba039f6f07197dbca758d20ea4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871463"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565409"
 ---
 # <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>Retiro del módulo Relevancia en Advanced eDiscovery
 
@@ -37,7 +37,7 @@ Estos son los pasos para completar cualquier modelo sin terminar:
 
    En la siguiente captura de pantalla se muestra un módulo que está listo para un cálculo por lotes. Observe que la evaluación y el aprendizaje se han completado y el siguiente paso es ejecutar el cálculo por lotes.
 
-   ![Captura de pantalla del modelo listo para el cálculo por lotes](../media/ReadyForBatchCalculation.png)
+   ![Captura de pantalla del modelo listo para el cálculo por lotes.](../media/ReadyForBatchCalculation.png)
 
 2. Ejecute el cálculo batch. Vea [Performing Batch calculation](track-relevance-analysis-in-advanced-ediscovery.md#performing-batch-calculation).
 

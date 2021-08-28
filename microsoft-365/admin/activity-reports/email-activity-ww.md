@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Obtenga información sobre cómo obtener un informe de actividad de correo electrónico mediante el panel Microsoft 365 informes en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: b6c045af6e82f791ed8cb010b6b1f18122242ebc5a4bf52ac34d595fad620107
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7189fb560b47c37e48485fdc15be4cd15d80819f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798187"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565177"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Microsoft 365 Informes en el Centro de administración: actividad de correo electrónico
 
@@ -45,9 +45,9 @@ Por ejemplo, puede obtener una vista de alto nivel del tráfico de correo electr
 
 Puede obtener una vista de la actividad de correo electrónico de su usuario consultando los gráficos **Actividad** y **Usuarios**. 
   
-![Informe de actividad de correo electrónico](../../media/5eb1d9e9-8106-4843-acb7-c0238c0da816.png)
+![Informe de actividad de correo electrónico.](../../media/5eb1d9e9-8106-4843-acb7-c0238c0da816.png)
   
-|Item|Descripción|
+|Elemento|Description|
 |:-----|:-----|
 |1.  <br/> |El informe **Actividad de correo electrónico** se puede visualizar para las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
 |2.  <br/> |Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas.  <br/> |
@@ -56,7 +56,7 @@ Puede obtener una vista de la actividad de correo electrónico de su usuario con
 |5.  <br/> | En el **gráfico Actividad,** el eje Y es el recuento de actividad del tipo de correo electrónico enviado, correo electrónico recibido, lectura de correo electrónico, reunión creada e interacción de reunión.  <br/>  En el **gráfico de** actividad Usuarios, el eje Y es la actividad que realiza el usuario del tipo de correo electrónico enviado, correo electrónico recibido, lectura de correo electrónico, reunión creada o reunión interactuada.  <br/>  En ambos gráficos, el eje X es el intervalo de fechas seleccionado para este informe específico.  <br/> |
 |6.  <br/> |Puede filtrar la serie que ve en el gráfico seleccionando un elemento en la leyenda.  <br/> |
 |7.  <br/> | En la tabla se muestra un desglose de las actividades de correo electrónico en el nivel de usuario. Se muestran todos los usuarios que tienen asignado un producto de Exchange y sus actividades de correo electrónico. <br/> <br/> **Nombre de usuario** es la dirección de correo electrónico de los usuarios.  <br/> **El nombre para** mostrar es el nombre completo si el usuario.  <br/> **Eliminado** se refiere al usuario cuyo actual estado se ha eliminado, pero que estaba activo durante parte del período de informes del informe.  <br/> **Fecha de eliminación** es la fecha en que se eliminó el usuario.  <br/> **Fecha de última actividad** hace referencia a la última vez que el usuario realizó una actividad de lectura o envío de correo electrónico.  <br/> **Acciones de envío** es el número de veces que se registra una acción de envío de correo electrónico para el usuario.  <br/> **Acciones de recepción** es el número de veces que se registra una acción de recepción de correo electrónico para el usuario.  <br/> **Acciones de lectura** es el número de veces que se registra una acción de lectura de correo electrónico para el usuario.  <br/> **Las acciones creadas por** la reunión son el número de veces que se registró una acción de envío de solicitud de reunión para el usuario.  <br/> **Las acciones interactúan con reuniones** es el número de veces que se registró una acción de aceptación, provisional, declinación o cancelación de una solicitud de reunión para el usuario.  <br/> **El producto asignado** es los productos que se asignan a este usuario.  <br/>  Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **¿Cómo se ocultan los detalles** del nivel de usuario? en los informes de actividad [de la Centro de administración de Microsoft 365](activity-reports.md).  <br/> |
-|8.  <br/> |Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Informe de actividad de correo electrónico: elegir columnas](../../media/80ffa0ad-61c5-4a6f-8a1d-5f6730ff7da9.png)|
+|8.  <br/> |Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Informe de actividad de correo electrónico: elija columnas.](../../media/80ffa0ad-61c5-4a6f-8a1d-5f6730ff7da9.png)|
 |9.  <br/> |También puede exportar los datos del informe a un Excel .csv, seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.  <br/> |
 |||
    

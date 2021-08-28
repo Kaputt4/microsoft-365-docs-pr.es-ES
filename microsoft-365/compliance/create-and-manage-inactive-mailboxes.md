@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: Conserve el contenido de los buzones eliminados mediante la característica de buzones inactivos en Microsoft 365.
-ms.openlocfilehash: 6f533cf213f28d42dee1bb470cefaa2ced186778
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: f0e95d5853580116db6f7c48396e601058e303e3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503172"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567777"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
 
@@ -58,7 +58,7 @@ Para obtener procedimientos paso a paso para colocar un buzón en retención por
   
 - [Poner un buzón en retención por juicio](create-a-litigation-hold.md)
 
-- [Más información sobre las directivas y las etiquetas de retención](retention.md)
+- [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 
 > [!NOTE]
 > Para las directivas de retención y retención por juicio, puede crear una retención indefinida o en una retención basada en tiempo. En una retención indefinida, el contenido del buzón inactivo se conservará siempre, hasta que se elimine la retención o hasta que se cambie la duración de la retención. Después de quitar la directiva de retención o retención (suponiendo que el buzón se eliminó hace más de 183 días), el buzón inactivo se marcará para su eliminación permanente y el contenido del buzón ya no se conservará ni se podrá detectar. En una directiva de retención o retención basada en tiempo, especifique la duración de la retención. Esta duración se establece para cada elemento, y se calcula a partir de la fecha en que un elemento de buzón se ha recibido o creado. Una vez que ha expirado la retención para un elemento de buzón, y ese elemento se ha movido a la carpeta Elementos recuperables del buzón inactivo o se encuentra en ella, el elemento se elimina permanentemente (purga) del buzón inactivo. 
@@ -78,15 +78,15 @@ Para ver una lista de los buzones inactivos de la organización:
 
 2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar** todo y, a continuación, haga clic en Gobierno de **> retención**.
 
-   ![Haga clic en el botón Buzón inactivo de la página Retención](../media/MCCInactiveMailboxes1.png)
+   ![Haga clic en el botón Buzón inactivo de la página Retención.](../media/MCCInactiveMailboxes1.png)
 
 3. En la **página Retención,** haga clic **en Buzón inactivo** para mostrar una lista de buzones inactivos.
 
 4. Seleccione un buzón inactivo para mostrar una página desplegable con información sobre el buzón inactivo.
 
-   ![La página desplegable muestra detalles sobre el buzón inactivo](../media/MCCInactiveMailboxes2.png)  
+   ![La página desplegable muestra detalles sobre el buzón inactivo.](../media/MCCInactiveMailboxes2.png)  
 
-Puede hacer clic en Exportar icono de resultados de búsqueda Exportar para ver o descargar un archivo CSV que contenga información adicional sobre los buzones inactivos ![ ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png)  de la organización.
+Puede hacer clic en ![ Exportar icono de resultados de búsqueda.](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Exportar** para ver o descargar un archivo CSV que contiene información adicional sobre los buzones inactivos de la organización.
 
 Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell para mostrar la lista de buzones inactivos.
 

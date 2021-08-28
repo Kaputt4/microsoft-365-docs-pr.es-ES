@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el panel Advanced eDiscovery para conjuntos de revisión para analizar rápidamente su corpus para identificar tendencias o estadísticas clave que le ayudarán a desarrollar su estrategia de revisión.
-ms.openlocfilehash: 14baa47a73ac3cc4917d6e2f04614a80960ef085
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 6466e33964969d6cd75addba7092ee95e0c321ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502980"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565523"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery panel para conjuntos de revisión
 
@@ -37,15 +37,15 @@ En algunos casos Advanced eDiscovery, es posible que tenga un gran volumen de do
   
 4. En la lista desplegable de **Resultados individuales**, haga clic en **Vista de perfil de búsqueda**. 
 
-   ![DashbordPivot](../media/dashboardpivot.png)
+   ![DashbordPivot.](../media/dashboardpivot.png)
 
    Se **muestra la página Vista** de perfil de búsqueda; la primera vez que se muestra esta página, se muestran tres widgets predeterminados.
 
-   ![Panel](../media/dashboardonly.png)
+   ![Panel.](../media/dashboardonly.png)
   
 5. Haga clic **en el widget** Nuevo y, a continuación, seleccione uno de los siguientes elementos:
 
-   ![Nueva lista desplegable de widget](../media/NewWidgetDropdownBox.png)
+   ![Nueva lista desplegable de widget.](../media/NewWidgetDropdownBox.png)
 
    - **Elija entre bibliotecas:** Muestra una biblioteca predeterminada de widgets. Haga clic en un  widget y, a continuación, haga clic en Agregar para agregarlo a los widgets de la **página Vista de perfil de** búsqueda.
   
@@ -53,7 +53,7 @@ En algunos casos Advanced eDiscovery, es posible que tenga un gran volumen de do
 
 6. Para crear un widget personalizado, haga lo siguiente en la página desplegable Agregar **widget:**
 
-   ![Crear widget](../media/addwidget.png)
+   ![Crear widget.](../media/addwidget.png)
 
     a. Escriba un nombre para el widget, que se muestra en la barra de título del widget. Es necesario asignar un nombre a un widget, pero es útil identificar los datos del widget.
 
@@ -67,17 +67,17 @@ En algunos casos Advanced eDiscovery, es posible que tenga un gran volumen de do
 
 1. Haga **clic en ...** en la barra de título del widget y, a continuación, haga clic en Aplicar **condición**.
 
-   ![Panel](../media/searchprofilehome.png)
+   ![Panel.](../media/searchprofilehome.png)
 
 2. En la página flotante, haga clic en un elemento de la clave del widget o el gráfico de widget para crear un filtro.
 
-   ![CreateFilter](../media/applyconditionfilter.png)
+   ![CreateFilter.](../media/applyconditionfilter.png)
 
 3. Repita los pasos del 1 al 2 para otros widgets con varios widgets. 
 
 4. Cuando haya terminado, haga clic en **Guardar como** consulta para guardar las condiciones como una nueva consulta de búsqueda para el conjunto de revisión.
 
-   ![Consulta](../media/savequery.png)
+   ![Consulta.](../media/savequery.png)
 
 5. Cierre la **vista Perfil de búsqueda** para volver a la vista de resultados de búsqueda.
 

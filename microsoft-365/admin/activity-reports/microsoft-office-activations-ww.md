@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Obtenga información sobre cómo obtener un informe Office activación para saber qué usuarios han activado su suscripción Office suscripción e identificar usuarios que podrían necesitar ayuda adicional.
-ms.openlocfilehash: ee803dece4e66ede794677b99b3d27de29b53aed11ab590486b1a7bcd1a6c78b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de5ca46cd8ecabb88e250c5fb754b9943a01d4e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797893"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565017"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365 Informes en el Centro de administración: Microsoft Office activaciones
 
@@ -44,11 +44,11 @@ El informe de activación de Office le proporciona una vista de los usuarios que
   
 Puede ver las activaciones en el informe Office 365 seleccionando la **pestaña Activaciones.**<br/>![Microsoft 365: Microsoft Office 365 activación.](../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png)
 
-Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Office 365 activaciones: elija columnas](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
+Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Office 365 activaciones: elija columnas.](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
-|Item|Descripción|
+|Elemento|Description|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario.  <br/> |

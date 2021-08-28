@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo modificar un diccionario de palabras clave en el Centro Microsoft 365 cumplimiento.
-ms.openlocfilehash: 17dafeb6302207ded8653f17f7bf40dfaa8a9e2ef07d7eb38a485488f2346eaa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e060b09f271615f98fe43002029144b119013439
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855465"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565375"
 ---
 # <a name="modify-a-keyword-dictionary"></a>Modificar un diccionario de palabras clave
 
@@ -37,7 +37,7 @@ Los diccionarios de palabras clave se pueden usar como o en patrones de tipo de 
 2. Busque el diccionario de palabras clave que desea actualizar y elija editar. 
 3.  Realice las ediciones con una palabra clave por línea.
 
-![palabras clave de edición de captura de pantalla](../media/edit-keyword-dictionary.png)
+![palabras clave de edición de captura de pantalla.](../media/edit-keyword-dictionary.png)
 
 4. Elija `Done` .
 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Para ver las directivas y acciones de dispositivo, inicie sesión en Microsoft 365 para empresas con credenciales de administrador global.
-ms.openlocfilehash: 060a2bf099fdf0347517be55b56846cbcb98cca4
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: a4494b7125576f927a0cd7f715311ae616c6497c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360766"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566387"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Ver y administrar directivas y dispositivos
 
@@ -41,7 +41,7 @@ Este artículo se aplica a Microsoft 365 Empresa Premium.
 
     En esta página, puede crear, editar, cambiar el grupo de destino o eliminar una directiva.
 
-    ![Screenshot of the Policies page](../../media/devicepolicies.png)
+    ![Captura de pantalla de la página Directivas.](../../media/devicepolicies.png)
   
 ## <a name="view-and-manage-devices"></a>Ver y administrar dispositivos
 
@@ -49,5 +49,5 @@ Este artículo se aplica a Microsoft 365 Empresa Premium.
     
     En esta página, puede seleccionar uno o varios dispositivos y quitar datos de la empresa. En el caso de los dispositivos con Windows 10 para los que tenga configuradas las opciones de protección, también puede elegir restablecer la configuración de fábrica.
   
-   ![Página Administrar dispositivos](../../media/devicesmanage.png)
+   ![Página Administrar dispositivos.](../../media/devicesmanage.png)
 

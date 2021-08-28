@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configure Advanced eDiscovery que se aplican a todos los conjunto de revisión en un caso. Esto incluye la configuración de análisis y reconocimiento óptico de caracteres.
-ms.openlocfilehash: fd1d71a7f617ad836b5c8d2cdcc2beea4b37fdc5aeb14031c80984ca2676db5b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d46ca4dfb5897c7b262858ab7c955221016e3c7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892381"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565421"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurar las opciones de búsqueda y análisis en Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Para configurar las opciones de búsqueda y análisis de un caso:
 
    Se muestra la página de configuración del caso. Esta configuración se aplica a todos los conjuntos de revisión en un caso.
 
-   ![Configurar las opciones de análisis y búsqueda para un Advanced eDiscovery caso](../media/AeDCaseSettings.png)
+   ![Configure las opciones de análisis y búsqueda para un Advanced eDiscovery caso.](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>Casi duplicados y subprocesos de correo electrónico
 
@@ -74,7 +74,7 @@ En esta sección, puede establecer parámetros para temas. Para obtener más inf
 
 Si selecciona la casilla **Crear** automáticamente una búsqueda guardada para revisión después de análisis, Advanced eDiscovery genera automáticamente una consulta de conjunto de revisión denominada **Para revisión.** 
 
-![Consulta autogenerada para revisión](../media/AeDForReviewQuery.png)
+![Consulta de generación automática Para revisión.](../media/AeDForReviewQuery.png)
 
 Esta consulta filtra básicamente los elementos duplicados del conjunto de revisión. Esto le permite revisar los elementos únicos del conjunto de revisión. Esta consulta se crea solo al ejecutar análisis para un conjunto de revisión en el caso. Para obtener más información, acerca de las consultas de conjunto de revisión, vea [Consultar los datos de un conjunto de revisión](review-set-search.md).
 

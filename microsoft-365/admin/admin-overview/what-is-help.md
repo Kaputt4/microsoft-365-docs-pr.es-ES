@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Obtenga información sobre todas las formas en que puede obtener ayuda con el Centro de administración de Microsoft 365.
-ms.openlocfilehash: c011b68e07843956a558d26e42d0c0cd9a328451
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 873f8fb6d016a7ac7a5468154d2c79285ea064ec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394353"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564543"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -46,7 +46,7 @@ Si eres administrador, es tu lugar de acceso para administrar y obtener el máxi
 
 La ayuda se integra en todo el <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">centro de administración,</a>por lo que está ahí cuando la necesite. En la parte superior de muchas páginas, encontrará texto de ayuda en línea que proporciona una introducción informativo de la tarea en la mano, así como vínculos a artículos que le permiten encontrar rápidamente documentación oficial para un aprendizaje más detallado.
 
-![Página Grupos que muestra ayuda en línea y vínculos a artículos](../../media/integrated-help.png)
+![Página Grupos que muestra ayuda en línea y vínculos a artículos.](../../media/integrated-help.png)
 
 ## <a name="modern-self-help-powered-by-ai"></a>Auto-ayuda moderna con tecnología de AI
 
@@ -54,7 +54,7 @@ Para abrir nuestra experiencia moderna de auto-ayuda con  tecnología de intelig
 
 O bien, en aquellas ocasiones en las que no sabes cómo hacer algo en tu situación específica, usa el Asistente de soporte técnico. Actualmente, esta experiencia solo está disponible en inglés. Para activar el Asistente de soporte técnico, solo tiene que usar el botón de alternancia en la parte superior del **panel Necesita** ayuda. El Asistente de soporte proporciona una interfaz de conversación para ayudarle. Después de escribir la consulta, el chatbot le hace preguntas aclarantes para obtener la respuesta correcta para su situación específica. Piense en él como su ayudante virtual para descubrir soluciones y completar tareas.
 
-![Auto-ayuda moderna](../../media/help-options.png)
+![Auto-ayuda moderna.](../../media/help-options.png)
 
 Por supuesto, a veces los humanos responden mejor a las preguntas. Si nuestra auto-ayuda moderna no tiene la respuesta, siempre tienes la opción de ponerse en contacto con nuestros agentes de soporte técnico.
 

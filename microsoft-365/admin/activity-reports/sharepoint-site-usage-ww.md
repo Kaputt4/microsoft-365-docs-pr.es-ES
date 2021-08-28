@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el SharePoint de uso del sitio para saber cuántos archivos almacenan los usuarios en SharePoint sitios, cuántos se usan activamente y el almacenamiento total consumido.
-ms.openlocfilehash: 2280630999ee3fa95d37b27cc57ec36140dd1d953dec0f2cafea8367baf2391e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a55f76fe1ca53129af27647b42ca44ce267a626c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816240"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564797"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 Informes en el Centro de administración: SharePoint de sitio
 
@@ -46,15 +46,15 @@ Microsoft 365 Los informes en el Centro de administración no se admiten GCC inq
 
 Puede ver el uso del sitio en el informe SharePoint mediante la pestaña **Uso del** sitio.<br/>![Microsoft 365: informe de uso SharePoint sitio de Microsoft.](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)
 
-Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![SharePoint de uso del sitio: elija columnas](../../media/71ac3195-c494-40c1-9346-a858125ef6df.png)
+Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![SharePoint de uso del sitio: elija columnas.](../../media/71ac3195-c494-40c1-9346-a858125ef6df.png)
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Item|Descripción|
+|Elemento|Description|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Dirección URL del sitio  <br/> |La dirección URL completa del sitio. <br/> |
-|Deleted  <br/> |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  <br/> |
+|Eliminada  <br/> |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  <br/> |
 |Propietario del sitio  <br/> |Nombre de usuario del propietario principal del sitio.   <br/> |
 |Nombre principal del propietario del sitio  <br/> |La dirección de correo electrónico del propietario del sitio. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La fecha de la última vez que se detectó la actividad del archivo o una página se visualizó en el sitio.  <br/> |
@@ -62,7 +62,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |Uso compartido externo  <br/> | La configuración externa que se puede compartir en el sitio.  <br/> |
 |Directiva de dispositivos no administrados  <br/> | La directiva de acceso al sitio para dispositivos no administrados.  <br/> |
 |Ubicación geográfica  <br/> | Ubicación geográfica del sitio.  <br/> |
-|Files  <br/> |El número de archivos del sitio. <br/>|
+|Archivos  <br/> |El número de archivos del sitio. <br/>|
 |Archivos activos  <br/> | Número de archivos activos en el sitio.<br/> NOTA: Si los archivos se quitaron durante el período de tiempo especificado para el informe, el número de archivos activos que se muestran en el informe puede ser mayor que el número actual de archivos en el sitio.  <br/> |
 |Storage usado (MB)  <br/> |La cantidad de almacenamiento que se usa actualmente en el sitio.  <br/>|
 |Storage asignado (MB)  <br/> |La cantidad máxima de almacenamiento asignada al sitio.  <br/>|

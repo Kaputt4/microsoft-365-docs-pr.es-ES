@@ -15,12 +15,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: cb90623629be58122b985088ddce0ec26e24dc53c0772a7f3a6f09bfa2467731
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 412b42fd7ac67326552f23c4d6cc0909daa60aa6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833605"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565849"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -102,7 +102,7 @@ En los procedimientos de este artículo se describe primero cómo establecer el 
 
    2. Escriba el orden de los orígenes, separados por una sola canalización, por ejemplo: , como `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC` se muestra en la siguiente captura de pantalla.
 
-      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="configuración de directiva de grupo que enumera el orden de los orígenes":::
+      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="configuración de directiva de grupo que enumera el orden de los orígenes.":::
 
    3. Seleccione **Aceptar**. Esto establecerá el orden de los orígenes de actualización de protección.
 

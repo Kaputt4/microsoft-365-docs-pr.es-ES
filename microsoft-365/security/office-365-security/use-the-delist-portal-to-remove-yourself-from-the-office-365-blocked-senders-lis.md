@@ -20,12 +20,12 @@ ms.custom:
 description: En este artículo, aprenderá a usar el portal de deslist para quitarse de la lista Microsoft 365 remitentes bloqueados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7beee058a85d7ab44a6a4a94b362fa669537f573754de8558d713332d897843f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1c4c09af11829d2b4d902211baff9fb8e6cfb11
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56886159"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566507"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
 
@@ -56,7 +56,7 @@ donde _dirección IP_ es la dirección IP del equipo en el que se ejecuta el ser
 
 3. Haga clic en **Enviar**.
 
-    El portal enviará un correo electrónico a la dirección que indique. El correo electrónico tendrá un aspecto similar al siguiente: ![Captura de pantalla del correo electrónico que se recibe al enviar una solicitud mediante el portal de eliminación de la lista](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)  
+    El portal enviará un correo electrónico a la dirección que indique. El correo electrónico tendrá un aspecto parecido al siguiente: Captura de pantalla del correo electrónico recibido al ![ enviar una solicitud a través del portal de deslist.](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. Haga clic en el vínculo de confirmación que aparece en el correo electrónico que le ha enviado el portal de eliminación de la lista.
 

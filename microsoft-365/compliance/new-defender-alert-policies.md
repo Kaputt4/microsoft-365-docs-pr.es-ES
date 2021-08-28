@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Estamos publicando nuevas directivas de alerta para Microsoft Defender para Office 365. También estamos retirando dos directivas de alerta existentes que se han reemplazado por las nuevas.
-ms.openlocfilehash: 5c4edbb59d3328bb933825ab6a85ab561db93741
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 130bcb9c8511de1f18a8711561bbe6a15544f810
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255364"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564015"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nuevas directivas de alerta en Microsoft Defender para Office 365
 
@@ -95,7 +95,7 @@ Las nuevas alertas empezarán a activarse y desencadenarán investigaciones de A
 
 - **Incidentes**: ambas alertas se correlacionarán en el mismo incidente
 
-  ![Pares de alertas en incidentes](../media/IncidentsAlerts.png)
+  ![Pares de alertas en incidentes.](../media/IncidentsAlerts.png)
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>Lo que tiene que hacer para prepararse para estos cambios
 

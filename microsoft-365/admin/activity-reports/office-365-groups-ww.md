@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenga un informe Microsoft 365 grupos para conocer los grupos y sus actividades.
-ms.openlocfilehash: f899b742cb4d7098c1b8bcf7b51563e009dcd0217c74fb71f6bc98944650c681
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c96d0bdbc42e4cebec47bde532afd6288d29613
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816384"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564935"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Informes en el Centro de administración: Microsoft 365 grupos
 
@@ -49,14 +49,14 @@ Puede ver las activaciones en el informe de Office 365 seleccionando la **pesta�
 
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.
 
-:::image type="content" alt-text="Office 365 de actividad de grupos: elija columnas" source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
+:::image type="content" alt-text="Office 365 de actividad de grupos: elija columnas." source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
 |Métrica|Definición|
 |:-----|:-----|
 |Nombre del grupo |Nombre del grupo. |
-|Deleted |Número de grupos eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true. |
+|Eliminada |Número de grupos eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true. |
 |Propietario del grupo |Nombre del propietario del grupo. |
 |Fecha de última actividad (UTC) |La última fecha en la que el grupo recibió un mensaje. Es la última fecha en que hubo actividad en una conversación de correo electrónico, Yammer o el sitio. |
 |Tipo |Tipo de grupo. Puede ser un grupo público o privado. |
@@ -69,7 +69,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |Mensajes en Yammer (publicado) |Número de mensajes publicados en el grupo Yammer durante el período de informes. |
 |Mensajes en Yammer (lectura) |Número de conversaciones leídas en el grupo Yammer durante el período de informes. |
 |Mensajes en Yammer (me gusta) |El número de mensajes que le gustaron en el grupo Yammer durante el período de informes. |
-|Miembros |El número de miembros del grupo. |
+|Members |El número de miembros del grupo. |
 |Miembros externos |El número de usuarios externos del grupo.|
 
 

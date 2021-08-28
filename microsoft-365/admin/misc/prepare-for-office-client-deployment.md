@@ -23,12 +23,12 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Obtén información sobre cómo instalar automáticamente las aplicaciones Office de 32 bits en Windows 10 equipos y mantenerlas actualizadas.
-ms.openlocfilehash: 2e5d9cc711c0b5c9c8cc8dbfbeb1d8519856c674
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: ea131e37fa7f82a0ab03aa52b71569e3c96a2c7f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378210"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566113"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Prepararse para la Office cliente mediante Microsoft 365 para empresas
 
@@ -48,7 +48,7 @@ La instalación automática funciona mejor si el equipo del usuario final está 
     
 Para determinar si tiene la versión de Hacer clic y ejecutar de Office, en cualquier aplicación de Office, vaya a **Archivo** \> **Cuenta** ( **Cuenta de Office** en Outlook). Si ve actualizaciones **Office como** se muestra en la siguiente figura, la instalación se ha realizado mediante Hacer clic y ejecutar. 
   
-![Screenshot of Office updates in Office app Account](../../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
+![Captura de pantalla Office actualizaciones en Aplicación de Office cuenta.](../../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
  **Quién ventajas de tener esta característica**
   

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9b497770086537beaf0e20bd4fc5773257ace5e2f40aae3fe7695c99f009d38b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c9e5d06b13cb2fa64ed9d51977ee13af19c92f8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890616"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567609"
 ---
 # <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>Evaluar Microsoft 365 Defender información general del extremo
 
@@ -34,7 +34,7 @@ ms.locfileid: "53890616"
 
 - Microsoft 365 Defender
 
-![Microsoft 365 Defender evaluación y prueba piloto](../../media/defender/m365-defender-eval-process.png)
+![Microsoft 365 Defender evaluación y prueba piloto.](../../media/defender/m365-defender-eval-process.png)
 
 Las evaluaciones completas de productos de seguridad pueden ser un proceso complejo, que requiere configuraciones de dispositivos y entornos engorrosos antes de que se pueda realizar realmente una simulación de ataque de extremo a extremo. Agregar a la complejidad es el desafío de realizar un seguimiento de dónde se reflejan las actividades de simulación, las alertas y los resultados durante la evaluación.
 

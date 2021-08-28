@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Aprenda a crear, editar o eliminar un grupo de seguridad.
-ms.openlocfilehash: 496028c7f77da718e0301727a1a425049cc861cd
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: c2056996eb3954777654c5ea829379ecf005276a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394305"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566309"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Crear, editar o eliminar un grupo de seguridad en el Centro de administración de Microsoft 365
 
@@ -79,7 +79,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Grupos de Exchange Online y SharePoint Online
 
-Si desea crear grupos de usuarios para que pueda enviarles correo electrónico a todos al mismo tiempo,  puede hacerlo en el Centro de administración de Exchange yendo Exchange Grupos de destinatarios \>  \>  \> . A continuación, **seleccione Nuevo** ![ agregar y seleccione el tipo de grupo que desea ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) crear: 
+Si desea crear grupos de usuarios para que pueda enviarles correo electrónico a todos al mismo tiempo,  puede hacerlo en el Centro de administración de Exchange yendo Exchange Grupos de destinatarios \>  \>  \> . A continuación, **seleccione Nuevo** ![ agregar. y seleccione el tipo de grupo ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) que desea crear: 
   
 - **Grupo de distribución**: se usa para distribuir mensajes a un grupo de usuarios. También se denomina grupo de *distribución habilitado* para correo o, una lista *de distribución.* Para más información, vea [Administrar grupos de distribución](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups).
     

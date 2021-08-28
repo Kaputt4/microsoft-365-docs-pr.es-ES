@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo detectar errores y errores tipográficos en la consulta de palabras clave para las búsquedas de exhibición de documentos electrónicos antes de ejecutar la búsqueda.
-ms.openlocfilehash: 0f1e319c9ae3e332e58645d9ff1703062975a714278ab3322cdb156b6c62badf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b99f7c3df052cf41543ab57c92eb6326c6d814d8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886891"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564187"
 ---
 # <a name="check-your-search-query-for-errors"></a>Comprobar errores en la consulta de búsqueda
   
@@ -41,7 +41,7 @@ Si se encuentran caracteres no admitidos en la consulta, se muestra un mensaje d
 
 Este es un ejemplo del mensaje de advertencia que  se muestra después de hacer clic en Comprobar la consulta para errores tipográficos para la consulta de búsqueda en la captura de pantalla anterior. Tenga en cuenta que la consulta original usaba comillas inteligentes y operadores booleanos en minúsculas.
   
-![Se muestra un mensaje de advertencia con una revisión sugerida para la consulta](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
+![Se muestra un mensaje de advertencia con una revisión sugerida para la consulta.](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Cómo evitar caracteres no admitidos en las consultas de búsqueda
 

@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: autenticación de paso a través para el entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 6919c3f85e076232c864642ada020daaeff8f566
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: aa2ef24db76917917d35e7816c249334f6bdd229
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357070"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566771"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticación de paso a través para el entorno de prueba de Microsoft 365
 
@@ -31,14 +31,14 @@ ms.locfileid: "58357070"
 
 Las organizaciones que quieren usar directamente su infraestructura de Active Directory Domain Services (AD DS) local para la autenticación de aplicaciones y servicios en la nube de Microsoft pueden usar la autenticación de paso a través. Este artículo describe cómo configurar el entorno de prueba de Microsoft 365 para la autenticación de paso a través, lo que resulta en la siguiente configuración:
   
-![La empresa simulada con el entorno de prueba con la autenticación de paso a través](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![La empresa simulada con entorno de prueba de autenticación de paso a través.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
   
 Existen dos fases para configurar el entorno de prueba:
 
 1.    Crear el entorno de prueba de la empresa simulada de Microsoft 365 con la sincronización de hash de contraseñas.
 2.    Configurar Azure AD Connect en APP1 para la autenticación de paso a través.
     
-![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Haga clic [aquí](../downloads/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual con todos los artículos en la pila de la guías de laboratorio para pruebas de Microsoft 365 para empresas.
@@ -47,7 +47,7 @@ Existen dos fases para configurar el entorno de prueba:
 
 Siga las instrucciones de [Sincronización de hash de contraseñas para Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Esta es la configuración resultante.
   
-![La empresa simulada con el entorno de prueba con la sincronización de hash de contraseñas](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![La empresa simulada con el entorno de prueba de sincronización de hash de contraseña.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 Esta configuración se compone de: 
   
@@ -90,7 +90,7 @@ Tenga en cuenta que, aunque User1 tiene permisos de administrador de dominio par
 
 Esta es la configuración resultante:
 
-![La empresa simulada con el entorno de prueba con la autenticación de paso a través](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![La empresa simulada con entorno de prueba de autenticación de paso a través.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
  
 Esta configuración se compone de:
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la suplantación de inteligencia en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f17ac22a85182356ac58952b1d381fc6a98451e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b84671da05fcd3c476f19aa61a7325ac9df4c263
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258738"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563783"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Suplantación de información de inteligencia en EOP
 
@@ -96,7 +96,7 @@ En el resto de este artículo se explica cómo usar la información de inteligen
 
 2. En la **página Listas de permitidos o bloqueados** de inquilinos, la información de inteligencia suplantación tiene este aspecto:
 
-   ![Spoof intelligence insight on the Anti-phishing policy page](../../media/m365-sc-spoof-intelligence-insight.png)
+   ![Spoof intelligence insight on the Anti-phishing policy page.](../../media/m365-sc-spoof-intelligence-insight.png)
 
    La información tiene dos modos:
 
@@ -131,7 +131,7 @@ Para filtrar los resultados, tiene las siguientes opciones:
 
 - Haga clic en **el botón** Filtrar. En el **menú** desplegable Filtro que aparece, puede filtrar los resultados por:
   - **Tipo de suplantación**
-  - **Action**
+  - **Acción**
 - Use el **cuadro Buscar** para escribir una lista separada por comas de valores de dominio suplantados o enviar valores de infraestructura para filtrar los resultados.
 
 ### <a name="view-details-about-spoofed-messages"></a>Ver detalles sobre mensajes suplantados

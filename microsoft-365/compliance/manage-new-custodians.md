@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo ver detalles, editar y editar en masa la lista de custodios en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: daf74c2e51d9a01fad97534a4e49068528e820054b147c09baf8d3b3a8099d45
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e542a76e55e0ed9d75a1756026ff9a4f8c1d59ac
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879338"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567717"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Administrar custodios en un Advanced eDiscovery caso
 
 La página Custodios de la pestaña Orígenes de un caso Advanced eDiscovery contiene una lista de todos los custodios que se han agregado al caso.  Después de agregar custodios a un caso, los detalles sobre cada custodio se recopilan automáticamente desde Azure Active Directory y se pueden ver en Advanced eDiscovery.
 
-![Administrar custodios](../media/CustodianDetails.PNG)
+![Administrar custodios.](../media/CustodianDetails.PNG)
 
 ## <a name="view-custodian-details"></a>Ver detalles del custodio
 
@@ -83,7 +83,7 @@ Para actualizar los orígenes de datos asociados con un custodio:
   
 3. En la **página Custodios,** seleccione un custodio de la lista y haga clic **en Editar** en la página desplegable.
 
-    ![Editar orígenes de datos](../media/EditCustodianDataSource.PNG)
+    ![Editar orígenes de datos.](../media/EditCustodianDataSource.PNG)
   
 4. Haga **clic en La pestaña** Elegir orígenes de datos para cambiar la configuración del buzón de Exchange y la cuenta OneDrive, haga clic en Elegir orígenes de **datos**.
   
@@ -148,4 +148,4 @@ Para liberar a un custodio:
 
 Puede usar el editor en masa para editar varios custodios a la vez. Para ello, solo tiene que seleccionar dos o más custodios en la pestaña **Custodios** para mostrar el editor en masa y, a continuación, haga clic en una de las tareas.
 
-![Página desplegable para editar la configuración de varios custodios](../media/AeDBulkEditCustodians.png)
+![Página desplegable para editar la configuración de varios custodios.](../media/AeDBulkEditCustodians.png)

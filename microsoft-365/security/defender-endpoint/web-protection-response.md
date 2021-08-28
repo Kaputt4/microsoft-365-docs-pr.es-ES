@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47a7471aa5f42ca548b994a5f979dd526219e89e45b6ad522896c6c856b66a20
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a7ee836cc40c7960c7963867484056b5a506241b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884314"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566703"
 ---
 # <a name="respond-to-web-threats"></a>Responder a amenazas web
 
@@ -49,7 +49,7 @@ Cada alerta proporciona la siguiente información:
 - Dirección URL malintencionada en la lista de indicadores personalizados
 - Acciones recomendadas para respondedores
 
-![Imagen de una alerta relacionada con la protección contra amenazas web](images/wtp-alert.png)
+![Imagen de una alerta relacionada con la protección contra amenazas web.](images/wtp-alert.png)
 
 > [!NOTE]
 > Para reducir el volumen de alertas, Microsoft Defender para endpoint consolida las detecciones de amenazas web para el mismo dominio en el mismo dispositivo cada día en una sola alerta. Solo se genera una alerta y se cuenta en el informe [de protección web](web-protection-monitoring.md).
@@ -62,7 +62,7 @@ Puedes profundizar seleccionando la dirección URL o el dominio del sitio web en
 - Incidentes y alertas relacionados con el sitio web
 - Con qué frecuencia se ha visto el sitio web en eventos de su organización
 
-    ![Imagen de la página de detalles de la entidad de dirección URL o dominio](images/wtp-website-details.png)
+    ![Imagen de la página de detalles de la entidad de dirección URL o dominio.](images/wtp-website-details.png)
 
 [Más información sobre las páginas de entidad de dominio o URL](investigate-domain.md)
 
@@ -76,11 +76,11 @@ También puedes comprobar el dispositivo que intentó obtener acceso a una direc
 
 Con la protección web en Microsoft Defender para endpoint, los usuarios finales no podrán visitar sitios web malintencionados o no deseados Microsoft Edge otros exploradores. Dado que el bloqueo se realiza [mediante la protección de red,](network-protection.md)verán un error genérico desde el explorador web. También verán una notificación de Windows.
 
-![Imagen de Microsoft Edge muestra un error 403 y la Windows notificación ](images/wtp-browser-blocking-page.png)
- *web bloqueada en Microsoft Edge*
+![Imagen de Microsoft Edge muestra un error 403 y la Windows notificación. ](images/wtp-browser-blocking-page.png)
+ *Amenaza web bloqueada en Microsoft Edge*
 
-![Imagen del explorador web Chrome que muestra una advertencia de conexión segura y la Windows notificación ](images/wtp-chrome-browser-blocking-page.png)
- *web bloqueada en Chrome*
+![Imagen del explorador web chrome que muestra una advertencia de conexión segura y la notificación Windows usuario. ](images/wtp-chrome-browser-blocking-page.png)
+ *Amenaza web bloqueada en Chrome*
 
 ## <a name="related-topics"></a>Temas relacionados
 

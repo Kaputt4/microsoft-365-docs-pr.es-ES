@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información sobre la diferencia entre el asistente para la instalación y la página De instalación.
-ms.openlocfilehash: 18dd1e6cd2aae0c1222bc0a63025c413946dbd8619231c307ec5a938c97a1bef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a4936dded4e13b6cf748a1b4d33513480bf382a9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821705"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565595"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Diferencia entre el asistente para la instalación y la página De instalación
 
@@ -40,7 +40,7 @@ El asistente para la instalación proporciona un tutorial guiado para configurar
 
 Para configurar la cuenta, vaya al  Centro de [administración,](https://go.microsoft.com/fwlink/p/?linkid=2024339)seleccione Configurar en el panel de navegación izquierdo y, a continuación, seleccione **Configuración** guiada en la **página Configuración.**
 
-![Inicie el asistente Aplicaciones Microsoft 365 para negocios de configuración](../../media/o365b-guided-setup.png)
+![Inicie el asistente Aplicaciones Microsoft 365 para negocios configuración.](../../media/o365b-guided-setup.png)
 
 El asistente para la configuración le guiará a través de los siguientes pasos:
 
@@ -58,7 +58,7 @@ Para obtener acceso **a la página De** instalación en el Centro de [administra
 
 Verá la lista completa de tareas de configuración organizadas en categorías lógicas, incluidas las que completó en el asistente para la configuración.
 
-![Microsoft 365 de configuración para empresas](../../media/o365b-setup-page.png)
+![Microsoft 365 configuración para empresas.](../../media/o365b-setup-page.png)
 
 Elija **Ver** para cualquier tarea para obtener información de un vistazo, como la descripción de la tarea, el impacto del usuario, los requisitos previos, el esfuerzo para implementar y las estadísticas de seguridad y adopción para ayudarle a comprender las consecuencias y el impacto antes de continuar.
 
@@ -68,4 +68,4 @@ Para obtener acceso a artículos completos sobre las características que está 
 
 Cuando esté listo para completar una tarea, **seleccione** Introducción para recorrer el proceso de configuración. Una vez completada una  tarea, el botón Introducción cambia **a** un botón Administrar, lo que le permite administrar la tarea según sea necesario.
 
-![Vista de tareas que muestra información de un vistazo](../../media/o365b-at-a-glance.png)
+![Vista de tareas que muestra información de un vistazo.](../../media/o365b-at-a-glance.png)

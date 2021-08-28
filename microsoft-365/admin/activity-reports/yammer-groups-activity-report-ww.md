@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe Yammer actividad de grupos de usuarios para conocer el número de grupos de Yammer que se crean y usan en la organización y su actividad.
-ms.openlocfilehash: ee547e6da465cd36d62f62043c9364350352bc5a6b19da631a9e56071ef9d679
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 18ed4519a0f7859d8084f2144a58f4a726db530a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816168"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564751"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365 Informes en el Centro de administración: informe Yammer actividad de grupos
 
@@ -44,22 +44,22 @@ El panel Microsoft 365 **informes le** muestra la introducción a la actividad e
 
 Puede ver las actividades de grupos en el informe Yammer seleccionando la **pestaña Actividad grupos.**<br/>![Microsoft 365: informe de actividad Yammer grupos de Microsoft.](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
 
-Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Yammer actividad de grupos: elegir columnas](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
+Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Yammer actividad de grupos: elija columnas.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Item|Descripción|
+|Elemento|Description|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre del grupo  <br/> |Nombre del grupo. <br/> |
 |Administrador de grupo  <br/> |Nombre del administrador del grupo o propietario.  <br/> |
-|Deleted  <br/> |El número de grupos Yammer eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
+|Eliminada  <br/> |El número de grupos Yammer eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
 |Tipo  <br/> |Tipo de grupo, público o privado. <br/> |
 |Conectado a Office 365  <br/> |Indica si el grupo Yammer es también un Microsoft 365 grupo. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La fecha más reciente en la que el grupo leyó, publicó o gustó un mensaje.  <br/> |
-|Miembros  <br/> | El número de miembros del grupo.  <br/> |
+|Members  <br/> | El número de miembros del grupo.  <br/> |
 |Publicado  <br/> |Número de mensajes publicados en el grupo Yammer durante el período de informes. <br/>|
-|Read  <br/> |Número de conversaciones leídas en el grupo Yammer durante el período de informes.  <br/> |
+|Lectura  <br/> |Número de conversaciones leídas en el grupo Yammer durante el período de informes.  <br/> |
 |Etiquetado como “Me gusta”  <br/> |El número de mensajes que le gustaron en el grupo Yammer durante el período de informes. <br/>|
 |Nombre de red  <br/> |Nombre completo de la red a la que pertenece el grupo. |
 |||

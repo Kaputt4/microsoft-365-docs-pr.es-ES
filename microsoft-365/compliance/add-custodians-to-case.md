@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la herramienta de administración de custodia integrada en Advanced eDiscovery coordinar los flujos de trabajo e identificar orígenes de datos relevantes en un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3fc08eb6602331ef12cba45ed5106cf692272a8f80537a2cd73fc6bd357efd2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3c5adf4b51cbb9898b0b4f7bc806c1392453c526
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837233"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564247"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un Advanced eDiscovery caso
 
@@ -38,7 +38,7 @@ Puede agregar y administrar custodios en Advanced eDiscovery casos en cuatro pas
 
 4. Revise a los custodios y complete el proceso.
 
-   [![Ficha Orígenes en Advanced eDiscovery caso ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
+   [![Ficha Orígenes en Advanced eDiscovery caso. ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Asegúrese de que tiene los permisos necesarios
 
@@ -68,7 +68,7 @@ Para anular la selección del buzón principal y OneDrive cuenta para un custodi
 
 2. Seleccione **Borrar** junto  a **Buzón** o OneDrive para quitar el buzón o la cuenta de OneDrive de un custodio para que no se asocie como ubicación de datos para este custodio.
 
-   ![Configurar ubicaciones para asociar a un custodio](../media/ConfigureCustodianLocations.png)
+   ![Configurar ubicaciones para asociar a un custodio.](../media/ConfigureCustodianLocations.png)
 
 Para asociar otros buzones, sitios, Teams o grupos Yammer a un administrador específico:
 
@@ -114,4 +114,4 @@ Antes de agregar realmente los custodios al caso, puede revisar la lista de cust
 
    Los nuevos custodios se agregan al caso y se muestran en la **pestaña Orígenes de** datos.
 
-   [![Custodios enumerados en la pestaña Orígenes de datos ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)
+   [![Los custodios que aparecen en la pestaña Orígenes de datos. ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)

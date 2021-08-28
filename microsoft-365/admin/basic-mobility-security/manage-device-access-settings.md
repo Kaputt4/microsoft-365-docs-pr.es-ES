@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar dispositivos móviles.
-ms.openlocfilehash: 3691968803c615356570be5584ce869fddff81effdc304caa42bc1071b5f579b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ede065b2ad8125b7c487ce801ffc743e817af8dc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826881"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564458"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Administrar la configuración de acceso a dispositivos en Movilidad y seguridad básicas
 
@@ -42,7 +42,7 @@ Siga estos pasos:
 
 4. Seleccione **Bloquear**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Casilla de verificación Acceso bloqueado de movilidad básica y seguridad":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Casilla de verificación Movilidad básica y Seguridad para bloquear el acceso.":::
 
 5. Seleccione **Guardar**.
 

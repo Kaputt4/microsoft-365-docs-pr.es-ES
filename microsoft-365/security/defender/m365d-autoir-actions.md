@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 0ecc3f7a91b79651b0a970553576a3c8d93320b25c258dd3f793552a4acf31a8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: daedba79bb2fd9ac452cbef08d74d4d876122478
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888780"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565665"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Ver y administrar acciones en el Centro de acciones
 
@@ -55,7 +55,7 @@ Es importante aprobar (o rechazar) las acciones pendientes tan pronto como sea p
 
 3. En el Centro de acciones, en la **pestaña** Pendiente, seleccione un elemento de la lista. Se abre el panel desplegable. Por ejemplo:
 
-   ![Aprobar o rechazar una acción](../../media/air-actioncenter-itemselected.png)
+   ![Aprobar o rechazar una acción.](../../media/air-actioncenter-itemselected.png)
 
 4. Revise la información del panel desplegable y, a continuación, siga uno de los pasos siguientes:
    - Seleccione **Abrir página de investigación** para ver más detalles sobre la investigación.
@@ -95,7 +95,7 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 
 3. En el panel de la parte derecha de la pantalla, seleccione **Aplicar a X más** instancias de este archivo y, a continuación, seleccione **Deshacer**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver los detalles y los resultados de una investigación automatizada](m365d-autoir-results.md)
 - [Dirección de falsos positivos o falsos negativos](m365d-autoir-report-false-positives-negatives.md)

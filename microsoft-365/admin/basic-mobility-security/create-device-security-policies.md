@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa Movilidad y seguridad básicas para crear directivas de dispositivo que protejan la información de la organización.
-ms.openlocfilehash: 8c6731b6f206b8c30f0d2abfa0d61d251658c3401ab37042a1b6ba31f0df00c4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9792a936f2f209eabb4da9ce725e611ef3766526
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827013"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564519"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Crear directivas de seguridad de dispositivos en Movilidad y seguridad básicas
 
@@ -51,7 +51,7 @@ Antes de empezar, asegúrese de que ha activado y configurado La movilidad y la 
 
 2. Seleccione **Crear directiva**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración de directivas básicas de movilidad y seguridad":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración básica de la directiva de movilidad y seguridad.":::
 
 3. En la **página Configuración de directiva,** especifique los requisitos que desea aplicar a los dispositivos móviles de su organización.
 
@@ -94,7 +94,7 @@ Para proteger la información de la organización, debes bloquear el acceso de l
 2. Selecciona **Administrar la configuración de acceso de dispositivos en toda la organización.**
 3. Para bloquear dispositivos no  compatibles, elija Bloquear en Si un dispositivo no es compatible con Movilidad básica y seguridad para Microsoft 365 y, **a** continuación, **seleccione Guardar**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Opción de acceso bloqueado de movilidad básica y seguridad":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Opción de acceso bloqueado de movilidad básica y seguridad.":::
 
 ## <a name="step-5-choose-security-groups-to-be-excluded-from-conditional-access-checks"></a>Paso 5: Elija los grupos de seguridad que desea excluir de las comprobaciones de acceso condicional
 
@@ -104,7 +104,7 @@ Si desea excluir algunas personas de las comprobaciones de acceso condicional en
 
 2. Selecciona **Administrar la configuración de acceso de dispositivos en toda la organización.**
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Movilidad básica y seguridad crear una opción de directiva":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Movilidad básica y seguridad crean una opción de directiva.":::
 
 3. Seleccione **Agregar** para agregar el grupo de seguridad que tiene usuarios que desea excluir de haber bloqueado el acceso a Microsoft 365. Cuando un usuario se ha agregado a esta lista, puede tener acceso Microsoft 365 correo electrónico cuando usa un dispositivo no compatible.
 
@@ -114,7 +114,7 @@ Si desea excluir algunas personas de las comprobaciones de acceso condicional en
 
 6. En el panel **Configuración de acceso a dispositivos de toda la** organización, elija **Guardar**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="Opción básica de movilidad y seguridad para permitir el acceso":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="Opción básica de movilidad y seguridad para permitir el acceso.":::
 
 ## <a name="what-is-the-impact-of-security-policies-on-different-device-types"></a>¿Cuál es el impacto de las directivas de seguridad en distintos tipos de dispositivos?
 

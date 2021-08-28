@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: 98496ce57c57cbce10178cc2be99079d8733a0ca
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 79acef4454428daba68d42b0161d060b7e28ee56
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372513"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564398"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -136,18 +136,18 @@ La implementación centralizada admite asignaciones a usuarios individuales, gru
 
 Eche un vistazo al siguiente ejemplo, en el que Sandra, Sheila y el grupo del departamento de ventas están asignados a un complemento. Como el departamento de ventas de la Costa Occidental es un grupo anidado, Bert y Fred no están asignados a un complemento.
 
-![Diagrama del departamento de ventas](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![Diagrama del departamento de ventas.](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>Averiguar si un grupo contiene grupos anidados
 
 La forma más sencilla de detectar si un grupo contiene grupos anidados es ver la tarjeta de contacto del grupo en Outlook. Si escribe el nombre del grupo en el campo **Para** de un correo electrónico y, a continuación, selecciona el nombre del grupo cuando se resuelve, se mostrará si contiene usuarios o grupos anidados. En el ejemplo siguiente, la pestaña **Miembros** de la tarjeta de contacto de Outlook del grupo de pruebas no muestra usuarios, solo dos subgrupos.
 
-![Ficha Miembros de Outlook de contacto](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Pestaña Miembros de Outlook de contacto.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 Puede realizar la consulta opuesta para comprobar si un grupo es miembro de cualquier otro. En el ejemplo siguiente, puede ver en la pestaña **Miembros** de la tarjeta de contacto de Outlook que el Subgrupo 1 es miembro del grupo de pruebas.
 
-![Ficha Pertenencia de la Outlook de contacto](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Ficha Pertenencia de la Outlook de contacto.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
 De forma alternativa, puede usar la API de Graph Azure Active Directory para ejecutar consultas para encontrar una lista de grupos dentro de un grupo. Para obtener más información, vea [Operaciones en grupos | Referencia de API de Graph](/previous-versions/azure/ad/graph/api/groups-operations).
 

@@ -19,12 +19,12 @@ ms.collection:
 description: Obtenga información sobre las vistas de campaña en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1b080968675de25374019ea96e68cb6e9a63aa2fe72533759065cd4fbbc44c0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ca5049b234972ef55b951c0886a9d4074613c860
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56885524"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566657"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campaña en Microsoft Defender para Office 365
 
@@ -58,7 +58,7 @@ Una campaña puede ser de corta duración o puede abarcar varios días, semanas 
 
 Las vistas de campaña están disponibles en el portal de Microsoft 365 Defender ( ) en <https://security.microsoft.com> **Email &** \> **collaboration Campaigns**, o directamente en <https://security.microsoft.com/campaigns> .
 
-![Introducción a las campañas en el portal Microsoft 365 Defender web](../../media/campaigns-overview.png)
+![Introducción a las campañas en el Microsoft 365 Defender web.](../../media/campaigns-overview.png)
 
 También puedes acceder a vistas de campaña desde:
 
@@ -112,7 +112,7 @@ La **pestaña Origen de** la campaña muestra los orígenes de mensajes en un ma
 
 En la parte superior de la **página Campaña,** hay varias opciones de configuración de filtro y consulta que le ayudarán a encontrar y aislar campañas específicas.
 
-![Filtros de campaña](../../media/campaign-filters-and-settings.png)
+![Filtros de campaña.](../../media/campaign-filters-and-settings.png)
 
 El filtrado más básico que puede hacer es la fecha y hora de inicio y la fecha y hora de finalización.
 
@@ -127,7 +127,7 @@ Las propiedades de campaña filtrables que están disponibles en el botón **Tip
   - **Remitente**
   - **Destinatarios**
   - **Dominio del remitente**
-  - **Subject**
+  - **Asunto**
   - **Nombres de archivos adjuntos**
   - **Familia de malware**
   - **Etiquetas:** usuarios o grupos a los que se ha aplicado la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
@@ -191,7 +191,7 @@ En la parte superior de la vista de detalles de la campaña, está disponible la
 - La fecha y hora de inicio y los filtros de fecha y hora de finalización para el flujo de la campaña se describen en la sección siguiente.
 - Escala de tiempo interactiva de la actividad de la campaña: la escala de tiempo muestra la actividad durante toda la vida útil de la campaña. Puede pasar el puntero sobre los puntos de datos del gráfico para ver la cantidad de mensajes detectados.
 
-![Información de campaña](../../media/campaign-details-campaign-info.png)
+![Información de campaña.](../../media/campaign-details-campaign-info.png)
 
 ### <a name="campaign-flow"></a>Flujo de la campaña
 
@@ -200,7 +200,7 @@ En medio de la vista de detalles de la campaña, los detalles importantes sobre 
 > [!TIP]
 > La información que se muestra en el diagrama de flujo se controla mediante el filtro de intervalo de fechas de la escala de tiempo, tal como se describe en la sección anterior.
 
-![Detalles de la campaña que no contienen clics del usuario en la URL.](../../media/campaign-details-no-recipient-actions.png)
+![Detalles de la campaña que no contienen clics de url de usuario.](../../media/campaign-details-no-recipient-actions.png)
 
 Si coloca el puntero del mouse sobre una de las bandas horizontales del diagrama, verá el número de mensajes relacionados (por ejemplo, mensajes de una IP de origen en particular, mensajes de la dirección IP de origen con el dominio de remitente especificado, etc.).
 
@@ -214,18 +214,18 @@ El diagrama contiene la información siguiente:
 
   ****
 
-  |Valor|Veredicto de filtro de correo no deseado|Descripción|
+  |Valor|Veredicto de filtro de correo no deseado|Description|
   |---|---|---|
   |**Permitido**|`SFV:SKN` <p> `SFV:SKI`|El mensaje se marcó como no correo no deseado o filtrado omitido antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, una regla de flujo de correo (también conocida como regla de transporte) marcó el mensaje como no correo no deseado. <p> El mensaje omitió el filtrado de correo no deseado por otros motivos. Por ejemplo, el remitente y el destinatario parecen estar en la misma organización.|
   |**Bloqueado**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, mediante una regla de flujo de correo.|
   |**Detectados**|`SFV:SPM`|El mensaje se marcó como correo no deseado por el filtro de correo no deseado.|
   |**No detectado**|`SFV:NSPM`|El mensaje se marcó como correo no deseado mediante el filtrado de correo no deseado.|
-  |**Liberado**|`SFV:SKQ`|El mensaje omitió el filtrado de correo no deseado porque se liberó de la cuarentena.|
+  |**Fecha de publicación**|`SFV:SKQ`|El mensaje omitió el filtrado de correo no deseado porque se liberó de la cuarentena.|
   |**Permitir inquilino**<sup>\*</sup>|`SFV:SKA`|El mensaje omitió el filtrado de correo no deseado debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
   |**Bloque de inquilinos**<sup>\*\*</sup>|`SFV:SKA`|El filtrado de correo no deseado bloqueó el mensaje debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
   |**User Allow**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes Caja fuerte usuario.|
   |**Bloqueo de usuario**<sup>\*\*</sup>|`SFV:BLK`|El mensaje se bloqueó mediante el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes bloqueados de un usuario.|
-  |**ZAP**|N/D|[La purga automática de hora cero (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta o cuarentena de correo no deseado. La acción se configura en la directiva contra correo no deseado.|
+  |**ZAP**|No aplicable|[La purga automática de hora cero (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta o cuarentena de correo no deseado. La acción se configura en la directiva contra correo no deseado.|
   |
 
   <sup>\*</sup> Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.

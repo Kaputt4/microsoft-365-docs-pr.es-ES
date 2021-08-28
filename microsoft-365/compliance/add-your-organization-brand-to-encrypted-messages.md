@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Obtenga información Office 365 los administradores globales pueden aplicar la personalización de marca de su organización a los mensajes de correo electrónico cifrados & contenido del portal de cifrado.
-ms.openlocfilehash: 35fc440b6ae8f973dac6ce1fa5216829b4a966f8d00d763969bc03d1a5216c59
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 761cf2b85d13db34a0150e1ca21996ad0742e4bb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836944"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567573"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Agregar la marca de su organización a su Microsoft 365 cifrado de mensajes empresariales
 
@@ -76,7 +76,7 @@ Use Windows PowerShell para modificar una plantilla de personal de marca a la ve
 
 2. Use el cmdlet Set-OMEConfiguration como se describe [en Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) o use el siguiente gráfico y tabla para obtener instrucciones.
 
-![Elementos de correo electrónico personalizables](../media/ome-template-breakout.png)
+![Elementos de correo electrónico personalizables.](../media/ome-template-breakout.png)
 
 |**Para personalizar esta característica de la experiencia de cifrado**|**Use estos comandos**|
 |:-----|:-----|
@@ -170,7 +170,7 @@ Para obtener información sobre cómo crear una regla de flujo Exchange de corre
 
 3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **Exchange**.
 
-4. En el EAC, vaya a **Flujo de correo** \> **Reglas** y **seleccione Nuevo** icono Nuevo ![ Crear una nueva ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
+4. En el EAC, vaya a **Flujo de correo Reglas** \> **y** seleccione **Nuevo** ![ icono Nuevo.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Crear una nueva regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
 
 5. En **Nombre**, escriba un nombre para la regla, como Personal de marca para el departamento de ventas.
 

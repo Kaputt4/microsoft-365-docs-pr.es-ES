@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe Microsoft Teams actividad del usuario y obtener información sobre la Teams actividad de la organización.
-ms.openlocfilehash: 945cc48b442a521a0e755e5bebf4b5a36b7eccfb696b3506a793eba0ae5de647
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f75b3547af25f06858eb72ab1956e787f6e6bc5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797751"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564981"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de usuario de Microsoft Teams
 
@@ -42,7 +42,7 @@ El panel Microsoft 365 **informes le** muestra la introducción a la actividad e
 
 Puede ver la actividad del usuario en el informe Teams seleccionando la **pestaña Actividad de** usuario. <br/>![Microsoft 365: Microsoft Teams de usuario.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
-Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Teams user activity report - choose columns](../../media/6d3c013e-2c5e-4d66-bb41-998aa4bd1c20.png)
+Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Teams de actividad de usuario: elija columnas.](../../media/6d3c013e-2c5e-4d66-bb41-998aa4bd1c20.png)
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. El formato exportado para **tiempo de audio,** **tiempo de vídeo** y tiempo de uso compartido de pantalla sigue el formato de duración ISO8601. 
 
@@ -50,7 +50,7 @@ Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** par
 
 Para garantizar la calidad de los datos, llevamos a cabo comprobaciones diarias de validación de datos durante los últimos tres días y se rellenarán los vacíos detectados. Es posible que observe diferencias en los datos históricos durante el proceso.
 
-|Item|Descripción|
+|Elemento|Description|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo.   <br/> |

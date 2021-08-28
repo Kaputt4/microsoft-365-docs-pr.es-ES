@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Use un filtro de puntuación de predicción para mostrar los elementos que un modelo de codificación predictiva predice como relevantes o no relevantes.
-ms.openlocfilehash: 99cc9aee90c57f6f48053a6ef7e5a622a15295aa16089416081913ac6e5d3473
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 34a9b4da55443cae6c2334952f60b94953b0d9d4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865856"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567705"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Aplicar un filtro de puntuación de predicción a un conjunto de opiniones (versión preliminar)
 
@@ -41,7 +41,7 @@ Estas son dos maneras de usar el filtro de puntuación de predicción:
 
 1. En el Centro de cumplimiento de Microsoft 365, abra el Advanced eDiscovery, seleccione la pestaña **Conjuntos** de revisión y, a continuación, abra el conjunto de revisión.
 
-   ![Haga clic en Filtros para mostrar la página desplegable Filtros](..\media\PredictionScoreFilter0.png)   
+   ![Haga clic en Filtros para mostrar la página desplegable Filtros.](..\media\PredictionScoreFilter0.png)   
 
    Los filtros predeterminados precargados se muestran en la parte superior de la página del conjunto de revisión. Puede dejar estos establecidos en **Any**.
 
@@ -49,7 +49,7 @@ Estas son dos maneras de usar el filtro de puntuación de predicción:
 
 3. Expanda la **sección & de codificación predictiva** de Analytics para mostrar un conjunto de filtros.
 
-      ![Filtro de puntuación de predicción en la sección & codificación predictiva de Analytics](..\media\PredictionScoreFilter1.png)
+      ![Filtro de puntuación de predicción en la & de codificación predictiva de Analytics.](..\media\PredictionScoreFilter1.png)
 
    La convención de nomenclatura para los filtros de puntuación de predicción es **Puntuación de predicción (nombre del modelo).** Por ejemplo, el nombre del filtro de puntuación de predicción de un modelo denominado **Modelo A** es **Puntuación de predicción (modelo A).**
 
@@ -57,7 +57,7 @@ Estas son dos maneras de usar el filtro de puntuación de predicción:
 
 5. En la página conjunto de revisión, haga clic en el desplegable del filtro de puntuación de predicción y escriba los valores mínimos y máximos para el intervalo de puntuación de predicción. Por ejemplo, la siguiente captura de pantalla muestra un intervalo de puntuación de predicción entre **.5** y **1,0**.
 
-   ![Valores mínimos y máximos para el filtro de puntuación de predicción](..\media\PredictionScoreFilter2.png)
+   ![Valores mínimos y máximos para el filtro de puntuación de predicción.](..\media\PredictionScoreFilter2.png)
 
 6. Haga clic fuera del filtro para aplicar automáticamente el filtro al conjunto de revisión.
 

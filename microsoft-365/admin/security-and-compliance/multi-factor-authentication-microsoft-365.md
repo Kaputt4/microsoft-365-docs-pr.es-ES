@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: La autenticación multifactor (MFA) usa una contraseña, que debe ser segura, y un método de comprobación adicional.
-ms.openlocfilehash: 56a72a7232abc5f0eb7a46beb27984425648a6db
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: d0f88043ecaa4d2dd990f74661e904351db97524
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394629"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566101"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Autenticación multifactor para Microsoft 365
 
@@ -63,7 +63,7 @@ Estas formas se basan en su Microsoft 365 plan.
 |---|---|---|
 |Todos Microsoft 365 planes|Use valores predeterminados de seguridad, que requieren MFA para todas las cuentas de usuario. <p> También puede configurar MFA por usuario en cuentas de usuario individuales, pero esto no se recomienda.|Empresa pequeña|
 |Microsoft 365 Empresa Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium licencias P1|Use directivas de acceso condicional para requerir MFA para cuentas de usuario basadas en la pertenencia a grupos, aplicaciones u otros criterios.|Pequeña empresa a empresa|
-|Microsoft 365 E5 <p> Azure AD Premium P2 licencias|Use Azure AD Identity Protection para requerir MFA en función de los criterios de riesgo de inicio de sesión.|Empresas|
+|Microsoft 365 E5 <p> Azure AD Premium P2 licencias|Use Azure AD Identity Protection para requerir MFA en función de los criterios de riesgo de inicio de sesión.|Empresa|
 ||||
 
 ### <a name="security-defaults"></a>Valores predeterminados de seguridad
@@ -97,7 +97,7 @@ También puedes usar directivas de acceso condicional para funcionalidades más 
 
 Las directivas de acceso condicional se configuran **desde** el panel Seguridad de Azure AD en Azure Portal.
 
-![Imagen de la opción de menú para acceso condicional](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Imagen de la opción de menú para acceso condicional.](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 Puede usar directivas de acceso condicional con:
 
@@ -144,7 +144,7 @@ Debe usar los valores predeterminados de seguridad o las directivas de acceso co
 
 Puede habilitar MFA para cuentas de usuario individuales desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**panel Usuarios activos**</a> del Centro de administración de Microsoft 365.
 
-![Imagen de la opción de autenticación multifactor en la página Usuarios activos](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![Imagen de la opción de autenticación multifactor en la página Usuarios activos.](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 Después de habilitarse, la próxima vez que el usuario inicia sesión, se le pedirá que se registre en MFA y que elija y pruebe el método de comprobación adicional.
 

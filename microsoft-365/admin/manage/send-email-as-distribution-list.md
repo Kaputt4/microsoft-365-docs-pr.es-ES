@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Envíe correo electrónico como una lista de distribución en Microsoft 365 para que cuando un miembro responda a un mensaje parezca que es de la lista de distribución.
-ms.openlocfilehash: 83a94055386763b5908c872ce9b3b9971c4578e965ccd14b2f67558e4983c335
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 021f44591805385f0575d6fa2ca550289a72c82d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824641"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566167"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Enviar correo electrónico como una lista de distribución
 
@@ -47,11 +47,11 @@ Antes de realizar estos pasos, asegúrese de que se ha agregado a una lista de d
     
 3. Seleccione **Responder**. 
     
-4. En la parte inferior del mensaje, seleccione **Más** \> **mostrar de**.<br/> ![Seleccione Más y, a continuación, elija Mostrar desde](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. En la parte inferior del mensaje, seleccione **Más** \> **mostrar de**.<br/> ![Seleccione Más y, a continuación, elija Mostrar desde.](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Haga clic con el botón secundario en la dirección De , como `Ina@weewalter.me` - y elija **Quitar**.<br/> ![Quitar el alias FROM](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Haga clic con el botón secundario en la dirección De , como `Ina@weewalter.me` - y elija **Quitar**.<br/> ![Remove the FROM alias.](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. A continuación, escriba la dirección de la lista de distribución como support@contoso.com y envíe el mensaje. La próxima vez que responda desde la lista de distribución, su dirección aparecerá como una opción en la **lista** De.<br/>![Aparece el alias del buzón compartido](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. A continuación, escriba la dirección de la lista de distribución como support@contoso.com y envíe el mensaje. La próxima vez que responda desde la lista de distribución, su dirección aparecerá como una opción en la **lista** De.<br/>![Aparece el alias del buzón compartido.](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
 
 ## <a name="outlook"></a>Outlook
 

@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: None
 description: Obtenga información sobre cómo se usa la seguridad para ver temas en Temas de Viva.
-ms.openlocfilehash: 3dd6e25fffe0a395bf41814309574c67507d280b29ee3848e676c66cadfb2463
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 25acd5ea96cb07a5974e10ec9763d1f20351d021
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864015"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563979"
 ---
 # <a name="security-trimming-in-microsoft-viva-topics"></a>Recorte de seguridad en Temas Microsoft Viva
 
@@ -29,11 +29,11 @@ Cuando se crea un tema a través de IA o selección manual, puede contener una d
   
 Por ejemplo, cuando el Usuario 1 ve la página de tema de Neptuno, es posible que tenga esta vista de la página de tema.
 
-![Tema Neptuno para el usuario 1](../media/knowledge-management/user2-topic-view.png) </br> 
+![Tema Neptuno para el usuario 1.](../media/knowledge-management/user2-topic-view.png) </br> 
 
 Sin embargo, cuando el usuario 2 mira la misma página de tema de Neptuno, su vista difiere del usuario 1.  El usuario 2 puede ver el archivo *DG-2000 Product Overview* en la sección Archivos anclados y páginas de la página del tema, que no aparece para el usuario 1.  
 
-![Tema de Neptuno para el usuario 2](../media/knowledge-management/user1-topic-view.png) </br> 
+![Tema Neptuno para el usuario 2.](../media/knowledge-management/user1-topic-view.png) </br> 
 
 La diferencia en lo que los usuarios pueden ver en el mismo tema se debe a que es posible que los usuarios no tengan los permisos Office 365 para ver un archivo o sitio relacionado.  Viva Topics respeta los permisos que se establecen en los elementos de un tema y no puede cambiar el acceso a ellos. En nuestro ejemplo, el usuario 1 no puede ver el archivo *DG-2000 Product Overview* en su página de tema para Neptuno porque el usuario 1 no tiene Office 365 permisos para ver el archivo.
 

@@ -17,12 +17,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: En este artículo se explican los aspectos específicos que debe tener en cuenta al diseñar páginas para obtener el mejor rendimiento en SharePoint Online.
-ms.openlocfilehash: 248600582fe7fea550fc401bdbd25c68ba5c97e2c76321aaf835cbdb7e6c5d50
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d2653e1ee07309d2f31a24df2715bf7810beb65b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53849067"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567885"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introducción al ajuste del rendimiento para SharePoint Online
 
@@ -92,11 +92,11 @@ Como era de esperar, tiene mucho más control sobre el rendimiento de los servid
   
 SharePoint Servidor local
   
-![Captura de pantalla del servidor local](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
+![Captura de pantalla del servidor local.](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
   
 SharePoint Online
   
-![Captura de pantalla del servidor en línea](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
+![Captura de pantalla del servidor en línea.](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
 Con SharePoint Online, ciertas solicitudes de página pueden terminar llamando a varios servidores. Podría terminar con una matriz de solicitudes entre servidores para una solicitud individual. Estas interacciones son costosas desde una perspectiva de carga de página y ralentizarán las cosas.
   

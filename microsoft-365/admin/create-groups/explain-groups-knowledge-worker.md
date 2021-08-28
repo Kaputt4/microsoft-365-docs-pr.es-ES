@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo explicar los Microsoft 365 a los usuarios.
-ms.openlocfilehash: 7f7b5bbe59f739c591aeb69687edc0c34d97e37286eb6fd72c1bde02cc1b6ea3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 828dffbed42b0b2bb2023a17f499802f7b2c2db1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826569"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565607"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>Explicar los Microsoft 365 a los usuarios
 
@@ -35,7 +35,7 @@ Dado que los grupos se pueden crear de varias maneras, se recomienda formar a lo
 - Si su organización usa mucho SharePoint o está migrando desde SharePoint local, indique a los usuarios que creen SharePoint de grupo para la colaboración.
 - Si su organización ha implementado Teams, indique a los usuarios que creen un equipo cuando necesiten un espacio de colaboración.
 
-[![image desc ](../../media/03.png)](../../media/03.png#lightbox)
+[![image desc. ](../../media/03.png)](../../media/03.png#lightbox)
 
 Si entrena a los usuarios para que siempre usen el método de creación de grupos que más se alinee con su forma de trabajar cuando necesiten un espacio para colaborar con otros usuarios, puede ayudar a evitar confusiones y duplicaciones de recursos. A medida que los usuarios se vuelven más experimentados, comprenderán mejor la colección de servicios que vienen con un grupo y que los distintos métodos de creación llevan al mismo resultado.
 

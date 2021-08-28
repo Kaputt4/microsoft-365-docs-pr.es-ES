@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Aprende a crear, editar o eliminar una directiva de administración de aplicaciones y a proteger archivos de trabajo en dispositivos Android o iOS.
-ms.openlocfilehash: b3dc925d907c08708ce56c5f6b7a1d1a7d32096c
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 1ab7c57e1a9da1a68c07535c2550f0762f7c8141
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360832"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564410"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS
 
@@ -50,7 +50,7 @@ Este artículo se aplica a Microsoft 365 Empresa Premium.
     
     Siempre puede usar el vínculo **Restablecer la configuración predeterminada** para volver a la configuración predeterminada. 
     
-    ![Screenshot of Create a policy with Application management for Android selected](../../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
+    ![Captura de pantalla de Crear una directiva con la administración de aplicaciones para Android seleccionada.](../../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
 6. Después, decida **a qué usuarios se aplica esta configuración**. Si no desea usar el  grupo de seguridad predeterminado Todos los usuarios, elija Cambiar **,** elija los grupos de seguridad que obtienen esta configuración \> **Seleccione**.
     
@@ -83,7 +83,7 @@ En las tablas siguientes se proporciona información detallada acerca de la conf
 Las siguientes opciones de configuración permiten proteger archivos de trabajo en caso de pérdida o robo del dispositivo de un usuario:
 
 
-|Configuración  <br/> |Descripción  <br/> |
+|Valor  <br/> |Descripción  <br/> |
 |:-----|:-----|
 |Eliminar archivos de trabajo de un dispositivo inactivo después de este número de días  <br/> |Si un dispositivo no se usa durante el número de días que especifiques aquí, los archivos de trabajo almacenados en el dispositivo se eliminarán automáticamente.  <br/> |
 |Exigir que los usuarios guarden todos los archivos de trabajo en OneDrive para la Empresa  <br/> |Si esta configuración es **On**, la única ubicación de guardado disponible para los archivos de trabajo es OneDrive para la Empresa.  <br/> |
@@ -94,7 +94,7 @@ Las siguientes opciones de configuración permiten proteger archivos de trabajo 
 Las siguientes opciones de configuración permiten administrar la forma en que los usuarios obtienen acceso a los archivos de trabajo de Office:
 
 
-|Configuración  <br/> |Descripción  <br/> |
+|Valor  <br/> |Descripción  <br/> |
 |:-----|:-----|
 |Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office  <br/> |Si esta configuración es **On,** los usuarios deben proporcionar otra forma de autenticación, además de su nombre de usuario y contraseña, para poder usar Office aplicaciones en sus dispositivos móviles.<br/> |
 |Restablecer el PIN cuando no se haya podido iniciar sesión el siguiente número de veces  <br/> |Para impedir que un usuario no autorizado adivine aleatoriamente un PIN, este se restablecerá después de que se escriba de forma errónea el número de veces que especifique.  <br/> |

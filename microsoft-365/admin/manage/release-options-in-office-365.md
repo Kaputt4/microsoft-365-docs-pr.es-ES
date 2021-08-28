@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Obtenga información sobre cómo configurar la opción de lanzamiento para nuevas actualizaciones de productos y características en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: c9a3478c15ad5505bae73b6821fc8ed9511f9b3e
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: df64bbac95f9d902ed83080e639544feb384fd72
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346789"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566251"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurar las opciones de versión estándar o dirigida
 
@@ -42,7 +42,7 @@ Con Microsoft 365, recibirá nuevas actualizaciones de productos y característi
 
 Cualquier nueva versión primero se prueba y valida por el equipo de características, después por todo el Microsoft 365 de características, seguido de todo Microsoft. Después de la validación y las pruebas internas, el siguiente paso es una **Versión dirigida** (anteriormente conocida como First Release) para los clientes que hayan decidido participar. En cada anillo de versión, Microsoft recopila comentarios y valida posteriormente la calidad mediante la supervisión de métricas de uso claves. Esta serie de validaciones progresivas se realiza de forma local para asegurar que la versión publicada mundialmente es tan sólida como sea posible. Las versiones se representan en la siguiente ilustración. 
   
-![Liberar anillos de validación para Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Liberar anillos de validación para Microsoft 365.](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
 Para actualizaciones significativas, los clientes son notificados inicialmente por [el Microsoft 365 guía básica](https://products.office.com/business/office-365-roadmap). A medida que una actualización está más cerca de implementarse, se comunica a través Microsoft 365 [centro de mensajes](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
@@ -107,7 +107,7 @@ Puede cambiar el modo en que su organización recibe Microsoft 365 actualizacion
     
 9. Cuando haya terminado de agregar usuarios, seleccione **Guardar cambios**.
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Descubra cómo administrar [mensajes en](/office365/admin/manage/message-center) su centro de [Microsoft 365 mensajes](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) para obtener notificaciones acerca de las próximas Microsoft 365 actualizaciones y versiones.
 

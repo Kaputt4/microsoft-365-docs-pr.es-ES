@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Prepárese para implementar la extensión de cumplimiento de Microsoft.
-ms.openlocfilehash: a7f33edb71695af1328dd62d488d86a9216cf91a357bbbc7049068d262f3837c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad3fa4ae5cef1e5d4a49cbe10c36fce89252127b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895676"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564039"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Introducción a la extensión de cumplimiento de Microsoft
 
@@ -254,7 +254,7 @@ Ahora que ha quitado Chrome de la lista de aplicaciones/exploradores no permitid
 2. Consulte los procedimientos descritos en [Introducción al explorador de actividad](data-classification-activity-explorer.md) para tener acceso a todos los datos de los dispositivos con Endpoint y filtrarlos.
 
    > [!div class="mx-imgBorder"]
-   > ![filtro de explorador de actividad filtro para dispositivos de punto de conexión](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![filtro de explorador de actividad para dispositivos de punto de conexión.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ### <a name="known-issues-and-limitations"></a>Problemas y limitaciones conocidos
 

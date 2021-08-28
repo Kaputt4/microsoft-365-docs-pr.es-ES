@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Use un script local para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
-ms.openlocfilehash: 9b5df749d71ac3c7b6004f2c44e5d0015595a935a749061eb74b581ae44951cc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 18e1230285df0c462000454f2b13ac5bb2245e92
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892138"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566055"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Incorporar dispositivos Windows 10 mediante un script local
 
@@ -52,7 +52,7 @@ También puede incorporar manualmente dispositivos individuales para Microsoft 3
 
 8.  Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-    ![Ventana menú Inicio apuntar a Ejecutar como administrador](../media/dlp-run-as-admin.png)
+    ![Window menú Inicio que apunta a Ejecutar como administrador.](../media/dlp-run-as-admin.png)
 
 9.  Escriba la ubicación del archivo de script. Si copió el archivo en el escritorio, escriba: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
@@ -82,7 +82,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
 8.  Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-    ![Ventana menú Inicio apuntar a Ejecutar como administrador](../media/dlp-run-as-admin.png)
+    ![Window menú Inicio que apunta a Ejecutar como administrador.](../media/dlp-run-as-admin.png)
 
 9.  Escriba la ubicación del archivo de script. Si copió el archivo en el escritorio, escriba: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 

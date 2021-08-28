@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Use palabras clave y condiciones para restringir el ámbito de la búsqueda al buscar datos mediante Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: cbb96e6ba58a5e7af6a3f8472ccfd10986cc698e510869b466784f24bb66e580
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 00a5ab1c009f0c006aba251c770c87c1f7569fc1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814800"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564199"
 ---
 # <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>Crear consultas de búsqueda para colecciones en Advanced eDiscovery
 
 Al configurar la consulta de [](collections-overview.md) búsqueda al crear una colección en un caso de Advanced eDiscovery, puede usar palabras clave para buscar contenido y condiciones específicas para restringir el ámbito de la búsqueda para devolver los elementos más relevantes para la investigación legal.
 
-![Usar palabras clave y condiciones para restringir los resultados de una búsqueda](../media/SearchQueryBox.png)
+![Use palabras clave y condiciones para restringir los resultados de una búsqueda.](../media/SearchQueryBox.png)
 
 ## <a name="keyword-searches"></a>Búsquedas de palabras clave
 
@@ -37,7 +37,7 @@ Escriba una consulta de palabras clave en **el cuadro Palabras clave** de la con
 
 Como alternativa, puede activar la **casilla** Mostrar lista de palabras clave y escribir una palabra clave o frase de palabra clave en cada fila. Las palabras clave de cada fila están conectadas por un operador lógico (que se representa como *c:s* en la sintaxis de consulta de búsqueda) que es similar en funcionalidad al operador **OR** en la consulta de búsqueda que se crea. Esto significa que los elementos que contienen cualquier palabra clave en cualquier fila están en los resultados de la búsqueda. Puede agregar hasta 180 filas en la lista de palabras clave en Advanced eDiscovery de búsqueda.
 
-![Usar la lista de palabras clave para obtener estadísticas de cada palabra clave de la consulta](../media/KeywordListSearch.png)
+![Use la lista de palabras clave para obtener estadísticas de cada palabra clave de la consulta.](../media/KeywordListSearch.png)
 
 ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave de la lista de palabras clave. Esto puede ayudarle a identificar rápidamente las palabras clave que son más (y menos) eficaces. También puede usar una frase de palabra clave (entre paréntesis) en una fila de la lista de palabras clave. Para obtener más información acerca de las estadísticas de búsqueda, vea [Estadísticas de búsqueda](search-statistics-in-advanced-ediscovery.md).
 

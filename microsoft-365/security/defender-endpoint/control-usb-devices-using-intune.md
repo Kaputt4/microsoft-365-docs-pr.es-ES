@@ -14,12 +14,12 @@ audience: ITPro
 ms.topic: conceptual
 ms.technology: mde
 ROBOTS: NOINDEX
-ms.openlocfilehash: b8e44aa81c0985b296d0f19b8ead2e6251b53c1c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 6ad51065ca4e919fe51cc4a2d5f4b0d53bc474b1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533344"
+ms.locfileid: "58566715"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint
 
@@ -58,7 +58,7 @@ En la tabla siguiente se describen las formas en que Microsoft Defender para end
 
 ****
 
-|Control|Descripción|
+|Control|Description|
 |---|---|
 |[Restringir unidades USB y otros periféricos](#restrict-usb-drives-and-other-peripherals)|Puedes permitir o impedir que los usuarios instalen solo las unidades USB y otros periféricos incluidos en una lista de dispositivos o tipos de dispositivos autorizados o no autorizados.|
 |[Bloquear la instalación y el uso del almacenamiento extraíble](#block-installation-and-usage-of-removable-storage)|No puede instalar ni usar almacenamiento extraíble.|
@@ -77,7 +77,7 @@ Para evitar infecciones de malware o pérdida de datos, una organización puede 
 
 ****
 
-|Control|Descripción
+|Control|Description
 |---|---|
 |[Permitir la instalación y el uso de unidades USB y otros periféricos](#allow-installation-and-usage-of-usb-drives-and-other-peripherals)|Permitir a los usuarios instalar solo las unidades USB y otros periféricos incluidos en una lista de dispositivos o tipos de dispositivos autorizados|
 |[Impedir la instalación y el uso de unidades USB y otros periféricos](#prevent-installation-and-usage-of-usb-drives-and-other-peripherals)|Impedir que los usuarios instalen unidades USB y otros periféricos incluidos en una lista de dispositivos y tipos de dispositivos no autorizados|
@@ -85,7 +85,7 @@ Para evitar infecciones de malware o pérdida de datos, una organización puede 
 
 Todos los controles anteriores se pueden establecer a través de las plantillas administrativas [de](/intune/administrative-templates-windows)Intune . Las directivas relevantes se encuentran aquí en plantillas de administrador de Intune:
 
-![captura de pantalla de la lista de plantillas de administración](images/admintemplates.png)
+![captura de pantalla de la lista de plantillas de administración.](images/admintemplates.png)
 
 > [!NOTE]
 > Con Intune, puede aplicar directivas de configuración de dispositivos a grupos de dispositivos o usuarios de Azure AD.
@@ -108,11 +108,11 @@ Para aplicar la directiva para dispositivos ya instalados, aplique las directiva
 
 Al configurar la directiva de instalación de dispositivos permitidos, también debes permitir todos los atributos primarios. Puedes ver los padres de un dispositivo abriendo el Administrador de dispositivos y ver por conexión.
 
-![Dispositivos por conexión](images/devicesbyconnection.png)
+![Dispositivos por conexión.](images/devicesbyconnection.png)
 
 En este ejemplo, es necesario agregar las siguientes clases: HID, Keyboard y {36fc9e60-c465-11cf-8056-444553540000}. Consulta [Controladores USB proporcionados por Microsoft](/windows-hardware/drivers/usbcon/supported-usb-classes) para obtener más información.
 
-![Controlador de host de dispositivo](images/devicehostcontroller.jpg)
+![Controlador de host de dispositivo.](images/devicehostcontroller.jpg)
 
 Si quieres restringir a determinados dispositivos, quita la clase de configuración del dispositivo del periférico que quieres limitar. A continuación, agrega el identificador de dispositivo que quieras agregar. El id. de dispositivo se basa en los valores de id. de proveedor y de producto de un dispositivo. Para obtener información sobre los formatos de id. de dispositivo, [consulte Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 
@@ -139,11 +139,11 @@ Para evitar la instalación de dispositivos que coincidan con cualquiera de esto
 
 1. [Busca el identificador de](#look-up-device-id) dispositivo para los dispositivos que quieras Windows impedir la instalación.
 
-   ![Buscar el id. de producto o proveedor](images/lookup-vendor-product-id.png)
+   ![Busque el id. de producto o proveedor.](images/lookup-vendor-product-id.png)
 
 2. Habilita **Impedir la instalación de dispositivos que coincidan** con cualquiera de estos IDs de dispositivo y agrega los nombres de proveedor o producto a la lista.
 
-    ![Agregar identificador de proveedor para evitar la lista](images/add-vendor-id-to-prevent-list.png)
+    ![Agregue el identificador de proveedor para evitar la lista.](images/add-vendor-id-to-prevent-list.png)
 
 #### <a name="look-up-device-id"></a>Buscar id. de dispositivo
 
@@ -175,7 +175,7 @@ Para evitar la instalación de determinadas clases de dispositivos:
 2. Habilita **Impedir la instalación de dispositivos con controladores que coincidan con estas** clases de configuración de dispositivos y agrega el GUID de clase a la lista.
 
     > [!div class="mx-imgBorder"]
-    > ![Agregar clase de configuración de dispositivos para evitar la lista](images/Add-device-setup-class-to-prevent-list.png)
+    > ![Agregue la clase de configuración del dispositivo para evitar la lista.](images/Add-device-setup-class-to-prevent-list.png)
 
 ### <a name="block-installation-and-usage-of-removable-storage"></a>Bloquear la instalación y el uso del almacenamiento extraíble
 
@@ -184,7 +184,7 @@ Para evitar la instalación de determinadas clases de dispositivos:
 2. Haga clic **en** \> **Perfiles de configuración de dispositivos** \> **Crear perfil**.
 
     > [!div class="mx-imgBorder"]
-    > ![Crear perfil de configuración de dispositivo](images/create-device-configuration-profile.png)
+    > ![Crear perfil de configuración de dispositivo.](images/create-device-configuration-profile.png)
 
 3. Use la configuración siguiente:
    - Nombre: escriba un nombre para el perfil
@@ -193,13 +193,13 @@ Para evitar la instalación de determinadas clases de dispositivos:
    - Tipo de perfil: restricciones de dispositivo
 
    > [!div class="mx-imgBorder"]
-   > ![Crear perfil](images/create-profile.png)
+   > ![Cree el perfil.](images/create-profile.png)
 
 4. Haga clic **en** \> **Configurar general**.
 
 5. Para **Almacenamiento extraíble y** conexión USB **(solo móvil),** elija **Bloquear**. **El almacenamiento extraíble** incluye unidades USB, mientras que la conexión **USB (solo móvil)** excluye la carga USB, pero solo incluye otras conexiones USB en dispositivos móviles.
 
-   ![Configuración general](images/general-settings.png)
+   ![Configuración general.](images/general-settings.png)
 
 6. Haga **clic en Aceptar** para cerrar Configuración **general** y **Restricciones de dispositivo.**
 
@@ -236,7 +236,7 @@ Puedes impedir la instalación de los periféricos prohibidos con los IDs de ins
 Con Intune, puede limitar los servicios que pueden usar Bluetooth a través de [los "Bluetooth permitidos".](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) El estado predeterminado de la configuración Bluetooth "servicios permitidos" significa que todo está permitido.  Tan pronto como se agrega un servicio, se convierte en la lista permitida. Si el cliente agrega los valores teclados y ratones y no agrega los GUID de transferencia de archivos, se debe bloquear la transferencia de archivos.
 
 > [!div class="mx-imgBorder"]
-> ![captura de pantalla de Bluetooth de configuración](images/bluetooth.png)
+> ![captura de pantalla de Bluetooth de configuración.](images/bluetooth.png)
 
 ## <a name="prevent-threats-from-removable-storage"></a>Impedir que las amenazas quiten el almacenamiento
 
@@ -257,7 +257,7 @@ Para obtener más información acerca del control de dispositivos USB, consulta 
 
 ****
 
-|Control|Descripción|
+|Control|Description|
 |---|---|
 |[Habilitar Antivirus de Microsoft Defender digitalización](#enable-microsoft-defender-antivirus-scanning)|Habilite Antivirus de Microsoft Defender para la protección en tiempo real o exámenes programados.|
 |[Bloquear procesos no de confianza y sin firma en periféricos USB](#block-untrusted-and-unsigned-processes-on-usb-peripherals)|Bloquee los archivos USB que no estén firmando o que no sean de confianza.|
@@ -296,20 +296,20 @@ Esta configuración requiere [habilitar la protección en tiempo real](/microsof
 
 2. Haga **clic en** \> **Dispositivos Windows** \> **Directivas de configuración** Crear \> **perfil**.
 
-    ![Crear perfil de configuración de dispositivo](images/create-device-configuration-profile.png)
+    ![Crear perfil de configuración de dispositivo.](images/create-device-configuration-profile.png)
 
 3. Use la configuración siguiente:
    - Plataforma: Windows 10 y versiones posteriores
    - Tipo de perfil: restricciones de dispositivo
 
    > [!div class="mx-imgBorder"]
-   > ![Crear perfil de protección de puntos de conexión](images/create-endpoint-protection-profile.png)
+   > ![Crear perfil de protección de puntos de conexión.](images/create-endpoint-protection-profile.png)
 
 4. Haga clic en **Crear**.
 
 5. Para **los procesos no firmados y que no** son de confianza que se ejecutan desde USB, elija **Bloquear**.
 
-   ![Bloquear procesos que no son de confianza](images/block-untrusted-processes.png)
+   ![Bloquear procesos que no son de confianza.](images/block-untrusted-processes.png)
 
 6. Haga **clic en Aceptar** para cerrar la configuración y las **restricciones de dispositivo.**
 

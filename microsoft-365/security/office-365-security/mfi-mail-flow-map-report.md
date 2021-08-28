@@ -14,12 +14,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el mapa de flujo de correo en el panel flujo de correo del Centro de seguridad y cumplimiento de & para visualizar y realizar un seguimiento de cómo fluye el correo hacia y desde su organización a través de conectores y sin usar conectores.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6bf906871bc95bd57ef3ffc342352c4ce8b5fea96bb6a5212b04b000d66c7b41
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bdde117d8984db3a71624ab48a6ed88ba8367054
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56816871"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563759"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Mapa de flujo de correo en el Centro de seguridad & cumplimiento
 
@@ -32,9 +32,9 @@ ms.locfileid: "56816871"
 
 El **mapa de flujo de correo** en el panel [Flujo](mail-flow-insights-v2.md) de correo del Centro de seguridad [& cumplimiento](https://protection.office.com) proporciona información sobre cómo fluye el correo a través de la organización. Puede usar esta información para aprender patrones, identificar anomalías y solucionar problemas a medida que se producen.
 
-![Widget de mapa de flujo de correo en el panel Flujo de correo del Centro de seguridad & cumplimiento](../../media/mfi-mail-flow-map-widget.png)
+![Widget de mapa de flujo de correo en el panel Flujo de correo del Centro de & cumplimiento.](../../media/mfi-mail-flow-map-widget.png)
 
-De forma predeterminada, el widget muestra el patrón de flujo de correo del día anterior en un gráfico conocido como diagrama *de Sankey.* Puede usar la flecha izquierda flecha izquierda y flecha derecha flecha ![ derecha para mostrar información de diferentes ](../../media/scc-left-arrow.png) ![ ](../../media/scc-right-arrow.png) días. Cada color diferente representa el flujo de correo sobre un conector entrante o saliente diferente (o sin conectores). Si mantiene el mouse sobre un color específico, se muestra el número de mensajes para ese tipo de conector.
+De forma predeterminada, el widget muestra el patrón de flujo de correo del día anterior en un gráfico conocido como diagrama *de Sankey.* Puede usar la flecha izquierda ![ flecha izquierda.](../../media/scc-left-arrow.png) y flecha derecha ![ flecha derecha para mostrar información de diferentes ](../../media/scc-right-arrow.png) días. Cada color diferente representa el flujo de correo sobre un conector entrante o saliente diferente (o sin conectores). Si mantiene el mouse sobre un color específico, se muestra el número de mensajes para ese tipo de conector.
 
 ## <a name="report-view-for-the-mail-flow-map"></a>Vista Informe para el mapa de flujo de correo
 
@@ -44,11 +44,11 @@ Los gráficos siguientes están disponibles en la vista informe:
 
 - **Mostrar datos para: Información general:** Se trata básicamente de una vista más grande del widget. Si mantiene el mouse sobre un color específico, se muestra el número de mensajes para ese tipo de conector.
 
-  ![Vista introducción en el informe de mapa de flujo de correo](../../media/mfi-mail-flow-map-report-overview.png)
+  ![Vista Introducción en el informe de mapa de flujo de correo.](../../media/mfi-mail-flow-map-report-overview.png)
 
 - **Mostrar datos para: Detalle:** esta vista muestra detalles sobre los conectores y los dominios de destino. Los dominios principales de remitente y destinatario se enumeran y el resto se ponen en **Otros**. Si mantiene el mouse sobre un color y una sección específicos, se muestra el número de mensajes.
 
-  ![Vista de detalles en el informe de mapa de flujo de correo](../../media/mfi-mail-flow-map-report-detail.png)
+  ![Vista de detalles en el informe de mapa de flujo de correo.](../../media/mfi-mail-flow-map-report-detail.png)
 
 Si hace clic **en Filtros** en una vista de informe, puede especificar un intervalo de fechas con Fecha **de inicio** y Fecha **de finalización.**
 
@@ -70,7 +70,7 @@ Si hace clic **en Filtros en** una vista de tabla de detalles, puede especificar
 
 Si selecciona una fila, se muestran detalles similares en un menú desplegable:
 
-![Control desplegable de detalles de la tabla de detalles en el mapa de flujo de correo](../../media/mfi-mail-flow-map-view-details-table-details.png)
+![Los detalles se desván de la tabla de detalles en el mapa de flujo de correo.](../../media/mfi-mail-flow-map-view-details-table-details.png)
 
 Para enviar por correo electrónico el informe de un intervalo de fechas específico a uno o varios destinatarios, haga clic en **Solicitar descarga**.
 

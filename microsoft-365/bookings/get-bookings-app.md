@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
 description: Las aplicaciones móviles de Bookings aún no están disponibles en todo el mundo. En este artículo se enumeran las configuraciones regionales donde las aplicaciones están disponibles ahora.
-ms.openlocfilehash: 551ce6efb3c310d7864b24d29190d662445e6b226babf3870a56a1643c3d067b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2ac3338423cb2c9f472e28bba2be748bed2d7fd0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815101"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566089"
 ---
 # <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>Obtener la aplicación de Microsoft Bookings para iOS y Android
 
@@ -24,7 +24,7 @@ Antes de empezar, debes configurar Bookings en la web.
 
 1. ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, selecciona Todas las aplicaciones para ver una lista alfabética de las Microsoft 365 aplicaciones disponibles para ti. Desde allí, puedes buscar una aplicación específica
 
-   ![Imagen del iniciador de aplicaciones](../media/bookings-all-apps-launcher.png)
+   ![Imagen del iniciador de aplicaciones.](../media/bookings-all-apps-launcher.png)
 
 2. Llegó [a la Office principal y,](https://office.com) desde el iniciador de aplicaciones, seleccione **Bookings**.
 

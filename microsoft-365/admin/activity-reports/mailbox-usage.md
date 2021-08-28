@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Obtenga información sobre cómo obtener un informe de uso de buzones de correo para conocer las actividades de los usuarios con un buzón de usuario.
-ms.openlocfilehash: f058e4d24fd66a3e9287a94c03ddd97c617822c6d07581ba17f720c90fabbcad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 090d92b4b02a71bd4a3e8936a2496eb010dfa174
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797929"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565029"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365 Informes en el Centro de administración: uso del buzón
 
@@ -43,9 +43,9 @@ El  informe de uso de buzones de correo proporciona información sobre los usuar
 
 Para obtener una vista del **Uso del buzón** de la organización, consulte los gráficos **Buzón**, **Almacenamiento** y **Cuota**. 
   
-![Informe de uso de buzones](../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png)
+![Informe de uso del buzón.](../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png)
 
-|Item|Descripción|
+|Elemento|Description|
 |:-----|:-----|
 |1.  <br/> |Puede visualizar el informe **Uso del buzón** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
 |2.  <br/> |Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas.  <br/> |
@@ -55,6 +55,6 @@ Para obtener una vista del **Uso del buzón** de la organización, consulte los 
 |6.  <br/> | En el gráfico **Buzón**, el eje Y es el número de buzones de usuario.  <br/>  En el gráfico **Almacenamiento**, el eje Y es la cantidad de almacenamiento que usan los buzones de usuario de la organización.  <br/>  En el gráfico **Cuota**, el eje Y es el número de buzones de usuario en cada cuota de almacenamiento.  <br/>  El eje X de los gráficos Buzón y Almacenamiento es el intervalo de fechas seleccionado para este informe específico.  <br/>  El eje X del gráfico Cuota es la categoría de cuota.  <br/> |
 |7.  <br/> |Puede filtrar los gráficos que ve seleccionando un elemento en la leyenda.  <br/> |
 |8.  <br/> | En la tabla se muestra un desglose del uso del buzón en el nivel de usuario. Puede agregar columnas adicionales a la tabla.  <br/> **Nombre de usuario** es la dirección de correo electrónico del usuario.  <br/> **Nombre para mostrar** es el nombre completo del usuario.  <br/> **Eliminado** hace referencia al buzón con un estado actual de eliminado, pero que ha estado activo durante alguna parte del período de notificación del informe.  <br/> **Fecha de eliminación** es la fecha en que se eliminó el buzón.  <br/> **Fecha de creación** es la fecha en que se creó el buzón.  <br/> **Fecha de última actividad** hace referencia a la fecha en que el buzón tuvo una actividad de envío o lectura de correo electrónico.  <br/> **Recuento de elementos** hace referencia al número total de elementos del buzón.  <br/> **Almacenamiento utilizado (MB)** hace referencia al almacenamiento total usado.  <br/> **Número de elementos eliminados** hace referencia al número total de elementos eliminados en el buzón. <br/> **El tamaño del elemento eliminado (MB)** hace referencia al tamaño total de todos los elementos eliminados en el buzón. <br/> **Cuota de emisión de advertencia (MB)** hace referencia al límite de almacenamiento cuando el propietario del buzón recibirá una advertencia que le indica que está a punto de alcanzar la cuota de almacenamiento.  <br/> **Cuota de prohibición de envío (MB)** hace referencia al límite de almacenamiento cuando el buzón ya no puede enviar correos electrónicos.  <br/> **Cuota de prohibición de envío y recepción (MB)** hace referencia al límite de almacenamiento cuando el buzón ya no puede enviar ni recibir correos electrónicos.  <br/>  Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **Ocultar detalles de usuario en la sección Informes** de actividad en el [Centro de administración de Microsoft 365](activity-reports.md).  <br/> |
-|9.  <br/> |Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Informe de uso de buzones: elegir columnas](../../media/ea3d0b18-6ac6-41b0-9bb9-4844f040ea75.png)|
+|9.  <br/> |Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Informe de uso de buzones: elija columnas.](../../media/ea3d0b18-6ac6-41b0-9bb9-4844f040ea75.png)|
 |10.  <br/> |También puede exportar los datos del informe a un Excel .csv, seleccionando el **vínculo** Exportar.  <br/> |
 |||

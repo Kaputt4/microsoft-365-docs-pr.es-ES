@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: En este artículo se describe cómo usar Azure para crear un entorno de recuperación ante desastres para la granja de servidores SharePoint local.
-ms.openlocfilehash: bb048b9b0cf297ba5e5cd61e09f9f3164464a41a37fecfe2d27d0ef7be82f37b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87bbbf143fe831537ddbc08e6d43b4013fe1e379
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878258"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567645"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 
@@ -36,7 +36,7 @@ ms.locfileid: "53878258"
   
 Use este artículo con el modelo de solución: **recuperación ante desastres de SharePoint en Microsoft Azure**.
   
-[![Proceso de recuperación ante desastres de SharePoint a Azure](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
+[![SharePoint proceso de recuperación ante desastres en Azure.](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
@@ -82,7 +82,7 @@ En esta ilustración se muestran estos tres elementos.
   
 **Ilustración: Elementos de una solución en estado de espera semiactiva en Azure**
 
-![Elementos de una solución de espera semiactiva de SharePoint en Azure](../media/AZarch-AZWarmStndby.png)
+![Elementos de una SharePoint de espera activa en Azure.](../media/AZarch-AZWarmStndby.png)
   
 El trasvase de registros de SQL Server con la Replicación del sistema de archivos distribuido (DFSR) se usa para copiar las copias de seguridad de bases de datos y los registros de transacciones en la granja de servidores de recuperación en Azure: 
   
@@ -156,7 +156,7 @@ En la siguiente ilustración se muestra una solución de recuperación ante desa
   
 **Ilustración: Topología y elementos clave de una granja de producción y una granja de servidores de recuperación en espera semiactiva.**
 
-![Topología de una granja de servidores de SharePoint y una granja de servidores de recuperación con espera semiactiva](../media/AZarch-AZWarmStndby.png)
+![Topología de una granja de SharePoint y una granja de recuperación de espera activa.](../media/AZarch-AZWarmStndby.png)
   
 En este diagrama:
   
@@ -186,7 +186,7 @@ En esta ilustración se muestra un entorno de conmutación por error de Azure en
   
 **Ilustración: Granja de servidores de recuperación de espera pasiva con máquinas virtuales en funcionamiento**
 
-![Elementos de una solución de espera pasiva de SharePoint en Azure](../media/AZarch-AZColdStndby.png)
+![Elementos de una solución SharePoint en espera en frío en Azure.](../media/AZarch-AZColdStndby.png)
   
 Después de la conmutación por error a un entorno de espera pasiva, se inician todas las máquinas virtuales y debe configurarse el método para lograr una alta disponibilidad de los servidores de bases de datos, como los grupos de disponibilidad AlwaysOn de SQL Server.
   
@@ -273,7 +273,7 @@ Esta fase abarca la implementación de Windows Server Active Directory y DNS en 
   
 **Ilustración: Configuración de dominio híbrido de Active Directory**
 
-![Dos máquinas virtuales implementadas en la red virtual de Azure y la subred SharePoint granja de servidores son controladores de dominio de réplica y servidores DNS](../media/AZarch-HyADdomainConfig.png)
+![Dos máquinas virtuales implementadas en la red virtual de Azure y la subred SharePoint granja de servidores son controladores de dominio de réplica y servidores DNS.](../media/AZarch-HyADdomainConfig.png)
   
 En la ilustración, se implementan dos máquinas virtuales en la misma subred. Cada una de estas máquinas virtuales hospeda dos roles: Active Directory y DNS.
   
@@ -325,7 +325,7 @@ En esta tabla se proporcionan vínculos a entradas de blog y artículos de refer
   
 **Tabla: Artículos de referencia de DFSR**
 
-|**Title**|**Descripción**|
+|**Título**|**Descripción**|
 |:-----|:-----|
 |[Replicación](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770278(v=ws.11)) <br/> |Tema de TechNet sobre administración de DFS con vínculos para la replicación  <br/> |
 |[Replicación DFS: Guía de supervivencia](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Sitio wiki con vínculos a información sobre DFS  <br/> |

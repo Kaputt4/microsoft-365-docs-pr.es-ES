@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Obtenga más información Office 365 operado por 21Vianet diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 57126d37e8abe64ed2cbee1c1c271de91cf547d8
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 6313212d39b81e9954681848e5ac6747ff6ee3ea
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399784"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567837"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 operado por 21Vianet
 
@@ -44,7 +44,7 @@ Microsoft no gestiona el servicio. 21Vianet funciona, proporciona y administra l
   
 Digitalice este código QR para seguirnos en WeChat y obtener las actualizaciones más recientes para Office 365 ofrecido por 21Vianet.
   
-![Examinar este código QR para seguirnos en WeChat](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
+![Digitalizar este código QR para seguirnos en WeChat.](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
   
  **Acerca de los servicios Office 365 operados por 21Vianet**
   

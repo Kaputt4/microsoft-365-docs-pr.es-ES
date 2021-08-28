@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Cree un buzón de sala o equipamiento para que todos los usuarios de su organización puedan reservarlo para reuniones o eventos con Outlook. '
-ms.openlocfilehash: 3bbaaf8b1074acd7abdd2cd7ce205eabcec11634
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 7c4406a16e3318adabcb50ff14ef75b0abce1b6d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394221"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566179"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Buzones de sala y equipamiento
 
@@ -50,13 +50,13 @@ Para usar buzones de equipamiento o de sala, abra Outlook desde su equipo o inic
     
 5. Cambie el valor de la **ubicación** o déjelo como está. 
     
-6. Cambie la **Hora de inicio** y la **Hora de finalización**. O bien pulse **Todo el día**. Para que se repita la reunión o la reserva, pulse **Periodicidad** en la parte superior.<br/>![Reservar una hora de reunión](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
+6. Cambie la **Hora de inicio** y la **Hora de finalización**. O bien pulse **Todo el día**. Para que se repita la reunión o la reserva, pulse **Periodicidad** en la parte superior.<br/>![Reservar una hora de reunión.](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
 7. Escriba un mensaje describiendo la finalidad y adjunte algún archivo si es necesario.
     
 8. Para permitir que otras personas se unan en línea o llamen a la reunión, seleccione **Reunión de Skype**.
     
-9. Para garantizar que tanto la sala como el equipamiento y las personas que haya invitado estén disponibles, seleccione **Asistente para programación** en la parte superior. A continuación, seleccione una hora que esté disponible en el calendario.<br/> ![Comprobar si el equipamiento de la sala está disponible](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>SUGERENCIA: En el calendario de programación, el azul significa que la sala o el equipo está reservado o ocupado. Seleccione el área blanca o libre del calendario. 
+9. Para garantizar que tanto la sala como el equipamiento y las personas que haya invitado estén disponibles, seleccione **Asistente para programación** en la parte superior. A continuación, seleccione una hora que esté disponible en el calendario.<br/> ![Comprobar si el equipamiento de la sala está disponible.](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>SUGERENCIA: En el calendario de programación, el azul significa que la sala o el equipo está reservado o ocupado. Seleccione el área blanca o libre del calendario. 
   
 10. Cuando finalice, haga clic en **Enviar**.
     
@@ -68,7 +68,7 @@ Para configurar un buzón de sala o equipamiento, vaya al <a href="https://go.mi
   
 2. Seleccione **Agregar**.
     
-3. Rellene los campos de la sala o del equipamiento:<br/>![Agregar un buzón de sala en Microsoft 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Rellene los campos de la sala o del equipamiento:<br/>![Agregar un buzón de sala en Microsoft 365.](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **Sala** o **Equipamiento**: el tipo de buzón que quiere crear.
     

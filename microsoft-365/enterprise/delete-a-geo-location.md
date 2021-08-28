@@ -13,12 +13,12 @@ ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: Obtenga más información sobre cómo eliminar una ubicación de satélite en Microsoft 365 Multi-Geo. Cuando se elimina una ubicación satélite, todos los datos de usuario también se eliminan permanentemente.
-ms.openlocfilehash: 8cd15ec7b0165bcedbfc995542a00f4e230ee5f204b0ce1748b2a91a28664419
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 749b48528b113a836be6b4e5ee59895bc3816992
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864793"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565939"
 ---
 # <a name="delete-a-satellite-location-in-microsoft-365-multi-geo"></a>Eliminar una ubicación de satélite en Microsoft 365 Multi-Geo
 
@@ -29,7 +29,7 @@ Si ya no necesita una ubicación de satélite, puede eliminarla del espacio empr
 
 Solo los administradores globales pueden eliminar ubicaciones de satélite.
 
-![Captura de pantalla del centro de administración multigeográfico en la que se muestra la interfaz de usuario de eliminación de una ubicación geográfica](../media/multi-geo-delete-satellite-location.png)
+![Captura de pantalla del centro de administración multigeo que muestra eliminar la interfaz de usuario de ubicación geográfica.](../media/multi-geo-delete-satellite-location.png)
 
 Para eliminar una ubicación de satélite
 

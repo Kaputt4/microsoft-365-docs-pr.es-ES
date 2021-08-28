@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa Windows PowerShell para obtener detalles sobre los dispositivos de movilidad y seguridad básicas de la organización.
-ms.openlocfilehash: 1d34f1b1dbb96227affffd31d794b7d0244298e25e3080ea08dcd3380399db4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 231eeb87d3f72ca4107c0ee6bef5bd60c713bb3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826821"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564470"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtener detalles sobre dispositivos administrados de movilidad básica y seguridad
 
@@ -36,7 +36,7 @@ Este es un desglose de los detalles del dispositivo disponibles.
 |El dispositivo está inscrito en Movilidad y seguridad básicas. Para obtener más información, consulta [Inscribir el dispositivo móvil con Movilidad y seguridad básicas](enroll-your-mobile-device.md)|El valor del *parámetro isManaged*   es:<br/>**True**= el dispositivo está inscrito.<br/>**False**= el dispositivo no está inscrito. |
 |El dispositivo es compatible con las directivas de seguridad del dispositivo. Para obtener más información, consulta [Crear directivas de seguridad de dispositivos](create-device-security-policies.md)|El valor del *parámetro isCompliant*   es:<br/>**True**   = el dispositivo es compatible con las directivas.<br/>**False**   = el dispositivo no es compatible con las directivas.|
 
-:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Parámetros básicos de PowerShell de movilidad y seguridad":::
+:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Parámetros básicos de PowerShell de movilidad y seguridad.":::
 
 > [!NOTE]
 > Los comandos y scripts de este artículo también devuelven detalles sobre los dispositivos administrados [por Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).

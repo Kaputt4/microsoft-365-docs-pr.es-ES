@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre el uso de complementos centralizados para implementar complementos para usuarios y grupos de la organización.
-ms.openlocfilehash: a6eb234f9911b13616483456ef67866b99b4dee39fca90c2b16b272de2a85d62
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4dd2cbc842d10770b544df014685173a8888df67
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825384"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566275"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Administrar complementos en el centro de administración
 
@@ -105,7 +105,7 @@ Como organización, es posible que quieras impedir la descarga de nuevos Office 
         
       - Windows
       - Mac
-      - Office
+      - Oficina
         
         
     - Adquisiciones a partir de **AppSource**
@@ -140,7 +140,7 @@ Después de implementar un complemento, los usuarios finales pueden empezar a us
   
 Si el complemento es compatible con comandos de complemento, estos aparecerán en la cinta de opciones de Office. En el siguiente ejemplo, el comando **Buscar cita** aparece para el complemento **Citas**. 
 
-![Office cinta de opciones con citas de búsqueda](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![Office cinta de opciones con citas de búsqueda.](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
 Si el complemento implementado no admite comandos de complemento o si desea ver todos los complementos implementados, puede verlos a través de **Mis complementos**. 
   
@@ -152,13 +152,13 @@ Si el complemento implementado no admite comandos de complemento o si desea ver 
     
 3. Haga doble clic en el complemento que implementó anteriormente (en este ejemplo, **Citations**).
 
-    ![Pestaña Administración administrada de la Office complementos](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+    ![Pestaña Administración administrada de la Office complementos.](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>En Outlook
 
 1. En la **cinta de** opciones Inicio, seleccione **Obtener complementos**.
 
-    ![Botón Tienda en Outlook](../../media/getaddinsicon.png)
+    ![Botón Almacenar en Outlook.](../../media/getaddinsicon.png)
   
 2. Seleccione **Gestionado por el administrador** en la barra de navegación izquierda. 
 

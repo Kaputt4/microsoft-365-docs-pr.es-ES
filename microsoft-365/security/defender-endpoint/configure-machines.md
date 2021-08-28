@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13e89f64a0b86249d69e3c36e52dc445b2d4c70438d3f16f62bc8758fa6b5b4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b9d00ec13a08751882e7c699a4e029083dc08bc6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894480"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567873"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Asegurarse de que los dispositivos estén configurados de manera adecuada
 
@@ -41,7 +41,7 @@ Con dispositivos configurados correctamente, puedes aumentar la resistencia gene
 
 Haga **clic en Administración de** configuración en el menú de navegación para abrir la página Administración de configuración de dispositivos.
 
-![Página de administración de configuración de seguridad](images/secconmgmt_main.png)
+![Página de administración de configuración de seguridad.](images/secconmgmt_main.png)
 
 *Página de administración de configuración de dispositivos*
 
@@ -77,7 +77,7 @@ Si se le han asignado otros roles, asegúrese de que tiene los permisos necesari
 - Permisos de lectura para directivas de cumplimiento de dispositivos
 - Permisos de lectura para la organización
 
-![Permisos necesarios en Intune](images/secconmgmt_intune_permissions.png)
+![Permisos necesarios en Intune.](images/secconmgmt_intune_permissions.png)
 
 *Permisos de configuración de dispositivos en Intune*
 

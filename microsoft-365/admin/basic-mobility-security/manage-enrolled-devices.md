@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar los dispositivos móviles de su organización.
-ms.openlocfilehash: b532d8c189598db941f3ced4095b910cfc6f0668
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 3cb5b34d869ae16faa89ced45d54537fbb07a5e2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394329"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564446"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Administrar dispositivos inscritos en Administración de dispositivos móviles en Microsoft 365
 
@@ -40,7 +40,7 @@ Para llegar al panel de administración de dispositivos, siga estos pasos:
 
 2. Escribe Administración de dispositivos móviles en el campo de búsqueda y selecciona **Administración de dispositivos móviles** en la lista de   resultados.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opción de administración de dispositivos móviles":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opción de administración de dispositivos móviles.":::
 
 3. Seleccione  **Empecemos.**
 

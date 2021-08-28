@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0817778d5b006cb0c08cda4a4b63063f06644ef6ffdb68547848d038197c853d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a336a571c33820d289eed9d4d6cd20e56cdfa20
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792763"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563807"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Storage cuenta
 
@@ -45,14 +45,14 @@ ms.locfileid: "53792763"
 
 2. Vaya a **Configuración** \> **Microsoft 365 Defender** \> **API de streaming**. Para ir directamente a la página **de la API de streaming,** use <https://security.microsoft.com/settings/mtp_settings/raw_data_export> .
 
-3. Seleccione **Agregar**.
+3. Haga clic en **Agregar**.
 
 4. En el **menú desplegable Agregar nueva configuración de la API** de streaming que aparece, configure las siguientes opciones:
    1. **Nombre:** elija un nombre para la nueva configuración.
    2. Seleccione **Reenviar eventos para Azure Storage**.
    3. En el **Storage id.** de recurso de cuenta que aparece, escriba el Storage **de recurso de cuenta**. Para obtener el identificador **de recurso** Storage cuenta, abra Azure Portal en , haga clic en Storage cuentas vaya a la pestaña propiedades copie el texto en Storage Id. de recurso <https://portal.azure.com> de  \> \> **cuenta**.
 
-      ![Imagen del id. de recurso del centro de eventos1](../defender-endpoint/images/storage-account-resource-id.png)
+      ![Imagen del id. de recurso del centro de eventos1.](../defender-endpoint/images/storage-account-resource-id.png)
 
    4. En el menú desplegable Agregar nueva configuración de la API de **streaming,** elija los tipos de **eventos** que desea transmitir.
 
@@ -62,7 +62,7 @@ ms.locfileid: "53792763"
 
 - Se creará un contenedor de blobs para cada tipo de evento:
 
-  ![Imagen del id. de recurso del centro de eventos2](../defender-endpoint/images/storage-account-event-schema.png)
+  ![Imagen del id. de recurso del centro de eventos2.](../defender-endpoint/images/storage-account-event-schema.png)
 
 - El esquema de cada fila de un blob es el siguiente JSON:
 
@@ -97,7 +97,7 @@ Para obtener los tipos de datos de nuestras propiedades de eventos, haga lo sigu
 
 - Este es un ejemplo para el evento Device Info:
 
-  ![Imagen del id. de recurso del centro de eventos3](../defender-endpoint/images/machine-info-datatype-example.png)
+  ![Imagen del recurso del centro de eventos ID3.](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

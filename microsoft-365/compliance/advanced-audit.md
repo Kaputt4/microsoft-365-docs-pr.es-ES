@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 7671bcc99a0f1ab205312fe0aa6930255ae6cfa1
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 5892932bc3fe35cfc6739c266db9f6379d08ee6b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387001"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565511"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
@@ -90,7 +90,7 @@ Para obtener información sobre los registros de auditoría de las actividades d
 
 Para buscar registros de auditoría de MailItemsAccessed, puede buscar la actividad **elementos del buzón a los que se ha accedido** en la lista desplegable **actividades de buzón de Exchange** en la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el centro de cumplimiento de Microsoft 365.
 
-![Buscar acciones MailItemsAccessed en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_MailItemsAccessed.png)
+![Buscar acciones MailItemsAccessed en la herramienta de búsqueda de registros de auditoría.](../media/AdvAudit_MailItemsAccessed.png)
 
 También puede ejecutar los comandos [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) en Exchange Online PowerShell.
 
@@ -108,7 +108,7 @@ Los investigadores pueden usar el evento Send para identificar correos enviados 
 
 Para buscar registros de auditoría de Send, puede buscar la actividad de **Mensaje enviado** en la lista desplegable **Actividades de buzón de Exchange** de la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el centro de cumplimiento de Microsoft 365.
 
-![Buscar acciones de mensaje enviado en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_SentMessage.png)
+![Buscar acciones de mensaje enviado en la herramienta de búsqueda de registros de auditoría.](../media/AdvAudit_SentMessage.png)
 
 También puede ejecutar los comandos [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) en Exchange Online PowerShell.
 
@@ -130,7 +130,7 @@ Los investigadores pueden usar el evento SearchQueryInitiatedExchange para deter
 
 Para buscar registros de auditoría de SearchQueryInitiatedExchange, puede buscar la actividad de **Búsqueda de mensaje enviado** en la lista desplegable de **Actividades de búsqueda** de la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el centro de cumplimiento.
 
-![Buscar acciones de búsqueda de mensaje enviado en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_SearchExchange.png)
+![Buscar acciones de búsqueda de mensaje enviado en la herramienta de búsqueda de registros de auditoría.](../media/AdvAudit_SearchExchange.png)
 
 También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
 
@@ -153,7 +153,7 @@ Los investigadores pueden usar el evento SearchQueryInitiatedSharePoint para det
 
 Para buscar registros de auditoría de SearchQueryInitiatedSharePoint, puede buscar la actividad de **Búsqueda de SharePoint realizada** en la lista desplegable de **Actividades de búsqueda** de la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el centro de cumplimiento.
 
-![Buscar acciones de búsqueda de SharePoint realizadas en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_SearchSharePoint.png)
+![Buscar acciones de búsqueda de SharePoint realizadas en la herramienta de búsqueda de registros de auditoría.](../media/AdvAudit_SearchSharePoint.png)
 
 También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
 

@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga los pasos de este artículo para dar a otro empleado acceso a los datos de OneDrive y Outlook antiguos.
-ms.openlocfilehash: c9d9858d030e54884a4defc9b06afe67e8951fca37e36f10d0e9979e5d282920
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0904c6aeca919dd3f93044ce177a34761cb141b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827495"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564727"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Paso 4: Dar a otro empleado acceso a OneDrive y Outlook datos
 
@@ -115,11 +115,11 @@ Para guardar los mensajes de correo electrónico, el calendario, las tareas y lo
   
 3. Seleccione **Abrir &amp; exportar** \> **Import/Export**.
 
-    ![Import/Export en la vista Backstage](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+    ![Import/Export comando en la vista Backstage.](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
 4. Seleccione **Exportar a un archivo** y, a continuación, seleccione **Siguiente**.
 
-    ![Exportar a una opción de archivo en el Asistente para importación y exportación](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+    ![Exportar a una opción de archivo en el Asistente para importar y exportar.](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
 5. Seleccione **Outlook archivo de datos (.pst)** y, a continuación, seleccione **Siguiente**.
 
@@ -128,7 +128,7 @@ Para guardar los mensajes de correo electrónico, el calendario, las tareas y lo
     > [!NOTE]
     > Puede exportar una cuenta a la vez. Si desea exportar varias cuentas, después de exportar una cuenta, repita estos pasos.
   
-    ![Exportar Outlook de diálogo Archivo de datos con la carpeta superior seleccionada e Incluir subcarpetas activadas](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![Exportar Outlook cuadro de diálogo Archivo de datos con la carpeta superior seleccionada e Incluir subcarpetas activadas.](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. Seleccione **Siguiente**.
 
@@ -165,7 +165,7 @@ Para dar acceso a los mensajes de correo electrónico, el calendario, las tareas
 
 2. Seleccione **Importar desde otro programa o archivo y,** a continuación, seleccione **Siguiente**.
 
-    ![Asistente para importación y exportación](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+    ![Asistente para importar y exportar.](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
 3. Seleccione **Outlook archivo de datos (.pst)** y seleccione **Siguiente**.
 

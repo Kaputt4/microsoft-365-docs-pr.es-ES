@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar Cisco Jabber en MS SQL datos de Veritas en Microsoft 365. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: efe624c7c3d8ac7d4d066f3a1cc055bd60550ed0ce740d5eb62a3fccaf39b5a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a34bf267373e09f94c28bba243fb39d2ba932baf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861181"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565457"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-ms-sql-data"></a>Configurar un conector para archivar Cisco Jabber en datos de SQL MS
 
@@ -29,7 +29,7 @@ Una vez que los datos de Cisco Jabber se almacenan en buzones de usuario, puede 
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar Cisco Jabber en MS SQL datos en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos de Cisco Jabber](../media/CiscoJabberonMSSQLConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos de Cisco Jabber.](../media/CiscoJabberonMSSQLConnectorWorkflow.png)
 
 1. Su organización trabaja con Cisco para configurar y configurar un Jabber de Cisco en MS SQL Database.
 

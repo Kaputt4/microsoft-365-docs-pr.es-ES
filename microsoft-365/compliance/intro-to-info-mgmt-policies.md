@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar directivas de administración de información para controlar y realizar un seguimiento de cosas como cuánto tiempo se conserva el contenido o qué acciones pueden realizar los usuarios con ese contenido.
-ms.openlocfilehash: 4584a23156a7dc492601717b0453cf7d9526f2654058ca0f311a370770518a73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fc3bfe1c0da54ccf4cb2c59589647cb396a5081e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879370"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567429"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduction to information management policies (Introducción a las directivas de administración de la información)
 
@@ -41,7 +41,7 @@ Para obtener información sobre procedimientos, vea [Create and apply informatio
 
 Hay cuatro categorías básicas de características de directiva predefinidas que las organizaciones pueden usar individualmente o en combinación para administrar el contenido y los procesos. 
   
-![Tipos de directivas de contenido](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
+![Tipos de directivas de contenido.](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
   
 La característica de directiva de auditoría ayuda a las organizaciones a analizar cómo se usan sus sistemas de administración de contenido mediante el registro de eventos y operaciones que se realizan en documentos y elementos de lista. Puede configurar la característica de directiva auditoría para registrar eventos como cuando un documento o elemento se edita, ve, desproteje, elimina o cambia sus permisos. Toda la información de auditoría se almacena en un único registro de auditoría en el servidor y los administradores del sitio pueden ejecutar informes en él. 
   
@@ -52,25 +52,25 @@ Las organizaciones también pueden crear e implementar características de direc
 ## <a name="locations-to-use-an-information-management-policy"></a>Ubicaciones para usar una directiva de administración de información
 <a name="__toc340213528"> </a>
 
-Para implementar una directiva de administración de información, debe agregarla a una lista, biblioteca o tipo de contenido de un sitio. La ubicación en la que se crea o agrega una directiva de administración de información afecta a la frecuencia con la que se aplica la directiva o a la frecuencia con la que se puede usar. Puede:
+Para implementar una directiva de administración de información, debe agregarla a una lista, biblioteca o tipo de contenido de un sitio. La ubicación en la que se crea o agrega una directiva de administración de información afecta a la frecuencia con la que se aplica la directiva o a la frecuencia con la que se puede usar. Podrá:
   
  **Crear una directiva de colección de sitios y, a continuación, agregar esta directiva a un tipo de contenido, lista o biblioteca** Puede crear una directiva de colección de sitios en la lista Directivas del sitio de nivel superior de una colección de sitios. Después de crear una directiva de colección de sitios, puede exportarla para que los administradores de otras colecciones de sitios puedan importarla en su lista Directivas. La creación de una directiva de colección de sitios exportable permite estandarizar las directivas de administración de información en todos los sitios de la organización. 
   
 Cuando se agrega una directiva de colección de sitios a un tipo de contenido de sitio y se agrega una instancia de ese tipo de contenido de sitio a una lista o biblioteca, el propietario de esa lista o biblioteca no puede modificar la directiva de colección de sitios para la lista o biblioteca. Agregar una directiva de colección de sitios a un tipo de contenido de sitio es una buena forma de garantizar que las directivas de colección de sitios se aplican en cada nivel de la jerarquía de sitios.
   
-![Vínculo Plantilla de directiva de tipo de contenido en la Configuración sitio](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+![Vínculo Plantilla de directiva de tipo de contenido en la Configuración sitio.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
  Cree una directiva de administración de información para un tipo de contenido de sitio en la Galería de tipos de contenido del sitio de nivel superior **y, a continuación,** agregue ese tipo de contenido a una o varias listas o bibliotecas También puede crear una directiva de administración de información directamente para un tipo de contenido de sitio y, a continuación, asociar una instancia de ese tipo de contenido de sitio con varias listas o bibliotecas. Si crea una directiva de administración de información de esta manera, cada elemento de la colección de sitios de ese tipo de contenido o un tipo de contenido que herede de ese tipo de contenido tiene la directiva. Sin embargo, si crea una directiva de administración de información directamente para un tipo de contenido de sitio, es más difícil reutilizar esta directiva de administración de información en otras colecciones de sitios, ya que las directivas que se crean de esta manera no se pueden exportar. 
   
-![Vínculo Tipos de contenido del sitio en la Configuración sitio](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+![Vínculo Tipos de contenido del sitio en la Configuración sitio.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
-![Vínculo de directiva de administración de información en la página de configuración de un tipo de contenido de sitio](../media/15d83a34-6c8f-4b6e-b6ee-e9b0a70cbb4b.png)
+![Vínculo de directiva de administración de información en la página de configuración de un tipo de contenido de sitio.](../media/15d83a34-6c8f-4b6e-b6ee-e9b0a70cbb4b.png)
   
 Nota Para controlar qué directivas se usan en una colección de sitios, los administradores de colecciones de sitios pueden deshabilitar la capacidad de establecer características de directiva directamente en un tipo de contenido. Cuando esta restricción está en vigor, los usuarios que crean tipos de contenido se limitan a seleccionar directivas de la lista Directivas de la colección de sitios.
   
  **Crear una directiva de administración de información para una lista o biblioteca** Si su organización necesita aplicar una directiva de administración de información específica a un conjunto de contenido muy limitado, puede crear una directiva de administración de información que se aplique solo a una lista o biblioteca individuales. Este método de creación de una directiva de administración de información es el menos flexible, ya que la directiva se aplica solo a una ubicación y no se puede exportar ni reutilizar para otras ubicaciones. Sin embargo, a veces es posible que necesite crear directivas de administración de información únicas con una aplicabilidad limitada para abordar situaciones específicas. 
   
-![Vínculo Directivas de administración de información en la página de configuración de la biblioteca de documentos](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Vínculo Directivas de administración de información en la página de configuración de la biblioteca de documentos.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
 Notas 
   

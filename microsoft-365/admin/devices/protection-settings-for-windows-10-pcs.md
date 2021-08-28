@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Obtenga información sobre la configuración disponible en Microsoft 365 para empresas para proteger Windows 10 dispositivos.
-ms.openlocfilehash: 1d3f3f3516431e08b00f83bf2b8beb4bebecb0f5
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 29fb5c18f016bd2832c25ff66db258671b95bd6f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360811"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566399"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Editar o crear la configuración de protección de dispositivos Windows 10 equipos
 
@@ -50,7 +50,7 @@ Vea un vídeo sobre cómo proteger Windows 10 dispositivos con Microsoft 365 Emp
     
     Siempre puede usar el vínculo **Restablecer la configuración predeterminada** para volver a la configuración predeterminada. 
     
-    ![Add policy pane with Windows 10 Device configuration selected](../../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
+    ![Agregar panel de directivas con Windows 10 configuración de dispositivo seleccionada.](../../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
 6. Después, decida **a qué usuarios se aplica esta configuración**. Si no quiere usar el grupo de seguridad predeterminado **Todos los usuarios**, elija **Cambiar**, busque los grupos de seguridad que recibirán esta configuración \> **Seleccionar**.
 7. Por último, elija **Listo** para guardar la directiva y asignarla a los dispositivos. 
@@ -69,7 +69,7 @@ De forma predeterminada, todas las opciones de configuración están **activadas
 Para obtener más información, vea [How do protection features in Microsoft 365 Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
 
 
-|Configuración  <br/> |Descripción  <br/> |
+|Valor  <br/> |Descripción  <br/> |
 |:-----|:-----|
 |Proteger los equipos PC de virus y otras amenazas con el antivirus Windows Defender  <br/> |Es necesario que el antivirus Windows Defender esté activado para proteger los equipos PC de los peligros de estar conectados a Internet.  <br/> |
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |

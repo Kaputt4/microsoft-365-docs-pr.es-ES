@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure la escritura diferida de contraseña para el entorno de prueba de Microsoft 365'
-ms.openlocfilehash: 7ad01942b0da7858895d58ecd3bf5c83207e88b9
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5bb1307888948e46a07068a2493591ff9b4dc96f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356221"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565861"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Escritura diferida de contraseña para el entorno de prueba de Microsoft 365
 
@@ -37,7 +37,7 @@ La configuración del entorno de prueba para la reescribición de contraseñas i
 - [Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Fase 2: Habilitar la escritura diferida de contraseña para el dominio TESTLAB de AD DS.](#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain)
   
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -46,7 +46,7 @@ La configuración del entorno de prueba para la reescribición de contraseñas i
 
 En primer lugar, siga las instrucciones de sincronización [de hash de contraseña.](password-hash-sync-m365-ent-test-environment.md) La configuración resultante tiene este aspecto:
   
-![La empresa simulada con el entorno de prueba con la sincronización de hash de contraseñas](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![La empresa simulada con el entorno de prueba de sincronización de hash de contraseña.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 Esta configuración se compone de:
   
@@ -123,7 +123,7 @@ Ahora está listo para probar la escritura de escritura por contraseña para los
 
 La configuración resultante tiene este aspecto:
 
-![La empresa simulada con el entorno de prueba con la autenticación de paso a través](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![La empresa simulada con entorno de prueba de autenticación de paso a través.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
 Esta configuración se compone de:
 

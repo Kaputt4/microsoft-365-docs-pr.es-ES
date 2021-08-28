@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 7c5b30abcf755ff43f746e4a7a299ae1aece0f8688612274ebc2ce9e547f3eaa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 46ddc7584b0299a7098b3fbe0758bdd9d4ee914c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866509"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564163"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de comunicaciones en Microsoft 365
 
@@ -31,7 +31,7 @@ Proteger la información confidencial y detectar y actuar en incidentes de acoso
 
 Siga estos pasos para configurar el cumplimiento de las comunicaciones para su organización:
 
-![Pasos de cumplimiento de la comunicación de soluciones de riesgo de Insider](../media/ir-solution-cc-steps.png)
+![Pasos de cumplimiento de la comunicación de la solución de riesgo insider.](../media/ir-solution-cc-steps.png)
 
 1. Obtenga información [sobre el cumplimiento de la](communication-compliance.md) comunicación en Microsoft 365
 2. Planear el cumplimiento [de las comunicaciones y](communication-compliance-plan.md) comprobar las [licencias](communication-compliance-configure.md#subscriptions-and-licensing)

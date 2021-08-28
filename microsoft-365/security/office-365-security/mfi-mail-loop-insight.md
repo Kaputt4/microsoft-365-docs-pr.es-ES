@@ -14,12 +14,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar la información sobre corregir posibles bucles de correo en el panel flujo de correo del Centro de seguridad y cumplimiento de & para identificar y corregir bucles de correo en su organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c391dee66461dd2535de5f05ef6ebd0f00b8dde0b7c973df8fa638199885dd22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0c866dbec4a406c47bec072225dbe038510d71de
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56813751"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563747"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corregir posibles perspectivas de bucle de correo en el Centro de seguridad & cumplimiento
 
@@ -40,7 +40,7 @@ Fix **possible mail loop** insight in the Recommended for **you** area of the Ma
 
 Esta información aparece solo después de que se detecte la condición (si no tiene bucles de correo, no verá la información).
 
-![Corregir la información de reglas de flujo de correo lento en el área Recomendado para usted del panel flujo de correo](../../media/mfi-fix-possible-mail-loop.png)
+![Corregir la información de reglas de flujo de correo lento en el área Recomendado para usted del panel flujo de correo.](../../media/mfi-fix-possible-mail-loop.png)
 
 Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con más información:
 
@@ -50,7 +50,7 @@ Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con 
 - **Registro MX:** el host (**servidor de correo**) y los valores **de** prioridad del registro MX para el dominio.
 - **Motivo del** bucle **y Cómo corregir:** identificaremos los escenarios de bucle de correo más comunes y proporcionaremos acciones recomendadas para corregir el bucle.
 
-![Control de detalles que aparece después de hacer clic en Ver detalles en la información de corregir posibles bucles de correo](../../media/mfi-fix-possible-mail-loop-details.png)
+![Control desplegable de detalles que aparece después de hacer clic en Ver detalles en la información corregir posibles bucles de correo.](../../media/mfi-fix-possible-mail-loop-details.png)
 
 ## <a name="see-also"></a>Vea también
 

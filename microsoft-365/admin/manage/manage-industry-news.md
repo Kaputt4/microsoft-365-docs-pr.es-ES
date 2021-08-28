@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Proporcione a los usuarios titulares de noticias actualizados sobre su sector e información de su organización, use el servicio de noticias para habilitar una fuente de noticias personalizada para su organización.
-ms.openlocfilehash: 42a65543ef37d2433d84432a7436dabaaa9ce345
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 9577081bcf8d8c2b7b47bc820529f2e66cc86924
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394233"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566263"
 ---
 # <a name="manage-industry-news"></a>Administrar noticias del sector
 
@@ -34,13 +34,13 @@ Tiene la opción de enviar a los usuarios un correo electrónico diario de actua
  
 Los usuarios que han iniciado sesión en la página principal Bing ver la fuente de noticias del sector en la información personalizada de su organización. 
  
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Captura de pantalla del carrusel de imágenes con noticias del sector desde la web":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Captura de pantalla del carrusel de imágenes con noticias del sector desde la web.":::
 
-:::image type="content" source="../../media/industry-updates-new.png" alt-text="Página Actualizaciones del sector con fecha y titulares":::
+:::image type="content" source="../../media/industry-updates-new.png" alt-text="Página Actualizaciones del sector con fecha y titulares.":::
 
 También pueden ver noticias internas, de empresa y de sector o información de trabajo personalizada en Microsoft Edge nueva pestaña. 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Página principal de Microsoft en noticias":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft en la página principal de noticias.":::
 
 ## <a name="news-settings"></a>Configuración de noticias
 
@@ -56,7 +56,7 @@ Como administrador, controla la configuración de la fuente de noticias de su or
 
 1. Puede bloquear los artículos que contienen palabras clave en el **campo Excluir contenido.** Por ejemplo, para evitar que los artículos que contienen la palabra clave "bak" se muestren en la fuente de noticias, agregue la palabra clave "bak" en el **campo Excluir contenido.** Evite incluir términos generales (los, y, etc.); pueden impedir que el contenido relevante aparezca en las fuentes de noticias de la empresa. 
 
-1. Seleccione **Guardar**. Los cambios pueden tardar hasta 24 horas en aparecer. 
+1. Haga clic en **Guardar**. Los cambios pueden tardar hasta 24 horas en aparecer. 
 
 ## <a name="industry-updates-in-email"></a>Actualizaciones del sector en el correo electrónico 
 

@@ -19,12 +19,12 @@ description: Use detecciones en tiempo real y explorador en el portal de Microso
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35044963b34d9120eb1490e64b8c9831ba6840aad7d7aa6b3b2776e70602d6fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 94a7fb847eca7f46f543399d8de1b2d3d12e1908
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806015"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566563"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -40,12 +40,12 @@ Si su organización tiene [Microsoft Defender](defender-for-office-365.md)para O
 
 |Con Microsoft Defender para Office 365 plan 2, verá:|Con Microsoft Defender para Office 365 plan 1, verá:|
 |---|---|
-|![Explorador de amenazas](../../media/threatmgmt-explorer.png)|![Detecciones en tiempo real](../../media/threatmgmt-realtimedetections.png)|
+|![Explorador de amenazas.](../../media/threatmgmt-explorer.png)|![Detecciones en tiempo real](../../media/threatmgmt-realtimedetections.png)|
 |
 
 Las detecciones de explorador o en tiempo real ayudan al equipo de operaciones de seguridad a investigar y responder a las amenazas de forma eficaz. El informe es similar a la imagen siguiente:
 
-![Ir al Explorador de administración de \> amenazas](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Vaya al Explorador de administración de \> amenazas.](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Con este informe, puede:
 
@@ -65,10 +65,10 @@ Estamos haciendo que esta integración sea más relevante mediante la introducci
 El identificador de alerta está disponible dentro de la dirección URL cuando se ve una alerta individual; un ejemplo es `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` .
 
 > [!div class="mx-imgBorder"]
-> ![Filtrado del identificador de alerta](../../media/AlertID-Filter.png)
+> ![Filtrado del identificador de alerta.](../../media/AlertID-Filter.png)
 
 > [!div class="mx-imgBorder"]
-> ![Identificador de alerta en el menú desplegable de detalles](../../media/AlertID-DetailsFlyout.png)
+> ![Identificador de alerta en el menú desplegable de detalles.](../../media/AlertID-DetailsFlyout.png)
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Ampliar el límite de búsqueda y retención de datos del Explorador (y detecciones en tiempo real) para los inquilinos de prueba de 7 a 30 días
 
@@ -93,16 +93,16 @@ En el Explorador de amenazas, puede ver información sobre las etiquetas de usua
 La **columna Etiquetas** de la cuadrícula de correo electrónico contiene todas las etiquetas que se han aplicado a los buzones de remitente o destinatario. De forma predeterminada, las etiquetas del sistema como las cuentas de prioridad se muestran primero.
 
 > [!div class="mx-imgBorder"]
-> ![Filtrar etiquetas en la vista cuadrícula de correo electrónico](../../media/tags-grid.png)
+> ![Filtrar etiquetas en la vista cuadrícula de correo electrónico.](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Filtrado
 
 Puede usar etiquetas como filtro. Busca solo entre cuentas de prioridad o escenarios específicos de etiquetas de usuario. También puede excluir los resultados que tienen determinadas etiquetas. Combine esta funcionalidad con otros filtros para restringir el ámbito de investigación.
 
-[![Etiquetas de filtro](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
+[![Etiquetas de filtro.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Etiquetas sin filtro](../../media/tags-filter-not.png)
+> ![No filtrar etiquetas.](../../media/tags-filter-not.png)
 
 #### <a name="email-detail-flyout"></a>Flyout de detalles de correo electrónico
 
@@ -110,14 +110,14 @@ Para ver las etiquetas individuales del remitente y el destinatario, seleccione 
 La información sobre las etiquetas individuales del remitente y el destinatario también se extiende a los datos CSV exportados, donde puede ver estos detalles en dos columnas independientes.
 
 > [!div class="mx-imgBorder"]
-> ![Etiquetas de detalles de correo electrónico](../../media/tags-flyout.png)
+> ![Etiquetas de detalles de correo electrónico.](../../media/tags-flyout.png)
 
 La información de etiquetas también se muestra en el control desplegable de clics de dirección URL. Para verlo, vaya a la vista Phish o All Email y, a continuación, a la pestaña **Url o** **Url Clicks.** Seleccione un control desplegable de dirección URL individual para ver detalles adicionales acerca de los clics de esa dirección URL, incluidas las etiquetas asociadas con ese clic.
 
 ### <a name="updated-timeline-view"></a>Vista de escala de tiempo actualizada
 
 > [!div class="mx-imgBorder"]
-> ![Etiquetas URL](../../media/tags-urls.png)
+> ![Etiquetas URL.](../../media/tags-urls.png)
 >
 Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
@@ -141,12 +141,12 @@ El conjunto de tecnologías de detección ahora incluye nuevos métodos de detec
 Ahora puede ver la amenaza específica de una dirección URL en la pestaña Detalles del control desplegable **de** correo electrónico. La amenaza puede ser *malware,* *phish,* *correo no deseado* o *ninguno*.)
 
 > [!div class="mx-imgBorder"]
-> ![Amenazas de dirección URL](../../media/URL_Threats.png)
+> ![Amenazas de dirección URL.](../../media/URL_Threats.png)
 
 ### <a name="updated-timeline-view-upcoming"></a>Vista de escala de tiempo actualizada (próxima)
 
 > [!div class="mx-imgBorder"]
-> ![Vista de escala de tiempo actualizada](../../media/Email_Timeline.png)
+> ![Vista escala de tiempo actualizada.](../../media/Email_Timeline.png)
 
 La vista Escala de tiempo identifica todos los eventos de entrega y posterior a la entrega. Incluye información sobre la amenaza identificada en ese momento para un subconjunto de estos eventos. La vista Escala de tiempo también proporciona información sobre cualquier acción adicional realizada (como ZAP o corrección manual), junto con el resultado de esa acción. La información de vista de escala de tiempo incluye:
 
@@ -163,7 +163,7 @@ Actualmente, se muestra la ubicación de entrega en la cuadrícula de correo ele
 **La ubicación de entrega original** dará más información sobre dónde se entregó un correo electrónico inicialmente. **La ubicación de entrega más** reciente mostrará dónde aterrizó un correo electrónico después de acciones del sistema como *ZAP* o acciones de administración como Mover a *elementos eliminados.* La última ubicación de entrega está diseñada para decir a los administradores la última ubicación conocida del mensaje después de la entrega o cualquier acción del sistema o administrador. No incluye ninguna acción del usuario final en el correo electrónico. Por ejemplo, si un usuario eliminó un mensaje o movió el mensaje a archive/pst, la ubicación de "entrega" del mensaje no se actualizará. Pero si una acción del sistema actualiza la ubicación (por ejemplo, ZAP, que da como resultado un correo electrónico que pasa a cuarentena), **la** ubicación de entrega más reciente se mostrará como "cuarentena".
 
 > [!div class="mx-imgBorder"]
-> ![Ubicaciones de entrega actualizadas](../../media/Updated_Delivery_Location.png)
+> ![Ubicaciones de entrega actualizadas.](../../media/Updated_Delivery_Location.png)
 
 > [!NOTE]
 > Hay algunos casos en los que **la ubicación de entrega** y la acción de entrega pueden mostrarse como "desconocidas": 
@@ -173,7 +173,7 @@ Actualmente, se muestra la ubicación de entrega en la cuadrícula de correo ele
 > - **La ubicación de entrega más** reciente puede ser desconocida si se intentó realizar una acción de administrador/sistema (como ZAP), pero no se encontró el mensaje. Normalmente, la acción se produce después de que el usuario movió o eliminó el mensaje. En estos casos, compruebe la **columna Resultado/Detalles** en la vista escala de tiempo. Busque la instrucción "Mensaje movido o eliminado por el usuario".
 
 > [!div class="mx-imgBorder"]
-> ![Ubicaciones de entrega para escala de tiempo](../../media/Updated_Timeline_Delivery_Location.png)
+> ![Ubicaciones de entrega para la escala de tiempo.](../../media/Updated_Timeline_Delivery_Location.png)
 
 ### <a name="additional-actions"></a>Acciones adicionales
 
@@ -183,7 +183,7 @@ Actualmente, se muestra la ubicación de entrega en la cuadrícula de correo ele
 > Como parte de los cambios pendientes, el valor "Eliminado por ZAP" que se muestra actualmente en el filtro Acción de entrega desaparece. Tendrás una forma de buscar todo el correo electrónico con el intento de ZAP a través **de acciones adicionales**.
 
 > [!div class="mx-imgBorder"]
-> ![Acciones adicionales en el Explorador](../../media/Additional_Actions.png)
+> ![Acciones adicionales en el Explorador.](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>Invalidaciones del sistema
 
@@ -199,10 +199,10 @@ Actualmente, se muestra la ubicación de entrega en la cuadrícula de correo ele
 
 - Extensión de archivo bloqueada por la directiva de organización: el equipo de seguridad de una organización bloquea una extensión de nombre de archivo a través de la configuración de directiva antimalware. Estos valores ahora se mostrarán en detalles de correo electrónico para ayudar con las investigaciones. Los equipos de Secops también pueden usar la funcionalidad de filtrado enriquecido para filtrar en extensiones de archivo bloqueadas.
 
-[![Invalidaciones del sistema en el Explorador](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+[![Invalidaciones del sistema en el Explorador.](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Sistema invalida la cuadrícula en el Explorador](../../media/System_Overrides_Grid.png)
+> ![El sistema invalida la cuadrícula en el Explorador.](../../media/System_Overrides_Grid.png)
 
 ### <a name="improvements-for-the-url-and-clicks-experience"></a>Mejoras para la experiencia de url y clics
 
@@ -219,7 +219,7 @@ Las mejoras incluyen:
 
 El nivel de confianza de phishing ayuda a identificar el grado de confianza con el que se clasificó un correo electrónico como "phish". Los dos valores posibles *son High* y *Normal*. En las fases iniciales, este filtro solo estará disponible en la vista Phish del Explorador de amenazas.
 
-[![Nivel de confianza de phishing en el Explorador](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![Nivel de confianza de phishing en el Explorador.](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### <a name="zap-url-signal"></a>Señal de dirección URL de ZAP
 
@@ -240,14 +240,14 @@ Ahora puede ordenar y filtrar las etiquetas de usuario personalizadas o del sist
 > El filtrado y ordenación por etiquetas de usuario se encuentra actualmente en versión preliminar pública. Esta funcionalidad puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, con respecto a la información proporcionada al respecto.
 
 > [!div class="mx-imgBorder"]
-> ![Columna Etiquetas en el Explorador](../../media/threat-explorer-tags.png)
+> ![Columna Etiquetas en el Explorador.](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>Mejoras en la zona horaria
 
 Verá la zona horaria para los registros de correo electrónico en el Portal, así como para los datos exportados. Estará visible en experiencias como Cuadrícula de correo electrónico, Control de detalles, Escala de tiempo de correo electrónico y Correos electrónicos similares, por lo que la zona horaria del conjunto de resultados está clara.
 
 > [!div class="mx-imgBorder"]
-> ![Ver zona horaria en el Explorador](../../media/TimezoneImprovements.png)
+> ![Ver zona horaria en el Explorador.](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>Actualización en el proceso de actualización
 
@@ -256,21 +256,21 @@ Algunos usuarios han comentado confusión con la actualización automática (por
 Desde el punto de vista de la experiencia, el usuario puede aplicar y quitar el distinto intervalo de filtros (del conjunto de filtros y la fecha) y seleccionar el botón actualizar para filtrar los resultados después de haber definido la consulta. El botón actualizar también se enfatiza ahora en la pantalla. También hemos actualizado la información sobre herramientas relacionada y la documentación del producto.
 
 > [!div class="mx-imgBorder"]
-> ![Seleccione Actualizar para filtrar resultados](../../media/ManualRefresh.png)
+> ![Seleccione Actualizar para filtrar los resultados.](../../media/ManualRefresh.png)
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>Obtención de detalles de gráficos para agregar a filtros
 
 Ahora puede gráfico de valores de leyenda para agregarlos como filtros. Seleccione el **botón Actualizar** para filtrar los resultados.
 
 > [!div class="mx-imgBorder"]
-> ![Explorar en profundidad los gráficos hasta Filtrar](../../media/ChartDrilldown.png)
+> ![Explore los gráficos hasta Filtrar.](../../media/ChartDrilldown.png)
 
 ### <a name="in-product-information-updates"></a>Actualizaciones de información del producto
 
 Ahora hay detalles adicionales disponibles en el producto, como el número total de resultados de búsqueda dentro de la cuadrícula (vea a continuación). Hemos mejorado las etiquetas, los mensajes de error y la información sobre herramientas para proporcionar más información sobre los filtros, la experiencia de búsqueda y el conjunto de resultados.
 
 > [!div class="mx-imgBorder"]
-> ![Ver información del producto](../../media/ProductInfo.png)
+> ![Ver información del producto.](../../media/ProductInfo.png)
 
 ## <a name="extended-capabilities-in-threat-explorer"></a>Funcionalidades extendidas en el Explorador de amenazas
 
@@ -281,7 +281,7 @@ Hoy exponemos la lista de los principales usuarios dirigidos en la vista Malware
 Podrás exportar la lista de usuarios dirigidos, hasta un límite de 3.000, junto con el número de intentos de análisis sin conexión para cada vista de correo electrónico. Además, al seleccionar el número de intentos (por ejemplo, 13 intentos en la imagen siguiente) se abrirá una vista filtrada en el Explorador de amenazas, para que pueda ver más detalles entre correos electrónicos y amenazas para ese usuario.
 
 > [!div class="mx-imgBorder"]
-> ![Principales usuarios dirigidos](../../media/Top_Targeted_Users.png)
+> ![Principales usuarios dirigidos.](../../media/Top_Targeted_Users.png)
 
 ### <a name="exchange-transport-rules"></a>Exchange de transporte
 
@@ -302,7 +302,7 @@ Podrá ver tanto el GUID como el nombre de las reglas de transporte que se aplic
 > Dentro de la cuadrícula de correo electrónico, el control desplegable Detalles y csv exportado, los ETR se presentan con un Nombre/GUID como se muestra a continuación.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange Reglas de transporte](../../media/ETR_Details.png)
+> > ![Exchange Reglas de transporte.](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>Conectores de entrada
 
@@ -311,7 +311,7 @@ Los conectores son una colección de instrucciones que personalizan cómo fluye 
 La búsqueda de conectores tiene un carácter "contiene", lo que significa que las búsquedas de palabras clave parciales también deben funcionar. En la vista cuadrícula principal, el control desplegable Detalles y el CSV exportado, los conectores se muestran en el formato Nombre/GUID, como se muestra aquí:
 
 > [!div class="mx-imgBorder"]
-> ![Detalles del conector](../../media/Connector_Details.png)
+> ![Detalles del conector.](../../media/Connector_Details.png)
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nuevas características en el Explorador de amenazas y detecciones en tiempo real
 
@@ -340,7 +340,7 @@ En este ejemplo se usa el Explorador de amenazas.
 
 4. Seleccione el Asunto de cualquier mensaje en la pestaña Correo > pestaña Detalles para ver información de suplantación adicional como Dominio suplantado / Ubicación detectada.
 
-    **OR**
+    **O**
 
     Seleccione **Usuario suplantado y** escriba la dirección de correo electrónico de un usuario protegido en el cuadro de texto.
 
@@ -420,7 +420,7 @@ Siga esta ruta de acceso para llegar a la misma ubicación en el informe de dete
 > El id. de mensaje de red asigna el clic a correos específicos cuando busca en el identificador a través del Explorador o las herramientas de terceros asociadas. Estas búsquedas identifican el correo electrónico asociado con un resultado de clic. Tener el identificador de mensaje de red correlacionado hace que el análisis sea más rápido y eficaz.
 
 > [!div class="mx-imgBorder"]
-> ![Pestaña Clics en el Explorador](../../media/tp_ExportClickResultAndNetworkID.png)
+> ![Haga clic en la pestaña Explorador.](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Ver malware detectado en el correo electrónico por tecnología
 
@@ -431,19 +431,19 @@ Supongamos que desea ver malware detectado en el correo electrónico ordenado po
 2. En el **menú Ver,** elija **Malware de** correo \> **electrónico**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menú Ver para el Explorador](../../media/ExplorerViewEmailMalwareMenu.png)
+   > ![Menú Ver del Explorador.](../../media/ExplorerViewEmailMalwareMenu.png)
 
 3. Haga **clic en Remitente** y, a continuación, elija **Tecnología** básica \> **de detección**.
 
    Las tecnologías de detección ahora están disponibles como filtros para el informe.
 
    > [!div class="mx-imgBorder"]
-   > ![Tecnologías de detección de malware](../../media/ExplorerEmailMalwareDetectionTech.png)
+   > ![Tecnologías de detección de malware.](../../media/ExplorerEmailMalwareDetectionTech.png)
 
 4. Elija una opción. A continuación, **seleccione el botón** Actualizar para aplicar ese filtro.
 
    > [!div class="mx-imgBorder"]
-   > ![Tecnología de detección seleccionada](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   > ![Tecnología de detección seleccionada.](../../media/ExplorerEmailMalwareDetectionTechATP.png)
 
 El informe se actualiza para mostrar los resultados que el malware detectó en el correo electrónico, mediante la opción de tecnología seleccionada. Desde aquí, puede realizar más análisis.
 
@@ -458,14 +458,14 @@ Para revisar las direcciones URL de suplantación de identidad (phish) en mensaj
 2. En el **menú Ver,** elija **Email** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menú Ver para explorador en contexto de suplantación de identidad](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![Menú Ver para explorador en contexto de suplantación de identidad.](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. Haga **clic en Remitente** y, a continuación, elija Direcciones URL **Haga** clic \> **en Veredicto**.
 
 4. Seleccione una o varias opciones, como **Bloqueado** y Bloquear  invalidado y, a continuación, seleccione el botón Actualizar en la misma línea que las opciones para aplicar ese filtro. (No actualice la ventana del explorador).
 
    > [!div class="mx-imgBorder"]
-   > ![Direcciones URL y veredictos de clic](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > ![Direcciones URL y veredictos de clic.](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
    El informe se actualiza para mostrar dos tablas de dirección URL diferentes en la pestaña Dirección URL del informe:
 
@@ -476,7 +476,7 @@ Para revisar las direcciones URL de suplantación de identidad (phish) en mensaj
    Las dos tablas de dirección URL muestran las direcciones URL principales en los mensajes de correo electrónico de suplantación de identidad por acción de entrega y ubicación. Las tablas muestran los clics de dirección URL bloqueados o visitados a pesar de una advertencia, por lo que puede ver qué posibles vínculos no se han presentado a los usuarios y que el usuario ha hecho clic. Desde aquí, puede realizar más análisis. Por ejemplo, debajo del gráfico puede ver las direcciones URL principales de los mensajes de correo electrónico bloqueados en el entorno de su organización.
 
    > [!div class="mx-imgBorder"]
-   > ![Direcciones URL del explorador bloqueadas](../../media/ExplorerPhishClickVerdictURLs.png)
+   > ![Direcciones URL del explorador bloqueadas.](../../media/ExplorerPhishClickVerdictURLs.png)
 
    Seleccione una dirección URL para ver información más detallada.
 
@@ -505,14 +505,14 @@ Supongamos que desea ver los mensajes de correo electrónico que los usuarios de
 2. En el **menú Ver,** elija  \> **Envíos de correo electrónico**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menú Ver para explorador para correos electrónicos](../../media/explorer-view-menu-email-user-reported.png)
+   > ![Menú Ver del Explorador para correos electrónicos.](../../media/explorer-view-menu-email-user-reported.png)
 
 3. Haga **clic en Remitente** y, a continuación, elija **Tipo** de \> **informe básico**.
 
 4. Seleccione una opción, como **Phish** y, a continuación, seleccione el **botón** Actualizar.
 
    > [!div class="mx-imgBorder"]
-   > ![Phish notificado por el usuario](../../media/EmailUserReportedReportType.png)
+   > ![Phish notificado por el usuario.](../../media/EmailUserReportedReportType.png)
 
 El informe se actualiza para mostrar datos sobre los mensajes de correo electrónico que los usuarios de la organización notificaron como intento de suplantación de identidad. Puede usar esta información para llevar a cabo más análisis y, si es necesario, ajustar las directivas [contra suplantación](configure-mdo-anti-phishing-policies.md)de identidad en Microsoft Defender para Office 365 .
 

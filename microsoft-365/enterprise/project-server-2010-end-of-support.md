@@ -18,16 +18,16 @@ search.appverid:
 - PJU120
 - PJW120
 description: El soporte técnico finaliza Project Server 2010 finaliza el 13 de abril de 2021. Use este artículo como guía para actualizar a Project Online o una versión más reciente de Project server local.
-ms.openlocfilehash: ec8046589fb1691ca0feb4791d174587b33eb8c9cb2c51f720292fb2e3561f12
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c5b942e50a137c1ecc32f08c481811ef4edf779
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904758"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567861"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Plan de final del soporte técnico de Project Server 2010
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Project Server 2010 llegará al final de la compatibilidad el **13 de abril de 2021**. Esta fecha se extendió a partir de la fecha anterior de fin de soporte técnico del 13 de octubre de 2020. Si actualmente usa Project Server 2010, tenga en cuenta que estos productos relacionados tienen las siguientes fechas de fin de soporte técnico:
 
@@ -62,7 +62,7 @@ Las opciones de migración son:
 
 Estas son las dos rutas de acceso que puede tomar para evitar el fin de la compatibilidad con Project Server 2010.
 
-![Project Rutas de actualización de Server 2010](../media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
+![Project Rutas de actualización de Server 2010.](../media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
 
 |¿Por qué prefería migrar a Project Server 2019?|¿Por qué prefería migrar a Project Online?|
 |---|---|
@@ -227,7 +227,7 @@ Recursos clave:
 
 Para obtener un resumen visual de las opciones de actualización y migración a la nube para clientes de Office 2010 y servidores de Windows 7, consulte el [póster de final del soporte técnico.](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-[![Fin de la compatibilidad con Office clientes y servidores de 2010 y Windows póster de 7](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Fin de la compatibilidad con Office clientes y servidores de 2010 y Windows póster de 7.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 Este póster ilustra las distintas rutas de acceso que puede tomar para evitar el fin de la compatibilidad con productos de cliente y servidor de Office 2010 y Windows 7, con rutas de acceso preferidas y compatibilidad con opciones en Microsoft 365 Enterprise resaltado.
 

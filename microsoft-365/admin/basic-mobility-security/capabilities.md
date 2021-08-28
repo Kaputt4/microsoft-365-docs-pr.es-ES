@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad básica y la seguridad pueden ayudarle a proteger y administrar sus dispositivos móviles.
-ms.openlocfilehash: cfd29178bfa6ea235bc26cf8ca1efa3b80e39915
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: bd400f81b3d125b6d6100ecf2ed06f536106d1f0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346957"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564531"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 
@@ -74,7 +74,7 @@ Las aplicaciones admitidas para los distintos tipos de dispositivos móviles de 
 
 En el siguiente diagrama se muestra lo que sucede cuando un usuario con un dispositivo nuevo inicia sesión en una aplicación que admite el control de acceso con Movilidad y seguridad básicas. El usuario no tiene acceso a Microsoft 365 en la aplicación hasta que inscribe su dispositivo.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Control de acceso básico de movilidad y seguridad":::
+:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Control de acceso básico de movilidad y seguridad.":::
 
 > [!NOTE]
 > Las directivas y las reglas de acceso creadas en Basic Mobility and Security for Microsoft 365 Empresa Estándar invalidarán Exchange ActiveSync directivas de buzón de dispositivo móvil y reglas de acceso de dispositivos creadas en el centro de administración de Exchange dispositivo. Una vez que un dispositivo se inscribe en Movilidad básica y seguridad para Microsoft 365 Empresa Estándar, se omitirá cualquier directiva de buzón de dispositivo móvil o regla de acceso de dispositivo Exchange ActiveSync aplicada al dispositivo. Para obtener más información sobre Exchange ActiveSync, vea [Exchange ActiveSync en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
@@ -95,7 +95,7 @@ La configuración que puede impedir que los usuarios accedan Microsoft 365 recur
 
 Por ejemplo, el siguiente diagrama muestra lo que sucede cuando un usuario con un dispositivo inscrito no cumple una opción de seguridad de una directiva de administración de dispositivos móviles que se aplica a su dispositivo. El usuario inicia sesión en una aplicación que admite el control de acceso con Movilidad y seguridad básicas. Se les bloquea el acceso Microsoft 365 recursos de la aplicación hasta que su dispositivo cumpla con la configuración de seguridad.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Mensaje de cumplimiento básico de movilidad y seguridad":::
+:::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Mensaje de cumplimiento básico de movilidad y seguridad.":::
 
 En las secciones siguientes se enumera la configuración de directiva que puede usar para ayudar a proteger y administrar dispositivos móviles que se conectan a los recursos Microsoft 365 organización.
 

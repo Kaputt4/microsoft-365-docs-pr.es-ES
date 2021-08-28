@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo iniciar el portal con el programador de inicio del portal
-ms.openlocfilehash: 5dde70565cd9a5ca7812f84d0c62c39c9844ba42
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: 4bdc9a1d60423a7541c2f5c26cc544df59a271e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58417992"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565259"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Inicie el portal con el programador de inicio SharePoint portal de inicio
 
@@ -75,15 +75,15 @@ Anteriormente, los inicios del portal solo se podían programar a través ShareP
 
    **Opción 1:** las primeras veces que edite y vuelva a publicar los cambios en la página principal (o hasta la versión 3.0 de la página principal) se le pedirá que use la herramienta programador de inicio del portal. Seleccione **Programar inicio** para avanzar con la programación. O **bien, seleccione Volver a publicar** para volver a publicar las ediciones de la página sin programar el inicio.
 
-   ![Imagen del símbolo del sistema para usar el programador de inicio del portal al volver a publicar la página principal](../media/portal-launch-republish-2.png)
+   ![Imagen del símbolo del sistema para usar el programador de inicio del portal al volver a publicar la página principal.](../media/portal-launch-republish-2.png)
 
    **Opción 2:** En cualquier momento, puede navegar a la página principal del sitio  de comunicación de SharePoint, seleccionar **Configuración** y, a continuación, programar el inicio del sitio para programar el inicio del portal.
 
-   ![Imagen del panel Configuración con Programar un inicio de sitio resaltado](../media/portal-launch-settings-2.png)
+   ![Imagen del panel Configuración con Programar un inicio de sitio resaltado.](../media/portal-launch-settings-2.png)
 
 3. A continuación, confirme la puntuación de mantenimiento del portal y realice mejoras en el portal si es necesario mediante la herramienta Diagnóstico [de](https://aka.ms/perftool) página para SharePoint hasta que el portal reciba una **puntuación en** buen estado. A continuación, **seleccione Siguiente**.
 
-   ![Imagen de la herramienta programador de inicio de portal](../media/portal-launch-panel-2.png)
+   ![Imagen de la herramienta programador de inicio de portal.](../media/portal-launch-panel-2.png)
 
    > [!NOTE]
    > El nombre y la descripción del sitio no se pueden editar desde  el programador  de inicio del portal y, en su lugar, se pueden cambiar seleccionando Configuración y, a continuación, la información del sitio de la página principal.
@@ -166,7 +166,7 @@ Los inicios programados con la herramienta programador de inicio del portal se p
 
 2. A continuación, **seleccione Eliminar** y, a continuación, cuando vea el mensaje siguiente, seleccione **Eliminar de** nuevo.
 
-   ![Imagen del mensaje que pregunta si desea eliminar o mantener un inicio programado](../media/portal-launch-delete-2.png)
+   ![Imagen del mensaje que le pregunta si desea eliminar o mantener un inicio programado.](../media/portal-launch-delete-2.png)
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>Usar el programador de inicio de PowerShell Portal
 

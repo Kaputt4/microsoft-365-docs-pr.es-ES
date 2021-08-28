@@ -22,12 +22,12 @@ ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
 - admindeeplinkMAC
-ms.openlocfilehash: d9a5d6543c1a3e26a6809d8ea7826beb338757bc
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: f8adf1fe5141d11d4f57eb3c7348b3961815a38d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394797"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567825"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 
@@ -176,7 +176,7 @@ Las cuentas de prioridad solo están disponibles para las organizaciones que cum
 - Office 365 E3 o Microsoft 365 E3, o Office 365 E5 o Microsoft 365 E5.
 - Al menos 10 000 licencias y al menos 50 usuarios activos mensuales Exchange Online usuario.
 
-![Página de instalación de la característica: Supervisar las cuentas más importantes](../media/MAC-WN-PriorityAccounts.png)
+![Página de instalación de la característica: Supervisar las cuentas más importantes.](../media/MAC-WN-PriorityAccounts.png)
 
 Hay dos formas de empezar:
 
@@ -274,7 +274,7 @@ Se ha realizado mucho trabajo en la administración de suscripciones para que la
 
 La administración de dominios puede ser complicada y hemos lanzado una nueva característica para que sea más fácil. Ve a Configuración > dominios y, a continuación, selecciona un dominio para obtener más información sobre el dominio y el estado del dominio.
 
-:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Página de detalles de dominios para contoso.com":::
+:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Página de detalles de dominios para contoso.com.":::
 
 ### <a name="docs-training-and-videos-july-2020"></a>Documentos, aprendizaje y vídeos (julio de 2020)
 
@@ -339,7 +339,7 @@ Justo este mes, lanzamos un nuevo sitio en docs.microsoft.com denominado centro 
 
 Bueno, lo hicimos. Hemos dado el segundo paso hacia una experiencia de roles unificados y ahora puede administrar roles de Intune en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. También puede aprovechar características como la capacidad de buscar roles y ver permisos de roles. Esto significa que no necesita dos herramientas independientes para administrar roles para Microsoft 365 Intune. Cuando inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">el Centro de administración de Microsoft 365</a>, verá que hay dos ejes dinámicos en la página Roles, uno para Azure AD y otro para Intune.
 
-![Página Roles con el elemento dinámico de Intune seleccionado](../media/MAC-WN-IntuneRoles.png)
+![Página Roles con el elemento dinámico de Intune seleccionado.](../media/MAC-WN-IntuneRoles.png)
 
 ### <a name="sync-message-center-posts-to-planner"></a>Sincronizar publicaciones del Centro de mensajes con Planner
 
@@ -416,7 +416,7 @@ Recibimos una gran cantidad de comentarios de los administradores sobre lo difí
 
 Con el uptick en Teams uso, algunas organizaciones recibirán una tarjeta de panel anclada que hace que la Teams sea más reconocible. La tarjeta también tiene vínculos a cursos y documentos para ayudar a su organización a realizar la transición al trabajo remoto. Solo tienes que ir a la **página** principal para ver la nueva tarjeta.
 
-![Microsoft Teams de página principal](../media/MAC-WN-TeamsCard.PNG)
+![Microsoft Teams de página principal.](../media/MAC-WN-TeamsCard.PNG)
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personalizar el tema de aplicación móvil SharePoint la organización
 
@@ -460,7 +460,7 @@ Recibimos una gran cantidad de comentarios de partners y administradores sobre l
 ![Captura de pantalla: parte superior de la página principal que muestra el nombre del perfil de la organización con el icono de conmutador.](../media/MAC-Organization-switcher.png)
 
 2. En el conmutador de organización, seleccione la organización que desea administrar.
-![Captura de pantalla: Conmutador de inquilinos de Mis organizaciones con el inquilino consolidado de Messenger resaltado](../media/MAC-OrgSwitcherSelected.png)
+![Captura de pantalla: Conmutador de inquilinos de Mis organizaciones con el inquilino consolidado de Messenger resaltado.](../media/MAC-OrgSwitcherSelected.png)
 
 Eso es literalmente!!!
 

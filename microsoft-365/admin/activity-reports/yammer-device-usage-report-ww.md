@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén el Yammer de uso del dispositivo para saber qué dispositivos usan los usuarios Yammer dispositivos.
-ms.openlocfilehash: 6130da9e6cb7c982489ea50fe80aa661bc2a512967284237ef63e7dc9cafc429
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b9c05f54b1cc8f2483b3b167743bf0158c6dbc35
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816204"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564763"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Microsoft 365 Informes en el Centro de administración: informe Yammer de uso de dispositivos
 
@@ -45,11 +45,11 @@ Los informes de uso de dispositivos de Yammer proporcionan información sobre lo
 
 Puedes ver el uso en el informe de OneDrive seleccionando la **pestaña Uso del** dispositivo.<br/>![Microsoft 365: informe de uso Yammer dispositivo de Microsoft.](../../media/e21af4c0-0ad2-4485-8ab1-2f82d7dfa90e.png)
 
-Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Yammer de uso de dispositivos: elija columnas](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
+Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Yammer de uso de dispositivos: elija columnas.](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Item|Descripción|
+|Elemento|Description|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo. Esta cuadrícula muestra a los usuarios que iniciaron sesión Yammer la cuenta Microsoft 365 o que iniciaron sesión en la red mediante el inicio de sesión único. <br/> |

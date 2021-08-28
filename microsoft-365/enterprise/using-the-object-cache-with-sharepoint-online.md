@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: En este artículo se explica la diferencia entre usar la memoria caché de objetos en SharePoint Server 2013 local y SharePoint Online.
-ms.openlocfilehash: 669a68e949c5e83be794644e0d4b9ae117c69e6282f2d0ea15f96a0ad3e90461
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 40863ccf375620cf4b38d231fa0a86336c4826cc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894864"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566727"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Usar la memoria caché de objetos con SharePoint Online
 
@@ -36,7 +36,7 @@ Hay un impacto negativo significativo de confiar en la memoria caché de objetos
 
 Cuando SharePoint Server 2013 se hospeda localmente, el cliente tiene servidores front-end web privados que hospedan la memoria caché de objetos. Esto significa que la memoria caché está dedicada a un cliente y solo está limitada por la cantidad de memoria disponible y asignada a la memoria caché de objetos. Dado que solo se sirve a un cliente en el escenario local, los servidores front-end web suelen tener usuarios que hacen solicitudes a los mismos sitios una y otra vez. Esto significa que la memoria caché se completa rápidamente y permanece llena de los resultados de la consulta de lista y SharePoint objetos que los usuarios están solicitando periódicamente.
   
-![Muestra el tráfico y la carga a los servidores locales front-end web](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
+![Muestra el tráfico y la carga en servidores front-end web locales.](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
   
 Como resultado, la segunda vez que un usuario visita una página, el tiempo de carga de la página mejora. Después de un mínimo de cuatro cargas de la misma página, la página se almacena en caché en todos los servidores front-end web.
   
@@ -44,7 +44,7 @@ En cambio, en SharePoint Online hay muchos más servidores, pero también muchos
   
 En la siguiente figura, cada punto representa una página que un usuario está solicitando y donde se almacena en caché. Diferentes colores representan a diferentes clientes que hacen uso compartido de la infraestructura SaaS.
   
-![Muestra los resultados de almacenamiento en memoria caché de objetos en SharePoint Online](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
+![Muestra los resultados del almacenamiento en caché de objetos en SharePoint Online.](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
   
 Como puede ver en el diagrama, las posibilidades de que un usuario determinado golpee a un servidor con la versión almacenada en caché de su página son escasas. Además, debido al gran rendimiento y al hecho de que los servidores se comparten entre muchos sitios, la memoria caché no dura mucho, ya que solo hay tanto espacio disponible para el almacenamiento en caché.
   

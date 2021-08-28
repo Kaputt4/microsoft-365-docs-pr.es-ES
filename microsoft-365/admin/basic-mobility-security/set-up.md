@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configura Movilidad y seguridad básicas para proteger y administrar los dispositivos móviles de los usuarios mediante acciones como limpiar un dispositivo de forma remota.
-ms.openlocfilehash: 9068594bdc4049336e87e3ed87ede9c4277f83fb0921d84b0b66099701aad91e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 47f2f393c3d7147bb1444e8cad32d2d6a0d31133
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826797"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564434"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurar Movilidad y seguridad básicas
 
@@ -107,7 +107,7 @@ El siguiente paso es crear e implementar directivas de seguridad de dispositivos
 
 3. Vaya a **Directivas de dispositivo**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración básica de la directiva de seguridad y movilidad":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración básica de la directiva de seguridad y movilidad.":::
 
 4. Cree e implemente directivas de seguridad de dispositivos adecuadas para su organización siguiendo los pasos descritos en Crear directivas de seguridad de [dispositivos en Basic Mobility and Security](create-device-security-policies.md).
 

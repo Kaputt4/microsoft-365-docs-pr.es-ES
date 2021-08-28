@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 'Resumen: configure y muestre la sincronización de hash de contraseñas e inicie sesión en su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: a71c7046967d796d59d3ba9ae5ff42d1e0d6bcf9
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: dbf4b2ca694ee9dc81a5b02ebd0f7cf3820d0f1d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355945"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565895"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
@@ -34,7 +34,7 @@ Muchas organizaciones utilizan la sincronización de hash de Azure AD Connect y 
 
 En este artículo se describe cómo agregar la sincronización de hash de contraseña a su Microsoft 365 de prueba, lo que da como resultado esta configuración:
   
-![La empresa simulada con el entorno de prueba con la sincronización de hash de contraseñas](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![La empresa simulada con el entorno de prueba de sincronización de hash de contraseña.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
 La configuración de este entorno de prueba implica tres fases:
 - [Fase 1: crear el entorno de pruebas empresarial simulado de Microsoft 365.](#phase-1-create-the-microsoft-365-simulated-enterprise-test-environment)
@@ -48,7 +48,7 @@ La configuración de este entorno de prueba implica tres fases:
 
 Siga las instrucciones de [configuración base de empresa simulada para Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). La configuración resultante tiene este aspecto:
   
-![La configuración básica empresarial simulada](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
+![La configuración base de empresa simulada.](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
 Esta configuración se compone de:
   
@@ -65,7 +65,7 @@ A continuación, agregue **el testlab.<*dominio* >** público a su Microsoft 365
 
 La configuración resultante tiene este aspecto:
   
-![El registro del nombre de dominio del laboratorio de pruebas](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![El registro del nombre de dominio de testlab.](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
 Esta configuración se compone de:
 
@@ -132,7 +132,7 @@ Tenga en cuenta que, aunque User1 tiene permisos de administrador de dominio par
 
 La configuración resultante tiene este aspecto:
 
-![La empresa simulada con el entorno de prueba con la sincronización de hash de contraseñas](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![La empresa simulada con el entorno de prueba de sincronización de hash de contraseña.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
 Esta configuración se compone de: 
   

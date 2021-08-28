@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Elija cómo ver el contenido en Advanced eDiscovery, como texto, anotación, vista convertida o nativa.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0cbb720ee935b9c6046eb2d7b78b1bcf8a06e9284bc01133145eb6c8ed0820ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1aab4f5e2f5674392fd5577afdb12865b9405380
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865403"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565283"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Ver documentos en un conjunto de revisión en Advanced eDiscovery
 
@@ -53,9 +53,9 @@ El visor de Texto proporciona una vista del texto extraído de un archivo. Pasa 
 - Resaltado de pulsaciones de búsqueda que resaltarán los términos del documento, así como la barra de desplazamiento
 - La vista Diferencia proporciona una vista de comparación que resalta las diferencias textuales al ver documentos casi duplicados
 
-![Vista de Texto](../media/Reviewimage4.png)
+![Vista texto.](../media/Reviewimage4.png)
 
-![Vista Diff](../media/Reviewimage5.png)
+![Vista Diferencia.](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Vista de Anotar
 
@@ -72,7 +72,7 @@ La vista Anotación proporciona características que permiten a los usuarios apl
 - Girar: el usuario puede girar el documento en el sentido de las agujas del reloj
 - Búsqueda: el usuario puede buscar en un documento y navegar a los distintos aciertos del documento
 
-  ![Vista de Anotar](../media/Reviewimage1.png)
+  ![Vista anotar.](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>Vista panel
 

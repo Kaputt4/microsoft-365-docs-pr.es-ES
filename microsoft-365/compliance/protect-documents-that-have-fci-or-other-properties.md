@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar una directiva de prevención de pérdida de datos (DLP) para proteger los documentos que tienen propiedades de un sistema de terceros.
-ms.openlocfilehash: a3dc0cd9d73382c1c0c1df47b346dd13c9563b66088a9eef592069e46a751596
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: be0ca4901b8f32aca4c50daa45c059388561832f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801674"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567669"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Crear una directiva DLP para proteger documentos con FCI u otras propiedades
 
@@ -34,7 +34,7 @@ Microsoft 365 de prevención de pérdida de datos (DLP) pueden usar propiedades 
 - SharePoint de documento
 - Propiedades de documentos del sistema de terceros
 
-![Diagrama que muestra Office 365 y el sistema de clasificación externo](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
+![Diagrama que muestra Office 365 y sistema de clasificación externo.](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
 Por ejemplo, su organización puede usar la FCI de servidor de Windows para identificar elementos con datos personales como números de seguridad social y, a continuación, clasificar el documento estableciendo la propiedad Información de identificación **personal** en **High**, **Moderate**, **Low**, **Public** o **Not PII** según el tipo y el número de repeticiones de datos personales encontrados en el documento.
 
@@ -69,11 +69,11 @@ Primero debe cargar un documento con la propiedad a la que desea hacer referenci
 
 3. En la navegación izquierda, elija **buscar en** la página administración \> de **búsqueda** Administrar esquema \> **de búsqueda**.
 
-   ![Página de administración de búsqueda en el Centro de administración de SharePoint](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
+   ![página de administración de búsqueda en SharePoint centro de administración.](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
 
 4. En la **página Propiedades administradas** \> **Nueva propiedad administrada**.
 
-   ![Página de Propiedades administradas con el botón Nueva propiedad administrada resaltado](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
+   ![Página Propiedades administradas con el botón Nueva propiedad administrada resaltada.](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
 
 5. Escriba un nombre y una descripción para la propiedad. Este nombre es lo que aparecerá en las directivas DLP.
 
@@ -85,7 +85,7 @@ Primero debe cargar un documento con la propiedad a la que desea hacer referenci
 
 9. En el **cuadro** de diálogo selección de propiedades rastreadas, busque y seleccione la propiedad rastreada que corresponde a la propiedad FCI de Windows Server u otra propiedad que usará en la directiva \> DLP \> **Aceptar**.
 
-   ![Cuadro de diálogo de selección de propiedades rastreadas](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
+   ![cuadro de diálogo de selección de propiedades rastreadas.](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
 
 10. En la parte inferior de la página \> **Aceptar**.
 
@@ -131,7 +131,7 @@ Cuando termine, la directiva debe tener dos reglas nuevas que usen las propiedad
 
 Una regla bloquea el acceso al contenido donde la propiedad **Información de identificación personal** es igual a **Alto** o **Moderado**. Una segunda regla envía una notificación sobre el contenido donde la propiedad **Información de identificación personal** es igual a **Bajo**.
 
-![Cuadro de diálogo de nueva directiva DLP que muestra dos reglas recién creadas](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
+![Nuevo cuadro de diálogo de directiva DLP que muestra dos reglas recién creadas.](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
 
 ## <a name="after-you-create-the-dlp-policy"></a>Después de crear la directiva DLP
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el Yammer actividad y obtenga más información sobre el número de usuarios que usan Yammer para publicar, gustar o leer un mensaje.
-ms.openlocfilehash: 1f76b253b6f9d8de2de0eec6d01299ad1e55897424e10a2b03f00171f32183ed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d938052da82c1f1a0c038813dd7a0d02bbb510e4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816150"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564785"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365 Informes en el Centro de administración: informe Yammer actividad
 
@@ -44,11 +44,11 @@ Como Microsoft 365, el panel **informes** muestra los datos sobre el uso de los 
 
 Puede ver las actividades en el informe Yammer mediante la pestaña **Actividad.**<br/>![Microsoft 365: informe de actividad Yammer Microsoft.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
 
-Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Yammer de actividad: elija columnas](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
+Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Yammer de actividad: elija columnas.](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Item|Descripción|
+|Elemento|Description|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo. Esta cuadrícula muestra a los usuarios que iniciaron sesión Yammer la cuenta Microsoft 365 o que iniciaron sesión en la red mediante el inicio de sesión único. <br/> |
@@ -57,7 +57,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |Fecha de cambio de estado (UTC)  <br/> |La fecha en la que se cambió el estado del usuario en Yammer.  <br/> |
 |Fecha de última actividad (UTC)  <br/> | La última fecha en la que el usuario publicó, leyó o le gustó un mensaje.  <br/> |
 |Publicado  <br/> |El número de mensajes que el usuario publicó durante el período de tiempo especificado. <br/>|
-|Read  <br/> |El número de conversaciones que el usuario leyó durante el período de tiempo especificado.  <br/> |
+|Lectura  <br/> |El número de conversaciones que el usuario leyó durante el período de tiempo especificado.  <br/> |
 |Etiquetado como “Me gusta”  <br/> |El número de mensajes que el usuario ha gustado durante el período de tiempo especificado.  <br/>|
 |Producto asignado  <br/> |Los productos que se asignan a este usuario.|
 |||
