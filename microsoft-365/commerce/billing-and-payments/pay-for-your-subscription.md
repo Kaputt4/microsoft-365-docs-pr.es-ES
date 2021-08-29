@@ -32,7 +32,7 @@ ms.locfileid: "53802927"
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
 > [!IMPORTANT]
-> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones siempre que la cuenta bancaria esté en buenos términos.
+> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones siempre que la cuenta bancaria esté en regla.
 
 Puede pagar la suscripción con tarjeta de crédito, débito o una cuenta bancaria. En algunos casos, puede pagar mediante factura, mediante cheque o transferencia electrónica de fondos (EFT). Si tiene un perfil de facturación, sus opciones son algo diferentes. Para más información, consulte [Cómo pagar la suscripción con un perfil de facturación](pay-for-subscription-billing-profile.md). Si no está seguro de si su cuenta tiene un perfil de facturación, consulte [Información de perfiles de facturación](manage-billing-profiles.md).
 
@@ -176,7 +176,7 @@ Si no agregó el método de pago usado para pagar la suscripción, debe reemplaz
 > - [Lituania](../pay/lithuania.md)
 > - [Luxemburgo](../pay/luxembourg.md)
 > - [Macao](../pay/macao.md)
-> - [Macedonia, Antigua República Yugoslava de](../pay/macedonia.md)
+> - [Macedonia del Norte](../pay/macedonia.md)
 > - [Malasia](../pay/malaysia.md)
 > - [Malta](../pay/malta.md)
 > - [Mauricio](../pay/mauritius.md)

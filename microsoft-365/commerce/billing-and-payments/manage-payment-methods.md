@@ -32,7 +32,7 @@ ms.locfileid: "53856384"
 # <a name="manage-payment-methods"></a>Administrar métodos de pago
 
 > [!IMPORTANT]
-> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones siempre que la cuenta bancaria esté en buenos términos.
+> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente en alguno de esos países o regiones, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones siempre que la cuenta bancaria esté en regla.
 
 Cuando compra productos o servicios empresariales de Microsoft, puede usar un método de pago existente o agregar uno nuevo. Puede usar una tarjeta de crédito, débito o una cuenta bancaria para pagar sus compras.
 
@@ -43,7 +43,7 @@ Si su cuenta empresarial no tiene un perfil de facturación, cualquier administr
 > [!NOTE]
 > La opción de pagar con una cuenta bancaria no está disponible en algunos países o regiones.
 >
-> Debe usar un método de pago emitido desde el mismo país que su espacio empresarial.
+> Debe usar un método de pago que haya sido emitido en el mismo país que su espacio empresarial.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -128,7 +128,7 @@ Si un método de pago está asociado a cualquier suscripción o perfil de factur
 |**Mi tarjeta de crédito o débito fue rechazada.** |Si paga mediante tarjeta de crédito o débito y se rechaza la tarjeta, recibirá un correo electrónico en el que se indica que Microsoft no pudo procesar el pago. Primero, compruebe que los detalles de la tarjeta &mdash;el número, la fecha de expiración, el titular de la tarjeta y la dirección, incluida la ciudad, el estado y el código postal&mdash; coinciden exactamente con los de la tarjeta y su estado de cuenta. Puede actualizar la información de la tarjeta y efectuar inmediatamente el pago mediante el vínculo **Liquidar saldo** de la sección **Facturación** de la página de detalles de la suscripción. Para obtener más información, consulte [¿Qué debo hacer si tengo un saldo pendiente?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Si continúa viendo el mensaje "rechazado", póngase en contacto con el banco. Es posible que la tarjeta no esté activada. Si recientemente recibió la tarjeta por correo con la fecha de expiración actualizada, asegúrese de que está activada. Su banco también puede decirle si su tarjeta no está aprobada para cargos en línea, internacionales o recurrentes. |
 |**Quiero actualizar el número de una tarjeta o cuenta bancaria.** |No puede cambiar el número de tarjeta o cuenta en un método de pago existente. Si ha cambiado el número de su tarjeta o cuenta, [reemplácelo por un método de pago](#replace-a-payment-method)diferente, que transfiera todas las suscripciones activas al nuevo método de pago y, después, [elimine el método de pago antiguo](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**Solo tengo una tarjeta o cuenta bancaria en mi cuenta y quiero quitarla.** |Si solo tiene un método de pago, debe [cambiarlo por un nuevo método de pago](#replace-a-payment-method) antes de poder eliminarlo. |
-|**No puedo agregar mi tarjeta de crédito o cuenta bancaria.**  |Debe usar un método de pago emitido desde el mismo país que su espacio empresarial. Si tiene problemas para escribir su tarjeta de crédito o cuenta bancaria, póngase en contacto con el [soporte técnico](../../business-video/get-help-support.md). |
+|**No puedo agregar mi tarjeta de crédito o cuenta bancaria.**  |Debe usar un método de pago que haya sido emitido en el mismo país que su espacio empresarial. Si tiene problemas para escribir su tarjeta de crédito o cuenta bancaria, póngase en contacto con el [soporte técnico](../../business-video/get-help-support.md). |
 
 ## <a name="related-content"></a>Contenido relacionado
 
