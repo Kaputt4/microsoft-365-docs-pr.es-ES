@@ -9,26 +9,26 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Cambia el tema de color de la página de reserva en la aplicación Microsoft Bookings.
-ms.openlocfilehash: d1cd08d33d90424fa091f6dcce3a9878bb662dfe
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5faf769eeee8a34989e1fc3f1d5859c9770f85a3
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570358"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58822741"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personalizar y publicar la página de reserva
 
-La página de reserva es donde configuras el aspecto que tendrá la página de reserva de tu cliente externo. Una vez que personalice y publique la página de reserva, los clientes la usarán para reservar citas con usted.
+La página de reserva es donde configuras el aspecto que tendrá la página de reserva externa. Una vez que personalice y publique la página de reserva, los usuarios la usarán para reservar citas con usted.
 
-Para personalizar la página de reserva, inicie sesión [en Office.com](https://office.com)y, a continuación, vaya a la **página Bookings** \> **Bookings**. Puede personalizar la página de reserva con las siguientes opciones. Una vez que hayas configurado la página de reserva, puedes publicarla para que los clientes puedan empezar a reservar citas contigo.
+Para personalizar la página de reserva, inicie sesión [en Office.com](https://office.com)y, a continuación, vaya a la **página Bookings** \> **Bookings**. Puede personalizar la página de reserva con las siguientes opciones. Una vez que hayas configurado la página de reserva, puedes publicarla para que los usuarios puedan empezar a reservar citas contigo.
 
 1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
 
-2. En el panel de navegación, seleccione **Booking page**.
+2. En el panel de navegación, **seleccione Configuración**  ->  **página Booking**.
 
 En la sección siguiente se proporciona información sobre cómo configurar la página de reservas y cómo publicar la página.
 
-- **Estado de la página de reserva** Publique el calendario en directo para que el servicio se reserve. Tienes las opciones para compartir el vínculo a tu calendario por correo electrónico y Twitter, y para agregar un botón **Libro** ahora a una página de Facebook. El vínculo también se puede incrustar en el sitio web de la organización.
+- **Configurar página de reserva** Publique el calendario en directo para que el servicio se reserve. Tienes las opciones para compartir el vínculo a tu calendario por correo electrónico y Twitter, y para agregar un botón **Libro** ahora a una página de Facebook. El vínculo también se puede incrustar en el sitio web de la organización.
 
     La página de reserva interna tiene este aspecto:
 

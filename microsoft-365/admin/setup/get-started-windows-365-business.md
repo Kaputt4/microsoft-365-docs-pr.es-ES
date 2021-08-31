@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo comprar Windows 365 Empresa para su organización y ayudar a los usuarios a empezar a usar sus equipos en la nube.
-ms.openlocfilehash: f806991bfd00cbaf9b96b7750d0358409785b206
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4c53aba7ae2d4bd47b5df2f32c50dcf6bb448201
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569242"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831890"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Introducción a Windows 365 Empresa y equipos en la nube
 
@@ -87,7 +87,7 @@ Tanto si compró sus suscripciones a través del sitio de productos de Windows 3
 Puede asignar diferentes tipos de Windows 365 Business a un usuario, en función de las necesidades empresariales de los usuarios. Consulte [Windows de tamaño de 365 Empresa](windows-365-business-sizing.md) para obtener instrucciones sobre qué tipo de licencia puede ser adecuado para los usuarios.
 
 > [!IMPORTANT]
-> La primera vez que se asigna una licencia Windows 365 en el espacio empresarial, se crea automáticamente una cuenta del sistema denominada **Windows 365 BPRT Permanent User** en Azure Active Directory. No elimine esta cuenta ni realice ningún cambio en ella (como cambiar el nombre o UPN). Si se elimina la cuenta del sistema, es posible que se producirá un error en la instalación. Esta cuenta del sistema garantiza un proceso de configuración sin problemas y no tiene capacidades de escritura ni acceso a su espacio empresarial más allá de las capacidades de servicio de ámbito de Windows 365 Empresa. Si elimina este usuario, presente un vale a través del Centro de soporte técnico.
+> La primera vez que se asigna una licencia Windows 365 en el espacio empresarial, se crea automáticamente una cuenta del sistema denominada **Windows 365 BPRT Permanent User** en Azure Active Directory. No elimine esta cuenta ni realice ningún cambio en ella (como cambiar el nombre o UPN). Si se elimina la cuenta del sistema, es posible que se producirá un error en la instalación. Esta cuenta del sistema garantiza un proceso de configuración sin problemas y no tiene capacidades de escritura ni acceso a su espacio empresarial más allá de las capacidades de servicio de ámbito de Windows 365 Empresa. Si elimina este usuario, siga estos pasos [de solución de problemas](/microsoft-365/admin/setup/troubleshoot-windows-365-business?#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active).
 
 ## <a name="get-your-users-started-with-cloud-pc"></a>Introducción a los usuarios con el equipo en la nube
 
@@ -164,7 +164,7 @@ Todos los Windows 365 Empresa tienen privilegios de administrador local en su eq
 
 ## <a name="management-through-intune"></a>Administración a través de Intune
 
-Windows 365 Empresa no inscribe equipos en la nube en [Intune](/mem/intune/fundamentals/what-is-intune) como parte del proceso de aprovisionamiento. Si la organización y los usuarios tienen una licencia adecuada, los equipos en la nube se pueden inscribir en Intune con el mismo procedimiento para inscribir Windows 10 [equipos en Intune](/mem/intune/user-help/enroll-windows-10-device).
+Si la organización y los usuarios tienen una licencia adecuada, los equipos en la nube se pueden inscribir en Intune con el mismo procedimiento para inscribir Windows 10 [equipos en Intune](/mem/intune/user-help/enroll-windows-10-device).
 
 ## <a name="sending-outbound-email-messages-using-port-25-is-not-supported"></a>No se admite el envío de mensajes de correo electrónico saliente con el puerto 25
 

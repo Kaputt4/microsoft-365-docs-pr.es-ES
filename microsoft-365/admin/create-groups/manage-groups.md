@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a administrar Microsoft 365 grupos, incluida la adición de miembros de grupo de eliminación, la edición de la dirección de correo electrónico, el nombre del grupo o la descripción, y la personalización del funcionamiento del grupo.
-ms.openlocfilehash: 12c1b74986429be8c2681725286a3e07b7ae1d86
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 7155bbbd6ff127525522b0a7ddf866b9d690db5a
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393417"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831842"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Administrar un grupo en el Centro de administración de Microsoft 365
 
@@ -86,7 +86,7 @@ Esta opción es excelente si desea tener una dirección de correo electrónico d
 A veces es posible que desee purgar permanentemente un grupo sin esperar a que expire el período de eliminación temporal de 30 días. Para ello, inicie PowerShell y ejecute este comando para obtener el identificador de objeto del grupo:
  
  ```powershell
-`Get-AzureADMSDeletedGroup`
+Get-AzureADMSDeletedGroup
 ```
 
 Tome nota del identificador de objeto del grupo o grupos que desea eliminar permanentemente.
@@ -97,7 +97,7 @@ Tome nota del identificador de objeto del grupo o grupos que desea eliminar perm
 Para purgar el grupo, ejecute este comando en PowerShell:
 
 ```powershell
-`Remove-AzureADMSDeletedDirectoryObject -Id <objectId>`
+Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
 Para confirmar que el grupo se ha purgado correctamente, ejecute el cmdlet  *Get-AzureADMSDeletedGroup*  de nuevo para confirmar que el grupo ya no aparece en la lista de grupos eliminados temporalmente. En algunos casos, la eliminación permanente del grupo y todos sus datos puede tardar hasta 24 horas. 

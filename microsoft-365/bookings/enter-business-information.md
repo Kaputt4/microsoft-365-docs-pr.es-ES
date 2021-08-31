@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Siga estas instrucciones para crear su página Acerca de nosotros, incluido el nombre de empresa, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
-ms.openlocfilehash: fdf96347a080d24cfb06353c96622484ed54c683
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0c0b33f38cd92b9d99114d2b896c0e86eb92f2ee
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571572"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823561"
 ---
 # <a name="enter-your-business-information"></a>Escribir la información de su empresa
 
@@ -31,29 +31,29 @@ La información que proporciones aquí se mostrará en la página que los client
 
 1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, **seleccione Bookings**.
 
-1. En el panel de navegación, seleccione **Información empresarial**.
+1. En el panel de navegación, **seleccione Configuración**  ->  **Información empresarial**.
 
-1. Escriba el nombre, la dirección y el número de teléfono relevantes que desea usar para el calendario de Bookings.
+1. En la **sección Detalles** básicos, escribe el nombre, la dirección y el número de teléfono de tu empresa que quieras usar para el calendario de Bookings.
 
-1. En **Enviar respuestas de cliente a**, escriba la dirección de correo electrónico preferida donde deben reenviarse las respuestas de correo electrónico a las confirmaciones y avisos de reserva.
+:::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Captura de pantalla: página para escribir la información básica de la empresa":::
 
-1. En el **campo Dirección URL del** sitio web, escriba la dirección URL de la página principal de su empresa.
+En **Enviar respuestas de cliente a**, escriba la dirección de correo electrónico preferida donde deben reenviarse las respuestas de correo electrónico a las confirmaciones y avisos de reserva.
 
-1. Escriba la **directiva de privacidad** y los **términos & las direcciones** URL de condiciones.
+En el **campo Dirección URL del** sitio web, escriba la dirección URL de la página principal de su empresa.
 
-1. Haga clic en **Guardar**.
+Escriba la **directiva de privacidad** y los **términos & las direcciones** URL de condiciones.
 
-## <a name="set-your-business-hours"></a>Establecer el horario comercial
+1. En la **sección Logotipo de** empresa, si aún no has cargado el logotipo de tu empresa en la aplicación Bookings, agrega el logotipo de tu empresa.
+
+1. En la **sección Establecer el horario comercial,** establezca el horario comercial en el horario operativo. Estas son las horas a las que se restringen todas las reservas. Se pueden establecer restricciones de tiempo adicionales de cuándo se pueden reservar citas para cada servicio y para cada miembro del personal en las páginas **Servicios** **y** Personal.
+
+En la página Información empresarial, en Horario comercial, use los desplegables para seleccionar las horas de inicio y finalización de cada día. Haga clic para agregar selectores de inicio **+** y fin.
 
 De forma predeterminada, el horario comercial de la aplicación Bookings está establecido en 8 a.m. a las 5 p. m., de lunes a viernes. Los tiempos se proporcionan en incrementos de 15 minutos. La aplicación Bookings usa el reloj de 12 horas.
 
-Establezca **el horario comercial** en el horario operativo. Estas son las horas a las que se restringen todas las reservas. Se pueden establecer restricciones de tiempo adicionales de cuándo se pueden reservar citas para cada servicio y para cada miembro del personal en las páginas Servicios y Personal, respectivamente.
+1. Seleccione **Guardar**.
 
-1. En la página Información empresarial, en Horario comercial, use los desplegables para seleccionar las horas de inicio y finalización de cada día.
-
-1. Haga clic para agregar selectores de inicio **+** y fin.
-
-## <a name="how-to-set-hours-for-a-split-shift"></a>Cómo establecer horas para un turno dividido
+### <a name="how-to-set-hours-for-a-split-shift"></a>Cómo establecer horas para un turno dividido
 
 Es posible que deba bloquear una parte de cada día o semana para tener reuniones de personal, actualizar el inventario o ocuparse de otros detalles de ritmo de negocio. La aplicación Bookings te permite limitar las citas de los clientes a las franjas de tiempo especificadas.
 

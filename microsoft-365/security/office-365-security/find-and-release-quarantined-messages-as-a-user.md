@@ -20,12 +20,12 @@ ms.custom:
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8aab84cd406366182650e6fbf6c39aee9810ce3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 04a3831ec923ec24846eb6d0e76273d1010862c6
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548707"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831950"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
@@ -38,7 +38,7 @@ ms.locfileid: "58548707"
 
 En las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, la cuarentena retiene los mensajes que pueden ser peligrosos o no deseados. Para más información, consulte [Cuarentena en EOP](quarantine-email-messages.md).
 
-En tanto que destinatario de un mensaje en cuarentena, lo que puede hacer con el mensaje como usuario normal (no administrador) se describe en la tabla siguiente:
+Como destinatario de un mensaje en cuarentena, lo que puede hacer con el mensaje como usuario normal (no administrador) se describe en la tabla siguiente:
 
 <br>
 
@@ -46,9 +46,9 @@ En tanto que destinatario de un mensaje en cuarentena, lo que puede hacer con el
 
 |Motivo de la cuarentena:|Ver|Liberar|Eliminar|
 |---|:---:|:---:|:---:|
-|Masivo|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|Correo no deseado|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-|Suplantación de identidad (suplantación de identidad no de alta confianza)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|Masivo|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Correo no deseado|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Suplantación de identidad (suplantación de identidad no de alta confianza)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
 |
 
 Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365 Defender o, si un administrador lo ha configurado, en [notificaciones de correo no deseado para el usuario](use-spam-notifications-to-release-and-report-quarantined-messages.md).

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6b2441ef097cd2d219038364777b527a5c288c071ae67c79370a5b0f2df2379f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 016ee07b9f57117b313b65ea89773fb84a08e99d
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817260"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831902"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender para endpoint y otras soluciones de Microsoft
 
@@ -51,7 +51,7 @@ Recientemente hemos dejado de usar la integración de Azure Information Protecti
 La puntuación de riesgo de dispositivo dinámico de Microsoft Defender para endpoint está integrada en la evaluación de acceso condicional, lo que garantiza que solo los dispositivos seguros tengan acceso a los recursos. 
 
 ### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
-Microsoft Cloud App Security aprovecha las señales de punto de conexión de Microsoft Defender para endpoints para permitir la visibilidad directa del uso de aplicaciones en la nube, incluido el uso de servicios en la nube no compatibles (TI de instantánea) de todos los dispositivos supervisados por Microsoft Defender para endpoints.
+Microsoft Cloud App Security aprovecha las señales de Microsoft Defender para endpoints para permitir la visibilidad directa del uso de aplicaciones en la nube, incluido el uso de servicios en la nube no compatibles (TI de instantánea) de todos los dispositivos supervisados por Microsoft Defender para puntos de conexión.
 
 ### <a name="microsoft-defender-for-identity"></a>Microsoft Defender for Identity
 Las actividades sospechosas son procesos que se ejecutan en un contexto de usuario. La integración entre Microsoft Defender para Endpoint y Microsoft Defender for Identity proporciona la flexibilidad de realizar investigaciones de ciberseguridad entre actividades e identidades.

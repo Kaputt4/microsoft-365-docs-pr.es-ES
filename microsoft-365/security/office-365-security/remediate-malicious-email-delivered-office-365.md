@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5971a9d7764e8b6a64676a9ed81e2ddc1edd0e218191ee45efab167d59c7b968
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de9f68c193a8c7ab4d4c78fc4f2cef3cf02142ec
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56885449"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831926"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
@@ -88,7 +88,7 @@ Abra cualquier elemento de corrección para ver detalles sobre él, incluido su 
       > Actualmente, solo un usuario con acceso al buzón puede recuperar elementos de una carpeta eliminada temporalmente.
 
   - **No se pueden realizar** acciones: los correos electrónicos de las siguientes ubicaciones no se pueden actuar ni mover en acciones de corrección:
-    - Cuarentena
+    - Quarantine
     - Carpeta eliminada de forma permanente
     - Local/externo
     - Error o caída
@@ -133,10 +133,12 @@ Abra cualquier elemento de corrección para ver detalles sobre él, incluido su 
   
   - **Ya en destino:** la acción deseada ya se ha realizado en el correo electrónico O el correo electrónico ya existía en la ubicación de destino. Por ejemplo: el administrador eliminó temporalmente un correo electrónico a través del Explorador el primer día. A continuación, los correos electrónicos similares se muestran el día 2, que el administrador vuelve a eliminar temporalmente. Al seleccionar estos correos electrónicos, el administrador termina seleccionando algunos correos electrónicos del primer día que ya se han eliminado temporalmente. Ahora estos correos electrónicos no se volverán a realizar, solo se mostrarán como "ya en destino", ya que no se ha realizado ninguna acción sobre ellos como existían en la ubicación de destino.
 
-  Seleccione cualquier elemento del registro de acciones para mostrar los detalles de corrección. Si los detalles dicen "correcto" o "no se encontró en el buzón de correo", ese elemento ya se quitó del buzón. A veces hay un error sistémico durante la corrección. En esos casos, es una buena idea volver a intentar la corrección.
+  - **Nuevo**: Se *ha agregado una columna* Ya en el destino en el registro de acciones. Esta característica usa la ubicación de entrega más reciente en el Explorador de amenazas para indicar si el correo ya se ha corregido. *Ya en el destino* ayudará a los equipos de seguridad a comprender el número total de mensajes que aún deben abordarse.
+                
+Las acciones solo se pueden realizar en los mensajes de las carpetas Bandeja de entrada, Correo no deseado, Eliminado y Eliminado temporalmente del Explorador de amenazas. Este es un ejemplo de cómo funciona la nueva columna. Una *acción de eliminación* suave tiene lugar en el mensaje presente en la Bandeja de entrada y, a continuación, el mensaje se controlará según las directivas. La próxima vez que se realice una eliminación suave, este mensaje se mostrará debajo de la columna "Ya en el destino" que indica que no es necesario que se vuelva a tratar.
 
-  En caso de corregir lotes grandes, también puede exportar los mensajes enviados para su corrección a través del envío de correo y los mensajes que se han corregido a través de registros de acciones. El límite de exportación se aumenta a 100.000 registros.
+Seleccione cualquier elemento del registro de acciones para mostrar los detalles de corrección. Si los detalles dicen "correcto" o "no se encontró en el buzón", ese elemento ya se quitó del buzón. A veces hay un error del sistema durante la corrección. En esos casos, es una buena idea volver a intentar la acción de corrección.
 
-El equipo de seguridad puede llevar hasta 50 correcciones manuales simultáneas; sin embargo, no hay ningún límite establecido para las acciones automatizadas de investigación y respuesta.
+En caso de corregir grandes lotes de correo electrónico, exporte los mensajes enviados para su corrección a través del envío de correo y los mensajes que se han corregido a través de registros de acciones. El límite de exportación se aumenta a 100 000 registros.
 
-  Remediation is a powerful tool to mitigate threats and address suspicious emails. Ayuda a mantener una organización segura.
+La corrección mitiga las amenazas, aborda correos electrónicos sospechosos y ayuda a mantener una organización segura.

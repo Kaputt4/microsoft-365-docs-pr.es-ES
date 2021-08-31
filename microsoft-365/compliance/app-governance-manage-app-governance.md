@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Implemente funcionalidades de gobernanza de aplicaciones de Microsoft para controlar sus aplicaciones.
-ms.openlocfilehash: a105ba8d1e0a0127cccb772ad60bb7bd0c6c8b4c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f89214a71bc82ac7271ba3fd010258e63d39ef8a
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567561"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744994"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Complemento de gobernanza de aplicaciones para Microsoft Cloud App Security (en versión preliminar)
 
@@ -79,29 +79,13 @@ Este es un resumen de la integración.
 
 ![La Integración de gobernanza de aplicaciones con Azure AD y Microsoft Cloud App Security.](..\media\manage-app-protection-governance\mapg-integration.png)
 
-Además, la gobernanza de aplicaciones envía sus alertas como señales a Microsoft Cloud App Security y Microsoft 365 Defender, y la gobernanza de aplicaciones recibe alertas de Microsoft Cloud App Security para permitir un análisis más detallado de los incidentes de seguridad basados en aplicaciones.
+La gobernanza de aplicaciones envía sus alertas como señales a Microsoft Cloud App Security y Microsoft 365 Defender, y recibe alertas de Microsoft Cloud App Security para permitir un análisis más detallado de los incidentes de seguridad basados en aplicaciones.
+- Las alertas de la gobernanza de aplicaciones se muestran en la lista de alertas de Microsoft 365 Defender como alertas con el campo Origen de detección establecido en "MAPG"
+- Las alertas de la gobernanza de aplicaciones se muestran en la lista de alertas de MCAS como alertas con el campo Directiva establecido en cualquiera
+  - Gobernanza de aplicaciones de OAuth de Microsoft 365
+  - Detección de suplantación de identidad (phishing) de OAuth de Microsoft 365
+  - Reputación de las aplicaciones de OAuth de Microsoft 365
+- Las alertas MCAS aparecen en la lista de alertas de la gobernanza de aplicaciones como alertas con el Origen establecido en MCAS
 
-<!--
-Integration of alerts with MCAS and M365 Defender
-Azure AD IP detections in progress to surface in M365 Defender
-
-## Integration with Azure AD
-
-**Feedback from Anand:** We should add some details on how MAPG works with M365 Defender (previously MTP). Also, we should highlight the integration with MCAS and AAD.
-
-Key cross-reference resources:
-
-- [What is application management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management)
-- [Common application management scenarios for Azure Active Directory (especially scenarios 3-4)](https://docs.microsoft.com/cloud-app-security/monitor-alerts)
-- [Azure Active Directory Identity Governance documentation](https://docs.microsoft.com/azure/active-directory/governance/)
-- [Managing access to apps using Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-access-management)
-
-## Integration with Microsoft Cloud App Security
-
-Key cross-reference resources:
-
-- [Cloud App Security anomaly detection alerts investigation guide](https://docs.microsoft.com/cloud-app-security/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app)
-- [Monitor alerts raised in Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts)
-- [Control which third-party cloud OAuth apps get permissions](https://docs.microsoft.com/cloud-app-security/manage-app-permissions)
-
--->
+> [!NOTE]
+> El estado de las alertas no se está sincronizando actualmente entre la gobernanza de aplicaciones y Microsoft Cloud App Security.

@@ -14,12 +14,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 3138d1c0a4b4d2b5726b87e6e86897091d237854
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.date: 08/27/2021
+ms.openlocfilehash: 822241ed8010338b21f61ef39e3df1d310ced2ce
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568645"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58832019"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
@@ -62,7 +63,6 @@ En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la 
 |Cualquier archivo de una carpeta específica|Todos los archivos de la `c:\test\sample` carpeta|Exclusiones de archivos y carpetas|
 |Un archivo específico en una carpeta específica|Solo el `c:\sample\sample.test` archivo|Exclusiones de archivos y carpetas|
 |Un proceso específico|El archivo ejecutable `c:\test\process.exe`|Exclusiones de archivos y carpetas|
-|
 
 ## <a name="characteristics-of-exclusion-lists"></a>Características de las listas de exclusión
 
@@ -140,26 +140,20 @@ En la tabla siguiente se enumeran los cmdlets que puede usar en la `<cmdlet>` pa
 
 <br>
 
-****
-
 |Acción de configuración|Cmdlet de PowerShell|
 |:---|:---|
 |Crear o sobrescribir la lista|`Set-MpPreference`|
 |Agregar a la lista|`Add-MpPreference`|
 |Quitar elemento de la lista|`Remove-MpPreference`|
-|
 
 En la tabla siguiente se enumeran los valores que puede usar en la `<exclusion list>` parte del cmdlet de PowerShell:
 
 <br>
 
-****
-
 |Tipo de exclusión|Parámetro de PowerShell|
 |---|---|
 |Todos los archivos con una extensión de archivo especificada|`-ExclusionExtension`|
 |Todos los archivos de una carpeta (incluidos los archivos en subdirectorios) o un archivo específico|`-ExclusionPath`|
-|
 
 > [!IMPORTANT]
 > Si ha creado una lista, ya sea con o con el `Set-MpPreference` `Add-MpPreference` cmdlet de nuevo `Set-MpPreference` sobrescribirá la lista existente.
@@ -205,19 +199,17 @@ Puede usar el asterisco, el signo de interrogación o las variables de entorno (
 > - El uso de variables de entorno se limita a las variables de máquina y las aplicables a los procesos que se ejecutan como una cuenta NT AUTHORITY\SYSTEM.
 > - No puede usar un comodín en lugar de una letra de unidad.
 > - Un asterisco `*` en una exclusión de carpeta se mantiene en su lugar para una sola carpeta. Use varias instancias de para `\*\` indicar varias carpetas anidadas con nombres no especificados.
-
+> - Actualmente, Microsoft Endpoint Configuration Manager admite caracteres comodín (como `*` o `?` ).
+    
 En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y se proporcionan algunos ejemplos.
 
 <br>
-
-****
 
 |Carácter comodín|Ejemplos|
 |---|---|
 |`*` (asterisco) <p> En **las inclusiones de** nombre de archivo y extensión de archivo, el asterisco reemplaza cualquier número de caracteres y solo se aplica a los archivos de la última carpeta definida en el argumento. <p> En **las exclusiones de carpetas,** el asterisco reemplaza a una sola carpeta. Use varias `*` barras diagonales de carpeta `\` para indicar varias carpetas anidadas. Después de hacer coincidir el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.|`C:\MyData\*.txt` incluye `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` incluye cualquier archivo y `C:\somepath\Archives\Data` sus subcarpetas, `C:\somepath\Authorized\Data` y sus subcarpetas <p> `C:\Serv\*\*\Backup` incluye cualquier archivo y `C:\Serv\Primary\Denied\Backup` sus subcarpetas y `C:\Serv\Secondary\Allowed\Backup` sus subcarpetas|
 |`?` (signo de interrogación)  <p> En **las inclusiones** de nombre de archivo y extensión de archivo, el signo de interrogación reemplaza a un solo carácter y solo se aplica a los archivos de la última carpeta definida en el argumento. <p> En **las exclusiones de carpetas,** el signo de interrogación reemplaza un solo carácter en un nombre de carpeta. Después de hacer coincidir el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.|`C:\MyData\my?.zip` incluye `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` incluye cualquier archivo en `C:\somepath\P\Data` y sus subcarpetas  <p> `C:\somepath\test0?\Data` incluiría cualquier archivo en `C:\somepath\test01\Data` y sus subcarpetas|
 |Variables de entorno <p> La variable definida se rellena como una ruta de acceso cuando se evalúa la exclusión.|`%ALLUSERSPROFILE%\CustomLogFiles` incluiría `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
-|
 
 > [!IMPORTANT]
 > Si mezcla un argumento de exclusión de archivos con un argumento de exclusión de carpeta, las reglas se detendrán en la coincidencia del argumento de archivo en la carpeta coincidente y no buscarán coincidencias de archivos en ninguna subcarpeta.
@@ -233,9 +225,7 @@ En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y
 En la tabla siguiente se enumeran y describen las variables de entorno de cuentas del sistema.
 
 <br>
-
-****
-
+    
 |Esta variable de entorno del sistema...|Redirige a esto|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -298,7 +288,6 @@ En la tabla siguiente se enumeran y describen las variables de entorno de cuenta
 |`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
 |`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
 |`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
-|
 
 ## <a name="review-the-list-of-exclusions"></a>Revisar la lista de exclusiones
 
@@ -393,7 +382,7 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarla con el nombre de archivo o en la carpeta que está intentando excluir.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)

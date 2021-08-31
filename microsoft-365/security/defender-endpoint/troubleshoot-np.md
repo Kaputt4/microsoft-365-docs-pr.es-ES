@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 981e7962db35429e5f7bf02ee4a6f57fd19655d4
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: d10399c3064697ab383133cd17cc14dc7dd43cc4
+ms.sourcegitcommit: dda742d2b044fa56f4edef57d74d18f52fafc149
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509898"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58829273"
 ---
 # <a name="troubleshoot-network-protection"></a>Solucionar problemas de protección de red
 
@@ -83,9 +83,13 @@ Si ha probado la característica con el sitio de demostración y con el modo de 
 
 Consulta [Dirección de falsos positivos/negativos en Microsoft Defender para Endpoint](defender-endpoint-false-positives-negatives.md).
 
-## <a name="exclude-website-from-network-protection-scope"></a>Excluir sitio web del ámbito de protección de red
+## <a name="add-exclusions"></a>Agregar exclusiones
+Las opciones de exclusión actuales son:
 
-Para permitir el sitio web que se está bloqueando (falso positivo), agregue su dirección URL a la [lista de sitios de confianza](https://blogs.msdn.microsoft.com/asiatech/2014/08/19/how-to-add-web-sites-to-trusted-sites-via-gpo-from-dc-installed-ie10-or-higher-ie-version/). Los recursos web de esta lista omiten la comprobación de protección de red.
+1.  Configurar un indicador de permitir personalizado.
+2.  Uso de exclusiones IP: `Add-MpPreference -Exclusion IpAddress 192.168.1.1`
+3.  Excluyendo todo un proceso. Para obtener más información, [vea Antivirus de Microsoft Defender exclusiones](configure-exclusions-microsoft-defender-antivirus.md). 
+
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Recopilar datos de diagnóstico para envíos de archivos
 
@@ -125,7 +129,7 @@ Puede configurar la clave del Registro mediante PowerShell, Microsoft Endpoint M
 - [Configurar las opciones de cliente personalizadas para Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [Usar la configuración de directiva de grupo para administrar Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Protección de red](network-protection.md)
 - [Protección de red y el protocolo de enlace triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)

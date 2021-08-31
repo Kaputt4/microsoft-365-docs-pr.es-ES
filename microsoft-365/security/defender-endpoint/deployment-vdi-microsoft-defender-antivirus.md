@@ -11,16 +11,16 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/11/2021
+ms.date: 08/31/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: cbf1cae088af2606e8fea1e40e0cfe34c7a74832
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: a4d96832ecdddf4cd1567b5c8f646d2df6ac7921
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533524"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58832031"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
@@ -30,7 +30,7 @@ ms.locfileid: "58533524"
 
 Además de las configuraciones de hardware o locales estándar, también puede usar Antivirus de Microsoft Defender en un entorno de escritorio remoto (RDS) o de infraestructura de escritorio virtual (VDI).
 
-Consulte [Windows documentación de Escritorio virtual para](/azure/virtual-desktop) obtener más información sobre Escritorio remoto de Microsoft servicios y compatibilidad con VDI.
+Consulte [Documentación de Azure Virtual Desktop](/azure/virtual-desktop) para obtener más información sobre Escritorio remoto de Microsoft servicios y compatibilidad con VDI.
 
 Para las máquinas virtuales basadas en Azure, [consulte Install Endpoint Protection in Azure Defender](/azure/security-center/security-center-install-endpoint-protection).
 

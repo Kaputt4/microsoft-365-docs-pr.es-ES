@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e469bc9d9ce3de8cd1425231f4b4b90247da2317a6ffc90ded86f5e4880563cc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ecd6371a75ec4a9156f7d6bccf59045f0700490
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806753"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58822777"
 ---
-# <a name="manage-automation-folder-exclusions"></a>Administrar las exclusiones de carpeta de automatización 
+# <a name="manage-automation-folder-exclusions"></a>Administrar las exclusiones de carpeta de automatización
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,34 +34,24 @@ ms.locfileid: "53806753"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
-Las exclusiones de carpetas de automatización permiten especificar carpetas que omitirá la investigación automatizada. 
+Las exclusiones de carpetas de automatización permiten especificar carpetas que omitirá la investigación automatizada.
 
 Puede controlar los siguientes atributos acerca de la carpeta que desea omitir:
-- Folders 
-- Extensiones de los archivos
-- Nombres de archivo
 
+- **Carpetas:** puede especificar una carpeta y sus subcarpetas que se omitirán.
 
-**Folders**<br>
-Puede especificar una carpeta y sus subcarpetas que se omitirán. 
+  > [!NOTE]
+  > En este momento, aún no se admite el uso de comodines como forma de excluir archivos en un directorio.
 
+- **Extensiones de los archivos:** puede especificar las extensiones que se excluirán en un directorio específico. Las extensiones son una forma de impedir que un atacante use una carpeta excluida para ocultar una vulnerabilidad. Las extensiones definen explícitamente los archivos que se deben omitir.
 
->[!NOTE]
->En este momento, aún no se admite el uso de comodines como forma de excluir archivos en un directorio. 
-
-
-**Extensiones**<br>
-Puede especificar las extensiones que se excluirán en un directorio específico. Las extensiones son una forma de impedir que un atacante use una carpeta excluida para ocultar una vulnerabilidad. Las extensiones definen explícitamente los archivos que se deben omitir. 
-
-**Nombres de archivo**<br>
-Puede especificar los nombres de archivo que desea excluir en un directorio específico. Los nombres son una forma de impedir que un atacante use una carpeta excluida para ocultar una vulnerabilidad. Los nombres definen explícitamente los archivos que se deben omitir. 
-
-
+- **Nombres de** archivo: puede especificar los nombres de archivo que desea excluir en un directorio específico. Los nombres son una forma de impedir que un atacante use una carpeta excluida para ocultar una vulnerabilidad. Los nombres definen explícitamente los archivos que se deben omitir.
 
 ## <a name="add-an-automation-folder-exclusion"></a>Agregar una exclusión de carpeta de automatización
-1. En el panel de navegación, seleccione **Configuración** exclusiones de  >  **carpetas** de automatización de reglas de  >    >  **extremo**.  
 
-2. Haga **clic en Nueva exclusión de carpeta**.  
+1. En el panel de navegación, seleccione **Configuración** exclusiones de \> **carpetas** de automatización de reglas de \>  \> **extremo**.
+
+2. Haga **clic en Nueva exclusión de carpeta**.
 
 3. Escriba los detalles de la carpeta:
 
@@ -72,21 +62,21 @@ Puede especificar los nombres de archivo que desea excluir en un directorio espe
 
 4. Haga clic en **Guardar**.
 
->[!NOTE]
+> [!NOTE]
 > Los comandos live response para recopilar o examinar archivos excluidos producirán un error: "Se excluye el archivo". Además, las investigaciones automatizadas omitirán los elementos excluidos.
 
-## <a name="edit-an-automation-folder-exclusion"></a>Editar una exclusión de carpetas de automatización 
-1. En el panel de navegación, seleccione **Configuración** exclusiones de  >  **carpetas** de automatización de reglas de  >    >  **extremo**. 
+## <a name="edit-an-automation-folder-exclusion"></a>Editar una exclusión de carpetas de automatización
 
-2. Haga **clic en Editar** en la exclusión de carpetas.  
-
+1. En el panel de navegación, seleccione **Configuración** exclusiones de \> **carpetas** de automatización de reglas de \>  \> **extremo**.
+2. Haga **clic en Editar** en la exclusión de carpetas.
 3. Actualice los detalles de la regla y haga clic en **Guardar**.
 
-## <a name="remove-an-automation-folder-exclusion"></a>Quitar una exclusión de carpetas de automatización 
-1. En el panel de navegación, seleccione **Configuración** exclusiones de  >  **carpetas** de automatización de reglas de  >    >  **extremo**.  
-2. Haga clic **en Quitar exclusión**. 
+## <a name="remove-an-automation-folder-exclusion"></a>Quitar una exclusión de carpetas de automatización
 
+1. En el panel de navegación, seleccione **Configuración** exclusiones de \> **carpetas** de automatización de reglas de \>  \> **extremo**.
+2. Haga clic **en Quitar exclusión**.
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Administrar listas de automatización permitidas o bloqueadas](manage-indicators.md)
 - [Administrar cargas de archivos de automatización](manage-automation-file-uploads.md)

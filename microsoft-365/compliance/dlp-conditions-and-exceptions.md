@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: obtenga información sobre las condiciones y excepciones de la directiva dlp
-ms.openlocfilehash: b1ada8362b149e737784f3cc2948100bbcb217274e000736ecf4cc4752c59e93
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 385c59a41535fbc3fdec0fc551a50b6915736f4f
+ms.sourcegitcommit: dda742d2b044fa56f4edef57d74d18f52fafc149
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851136"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58829285"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Condiciones de directiva DLP, excepciones y acciones
 
@@ -55,6 +55,7 @@ Las tablas de las secciones siguientes describen las condiciones y excepciones q
 |condición o excepción en DLP|parámetros de condición/excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
 |El remitente es|condición: *From* <br/> excepción: *ExceptIfFrom*|Addresses|Mensajes enviados por los buzones de correo, los usuarios de correo, los contactos de correo o Microsoft 365 de la organización.|
+|El remitente es un miembro de |_FromMemberOf_ <br/> _ExceptIfFromMemberOf_|Addresses|Mensajes enviados por un miembro del grupo de distribución especificado, grupo de seguridad habilitado para correo o Microsoft 365 grupo.|
 |La dirección IP del remitente es|condición: *SenderIPRanges*<br/> *excepción: ExceptIfSenderIPRanges*|IPAddressRanges|Mensajes en los que la dirección IP del remitente coincide con la dirección IP especificada o se encuentra en el intervalo de direcciones IP especificado.|
 |La dirección del remitente contiene palabras|condición: *FromAddressContainsWords* <br/> *excepción: ExceptIfFromAddressContainsWords*|Words|Mensajes que contienen las palabras especificadas en la dirección de correo electrónico del remitente.|
 |La dirección del remitente coincide con patrones|condición: *FromAddressMatchesPatterns* <br/> *excepción: ExceptFromAddressMatchesPatterns*|Patrones|Mensajes en los que la dirección de correo electrónico contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
@@ -64,7 +65,7 @@ Las tablas de las secciones siguientes describen las condiciones y excepciones q
 |Las propiedades especificadas del remitente coinciden con estos patrones de texto|condición: *SenderADAttributeMatchesPatterns* <br/> *excepción: ExceptIfSenderADAttributeMatchesPatterns*|Primera propiedad:  `ADAttribute` <p> Segunda propiedad: `Patterns`|Mensajes en los que el atributo Active Directory especificado del remitente contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
 |
 
-### <a name="recipients"></a>Destinatarios
+### <a name="recipients"></a>Recipientes
 
 <br>
 
@@ -77,6 +78,8 @@ Las tablas de las secciones siguientes describen las condiciones y excepciones q
 |La dirección del destinatario contiene palabras|condición: *AnyOfRecipientAddressContainsWords* <br/> *excepción: ExceptIfAnyOfRecipientAddressContainsWords*|Words|Mensajes que contienen las palabras especificadas en la dirección de correo electrónico del destinatario. <br/>**Nota**: Esta condición no considera los mensajes que se envían a direcciones de proxy del destinatario. Solo coincide con los mensajes que se envían a la dirección de correo electrónico principal del destinatario.|
 |La dirección del destinatario coincide con patrones|condición: *AnyOfRecipientAddressMatchesPatterns* <br/> *excepción: ExceptIfAnyOfRecipientAddressMatchesPatterns*|Patrones|Mensajes en los que la dirección de correo electrónico de un destinatario contiene patrones de texto que coinciden con las expresiones regulares especificadas. <br/> **Nota**: Esta condición no considera los mensajes que se envían a direcciones de proxy del destinatario. Solo coincide con los mensajes que se envían a la dirección de correo electrónico principal del destinatario.|
 |Enviado a miembro de|condición: *SentToMemberOf* <br/> *excepción: ExceptIfSentToMemberOf*|Addresses|Mensajes que contienen destinatarios que son miembros del grupo de distribución especificado, grupo de seguridad habilitado para correo o Microsoft 365 grupo. El grupo puede incluirse en los campos **To**, **Cc** o **Bcc** del mensaje.|
+|Las propiedades especificadas del destinatario incluyen cualquiera de estas palabras |_RecipientADAttributeContainsWords_ <br/> _ExceptIfRecipientADAttributeContainsWords_|Primera propiedad:  `ADAttribute` <p> Segunda propiedad: `Words`|Mensajes en los que el atributo Active Directory especificado del destinatario contiene alguna de las palabras especificadas. <p> Tenga en cuenta que el atributo **Country** requiere el valor de código de país de dos letras (por ejemplo, DE para Alemania).|
+|Las propiedades especificadas del destinatario coinciden con estos patrones de texto |_RecipientADAttributeMatchesPatterns_ <br/> _ExceptIfRecipientADAttributeMatchesPatterns_|Primera propiedad:  `ADAttribute` <p> Segunda propiedad: `Patterns`|Mensajes en los que el atributo Active Directory especificado del destinatario contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
 |
 
 ### <a name="message-subject-or-body"></a>Asunto o cuerpo del mensaje
@@ -94,7 +97,7 @@ Las tablas de las secciones siguientes describen las condiciones y excepciones q
 |Asunto o Cuerpo contiene palabras|condición: *SubjectOrBodyContainsWords* <br/> *excepción: ExceptIfSubjectOrBodyContainsWords*|Words|Mensajes que tienen las palabras especificadas en el campo de asunto o el cuerpo del mensaje|
 |
 
-### <a name="attachments"></a>Datos adjuntos
+### <a name="attachments"></a>Attachments
 
 <br>
 

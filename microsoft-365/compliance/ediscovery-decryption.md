@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft 365 herramientas de exhibición de documentos electrónicos administran documentos cifrados adjuntos a mensajes de correo electrónico y almacenados en SharePoint Online y OneDrive para la Empresa.
-ms.openlocfilehash: 7d0f4acd34fc67738258e0f0df23535e759bd8dd
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 7cdd06dd19299fb9e1127f55bc9bc845bb7c14e6
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503052"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831914"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos
 
@@ -46,7 +46,7 @@ En la tabla siguiente se identifican las tareas admitidas que se pueden realizar
 
 |Tarea de exhibición de documentos electrónicos  |Búsqueda de contenido  |Core eDiscovery  |eDiscovery avanzado  |
 |:---------|:---------|:---------|:---------|
-|Buscar contenido en archivos cifrados en correo electrónico y sitios<sup>1</sup>     |Sí      |Sí      |Sí      |
+|Buscar contenido en archivos cifrados en sitios y datos adjuntos de correo<sup>electrónico 1</sup>     |No      |No      |Sí      |
 |Vista previa de archivos cifrados adjuntos al correo electrónico     |Sí      |Sí     |Sí       |
 |Vista previa de documentos cifrados en SharePoint y OneDrive|No      |No    |Sí       |
 |Revisar archivos cifrados en un conjunto de revisión    |N/D      |N/D        | Sí        |
@@ -55,9 +55,9 @@ En la tabla siguiente se identifican las tareas admitidas que se pueden realizar
 |||||
 
 > [!NOTE]
-> <sup>1</sup> Los archivos cifrados que se encuentran en un equipo local (y que no están almacenados en un sitio SharePoint o OneDrive) no se indizan para la exhibición de documentos electrónicos. Esto significa que si un archivo local cifrado está adjunto a un mensaje de correo electrónico, una consulta de búsqueda de palabras clave no devolverá el archivo, incluso si el archivo contiene palabras clave que coinciden con la consulta de búsqueda. Sin embargo, una búsqueda de exhibición de documentos electrónicos puede devolver mensajes de correo electrónico con un archivo cifrado local si una propiedad de correo electrónico (como fecha de envío, remitente, destinatario o asunto) coincide con la consulta de búsqueda.
+> <sup>1 Los</sup> archivos cifrados ubicados en un equipo local y los datos adjuntos de la nube copiados en un mensaje de correo electrónico no se descifran e indizan para la exhibición de documentos electrónicos. Para obtener más información y una solución alternativa para estos escenarios, vea la sección Limitaciones de descifrado con datos [adjuntos](#decryption-limitations-with-email-attachments) de correo electrónico en este artículo.
 
-### <a name="decryption-limitations-with-sensitivity-labels"></a>Limitaciones de descifrado con etiquetas de confidencialidad
+## <a name="decryption-limitations-with-sensitivity-labels-in-sharepoint-and-onedrive"></a>Limitaciones de descifrado con etiquetas de confidencialidad en SharePoint y OneDrive
 
 La exhibición de documentos electrónicos no admite archivos cifrados en SharePoint y OneDrive cuando una etiqueta de confidencialidad que aplicó el cifrado se configura con cualquiera de las siguientes opciones:
 
@@ -68,6 +68,18 @@ La exhibición de documentos electrónicos no admite archivos cifrados en ShareP
 Para obtener más información acerca de estas opciones de configuración, vea la sección "Configurar la configuración de cifrado" en Restringir el acceso al contenido mediante etiquetas de confidencialidad [para aplicar cifrado.](encryption-sensitivity-labels.md#configure-encryption-settings)
 
 Los documentos cifrados con la configuración anterior aún pueden devolverse mediante una búsqueda de exhibición de documentos electrónicos. Esto puede ocurrir cuando una propiedad de documento (como el título, el autor o la fecha de modificación) coincide con los criterios de búsqueda. Aunque estos documentos pueden incluirse en los resultados de búsqueda, no se pueden obtener una vista previa ni revisarse. Estos documentos también permanecerán cifrados cuando se exporten en Advanced eDiscovery.
+
+## <a name="decryption-limitations-with-email-attachments"></a>Limitaciones de descifrado con datos adjuntos de correo electrónico
+
+En los siguientes escenarios se describen limitaciones en el descifrado de archivos adjuntos a mensajes de correo electrónico. Estas descripciones de escenarios también incluyen soluciones alternativas para mitigar estas limitaciones.
+
+- Si un archivo ubicado en un equipo local (y no almacenado en un sitio de SharePoint o una cuenta de OneDrive) se adjunta a un mensaje de correo electrónico y se aplica una etiqueta de confidencialidad que aplica cifrado al mensaje de correo electrónico, la exhibición de documentos electrónicos no puede descifrar el archivo adjunto. Esto significa que si ejecuta una consulta de búsqueda de palabras clave del buzón del destinatario, una consulta de búsqueda de palabras clave no devolverá los datos adjuntos del archivo cifrado.
+
+  La solución alternativa para esta limitación es buscar en el buzón del remitente los mismos datos adjuntos del archivo. Esto se debe a que el cifrado aplicado por la etiqueta de confidencialidad se aplica durante el transporte del mensaje de correo electrónico. Esto significa que los datos adjuntos se cifran cuando se envía el mensaje de correo electrónico. El resultado es que la instancia del archivo adjunto en el buzón del remitente está sin cifrar, aunque el mismo archivo del buzón del destinatario esté cifrado.
+
+- Del mismo modo, la exhibición de documentos electrónicos no puede descifrar los datos adjuntos en la  nube (archivos almacenados en un sitio de SharePoint o en una cuenta de OneDrive) que se copian en un mensaje de correo electrónico (mediante la opción Adjuntar como copia en Outlook). Esto también se debe a que el cifrado que aplica una etiqueta de confidencialidad se aplica cuando se envía el mensaje de correo electrónico. Buscar en el buzón del remitente la instancia sin cifrar de la copia de los datos adjuntos en la nube también es la solución alternativa para esta limitación.
+
+En ambos escenarios, una búsqueda de exhibición de documentos electrónicos puede devolver mensajes de correo electrónico con datos adjuntos cifrados si una propiedad de correo electrónico (como fecha de envío, remitente, destinatario o asunto) coincide con la consulta de búsqueda.
 
 ## <a name="requirements-for-decryption-in-ediscovery"></a>Requisitos para el descifrado en eDiscovery
 

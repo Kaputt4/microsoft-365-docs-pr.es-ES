@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Información sobre las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.
-ms.openlocfilehash: a7120404eafd51714ac19805c088921ad6625ae2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 64ca4d69d0792dbe3751bffff95841409767aa4f
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354241"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747416"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft
 
@@ -140,7 +140,7 @@ En la siguiente tabla se describe cómo combinar varias ofertas de la nube de Mi
    
 Una forma sencilla de agregar suscripciones a su organización para los servicios basados en SaaS para Microsoft es a través del Centro de administración:
   
-1. Inicie sesión en el Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) con su cuenta de administrador global.
+1. Inicie sesión en la Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) con su cuenta de **Administrador de usuarios** o **Administrador global**.
     
 2. En el panel de navegación izquierdo de la página principal del **Centro de administración**, haga clic en **Facturación** y, después, en **Servicios de compra**.
     
@@ -150,7 +150,7 @@ El Centro de administración asigna la organización y el espacio empresarial de
   
 Para agregar una suscripción de Azure con la misma organización y espacio empresarial de Azure AD que su suscripción de Microsoft 365:
   
-1. Inicie sesión en Azure Portal ([https://portal.azure.com](https://portal.azure.com)) con su cuenta de administrador global de Microsoft 365.
+1. Inicie sesión en el Azure Portal ([https://portal.azure.com](https://portal.azure.com)) con su cuenta de **Administrador de controlador de dominio de Azure AD** de Microsoft 365 o **Administrador global**.
     
 2. En el panel de navegación izquierdo, haga clic en **Suscripciones** y después en **Agregar**.
     
