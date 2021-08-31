@@ -16,16 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre las opciones de configuración global para la administración de privacidad.
-ms.openlocfilehash: b656070c5470ae651bb3b361cfc8481dd9b09212
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 071006c354d975cbed06834d60c2d647bbc5df60
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255072"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747070"
 ---
 # <a name="manage-privacy-management-settings-preview"></a>Administrar la configuración de administración de privacidad (versión preliminar)
-
-En este artículo: obtenga información sobre las **opciones de configuración** para la administración de privacidad.
 
 Las opciones de configuración global para la administración de privacidad se encuentran en el icono de engranaje de la esquina superior derecha de las páginas principales. Estas opciones le permiten establecer preferencias de alto nivel y personalizar las propiedades clave. En esta página se proporciona información general sobre las Configuración categorías principales.
 

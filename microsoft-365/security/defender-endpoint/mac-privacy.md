@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 082884e6230c37c65c88ddaec9a24ef05f22e75e853065be4c70ec23266dac2c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 087a5e416ce4f56f3cf4b8f96cc2e0109fe7ca49
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793369"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745714"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Privacidad de Microsoft Defender para endpoint en macOS
 
@@ -50,9 +50,9 @@ Algunos datos de diagnóstico son necesarios, mientras que otros son opcionales.
 
 Hay dos niveles de datos de diagnóstico para el software cliente de Microsoft Defender para endpoint entre los que puede elegir:
 
-* **Obligatorio:** los datos mínimos necesarios para ayudar a mantener Microsoft Defender para endpoint seguro, actualizado y con el rendimiento esperado en el dispositivo en el que está instalado.
+- **Obligatorio:** los datos mínimos necesarios para ayudar a mantener Microsoft Defender para endpoint seguro, actualizado y con el rendimiento esperado en el dispositivo en el que está instalado.
 
-* **Opcional:** datos adicionales que ayudan a Microsoft a realizar mejoras en el producto y proporcionan información mejorada para ayudar a detectar, diagnosticar y corregir problemas.
+- **Opcional:** datos adicionales que ayudan a Microsoft a realizar mejoras en el producto y proporcionan información mejorada para ayudar a detectar, diagnosticar y corregir problemas.
 
 De forma predeterminada, solo se envían los datos de diagnóstico necesarios a Microsoft.
 
@@ -70,7 +70,7 @@ Cuando esta característica está habilitada y es probable que el ejemplo recopi
 
 ## <a name="manage-privacy-controls-with-policy-settings"></a>Administre los controles de privacidad con la configuración de directiva
 
-Si es administrador de TI, es posible que desee configurar estos controles en el nivel de empresa. 
+Si es administrador de TI, es posible que desee configurar estos controles en el nivel de empresa.
 
 Los controles de privacidad de los distintos tipos de datos descritos en la sección anterior se describen detalladamente en Establecer preferencias para Microsoft Defender para endpoint [en macOS.](mac-preferences.md)
 
@@ -81,23 +81,23 @@ Al igual que con cualquier configuración de directiva nueva, debe probarlas cui
 En esta sección se describen los datos de diagnóstico necesarios y los que se consideran datos de diagnóstico opcionales, junto con una descripción de los eventos y campos recopilados.
 
 ### <a name="data-fields-that-are-common-for-all-events"></a>Campos de datos comunes para todos los eventos
-Hay cierta información acerca de los eventos que es común a todos, independientemente del subtipo de datos o la categoría. 
+
+Hay cierta información acerca de los eventos que es común a todos, independientemente del subtipo de datos o la categoría.
 
 Los siguientes campos se consideran comunes para todos los eventos:
 
-| Campo                   | Descripción |
-| ----------------------- | ----------- |
-| plataforma                | La clasificación general de la plataforma en la que se ejecuta la aplicación. Permite a Microsoft identificar en qué plataformas se puede producir un problema para que se pueda priorizar correctamente. |
-| machine_guid            | Identificador único asociado al dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados. |
-| sense_guid              | Identificador único asociado al dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados. |
-| org_id                  | Identificador único asociado a la empresa a la que pertenece el dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de empresas y cuántas empresas se verán afectadas. |
-| nombre de host                | Nombre de dispositivo local (sin sufijo DNS). Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados. |
-| product_guid            | Identificador único del producto. Permite a Microsoft diferenciar los problemas que afectan a diferentes sabores del producto. |
-| app_version             | Versión de Microsoft Defender para endpoint en la aplicación macOS. Permite a Microsoft identificar qué versiones del producto muestran un problema para que se pueda priorizar correctamente.|
-| sig_version             | Versión de la base de datos de inteligencia de seguridad. Permite a Microsoft identificar qué versiones de la inteligencia de seguridad muestran un problema para que se pueda priorizar correctamente. |
-| supported_compressions  | Lista de algoritmos de compresión admitidos por la aplicación, por ejemplo `['gzip']` . Permite a Microsoft comprender qué tipos de compresión se pueden usar cuando se comunica con la aplicación. |
-| release_ring            | Anillo al que está asociado el dispositivo (por ejemplo, Insider Fast, Insider Slow, Production). Permite a Microsoft identificar en qué anillo de lanzamiento puede producirse un problema para que se pueda priorizar correctamente. |
-
+|Field|Descripción|
+|---|---|
+|plataforma|La clasificación general de la plataforma en la que se ejecuta la aplicación. Permite a Microsoft identificar en qué plataformas se puede producir un problema para que se pueda priorizar correctamente.|
+|machine_guid|Identificador único asociado al dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados.|
+|sense_guid|Identificador único asociado al dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados.|
+|org_id|Identificador único asociado a la empresa a la que pertenece el dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de empresas y cuántas empresas se verán afectadas.|
+|nombre de host|Nombre de dispositivo local (sin sufijo DNS). Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados.|
+|product_guid|Identificador único del producto. Permite a Microsoft diferenciar los problemas que afectan a diferentes sabores del producto.|
+|app_version|Versión de Microsoft Defender para endpoint en la aplicación macOS. Permite a Microsoft identificar qué versiones del producto muestran un problema para que se pueda priorizar correctamente.|
+|sig_version|Versión de la base de datos de inteligencia de seguridad. Permite a Microsoft identificar qué versiones de la inteligencia de seguridad muestran un problema para que se pueda priorizar correctamente.|
+|supported_compressions|Lista de algoritmos de compresión admitidos por la aplicación, por ejemplo `['gzip']` . Permite a Microsoft comprender qué tipos de compresión se pueden usar cuando se comunica con la aplicación.|
+|release_ring|Anillo al que está asociado el dispositivo (por ejemplo, Insider Fast, Insider Slow, Production). Permite a Microsoft identificar en qué anillo de lanzamiento puede producirse un problema para que se pueda priorizar correctamente.|
 
 ### <a name="required-diagnostic-data"></a>Datos de diagnósticos necesarios
 
@@ -107,84 +107,84 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 #### <a name="software-setup-and-inventory-data-events"></a>Eventos de datos de inventario y configuración de software
 
-**Instalación y desinstalación de Microsoft Defender para endpoint**
+**Instalación y desinstalación de Microsoft Defender** para endpoint:
 
 Se recopilan los campos siguientes: 
 
-| Campo            | Descripción |
-| ---------------- | ----------- |
-| correlation_id   | Identificador único asociado a la instalación. |
-| version          | Versión del paquete. |
-| severity         | Gravedad del mensaje (por ejemplo, Informativo). |
-| código             | Código que describe la operación. |
-| text             | Información adicional asociada a la instalación del producto. |
+|Field|Descripción|
+|---|---|
+|correlation_id|Identificador único asociado a la instalación.|
+|version|Versión del paquete.|
+|severity|Gravedad del mensaje (por ejemplo, Informativo).|
+|código|Código que describe la operación.|
+|text|Información adicional asociada a la instalación del producto.|
 
-**Configuración de Microsoft Defender para punto de conexión**
+**Configuración de Microsoft Defender para puntos de conexión:**
 
 Se recopilan los campos siguientes: 
 
-| Campo                                               | Descripción |
-| --------------------------------------------------- | ----------- |
-| antivirus_engine.enable_real_time_protection        | Si la protección en tiempo real está habilitada en el dispositivo o no. |
-| antivirus_engine.passive_mode                       | Si el modo pasivo está habilitado en el dispositivo o no. |
-| cloud_service.enabled                               | Si la protección entregada en la nube está habilitada en el dispositivo o no. |
-| cloud_service.timeout                               | Tiempo de espera cuando la aplicación se comunica con la nube de Microsoft Defender para endpoint. |
-| cloud_service.heartbeat_interval                    | Intervalo entre latidos consecutivos enviados por el producto a la nube. |
-| cloud_service.service_uri                           | URI usado para comunicarse con la nube. |
-| cloud_service.diagnostic_level                      | Nivel de diagnóstico del dispositivo (obligatorio, opcional). |
-| cloud_service.automatic_sample_submission           | Si el envío de muestra automático está activado o no. |
-| cloud_service.automatic_definition_update_enabled   | Si la actualización automática de definiciones está activada o no. |
-| edr.early_preview                                   | Si el dispositivo debe ejecutarse EDR características de vista previa anticipada. |
-| edr.group_id                                        | Identificador de grupo usado por el componente de detección y respuesta. |
-| edr.tags                                            | Etiquetas definidas por el usuario. |
-| características. \[ nombre de característica opcional\]                  | Lista de características de vista previa, junto con si están habilitadas o no. |
+|Field|Descripción|
+|---|---|
+|antivirus_engine.enable_real_time_protection|Si la protección en tiempo real está habilitada en el dispositivo o no.|
+|antivirus_engine.passive_mode|Si el modo pasivo está habilitado en el dispositivo o no.|
+|cloud_service.enabled|Si la protección entregada en la nube está habilitada en el dispositivo o no.|
+|cloud_service.timeout|Tiempo de espera cuando la aplicación se comunica con la nube de Microsoft Defender para endpoint.|
+|cloud_service.heartbeat_interval|Intervalo entre latidos consecutivos enviados por el producto a la nube.|
+|cloud_service.service_uri|URI usado para comunicarse con la nube.|
+|cloud_service.diagnostic_level|Nivel de diagnóstico del dispositivo (obligatorio, opcional).|
+|cloud_service.automatic_sample_submission|Si el envío de muestra automático está activado o no.|
+|cloud_service.automatic_definition_update_enabled|Si la actualización automática de definiciones está activada o no.|
+|edr.early_preview|Si el dispositivo debe ejecutarse EDR características de vista previa anticipada.|
+|edr.group_id|Identificador de grupo usado por el componente de detección y respuesta.|
+|edr.tags|Etiquetas definidas por el usuario.|
+|características. \[ nombre de característica opcional\]|Lista de características de vista previa, junto con si están habilitadas o no.|
 
 #### <a name="product-and-service-usage-data-events"></a>Eventos de datos de uso de productos y servicios
 
-**Informe de actualización de inteligencia de seguridad**
+**Informe de actualización de inteligencia de seguridad**:
 
 Se recopilan los campos siguientes: 
 
-| Campo            | Descripción |
-| ---------------- | ----------- |
-| from_version     | Versión original de inteligencia de seguridad. |
-| to_version       | Nueva versión de inteligencia de seguridad. |
-| status           | Estado de la actualización que indica el éxito o error. |
-| using_proxy      | Si la actualización se ha realizado a través de un proxy. |
-| error            | Código de error si se produjo un error en la actualización. |
-| motivo           | Mensaje de error si se ha actualizado el archivo. |
+|Field|Descripción|
+|---|---|
+|from_version|Versión original de inteligencia de seguridad.|
+|to_version|Nueva versión de inteligencia de seguridad.|
+|status|Estado de la actualización que indica el éxito o error.|
+|using_proxy|Si la actualización se ha realizado a través de un proxy.|
+|error|Código de error si se produjo un error en la actualización.|
+|motivo|Mensaje de error si se ha actualizado el archivo.|
 
-#### <a name="product-and-service-performance-data-events"></a>Eventos de datos de rendimiento de productos y servicios
+#### <a name="product-and-service-performance-data-events-for-required-diagnostic-data"></a>Eventos de datos de rendimiento de productos y servicios para datos de diagnóstico necesarios
 
-**Cierre inesperado de la aplicación (bloqueo)**
+**Salida inesperada de la aplicación (bloqueo):**
 
 Recopila información del sistema y el estado de una aplicación cuando una aplicación se cierra inesperadamente.
 
 Se recopilan los campos siguientes: 
 
-| Campo                          | Descripción |
-| ------------------------------ | ----------- |
-| v1_crash_count                 | Número de veces que el proceso del motor V1 se bloquea cada hora en el equipo cliente  |
-| v2_crash_count                 | Número de veces que el proceso del motor V2 se bloquea cada hora en el equipo cliente  |
-| EDR_crash_count                | Número de veces que EDR proceso se bloquea cada hora en el equipo cliente        |
+|Field|Descripción|
+|---|---|
+|v1_crash_count|Número de veces que el proceso del motor V1 se bloquea cada hora en el equipo cliente|
+|v2_crash_count|Número de veces que el proceso del motor V2 se bloquea cada hora en el equipo cliente|
+|EDR_crash_count|Número de veces que EDR proceso se bloquea cada hora en el equipo cliente|
 
-**Estadísticas de extensión de kernel**
+**Estadísticas de extensión de kernel**:
 
 Se recopilan los campos siguientes: 
 
-| Campo            | Descripción |
-| ---------------- | ----------- |
-| version          | Versión de Microsoft Defender para endpoint en macOS. |
-| instance_id      | Identificador único generado en el inicio de extensión de kernel. |
-| trace_level      | Nivel de seguimiento de la extensión del kernel. |
-| subsistema        | Subsistema subyacente usado para la protección en tiempo real. |
-| ipc.connects     | Número de solicitudes de conexión recibidas por la extensión del kernel. |
-| ipc.rejects      | Número de solicitudes de conexión rechazadas por la extensión del kernel. |
-| ipc.connected    | Si hay alguna conexión activa a la extensión del kernel. |
+|Field|Descripción|
+|---|---|
+|version|Versión de Microsoft Defender para endpoint en macOS.|
+|instance_id|Identificador único generado en el inicio de extensión de kernel.|
+|trace_level|Nivel de seguimiento de la extensión del kernel.|
+|subsistema|Subsistema subyacente usado para la protección en tiempo real.|
+|ipc.connects|Número de solicitudes de conexión recibidas por la extensión del kernel.|
+|ipc.rejects|Número de solicitudes de conexión rechazadas por la extensión del kernel.|
+|ipc.connected|Si hay alguna conexión activa a la extensión del kernel.|
 
 #### <a name="support-data"></a>Datos de soporte técnico
 
-**Registro de diagnóstico**
+**Registros de diagnóstico:**
 
 Los registros de diagnóstico solo se recopilan con el consentimiento del usuario como parte de la característica de envío de comentarios. Los siguientes archivos se recopilan como parte de los registros de soporte técnico:
 
@@ -202,40 +202,40 @@ Si elige enviarnos sus datos de diagnóstico opcionales, también se incluyen lo
 
 Algunos ejemplos de datos de diagnóstico opcionales incluyen datos que Microsoft recopila sobre la configuración del producto (por ejemplo, el número de exclusiones establecidas en el dispositivo) y el rendimiento del producto (medidas agregadas sobre el rendimiento de los componentes del producto).
 
-#### <a name="software-setup-and-inventory-data-events"></a>Eventos de datos de inventario y configuración de software
+#### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>Eventos de datos de inventario y configuración de software para datos de diagnóstico opcionales
 
-**Configuración de Microsoft Defender para punto de conexión**
-
-Se recopilan los campos siguientes: 
-
-| Campo                                              | Descripción |
-| -------------------------------------------------- | ----------- |
-| connection_retry_timeout                           | Tiempo de espera de reintento de conexión cuando se comunica con la nube. |
-| file_hash_cache_maximum                            | Tamaño de la memoria caché del producto. |
-| crash_upload_daily_limit                           | Límite de registros de bloqueo cargados diariamente. |
-| antivirus_engine.exclusions[].is_directory         | Si la exclusión del examen es un directorio o no. |
-| antivirus_engine.exclusions[].path                 | Ruta de acceso que se excluyó del examen. |
-| antivirus_engine.exclusions[].extension            | Extensión excluida del examen. |
-| antivirus_engine.exclusions[].name                 | Nombre del archivo excluido del examen. |
-| antivirus_engine.scan_cache_maximum                | Tamaño de la memoria caché del producto. |
-| antivirus_engine.maximum_scan_threads              | Número máximo de subprocesos usados para el examen. |
-| antivirus_engine.threat_restoration_exclusion_time | Tiempo de espera antes de que se pueda detectar de nuevo un archivo restaurado desde la cuarentena. |
-| antivirus_engine.threat_type_settings              | Configuración de la forma en que el producto controla los distintos tipos de amenazas. |
-| filesystem_scanner.full_scan_directory             | Directorio de examen completo. |
-| filesystem_scanner.quick_scan_directories          | Lista de directorios usados en el examen rápido. |
-| edr.latency_mode                                   | Modo de latencia usado por el componente de detección y respuesta. |
-| edr.proxy_address                                  | Dirección de proxy usada por el componente de detección y respuesta. |
-
-**Configuración de Actualización automática de Microsoft**
+**Configuración de Microsoft Defender para puntos de conexión:**
 
 Se recopilan los campos siguientes: 
 
-| Campo                       | Descripción |
-| --------------------------- | ----------- |
-| how_to_check                | Determina cómo se comprueban las actualizaciones de productos (por ejemplo, automáticas o manuales). |
-| channel_name                | Actualizar canal asociado al dispositivo. |
-| manifest_server             | Servidor usado para descargar actualizaciones. |
-| update_cache                | Ubicación de la memoria caché usada para almacenar actualizaciones. |
+|Field|Descripción|
+|---|---|
+|connection_retry_timeout|Tiempo de espera de reintento de conexión cuando se comunica con la nube.|
+|file_hash_cache_maximum|Tamaño de la memoria caché del producto.|
+|crash_upload_daily_limit|Límite de registros de bloqueo cargados diariamente.|
+|antivirus_engine.exclusions[].is_directory|Si la exclusión del examen es un directorio o no.|
+|antivirus_engine.exclusions[].path|Ruta de acceso que se excluyó del examen.|
+|antivirus_engine.exclusions[].extension|Extensión excluida del examen.|
+|antivirus_engine.exclusions[].name|Nombre del archivo excluido del examen.|
+|antivirus_engine.scan_cache_maximum|Tamaño de la memoria caché del producto.|
+|antivirus_engine.maximum_scan_threads|Número máximo de subprocesos usados para el examen.|
+|antivirus_engine.threat_restoration_exclusion_time|Tiempo de espera antes de que se pueda detectar de nuevo un archivo restaurado desde la cuarentena.|
+|antivirus_engine.threat_type_settings|Configuración de la forma en que el producto controla los distintos tipos de amenazas.|
+|filesystem_scanner.full_scan_directory|Directorio de examen completo.|
+|filesystem_scanner.quick_scan_directories|Lista de directorios usados en el examen rápido.|
+|edr.latency_mode|Modo de latencia usado por el componente de detección y respuesta.|
+|edr.proxy_address|Dirección de proxy usada por el componente de detección y respuesta.|
+
+**Configuración de Actualización automática de Microsoft:**
+
+Se recopilan los campos siguientes: 
+
+|Field|Descripción|
+|---|---|
+|how_to_check|Determina cómo se comprueban las actualizaciones de productos (por ejemplo, automáticas o manuales).|
+|channel_name|Actualizar canal asociado al dispositivo.|
+|manifest_server|Servidor usado para descargar actualizaciones.|
+|update_cache|Ubicación de la memoria caché usada para almacenar actualizaciones.|
 
 ### <a name="product-and-service-usage"></a>Uso de productos y servicios
 
@@ -243,81 +243,81 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-| Campo            | Descripción |
-| ---------------- | ----------- |
-| sha256           | Identificador SHA256 del registro de soporte técnico. |
-| size             | Tamaño del registro de soporte técnico. |
-| original_path    | Ruta de acceso al registro de soporte técnico (siempre en */Library/Application Support/Microsoft/Defender/wdavdiag/*). |
-| format           | Formato del registro de soporte técnico. |
+|Field|Descripción|
+|---|---|
+|sha256|Identificador SHA256 del registro de soporte técnico.|
+|size|Tamaño del registro de soporte técnico.|
+|original_path|Ruta de acceso al registro de soporte técnico (siempre en */Library/Application Support/Microsoft/Defender/wdavdiag/*).|
+|format|Formato del registro de soporte técnico.|
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Informe completado de carga de registro de diagnóstico
 
 Se recopilan los campos siguientes: 
 
-| Campo            | Descripción |
-| ---------------- | ----------- |
-| request_id       | Identificador de correlación para la solicitud de carga del registro de soporte técnico. |
-| sha256           | Identificador SHA256 del registro de soporte técnico. |
-| blob_sas_uri     | URI usado por la aplicación para cargar el registro de soporte técnico. |
+|Field|Descripción|
+|---|---|
+|request_id|Identificador de correlación para la solicitud de carga del registro de soporte técnico.|
+|sha256|Identificador SHA256 del registro de soporte técnico.|
+|blob_sas_uri|URI usado por la aplicación para cargar el registro de soporte técnico.|
 
-#### <a name="product-and-service-performance-data-events"></a>Eventos de datos de rendimiento de productos y servicios
+#### <a name="product-and-service-performance-data-events-for-product-and-service-usage"></a>Eventos de datos de rendimiento de productos y servicios para el uso de productos y servicios
 
-**Cierre inesperado de la aplicación (bloqueo)**
+**Salida inesperada de la aplicación (bloqueo):**
 
 Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocurre.
 
-**Estadísticas de extensión de kernel**
+**Estadísticas de extensión de kernel**:
 
 Se recopilan los campos siguientes: 
 
-| Campo                          | Descripción |
-| ------------------------------ | ----------- |
-| pkt_ack_timeout                | Las siguientes propiedades son valores numéricos agregados, que representan el recuento de eventos que se han producido desde el inicio de la extensión del kernel. |
-| pkt_ack_conn_timeout             | |
-| ipc.ack_pkts                     | |
-| ipc.nack_pkts                    | |
-| ipc.send.ack_no_conn             | |
-| ipc.send.nack_no_conn            | |
-| ipc.send.ack_no_qsq              | |
-| ipc.send.nack_no_qsq             | |
-| ipc.ack.no_space                 | |
-| ipc.ack.timeout                  | |
-| ipc.ack.ackd_fast                | |
-| ipc.ack.ackd                     | |
-| ipc.recv.bad_pkt_len             | |
-| ipc.recv.bad_reply_len           | |
-| ipc.recv.no_waiter               | |
-| ipc.recv.copy_failed             | |
-| ipc.kauth.vnode.mask             | |
-| ipc.kauth.vnode.read             | |
-| ipc.kauth.vnode.write            | |
-| ipc.kauth.vnode.exec             | |
-| ipc.kauth.vnode.del              | |
-| ipc.kauth.vnode.read_attr        | |
-| ipc.kauth.vnode.write_attr       | |
-| ipc.kauth.vnode.read_ex_attr     | |
-| ipc.kauth.vnode.write_ex_attr    | |
-| ipc.kauth.vnode.read_sec         | |
-| ipc.kauth.vnode.write_sec        | |
-| ipc.kauth.vnode.take_own         | |
-| ipc.kauth.vnode.link             | |
-| ipc.kauth.vnode.create           | |
-| ipc.kauth.vnode.move             | |
-| ipc.kauth.vnode.mount            | |
-| ipc.kauth.vnode.denied           | |
-| ipc.kauth.vnode.ackd_before_deadline | |
-| ipc.kauth.vnode.missed_deadline  | |
-| ipc.kauth.file_op.mask           | |
-| ipc.kauth_file_op.open           | |
-| ipc.kauth.file_op.close          | |
-| ipc.kauth.file_op.close_modified | |
-| ipc.kauth.file_op.move           | |
-| ipc.kauth.file_op.link           | |
-| ipc.kauth.file_op.exec           | |
-| ipc.kauth.file_op.remove         | |
-| ipc.kauth.file_op.unmount        | |
-| ipc.kauth.file_op.fork           | |
-| ipc.kauth.file_op.create         | |
+|Field|Descripción|
+|---|---|
+|pkt_ack_timeout|Las siguientes propiedades son valores numéricos agregados, que representan el recuento de eventos que se han producido desde el inicio de la extensión del kernel.|
+|pkt_ack_conn_timeout||
+|ipc.ack_pkts||
+|ipc.nack_pkts||
+|ipc.send.ack_no_conn||
+|ipc.send.nack_no_conn||
+|ipc.send.ack_no_qsq||
+|ipc.send.nack_no_qsq||
+|ipc.ack.no_space||
+|ipc.ack.timeout||
+|ipc.ack.ackd_fast||
+|ipc.ack.ackd||
+|ipc.recv.bad_pkt_len||
+|ipc.recv.bad_reply_len||
+|ipc.recv.no_waiter||
+|ipc.recv.copy_failed||
+|ipc.kauth.vnode.mask||
+|ipc.kauth.vnode.read||
+|ipc.kauth.vnode.write||
+|ipc.kauth.vnode.exec||
+|ipc.kauth.vnode.del||
+|ipc.kauth.vnode.read_attr||
+|ipc.kauth.vnode.write_attr||
+|ipc.kauth.vnode.read_ex_attr||
+|ipc.kauth.vnode.write_ex_attr||
+|ipc.kauth.vnode.read_sec||
+|ipc.kauth.vnode.write_sec||
+|ipc.kauth.vnode.take_own||
+|ipc.kauth.vnode.link||
+|ipc.kauth.vnode.create||
+|ipc.kauth.vnode.move||
+|ipc.kauth.vnode.mount||
+|ipc.kauth.vnode.denied||
+|ipc.kauth.vnode.ackd_before_deadline||
+|ipc.kauth.vnode.missed_deadline||
+|ipc.kauth.file_op.mask||
+|ipc.kauth_file_op.open||
+|ipc.kauth.file_op.close||
+|ipc.kauth.file_op.close_modified||
+|ipc.kauth.file_op.move||
+|ipc.kauth.file_op.link||
+|ipc.kauth.file_op.exec||
+|ipc.kauth.file_op.remove||
+|ipc.kauth.file_op.unmount||
+|ipc.kauth.file_op.fork||
+|ipc.kauth.file_op.create||
 
 ## <a name="resources"></a>Recursos
 

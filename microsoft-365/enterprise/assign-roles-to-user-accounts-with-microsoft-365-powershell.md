@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: En este artículo, obtenga información sobre cómo usar PowerShell de forma rápida y Microsoft 365 para asignar roles de administrador a cuentas de usuario.
-ms.openlocfilehash: dbb8586a381d66bea3a6b07ab5521da309c8681f
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 4174877bed9accacc3a61de576fa6e54060678bf
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589317"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745726"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Asignar roles de administrador a Microsoft 365 cuentas de usuario con PowerShell
 
@@ -41,8 +41,10 @@ Puede asignar fácilmente roles a cuentas de usuario mediante PowerShell para Mi
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-En primer lugar, use una cuenta de administrador global para [conectarse a su Microsoft 365 inquilino](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
-  
+En primer lugar, use un administrador **de Azure AD DC,** un administrador **de aplicaciones en** la nube o una cuenta de **administrador** global para conectarse a su [Microsoft 365 inquilino.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+ 
+Para obtener más información, vea [Sobre los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles?).
+
 A continuación, identifique el nombre de inicio de sesión de la cuenta de usuario que desea agregar a un rol (ejemplo: fredsm \@ contoso.com). Esto también se conoce como el nombre principal de usuario (UPN).
 
 A continuación, determine el nombre del rol. Consulte [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference).
@@ -236,7 +238,7 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 - [Administrar Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

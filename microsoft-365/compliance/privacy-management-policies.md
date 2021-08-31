@@ -16,18 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo crear y administrar directivas para controlar los datos personales de su organización en Microsoft 365, responder a alertas y solucionar problemas.
-ms.openlocfilehash: 548e8b6960b2cd27ba786aa6bd184f771a5fcb75
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 49f772119cfc25284fecd66b2f3a79e063f11c09
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256440"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747202"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>Crear y administrar directivas en la administración de privacidad (versión preliminar)
-
-En este artículo: obtenga información  sobre cómo crear  y personalizar directivas para controlar datos personales, obtener alertas sobre coincidencias de directivas y corregir **problemas**.
-
-## <a name="purpose-of-policies"></a>Finalidad de las directivas
 
 Las directivas le permiten definir los tipos de riesgos de privacidad que deben tener en cuenta en los datos de Microsoft 365 de su empresa y establecer los resultados preferidos para escenarios donde se encuentran coincidencias. Su organización puede trabajar desde las alertas resultantes para revisar los datos que coincidan y solucionar problemas, todo desde la solución de administración de privacidad.
 
@@ -103,7 +99,7 @@ Al configurar una directiva personalizada, se le pedirá que seleccione qué tip
   - Acto patriota de EE.UU. mejorado
   - Datos mejorados de información de identificación personal (PII) de EE.UU.
   - Mejoradas las leyes de notificación de infracciones de Estado de EE.UU.
-- **Tipos individuales** de información confidencial: al elegir tipos específicos de información confidencial, como números de seguro social o información de licencia de conducir, puede personalizar su propio grupo o grupos de datos de los que debe tener en cuenta. Este asistente le permite seleccionar de la lista completa de tipos de información confidencial dentro de la administración de privacidad. Cada tipo de información tiene sus propias propiedades. Usa el botón de información junto a cualquiera de ellos para obtener detalles y notas sobre la configuración recomendada. Si crea más de un grupo, el asistente le permite aplicar operadores booleanos para relacionarlos y definir su orden de operaciones.
+- **Tipos individuales** de información confidencial: al elegir tipos específicos de información confidencial, como números de seguridad social o información de licencia de conducir, puede personalizar su propio grupo o grupos de datos para buscar. Este asistente le permite seleccionar de la lista completa de tipos de información confidencial dentro de la administración de privacidad. Cada tipo de información tiene sus propias propiedades. Usa el botón de información junto a cualquiera de ellos para obtener detalles y notas sobre la configuración recomendada. Si crea más de un grupo, el asistente le permite aplicar operadores booleanos para relacionarlos y definir su orden de operaciones.
 
 Si usa grupos de clasificación predefinidos, no puede seleccionar tipos individuales ni crear sus propios grupos. Para mayor flexibilidad, elige tipos de información confidencial individuales. Para usar los estándares más comunes, elija entre los grupos de clasificación.
 

@@ -15,18 +15,18 @@ f1.keywords:
 - NOCSH
 description: Este artículo contiene información sobre el uso de elementos emergentes lean para mejorar el rendimiento de descarga de mensajes en Outlook en la Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 612774478f5b649901d6eae9dccf332299fa53d38331c6ced847ea8d05be104e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5f2f30f4a725add062ff6d800a9cb3953dfeb078
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840772"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745690"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Usar popouts lean para reducir la memoria usada al leer mensajes de correo
 
 Este artículo contiene información para mejorar el rendimiento de descarga de mensajes en Outlook en la Web. Este artículo forma parte del plan de red y el ajuste del rendimiento [para Office 365](./network-planning-and-performance.md) proyecto.
   
-Como administrador global Office 365, puede configurar Outlook en la Web para ofrecer _popouts_ lean, una versión más pequeña y con menos memoria de determinados mensajes de correo electrónico en Microsoft Edge o Internet Explorer. Cuando se configuran popouts lean para Outlook en la Web, se cargan los componentes representados del lado servidor que optimizan el rendimiento.
+Como administrador de aplicaciones de  **Office 365,** administrador global o administrador de **usuarios,** puede configurar Outlook en la Web para que proporcione elementos _emergentes_ lean, una versión más pequeña y con menos memoria de determinados mensajes de correo electrónico en Microsoft Edge o Internet Explorer. Cuando se configuran popouts lean para Outlook en la Web, se cargan los componentes representados del lado servidor que optimizan el rendimiento.
   
 > [!NOTE]
 > A partir de marzo de 2018, los elementos emergentes lean no están disponibles para los mensajes que especifican restricciones de derechos de uso, como Information Rights Management (IRM).

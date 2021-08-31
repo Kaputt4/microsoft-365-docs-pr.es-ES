@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f24a610e82388cead88b68e33b76c6404d68ec9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 612c9a717ae10c97c91a183418e36fa87e2f7ba8
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570034"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747524"
 ---
 # <a name="device-control-for-macos"></a>Control de dispositivos para macOS
 
@@ -39,7 +39,8 @@ ms.locfileid: "58570034"
 
 El control de dispositivos para macOS tiene los siguientes requisitos previos:
 
->[!div class="checklist"]
+> [!div class="checklist"]
+>
 > - Derechos de Microsoft Defender para extremo (puede ser de prueba)
 > - Versión mínima del sistema operativo: macOS 11 o posterior
 > - Versión mínima del producto: 101.34.20
@@ -52,12 +53,17 @@ La directiva de control de dispositivos se incluye en el perfil de configuració
 
 Dentro del perfil de configuración, la directiva de control de dispositivos se define en la siguiente sección:
 
+<br>
+
+****
+
 |Sección|Valor|
-|:---|:---|
-| **Dominio** | `com.microsoft.wdav` |
-| **Clave** | deviceControl |
-| **Tipo de datos** | Diccionario (preferencia anidada) |
-| **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|deviceControl|
+|**Tipo de datos**|Diccionario (preferencia anidada)|
+|**Comments**|Vea las secciones siguientes para obtener una descripción del contenido del diccionario.|
+|
 
 La directiva de control de dispositivos se puede usar para:
 
@@ -72,38 +78,48 @@ Cuando se aplica la directiva de control de dispositivos que has puesto en march
 
 Cuando los usuarios finales hacen clic en esta notificación, se abre una página web en el explorador predeterminado. Puede configurar la dirección URL que se abre cuando los usuarios finales hacen clic en la notificación.
 
+<br>
+
+****
+
 |Sección|Valor|
-|:---|:---|
-| **Dominio** | `com.microsoft.wdav` |
-| **Clave** | navigationTarget |
-| **Tipo de datos** | Cadena |
-| **Comments** | Si no se define, el producto usa una dirección URL predeterminada que apunta a una página genérica que explica la acción realizada por el producto. |
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|navigationTarget|
+|**Tipo de datos**|String|
+|**Comments**|Si no se define, el producto usa una dirección URL predeterminada que apunta a una página genérica que explica la acción realizada por el producto.|
+|
 
 ### <a name="allow-or-block-removable-devices"></a>Permitir o bloquear dispositivos extraíbles
 
-La sección de medios extraíbles de la directiva de control de dispositivos se usa para restringir el acceso a medios extraíbles. 
+La sección de medios extraíbles de la directiva de control de dispositivos se usa para restringir el acceso a medios extraíbles.
 
 > [!NOTE]
 > Actualmente se admiten los siguientes tipos de medios extraíbles y se pueden incluir en la directiva: dispositivos de almacenamiento USB.
 
+<br>
+
+****
+
 |Sección|Valor|
-|:---|:---|
-| **Dominio** | `com.microsoft.wdav` |
-| **Clave** | removableMediaPolicy |
-| **Tipo de datos** | Diccionario (preferencia anidada) |
-| **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|removableMediaPolicy|
+|**Tipo de datos**|Diccionario (preferencia anidada)|
+|**Comments**|Vea las secciones siguientes para obtener una descripción del contenido del diccionario.|
+|
 
 Esta sección de la directiva es jerárquica, lo que permite la máxima flexibilidad y cubre una amplia variedad de casos de uso. En el nivel superior se encuentran los proveedores, identificados por un identificador de proveedor. Para cada proveedor, hay productos identificados por un identificador de producto. Por último, para cada producto hay números de serie que indican dispositivos específicos.
 
-```
-|-- policy top level 
-    |-- vendor 1 
-        |-- product 1 
-            |-- serial number 1 
+```text
+|-- policy top level
+    |-- vendor 1
+        |-- product 1
+            |-- serial number 1
             ...
-            |-- serial number N 
+            |-- serial number N
         ...
-        |-- product N 
+        |-- product N
     ...
     |-- vendor N
 ```
@@ -117,17 +133,22 @@ La directiva se evalúa desde la entrada más específica hasta la más general.
 En la sección medios extraíbles, hay una opción para establecer el nivel de cumplimiento, que puede tener uno de los siguientes valores:
 
 - `audit` - En este nivel de aplicación, si el acceso a un dispositivo está restringido, se muestra una notificación al usuario, pero aún se puede usar el dispositivo. Este nivel de cumplimiento puede ser útil para evaluar la eficacia de una directiva.
-- `block` - En este nivel de cumplimiento, las operaciones que el usuario puede realizar en el dispositivo se limitan a lo que se define en la directiva. Además, se genera una notificación al usuario. 
+- `block` - En este nivel de cumplimiento, las operaciones que el usuario puede realizar en el dispositivo se limitan a lo que se define en la directiva. Además, se genera una notificación al usuario.
 
-> [!NOTE] 
-> De forma predeterminada, el nivel de cumplimiento se establece en `audit` . 
+> [!NOTE]
+> De forma predeterminada, el nivel de cumplimiento se establece en `audit` .
+
+<br>
+
+****
 
 |Sección|Valor|
-|:---|:---|
-| **Dominio** | `com.microsoft.wdav` |
-| **Clave** | enforcementLevel |
-| **Tipo de datos** | Cadena |
-| **Posibles valores** | auditoría (valor predeterminado) <br/> bloque |
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|enforcementLevel|
+|**Tipo de datos**|Cadena|
+|**Posibles valores**|auditoría (valor predeterminado) <p> bloque|
+|
 
 #### <a name="default-permission-level"></a>Nivel de permisos predeterminado
 
@@ -137,141 +158,175 @@ Esta configuración se puede establecer en:
 
 - `none` - No se pueden realizar operaciones en el dispositivo
 - Una combinación de los siguientes valores:
-    - `read` - Las operaciones de lectura están permitidas en el dispositivo
-    - `write` - Las operaciones de escritura están permitidas en el dispositivo
-    - `execute` - Las operaciones de ejecución están permitidas en el dispositivo
+  - `read` - Las operaciones de lectura están permitidas en el dispositivo
+  - `write` - Las operaciones de escritura están permitidas en el dispositivo
+  - `execute` - Las operaciones de ejecución están permitidas en el dispositivo
 
 > [!NOTE]
 > Si `none` está presente en el nivel de permisos, cualquier otro permiso ( , , o ) se `read` `write` `execute` omitirá.
-
-> [!NOTE]
+>
 > El `execute` permiso solo hace referencia a la ejecución de archivos binarios de Mach-O. No incluye la ejecución de scripts u otros tipos de cargas.
 
+<br>
+
+****
+
 |Sección|Valor|
-|:---|:---|
-| **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permission |
-| **Tipo de datos** | Matriz de cadenas |
-| **Posibles valores** | ninguno <br/> read <br/> write <br/> execute |
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|permission|
+|**Tipo de datos**|Matriz de cadenas|
+|**Posibles valores**|ninguno <p> read <p> write <p> execute|
+|
 
 #### <a name="restrict-removable-media-by-vendor-product-and-serial-number"></a>Restringir medios extraíbles por proveedor, producto y número de serie
 
 Como se describe en [Permitir](#allow-or-block-removable-devices)o bloquear dispositivos extraíbles, los medios extraíbles, como dispositivos USB, pueden identificarse mediante el identificador de proveedor, el identificador de producto y el número de serie.
 
-En el nivel superior de la directiva de medios extraíbles, opcionalmente puede definir restricciones más granulares en el nivel de proveedor. 
+En el nivel superior de la directiva de medios extraíbles, opcionalmente puede definir restricciones más granulares en el nivel de proveedor.
 
 El `vendors` diccionario contiene una o más entradas, con cada entrada identificada por el identificador de proveedor.
 
+<br>
+
+****
+
 |Sección|Valor|
-|:---|:---|
-| **Dominio** | `com.microsoft.wdav` |
-| **Clave** | proveedores |
-| **Tipo de datos** | Diccionario (preferencia anidada) |
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|proveedores|
+|**Tipo de datos**|Diccionario (preferencia anidada)|
+|
 
 Para cada proveedor, puede especificar el nivel de permisos deseado para los dispositivos de ese proveedor.
 
-|Sección|Valor|
-|:---|:---|
-| **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permission |
-| **Tipo de datos** | Matriz de cadenas |
-| **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
+<br>
 
-Además, puede especificar opcionalmente el conjunto de productos que pertenecen a ese proveedor para el que se definen permisos más granulares. El diccionario contiene una o más entradas, con `products` cada entrada identificada por el identificador del producto. 
+****
 
 |Sección|Valor|
-|:---|:---|
-| **Dominio** | `com.microsoft.wdav` |
-| **Clave** | productos |
-| **Tipo de datos** | Diccionario (preferencia anidada) |
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|permission|
+|**Tipo de datos**|Matriz de cadenas|
+|**Posibles valores**|Igual que [el nivel de permisos predeterminado](#default-permission-level)|
+|
+
+Además, puede especificar opcionalmente el conjunto de productos que pertenecen a ese proveedor para el que se definen permisos más granulares. El diccionario contiene una o más entradas, con `products` cada entrada identificada por el identificador del producto.
+
+<br>
+
+****
+
+|Sección|Valor|
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|productos|
+|**Tipo de datos**|Diccionario (preferencia anidada)|
+|
 
 Para cada producto, puede especificar el nivel de permisos deseado para ese producto.
 
+<br>
+
+****
+
 |Sección|Valor|
-|:---|:---|
-| **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permission |
-| **Tipo de datos** | Matriz de cadenas |
-| **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|permission|
+|**Tipo de datos**|Matriz de cadenas|
+|**Posibles valores**|Igual que [el nivel de permisos predeterminado](#default-permission-level)|
+|
 
 Además, puede especificar un conjunto opcional de números de serie para los que se definen permisos más granulares.
 
 El `serialNumbers` diccionario contiene una o más entradas, con cada entrada identificada por el número de serie.
 
+<br>
+
+****
+
 |Sección|Valor|
-|:---|:---|
-| **Dominio** | `com.microsoft.wdav` |
-| **Clave** | serialNumbers |
-| **Tipo de datos** | Diccionario (preferencia anidada) |
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|serialNumbers|
+|**Tipo de datos**|Diccionario (preferencia anidada)|
+|
 
 Para cada número de serie, puede especificar el nivel de permisos deseado.
 
+<br>
+
+****
+
 |Sección|Valor|
-|:---|:---|
-| **Dominio** | `com.microsoft.wdav` |
-| **Clave** | permission |
-| **Tipo de datos** | Matriz de cadenas |
-| **Posibles valores** | Igual que [el nivel de permisos predeterminado](#default-permission-level) |
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|permission|
+|**Tipo de datos**|Matriz de cadenas|
+|**Posibles valores**|Igual que [el nivel de permisos predeterminado](#default-permission-level)|
+|
 
 #### <a name="example-device-control-policy"></a>Ejemplo de directiva de control de dispositivos
 
 En el siguiente ejemplo se muestra cómo se pueden combinar todos los conceptos anteriores en una directiva de control de dispositivos. En el ejemplo siguiente, tenga en cuenta la naturaleza jerárquica de la directiva de medios extraíble.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>navigationTarget</key> 
-        <string>[custom URL for notifications]</string> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>[enforcement level]</string> <!-- audit / block --> 
-            <key>permission</key> 
-            <array> 
-                <string>[permission]</string> <!-- none / read / write / execute --> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>navigationTarget</key>
+        <string>[custom URL for notifications]</string>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>[enforcement level]</string> <!-- audit / block -->
+            <key>permission</key>
+            <array>
+                <string>[permission]</string> <!-- none / read / write / execute -->
                 <!-- other permissions -->
-            </array> 
-            <key>vendors</key> 
-            <dict> 
-                <key>[vendor id]</key> 
+            </array>
+            <key>vendors</key>
+            <dict>
+                <key>[vendor id]</key>
                 <dict>
-                    <key>permission</key> 
-                    <array> 
-                        <string>[permission]</string> <!-- none / read / write / execute --> 
+                    <key>permission</key>
+                    <array>
+                        <string>[permission]</string> <!-- none / read / write / execute -->
                         <!-- other permissions -->
-                    </array> 
-                    <key>products</key> 
-                    <dict> 
-                        <key>[product id]</key> 
-                        <dict> 
-                            <key>permission</key> 
-                            <array> 
-                                <string>[permission]</string> <!-- none / read / write / execute --> 
+                    </array>
+                    <key>products</key>
+                    <dict>
+                        <key>[product id]</key>
+                        <dict>
+                            <key>permission</key>
+                            <array>
+                                <string>[permission]</string> <!-- none / read / write / execute -->
                                 <!-- other permissions -->
-                            </array> 
-                            <key>serialNumbers</key> 
-                            <dict> 
-                                <key>[serial-number]</key> 
-                                <array> 
-                                    <string>[permission]</string> <!-- none / read / write / execute --> 
+                            </array>
+                            <key>serialNumbers</key>
+                            <dict>
+                                <key>[serial-number]</key>
+                                <array>
+                                    <string>[permission]</string> <!-- none / read / write / execute -->
                                     <!-- other permissions -->
-                                </array> 
-                                <!-- other serial numbers --> 
-                            </dict> 
-                        </dict> 
-                        <!-- other products --> 
-                    </dict> 
-                </dict> 
-                <!-- other vendors --> 
-            </dict> 
-        </dict> 
-    </dict> 
-</dict> 
-</plist> 
+                                </array>
+                                <!-- other serial numbers -->
+                            </dict>
+                        </dict>
+                        <!-- other products -->
+                    </dict>
+                </dict>
+                <!-- other vendors -->
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
 ```
 
 Hemos incluido más ejemplos de directivas de control de dispositivos en los siguientes documentos:
@@ -307,8 +362,8 @@ Para buscar el identificador de proveedor, el id. de producto y el número de se
 
 Puedes ver eventos de montaje, desmontaje y cambio de volumen que se originen desde dispositivos USB en Microsoft Defender para la búsqueda avanzada de puntos de conexión. Estos eventos pueden ser útiles para identificar actividades de uso sospechosas o realizar investigaciones internas.
 
-```
-DeviceEvents 
+```bash
+DeviceEvents
     | where ActionType == "UsbDriveMounted" or ActionType == "UsbDriveUnmounted" or ActionType == "UsbDriveDriveLetterChanged"
     | where DeviceId == "<device ID>"
 ```

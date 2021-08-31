@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información adicional del dispositivo sobre los servicios al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
-ms.openlocfilehash: 79234b1398e26af5a2848002ea606d97137e3053
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: b38c279bbbb763c8f0859d6d45cd838c8652ec5e
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573096"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745702"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información adicional del dispositivo para la migración desde Microsoft Cloud Deutschland
 
@@ -35,7 +35,7 @@ Si un Windows 10 está unido a Azure AD, debe desconectarse de Azure AD y debe c
 [![Azure AD Device Re-Join Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
-Si el usuario es un administrador en el dispositivo Windows 10, el usuario puede anular el registro del dispositivo de Azure AD y volver a unirlo en tres pasos.
+Si el usuario es un administrador en el dispositivo Windows 10, el usuario puede anular el registro del dispositivo de Azure AD y volver a unirse a él en tres pasos.
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>Paso 1: Determinar si el dispositivo está unido a Azure ID.
 
@@ -61,11 +61,13 @@ Si el usuario es un administrador en el dispositivo Windows 10, el usuario puede
 6. Reinicie el dispositivo.
 7. Inicie sesión con la dirección de correo electrónico y la contraseña de su cuenta de trabajo.
 
-Si el usuario no es un administrador del dispositivo, un administrador global de Azure AD puede crear la cuenta de administrador local en el dispositivo siguiendo esta ruta de configuración y deshacer la conexión del dispositivo:
+Si el usuario no es un administrador del dispositivo, un administrador de **Azure AD DC,** un administrador de aplicaciones en la nube o un administrador **global** pueden crear la cuenta de administrador local en el dispositivo siguiendo esta ruta de configuración y deshacer la conexión del dispositivo: 
 
 *Configuración > cuentas > otras cuentas > credenciales desconocidas > Agregar usuario sin Microsoft-Account*
 
-Para volver a unirse, las credenciales de cualquier cuenta de trabajo de su organización se pueden usar en este paso.
+Para obtener más información, vea [Sobre los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles?).
+
+Para volver a unirse, las credenciales de cualquier cuenta de trabajo de la organización se pueden usar en este paso.
 
 Ten en cuenta que la cuenta de trabajo usada para unirse al dispositivo se promocionará automáticamente como administrador del dispositivo.
 Cualquier otra cuenta de trabajo de la organización puede iniciar sesión en el dispositivo, pero no tiene privilegios de administrador.
@@ -107,7 +109,7 @@ Para Android, los usuarios tendrán que anular el registro y volver a registrar 
 
 - Desde el Portal de empresa, los usuarios pueden ir a la **pestaña Dispositivos** y quitar el dispositivo. Después, vuelva a inscribir el dispositivo mediante Portal de empresa.
 
-- Los usuarios también pueden anular el registro y volver a registrarse quitando la cuenta de la página de configuración de la cuenta y, a continuación, agregando de nuevo la cuenta de trabajo.
+- Los usuarios también pueden anular el registro y volver a registrarse quitando la cuenta de la página de configuración de la cuenta y, a continuación, leyendo la cuenta de trabajo.
 
 Para anular el registro y volver a registrar el dispositivo en Android mediante la Microsoft Authenticator aplicación:
 
@@ -153,7 +155,7 @@ En dispositivos iOS, un usuario tendrá que quitar manualmente las cuentas almac
 
 Los usuarios pueden ir a aplicaciones individuales como Outlook, Teams y OneDrive y quitar cuentas de esas aplicaciones.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 **¿Cómo puedo saber si mi organización está afectada?**
 
@@ -167,7 +169,7 @@ Es fundamental para el éxito que solo desinscriba y vuelva a registrar los disp
 
 Para comprobar si los dispositivos están registrados en la nube pública, debe exportar y descargar la lista de dispositivos del portal de Azure AD a una Excel de cálculo. A continuación, filtre los dispositivos registrados (mediante la columna _registeredTime)_ después de la fecha en que la organización ha pasado la [fase 9 del proceso de migración](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization).
 
-**¿Todavía necesito agregar el nombre DNS tal como se indica en Crear registros DNS para Microsoft mediante dns Windows [DNS basado en dns?](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-worldwide#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)**
+**¿Todavía necesito agregar el nombre DNS tal como se indica en Crear registros DNS para Microsoft mediante dns Windows [DNS basado en dns?](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)**
 
 Esta entrada DNS ya no es necesaria para volver a registrar el dispositivo. 
 

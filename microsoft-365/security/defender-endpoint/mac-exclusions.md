@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9047c6e5b91ebd2d7e0a4e953ca907b31cb476f8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 96f7693e83bf4c3f4a1f14f39d99de55f7ef1979
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573060"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745030"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurar y validar exclusiones para Microsoft Defender para endpoint en macOS
 
@@ -61,13 +61,13 @@ Proceso|Un proceso específico (especificado por la ruta de acceso completa o el
 
 Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracteres comodín:
 
-Carácter comodín|Description|Ejemplo|Coincidencias|No coincide
+Carácter comodín|Descripción|Ejemplo|Coincidencias|No coincide
 ---|---|---|---|---
 \*|Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|Coincide con cualquier carácter|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
->[!NOTE]
->El producto intenta resolver vínculos de firma al evaluar exclusiones. La resolución de firmlink no funciona cuando la exclusión contiene caracteres comodín o el archivo de destino (en el `Data` volumen) no existe.
+> [!NOTE]
+> El producto intenta resolver vínculos de firma al evaluar exclusiones. La resolución de firmlink no funciona cuando la exclusión contiene caracteres comodín o el archivo de destino (en el `Data` volumen) no existe.
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>Cómo configurar la lista de exclusiones
 
@@ -77,7 +77,7 @@ Para obtener más información sobre cómo configurar exclusiones de JAMF, Intun
 
 ### <a name="from-the-user-interface"></a>Desde la interfaz de usuario
 
-Abra la aplicación Defender para endpoint y vaya a **Administrar** la configuración Agregar o  >  **quitar exclusión...**, como se muestra en la siguiente captura de pantalla:
+Abra la aplicación Defender para endpoint y vaya a **Administrar** la configuración Agregar o \> **quitar exclusión...**, como se muestra en la siguiente captura de pantalla:
 
 ![Administrar capturas de pantalla de exclusiones.](images/mdatp-37-exclusions.png)
 

@@ -20,12 +20,12 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: Use los cmdlets de PowerShell de implementación centralizada para ayudarle a implementar y administrar Office complementos para su Microsoft 365 organización.
-ms.openlocfilehash: 8f84c3222fa8a9eefcdda90fa6daf1c453dd73236fd6be61d2c57b63c7feceea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37a60ffe7d17f09ecbdb70c80c880b2c7bd51645
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830160"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745846"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos
 
@@ -49,7 +49,7 @@ Para poder usar los cmdlets de implementación centralizada, debe iniciar sesió
   Connect-OrganizationAddInService
   ```
 
-3. En la **página Escribir credenciales,** escriba su Microsoft 365 de administración global. Como alternativa, puede escribir sus credenciales directamente en el cmdlet. 
+3. En la **página Escribir credenciales,** escriba su Microsoft 365 **de usuario** o las credenciales **de administrador** global. Como alternativa, puede escribir sus credenciales directamente en el cmdlet. 
     
     Ejecute el siguiente cmdlet que especifica las credenciales de administrador de la empresa como un objeto PSCredential.
     

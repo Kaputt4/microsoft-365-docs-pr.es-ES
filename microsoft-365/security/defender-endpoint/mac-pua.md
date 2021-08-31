@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 11b17f8e1013403796887ed57c6d29ab2cf52ffc7dab5d8a92b4b6d2c34d1ee1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9680e2ae9dda7ece2f042124f23f5639cf469c00
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853888"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744970"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>Detectar y bloquear aplicaciones potencialmente no deseadas con Microsoft Defender para endpoint en macOS
 
@@ -34,7 +34,6 @@ ms.locfileid: "53853888"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
 
 La característica de protección de aplicaciones potencialmente no deseadas (PUA) en Microsoft Defender para endpoint en macOS puede detectar y bloquear archivos PUA en puntos de conexión de la red.
 
@@ -56,8 +55,8 @@ La protección de PUA en Microsoft Defender para endpoint en macOS se puede conf
 - **Auditoría:** los archivos PUA se notifican en los registros del producto, pero no en Microsoft 365 Defender portal. No se presenta ninguna notificación al usuario y el producto no hace ninguna acción.
 - **Bloquear:** los archivos PUA se notifican en los registros del producto y en Microsoft 365 Defender portal. El usuario recibe una notificación y el producto toma una acción.
 
->[!WARNING]
->De forma predeterminada, la protección pua está configurada en **modo auditoría.**
+> [!WARNING]
+> De forma predeterminada, la protección pua está configurada en **modo auditoría.**
 
 Puede configurar cómo se controlan los archivos PUA desde la línea de comandos o desde la consola de administración.
 

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Resumen: configure Azure AD Conectar para la autenticación federada de alta disponibilidad para Microsoft 365 en Microsoft Azure.'
-ms.openlocfilehash: 8d8636c10947562037093991fa3a3cee5a867af3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: c179f45e061c1ff004f1c70e83ba0888c066f733
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561415"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745810"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Fase 5 de autenticación federada de alta disponibilidad: Configurar la autenticación federada para Microsoft 365
 
@@ -85,7 +85,7 @@ La herramienta de Conectar azure AD configura los servidores de AD FS, los servi
     
 7. En la página **Inicio de sesión de usuario**, haga clic en **Federación con AD FS** y, después, haga clic en **Siguiente**.
     
-8. En la **Conectar a Azure AD,** escriba el nombre y la contraseña de una cuenta de administrador global para su suscripción Microsoft 365 y, a continuación, haga clic en **Siguiente**.
+8. En la página Conectar a **Azure AD,** escriba el nombre y la  contraseña de un administrador de **Azure AD DC** o una cuenta de administrador global para su suscripción Microsoft 365 y, a continuación, haga clic en **Siguiente**.
     
 9. En la **Conectar** de directorios, asegúrese de que el bosque local de Servicios de dominio de Active Directory (AD DS) está seleccionado en **Bosque,** escriba el nombre y la contraseña de una cuenta de administrador de dominio, haga clic en Agregar directorio y, a continuación, haga clic en **Siguiente**. 
     
@@ -139,7 +139,7 @@ Esta es la configuración final, con nombres de marcador de posición para los s
   
 Se ha completado la infraestructura de autenticación federada de alta Microsoft 365 en Azure.
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   

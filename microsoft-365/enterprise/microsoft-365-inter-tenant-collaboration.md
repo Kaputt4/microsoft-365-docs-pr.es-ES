@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre Microsoft 365 colaboración entre inquilinos y organizaciones, lo que permite que distintas organizaciones trabajen juntas de forma segura.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c2060ec93fdf80d4afc3f0aa8f693de6bb275454
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 05a1756d4707ba51d1175f0f5f5701f89fd7f5a4
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356641"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747046"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 colaboración entre inquilinos
 
@@ -58,7 +58,7 @@ Microsoft 365 de colaboración entre inquilinos incluyen el uso de una ubicació
 
 | Finalidad del uso compartido | Acción administrativa | Información sobre cómo hacerlo |
 |:-----|:-----|:-----|
-|Colaboración B2B de Azure AD: uso compartido de contenido agregando usuarios externos a un grupo en el directorio de una organización | Un administrador global de un inquilino de Microsoft 365 puede invitar Microsoft 365 los usuarios de otro inquilino de Microsoft 365 a unirse a su directorio, agregar esos usuarios externos a un grupo y conceder acceso al contenido, como sitios SharePoint y bibliotecas para el grupo. |  <ul><li> [¿Qué es azure AD B2B collaboration preview?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) </li><li> [Azure AD B2B: las nuevas actualizaciones hacen que la intercalación entre empresas sea fácil](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) </li><li> [Uso compartido externo y Azure Active Directory colaboración B2B](/azure/active-directory/active-directory-b2b-o365-external-user) </li><li> [Azure Active Directory API y personalización de colaboración B2B](/azure/active-directory/active-directory-b2b-api) </li><li> [Azure AD e Identity Show: Colaboración B2B de Azure AD (empresa a empresa)](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) </li></ul> |
+|Colaboración B2B de Azure AD: uso compartido de contenido agregando usuarios externos a un grupo en el directorio de una organización | Un administrador de **Azure AD DC,** un administrador de seguridad, un administrador de usuario, un administrador de aplicaciones en la nube o un administrador **global** para un inquilino de Microsoft 365 pueden invitar Microsoft 365 los usuarios de otro inquilino Microsoft 365 unirse a su directorio, agregar esos usuarios externos a un grupo y conceder acceso al contenido, como sitios y bibliotecas de SharePoint para el grupo.    |  <ul><li> [¿Qué es azure AD B2B collaboration preview?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) </li><li> [Azure AD B2B: las nuevas actualizaciones hacen que la intercalación entre empresas sea fácil](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) </li><li> [Uso compartido externo y Azure Active Directory colaboración B2B](/azure/active-directory/active-directory-b2b-o365-external-user) </li><li> [Azure Active Directory API y personalización de colaboración B2B](/azure/active-directory/active-directory-b2b-api) </li><li> [Azure AD e Identity Show: Colaboración B2B de Azure AD (empresa a empresa)](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) </li></ul> |
 
 ## <a name="microsoft-365-collaboration-options"></a>Microsoft 365 de colaboración
 
@@ -76,7 +76,7 @@ Microsoft 365 de colaboración entre inquilinos incluyen el uso de una ubicació
 
 |Finalidad del uso compartido|Acción administrativa|Información sobre cómo hacerlo|
 |:-----|:-----|:-----|
-|Colaborar en Teams con usuarios externos a la organización | Un administrador global para la invitación Microsoft 365 inquilino debe habilitar la colaboración externa en Teams. Los administradores globales y los propietarios de equipos ahora podrán invitar a cualquier persona con una dirección de correo electrónico a colaborar en Teams.  <br/> Los administradores también pueden administrar y editar invitados que ya están presentes en su inquilino. |  <ul><li> [Autorizar el acceso de invitado](/microsoftteams/teams-dependencies) </li><li> [Activar o desactivar el acceso de invitado en Teams](/microsoftteams/set-up-guests) </li><li> [Usar PowerShell para controlar el acceso de invitado](/microsoftteams/guest-access-powershell) </li><li> [Lista de comprobación de acceso de invitado](/microsoftteams/guest-access-checklist) </li><li> [Ver usuarios invitados](/microsoftteams/view-guests) </li><li> [Editar información del usuario invitado](/microsoftteams/edit-guests-information) </li></ul> |
+|Colaborar en Teams con usuarios externos a la organización | Un **administrador de usuario** o un administrador **global** para la invitación Microsoft 365 inquilino debe habilitar la colaboración externa en Teams. Los administradores globales y los propietarios de equipos ahora podrán invitar a cualquier persona con una dirección de correo electrónico a colaborar en Teams.  <br/> Los administradores también pueden administrar y editar invitados que ya están presentes en su inquilino. |  <ul><li> [Autorizar el acceso de invitado](/microsoftteams/teams-dependencies) </li><li> [Activar o desactivar el acceso de invitado en Teams](/microsoftteams/set-up-guests) </li><li> [Usar PowerShell para controlar el acceso de invitado](/microsoftteams/guest-access-powershell) </li><li> [Lista de comprobación de acceso de invitado](/microsoftteams/guest-access-checklist) </li><li> [Ver usuarios invitados](/microsoftteams/view-guests) </li><li> [Editar información del usuario invitado](/microsoftteams/edit-guests-information) </li></ul> |
 |Los propietarios de equipos pueden invitar y administrar cómo colaboran los invitados en sus equipos.  |Los propietarios de equipos tienen controles adicionales sobre lo que los invitados pueden hacer dentro de sus equipos. |  <ul><li> [Agregar invitados](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Agregar un invitado a un equipo](/microsoftteams/add-guests) </li><li> [Administrar el acceso de invitado en Teams](/microsoftteams/manage-guests) </li><li> [Ver quién está en un equipo o en un canal](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |Los invitados de otros inquilinos pueden ver contenido en Teams y colaborar con otros miembros | Ninguno. | [La experiencia de acceso de invitado](/microsoftteams/guest-experience)|
 

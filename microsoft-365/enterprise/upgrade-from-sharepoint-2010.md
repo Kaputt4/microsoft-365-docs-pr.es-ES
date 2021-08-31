@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Busque información y recursos para actualizar desde SharePoint 2010 y SharePoint Server 2010. La compatibilidad con ambos finaliza el 13 de abril de 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c57aa4d15ba6fbb95a59f28039db41303a536fd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: da824abb7575a509cb988c474e667d0475e821c1
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575245"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745750"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
@@ -112,7 +112,7 @@ Si actualiza a SharePoint Server 2013 o SharePoint Server 2016 y decide colocar 
 |SharePoint Ventaja en línea|SharePoint Desventaja en línea|
 |---|---|
 |Microsoft proporciona hardware SPO y toda la administración de hardware.|Las características disponibles pueden diferir entre SharePoint server local y SPO.|
-|Es el administrador global de la suscripción y puede asignar administradores a sitios de SPO.|Algunas acciones disponibles para un administrador de granja de servidores en SharePoint Server local no existen (o no son necesarias) en el rol administrador de SharePoint en Microsoft 365. Pero SharePoint administración, administración de colecciones de sitios y propiedad del sitio son locales en su organización.|
+|Es el administrador de Sharepoint o administrador global de la suscripción y puede asignar administradores a sitios de SPO.|Algunas acciones disponibles para un administrador de granja de servidores en SharePoint Server local no existen (o no son necesarias) en el rol administrador de SharePoint en Microsoft 365. Pero SharePoint administración, administración de colecciones de sitios y propiedad del sitio son locales en su organización.|
 |Microsoft aplica revisiones, correcciones y actualizaciones al hardware y software subyacentes, incluidos los servidores SQL en los que se ejecuta SharePoint Online.|Dado que no hay acceso al sistema de archivos subyacente en el servicio, la personalización es limitada.|
 |Microsoft publica contratos [de nivel de](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) servicio y se mueve rápidamente para resolver incidentes de nivel de servicio.|La copia de seguridad y restauración y otras opciones de recuperación son automatizadas por el servicio en SharePoint Online. Las copias de seguridad se sobrescriben si no se usan.|
 |Microsoft realiza continuamente pruebas de seguridad y optimización del rendimiento del servidor en el servicio.|El servicio instala cambios en la interfaz de usuario y otras características de SharePoint se instalan y es posible que deban activarse o desactivarse.|
@@ -181,7 +181,7 @@ Si una granja de servidores SharePoint servidor híbrido es su objetivo de migra
 
 Asegúrese de familiarizarse con los tipos de híbridos existentes y cómo configurar la conexión entre la granja de servidores SharePoint local y la Microsoft 365 suscripción.
 
-|Opción|Description|
+|Opción|Descripción|
 |---|---|
 |[Ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home).|[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) asistencia para la migración es limitada.<br/><br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en SharePoint [Online y OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).|
 |Los ingenieros de soporte técnico de Microsoft y los empleados del centro de datos no tienen acceso de administrador sin restricciones a su suscripción.|Puede haber costos adicionales si es necesario actualizar la infraestructura de hardware para admitir la versión más reciente de SharePoint o si se requiere una granja de servidores secundaria.|

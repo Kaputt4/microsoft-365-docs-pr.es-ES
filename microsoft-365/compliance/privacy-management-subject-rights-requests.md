@@ -15,19 +15,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: La solución de solicitud de derechos de sujeto en administración de privacidad de Microsoft le ayuda a encontrar datos personales y colaborar en la revisión del contenido y la creación de informes.
-ms.openlocfilehash: d8f8a636d5322666b3a60ce7310c8cd66ac89538
-ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
+description: El área de solicitud de derechos de sujeto en administración de privacidad de Microsoft le ayuda a encontrar datos personales y colaborar en la revisión del contenido y la creación de informes.
+ms.openlocfilehash: 28059996d4969b23f856df3bb05584b4055ba3d2
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380241"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745738"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Administrar solicitudes de derechos de sujeto en la administración de privacidad (versión preliminar)
-
-En este artículo: obtenga información sobre cómo usar la solución de solicitud de derechos de sujeto para buscar datos **personales** en su **entorno,** colaborar en revisiones, crear informes y **automatizar** tareas clave.
-
-## <a name="purpose-of-subject-rights-requests"></a>Finalidad de las solicitudes de derechos del sujeto
 
 La administración de privacidad proporciona potentes capacidades de solicitudes de derechos de sujeto para ayudarle a administrar las solicitudes de personas que buscan administrar sus datos personales dentro de su organización. Estas solicitudes a veces también se conocen como solicitudes de interesados (DSR), solicitudes de acceso de interesados (DSARs) o solicitudes de derechos de consumidor. La administración de privacidad permite al personal responsable de cumplir las solicitudes de derechos del sujeto identificar fácilmente a los interesados y encontrar su información personal entre los datos de su organización en Exchange, SharePoint, OneDrive y Teams.
 

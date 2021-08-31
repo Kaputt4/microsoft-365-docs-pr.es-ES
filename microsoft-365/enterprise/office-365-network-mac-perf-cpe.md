@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de red informado
-ms.openlocfilehash: ea5bdf38cc9fd56a08ddc20a83c4557e5bda0cd2
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bccac9dae56bb4a44df7a96144eb84ae7c19a84b
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253844"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745006"
 ---
 # <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365 enrutamiento de red informado (versión preliminar)
 
@@ -65,7 +65,7 @@ Los datos de experiencia de aplicación (reflejados a través de métricas de ca
 
 Habilitar el enrutamiento de red informado requiere varios pasos, algunos de los cuales tendrán que realizarse dentro de la interfaz de configuración de la solución SD-WAN. Consulte a su proveedor de soluciones SD-WAN para obtener instrucciones sobre cómo iniciar el proceso de habilitar el enrutamiento de red informado dentro de la solución SD-WAN antes de continuar con la configuración en el Centro de administración de Microsoft 365.
 
-Una vez que esté listo para habilitar el enrutamiento de red informado en el Centro de administración de Microsoft 365, asegúrese de que tiene los permisos de administrador global necesarios.
+Una vez que esté listo para habilitar el enrutamiento de red informado en el Centro de administración de Microsoft 365, asegúrese de que tiene los permisos de administrador de usuario **o** **administrador global** necesarios.
 
 >[!IMPORTANT]
 >Para proporcionar los permisos de aplicaciones de inquilino necesarios para que la solución SD-WAN seleccionada tenga acceso al canal de uso compartido de datos de enrutamiento de red informado, debe realizar los siguientes pasos como administrador global.
@@ -95,7 +95,7 @@ Seleccione **Siguiente**.
 
 ### <a name="step-4-grant-permissions-to-the-sd-wan-solution"></a>Paso 4: Conceder permisos a la solución SD-WAN
 
-Este paso iniciará una solicitud de concesión de permisos con Azure Active Directory (Azure AD). Se le solicita que conceda permisos de nivel de inquilino que permitan a la solución SD-WAN seleccionada acceder al almacenamiento de datos de enrutamiento de red informado y a la información de estado del servicio asociada con su inquilino. Esta acción requiere permisos de rol de administrador global.
+Este paso iniciará una solicitud de concesión de permisos con Azure Active Directory (Azure AD). Se le solicita que conceda permisos de nivel de inquilino que permitan a la solución SD-WAN seleccionada acceder al almacenamiento de datos de enrutamiento de red informado y a la información de estado del servicio asociada con su inquilino. Esta acción requiere **permisos de administrador de Azure AD DC** o rol de **administrador** global.
 
 Seleccione el **vínculo Conceder permiso a esta aplicación** y siga las solicitudes de Azure AD.
 

@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 246ba885795c4317d4cab0dca82e2cc84456366a44cfe567859919d15c3d9cce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 935826d3a89abeef20e1ebb17f964137fdbfccaf
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857452"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745822"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en Linux
 
@@ -51,6 +51,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     ```bash
     mdatp config real-time-protection --value disabled
     ```
+
     ```Output
     Configuration property updated
     ```
@@ -65,6 +66,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     > Esta característica está disponible en la versión 100.90.70 o posterior.
 
     Esta característica está habilitada de forma predeterminada en los `Dogfood` `InsiderFast` canales y. Si usa un canal de actualización diferente, esta característica se puede habilitar desde la línea de comandos:
+
     ```bash
     mdatp config real-time-protection-statistics --value enabled
     ```
@@ -80,6 +82,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     ```bash
     mdatp config real-time-protection --value enabled
     ```
+
     ```Output
     Configuration property updated
     ```
@@ -100,6 +103,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     ```bash
     wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
+
     El resultado de este comando debe ser similar al siguiente:
 
     ```Output
@@ -142,12 +146,13 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
 
     Para mejorar el rendimiento de Defender para Endpoint en Linux, busque el que tiene el número más alto debajo de la fila y `Total files scanned` agregue una exclusión para él. Para obtener más información, vea [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
 
-    >[!NOTE]
+    > [!NOTE]
     > La aplicación almacena estadísticas en la memoria y solo realiza un seguimiento de la actividad del archivo desde que se inició y se ha habilitado la protección en tiempo real. Los procesos que se iniciaron antes o durante períodos en los que la protección en tiempo real estaba desactivada no se cuentan. Además, solo se cuentan los eventos que desencadenaron exámenes.
 
 5. Configure Microsoft Defender para Endpoint en Linux con exclusiones para los procesos o ubicaciones de disco que contribuyen a los problemas de rendimiento y vuelva a habilitar la protección en tiempo real.
 
     Para más información, consulte [Configurar y validar exclusiones de Microsoft Defender para punto de conexión en Linux](linux-exclusions.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
+
 - [Investigar problemas de estado del agente](health-status.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 02368ff4c8f122b3bca2deac22b3fa994e6bf82d38fce4e44ff40ba12c882730
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e23980133d2fb0c69ca79f6dfdde7656e1961097
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874032"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745642"
 ---
 # <a name="create-and-manage-device-tags"></a>Crear y administrar etiquetas de dispositivos
 
@@ -41,7 +41,7 @@ Puedes agregar etiquetas en dispositivos de las siguientes maneras:
 - Estableciendo un valor de clave de registro
 
 > [!NOTE]
-> Puede haber cierta latencia entre el momento en que se agrega una etiqueta a un dispositivo y su disponibilidad en la lista de dispositivos y la página del dispositivo.  
+> Puede haber cierta latencia entre el momento en que se agrega una etiqueta a un dispositivo y su disponibilidad en la lista de dispositivos y la página del dispositivo.
 
 Para agregar etiquetas de dispositivo con la API, consulte [API para agregar o quitar etiquetas de dispositivo](add-or-remove-machine-tags.md).
 
@@ -66,8 +66,9 @@ Para agregar etiquetas de dispositivo con la API, consulte [API para agregar o q
 
 Las etiquetas se agregan a la vista de dispositivo y también se reflejarán en la **vista de lista Dispositivos.** A continuación, puede usar el **filtro Etiquetas** para ver la lista relevante de dispositivos.
 
->[!NOTE]
-> Es posible que el filtrado no funcione en nombres de etiquetas que contengan paréntesis.<br>
+> [!NOTE]
+> Es posible que el filtrado no funcione en nombres de etiquetas que contengan paréntesis.
+>
 > Al crear una etiqueta nueva, se muestra una lista de etiquetas existentes. La lista solo muestra las etiquetas creadas a través del portal. Las etiquetas existentes creadas a partir de dispositivos cliente no se mostrarán.
 
 También puede eliminar etiquetas de esta vista.
@@ -76,17 +77,18 @@ También puede eliminar etiquetas de esta vista.
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>Agregar etiquetas de dispositivo estableciendo un valor de clave del Registro
 
->[!NOTE]
+> [!NOTE]
 > Solo se aplica a los siguientes dispositivos:
->- Windows 10, versión 1709 o posterior
->- Windows Servidor, versión 1803 o posterior
->- Windows Server 2016
->- Windows Server 2012 R2
->- Windows Server 2008 R2 SP1
->- Windows 8.1
->- Windows 7 SP1
+>
+> - Windows 10, versión 1709 o posterior
+> - Windows Servidor, versión 1803 o posterior
+> - Windows Server 2016
+> - Windows Server 2012 R2
+> - Windows Server 2008 R2 SP1
+> - Windows 8.1
+> - Windows 7 SP1
 
-> [!NOTE] 
+> [!NOTE]
 > El número máximo de caracteres que se pueden establecer en una etiqueta es 200.
 
 Los dispositivos con etiquetas similares pueden ser útiles cuando necesitas aplicar una acción contextual en una lista específica de dispositivos.
@@ -97,7 +99,7 @@ Use la siguiente entrada de clave del Registro para agregar una etiqueta a un di
 - Valor de clave del Registro (REG_SZ): `Group`
 - Datos de clave del Registro: `Name of the tag you want to set`
 
->[!NOTE]
->La etiqueta de dispositivo forma parte del informe de información del dispositivo que se genera una vez al día. Como alternativa, puede optar por reiniciar el punto de conexión que transferiría un nuevo informe de información del dispositivo.
-> 
+> [!NOTE]
+> La etiqueta de dispositivo forma parte del informe de información del dispositivo que se genera una vez al día. Como alternativa, puede optar por reiniciar el punto de conexión que transferiría un nuevo informe de información del dispositivo.
+>
 > Si necesita quitar una etiqueta que se agregó con la clave del Registro anterior, desactive el contenido de los datos de la clave del Registro en lugar de quitar la clave "Grupo".

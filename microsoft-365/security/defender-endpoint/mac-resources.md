@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de6925bcfc70285516bf12c07540b9c74caec9ea8210850cc1a3cc44f6a1ed92
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7d09ce01bc8d9409d4537df8eaabb50915538aa6
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853876"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747404"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para endpoint en macOS
 
@@ -91,37 +91,37 @@ Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Ten
 
 ### <a name="from-the-command-line"></a>Desde la línea de comandos
 
-- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
+- `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
 
 ## <a name="configuring-from-the-command-line"></a>Configuración desde la línea de comandos
 
 Las tareas importantes, como controlar la configuración del producto y desencadenar exámenes a petición, se pueden realizar desde la línea de comandos:
 
-|Group        |Escenario                                   |Comando                                                                           |
-|-------------|-------------------------------------------|----------------------------------------------------------------------------------|
-|Configuración|Activar/desactivar la protección en tiempo real           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
-|Configuración|Activar/desactivar la protección en la nube               |`mdatp config cloud --value [enabled/disabled]`                                   |
-|Configuración|Activar/desactivar diagnósticos de productos            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
-|Configuración|Activar/desactivar el envío automático de muestra    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
-|Configuración|Agregar un nombre de amenaza a la lista permitida      |`mdatp threat allowed add --name [threat-name]`                                   |
-|Configuración|Quitar un nombre de amenaza de la lista permitida |`mdatp threat allowed remove --name [threat-name]`                                |
-|Configuración|Enumerar todos los nombres de amenazas permitidos              |`mdatp threat allowed list`                                                       |
-|Configuración|Activar la protección de LA PUA                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
-|Configuración|Desactivar la protección de LA PUA                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
-|Configuración|Activar el modo de auditoría para la protección de PUA      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
-|Configuración|Activar/desactivar passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
-|Diagnóstico  |Cambiar el nivel de registro                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|Diagnóstico  |Generar registros de diagnóstico                   |`mdatp diagnostic create --path [directory]`                                      |
-|Salud       |Comprobar el estado del producto                 |`mdatp health`                                                                    |
-|Salud       |Buscar un atributo de producto spefic       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
-|Protección   |Examinar una ruta de acceso                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
-|Protección   |Realizar un examen rápido                            |`mdatp scan quick`                                                                |
-|Protección   |Realizar un examen completo                             |`mdatp scan full`                                                                 |
-|Protección   |Cancelar un examen a petición en curso           |`mdatp scan cancel`                                                               |
-|Protección   |Solicitar una actualización de inteligencia de seguridad     |`mdatp definitions update`                                                        |
-|EDR          |Agregar etiqueta de grupo al dispositivo. EDR etiquetas se usan para administrar grupos de dispositivos. Para obtener más información, visite /microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
-|EDR          |Quitar etiqueta de grupo del dispositivo               |`mdatp edr tag remove --tag-name [name]`                                          |
-|EDR          |Agregar id. de grupo                               |`mdatp edr group-ids --group-id [group]`                                          |
+|Grupo|Escenario|Comando|
+|---|---|---|
+|Configuración|Activar/desactivar la protección en tiempo real|`mdatp config real-time-protection --value [enabled/disabled]`|
+|Configuración|Activar/desactivar la protección en la nube|`mdatp config cloud --value [enabled/disabled]`|
+|Configuración|Activar/desactivar diagnósticos de productos|`mdatp config cloud-diagnostic --value [enabled/disabled]`|
+|Configuración|Activar/desactivar el envío automático de muestra|`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`|
+|Configuración|Agregar un nombre de amenaza a la lista permitida|`mdatp threat allowed add --name [threat-name]`|
+|Configuración|Quitar un nombre de amenaza de la lista permitida|`mdatp threat allowed remove --name [threat-name]`|
+|Configuración|Enumerar todos los nombres de amenazas permitidos|`mdatp threat allowed list`|
+|Configuración|Activar la protección de LA PUA|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
+|Configuración|Desactivar la protección de LA PUA|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
+|Configuración|Activar el modo de auditoría para la protección de PUA|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
+|Configuración|Activar/desactivar passiveMode|`mdatp config passive-mode --value enabled [enabled/disabled]`|
+|Diagnóstico|Cambiar el nivel de registro|`mdatp log level set --level [error/warning/info/verbose]`|
+|Diagnóstico|Generar registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
+|Salud|Comprobar el estado del producto|`mdatp health`|
+|Salud|Buscar un atributo de producto spefic|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
+|Protection|Examinar una ruta de acceso|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|Protection|Realizar un examen rápido|`mdatp scan quick`|
+|Protection|Realizar un examen completo|`mdatp scan full`|
+|Protection|Cancelar un examen a petición en curso|`mdatp scan cancel`|
+|Protection|Solicitar una actualización de inteligencia de seguridad|`mdatp definitions update`|
+|EDR|Agregar etiqueta de grupo al dispositivo. EDR etiquetas se usan para administrar grupos de dispositivos. Para obtener más información, visite /microsoft-365/security/defender-endpoint/machine-groups|`mdatp edr tag set --name GROUP --value [name]`|
+|EDR|Quitar etiqueta de grupo del dispositivo|`mdatp edr tag remove --tag-name [name]`|
+|EDR|Agregar id. de grupo|`mdatp edr group-ids --group-id [group]`|
 
 ### <a name="how-to-enable-autocompletion"></a>Cómo habilitar la autocompleción
 
@@ -149,8 +149,7 @@ Para habilitar la autocompleción en zsh:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
-   ```
-   ```zsh
+
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 

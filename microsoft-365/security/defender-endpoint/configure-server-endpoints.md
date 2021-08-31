@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6c3adb8b07de50ca655c27a2d70f7868efd32332
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ee6241e6db062730446505e2bcbc377b15ffee9c
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561043"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745762"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -55,7 +55,7 @@ Puede incorporar Windows Server 2008 R2 SP1, Windows Server 2012 R2 y Windows Se
 Después de completar los pasos de incorporación con cualquiera de las opciones proporcionadas, deberá configurar y actualizar los [System Center Endpoint Protection cliente.](#configure-and-update-system-center-endpoint-protection-clients)
 
 > [!NOTE]
-> La licencia de servidor independiente de Defender for Endpoint es necesaria, por nodo, para incorporar un servidor de Windows a través de Microsoft Monitoring Agent (opción 1) o a través de Microsoft Endpoint Manager (opción 3). Como alternativa, se requiere una licencia de Azure Defender para servidores, por nodo, para incorporar un servidor de Windows a través del Centro de seguridad de Azure (opción 2), consulte Características admitidas disponibles en [Azure Defender](/azure/security-center/security-center-services).
+> La licencia de servidor independiente de Defender for Endpoint es necesaria, por nodo, para incorporar un servidor de Windows a través de Microsoft Monitoring Agent (opción 1) o a través de Microsoft Endpoint Manager (opción 3). Como alternativa, se requiere una licencia de Azure Defender para servidores, por nodo, para incorporar un servidor Windows a través del Centro de seguridad de Azure (opción 2). Para obtener más información, vea [Características admitidas disponibles en Azure Defender](/azure/security-center/security-center-services). A diferencia de las licencias de usuario, estas licencias no deben asignarse a ningún usuario u objeto. Es necesario que estén en el espacio empresarial para el cumplimiento.
 
 ### <a name="option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma"></a>Opción 1: Incorporación mediante la instalación y configuración de Microsoft Monitoring Agent (MMA)
 

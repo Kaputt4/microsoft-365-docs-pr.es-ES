@@ -16,16 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo configurar los permisos de administración de privacidad y asignar usuarios a grupos de roles.
-ms.openlocfilehash: ebdd5610253ecb5bd490eb9b8bb8beb45f8b6458
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 6caf786a99e08c2f5c6abfd4c2dbabc438151d06
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507715"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747014"
 ---
 # <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>Establecer permisos de usuario y asignar roles en la administración de privacidad (versión preliminar)
-
-En este artículo: obtenga información sobre cómo establecer **permisos** y asignar usuarios a **grupos de roles** y **roles**.
 
 Para conceder a los miembros de la organización permisos para usar la administración de privacidad, asígnelos a los grupos de roles adecuados de la Centro de cumplimiento de Microsoft 365. Tenga en cuenta que los roles específicos de la administración de privacidad no aparecerán en Azure Active Directory.
 

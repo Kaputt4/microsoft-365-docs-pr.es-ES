@@ -37,16 +37,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: La compatibilidad con SharePoint Server 2007 finalizó en octubre de 2017. En este artículo, obtenga información sobre las opciones de actualización, migración y soporte técnico.
-ms.openlocfilehash: de7469e40ac377cd49384c5d67cf9ac26273f4ace74ab165c6aa38835afa8444
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b653bcec6992834bba9f469753d8a3d13277b239
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885080"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747002"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de SharePoint Server 2007
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 El **10 de octubre de 2017,** Microsoft Office SharePoint Server 2007 llegó al final de la compatibilidad. Si no ha migrado de SharePoint Server 2007 a Microsoft 365 o una versión más reciente de SharePoint Server local, ahora es el momento de empezar a planear. En este artículo se proporcionan recursos para ayudarle a migrar datos a SharePoint Online o actualizar el servidor SharePoint local.
   
@@ -119,11 +119,11 @@ No puede migrar directamente desde SharePoint 2007 a SharePoint Online. El movim
 |**Profesional en línea**|**Con en línea**|
 |:-----|:-----|
 |Microsoft proporciona hardware SPO y toda la administración de hardware.  <br/> |Las características disponibles pueden diferir entre SharePoint server local y SPO.  <br/> |
-|Es el administrador global de la suscripción y puede asignar administradores a sitios de SPO.  <br/> |Algunas acciones disponibles para un administrador de la granja de servidores en SharePoint Server local no existen o no se incluyen necesariamente en el rol administrador de SharePoint en Microsoft 365.  <br/> |
+|Es el administrador de Sharepoint o administrador global de la suscripción y puede asignar administradores a sitios de SPO.  <br/> |Algunas acciones disponibles para un administrador de la granja de servidores en SharePoint Server local no existen o no se incluyen necesariamente en el rol administrador de SharePoint en Microsoft 365.  <br/> |
 |Microsoft aplica revisiones, correcciones y actualizaciones al hardware y software subyacentes. <br/> |Dado que no hay acceso al sistema de archivos subyacente en el servicio, la personalización es limitada.  <br/> |
 |Microsoft publica contratos [de nivel de](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) servicio y se mueve rápidamente para resolver incidentes de nivel de servicio. <br/> |La copia de seguridad y restauración y otras opciones de recuperación son automatizadas por el servicio en SharePoint Online. Las copias de seguridad se sobrescriben si no se usan. <br/> |
 |Microsoft realiza continuamente pruebas de seguridad y optimización del rendimiento del servidor en el servicio. <br/> |El servicio instala cambios en la interfaz de usuario y otras características de SharePoint se instalan y es posible que deban activarse o desactivarse. <br/> |
-|Microsoft 365 cumple muchos estándares del sector: [ofertas de cumplimiento de Microsoft.](/compliance/regulatory/offering-home)  <br/> |[La asistencia de FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) para la migración es limitada.  <br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en SharePoint [Online y OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).  <br/> |
+|Microsoft 365 cumple muchos estándares del sector: [ofertas de cumplimiento de Microsoft.](/compliance/regulatory/offering-home)  <br/> |[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) asistencia para la migración es limitada.  <br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en SharePoint [Online y OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).  <br/> |
 |Los ingenieros de soporte técnico de Microsoft y los empleados del centro de datos no tendrán acceso de administrador sin restricciones a su suscripción. <br/> |Puede haber costos adicionales si es necesario actualizar el hardware para admitir la versión más reciente de SharePoint o si se requiere una granja de servidores secundaria para la actualización.  <br/> |
 |Los partners pueden ayudar con el trabajo único de migrar los datos a SharePoint Online.  <br/> ||
 |Los productos en línea se actualizan automáticamente. Aunque las características pueden desuso, no hay ningún fin real de compatibilidad. <br/> ||
@@ -191,9 +191,9 @@ Si la respuesta a sus necesidades de migración está en algún lugar entre el a
   
 Si decide que una granja de servidores de SharePoint híbrida beneficiará a su empresa, familiarícese con los tipos de híbridos existentes y cómo configurar la conexión entre la granja de servidores SharePoint local y su suscripción Microsoft 365.
   
-| Opción | Description |
+| Opción | Descripción |
 |:-----|:-----|
-[Ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home)  <br/> |[La asistencia de FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) para la migración es limitada.  <br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en SharePoint [Online y OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).  <br/> |
+[Ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home)  <br/> |[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) asistencia para la migración es limitada.  <br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en SharePoint [Online y OneDrive Migration Content Roadmap](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).  <br/> |
 |Los ingenieros de soporte técnico de Microsoft y los empleados del centro de datos no tienen acceso de administrador sin restricciones a la suscripción.<br/> |Puede haber costos adicionales si es necesario actualizar la infraestructura de hardware para admitir la versión más reciente de SharePoint o si se requiere una granja de servidores secundaria para la actualización.  <br/> |
 |Los partners pueden ayudar con el trabajo único de migrar los datos a SharePoint Online.  <br/> ||
 |Los productos en línea se actualizan automáticamente en todo el servicio. Aunque las características pueden desuso, no hay ningún fin real de compatibilidad.<br/> ||

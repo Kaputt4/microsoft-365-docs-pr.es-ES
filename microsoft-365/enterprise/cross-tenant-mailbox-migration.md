@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 6b2ef03984e6ed7c9b93476869e998bb06b78a30
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: cff003b3a6eb8a996b12c4be8b6a48b256ba80d8
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566837"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747512"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -47,7 +47,7 @@ Esta sección no incluye los pasos específicos necesarios para preparar los obj
 
 La característica de movimiento de buzones entre inquilinos requiere que [Azure Key Vault](/azure/key-vault/basic-concepts) establezca una aplicación de Azure específica del par de inquilinos para almacenar y obtener acceso de forma segura al certificado o secreto usado para autenticar y autorizar la migración de buzones de correo de un inquilino a otro, eliminando los requisitos para compartir certificados o secretos entre inquilinos.
 
-Antes de empezar, asegúrese de que tiene los permisos necesarios para ejecutar los scripts de implementación con el fin de configurar Azure Key Vault, la aplicación Move Mailbox, exo Migration Endpoint y la relación de organización de EXO. Normalmente, el administrador global tiene permiso para realizar todos los pasos de configuración.
+Antes de empezar, asegúrese de que tiene los permisos necesarios para ejecutar los scripts de implementación con el fin de configurar Azure Key Vault, la aplicación Move Mailbox, exo Migration Endpoint y la relación de organización de EXO. Normalmente, **el administrador de Azure AD DC** o el administrador **global**  tienen permiso para realizar todos los pasos de configuración.
 
 Además, los grupos de seguridad habilitados para correo en el espacio empresarial de origen son necesarios antes de ejecutar la instalación. Estos grupos se usan para establecer el ámbito de la lista de buzones que pueden moverse del espacio empresarial de origen (o a veces denominado recurso) al espacio empresarial de destino. Esto permite al administrador de inquilinos de origen restringir o establecer el ámbito del conjunto específico de buzones que se deben mover, lo que impide que los usuarios no intencionados se migren. No se admiten grupos anidados.
 
@@ -99,18 +99,18 @@ Preparar el espacio empresarial de origen:
 
    |Parámetro|Valor|Obligatorio u opcional
    |---|---|---|
-   |-TargetTenantDomain|Dominio de inquilino de destino, como fabrikam \. onmicrosoft.com.|Obligatorio|
-   |-ResourceTenantDomain|Dominio de inquilino de origen, como contoso \. onmicrosoft.com.|Obligatorio|
-   |-ResourceTenantAdminEmail|Dirección de correo electrónico del administrador del espacio empresarial de origen. Este es el administrador de inquilinos de origen que dará su consentimiento al uso de la aplicación de migración de buzones enviada desde el administrador de destino. Este es el administrador que recibirá la invitación de correo electrónico para la aplicación.|Obligatorio|
-   |-ResourceTenantId|Identificador de organización de inquilino de origen (GUID).|Obligatorio|
-   |-SubscriptionId|La suscripción de Azure que se usará para crear recursos.|Obligatorio|
-   |-ResourceGroup|Nombre del grupo de recursos de Azure que contiene o contendrá el Almacén de claves.|Obligatorio|
-   |-KeyVaultName|Instancia de Azure Key Vault que almacenará el certificado o secreto de la aplicación de migración de buzones.|Obligatorio|
-   |-CertificateName|Nombre del certificado al generar o buscar certificado en el almacén de claves.|Obligatorio|
-   |-CertificateSubject|Nombre de sujeto del certificado de Azure Key Vault, como CN=contoso_fabrikam.|Obligatorio|
-   |-AzureResourceLocation|Ubicación del grupo de recursos de Azure y del almacén de claves.|Obligatorio|
+   |-TargetTenantDomain|Dominio de inquilino de destino, como fabrikam \. onmicrosoft.com.|Necesario|
+   |-ResourceTenantDomain|Dominio de inquilino de origen, como contoso \. onmicrosoft.com.|Necesario|
+   |-ResourceTenantAdminEmail|Dirección de correo electrónico del administrador del espacio empresarial de origen. Este es el administrador de inquilinos de origen que dará su consentimiento al uso de la aplicación de migración de buzones enviada desde el administrador de destino. Este es el administrador que recibirá la invitación de correo electrónico para la aplicación.|Necesario|
+   |-ResourceTenantId|Identificador de organización de inquilino de origen (GUID).|Necesario|
+   |-SubscriptionId|La suscripción de Azure que se usará para crear recursos.|Necesario|
+   |-ResourceGroup|Nombre del grupo de recursos de Azure que contiene o contendrá el Almacén de claves.|Necesario|
+   |-KeyVaultName|Instancia de Azure Key Vault que almacenará el certificado o secreto de la aplicación de migración de buzones.|Necesario|
+   |-CertificateName|Nombre del certificado al generar o buscar certificado en el almacén de claves.|Necesario|
+   |-CertificateSubject|Nombre de sujeto del certificado de Azure Key Vault, como CN=contoso_fabrikam.|Necesario|
+   |-AzureResourceLocation|Ubicación del grupo de recursos de Azure y del almacén de claves.|Necesario|
    |-ExistingApplicationId|Aplicación de migración de correo que se usará si ya se creó una.|Opcional|
-   |-AzureAppPermissions|Los permisos necesarios para concederse a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al inquilino de recursos).|Obligatorio|
+   |-AzureAppPermissions|Los permisos necesarios para concederse a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al inquilino de recursos).|Necesario|
    |-UseAppAndCertGeneratedForSendingInvitation|Parámetro para usar la aplicación creada para la migración que se usará para enviar una invitación de vínculo de consentimiento al administrador del espacio empresarial de origen. Si no está presente, se pedirán las credenciales del administrador de destino para conectarse al Administrador de invitaciones de Azure y enviar la invitación como administrador de destino.|Opcional|
    |-KeyVaultAuditStorageAccountName|Cuenta de almacenamiento donde se almacenarían los registros de auditoría de Key Vault.|Opcional|
    |-KeyVaultAuditStorageResourceGroup|El grupo de recursos que contiene la cuenta de almacenamiento para almacenar registros de auditoría de Key Vault.|Opcional|
@@ -146,7 +146,7 @@ Preparar el espacio empresarial de origen:
 
 7. Se mostrará una dirección URL en la sesión remota de PowerShell. Copie el vínculo proporcionado para el consentimiento del inquilino y péguelo en un explorador web.
 
-8. Inicie sesión con sus credenciales de administrador global. Cuando se presente la siguiente pantalla, seleccione **Aceptar**.
+8. Inicie sesión con el administrador de **Azure AD DC** o las credenciales de **administrador** global. Cuando se presente la siguiente pantalla, seleccione **Aceptar**.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Cuadro de diálogo Aceptar permisos.":::
 
@@ -180,7 +180,7 @@ La configuración de administración de destino ya está completa.
 
 4. Descargue el script SetupCrossTenantRelationshipForResourceTenant.ps1 para la configuración del espacio empresarial de origen desde el repositorio GitHub aquí: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) .
 
-5. Cree una conexión remota de PowerShell al espacio empresarial de origen con los Exchange de administrador. Los permisos de administración global no son necesarios para configurar el inquilino de origen, solo el inquilino de destino debido al proceso de creación de aplicaciones de Azure.
+5. Cree una conexión remota de PowerShell al espacio empresarial de origen con los Exchange de administrador. **Los permisos de administrador** de Azure AD DC o administrador **global** no son necesarios para configurar el inquilino de origen, solo el inquilino de destino debido al proceso de creación de aplicaciones de Azure.
 
 6. Cambie el directorio a la ubicación del script o compruebe que el script está guardado actualmente en la ubicación actualmente en la sesión remota de PowerShell.
 
@@ -432,7 +432,7 @@ El envío por lotes de migración también se admite desde el nuevo Centro Excha
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo locales, tanto de origen como de destino, se actualicen con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del movimiento?**
 

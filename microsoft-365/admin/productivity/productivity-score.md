@@ -71,7 +71,7 @@ La puntuación de productividad solo está disponible en el Centro de administra
 
 El modelo de control de acceso basado en roles para la Puntuación de productividad ayuda a las organizaciones a impulsar esfuerzos de transformación digital con Microsoft 365, ya que les ofrece flexibilidad para asignar roles a profesionales de TI dentro de una organización.
 
-Microsoft se compromete a proteger la privacidad individual. Este [documento de privacidad](privacy.md)  explica los controles que le proporcionamos, como administrador de TI de su organización, con el fin de asegurar que la información se pueda accionar sin comprometer la confianza que ha depositado en Microsoft.
+Microsoft se compromete a proteger la privacidad individual. Este [documento de privacidad](privacy.md)  explica los controles que le proporcionamos, como administrador de TI de su organización, con el fin de asegurar que la información se pueda procesar sin comprometer la confianza que ha depositado en Microsoft.
 
 Puede acceder a la experiencia desde la página principal de Administración de Microsoft 365, en **Informes** > **Puntuación de productividad**.
   

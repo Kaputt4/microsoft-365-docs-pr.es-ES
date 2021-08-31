@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo configurar la administración de privacidad para su organización, establecer roles y permisos y configurar opciones importantes.
-ms.openlocfilehash: 8f45e779cc6ce8deaf20a5f49b597f4ad6139a08
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 229d4bec78424858cd7034c8953313f8593e90e3
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507703"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745970"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Introducción a la administración de privacidad (versión preliminar)
 
-En este artículo: obtenga  información sobre cómo configurar el  acceso a la administración de privacidad de su organización, cómo empezar a evaluar los datos y cómo controlar la configuración **importante.**
+La administración de privacidad está disponible actualmente en versión preliminar pública. Obtenga información sobre cómo configurar el acceso para su organización y empezar a evaluar los datos.
 
 ## <a name="who-can-access-privacy-management"></a>Quién acceso a la administración de privacidad
 

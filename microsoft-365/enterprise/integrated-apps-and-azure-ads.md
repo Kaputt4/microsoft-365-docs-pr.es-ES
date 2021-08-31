@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: Obtenga información sobre cómo registrar y administrar Office 365 aplicaciones integradas en Azure AD, lo que permite las autorizaciones de aplicaciones en el nivel de administrador global.
-ms.openlocfilehash: f604260646aa4e6793540003346c9e83d7a6b269
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: Obtenga información sobre cómo registrar y administrar Office 365 aplicaciones integradas en Azure AD, lo que permite las autorizaciones de aplicaciones en el nivel de administrador de **Azure AD DC** o **administrador** global.
+ms.openlocfilehash: ccf1e16e7e0307499e515eb3691c865d49801412
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354229"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747316"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>Aplicaciones integradas y Azure AD para Microsoft 365 administradores
 
 Hay más que administrar aplicaciones integradas que administrar el consentimiento [de los usuarios para las aplicaciones.](../admin/misc/user-consent.md) Con la llegada de las API de REST de Microsoft 365, los usuarios pueden conceder a las aplicaciones acceso a sus datos de Microsoft 365, como correo, calendarios, contactos, usuarios, grupos, archivos y carpetas. De forma predeterminada, los usuarios necesitan conceder permisos individualmente a cada aplicación. 
 
-Pero esto no se escala bien si quieres autorizar una aplicación una vez en el nivel de administrador global y realizarla en toda la organización a través del iniciador de aplicaciones. Para ello, debes registrar la aplicación en Azure Active Directory (Azure AD). Hay algunos pasos que debe seguir antes de poder registrar una aplicación en Azure AD y alguna información en segundo plano que debe saber que puede ayudarle a administrar aplicaciones en su Microsoft 365 organización.
+Pero esto no se escala bien si quieres autorizar una aplicación una  vez en el nivel de administrador de **Azure AD DC** o en el nivel de administrador global y la revierte a toda la organización a través del iniciador de aplicaciones. Para ello, debes registrar la aplicación en Azure Active Directory (Azure AD). Hay algunos pasos que debe seguir antes de poder registrar una aplicación en Azure AD y alguna información en segundo plano que debe saber que puede ayudarle a administrar aplicaciones en su Microsoft 365 organización.
   
 ## <a name="azure-ad-resources-for-microsoft-365-admins"></a>Recursos de Azure AD para Microsoft 365 administradores
 

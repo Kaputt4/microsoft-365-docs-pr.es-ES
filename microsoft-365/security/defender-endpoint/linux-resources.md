@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ec48f75765dfafac81fa82f578b956180378fab1aa380c4f9750ec997105e2d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8596cf95c7aa4479d1900ba99c98bc10025ee738
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811193"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747668"
 ---
 # <a name="resources"></a>Recursos
 
@@ -104,44 +104,49 @@ De forma predeterminada, la herramienta de línea de comandos genera el resultad
 
 En la tabla siguiente se enumeran los comandos de algunos de los escenarios más comunes. Ejecute `mdatp help` desde terminal para ver la lista completa de comandos admitidos.
 
-|Grupo                 |Escenario                                                |Comando                                                                |
-|----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
-|Configuración         |Activar/desactivar la protección en tiempo real                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|Configuración         |Activar/desactivar la supervisión del comportamiento                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
-|Configuración         |Activar/desactivar la protección en la nube                            |`mdatp config cloud --value [enabled\|disabled]`                       |
-|Configuración         |Activar/desactivar diagnósticos de productos                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
-|Configuración         |Activar/desactivar el envío automático de muestra                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
-|Configuración         |Activar/desactivar el modo pasivo de AV                             |`mdatp config passive-mode --value [enabled\|disabled]`                |
-|Configuración         |Agregar o quitar una exclusión antivirus para una extensión de archivo  |`mdatp exclusion extension [add\|remove] --name [extension]`           |
-|Configuración         |Agregar o quitar una exclusión antivirus para un archivo            |`mdatp exclusion file [add\|remove] --path [path-to-file]`             |
-|Configuración         |Agregar o quitar una exclusión antivirus para un directorio       |`mdatp exclusion folder [add\|remove] --path [path-to-directory]`      |
-|Configuración         |Agregar o quitar una exclusión antivirus para un proceso         |`mdatp exclusion process [add\|remove] --path [path-to-process]`<br/>`mdatp exclusion process [add\|remove] --name [process-name]` |
-|Configuración         |Enumerar todas las exclusiones de antivirus                           |`mdatp exclusion list`                                                 |
-|Configuración         |Agregar un nombre de amenaza a la lista permitida                   |`mdatp threat allowed add --name [threat-name]`                        |
-|Configuración         |Quitar un nombre de amenaza de la lista permitida              |`mdatp threat allowed remove --name [threat-name]`                     |
-|Configuración         |Enumerar todos los nombres de amenazas permitidos                           |`mdatp threat allowed list`                                            |
-|Configuración         |Activar la protección de LA PUA                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
-|Configuración         |Desactivar la protección de LA PUA                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
-|Configuración         |Activar el modo de auditoría para la protección de PUA                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
-|Diagnóstico           |Cambiar el nivel de registro                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
-|Diagnóstico           |Generar registros de diagnóstico                                |`mdatp diagnostic create --path [directory]`                           |
-|Salud                |Comprobar el estado del producto                              |`mdatp health`                                                         |
-|Protección            |Examinar una ruta de acceso                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
-|Protección            |Realizar un examen rápido                                         |`mdatp scan quick`                                                     |
-|Protección            |Realizar un examen completo                                          |`mdatp scan full`                                                      |
-|Protección            |Cancelar un examen a petición en curso                        |`mdatp scan cancel`                                                    |
-|Protección            |Solicitar una actualización de inteligencia de seguridad                  |`mdatp definitions update`                                             |
-|Historial de protección    |Imprimir el historial de protección completo                       |`mdatp threat list`                                                    |
-|Historial de protección    |Obtener detalles de amenazas                                      |`mdatp threat get --id [threat-id]`                                    |
-|Administración de cuarentena |Enumerar todos los archivos en cuarentena                              |`mdatp threat quarantine list`                                         |
-|Administración de cuarentena |Quitar todos los archivos de la cuarentena                    |`mdatp threat quarantine remove-all`                                   |
-|Administración de cuarentena |Agregar un archivo detectado como una amenaza a la cuarentena       |`mdatp threat quarantine add --id [threat-id]`                         |
-|Administración de cuarentena |Quitar un archivo detectado como una amenaza de la cuarentena  |`mdatp threat quarantine remove --id [threat-id]`                      |
-|Administración de cuarentena |Restaurar un archivo desde la cuarentena                      |`mdatp threat quarantine restore --id [threat-id]`                     |
-|Detección y respuesta de extremos |Establecer la vista previa anticipada (sin usar)                    |`mdatp edr early-preview [enable|disable]`                             |
-|Detección y respuesta de extremos |Establecer group-id                                  |`mdatp edr group-ids --group-id [group-id]`                            |
-|Detección y respuesta de extremos |Establecer o quitar etiqueta, solo `GROUP` compatible        |`mdatp edr tag set --name GROUP --value [tag]`                         |
-|Detección y respuesta de extremos |exclusiones de lista (raíz)                        |`mdatp edr exclusion list [processes|paths|extensions|all]`            |
+<br>
+
+****
+
+|Grupo|Escenario|Comando|
+|---|---|---|
+|Configuración|Activar/desactivar la protección en tiempo real|`mdatp config real-time-protection --value [enabled\|disabled]`|
+|Configuración|Activar/desactivar la supervisión del comportamiento|`mdatp config behavior-monitoring --value [enabled\|disabled]`
+|Configuración|Activar/desactivar la protección en la nube|`mdatp config cloud --value [enabled\|disabled]`|
+|Configuración|Activar/desactivar diagnósticos de productos|`mdatp config cloud-diagnostic --value [enabled\|disabled]`|
+|Configuración|Activar/desactivar el envío automático de muestra|`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`|
+|Configuración|Activar/desactivar el modo pasivo de AV|`mdatp config passive-mode --value [enabled\|disabled]`|
+|Configuración|Agregar o quitar una exclusión antivirus para una extensión de archivo|`mdatp exclusion extension [add\|remove] --name [extension]`|
+|Configuración|Agregar o quitar una exclusión antivirus para un archivo|`mdatp exclusion file [add\|remove] --path [path-to-file]`|
+|Configuración|Agregar o quitar una exclusión antivirus para un directorio|`mdatp exclusion folder [add\|remove] --path [path-to-directory]`|
+|Configuración|Agregar o quitar una exclusión antivirus para un proceso|`mdatp exclusion process [add\|remove] --path [path-to-process]` <p> `mdatp exclusion process [add\|remove] --name [process-name]`|
+|Configuración|Enumerar todas las exclusiones de antivirus|`mdatp exclusion list`|
+|Configuración|Agregar un nombre de amenaza a la lista permitida|`mdatp threat allowed add --name [threat-name]`|
+|Configuración|Quitar un nombre de amenaza de la lista permitida|`mdatp threat allowed remove --name [threat-name]`|
+|Configuración|Enumerar todos los nombres de amenazas permitidos|`mdatp threat allowed list`|
+|Configuración|Activar la protección de LA PUA|`mdatp threat policy set --type potentially_unwanted_application --action block`|
+|Configuración|Desactivar la protección de LA PUA|`mdatp threat policy set --type potentially_unwanted_application --action off`|
+|Configuración|Activar el modo de auditoría para la protección de PUA|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
+|Diagnóstico|Cambiar el nivel de registro|`mdatp log level set --level verbose [error|warning|info|verbose]`|
+|Diagnóstico|Generar registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
+|Salud|Comprobar el estado del producto|`mdatp health`|
+|Protection|Examinar una ruta de acceso|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|Protection|Realizar un examen rápido|`mdatp scan quick`|
+|Protection|Realizar un examen completo|`mdatp scan full`|
+|Protection|Cancelar un examen a petición en curso|`mdatp scan cancel`|
+|Protection|Solicitar una actualización de inteligencia de seguridad|`mdatp definitions update`|
+|Historial de protección|Imprimir el historial de protección completo|`mdatp threat list`|
+|Historial de protección|Obtener detalles de amenazas|`mdatp threat get --id [threat-id]`|
+|Administración de cuarentena|Enumerar todos los archivos en cuarentena|`mdatp threat quarantine list`|
+|Administración de cuarentena|Quitar todos los archivos de la cuarentena|`mdatp threat quarantine remove-all`|
+|Administración de cuarentena|Agregar un archivo detectado como una amenaza a la cuarentena|`mdatp threat quarantine add --id [threat-id]`|
+|Administración de cuarentena|Quitar un archivo detectado como una amenaza de la cuarentena|`mdatp threat quarantine remove --id [threat-id]`|
+|Administración de cuarentena|Restaurar un archivo desde la cuarentena|`mdatp threat quarantine restore --id [threat-id]`|
+|Detección y respuesta de extremos|Establecer la vista previa anticipada (sin usar)|`mdatp edr early-preview [enable|disable]`|
+|Detección y respuesta de extremos|Establecer group-id|`mdatp edr group-ids --group-id [group-id]`|
+|Detección y respuesta de extremos|Establecer o quitar etiqueta, solo `GROUP` compatible|`mdatp edr tag set --name GROUP --value [tag]`|
+|Detección y respuesta de extremos|exclusiones de lista (raíz)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Información del portal de Microsoft Defender para puntos de conexión
 

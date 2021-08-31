@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso usa las características de seguridad de Microsoft 365 para empresas.
-ms.openlocfilehash: b88e1dfafe6669782096e851eef1935079aa4676
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 581314b34ab8f60533f1e2de99d4d1097086d1a0
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356413"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745678"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Resumen de Microsoft 365 seguridad empresarial para Contoso Corporation
 
@@ -58,7 +58,7 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
   En lugar de asignar el rol de administrador global a cuentas de usuario cotidianas, Contoso creó tres cuentas de administrador global dedicadas con contraseñas seguras. Las cuentas están protegidas por Azure AD Multi-Factor Authentication (MFA) y Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM solo está disponible con Microsoft 365 E5.*
 
-  Iniciar sesión con una cuenta de administrador global solo se realiza para tareas administrativas específicas. Las contraseñas solo se conocen para el personal designado y solo se pueden usar en un período de tiempo configurado en PIM de Azure AD.
+  Iniciar sesión con un administrador de **Azure AD DC** o una cuenta de administrador **global** solo se realiza para tareas administrativas específicas. Las contraseñas solo se conocen para el personal designado y solo se pueden usar en un período de tiempo configurado en PIM de Azure AD.
 
   Los administradores de seguridad de Contoso asignaron roles de administrador menores a cuentas que son adecuadas para la función de trabajo del trabajador de TI.
 
@@ -68,7 +68,7 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
   MFA agrega una capa adicional de protección al proceso de inicio de sesión. Requiere que los usuarios confirmen una llamada telefónica, un mensaje de texto o una notificación de aplicación en su teléfono inteligente después de escribir correctamente su contraseña. Con MFA, las cuentas de usuario de Azure AD están protegidas contra el inicio de sesión no autorizado, incluso si se pone en peligro una contraseña de cuenta.
 
-   - Para protegerse contra el riesgo de la suscripción Microsoft 365, Contoso requiere MFA en todas las cuentas de administrador global.
+   - Para protegerse contra el riesgo de la suscripción Microsoft 365, Contoso requiere MFA en todas las cuentas de administrador de **Azure AD DC** o **administrador** global.
    - Para protegerse contra los ataques de suplantación de identidad (phishing), en los que un atacante pone en peligro las credenciales de una persona de confianza de la organización y envía mensajes de correo electrónico malintencionados, Contoso habilitó MFA en todas las cuentas de usuario, incluidos los administradores y ejecutivos.
 
 - Acceso de dispositivos y aplicaciones más seguro con las directivas de Acceso Condicional

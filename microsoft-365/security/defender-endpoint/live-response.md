@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0fb08635f50eedbf5fd96b8abc64ef9dfae60cbf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 71fd1428df73686f59199c70d988599f511faaf3
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569698"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747448"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -142,15 +142,19 @@ Según el rol que se le haya concedido, puede ejecutar comandos de respuesta en 
 
 Los siguientes comandos están disponibles para los roles de usuario a los que se les concede la capacidad de ejecutar **comandos** básicos de respuesta en directo. Para obtener más información sobre las asignaciones de roles, vea [Create and manage roles](user-roles.md).
 
+<br>
+
+****
+
 |Comando|Descripción|
-|---|---|---|
+|---|---|
 |`cd`|Cambia el directorio actual.|
 |`cls`|Borra la pantalla de la consola.|
 |`connect`|Inicia una sesión de respuesta en directo al dispositivo.|
 |`connections`|Muestra todas las conexiones activas.|
 |`dir`|Muestra una lista de archivos y subdirectorios en un directorio.|
 |`drivers`|Muestra todos los controladores instalados en el dispositivo.|
-|`fg <command ID>`|Coloque el trabajo especificado en primer plano en primer plano, lo que lo hace el trabajo actual. <br> NOTA: fg toma un "identificador de comando" disponible desde trabajos, no un PID|
+|`fg <command ID>`|Coloque el trabajo especificado en primer plano en primer plano, lo que lo hace el trabajo actual. <p> **NOTA:** fg toma un "identificador de comando" disponible desde trabajos, no un PID|
 |`fileinfo`|Obtener información acerca de un archivo.|
 |`findfile`|Localiza los archivos por un nombre determinado en el dispositivo.|
 |`getfile <file_path>`|Descarga un archivo.|
@@ -162,10 +166,15 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 |`scheduledtasks`|Muestra todas las tareas programadas en el dispositivo.|
 |`services`|Muestra todos los servicios del dispositivo.|
 |`trace`|Establece el modo de registro del terminal en depuración.|
+|
 
 ### <a name="advanced-commands"></a>Comandos avanzados
 
 Los siguientes comandos están disponibles para los roles de usuario a los que se les concede la capacidad de ejecutar **comandos avanzados** de respuesta en directo. Para obtener más información sobre las asignaciones de roles, vea [Create and manage roles](user-roles.md).
+
+<br>
+
+****
 
 |Comando|Descripción|
 |---|---|
@@ -173,8 +182,9 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 |`run`|Ejecuta un script de PowerShell desde la biblioteca en el dispositivo.|
 |`library`|Enumera los archivos que se cargaron en la biblioteca de respuestas en directo.|
 |`putfile`|Coloca un archivo de la biblioteca en el dispositivo. Los archivos se guardan en una carpeta de trabajo y se eliminan cuando el dispositivo se reinicia de forma predeterminada.|
-|`remediate`|Corrige una entidad en el dispositivo. La acción de corrección variará según el tipo de entidad:<br>- Archivo: eliminar<br>- Proceso: detener, eliminar archivo de imagen<br>- Servicio: detener, eliminar archivo de imagen<br>- Entrada del Registro: eliminar<br>- Tarea programada: quitar<br>- Elemento de carpeta de inicio: eliminar archivo <br> NOTA: Este comando tiene un comando de requisito previo. Puede usar el `-auto` comando junto con para ejecutar automáticamente el comando de `remediate` requisitos previos.
+|`remediate`|Corrige una entidad en el dispositivo. La acción de corrección variará según el tipo de entidad: <ul><li>Archivo: eliminar</li><li>Proceso: detener, eliminar archivo de imagen</li><li>Servicio: detener, eliminar archivo de imagen</li><li>Entrada del Registro: eliminar</li><li>Tarea programada: quitar</li><li>Elemento de carpeta de inicio: eliminar archivo</li></ul> <p> **NOTA**: Este comando tiene un comando de requisito previo. Puede usar el `-auto` comando junto con para ejecutar automáticamente el comando de `remediate` requisitos previos.
 |`undo`|Restaura una entidad que se ha corregido.|
+|
 
 ## <a name="use-live-response-commands"></a>Usar comandos de respuesta en directo
 
@@ -203,10 +213,15 @@ Para permitir que el equipo de operaciones de seguridad continúe investigando u
 
 Estos son algunos ejemplos:
 
+<br>
+
+****
+
 |Comando|Qué hace|
 |---|---|
 |`getfile "C:\windows\some_file.exe" &`|Inicia la descarga de un archivo *denominadosome_file.exe* en segundo plano.|
 |`fg 1234`|Devuelve una descarga con el identificador de comando *1234* en primer plano.|
+|
 
 ### <a name="put-a-file-in-the-library"></a>Colocar un archivo en la biblioteca
 
@@ -306,7 +321,7 @@ processes > output.txt
 
 Selecciona la **pestaña Registro de** comandos para ver los comandos usados en el dispositivo durante una sesión. Cada comando se realiza un seguimiento con detalles completos como:
 
-- ID
+- Id.
 - Línea de comandos
 - Duración
 - Estado y barra lateral de entrada o salida

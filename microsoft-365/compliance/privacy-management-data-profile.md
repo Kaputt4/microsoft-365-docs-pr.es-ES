@@ -15,21 +15,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre la información general y el perfil de datos en la administración de privacidad y cómo obtener información sobre los datos personales en el entorno de Microsoft 365 de su organización.
-ms.openlocfilehash: 1be4d65d117d3fa8b05bb9db88745147aea6b5293c3c1f96d57eb5b7ba04c0d1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Obtenga información sobre la información general y el perfil de datos en la administración de privacidad y cómo obtener información sobre los datos personales en el entorno Microsoft 365 organización.
+ms.openlocfilehash: 4007fa1c55857211c3cf188a089f8e6d246153ae
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865208"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744958"
 ---
 # <a name="find-and-visualize-personal-data-in-privacy-management-preview"></a>Buscar y visualizar datos personales en la administración de privacidad (versión preliminar)
 
-En este artículo: obtenga información  sobre las características de las páginas de información general y de perfil de **datos** y cómo pueden proporcionar información sobre los datos.
-
-## <a name="purpose-of-the-overview-and-data-profile"></a>Finalidad de la información general y el perfil de datos
-
-La administración de privacidad de Microsoft 365 le proporciona capacidades para buscar y visualizar los datos personales en su entorno. La solución automatiza la detección de activos de datos personales en Exchange, SharePoint, OneDrive y Teams, y proporciona paneles que proporcionan información clave sobre los datos. Los administradores de privacidad pueden actuar según estos conocimientos para reforzar el enfoque de la organización en la privacidad y reducir los riesgos.
+Microsoft 365 privacidad le proporciona capacidades para buscar y visualizar los datos personales en su entorno. La solución automatiza la detección de activos de datos personales en Exchange, SharePoint, OneDrive y Teams, y proporciona paneles que proporcionan información clave sobre los datos. Los administradores de privacidad pueden actuar según estos conocimientos para reforzar el enfoque de la organización en la privacidad y reducir los riesgos.
 
 ### <a name="overview-page"></a>Página Información general
 
@@ -37,7 +33,7 @@ La página Información general sirve como un panel general para la solución de
 
 ### <a name="data-profile-page"></a>Página perfil de datos
 
-La página de perfil de datos de la administración de privacidad proporciona una vista instantánea de los datos personales que la organización almacena en Microsoft 365. Esto le ayuda a visualizar dónde se encuentran los datos personales, qué tipos son los más frecuentes en su organización y cuántos tipos diferentes existen en los servicios de Microsoft 365. También podrá explorar datos personales desde esta ubicación. Para obtener más información, vea [Explorar la página de perfil de datos](#explore-the-data-profile-page).
+La página de perfil de datos de la administración de privacidad proporciona una vista instantánea de los datos personales que la organización almacena en Microsoft 365. Esto le ayuda a visualizar dónde se encuentran los datos personales, qué tipos son los más frecuentes en su organización y cuántos tipos diferentes existen en todos los Microsoft 365 servicios. También podrá explorar datos personales desde esta ubicación. Para obtener más información, vea [Explorar la página de perfil de datos](#explore-the-data-profile-page).
 
 ## <a name="explore-the-overview-page"></a>Explorar la página de información general
 
@@ -51,7 +47,7 @@ Cuando las directivas se establecen en la administración de privacidad, los dat
 
 #### <a name="items-with-personal-data"></a>Elementos con datos personales
 
-Para ver las funciones de detección automatizada de la solución de administración de privacidad en el trabajo, revise el icono Elementos con datos personales. Esto mostrará cuántos elementos nuevos que contienen datos personales se han detectado en el entorno de Microsoft 365 de su organización en los últimos siete días. Al hacer clic en este icono, se cargará una vista de los 100 elementos más nuevos detectados.
+Para ver las funciones de detección automatizada de la solución de administración de privacidad en el trabajo, revise el icono Elementos con datos personales. Esto mostrará cuántos elementos nuevos que contienen datos personales se han detectado en el entorno de Microsoft 365 de la organización en los últimos siete días. Al hacer clic en este icono, se cargará una vista de los 100 elementos más nuevos detectados.
 
 #### <a name="subject-rights-requests"></a>Solicitudes de derechos de sujeto
 
@@ -61,7 +57,7 @@ Los iconos superiores de la página de información general incluyen dos iconos 
 
 #### <a name="content-items-with-the-most-personal-data"></a>Elementos de contenido con los datos más personales
 
-El contenido del entorno de Microsoft 365 de su organización que contiene una gran cantidad de datos personales puede presentar un mayor riesgo de exposición. Es posible que desee revisar estos elementos para asegurarse de que están cubiertos por una directiva de administración de privacidad. Para ayudar a llamar la atención sobre estos elementos, la página de información general proporciona una vista de los elementos de contenido que contienen los datos más personales. Aquí puede ver el número de tipos de datos personales únicos detectados, cuántos propietarios de contenido únicos se han identificado y cuántos interesados se han identificado de acuerdo con la configuración de coincidencia de datos para solicitudes de derechos del sujeto.
+El contenido del entorno de Microsoft 365 de la organización que contiene una gran cantidad de datos personales puede presentar un mayor riesgo de exposición. Es posible que desee revisar estos elementos para asegurarse de que están cubiertos por una directiva de administración de privacidad. Para ayudar a llamar la atención sobre estos elementos, la página de información general proporciona una vista de los elementos de contenido que contienen los datos más personales. Aquí puede ver el número de tipos de datos personales únicos detectados, cuántos propietarios de contenido únicos se han identificado y cuántos interesados se han identificado de acuerdo con la configuración de coincidencia de datos para solicitudes de derechos del sujeto.
 
 Seleccione Ver resumen para obtener una vista resumida de los elementos encontrados. También puede elegir explorar estos resultados para obtener una vista previa de los archivos individuales. Esta vista muestra un máximo de 100 elementos. Los usuarios del grupo de roles Administración de privacidad pueden seleccionar archivos para revisar detalles y determinar la relevancia, y exportar la lista en .csv formato de referencia.
 
@@ -77,7 +73,7 @@ Esta información también aborda las coincidencias de las directivas en modo "P
 
 #### <a name="items-with-the-most-data-subject-content"></a>Elementos con más contenido del interesado
 
-Esta información tiene en cuenta la información de la característica de coincidencia de datos en solicitudes de derechos de sujeto y presenta elementos detectados en Microsoft 365 que contienen la mayoría de los interesados dentro de su contenido. Para obtener más información acerca de esta configuración, vea [Administrar solicitudes de derechos de sujeto](privacy-management-subject-rights-requests.md).
+Esta información tiene en cuenta la información de la característica de coincidencia de datos en solicitudes de derechos de sujeto y presenta elementos detectados dentro de Microsoft 365 que contienen la mayoría de los interesados dentro de su contenido. Para obtener más información acerca de esta configuración, vea [Administrar solicitudes de derechos de sujeto](privacy-management-subject-rights-requests.md).
 
 Estos elementos pueden ayudar a confirmar la configuración de coincidencia de datos y ayudarle a mitigar los riesgos de privacidad relacionados con estos elementos. Seleccione Ver resumen para una vista de resumen. Seleccione Explorar para obtener una vista detallada de hasta 100 de estos elementos. Aquí puede obtener una vista previa de estos elementos y determinar la relevancia y exportar la lista en .csv formato.
 
@@ -93,7 +89,7 @@ Esta área muestra una instantánea de alertas activas desencadenadas por coinci
 
 #### <a name="personal-data-found-in-organization"></a>Datos personales encontrados en la organización
 
-Este gráfico muestra tendencias en la cantidad de datos personales que se han detectado con el tiempo en el entorno de Microsoft 365 y dónde se encuentran. Empezará a rellenarse después de que la administración de privacidad se haya estado ejecutando durante suficiente tiempo y después de que se haya encontrado contenido con datos personales en SharePoint, OneDrive, Teams o Exchange.
+Este gráfico muestra tendencias en la cantidad de datos personales que se han detectado con el tiempo en el entorno Microsoft 365 y dónde se encuentran. Empezará a rellenarse después de que la administración de privacidad se haya estado ejecutando durante suficiente tiempo y después de que se haya encontrado contenido con datos personales en SharePoint, OneDrive, Teams y/o Exchange.
 
 #### <a name="data-transfers-detected-in-organization"></a>Transferencias de datos detectadas en la organización
 

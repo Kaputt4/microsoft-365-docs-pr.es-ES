@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2f730f590b9ba604596dc9230fc22c451e99630e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 9ca412a54fb94fd9835b30d6b9b6092dc4e79015
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565213"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744982"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de extensión de kernel en Microsoft Defender para endpoint en macOS
 
@@ -69,7 +69,7 @@ Vea las instrucciones correspondientes a la herramienta de administración que u
 
 ## <a name="manual-deployment"></a>Implementación manual
 
-Si han transcurrido menos de 30 minutos desde que se instaló el producto, vaya a Seguridad de preferencias del sistema & Privacidad, donde debe permitir el software del sistema de desarrolladores  >  "Microsoft Corporation". 
+Si han transcurrido menos de 30 minutos desde  que se instaló el producto, vaya a Seguridad de preferencias del sistema & Privacidad, donde debe permitir el software del sistema de desarrolladores \> "Microsoft Corporation". 
 
 Si no ves este mensaje, significa que han transcurrido 30 o más minutos y la extensión del kernel aún no se ha aprobado para ejecutarse en el dispositivo:
 
@@ -82,14 +82,14 @@ En este caso, debe realizar los siguientes pasos para desencadenar de nuevo el f
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
-    
+
     ```Output
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. Abra **Preferencias**  >  **del sistema Seguridad & privacidad** desde el menú. (Cierre primero, si está abierto).
+2. Abra **Preferencias** \> **del sistema Seguridad & privacidad** desde el menú. (Cierre primero, si está abierto).
 
 3. **Permitir** software del sistema de desarrolladores "Microsoft Corporation"
 

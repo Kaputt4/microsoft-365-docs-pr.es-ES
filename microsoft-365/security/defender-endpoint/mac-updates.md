@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dd299db1f8894851cb6d26d82756014b942c8240
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ae8909f2533394e347a1885f2fb1354f6ce4cfae
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573532"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747328"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en macOS
 
@@ -73,19 +73,23 @@ El `Current` canal contiene la versión más estable del producto.
 > - `Preview` se `External` denominaba (Insider Slow)
 > - `Current` se nombraba `Production`
 
->[!TIP]
->Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa en `Beta` o `Preview` .
+> [!TIP]
+> Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa en `Beta` o `Preview` .
+
+<br>
+
+****
 
 |Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|ChannelName|
 |**Tipo de datos**|Cadena|
-|**Posibles valores**|Beta <p> Vista previa <p> Current|
+|**Posibles valores**|Beta <p> Preview <p> Current|
 |||
 
->[!WARNING]
->Esta configuración cambia el canal de todas las aplicaciones que se actualizan a través de Microsoft AutoUpdate. Para cambiar el canal solo para Microsoft Defender para Endpoint en macOS, ejecute el siguiente comando después de reemplazar `[channel-name]` por el canal deseado:
+> [!WARNING]
+> Esta configuración cambia el canal de todas las aplicaciones que se actualizan a través de Microsoft AutoUpdate. Para cambiar el canal solo para Microsoft Defender para Endpoint en macOS, ejecute el siguiente comando después de reemplazar `[channel-name]` por el canal deseado:
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
@@ -95,6 +99,10 @@ El `Current` canal contiene la versión más estable del producto.
 
 Cambiar la frecuencia con la que MAU busca actualizaciones.
 
+<br>
+
+****
+
 |Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
@@ -102,10 +110,15 @@ Cambiar la frecuencia con la que MAU busca actualizaciones.
 |**Tipo de datos**|Entero|
 |**Valor predeterminado**|720 (minutos)|
 |**Comment**|Este valor se establece en minutos.|
+|||
 
 ### <a name="change-how-mau-interacts-with-updates"></a>Cambiar la forma en que MAU interactúa con las actualizaciones
 
 Cambiar la forma en que MAU busca actualizaciones.
+
+<br>
+
+****
 
 |Sección|Valor|
 |---|---|
@@ -114,10 +127,15 @@ Cambiar la forma en que MAU busca actualizaciones.
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|Manual <p> AutomaticCheck <p> AutomaticDownload|
 |**Comment**|Ten en cuenta que AutomaticDownload realizará una descarga e instalará silenciosamente si es posible.|
+|||
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Cambiar si el botón "Buscar actualizaciones" está habilitado
 
 Cambie si los usuarios locales podrán hacer clic en la opción "Buscar actualizaciones" en la interfaz de usuario de Microsoft AutoUpdate.
+
+<br>
+
+****
 
 |Sección|Valor|
 |---|---|
@@ -125,10 +143,15 @@ Cambie si los usuarios locales podrán hacer clic en la opción "Buscar actualiz
 |**Clave**|EnableCheckForUpdatesButton|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|True (predeterminado) <p> Falso|
+|||
 
 ### <a name="disable-insider-checkbox"></a>Casilla Deshabilitar Insider
 
 Se establece en true para que el "Join the Office Insider Program..." casilla no disponible / grised hacia fuera para los usuarios.
+
+<br>
+
+****
 
 |Sección|Valor|
 |---|---|
@@ -136,10 +159,15 @@ Se establece en true para que el "Join the Office Insider Program..." casilla no
 |**Clave**|DisableInsiderCheckbox|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|False (predeterminado) <p> Verdadero|
+|||
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>Limitar la telemetría que se envía desde MAU
 
 Se establece en false para enviar datos de latido mínimos, sin uso de aplicaciones y sin detalles del entorno.
+
+<br>
+
+****
 
 |Sección|Valor|
 |---|---|
@@ -147,6 +175,7 @@ Se establece en false para enviar datos de latido mínimos, sin uso de aplicacio
 |**Clave**|SendAllTelemetryEnabled|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|True (predeterminado) <p> Falso|
+|||
 
 ## <a name="example-configuration-profile"></a>Perfil de configuración de ejemplo
 

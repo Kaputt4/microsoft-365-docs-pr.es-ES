@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f56544ee8447c1bd0db5e493193357a50a1b1904
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 8a7e1b9641a1c4688da86bb072ab8c33f23be11d
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372549"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745630"
 ---
 # <a name="machine-resource-type"></a>Tipo de recurso Máquina
 
@@ -41,45 +41,53 @@ ms.locfileid: "58372549"
 
 ## <a name="methods"></a>Métodos
 
-Método|Tipo de valor devuelto |Descripción
-:---|:---|:---
-[Enumerar máquinas](get-machines.md) | [colección machine](machine.md) | Enumerar el conjunto [de entidades](machine.md) de máquina de la organización.
-[Obtener máquina](get-machine-by-id.md) | [máquina](machine.md) | Obtener una [máquina por](machine.md) su identidad.
-[Iniciar sesión en los usuarios](get-machine-log-on-users.md) | Colección [user](user.md) | Obtener el conjunto de [usuario](user.md) que inició sesión en el [equipo](machine.md).
-[Obtener alertas relacionadas](get-machine-related-alerts.md) | Colección [alert](alerts.md) | Obtener el conjunto de [entidades](alerts.md) de alerta que se generaron en la [máquina](machine.md).
-[Obtener software instalado](get-installed-software.md) | [colección de software](software.md) | Recupera una colección de software instalado relacionado con un identificador de máquina determinado.
-[Obtener las vulnerabilidades detectadas](get-discovered-vulnerabilities.md) | [colección vulnerability](vulnerability.md) | Recupera una colección de vulnerabilidades detectadas relacionadas con un identificador de máquina determinado.
-[Obtener recomendaciones de seguridad](get-security-recommendations.md) | [colección de](recommendation.md) recomendaciones | Recupera una colección de recomendaciones de seguridad relacionadas con un identificador de equipo determinado.
-[Agregar o quitar etiquetas de máquina](add-or-remove-machine-tags.md) | [máquina](machine.md) | Agregar o quitar etiqueta a un equipo específico.
-[Buscar máquinas por IP](find-machines-by-ip.md) | [colección machine](machine.md) | Buscar máquinas vistas con IP.
-[Buscar equipos por etiqueta](find-machines-by-tag.md) | [colección machine](machine.md) | Buscar máquinas por [Etiqueta](machine-tags.md).
-[Obtener los kB que faltan](get-missing-kbs-machine.md) | Colección KB | Obtener una lista de KBs que faltan asociados con el id. de máquina
-[Establecer valor de dispositivo](set-device-value.md)| [colección machine](machine.md) | Establece el [valor de un dispositivo](tvm-assign-device-value.md).
-[Actualizar máquina](update-machine-method.md) |[colección machine](machine.md) | Obtener el estado de actualización de una máquina.
+<br>
+
+****
+
+|Método|Tipo de valor devuelto|Descripción|
+|---|---|---|
+|[Enumerar máquinas](get-machines.md)|[colección machine](machine.md)|Enumerar el conjunto [de entidades](machine.md) de máquina de la organización.|
+|[Obtener máquina](get-machine-by-id.md)|[máquina](machine.md)|Obtener una [máquina por](machine.md) su identidad.|
+|[Iniciar sesión en los usuarios](get-machine-log-on-users.md)|Colección [user](user.md)|Obtener el conjunto de [usuario](user.md) que inició sesión en el [equipo](machine.md).|
+|[Obtener alertas relacionadas](get-machine-related-alerts.md)|Colección [alert](alerts.md)|Obtener el conjunto de [entidades](alerts.md) de alerta que se generaron en la [máquina](machine.md).|
+|[Obtener software instalado](get-installed-software.md)|[colección de software](software.md)|Recupera una colección de software instalado relacionado con un identificador de máquina determinado.|
+|[Obtener las vulnerabilidades detectadas](get-discovered-vulnerabilities.md)|[colección vulnerability](vulnerability.md)|Recupera una colección de vulnerabilidades detectadas relacionadas con un identificador de máquina determinado.|
+|[Obtener recomendaciones de seguridad](get-security-recommendations.md)|[colección de](recommendation.md) recomendaciones|Recupera una colección de recomendaciones de seguridad relacionadas con un identificador de equipo determinado.|
+|[Agregar o quitar etiquetas de máquina](add-or-remove-machine-tags.md)|[máquina](machine.md)|Agregar o quitar etiqueta a un equipo específico.|
+|[Buscar máquinas por IP](find-machines-by-ip.md)|[colección machine](machine.md)|Buscar máquinas vistas con IP.|
+|[Buscar equipos por etiqueta](find-machines-by-tag.md)|[colección machine](machine.md)|Buscar máquinas por [Etiqueta](machine-tags.md).|
+|[Obtener los kB que faltan](get-missing-kbs-machine.md)|Colección KB|Obtener una lista de KBs que faltan asociados con el id. de máquina|
+|[Establecer valor de dispositivo](set-device-value.md)|[colección machine](machine.md)|Establece el [valor de un dispositivo](tvm-assign-device-value.md).|
+|[Actualizar máquina](update-machine-method.md)|[colección machine](machine.md)|Obtener el estado de actualización de una máquina.|
+|
 
 ## <a name="properties"></a>Propiedades
 
-Propiedad |   Tipo   |   Descripción
-:---|:---|:---
-id | Cadena | [identidad](machine.md) de máquina.
-computerDnsName | Cadena | [nombre](machine.md) completo de la máquina.
-firstSeen | DateTimeOffset | Primera fecha y hora en la [que](machine.md) Microsoft Defender for Endpoint observó la máquina.
-lastSeen | DateTimeOffset |Hora y fecha del último informe completo del dispositivo recibido. Normalmente, un dispositivo envía un informe completo cada 24 horas.
-osPlatform | Cadena | Plataforma del sistema operativo.
-osProcessor | Cadena | Procesador del sistema operativo. Use la propiedad osArchitecture en su lugar.
-version | Cadena | Versión del sistema operativo.
-osBuild | Long que admite valores NULL | Número de compilación del sistema operativo.
-lastIpAddress | Cadena | Last IP on local NIC on the [machine](machine.md).
-lastExternalIpAddress | Cadena | Última IP a través de la [cual el equipo](machine.md) ha accedido a Internet.
-healthStatus | Enum | [estado](machine.md) de estado de la máquina. Los valores posibles son: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" y "Unknown". 
-rbacGroupName | Cadena | Nombre del grupo de máquinas.
-rbacGroupId | Cadena | Id. de grupo de máquinas.
-riskScore | Enumeración que admite valores null | Puntuación de riesgo evaluada por Microsoft Defender para Endpoint. Los valores posibles son: 'None', 'Informational', 'Low', 'Medium' y 'High'.
-aadDeviceId | Guid de representación que admite valores NULL | Id. de dispositivo de AAD (cuando [la máquina](machine.md) está unida a AAD).
-machineTags | Colección string | Conjunto de [etiquetas de](machine.md) máquina.
-exposureLevel | Enumeración que admite valores null | Nivel de exposición evaluado por Microsoft Defender para Endpoint. Los valores posibles son: 'None', 'Low', 'Medium' y 'High'.
-deviceValue | Enumeración que admite valores null | El [valor del dispositivo](tvm-assign-device-value.md). Los valores posibles son: 'Normal', 'Low' y 'High'.
-ipAddresses | Colección IpAddress | Conjunto de ***objetos IpAddress.*** Consulta [Obtener api de máquinas](get-machines.md).
-osArchitecture | Cadena | Arquitectura del sistema operativo. Los valores posibles son: "32 bits", "64 bits". Use esta propiedad en lugar de osProcessor.
+<br>
 
+****
 
+|Propiedad|Tipo|Descripción|
+|---|---|---|
+|id|String|[identidad](machine.md) de máquina.|
+|computerDnsName|String|[nombre](machine.md) completo de la máquina.|
+|firstSeen|DateTimeOffset|Primera fecha y hora en la [que](machine.md) Microsoft Defender for Endpoint observó la máquina.|
+|lastSeen|DateTimeOffset|Hora y fecha del último informe completo del dispositivo recibido. Normalmente, un dispositivo envía un informe completo cada 24 horas.|
+|osPlatform|String|Plataforma del sistema operativo.|
+|osProcessor|String|Procesador del sistema operativo. Use la propiedad osArchitecture en su lugar.|
+|version|Cadena|Versión del sistema operativo.|
+|osBuild|Long que admite valores NULL|Número de compilación del sistema operativo.|
+|lastIpAddress|String|Last IP on local NIC on the [machine](machine.md).|
+|lastExternalIpAddress|String|Última IP a través de la [cual el equipo](machine.md) ha accedido a Internet.|
+|healthStatus|Enum|[estado](machine.md) de estado de la máquina. Los valores posibles son: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" y "Unknown".|
+|rbacGroupName|String|Nombre del grupo de máquinas.|
+|rbacGroupId|String|Id. de grupo de máquinas.|
+|riskScore|Enumeración que admite valores null|Puntuación de riesgo evaluada por Microsoft Defender para Endpoint. Los valores posibles son: 'None', 'Informational', 'Low', 'Medium' y 'High'.|
+|aadDeviceId|Guid de representación que admite valores NULL|Id. de dispositivo de AAD (cuando [la máquina](machine.md) está unida a AAD).|
+|machineTags|Colección string|Conjunto de [etiquetas de](machine.md) máquina.|
+|exposureLevel|Enumeración que admite valores null|Nivel de exposición evaluado por Microsoft Defender para Endpoint. Los valores posibles son: 'None', 'Low', 'Medium' y 'High'.|
+|deviceValue|Enumeración que admite valores null|El [valor del dispositivo](tvm-assign-device-value.md). Los valores posibles son: 'Normal', 'Low' y 'High'.|
+|ipAddresses|Colección IpAddress|Conjunto de ***objetos IpAddress.*** Consulta [Obtener api de máquinas](get-machines.md).|
+|osArchitecture|String|Arquitectura del sistema operativo. Los valores posibles son: "32 bits", "64 bits". Use esta propiedad en lugar de osProcessor.|
+|

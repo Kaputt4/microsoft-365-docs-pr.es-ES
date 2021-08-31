@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1ecf74b1fe53c20d72f472796c6a7eaf5ded9741
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 145f757b0172179689509f173476b44e3db69d6e
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360124"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745834"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Preguntas más frecuentes sobre detección de dispositivos
 
@@ -43,7 +43,7 @@ Encuentre respuestas a las preguntas más frecuentes (preguntas frecuentes) sobr
 Este modo permite que todos los dispositivos integrados de Microsoft Defender para Endpoint recopile datos de red y detecte dispositivos vecinos. Los puntos de conexión incorporados recopilan eventos de la red de forma pasiva y extraen información del dispositivo de ellos. No se iniciará tráfico de red. Los puntos de conexión incorporados simplemente extraerán datos de cada tráfico de red que ve un dispositivo incorporado. Estos datos se usan para enumerar dispositivos no administrados en la red.
 
 ## <a name="can-i-disable-basic-discovery"></a>¿Puedo deshabilitar la detección básica?
-Tienes la opción de desactivar la detección de dispositivos a través de la [página Características avanzadas.](advanced-features.md) Sin embargo, perderás visibilidad en dispositivos no administrados en la red. 
+Tienes la opción de desactivar la detección de dispositivos a través de la [página Características avanzadas.](advanced-features.md) Sin embargo, perderás visibilidad en dispositivos no administrados en la red. Ten en cuenta que SenseNDR.exe se seguirá ejecutando en los dispositivos incorporados independientemente de que la detección esté desactivada. 
 
 ## <a name="what-is-standard-discovery-mode"></a>¿Qué es el modo de detección estándar?
  En este modo, los puntos de conexión incorporados a Microsoft Defender para Endpoint pueden sondear activamente los dispositivos observados en la red para enriquecer los datos recopilados (con una cantidad insignificante de tráfico de red). Este modo es muy recomendable para crear un inventario de dispositivos confiable y coherente. Si decide deshabilitar este modo y seleccionar el modo de detección básico, es probable que solo obtenga una visibilidad limitada de los puntos de conexión no administrados en la red.
@@ -56,13 +56,13 @@ Sí, puedes aplicar filtros que excluyan los dispositivos no administrados de la
 
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>¿Qué dispositivos incorporados pueden realizar la detección?
- Los dispositivos incorporados que se Windows 10 versión 1809 o posterior pueden realizar la detección.
+ Los dispositivos incorporados que se Windows 10 versión 1809 o posterior pueden realizar la detección. Los servidores no pueden realizar la detección en este momento.
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>¿Qué sucede si mis dispositivos incorporados están conectados a mi red doméstica o al punto de acceso público?
- El motor de detección distingue entre los eventos de red que se reciben en la red corporativa frente a fuera de la red corporativa. Al correlacionar los identificadores de red entre todos los clientes del inquilino, los eventos se diferencian entre los que se recibieron de redes privadas y redes corporativas. Por ejemplo, si la mayoría de los dispositivos del informe de red informan de que están conectados al mismo nombre de red, con la misma puerta de enlace predeterminada y la misma dirección del servidor DHCP, se puede suponer que esta red es probablemente una red corporativa. Los dispositivos de red privada no aparecerán en el inventario y no se sondearán activamente.
+ El motor de detección distingue entre los eventos de red que se reciben en la red corporativa frente a fuera de la red corporativa. Al correlacionar los identificadores de red entre todos los clientes del inquilino, los eventos se diferencian entre los que se recibieron de redes privadas y redes corporativas. Por ejemplo, si la mayoría de los dispositivos de la organización informan de que están conectados al mismo nombre de red, con la misma puerta de enlace predeterminada y la misma dirección del servidor DHCP, se puede suponer que esta red es probablemente una red corporativa. Los dispositivos de red privada no aparecerán en el inventario y no se sondearán activamente.
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>¿Qué protocolos está capturando y analizando?
- De forma predeterminada, todos los dispositivos incorporados que se ejecutan en Windows 10 versión 1809 o posterior capturan y analizan los siguientes protocolos: ARP, CDP, DHCP, DHCPv6, IP (encabezados), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (encabezados), UDP (encabezados), WSD
+ De forma predeterminada, todos los dispositivos incorporados que se ejecutan en Windows 10 versión 1809 o posterior capturan y analizan los siguientes protocolos: ARP, CDP, DHCP, DHCPv6, IP (encabezados), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (encabezados SYN), UDP (encabezados), WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>¿Qué protocolos usa para el sondeo activo en la detección estándar?
  Cuando un dispositivo está configurado para ejecutar la detección estándar, los servicios expuestos se sondean mediante los siguientes protocolos: ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP
@@ -77,7 +77,7 @@ Sí, puedes aplicar filtros que excluyan los dispositivos no administrados de la
  Los dispositivos se sondearán activamente cuando se observan cambios en las características del dispositivo para asegurarse de que la información existente esté actualizada (normalmente, los dispositivos sondeados no más de una vez en un período de tres semanas)
 
 ## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Mi herramienta de seguridad ha creado una alerta UnicastScanner.ps1 actividad de detección de puertos iniciada por ella, ¿qué debo hacer?
- Microsoft firma los scripts de sondeo activos y son seguros. Puede agregar la siguiente ruta de acceso a la lista de exclusión: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`
+ Microsoft firma los scripts de sondeo activos y son seguros. Puede agregar la siguiente ruta de acceso a la lista de exclusión: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
 
 
 ## <a name="what-is-the-amount-of-traffic-being-generated-by-the-standard-discovery-active-probe"></a>¿Cuál es la cantidad de tráfico que genera el sondeo activo de detección estándar?
@@ -102,7 +102,7 @@ Al considerar la detección estándar, es posible que se pregunte acerca de las 
 A diferencia de la actividad malintencionada, que normalmente examinaría toda la red desde un pequeño número de dispositivos en peligro, el sondeo de detección estándar de Microsoft Defender para endpoint se inicia desde todos los dispositivos Windows integrados, lo que hace que la actividad sea benigna y no anómala. El sondeo se administra de forma centralizada desde la nube para equilibrar el intento de sondeo entre todos los dispositivos integrados admitidos en la red.  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>El sondeo activo genera una cantidad insignificante de tráfico adicional
-Normalmente, los dispositivos no administrados no se sondearía más de una vez en un período de tres semanas y generarían menos de 50 KB de tráfico. La actividad malintencionada generalmente incluye intentos de sondeo repetitivos elevados y, en algunos casos, exfiltración de datos que genera una cantidad significativa de tráfico de red que las herramientas de supervisión de red pueden identificar una anomalía. 
+Normalmente, los dispositivos no administrados no se sondearía más de una vez en un período de tres semanas y generarían menos de 50 KB de tráfico. Normalmente, la actividad malintencionada incluye intentos de sondeo repetitivos elevados y, en algunos casos, exfiltración de datos que genera una cantidad significativa de tráfico de red que las herramientas de supervisión de red pueden identificar como una anomalía. 
 
 ### <a name="your-windows-device-already-runs-active-discovery"></a>El dispositivo Windows ya ejecuta la detección activa
 Las capacidades de detección activa siempre se han incrustado en el sistema operativo Windows, para buscar dispositivos, puntos de conexión e impresoras cercanos, para facilitar las experiencias de "plug and play" y el uso compartido de archivos entre puntos de conexión de la red. Se implementa una funcionalidad similar en dispositivos móviles, equipos de red y aplicaciones de inventario por nombrar algunas.  

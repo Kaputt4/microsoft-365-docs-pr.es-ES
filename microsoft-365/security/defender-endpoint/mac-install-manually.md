@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32da15254d011e67959c7ebeff42ab7024eb0895
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6cf8777a5dd3614cb5649eb4c95f6d69d14540fd
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571836"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747058"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para endpoint en macOS
 
@@ -112,7 +112,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
     ![Preferencias de seguridad de extensión del sistema2.](images/big-sur-install-4.png)
 
-7. Abra **System Preferences** Security & Privacidad y vaya a la pestaña Privacidad. Conceda permiso de acceso en disco completo a Atp de Microsoft Defender y Extensión de seguridad de punto de conexión de ATP de Microsoft  >   **Defender.**   
+7. Abra **System Preferences** Security & Privacidad y vaya a la pestaña Privacidad. Conceda permiso de acceso en disco completo a Atp de Microsoft Defender y Extensión de seguridad de punto de conexión de ATP de Microsoft \>  **Defender.**   
 
     ![Acceso en disco completo.](images/big-sur-install-5.png)
 
@@ -148,7 +148,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 > [!CAUTION]
 > macOS 10.15 (Catalina) contiene nuevas mejoras de seguridad y privacidad. A partir de esta versión, de forma predeterminada, las aplicaciones no pueden acceder a determinadas ubicaciones del disco (como Documentos, Descargas, Escritorio, etc.) sin consentimiento explícito. En ausencia de este consentimiento, Microsoft Defender para Endpoint no puede proteger completamente el dispositivo.
 
-1. Para conceder el consentimiento, abra **Preferencias** del  >  **sistema Seguridad & Privacidad**  >  **Acceso** completo al  >  **disco**. Haga clic en el icono de bloqueo para realizar cambios (parte inferior del cuadro de diálogo). Seleccione Microsoft Defender para Endpoint.
+1. Para conceder el consentimiento, abra **Preferencias** del \> **sistema Seguridad & Privacidad** \> **Acceso** completo al \> **disco**. Haga clic en el icono de bloqueo para realizar cambios (parte inferior del cuadro de diálogo). Seleccione Microsoft Defender para Endpoint.
 
 2. Ejecute una prueba de detección de ANTIVIRUS para comprobar que el dispositivo está correctamente incorporado e informando al servicio. Realice los pasos siguientes en el dispositivo recién incorporado:
 

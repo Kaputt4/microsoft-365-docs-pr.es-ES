@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05a2c4e29b56d973f0a0a924390fa5b4209f346a6cdf390fa480e88764860f2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8787a6bd5818eda5f5302fe149fd7b56db296abd
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793375"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745858"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de instalación de Microsoft Defender para Endpoint en Linux
 
@@ -41,7 +41,7 @@ ms.locfileid: "53793375"
 Un error en la instalación puede o no provocar un mensaje de error significativo por parte del administrador de paquetes. Para comprobar si la instalación se ha hecho correctamente, obtenga y compruebe los registros de instalación mediante:
 
 ```bash
- sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
+ sudo journalctl --no-pager|grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -60,13 +60,18 @@ Compruebe también la [configuración del cliente](linux-install-manually.md#cli
 
 Tenga en cuenta que el paquete que va a instalar coincide con la distribución y la versión del host.
 
-| paquete                       | distribución                             |
-|-------------------------------|------------------------------------------|
-| mdatp-rhel8. Linux.x86_64.rpm  | Oracle, RHEL y CentOS 8.x              |
-| mdatp-sles12. Linux.x86_64.rpm | SuSE Linux Enterprise Server 12.x        |
-| mdatp-sles15. Linux.x86_64.rpm | SuSE Linux Enterprise Server 15.x        |
-| mdatp. Linux.x86_64.rpm        | Oracle, RHEL y CentOS 7.x              |
-| mdatp. Linux.x86_64.deb        | Debian y Ubuntu 16.04, 18.04 y 20.04 |
+<br>
+
+****
+
+|paquete|distribución|
+|---|---|
+|mdatp-rhel8. Linux.x86_64.rpm|Oracle, RHEL y CentOS 8.x|
+|mdatp-sles12. Linux.x86_64.rpm|SuSE Linux Enterprise Server 12.x|
+|mdatp-sles15. Linux.x86_64.rpm|SuSE Linux Enterprise Server 15.x|
+|mdatp. Linux.x86_64.rpm|Oracle, RHEL y CentOS 7.x|
+|mdatp. Linux.x86_64.deb|Debian y Ubuntu 16.04, 18.04 y 20.04|
+|
 
 Para [la implementación manual,](linux-install-manually.md)asegúrese de que se han elegido el distro y la versión correctas.
 

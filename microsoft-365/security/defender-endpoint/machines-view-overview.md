@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 993516c20629ddf4466325c547cd9208440dc41d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: b449dbf22511e3a53a852c7a6f235a70fb401ce6
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573924"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745018"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Ver y organizar la lista de Microsoft Defender para dispositivos de punto de conexión
 
@@ -34,7 +34,7 @@ ms.locfileid: "58573924"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-La **lista Dispositivos** muestra una lista de los dispositivos de la red donde se generaron alertas. De forma predeterminada, la cola muestra los dispositivos vistos en los últimos 30 días.  
+La **lista Dispositivos** muestra una lista de los dispositivos de la red donde se generaron alertas. De forma predeterminada, la cola muestra los dispositivos vistos en los últimos 30 días.
 
 De un vistazo verá información como dominio, nivel de riesgo, plataforma del sistema operativo y otros detalles para facilitar la identificación de los dispositivos más en riesgo.
 
@@ -47,7 +47,7 @@ Hay varias opciones entre las que puedes elegir para personalizar la vista de li
 
 Durante el proceso de incorporación, la lista **de** dispositivos se rellena gradualmente con dispositivos a medida que comienzan a informar de los datos del sensor. Use esta vista para realizar un seguimiento de los puntos de conexión incorporados a medida que se en línea o descargue la lista completa de puntos de conexión como un archivo CSV para el análisis sin conexión.
 
->[!NOTE]
+> [!NOTE]
 > Si exportas la lista de dispositivos, contendrá todos los dispositivos de tu organización. Puede tardar mucho tiempo en descargarse, según el tamaño de la organización. Al exportar la lista en formato CSV, se muestran los datos sin filtrar. El archivo CSV incluirá todos los dispositivos de la organización, independientemente de cualquier filtrado aplicado en la vista en sí.
 
 ![Imagen de la lista de dispositivos con lista de dispositivos.](images/device-inventory.png)

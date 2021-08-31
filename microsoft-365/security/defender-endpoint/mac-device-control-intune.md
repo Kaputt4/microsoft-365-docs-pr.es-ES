@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: badd29f758691e253544c7816408f93fa222f3d0dcc87d2a891bba7c611a8846
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a9a0bd7bcb45e4ddf2a36cefb8906e1e5c5dd75d
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863624"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747568"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Ejemplos de directivas de control de dispositivos para Intune
 
@@ -42,64 +42,64 @@ Este documento contiene ejemplos de directivas de control de dispositivos que pu
 En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. Tenga en cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que no se permitirán todas las operaciones `none` de archivos.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1"> 
-    <dict> 
-        <key>PayloadUUID</key> 
-        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string> 
-        <key>PayloadType</key> 
-        <string>Configuration</string> 
-        <key>PayloadOrganization</key> 
-        <string>Microsoft</string> 
-        <key>PayloadIdentifier</key> 
-        <string>com.microsoft.wdav</string> 
-        <key>PayloadDisplayName</key> 
-        <string>Microsoft Defender ATP settings</string> 
-        <key>PayloadDescription</key> 
-        <string>Microsoft Defender ATP configuration settings</string> 
-        <key>PayloadVersion</key> 
-        <integer>1</integer> 
-        <key>PayloadEnabled</key> 
-        <true/> 
-        <key>PayloadRemovalDisallowed</key> 
-        <true/> 
-        <key>PayloadScope</key> 
-        <string>System</string> 
-        <key>PayloadContent</key> 
-        <array> 
-            <dict> 
-                <key>PayloadUUID</key> 
-                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string> 
-                <key>PayloadType</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadOrganization</key> 
-                <string>Microsoft</string> 
-                <key>PayloadIdentifier</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadDisplayName</key> 
-                <string>Microsoft Defender ATP configuration settings</string> 
-                <key>PayloadDescription</key> 
-                <string/> 
-                <key>PayloadVersion</key> 
-                <integer>1</integer> 
-                <key>PayloadEnabled</key> 
-                <true/> 
-                <key>deviceControl</key> 
-                <dict> 
-                    <key>removableMediaPolicy</key> 
-                    <dict> 
-                        <key>enforcementLevel</key> 
-                        <string>block</string> 
-                        <key>permission</key> 
-                        <array> 
-                            <string>none</string> 
-                        </array> 
-                    </dict> 
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft</string>
+        <key>PayloadIdentifier</key>
+        <string>com.microsoft.wdav</string>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft Defender ATP settings</string>
+        <key>PayloadDescription</key>
+        <string>Microsoft Defender ATP configuration settings</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                <key>PayloadType</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft</string>
+                <key>PayloadIdentifier</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadDisplayName</key>
+                <string>Microsoft Defender ATP configuration settings</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>deviceControl</key>
+                <dict>
+                    <key>removableMediaPolicy</key>
+                    <dict>
+                        <key>enforcementLevel</key>
+                        <string>block</string>
+                        <key>permission</key>
+                        <array>
+                            <string>none</string>
+                        </array>
+                    </dict>
                 </dict>
-            </dict> 
-        </array> 
-    </dict> 
+            </dict>
+        </array>
+    </dict>
 </plist>
 ```
 
@@ -108,64 +108,64 @@ En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. T
 En el ejemplo siguiente se configura todos los medios extraíbles para que sean de solo lectura. Tenga en cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que no se permitirán todas las operaciones de `read` escritura y ejecución.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1"> 
-    <dict> 
-        <key>PayloadUUID</key> 
-        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string> 
-        <key>PayloadType</key> 
-        <string>Configuration</string> 
-        <key>PayloadOrganization</key> 
-        <string>Microsoft</string> 
-        <key>PayloadIdentifier</key> 
-        <string>com.microsoft.wdav</string> 
-        <key>PayloadDisplayName</key> 
-        <string>Microsoft Defender ATP settings</string> 
-        <key>PayloadDescription</key> 
-        <string>Microsoft Defender ATP configuration settings</string> 
-        <key>PayloadVersion</key> 
-        <integer>1</integer> 
-        <key>PayloadEnabled</key> 
-        <true/> 
-        <key>PayloadRemovalDisallowed</key> 
-        <true/> 
-        <key>PayloadScope</key> 
-        <string>System</string> 
-        <key>PayloadContent</key> 
-        <array> 
-            <dict> 
-                <key>PayloadUUID</key> 
-                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string> 
-                <key>PayloadType</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadOrganization</key> 
-                <string>Microsoft</string> 
-                <key>PayloadIdentifier</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadDisplayName</key> 
-                <string>Microsoft Defender ATP configuration settings</string> 
-                <key>PayloadDescription</key> 
-                <string/> 
-                <key>PayloadVersion</key> 
-                <integer>1</integer> 
-                <key>PayloadEnabled</key> 
-                <true/> 
-                <key>deviceControl</key> 
-                <dict> 
-                    <key>removableMediaPolicy</key> 
-                    <dict> 
-                        <key>enforcementLevel</key> 
-                        <string>block</string> 
-                        <key>permission</key> 
-                        <array> 
-                            <string>read</string> 
-                        </array> 
-                    </dict> 
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft</string>
+        <key>PayloadIdentifier</key>
+        <string>com.microsoft.wdav</string>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft Defender ATP settings</string>
+        <key>PayloadDescription</key>
+        <string>Microsoft Defender ATP configuration settings</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                <key>PayloadType</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft</string>
+                <key>PayloadIdentifier</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadDisplayName</key>
+                <string>Microsoft Defender ATP configuration settings</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>deviceControl</key>
+                <dict>
+                    <key>removableMediaPolicy</key>
+                    <dict>
+                        <key>enforcementLevel</key>
+                        <string>block</string>
+                        <key>permission</key>
+                        <array>
+                            <string>read</string>
+                        </array>
+                    </dict>
                 </dict>
-            </dict> 
-        </array> 
-    </dict> 
+            </dict>
+        </array>
+    </dict>
 </plist>
 ```
 
@@ -174,66 +174,66 @@ En el ejemplo siguiente se configura todos los medios extraíbles para que sean 
 En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecución del programa desde medios extraíbles. Tenga en `read` cuenta los permisos y que se aplican en el nivel superior de la `write` directiva.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1"> 
-    <dict> 
-        <key>PayloadUUID</key> 
-        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string> 
-        <key>PayloadType</key> 
-        <string>Configuration</string> 
-        <key>PayloadOrganization</key> 
-        <string>Microsoft</string> 
-        <key>PayloadIdentifier</key> 
-        <string>com.microsoft.wdav</string> 
-        <key>PayloadDisplayName</key> 
-        <string>Microsoft Defender ATP settings</string> 
-        <key>PayloadDescription</key> 
-        <string>Microsoft Defender ATP configuration settings</string> 
-        <key>PayloadVersion</key> 
-        <integer>1</integer> 
-        <key>PayloadEnabled</key> 
-        <true/> 
-        <key>PayloadRemovalDisallowed</key> 
-        <true/> 
-        <key>PayloadScope</key> 
-        <string>System</string> 
-        <key>PayloadContent</key> 
-        <array> 
-            <dict> 
-                <key>PayloadUUID</key> 
-                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string> 
-                <key>PayloadType</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadOrganization</key> 
-                <string>Microsoft</string> 
-                <key>PayloadIdentifier</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadDisplayName</key> 
-                <string>Microsoft Defender ATP configuration settings</string> 
-                <key>PayloadDescription</key> 
-                <string/> 
-                <key>PayloadVersion</key> 
-                <integer>1</integer> 
-                <key>PayloadEnabled</key> 
-                <true/> 
-                <key>deviceControl</key> 
-                <dict> 
-                    <key>removableMediaPolicy</key> 
-                    <dict> 
-                        <key>enforcementLevel</key> 
-                        <string>block</string> 
-                        <key>permission</key> 
-                        <array> 
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft</string>
+        <key>PayloadIdentifier</key>
+        <string>com.microsoft.wdav</string>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft Defender ATP settings</string>
+        <key>PayloadDescription</key>
+        <string>Microsoft Defender ATP configuration settings</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                <key>PayloadType</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft</string>
+                <key>PayloadIdentifier</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadDisplayName</key>
+                <string>Microsoft Defender ATP configuration settings</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>deviceControl</key>
+                <dict>
+                    <key>removableMediaPolicy</key>
+                    <dict>
+                        <key>enforcementLevel</key>
+                        <string>block</string>
+                        <key>permission</key>
+                        <array>
                             <string>read</string>
-                            <string>write</string> 
-                        </array> 
-                    </dict> 
+                            <string>write</string>
+                        </array>
+                    </dict>
                 </dict>
-            </dict> 
-        </array> 
-    </dict> 
-</plist> 
+            </dict>
+        </array>
+    </dict>
+</plist>
 ```
 
 ## <a name="restrict-all-devices-from-specific-vendors"></a>Restringir todos los dispositivos de proveedores específicos
@@ -241,83 +241,83 @@ En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecució
 En el ejemplo siguiente se restringen todos los dispositivos de proveedores específicos (en este caso identificados por `fff0` y `4525` ). El resto de dispositivos no estarán restringidos, ya que el permiso definido en el nivel superior de la directiva enumera todos los permisos posibles (lectura, escritura y ejecución).
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1"> 
-    <dict> 
-        <key>PayloadUUID</key> 
-        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string> 
-        <key>PayloadType</key> 
-        <string>Configuration</string> 
-        <key>PayloadOrganization</key> 
-        <string>Microsoft</string> 
-        <key>PayloadIdentifier</key> 
-        <string>com.microsoft.wdav</string> 
-        <key>PayloadDisplayName</key> 
-        <string>Microsoft Defender ATP settings</string> 
-        <key>PayloadDescription</key> 
-        <string>Microsoft Defender ATP configuration settings</string> 
-        <key>PayloadVersion</key> 
-        <integer>1</integer> 
-        <key>PayloadEnabled</key> 
-        <true/> 
-        <key>PayloadRemovalDisallowed</key> 
-        <true/> 
-        <key>PayloadScope</key> 
-        <string>System</string> 
-        <key>PayloadContent</key> 
-        <array> 
-            <dict> 
-                <key>PayloadUUID</key> 
-                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string> 
-                <key>PayloadType</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadOrganization</key> 
-                <string>Microsoft</string> 
-                <key>PayloadIdentifier</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadDisplayName</key> 
-                <string>Microsoft Defender ATP configuration settings</string> 
-                <key>PayloadDescription</key> 
-                <string/> 
-                <key>PayloadVersion</key> 
-                <integer>1</integer> 
-                <key>PayloadEnabled</key> 
-                <true/> 
-                <key>deviceControl</key> 
-                <dict> 
-                    <key>removableMediaPolicy</key> 
-                    <dict> 
-                        <key>enforcementLevel</key> 
-                        <string>block</string> 
-                        <key>permission</key> 
-                        <array> 
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft</string>
+        <key>PayloadIdentifier</key>
+        <string>com.microsoft.wdav</string>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft Defender ATP settings</string>
+        <key>PayloadDescription</key>
+        <string>Microsoft Defender ATP configuration settings</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                <key>PayloadType</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft</string>
+                <key>PayloadIdentifier</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadDisplayName</key>
+                <string>Microsoft Defender ATP configuration settings</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>deviceControl</key>
+                <dict>
+                    <key>removableMediaPolicy</key>
+                    <dict>
+                        <key>enforcementLevel</key>
+                        <string>block</string>
+                        <key>permission</key>
+                        <array>
                             <string>read</string>
                             <string>write</string>
-                            <string>execute</string> 
-                        </array> 
-                        <key>vendors</key> 
-                        <dict> 
-                            <key>fff0</key> 
-                            <dict> 
-                                <key>permission</key> 
-                                <array> 
-                                    <string>none</string> 
-                                </array> 
-                            </dict> 
-                            <key>4525</key> 
-                            <dict> 
-                                <key>permission</key> 
-                                <array>                         
-                                    <string>none</string> 
-                                </array> 
-                            </dict> 
-                        </dict> 
-                    </dict> 
+                            <string>execute</string>
+                        </array>
+                        <key>vendors</key>
+                        <dict>
+                            <key>fff0</key>
+                            <dict>
+                                <key>permission</key>
+                                <array>
+                                    <string>none</string>
+                                </array>
+                            </dict>
+                            <key>4525</key>
+                            <dict>
+                                <key>permission</key>
+                                <array>
+                                    <string>none</string>
+                                </array>
+                            </dict>
+                        </dict>
+                    </dict>
                 </dict>
-            </dict> 
-        </array> 
-    </dict> 
+            </dict>
+        </array>
+    </dict>
 </plist>
 ```
 
@@ -326,101 +326,101 @@ En el ejemplo siguiente se restringen todos los dispositivos de proveedores espe
 En el ejemplo siguiente se restringen dos dispositivos específicos, identificados por el identificador de proveedor, el id. de producto `fff0` y los números de serie y `1000` `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` . En todos los demás niveles de la directiva, los permisos incluyen todos los valores posibles (lectura, escritura y ejecución), lo que significa que todos los demás dispositivos no estarán restringidos.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1"> 
-    <dict> 
-        <key>PayloadUUID</key> 
-        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string> 
-        <key>PayloadType</key> 
-        <string>Configuration</string> 
-        <key>PayloadOrganization</key> 
-        <string>Microsoft</string> 
-        <key>PayloadIdentifier</key> 
-        <string>com.microsoft.wdav</string> 
-        <key>PayloadDisplayName</key> 
-        <string>Microsoft Defender ATP settings</string> 
-        <key>PayloadDescription</key> 
-        <string>Microsoft Defender ATP configuration settings</string> 
-        <key>PayloadVersion</key> 
-        <integer>1</integer> 
-        <key>PayloadEnabled</key> 
-        <true/> 
-        <key>PayloadRemovalDisallowed</key> 
-        <true/> 
-        <key>PayloadScope</key> 
-        <string>System</string> 
-        <key>PayloadContent</key> 
-        <array> 
-            <dict> 
-                <key>PayloadUUID</key> 
-                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string> 
-                <key>PayloadType</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadOrganization</key> 
-                <string>Microsoft</string> 
-                <key>PayloadIdentifier</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadDisplayName</key> 
-                <string>Microsoft Defender ATP configuration settings</string> 
-                <key>PayloadDescription</key> 
-                <string/> 
-                <key>PayloadVersion</key> 
-                <integer>1</integer> 
-                <key>PayloadEnabled</key> 
-                <true/> 
-                <key>deviceControl</key> 
-                <dict> 
-                    <key>removableMediaPolicy</key> 
-                    <dict> 
-                        <key>enforcementLevel</key> 
-                        <string>block</string> 
-                        <key>permission</key> 
-                        <array> 
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft</string>
+        <key>PayloadIdentifier</key>
+        <string>com.microsoft.wdav</string>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft Defender ATP settings</string>
+        <key>PayloadDescription</key>
+        <string>Microsoft Defender ATP configuration settings</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                <key>PayloadType</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft</string>
+                <key>PayloadIdentifier</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadDisplayName</key>
+                <string>Microsoft Defender ATP configuration settings</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>deviceControl</key>
+                <dict>
+                    <key>removableMediaPolicy</key>
+                    <dict>
+                        <key>enforcementLevel</key>
+                        <string>block</string>
+                        <key>permission</key>
+                        <array>
                             <string>read</string>
                             <string>write</string>
                             <string>execute</string>
-                        </array> 
-                        <key>vendors</key> 
-                        <dict> 
-                            <key>fff0</key> 
-                            <dict> 
-                                <key>permission</key> 
-                                <array> 
-                                    <string>read</string> 
+                        </array>
+                        <key>vendors</key>
+                        <dict>
+                            <key>fff0</key>
+                            <dict>
+                                <key>permission</key>
+                                <array>
+                                    <string>read</string>
                                     <string>write</string>
-                                    <string>execute</string> 
-                                </array> 
-                                <key>products</key> 
-                                <dict> 
-                                    <key>1000</key> 
-                                    <dict> 
-                                        <key>permission</key> 
-                                        <array> 
-                                            <string>read</string> 
+                                    <string>execute</string>
+                                </array>
+                                <key>products</key>
+                                <dict>
+                                    <key>1000</key>
+                                    <dict>
+                                        <key>permission</key>
+                                        <array>
+                                            <string>read</string>
                                             <string>write</string>
                                             <string>execute</string>
-                                        </array> 
-                                        <key>serialNumbers</key> 
-                                        <dict> 
-                                            <key>04ZSSMHI2O7WBVOA</key> 
-                                            <array> 
-                                            <string>none</string> 
-                                            </array> 
+                                        </array>
+                                        <key>serialNumbers</key>
+                                        <dict>
+                                            <key>04ZSSMHI2O7WBVOA</key>
+                                            <array>
+                                            <string>none</string>
+                                            </array>
                                             <key>04ZSSMHI2O7WBVOB</key>
-                                            <array> 
-                                            <string>none</string> 
-                                            </array> 
-                                        </dict> 
-                                    </dict> 
-                                </dict> 
+                                            <array>
+                                            <string>none</string>
+                                            </array>
+                                        </dict>
+                                    </dict>
+                                </dict>
                             </dict>
-                        </dict> 
-                    </dict> 
+                        </dict>
+                    </dict>
                 </dict>
-            </dict> 
-        </array> 
-    </dict> 
+            </dict>
+        </array>
+    </dict>
 </plist>
 ```
 

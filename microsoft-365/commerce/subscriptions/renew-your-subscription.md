@@ -31,7 +31,7 @@ ms.locfileid: "53892656"
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
 
 > [!IMPORTANT]
-> A partir del 26 de enero de 2021, ya no se admitirán cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones, pero siempre que la cuenta bancaria esté en buenos términos.
+> A partir del 26 de enero de 2021, ya no se admitirán cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones, pero siempre que la cuenta bancaria esté en regla.
 
 Este artículo se aplica a la mayoría de las suscripciones a Microsoft 365 para empresas de pago.
   
