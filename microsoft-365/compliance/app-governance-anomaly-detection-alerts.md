@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Investigar las alertas de detección de anomalías.
-ms.openlocfilehash: aa0c7a285baf9fcc3505b9675d57dc37e300862570facdac7c9eb2fd9af61e5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 57e32f0fc2d50e5e1f1d4d9fb9e6b1520f0f99e6
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843076"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747392"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Investigar las alertas de detección de anomalías
 
@@ -145,7 +145,7 @@ Si todavía cree que una aplicación es sospechosa, puede investigar el nombre p
 
 Esta sección describe las alertas que indican que un actor malicioso puede estar intentando mantener su posición en su organización.
 
-### <a name="app-with-suspicious-oauth-scope-creates-inbox-rule"></a>La aplicación con un ámbito de OAuth sospechoso crea una regla de entrada  
+### <a name="app-with-suspicious-oauth-scope-made-graph-calls-to-read-email-and-created-inbox-rule"></a>La aplicación con ámbito de OAuth sospechoso realizó llamadas de Graph para leer el correo electrónico y creó la regla de la Bandeja de entrada  
 
 **Gravedad**: media
 
@@ -270,3 +270,28 @@ Esta detección identifica la aplicación consentida en el ámbito de privilegio
 1. Revise los alcances otorgados por la aplicación.
 1. Revise cualquier acción de regla de bandeja de entrada creada por la aplicación.
 1. Revise las actividades de búsqueda de correo electrónico realizadas por la aplicación.
+
+### <a name="appmade-onedrive--sharepoint-search-activities-and-created-inbox-rule"></a>La aplicación realizó actividades de búsqueda de OneDrive o SharePoint y creó una regla de la Bandeja de entrada  
+
+**Gravedad**: media
+
+**Id. de MITRE**: T1137, T1213
+
+Esta detección identifica si una aplicación consiente el ámbito de privilegios elevados, creó una regla de la Bandeja de entrada sospechosa y realizó actividades de búsqueda inusuales de SharePoint o OneDrive a través de Graph API. Esto puede indicar un intento de vulneración de su organización, como adversarios que intentan buscar y recopilar datos específicos de SharePoint o OneDrive de su organización a través de Graph API.  
+
+**¿TP o FP?**
+
+- **TP**: si puede confirmar datos específicos de la búsqueda y recopilación de SharePoint o OneDrive realizada a través de Graph API mediante una aplicación de OAuth con un ámbito de privilegios alto y la aplicación se entrega desde un origen desconocido.  
+
+  **Acción recomendada**: deshabilitar y quitar la aplicación, restablecer la contraseña y quitar la regla de la Bandeja de entrada.  
+
+- **FP**: si puede confirmar que la aplicación ha ejecutado datos específicos de búsqueda y recopilación de SharePoint o OneDrive a través de Graph API por una aplicación de OAuth y ha creado una regla de la Bandeja de entrada para una cuenta de correo electrónico externa nueva o personal por motivos legítimos.  
+
+  **Acción recomendada**: descartar la alerta  
+
+**Comprender el alcance de la infracción**
+
+1. Revise todas las actividades realizadas por la aplicación.  
+1. Revise los alcances otorgados por la aplicación.  
+1. Revise cualquier acción de regla de bandeja de entrada creada por la aplicación.  
+1. Revise las actividades de búsqueda de SharePoint o OneDrive realizadas por la aplicación.

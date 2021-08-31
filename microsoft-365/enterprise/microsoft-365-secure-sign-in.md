@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Requerir que los usuarios inicien sesión de forma segura con la autenticación multifactor (MFA) y otras características.
-ms.openlocfilehash: f2ee7d21c5dee96e2cbd6beccdd816da26b6ea46
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d00ca7a39b05e5364a49a6300ef9ee24c3dd0bd1
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570994"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744946"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Asegurar inicios de sesión de usuario en el espacio empresarial de Microsoft 365
 
@@ -79,7 +79,7 @@ Para más información, vea esta [información general de los valores predetermi
 
 Las directivas de acceso condicional son un conjunto de reglas que especifican las condiciones en las que se evalúan y se conceden los accesos. Por ejemplo, puede crear una directiva de acceso condicional que indique lo siguiente:
 
-- Si el nombre de la cuenta de usuario es miembro de un grupo de usuarios a los que se han asignado los roles de administrador de Exchange, de usuarios, de contraseñas, de seguridad, de SharePoint o global, requerir MFA antes de permitir el acceso.
+- Si el nombre de la cuenta de usuario es miembro de un grupo de usuarios a los que se han asignado los roles de Exchange, usuario, contraseña, seguridad, SharePoint, **administrador de Exchange**, **administrador de SharePoint** o **administrador global**, requiere MFA antes de permitir el acceso.
 
 Esta directiva le permite exigir MFA en función de la pertenencia a grupos, en lugar de intentar configurar cuentas de usuario individuales para MFA cuando se asignan o se quitan estos roles de administrador.
 
