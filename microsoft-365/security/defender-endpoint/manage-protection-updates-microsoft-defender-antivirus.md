@@ -15,12 +15,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 412b42fd7ac67326552f23c4d6cc0909daa60aa6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 91b482aa189ff7e9d4ff69183718abf354d19d0f
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565849"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823834"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -73,6 +73,10 @@ Para garantizar el mejor nivel de protección, Microsoft Update permite versione
 
 Cada origen tiene escenarios típicos que dependen de la configuración de la red, además de la frecuencia con la que publican actualizaciones, como se describe en la tabla siguiente:
 
+<br>
+
+****
+
 |Ubicación|Ejemplo ficticio|
 |---|---|
 |Windows Servicio de actualización de servidor|Está usando el Windows de actualización de servidor para administrar las actualizaciones de la red.|
@@ -80,6 +84,7 @@ Cada origen tiene escenarios típicos que dependen de la configuración de la re
 |Compartir archivos|Tiene dispositivos no conectados a Internet (como máquinas virtuales). Puede usar el host de vm conectado a Internet para descargar las actualizaciones en un recurso compartido de red, desde el que las máquinas virtuales pueden obtener las actualizaciones. Consulte la [guía de implementación de VDI](deployment-vdi-microsoft-defender-antivirus.md) para obtener información sobre cómo se pueden usar recursos compartidos de archivos en entornos de infraestructura de escritorio virtual (VDI).|
 |Microsoft Endpoint Manager|Está usando Microsoft Endpoint Manager para actualizar los puntos de conexión.|
 |Actualizaciones de inteligencia de seguridad Antivirus de Microsoft Defender y otros antimalware de Microsoft (anteriormente denominadas MMPC)|[Asegúrese de que los dispositivos estén actualizados para admitir SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Antivirus de Microsoft Defender Las actualizaciones de inteligencia de seguridad se entregan a través de Windows Update y, a partir del lunes 21 de octubre de 2019, las actualizaciones de inteligencia de seguridad se firmarán exclusivamente con SHA-2. <br/>Descargue las actualizaciones de protección más recientes debido a una infección reciente o para ayudar a aprovisionar una imagen base sólida para la [implementación de VDI](deployment-vdi-microsoft-defender-antivirus.md). Por lo general, esta opción solo se debe usar como origen final de reserva y no como origen principal. Solo se usará si las actualizaciones no se pueden descargar desde Windows Server Update Service o Microsoft Update durante un número especificado [de días](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
+|
 
 Puede administrar el orden en que se usan los orígenes de actualización con la directiva de grupo, los Microsoft Endpoint Configuration Manager, los cmdlets de PowerShell y WMI.
 
@@ -96,7 +101,7 @@ En los procedimientos de este artículo se describe primero cómo establecer el 
 
 3. Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-4. Expanda el árbol para Windows **componentes Windows Defender** actualizaciones  >    >  **de firma** y configure las siguientes opciones:
+4. Expanda el árbol para Windows **componentes Windows Defender** actualizaciones \>  \> **de firma** y configure las siguientes opciones:
 
    1. Haga doble clic en **la opción Definir el orden de los orígenes para** descargar actualizaciones de inteligencia de seguridad y establezca la opción en **Habilitado**.
 
@@ -108,7 +113,7 @@ En los procedimientos de este artículo se describe primero cómo establecer el 
 
    4. Haga doble clic en la **opción Definir recursos compartidos de** archivos para descargar actualizaciones de inteligencia de seguridad y establezca la opción en **Habilitado**.
 
-   5. Especifique el origen del recurso compartido de archivos. Si tiene varios orígenes, escriba cada origen en el orden en que deben usarse, separados por una sola canalización. Use [la notación UNC estándar](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) para denoticar la ruta de acceso, por ejemplo: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name` .  Si no escribe ninguna ruta de acceso, se omitirá este origen cuando se actualice la máquina virtual.
+   5. Especifique el origen del recurso compartido de archivos. Si tiene varios orígenes, escriba cada origen en el orden en que deben usarse, separados por una sola canalización. Use [la notación UNC estándar](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) para denoticar la ruta de acceso, por ejemplo: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name` . Si no escribe ninguna ruta de acceso, se omitirá este origen cuando se actualice la máquina virtual.
 
    6. Haga clic en **Aceptar**. Esto establecerá el orden de los recursos compartidos de archivos cuando se haga referencia a ese origen en la configuración de directiva de grupo Definir **el orden de orígenes...**
 

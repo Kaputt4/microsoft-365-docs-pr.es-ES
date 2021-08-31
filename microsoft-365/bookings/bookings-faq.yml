@@ -9,12 +9,12 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Preguntas frecuentes de Microsoft Bookings.
-  ms.openlocfilehash: c8e1548acb43e50d2dc457bed4aaa01c504f425f63a4a0872f033b70e5599891
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: ae2f6afcd350edba17d73801aec838f3980c46b4
+  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53900960"
+  ms.lasthandoff: 08/31/2021
+  ms.locfileid: "58823581"
 title: Preguntas más frecuentes de Microsoft Bookings
 summary: ''
 sections:
@@ -122,11 +122,7 @@ sections:
   questions:
   - question: >
       ¿Cómo puedo obtener Microsoft Bookings?
-    answer: >
-      Las reservas están disponibles para clientes con Office 365 A3, A5, E3 y E5, así como para Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Premium, A3, A5, E3 y E5. Puedes usar Bookings con una aplicación complementaria de iOS y Android. Bookings no está disponible como una aplicación independiente. Outlook Web App o Outlook en la Web deben habilitarse para usar Bookings, ya que almacena datos en Outlook.
-
-
-      Una licencia de Bookings proporciona funcionalidad completa al producto, incluida la creación y administración de calendarios. También permite a los usuarios ver y editar calendarios existentes, cuando estos usuarios se agregan como personal en un rol de administrador o visor.
+    answer: "Bookings está disponible con las siguientes suscripciones: \n- Office 365: A3, A5, E3, E5, F1, F3\n- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Standard, Business Premium. Puedes usar Bookings con una aplicación complementaria de iOS y Android. Bookings no está disponible como una aplicación independiente. Outlook Web App o Outlook en la Web deben habilitarse para usar Bookings, ya que almacena datos en Outlook.\n\nUna licencia de Bookings proporciona funcionalidad completa al producto, incluida la creación y administración de calendarios. También permite a los usuarios ver y editar calendarios existentes, cuando estos usuarios se agregan como personal en un rol de administrador o visor.\n"
   - question: >
       ¿Necesito migrar mi cuenta de correo electrónico de mi proveedor actual a Microsoft 365?
     answer: >
@@ -139,28 +135,6 @@ sections:
       ¿Puedo crear más de un calendario de Bookings en la misma Microsoft 365 cuenta y cambiar entre ellos?
     answer: >
       Sí. Puedes crear y administrar más de un calendario de Bookings con una cuenta. Puedes cambiar entre ellos mediante el elemento de cuidado situado junto al nombre de la empresa en la aplicación web de Bookings.
-  - question: >
-      ¿Qué ocurre si mi organización tiene licencias mixtas con F1/F3, E1 y E3/E5?
-    answer: >
-      Reconocemos que muchas organizaciones tienen una mezcla de Microsoft 365 licencias. Por ejemplo, un cliente puede tener licencias M365 E3 para los empleados de su sede, pero licencias M365 E1 (o F1 o F3) para sus empleados de la tienda.
-
-
-      En este ejemplo, los empleados de la sede central con una licencia M365 E3 tienen acceso total a Bookings, lo que significa que pueden crear calendarios nuevos, editar la configuración, agregar personal, publicar una página de reserva, crear y administrar citas dentro del calendario y extraer informes.
-
-
-      Los empleados de la tienda con licencias E1/F1/F3, o sin licencias, aún pueden agregarse como personal a los calendarios en un rol de invitado y, a continuación, reservar para citas, y recibirán correos electrónicos de confirmación cuando se reserven. Todavía se pueden reservar durante las horas disponibles o programadas, tal como se muestra en la pestaña personal. La disponibilidad del calendario Bookings limita los tiempos de reserva según el horario establecido y el horario de servicio.
-
-
-      Los empleados de la tienda también se mostrarán como no disponibles en Bookings si ya se ha programado una cita en ese momento a través de la aplicación web de Bookings. Las citas reservadas a través de Bookings se reflejarán como ocupadas en el calendario de un miembro del personal dentro de Bookings. El personal con una licencia no habilitada para Bookings todavía puede tener su calendario personal impactado en su disponibilidad en Bookings, siempre que estén dentro del mismo inquilino.
-
-
-      Los usuarios del rol Invitados pueden ver cualquier información que el cliente haya proporcionado en la creación inicial de citas. Por ejemplo, si el representante de la tienda que está reservado para la cita tiene que llamar al cliente antes de la cita, tendrá acceso a la información que el cliente proporciona durante el proceso de programación. El miembro del personal reservado tendrá acceso a toda la información que aparece en el correo electrónico de confirmación y al evento del calendario .ics (como el número de teléfono del cliente si se introdujo).
-
-
-      Los usuarios del rol Invitado no tendrán la capacidad de acceder a la aplicación web de Bookings para cambiar la configuración o para ver y administrar citas (agregar, cancelar y reprogramar). Sin embargo, pueden hacer citas en nombre de los clientes mediante la página Autoservicio, del mismo modo que un cliente haría una cita.
-
-
-      Se recomienda otorgar licencias a un administrador o administrador de cada tienda con una licencia apta para Bookings para configurar y administrar páginas y citas. A continuación, el resto del personal trabajaría con el empleado con licencia de Bookings para reprogramar o cancelar una reserva.
 - name: Características del producto
   questions:
   - question: >

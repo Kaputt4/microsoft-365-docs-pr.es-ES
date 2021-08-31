@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5ca8aecbc83513949a72be356c57651c46ba1a6087cca8ea6201c9a6dcc86587
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bdc3ddea542a888dbcd7fcf095835f327fb19e0a
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806298"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823930"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Administrar la programación para cuándo se han de descargar y aplicar las actualizaciones de protección
 
@@ -44,7 +44,7 @@ También puede aleatorizar las horas en las que cada extremo comprueba y descarg
 
 ## <a name="use-configuration-manager-to-schedule-protection-updates"></a>Usar Configuration Manager para programar actualizaciones de protección
 
-1. En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas  >    >  **antimalware**)
+1. En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos  y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas \>  \> **antimalware**)
 
 2. Vaya a la **sección Actualizaciones de inteligencia de** seguridad.
 
@@ -67,7 +67,7 @@ También puede aleatorizar las horas en las que cada extremo comprueba y descarg
 
 3. Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** de inteligencia  >    >  **de firma** y configure las siguientes opciones:
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** de inteligencia \>  \> **de firma** y configure las siguientes opciones:
 
     1. Haga doble clic en **la opción Especificar el día de la** semana para comprobar si hay actualizaciones de inteligencia de seguridad y establezca la opción en **Habilitado**. Escriba el día de la semana para buscar actualizaciones. Haga clic en **Aceptar**.
     2. Haga doble clic en **la opción Especificar el intervalo para comprobar si** hay actualizaciones de inteligencia de seguridad y establezca la opción en **Habilitado**. Escriba el número de horas entre actualizaciones. Haga clic en **Aceptar**.

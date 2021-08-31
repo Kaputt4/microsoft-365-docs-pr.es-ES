@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2a507f1fe1292fcd456891aa64f7974d2f722bbc
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ff8534d0b668b6a18b219297131dbd90c366cc35
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247619"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823785"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -36,18 +36,22 @@ ms.locfileid: "58247619"
 > Para obtener más información sobre las características y la funcionalidad de Windows 10 Enterprise Edition, consulta [Windows 10 Enterprise edition](https://www.microsoft.com/WindowsForBusiness/buy).
 
 Microsoft Defender para punto de conexión es una plataforma empresarial para la seguridad de puntos de conexión concebida para ayudar a impedir, detectar e investigar las amenazas avanzadas, y responder a ellas.
-<p></p>
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
+> [!TIP]
+> Próximamente, Microsoft Defender para punto de conexión estará disponible en dos planes. En este artículo se describen las características y capacidades que se incluyen en el plan 2 de Microsoft Defender para punto de conexión. [Obtenga más información sobre Microsoft Defender para punto de conexión plan 1 (versión preliminar) y plan 2](defender-endpoint-plan-1-2.md).
+> 
+
+<p><p>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
 Microsoft Defender para punto de conexión usa la siguiente combinación de tecnologías integrada en Windows 10 y el robusto servicio en la nube de Microsoft:
 
--   **Sensores de comportamiento del punto de conexión**. Integrados en Windows 10, estos sensores recopilan y procesan señales de comportamiento desde el sistema operativo. Los sensores envían estos datos a la instancia de nube privada aislada de Microsoft Defender para punto de conexión.
+- **Sensores de comportamiento del punto de conexión**. Integrados en Windows 10, estos sensores recopilan y procesan señales de comportamiento desde el sistema operativo. Los sensores envían estos datos a la instancia de nube privada aislada de Microsoft Defender para punto de conexión.
 
+- **Análisis de seguridad en la nube**. Al aprovechar los macrodatos, el aprendizaje de dispositivos y la óptica exclusiva de Microsoft en todo el ecosistema de Windows, los productos empresariales en la nube (como Office 365) y los activos en línea, las señales de comportamiento se traducen en conocimientos, detecciones y respuestas recomendadas a amenazas avanzadas.
 
--   **Análisis de seguridad en la nube**. Al aprovechar los macrodatos, el aprendizaje de dispositivos y la óptica exclusiva de Microsoft en todo el ecosistema de Windows, los productos empresariales en la nube (como Office 365) y los activos en línea, las señales de comportamiento se traducen en conocimientos, detecciones y respuestas recomendadas a amenazas avanzadas.
-
--   **Inteligencia sobre amenazas**. Generada por cazadores de Microsoft, equipos de seguridad y aumentada por la inteligencia de amenazas proporcionada por los socios, la inteligencia de amenazas permite a Microsoft Defender para punto de conexión identificar herramientas, técnicas y procedimientos de atacantes, y generar alertas cuando se observan en los datos de sensores recopilados.
+- **Inteligencia sobre amenazas**. Generada por cazadores de Microsoft, equipos de seguridad y aumentada por la inteligencia de amenazas proporcionada por los socios, la inteligencia de amenazas permite a Microsoft Defender para punto de conexión identificar herramientas, técnicas y procedimientos de atacantes, y generar alertas cuando se observan en los datos de sensores recopilados.
 
 <center><h2>Microsoft Defender para punto de conexión</center></h2>
 <table>
@@ -71,61 +75,72 @@ Microsoft Defender para punto de conexión usa la siguiente combinación de tecn
 
 <p></p>
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0]
 
 > [!TIP]
+>
 > - Obtenga información sobre las mejoras más recientes de Defender para punto de conexión: [novedades de Microsoft Defender para punto de conexión](whats-new-in-microsoft-defender-atp.md).
 > - Microsoft Defender para punto de conexión mostró funcionalidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Lectura: [Insights de la evaluación basada en MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 <a name="tvm"></a>
 
-**[Administración de vulnerabilidades y amenazas](next-gen-threat-and-vuln-mgt.md)**<br>
-Esta funcionalidad integrada usa un enfoque basado en riesgos que cambia el juego para la detección, priorización y corrección de vulnerabilidades de puntos de conexión y configuraciones incorrectas. 
+**[Administración de vulnerabilidades y amenazas](next-gen-threat-and-vuln-mgt.md)**
+
+Esta funcionalidad integrada usa un enfoque basado en riesgos que cambia el juego para la detección, priorización y corrección de vulnerabilidades de puntos de conexión y configuraciones incorrectas.
 
 <a name="asr"></a>
 
-**[Reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)**<br>
-El conjunto de capacidades de reducción de la superficie expuesta a ataques proporciona la primera línea de defensa de la pila. Al garantizar que las opciones de configuración se establecen correctamente y se aplican técnicas de mitigación de vulnerabilidades, las capacidades se resisten a los ataques y la explotación. Este conjunto de funcionalidades también incluye [protección de red](network-protection.md) y [protección web](web-protection-overview.md), que regulan el acceso a direcciones IP, dominios y direcciones URL malintencionados. 
+**[Reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)**
+
+El conjunto de capacidades de reducción de la superficie expuesta a ataques proporciona la primera línea de defensa de la pila. Al garantizar que las opciones de configuración se establecen correctamente y se aplican técnicas de mitigación de vulnerabilidades, las capacidades se resisten a los ataques y la explotación. Este conjunto de funcionalidades también incluye [protección de red](network-protection.md) y [protección web](web-protection-overview.md), que regulan el acceso a direcciones IP, dominios y direcciones URL malintencionados.
 
 <a name="ngp"></a>
 
-**[Protección de última generación](next-generation-protection.md)**<br>
+**[Protección de última generación](next-generation-protection.md)**
+
 Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para punto de conexión usa la protección de próxima generación diseñada para detectar todos los tipos de amenazas emergentes.
 
 <a name="edr"></a>
 
-**[Detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md)**<br>
+**[Detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md)**
+
 Las funcionalidades de detección y respuesta de puntos de conexión se implementan para detectar, investigar y responder a amenazas avanzadas que pueden haber superado los dos primeros pilares de seguridad. [La búsqueda avanzada](advanced-hunting-overview.md) proporciona una herramienta de búsqueda de amenazas basada en consultas que le permite buscar infracciones de forma proactiva y crear detecciones personalizadas.
 
 <a name="ai"></a>
 
-**[Investigación y corrección automatizadas](automated-investigations.md)**<br>
-Junto con la capacidad de responder rápidamente a ataques avanzados, Microsoft Defender para punto de conexión ofrece capacidades de investigación y corrección automáticas que ayudan a reducir el volumen de alertas en minutos a escala. 
+**[Investigación y corrección automatizadas](automated-investigations.md)**
+
+Junto con la capacidad de responder rápidamente a ataques avanzados, Microsoft Defender para punto de conexión ofrece capacidades de investigación y corrección automáticas que ayudan a reducir el volumen de alertas en minutos a escala.
 
 <a name="ss"></a>
 
-**[Puntuación de seguridad de Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md)**<br>
+**[Puntuación de seguridad de Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md)**
 
 Defender para punto de conexión incluye Puntuación de seguridad de Microsoft para dispositivos para ayudarlo a evaluar dinámicamente el estado de seguridad de su red empresarial, identificar sistemas desprotegidos y tomar las acciones recomendadas para mejorar la seguridad general de su organización.
 
 <a name="mte"></a>
 
-**[Expertos en amenazas de Microsoft](microsoft-threat-experts.md)**<br>
+**[Expertos en amenazas de Microsoft](microsoft-threat-experts.md)**
+
 El nuevo servicio administrado de búsqueda de amenazas de Microsoft Defender para punto de conexión proporciona búsqueda proactiva, priorización y contexto e información adicional que empoderan aún más a los centros de operaciones de seguridad (SOC) para identificar y responder a las amenazas de manera rápida y precisa.
 
->[!IMPORTANT]
->Los clientes de Defender para punto de conexión deben solicitar el servicio de Búsqueda de amenazas administrado por Expertos en amenazas de Microsoft para obtener notificaciones proactivas de ataques dirigidos y colaborar con expertos a petición. Expertos a petición es un servicio de complemento. Las notificaciones de ataques dirigidos siempre se incluyen después de que se le haya aceptado en el servicio de búsqueda de amenazas administrado por Expertos en amenazas de Microsoft.<p>
-><p>Si aún no está inscrito y desea disfrutar de sus ventajas, vaya a <b>Configuración</b> > <b>Características generales</b> > <b>Características avanzadas</b> > <b>Expertos en amenazas de Microsoft</b> para solicitar el servicio. Una vez aceptado, obtendrá las ventajas de las notificaciones de ataques dirigidos e iniciará una prueba de 90 días de Expertos a petición. Póngase en contacto con su representante de Microsoft para obtener una suscripción completa a Expertos a petición.
+> [!IMPORTANT]
+> Los clientes de Defender para punto de conexión deben solicitar el servicio de Búsqueda de amenazas administrado por Expertos en amenazas de Microsoft para obtener notificaciones proactivas de ataques dirigidos y colaborar con expertos a petición. Expertos a petición es un servicio de complemento. Las notificaciones de ataques dirigidos siempre se incluyen después de que se le haya aceptado en el servicio de búsqueda de amenazas administrado por Expertos en amenazas de Microsoft.
+>
+> Si aún no está inscrito y desea disfrutar de sus ventajas, vaya a **Configuración** \> **Características generales** \> **Características avanzadas** \> **Expertos en amenazas de Microsoft** para solicitar el servicio. Una vez aceptado, obtendrá las ventajas de las notificaciones de ataques dirigidos e iniciará una prueba de 90 días de Expertos a petición. Póngase en contacto con su representante de Microsoft para obtener una suscripción completa a Expertos a petición.
 
 <a name="apis"></a>
 
-**[Configuración y administración centralizadas, API](management-apis.md)**<br>
+**[Configuración y administración centralizadas, API](management-apis.md)**
+
 Integre Microsoft Defender para punto de conexión en los flujos de trabajo existentes.
 
 <a name="mtp"></a>
 
-**[Integración con las soluciones de Microsoft](threat-protection-integration.md)** <br>
+**[Integración con las soluciones de Microsoft](threat-protection-integration.md)**
+
 Defender para punto de conexión se integra directamente con varias soluciones de Microsoft, entre las que se incluyen:
+
 - Azure Defender
 - Azure Sentinel
 - Intune
@@ -134,7 +149,6 @@ Defender para punto de conexión se integra directamente con varias soluciones d
 - Microsoft Defender para Office
 - Skype Empresarial
 
-**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
+
 Con Microsoft 365 Defender, Defender para punto de conexión y varias soluciones de seguridad de Microsoft forman un conjunto unificado de defensa empresarial previa y posterior a la infracción que se integra de forma nativa en los puntos de conexión, la identidad, el correo electrónico y las aplicaciones para detectar, evitar, investigar y responder automáticamente a ataques sofisticados.
-
-

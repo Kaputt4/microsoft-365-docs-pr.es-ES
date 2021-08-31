@@ -16,12 +16,12 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0fc7b51988f67c0f2e570e23bdb58e1aa32d35fe55347d1ace550de80f4d6fb6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44c3b0a208c8c870343fc551728f105d4f380de4
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806729"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823846"
 ---
 # <a name="manage-event-based-forced-updates"></a>Administrar las actualizaciones forzadas basadas en eventos
 
@@ -40,7 +40,7 @@ Puede usar Microsoft Endpoint Configuration Manager, directiva de grupo, cmdlets
 
 ### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>Usar Configuration Manager para buscar actualizaciones de protección antes de ejecutar un examen
 
-1. En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas  >    >  **antimalware**)
+1. En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos  y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas \>  \> **antimalware**)
 
 2. Vaya a la **sección Exámenes programados** y establezca **Comprobar las últimas** actualizaciones de inteligencia de seguridad antes de ejecutar un examen en **Sí**.
 
@@ -56,7 +56,7 @@ Puede usar Microsoft Endpoint Configuration Manager, directiva de grupo, cmdlets
 
 3. Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-4. Expanda el árbol para Windows **componentes**  >  **Antivirus de Microsoft Defender**  >  **Scan**.
+4. Expanda el árbol para Windows **componentes** \> **Antivirus de Microsoft Defender** \> **Scan**.
 
 5. Haga doble clic **en Comprobar las definiciones de virus** y spyware más recientes antes de ejecutar un examen programado y establezca la opción en **Habilitado**.
 
@@ -92,9 +92,9 @@ Puedes usar la directiva de grupo para forzar Antivirus de Microsoft Defender pa
 
 3. Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones  >    >  **de inteligencia de seguridad**.
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones \>  \> **de inteligencia de seguridad**.
 
-5. Haz doble clic **en Comprobar las definiciones de virus y spyware** más recientes al iniciar y establece la opción en **Habilitado**. 
+5. Haz doble clic **en Comprobar las definiciones de virus y spyware** más recientes al iniciar y establece la opción en **Habilitado**.
 
 6. Haga clic en **Aceptar**.
 
@@ -108,7 +108,7 @@ También puede usar la directiva de grupo, PowerShell o WMI para configurar Anti
 
 3. Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones  >    >  **de inteligencia de seguridad**.
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones \>  \> **de inteligencia de seguridad**.
 
 5. Haz doble clic en **Iniciar actualización de inteligencia de seguridad al** inicio y establece la opción en **Habilitado**.
 
@@ -150,16 +150,16 @@ Si ha habilitado la protección de entrega en la nube, Microsoft Defender AV env
 
 3. Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones  >    >  **de inteligencia de seguridad**.
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones \>  \> **de inteligencia de seguridad**.
 
 5. Haga doble clic en Permitir actualizaciones de inteligencia de seguridad en tiempo real basadas en informes **de Microsoft MAPS** y establezca la opción en **Habilitado**. Después, haga clic en **Aceptar**.
 
 6. **Permitir que las notificaciones deshabilite informes basados en definiciones en Microsoft MAPS** y establezca la opción en **Habilitado**. Después, haga clic en **Aceptar**.
-    
+
 > [!NOTE]
 > **Permitir que las notificaciones deshabilite los informes basados** en definiciones permite a Microsoft MAPS deshabilitar esas definiciones conocidas por causar informes falsos positivos. Debe configurar el equipo para que se una a Microsoft MAPS para que esta función funcione.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Implementar Antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)

@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: badf2f18f85b2f8776dec4b119e58ad3839c9074db17f24083ca648c8c24e730
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d00c4a541951ee1c241a52a19b8ec27301b793a1
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884552"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823798"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Administrar las actualizaciones de dispositivos móviles y máquinas virtuales
 
@@ -45,7 +45,7 @@ Los artículos siguientes también pueden ser útiles en estas situaciones:
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Participar en Microsoft Update en equipos móviles sin conexión WSUS
 
-Puedes usar Microsoft Update para mantener actualizada la inteligencia de seguridad en dispositivos móviles que ejecutan Antivirus de Microsoft Defender cuando no están conectados a la red corporativa o si no tienen una conexión WSUS. 
+Puedes usar Microsoft Update para mantener actualizada la inteligencia de seguridad en dispositivos móviles que ejecutan Antivirus de Microsoft Defender cuando no están conectados a la red corporativa o si no tienen una conexión WSUS.
 
 Esto significa que las actualizaciones de protección se pueden entregar a dispositivos (a través de Microsoft Update) incluso si has establecido WSUS para invalidar Microsoft Update.
 
@@ -63,10 +63,9 @@ Puedes participar en Microsoft Update en el dispositivo móvil de una de las sig
 
 3. Seleccione **Directivas y,** **a continuación, Plantillas administrativas.**
 
-4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones  >    >  **de firma**.
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones \>  \> **de firma**.
 
 5. Establezca **Permitir actualizaciones de inteligencia de seguridad de Microsoft Update** en **Habilitado** y, a continuación, seleccione  **Aceptar**.
-
 
 ### <a name="use-a-vbscript-to-opt-in-to-microsoft-update"></a>Usar un VBScript para participar en Microsoft Update
 
@@ -84,17 +83,17 @@ Puedes participar en Microsoft Update en el dispositivo móvil de una de las sig
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Impedir actualizaciones de inteligencia de seguridad al ejecutarse con batería
 
-Puede configurar el Antivirus de Microsoft Defender para descargar solo las actualizaciones de protección cuando el equipo está conectado a una fuente de alimentación cableada. 
+Puede configurar el Antivirus de Microsoft Defender para descargar solo las actualizaciones de protección cuando el equipo está conectado a una fuente de alimentación cableada.
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Usar la directiva de grupo para evitar actualizaciones de inteligencia de seguridad en la batería
 
-1.  En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))elija el objeto de directiva de grupo que desea configurar y ábralo para su edición.
+1. En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))elija el objeto de directiva de grupo que desea configurar y ábralo para su edición.
 
-2.  En el **Editor de administración de directivas de grupo** vaya a Configuración del **equipo.**
+2. En el **Editor de administración de directivas de grupo** vaya a Configuración del **equipo.**
 
-3.  Seleccione **Directivas y,** **a continuación, Plantillas administrativas.**
+3. Seleccione **Directivas y,** **a continuación, Plantillas administrativas.**
 
-4.  Expanda el árbol para **Windows componentes** Antivirus de Microsoft Defender de firma  >    >  y, a continuación, establezca **Permitir** actualizaciones de inteligencia de seguridad al ejecutar la batería en Deshabilitado . A continuación, seleccione **Aceptar**. 
+4. Expanda el árbol para **Windows componentes** Antivirus de Microsoft Defender de firma \>  \> y, a continuación, establezca **Permitir** actualizaciones de inteligencia de seguridad al ejecutar la batería en Deshabilitado . A continuación, seleccione **Aceptar**.
 
 Esta acción impide que las actualizaciones de protección se descarguen cuando el equipo está en batería.
 

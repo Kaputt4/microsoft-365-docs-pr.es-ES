@@ -9,18 +9,21 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Una introducción a la aplicación Microsoft Bookings, que incluye un calendario de reservas basado en web e se integra con Outlook para optimizar el calendario de su personal y dar a sus clientes flexibilidad para reservar citas.
-ms.openlocfilehash: 339c8c2457b340dd863b5c9f8e0382b84ef43c08
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c1bc36ea7724cdb29394b60fafa0178a08aab117
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256132"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823737"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
-Microsoft Bookings facilita la programación y la administración de citas. Bookings incluye un calendario de reservas basado en web y se integra con Outlook para optimizar el calendario de su personal y dar a sus clientes flexibilidad para reservar un tiempo que mejor les funcione. Los correos electrónicos automatizados de notificación reducen los no-shows y mejoran la satisfacción del cliente, y las organizaciones ahorran tiempo con una reducción en las tareas de programación repetitivas. Con la flexibilidad integrada y la capacidad de personalizar, bookings se puede diseñar para adaptarse a la situación y las necesidades de muchas partes diferentes de una organización. El calendario de Bookings es un buzón de Exchange Online.
+Microsoft Bookings facilita la programación y la administración de citas. Bookings incluye un calendario de reservas basado en web y se integra con Outlook para optimizar el calendario de su personal y dar a sus clientes flexibilidad para reservar un tiempo que mejor les funcione. Las notificaciones de texto por correo electrónico y SMS reducen los no-shows y mejoran la satisfacción del cliente La organización ahorra tiempo con una reducción en las tareas de programación repetitivas. Con la flexibilidad integrada y la capacidad de personalizar, bookings se puede diseñar para adaptarse a la situación y las necesidades de muchas partes diferentes de una organización.
 
-Bookings le ofrece la capacidad de hacer virtuales las reuniones de su organización con reuniones en línea a través de Microsoft Teams [y](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) Skype Empresarial. Cada cita reservada como reunión en línea crea un vínculo de reunión único que se envía a los asistentes para que puedan unirse a través de un explorador web, acceso telefónico telefónico o la aplicación Skype o Teams web. Bookings también está disponible como una aplicación dentro de Teams, lo que te permite crear calendarios de Bookings, asignar personal y programar nuevas citas y administrar citas existentes sin salir de Teams.
+> [!NOTE]
+> El calendario de Bookings es un buzón de Exchange Online.
+
+Use Bookings para hacer virtuales las reuniones de su organización con reuniones en línea a través de Microsoft Teams [y](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) Skype Empresarial. Cada cita reservada como reunión en línea crea un vínculo de reunión único que se envía a los asistentes para que puedan unirse a través de un explorador web, acceso telefónico telefónico o la aplicación Skype o Teams web. Bookings también está disponible como una aplicación dentro de Teams, lo que te permite crear calendarios de Bookings, asignar personal y programar nuevas citas y administrar citas existentes sin salir de Teams.
 
 Bookings tiene tres componentes principales:
 
@@ -35,14 +38,8 @@ Bookings tiene tres componentes principales:
 Microsoft Bookings está disponible en las siguientes suscripciones:
 
 - Office 365: A3, A5, E3, E5, F1, F3
-- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Premium
+- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Standard, Business Premium
 
 ## <a name="get-started-using-bookings"></a>Introducción al uso de Bookings
-
-¿Está listo para empezar?
-
-Vea este vídeo o siga los pasos siguientes para configurar Bookings.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q]
 
 Para empezar, consulte [Obtener acceso a Microsoft Bookings](get-access.md). Para activar o desactivar Bookings, consulte Activar o desactivar [Bookings para su organización.](turn-bookings-on-or-off.md)

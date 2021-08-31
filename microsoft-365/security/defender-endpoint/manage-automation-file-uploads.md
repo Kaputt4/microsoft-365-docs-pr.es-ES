@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e5e177bebfed1fe5c181e14267e418a1aeb726e4627afc9b2ab32bb1f8264b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c89b5b676e25b23e0e5fdfb925f6894647cb41e5
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806765"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823870"
 ---
 # <a name="manage-automation-file-uploads"></a>Administrar cargas de archivos de automatización
 
@@ -35,19 +35,19 @@ ms.locfileid: "53806765"
 
 Habilite la funcionalidad de análisis de contenido para que determinados archivos y datos adjuntos de correo electrónico se puedan cargar automáticamente en la nube para una inspección adicional en la investigación automatizada.
 
-Identifique los archivos y los datos adjuntos de correo electrónico especificando los nombres de extensión de archivo y los nombres de extensión de datos adjuntos de correo electrónico. 
+Identifique los archivos y los datos adjuntos de correo electrónico especificando los nombres de extensión de archivo y los nombres de extensión de datos adjuntos de correo electrónico.
 
-Por ejemplo, si agrega *exe* y *bat* como nombres de extensión de archivo o datos adjuntos, todos los archivos o datos adjuntos con esas extensiones se enviarán automáticamente a la nube para una inspección adicional durante la investigación automatizada. 
+Por ejemplo, si agrega *exe* y *bat* como nombres de extensión de archivo o datos adjuntos, todos los archivos o datos adjuntos con esas extensiones se enviarán automáticamente a la nube para una inspección adicional durante la investigación automatizada.
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>Agregue nombres de extensión de archivo y nombres de extensión de datos adjuntos.
 
-1. En el panel de navegación, **seleccione Configuración**  >  **de automatización** de  >  **reglas**  >  **de extremos.**
+1. En el panel de navegación, **seleccione Configuración** \> **de automatización** de \> **reglas** \> **de extremos.**
 
 2. Alterna la configuración del análisis de contenido **entre On** y **Off**.
 
 3. Configure los siguientes nombres de extensión y separe los nombres de extensión con una coma:
    - **Nombres de extensión de archivo:** los archivos sospechosos, excepto los datos adjuntos de correo electrónico, se enviarán para inspección adicional
-  
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Administrar las exclusiones de carpeta de automatización](manage-automation-folder-exclusions.md)

@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Obtenga información sobre cómo puede ver una vista de 4 meses de su actividad de Bookings
-ms.openlocfilehash: 8fc8a41a982135550ae711e435905c9bd39460994b1f6757b633aea49a7a48a0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ceb318f0577d6bf1f4f46f809ecabe0d1bc5d804
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838216"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823858"
 ---
 # <a name="reporting-info-for-bookings"></a>Información de informes para Bookings
 
@@ -24,17 +24,17 @@ Esta información de nivel de cita se puede usar para visualizar la actividad de
 
 ## <a name="see-four-months-of-booking-activity"></a>Ver cuatro meses de actividad de Booking
 
-1. En el panel del calendario de Bookings, **seleccione Exportar más datos como TSV**.
+1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, **seleccione Bookings**.
 
-:::image type="content" source="../media/bookings-activities.png" alt-text="Captura de pantalla: 4 meses de actividad de Bookings":::
+1. En la página principal de Bookings, seleccione **Exportar**.
+
+1. En la **página Exportar datos recientes,** seleccione el intervalo de fechas y **seleccione Exportar**.
 
 1. Guarde el archivo con un nuevo nombre y especifique .xls o formato xlsx.
 
 1. Abra el archivo para ver la vista de cuatro meses del calendario de Bookings.
 
 1. Elija la fecha del informe y seleccione **Exportar**.
-
-:::image type="content" source="../media/bookings-reporting-dates.png" alt-text="Captura de pantalla: elija un intervalo de tiempo y exporte datos al archivo TSV.":::
 
 1. El informe descargado contiene un nuevo conjunto de campos además de los campos existentes.
 
@@ -47,7 +47,7 @@ El informe incluye los siguientes campos.
 - **Dirección del cliente**
 - **Plantilla**
 - **Servicio**
-- **Ubicación**
+- **Location**
 - **Duración (minutos)**
 - **Tipo de evento**
 

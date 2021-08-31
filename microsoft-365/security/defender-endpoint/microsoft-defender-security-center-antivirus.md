@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a247aac370ba65e4ede48b0232ded1d93f6e8b99
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d8bc077e12d52a5194b6e698a989704bdc273c52
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568893"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823773"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación
 
@@ -50,7 +50,7 @@ La Seguridad de Windows es una interfaz de cliente en Windows 10 versión 1703 y
 1. Abra la Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio de **Defender**.
 
 2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
-   
+
 En las secciones siguientes se describe cómo realizar algunas de las tareas más comunes al revisar o interactuar con la protección contra amenazas proporcionada por Antivirus de Microsoft Defender en la Seguridad de Windows aplicación.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ En las secciones siguientes se describe cómo realizar algunas de las tareas má
 
 2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
 
-3. Seleccione **Actualizaciones de protección contra & virus**. La versión instalada actualmente se muestra junto con información sobre cuándo se descargó. Puede comprobar la versión actual con la versión más reciente disponible para la descarga manual o revisar el registro de cambios de esa versión. Vea [Security intelligence updates for Antivirus de Microsoft Defender and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
+3. Seleccione **Actualizaciones de protección contra & virus**. La versión instalada actualmente se muestra junto con información sobre cuándo se descargó. Puede comprobar la versión actual con la versión más reciente disponible para la descarga manual o revisar el registro de cambios de esa versión. Vea [Security intelligence updates for Antivirus de Microsoft Defender and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates).
 
 4. Seleccione **Buscar actualizaciones para** descargar nuevas actualizaciones de protección (si las hay).
 
@@ -98,21 +98,26 @@ En las secciones siguientes se describe cómo realizar algunas de las tareas má
 
 3. En Administrar **configuración,** seleccione **Virus & configuración de protección contra amenazas**.
 
-4. En la **configuración Exclusiones,** seleccione **Agregar o quitar exclusiones**. 
+4. En la **configuración Exclusiones,** seleccione **Agregar o quitar exclusiones**.
 
-5. Seleccione el icono más ( **+** ) para elegir el tipo y establecer las opciones para cada exclusión. 
+5. Seleccione el icono más ( **+** ) para elegir el tipo y establecer las opciones para cada exclusión.
 
 En la tabla siguiente se resumen los tipos de exclusión y lo que sucede:
 
-|Tipo de exclusión  |Definido por  |Qué ocurre  |
-|---------|---------|---------|
-|**Archivo** |Ubicación <br/>Ejemplo: `c:\sample\sample.test` |El archivo específico se omite Antivirus de Microsoft Defender. |
-|**Folder**    |Ubicación <br/>Ejemplo: `c:\test\sample`       |Todos los elementos de la carpeta especificada se omiten Antivirus de Microsoft Defender.         |
-|**Tipo de archivo**   |Extensión de archivo <br/>Ejemplo: `.test` |Todos los archivos con la extensión en cualquier lugar del dispositivo `.test` se omiten Antivirus de Microsoft Defender.         |
-|**Proceso**     |Ruta de acceso de archivo ejecutable <br>Ejemplo: `c:\test\process.exe`         |El proceso específico y los archivos abiertos por ese proceso se omiten Antivirus de Microsoft Defender.         |
+<br>
+
+****
+|Tipo de exclusión|Definido por|Qué ocurre|
+|---|---|---|
+|**Archivo**|Ubicación <br/>Ejemplo: `c:\sample\sample.test`|El archivo específico se omite Antivirus de Microsoft Defender.|
+|**Folder**|Ubicación <br/>Ejemplo: `c:\test\sample`|Todos los elementos de la carpeta especificada se omiten Antivirus de Microsoft Defender.|
+|**Tipo de archivo**|Extensión de archivo <br/>Ejemplo: `.test`|Todos los archivos con la extensión en cualquier lugar del dispositivo `.test` se omiten Antivirus de Microsoft Defender.|
+|**Proceso**|Ruta de acceso de archivo ejecutable <br>Ejemplo: `c:\test\process.exe`|El proceso específico y los archivos abiertos por ese proceso se omiten Antivirus de Microsoft Defender.|
+|
 
 Para obtener más información, consulte los siguientes recursos:
-- [Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta](./configure-extension-file-exclusions-microsoft-defender-antivirus.md) 
+
+- [Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta](./configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurar exclusiones para archivos abiertos por procesos](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 ## <a name="review-threat-detection-history-in-the-windows-defender-security-center-app"></a>Revisar el historial de detección de amenazas en la Windows Defender centro de seguridad
@@ -135,5 +140,6 @@ Para obtener más información, consulte los siguientes recursos:
 
 5. Para configurar las opciones  de recuperación de ransomware, selecciona Configurar en Recuperación de datos ransomware y sigue las instrucciones para vincular o configurar tu cuenta de OneDrive para que puedas recuperarte fácilmente de un ataque de ransomware. 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
+
 - [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

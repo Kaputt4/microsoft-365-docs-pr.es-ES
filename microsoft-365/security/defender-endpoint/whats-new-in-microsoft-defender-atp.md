@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f38c052c6c1755c0717d8b64987dd69b1a5826d
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 03855c101c3d89f809e6d1410fddb006650595f5
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387145"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823906"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -34,7 +34,7 @@ ms.locfileid: "58387145"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Por lo general, las siguientes características están disponibles (GA) en la versión más reciente de Microsoft Defender para endpoint, así como las características de seguridad en Windows 10 y Windows Server.
+Por lo general, las siguientes características están disponibles (GA) en la versión más reciente de Microsoft Defender para endpoint y características de seguridad en Windows 10 y Windows Server.
 
 Para obtener más información sobre las características de vista previa, vea [Preview features](preview.md).
 
@@ -45,6 +45,12 @@ Para obtener más información sobre las características de vista previa, vea [
 > ```https
 > https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
+
+## <a name="august-2021"></a>Agosto de 2021
+
+- [Plan 1 de Microsoft Defender para endpoint (versión preliminar)](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (versión preliminar) es una solución de protección de puntos de conexión que incluye protección de última generación, reducción de superficie de ataque, administración centralizada e informes y API. Defender for Endpoint Plan 1 (versión preliminar) es una nueva oferta para clientes que desean probar nuestras funcionalidades de protección de puntos de conexión, tienen Microsoft 365 E3 y aún no tienen Microsoft 365 E5. 
+
+   Para obtener más información, vea [Microsoft Defender for Endpoint Plan 1 (versión preliminar).](defender-endpoint-plan-1.md) Las [capacidades existentes](microsoft-defender-endpoint.md) de Defender para endpoint se conocerán como Defender para el Plan de extremo 2. 
 
 ## <a name="june-2021"></a>Junio de 2021
 
@@ -68,7 +74,7 @@ Para obtener más información sobre las características de vista previa, vea [
 - [Detección de jailbreak en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> La funcionalidad de detección de jailbreak en Microsoft Defender para endpoint en iOS ya está disponible en general. Esto se suma a la protección de suplantación de identidad que ya existe.  Para obtener más información, consulte [Setup Conditional Access Policy based on device risk signals](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
 
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 - [Administrar la protección contra alteraciones mediante el Centro de seguridad de Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016 y Windows Server 2019 mediante un método denominado *tenant attach*.
 
 
@@ -97,7 +103,7 @@ Para obtener más información sobre las características de vista previa, vea [
 
 - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Linux. Obtenga información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en Linux.
 
-- [Simuladores de ataque en el laboratorio de evaluación](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender para endpoint se ha asociado con varias plataformas de simulación de amenazas para ofrecerte un acceso cómodo para probar las capacidades de la plataforma desde el portal.
+- [Simuladores de ataque en el laboratorio de evaluación](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender para endpoint se ha asociado con varias plataformas de simulación de amenazas para ofrecerte un acceso cómodo para probar las capacidades de la plataforma dentro del portal.
 
 ## <a name="april-2020"></a>Abril de 2020
 
@@ -107,7 +113,7 @@ Para obtener más información sobre las características de vista previa, vea [
 
 - [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender para endpoint en macOS ofrece la protección de última generación a los dispositivos Mac. Los componentes principales de la plataforma de seguridad de extremo unificado ahora estarán disponibles para dispositivos Mac, [incluidos detección y respuesta de puntos de conexión](microsoft-defender-endpoint-mac.md).
 
-- [Información & de la aplicación de administración de vulnerabilidades y la versión de la aplicación](tvm-security-recommendation.md) <BR>Las aplicaciones y las versiones de aplicaciones que han llegado a su fin de vida se etiquetan o etiquetan como tales, por lo que es consciente de que ya no se admiten y pueden realizar acciones para desinstalar o reemplazar. Si lo hace, se reducirán los riesgos relacionados con diversas exposiciones de vulnerabilidades debido a las aplicaciones no apareadas.
+- [Información & de la aplicación de administración de vulnerabilidades y la versión de la aplicación](tvm-security-recommendation.md) <BR>Las aplicaciones y las versiones de aplicaciones que han alcanzado su fin de vida se etiquetan o etiquetan como tales para que sepas que ya no se admiten. A continuación, puede realizar acciones para desinstalar o reemplazar dichas aplicaciones. Si lo hace, se reducirán los riesgos relacionados con diversas exposiciones de vulnerabilidades debido a las aplicaciones no apareadas.
 
 - [Esquemas & de búsqueda avanzada de administración de vulnerabilidades](advanced-hunting-schema-reference.md) <BR>Use las tablas De administración & vulnerabilidad del esquema de búsqueda avanzada para consultar sobre el inventario de software, la base de conocimientos de vulnerabilidad, la evaluación de configuración de seguridad y la base de conocimientos de configuración de seguridad.
 
@@ -123,13 +129,13 @@ Para obtener más información sobre las características de vista previa, vea [
 
 - [Aplicaciones conectadas de Azure AD](connected-applications.md)<br> La página Aplicaciones conectadas proporciona información sobre las aplicaciones de Azure AD conectadas a Microsoft Defender para endpoint en su organización.
 
-- [Explorador de API](api-explorer.md)<br> El explorador de API facilita la construcción y realización de consultas api, prueba y envío de solicitudes para cualquier punto de conexión disponible de Microsoft Defender para endpoint API.
+- [Explorador de API](api-explorer.md)<br> El explorador de API facilita la construcción y realización de consultas api, pruebas y envío de solicitudes para cualquier punto de conexión disponible de Microsoft Defender para la API de extremo.
 
 ## <a name="september-2019"></a>Septiembre de 2019
 
-- [Configuración de protección contra alteraciones con Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Ahora puedes activar (o desactivar) la protección contra alteraciones de la organización en el portal de administración de dispositivos de Microsoft 365 (Intune).
+- [Configuración de protección contra alteraciones con Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Ahora puedes activar la protección contra alteraciones (o desactivada) para tu organización en el portal de administración de dispositivos de Microsoft 365 (Intune).
 
-- [Respuesta en directo](live-response.md) <BR> Obtenga acceso instantáneo a un dispositivo mediante una conexión de shell remota. Realice un trabajo de investigación detallado y realice acciones de respuesta inmediatas para contener rápidamente las amenazas identificadas: en tiempo real.
+- [Respuesta en directo](live-response.md) <BR> Obtenga acceso instantáneo a un dispositivo mediante una conexión de shell remota. Realice un trabajo de investigación en profundidad y realice acciones de respuesta inmediatas para contener rápidamente las amenazas identificadas, en tiempo real.
 
 - [Laboratorio de evaluación](evaluation-lab.md) <BR> El laboratorio de evaluación de Microsoft Defender para endpoints está diseñado para eliminar las complejidades de la configuración de dispositivos y entornos para que puedas centrarte en evaluar las capacidades de la plataforma, ejecutar simulaciones y ver las características de prevención, detección y corrección en acción.
 
@@ -145,7 +151,7 @@ Para obtener más información sobre las características de vista previa, vea [
 
 - [Informes de protección contra amenazas](threat-protection-reports.md)<BR>El informe de protección contra amenazas proporciona información de alto nivel sobre las alertas generadas en la organización.
 
-- [Expertos en amenazas de Microsoft](microsoft-threat-experts.md)<BR> Expertos en amenazas de Microsoft es el nuevo servicio de búsqueda de amenazas administradas en Microsoft Defender para endpoint que proporciona búsqueda proactiva, priorización y contexto y conocimientos adicionales que permiten a los centros de operaciones de seguridad (SOC) identificar y responder a las amenazas de forma rápida y precisa. Proporciona una capa adicional de experiencia y óptica que los clientes de Microsoft pueden usar para aumentar las capacidades de operación de seguridad como parte de Microsoft 365.
+- [Expertos en amenazas de Microsoft](microsoft-threat-experts.md)<BR> Expertos en amenazas de Microsoft es el nuevo servicio de búsqueda de amenazas administradas en Microsoft Defender para endpoint que proporciona búsqueda proactiva, priorización y más contexto y conocimientos que permiten a los centros de operaciones de seguridad (SOC) identificar y responder a las amenazas de forma rápida y precisa. Proporciona otra capa de experiencia y óptica que los clientes de Microsoft pueden usar para aumentar las capacidades de operación de seguridad como parte de Microsoft 365.
 
 - [Indicadores](ti-indicator.md) <BR> Las API para indicadores ya están disponibles en general.
 

@@ -2,14 +2,21 @@
 
 ## [Información general]()
 ### [¿Qué es Microsoft Defender para punto de conexión?](microsoft-defender-endpoint.md)
+### [Comparar los planes 1 y 2 de Defender para punto de conexión](defender-endpoint-plan-1-2.md)
 ### [Requisitos mínimos](minimum-requirements.md)
 ### [¿Cuáles son las novedades de Microsoft Defender para punto de conexión?](whats-new-in-microsoft-defender-atp.md)
 ### [Versión preliminar de las características](preview.md)
 ### [Almacenamiento de datos y privacidad](data-storage-privacy.md)
 ### [Introducción al Centro de seguridad de Microsoft Defender](use.md)
 ### [Introducción al portal](portal-overview.md)
+### [Plan 1 de Defender para punto de conexión (versión preliminar)]()
+#### [Información general](defender-endpoint-plan-1.md)
+#### [Instalación y configuración](mde-p1-setup-configuration.md)
+#### [Introducción](mde-plan1-getting-started.md)
+#### [Mantenimiento y funcionamiento](mde-p1-maintenance-operations.md)
 ### [Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU](gov.md)
 ### [Microsoft Defender para punto de conexión en plataformas que no sean de Windows](non-windows.md)
+
 
 ## [Funcionalidades de evaluación](evaluation-lab.md)
 
@@ -27,18 +34,15 @@
 #### [Incorporar dispositivos admitidos](onboard-configure.md)
 
 ## [Guías de migración](migration-guides.md)
-### [Cambiar de una protección de puntos de conexión distinta de Microsoft a Defender para punto de conexión]()
-#### [Introducción a la migración](switch-to-microsoft-defender-migration.md)
+### [Cambiar de una protección de puntos de conexión distinta de Microsoft a Defender para punto de conexión](switch-to-microsoft-defender-migration.md)
 #### [Fase 1: Preparación](switch-to-microsoft-defender-prepare.md)
 #### [Fase 2: Configuración](switch-to-microsoft-defender-setup.md)
 #### [Fase 3: Incorporación](switch-to-microsoft-defender-onboard.md)
-### [Administrar Defender para punto de conexión después de la migración]()
-#### [Información general sobre la administración de Defender para punto de conexión](manage-atp-post-migration.md)
-#### [Intune (recomendado)](manage-atp-post-migration-intune.md)
-#### [Configuration Manager](manage-atp-post-migration-configuration-manager.md)
-#### [Objetos de directiva de grupo](manage-atp-post-migration-group-policy-objects.md)
-#### [PowerShell, WMI y MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
-
+### [Administrar Defender para punto de conexión después de la migración](manage-atp-post-migration.md)
+#### [Usar Intune (recomendado)](manage-atp-post-migration-intune.md)
+#### [Usar el Administrador de configuración](manage-atp-post-migration-configuration-manager.md)
+#### [Usar la directiva de grupo](manage-atp-post-migration-group-policy-objects.md)
+#### [Usar PowerShell, WMI o MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
 
 ## [Configurar e incorporar dispositivos]()
 ### [Microsoft Defender para punto de conexión en Windows Server]()
@@ -248,7 +252,7 @@
 #### [Usar el modo de auditoría para ataques a la reducción de superficie](audit-windows-defender.md)
 
 ### Protección de última generación
-#### [Información sobre los servicios de protección de nueva generación](next-generation-protection.md)
+#### [Información sobre los servicios de protección de última generación](next-generation-protection.md)
 ##### [Introducción al Antivirus de Microsoft Defender](microsoft-defender-antivirus-windows.md)
 ##### [Antivirus de Microsoft Defender en Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión](why-use-microsoft-defender-antivirus.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 938c8b8764961930e80de562bdf9fc82f622da5d5b5793ca35c9e5a40a37ea09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac8b6255b46c20582d43680b3287f324f4f63c42
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806312"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823979"
 ---
 # <a name="manage-suppression-rules"></a>Administrar reglas de supresión
 
@@ -40,7 +40,7 @@ Puede haber escenarios en los que necesite suprimir las alertas para que no apar
 Puede ver una lista de todas las reglas de supresión y administrarlas en un solo lugar. También puede activar o desactivar una regla de supresión de alertas.
 
 
-1. En el panel de navegación, seleccione **Configuración**  >  **de alerta de reglas**  >  **de** extremos  >  . Se muestra la lista de reglas de supresión que los usuarios de la organización han creado.
+1. En el panel de navegación, seleccione **Configuración** \> **de alerta de reglas** \> **de** extremos \> . Se muestra la lista de reglas de supresión que los usuarios de la organización han creado.
 
 2. Seleccione una regla haciendo clic en la casilla situada junto al nombre de la regla.
 
@@ -49,7 +49,7 @@ Puede ver una lista de todas las reglas de supresión y administrarlas en un sol
 
 ## <a name="view-details-of-a-suppression-rule"></a>Ver detalles de una regla de supresión
 
-1. En el panel de navegación, seleccione **Configuración**  >  **de alerta de reglas**  >  **de** extremos  >  . Se muestra la lista de reglas de supresión que los usuarios de la organización han creado.
+1. En el panel de navegación, seleccione **Configuración** \> **de alerta de reglas** \> **de** extremos \> . Se muestra la lista de reglas de supresión que los usuarios de la organización han creado.
 
 2. Haga clic en un nombre de regla. Se muestran los detalles de la regla. Verá los detalles de la regla, como el estado, el ámbito, la acción, el número de alertas de coincidencia, creadas por y la fecha en que se creó la regla. También puede ver las alertas asociadas y las condiciones de regla.
 

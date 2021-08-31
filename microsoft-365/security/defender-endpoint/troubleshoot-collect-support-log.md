@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 83f6853217112741168876d92b9440869e29a5c1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 347b999dd289f00e2493f2cf5d8c003e0dc24f1a
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575509"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823943"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Recopilar registros de soporte técnico en Microsoft Defender para endpoint mediante respuesta en directo
 
@@ -81,9 +81,14 @@ En este tema se proporcionan instrucciones sobre cómo ejecutar la herramienta m
 >   ```
 >
 > - Para obtener más información sobre la recopilación de datos localmente en una máquina en caso de que la máquina no se comunique con Microsoft Defender para los servicios en la nube de endpoints o no aparezca en el portal de Microsoft Defender para endpoints como se esperaba, consulte [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls).
+> 
+> - Tal como se describe en [Ejemplos](live-response-command-examples.md)de comandos de respuesta en directo, es posible que desee usar el símbolo "&" al final del comando para recopilar registros como una acción en segundo plano:
+>   ```console
+>   Run MDELiveAnalyzer.ps1&
+>   ```
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 - [Información general del Analizador de clientes](overview-client-analyzer.md)
 - [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)
 - [Ejecutar el Analizador de clientes en Windows](run-analyzer-windows.md)

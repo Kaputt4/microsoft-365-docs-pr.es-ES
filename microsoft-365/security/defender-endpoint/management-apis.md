@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 29a9e73ec4204b8083b22f427cf0271955f0ba2d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 96091f2c1a13b86d46a7ddb670dc3b42b034915a
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576205"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823605"
 ---
 # <a name="overview-of-management-and-apis"></a>Introducción a la administración y las API
 
@@ -51,6 +51,7 @@ Defender for Endpoint proporciona un control preciso sobre lo que los usuarios c
 - Divisiones totalmente segregadas con equipos de operaciones de seguridad global centralizados únicos
 
 ## <a name="available-apis"></a>API disponibles
+
 La solución de Microsoft Defender para endpoint se basa en una plataforma lista para la integración.
 
 Defender for Endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API le permitirán automatizar flujos de trabajo e innovar en función de las capacidades de Defender para endpoints.
@@ -68,7 +69,8 @@ Las API de Defender for Endpoint se pueden agrupar en tres:
 Defender for Endpoint ofrece un modelo de API en capas que expone datos y capacidades en un modelo estructurado, claro y fácil de usar, expuesto a través de un modelo estándar de autenticación y autorización basado en Azure AD que permite el acceso en contexto de usuarios o aplicaciones SaaS. El modelo de API se diseñó para exponer entidades y funcionalidades de forma coherente.
 
 Vea este vídeo para obtener una introducción rápida a las API de Defender para Endpoint.
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
 La **API** de investigación expone la riqueza de Defender para endpoint: expone entidades calculadas o "perfiladas" (por ejemplo, dispositivo, usuario y archivo) y eventos discretos (por ejemplo, creación de procesos y creación de archivos) que normalmente describen un comportamiento relacionado con una entidad, lo que habilita el acceso a los datos a través de interfaces de investigación que permiten un acceso basado en consultas a los datos. Para obtener más información, vea [Supported API](exposed-apis-list.md).
 

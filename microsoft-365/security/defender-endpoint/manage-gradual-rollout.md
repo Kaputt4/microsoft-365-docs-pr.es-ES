@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 56ccdc577c85a91dfbeb22c466251607a330c30f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 85b021d42741919a64555de3ecd748e096457939
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256735"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58824015"
 ---
-#  <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Administrar el proceso de implementación gradual para actualizaciones de Microsoft Defender
+# <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Administrar el proceso de implementación gradual para actualizaciones de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,16 +36,15 @@ ms.locfileid: "58256735"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-
 Es importante asegurarse de que los componentes del cliente estén actualizados para ofrecer capacidades de protección críticas y evitar ataques.
 
-Las funcionalidades se proporcionan a través de varios componentes: 
+Las funcionalidades se proporcionan a través de varios componentes:
 
-- [Respuesta de detección & extremo](overview-endpoint-detection-response.md) 
-- [Protección de última generación](microsoft-defender-antivirus-windows.md) con [protección entregada en la nube](cloud-protection-microsoft-defender-antivirus.md) 
+- [Respuesta de detección & extremo](overview-endpoint-detection-response.md)
+- [Protección de última generación](microsoft-defender-antivirus-windows.md) con [protección entregada en la nube](cloud-protection-microsoft-defender-antivirus.md)
 - [Reducción de superficie de ataque](overview-attack-surface-reduction.md)
 
-Las actualizaciones se lanzan mensualmente mediante un proceso de lanzamiento gradual. Este proceso ayuda a habilitar la detección temprana de errores para detectar el impacto a medida que se produce y solucionarlo rápidamente antes de una implementación más grande. 
+Las actualizaciones se lanzan mensualmente mediante un proceso de lanzamiento gradual. Este proceso ayuda a habilitar la detección temprana de errores para detectar el impacto a medida que se produce y solucionarlo rápidamente antes de una implementación más grande.
 
 > [!NOTE]
 > Para obtener más información sobre cómo controlar las actualizaciones diarias de inteligencia de seguridad, [vea Schedule Antivirus de Microsoft Defender protection updates](manage-protection-update-schedule-microsoft-defender-antivirus.md). Las actualizaciones garantizan que la protección de última generación pueda defenderse de las nuevas amenazas, incluso si la protección entregada en la nube no está disponible para el punto de conexión.
@@ -69,7 +68,7 @@ Si las máquinas reciben actualizaciones de Defender de Windows Update, el proce
 
 Para las máquinas que reciben actualizaciones a través de, por ejemplo, Windows Server Update Services (WSUS) o Microsoft Endpoint Configuration Manager (MECM), hay más opciones disponibles para todas las actualizaciones de Windows, incluidas las opciones de Microsoft Defender para Endpoint.
 
-- Obtenga más información sobre cómo usar una solución como WSUS, MECM para administrar la distribución y aplicación de actualizaciones en [Manage Antivirus de Microsoft Defender updates and apply baselines - Windows security | Microsoft Docs](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- Obtenga más información sobre cómo usar una solución como WSUS, MECM para administrar la distribución y la aplicación de actualizaciones en [Manage Antivirus de Microsoft Defender updates and apply baselines - Windows security](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 
 ## <a name="update-channels-for-monthly-updates"></a>Actualizar canales para actualizaciones mensuales
 
@@ -79,23 +78,33 @@ Para obtener más información sobre cómo configurar actualizaciones, vea [Crea
 
 Los siguientes canales de actualización están disponibles:
 
-| Nombre del canal  | Descripción  | Aplicación  |
-|-|-|-|
-| Canal beta: versión preliminar  | Probar actualizaciones antes que otras  | Los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones mensuales. Seleccione Canal beta para participar en la identificación y la presentación de informes de problemas a Microsoft. Los dispositivos del Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba.  |
-| Canal actual (vista previa)  | Obtener actualizaciones del canal actual **antes** durante la versión gradual  | Los dispositivos establecidos en este canal recibirán actualizaciones lo antes posible durante el ciclo de lanzamiento gradual. Sugerido para entornos de preproducción/validación.  |
-| Canal actual (por fases)  | Obtener actualizaciones del canal actual más adelante durante la versión gradual  | Los dispositivos se ofrecerán actualizaciones más adelante durante el ciclo de lanzamiento gradual. Se sugiere aplicar a una parte pequeña y representativa de la población de dispositivos (~10%).  |
-| Canal actual (ancho) | Obtener actualizaciones al final de la versión gradual  | Solo se ofrecerán actualizaciones a los dispositivos una vez completado el ciclo de lanzamiento gradual. Se recomienda aplicar a un amplio conjunto de dispositivos de la población de producción (~10-100%).  |
-| (valor predeterminado)  |   | Si deshabilitas o no configuras esta directiva, el dispositivo permanecerá en Canal actual (predeterminado): mantenerse actualizado automáticamente durante el ciclo de lanzamiento gradual. Adecuado para la mayoría de los dispositivos.  |
+<br>
+
+****
+
+|Nombre de canal|Descripción|Aplicación|
+|---|---|---|
+|Canal beta: versión preliminar|Probar actualizaciones antes que otras|Los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones mensuales. Seleccione Canal beta para participar en la identificación y la presentación de informes de problemas a Microsoft. Los dispositivos del Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba.|
+|Canal actual (vista previa)|Obtener actualizaciones del canal actual **antes** durante la versión gradual|Los dispositivos establecidos en este canal recibirán actualizaciones lo antes posible durante el ciclo de lanzamiento gradual. Sugerido para entornos de preproducción/validación.|
+|Canal actual (por fases)|Obtener actualizaciones del canal actual más adelante durante la versión gradual|Los dispositivos se ofrecerán actualizaciones más adelante durante el ciclo de lanzamiento gradual. Se sugiere aplicar a una parte pequeña y representativa de la población de dispositivos (~10%).|
+|Canal actual (ancho)|Obtener actualizaciones al final de la versión gradual|Solo se ofrecerán actualizaciones a los dispositivos una vez completado el ciclo de lanzamiento gradual. Se recomienda aplicar a un amplio conjunto de dispositivos de la población de producción (~10-100%).|
+|(valor predeterminado)||Si deshabilitas o no configuras esta directiva, el dispositivo permanecerá en Canal actual (predeterminado): mantenerse actualizado automáticamente durante el ciclo de lanzamiento gradual. Adecuado para la mayoría de los dispositivos.|
+|
 
 ### <a name="update-channels-for-daily-updates"></a>Actualizar canales para actualizaciones diarias
 
 También puedes asignar una máquina a un canal para definir la cadencia en la que recibe actualizaciones diarias. Tenga en cuenta que, a diferencia del proceso mensual, no hay ningún canal Beta y este ciclo de lanzamiento gradual se produce varias veces al día.
-  
-| Nombre del canal  | Descripción  | Aplicación  |
-|-|-|-|
-| Canal actual (por fases)  | Obtener actualizaciones del canal actual más adelante durante la versión gradual  | Los dispositivos se ofrecerán actualizaciones más adelante durante el ciclo de lanzamiento gradual. Se sugiere aplicar a una parte pequeña y representativa de la población de dispositivos (~10%).  |
-| Canal actual (ancho) | Obtener actualizaciones al final de la versión gradual  | Los dispositivos se ofrecerán actualizaciones después del ciclo de lanzamiento gradual. Ideal para máquinas de centros de datos que solo reciben actualizaciones limitadas. Nota: esta configuración se aplica a todas las actualizaciones de Defender.  |
-| (valor predeterminado)  |   | Si deshabilitas o no configuras esta directiva, el dispositivo permanecerá en Canal actual (predeterminado): mantenerse actualizado automáticamente durante el ciclo de lanzamiento gradual. Adecuado para la mayoría de los dispositivos  |
+
+<br>
+
+****
+
+|Nombre de canal|Descripción|Aplicación|
+|---|---|---|
+|Canal actual (por fases)|Obtener actualizaciones del canal actual más adelante durante la versión gradual|Los dispositivos se ofrecerán actualizaciones más adelante durante el ciclo de lanzamiento gradual. Se sugiere aplicar a una parte pequeña y representativa de la población de dispositivos (~10%).|
+|Canal actual (ancho)|Obtener actualizaciones al final de la versión gradual|Los dispositivos se ofrecerán actualizaciones después del ciclo de lanzamiento gradual. Ideal para máquinas de centros de datos que solo reciben actualizaciones limitadas. Nota: esta configuración se aplica a todas las actualizaciones de Defender.|
+|(valor predeterminado)||Si deshabilitas o no configuras esta directiva, el dispositivo permanecerá en Canal actual (predeterminado): mantenerse actualizado automáticamente durante el ciclo de lanzamiento gradual. Adecuado para la mayoría de los dispositivos|
+|
 
 > [!NOTE]
 > En caso de que desee forzar una actualización a la firma más reciente en lugar de aprovechar el retraso de tiempo, primero tendrá que quitar esta directiva.
@@ -111,13 +120,15 @@ Para entornos en los que es necesario un lanzamiento gradual más controlado de 
 3. Designe un grupo de máquinas que reciban actualizaciones más adelante durante el lanzamiento gradual desde el canal por fases. Normalmente, esto sería un representante ~10% de la población.
 4. Designe un grupo de máquinas que reciban actualizaciones una vez completado el ciclo de lanzamiento gradual. Por lo general, se trata de sistemas de producción importantes.
 
-Para el resto de dispositivos, la configuración predeterminada es recibir nuevas actualizaciones a medida que llegan durante el proceso de implementación gradual de Microsoft y no se requiere ninguna configuración adicional. 
+Para el resto de dispositivos, la configuración predeterminada es recibir nuevas actualizaciones a medida que llegan durante el proceso de implementación gradual de Microsoft y no se requiere ninguna configuración adicional.
 
 Adoptar este modelo:
-- Permite probar las versiones anticipadas antes de que lleguen a un entorno de producción 
+
+- Permite probar las versiones anticipadas antes de que lleguen a un entorno de producción
 - Asegúrese de que el entorno de producción sigue recibindo actualizaciones periódicas y de garantizar la protección contra amenazas críticas.
 
 ## <a name="management-tools"></a>Herramientas de administración
+
 Para crear su propio proceso de implementación gradual personalizado para actualizaciones mensuales, puede usar las siguientes herramientas:
 
 - Directiva de grupo

@@ -16,12 +16,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0f5f9e440690ad9fa04b4ceb762d564a895a7792be90a7ecbe4b0517d26a6a94
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9ee1417d071700b1cece8da6d3d1815e1ff8ff9d
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806321"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823810"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Administrar las actualizaciones y análisis del Antivirus de Windows Defender para puntos de conexión que están obsoletos
 
@@ -44,7 +44,7 @@ Si Antivirus de Microsoft Defender las actualizaciones de protección durante un
 
 ### <a name="use-configuration-manager-to-configure-catch-up-protection-updates"></a>Usar Configuration Manager para configurar actualizaciones de protección de ponerse al día
 
-1. En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas  >    >  **antimalware**)
+1. En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos  y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas \>  \> **antimalware**)
 
 2. Vaya a la **sección Actualizaciones de inteligencia de** seguridad y configure las siguientes opciones:
 
@@ -172,7 +172,7 @@ Vea lo siguiente para obtener más información y parámetros permitidos:
 
 ### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>Usar Configuration Manager para configurar exámenes de ponerse al día
 
-1. En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas  >    >  **antimalware**)
+1. En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos  y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas \>  \> **antimalware**)
 
 2. Vaya a la **sección Exámenes programados** y Forzar un examen del tipo de examen seleccionado si el equipo cliente **está sin conexión...** a **Sí**.
 

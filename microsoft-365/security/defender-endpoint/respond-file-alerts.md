@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b8eab3ee1244a56c41ad2eea806c8933e9224e47
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f582ff83a790d56b936c93f3e40aac76c7e5df1b
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58559087"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823713"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -329,3 +329,4 @@ Si encuentra un problema al intentar enviar un archivo, pruebe cada uno de los s
 
 - [Realizar acciones de respuesta en un dispositivo](respond-machine-alerts.md)
 - [Investigar archivos](investigate-files.md)
+- [Acciones de respuesta manuales en Microsoft Defender para endpoint plan 1 (versión preliminar)](defender-endpoint-plan-1.md#manual-response-actions)
