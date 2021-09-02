@@ -1,6 +1,6 @@
 ---
-title: Activar la protección entregada en la nube en Antivirus de Microsoft Defender
-description: Active la protección entregada en la nube para beneficiarse de las características de protección rápidas y avanzadas.
+title: Activar la protección en la nube en Antivirus de Microsoft Defender
+description: Activa la protección en la nube para beneficiarte de las características de protección rápidas y avanzadas.
 keywords: Antivirus de Microsoft Defender, antimalware, seguridad, nube, bloquear a primera vista
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -10,48 +10,43 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 06/17/2021
-ms.reviewer: ''
+ms.date: 08/31/2021
+ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: c7a7b3a09a8e8c7cc1a20beab8e2a895702eea27
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 82b773488fffb5b37390cc72043c1b011c5c6685
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595343"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863946"
 ---
-# <a name="turn-on-cloud-delivered-protection"></a>Activar la protección proporcionada en la nube
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activar la protección en la nube en Antivirus de Microsoft Defender
 
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- Antivirus de Microsoft Defender
 
-> [!NOTE]
-> El Antivirus de Microsoft Defender en la nube es un mecanismo para ofrecer protección actualizada a la red y los puntos de conexión. Aunque se denomina servicio en la nube, no es simplemente protección para los archivos almacenados en la nube; en su lugar, usa recursos distribuidos y aprendizaje automático para ofrecer protección a los puntos de conexión a una velocidad mucho más rápida que las actualizaciones de inteligencia de seguridad tradicionales.
+[La protección en la nube Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) proporciona una protección precisa, en tiempo real e inteligente. La protección en la nube debe estar habilitada de forma predeterminada; sin embargo, puede configurar la protección en la nube para que se adapte a las necesidades de su organización.
 
-Antivirus de Microsoft Defender varias tecnologías de detección y prevención para ofrecer una protección precisa, en tiempo real e inteligente. [Conozca las tecnologías avanzadas en el núcleo de La](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)protección de última generación de Microsoft Defender para endpoint.
+## <a name="methods-to-configure-cloud-protection"></a>Métodos para configurar la protección en la nube
 
-Puede activar o desactivar la Antivirus de Microsoft Defender de entrega en la nube de varias maneras:
+Puede activar o desactivar Antivirus de Microsoft Defender protección en la nube mediante uno de varios métodos:
 
-- Microsoft Intune
-- Microsoft Endpoint Manager
+- Microsoft Endpoint Manager, que incluye Microsoft Intune y Configuration Manager
 - Directiva de grupo
-- Cmdlets de PowerShell.
+- Cmdlets de PowerShell
 
- También puedes activarla o desactivarla en clientes individuales con la Seguridad de Windows aplicación.
+También puedes activar o desactivar la protección en la nube en puntos de conexión individuales mediante la Seguridad de Windows aplicación. 
 
-Consulte [Usar la protección entregada en la nube de Microsoft](cloud-protection-microsoft-defender-antivirus.md) para obtener información general Antivirus de Microsoft Defender protección entregada en la nube.
-
-Para obtener más información acerca de los requisitos específicos de conectividad de red para garantizar que los puntos de conexión se puedan conectar al servicio de protección entregado en la nube, vea [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md).
+Para obtener más información acerca de los requisitos específicos de conectividad de red para garantizar que los puntos de conexión se puedan conectar al servicio de protección en la nube, vea [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md).
 
 > [!NOTE]
-> En Windows 10, no hay ninguna diferencia  entre  las opciones de informes básicas y avanzadas que se describen en este tema. Esta es una distinción heredada y elegir cualquiera de las dos opciones dará como resultado el mismo nivel de protección entregada en la nube. No hay ninguna diferencia en el tipo o la cantidad de información que se comparte. Para obtener más información sobre lo que recopilamos, vea la [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?linkid=521839).
+> En Windows 10, no hay ninguna diferencia  entre  las opciones de informes básicas y avanzadas que se describen en este tema. Esta es una distinción heredada y elegir cualquiera de las dos opciones dará como resultado el mismo nivel de protección en la nube. No hay ninguna diferencia en el tipo o la cantidad de información que se comparte. Para obtener más información sobre lo que recopilamos, vea la [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?linkid=521839).
 
-## <a name="use-intune-to-turn-on-cloud-delivered-protection"></a>Usar Intune para activar la protección entregada en la nube
+## <a name="use-intune-to-turn-on-cloud-protection"></a>Usar Intune para activar la protección en la nube
 
 1. Vaya al Centro Microsoft Endpoint Manager administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
 
@@ -67,7 +62,7 @@ Para obtener más información acerca de los requisitos específicos de conectiv
 
 Para obtener más información acerca de los perfiles de dispositivo de Intune, incluido cómo crear y configurar sus opciones, consulta ¿Qué Microsoft Intune [perfiles de dispositivo?](/intune/device-profiles)
 
-## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-delivered-protection"></a>Usar Microsoft Endpoint Manager para activar la protección entregada en la nube
+## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-protection"></a>Usar Microsoft Endpoint Manager para activar la protección en la nube
 
 1. Vaya al Centro Microsoft Endpoint Manager administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
 
@@ -86,7 +81,7 @@ Para obtener más información acerca de los perfiles de dispositivo de Intune, 
 
 Para obtener más información sobre cómo configurar Microsoft Endpoint Configuration Manager, vea [How to create and deploy antimalware policies: Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service).
 
-## <a name="use-group-policy-to-turn-on-cloud-delivered-protection"></a>Usar la directiva de grupo para activar la protección entregada en la nube
+## <a name="use-group-policy-to-turn-on-cloud-protection"></a>Usar la directiva de grupo para activar la protección en la nube
 
 1. En el dispositivo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y **seleccione Editar**.
 
@@ -94,24 +89,24 @@ Para obtener más información sobre cómo configurar Microsoft Endpoint Configu
 
 3. Seleccione **Plantillas administrativas**.
 
-4. Expanda el árbol para Windows **componentes > Antivirus de Microsoft Defender > MAPS**
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender >**  >  **MAPS**
 
 5. Haga doble clic **en Unirse a Microsoft MAPS**. Asegúrese de que la opción está activada y establecida en **Mapas** básicos o **mapas avanzados**. Seleccione **Aceptar**.
 
 6. Haga doble clic en **Enviar ejemplos de archivos cuando sea necesario realizar un análisis adicional.** Asegúrese de que la primera opción esté establecida en **Enabled** y de que las demás opciones estén establecidas en:
-    1. **Enviar muestras seguras** (1)
-    2. **Enviar todos los ejemplos** (3)
 
-        > [!NOTE]
-        > La **opción Enviar muestras seguras** (1) significa que la mayoría de las muestras se enviarán automáticamente. Los archivos que probablemente contengan información personal seguirán solicitando y necesitarán confirmación adicional.
-        >
-        > Al establecer la opción **en Preguntar siempre** (0), se disminuirá el estado de protección del dispositivo. Establecerlo en **Nunca enviar** (2) significa que la característica Bloquear a primera [vista](configure-block-at-first-sight-microsoft-defender-antivirus.md) de Microsoft Defender para endpoint no funcionará.
+   - **Enviar muestras seguras** (1)
+   - **Enviar todos los ejemplos** (3)
+
+   >[!NOTE]
+   > La **opción Enviar muestras seguras** (1) significa que la mayoría de las muestras se enviarán automáticamente. Los archivos que probablemente contengan información personal seguirán solicitando y necesitarán confirmación adicional.
+   > Al establecer la opción **en Preguntar siempre** (0), se disminuirá el estado de protección del dispositivo. Establecerlo en **Nunca enviar** (2) significa que la característica Bloquear a primera [vista](configure-block-at-first-sight-microsoft-defender-antivirus.md) de Microsoft Defender para endpoint no funcionará.
 
 7. Seleccione **Aceptar**.
 
-## <a name="use-powershell-cmdlets-to-turn-on-cloud-delivered-protection"></a>Usar cmdlets de PowerShell para activar la protección entregada en la nube
+## <a name="use-powershell-cmdlets-to-turn-on-cloud-protection"></a>Usar cmdlets de PowerShell para activar la protección en la nube
 
-Los cmdlets siguientes pueden activar la protección entregada en la nube:
+Los cmdlets siguientes pueden activar la protección en la nube:
 
 ```PowerShell
 Set-MpPreference -MAPSReporting Advanced
@@ -126,7 +121,7 @@ Para obtener más información sobre cómo usar PowerShell con Antivirus de Micr
 > [!WARNING]
 > Establecer **-SubmitSamplesConsent** en `NeverSend` o `AlwaysPrompt` disminuirá el nivel de protección del dispositivo. Además, establecerlo en significa que la característica Bloquear a primera vista de Microsoft Defender para endpoint `NeverSend` no funcionará. [](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
-## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-delivered-protection"></a>Use Windows Management Instruction (WMI) para activar la protección entregada en la nube
+## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-protection"></a>Usar Windows management instruction (WMI) para activar la protección en la nube
 
 Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versions/windows/desktop/defender/set-msft-mppreference) para las siguientes propiedades:
 
@@ -137,7 +132,7 @@ SubmitSamplesConsent
 
 Para obtener más información acerca de los parámetros [permitidos, vea Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="turn-on-cloud-delivered-protection-on-individual-clients-with-the-windows-security-app"></a>Activar la protección entregada en la nube en clientes individuales con la Seguridad de Windows aplicación
+## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>Activar la protección en la nube en clientes individuales con la Seguridad de Windows aplicación
 
 > [!NOTE]
 > Si la opción Configurar invalidación de configuración local para informar  de la directiva de grupo de **Microsoft MAPS** está establecida en **Deshabilitado,** la configuración de protección basada en la nube en Windows Configuración estará gris y no estará disponible. Los cambios realizados a través de un objeto de directiva de grupo deben implementarse en primer lugar en los extremos individuales antes de que se actualice la configuración en la configuración de Windows.
@@ -153,13 +148,10 @@ Para obtener más información acerca de los parámetros [permitidos, vea Window
 > [!NOTE]
 > Si el envío de ejemplo automático se ha configurado con la directiva de grupo, la configuración será gris y no estará disponible.
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="see-also"></a>Ver también
 
-- [Configurar el período de espera de bloqueo en la nube](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
-- [Configurar bloque a primera vista](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [Usar cmdlets PowerShell para administrar el Antivirus de Windows Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Ayudar a proteger Windows equipos con Endpoint Protection para Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
-- [Cmdlets de Defender](/powershell/module/defender/)
-- [Usar la protección entregada en la nube de Microsoft en Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+- [Usar la protección en la nube de Microsoft en Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+
 - [Cómo crear e implementar directivas antimalware: Servicio de protección en la nube](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+
+- [Usar cmdlets PowerShell para administrar el Antivirus de Windows Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md)

@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: edebf145a754d58e4650492eefa6d67276127afb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 91743eb7184e340deac15c10412833f2d8060866
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574753"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863634"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adopción SharePoint Syntex Microsoft: Introducción
 
@@ -73,7 +73,7 @@ Determine who in your organization will build and manage the models? Los siguien
 | Administrador de conocimiento/SharePoint | Administrador de Power Platform | Responsable de la información | Propietario del modelo |
 |:-------|:-------|:-------|:-------|
 | Rol AAD| Rol AAD | Rol AAD | Expertos: |
-| Configurar el procesamiento de formularios | Configurar el entorno de servicio de datos común para el procesamiento de formularios | Recopilar casos de uso | Recopilar casos de uso empresarial |
+| Configurar el procesamiento de formularios | Configurar el entorno de Dataverse para el procesamiento de formularios | Recopilar casos de uso | Recopilar casos de uso empresarial |
 | Administrar centros de contenido y permisos| Comprar y asignar créditos AIB | Establecer procedimientos recomendados y revisar análisis de modelos | Crear y aplicar modelos |
 
 El administrador de conocimientos, el propietario del proceso de negocio y el propietario del modelo de contenido crean modelos de ejemplo y la adopción de campeones en la organización.
@@ -109,9 +109,9 @@ Identifique las partes interesadas del proyecto.
 | Administradores de contenido y propietarios de modelos| Recopilar casos de uso y crear y aplicar modelos | Cualquier departamento|
 | Expertos: | Ayudar a promocionar y administrar el tratamiento de objeción | Cualquier departamento (personal) |
 | Administrador de inquilinos | Configurar la configuración de nivel de inquilino | Departamento de TI|
-| Administrador de Power Platform| Configurar el entorno de servicios de datos comunes | Departamento de TI|
+| Administrador de Power Platform| Configurar el entorno de Dataverse | Departamento de TI|
 
-> [!Note]
+> [!NOTE]
 > Aunque se recomienda que cada uno de estos roles se cumpla a lo largo de la implementación, es posible que no necesite todos ellos para empezar con la solución identificada.
 
 ## <a name="readiness-checklist"></a>Lista de comprobación de preparación
@@ -123,7 +123,7 @@ Para prepararse para implementar SharePoint Syntex, debe:
 1. Planear el estado final
     - Los modelos de comprensión de documentos son los medios, no el final.
     - Planee aprovechar el valor de los metadatos extraídos con:
-      - Búsqueda
+      - Buscar
       - Filtrado y formato de vista
       - Cumplimiento
       - Automatización
@@ -144,6 +144,6 @@ Para prepararse para implementar SharePoint Syntex, debe:
 1. Recopilar comentarios e iterar.
 1. A medida que aumenta el uso, planee los créditos de AI Builder según sea necesario.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Escenarios y casos de uso de SharePoint Syntex](adoption-scenarios.md) 

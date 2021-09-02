@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7338292b784cdad17548efc3dd148f3ea6a72b28
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 57106e33f244ad1e549fcfd7f361c82863f9e3a9
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568269"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58864043"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
 
@@ -81,7 +81,7 @@ Estas son las formas en que puede administrar sus incidentes:
 
 - Editar el nombre del incidente
 
-  Cambie el nombre asignado de formautomática en función de los procedimientos recomendados del equipo de seguridad.
+  Cambie el nombre asignado automáticamente en función de los procedimientos recomendados del equipo de seguridad.
   
 - Agregar etiquetas de incidente
 
@@ -153,7 +153,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
 
     b. Une el dispositivo de prueba al dominio de prueba.
 
-    c. [Active la Antivirus de Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar Antivirus de Windows Defender, consulte [este tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Active la Antivirus de Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar Antivirus de Windows Defender, consulte [este tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Incorporación a Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 

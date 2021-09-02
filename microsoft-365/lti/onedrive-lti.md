@@ -13,14 +13,17 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Cree y cale las asignaciones, cree y cura el contenido del curso y colabore en archivos en tiempo real con la nueva aplicación de interoperabilidad Microsoft OneDrive Learning Tools.
-ms.openlocfilehash: a1a07173b756d8eb86158bb669113d7e9f7202bf1b666ebc2a086f1aed732d2e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e67e772ce8ef460075729b34bc7da86d486c51e9
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830088"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863415"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integrar Microsoft OneDrive LTI con Canvas
+
+> [!IMPORTANT]
+> Parte de la información se relaciona con un producto publicado previamente, que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
 La integración Microsoft OneDrive LTI con Canvas es un proceso de dos pasos. El primer paso habilita Microsoft OneDrive canvas y el segundo paso hace que el Microsoft OneDrive LTI esté disponible en los cursos de Canvas.
 

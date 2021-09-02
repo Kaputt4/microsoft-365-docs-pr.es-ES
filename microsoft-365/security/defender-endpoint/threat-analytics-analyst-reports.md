@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3de298100e5a66e53bd34e110c35749e15e58044
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 75913a539db89bb5377386effb97c8e2a6b3beab
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568605"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863487"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>El informe de analistas en análisis de amenazas
 
@@ -48,7 +48,7 @@ Cada sección del informe de analista está diseñada para proporcionar informac
 
 ****
 
-|Sección Informe|Description|
+|Sección Informe|Descripción|
 |---|---|
 |Resumen ejecutivo|Información general sobre la amenaza, incluso cuando se vio por primera vez, sus motivaciones, eventos notables, objetivos principales y distintas herramientas y técnicas. Puede usar esta información para evaluar aún más cómo priorizar la amenaza en el contexto de su industria, ubicación geográfica y red.|
 |Análisis|Información técnica sobre las amenazas, incluidos los detalles de un ataque y cómo los atacantes pueden usar una nueva técnica o superficie de ataque|
@@ -75,7 +75,7 @@ Aunque puedes usar la pestaña Mitigaciones para evaluar la posición de segurid
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Comprender cómo se puede detectar cada amenaza
 
-El informe del analista también proporciona las detecciones de Microsoft Defender para antivirus de extremo _y_ detección y respuesta de puntos de conexión (EDR).
+El informe de analistas también proporciona las detecciones de Antivirus de Microsoft Defender y _detección y respuesta de puntos de conexión_ (EDR).
 
 ### <a name="antivirus-detections"></a>Detecciones de antivirus
 

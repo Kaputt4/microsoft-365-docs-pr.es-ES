@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 4e5a4e60a5788c93f9ba0407616c4417c47ed46bfe20880d067ffa04a5a42dd1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed7652ecf720e32a7ddfaffbd0ff2db29b582b69
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842320"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863922"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos de documento en eDiscovery avanzado
 
@@ -42,7 +42,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 
 ****
 
-|Nombre del campo y Nombre del campo para mostrar|Nombre del campo que se puede buscar|Nombre del campo exportado|Description|
+|Nombre del campo y Nombre del campo para mostrar|Nombre del campo que se puede buscar|Nombre del campo exportado|Descripción|
 |---|---|---|---|
 |Id. de contenido de datos adjuntos|AttachmentContentId||Identificador de contenido de datos adjuntos del elemento.|
 |Puntuación de privilegios de cliente de abogado|AttorneyClientPrivilegeScore||Puntuación de contenido del modelo de privilegios abogado-cliente.|
@@ -52,13 +52,13 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Etiquetas de cumplimiento|ComplianceLabels|Compliance_labels|[Etiquetas de](retention.md) retención aplicadas al contenido en Office 365.|
 |Ruta compuesta|CompoundPath|Compound_path|Ruta de acceso legible humana que describe el origen del elemento.|
 |Contenido*|Contenido||Texto extraído del elemento.|
-|Cuerpo de la conversación|Cuerpo de la conversación||Cuerpo de conversación del elemento.|
+|Cuerpo de la conversación|ConversationBody||Cuerpo de conversación del elemento.|
 |Id. de conversación|ConversationId|Conversation_ID|Identificador de conversación del mensaje. Para Teams 1:1 y chats de grupo, todos los archivos de transcripción y sus elementos de familia dentro de la misma conversación comparten el mismo identificador de conversación. Para obtener más información, vea [Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |Índice de conversación||Conversation_index|Índice de conversación del mensaje.|
 |Nombre de conversación||ConversationName|Nombre del canal en Teams. El formato del nombre depende del tipo de canal: <br>Teams chats de canal privado y chats de canal privado:\<Name of team, name of channel\> <br>Teams 1:1 y chats de grupo: Nombre para mostrar y dirección de correo electrónico de todos los participantes de chat<br>Yammer: Community nombre + primeros 120 caracteres de una publicación<br>Yammer privado: nombre del remitente y dirección de correo electrónico + primeros 120 caracteres de un mensaje|
 |Hora de pdf de conversación|ConversationPdfTime||Fecha en la que se creó la versión PDF de la conversación.|
 |Tiempo de grabación de redacción de conversación|ConversationRedactionBurnTime||Fecha en la que se creó la versión PDF de la conversación para Chat.|
-|Tema de conversación|Tema de conversación||Tema de conversación del elemento.|
+|Tema de conversación|ConversationTopic||Tema de conversación del elemento.|
 |Tipo de conversación|ConversationType|ConversationType|Tipo de conversación de chat. Los valores son: <br> Teams 1:1 y chats de grupo y todas las conversaciones Yammer: **Agrupar** para<br>Teams canales y canales privados: **Canal**|
 |Contiene mensaje editado|ContainsEditedMessage|ContainsEditedMessage|Indica si la transcripción Teams de chat incluye un mensaje editado
 |||Converted_file_path|Ruta de acceso del archivo de exportación convertido. Solo para uso interno de Microsoft.|
@@ -100,7 +100,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Fecha de creación del sistema de archivos||File_system_date_created|Fecha de creación desde el sistema de archivos (solo se aplica a datos que no Office 365 datos).|
 |Fecha de modificación del sistema de archivos||File_system_date_modified|Fecha de modificación del sistema de archivos (solo se aplica a datos que no Office 365 datos).|
 |Tipo de archivo|FileType||Tipo de archivo del elemento basado en la extensión de archivo.|
-|Id. de grupo|Id. de grupo|Group_ID|Agrupa todos los elementos para correo electrónico y documentos. Para el correo electrónico, esto incluye el mensaje y todos los datos adjuntos y elementos extraídos. Para los documentos, esto incluye el documento y los elementos incrustados.|
+|Id. de grupo|GroupId|Group_ID|Agrupa todos los elementos para correo electrónico y documentos. Para el correo electrónico, esto incluye el mensaje y todos los datos adjuntos y elementos extraídos. Para los documentos, esto incluye el documento y los elementos incrustados.|
 |Tiene datos adjuntos|EmailHasAttachment|Email_has_attachment|Indica si el mensaje tiene datos adjuntos.|
 |Tiene abogado|HasAttorney||**True** cuando al menos uno de los participantes se encuentra en la lista de abogados; de lo contrario, el valor es **False**.|
 |HasText*||Has_text|Indica si el elemento tiene texto; los valores posibles **son True** y **False**.|

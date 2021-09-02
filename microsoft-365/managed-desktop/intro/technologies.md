@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 89a495d5832d1a16e062c7df8e31ea3a3333bf00
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: dd8293f05a5b88bbd17a3b6760c9a535737fd439
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399712"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863886"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías del Escritorio administrado de Microsoft
 
@@ -64,7 +64,7 @@ Protección contra manipulaciones de Microsoft Defender | Windows La protección
 Antivirus de Microsoft Defender Protección antivirus basada en comportamiento, heurística y en tiempo real | Siempre en busca de amenazas de archivos y procesos que pueden no detectarse como malware. Para obtener más información, vea Antivirus de Microsoft Defender protección antivirus basada en [comportamiento, heurística y en tiempo real.](../../security/defender-endpoint/microsoft-defender-antivirus-in-windows-10.md)
 Antivirus de Microsoft Defender Protección entregada en la nube | Proporciona protección dinámica casi instantánea y automatizada contra amenazas nuevas y emergentes. Para obtener más información, [vea Antivirus de Microsoft Defender Cloud-delivered Protection](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
 "Bloquear a primera vista" de Microsoft Defender | Proporciona detección y bloqueo de malware nuevo Windows detecta un archivo sospechoso o desconocido. Para obtener más información, vea [Bloqueo de Microsoft Defender a primera vista.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-Aplicaciones potencialmente no deseadas de Antivirus de Microsoft Defender | Las aplicaciones potencialmente no deseadas se usan para bloquear aplicaciones que pueden hacer que el equipo se ejecute lentamente, mostrar anuncios inesperados o, en el peor de los casos, instalar otro software que pueda ser inesperado o no deseado. Para obtener más información, vea [Microsoft Defender AV Potentially Unwanted Applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+Antivirus de Microsoft Defender Aplicaciones potencialmente no deseadas | Las aplicaciones potencialmente no deseadas se usan para bloquear aplicaciones que pueden hacer que el equipo se ejecute lentamente, mostrar anuncios inesperados o, en el peor de los casos, instalar otro software que pueda ser inesperado o no deseado. Para obtener más información, [vea Antivirus de Microsoft Defender Aplicaciones potencialmente no deseadas](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 Windows Defender Firewall con seguridad avanzada | El filtrado de tráfico de red de dos direcciones basado en host para un dispositivo, Windows Defender firewall bloquea el tráfico de red no autorizado que entra o sale del dispositivo local. Para obtener más información, [vea Windows Defender Firewall with Advanced Security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 Control de cuentas de usuario | El control de cuentas de usuario cambia al Escritorio seguro cuando una tarea o una acción requiere el acceso de tipo de cuenta de administrador. Escritorio administrado de Microsoft a los usuarios se les asigna acceso de usuario estándar en la inscripción. Para obtener más información, vea [User Account Control](/windows/security/identity-protection/user-account-control/how-user-account-control-works).
 

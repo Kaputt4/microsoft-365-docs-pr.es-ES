@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 262c68e517bb088af7ca3fa814a788c9303adf22
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 8f98a9b942f65a1c60708c4d4bfa756ab7d8fc2a
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548695"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863763"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes en Microsoft 365 Defender
 
@@ -68,7 +68,7 @@ La **página Resumen le** ofrece una vista instantánea de los aspectos principa
 
 La información se organiza en estas secciones.
 
-| Sección | Description |
+| Sección | Descripción |
 |:-------|:-----|
 | Alertas y categorías | Una vista visual y numérica de lo avanzado que ha progresado el ataque en la cadena de eliminación. Al igual que con otros productos de seguridad de Microsoft, Microsoft 365 Defender se alinea con el marco de&[CK &trade; de MITRE ATT.](https://attack.mitre.org/) La escala de tiempo de alertas muestra el orden cronológico en el que se produjeron las alertas y, para cada una, su estado y nombre. |
 | Ámbito |  Muestra el número de dispositivos, usuarios y buzones afectados y enumera las entidades en orden de nivel de riesgo y prioridad de investigación. |
@@ -177,6 +177,26 @@ Microsoft 365 Defender investiga automáticamente todos los eventos compatibles 
 
 Cada una de las entidades analizadas se marca con un veredicto (malintencionado, sospechoso, limpio) y un estado de corrección. Esto le ayuda a comprender el estado de corrección de todo el incidente y los siguientes pasos que se pueden seguir.
 
+## <a name="graph-preview"></a>Graph (versión preliminar)
+
+La **Graph** muestra el ámbito completo del ataque, cómo se extendió el ataque a través de la red con el tiempo, dónde se inició y hasta dónde llegó el atacante. Conecta las diferentes entidades sospechosas que forman parte del ataque con sus activos relacionados, como usuarios, dispositivos y buzones. 
+
+Desde la **Graph,** puede:
+
+1. Reproduce las alertas y los nodos del gráfico a medida que se produjeron con el tiempo para comprender la cronología del ataque.
+
+<!--
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.png" alt-text="Example of playing the alerts and nodes on the Graph page":::
+--> 
+
+2. Abra un panel de entidades, lo que le permite revisar los detalles de la entidad y actuar en acciones de corrección, como eliminar un archivo o aislar un dispositivo.
+ 
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Ejemplo de un panel de entidades en la Graph página":::
+
+3. Resalte las alertas basadas en la entidad a la que están relacionadas.
+ 
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Ejemplo de un resaltado de alerta en la Graph página":::
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario:
@@ -184,7 +204,7 @@ Según sea necesario:
 - [Investigar las alertas de un incidente](investigate-alerts.md)
 - [Investigar los usuarios de un incidente](investigate-users.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

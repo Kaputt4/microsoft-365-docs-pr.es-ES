@@ -1,5 +1,5 @@
 ---
-title: Códigos de error e IDs de eventos antivirus de Microsoft Defender
+title: Antivirus de Microsoft Defender de eventos y códigos de error
 description: Buscar las causas y soluciones de los Antivirus de Microsoft Defender de eventos y errores
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
 search.product: eADQiWindows 10XVcnh
@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 2c6532ca3d610d2cc0650ee8fee986b296cd54af90d62fdb71926938302635b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15180a2be197b39da78bf004b761db753cd02c94
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867848"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862831"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -1204,7 +1204,7 @@ Acción del usuario:
 El Antivirus de Microsoft Defender encontró este error debido a problemas críticos. Es posible que el extremo no esté protegido. Revise la descripción del error y, a continuación, siga los <b>pasos de acción de usuario</b> pertinentes a continuación.
 <table>
 <tr>
-<th>Action</th>
+<th>Acción</th>
 <th>Acción del usuario</th>
 </tr>
 <tr>
@@ -1466,7 +1466,7 @@ Antivirus de Microsoft Defender ha encontrado un error al intentar actualizar fi
 </dt>
 <dt>Update Stage: &lt; Update stage , por &gt; ejemplo:
 <ul>
-<li>Búsqueda</li>
+<li>Buscar</li>
 <li>Descargar</li>
 <li>Instalar</li>
 </ul>

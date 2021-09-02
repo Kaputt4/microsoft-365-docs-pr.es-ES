@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c785941529823048b55ab3590c91f365ea17a1ba
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 55ea055c1e69b3f7cecd334758d5343fadc408ee
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570142"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862802"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -73,7 +73,7 @@ La clasificación basada en EDM se incluye en estas suscripciones
 
 |Portal|World Wide/GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
 |Centro de seguridad de Microsoft 365|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Centro de cumplimiento de Microsoft 365|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
@@ -628,6 +628,7 @@ Estas ubicaciones son compatibles con los tipos de información confidencial de 
 - DLP para SharePoint (archivos)
 - Directivas DLP para la seguridad de las aplicaciones en la nube de Microsoft
 - Directivas de etiquetado automático del lado servidor: disponibles para clientes comerciales en la nube y clientes en la nube gubernamentales
+<!-- - Client side auto-labeling policies - available for government cloud customers -->  
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>Para crear una directiva DLP con EDM
 

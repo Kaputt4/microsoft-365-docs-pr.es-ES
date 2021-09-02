@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7f4df3c6903194b00a4469f52fb0e15e2f8748ad
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 7f129f3ba1650403b23aa7e849a7b74f8220871f
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573876"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863790"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender introducción
 
@@ -60,7 +60,7 @@ Todo el contenido de seguridad que use en el Centro de seguridad y cumplimiento 
 
 Microsoft 365 Defender ayuda a los equipos de seguridad a investigar y responder a los ataques al incorporar señales de diferentes cargas de trabajo en un conjunto de experiencias unificadas para:
 
-- Alertas de & incidentes
+- Incidentes & alertas
 - Búsqueda
 - Centro de actividades
 - Análisis de amenazas
@@ -157,7 +157,7 @@ Después de hacer clic en el contenido, puede ser útil marcar este sitio y orga
 > Junto con el filtro Producto, se enumeran los temas actuales, los tipos de recursos (desde vídeos hasta seminarios web), los niveles de familiaridad o experiencia con las áreas de seguridad, los roles de seguridad y las características del producto.
 
 > [!TIP]
-> Hay muchas otras oportunidades de aprendizaje en [Microsoft Learn](/e/learn/). Encontrará formación en certificación, como el curso [MS-500T02-A: Implementar](/learn/certifications/courses/ms-500t02)Microsoft 365 protección contra amenazas .
+> Hay muchas otras oportunidades de aprendizaje en [Microsoft Learn](/learn/). Encontrará formación en certificación, como el curso [MS-500T02-A: Implementar](/learn/certifications/courses/ms-500t02)Microsoft 365 protección contra amenazas .
 
 ## <a name="send-us-your-feedback"></a>Envíenos sus comentarios
 

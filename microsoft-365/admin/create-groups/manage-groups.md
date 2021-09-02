@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Aprenda a administrar Microsoft 365 grupos, incluida la adición de miembros de grupo de eliminación, la edición de la dirección de correo electrónico, el nombre del grupo o la descripción, y la personalización del funcionamiento del grupo.
-ms.openlocfilehash: 7155bbbd6ff127525522b0a7ddf866b9d690db5a
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+description: Aprenda a administrar grupos Microsoft 365, incluida la adición de miembros de grupo de eliminación, la edición de la dirección de correo electrónico, el nombre del grupo o la descripción, y la personalización del funcionamiento del grupo.
+ms.openlocfilehash: c7f38a6a0b2eb3f6c0466858b60ac0beb2143bc0
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831842"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862730"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Administrar un grupo en el Centro de administración de Microsoft 365
 
@@ -106,7 +106,7 @@ Para confirmar que el grupo se ha purgado correctamente, ejecute el cmdlet  *Get
 
 [Crear un Grupo de Microsoft 365 ](create-groups.md)
 
-[Administrar el acceso de invitado en grupos de Microsoft 365](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Administrar el acceso de invitado a Microsoft 365 grupos](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Elegir el dominio que se usará al crear Microsoft 365 grupos](../../solutions/choose-domain-to-create-groups.md)
 

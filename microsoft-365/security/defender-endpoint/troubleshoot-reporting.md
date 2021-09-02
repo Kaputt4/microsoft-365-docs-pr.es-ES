@@ -1,7 +1,7 @@
 ---
-title: Solucionar problemas con herramientas de informes para Microsoft Defender AV
-description: Identificar y resolver problemas comunes al intentar informar sobre el estado de protección antivirus de Microsoft Defender en Update Compliance
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender AV
+title: Solucionar problemas con herramientas de informes para Antivirus de Microsoft Defender
+description: Identificar y resolver problemas comunes al intentar informar sobre el estado Antivirus de Microsoft Defender protección en Update Compliance
+keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Antivirus de Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c1620de251a0cd16ab61e0ecb41abb1b481535161d5db5b9d791501229e6fc13
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afc383c158da353da35def39d5b21e2857b9e2ac
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889368"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863970"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Solucionar problemas de informes del Antivirus de Windows Defender en la comprobación de actualizaciones
 
@@ -60,9 +60,9 @@ Hay tres pasos para solucionar estos problemas:
 Para que los dispositivos se muestren correctamente en Update Compliance, debes cumplir ciertos requisitos previos tanto para el servicio de cumplimiento de actualizaciones como para Antivirus de Microsoft Defender:
 
 >[!div class="checklist"]
->- Los puntos de conexión usan Antivirus de Microsoft Defender como la única aplicación de protección antivirus. [El uso de cualquier otra aplicación antivirus hará](microsoft-defender-antivirus-compatibility.md) que el ANTIVIRUS de Microsoft Defender se deshabilite y el extremo no se notirá en Cumplimiento de actualizaciones.
+>- Los puntos de conexión usan Antivirus de Microsoft Defender como la única aplicación de protección antivirus. El uso de cualquier otra aplicación antivirus hará [que Antivirus de Microsoft Defender se deshabilite](microsoft-defender-antivirus-compatibility.md) y el punto de conexión no se notirá en Update Compliance.
 > - [La protección entregada en la nube está habilitada.](enable-cloud-protection-microsoft-defender-antivirus.md)
-> - Los puntos de conexión [pueden conectarse a la nube av de Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
+> - Los puntos de conexión [pueden conectarse a la Antivirus de Microsoft Defender nube](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
 > - Si el extremo se ejecuta Windows 10 versión 1607 o anterior, Windows 10 datos de diagnóstico deben establecerse [en el nivel mejorado](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
 > - Han pasado 3 días desde que se han cumplido todos los requisitos
 

@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-ms.topic: conceptual
+ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f2b4c7fc980c0a5ad12e9a8570942c3c81044672
-ms.sourcegitcommit: 5566455f1872dba23cc571281609258740842e8e
+ms.openlocfilehash: 0bfbd44e0e097148800501c5bed3b1b3db2dbbc9
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58385924"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863730"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para Endpoint en Mac
 
@@ -37,6 +37,11 @@ ms.locfileid: "58385924"
 
 > [!IMPORTANT]
 > En macOS 11 (Big Sur), Microsoft Defender para Endpoint requiere perfiles de configuración adicionales. Si es un cliente existente que actualiza desde versiones anteriores de macOS, asegúrese de implementar los perfiles de configuración adicionales enumerados en [esta página](mac-sysext-policies.md).
+
+## <a name="1014084-20121071140840"></a>101.40.84 (20.121071.14084.0)
+
+- Compatibilidad nativa con chip M1
+- Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1013797-20121062137970"></a>101.37.97 (20.121062.13797.0)
 

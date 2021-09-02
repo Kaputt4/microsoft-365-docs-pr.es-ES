@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 31f9fb3b3a070c6cf95c828d452157dad5b2ba6a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 1fae1d1a800c6005f690ac3b4ac5a32cff38d549
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576169"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58864055"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Ejecutar una simulación de ataque en un Microsoft 365 Defender piloto
 
@@ -115,7 +115,7 @@ En primer lugar, debes agregar un controlador de dominio de AD DS aislado y un d
 
    - Ejecuta Windows 10 versión 1903 o una versión posterior.
    - Está unido al dominio del controlador de dominio de AD DS.
-   - Tiene [Antivirus de Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) habilitada. Si tiene problemas para habilitar Antivirus de Windows Defender, consulte este tema [de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+   - Tiene [Antivirus de Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) habilitada. Si tiene problemas para habilitar Antivirus de Windows Defender, consulte este tema [de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
    - Se [incorpora a Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 Si usas grupos de inquilinos y dispositivos, crea un grupo de dispositivos dedicado para el dispositivo de prueba y lo insertas en el nivel superior.

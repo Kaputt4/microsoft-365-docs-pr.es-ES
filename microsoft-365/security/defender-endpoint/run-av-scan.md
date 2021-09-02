@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2ae3c72387b2617bc8fe88349272d27675af16a5
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 77cbd23197b60c3a74c97cf2030f41c943741a1c
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349217"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863658"
 ---
 # <a name="run-antivirus-scan-api"></a>Ejecutar LA API de detección antivirus
 
@@ -48,7 +48,7 @@ Inicie Antivirus de Microsoft Defender examen en un dispositivo.
 > [!IMPORTANT]
 >
 > - Esta acción está disponible para dispositivos Windows 10 versión 1709 o posterior.
-> - Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Microsoft Defender AV puede estar en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+> - Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 ## <a name="permissions"></a>Permisos
 
@@ -75,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 Content-Type|string|application/json
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -85,7 +85,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 Parámetro|Tipo|Descripción
 :---|:---|:---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
-ScanType|String|Define el tipo de examen. **Necesario**.
+ScanType|Cadena|Define el tipo de examen. **Necesario**.
 
 **ScanType** controla el tipo de examen que se va a realizar y puede ser uno de los siguientes:
 

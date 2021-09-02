@@ -16,12 +16,12 @@ ms.collection:
 description: Obtenga información sobre Caja fuerte documentos en Microsoft 365 E5 o Seguridad de Microsoft 365 E5.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1009e3c8e75497b32222b61b95810d7a50b33d2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0ccedf53b9978329935ceb28bb0ba0695f3da67c
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563335"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863826"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
@@ -30,17 +30,29 @@ ms.locfileid: "58563335"
 **Se aplica a**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Caja fuerte Documents es una característica de Microsoft 365 E5 o Seguridad de Microsoft 365 E5 que usa [Microsoft Defender para](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) endpoint para examinar documentos y archivos que se abren en [vista](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) protegida o Protección de aplicaciones para [Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
+Caja fuerte Documents es una característica premium que usa [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para examinar documentos y archivos que se abren en [vista](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) protegida o Protección de aplicaciones [para Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Caja fuerte Los documentos solo están disponibles para los usuarios *con Microsoft 365 E5* o *Seguridad de Microsoft 365 E5* licencias. Estas licencias no se incluyen en Microsoft Defender para Office 365 planes.
+- Disponibilidad de documentos Caja fuerte controlados por el servicio **Office 365 SafeDocs** (o **SAFEDOCS** o **bf6f5520-59e3-4f82-974b-7dbbc4fd27c7**) (también conocido como plan de servicio). Este plan de servicio está disponible en los siguientes planes de licencias (también conocidos como planes de licencia, Microsoft 365 o productos):
+  - Microsoft 365 A5 para profesorado
+  - Microsoft 365 A5 para estudiantes
+  - Microsoft 365 E5
+  - Seguridad de Microsoft 365 E5
+
+  Caja fuerte Los documentos no se incluyen en Microsoft Defender para Office 365 de licencias.
+
+  Para obtener más información, consulte los siguientes temas:
+
+  - [Ver Microsoft 365 licencias y servicios con PowerShell](/microsoft-365/enterprise/view-licenses-and-services-with-microsoft-365-powershell)
+  - [Ver Microsoft 365 licencia de cuenta y detalles de servicio con PowerShell](/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell)
+  - [Nombres de productos e identificadores de plan de servicio para licencias](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
 - Caja fuerte Los documentos se admiten Aplicaciones Microsoft 365 para empresas versión 2004 o posterior Office 365 ProPlus (anteriormente conocido como Office 365 ProPlus).
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Caja fuerte datos adjuntos,** use <https://security.microsoft.com/safeattachmentv2> .
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Necesita permisos en Exchange Online **para** poder realizar los procedimientos de este artículo:
   - Para configurar Caja fuerte documentos, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
@@ -60,7 +72,7 @@ Para mantenerte protegido, Caja fuerte documentos envía archivos a la nube de [
 
 Los archivos enviados por Caja fuerte documentos no se conservan en Defender más allá del tiempo necesario para el análisis (normalmente, menos de 24 horas).
 
-## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>Use el Microsoft 365 Defender para configurar Caja fuerte documentos
+## <a name="use-the-microsoft-365-defender-portal-to-configure-safe-documents"></a>Usar el portal Microsoft 365 Defender para configurar Caja fuerte documentos
 
 1. Abra el portal de Microsoft 365 Defender y vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas Caja fuerte \>  \>  \> **datos adjuntos** en la **sección** Directivas.
 
@@ -92,6 +104,21 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365).
+
+### <a name="configure-individual-access-to-safe-documents"></a>Configurar el acceso individual a Caja fuerte documentos
+
+Si desea permitir o bloquear selectivamente el acceso a la característica Caja fuerte documentos, siga estos pasos:
+
+1. Active documentos Caja fuerte en el portal de Microsoft 365 Defender o Exchange Online PowerShell como se describe anteriormente en este artículo.
+2. Use Azure AD PowerShell para deshabilitar documentos Caja fuerte para usuarios específicos, como se describe en Deshabilitar servicios de Microsoft 365 específicos para usuarios específicos para [un plan de licencias específico.](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan)
+
+  El nombre del plan de servicio que se va a deshabilitar en PowerShell es **SAFEDOCS**.
+
+Para obtener más información, consulte los siguientes temas:
+
+- [Ver Microsoft 365 licencias y servicios con PowerShell](/microsoft-365/enterprise/view-licenses-and-services-with-microsoft-365-powershell)
+- [Ver Microsoft 365 licencia de cuenta y detalles de servicio con PowerShell](/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell)
+- [Nombres de productos e identificadores de plan de servicio para licencias](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
 ### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>Incorporación al Servicio de extremo de Microsoft Defender para habilitar las capacidades de auditoría
 

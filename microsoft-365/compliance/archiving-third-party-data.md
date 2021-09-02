@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a Microsoft 365 buzones de correo.
-ms.openlocfilehash: 5d216a95aba573b05d9caa9305025e4995028f0e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 88710c9d6036effdb5f76dd4af8e4d6c24e7394e
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570610"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862814"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archivar datos de terceros en Microsoft 365
 
@@ -165,6 +165,8 @@ Para poder archivar datos de terceros en Microsoft 365, debe trabajar con CellTr
 |[CellTrust SL2](archive-data-from-celltrustsl2.md)     |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 ||||||||
 
+El conector de datos de CellTrust SL2 también está disponible en GCC entornos en la Microsoft 365 us government cloud. Para obtener más información, vea la [sección Conectores de datos en la nube](#data-connectors-in-the-us-government-cloud) del Gobierno de Estados Unidos en este artículo.
+
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Información general sobre las soluciones de cumplimiento que admiten datos de terceros
 
 En las secciones siguientes se describen algunas de las cosas que las soluciones de cumplimiento Microsoft 365 pueden ayudarle a administrar los datos de terceros enumerados en la tabla anterior.
@@ -253,9 +255,11 @@ Para obtener más información sobre cómo crear consultas de búsqueda de exhib
 
 ## <a name="data-connectors-in-the-us-government-cloud"></a>Conectores de datos en la nube de Us Government
 
-Como se mencionó anteriormente, los conectores de datos proporcionados por TeleMessage están disponibles en la nube de Us Government. En la tabla siguiente se indican los entornos gubernamentales específicos que admiten cada conector de datos de TeleMessage. Para obtener más información acerca de las nubes de us government, [vea Microsoft 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy).
+Algunos conectores de datos están disponibles en la nube de Us Government. Las secciones siguientes indican los entornos gubernamentales específicos que admiten conectores de datos de terceros. Para obtener más información acerca de las nubes de us government, [vea Microsoft 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy).
 
-|Conector de datos de TeleMessage  |GCC  |GCC High  |DoD  |
+### <a name="telemessage-data-connectors"></a>Conectores de datos de Telemessage
+
+|Conector de datos  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
 |Archivador de Android | Sí | No | No |
 |Archivador de red AT&T SMS/MMS | Sí | No | No |
@@ -268,6 +272,13 @@ Como se mencionó anteriormente, los conectores de datos proporcionados por Tele
 |Archivador de red SMS/MMS de Verizon | Sí | No | No |
 |Archivador de WeChat | Sí | No | No |
 |Archivador de WhatsApp | Sí | No | No |
+|||||
+
+### <a name="celltrust-data-connectors"></a>Conectores de datos cellTrust
+
+|Conector de datos  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|CellTrust SL2 | Sí | No | No |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Trabajar con un partner de Microsoft para archivar datos de terceros

@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá cómo funciona el cifrado de servicio con la clave de cliente en Microsoft 365.
-ms.openlocfilehash: 4798c3fb2193fbd3c513a16246e288fb8e9177c4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 7f765d8a9c59ad8bdc5e7d2edba7f18af426cc76
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568413"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863934"
 ---
 # <a name="service-encryption-with-customer-key"></a>Cifrado de servicio con clave de cliente
 
@@ -75,7 +75,7 @@ De forma predeterminada, los buzones se cifran con claves administradas por Micr
 
 - Si el buzón ya está cifrado mediante claves administradas por Microsoft, el servicio vuelve a envolver el buzón con el nuevo DEP de buzón siempre que un usuario o una operación del sistema acceda a los datos del buzón.
 
-- Si el buzón aún no está cifrado mediante cifrado predeterminado, el servicio marca el buzón para un movimiento. El cifrado tiene lugar una vez completado el movimiento. Los movimientos de buzones se rigen en función de las prioridades establecidas para todos los Microsoft 365. Para obtener más información, vea [Move requests in the Microsoft 365 service](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service). Si los buzones no están cifrados en el tiempo especificado, póngase en contacto con Microsoft.
+- Si el buzón aún no está cifrado mediante cifrado predeterminado, el servicio marca el buzón para un movimiento. El cifrado tiene lugar una vez completado el movimiento. Los movimientos de buzones se rigen en función de las prioridades establecidas para todos los Microsoft 365. Para obtener más información, vea [Move requests in the Microsoft 365 service](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-microsoft-365-or-office-365-service). Si los buzones no están cifrados en el tiempo especificado, póngase en contacto con Microsoft.
 
 Más adelante, puede actualizar el DEP o asignar un DEP diferente al buzón, tal como se describe en Administrar clave de cliente [para Office 365](customer-key-manage.md). Cada buzón debe tener licencias adecuadas para tener asignado un DEP. Para obtener más información acerca de las licencias, vea [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
 

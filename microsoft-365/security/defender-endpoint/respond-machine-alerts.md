@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd3f9fa5c6595a9a73111bb86699271cd5b930aa
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: 9d0286ec03c6cde7aa8129d030b65271e9c78677
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823689"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863379"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -39,10 +39,10 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 - Administrar etiquetas
 - Iniciar investigación automatizada
 - Iniciar sesión de respuesta activa
-- Recopilar paquete de investigación
-- Ejecutar examen antivirus
+- Recopilar el paquete de investigación
+- Ejecutar examen de antivirus
 - Restringir ejecución de aplicación
-- Aislar dispositivo
+- Aislar el dispositivo
 - Consultar a un experto en amenazas
 - Centro de actividades
 
@@ -57,7 +57,7 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 
 > [!IMPORTANT]
 >
-> - Estas acciones de respuesta solo están disponibles para dispositivos Windows 10 versión 1703 o posterior.
+> - Estas acciones de respuesta solo están disponibles para dispositivos Windows 10, versión 1703 o posterior y Windows Server 2019.
 > - Para las plataformas Windows, las capacidades de respuesta (como el aislamiento de dispositivos) dependen de las capacidades de terceros.
 > - Para los agentes de microsoft de primera parte, consulte el vínculo "más información" en cada característica para obtener los requisitos mínimos del sistema operativo.
 
@@ -182,8 +182,8 @@ Según la gravedad del ataque y la confidencialidad del dispositivo, es posible 
 
 > [!IMPORTANT]
 >
-> - El aislamiento total está disponible para dispositivos Windows 10, versión 1703.
-> - El aislamiento selectivo está disponible para dispositivos Windows 10 versión 1709 o posterior.
+> - El aislamiento total está disponible para dispositivos Windows 10, versión 1703 y Windows Server 2019.
+> - El aislamiento selectivo está disponible para dispositivos Windows 10, versión 1709 o posterior y Windows Server 2019.
 > - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán llegar al servicio en la nube de Microsoft Defender para Endpoint después de aislar el dispositivo. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para endpoint y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
 
 Esta característica de aislamiento de dispositivos desconecta el dispositivo en peligro de la red y conserva la conectividad con el servicio Defender for Endpoint, que sigue supervisando el dispositivo.

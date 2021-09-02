@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 42d8662ade476e23e3a7e8d8af31bf782f6ccf6b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: bf92c1764ed2b81b1f4409efc2e7bc7fae94185d
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573996"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863843"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 
@@ -54,12 +54,12 @@ En la navegación superior puede:
 
 Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener una vista más centrada de las alertas.
 
-### <a name="severity"></a>Gravedad
+### <a name="severity"></a>Severity
 
-Gravedad de alerta|Description
+Gravedad de alerta|Descripción
 ---|---
 Alto <br> (Rojo)|Alertas que se ven comúnmente asociadas con amenazas persistentes avanzadas (APT). Estas alertas indican un alto riesgo debido a la gravedad del daño que pueden causar en los dispositivos. Algunos ejemplos son: actividades de herramientas de robo de credenciales, actividades de ransomware no asociadas con ningún grupo, manipulación de sensores de seguridad o cualquier actividad malintencionada indicativa de un adversario humano.
-Medio <br> (Naranja)|Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
+Mediano <br> (Naranja)|Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
 Bajo <br> (Amarillo)|Alertas sobre amenazas asociadas con malware frecuente. Por ejemplo, herramientas de piratería, herramientas de piratería no malware, como ejecutar comandos de exploración, borrar registros, etc., que a menudo no indican una amenaza avanzada dirigida a la organización. También podría venir de una prueba de herramienta de seguridad aislada por un usuario de la organización.
 Informativo <br> (Gris)|Alertas que podrían no considerarse nocivas para la red, pero que pueden aumentar el conocimiento de la seguridad de la organización en posibles problemas de seguridad.
 
@@ -67,13 +67,13 @@ Informativo <br> (Gris)|Alertas que podrían no considerarse nocivas para la red
 
 Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) y Defender para las gravedades de alerta de extremo son diferentes porque representan distintos ámbitos.
 
-La gravedad de la amenaza antivirus de Microsoft Defender representa la gravedad absoluta de la amenaza detectada (malware) y se asigna en función del riesgo potencial para el dispositivo individual, si está infectado.
+La Antivirus de Microsoft Defender de amenaza representa la gravedad absoluta de la amenaza detectada (malware) y se asigna en función del riesgo potencial para el dispositivo individual, si está infectado.
 
 La gravedad de la alerta defender para el extremo representa la gravedad del comportamiento detectado, el riesgo real para el dispositivo pero, lo que es más importante, el riesgo potencial para la organización.
 
 Por ejemplo:
 
-- La gravedad de una alerta de Defender for Endpoint sobre un antivirus de Microsoft Defender detectado que se impidió por completo y no infectó el dispositivo se clasifica como "Informativo" porque no hubo ningún daño real.
+- La gravedad de una alerta de Defender for Endpoint sobre una amenaza Antivirus de Microsoft Defender detectada que se evitó por completo y no infectó el dispositivo se clasifica como "Informativo" porque no hubo ningún daño real.
 - Una alerta sobre un malware comercial que se detectó durante la ejecución, pero bloqueada y subsanada por Microsoft Defender AV, se clasifica como "Baja" porque puede haber causado algún daño en el dispositivo individual, pero no representa ninguna amenaza organizativa.
 - Una alerta sobre malware detectado durante la ejecución que puede suponer una amenaza no solo para el dispositivo individual, sino para la organización, independientemente de si finalmente se bloqueó, puede clasificarse como "Mediana" o "Alta".
 - Las alertas de comportamiento sospechosas, que no se han bloqueado o corregido, se clasificarán como "Baja", "Media" o "Alta" siguiendo las mismas consideraciones de amenazas organizativas.

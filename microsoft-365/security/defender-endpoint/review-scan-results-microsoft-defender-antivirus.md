@@ -1,5 +1,5 @@
 ---
-title: Revisar los resultados de los exámenes antivirus de Microsoft Defender
+title: Revisar los resultados de Antivirus de Microsoft Defender exámenes
 description: Revisar los resultados de los exámenes mediante Microsoft Endpoint Configuration Manager, Microsoft Intune o la aplicación Seguridad de Windows examen
 keywords: resultados del examen, corrección, examen completo, examen rápido
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d23d2c7f0d6fc12a3365d1c4f50d37384f5ca349
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ec4505de586b042db48e579ee50d83315ee9b470
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561271"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863874"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Revisar Antivirus de Microsoft Defender de examen
 

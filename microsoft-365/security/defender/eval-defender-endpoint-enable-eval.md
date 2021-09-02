@@ -1,6 +1,6 @@
 ---
 title: Habilitar Microsoft Defender para la evaluación de puntos de conexión
-description: Habilitar el entorno Microsoft 365 Defender prueba o piloto, incluida la comprobación del estado de la licencia y los puntos de incorporación
+description: Habilite el entorno Microsoft 365 Defender de prueba o piloto, incluida la comprobación del estado de la licencia y los puntos de conexión de incorporación
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fb8e77a11b3844d78c99b56863bdb9ea424c48f9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 09785d48d2ad5efb2d33559d0580c5a0ff63c768
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572976"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58864031"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Habilitar el entorno de evaluación de Microsoft Defender para puntos de conexión
 
@@ -34,8 +34,8 @@ ms.locfileid: "58572976"
 Este artículo le guiará a través de los pasos para configurar el entorno de evaluación de Microsoft Defender para endpoint mediante dispositivos de producción. 
 
 
->[!TIP]
->Microsoft Defender para endpoint también incluye un laboratorio de evaluación del producto donde puede agregar dispositivos preconfigurados y ejecutar simulaciones para evaluar las capacidades de la plataforma. El laboratorio viene con una experiencia de configuración simplificada que puede ayudar a demostrar rápidamente el valor de Microsoft Defender para Enpdoint, que incluye instrucciones para muchas características como la búsqueda avanzada y el análisis de amenazas. Para obtener más información, vea [Evaluate capabilities](/defender-endpoint/evaluation-lab.md). <br> La principal diferencia entre las instrucciones proporcionadas en este artículo y el laboratorio de evaluación es que el entorno de evaluación usa dispositivos de producción, mientras que el laboratorio de evaluación usa dispositivos que no son de producción. 
+> [!TIP]
+> Microsoft Defender para endpoint también incluye un laboratorio de evaluación del producto donde puede agregar dispositivos preconfigurados y ejecutar simulaciones para evaluar las capacidades de la plataforma. El laboratorio viene con una experiencia de configuración simplificada que puede ayudar a demostrar rápidamente el valor de Microsoft Defender para Endpoint, incluida la guía para muchas características como la búsqueda avanzada y el análisis de amenazas. Para obtener más información, vea [Evaluate capabilities](../defender-endpoint/evaluation-lab.md). <br> La principal diferencia entre las instrucciones proporcionadas en este artículo y el laboratorio de evaluación es que el entorno de evaluación usa dispositivos de producción, mientras que el laboratorio de evaluación usa dispositivos que no son de producción. 
 
 Siga estos pasos para habilitar la evaluación de Microsoft Defender para endpoint.
 
@@ -66,7 +66,7 @@ Después de comprobar que el estado de la licencia se ha aprovisionado correctam
 
 Con el fin de evaluar Microsoft Defender para Endpoint, recomendamos elegir un par de dispositivos Windows 10 para realizar la evaluación.
 
-Puedes elegir usar cualquiera de las herramientas de administración admitidas, pero Intune proporciona una integración óptima. Para obtener más información, vea [Configure Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure.md#enable-microsoft-defender-for-endpoint-in-intune)
+Puedes elegir usar cualquiera de las herramientas de administración admitidas, pero Intune proporciona una integración óptima. Para obtener más información, vea [Configure Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
 En [el tema Plan deployment](../defender-endpoint/deployment-strategy.md) se describen los pasos generales que debe seguir para implementar Defender for Endpoint.  
 

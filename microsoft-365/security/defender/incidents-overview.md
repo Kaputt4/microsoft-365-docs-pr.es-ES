@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c9a9cfa6e790cd179c0f9a13ce4fd312c0819411
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f6a874f263290913a5a7b1d25a16eb1c75938eb3
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575537"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58864007"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidentes en Microsoft 365 Defender
 
@@ -100,6 +100,10 @@ Las pestañas adicionales para un incidente son:
 
   Todos los eventos admitidos y las entidades sospechosas en las alertas del incidente.
 
+- Graph (versión preliminar)
+
+  Una representación visual del ataque que conecta las distintas entidades sospechosas que forman parte del ataque con sus activos relacionados, como usuarios, dispositivos y buzones.
+
 Esta es la relación entre un incidente y sus datos y las pestañas de un incidente en Microsoft 365 Defender portal.
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="La relación de un incidente y sus datos con las pestañas de un incidente en el portal Microsoft 365 Defender web.":::
@@ -110,33 +114,33 @@ Este es un flujo de trabajo de ejemplo para responder a incidentes en Microsoft 
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Ejemplo de flujo de trabajo de respuesta a incidentes para Microsoft 365.":::
 
-De forma continua, identifique los incidentes de mayor prioridad para el análisis y la resolución en la cola de incidentes y prepárese para la respuesta. Esta es una combinación de:
+De forma continua, identifique los incidentes más prioritarios para su análisis y resolución en la cola de incidentes y prepárelos para su respuesta. Esta es una combinación de:
 
 - [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
 - [Administrar](manage-incidents.md) incidentes modificando su título, asignándolos a un analista y agregando etiquetas y comentarios.
 
 1. Para cada incidente, inicie una investigación y análisis de [ataques y alertas:](investigate-incidents.md)
  
-   1. Vea el resumen del incidente para comprender su ámbito y gravedad y qué entidades se ven afectadas (la **pestaña Resumen).**
+   1. Vea el resumen del incidente para comprender su ámbito y gravedad y  qué entidades se ven afectadas con las pestañas Resumen y Graph **(versión** preliminar).
 
-   1. Comience a analizar las alertas para comprender su origen, ámbito y gravedad (la **pestaña** Alertas).
+   1. Comience a analizar las alertas para comprender su origen, ámbito y gravedad con la **pestaña Alertas.**
 
-   1. Según sea necesario, recopila información sobre dispositivos, usuarios y buzones afectados (las pestañas **Dispositivos,** **Usuarios** y **Buzones).**
+   1. Según sea necesario, recopila información sobre dispositivos, usuarios y buzones afectados con las pestañas **Dispositivos,** **Usuarios** y **Buzones.**
 
-   1. Vea cómo Microsoft 365 Defender [ha resuelto automáticamente algunas alertas](m365d-autoir.md) (la **pestaña Investigaciones).**
+   1. Vea cómo Microsoft 365 Defender [ha resuelto automáticamente algunas alertas](m365d-autoir.md) con la **pestaña Investigaciones.**
    
-   1. Según sea necesario, use la información del conjunto de datos para el incidente para obtener más información (la **pestaña Evidencia y** respuesta).
+   1. Según sea necesario, use la información del conjunto de datos para el incidente para obtener más información con la **pestaña Evidencia y** respuesta.
 
-2. Después o durante el análisis, realice la contención para reducir cualquier impacto adicional del ataque y la eliminación de la amenaza de seguridad.
+2. Después o durante el análisis, realice la contención para reducir cualquier impacto adicional del ataque y la detención de la amenaza de seguridad.
 
-3. En la medida de lo posible, recuperándose del ataque restaurando los recursos del espacio empresarial al estado en el que se encontraban antes del incidente.
+3. En la medida de lo posible, recupérese del ataque restaurando los recursos de sus cuentas empresariales al estado en que se encontraban antes del incidente.
 
 4. [Resuelva](manage-incidents.md#resolve-an-incident) el incidente y tome tiempo para aprender después del incidente a:
 
    - Comprender el tipo de ataque y su impacto.
    - Investigue el ataque en [Análisis de amenazas](threat-analytics.md) y la comunidad de seguridad para obtener una tendencia de ataque de seguridad.
-   - Recuerde el flujo de trabajo que usó para resolver el incidente y actualice los flujos de trabajo, procesos, directivas y libros de reproducción estándar según sea necesario.
-   - Determine si es necesario realizar cambios en la configuración de seguridad e implementarlos.
+   - Recordar el flujo de trabajo que se utilizó para resolver el incidente y actualizar los flujos de trabajo estándar, los procesos, las directivas y los libros de instrucciones según sea necesario.
+   - Determinar si son necesarios cambios en la configuración de seguridad e implementarlos.
 
 Si es nuevo en el [](incidents-overview.md) análisis de seguridad, vea la introducción para responder al primer incidente para obtener información adicional y para pasar por un incidente de ejemplo.
 

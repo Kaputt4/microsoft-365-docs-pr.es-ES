@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4b0399adae82123bf4e0d6ca5aa462d1b48ac80e9143b6744e936a6b94554c68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9f2e3b9d623f5f2b019296dc08c34c32ace2e9d6
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854416"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863778"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Tecnologías de seguridad en Escritorio administrado de Microsoft
 
@@ -21,7 +21,7 @@ ms.locfileid: "53854416"
 
 Escritorio administrado de Microsoft varias tecnologías de Microsoft para ayudar a proteger los datos y dispositivos administrados. Además, el Centro Escritorio administrado de Microsoft operaciones de seguridad usa varios [procesos](security-operations.md) junto con estas tecnologías.
 
-En particular:
+En concreto:
 
 - [Seguridad de dispositivos:](#device-security) seguridad y protección en Escritorio administrado de Microsoft dispositivos
 - [Administración de identidades y acceso:](#identity-and-access-management) administración del uso seguro de dispositivos mediante Azure Active Directory de identidades
@@ -37,7 +37,7 @@ Escritorio administrado de Microsoft garantiza que todos los dispositivos admini
 
 Servicio | Descripción
 --- | ---
-Antivirus | Microsoft Defender AV está instalado y configurado<br>Las definiciones de ANTIVIRUS de Microsoft Defender están actualizadas
+Antivirus | Antivirus de Microsoft Defender está instalado y configurado<br>Antivirus de Microsoft Defender definiciones están actualizadas
 Cifrado de volumen completo | Windows BitLocker es la solución de cifrado de volumen para Escritorio administrado de Microsoft dispositivos.<br><br>Una vez que una organización se incorpore al servicio, los dispositivos se cifrarán mediante Windows BitLocker con módulo de plataforma de confianza (TPM) integrado para evitar el acceso no autorizado a los datos locales cuando el dispositivo está en modo de suspensión o desactivado.
 Supervisión | Microsoft Defender para endpoint se usa para la supervisión de amenazas de seguridad en todos Escritorio administrado de Microsoft dispositivos. Defender for Endpoint permite a los clientes empresariales detectar, investigar y responder a amenazas avanzadas en su red corporativa. Para obtener más información, consulte [Microsoft Defender for Endpoint.](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 Actualizaciones del sistema operativo | Escritorio administrado de Microsoft dispositivos siempre están protegidos con las actualizaciones de seguridad más recientes.

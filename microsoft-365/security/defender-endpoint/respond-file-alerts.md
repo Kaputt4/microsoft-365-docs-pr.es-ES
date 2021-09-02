@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f582ff83a790d56b936c93f3e40aac76c7e5df1b
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: f1ea6f3b2dd9447ff9901518a80aafa4dec56a5e
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823713"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863850"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -164,7 +164,7 @@ Tener activada esta configuración puede ayudar a los equipos de seguridad a exa
 
 #### <a name="backing-up-quarantined-files"></a>Copia de seguridad de archivos en cuarentena
 
-Es posible que se pida a los usuarios que proporcionen un consentimiento explícito antes de realizar una copia de seguridad del archivo en cuarentena, según la [configuración de envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection).
+Es posible que se pida a los usuarios que proporcionen un consentimiento explícito antes de realizar una copia de seguridad del archivo en cuarentena, según la [configuración de envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-protection).
 
 Esta característica no funcionará si el envío de ejemplo está desactivado. Si se establece el envío automático de muestra para solicitar permiso al usuario, solo se recopilarán las muestras que el usuario acepte enviar.
 

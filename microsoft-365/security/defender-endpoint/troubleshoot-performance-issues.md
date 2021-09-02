@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de rendimiento
 description: Solucionar problemas de uso elevado de CPU relacionados con el servicio de protección en tiempo real en Microsoft Defender para endpoint.
-keywords: troubleshoot, performance, high CPU utilization, high CPU usage, error, fix, update compliance, oms, monitor, report, Microsoft Defender AV
+keywords: troubleshoot, performance, high CPU utilization, high CPU usage, error, fix, update compliance, oms, monitor, report, Antivirus de Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 29b174af6755718ef8c2fd446cf84aeb0f390310
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6fa4ff040bb6c863fab88e25728c69bcf920a07b
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568593"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863646"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Solucionar problemas de rendimiento relacionados con la protección en tiempo real
 
@@ -218,7 +218,7 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
     > [!TIP]
     > Mantenga la colección de datos en no más de cinco minutos. De dos a tres minutos es un buen intervalo, ya que se recopilan muchos datos.
 
-12. Haga clic en **Guardar**.
+12. Seleccione **Guardar**.
 
     ![Seleccione guardar.](images/wpr-10.png)
 
@@ -227,7 +227,7 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
     ![Rellene los detalles.](images/wpr-12.png)
 
     1. Seleccione **Nombre de archivo:** para determinar dónde se guardará el archivo de seguimiento. De forma predeterminada, 1.is guardado en `%user%\Documents\WPR Files\` .
-    1. Haga clic en **Guardar**.
+    1. Seleccione **Guardar**.
 
 14. Espere mientras se combina el seguimiento.
 
@@ -275,7 +275,7 @@ La herramienta de línea *de comandoswpr.exe* forma parte del sistema operativo 
 
 8. Incluya el archivo y la carpeta en el envío al soporte técnico de Microsoft.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Recopilar Antivirus de Microsoft Defender de diagnóstico](collect-diagnostic-data.md)
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)

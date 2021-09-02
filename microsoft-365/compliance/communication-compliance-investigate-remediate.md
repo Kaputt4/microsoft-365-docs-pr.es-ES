@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 125e622b39b6ec868cb6dffaf30eb8d64a346759
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 568441bb2f9172bb382629dc5e5ad4704cc1b2f6
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571440"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863439"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -40,6 +40,8 @@ El primer paso para investigar los problemas detectados por las directivas es re
 ### <a name="using-filters"></a>Uso de filtros
 
 El siguiente paso es ordenar los mensajes para que le resulte más fácil investigar las alertas. Desde la **página Detalles de** la directiva, el cumplimiento de la comunicación admite el filtrado de varios niveles para varios campos de mensajes que le ayudarán a investigar y revisar rápidamente los mensajes con coincidencias de directiva. El filtrado está disponible para los elementos pendientes y resueltos para cada directiva configurada. Puede configurar las consultas de filtro de una directiva, o configurar y guardar consultas de filtro predeterminado y personalizado para usarlas en cada directiva específica. Después de configurar los campos para un filtro, verá los campos de filtro en la parte superior de la cola de mensajes de alerta que puede configurar para valores de filtro específicos.
+
+Para el filtro de fecha, la fecha y la hora de los eventos se enumeran en La hora universal coordinada (UTC). Al filtrar mensajes para vistas, la fecha y hora local del usuario solicitante determina los resultados en función de la conversión de la fecha y hora local del usuario a UTC. Por ejemplo, si un usuario de la hora de verano del Pacífico (PDT) de Estados Unidos filtra un informe del 30/30/2021 al 8/31/2021 a las 00:00, el informe incluye mensajes del 8/30/2021 07:00 UTC al 8/31/2021 07:00 UTC. Si el mismo usuario estaba en el horario de verano oriental de Estados Unidos (EDT) al filtrar a las 00:00, el informe incluye mensajes del 30/30/2021 de 04:00 UTC al 8/31/2021 04:00 UTC.
 
 Para obtener una lista completa de filtros y detalles de campo, vea [Filters](communication-compliance-feature-reference.md#filters) en el artículo de referencia de características.
 

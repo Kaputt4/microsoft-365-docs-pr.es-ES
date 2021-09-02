@@ -11,12 +11,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2c1c8f46c3d569b6b43a87a6481d93b76729e48d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a8e95586dc5e3d2da2cbd6ace9369e4b2d17afed
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570946"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863391"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Introducción a la adopción de Temas Microsoft Viva
 
@@ -139,7 +139,7 @@ Identifique las partes interesadas del proyecto. Los roles clave son el patrocin
 | Expertos en la materia y colaboradores de temas | Generar o revisar temas y descripciones | Cualquier departamento |
 | Expertos: | Ayudar a promocionar y administrar el tratamiento de objeción | Cualquier departamento (personal) |
 | Administrador de inquilinos | Configurar la configuración de nivel de inquilino | Departamento de TI |
-| Administrador de Power Platform| Configurar el entorno de servicios de datos comunes | Departamento de TI |
+| Administrador de Power Platform| Configurar el entorno de Dataverse | Departamento de TI |
 | Administrador de búsqueda o gerente | Configurar las opciones de búsqueda | Departamento de TI |
 
 En una organización más grande, es posible que también tenga varias personas en estos roles y tendrá que impulsar la coordinación entre ellos. En una empresa más pequeña, una sola persona puede realizar varios de estos roles. Los diferentes roles participan de varias maneras en las distintas fases del proyecto. Por ejemplo, los administradores de inquilinos participan más en la configuración de las características, mientras que los expertos en temas y campeones no participan hasta que empiezas a definir temas.

@@ -15,12 +15,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: Obtenga información sobre cómo planear y ejecutar un programa piloto de prueba para SharePoint Syntex en su organización.
-ms.openlocfilehash: 490952d0bf1ba4d6fb61a7199a8c08170ff4476159a8c2665c4e39638ab5865e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 336a4c164f15035168d8842b05cdd4b5c566a97a
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899636"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863682"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Ejecutar una prueba de Microsoft SharePoint Syntex
 
@@ -106,8 +106,8 @@ Si no compra licencias después de la versión de prueba:
 - Las bibliotecas que estaban ejecutando modelos ya no clasificarán automáticamente archivos ni extraerán modelos.
 - Los archivos clasificados previamente o los metadatos extraídos no se verán afectados.
 - Los centros de contenido y los modelos de comprensión de documentos no se eliminarán automáticamente. Estos permanecerán disponibles para su uso si decide comprar licencias en el futuro.
-- Los modelos de procesamiento de formularios se almacenarán en la instancia de Common Data Services (CDS) del entorno predeterminado de Power Platform. Se podrían usar con licencias futuras para SharePoint Syntex o con funcionalidades de AI Builder en power platform.
+- Los modelos de procesamiento de formularios se almacenarán en la instancia dataverse (anteriormente denominada Common Data Service [CDS]) del entorno predeterminado de Power Platform. Se podrían usar con licencias futuras para SharePoint Syntex o con funcionalidades de AI Builder en power platform.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Adopción SharePoint Syntex Microsoft: Introducción](adoption-getstarted.md)

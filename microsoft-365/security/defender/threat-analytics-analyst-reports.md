@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e8f6d2c79a0eeac6db20ff5791a25264d1b6767
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 03973595f68c56ac57f22d8d68c9f37f04fb6bb8
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573456"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862838"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Comprender el informe de analistas en análisis de amenazas en Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ Además de estas mitigaciones rastreadas, el informe del analista también anali
 Aunque puedes usar la pestaña Mitigaciones para evaluar la posición de seguridad frente a una amenaza, estas recomendaciones te permiten tomar **medidas** adicionales para mejorar la posición de seguridad. Lea atentamente todas las instrucciones de mitigación del informe del analista y apliquenlas siempre que sea posible.
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Comprender cómo se puede detectar cada amenaza
-El informe del analista también proporciona las detecciones de Microsoft Defender para antivirus de extremo _y_ detección y respuesta de puntos de conexión (EDR).
+El informe de analistas también proporciona las detecciones de Antivirus de Microsoft Defender y _detección y respuesta de puntos de conexión_ (EDR).
 
 ### <a name="antivirus-detections"></a>Detecciones de antivirus
 Estas detecciones están disponibles en dispositivos [con Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) activado. Cuando estas detecciones se producen en dispositivos que se han incorporado a Microsoft Defender para Endpoint, también desencadenan alertas que encienden los gráficos del informe.

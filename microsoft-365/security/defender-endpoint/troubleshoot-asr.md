@@ -9,20 +9,20 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.date: 03/27/2019
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: f3eb7e0a52187c94f3f6ed1dadada2ff59b794849d58a7c8743bddeaf1e42eda
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0833a616f1b6052519e92a5e46c8f36f01c80818
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873816"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863475"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Solucionar problemas de reglas de reducción de superficie de ataque
 
@@ -58,7 +58,7 @@ Las reglas de reducción de superficie de ataque solo funcionarán en dispositiv
 
 - Los puntos de conexión Windows 10 Enterprise, versión 1709 (también conocida como fall Creators Update).
 
-- Los puntos de conexión usan Antivirus de Microsoft Defender como la única aplicación de protección antivirus. [El uso de cualquier otra aplicación antivirus hará que Microsoft Defender AV se deshabilite a sí mismo.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+- Los puntos de conexión usan Antivirus de Microsoft Defender como la única aplicación de protección antivirus. [El uso de cualquier otra aplicación antivirus hará que Antivirus de Microsoft Defender se deshabilite.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
 - [La protección en tiempo real](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) está habilitada.
 

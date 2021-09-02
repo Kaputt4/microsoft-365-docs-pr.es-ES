@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ca008206e30b6e7d13638379322238d3bb7b79d6
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bc00b3849e0fb6ce3749ff0e6280108c0cc41bd6
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256661"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863862"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -42,6 +42,10 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - (Versión preliminar) Microsoft Defender para obtener Office 365 disponibles en la búsqueda avanzada
 <br>Las nuevas columnas de las tablas de correo electrónico pueden proporcionar más información sobre las amenazas basadas en correo electrónico para realizar investigaciones más exhaustivas mediante la búsqueda avanzada. Ahora puede incluir la `AuthenticationDetails` columna en [EmailEvents](./advanced-hunting-emailevents-table.md), `FileSize` en [EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)y en las tablas `ThreatTypes` `DetectionMethods` [EmailPostDeliveryEvents.](./advanced-hunting-emailpostdeliveryevents-table.md) 
 
+- (Versión preliminar) Gráfico de incidentes
+
+  Una nueva **pestaña Graph** en  la pestaña Resumen de un incidente muestra el ámbito completo del ataque, cómo se extendió el ataque a través de la red con el tiempo, dónde se inició y hasta dónde llegó el atacante.
+
 ## <a name="july-2021"></a>Julio de 2021
 - [Professional de servicios](https://sip.security.microsoft.com/interoperability/professional_services)<br>Mejore las capacidades de detección, investigación e inteligencia de amenazas de la plataforma con conexiones de partners compatibles.
     
@@ -58,7 +62,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Microsoft 365 Defender análisis de amenazas](threat-analytics.md)<br>
  El análisis de amenazas te ayuda a responder y minimizar el impacto de los ataques activos. También puedes obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y realizar acciones preventivas que mitiguen el riesgo de exposición adicional y aumenten la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para Microsoft Defender para Endpoint y Microsoft Defender para los Office de licencias de E5.
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 - [Tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Encuentre información sobre eventos en varias aplicaciones y servicios en la nube cubiertos por Microsoft Cloud App Security. Esta tabla también incluye información disponible anteriormente en `AppFileEvents` .
 ## <a name="february-2021"></a>Febrero de 2021
 - (Versión preliminar) El portal [de Microsoft 365 Defender https://security.microsoft.com) mejorado (](https://security.microsoft.com) ahora está disponible en versión preliminar pública. Esta nueva experiencia lleva a Defender for Endpoint and Defender para Office 365 al centro. [Más información sobre los cambios](./overview-security-center.md).
