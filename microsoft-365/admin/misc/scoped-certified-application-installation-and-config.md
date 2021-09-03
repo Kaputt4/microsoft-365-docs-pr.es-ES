@@ -1,5 +1,5 @@
 ---
-title: Guía de instalación y configuración de aplicaciones certificadas con ámbito
+title: Microsoft 365 la integración con la guía de configuración de ServiceNow
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -16,14 +16,14 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: f5c562122fafcbb05115519d7841800be3e71a73
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: f21353aa54cfee3b85a6e9d846aa4fce37cc13f5
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531664"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866738"
 ---
-# <a name="scoped-certified-application-installation-and-configuration-guide"></a>Guía de instalación y configuración de aplicaciones certificadas con ámbito
+# <a name="microsoft-365-support-integration-with-servicenow-configuration-guide"></a>Microsoft 365 la integración con la guía de configuración de ServiceNow
 
 [Información general](#overview) 
 
@@ -89,7 +89,7 @@ Antes de configurar cualquier configuración para la Microsoft 365 la integraci�
 
 **Preguntas #2** Si tiene varios inquilinos, ¿tiene previsto usar un único espacio empresarial integrado con el entorno de ServiceNow para Microsoft 365 integración de soporte técnico?
 
-En esta tabla se identifican las características disponibles según las respuestas a estas preguntas y los vínculos a las instrucciones específicas para configurar la Microsoft 365 la integración. Para obtener una descripción de cada característica, [vea Microsoft 365 la integración de soporte técnico](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+En función de las respuestas a las preguntas anteriores, esta tabla le indica qué características están disponibles y cómo configurar la integración Microsoft 365 compatibilidad. Para obtener una descripción de cada característica, [vea Microsoft 365 la integración de soporte técnico](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
 |Pregunta #1 respuesta|Pregunta #2 respuesta|¿Qué características están disponibles?|Pasos de configuración|
 |--- |--- |--- |--- |
@@ -110,11 +110,11 @@ Algunos requisitos previos son necesarios para configurar la Microsoft 365 la in
 
     1. Vaya a la página Registros de aplicaciones y cree una nueva aplicación.
 
-        Seleccione **Solo Cuentas en este directorio de la organización ({TenantName} solo : Inquilino único**.
+        Seleccione **Cuentas solo en este directorio de la organización ({microsoft-365-tenant-name} only – Single tenant**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
-    1. Agregar dirección URL de redireccionamiento: `https://&lt;your-servicenow-instance&gt;.service-now.com/oauth\_redirect.do` .
+    1. Agregar dirección URL de redireccionamiento: `https://{your-servicenow-instance}.service-now.com/oauth_redirect.do` .
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
@@ -122,13 +122,13 @@ Algunos requisitos previos son necesarios para configurar la Microsoft 365 la in
 
 2. \[La persona que es administrador de ServiceNow \] Configure Outbound OAuth Provider in ServiceNow.
 
-    1. Vaya a **Registro de aplicaciones de OAuth** del  >  **sistema.**
-
     1. Si el ámbito no está establecido en **Global**, **abra Configuración**  >    >  **Developer Applications** para cambiar a **Global**.
 
-     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, chat o mensaje de texto Descripción generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, chat o mensaje de texto Descripción generada automáticamente":::
 
-    1. Cree una nueva aplicación con los valores siguientes [seleccionando Conectar a un proveedor de OAuth de terceros](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity).
+    1. Vaya a **Registro de aplicaciones de OAuth** del  >  **sistema.**
+
+    1. Cree una nueva aplicación con los valores siguientes **seleccionando Conectar a un proveedor de OAuth de terceros**.
 
     - Id. de cliente: el identificador de cliente de la aplicación creada en el paso \# 1
 
@@ -136,19 +136,19 @@ Algunos requisitos previos son necesarios para configurar la Microsoft 365 la in
 
     - Tipo de concesión predeterminado: credenciales de cliente
 
-    - Dirección URL del token: `https://login.microsoftonline.com/{M365\_Tenant\_Name}/oauth2/token`
+    - Dirección URL del token: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - Dirección URL de redireccionamiento:
+    - Dirección URL de redireccionamiento: https://{service-now-instance-name}.service-now.com/auth_redirect.do
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
 3. \[La persona que es administrador de ServiceNow \] Configure Inbound OAuth Provider.
-
-    1. Vaya a **Registro de aplicaciones de OAuth** del  >  **sistema.**
 
     1. Si el ámbito no está establecido en **Global**, **abra Configuración**  >    >  **Developer Applications** para cambiar a **Global**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
+
+    1. Vaya a **Registro de aplicaciones de OAuth** del  >  **sistema.**
 
     1. Para crear una aplicación nueva, seleccione **Crear un extremo de api de OAuth para clientes externos.** Asigne un nombre al proveedor de OAuth entrante y deje otros campos en sus valores predeterminados.
 
@@ -162,7 +162,7 @@ Algunos requisitos previos son necesarios para configurar la Microsoft 365 la in
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image8.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
-### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[Opcional Permitir ips del servicio de \] Microsoft 365 integración de soporte técnico
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[Opcional Permitir las IP del servicio de Microsoft 365 \] integración de compatibilidad
 
 Si su empresa limita el acceso a Internet con sus propias directivas, habilite el acceso de red para el servicio de Microsoft 365 admitir la integración al permitir las direcciones IP siguientes para el acceso a la API entrante y saliente.
 
@@ -250,7 +250,7 @@ Seleccione la siguiente configuración y, a continuación, **seleccione Siguient
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
-    1. Vaya a Microsoft 365 [Portal de administración Configuración](https://admin.microsoft.com/)  >    >  **Configuración**  >  **perfiles de la organización**.
+    1. Vaya a Microsoft 365 [Portal de administración Configuración](https://admin.microsoft.com/)Configuración de la organización  >    >    >  **Perfiles de organización**.
 
     1. Configurar la configuración de integración de compatibilidad:
 
@@ -288,14 +288,14 @@ Seleccione la siguiente configuración y, a continuación, **seleccione Siguient
 
 Microsoft 365 la integración de soporte técnico solo está habilitada para el usuario con uno de estos roles:
 
-- [x \_ mioms \_ m365 \_ assis.insights \_ user](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.insights \_ user
 
-- [x \_ mioms \_ m365 \_ assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.administrator
 
 > [!NOTE]
 > El usuario con el rol x \_ mioms \_ m365 assis.insights rol de usuario puede ver \_ Service Health \_ Incidents, Recommended Solutions. El usuario con el rol x \_ mioms \_ m365 assis.administrator también puede abrir un caso con Microsoft 365 \_ compatibilidad.
 
-11. \[Opcional La persona que es un vínculo de administrador \] \[ de ServiceNow \] Administración de Microsoft 365 cuenta.
+11. \[Opcional \] \[ El usuario con rol x_mioms_m365_assis.administrator \] Vincular Administración de Microsoft 365 cuenta.
 
 Si algún usuario tiene el rol x \_ mioms \_ m365 assis.administrator y usa diferentes cuentas de Microsoft 365 para administrar un caso de soporte técnico de Microsoft 365 Microsoft 365, debe ir > la cuenta de vínculo de soporte técnico > para configurar su correo electrónico de administrador \_ de Microsoft 365.
 
@@ -313,11 +313,11 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
     1. Vaya a la **página Registros de aplicaciones** y cree una nueva aplicación.
 
-        Seleccione **Solo Cuentas en este directorio de la organización ({TenantName} solo : Inquilino único**.
+        Seleccione **Cuentas solo en este directorio de la organización ({microsoft-365-tenant-name} only – Single tenant**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
-    1. Agregar dirección URL de redireccionamiento: `https://&lt;your-servicenow-instance&gt;.service-now.com/auth\_redirect.do`
+    1. Agregar dirección URL de redireccionamiento: `https://{your-servicenow-instance}.service-now.com/auth_redirect.do`
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
@@ -329,7 +329,7 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
     1. Vaya a **Registros de aplicaciones** y cree una nueva aplicación.
 
-        Seleccione **Solo Cuentas en este directorio de la organización ({TenantName} solo : Inquilino único**.
+        Seleccione **Cuentas solo en este directorio de la organización ({microsoft-365-tenant-name} only – Single tenant**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image22.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
@@ -340,7 +340,8 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
     1. Inicie sesión en [Azure Portal con](https://portal.azure.com/) las Microsoft 365 de inquilino.
 
     1. Vaya a la **página Registros de aplicaciones** y cree una nueva aplicación.
-    1. Seleccione **Solo Cuentas en este directorio de la organización ({TenantName} solo : Inquilino único**.
+        
+        Seleccione **Cuentas solo en este directorio de la organización ({microsoft-365-tenant-name} only – Single tenant**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
@@ -348,13 +349,13 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
 4. \[La persona que es administrador de ServiceNow \] Configure Outbound OAuth Provider in ServiceNow.
 
+    1. Si el ámbito no está establecido en **Global**, **abra Configuración**  >    >  **Developer Applications** para cambiar a **Global**.
+
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, chat o mensaje de texto Descripción generada automáticamente":::
+
     1. Vaya a **Registro de aplicaciones de OAuth** del  >  **sistema.**
 
-    2. Si el ámbito no está establecido en **Global**, **abra Configuración**  >    >  **Developer Applications** para cambiar a **Global**.
-
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, chat o mensaje de texto Descripción generada automáticamente":::
-
-    3. Cree una nueva aplicación con los valores siguientes [seleccionando Conectar a un proveedor de OAuth de terceros](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity).
+    1. Cree una nueva aplicación con los valores siguientes **seleccionando Conectar a un proveedor de OAuth de terceros**.
 
         - Id. de cliente: el identificador de cliente de la aplicación creada en el paso 1 de [Requisitos previos (token de OAuth de AAD).](#prerequisites-aad-oauth-token) \#
 
@@ -362,19 +363,19 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
         - Tipo de concesión predeterminado: credenciales de cliente.
 
-        - Dirección URL del token: `https://login.microsoftonline.com/{M365\_Tenan\_Name}/oauth2/token`
+        - Dirección URL del token: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
         - Dirección URL de redireccionamiento:
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
+            :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
-5. \[La persona que es administrador de ServiceNow \] Configure OIDC provider in ServiceNow, consulte la documentación [en](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html)línea, de lo contrario vaya al paso 7.
-
-    1. Vaya a **Registro de aplicaciones de OAuth** del  >  **sistema.**
+5. \[La persona que es administrador de ServiceNow \] Configure OIDC provider in ServiceNow, consulte la [documentación en línea](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html).
 
     1. Si el ámbito no está establecido en **Global**, **abra Configuración**  >    >  **Developer Applications** para cambiar a **Global**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, chat o mensaje de texto Descripción generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, chat o mensaje de texto Descripción generada automáticamente":::
+
+    1. Vaya a **Registro de aplicaciones de OAuth** del  >  **sistema.**
 
     1. Seleccione **Nuevo**  >  **Crear nuevo identificador abierto Conectar proveedor**.
 
@@ -382,7 +383,7 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
     - Proveedor de OIDC: Contoso Azure
 
-    - Dirección URL de metadatos de OIDC: `https://login.microsoftonline.com/{tenant\_name}/.well-known/openid-configuration`
+    - Dirección URL de metadatos de OIDC: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
     - UserClaim: **appId**
 
@@ -401,7 +402,7 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
     - Configuración del proveedor de OAuth OIDC: el proveedor de OIDC creado en el último paso.
 
     - Dirección URL de redireccionamiento:  
-        `https://{service\_now\_instance}.service-now.com/oauth\_redirect.do`
+        `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image25.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
@@ -411,7 +412,7 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image26.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
-### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[Opcional Permitir ips del servicio de \] Microsoft 365 integración de soporte técnico
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[Opcional Permitir las IP del servicio de Microsoft 365 \] integración de compatibilidad
 
 Si su empresa limita el acceso a Internet con sus propias directivas, habilite el acceso de red para el servicio de Microsoft 365 admitir la integración al permitir estas direcciones IP para el acceso a la API entrante y saliente:
 
@@ -473,7 +474,7 @@ Seleccione Perfil de OAuth para proveedor de OAuth saliente creado [en Requisito
 
     1. Introduzca el identificador de cliente de la aplicación que se creó en el paso 3 [requisitos previos (token de OAuth de AAD)](#prerequisites-aad-oauth-token) \# y seleccione **Siguiente**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image39.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 7. \[La persona que es administrador de ServiceNow \] Configure el id. de repositorio.
 
@@ -499,13 +500,13 @@ Seleccione Perfil de OAuth para proveedor de OAuth saliente creado [en Requisito
 
     1. Compruebe la siguiente información para asegurarse de que es correcta.
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image40.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
-    1. Vaya a Microsoft 365 [Portal de administración Configuración](https://admin.microsoft.com)  >    >  **Configuración**  >  **perfiles de la organización**.
+    1. Vaya a Microsoft 365 [Portal de administración Configuración](https://admin.microsoft.com)Configuración de la organización  >    >    >  **Perfiles de organización**.
 
     1. Configurar la configuración de integración de compatibilidad.
 
-        1. En  la pestaña información básica, seleccione **Servicio** ahora como herramienta de soporte técnico interna y escriba **Identificador** de aplicación saliente como el valor de Id. de aplicación en la página Paso - 6 Completado, que se creó en [Requisitos previos (token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 1.
+        1. En  la pestaña información básica, seleccione **Servicio** ahora como herramienta de soporte técnico interna y escriba **Identificador** de aplicación saliente como el valor de Id. de aplicación en el paso - 6 Completar la página de integración, que se creó en [Requisitos previos (token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 1.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
@@ -529,20 +530,20 @@ Seleccione Perfil de OAuth para proveedor de OAuth saliente creado [en Requisito
 
     1. Seleccione **Siguiente** para completar la integración.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image32.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image32.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
 10. \[La persona que es administrador de ServiceNow Habilitar Microsoft 365 \] la integración de soporte técnico para un usuario existente.
 
 Microsoft 365 la integración de soporte técnico solo está habilitada para usuarios con los siguientes roles:
 
-- [x \_ mioms \_ m365 \_ assis.insights \_ user](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.insights \_ user
 
-- [x \_ mioms \_ m365 \_ assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.administrator
 
 > [!NOTE]
 > El usuario con el rol x \_ mioms \_ m365 assis.insights el usuario puede ver \_ Service Health \_ Incidents, Recommended Solutions. El usuario con el rol x \_ mioms \_ m365 assis.administrator también puede abrir un caso con Microsoft 365 \_ compatibilidad.
 
-11. **\[Opcional \] \[ La persona que es un vínculo de administrador de ServiceNow \] Administración de Microsoft 365 cuenta**
+11. **\[Opcional \] \[ El usuario con rol x_mioms_m365_assis.administrator \] Link Administración de Microsoft 365 cuenta**
 
 Si algún usuario tiene el rol "x \_ mioms \_ m365 assis.administrator" y usa diferentes cuentas de Microsoft 365 para administrar los casos de soporte técnico de Microsoft, debe ir Microsoft 365 la cuenta de vínculo de soporte técnico > para configurar su correo electrónico de administrador de \_ Microsoft 365.
 
@@ -560,11 +561,11 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
     1. Vaya a la **página Registros de aplicaciones** y cree una nueva aplicación.
 
-    1. Seleccione **Solo Cuentas en este directorio de la organización ({TenantName} solo : Inquilino único**.
+        Seleccione **Cuentas solo en este directorio de la organización ({microsoft-365-tenant-name} only – Single tenant**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
-    1. Agregar dirección URL de redireccionamiento: `https://&lt;your-servicenow-instance&gt;.service-now.com/auth\_redirect.do`
+    1. Agregar dirección URL de redireccionamiento: `https://{your-servicenow-instance}.service-now.com/auth_redirect.do`
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
@@ -572,13 +573,13 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
 1. \[La persona que es administrador de ServiceNow \] Configure Outbound OAuth Provider in ServiceNow.
 
-    1. Vaya a **Registro de aplicaciones de OAuth** del  >  **sistema.**
-
     1. Si el ámbito no está establecido en **Global**, **abra Configuración**  >    >  **Developer Applications** para cambiar a **Global**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, chat o mensaje de texto Descripción generada automáticamente":::
 
-    1. Cree una nueva aplicación con los valores siguientes [seleccionando Conectar a un proveedor de OAuth de terceros](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity).
+    1. Vaya a **Registro de aplicaciones de OAuth** del  >  **sistema.**
+
+    1. Cree una nueva aplicación con los valores siguientes **seleccionando Conectar a un proveedor de OAuth de terceros**.
 
     - Id. de cliente: **el identificador de cliente** de la aplicación creada en [requisitos previos (Ideas SOLO)](#prerequisites-insights-only) \# paso 1
 
@@ -586,9 +587,9 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
     - Tipo de concesión predeterminado: credenciales de cliente
 
-    - Dirección URL del token: `https://login.microsoftonline.com/{M365\_Tenan\_Name}/oauth2/token`
+    - Dirección URL del token: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - Dirección URL de redireccionamiento: `https://{ServiceNow\_Istance\_Name}.service-now.com/oauth\_redirect.do`
+    - Dirección URL de redireccionamiento: `https://{servicenow-instance-name}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
@@ -655,7 +656,7 @@ Especifique el identificador del repositorio y seleccione **Siguiente**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image35.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
-    1. Vaya a Microsoft 365 [Portal de administración Configuración](https://admin.microsoft.com)  >    >  **Configuración**  >  **perfiles de la organización**.
+    1. Vaya a Microsoft 365 [Portal de administración Configuración](https://admin.microsoft.com)Configuración de la organización  >    >    >  **Perfiles de organización**.
 
         1. Configure la configuración de integración de soporte técnico con la información que se muestra en el flujo de configuración.
 
@@ -689,18 +690,12 @@ Especifique el identificador del repositorio y seleccione **Siguiente**.
 
 Microsoft 365 la integración de compatibilidad solo está habilitada para estos roles de usuario:
 
-- [x \_ mioms \_ m365 \_ assis.insights \_ user](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.insights \_ user
 
-- [x \_ mioms \_ m365 \_ assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+- x \_ mioms \_ m365 \_ assis.administrator
 
 > [!NOTE] 
-> El usuario con el rol x \_ mioms \_ m365 assis.insights el usuario puede ver \_ Service Health \_ Incidents, Recommended Solutions. El usuario con el rol x \_ mioms \_ m365 assis.administrator también puede abrir un caso con Microsoft 365 \_ compatibilidad.
-
-11. \[Opcional La persona que es un vínculo de administrador \] \[ de ServiceNow \] Administración de Microsoft 365 cuenta.
-
-Si algún usuario tiene el rol "x \_ mioms \_ m365 assis.administrator y usa diferentes cuentas de Microsoft 365 para administrar un caso de soporte técnico de Microsoft, debe ir Microsoft 365 la cuenta de vínculo de soporte técnico > para configurar su correo electrónico de administrador \_ Microsoft 365.
-
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
+> El usuario con el rol x_mioms_m365_assis.insights_user puede ver Service Health Incidents, Recommended Solutions. El usuario con el rol x_mioms_m365_assis.administrator también puede abrir un caso con Microsoft 365 compatibilidad. Con Ideas SOLO, no se debe asignar a nadie el rol x_mioms_m365_assis.administrator.
 
 ## <a name="testing-the-configuration"></a>Probar la configuración
 
@@ -722,7 +717,7 @@ Estos son los pasos para probar la configuración de la Microsoft 365 la integra
 |--- |--- |--- |
 |1|No se puede ver la **Microsoft 365 de soporte** técnico|Compruebe la vista actual y **los registros del** sistema todos  >  **con** x_mioms_m365_assit|
 |2|Seleccione **soluciones recomendadas de Microsoft** pero obtenga el error "Póngase en contacto con el administrador de ServiceNow y pídales que completen los pasos de configuración de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
-|3 |Seleccione **soluciones recomendadas de Microsoft** pero obtenga el error "Póngase en contacto con el administrador de ServiceNow y pídales que completen el paso de configuración final de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
+|3|Seleccione **soluciones recomendadas de Microsoft** pero obtenga el error "Póngase en contacto con el administrador de ServiceNow y pídales que completen el paso de configuración final de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
 |4 |Escriba el problema en el cuadro de búsqueda y seleccione Soluciones recomendadas de **Microsoft** pero obtenga el error "Póngase en contacto con el administrador de ServiceNow y pídale que complete los pasos de configuración de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
 |5 |Escriba problema en el cuadro de búsqueda y seleccione Soluciones recomendadas de **Microsoft** pero obtenga el error "Póngase en contacto con el administrador de ServiceNow y pídale que complete el paso de configuración final de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
 |6 |Selecciona Póngase en contacto con el soporte técnico de **Microsoft,** pero recibe el error "Póngase en contacto con el administrador de ServiceNow y pídale que complete los pasos de configuración de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
@@ -732,7 +727,7 @@ Estos son los pasos para probar la configuración de la Microsoft 365 la integra
 |10|Seleccione **Soluciones recomendadas de Microsoft pero** obtenga el error "Póngase en contacto con el soporte técnico de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
 |11 |Escriba problema en el cuadro de búsqueda y seleccione **Soluciones recomendadas de Microsoft,** pero no aparece nada|Comprobar **registros del sistema: registros HTTP salientes** con login.microsoftonline.com y connector.rave.microsoft.com|
 |12 |Escriba problema en el cuadro de búsqueda y seleccione **Soluciones recomendadas de Microsoft** pero obtenga el error "Póngase en contacto con el soporte técnico de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
-|13 |El usuario selecciona **Póngase en contacto con el soporte técnico de Microsoft,** pero no ocurre nada|Comprobar **registros del sistema: registros HTTP salientes** con login.microsoftonline.com y connector.rave.microsoft.com|
+|13|El usuario selecciona **Póngase en contacto con el soporte técnico de Microsoft,** pero no ocurre nada|Comprobar **registros del sistema: registros HTTP salientes** con login.microsoftonline.com y connector.rave.microsoft.com|
 |14 |No se puede ver la solución recomendada por Microsoft después de volver a abrir el incidente|Comprobar **Registros del sistema**  >  **Todo** con filtros x_mioms_m365_assit|
 |15 |No se pueden ver casos de Microsoft al volver a abrir el incidente que se transfirió al soporte técnico de Microsoft|Comprobar **Registros del sistema**  >  **Todo** con filtros x_mioms_m365_assit|
 |16 |No se pueden guardar los detalles del vale, recibe el error "No se pueden guardar los detalles del vale. Póngase en contacto con el soporte técnico de la aplicación".|Comprobar el mensaje de error en la parte superior del formulario|

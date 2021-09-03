@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ebb491ccd84e328ea3d4d1151a2c141ca3a69168
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: b610c2bb3c3b30900a5316083864d1fc67b85442
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450073"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866756"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -40,6 +40,36 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 > - [Novedades de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Y visite la [guía básica](https://www.microsoft.com/microsoft-365/roadmap) de Microsoft 365 para obtener información sobre Microsoft 365 características que se iniciaron, se están implementando, están en desarrollo, se cancelaron o se publicaron anteriormente.
+
+## <a name="august-2021"></a>Agosto de 2021
+
+### <a name="app-governance"></a>Gobierno de aplicaciones
+- [Entradas expandida para información de alertas](app-governance-anomaly-detection-alerts.md#collection-alerts). Se agregaron nuevas entradas para describir información adicional sobre alertas ahora disponible en el gobierno de la aplicación.
+
+### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+- [La referencia de característica de cumplimiento de](communication-compliance-feature-reference.md) comunicación agregó nueva compatibilidad con características de vista previa para el examen de datos adjuntos modernos en Teams chats y canales privados.
+
+### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
+
+- [Referencia de directiva de prevención de pérdida de datos](dlp-policy-reference.md). Se agregó una nueva página de referencia de directiva para ayudarle a crear directivas.
+
+### <a name="insider-risk-management"></a>Administración de riesgos internos
+- [Obtenga información sobre y configure la detección de señales](insider-risk-management-browser-support.md)del explorador de administración de riesgos insider . Característica de vista previa para configurar la detección de señales del explorador para exploradores Edge y Chrome.
+
+### <a name="retention-and-records-management"></a>Administración de registros y retención
+- [Diagrama de flujo para determinar cuándo se](retention-flowchart.md) conservará o eliminará permanentemente un elemento para complementar los conceptos y ejemplos de los principios de retención.
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+- Mejoras en las directivas de etiquetado automático que incluyen directivas y sitios de números [admitidos](apply-sensitivity-label-automatically.md#recent-enhancements-for-auto-labeling-policies) más altos, compatibilidad con todos los sitios de OneDrive y SharePoint y la capacidad de seleccionar sitios SharePoint disponibles en lugar de tener que escribir cada sitio por dirección URL y mejoras de simulación.
+- El etiquetado automático en Office como una configuración de etiqueta de confidencialidad ahora admite [Exact Data Match (EDM).](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match)
+- Las etiquetas predeterminadas ahora se [extienden Power BI (en versión preliminar).](/power-bi/admin/service-security-sensitivity-label-default-label-policy)
+- Los eventos de auditoría de [](data-classification-activity-explorer-available-events.md) Outlook en la Web que se encuentran en el explorador de actividades ahora están completamente desarrollados, lo que significa que la actividad del usuario para las etiquetas integradas ya está disponible para todas las aplicaciones Office en toda la plataforma.
+- Las [](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) tablas de funcionalidades admitidas tienen una nueva nota al pie de página para Windows para aclarar que las versiones mínimas son para el canal actual y una sugerencia para comparar más fácilmente versiones anteriores que omiten ceros iniciales con versiones más recientes.
+
+### <a name="retention-and-records-management"></a>Administración de registros y retención
+
+- [Diagrama de flujo para determinar cuándo se](retention-flowchart.md)conservará un elemento o se eliminará permanentemente . Proporciona una representación visual más paso a paso de los principios de retención.
+- [Aplicar automáticamente una etiqueta de retención para conservar o eliminar contenido](apply-retention-labels-automatically.md) Nuevas tablas agregadas para Exchange y SharePoint, para aclarar cuándo se pueden aplicar automáticamente etiquetas de retención para cada una de las condiciones disponibles.
 
 ## <a name="july-2021"></a>Julio de 2021
 
@@ -192,7 +222,7 @@ Outlook versiones y actualizaciones:
 - [El etiquetado obligatorio se](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) está implementando en las plataformas restantes.
 - [Los marcados dinámicos con todas las variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) se admiten en todos los Outlook cliente.
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 
 Estos son algunos de los cambios realizados en Microsoft 365 de cumplimiento normativo y contenido para el mes de marzo.
 
@@ -271,77 +301,3 @@ El contenido se agregó o actualizó en los temas siguientes:
 - **Compatibilidad con DoD**. Compatibilidad con inquilinos gubernamentales de Estados Unidos con entornos DoD.
 - **Encrypt-Only para Outlook**. Las opciones de cifrado Outlook ahora incluyen Encrypt-Only cuando selecciona Permitir que [los usuarios asignen permisos.](encryption-sensitivity-labels.md#let-users-assign-permissions)
 - **Aplicar etiquetas integradas en Office aplicaciones**. Instrucciones [actualizadas](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) sobre cómo aplicar etiquetas integradas en Office aplicaciones cuando tenga instalado el cliente de etiquetado unificado de Azure Information Protection.
-
-## <a name="february-2021"></a>Febrero de 2021
-
-Estos son algunos de los cambios realizados en Microsoft 365 de cumplimiento normativo y contenido para el mes de febrero.
-
-### <a name="auditing"></a>Auditoría
-
-- **Administrar directivas de retención de registros de auditoría**. Obtenga más información sobre el nuevo panel [De directivas de retención de auditoría.](/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1)
-- **Busque en el registro de auditoría**. [Use el script de PowerShell para buscar en el registro de auditoría](/microsoft-365/compliance/audit-log-search-script).
-
-### <a name="data-classification-content-explorer"></a>Explorador de contenido de clasificación de datos
-
-El contenido se agregó o actualizó en los temas siguientes:
-
-- [Introducción al explorador de contenido](/microsoft-365/compliance/data-classification-content-explorer)
-
-### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
-
-El contenido se agregó o actualizó en los temas siguientes:
-
-- [Obtenga información sobre DLP de extremo](/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [Enviar notificaciones de email y mostrar sugerencias para directivas DLP](/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
-- [Introducción al examinador de prevención de pérdida de datos en el entorno local](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
-- [Crear una directiva DLP para proteger documentos con FCI u otras propiedades](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [Uso de la prevención de pérdida de datos en punto de conexión](/microsoft-365/compliance/endpoint-dlp-using)
-- [Introducción a la prevención de pérdida de datos en punto de conexión](/microsoft-365/compliance/endpoint-dlp-getting-started)
-
-### <a name="ediscovery"></a>eDiscovery
-
-El contenido se agregó o actualizó en los temas siguientes:
-
-- [Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos](/microsoft-365/compliance/ediscovery-decryption)
-- [Consultas de palabras clave y condiciones de búsqueda](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [Retiro del módulo Relevancia en Advanced eDiscovery](/microsoft-365/compliance/relevance-module-retirement)
-- [Usar un script para agregar usuarios a una retención en un caso de exhibición de documentos electrónicos principal](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
-
-### <a name="encryption"></a>Cifrado
-
-El contenido se agregó o actualizó en los temas siguientes:
-
-#### <a name="azure-rights-management-service-rms"></a>Azure Rights Management Servicio (RMS)
-
-- [Características de cifrado administradas por el cliente](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [Exchange Online cifrado de correo electrónico con AD RMS](/microsoft-365/compliance/information-rights-management-in-exchange-online). La compatibilidad con este servicio ha quedado en desuso. Ya no puede usar AD RMS en un entorno Exchange híbrido. En su lugar, migre a Azure RMS.
-
-#### <a name="customer-key"></a>Clave de cliente
-
-- [Clave de cliente para Microsoft 365 en el nivel de inquilino](/microsoft-365/compliance/customer-key-tenant-level)
-- [Información general sobre seguridad y cumplimiento](/microsoftteams/security-compliance-overview)
-
-#### <a name="information-rights-management-irm"></a>Information Rights Management (IRM)
-
-- [Aplicar Information Rights Management (IRM) a una lista o biblioteca.](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) Estas nubes nacionales no admiten esta configuración:
-  - Microsoft Cloud for US Government
-  - Microsoft Cloud Alemania
-  - Azure y Microsoft 365 operados por 21Vianet en China)
-- [Configure IRM para que use un servidor de AD RMS local.](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) La compatibilidad con este servicio en un entorno Exchange híbrido ha quedado en desuso.
-
-### <a name="sensitive-information-types"></a>Tipos de información confidencial
-
-El contenido se agregó o actualizó en los temas siguientes:
-
-- [Obtener más información acerca de los tipos de información confidencial](/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [Crear un tipo de información confidencial personalizado con PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [Crear tipos de información confidencial personalizados con clasificación basada en coincidencia exacta de datos](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Definiciones de entidad de tipos de información confidencial](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-
-El contenido se agregó o actualizó en los temas siguientes:
-
-- **SharePoint uso compartido externo**. En [el caso de las etiquetas](sensitivity-labels-teams-groups-sites.md) de contenedor, la opción de uso compartido externo SharePoint sitios ya está disponible en general. Además, los Centro de administración de Microsoft 365 y Planner ahora admiten la aplicación de estas etiquetas de confidencialidad. 
-- **Coautoría y Autoguardado**. La compatibilidad [con la co-autoría y autoguardar](sensitivity-labels-coauthoring.md) archivos cifrados se libera como versión preliminar para las pruebas en inquilinos que no son de producción.

@@ -19,18 +19,18 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: daae280fa4c08a47f74cec6a71ec11ac9739ebd6
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 51eac7b05edeccece3cf45a8396493d84dc3e11f
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684117"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866672"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
 Las directivas de prevención de pérdida de datos (DLP) tienen muchos componentes que se pueden configurar. Para crear una directiva eficaz, debe comprender cuál es el propósito de cada componente y cómo su configuración modifica el comportamiento de la directiva. En este artículo se proporciona una anatomía detallada de una directiva DLP.
 
-### <a name="policy-templates"></a>Plantillas de directiva 
+## <a name="policy-templates"></a>Plantillas de directiva 
 
 Las plantillas de directiva DLP se ordenan previamente en cuatro categorías:
 
@@ -99,7 +99,7 @@ Actual a partir del 23/6/2021
 
 
 
-### <a name="locations"></a>Ubicaciones
+## <a name="locations"></a>Ubicaciones
 
 <!--This section covers a mapping of data-at-rest, data-in-use, and data-in-motion to the locations/workloads. It introduces the idea that the options that are selected here have a direct impact on the UI that they will encounter further along in the policy creation/edit flow. It will also cover the dependencies between locations (eg. Teams chat and channel requires SharePoint and ODB). It will also include the impact of the different scope settings. eg. If you want the policy to be applied to DEF, but not HIJ, you should configure your include/exclude scopes like this......--> 
 
@@ -123,14 +123,14 @@ Si elige incluir o excluir sitios de SharePoint o cuentas de OneDrive específic
 
 Si decide incluir o excluir grupos o cuentas de OneDrive específicas, una directiva DLP no puede contener más de 100 cuentas de usuario o 50 grupos como inclusión o exclusión.
 
-#### <a name="location-support-for-how-content-can-be-defined"></a>Compatibilidad con la ubicación para definir el contenido
+### <a name="location-support-for-how-content-can-be-defined"></a>Compatibilidad con la ubicación para definir el contenido
 
 Las directivas DLP detectan elementos confidenciales al coincidir con un tipo de información confidencial (SIT), una etiqueta de confidencialidad o una etiqueta de retención. Cada ubicación admite diferentes métodos para definir contenido confidencial. Además, al combinar ubicaciones en una directiva, la forma en que se puede definir el contenido puede cambiar de la forma en que se puede definir mediante una sola ubicación. 
 
 > [!IMPORTANT]
 > Al seleccionar varias ubicaciones para una directiva, un valor "no" para una categoría de definición de contenido tiene prioridad sobre el valor "sí". Por ejemplo, cuando selecciona solo SharePoint sitios, la directiva admitirá la detección de elementos confidenciales por uno o más de SIT, por etiqueta de confidencialidad o por etiqueta de retención. Sin embargo, al seleccionar SharePoint ***sitios*** y Teams de mensajes de chat y canal, la directiva solo admitirá la detección de elementos confidenciales por SIT. 
 
-|ubicación|  el contenido se puede definir mediante SIT|  el contenido se puede definir etiqueta de confidencialidad|   el contenido se puede definir mediante la etiqueta de retención|
+|location|  el contenido se puede definir mediante SIT|  el contenido se puede definir etiqueta de confidencialidad|   el contenido se puede definir mediante la etiqueta de retención|
 |---------|---------|---------|---------|
 |Exchange correo electrónico en línea|sí| sí|    no|
 |SharePoint en línea|   sí|    sí|    sí|
@@ -145,7 +145,7 @@ Las directivas DLP detectan elementos confidenciales al coincidir con un tipo de
 
 
 
-### <a name="rules"></a>Reglas
+## <a name="rules"></a>Rules
 
 <!--This section introduces the classifications of content that, when detected, can be protected. Link out to [Learn about sensitive information types]() and [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) as well as labels (cross referenced by supporting workload). It will touch on the purpose of multiple conditions, confidence levels (link out to [more on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)) and confidence levels video. How to use the confidence level to change the behavior of a policy in conjunction with the instance count.  eg. if you want your policy to trigger when it encounters situation DEF, set your conditions like HIJ.-->
 <!--
@@ -167,7 +167,7 @@ Las reglas son la lógica empresarial de las directivas DLP. Constan de:
 
  Una directiva contiene una o varias reglas. Las reglas se ejecutan secuencialmente, comenzando por la regla de mayor prioridad de cada directiva.
 
-#### <a name="the-priority-by-which-rules-are-processed"></a>Prioridad por la que se procesan las reglas
+### <a name="the-priority-by-which-rules-are-processed"></a>Prioridad por la que se procesan las reglas
 
 A cada regla se le asigna una prioridad en el orden en que se crea; es decir, la regla creada primero tiene prioridad, la regla creada en segundo lugar tiene la segunda prioridad, y así sucesivamente. 
   
@@ -188,14 +188,14 @@ Por ejemplo, podría tener una directiva DLP que ayude a detectar la presencia d
   
 ![El diagrama muestra que la directiva DLP contiene ubicaciones y reglas](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
-#### <a name="conditions"></a>Condiciones
+### <a name="conditions"></a>Condiciones
 
 Las condiciones son inclusivas y son donde se define lo que desea que busque la regla y el contexto en el que se usan esos elementos. Le dicen a la regla &#8212; cuando encuentre  un elemento que tenga este aspecto y se esté utilizando como ese *&#8212;* es una coincidencia y el resto de las acciones de la directiva deben realizarse en él. Puede usar condiciones para asignar acciones diferentes a distintos niveles de riesgo. Por ejemplo, el contenido confidencial compartido internamente podría ser de menor riesgo y necesitar menos acciones que el contenido confidencial compartido con personas de fuera de la organización.
 
 > [!NOTE]
 > Los usuarios que tienen cuentas que no son de invitado en el espacio empresarial de Active Directory o de Azure Active Directory de una organización anfitriona se consideran como personas dentro de la organización. 
 
-##### <a name="content-contains"></a>El contenido contiene
+#### <a name="content-contains"></a>El contenido contiene
 
  Todas las ubicaciones compatibles con **el contenido contiene** la condición. Puede seleccionar varias instancias de cada tipo de contenido y refinar aún más las condiciones mediante los operadores **Cualquiera** de estos (OR lógico) o Todos estos **operadores** (AND lógicos):
 
@@ -209,11 +209,11 @@ Los SIT tienen un nivel de confianza [**predefinido**](https://www.microsoft.com
 
 La regla solo buscará la presencia de las etiquetas de confidencialidad y **las** etiquetas **de retención** que elija. 
 
-##### <a name="condition-context"></a>Contexto de condición
+#### <a name="condition-context"></a>Contexto de condición
 
 Las opciones de contexto disponibles cambian según la ubicación que elija. Si selecciona varias ubicaciones, solo estarán disponibles las condiciones que tienen las ubicaciones en común.
 
-###### <a name="conditions-exchange-supports"></a>Las Exchange admiten:
+##### <a name="conditions-exchange-supports"></a>Las Exchange admiten:
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
@@ -255,42 +255,42 @@ Las opciones de contexto disponibles cambian según la ubicación que elija. Si 
 - El tipo de mensaje es
 - La importancia del mensaje es
 
-###### <a name="conditions-sharepoint-supports"></a>Condiciones SharePoint admite
+##### <a name="conditions-sharepoint-supports"></a>Condiciones SharePoint admite
  
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
 - La extensión de archivo es
 - La propiedad del documento es
 
-###### <a name="conditions-onedrive-accounts-supports"></a>Condiciones OneDrive cuentas compatibles
+##### <a name="conditions-onedrive-accounts-supports"></a>Condiciones OneDrive cuentas compatibles
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
 - La extensión de archivo es
 - La propiedad del documento es
 
-###### <a name="conditions-teams-chat-and-channel-messages-support"></a>Condiciones Teams compatibilidad con mensajes de canal y chat
+##### <a name="conditions-teams-chat-and-channel-messages-support"></a>Condiciones Teams compatibilidad con mensajes de canal y chat
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
 
-###### <a name="conditions-devices-supports"></a>Condiciones Compatibles con dispositivos
+##### <a name="conditions-devices-supports"></a>Condiciones Compatibles con dispositivos
 
 - contenido contiene
 - Vea, [Actividades de extremo en las que puede supervisar y realizar acciones](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-###### <a name="conditions-microsoft-cloud-app-security-support"></a>Condiciones Microsoft Cloud App Security compatibilidad
+##### <a name="conditions-microsoft-cloud-app-security-support"></a>Condiciones Microsoft Cloud App Security compatibilidad
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
 
-###### <a name="on-premises-repositories"></a>Repositorios locales
+##### <a name="on-premises-repositories"></a>Repositorios locales
 
 - El contenido contiene
 - La extensión de archivo es
 - La propiedad del documento es
 
-##### <a name="condition-groups"></a>Grupos de condiciones
+#### <a name="condition-groups"></a>Grupos de condiciones
 
 A veces, necesita una regla para identificar solo una cosa, como todo el contenido que contiene un número de seguridad social de Estados Unidos, que se define mediante un único SIT. Pero en muchos escenarios, donde los tipos de elementos que intenta identificar son más complejos y, por lo tanto, más difíciles de definir, se requiere más flexibilidad para definir condiciones.
 
@@ -310,7 +310,7 @@ Para la Ley de seguros de salud de Estados Unidos **(HIPPA),** las condiciones s
 
 El primer grupo contiene los SIT que identifican e individualmente y el segundo grupo contiene los SIT que identifican el diagnóstico médico.
 
-#### <a name="exceptions"></a>Excepciones
+### <a name="exceptions"></a>Excepciones
 
 En las reglas, las excepciones definen condiciones que se usan para excluir un elemento de la directiva. Lógicamente, condiciones exclusivas que se evalúan después de las condiciones inclusivas y el contexto. Le dicen a la regla &#8212; cuando encuentre  un elemento que  tenga este aspecto y se esté utilizando de la forma que es una coincidencia y el resto de las acciones de la directiva deben realizarse en él excepto si ***...***&#8212; 
 
@@ -328,7 +328,7 @@ la excepción sería:
 
 - **Excepto si el** contenido contiene 
 
-#### <a name="actions"></a>Acciones 
+### <a name="actions"></a>Acciones 
 
 Cualquier elemento que lo haga a través _**_ de las condiciones _**_ ***** inclusivas _ y los filtros de excepciones exclusivas tendrán todas las acciones que se definen en la regla aplicada a él. Tendrás que configurar las opciones necesarias para admitir la acción. Por ejemplo, si selecciona Exchange con la acción _ Restringir el acceso o cifrar el contenido en Microsoft 365 *ubicaciones** debe elegir entre estas opciones:
 
@@ -342,7 +342,7 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 > [!IMPORTANT]
 > Para SharePoint Online y OneDrive para la Empresa los documentos de ubicaciones se bloquearán proactivamente justo después de la detección de información confidencial, independientemente de si el documento se comparte o no, para todos los usuarios externos, mientras que los usuarios internos seguirán teniendo acceso al documento.
 
-##### <a name="exchange-location-actions"></a>Exchange de ubicación:
+#### <a name="exchange-location-actions"></a>Exchange de ubicación:
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 - Establecer encabezados
@@ -358,19 +358,19 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 - Anteponer el asunto del correo electrónico
 - Agregar declinación de responsabilidades HTML
 
-##### <a name="sharepoint-sites-location-actions"></a>SharePoint de ubicación de sitios:
+#### <a name="sharepoint-sites-location-actions"></a>SharePoint de ubicación de sitios:
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 
-##### <a name="onedrive-account-locations"></a>OneDrive de cuentas:
+#### <a name="onedrive-account-locations"></a>OneDrive de cuentas:
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 
-##### <a name="teams-chat-and-channel-messages"></a>Teams Chat y mensajes de canal
+#### <a name="teams-chat-and-channel-messages"></a>Teams Chat y mensajes de canal
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 
-##### <a name="devices"></a>Dispositivos:
+#### <a name="devices"></a>Dispositivos:
 
 - Auditar o restringir actividades en Windows dispositivos
 
@@ -379,16 +379,16 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 
 La ubicación de los dispositivos proporciona una serie de sub-actividades (condiciones) y acciones. Para obtener más información, vea Actividades de extremo en las [que puede supervisar y realizar acciones en](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
 
-##### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security:
+#### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security:
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 - Restringir aplicaciones de terceros
 
-##### <a name="on-premises-repositories"></a>Repositorios locales:
+#### <a name="on-premises-repositories"></a>Repositorios locales:
 
 - Restringir el acceso o quitar archivos locales
 
-##### <a name="actions-available-when-you-combine-locations"></a>Acciones disponibles al combinar ubicaciones
+#### <a name="actions-available-when-you-combine-locations"></a>Acciones disponibles al combinar ubicaciones
 
 Si selecciona Exchange y cualquier otra ubicación única para la directiva a la que se va a aplicar, el
 
@@ -427,7 +427,7 @@ Si las acciones tienen efecto o no depende de cómo configure el modo de la dire
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
 
 
-#### <a name="user-notifications-and-policy-tips"></a>Notificaciones de usuario y sugerencias de directivas
+### <a name="user-notifications-and-policy-tips"></a>Notificaciones de usuario y sugerencias de directivas
 
 <!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to 
 
@@ -505,7 +505,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 -->
 
-#### <a name="user-overrides"></a>Invalidaciones de usuario
+### <a name="user-overrides"></a>Invalidaciones de usuario
 
 El objetivo  de las invalidaciones de usuario es proporcionar a los usuarios una forma de omitir, con justificación, acciones de bloqueo de directivas DLP en elementos confidenciales de Exchange, SharePoint, OneDrive o Teams para que puedan continuar con su trabajo. Las invalidaciones de usuario solo se habilitan cuando se habilita notificar a los usuarios de servicios de **Office 365** con una sugerencia de directiva, por lo que las invalidaciones de usuario van de la mano con notificaciones y sugerencias de directiva. 
 
@@ -526,7 +526,7 @@ Para obtener más información acerca de las invalidaciones de usuario, vea:
 
 - [Ver la justificación enviada por un usuario para una invalidación](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
 
-#### <a name="incident-reports"></a>Informes de incidentes
+### <a name="incident-reports"></a>Informes de incidentes
 
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
 
@@ -546,11 +546,11 @@ Puede elegir entre enviar una alerta cada vez que una actividad coincida con una
 
 DLP analiza el correo electrónico de forma diferente desde elementos en SharePoint Online o en OneDrive para la Empresa. En SharePoint Online y OneDrive para la Empresa, DLP analiza los elementos existentes, así como los nuevos, y genera un informe de incidentes cada vez que se encuentra una coincidencia. En Exchange Online, DLP solo analiza los nuevos mensajes de correo electrónico y genera un informe si hay una coincidencia de directiva. DLP ***no*** analiza ni busca coincidencias en elementos de correo electrónico anteriormente existentes que estén almacenados en un buzón de correo o archivo.
 
-#### <a name="additional-options"></a>Opciones adicionales
+### <a name="additional-options"></a>Opciones adicionales
 
 Si tiene varias reglas en una directiva, puede usar las opciones adicionales para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

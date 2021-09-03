@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: The Centro de administración de Microsoft 365- learn about the features that were added this month.
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
 - admindeeplinkMAC
-ms.openlocfilehash: f8adf1fe5141d11d4f57eb3c7348b3961815a38d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+description: The Centro de administración de Microsoft 365- learn about the features that were added this month.
+ms.openlocfilehash: aa94686b728eabd6da3577f0f44856039ab8288c
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567825"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866684"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 
