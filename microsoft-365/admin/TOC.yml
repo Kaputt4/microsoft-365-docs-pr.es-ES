@@ -8,6 +8,26 @@
           href: admin-overview/sign-up-for-office-365.md
         - name: Probar o comprar Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
+        - name: Suscribirse a Microsoft 365 Empresa Premium
+          items:
+            - name: Registrarse
+              href: ../business/sign-up.md
+            - name: Configurar Microsoft 365 Empresa Premium con el asistente para configuración
+              href: ../business/set-up.md
+        - name: Registrarse en Microsoft 365 Empresa Estándar
+          items:
+            - name: Registrarse en Microsoft 365 Empresa Estándar
+              href: ../admin/simplified-signup/signup-business-standard.md
+            - name: Configurar Microsoft 365 Empresa Estándar
+              href: ../admin/simplified-signup/signup-business-standard.md
+            - name: Invitar a usuarios a Microsoft 365 Empresa Estándar
+              href: ../admin/simplified-signup/admin-invite-business-standard.md
+            - name: Aceptar invitación por correo electrónico a Microsoft 365 Empresa Estándar
+              href: ../admin/simplified-signup/user-invite-business-standard.md
+            - name: 'Aceptar una invitación por correo electrónico a una organización de suscripción de Microsoft 365 Empresa Estándar con una cuenta de Outlook, Yahoo, Gmail u otra.'
+              href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
+            - name: Migrar datos a mi suscripción de Microsoft 365 Empresa Estándar
+              href: ../admin/simplified-signup/migrate-data-business-standard.md
         - name: Planear la configuración
           href: setup/plan-your-setup.md
         - name: Plan para Windows 365 Empresa
@@ -25,7 +45,7 @@
             - name: Microsoft 365 Empresa Estándar
               href: setup/setup-business-standard.md
             - name: Microsoft 365 Empresa Premium
-              href: setup/setup.md
+              href: setup/business-set-up.md
             - name: Aplicaciones de Microsoft 365 para negocios
               href: setup/setup-apps-for-business.md
         - name: Explorar la página y el Asistente de configuración
