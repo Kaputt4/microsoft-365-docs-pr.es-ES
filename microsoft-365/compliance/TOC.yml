@@ -321,6 +321,8 @@
               href: dlp-use-policies-non-microsoft-cloud-apps.md
             - name: Excepciones y condiciones de la directiva DLP
               href: dlp-conditions-and-exceptions.md
+            - name: Migrar directivas de prevención de pérdida de datos de Exchange Online al Centro de cumplimiento (versión preliminar)
+              href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Referencia de sugerencias de directiva de prevención de pérdida de datos
               href: dlp-policy-tips-reference.md
 - name: Administrar el gobierno de información

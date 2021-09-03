@@ -120,7 +120,7 @@ productDirectory:
           text: Escritorio administrado de Microsoft
         - url: /mem/intune/fundamentals/what-is-intune
           text: Administración de dispositivos con Microsoft Intune
-    - title: Migrar a Microsoft 365
+    - title: "Migrar a Microsoft\_365"
       imageSrc: 'https://docs.microsoft.com/office/media/icons/migration-blue.svg'
       links:
         - url: /MicrosoftTeams/journey-skypeforbusiness-teams
@@ -222,6 +222,18 @@ additionalContent:
               url: /project-for-the-web/projectforweb-admin-home
             - text: Más de Project >
               url: /Project
+        - title: Microsoft Viva
+          links:
+            - text: Temas Microsoft Viva
+              url: /microsoft-365/knowledge/
+            - text: Ideas Microsoft Viva
+              url: /insights/viva-teams-app
+            - text: Conexiones Microsoft Viva
+              url: /sharepoint/viva-connections
+            - text: Aprendizaje Microsoft Viva
+              url: /microsoft-365/learning/
+            - text: Más de Microsoft Viva >
+              url: /microsoft-365/viva/
         - title: Más aplicaciones y servicios
           links:
             - text: Microsoft Bookings
@@ -232,13 +244,9 @@ additionalContent:
               url: /stream/
             - text: Yammer
               url: /yammer/yammer-landing-page
-        - title: Skype Empresarial
-          links:
-            - text: Documentación para profesionales de TI
+            - text: Skype Empresarial
               url: /skypeforbusiness
-        - title: Office Online Server
-          links:
-            - text: Introducción
+            - text: Office Online Server
               url: /officeonlineserver
     - title: Instrucciones y recursos relacionados
       items:

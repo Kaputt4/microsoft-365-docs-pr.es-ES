@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 2c3323466d79137251be1f8d9ee764b42b643bb1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 32a423073ec00a9e13e0e3669a9fbd1412b01a50
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565201"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862790"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -59,7 +59,9 @@ Los informes están disponibles para los últimos 7, 30, 90 o 180 días. Los dat
 
 ::: moniker-end
 
-2. Haga clic en el botón **Ver más** en la tarjeta de vista rápida de actividad de un servicio (como el correo electrónico o OneDrive) para ver la página de detalles del informe. En las pestañas, se proporcionan diferentes informes para el servicio. <br/>![Panel de utilización.](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. Haga clic en el botón **Ver más** de la tarjeta de actividad en un vistazo de un servicio (como correo electrónico o OneDrive) para ver la página de detalles del informe. En las pestañas, se proporcionan diferentes informes para el servicio.
+
+   :::image type="content" alt-text="Panel de utilización." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
 ## <a name="who-can-see-reports"></a>Quién puede ver los informes
 
@@ -73,8 +75,10 @@ Usuarios que tengan los permisos siguientes:
     
 - Administradores de Skype Empresarial
 
-- Lector global
-    
+- Lector global (sin detalles de usuario)
+
+- Lector de informes de resumen de uso (sin detalles de usuario)
+
 - Lector de informes
 
 - Administrador de servicios de Teams
@@ -147,21 +151,23 @@ No puede generar un informe en el que especifique una cuenta de usuario, y despu
 
 En ocasiones, los nuevos usuarios aparecen como **desconocido**. Esto suele pasar debido a demoras al crear los perfiles de usuario.  
   
-## <a name="hide-user-details-in-the-reports"></a>Ocultar detalles de usuario en los informes
+## <a name="show-user-details-in-the-reports"></a>Mostrar detalles de usuario en los informes
 
-Si desea ocultar la información de nivel de usuario cuando está generando sus informes, rápidamente puede realizar ese cambio en el centro de administración.
-  
-1. En el centro de administración, vaya a la página **Configuración** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">de servicios &amp;complementos</a>.
-
-2. Select **Informes** 
-  
-3. En el panel **informes**, seleccione las opciones que desee y, a continuación, guarde los cambios.
+Los informes proporcionan información sobre los datos de uso de la organización. De forma predeterminada, los informes muestran información con nombres identificables para usuarios, grupos y sitios. A partir del 1 de septiembre de 2021, ocultamos información de usuario de forma predeterminada para todos los informes como parte de nuestro compromiso continuo de ayudar a las empresas a apoyar sus leyes de privacidad locales.
   
 La lista de usuarios será similar a la siguiente:
   
 ![Informes: lista anónima de usuarios](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a la API de informes.
+Los administradores globales pueden revertir este cambio para su inquilino y mostrar información de usuario identificable si las prácticas de privacidad de su organización lo permiten. Se puede lograr en el Centro de administración de Microsoft 365 siguiendo estos pasos:
+  
+1. En el Centro de administración, vaya a la página **Configuración** \> **Configuración de organización** \> **Servicios**.
+
+2. Seleccione **Informes**. 
+  
+3. En **Elegir cómo mostrar información**, seleccione las opciones que desee, y a continuación, guarde los cambios.  
+  
+Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a la API de informes. Mostrar información de usuario identificable es un evento registrado en el Centro de cumplimiento de Microsoft 365 de auditoría.   
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>¿Qué ocurre con los datos de uso cuando se cierra una cuenta de usuario?
 
