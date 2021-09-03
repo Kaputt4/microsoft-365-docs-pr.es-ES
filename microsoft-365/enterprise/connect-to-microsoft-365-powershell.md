@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Conéctese a su espacio empresarial de Microsoft 365 mediante PowerShell para Microsoft 365 de forma que pueda realizar tareas desde el Centro de administración desde la línea de comandos.
-ms.openlocfilehash: f42112761fe7899742487a79a41973a8c6cb2ab6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 743f4a7b412f14bc942548c688fc3060fdebf53e
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355009"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863451"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Conectarse a Microsoft 365 con PowerShell
 
@@ -134,7 +134,7 @@ PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory
 
 Estos pasos son necesarios solo una vez en el equipo. Pero es probable que tenga que actualizar el software periódicamente.
   
-1.  Si no ejecuta Windows 10, instale la versión de 64 bits del asistente para inicio de sesión de Microsoft Online Services: [Ayudante para el inicio de sesión de Microsoft Online Services para profesionales de TI (RTW)](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi).
+1.  Si no ejecuta Windows 10, instale la versión de 32 bits del asistente para inicio de sesión de Microsoft Online Services - Ayudante para el inicio de sesión: [Microsoft Online Services - Ayudante para el inicio de sesión para profesionales de TI RTW](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi).
     
 2. Siga estos pasos para instalar el Módulo Microsoft Azure Active Directory para Windows PowerShell:
     
