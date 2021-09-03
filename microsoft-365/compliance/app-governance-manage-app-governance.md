@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Implemente funcionalidades de gobernanza de aplicaciones de Microsoft para controlar sus aplicaciones.
-ms.openlocfilehash: f89214a71bc82ac7271ba3fd010258e63d39ef8a
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: 379da2e2ff894b2f6355c14db93b339518dfca02
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58744994"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862778"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Complemento de gobernanza de aplicaciones para Microsoft Cloud App Security (en versión preliminar)
 
@@ -80,8 +80,8 @@ Este es un resumen de la integración.
 ![La Integración de gobernanza de aplicaciones con Azure AD y Microsoft Cloud App Security.](..\media\manage-app-protection-governance\mapg-integration.png)
 
 La gobernanza de aplicaciones envía sus alertas como señales a Microsoft Cloud App Security y Microsoft 365 Defender, y recibe alertas de Microsoft Cloud App Security para permitir un análisis más detallado de los incidentes de seguridad basados en aplicaciones.
-- Las alertas de la gobernanza de aplicaciones se muestran en la lista de alertas de Microsoft 365 Defender como alertas con el campo Origen de detección establecido en "MAPG"
-- Las alertas de la gobernanza de aplicaciones se muestran en la lista de alertas de MCAS como alertas con el campo Directiva establecido en cualquiera
+- Las alertas de la gobernanza de aplicaciones se muestran en la lista de alertas de Microsoft 365 Defender como alertas con el campo Origen de detección establecido en "Gobernanza de aplicaciones"
+- Las alertas de la gobernanza de aplicaciones se muestran en la lista de alertas de MCAS como alertas con el campo Directiva establecido en alguna de las siguientes opciones:
   - Gobernanza de aplicaciones de OAuth de Microsoft 365
   - Detección de suplantación de identidad (phishing) de OAuth de Microsoft 365
   - Reputación de las aplicaciones de OAuth de Microsoft 365
