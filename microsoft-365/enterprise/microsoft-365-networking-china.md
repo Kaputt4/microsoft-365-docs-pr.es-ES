@@ -16,12 +16,12 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: En este artículo se proporcionan instrucciones para optimizar el rendimiento de la red para los usuarios de China de Microsoft 365 inquilinos globales.
-ms.openlocfilehash: 06be7db700114db6111ff7f3c4a8d70e0c3f2243
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 9660270dbe73e9cbdff0b1e3796224b36319956b
+ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570202"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58884725"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365 optimización global del rendimiento de inquilinos para usuarios de China
 
@@ -47,7 +47,7 @@ Muchas empresas con Microsoft 365 inquilinos y usuarios globales en China han im
 
 Como primer paso, es fundamental que siga nuestras instrucciones de red comparativas en [Planificación](./network-planning-and-performance.md)de red y ajuste del rendimiento para Microsoft 365 . El objetivo principal debe ser evitar el acceso a los servicios Microsoft 365 global desde Internet en China si es posible.
 
-- Aproveche su red privada existente para llevar Microsoft 365 tráfico de red entre las redes de oficina de China y las ubicaciones offshore que se desenlace en Internet pública fuera de China. Casi cualquier ubicación fuera de China proporcionará una ventaja clara. Los administradores de red pueden optimizar aún más la salida en áreas con una interconexión de baja latencia con la [red global de Microsoft.](/azure/networking/microsoft-global-network) Hong Kong, Japón y Corea del Sur son ejemplos.
+- Aproveche su red privada existente para llevar Microsoft 365 tráfico de red entre las redes de oficina de China y las ubicaciones offshore que se desenlace en Internet pública fuera de China. Casi cualquier ubicación fuera de China proporcionará una ventaja clara. Los administradores de red pueden optimizar aún más la salida en áreas con una interconexión de baja latencia con la [red global de Microsoft.](/azure/networking/microsoft-global-network) Hong Kong, Singapur, Japón y Corea del Sur son ejemplos.
 - Configure los dispositivos de usuario para que accedan a la red corporativa a través de una conexión VPN para permitir que Microsoft 365 tráfico transite el vínculo externo privado de la red corporativa. Asegúrese de que los clientes VPN no estén configurados para usar el túnel dividido o de que los dispositivos de usuario estén configurados para omitir el túnel dividido para Microsoft 365 tráfico. Para obtener información adicional sobre cómo optimizar la conectividad VPN Teams tráfico multimedia en tiempo real, vea [esta sección](#optimizing-microsoft-teams-meetings-network-performance-for-users-in-china).
 - Configure la red para enrutar todo Microsoft 365 tráfico a través de su vínculo privado offshore. Si debe minimizar el volumen de tráfico en su vínculo privado, puede elegir enrutar  solo  los puntos de conexión en la categoría **Optimizar** y permitir que las solicitudes permitan que los puntos de conexión predeterminados transiten por Internet. Esto mejorará el rendimiento y minimizará el consumo de ancho de banda al limitar el tráfico optimizado a los servicios críticos que son más sensibles a la alta latencia y la pérdida de paquetes.
 - Si es posible, use UDP en lugar de TCP para el tráfico de streaming de medios en directo, como para Teams. UDP ofrece un mejor rendimiento de streaming de medios en directo que TCP.

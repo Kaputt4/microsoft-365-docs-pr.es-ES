@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtén información sobre cómo empezar a recopilar datos para el inquilino mediante la aplicación de plantilla Microsoft 365 de análisis de uso en Power BI.
-ms.openlocfilehash: 6c2dfef0d925df92316d407e5a425a7ddfa03952
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a05ea19915af96720c3aeaf4a4d01fbe879fbc27
+ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569686"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58884665"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitar análisis de uso de Microsoft 365
 
@@ -92,13 +92,17 @@ Los agregados de nivel de inquilino estarán disponibles en todos los informes d
 
 ## <a name="make-the-collected-data-anonymous"></a>Establecer que los datos recopilados sean anónimos
 
-Para establecer que los datos que se recopilen para todos los informes sean anónimos, debe ser administrador global. Esto ocultará información identificable como los nombres de usuario, grupo y sitio en informes y en la aplicación de plantilla.
+Los informes proporcionan información sobre los datos de uso de la organización. De forma predeterminada, los informes muestran información con nombres identificables para usuarios, grupos y sitios. A partir del 1 de septiembre de 2021, ocultamos información de usuario de forma predeterminada para todos los informes como parte de nuestro compromiso continuo de ayudar a las empresas a apoyar sus leyes de privacidad locales.
+  
+Los administradores globales pueden revertir este cambio para su inquilino y mostrar información de usuario identificable si las prácticas de privacidad de su organización lo permiten. Se puede lograr en el Centro de administración de Microsoft 365 siguiendo estos pasos:
+  
+1. En el Centro de administración, vaya a la página **Configuración** \> **Configuración de organización** \> **Servicios**.
 
-1. En el Centro de  administración, vaya a la Configuración org Configuración y, en la pestaña \> Servicios, elija **Informes**. 
-
-2. Seleccione **Informes** y, a continuación, **elija Mostrar identificadores anónimos**. Esta configuración se aplica tanto a los informes de uso como a la aplicación de plantilla.
-
-3. Seleccione **Guardar cambios**.
+2. Seleccione **Informes**. 
+  
+3. Desactive la instrucción **En todos los informes, muestre nombres sin** identificar para usuarios, grupos y sitios y, a continuación, guarde los cambios.  
+  
+Estos cambios tardarán unos minutos en tener efecto. Mostrar información de usuario identificable es un evento registrado en el Centro de cumplimiento de Microsoft 365 de auditoría.   
 
 ## <a name="related-content"></a>Contenido relacionado
 

@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   localization_priority: Normal
   description: Preguntas más frecuentes sobre Centro de administración de Microsoft 365 descargas.
-  ms.openlocfilehash: 47d41305c5789dd421a9a55f52153727d31712d7
-  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+  ms.openlocfilehash: c9ac712e84fd60e96ba3fa8749cacda76aa0c354
+  ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/31/2021
-  ms.locfileid: "58822933"
+  ms.lasthandoff: 09/03/2021
+  ms.locfileid: "58884653"
 title: Descargas preguntas más frecuentes
 summary: ''
 sections:
@@ -25,7 +25,7 @@ sections:
   questions:
   - question: >
       ¿Cuáles son los requisitos para descargar software desde el Centro de administración de Microsoft 365?
-    answer: "Debe comprar una licencia para los productos que tiene previsto descargar y tener acceso a una clave de producto válida para que cada licencia complete la instalación. Compruebe el contrato de licencia antes de descargar productos.\n\nPara encontrar los requisitos del sistema para cada producto, inicie sesión en el Centro de administración y vaya a la página Descargas de productos   >   > Descripción **del producto.** \n\n**Nota** No todos los productos requieren una clave de producto.\n"
+    answer: "Debe comprar una licencia para los productos que tiene previsto descargar y tener acceso a una clave de producto válida para que cada licencia complete la instalación. Compruebe el contrato de licencia antes de descargar productos.\n\nPara encontrar los requisitos del sistema para cada producto, inicie sesión en el Centro de administración y vaya a la página Descargas de productos   >   > Descripción **del producto.** \n\n> [!NOTE]\n> No todos los productos requieren una clave de producto.\n"
   - question: >
       ¿Qué productos puedo descargar del Centro de administración?
     answer: >
@@ -77,10 +77,12 @@ sections:
       2. En **Descargar**, seleccione **el idioma** y el tipo de sistema **operativo**.
 
 
-      **Nota** Los bloqueadores de elementos emergentes pueden bloquear las descargas. Asegúrese de que los bloqueadores de elementos emergentes están deshabilitados al descargar software desde el Centro de administración.
+      > [!NOTE]
+
+      > Los bloqueadores de elementos emergentes pueden bloquear las descargas. Asegúrese de que los bloqueadores de elementos emergentes están deshabilitados al descargar software desde el Centro de administración.
   - question: >
       ¿Qué son los archivos EXE e ISO?
-    answer: "Puede seleccionar dos tipos de archivo al descargar productos del Centro de administración:\n  \n  - **Los archivos ejecutables (EXE)** se pueden descargar e instalar en el mismo sistema, pero no se pueden crear discos de arranque independientes para la instalación en otros equipos.\n  - Los archivos de imagen **ISO (Organización** internacional de estándares) son representaciones exactas del contenido y el formato lógico. Puede instalarlos en el equipo que se usa para descargar el paquete o escribir los archivos en discos para su distribución e instalación en otros equipos.\n\n**Nota** No todos los productos están disponibles en todos los idiomas y en todos los formatos.\n"
+    answer: "Puede seleccionar dos tipos de archivo al descargar productos del Centro de administración:\n  \n  - **Los archivos ejecutables (EXE)** se pueden descargar e instalar en el mismo sistema, pero no se pueden crear discos de arranque independientes para la instalación en otros equipos.\n  - Los archivos de imagen **ISO (Organización** internacional de estándares) son representaciones exactas del contenido y el formato lógico. Puede instalarlos en el equipo que se usa para descargar el paquete o escribir los archivos en discos para su distribución e instalación en otros equipos.\n\n> [!NOTE]\n> No todos los productos están disponibles en todos los idiomas y en todos los formatos.\n"
   - question: >
       ¿Cómo se usa el software de archivo de imagen ISO para descargar y guardar el archivo de imagen ISO en un CD-R o un disco DVD-R?
     answer: >
@@ -94,7 +96,9 @@ sections:
       Si no tiene un grabador de CD/DVD instalado en el equipo o el medio no está disponible, puede montar el archivo ISO como una unidad virtual. Con este método, el equipo cree que el archivo es una unidad de disco real y puede leer archivos de este disco virtual.
 
 
-      **Nota** Este enfoque es aconsejable solo para instalar aplicaciones como Office actualizaciones secundarias del sistema. No puede instalar un sistema operativo con este enfoque porque la unidad virtual desaparece durante la instalación.
+      > [!NOTE]
+
+      > Este enfoque es aconsejable solo para instalar aplicaciones como Office actualizaciones secundarias del sistema. No puede instalar un sistema operativo con este enfoque porque la unidad virtual desaparece durante la instalación.
   - question: >
       ¿Cómo puedo obtener soporte técnico para productos descargados?
     answer: >

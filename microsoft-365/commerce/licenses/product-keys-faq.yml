@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   localization_priority: Normal
   description: Claves del producto Preguntas más frecuentes
-  ms.openlocfilehash: ff8547935d82224d41b02131440679e0f63b32fb
-  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+  ms.openlocfilehash: 9da77700bb949fb72467516f3f195d87152d91ea
+  ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/31/2021
-  ms.locfileid: "58823617"
+  ms.lasthandoff: 09/03/2021
+  ms.locfileid: "58884641"
 title: Claves del producto Preguntas más frecuentes
 summary: ''
 sections:
@@ -39,7 +39,7 @@ sections:
   - question: >
       ¿Cómo puedo encontrar SQL Server claves de producto?
     answer: >
-      La SQL de licencia está incrustada en el asistente de activación del software en lugar de mostrarse en el centro de administración y se detecta automáticamente durante la instalación. Para obtener más información, vea [The SQL Server Installation Guide] (/sql/database-engine/install-windows/install-sql-server).
+      La SQL de licencia está incrustada en el asistente de activación del software en lugar de mostrarse en el centro de administración y se detecta automáticamente durante la instalación. Para obtener más información, vea [The SQL Server Installation Guide](/sql/database-engine/install-windows/install-sql-server).
 
 
       También puede encontrar la clave descargando el archivo ISO SQL desde el centro de administración > .. \x64 carpeta > DefaultSetup.ini archivo. Asegúrese de hacer una copia de seguridad de cualquier versión existente antes de instalar o actualizar SQL ediciones. Si necesita ayuda para solucionar problemas técnicos durante la instalación del producto o la activación del servicio en línea, póngase en contacto con el Soporte técnico de Microsoft enviando [una solicitud de soporte técnico.](https://support.microsoft.com/oas)
@@ -65,7 +65,9 @@ sections:
       Para obtener más información, vea las preguntas más frecuentes [sobre el resumen de licencias](/licensing/license-faq).
 
 
-      **Nota** Todos los clientes tienen derecho a usar claves de producto para fines de re-imagen y degradación. Select Plus, Enterprise Agreement (EA) y Select customers have limited evaluation rights for training and back-up. Para obtener más información, vea [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
+      > [!NOTE]
+
+      > Todos los clientes tienen derecho a usar claves de producto para fines de re-imagen y degradación. Select Plus, Enterprise Agreement (EA) y Select customers have limited evaluation rights for training and back-up. Para obtener más información, vea [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
 - name: Activación por volumen
   questions:
   - question: >
@@ -183,7 +185,9 @@ sections:
       Sí. Los derechos de re-creación de imágenes se conceden a todos los clientes de Licencias por volumen de Microsoft. En virtud de estos derechos, los clientes pueden volver a crear copias con licencia del Fabricante de equipos originales (OEM) o producto empaquetado completo (FPP) mediante el uso de medios proporcionados en virtud de su contrato si las copias realizadas desde los medios de licencias por volumen son idénticas al producto con licencia original. Como cliente de licencias por volumen, puede encontrar las claves de licencia por volumen en la página clave del producto o solicitar las claves a través de un [Centro de activación de Microsoft](https://licensingapps.microsoft.com/product-activation).
 
 
-      **Nota** Si es cliente de licencia abierta, debe comprar al menos una unidad del producto que desea volver a crear para obtener acceso a los medios de producto y recibir una clave de producto.
+      > [!NOTE]
+
+      > Si es cliente de licencia abierta, debe comprar al menos una unidad del producto que desea volver a crear para obtener acceso a los medios de producto y recibir una clave de producto.
 
 
       Para obtener más información sobre los derechos de re-creación de imágenes, vea [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).

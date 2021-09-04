@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 028735c7d340d63d2f952eabf683e512d261a913
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 8d10c4df273cfcff39bf93fa6532b57c4f8ef640
+ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576085"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58884677"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -71,7 +71,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
   Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Usar el portal Microsoft 365 Defender para configurar buzones de SecOps en la directiva de entrega avanzada
 
@@ -87,7 +87,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 
      Repita este paso tantas veces como sea necesario. Los grupos de distribución no están permitidos.
 
-     Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+     Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
 4. Cuando haya terminado, haga clic en **Guardar**.
 
@@ -108,13 +108,13 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
      > [!NOTE]
      > Use el dominio de la dirección (también conocida como dirección `5321.MailFrom` **MAIL FROM,** remitente P1 o remitente de sobre) que se usa en la transmisión SMTP del mensaje.
 
-   - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores válidos son:
+   - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores admitidos son:
      - IP única: por ejemplo, 192.168.1.1.
      - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
      - IP cidr: por ejemplo, 192.168.0.1/25.
    - Direcciones **URL** de simulación para permitir: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que forman parte de la campaña de simulación de suplantación de identidad que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas. Para obtener el formato de sintaxis de dirección URL, vea [Sintaxis url para la lista de inquilinos permitidos o bloqueados.](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)
 
-   Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    > [!NOTE]
    > Debe especificar al menos un dominio **de** envío y al menos un **IP** de envío para configurar una simulación de suplantación de identidad de terceros en entrega avanzada. Opcionalmente, puede incluir direcciones **URL de Simulation para garantizar** que las direcciones URL presentes en los mensajes de simulación no se bloqueen. Puede especificar hasta 10 entradas para cada campo. Debe haber una coincidencia en al menos un dominio de **envío y** un **IP** de envío, pero no se mantiene ninguna asociación entre valores.
@@ -161,7 +161,8 @@ Para crear la directiva de invalidación de SecOps, use la siguiente sintaxis:
 New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
 ```
 
-**Nota:** Independientemente del valor name que especifique, el nombre de la directiva será SecOpsOverridePolicy, por lo que también puede usar ese valor.
+> [!NOTE]
+> Independientemente del valor name que especifique, el nombre de la directiva será _SecOpsOverridePolicy_, por lo que también puede usar ese valor.
 
 En este ejemplo se crea la directiva de buzón de SecOps.
 
@@ -179,7 +180,8 @@ En este ejemplo se crea la regla de buzón de SecOps con la configuración espec
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 ```
 
-**Nota:** Independientemente del valor name que especifique, el nombre de la regla será SecOpsOverrideRule, donde es un valor GUID único \<GUID\> \<GUID\> (por ejemplo, 6fed4b63-3563-495d-a481-b24a311f8329).
+> [!NOTE]
+> Independientemente del valor name que especifique, el nombre de la regla será _SecOpsOverrideRule,_ donde es un valor GUID único \<GUID\> \<GUID\> (por ejemplo, 6fed4b63-3563-495d-a481-b24a311f8329).
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-SecOpsOverrideRule](/powershell/module/exchange/new-secopsoverriderule).
 
@@ -211,7 +213,7 @@ Get-SecOpsOverrideRule | Format-Table Name,Mode
 
 Después de identificar las reglas no válidas, puede quitarlas mediante el cmdlet **Remove-SecOpsOverrideRule,** tal como se describe [más adelante en este artículo](#use-powershell-to-remove-secops-override-rules).
 
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-SecOpsOverrideRule](/powershell/module/exchange/get-secopsoverriderule)
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-SecOpsOverrideRule](/powershell/module/exchange/get-secopsoverriderule).
 
 ### <a name="use-powershell-to-modify-the-secops-override-policy"></a>Usar PowerShell para modificar la directiva de invalidación de SecOps
 
@@ -221,13 +223,14 @@ Para modificar la directiva de invalidación de SecOps, use la siguiente sintaxi
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
 ```
 
-En este ejemplo se secops2@contoso.com a la directiva de invalidación de SecOps.
+En este ejemplo se `secops2@contoso.com` agrega a la directiva de invalidación de SecOps.
 
 ```powershell
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy -AddSentTo secops2@contoso.com
 ```
 
-**Nota:** Si existe una regla de invalidación de SecOps asociada y válida, también se actualizarán las direcciones de correo electrónico de la regla.
+> [!NOTE]
+> Si existe una regla de invalidación de SecOps asociada y válida, también se actualizarán las direcciones de correo electrónico de la regla.
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Set-SecOpsOverridePolicy](/powershell/module/exchange/set-secopsoverridepolicy).
 
@@ -296,7 +299,7 @@ En este ejemplo se crea la directiva de invalidación de simulación de suplanta
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
 ```
 
-**Nota:** Independientemente del valor name que especifique, el nombre de la directiva será PhishSimOverridePolicy, por lo que también puede usar ese valor.
+**Nota:** Independientemente del valor name que especifique, el nombre de la directiva será _PhishSimOverridePolicy_, por lo que también puede usar ese valor.
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-PhishSimOverridePolicy](/powershell/module/exchange/new-phishsimoverridepolicy).
 
@@ -308,7 +311,7 @@ Utilice la siguiente sintaxis:
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
 ```
 
-Independientemente del valor name que especifique, el nombre de la regla será PhishSimOverrideRule donde es un valor GUID único \<GUID\> \<GUID\> (por ejemplo, a0eae53e-d755-4a42-9320-b9c6b55c5011).
+Independientemente del valor name que especifique, el nombre de la regla será _PhishSimOverrideRule_ donde es un valor GUID único \<GUID\> \<GUID\> (por ejemplo, a0eae53e-d755-4a42-9320-b9c6b55c5011).
 
 Una entrada de dirección IP válida es uno de los siguientes valores:
 

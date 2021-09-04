@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hay 200 tipos de información confidencial que están listos para su uso en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 1a883c1ac31e61ef5aa24fbeca65f27f87fa3467
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 98e80f011329b80105de86816761baba7f8188a9
+ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532888"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58884689"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -3386,7 +3386,7 @@ De 14 a 16 dígitos que se pueden dar formato o sin formato (ddddddddddd) y que 
 
 ### <a name="pattern"></a>Patrón
 
-Detecta tarjetas de todas las principales marcas de todo el mundo, incluidas Visa, MasterCard, Discover Card, JCB, American Express, tarjetas de regalo y tarjetas de comensal.
+Detecta tarjetas de todas las principales marcas del mundo, como Visa, MasterCard, Discover Card, JCB, American Express, tarjetas de regalo, tarjetas de comensal, Rupay y China UnionPay.
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -3649,6 +3649,11 @@ cód. segurança
 - No. do cartão
 - no. do cartao
 
+- rupay
+- union pay
+- unionpay
+- diner's
+- comensales
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3678,6 +3683,9 @@ cód. segurança
 - カードの名義
 - デビット カード
 - デビットカード
+- 中国银联
+- 银联
+
 
 
 ## <a name="croatia-drivers-license-number"></a>Número de licencia de conducir de Croacia
@@ -8495,6 +8503,230 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 - áfa szám
 
 
+## <a name="india-drivers-license-number"></a>Número de licencia de conducir de India
+
+### <a name="format"></a>Formato
+
+Patrón alfanumérico de 15 caracteres
+
+### <a name="pattern"></a>Patrón
+
+15 letras o dígitos:
+- dos letras que indican el código de estado
+- espacio opcional o guión
+- dos dígitos que indican código de ciudad
+- espacio opcional o guión
+- cuatro dígitos que indican el año de emisión
+- espacio opcional o guión
+- siete dígitos
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_india_driving_license` busca contenido que coincida con el patrón.
+- Se encuentra una palabra `Keywords_eu_driver's_license_number_common` clave de.
+
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_india_driving_license` busca contenido que coincida con el patrón.
+
+
+```xml
+      <!-- India Driver's License Number -->
+        <Entity id="680788a3-53b6-455a-b891-c38cd76dc917" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
+          <Pattern confidenceLevel="85">
+            <IdMatch idRef="Regex_india_driving_license" />
+            <Match idRef="Keywords_eu_driver's_license_number_common" />
+          </Pattern>
+          <Pattern confidenceLevel="75">
+            <IdMatch idRef="Regex_india_driving_license" />
+            </Pattern>
+        </Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_drivers_license_number_common"></a>Keywords_eu_driver está s_license_number_common
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- licencia de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- licencias de conductores
+- driver'lic
+- driver'lics
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
+- driver' lic
+- driver' lics
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- segmentación de controladores
+- slicences del controlador
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- licencias de conductor
+- dl #
+- dls #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- driver lic #
+- driver lics #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- drivers lic #
+- drivers lics #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
+- driver'lic #
+- driver'lics #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
+- driver' lic #
+- driver' lics #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- segmentación de controladores #
+- slicences del controlador #
+- driver's lic #
+- driver's lics #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
+- driving licence 
+- driving license
+- dlno #
+- driv lic
+- driv licen
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
+- driver licen
+- drivers licen
+- licen del controlador
+- conducir lic
+- driving licen
+- licencias de conducción
+- driving licence
+- driving licences
+- permiso de conducción
+- dl no
+- dlno
+- número dl
+
+
+
+## <a name="india-gst-number"></a>Número GST de India
+
+### <a name="format"></a>Formato
+
+Patrón alfanumérico de 15 caracteres
+
+### <a name="pattern"></a>Patrón
+
+15 letras o dígitos:
+- dos dígitos que representan código de estado válido
+- un espacio o guión opcional
+- Diez caracteres que representan el número de cuenta permanente (PAN) 
+- una letra o un dígito
+- un espacio o guión opcional
+- una letra 'z' o 'Z'
+- un espacio o guión opcional
+- un dígito de comprobación
+
+### <a name="checksum"></a>Suma de comprobación
+
+Sí
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_india_gst_number` busca contenido que coincida con el patrón.
+- Se encuentra una palabra `Keyword_india_gst_number` clave de.
+
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_india_gst_number` busca contenido que coincida con el patrón.
+
+
+```xml
+    <!-- India GST number  -->
+      <Entity id="9f5a721c-2fd2-446a-a27e-0c02fbe4630c" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_india_gst_number" />
+          <Match idRef="Keyword_india_gst_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_india_gst_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keyword_india_gst_number"></a>Keyword_india_gst_number
+
+- gst
+- gstin
+- Impuesto de bienes y servicios
+- impuestos de bienes y servicios
+
+
 ## <a name="india-permanent-account-number-pan"></a>Número de cuenta permanente de India (PAN)
 
 ### <a name="format"></a>Formato
@@ -8572,7 +8804,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 - La función Func_india_aadhaar encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_india_aadhar.
 - Se supera la suma de comprobación.
--
+
 Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La función Func_india_aadhaar encuentra contenido que coincide con el patrón.
@@ -8599,6 +8831,60 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 - uid
 - आधार
 - uidai
+
+
+## <a name="india-voter-id-card"></a>Tarjeta de identificación de votante de India
+
+### <a name="format"></a>Formato
+
+Patrón alfanumérico de 10 caracteres
+
+### <a name="pattern"></a>Patrón
+
+10 letras o dígitos:
+- tres letras
+- siete dígitos
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_india_voter_id_card` busca contenido que coincida con el patrón.
+- Se encuentra una palabra `Keyword_india_voter_id_card` clave de.
+
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_india_voter_id_card` busca contenido que coincida con el patrón.
+
+
+```xml
+      <!-- India Voter Id Card  -->
+        <Entity id="646d643f-5228-4408-acc8-f2e81a6df897" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+           <Pattern confidenceLevel="75">
+             <IdMatch idRef="Regex_india_voter_id_card" />
+             <Match idRef="Keyword_india_voter_id_card" />
+            </Pattern>
+           <Pattern confidenceLevel="65">
+              <IdMatch idRef="Regex_india_voter_id_card" />
+            </Pattern>
+        </Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keyword_india_voter_id_card"></a>Keyword_india_voter_id_card
+
+- votante
+- voterid
+- credencial de elector
+- voteridcard
+- tarjeta de identidad de foto electoral
+- ÉPICO
+- ECI
+- elección commmision
+
 
 ## <a name="indonesia-identity-card-ktp-number"></a>Número de tarjeta de identidad de Indonesia (KTP)
 
@@ -8894,7 +9180,102 @@ Para IPv6, una directiva DLP tiene una gran confianza en que ha detectado este t
 - dirección IP
 - Direcciones IP
 - internet protocol
-- IP-כתובת -->
+- IP-כתובת ה
+
+
+## <a name="ip-address-v4"></a>Dirección IP v4
+
+### <a name="format"></a>Formato
+
+Patrón complejo que representa versiones con formato (puntos) y sin formato (sin puntos) de las direcciones IPv4
+
+### <a name="pattern"></a>Patrón
+
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_ipv4_address` busca contenido que coincida con el patrón.
+- Se encuentra una palabra `Keyword_ipaddress` clave de.
+
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_ipv4_address` busca contenido que coincida con el patrón.
+
+
+```xml
+      <!-- IP Address v4--> 
+      <Entity id="a7dd5e5f-e7f9-4626-a2c6-86a8cb6830d2" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_ipv4_address" />
+          <Match idRef="Keyword_ipaddress" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_ipv4_address" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keyword_ipaddress"></a>Keyword_ipaddress
+
+- IP (distingue mayúsculas de minúsculas)
+- dirección IP
+- Direcciones IP
+- internet protocol
+- IP-כתובת ה
+
+
+## <a name="ip-address-v6"></a>Dirección IP v6
+
+### <a name="format"></a>Formato
+
+Patrón complejo que representa números IPv6 con formato (que incluyen dos puntos)
+
+### <a name="pattern"></a>Patrón
+
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_ipv6_address` busca contenido que coincida con el patrón.
+- Se encuentra una palabra `Keyword_ipaddress` clave de.
+
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_ipv6_address` busca contenido que coincida con el patrón.
+
+
+```xml
+      <!-- IP Address v6-->
+      <Entity id="3f691089-7413-4926-ab3b-3c5ea8a1c17e" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_ipv6_address" />
+          <Match idRef="Keyword_ipaddress" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_ipv6_address" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keyword_ipaddress"></a>Keyword_ipaddress
+
+- IP (distingue mayúsculas de minúsculas)
+- dirección IP
+- Direcciones IP
+- internet protocol
+- IP-כתובת ה
+
 
 ## <a name="ireland-drivers-license-number"></a>Número de licencia de conducir de Irlanda
 
@@ -15071,7 +15452,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- ID
+- Id.
 - Identificación
 
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
@@ -17073,7 +17454,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 - DLS
 - CDL
 - CDLS
-- ID
+- Id.
 - IDs
 - DL #
 - DLS #
