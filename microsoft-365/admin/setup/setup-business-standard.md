@@ -1,9 +1,9 @@
 ---
-title: Configurar Microsoft 365 Empresa Estándar
+title: Configurar Microsoft 365 Empresa Estándar con un dominio nuevo o existente
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,36 +26,42 @@ search.appverid:
 - MOE150
 - BEA160
 description: Cuando compre una suscripción a Microsoft 365 Empresa Estándar, tendrá la opción de usar un dominio de su propiedad o comprar uno durante el registro.
-ms.openlocfilehash: e23d33bde473cd92ccf585db05593240cc48cea5
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: abb818b17ea5259b6e7015f73afb386e4515ac2f
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394761"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866768"
 ---
-# <a name="set-up-microsoft-business-standard"></a>Configurar Microsoft Empresa Estándar
+# <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Configurar Microsoft 365 Empresa Estándar con un dominio nuevo o existente
 
+Cuando compre una suscripción a Microsoft 365 Empresa Estándar, tendrá la opción de añadir un dominio de su propiedad o comprar. Consulte [Registrarse para obtener una suscripción de Microsoft 365 Empresa Estándar](../simplified-signup/signup-business-standard.md).
 
+En este artículo, le guiaremos por los pasos necesarios para agregar un dominio existente que ya posee o comprar uno nuevo. Si compró uno nuevo cuando se registró, el dominio estará configurado y podrá proceder a [Agregar usuarios y asignar licencias](#add-users-and-assign-licenses).
 
-## <a name="add-your-domain-to-personalize-sign-in"></a>Agregar su dominio para personalizar el inicio de sesión
+## <a name="before-you-begin"></a>Antes de empezar
 
-Cuando compre una suscripción a Microsoft 365 Empresa Estándar, tendrá la opción de usar un dominio de su propiedad o comprar uno durante el registro.
+Para agregar, modificar o quitar dominios, debe ser administrador global. Para obtener más información, consulte [Acerca de los roles de administrador.](../add-users/about-admin-roles.md)
 
-- Si compró uno nuevo cuando se registró, el dominio estará configurado y podrá proceder a [Agregar usuarios y asignar licencias](#add-users-and-assign-licenses).
+> [!IMPORTANT]
+> La persona que se suscribe a Microsoft 365 para empresas (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puede agregar a otras personas como administradores si desea obtener ayuda para administrar los servicios de Microsoft 365. Consulte [Agregar un administrador](../../business-video/add-admin.md) para obtener más información.
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales de administrador global. 
+## <a name="watch-add-an-existing-domain-to-your-microsoft-365-business-standard-subscription"></a>Vea: agregar un dominio existente a su suscripción de Microsoft 365 Empresa Estándar
 
-2. Para iniciar el asistente, seleccione **Ir a la configuración**.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxApu]
 
-3. En la página **Instalar sus aplicaciones de Office**, tendrá la opción de instalar las aplicaciones en su equipo.
-    
-4. En el paso **Agregar dominio**, escriba el nombre de dominio que desee usar (como contoso.com).
+## <a name="steps-add-an-existing-domain-to-your-microsoft-365-business-standard-subscription"></a>Pasos: agregar un dominio existente a la suscripción de Microsoft 365 Empresa Estándar
+
+1. En la página **Cómo iniciará sesión** en el registro de Microsoft 365 Empresa Estándar elija **Crear una nueva cuenta de correo electrónico empresarial (avanzada)**.
+
+2. En la página **Instalar sus aplicaciones de Office**, tendrá la opción de instalar las aplicaciones en su equipo.
+
+3. En el paso **Agregar dominio**, escriba el nombre de dominio que desee usar (como contoso.com).
 
     > [!IMPORTANT]
     > Si ha comprado un dominio durante el registro, no verá el paso **Agregar un dominio** aquí. En su lugar, vaya a [Agregar usuarios](#add-users-and-assign-licenses).
 
-    
-4. Siga los pasos del asistente para [Crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) a fin de verificar que es el propietario del dominio. Si conoce el host de dominio, consulte también [Agregar un dominio a Microsoft 365](/microsoft-365/admin/setup/add-domain).
+4. Siga los pasos para [Crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) que compruebe que es el propietario del dominio. Si conoce el host de dominio, consulte también [Agregar un dominio a Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     Si su proveedor de hospedaje es GoDaddy u otro host habilitado con [conexión de dominio](/office365/admin/get-help-with-domains/domain-connect), el proceso es sencillo y se le pedirá automáticamente que inicie sesión y que permita que Microsoft autentique en su nombre.
 
@@ -63,24 +69,19 @@ Cuando compre una suscripción a Microsoft 365 Empresa Estándar, tendrá la opc
 
 ## <a name="add-users-and-assign-licenses"></a>Agregar usuarios y asignar licencias
 
-Puede agregar usuarios en el asistente, pero también puede [agregarlos más adelante](../add-users/add-users.md) en el centro de administración. Además, si tiene un controlador de dominio local, puede agregar usuarios con [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-express).
+Ahora puede agregar usuarios, pero también puede [agregar usuarios más adelante](../add-users/add-users.md) en el centro de administración.
 
-## <a name="add-users-in-the-wizard"></a>Agregar usuarios en el asistente
+A los usuarios que agregue se les asignará automáticamente una licencia de Microsoft 365 Empresa Estándar.
 
-Todos los usuarios que agregue en el asistente obtendrán automáticamente una licencia de Microsoft 365 Empresa Estándar.
-
-1. Si su suscripción a Microsoft 365 Empresa Estándar tiene usuarios existentes (por ejemplo, si usó Azure AD Connect), verá la opción para asignarles licencias ahora. Aproveche de agregar las licencias para ellos también.
+1. Si su suscripción de Microsoft 365 Empresa Estándar tiene usuarios existentes, ahora tiene la opción de asignarles licencias. Continúe y agrégueles también licencias.
 
 2. Después de agregar a los usuarios, también verá una opción para compartir las credenciales con los nuevos usuarios agregados. Puede escoger entre imprimirlas, enviarlas por correo electrónico o descargarlas.
 
 ## <a name="connect-your-domain"></a>Conectar su dominio
-
-> [!NOTE]
-> Si ha elegido usar el dominio .onmicrosoft, o ha usado Azure AD Connect para configurar los usuarios, no verá este paso.
   
-Para configurar servicios, es necesario actualizar algunos registros en su registrador de dominio o host DNS.
+Para configurar servicios, es necesario actualizar registros en su registrador de dominio o host DNS.
   
-1. Normalmente, el asistente para configuración detecta el registrador y le proporciona un vínculo con instrucciones paso a paso para actualizar los registros NS en el sitio web del registrador. Si no es así, consulte [Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
+1. Normalmente, el asistente para configuración detecta el registrador y le proporciona un vínculo con instrucciones paso a paso para actualizar los registros NS en el sitio web del registrador. Si no es así, consulte [Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
     - Si tiene registros DNS existentes (por ejemplo, un sitio web existente), pero el host DNS está habilitado para usar la [conexión de dominio](/office365/admin/get-help-with-domains/domain-connect), elija **Agregar registros para mí**. En la página **Seleccione sus servicios en línea**, acepte todos los valores predeterminados, haga clic en **Siguiente** y elija **Autorizar** en la página del host DNS.
     - Si tiene registros DNS existentes con otros hosts DNS (no habilitados para conexión de dominios), le conviene administrar sus propios registros DNS para asegurarse de que los servicios existentes siguen conectados. Consulte [conceptos básicos de dominio](/office365/admin/get-help-with-domains/dns-basics) para obtener más información.
@@ -91,9 +92,21 @@ Para configurar servicios, es necesario actualizar algunos registros en su regis
 
     Para obtener más información sobre el Asistente para la instalación y la página de **Configuración** del Centro de administración, consulte [Diferencias entre el Asistente de configuración la página de Configuración](o365-setup-wizard-and-setup-page.md).
 
+## <a name="watch-set-up-business-email-with-a-new-domain"></a>Vea: configurar el correo electrónico empresarial con un nuevo dominio
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA]
+
+## <a name="steps-set-up-business-email-with-a-new-domain"></a>Pasos: configurar el correo electrónico empresarial con un nuevo dominio
+
+1. En la página **Cómo iniciará sesión** en el registro de Microsoft 365 Empresa Estándar elija **Crear una nueva cuenta de correo electrónico empresarial (avanzada)**.
+
+2. Siga los pasos para comprar un nuevo dominio y escriba el nombre de dominio que desea usar (por ejemplo, contoso.com). Una vez que haya terminado de comprar el dominio, puede [agregar usuarios y licencias](../add-users/add-users.md) e instalar las aplicaciones de Office en el centro de administración.
+
 ## <a name="finish-setting-up"></a>Finalizar la configuración
 
-### <a name="set-up-outlook-for-email"></a>Configurar Outlook para el correo electrónico
+Siga los pasos que se indican a continuación para configurar Outlook, Teams, OneDrive y su sitio web.
+
+### <a name="step-set-up-outlook-for-email"></a>Paso: configurar Outlook para correo electrónico
 
 1. En el menú Inicio de Windows, busque Outlook y selecciónelo.
 
@@ -134,8 +147,14 @@ Si usaba Outlook con otra dirección de correo electrónico, puede importar el c
 Más información en [Importar correo electrónico con Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
 
 También puede usar el centro de administración de Exchange para importar el correo electrónico de todos los usuarios. Para obtener más información, consulte [Migrar varias cuentas de correo electrónico](/Exchange/mailbox-migration/mailbox-migration).
-  
-### <a name="use-a-public-website"></a>Usar un sitio web público
+
+## <a name="set-up-microsoft-teams-and-onedrive-for-business"></a>Configurar Microsoft Teams y OneDrive para la Empresa
+
+Seleccione el icono de nube de OneDrive en la barra de tareas y siga los pasos para mover los archivos a la nueva carpeta OneDrive para la Empresa. Seleccione **Siguiente** para configurar Microsoft Teams.
+
+1. Abra Microsoft Teams, seleccione el icono de perfil y, a continuación, **Agregar cuenta profesional o educativa**. Siga los pasos para agregar su nueva cuenta a Teams.
+
+## <a name="use-a-public-website"></a>Usar un sitio web público
 
 Microsoft 365 no incluye un sitio web público para su empresa. Si desea configurar uno, puede usar un partner de Microsoft, como GoDaddy o WIX.
   
@@ -149,5 +168,8 @@ Microsoft 365 no incluye un sitio web público para su empresa. Si desea configu
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Crear un sitio web](../../business-video/create-web-site.md) (vídeo)\
-[Microsoft 365 para su empresa](../../business-video/index.yml) (página de vínculos)
+[Migrar datos a mi suscripción de Microsoft 365 Empresa Estándar](../simplified-signup/migrate-data-business-standard.md)
+
+[Registrarse para una suscripción a Microsoft 365 Empresa Estándar](../simplified-signup/signup-business-standard.md)
+
+[Aceptar una invitación a una suscripción de Microsoft 365 Empresa Estándar (usuario)](../simplified-signup/user-invite-business-standard.md)

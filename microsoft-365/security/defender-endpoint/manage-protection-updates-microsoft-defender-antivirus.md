@@ -15,17 +15,16 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 91b482aa189ff7e9d4ff69183718abf354d19d0f
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: 04683635399c2cd1efbf6cceca95fa0cfe1b2775
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823834"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896446"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 
@@ -45,6 +44,7 @@ En este artículo se describe cómo especificar desde dónde deben descargarse l
 > Antivirus de Microsoft Defender Las actualizaciones de inteligencia de seguridad se entregan a través de Windows Update y, a partir del lunes 21 de octubre de 2019, todas las actualizaciones de inteligencia de seguridad se firmarán exclusivamente con SHA-2. Los dispositivos deben actualizarse para admitir SHA-2 con el fin de actualizar la inteligencia de seguridad. Para obtener más información, vea [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 <a id="fallback-order"></a>
+
 ## <a name="fallback-order"></a>Orden de reserva
 
 Normalmente, los puntos de conexión se configuran para descargar actualizaciones individualmente de un origen principal seguidos de otros orígenes en orden de prioridad, en función de la configuración de red. Las actualizaciones se obtienen de orígenes en el orden especificado. Si un origen no está disponible, el siguiente origen de la lista se usa inmediatamente.
@@ -59,7 +59,7 @@ Cuanto más antiguas sean las actualizaciones de un punto de conexión, mayor se
 Hay cinco ubicaciones donde puede especificar dónde debe obtener actualizaciones un punto de conexión:
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows Servicio de actualización de servidor](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
+- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) (Intune Internal Definition Update Server: si usa SCCM/SUP para obtener actualizaciones de definición para Antivirus de Microsoft Defender y necesita obtener acceso a Windows Update en dispositivos cliente bloqueados, puede realizar la transición a la administración en colaboración y descargar la carga de trabajo de protección de puntos de conexión a Intune. En la directiva de AntiMalware configurada en Intune hay una opción para "servidor de actualización de definiciones interna" que se puede configurar para usar WSUS local como origen de actualización)
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Recurso compartido de archivos de red](#unc-share)
 - [Actualizaciones de inteligencia de](https://www.microsoft.com/wdsi/defenderupdates) seguridad para Antivirus de Microsoft Defender y otros antimalware de Microsoft (Es posible que la directiva y el registro tengan esta lista como inteligencia de seguridad de Centro de protección contra malware de Microsoft (MMPC), su nombre anterior).
@@ -167,20 +167,21 @@ Por ejemplo, supongamos que Contoso ha contratado Fabrikam para administrar su s
 > Microsoft no prueba soluciones de terceros para administrar Antivirus de Microsoft Defender.
 
 <a id="unc-share"></a>
+
 ## <a name="create-a-unc-share-for-security-intelligence-updates"></a>Crear un recurso compartido UNC para actualizaciones de inteligencia de seguridad
 
 Configurar un recurso compartido de archivos de red (unidad asignada o UNC) para descargar actualizaciones de inteligencia de seguridad desde el sitio MMPC mediante una tarea programada.
 
 1. En el sistema en el que desea aprovisionar el recurso compartido y descargar las actualizaciones, cree una carpeta en la que guardará el script.
 
-    ```DOS
+    ```console
     Start, CMD (Run as admin)
     MD C:\Tool\PS-Scripts\
     ```
 
 2. Cree la carpeta en la que guardará las actualizaciones de firma.
 
-    ```DOS
+    ```console
     MD C:\Temp\TempSigs\x64
     MD C:\Temp\TempSigs\x86
     ```
@@ -197,12 +198,12 @@ Configurar un recurso compartido de archivos de red (unidad asignada o UNC) para
 
 8. Use la línea de comandos para configurar la tarea programada.
 
-    > [!NOTE]
-    > Hay dos tipos de actualizaciones: full y delta.
+   > [!NOTE]
+   > Hay dos tipos de actualizaciones: full y delta.
 
    - Para x64 delta:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -212,7 +213,7 @@ Configurar un recurso compartido de archivos de red (unidad asignada o UNC) para
 
    - Para x64 completo:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -222,7 +223,7 @@ Configurar un recurso compartido de archivos de red (unidad asignada o UNC) para
 
    - Para x86 delta:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -232,7 +233,7 @@ Configurar un recurso compartido de archivos de red (unidad asignada o UNC) para
 
    - Para x86 completo:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -240,8 +241,9 @@ Configurar un recurso compartido de archivos de red (unidad asignada o UNC) para
        ".\SignatureDownloadCustomTask.ps1 -action create -arch x86 -isDelta $false -destDir C:\Temp\TempSigs\x86 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1"
        ```
 
-    > [!NOTE]
-    > Cuando se crean las tareas programadas, puede encontrar estas en el Programador de tareas en Microsoft\Windows\Windows Defender
+   > [!NOTE]
+   > Cuando se crean las tareas programadas, puede encontrar estas en el Programador de tareas en Microsoft\Windows\Windows Defender
+
 9. Ejecute cada tarea manualmente y compruebe que tiene datos (mpam-d.exe, mpam-fe.exe y nis_full.exe) en las siguientes carpetas (es posible que haya elegido diferentes ubicaciones):
 
    - C:\Temp\TempSigs\x86
@@ -249,7 +251,7 @@ Configurar un recurso compartido de archivos de red (unidad asignada o UNC) para
 
    Si se produce un error en la tarea programada, ejecute los siguientes comandos:
 
-    ```DOS
+    ```console
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $False -destDir C:\Temp\TempSigs\x64"
 
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $True -destDir C:\Temp\TempSigs\x64"
@@ -262,7 +264,7 @@ Configurar un recurso compartido de archivos de red (unidad asignada o UNC) para
     > [!NOTE]
     > Los problemas también podrían deberse a la directiva de ejecución.
 
-10. Cree un recurso compartido que apunte a C:\Temp\TempSigs (por \\ ejemplo, server\updates).
+10. Cree un recurso compartido que apunte a C:\Temp\TempSigs (por ejemplo, \\ servidor\actualizaciones).
 
     > [!NOTE]
     > Como mínimo, los usuarios autenticados deben tener acceso de "Lectura".

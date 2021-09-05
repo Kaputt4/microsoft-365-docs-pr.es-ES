@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 32a423073ec00a9e13e0e3669a9fbd1412b01a50
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 1001081d14440f1e02800f64b891c6a988f1f10a
+ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862790"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58884223"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -165,9 +165,9 @@ Los administradores globales pueden revertir este cambio para su inquilino y mos
 
 2. Seleccione **Informes**. 
   
-3. En **Elegir cómo mostrar información**, seleccione las opciones que desee, y a continuación, guarde los cambios.  
+3. Desactive la instrucción **En todos los informes, mostrar nombres sin identificar para usuarios, grupos y sitios** y, a continuación, guarde los cambios.  
   
-Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a la API de informes. Mostrar información de usuario identificable es un evento registrado en el Centro de cumplimiento de Microsoft 365 de auditoría.   
+Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a los informes de uso de Microsoft 365 en [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) y [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) y a los [informes de uso en el Centro de administración de Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Mostrar información de usuario identificable es un evento registrado en el Centro de cumplimiento de Microsoft 365 de auditoría.   
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>¿Qué ocurre con los datos de uso cuando se cierra una cuenta de usuario?
 
