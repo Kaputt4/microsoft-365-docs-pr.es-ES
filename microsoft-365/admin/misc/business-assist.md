@@ -16,18 +16,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre el programa De asistencia empresarial y cómo puede ayudar a su organización con ayuda y uso mejorados para Microsoft 365 para empresas.
-ms.openlocfilehash: 806f73af526b23e32740e0a1c1a8fe9d3854acd1724a030b31985faa040f2735
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fefefe5dc587674609201be13f19cd6223b80c49
+ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824229"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923923"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Ayuda empresarial para Microsoft 365
 
 Obtenga el máximo partido de su suscripción con el asesoramiento de expertos de especialistas en pequeñas empresas.
 
-**Business Assist para Microsoft 365** está diseñado para que las empresas con menos de 5 usuarios le den a usted y a sus empleados acceso las 24 horas a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
+**Business Assist for Microsoft 365** está diseñado para que las pequeñas empresas le den a usted y a sus empleados acceso las 24 horas a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
 
 ### <a name="watch-business-assist-for-microsoft-365"></a>Watch: Business Assist for Microsoft 365
 

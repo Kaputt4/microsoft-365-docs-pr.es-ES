@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 51eac7b05edeccece3cf45a8396493d84dc3e11f
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.openlocfilehash: 1227d95469d57921af9f0b97e7adc2a6a49e5573
+ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866672"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923947"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -459,8 +459,9 @@ Las opciones de configuración de notificaciones de usuario y sugerencias de dir
 
 
 Puedes habilitar o deshabilitar las notificaciones de usuario para varias aplicaciones de Microsoft, consulta Referencia de [sugerencias](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference) de directiva de prevención de pérdida de datos
-- Puede habilitar o deshabilitar **Notificar a los usuarios en Office 365 con una sugerencia de directiva.
-    - notificaciones de correo electrónico al usuario que sen, compartió o modificó por última vez el contenido OR
+
+- Puede habilitar o deshabilitar notificar a los usuarios **en Office 365 servicio con** una sugerencia de directiva.
+    - notificaciones de correo electrónico al usuario que envió, compartió o modificó por última vez el contenido OR
     - notificar a personas específicas
 
 así como elegir personalizar el texto del correo electrónico, el asunto y el texto de la sugerencia de directiva.
@@ -471,6 +472,41 @@ Si seleccionaste Solo dispositivos, recibirás todas las mismas opciones que est
 
 ![Opciones de configuración de notificación de usuario y sugerencia de directiva que están disponibles para dispositivos](../media/dlp-user-notification-devices.png)  
 
+Puede personalizar el título y el cuerpo del texto con estos parámetros. El texto del cuerpo admite lo siguiente:
+
+|nombre común  |parámetro  |ejemplo
+|---------|---------|---------|
+|nombre de archivo     |%%FileName%% | Contoso doc 1 |
+|nombre del proceso     |%%ProcessName%% | Word |
+|nombre de directiva     |%%PolicyName%%| Contoso altamente confidencial |
+|acción | %%AppliedActions%% | pegar contenido del documento desde el Portapapeles a otra aplicación |
+
+**%%AppliedActions%%** sustituye estos valores en el cuerpo del mensaje:
+
+
+|nombre común de acción |value substituted in for %%AppliedActions%% parameter |
+|---------|---------|
+|copiar a almacenamiento extraíble    |*escritura en almacenamiento extraíble*         |
+|copiar en el recurso compartido de red     |*escritura en un recurso compartido de red*         |
+|imprimir     |*impresión*         |
+|pegar desde el portapapeles  |*pegar desde el portapapeles*         |
+|copiar a través de bluetooth   |*transferencia a través de Bluetooth*         |
+|abrir con una aplicación sin alambrar     |*abrir con esta aplicación*         |
+|copiar en un escritorio remoto (RDP)     |*transferencia a escritorio remoto*         |
+|cargar en un sitio web no permitido     |*cargar en este sitio*         |
+|acceso al elemento a través de un explorador no permitido     |*abrir con este explorador*         |
+
+Uso de este texto personalizado
+
+*%%AppliedActions%% Nombre de archivo %%FileName%% via %%ProcessName%% no está permitido por la organización. Haga clic en "Permitir" si desea omitir la directiva %%PolicyName%%* 
+
+produce este texto en la notificación personalizada:
+
+*Pegar desde el portapapeles Nombre de archivo: Contoso doc 1 mediante WINWORD.EXE no está permitido por la organización. Haga clic en el botón "Permitir" si desea omitir la directiva Contoso altamente confidencial*
+ 
+
+
+
 > [!NOTE]
 > Las notificaciones de usuario y las sugerencias de directiva no están disponibles para la ubicación local
 
@@ -479,9 +515,6 @@ Si seleccionaste Solo dispositivos, recibirás todas las mismas opciones que est
 
 Para obtener más información sobre la configuración y el uso de notificaciones de usuario y sugerencias de directiva, incluido cómo personalizar la notificación y el texto de sugerencia, vea 
 - [Enviar notificaciones de email y mostrar sugerencias para directivas DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies)
-- [Referencia de directiva de prevención de pérdida de datos](dlp-policy-reference.md#data-loss-prevention-policy-reference)
-
-
   
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
   
@@ -550,7 +583,7 @@ DLP analiza el correo electrónico de forma diferente desde elementos en SharePo
 
 Si tiene varias reglas en una directiva, puede usar las opciones adicionales para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla. 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
