@@ -16,12 +16,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: f21353aa54cfee3b85a6e9d846aa4fce37cc13f5
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.openlocfilehash: a86525d9da1f36316ed0accacb2fde676831cc95
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866738"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896518"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-guide"></a>Microsoft 365 la integración con la guía de configuración de ServiceNow
 
@@ -210,39 +210,39 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
 5. \[La persona que es administrador de ServiceNow \] Configure Inbound OAuth Provider.
 
-- Desactive **Omitir el paso actual**.
+    - Desactive **Omitir el paso actual**.
 
-- Desactive **Token de autenticación OIDC externo**.
+    - Desactive **Token de autenticación OIDC externo**.
 
-- Seleccione Cliente de OAuth creado en [Requisitos previos (autenticación básica)](#prerequisites-basic-authentication) paso \# 3 y seleccione **Siguiente**.
+    - Seleccione Cliente de OAuth creado en [Requisitos previos (autenticación básica)](#prerequisites-basic-authentication) paso \# 3 y seleccione **Siguiente**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 6. \[La persona que es administrador de ServiceNow \] Configure el usuario de integración de llamadas entrantes.
 
-- Desactive **Omitir el paso actual**.
+    - Desactive **Omitir el paso actual**.
 
-- Seleccione el usuario de integración creado en [requisitos previos (autenticación básica)](#prerequisites-basic-authentication) paso \# 4 y seleccione **Siguiente**.
+    - Seleccione el usuario de integración creado en [requisitos previos (autenticación básica)](#prerequisites-basic-authentication) paso \# 4 y seleccione **Siguiente**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
 7. \[La persona que es administrador de ServiceNow \] Configure up Repository ID.
 
-Especifique el identificador del repositorio y, a continuación, **seleccione Siguiente**.
+    Especifique el identificador del repositorio y, a continuación, **seleccione Siguiente**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
 8. \[La persona que es administrador de ServiceNow \] Configurar la configuración de la aplicación.
 
-Seleccione la siguiente configuración y, a continuación, **seleccione Siguiente**.
+    Seleccione la siguiente configuración y, a continuación, **seleccione Siguiente**.
 
-- SSO con Microsoft 365: compruebe si la instancia de ServiceNow está configurada como SSO con Microsoft 365 inquilinos, de lo contrario desactíquela.
+    - SSO con Microsoft 365: compruebe si la instancia de ServiceNow está configurada como SSO con Microsoft 365 inquilinos, de lo contrario desactíquela.
 
-- Microsoft 365 correo electrónico de administrador: el correo electrónico del Microsoft 365 de administrador al que se contacta cuando se Microsoft 365 casos de soporte técnico.
+    - Microsoft 365 correo electrónico de administrador: el correo electrónico del Microsoft 365 de administrador al que se contacta cuando se Microsoft 365 casos de soporte técnico.
 
-- Entorno de prueba: active la casilla para indicar una fase de prueba para evitar que los agentes de soporte técnico de Microsoft se pondrán en contacto con usted para solucionar el problema. Si está listo para avanzar oficialmente con la integración Microsoft 365 compatibilidad, desactive la casilla.
+    - Entorno de prueba: active la casilla para indicar una fase de prueba para evitar que los agentes de soporte técnico de Microsoft se pondrán en contacto con usted para solucionar el problema. Si está listo para avanzar oficialmente con la integración Microsoft 365 compatibilidad, desactive la casilla.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
 9. \[La persona que es administrador del departamento de soporte técnico o administrador de solicitudes de servicio en Microsoft 365 inquilinos \] completa la integración.
 
@@ -260,21 +260,21 @@ Seleccione la siguiente configuración y, a continuación, **seleccione Siguient
 
         1. En la pestaña **Repositorios,** seleccione **Agregar un** repositorio para crear un nuevo repositorio con la siguiente configuración:
 
-        - Repositorio: valor **de id. de repositorio** de la página Paso - 6 Completar la integración.
+            - Repositorio: valor **de id. de repositorio** de la página Paso - 6 Completar la integración.
 
-        - Punto de conexión: el **valor** de extremo de la página Paso - 6 Completar la integración.
+            - Punto de conexión: el **valor** de extremo de la página Paso - 6 Completar la integración.
 
-        - Tipo de autenticación: seleccione **Autenticación básica**.
+            - Tipo de autenticación: seleccione **Autenticación básica**.
 
-        - Id. de cliente: **valor de id.** de cliente de la página Paso - 6 Completar la integración.
+            - Id. de cliente: **valor de id.** de cliente de la página Paso - 6 Completar la integración.
 
-        - Secreto de cliente: el secreto del proveedor de OAuth entrante que se creó en el paso 3 [requisitos previos (autenticación](#prerequisites-basic-authentication) \# básica).
+            - Secreto de cliente: el secreto del proveedor de OAuth entrante que se creó en el paso 3 [requisitos previos (autenticación](#prerequisites-basic-authentication) \# básica).
 
-        - Expiración del token de actualización: 864000
+            - Expiración del token de actualización: 864000
 
-        - Rest username: el **valor de Nombre** de usuario de la página Paso - 6 Completar la integración.
+            - Rest username: el **valor de Nombre** de usuario de la página Paso - 6 Completar la integración.
 
-        - Contraseña de usuario de reposo: la contraseña del usuario de integración que se creó en el paso 4 [requisitos previos (autenticación](#prerequisites-basic-authentication) \# básica).
+            - Contraseña de usuario de reposo: la contraseña del usuario de integración que se creó en el paso 4 [requisitos previos (autenticación](#prerequisites-basic-authentication) \# básica).
 
             :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image19.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generar automáticamente":::
 
@@ -282,24 +282,24 @@ Seleccione la siguiente configuración y, a continuación, **seleccione Siguient
 
     1. Seleccione **Siguiente** para completar la integración.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image20.png" alt-text="Interfaz gráfica de usuario, aplicación, descripción del sitio web generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image20.png" alt-text="Interfaz gráfica de usuario, aplicación, descripción del sitio web generada automáticamente":::
 
 10. \[La persona que es administrador de ServiceNow Habilitar Microsoft 365 \] la integración de soporte técnico para un usuario existente.
 
-Microsoft 365 la integración de soporte técnico solo está habilitada para el usuario con uno de estos roles:
+    Microsoft 365 la integración de soporte técnico solo está habilitada para el usuario con uno de estos roles:
 
-- x \_ mioms \_ m365 \_ assis.insights \_ user
+    - x \_ mioms \_ m365 \_ assis.insights \_ user
 
-- x \_ mioms \_ m365 \_ assis.administrator
+    - x \_ mioms \_ m365 \_ assis.administrator
 
-> [!NOTE]
-> El usuario con el rol x \_ mioms \_ m365 assis.insights rol de usuario puede ver \_ Service Health \_ Incidents, Recommended Solutions. El usuario con el rol x \_ mioms \_ m365 assis.administrator también puede abrir un caso con Microsoft 365 \_ compatibilidad.
+    > [!NOTE]
+    > El usuario con el rol x \_ mioms \_ m365 assis.insights rol de usuario puede ver \_ Service Health \_ Incidents, Recommended Solutions. El usuario con el rol x \_ mioms \_ m365 assis.administrator también puede abrir un caso con Microsoft 365 \_ compatibilidad.
 
 11. \[Opcional \] \[ El usuario con rol x_mioms_m365_assis.administrator \] Vincular Administración de Microsoft 365 cuenta.
 
-Si algún usuario tiene el rol x \_ mioms \_ m365 assis.administrator y usa diferentes cuentas de Microsoft 365 para administrar un caso de soporte técnico de Microsoft 365 Microsoft 365, debe ir > la cuenta de vínculo de soporte técnico > para configurar su correo electrónico de administrador \_ de Microsoft 365.
+    Si algún usuario tiene el rol x \_ mioms \_ m365 assis.administrator y usa diferentes cuentas de Microsoft 365 para administrar un caso de soporte técnico de Microsoft 365 Microsoft 365, debe ir > la cuenta de vínculo de soporte técnico > para configurar su correo electrónico de administrador \_ de Microsoft 365.
 
- :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
 ## <a name="set-up-microsoft-365-support-integration-with-aad-oauth-token"></a>Configurar la Microsoft 365 la integración de soporte técnico con token de AAD OAuth
 
@@ -381,30 +381,30 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
     1. En Configuración del proveedor **OAuth OIDC,** seleccione Buscar y cree una nueva configuración de proveedor de OIDC en "oidc provider  \_ \_ configuration.list" con estos valores:
 
-    - Proveedor de OIDC: Contoso Azure
+        - Proveedor de OIDC: Contoso Azure
 
-    - Dirección URL de metadatos de OIDC: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
+        - Dirección URL de metadatos de OIDC: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
-    - UserClaim: **appId**
+        - UserClaim: **appId**
 
-    - Campo de usuario: **Id. de usuario**
+        - Campo de usuario: **Id. de usuario**
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image24.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image24.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
     1. Para crear una aplicación nueva, seleccione **Configurar un proveedor de OIDC para comprobar los tokens de id.** con estos valores:
 
-    - Nombre: api \_ de entrada de aplicación \_ \_ contoso
+        - Nombre: api \_ de entrada de aplicación \_ \_ contoso
 
-    - Id. de cliente: el identificador de cliente de la aplicación creada en el paso 2 [requisitos previos (token de OAuth de AAD).](#prerequisites-aad-oauth-token) \#
+        - Id. de cliente: el identificador de cliente de la aplicación creada en el paso 2 [requisitos previos (token de OAuth de AAD).](#prerequisites-aad-oauth-token) \#
 
-    - Secreto de cliente: el secreto de aplicación de la aplicación creada en [requisitos previos (token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 2.
+        - Secreto de cliente: el secreto de aplicación de la aplicación creada en [requisitos previos (token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 2.
 
-    - Configuración del proveedor de OAuth OIDC: el proveedor de OIDC creado en el último paso.
+        - Configuración del proveedor de OAuth OIDC: el proveedor de OIDC creado en el último paso.
 
-    - Dirección URL de redireccionamiento:  
-        `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
+        - Dirección URL de redireccionamiento:  
+            `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image25.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image25.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
 6. \[La persona que es administrador de ServiceNow \] Crear usuarios de integración.
 
@@ -439,24 +439,24 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
 1. \[La persona que es administrador de ServiceNow Cambie el ámbito a \] Microsoft 365 la integración de soporte técnico.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="Interfaz gráfica de usuario, descripción de tabla generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="Interfaz gráfica de usuario, descripción de tabla generada automáticamente":::
 
 2. \[La persona que es administrador de ServiceNow Vaya a Microsoft 365 \] soporte técnico > **instalación** para abrir el flujo de integración.
 
-> [!NOTE]
-> Si ve el error "Read operation against 'oauth \_ entity' from scope 'x \_ mioms \_ m365 \_ assis' has been refused due to the table's cross-scope access policy", it was caused by your table access policy. Debe asegurarse de que **todos los ámbitos de aplicación** Puede  >  **leer** están activados para la entidad oauth de \_ tabla.
+    > [!NOTE]
+    > Si ve el error "Read operation against 'oauth \_ entity' from scope 'x \_ mioms \_ m365 \_ assis' has been refused due to the table's cross-scope access policy", it was caused by your table access policy. Debe asegurarse de que **todos los ámbitos de aplicación** Puede  >  **leer** están activados para la entidad oauth de \_ tabla.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 3. \[La persona que es administrador de ServiceNow \] Seleccione **Aceptar** aceptar el consentimiento.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 4. \[La persona que es administrador de ServiceNow \] Configure Outbound OAuth Provider.
 
-Seleccione Perfil de OAuth para proveedor de OAuth saliente creado [en Requisitos previos (token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 4 y **seleccione Siguiente**.
+    Seleccione Perfil de OAuth para proveedor de OAuth saliente creado [en Requisitos previos (token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 4 y **seleccione Siguiente**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 5. \[La persona que es administrador de ServiceNow \] Configure Inbound OAuth Provider.
 
@@ -466,7 +466,7 @@ Seleccione Perfil de OAuth para proveedor de OAuth saliente creado [en Requisito
 
     1. Seleccione el paso 5 del cliente de OAuth creado [en Requisitos previos (token de AAD OAuth)](#prerequisites-aad-oauth-token) y, a continuación, **seleccione Siguiente**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image28.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image28.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
 6. \[La persona que es administrador de ServiceNow \] Configurar el usuario de integración de llamadas entrantes.
 
@@ -474,7 +474,7 @@ Seleccione Perfil de OAuth para proveedor de OAuth saliente creado [en Requisito
 
     1. Introduzca el identificador de cliente de la aplicación que se creó en el paso 3 [requisitos previos (token de OAuth de AAD)](#prerequisites-aad-oauth-token) \# y seleccione **Siguiente**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image39.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image39.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 7. \[La persona que es administrador de ServiceNow \] Configure el id. de repositorio.
 
@@ -510,23 +510,23 @@ Seleccione Perfil de OAuth para proveedor de OAuth saliente creado [en Requisito
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
-    1. En la **pestaña Repositorios,** seleccione **Agregar un** repositorio para crear un nuevo repositorio con la siguiente información:
+        1. En la **pestaña Repositorios,** seleccione **Agregar un** repositorio para crear un nuevo repositorio con la siguiente información:
 
-    - Repositorio: use el valor **id. de** repositorio de la página Paso - 6 Completar la integración.
+            - Repositorio: use el valor **id. de** repositorio de la página Paso - 6 Completar la integración.
 
-    - Punto de conexión: **valor** de extremo de la página Paso - 6 Completar la integración.
+            - Punto de conexión: **valor** de extremo de la página Paso - 6 Completar la integración.
 
-    - Tipo de autenticación: seleccione **Autenticación de AAD**.
+            - Tipo de autenticación: seleccione **Autenticación de AAD**.
 
-    - Id. de cliente: valor de **id.** de cliente en el paso - 6 Completar la página de integración, que es el identificador de cliente de la aplicación creada en [requisitos previos (token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 2.
+            - Id. de cliente: valor de **id.** de cliente en el paso - 6 Completar la página de integración, que es el identificador de cliente de la aplicación creada en [requisitos previos (token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 2.
 
-    - Rest username: el valor **de Nombre** de usuario en el paso - 6 Completar la página de integración, que es el **identificador** de cliente de la aplicación creada en [Prerequisites (Token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 3.
+            - Rest username: el valor **de Nombre** de usuario en el paso - 6 Completar la página de integración, que es el **identificador** de cliente de la aplicación creada en [Prerequisites (Token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 3.
 
-    - Contraseña de usuario de reposo: el secreto de aplicación de la aplicación creada en [requisitos previos (token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 3.
+            - Contraseña de usuario de reposo: el secreto de aplicación de la aplicación creada en [requisitos previos (token de AAD OAuth)](#prerequisites-aad-oauth-token) paso \# 3.
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image31.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
+                :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image31.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
-    1. Vuelva atrás y seleccione el botón para guardar la integración.
+        1. Vuelva atrás y seleccione el botón para guardar la integración.
 
     1. Seleccione **Siguiente** para completar la integración.
 
@@ -534,20 +534,20 @@ Seleccione Perfil de OAuth para proveedor de OAuth saliente creado [en Requisito
 
 10. \[La persona que es administrador de ServiceNow Habilitar Microsoft 365 \] la integración de soporte técnico para un usuario existente.
 
-Microsoft 365 la integración de soporte técnico solo está habilitada para usuarios con los siguientes roles:
+    Microsoft 365 la integración de soporte técnico solo está habilitada para usuarios con los siguientes roles:
 
-- x \_ mioms \_ m365 \_ assis.insights \_ user
+    - x \_ mioms \_ m365 \_ assis.insights \_ user
 
-- x \_ mioms \_ m365 \_ assis.administrator
+    - x \_ mioms \_ m365 \_ assis.administrator
 
-> [!NOTE]
-> El usuario con el rol x \_ mioms \_ m365 assis.insights el usuario puede ver \_ Service Health \_ Incidents, Recommended Solutions. El usuario con el rol x \_ mioms \_ m365 assis.administrator también puede abrir un caso con Microsoft 365 \_ compatibilidad.
+    > [!NOTE]
+    > El usuario con el rol x \_ mioms \_ m365 assis.insights el usuario puede ver \_ Service Health \_ Incidents, Recommended Solutions. El usuario con el rol x \_ mioms \_ m365 assis.administrator también puede abrir un caso con Microsoft 365 \_ compatibilidad.
 
 11. **\[Opcional \] \[ El usuario con rol x_mioms_m365_assis.administrator \] Link Administración de Microsoft 365 cuenta**
 
-Si algún usuario tiene el rol "x \_ mioms \_ m365 assis.administrator" y usa diferentes cuentas de Microsoft 365 para administrar los casos de soporte técnico de Microsoft, debe ir Microsoft 365 la cuenta de vínculo de soporte técnico > para configurar su correo electrónico de administrador de \_ Microsoft 365.
+    Si algún usuario tiene el rol "x \_ mioms \_ m365 assis.administrator" y usa diferentes cuentas de Microsoft 365 para administrar los casos de soporte técnico de Microsoft, debe ir Microsoft 365 la cuenta de vínculo de soporte técnico > para configurar su correo electrónico de administrador de \_ Microsoft 365.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
 ## <a name="set-up-microsoft-365-support-integration-for-insights-only"></a>Configurar la Microsoft 365 de compatibilidad para Ideas SOLO
 
@@ -581,17 +581,17 @@ Estos pasos previos son necesarios para configurar la Microsoft 365 integración
 
     1. Cree una nueva aplicación con los valores siguientes **seleccionando Conectar a un proveedor de OAuth de terceros**.
 
-    - Id. de cliente: **el identificador de cliente** de la aplicación creada en [requisitos previos (Ideas SOLO)](#prerequisites-insights-only) \# paso 1
+        - Id. de cliente: **el identificador de cliente** de la aplicación creada en [requisitos previos (Ideas SOLO)](#prerequisites-insights-only) \# paso 1
 
-    - Secreto de cliente: el secreto de aplicación de la aplicación creada en [requisitos previos (Ideas SOLO)](#prerequisites-insights-only) \# paso 1
+        - Secreto de cliente: el secreto de aplicación de la aplicación creada en [requisitos previos (Ideas SOLO)](#prerequisites-insights-only) \# paso 1
 
-    - Tipo de concesión predeterminado: credenciales de cliente
+        - Tipo de concesión predeterminado: credenciales de cliente
 
-    - Dirección URL del token: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
+        - Dirección URL del token: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - Dirección URL de redireccionamiento: `https://{servicenow-instance-name}.service-now.com/oauth_redirect.do`
+        - Dirección URL de redireccionamiento: `https://{servicenow-instance-name}.service-now.com/oauth_redirect.do`
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
 ### <a name="set-up-microsoft-365-support-integration"></a>Configurar la Microsoft 365 la integración de soporte técnico
 
@@ -601,24 +601,24 @@ Los siguientes pasos son necesarios para configurar la integración entre la ins
 
 1. \[La persona que es administrador de ServiceNow Cambie el ámbito a \] Microsoft 365 la integración de soporte técnico.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="Interfaz gráfica de usuario, descripción de tabla generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="Interfaz gráfica de usuario, descripción de tabla generada automáticamente":::
 
 2. \[La persona que es administrador de ServiceNow Vaya a Microsoft 365 \] soporte técnico > **instalación** para abrir el flujo de integración.
 
-> [!NOTE]
-> Si ve el error "Read operation against 'oauth \_ entity' from scope 'x \_ mioms \_ m365 \_ assis' has been refused due to the table's cross-scope access policy", it was caused by your table access policy. Debe asegurarse de que **todos los ámbitos de aplicación** Puede  >  **leer** están activados para la entidad oauth de \_ tabla.
+    > [!NOTE]
+    > Si ve el error "Read operation against 'oauth \_ entity' from scope 'x \_ mioms \_ m365 \_ assis' has been refused due to the table's cross-scope access policy", it was caused by your table access policy. Debe asegurarse de que **todos los ámbitos de aplicación** Puede  >  **leer** están activados para la entidad oauth de \_ tabla.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 3. \[La persona que es administrador de ServiceNow \] Seleccione **Aceptar** aceptar el consentimiento.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 4. \[La persona que es administrador de ServiceNow \] Configure Outbound OAuth Provider.
 
-Seleccione Perfil de OAuth para proveedor de OAuth saliente y seleccione **Siguiente**.
+    Seleccione Perfil de OAuth para proveedor de OAuth saliente y seleccione **Siguiente**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 5. \[La persona que es administrador de ServiceNow \] Omitir proveedor de OAuth entrante.
 
@@ -634,9 +634,9 @@ Seleccione Perfil de OAuth para proveedor de OAuth saliente y seleccione **Sigui
 
 7. \[La persona que es administrador de ServiceNow \] Configure up Repository ID.
 
-Especifique el identificador del repositorio y seleccione **Siguiente**.
+    Especifique el identificador del repositorio y seleccione **Siguiente**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
 8. \[La persona que es administrador de ServiceNow \] Configure up Application Configuración.
 
@@ -666,19 +666,19 @@ Especifique el identificador del repositorio y seleccione **Siguiente**.
 
         1. En la **pestaña Repositorios,** seleccione **Agregar un** repositorio para crear un nuevo repositorio con la siguiente información:
 
-        - Repositorio: el valor **id. de** repositorio de la página Paso - 6 Completar la integración.
+            - Repositorio: el valor **id. de** repositorio de la página Paso - 6 Completar la integración.
 
-        - Punto de conexión: **valor** de extremo de la página Paso - 6 Completar la integración.
+            - Punto de conexión: **valor** de extremo de la página Paso - 6 Completar la integración.
 
-        - Tipo de autenticación: seleccione **Autenticación de AAD**.
+            - Tipo de autenticación: seleccione **Autenticación de AAD**.
 
-        - Id. de cliente: un valor aleatorio, como **omitido**.
+            - Id. de cliente: un valor aleatorio, como **omitido**.
 
-        - Rest username: un valor aleatorio, como **ignored**.
+            - Rest username: un valor aleatorio, como **ignored**.
 
-        - Rest user password: A random value, such as **ignored**.
+            - Rest user password: A random value, such as **ignored**.
 
-            :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image36.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
+                :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image36.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
         1. Vuelva atrás y seleccione el botón para guardar la integración.
 
@@ -688,14 +688,14 @@ Especifique el identificador del repositorio y seleccione **Siguiente**.
 
 10. \[La persona que es administrador de ServiceNow Habilitar Microsoft 365 \] la integración de soporte técnico para un usuario existente.
 
-Microsoft 365 la integración de compatibilidad solo está habilitada para estos roles de usuario:
+    Microsoft 365 la integración de compatibilidad solo está habilitada para estos roles de usuario:
 
-- x \_ mioms \_ m365 \_ assis.insights \_ user
+    - x \_ mioms \_ m365 \_ assis.insights \_ user
 
-- x \_ mioms \_ m365 \_ assis.administrator
+    - x \_ mioms \_ m365 \_ assis.administrator
 
-> [!NOTE] 
-> El usuario con el rol x_mioms_m365_assis.insights_user puede ver Service Health Incidents, Recommended Solutions. El usuario con el rol x_mioms_m365_assis.administrator también puede abrir un caso con Microsoft 365 compatibilidad. Con Ideas SOLO, no se debe asignar a nadie el rol x_mioms_m365_assis.administrator.
+    > [!NOTE] 
+    > El usuario con el rol x_mioms_m365_assis.insights_user puede ver Service Health Incidents, Recommended Solutions. El usuario con el rol x_mioms_m365_assis.administrator también puede abrir un caso con Microsoft 365 compatibilidad. Con Ideas SOLO, no se debe asignar a nadie el rol x_mioms_m365_assis.administrator.
 
 ## <a name="testing-the-configuration"></a>Probar la configuración
 
@@ -709,7 +709,7 @@ Estos son los pasos para probar la configuración de la Microsoft 365 la integra
 
 3. **Céntrate en Microsoft 365 de** soporte técnico y selecciona **Microsoft 365 Ideas** para determinar si las soluciones recomendadas se recuperaron correctamente.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image38.png" alt-text="Interfaz gráfica de usuario, aplicación, descripción del sitio web generada automáticamente":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image38.png" alt-text="Interfaz gráfica de usuario, aplicación, descripción del sitio web generada automáticamente":::
 
 ##  <a name="troubleshooting"></a>Solución de problemas
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7665fbd52e45636988b375e4b811e3f93d8f3981
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 7e3077980755f81a3ca86569b53051a2851191de
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574008"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726337"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -75,13 +75,13 @@ El proxy estático se puede configurar mediante la directiva de grupo (GP). La d
 
   Estabilizelo **en Habilitado** y seleccione **Deshabilitar el uso de proxy autenticado.**
 
-  ![Imagen de configuración de directiva de grupo1.](images/atp-gpo-proxy1.png)
+  ![Imagen de configuración de directiva de grupo1](images/atp-gpo-proxy1.png)
 
 - **Plantillas administrativas > Windows componentes > recopilación** de datos y compilaciones de vista previa > Configurar la telemetría y las experiencias de usuario conectadas:
 
   Configurar el servidor proxy
 
-  ![Imagen de configuración de directiva de grupo2.](images/atp-gpo-proxy2.png)
+  ![Imagen de configuración de directiva de grupo2](images/atp-gpo-proxy2.png)
 
   La directiva establece dos valores del Registro, `TelemetryProxyServer` como REG_SZ y como `DisableEnterpriseAuthProxy` REG_DWORD, en la clave del Registro `HKLM\Software\Policies\Microsoft\Windows\DataCollection` .
 
@@ -133,9 +133,9 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 <br>
 
 **** 
-|Hoja de cálculo de la lista de dominios|Description|
+|Hoja de cálculo de la lista de dominios|Descripción|
 |---|---|
-|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 Si un servidor proxy o firewall tiene habilitada la detección HTTPS (inspección SSL), excluya los dominios que aparecen en la tabla anterior de la detección HTTPS.
@@ -180,7 +180,7 @@ Consulte las siguientes instrucciones para eliminar el requisito de comodín (*)
 
 4. Consulte la lista de direcciones URL de punto de conexión de Microsoft Defender para obtener la lista completa de requisitos para su región (consulte la hoja de cálculo de direcciones URL de [servicio](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
 
-    ![Imagen del administrador en Windows PowerShell.](images/admin-powershell.png)
+    ![Imagen del administrador en Windows PowerShell](images/admin-powershell.png)
 
 Los caracteres comodín ( ) usados en los extremos de dirección \* \* URL \* .ods.opinsights.azure.com, .oms.opinsights.azure.com y .agentsvc.azure-automation.net se pueden reemplazar por el identificador de área de \* trabajo específico. El identificador de área de trabajo es específico de su entorno y área de trabajo y se puede encontrar en la sección Incorporación del espacio empresarial en el portal de Microsoft 365 Defender área de trabajo.
 

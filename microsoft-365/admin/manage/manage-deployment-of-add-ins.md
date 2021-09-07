@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para usuarios y grupos de su organización mediante la implementación centralizada en el Centro de administración.
-ms.openlocfilehash: 8de912ce6762037d905847dcabdcc20778d347e3
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 522a1884752e0ada6b43ba68a853cb117c8dfd75
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394245"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896482"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Implementar complementos en el centro de administración
 
@@ -135,5 +135,6 @@ Las actualizaciones de los complementos se producen de la siguiente manera:
 
 [Administrar complementos en el Centro de administración](manage-addins-in-the-admin-center.md) (artículo)\
 [Cree el primer complemento de panel de](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) tareas de Word (artículo\
-[Menores y adquirir](minors-and-acquiring-addins-from-the-store.md) complementos desde el almacén (artículo)\ Use cmdlets de [PowerShell](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) de implementación centralizada para administrar complementos (artículo)\  
+[Menores y adquirir complementos de la tienda](minors-and-acquiring-addins-from-the-store.md) (artículo)\
+[Usar cmdlets de PowerShell de implementación centralizada para administrar complementos](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (artículo)\
 [Solución de problemas: el usuario no ve complementos](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (artículo)

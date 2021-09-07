@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 08/27/2021
-ms.openlocfilehash: 2ae397e8c1da002c97392a7e96e5b1a89791e90b
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.date: 09/03/2021
+ms.openlocfilehash: 8b5cf1f9e48e6022d2269911606ad69b953d8ec2
+ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823918"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "58896470"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -409,6 +409,7 @@ Cuando se instala esta actualización, el dispositivo necesita el paquete de sal
 
 
 ## <a name="microsoft-defender-antivirus-platform-support"></a>Antivirus de Microsoft Defender de plataforma
+
 Las actualizaciones de plataforma y motor se proporcionan en una cadencia mensual. Para ser totalmente compatible, manténgase al día con las actualizaciones más recientes de la plataforma. Nuestra estructura de soporte es dinámica, evolucionando en dos fases en función de la disponibilidad de la versión más reciente de la plataforma:
 
 - **Fase de mantenimiento** de actualizaciones críticas y de seguridad: al ejecutar la versión más reciente de la plataforma, podrá recibir actualizaciones de seguridad y críticas en la plataforma antimalware.
@@ -420,6 +421,7 @@ Las actualizaciones de plataforma y motor se proporcionan en una cadencia mensua
 Durante la fase de soporte técnico (solo), los incidentes de soporte comercialmente razonables se proporcionan a través del servicio de soporte técnico de Microsoft & y las ofertas de soporte administrado de Microsoft (como soporte premier). Si un incidente de soporte requiere una escalación al desarrollo para obtener más instrucciones, requiere una actualización que no sea de seguridad o requiere una actualización de seguridad, se pedirá a los clientes que actualicen a la versión más reciente de la plataforma o a una actualización intermedia (*).
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>Versión de plataforma incluida con Windows 10 versiones
+
 En la tabla siguiente se proporciona Antivirus de Microsoft Defender plataforma y versiones del motor que se suministran con las versiones Windows 10 versiones más recientes:
 
 |Windows 10 versión  |Versión de plataforma  |Versión del motor |Fase de soporte técnico |
@@ -442,6 +444,17 @@ Se recomienda actualizar las ediciones Windows 10 (Enterprise, Pro y Home), Wind
 Para obtener más información, vea [Actualización de Microsoft Defender para obtener Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2109.01</summary>
+
+&ensp;Versión del paquete: **1.1.2109.01** Versión de la &ensp; plataforma: **4.18.2107.4** Versión del &ensp; motor: **1.1.18400.5** Versión de &ensp; firma: **1.347.891.0**
+
+### <a name="fixes"></a>Correcciones
+- Ninguno
+
+### <a name="additional-information"></a>Información adicional
+- Ninguno
+<br/>
+</details><details>
 <summary>1.1.2108.01</summary>
 
 &ensp;Versión del paquete: **1.1.2108.01** Versión de la &ensp; plataforma: **4.18.2107.4** Versión del &ensp; motor: **1.1.18300.4** Versión de &ensp; firma: **1.343.2244.0**
