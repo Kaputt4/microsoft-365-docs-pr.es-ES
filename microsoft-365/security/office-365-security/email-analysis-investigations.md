@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 598f8713103a49dad01eb9bb6cf74257128e25f9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ad390c00bdbef33f52603c9d4a63884d3b91de49
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58558883"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918332"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Análisis de correo electrónico en investigaciones para Microsoft Defender para Office 365
 
@@ -42,8 +42,8 @@ El análisis de correo electrónico de la investigación automatizada identifica
 
 - El análisis de correo electrónico crea consultas (clústeres) de correos electrónicos con atributos del correo electrónico original: valores de remitente (dirección IP, dominio de envío) y contenido (asunto, identificador de clúster) para encontrar correos electrónicos relacionados.
 - Si el análisis de las direcciones URL y archivos del correo electrónico original identifica que algunas son malintencionadas (es decir, malware o suplantación de identidad), también creará consultas o clústeres de correos electrónicos que contengan la dirección URL o el archivo malintencionados.
-- El análisis de agrupación en clústeres de correo electrónico cuenta las amenazas asociadas con los correos electrónicos que coinciden en el clúster para determinar si los correos electrónicos son malintencionados, sospechosos o no tienen amenazas claras. Si el clúster de correos electrónicos que coincide con la consulta tiene una cantidad suficiente de correo no deseado, phish normal, amenazas de phishing o malware de elevada confianza, el clúster de correo electrónico obtiene ese tipo de amenaza aplicado. 
-- El análisis de agrupación en clústeres de correo electrónico también comprueba la ubicación de entrega más reciente del correo electrónico original y los correos electrónicos en los clústeres de correo electrónico para ayudar a identificar si los correos electrónicos potencialmente aún necesitan eliminarse o si ya se han corregido o se han evitado. Este análisis es importante porque los atacantes transforman el contenido malintencionado más las directivas de seguridad y la protección pueden variar entre buzones. Esta funcionalidad conduce a situaciones en las que el contenido malintencionado aún puede sentarse en los buzones, aunque uno o varios correos electrónicos malintencionados han sido detectados y eliminados por Protección automática de hora cero (ZAP).
+- El análisis de agrupación en clústeres de correo electrónico cuenta las amenazas asociadas con los correos electrónicos que coinciden en el clúster para determinar si los correos electrónicos son malintencionados, sospechosos o no tienen amenazas claras. Si el clúster de correos electrónicos que coincide con la consulta tiene una cantidad suficiente de correo no deseado, phish normal, amenazas de phishing o malware de elevada confianza, el clúster de correo electrónico obtiene ese tipo de amenaza aplicado.
+- El análisis de agrupación en clústeres de correo electrónico también comprueba la ubicación de entrega más reciente del correo electrónico original y los correos electrónicos en los clústeres de correo electrónico para ayudar a identificar si los correos electrónicos potencialmente aún necesitan eliminarse o si ya se han corregido o se han evitado. Este análisis es importante porque los atacantes transforman el contenido malintencionado más las directivas de seguridad y la protección pueden variar entre buzones. Esta funcionalidad lleva a situaciones en las que el contenido malintencionado todavía puede sentarse en los buzones, aunque uno o varios correos electrónicos malintencionados se han detectado y eliminado mediante la purga automática de cero horas (ZAP).
 - Los clústeres de correo electrónico que se consideran malintencionados debido al malware, la suplantación de identidad de elevada confianza, los archivos malintencionados o las amenazas de direcciones URL malintencionadas recibirán una acción pendiente para eliminar temporalmente los correos electrónicos cuando aún haya en el buzón de correo en la nube (bandeja de entrada o carpeta no deseado). Si los correos electrónicos malintencionados o los clústeres de correo electrónico solo son "Not In Mailbox" (bloqueados, en cuarentena, con errores, eliminados temporalmente, etc.) o "Local/Externo" sin ninguno en el buzón de nube, no se configurará ninguna acción pendiente para quitarlos.
 - Si se determina que alguno de los clústeres de correo electrónico es malintencionado, la amenaza identificada por el clúster se aplicará de nuevo al correo electrónico original implicado en la investigación. Este comportamiento es similar al de un analista de operaciones de seguridad que usa resultados de búsqueda de correo electrónico para determinar el veredicto de un correo electrónico original basado en correos electrónicos que coinciden. Este resultado garantiza que, independientemente de si se detectan o no direcciones URL, archivos o indicadores de correo electrónico de origen de un correo electrónico original, el sistema puede identificar correos electrónicos malintencionados que puedan eludir la detección mediante personalización, transformación, evasión u otras técnicas de atacante.
 - En la investigación de compromiso del usuario, se crean clústeres de correo electrónico adicionales para identificar posibles problemas de correo electrónico creados por el buzón. Este proceso incluye un clúster de correo electrónico limpio (buenos correos electrónicos del usuario, posibles exfiltraciones de datos y posibles correos electrónicos de comando/control), clústeres de correo electrónico sospechosos (correos electrónicos que contienen correo no deseado o phish normal) y clústeres de correo electrónico malintencionados (correos electrónicos que contienen malware o phish de alta confianza). Estos clústeres de correo electrónico proporcionan datos de analistas de operaciones de seguridad para determinar qué otros problemas pueden tener que solucionarse desde un compromiso y visibilidad en la que los correos electrónicos pueden haber desencadenado las alertas originales (por ejemplo, phish/spam que desencadenó restricciones de envío de usuarios)
@@ -95,6 +95,6 @@ Para los clústeres de  correo electrónico o correo electrónico de la pestaña
 
 En este ejemplo, el correo electrónico es malintencionado, pero no en un buzón.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver acciones de corrección pendientes o completadas](air-review-approve-pending-completed-actions.md)

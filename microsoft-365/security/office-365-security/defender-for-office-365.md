@@ -19,12 +19,12 @@ ms.custom:
 description: Microsoft Defender para Office 365 incluye archivos adjuntos seguros, vínculos seguros, herramientas avanzadas antiphishing, herramientas de creación de informes y funciones de inteligencia sobre amenazas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e9096af6a99fb04a9f25e9d28f31f8eb522ecf4c
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: 8651adb37640d68d0eace7aa23a134ba3b892bbd
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392183"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918260"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
 
@@ -48,6 +48,7 @@ Microsoft Defender para Office 365 protege su organización frente a las amenaza
 - **[Investigación automatizada y funcionalidades de respuesta](office-365-air.md)**: ahorre tiempo y esfuerzo al investigar y mitigar las amenazas.
 
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Guía interactiva de Microsoft Defender para Office 365
+
 En esta guía interactiva, aprenderá cómo proteger su organización con Microsoft Defender para Office 365. Verá cómo Defender para Office 365 puede ayudarle a definir directivas de protección, analizar amenazas en su organización y responder a ataques.
 
 [Eche un vistazo a la guía interactiva](https://aka.ms/MSDO-IG)
@@ -64,7 +65,7 @@ Si no está familiarizado con Microsoft Defender para Office 365 o prefiere apre
   - Vínculos seguros
   - Archivos adjuntos seguros
 - Defender las cargas de trabajo (ej. SharePoint Online, OneDrive y Teams)
-- Proteger con la purga automática
+- Proteger con purga automática (ZAP).
 
 Para aprender con la práctica, [haga clic en este vínculo](protect-against-threats.md).
 

@@ -19,12 +19,12 @@ ms.custom:
 description: Use el nuevo Panel de seguridad para revisar el Office 365 protección contra amenazas y ver y actuar en alertas de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f945a75f8b15b55c999da95410a6078a48c540e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 18cde7063e8a25426b56ee184b71408016a6116d
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563735"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918356"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>Panel de seguridad en el Centro de seguridad & cumplimiento
 
@@ -102,7 +102,7 @@ Las métricas se calculan como se describe en la tabla siguiente:
 |Mensajes analizados|Número de mensajes de correo electrónico analizados multiplicado por el número de destinatarios|
 |Amenazas detenidas|Número de mensajes de correo electrónico identificados como que contienen malware multiplicado por el número de destinatarios|
 |Bloqueado por [Defender para Office 365](defender-for-office-365.md)|Número de mensajes de correo electrónico bloqueados por Defender Office 365 multiplicado por el número de destinatarios|
-|Eliminado después de la entrega|Número de mensajes eliminados por purga automática de [cero](zero-hour-auto-purge.md) horas multiplicado por el número de destinatarios|
+|Eliminado después de la entrega|Número de mensajes eliminados por purga automática de cero horas [(ZAP)](zero-hour-auto-purge.md) multiplicado por el número de destinatarios|
 |
 
 ## <a name="malware"></a>Malware

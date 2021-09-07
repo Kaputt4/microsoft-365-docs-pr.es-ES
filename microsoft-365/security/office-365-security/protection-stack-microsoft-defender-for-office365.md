@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Siga la ruta de un mensaje entrante a través de la pila de filtrado de amenazas en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea7fc497f42bff24bbf9b5cb69c03144f64503eb381e530135263497486bcb24
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e5385817610100a7e29baca9b6dd98b89493de35
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805348"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918272"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protección contra amenazas paso a paso en Microsoft Defender para Office 365
 
@@ -41,9 +41,9 @@ Los bloques perimetrales están diseñados para ser automáticos. En el caso de 
 
 3. **La reputación** del dominio bloqueará los mensajes que se envíen desde un dominio no conocido.
 
-4. **El filtrado perimetral basado en directorios** bloquea los intentos de obtener información de directorio de una organización a través de SMTP.
+4. **Filtro perimetral basado en directorios** bloquea los intentos de recopilar información de directorio de una organización a través de SMTP.
 
-5. **La detección de backscatter** impide que una organización sea atacada a través de informes de no entrega (NDR) no válidos.
+5. **Detección de devolución de correo no enviado** impide que una organización sea atacada a través de informes de no entrega (NDR) no válidos.
 
 6. **El filtrado mejorado para conectores** conserva la información de autenticación incluso cuando el tráfico pasa a través de otro dispositivo antes de que llegue a Office 365. Esto mejora la precisión de la pila de filtrado, incluida la agrupación en clústeres heurísticos, la suplantación de identidad y los modelos de aprendizaje automático contra suplantación de identidad (phishing), incluso en escenarios de enrutamiento complejos o híbridos.
 
@@ -63,13 +63,13 @@ Las características de la inteligencia del remitente son fundamentales para cap
 
 3.  La inteligencia suplantación de identidad es capaz de filtrar aquellos permitidos para 'suplantar' (es decir, aquellos que envían correo en nombre de otra cuenta o reenviar para una lista de correo) de remitentes malintencionados que imitan dominios externos conocidos o organizativos. Separa el correo legítimo "en nombre de" de los remitentes que suplanta para entregar mensajes de correo no deseado y suplantación de identidad.
 
-    **La inteligencia de suplantación intra** org detecta y bloquea los intentos de suplantación de dominio de un dominio dentro de la organización.
+    **Inteligencia contra la suplantación de identidad dentro de la organización** detecta y bloquea los intentos de suplantación de identidad de un dominio dentro de la organización.
 
-4. **La inteligencia de suplantación entre dominios** detecta y bloquea los intentos de suplantación de dominio de un dominio fuera de la organización.
+4. **Inteligencia contra la suplantación de identidad entre dominios** detecta y bloquea los intentos de suplantación de identidad de un dominio fuera de la organización.
 
 5. **El filtrado masivo** permite a los administradores configurar un nivel de confianza masivo (BCL) que indica si el mensaje se envió desde un remitente masivo. Los administradores pueden usar el control deslizante masivo en la directiva contra correo no deseado para decidir qué nivel de correo masivo tratar como correo no deseado.
 
-6. **La inteligencia de buzones** de correo aprende de comportamientos de correo electrónico de usuario estándar. Aprovecha el gráfico de comunicación de un usuario para detectar cuándo un remitente solo parece ser alguien con el que el usuario suele comunicarse, pero en realidad es malintencionado. Este método detecta la suplantación.
+6. **Inteligencia de buzones** aprende de los comportamientos estándar del correo electrónico del usuario. Aprovecha el gráfico de comunicación de un usuario para detectar cuándo un remitente solo parece ser alguien con el que el usuario suele comunicarse, pero en realidad es malintencionado. Este método detecta la suplantación.
 
 7. **La suplantación de inteligencia de buzones** habilita o deshabilita los resultados de suplantación mejorados en función de la asignación de remitente individual de cada usuario. Cuando está habilitada, esta característica ayuda a identificar la suplantación.
 
@@ -85,25 +85,25 @@ En esta fase, la pila de filtrado comienza a controlar el contenido específico 
 
 1. **Las reglas** de transporte (también conocidas como reglas de flujo de correo o reglas de transporte Exchange) permiten que un administrador lleve a cabo una amplia variedad de acciones cuando se cumple una amplia gama de condiciones para un mensaje. Todos los mensajes que fluyen a través de la organización se evalúan con las reglas de flujo de correo /reglas de transporte habilitadas.
 
-2. **Antivirus de Microsoft Defender** y dos *motores antivirus* de terceros se usan para detectar todo el malware conocido en los datos adjuntos.
+2. **Antivirus de Microsoft Defender** y dos *motores antivirus de terceros* se usan para detectar todo el malware conocido en los datos adjuntos.
 
 3. Los motores antivirus (AV) también se usan para escribir en  true todos los datos adjuntos, de modo que el bloqueo de tipos puede bloquear todos los datos adjuntos de los tipos especificados por el administrador.
 
 4. Siempre que Microsoft Defender para Office 365 detecta datos adjuntos malintencionados, el hash del archivo y un hash de su contenido activo se agregan a la reputación de Exchange Online Protection (EOP). **El bloqueo de reputación** de datos adjuntos bloqueará ese archivo en todos los Office 365, y en los puntos de conexión, a través de llamadas en la nube de MSAV.
 
-5. **La agrupación en clústeres heurísticos** puede determinar que un archivo es sospechoso en función de la heurística de entrega. Cuando se encuentra un archivo adjunto sospechoso, toda la campaña se pausa y el archivo está en espacio aislado. Si se encuentra que el archivo es malintencionado, se bloquea toda la campaña.
+5. **Agrupación heurística** puede determinar que un archivo es sospechoso en función de la heurística de entrega. Cuando se encuentra un archivo adjunto sospechoso, toda la campaña se pausa y el archivo está en espacio aislado. Si se encuentra que el archivo es malintencionado, se bloquea toda la campaña.
 
-6. **Los modelos de aprendizaje automático** actúan en el encabezado, el contenido del cuerpo y las direcciones URL de un mensaje para detectar intentos de suplantación de identidad.
+6. **Modelo de aprendizaje automático** actúa sobre el encabezado, el contenido del cuerpo y las direcciones URL de un mensaje para detectar intentos de suplantación de identidad.
 
 7. Microsoft usa la determinación de la reputación del espacio aislado de direcciones URL, así como la reputación de direcciones URL de fuentes de terceros en el bloqueo de reputación de direcciones **URL,** para bloquear cualquier mensaje con una dirección URL malintencionada conocida.
 
-8. **La heurística de contenido** puede detectar mensajes sospechosos en función de la estructura y la frecuencia de palabras dentro del cuerpo del mensaje, mediante modelos de aprendizaje automático.
+8. **Los heurísticos de contenido** pueden detectar mensajes sospechosos en función de la estructura y la frecuencia de palabras dentro del cuerpo del mensaje, mediante modelos de aprendizaje automático.
 
 9. **Caja fuerte attachments** sandboxes todos los datos adjuntos de Defender para Office 365 clientes, mediante análisis dinámico para detectar amenazas nunca antes vistas.
 
-10. **La detonación de** contenido vinculado trata todas las direcciones URL vinculadas a un archivo de un correo electrónico como datos adjuntos, lo que hace que el archivo se en espacio aislado de forma asincrónica en el momento de la entrega.
+10. **Detonación de contenido vinculado** trata todas las direcciones URL que se vinculan a un archivo de un correo electrónico como datos adjuntos, creando de forma asincrónica un espacio aislado en el archivo en el momento de la entrega.
 
-11. **La detonación de direcciones URL** se produce cuando la tecnología contra suplantación de identidad (phishing) ascendente encuentra que un mensaje o una dirección URL son sospechosos. La detonación de dirección URL espacio aislado las direcciones URL del mensaje en el momento de la entrega.
+11. **Detonación URL** se produce cuando la tecnología antiphishing ascendente detecta que un mensaje o una dirección URL son sospechosos. La detonación de dirección URL espacio aislado las direcciones URL del mensaje en el momento de la entrega.
 
 ## <a name="phase-4---post-delivery-protection"></a>Fase 4: Protección posterior a la entrega
 
@@ -111,11 +111,11 @@ La última fase tiene lugar después de la entrega de correo o archivo, actuando
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="La fase 4 del filtrado en Defender for Office 365 es la protección posterior a la entrega.":::
 
-1. **Caja fuerte links** es Defender para la protección de tiempo de clic de Office 365 de la cuenta. Cada dirección URL de cada mensaje se ajusta para apuntar a servidores de vínculos de Microsoft Caja fuerte. Cuando se hace clic en una dirección URL, se comprueba con la reputación más reciente, antes de redirigir al usuario al sitio de destino. La dirección URL está asincrónicamente en espacio aislado para actualizar su reputación.
+1. **Vínculos seguros** es la protección de tiempo de clic de Defender para Office 365. Cada dirección URL de cada mensaje se ajusta para apuntar a servidores de vínculos de Microsoft Caja fuerte. Cuando se hace clic en una dirección URL, se comprueba con la reputación más reciente, antes de redirigir al usuario al sitio de destino. La dirección URL está asincrónicamente en espacio aislado para actualizar su reputación.
 
-2. La purga automática de hora cero (ZAP) para la suplantación de identidad **(phishing)** detecta y neutraliza de forma retroactiva los mensajes de suplantación de identidad malintencionados que ya se han entregado a Exchange Online buzones de correo.
+2. La purga automática de hora cero (ZAP) para la suplantación de identidad **(phishing)** detecta y neutraliza de forma retroactiva los mensajes de suplantación de identidad malintencionados que ya se han entregado Exchange Online buzones de correo.
 
-3. **ZAP para malware** detecta y neutraliza retroactivamente los mensajes de malware malintencionados que ya se han entregado a Exchange Online buzones de correo.
+3. **ZAP para malware** detecta y neutraliza de forma retroactiva los mensajes malintencionados malware que ya se han entregado a buzones de Exchange Online.
 
 4. **ZAP para la suplantación** de identidad (phishing) detecta y neutraliza de forma retroactiva los mensajes de correo no deseado malintencionados que ya se han entregado a Exchange Online buzones de correo.
 
