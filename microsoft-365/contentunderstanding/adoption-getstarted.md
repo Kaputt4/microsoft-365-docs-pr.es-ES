@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 91743eb7184e340deac15c10412833f2d8060866
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 0390163d1128bcb83fad0ad91c94c1a02d738a4e
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863634"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928721"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adopción SharePoint Syntex Microsoft: Introducción
 
@@ -144,6 +144,7 @@ Para prepararse para implementar SharePoint Syntex, debe:
 1. Recopilar comentarios e iterar.
 1. A medida que aumenta el uso, planee los créditos de AI Builder según sea necesario.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
-[Escenarios y casos de uso de SharePoint Syntex](adoption-scenarios.md) 
+[Escenarios y casos de uso para SharePoint Syntex](adoption-scenarios.md) 
+ [Administrar contratos mediante una Microsoft 365 solución](solution-manage-contracts-in-microsoft-365.md)

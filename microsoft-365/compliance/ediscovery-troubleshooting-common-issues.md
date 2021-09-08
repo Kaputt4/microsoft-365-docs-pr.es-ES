@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Obtenga información sobre los pasos básicos de solución de problemas que puede seguir para resolver problemas comunes en Office 365 exhibición de documentos electrónicos.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b562e3d22557133630fa8c7c7d343432736b9f4f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d71091b4c3545880b103b8d4a4111b3c63d35506
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569614"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928757"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar y resolver problemas comunes de exhibición de documentos electrónicos
 
@@ -95,9 +95,9 @@ Al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye
 Es posible que vea ese error al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye SharePoint online y OneDrive para la Empresa web. La exhibición de documentos electrónicos se basa en el índice de SPO para identificar las ubicaciones de archivos. Si el archivo se eliminó pero el índice de SPO aún no se actualizó, puede producirse este error.
 
 ### <a name="resolution"></a>Solución 
+
 Abra la ubicación del SPO y compruebe que este archivo no está allí.
 La solución sugerida es volver a indizar manualmente el sitio o esperar a que el sitio vuelva a indizar mediante el proceso en segundo plano automático.
-
 
 ## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Error o problema: este resultado de búsqueda no se descargó, ya que es una carpeta u otro artefacto que no se puede descargar por sí mismo, se descargarán los elementos dentro de la carpeta o biblioteca.
 
@@ -118,6 +118,16 @@ Se produce un error en una búsqueda de exhibición de documentos electrónicos 
    ```
 
 3. Debe haber un objeto de usuario de correo para la pregunta de usuario. Si no se devuelve nada, investigue el objeto de usuario. Póngase en contacto con el soporte técnico de Microsoft si el objeto no se puede sincronizar.
+
+## <a name="issueerror-search-fails-with-error-cs007"></a>Problema/error: la búsqueda falla con el error CS007
+
+Al realizar una búsqueda de contenido o una búsqueda asociada a un caso de exhibición de documentos electrónicos principal, se produce un error transitorio y se produce un error CS007 en la búsqueda.
+
+### <a name="resolution"></a>Solución
+
+1. Actualice la búsqueda y reduzca la complejidad de la consulta de búsqueda.  Por ejemplo, una búsqueda de caracteres comodín puede devolver demasiados resultados para que el sistema procese, lo que provoca un error CS007.
+
+2. Vuelva a ejecutar la búsqueda actualizada.
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>Error o problema: Exportar resultados de búsqueda es lento
 

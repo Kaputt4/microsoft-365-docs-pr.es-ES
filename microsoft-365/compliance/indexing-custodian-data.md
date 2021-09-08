@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cuando se agrega un custodio a un caso Advanced eDiscovery, cualquier contenido que se consideró parcialmente indizado se vuelve a procesar para que sea totalmente posible realizar búsquedas.
-ms.openlocfilehash: a43ccc09fb3c0821ff04d5ec47bf9bfbb1782c1061e51b6b541abc3792e82738
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a43b0cd9b7fcac1745b917dc5a1c198fa2a1e61
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905552"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928709"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Clasificación avanzada de los datos de administración
 
-Cuando se agrega un custodio Advanced eDiscovery un caso de Advanced eDiscovery, se vuelve a indizar todo el contenido que se consideró parcialmente indizado o con errores de indización para hacerlo totalmente compatible con búsquedas.  Este proceso de reindexación se denomina *Indexación avanzada*. Hay varias razones por las que el contenido está parcialmente indizado o tiene errores de indización. Esto incluye archivos de imagen o la presencia de imágenes en un archivo, tipos de archivo no admitidos o límites de indización de tamaño de archivo. Para SharePoint, la indización avanzada solo se ejecuta en elementos que se marcan como parcialmente indizados o que tienen errores de indización. En Exchange, los mensajes de correo electrónico que tienen datos adjuntos de imagen no se marcan como parcialmente indizados o con errores de indización. Esto significa que el proceso de indización avanzada no volverá a indizar esos archivos.
+Cuando se agrega un custodio a un caso de Advanced eDiscovery, cualquier contenido que se consideró parcialmente indizado o que tenía errores de indización se vuelve a indizar para que sea totalmente posible realizar búsquedas.  Este proceso de reindexación se denomina *Indexación avanzada*. Hay muchas razones por las que el contenido está parcialmente indizado o tiene errores de indización. Esto incluye archivos de imagen o la presencia de imágenes en un archivo, tipos de archivo no admitidos o límites de indización de tamaño de archivo. Para SharePoint, la indización avanzada solo se ejecuta en elementos que se marcan como parcialmente indizados o que tienen errores de indización. En Exchange, los mensajes de correo electrónico que tienen datos adjuntos de imagen no se marcan como parcialmente indizados o con errores de indización. Esto significa que el proceso de indización avanzada no volverá a indizar esos archivos.
 
 Para obtener más información sobre el procesamiento de soporte técnico y elementos parcialmente indizados, vea:
 
 - [Tipos de archivo admitidos en Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 
-- [Elementos parcialmente indizados en la búsqueda de contenido en Office 365](partially-indexed-items-in-content-search.md)
+- [Elementos parcialmente indizados en eDiscovery](partially-indexed-items-in-content-search.md)
 
 - [Formatos de archivo indizados por la búsqueda de Exchange](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
@@ -41,7 +41,7 @@ Para obtener más información sobre el procesamiento de soporte técnico y elem
 
 Una vez completado el proceso de indización avanzada, puede comprender la eficacia del reprocesamiento.  En la vista Resultados  de indización avanzada de la ficha Procesamiento de un caso, el gráfico enumera el número de elementos agregados al *índice híbrido*.  El índice híbrido es donde eDiscovery avanzado almacena el contenido que se ha vuelto a procesar.
 
-Esta vista también incluye el número de elementos que requieren corrección y otro gráfico de errores por tipo de archivo. Para obtener más información, vea:
+Esta vista también incluye el número de elementos que requieren corrección y otro gráfico de errores por tipo de archivo. Para más información, vea:
 
 - [Corrección de errores al procesar los datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: edcfbb7cbce64cc964d5c32d64c4a176424a0d49
-ms.sourcegitcommit: bdf506c47bfed0f7e639301a7edd94c4eb150150
+ms.openlocfilehash: f05350819c040f2b230bc9be9f963b9bcf057452
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58869184"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928697"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -48,6 +48,23 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 
 ### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
 - [La referencia de característica de cumplimiento de](communication-compliance-feature-reference.md) comunicación agregó nueva compatibilidad con características de vista previa para el examen de datos adjuntos modernos en Teams chats y canales privados.
+
+### <a name="compliance--service-assurance"></a>Garantía de & cumplimiento
+
+- [La garantía del](https://docs.microsoft.com/en-us/compliance/) servicio se ha actualizado con actualizaciones de contenido de revisión trimestral para las certificaciones y las instrucciones de aplicabilidad:
+  - Arquitectura
+  - Registro de auditoría
+  - Cifrado y administración de claves
+  - Administración de acceso e identidad  
+  - Microsoft 365 de acceso
+  - Seguridad de red
+  - Privacidad
+  - Resiliencia y continuidad
+  - Administración de riesgos
+  - Operación y desarrollo de seguridad
+  - Supervisión de seguridad
+  - Administración de suministros
+  - Administración de amenazas y vulnerabilidades
 
 ### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
 

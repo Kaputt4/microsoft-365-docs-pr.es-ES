@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a Microsoft 365 buzones de correo.
-ms.openlocfilehash: 88710c9d6036effdb5f76dd4af8e4d6c24e7394e
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 70e01994c69d838693eaf453005a829d99f2cc4e
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862814"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928733"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archivar datos de terceros en Microsoft 365
 
@@ -130,7 +130,7 @@ Los conectores de datos de TeleMessage también están disponibles en GCC entorn
 
 En la tabla de esta sección se enumeran los conectores de datos de terceros disponibles en asociación con 17a-4 LLC. La tabla también resume las soluciones de cumplimiento que puede aplicar a datos de terceros después de importarlos y archivarlos en Microsoft 365. Vea la sección Información general [sobre las](#overview-of-compliance-solutions-that-support-third-party-data) soluciones de cumplimiento que admiten datos de terceros para obtener una descripción más detallada de cada solución de cumplimiento y cómo admite datos de terceros.
 
-Para poder archivar datos de terceros en Microsoft 365, debe trabajar con Veritas para configurar su servicio de archivado (denominado *DataParser)* para su organización. Para obtener más información,  haga clic en el vínculo de la columna de datos de terceros para ir a las instrucciones paso a paso para crear un conector para ese tipo de datos.
+Para poder archivar datos de terceros en Microsoft 365, debe trabajar con 17a-4 LLC para configurar su servicio de archivado (denominado *DataParser)* para su organización. Para obtener más información,  haga clic en el vínculo de la columna de datos de terceros para ir a las instrucciones paso a paso para crear un conector para ese tipo de datos.
 
 |Datos de terceros  |Retención por juicio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|

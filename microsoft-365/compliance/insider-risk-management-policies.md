@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 37918c9078231b80f1b41ddf063df92f5cd2aace
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f10099fcfe2c8b4701ed5aa0981a3bb84bf5c7c3
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569062"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928745"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -189,7 +189,7 @@ Cuando la detección de filtración acumulada está activada para las directivas
 
 Para obtener más información sobre la administración de las actividades de los usuarios, vea los [Casos de administración de riesgos internos: actividades de los usuarios](insider-risk-management-cases.md#user-activity).
 
-## <a name="policy-health-preview"></a>Estado de la directiva (versión preliminar)
+## <a name="policy-health"></a>Estado de la directiva
 
 El estado de la directiva le permite conocer los posibles problemas de sus directivas de administración de riesgos internos. La columna de Estado en la pestaña de Directivas puede alertarle de los problemas de las directivas que pueden impedir que se informe de la actividad del usuario o de por qué el número de alertas de actividad es inusual. El estado de la directiva también puede confirmar que la directiva está en buen estado y no necesita atención o cambios de configuración.
 

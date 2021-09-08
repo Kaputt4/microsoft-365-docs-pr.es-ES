@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8f98a9b942f65a1c60708c4d4bfa756ab7d8fc2a
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: dd0b33ca6c2045a0f709e94e4c59f89b99b58bc7
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863763"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928787"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes en Microsoft 365 Defender
 
@@ -185,9 +185,9 @@ Desde la **Graph,** puede:
 
 1. Reproduce las alertas y los nodos del gráfico a medida que se produjeron con el tiempo para comprender la cronología del ataque.
 
-<!--
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.png" alt-text="Example of playing the alerts and nodes on the Graph page":::
---> 
+
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="Ejemplo de reproducción de las alertas y nodos en la Graph web":::
+ 
 
 2. Abra un panel de entidades, lo que le permite revisar los detalles de la entidad y actuar en acciones de corrección, como eliminar un archivo o aislar un dispositivo.
  
@@ -197,14 +197,14 @@ Desde la **Graph,** puede:
  
    :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Ejemplo de un resaltado de alerta en la Graph página":::
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Según sea necesario:
 
 - [Investigar las alertas de un incidente](investigate-alerts.md)
 - [Investigar los usuarios de un incidente](investigate-users.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)
