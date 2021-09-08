@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información sobre la diferencia clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
-ms.openlocfilehash: 4927f29eecc2ee0dfa0e2207531d8f5f5616a68e
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: e9f9c417d8603be0d933607ccf527c6d821bcc72
+ms.sourcegitcommit: 7883556c05ceef228dc329f715e8a6213b40d921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400300"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58931259"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios 
 
@@ -66,15 +66,15 @@ Los modelos de procesamiento de formularios también crean nuevos [Tipos de cont
 
 Puede aplicar modelos de comprensión mediante documentos a las bibliotecas de documentos de SharePoint a las que tenga acceso. Use el centro de contenido para crear un modelo de comprensión mediante documentos y aplíquelo a otras bibliotecas de documentos. El centro de contenido le ofrece un control más centralizado sobre cómo se usan los modelos de comprensión mediante documentos y cómo se aplican. Nota: Esta información también debe resumirse en un centro de contenido.
 
-Actualmente, los modelos de procesamiento de formularios solo se pueden aplicar a la biblioteca de documentos de SharePoint desde la que los creó. Esto permite a los usuarios con licencia y acceso al sitio crear un modelo de procesamiento de formularios. Tenga en cuenta que un administrador necesita habilitar el procesamiento de formularios en una biblioteca de documentos de SharePoint para que esté disponible para los usuarios con licencia.
+Actualmente los modelos de procesamiento de formularios sólo se pueden aplicar a la biblioteca de documentos de SharePoint desde la que los creó. Esto permite a los usuarios con licencia y acceso al sitio crear un modelo de procesamiento de formularios. Tenga en cuenta que un administrador necesita habilitar el procesamiento de formularios en una biblioteca de documentos de SharePoint para que esté disponible para los usuarios con licencia.
 
 ## <a name="comparison-of-forms-processing-and-document-understanding"></a>Comparación del procesamiento de formularios y la comprensión mediante documentos
 
-Use la siguiente tabla para comprender cuándo se usa el procesamiento de formularios y cuándo, la comprensión mediante documentos:
+Use la siguiente tabla para comprender cuándo se usa el procesamiento de formularios y cuándo, la comprensión mediante documentos.
 
 | Característica | Procesamiento de formularios | Comprensión mediante documentos |
 | ------- | ------- | ------- |
-| Tipo de modelo; cuándo se usa cada uno | Se usa para formatos de archivo semiestructurados, como PDF con contenido de formularios como facturas u pedidos de compra en los que el diseño y el formato son parecidos.  | Se usa para formatos de archivo semiestructurados, como documentos de Office en los que hay diferencias en el diseño pero de los que se extrae igualmente información parecida. |
+| Tipo de modelo: cuándo usar cada uno | Se usa para formatos de archivo semiestructurados, como PDF con contenido de formularios como facturas u pedidos de compra en los que el diseño y el formato son parecidos.  | Se usa para formatos de archivo semiestructurados, como documentos de Office en los que hay diferencias en el diseño pero de los que se extrae igualmente información parecida. |
 | Creación de modelos | Modelo creado en generador de IA con un acceso directo desde la biblioteca de documentos de SharePoint.| Modelo creado en SharePoint en un sitio nuevo, el centro de contenido. |
 | Tipo de clasificación| El clasificador configurable se usa para proporcionar sugerencias a los sistemas sobre los datos que se extraen.| Clasificador que se puede entrenar con extractores opcionales mediante el aprendizaje automático para asignar la ubicación de documentos en los que se extraen datos.|
 | Ubicaciones | Capacitado para una única biblioteca de documentos.| Se puede aplicar a múltiples bibliotecas.|
@@ -82,14 +82,13 @@ Use la siguiente tabla para comprender cuándo se usa el procesamiento de formul
 | Integrar con Metadatos administrados | No | Sí, mediante la formación del extractor de entidades que hace referencia a un campo de metadatos administrados configurados.|
 | Integración de las características de cumplimiento cuando Microsoft Information Protection está habilitado | Establecer etiquetas de retención publicadas.<br>La opción de establecer etiquetas de confidencialidad estará disponible próximamente | Establecer etiquetas de retención publicadas.<br>Establecer etiquetas de confidencialidad publicadas. |
 | Regiones compatibles| Procesamiento de formularios basado en Power Platform. Para obtener información sobre la disponibilidad global para Power Platform y AI Builder, consulta [disponibilidad de Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Disponible en todas las regiones.|
-| Gastos transaccionales | Usar créditos de AI Builder.<br>Los créditos se pueden comprar en los de 1 M.<br>Los créditos de 1 M están incluidos en la compra de más de 300 licencias de SharePoint Syntex.<br>Los créditos de 1 M permitirán procesar 2000 páginas de archivos.<br>| N/D |
+| Gastos transaccionales | Usar créditos de AI Builder.<br>Los créditos se pueden comprar en los de 1 M.<br>Los créditos de 1 M están incluidos en la compra de más de 300 licencias de SharePoint Syntex.<br>Los créditos de 1 M permitirán procesar 2 000 páginas de archivos.<br>| N/D |
 | Capacidad | Usa el entorno de Power Platform predeterminado (entornos personalizados con soporte para la base de datos de Dataverse). | No tiene restricciones de capacidad.|
 | Idiomas admitidos| Inglés <br>Próximamente en 2021: Idiomas del alfabeto latino | Los modelos funcionan en todos los idiomas del alfabeto latino. Además de inglés: alemán, sueco, francés, español, italiano y portugués.|
 
 ## <a name="see-also"></a>Consulte también
+
 [Aprendizaje: mejorar el rendimiento empresarial con AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
-
-
 
 [Información general sobre la comprensión mediante documentos](document-understanding-overview.md)
 

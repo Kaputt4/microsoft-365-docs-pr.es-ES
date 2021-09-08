@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 26f5723d604cb9f57000f13eb799cd0afba593e7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: eabd58f43e1275b3ae7ae3b8563e97299fef1233
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556305"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928769"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -85,9 +85,13 @@ Puede usar la cuarentena automática para evitar una cadena infinita de notifica
 
 Evite que los usuarios transfieran archivos protegidos por las directivas a través de aplicaciones Bluetooth específicas.
 
-### <a name="browser-and-domain-restrictions"></a>Restricciones del dominio y del explorador:
+### <a name="browser-and-domain-restrictions-to-sensitive-data"></a>Restricciones de explorador y dominio a los datos confidenciales
 
 Restrinja el uso compartido de los archivos confidenciales que coincidan con las directivas con dominios de servicio en la nube sin restricciones.
+
+#### <a name="unallowed-browsers"></a>Exploradores no permitidos
+
+Agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Edge Chromium.
 
 #### <a name="service-domains"></a>Dominios de servicio
 
@@ -100,17 +104,30 @@ Si el modo de lista está configurado en **Permitir**, los usuarios podrán carg
 > [!IMPORTANT]
 > Cuando el modo de restricción del servicio esté establecido en "Permitir", debe tener al menos un dominio de servicio configurado antes de que las restricciones se apliquen.
 
-#### <a name="unallowed-browsers"></a>Exploradores no permitidos
+### <a name="additional-settings-for-endpoint-dlp"></a>Configuración adicional para DLP de punto de conexión
 
-Agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Edge Chromium.
+#### <a name="business-justification-in-policy-tips"></a>Justificaciones empresariales en sugerencias de directivas
 
-### <a name="business-justification-in-policy-tips"></a>Justificaciones empresariales en sugerencias de directivas
+Puede controlar cómo interactúan los usuarios con la opción de justificación empresarial en las notificaciones de sugerencias de directiva DLP. Esta opción aparece cuando los usuarios realizan una actividad que está protegida por la configuración **Bloquear con anulación** en una directiva DLP. Esta es una configuración global. Puede elegir entre una de las siguientes opciones:
 
-Puede controlar cómo interactúan los usuarios con la opción de justificación empresarial en las notificaciones de sugerencias de directiva DLP. Esta opción aparece cuando los usuarios realizan una actividad que está protegida por la configuración **Bloquear con anulación** en una directiva DLP. Puede elegir entre una de las siguientes opciones:
+- **Mostrar opciones predeterminadas y cuadro de texto personalizado**: los usuarios pueden, de forma predeterminada, seleccionar una justificación integrada o escribir su propio texto.
+- **Mostrar solo las opciones predeterminadas**: los usuarios solo pueden seleccionar una justificación integrada.
+- **Mostrar solo el cuadro de texto personalizado**: los usuarios solo pueden escribir su propia justificación. Solo el cuadro de texto aparecerá en la notificación de sugerencia de directiva del usuario final. 
 
-- De forma predeterminada, los usuarios pueden seleccionar una justificación integrada o introducir su propio texto.
-- Los usuarios solo pueden seleccionar una justificación integrada.
-- Los usuarios solo pueden introducir su propia justificación.
+##### <a name="customizing-the-options-in-the-drop-down-menu"></a>Personalización de las opciones en el menú desplegable
+
+Puede crear hasta cinco opciones personalizadas que aparecerán cuando los usuarios interactúen con la sugerencia de notificación de la directiva seleccionando **Personalizar el menú desplegable de opciones**. 
+
+
+|Opción |texto predeterminado  |
+|---------|---------|
+|opción 1    | **Esto forma parte de un flujo de trabajo empresarial establecido**  o puede escribir texto personalizado        |
+|opción 2  |**Mi administrador ha aprobado esta acción** o puede escribir texto personalizado         |
+|opción 3   |**Se requiere acceso urgente; notificaré a mi administrador por separado** o puede escribir texto personalizado          |
+|Mostrar opción de falsos positivos     |**La información de estos archivos no es confidencial** o puede escribir texto personalizado          |
+|opción 5    |**Otro** o puede escribir texto personalizado         |
+
+<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### <a name="always-audit-file-activity-for-devices"></a>Auditar siempre la actividad de archivos para dispositivos
 
@@ -341,6 +358,10 @@ El mensaje indica:
 8. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al explorador de actividades](data-classification-activity-explorer.md), de ser necesario. 
 
 9. Compruebe que el evento se encuentre en el Explorador de actividades.
+
+### <a name="scenario-5-configure-a-policy-to-use-the-customized-business-justification"></a>Escenario 5: configurar una directiva para usar la justificación empresarial personalizada
+
+
 
 ## <a name="see-also"></a>Consulte también
 
