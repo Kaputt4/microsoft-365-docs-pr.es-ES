@@ -277,6 +277,7 @@
 ##### [Programar exámenes mediante PowerShell](schedule-antivirus-scans-powershell.md)
 ##### [Programar exámenes mediante WMI](schedule-antivirus-scans-wmi.md)
 #### [Usar el análisis rápido limitado en el Antivirus de Windows Defender](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [Optimizar el rendimiento de Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md)
 #### [Compatibilidad con otros productos para la seguridad](microsoft-defender-antivirus-compatibility.md)
 
 #### [Obtener actualizaciones contra malware y antivirus](manage-updates-baselines-microsoft-defender-antivirus.md)
