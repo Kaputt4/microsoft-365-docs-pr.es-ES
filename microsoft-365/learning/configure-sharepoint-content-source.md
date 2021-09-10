@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Obtenga información sobre cómo configurar SharePoint como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar).
-ms.openlocfilehash: a7f4b41bb515fbd8c1ffde98f29da1ff13cc30df5eb36f07ae4ab35c0eb4f229
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 96dc12f8c69281f420b339198222f9f918ebc5b4
+ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834676"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58942629"
 ---
 # <a name="configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>Configurar SharePoint como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar)
 

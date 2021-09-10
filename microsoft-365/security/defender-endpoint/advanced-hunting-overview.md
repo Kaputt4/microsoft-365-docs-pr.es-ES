@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d52fe03786e4fff94ca08fdc7e5c7951a0d6e33
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 6d051666e481bcf74038dc5000ebaadbd142d429
+ms.sourcegitcommit: 095e23ba4181c86a301a25d8c898d25d1befec97
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506512"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58963145"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Búsqueda proactiva de amenazas con búsqueda avanzada
 
@@ -32,7 +32,7 @@ ms.locfileid: "58506512"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
-La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consulta que le permite explorar hasta 30 días de datos sin procesar. Puede inspeccionar de forma proactiva los eventos de la red para localizar indicadores y entidades de amenazas. El acceso flexible a los datos permite la búsqueda sin restricciones para amenazas conocidas y potenciales.
+La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consulta que le permite explorar hasta 30 días de datos sin procesar. Puede inspeccionar eventos de forma proactiva en su red para localizar entidades e indicadores de amenazas. El acceso flexible a los datos permite la búsqueda sin restricciones para amenazas conocidas y potenciales.
 
 Vea este vídeo para obtener una introducción rápida a la búsqueda avanzada y un breve tutorial que le ayudará a empezar rápidamente.
 
@@ -61,7 +61,7 @@ Le recomendamos que siga los pasos siguientes para empezar a trabajar rápidamen
 |**Obtenga información sobre cómo usar los resultados de la consulta**|Obtenga información sobre gráficos y diversas formas de ver o exportar los resultados. Explore cómo puede ajustar rápidamente las consultas y profundizar para obtener información más enriquecente.|[Trabajar con resultados de consulta](advanced-hunting-query-results.md)|
 |**Entender el esquema**|Obtenga una visión adecuada y de alto nivel de las tablas en el esquema y sus columnas. Obtenga información sobre dónde buscar datos al crear las consultas.|[Referencia del esquema](advanced-hunting-schema-reference.md)|
 |**Usar consultas predefinidas**|Explore colecciones de consultas predefinidas que cubren diferentes escenarios de búsqueda de amenazas.|[Consultas compartidas](advanced-hunting-shared-queries.md)|
-|**Optimizar consultas y controlar errores**|Comprenda cómo crear consultas eficientes y libres de errores.|[Procedimientos recomendados de consulta](advanced-hunting-best-practices.md) <p> [Controlar los errores](advanced-hunting-errors.md)|
+|**Optimizar consultas y controlar errores**|Comprenda cómo crear consultas eficientes y libres de errores.|[Prácticas recomendadas de consulta](advanced-hunting-best-practices.md) <p> [Controlar los errores](advanced-hunting-errors.md)|
 |**Obtener la cobertura más completa**|Use la configuración de auditoría para proporcionar una mejor cobertura de datos para su organización.|[Ampliar la cobertura de búsqueda avanzada](advanced-hunting-extend-data.md)|
 |**Ejecutar una investigación rápida**|Ejecute rápidamente una consulta de búsqueda avanzada para investigar la actividad sospechosa.|[Búsqueda rápida de información de entidad o evento con *go hunt*](advanced-hunting-go-hunt.md)|
 |**Contener amenazas y solucionar compromisos**|Responder a los ataques mediante la quarantining de archivos, la restricción de la ejecución de aplicaciones y otras acciones|[Realizar acciones en los resultados avanzados de la consulta de búsqueda](advanced-hunting-take-action.md)|
@@ -70,10 +70,10 @@ Le recomendamos que siga los pasos siguientes para empezar a trabajar rápidamen
 
 ## <a name="data-freshness-and-update-frequency"></a>Actualización de datos y frecuencia de actualización
 
-Los datos de búsqueda avanzados se pueden clasificar en dos tipos distintos, cada uno consolidado de forma diferente.
+Los datos de búsqueda avanzada se pueden clasificar en dos tipos distintos, cada uno consolidado de forma diferente.
 
 - **Datos de eventos o actividades:** rellena tablas sobre alertas, eventos de seguridad, eventos del sistema y evaluaciones rutinarias. La búsqueda avanzada recibe estos datos casi inmediatamente después de que los sensores que los recopilan los transmitan correctamente a Defender for Endpoint.
-- **Datos de entidad:** rellena tablas con información consolidada sobre usuarios y dispositivos. Estos datos proceden de orígenes de datos relativamente estáticos y orígenes dinámicos, como entradas de Active Directory y registros de eventos. Para proporcionar datos nuevos, las tablas se actualizan con cualquier información nueva cada 15 minutos, agregando filas que podrían no estar completamente rellenadas. Cada 24 horas, los datos se consolidan para insertar un registro que contiene el conjunto de datos más reciente y completo sobre cada entidad.
+- **Datos de entidad:** rellena tablas con información consolidada sobre usuarios y dispositivos. Estos datos proceden tanto de orígenes de datos relativamente estáticos como de orígenes dinámicos, como entradas de Active Directory y registros de eventos. Para proporcionar datos nuevos, las tablas se actualizan con cualquier información nueva cada 15 minutos, agregando filas que podrían no estar completamente rellenadas. Cada 24 horas, los datos se consolidan para insertar un registro que contiene el conjunto de datos más reciente y completo sobre cada entidad.
 
 ## <a name="time-zone"></a>Zona horaria
 
@@ -87,3 +87,5 @@ La información de hora en la búsqueda avanzada se encuentra actualmente en la 
 - [Entender el esquema](advanced-hunting-schema-reference.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)
 - [Introducción a las detecciones personalizadas](overview-custom-detections.md)
+- [Storage de la cuenta](/azure/storage/common/storage-account-overview)
+- [Azure Event Hubs: una plataforma de streaming de big data y un servicio de ingesta de eventos](/azure/event-hubs/event-hubs-about)

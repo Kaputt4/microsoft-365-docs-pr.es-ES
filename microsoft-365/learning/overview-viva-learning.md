@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: None
 description: Obtenga información Aprendizaje Microsoft Viva (versión preliminar) en el entorno Microsoft 365 usuario.
 ms.openlocfilehash: e08be19d9277a31401b62be71f1e180859ba29bb
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483444"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58942625"
 ---
 # <a name="overview-of-microsoft-viva-learning-preview"></a>Información general sobre Aprendizaje Microsoft Viva (versión preliminar) 
 
