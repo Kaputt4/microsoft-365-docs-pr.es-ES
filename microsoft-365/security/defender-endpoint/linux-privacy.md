@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 3d6ce59ec83e8271ff0c665386bd33942084d9ad
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683569"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218380"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacidad de Microsoft Defender para endpoint en Linux
 
@@ -162,7 +162,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Campo|Descripción|
+|Campo|Description|
 |---|---|
 |version|Versión de Defender para Endpoint en Linux.|
 |instance_id|Identificador único generado en el inicio de extensión de kernel.|
@@ -218,7 +218,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Campo|Descripción|
+|Campo|Description|
 |---|---|
 |how_to_check|Determina cómo se comprueban las actualizaciones de productos (por ejemplo, automáticas o manuales).|
 |channel_name|Actualizar canal asociado al dispositivo.|
@@ -231,7 +231,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Campo|Descripción|
+|Campo|Description|
 |---|---|
 |sha256|Identificador SHA256 del registro de soporte técnico.|
 |size|Tamaño del registro de soporte técnico.|

@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre sus opciones después de Exchange Server de soporte técnico de 2007 e inicie la planeación de la migración a Microsoft 365, Office 365 o Exchange 2016.
-ms.openlocfilehash: a6de134db567d3c932d4455409653f1bfd40b3e35960f84691cbcef247b1cfe5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7e8f50118dab6fcb618273f5c28497c80d4a549
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218567"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de Exchange 2007
 
@@ -45,7 +45,7 @@ Para obtener más información acerca Office servidores de 2007 que se acercan a
   
 ## <a name="what-are-my-options"></a>¿Cuáles son mis opciones?
 
-Puede:
+Podrá:
   
 - Migre a Microsoft 365 mediante la migración híbrida, por fases o por fases.
     
@@ -53,7 +53,7 @@ Puede:
     
 Las secciones siguientes exploran cada opción con más detalle.
   
-### <a name="migrate-to-microsoft-365"></a>Migrar a Microsoft 365
+### <a name="migrate-to-microsoft-365"></a>Migrar a Microsoft 365
 
 Migrar el correo electrónico a Microsoft 365 es la mejor y más sencilla opción para ayudar a retirar Exchange implementación de 2007. Con una migración a Microsoft 365, puede hacer un solo salto de una tecnología de 10 años a características de última generación, como:
   
@@ -90,7 +90,7 @@ Tiene algunas opciones de migración. Debe tener en cuenta algunas cosas, como:
 En esta tabla se muestran las opciones de migración y los factores más importantes que determinan qué método usar:
   
 
-|**Opción de migración**|**Tamaño de la organización**|**Duración**|
+|**Opción de migración**|**Tamaño de la organización**|**Duration**|
 |:-----|:-----|:-----|
 |Migración total  <br/> |Menos de 150 puestos  <br/> |Una semana o menos  <br/> |
 |Migración preconfigurada  <br/> |Más de 150 puestos  <br/> |Unas semanas  <br/> |
@@ -245,9 +245,9 @@ Si decidió mantener el correo electrónico local, use los siguientes recursos p
     
 ## <a name="get-help"></a>Obtener ayuda
 
-Si está migrando a Microsoft 365, puede ser elegible para usar nuestro servicio De FastTrack de Microsoft. FastTrack proporciona procedimientos recomendados, herramientas y recursos para que la migración a Microsoft 365 sea lo más sencilla posible. Lo mejor de todo es que un ingeniero de soporte técnico le ayudará a través de la migración, desde la planeación y el diseño hasta la migración del último buzón. Para obtener más información sobre FastTrack, vea [Microsoft FastTrack](https://fasttrack.microsoft.com/).
+Si está migrando a Microsoft 365, puede ser elegible para usar nuestro servicio de FastTrack Microsoft. FastTrack proporciona procedimientos recomendados, herramientas y recursos para que la migración a Microsoft 365 sea lo más sencilla posible. Lo mejor de todo es que un ingeniero de soporte técnico le ayudará a través de la migración, desde la planeación y el diseño hasta la migración del último buzón. Para obtener más información FastTrack, vea [Microsoft FastTrack](https://fasttrack.microsoft.com/).
   
-Si tiene problemas durante la migración a Microsoft 365 y no está usando FastTrack o la migración a una versión más reciente de Exchange Server, estamos aquí para ayudarle. Estos son algunos recursos que puede usar:
+Si se encuentra con problemas durante la migración a Microsoft 365 y no está usando FastTrack o la migración a una versión más reciente de Exchange Server, estamos aquí para ayudarle. Estos son algunos recursos que puede usar:
   
 - [Comunidad de soporte técnico](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
     

@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Entienda cómo Contoso usa Microsoft Endpoint Configuration Manager para implementar Aplicaciones de Microsoft 365 para empresas.
 ms.openlocfilehash: 8e0a88c85a3a2af35a83c71e7eb385b9edbdde77
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218670"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Implementación de Aplicaciones de Microsoft 365 para empresas en Contoso
 
@@ -80,10 +80,10 @@ Esta es la arquitectura de implementación Aplicaciones Microsoft 365 para empre
 
 Obtenga información sobre cómo Contoso usa [Microsoft Intune](contoso-mdm.md) en Microsoft 365 empresa para administrar sus dispositivos y las aplicaciones que ejecutan en toda la organización.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Aplicaciones de Microsoft 365 para empresas](/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

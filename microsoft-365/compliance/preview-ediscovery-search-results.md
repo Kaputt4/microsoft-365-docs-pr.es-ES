@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Obtenga una vista previa de un ejemplo de los resultados devueltos por una búsqueda de contenido o una búsqueda de eDiscovery Core en el Centro de cumplimiento de Microsoft 365.
 ms.openlocfilehash: ac9929ee8639c4d653f8e9dfe680a5df5c6c3a7d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216607"
 ---
 # <a name="preview-ediscovery-search-results"></a>Vista previa de los resultados de búsqueda de eDiscovery
 

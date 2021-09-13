@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtenga información sobre cómo conectarse a los datos del espacio empresarial Microsoft 365 Government Community Cloud (GCC) mediante la aplicación de plantilla Microsoft 365 análisis de uso en Power BI.
 ms.openlocfilehash: 2a0ea6985b9f9d09498e4ad086bf89f529b24c17
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567161"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219460"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Conectar para Microsoft 365 Government Community Cloud datos (GCC) con Análisis de uso
 

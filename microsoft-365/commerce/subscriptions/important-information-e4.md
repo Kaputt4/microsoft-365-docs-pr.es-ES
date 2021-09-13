@@ -16,20 +16,21 @@ ms.collection:
 ms.custom:
 - customer-email
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: Información importante sobre cómo actualizar o cambiar planes para clientes con una Office 365 E4.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/14/2020
-ms.openlocfilehash: 7f0230272005519528952c88bb8a5426688c386677013aa58a7e46ad3a25ca2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b740c186c2f4b53043ecc8aa1fd5024d646069d0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856072"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193540"
 ---
 # <a name="important-information-for-office-365-e4-customers"></a>Información importante para Office 365 clientes de E4
 
-El Office 365 plan E4 se retiró en 2015. Como administrador Microsoft 365 global, recibirá actualizaciones de correo electrónico y verá publicaciones en el centro de mensajes (parte del [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339)) con información sobre cuándo debe tomar medidas.
+El Office 365 plan E4 se retiró en 2015. Como administrador global Microsoft 365, recibirá actualizaciones de correo electrónico y verá publicaciones en el centro de mensajes <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">(parte</a> del Centro de administración de Microsoft 365) con información sobre cuándo debe tomar medidas.
 
 ## <a name="compare-your-options-for-upgrading-or-changing-plans"></a>Comparar las opciones para actualizar o cambiar planes
 

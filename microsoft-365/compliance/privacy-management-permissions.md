@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo configurar los permisos de administración de privacidad y asignar usuarios a grupos de roles.
 ms.openlocfilehash: 6caf786a99e08c2f5c6abfd4c2dbabc438151d06
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216597"
 ---
 # <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>Establecer permisos de usuario y asignar roles en la administración de privacidad (versión preliminar)
 

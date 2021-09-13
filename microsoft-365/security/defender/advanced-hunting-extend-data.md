@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f0b5218ccfb17c4c3681628200bb42afbfd312cc9ec383f524e6721340da461a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f4b1399b77583e95b109575a9577d8b1af89e6ad
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220127"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Ampliar la cobertura de búsqueda avanzada con la configuración correcta
 
@@ -41,7 +41,7 @@ ms.locfileid: "53833296"
 ## <a name="advanced-security-auditing-on-windows-devices"></a>Auditoría de seguridad avanzada en Windows dispositivos
 Activa esta configuración de auditoría avanzada para asegurarte de obtener datos sobre actividades en tus dispositivos, incluida la administración de cuentas locales, la administración de grupos de seguridad local y la creación de servicios.
 
-| Datos | Description | Tabla de esquema | Cómo establecer la configuración |
+| Datos | Descripción | Tabla de esquema | Cómo establecer la configuración |
 | --- | --- | --- | --- |
 | Administración de cuentas | Eventos capturados como varios valores que indican la creación, eliminación y `ActionType` otras actividades relacionadas con la cuenta local | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Implementar una directiva de auditoría de seguridad avanzada: [Auditar administración de cuentas de usuario](/windows/security/threat-protection/auditing/audit-user-account-management)<br> - [Obtenga información sobre las directivas de auditoría de seguridad avanzada](/windows/security/threat-protection/auditing/advanced-security-auditing) |
 | Administración de grupos de seguridad | Eventos capturados como varios valores que indican la creación de grupos `ActionType` de seguridad locales y otras actividades de administración de grupos locales | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Implementar una directiva de auditoría de seguridad avanzada: [Auditar la administración de grupos de seguridad](/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [Obtenga información sobre las directivas de auditoría de seguridad avanzada](/windows/security/threat-protection/auditing/advanced-security-auditing) |

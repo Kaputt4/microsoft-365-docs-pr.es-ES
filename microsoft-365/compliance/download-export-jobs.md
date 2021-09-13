@@ -17,11 +17,11 @@ search.appverid:
 ms.custom: seo-marvel-mar2020
 description: Exporte documentos en un conjunto de revisión en una cuenta Azure Storage y, a continuación, use Explorador de Azure Storage para descargarlos en un equipo local.
 ms.openlocfilehash: 352bce7134f92a7f6759673f28d388aac4957d1c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218990"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exportar documentos en un conjunto de revisión a una Azure Storage cuenta
 

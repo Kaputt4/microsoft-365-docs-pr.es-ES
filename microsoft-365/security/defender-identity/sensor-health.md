@@ -8,11 +8,11 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
 ms.openlocfilehash: 9d57272626c6f6c5d0e44052522cb73b9b675fd8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569326"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218190"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Estado y configuración del sensor de Identidad de Microsoft Defender en Microsoft 365 Defender
 
@@ -85,6 +85,6 @@ En la **página** Sensores, puede agregar un nuevo sensor.
 
 1. Copie el paquete en el servidor o controlador de dominio dedicado en el que va a instalar el sensor Defender for Identity.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Administrar alertas de seguridad de Defender for Identity](manage-security-alerts.md)

@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Obtenga información sobre cómo agregar o quitar los miembros que pueden tener acceso a un caso al administrar un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: d4fbd3700a74da8975f46174405c73511d16af3b
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502044"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217030"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Agregar o quitar miembros de un caso
 

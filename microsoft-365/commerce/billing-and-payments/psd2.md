@@ -20,12 +20,12 @@ search.appverid: MET150
 description: A partir del 14 de septiembre de 2019, los bancos de los 31 países del Espacio Económico Europeo deben comprobar la identidad de la persona que realiza una compra en línea antes de poder procesar el pago".
 keywords: directiva 2 de servicios de pago, autenticación segura de clientes, autenticación multifactor
 ms.date: 11/03/2020
-ms.openlocfilehash: eda3a962b638579001482c86307d8330f30882e50893904850ba6651a2acd1f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bbbbe9f53c11fcae9c35cda1fd4e7d4b51a9c767
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906660"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219147"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Directiva 2 de servicios de pago y autenticación segura de clientes para clientes comerciales
 

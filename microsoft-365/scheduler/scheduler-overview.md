@@ -9,11 +9,11 @@ ms.service: scheduler
 localization_priority: Normal
 description: Información general del programador para Microsoft 365.
 ms.openlocfilehash: 0b87555075bd9ac147579156897f545fbfe33020
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218440"
 ---
 # <a name="welcome-to-scheduler-for-microsoft-365"></a>Bienvenido al Programador para Microsoft 365
 

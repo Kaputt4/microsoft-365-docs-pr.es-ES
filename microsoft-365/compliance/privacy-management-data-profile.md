@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre la información general y el perfil de datos en la administración de privacidad y cómo obtener información sobre los datos personales en el entorno Microsoft 365 organización.
 ms.openlocfilehash: 4007fa1c55857211c3cf188a089f8e6d246153ae
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58744958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216600"
 ---
 # <a name="find-and-visualize-personal-data-in-privacy-management-preview"></a>Buscar y visualizar datos personales en la administración de privacidad (versión preliminar)
 

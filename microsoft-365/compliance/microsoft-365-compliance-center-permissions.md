@@ -12,11 +12,11 @@ localization_priority: Normal
 description: Obtenga información sobre la administración de permisos en el Centro de cumplimiento de Microsoft 365.
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 717b8cd312aad805107536b174b3a9cd58e72a55
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570094"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216790"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Permisos en el Centro de cumplimiento de Microsoft 365
 
@@ -34,7 +34,7 @@ Un rol concede permisos para realizar un conjunto de tareas; por ejemplo, el rol
 
 Un grupo de roles es un conjunto de roles que permiten a los usuarios realizar su trabajo en las soluciones de cumplimiento del Centro de cumplimiento de Microsoft 365. Por ejemplo, al agregar usuarios al grupo de roles De administración de riesgos de *Insider,* los administradores, analistas, investigadores y auditores designados se configuran para los permisos de administración de riesgos insider necesarios en un solo grupo. El Centro de cumplimiento de Microsoft 365 incluye grupos de roles predeterminados para tareas y funciones para cada solución de cumplimiento a la que deberá asignar personas. Por lo general, se recomienda simplemente agregar usuarios individuales como miembros a los grupos de roles de cumplimiento predeterminados según sea necesario.
 
-![Diagrama que muestra la relación de los grupos de roles con roles y miembros.](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagrama que muestra la relación de los grupos de roles con los roles y miembros.](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## <a name="permissions-needed-to-use-features-in-the-microsoft-365-compliance-center"></a>Permisos necesarios para usar características en el Centro de cumplimiento de Microsoft 365
 

@@ -19,11 +19,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar Advanced eDiscovery enviar y hacer un seguimiento de las notificaciones de retención legal a través del correo electrónico, así como supervisar el estado de las obligaciones.
 ms.openlocfilehash: 43c2474bdc485a87c30d1fa2a31c3d008d2a383e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217080"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confirmar una notificación de retención
 

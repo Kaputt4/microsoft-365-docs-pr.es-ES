@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Cómo activar o desactivar la característica de búsqueda de registro de auditoría en el Centro de cumplimiento de Microsoft 365 para habilitar o deshabilitar la capacidad de los administradores de buscar en el registro de auditoría.
-ms.openlocfilehash: 793c76d45f2cd7aed43a959dfcb94edeb9869310
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2c9331534035d0f0cf23a2dbec09f338a6f6a32b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216280"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activar o desactivar la auditoría
 
@@ -110,3 +110,29 @@ Debe usar powershell Exchange Online para desactivar la auditoría.
     - Vaya a la **página Auditoría** de la Centro de cumplimiento de Microsoft 365.
 
       Si la auditoría no está activada para su organización, se muestra un banner que le pedirá que comience a grabar la actividad de usuario y administrador.
+
+## <a name="audit-records-when-auditing-status-is-changed"></a>Registros de auditoría cuando se cambia el estado de auditoría
+
+Los cambios en el estado de auditoría de la organización se auditan a sí mismos. Esto significa que los registros de auditoría se registran cuando la auditoría está activada o desactivada. Puede buscar en el Exchange de auditoría de administración de estos registros de auditoría.
+
+Para buscar en el Exchange de auditoría del administrador los registros de auditoría que se generan al activar o desactivar la auditoría, ejecute el siguiente comando en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+
+```powershell
+Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
+```
+
+Los registros de auditoría de estos eventos contienen información sobre cuándo se cambió el estado de auditoría, el administrador que lo cambió y la dirección IP del equipo que se usó para realizar el cambio. Las capturas de pantalla siguientes muestran registros de auditoría que corresponden a cambiar el estado de auditoría de la organización.
+
+### <a name="audit-record-for-turning-on-auditing"></a>Registro de auditoría para activar la auditoría
+
+![Registro de auditoría para activar la auditoría](../media/AuditStatusAuditingEnabled.png)
+
+El valor de en la propiedad CmdletParameters indica que el registro de auditoría unificado se ha activado en el centro de cumplimiento o ejecutando el `Confirm` cmdlet **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true.** 
+
+### <a name="audit-record-for-turning-off-auditing"></a>Registro de auditoría para desactivar la auditoría
+
+![Registro de auditoría para desactivar la auditoría](../media/AuditStatusAuditingDisabled.png)
+
+El valor de `Confirm` no se incluye en la propiedad *CmdletParameters.* Esto indica que el registro de auditoría unificado se ha desactivado ejecutando el comando **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false.**
+
+Para obtener más información acerca de la búsqueda Exchange registro de auditoría de administración, vea [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).

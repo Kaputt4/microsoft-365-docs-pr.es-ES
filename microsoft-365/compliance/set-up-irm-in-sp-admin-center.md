@@ -19,11 +19,11 @@ ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Obtenga información sobre cómo usar SharePoint Online IRM a través de Microsoft Azure Active Directory Rights Management Services (RMS) para proteger SharePoint listas y bibliotecas de documentos.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 32424165be24614a43f44d78791ffac334969bed
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565387"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216367"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Configurar Information Rights Management (IRM) en el Centro de administración de SharePoint
 
@@ -71,7 +71,7 @@ SharePoint Online admite el cifrado de los siguientes tipos de archivo:
 > [!NOTE]
 > La protección IRM no se puede aplicar a documentos protegidos (como archivos PDF firmados digitalmente), ya que SharePoint debe abrir el documento al cargarlo. 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 <a name="__toc220831191"> </a>
 
 Una vez que haya habilitado IRM para SharePoint Online, puede empezar a aplicar la administración de derechos a listas y bibliotecas. Para obtener información, [vea Apply Information Rights Management to a list or library](apply-irm-to-a-list-or-library.md).

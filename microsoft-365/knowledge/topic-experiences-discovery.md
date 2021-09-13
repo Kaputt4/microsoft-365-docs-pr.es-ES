@@ -11,11 +11,11 @@ search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo administrar la detección de temas en Temas Microsoft Viva.
 ms.openlocfilehash: 2316df8df7a1d8fb2b8e0951e12810398bcb2e40
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575569"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218467"
 ---
 # <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>Administrar la detección de temas en Temas Microsoft Viva
 
@@ -86,7 +86,7 @@ En la plantilla CSV, introduzca la siguiente información sobre los temas que de
 
     ![Excluir temas de la plantilla CSV.](../media/exclude-topics-csv.png) 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar la visibilidad del tema en Microsoft 365](topic-experiences-knowledge-rules.md)
 

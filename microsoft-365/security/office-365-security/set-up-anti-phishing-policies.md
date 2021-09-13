@@ -18,11 +18,11 @@ description: Los administradores pueden obtener información sobre las directiva
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: b0b7e93c59484bb3f7b1e34d33dd3ee7a19f7634
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574525"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217947"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -56,7 +56,7 @@ Las diferencias de alto nivel entre las directivas contra suplantación de ident
 |Configuración de suplantación|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
 |Primer contacto consejo de seguridad|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
 |Configuración de suplantación||![Marca de verificación](../../media/checkmark.png)|
-|Umbrales de suplantación de identidad avanzada||![Marca de verificación](../../media/checkmark.png)|
+|Umbrales avanzados de phishing||![Marca de verificación](../../media/checkmark.png)|
 |
 
 <sup>\*</sup> En la directiva predeterminada, el nombre de la directiva y la descripción son de solo lectura (la descripción está en blanco) y no puede especificar a quién se aplica la directiva (la directiva predeterminada se aplica a todos los destinatarios).
@@ -114,7 +114,7 @@ La siguiente configuración de suplantación de identidad está disponible en la
 - **Notificaciones de remitente no autenticadas:** estas notificaciones solo están disponibles cuando la inteligencia de suplantación de identidad está activada. Vea la información en la sección siguiente.
 - **Acciones:** para los mensajes de remitentes suplantados bloqueados (bloqueados automáticamente por la inteligencia de suplantación de identidad o bloqueados manualmente en la lista Permitir/Bloquear inquilino), también puede especificar la acción que debe realizar en los mensajes:
   - **Mover mensajes a las carpetas de correo no** deseado de los destinatarios: este es el valor predeterminado. El mensaje se entrega en el buzón y se mueve a la carpeta Correo no deseado. En Exchange Online, el mensaje se mueve a la carpeta Correo no deseado si la regla de correo no deseado está habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, vea [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
-  - **Poner en cuarentena el mensaje:** envía el mensaje a la cuarentena en lugar de los destinatarios previstos. Para obtener información acerca de la cuarentena, vea los artículos siguientes:
+  - **Poner en cuarentena el mensaje:** envía el mensaje a la cuarentena en lugar de los destinatarios previstos. Para más información acerca de la cuarentena, consulte los siguientes artículos:
     - [Cuarentena en Microsoft 365](quarantine-email-messages.md)
     - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
@@ -195,7 +195,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
   - **No aplicar ninguna acción**
   - **Redirigir el mensaje a otras direcciones de correo** electrónico: envía el mensaje a los destinatarios especificados en lugar de a los destinatarios previstos.
   - **Mover mensajes a las carpetas** de correo no deseado de los destinatarios: el mensaje se entrega en el buzón y se mueve a la carpeta correo no deseado. En Exchange Online, el mensaje se mueve a la carpeta Correo no deseado si la regla de correo no deseado está habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, vea [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
-  - **Poner en cuarentena el mensaje:** envía el mensaje a la cuarentena en lugar de los destinatarios previstos. Para obtener información acerca de la cuarentena, vea los artículos siguientes:
+  - **Poner en cuarentena el mensaje:** envía el mensaje a la cuarentena en lugar de los destinatarios previstos. Para más información acerca de la cuarentena, consulte los siguientes artículos:
     - [Cuarentena en Microsoft 365](quarantine-email-messages.md)
     - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)

@@ -16,11 +16,11 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.openlocfilehash: 33d32918316b997b2cc97d63dac8c8deff135528
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570814"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216840"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Obtenga información sobre la administración de riesgos de insider en Microsoft 365
 
@@ -95,7 +95,7 @@ Puede seleccionar entre las siguientes plantillas de directiva para empezar ráp
 Las alertas se generan automáticamente mediante indicadores de riesgo que coinciden con las condiciones de la directiva y se muestran en el panel [Alertas.](insider-risk-management-activities.md#alert-dashboard) Este panel ofrece una vista rápida de todas las alertas que se deben revisar, alertas abiertas a lo largo del tiempo y estadísticas de alertas de la organización. Todas las alertas de directiva se muestran con la siguiente información para ayudarle a identificar rápidamente el estado de las alertas existentes y las alertas nuevas que necesitan acción:
 
 - Estado
-- Gravedad
+- Severity
 - Tiempo detectado
 - Case
 - Estado del caso

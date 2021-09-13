@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
-ms.openlocfilehash: 5dba275d274ebc97ec934f6b43d8a913b80c8d84
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 50f61fb86c2458e6471c0b2002c15f4a8b1cabe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589439"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216210"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -215,7 +215,7 @@ Actualmente, Outlook 2013 y versiones posteriores admite mostrar sugerencias de 
 - El contenido contiene
 - El contenido se comparte
 
-Tenga en cuenta que las excepciones se consideran condiciones y todas estas condiciones funcionan en Outlook, donde coincidirán con el contenido y aplicarán acciones de protección en el contenido. Pero aún no se admite mostrar sugerencias de directiva a los usuarios.
+Tenga en cuenta que las excepciones se consideran condiciones y todas estas condiciones funcionan en Outlook, donde coincidirán con el contenido y aplicarán acciones de protección en el contenido. Pero aún no se admite mostrar sugerencias de directiva a los usuarios. Además, Outlook no admite mostrar sugerencias de directiva para una directiva DLP que se aplica a un grupo de distribución dinámico.
 
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Sugerencias de directiva en el Centro Exchange administración frente al Centro de &amp; cumplimiento de seguridad
 

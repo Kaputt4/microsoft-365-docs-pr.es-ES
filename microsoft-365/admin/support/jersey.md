@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9ea3bc236136d7dde8c6b94f7ba109de47f2dac3cfff906a8475f4f675592f6e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e5a5fbe05515f86869b7d14e6e4860e5e2c641d0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217420"
 ---
 # <a name="contact-support-for-jersey"></a>Póngase en contacto con el soporte técnico para Jersey
 

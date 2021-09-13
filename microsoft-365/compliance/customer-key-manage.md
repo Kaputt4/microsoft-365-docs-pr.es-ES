@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Después de configurar la clave de cliente, aprenda a administrarla restaurando claves AKV y administrando permisos y creando y asignando directivas de cifrado de datos.
-ms.openlocfilehash: cbfc93413aa7abfb37c201b8446050b1242461ac
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 7fc985aaaf0cf0222a6cd02063207b2b1709ac25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216887"
 ---
 # <a name="manage-customer-key"></a>Administrar clave de cliente
 
@@ -224,7 +224,7 @@ El cmdlet New-MoveRequest ya no está disponible para los movimientos de buzones
 Compruebe el estado del cifrado ejecutando el cmdlet Get-SPODataEncryptionPolicy de la siguiente manera:
 
 ```PowerShell
-   Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
+   Get-SPODataEncryptionPolicy <SPOAdminSiteUrl>
 ```
 
 El resultado de este cmdlet incluye:
@@ -242,6 +242,8 @@ El resultado de este cmdlet incluye:
   - **Registrado:** Se ha aplicado el cifrado de clave de cliente y se han cifrado todos los archivos de todos los sitios.
 
   - **Rolling:** Hay un lanzamiento de teclas en curso. Si la clave de la geo se está implementando, también se mostrará información sobre el porcentaje de sitios que han completado la operación de lanzamiento de teclas para poder supervisar el progreso.
+
+- También dará como resultado el porcentaje de sitios incorporados.
 
 ## <a name="get-details-about-deps-you-use-with-multiple-workloads"></a>Obtener detalles sobre los DEP que usa con varias cargas de trabajo
 

@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: ae54134f681568a193b7a99c166aa025d6358eec
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218197"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Piloto de Microsoft Defender para identidad
 
@@ -66,7 +66,7 @@ Pruebe los tutoriales de Defender for Identity:
 - [Investigar rutas de movimiento lateral](/defender-for-identity/investigate-lateral-movement-path)
 - [Investigar entidades](/defender-for-identity/investigate-entity)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Evaluar Microsoft Defender para Office 365](eval-defender-office-365-overview.md)
 

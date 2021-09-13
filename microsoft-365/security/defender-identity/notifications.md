@@ -8,11 +8,11 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
 ms.openlocfilehash: b4c499392bf9c48d704b1a0a960d9d92d097bd05
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570454"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218200"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Notificaciones de Defender for Identity en Microsoft 365 Defender
 
@@ -88,12 +88,12 @@ Defender for Identity puede notificarte cuando detecta actividades sospechosas e
 
 1. Seleccione **Enviar notificación SIEM de prueba** y compruebe que el mensaje se recibe en la solución de infraestructura de Syslog.
 
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 
 1. Una vez configurado el servicio **de Syslog,** puede elegir qué tipos de notificaciones (alertas o problemas de estado) deben enviarse al servidor de Syslog.
 
     ![Servicio de Syslog configurado.](../../media/defender-identity/syslog-configured.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Administrar alertas de seguridad de Defender for Identity](manage-security-alerts.md)

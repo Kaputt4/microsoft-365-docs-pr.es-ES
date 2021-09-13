@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 description: Microsoft 365 ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido encontrado en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, grupos de Microsoft 365, conversaciones de Microsoft Teams y Skype Empresarial. La exhibición de documentos electrónicos Advanced eDiscovery proporciona muchas características adicionales que le ayudarán a administrar las investigaciones.
 ms.openlocfilehash: d44c0b30bc6256f98063f33d838d2cabb6ceebf1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570574"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218960"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Soluciones de exhibición de documentos electrónicos en Microsoft 365
 
@@ -174,6 +174,6 @@ Consulte los siguientes artículos para obtener más información y empezar a us
 
 Para ver qué características de exhibición de documentos electrónicos se han iniciado, están implementando o en desarrollo, vea el [Microsoft 365 guía básica](https://aka.ms/eDiscoRoadMap).
 
-## <a name="training"></a>Formación
+## <a name="training"></a>Aprendizaje
 
 La formación de los administradores de TI, los administradores de exhibición de documentos electrónicos y los equipos de investigación de cumplimiento en los conceptos básicos para la búsqueda de contenido, la exhibición de documentos electrónicos principal y Advanced eDiscovery pueden ayudar a su organización a empezar a usar más rápidamente Microsoft 365 herramientas de exhibición de documentos electrónicos. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de la organización a empezar con la exhibición de documentos electrónicos: Describir las capacidades de [eDiscovery y auditoría](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)de Microsoft 365 .

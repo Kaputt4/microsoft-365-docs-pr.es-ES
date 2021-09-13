@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: Obtenga información Microsoft 365 suscripción adecuada para su organización.
 ms.openlocfilehash: 2c269ff7dc620da0c638f2c82a836ae9b0406780
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219380"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Elegir una Microsoft 365 suscripción
 

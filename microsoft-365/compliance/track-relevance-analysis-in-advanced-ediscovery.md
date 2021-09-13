@@ -18,11 +18,11 @@ ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo ver e interpretar el estado de aprendizaje de relevancia y los resultados de los problemas de casos en Advanced eDiscovery.
 ms.openlocfilehash: ac575ebf073afa8eb4ba13e63202f8b634c52f60
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573204"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216340"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery"></a>Realizar un seguimiento del análisis de relevancia en Advanced eDiscovery
   

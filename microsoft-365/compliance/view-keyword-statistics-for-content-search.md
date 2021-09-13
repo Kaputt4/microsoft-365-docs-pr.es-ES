@@ -17,11 +17,11 @@ search.appverid:
 description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar estadísticas de búsquedas de contenido y búsquedas asociadas con un caso de exhibición de documentos electrónicos principales en el Centro de cumplimiento de Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 7f9948a5ae194a475f5bdcf319aa48fa32cc282f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216177"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Ver estadísticas de resultados de búsqueda de exhibición de documentos electrónicos
 

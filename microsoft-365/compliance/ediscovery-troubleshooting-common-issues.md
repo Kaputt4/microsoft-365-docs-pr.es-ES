@@ -20,11 +20,11 @@ description: Obtenga información sobre los pasos básicos de solución de probl
 siblings_only: true
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d71091b4c3545880b103b8d4a4111b3c63d35506
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218967"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar y resolver problemas comunes de exhibición de documentos electrónicos
 

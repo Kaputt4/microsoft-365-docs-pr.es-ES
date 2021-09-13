@@ -18,11 +18,11 @@ ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 ROBOTS: NOINDEX, NOFOLLOW
 description: Revise los pasos para realizar el aprendizaje de evaluación, incluidos los archivos de etiquetado, y revise los resultados de la evaluación en Advanced eDiscovery.
 ms.openlocfilehash: 539d4e8f28aa8e4e3ab98807c5019711edbdcc4f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216360"
 ---
 # <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Etiquetado y evaluación en el módulo Relevancia en Advanced eDiscovery
   

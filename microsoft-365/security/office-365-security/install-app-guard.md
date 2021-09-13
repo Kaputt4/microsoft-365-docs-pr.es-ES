@@ -17,11 +17,11 @@ description: Obtenga lo último en aislamiento basado en hardware. Evite que ata
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f734a4ee22984bdc716a9897624f21396c8b7c1d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58558871"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218027"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protección de aplicaciones para Office para administradores
 
@@ -125,7 +125,7 @@ Office las siguientes directivas para permitirle configurar las capacidades de A
 > [!NOTE]
 > La configuración de estas directivas puede deshabilitar algunas funcionalidades de los archivos abiertos en Application Guard para Office.
 
-|Directiva|Descripción|
+|Directiva|Description|
 |---|---|
 |No use Application Guard para Office|Habilitar esta directiva forzará a Word, Excel y PowerPoint a usar el contenedor de aislamiento vista protegida en lugar de Application Guard para Office. Esta directiva se puede usar para deshabilitar temporalmente la Protección de aplicaciones Office cuando haya problemas al dejarla habilitada para Microsoft Edge.|
 |Configurar Application Guard para la Office anterior a la creación del contenedor|Esta directiva determina si el contenedor de protección de aplicaciones Office, para aislar archivos que no son de confianza, está creado previamente para mejorar el rendimiento en tiempo de ejecución. Si habilita esta configuración, puede especificar el número de días para continuar creando previamente un contenedor o permitir que el Office heurístico integrado cree previamente el contenedor.

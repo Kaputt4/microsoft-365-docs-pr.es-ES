@@ -16,12 +16,12 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 413f003150b41cea0fb63e4ecd486b7ea230d1a06c2a0d4890deb8b7c209dfcc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f6018ec8b514234ab4f98e3d5416b472ff88739
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218267"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>Programar los exámenes de antivirus con la directiva de grupo
 
@@ -48,7 +48,7 @@ En este artículo se describe cómo configurar exámenes programados mediante la
 
 ## <a name="group-policy-settings-for-scheduling-scans"></a>Configuración de directiva de grupo para la programación de exámenes
 
-| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
+| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 | Examinar | Especificar el tipo de examen que se usará para un examen programado | Examen rápido |
 | Examinar | Especificar el día de la semana para ejecutar un examen programado | Especifique el día (o nunca) para ejecutar un examen. | Nunca |
@@ -57,7 +57,7 @@ En este artículo se describe cómo configurar exámenes programados mediante la
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>Configuración de directiva de grupo para la programación de exámenes cuando un extremo no está en uso
 
-| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
+| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 | Examinar | Iniciar el examen programado solo cuando el equipo está en uso pero no está en uso | Los exámenes programados no se ejecutarán, a menos que el equipo esté en uso pero no esté en uso | Habilitado |
 
@@ -66,21 +66,21 @@ En este artículo se describe cómo configurar exámenes programados mediante la
 
 ## <a name="group-policy-settings-for-scheduling-remediation-required-scans"></a>Configuración de directiva de grupo para programar exámenes necesarios para la corrección
 
-| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
+| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
 |---|---|---|---|
 | Corrección | Especificar el día de la semana para ejecutar un examen completo programado para completar la corrección | Especifique el día (o nunca) para ejecutar un examen. | Nunca |
 | Corrección | Especificar la hora del día para ejecutar un examen completo programado para completar la corrección | Especifique el número de minutos después de la medianoche (por ejemplo, escriba **60** para la 1 a.m.) | 2 a. m. |
 
 ## <a name="group-policy-settings-for-scheduling-daily-scans"></a>Configuración de directiva de grupo para programar exámenes diarios
 
-| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
+| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 | Examinar | Especificar el intervalo para ejecutar exámenes rápidos por día | Especifique cuántas horas debe transcurrir antes del siguiente examen rápido. Por ejemplo, para ejecutarse cada dos horas, escriba **2**, para una vez al día, escriba **24**. Escriba **0** para nunca ejecutar un examen rápido diario. | Nunca |
 | Examinar | Especificar la hora de un examen rápido diario | Especifique el número de minutos después de la medianoche (por ejemplo, escriba **60** para la 1 a.m.) | 2 a. m. |
 
 ## <a name="group-policy-settings-for-scheduling-scans-after-protection-updates"></a>Configuración de directiva de grupo para programar exámenes después de actualizaciones de protección
 
-| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada)|
+| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada)|
 |:---|:---|:---|:---|
 | Actualizaciones de firmas | Activar el examen después de la actualización de inteligencia de seguridad | Un examen se realizará inmediatamente después de descargar una nueva actualización de protección | Habilitado |
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: En este artículo, aprenderá acerca de los riesgos para los Office 365 y las tecnologías de cifrado disponibles para la protección.
-ms.openlocfilehash: bb82e1379219fc1dbf14fcd27e4fed59fbcf2c7ac6dd24c418ab7c68c437deba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6bb0e705095b4f31c730a21921985131785dc3f0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855820"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216697"
 ---
 # <a name="encryption-risks-and-protections"></a>Riesgos y protección de cifrado
 

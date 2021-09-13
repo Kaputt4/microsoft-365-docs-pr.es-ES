@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 1227d95469d57921af9f0b97e7adc2a6a49e5573
-ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
+ms.openlocfilehash: 972b5a628f434bdfb989191cf5fcd8ca9bfcc2d0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58923947"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219057"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -273,6 +273,10 @@ Las opciones de contexto disponibles cambian según la ubicación que elija. Si 
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
+- El remitente es (versión preliminar)
+- El dominio del remitente es (versión preliminar)
+- El dominio de destinatario es (versión preliminar)
+- Recipient es (versión preliminar)
 
 ##### <a name="conditions-devices-supports"></a>Condiciones Compatibles con dispositivos
 

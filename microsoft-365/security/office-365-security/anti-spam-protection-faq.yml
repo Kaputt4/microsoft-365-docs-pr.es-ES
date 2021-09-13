@@ -20,12 +20,12 @@ metadata:
   description: Los administradores pueden ver preguntas y respuestas más frecuentes sobre la protección contra correo no deseado en Exchange Online Protection (EOP).
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 1643e94de99b06cee9ea55e03bc6bc12fefa1de9bc4c1fc9f08f0c655315019b
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: b15e7409c275810a9d5e70d1376a9c3accd07ab9
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "56878264"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59218097"
 title: Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -51,7 +51,7 @@ summary: >
 
   Para obtener preguntas y respuestas acerca de la protección contra la suplantación, vea Preguntas más frecuentes sobre la protección contra la [suplantación de seguridad](anti-spoofing-protection-faq.yml).
 sections:
-- name: Omitidas
+- name: Ignorado
   questions:
   - question: >
       De forma predeterminada, ¿qué sucede con un mensaje detectado por correo no deseado?
@@ -82,7 +82,7 @@ sections:
       Para obtener más información, consulte los siguientes temas:
 
 
-      [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md)
+      [Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365](recommended-settings-for-eop-and-office365.md)
 
 
       [Configurar el filtrado de conexiones en EOP](configure-the-connection-filter-policy.md)

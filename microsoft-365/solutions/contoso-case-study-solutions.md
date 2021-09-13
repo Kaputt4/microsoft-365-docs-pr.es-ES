@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia, aunque representativa, ha implementado soluciones de Microsoft 365.
-ms.openlocfilehash: 88360580ddebbaa597d7fbfd138c9a310486ef434e2f8d8dad14a9a583ea0fb7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3112dc452ff03fbd661ffff80b6b25b1f38f8a66
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883568"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219727"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Soluciones de Microsoft 365 para Contoso Corporation
 

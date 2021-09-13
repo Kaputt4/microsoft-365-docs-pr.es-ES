@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 591a98e07f47717f0475c88584a161c93198c084
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218177"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>Revise los requisitos de arquitectura y los conceptos clave para Microsoft Cloud App Security
 
@@ -58,7 +58,7 @@ El primer paso para administrar el uso de aplicaciones en la nube es descubrir q
 ![Arquitectura para Microsoft Cloud App Security: detección en la nube.](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 En esta ilustración, hay dos métodos que se pueden usar para supervisar el tráfico de red y detectar las aplicaciones en la nube que está utilizando la organización.
-- R. Cloud App Discovery se integra con Microsoft Defender para Endpoint de forma nativa. Defender para endpoint informa de los servicios y aplicaciones en la nube a los que se accede desde dispositivos Windows 10 ti. 
+- A. Cloud App Discovery se integra con Microsoft Defender para Endpoint de forma nativa. Defender para endpoint informa de los servicios y aplicaciones en la nube a los que se accede desde dispositivos Windows 10 ti. 
 - B. Para la cobertura en todos los dispositivos conectados a una red, el recopilador de registros Cloud App Security se instala en firewalls y otros servidores proxy para recopilar datos de puntos de conexión. Estos datos se envían a Cloud App Security para su análisis.
 
 #### <a name="managing-cloud-apps"></a>Administración de aplicaciones en la nube
@@ -146,7 +146,7 @@ Además, Azure Sentinel incluye un conector Microsoft Cloud App Security para pr
 - [Integración de SIEM genérica](/cloud-app-security/siem)
 - [Transmitir alertas y registros de detección en la nube desde MCAS a Azure Sentinel](/azure/sentinel/connect-cloud-app-security)
 
-### <a name="next-steps"></a>Pasos siguientes
+### <a name="next-steps"></a>Siguientes pasos
 
 Paso 2 de 3: [Habilitar el entorno de evaluación para Microsoft Cloud App Security](eval-defender-mcas-enable-eval.md)
 

@@ -18,11 +18,11 @@ description: Los administradores pueden aprender a usar la directiva de entrega 
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 8d10c4df273cfcff39bf93fa6532b57c4f8ef640
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884677"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219850"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 

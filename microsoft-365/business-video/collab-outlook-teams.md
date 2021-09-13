@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar Outlook y Microsoft Teams para colaborar.
-ms.openlocfilehash: cbbf5af50dce48746c2781321919cd54e7651684f62b5d891c9251e8f34af44f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dc0eaf1b47796becf62222fb93ccd071cc197a1c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906952"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219367"
 ---
 # <a name="use-outlook-and-teams-together"></a>Usar Outlook y Teams conjuntamente
 

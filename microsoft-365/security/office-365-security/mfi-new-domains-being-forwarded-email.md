@@ -13,11 +13,11 @@ description: Los administradores pueden aprender a usar la información de corre
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 87af41d4c6fe1964510944f0ad06554056ce4f37
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217997"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nuevos dominios que se reenvía información de correo electrónico en el Centro de seguridad & cumplimiento
 

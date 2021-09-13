@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial como números de cuenta bancaria, tarjeta de crédito o seguridad social para identificar elementos confidenciales
-ms.openlocfilehash: 6c2f54900c3e08531a57501ff6eda8b2ccc14911
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5feb85bce941f295f58e88a0847d9c0ca04d8820
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574777"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216507"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -65,7 +65,7 @@ Obtenga más información sobre los niveles de confianza en este vídeo
 ### <a name="example-sensitive-information-type"></a>Tipo de información confidencial de ejemplo
 
 
-## <a name="argentina-national-identity-dni-number"></a>Número de identidad nacional (DNI) de Argentina
+#### <a name="argentina-national-identity-dni-number"></a>Número de identidad nacional (DNI) de Argentina
 
 ### <a name="format"></a>Formato
 
@@ -156,8 +156,12 @@ Para crear tipos de información confidencial personalizados en el Centro de seg
 
 > [!TIP]
 > Para detectar patrones que contengan caracteres chinos/japoneses y caracteres de un solo byte o para detectar patrones que contengan chino/japonés e inglés, defina dos variantes de la palabra clave o regex.
+> - Por ejemplo, para detectar una palabra clave como "机密的document", utilice dos variantes de la palabra clave; una con un espacio entre el texto japonés y el inglés y otra sin espacio entre el texto japonés y el inglés. Por lo tanto, las palabras clave que deben agregarse en el SIT deben ser "机密的document" y "机密的document". Del mismo modo, para detectar la frase "東京オリンピック2020", se deben utilizar dos variantes: "東京オリンピック 2020" y "東京オリンピック2020"".
 > 
-> Por ejemplo, para detectar una palabra clave como "机密的document", utilice dos variantes de la palabra clave; una con un espacio entre el texto japonés y el inglés y otra sin espacio entre el texto japonés y el inglés. Por lo tanto, las palabras clave que deben agregarse en el SIT deben ser "机密的document" y "机密的document". Del mismo modo, para detectar la frase "東京オリンピック2020", se deben utilizar dos variantes: "東京オリンピック 2020" y "東京オリンピック2020"".
+> Junto con los caracteres de doble byte chino/japonés, si la lista de palabras clave o frases también contiene palabras no chinas/japonesas también (como solo inglés), se recomienda crear dos diccionarios/listas de palabras clave. Una para palabras clave que contienen caracteres de byte chino/japonés/doble y otra solo para inglés. 
+> - Por ejemplo, si desea crear un diccionario o lista de palabras clave con tres frases "Extremadamente confidencial", "機密性 机密的 
+>     1. Extremadamente confidencial
+>     2. 機密性 la 机密的document y 机密的 documento
 > 
 > Al crear una regex que utilice un guión de doble byte o un punto de doble byte, asegúrese de escapar ambos caracteres como se escaparía un guión o un punto en una regex. A continuación le mostramos un ejemplo de regex a modo de referencia:
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}

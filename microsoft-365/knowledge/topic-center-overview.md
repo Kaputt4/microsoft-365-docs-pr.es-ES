@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: None
 description: Obtenga información sobre el centro de temas en Temas Microsoft Viva.
 ms.openlocfilehash: 5456ef27b23ff36cd1919274424c179f8ec3d683
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218490"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Introducción al centro de temas en Temas Microsoft Viva
 
@@ -84,6 +84,6 @@ Si tiene permisos crear y editar temas, puede:
 
 - [Crear nuevos temas:](create-a-topic.md)puede crear nuevos temas para los que no se encontraron a través de la detección, o si las herramientas de inteligencia artificial no encontraron suficiente evidencia para crear un tema.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar temas en el centro de temas](manage-topics.md)

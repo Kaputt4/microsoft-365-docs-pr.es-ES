@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ms.custom: Ent_TLGs
+ms.custom:
+- Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para crear y usar etiquetas de retención en documentos Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: b5cc84a4d8b73b9f7dc3f64934a18b549846ba17
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a39661da9436473da9e89330ff15d0a43d19db51
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218587"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Clasificación de datos para su Microsoft 365 entorno de prueba empresarial
 
@@ -50,7 +52,7 @@ Si desea configurar etiquetas de retención en una empresa simulada, siga las in
 
 En esta fase, cree las etiquetas de retención para los diferentes niveles de retención para SharePoint carpetas de documentos en línea:
 
-1. Inicie sesión en el [centro Microsoft 365 seguridad con](https://security.microsoft.com/homepage) su cuenta de administrador global.
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centro Microsoft 365 seguridad con</a> su cuenta de administrador global.
 1. En la **pestaña Inicio- Microsoft 365 seguridad** del explorador, seleccione **Etiquetas de** retención de  >  **clasificación.**
 1. Seleccione **Crear una etiqueta**.
 1. En el **panel Nombre de la etiqueta,** escriba Public **interno** en Nombre de la **etiqueta** y, a continuación, **seleccione Siguiente**.
@@ -108,10 +110,10 @@ A continuación, cree un nuevo documento en el sitio SensitiveFiles y cambie su 
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#information-protection) de protección de la información en el entorno de prueba.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

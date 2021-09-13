@@ -19,11 +19,11 @@ description: Los administradores pueden aprender a usar el analizador de configu
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 2b732922cf0a7d9f1d44a24d3b7b6f025f3c2a27
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573432"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219860"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365
 
@@ -47,9 +47,9 @@ El analizador de configuración analiza los siguientes tipos de directivas:
   - Las directivas contra suplantación de identidad en Microsoft Defender para Office 365, que incluyen:
     - La misma [configuración de suplantación](set-up-anti-phishing-policies.md#spoof-settings) de identidad que están disponibles en las directivas contra suplantación de identidad de EOP.
     - [Configuración de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-    - [Umbrales de suplantación de identidad avanzada](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [Caja fuerte de vínculos](set-up-safe-links-policies.md).
-  - [Caja fuerte de datos adjuntos](set-up-safe-attachments-policies.md).
+    - [Umbrales avanzados de phishing](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+  - [Directivas de vínculos seguros](set-up-safe-links-policies.md).
+  - [Directivas de datos adjuntos seguros](set-up-safe-attachments-policies.md).
 
 Los valores de configuración de directiva Estándar y Estricto que se usan como líneas base se describen en Configuración recomendada para EOP y [Microsoft Defender para Office 365 seguridad.](recommended-settings-for-eop-and-office365.md)
 
@@ -57,11 +57,11 @@ Los valores de configuración de directiva Estándar y Estricto que se usan como
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Analizador de configuración,** use <https://security.microsoft.com/configurationAnalyzer> .
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Debe tener asignados permisos en el portal de Microsoft 365 Defender para poder realizar los procedimientos descritos en este artículo:
   - Para usar el analizador de configuración **y** realizar actualizaciones de directivas de seguridad, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
-  - Para obtener acceso de solo lectura al analizador de configuración, debe ser miembro de los grupos de roles **Lector global** o **Lector de** seguridad.
+  - Para obtener acceso de solo lectura al analizador de configuración, debe ser miembro de los grupos de roles **Lector global** o **Lector de seguridad**.
 
   Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
@@ -98,12 +98,12 @@ Si no se muestra un tipo y un número de directiva, todas las directivas de ese 
 
 El resto de la pestaña es la tabla de opciones de configuración que deben subirse al nivel Protección estándar o estricta. La tabla contiene las siguientes columnas:
 
-- **Recomendaciones:** el valor de la configuración en el perfil de protección estándar o estricto.
+- **Recomendaciones:** el valor de la configuración en el perfil de protección Estándar o Estricta.
 - **Directiva:** nombre de la directiva afectada que contiene la configuración.
-- **Nombre de grupo o configuración de directiva:** el nombre de la configuración que requiere su atención.
+- **Nombre de configuración o grupo de directivas:** el nombre de la configuración que requiere su atención.
 - **Tipo de directiva:** Anti-spam, Anti-phishing, Anti-malware, Caja fuerte Links o Caja fuerte Attachments.
 - **Configuración actual:** el valor actual de la configuración.
-- **Last modified**: The date that the policy was last modified.
+- **Última modificación**: la fecha en que se modificó por última vez la directiva.
 - **Estado:** Normalmente, este valor **no se inicia**.
 
 ### <a name="change-a-policy-setting-to-the-recommended-value"></a>Cambiar una configuración de directiva al valor recomendado
@@ -124,19 +124,19 @@ Si selecciona una fila  y hace clic en Ver directiva, se le muestra el control d
 
 Después de actualizar la configuración automáticamente  o manualmente, haga clic en Actualizar para ver el número reducido de recomendaciones y la eliminación de la fila actualizada de los resultados.
 
-### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Ficha Historial y análisis de deriva de configuración en el analizador de configuración
+### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Pestaña análisis e historial de la deriva de configuración en el analizador de configuración
 
 Esta pestaña le permite realizar un seguimiento de los cambios realizados en las directivas de seguridad y cómo estos cambios se comparan con la configuración estándar o estricta. De forma predeterminada, se muestra la siguiente información:
 
 - **Última modificación**
 - **Modificado por**
-- **Nombre de configuración**
+- **Nombre de la configuración**
 - **Directiva:** nombre de la directiva afectada.
 - **Tipo**: Correo no deseado, Anti-phishing, Anti-malware, Caja fuerte Links o Caja fuerte Attachments.
 - **Cambio de configuración:** el valor antiguo y el nuevo valor de la configuración
 - **Deriva de** configuración: el valor **Aumentar** **o** disminuir que indica que la configuración aumentó o disminuyó la seguridad en comparación con la configuración estándar o estricta recomendada.
 
-Para filtrar los resultados, haga clic en **Filtrar**. En el **menú** desplegable Filtros que aparece, puede seleccionar entre los filtros siguientes:
+Para filtrar los resultados, haga clic en **Filtrar**. En el menú desplegable **Filtros** que aparece, puede seleccionar entre los filtros siguientes:
 
 - **Hora de** inicio y **hora de finalización** (fecha): puede volver hasta 90 días a partir de hoy.
 - **Protección estándar o** **protección estricta**

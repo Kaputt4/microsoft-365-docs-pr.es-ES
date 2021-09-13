@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Obtenga información sobre cómo reducir el tiempo de carga de SharePoint en línea mediante JavaScript para retrasar la carga de imágenes y JavaScript no esencial.
 ms.openlocfilehash: 7be256db8bce115b130322d1dd34131d845ef165
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218570"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Retrasar la carga de imágenes y JavaScript en SharePoint Online
 
@@ -121,7 +121,7 @@ Retrasar la carga de imágenes mediante JavaScript puede ser una técnica eficaz
 
 No se pierda el artículo y el ejemplo de código sobre la inyección [de JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) que se proporciona en GitHub.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Exploradores compatibles en Office 2013 y Aplicaciones Microsoft 365 para empresas](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   

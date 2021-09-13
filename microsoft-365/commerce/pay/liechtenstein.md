@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f75926615ee7bc52883e910aa07a958d5cc71b4dfdf4a81a3ed8722d0dea9789
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5bf6cad061818b0716f8b4b363c2cf32ce3631ea
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906452"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217220"
 ---
 # <a name="payment-information-for-liechtenstein"></a>Información de pago para Liechtenstein
 

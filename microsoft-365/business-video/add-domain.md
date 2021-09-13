@@ -16,18 +16,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Es posible que su organización necesite varios dominios para que los clientes puedan encontrarlo. Obtenga información sobre cómo agregar otro dominio a la suscripción.
-ms.openlocfilehash: c127abf899985bb23cc3a9906425d4d5408a4376fde3bc88a4c3bdda1277bace
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fb8af781f68cddd5780d27724134910a28db8bf2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219427"
 ---
 # <a name="add-another-domain"></a>Agregar otro dominio
 
@@ -37,7 +38,7 @@ Es posible que su empresa necesite varios nombres de dominio para fines diferent
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el Centro de administración de Microsoft 365, elija **Configurar**.
+1. En el Centro de administración de Microsoft 365, elija <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Configurar**</a>.
 1. En **Obtener la configuración del dominio personalizado,** seleccione **Ver**.
 1. Elija **Administrar** y, a **continuación, Agregar dominio**.
 1. Escriba el nuevo nombre de dominio que desea agregar y, a continuación, seleccione **Siguiente**.
@@ -49,7 +50,7 @@ Es posible que su empresa necesite varios nombres de dominio para fines diferent
 
 Para recibir correo electrónico en el nuevo dominio, deberá agregar un nuevo alias de correo electrónico para cada usuario:
 
-1. Seleccione **Usuarios**, **Usuarios activos** y, a continuación, seleccione el usuario al que se le asignará el nuevo alias.
+1. Seleccione **Usuarios**, <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Usuarios activos**</a>y, a continuación, seleccione el usuario al que se le asignará el nuevo alias.
 1. Elija **Administrar alias de correo** electrónico **y, a continuación, Agregar un alias**.
 1. Escriba el nombre de usuario y, a continuación, elija el nuevo dominio de la lista desplegable.
 1. Seleccione **Guardar cambios** y, a continuación, cierre la ventana.

@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Entender Contoso Corporation como un negocio y la estructura en niveles de sus oficinas en todo el mundo.
 ms.openlocfilehash: 87508d47e5124f55a0302ca305b0dbd9de07e841
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569470"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218660"
 ---
 # <a name="overview-of-contoso-corporation"></a>Información general sobre Contoso Corporation
 
@@ -73,8 +73,8 @@ Los arquitectos de TI de Contoso identificaron los siguientes factores de requis
 
 Obtenga información sobre la infraestructura de [TI](contoso-infra-needs.md) local de Contoso Corporation y cómo se abordan las necesidades empresariales de la empresa con Microsoft 365 empresa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

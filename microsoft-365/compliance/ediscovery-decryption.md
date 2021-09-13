@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft 365 herramientas de exhibición de documentos electrónicos administran documentos cifrados adjuntos a mensajes de correo electrónico y almacenados en SharePoint Online y OneDrive para la Empresa.
-ms.openlocfilehash: 7cdd06dd19299fb9e1127f55bc9bc845bb7c14e6
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.openlocfilehash: 0662b6a2bbedefc2dd996491171dc1abde49bb8e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218977"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos
 
@@ -38,7 +38,7 @@ Antes de esta nueva funcionalidad, solo se descifraba el contenido de un mensaje
 Las herramientas de exhibición de documentos electrónicos de Microsoft admiten elementos cifrados con tecnologías de cifrado de Microsoft. Estas tecnologías son Azure Rights Management y Microsoft Information Protection (específicamente etiquetas de confidencialidad). Para obtener más información acerca de las tecnologías de cifrado de Microsoft, vea [Encryption](encryption.md). El contenido cifrado por tecnologías de cifrado de terceros no es compatible. Por ejemplo, no se admite la vista previa o exportación de contenido cifrado con tecnologías que no son de Microsoft.
 
 > [!NOTE]
-> El descifrado de mensajes de correo electrónico cifrados Cifrado de mensajes de Office 365 (OME) no es compatible con las herramientas de exhibición de documentos electrónicos de Microsoft.
+> Las herramientas de exhibición de documentos electrónicos de Microsoft no admiten el descifrado de mensajes de correo electrónico enviados Cifrado de mensajes de Office 365 una plantilla de personalización de marca [personalizada (OME).](add-your-organization-brand-to-encrypted-messages.md) Al usar una plantilla de personalización de marca personalizada de OME, los mensajes de correo electrónico se entregan al portal de OME en lugar del buzón del destinatario. Por lo tanto, no podrá usar herramientas de exhibición de documentos electrónicos para buscar mensajes cifrados por OME porque el buzón del destinatario nunca los recibe.
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>Actividades de exhibición de documentos electrónicos que admiten elementos cifrados
 

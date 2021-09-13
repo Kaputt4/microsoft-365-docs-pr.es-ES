@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5e45a3269a31023d919f80a547a7236221edb353ba1944b0de193a3df2310caa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 18ed76f9bf777d6a9782dfb7fff75e1c5465123d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217107"
 ---
 # <a name="payment-information-for-virgin-islands-us"></a>Información de pago para Islas Vírgenes, EE. UU.
 

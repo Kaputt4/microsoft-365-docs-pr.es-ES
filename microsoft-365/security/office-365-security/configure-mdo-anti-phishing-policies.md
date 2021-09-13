@@ -16,11 +16,11 @@ description: Los administradores pueden aprender a crear, modificar y eliminar l
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 35f8ae19b0741153d6cad695059bd91aa6199aea
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566575"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219827"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -101,7 +101,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
    - **Grupos**: los grupos de distribución, los grupos de seguridad habilitados para correo electrónico o los Grupos de Microsoft 365 especificados de la organización.
    - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
-   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    Para los usuarios o grupos, puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, escriba un asterisco (\*) para ver todos los valores disponibles.
 
@@ -134,13 +134,13 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
        - **Remitentes internos:** haga clic ![ en Agregar icono interno.](../../media/m365-cc-sc-add-internal-icon.png) **Seleccione interno**. En el **control desplegable Agregar remitentes** internos que aparece, haga clic en el cuadro y seleccione un usuario interno de la lista. Puede filtrar la lista escribiendo el usuario y, a continuación, seleccionando el usuario en los resultados. Puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados.
 
-         Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+         Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
          Cuando haya terminado, haga clic en **Agregar**
 
        - **Remitentes externos:** haga clic ![ en Agregar icono externo.](../../media/m365-cc-sc-create-icon.png) **Seleccione externo**. En el control desplegable Agregar **remitentes externos** que  aparece, escriba un nombre para mostrar en el cuadro Agregar un nombre y una dirección de correo electrónico en el cuadro Agregar un correo electrónico vacío y, **a** continuación, haga clic en **Agregar**.
 
-         Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+         Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
          Cuando haya terminado, haga clic en **Agregar**
 
@@ -154,7 +154,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
        - **Incluir los dominios que tengo:** para activar esta configuración, active la casilla. Para ver los dominios que posee, haga clic **en Ver mis dominios**.
        - **Incluir dominios personalizados:** para activar esta configuración, active la casilla y, a continuación, haga clic en el vínculo Administrar **(nn)** dominios personalizados que aparece. En el control desplegable Administrar dominios **personalizados** para protección de suplantación que aparece, haga clic ![ en Agregar dominios.](../../media/m365-cc-sc-create-icon.png) **Agregar dominios**.
 
-         En **el** control desplegable Agregar dominios personalizados que aparece, haga clic en el cuadro Dominio, escriba un valor y, a continuación, presione Entrar o seleccione el valor que se muestra debajo del cuadro.  Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![ icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+         En **el** control desplegable Agregar dominios personalizados que aparece, haga clic en el cuadro Dominio, escriba un valor y, a continuación, presione Entrar o seleccione el valor que se muestra debajo del cuadro.  Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
          Cuando haya terminado, haga clic en **Agregar dominios**
 
@@ -172,7 +172,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
       - **Dominios:** seleccione la **pestaña Dominio** y haga clic en ![ Agregar dominios. ](../../media/m365-cc-sc-create-icon.png) .
 
-        En **el** control desplegable Agregar dominios de  confianza que aparece, haga clic en el cuadro Dominio, escriba un valor y, a continuación, presione Entrar o seleccione el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![ icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+        En **el** control desplegable Agregar dominios de  confianza que aparece, haga clic en el cuadro Dominio, escriba un valor y, a continuación, presione Entrar o seleccione el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
         Cuando haya terminado, haga clic en **Agregar**.
 
@@ -283,8 +283,8 @@ No puede deshabilitar la directiva contra suplantación de identidad predetermin
 2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre.
 
 3. En la parte superior del control flotante de detalles de la directiva que aparece, verá uno de los siguientes valores:
-   - **Directiva desactivada:** para activar la directiva, haga clic ![ en Activar icono.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar** .
-   - **Directiva en:** Para desactivar la directiva, haga clic ![ en Desactivar icono.](../../media/m365-cc-sc-turn-on-off-icon.png) **Desactivar**.
+   - **Directiva desactivada**: para activar la directiva, haga clic en ![icono Activar.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar** .
+   - **Directiva activada**: para desactivar la directiva, haga clic en el ![Icono Desactivar](../../media/m365-cc-sc-turn-on-off-icon.png) **Desactivar**.
 
 4. En el cuadro de diálogo de confirmación que aparece, haga clic **Activar** o **Desactivar**.
 
@@ -312,7 +312,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad
    - La directiva con el valor **de prioridad** más bajo (por ejemplo, **3**) solo tiene disponible **la opción Aumentar** prioridad.
    - Si tiene tres o más directivas, las directivas entre los valores de prioridad más alta y más baja tienen disponibles las opciones **Aumentar** prioridad y **Disminuir** prioridad.
 
-   Haga clic ![ en Aumentar icono de prioridad.](../../media/m365-cc-sc-increase-icon.png) **Aumentar prioridad o** ![ Disminuir icono de prioridad Disminuir la ](../../media/m365-cc-sc-decrease-icon.png) **prioridad** para cambiar el **valor de** prioridad.
+   Haga clic en el ![Icono Aumentar la prioridad.](../../media/m365-cc-sc-increase-icon.png) **Aumentar la prioridad** o en el ![Icono Disminuir la prioridad](../../media/m365-cc-sc-decrease-icon.png) **Reducir la prioridad** para cambiar el valor de **Prioridad**.
 
 4. Cuando haya terminado, haga clic en **Cerrar** en el control flotante de detalles de la directiva.
 
@@ -324,7 +324,7 @@ Cuando se usa el portal de Microsoft 365 Defender para quitar una directiva de a
 
 2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre de la directiva.
 
-3. En la parte superior del menú desplegable de detalles de la directiva que aparece, haga clic ![ en El icono Más acciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Eliminar icono de directiva ](../../media/m365-cc-sc-delete-icon.png) **Eliminar directiva**.
+3. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en ![icono Más acciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png)**Eliminar directiva**.
 
 4. En el cuadro de diálogo de confirmación que aparece, haga clic en **Sí**.
 

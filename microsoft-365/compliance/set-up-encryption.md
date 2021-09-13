@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: Con Office 365, algunas funcionalidades de cifrado están activadas de forma predeterminada; otras capacidades se pueden configurar para cumplir ciertos requisitos legales o de cumplimiento.
-ms.openlocfilehash: 3776c2598063129c42cfdcb47cd1d09d45eb7b1a9b190f7d3fc040305c242729
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a9a3170fdb99a4acfec8cf4d3b03ab9b584197bd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855484"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216387"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>Configurar el cifrado en Office 365 Enterprise
 

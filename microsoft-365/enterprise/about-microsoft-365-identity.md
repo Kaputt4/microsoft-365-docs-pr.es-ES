@@ -24,15 +24,15 @@ search.appverid:
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo administrar el servicio de identidad de usuario de Azure AD en Microsoft 365 modelos de identidad híbrida o solo en la nube.
 ms.openlocfilehash: 0e83d94c6c82df3f47989433cf20ebf402b265df
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572712"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218787"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 modelos de identidad y Azure Active Directory
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Microsoft 365 usa Azure Active Directory (Azure AD), un servicio de autenticación y identidad de usuario basado en la nube que se incluye con la suscripción Microsoft 365, para administrar identidades y autenticación para Microsoft 365. La configuración correcta de la infraestructura de identidad es fundamental para administrar Microsoft 365 acceso de usuario y permisos para la organización.
 
@@ -100,6 +100,6 @@ Si necesita el modelo de identidad solo en la nube, consulte [Cloud-only identit
 
 Si necesita el modelo de identidad híbrida, vea [Identidad híbrida](plan-for-directory-synchronization.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

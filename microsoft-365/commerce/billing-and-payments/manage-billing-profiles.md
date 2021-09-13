@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
 ms.date: 04/02/2021
-ms.openlocfilehash: f5fc1e162e6471feb62e886d65755b4b434bdf4a834be59bcf7b37f76f23f129
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797151"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219197"
 ---
 # <a name="understand-billing-profiles"></a>Entender los perfiles de facturación
 
@@ -41,7 +41,7 @@ Un perfil de facturación contiene un método de pago, información de facturaci
 
 Los roles de los perfiles de facturación tienen permisos para controlar las compras y ver y administrar facturas. Asigne estos roles a los usuarios que realicen un seguimiento, organicen y paguen facturas. Por ejemplo, los miembros del equipo de compras de la organización.
 
-| Función                         | Descripción                                                                      |
+| Role                         | Descripción                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
 | Propietario del perfil de facturación        | Administrar todo para un perfil de facturación                                          |
 | Colaborador del perfil de facturación  | Administrar todo excepto los permisos en un perfil de facturación                        |

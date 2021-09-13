@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Obtén información sobre cómo Office 365 cifrado de BitLocker, lo que reduce el potencial de robo de datos debido a la pérdida o robo de equipos y discos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 71aeef37b2b9683acdb6fad0b26a0d567aea4f269e5f820f73cf772b9c88efd9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc329a053544ba6cf1753ae07caac642546cad11
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216727"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker y Administrador de claves distribuidas (DKM) para el cifrado
 

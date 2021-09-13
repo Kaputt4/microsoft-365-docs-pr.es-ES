@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5fbdb1725249797ea87104cac5f25eaac9f5bff05967ee11cccb7ae14c349d55
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888768"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220030"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API de incidentes y el tipo de recurso incidents
 
@@ -46,11 +46,11 @@ Puede solicitar hasta 50 llamadas por minuto o 1500 llamadas por hora. Cada mét
 
 Un código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por número de solicitudes enviadas o por tiempo `429` de ejecución asignado. El cuerpo de la respuesta incluirá la hora hasta que se restablezca la cuota alcanzada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 La API de incidentes requiere distintos tipos de permisos para cada uno de sus métodos. Para obtener más información acerca de los permisos necesarios, consulte el artículo del método respectivo.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Método | Tipo de valor devuelto | Description
 -|-|-
@@ -64,14 +64,14 @@ Consulte los artículos de método respectivos para obtener más información so
 
 ## <a name="common-properties"></a>Propiedades comunes
 
-Propiedad | Tipo | Description
+Propiedad | Tipo | Descripción
 -|-|-
 incidentId | largo | Identificador único de incidente.
 redirectIncidentId | long nullable | El identificador de incidente con el que se ha combinado el incidente actual.
-incidentName | cadena | Nombre del incidente.
+incidentName | string | Nombre del incidente.
 createdTime | DateTimeOffset | La fecha y hora (en UTC) que se creó el incidente.
 lastUpdateTime | DateTimeOffset | La fecha y hora (en UTC) se actualizó por última vez el incidente.
-assignedTo | cadena | Propietario del incidente.
+assignedTo | string | Propietario del incidente.
 severity | Enum | Gravedad del incidente. Los valores posibles son: ```UnSpecified``` , , , y ```Informational``` ```Low``` ```Medium``` ```High``` .
 status | Enum | Especifica el estado actual del incidente. Los valores posibles son: ```Active``` ```Resolved``` , y ```Redirected``` .
 classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.

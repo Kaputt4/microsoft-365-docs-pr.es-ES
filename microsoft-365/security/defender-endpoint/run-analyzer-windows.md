@@ -1,5 +1,5 @@
 ---
-title: Ejecutar el Analizador de clientes en Windows
+title: Ejecutar el analizador de cliente en Windows
 description: Obtenga información sobre cómo ejecutar microsoft defender para endpoint client analyzer en Windows.
 keywords: analizador de cliente, sensor de solución de problemas, analizador, mdeanalyzer, windows
 search.product: eADQiWindows 10XVcnh
@@ -21,13 +21,13 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 754ec7b6cdd6e6c5e3c9f5765d839bd94a1d720b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255016"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218290"
 ---
-#  <a name="run-the-client-analyzer-on-windows"></a>Ejecutar el Analizador de clientes en Windows
+#  <a name="run-the-client-analyzer-on-windows"></a>Ejecutar el analizador de cliente en Windows
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
@@ -107,7 +107,7 @@ De forma predeterminada, el archivo MDEClientAnalyzerResult.zip descomprimido co
     -   OperationsManager.evtx <br> Descripción: exportación del registro Microsoft Monitoring Agent de eventos
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general del Analizador de clientes](overview-client-analyzer.md)
 - [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)
 - [ Recopilación de datos para solucionar problemas avanzados en Windows](data-collection-analyzer.md)

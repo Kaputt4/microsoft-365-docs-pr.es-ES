@@ -16,17 +16,17 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 0fb607492d8df6b1e10d73191b6d662ea6bb63eb39da74e0bfed6ba331c1516f
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 2e59d4b4d2d077921e1c6c9496d14e59bae2317a
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53813648"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59216667"
 title: Preguntas más frecuentes sobre cifrado de mensajes
 summary: >
   ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí. Además, echa un vistazo a las preguntas más frecuentes sobre la protección de datos en [Azure Information Protection](/information-protection/get-started/faqs-rms) para obtener respuestas a preguntas sobre el servicio de protección de datos, Azure Rights Management, en Azure Information Protection.
 sections:
-- name: Omitidas
+- name: Ignorado
   questions:
   - question: ¿Qué Cifrado de mensajes de Office 365 (OME)?
     answer: OME combina el cifrado de correo electrónico y las capacidades de administración de derechos. Las capacidades de administración de derechos están basadas en Azure Information Protection.

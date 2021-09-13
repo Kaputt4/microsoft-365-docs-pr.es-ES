@@ -14,6 +14,7 @@ ms.custom:
 - O365P_AddUsersCSV
 - O365M_AddUsersCSV
 - O365E_AddUsersCSV
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOP150
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: 'Obtenga información sobre cómo agregar varios usuarios a Microsoft 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Microsoft 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón Microsoft 365 correo. '
-ms.openlocfilehash: 5df43af8d01dce11c063b3d29fb2323b997580bf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 873a9ff27f85d63596f5e69db918c0c619b73539
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572700"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218770"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Agregar varios usuarios al mismo tiempo a Microsoft 365: Ayuda para administradores
 
@@ -42,7 +43,7 @@ Cada persona del equipo necesita una cuenta de usuario antes de poder iniciar se
 
 1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa.
 
-2. En el Centro de administración, elija **Usuarios** \> **usuarios activos.**
+2. En el Centro de administración, elija **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
 
 3. Seleccione **Agregar varios usuarios**.
 
@@ -70,7 +71,7 @@ Cada persona del equipo necesita una cuenta de usuario antes de poder iniciar se
 
 7. En el cuadro de diálogo **Ver el resultado**, puede elegir si desea enviar los resultados a su usuario o a otros usuarios (las contraseñas se mostrarán en texto sin formato). Además, puede ver cuántos usuarios se crearon y, si lo necesita, comprar más licencias para asignárselas a algunos de los nuevos usuarios.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - Ahora que estas personas tienen cuentas, deben descargar e instalar o reinstalar Microsoft 365 o [Office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)en un equipo pc o Mac . Cada persona del equipo puede instalar Microsoft 365 hasta 5 equipos PC o Mac.
 

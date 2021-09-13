@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo se cumplen las necesidades empresariales de la empresa Microsoft 365 empresa.
 ms.openlocfilehash: aa0779cfadb12aa0213a74f2e348951be4eca4f5
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745982"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218687"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infraestructura de TI contoso y necesidades empresariales
 
@@ -139,7 +139,7 @@ El departamento de TI de Contoso determinó la siguiente asignación de las nece
 
 Obtenga información sobre la red [local](contoso-networking.md) de Contoso Corporation y cómo se ha optimizado para obtener acceso y latencia a Microsoft 365 recursos basados en la nube.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 

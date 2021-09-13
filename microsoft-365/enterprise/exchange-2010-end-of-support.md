@@ -13,15 +13,15 @@ f1.keywords:
 - NOCSH
 description: Exchange 2010 ha llegado al final del soporte técnico. Use esta guía básica de planeación para prepararse para actualizar a Exchange Online o una versión más reciente de Exchange Server local.
 ms.openlocfilehash: 14875c793380c509c578d86d2d835596fa57cc73
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218557"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Plan de final del soporte técnico de Exchange 2010
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Exchange Server 2010 llegó a su fin de soporte el 13 de octubre de **2020**. Si aún no ha iniciado la migración de Exchange 2010 a Microsoft 365, Office 365 o Exchange 2016, ahora es el momento de empezar a planear.
 
@@ -60,7 +60,7 @@ Estas son las tres rutas de acceso que puede tomar para evitar el fin de la comp
 
 Las secciones siguientes exploran cada opción con más detalle.
 
-## <a name="migrate-to-microsoft-365"></a>Migrar a Microsoft 365
+## <a name="migrate-to-microsoft-365"></a>Migrar a Microsoft 365
 
 Migrar el correo electrónico a Microsoft 365 es la mejor y más sencilla opción para ayudarle a retirar su Exchange de 2010. Con una migración a Microsoft 365, puede realizar un solo salto de la tecnología antigua a las características actuales, incluidas:
 

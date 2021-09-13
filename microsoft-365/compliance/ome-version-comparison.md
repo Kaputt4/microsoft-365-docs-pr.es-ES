@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Este artículo ayuda a explicar las diferencias entre las diferentes versiones de Cifrado de mensajes de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e94183ef90d5e55512f8d62db38be28f14d69d1fa8a5925b4de2afa660db26c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 92beb3625c0b115fe77f1667a448bf0bf9589040
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216657"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versiones de OME
 

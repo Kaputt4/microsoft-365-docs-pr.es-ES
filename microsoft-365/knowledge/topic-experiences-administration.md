@@ -11,11 +11,11 @@ search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo cambiar el nombre del centro de temas en Temas Microsoft Viva.
 ms.openlocfilehash: 262ae46fadf8fc390a4ccf591aa97175ff63a68f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573072"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218480"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Cambie el nombre del centro de temas en Temas Microsoft Viva
 
@@ -42,7 +42,7 @@ Para cambiar el nombre del centro de temas
 
     ![Editar el nombre del centro de temas.](../media/manage-topic-center-name.png)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar la detección de temas en Temas Microsoft Viva](topic-experiences-discovery.md)
 

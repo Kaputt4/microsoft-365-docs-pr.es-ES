@@ -22,11 +22,11 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ms.openlocfilehash: 09274557ea35c87cb4346e797d1b5e5e26e96aa3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255184"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219947"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Investigación y respuesta automatizadas en Microsoft 365 Defender
 
@@ -61,9 +61,9 @@ Imagine un analista virtual en su equipo de operaciones de seguridad de nivel 1 
 
 Las capacidades automatizadas de investigación y respuesta permiten al equipo de operaciones de seguridad aumentar considerablemente la capacidad de su organización para hacer frente a las alertas e incidentes de seguridad. Con la investigación y la respuesta automatizadas, puedes reducir el costo de las actividades de investigación y respuesta y sacar el máximo partido a tu conjunto de protección contra amenazas. Las capacidades automatizadas de investigación y respuesta ayudan al equipo de operaciones de seguridad:
 
-1. Determinar si una amenaza requiere acción.
-2. Realizar (o recomendar) las acciones de corrección necesarias.
-3. Determinar si deben producirse otras investigaciones y qué otras.
+1. Determinar si una amenaza requiere una acción.
+2. Realizar (o recomendar) todas las acciones de corrección necesarias.
+3. Determinar si deben hacerse otras investigaciones y cuáles.
 4. Repetir el proceso según sea necesario para otras alertas.
 
 ## <a name="the-automated-investigation-process"></a>El proceso de investigación automatizada
@@ -85,7 +85,7 @@ Para obtener más información, vea [Acciones de corrección en Microsoft 365 De
 
 En función [de cómo se configuren](m365d-configure-auto-investigation-response.md) las capacidades automatizadas de investigación y respuesta para su organización, las acciones de corrección se toman automáticamente o solo tras la aprobación del equipo de operaciones de seguridad. Todas las acciones, ya sean pendientes o completadas, se enumeran en el [Centro de acciones](m365d-action-center.md).
 
-Durante la ejecución de una investigación, todas las demás alertas relacionadas que puedan surgir se agregarán a la investigación hasta que se finalice. Si se ve una entidad afectada en otro lugar, la investigación automatizada expande su ámbito para incluir esa entidad y el proceso de investigación se repite. 
+Durante la ejecución de una investigación, todas las demás alertas relacionadas que puedan surgir se agregarán a la investigación hasta que se finalice. Si ve una entidad afectada en otro lugar, la investigación automatizada expande su ámbito para incluir esa entidad, y el proceso de investigación se repite. 
 
 En Microsoft 365 Defender, cada investigación automatizada correlaciona las señales entre Microsoft Defender para identity, Microsoft Defender para endpoint y Microsoft Defender para Office 365, como se resume en la tabla siguiente: 
 

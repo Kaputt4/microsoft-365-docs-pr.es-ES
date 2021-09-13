@@ -11,11 +11,11 @@ search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo administrar la visibilidad del tema en Temas Microsoft Viva.
 ms.openlocfilehash: b1ea14ccd1872825cd9ce7edb35ddc8c0a7f176e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561067"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218457"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Administrar la visibilidad del tema en Temas Microsoft Viva
 
@@ -37,19 +37,19 @@ Puede administrar quién puede ver los aspectos destacados del tema, las tarjeta
 Puede cambiar los usuarios que pueden ver temas de su organización.
 
 1. En la **pestaña Visibilidad** del tema, en **Quién puede ver temas,** seleccione **Editar**.
-2. En la **Quién** puede ver temas, elija quién tendrá acceso a los detalles del tema, como temas resaltados, tarjetas de temas, respuestas de temas en la búsqueda y páginas de temas. Puede seleccionar:
+2. En la **Quién** puede ver temas, elija quién tendrá acceso a los detalles del tema, como temas resaltados, tarjetas de temas, respuestas de temas en la búsqueda y páginas de temas. También puede seleccionar:
     - **Todos en su organización**
     - **Solo personas o grupos de seguridad seleccionados**
     - **Nadie**
 
     ![Quién puede ver temas.](../media/k-manage-who-can-see-topics.png) 
 
-3. Haga clic en **Guardar**.  
+3. Seleccione **Guardar**.  
  
 > [!Note] 
 > Aunque esta configuración le permite seleccionar cualquier usuario de su organización, solo los usuarios que tengan licencias de Experiencias de tema asignadas podrán ver temas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar la detección de temas en Temas Microsoft Viva](topic-experiences-discovery.md)
 

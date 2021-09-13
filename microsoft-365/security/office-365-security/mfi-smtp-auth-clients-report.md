@@ -15,11 +15,11 @@ description: Los administradores pueden aprender a usar la información y el inf
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 3d4c39e722ed7d9853a4fb328a8e87aac535bea9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568089"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217967"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Información e informes de clientes de autenticación SMTP en el Centro de seguridad & cumplimiento
 

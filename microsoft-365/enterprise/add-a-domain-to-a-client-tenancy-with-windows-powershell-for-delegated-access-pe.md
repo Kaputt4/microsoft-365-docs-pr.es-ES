@@ -14,15 +14,17 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Summary: Use PowerShell for Microsoft 365 to add an alternate domain name to an existing customer tenant.'
-ms.openlocfilehash: 90eec48de55a01dd2298bed1ff0dc068d57da3bb
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 6cb57814f2f1ce8a1cbf6a47b654f6492279faeb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356125"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218777"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Agregar un dominio a un arrendamiento de cliente con Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
@@ -31,7 +33,7 @@ ms.locfileid: "58356125"
 Puede crear y asociar nuevos dominios con el arrendamiento del cliente con PowerShell para Microsoft 365 más rápido que usar el Centro de administración de Microsoft 365.
 
 Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Con frecuencia son los proveedores de red o de telecomunicaciones para otras compañías. Agrupan Microsoft 365 suscripciones en sus ofertas de servicio a sus clientes. Cuando venden una suscripción Microsoft 365, se les conceden automáticamente permisos Administrar en nombre de (AOBO) a las tenencias del cliente para que puedan administrar e informar sobre las tenencias del cliente.
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 Los procedimientos de este tema requieren que se conecte a [Conectar a Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md).
 
@@ -52,7 +54,7 @@ También necesitará la siguiente información:
  Sus clientes probablemente le pedirán crear dominios adicionales para asociar con su arrendamiento, ya que no desean que el dominio predeterminado \<domain>.onmicrosoft.com sea el dominio principal que represente su identidad corporativa en el mundo. En este procedimiento se explica cómo crear un nuevo dominio asociado con el arrendamiento de su cliente.
 
 > [!NOTE]
-> Para realizar algunas de estas operaciones, la cuenta de  administrador de  partners con la que inicia sesión debe establecerse en Administración completa para la configuración Asignar acceso administrativo a empresas que admite en los detalles de la cuenta de administrador en el Centro de administración de Microsoft 365. Para obtener más información sobre cómo administrar roles de administrador de partners, vea [Partners: Offer delegated administration](https://go.microsoft.com/fwlink/p/?LinkId=532435).
+> Para realizar algunas de estas operaciones, la cuenta de  administrador de  partners con la que inicia sesión debe establecerse en Administración completa para la configuración Asignar acceso administrativo a empresas compatibles que se encuentra en los detalles de la cuenta de administrador en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">el Centro de administración de Microsoft 365</a>. Para obtener más información sobre cómo administrar roles de administrador de partners, vea [Partners: Offer delegated administration](https://go.microsoft.com/fwlink/p/?LinkId=532435).
 
 ### <a name="create-the-domain-in-azure-active-directory"></a>Crear el dominio en Azure Active Directory
 

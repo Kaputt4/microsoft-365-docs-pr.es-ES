@@ -24,11 +24,11 @@ search.appverid: MET150
 description: Agregue almacenamiento de archivos en su Microsoft 365 suscripción. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint Online y OneDrive.
 ms.date: 04/02/2021
 ms.openlocfilehash: 5c08b105271f3b5297c1ca7258f7b723164e1fe0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219240"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Agregar espacio de almacenamiento para la suscripción
 
@@ -39,7 +39,7 @@ Si empieza a quedarse sin espacio de almacenamiento en las colecciones de sitios
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o SharePoint para realizar las tareas de este artículo. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o SharePoint para realizar las tareas de este artículo. Para obtener más información, vea [Asignar roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Ver almacenamiento disponible
 
@@ -77,7 +77,7 @@ Si ya compró almacenamiento de archivos adicional a través del complemento **O
 3. En la página detalles del producto, en la **sección Complementos,** seleccione **Administrar complementos**.
 4. En el **panel Administrar complementos,** en la **lista Complementos,** elija **Office 365 Extra File Storage**.
 5. En el **cuadro de texto** Cantidad, escriba el número de GB de espacio de almacenamiento que desea para la suscripción.
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>¿Mi plan me permite optar a Office 365 Extra File Storage?
 

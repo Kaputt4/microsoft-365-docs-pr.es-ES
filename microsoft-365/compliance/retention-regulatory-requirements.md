@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Recursos para ayudarle a cumplir los requisitos normativos para la gobernanza de información y la administración de registros.
-ms.openlocfilehash: 360d1091485c409967d9c0a7cfa96117920b8b9f3d9e6e680c67d61b088d30f3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a2629dbd9df4b582b2aeb7726de87d81eb726a76
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819768"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216537"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Requisitos normativos para la gobernanza de información y la administración de registros
 

@@ -19,11 +19,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Use un archivo CSV de una búsqueda de contenido existente para crear una búsqueda de lista de identificadores que devuelva elementos de correo electrónico específicos.
 ms.openlocfilehash: 3fc43f410d6361ac655f7f839b6b4f8752483ef9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571078"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216910"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Preparar un archivo CSV para una búsqueda de contenido de lista de identificadores
 
@@ -35,7 +35,7 @@ Este es un resumen rápido del proceso para crear una búsqueda de lista de iden
 
 1. Cree y ejecute una nueva búsqueda en el Centro de cumplimiento de Microsoft 365.
 
-2. Exporte los resultados de búsqueda de contenido o el informe de búsqueda de contenido. Para obtener más información, vea:
+2. Exporte los resultados de búsqueda de contenido o el informe de búsqueda de contenido. Para más información, vea:
 
     - [Exportar resultados de la búsqueda de contenido](export-search-results.md)
 

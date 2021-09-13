@@ -16,15 +16,15 @@ metadata:
   description: Encuentre respuestas a las preguntas más frecuentes (preguntas frecuentes) sobre cómo mover datos principales a una nueva ubicación geográfica Office 365 centro de datos.
   ms.custom: seo-marvel-mar2020
   ms.openlocfilehash: cbc359db637d2d60315a724b9bf78ffb9ae0359d
-  ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/16/2021
-  ms.locfileid: "58354625"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59218577"
 title: Preguntas más frecuentes sobre el movimiento de datos
 summary: Estas son las respuestas a preguntas generales sobre cómo mover los datos principales de los clientes en reposo a una nueva ubicación geográfica del centro de datos.
 sections:
-- name: Omitidas
+- name: Ignorado
   questions:
   - question: >
       ¿Qué clientes son aptos para solicitar un movimiento?

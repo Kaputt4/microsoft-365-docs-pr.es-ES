@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo crear una firma de correo electrónico en toda la empresa.
-ms.openlocfilehash: 2fa201a8c01aa69046a3e126a4ff774b728fa49d0631129f109bcf6a1cc7e6fe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0585f1020779e70eff55c41b83ffe9337443afc9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803623"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219360"
 ---
 # <a name="create-a-company-wide-email-signature"></a>Crear una firma de correo electrónico en toda la empresa
 
@@ -38,7 +39,7 @@ Una firma de correo electrónico de toda la empresa aparece en todos los correos
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el Centro de administración de Microsoft 365, seleccione **Exchange**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, seleccione **Exchange**.
 1. Seleccione **Flujo de correo**.
 1. Seleccione **Agregar +** y, a continuación, seleccione Aplicar **declinaciones de responsabilidades**.
 1. En la **página Nueva regla:**

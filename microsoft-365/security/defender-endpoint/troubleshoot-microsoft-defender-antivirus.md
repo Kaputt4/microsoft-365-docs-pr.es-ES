@@ -16,11 +16,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: 15180a2be197b39da78bf004b761db753cd02c94
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213407"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -359,7 +359,7 @@ Para obtener más información, vea los artículos siguientes:
 <dt>Nombre: &lt; Id. &gt; de</dt>
 <dt>nombre de &lt; amenaza: Gravedad del id. &gt; </dt>de 
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>
@@ -431,7 +431,7 @@ Antivirus de Microsoft Defender ha tomado medidas para proteger esta máquina de
 <dt>de usuario: &lt; Identificador de nombre &gt; de</dt>
 <dt>amenaza: &lt; &gt; Id.</dt>de amenaza 
 <dt> Gravedad: Gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>
@@ -483,7 +483,7 @@ Antivirus de Microsoft Defender ha encontrado un error al tomar medidas en malwa
 <dt>de usuario: &lt; Identificador de nombre &gt; de</dt>
 <dt>amenaza: &lt; &gt; Id.</dt>de amenaza 
 <dt> Gravedad: Gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>
@@ -537,7 +537,7 @@ Antivirus de Microsoft Defender ha restaurado un elemento de cuarentena. Para ob
 <dt>Nombre: &lt; Id. &gt; de</dt>
 <dt>nombre de &lt; amenaza: Gravedad del id. &gt; </dt>de 
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>
@@ -579,7 +579,7 @@ Antivirus de Microsoft Defender ha encontrado un error al intentar restaurar un 
 <dt>Nombre: &lt; Id. &gt; de</dt>
 <dt>nombre de &lt; amenaza: Gravedad del id. &gt; </dt>de 
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>
@@ -623,7 +623,7 @@ Antivirus de Microsoft Defender ha eliminado un elemento de la cuarentena.<br/>P
 <dt>Nombre: &lt; Id. &gt; de</dt>
 <dt>nombre de &lt; amenaza: Gravedad del id. &gt; </dt>de 
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>
@@ -666,7 +666,7 @@ Para obtener más información, vea los artículos siguientes:
 <dt>Nombre: &lt; Id. &gt; de</dt>
 <dt>nombre de &lt; amenaza: Gravedad del id. &gt; </dt>de 
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>
@@ -772,7 +772,7 @@ Antivirus de Microsoft Defender ha detectado un comportamiento sospechoso.<br/>P
 <dt>Nombre: &lt; Id. &gt; de</dt>
 <dt>nombre de &lt; amenaza: Gravedad del id. &gt; </dt>de 
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>
@@ -847,7 +847,7 @@ Antivirus de Microsoft Defender ha detectado malware u otro software potencialme
 <dt>Nombre: &lt; Id. &gt; de</dt>
 <dt>nombre de &lt; amenaza: Gravedad del id. &gt; </dt>de 
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>
@@ -926,7 +926,7 @@ Antivirus de Microsoft Defender ha tomado medidas para proteger esta máquina de
 <dt>Nombre: &lt; Id. &gt; de</dt>
 <dt>nombre de &lt; amenaza: Gravedad del id. &gt; </dt>de 
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>
@@ -1048,7 +1048,7 @@ Antivirus de Microsoft Defender ha encontrado un error no crítico al tomar medi
 <dt>Nombre: &lt; Id. &gt; de</dt>
 <dt>nombre de &lt; amenaza: Gravedad del id. &gt; </dt>de 
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>
@@ -1140,7 +1140,7 @@ Antivirus de Microsoft Defender ha encontrado un error crítico al tomar medidas
 <dt>Nombre: &lt; Id. &gt; de</dt>
 <dt>nombre de &lt; amenaza: Gravedad del id. &gt; </dt>de 
 <dt> amenaza: gravedad , por &lt; &gt; ejemplo:<ul>
-<li>Bajo</li>
+<li>Mínimo</li>
 <li>Moderado</li>
 <li>Alto</li>
 <li>Grave</li>

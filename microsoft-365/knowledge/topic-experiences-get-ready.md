@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 84a07211126e2007b0f5740c18ef871d24497d8746d369acabf0aa9adf0203b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864157"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218460"
 ---
 # <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Prepare el entorno para Temas Microsoft Viva
 
@@ -121,7 +121,7 @@ La administración de temas implica tres roles clave, incluidos dos nuevos roles
 
 Dependiendo de la organización, es posible que haya pocas o muchas personas que actúen en estos roles. Para algunas organizaciones, pueden ser las mismas personas.
 
-| Administrador de la información | Administrador de conocimientos | Colaborador de tema |
+| Administrador de la información | Responsable de la información | Colaborador de tema |
 |:-------|:-------|:-------|:-------|
 | Rol AAD | Rol AAD | SME |
 | Tiene acceso al Centro de administración | Tiene acceso al Centro de administración | Sin acceso al Centro de administración |

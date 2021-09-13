@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indizados (también denominados elementos no indexados) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: f578b5ba4b89338c5d6ef861b20d42c4aebbb3b2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 3030867b3b27b91b32ae8d3c8529ad1d95e9c5ad
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574176"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216807"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigar elementos parcialmente indizados en eDiscovery
 
@@ -73,7 +73,7 @@ Por lo tanto, en el ejemplo anterior, el 7 % del tamaño total de los elementos 
 
 ## <a name="working-with-partially-indexed-items"></a>Trabajar con elementos parcialmente indizados
 
-En los casos en que necesite examinar parcialmente los elementos para [](export-a-content-search-report.md) validar que no contienen información relevante, puede exportar un informe de búsqueda de contenido que contenga información sobre elementos parcialmente indizados. Al exportar un informe de búsqueda de contenido, asegúrese de elegir una de las opciones de exportación que incluye elementos parcialmente indizados.
+En los casos en que necesite examinar elementos parcialmente indizados para [](export-a-content-search-report.md) validar que no contienen información relevante, puede exportar un informe de búsqueda de contenido que contenga información sobre elementos parcialmente indizados. Al exportar un informe de búsqueda de contenido, asegúrese de elegir una de las opciones de exportación que incluye elementos parcialmente indizados.
   
 ![Elija la segunda o tercera opción para exportar elementos parcialmente indizados.](../media/PartiallyIndexedItemsExportOptions.png)
   
@@ -183,6 +183,6 @@ Este es un ejemplo de la salida devuelta por el script.
 > 
 > - Etiquetas de error de lista y los tipos de archivo correspondientes para los que se produjo el error.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Elementos parcialmente indizados en eDiscovery](partially-indexed-items-in-content-search.md)

@@ -17,11 +17,11 @@ ms.collection:
 ms.custom: Ent_Architecture
 description: 'Resumen: cómo Contoso usó un equipo con aislamiento de seguridad para un proyecto secreto para desarrollar un nuevo conjunto de productos y servicios.'
 ms.openlocfilehash: 3a14a5c7ba844e31b8e96d209eb21a9daac45e00
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575425"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219717"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Equipo aislado para un proyecto secreto de Contoso Corporation
 

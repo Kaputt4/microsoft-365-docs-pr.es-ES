@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0e763e78513426e187ab4f3df87438ac750d6f4a77d8a0b5791276685c221a89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e4f07adb051dde24d374055d206955ad61df432a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218410"
 ---
 # <a name="device-configuration"></a>Configuración de dispositivos
 
@@ -34,7 +34,7 @@ Los dispositivos llegarán con una imagen de firma y, a continuación, se unirá
 
 En esta tabla se resaltan las directivas predeterminadas que se aplican a todos los Escritorio administrado de Microsoft durante el aprovisionamiento de dispositivos. Todos los cambios detectados no aprobados por Escritorio administrado de Microsoft Operations Team en objetos administrados por Escritorio administrado de Microsoft se revertirán.
 
-Directiva | Description
+Directiva | Descripción
 --- | ---
 Línea base de seguridad | [La línea base de](/windows/device-security/windows-security-baselines) seguridad de Microsoft para MDM está configurada para todos Escritorio administrado de Microsoft dispositivos. Esta línea base es la configuración estándar del sector. Se ha publicado públicamente, está bien probado y ha sido revisado por expertos en seguridad de Microsoft para mantener Escritorio administrado de Microsoft dispositivos y aplicaciones seguros en el lugar de trabajo moderno. <br><br>Para mitigar las amenazas en el panorama de amenazas de seguridad en constante evolución, la línea base de seguridad de Microsoft se actualizará e implementará en Escritorio administrado de Microsoft dispositivos con cada actualización Windows 10 característica.<br><br>Para obtener más información, [vea Windows líneas base de seguridad](/windows/security/threat-protection/windows-security-baselines).
 Escritorio administrado de Microsoft de seguridad recomendada | Un conjunto de cambios recomendados en la línea base de seguridad que optimizan la experiencia del usuario.  Estos cambios se documentan en [el Complemento de seguridad](#security-addendum). Las actualizaciones del addendum de directiva se producen según sea necesario.  

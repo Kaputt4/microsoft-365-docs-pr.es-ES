@@ -15,11 +15,11 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: a0a60a061959a5aff038c3e74da7e1775f66e237
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576037"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219700"
 ---
 # <a name="windows-feature-update-validation"></a>Windows Validación de actualización de características
 
@@ -52,7 +52,7 @@ A continuación se indican los pasos que debe seguir al rellenar los detalles **
 ![La validación de actualización de características le permite revisar los resultados rápidamente.](Media/Feature-update-validation-04.png)
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Avance al siguiente artículo para empezar a comprender el análisis de regresión de memoria.
 > [!div class="nextstepaction"]

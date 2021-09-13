@@ -16,11 +16,11 @@ search.appverid:
 description: Elija cómo ver el contenido en Advanced eDiscovery, como texto, anotación, vista convertida o nativa.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 1aab4f5e2f5674392fd5577afdb12865b9405380
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565283"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216167"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Ver documentos en un conjunto de revisión en Advanced eDiscovery
 

@@ -18,11 +18,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: cb3cfba661025787c9cbbbcc97dc524c7a62d355
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218367"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Aplicaciones de partners en Microsoft Defender para endpoint
 
@@ -68,7 +68,7 @@ Logotipo|Nombre del partner|Description
 
 ### <a name="orchestration-and-automation"></a>Orquestación y automatización
 
-Logotipo|Nombre del partner|Description
+Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de CyberSponse CyOps.](images/cybersponse-logo.png)|[CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943)|CyOps se integra con Defender for Endpoint para automatizar los libros de reproducción de respuesta a incidentes de alta velocidad de los clientes
 ![Imagen del logotipo de Delta Risk ActiveEye.](images/delta-risk-activeeye-logo.png)|[Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Delta Risk, un proveedor líder de servicios de seguridad y SOC-as-a-Service, integra Defender for Endpoint con su plataforma SOAR nativa de la nube, ActiveEye.
@@ -80,7 +80,7 @@ Logotipo|Nombre del partner|Description
 
 ### <a name="threat-intelligence"></a>Inteligencia de amenazas
 
-Logotipo|Nombre del partner|Description
+Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de misp Malware Information Sharing Platform)..](images/misp-logo.png)|[MISP (Plataforma de uso compartido de información de malware)](https://go.microsoft.com/fwlink/?linkid=2127543)|Integrar indicadores de amenazas desde la plataforma de uso compartido de inteligencia de amenazas de código abierto en el entorno de Defender para endpoints
 ![Imagen del logotipo de Palo Alto Networks.](images/paloalto-logo.png)|[Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2099582)|Enriquezca la protección de puntos de conexión extendiendo El autoenfoque y otras fuentes de amenazas a Defender for Endpoint con MineMeld
@@ -88,7 +88,7 @@ Logotipo|Nombre del partner|Description
 
 ### <a name="network-security"></a>Seguridad de red
 
-Logotipo|Nombre del partner|Description
+Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de Aruba ClearPass Policy Manager.](images/aruba-logo.png)|[Administrador de directivas de ClearPass de Aruba](https://go.microsoft.com/fwlink/?linkid=2127544)|Asegúrese de que Defender for Endpoint está instalado y actualizado en cada extremo antes de permitir el acceso a la red
 ![Imagen del logotipo de Hexágono azul para red.](images/bluehexagon-logo.png)|[Hexágono azul para red](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon ha creado la primera plataforma de aprendizaje profundo en tiempo real de la industria para la protección contra amenazas de red
@@ -98,7 +98,7 @@ Logotipo|Nombre del partner|Description
 
 ### <a name="cross-platform"></a>Multiplataforma
 
-Logotipo|Nombre del partner|Descripción
+Logotipo|Nombre del partner|Description
 :---|:---|:---
 ![Imagen del logotipo de Bitdefender.](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone es una plataforma de protección de puntos de conexión de próxima generación en capas que ofrece una protección completa contra todo el espectro de amenazas cibernéticas sofisticadas
 ![Imagen del logotipo de Better Mobile.](images/bettermobile-logo.png)|[Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)|Solución MTD basada en IA para detener las amenazas móviles & phishing. Exploración privada de Internet para proteger la privacidad del usuario

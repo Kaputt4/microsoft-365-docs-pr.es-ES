@@ -12,11 +12,11 @@ localization_priority: Normal
 description: Obtenga información sobre el Centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 27c8f69530632a78df3e383725205483b255ef48
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574200"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216780"
 ---
 # <a name="microsoft-365-compliance-center"></a>Centro de cumplimiento de Microsoft 365
 
@@ -34,7 +34,7 @@ Cuando vaya a su Centro de cumplimiento de Microsoft 365 por primera vez, se le 
 
 El banner de bienvenida le ofrece algunos punteros sobre cómo empezar, con los pasos siguientes y una invitación para que nos dé sus comentarios.
 
-## <a name="card-section"></a>Sección Tarjeta
+## <a name="card-section"></a>Sección de la tarjeta
 
 Cuando visite el Centro de cumplimiento de Microsoft 365 por primera vez, la sección de tarjetas de la página principal le muestra de un vistazo cómo está su organización con el cumplimiento de los datos, qué soluciones están disponibles para su organización y un resumen de las alertas activas.
 
@@ -74,7 +74,7 @@ Además de los vínculos en las tarjetas de la página principal, verá un panel
 - Si aún no tiene el nuevo Centro de cumplimiento de Microsoft 365, lo tendrá pronto. El Centro de cumplimiento de Microsoft 365 suele estar disponible ahora para los Microsoft 365 SKU.
 - Para visitar el Centro de cumplimiento de Microsoft 365, como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento, vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Por qué no veo la nueva Centro de cumplimiento de Microsoft 365 todavía?**
 
@@ -82,7 +82,7 @@ En primer lugar, asegúrese de que tiene las licencias y permisos adecuados. A c
 
 ![Más recursos.](../media/m365-compliance-center-more-resources.png)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - **Visite El Administrador de cumplimiento de Microsoft** para ver la puntuación de cumplimiento y empezar a administrar el cumplimiento de su organización. Para obtener más información, vea [Compliance Manager](compliance-manager.md).
 

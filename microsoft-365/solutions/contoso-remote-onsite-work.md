@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Comprenda cómo Contoso Corporation respondió a la pandemia de COVID-19 e ingenió su infraestructura de instalación y actualización de software para el trabajo híbrido.
 ms.openlocfilehash: 06ce48969d35017da47be1e75ec3c374b9afb9a1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575449"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219720"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Respuesta y compatibilidad de COVID-19 de Contoso para el trabajo híbrido
 

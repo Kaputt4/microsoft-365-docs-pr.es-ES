@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
 ms.openlocfilehash: 77d7d3eebaa4678e6d90897aab8a41554530e858
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573780"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216570"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 

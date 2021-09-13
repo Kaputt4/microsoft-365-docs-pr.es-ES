@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Etiquetar documentos en un conjunto de revisión ayuda a quitar contenido innecesario e identificar contenido relevante en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 83d8814a1cbc35e461c5bd459390a507bd675f5d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221834"
 ---
 # <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Etiquetar documentos en un conjunto de revisión en Advanced eDiscovery
 

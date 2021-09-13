@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f05350819c040f2b230bc9be9f963b9bcf057452
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.openlocfilehash: 498d88e2a75a0485043297eebf27c3da014a63b9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928697"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216097"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -51,7 +51,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 
 ### <a name="compliance--service-assurance"></a>Garantía de & cumplimiento
 
-- [La garantía del](https://docs.microsoft.com/en-us/compliance/) servicio se ha actualizado con actualizaciones de contenido de revisión trimestral para las certificaciones y las instrucciones de aplicabilidad:
+- [La garantía del](/compliance/) servicio se ha actualizado con actualizaciones de contenido de revisión trimestral para las certificaciones y las instrucciones de aplicabilidad:
   - Arquitectura
   - Registro de auditoría
   - Cifrado y administración de claves

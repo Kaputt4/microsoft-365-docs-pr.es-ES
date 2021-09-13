@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 04/02/2021
-ms.openlocfilehash: 1d820f2d44719caf254b07aee279f1b8121106009e014afddd8fc121bd5d1cc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 73acb6a12499953e56eda7d4274160c6e79ee440
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219160"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Cómo pagar la suscripción con un perfil de facturación
 
@@ -49,7 +49,7 @@ Para poder pagar con factura, debe:
 - Tener un coste de suscripción que supere una cantidad determinada (esta cantidad varía según la ubicación del servicio)
 - Pasar una comprobación de crédito
 
-Si se requiere una comprobación de crédito, se le notificará al comprar su suscripción. Si permite que nos pongamos en contacto con usted, recibirá un correo electrónico con más información sobre la solicitud de aprobación de crédito. Las comprobaciones de crédito se suelen completar en dos días laborables.
+Si se requiere una comprobación de crédito, recibirá una notificación cuando compre la suscripción. Si acepta que se comuniquen con usted, recibirá un correo electrónico que incluye más información sobre cómo solicitar la aprobación de crédito. Las comprobaciones de crédito suelen completarse en un plazo de dos días laborables.
 
 Si tu perfil de facturación está con el respaldo de una factura, recibes un correo electrónico cuando el extracto de facturación esté listo para ver. Este correo electrónico no contiene una copia del extracto de facturación. Pero también tiene la posibilidad de [recibir una copia del extracto de facturación por correo electrónico](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). El extracto de facturación incluye información sobre las opciones de pago, además de dónde debe enviarse. Si escribe un número de pedido de compra (PO) en su perfil de facturación, el número aparecerá en el extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
 
@@ -149,7 +149,7 @@ Si tu perfil de facturación está con el respaldo de una factura, recibes un co
 > - [Lituania](../pay/lithuania.md)
 > - [Luxemburgo](../pay/luxembourg.md)
 > - [Macao](../pay/macao.md)
-> - [Macedonia, Antigua República Yugoslava de](../pay/macedonia.md)
+> - [Macedonia del Norte](../pay/macedonia.md)
 > - [Malasia](../pay/malaysia.md)
 > - [Malta](../pay/malta.md)
 > - [Mauricio](../pay/mauritius.md)

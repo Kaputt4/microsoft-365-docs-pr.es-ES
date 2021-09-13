@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 description: Copia Outlook, OneDrive, Yammer y SharePoint contenido antes de cambiar Microsoft 365 planes.
 ms.date: 03/17/2021
-ms.openlocfilehash: 1823288e60b06787a4bfe0a6fd0a1a11855d5d22df93bb496ba5c0a8a5b574d9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 86953f3235d8725ecdd6b5294611c0e5a378b17d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872676"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219067"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Copia de seguridad de datos antes de cambiar Microsoft 365 para planes empresariales
 

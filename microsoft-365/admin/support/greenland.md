@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd4b7e75a85b170673a2ccb363fc4415d2799fae0fa467ab1151f5df1c6e6fa9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1ed285bd5506d7432a0f0a7115f396355a6e045
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901772"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217640"
 ---
 # <a name="contact-support-for-greenland"></a>Póngase en contacto con el soporte técnico de Groenlandia
 

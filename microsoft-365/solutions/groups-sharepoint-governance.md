@@ -17,11 +17,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre las interacciones de configuración entre Microsoft 365 grupos y SharePoint
 ms.openlocfilehash: eb2f4ff9745eb73f23c48630582aa455ee2bb561
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567981"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217870"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Configuración interacciones entre Microsoft 365 grupos y SharePoint
 
@@ -31,7 +31,7 @@ Algunas opciones de configuración Microsoft 365 grupos y SharePoint en Microsof
 
 ## <a name="the-effects-of-sharepoint-settings-on-microsoft-365-groups"></a>Los efectos de la SharePoint configuración en Microsoft 365 grupos
 
-|SharePoint configuración|Description|Efecto en Microsoft 365 grupos|Recomendación|
+|SharePoint configuración|Descripción|Efecto en Microsoft 365 grupos|Recomendación|
 |:-----------------|:----------|:-----------------------------|:-------------|
 |Uso compartido externo para la organización y el sitio|Determina si los sitios, archivos y carpetas se pueden compartir con personas ajenas a la organización.|Si SharePoint y grupos no coinciden, es posible que los invitados del grupo no puedan acceder al sitio o que el acceso externo esté disponible en el sitio, pero no en el grupo.|Al cambiar la configuración de uso compartido, compruebe tanto la configuración de grupos como SharePoint configuración del sitio para los sitios de grupo conectados a grupos.<br><br>Consulte [Colaborar con invitados en un sitio](./collaborate-in-site.md).|
 |Domain allow/block|Permite o impide que el contenido se comparta con dominios especificados.|Los grupos no reconocen SharePoint permitir o bloquear listas. Los usuarios de dominios no permitidos en SharePoint podrían tener acceso a SharePoint a través de un grupo.|Administrar listas de dominios permitidos o bloqueados para Azure AD y SharePoint juntos. Cree un proceso de gobierno en toda la organización para permitir y bloquear dominios.<br><br>Consulta [SharePoint configuración de dominio y](/sharepoint/restricted-domains-sharing) configuración de dominio de Azure [AD](/azure/active-directory/b2b/allow-deny-list)|
@@ -41,7 +41,7 @@ Algunas opciones de configuración Microsoft 365 grupos y SharePoint en Microsof
 
 ## <a name="the-effects-of-microsoft-365-groups-setting-on-sharepoint"></a>Efectos de la configuración Microsoft 365 grupos en SharePoint
 
-|Microsoft 365 configuración de grupos|Description|Efecto en SharePoint|Recomendación|
+|Microsoft 365 configuración de grupos|Descripción|Efecto en SharePoint|Recomendación|
 |:---------------------------|:----------|:-------------------|:-------------|
 |Directivas de nomenclatura|Especifica prefijos y sufijos de nombre de grupo y palabras bloqueadas para la creación de grupos|Las directivas se aplican para los usuarios que crean sitios de grupo conectados a grupos, pero no sitios de comunicación o sitios con otras plantillas.|Cree instrucciones de nomenclatura independientes para los sitios de comunicación si es necesario.|
 |Acceso de invitado de grupo|Especifica si se pueden agregar personas fuera de la organización a grupos.|Si SharePoint y grupos no coinciden, es posible que los invitados del grupo no puedan acceder al sitio o que el acceso externo esté disponible en el sitio, pero no en el grupo.|Al cambiar la configuración de uso compartido, compruebe tanto la configuración de grupos como SharePoint configuración del sitio para los sitios de grupo conectados a grupos.<br><br>Consulta [Colaborar con invitados en un sitio](./collaborate-in-site.md)|

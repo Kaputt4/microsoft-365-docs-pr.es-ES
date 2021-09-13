@@ -15,11 +15,11 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 38c21f69680d6e9d6a3231c8bf2dc44f15e057f6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219710"
 ---
 # <a name="step-3-upload-your-binaries-dependencies-and-scripts"></a>Paso 3: Upload archivos binarios, dependencias y scripts
 
@@ -39,7 +39,7 @@ En esta pestaña, cargará un único paquete zip que contenga los archivos binar
 **Actualmente, el portal solo admite scripts de PowerShell.**
 
 
-## <a name="next-steps"></a>Pasos siguientes 
+## <a name="next-steps"></a>Siguientes pasos 
 
 Vaya al siguiente artículo para ir al Paso 4: **Establecer las tareas de prueba**.
 > [!div class="nextstepaction"]

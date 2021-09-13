@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Vea una lista completa de DOD y GCC certificados raíz y autoridades de certificación (CA) altos en Microsoft 365.
-ms.openlocfilehash: 4e12f98e2f9949fc108807f3915c52136287bebe8894e36816d8b00ae2d64713
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae8954ecb80cdcef0a62cbf4f928f7ffe6b8c4d7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218880"
 ---
 # <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 de cifrado: DOD y GCC High
 

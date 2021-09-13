@@ -12,11 +12,11 @@ localization_priority: Normal
 description: Obtenga información sobre el Microsoft 365 de soluciones, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 7b7c7f299201a25518b187eed1bd78e7f67d678b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216770"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
@@ -78,13 +78,13 @@ Desde aquí, verá las tarjetas para las siguientes soluciones:
 
 Para visitar el catálogo Microsoft 365 soluciones, vaya a e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos [https://compliance.microsoft.com](https://compliance.microsoft.com) de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la página principal del catálogo.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Por qué no veo el catálogo Microsoft 365 soluciones?**
 
 En primer lugar, asegúrese de que tiene las licencias y permisos adecuados. A continuación, inicie sesión como administrador global, administrador [https://compliance.microsoft.com](https://compliance.microsoft.com) de cumplimiento o administrador de datos de cumplimiento. 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - **Visite El Administrador de cumplimiento de Microsoft,** lo que le ayuda a comprender el estado de cumplimiento de la organización con los estándares y normativas clave. Proporciona acciones recomendadas que puede realizar para reforzar su posición general de cumplimiento y proporciona capacidades de flujo de trabajo para ayudarle a llevar a cabo esas acciones de forma eficaz. Para obtener más información, vea [Compliance Manager](compliance-manager.md).
 

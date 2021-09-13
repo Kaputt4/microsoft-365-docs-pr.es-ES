@@ -18,11 +18,11 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 description: Use los informes DLP de Office 365 para ver el número de coincidencias de directivas DLP, invalidaciones o falsos positivos y ver si van hacia arriba o hacia abajo con el tiempo.
 ms.openlocfilehash: 12ee109a348657aa8ca04c55e496047a82772e22
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574068"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216160"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 

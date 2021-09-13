@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 recommendations: false
 description: Obtenga información sobre las plantillas de directiva de prevención de pérdida de datos (DLP) del Centro de Office 365 seguridad & cumplimiento.
-ms.openlocfilehash: d12420af6ca2e5aea6d1290d0c136bdb27b892c709b6047fad9a4daffffc5f49
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afcc641e6e868c1988f6b30a286c082e960d056c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216107"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Qué incluyen las plantillas de directiva DLP
 
@@ -288,7 +288,7 @@ La prevención de pérdida de datos (DLP) en el Centro de cumplimiento de seguri
 
 |**Nombre de la regla**|**Condiciones  <br/> (incluidos los tipos de información confidencial)**|**Actions**|
 |:-----|:-----|:-----|
-|El contenido coincide con la HIPAA de EE. UU.  <br/> | Contiene cualquiera de las siguientes informaciones confidenciales:  <br/>  Número de seguridad social (SSN) de EE. UU.: recuento mínimo 1, recuento máximo cualquiera  <br/>  Número de agencia antidrogas (DEA): recuento mínimo 1, recuento máximo cualquiera  <br/> **Y** <br/>  El contenido contiene cualquiera de estos términos:  <br/>  Clasificación internacional de las enfermedades (ICD-9-CM): recuento mínimo 1, recuento máximo cualquiera  <br/>  Clasificación internacional de las enfermedades (ICD-10-CM): recuento mínimo 1, recuento máximo cualquiera  <br/>  El contenido se comparte con:  <br/>  Personas ajenas a mi organización  <br/> |Enviar una notificación  <br/> |
+|El contenido coincide con la HIPAA de EE. UU.  <br/> | Contiene cualquiera de las siguientes informaciones confidenciales:  <br/>  Número de seguridad social (SSN) de EE. UU.: recuento mínimo 1, recuento máximo cualquiera  <br/>  Número de agencia antidrogas (DEA): recuento mínimo 1, recuento máximo cualquiera  <br/> **AND** <br/>  El contenido contiene cualquiera de estos términos:  <br/>  Clasificación internacional de las enfermedades (ICD-9-CM): recuento mínimo 1, recuento máximo cualquiera  <br/>  Clasificación internacional de las enfermedades (ICD-10-CM): recuento mínimo 1, recuento máximo cualquiera  <br/>  El contenido se comparte con:  <br/>  Personas ajenas a mi organización  <br/> |Enviar una notificación  <br/> |
    
 ## <a name="us-patriot-act"></a>Ley Patriota de los EE.UU.
 

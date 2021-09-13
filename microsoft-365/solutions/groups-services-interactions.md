@@ -17,11 +17,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: Interacciones de servicios de grupos
 ms.openlocfilehash: 54d8cd0ff31bad9af4269b3a4d8af23ccb618e16
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563711"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192237"
 ---
 # <a name="groups-services-interactions"></a>Interacciones de servicios de grupos
 
@@ -119,7 +119,7 @@ En la tabla siguiente se proporciona información general sobre Microsoft 365 de
 |---|---|---|---|---|
 |Azure AD|Pertenencia, Controles de grupo, Invitados|Sí|Sí|Sí|
 |Exchange|Calendario, buzón|Sí|Sí|Sí|
-|Formularios|Form|Sí|No|No|
+|Formularios|Formulario|Sí|No|No|
 |OneNote|Bloc de notas|Sí|No|No|
 |Planner|Panel de tareas|No|Sí|Sí|
 |Power Apps app|Aplicación|Sí|No|No|
@@ -128,7 +128,7 @@ En la tabla siguiente se proporciona información general sobre Microsoft 365 de
 |Power BI (nuevo)|Área de trabajo|Sí|No|Sí|
 |Project para la Web|Project plan|Sí|Sí|No|
 |Guía básica|Guía básica|Sí|Sí|No|
-|SharePoint|Sitio|Sí|Sí|Sí|
+|SharePoint|Site|Sí|Sí|Sí|
 |Stream|Canal, vídeo|Sí|Sí|Sí|
 |Teams|Equipo|No|Sí|Sí|
 |Yammer|Group|Sí|Sí|Sí|
@@ -181,7 +181,7 @@ De forma predeterminada, cuando se crea un equipo, el buzón y el calendario aso
 
 - Conversaciones
 - Canales & pestañas
-- Reuniones
+- Meetings
 
 **¿Teams crear un grupo?**
 
@@ -340,7 +340,7 @@ No, sin embargo, al copiar un plan se crea un nuevo grupo.
 
 Sí, al eliminar el plan se eliminará el contenido y los servicios asociados al grupo.
 
-## <a name="power-apps"></a>PowerApps
+## <a name="power-apps"></a>Power Apps
 
 Power Apps proporciona un lienzo para el desarrollo de aplicaciones sin código.
 

@@ -21,11 +21,11 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.openlocfilehash: 52da535c376af5775f2c75d9259529d2a011791a
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594213"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218170"
 ---
 # <a name="the-action-center"></a>El Centro de actividades
 
@@ -75,7 +75,7 @@ Al visitar el Centro de acciones, verá dos pestañas: **Acciones pendientes** e
 
 |Pestaña  |Descripción  |
 |---------|---------|
-|**Pending**     | Muestra una lista de acciones que requieren atención. Puede aprobar o rechazar acciones de una en una, o seleccionar varias acciones si tienen el mismo tipo de acción (como el archivo de cuarentena). <p>**SUGERENCIA:** Asegúrese de revisar y aprobar (o rechazar) las acciones pendientes tan pronto como sea posible para que las investigaciones automatizadas puedan completarse de forma oportuna.       |
+|**Pendiente**     | Muestra una lista de acciones que requieren atención. Puede aprobar o rechazar acciones de una en una, o seleccionar varias acciones si tienen el mismo tipo de acción (como el archivo de cuarentena). <p>**SUGERENCIA:** Asegúrese de revisar y aprobar (o rechazar) las acciones pendientes tan pronto como sea posible para que las investigaciones automatizadas puedan completarse de forma oportuna.       |
 |**Historial**     | Sirve como registro de auditoría para las acciones que se han realizado, como: <br/>- Acciones de corrección que se realizaron como resultado de investigaciones automatizadas <br/>- Acciones de corrección realizadas en mensajes de correo electrónico, archivos o direcciones URL sospechosas o malintencionadas<br/>- Acciones de corrección aprobadas por el equipo de operaciones de seguridad <br/>- Comandos que se ejecutaron y acciones de corrección que se aplicaron durante las sesiones de Live Response<br/>- Acciones de corrección realizadas por la protección antivirus <p>Proporciona una forma de deshacer determinadas acciones (vea [Deshacer acciones completadas](m365d-autoir-actions.md#undo-completed-actions)).        |
 
 Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
@@ -91,16 +91,16 @@ Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
 
 ## <a name="actions-tracked-in-the-action-center"></a>Acciones realizadas en el Centro de acciones
 
-Todas las acciones, tanto si están pendientes de aprobación como si ya se han realizado, se realiza un seguimiento en el Centro de acciones. Entre las acciones disponibles se incluyen las siguientes:
+Todas las acciones de corrección, tanto si están pendientes de aprobación como si ya se han aprobado, se consolidan en el Centro de actividades. Entre las acciones disponibles se incluyen las siguientes:
 
-- Recopilar paquete de investigación 
+- Recopilar el paquete de investigación 
 - Aislar dispositivo (esta acción se puede deshacer) 
-- Retirar máquina 
-- Ejecución de código de versión 
-- Liberar de la cuarentena 
-- Ejemplo de solicitud 
+- Retirar la máquina 
+- Ejecutar el código de versión 
+- Liberar de cuarentena 
+- Solicitar ejemplo 
 - Restringir la ejecución de código (esta acción se puede deshacer) 
-- Ejecutar examen antivirus 
+- Ejecutar examen de antivirus 
 - Detener y poner en cuarentena un archivo 
 
 Además de las acciones de corrección que se toman automáticamente como resultado de investigaciones [automatizadas,](m365d-autoir.md)el Centro de acción también realiza un seguimiento de las acciones que el equipo de seguridad ha realizado para abordar las amenazas detectadas y las acciones que se han realizado como resultado de las características de protección contra amenazas de Microsoft 365 Defender. Para obtener más información acerca de las acciones de corrección automáticas y manuales, vea [Acciones de corrección](m365d-remediation-actions.md).

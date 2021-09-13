@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en Advanced eDiscovery.
 ms.openlocfilehash: 462442d2319c2c199d39795b77b67c6dcefdb758
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573240"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216357"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams casos grandes (versión preliminar)
 
@@ -261,7 +261,7 @@ En conjuntos de revisión grandes con miles o millones de elementos, puede ser d
 
 En la tabla siguiente se describen las propiedades de metadatos Teams contenido.
 
-|Metadata (propiedad)  |Description  |
+|Metadata (propiedad)  |Descripción  |
 |:---------|:---------|
 |ContainsEditedMessage      | Indica si un archivo de transcripción contiene un mensaje editado. Los mensajes editados se identifican al ver el archivo de transcripción.|
 |ConversationId|GUID que identifica la conversación a la que está asociado el elemento. Los archivos de transcripción y los datos adjuntos de la misma conversación tienen el mismo valor para esta propiedad.|
@@ -271,7 +271,7 @@ En la tabla siguiente se describen las propiedades de metadatos Teams contenido.
 |FamilyId|GUID que identifica el archivo de transcripción de una conversación de chat. Los datos adjuntos tendrán el mismo valor para esta propiedad que el archivo de transcripción que contiene el mensaje al que se adjunta el archivo.|
 |FileClass     |Indica ese tipo de contenido. Los elementos Teams chats tienen el valor `Conversation` . En cambio, Exchange mensajes de correo electrónico tienen el valor `Email` .|          |
 |MessageKind     | La propiedad de tipo de mensaje. Teams contenido tiene el valor `microsoftteams , im` . |
-|Destinatarios     | Una lista de todos los usuarios que recibieron un mensaje dentro de la conversación de transcripción.|
+|Recipientes     | Una lista de todos los usuarios que recibieron un mensaje dentro de la conversación de transcripción.|
 |TeamsChannelName     | Nombre Teams canal o nombre de canal privado de la transcripción.|
 |||
 

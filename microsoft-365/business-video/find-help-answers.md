@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén información sobre cómo encontrar ayuda de administrador para Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 4d7a5c3e1bacd81d04a32e30c7d12f264cd355c81783409500e416be1345a0c7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 18a50c34f87fa47fe5777e87f8dafa62fb0ac04b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219330"
 ---
 # <a name="find-docs-and-training"></a>Buscar documentos y entrenamiento
 

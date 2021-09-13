@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - commerce_subscriptions
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtén información sobre cómo mover usuarios a una suscripción diferente cuando necesites nuevas características.
-ms.openlocfilehash: e3059a9e841aba348ef3b3038bb24651c11f48792c421fb25b0bc17b720b5eeb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 95d3a4d8e32fb7e0e56e7318f507a911adbc59d9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219410"
 ---
 # <a name="move-users-to-different-subscriptions"></a>Mover usuarios a distintas suscripciones
 
@@ -42,7 +43,7 @@ A medida que los usuarios cambian de roles, es posible que necesiten caracterís
 
 ### <a name="add-a-new-subscription"></a>Agregar una suscripción nueva
 
-1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione **Facturación** y, a continuación, **Servicios de compra.**
+1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione **Servicios de compra** de  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**facturación**</a>.
 1. Elija la suscripción que desea agregar y, a continuación, **seleccione Comprar**.
 1. Elija cómo desea pagar y el número de licencias que necesita y, a continuación, seleccione **Des check-out now**.
 1. Revise el pedido y, a continuación, **elija Siguiente**.
@@ -50,13 +51,13 @@ A medida que los usuarios cambian de roles, es posible que necesiten caracterís
 
 ### <a name="change-the-license-assigned-to-a-user"></a>Cambiar la licencia asignada a un usuario
 
-1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
+1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
 1. Selecciona el nombre del usuario y, a continuación, selecciona **Licencias y aplicaciones.**
 1. En **Licencias,** verás tu nueva suscripción. Active la casilla situada junto a la nueva suscripción y desactive la casilla situada junto a la suscripción antigua.
 1. Seleccione **Guardar cambios**. La licencia de la nueva suscripción ahora está asignada a este usuario.
 
 ### <a name="remove-an-unused-license"></a>Quitar una licencia sin usar
 
-1. En el Centro de administración de Microsoft 365, seleccione **Facturación** y, a continuación, **Productos & servicios**.
+1. En la Centro de administración de Microsoft 365, seleccione   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Facturar sus productos**</a>.
 1. Seleccione la suscripción que desea cambiar y, a continuación, **seleccione Agregar o quitar licencias.**
 1. Use la flecha abajo para reducir el número de licencias de esta suscripción y, a continuación, seleccione **Enviar cambio**. Ahora tiene el número correcto de licencias para los usuarios.

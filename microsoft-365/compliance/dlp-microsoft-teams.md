@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams chats y canales admiten directivas de prevención de pérdida de datos (DLP).
-ms.openlocfilehash: 8dbc7ce992840101c464f64bd981c65e7703f8bd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 789571a4123473d3c1708ec4ac16dd7656514d92
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192997"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams.
 
@@ -55,7 +55,7 @@ Para obtener más información sobre los requisitos de licencias, consulte [Inst
 
 La protección DLP se aplica de forma diferente a Teams entidades.
 
-|Cuentas de usuario/Grupos/Lista  |Teams Entidad |Protección DLP disponible|
+|Cuando la directiva está en el ámbito |estas Teams entidades |tendrá protección DLP disponible|
 |---------|---------|---------|
 |cuentas de usuario individuales     |Chats de 1:1/n         |sí         |
 |     |chats generales         |no         |

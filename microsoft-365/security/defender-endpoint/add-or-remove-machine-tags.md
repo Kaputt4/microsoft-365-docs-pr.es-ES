@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1158f0bf09b45bda17521ba7e0e472c5633492d205e60c312e93c071abb5e6fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1f303bd129bc1cea62375b56e4b535907440f191
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59223083"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>Agregar o quitar API de etiquetas de máquina
 
@@ -73,7 +73,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -82,7 +82,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 Parámetro|Tipo|Descripción
 :---|:---|:---
 Valor|Cadena|El nombre de la etiqueta. **Necesario**.
-Action|Enum|Agregar o quitar. Los valores permitidos son: "Agregar" o "Quitar". **Necesario**.
+Acción|Enum|Agregar o quitar. Los valores permitidos son: "Agregar" o "Quitar". **Necesario**.
 
 ## <a name="response"></a>Respuesta
 

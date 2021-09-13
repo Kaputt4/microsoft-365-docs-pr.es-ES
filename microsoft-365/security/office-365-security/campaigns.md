@@ -20,11 +20,11 @@ description: Obtenga información sobre las vistas de campaña en Microsoft Defe
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ca5049b234972ef55b951c0886a9d4074613c860
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219887"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campaña en Microsoft Defender para Office 365
 
@@ -288,7 +288,7 @@ Las pestañas de la vista detalles de la campaña te permiten investigar aún m�
   - **DKIM pasado:** el remitente se autenticó mediante el correo identificado de claves de dominio [(DKIM).](support-for-validation-of-dkim-signed-messages.md) Un remitente que no pasa la validación DKIM indica un remitente no autenticado o el mensaje suplanta a un remitente legítimo.
   - **DMARC pasado:** el remitente se autenticó mediante autenticación de mensajes basada en dominio, informes [y conformidad (DMARC).](use-dmarc-to-validate-email.md) Un remitente que no pasa la validación dmarc indica un remitente no autenticado o el mensaje suplanta a un remitente legítimo.
 
-- **Archivos adjuntos**
+- **Adjuntos**
   - **Filename**
   - **SHA256**
   - **Familia de malware**

@@ -24,11 +24,11 @@ search.appverid:
 - MOE150
 description: Cree un sitio de comunicaciones para su campaña o negocio.
 ms.openlocfilehash: d40311a616e51ed665248dded45ef7d0432b6f94
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59219280"
 ---
 # <a name="create-a-communications-site"></a>Crear un sitio de comunicaciones
 

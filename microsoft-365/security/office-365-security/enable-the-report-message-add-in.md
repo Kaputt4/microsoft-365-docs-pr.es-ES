@@ -1,5 +1,5 @@
 ---
-title: Habilitar el mensaje de informe o los complementos de suplantación de identidad de informes
+title: Habilitar los complementos Informar sobre el mensaje o Informar sobre suplantación de identidad
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -18,13 +18,13 @@ description: Obtenga información sobre cómo habilitar el mensaje de informe o 
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f7c077521700a8bd4c7d1997bb87bab0f214337d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563795"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59218060"
 ---
-# <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Habilitar el mensaje de informe o los complementos de suplantación de identidad de informes
+# <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Habilitar los complementos Informar sobre el mensaje o Informar sobre suplantación de identidad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
