@@ -18,35 +18,64 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9aff58f4175cd7615ad2de2a9659bec71f3f1cb8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
+ms.openlocfilehash: a77af4e72c5eaa5d66f120f05e91913c292051ab
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574116"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183961"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
-¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Si es así, puede usar el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. ¿Por qué un registro de auditoría unificado? Porque puede buscar los siguientes tipos de [Actividades administrativas y de usuario](#audited-activities) en Microsoft 365:
+¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? De ser así, puede usar la herramienta de búsqueda del registro de auditoría en el Centro de cumplimiento de Microsoft 365 para buscar el registro de auditoría unificado para ver la actividad de los usuarios y administradores en su organización. Miles de operaciones de usuarios y administradores que se realizan en docenas de servicios y soluciones de Microsoft 365 se capturan, graban y retienen en el registro de auditoría unificado de su organización. Los usuarios de la organización pueden usar la herramienta de búsqueda de registro de auditoría para buscar, ver y exportar (a un archivo CSV) los registros de auditoría de estas operaciones.
 
-- Actividad de usuario en SharePoint Online y OneDrive para Empresas
-- Actividad del usuario en Exchange en línea (registro de auditoría del buzón de Exchange)
-- Actividad de administración en SharePoint en línea
-- Actividad de administrador en Azure Active Directory (el servicio de directorio para Microsoft 365)
-- Actividad de administración en Exchange en línea (registro de auditoría de administración de Exchange)
-- Actividades de eDiscovery en el Centro de seguridad y cumplimiento
-- Actividad de usuario y administrador en Power BI
-- Actividad de usuario y administrador en Microsoft Teams
-- Actividad de usuario y administrador en Dynamics 365
-- Actividad de usuario y administrador en Yammer
-- Actividad de usuario y administrador en Microsoft Power Automate
-- Actividad de usuario y administrador en Microsoft Stream
-- Actividad de analista y administrador en Microsoft Workplace Analytics
-- Actividad de usuario y administrador en Microsoft Power Apps
-- Actividad de usuario y administrador en Microsoft Forms
-- Actividad de administrador y usuario para las etiquetas de confidencialidad de los sitios que usan SharePoint Online o Microsoft Teams
-- Actividad de administrador en el correo de Informe de tareas pendientes y MyAnalytics
+## <a name="microsoft-365-services-that-support-auditing"></a>Servicios de Microsoft 365 que admiten la auditoría
+
+¿Por qué un registro de auditoría unificado? Porque puede buscar actividades realizadas en diferentes servicios de Microsoft 365 en el registro de auditoría. En la tabla siguiente se enumeran los servicios y características de Microsoft 365 (en orden alfabético) compatibles con el registro de auditoría unificado.
+
+| Servicio o característica de Microsoft 365 | Tipos de registro|
+|:---------|:---------|
+| Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon |
+| Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
+| Explorador de contenido|LabelContentExplorer|
+| Prevención de pérdida de datos (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange|
+| Defender para punto de conexión|DLPEndpoint|
+| Dynamics 365|CRM|
+| eDiscovery|Detección, AeD|
+| Coincidencia exacta de datos|MipExactDataMatch|
+| Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
+| Formularios|MicrosoftForms|
+| Barreras de información|InformationBarrierPolicyApplication|
+| Microsoft 365 Defender|MDATPAudit, AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation|
+| Microsoft Teams|MicrosoftTeams|
+| MyAnalytics|MyAnalyticsSettings|
+| OneDrive para la Empresa|OneDrive|
+| Power Apps|PowerAppsApp, PowerAppsPlan|
+| Power Automate|MicrosoftFlow|
+| Power BI|PowerBIAudit|
+| Cuarentena|Cuarentena|
+| Directivas y etiquetas de retención|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
+| Tipos de información confidencial|DlpSensitiveInformationType|
+| Etiquetas de confidencialidad|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
+| SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation |
+| Stream|MicrosoftStream|
+| Inteligencia sobre amenazas|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
+| Workplace Analytics|WorkplaceAnalytics|
+|Yammer|Yammer|
+|||
+
+Para más información sobre las operaciones auditadas en cada uno de los servicios enumerados en la tabla anterior, vea la sección [Actividades auditadas](#audited-activities) de este artículo.
+
+La tabla anterior también identifica el valor de tipo de registro que se usará para buscar actividades en el registro de auditoría en el servicio correspondiente mediante el cmdlet **Search-UnifiedAuditLog** en Exchange Online PowerShell o mediante un script de PowerShell. Algunos servicios tienen varios tipos de registro para diferentes tipos de actividades dentro del mismo servicio. Para una lista más completa de los tipos de registros de auditoría, vea el[Esquema de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
+
+ Para más información sobre el uso de PowerShell para buscar en el registro de auditoría, vea:
+
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
+
+- [Usar un script de PowerShell para buscar en el registro de auditoría](audit-log-search-script.md)
 
 ## <a name="before-you-search-the-audit-log"></a>Antes de realizar búsquedas en el registro de auditoría
 
@@ -91,7 +120,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
   Para obtener más información, consulte[Desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
-- Como se indicó anteriormente, el cmdlet subyacente que se ha usado para buscar en el registro de auditoría es un cmdlet de Exchange en línea, que es **Search-UnifiedAuditLog**. Eso significa que puede usar este cmdlet para buscar en el registro de auditoría en lugar de usar la página de **Búsqueda en el registro de auditoría** del Centro de cumplimiento de Microsoft 365. Tiene que ejecutar este cmdlet en el PowerShell remoto conectado a su organización de Exchange en línea. Para obtener más información, consulte[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+- Como se indicó anteriormente, el cmdlet subyacente que se ha usado para buscar en el registro de auditoría es un cmdlet de Exchange en línea, que es **Search-UnifiedAuditLog**. Esto significa que puede usar este cmdlet para buscar en el registro de auditoría en lugar de usar la herramienta de búsqueda en la página **Auditoría** del Centro de cumplimiento de Microsoft 365. Tiene que ejecutar este cmdlet en Exchange Online PowerShell.  Para obtener más información, consulte [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
   Para obtener información sobre cómo exportar los resultados de búsqueda devueltos por el cmdlet **Search-UnifiedAuditLog** a un archivo CSV, consulte la sección "sugerencias para exportar y ver el registro de auditoría" [exportar, configurar y ver el registro de auditoría registros](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -99,9 +128,6 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
 - Después de que se produzca un evento, puede llevar de 30 minutos a 24 horas que se devuelva el registro de auditoría correspondiente en los resultados de la búsqueda de registros de auditoría. En la tabla siguiente se muestra el tiempo que tarda para los distintos servicios en Office 365.
 
-  <br>
-
-  ****
 
   |Característica o servicio de Microsoft 365|30 minutos|24 horas|
   |---|:---:|:---:|
@@ -113,7 +139,6 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
   |eDiscovery|![Marca de verificación.](../media/checkmark.png)||
   |Exchange Online|![Marca de verificación.](../media/checkmark.png)||
   |Microsoft Power Automate||![Marca de verificación.](../media/checkmark.png)|
-  |Microsoft Project|![Marca de verificación.](../media/checkmark.png)||
   |Microsoft Stream|![Marca de verificación.](../media/checkmark.png)||
   |Microsoft Teams|![Marca de verificación.](../media/checkmark.png)||
   |Power Apps||![Marca de verificación.](../media/checkmark.png)|
@@ -124,9 +149,9 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
   |Workplace Analytics|![Marca de verificación.](../media/checkmark.png)||
   |Yammer||![Marca de verificación.](../media/checkmark.png)|
   |Microsoft Forms|![Marca de verificación.](../media/checkmark.png)||
-  |
+  ||||
 
-- Azure Active Directory (AD) es el servicio de directorio para Office 365. El registro de auditoría unificado contiene actividades de usuario, dominio, aplicación, grupo y de directorio que se han realizado en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte[Eventos del informe de auditoría de Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
+- Azure Active Directory (AD) es el servicio de directorio para Office 365. El registro de auditoría unificado contiene las actividades del usuario, dominio, aplicación, grupo y directorio que se realizaron en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> o en el portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte[Eventos del informe de auditoría de Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 - El registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría, debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, consulte la sección "registros de auditoría"[en el portal de administración de Power BI](/power-bi/service-admin-portal#audit-logs).
 
@@ -655,7 +680,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 
 ### <a name="user-administration-activities"></a>Actividades de administración de usuarios
 
-En la tabla siguiente se enumeran las actividades de administración de usuarios que se registran cuando un administrador agrega o cambia una cuenta de usuario al usar el Centro de administración de Microsoft 365 o el Portal de administración de Azure.
+En la tabla siguiente se enumeran las actividades de administración de los usuarios que se registran cuando un administrador agrega o cambia una cuenta de usuario por medio del [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) o del portal de administración de Azure.
 
 > [!NOTE]
 > Los nombres de operación que se enumeran en la columna **Operación** de la tabla siguiente contienen un punto ( `.` ). Debe incluir el punto en el nombre de la operación si especifica la operación en un comando de PowerShell al buscar el registro de auditoría, crear directivas de retención de auditoría, crear directivas de alertas o crear alertas de actividad. Asegúrese también de usar comillas dobles (`" "`) que contengan el nombre de la operación.
@@ -674,7 +699,7 @@ En la tabla siguiente se enumeran las actividades de administración de usuarios
 
 ### <a name="azure-ad-group-administration-activities"></a>Actividades de administración de grupos de Azure AD
 
-En la siguiente tabla se enumeran las actividades de administración de grupos que se registran cuando un administrador o un usuario agrega o cambia un grupo de Microsoft 365 o cuando un administrador crea un grupo de seguridad mediante el Centro de administración de Microsoft 365 o el Portal de administración de Azure. Para obtener más información sobre los grupos de Office 365, consulte[Ver, crear y eliminar grupos en el Centro de administración de Microsoft Office 365](../admin/create-groups/create-groups.md).
+En la siguiente tabla se enumeran las actividades de administración de grupos que se registran cuando un administrador o un usuario agrega o cambia un grupo de Microsoft 365 o cuando un administrador crea un grupo de seguridad mediante el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) o el Portal de administración de Azure. Para obtener más información sobre los grupos de Office 365, consulte[Ver, crear y eliminar grupos en el Centro de administración de Microsoft Office 365](../admin/create-groups/create-groups.md).
 
 > [!NOTE]
 > Los nombres de operación que se enumeran en la columna **Operación** de la tabla siguiente contienen un punto ( `.` ). Debe incluir el punto en el nombre de la operación si especifica la operación en un comando de PowerShell al buscar el registro de auditoría, crear directivas de retención de auditoría, crear directivas de alertas o crear alertas de actividad. Asegúrese también de usar comillas dobles (`" "`) que contengan el nombre de la operación.
@@ -708,7 +733,7 @@ En la siguiente tabla se enumeran las actividades de administración de aplicaci
 
 ### <a name="role-administration-activities"></a>Actividades de administración de roles
 
-En la siguiente tabla se enumeran las actividades de administración de roles de Azure AD que se registran cuando un administrador controla los roles de administración en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure.
+En la siguiente tabla se enumeran las actividades de administración de roles de Azure AD que se registran cuando un administrador controla los roles de administración en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) o en el portal de administración de Azure.
 
 > [!NOTE]
 > Los nombres de operación que se enumeran en la columna **Operación** de la tabla siguiente contienen un punto ( `.` ). Debe incluir el punto en el nombre de la operación si especifica la operación en un comando de PowerShell al buscar el registro de auditoría, crear directivas de retención de auditoría, crear directivas de alertas o crear alertas de actividad. Asegúrese también de usar comillas dobles (`" "`) que contengan el nombre de la operación.
@@ -722,7 +747,7 @@ En la siguiente tabla se enumeran las actividades de administración de roles de
 
 ### <a name="directory-administration-activities"></a>Actividades de administración de directorios
 
-En la siguiente tabla se enumeran las actividades relacionadas con los dominios y los directorios de Azure AD que se registran cuando un administrador gestiona la organización en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure.
+En la siguiente tabla se enumeran las actividades relacionadas con los dominios y los directorios de Azure AD que se registran cuando un administrador gestiona la organización en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) o en el portal de administración de Azure.
 
 > [!NOTE]
 > Los nombres de operación que se enumeran en la columna **Operación** de la tabla siguiente contienen un punto ( `.` ). Debe incluir el punto en el nombre de la operación si especifica la operación en un comando de PowerShell al buscar el registro de auditoría, crear directivas de retención de auditoría, crear directivas de alertas o crear alertas de actividad. Asegúrese también de usar comillas dobles (`" "`) que contengan el nombre de la operación.

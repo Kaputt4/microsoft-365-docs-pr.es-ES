@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de aplicación.
-ms.openlocfilehash: 3b5f4bda7855f79e8a0e731cd6c26793ac9c6927
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4029a7eeac53a23ad4d0b12556d6c9d0a71ba920
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572268"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190127"
 ---
 # <a name="create-app-policies"></a>Crear directivas de aplicación
 
@@ -155,15 +155,25 @@ En la página **Definir el estado de la directiva**, seleccione una de estas opc
 - **Activo**: las directivas son evaluadas y las acciones configuradas se llevarán a cabo.
 - **Inactivo**: las directivas no son evaluadas y las acciones configuradas no tendrán lugar.
 
-<!--
-## Configure a user-based policy
+## <a name="create-a-custom-policy"></a>Crear una directiva personalizada
 
-## Create an app metadata-based policy
+El gobierno de aplicaciones proporciona algunas plantillas básicas que facilitan la creación de directivas útiles para supervisar aplicaciones en el espacio empresarial.
 
-Publish metadata-based policies
-
-## Configure access permissions
--->
+1. En la página Gobierno de la aplicación, selecciona la pestaña **Directiva**.
+1. Seleccione **Crear directiva**.
+1. En **Categorías**, seleccione **Personalizada**. En **Plantillas**, seleccione **Directiva personalizada**. Seleccione **Siguiente**.
+1. Introduzca un nombre para la directiva, escriba una descripción y, a continuación, en la lista desplegable **Gravedad de la directiva**, seleccione una gravedad. Seleccione **Siguiente**.
+1. Seleccione **No, quiero personalizar la directiva** y, a continuación, seleccione **Siguiente**.
+1. Elija si quiere que esta directiva se aplique a todas las aplicaciones del espacio empresarial o elija aplicaciones específicas. Si elige aplicaciones específicas para esta directiva, seleccione **Agregar aplicaciones** y seleccione las aplicaciones que desea de la lista. En el panel **Elegir aplicaciones,** puede seleccionar varias aplicaciones a las que se aplicará esta directiva y, a continuación, seleccione **Agregar**. Seleccione **Siguiente** cuando esté satisfecho con la lista.
+1. Seleccione **Establecer nuevas condiciones para la directiva** y, a continuación, seleccione **Editar condiciones**. Seleccione **Agregar condición**, elija una condición de la lista y, a continuación, seleccione la condición que se aplicará. Repita para agregar más condiciones. Seleccione **Guardar** para guardar la regla, y cuando termine de agregar reglas, seleccione **Siguiente**.
+1. De forma predeterminada, esta directiva desencadenará alertas cuando se cumplan las condiciones. Puede elegir tomar medidas cuando se desencadene la directiva, como **Deshabilitar aplicación**. Tenga cuidado al aplicar acciones porque una directiva puede afectar a los usuarios y al uso legítimo de la aplicación. Seleccione **Siguiente**.
+1. Elija el estado de la directiva:
+    - **Auditoría**: la evaluación de directivas está activa, pero la acción de directiva está deshabilitada.
+    - **Activo**: la evaluación de directivas y la acción están activas.
+    - **Inactivo**: la evaluación de directivas y la acción están deshabilitadas.
+  
+    Debe usar el modo Auditoría para probar una nueva directiva. Seleccione **Siguiente**.
+1. Revise todos los parámetros de la directiva personalizada con cuidado. Seleccione **Enviar** cuando esté satisfecho. También puede volver atrás y cambiar la configuración al seleccionar **Editar** debajo de cualquiera de las opciones.
 
 ## <a name="test-and-monitor-your-new-app-policy"></a>Pruebe y supervise su nueva directiva de aplicaciones
 

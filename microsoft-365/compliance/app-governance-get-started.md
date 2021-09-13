@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkMAC
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: Introducción a las funcionalidades de gobernanza de aplicaciones para controlar sus aplicaciones.
-ms.openlocfilehash: 9f74e2c352ccc67adbb7f1b15632cca88c75c51e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 35a04beb04f22558ca150294ebb566a8284d5270
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574897"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190034"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Introducción a la gobernanza de aplicaciones (en versión preliminar)
 
@@ -141,7 +142,7 @@ Para obtener información adicional acerca de cada rol, consulte[permisos de rol
 
 Si no ha participado en la versión preliminar privada y desea cancelar la versión de prueba de gobernanza de aplicaciones, puede comunicarse con el contacto de CXE o seguir estos pasos:
 
-1. En el Centro de administración de Microsoft 365, vaya a **Facturación** > **Sus productos**.
+1. En el Centro de administración de Microsoft 365, vaya a **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Sus productos**</a>.
 1. Vaya a la prueba de gobernanza de aplicaciones, haga clic en los tres puntos y seleccione **Cancelar suscripción**.
 1. En el panel flotante resultante, proporcione un motivo para la cancelación, cualquier comentario adicional y seleccione **Cancelar suscripción**.
 1. Seleccione **Cancelar suscripción** en la pantalla emergente resultante. La versión de prueba se ha cancelado, perderá el acceso a la gobernanza de aplicaciones y se eliminarán los datos de gobernanza de aplicaciones (datos de registro que se usan para crear la información y detecciones de gobernanza de aplicaciones; ningún correo electrónico ni otros archivos se verán afectados).
