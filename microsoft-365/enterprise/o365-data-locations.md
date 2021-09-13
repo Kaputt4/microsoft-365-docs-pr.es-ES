@@ -14,14 +14,15 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 2bc2af6fcb91b916ef3d4ff9f6397fca71aabb27
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 675717eceb1d7de80a66aad18429bd8bb03c2b34
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532864"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215840"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -29,7 +30,7 @@ En las tablas siguientes, se muestra dónde se almacenan los datos en reposo de 
 
 Si su empresa se encuentra en la Unión Europea, consulte [Ubicaciones de datos para la Unión Europea](EU-data-storage-locations.md) para más información. 
 
-Los clientes deberían ver la información de ubicación de los datos específica del espacio empresarial en el Centro de administración de Microsoft 365 en **Configuración | Configuración de la organización | Perfil de la organización | Ubicación de datos**. Si [ha solicitado moverse a una nueva geoárea](request-your-data-move.md), la información de la ubicación de datos del Centro de administración de Microsoft 365 puede mostrar únicamente la nueva geoárea aunque algunos datos puedan almacenarse temporalmente en su geoárea anterior durante la transición. 
+Los clientes deben ver la información específica de ubicación de datos del usuario en el Centro de administración de Microsoft 365 en **Configuración** > **Configuración de la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Perfil de la organización** pestaña</a> > **Ubicación de datos**. Si [ha solicitado moverse a una nueva geoárea](request-your-data-move.md), la información de la ubicación de datos del Centro de administración de Microsoft 365 puede mostrar únicamente la nueva geoárea aunque algunos datos puedan almacenarse temporalmente en su geoárea anterior durante la transición. 
 
 Los nuevos espacios empresariales de Microsoft 365 se asocian, de forma predeterminada, en función de la geoárea de la transacción asociada a la primera suscripción de ese espacio empresarial.
 

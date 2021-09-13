@@ -17,13 +17,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Obtenga más información sobre las nuevas funcionalidades de cifrado de mensajes de Office 365 que permiten la comunicación por correo electrónico protegido con personas de dentro y fuera de su organización.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d33caff1499bf0792148039cb90d1aa6187247a90f53b7ea22828385d3d4fa3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
+ms.openlocfilehash: 93fbd85ed75684d55ed45aec6821d86ed5e9c3f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819780"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216370"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes
 
@@ -123,7 +125,7 @@ Para conocer los pasos para crear reglas de flujo de correo para OME, vea [Defin
 
 Para actualizar las reglas existentes para poder usar las nuevas funcionalidades de OME:
 
-1. En el centro de administración de Microsoft 365, vaya a **Centros de administración > Exchange**.
+1. En el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339), vaya a **Centros de administración > Exchange**.
 2. En el centro de administración de Exchange, vaya a **Flujo de correo > Reglas**.
 3. Para cada regla, en **Hacer lo siguiente**:
     - Seleccione **Modificar la seguridad de los mensajes**.
