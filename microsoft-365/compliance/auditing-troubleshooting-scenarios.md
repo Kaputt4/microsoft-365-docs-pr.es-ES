@@ -19,11 +19,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar la herramienta de Microsoft 365 de búsqueda de registro de auditoría para ayudar a solucionar problemas comunes de soporte técnico para cuentas de correo electrónico.
 ms.openlocfilehash: 4f90d618fd72c41a3c1d3d6ff1600f3d6d10bbfc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166134"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría para investigar problemas de soporte técnico comunes
 

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 9da8f0c15fdffbecb701955be10289ff19f28d1f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255236"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167086"
 ---
 # <a name="start-investigation-api"></a>INICIAR API de investigación
 
@@ -83,8 +83,8 @@ POST https://api.security.microsoft.com/api/machines/{id}/startInvestigation
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
-Content-Type|string|application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

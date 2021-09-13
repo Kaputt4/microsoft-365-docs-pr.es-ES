@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 49d420bcf938ab0180b3d6ddaf518d9d2f55c89b3d7bd0fc104a8e05a79c0686
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 89f6f83112bc6bea57a3b5f7703353adb9d87a30
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799423"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165613"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -46,21 +46,21 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
-| `Application` | cadena | Aplicación que realizó la acción grabada |
+| `Application` | string | Aplicación que realizó la acción grabada |
 | `QueryType` | cadena | Tipo de consulta, como QueryGroup, QueryUser o EnumerateUsers |
 | `QueryTarget` | cadena | Nombre del usuario, grupo, dispositivo, dominio o cualquier otro tipo de entidad que se está consultando |
-| `Query` | cadena | Cadena usada para ejecutar la consulta |
-| `Protocol` | cadena | Protocolo usado durante la comunicación |
+| `Query` | string | Cadena usada para ejecutar la consulta |
+| `Protocol` | string | Protocolo usado durante la comunicación |
 | `AccountName` | cadena | Nombre de usuario de la cuenta |
-| `AccountDomain` | cadena | Dominio de la cuenta |
+| `AccountDomain` | string | Dominio de la cuenta |
 | `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
 | `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
-| `AccountObjectId` | cadena | Identificador único de la cuenta en Azure AD |
+| `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
 | `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
-| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del extremo |
-| `IPAddress` | cadena | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
+| `DeviceName` | string | Nombre de dominio completo (FQDN) del extremo |
+| `IPAddress` | string | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
 | `Port` | cadena | Puerto TCP usado durante la comunicación |
-| `DestinationDeviceName` | cadena | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
 | `DestinationIPAddress` | cadena | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
 | `DestinationPort` | cadena | Puerto de destino de comunicaciones de red relacionadas |
 | `TargetDeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |

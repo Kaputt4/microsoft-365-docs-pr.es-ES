@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 016ee07b9f57117b313b65ea89773fb84a08e99d
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831902"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166894"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender para endpoint y otras soluciones de Microsoft
 

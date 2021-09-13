@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a7441939fc45f7207d4a32f59085f5eb26dad0ed295bcf6d6802e8cd96869b52
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4bcec12d518d56ed8aafdd7c1100446c2dae1dd2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815592"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166366"
 ---
 # <a name="contact-support-for-macau-sar"></a>Póngase en contacto con el soporte técnico para Macao SAR
 

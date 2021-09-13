@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumen: configure los servidores proxy de aplicación web para la autenticación federada de alta disponibilidad Microsoft 365 en Microsoft Azure.'
 ms.openlocfilehash: 17efeb414208afac9ce9dcb0b7136a4c962a0268
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565225"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167326"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web
 

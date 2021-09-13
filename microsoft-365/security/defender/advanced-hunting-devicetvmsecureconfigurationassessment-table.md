@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8acb59c220bd400894aba2be17d5b2ac3216d7591fae5f5928b4670e0c4d2b5e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2e3e649911cb2ce63c2a49be0ebc93e35e8055d6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165667"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -49,13 +49,13 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7.|
 | `Timestamp` | datetime | Fecha y hora en que se generó el registro |
 | `ConfigurationId` | cadena | Identificador único para una configuración específica |
-| `ConfigurationCategory` | cadena | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad |
+| `ConfigurationCategory` | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad |
 | `ConfigurationSubcategory` | cadena | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
-| `ConfigurationImpact` | cadena | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
+| `ConfigurationImpact` | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
 | `IsCompliant` | booleano | Indica si la configuración o la directiva está configurada correctamente |
-| `IsApplicable` | booleano | Indica si la configuración o directiva se aplica al dispositivo |
+| `IsApplicable` | boolean | Indica si la configuración o directiva se aplica al dispositivo |
 | `Context` | cadena | Información contextual adicional sobre la configuración o la directiva |
-| `IsExpectedUserImpact` | booleano | Indica si habrá impacto en el usuario si se aplica la configuración o la directiva |
+| `IsExpectedUserImpact` | boolean | Indica si habrá impacto en el usuario si se aplica la configuración o la directiva |
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -15,11 +15,11 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: cfa07a795e99144e168b06b99e9f1feacd7fa9be
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572772"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166558"
 ---
 # <a name="functional-testing"></a>Pruebas de funcionamiento
 

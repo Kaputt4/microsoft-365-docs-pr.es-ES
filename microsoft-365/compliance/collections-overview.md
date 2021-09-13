@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Use colecciones en Advanced eDiscovery para buscar y recopilar contenido relacionado con su caso o investigación.
 ms.openlocfilehash: dabc321f432996d888686b16e05d8ad6cb6cfc3f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568425"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166006"
 ---
 # <a name="learn-about-collections-in-advanced-ediscovery"></a>Obtenga información sobre las colecciones en Advanced eDiscovery
 

@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Después de que Office 365 buzón de correo esté inactivo, cambie la duración de la retención o Office 365 de retención asignada al buzón inactivo.
 ms.openlocfilehash: ff6394117c0c4f9410b12fcf3d8fc1c952ec1619
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166086"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Cambiar la duración de retención para un buzón inactivo
 

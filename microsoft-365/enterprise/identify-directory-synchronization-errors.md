@@ -12,6 +12,7 @@ f1.keywords:
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
+- admindeeplinkMAC
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -23,16 +24,16 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Obtenga información sobre cómo ver errores de sincronización de directorios y posibles correcciones en Centro de administración de Microsoft 365.
-ms.openlocfilehash: 0bdacf95e0f8534cb721496dc4edb1b49bba131f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 081bf3c0b531acbbe3fe81e8d200e1e03827dfd1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570214"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167302"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Ver errores de sincronización de directorios en Microsoft 365
 
-Puede ver errores de sincronización de directorios en el Centro de administración de Microsoft 365. Solo se muestran los errores del objeto User. Para ver errores con PowerShell, vea [Identificar objetos con DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
+Puede ver errores de sincronización de directorios en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Solo se muestran los errores del objeto User. Para ver errores con PowerShell, vea [Identificar objetos con DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
 ## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>Ver errores de sincronización de directorios en el Centro de administración de Microsoft 365
 

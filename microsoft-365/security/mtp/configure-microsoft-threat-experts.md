@@ -15,11 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.openlocfilehash: 1137ef50c5e3fb72b6bc0532b021de05c7eff1ce
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576133"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166667"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurar y administrar las Expertos en amenazas de Microsoft a través de Microsoft 365 Defender
 

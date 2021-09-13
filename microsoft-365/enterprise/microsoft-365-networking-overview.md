@@ -18,15 +18,15 @@ f1.keywords:
 - NOCSH
 description: Explica por qué la optimización de red es importante para los servicios SaaS, el objetivo de Microsoft 365 redes y cómo SaaS requiere redes diferentes de otras cargas de trabajo.
 ms.openlocfilehash: c5794f9312ba098d27beb65bfbb272701ac3927f
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683961"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167254"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365 de conectividad de red
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Microsoft 365 es una nube de software como servicio (SaaS) distribuida que proporciona escenarios de productividad y colaboración a través de un conjunto diverso de microservicios y aplicaciones. Los componentes de cliente de Microsoft 365 como Outlook, Word y PowerPoint se ejecutan en equipos de usuario y se conectan a otros componentes de Microsoft 365 que se ejecutan en centros de datos de Microsoft. El factor más significativo que determina la calidad de la experiencia del usuario final de Microsoft 365 es la confiabilidad de la red y la baja latencia entre clientes de Microsoft 365 y puertas Microsoft 365 de servicio.
 

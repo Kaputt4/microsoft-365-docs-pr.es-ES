@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Cómo puede usar las etiquetas de retención para administrar el ciclo de vida de los documentos en SharePoint con metadatos para clasificar el contenido, aplicar las etiquetas automáticamente y usar la retención basada en eventos para iniciar el período de retención.
 ms.openlocfilehash: 8c34e8fe860f3704ac96e852393e6661115bb58a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166131"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
 

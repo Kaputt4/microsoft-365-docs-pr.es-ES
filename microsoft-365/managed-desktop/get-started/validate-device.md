@@ -12,11 +12,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 1654998a69b364ebf399c2aabac185bc98fb9388
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372837"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167150"
 ---
 # <a name="validate-new-devices"></a>Validar los dispositivos nuevos
 

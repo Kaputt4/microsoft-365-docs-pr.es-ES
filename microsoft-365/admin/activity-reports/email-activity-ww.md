@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Obtenga información sobre cómo obtener un informe de actividad de correo electrónico mediante el panel Microsoft 365 informes en el Centro de administración de Microsoft 365.
 ms.openlocfilehash: 7189fb560b47c37e48485fdc15be4cd15d80819f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565177"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166499"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Microsoft 365 Informes en el Centro de administración: actividad de correo electrónico
 
@@ -47,7 +47,7 @@ Puede obtener una vista de la actividad de correo electrónico de su usuario con
   
 ![Informe de actividad de correo electrónico.](../../media/5eb1d9e9-8106-4843-acb7-c0238c0da816.png)
   
-|Elemento|Description|
+|Item|Descripción|
 |:-----|:-----|
 |1.  <br/> |El informe **Actividad de correo electrónico** se puede visualizar para las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
 |2.  <br/> |Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas.  <br/> |

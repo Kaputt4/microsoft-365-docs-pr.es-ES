@@ -29,11 +29,11 @@ search.appverid:
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Configure los dispositivos Windows que ejecutan Windows 10 Pro para Microsoft 365 Empresa Premium usuarios, lo que habilita controles de seguridad y administración centralizados.
 ms.openlocfilehash: 4b390b1217cd3af7b5f2cc49dc2fb3507a7fe04c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570178"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166475"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios
 

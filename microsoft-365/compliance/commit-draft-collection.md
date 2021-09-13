@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Después de crear e iterar en una colección borrador, puede confirmarla en un conjunto de revisión. Cuando se confirma un borrador de colección, los elementos recopilados se agregan al conjunto de revisión en el caso. Después de que los elementos recopilados estén en el conjunto de revisión, puede analizarlos, revisarlos y exportarlos.
 ms.openlocfilehash: 9b63117a90f6373e485f74e2edccfa0992ca2ded
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567513"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165998"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Confirmar un borrador de colección en un conjunto de revisión en Advanced eDiscovery
 

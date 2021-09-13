@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: bd0d9dda9edeb27a472474f071cf67ff1463f23b4c82577b9c902b1ec84eecce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2c1cbc82d0fe1604622b1eb2f9f3583f0125c69
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839596"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167054"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Investigar una dirección IP asociada a una alerta de Microsoft Defender para punto de conexión
 

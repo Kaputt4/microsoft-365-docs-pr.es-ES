@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6400e34e50baef8122886027683e6f75277cf85caa2ca539b81a79412462491d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 99a07b1517058b0e5ab241aaae9c6899e2994432
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884228"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166718"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -52,16 +52,16 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `OSArchitecture` | cadena | Arquitectura del sistema operativo que se ejecuta en el equipo. |
 | `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 10 y Windows 7 |
 | `OSBuild` | cadena | Versión de compilación del sistema operativo que se ejecuta en la máquina |
-| `IsAzureADJoined` | booleano | Indicador booleano de si la máquina está unida al Azure Active Directory |
+| `IsAzureADJoined` | boolean | Indicador booleano de si la máquina está unida al Azure Active Directory |
 | `AadObjectId` | cadena | Identificador único del dispositivo en Azure AD |
 | `LoggedOnUsers` | cadena | Lista de todos los usuarios que han iniciado sesión en el equipo en el momento del evento en formato de matriz JSON |
 | `RegistryDeviceTag` | cadena | Etiqueta de máquina agregada a través del Registro |
 | `OSVersion` | cadena | Versión del sistema operativo que se ejecuta en el equipo. |
 | `MachineGroup` | cadena | Grupo de máquinas de la máquina. Este grupo lo usa el control de acceso basado en roles para determinar el acceso a la máquina |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
-| `OnboardingStatus` | cadena | Indica si el dispositivo está actualmente incorporado o no en Microsoft Defender For Endpoint o si el dispositivo no es compatible |
+| `OnboardingStatus` | string | Indica si el dispositivo está actualmente incorporado o no en Microsoft Defender For Endpoint o si el dispositivo no es compatible |
 |`AdditionalFields` | cadena | Información adicional sobre el evento en formato de matriz JSON |
-|`DeviceCategory` | cadena | Clasificación más amplia que agrupa determinados tipos de dispositivos en las siguientes categorías: Endpoint, Network device, IoT, Unknown |
+|`DeviceCategory` | string | Clasificación más amplia que agrupa determinados tipos de dispositivos en las siguientes categorías: Endpoint, Network device, IoT, Unknown |
 |`DeviceType` | cadena | Tipo de dispositivo basado en propósito y funcionalidad, como dispositivo de red, estación de trabajo, servidor, móvil, consola de juegos o impresora |
 |`DeviceSubType` | cadena | Modificador adicional para determinados tipos de dispositivos, por ejemplo, un dispositivo móvil puede ser una tableta o un smartphone |
 |`Model` | cadena | Nombre del modelo o número del producto del proveedor o fabricante |

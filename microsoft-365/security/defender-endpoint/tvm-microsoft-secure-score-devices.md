@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d086c2aa86b144a08337182b4631e0bab46c66f5a892e76588d9950ba918d33
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc25da8c4cffa5c67747ea02a0f431c0c2c7a436
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799652"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166774"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Puntuación de seguridad de Microsoft para dispositivos
 
@@ -32,7 +32,7 @@ ms.locfileid: "53799652"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -64,7 +64,7 @@ Los cambios pueden tardar hasta unas horas en reflejarse en el panel.
 
 3. Seleccione **Guardar preferencias**.
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 >[!NOTE]
 > La puntuación segura de Microsoft para dispositivos actualmente admite configuraciones establecidas a través de la directiva de grupo. Debido a la compatibilidad parcial actual de Intune, las configuraciones que podrían haber sido configuradas a través de Intune podrían aparecer como mal configuradas. Póngase en contacto con el administrador de TI para comprobar el estado de configuración real en caso de que su organización use Intune para la administración de configuración segura.

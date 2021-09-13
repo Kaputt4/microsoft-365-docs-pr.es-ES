@@ -13,16 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal en Microsoft 365 para conservar el contenido relevante para una investigación o un caso legal.
-ms.openlocfilehash: 69689bc2f23b2be16ded9a6546c66a7d9ee18caf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 57e825822ac622d224a402d677d4951ad9fa444a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165931"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -40,9 +41,9 @@ Al crear una retención, tiene las siguientes opciones para tener en cuenta el c
 
 Para crear una retención de exhibición de documentos electrónicos asociada a un caso de exhibición de documentos electrónicos principal:
   
-1. Vaya a e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los [https://compliance.microsoft.com](https://compliance.microsoft.com) permisos de exhibición de documentos electrónicos adecuados.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de exhibición de documentos electrónicos adecuados.
 
-2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en Mostrar todo y, a continuación, haga clic en **Exhibición de documentos electrónicos > Core**.
+2. En el panel de navegación izquierdo, haga clic **en Mostrar todo** y, a continuación, haga clic en **Exhibición de documentos electrónicos > Core**.
 
 3. En la **página Exhibición de documentos electrónicos** principal, haga clic en el nombre del caso en el que desea crear la retención.
 
@@ -54,7 +55,7 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
 
 7. En la **página Asistente** para elegir ubicaciones, elija las ubicaciones de contenido que desea poner en espera. Puede retener buzones, sitios y carpetas públicas.
 
-    ![Elija las ubicaciones de contenido que desea poner en espera.](../media/eDiscoveryHoldLocations.png)
+    ![Elegir las ubicaciones de contenido para colocar en suspensión.](../media/eDiscoveryHoldLocations.png)
   
    1. **Buzones de Exchange**: establezca el botón de alternancia en **Activado** y después haga clic en **Elegir usuarios, grupos o equipos** para especificar los buzones para colocar en suspensión. Use el cuadro de búsqueda para encontrar buzones de usuario y grupos de distribución (para colocar una suspensión en los buzones de miembros de grupo) para suspenderlos. También puede colocar una retención en el buzón asociado para un grupo de Microsoft, Office 365 grupo y Yammer grupo. Para obtener más información acerca de los datos de la aplicación que se conservan cuando se coloca un buzón en espera, vea Contenido almacenado en buzones [para exhibición de](what-is-stored-in-exo-mailbox.md)documentos electrónicos.
 
@@ -130,7 +131,7 @@ Las conversaciones que forman parte de un canal Microsoft Teams se almacenan en 
 Como alternativa, las conversaciones que forman parte de la lista chat de Teams (llamadas *chats 1:1* o chats de grupo *1:N)* se almacenan en los buzones de los usuarios que participan en el chat. Y los archivos que los usuarios comparten en conversaciones de chat se almacenan en OneDrive cuenta del usuario que comparte el archivo. Por lo tanto, debe agregar los buzones de usuario individuales y las OneDrive a una retención de exhibición de documentos electrónicos para conservar conversaciones y archivos en la lista de chat. Es una buena idea colocar una retención en los buzones de los miembros de un equipo de Microsoft, además de poner el buzón de equipo y el sitio en espera.
 
 > [!NOTE]
-> Si su organización tiene una implementación híbrida de Exchange (o su organización sincroniza una organización de Exchange local con Office 365) y ha habilitado Microsoft Teams, los usuarios locales pueden usar la aplicación de chat de Teams y participar en chats 1:1 y chats de grupo 1:N. Estas conversaciones se almacenan en almacenamiento basado en la nube que está asociado con un usuario local. Si un usuario local se coloca en una retención de exhibición de documentos electrónicos, se conservará el Teams de chat en el almacenamiento basado en la nube. Para obtener más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
+> Si su organización tiene una implementación híbrida de Exchange (o su organización sincroniza una organización de Exchange local con Office 365) y ha habilitado Microsoft Teams, los usuarios locales pueden usar la aplicación de chat de Teams y participar en chats 1:1 y chats de grupo 1:N. Estas conversaciones se almacenan en almacenamiento basado en la nube que está asociado con un usuario local. Si un usuario local se coloca en una retención de exhibición de documentos electrónicos, se conservará el Teams de chat en el almacenamiento basado en la nube. Para más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Para obtener más información acerca de cómo conservar Teams contenido, vea [Colocar un Microsoft Teams usuario o](/MicrosoftTeams/legal-hold)equipo en retención legal .
 
@@ -177,7 +178,7 @@ Tenga en cuenta lo siguiente al colocar grupos Teams y Office 365 en una retenci
   
 - Cuando se busca en el buzón de un usuario, no se buscará en ningún grupo o grupo de Office 365 del que el usuario sea miembro. Del mismo modo, cuando se coloca un grupo o un grupo Office 365 en retención de exhibición de documentos electrónicos, solo el buzón de grupo y el sitio de grupo se colocan en espera. Los buzones y OneDrive para la Empresa de los miembros del grupo no se ponen en espera a menos que los agregue explícitamente a la retención de exhibición de documentos electrónicos. Por lo tanto, si tiene que poner un grupo o un grupo de Office 365 en espera por un motivo legal, considere la posibilidad de agregar los buzones y las cuentas OneDrive de los miembros del equipo o grupo en la misma retención.
 
-- Para obtener una lista de los miembros de un grupo o grupo  de Office 365, puede ver las propiedades en la página Grupos en el Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
+- Para obtener una lista de los miembros de un grupo o grupo <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> de Office 365, puede ver las propiedades en la página Grupos en el Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
 
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

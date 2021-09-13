@@ -17,11 +17,11 @@ ms.collection:
 ms.custom: ''
 description: Configure la infraestructura y seguridad que permita a los empleados trabajar de forma remota desde cualquier lugar y en cualquier momento.
 ms.openlocfilehash: 38dc7110c44b3b9acf20283a4156b3eccc0f2165
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572784"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165472"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurar un equipo con aislamiento de seguridad en un entorno de desarrollo y pruebas
 
@@ -161,7 +161,7 @@ Siga estos pasos:
 
 Después, publique la nueva etiqueta con estos pasos:
 
-1. En el Centro de cumplimiento de Microsoft 365, en la página **Protección de la información**, escoja la pestaña **Directivas de etiqueta**.
+1. En el Centro de cumplimiento de Microsoft 365, en la página **Protección de la información**, escoja la pestaña **Directivas de etiqueta**.
 2. Haga clic en **Publicar etiquetas**.
 3. En la página **Elegir etiquetas de confidencialidad para publicar**, haga clic en **Elija las etiquetas de confidencialidad para publicar**.
 4. Seleccione **Estrategia de la empresa** y, después, haga clic en **Agregar**.

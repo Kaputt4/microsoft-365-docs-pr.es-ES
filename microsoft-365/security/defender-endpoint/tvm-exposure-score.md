@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: be60d8f4c8adae02a1a5e388a5b75e717dd5eb51
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565827"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166790"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Puntuación de exposición: Administración de amenazas y vulnerabilidades
 
@@ -47,7 +47,7 @@ La tarjeta te ofrece una vista de alto nivel de la tendencia de puntuación de e
 
 ![Tarjeta de puntuación de exposición.](images/tvm_exp_score.png)
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 La puntuación de exposición se divide en los siguientes niveles:
 

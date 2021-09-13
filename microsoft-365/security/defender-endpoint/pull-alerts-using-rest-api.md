@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2bf5d76b0f5f9638105870a872fdc4efa38157b6df4a694b1610ff3e21964257
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4a72c7d363ab57c8c108279c71a3e1424e88a577
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166918"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Extraer Microsoft Defender para detecciones de puntos de conexión con la API de REST de SIEM
 
@@ -107,27 +107,27 @@ Ahora puede usar el valor en el campo *access_token* en una solicitud a la API d
 Con un token de acceso, la aplicación puede realizar solicitudes autenticadas a la API de Microsoft Defender para endpoints. Su aplicación debe anexar el token de acceso al encabezado de autorización de cada solicitud.
 
 ### <a name="request-syntax"></a>Sintaxis de solicitud
-Method | URI de solicitud
+Método | URI de solicitud
 :---|:---|
 GET| Use el URI aplicable para su región. <br><br> **Para la UE**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **Para EE. UU.**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **Para Reino Unido**: `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
 ### <a name="request-header"></a>Encabezado de solicitud
 Encabezado | Tipo | Descripción|
 :--|:--|:--
-Authorization | string | Obligatorio. El token de acceso de Azure AD con el formato **Bearer** &lt; *token* &gt; . |
+Authorization | string | Necesario. El token de acceso de Azure AD con el formato **Bearer** &lt; *token* &gt; . |
 
 ### <a name="request-parameters"></a>Parámetros de la solicitud
 
 Use parámetros de consulta opcionales para especificar y controlar la cantidad de datos devueltos en una respuesta. Si llama a este método sin parámetros, la respuesta contiene todas las alertas de la organización en las últimas 2 horas.
 
-Nombre | Valor| Description
+Name | Valor| Descripción
 :---|:---|:---
 sinceTimeUtc | DateTime | Define las alertas de límite de tiempo inferior de las que se recuperan, según el campo: <br> `LastProcessedTimeUtc` <br> El intervalo de tiempo será: de la hora sinceTimeUtc a la hora actual. <br><br> **NOTA:** Cuando no se especifica, se recuperan todas las alertas generadas en las últimas dos horas.
 untilTimeUtc | DateTime | Define las alertas enlazadas de tiempo superior que se recuperan. <br> El intervalo de tiempo será: de `sinceTimeUtc` vez en `untilTimeUtc` cuando. <br><br> **NOTA**: Cuando no se especifica, el valor predeterminado será la hora actual.
-ago | cadena | Extrae alertas en el siguiente intervalo de tiempo: `(current_time - ago)` de vez en `current_time` cuando. <br><br> El valor debe establecerse según **el formato de duración ISO 8601** <br> Ejemplo: `ago=PT10M` extraerá las alertas recibidas en los últimos 10 minutos.
+ago | string | Extrae alertas en el siguiente intervalo de tiempo: `(current_time - ago)` de vez en `current_time` cuando. <br><br> El valor debe establecerse según **el formato de duración ISO 8601** <br> Ejemplo: `ago=PT10M` extraerá las alertas recibidas en los últimos 10 minutos.
 límite | Entero | Define el número de alertas que se recuperarán. Las alertas más recientes se recuperarán en función del número definido.<br><br> **NOTA**: Cuando no se especifique, se recuperarán todas las alertas disponibles en el intervalo de tiempo.
-machinegroups | cadena | Especifica los grupos de dispositivos de los que extraer alertas. <br><br> **NOTA:** Cuando no se especifica, se recuperarán las alertas de todos los grupos de dispositivos. <br><br> Ejemplo: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
-DeviceCreatedMachineTags | cadena | Etiqueta de dispositivo única del Registro.
+machinegroups | string | Especifica los grupos de dispositivos de los que extraer alertas. <br><br> **NOTA:** Cuando no se especifica, se recuperarán las alertas de todos los grupos de dispositivos. <br><br> Ejemplo: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+DeviceCreatedMachineTags | string | Etiqueta de dispositivo única del Registro.
 CloudCreatedMachineTags | cadena | Etiquetas de dispositivo que se crearon en Centro de seguridad de Microsoft Defender.
 
 ### <a name="request-example"></a>Ejemplo de solicitud
@@ -329,7 +329,7 @@ echo $apiResponse
 ## <a name="error-codes"></a>Códigos de error
 La API de REST de Microsoft Defender para endpoint devuelve los siguientes códigos de error causados por una solicitud no válida.
 
-Código de error HTTP | Description
+Código de error HTTP | Descripción
 :---|:---
 401 | Solicitud malformada o token no válido.
 403 | Excepción no autorizada: el administrador de inquilinos no administra ninguno de los dominios o se elimina el estado del espacio empresarial.

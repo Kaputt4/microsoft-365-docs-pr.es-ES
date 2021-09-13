@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365 y averiguar cuántas licencias de productos se usan.
 ms.openlocfilehash: 456d561246a1c2073b571fa5c48ed97cc9f71849
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393453"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166518"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Evaluar el informe Microsoft 365 usuarios activos
 

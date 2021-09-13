@@ -16,20 +16,21 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 - PowerShell
+- admindeeplinkMAC
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: Use PowerShell para Microsoft 365 para configurar las propiedades de cuentas de usuario individuales o varias en el Microsoft 365 inquilino.
-ms.openlocfilehash: 23d89448eb9f34d67ada8711b8ca6463a0f6acd7
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: b638a3afafd3c1701cf11f5868d0413d3995eadd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165830"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Configurar Microsoft 365 de cuenta de usuario con PowerShell
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede usar el Centro de administración de Microsoft 365 para configurar las propiedades de las cuentas de usuario de su Microsoft 365 inquilino. En PowerShell, también puede hacerlo, además de otras cosas que no puede hacer en el Centro de administración.
+Puede usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para configurar las propiedades de las cuentas de usuario de su Microsoft 365 inquilino. En PowerShell, también puede hacerlo, además de otras cosas que no puede hacer en el Centro de administración.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 

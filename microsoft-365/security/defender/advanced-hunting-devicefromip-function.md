@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 3ea951e35555721a989001b2a5235df5b89a8a55
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933186"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166739"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -43,7 +43,7 @@ Usa la función de las consultas de búsqueda avanzadas para obtener rápidament
 
 Esta función devuelve una tabla con las siguientes columnas:
 
-| Column | Tipo de datos | Descripción |
+| Columna | Tipo de datos | Descripción |
 |------------|-------------|-------------|
 | `IP` | string | Dirección IP  |
 | `DeviceId` | cadena | Identificador único del dispositivo en el servicio |
@@ -62,7 +62,7 @@ Esta función se invoca como parte de una consulta.
 - **x**: el primer parámetro suele ser ya una columna de la consulta. En este caso, es la columna denominada , la dirección IP para la que desea ver una lista de dispositivos que se le han `IP` asignado. Debe ser una dirección IP local. No se admiten direcciones IP externas.
 - **y**— Un segundo parámetro opcional es el , que indica a la función que obtenga los `Timestamp` dispositivos asignados más recientes a partir de una hora específica. Si no se especifica, la función devuelve los registros disponibles más recientes.
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
 
 ### <a name="get-the-latest-devices-that-have-been-assigned-specific-ip-addresses"></a>Obtener los dispositivos más recientes a los que se han asignado direcciones IP específicas

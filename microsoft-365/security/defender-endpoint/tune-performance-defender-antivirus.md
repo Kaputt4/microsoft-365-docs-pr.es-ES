@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d38fe9f7c3bb19c946f97d00720cd8bf60c18f4c
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.openlocfilehash: 964447ee755d5587d03c6c3ee6cb56131013d34d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166851"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizador de rendimiento para Antivirus de Microsoft Defender
 
@@ -42,26 +42,31 @@ El proceso de alto nivel para ejecutar el analizador de rendimiento implica los 
 
 1. Ejecute el analizador de rendimiento para recopilar una grabación de rendimiento de Antivirus de Microsoft Defender eventos en el punto de conexión.
 
-> [!NOTE]
-> El rendimiento de Antivirus de Microsoft Defender eventos del tipo **Microsoft-Antimalware-Engine** se registran a través del analizador de rendimiento.
+   > [!NOTE]
+   > El rendimiento de Antivirus de Microsoft Defender eventos del tipo **Microsoft-Antimalware-Engine** se registran a través del analizador de rendimiento.
 
 2. Analice los resultados del examen con diferentes informes de grabación.
 
 ## <a name="using-performance-analyzer"></a>Uso del analizador de rendimiento
 
-Para iniciar la grabación de eventos del sistema, abra Powershell en modo administrativo y siga estos pasos:
+Para iniciar la grabación de eventos del sistema, abra PowerShell en modo administrativo y siga estos pasos:
 
 1. Ejecute el siguiente comando para iniciar la grabación:
 
-`New-MpPerformanceRecording -RecordTo <recording.etl>`
+   `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
- donde parámetro especifica la ubicación de ruta de acceso completa en la que se guarda `-RecordTo` el archivo de seguimiento. Para obtener más información sobre el cmdlet, [vea Defender](/powershell/module/defender).
+    donde parámetro especifica la ubicación de ruta de acceso completa en la que se guarda `-RecordTo` el archivo de seguimiento. Para obtener más información sobre el cmdlet, [vea Defender](/powershell/module/defender).
 
 2. Si se cree que hay procesos o servicios que afectan al rendimiento, reproduzca la situación llevando a cabo las tareas pertinentes.
+
 3. Presione **ENTRAR** para detener y guardar la grabación, o **Ctrl+C para** cancelar la grabación.
+
 4. Analice los resultados con el parámetro del analizador de `Get-MpPerformanceReport` rendimiento. Por ejemplo, al ejecutar el comando, se proporciona al usuario una lista de los diez primeros exámenes para los 3 archivos principales que afectan `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` al rendimiento. 
 
 Para obtener más información sobre parámetros y opciones de línea de comandos, vea [New-MpPerformanceRecording](#new-mpperformancerecording) y [Get-MpPerformanceReport](#get-mpperformancereport).
+
+> [!NOTE]
+> Al ejecutar una grabación, si recibe el error "No se puede iniciar la grabación de rendimiento porque la grabadora de rendimiento de Windows ya está grabando", ejecute el siguiente comando para detener el seguimiento existente con el nuevo comando: **wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
 ### <a name="performance-tuning-data-and-information"></a>Información y datos de ajuste de rendimiento
 
@@ -71,7 +76,7 @@ En función de la consulta, el usuario podrá ver datos para los recuentos de ex
 
 ### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>Funcionalidad adicional: exportar y convertir a CSV y JSON
 
-Los resultados del analizador de perfomance también se pueden exportar y convertir en un archivo CSV o JSON.
+Los resultados del analizador de rendimiento también se pueden exportar y convertir a un archivo CSV o JSON.
 Para ver ejemplos que describen el proceso de "exportación" y "conversión" a través de códigos de ejemplo, vea a continuación.
 
 #### <a name="for-csv"></a>Para CSV

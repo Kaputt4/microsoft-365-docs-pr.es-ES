@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: En este artículo se describe cómo administrar los casos principales de exhibición de documentos electrónicos. Esto incluye cerrar un caso, volver a abrir un caso cerrado y eliminar un caso.
 ms.openlocfilehash: 67961d2404f54ca3fbb33dabc71508ba65bfa205
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573300"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166022"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos principal
 

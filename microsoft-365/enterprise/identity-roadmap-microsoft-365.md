@@ -17,11 +17,11 @@ ms.collection:
 ms.custom: ''
 description: El mapa de ruta para la identidad de Microsoft 365.
 ms.openlocfilehash: 27abe04da2fed0eaae09fa0ed42a83286fe74f5d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167291"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Plan de identidad para Microsoft 365
 

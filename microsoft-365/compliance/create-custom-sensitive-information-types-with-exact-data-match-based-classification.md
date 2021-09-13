@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55ea055c1e69b3f7cecd334758d5343fadc408ee
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 70ff6fd0fbfade147f23d69a0ea9684ef9b63ba7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165947"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -443,12 +443,13 @@ Este equipo debe tener acceso directo a su espacio empresarial de Microsoft 365.
 5. Para crear un hash y cargar los datos confidenciales, ejecute el siguiente comando en la ventana del Símbolo del sistema:
 
    ```dos
-   EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]
+   EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
 
-   Por ejemplo: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   Ejemplo: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
 
    El formato predeterminado del archivo de datos confidenciales son valores separados por comas. Puede especificar un archivo separado por tabulaciones indicando la opción "{Tab}" con el parámetro /ColumnSeparator, o bien puede especificar un archivo separado por canalización indicando la opción "|".
+   Si la tabla de información confidencial tiene algunos valores con formato incorrecto, pero desea importar los datos restantes ignorando filas no válidas de todos modos, puede usar el parámetro /AllowedBadLinesPercentage en el comando. En el ejemplo anterior se especifica un umbral del cinco por ciento. Esto significa que la herramienta hash y cargará la tabla de información confidencial incluso si hasta el cinco por ciento de las filas no son válidas. El valor predeterminado de esta configuración es el uno por ciento. 
    Este comando agregará automáticamente un valor de sal generado aleatoriamente al hash para mayor seguridad. De forma opcional, si quiere usar su propio valor de sal, agregue **/Salt <saltvalue>** al comando. Este valor debe tener 64 caracteres de longitud y solo puede contener los caracteres a-z y 0-9.
 
 6. Compruebe el estado de la carga al ejecutar este comando:
@@ -474,13 +475,13 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 1. Ejecute el siguiente comando en la ventana del Símbolo del sistema:
 
    ```dos
-   EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]
+   EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /AllowedBadLinesPercentage [value]
    ```
 
    Por ejemplo:
 
    ```dos
-   EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml
+   EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
    De este forma, se obtendrá un archivo con hash y un archivo de sal con estas extensiones si no ha especificado la opción **/Salt <saltvalue>**:

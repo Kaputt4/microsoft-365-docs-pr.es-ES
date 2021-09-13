@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: La administración de privacidad de Microsoft ofrece soluciones para evaluar los datos personales que la organización almacena en Microsoft 365 y le ayuda a identificar y corregir los riesgos de privacidad.
 ms.openlocfilehash: 1243e786dcfa936802b0e82eb217ec6fc4f45bbf
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394725"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165902"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Administración de privacidad de Microsoft (versión preliminar)
 

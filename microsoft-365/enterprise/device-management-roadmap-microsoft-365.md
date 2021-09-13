@@ -16,11 +16,11 @@ audience: ITPro
 ms.custom: microsoft-intune
 description: Guía básica para configurar la administración de dispositivos para Microsoft 365.
 ms.openlocfilehash: 2155d33aa57da5bb80dbc83623ac87a94a300f28
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356773"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167379"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Guía básica de administración de dispositivos para Microsoft 365
 

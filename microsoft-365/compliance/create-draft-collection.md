@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Una colección borrador es una búsqueda de exhibición de documentos electrónicos de orígenes de datos custodiales y no custodiales en un caso Advanced eDiscovery que devuelve una estimación de búsqueda que coincide con la consulta de búsqueda de la colección. Puede revisar las estadísticas de búsqueda, obtener una vista previa de un muestreo de elementos y revisar y volver a ejecutar la colección antes de confirmar los resultados en un conjunto de revisión.
 ms.openlocfilehash: 0354f2a04dfff82f995fe74663633f42ed01e677
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165939"
 ---
 # <a name="create-a-draft-collection-in-advanced-ediscovery"></a>Crear una colección borrador en Advanced eDiscovery
 
@@ -29,7 +29,7 @@ Después de identificar a los custodios y a los orígenes de datos que no son cu
 
 ## <a name="before-you-create-a-draft-collection"></a>Antes de crear una colección borrador
 
-- Agregue custodios y orígenes de datos no custodiados al caso antes de crear una colección borrador. Esto es necesario para que pueda seleccionar los orígenes de datos al crear una colección de borradores. Para obtener más información, vea:
+- Agregue custodios y orígenes de datos no custodiados al caso antes de crear una colección borrador. Esto es necesario para que pueda seleccionar los orígenes de datos al crear una colección de borradores. Para más información, vea:
 
   - [Agregar administradores a un caso](add-custodians-to-case.md)
 

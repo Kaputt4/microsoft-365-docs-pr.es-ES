@@ -19,11 +19,11 @@ description: Obtenga información sobre los rastreadores de amenazas, incluidos 
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 6ab8cf03b7ceb1ec01e6b30d3b0c11bbb7223b6f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566529"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165487"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 

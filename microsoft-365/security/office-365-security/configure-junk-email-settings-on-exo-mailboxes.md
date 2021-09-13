@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en Exchange Online buzones de correo. Muchas de estas opciones de configuración están disponibles para los usuarios Outlook o Outlook en la Web.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ca7de6cda731fbcbdb43af705527d1f66fe1d601a6f8178b100a71213aca2ab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c9a787c02273eeaf9e3db5174607f1b65a3c65a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56884599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166670"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar las opciones del correo no deseado en buzones de Exchange Online
 

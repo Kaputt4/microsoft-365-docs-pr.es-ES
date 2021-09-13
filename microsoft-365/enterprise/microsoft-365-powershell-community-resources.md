@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: En este artículo se proporcionan recursos de la comunidad para conectarse a sus compañeros y obtener ayuda para PowerShell para Microsoft 365.
 ms.openlocfilehash: 1546ac553b9ae97c8ef6ccd93d11f996f90fdaf7
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167230"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>Recursos de la comunidad de Microsoft 365 para PowerShell
 

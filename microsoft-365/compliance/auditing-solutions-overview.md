@@ -20,11 +20,11 @@ search.appverid:
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: f89303e22432f2e3297bec01912710daf21d7379
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570598"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166147"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Soluciones de auditoría en Microsoft 365
 

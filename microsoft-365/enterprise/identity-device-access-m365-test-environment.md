@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Crear un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades.
 ms.openlocfilehash: 53c9db06b27f0e697eb57525b563f11b819a6812
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167294"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Acceso de dispositivos e identidades en el entorno de prueba de Microsoft 365
 
@@ -45,6 +45,6 @@ Para crear un entorno de prueba que tenga las configuraciones comunes de acceso 
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

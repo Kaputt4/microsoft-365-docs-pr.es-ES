@@ -17,11 +17,11 @@ search.appverid:
 ms.custom: seo-marvel-mar2020
 description: Use palabras clave y condiciones para restringir el ámbito de la búsqueda al buscar datos mediante Advanced eDiscovery en Microsoft 365.
 ms.openlocfilehash: 00a5ab1c009f0c006aba251c770c87c1f7569fc1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564199"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166118"
 ---
 # <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>Crear consultas de búsqueda para colecciones en Advanced eDiscovery
 

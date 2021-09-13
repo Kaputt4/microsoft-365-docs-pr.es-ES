@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: adc837d0c91dfee05d0f92a28aa5c2850ddcede114beaf452b93f44e624ea40d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bfaba7423971c6ced413c6903d4f307fa8ca5e6e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166238"
 ---
 # <a name="payment-information-for-qatar"></a>Información de pago para Qatar
 

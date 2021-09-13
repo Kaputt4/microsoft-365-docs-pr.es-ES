@@ -16,12 +16,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: El Microsoft 365 Programa para partners de redes permite que el dispositivo se certifice como trabajo con Microsoft 365.
 hideEdit: true
-ms.openlocfilehash: b755b65a264cc5aebcc37119972ab4c18d7304e46a87e719911e14dc646cc1ca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1330015d11179f67cc60077f2e4b51382af2d1a3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858740"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167251"
 ---
 # <a name="microsoft-365-networking-partner-program"></a>Programa para partners de redes de Microsoft 365
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Usar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoUsar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoría+ Este script está optimizado para devolver un gran conjunto (hasta 50 000) de registros de auditoría. El script exporta dichos registros a un archivo CSV que puede visualizar o transformar mediante Power Query en Excel.
-ms.openlocfilehash: 49adbcf8b25f4a88be14b22508fbe4b97a26bbfa527844fb435c1d7892fb4779
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851868"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166150"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Usar un script de PowerShell para buscar en el registro de auditoría
 

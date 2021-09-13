@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: Obtenga información sobre qué SharePoint soluciones de 2013 se pueden hospedar en Microsoft Azure máquinas virtuales y cómo configurar Azure para hospedar una.
 ms.openlocfilehash: 937072dfec55618a4bfb8f9405bd525023ca3d44
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571343"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167182"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquitecturas de Microsoft Azure para SharePoint 2013
 

@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo proporcionar comentarios a un clasificador que se puede entrenar en el Explorador de contenido.
 ms.openlocfilehash: 7c021a1fb7a79e335f53fd99b162c9062c4f43a0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571090"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166062"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Cómo volver a entrenar un clasificador en el explorador de contenido
 
@@ -109,7 +109,7 @@ Después de un reentrenamiento, se evalúa el rendimiento del clasificador tanto
 
 Comparamos los números de rendimiento en ambos conjuntos de elementos para el clasificador reentrenado y publicado para proporcionar una recomendación sobre si hubo mejoras para volver a publicar. 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Obtenga información sobre los clasificadores entrenables](classifier-learn-about.md)
 - [Extensiones de nombres de archivo rastreados y tipos de archivo analizados de forma predeterminada en SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

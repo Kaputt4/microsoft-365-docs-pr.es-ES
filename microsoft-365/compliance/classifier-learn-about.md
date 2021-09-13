@@ -14,16 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: Un clasificador Microsoft 365 es una herramienta que se puede entrenar para reconocer varios tipos de contenido para la aplicación de directivas o de la formación, ya que le proporciona ejemplos positivos y negativos que buscar.
-ms.openlocfilehash: 6b54ab2f905d77ae59ba94e15768c7664007baaa
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ea4be5c5e429e3305373229020bfb5444912b365
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574861"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166059"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -105,7 +106,7 @@ Microsoft 365 viene con cinco clasificadores previamente formados:
 - **Discriminación:** detecta un lenguaje discriminatorio explícito y es especialmente sensible al lenguaje discriminatorio frente a las comunidades afroestadounides/negras en comparación con otras comunidades.
 
 > [!IMPORTANT]
-> El clasificador de discriminación solo está disponible como versión preliminar pública para clientes cuyas Microsoft 365 inquilinos se encuentran en centros de datos de Norteamérica. Para ver dónde se encuentra Microsoft 365 inquilino, abra el centro de Administración de Microsoft 365 y vaya **a** Configuración Configuración de la organización Ubicación de datos del  >    >    >  **perfil de organización**. 
+> El clasificador de discriminación solo está disponible como versión preliminar pública para clientes cuyas Microsoft 365 inquilinos se encuentran en centros de datos de Norteamérica. Para ver dónde se encuentra Microsoft 365 inquilino, abra el Centro de administración de Microsoft 365 y vaya **a** Configuración configuración de la organización Ficha Perfil de organización Ubicación de  >    >  [](https://go.microsoft.com/fwlink/p/?linkid=2067339)  >  **datos**. 
 
 Aparecen en la vista **clasificadores Centro de cumplimiento de Microsoft 365** clasificación de datos  >    >  **trainable con** el estado de `Ready to use` .
 
@@ -138,7 +139,7 @@ Puede ayudar a mejorar la precisión de todos los clasificadores personalizados 
 
 ![flujo de trabajo de reciclaje de clasificadores.](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

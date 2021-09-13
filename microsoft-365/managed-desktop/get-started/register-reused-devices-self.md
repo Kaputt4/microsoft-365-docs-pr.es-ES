@@ -12,11 +12,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: c817805994662b080f530b76b76cbb111ee36795
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167171"
 ---
 # <a name="register-existing-devices-yourself"></a>Registre dispositivos existentes usted mismo
 
@@ -157,7 +157,7 @@ Puedes supervisar el progreso del registro del dispositivo en la página princip
 | Registro pendiente | El registro aún no se ha realizado. Vuelva más tarde. |
 | Error de registro | No se pudo completar el registro. Consulte [Troubleshooting device registration para](#troubleshooting-device-registration) obtener más información. |
 | Listo para el usuario | El registro se ha registrado correctamente y el dispositivo ya está listo para entregarse al usuario. Escritorio administrado de Microsoft los guiará a través de la configuración por primera vez, por lo que no es necesario realizar ninguna preparación adicional. |
-| Activa | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Esto también indica que usan regularmente el dispositivo. |
+| Activo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Esto también indica que usan regularmente el dispositivo. |
 | Inactivo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Sin embargo, no han usado el dispositivo recientemente (en los últimos 7 días).  | 
 
 ### <a name="troubleshooting-device-registration"></a>Solución de problemas de registro de dispositivos

@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: Un clasificador Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
 ms.openlocfilehash: f8401193274f90ae90d773c6bb9a2a5a6a995169
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571114"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166067"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Introducción a los clasificadores que se pueden entrenar
 

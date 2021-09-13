@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: de94125566985447b10997cd354c7c9aed01630d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569950"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166763"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -44,7 +44,7 @@ Cada recomendación de seguridad incluye pasos de corrección que se pueden toma
 > [!TIP]
 > Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Cada dispositivo de la organización se puntua en función de tres factores importantes para ayudar a los clientes a centrarse en las cosas correctas en el momento adecuado.
 

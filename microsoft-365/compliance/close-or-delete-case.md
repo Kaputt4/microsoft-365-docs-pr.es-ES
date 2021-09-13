@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Obtenga información sobre qué sucede cuando se cierra o elimina una investigación o un caso legal admitido por un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 1096223c3bc6d0648aa45207595c816e26e70da8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569638"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166038"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Cerrar o eliminar un Advanced eDiscovery caso
 

@@ -20,11 +20,11 @@ ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
 ms.openlocfilehash: 2abe290fc5956b5f8df1931b2142a35df8b53817
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822801"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166974"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Revisar acciones de corrección tras una investigación automatizada
 
@@ -89,7 +89,7 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 
 |Origen de la acción|Acciones admitidas|
 |---|---|
-|<ul><li>Investigación automatizada</li><li>Antivirus de Microsoft Defender</li><li>Acciones de respuesta manuales</li></ul>|<ul><li>Aislar dispositivo</li><li>Restringir la ejecución del código</li><li>Poner en cuarentena un archivo</li><li>Quitar una clave del Registro</li><li>Detener un servicio</li><li>Deshabilitar un controlador</li><li>Quitar una tarea programada</li></ul>|
+|<ul><li>Investigación automatizada</li><li>Antivirus de Microsoft Defender</li><li>Acciones de respuesta manuales</li></ul>|<ul><li>Aislar el dispositivo</li><li>Restringir la ejecución del código</li><li>Poner en cuarentena un archivo</li><li>Quitar una clave del Registro</li><li>Detener un servicio</li><li>Deshabilitar un controlador</li><li>Quitar una tarea programada</li></ul>|
 |
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>Para deshacer varias acciones a la vez
@@ -133,6 +133,6 @@ En Microsoft Defender para endpoint, se realiza un seguimiento de todos los vere
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md)
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a las investigaciones automatizadas](automated-investigations.md)

@@ -24,11 +24,11 @@ ms.custom: migrationguides
 ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.openlocfilehash: b46cc436c9ff616f5562787327df8ec9031e0ead
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574609"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166907"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para endpoint- Fase 1: Preparar
 
@@ -110,7 +110,7 @@ Los permisos del portal Microsoft 365 Defender pueden concederse mediante permis
 
 Para habilitar la comunicación entre los dispositivos y Defender para endpoint, configure la configuración de proxy e Internet. En la tabla siguiente se incluyen vínculos a los recursos que puede usar para configurar el proxy y la configuración de Internet para varios sistemas operativos y capacidades:
 
-| Capacidades  | Sistema operativo | Recursos |
+| Capacidades  | Sistema operativo | Resources |
 |:--|:--|:--|
 | [Detección y respuesta de extremos](overview-endpoint-detection-response.md) (EDR) | [Windows 10](/windows/release-health/release-information) <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803)  | [Configurar el proxy de máquina y la configuración de conectividad a Internet](configure-proxy-internet.md) |
 | EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |

@@ -21,11 +21,11 @@ description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 25c83dedaa9f1606744e54459a0ebfb5627be752
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166574"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 

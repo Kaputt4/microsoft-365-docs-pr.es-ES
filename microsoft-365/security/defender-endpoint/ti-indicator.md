@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 158888fec2be8f310085836e1d34fbcbd8aa93df
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 3dc075caccc5724ed3ea76e5d3c06f3a5b6f7f2e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166862"
 ---
 # <a name="indicator-resource-type"></a>Tipo de recurso Indicator
 
@@ -77,15 +77,20 @@ rbacGroupIds|Lista de cadenas|Id. de grupo de dispositivo RBAC donde se expone y
 
 Los tipos de acción de indicador admitidos por la API son:
 
-- AlertAndBlock
-- Permitir
-- Auditoría
+- Permitido
 - Alerta
+- AlertAndBlock
+- Auditoría
+- Bloquear
+- BlockAndRemediate
 - Advertir
-- BlockExecution
-- BlockRemdiation
 
-La lista de tipos de acción de la API contiene las nuevas acciones de respuesta junto con las acciones de respuesta anteriores (AlertAndBlock y Alert).
+La lista de tipos de acción de la API contiene las nuevas acciones de respuesta junto con las acciones de respuesta anteriores (AlertAndBlock y Alert). Para obtener más información sobre la descripción de los tipos de acción de respuesta, vea [Create indicators](manage-indicators.md).
+
+Las acciones de respuesta allowed, Warn, Block y BlockAndRemediate IoC se encuentran en versión preliminar pública. Para obtener más información sobre la vista previa pública, [vea Public Preview: Custom file IoC enhancements and API schema update - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997).
+
+
+
 
 > [!Note]
 >

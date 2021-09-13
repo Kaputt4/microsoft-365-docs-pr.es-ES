@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Use el modelo de detección de privilegios abogado-cliente para usar la detección basada en aprendizaje automático del contenido con privilegios al revisar el contenido en un Advanced eDiscovery caso.
 ms.openlocfilehash: babf0088b7880e614234c0eea0432b0a7fa22db0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166155"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configurar la detección de privilegios de abogado-cliente en Advanced eDiscovery
 

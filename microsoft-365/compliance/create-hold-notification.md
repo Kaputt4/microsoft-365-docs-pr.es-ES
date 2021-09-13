@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Usa la herramienta Comunicaciones en un Advanced eDiscovery caso para enviar, recopilar y realizar un seguimiento de las notificaciones de retención legal.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: cc9e8c424550c2be12711d7ef098c95230b0b1a4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574369"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165926"
 ---
 # <a name="create-a-legal-hold-notice"></a>Crear un aviso de retención legal
 

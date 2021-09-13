@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 478ea1b605c4aeda5b1a6b5aec26b6abb57723ff7f82e5684a42af742afee3d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 11a6fd00524e3dd7ad456f68da6f493d74deee69
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863468"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166691"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -50,7 +50,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `NetworkAdapterName` | cadena | Nombre del adaptador de red |
 | `MacAddress` | cadena | Dirección MAC del adaptador de red |
 | `NetworkAdapterType` | cadena | Tipo de adaptador de red. Para obtener los valores posibles, consulte [esta enumeración](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `NetworkAdapterStatus` | cadena | Estado operativo del adaptador de red. Para obtener los valores posibles, consulte [esta enumeración](/dotnet/api/system.net.networkinformation.operationalstatus) |
+| `NetworkAdapterStatus` | string | Estado operativo del adaptador de red. Para obtener los valores posibles, consulte [esta enumeración](/dotnet/api/system.net.networkinformation.operationalstatus) |
 | `TunnelType` | cadena | Protocolo de túnel, si la interfaz se usa para este fin, por ejemplo, 6to4, Teredo, ISATAP, PPTP, SSTP y SSH |
 | `ConnectedNetworks` | cadena | Redes a las que está conectado el adaptador. Cada matriz JSON contiene el nombre de red, la categoría (público, privado o dominio), una descripción y una marca que indica si está conectada públicamente a Internet |
 | `DnsAddresses` | cadena | Direcciones de servidor DNS en formato de matriz JSON |

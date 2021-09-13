@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Obtenga información sobre cómo implementar Azure AD Conectar una máquina virtual en Azure para sincronizar cuentas entre el directorio local y el inquilino de Azure AD.
-ms.openlocfilehash: df41c88330eb71c67505d8a75e8268ae2acb9b01
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f3e296c7401cfc20a2f7165888825adf58528c68
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167398"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Implementar Microsoft 365 sincronización de directorios en Microsoft Azure
 
@@ -177,8 +177,7 @@ Azure AD Conectar agrega cuentas a la suscripción de Microsoft 365 desde el AD 
   
 1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com)y, a continuación, haga clic en **Administrador**.
     
-2. En el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
-    
+2. En la navegación izquierda, haga clic **en Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
 3. En la lista de las cuentas de usuarios, seleccione la casilla junto al usuario que quiere activar.
     
 4. En la página del usuario, haga clic en **Editar** para **Licencias de productos**.

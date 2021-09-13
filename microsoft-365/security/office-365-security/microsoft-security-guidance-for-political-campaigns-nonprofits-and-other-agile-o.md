@@ -23,11 +23,11 @@ description: 'Resumen: instrucciones de planeamiento e implementación para orga
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 8053714fe705735cff43b2aa85a726e8511f57b6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575689"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166622"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles
 

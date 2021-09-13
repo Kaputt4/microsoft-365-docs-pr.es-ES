@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Aprende a usar representaciones y sprites para mejorar el rendimiento de la imagen en tus SharePoint de publicación clásica en línea.
 ms.openlocfilehash: 1400b3f3bd78f6c3fda4b587b6974e3aaef18199
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568377"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167283"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Optimización de imágenes para SharePoint de publicación clásica en línea
 

@@ -20,11 +20,11 @@ f1.keywords:
 description: Obtenga información sobre cómo migrar Microsoft 365 inquilinos.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 5bc0c7b61c33f5de5e0896d9947419f553226d30
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574284"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167219"
 ---
 # <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 de inquilino a inquilino
 

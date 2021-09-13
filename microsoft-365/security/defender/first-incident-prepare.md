@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 79a8c8f20b2db4f1b3604c5e652c98a6c9898868
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58558955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165595"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Preparar la posición de seguridad para el primer incidente
 
@@ -91,7 +91,7 @@ Haga tiempo en su programación para comprobar periódicamente la sección [Aná
 
 Obtenga información sobre [cómo triage and analyze incidents](first-incident-analyze.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

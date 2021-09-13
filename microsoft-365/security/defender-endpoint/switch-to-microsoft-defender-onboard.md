@@ -24,11 +24,11 @@ ms.topic: article
 ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.openlocfilehash: 6dd5befd3dc0ef39d4a8659e6d4dcad9b372002f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572544"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166910"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para endpoint - Fase 3: Incorporación
 

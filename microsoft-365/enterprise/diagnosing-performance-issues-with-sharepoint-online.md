@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: En este artículo se muestra cómo diagnosticar problemas comunes con el sitio SharePoint Online mediante las herramientas de desarrollador de Internet Explorer.
 ms.openlocfilehash: 44e60a2144b1a9a8ecc9ef5572e5cfd988c4b8af
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561103"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167374"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosticar problemas de rendimiento con SharePoint Online
 

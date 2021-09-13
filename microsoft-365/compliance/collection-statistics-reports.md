@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo obtener acceso y usar estadísticas e informes para borradores de colecciones y colecciones que se han confirmado en un conjunto de revisión en Advanced eDiscovery.
 ms.openlocfilehash: d5c1fa3ccb8d9657570b7d0bf3640ac1834248d9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166014"
 ---
 # <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>Estadísticas e informes de colección en Advanced eDiscovery
 

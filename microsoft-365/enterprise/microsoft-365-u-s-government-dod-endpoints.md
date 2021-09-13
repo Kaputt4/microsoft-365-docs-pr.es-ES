@@ -23,11 +23,11 @@ description: Office 365 requiere conectividad a Internet. Los puntos de conexió
 hideEdit: true
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: fcd391e0f40978b0b0af991e2d6e5b1b669f381e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570982"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167214"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 Puntos de conexión de DoD del gobierno de EE.UU.
 

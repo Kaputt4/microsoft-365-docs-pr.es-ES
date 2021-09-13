@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 63a3592e2bb8a89c373910e73b0bc91d544415d6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572580"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166934"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Información general del portal del Centro de Microsoft 365 Defender
 
@@ -57,7 +57,7 @@ Cuando abra el portal, verá:
 
 Puede navegar por el portal con las opciones de menú disponibles en todas las secciones. Consulte la tabla siguiente para obtener una descripción de cada sección.
 
-Área|Description
+Área|Descripción
 :---|:---
 **(1) Panel de navegación**|Use el panel de navegación para moverse entre **Paneles**, Incidentes **,** Lista de **dispositivos** **,** Cola de alertas , Investigaciones **automatizadas** **,** Búsqueda avanzada **,** Informes , API de **&** partners, Administración de vulnerabilidades **de &,** Evaluación y **tutoriales,** Estado del **servicio,** **Administración** de configuración **y Configuración**. Seleccione las líneas horizontales en la parte superior del panel de navegación para mostrarla u ocultarla.
 **Paneles**|Acceda a las investigaciones automatizadas activas, alertas activas, estadísticas de investigaciones automatizadas, dispositivos en riesgo, usuarios en riesgo, dispositivos con problemas de sensor, estado del servicio, orígenes de detección y paneles de informes de dispositivos diarios.

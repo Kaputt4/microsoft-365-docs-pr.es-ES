@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a Microsoft 365 buzones de correo.
-ms.openlocfilehash: 70e01994c69d838693eaf453005a829d99f2cc4e
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.openlocfilehash: c2d8d3c048654c6c665cba34254a5362cd3b88c1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928733"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166187"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archivar datos de terceros en Microsoft 365
 
@@ -86,10 +86,10 @@ Para poder archivar datos de terceros en Microsoft 365, debe trabajar con Verita
 |[Reuters Dealing](archive-reutersdealing-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Reuters Eikon](archive-reuterseikon-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Reuters FX](archive-reutersfx-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
-|[RingCentral](archive-ringcentral-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
+|[RingCentral](archive-ringcentral-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Salesforce Chatter](archive-salesforcechatter-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
 |[ServiceNow](archive-servicenow-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
-|[Skype Empresarial](archive-skypeforbusiness-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
+|[Skype Empresarial](archive-skypeforbusiness-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Margen de demora eDiscovery](archive-slack-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Symphony](archive-symphony-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Texto delimitado](archive-text-delimited-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
@@ -99,6 +99,7 @@ Para poder archivar datos de terceros en Microsoft 365, debe trabajar con Verita
 |[XIP](archive-xip-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[XSLT/XML](archive-xslt-xml-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
 |[Yieldbroker](archive-yieldbroker-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
+|[YouTube](archive-youtube-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Reuniones de Zoom](archive-zoommeetings-data.md)     |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 ||||||||
 
@@ -266,6 +267,7 @@ Algunos conectores de datos están disponibles en la nube de Us Government. Las 
 |Archivador de red SMS/MMS de Bell | Sí | No | No |
 |Archivador de números de empresa | Sí | No | No |
 |SMS de O2 y archivador de red de voz | Sí         | No | No |
+|Archivador de red social | Sí         | No | No |
 |Archivador de Signal | Sí | No | No |
 |Archivador de Telegram | Sí | No | No |
 |Archivador de red DE SMS TELUS | Sí | No | No |

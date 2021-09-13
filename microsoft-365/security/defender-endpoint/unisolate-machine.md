@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 848d422828a4c0a8c8e5c7aa63c31f0727ea12f4
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166755"
 ---
 # <a name="release-device-from-isolation-api"></a>Liberar dispositivo de la API de aislamiento
 
@@ -78,8 +78,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/unisolate
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
-Content-Type|string|application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

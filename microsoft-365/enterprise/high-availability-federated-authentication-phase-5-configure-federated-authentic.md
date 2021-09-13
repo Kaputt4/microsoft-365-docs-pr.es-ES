@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Resumen: configure Azure AD Conectar para la autenticación federada de alta disponibilidad para Microsoft 365 en Microsoft Azure.'
 ms.openlocfilehash: c179f45e061c1ff004f1c70e83ba0888c066f733
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167315"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Fase 5 de autenticación federada de alta disponibilidad: Configurar la autenticación federada para Microsoft 365
 
@@ -139,7 +139,7 @@ Esta es la configuración final, con nombres de marcador de posición para los s
   
 Se ha completado la infraestructura de autenticación federada de alta Microsoft 365 en Azure.
   
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   

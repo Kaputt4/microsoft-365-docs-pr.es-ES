@@ -18,11 +18,11 @@ ms.custom:
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo elegir e implementar la solución Teams de voz adecuada para su organización.
 ms.openlocfilehash: 359242ea66fc1be9af18ff10cb7e33fe26ddd83e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575377"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165484"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>Planear e implementar una solución de voz de Teams
 

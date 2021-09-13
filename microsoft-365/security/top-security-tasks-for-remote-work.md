@@ -16,11 +16,11 @@ ms.collection:
 - remotework
 description: Proteja el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, como ransomware, phishing y datos adjuntos malintencionados.
 ms.openlocfilehash: f0918f9cd6d23e5ebafb0a7aaf8208e1a06bfee5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571234"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165496"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa
 
@@ -44,7 +44,7 @@ Para los clientes que usan nuestros planes de empresa, Microsoft recomienda comp
 |---|---|---|---|---|
 |1|[Habilitar la autenticación multifactor de Azure AD (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Protección contra amenazas](#2-protect-against-threats)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[Configurar Microsoft Defender para Office 365](#3-configure-microsoft-defender-for-office-365)|||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3|[Configurar Microsoft Defender para Office 365](#3-configure-microsoft-defender-for-office-365)|||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Configurar Microsoft Defender para la identidad](#4-configure-microsoft-defender-for-identity)|||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Activar Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Configurar la protección de aplicaciones móviles de Intune para teléfonos y tabletas](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -52,7 +52,7 @@ Para los clientes que usan nuestros planes de empresa, Microsoft recomienda comp
 |8 |[Inscribir equipos en la administración de dispositivos y requerir equipos compatibles](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Optimizar la red para la conectividad en la nube](#9-optimize-your-network-for-cloud-connectivity)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10|[Entrenar a los usuarios](#10-train-users)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11 |[Introducción a Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11|[Introducción a Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[Supervisar amenazas y tomar medidas](#12-monitor-for-threats-and-take-action)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
@@ -81,7 +81,7 @@ La aplicación de estas directivas solo llevará unos minutos, pero estará prep
 
 Todos Microsoft 365 planes incluyen una variedad de características de protección contra amenazas. La protección contra los cambios en estas características tarda solo unos minutos.
 
-- Protección antimalware
+- Protección contra malware
 - Protección contra archivos y direcciones URL malintencionadas
 - Protección contra phishing
 - Protección contra correo no deseado
@@ -208,7 +208,7 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 
 ****
 
-|Concepto|Recursos|
+|Concepto|Resources|
 |---|---|
 |Microsoft 365|[Caminos de aprendizaje personalizables](/office365/customlearning/) <p>Estos recursos pueden ayudarle a crear formación para los usuarios finales de su organización|
 |Centro de seguridad de Microsoft 365|[Learning: proteja su organización con seguridad inteligente integrada desde Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Este módulo le permite describir cómo funcionan Microsoft 365 de seguridad conjuntas y para expresar las ventajas de estas características de seguridad.|

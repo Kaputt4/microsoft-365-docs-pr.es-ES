@@ -14,11 +14,11 @@ ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Brinda una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
 ms.openlocfilehash: 404670e42f46b249b748d0a54f882c631c6f91ee
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570082"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167243"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 para empresas
 

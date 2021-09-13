@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Obtenga información sobre cómo actualizar de Microsoft Teams gratuita a una nueva suscripción Microsoft 365 para empresas.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 326c76c2939e6312eb6ef9865e1197b16e6d0c702af1594517913bc3ba7d52f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea80492344f76ead19aa5db1e504c2c52a9746c1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167556"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Actualizar de Microsoft Teams gratuito a Microsoft 365 para empresas
 
@@ -68,7 +68,7 @@ Usa la cuenta de trabajo o escuela subyacente que recuperaste y la nueva contras
 
 Ahora que tiene una nueva suscripción Microsoft 365 para empresas, puede asignar licencias a los usuarios existentes en su Microsoft Teams organización gratuita.
 
-1. En el Centro de administración, vaya a **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">usuarios activos.</a>
+1. En el Centro de administración, vaya a **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
 2. Seleccione los usuarios a los que desea asignar licencias Microsoft 365 para empresas y, a continuación, **seleccione Administrar licencias de productos**.
 3. En el **panel Administrar licencias de productos,** seleccione Reemplazar **asignaciones de licencias existentes**.
 4. En el **panel Reemplazar productos existentes,** busque el Microsoft 365 para empresas que compró y cambie la alternancia a **On**.

@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: dfc770e22f0fb4fc6dbb7e7d24bc1a8690d44032
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569962"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166819"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Información del panel: Administración de amenazas y vulnerabilidades
 
@@ -61,7 +61,7 @@ Vea este vídeo para obtener una introducción rápida de lo que se encuentra en
 
 :::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="Panel de administración de amenazas y vulnerabilidades para dispositivos.":::
 
-Área|Description
+Área|Descripción
 :---|:---
 **Grupos de dispositivos seleccionados (#/#)**|Filtra los Administración de amenazas y vulnerabilidades que quieres ver en el panel y las tarjetas por grupos de dispositivos. Lo que seleccione en el filtro se aplica en todas Administración de amenazas y vulnerabilidades páginas.
 [**Puntuación de exposición**](tvm-exposure-score.md)|Consulta el estado actual de la exposición del dispositivo de tu organización a amenazas y vulnerabilidades. Varios factores afectan a la puntuación de exposición de la organización: debilidades detectadas en los dispositivos, probabilidad de que los dispositivos se incumplen, valor de los dispositivos para la organización y alertas relevantes detectadas con los dispositivos. El objetivo es reducir la puntuación de exposición de la organización para que sea más segura. Para reducir la puntuación, debe corregir los problemas de configuración de seguridad relacionados enumerados en las recomendaciones de seguridad.

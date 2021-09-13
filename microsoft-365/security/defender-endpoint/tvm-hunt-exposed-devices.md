@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: bec319f840728599f01680c32561bf3998d59381
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166782"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Buscar dispositivos expuestos: Administración de amenazas y vulnerabilidades
 
@@ -39,7 +39,7 @@ ms.locfileid: "58253373"
 
 ## <a name="use-advanced-hunting-to-find-devices-with-vulnerabilities"></a>Usar la búsqueda avanzada para buscar dispositivos con vulnerabilidades
 
-La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consulta que le permite explorar hasta 30 días de datos sin procesar. Puede inspeccionar de forma proactiva los eventos de la red para localizar indicadores y entidades de amenazas. El acceso flexible a los datos permite la búsqueda sin restricciones para amenazas conocidas y potenciales. [Más información sobre la búsqueda avanzada](advanced-hunting-overview.md)
+La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consulta que le permite explorar hasta 30 días de datos sin procesar. Puede inspeccionar eventos de forma proactiva en su red para localizar entidades e indicadores de amenazas. El acceso flexible a los datos permite la búsqueda sin restricciones para amenazas conocidas y potenciales. [Más información sobre la búsqueda avanzada](advanced-hunting-overview.md)
 
 ### <a name="schema-tables"></a>Tablas del esquema
 

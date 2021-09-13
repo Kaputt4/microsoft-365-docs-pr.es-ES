@@ -17,15 +17,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: Obtenga información sobre cómo comprobar la elegibilidad de su escuela Microsoft 365 Educación precios académicos.
 ms.date: 07/21/2020
-ms.openlocfilehash: b861092b0168fa83a8bac423caa3e29621837bc1f08d5af95502cde94c97ff4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 86bdb4338c316edf5b8bdb83a61a5a0fd2f411ee
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808853"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167544"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Comprobar la elegibilidad académica para Microsoft 365 Educación suscripciones
 
@@ -59,7 +60,7 @@ Si se deniega su elegibilidad académica, consulte [Mi escuela no es elegible. �
 
 Después de tener una Microsoft 365 Educación, puede comprobar el estado de la elegibilidad académica de su escuela en cualquier momento.
 
-1. Vaya a la [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 2. En la página principal, busque la tarjeta **de** facturación.\
     La **tarjeta de** facturación indica el estado del proceso de comprobación. La tarjeta muestra uno de los siguientes estados: aprobado, pendiente, rechazado o agregar el dominio.
 

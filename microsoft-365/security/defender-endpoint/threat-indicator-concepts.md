@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccb61bb84581ce98f0cd095b39bf53426997d4308efee4666011e9c85b9100d0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d901366e74969b0b128a49a6bd65a56046049085
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799711"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166899"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>Comprender conceptos de inteligencia sobre amenazas
 

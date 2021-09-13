@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 457df54dd2e73e7c580059cb698a2345dca92a607e730b9d98b5f27bb4e02134
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de458eed2b52b6043a4f5aaa5f8593b6136f9d37
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59166803"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Crear y ver excepciones para recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -32,7 +32,7 @@ ms.locfileid: "53853671"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -42,7 +42,7 @@ Como alternativa a una solicitud de corrección cuando una recomendación no es 
 
 Cuando se crea una excepción para una recomendación, la recomendación no estará activa hasta el final de la duración de la excepción. El estado de recomendación cambiará a **Excepción completa** o **Excepción parcial** (por grupo de dispositivos).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 Solo los usuarios con permisos de "control de excepciones" pueden administrar excepciones (incluida la creación o la cancelación). [Obtenga más información sobre los roles RBAC](user-roles.md).
 

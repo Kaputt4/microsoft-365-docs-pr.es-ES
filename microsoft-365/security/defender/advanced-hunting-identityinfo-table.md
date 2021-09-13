@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8586ce73f73eb7566d45f88a3e5ac93d222e33e0ec1ff1ece98c557fe221216e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ce1a3d5153d324d008d2d46048838351eb7bc047
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867744"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165622"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -45,21 +45,21 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
-| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
+| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
 | `OnPremSid` | cadena | Identificador de seguridad local (SID) de la cuenta |
 | `CloudSid` | cadena | Identificador de seguridad en la nube de la cuenta |
-| `GivenName` | cadena | Nombre o nombre del usuario de la cuenta |
+| `GivenName` | string | Nombre o nombre del usuario de la cuenta |
 | `Surname` | cadena | Apellidos, apellidos o apellidos del usuario de la cuenta |
 | `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
 | `Department` | cadena | Nombre del departamento al que pertenece el usuario de la cuenta |
 | `JobTitle` | cadena | Título del trabajo del usuario de la cuenta |
 | `AccountName` | cadena | Nombre de usuario de la cuenta |
-| `AccountDomain` | cadena | Dominio de la cuenta |
+| `AccountDomain` | string | Dominio de la cuenta |
 | `EmailAddress` | cadena | Dirección SMTP de la cuenta |
 | `SipProxyAddress` | cadena | Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) de la cuenta |
-| `City` | cadena | Ciudad donde se encuentra el usuario de la cuenta |
-| `Country` | cadena | País o región donde se encuentra el usuario de la cuenta |
-| `IsAccountEnabled` | booleano | Indica si la cuenta está habilitada o no |
+| `City` | string | Ciudad donde se encuentra el usuario de la cuenta |
+| `Country` | string | País o región donde se encuentra el usuario de la cuenta |
+| `IsAccountEnabled` | boolean | Indica si la cuenta está habilitada o no |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
