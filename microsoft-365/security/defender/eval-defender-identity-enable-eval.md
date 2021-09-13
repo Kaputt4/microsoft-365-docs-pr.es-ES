@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 6a89c0e9d9b8b66048ddd50ab967520987a152a9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192537"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Habilitar el entorno de evaluación para Microsoft Defender for Identity
 
@@ -60,9 +60,9 @@ A continuación, descargue, instale y configure el sensor Defender for Identity 
 
 |  |Paso     |Más información  |
 |---------|---------|---------|
-|1     | Determine cuántos sensores de Microsoft Defender para Identidad necesita.        | [Planear la capacidad de Microsoft Defender para Identity](/defender-for-identity/capacity-planning)   |
+|1     | Determine cuántos sensores de Microsoft Defender para Identidad necesita.        | [Capacidad del plan para Microsoft Defender for Identity](/defender-for-identity/capacity-planning)   |
 |2     | Descargar el paquete de instalación del sensor  |  [Inicio rápido: descargar el paquete de instalación del sensor de Microsoft Defender para identidad](/defender-for-identity/install-step3)   |
-|3      | Instalar el sensor Defender for Identity    |  [Inicio rápido: instalar el sensor de Microsoft Defender para identidad](/defender-for-identity/install-step4)       |
+|3     | Instalar el sensor Defender for Identity    |  [Inicio rápido: instalar el sensor de Microsoft Defender para identidad](/defender-for-identity/install-step4)       |
 |4      | Configurar el sensor       |  [Configuración de Microsoft Defender para la configuración del sensor de identidad ](/defender-for-identity/install-step5)   |
 |   |         |         |
 
@@ -84,7 +84,7 @@ Para asegurarse de que Windows clientes y servidores permiten que la cuenta de D
 
 Para obtener instrucciones sobre cómo hacerlo, consulte [Configure Microsoft Defender for Identity to make remote calls to SAM](/defender-for-identity/install-step8-samr). 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Paso 3 de 3: [Piloto de Microsoft Defender para identidad](eval-defender-identity-pilot.md)
 

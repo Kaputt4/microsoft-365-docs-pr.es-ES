@@ -10,11 +10,11 @@ search.appverid: ''
 localization_priority: Normal
 description: Obtenga información sobre cómo usar el modo de accesibilidad al entrenar un modelo en SharePoint Syntex.
 ms.openlocfilehash: 73a867c3157d3debc584995708a337c36b6b0028
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573756"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192894"
 ---
 # <a name="sharepoint-syntex-accessibility-mode"></a>Modo de accesibilidad de SharePoint Syntex
 

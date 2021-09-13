@@ -14,11 +14,11 @@ ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Use esta guía básica para configurar software de cliente y servidor para Microsoft 365.
 ms.openlocfilehash: 66d6483df4d1bec1ea0c935f7a0b936f2e0fddcf
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356137"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192857"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Guía básica de software de cliente y servidor para Microsoft 365
 

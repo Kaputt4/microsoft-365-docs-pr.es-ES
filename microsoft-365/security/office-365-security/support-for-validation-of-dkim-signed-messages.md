@@ -16,12 +16,12 @@ ms.collection:
 description: Obtenga información sobre la validación de mensajes firmados dkim en Exchange Online Protection y Exchange Online
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1986ebee428f047d02388e1c30a76a54fa32517208744b2c9fea6cbf327f024
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8695e25000390cf6c5d58adf63db1984c873d75b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56816079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192274"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Compatibilidad para la validación de mensajes firmados con DKIM
 

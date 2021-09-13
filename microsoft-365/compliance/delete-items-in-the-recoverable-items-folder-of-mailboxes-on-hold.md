@@ -19,11 +19,11 @@ ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Obtenga información sobre cómo los administradores pueden eliminar elementos de la carpeta Elementos recuperables de un usuario para un buzón Exchange Online, incluso si ese buzón está en retención legal.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 01242e2c5f00cd1e5aef0ac0f6f7f6e1d47a56ce
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502668"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193187"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube
 
@@ -66,7 +66,7 @@ Este primer paso consiste en recopilar las propiedades seleccionadas del buzón 
 
 Además, debe obtener la configuración de acceso de cliente de buzón para poder deshabilitarlas temporalmente para que el propietario (u otros usuarios) no pueda acceder al buzón durante este procedimiento. Por último, puede obtener el tamaño actual y el número de elementos en la carpeta Elementos recuperables. Después de eliminar elementos de la carpeta Elementos recuperables del paso 5, usará esta información para comprobar que se quitaron los elementos.
   
-1. [Conexión al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Asegúrese de usar un nombre de usuario y una contraseña para una cuenta de administrador a la que se han asignado los roles de administración adecuados en Exchange Online.
+1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). Asegúrese de usar un nombre de usuario y una contraseña para una cuenta de administrador a la que se han asignado los roles de administración adecuados en Exchange Online.
 
 2. Ejecute el siguiente comando para obtener información sobre la recuperación de un solo elemento y el período de retención de elementos eliminados.
 

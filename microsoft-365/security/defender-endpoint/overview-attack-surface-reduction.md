@@ -20,11 +20,11 @@ ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
 ms.openlocfilehash: 336fbbbbbe07747a8dbe12c46fd3bbe2483c08b9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256184"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192674"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>Información general sobre las capacidades de reducción de superficie de ataque
 
@@ -49,7 +49,7 @@ Como se mencionó en el vídeo, Defender for Endpoint incluye varias funcionalid
 | Artículo | Descripción |
 |:---|:---|
 | [Aislamiento basado en hardware](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Proteger y mantener la integridad de un sistema cuando se inicia y mientras se ejecuta. Validar la integridad del sistema mediante la atestación local y remota. Use el aislamiento de contenedores Microsoft Edge para ayudar a proteger contra sitios web malintencionados. |
-| [Control de aplicaciones](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Use el control de aplicaciones para que las aplicaciones deben ganar confianza para poder ejecutarse. |
+| [Control de la aplicación](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Use el control de aplicaciones para que las aplicaciones deben ganar confianza para poder ejecutarse. |
 | [Acceso controlado a carpetas](controlled-folders.md) | Ayudar a evitar que las aplicaciones malintencionadas o sospechosas (incluido el malware ransomware cifrado de archivos) realicen cambios en los archivos de las carpetas clave del sistema (requiere Antivirus de Microsoft Defender) |
 | [Protección de red](network-protection.md) | Amplíe la protección al tráfico de red y la conectividad en los dispositivos de su organización. (Requiere Antivirus de Microsoft Defender) |
 | [Protección contra vulnerabilidades de seguridad](exploit-protection.md) | Ayude a proteger los sistemas operativos y las aplicaciones que usa su organización para evitar que se aprovechen. La protección contra vulnerabilidades de seguridad también funciona con soluciones antivirus de terceros. |

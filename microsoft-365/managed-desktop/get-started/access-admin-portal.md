@@ -11,11 +11,11 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.openlocfilehash: e438e9a84b86bd4c3360022c0558480f317144e7
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58602918"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192787"
 ---
 # <a name="access-the-admin-portal"></a>Acceso al portal de administración
 

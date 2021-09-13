@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Use Configuration Manager para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
 ms.openlocfilehash: 309f6b7ee396baba0fcec0061d48f062510d7350
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193064"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Incorporar dispositivos Windows 10 con Configuration Manager
 
@@ -77,7 +77,7 @@ Value: 0 or 1
 ```
 Donde:<br>
 El tipo de clave es un D-WORD. <br>
-Los valores posibles son:
+Los posibles valores son:
 - 0: no permite el uso compartido de muestras desde este dispositivo
 - 1: permite compartir todos los tipos de archivo desde este dispositivo
 

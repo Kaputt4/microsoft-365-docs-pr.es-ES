@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Use un script local para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
 ms.openlocfilehash: 18e1230285df0c462000454f2b13ac5bb2245e92
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193057"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Incorporar dispositivos Windows 10 mediante un script local
 

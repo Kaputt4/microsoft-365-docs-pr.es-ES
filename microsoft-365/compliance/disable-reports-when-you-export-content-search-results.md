@@ -18,11 +18,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Edite el Windows en el equipo local para deshabilitar los informes al exportar los resultados de una búsqueda de contenido desde el Centro de cumplimiento de Microsoft 365.
 ms.openlocfilehash: efe9ea768b68524dbfda003796a10d60453862bc
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193157"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Deshabilitar informes al exportar los resultados de búsqueda de contenido
 

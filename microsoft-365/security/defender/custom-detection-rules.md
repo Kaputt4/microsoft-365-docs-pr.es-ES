@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 69775e57bda2c49af2fe4c0b2c81ba86394073a5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: c1d0095860242492dc8dd5e370f8583aaed7cff4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565731"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192567"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -36,15 +36,15 @@ ms.locfileid: "58565731"
 - Microsoft 365 Defender
 - Microsoft Defender para punto de conexión
 
-Las reglas de detección personalizadas son reglas que puedes diseñar y ajustar [con](advanced-hunting-overview.md) consultas avanzadas de búsqueda. Estas reglas le permiten supervisar proactivamente varios eventos y estados del sistema, incluidos la actividad de infracción sospechosa y los extremos mal configurados. Puede configurarlos para que se ejecuten a intervalos regulares, generando alertas y llevando a cabo acciones de respuesta siempre que haya coincidencias.
+Las reglas de detección personalizadas son reglas que puedes diseñar y ajustar [con](advanced-hunting-overview.md) consultas avanzadas de búsqueda. Estas reglas le permiten supervisar proactivamente varios eventos y estados del sistema, incluidos la actividad de infracción sospechosa y los extremos mal configurados. Puede configurarlas para que se ejecuten a intervalos regulares, generando alertas y llevando a cabo acciones de respuesta siempre que haya coincidencias.
 
 ## <a name="required-permissions-for-managing-custom-detections"></a>Permisos necesarios para administrar detecciones personalizadas
 
 Para administrar detecciones personalizadas, debe tener asignado uno de estos roles:
 
-- **Administrador de** seguridad: los usuarios [con este Azure Active Directory pueden](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) administrar la configuración de seguridad en el portal de Microsoft 365 Defender y otros portales y servicios.
+- **Administrador de** seguridad: los usuarios [con este Azure Active Directory pueden](/azure/active-directory/roles/permissions-reference#security-administrator) administrar la configuración de seguridad en el portal de Microsoft 365 Defender y otros portales y servicios.
 
-- **Operador de** seguridad: los usuarios con este rol Azure Active Directory pueden administrar alertas y tener acceso global de solo lectura [a](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) características relacionadas con la seguridad, incluida toda la información del portal Microsoft 365 Defender seguridad. Este rol es suficiente para administrar detecciones personalizadas solo si el control de acceso basado en roles (RBAC) está desactivado en Microsoft Defender para endpoint. Si tiene RBAC configurado, también necesita el permiso administrar la configuración **de seguridad** para Defender para endpoint.
+- **Operador de** seguridad: los usuarios con este rol Azure Active Directory pueden administrar alertas y tener acceso global de solo lectura [a](/azure/active-directory/roles/permissions-reference#security-operator) características relacionadas con la seguridad, incluida toda la información del portal Microsoft 365 Defender seguridad. Este rol es suficiente para administrar detecciones personalizadas solo si el control de acceso basado en roles (RBAC) está desactivado en Microsoft Defender para endpoint. Si tiene RBAC configurado, también necesita el permiso administrar la configuración **de seguridad** para Defender para endpoint.
 
 También puede administrar detecciones personalizadas que se aplican a los datos de soluciones Microsoft 365 Defender específicas si tiene permisos para ellas. Si solo tiene permisos para administrar Microsoft 365 Defender para Office, por ejemplo, puede crear detecciones personalizadas con tablas, pero `Email` no `Identity` tablas.  
 
@@ -59,10 +59,10 @@ Para administrar los permisos necesarios, un **administrador global** puede:
 ## <a name="create-a-custom-detection-rule"></a>Crear una regla de detección personalizada
 ### <a name="1-prepare-the-query"></a>1. Prepare la consulta.
 
-En el portal Microsoft 365 Defender, vaya a **Búsqueda avanzada** y seleccione una consulta existente o cree una nueva consulta. Al usar una nueva consulta, ejecute la consulta para identificar errores y comprender los posibles resultados.
+En el portal Microsoft 365 Defender, vaya a **Búsqueda avanzada** y seleccione una consulta existente o cree una nueva consulta. Al usar una nueva consulta, ejecútela para identificar errores y comprender los posibles resultados.
 
 >[!IMPORTANT]
->Para evitar que el servicio devuelva demasiadas alertas, cada regla se limita a generar solo 100 alertas cada vez que se ejecuta. Antes de crear una regla, ajusta la consulta para evitar alertas de actividad normal del día a día.
+>Para evitar que el servicio devuelva demasiadas alertas, cada regla se limita a generar solo 100 alertas cada vez que se ejecuta. Antes de crear una regla, ajuste la consulta para evitar alertas de actividad normal diaria.
 
 
 #### <a name="required-columns-in-the-query-results"></a>Columnas necesarias en los resultados de la consulta
@@ -70,13 +70,13 @@ Para crear una regla de detección personalizada, la consulta debe devolver las 
 
 - `Timestamp`— se usa para establecer la marca de tiempo de las alertas generadas
 - `ReportId`: habilita las búsquedas de los registros originales
-- Una de las siguientes columnas que identifican dispositivos, usuarios o buzones específicos:
+- Una de las siguientes columnas que identifica dispositivos, usuarios o buzones específicos:
     - `DeviceId`
     - `DeviceName`
     - `RemoteDeviceName`
     - `RecipientEmailAddress`
-    - `SenderFromAddress` (remitente de sobre o Return-Path dirección)
-    - `SenderMailFromAddress` (dirección de remitente mostrada por el cliente de correo electrónico)
+    - `SenderFromAddress` (remitente de sobre o dirección de la Ruta de Devolución),
+    - `SenderMailFromAddress` (dirección de remitente mostrada por el cliente de correo electrónico).
     - `RecipientObjectId`
     - `AccountObjectId`
     - `AccountSid`
@@ -141,7 +141,7 @@ Al editar una regla, se ejecutará con los cambios aplicados en la siguiente hor
 Seleccione la frecuencia que coincida con la que desea supervisar las detecciones. Tenga en cuenta la capacidad de su organización para responder a las alertas.
 
 ### <a name="3-choose-the-impacted-entities"></a>3. Elija las entidades afectadas.
-Identifique las columnas de los resultados de la consulta en las que espera encontrar la entidad principal afectada o afectada. Por ejemplo, una consulta puede devolver direcciones de remitente ( `SenderFromAddress` o ) y destinatario ( `SenderMailFromAddress` `RecipientEmailAddress` ). La identificación de cuál de estas columnas representa la entidad afectada principal ayuda al servicio a agregar alertas relevantes, correlacionar incidentes y acciones de respuesta de destino.
+Identifique las columnas de los resultados de la consulta en las que espera encontrar la entidad principal afectada o afectada. Por ejemplo, una consulta puede devolver direcciones de remitente ( `SenderFromAddress` o ) y destinatario ( `SenderMailFromAddress` `RecipientEmailAddress` ). La identificación de cuál de estas columnas representa la entidad principal afectada ayuda al servicio a agregar alertas relevantes, correlacionar incidentes y acciones de respuesta al objetivo.
 
 Solo puede seleccionar una columna para cada tipo de entidad (buzón, usuario o dispositivo). Las columnas que la consulta no devuelve no se pueden seleccionar.
 
@@ -160,7 +160,7 @@ Estas acciones se aplican a los dispositivos de la `DeviceId` columna de los res
 Cuando se selecciona, puede optar por aplicar la acción Archivo **de** cuarentena en los archivos de `SHA1` la columna , , o de los `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` resultados de la consulta. Esta acción elimina el archivo de su ubicación actual y coloca una copia en cuarentena.
 
 #### <a name="actions-on-users"></a>Acciones en usuarios
-Cuando se selecciona, la acción Marcar **al usuario como** comprometida se toma en los usuarios de la columna , o de los `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` resultados de la consulta. Esta acción establece el nivel de riesgo de los usuarios en "alto" en Azure Active Directory, desencadenando las directivas [de protección de identidades correspondientes.](/azure/active-directory/identity-protection/overview-identity-protection)
+Cuando se selecciona, la acción **Marcar al usuario como comprometido** se toma en los usuarios de la columna `AccountObjectId`, `InitiatingProcessAccountObjectId` o `RecipientObjectId` en los resultados de la consulta. Esta acción establece el nivel de riesgo de los usuarios en "alto" en Azure Active Directory, desencadenando las directivas [de protección de identidades correspondientes.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 > [!NOTE]
 > La acción permitir o bloquear para reglas de detección personalizadas actualmente no se admite en Microsoft 365 Defender.
@@ -192,23 +192,23 @@ Puede ver la lista de reglas de detección personalizadas existentes, comprobar 
 
 ### <a name="view-existing-rules"></a>Ver reglas existentes
 
-Para ver todas las reglas de detección personalizadas existentes, vaya a **Buscar**  >  **detecciones personalizadas**. La página enumera todas las reglas con la siguiente información de ejecución:
+Para ver todas las reglas de detección personalizadas existentes, vaya a **Buscar**  >  **detecciones personalizadas**. La página enumera todas las reglas con la siguiente información de la ejecución:
 
 - **Última ejecución:** cuando se ejecuta por última vez una regla para comprobar si hay coincidencias de consulta y generar alertas
 - **Estado de la última ejecución:** si una regla se ejecutó correctamente
 - **Siguiente ejecución**: la siguiente ejecución programada
 - **Estado:** si se ha activado o desactivado una regla
 
-### <a name="view-rule-details-modify-rule-and-run-rule"></a>Ver detalles de regla, modificar regla y ejecutar regla
+### <a name="view-rule-details-modify-rule-and-run-rule"></a>Ver detalles, modificar y ejecutar la regla
 
-Para ver información completa acerca de una regla de detección personalizada, vaya a **Buscar** detecciones personalizadas y, a continuación,  >   seleccione el nombre de la regla. A continuación, puede ver información general sobre la regla, incluida la información sobre su estado de ejecución y su ámbito. La página también proporciona la lista de alertas y acciones desencadenadas.
+Para ver información completa acerca de una regla de detección personalizada, vaya a **Buscar** detecciones personalizadas y, a continuación,  >   seleccione el nombre de la regla. A continuación, puede ver información general sobre la regla, incluida la información sobre su estado de ejecución y ámbito. La página también proporciona la lista de alertas y acciones desencadenadas.
 
 ![Página de detalles de regla de detección personalizada.](../../media/custom-detection-details.png)<br>
 *Detalles de la regla de detección personalizada*
 
 También puede realizar las siguientes acciones en la regla desde esta página:
 
-- **Ejecutar**: ejecute la regla inmediatamente. Esto también restablece el intervalo de la siguiente ejecución.
+- **Ejecutar**: ejecute la regla inmediatamente. Esto también restablece el intervalo para la siguiente ejecución.
 - **Editar**: modificar la regla sin cambiar la consulta
 - **Modificar consulta**: editar la consulta en búsqueda avanzada
 - **Activar**  /  **Desactivar :** habilitar la regla o impedir que se ejecute
@@ -216,11 +216,11 @@ También puede realizar las siguientes acciones en la regla desde esta página:
 
 ### <a name="view-and-manage-triggered-alerts"></a>Ver y administrar alertas desencadenadas
 
-En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [Nombre de regla] ), vaya a Alertas desencadenadas , que enumera las alertas generadas por  >  **coincidencias**  >  con la regla.  Seleccione una alerta para ver información detallada al respecto y realizar las siguientes acciones:
+En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [Nombre de regla] ), vaya a Alertas desencadenadas , que enumera las alertas generadas por  >  **coincidencias**  >  con la regla.  Seleccione una alerta para ver la información detallada al respecto y realizar las siguientes acciones:
 
-- Administrar la alerta estableciendo su estado y clasificación (alerta verdadera o falsa)
-- Vincular la alerta a un incidente
-- Ejecutar la consulta que desencadenó la alerta en la búsqueda avanzada
+- Administrar la alerta estableciendo su estado y clasificación (alerta verdadera o falsa).
+- Vincular la alerta a un incidente.
+- Ejecutar la consulta que desencadenó la alerta en la búsqueda avanzada.
 
 ### <a name="review-actions"></a>Revisar acciones
 En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [Nombre de regla] ), vaya a Acciones desencadenadas , que enumera las acciones realizadas en función de las  >  **coincidencias**  >  con la regla. 
@@ -231,7 +231,7 @@ En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [N
 >[!NOTE]
 >Es posible que algunas columnas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

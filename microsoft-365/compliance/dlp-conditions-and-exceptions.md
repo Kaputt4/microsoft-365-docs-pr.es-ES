@@ -16,11 +16,11 @@ search.appverid:
 recommendations: false
 description: obtenga información sobre las condiciones y excepciones de la directiva dlp
 ms.openlocfilehash: 385c59a41535fbc3fdec0fc551a50b6915736f4f
-ms.sourcegitcommit: dda742d2b044fa56f4edef57d74d18f52fafc149
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58829285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193087"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Condiciones de directiva DLP, excepciones y acciones
 

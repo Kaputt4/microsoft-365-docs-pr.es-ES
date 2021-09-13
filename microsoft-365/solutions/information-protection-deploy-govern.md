@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use Microsoft 365 directivas y etiquetas de retención para administrar los datos personales en su Microsoft 365 de retención.
-ms.openlocfilehash: 06d3c19918d7e2963bffbb0f663971bbbbb209891f62ee9c83ebcc59b74e16d1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192197"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Regulación de la información sujeta a la regulación de privacidad de datos
 

@@ -22,11 +22,11 @@ ms.custom:
 - seo-marvel-jun2020
 ms.technology: m365d
 ms.openlocfilehash: de8d0a0bc1609a3dfac9d177a51ef3903b477de4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572952"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192407"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -46,7 +46,7 @@ Las organizaciones obtienen acceso a visualizaciones sólidas de métricas y ten
 
 ![Página principal de puntuación segura.](../../media/secure-score/secure-score-home-page.png)
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Se le dan puntos para las siguientes acciones:
 

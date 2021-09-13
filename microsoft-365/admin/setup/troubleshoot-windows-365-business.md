@@ -24,11 +24,11 @@ search.appverid:
 description: Obtenga información sobre cómo solucionar problemas de configuración Windows equipos de 365 Business Cloud.
 ms.date: 08/13/2021
 ms.openlocfilehash: 701d1ce3ae97836d6687050e16a176aad85e2995
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192104"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>Solucionar Windows problemas de configuración de 365 Business Cloud PC
 

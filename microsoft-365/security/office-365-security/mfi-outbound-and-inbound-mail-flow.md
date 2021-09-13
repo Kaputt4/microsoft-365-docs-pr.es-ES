@@ -14,11 +14,11 @@ description: Los administradores pueden obtener información sobre el flujo de c
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 6fe4f7bded7a3d1fcca26d537de24513f27bc0ec
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571258"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192307"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Información sobre el flujo de correo entrante y saliente en el Centro de seguridad & cumplimiento
 
@@ -60,6 +60,6 @@ Puede hacer clic en el **vínculo Informe de conector** para ir al informe de [C
 
 Para las conexiones TLS 1.0, realmente necesita actualizar o solucionar el servidor de correo electrónico o el servidor de su partner para evitar cualquier problema cuando la compatibilidad con TLS 1.0 esté en desuso en Microsoft 365.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

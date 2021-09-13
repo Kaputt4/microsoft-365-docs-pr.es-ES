@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las alertas de prevención de pérdida de datos y el panel de alertas.
-ms.openlocfilehash: 0474c5609fcd979fa8db7e47857c099cbed7be365bb55ee80e507ad3375da660
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b6fd698e535e006149f6ce3a2a5bc57d0c92c7e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895664"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193114"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>Obtenga información sobre el panel de alertas de prevención de pérdida de datos
 
@@ -41,7 +41,7 @@ El [panel de administración de alertas DLP,](https://compliance.microsoft.com/d
 - SharePoint
 - OneDrive
 - Teams
-- Dispositivos Windows 10 
+- Dispositivos con Windows 10 
 
 > [!TIP]
 > Los clientes que usan [DLP](endpoint-dlp-learn-about.md) de extremo que son elegibles para [Teams DLP](dlp-microsoft-teams.md) verán sus alertas de directiva DLP de punto de conexión y Teams de directivas DLP en el panel de administración de alertas dlp.
@@ -60,15 +60,15 @@ Estos son algunos de los eventos asociados con una alerta. En la interfaz de usu
 
 ### <a name="event-details"></a>Detalles del evento
 
-|Nombre de propiedad  |Descripción  |Tipos de eventos  |
+|Nombre de propiedad  |Description  |Tipos de eventos  |
 |---------|---------|---------|
-|ID |id. único asociado con el evento |todos los eventos |
+|Id. |id. único asociado con el evento |todos los eventos |
 |Ubicación |carga de trabajo donde se detectó el evento|todos los eventos |
 |tiempo de actividad     |tiempo de la actividad del usuario que coincide con los criterios de la directiva DLP |
 
 ### <a name="impacted-entities"></a>Entidades afectadas
 
-|Nombre de propiedad |Descripción| Tipos de eventos|
+|Nombre de propiedad |Description| Tipos de eventos|
 |---------|---------|---------|
 |usuario | usuario que realizó la acción que causó la coincidencia de la directiva | todos los eventos|
 |nombre de host | nombre de host del equipo donde se produjo la coincidencia de directiva DLP | eventos de dispositivo|

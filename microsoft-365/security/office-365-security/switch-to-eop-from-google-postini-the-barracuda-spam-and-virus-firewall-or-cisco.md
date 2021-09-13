@@ -15,12 +15,12 @@ ms.custom:
 description: En este artículo, aprenderá a cambiar a Exchange Online Protection (EOP) desde un dispositivo de higiene de correo electrónico local o un servicio de protección basado en la nube.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 610ac3633516be12fe42cdfb77b0b240f7408746203284f6dba227021d314ed1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dfbbc44ebfed6cafb97e36b18a4fc34c91840d9b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56886169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192267"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Cambiar a EOP desde Google Postini, Barracuda Spam y Virus Firewall o Cisco IronPort
 

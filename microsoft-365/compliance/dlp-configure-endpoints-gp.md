@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Use la directiva de grupo para implementar el paquete de configuración Windows 10 dispositivos para que se incorpore al servicio.
-ms.openlocfilehash: 50bca6c4eb9989ce0464fb257bc311ff35a684b4c6d371a4d65387294263a68d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 284de5169324b6da4038cfe0b50b2f2ffa40e3fd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193077"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación Windows 10 dispositivos con directiva de grupo 
 

@@ -17,11 +17,11 @@ description: Los administradores pueden aprender a modificar y quitar entradas e
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: d2d5ce65836accd94dec497e5be0087a94742ca0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192297"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modificar y quitar entradas a la lista de bloqueados y permitidos del espacio empresarial
 

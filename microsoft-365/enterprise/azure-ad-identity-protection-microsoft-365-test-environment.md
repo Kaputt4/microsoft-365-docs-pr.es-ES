@@ -16,11 +16,11 @@ ms.custom:
 - Ent_TLGs
 description: Configure Azure AD Identity Protection y analice las cuentas actuales de su entorno de prueba Microsoft 365 entorno de prueba empresarial.
 ms.openlocfilehash: 446462215069c0bcc72e36c7c62260de0694f600
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572676"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192884"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>Azure AD Identity Protection para el entorno de prueba Microsoft 365 para empresas
 
@@ -55,7 +55,7 @@ Si desea probar Azure AD Identity Protection en una empresa simulada, siga las i
 4. En **Notificar**, seleccione **Usuarios en riesgo alertas detectadas**.
 5. En el panel **Usuarios en riesgo de alertas detectadas,** seleccione **Medio**.
 6. Para **los correos electrónicos se envían a los siguientes usuarios,** seleccione **Incluido** y compruebe que su cuenta de administrador global esté en la lista de miembros seleccionados.
-7. Haga clic en **Guardar**.
+7. Seleccione **Guardar**.
 
 En **Proteger,** seleccione varias directivas para ver cómo configurarlas. Si crea y activa una directiva, asegúrese de que no está bloqueando el acceso para todos los usuarios, o puede que no pueda iniciar sesión. Para evitar esto, excluya cuentas de usuario específicas, como administradores globales.
 
@@ -71,6 +71,6 @@ Explorar características de [identidad](m365-enterprise-test-lab-guides.md#iden
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

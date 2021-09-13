@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Información general sobre el proceso de planeación para la prevención de pérdida de datos
 ms.openlocfilehash: 130675ad15a872ed14041289fb24aeec471014ff
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192957"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planear la prevención de pérdida de datos (DLP)
 
@@ -222,5 +222,5 @@ Las normativas, las leyes y los estándares del sector a los que está sujeta su
 ### On-premises Scanner
 -->
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)

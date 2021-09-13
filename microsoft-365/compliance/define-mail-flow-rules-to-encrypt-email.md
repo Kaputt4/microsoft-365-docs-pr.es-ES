@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkMAC
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes mediante Cifrado de mensajes de Office 365.
-ms.openlocfilehash: e786a6ac688adbae22f7161ada18cffc27811f97
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: fe08753f3d0e12091a71cc3882dcca80380d82ca
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193207"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico
 
@@ -46,7 +47,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 2. Elija el **icono** Administrador.
 
-3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **Exchange**.
+3. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, elija **Centros de administración** \> **Exchange**.
 
 4. En el EAC, vaya a **Flujo de correo Reglas** \> **y** seleccione **Nuevo** ![ icono Nuevo.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Crear una nueva regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
 
@@ -78,7 +79,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 2. Elija el **icono** Administrador.
 
-3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **Exchange**.
+3. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, elija **Centros de administración** \> **Exchange**.
 
 4. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
@@ -106,7 +107,7 @@ Puede quitar el cifrado que aplica la organización.
 
 2. Elija el **icono** Administrador.
 
-3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **Exchange**.
+3. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, elija **Centros de administración** \> **Exchange**.
 
 4. En el EAC, vaya a **Flujo de correo Reglas** \> **y** seleccione **Nuevo** ![ icono Nuevo.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Crear una nueva regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
 
@@ -116,13 +117,13 @@ Puede quitar el cifrado que aplica la organización.
 
 7. En **Hacer lo siguiente,** seleccione **Modificar la seguridad del** mensaje Quitar Cifrado de mensajes de Office 365 y protección \> **de derechos**.
 
-8. Haga clic en **Guardar**.
+8. Seleccione **Guardar**.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Crear reglas de flujo de correo Cifrado de mensajes de Office 365 sin las nuevas funcionalidades
 
 Si aún no ha movido su organización a las nuevas funcionalidades de OME, Microsoft recomienda que realice un plan para pasar a las nuevas funcionalidades de OME tan pronto como sea razonable para su organización. Para obtener instrucciones, consulte [Set up new Cifrado de mensajes de Office 365 capabilities built on top of Azure Information Protection](set-up-new-message-encryption-capabilities.md). De lo contrario, vea [Defining mail flow rules for Cifrado de mensajes de Office 365 that don't use the new OME capabilities](legacy-information-for-message-encryption.md#defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities).
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="related-content"></a>Contenido relacionado
 
 [Cifrado en Office 365](encryption.md)
 

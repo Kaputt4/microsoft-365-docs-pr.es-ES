@@ -15,11 +15,11 @@ description: Los administradores pueden aprender a usar el mapa de flujo de corr
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: bdde117d8984db3a71624ab48a6ed88ba8367054
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192344"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Mapa de flujo de correo en el Centro de seguridad & cumplimiento
 
@@ -76,6 +76,6 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Para volver a la vista informes, haga clic **en Ver informe**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

@@ -27,15 +27,15 @@ search.appverid:
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo crear usuarios y grupos cuando la suscripción Microsoft 365 está usando la identidad de solo nube.
 ms.openlocfilehash: 9b58b831f2a338e5fb79726b8de66c11bba96d0e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570766"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192837"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 identidad de solo nube
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Con la identidad de solo nube, todos los usuarios, grupos y contactos se almacenan en el inquilino de Azure Active Directory (Azure AD) de su Microsoft 365 suscripción. Estos son los componentes básicos de la identidad de solo nube.
  
