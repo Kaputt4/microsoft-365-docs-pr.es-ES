@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administradores pueden aprender a recuperarse de un ataque de ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b7511039c1d33722790e993e8cd9c8c89e1e620b2585255359cb14f59ddb1ece
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 608fac50fc65f20a612b80ed151252eb2a0c2e01
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56879489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165532"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
@@ -93,7 +93,7 @@ Restaurar archivos en OneDrive para la Empresa permite restaurar toda la OneDriv
 
 ## <a name="step-6-recover-deleted-email"></a>Paso 6: Recuperar correo electrónico eliminado
 
-En el caso excepcional de que el ransomware eliminó todo el correo electrónico, probablemente puede recuperar los elementos eliminados. Para más información, consulte:
+En el caso excepcional de que el ransomware eliminó todo el correo electrónico, probablemente puede recuperar los elementos eliminados. Para más información, vea:
 
 - [Recuperar mensajes eliminados en el buzón de un usuario](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -158,7 +158,7 @@ Microsoft 365 protección:
 - [Protección de malware y ransomware](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Detección de ransomware y recuperación de archivos en OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 - [Habilitar o deshabilitar macros en Office archivos](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
-- [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md)
+- [Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365](recommended-settings-for-eop-and-office365.md)
 
 Entradas del blog del equipo de Seguridad de Microsoft:
 

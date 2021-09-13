@@ -25,9 +25,9 @@ highlightedContent:
 additionalContent:
   sections:
     - items:
-        - title: Temas de Microsoft Viva
+        - title: Temas Microsoft Viva
           links:
-            - text: Introducción
+            - text: Comenzar
               url: /microsoft-365/knowledge/
             - text: Instalación
               url: /microsoft-365/knowledge/set-up-topic-experiences
@@ -39,19 +39,21 @@ additionalContent:
               url: 'https://support.microsoft.com/en-us/office/understanding-viva-topics-5bef3020-2679-4045-81cb-bcbc37218332'
         - title: Ideas Microsoft Viva
           links:
-            - text: Comenzar
+            - text: Introducción
               url: /insights/viva-teams-app
             - text: 'Learning ruta de acceso: descubrir Ideas Microsoft Viva'
               url: /learn/modules/workplace-analytics-discover/
         - title: Conexiones Microsoft Viva
           links:
-            - text: Comenzar
-              url: /sharepoint/viva-connections
+            - text: Introducción
+              url: /sharepoint/viva-connections-overview
+            - text: Extensibilidad
+              url: /sharepoint/dev/spfx/viva/overview-viva-connections
             - text: Ayuda para el usuario final & aprendizaje
               url: 'https://support.microsoft.com/en-us/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b'
         - title: Aprendizaje Microsoft Viva
           links:
-            - text: Comenzar
+            - text: Introducción
               url: /microsoft-365/learning/
             - text: Instalación
               url: /microsoft-365/learning/set-up-teams-admin-center

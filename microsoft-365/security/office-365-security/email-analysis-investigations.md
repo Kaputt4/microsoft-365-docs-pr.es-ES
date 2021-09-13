@@ -22,11 +22,11 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ad390c00bdbef33f52603c9d4a63884d3b91de49
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918332"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165547"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Análisis de correo electrónico en investigaciones para Microsoft Defender para Office 365
 
@@ -95,6 +95,6 @@ Para los clústeres de  correo electrónico o correo electrónico de la pestaña
 
 En este ejemplo, el correo electrónico es malintencionado, pero no en un buzón.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver acciones de corrección pendientes o completadas](air-review-approve-pending-completed-actions.md)

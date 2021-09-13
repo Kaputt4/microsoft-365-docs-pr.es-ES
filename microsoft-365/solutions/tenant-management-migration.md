@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: Migre Windows dispositivos, Office aplicaciones cliente y Office servidores para sus Microsoft 365 inquilinos.
 ms.openlocfilehash: 9570a34c1c1884452ee9090ca0b7d280411e0016
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571584"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165493"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 4. Migración de su Microsoft 365 para inquilinos empresariales
 

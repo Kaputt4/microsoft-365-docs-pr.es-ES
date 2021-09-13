@@ -18,11 +18,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ae46d8540ec0d2bd9ae8d906a9a44fd0e397ee2f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165535"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el Explorador de amenazas y detecciones en tiempo real
 
@@ -44,7 +44,7 @@ Al abrir por primera vez el Explorador (o el informe de detecciones en tiempo re
 
 ****
 
-|Suscripción |Utilidad|Días de datos|
+|Suscripción|Utilidad|Días de datos|
 |---|---|---|
 |Prueba de Microsoft Defender Office 365 P1|Detecciones en tiempo real|7 |
 |Microsoft Defender para Office 365 P1 pagado|Detecciones en tiempo real|30|

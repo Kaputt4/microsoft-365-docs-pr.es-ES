@@ -18,11 +18,11 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
 ms.openlocfilehash: 116a97946dc4f45be3030954d3d2fb217ac50b9c
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509982"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165726"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Acceder al Centro de comunidad de Microsoft Defender para punto de conexión
 

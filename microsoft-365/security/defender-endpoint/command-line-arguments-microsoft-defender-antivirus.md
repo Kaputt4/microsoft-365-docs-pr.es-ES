@@ -16,11 +16,11 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.openlocfilehash: f940d71b46f3010cded48cfe4c3b9873ea518a0b
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165750"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurar y administrar Antivirus de Microsoft Defender con la mpcmdrun.exe de línea de comandos
 
@@ -83,7 +83,7 @@ En la tabla siguiente se enumeran los errores comunes que pueden producirse al u
 |**ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=800722F0D**|El firewall bloquea la conexión o realiza una inspección SSL.|
 |**ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=80072EE7 httpcode=451)**|El firewall bloquea la conexión o realiza una inspección SSL.|
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Configurar las funciones del Antivirus de Microsoft Defender](configure-microsoft-defender-antivirus-features.md)
 - [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)

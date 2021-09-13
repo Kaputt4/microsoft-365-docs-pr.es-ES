@@ -15,13 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 06/15/2021
-ms.openlocfilehash: 5fc496fd0d40d5dd172fb45e8ce6b8d23ebab6da
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.date: 08/31/2021
+ms.openlocfilehash: 96589d4ed30dc635588cbc66a656d53836324d2e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165734"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Errores comunes para evitarlos cuando se definen exclusiones
 
@@ -96,6 +96,17 @@ En general, no defina exclusiones para las siguientes ubicaciones de carpeta:
 `C:\Windows\Temp\`
 
 `C:\Windows\Temp\*`
+
+#### <a name="linux-and-macos-platforms"></a>Plataformas linux y macOS
+
+`/`
+
+`/bin`
+
+`/sbin`
+
+`/usr/lib`
+
 
 ### <a name="file-extensions"></a>Extensiones de archivo
 
@@ -253,12 +264,24 @@ En general, no defina exclusiones para los siguientes procesos:
 
 `windbg.exe`
 
+#### <a name="linux-and-macos-platforms"></a>Plataformas linux y macOS
+
+`bash`
+
+`sh`
+
+`python` y `python3`
+
+`java`
+
+`zsh`
+
 > [!NOTE]
 > Puede optar por excluir tipos de archivo, como , , o si su entorno tiene un software moderno y actualizado con una directiva de actualización estricta para controlar cualquier `.gif` `.jpg` `.jpeg` `.png` vulnerabilidad.
 
 ## <a name="using-just-the-file-name-in-the-exclusion-list"></a>Usar solo el nombre de archivo de la lista de exclusión
 
-Un malware puede tener el mismo nombre que el del archivo en el que confía y desea excluir del examen. Por lo tanto, para evitar excluir un posible malware del examen, use una ruta de acceso completa al archivo que desea excluir en lugar de usar solo el nombre del archivo. Por ejemplo, si desea excluir del examen, use la ruta `Filename.exe` de acceso completa al archivo, como `C:\program files\contoso\Filename.exe` .
+Es posible que el malware tenga el mismo nombre que el de un archivo en el que confía y que desea excluir del examen. Por lo tanto, para evitar excluir posibles malware del examen, use una ruta de acceso completa al archivo que desea excluir en lugar de usar solo el nombre del archivo. Por ejemplo, si desea excluir del examen, use la ruta `Filename.exe` de acceso completa al archivo, como `C:\program files\contoso\Filename.exe` .
 
 ## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>Uso de una única lista de exclusión para varias cargas de trabajo de servidor
 

@@ -17,11 +17,11 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: f28c209ce179cc019a8b0edbdc698f9f9eb7daf6
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165702"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>Administrar Antivirus de Microsoft Defender en su empresa
 
@@ -39,7 +39,7 @@ Puede administrar y configurar Antivirus de Microsoft Defender con las siguiente
 - [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) (ahora parte de Microsoft Endpoint Manager)
 - [Directiva de grupo](./use-group-policy-microsoft-defender-antivirus.md)
 - [Cmdlets de PowerShell](./use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Instrumental de administración de Windows (WMI)](./use-wmi-microsoft-defender-antivirus.md)
+- [Windows Instrumental de administración (WMI)](./use-wmi-microsoft-defender-antivirus.md)
 - Utilidad [de línea de comandos de Microsoft Malware Protection](./command-line-arguments-microsoft-defender-antivirus.md) (denominada utilidad *mpcmdrun.exe* protección contra malware
 
 Los artículos siguientes proporcionan más información, vínculos y recursos para usar estas herramientas para administrar y configurar Antivirus de Microsoft Defender.
