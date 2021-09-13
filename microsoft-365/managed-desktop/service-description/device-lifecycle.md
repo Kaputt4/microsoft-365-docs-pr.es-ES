@@ -9,11 +9,11 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: df9bf273edd85fea08cd11838093a1287b0fff97
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550279"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215370"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Escritorio administrado de Microsoft ciclo de vida del producto
 

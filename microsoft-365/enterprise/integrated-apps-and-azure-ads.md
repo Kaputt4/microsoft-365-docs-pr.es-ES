@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Obtenga información sobre cómo registrar y administrar Office 365 aplicaciones integradas en Azure AD, lo que permite las autorizaciones de aplicaciones en el nivel de administrador de **Azure AD DC** o **administrador** global.
 ms.openlocfilehash: ccf1e16e7e0307499e515eb3691c865d49801412
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747316"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215980"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>Aplicaciones integradas y Azure AD para Microsoft 365 administradores
 
@@ -36,14 +36,14 @@ Pero esto no se escala bien si quieres autorizar una aplicación una  vez en el 
 
 Debe realizar estas dos tareas para poder administrar las aplicaciones Microsoft 365 en Azure AD.
   
-|Requisitos previos|Comentarios|
+|Requisitos previos|Comments|
 |:-----|:-----|
 |[Usar la suscripción gratuita de Azure AD](../compliance/use-your-free-azure-ad-subscription-in-office-365.md) <br/> |Cada suscripción de pago Microsoft 365 incluye una suscripción gratuita a Azure AD. Puede usar Azure AD para administrar las aplicaciones y para crear y administrar cuentas de usuario y grupo. Para usar Azure AD, solo tiene que ir a Azure Portal en [https://portal.azure.com](https://portal.azure.com) e iniciar sesión con su Microsoft 365 cuenta.  <br/> |
 |[Administrar el consentimiento del usuario a las aplicaciones](../admin/misc/user-consent.md) <br/> |Debe administrar el consentimiento del usuario a las aplicaciones para permitir que las aplicaciones de terceros accedan a la información de Microsoft 365 y para que registre aplicaciones en Azure AD. Por ejemplo, cuando alguien usa una aplicación de terceros, puede que la aplicación le pida permiso para tener acceso a su calendario y para modificar los archivos que están en una carpeta de OneDrive.  <br/> |
    
 La administración Microsoft 365 aplicaciones requiere que tenga conocimientos de aplicaciones en Azure AD. Use estos artículos para proporcionar el fondo que necesita.
   
-|Artículo|Comentarios|
+|Artículo|Comments|
 |:-----|:-----|
 |[Conoce el iniciador Microsoft 365 aplicaciones](https://support.microsoft.com/office/meet-the-microsoft-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |Si eres nuevo en el iniciador de aplicaciones, es posible que te estés preguntando qué es y cómo usarlo. El iniciador de aplicaciones está diseñado para ayudarte a llegar a tus aplicaciones desde cualquier lugar de Microsoft 365.  <br/> |
 |[Office 365 de api de administración](/office/office-365-management-api/office-365-management-apis-overview) <br/> |Las API de administración de Microsoft 365 permiten proporcionar acceso a los datos de Microsoft 365, incluidos los aspectos que más les importan: su correo, calendarios, contactos, usuarios y grupos, archivos y carpetas. <br/> |

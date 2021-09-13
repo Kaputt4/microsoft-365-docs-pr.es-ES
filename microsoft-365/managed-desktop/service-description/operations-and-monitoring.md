@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3b3ac3be5ac9d0944303d4e43bbb7b352d7e03497b6807752ee19b9c32f881ff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dab1d8befaa0d32118f3fea350037ed8b91aadf3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834616"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215290"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Escritorio administrado de Microsoft operaciones y supervisión
 
@@ -71,7 +71,7 @@ Microsoft Escritorio administrado de Microsoft implementar y operar el servicio 
 
 En el caso de los productos locales, la organización asume toda la responsabilidad de administrar la configuración y las actividades operativas y de configuración.
 
-Categorías | Microsoft will | El cliente lo hará
+Categories | Microsoft will | El cliente lo hará
 --- | --- | ---
 Red (proxy, inspección de paquetes, VPN)  | Aconsejar y planear con los clientes para minimizar los riesgos para los usuarios empresariales. | - Crear una solicitud de soporte técnico que solicite información para un cambio de configuración planeado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes que Microsoft debe revisar.<br>- Solo aplique un cambio una vez que Escritorio administrado de Microsoft Operations haya evaluado y recomendado.
 Cuentas de servicio  |- Implementar, almacenar y administrar de forma segura las credenciales.<br> - Comunicar el acceso no autorizado o el uso de estas credenciales al equipo de operaciones de seguridad. | - Crear una solicitud de soporte técnico que solicite información para un cambio de configuración planeado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes que Microsoft debe revisar.<br>- Solo aplique un cambio una vez que Escritorio administrado de Microsoft Operations haya evaluado y recomendado.<br>- No asignar directivas, autenticación multifactor, acceso condicional o implementación de aplicaciones a las Escritorio administrado de Microsoft de servicio.<br>- No restablecer la contraseña ni usar las credenciales.<br>- Abra una solicitud de soporte técnico de Sev C para Escritorio administrado de Microsoft operaciones si se observa actividad sospechosa en los registros de auditoría de Intune o Azure, relacionados con estas cuentas de servicio.

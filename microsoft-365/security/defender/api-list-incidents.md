@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fbc7e7147868649982defec9593b8852737a6ca7642faec4f125eca471c4e89d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0497ac31c11d04d812e9d8aca81304369ef459fb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214620"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Enumerar la API de incidentes en Microsoft 365 Defender
 
@@ -81,7 +81,7 @@ GET /api/incidents
 
 Nombre|Tipo|Descripción
 ---|---|---
-Authorization|String|Portador {token}. **Required**
+Authorization|Cadena|Portador {token}. **Required**
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -95,7 +95,7 @@ Si se realiza correctamente, este método `200 OK` devuelve y una lista de incid
 
 ### <a name="incident-metadata"></a>Metadatos de incidentes
 
-Nombre del campo|Description|Valor de ejemplo
+Nombre del campo|Descripción|Valor de ejemplo
 ---|---|---
 incidentId|Identificador único para representar el incidente|924565
 redirectIncidentId|Solo se rellena en caso de que un incidente se esté agrupando con otro incidente, como parte de la lógica de procesamiento de incidentes.|924569
@@ -114,7 +114,7 @@ alertas|Matriz que contiene todas las alertas relacionadas con el incidente, ade
 
 ### <a name="alerts-metadata"></a>Metadatos de alertas
 
-Nombre del campo|Description|Valor de ejemplo
+Nombre del campo|Descripción|Valor de ejemplo
 ---|---|---
 alertId|Identificador único para representar la alerta|caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId|Identificador único para representar el incidente al que está asociada esta alerta|924565
@@ -126,7 +126,7 @@ firstActivity|Hora en la que la alerta informó por primera vez de que la activi
 title|Breve valor de cadena de identificación disponible para cada alerta.|Actividad de ransomware
 description|Valor de cadena que describe cada alerta.|El usuario Probar usuario2 (testUser2@contoso.com) manipuló 99 archivos con varias extensiones que terminan con la extensión poco común *herunterladen*. Este es un número inusual de manipulaciones de archivos y es indicativo de un posible ataque de ransomware.
 categoría|Vista visual y numérica de hasta qué punto ha progresado el ataque a lo largo de la cadena de eliminación. Alineado con el marco [&MITRE ATT ™ CK](https://attack.mitre.org/).|Impacto
-status|Clasificar las alertas *(como Nuevo,* *Activo* o *Resuelto).* Puede ayudarle a organizar y administrar la respuesta a las alertas.|Nuevo
+status|Clasificar las alertas *(como Nuevo,* *Activo* o *Resuelto).* Puede ayudarle a organizar y administrar la respuesta a las alertas.|Nueva
 severity|Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br>Uno de los siguientes valores: *Informational*, *Low*, *Medium* y *High*.|Medio
 investigationId|El identificador de investigación automatizado desencadenado por esta alerta.|1234
 investigationState|Información sobre el estado actual de la investigación. Uno de los siguientes valores: *Unknown*, *Ended*, *SuccessfullyRemediated*, *Benign*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*.|UnsupportedAlertType
@@ -155,7 +155,7 @@ entidades|Todas las entidades que se han identificado para formar parte o relaci
 
 ### <a name="entity-format"></a>Formato de entidad
 
-Nombre del campo|Description|Valor de ejemplo
+Nombre del campo|Descripción|Valor de ejemplo
 ---|---|---
 entityType|Entidades que se han identificado para formar parte o relacionadas con una alerta determinada.<br>Los valores de propiedades son: *User*, *Ip*, *Url*, *File*, *Process*, *MailBox*, *MailMessage*, *MailCluster*, *Registry*|Usuario
 sha1|Disponible si entityType es *File*.<br>Hash de archivo para alertas asociadas con un archivo o proceso.|5de839186691aa96ee2ca6d74f0a38fb8d1bd6d
@@ -168,7 +168,7 @@ processCreationTime|Disponible si entityType es *Process*.|2020-07-18T03:25:38.5
 parentProcessId|Disponible si entityType es *Process*.|16840
 parentProcessCreationTime|Disponible si entityType es *Process*.|2020-07-18T02:12:32.8616797Z
 ipAddress|Disponible si entityType es *Ip*. <br>Dirección IP para alertas asociadas con eventos de red, como *La comunicación a un destino de red malintencionado.*|62.216.203.204
-URL|Disponible si entityType es *Url*. <br>Dirección URL de alertas asociadas a eventos de red, como, *Comunicación a un destino de red malintencionado.*|down.esales360.cn
+url|Disponible si entityType es *Url*. <br>Dirección URL de alertas asociadas a eventos de red, como, *Comunicación a un destino de red malintencionado.*|down.esales360.cn
 accountName|Disponible si entityType es *User*.|testUser2
 domainName|Disponible si entityType es *User*.|europe.corp.contoso
 userSid|Disponible si entityType es *User*.|S-1-5-21-1721254763-462695806-1538882281-4156657
@@ -185,7 +185,7 @@ securityGroupId|Disponible si entityType es  *SecurityGroup*.|301c47c8-e15f-4059
 securityGroupName|Disponible si entityType es  *SecurityGroup*.|Operadores de configuración de red
 registryHive|Disponible si entityType es  *Registry*.|MÁQUINA LOCAL HKEY \_ \_|
 registryKey|Disponible si entityType es  *Registry*.|SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType|Disponible si entityType es  *Registry*.|String
+registryValueType|Disponible si entityType es  *Registry*.|Cadena
 registryValue|Disponible si entityType es  *Registry*.|31-00-00-00
 deviceId|El identificador, si lo hay, del dispositivo relacionado con la entidad.|986e5df8b73dacd43c8917d17e523e76b13c75cd
 

@@ -11,11 +11,11 @@ search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo administrar permisos de tema en Temas Microsoft Viva.
 ms.openlocfilehash: 9a391d3a51d5ed7a8b4e17f4f310600284c87f54
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570742"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215597"
 ---
 # <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Administrar permisos de temas en Temas Microsoft Viva
 
@@ -49,7 +49,7 @@ Para actualizar quién tiene permisos para crear y editar temas:
 
     ![Crear y editar temas.](../media/k-manage-who-can-create-and-edit.png)  
 
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
 Para actualizar quién tiene permisos para administrar temas:
 
@@ -60,9 +60,9 @@ Para actualizar quién tiene permisos para administrar temas:
 
     ![Administrar temas.](../media/k-manage-who-can-manage-topics.png)  
 
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar la detección de temas en Temas Microsoft Viva](topic-experiences-discovery.md)
 

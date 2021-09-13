@@ -22,11 +22,11 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
 ms.openlocfilehash: 3bf6d527092a4dc5ed340a2d9548fea41d875d31
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214707"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrar consultas de búsqueda avanzada desde Microsoft Defender para endpoint
 
@@ -55,13 +55,13 @@ El [Microsoft 365 Defender de búsqueda avanzada proporciona](advanced-hunting-s
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | Archivos, direcciones IP, direcciones URL, usuarios o dispositivos asociados con alertas |
 | [AlertInfo](advanced-hunting-alertinfo-table.md) | Alertas de Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identidad, incluida la información de gravedad y las categorías de amenazas  |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | Información sobre los archivos adjuntos a los correos electrónicos |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | Microsoft 365 de correo electrónico, incluidos los eventos de entrega y bloqueo de correo electrónico |
-| [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Eventos de seguridad que se producen después de la entrega, Microsoft 365 ha entregado los correos electrónicos al buzón de destinatario |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | Eventos de correo electrónico de Microsoft 365, incluidos los eventos de bloqueo y entrega de correo electrónico |
+| [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Eventos de seguridad que se producen después de la entrega, una vez que Microsoft 365 ha entregado ya los correos electrónicos al buzón del destinatario |
 | [EmailUrlInfo](advanced-hunting-emailurlinfo-table.md) | Información sobre las direcciones URL de los correos electrónicos |
-| [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Eventos que implican un controlador de dominio local que ejecuta Active Directory (AD). En esta tabla se describe un rango de eventos relacionados con la identidad y eventos del sistema en el controlador de dominio. |
-| [IdentityInfo](advanced-hunting-identityinfo-table.md) | Información de cuenta de varios orígenes, incluidos Azure Active Directory |
-| [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md) | Eventos de autenticación en Active Directory y servicios en línea de Microsoft |
-| [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Consultas para objetos de Active Directory, como usuarios, grupos, dispositivos y dominios |
+| [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Eventos que implican un controlador de dominio local que ejecuta Active Directory (AD). En esta tabla se describen una serie de eventos relacionados con la identidad y eventos del sistema en el controlador de dominio. |
+| [IdentityInfo](advanced-hunting-identityinfo-table.md) | Información de la cuenta de varios orígenes, incluyendo Azure Active Directory |
+| [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md) | Eventos de autenticación en Active Directory y en servicios en línea de Microsoft |
+| [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Consultas sobree objetos de Active Directory, como usuarios, grupos, dispositivos y dominios |
 
 >[!IMPORTANT]
 > Las consultas y detecciones personalizadas que usan tablas de esquema que solo están disponibles en Microsoft 365 Defender solo se pueden ver en Microsoft 365 Defender.
@@ -178,7 +178,7 @@ AlertInfo
 | where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Activar Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 39043cfa5b127ece6c6a855c4b3d7d9d5d9e03f30e0518f1f45abc54f76739b3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a0965d6aa73aa9749e129e929922e549744e080f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843832"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214077"
 ---
 # <a name="contact-support-for-anguilla"></a>Póngase en contacto con el soporte técnico de Anguilla
 

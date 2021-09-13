@@ -20,11 +20,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 908165ac4e86fe96d101644f70d0bf31047d5e5f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258707"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214330"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Evaluar Microsoft Defender para Office 365
 

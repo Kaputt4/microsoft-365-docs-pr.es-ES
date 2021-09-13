@@ -15,12 +15,12 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e5f75f0523af7f2a81ce9f1d74ae8f323c78816c828cd9fdfba4210afc912fe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b96d3d656a89e7102550d09a2f5052fdb5ae818
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56879494"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214437"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controlar el reenvío automático de correo electrónico externo en Microsoft 365
 

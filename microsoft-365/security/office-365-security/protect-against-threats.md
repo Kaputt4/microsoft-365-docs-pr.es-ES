@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 69f36a26792d37f66fca46ec7905be89483c61f6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 06f87213131f8fccdd9cfd83d7bdf4ead10c0667
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214280"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -59,7 +59,7 @@ Las características de protección contra amenazas se *incluyen* en todas las s
 |Tipo de protección|Requisitos de suscripción|
 |---|---|
 |Registro de auditoría (para fines de informes)|[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
-|Protección antimalware|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
+|Protección contra malware|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Protección contra phishing|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protección contra correo no deseado|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protección contra direcciones URL malintencionadas y archivos en documentos Office correo electrónico (Caja fuerte vínculos y Caja fuerte adjuntos)|[Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
@@ -75,7 +75,7 @@ Para configurar Defender para Office 365 directivas, se le debe asignar un rol a
 |Rol o grupo de roles|Dónde obtener más información|
 |---|---|
 |administrador global|[Acerca de los roles de administración de Microsoft 365](../../admin/add-users/about-admin-roles.md)|
-|Administrador de seguridad|[Permisos de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Administrador de seguridad|[Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Administración de la organización en Exchange Online|[Permisos de Exchange Online](/exchange/permissions-exo/permissions-exo)|
 |
 
@@ -306,7 +306,7 @@ Para recibir una notificación cuando un archivo de SharePoint Online o OneDrive
    Cuando haya terminado, haga clic en **Siguiente**
 
 5. En la **página Establecer los destinatarios,** configure las siguientes opciones:
-   - **Enviar notificaciones por correo** electrónico: compruebe que esta configuración está secmentada.
+   - **Enviar notificaciones por correo** electrónico: compruebe que esta configuración está seleccionada.
    - **Destinatarios de correo** electrónico: seleccione uno o varios administradores globales, administradores de seguridad o lectores de seguridad que deben recibir notificaciones cuando se detecte un archivo malintencionado.
    - **Límite de notificación diario:** compruebe **que no hay** ningún límite seleccionado.
 

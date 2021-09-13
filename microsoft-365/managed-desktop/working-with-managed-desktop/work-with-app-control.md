@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0a0072cbc5738ae78c151650d8186eb34f952602015b7068909a2d276664684a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 31cc897fe28f557a65cba9c99e5dcecbf7c2b0e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807161"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215107"
 ---
 # <a name="work-with-app-control"></a>Usar el control de aplicaciones
 
@@ -40,7 +40,7 @@ Cuando abra una solicitud de firmante, primero deberá proporcionar algunos deta
 2. Abra un vale con Escritorio administrado de Microsoft operaciones para solicitar la regla de firmante e incluya los siguientes detalles:  
     - Nombre de la aplicación 
     - Versión de la aplicación 
-    - Descripción 
+    - Description 
     - Tipo de cambio ("agregar" o "quitar")  
     - Publisher detalles (por ejemplo: "O= <publisher name> ,L= <location> ,S=State,C=Country") 
 
@@ -74,5 +74,5 @@ Para obtener acceso a los datos del editor de una aplicación, siga estos pasos:
 5. Busque cualquier **evento 8003** **u 8006** y, a continuación, copie la información del evento: 
     - Nombre de la aplicación 
     - Versión de la aplicación 
-    - Descripción 
+    - Description 
     - Publisher detalles (por ejemplo: "O= <publisher name> , L= <location> , S=State, C=Country")

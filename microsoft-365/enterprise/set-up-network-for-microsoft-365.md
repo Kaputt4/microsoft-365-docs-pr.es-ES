@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: ''
 description: Busque vínculos a artículos con información que le ayuden a configurar la red para Microsoft 365, incluida una introducción a la conectividad de red y una lista de puntos de conexión.
 ms.openlocfilehash: 52de26081b4e61346ab584e1600893349b47fd17
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215670"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurar la red para Microsoft 365
 

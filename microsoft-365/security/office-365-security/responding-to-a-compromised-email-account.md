@@ -21,11 +21,11 @@ description: Aprenda a reconocer y responder a una cuenta de correo electrónico
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 193afd61509b7361ac18dd32d827182752fb61ed
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563347"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214247"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Responder a una cuenta de correo electrónico en peligro
 

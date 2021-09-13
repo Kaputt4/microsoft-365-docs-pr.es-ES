@@ -18,11 +18,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 7463ea7cd8a6d458e467ab213560be7d0f16a394
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684237"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215100"
 ---
 # <a name="manage-indicators"></a>Administrar indicadores
 

@@ -15,15 +15,15 @@ ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Summary: Use PowerShell for Microsoft 365 to assign per-user communication settings with Skype Empresarial Online policies.'
 ms.openlocfilehash: 6f262730c74de4442341454b2f85a181f673398b
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502680"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213880"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Asignar directivas por usuario Skype Empresarial Online con PowerShell para Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 El uso de PowerShell para Microsoft 365 es una forma eficaz de asignar la configuración de comunicación por usuario con Skype Empresarial en línea.
   
@@ -136,7 +136,7 @@ $count = 0
 
 Esto encontrará 500 usuarios a la vez que no tienen una directiva de cliente. Se les concederá la directiva de cliente "ClientPolicyNoIMURL" y la directiva de acceso externo "FederationAndPicDefault". Los resultados se agrupan por lotes en grupos de 50 y, a continuación, cada lote de 50 se envía al equipo remoto.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Administrar Skype Empresarial Online con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   

@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: En este artículo se proporcionan recursos para diseñar e implementar SharePoint sitios de Internet de Server 2013 hospedados en Azure Infrastructure Services.
 ms.openlocfilehash: d51a2833c5e14ad966272574c643a3a1e6b05aed
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567897"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215977"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sitios de Internet en Microsoft Azure con SharePoint Server 2013
 

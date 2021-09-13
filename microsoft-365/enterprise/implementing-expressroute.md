@@ -21,15 +21,15 @@ search.appverid:
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Obtenga información sobre cómo implementar ExpressRoute para Office 365, que proporciona una ruta de enrutamiento alternativa a muchos servicios Office 365 Internet.
 ms.openlocfilehash: 66ff6157c8f2fb28b1a57af42295a6ba0ed93dad
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575341"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215997"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 ExpressRoute para Office 365 proporciona una ruta de enrutamiento alternativa a muchos servicios Office 365 Internet. La arquitectura de ExpressRoute para Office 365 se basa en la publicidad de prefijos IP públicos de servicios de Office 365 que ya son accesibles a través de Internet en los circuitos de ExpressRoute aprovisionados para la redistribución posterior de esos prefijos IP en la red. Con ExpressRoute, habilita varias rutas de enrutamiento diferentes, a través de Internet y a través de ExpressRoute, para muchos Office 365 servicios. Este estado de enrutamiento en la red puede representar un cambio significativo en la forma en que se diseñó la topología de red interna.
   

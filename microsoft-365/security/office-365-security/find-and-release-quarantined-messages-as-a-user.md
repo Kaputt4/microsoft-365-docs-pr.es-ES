@@ -21,11 +21,11 @@ description: Los usuarios pueden obtener información sobre cómo ver y administ
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 04a3831ec923ec24846eb6d0e76273d1010862c6
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831950"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214430"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 

@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Los administradores pueden reactivar una suscripción cuando expire, se deshabilite o cancele, o si se canceló en medio de un término de suscripción.
 ms.date: 04/07/2021
-ms.openlocfilehash: a33cf6b0500dedabfde1de8f78417148a9e870e9867d530d6fb8e6346f37f21d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213980"
 ---
 # <a name="reactivate-your-subscription"></a>Reactivar la suscripción
 
@@ -35,7 +35,7 @@ Puede reactivar la suscripción en el centro de administración si: la suscripci
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de facturación para reactivar una suscripción. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para reactivar una suscripción. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 **¿No es un administrador?** Póngase en contacto con su administración para reactivar la suscripción.
 

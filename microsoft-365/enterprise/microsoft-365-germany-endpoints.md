@@ -21,11 +21,11 @@ ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: En este artículo encontrará puntos de conexión accesibles para los clientes que usan Office 365 en Alemania.
 hideEdit: true
 ms.openlocfilehash: f022c82c41aaeeed73af13572234e7826d878158
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215877"
 ---
 # <a name="office-365-germany-endpoints"></a>Puntos de conexión de Office 365 de Alemania
 

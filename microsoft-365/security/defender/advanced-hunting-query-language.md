@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: a253d1224f1c7a0e0be0b5478efcc78204cb4a27
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565753"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214660"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -65,7 +65,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 **[Ejecutar esta consulta en búsqueda avanzada](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Describir la consulta y especificar las tablas que se buscarán
-Se ha agregado un breve comentario al principio de la consulta para describir para qué se trata. Este comentario ayuda si más adelante decide guardar la consulta y compartirla con otros usuarios de la organización. 
+Se ha agregado un breve comentario al principio de la consulta para describir para qué se trata. Este comentario es útil si luego decide guardar la consulta y compartirla con otras personas de su organización. 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -77,7 +77,7 @@ La consulta en sí suele comenzar con un nombre de tabla seguido de varios eleme
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>Establecer el intervalo de tiempo
-El primer elemento canalado es un filtro de tiempo con el ámbito de los siete días anteriores. Limitar el intervalo de tiempo ayuda a garantizar que las consultas tienen un buen rendimiento, que devuelven resultados manejables y que no hay tiempo de espera.
+El primer elemento canalado es un filtro de tiempo con el ámbito de los siete días anteriores. Limitar el intervalo de tiempo ayuda a garantizar que las consultas funcionan bien, devuelven resultados administrables y no agotan el tiempo de espera.
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -107,7 +107,7 @@ Después, la consulta busca cadenas en líneas de comandos que normalmente se us
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Personalizar las columnas de resultados y la longitud 
-Ahora que la consulta identifica claramente los datos que desea localizar, puede definir el aspecto de los resultados. `project` devuelve columnas específicas y `top` limita el número de resultados. Estos operadores ayudan a garantizar que los resultados estén bien formatados y sean razonablemente grandes y fáciles de procesar.
+Ahora que la consulta identifica claramente los datos que desea localizar, puede definir cómo se ven los resultados. `project` devuelve columnas específicas y `top` limita el número de resultados. Estos operadores ayudan a garantizar que los resultados estén bien formatados y sean razonablemente grandes y fáciles de procesar.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -141,15 +141,15 @@ Acaba de ejecutar la primera consulta y tiene una idea general de sus componente
 
 Para ver un ejemplo dinámico de estos operadores, ejecútelos desde la sección **Comenzar** en la búsqueda avanzada.
 
-## <a name="understand-data-types"></a>Comprender tipos de datos
+## <a name="understand-data-types"></a>Comprender los tipos de datos
 
 La búsqueda avanzada admite tipos de datos kusto, incluidos los siguientes tipos comunes:
 
 | Tipo de datos | Descripción e implicaciones de la consulta |
 |--|--|
-| `datetime` | La información de datos y horas suele representar marcas de tiempo de eventos. [Ver formatos de fecha y hora admitidos](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
-| `string` | Cadena de caracteres en UTF-8 entre comillas simples ( `'` ) o comillas dobles ( `"` ). [Más información sobre las cadenas](/azure/data-explorer/kusto/query/scalar-data-types/string) |
-| `bool` | Este tipo de datos admite `true` o `false` estados. [Ver literales y operadores admitidos](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `datetime` | Información sobre datos y hora que representan las marcas de tiempo del evento [Ver formatos de fecha y hora admitidos](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | Cadena de caracteres en UTF-8 entre comillas simples (`'`) o comillas dobles (`"`). [Más información sobre las cadenas](/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | Este tipo de datos admite `true`or `false`states. [Ver literales y operadores admitidos](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
 | `int` | Entero de 32 bits  |
 | `long` | Entero de 64 bits |
 

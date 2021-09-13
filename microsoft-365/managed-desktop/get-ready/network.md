@@ -13,11 +13,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: cf9b1e1a485000bee7bf672690af5979767fb34b
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365098"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215570"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para el Escritorio administrado de Microsoft
 
@@ -76,22 +76,22 @@ OneDrive para la Empresa | onedrive.com <br> <br>\*.onedrive.com <br>onedrive.li
 Protección contra amenazas avanzada de Microsoft Defender (ATP). | \ *.oms.opinsights.azure.com <br>\*.blob.core.windows.net <br>\*.azure-automation.net <br>\*.ods.opinsights.azure.com <br>winatp-gw-cus.microsoft.com <br>winatp-gw-eus.microsoft.com <br>winatp-gw-neu.microsoft.com <br>winatp-gw-weu.microsoft.com <br>winatp-gw-uks.microsoft.com <br>winatp-gw-ukw.microsoft.com <br>winatp-gw-aus.microsoft.com <br>winatp-gw-aue.microsoft.com | [Windows Defender Puntos de conexión de ATP](/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
 Obtener ayuda | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com <br>rave.office.net | 
 Asistencia rápida | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com | 
-SharePoint Online  | \*.sharepoint.com <br>\ *.svc.ms  <br>\<tenant\>.sharepoint.com  <br>\<tenant\>-my.sharepoint.com  <br>\<tenant\>-files.sharepoint.com  <br>\<tenant\>-myfiles.sharepoint.com <br>\*.sharepointonline.com  <br>cdn.sharepointonline.com  <br>static.sharepointonline.com  <br>spoprod-a.akamaihd.net  <br>publiccdn.sharepointonline.com  <br>privatecdn.sharepointonline.com | [Intervalos de direcciones IP y direcciones URL de Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges).
-OneDrive para la Empresa | admin.onedrive.com  <br>officeclient.microsoft.com <br>odc.officeapps.live.com  <br>skydrive.wns.windows.com <br>g.live.com <br>oneclient.sfx.ms <br>\*.log.optimizely.com  <br>click.email.microsoftonline.com  <br>ssw.live.com  <br>storage.live.com |  [Intervalos de direcciones IP y direcciones URL de Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges).
-Microsoft Teams | \*.teams.skype.com  <br>\*.teams.microsoft.com  <br>teams.microsoft.com <br>\*.asm.skype.com <br>\ *.cc.skype.com  <br>\*.conv.skype.com  <br>\*.dc.trouter.io  <br>\*.msg.skype.com  <br>prod.registrar.skype.com  <br>prod.tpc.skype.com <br>\*.broker.skype.com <br>\*.config.skype.com  <br>\*.pipe.skype.com  <br>\*.pipe.aria.microsoft.com  <br>config.edge.skype.com  <br>pipe.skype.com  <br>s-0001.s-msedge.net  <br>s-0004.s-msedge.net  <br>scsinstrument-ss-us.trafficmanager.net  <br>scsquery-ss- <br>us.trafficmanager.net  <br>scsquery-ss-eu.trafficmanager.net  <br>scsquery-ss-asia.trafficmanager.net <br>\*.msedge.net <br>compass-ssl.microsoft.com  <br>feedback.skype.com <br>\*.secure.skypeassets.com  <br>mlccdnprod.azureedge.net  <br>videoplayercdn.osi.office.net <br>\*.mstea.ms | [Intervalos de direcciones IP y direcciones URL de Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges).
+SharePoint Online  | \*.sharepoint.com <br>\ *.svc.ms  <br>\<tenant\>.sharepoint.com  <br>\<tenant\>-my.sharepoint.com  <br>\<tenant\>-files.sharepoint.com  <br>\<tenant\>-myfiles.sharepoint.com <br>\*.sharepointonline.com  <br>cdn.sharepointonline.com  <br>static.sharepointonline.com  <br>spoprod-a.akamaihd.net  <br>publiccdn.sharepointonline.com  <br>privatecdn.sharepointonline.com | [Direcciones URL e intervalos de direcciones IP de Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+OneDrive para la Empresa | admin.onedrive.com  <br>officeclient.microsoft.com <br>odc.officeapps.live.com  <br>skydrive.wns.windows.com <br>g.live.com <br>oneclient.sfx.ms <br>\*.log.optimizely.com  <br>click.email.microsoftonline.com  <br>ssw.live.com  <br>storage.live.com |  [Direcciones URL e intervalos de direcciones IP de Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+Microsoft Teams | \*.teams.skype.com  <br>\*.teams.microsoft.com  <br>teams.microsoft.com <br>\*.asm.skype.com <br>\ *.cc.skype.com  <br>\*.conv.skype.com  <br>\*.dc.trouter.io  <br>\*.msg.skype.com  <br>prod.registrar.skype.com  <br>prod.tpc.skype.com <br>\*.broker.skype.com <br>\*.config.skype.com  <br>\*.pipe.skype.com  <br>\*.pipe.aria.microsoft.com  <br>config.edge.skype.com  <br>pipe.skype.com  <br>s-0001.s-msedge.net  <br>s-0004.s-msedge.net  <br>scsinstrument-ss-us.trafficmanager.net  <br>scsquery-ss- <br>us.trafficmanager.net  <br>scsquery-ss-eu.trafficmanager.net  <br>scsquery-ss-asia.trafficmanager.net <br>\*.msedge.net <br>compass-ssl.microsoft.com  <br>feedback.skype.com <br>\*.secure.skypeassets.com  <br>mlccdnprod.azureedge.net  <br>videoplayercdn.osi.office.net <br>\*.mstea.ms | [Direcciones URL e intervalos de direcciones IP de Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 Power BI | maxcdn.bootstrapcdn.com <br>ajax.aspnetcdn.com <br>netdna.bootstrapcdn.com <br>cdn.optimizely.com <br>google-analytics.com <br>\*.mktoresp.com <br>\*.aadcdn.microsoftonline-p.com <br>\*.msecnd.com <br>\*.localytics.com <br>ajax.aspnetcdn.com <br>\*.localytics.com <br>\*.virtualearth.net <br>platform.bing.com <br>powerbi.microsoft.com <br>c.microsoft.com <br>app.powerbi.com <br>\*.powerbi.com <br>dc.services.visualstudio.com <br>support.powerbi.com <br>powerbi.uservoice.com <br>go.microsoft.com <br>c1.microsoft.com <br>\*.azureedge.net |[Power BI & Express Route](/power-bi/service-admin-power-bi-expressroute) 
-OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*.onenote.com <br>\*.msecnd.net <br>\*.microsoft.com <br>\*.office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\*.onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*.microsoft.com | [Intervalos de direcciones IP y direcciones URL de Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges).
+OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*.onenote.com <br>\*.msecnd.net <br>\*.microsoft.com <br>\*.office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\*.onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*.microsoft.com | [Direcciones URL e intervalos de direcciones IP de Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
 
 1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
-2. Ejecutar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
-1. Comprar [Portal de empresa](../get-started/company-portal.md).
-1. Revisar [los requisitos previos de las cuentas invitadas](guest-accounts.md).
+2. Ejecutar las [herramientas para evaluar la preparación](readiness-assessment-tool.md).
+1. Comprar el [Portal de empresa](../get-started/company-portal.md).
+1. Revisar los [requisitos previos para las cuentas de invitado](guest-accounts.md).
 1. Compruebe la configuración de red (en este artículo).
-1. [Preparar certificados y perfiles de red](certs-wifi-lan.md).
-1. [Preparar el acceso del usuario a los datos](authentication.md).
-1. [Preparar aplicaciones](apps.md).
-1. [Preparar unidades asignadas](mapped-drives.md).
-1. [Preparar recursos de impresión](printing.md).
-1. Nombres [de dispositivo de dirección](address-device-names.md).
+1. [Preparar los certificados y perfiles de red](certs-wifi-lan.md).
+1. [Preparar el acceso de usuario a los datos](authentication.md).
+1. [Preparar las aplicaciones](apps.md).
+1. [Preparar las unidades asignadas](mapped-drives.md).
+1. [Preparar los recursos de impresión](printing.md).
+1. [Nombres del dispositivo](address-device-names.md) de dirección.

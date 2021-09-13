@@ -20,11 +20,11 @@ search.appverid:
 - SPO160
 description: Office 365 Content Delivery Network inicio rápido (CDN)
 ms.openlocfilehash: 30c5d301af6e4ca20646c46cc63cde38f2b28aed
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570538"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215810"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 Content Delivery Network inicio rápido (CDN)
 
@@ -80,7 +80,7 @@ El resultado de estos cmdlets debe tener el siguiente aspecto:
 
 ![Salida de Set-SPOTenantCdnEnabled.](../media/O365-CDN/o365-cdn-enable-output.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Usar la herramienta Diagnóstico de página para SharePoint Online](./page-diagnostics-for-spo.md)
 

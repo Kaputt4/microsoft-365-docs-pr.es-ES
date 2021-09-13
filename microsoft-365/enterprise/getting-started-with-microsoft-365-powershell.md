@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 'Summary: Understand the value of PowerShell for Microsoft 365, how to get connected to your Microsoft 365 tenant, and where to get help.'
 ms.openlocfilehash: 3f9bb352a198ba5491063ee4475611a49d21c31b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356725"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216060"
 ---
 # <a name="get-started-with-powershell-for-microsoft-365"></a>Introducción a PowerShell para Microsoft 365
 

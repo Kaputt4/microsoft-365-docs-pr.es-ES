@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 4a3aac06f19c7ed86af67f3b72bac8bf367628a8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214567"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 
@@ -55,7 +55,7 @@ Una Microsoft 365 E5, una licencia de seguridad E5, A5 o A5 o una combinación v
 Microsoft 365 Defender proporciona una mejor visibilidad, correlación y corrección a medida que implementa servicios más compatibles.
 
 ### <a name="benefits-of-full-deployment"></a>Ventajas de la implementación completa
-Para obtener las ventajas completas de Microsoft 365 Defender, se recomienda implementar todos los servicios compatibles. Estas son algunas de las ventajas clave de la implementación completa:
+Para obtener las ventajas completas de Microsoft 365 Defender, se recomienda implementar todos los servicios compatibles. Estas son algunas de las principales ventajas de la implementación completa:
 - Los incidentes se identifican y correlacionan en función de las alertas y las señales de eventos de todos los sensores disponibles y las capacidades de análisis específicas del servicio
 - Los playbooks de investigación y corrección automatizadas (AIR) se aplican en varios tipos de entidad, incluidos dispositivos, buzones y cuentas de usuario
 - Se puede consultar un esquema de búsqueda avanzada más completo para los datos de eventos y entidades de dispositivos, buzones y otras entidades
@@ -73,7 +73,7 @@ En la tabla siguiente se muestra cómo cada servicio admitido proporciona datos 
 | Microsoft Cloud App Security | - Detección de servicios y aplicaciones en la nube no cedida (TECNOLOGÍA de la sombra)<br />- Exposición de datos a aplicaciones en la nube<br />- Actividad de amenazas asociada a aplicaciones en la nube | Aplicaciones en la nube |
 
 ## <a name="deploy-the-services"></a>Implementar los servicios
-Por lo general, la implementación de cada servicio requiere el aprovisionamiento del espacio empresarial y alguna configuración inicial. Consulte la tabla siguiente para comprender cómo se implementan cada uno de estos servicios.
+La implementación de cada servicio normalmente requiere el aprovisionamiento del espacio empresarial y alguna configuración inicial. Consulte la tabla siguiente para comprender cómo se implementan cada uno de estos servicios.
 
 | Servicio | Instrucciones de aprovisionamiento | Configuración inicial |
 | ------ | ------ | ------ |

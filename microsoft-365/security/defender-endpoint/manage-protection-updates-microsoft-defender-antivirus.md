@@ -15,12 +15,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 04683635399c2cd1efbf6cceca95fa0cfe1b2775
-ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
+ms.openlocfilehash: d95d9e0add79d83edbee351c734ab6636902cd29
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "58896446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214907"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -59,10 +59,14 @@ Cuanto más antiguas sean las actualizaciones de un punto de conexión, mayor se
 Hay cinco ubicaciones donde puede especificar dónde debe obtener actualizaciones un punto de conexión:
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) (Intune Internal Definition Update Server: si usa SCCM/SUP para obtener actualizaciones de definición para Antivirus de Microsoft Defender y necesita obtener acceso a Windows Update en dispositivos cliente bloqueados, puede realizar la transición a la administración en colaboración y descargar la carga de trabajo de protección de puntos de conexión a Intune. En la directiva de AntiMalware configurada en Intune hay una opción para "servidor de actualización de definiciones interna" que se puede configurar para usar WSUS local como origen de actualización)
+- [Windows de actualización de servidor](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup> [[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Recurso compartido de archivos de red](#unc-share)
-- [Actualizaciones de inteligencia de](https://www.microsoft.com/wdsi/defenderupdates) seguridad para Antivirus de Microsoft Defender y otros antimalware de Microsoft (Es posible que la directiva y el registro tengan esta lista como inteligencia de seguridad de Centro de protección contra malware de Microsoft (MMPC), su nombre anterior).
+- [Actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y otros antimalware](https://www.microsoft.com/wdsi/defenderupdates) <sup> de Microsoft [[2](#fn1)]<sup></sup>
+
+  (<a id="fn1">1</a>) Servidor de actualización interna de definiciones de Intune: si usa SCCM/SUP para obtener actualizaciones de definiciones para Antivirus de Microsoft Defender y necesita tener acceso Windows Update en dispositivos cliente bloqueados, puede realizar la transición a la administración y descargar la carga de trabajo de protección de puntos de conexión en Intune. En la directiva de AntiMalware configurada en Intune hay una opción para el "servidor de actualización de definiciones internas" que se puede configurar para usar WSUS local como origen de actualización. Esto le ayuda a controlar qué actualizaciones del servidor WU oficial están aprobadas para la empresa y también ayuda a proxy y a guardar tráfico de red en la red Windows UPdates oficial.
+
+  (<a id="fn1">2</a>) Es posible que la directiva y el Registro aparezcan como inteligencia de seguridad Centro de protección contra malware de Microsoft (MMPC), su nombre anterior.
 
 Para garantizar el mejor nivel de protección, Microsoft Update permite versiones rápidas, lo que significa descargas más pequeñas con frecuencia. El Windows de actualización de servidor, los Microsoft Endpoint Configuration Manager y los orígenes de actualizaciones de inteligencia de seguridad de Microsoft proporcionan actualizaciones menos frecuentes. Por lo tanto, el delta puede ser más grande, lo que da como resultado descargas más grandes.
 

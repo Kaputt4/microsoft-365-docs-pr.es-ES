@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Obtenga información sobre cómo crear, definir y elegir custodios y ubicaciones de custodia para una búsqueda en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 3050e176f495bd2fc23ac6237f1dac28b04088ec
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574308"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213927"
 ---
 # <a name="create-a-search"></a>Crear una búsqueda
 

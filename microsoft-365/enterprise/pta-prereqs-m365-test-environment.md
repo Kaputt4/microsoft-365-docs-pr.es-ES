@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Cree un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades con los requisitos previos para la autenticación de paso a través.
 ms.openlocfilehash: da97f8b18105b148eb5c87fecef12335eacd8f07
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574693"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215777"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Requisitos previos de acceso de dispositivos e identidades para la autenticación de paso a través en el entorno de prueba de Microsoft 365
 
@@ -134,6 +134,6 @@ Use [Directivas comunes de acceso a dispositivos e identidades](../security/offi
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

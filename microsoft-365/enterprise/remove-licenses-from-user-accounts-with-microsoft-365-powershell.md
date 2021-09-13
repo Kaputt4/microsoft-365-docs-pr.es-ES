@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explica cómo usar PowerShell para quitar Microsoft 365 licencias asignadas anteriormente a los usuarios.
 ms.openlocfilehash: e798eaaf18c39a026c5a2d5f5861689e5ddd3953
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215740"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Quitar Microsoft 365 de usuario de cuentas de usuario con PowerShell
 
@@ -176,7 +176,7 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
 
 Otra forma de liberar una licencia consiste en eliminar la cuenta de usuario. Para obtener más información, vea [Eliminar y restaurar cuentas de usuario con PowerShell](delete-and-restore-user-accounts-with-microsoft-365-powershell.md).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

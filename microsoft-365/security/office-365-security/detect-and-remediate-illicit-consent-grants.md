@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo reconocer y corregir el ataque de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f2e5139ed9c16026ec49eab9318588b7704a0fb7f690fef5ea6cc4ce3274fde
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56785908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214450"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Detectar y corregir las concesiones ilegales de consentimiento
 
@@ -50,7 +50,7 @@ Debe buscar en el registro de **auditoría** para encontrar signos, también den
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Pasos para encontrar signos de este ataque
 
-1. Abra el **Microsoft 365 Defender en y,** <https://security.microsoft.com> a continuación, seleccione **Auditar**. O bien, para ir directamente a la **página Auditoría,** use <https://security.microsoft.com/auditlogsearch> .
+1. Abra el **Microsoft 365 Defender en y,** <https://security.microsoft.com> a continuación, seleccione **Auditar**. O bien, para ir directamente a la página de **Auditoría**, use <https://security.microsoft.com/auditlogsearch>.
 
 2. En la **página Auditoría,** compruebe que la **pestaña** Buscar está seleccionada y, a continuación, configure las siguientes opciones:
    - **Intervalo de fecha y hora**

@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 85b021d42741919a64555de3ecd748e096457939
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58824015"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214967"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Administrar el proceso de implementación gradual para actualizaciones de Microsoft Defender
 
@@ -82,7 +82,7 @@ Los siguientes canales de actualización están disponibles:
 
 ****
 
-|Nombre de canal|Descripción|Aplicación|
+|Nombre de canal|Description|Aplicación|
 |---|---|---|
 |Canal beta: versión preliminar|Probar actualizaciones antes que otras|Los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones mensuales. Seleccione Canal beta para participar en la identificación y la presentación de informes de problemas a Microsoft. Los dispositivos del Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba.|
 |Canal actual (vista previa)|Obtener actualizaciones del canal actual **antes** durante la versión gradual|Los dispositivos establecidos en este canal recibirán actualizaciones lo antes posible durante el ciclo de lanzamiento gradual. Sugerido para entornos de preproducción/validación.|

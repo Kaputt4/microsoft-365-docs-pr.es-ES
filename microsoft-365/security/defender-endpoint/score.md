@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 9a8b87a7cee3bb03a0946773012ed6f18bbd75b9
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350009"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214797"
 ---
 # <a name="score-resource-type"></a>Tipo de recurso Score
 
@@ -42,7 +42,7 @@ ms.locfileid: "58350009"
 
 ## <a name="methods"></a>Métodos
 
-Método|Tipo de valor devuelto|Descripción
+Método|Tipo de valor devuelto|Description
 :---|:---|:---
 [Obtener puntuación de exposición](get-exposure-score.md)|[Puntuación](score.md)|Obtener la puntuación de exposición de la organización.
 [Obtener puntuación segura para dispositivos](get-device-secure-score.md)|[Puntuación](score.md)|Obtiene la puntuación segura del dispositivo de la organización.
@@ -54,5 +54,5 @@ Propiedad|Tipo|Descripción
 :---|:---|:---
 Puntuación|Doble|La puntuación actual.
 Hora|DateTime|La fecha y hora en que se realizó la llamada para esta API.
-RbacGroupName|String|El nombre del grupo de dispositivos.
-RbacGroupId|String|Id. del grupo de dispositivos.
+RbacGroupName|Cadena|El nombre del grupo de dispositivos.
+RbacGroupId|Cadena|Id. del grupo de dispositivos.

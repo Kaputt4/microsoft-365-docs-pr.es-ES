@@ -15,12 +15,12 @@ ms.custom:
 description: Obtenga información sobre Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos independientes e híbridos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8214e4b64dbd1c89f9b393e9e88cd57e6b72dde73740874b46e4118b9916411a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a925b251ff79aec5acaa0b2c1da2aee3f5a6d70d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56813832"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214440"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -92,17 +92,17 @@ Para obtener información sobre los requisitos, los límites importantes y la di
 <br>
 
 ****
-|Característica|Comentarios|
+|Característica|Comments|
 |---|---|
 |**Protection**||
 |Antimalware|[Protección contra malware en EOP](anti-malware-protection.md) <p> [Preguntas más frecuentes sobre la protección antimalware](anti-malware-protection-faq-eop.yml) <p> [Configurar directivas antimalware en EOP](configure-anti-malware-policies.md)|
 |Correo no deseado entrante|[Protección contra correo no deseado en EOP](anti-spam-protection.md) <p> [Preguntas más frecuentes sobre la protección contra correo electrónico no deseado](anti-spam-protection-faq.yml) <p> [Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
 |Correo no deseado saliente|[Protección contra correo no deseado saliente en EOP](outbound-spam-controls.md) <p> [Configurar el filtrado de correo no deseado saliente en EOP](configure-the-outbound-spam-policy.md) <p> [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](external-email-forwarding.md)|
 |Filtrado de la conexión|[Configurar el filtrado de la conexión](configure-the-connection-filter-policy.md)|
-|Anti-phishing|[Directivas contra la suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)|
+|Protección contra la suplantación de identidad (anti-phishing)|[Directivas contra la suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)|
 |Protección contra la suplantación de identidad|[Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md) <p> [Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
 |Purga automática de hora cero (ZAP) para mensajes de malware, correo no deseado y phishing entregados|[ZAP en Exchange Online](zero-hour-auto-purge.md)|
-|Directivas de seguridad predefinidas|[Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
+|Directivas de seguridad preestablecidas|[Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
 |Lista de bloqueados y permitidos del espacio empresarial|[Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
 |Bloquear listas para remitentes de mensajes|[Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)|
 |Permitir listas para remitentes de mensajes|[Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md)|

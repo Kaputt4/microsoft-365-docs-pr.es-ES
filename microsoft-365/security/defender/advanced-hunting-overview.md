@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 564afed2c10d232076bf6875e035bcf03ea7712ada2b430729f4a936a675b8bb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b59ff2a32ef5a067576c43b9b0a394590e30b666
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833200"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214697"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Búsqueda proactiva de amenazas con búsqueda avanzada en Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "53833200"
 > ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de pruebas](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o bien [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
-La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas que te permite explorar hasta 30 días de datos sin procesar. Puede inspeccionar de forma proactiva los eventos de la red para localizar indicadores y entidades de amenazas. El acceso flexible a los datos permite la búsqueda sin restricciones para amenazas conocidas y potenciales.
+La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas que te permite explorar hasta 30 días de datos sin procesar. Puede inspeccionar eventos de forma proactiva en su red para localizar entidades e indicadores de amenazas. El acceso flexible a los datos permite la búsqueda sin restricciones para amenazas conocidas y potenciales.
 <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
@@ -77,10 +77,10 @@ Además, el acceso a los datos del punto de conexión viene determinado por la c
 
 
 ## <a name="data-freshness-and-update-frequency"></a>Actualización de datos y frecuencia de actualización
-Los datos de búsqueda avanzados se pueden clasificar en dos tipos distintos, cada uno consolidado de forma diferente.
+Los datos de búsqueda avanzada se pueden clasificar en dos tipos distintos, cada uno consolidado de forma diferente.
 
 - **Datos de eventos o actividades:** rellena tablas sobre alertas, eventos de seguridad, eventos del sistema y evaluaciones rutinarias. La búsqueda avanzada recibe estos datos casi inmediatamente después de que los sensores que los recopilan los transmitan correctamente a los servicios en la nube correspondientes. Por ejemplo, puede consultar datos de eventos desde sensores en buen estado en estaciones de trabajo o controladores de dominio casi inmediatamente después de que estén disponibles en Microsoft Defender para Endpoint y Microsoft Defender para Identity.
-- **Datos de entidad:** rellena las tablas con información sobre usuarios y dispositivos. Estos datos proceden de orígenes de datos relativamente estáticos y orígenes dinámicos, como entradas de Active Directory y registros de eventos. Para proporcionar datos nuevos, las tablas se actualizan con cualquier información nueva cada 15 minutos, agregando filas que podrían no estar completamente rellenadas. Cada 24 horas, los datos se consolidan para insertar un registro que contiene el conjunto de datos más reciente y completo sobre cada entidad.
+- **Datos de entidad:** rellena las tablas con información sobre usuarios y dispositivos. Estos datos proceden tanto de orígenes de datos relativamente estáticos como de orígenes dinámicos, como entradas de Active Directory y registros de eventos. Para proporcionar datos nuevos, las tablas se actualizan con cualquier información nueva cada 15 minutos, agregando filas que podrían no estar completamente rellenadas. Cada 24 horas, los datos se consolidan para insertar un registro que contiene el conjunto de datos más reciente y completo sobre cada entidad.
 
 ## <a name="time-zone"></a>Zona horaria
 La información de hora en la búsqueda avanzada se encuentra en la zona horaria UTC.

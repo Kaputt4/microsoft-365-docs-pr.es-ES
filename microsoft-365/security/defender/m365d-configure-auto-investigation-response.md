@@ -1,5 +1,5 @@
 ---
-title: Configurar las capacidades automatizadas de investigación y respuesta en Microsoft 365 Defender
+title: Configurar las funcionalidades automatizadas de investigación y respuesta en Microsoft 365 Defender
 description: Configurar la investigación automatizada y la respuesta con recuperación automática en Microsoft 365 Defender
 search.appverid: MET150
 ms.author: josephd
@@ -17,13 +17,13 @@ ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
 ms.openlocfilehash: 84107a54c47c3bfe68cd7740e1e06ff40b11957a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563931"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214520"
 ---
-# <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurar las capacidades automatizadas de investigación y respuesta en Microsoft 365 Defender
+# <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurar las funcionalidades automatizadas de investigación y respuesta en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -103,7 +103,7 @@ La configuración de seguridad Office 365 ayuda a proteger el correo electrónic
 > [!TIP]
 > ¿Necesita ayuda? Vea [Activar Microsoft 365 Defender](m365d-enable.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Acciones de corrección en Microsoft 365 Defender](m365d-remediation-actions.md)
 - [Visite el Centro de actividades](m365d-action-center.md)

@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo regular el acceso en Microsoft 365 grupos, Teams y SharePoint.
-ms.openlocfilehash: 37ea23956e4d4953da631eeb47bc227ad1059a335e68752c5c5b9ab82cef6deb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853012"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214207"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Administración del acceso en Microsoft 365 grupos, Teams y SharePoint
 
@@ -29,7 +29,7 @@ Hay muchos controles que permiten controlar la forma en que las personas acceden
 
 En la tabla siguiente se proporciona una referencia rápida para los controles de acceso disponibles en Microsoft 365. Se proporciona más información en las secciones siguientes.
 
-|Categoría|Description|Referencia|
+|Categoría|Descripción|Referencia|
 |:-------|:----------|:--------|
 |Pertenencia|||
 ||Detección de equipos privados|[Administrar la detección de equipos privados en Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)|

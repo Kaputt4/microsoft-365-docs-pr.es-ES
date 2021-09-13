@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: a1a000ec60d84e5abc4ec23591b917eb3072582e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214870"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 

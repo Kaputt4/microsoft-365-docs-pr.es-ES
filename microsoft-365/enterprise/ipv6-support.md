@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Resumen: describe la compatibilidad con IPv6 en Microsoft 365 componentes y en Microsoft 365 ofertas gubernamentales.'
 ms.openlocfilehash: be9ce7cc2eaaec74889e9d88ddfa9b781c6d308e
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863403"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215967"
 ---
 # <a name="ipv6-support-in-microsoft-365-services"></a>Compatibilidad con IPv6 en los servicios de Microsoft 365
 

@@ -24,11 +24,11 @@ f1.keywords:
 description: Comience a planear la actualización Office servidores y aplicaciones cliente de 2010, ya que la compatibilidad finaliza pronto y los acuerdos de soporte personalizados no están disponibles.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: f4f90a34bd4f6c4585cc8900b11808a11f4a2947
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215647"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos para ayudarle a actualizar desde servidores y clientes de Office 2010
 

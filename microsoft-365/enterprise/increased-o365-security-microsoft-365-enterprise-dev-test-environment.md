@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ms.custom: Ent_TLGs
+ms.custom:
+- Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para habilitar la configuración Microsoft 365 seguridad adicional de su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 08b1db95a35debfa465d57d30ab0a8a2bd9f9732
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 7598ade331ae340ede52f4c47375aebba792eb84
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216000"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Mayor Microsoft 365 seguridad para su Microsoft 365 entorno de prueba empresarial
 
@@ -49,7 +51,7 @@ En esta fase, se habilita una mayor Microsoft 365 seguridad para su Microsoft 36
 
 Las aplicaciones que no admiten la autenticación moderna no pueden tener configuraciones de identidad y acceso a [dispositivos aplicadas,](../security/office-365-security/microsoft-365-policies-configurations.md) lo que es un elemento importante para proteger la suscripción Microsoft 365 y sus activos digitales. 
 
-1. Vaya a la Centro de administración de Microsoft 365 ( ) e inicie sesión en su Microsoft 365 de laboratorio de [https://portal.microsoft.com](https://portal.microsoft.com) pruebas con su cuenta de administrador global.
+1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> e inicie sesión en su Microsoft 365 de laboratorio de pruebas con su cuenta de administrador global.
     
   - Si usa el entorno de prueba Microsoft 365 ligero, inicie sesión desde el equipo local.
     
@@ -107,20 +109,20 @@ Para obtener más información, vea [Panel de seguridad](../security/office-365-
 
 Puntuación segura de Microsoft muestra su posición de seguridad como un número, que indica el nivel actual con respecto a las características que están disponibles en su suscripción. También te ofrece una lista de acciones de mejora que puedes realizar para mejorar tu puntuación.
 
-1. Cree una nueva pestaña en el explorador y vaya al centro de seguridad Microsoft 365 [y,](https://security.microsoft.com/)a continuación, haga clic en **Puntuación segura**.
+1. Cree una nueva pestaña en el explorador, vaya al centro de seguridad Microsoft 365 y, <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">a</a>continuación, haga clic en **Puntuación segura**.
 2. En la **pestaña Información**  general, anote su puntuación segura actual y cómo se compara con el promedio global y las suscripciones con un número similar de licencias.
 3. En la **pestaña Acciones de** mejora, lee la lista de acciones que puedes realizar para aumentar la puntuación.
 
 Para obtener más información, vea [Puntuación segura de Microsoft](../security/defender/microsoft-secure-score.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#information-protection) de protección de la información en el entorno de prueba.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

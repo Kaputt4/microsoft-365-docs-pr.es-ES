@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5e67cf54e18209c71693621db1d6df30717f03500db8d1bf3ddc292609256c0b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6df569c2919e9941bc5c7c6ee92970fa694af225
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856756"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213997"
 ---
 # <a name="contact-support-for-heard-island-and-mcdonald-islands"></a>Póngase en contacto con el soporte técnico de Heard Island y McDonald Islands
 

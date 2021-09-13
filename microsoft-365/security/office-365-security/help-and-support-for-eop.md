@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1ce9c5a92a7b481058e9ba7e0c3e4067d613085fa7fd18eaddc7e0b78db563c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 85d6c23dcec77fac6a91ae353bce951c005a4b29
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56814771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214417"
 ---
 # <a name="help-and-support-for-eop"></a>Ayuda y soporte técnico para EOP
 

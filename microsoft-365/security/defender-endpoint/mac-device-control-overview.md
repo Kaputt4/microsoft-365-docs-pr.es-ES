@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 612c9a717ae10c97c91a183418e36fa87e2f7ba8
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747524"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215017"
 ---
 # <a name="device-control-for-macos"></a>Control de dispositivos para macOS
 
@@ -86,7 +86,7 @@ Cuando los usuarios finales hacen clic en esta notificación, se abre una págin
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|navigationTarget|
-|**Tipo de datos**|String|
+|**Tipo de datos**|Cadena|
 |**Comments**|Si no se define, el producto usa una dirección URL predeterminada que apunta a una página genérica que explica la acción realizada por el producto.|
 |
 
@@ -174,7 +174,7 @@ Esta configuración se puede establecer en:
 |Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
-|**Clave**|permission|
+|**Clave**|permiso|
 |**Tipo de datos**|Matriz de cadenas|
 |**Posibles valores**|ninguno <p> read <p> write <p> execute|
 |
@@ -207,7 +207,7 @@ Para cada proveedor, puede especificar el nivel de permisos deseado para los dis
 |Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
-|**Clave**|permission|
+|**Clave**|permiso|
 |**Tipo de datos**|Matriz de cadenas|
 |**Posibles valores**|Igual que [el nivel de permisos predeterminado](#default-permission-level)|
 |
@@ -234,7 +234,7 @@ Para cada producto, puede especificar el nivel de permisos deseado para ese prod
 |Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
-|**Clave**|permission|
+|**Clave**|permiso|
 |**Tipo de datos**|Matriz de cadenas|
 |**Posibles valores**|Igual que [el nivel de permisos predeterminado](#default-permission-level)|
 |
@@ -263,7 +263,7 @@ Para cada número de serie, puede especificar el nivel de permisos deseado.
 |Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
-|**Clave**|permission|
+|**Clave**|permiso|
 |**Tipo de datos**|Matriz de cadenas|
 |**Posibles valores**|Igual que [el nivel de permisos predeterminado](#default-permission-level)|
 |

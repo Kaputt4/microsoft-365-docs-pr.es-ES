@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar las páginas de sitios de publicación modernos y clásicos en SharePoint Online limitando el número de llamadas a los puntos de conexión de servicios de SharePoint Online.
 ms.openlocfilehash: 7c3872e0860b089f52d9597a06bced71ea6eb523
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573600"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215837"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimizar las llamadas de página en las páginas de sitios de publicación modernos y clásicos de SharePoint Online
 

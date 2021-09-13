@@ -23,15 +23,15 @@ search.appverid:
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: En este artículo, obtenga información sobre los requisitos de enrutamiento de Azure ExpressRoute, los circuitos y los dominios de enrutamiento para su uso con Office 365.
 ms.openlocfilehash: d157515f60a68a46b033571a0fd39e6a5711b884
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575833"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215697"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Para comprender correctamente el tráfico de enrutamiento a Office 365 mediante Azure ExpressRoute, necesitará una comprensión firme de los principales requisitos de enrutamiento de [ExpressRoute](/azure/expressroute/expressroute-routing) y los circuitos y dominios de enrutamiento de [ExpressRoute.](/azure/expressroute/expressroute-circuit-peerings) Estos se basan en los aspectos básicos para usar ExpressRoute Office 365 en los que los clientes se basarán.
   

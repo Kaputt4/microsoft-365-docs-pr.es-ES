@@ -13,11 +13,11 @@ ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
 ms.openlocfilehash: f8c27f5776c41376abd6f9c0e412480e02bab217
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215280"
 ---
 # <a name="overview"></a>Información general
 
@@ -82,7 +82,7 @@ Escritorio administrado de Microsoft un proceso de control de cambios tal como s
 ## <a name="compliance"></a>Cumplimiento
 Escritorio administrado de Microsoft se ha sometido a auditorías externas y ha obtenido un conjunto completo de ofertas de cumplimiento. Puede encontrar más información en Escritorio administrado de Microsoft [Compliance](/microsoft-365/managed-desktop/intro/compliance). Los informes de auditoría están disponibles para su descarga en Microsoft [Service Trust Portal,](https://aka.ms/stp)que sirve como repositorio central para Microsoft Enterprise Online Services. (Escritorio administrado de Microsoft se incluye en estos documentos en la categoría "Supervisión y administración").
 
-### <a name="data-subject-requests"></a>Solicitudes de interesados
+### <a name="data-subject-requests"></a>Solicitudes de los interesados
 Escritorio administrado de Microsoft las regulaciones de privacidad del RGPD y ccPA, que dan a los interesados derechos específicos sobre sus datos personales. Estos derechos incluyen la obtención de copias de datos personales, la solicitud de correcciones, la restricción del procesamiento de los mismos, la eliminación o la recepción en un formato electrónico para que se puedan mover a otro controlador. Para obtener más información sobre solicitudes de interesados (DSR) en general, vea Solicitudes del interesado y [el RGPD y CCPA](/compliance/regulatory/gdpr-data-subject-requests).
 
 Para ejercer las solicitudes del interesado en los datos recopilados por el Escritorio administrado de Microsoft de administración de casos, vea lo siguiente:

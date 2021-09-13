@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Para direcciones IP de destino y direcciones URL para Microsoft 365 tráfico, use esta lista de artículos para los puntos de conexión de Internet de las distintas Microsoft 365 nubes.
-ms.openlocfilehash: 3ffe00e1b578f135829f8c1d621e413dd6f00848041087222a0af4518e79a15f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 159c8e7dea6fe241ab44b283b1193397c3ad70e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830208"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215897"
 ---
 # <a name="microsoft-365-endpoints"></a>Puntos de conexión de Microsoft 365
 
@@ -38,7 +38,7 @@ Consulte [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md) pa
 
 Actualmente hay cinco nubes Microsoft 365 diferentes. Esta tabla le lleva a la lista de puntos de conexión para cada uno.
 
-| Nube | Descripción |
+| Nube | Description |
 |:-------|:-----|
 | [Puntos de conexión mundiales](urls-and-ip-address-ranges.md) | Los puntos de conexión para las suscripciones de Microsoft 365, que incluyen la Government Community Cloud Estados Unidos (GCC). |
 | [Puntos de conexión de DoD de Estados Unidos](microsoft-365-u-s-government-dod-endpoints.md) | Puntos de conexión para las suscripciones del Department of Defense (DoD) de Estados Unidos. |

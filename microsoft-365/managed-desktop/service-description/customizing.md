@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 83c5ce953b298c61502f2bc10a5d01191bfb98d1d39690a9472509058d8f37db
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 59a2b8227eb7e410ecf8506ce288978213537edc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857896"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215380"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Excepciones para el plan de servicios
 
@@ -32,7 +32,7 @@ Una excepción es cualquier adición o cambio a la configuración Escritorio adm
 |Controladores de hardware o software     |   Controladores de dispositivo, restringidos por los [requisitos de la aplicación](mmd-app-requirements.md)      |
 |Directivas     | Windows 10 o Aplicaciones Microsoft 365 para empresas en un dispositivo administrado        |
 |Dispositivos     | Dispositivos que no están en la Escritorio administrado de Microsoft [dispositivos](device-list.md)        |
-|Otro     |  Cualquier cosa no cubierta por las otras áreas       |
+|Otros     |  Cualquier cosa no cubierta por las otras áreas       |
  
 ## <a name="request-an-exception"></a>Solicitar una excepción
 

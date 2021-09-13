@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: f3ccb47c2facffed0a259b4807f8155b4c87cb70
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215540"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 

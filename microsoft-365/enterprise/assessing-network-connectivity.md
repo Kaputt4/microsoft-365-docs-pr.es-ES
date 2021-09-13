@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365 está diseñado para permitir a los clientes de todo el mundo conectarse al servicio mediante una conexión a Internet. A medida que el servicio evoluciona, la seguridad, el rendimiento y la confiabilidad de Microsoft 365 se mejoran en función de los clientes que usan Internet para establecer una conexión al servicio.
-ms.openlocfilehash: ae3b06a607d3e45f5f1067616ba46c4226dde55766e02bd9f75b70313095474e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d80bdf5642b2456ac8293291c720429f7f18fb1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885416"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213897"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Evaluar la conectividad de red de Microsoft 365
 
@@ -45,7 +45,7 @@ Algunos recursos que le ayudarán a evaluar la red:
 
 - Vea [Microsoft 365 de conectividad de red para](microsoft-365-networking-overview.md) obtener información conceptual sobre Microsoft 365 redes.
 - Consulte [Microsoft 365 principios](./microsoft-365-network-connectivity-principles.md) de conectividad de red para comprender los principios de conectividad para administrar de forma segura Microsoft 365 tráfico y obtener el mejor rendimiento posible.
-- Regístrate en [Microsoft FastTrack para](https://www.microsoft.com/fasttrack) obtener asistencia guiada Microsoft 365 planeación, diseño e implementación. 
+- Regístrate en [Microsoft FastTrack](https://www.microsoft.com/fasttrack) para obtener asistencia guiada con Microsoft 365, diseño e implementación. 
 - Vea la [sección Microsoft 365](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) prueba de conectividad de Microsoft 365 para ejecutar pruebas de conectividad básicas que proporcionan instrucciones específicas sobre las mejoras de conectividad de red que se pueden realizar entre una ubicación de usuario determinada y Microsoft 365.
 
 > [!NOTE]
@@ -57,7 +57,7 @@ Puntos clave a tener en cuenta al planear la evaluación de red para Microsoft 3
 
 - Estamos optimizando continuamente los aspectos principales de Microsoft 365 como la disponibilidad, el alcance global y el rendimiento de la conectividad basada en Internet. Por ejemplo, muchos Microsoft 365 aprovechan un conjunto en expansión de nodos perimetrales orientados a Internet. Esta red perimetral ofrece la mejor proximidad y rendimiento a las conexiones que llegan a través de Internet.
 
-- Al considerar el uso de Microsoft 365 para cualquiera de los servicios incluidos, como las capacidades de voz, vídeo o reunión en línea de Teams o Skype Empresarial, los clientes deben completar una evaluación de la red de extremo a extremo y cumplir los requisitos de conectividad con [Microsoft FastTrack.](https://www.microsoft.com/fasttrack)
+- Al considerar el uso de Microsoft 365 para cualquiera de los servicios incluidos, como las capacidades de voz, vídeo o reunión de Teams o Skype Empresarial Online, los clientes deben completar una evaluación de la red de extremo a extremo y cumplir los requisitos de conectividad con [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
 Si está evaluando Microsoft 365 y no está seguro de dónde empezar con la evaluación de red o ha encontrado desafíos de diseño de red que necesita ayuda para superar, trabaje con su equipo de cuenta de Microsoft.
 

@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 952916fe3f27a9aa8519682f88de5ee1a3838b0e97f97ece519b6f906c016dc7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5aaaa0ae3c36e04a73f65df114c8927e59b6a259
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838456"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214137"
 ---
 # <a name="test-package-guidelines"></a>Directrices del paquete de prueba
 
@@ -112,7 +112,7 @@ Estos archivos binarios deben incluir todo lo necesario para la instalación de 
 > [!NOTE]
 > El archivo zip cargado no puede tener espacios ni caracteres especiales en su nombre
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Avance al siguiente artículo para ver algunas **preguntas más frecuentes (PREGUNTAS FRECUENTES)**
 > [!div class="nextstepaction"]

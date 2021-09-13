@@ -20,11 +20,11 @@ ms.collection:
 - m365solution-scenario
 ms.technology: mdo
 ms.openlocfilehash: 719b754e8e3486c281b23f4c38c7e33f548b118c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214370"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Directivas para permitir el acceso de invitado y el acceso de usuarios externos B2B
 

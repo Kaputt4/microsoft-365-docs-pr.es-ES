@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Summary: Configure the domain controllers and directory synchronization server for your high availability federated authentication for Microsoft 365 in Microsoft Azure.'
 ms.openlocfilehash: f5d68f75a281ed8e04b8a41d7b748e056e081b52
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565237"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216007"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fase 2 de la autenticación federada de alta disponibilidad: Configurar controladores de dominio
 

@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 699d8c1d8ea7ac6928c96b6c98226ab82e0725fb
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254989"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214610"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Roles personalizados en el control de acceso basado en roles para Microsoft 365 Defender
 
@@ -68,7 +68,7 @@ Cada rol personalizado creado a través de un portal individual permite el acces
 Los permisos y roles también se pueden administrar en el portal de Microsoft 365 Defender web:
 
 1. Inicie sesión en el portal Microsoft 365 Defender en security.microsoft.com.
-2. En el panel de navegación, seleccione **Permisos & roles**.
+2. En el panel de navegación, seleccione **Permisos y roles**.
 3. En el **encabezado Permissions,** seleccione **Roles**.
 
 > [!NOTE]

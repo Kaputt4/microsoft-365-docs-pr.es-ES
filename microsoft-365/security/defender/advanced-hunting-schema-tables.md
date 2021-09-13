@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 4dcbb7051325483a220c39fdebaae53aba9c37f4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575977"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214630"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Descripción del esquema de búsqueda avanzada
 
@@ -44,7 +44,7 @@ Al crear consultas, use la referencia de esquema integrado para obtener rápidam
 
 - **Descripción de tablas:** tipo de datos contenidos en la tabla y el origen de los datos.
 - **Columnas**: todas las columnas de la tabla.
-- **Tipos de acción:** valores posibles en la `ActionType` columna que representan los tipos de evento admitidos por la tabla. Esta información se proporciona solo para tablas que contienen información de eventos.
+- **Tipos de acción:** valores posibles en la `ActionType` columna que representan los tipos de evento admitidos por la tabla. Esta información solo se proporciona para las tablas que contienen información de eventos.
 - **Consulta de** ejemplo: consultas de ejemplo que ofrecen cómo se puede usar la tabla.
 
 ### <a name="access-the-schema-reference"></a>Obtener acceso a la referencia de esquema
@@ -59,30 +59,30 @@ A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla e
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Archivos, direcciones IP, direcciones URL, usuarios o dispositivos asociados con alertas |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertas de Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identidad, incluida la información de gravedad y la categorización de amenazas  |
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Eventos que implican cuentas y objetos en Office 365 y otras aplicaciones y servicios en la nube |
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Eventos relacionados con cuentas y objetos en Office 365 y otras aplicaciones y servicios en la nube |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad como el Antivirus de Windows Defender y la protección contra vulnerabilidades |
-| **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Información de certificado de archivos firmados obtenidos de eventos de comprobación de certificados en puntos de conexión |
+| **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Información de certificados de archivos firmados obtenidos de los eventos de comprobación de certificados en puntos de conexión |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Creación y modificación de archivos y otros eventos del sistema de archivos |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | Eventos de carga de DLL |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Información del equipo, incluida la información del sistema operativo |
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Inicios de sesión y otros eventos de autenticación en dispositivos |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Conexión de red y eventos relacionados |
-| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Propiedades de red de dispositivos, incluidos adaptadores físicos, direcciones IP y MAC, así como redes y dominios conectados |
+| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Propiedades de red de dispositivos, incluyendo adaptadores físicos, direcciones IP y MAC, así como redes y dominios conectados |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Creación de procesos y eventos relacionados |
-| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Creación y modificación de entradas de registro |
+| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Creación y modificación de entradas de Registro |
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Eventos de evaluación de administración de amenazas y vulnerabilidades, donde se indica el estado de las distintas configuraciones de seguridad de los dispositivos |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Base de conocimiento de las configuraciones de seguridad utilizadas por la administración de amenazas y vulnerabilidades para evaluar dispositivos, incluidas las asignaciones a diferentes estándares y criterios de referencia  |
-| **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Inventario de software instalado en dispositivos, incluida la información de versión y el estado de fin de soporte técnico |
-| **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Vulnerabilidades de software encontradas en dispositivos y la lista de actualizaciones de seguridad disponibles que abordan cada vulnerabilidad |
+| **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Inventario del software instalado en dispositivos, incluida la información de la versión y el estado de finalización del soporte técnico |
+| **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Vulnerabilidades de software encontradas en los dispositivos y lista de actualizaciones de seguridad disponibles que abordan cada vulnerabilidad |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | La base de conocimiento de vulnerabilidades de la que se ha informado públicamente, incluyendo si el código que aprovecha la vulnerabilidad está disponible para el público |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Información sobre los archivos adjuntos a los correos electrónicos |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 de correo electrónico, incluidos los eventos de entrega y bloqueo de correo electrónico |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Eventos de seguridad que se producen después de la entrega, Microsoft 365 ha entregado los correos electrónicos al buzón de destinatario |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Eventos de correo electrónico de Microsoft 365, incluidos los eventos de bloqueo y entrega de correo electrónico |
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Eventos de seguridad que se producen después de la entrega, una vez que Microsoft 365 ha entregado ya los correos electrónicos al buzón del destinatario |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Información sobre las direcciones URL de los correos electrónicos |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Eventos que implican un controlador de dominio local que ejecuta Active Directory (AD). En esta tabla se describe un rango de eventos relacionados con la identidad y eventos del sistema en el controlador de dominio. |
-| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Información de cuenta de varios orígenes, incluidos Azure Active Directory |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Eventos de autenticación en Active Directory y servicios en línea de Microsoft |
-| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Consultas para objetos de Active Directory, como usuarios, grupos, dispositivos y dominios |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Eventos que implican un controlador de dominio local que ejecuta Active Directory (AD). En esta tabla se describen una serie de eventos relacionados con la identidad y eventos del sistema en el controlador de dominio. |
+| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Información de la cuenta de varios orígenes, incluyendo Azure Active Directory |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Eventos de autenticación en Active Directory y en servicios en línea de Microsoft |
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Consultas sobree objetos de Active Directory, como usuarios, grupos, dispositivos y dominios |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

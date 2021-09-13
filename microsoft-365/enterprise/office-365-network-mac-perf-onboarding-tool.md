@@ -15,11 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Microsoft 365 de prueba de conectividad de red
 ms.openlocfilehash: 60817f54586fd23270edc4e67be8b41a994bf50c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570970"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215807"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de prueba de conectividad de red
 

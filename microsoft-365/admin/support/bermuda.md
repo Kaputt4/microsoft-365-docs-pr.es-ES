@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f90d946d7ec73a2d1066ecfde00851b1dc6f49b9b37c095ad672d2e098a26b2c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 149c75e827eaea3c5fb77a78e22b878b2f7fa0ed
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214050"
 ---
 # <a name="contact-support-for-bermuda"></a>Póngase en contacto con el soporte técnico para Bermudas
 

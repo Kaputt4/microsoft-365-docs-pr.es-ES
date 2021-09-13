@@ -20,11 +20,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 4fff8c3f461a84d7bb6616c2264120a4c8fcd0ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571824"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214817"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurar Microsoft Defender para la implementación de puntos de conexión
 
@@ -173,7 +173,7 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 
 ****
 
-|Hoja de cálculo de la lista de dominios|Descripción|
+|Hoja de cálculo de la lista de dominios|Description|
 |---|---|
 |![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |

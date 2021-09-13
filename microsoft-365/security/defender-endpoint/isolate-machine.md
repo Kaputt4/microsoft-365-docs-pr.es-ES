@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 8066fe3cbb0a8c6662048e5f349f834428f419e9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215080"
 ---
 # <a name="isolate-machine-api"></a>AISLAR API de máquina
 
@@ -80,7 +80,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/isolate
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -90,7 +90,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 Parámetro|Tipo|Descripción
 :---|:---|:---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
-IsolationType|String|Tipo de aislamiento. Los valores permitidos son: "Completo" o "Selectivo".
+IsolationType|Cadena|Tipo de aislamiento. Los valores permitidos son: "Completo" o "Selectivo".
 
 **IsolationType** controla el tipo de aislamiento que se debe realizar y puede ser uno de los siguientes:
 

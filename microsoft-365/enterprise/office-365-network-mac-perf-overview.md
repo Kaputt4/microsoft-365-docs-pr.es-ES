@@ -16,11 +16,11 @@ ms.collection:
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro Administración de Microsoft 365 red
 ms.openlocfilehash: 9dbb65bc9c6060b58c3629e7e1863d9cf7d8e9e3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574729"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215790"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Conectividad de red en el Centro Administración de Microsoft 365 red
 

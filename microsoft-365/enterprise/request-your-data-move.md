@@ -16,11 +16,11 @@ f1.keywords:
 description: Los Office 365 clientes deben enviar una solicitud antes de la fecha límite para que su país pueda mover sus datos de servicios Microsoft 365 a su nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: fa3464a33143f442a38adb8693bb77b9d174114d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574681"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215707"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -36,7 +36,7 @@ Los Microsoft 365 pueden solicitar la migración de los datos principales de cli
 |Japón  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Australia, Nueva Zelanda, Fiyi  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |India  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
-|Canada  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
+|Canadá  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Reino Unido  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Corea del Sur  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Francia  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |

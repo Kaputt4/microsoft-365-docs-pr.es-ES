@@ -21,15 +21,15 @@ f1.keywords:
 description: Busque información y recursos para actualizar desde SharePoint 2010 y SharePoint Server 2010. La compatibilidad con ambos finaliza el 13 de abril de 2021.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: da824abb7575a509cb988c474e667d0475e821c1
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745750"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215640"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Microsoft SharePoint 2010 y SharePoint Server 2010 llegarán al final del soporte técnico el 13 de abril de **2021**. En este artículo se proporcionan recursos que le ayudarán a migrar los datos existentes de SharePoint Server 2010 a SharePoint Online en Microsoft 365 o actualizar el entorno local de SharePoint Server 2010.
 

@@ -14,11 +14,11 @@ description: Siga la ruta de un mensaje entrante a través de la pila de filtrad
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e5385817610100a7e29baca9b6dd98b89493de35
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918272"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214277"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protección contra amenazas paso a paso en Microsoft Defender para Office 365
 

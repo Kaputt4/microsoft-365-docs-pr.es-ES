@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumen: configure la infraestructura Microsoft Azure para hospedar la autenticación federada de alta disponibilidad para Microsoft 365.'
 ms.openlocfilehash: 6f9e06f74b2ce635b05faa0da6cb2eae3d430c31
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216040"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure
 

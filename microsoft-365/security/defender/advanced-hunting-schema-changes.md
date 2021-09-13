@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 9406653a2d16c83f974e2a0ce7597b5c4f833252
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214647"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Esquema de búsqueda avanzada: cambios de nomenclatura
 

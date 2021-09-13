@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo se explica cómo quitar o deshabilitar la autenticación moderna híbrida de Skype Empresarial y Exchange.
-ms.openlocfilehash: dd663c1178f2f7008917f944c6e641a696c81bdb0c9ce8d325267d861910f4c5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9442ef3e19d0835bfd59f27ec425e36fd7dfcf7a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904664"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215737"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Quitar o deshabilitar la autenticación moderna híbrida de Skype Empresarial y Exchange
 

@@ -23,15 +23,15 @@ search.appverid:
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Obtenga información sobre cómo configurar la sincronización de directorios entre Microsoft 365 y su Active Directory local.
 ms.openlocfilehash: f6537e1c813e564b728891ffb13f644c3850a07e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574020"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215680"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurar la sincronización de directorios para Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Microsoft 365 usa un inquilino Azure Active Directory (Azure AD) para almacenar y administrar identidades para autenticación y permisos para obtener acceso a recursos basados en la nube. 
 

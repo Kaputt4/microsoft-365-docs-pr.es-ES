@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo asignar licencias Microsoft 365 a cuentas de usuario, ya sea individualmente o en función de la pertenencia a grupos.
 ms.openlocfilehash: 2d2afe7b9989ef7b82920a45e3dacd574cd51b5c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356939"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213877"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Asignar Microsoft 365 a cuentas de usuario
 

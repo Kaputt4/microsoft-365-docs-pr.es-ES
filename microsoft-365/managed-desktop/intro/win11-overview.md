@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: af5380d81254ea4934fcdb0910c633adb704b3ffbdbd10dad9457ad29610d66a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7a99ca8d5f56fd5614dc27e3a28efe905ba30e46
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819036"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215400"
 ---
 # <a name="microsoft-managed-desktop-and-windows-11"></a>Escritorio administrado de Microsoft y Windows 11
 

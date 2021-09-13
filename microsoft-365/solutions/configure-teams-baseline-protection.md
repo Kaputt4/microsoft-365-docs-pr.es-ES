@@ -20,11 +20,11 @@ ms.custom:
 recommendations: false
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
 ms.openlocfilehash: 24bdb7a5d5f4c124365a6b5b7cdc67d53adf8278
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214230"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 

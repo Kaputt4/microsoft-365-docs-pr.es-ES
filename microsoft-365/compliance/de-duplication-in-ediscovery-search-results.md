@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo eliminar resultados de búsqueda de exhibición de documentos electrónicos duplicados para que solo se exporte una copia de un mensaje de correo electrónico.
 ms.openlocfilehash: 67c856d9f245e3856ba1bd4f3ac1942391dab8fa
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570262"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213907"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
 

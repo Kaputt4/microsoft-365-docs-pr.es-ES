@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 4ab36313b25ab61ece35041f7cc6de1064465ecb
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747612"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214820"
 ---
 # <a name="submit-or-update-indicator-api"></a>Enviar o actualizar API de indicadores
 
@@ -55,8 +55,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Application|Ti.ReadWrite|Indicadores de lectura y escritura
-Application|Ti.ReadWrite.All|'Leer y escribir todos los indicadores'
+Aplicación|Ti.ReadWrite|Indicadores de lectura y escritura
+Aplicación|Ti.ReadWrite.All|'Leer y escribir todos los indicadores'
 Delegado (cuenta profesional o educativa)|Ti.ReadWrite|Indicadores de lectura y escritura
 
 ## <a name="http-request"></a>Solicitud HTTP
@@ -69,7 +69,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -78,16 +78,16 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 Parámetro|Tipo|Descripción
 :---|:---|:---
-indicatorValue|String|Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
+indicatorValue|Cadena|Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
 indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileMd5", "CertificateThumbprint", "FileSha256", "IpAddress", "DomainName" y "Url". **Required**
 acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "Warn", "Block", "Audit, "BlockAndRemediate", "AlertAndBlock" y "Allowed". **Required**
-aplicación|String|La aplicación asociada al indicador. Este campo solo funciona para nuevos indicadores. No actualizará el valor de un indicador existente. **Optional**
-title|String|Título de alerta del indicador. **Required**
-description|String|Descripción del indicador. **Required**
+aplicación|Cadena|La aplicación asociada al indicador. Este campo solo funciona para nuevos indicadores. No actualizará el valor de un indicador existente. **Optional**
+title|Cadena|Título de alerta del indicador. **Required**
+description|Cadena|Descripción del indicador. **Required**
 expirationTime|DateTimeOffset|La hora de expiración del indicador. **Optional**
 severity|Enum|Gravedad del indicador. los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
-recommendedActions|String|Acciones recomendadas de alerta del indicador TI. **Optional**
-rbacGroupNames|String|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
+recommendedActions|Cadena|Acciones recomendadas de alerta del indicador TI. **Optional**
+rbacGroupNames|Cadena|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
 
 ## <a name="response"></a>Respuesta
 

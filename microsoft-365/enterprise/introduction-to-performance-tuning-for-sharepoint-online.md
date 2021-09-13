@@ -18,11 +18,11 @@ search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: En este artículo se explican los aspectos específicos que debe tener en cuenta al diseñar páginas para obtener el mejor rendimiento en SharePoint Online.
 ms.openlocfilehash: d2653e1ee07309d2f31a24df2715bf7810beb65b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215970"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introducción al ajuste del rendimiento para SharePoint Online
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3dd3f072ef041b20acd470727e90ab705e9ed72450bb46c8c56d89dc729e84e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1245268b6128aa022a972fd0282009573558ec47
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215207"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referencia de configuración configurable: Escritorio administrado de Microsoft
 
@@ -23,7 +23,7 @@ En este tema se enumeran las categorías de configuración que los clientes pued
 ## <a name="desktop-background-picture"></a>Imagen de fondo de escritorio
 Puedes personalizar la imagen de fondo de escritorio para Escritorio administrado de Microsoft dispositivos de la organización. Puede usarlo para aplicar una marca de empresa o material de marketing. 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>Requisitos
 
 Estos requisitos deben cumplirse para una imagen en segundo plano de escritorio:
 - Formato de archivo de imagen: .jpg, jpeg o .png
@@ -42,7 +42,7 @@ Estos requisitos deben cumplirse para una imagen en segundo plano de escritorio:
 ## <a name="browser-start-pages"></a>Páginas de inicio del explorador
 Las páginas de inicio del explorador se abren en pestañas individuales cuando los usuarios inician Microsoft Edge. Si desea facilitar a los usuarios abrir un conjunto de sitios que usan con frecuencia, agregue una página de inicio del explorador para cada sitio. 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>Requisitos
 
 Debe proporcionar el nombre de dominio completo (FQDN) para los sitios de Internet o intranet para las páginas de inicio del explorador. Si los sitios internos están configurados, haga saber a los usuarios que el acceso a estos sitios solo se permite cuando se conecta a la red interna cuando está en la oficina o cuando está conectado a una conexión VPN. 
 
@@ -63,7 +63,7 @@ Si tienes sitios web y aplicaciones específicos que sabes que tienen problemas 
 
 Puede especificar una ubicación https:// o la ubicación de un recurso compartido interno donde ha hospedado la lista de sitios del modo de empresa. 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>Requisitos
 
 Estos requisitos deben cumplirse para el archivo de lista de sitios del modo de empresa:
 - Formato de archivo: archivo XML que cumple los [requisitos del archivo](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
@@ -94,7 +94,7 @@ Los sitios de confianza permiten personalizar zonas de seguridad, o donde se pue
 - Zona 3: zona de Internet
 - Zona 4: zona de sitios restringidos
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>Requisitos
 
 Proporcione el nombre de dominio completo (FQDN) para los sitios de Intranet o Internet para cada sitio de confianza. 
 
@@ -126,7 +126,7 @@ Las excepciones de sitio proxy que agregue en el portal de Escritorio administra
 > [!NOTE]
 > La actualización de la lista de excepciones de proxy predeterminada siempre se prioriza sobre las implementaciones de clientes. Esto significa que la implementación por fases se pausará si hay una implementación para la lista de excepciones de proxy predeterminada.  
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>Requisitos
 
 Estos requisitos deben cumplirse para las excepciones de servidor proxy y sitio proxy:
 - Debe ser una dirección de servidor y un número de puerto válidos

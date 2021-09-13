@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 713a2c8b824b5c8fbffb1dcb35465d8f19f727d0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563527"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214640"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Trabajar con resultados avanzados de consulta de búsqueda
 
@@ -48,7 +48,7 @@ Aunque puede crear [](advanced-hunting-overview.md) las consultas de búsqueda a
 ## <a name="view-query-results-as-a-table-or-chart"></a>Ver resultados de consulta como tabla o gráfico
 De forma predeterminada, la búsqueda avanzada muestra los resultados de la consulta como datos tabulares. También puede mostrar los mismos datos que un gráfico. La búsqueda avanzada admite las siguientes vistas:
 
-| Tipo de vista | Description |
+| Tipo de vista | Descripción |
 | -- | -- |
 | **Table** | Muestra los resultados de la consulta en formato tabular |
 | **Gráfico de columnas** | Representa una serie de elementos únicos en el eje X como barras verticales cuyas alturas representan valores numéricos de otro campo |

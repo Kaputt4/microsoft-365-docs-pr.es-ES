@@ -23,15 +23,15 @@ search.appverid:
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: En este artículo, obtenga información sobre cómo integrar Microsoft 365 con los servicios de directorio existentes y los entornos locales.
 ms.openlocfilehash: 87b456a0b44e4b38df6cec8e72713c6573917805
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575593"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215880"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365 integración con entornos locales
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Puede integrar Microsoft 365 con los servicios de dominio de Active Directory (AD DS) locales existentes y con instalaciones locales de Exchange Server, Skype Empresarial Server 2015 o SharePoint Server.
   
@@ -80,6 +80,6 @@ Para obtener más información, [vea single sign-on](/azure/active-directory/man
 
 Azure AD Conectar versiones anteriores de herramientas de integración de identidades, como DirSync y Sincronización de Azure AD. Si desea actualizar desde la sincronización Azure Active Directory a Azure AD Conectar, consulte [las instrucciones de actualización](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started). 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

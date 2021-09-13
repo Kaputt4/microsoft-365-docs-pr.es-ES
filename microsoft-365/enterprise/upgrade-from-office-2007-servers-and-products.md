@@ -25,11 +25,11 @@ f1.keywords:
 description: En este artículo se proporcionan recursos para ayudarle a actualizar desde Office servidores y clientes de 2007, ya que la compatibilidad con Office 2007 ha finalizado.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: c3f90bed99816378d4e44bb714b4c6104a9302b7
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354193"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215667"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Recursos para ayudarle a actualizar desde Office servidores y clientes de 2007
 

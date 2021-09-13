@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Cómo implementar el túnel dividido VPN para Office 365
-ms.openlocfilehash: 9d706de846b6206a6be8a1524da1222b1c49147b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 36c3cfbd74dabb0cfaf305cb52fb7f69e1e1e49f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215867"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementación del túnel dividido de VPN para Office 365
 
@@ -259,7 +259,7 @@ Una vez que la directiva se haya implementado, debe asegurarse de que funciona d
 
 ### <a name="additional-support-logs"></a>Registros de soporte adicional
 
-Si necesita más datos para solucionar problemas o bien asistencia del soporte técnico de Microsoft, la obtención de la siguiente información le permite acelerar la búsqueda de una solución. El TSS de Microsoft Windows conjunto de herramientas de script de **troubleShooting universal** basado en CMD puede ayudarle a recopilar los registros relevantes de una manera sencilla. La herramienta y las instrucciones de uso se pueden encontrar en <https://aka.ms/TssTools.>
+Si necesita más datos para solucionar problemas o bien asistencia del soporte técnico de Microsoft, la obtención de la siguiente información le permite acelerar la búsqueda de una solución. El TSS de Microsoft Windows conjunto de herramientas de script de **troubleShooting universal** basado en CMD puede ayudarle a recopilar los registros relevantes de una manera sencilla. La herramienta y las instrucciones de uso se pueden encontrar en <https://aka.ms/TssTools> .
 
 ## <a name="howto-guides-for-common-vpn-platforms"></a>Guías paso a paso para plataformas VPN comunes
 

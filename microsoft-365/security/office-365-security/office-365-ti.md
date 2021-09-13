@@ -21,12 +21,12 @@ ms.custom:
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en Microsoft Defender para Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3af6aec423fd77dc04954974be05d3e299279e2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2e6a237295a979797cd8884d07d1afe8e284cace
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572856"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214327"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
@@ -78,7 +78,7 @@ Usa el entrenamiento de simulación de ataques para configurar y ejecutar cibera
 
 Para ver y usar esta característica en el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** formación de simulación  >  **de ataques de colaboración.**
 
-### <a name="automated-investigation-and-response"></a>Investigación y respuesta automatizadas
+### <a name="automated-investigation-and-response"></a>Investigación y respuesta de amenazas
 
 Use las capacidades de investigación y respuesta automatizadas (AIR) para ahorrar tiempo y esfuerzo correlacionando contenido, dispositivos y personas en riesgo de amenazas en su organización. Los procesos de AIR pueden comenzar cuando se desencadenan determinadas alertas o cuando se inician por el equipo de operaciones de seguridad. Para obtener más información, vea [investigación automatizada y respuesta en Office 365](automated-investigation-response-office.md).
 
@@ -100,7 +100,7 @@ Microsoft Defender para Office 365 usa control de acceso basado en roles. Los pe
 > Aunque algunos roles, como el administrador de seguridad, se pueden asignar en el portal de Microsoft 365 Defender, considere la posibilidad de usar el Centro de administración de Microsoft 365 o Azure Active Directory en su lugar. Para obtener información sobre roles, grupos de roles y permisos, vea los siguientes recursos:
 >
 > - [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
-> - [Permisos de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+> - [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)
 
 <br>
 
@@ -115,7 +115,7 @@ Microsoft Defender para Office 365 usa control de acceso basado en roles. Los pe
 |Integrar Microsoft Defender para Office 365 Plan 2 con Microsoft Defender para endpoint <p> Integrar Microsoft Defender para Office 365 Plan 2 con un servidor SIEM|El rol **Administrador global o** administrador de seguridad asignado Azure Active Directory ( ) o el Centro de administración de Microsoft 365 (  <https://portal.azure.com> <https://admin.microsoft.com> ). <p> --- **más** --- <p> Un rol adecuado asignado en aplicaciones adicionales [(como Centro de seguridad de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor SIEM).|
 |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Más información sobre los rastreadores de amenazas: nuevos y notables](threat-trackers.md)
 - [Buscar e investigar el correo electrónico malintencionado que se entregó (Office 365 de amenazas y respuesta)](investigate-malicious-email-that-was-delivered.md)

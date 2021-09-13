@@ -17,11 +17,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre las interacciones de configuración entre Microsoft 365 grupos, Teams y SharePoint
 ms.openlocfilehash: 391ee9dcf5837f149a592511d1e189549a340236
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568221"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214220"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Interacciones de configuración entre grupos de Microsoft 365, Teams y SharePoint
 
@@ -41,7 +41,7 @@ Algunas opciones de configuración para grupos de Microsoft 365, Microsoft Teams
 
 ## <a name="the-effects-of-groups-settings-on-teams"></a>Efectos de la configuración de grupos en equipos
 
-|Microsoft 365 configuración de grupos|Description|Efecto en Teams|Recomendación|
+|Microsoft 365 configuración de grupos|Descripción|Efecto en Teams|Recomendación|
 |:---------------------------|:----------|:--------------|:-------------|
 |Directivas de nomenclatura|Especifica prefijos y sufijos de nombre de grupo y palabras bloqueadas para la creación de grupos|Las directivas se aplican para los usuarios que crean equipos.||
 |Acceso de invitado de grupo|Especifica si se pueden agregar personas fuera de la organización a grupos.|Si los grupos o Teams configuración de uso compartido de invitados están desactivados, el equipo no se puede compartir con invitados.|Al cambiar la configuración de uso compartido de invitados, compruebe la configuración de Teams, Grupos y el sitio SharePoint asociado con el equipo.<br><br> Consulta [Colaborar con invitados en un equipo](./collaborate-as-team.md)|

@@ -12,11 +12,11 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 ms.openlocfilehash: a8e95586dc5e3d2da2cbd6ace9369e4b2d17afed
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215587"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Introducción a la adopción de Temas Microsoft Viva
 
@@ -180,7 +180,7 @@ Ahora que ya está listo para su implementación, desea asegurarse de que está 
 - Hospedar periódicamente eventos de participación para compartir historias o introducir nuevas características.
 - Establece desafíos para las personas y ejecuta las competencias.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Cuando esté listo para dar a conocer Temas Viva, tendrá que involucrar a la gente.
 

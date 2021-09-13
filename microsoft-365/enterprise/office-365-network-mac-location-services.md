@@ -13,17 +13,18 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 description: Microsoft 365 Servicios de ubicación de conectividad de red
-ms.openlocfilehash: 0aff9ca565d4e79ddbf7df723e7c102c0db92422015b722327029be12bdb2934
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 025a4a158378335271ac50e6cd8199d2b9f36106
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215800"
 ---
 # <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365 Servicios de ubicación de conectividad de red
 
-El Centro Administración de Microsoft 365 muestra ahora recomendaciones de rendimiento y Ideas de **red,** que son métricas de rendimiento en directo que se recopilan desde el Microsoft 365 inquilino. Estas métricas solo las pueden ver los usuarios administrativos del espacio empresarial. La conectividad de red organizativa se diseña por ubicación de oficina a través de una ubicación de salida de red a Internet. Microsoft 365 la conectividad de cliente usa esa ruta y, a continuación, a través de Internet a los servidores de puerta principal del servicio de Microsoft. La identificación de ubicaciones de oficina es clave para poder mostrar estos conocimientos de red.
+El <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> muestra recomendaciones de rendimiento y **Ideas** de red, que son métricas de rendimiento en directo que se recopilan desde el Microsoft 365 inquilino. Estas métricas solo las pueden ver los usuarios administrativos del espacio empresarial. La conectividad de red organizativa se diseña por ubicación de oficina a través de una ubicación de salida de red a Internet. Microsoft 365 la conectividad de cliente usa esa ruta y, a continuación, a través de Internet a los servidores de puerta principal del servicio de Microsoft. La identificación de ubicaciones de oficina es clave para poder mostrar estos conocimientos de red.
 
 ## <a name="location-in-network-measurements"></a>Ubicación en las medidas de red
 
@@ -31,11 +32,11 @@ El administrador de una organización puede optar por que la ubicación se inclu
 
 ## <a name="location-in-the-microsoft-365-admin-center"></a>Ubicación en el Centro Administración de Microsoft 365 datos
 
-En el Administración de Microsoft 365, Bing de mapa se usan para mostrar dónde están las ubicaciones de oficina de la organización. Los controles también muestran la topología perimetral de red para una ubicación de oficina seleccionada. Cuando un administrador agrega detalles de direcciones específicos para las ubicaciones de oficina, mapas de Bing también se usa para sugerir direcciones para facilitar la entrada de datos.
+En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, Bing controles de mapa se usan para mostrar dónde están las ubicaciones de oficina de la organización. Los controles también muestran la topología perimetral de red para una ubicación de oficina seleccionada. Cuando un administrador agrega detalles de direcciones específicos para las ubicaciones de oficina, mapas de Bing también se usa para sugerir direcciones para facilitar la entrada de datos.
 
 ## <a name="terms-of-use"></a>Condiciones de uso
 
-Cualquier contenido proporcionado a mapas de Bing, incluidos los geocódigos, solo se puede usar dentro del producto a través del cual se proporciona el contenido. El uso por parte del cliente de la característica Administración de Microsoft 365 Center Location Services, con tecnología de mapas de Bing, se rige por los Términos de uso de _mapas de Bing End-User_ disponibles en y la Declaración de privacidad de <https://go.microsoft.com/?linkid=9710837> [Microsoft](https://go.microsoft.com/fwlink/?LinkID=248686).
+Cualquier contenido proporcionado a mapas de Bing, incluidos los geocódigos, solo se puede usar dentro del producto a través del cual se proporciona el contenido. El uso por parte del cliente de la característica <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> Location Services, con tecnología de mapas de Bing, se rige por los Términos de uso de _mapas de Bing End-User_ disponibles en y la Declaración de privacidad de <https://go.microsoft.com/?linkid=9710837> [Microsoft](https://go.microsoft.com/fwlink/?LinkID=248686).
 
 Esta característica, que se proporciona mapas de Bing, también es compatible con **TomTom**. Encontrará más información sobre los productos y servicios de TomTom en [https://www.tomtom.com/legal](https://www.tomtom.com/legal) .
 

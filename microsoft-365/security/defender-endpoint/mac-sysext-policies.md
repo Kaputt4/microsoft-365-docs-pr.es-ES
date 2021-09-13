@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 8f43b68552a62761e3b9530edc39c886e14ac4f5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: fca661342bfa6ba16da12aeb34b0c3ae804fc860
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576013"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59214980"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
 
@@ -60,7 +60,7 @@ Para aprobar las extensiones del sistema, cree la siguiente carga:
 
 Agregue la siguiente carga de JAMF para conceder acceso en disco completo a Microsoft Defender para endpoint security extension. Esta directiva es un requisito previo para ejecutar la extensión en el dispositivo.
 
-1. Seleccione **Opciones Control de** directiva de  >  **preferencias de privacidad**.
+1. Seleccione **Opciones Control de** directiva de \> **preferencias de privacidad**.
 2. Se `com.microsoft.wdav.epsext` usa como identificador **y** como tipo `Bundle ID` de **agrupación**.
 3. Establecer el requisito de código en `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. Establezca **Aplicación o servicio en** **SystemPolicyAllFiles** y acceso a **Permitir**.
@@ -71,9 +71,9 @@ Agregue la siguiente carga de JAMF para conceder acceso en disco completo a Micr
 
 Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal de Microsoft 365 Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
->[!NOTE]
->JAMF no tiene compatibilidad integrada con directivas de filtrado de contenido, que son un requisito previo para habilitar las extensiones de red que Microsoft Defender para Endpoint en macOS instala en el dispositivo. Además, JAMF a veces cambia el contenido de las directivas que se implementan.
->Por lo tanto, los siguientes pasos proporcionan una solución alternativa que implica firmar el perfil de configuración.
+> [!NOTE]
+> JAMF no tiene compatibilidad integrada con directivas de filtrado de contenido, que son un requisito previo para habilitar las extensiones de red que Microsoft Defender para Endpoint en macOS instala en el dispositivo. Además, JAMF a veces cambia el contenido de las directivas que se implementan.
+> Por lo tanto, los siguientes pasos proporcionan una solución alternativa que implica firmar el perfil de configuración.
 
 1. Guarde el siguiente contenido en el dispositivo como `com.microsoft.network-extension.mobileconfig` si usara un editor de texto:
 
@@ -178,17 +178,22 @@ Como parte de las capacidades de detección y respuesta de puntos de conexión, 
 
 Para aprobar las extensiones del sistema:
 
-1. En Intune, abra **Administrar configuración**  >  **de dispositivo.** Seleccione **Administrar**  >  **perfiles Crear**  >  **perfil**.
+1. En Intune, abra **Administrar configuración** \> **de dispositivo.** Seleccione **Administrar** \> **perfiles Crear** \> **perfil**.
 2. Elija un nombre para el perfil. Cambiar **Platform=macOS** a **Profile type=Extensions**. Seleccione **Crear**.
 3. En la `Basics` pestaña, asigne un nombre a este nuevo perfil.
 4. En la `Configuration settings` pestaña, agregue las siguientes entradas en la `Allowed system extensions` sección:
 
-    Identificador de agrupación         | Identificador de equipo
-    --------------------------|----------------
-    com.microsoft.wdav.epsext | UBF8T346G9
-    com.microsoft.wdav.netext | UBF8T346G9
+   <br>
 
-    ![Captura de pantalla de perfiles de configuración del sistema.](images/mac-system-extension-intune2.png)
+   ****
+
+   |Identificador de agrupación|Identificador de equipo|
+   |---|---|
+   |com.microsoft.wdav.epsext|UBF8T346G9|
+   |com.microsoft.wdav.netext|UBF8T346G9|
+   |||
+
+   ![Captura de pantalla de perfiles de configuración del sistema.](images/mac-system-extension-intune2.png)
 
 5. En la `Assignments` pestaña, asigne este perfil a **Todos los usuarios & Todos los dispositivos**.
 6. Revise y cree este perfil de configuración.
@@ -305,7 +310,7 @@ sysext.xml: OK
 
 Para implementar este perfil de configuración personalizado:
 
-1. En Intune, abra **Administrar configuración**  >  **de dispositivo.** Seleccione **Administrar**  >  **perfiles Crear**  >  **perfil**.
+1. En Intune, abra **Administrar configuración** \> **de dispositivo.** Seleccione **Administrar** \> **perfiles Crear** \> **perfil**.
 2. Elija un nombre para el perfil. Cambiar **Platform=macOS** y **Profile type=Custom**. Seleccione **Configurar**.
 3. Abra el perfil de configuración y cargue **sysext.xml**. Este archivo se creó en el paso anterior.
 4. Seleccione **Aceptar**.
