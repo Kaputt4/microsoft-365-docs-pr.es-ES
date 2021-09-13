@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo crear y administrar etiquetas de confidencialidad.
-ms.openlocfilehash: f47e57c1085e054dc5b1936fcd83e2a41f3bd9980a1d69f6ac41451e1596a2e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 26697265088a2a59ac145eeff2816b816b95a149
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221229"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>Proteger documentos con etiquetas de confidencialidad
 

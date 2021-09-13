@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8683631adeb0f7e6090dafae36c075edacd7cc14
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: cf043741e2d066c8eaa7c4919b194a6ffd6d857d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220562"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementar Microsoft Defender para endpoint en iOS
 
@@ -122,7 +122,7 @@ Intune te permite configurar la aplicación Defender para iOS a través de una d
    > [!NOTE]
    > Esta directiva de configuración de aplicaciones para dispositivos supervisados solo se aplica a dispositivos administrados y debe estar dirigida a todos los dispositivos iOS administrados como procedimiento recomendado.
 
-1. Inicie sesión en el Centro [Microsoft Endpoint Manager administración](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a Directivas de configuración de   >  **aplicaciones**  >  **Agregar**. Haga clic en **Dispositivos administrados.**
+1. Inicie sesión en el Centro [Microsoft Endpoint Manager administración](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a Directivas de configuración de  \> **aplicaciones** \> **Agregar**. Haga clic en **Dispositivos administrados.**
 
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager Admin Center4.](images/ios-deploy-4.png)
@@ -139,7 +139,7 @@ Intune te permite configurar la aplicación Defender para iOS a través de una d
     - Clave de configuración: se supervisa
     - Tipo de valor: String
     - Valor de configuración: {{issupervised}}
-    
+
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager Admin Center6.](images/ios-deploy-6.png)
 

@@ -8,12 +8,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 1ecea4104787132de5c67ab578ebbe2d82b8e1762301785c9328bbcee761144f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f51c99ed39e9f647f3e069c22eb3e37441f57be5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898700"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220694"
 ---
 # <a name="microsoft-managed-desktop-and-itil"></a>Escritorio administrado de Microsoft e ITIL
 
@@ -30,7 +30,7 @@ En esta tabla se relacionan las fases y procesos clave de ITIL con Escritorio ad
 
 
 
-|Proceso itil |Descripción  |Documentación |
+|Proceso itil |Description  |Documentación |
 |---------|---------|---------|
 |Administración de nivel de servicio     | Los tiempos de respuesta se definen para solicitudes e incidentes de soporte técnico de administrador.  |  [Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md)  |
 |Administración del catálogo de servicios     | La descripción del servicio que detalla los componentes del servicio se mantiene fiel al estado del servicio, disponible para todos los clientes actuales e interesados.<br><br>Requisitos previos detallados para comprender lo que se necesita para operar el servicio.  | - [Escritorio administrado de Microsoft descripción del servicio](service-description/index.md)<br><br>- [Prepárese para la inscripción en Escritorio administrado de Microsoft](get-ready/index.md)  |
@@ -42,7 +42,7 @@ En esta tabla se relacionan las fases y procesos clave de ITIL con Escritorio ad
 ## <a name="service-transition"></a>Transición de servicio
 
 
-|Proceso itil |Descripción  |Documentación |
+|Proceso itil |Description  |Documentación |
 |---------|---------|---------|
 |Administración de cambios     | Equilibrio definido de responsabilidad, información general del proceso y tipos relacionados con la administración de cambios disponibles.  | [Escritorio administrado de Microsoft operaciones y supervisión](service-description/operations-and-monitoring.md#change-management) |
 |Administración de lanzamiento e implementación     |  Escritorio administrado de Microsoft las actualizaciones de los dispositivos inscritos en el servicio.  | [Cómo se controlan las actualizaciones en Escritorio administrado de Microsoft](service-description/updates.md)        |
@@ -54,7 +54,7 @@ En esta tabla se relacionan las fases y procesos clave de ITIL con Escritorio ad
 ## <a name="service-operation"></a>Operación de servicio
 
 
-|Proceso itil |Descripción  |Documentación  |
+|Proceso itil |Description  |Documentación  |
 |---------|---------|---------|
 |Administración de eventos     |  Se proporcionan detalles sobre la supervisión de dispositivos.<br><br>Se detallan los procedimientos operativos estándar Escritorio administrado de Microsoft servicio de mantenimiento. |  - [Seguridad en Escritorio administrado de Microsoft](service-description/security.md)<br>- [Escritorio administrado de Microsoft operaciones y supervisión](service-description/operations-and-monitoring.md)       |
 |Administración de incidencias  | Escritorio administrado de Microsoft investigará y actuará en caso de incidentes por definiciones de gravedad definidas.  |  [Definiciones de gravedad de solicitud de soporte técnico](working-with-managed-desktop/admin-support.md#support-request-severity-definitions)       |

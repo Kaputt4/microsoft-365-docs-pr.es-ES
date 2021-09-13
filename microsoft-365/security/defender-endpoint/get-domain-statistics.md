@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: ba2c6e913b8768e0b905631a248435638db98939
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364510"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221438"
 ---
 # <a name="get-domain-statistics-api"></a>Obtener API de estadísticas de dominio
 
@@ -74,7 +74,7 @@ Authorization|Portador {token}. **Necesario**.
 
 ## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
 
-Nombre|Tipo|Descripción
+Nombre|Tipo|Description
 :---|:---|:---
 lookBackHours|Int32|Define las horas que buscamos para obtener las estadísticas. El valor predeterminado es 30 días. **Opcional**.
 

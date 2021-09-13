@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: ff5a2277edc820ee03cb7c545595bd456aed27d86e41723347cce8d80d25af19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220180"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender
 
@@ -57,7 +57,7 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 > [!TIP]
 > Descargue la hoja de cálculo de referencia Configuración directiva de grupo [para Windows 10 de mayo de 2020 (2004).](https://www.microsoft.com/download/101451) Esta hoja de cálculo enumera la configuración de directiva para las configuraciones de equipo y usuario que se incluyen en los archivos de plantilla administrativa entregados para la actualización de mayo de 2020 (2004) para Windows 10 mayo de 2020. Puede configurar hacer referencia a la hoja de cálculo al editar objetos de directiva de grupo.
 
-| Ubicación | Configuración | Artículo |
+| Ubicación | Setting | Artículo |
 |:---|:---|:---|
 | Interfaz de cliente | Habilitar el modo de interfaz de usuario sin cabeza | [Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
 | Interfaz de cliente | Mostrar texto adicional a los clientes cuando necesitan realizar una acción | [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md) |
@@ -76,8 +76,8 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 | Sistema de inspección de red | Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red | [Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red](specify-additional-definitions-network-traffic-inspection-mdav.md) |
 | Sistema de inspección de red | Activar la retirada de definiciones | [Configurar la retirada de definiciones](turn-on-definition-retirement.md)  |
 | Sistema de inspección de red | Activar el reconocimiento de protocolos | [Activar el reconocimiento de protocolos](turn-on-protocol-recognition.md)  |
-| Cuarentena | Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| Cuarentena | Configurar la eliminación de elementos de la carpeta cuarentena | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
+| Quarantine | Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
+| Quarantine | Configurar la eliminación de elementos de la carpeta cuarentena | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
 | Protección en tiempo real | Configurar la invalidación de configuración local para la actividad del programa y el archivo de supervisión en el equipo | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Protección en tiempo real | Configurar la invalidación de configuración local para la supervisión de la actividad de archivos entrantes y salientes | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Protección en tiempo real | Configurar la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
@@ -94,7 +94,7 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 | Corrección | Configurar la invalidación de configuración local para la hora del día para ejecutar un examen completo programado para completar la corrección | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Corrección | Especificar el día de la semana para ejecutar un examen completo programado para completar la corrección | [Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Corrección | Especificar la hora del día para ejecutar un examen completo programado para completar la corrección | [Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| Generación de informes | Desactivar las notificaciones mejoradas | [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
+| Creación de informes | Desactivar las notificaciones mejoradas | [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
 | Raíz | Desactivar Antivirus de Microsoft Defender | No se usa (esta configuración debe establecerse en **No configurar para** garantizar que las aplicaciones antivirus de terceros instaladas funcionen correctamente)
 | Raíz | Definir direcciones para omitir el servidor proxy | No se usa |
 | Raíz | Definir proxy autoconfig (.pac) para conectarse a la red | No se usa |

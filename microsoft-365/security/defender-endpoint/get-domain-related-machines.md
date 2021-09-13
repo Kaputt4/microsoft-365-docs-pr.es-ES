@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: f743e4960267f98496585163d963c720ab9d0c5c
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365038"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221450"
 ---
 # <a name="get-domain-related-machines-api"></a>Obtener API de máquinas relacionadas con el dominio
 

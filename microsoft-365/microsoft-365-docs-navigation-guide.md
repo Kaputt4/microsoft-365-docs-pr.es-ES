@@ -11,11 +11,11 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.openlocfilehash: 23d8750b05781df858328b581056a9502b4f685e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575221"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220689"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 de navegación de documentos
 
@@ -73,6 +73,6 @@ Si encuentra algo incorrecto en un artículo, puede enviar comentarios al equipo
 
 - [Guía de colaboradores de Microsoft Docs](/contribute/)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - Introducción a la documentación [Microsoft 365 técnica](index.yml).

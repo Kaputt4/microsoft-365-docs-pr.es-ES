@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: Obtenga información sobre cómo buscar y usar el análisis de uso para un modelo de comprensión de documentos.
 ms.openlocfilehash: d39b2417a90716200d33831bfef7e9cb2ff1d523
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574044"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221793"
 ---
 # <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Documentación sobre el análisis de modelos en Microsoft SharePoint Syntex.
 

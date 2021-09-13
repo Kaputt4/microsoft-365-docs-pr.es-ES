@@ -17,11 +17,11 @@ ms.date: 06/16/2021
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: 143722108ef1c5df8432610ff372697fdd3407df
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532528"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221642"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Configurar Antivirus de Microsoft Defender notificaciones que aparecen en los puntos de conexión
 

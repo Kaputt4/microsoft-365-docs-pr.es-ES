@@ -17,11 +17,11 @@ f1.keywords:
 - NOCSH
 description: En este artículo se proporcionan instrucciones para optimizar el rendimiento de la red para los usuarios de China de Microsoft 365 inquilinos globales.
 ms.openlocfilehash: 9660270dbe73e9cbdff0b1e3796224b36319956b
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884725"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220814"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365 optimización global del rendimiento de inquilinos para usuarios de China
 

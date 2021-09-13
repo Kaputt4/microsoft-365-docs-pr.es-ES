@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e88371ed141b54d873193df075313d2aed9786385ac4fbc07d5fe579d7bff59f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 31fe51aac9262e5d3bcfa9d6a9c757ddeb30f42a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793999"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220574"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Consultas de OData con Microsoft Defender para endpoint
 
@@ -44,7 +44,7 @@ No todas las propiedades se pueden filtrar.
 ## <a name="properties-that-support-filter"></a>Propiedades que admiten $filter
 
 - [Alerta](alerts.md): `alertCreationTime` , , , y `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
-- [Máquina](machine.md): `ComputerDnsName` , , , y `LastSeen` `HealthStatus` `OsPlatform` `RiskScore` `RbacGroupId` .
+- [Máquina](machine.md): `ComputerDnsName` , , , , y `LastSeen` `HealthStatus` `OsPlatform` `onboardingStatus` `RiskScore` `RbacGroupId` .
 - [MachineAction](machineaction.md): `Status` , , y `MachineId` `Type` `Requestor` `CreationDateTimeUtc` .
 - [Indicador](ti-indicator.md): `indicatorValue` , , , y `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e11efcf73a6fcf91e6260ef4ecf376cf6b453dca770585a37681ebd4524b701d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43d1e11ebea2933f8a101b640690f44089e2087d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833524"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220346"
 ---
 # <a name="raw-data-streaming-api"></a>API de streaming de datos sin procesar
 

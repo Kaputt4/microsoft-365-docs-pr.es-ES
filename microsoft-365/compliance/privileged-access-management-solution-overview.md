@@ -17,11 +17,11 @@ ms.collection:
 - m365initiative-compliance
 - m365solution-scenario
 ms.openlocfilehash: 9c6e62db4a83e238c840e7e953a78c6e8856a25a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221133"
 ---
 # <a name="privileged-access-management-in-microsoft-365"></a>Administración de acceso con privilegios en Microsoft 365
 

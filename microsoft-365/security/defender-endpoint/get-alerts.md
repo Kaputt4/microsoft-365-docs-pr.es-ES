@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: e295d4014231242bf1e3ae7dceaeb38dfea2fa1c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246313"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221553"
 ---
 # <a name="list-alerts-api"></a>API de listas de alertas
 
@@ -83,7 +83,7 @@ GET /api/alerts
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización | String | Portador {token}. **Necesario**.
+Authorization | Cadena | Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -314,6 +314,6 @@ Aquí tiene un ejemplo de la respuesta.
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)

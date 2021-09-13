@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Cambie las suscripciones manualmente comprando una nueva suscripción y asegurándose de que ambas suscripciones estén enumeradas y activas.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: d8a084111ce2e0869332cdfa7fe438c314295d7a9044a0c715d065ff8c49544d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5db328cb1545279faa1332c144c7a8b60a50fa05
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802591"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221198"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
 
@@ -48,7 +48,7 @@ Para continuar con un cambio manual, lea [Paso 2: Comprar una nueva suscripción
 
 **¿Ya se ha comprado?** Si ya tiene una suscripción a la que desea mover usuarios, omita este paso y vaya al [Paso 3: Comprobar](#step-3-check-your-new-subscription-and-licenses) su nueva suscripción y licencias en este tema.
 
-O
+OR
 
 **Comprar una suscripción y licencias nuevas:** Siga los pasos de [Comprar otra suscripción Microsoft 365 para empresas](../try-or-buy-microsoft-365.md) para comprar una nueva suscripción.
 

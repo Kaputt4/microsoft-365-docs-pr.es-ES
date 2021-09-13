@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: Obtenga información sobre cómo usar PowerShell para Microsoft 365 administrar usuarios, grupos y grupos de sitios.
 ms.openlocfilehash: 6bf6fe8a47f8a5fb8309c24836da614e95dd5bf2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356257"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220929"
 ---
 # <a name="manage-sharepoint-with-powershell"></a>Administrar SharePoint con PowerShell
 

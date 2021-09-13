@@ -17,11 +17,11 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: a7f85d20dfa59fbe21f811d8bef30a6c21a69125
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561403"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221757"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Recopilar datos de diagnóstico antivirus de Microsoft Defender
 
@@ -98,7 +98,7 @@ Cuando se usa el parámetro SupportLogLocation, se creará una estructura de car
 
 ****
 
-|campo|Description|
+|campo|Descripción|
 |---|---|
 |path|Ruta de acceso especificada en la línea de comandos o recuperada de la configuración|
 |MMDD|Mes y día en que se recopilaron los datos de diagnóstico (por ejemplo, 0530)|
@@ -130,6 +130,6 @@ También puede especificar dónde se creará el .cab de diagnóstico mediante un
      ![Captura de pantalla de configuración personalizada de ruta de acceso de directorio habilitada.](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
 5. Seleccione **Aceptar** o **Aplicar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Solucionar problemas Antivirus de Microsoft Defender informes](troubleshoot-reporting.md)

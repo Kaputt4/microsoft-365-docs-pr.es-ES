@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f0172b6346fd066cee273c16c1650a24f900077054e3848ceea970791d85b8fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 31ff698a6094e72cea32b7db19db8edf947a1326
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221577"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>Buscar dispositivos por API IP interna
 

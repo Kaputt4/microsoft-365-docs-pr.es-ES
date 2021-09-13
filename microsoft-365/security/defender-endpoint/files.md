@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 373b28502fd16d8b98b5c48e0329a702c1d5dae20c0c3f95b61d56d545150e91
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9dffc5d2b7badba0a2f0e0b986973841ad488683
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793864"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220550"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
@@ -40,7 +40,7 @@ Representa una entidad de archivo en Defender para endpoint.
 
 ## <a name="methods"></a>Métodos
 
-Método|Tipo de valor devuelto |Descripción
+Método|Tipo de valor devuelto |Description
 :---|:---|:---
 [Obtener archivo](get-file-information.md) | [file](files.md) | Obtener un solo archivo 
 [Enumerar alertas relacionadas con archivos](get-file-related-alerts.md) | Colección [alert](alerts.md) | Obtener las [entidades](alerts.md) de alerta asociadas al archivo.
@@ -52,22 +52,22 @@ Método|Tipo de valor devuelto |Descripción
 
 |Propiedad | Tipo | Descripción |
 |:---|:---|:---|
-|sha1 | String | Hash Sha1 del contenido del archivo |
+|sha1 | Cadena | Hash Sha1 del contenido del archivo |
 |sha256 | Cadena | Hash Sha256 del contenido del archivo |
 |globalPrevalence | Long que admite valores NULL | Prevalencia de archivos en toda la organización |
 |globalFirstObserved | DateTimeOffset | Primera vez que se observó el archivo |
 |globalLastObserved | DateTimeOffset | Última vez que se observó el archivo |
 |size | Long que admite valores NULL | Tamaño del archivo |
 |fileType | Cadena | Tipo del archivo |
-|isPeFile | Boolean | true si el archivo es ejecutable portátil (por ejemplo, "DLL", "EXE", etc.) |
-|filePublisher | String | Editor de archivos |
-|fileProductName | String | Nombre del producto |
+|isPeFile | Booleano | true si el archivo es ejecutable portátil (por ejemplo, "DLL", "EXE", etc.) |
+|filePublisher | Cadena | Editor de archivos |
+|fileProductName | Cadena | Nombre del producto |
 |firmante | Cadena | Firmante de archivos |
-|emisor | String | Emisor de archivos |
-|signerHash | String | Hash del certificado de firma |
-|isValidCertificate | Boolean | Se ha comprobado correctamente la firma del certificado por Microsoft Defender para el agente de extremo |
-|determinationType | String | El tipo de determinación del archivo |
-|determinationValue | String | Valor de determinación |
+|emisor | Cadena | Emisor de archivos |
+|signerHash | Cadena | Hash del certificado de firma |
+|isValidCertificate | Booleano | Se ha comprobado correctamente la firma del certificado por Microsoft Defender para el agente de extremo |
+|determinationType | Cadena | El tipo de determinación del archivo |
+|determinationValue | Cadena | Valor de determinación |
 
 ## <a name="json-representation"></a>Representación json
 

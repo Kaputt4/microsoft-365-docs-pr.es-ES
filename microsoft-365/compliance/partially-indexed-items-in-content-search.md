@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indizar en Exchange y SharePoint que puede incluir en una búsqueda de exhibición de documentos electrónicos que se ejecuta en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: 2bc319a7330dbdad9abe3c7d43ae76764aca5cca
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 33391d2af3e53ed305b1f7ec6c339d3b621ddb8b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221169"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos parcialmente indizados en eDiscovery
 
@@ -101,6 +101,33 @@ Tenga en cuenta lo siguiente acerca de los elementos parcialmente indizados:
   |Exportar elementos indexados y parcialmente indizados  <br/> |Exported<br/> |Exportada (incluida con los elementos indizados que se exportan)<br/>  |Exportada (como elementos parcialmente indizados)<br/>|
   ||||
   
+## <a name="workaround-for-using-a-date-range-to-exclude-partially-indexed-items"></a>Solución alternativa para usar un intervalo de fechas para excluir elementos parcialmente indizados
+
+En búsqueda de contenido y exhibición de documentos electrónicos principales, no puede usar un intervalo de fechas para excluir elementos parcialmente indizados de que una consulta de búsqueda devuelva. En otras palabras, los elementos parcialmente indizados que se encuentran fuera de un intervalo de fechas todavía se incluyen como elementos parcialmente indizados en las estadísticas de búsqueda y al exportar elementos parcialmente indizados. En Advanced eDiscovery, puede excluir elementos parcialmente indizados mediante un intervalo de fechas en una consulta de búsqueda.
+
+Como solución alternativa a esta limitación, se recomienda el siguiente procedimiento.
+
+1. Cree y ejecute una búsqueda con una consulta de búsqueda que cumpla sus requisitos y devuelva los resultados deseados.
+
+2. Exporte los resultados de la búsqueda desde el paso 1, pero no incluya elementos parcialmente indizados en la exportación. Para ello, seleccionaría la opción Exportar todos los elementos, excluyendo los que tienen formato no reconocido, que están **cifrados** o que no se indizaron por otros motivos.
+
+   ![Exportar opciones de salida.](../media/ExportOutputOptions.png)
+
+3. Cree y ejecute una segunda búsqueda que use la misma consulta de búsqueda (y busque las mismas ubicaciones) que usó en el paso 1. Anexe la siguiente cláusula a la consulta original mediante el **operador AND:**
+
+   ```text
+   ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND Date:date1…date2))
+   ```
+  
+   Al agregar esta cláusula, se devolverán elementos parcialmente indizados que coinciden con la consulta de búsqueda original y que se encuentran dentro de un intervalo de fechas específico.
+
+4. Exporte los resultados de la búsqueda desde el paso 3 y, en esta ocasión, incluya elementos parcialmente indizados en la exportación. Para ello, seleccionaría la opción Exportar todos los **elementos, incluidos** los que tienen formato no reconocido, o que no se indizaron por otros motivos.
+
+> [!NOTE]
+> En el procedimiento anterior, puede exportar los resultados reales de la búsqueda o exportar solo un informe.
+
+Use la segunda búsqueda que creó en el paso 3 y la exportación correspondiente para ver y comprender los elementos parcialmente indizados que coinciden con la consulta de búsqueda original. La exportación de la segunda búsqueda también incluye todos los elementos parcialmente indizados que se exportaron para que pueda revisarlos si es necesario.
+
 ## <a name="indexing-limits-for-messages"></a>Límites de indización de mensajes
 
 En la tabla siguiente se describen los límites de indización que pueden provocar la devolución de un mensaje de correo electrónico como elemento parcialmente indizado en una búsqueda de exhibición de documentos electrónicos en Microsoft 365.
@@ -127,7 +154,7 @@ Para obtener una lista de los límites de indización SharePoint documentos, vea
 
 - Si un elemento parcialmente indizado se incluye en los resultados de búsqueda porque coincide con los criterios de consulta de búsqueda, no se incluirá como elemento parcialmente indizado en las estadísticas de búsqueda estimadas. Además, no se incluirá con elementos parcialmente indizados al exportar resultados de búsqueda.
 
-- Aunque un tipo de archivo es compatible con la indización y está indizado, puede haber errores de indización o de búsqueda que harán que un archivo se devuelva como un elemento indizado parcialmente. Por ejemplo, la búsqueda de un archivo Excel muy grande puede ser parcialmente correcta (porque se indizan los primeros 4 MB), pero, a continuación, se produce un error porque se supera el límite de tamaño del archivo. En este caso, es posible que se devuelva el mismo archivo con los resultados de búsqueda y como elemento parcialmente indizado.
+- Aunque un tipo de archivo es compatible con la indización y está indizado, puede haber errores de indización o de búsqueda que harán que un archivo se devuelva como un elemento indizado parcialmente. Por ejemplo, la búsqueda de un archivo Excel grande puede ser parcialmente correcta (porque se indizan los primeros 4 MB), pero, a continuación, se produce un error porque se supera el límite de tamaño del archivo. En este caso, es posible que se devuelva el mismo archivo con los resultados de búsqueda y como elemento parcialmente indizado.
 
 - Los archivos cifrados con [tecnologías](encryption.md) de cifrado de Microsoft y adjuntos a un mensaje de correo electrónico que coincida con los criterios de una búsqueda se pueden obtener una vista previa y se descifrarán cuando se exporten. En este momento, los archivos cifrados con tecnologías de cifrado de Microsoft (y almacenados en SharePoint o OneDrive para la Empresa) se indizan parcialmente.
 
@@ -137,6 +164,6 @@ Para obtener una lista de los límites de indización SharePoint documentos, vea
 
 - Si crea una retención basada en consultas asociada a un caso de exhibición de documentos electrónicos, todos los elementos parcialmente indizados se colocan en espera. Esto incluye elementos parcialmente indizados que no coinciden con los criterios de consulta de búsqueda para la retención. Para obtener más información acerca de cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Create an eDiscovery hold](create-ediscovery-holds.md).
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Investigar elementos parcialmente indizados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)

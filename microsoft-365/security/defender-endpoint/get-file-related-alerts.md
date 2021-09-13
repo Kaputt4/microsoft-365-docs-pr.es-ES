@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 478a187494ff247c7d3e8a258e8ac73eb921d4d2
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346033"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221409"
 ---
 # <a name="get-file-related-alerts-api"></a>Obtener api de alertas relacionadas con archivos
 
@@ -73,7 +73,7 @@ GET /api/files/{id}/alerts
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

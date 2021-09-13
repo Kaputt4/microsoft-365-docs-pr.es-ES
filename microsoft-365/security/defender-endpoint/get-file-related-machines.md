@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 722c4a28ab477b34fc3e52cb3eb3efddf319d0d8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246227"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221402"
 ---
 # <a name="get-file-related-machines-api"></a>Obtener API de máquinas relacionadas con archivos
 
@@ -73,7 +73,7 @@ GET /api/files/{id}/machines
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

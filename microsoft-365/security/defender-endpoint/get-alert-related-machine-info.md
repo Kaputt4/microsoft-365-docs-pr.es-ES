@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2bb63b62ed1c38250799e6aadd58feca247a2a4ca9717c2dbb6e219c8e14d98e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e0a250981d0e3a6e0fec2eb782ef492a4e0bd89
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898364"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221558"
 ---
 # <a name="get-alert-related-machine-information-api"></a>Obtener API de información de máquina relacionada con alertas
 
@@ -75,7 +75,7 @@ GET /api/alerts/{id}/machine
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

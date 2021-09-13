@@ -18,13 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Obtenga información sobre cómo usar una directiva de prevención de pérdida de datos (DLP) para proteger los documentos que tienen propiedades de un sistema de terceros.
-ms.openlocfilehash: be0ca4901b8f32aca4c50daa45c059388561832f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 60440162834bbef34c6e3adc2a60053cd9015e9d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221102"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Crear una directiva DLP para proteger documentos con FCI u otras propiedades
 
@@ -63,7 +64,7 @@ Primero debe cargar un documento con la propiedad a la que desea hacer referenci
 
 ### <a name="step-2-create-a-managed-property"></a>Paso 2: Crear una propiedad administrada
 
-1. Inicie sesión en el Centro de administración de Microsoft 365.
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
 2. En la navegación izquierda, elija **Centros de administración** \> **SharePoint**. Ahora está en el Centro de administración de SharePoint.
 

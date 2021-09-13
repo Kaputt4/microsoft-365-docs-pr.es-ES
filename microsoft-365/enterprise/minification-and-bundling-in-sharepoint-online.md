@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Obtenga información sobre cómo usar técnicas de minificación y agrupación con Web Essentials para reducir las solicitudes HTTP y el tiempo que tarda en cargar páginas en SharePoint Online.
 ms.openlocfilehash: 5ba1e174cbb016bdf88a1d4006a0b8aafd5ec042
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220802"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minificación y agrupación en SharePoint Online
 

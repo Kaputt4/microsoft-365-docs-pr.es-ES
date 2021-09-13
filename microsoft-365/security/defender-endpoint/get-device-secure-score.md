@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c7c5008b91123da17ed670ab64ea7640646a69d0cc2dc4920e3f6e70a71ebb91
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a875e6dcbe41237d86cd1e0003e8d9f6549e18f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221493"
 ---
 # <a name="get-device-secure-score"></a>Obtener puntuación segura para dispositivos
 

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: d3c29e5112a2cf68452bcb830681dac853eb8e1b
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507691"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220329"
 ---
 # <a name="recommendation-resource-type"></a>Tipo de recurso Recomendación
 
@@ -44,7 +44,7 @@ ms.locfileid: "58507691"
 
 ****
 
-|Método|Tipo de valor devuelto|Descripción|
+|Método|Tipo de valor devuelto|Description|
 |---|---|---|
 |[Enumerar todas las recomendaciones](get-all-recommendations.md)|Colección de recomendaciones|Recupera una lista de todas las recomendaciones de seguridad que afectan a la organización|
 |[Obtener recomendación por identificador](get-recommendation-by-id.md)|Recomendación|Recupera una recomendación de seguridad por su identificador|
@@ -72,9 +72,9 @@ ms.locfileid: "58507691"
 |recommendationCategory|Cadena|Categoría de recomendación. Los valores posibles son: "Accounts", "Application", "Network", "OS", "SecurityControls"|
 |subCategory|Cadena|Subcategoría recomendación|
 |severityScore|Doble|Posible impacto de la configuración en la puntuación segura de Microsoft para dispositivos de la organización (1-10)|
-|publicExploit|Boolean|La vulnerabilidad pública está disponible|
-|activeAlert|Boolean|La alerta activa está asociada con esta recomendación|
-|associatedThreats|Colección de cadenas|El informe de análisis de amenazas está asociado a esta recomendación|
+|publicExploit|Booleano|La vulnerabilidad pública está disponible|
+|activeAlert|Booleano|La alerta activa está asociada con esta recomendación|
+|associatedThreats|Colección string|El informe de análisis de amenazas está asociado a esta recomendación|
 |remediationType|Cadena|Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"|
 |Estado|Enum|Estado de excepción de recomendación. Los valores posibles son: "Active" y "Exception"|
 |configScoreImpact|Doble|Impacto de puntuación segura de Microsoft para dispositivos|

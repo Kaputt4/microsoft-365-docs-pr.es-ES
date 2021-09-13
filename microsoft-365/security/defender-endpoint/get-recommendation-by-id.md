@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 42850b4da918fddd91c34a6e62ec1ea761efcdeb1c2daa73136266295096a958
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aadda22c397839c39e95732b02dcc9d6e681e82f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853912"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221306"
 ---
 # <a name="get-recommendation-by-id"></a>Obtener recomendación por identificación
 
@@ -58,7 +58,7 @@ GET /api/recommendations/{id}
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

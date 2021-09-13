@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: 21f9de0c92145f7029b7529a242fe58c344768a0
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220653"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Información general de Microsoft Defender para el plan 1 de punto de conexión (versión preliminar)
 
@@ -37,7 +37,7 @@ En la siguiente imagen se muestra lo que se incluye en Defender for Endpoint Pla
 Use esta guía para:
 
 - [Obtenga información general sobre lo que se incluye en Defender for Endpoint Plan 1 (versión preliminar)](#defender-for-endpoint-plan-1-capabilities)
-- [Comparar Defender para el plan de extremo 1 con el plan 2](defender-endpoint-plan-1-2.md)
+- [Comparar los planes 1 y 2 de Defender para punto de conexión](defender-endpoint-plan-1-2.md)
 - [Obtenga información sobre cómo configurar y configurar Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Introducción al portal de Microsoft 365 Defender, donde puede ver incidentes y alertas, administrar dispositivos y usar informes sobre amenazas detectadas](mde-plan1-getting-started.md)
 - [Obtener información general sobre el mantenimiento y las operaciones](mde-p1-maintenance-operations.md)
@@ -76,8 +76,8 @@ Las acciones de respuesta manual son acciones que el equipo de seguridad puede r
 
 | Archivo/dispositivo | Acción | Descripción |
 |:---|:---|:---|
-| Device | Ejecutar examen antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, estas amenazas suelen tratarse durante un examen antivirus. |
-| Device | Aislar dispositivo | Desconecta un dispositivo de la red de su organización mientras conserva la conectividad con Defender para endpoint. Esta acción te permite supervisar el dispositivo y realizar más acciones si es necesario. |
+| Device | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, estas amenazas suelen tratarse durante un examen antivirus. |
+| Device | Aislar el dispositivo | Desconecta un dispositivo de la red de su organización mientras conserva la conectividad con Defender para endpoint. Esta acción te permite supervisar el dispositivo y realizar más acciones si es necesario. |
 | Archivo | Detener y poner en cuarentena un archivo |Impide que los procesos se ejecuten y ponga en cuarentena los archivos asociados. |
 | Archivo | Agregar un indicador para bloquear o permitir un archivo | Los indicadores de bloqueo impiden que los archivos ejecutables portátiles se lean, escriban o ejecuten en dispositivos. <p>Los indicadores allow impiden que los archivos se bloqueen o corrijan. |
 
@@ -193,7 +193,7 @@ La mayoría de las organizaciones usan varios dispositivos y sistemas operativos
 - iOS
 - Sistema operativo Android
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Comparar Microsoft Defender para endpoint plan 1 (versión preliminar) con plan 2](defender-endpoint-plan-1-2.md)
 - [Configurar y configurar Defender para endpoint plan 1 (versión preliminar)](mde-p1-setup-configuration.md)

@@ -18,11 +18,11 @@ ms.custom:
 - O365ITProTrain
 description: Obtenga información sobre cómo usar PowerShell para administrar grupos de seguridad.
 ms.openlocfilehash: e9842585fbb88711c0efa6e515ca8b54c124338e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356269"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220934"
 ---
 # <a name="manage-security-groups-with-powershell"></a>Administrar grupos de seguridad con PowerShell
 
@@ -170,7 +170,7 @@ $groupName="<display name of the group>"
 Remove-MsolGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

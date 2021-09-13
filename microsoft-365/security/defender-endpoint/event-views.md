@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0b21a95930138972ac3f7fe3c1474b0434a68e4c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567849"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221906"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Ver eventos de la reducción de la superficie expuesta a ataques
 
@@ -57,7 +57,7 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 2. Escriba **el visor de** eventos en el menú Inicio y abra el Visor de **eventos**.
 
-3. Seleccionar **acción**  >  **Importar vista personalizada...**
+3. Seleccionar **acción** \> **Importar vista personalizada...**
 
    > [!div class="mx-imgBorder"]
    > ![Animación resaltando Importar vista personalizada a la izquierda de la ventana Visor de par.](images/events-import.gif)
@@ -156,7 +156,7 @@ Puede tener acceso a estos eventos en Windows visor de eventos:
 |---|---|:---:|---|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|1|Auditoría de ACG|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|2|Aplicación de ACG|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|3 |No permitir procesos secundarios de auditoría|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|3|No permitir procesos secundarios de auditoría|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|4 |No permitir procesos secundarios de bloqueo|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|5 |Bloquear auditoría de imágenes de integridad baja|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|6 |Bloquear bloqueo de imágenes de integridad baja|
@@ -164,9 +164,9 @@ Puede tener acceso a estos eventos en Windows visor de eventos:
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|8 |Bloquear bloqueo de imágenes remoto|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|9 |Deshabilitar auditoría de llamadas del sistema de Win32k|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|10|Deshabilitar bloqueo de llamadas del sistema de Win32k|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|11 |Auditoría de protección de integridad de código|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|11|Auditoría de protección de integridad de código|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|12 |Bloque de protección de integridad de código|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|13 |Auditoría de EAF|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|13|Auditoría de EAF|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|14 |Aplicación de EAF|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|15 |Auditoría de EAF+|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|16 |Aplicación de EAF+|

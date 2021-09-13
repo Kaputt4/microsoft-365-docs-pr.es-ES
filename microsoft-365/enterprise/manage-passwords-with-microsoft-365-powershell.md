@@ -18,11 +18,11 @@ ms.custom:
 - O365ITProTrain
 description: Obtenga información sobre cómo usar PowerShell para administrar contraseñas.
 ms.openlocfilehash: 40091d7add7f7adf9c560a90c00ad22e6c333c60
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220941"
 ---
 # <a name="manage-passwords-with-powershell"></a>Administrar contraseñas con PowerShell
 
@@ -93,7 +93,7 @@ $userUPN="<user account sign in name>"
 Set-MsolUserPassword -UserPrincipalName $userUPN -ForceChangePassword $true
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

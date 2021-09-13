@@ -17,11 +17,11 @@ f1.keywords:
 description: En este artículo, obtenga información sobre cómo funcionan el aislamiento y el control de acceso para mantener los datos de varios inquilinos aislados entre sí en Azure Active Directory.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d9305bd6c58abd7d3fa5d9b7c6761b64eab279f9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220893"
 ---
 # <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Microsoft 365 Aislamiento y control de acceso en Azure Active Directory
 

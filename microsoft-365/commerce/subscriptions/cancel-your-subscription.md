@@ -21,11 +21,11 @@ search.appverid: MET150
 description: Si tiene menos de 25 licencias de usuario, puede cancelar la suscripción de prueba o de pago de Microsoft 365 para empresas en el Centro de administración.
 ms.date: 04/08/2021
 ms.openlocfilehash: 900fd5f544a405b5f337623ba35a353cefaf9bab
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255704"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221222"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 

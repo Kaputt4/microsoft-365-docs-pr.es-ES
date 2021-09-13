@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: b5d7f7384d60a5353ce4c0363e07d3451e146598
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563563"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220598"
 ---
 # <a name="deployment-phases"></a>Fases de implementación
 
@@ -95,7 +95,7 @@ Los siguientes están fuera del ámbito de esta guía de implementación:
 - Configuración de soluciones de terceros que podrían integrarse con Defender for Endpoint
 - Pruebas de penetración en entornos de producción
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Fase 1: Preparación](prepare-deployment.md)
 - [Fase 2: Configuración](production-deployment.md)

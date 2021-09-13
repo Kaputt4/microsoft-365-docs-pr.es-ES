@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 73dd701eff97d7afb3fee7f4480a16296fa3d983
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347125"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221366"
 ---
 # <a name="list-investigations-api"></a>API enumerar investigaciones
 
@@ -80,7 +80,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

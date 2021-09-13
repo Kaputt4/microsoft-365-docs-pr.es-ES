@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c335885821f0479cd797d5b9bb4795ab211e8b37d3a7b9f2aaa098161ddd91ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fb023ab3d4ec4115411b1c8d12ef1c2ef1b1eece
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829500"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221613"
 ---
 # <a name="delete-indicator-api"></a>Eliminar API de indicador
 

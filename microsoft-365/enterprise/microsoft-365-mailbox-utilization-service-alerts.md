@@ -1,5 +1,5 @@
 ---
-title: Alertas de servicio de uso de buzones
+title: Alertas del servicio de uso de buzones
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,21 +13,22 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Use alertas de servicio de uso de buzones para supervisar los buzones en espera que están alcanzando su cuota de buzón.
-ms.openlocfilehash: f6ce0ad5d7f4affd5d0f4a108be0f0fbebe54766
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 417e0106505dcc31af6e9a279fd79655df712dd2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508807"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220862"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alertas de servicio para el uso de buzones en Exchange Online supervisión
 
 Hemos publicado una nueva alerta de servicio Exchange Online que le informa de los buzones que están en espera y que están en riesgo de alcanzar o exceder su cuota. Estas alertas de servicio proporcionan visibilidad del número de buzones de la organización que pueden requerir intervención del administrador.
 
-Estas alertas de servicio se muestran en el Centro de administración de Microsoft 365. Para ver estas alertas de servicio, vaya a **Health** Service health Exchange Online y, a  >    >  **continuación,** haga clic en la pestaña Problemas **activos.** Este es un ejemplo de una alerta de servicio de uso de buzones.
+Estas alertas de servicio se muestran en el Centro de administración de Microsoft 365. Para ver estas alertas de servicio, vaya a **Health** Service health Exchange Online y, a  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >  **continuación,** haga clic en la pestaña Problemas **activos.** Este es un ejemplo de una alerta de servicio de uso de buzones.
 
 ![Alerta del servicio de uso de buzones](../media/MailboxUtilizationServiceAlert.png)
 
@@ -83,7 +84,7 @@ Las alertas de servicio para el uso de buzones también pueden contener una tabl
 |:--------------|:--------------|:---------------|:---------------|:---------------|:--------------- |
 | 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | Verdadero | False | True | 398 |
 | 6c041498-1611-5011-a058-1156ce60890c | Principal | Verdadero | False | True | 10 |
-| 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | True | False | 7  |
+| 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | True | Falso | 7  |
 | 269f6a85-1234-4648-8cde-59bbc7bc67d0 | PrimaryWithArchive | True | True | True | 1 |
 | 13fb778d-e1cb-4c44-5768-ad4282906c1f | PrimaryWithArchive | True | True  | False | 1 |
 |||||||

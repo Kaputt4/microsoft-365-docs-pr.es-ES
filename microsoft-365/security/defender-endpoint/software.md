@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b64ba9bec7de209ec8458c6b9215b766b51f7349052b94d7a2b19cdf8d1519fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f14da0e999a0ec38c9be7ef36e47b2c786e12e97
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59220262"
 ---
 # <a name="software-resource-type"></a>Tipo de recurso software
 
@@ -57,11 +57,11 @@ Método |Tipo de valor devuelto |Descripción
 
 Propiedad |   Tipo   |   Descripción
 :---|:---|:---
-id | String | Id. de software
+id | Cadena | Id. de software
 Nombre | Cadena | Nombre del software
-Proveedor | String | Nombre del proveedor de software
+Proveedor | Cadena | Nombre del proveedor de software
 Debilidades | Long | Número de vulnerabilidades detectadas
-publicExploit | Boolean | Existe vulnerabilidad pública para algunas de las vulnerabilidades
-activeAlert | Boolean | La alerta activa está asociada con este software
+publicExploit | Booleano | Existe vulnerabilidad pública para algunas de las vulnerabilidades
+activeAlert | Booleano | La alerta activa está asociada con este software
 exposedMachines | Long | Número de dispositivos expuestos
 impactScore | Doble | Impacto de la puntuación de exposición de este software
