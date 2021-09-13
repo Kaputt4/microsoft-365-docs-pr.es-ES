@@ -20,15 +20,15 @@ search.appverid:
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Describe la sincronización de directorios Microsoft 365, la limpieza de servicios de dominio de Active Directory y la herramienta Azure Active Directory Conectar directorio.
 ms.openlocfilehash: 5ad437e4f8abcf2a6d59d17ce41a2b1adeac0649
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575641"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210570"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Identidad híbrida y sincronización de directorios para Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Según las necesidades empresariales y los requisitos técnicos, el modelo de identidad híbrida y la sincronización de directorios es la opción más común para los clientes empresariales que adoptan Microsoft 365. La sincronización de directorios permite administrar identidades en los Servicios de dominio de Active Directory (AD DS) y todas las actualizaciones de cuentas de usuario, grupos y contactos se sincronizan con el inquilino de Azure Active Directory (Azure AD) de su suscripción Microsoft 365.
 

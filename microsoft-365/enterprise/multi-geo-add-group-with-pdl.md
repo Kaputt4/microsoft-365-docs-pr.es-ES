@@ -14,11 +14,11 @@ localization_priority: Normal
 description: Obtenga información sobre cómo crear un grupo Microsoft 365 con una ubicación de datos preferida especificada en un entorno multige geográfico.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 0a035856344cf49e3a7221a00b98c175b95f9a72
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575845"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210710"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>Crear un grupo Microsoft 365 con una ubicación de datos preferida específica
 

@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: En este artículo se explica cómo usar PowerShell para ver cuentas de usuario con licencia Microsoft 365 licencia.
 ms.openlocfilehash: 0f1b590dade1d07499ac6c9b5f8888d7cab7ecd6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210397"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Ver usuarios con licencia y sin licencia Microsoft 365 con PowerShell
 
@@ -79,7 +79,7 @@ Para ver la lista de todas las cuentas de usuario con licencia de su organizaci�
 Get-MsolUser -All | where {$_.isLicensed -eq $true}
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

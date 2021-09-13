@@ -19,12 +19,12 @@ description: Los administradores pueden aprender a buscar y usar los informes de
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06817f5ce73800e3688820534404cb2893307dc2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d85918b35f4c05a83b779a7f3893d0c5942c4894
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568725"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211527"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -99,10 +99,10 @@ Si selecciona Desglose **de gráficos por dirección,** los siguientes gráficos
 
 La siguiente información se muestra en la tabla de detalles debajo del gráfico:
 
-- **Fecha**
+- **Date**
 - **Directiva DLP** (**Ver datos por DLP Exchange reglas de transporte)**
 - **Regla de transporte**
-- **Subject**
+- **Asunto**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
@@ -131,7 +131,7 @@ La siguiente información se muestra en la tabla de detalles debajo del gráfico
 - **Fecha**
 - **Directiva DLP** (**Ver datos por DLP Exchange reglas de transporte)**
 - **Regla de transporte**
-- **Subject**
+- **Asunto**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
@@ -383,11 +383,11 @@ En la **página Informe de detecciones de malware,** el gráfico muestra la sigu
 
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Id. de** mensaje: disponible en el **campo de encabezado Id. de** mensaje en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (tenga en cuenta los corchetes angulares).
-- **Subject**
+- **Asunto**
 - **Filename**
 - **Nombre de malware**
 
@@ -447,7 +447,7 @@ En la **página Informe** de correo suplantado, puede filtrar tanto el gráfico 
 
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Usuario suplantado**
 - **Infraestructura de envío**
 - **Tipo de suplantación**
@@ -470,7 +470,7 @@ Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** 
 
 El gráfico muestra la siguiente información:
 
-- **Pending**
+- **Pendiente**
 - **Completed**
 
 En la **página Envíos,** puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **Filtrar** y seleccionando uno o varios de los siguientes valores:
@@ -491,7 +491,7 @@ En la **página Envíos,** puede filtrar tanto el gráfico como la tabla de deta
   - **Malware**
   - **Correo no deseado**
 - **Estado de volver a examinar:**
-  - **Pending**
+  - **Pendiente**
   - **Completed**
 
 La tabla de detalles debajo del gráfico  muestra la misma información  y tiene las mismas opciones de grupo o personalizar columnas que en la pestaña Enviado para el análisis en Correo electrónico **& envíos** de  \> **colaboración.** Para obtener más información, vea [Ver envíos de administrador a Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
@@ -567,8 +567,8 @@ En la vista Ver  **datos por \> phishing** de correo electrónico y desglose de 
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
-- **Subject**
+- **Date**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Detectado por**
@@ -601,10 +601,10 @@ En la vista Ver  **datos por malware de \> correo** electrónico y desglose de g
 - **Reputación de los archivos**
 - **Motor antimalware: detección** <sup>\*</sup> de motores antimalware.
 - Bloque de tipo de archivo de directiva **antimalware:** se trata de mensajes de correo electrónico filtrados debido al tipo de archivo malintencionado identificado en el mensaje.
-- **Reputación malintencionada de URL**
-- **Detonación de URL**
-- **Reputación de detonación de URL**
-- **Campaña**
+- **Reputación malintencionada de url**<sup>\*</sup>
+- **Detonación de dirección URL**<sup>\*</sup>
+- **Reputación de detonación de URL**<sup>\*</sup>
+- **Campaña**<sup>\*</sup>
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
@@ -688,7 +688,7 @@ En las **vistas Desglose** del gráfico por estado de entrega y Ver datos por co
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Fecha**
-- **Subject**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Detectado por**
@@ -722,7 +722,7 @@ En la **vista Ver datos por \> malware** de contenido, la siguiente información
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
-- **Ubicación**
+- **Location**
 - **Detectado por**
 - **Nombre de malware**
 
@@ -752,7 +752,7 @@ En la **vista Ver datos por invalidación del** sistema y Desglose de gráficos 
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**
@@ -796,8 +796,8 @@ En la **vista Ver datos por invalidación** del sistema y Desglose del gráfico 
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
-- **Subject**
+- **Date**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Invalidación del sistema**
@@ -919,7 +919,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

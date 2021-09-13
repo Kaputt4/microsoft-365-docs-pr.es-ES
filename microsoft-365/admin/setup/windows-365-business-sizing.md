@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre las opciones recomendadas de tamaño de pc en la nube para Windows usuarios de 365 Empresa.
 ms.openlocfilehash: 82fe7093d27fe3d1302e43da415df9ddce2a6064
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350069"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211477"
 ---
 # <a name="windows-365-business-sizing-options"></a>Opciones de tamaño de Windows 365 Empresa
 

@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: En este artículo se explica la diferencia entre usar la memoria caché de objetos en SharePoint Server 2013 local y SharePoint Online.
 ms.openlocfilehash: 40863ccf375620cf4b38d231fa0a86336c4826cc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566727"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210420"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Usar la memoria caché de objetos con SharePoint Online
 

@@ -16,14 +16,15 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
+- admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use esta Guía del laboratorio de pruebas para crear un entorno de prueba ligero para realizar pruebas Microsoft 365 empresa.
-ms.openlocfilehash: 818b013d8d18a7686e88e99eff2f0be2fb12b8d9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0b8e0a71c8708d2faec0e263c220e3f3d91931f3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566795"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210737"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuración básica ligera
 
@@ -157,7 +158,7 @@ Primero, agregue la suscripción de prueba de Microsoft 365 E5 y asigne la nueva
   
 1. En una ventana privada del explorador de Internet, use las credenciales de la cuenta de administrador global para iniciar sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com) .
     
-2. En la **Centro de administración de Microsoft 365,** en la navegación izquierda, seleccione **Facturación > Servicios de compra.**
+2. En la **Centro de administración de Microsoft 365,** en la navegación izquierda, seleccione **Servicios de compra** de  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**facturación.**</a>
     
 3. En la **página Servicios de** compra, seleccione **Microsoft 365 E5** y, a continuación, seleccione Obtener **prueba gratuita.**
 
@@ -167,7 +168,7 @@ Primero, agregue la suscripción de prueba de Microsoft 365 E5 y asigne la nueva
 
 6. En la **página Recibo de pedido,** seleccione **Continuar**.
 
-7. En el Centro de administración de Microsoft 365, seleccione **Usuarios > usuarios activos**.
+7. En el Centro de administración de Microsoft 365, seleccione **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
 
 8. En **Usuarios activos,** seleccione su cuenta de administrador.
 
@@ -323,6 +324,6 @@ Explore estos conjuntos adicionales de guías de laboratorio de pruebas:
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

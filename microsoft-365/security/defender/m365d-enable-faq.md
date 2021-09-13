@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: e630b2cdb7164157e2dd42e8f1ee8d09676dfbfb
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58252078"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211880"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Preguntas más frecuentes al activar Microsoft 365 Defender
 
@@ -80,7 +80,7 @@ Las cuentas asignadas Azure Active Directory (Azure AD) pueden acceder a Microso
 - Lector de seguridad
 
 > [!NOTE]
-> La configuración de control de acceso basada en roles en Microsoft Defender para endpoint influye en el acceso a los datos. Para obtener más información, lea acerca [de cómo administrar el acceso a Microsoft 365 Defender](m365d-permissions.md).
+> La configuración del control de acceso basado en el rol en Microsoft Defender para punto de conexión influye en el acceso a los datos. Para obtener más información, lea sobre [administrar el acceso a Microsoft 365 Defender](m365d-permissions.md).
 
 ## <a name="what-time-zone-does-microsoft-365-defender-default-to"></a>¿En qué zona horaria Microsoft 365 Defender predeterminada?
 

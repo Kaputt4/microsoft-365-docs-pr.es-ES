@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 2a336a571c33820d289eed9d4d6cd20e56cdfa20
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563807"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211797"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Storage cuenta
 
@@ -45,7 +45,7 @@ ms.locfileid: "58563807"
 
 2. Vaya a **Configuración** \> **Microsoft 365 Defender** \> **API de streaming**. Para ir directamente a la página **de la API de streaming,** use <https://security.microsoft.com/settings/mtp_settings/raw_data_export> .
 
-3. Haga clic en **Agregar**.
+3. Seleccione **Agregar**.
 
 4. En el **menú desplegable Agregar nueva configuración de la API** de streaming que aparece, configure las siguientes opciones:
    1. **Nombre:** elija un nombre para la nueva configuración.

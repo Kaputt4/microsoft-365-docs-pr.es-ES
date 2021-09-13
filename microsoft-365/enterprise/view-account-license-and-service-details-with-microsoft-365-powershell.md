@@ -20,11 +20,11 @@ ms.custom:
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Explica cómo usar PowerShell para determinar los servicios Microsoft 365 que se han asignado a los usuarios.
 ms.openlocfilehash: 2c450c0697dced43f974087f6c0453e4b761914b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210417"
 ---
 # <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>Ver Microsoft 365 licencia de cuenta y detalles de servicio con PowerShell
 
@@ -127,7 +127,7 @@ $licArray +=  ""
 $licArray
 ```
  
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

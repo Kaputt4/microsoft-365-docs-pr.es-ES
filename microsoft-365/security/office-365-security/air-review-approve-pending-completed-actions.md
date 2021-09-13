@@ -19,12 +19,12 @@ description: Obtenga información sobre las acciones de corrección en las capac
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 91b1af53f69cc464726bb6040f6d9af2bb11566804898db85dedc658704e8a4f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 987771616acfd2f2faf425e525505b320155388e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828348"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211780"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Revisar y administrar acciones de corrección en Office 365
 
@@ -42,7 +42,7 @@ Estas acciones de corrección no se toman a menos que el equipo de operaciones d
 Hay cuatro formas diferentes de buscar y realizar acciones de investigación automática:
 
 - [Cola de incidentes](https://security.microsoft.com/incidents)
-- [Centro de acciones](https://security.microsoft.com/action-center/pending)
+- [Centro de actividades](https://security.microsoft.com/action-center/pending)
 - Investigación en sí (a la que se accede a través de un incidente o desde una alerta)
 - [Cola de investigaciones de investigación y corrección](https://security.microsoft.com/airinvestigation)
 
@@ -101,12 +101,12 @@ Hay dos formas diferentes de reconsiderar las acciones enviadas:
 4. Espere a que el botón Acción de la parte superior habilite y seleccione el botón Acción para cambiar el tipo de acción.
 5. Esto creará las acciones adecuadas.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Usar el Explorador de amenazas](threat-explorer.md)
 - [Acciones de administrador /manual](remediate-malicious-email-delivered-office-365.md)
 - [Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta](air-report-false-positives-negatives.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Ver detalles y resultados de una investigación automatizada en Office 365](air-view-investigation-results.md)

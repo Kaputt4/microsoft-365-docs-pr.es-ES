@@ -21,11 +21,11 @@ ms.collection:
 - m365solution-scenario
 ms.technology: mdo
 ms.openlocfilehash: 7b3e5e5f404d2758597b81a11d204baa629bff31
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568761"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211690"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -112,7 +112,7 @@ En las tablas siguientes se describe la configuración de la directiva de acceso
 
 En la **sección Asignaciones:**
 
-|Valor|Propiedades|Valores|Notas|
+|Setting|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos:** seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos:** seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -134,7 +134,7 @@ Aplica la configuración del nivel de riesgo en función del nivel de protecció
 
 En la **sección Controles de** Access:
 
-|Valor|Propiedades|Valores|Acción|
+|Setting|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Conceder acceso**||Seleccionar|
 |||**Requerir autenticación multifactor**|Cheque|
@@ -155,7 +155,7 @@ Vea [este artículo](../../enterprise/microsoft-365-client-support-multi-factor-
 
 En la **sección Asignaciones:**
 
-|Valor|Propiedades|Valores|Notas|
+|Setting|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos:** seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos:** seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -165,7 +165,7 @@ En la **sección Asignaciones:**
 
 En la **sección Controles de** Access:
 
-|Valor|Propiedades|Valores|Acción|
+|Setting|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Bloquear acceso**||Seleccionar|
 ||**Exigir todos los controles seleccionados**||Seleccionar|
@@ -197,7 +197,7 @@ En la segunda **sección Asignaciones:**
 
 |Tipo|Propiedades|Valores|Acción|
 |---|---|---|---|
-|Acceso|**Permitir acceso**||Seleccionar|
+|Access|**Permitir acceso**||Seleccionar|
 |||**Exigir cambio de contraseña**|Cheque|
 |
 
@@ -374,7 +374,7 @@ Para **Seguridad del sistema,** consulte esta tabla.
 
 |Tipo|Propiedades|Valor|Acción|
 |---|---|---|---|
-|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Seleccionar|
+|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Seleccionar|
 ||Contraseñas sencillas|Bloquear|Seleccionar|
 ||Tipo de contraseña|Valor predeterminado del dispositivo|Seleccionar|
 ||Longitud mínima de la contraseña|6 |Tipo|

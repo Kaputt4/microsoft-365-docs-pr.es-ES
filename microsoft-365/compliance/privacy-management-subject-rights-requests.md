@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: El área de solicitud de derechos de sujeto en administración de privacidad de Microsoft le ayuda a encontrar datos personales y colaborar en la revisión del contenido y la creación de informes.
 ms.openlocfilehash: 28059996d4969b23f856df3bb05584b4055ba3d2
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745738"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210927"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Administrar solicitudes de derechos de sujeto en la administración de privacidad (versión preliminar)
 

@@ -22,11 +22,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 4e52906cda48314967e40039caabfd81e38514c1
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611128"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210340"
 ---
 # <a name="get-live-response-results"></a>Obtener resultados de respuesta en directo
 

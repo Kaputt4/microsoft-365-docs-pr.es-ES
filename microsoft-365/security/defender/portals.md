@@ -18,11 +18,11 @@ ms.topic: article
 search.appverid: met150
 ms.technology: m365d
 ms.openlocfilehash: 81fe9d058a1144c67a1d95d02a3e8b47e3c2104b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255442"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211837"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portales de seguridad de Microsoft y centros de administración
 
@@ -44,8 +44,8 @@ Los operadores y administradores de seguridad pueden ir a los siguientes portale
 | Centro de seguridad de Microsoft Defender | Supervisar y responder a la actividad de amenazas en los puntos de conexión con las funcionalidades proporcionadas con [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
 | Centro de seguridad y cumplimiento | Administrar [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) y [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) proteger los servicios de correo electrónico y colaboración y garantizar el cumplimiento de diversas normativas de tratamiento de datos | [protection.office.com](https://protection.office.com) |
 | Portal de Azure Defender | Usar [Azure Defender para](/azure/security-center/security-center-intro) reforzar la posición de seguridad de los centros de datos y las cargas de trabajo híbridas en la nube | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
-| Portal de Microsoft Defender para identidades | Identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas con señales de Active Directory con [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
-| Cloud App Security portal | Use [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) para obtener una visibilidad enriquecida, un control sobre el viaje de datos y análisis sofisticados para identificar y combatir las ciberamenazas en los servicios en la nube | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
+| Portal de Microsoft Defender for Identity | Identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas con señales de Active Directory con [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
+| portal de Cloud App Security | Use [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) para obtener una visibilidad enriquecida, un control sobre el viaje de datos y análisis sofisticados para identificar y combatir las ciberamenazas en los servicios en la nube | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
 | Portal de inteligencia de seguridad de Microsoft Defender | Obtener actualizaciones de inteligencia de seguridad para Microsoft Defender para endpoint, enviar ejemplos y explorar la enciclopedia de amenazas | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
 
 ## <a name="portals-for-other-workloads"></a>Portales para otras cargas de trabajo

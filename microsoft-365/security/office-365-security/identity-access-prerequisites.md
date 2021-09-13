@@ -20,11 +20,11 @@ ms.collection:
 - m365solution-scenario
 ms.technology: mdo
 ms.openlocfilehash: d4f44b1e77771860ba36a77f257b34bf0cd10e2a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211687"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Trabajo previo para implementar directivas de acceso a dispositivos y identidades
 

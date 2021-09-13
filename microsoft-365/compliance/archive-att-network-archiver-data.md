@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos DE SMS y MMS desde la red&T Mobile Network. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
 ms.openlocfilehash: e17f5d369eefd5a2d7b2d9b8e55df0d1a4c9714b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211020"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurar un conector para archivar datos de AT&SMS/MMS T
 

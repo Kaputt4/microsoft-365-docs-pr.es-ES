@@ -27,12 +27,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene información para los usuarios que usan SharePoint Server 2007 para ayudarles a planear su actualización.
-ms.openlocfilehash: 5f3df4a66eb789cd6aa88f1f3a0f170c1c49b834a7b87bad242abb1fab15b4df
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38c4713b7dfb705c99d970c5f68a37b031c951a5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894832"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210540"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>SharePoint opciones de migración de 2007 a tener en cuenta
 
@@ -56,7 +56,7 @@ Existen varios métodos para actualizar un SharePoint de servidor. Si tiene una 
     
 - Mover manualmente datos entre colecciones de sitios o bibliotecas
     
-- Actualización del Asistente para FastTrack a Microsoft 365 ([SharePoint Asesor de implementación en línea](https://aka.ms/spoguidance))
+- FastTrack Actualización del asistente a Microsoft 365 ([SharePoint Asesor de implementación en línea](https://aka.ms/spoguidance))
     
 - API de migración a SharePoint Online (SPO) en Microsoft 365
     
@@ -148,7 +148,7 @@ Mi lista de viñetas "más importante":
 |Actualizar bases de datos con base de datos adjunta  <br/> |Actualización local  <br/> |
 |Actualización con granjas de servidores en paralelo  <br/> |Actualización híbrida  <br/> |
 |API de migración a SPO en Microsoft 365 (para datos de sitio personales)  <br/> |SharePoint Híbrido (no necesario todavía)  <br/> |
-|Algunas migraciones de datos manuales a SharePoint Online para datos críticos  <br/> |Actualización del asistente de FastTrack a Microsoft 365  <br/> |
+|Algunas migraciones de datos manuales a SharePoint Online para datos críticos  <br/> |FastTrack actualización del asistente a Microsoft 365  <br/> |
    
  **Mi plan propuesto:**
   
@@ -156,7 +156,7 @@ Actualice localmente, con versiones de SharePoint en paralelo, algunas virtualiz
   
 - Considere si un híbrido federado de búsqueda con SPO satisface sus necesidades.
     
-- Considera [la asistencia de FastTrack](https://fasttrack.microsoft.com) si quieres actualizar a SharePoint Online desde aquí. 
+- Considere [FastTrack ayuda](https://fasttrack.microsoft.com) si desea actualizar a SharePoint Online desde aquí. 
     
 - Determine si las colecciones de sitios se pueden descargar en una Microsoft 365 suscripción. (Microsoft 365 cumple muchos [estándares de cumplimiento](/compliance/regulatory/offering-home). Microsoft 365 [exhibición de documentos electrónicos](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) y puede realizar [retenciones](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) a través del Centro de cumplimiento). 
     

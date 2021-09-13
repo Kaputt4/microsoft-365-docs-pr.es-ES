@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 28d3728b7fdd3fb6f43ac282fe21572ecd6ecfc7b9749dade260caff3c0bc744
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ce90523430ce1d9602609820221b9aca49efa4db
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800347"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210320"
 ---
 # <a name="get-machine-by-id-api"></a>Obtener api de máquina por id.
 
@@ -71,7 +71,7 @@ GET /api/machines/{id}
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | String | Portador {token}. **Necesario**.
+Authorization | Cadena | Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

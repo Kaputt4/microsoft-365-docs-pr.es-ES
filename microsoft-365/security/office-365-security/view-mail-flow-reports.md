@@ -20,11 +20,11 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 5c1993668b94ca8c71ccbf13e5fe59059c610cca
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572412"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211520"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel Informes del Centro de & cumplimiento
 
@@ -84,7 +84,7 @@ Si hace clic **en Filtros** en una vista de informe, puede especificar un interv
 
 Si hace clic **en Ver tabla de detalles** en una vista de informe, se muestra la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Dirección y nombre del conector**
 - **Tipo de conector**
 - **¿TLS forzada?**: El valor **True** o **False**.
@@ -140,9 +140,9 @@ Si hace clic **en Ver tabla de detalles,** la información que se muestra depend
 
 - **Ver datos por: Exchange de transporte :**
 
-  - **Fecha**
+  - **Date**
   - **Regla de transporte**
-  - **Subject**
+  - **Asunto**
   - **Dirección del remitente**
   - **Dirección del destinatario**
   - **Gravedad**
@@ -153,7 +153,7 @@ Si hace clic **en Ver tabla de detalles,** la información que se muestra depend
   - **Fecha**
   - **Directiva DLP**
   - **Regla de transporte**
-  - **Subject**
+  - **Asunto**
   - **Dirección del remitente**
   - **Dirección del destinatario**
   - **Gravedad**
@@ -326,7 +326,7 @@ Para ver el correo electrónico filtrado por EOP o Defender Office 365 por separ
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
-- **Fecha**
+- **Date**
 - **Correo electrónico total**
 - **Protección perimetral**
 - **Antimalware, reputación de archivo, bloque de tipo de archivo:**
@@ -395,7 +395,7 @@ Al pasar el mouse sobre una categoría del gráfico, puede ver el número de men
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
-- **Date**
+- **Fecha**
 - **Correo electrónico total**
 - **Perímetro filtrado**
 - **Motor antimalware, Caja fuerte datos adjuntos, regla filtrada:**

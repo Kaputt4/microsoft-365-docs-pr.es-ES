@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo conectar su dominio a Microsoft 365.
-ms.openlocfilehash: b91b6fcc297449906e54a8f61f52b9d3c8b01ca6d009d43fa69a5873b81eb873
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 377bb0444582f8efe15583fa522eceb9d675e474
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887868"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211270"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>Conectar el dominio para Microsoft 365 para empresas
 
@@ -43,7 +44,7 @@ Primero tendrá que eliminar los registros DNS existentes de Google y, a continu
 1. Desplácese hacia abajo **hasta Registros sintéticos,** abra **Google Workspace**, **seleccione Eliminar** y, a continuación, **Vuelva a** eliminar.
 1. Desplácese hacia abajo **hasta Registros de** recursos personalizados y elimine los registros DNS existentes que aparezcan, incluidos los que haya creado anteriormente para Microsoft 365.
 1. Vaya a la [Centro de administración de Microsoft 365](https://admin.microsoft.com).
-1. En el panel de navegación izquierdo, elija Mostrar **todo**, **Configuración**, **Dominios**.
+1. En el panel de navegación izquierdo, elija Mostrar  >  **todos los Configuración**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a>.
 1. A continuación, elija el dominio predeterminado.
 1. Seleccione **Continuar la configuración** y, a continuación, para conectar el dominio, elija  **Continuar**.
 1. Desplácese hacia abajo para ver los registros DNS que deben copiarse en Google.
@@ -52,6 +53,6 @@ Primero tendrá que eliminar los registros DNS existentes de Google y, a continu
 1. En el **campo Datos,** pegue el registro que copió.
 1. A continuación, seleccione **Aceptar**.
 1. Repita el proceso para los registros CNAME y TXT y agregue los valores en la página de administración de DNS de Google.
-1. Vuelva al centro Administración de Microsoft 365 y seleccione **Continuar**.
+1. Vuelva a la Centro de administración de Microsoft 365 y seleccione **Continuar**.
 
     La configuración del dominio se ha completado.

@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Obtenga información sobre cómo comprobar el historial de las conexiones del equipo cliente para ayudarle a detectar problemas emergentes de forma anticipada.
-ms.openlocfilehash: 8ce4e98a78d3353aa964533b0dfbe269584b637cd829d011ef827d070d7bf95b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 460bde30a0b292569b045c339066df2860c50989
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210590"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento
 
@@ -211,7 +211,7 @@ El objetivo de estos métodos sencillos es aprender a tomar, comprender y almace
   
 Hay varias formas de tratar el punto de salida, en este caso, el servidor proxy. Puede realizar un seguimiento de 1 a 2 y luego de 2 a 3 y, a continuación, agregar los números en milisegundos para obtener un total final al borde de la red. O bien, puede configurar la conexión para omitir el proxy de Office 365 direcciones. En una red más grande con un firewall, un proxy inverso o una combinación de los dos, es posible que deba realizar excepciones en el servidor proxy que permitirán que el tráfico pase para una gran cantidad de direcciones URL. Para obtener la lista de puntos de conexión usados por Office 365, [vea Office 365 URL e intervalos de direcciones IP](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2). Si tiene un proxy de autenticación, comience probando excepciones para lo siguiente:
   
-- Puertos 80 y 443
+- Los puertos 80 y 443
     
 - TCP y HTTP
     

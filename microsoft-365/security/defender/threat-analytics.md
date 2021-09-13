@@ -1,5 +1,5 @@
 ---
-title: Hacer seguimiento y responder a amenazas emergentes con el análisis de amenazas
+title: Análisis de amenazas en Microsoft 365 Defender
 ms.reviewer: ''
 description: Obtenga información sobre las amenazas emergentes y las técnicas de ataque y cómo detenerlos. Evalúe su impacto en la organización y evalúe la resistencia de la organización.
 keywords: análisis de amenazas, evaluación de riesgos, Microsoft 365 Defender, M365D, estado de mitigación, configuración segura, Microsoft Defender para Office 365, Microsoft Defender para análisis de amenazas de Office 365, análisis de amenazas de MDO, datos de análisis de amenazas MDE y MDO integrados, integración de datos de análisis de amenazas, análisis de amenazas Microsoft 365 Defender integrado
@@ -21,14 +21,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43b15b8fb43a06fa56e18c735868058fcfd6d24f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: e25c6bfb3efabfd53d1babc10c20a46e1f6c0f78
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211787"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics-in-microsoft-365-defender"></a>Seguimiento y respuesta a amenazas emergentes con análisis de amenazas en Microsoft 365 Defender 
+# <a name="threat-analytics-in-microsoft-365-defender"></a>Análisis de amenazas en Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

@@ -17,11 +17,11 @@ description: Los administradores pueden aprender a configurar los permisos en la
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 977cd2d099d9c5be7fc0db9ef61f31f28afdc9fe
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211657"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 

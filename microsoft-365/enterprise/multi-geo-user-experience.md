@@ -16,11 +16,11 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Información sobre la experiencia del usuario de SharePoint, OneDrive y Exchange en un entorno multigeográfico para Microsoft 365.
 ms.openlocfilehash: 5ecdfd41c496149e04bfb9586f76807db7957d0d
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210650"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Experiencia del usuario en un entorno multigeográfico
 

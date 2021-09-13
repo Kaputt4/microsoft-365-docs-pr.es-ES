@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "Summary: Use PowerShell for Microsoft 365 to create reports that you can't produce in the Centro de administración de Microsoft 365."
 ms.openlocfilehash: 9fe1b48bdb61d037a3b2bc49d017a16c3a6875cd
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356881"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210440"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Usar PowerShell para crear informes de Microsoft 365
 

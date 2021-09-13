@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explica cómo usar PowerShell para ver información sobre los planes de licencias, los servicios y las licencias que están disponibles en su Microsoft 365 organización.
 ms.openlocfilehash: 920bc00dcfa774f7cf157be4a543bf30e18f406e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356053"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210387"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Ver Microsoft 365 licencias y servicios con PowerShell
 
@@ -145,7 +145,7 @@ En la tabla siguiente se muestran los Microsoft 365 de servicio y sus nombres de
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Aplicaciones Microsoft 365 para empresas *(anteriormente denominado Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype Empresarial Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office  <br/> |
+| `SHAREPOINTWAC` <br/> |Oficina  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Plan 2 de Exchange Online  <br/> |
    
@@ -163,7 +163,7 @@ En este ejemplo se muestran los servicios disponibles en el plan de licencias li
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 5d0a24afb895afbce800b29b0f235c4a67e598f130de930c0e31b2909c077dcb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 668ca8e26371d80f068c2723357ce3ee407db03a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210997"
 ---
 # <a name="manage-information-barrier-policies"></a>Administrar directivas de barrera de información
 

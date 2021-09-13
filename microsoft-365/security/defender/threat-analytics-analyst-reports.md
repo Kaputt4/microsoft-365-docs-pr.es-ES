@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 03973595f68c56ac57f22d8d68c9f37f04fb6bb8
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211790"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Comprender el informe de analistas en análisis de amenazas en Microsoft 365 Defender
 
@@ -49,7 +49,7 @@ _Sección de informe de analista de un informe de análisis de amenazas_
 ## <a name="scan-the-analyst-report"></a>Examinar el informe de analistas 
 Cada sección del informe de analista está diseñada para proporcionar información que se puede usar. Aunque los informes varían, la mayoría de los informes incluyen las secciones descritas en la tabla siguiente.
 
-| Sección Informe | Descripción |
+| Sección Informe | Description |
 |--|--|
 | Resumen ejecutivo | Información general sobre la amenaza, incluso cuando se vio por primera vez, sus motivaciones, eventos notables, objetivos principales y distintas herramientas y técnicas. Puede usar esta información para evaluar aún más cómo priorizar la amenaza en el contexto de su industria, ubicación geográfica y red. |
 | Análisis | Información técnica sobre las amenazas, incluidos los detalles de un ataque y cómo los atacantes pueden usar una nueva técnica o superficie de ataque | 

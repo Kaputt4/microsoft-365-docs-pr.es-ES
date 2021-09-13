@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 97b690986a60b0913bf3c69b806caaa4ff091e9a0eae7b3f9dd4512325a3ee86
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 944342f9132212f7fd94d752ee300464571508f4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211160"
 ---
 # <a name="payment-information-for-sri-lanka"></a>Información de pago para Sri Lanka
 

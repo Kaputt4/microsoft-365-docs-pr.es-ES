@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ba3e607b54294a8aa61fd0a6c9c0d13e07f873035b0b98d336328b4c1e858bcf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 439884f33bee94ddddf8ddf183b4d02bfcedb09a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799267"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211820"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender de vista previa
 
@@ -74,13 +74,7 @@ Active la configuración de la experiencia de la versión preliminar para estar 
 
 Sabrá que tiene activada la versión preliminar de las características cuando vea que la casilla **Activar versión preliminar de las características** está seleccionada. 
 
-## <a name="preview-features"></a>Versión preliminar de las características
 
-Las siguientes características y mejoras están disponibles actualmente en la versión preliminar:
 
-- **[Ver informes por etiquetas de amenazas:](threat-analytics.md#view-reports-per-threat-tags)** las etiquetas de amenazas le ayudan a centrarse en categorías de amenazas específicas y revisar los informes más relevantes.
-- **[API de](../defender-endpoint/raw-data-export.md)** streaming: Microsoft 365 Defender permite transmitir todos los eventos disponibles a través de búsqueda avanzada a un centro de eventos o una cuenta de Almacenamiento de Azure.
-- **[Microsoft 365 Defender API:](api-overview.md)** las API de nivel superior Microsoft 365 Defender le permitirán automatizar flujos de trabajo basados en las tablas de búsqueda avanzadas y de incidentes compartidos. 
-- **[Tomar medidas en la búsqueda avanzada:](advanced-hunting-take-action.md)** contiene rápidamente amenazas o aborda los activos comprometidos que encuentras en la [búsqueda avanzada.](advanced-hunting-overview.md)
-- **[Referencia de esquema en el portal:](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** obtenga información sobre las tablas de esquema de búsqueda avanzada directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta referencia incluye tipos de eventos admitidos `ActionType` (valores) y consultas de ejemplo.
-- **[Función DeviceFromIP():](advanced-hunting-devicefromip-function.md)** obtenga información sobre los dispositivos a los que se ha asignado una dirección IP específica o direcciones en un intervalo de tiempo determinado.
+
+

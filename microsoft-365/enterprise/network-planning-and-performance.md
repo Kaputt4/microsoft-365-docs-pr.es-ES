@@ -19,16 +19,16 @@ ms.custom:
 - Adm_O365
 description: Este artículo le ayudará a planear los requisitos de ancho de banda de red para Microsoft 365 y ajustar y solucionar problemas de rendimiento.
 ms.openlocfilehash: b76bc55dc421591622de73fd84cd602711699f19
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570550"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210610"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Planeamiento de red y ajuste del rendimiento para Microsoft 365
 Antes de implementar por primera vez o migrar a Microsoft 365, puede usar la información de estos temas para calcular el ancho de banda que necesita y, a continuación, probar y comprobar que tiene suficiente ancho de banda para implementar o migrar a Microsoft 365. Para obtener información general, vea: [Network and migration planning for Microsoft 365](network-and-migration-planning.md).
   
-|Categoría |Description |Categoría |Description |
+|Categoría |Descripción |Categoría |Descripción |
 |:-----|:-----|:-----|:-----|
 |**Planeación de red** <br/> ![Red.](../media/5e9dcd06-601b-4b28-88dc-f524e7548794.png)           <br/> |¿Desea conexiones rápidas y páginas que se carguen rápidamente?  <br/> Lea [Obtener la mejor conectividad y rendimiento en Microsoft 365](https://aka.ms/o365perfprinciples).<br/>Lea [Microsoft 365 introducción a la conectividad de red para](microsoft-365-networking-overview.md) comprender los conceptos.<br/> |**Medir la red** <br/> ![Calculadora](../media/d690a132-4884-40eb-a918-526bb3dff3cc.png)           <br/> |Lea [Microsoft 365 optimización del rendimiento usando las líneas](performance-tuning-using-baselines-and-history.md) base y el historial de rendimiento y el plan de solución de problemas de rendimiento para [Microsoft 365](performance-troubleshooting-plan.md).  <br/> Use estas herramientas para [evaluar la red existente](network-and-migration-planning.md#calculators).  <br/> |
 |**Procedimientos recomendados** <br/> ![Procedimientos recomendados.](../media/2a659a5c-1007-47d3-a6c6-a19e018ab29b.png)           <br/> |[Procedimientos recomendados para planear la red y mejorar el rendimiento de](network-and-migration-planning.md#BestPractices)la migración para Microsoft 365 . ¿Quieres empezar a ayudar a los usuarios de inmediato? Consulte [Procedimientos recomendados para usar Office 365 en una red lenta](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166).  <br/> [Microsoft 365 principios de conectividad de](./microsoft-365-network-connectivity-principles.md) red le ayudarán a comprender las instrucciones más recientes para optimizar de forma segura Microsoft 365 conectividad de red.  <br/> |**Reference** <br/> ![Libro o diario](../media/56dff3c1-f605-48d8-811f-7d13ce639ecd.png)           <br/> |¿Quiere los detalles, como una lista de direcciones IP y puertos? Vea la [referencia de planeación de red Microsoft 365](network-and-migration-planning.md#NetReference).  <br/> |

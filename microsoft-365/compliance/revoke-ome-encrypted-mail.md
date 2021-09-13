@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Como administrador y como remitente de mensajes, puede revocar ciertos correos electrónicos cifrados con Cifrado de mensajes avanzado de Office 365.
-ms.openlocfilehash: 58a029dbbc2fef644e533ccb072bb8e0e8bb0e67e70584d1e93d956db4c9c2c4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795592"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210870"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Revocar el correo electrónico cifrado por cifrado de mensajes avanzado
 

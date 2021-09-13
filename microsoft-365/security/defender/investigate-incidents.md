@@ -26,11 +26,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: dd0b33ca6c2045a0f709e94e4c59f89b99b58bc7
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928787"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211887"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes en Microsoft 365 Defender
 
@@ -68,7 +68,7 @@ La **página Resumen le** ofrece una vista instantánea de los aspectos principa
 
 La información se organiza en estas secciones.
 
-| Sección | Descripción |
+| Sección | Description |
 |:-------|:-----|
 | Alertas y categorías | Una vista visual y numérica de lo avanzado que ha progresado el ataque en la cadena de eliminación. Al igual que con otros productos de seguridad de Microsoft, Microsoft 365 Defender se alinea con el marco de&[CK &trade; de MITRE ATT.](https://attack.mitre.org/) La escala de tiempo de alertas muestra el orden cronológico en el que se produjeron las alertas y, para cada una, su estado y nombre. |
 | Ámbito |  Muestra el número de dispositivos, usuarios y buzones afectados y enumera las entidades en orden de nivel de riesgo y prioridad de investigación. |

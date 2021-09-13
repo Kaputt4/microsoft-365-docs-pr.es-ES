@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la lista de inquilinos.
-ms.openlocfilehash: af76322553296d1d22bb003ddf943ae168656734
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 13481ecbaaf20c5886837e03f4a606531548145e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211730"
 ---
 # <a name="microsoft-365-lighthouse-tenant-list-overview"></a>Microsoft 365 Lighthouse de lista de inquilinos
 
@@ -40,11 +40,12 @@ En la tabla siguiente se muestran los diferentes mensajes de estado y su signifi
 
 | Mensaje de estado | Descripción |
 |--|--|
-| Activa | Se ha iniciado la incorporación y el flujo de datos. |
+| Activo | Se ha iniciado la incorporación y el flujo de datos. |
 | En proceso | Inquilino detectado, pero no totalmente incorporado. |
 | Ineligible, DAP | Se requiere la configuración de privilegios de administrador delegados (DAP). |
 | Ineligible, recuento de usuarios | El inquilino tiene más usuarios de los permitidos. |
 | Ineligible, licencia | El inquilino no tiene la licencia necesaria. |
+| Ineligible, tipo de contrato | Se requiere Proveedor de soluciones en la nube contrato de Proveedor de soluciones en la nube (CSP). |
 | Inactivo | El espacio empresarial ya no está activo. |
 
 Una vez inactivado un inquilino, no puede realizar acciones en el inquilino mientras Lighthouse completa el proceso de inactivación. La inactivación puede tardar hasta 48 horas en completarse.

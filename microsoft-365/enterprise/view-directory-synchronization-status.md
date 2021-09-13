@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: En este artículo, obtenga información sobre cómo comprobar el estado de la sincronización de directorios en Office 365.
 ms.openlocfilehash: 0fddffc667e4fc23b2c7663e70fb5e60c49814a2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355849"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210410"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Ver el estado de sincronización de directorios en Microsoft 365
 

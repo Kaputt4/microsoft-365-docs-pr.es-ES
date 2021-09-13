@@ -1,5 +1,5 @@
 ---
-title: Vínculos seguros
+title: Información Caja fuerte vínculos completos para Microsoft Defender para Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: overview
 f1_keywords:
 - "197503"
+ms.date: 09/08/2021
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -24,15 +25,15 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: En este artículo, los administradores pueden obtener información sobre la protección de vínculos de Caja fuerte en Defender for Office 365 para proteger su organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas.
+description: Obtenga información sobre Caja fuerte protección de vínculos en Defender for Office 365 para proteger una organización contra la suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte y vea los gráficos de los Caja fuerte links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a4382ad06d25bd1880fa7b8603fc315ae61f61f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 41520f2b731e5d76526393dafda6ce9be0fb290f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533104"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211597"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte Vínculos en Microsoft Defender para Office 365
 
@@ -45,24 +46,24 @@ ms.locfileid: "58533104"
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](defender-for-office-365.md). Si usa Outlook.com, Microsoft 365 Familia o Microsoft 365 Personal, y está buscando información sobre safelinks en Outlook, vea [Seguridad avanzada de Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Caja fuerte Los vínculos son una característica de [Defender para Office 365](defender-for-office-365.md) que proporciona análisis y reescritura de mensajes de correo electrónico entrantes en el flujo de correo, y comprobación con tiempo de clic de direcciones URL y vínculos en mensajes de correo electrónico y otras ubicaciones. Caja fuerte El examen de vínculos se produce además de la protección contra correo no deseado y [antimalware](anti-spam-and-anti-malware-protection.md) normal en los mensajes de correo electrónico entrantes Exchange Online Protection (EOP). Caja fuerte El examen de vínculos puede ayudar a proteger su organización de vínculos malintencionados que se usan en la suplantación de identidad (phishing) y otros ataques.
+Caja fuerte Los vínculos son una característica de [Defender para Office 365](defender-for-office-365.md) que proporciona análisis y reescritura de mensajes de correo electrónico entrantes en el flujo de correo, y comprobación con tiempo de clic de direcciones URL y vínculos en mensajes de correo electrónico y otras ubicaciones. Caja fuerte El examen de vínculos se produce además de la protección contra correo no deseado y [antimalware](anti-spam-and-anti-malware-protection.md) normal en los mensajes de correo electrónico entrantes Exchange Online Protection (EOP). El examen de vínculos seguros puede ayudar a proteger a su organización de vínculos malintencionados que se usan en la suplantación de identidad (phishing) y otros ataques.
 
-Caja fuerte La protección de vínculos está disponible en las siguientes ubicaciones:
+La protección de vínculos seguros está disponible en las siguientes ubicaciones:
 
-- **Mensajes de correo** electrónico: Caja fuerte protección de vínculos para vínculos en mensajes de correo electrónico está controlada por Caja fuerte de vínculos. No hay ninguna directiva Caja fuerte links predeterminada, por lo que para obtener la protección de los vínculos de Caja fuerte en los mensajes de correo electrónico, debe crear una o más directivas de vínculos de **Caja fuerte.** Para obtener instrucciones, vea [Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
+- **Mensajes de correo electrónico**: la protección de vínculos seguros para vínculos en mensajes de correo electrónico se controla mediante directivas de vínculos seguros. No hay ninguna directiva Caja fuerte links predeterminada, por lo que para obtener la protección de los vínculos de Caja fuerte en los mensajes de correo electrónico, debe crear una o más directivas de vínculos de **Caja fuerte.** Para obtener instrucciones, vea [Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
   Para obtener más información acerca de Caja fuerte de vínculos para mensajes de correo electrónico, vea la sección Caja fuerte [configuración](#safe-links-settings-for-email-messages) de vínculos para mensajes de correo electrónico más adelante en este artículo.
   
   > [!NOTE]
   > Caja fuerte Los vínculos no funcionan en carpetas públicas habilitadas para correo.
 
-- **Microsoft Teams:** la protección Caja fuerte vínculos para vínculos en conversaciones Teams, chats de grupo o desde canales también está controlada por las directivas Caja fuerte vínculos. No hay ninguna directiva Caja fuerte links predeterminada, por lo que para obtener la protección de los vínculos de Caja fuerte en **Teams,** debe crear una o más directivas de vínculos Caja fuerte .
+- **Microsoft Teams**: la protección de vínculos seguros para vínculos en conversaciones de Teams, chats de grupo o desde canales también se controla mediante directivas de vínculos seguros. No hay ninguna directiva Caja fuerte links predeterminada, por lo que para obtener la protección de los vínculos de Caja fuerte en **Teams,** debe crear una o más directivas de vínculos Caja fuerte .
 
   Para obtener más información sobre Caja fuerte de vínculos en Teams, vea la sección Caja fuerte [configuración](#safe-links-settings-for-microsoft-teams) de vínculos de Microsoft Teams para Microsoft Teams más adelante en este artículo.
 
-- **Office 365:** la protección Caja fuerte vínculos para aplicaciones Office 365 está disponible en aplicaciones de escritorio, móviles y web compatibles. Configurar **la** protección Caja fuerte vínculos para Office 365 aplicaciones en la  configuración global que están fuera de Caja fuerte de vínculos. Para obtener instrucciones, consulte [Configure global settings for Caja fuerte Links settings in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
+- **Aplicaciones de Office 365**: la protección de vínculos seguros para aplicaciones de Office 365 está disponible en aplicaciones de escritorio, móviles y web compatibles. Configurar **la** protección Caja fuerte vínculos para Office 365 aplicaciones en la  configuración global que están fuera de Caja fuerte de vínculos. Para obtener instrucciones, consulte [Configure global settings for Caja fuerte Links settings in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
-  Caja fuerte La protección de vínculos para Office 365 aplicaciones se aplica a todos los usuarios de la organización con licencia para Defender para Office 365, independientemente de si los usuarios se incluyen en directivas de vínculos de Caja fuerte activas o no.
+  Protección de vínculos seguros para las aplicaciones de Office 365 se aplica a todos los usuarios de la organización con licencia de Defender para Office 365, independientemente de si los usuarios están incluidos en las directivas activas de vínculos seguros o no.
 
   Para obtener más información acerca de Caja fuerte protección de vínculos en Office 365 aplicaciones, consulta la sección Caja fuerte [configuración](#safe-links-settings-for-office-365-apps) de vínculos de Office 365 aplicaciones más adelante en este artículo.
 
@@ -96,7 +97,7 @@ En la tabla siguiente se describen escenarios para vínculos de Caja fuerte en o
 
 ## <a name="safe-links-settings-for-email-messages"></a>Caja fuerte Configuración de vínculos para mensajes de correo electrónico
 
-Caja fuerte Los vínculos examinan el correo electrónico entrante en busca de hipervínculos malintencionados conocidos. Las direcciones URL escaneadas se reescritan con el prefijo de dirección URL estándar de Microsoft: `https://nam01.safelinks.protection.outlook.com` . Una vez reescrito el vínculo, se analiza para buscar contenido potencialmente malintencionado.
+Vínculos seguros examina el correo electrónico entrante en busca de hipervínculos malintencionados conocidos. Las direcciones URL escaneadas se reescritan con el prefijo de dirección URL estándar de Microsoft: `https://nam01.safelinks.protection.outlook.com` . Después de reescribir el vínculo, se analiza en busca de contenido potencialmente malintencionado.
 
 Después Caja fuerte los vínculos vuelve a escribir una dirección URL, la  dirección URL permanece reescrita incluso si el mensaje se reenvía manualmente o se responde a (tanto a destinatarios internos como externos). Los vínculos adicionales que se agregan al mensaje reenviado o contestado no se reescriben. Sin embargo, en  el caso del reenvío automático por las reglas de la Bandeja de entrada o el  reenvío SMTP, la dirección URL no se reescribirá en el mensaje destinado al destinatario final a menos que ese destinatario también esté protegido por vínculos de Caja fuerte o que la dirección URL ya se haya reescrito en una comunicación anterior. Las direcciones URL reescritas solo se aplican al correo electrónico HTML, ya que reescribir la dirección URL haría que las direcciones URL de texto enriquecido y sin formato no sean legibles, pero estas direcciones URL aún se examinan antes de la entrega. Los correos electrónicos de texto enriquecido y texto sin formato que contengan direcciones URL también se comprobarán mediante una llamada API del lado cliente a vínculos de Caja fuerte al hacer clic en Outlook para escritorio versión 16.0.12513 o posterior.
 
@@ -128,6 +129,8 @@ La configuración de las Caja fuerte de vínculos que se aplican a los mensajes 
 
   Para obtener más información acerca de los valores recomendados para la configuración de directivas estándar y estricta para las directivas Caja fuerte vínculos, vea Caja fuerte configuración de directiva [vínculos](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
+ - **No reescriba direcciones URL,** realice comprobaciones solo a través de la API SafeLinks: si esta configuración está habilitada, no se realiza ningún ajuste de dirección URL. Caja fuerte Los vínculos se llaman exclusivamente a través de API en el momento en que la dirección URL hace clic Outlook clientes que la admiten. El valor recomendado está deshabilitado.
+  
 - **Filtros de destinatarios:** debe especificar las condiciones de destinatario y las excepciones que determinan a quién se aplica la directiva. Puede usar estas propiedades para condiciones y excepciones:
   - **El destinatario es**
   - **El dominio de destinatario es**

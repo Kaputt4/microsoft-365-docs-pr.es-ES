@@ -15,13 +15,14 @@ ms.custom:
 - TLG
 - Ent_TLGs
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Configure la autenticación multifactor mediante mensajes de texto enviados a un teléfono inteligente en su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 92c60819c2e32661b4af9cfba76553c59b784519
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 1c04729c65df455a05e37fe8d0ec6477ba251627
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570730"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210727"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Autenticación multifactor para su Microsoft 365 entorno de prueba empresarial
 
@@ -58,7 +59,7 @@ Siga estos pasos para habilitar la autenticación multifactor para la cuenta Usu
   
 1. Abra una instancia privada independiente del explorador, vaya al Centro de administración de Microsoft 365 ( ) y, a continuación, [https://portal.microsoft.com](https://portal.microsoft.com) inicie sesión con su cuenta de administrador global.
     
-2. En la navegación izquierda, seleccione **Usuarios**  >  **usuarios activos.**
+2. En la navegación izquierda, seleccione **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
     
 3. En el panel Usuarios activos, seleccione **Autenticación multifactor**.
     
@@ -108,7 +109,7 @@ En esta fase, se habilita la autenticación multifactor para la cuenta de usuari
 
 A continuación, cree un nuevo grupo denominado MFAUsers y agregue la cuenta usuario 3 a él.
 
-1. En la **Centro de administración de Microsoft 365,** seleccione **Grupos** en la navegación izquierda y, a continuación, **seleccione Grupos**.
+1. En la **Centro de administración de Microsoft 365,** seleccione **Grupos** en la navegación izquierda y, a continuación, <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**seleccione Grupos**</a>.
 2. Seleccione **Agregar un grupo**.
 3. En el **panel Elegir un tipo de grupo,** seleccione **Seguridad** y, a continuación, **seleccione Siguiente**.
 4. En el **panel Configurar los conceptos** básicos, seleccione **Crear grupo** y, a continuación, **seleccione Cerrar**.
@@ -143,6 +144,6 @@ Explorar características de [identidad](m365-enterprise-test-lab-guides.md#iden
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

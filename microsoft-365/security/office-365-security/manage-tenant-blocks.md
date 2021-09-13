@@ -17,11 +17,11 @@ description: Los administradores pueden aprender a configurar bloques en la list
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 2dc45779f7e5656e2edfcb1ea89ef19f95cc3d2e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211637"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Agregar bloques a la lista de bloqueados y permitidos del espacio empresarial
 

@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: Obtenga más información sobre la lista de frases, las expresiones regulares y los tipos de explicación de proximidad en Microsoft SharePoint Syntex.
 ms.openlocfilehash: 405080575f48f439e7d978a8fc7ca00ecf956be0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210877"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Tipos de explicación en Microsoft SharePoint Syntex
 

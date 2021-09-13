@@ -16,11 +16,11 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: En este artículo, aprenderá a agregar ubicaciones de satélite y a configurar su espacio empresarial de Microsoft 365 Multi-Geo
 ms.openlocfilehash: c60e590f7eddc7f9e03c4754867600a39879cc49
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576025"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210660"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuración de inquilino de Microsoft 365 Multi-Geo
 

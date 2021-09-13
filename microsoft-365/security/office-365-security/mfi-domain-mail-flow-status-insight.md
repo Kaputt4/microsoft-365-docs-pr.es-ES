@@ -15,11 +15,11 @@ description: Los administradores pueden aprender a usar la información sobre el
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 9c0c0eed3cffaadd76f18b9b446ac14873712f6f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211627"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Información de estado del flujo de correo de dominio superior en el Centro de seguridad & cumplimiento
 
@@ -50,6 +50,6 @@ Puede hacer clic **en Ver más** para ver la misma información para más domini
 
 ![Los detalles se desván de la información de estado del flujo de correo de dominio superior.](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

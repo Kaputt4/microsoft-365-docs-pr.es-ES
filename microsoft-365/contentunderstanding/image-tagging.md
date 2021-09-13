@@ -6,6 +6,7 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.custom: admindeeplinkMAC
 search.appverid: ''
 ms.collection:
 - enabler-strategic
@@ -13,12 +14,12 @@ ms.collection:
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga más información sobre el etiquetado de imágenes en SharePoint Syntex
-ms.openlocfilehash: 62055f8cb6b01fcd285aa01bb5934963b13fae6b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2e0f3e9dea8ca7d640db906715a39448eb024b2b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552905"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210847"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>Etiquetado de imágenes en SharePoint Syntex
 
@@ -42,7 +43,7 @@ Después de [configurar SharePoint Syntex](set-up-content-understanding.md), pue
 
 Para activar o desactivar el etiquetado de imágenes
 
-1. En el Centro de administración de Microsoft 365, haga clic en **Configuración**.
+1. En el Centro de administración de Microsoft 365, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Configurar**</a>.
 
 2. En **Información de la organización**, haga clic en **Automatizar el contenido**.
 

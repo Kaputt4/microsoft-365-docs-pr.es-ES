@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 5f61b092ab8c8ce23694f566b7b11f4bca80b79e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573484"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211890"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>Ejemplo de un ataque de correo electrónico de suplantación de identidad
 
@@ -64,7 +64,7 @@ Otras acciones se pueden realizar en mensajes específicos seleccionando **Accio
 
 Consulta la [ruta de investigación de ataques basada](first-incident-path-identity.md) en identidades.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

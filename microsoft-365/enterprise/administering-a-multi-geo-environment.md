@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: Normal
 description: Los administradores pueden obtener información sobre cómo administrar SharePoint y OneDrive en un entorno multige geográfico.
 ms.openlocfilehash: 5089a63f4c4f3406c146188151a145cf4b6aa7f2
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400132"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210780"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administración de un entorno de Multi-Geo
 
