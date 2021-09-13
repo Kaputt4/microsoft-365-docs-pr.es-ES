@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo evitar que los invitados se agregó a un grupo específico
-ms.openlocfilehash: ad83ab0b0ec739691721627b09924e1e0ab8ee1d07513634606525f2371d0f6d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 83fb123a3512e767270cf69f6ff56813e27903d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213170"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedir que los invitados se agregó a un grupo Microsoft 365 grupo o Microsoft Teams grupo
 

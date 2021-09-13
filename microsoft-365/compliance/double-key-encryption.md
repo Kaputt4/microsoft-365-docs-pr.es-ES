@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: 1489671754f26d37abbc9bfbc84f59be26099c9b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212610"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Cifrado de clave doble para Microsoft 365
 

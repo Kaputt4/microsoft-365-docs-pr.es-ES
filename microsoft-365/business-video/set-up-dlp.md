@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo administrar la configuración de directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 1da9629aa5a04aab2875484b41f1867e2b36e20d66119a122827cc3eb6f7d873
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 04dbbcfd39186b8161fb497b72ddb070fbfb7471
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906808"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212797"
 ---
 # <a name="prevent-data-loss-with-dlp"></a>Evitar la pérdida de datos con DLP
 

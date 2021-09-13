@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 954fa4d9879e9654847f50ad15f8ff3c3a88caf4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573868"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213290"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corregir el primer incidente
 
@@ -95,7 +95,7 @@ Los libros de reproducción también se pueden crear durante [la revisión poste
 
 Obtenga información sobre cómo [realizar una revisión posterior al incidente de un incidente](first-incident-post.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

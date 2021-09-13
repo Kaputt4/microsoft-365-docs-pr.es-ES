@@ -14,11 +14,11 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrar Microsoft Teams clases con Canvas
 ms.openlocfilehash: 44ba24e5c8bd7107f9cba199ce290c10b31e0806
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212477"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Usar Microsoft Teams clases con Canvas
 

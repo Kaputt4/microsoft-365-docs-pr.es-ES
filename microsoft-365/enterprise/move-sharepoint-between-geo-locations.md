@@ -16,11 +16,11 @@ f1.keywords:
 description: Obtenga información sobre cómo mover un SharePoint a una ubicación geográfica diferente dentro de su entorno multige geográfico y comunicar las expectativas de los cambios a los usuarios.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 9c7ad267dcb32e055038e5186595db5776999263
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212507"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
@@ -219,7 +219,7 @@ Si se mueve un sitio con aplicaciones, debe volver a crear instancias de aplicac
 
 En la mayoría de los casos los flujos seguirán funcionando después de mover geográficamente el sitio de SharePoint. Se recomienda probarlos una vez completado el movimiento.
 
-### <a name="power-apps"></a>PowerApps
+### <a name="power-apps"></a>Power Apps
 
 Power Apps debe volver a crearse en la ubicación de destino.
 

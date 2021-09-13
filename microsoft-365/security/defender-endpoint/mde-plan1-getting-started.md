@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: 3af483db6b2cc9801a56d96147a0a4aed90e33ce
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823487"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213667"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Introducción al Plan 1 de Microsoft Defender para endpoints (versión preliminar)
 
@@ -27,12 +27,12 @@ ms.locfileid: "58823487"
 
 El portal de Microsoft 365 Defender ( ) le permite ver información sobre las amenazas detectadas, administrar las alertas e incidentes, tomar las medidas necesarias en las amenazas detectadas y administrar [https://security.microsoft.com](https://security.microsoft.com) dispositivos. El Microsoft 365 Defender es donde puede empezar a interactuar con las capacidades de protección contra amenazas que obtiene con Defender for Endpoint Plan 1 (versión preliminar). En las secciones siguientes se describe cómo empezar:
 
-- [El portal de Microsoft 365 Defender incluye:](#the-microsoft-365-defender-portal)
+- [El portal de Microsoft 365 Defender](#the-microsoft-365-defender-portal)
 - [Visualización y administración de incidentes & alertas](#view-and-manage-incidents--alerts)
 - [Administración de dispositivos](#manage-devices)
 - [Visualización de informes](#view-reports)
 
-## <a name="the-microsoft-365-defender-portal"></a>El portal de Microsoft 365 Defender incluye:
+## <a name="the-microsoft-365-defender-portal"></a>El portal de Microsoft 365 Defender
 
 El Microsoft 365 Defender web ( ) es donde verá alertas, administrará dispositivos [https://security.microsoft.com](https://security.microsoft.com) y verá informes. Cuando inicie sesión en el portal de Microsoft 365 Defender, empezará por la página principal, como se muestra en la siguiente imagen:
 
@@ -63,7 +63,7 @@ La barra de navegación de la parte izquierda de la pantalla le permite moverse 
 | **Alertas de & incidentes** | Se expande para mostrar **incidentes** y **alertas**. |
 | **Alertas de & incidentes**  >  **Incidentes** | Navega a la **lista Incidentes.** Los incidentes se crean cuando se desencadenan alertas o se detectan amenazas. De forma predeterminada, la lista Incidentes muestra los datos de los **últimos** 30 días, con el incidente más reciente enumerado primero. <br/><br/> Para obtener más información, vea [Incidents](view-incidents-queue.md). |
 | **Alertas de & incidentes**  >  **Alertas** | Navega a la lista **alertas** (también denominada cola **de alertas**). Las alertas se desencadenan cuando se detecta un archivo, proceso o comportamiento sospechoso o malintencionado. De forma predeterminada, la **lista de** alertas muestra los datos de los últimos 30 días, con la alerta más reciente en primer lugar. <br/><br/> Para obtener más información, vea [Alerts](alerts-queue.md). |
-| **Centro de acciones** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como estas: <br/>- Antivirus de Microsoft Defender encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender for Endpoint detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, vea [Centro de acciones](auto-investigation-action-center.md). |
+| **Centro de actividades** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como estas: <br/>- Antivirus de Microsoft Defender encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender for Endpoint detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, vea [Centro de acciones](auto-investigation-action-center.md). |
 | **Puntuación de seguridad** | Muestra una representación de la posición de seguridad de la organización junto con una lista de acciones de mejora y métricas. <br/><br/> Para obtener más información, consulte [Puntuación segura de Microsoft](../defender/microsoft-secure-score.md). |
 | **Learning central** | Navega a una lista de rutas de aprendizaje a las que puede acceder para obtener más información sobre Microsoft 365 de seguridad.  |
 | **Puntos de conexión**  >  **Búsqueda** | Navega a una página donde puedes buscar dispositivos específicos por nombre de dispositivo. En la lista de resultados, puede ver detalles, como el nivel de riesgo y el estado de mantenimiento, de un vistazo. |
@@ -167,7 +167,7 @@ Desplácese hacia abajo para ver todas las vistas del informe de protección web
 > [!TIP]
 > Para obtener más información, vea [Protección web](web-protection-overview.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Administrar Microsoft Defender para endpoint plan 1 (versión preliminar)](mde-p1-maintenance-operations.md)
 - [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md)

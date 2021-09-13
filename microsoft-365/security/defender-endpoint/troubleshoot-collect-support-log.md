@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
 ms.openlocfilehash: 347b999dd289f00e2493f2cf5d8c003e0dc24f1a
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213420"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Recopilar registros de soporte técnico en Microsoft Defender para endpoint mediante respuesta en directo
 
@@ -88,7 +88,7 @@ En este tema se proporcionan instrucciones sobre cómo ejecutar la herramienta m
 >   ```
 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 - [Información general del Analizador de clientes](overview-client-analyzer.md)
 - [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)
 - [Ejecutar el Analizador de clientes en Windows](run-analyzer-windows.md)

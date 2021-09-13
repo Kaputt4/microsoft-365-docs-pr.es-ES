@@ -21,11 +21,11 @@ description: Los administradores pueden obtener información sobre la suplantaci
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: b84671da05fcd3c476f19aa61a7325ac9df4c263
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563783"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213280"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Suplantación de información de inteligencia en EOP
 

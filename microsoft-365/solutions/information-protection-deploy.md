@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: Configure la protección de la información en Microsoft 365 para las regulaciones de privacidad de datos como RGPD y la Ley de privacidad del consumidor de California (CCPA), incluidos Microsoft Teams, SharePoint y correo electrónico.
 ms.openlocfilehash: 1cf58564938efafb0b711680cf7260222c514864
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213180"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Implementar la protección de la información para las normativas de privacidad de datos con Microsoft 365
 
@@ -34,7 +34,7 @@ Algunos ejemplos de los tipos de datos de Microsoft 365 incluyen sesiones de cha
 
 También se proporciona información adicional sobre el uso de Microsoft 365 de identidad, dispositivo y protección contra amenazas para sus necesidades de privacidad de datos.
 
-Vea este vídeo para obtener información general del proceso de implementación.
+Vea este vídeo para obtener información general del proceso.
 <br>
 <br>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NHCQ]

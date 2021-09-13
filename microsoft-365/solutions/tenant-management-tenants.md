@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: Implemente y administre una o varias Microsoft 365 inquilinos, con opciones para ubicaciones multige geográficas y en movimiento.
 ms.openlocfilehash: 5dee78835de1e3e64f52f653f52ea4f32dcf6547
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568449"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213120"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Paso 1. Su Microsoft 365 para inquilinos empresariales
 

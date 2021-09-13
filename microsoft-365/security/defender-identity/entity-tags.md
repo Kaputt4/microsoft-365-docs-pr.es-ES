@@ -8,11 +8,11 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
 ms.openlocfilehash: 7b09c12c1d4c519a47fc60057ab26741a7145469
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566691"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212007"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Etiquetas de entidad Defender for Identity en Microsoft 365 Defender
 
@@ -92,6 +92,6 @@ Defender for Identity considera que Exchange servidores como activos de alto val
 
     ![Selecciona dispositivo.](../../media/defender-identity/select-device.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Administrar alertas de seguridad de Defender for Identity](manage-security-alerts.md)

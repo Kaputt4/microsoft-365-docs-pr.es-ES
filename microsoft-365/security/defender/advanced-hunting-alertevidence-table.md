@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb5358e3751ab10fcad0f4a162fc3e43c0dba61427f710632732893413b6ea7e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5ecab217a6181096e4689d78fa2bdddc0a767d0d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833356"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211987"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -42,36 +42,36 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `AlertId` | cadena | Identificador único de alerta. |
-| `ServiceSource` | cadena | Producto o servicio que proporcionó la información de alerta |
-| `EntityType` | cadena | Tipo de objeto, como un archivo, un proceso, un dispositivo o un usuario |
-| `EvidenceRole` | cadena | Cómo la entidad está implicada en una alerta, lo que indica si está afectada o simplemente está relacionada |
-| `EvidenceDirection` | cadena | Indica si la entidad es el origen o el destino de una conexión de red |
+| `AlertId` | string | Identificador único de alerta. |
+| `ServiceSource` | string | Producto o servicio que proporcionó la información de alerta |
+| `EntityType` | string | Tipo de objeto, como un archivo, un proceso, un dispositivo o un usuario |
+| `EvidenceRole` | string | Cómo la entidad está implicada en una alerta, lo que indica si está afectada o simplemente está relacionada |
+| `EvidenceDirection` | string | Indica si la entidad es el origen o el destino de una conexión de red |
 | `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
 | `FolderPath` | cadena | Carpeta que contiene el archivo al que se aplicó la acción grabada |
 | `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo normalmente no se rellena: use la columna SHA1 cuando esté disponible. |
 | `FileSize` | Entero | Tamaño del archivo en bytes |
-| `ThreatFamily` | cadena | Familia de malware en la que el archivo o proceso sospechoso o malintencionado se ha clasificado en |
+| `ThreatFamily` | string | Familia de malware en la que el archivo o proceso sospechoso o malintencionado se ha clasificado en |
 | `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
 | `RemoteUrl` | cadena | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
 | `AccountName` | cadena | Nombre de usuario de la cuenta |
-| `AccountDomain` | cadena | Dominio de la cuenta |
-| `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
-| `AccountObjectId` | cadena | Identificador único de la cuenta en Azure Active Directory |
-| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
-| `DeviceId` | cadena | Identificador único del dispositivo en el servicio |
+| `AccountDomain` | string | Dominio de la cuenta |
+| `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
+| `AccountObjectId` | string | Identificador único de la cuenta en Azure Active Directory |
+| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
+| `DeviceId` | string | Identificador único del dispositivo en el servicio |
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
 | `LocalIP` | cadena | Dirección IP asignada al dispositivo local usado durante la comunicación |
 | `NetworkMessageId` | cadena | Identificador único de correo electrónico, generado por Office 365 |
 | `EmailSubject` | cadena | Asunto del correo electrónico. |
 | `ApplicationId` | cadena | Identificador único de la aplicación |
-| `Application` | cadena | Aplicación que realizó la acción grabada |
-| `ProcessCommandLine` | cadena | Línea de comandos usada para crear el nuevo proceso |
-| `AdditionalFields` | cadena | Información adicional sobre el evento en formato de matriz JSON |
-| `RegistryKey` |cadena | Clave del Registro a la que se aplicó la acción grabada |
-| `RegistryValueName` |cadena | Nombre del valor del Registro al que se aplicó la acción grabada |
-| `RegistryValueData` |cadena | Datos del valor del Registro al que se aplicó la acción grabada |
+| `Application` | string | Aplicación que realizó la acción grabada |
+| `ProcessCommandLine` | string | Línea de comandos usada para crear el nuevo proceso |
+| `AdditionalFields` | string | Información adicional sobre el evento en formato de matriz JSON |
+| `RegistryKey` |string | Clave del Registro a la que se aplicó la acción grabada |
+| `RegistryValueName` |string | Nombre del valor del Registro al que se aplicó la acción grabada |
+| `RegistryValueData` |string | Datos del valor del Registro al que se aplicó la acción grabada |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

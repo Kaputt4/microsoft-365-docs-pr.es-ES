@@ -15,11 +15,11 @@ ms.custom:
 - AdminSurgePortfolio
 description: Invitar a los usuarios a unirse Microsoft 365 Empresa Estándar organización
 ms.openlocfilehash: 8b344ee324063dd2694c04e25a4e8549b987ba2a
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866979"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213107"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>Invitar a los usuarios a Microsoft 365 Empresa Estándar (administrador)
 
@@ -32,7 +32,7 @@ Como administrador de una suscripción Microsoft 365 Empresa Estándar, puede in
 - Obtén ayuda en cualquier momento con soporte telefónico y web las 24 horas de Microsoft.
 
 > [!IMPORTANT]
-> La persona que se inscribe en Microsoft 365 empresa (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puedes agregar otras personas como administradores si quieres ayuda para administrar los servicios Microsoft 365 usuario. Consulta [Agregar un administrador](../../business-video/add-admin.md) para obtener más información.
+> La persona que se suscribe a Microsoft 365 para empresas (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puede agregar a otras personas como administradores si desea obtener ayuda para administrar los servicios de Microsoft 365. Consulte [Agregar un administrador](../../business-video/add-admin.md) para obtener más información.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -44,7 +44,7 @@ Asegúrese de que ya se ha registrado [en Microsoft 365 Empresa Estándar](signu
 
 2. Agregue los nombres de usuario y las direcciones de correo electrónico para las personas que desea invitar y elija **Enviar**. Se enviará un correo electrónico de invitación a todos los usuarios que haya seleccionado para agregar la información de su cuenta de usuario a Microsoft 365.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Haga un seguimiento con los usuarios y asegúrese de que recibió la invitación de correo electrónico que envió sobre cómo compartir Microsoft 365 Empresa Estándar suscripción.
 

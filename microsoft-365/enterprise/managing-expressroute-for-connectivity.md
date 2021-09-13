@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Obtenga información sobre cómo administrar ExpressRoute para Office 365, incluidas las áreas comunes para configurar el filtrado de prefijos, la seguridad y el cumplimiento.
-ms.openlocfilehash: bb6f2a4f0c6c8d2d00fc8f8dcf05e33399f4f8a1695f03402a53d07cf329dc5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e8de0763df7d592bc41802b1ead48df06891e6dc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213850"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Administración de la conectividad de ExpressRoute para Office 365
 

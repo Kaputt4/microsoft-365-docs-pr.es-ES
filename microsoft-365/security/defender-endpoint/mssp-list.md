@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: cdd1cbf3c8845e9d1e4a894c59b93f2a071cccf1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550151"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213490"
 ---
 # <a name="supported-managed-security-service-providers"></a>Proveedores de servicios de seguridad administrados compatibles
 
@@ -34,7 +34,7 @@ ms.locfileid: "58550151"
 
 Se puede obtener acceso a los siguientes proveedores de servicios de seguridad administrados a través del portal. 
 
-Logotipo |Nombre del partner   | Description 
+Logotipo |Nombre del partner   | Descripción 
 :---|:---|:---
 ![Imagen del logotipo de Accenture.](images/accenture-logo.png)|[Detección administrada de Accenture & respuesta (MDR)](https://go.microsoft.com/fwlink/?linkid=2164353) | Administrar, mantener y mejorar las operaciones de ciberseguridad global con capacidades extendidas que detectan, buscan proactivamente y responden a ataques cibernéticos avanzados en entornos de TI y OT ubicados en la nube y local.
 ![Imagen del logotipo de Aujas.](images/aujas-logo.png) | [Servicio MDE administrado de Aujas](https://go.microsoft.com/fwlink/?linkid=2162429) | La ciberseguridad de Aujas proporciona servicios de seguridad administrados 24*7 en todo el espectro empresarial, con Microsoft Defender para puntos de conexión a través de sus Centros de ciberdefensa.

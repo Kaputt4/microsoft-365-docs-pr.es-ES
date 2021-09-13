@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 1e1a598f0a87a4bb0bd7882d2b402c43b276a24f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192687"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Incorporación con Microsoft Endpoint Manager
 
@@ -59,7 +59,7 @@ Esta guía de incorporación le ayudará a seguir los siguientes pasos básicos 
 - [Creación de un perfil de configuración](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
   - En Microsoft Endpoint Manager, le guiaremos en la creación de una directiva independiente para cada funcionalidad.
 
-## <a name="resources"></a>Recursos
+## <a name="resources"></a>Resources
 
 Estos son los vínculos que necesitará para el resto del proceso:
 

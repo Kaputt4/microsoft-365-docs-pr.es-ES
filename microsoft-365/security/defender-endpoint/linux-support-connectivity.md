@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 59051f3f8b0249eeb0813090a521855ead7302da633476b5d3e932b283f25bcb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 02ed42cf2d95a2693949ee6dd9e7aeaae314e4bd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817818"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212187"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de conectividad en la nube para Microsoft Defender para Endpoint en Linux
 
@@ -121,6 +121,6 @@ mdatp connectivity test
 
 Si el problema persiste, póngase en contacto con el servicio de soporte al cliente.
 
-## <a name="resources"></a>Recursos
+## <a name="resources"></a>Resources
 
 - Para obtener más información acerca de cómo configurar el producto para que use un proxy estático, vea [Configure Microsoft Defender for Endpoint for static proxy discovery](linux-static-proxy-configuration.md).

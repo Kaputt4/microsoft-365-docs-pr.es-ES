@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 38c34198f20c55e1dc6dd2518f30764bf6d58493
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349781"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213370"
 ---
 # <a name="remove-app-restriction-api"></a>Quitar la API de restricción de aplicaciones
 
@@ -79,7 +79,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/unrestrictCodeEx
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

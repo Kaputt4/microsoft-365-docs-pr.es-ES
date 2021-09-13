@@ -10,12 +10,12 @@ ms.topic: article
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d20731d1f732ad76795cd26f862b2aff36409b6b3644a50391660517d171d1c3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fd46410877012d92e847ba7ff8b60cd5acceb1e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212380"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Instalar Microsoft Project o Microsoft Visio en Escritorio administrado de Microsoft dispositivos
 
@@ -41,6 +41,6 @@ Workplace-Office-Project_Install | Usuarios que necesitan Project
 Workplace-Office-Visio_Install | Usuarios que necesitan Visio
 
 ## <a name="communicate-changes"></a>Comunicar cambios
-Es importante que los administradores de TI sepan a sus usuarios cómo instalar Project y Visio. Esto incluye lo siguiente: 
+Es importante que los administradores de TI sepan a sus usuarios cómo instalar Project y Visio. Incluye lo siguiente: 
 - Notificar a los usuarios cuando estas aplicaciones están disponibles para ellos. 
 - Instrucciones sobre cómo instalar estas aplicaciones desde el Portal de empresa.

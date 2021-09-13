@@ -16,11 +16,11 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: ea06094121f9c6a654234da1cb6d7757db5c78dd
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212290"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurar exclusiones para archivos abiertos por procesos
 

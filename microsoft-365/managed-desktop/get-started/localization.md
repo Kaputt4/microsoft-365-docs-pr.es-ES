@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a1a042047e3203d8c401f5435e87bafa20aa952ca9e32a051b47ea3a038b7aad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800695"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212400"
 ---
 # <a name="localize-the-user-experience"></a>Localizar la experiencia del usuario
 
@@ -41,7 +41,7 @@ Durante el proceso de completar la configuración, los usuarios pueden seleccion
 
 ## <a name="after-completing-setup"></a>Después de completar la configuración
 
-Los usuarios pueden seleccionar el idioma que prefieran para Windows 10 y Aplicaciones Microsoft 365 para Enterprise en cualquier momento después de que se complete el proceso de instalación. En particular:
+Los usuarios pueden seleccionar el idioma que prefieran para Windows 10 y Aplicaciones Microsoft 365 para Enterprise en cualquier momento después de que se complete el proceso de instalación. En concreto:
 
 - Windows 10 de idioma:
     - Idioma para mostrar

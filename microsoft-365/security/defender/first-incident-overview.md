@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 4176b718105643b59f23024c1a70cd8fe220eea9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568821"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211897"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>Introducción a la respuesta a su primer incidente
 
@@ -56,7 +56,7 @@ Los incidentes en Microsoft 365 Defender son los puntos de partida lógicos para
 
 Asegúrese de que su organización y Microsoft 365 inquilino esté [preparado para el tratamiento de incidentes.](first-incident-prepare.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Instrucciones de respuesta a incidentes para Microsoft 365 Defender:
 

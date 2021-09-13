@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 9a9d33d123c1b308d31c80663d1a8fc373e955d53e92d3680d39dc8b1d930d00
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213417"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros
 
@@ -51,7 +51,7 @@ Este problema puede manifestarse en forma de varios IDs de eventos diferentes, t
 
 Id. de evento|Nombre de registro|Descripción|Origen
 ---|---|---|---
-15|Aplicación|Se Windows Defender el estado correctamente para SECURITY_PRODUCT_STATE_OFF.|Centro de seguridad
+15 |Aplicación|Se Windows Defender el estado correctamente para SECURITY_PRODUCT_STATE_OFF.|Centro de seguridad
 5007|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender La configuración ha cambiado.  Si se trata de un evento inesperado, debes revisar la configuración, ya que puede ser el resultado de malware. <p> **Valor antiguo:** Default\IsServiceRunning = 0x0 p> **Nuevo valor:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender está deshabilitado el examen de spyware y otro software potencialmente no deseado.|Windows Defender
 
@@ -88,7 +88,7 @@ Esto generará un informe ubicado en *./gpresult.html*. Abra este archivo y es p
 
 En el informe GPResults, bajo el título *Windows Components/Antivirus de Windows Defender*, puede ver algo como la siguiente entrada, que indica que Antivirus de Microsoft Defender está desactivado.
 
-Directiva|Configuración|GPO ganador
+Directiva|Setting|GPO ganador
 ---|---|---
 Desactivar Antivirus de Windows Defender|Habilitado|Win10-Workstations
 
@@ -101,7 +101,7 @@ DisableAntiSpyware|-
 GPO ganador|Win10-Workstations
 Resultado: Correcto|
 **General**|
-Action|Actualizar
+Acción|Actualizar
 **Propiedades**|
 Subárbol|HKEY_LOCAL_MACHINE
 Ruta de acceso clave|SOFTWARE\Policies\Microsoft\Windows Defender

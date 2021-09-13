@@ -1,5 +1,5 @@
 ---
-title: Migrar Exchange Online de prevención de pérdida de datos al Centro de cumplimiento (versión preliminar)
+title: Migrar directivas de prevención de pérdida de datos de Exchange Online al Centro de cumplimiento (versión preliminar)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo planear y migrar las directivas de prevención Exchange de pérdida de datos en línea a Microsoft 365 DLP.
 ms.openlocfilehash: 1bc3281e66d4a1ae08fc20630e8b6d86fcbb77e1
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58865103"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192984"
 ---
-# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center-preview"></a>Migrar Exchange Online de prevención de pérdida de datos al Centro de cumplimiento (versión preliminar)
+# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center-preview"></a>Migrar directivas de prevención de pérdida de datos de Exchange Online al Centro de cumplimiento (versión preliminar)
 
 [Exchange Online directivas de prevención de pérdida de datos (DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) están en desuso. [La funcionalidad DLP mucho](dlp-learn-about-dlp.md)más enriquec Exchange Online DLP se ofrece en el centro de [Microsoft 365 cumplimiento.](https://compliance.microsoft.com/datalossprevention?viewid=policies) Puede usar el Asistente para la migración de directivas DLP para ayudarle a llevar las directivas de DLP de Exchange Online al Centro de cumplimiento donde las administrará.
 

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 7ffd136bd770369248b2f0735deb42e62f372632
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213320"
 ---
 # <a name="update-machine"></a>Actualizar máquina 
 
@@ -84,7 +84,7 @@ Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mante
 
 Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-Propiedad|Tipo|Descripción
+Propiedad|Tipo|Description
 :---|:---|:---
 machineTags|Colección string|Conjunto de [etiquetas de](machine.md) máquina.
 deviceValue|Enumeración que admite valores null|El [valor del dispositivo](tvm-assign-device-value.md). Los valores posibles son: 'Normal', 'Low' y 'High'.

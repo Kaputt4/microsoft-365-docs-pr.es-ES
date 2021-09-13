@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4daba7a19af2b1653bd5158033b10b82935583da9e5977d3de1e31f3ef28cc71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7fb73cde3afa385b0d73b35610415cacd1cad81
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902778"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213510"
 ---
 # <a name="microsoft-defender-security-center"></a>Centro de seguridad de Microsoft Defender
 
@@ -41,12 +41,12 @@ Centro de seguridad de Microsoft Defender es el portal donde puede obtener acces
 
 Tema | Descripción
 :---|:---
-Introducción  |  Obtenga información sobre los requisitos mínimos, valide las licencias y la configuración completa, conozca las características de vista previa, comprenda el almacenamiento y la privacidad de los datos y cómo asignar acceso de usuario al portal.
+Comenzar  |  Obtenga información sobre los requisitos mínimos, valide las licencias y la configuración completa, conozca las características de vista previa, comprenda el almacenamiento y la privacidad de los datos y cómo asignar acceso de usuario al portal.
 [Incorporar dispositivos](onboard-configure.md) | Obtenga información sobre la incorporación de clientes, servidores y dispositivos que no Windows cliente. Obtenga información sobre cómo ejecutar una prueba de detección, configurar la configuración de proxy y conectividad a Internet y cómo solucionar posibles problemas de incorporación.
 [Comprender el portal](use.md) | Comprenda las operaciones de seguridad, puntuación segura y paneles de análisis de amenazas, así como cómo navegar por el portal.
 Investigar y corregir amenazas | Investigar alertas, dispositivos y realizar acciones de respuesta para corregir amenazas.
 Compatibilidad con API y SIEM | Use las API admitidas para extraer y crear alertas personalizadas o automatizar flujos de trabajo. Use las herramientas SIEM compatibles para extraer alertas de Centro de seguridad de Microsoft Defender.
-Generación de informes | Cree y cree informes Power BI con Microsoft Defender para datos de punto de conexión.
+Creación de informes | Cree y cree informes Power BI con Microsoft Defender para datos de punto de conexión.
 Comprobar el estado del servicio y el estado del sensor | Compruebe que el servicio se está ejecutando y compruebe el estado del sensor en los dispositivos.
 [Configurar Centro de seguridad de Microsoft Defender configuración](preferences-setup.md) | Configure la configuración general, active la experiencia de vista previa, las notificaciones y habilite otras características.
 [Acceder al Centro de comunidad de Microsoft Defender para punto de conexión](community.md) | Acceda al Centro de Community de Microsoft Defender para endpoints para aprender, colaborar y compartir experiencias sobre el producto.

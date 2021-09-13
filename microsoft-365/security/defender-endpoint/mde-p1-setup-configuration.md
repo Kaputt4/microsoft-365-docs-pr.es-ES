@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: e5f62a59b66db83b5c9d191d2f7496b280abbc18
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58824098"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213670"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Configurar y configurar Microsoft Defender para endpoint plan 1 (versión preliminar)
 
@@ -53,7 +53,7 @@ En la tabla siguiente se enumeran los requisitos básicos de Defender para el pl
 
 | Requisito | Descripción |
 |:---|:---|
-| Requisitos de licencias | Defender for Endpoint Plan 1 (versión preliminar) <br/><br/>*Si tiene Microsoft 365 E3, puede unirse al programa de vista previa.* |
+| Requisitos de licencias | Plan 1 de Defender para punto de conexión (versión preliminar) <br/><br/>*Si tiene Microsoft 365 E3, puede unirse al programa de vista previa.* |
 | Requisitos de los exploradores | Microsoft Edge <br/> Versión 11 de Internet Explorer <br/> Google Chrome |
 | Sistemas operativos | Windows 10, versión 1709 o posterior <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina) o 10.14.6 (Mojave) <br/>iOS <br/>Sistema operativo Android  |
 | Datacenter | Una de las siguientes ubicaciones de centro de datos: <br/>- Unión Europea <br/>- Reino Unido <br/>- Estados Unidos |
@@ -402,7 +402,7 @@ Para ayudarle con la planeación de la implementación de WDAC, consulte los sig
 
 - [Windows Defender Implementación de Control de aplicaciones en diferentes escenarios: tipos de dispositivos](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ha pasado por el proceso de configuración y configuración, el siguiente paso es empezar a usar Defender para endpoint. 
 

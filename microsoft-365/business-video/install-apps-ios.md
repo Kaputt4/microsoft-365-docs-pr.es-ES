@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén información sobre cómo instalar Office aplicaciones en dispositivos iOS.
-ms.openlocfilehash: 4f5bdf92f2c221509a8e36f97531bb42e928e38553b4fb0cae6190bea18f5ed2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0cb7cae3a4569d83a1b2e6b27ca42de2142f30e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821076"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191857"
 ---
 # <a name="install-outlook-and-office-apps-on-ios-devices"></a>Instalar Outlook y Office aplicaciones en dispositivos iOS
 

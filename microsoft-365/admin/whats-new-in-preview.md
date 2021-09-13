@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: The Centro de administración de Microsoft 365- learn about the features that were added this month.
-ms.openlocfilehash: aa94686b728eabd6da3577f0f44856039ab8288c
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.openlocfilehash: dbc907ac66bcc1741ceb92602b7b3062de043f6b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212910"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 
@@ -55,7 +55,7 @@ Y si quiere saber las novedades de otros servicios en la nube de Microsoft:
 
 ### <a name="microsoft-365-admin-center-search"></a>Centro de administración de Microsoft 365 búsqueda
 
-Ahora puede buscar los IDs de incidentes en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centro de administración de Microsoft 365</a>. Puede obtener información sobre incidentes actuales a través de redes sociales, publicaciones del sector o de otros administradores. Ahora puede ir al Centro de administración para buscar más detalles sobre el incidente y para comprender el impacto para su organización. Solo tiene que buscar el identificador de incidente en el Centro de administración.
+Ahora puede buscar los IDs de incidentes en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2091030" target="_blank">Centro de administración de Microsoft 365</a>. Puede obtener información sobre incidentes actuales a través de redes sociales, publicaciones del sector o de otros administradores. Ahora puede ir al Centro de administración para buscar más detalles sobre el incidente y para comprender el impacto para su organización. Solo tiene que buscar el identificador de incidente en el Centro de administración.
 
 :::image type="content" source="../media/incident-id.png" alt-text="Captura de pantalla: buscar el identificador de incidente en el Centro de administración":::
 

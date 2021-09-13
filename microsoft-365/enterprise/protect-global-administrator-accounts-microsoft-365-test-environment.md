@@ -16,11 +16,11 @@ ms.custom:
 - Ent_TLGs
 description: Siga estos pasos para proteger las cuentas de administrador global en su Microsoft 365 entorno de prueba empresarial.
 ms.openlocfilehash: d9de3cb42a7473167c5e8c6dda5489aca2241909
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212490"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Proteger cuentas de administrador global en su Microsoft 365 entorno de prueba empresarial
 
@@ -107,6 +107,6 @@ Explorar características de [identidad](m365-enterprise-test-lab-guides.md#iden
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

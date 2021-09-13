@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7160a05111ffa9085a2d7b146e6258ba6c4fd2388a1c8898bbc480c16195c7ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d3ebd301d6c79bf5286d9293e04e4073b99d1e35
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833320"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211970"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -42,8 +42,8 @@ Esta función devuelve una tabla con las siguientes columnas:
 | Columna | Tipo de datos | Descripción |
 |------------|-------------|-------------|
 | `Timestamp` | datetime | Última hora en la que se observó el dispositivo con la dirección IP |
-| `IPAddress` | cadena | Dirección IP usada por el dispositivo |
-| `IPType` | cadena | Indica si la dirección IP es una dirección pública o privada |
+| `IPAddress` | string | Dirección IP usada por el dispositivo |
+| `IPType` | string | Indica si la dirección IP es una dirección pública o privada |
 | `NetworkAdapterType` | Entero | Tipo de adaptador de red usado por el dispositivo al que se ha asignado la dirección IP. Para obtener los valores posibles, consulte [esta enumeración](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
 | `ConnectedNetworks` | Entero | Redes a las que está conectado el adaptador con la dirección IP asignada. Cada matriz JSON contiene el nombre de red, la categoría (público, privado o dominio), una descripción y una marca que indica si está conectada públicamente a Internet |
 

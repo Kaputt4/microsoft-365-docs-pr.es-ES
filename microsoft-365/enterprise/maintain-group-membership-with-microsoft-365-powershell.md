@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Obtenga información sobre cómo usar PowerShell para mantener la pertenencia a Microsoft 365 grupos.
 ms.openlocfilehash: 0a66db0748c50d296ff9d26969ae8b3caa7f310f
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212570"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>Mantener la pertenencia a grupos de seguridad con PowerShell
 
@@ -151,7 +151,7 @@ $groupName="<display name of the group contains the member group>"
 Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID -GroupMemberType Group
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

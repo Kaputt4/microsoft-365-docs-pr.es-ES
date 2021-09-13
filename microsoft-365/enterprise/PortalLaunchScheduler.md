@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo iniciar el portal con el programador de inicio del portal
-ms.openlocfilehash: 4bdc9a1d60423a7541c2f5c26cc544df59a271e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 459d2a4ddaaa2f6a7d1c8095ee93baab4e8248ce
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193516"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Inicie el portal con el programador de inicio SharePoint portal de inicio
 
@@ -135,17 +135,17 @@ Si tiene previsto iniciar un portal con más de 100.000 usuarios, envíe una sol
 
 **Siga estos pasos:**
 
-1. Ve a <https://admin.microsoft.com>.
-2. Asegúrese de que está usando la nueva vista previa del centro de administración
-3. En el panel de navegación izquierdo, seleccione **Soporte** técnico y, a continuación, **nueva solicitud de servicio**
+1. Como administrador, haga clic en el siguiente vínculo que rellenará una consulta de ayuda en el Centro de administración. 
 
-   Se activará el panel **¿Necesita ayuda?**, en la parte derecha de la pantalla.
+[Iniciar SharePoint portal con 100.000 usuarios](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
-4. Para **describir brevemente el problema,** escriba "Iniciar SharePoint portal con 100.000 usuarios"</br>
-5. A continuación, seleccione **Ponerse en contacto con el soporte técnico**
-6. En **Descripción,** escriba "Iniciar SharePoint portal con 100 mil usuarios"
-7. Rellene la información restante y, a continuación, seleccione **Póngase en contacto conmigo**
-8. Una vez que se haya creado el vale, asegúrese de que proporciona al agente de soporte técnico la siguiente información:
+2. En la parte inferior del panel, seleccione **Póngase en** contacto con el soporte técnico y, a continuación, seleccione Nueva solicitud de **servicio**. 
+
+3. En **Descripción,** escriba "Iniciar SharePoint Portal con 100k usuarios". 
+
+4. Rellene el resto de la información y seleccione la **opción de contacto**.
+
+5. Una vez que se haya creado el vale, asegúrese de que proporciona al agente de soporte técnico la siguiente información:
    - Url del portal
    - Número de usuarios esperados
    - Programación de inicio estimada

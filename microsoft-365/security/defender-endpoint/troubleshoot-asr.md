@@ -18,11 +18,11 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.openlocfilehash: 0833a616f1b6052519e92a5e46c8f36f01c80818
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863475"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213470"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Solucionar problemas de reglas de reducción de superficie de ataque
 

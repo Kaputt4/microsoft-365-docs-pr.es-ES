@@ -17,11 +17,11 @@ ms.custom:
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Administración de amenazas.
 ms.openlocfilehash: f9ed274b295b40f9784a193a02dad925462a6e9e
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212480"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse Introducción a la página de administración de amenazas 
 
@@ -59,7 +59,7 @@ En la tabla siguiente se enumeran los distintos estados de amenaza y su definici
 
 | Estado de la amenaza | Definición |
 |--|--|
-| Activa | La amenaza está activa en el dispositivo. |
+| Activo | La amenaza está activa en el dispositivo. |
 | Sin estado | El estado de la amenaza no está disponible. Ejecuta un examen completo en el dispositivo para que Antivirus de Microsoft Defender vuelva a detectar la amenaza. |
 | Error en la acción | El dispositivo no está en riesgo. Se ha fallado una acción, pero se ha detenido una amenaza potencial y no está activa en el dispositivo. Ejecuta un examen completo en el dispositivo. |
 | Pasos manuales necesarios | La amenaza se ha detenido, pero requiere un paso manual para completarse, como un examen completo o un reinicio del dispositivo. |

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo definir y administrar alertas para directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 75483989e18ab519aae7d8f5a0cd257b31c6aad33981b1d0ab6b7acda4293585
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee04f6080edcde86dc39c7f4aa43130223fee8bf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796136"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193014"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configurar y ver alertas para las directivas de prevención de pérdida de datos
 

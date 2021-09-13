@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
 ms.openlocfilehash: 7d2c18c080f6f8fc313f17a5e2820b8a8b8a69fa
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568353"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212357"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Comprobar el estado del sensor en Microsoft Defender para endpoint
 
@@ -62,7 +62,7 @@ También puede descargar toda la lista en formato CSV mediante la **característ
 
 Puedes ver los detalles del dispositivo al hacer clic en un dispositivo mal configurado o inactivo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Corregir sensores incorrectos en Defender for Endpoint](fix-unhealthy-sensors.md)
 - [Información general del Analizador de clientes](overview-client-analyzer.md)

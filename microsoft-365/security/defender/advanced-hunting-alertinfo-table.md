@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ffb6e60652a8c4dced7e1fc04a55f4f2afab7ca8e54e93edb0ac976bd0641210
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 69c9201dbc3458cd4ad09a72f2ea0d7ea3bb2d2a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833308"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59211980"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
@@ -44,13 +44,13 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `AlertId` | cadena | Identificador único de alerta. |
+| `AlertId` | string | Identificador único de alerta. |
 | `Title` | cadena | Título de la alerta. |
 | `Category` | cadena | Tipo de indicador de amenazas o actividad de vulneración identificada por la alerta |
 | `Severity` | cadena | El indicador de amenazas indica el posible impacto (alto, medio o bajo) de las actividades de vulneración identificadas por la alerta. |
 | `ServiceSource` | cadena | Producto o servicio que proporcionó la información de alerta |
-| `DetectionSource` | cadena | Tecnología de detección o sensor que identificó el componente o actividad notables |
-| `AttackTechniques` | cadena | MITRE ATT&técnicas de CK asociadas con la actividad que desencadenó la alerta |
+| `DetectionSource` | string | Tecnología de detección o sensor que identificó el componente o actividad notables |
+| `AttackTechniques` | string | MITRE ATT&técnicas de CK asociadas con la actividad que desencadenó la alerta |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

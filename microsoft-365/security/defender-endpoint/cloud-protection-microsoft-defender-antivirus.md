@@ -1,5 +1,5 @@
 ---
-title: Protección y protección en la nube Antivirus de Microsoft Defender
+title: Antivirus de Microsoft Defender y protección en la nube
 description: Obtenga información sobre la protección en la nube y Antivirus de Microsoft Defender
 keywords: Antivirus de Microsoft Defender, tecnologías de última generación, av de última generación, aprendizaje automático, antimalware, seguridad, defender, nube, protección en la nube
 search.product: eADQiWindows 10XVcnh
@@ -16,13 +16,13 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/26/2021
 ms.openlocfilehash: 661e368d76fcdc7a3a62523aa0c92c57790bed60
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862766"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213790"
 ---
-# <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Protección y protección en la nube Antivirus de Microsoft Defender
+# <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Antivirus de Microsoft Defender y protección en la nube
 
 **Se aplica a:**
 
@@ -62,7 +62,7 @@ La protección en la nube está habilitada de forma predeterminada. Sin embargo,
 
 Si su suscripción incluye Windows 10 E5, puede aprovechar las actualizaciones de inteligencia dinámica de emergencia, que proporcionan protección casi en tiempo real frente a amenazas emergentes. Al activar la protección en la nube, las correcciones para problemas de malware se pueden entregar a través de la nube en cuestión de minutos, en lugar de esperar a la siguiente actualización. Consulte Configure Antivirus de Microsoft Defender para recibir automáticamente nuevas actualizaciones de protección [basadas en informes de nuestro servicio en la nube.](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que tiene una introducción a la protección en la nube Antivirus de Microsoft Defender, estos son algunos pasos siguientes:
 

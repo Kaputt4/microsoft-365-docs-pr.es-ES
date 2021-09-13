@@ -15,11 +15,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: ab2e2e2d1ab0b2ac35a6fd99efe9ef68ea477b44
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823471"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212277"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-preview-and-plan-2"></a>Plan 1 (versión preliminar) y Plan 2 de Microsoft Defender para Endpoint Plan 1 (versión preliminar)
 
@@ -41,7 +41,7 @@ En la tabla siguiente se describe lo que se incluye en cada plan en un nivel alt
 > [!IMPORTANT]
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. Este contenido incluye vínculos a otros artículos que podrían describir algunas características que no se incluyen en Defender for Endpoint Plan 1 (versión preliminar).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtener una introducción al Plan 1 de Microsoft Defender para endpoints (versión preliminar)](defender-endpoint-plan-1.md)
 - [Configurar y configurar Defender para endpoint plan 1 (versión preliminar)](mde-p1-setup-configuration.md)

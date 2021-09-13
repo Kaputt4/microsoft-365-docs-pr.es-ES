@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante Microsoft 365 y herramientas de prevención de pérdida de datos y haga un recorrido por el ciclo de vida de DLP.
 ms.openlocfilehash: b1a310a5ea9eea37930dbbc7ea84a8a48577af7e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574236"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192994"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -90,7 +90,7 @@ Puede aplicar directivas DLP a datos en reposo, datos en uso y datos en movimien
 - Cuentas de OneDrive
 - Mensajes de canales y chats de Teams
 - Microsoft Cloud App Security
-- Dispositivos Windows 10
+- Dispositivos con Windows 10
 - Repositorios locales
 
 Cada uno tiene requisitos previos diferentes. Los elementos confidenciales de algunas ubicaciones, como Exchange en línea, se pueden traer bajo el paraguas DLP simplemente configurando una directiva que se aplique a ellos. Otros, como los repositorios de archivos locales, requieren una implementación del escáner de Azure Information Protection (AIP). Deberá preparar el entorno, redactar directivas de código y probarlas exhaustivamente antes de activar cualquier acción de bloqueo.
@@ -184,7 +184,7 @@ DLP informa de una gran cantidad de información en Microsoft 365 de supervisió
 Cuando DLP realiza una acción en un elemento confidencial, puede recibir una notificación de esa acción a través de una alerta configurable. En lugar de que estas alertas se apilen en un buzón de correo para que las haga, el Centro de cumplimiento las pone a disposición en el Panel de administración de alertas [DLP.](dlp-configure-view-alerts-policies.md) Use el panel de alertas DLP para configurar alertas, revisarlas, analizarlas y realizar un seguimiento de la resolución de alertas DLP. Este es un ejemplo de alertas generadas por coincidencias de directiva y actividades desde Windows 10 dispositivos.
 
 > [!div class="mx-imgBorder"]
-> ![Información de alerta.](../media/Alert-info-1.png)
+> ![Información de la alerta.](../media/Alert-info-1.png)
 
 También puede ver los detalles del evento asociado con metadatos enriquecidos en el mismo panel
 

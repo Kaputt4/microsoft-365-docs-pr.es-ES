@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: Si necesita hacer preguntas a los clientes cuando reserven una cita con usted en línea, puede agregar preguntas personalizadas y necesarias a la página de reserva.
 ms.openlocfilehash: 496d395677d272c436504bfe43b3c42833e3a73e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571608"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212880"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>Agregar preguntas personalizadas y requeridas a la página de reserva
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo unirse a un equipo como invitado en Microsoft Teams.
-ms.openlocfilehash: 2c14f501cb58f625c4139ab626db5667f8faa7765839dcc975aa7d38fb8ef5df
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b551a681680f38f9f6c540cf5ea2b5f8a45fab5b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867228"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191827"
 ---
 # <a name="join-a-team-as-a-guest"></a>Unirse a un equipo como invitado
 

@@ -6,15 +6,16 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
+ms.custom: admindeeplinkMAC
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Obtenga información sobre cómo obtener acceso a Microsoft Bookings en Microsoft 365.
-ms.openlocfilehash: cc0352166bf7cd20cfa10542d57da9fbd5b160f7
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: a5c5e0bbac10352d3e526bbde88db66e6a253e28
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212877"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Activa o desactiva Microsoft Bookings
 
@@ -27,7 +28,7 @@ Las reservas pueden estar activadas o desactivadas para toda la organización o 
 
 1. Inicie sesión en el Centro de administración de Microsoft 365 como administrador global.
 
-2. En el Centro de administración, vaya  **a Configuración**   \> **Org Configuración** y seleccione **Bookings**.
+2. En el Centro de administración, vaya a  **Configuración**   \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**configuración de la organización**</a>.
 
 3. Active la casilla **Permitir que su organización use Bookings** para habilitar o deshabilitar Bookings para su organización.
 
@@ -48,7 +49,7 @@ Para activar o desactivar Bookings para su organización con el cmdlet de PowerS
 
 Puedes deshabilitar Bookings para usuarios individuales.
 
-1. Vaya a la Centro de administración de Microsoft 365 y, a continuación, **seleccione Usuarios** \> **usuarios activos**.
+1. Vaya a la Centro de administración de Microsoft 365 y, a continuación, **seleccione Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos**</a>.
 
 1. Seleccione el usuario deseado y, a continuación, **seleccione Licencias y aplicaciones.**
 
@@ -56,13 +57,13 @@ Puedes deshabilitar Bookings para usuarios individuales.
 
 ## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>Requerir aprobaciones de personal antes de compartir información de disponibilidad
 
-Los administradores pueden exigir a los empleados de su organización que opten por participar antes de compartir su información de disponibilidad a través de Bookings y antes de poder reservar a través de una página de reserva. Esta configuración está disponible en el Centro de administración de Microsoft 365 en **Configuración** \> **Configuración** \> **Bookings**.
+Los administradores pueden exigir a los empleados de su organización que opten por participar antes de compartir su información de disponibilidad a través de Bookings y antes de poder reservar a través de una página de reserva. Esta configuración está disponible en el Centro de administración de Microsoft 365 en **Configuración** configuración de la organización \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"></a> \> **bookings**.
 
 Cuando esta configuración está habilitada, los empleados agregados como personal en los calendarios de reserva encontrarán un vínculo Aprobar o rechazar en la notificación de correo electrónico que reciben.
 
 ## <a name="block-social-sharing-options"></a>Bloquear opciones de uso compartido social
 
-Los administradores pueden controlar cómo se comparten las páginas de reserva en las redes sociales. Esta configuración está disponible en el Centro de administración de Microsoft 365 en **Configuración** \> **Configuración** \> **Bookings**.
+Los administradores pueden controlar cómo se comparten las páginas de reserva en las redes sociales. Esta configuración está disponible en el Centro de administración de Microsoft 365 en **Configuración** configuración de la organización \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"></a> \> **bookings**.
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Permitir que solo los usuarios seleccionados creen calendarios de Bookings
 

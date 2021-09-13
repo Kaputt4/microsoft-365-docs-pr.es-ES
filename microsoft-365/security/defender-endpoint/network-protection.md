@@ -17,11 +17,11 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.openlocfilehash: 44f75b2912a8e54df6584a8f97d0f6e76cac6b15
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192707"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -148,7 +148,7 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Evaluar la protección de](evaluate-network-protection.md) red | Realice un escenario rápido que demuestre cómo funciona la característica y qué eventos se crearían normalmente.
 - [Habilitar la protección de](enable-network-protection.md) red | Use directivas de grupo, PowerShell o CSP mdm para habilitar y administrar la protección de red en la red.

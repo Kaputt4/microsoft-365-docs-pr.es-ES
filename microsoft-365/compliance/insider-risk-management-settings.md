@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6629672ec43b157c2ce1c70d383d6772e5671260
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2d9914dec5abcf87885404adbc5092605402a045
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564027"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212607"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -253,7 +253,7 @@ Los siguientes campos y valores se exportan para alertas de administración de r
 | Datos | Los datos de la alerta incluyen el identificador de usuario único, el nombre principal del usuario y la fecha y hora (UTC) cuando el usuario se desencadenó en una directiva. |
 | Nombre | Nombre de la directiva para la directiva de administración de riesgos insider que generó la alerta. |
 | PolicyId | GUID de la directiva de administración de riesgos insider que desencadenó la alerta. |
-| Gravedad | Gravedad de la alerta. Los valores *son High,* *Medium* o *Low*. |
+| Severity | Gravedad de la alerta. Los valores *son High,* *Medium* o *Low*. |
 | Origen | El origen de la alerta. El valor es *Office 365 seguridad & cumplimiento*. |
 | Estado | El estado de la alerta. Los valores *son Active* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), Resolved ( *Resolved* in insider risk), Dismissed (  *Dismissed* in insider risk). |
 | Versión | La versión del esquema de alerta de seguridad y cumplimiento. |
@@ -408,8 +408,6 @@ Siga estos pasos para crear un flujo Power Automate de una plantilla de administ
 
 > [!IMPORTANT]
 > Si otros usuarios de la organización necesitan acceso al flujo, el flujo debe compartirse.
-
-![El poder de administración de riesgos de Insider automatiza los flujos.](../media/insider-risk-settings-power-automate-flows.png)
 
 ### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>Crear un flujo de Power Automate personalizado para la administración de riesgos de insider
 

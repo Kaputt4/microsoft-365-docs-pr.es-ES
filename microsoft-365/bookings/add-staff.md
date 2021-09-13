@@ -9,11 +9,11 @@ ms.service: bookings
 localization_priority: Normal
 description: Use esta página para crear la lista de personal y administrar los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
 ms.openlocfilehash: 3b61c2f3e5597208ace2a87a7d203e8d724e4f5f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573348"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212917"
 ---
 # <a name="add-staff-to-bookings"></a>Agregar personal a Bookings
 

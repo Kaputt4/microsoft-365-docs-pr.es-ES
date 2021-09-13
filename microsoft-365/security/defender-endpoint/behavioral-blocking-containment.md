@@ -20,11 +20,11 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.technology: mde
 ms.openlocfilehash: 7d9dad6b2f2f1b37525faf0a4a90d143650c49d1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212370"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
@@ -117,7 +117,7 @@ Unos minutos después de bloquear el artefacto, se bloquearon varias instancias 
 
 En este ejemplo se muestra que, con las capacidades de contención y bloqueo de comportamiento, las amenazas se detectan, contienen y bloquean automáticamente.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Más información sobre Defender for Endpoint](overview-endpoint-detection-response.md)
 

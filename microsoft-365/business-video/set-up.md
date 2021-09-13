@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 8824755d8215af6a1459ae73d1cd9ba08f5897c574b07e8e99f6b78cfee439c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4609789f426446b554e97576643bfba7f6d50803
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838024"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212780"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configuración de Microsoft 365 Empresa Premium
 
@@ -33,7 +34,7 @@ ms.locfileid: "53838024"
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. Inicie sesión en el Centro de administración de Microsoft 365 y seleccione **Ir al programa de instalación**. Se iniciará el asistente para la instalación.
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>y seleccione **Ir al programa de instalación**. Se iniciará el asistente para la instalación.
 2.  En la **página Instalar Office** aplicaciones, puedes elegir instalar Office aplicaciones en el equipo o seleccionar **Continuar**.
 3.  En la  **página Su dominio es su identidad empresarial,**  escriba el nombre de dominio de su empresa y, a continuación, seleccione Usar este  **dominio**. Si usa un registrador común como WordPress o GoDaddy, los registros se agregarán automáticamente en esta página.
 4. En la  **página Comprobar su dominio,**  seleccione  **Comprobar** para comprobar la propiedad del dominio y, a continuación, inicie sesión en su cuenta de registrador de dominio. Para permitir que Microsoft agregue un registro TXT para la comprobación de cuentas, seleccione  **Confirmar**.

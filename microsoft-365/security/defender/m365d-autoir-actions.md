@@ -22,11 +22,11 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ms.openlocfilehash: daedba79bb2fd9ac452cbef08d74d4d876122478
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565665"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213297"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Ver y administrar acciones en el Centro de acciones
 
@@ -95,7 +95,7 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 
 3. En el panel de la parte derecha de la pantalla, seleccione **Aplicar a X más** instancias de este archivo y, a continuación, seleccione **Deshacer**.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver los detalles y los resultados de una investigación automatizada](m365d-autoir-results.md)
 - [Dirección de falsos positivos o falsos negativos](m365d-autoir-report-false-positives-negatives.md)

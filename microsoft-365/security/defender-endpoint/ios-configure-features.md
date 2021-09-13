@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f28dfdfe006961fc96d59c76ed9723c7e599d003
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 3916217467892a46fd8a2534a7852b928d2b5215
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575809"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212227"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para endpoint en características de iOS
 
@@ -73,11 +73,11 @@ Microsoft Defender para endpoint se puede configurar para enviar señales de ame
 
 Los pasos para configurar directivas de protección de aplicaciones con Microsoft Defender para endpoint son los siguientes:
 
-1. Configure la conexión desde el espacio empresarial Microsoft Endpoint Manager a Microsoft Defender para Endpoint. En el Centro de administración de [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Conectores de administración de inquilinos y tokens de Microsoft Defender para Endpoint (en Plataforma cruzada) o Endpoint Security Microsoft Defender para Endpoint  >    >     >   (en Configuración) y active los alternancias en Directiva de protección de **aplicaciones Configuración para iOS**.
+1. Configure la conexión desde el espacio empresarial Microsoft Endpoint Manager a Microsoft Defender para Endpoint. En el Centro de administración  de [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Conectores de administración de inquilinos y tokens de Microsoft Defender para Endpoint (en Plataforma cruzada) o Endpoint Security Microsoft Defender para Endpoint \>  \>   \>  (en Configuración) y active los alternancias en Directiva de protección de **aplicaciones Configuración para iOS**.
 1. Seleccione Guardar. Debería ver que **el estado de** conexión ahora está establecido en **Habilitado**.
-1. Crear directiva de protección de aplicaciones: una vez completada la configuración del conector de Microsoft Defender para puntos de conexión, vaya a **Directivas** de protección de aplicaciones  >   (en Directiva) para crear una nueva directiva o actualizar una existente.
+1. Crear directiva de protección de aplicaciones: una vez completada la configuración del conector de Microsoft Defender para puntos de conexión, vaya a **Directivas** de protección de aplicaciones \>  (en Directiva) para crear una nueva directiva o actualizar una existente.
 1. Seleccione la plataforma, **Aplicaciones, Protección de datos, Configuración** de requisitos de Acceso que su organización requiere para la directiva.
-1. En **Condiciones del** dispositivo de inicio  >  **condicional,** encontrarás la configuración Nivel máximo de amenaza del dispositivo **permitido.** Esto tendrá que configurarse en Low, Medium, High o Secured. Las acciones disponibles serán Bloquear acceso **o** **Borrar datos**. Es posible que vea un cuadro de diálogo informativo para asegurarse de que el conector está configurado antes de que esta configuración suba a efecto. Si el conector ya está configurado, puede omitir este cuadro de diálogo.
+1. En **Condiciones del** dispositivo de inicio \> **condicional,** encontrarás la configuración Nivel máximo de amenaza del dispositivo **permitido.** Esto tendrá que configurarse en Low, Medium, High o Secured. Las acciones disponibles serán Bloquear acceso **o** **Borrar datos**. Es posible que vea un cuadro de diálogo informativo para asegurarse de que el conector está configurado antes de que esta configuración suba a efecto. Si el conector ya está configurado, puede omitir este cuadro de diálogo.
 1. Termina con Asignaciones y guarda la directiva.
 
 Para obtener más información sobre mam o directiva de protección de aplicaciones, consulta configuración de la directiva de protección de aplicaciones [de iOS](/mem/intune/apps/app-protection-policy-settings-ios).

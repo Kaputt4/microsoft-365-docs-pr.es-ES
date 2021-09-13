@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use directivas de auditoría y alertas y solicitudes del interesado para supervisar y responder a incidentes de datos personales.
-ms.openlocfilehash: 225c0969f932490012a6cd54cb920cc59322ea9a8cea11c214a866ad58cecfca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4070cd772d243bcfba33bfb164fd05e1f0911b3b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804737"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213187"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Supervisar y responder a incidentes de privacidad de datos en su organización
 

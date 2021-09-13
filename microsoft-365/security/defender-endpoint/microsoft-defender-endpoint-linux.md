@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 087636fe340939321459be3b2085a363d2629c4f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: c4d3d1d913dd08a48fb70419133c0c484b3248f8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575545"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213577"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -51,8 +51,8 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Microsoft
 - Privilegios administrativos en el dispositivo (en caso de implementación manual)
 
 > [!NOTE]
->  El agente de Microsoft Defender para Endpoint en Linux es independiente [del agente OMS](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender para endpoint se basa en su propia canalización de telemetría independiente.
-> 
+> El agente de Microsoft Defender para Endpoint en Linux es independiente [del agente OMS](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender para endpoint se basa en su propia canalización de telemetría independiente.
+>
 > Microsoft Defender para Endpoint en Linux aún no está integrado en Azure Security Center.
 
 ### <a name="installation-instructions"></a>Instrucciones de instalación
@@ -69,10 +69,8 @@ En general, debe seguir los siguientes pasos:
     - [Implementar con la herramienta de administración de configuración de Puppet](linux-install-with-puppet.md)
     - [Implementar con una herramienta de administración de configuración de Ansible](linux-install-with-ansible.md)
     - [Implementar con la herramienta de administración de configuración de Chef](linux-deploy-defender-for-endpoint-with-chef.md)
-    
+
 Si experimenta algún error de instalación, consulte [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
-
-
 
 ### <a name="system-requirements"></a>Requisitos del sistema
 
@@ -87,7 +85,6 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
 
     > [!NOTE]
     > Las distribuciones y las versiones que no se enumeran explícitamente no son compatibles (incluso si se derivan de las distribuciones admitidas oficialmente).
-
 
 - Versión mínima del kernel 3.10.0-327
 
@@ -129,6 +126,7 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
 Después de habilitar el servicio, es posible que deba configurar la red o el firewall para permitir conexiones salientes entre él y los puntos de conexión.
 
 - El marco de auditoría ( `auditd` ) debe estar habilitado.
+
   > [!NOTE]
   > Los eventos del sistema capturados por las reglas agregadas se agregarán a (s) y pueden afectar a la auditoría de host y `/etc/audit/rules.d/` `audit.log` a la colección ascendente. Los eventos agregados por Microsoft Defender para Endpoint en Linux se etiquetarán con `mdatp` clave.
 
@@ -136,14 +134,20 @@ Después de habilitar el servicio, es posible que deba configurar la red o el fi
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Debe asegurarse de que no hay reglas de filtrado de red o firewall que denieguen el acceso a estas direcciones URL. Si lo hay, es posible que deba crear una regla *de* permitir específicamente para ellos.
 
-| Hoja de cálculo de la lista de dominios | Description |
-|:-----|:-----|
-|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)<br/>  | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <br><br>[Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+<br>
+
+****
+
+|Hoja de cálculo de la lista de dominios|Description|
+|---|---|
+|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> Descargue la hoja de [cálculo aquí](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).|
+|||
 
 > [!NOTE]
 > Para obtener una lista de direcciones URL más específica, vea [Configure proxy and Internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 Defender for Endpoint puede detectar un servidor proxy mediante los siguientes métodos de detección:
+
 - Proxy transparente
 - Configuración manual de proxy estático
 
@@ -164,6 +168,6 @@ Microsoft publica periódicamente actualizaciones de software para mejorar el re
 
 Las instrucciones sobre cómo configurar el producto en entornos empresariales están disponibles en Establecer preferencias para [Microsoft Defender para Endpoint en Linux.](linux-preferences.md)
 
-## <a name="resources"></a>Recursos
+## <a name="resources"></a>Resources
 
 - Para obtener más información sobre el registro, la desinstalación u otros temas, vea [Resources](linux-resources.md).

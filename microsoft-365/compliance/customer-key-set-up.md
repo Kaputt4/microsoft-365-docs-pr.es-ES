@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente para Microsoft 365.
-ms.openlocfilehash: 2db1aff638818fea18a55e331093fcd26ca30071995447ca817234f450798047
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e187c01a355cc9b926e892cb3326b5a527c714a4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212677"
 ---
 # <a name="set-up-customer-key"></a>Configurar clave de cliente
 
@@ -85,13 +85,13 @@ No hay ningún límite práctico en el número de suscripciones de Azure que pue
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Enviar una solicitud para activar la clave de cliente para Office 365
 
-Una vez que haya creado las dos nuevas suscripciones de Azure, deberá enviar la solicitud de oferta de clave de cliente adecuada en el [portal de Microsoft FastTrack](https://fasttrack.microsoft.com/). Las selecciones que realice en el formulario de oferta sobre las designaciones autorizadas dentro de su organización son críticas y necesarias para completar el registro de clave de cliente. Los responsables de los roles seleccionados dentro de la organización garantizan la autenticidad de cualquier solicitud para revocar y destruir todas las claves usadas con una directiva de cifrado de datos de clave de cliente. Deberá realizar este paso una vez para cada tipo de DEP de clave de cliente que tenga previsto usar para su organización.
+Una vez creadas las dos nuevas suscripciones de Azure, deberá enviar la solicitud de oferta de clave de cliente adecuada en el portal de Microsoft [FastTrack.](https://fasttrack.microsoft.com/) Las selecciones que realice en el formulario de oferta sobre las designaciones autorizadas dentro de su organización son críticas y necesarias para completar el registro de clave de cliente. Los responsables de los roles seleccionados dentro de la organización garantizan la autenticidad de cualquier solicitud para revocar y destruir todas las claves usadas con una directiva de cifrado de datos de clave de cliente. Deberá realizar este paso una vez para cada tipo de DEP de clave de cliente que tenga previsto usar para su organización.
 
-**El equipo de FastTrack no proporciona asistencia con la clave de cliente. Office 365 simplemente usa el portal FastTrack para permitirle enviar el formulario y ayudarnos a realizar un seguimiento de las ofertas relevantes para la clave de cliente. Una vez que hayas enviado la solicitud de FastTrack, llega al equipo de incorporación de clave de cliente correspondiente para iniciar el proceso de incorporación.**
+**El FastTrack no proporciona asistencia con la clave de cliente. Office 365 simplemente usa el portal de FastTrack para permitirle enviar el formulario y ayudarnos a realizar un seguimiento de las ofertas relevantes para la clave de cliente. Una vez que haya enviado la solicitud FastTrack, llegue al equipo de incorporación de clave de cliente correspondiente para iniciar el proceso de incorporación.**
   
 Para enviar una oferta para activar la clave de cliente, siga estos pasos:
   
-1. Con una cuenta laboral o educativa que tenga permisos de administrador global en su organización, inicie sesión en el [portal de Microsoft FastTrack](https://fasttrack.microsoft.com/).
+1. Con una cuenta de trabajo o escuela que tenga permisos de administrador global en su organización, inicie sesión en el portal de [microsoft FastTrack](https://fasttrack.microsoft.com/).
 
 2. Una vez que haya iniciado sesión, seleccione el dominio adecuado.
 
@@ -387,7 +387,7 @@ En Azure PowerShell:
 (Get-AzKeyVaultKey -VaultName <vault name>).Id
 ```
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que haya completado los pasos de este artículo, estará listo para crear y asignar DEP. Para obtener instrucciones, vea [Manage Customer Key](customer-key-manage.md).
 

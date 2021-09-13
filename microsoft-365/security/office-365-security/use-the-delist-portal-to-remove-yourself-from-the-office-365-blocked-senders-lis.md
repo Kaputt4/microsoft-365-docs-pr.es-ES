@@ -21,11 +21,11 @@ description: En este artículo, aprenderá a usar el portal de deslist para quit
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 0e825c859253b759e5436dbc5419f98f0c863fa3
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863427"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213217"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
 

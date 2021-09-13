@@ -8,11 +8,11 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
 ms.openlocfilehash: 7da746ade0e4ec684b97a61524abd5ab1e83c114
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212017"
 ---
 # <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Cuenta de Microsoft Defender para Servicios de directorio de identidad en Microsoft 365 Defender
 
@@ -46,8 +46,8 @@ Para conectar el [sensor con](sensor-health.md#add-a-sensor) los dominios de Act
 
     ![Nueva cuenta del servicio de directorio.](../../media/defender-identity/new-directory-service-account.png)
 
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configuración y estado del sensor de Identidad de Microsoft Defender para](sensor-health.md)

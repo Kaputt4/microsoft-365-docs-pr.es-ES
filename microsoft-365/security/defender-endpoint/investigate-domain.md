@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 7ce64c7e04030e64427ea44e038c402de34990ce309891f314e60b9808906e66
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0571197882c32f6cf591106de4e5221fdebaf786
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213677"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Investigar un dominio asociado a una alerta de Microsoft Defender para punto de conexión
 

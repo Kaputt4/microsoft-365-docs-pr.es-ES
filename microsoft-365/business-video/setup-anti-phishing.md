@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo configurar la protección contra suplantación de identidad (phishing).
 ms.openlocfilehash: 91d8db572bff73fca5515e224c96201260f8855c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531496"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212777"
 ---
 # <a name="set-up-anti-phishing"></a>Configurar directivas contra suplantación de identidad
 

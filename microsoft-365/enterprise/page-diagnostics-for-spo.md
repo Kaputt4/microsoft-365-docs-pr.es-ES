@@ -20,11 +20,11 @@ f1.keywords:
 - NOCSH
 description: Use la herramienta Diagnóstico de página para SharePoint para analizar SharePoint portal moderno en línea y páginas de publicación clásicas con un conjunto predefinido de criterios de rendimiento.
 ms.openlocfilehash: e741e8e2da62d2361578e31edcb6dbbafafbb7dc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574717"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213810"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Usar la herramienta Diagnóstico de página SharePoint página
 
@@ -98,7 +98,7 @@ Seleccione **Inicio para** empezar a recopilar datos para su análisis.
 
 1. La [**pestaña Pruebas de**](#how-to-use-the-diagnostic-tests-tab) diagnóstico muestra los resultados del análisis en tres categorías; **No se requiere ninguna acción,** **se requieren oportunidades de mejora** y **atención**. Cada resultado de la prueba se representa mediante un elemento en una de estas categorías, tal como se describe en la tabla siguiente:
 
-    |Categoría  |Color  |Description  |
+    |Categoría  |Color  |Descripción  |
     |---------|---------|---------|
     |**Atención necesaria** |Rojo |El resultado de la prueba está fuera del valor de línea base y está afectando al rendimiento de la página. Siga las instrucciones de corrección.|
     |**Oportunidades de mejora** |Amarillo |El resultado de la prueba está fuera del valor de línea base y podría contribuir a problemas de rendimiento. Pueden aplicarse criterios específicos de la prueba.|

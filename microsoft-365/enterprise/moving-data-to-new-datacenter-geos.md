@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre las nuevas Office 365 del centro de datos y cómo usar la opción de residencia de datos para solicitar un movimiento de los datos principales a una nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ddf0caa30f80033a9cfdbbc4cd19f0811f92fcd5e4f28bb98d0e949f9f67412c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 797ac69e2c60c2e4c3ece38b376406027ff65e36
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854716"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212500"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Mover datos principales a nuevas Microsoft 365 del centro de datos
 

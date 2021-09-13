@@ -20,11 +20,11 @@ ms.custom:
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 'Resumen: configure la autenticación federada de alta disponibilidad para su Microsoft 365 suscripción en Microsoft Azure.'
 ms.openlocfilehash: 22715f55a733b963a9b9f9c26c910adba1012ed7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212580"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure
 

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: En este artículo, aprenderá sobre las herramientas y técnicas que puede usar para supervisar y mantener Microsoft 365 conectividad.
-ms.openlocfilehash: 5013ef1129e230ea9a3cd31e5a75dbf367c4e5c01c63b37768e7f73098bcfacc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d6e93f4669bb14736d78a30ece095623edb67136
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899204"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212567"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Supervisar la conectividad de Microsoft 365
 
@@ -36,7 +36,7 @@ Una vez que haya implementado Microsoft 365, puede mantener la conectividad Micr
 |Tipo de supervisión |Descripción |
 |:-----|:-----|
 |**Recibir notificaciones de nuevos Microsoft 365 de conexión** <br/> |Si está administrando puntos de conexión Microsoft 365, querrá recibir notificaciones cuando publiquemos nuevos puntos de conexión, puede suscribirse [a](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)nuestra fuente RSS con su lector RSS favorito. Aquí le explicamos cómo [suscribirse Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) o puede enviar por correo electrónico las actualizaciones de fuentes [RSS.](https://go.microsoft.com/fwlink/p/?LinkId=532417)  <br/> |
-|**Use System Center para supervisar Microsoft 365** <br/> |Si usa Microsoft System Center, puede descargar el módulo de administración de [System Center](https://www.microsoft.com/download/details.aspx?id=43708) para Office 365 para empezar a supervisar Microsoft 365 hoy. Para obtener instrucciones más detalladas, consulte la guía de operaciones del módulo de administración. <br/> |
+|**Use System Center para supervisar Microsoft 365** <br/> |Si usa Microsoft System Center, puede descargar el Módulo de administración de [Microsoft System Center Operations Manager](https://www.microsoft.com/download/details.aspx?id=103379) para Microsoft 365 para comenzar la supervisión Microsoft 365 hoy. Para obtener instrucciones más detalladas, consulte la guía de operaciones del módulo de administración. <br/> |
 |**Supervisar el estado de Azure ExpressRoute** <br/> |Si se está conectando a Microsoft 365 con Azure ExpressRoute para Microsoft 365, querrá asegurarse de que está usando tanto el Panel de mantenimiento del servicio de Microsoft 365 como el tiempo de solución de problemas de Azure [Reducing](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/) con el estado de Azure Resource <br/> |
 |**Usar Azure AD Connect Health con AD FS** <br/> |Si usa AD FS para single Sign-On con Microsoft 365, querrá empezar a usar Azure AD Conectar Health para supervisar la infraestructura de [AD FS](/azure/active-directory/hybrid/how-to-connect-health-adfs).  <br/> |
 |**Supervisar mediante programación Microsoft 365** <br/> |Consulte nuestra guía sobre la API [Microsoft 365 administración](/office/office-365-management-api/office-365-management-apis-overview).  <br/> |

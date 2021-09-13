@@ -21,11 +21,11 @@ ms.collection:
 - m365solution-scenario
 ms.technology: mdo
 ms.openlocfilehash: b135c6dd691607dd128bfd83e0d2b484bb3a97ae
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213267"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directiva para proteger Teams chats, grupos y archivos
 
@@ -142,7 +142,7 @@ Teams también te permite usar aplicaciones en varios lugares, como canales o ch
 
 Para obtener más información sobre las directivas de permisos de aplicación, consulte Administrar directivas de [permisos de aplicaciones en Microsoft Teams](/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 ![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
