@@ -19,11 +19,11 @@ ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: f57a186c49b44d007d93cba6610865b5a4e7f47f
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506496"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222117"
 ---
 # <a name="api-explorer"></a>Explorador de API
 

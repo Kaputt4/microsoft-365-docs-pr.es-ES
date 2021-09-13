@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: ab53061a7880d5ba35c16203cffc7d6eb8e7b718
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392115"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222881"
 ---
 # <a name="create-alert-api"></a>Crear API de alertas
 
@@ -88,8 +88,8 @@ Propiedad | Tipo | Descripción
 :---|:---|:---
 eventTime | DateTime(UTC) | La hora precisa del evento como cadena, como se obtiene de la búsqueda avanzada. Por ejemplo, Obligatorio ```2018-08-03T16:45:21.7115183Z``` .
 reportId | Cadena | El reportId del evento, como se obtiene de la búsqueda avanzada. **Necesario**.
-machineId | String | Id. del dispositivo en el que se identificó el evento. **Necesario**.
-severity | String | Gravedad de la alerta. Los valores de propiedad son: 'Low', 'Medium' y 'High'. **Necesario**.
+machineId | Cadena | Id. del dispositivo en el que se identificó el evento. **Necesario**.
+severity | Cadena | Gravedad de la alerta. Los valores de propiedad son: 'Low', 'Medium' y 'High'. **Necesario**.
 title | Cadena | Título de la alerta. **Necesario**.
 description | Cadena | Descripción de la alerta. **Necesario**.
 recommendedAction| Cadena | Acción recomendada por el responsable de seguridad al analizar la alerta. **Necesario**.

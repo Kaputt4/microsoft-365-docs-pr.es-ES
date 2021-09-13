@@ -15,11 +15,11 @@ ms.topic: conceptual
 ms.technology: mde
 ROBOTS: NOINDEX
 ms.openlocfilehash: 6ad51065ca4e919fe51cc4a2d5f4b0d53bc474b1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566715"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222910"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint
 
@@ -58,7 +58,7 @@ En la tabla siguiente se describen las formas en que Microsoft Defender para end
 
 ****
 
-|Control|Description|
+|Control|Descripción|
 |---|---|
 |[Restringir unidades USB y otros periféricos](#restrict-usb-drives-and-other-peripherals)|Puedes permitir o impedir que los usuarios instalen solo las unidades USB y otros periféricos incluidos en una lista de dispositivos o tipos de dispositivos autorizados o no autorizados.|
 |[Bloquear la instalación y el uso del almacenamiento extraíble](#block-installation-and-usage-of-removable-storage)|No puede instalar ni usar almacenamiento extraíble.|
@@ -77,7 +77,7 @@ Para evitar infecciones de malware o pérdida de datos, una organización puede 
 
 ****
 
-|Control|Description
+|Control|Descripción
 |---|---|
 |[Permitir la instalación y el uso de unidades USB y otros periféricos](#allow-installation-and-usage-of-usb-drives-and-other-peripherals)|Permitir a los usuarios instalar solo las unidades USB y otros periféricos incluidos en una lista de dispositivos o tipos de dispositivos autorizados|
 |[Impedir la instalación y el uso de unidades USB y otros periféricos](#prevent-installation-and-usage-of-usb-drives-and-other-peripherals)|Impedir que los usuarios instalen unidades USB y otros periféricos incluidos en una lista de dispositivos y tipos de dispositivos no autorizados|

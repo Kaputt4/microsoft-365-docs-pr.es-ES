@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 0b2305472f19ac0424861a30034c2fdd45bd753c
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399736"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222141"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Obtener KBs ausentes por id. de dispositivo
 

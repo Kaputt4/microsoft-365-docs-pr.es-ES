@@ -16,11 +16,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: 7f68efdcf74317efeb1683b1cc5efcdf1f43fafa
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222701"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>Evaluar Antivirus de Microsoft Defender
 

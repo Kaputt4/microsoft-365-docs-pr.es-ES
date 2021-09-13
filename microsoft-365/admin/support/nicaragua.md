@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b9fcc3df29dd465b45e2e460c574e7a3465d328741c05d016ebfa9b00dba8a41
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1df3dc7defd792c541b2cbe0fb82a554cc55ba26
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831940"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210017"
 ---
 # <a name="contact-support-for-nicaragua"></a>Póngase en contacto con el soporte técnico de Nicaragua
 

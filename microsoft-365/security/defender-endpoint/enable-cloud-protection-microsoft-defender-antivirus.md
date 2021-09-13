@@ -16,11 +16,11 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.openlocfilehash: 82b773488fffb5b37390cc72043c1b011c5c6685
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222761"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activar la protección en la nube en Antivirus de Microsoft Defender
 
@@ -148,7 +148,7 @@ Para obtener más información acerca de los parámetros [permitidos, vea Window
 > [!NOTE]
 > Si el envío de ejemplo automático se ha configurado con la directiva de grupo, la configuración será gris y no estará disponible.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Usar la protección en la nube de Microsoft en Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 

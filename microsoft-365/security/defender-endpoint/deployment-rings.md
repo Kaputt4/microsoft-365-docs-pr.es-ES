@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 55b1e33483b4ba9d3480b1e1c1c8dc2f37557039
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222858"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Implementar Microsoft Defender para endpoint en anillos
 
@@ -113,7 +113,7 @@ Use el siguiente material para seleccionar la arquitectura de Microsoft Defender
 
 Para Windows y/o servidores Windows, seleccione varias máquinas para probar con antelación (antes del martes de revisión) mediante el programa de validación de actualización de seguridad **(SUVP).**
 
-Para obtener más información, vea:
+Para más información, vea:
 
 - [¿Qué es el programa de validación de actualización de seguridad?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Software Update Validation Program and Centro de protección contra malware de Microsoft Establishment : TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)

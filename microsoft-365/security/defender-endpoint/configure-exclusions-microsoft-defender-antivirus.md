@@ -16,11 +16,11 @@ ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
 ms.openlocfilehash: a6df318ccf484d750ae8010f34b5c545b115cde0
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532984"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222946"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes
 
@@ -55,7 +55,7 @@ Tenga en cuenta los siguientes puntos al definir exclusiones:
 
 - Revise y audite los cambios en la lista de exclusiones. El equipo de seguridad debe conservar el contexto en torno a por qué se agregó una exclusión determinada para evitar confusiones más adelante. El equipo de seguridad debe poder proporcionar respuestas específicas a preguntas sobre por qué existen exclusiones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Antivirus de Microsoft Defender exclusiones en Windows Server 2016](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Errores comunes para evitarlos cuando se definen exclusiones](common-exclusion-mistakes-microsoft-defender-antivirus.md)

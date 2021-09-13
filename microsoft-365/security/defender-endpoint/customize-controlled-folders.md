@@ -16,11 +16,11 @@ ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
 ms.openlocfilehash: e104a8180ad9099e795a014060921387de642668
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58560911"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222861"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
 
@@ -169,7 +169,7 @@ Los indicadores de archivo y certificado de Microsoft Defender para endpoint pue
 
 Para obtener más información acerca de cómo personalizar la notificación cuando se desencadena una regla y bloquea una aplicación o archivo, consulte [Configure alert notifications in Microsoft Defender for Endpoint](configure-email-notifications.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)

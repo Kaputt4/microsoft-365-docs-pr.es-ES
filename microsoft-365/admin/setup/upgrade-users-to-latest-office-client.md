@@ -24,12 +24,12 @@ ms.custom:
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Obtenga información sobre cómo actualizar Microsoft Office al cliente de Office para usuarios de su organización.
 ms.topic: article
-ms.openlocfilehash: 15f798d413cb12cb0a44da9f853e663c0a2ae436f0aeb8a583398a13d9f4f9dc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 877659e420079ed607adc13e5bbe44bdc979f5ac
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832768"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210257"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Actualice su Microsoft 365 usuarios empresariales al último Office cliente
 
@@ -94,7 +94,7 @@ Cambie a una suscripción que incluya Office. Consulte [Cambiar a un plan Micros
 
  - Comprar una compra única individual de Office. Consulta [Office Home &amp; Business](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) o [Office Profesional](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
-     O
+     OR
 
  - Compre varias copias de Office a través de una licencia por volumen. Vea Comparar [conjuntos de suites disponibles a través de licencias por volumen.](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison)
 

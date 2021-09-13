@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9cc250607261303c7ed56216496681474c4b703b89b164ec5653ba2de696c0fe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93df3e39b257af37e7eb1827cf8a9a1b0ee86bf5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832408"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210160"
 ---
 # <a name="contact-support-for-mauritania"></a>Póngase en contacto con el soporte técnico de Mauritania
 

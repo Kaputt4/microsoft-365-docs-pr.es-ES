@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 15c3ad6eef732f36a425a54673a694613c0f4b66
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222122"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Obtener KBs ausentes por id. de software
 

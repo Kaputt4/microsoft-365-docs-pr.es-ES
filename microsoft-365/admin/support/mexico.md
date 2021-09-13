@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 94487075fd583f1d4f4754c70c8271e501504230c1b67154b1985e33058b534e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9caa80c2f0f768f2d89bb4a1fdc3f43beb225cf2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59210140"
 ---
 # <a name="contact-support-for-mexico"></a>Contactar con el soporte técnico de México
 

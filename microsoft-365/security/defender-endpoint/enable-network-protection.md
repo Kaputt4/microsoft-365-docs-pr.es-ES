@@ -15,11 +15,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: e0056f4f1517962bab3dbee4f993ce28c58dfcf9
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863982"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222751"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -136,7 +136,7 @@ Confirme que la protección de red está habilitada en un equipo local mediante 
    - 1=On
    - 2=Auditoría
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Protección de red](network-protection.md)
 

@@ -20,11 +20,11 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
 ms.openlocfilehash: 37a0ff60f9f12bd2738d6d587d5cad5e6d55af55
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568161"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222026"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visite el Centro de acciones para ver acciones de corrección
 
@@ -72,7 +72,7 @@ Al visitar el Centro de acciones, verá dos pestañas: **Acciones pendientes** e
 
 |Pestaña|Descripción|
 |---|---|
-|**Pending**|Muestra una lista de acciones que requieren atención. Puede aprobar o rechazar acciones de una en una, o seleccionar varias acciones si tienen el mismo tipo de acción (como el **archivo en cuarentena).** <p> **SUGERENCIA:** Asegúrese de revisar y aprobar [(o rechazar)](manage-auto-investigation.md) las acciones pendientes tan pronto como sea posible para que las investigaciones automatizadas puedan completarse de forma oportuna.|
+|**Pendiente**|Muestra una lista de acciones que requieren atención. Puede aprobar o rechazar acciones de una en una, o seleccionar varias acciones si tienen el mismo tipo de acción (como el **archivo en cuarentena).** <p> **SUGERENCIA:** Asegúrese de revisar y aprobar [(o rechazar)](manage-auto-investigation.md) las acciones pendientes tan pronto como sea posible para que las investigaciones automatizadas puedan completarse de forma oportuna.|
 |**Historial**|Sirve como registro de auditoría para las acciones que se han realizado, como: <ul><li>Acciones de corrección que se realizaron como resultado de investigaciones automatizadas</li><li>Acciones de corrección aprobadas por el equipo de operaciones de seguridad</li><li>Comandos que se ejecutaron y acciones de corrección que se aplicaron durante las sesiones de Live Response</li><li>Acciones de corrección realizadas por las características de protección contra amenazas en Antivirus de Microsoft Defender</li></ul> <p> Proporciona una forma de deshacer determinadas acciones (vea [Deshacer acciones completadas](manage-auto-investigation.md#undo-completed-actions)).|
 
 Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
@@ -86,11 +86,11 @@ Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
 - Use filtros para ver solo los elementos que desea ver.
 - Seleccione **Exportar** para exportar resultados a un .csv archivo.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver y aprobar acciones de corrección](manage-auto-investigation.md)
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)

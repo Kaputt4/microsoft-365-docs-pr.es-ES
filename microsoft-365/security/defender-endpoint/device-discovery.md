@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 4c1d24119ee8f403b168d6b2f2d97b9842f89d9b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575197"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222798"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -136,7 +136,7 @@ En la siguiente sección se enumeran los cambios que observará en Microsoft Def
 2. Los dispositivos no administrados se asignarán a grupos de dispositivos existentes según los criterios definidos.
 3. En raras ocasiones, la detección estándar puede desencadenar alertas en monitores de red o herramientas de seguridad. Proporcione comentarios, si experimenta este tipo de eventos, para evitar que estos problemas se repitan. Puede excluir explícitamente destinos específicos o subredes enteras de ser sondeados activamente por la detección estándar.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Configuración de la detección de dispositivo](configure-device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

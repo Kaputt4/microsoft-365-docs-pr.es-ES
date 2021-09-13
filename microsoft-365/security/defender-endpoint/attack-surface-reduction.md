@@ -17,11 +17,11 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: 402ae897717e935b59f0f63a48f7307a2ff522e4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568173"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222045"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware
 

@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 5c70a21ad3e47b2e2347c3f88ba276b3e9fd9801
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506483"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222014"
 ---
 # <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 
@@ -120,7 +120,7 @@ DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Información general de la detección de dispositivo](device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

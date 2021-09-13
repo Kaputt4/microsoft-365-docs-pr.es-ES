@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: e1a681fb7d521c26327bec3d22bff233926a279f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569386"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59221990"
 ---
 # <a name="onboard-the-windows-10-devices-using-a-local-script"></a>Incorporación de Windows 10 dispositivos con un script local
 
@@ -81,7 +81,7 @@ Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-Donde Tipo de nombre es un D-WORD. Los valores posibles son:
+Donde Tipo de nombre es un D-WORD. Los posibles valores son:
 
 - 0: no permite el uso compartido de muestras desde este dispositivo
 - 1: permite compartir todos los tipos de archivo desde este dispositivo

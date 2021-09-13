@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
 ms.openlocfilehash: 3ccb0bf5392bcfd8b520c1124d5daa568f1bc8be
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509934"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222086"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Experiencia de Microsoft Defender para endpoint a través de ataques simulados 
 

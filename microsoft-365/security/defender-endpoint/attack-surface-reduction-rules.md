@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 1e11cdd9300b58d7cc410c43d1bd09ed095c29e7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6dcfd27cb609231c7caa4a486044d91140b0c4b1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570694"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222081"
 ---
 # <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
 
@@ -113,6 +113,8 @@ Nombre de Intune: `Block abuse of exploited vulnerable signed drivers`
 
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
+Tipo de acción AH:
+
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Impedir que Adobe Reader cree procesos secundarios
 
 Esta regla evita los ataques al bloquear Adobe Reader para crear procesos.
@@ -125,6 +127,11 @@ Nombre de Configuration Manager: Aún no disponible
 
 GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
+Tipo de acción AH:
+
+- AsrAdobeReaderChildProcessAudited
+- AsrAdobeReaderChildProcessBlocked
+
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>Bloquear todas Office aplicaciones de creación de procesos secundarios
 
 Esta regla impide que Office aplicaciones creen procesos secundarios. Office aplicaciones incluyen Word, Excel, PowerPoint, OneNote y Access.
@@ -136,6 +143,11 @@ Nombre de Intune: `Office apps launching child processes`
 Nombre de Configuration Manager: `Block Office application from creating child processes`
 
 GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
+
+Tipo de acción AH:
+
+- AsrOfficeChildProcessAudited
+- AsrOfficeChildProcessBlocked
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local
 
@@ -152,6 +164,11 @@ Nombre de Configuration Manager: `Block credential stealing from the Windows loc
 
 GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
+Tipo de acción AH:
+
+- AsrLsassCredentialTheftAudited
+- AsrLsassCredentialTheftBlocked
+
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web
 
 Esta regla impide que los siguientes tipos de archivo se inicien desde el correo electrónico abierto dentro de la aplicación de Microsoft Outlook o Outlook.com y otros proveedores de correo web populares:
@@ -164,6 +181,11 @@ Nombre de Intune: `Execution of executable content (exe, dll, ps, js, vbs, etc.)
 Microsoft Endpoint Manager nombre:`Block executable content from email client and webmail`
 
 GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
+
+Tipo de acción AH:
+
+- AsrExecutableEmailContentAudited
+- AsrExecutableEmailContentBlocked
 
 > [!NOTE]
 > La regla **Bloquear contenido ejecutable del** cliente de correo electrónico y el correo web tiene las siguientes descripciones alternativas, según la aplicación que use:
@@ -195,6 +217,11 @@ Nombre de Configuration Manager: `Block executable files from running unless the
 
 GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
+Tipo de acción AH:
+
+- AsrUntrustedExecutableAudited
+- AsrUntrustedExecutableBlocked
+
 ### <a name="block-execution-of-potentially-obfuscated-scripts"></a>Bloquear la ejecución de scripts potencialmente ofuscados
 
 Esta regla detecta propiedades sospechosas dentro de un script ofuscado.
@@ -206,6 +233,11 @@ Nombre de Intune: `Obfuscated js/vbs/ps/macro code`
 Nombre de Configuration Manager: `Block execution of potentially obfuscated scripts`
 
 GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
+
+Tipo de acción AH:
+
+- AsrObfuscatedScriptAudited
+- AsrObfuscatedScriptBlocked
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Impedir que JavaScript o VBScript inicien contenido ejecutable descargado
 
@@ -219,6 +251,11 @@ Nombre de Configuration Manager: `Block JavaScript or VBScript from launching do
 
 GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
+Tipo de acción AH:
+
+- AsrScriptExecutableDownloadAudited
+- AsrScriptExecutableDownloadBlocked
+
 ### <a name="block-office-applications-from-creating-executable-content"></a>Bloquear Office aplicaciones de creación de contenido ejecutable
 
 Esta regla impide que Office aplicaciones, incluidas Word, Excel y PowerPoint, creen contenido ejecutable potencialmente malintencionado, al bloquear que el código malintencionado se escriba en el disco.
@@ -230,6 +267,11 @@ Nombre de Intune: `Office apps/macros creating executable content`
 Nombre SCCM: `Block Office applications from creating executable content`
 
 GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
+
+Tipo de acción AH:
+
+- AsrExecutableOfficeContentAudited
+- AsrExecutableOfficeContentBlocked
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Bloquear Office aplicaciones para que no inyecten código en otros procesos
 
@@ -247,6 +289,11 @@ Nombre de Configuration Manager: `Block Office applications from injecting code 
 
 GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
+Tipo de acción AH:
+
+- AsrOfficeProcessInjectionAudited
+- AsrOfficeProcessInjectionBlocked
+
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Bloquear Office de comunicación para que no cree procesos secundarios
 
 Esta regla impide que Outlook procesos secundarios, a la vez que permite funciones Outlook legítimas.
@@ -261,6 +308,11 @@ Nombre de Intune: `Process creation from Office communication products (beta)`
 Nombre de Configuration Manager: No disponible
 
 GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
+
+Tipo de acción AH:
+
+- AsrOfficeCommAppChildProcessAudited
+- AsrOfficeCommAppChildProcessBlocked
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>Bloquear la persistencia a través de la suscripción de eventos WMI
 
@@ -277,6 +329,11 @@ Nombre de Configuration Manager: No disponible
 
 GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
+Tipo de acción AH:
+
+- AsrPersistenceThroughWmiAudited
+- AsrPersistenceThroughWmiBlocked
+
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Bloquear creaciones de proceso que se originen en comandos PSExec y WMI
 
 Esta regla bloquea la ejecución de los procesos [creados a través](/sysinternals/downloads/psexec) de PsExec [y WMI.](/windows/win32/wmisdk/about-wmi) Tanto PsExec como WMI pueden ejecutar código de forma remota, por lo que existe el riesgo de que el malware abuse de esta funcionalidad con fines de comando y control, o de propagar una infección a través de la red de una organización.
@@ -290,6 +347,11 @@ Nombre de Configuration Manager: no aplicable
 
 GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
+Tipo de acción AH:
+
+- AsrPsexecWmiChildProcessAudited
+- AsrPsexecWmiChildProcessBlocked
+
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB
 
 Con esta regla, los administradores pueden impedir que los archivos ejecutables sin signo o que no son de confianza se ejecuten desde unidades extraíbles USB, incluidas las tarjetas SD. Los tipos de archivo bloqueados incluyen archivos ejecutables (como .exe, .dll o .scr)
@@ -299,6 +361,11 @@ Nombre de Intune: `Untrusted and unsigned processes that run from USB`
 Nombre de Configuration Manager: `Block untrusted and unsigned processes that run from USB`
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
+
+Tipo de acción AH:
+
+- AsrUntrustedUsbProcessAudited
+- AsrUntrustedUsbProcessBlocked
 
 ### <a name="block-win32-api-calls-from-office-macros"></a>Bloquear llamadas a la API de Win32 desde Office macros
 
@@ -319,6 +386,11 @@ Nombre de Configuration Manager: `Block Win32 API calls from Office macros`
 
 GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
+Tipo de acción AH:
+
+- AsrOfficeMacroWin32ApiCallsAudited
+- AsrOfficeMacroWin32ApiCallsBlocked
+
 ### <a name="use-advanced-protection-against-ransomware"></a>Usar protección avanzada contra ransomware
 
 Esta regla proporciona una capa adicional de protección contra ransomware. Usa heurística de cliente y nube para determinar si un archivo se parece a ransomware. Esta regla no bloquea los archivos que tienen una o varias de las siguientes características:
@@ -337,3 +409,8 @@ Nombre de Intune: `Advanced ransomware protection`
 Nombre de Configuration Manager: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
+
+Tipo de acción AH:
+
+- AsrRansomwareAudited
+- AsrRansomwareBlocked

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 84cb368d1b54e953932741b2610e435ddc8b7045868b8dd3de2f2cc7d46661bc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93ffef0be7a8710fbaf115418e69c724bed17869
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222688"
 ---
 # <a name="list-devices-by-software"></a>Enumerar dispositivos por software
 
@@ -58,7 +58,7 @@ GET /api/Software/{Id}/machineReferences
 
 |Nombre|Tipo|Descripción
 |---|---|---|
-|Authorization|String|Portador {token}. **Obligatorio**.
+|Authorization|Cadena|Portador {token}. **Obligatorio**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

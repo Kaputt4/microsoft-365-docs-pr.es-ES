@@ -16,11 +16,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 465aba55225aed74c838cb8ce09acf6d8b284491
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408063"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222975"
 ---
 # <a name="batch-update-alerts"></a>Alertas de actualización por lotes
 
