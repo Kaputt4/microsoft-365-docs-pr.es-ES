@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ff8534d0b668b6a18b219297131dbd90c366cc35
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: ae0d38eec976abb88638eea3c3d2166c7203647e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823785"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213567"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -152,3 +152,16 @@ Defender para punto de conexión se integra directamente con varias soluciones d
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
 
 Con Microsoft 365 Defender, Defender para punto de conexión y varias soluciones de seguridad de Microsoft forman un conjunto unificado de defensa empresarial previa y posterior a la infracción que se integra de forma nativa en los puntos de conexión, la identidad, el correo electrónico y las aplicaciones para detectar, evitar, investigar y responder automáticamente a ataques sofisticados.
+
+
+## <a name="training-for-security-analysts"></a>Aprendizaje para analistas de seguridad
+
+Con esta ruta de aprendizaje de Microsoft Learn, podrá comprender Defender para punto de conexión y cómo puede ayudarle a evitar, detectar, investigar y responder a amenazas en los puntos de conexión de su organización: sus dispositivos y sistemas.
+
+|Aprendizaje:|Detectar y responder a ataques cibernéticos con Microsoft 365 Defender|
+|---|---|
+|![Icono de aprendizaje de Microsoft 365 Defender.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft Defender para punto de conexión es una solución de seguridad de puntos de conexión que ofrece administración de amenazas y vulnerabilidades, protección de puntos de conexión, detección y respuesta de puntos de conexión, defensa contra amenazas móviles y servicios administrados en una única plataforma unificada.<p> 2 h 25 min - Ruta de aprendizaje - 9 módulos|
+
+> [!div class="nextstepaction"]
+> [Iniciar >](/learn/paths/defender-endpoint-fundamentals/)
+

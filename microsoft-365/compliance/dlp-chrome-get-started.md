@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Prepárese para implementar la extensión de cumplimiento de Microsoft.
-ms.openlocfilehash: ad3fa4ae5cef1e5d4a49cbe10c36fce89252127b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 830f068869353949927055b8859ba87c12647bcb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564039"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193097"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Introducción a la extensión de cumplimiento de Microsoft
 
@@ -130,7 +130,7 @@ Use este método de configuración para implementaciones a nivel de la organizac
 4. Cuando se le solicite, vaya a la ubicación del script creado.
 
 5. Seleccione la siguiente configuración:
-    1. Ejecutar este script con las credenciales de inicio de sesión: SÍ
+    1. Ejecutar este script con las credenciales de inicio de sesión: NO
     1. Aplicar comprobación de firma de script: NO
     1. Ejecutar script en host de PowerShell de 64 bits: SÍ
 

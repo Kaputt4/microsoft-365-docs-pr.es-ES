@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: descripción de las actividades de etiquetado que están disponibles en el explorador de actividades.
 ms.openlocfilehash: 163231d4d1e7c6a2d1b75c0f81a17443cfafe246
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394569"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184201"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>Actividades de etiquetado que están disponibles en el Explorador de actividades
 
@@ -36,7 +36,7 @@ Este evento se genera cada vez que se etiqueta un documento sin etiquetar o se e
 - Las acciones de actualización y degradación de etiquetas también se pueden supervisar a través del campo y filtro *tipo de evento Label.*   
 
 
-|Origen  |Notificado en el explorador de actividades | Nota  |
+|Origen  |Notificado en el explorador de actividades | Nota:  |
 |---------|---------|---------|
 | Word, Excel, PowerPoint|sí |
 |Outlook| sí | |
@@ -60,7 +60,7 @@ Este evento se genera cada vez que se actualiza una etiqueta de confidencialidad
 - El etiquetado de confidencialidad Office aplicaciones nativas en Outlook recopila la última acción que se generó antes de las acciones de envío de correo electrónico o guardar archivos. Por ejemplo, si el usuario cambia de etiqueta en un correo electrónico varias veces antes de enviarlo, la última etiqueta que se encuentra en el correo electrónico cuando se envía se captura en el registro de auditoría y, a continuación, se notifica en el explorador de actividades. 
 
 
-|Origen  |Notificado en el explorador de actividades|Nota  |
+|Origen  |Notificado en el explorador de actividades|Nota:  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |sí         |
 |Outlook         |sí         |
@@ -81,7 +81,7 @@ Este evento se genera cada vez que se quita una etiqueta de confidencialidad de 
 - Se captura en el momento de la aparición en complementos de Azure Information Protection. 
 - El etiquetado de confidencialidad, Office etiqueta MIP nativa, en Outlook recopila el último evento de etiquetado que se generó antes de las acciones de envío de correo electrónico/guardado de archivos.
 
-|Origen  |Notificado en el explorador de actividades | Nota  |
+|Origen  |Notificado en el explorador de actividades | Nota:  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |sí         |
 |Outlook         |sí         ||
@@ -99,7 +99,7 @@ Este evento se genera cada vez que se quita una etiqueta de confidencialidad de 
 
 Este evento se genera cada vez que se abre un documento de confidencialidad etiquetado o protegido.
 
-|Origen  |Notificado en el explorador de actividades | Nota  |
+|Origen  |Notificado en el explorador de actividades | Nota:  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |sí         |
 |Outlook         |no         |
@@ -117,7 +117,7 @@ Este evento se genera cada vez que se abre un documento de confidencialidad etiq
 
 Este evento se genera cada vez que se detectan archivos cuando se usa AIP Scanner para examinar datos confidenciales en varias ubicaciones y busca archivos.
 
-|Origen  |Notificado en el explorador de actividades | Nota  |
+|Origen  |Notificado en el explorador de actividades | Nota:  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |no aplicable         |
 |Outlook         |no aplicable         |
@@ -135,7 +135,7 @@ Este evento se genera cada vez que se detectan archivos cuando se usa AIP Scanne
 
 Este evento se genera cada vez que se cambia el nombre de un documento con una etiqueta de confidencialidad. 
 
-|Origen  | Notificado en el explorador de actividades | Nota  |
+|Origen  | Notificado en el explorador de actividades | Nota:  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |sí         |
 |Outlook         |no aplicable         |
@@ -153,7 +153,7 @@ Este evento se genera cada vez que se cambia el nombre de un documento con una e
 
 Este evento se genera cada vez que el escáner AIP detecta que se ha quitado un archivo examinado previamente.
 
-|Origen  |Notificado en el explorador de actividades | Nota  |
+|Origen  |Notificado en el explorador de actividades | Nota:  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |no aplicable         |
 |Outlook         |no aplicable         |
@@ -170,7 +170,7 @@ Este evento se genera cada vez que el escáner AIP detecta que se ha quitado un 
 
 Este evento se genera la protección por primera vez que se agrega manualmente a un elemento que no tiene una etiqueta.
 
-|Origen  |Notificado en el explorador de actividades | Nota  |
+|Origen  |Notificado en el explorador de actividades | Nota:  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |no         |
 |Outlook         |no         |
@@ -227,7 +227,7 @@ Este evento se genera cada vez que una directiva DLP coincide en un documento o 
 |SharePoint Online|sí          |
 |OneDrive |sí|
 |Teams |sí   |
-|Dispositivos Windows 10         |sí |
+|Dispositivos con Windows 10         |sí |
 |MAC         |no     |
 |local         |no|
 |MCAS     |no        | 

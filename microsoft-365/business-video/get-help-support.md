@@ -15,17 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Debe ser administrador de una suscripción empresarial para obtener ayuda de administrador o soporte técnico en línea o por teléfono con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: f38e07cb7db25cbc6d6fa3e813d8f7c5863e4055
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d636f153e41963ada30bd10066e4211325933cbe
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570658"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217297"
 ---
 # <a name="get-support"></a>Obtener soporte técnico
 
@@ -158,7 +159,7 @@ Gravedad B/C: 9:00 - 24:00 (hora de Beijing), 365 días al año.
 
 ### <a name="open-an-online-request"></a>Abrir una solicitud en línea
 
-Ahorre tiempo iniciando su solicitud de servicio en línea. En el Centro de administración de Microsoft 365, elija **Soporte** \> **Nueva solicitud de servicio**.
+Ahorre tiempo iniciando su solicitud de servicio en línea. En el 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, elija **Soporte técnico** \> **Nueva solicitud de servicio**.
 
 ### <a name="call-support"></a>Llame al servicio de soporte técnico
 
