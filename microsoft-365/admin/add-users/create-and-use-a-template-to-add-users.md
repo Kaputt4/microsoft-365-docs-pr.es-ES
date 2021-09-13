@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración al agregar varios usuarios.
-ms.openlocfilehash: ff111850cf0dabda464653bc7503622d92e8468a430eb27a3dd2843f6ec5ade5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185289"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Crear y usar una plantilla para agregar usuarios
 
@@ -43,7 +43,7 @@ Al crear una plantilla después de agregar un usuario, los valores que elija par
 - Ubicación de la licencia
 - Opciones de licencia
 - Opciones de aplicación
-- Rol
+- Role
 - La mayoría de la información de perfil, como **Perfil** de trabajo, **Departamento**, **Office**, **Office teléfono** y Dirección de **la calle** 
 
 La siguiente información es específica del usuario y no se guarda en la plantilla:

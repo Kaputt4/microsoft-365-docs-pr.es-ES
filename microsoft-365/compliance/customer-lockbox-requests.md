@@ -16,13 +16,14 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
+ms.custom: admindeeplinkMAC
 description: Obtenga información sobre las solicitudes de caja de seguridad del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede acceder a sus datos cuando se encuentra con un problema.
-ms.openlocfilehash: cb22e34e6bc1d6bb65aceabc874395be83b28724
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 8fae8b83230fb50e956900b8fed737fbb0a6b230
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571416"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184217"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de seguridad del cliente en Office 365
 
@@ -76,9 +77,9 @@ Puede activar los controles de Caja de seguridad del cliente en el Centro de adm
 
 1. Con una cuenta educativa o laboral que tenga asignado el administrador global o el rol **aprobador** de acceso de caja de seguridad del cliente, vaya a [https://admin.microsoft.com](https://admin.microsoft.com) e inicie sesión.
 
-2. Elija **Configuración > org Configuración**.
+2. Elija **Configuración**  >  **org Configuración** Security &  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Privacy**</a>.
 
-3. Seleccione **Seguridad & privacidad Del** cuadro de bloqueo del cliente Editar y, a continuación, mueva la alternancia a Activar o Desactivar para activar  >    >  o desactivar la característica.  
+3. Seleccione **Edición del cuadro de** bloqueo del cliente y, a continuación, mueva el botón de alternancia a  >   **Activar** o Desactivar para activar o desactivar  la característica.
 
     ![Requerir la aprobación de la caja de seguridad del cliente.](../media/CustomerLockbox4.png)
 
@@ -113,7 +114,7 @@ Los registros de auditoría que corresponden a las solicitudes de caja de seguri
 
 Para poder usar el registro de auditoría para realizar un seguimiento de las solicitudes de Caja de seguridad del cliente, hay algunos pasos que debe seguir para configurar el registro de auditoría. Para obtener más información, [vea Search the audit log in the Security & Compliance Center](/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Una vez que haya completado la configuración, siga estos pasos para crear una consulta de búsqueda de registro de auditoría para devolver registros de auditoría relacionados con la caja de seguridad del cliente:
 
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [Seguridad & cumplimiento](https://protection.office.com).
   
 2. Inicie sesión con su cuenta profesional o educativa.
 
@@ -157,7 +158,7 @@ Cuando una persona de la organización aprueba o deniega una solicitud de caja d
 | Dirección IP | La dirección IP del equipo en el que el aprobador ha aprobado o denegado una solicitud. |
 | Usuario       | La cuenta de servicio BOXServiceAccount@ \[ customerforest \] .prod.outlook.com.            |
 | Actividad   | Set-AccessToCustomerDataRequest; esta es la actividad de auditoría que se registra cuando usted aprueba o deniega una solicitud de Caja de seguridad del cliente.                                |
-| Elemento       | Guid de la solicitud de caja de seguridad del cliente                             |
+| Item       | Guid de la solicitud de caja de seguridad del cliente                             |
 
 La siguiente captura de pantalla muestra un ejemplo de un registro de registro de auditoría que corresponde a una solicitud de caja de seguridad de cliente aprobada. Si se denegó una solicitud de caja de seguridad del cliente, el valor del parámetro **ApprovalDecision** sería **Deny**.
 
@@ -178,7 +179,7 @@ Las acciones que ha realizado un ingeniero de Microsoft después de aprobar una 
 | Actividad   | Nombre de la actividad realizada por el ingeniero de Microsoft.|
 | Item       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 #### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>¿Microsoft 365 a qué servicios se aplica la caja de seguridad del cliente?
 
@@ -220,7 +221,7 @@ Los administradores globales y cualquier persona que haya asignado el rol de adm
 
 #### <a name="how-do-i-opt-in-to-customer-lockbox"></a>¿Cómo puedo participar en la caja de seguridad del cliente?
 
-Un administrador global puede habilitar y configurar la caja de seguridad del cliente en el Microsoft 365 o Centro de administración de Microsoft 365.
+Un administrador global puede habilitar y configurar la caja de seguridad del cliente en el Microsoft 365 o <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>Si apruebo una solicitud de caja de seguridad de cliente, ¿qué puede hacer el ingeniero y cómo voy a saber lo que hizo el ingeniero de Microsoft?
 
@@ -228,7 +229,7 @@ Después de aprobar una solicitud de caja de seguridad del cliente, el ingeniero
 
 #### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>¿Cómo sé que Microsoft sigue el proceso de aprobación?
 
-Puede hacer referencia cruzada a las notificaciones de aprobación de correo electrónico enviadas a administradores y aprobadores de su organización con el historial de solicitudes de caja de seguridad del cliente en el Centro de administración de Microsoft 365.
+Puede hacer referencia cruzada a las notificaciones de aprobación de correo electrónico enviadas a administradores y aprobadores de su organización con el historial de solicitudes de caja de seguridad del cliente en [el Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
 La caja de seguridad del cliente se incluye en el último informe de auditoría [de SOC 1 SSAE 16](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports). Para obtener más información, puede encontrar los informes más recientes en el Portal de confianza [de servicio de Microsoft](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports).
 
@@ -246,7 +247,7 @@ Actualmente, el período máximo permitido para los permisos de acceso concedido
 
 #### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>¿Cómo puedo obtener un historial de todas las solicitudes de caja de seguridad del cliente?
 
-Todas las solicitudes de caja de seguridad del cliente se ven en el Centro de administración de Microsoft 365.
+Todas las solicitudes de caja de seguridad del cliente se ven en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
 #### <a name="how-do-i-correlate-the-content-access-requests-with-the-related-audit-logs"></a>¿Cómo correlacionar las solicitudes de acceso al contenido con los registros de auditoría relacionados?
 

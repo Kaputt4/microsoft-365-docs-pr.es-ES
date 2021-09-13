@@ -15,11 +15,11 @@ ms.custom: admindeeplinkMAC
 localization_priority: Normal
 description: Como administrador global, puedes anclar hasta tres aplicaciones al iniciador de aplicaciones de los usuarios.
 ms.openlocfilehash: bbb41dfcb72849287bb9ce87ab2c9d250b1b4d99
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589233"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187150"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>Anclar aplicaciones al iniciador de aplicaciones de los usuarios
 

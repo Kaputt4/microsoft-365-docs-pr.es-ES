@@ -13,11 +13,11 @@ localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 2555070438ead608b470f3291bd74dea0b657543
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572124"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190844"
 ---
 # <a name="contact-support-for-china-prc"></a>Póngase en contacto con el soporte técnico de China (PRC)
 

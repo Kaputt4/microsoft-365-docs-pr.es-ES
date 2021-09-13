@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector DataParser quip de 17a-4 para importar y archivar datos quip en Microsoft 365.
 ms.openlocfilehash: df27d4c222b1c7d57e1ef0df5763fdc7b3a486fa
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567549"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186254"
 ---
 # <a name="set-up-a-connector-to-archive-quip-data"></a>Configurar un conector para archivar datos quip
 

@@ -1,5 +1,5 @@
 ---
-title: Usar listas de Microsoft para realizar un seguimiento de la información empresarial
+title: Usar Listas Microsoft para realizar un seguimiento de la información empresarial
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,21 +15,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-description: Obtenga información sobre listas de Microsoft. Con listas de Microsoft, puede realizar un seguimiento de los detalles del cliente, como el tipo de cliente, el cumplimiento del pedido y el progreso del pedido.
-ms.openlocfilehash: 3f427e32bf0b8ce6933eedd56bb3fac8e7e5d2ae3da667f8c7e8d5d95c00931f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Obtenga información sobre Listas Microsoft. Con Listas Microsoft, puede realizar un seguimiento de los detalles del cliente, como el tipo de cliente, el cumplimiento de pedidos y el progreso del pedido.
+ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900588"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188774"
 ---
-# <a name="use-microsoft-lists-to-track-business-info"></a>Usar listas de Microsoft para realizar un seguimiento de la información empresarial
+# <a name="use-microsoft-lists-to-track-business-info"></a>Usar Listas Microsoft para realizar un seguimiento de la información empresarial
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MnGM?autoplay=false]
 
 ## <a name="try-it"></a>Probarlo
 
-Realice un seguimiento de la información y organice el trabajo con listas de Microsoft. Crea una lista desde cero, desde Excel, desde una lista existente o desde una plantilla. Puede empezar desde Microsoft 365, Microsoft Teams o SharePoint.
+Realice un seguimiento de la información y organice el trabajo Listas Microsoft. Crea una lista desde cero, desde Excel, desde una lista existente o desde una plantilla. Puede empezar desde Microsoft 365, Microsoft Teams o SharePoint.
 
 ### <a name="add-an-item-to-the-list"></a>Agregar un elemento a la lista
 

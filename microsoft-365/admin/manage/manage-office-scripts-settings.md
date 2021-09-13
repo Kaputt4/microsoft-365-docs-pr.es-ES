@@ -20,11 +20,11 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo administrar la configuración Office scripts para los usuarios de su organización.
 ms.openlocfilehash: 4af5d318552b371e9b7eef5be6750fde2c0b2ace
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187174"
 ---
 # <a name="manage-office-scripts-settings"></a>Administrar la configuración de los Scripts de Office
 

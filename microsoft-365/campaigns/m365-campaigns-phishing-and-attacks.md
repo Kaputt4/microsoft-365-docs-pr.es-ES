@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: Protéjase contra el phishing y otros ataques con Microsoft 365.
 ms.openlocfilehash: 2bce59394d5ed6a402983798c656e3515ceb08f2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573336"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188694"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protegerse contra la suplantación de identidad (phishing) y otros ataques
 

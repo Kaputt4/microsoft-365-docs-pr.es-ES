@@ -19,11 +19,11 @@ search.appverid:
 - MOE150
 description: Obtenga información acerca de cómo probar la funcionalidad de correo electrónico de mi dominio personalizado en un buzón de Microsoft 365 usando solo dos cuentas de prueba.
 ms.openlocfilehash: 6980480893e3e544a912edbe7d7da0993e781df2
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394173"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186982"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
 

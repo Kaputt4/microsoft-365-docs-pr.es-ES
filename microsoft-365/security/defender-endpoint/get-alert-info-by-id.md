@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 216aff09435a6bb9280761c2a0895f86c4d4b0d07b0efb49993646576e00417c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a9a4505ec4609dc42ec75159c2d905d16e01b559
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890484"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185838"
 ---
 # <a name="get-alert-information-by-id-api"></a>Obtener información de alerta por API de id.
 
@@ -72,7 +72,7 @@ GET /api/alerts/{id}
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

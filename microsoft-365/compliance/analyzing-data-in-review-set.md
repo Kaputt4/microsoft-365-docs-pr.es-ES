@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 332c467ed6d178d6d8252cdd337a9b23384d88790729e3923eb0cafae981cd82
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843112"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190164"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizar datos en un conjunto de revisión en Advanced eDiscovery
 

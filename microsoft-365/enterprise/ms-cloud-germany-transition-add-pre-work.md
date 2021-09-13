@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 8d2f33f7bd574610980e64c4da769f3418042bc302c1a5d33d081ceeeebfd4a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 77e3dbd3f819aea15632a0ba069249a44a8663fb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899012"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191237"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Actividades previas a la migración de Microsoft Cloud Deutschland
 
@@ -123,7 +123,7 @@ Leer y aplicar los pasos [de migración de ADFS](ms-cloud-germany-transition-add
 Exporte SharePoint de búsqueda si se han aplicado modificaciones. |La SharePoint de búsqueda no se migrará. Si se han aplicado modificaciones SharePoint búsqueda, asegúrese de tomar nota de los cambios y exportar la configuración de búsqueda. La configuración debe importarse de nuevo después de SharePoint se haya completado la transición.|Las soluciones personalizadas basadas en un esquema de búsqueda modificado no estarán disponibles hasta que se hayan aplicado de nuevo las modificaciones de búsqueda.|
 
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange en línea
 
 <!-- before phase 5 -->
 
@@ -224,7 +224,7 @@ Durante la migración, mientras la organización está entre la fase 2 y la fase
 
 |Pasos|Descripción|Impacto|
 |---|---|---|
-|Para las suscripciones de espacio aislado de Dynamics 365, asegúrese de descargar el entorno de producción de la instancia de Dynamics SQL de su suscripción a Dynamics 365 en Microsoft Cloud Deutschland. La copia de seguridad de producción más reciente debe restaurarse en el espacio aislado antes de la migración de espacio aislado.|La migración de Dynamics 365 requiere que los clientes se aseguren de que el entorno de espacio aislado se actualice con la base de datos de producción más reciente.|El equipo de FastTrack ayudará a los clientes a realizar ejecuciones secas para validar la actualización de versión de 8.x a 9.1.x.|
+|Para las suscripciones de espacio aislado de Dynamics 365, asegúrese de descargar el entorno de producción de la instancia de Dynamics SQL de su suscripción a Dynamics 365 en Microsoft Cloud Deutschland. La copia de seguridad de producción más reciente debe restaurarse en el espacio aislado antes de la migración de espacio aislado.|La migración de Dynamics 365 requiere que los clientes se aseguren de que el entorno de espacio aislado se actualice con la base de datos de producción más reciente.|El FastTrack ayudará a los clientes a realizar ejecuciones en seco para validar la actualización de versión de 8.x a 9.1.x.|
 
 
 ## <a name="power-bi"></a>Power BI

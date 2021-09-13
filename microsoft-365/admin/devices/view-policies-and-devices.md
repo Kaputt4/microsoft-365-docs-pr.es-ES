@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Para ver las directivas y acciones de dispositivo, inicie sesión en Microsoft 365 para empresas con credenciales de administrador global.
 ms.openlocfilehash: a4494b7125576f927a0cd7f715311ae616c6497c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566387"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184814"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Ver y administrar directivas y dispositivos
 

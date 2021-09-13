@@ -27,11 +27,11 @@ search.appverid:
 - MOE150
 description: Siga los pasos de este artículo para dar a otro empleado acceso a los datos de OneDrive y Outlook antiguos.
 ms.openlocfilehash: e0904c6aeca919dd3f93044ce177a34761cb141b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564727"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185222"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Paso 4: Dar a otro empleado acceso a OneDrive y Outlook datos
 

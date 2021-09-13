@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 793ca89925e98bfc622357e126e4f0c44893c3cd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 8c8de260ebd8d16d7b402465e91a37d78e9d904b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574645"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187513"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -79,7 +79,7 @@ Una de las opciones al realizar acciones [de respuesta en un archivo](respond-
 
 Los archivos bloqueados automáticamente por un indicador no aparecerán en el Centro de acciones del archivo, pero las alertas seguirán estando visibles en la cola de alertas.
 
-## <a name="private-preview-alerting-on-file-blocking-actions"></a>Vista previa privada: alertar sobre acciones de bloqueo de archivos
+## <a name="public-preview-alerting-on-file-blocking-actions"></a>Vista previa pública: Alertar sobre acciones de bloqueo de archivos
 
 > [!IMPORTANT]
 > La información de esta sección (**Public Preview for Automated investigation and remediation engine**) se relaciona con el producto de versión preliminar que podría modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -91,24 +91,21 @@ En Microsoft 365 Defender, vaya a Configuración > Endpoints > Indicators > add 
 - El título de alerta
 - Gravedad de la alerta
 - Categoría
-- Description
+- Descripción
 - Acciones recomendadas
 
 ![Configuración de alertas para indicadores de archivo.](images/indicators-generate-alert.png)
 
 > [!IMPORTANT]
 >
->- Normalmente, los bloques de archivos se aplican y se quitan en un par de minutos, pero pueden tardar más de 30 minutos.
+> - Normalmente, los bloques de archivos se aplican y se quitan en un par de minutos, pero pueden tardar más de 30 minutos.
+> - Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro. Una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo SHA-1, que ganará una directiva de IoC de hash de archivo MD5 si los tipos hash definen el mismo archivo. Esto siempre es así independientemente del grupo de dispositivos.
+> - En todos los demás casos, si las directivas de IoC de archivos en conflicto con el mismo destino de aplicación se aplican a todos los dispositivos y al grupo del dispositivo, en el caso de un dispositivo, la directiva del grupo de dispositivos ganará.
+> - Si la directiva de grupo EnableFileHashComputation está deshabilitada, se reduce la precisión de bloqueo del archivo IoC. Sin embargo, la `EnableFileHashComputation` habilitación puede afectar al rendimiento del dispositivo. Por ejemplo, copiar archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN, puede tener un efecto en el rendimiento del dispositivo.
 >
->- Si hay directivas de IoC de archivos en conflicto con el mismo tipo de aplicación y destino, se aplicará la directiva del hash más seguro. Una directiva de IoC de hash de archivo SHA-256 ganará una directiva de IoC de hash de archivo SHA-1, que ganará una directiva de IoC de hash de archivo MD5 si los tipos hash definen el mismo archivo. Esto siempre es así independientemente del grupo de dispositivos.
->
->- En todos los demás casos, si las directivas de IoC de archivos en conflicto con el mismo destino de aplicación se aplican a todos los dispositivos y al grupo del dispositivo, en el caso de un dispositivo, la directiva del grupo de dispositivos ganará.
->
->- Si la directiva de grupo EnableFileHashComputation está deshabilitada, se reduce la precisión de bloqueo del archivo IoC. Sin embargo, la `EnableFileHashComputation` habilitación puede afectar al rendimiento del dispositivo. Por ejemplo, copiar archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN, puede tener un efecto en el rendimiento del dispositivo.
->
->   Para obtener más información acerca de la directiva de grupo EnableFileHashComputation, vea [Defender CSP](/windows/client-management/mdm/defender-csp).
+> Para obtener más información acerca de la directiva de grupo EnableFileHashComputation, vea [Defender CSP](/windows/client-management/mdm/defender-csp).
 
-## <a name="private-preview-advanced-hunting-capabilities"></a>Vista previa privada: capacidades avanzadas de búsqueda
+## <a name="public-preview-advanced-hunting-capabilities"></a>Vista previa pública: capacidades avanzadas de búsqueda
 
 > [!IMPORTANT]
 > La información de esta sección (**Public Preview for Automated investigation and remediation engine**) se relaciona con el producto de versión preliminar que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -132,7 +129,7 @@ Archivos:
 
 Certificados:
 
-- EUS:Win32/CustomCertEnterpriseBlock!cl  
+- EUS:Win32/CustomCertEnterpriseBlock!cl
 
 La actividad de acción de respuesta también se puede ver en la escala de tiempo del dispositivo.
 
@@ -156,15 +153,20 @@ Las características de aplicación vulnerables de bloqueo de amenazas y adminis
 
 ### <a name="examples"></a>Ejemplos
 
-|Componente|Aplicación de componentes|Indicador de archivo Acción|Resultado
-|---|---|---|---|
-|Exclusión de ruta de acceso de archivo de reducción de superficie de ataque|Permitir|Bloquear|Bloquear
-|Regla de reducción de superficie de ataque|Bloquear|Permitir|Permitir
-|Control de aplicaciones de Windows Defender|Permitir|Bloquear|Permitir
-|Control de aplicaciones de Windows Defender|Bloquear|Permitir|Bloquear
-|Antivirus de Microsoft Defender exclusión|Permitir|Bloquear|Permitir
+<br>
 
-## <a name="see-also"></a>Vea también
+****
+
+|Componente|Aplicación de componentes|Indicador de archivo Acción|Resultado|
+|---|---|---|---|
+|Exclusión de ruta de acceso de archivo de reducción de superficie de ataque|Permitir|Bloquear|Bloquear|
+|Regla de reducción de superficie de ataque|Bloquear|Permitir|Permitir|
+|Control de aplicaciones de Windows Defender|Permitir|Bloquear|Permitir|
+|Control de aplicaciones de Windows Defender|Bloquear|Permitir|Bloquear|
+|Antivirus de Microsoft Defender exclusión|Permitir|Bloquear|Permitir|
+|
+
+## <a name="see-also"></a>Consulte también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

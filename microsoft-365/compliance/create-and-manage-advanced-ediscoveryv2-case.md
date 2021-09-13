@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: En este artículo se describe cómo crear y administrar Advanced eDiscovery casos. El primer paso es crear un caso y empezar a usar Advanced eDiscovery características y funcionalidades.
 ms.openlocfilehash: 69d2f22a3792f2217ea8ef58ae9771dd4a10f32d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189814"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Crear y administrar un Advanced eDiscovery caso
 

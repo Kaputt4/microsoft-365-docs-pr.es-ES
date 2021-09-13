@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un buzón compartido y configure algunas opciones para sus usuarios, como el reenvío de correo electrónico y las respuestas automáticas.
-ms.openlocfilehash: dafc63bd09cb50501503ab74086b9b51f73e8e7ea1b72d420e610eb58681072c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e69d1bbde5784339f3973bf456eca1ded72840af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184761"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Establecer la configuración de buzón compartido
 

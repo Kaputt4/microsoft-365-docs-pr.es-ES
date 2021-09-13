@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: bd43fc2bfb8ef83eff988481a87dd48b1b53566b
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350021"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189397"
 ---
 # <a name="restrict-app-execution-api"></a>Restringir api de ejecución de aplicaciones
 
@@ -81,8 +81,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/restrictCodeExec
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
-Content-Type|string|application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

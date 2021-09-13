@@ -14,7 +14,7 @@ metadata:
   localization_priority: Priority
 productDirectory:
   items:
-    - title: Introducción
+    - title: Comenzar
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: Planee su traslado a Microsoft 365 para empresas.
       url: what-is-microsoft-365.md

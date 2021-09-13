@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Envíe correo electrónico como una lista de distribución en Microsoft 365 para que cuando un miembro responda a un mensaje parezca que es de la lista de distribución.
 ms.openlocfilehash: 021f44591805385f0575d6fa2ca550289a72c82d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187113"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Enviar correo electrónico como una lista de distribución
 

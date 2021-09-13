@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Aprenda a realizar un seguimiento de los problemas que se encuentran al configurar un dominio personalizado asegurándose de que los registros DNS estén configurados correctamente.
 ms.openlocfilehash: 5dd84e829ed1cd8ea1cc9738ac88eaabcba52648
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184622"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Buscar y corregir problemas después de agregar el dominio o los registros DNS
 

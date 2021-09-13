@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Cuando se agrega un custodio a un caso Advanced eDiscovery, cualquier contenido que se consideró parcialmente indizado se vuelve a procesar para que sea totalmente posible realizar búsquedas.
 ms.openlocfilehash: 8a43b0cd9b7fcac1745b917dc5a1c198fa2a1e61
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928709"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184041"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Clasificación avanzada de los datos de administración
 

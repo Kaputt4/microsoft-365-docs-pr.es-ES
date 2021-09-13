@@ -17,11 +17,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de casos, los límites de indización y los límites de búsqueda en vigor para la solución Advanced eDiscovery en Microsoft 365.
 ms.openlocfilehash: 7771f653550c050250126b7ff93b83ee2e175937
-ms.sourcegitcommit: fce9a89b8280f41779835b18dceb59fa17384acf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58666759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188081"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
@@ -41,7 +41,7 @@ En la tabla siguiente se enumeran los límites de los casos y los conjuntos de r
 |Número máximo de grupos de etiquetas por caso.  <br/> |1000 <br/> |
 |Número máximo de etiquetas por caso.  <br/> |1000 <br/> |
 |Trabajos simultáneos máximos en la organización para agregar contenido a un conjunto de revisión. Estos trabajos se **denominan Agregar datos a un conjunto** de revisión y se muestran en la **pestaña** Trabajos en un caso.| 10 <sup>4</sup> |
-|Trabajos simultáneos máximos para agregar contenido a un conjunto de opiniones por usuario. Estos trabajos se **denominan Agregar datos a un conjunto** de revisión y se muestran en la **pestaña** Trabajos en un caso. | 3  |
+|Trabajos simultáneos máximos para agregar contenido a un conjunto de opiniones por usuario. Estos trabajos se **denominan Agregar datos a un conjunto** de revisión y se muestran en la **pestaña** Trabajos en un caso. | 3 |
 |||
 
 ## <a name="hold-limits"></a>Límites de retención
@@ -76,7 +76,7 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 |Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. |10 | 
 |Número máximo de caracteres para una consulta de búsqueda (incluidos los operadores y las condiciones). |10 000 &nbsp; <sup>2</sup>|
 |Número máximo de caracteres para una consulta de búsqueda para SharePoint y OneDrive para la Empresa (incluidos los operadores y las condiciones). |10,000<br>4.000 con caracteres comodín &nbsp; <sup>2</sup>|
-|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo, **un \* *_ o _* set \***.|3  |  
+|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo, **un \* *_ o _* set \***.|3 |  
 |Variantes máximas devueltas cuando se usa el carácter comodín de prefijo para buscar una frase exacta o cuando se usa un prefijo comodín y el **operador booleano NEAR.** |10 000 &nbsp; <sup>3</sup>|
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes. |100|
 |Número máximo de elementos de todos los buzones que se muestran en la página de vista previa para las búsquedas.|1,000|

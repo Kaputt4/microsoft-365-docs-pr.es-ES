@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: En un plazo de 30 días después de eliminar una cuenta de usuario, puede restaurar la cuenta y todos los datos, y el usuario puede iniciar sesión con la misma cuenta.
-ms.openlocfilehash: 7b030d3e6792b168977b63f1ca686e8870ea103dd86eec3312f4c0760154ecab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e37f913bcc6a54bdcc1e0f52168fe1aab0c8afdd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185169"
 ---
 # <a name="restore-a-user"></a>Restaurar un usuario
    

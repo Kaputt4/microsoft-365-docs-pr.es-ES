@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
 ms.openlocfilehash: 41dda8573b66fa217fb92b0ee179de2cad9bc861
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567477"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184193"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 

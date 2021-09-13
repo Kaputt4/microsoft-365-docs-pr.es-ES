@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: Obtenga el Yammer actividad y obtenga más información sobre el número de usuarios que usan Yammer para publicar, gustar o leer un mensaje.
 ms.openlocfilehash: d938052da82c1f1a0c038813dd7a0d02bbb510e4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564785"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185382"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365 Informes en el Centro de administración: informe Yammer actividad
 
@@ -48,7 +48,7 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Elemento|Description|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo. Esta cuadrícula muestra a los usuarios que iniciaron sesión Yammer la cuenta Microsoft 365 o que iniciaron sesión en la red mediante el inicio de sesión único. <br/> |

@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector DataParser de Bloomberg de 17a-4 para importar y archivar datos de Bloomberg en Microsoft 365.
 ms.openlocfilehash: 93cc1fa23bd5cee77d12db7f2a6867ed030764b4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186318"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-data"></a>Configurar un conector para archivar datos de Bloomberg
 

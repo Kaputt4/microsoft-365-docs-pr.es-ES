@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Use el panel Advanced eDiscovery para conjuntos de revisión para analizar rápidamente su corpus para identificar tendencias o estadísticas clave que le ayudarán a desarrollar su estrategia de revisión.
 ms.openlocfilehash: 6466e33964969d6cd75addba7092ee95e0c321ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565523"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191594"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery panel para conjuntos de revisión
 

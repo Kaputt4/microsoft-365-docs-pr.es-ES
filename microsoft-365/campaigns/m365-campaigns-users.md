@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo estas recomendaciones de seguridad Microsoft 365 Empresa Premium afectan a los usuarios y protege los datos.
 ms.openlocfilehash: 8f8ccbbb1f9edb6eb9b1f29078317727b5e9b6e7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567137"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186465"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Cómo afectan estas recomendaciones de seguridad a los usuarios
 

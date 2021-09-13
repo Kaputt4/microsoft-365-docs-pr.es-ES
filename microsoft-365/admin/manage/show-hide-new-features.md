@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: Decida qué características Office mostrar u ocultar cuando un usuario elija Ayuda > Novedades de su Aplicación de Office en Windows mediante la característica "Novedades de Office" en el Centro de administración de Microsoft 365.
 ms.openlocfilehash: 31506f05054d6ee98eae0e1f075618d866d3934c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394449"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187086"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Administrar qué Office aparecen en Novedades
 

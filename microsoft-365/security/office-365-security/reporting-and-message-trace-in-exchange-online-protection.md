@@ -15,12 +15,12 @@ ms.custom:
 description: En este artículo, aprenderá sobre los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online protección contra errores (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8131fcd655d423438f80d3f2b4b5cbaf9acc32be056ef2b7a62e6647dd67ee70
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56886179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187350"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Informes y seguimiento de mensajes en EOP
 

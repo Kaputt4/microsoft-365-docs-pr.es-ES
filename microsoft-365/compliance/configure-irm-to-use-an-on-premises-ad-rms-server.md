@@ -18,11 +18,11 @@ ms.collection:
 description: Obtenga información sobre cómo configurar Information Rights Management (IRM) en Exchange Online usar un servidor de Active Directory Rights Management Service (AD RMS).
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 64d89d52b4e835c81ed1e2c8bbd54eaaae6f1823
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572064"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184262"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar IRM para usar un servidor de AD RMS local
 

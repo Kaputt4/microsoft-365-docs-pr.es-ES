@@ -1,5 +1,5 @@
 ---
-title: Migrar datos a mi Microsoft 365 Empresa Estándar suscripción
+title: Migrar datos a mi suscripción de Microsoft 365 Empresa Estándar
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolio
 description: Migre Outlook, OneDrive y Teams datos a Microsoft 365 Empresa Estándar
 ms.openlocfilehash: 0a690c5092d3f288544edc5077605a6728bffc80
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866932"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186638"
 ---
-# <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>Migrar datos a mi Microsoft 365 Empresa Estándar suscripción
+# <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>Migrar datos a mi suscripción de Microsoft 365 Empresa Estándar
 
 Siga los pasos de este artículo para mover los datos OneDrive, Outlook y Teams a su Microsoft 365 Empresa Estándar suscripción.
 
@@ -70,7 +70,7 @@ Con tus cuentas Microsoft 365 personales y empresariales sincronizadas con el di
 
 - Si ha compartido archivos en OneDrive, tendrá que volver a compartir estos archivos en el nuevo OneDrive para trabajar después de moverlos. Además, una vez que comparta estos archivos, se recomienda eliminar los archivos originales de OneDrive. De esta forma, los usuarios no podrán hacer referencia a copias des actualizadas de los archivos que había compartido con ellos anteriormente.
 
-## <a name="step-set-up-outlook-for-email"></a>Paso: Configurar Outlook correo electrónico
+## <a name="step-set-up-outlook-for-email"></a>Paso: configurar Outlook para correo electrónico
 
 1. En el menú Inicio de Windows, busque Outlook y selecciónelo.
 
@@ -114,7 +114,7 @@ También puede usar el centro de administración de Exchange para importar el co
 
 ## <a name="move-data-from-your-personal-microsoft-teams-account-to-new-teams-for-work-account"></a>Mover datos de su cuenta personal Microsoft Teams a nueva cuenta Teams para la cuenta de trabajo
 
-1. Abra Microsoft Teams, seleccione el icono de perfil y, a continuación, Agregue cuenta de **trabajo o escuela.**
+1. Abra Microsoft Teams, seleccione el icono de perfil y, a continuación, **Agregar cuenta profesional o educativa**.
 
 2. Siga los pasos para agregar su nueva cuenta a Teams para el trabajo. Consulta [Iniciar sesión y empezar a usar Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) para obtener más información.
 

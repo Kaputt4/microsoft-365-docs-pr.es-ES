@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: a9dc5b908534cf791d8538069a8d8db9f10e0e48
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185782"
 ---
 # <a name="get-user-related-alerts-api"></a>Obtener la API de alertas relacionadas con el usuario
 

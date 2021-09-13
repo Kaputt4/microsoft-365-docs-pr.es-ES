@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Aprende a crear, editar o eliminar una directiva de administración de aplicaciones y a proteger archivos de trabajo en dispositivos Android o iOS.
 ms.openlocfilehash: 1ab7c57e1a9da1a68c07535c2550f0762f7c8141
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184918"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS
 

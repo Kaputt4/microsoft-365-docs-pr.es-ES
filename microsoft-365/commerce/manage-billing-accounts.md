@@ -17,21 +17,22 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 description: Obtenga información sobre las cuentas de facturación y cómo se usan para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras.
 ms.date: 03/17/2021
-ms.openlocfilehash: 0e88a1aa7a690b61744339f9b7e7dc931ed3ab85eb240868b3d66eabcf3c4b4e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 551165a9ddcde03f96b6a2d03e5b1f5cd6e93eec
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190277"
 ---
 # <a name="understand-billing-accounts"></a>Comprender las cuentas de facturación
 
 Se crea una cuenta de facturación cuando se registra para probar o comprar productos de Microsoft. Usas tu cuenta de facturación para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras. Puedes tener acceso a varias cuentas de facturación. Por ejemplo, se inscribió en Microsoft 365 directamente, o bien tiene acceso al contrato de servicios de Enterprise Agreement de productos de & Microsoft o al contrato de cliente de Microsoft. Para cada uno de estos escenarios, tendrías una cuenta de facturación independiente.
 
-El Centro de administración de Microsoft 365 admite actualmente el siguiente tipo de cuentas de facturación:
+El <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> admite actualmente el siguiente tipo de cuentas de facturación:
 
 - Microsoft Online Services: esta cuenta de facturación se crea al registrarse para una suscripción Microsoft 365 suscripción directamente.
 - Programa contrato de & de servicios de Microsoft Products (MPSA): esta cuenta de facturación se crea cuando su organización firma un contrato de licencias por volumen de MPSA para comprar software y servicios en línea.
@@ -45,7 +46,7 @@ La parte superior de la **página de** detalles cuentas de facturación es su pe
 
 En la tabla siguiente se enumeran los términos importantes que se ven en la página de detalles **cuentas de** facturación.
 
-| Nombre del campo | Description |
+| Nombre del campo | Descripción |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dirección vendida | La entidad jurídica responsable del pago e identificada en la factura. La dirección proporcionada aquí se usa para determinar la tasa de impuestos, a menos que opte por proporcionar una dirección de envío alternativa durante la compra. Para obtener más información, consulte [Información sobre impuestos](billing-and-payments/tax-information.md). |
 | Segmento | Un campo de solo lectura que identifica el segmento de negocio de su organización (Comercial, Educativo, Gubernamental o Sin ánimo de lucro). |
@@ -68,7 +69,7 @@ En esta sección se enumeran las direcciones de envío asociadas con su cuenta d
 
 ## <a name="understand-access-to-billing-accounts"></a>Comprender el acceso a cuentas de facturación
 
-Puede proporcionar a otros usuarios acceso a la cuenta de facturación en el Centro de administración de Microsoft 365 a través de roles y permisos. Solo el propietario de una cuenta de facturación puede conceder acceso a una cuenta de facturación. Puede asignar uno de los siguientes roles a los usuarios:
+Puede proporcionar a otros usuarios acceso a la cuenta de facturación en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> a través de roles y permisos. Solo el propietario de una cuenta de facturación puede conceder acceso a una cuenta de facturación. Puede asignar uno de los siguientes roles a los usuarios:
 
 - **Propietario de la cuenta de facturación** &mdash; Puede asignar permisos, editar cuentas, firmar acuerdos y ver cuentas.
 - **Colaborador de cuenta de facturación** &mdash; Puede editar cuentas, firmar acuerdos y ver cuentas.

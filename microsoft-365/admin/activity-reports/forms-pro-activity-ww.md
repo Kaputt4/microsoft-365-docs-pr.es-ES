@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo obtener un informe de actividad de Voz del cliente de Microsoft Dynamics 365 mediante el panel Microsoft 365 informes en la Centro de administración de Microsoft 365.
 ms.openlocfilehash: 6c66b4fcee0d2f04e3178ede8360b87ad1abe597
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565041"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185465"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365 Informes en el centro de administración: actividad de Dynamics 365 Customer Voice
 
@@ -49,7 +49,7 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Elemento|Description|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario que realizó la actividad en Microsoft Forms.  <br/> |

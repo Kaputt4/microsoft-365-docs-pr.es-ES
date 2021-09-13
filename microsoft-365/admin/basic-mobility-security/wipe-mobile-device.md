@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: Usa la movilidad básica y la seguridad integradas para quitar información de los dispositivos inscritos.
 ms.openlocfilehash: b687b3d13f95cb05d9261064d385d35ef6d7f7bf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184990"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Borrar un dispositivo móvil en Movilidad básica y seguridad
 

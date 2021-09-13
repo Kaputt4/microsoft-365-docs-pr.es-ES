@@ -15,11 +15,11 @@ ms.custom:
 - AdminSurgePortfolio
 description: Acepte una invitación por correo electrónico para unirse a una Microsoft 365 Empresa Estándar organización mediante una Outlook, Yahoo, Gmail u otra cuenta.
 ms.openlocfilehash: 5fc7fd3fe42ef3e8aa200f4d0fa967b3be6bcdef
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866912"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186617"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>Aceptar una invitación de correo electrónico a una Microsoft 365 Empresa Estándar de suscripción con una Outlook, Yahoo, Gmail u otra cuenta (usuario)
 

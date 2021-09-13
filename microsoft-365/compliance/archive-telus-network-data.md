@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos SMS de la red TELUS en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
 ms.openlocfilehash: d0175abd68ba2795167054c930aefd28be12c039
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561487"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188217"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>Configurar un conector para archivar datos de red TELUS
 

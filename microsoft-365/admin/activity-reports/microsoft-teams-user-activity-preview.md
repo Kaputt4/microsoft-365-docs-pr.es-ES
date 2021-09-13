@@ -20,11 +20,11 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo obtener el informe Microsoft Teams actividad del usuario y obtener información sobre la Teams actividad de la organización.
 ms.openlocfilehash: 6f75b3547af25f06858eb72ab1956e787f6e6bc5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564981"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185438"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de usuario de Microsoft Teams
 
@@ -50,7 +50,7 @@ Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** par
 
 Para garantizar la calidad de los datos, llevamos a cabo comprobaciones diarias de validación de datos durante los últimos tres días y se rellenarán los vacíos detectados. Es posible que observe diferencias en los datos históricos durante el proceso.
 
-|Elemento|Description|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo.   <br/> |

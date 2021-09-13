@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: Obtenga información sobre la diferencia clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
 ms.openlocfilehash: e9f9c417d8603be0d933607ccf527c6d821bcc72
-ms.sourcegitcommit: 7883556c05ceef228dc329f715e8a6213b40d921
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58931259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189747"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios 
 

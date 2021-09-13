@@ -14,11 +14,11 @@ ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La guía básica para configurar los servicios en la nube para Microsoft 365.
 ms.openlocfilehash: 050dc8e622bbfe9f1a065a74f4dffcdd3647074a
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353773"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187974"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Guía básica de servicios en la nube para Microsoft 365
 

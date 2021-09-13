@@ -19,11 +19,11 @@ ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá a exportar, configurar y ver Microsoft 365 registros de auditoría.
 ms.openlocfilehash: 33bcf3ee79a7ee27cc87825458d7d98cda590773
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191544"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportar, configurar y ver registros de registro de auditoría
 

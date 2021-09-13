@@ -20,11 +20,11 @@ ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Obtenga información sobre Power BI y cómo los usuarios de su organización pueden usar este servicio de análisis empresarial.
 ms.openlocfilehash: 5301d3cd6b10101543741637014455aa2b2a207a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186985"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI en su organización
 

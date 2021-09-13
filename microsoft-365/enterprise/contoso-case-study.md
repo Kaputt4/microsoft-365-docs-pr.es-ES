@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Cómo una organización global ficticia pero representativa adoptó Microsoft 365 empresa.
 ms.openlocfilehash: 90d8e0c9d0cd81d415fc8ca9751b0cecd4331623
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354344"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189677"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 para la empresa para Contoso Corporation
 
@@ -92,6 +92,6 @@ Obtenga [información sobre Contoso Corporation](contoso-overview.md) y las cons
 
 ## <a name="see-also"></a>Vea también
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

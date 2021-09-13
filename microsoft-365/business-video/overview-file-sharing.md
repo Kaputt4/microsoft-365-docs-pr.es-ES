@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: Información general sobre cómo compartir los archivos de negocio.
 ms.openlocfilehash: d762620cf07cd9f1201bf173e6e6aa0c16e050eb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188841"
 ---
 # <a name="overview-of-sharing-business-files"></a>Información general sobre cómo compartir archivos empresariales
 

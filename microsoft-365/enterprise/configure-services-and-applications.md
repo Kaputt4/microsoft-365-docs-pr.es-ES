@@ -20,11 +20,11 @@ f1.keywords:
 description: Configure Microsoft 365 Enterprise servicios y aplicaciones, como SharePoint, Exchange y Skype Empresarial.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: f1253f5d36621c252a0fd37b35a73cdf6269ebd5
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187921"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>Configurar Microsoft 365 Enterprise servicios y aplicaciones
 

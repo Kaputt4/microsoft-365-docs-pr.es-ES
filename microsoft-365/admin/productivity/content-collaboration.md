@@ -20,11 +20,11 @@ search.appverid:
 - MOE150
 description: 'Detalles de la colaboración de contenido: las personas experimenta la puntuación de productividad.'
 ms.openlocfilehash: fa4e84f0cf454e28cd773292f2a4065cb1252acf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186905"
 ---
 # <a name="content-collaboration--people-experiences"></a>Colaboración de contenido: experiencias de personas
 
@@ -36,7 +36,7 @@ Para empezar con las perspectivas de colaboración de contenido, los usuarios de
 
 - OneDrive para la Empresa
 - SharePoint
-- Exchange Online
+- Exchange en línea
 
 Para obtener más información, vea [Asignar licencias a los usuarios.](../manage/assign-licenses-to-users.md)
 

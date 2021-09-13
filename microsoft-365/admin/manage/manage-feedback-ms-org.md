@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: Administrar comentarios que los usuarios pueden enviar a Microsoft acerca de los productos de Microsoft.
 ms.openlocfilehash: 7d6d607182a546e869a9f92e84adfa31f7e02a26
-ms.sourcegitcommit: 7883556c05ceef228dc329f715e8a6213b40d921
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "58957174"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187214"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Administrar comentarios de Microsoft para la organización
 

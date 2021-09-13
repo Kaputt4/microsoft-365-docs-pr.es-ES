@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: d4ed33a26bcc7583146d810db7625ed3164d7544
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187390"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API de archivos de detenerse y poner en cuarentena
 
@@ -89,7 +89,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 Parámetro|Tipo|Descripción
 :---|:---|:---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
-Sha1|String|Sha1 del archivo para detener y poner en cuarentena en el dispositivo. **Necesario**.
+Sha1|Cadena|Sha1 del archivo para detener y poner en cuarentena en el dispositivo. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 

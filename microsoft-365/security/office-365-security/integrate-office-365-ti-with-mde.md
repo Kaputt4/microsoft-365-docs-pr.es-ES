@@ -20,11 +20,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ed8d433cd997166ed7fd96034f91eb117b9309cd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58558583"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189114"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Usar Microsoft Defender para Office 365 junto con Microsoft Defender para endpoint
 
@@ -74,7 +74,7 @@ La integración de Microsoft Defender para Office 365 con Microsoft Defender par
 
    Cuando haya terminado, seleccione **Guardar preferencias**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Capacidades de investigación y respuesta de amenazas en Office 365](office-365-ti.md)
 

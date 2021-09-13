@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager proporciona plantillas para crear evaluaciones que se alineen con las normativas, estándares y leyes nacionales, regionales y del sector.
-ms.openlocfilehash: 7b81959f6db033468f5312f53744bceabb9e28768ec5213c11a22c000e2677ff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88d68e270990229164c442939cf93c6fa2d6781f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820416"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189917"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
 

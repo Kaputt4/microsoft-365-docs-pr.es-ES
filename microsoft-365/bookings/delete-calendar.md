@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Use el Centro de administración de Microsoft 365 o Windows PowerShell para eliminar calendarios de Bookings.
 ms.openlocfilehash: fc5975e25fa3b1f2d2aab991cc7aac8038181f3f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572760"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186497"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Eliminar un calendario de reserva en Bookings
 

@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 7fa72bc6e96199fb7773e4df385e3527ac14938e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191017"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a> Recopilación de datos para solucionar problemas avanzados en Windows
 

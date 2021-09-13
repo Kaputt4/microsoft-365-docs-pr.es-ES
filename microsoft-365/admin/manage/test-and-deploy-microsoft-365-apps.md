@@ -15,11 +15,11 @@ search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Busque, pruebe e implemente aplicaciones asociadas de Microsoft y Microsoft para usuarios y grupos de su organización desde el portal de aplicaciones integradas en el Centro de administración de Microsoft 365.
 ms.openlocfilehash: 13276923c55632145207b61032583a26e3553e06
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566981"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187078"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Prueba e implementación de Aplicaciones Microsoft 365 asociados en el portal de aplicaciones integradas
 
@@ -289,7 +289,7 @@ Hay dos casos en los que un Exchange no podrá implementar un complemento:
 - Si un complemento está vinculado a dos o más complementos y webapps, y al menos uno de estos complementos lo implementa otro administrador (exchange/global) y la asignación de usuario no es uniforme. Solo se permite la implementación de complementos cuando la asignación de usuario es la misma para todas las aplicaciones ya implementadas.  
 
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>¿Qué rol de administrador necesito para tener acceso a aplicaciones integradas?
 

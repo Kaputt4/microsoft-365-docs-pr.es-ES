@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: Si es el responsable de configurar las opciones de correo electrónico para todos los usuarios de una empresa, en este artículo se explica cómo configurar Bandeja de entrada Prioritarios para los usuarios.
 ms.openlocfilehash: 6bc33211af5ee0cd064b63f95e720f19cee196e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567813"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184457"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurar la Bandeja de entrada Prioritarios para todos los usuarios de la organización
 

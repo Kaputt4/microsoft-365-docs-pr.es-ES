@@ -9,11 +9,11 @@ ms.service: scheduler
 localization_priority: Normal
 description: Configuración del Programador para Microsoft 365.
 ms.openlocfilehash: 08083937255d9af3499016a32959e2690a222919
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187689"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Configuración del Planificador para Microsoft 365
 

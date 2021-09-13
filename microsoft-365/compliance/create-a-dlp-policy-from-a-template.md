@@ -20,11 +20,11 @@ ms.custom:
 - seo-marvel-mar2020
 description: En este artículo, aprenderá a crear directivas DLP con una de las plantillas incluidas en Office 365.
 ms.openlocfilehash: 1fe14035f23443a8f8f35b5c9ac9edf69bf60ffd
-ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58923935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189867"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 

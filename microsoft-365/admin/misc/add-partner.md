@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Agregue un partner de registro en el momento de Microsoft 365 compra, cambie el partner o elimine un partner de una suscripción.
-ms.openlocfilehash: 39e4ff5b996841815a4ae113bc3c3211a5984dadf15c4515aa37d336864d4dea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 78419dd6d1370475c0565c0ad072a7b54639ce43
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824316"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187057"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Agregar, cambiar o eliminar un partner asesor de suscripción
 

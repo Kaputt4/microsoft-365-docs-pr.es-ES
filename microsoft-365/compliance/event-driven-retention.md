@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-jun2020
 description: Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.
 ms.openlocfilehash: e5be01ed75468d97c0cadf229512bce2f90efea5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567053"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184118"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Iniciar la retención cuando se produzca un evento
 

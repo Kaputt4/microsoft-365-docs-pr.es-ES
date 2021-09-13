@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Habilite el buzón de archivo y active el archivado de expansión automática para aumentar el tamaño de la carpeta Elementos recuperables de un buzón en Microsoft 365.
 ms.openlocfilehash: e46575fcf4335b7429db2370012e44957fb07db3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184054"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentar la cuota de elementos recuperables para los buzones de correo en retención
 

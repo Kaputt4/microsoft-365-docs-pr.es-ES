@@ -30,11 +30,11 @@ search.appverid:
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Obtén información sobre cómo crear o editar directivas de administración de aplicaciones y proteger los archivos de trabajo en los dispositivos Windows 10 usuarios.
 ms.openlocfilehash: 66ddde8321742d7bcaf6294e905fdd9601482c0a
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360814"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184846"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Establecer o editar la configuración de protección de aplicaciones para Windows 10 dispositivos
 

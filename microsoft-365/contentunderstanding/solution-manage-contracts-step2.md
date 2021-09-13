@@ -13,11 +13,11 @@ localization_priority: None
 ROBOTS: ''
 description: Obtenga información sobre cómo usar Microsoft Teams para crear el canal de administración de contratos mediante una solución Microsoft 365 contrato.
 ms.openlocfilehash: bafce28689e4340c3ff73694d150bac294a95b5a
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532876"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189724"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Paso 2. Usar Microsoft Teams para crear el canal de administración de contratos
 
@@ -110,7 +110,7 @@ Cada tarjeta de contrato mostrará tres campos que se extrajeron para cada contr
 
 En el [ContractTileFormatting.jsarchivo on,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) las siguientes secciones definen cada una de ellas.
 
-### <a name="client"></a>Cliente
+### <a name="client"></a>Client
 
 En esta sección se define cómo se mostrará "Cliente" en la tarjeta y se usará el valor para el contrato específico.
 

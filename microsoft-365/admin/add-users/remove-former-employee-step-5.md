@@ -26,11 +26,11 @@ search.appverid:
 - MOE150
 description: Siga estos pasos para bloquear el acceso a dispositivos móviles de un antiguo empleado.
 ms.openlocfilehash: 8c5b279bc85d6c99fd8722d1f9fd4d4b3757e793
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564715"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185214"
 ---
 # <a name="step-5---wipe-and-block-a-former-employees-mobile-device"></a>Paso 5: Borrar y bloquear el dispositivo móvil de un antiguo empleado
 
@@ -42,7 +42,7 @@ Si tu antiguo empleado tenía un teléfono de la organización, puedes usar el C
 2. En el Centro de administración de Exchange, vaya a **Destinatarios** \> **Buzones**.
 3. Seleccione el usuario y, en **Dispositivos móviles,** seleccione **Ver detalles**.
 4. En la **página Detalles del** dispositivo móvil, en **Dispositivos** móviles , seleccione el dispositivo móvil, seleccione **Borrar** dispositivo de borrado de ![ datos. Y, a continuación, seleccione ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) **Bloquear**.
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
    > [!TIP]
    > Asegúrese de quitar o deshabilitar al usuario de su servicio de Enterprise Blackberry local. También debe deshabilitar cualquier dispositivo BlackBerry para el usuario. Consulte la BlackBerry Business Cloud Services Administration Guide (Guía de administración de servicios de BlackBerry Business Cloud) si necesita pasos específicos sobre cómo deshabilitar al usuario.
 

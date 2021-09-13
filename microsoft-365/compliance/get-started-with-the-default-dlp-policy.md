@@ -20,11 +20,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar el informe para refinar la directiva predeterminada de prevención de pérdida de datos (DLP) de su organización.
 ms.openlocfilehash: 95c4ebae431bea1db033826459ca1595614ab5cb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569578"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191434"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introducción a la directiva predeterminada de DLP
 

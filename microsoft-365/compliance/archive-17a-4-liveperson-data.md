@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector LivePerson Conversational Cloud DataParser de 17a-4 para importar y archivar datos de LivePerson Conversational Cloud en Microsoft 365.
 ms.openlocfilehash: 22e21ea0352ff11b96819dafa0a70ee20427c7a2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571536"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186262"
 ---
 # <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data"></a>Configurar un conector para archivar datos de LivePerson Conversational Cloud
 

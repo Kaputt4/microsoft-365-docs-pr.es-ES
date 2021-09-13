@@ -15,11 +15,11 @@ ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Usa esta Guía del laboratorio de pruebas para inscribir dispositivos Microsoft 365 entorno de prueba y administrarlos de forma remota.
 ms.openlocfilehash: 5e27f2eecc9edda0a0fe7225d4ed47c7431eee77
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189627"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscribir dispositivos iOS y Android en su Microsoft 365 entorno de prueba empresarial
 
@@ -80,4 +80,4 @@ Explore características [y capacidades adicionales](m365-enterprise-test-lab-gu
   
 [Directivas de cumplimiento de dispositivos para Microsoft 365 entorno de prueba empresarial](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)

@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar diagnósticos de página para optimizar el rendimiento de los elementos web en SharePoint páginas de sitio modernas en línea.
 ms.openlocfilehash: 93d92f6aecaa2b791823d689e53e57b92f8ed043
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568689"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191297"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de elementos web en páginas del sitio modernas de SharePoint Online
 

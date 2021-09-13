@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Descubra las opciones para comprar Microsoft 365 Empresa Premium instrucciones paso a paso para comprarla en el Centro de partners de Microsoft.
-ms.openlocfilehash: 3e75e1e31789882ef41abf4b30c7af3886bb4821fe5c288ceda5af684ea8f854
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9e88229f22bdfbfc0b363b5bf56ed2def4db9b8c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188753"
 ---
 # <a name="get-microsoft-365-business-premium"></a>Obtención de Microsoft 365 Empresa Premium
 

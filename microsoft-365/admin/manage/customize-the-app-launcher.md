@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: Crea vínculos rápidos a tu correo electrónico, documentos, aplicaciones, sitios SharePoint, sitios externos y otros recursos agregando iconos personalizados al iniciador de aplicaciones.
 ms.openlocfilehash: d13be7d4bb89a8d1cebd2d59026f58bdc62c4a15
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566287"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184529"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Agregar iconos personalizados en el iniciador de aplicaciones
 
@@ -37,7 +37,7 @@ En Microsoft 365, puedes acceder rápida y fácilmente a tu correo electrónico,
   
 Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a sitios de SharePoint, sitios externos, aplicaciones heredadas y mucho más. El icono personalizado aparece en **Todas** las aplicaciones del iniciador de aplicaciones, pero puede anclarlo a las aplicaciones del **Inicio** e indicar a los usuarios que hagan lo mismo. Esto le facilitará la tarea de buscar los sitios, aplicaciones y recursos necesarios para realizar su trabajo. En el ejemplo siguiente, se usa un icono personalizado denominado "Contoso Portal" para obtener acceso a un sitio de intranet de SharePoint de la organización. 
   
-![Iniciador de aplicaciones.](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
+![Iniciador de aplicaciones](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Agregar un icono personalizado en el iniciador de aplicaciones
 

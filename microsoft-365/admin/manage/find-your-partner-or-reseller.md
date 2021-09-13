@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 'Obtenga información sobre cómo encontrar un nuevo Microsoft 365 asociado o obtener información de contacto para un partner con el que ha trabajado en el pasado. '
 ms.openlocfilehash: ac557a04039c9cf618f2ed1fd0e8c0d967e76386
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394269"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184521"
 ---
 # <a name="find-your-partner-or-reseller"></a>Buscar un asociado o distribuidor
 

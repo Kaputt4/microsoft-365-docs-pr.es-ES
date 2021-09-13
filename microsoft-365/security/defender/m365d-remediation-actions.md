@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 7f34f40d5d0078c1dc0b49e2f73b5c692c6a4b315058f5d8f7c097dce6b237cb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c8d3838194c25ba49b2611dc355b21e228291b01
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902192"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189207"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Acciones de corrección en Microsoft 365 Defender
 
@@ -77,7 +77,7 @@ Además de las acciones de corrección que siguen investigaciones automatizadas,
 - Acción [de respuesta en](/windows/security/threat-protection/microsoft-defender-atp/live-response) directo manual, como eliminar un archivo, detener un proceso y quitar una tarea programada
 - Acción de respuesta en directo [con Microsoft Defender para API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)de punto de conexión, como aislar un dispositivo, ejecutar un examen antivirus y obtener información sobre un archivo
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Visite el Centro de actividades](m365d-action-center.md)
 - [Ver y aprobar acciones de corrección](m365d-autoir-actions.md)

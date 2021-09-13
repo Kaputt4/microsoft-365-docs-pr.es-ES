@@ -24,11 +24,11 @@ description: Obtenga información sobre Microsoft Defender para Office 365 para 
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f9ab3c10292aed5f6f39a8534680cb8e9c5d3551
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572436"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189094"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 

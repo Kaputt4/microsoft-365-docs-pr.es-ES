@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Administrar dispositivos iOS en Movilidad y seguridad básicas.
-ms.openlocfilehash: 64f4d3fa5d3c4d1807a78ddcf0cf00ec043b6dba2306aeab79ddfc128236a891
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 84f3589593ef26325397f5b6e90d5b21662d2352
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826992"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185089"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>Crear certificados de APN para dispositivos iOS
 

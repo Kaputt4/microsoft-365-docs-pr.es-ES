@@ -28,11 +28,11 @@ search.appverid:
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Aprende a crear un perfil de AutoPilot y aplicarlo a un dispositivo, así como editar o eliminar un perfil o quitar un perfil de un dispositivo.
 ms.openlocfilehash: 4f54b4baac1cd9364d852116115f07fae021b823
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360823"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184878"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Crear y editar perfiles de Autopilot
 

@@ -13,11 +13,11 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.openlocfilehash: 0a1b91c888e1ee91d03d5a2d315e4d4fc38b2d10
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184022"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
@@ -98,7 +98,7 @@ La **pestaña Información general** del caso también incluye una sección **Al
 La **pestaña** Alertas resume las alertas actuales incluidas en el caso. Se pueden agregar nuevas alertas a un caso existente y se agregarán a la cola de **alertas** a medida que estén asignadas. Los siguientes atributos de alerta se enumeran en la cola:
 
 - Estado
-- Gravedad
+- Severity
 - Tiempo detectado
 
 Seleccione una alerta de la cola para mostrar la **página Detalles de** alerta.
@@ -106,7 +106,7 @@ Seleccione una alerta de la cola para mostrar la **página Detalles de** alerta.
 Use el control de búsqueda para buscar nombres de alerta para texto específico y usar el filtro de alertas para ordenar los casos por los atributos siguientes:
 
 - Estado
-- Gravedad
+- Severity
 - Hora detectada, fecha de inicio y fecha de finalización
 
 Use el control de filtro para filtrar alertas por varios atributos, incluidos:

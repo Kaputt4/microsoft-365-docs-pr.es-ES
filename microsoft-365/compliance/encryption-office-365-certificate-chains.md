@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Ver una lista completa de certificados raíz y autoridades de certificación (CA) en Microsoft 365.
-ms.openlocfilehash: a462b5912bc27cc8ed6ef529df63fd96c25969a494253e4133324c031d2475d4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ab4ca6f92407659b96e177161e0fd0c2847a890c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186177"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 cadenas de cifrado
 

@@ -21,11 +21,11 @@ description: Los administradores pueden aprender a elevar la configuración de s
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e2fc9c95389bd72ebea11dcfe808101a6ca5ab40
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189057"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas de prioridad en Microsoft 365
 
@@ -118,7 +118,7 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 
 ****
 
-|Concepto|Recursos|Description|
+|Concepto|Resources|Descripción|
 |---|---|---|
 |Microsoft 365|[Caminos de aprendizaje personalizables](/office365/customlearning/)|Estos recursos pueden ayudarle a crear formación para los usuarios de su organización.|
 |Centro de seguridad de Microsoft 365|[Learning: proteja su organización con seguridad inteligente integrada desde Microsoft 365](/learn/modules/security-with-microsoft-365)|Este módulo le permite describir cómo funcionan Microsoft 365 de seguridad conjuntas y para expresar las ventajas de estas características de seguridad.|
@@ -131,6 +131,6 @@ Además, Microsoft recomienda que los usuarios tomen las acciones descritas en e
 - Protección de dispositivos
 - Habilitar características de seguridad en Windows 10 y equipos Mac (para dispositivos no administrados)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Anuncio de protección de cuenta de prioridad en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

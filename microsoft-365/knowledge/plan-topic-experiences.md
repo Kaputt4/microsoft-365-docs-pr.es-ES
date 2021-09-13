@@ -11,11 +11,11 @@ search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo planear Plan for Temas Microsoft Viva
 ms.openlocfilehash: deb4e219992400a5155b40a849a6df3a8bccbef1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563991"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187769"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planeación de Temas Microsoft Viva
 
@@ -148,7 +148,7 @@ Cuando configures experiencias de tema, necesitarás los siguientes elementos a 
 > * Lista de temas confidenciales que se excluirán de la detección de temas
 > * Un nombre para el sitio del centro de temas
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Configurar las experiencias temáticas](set-up-topic-experiences.md)
 

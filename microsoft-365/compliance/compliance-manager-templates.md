@@ -7,6 +7,7 @@ author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
+ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -14,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo Excel formato.
-ms.openlocfilehash: 9031d94bfe3c9fba0ba53e23c229a6b207d0e4b2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2118f527cafe97153b9a8185da6d12d8f6f3d9da
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189914"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Trabajar con plantillas de evaluación en el Administrador de cumplimiento
 
@@ -86,7 +87,7 @@ Las plantillas mostrarán un estado de activación como activo o inactivo:
 
 Si vinculas cualquier evaluación a una plantilla premium comprada, esa plantilla estará activa durante un año. La compra se renovará automáticamente a menos que canceles.
 
-También puede probar plantillas premium en una versión de prueba. Las licencias de prueba son válidas para un máximo de 25 plantillas durante 30 días. Una vez que comience la prueba, las plantillas deben estar disponibles en el espacio empresarial en un plazo de 48 horas. Las pruebas se pueden activar a través del Centro de administración de Microsoft 365.
+También puede probar plantillas premium en una versión de prueba. Las licencias de prueba son válidas para un máximo de 25 plantillas durante 30 días. Una vez que comience la prueba, las plantillas deben estar disponibles en el espacio empresarial en un plazo de 48 horas. Las pruebas se pueden activar a través <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">del Centro de administración de Microsoft 365</a>.
 
 #### <a name="activated-templates-counter"></a>Contador de plantillas activadas
 

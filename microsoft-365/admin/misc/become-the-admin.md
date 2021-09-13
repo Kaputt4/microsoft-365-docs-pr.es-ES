@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Obtenga información sobre cómo comprobar la propiedad del dominio y el correo electrónico para asumir un inquilino no administrado creado por un registro de usuario de autoservicio en Microsoft 365.
-ms.openlocfilehash: 4d37197325c49b95090236ed01935d5682844a84eba9f525de37e053187ab0b6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f6378c708e0533c2da2d38bfe5eb8009515423c7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824292"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187038"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Realizar una toma de administración interna
 

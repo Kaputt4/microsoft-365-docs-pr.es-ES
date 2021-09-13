@@ -23,11 +23,11 @@ ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporte los resultados de la búsqueda de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido SharePoint y OneDrive para la Empresa se exportan como documentos Office nativos.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 8ce3317dbd9b1d21ab1e703fce1b168885b81aa2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567041"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191557"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 

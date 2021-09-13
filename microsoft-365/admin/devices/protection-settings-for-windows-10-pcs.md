@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Obtenga información sobre la configuración disponible en Microsoft 365 para empresas para proteger Windows 10 dispositivos.
 ms.openlocfilehash: 29fb5c18f016bd2832c25ff66db258671b95bd6f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184841"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Editar o crear la configuración de protección de dispositivos Windows 10 equipos
 

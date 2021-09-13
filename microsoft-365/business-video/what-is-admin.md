@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre los roles de administrador en Microsoft 365 para empresas.
-ms.openlocfilehash: aa38accad56bf6fc6af34289a118bc9cf81e82b1556a5c1dd72634bed85af6d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 47fe5628bb8464053111078891fc1038fcdd8fa6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900667"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188758"
 ---
 # <a name="what-is-a-microsoft-365-admin"></a>¿Qué es un Microsoft 365 administrador?
 
@@ -43,7 +44,7 @@ Este es el modo de cambiar un rol de usuario a un rol de administrador:
 
 1. Cuando haya iniciado sesión Microsoft 365, seleccione el iniciador de aplicaciones. Si ves el botón Administrador, entonces eres un administrador.
 1. Seleccione **Administrador** para ir al Centro de administración de Microsoft 365.
-1. En el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
+1. En el panel de navegación izquierdo, seleccione **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
 1. Seleccione la persona a la que desea hacer un administrador. Los detalles del usuario aparecen en el cuadro de diálogo derecho.
 1. Elija **Administrar roles**.
 1. Desactive la **casilla Usuario (sin acceso de administrador)** y, a continuación, seleccione una de las funciones de administrador. Para obtener más información sobre un rol, mantenga el mouse sobre el signo de exclamación (!) y lea la sugerencia de la herramienta. Para dar al usuario el mismo rol que el tuyo, seleccione **Administrador global**.
@@ -55,7 +56,7 @@ También puede crear una cuenta de administrador dedicada para una persona o ser
 
 1. Cuando haya iniciado sesión Microsoft 365, seleccione el iniciador de aplicaciones.
 1. Seleccione **Administrador** para ir al Centro de administración de Microsoft 365.
-1. En el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
+1. En el panel de navegación izquierdo, seleccione **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
 1. Seleccione **Agregar un usuario**.
 1. Escriba el nombre **y** apellido del **usuario,** **el** nombre para mostrar y **el** nombre de usuario y, a continuación, seleccione **Siguiente**.
 1. Elija **Crear usuario sin licencia de producto.** Esto agrega un nuevo usuario, pero no tiene que pagar una suscripción mensual. Seleccione **Siguiente**.

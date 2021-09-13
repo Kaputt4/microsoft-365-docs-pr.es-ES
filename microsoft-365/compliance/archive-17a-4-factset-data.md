@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector DataParser de 17a-4 FactSet para importar y archivar datos factSet en Microsoft 365.
 ms.openlocfilehash: cbc56b5ce3c2305238daabd78fed2f9794f96242
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563277"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186313"
 ---
 # <a name="set-up-a-connector-to-archive-factset-data"></a>Configurar un conector para archivar datos factSet
 

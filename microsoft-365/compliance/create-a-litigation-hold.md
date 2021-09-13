@@ -16,12 +16,12 @@ description: Obtenga información sobre cómo colocar un buzón en retención po
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 58de1f44c6c58125b37c8cf0800d48dc0ae86f2a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4a3271952a1f517f97e6b0a13044d2fac102e8ec
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189847"
 ---
 # <a name="create-a-litigation-hold"></a>Crear una retención por juicio
 
@@ -50,7 +50,7 @@ Estos son los pasos para colocar un buzón en retención por juicio mediante el 
 
 1. Vaya a <https://admin.microsoft.com> e inicie sesión.
 
-2. En el panel de navegación del Centro de administración, haga clic **en Usuarios > usuarios activos.**
+2. En el panel de navegación del Centro de administración, haga clic **en Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
 
 3. Seleccione el usuario que desea colocar en retención por juicio.
 

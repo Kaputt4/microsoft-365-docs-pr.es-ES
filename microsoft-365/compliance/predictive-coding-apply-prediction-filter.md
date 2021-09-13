@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Use un filtro de puntuación de predicción para mostrar los elementos que un modelo de codificación predictiva predice como relevantes o no relevantes.
 ms.openlocfilehash: 34a9b4da55443cae6c2334952f60b94953b0d9d4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567705"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186102"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Aplicar un filtro de puntuación de predicción a un conjunto de opiniones (versión preliminar)
 

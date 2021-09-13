@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: Ahora que ya has configurado Microsoft 365, aprende a instalar aplicaciones Office individuales en tu Mac, PC o dispositivos móviles.
-ms.openlocfilehash: a10b934850877561de66b1f4cae00cebd75e41e9e0e3e6cc03d2dfa43d5ffdb7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dc32009bd42027890457bee97e19cdd94f49c6b7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821848"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184433"
 ---
 # <a name="install-office-applications"></a>Instalar aplicaciones de Office
 

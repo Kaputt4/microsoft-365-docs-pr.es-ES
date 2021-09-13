@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Un grupo eliminado se conserva durante 30 días y aún puede restaurar el grupo. Después de 30 días, el grupo y su contenido se eliminan permanentemente.
-ms.openlocfilehash: 555da859e88ea06e498b4197d6ffde7ec9885548ba51118bdf8b41f618deb163
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ddc3da57c05b7c5f54c10a0cc429c9a3f24b859c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184921"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Restaurar un grupo Microsoft 365 eliminado
 

@@ -21,15 +21,15 @@ metadata:
   - MOE150
   description: Revise las respuestas a preguntas frecuentes acerca de la implementación centralizada desde el Centro de administración de Microsoft 365.
   ms.openlocfilehash: e2b4717fb2e1d5e82d22ce5288c40187722495df
-  ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/24/2021
-  ms.locfileid: "58502008"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59184545"
 title: Preguntas frecuentes sobre la implementación centralizada
 summary: La implementación centralizada es la forma recomendada para que un administrador de Office 365 implemente complementos de Office (Word, Excel, PowerPoint y Outlook) en usuarios y grupos de una organización, siempre que la organización cumpla todos los requisitos para usar la implementación centralizada, tal como se describe en este artículo.
 sections:
-- name: Omitidas
+- name: Ignorado
   questions:
   - question: >
       ¿Cómo sé si mi organización está configurada para la implementación centralizada?

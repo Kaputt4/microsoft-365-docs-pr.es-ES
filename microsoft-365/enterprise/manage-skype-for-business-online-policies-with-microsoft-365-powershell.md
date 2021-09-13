@@ -15,11 +15,11 @@ ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Summary: Use PowerShell to manage your Skype Empresarial Online user account properties with policies.'
 ms.openlocfilehash: aea57c836403918e4c236f766ed211a31ea2ceec
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357046"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189624"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Administrar las directivas de Skype Empresarial Online con PowerShell
 
@@ -124,7 +124,7 @@ Con Skype Empresarial Online, los usuarios deben administrarse mediante una dire
 Get-CsClientPolicy -Identity "Global"
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar Skype Empresarial Online con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   

@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Recomendaciones de Seguridad de Microsoft 365 Empresa Premium y de colaboración para pequeñas empresas, incluidas firmas, despachos y campañas políticas pequeñas.
 ms.openlocfilehash: 8e1da206a23a58d568d6e0e4a9efe04cef510a85
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
-ms.translationtype: HT
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188721"
 ---
 # <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 para pequeñas empresas y campañas
 

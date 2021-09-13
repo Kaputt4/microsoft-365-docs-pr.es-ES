@@ -20,11 +20,11 @@ ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Obtenga información sobre cómo automatizar tareas de búsqueda de contenido, como crear búsquedas y ejecutar informes con PowerShell del Centro de & seguridad.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: fff69aac3ab30e0fe1ea60f9d097602a5390ba87
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574344"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191574"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Crear, informar sobre y eliminar varias búsquedas de contenido
 
@@ -64,7 +64,7 @@ El archivo de valores separados por comas (CSV) que cree en este paso contiene u
 
    ****
 
-   |Parámetro|Description|
+   |Parámetro|Descripción|
    |---|---|
    |`ExchangeLocation`|La dirección SMTP del buzón del usuario.|
    |`SharePointLocation`|La dirección URL del sitio OneDrive para la Empresa usuario o la dirección URL de cualquier sitio de la organización. Para la dirección URL de OneDrive para la Empresa, use este formato: ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` . Por ejemplo, `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|

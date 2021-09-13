@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Instrucciones para crear y publicar etiquetas de retención para aplicarlas en aplicaciones y así conservar lo que necesita y eliminar lo que no.
 ms.openlocfilehash: ab921a2dab7bbf735ebfd2ea311a21e694fddbac
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189797"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Crear etiquetas de retención y aplicarlas en aplicaciones
 

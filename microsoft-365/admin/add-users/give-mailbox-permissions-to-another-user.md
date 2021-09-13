@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Dé a un usuario el derecho de acceder al buzón de otro, lo que le permite leer y enviar correos electrónicos desde el buzón del otro usuario.
-ms.openlocfilehash: 872c6df73642046057ddac3937313bcc5b69db5ec9c01508cc586dc9679ad5f3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c1b591ff9053e20e8754df5b7c69288d198cc98
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185273"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Conceder permisos de buzón a otro usuario: Ayuda para administradores
 

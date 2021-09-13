@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Use casos grandes en Advanced eDiscovery para que pueda agregar más elementos para revisar conjuntos y aprovechar otros límites aumentados.
 ms.openlocfilehash: 43211dbeed7621de64d696e21fa647d5023350bb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191587"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>Usar casos grandes en Advanced eDiscovery (versión preliminar)
 
@@ -67,7 +67,7 @@ Además, el nuevo formato de caso grande incluye una interfaz de usuario actuali
 
 - La indización avanzada que se produce cuando se agregan custodios y origen de datos no custodiados a un caso actualmente no se admite en casos grandes. El trabajo de indización se crea, pero no se completa. La indización avanzada en casos grandes se admite próximamente. Para obtener más información acerca de la indización avanzada, vea [Indexación avanzada de datos de custodia](indexing-custodian-data.md).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **Si intento recopilar más de 1 TB en una sola colección, ¿funcionará?**
 

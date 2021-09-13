@@ -18,11 +18,11 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo usar la característica de búsqueda en el Centro de administración para obtener resultados mejores y más rápidos.
 ms.openlocfilehash: eca365ed7c25ac908fe5ea1679ceedb9765fb3c7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187118"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Búsqueda en el Centro de administración de Microsoft 365
 
@@ -75,7 +75,7 @@ Los resultados proporcionan una forma de navegar rápidamente a una página espe
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Captura de pantalla: resultados de búsqueda que muestran la ruta de navegación en el Centro de administración":::
 
-## <a name="settings"></a>Configuraciones
+## <a name="settings"></a>Configuración
 
 Busque la configuración de nivel de aplicación compatible relacionada con su organización, los servicios a los que se suscriba y la configuración de seguridad y privacidad.
 

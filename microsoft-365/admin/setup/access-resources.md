@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Obtén información sobre cómo obtener acceso a recursos locales como aplicaciones de línea de negocio, recursos compartidos de archivos e impresoras desde Azure Active Directory dispositivo Windows 10 usuario.
 ms.openlocfilehash: 2c0bb33fbfc99cf3683a53d8aa4c98fc70fb9253
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186745"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Obtenga acceso a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 Empresa Premium
 

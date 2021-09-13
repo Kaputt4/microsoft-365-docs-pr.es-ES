@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: Obtenga el SharePoint de uso de actividad para conocer la actividad de cada usuario SharePoint, el número de archivos compartidos y el uso del almacenamiento.
 ms.openlocfilehash: 5b4fb458c96202993a30a64800aac3c443983d04
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564809"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185390"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365 Informes en el Centro de administración: SharePoint actividad
 
@@ -49,7 +49,7 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Elemento|Description|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario que realizó la actividad en el SharePoint sitio.  <br/> |
@@ -59,7 +59,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |Archivos compartidos internamente  <br/> | Recuento de archivos que se han compartido con usuarios de la organización o con usuarios de grupos (que pueden incluir usuarios externos).  <br/> |
 |Archivos compartidos externamente  <br/> |El número de archivos que se han compartido con usuarios externos a la organización. <br/>|
 |Páginas visitadas  <br/> |Las visitas a páginas únicas del usuario. <br/>|
-|Eliminada  <br/> | Esto indica que se quitó la licencia del usuario.  <br/>  **NOTA:** La actividad de un usuario eliminado aún se mostrará en el informe siempre y cuando se le haya concedido una licencia en algún momento durante el período de tiempo seleccionado. En la columna Eliminado puede observar que es posible que el usuario ya no esté activo, pero ha contribuido a los datos del informe.  <br/> |
+|Deleted  <br/> | Esto indica que se quitó la licencia del usuario.  <br/>  **NOTA:** La actividad de un usuario eliminado aún se mostrará en el informe siempre y cuando se le haya concedido una licencia en algún momento durante el período de tiempo seleccionado. En la columna Eliminado puede observar que es posible que el usuario ya no esté activo, pero ha contribuido a los datos del informe.  <br/> |
 |Fecha de eliminación  <br/> |La fecha en la que se quitó la licencia del usuario. <br/>|
 |Producto asignado  <br/> |Los Microsoft 365 que tienen licencia para el usuario.|
 |||

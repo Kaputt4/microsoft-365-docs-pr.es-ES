@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fc138d3f4aea65cdddb2425c34c06f3fd33227e431ca4f1260ee784c46a25ccf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fde7ed4c7a3b621730e2b6cd73370d87ea9c92c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189377"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Requisitos & permisos: Administración de amenazas y vulnerabilidades
 
@@ -30,7 +30,7 @@ ms.locfileid: "53845008"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -43,7 +43,7 @@ Asegúrese de que los dispositivos:
 
 - Haga que las siguientes actualizaciones obligatorias se instalen e implementen en la red para aumentar las tasas de detección de la evaluación de vulnerabilidades:
 
-  > Versión | Número y vínculo kb de actualización de seguridad
+  > Liberar | Número y vínculo kb de actualización de seguridad
   > :---|:---
   > Windows 10 Versión 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) y [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
   > Windows 10 Versión 1803 | [KB4493464](https://support.microsoft.com/help/4493464) y [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)

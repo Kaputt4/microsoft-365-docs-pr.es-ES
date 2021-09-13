@@ -17,11 +17,11 @@ ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: d70d35bc1e2baa795e024da79ea613087bf511d4
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533416"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187561"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedir o permitir que los usuarios modifiquen localmente Antivirus de Microsoft Defender configuración de directiva
 
@@ -54,10 +54,10 @@ Para configurar estas opciones:
 
 5. Implemente el objeto de directiva de grupo como de costumbre.
 
-Ubicación|Valor|Artículo
+Ubicación|Setting|Artículo
 ---|---|---|---
 MAPAS|Configurar la invalidación de configuración local para los informes en Microsoft MAPS|[Habilitar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
-Cuarentena|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para exámenes](configure-remediation-microsoft-defender-antivirus.md)
+Quarantine|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para exámenes](configure-remediation-microsoft-defender-antivirus.md)
 Protección en tiempo real|Configurar la invalidación de configuración local para la actividad del programa y el archivo de supervisión en el equipo|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
 Protección en tiempo real|Configurar la invalidación de configuración local para la supervisión de la actividad de archivos entrantes y salientes|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)
 Protección en tiempo real|Configurar la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)

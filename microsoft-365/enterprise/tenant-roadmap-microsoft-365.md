@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: it-pro
 description: Guía básica para configurar los inquilinos para Microsoft 365.
 ms.openlocfilehash: d041c87e12bfb3025592cb14cda5413c805dc880
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354217"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187854"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Guía básica de inquilinos para Microsoft 365
 
@@ -33,7 +33,7 @@ Para preparar el espacio empresarial para usuarios, grupos, licencias y aplicaci
 
 Después de asegurarse de que las redes están optimizadas para el acceso a Microsoft 365 tanto para los trabajadores locales como para los trabajadores remotos, las siguientes tareas grandes planean y, a continuación, configuran el inquilino de Microsoft 365 para nombres de dominio DNS, servicios comunes y para esa infraestructura de identidad que admite el inicio de sesión seguro del usuario.
 
-### <a name="plan"></a>Planear
+### <a name="plan"></a>Plan
 
 Para planear la implementación del espacio empresarial:
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Obtenga información sobre los límites vigentes para la búsqueda de contenido y las características principales de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: f7f5d00604b6aff64f5e380e4fe30c5e09666ab52c216706b63ae0bab3a25318
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: db0f24d66fd7dc23a82a5ededfcfbc4d9edabad7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188078"
 ---
 # <a name="limits-for-ediscovery-search"></a>Límites para la búsqueda de exhibición de documentos electrónicos
 
@@ -43,10 +43,10 @@ En la tabla siguiente se enumeran los límites de búsqueda al usar la herramien
 |El número máximo de buzones o sitios que se pueden buscar en una sola búsqueda|Sin límite <sup>1</sup>|
 |El número máximo de búsquedas que se pueden ejecutar al mismo tiempo en la organización.|30|
 |El número máximo de búsquedas en toda la organización que se pueden ejecutar al mismo tiempo.|3|
-|El número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. Este límite es más probable que se cumpla cuando el usuario intente iniciar varias búsquedas mediante el comando **Get-ComplianceSearch \| Start-ComplianceSearch** en PowerShell del Centro de seguridad & cumplimiento.|10 |
+|El número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. Este límite es más probable que se cumpla cuando el usuario intente iniciar varias búsquedas mediante el comando **Get-ComplianceSearch \| Start-ComplianceSearch** en PowerShell del Centro de seguridad & cumplimiento.|10|
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa al obtener una vista previa de los resultados de búsqueda de contenido.|100|
 |El número máximo de elementos encontrados en todos los buzones de usuario que posiblemente se pueden mostrar en la página de vista previa al obtener una vista previa de los resultados de la búsqueda. Se muestran los elementos más recientes.|1.000 <sup>2</sup>|
-|El número máximo de buzones de usuario de los que se puede obtener una vista previa de los resultados de búsqueda. Si hay más de 1000 buzones que contienen contenido que coincide con la consulta de búsqueda, como máximo, solo los 1000 buzones principales con más resultados de búsqueda estarán disponibles para la vista previa.|1.000|
+|El número máximo de buzones de usuario de los que se puede obtener una vista previa de los resultados de búsqueda. Si hay más de 1000 buzones que contienen contenido que coincide con la consulta de búsqueda, como máximo, solo los 1000 buzones principales con más resultados de búsqueda estarán disponibles para la vista previa.|1,000|
 |Número máximo de elementos que se encuentran en SharePoint y OneDrive para la Empresa que se muestran en la página de vista previa al obtener una vista previa de los resultados de búsqueda. Se muestran los elementos más recientes.|200|
 |El número máximo de sitios (en SharePoint y OneDrive para la Empresa) que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 200 sitios totales que contienen contenido que coincide con la consulta de búsqueda, solo los 200 sitios principales con más resultados de búsqueda estarán disponibles para la vista previa.|200|
 |Número máximo de elementos por buzón de carpetas públicas que se muestran en la página de vista previa al obtener una vista previa de los resultados de búsqueda de contenido.|100|
@@ -79,7 +79,7 @@ Microsoft recopila información de rendimiento para las búsquedas ejecutadas po
 |Número de buzones|Promedio de tiempo de búsqueda|
 |---|---|
 |100|30 segundos|
-|1.000|45 segundos|
+|1,000|45 segundos|
 |10 000|4 minutos|
 |25 000|10 minutos|
 |50 000|20 minutos|
@@ -98,10 +98,10 @@ En la tabla siguiente se enumeran los límites al exportar los resultados de una
 |---|---|
 |Cantidad máxima de datos exportables de una sola búsqueda  <p> **Nota:** Si los resultados de la búsqueda son superiores a 2 TB, considere la posibilidad de usar intervalos de fechas u otros tipos de filtros para reducir el tamaño total de los resultados de búsqueda.|2 TB|
 |Máximo que una organización puede exportar en un solo día <p> **Nota:** Este límite se restablece diariamente a las 12:00 UTC|2 TB|
-|Máximo de exportaciones simultáneas que se pueden ejecutar al mismo tiempo en la organización <p> **Nota:** La ejecución de **una exportación de solo** informe cuenta con el total de exportaciones simultáneas de la organización. Si tres usuarios realizan tres exportaciones cada uno, solo se puede realizar otra exportación. Independientemente de si exporta un informe o resultados de búsqueda, no se pueden realizar otras exportaciones hasta que se haya completado.|10 |
+|Máximo de exportaciones simultáneas que se pueden ejecutar al mismo tiempo en la organización <p> **Nota:** La ejecución de **una exportación de solo** informe cuenta con el total de exportaciones simultáneas de la organización. Si tres usuarios realizan tres exportaciones cada uno, solo se puede realizar otra exportación. Independientemente de si exporta un informe o resultados de búsqueda, no se pueden realizar otras exportaciones hasta que se haya completado.|10|
 |Exportaciones máximas que un solo usuario puede ejecutar en cualquier momento|3|
 |Número máximo de buzones de correo para los resultados de búsqueda que se pueden descargar con la herramienta de exportación de exhibición de documentos electrónicos|100,000|
-|Tamaño máximo del archivo PST que se puede exportar <p> **Nota:** Si los resultados de la búsqueda del buzón de un usuario son superiores a 10 GB, los resultados de búsqueda del buzón se exportarán en dos (o más) archivos PST independientes. Si decide exportar todos los resultados de búsqueda en un único archivo PST, el archivo PST se mostrará en archivos PST adicionales si el tamaño total de los resultados de búsqueda es mayor que 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el registro de Windows en el equipo que use para exportar los resultados de búsqueda. Vea [Cambiar el tamaño de los archivos PST al exportar resultados](change-the-size-of-pst-files-when-exporting-results.md)de búsqueda de exhibición de documentos electrónicos . Los resultados de la búsqueda de un buzón específico no se dividirán entre varios archivos PST a menos que el contenido de un único buzón tenga más de 10 GB. Si optó por exportar los resultados de la búsqueda en un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda superen los 10 GB, los elementos siguen organizados en orden cronológico, por lo que se enviarán a archivos PST adicionales en función de la fecha enviada.|10 GB|
+|Tamaño máximo del archivo PST que se puede exportar <p> **Nota:** Si los resultados de la búsqueda del buzón de un usuario son superiores a 10 GB, los resultados de búsqueda del buzón se exportarán en dos (o más) archivos PST independientes. Si decide exportar todos los resultados de búsqueda en un único archivo PST, el archivo PST se mostrará en archivos PST adicionales si el tamaño total de los resultados de búsqueda es mayor que 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el registro de Windows en el equipo que use para exportar los resultados de búsqueda. Vea [Cambiar el tamaño de los archivos PST al exportar resultados](change-the-size-of-pst-files-when-exporting-results.md)de búsqueda de exhibición de documentos electrónicos . Los resultados de la búsqueda de un buzón específico no se dividirán entre varios archivos PST a menos que el contenido de un único buzón tenga más de 10 GB. Si optó por exportar los resultados de la búsqueda en un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda superen los 10 GB, los elementos siguen organizados en orden cronológico, por lo que se enviarán a archivos PST adicionales en función de la fecha enviada.|10 GB|
 |Velocidad a la que se cargan los resultados de la búsqueda de buzones y sitios en una ubicación Azure Storage microsoft.|Máximo de 2 GB por hora|
 |||
 

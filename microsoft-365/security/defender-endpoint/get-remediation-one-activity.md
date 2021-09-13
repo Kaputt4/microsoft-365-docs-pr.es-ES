@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 4bc5b5b1ec612bc8f14c6ac67a2c00ce75ac4516
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684069"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190974"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Obtener una actividad de corrección por id.
 
@@ -85,7 +85,7 @@ requesterEmail|Cadena|Dirección de correo electrónico del creador|globaladmin@
 requesterId|Cadena|Id. de objeto Creator|r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes|Cadena|Las notas (texto libre) que el creador agregó para esta actividad de corrección|nulo
 scid|Cadena|SCID de la recomendación de seguridad relacionada|nulo
-status|Cadena|Estado de la actividad de corrección (Activo/Completado)|Activa
+status|Cadena|Estado de la actividad de corrección (Activo/Completado)|Activo
 statusLastModifiedOn|DateTime|Fecha en la que se actualizó el campo de estado|2021-01-12T18:54:11.5499487Z
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección|43
 title|Cadena|Título de esta actividad de corrección|Microsoft Silverlight

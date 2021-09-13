@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre lo que sucede con sus datos cuando su suscripción de Microsoft 365 para empresas expira, está deshabilitada o la cancela.
 ms.date: 04/08/2021
-ms.openlocfilehash: 716dc1df065daf324f8f449c5d74c09d2d4a81ce91a0fca50d1ff84f20133a39
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 55a34352da6deef2fd48542dd06859e0024e6966
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852072"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188313"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?
 

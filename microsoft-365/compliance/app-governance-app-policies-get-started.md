@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Introducción a las directivas de aplicación.
 ms.openlocfilehash: 2f22e56195b94f07a6b8499bd69c60d65f37cce8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572244"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190117"
 ---
 # <a name="get-started-with-app-policies"></a>Introducción a las directivas de aplicación
 

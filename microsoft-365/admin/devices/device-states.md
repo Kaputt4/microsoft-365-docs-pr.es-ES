@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Obtén información sobre los distintos estados del dispositivo en la lista Acciones del dispositivo en la página Principal de administración Microsoft 365 para empresas.
 ms.openlocfilehash: c33c6fc06cb0707af28c43be4ea5ab427b77900b
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360820"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187190"
 ---
 # <a name="device-states"></a>Estados de dispositivo
 

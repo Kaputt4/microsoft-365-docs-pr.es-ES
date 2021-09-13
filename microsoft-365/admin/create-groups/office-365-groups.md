@@ -24,11 +24,11 @@ search.appverid:
 - MOE150
 description: Con Microsoft 365, puede impulsar el trabajo en equipo en Microsoft 365, ya que proporciona a un grupo de personas acceso a una colección de recursos compartidos.
 ms.openlocfilehash: 08e90d5197e59f6c1cf6dc89343b263194925bf4
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184934"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Información general de los grupos de Microsoft 365 para administradores
 

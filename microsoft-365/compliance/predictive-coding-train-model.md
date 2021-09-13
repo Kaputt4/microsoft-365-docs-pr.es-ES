@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: ''
 ms.openlocfilehash: 94351858da196edfd719d7b07ab6f125abf9d658
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570238"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186070"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Entrenar un modelo de codificación predictiva (versión preliminar)
 

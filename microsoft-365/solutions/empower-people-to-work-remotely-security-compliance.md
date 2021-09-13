@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: Utilice los servicios de seguridad y cumplimiento de Microsoft 365 para proteger sus aplicaciones, datos y dispositivos para los trabajadores híbridos.
 ms.openlocfilehash: aa43b2b30395def36d1c1210ef07edd379996b15
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575317"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187254"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Paso 3: implementar la seguridad y el cumplimiento de la normativa para los trabajadores híbridos
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ed7926c0fbb9e0eb10f7826e66ca5b96691e8e318e17f2b5d53a0cae8ba6d4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3049d77ef7f934a254da54a63560e33fe2603e3b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187430"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
@@ -64,18 +64,6 @@ Active la configuración de la experiencia de la versión preliminar para estar 
 1. En el panel de navegación, seleccione **Configuración**  >  **Endpoints**  >  **Advanced features** Preview  >  **features**.
 
 2. Alterna la configuración entre **Activar** y **Desactivar** y selecciona **Guardar preferencias**.
-
-## <a name="preview-features"></a>Versión preliminar de las características
-
-En la versión preliminar se incluyen las siguientes características:
-
-- [Filtrado de contenido web](web-content-filtering.md)
-
-  El filtrado de contenido web forma parte de las funciones de protección web en Microsoft Defender para endpoint. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
-
-- [Cumplimiento normativo y estado del dispositivo](machine-reports.md)
-
-  El informe de cumplimiento y estado del dispositivo proporciona información de alto nivel sobre los dispositivos de la organización.
 
 > [!TIP]
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)  

@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Use prevención de pérdida de datos (DLP) en SharePoint Online para detectar documentos que contienen datos confidenciales en todo el espacio empresarial.
 ms.openlocfilehash: e2ecaa6b4b230db09095a9f9e5008dfdf0698043
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573228"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191487"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Crear una consulta para buscar datos confidenciales almacenados en los sitios
 
@@ -85,7 +85,7 @@ No todas las consultas son iguales. En la tabla siguiente se proporcionan ejempl
 
 ****
 
-|Consulta no compatible|Motivo|
+|Consulta no compatible|Reason|
 |---|---|
 |`SensitiveType:"Credit Card Number|.."`|Debe agregar, al menos, un número.|
 |`SensitiveType:"NotARule"`|"NotARule" no es un nombre de tipo confidencial válido. Solo los nombres en el inventario [de tipos de información](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) confidencial funcionan en consultas DLP.|

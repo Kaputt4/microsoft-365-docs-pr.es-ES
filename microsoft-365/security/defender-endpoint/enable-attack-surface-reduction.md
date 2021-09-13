@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
-ms.openlocfilehash: 7682192c3afd181667845fc2202120c481968356
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4f1ec369913054e8fe119cebf3d647b42c133d34
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567621"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185865"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -97,7 +97,7 @@ Los siguientes procedimientos para habilitar reglas ASR incluyen instrucciones s
 
 ## <a name="intune"></a>Intune
 
-1. Seleccione **Perfiles de configuración** de  >  **dispositivos**. Elija un perfil de protección de extremo existente o cree uno nuevo. Para crear uno nuevo, seleccione **Crear perfil** e introduzca información para este perfil. En **Tipo de perfil,** seleccione **Protección de extremo**. Si ha elegido un perfil existente, seleccione **Propiedades** y, a continuación, **seleccione Configuración**.
+1. Seleccione **Perfiles de configuración** de \> **dispositivos**. Elija un perfil de protección de extremo existente o cree uno nuevo. Para crear uno nuevo, seleccione **Crear perfil** e introduzca información para este perfil. En **Tipo de perfil,** seleccione **Protección de extremo**. Si ha elegido un perfil existente, seleccione **Propiedades** y, a continuación, **seleccione Configuración**.
 
 2. En el **panel Protección de** puntos de conexión, Windows Defender Protección contra **vulnerabilidades** de seguridad y, a continuación, **seleccione Reducción de superficie de ataque.** Seleccione la configuración deseada para cada regla ASR.
 
@@ -180,7 +180,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
     > [!NOTE]
     > Las reglas están activas y están activas en cuestión de minutos.
 
->[!NOTE]
+> [!NOTE]
 > Control de conflictos:
 >
 > Si asignas a un dispositivo dos directivas ASR diferentes, la forma en que se controla el conflicto son reglas a las que se asignan estados diferentes, no hay ninguna administración de conflictos en su lugar y el resultado es un error.
@@ -217,9 +217,9 @@ Ejemplo:
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. En Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance**  >  **Endpoint Protection** Windows Defender Exploit  >  **Guard**.
+1. En Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance** \> **Endpoint Protection** Windows Defender Exploit \> **Guard**.
 
-2. Seleccione **Inicio Crear** directiva de protección contra  >  **vulnerabilidades** de seguridad .
+2. Seleccione **Inicio Crear** directiva de protección contra \> **vulnerabilidades** de seguridad .
 
 3. Escribe un nombre y una descripción, selecciona **Reducción de superficie de** ataque y selecciona **Siguiente**.
 
@@ -238,7 +238,7 @@ Ejemplo:
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender**  >    >  **Protección contra vulnerabilidades de seguridad de Microsoft Defender**  >  **reducción de superficie de ataque**.
+3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** \>  \> **Protección contra vulnerabilidades de seguridad de Microsoft Defender** \> **reducción de superficie de ataque**.
 
 4. Selecciona **Configurar reglas de reducción de superficie de ataque** y selecciona **Habilitado**. A continuación, puede establecer el estado individual de cada regla en la sección de opciones.
 
@@ -322,7 +322,5 @@ Ejemplo:
 ## <a name="related-articles"></a>Artículos relacionados
 
 - [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction-rules.md)
-
 - [Evaluar la reducción de superficie de ataque](evaluate-attack-surface-reduction.md)
-
 - [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)

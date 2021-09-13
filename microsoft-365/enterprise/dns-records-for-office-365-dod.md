@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: registros DNS para Office 365 DoD'
 hideEdit: true
-ms.openlocfilehash: 23d342719e8b488fccab925a6db9574ca3f06fa8115b8b29920c038570cdfa2b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 656fb5aff3365dfb5f975f7d3ad1c222b36e1e56
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189667"
 ---
 # <a name="dns-records-for-office-365-dod"></a>Registros DNS para Office 365 DoD
 
@@ -35,7 +35,7 @@ Como parte de la incorporación a Office 365 DoD, deberá agregar los dominios S
 
 Una vez que haya agregado los dominios al inquilino y validado, use las siguientes instrucciones para agregar los registros DNS adecuados para los servicios siguientes.  Es posible que deba modificar la tabla siguiente para que se ajuste a las necesidades de su organización con respecto a los registros MX entrantes y los registros de detección automática de Exchange existentes que tenga en su lugar.  Recomendamos encarecidamente coordinar estos registros DNS con el equipo de mensajería para evitar interrupciones o entregas erróneas de correo electrónico.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange en línea
 
 | Tipo | Prioridad | Nombre de host | Apuntar a dirección o valor | TTL |
 | --- | --- | --- | --- | --- |
@@ -64,7 +64,7 @@ Por ejemplo, si el nombre del espacio empresarial contoso.onmicrosoft.us, usarí
 
 ### <a name="srv-records"></a>Registros SRV
 
-| Tipo | Servicio | Protocolo | Puerto | Peso | Prioridad | Nombre | Target | TTL |
+| Tipo | Servicio | Protocolo | Puerto | Peso | Prioridad | Name | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.dod.skypeforbusiness.us | 1 hora |
 | SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.dod.skypeforbusiness.us | 1 Hour |

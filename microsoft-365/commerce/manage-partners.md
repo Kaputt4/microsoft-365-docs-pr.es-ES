@@ -16,15 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: Obtenga información sobre cómo trabajar con proveedores de soluciones certificados por Microsoft (partners) para comprar y administrar productos y servicios para su organización o escuela.
 ms.date: 04/13/2021
-ms.openlocfilehash: 024f8c4154c4e646a5a72fbc0d1b0f980b8b5c8eb854e723d84dc0f5f464911c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7fd5cda68ce5312f284e7f86e1cfbd3716cc8d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809105"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190274"
 ---
 # <a name="manage-partner-relationships"></a>Administrar relaciones de partners
 
@@ -36,7 +37,7 @@ Puede trabajar con proveedores de soluciones certificados por Microsoft (partner
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de facturación para realizar estos pasos. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para realizar estos pasos. Para obtener más información, vea [Asignar roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>¿Qué puede hacer un partner para mi organización o escuela?
 
@@ -65,7 +66,7 @@ El partner se pone en contacto con usted y le ofrece la oportunidad de obtener m
 
 Después de encontrar un socio y decidir trabajar con ellos, te envían una invitación por correo electrónico.
 
-1. En el correo electrónico, seleccione el vínculo para ir al Centro de administración de Microsoft 365.
+1. En el correo electrónico, seleccione el vínculo para ir al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 2. En la página Aceptar contrato & autorizar **asociado,** seleccione el vínculo para el Contrato de cliente de **Microsoft** y lea el documento.
 3. Active la casilla para confirmar que ha leído el contrato.
 4. Seleccione **Aceptar & Autorizar**.

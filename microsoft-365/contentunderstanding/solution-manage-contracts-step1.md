@@ -13,11 +13,11 @@ localization_priority: None
 ROBOTS: ''
 description: Obtenga información sobre cómo usar SharePoint Syntex para identificar archivos de contrato y extraer datos mediante una Microsoft 365 solución.
 ms.openlocfilehash: f6097a7573037f8efc2467bb3a9f1037a12bf7ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561427"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189727"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Paso 1. Usar SharePoint Syntex para identificar archivos de contrato y extraer datos
 
@@ -141,7 +141,7 @@ Para etiquetar la entidad:
 
 Después de etiquetar los archivos, se muestra un banner de notificación que le informa de que debe pasar al aprendizaje. Puede elegir etiquetar más documentos o avanzar a la formación.
 
-#### <a name="add-an-explanation"></a>Agregar una explicación
+#### <a name="add-an-explanation"></a>Agregue una explicación
 
 Puede crear una explicación que proporciona una sugerencia sobre el propio formato de entidad y las variaciones que puede tener en los archivos de ejemplo. Por ejemplo, un valor de fecha puede estar en muchos formatos diferentes, como:
 

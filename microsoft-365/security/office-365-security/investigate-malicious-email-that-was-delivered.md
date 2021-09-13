@@ -21,11 +21,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 0a67d9291e7cb33e6385c916f90da5dfae54e352
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918327"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189117"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Investigar el correo electrónico malintencionado que se entregó en Microsoft 365
 

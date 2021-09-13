@@ -15,11 +15,11 @@ search.appverid: ''
 localization_priority: Normal
 description: Obtenga información sobre cómo crear un nuevo tema en Temas Microsoft Viva.
 ms.openlocfilehash: af4a56b98cd3e372cee242bb98742ba488a1f2b4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572664"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187822"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Crear un nuevo tema en Temas Microsoft Viva
 

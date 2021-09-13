@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: Configurar la autenticación multifactor.
 ms.openlocfilehash: 81a6ff75cfa5ea0250962f3e21da7890ed795ccb
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347185"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188697"
 ---
 # <a name="set-up-multifactor-authentication-on-your-mobile-device"></a>Configurar la autenticación multifactor en el dispositivo móvil
 

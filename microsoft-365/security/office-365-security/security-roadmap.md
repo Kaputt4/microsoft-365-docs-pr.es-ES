@@ -20,11 +20,11 @@ description: Recomendaciones principales del equipo de ciberseguridad de Microso
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: dc401f20a7f7425e619fc057dbe481341db993ff
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187326"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Hoja de ruta de seguridad: prioridades principales para los primeros 30 días, 90 días y más allá
 

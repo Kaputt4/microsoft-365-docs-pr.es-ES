@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: None
 description: Obtenga información sobre cómo configurar orígenes de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar) en el Centro de administración de Microsoft 365.
 ms.openlocfilehash: 977589a9b9500f062edbd962ada895436c9b2c96
-ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "58942626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191204"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Configurar orígenes de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar) en el Centro de administración de Microsoft 365
 

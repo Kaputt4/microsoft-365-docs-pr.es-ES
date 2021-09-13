@@ -16,11 +16,11 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtenga información sobre Antivirus de Microsoft Defender protege los dispositivos Windows de amenazas de software, como virus, malware y spyware.
 ms.openlocfilehash: 4343726b1a0856616eaa8291adc24633aaad5eb0
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186785"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Amenazas detectadas por Antivirus de Microsoft Defender
 

@@ -16,25 +16,25 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre Microsoft 365 Lighthouse puede ayudarle a proteger y administrar los inquilinos de clientes en una ubicación.
-ms.openlocfilehash: bde1aeddefd9ab29a77e324a050fc54c276c66b3
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: ef3eff784d661492cafba1c1c030602b45dd5aef
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507607"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187734"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Información general sobre Microsoft 365 Lighthouse
 
 > [!NOTE]
 > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (MSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB) que usan Microsoft 365 Empresa Premium. 
+Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (MSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB) que usan Microsoft 365 Empresa Premium o Microsoft 365 E3. 
 
-Lighthouse simplifica la incorporación de Microsoft 365 Empresa Premium inquilinos mediante la recomendación de líneas base de configuración de seguridad adaptadas a los clientes SMB y la creación de vistas multiinquilino en todos los entornos de clientes. Con Lighthouse, los MSP pueden escalar la administración de sus clientes, centrarse en lo más importante, encontrar e investigar rápidamente los riesgos y tomar medidas para que sus clientes lleguen a un estado correcto y seguro.
+Lighthouse simplifica la incorporación de inquilinos de Microsoft 365 Empresa Premium y Microsoft 365 E3 al recomendar líneas base de configuración de seguridad adaptadas a los clientes SMB y proporcionar vistas multiinquilino en todos los entornos de clientes. Con Lighthouse, los MSP pueden escalar la administración de sus clientes, centrarse en lo más importante, encontrar e investigar rápidamente los riesgos y tomar medidas para que sus clientes lleguen a un estado correcto y seguro.
 
-No hay costos adicionales asociados con el uso de Lighthouse para administrar Microsoft 365 servicios y dispositivos conectados. Lighthouse se encuentra actualmente en Versión preliminar y está disponible para los MSP inscritos en el programa Proveedor de soluciones en la nube (CSP) y a los clientes SMB con una Microsoft 365 Empresa Premium suscripción.
+No hay costos adicionales asociados con el uso de Lighthouse para administrar Microsoft 365 servicios y dispositivos conectados. Lighthouse se encuentra actualmente en Versión preliminar y está disponible para los MSP inscritos en el programa Proveedor de soluciones en la nube (CSP) y atendiendo a clientes SMB con una Microsoft 365 Empresa Premium o Microsoft 365 E3 suscripción.
 
-Se admite el uso de Lighthouse por parte de los partners de canal CSP de Microsoft que tienen clientes que usan Microsoft 365 Empresa Premium usuario. Esto incluye socios CSP que realizan transacciones directamente con Microsoft y aquellos que realizan transacciones a través de un proveedor indirecto (distribuidor). 
+Se admite el uso de Lighthouse por parte de socios de canal csp de Microsoft que tienen clientes que usan Microsoft 365 Empresa Premium o Microsoft 365 E3. Esto incluye socios CSP que realizan transacciones directamente con Microsoft y aquellos que realizan transacciones a través de un proveedor indirecto (distribuidor). 
 
 > [!IMPORTANT] 
 > Para usar Lighthouse, los MSP y sus inquilinos de clientes deben cumplir los requisitos enumerados [en Microsoft 365 Lighthouse requisitos](m365-lighthouse-requirements.md).     

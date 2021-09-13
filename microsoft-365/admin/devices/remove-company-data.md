@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Descubra cómo usar Microsoft 365 para empresas para quitar los datos de la empresa que los usuarios tienen en sus dispositivos o Windows equipos.
 ms.openlocfilehash: f249af524dcdc00601357428425c57da3b3f738c
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360775"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184838"
 ---
 # <a name="remove-company-data-from-devices"></a>Eliminar datos de la empresa de dispositivos
 

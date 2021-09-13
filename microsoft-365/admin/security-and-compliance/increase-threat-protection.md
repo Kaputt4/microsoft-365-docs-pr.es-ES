@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 description: Configure Microsoft Defender para Office 365 proteger los datos confidenciales frente a la suplantación de identidad(phishing), malware y otras amenazas.
 ms.openlocfilehash: f7e82497baff1f14d1a1ff2cfc1d0e05c38700be
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360760"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186849"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -81,9 +81,9 @@ Para crear una regla de transporte de correo:
 
 6. Seleccione **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Setting|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
-|Nombre|Regla anti ransomware: advertir a los usuarios|
+|Name|Regla anti ransomware: advertir a los usuarios|
 |Aplique esta regla si . . .|Cualquier dato adjunto . . . extensión de archivo coincide con . . .|
 |Especificar palabras o frases|Agregue estos tipos de archivo:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm|
 |Haga lo siguiente. . .|Notificar al destinatario con un mensaje|
@@ -113,9 +113,9 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](../../busi
 
 6. Seleccione **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Setting|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
-|Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
+|Name|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
 |Agregar condición|Las propiedades del mensaje . . . incluir el tipo de mensaje . . . Reenvío automático|
 |Haga lo siguiente...|Bloquear el mensaje . . . rechazar el mensaje e incluir una explicación.|
@@ -144,7 +144,7 @@ Para crear una directiva contra la suplantación de identidad en Microsoft Defen
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Nombre|Personal de la campaña más valioso y de dominio|
+|Name|Personal de la campaña más valioso y de dominio|
 |Descripción|Asegúrese de que el personal más importante y nuestro dominio no se suplanten.|
 |Agregar usuarios que proteger|Seleccione **+ Agregar una condición, El destinatario es**. Escriba nombres de usuario o escriba la dirección de correo electrónico del candidato, el jefe de campaña y otros miembros importantes del personal. Puede agregar hasta 20 direcciones internas y externas que desea proteger de la suplantación.|
 |Agregar dominios que proteger|Seleccione **+ Agregar una condición, El dominio de destinatario es**. Escriba el dominio personalizado asociado con su Microsoft 365 suscripción, si ha definido uno. Puede escribir más de un dominio.|
@@ -175,7 +175,7 @@ Para crear una directiva Caja fuerte datos adjuntos, vea [este breve vídeo](../
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Nombre|Bloquear los correos electrónicos actuales y futuros con malware detectado.|
+|Name|Bloquear los correos electrónicos actuales y futuros con malware detectado.|
 |Descripción|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
 |Guardar datos adjuntos respuesta de malware desconocido|Seleccione **Bloquear: bloquee los correos electrónicos y** los datos adjuntos actuales y futuros con malware detectado.|
 |Redirigir datos adjuntos al detectar|Habilitar redirección (seleccione este cuadro) Escriba la cuenta de administrador o una configuración de buzón para la cuarentena.          Aplica la selección anterior si el examen de malware para datos adjuntos se encuentra en tiempo de espera o si se produce un error (selecciona este cuadro).|
@@ -219,7 +219,7 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Nombre|Caja fuerte de vínculos para todos los destinatarios del dominio|
+|Name|Caja fuerte de vínculos para todos los destinatarios del dominio|
 |Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes|Seleccionar Activado: las direcciones URL se reescribirán y comprobarán en una lista de **vínculos malintencionados** conocidos cuando el usuario haga clic en el vínculo .|
 |Usar Caja fuerte datos adjuntos para examinar el contenido descargable|Seleccione este cuadro.|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|

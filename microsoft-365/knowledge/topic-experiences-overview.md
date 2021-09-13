@@ -15,11 +15,11 @@ ms.collection:
 localization_priority: None
 description: Obtenga información sobre cómo usar Viva Topics en su organización.
 ms.openlocfilehash: 902628d53f651073b1d08ce3f1915808da22b03f
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684138"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189544"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de los temas de Microsoft Viva 
 
@@ -160,6 +160,6 @@ Al enviar comentarios, le pedimos que no incluya información confidencial, como
 
 Gracias por tomarse el tiempo para compartir sus ideas con nosotros. Su perspectiva nos ayuda a mejorar nuestras características existentes y desarrollar otras nuevas.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Use Búsqueda de Microsoft para buscar temas en Temas de Viva](./search.md)

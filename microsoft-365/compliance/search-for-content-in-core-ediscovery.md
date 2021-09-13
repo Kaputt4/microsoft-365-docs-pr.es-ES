@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos principal.
 ms.openlocfilehash: 1637d5dafcf088dd2b069cda5e951aef3a2fcd1e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569026"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183990"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos principal
 
@@ -47,7 +47,7 @@ Para crear una búsqueda de exhibición de documentos electrónicos principal:
 
 6. En la página **Ubicaciones**, elija las ubicaciones de contenido que quiere buscar. Puede buscar en buzones, sitios y carpetas públicas.
 
-    ![Elija las ubicaciones de contenido que desea poner en espera.](../media/ContentSearchLocations.png)
+    ![Elegir las ubicaciones de contenido para colocar en suspensión.](../media/ContentSearchLocations.png)
   
    1. **Buzones de Exchange**: establezca el botón de alternancia en **Activado** y después haga clic en **Elegir usuarios, grupos o equipos** para especificar los buzones para colocar en suspensión. Use el cuadro de búsqueda para encontrar buzones de usuario y grupos de distribución (para colocar una suspensión en los buzones de miembros de grupo) para suspenderlos. También puede buscar en el buzón asociado a un equipo de Microsoft (para los mensajes del canal), grupo de Office 365 y grupo de Yammer. Para más información sobre los datos de la aplicación almacenados en buzones, vea [Contenido almacenado en buzones de eDiscovery](what-is-stored-in-exo-mailbox.md).
 
@@ -59,7 +59,7 @@ Para crear una búsqueda de exhibición de documentos electrónicos principal:
 
 7. En la página **Definir las condiciones de búsqueda**, escriba una consulta de palabra clave y agregue condiciones a la consulta de búsqueda si es necesario.
 
-   ![Configure la consulta de búsqueda.](../media/ContentSearchQuery.png)
+   ![Configurar la consulta de búsqueda.](../media/ContentSearchQuery.png)
 
    1. Especifique palabras clave, propiedades del mensaje como la fecha de envío y de recepción, o propiedades del documento como nombres de archivo o la fecha de la última modificación de un documento. También puede usar consultas más complejas con operadores booleanos como **Y**, **O**, **NOT** y **NEAR**. Si deja el cuadro de la palabra clave en blanco, todo el contenido en las ubicaciones especificadas se incluye en los resultados de la búsqueda. Para más información, consulte [Consultas de palabras clave y condiciones de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md).
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: eabd58f43e1275b3ae7ae3b8563e97299fef1233
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.openlocfilehash: b8acad4520fc588517083574d41465e277b9c96a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928769"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184126"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -358,10 +358,6 @@ El mensaje indica:
 8. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al explorador de actividades](data-classification-activity-explorer.md), de ser necesario. 
 
 9. Compruebe que el evento se encuentre en el Explorador de actividades.
-
-### <a name="scenario-5-configure-a-policy-to-use-the-customized-business-justification"></a>Escenario 5: configurar una directiva para usar la justificación empresarial personalizada
-
-
 
 ## <a name="see-also"></a>Consulte también
 

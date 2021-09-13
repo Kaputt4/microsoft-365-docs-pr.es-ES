@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para quitar la Microsoft 365 de un antiguo empleado.
-ms.openlocfilehash: 6ce4a3f72dac806e2b5587234a8e7cfb0fb24a2ca0dcf95df608bdd5ce23c6fe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7303c881e93d3ecb0c6637936ad12d8da227392c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827388"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185201"
 ---
 # <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>Paso 6: Quitar la licencia Microsoft 365 de un antiguo empleado
 

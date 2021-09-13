@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d9e733bb16b843df24fa4fee6b2eecaa889a61041f9a05fe8970124729d8dc41
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a780c30b2919aac1f5a50c475c79df87d5b1f1f3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873456"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59192447"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>Paso 4. Definir Microsoft 365 Defender funciones, responsabilidades y supervisión
 

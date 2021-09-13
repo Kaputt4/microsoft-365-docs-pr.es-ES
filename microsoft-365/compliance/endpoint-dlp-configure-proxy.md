@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión.
 ms.openlocfilehash: e0de08bd27f2222589343fe66715198645fbeb29
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567465"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184145"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión
 

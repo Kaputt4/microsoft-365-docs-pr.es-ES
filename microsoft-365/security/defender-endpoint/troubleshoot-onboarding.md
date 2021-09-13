@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
 ms.openlocfilehash: fbf7b2328a453f1fb20d77553548a71a0e1ca8ab
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185729"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -134,7 +134,7 @@ Nombre del registro: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Pr
 
 Nombre del canal: Administrador
 
-ID | Gravedad | Descripción del evento | Pasos para la solución de problemas
+Id. | Severity | Descripción del evento | Pasos para la solución de problemas
 :---|:---|:---|:---
 1819 | Error | Microsoft Defender para CSP de extremo: no se pudo establecer el valor del nodo. NodeId: (%1), TokenName: (%2), Result: (%3). | Descargue la [actualización acumulativa para Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 

@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Aprenda a crear, editar o eliminar un grupo de seguridad.
 ms.openlocfilehash: c2056996eb3954777654c5ea829379ecf005276a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566309"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184710"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Crear, editar o eliminar un grupo de seguridad en el Centro de administración de Microsoft 365
 

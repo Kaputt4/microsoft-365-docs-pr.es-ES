@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo programar una reunión Teams con usuarios externos.
-ms.openlocfilehash: 2c6e1087cb20bad7ca799159d05d09b61c04bfdeaf146890127d10365155a2b4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e4fec84613dc968298569284c7f026de47005ce3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896384"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190457"
 ---
 # <a name="schedule-a-teams-meeting-with-external-users"></a>Programar una reunión Teams con usuarios externos
 

@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el Microsoft 365 de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
 ms.openlocfilehash: fec3b0e88f7f399fcde821d1cdc55baa99c477e9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567005"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187161"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -58,7 +58,7 @@ También puedes usar la aplicación [Administración de Microsoft 365 en](https:
 
 Para cancelar la suscripción a los correos electrónicos del Centro de mensajes, consulte Cancelar la suscripción a los correos [electrónicos del Centro](#unsubscribe-from-message-center-emails) de mensajes en este artículo.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 <br>
 

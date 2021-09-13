@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Obtenga información sobre cómo agregar un miembro a un grupo, quitar miembro del grupo y administrar el estado del propietario del grupo en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: ee93f4c22d64e20ec586dd315aa970b610ff7e450e1a2bd79700b3f91ed84c23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7eaa74a53ac5f27d801d1cf16c9af035c63c68b1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826548"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184993"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Agregar o quitar miembros de Microsoft 365 grupos mediante el Centro de administración
 

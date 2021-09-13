@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: d0638b6d76c4d2675c98dca1bd28e3b9f26a32fc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574633"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187590"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>Proporcionar comentarios sobre la herramienta del analizador de cliente de Microsoft Defender para endpoints
 

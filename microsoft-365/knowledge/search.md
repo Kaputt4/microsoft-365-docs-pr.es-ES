@@ -11,11 +11,11 @@ search.appverid: ''
 localization_priority: None
 description: Obtenga información sobre cómo buscar temas en Temas Microsoft Viva.
 ms.openlocfilehash: 525ec03621d28c26ecdc717648b3e9d6dcf51024
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187750"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Use Búsqueda de Microsoft para buscar temas en Temas Microsoft Viva
 

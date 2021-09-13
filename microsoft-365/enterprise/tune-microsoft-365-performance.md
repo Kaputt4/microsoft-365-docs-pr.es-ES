@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
 description: Vínculos a cursos de formación, blogs, artículos y otros recursos que te dicen cómo mejorar el rendimiento de Microsoft 365.
-ms.openlocfilehash: 7c1a17a08362fa563d9214a4f71f34ec9705b60b803af70a7e2b185b687db32c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6e6e224eb1f08effeae6c6189f61699834897172
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187838"
 ---
 # <a name="tune-microsoft-365-performance"></a>Optimizar el rendimiento de Microsoft 365
 

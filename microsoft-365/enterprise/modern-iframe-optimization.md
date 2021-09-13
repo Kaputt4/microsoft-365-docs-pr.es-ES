@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: Aprenda cómo optimizar el rendimiento de los iFrames en las páginas de sitio de publicación moderna y clásica de SharePoint Online
 ms.openlocfilehash: 7f50b6582a0a65cd29a91f450642e5d38b346d77
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189604"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimizar los iFrames en las páginas de sitio de publicación moderna y clásica de SharePoint Online
 

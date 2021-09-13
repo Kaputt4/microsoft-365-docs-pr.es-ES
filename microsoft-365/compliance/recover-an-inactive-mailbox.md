@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo recuperar el contenido de un buzón inactivo en Office 365 convertirlo en un nuevo buzón que contenga el contenido del buzón inactivo.
-ms.openlocfilehash: 62b3412b0c6152ea0ceb3d902218654f6559c198c680743021bb18f0dcc9e0c4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7f5ea9e3d47bf6b7ee6de495d2f5f47984cdf8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855652"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185998"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Recuperar un buzón inactivo
 

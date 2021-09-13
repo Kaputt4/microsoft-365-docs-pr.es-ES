@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: Obtén la Administración de Microsoft 365 y aprende a administrar tu organización en línea desde tu teléfono o tableta.
 ms.openlocfilehash: 7e503b70f6263e0bf5e949c7ca18ccfe0eb31ffb
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394365"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185134"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la Microsoft 365 móvil de administrador
 

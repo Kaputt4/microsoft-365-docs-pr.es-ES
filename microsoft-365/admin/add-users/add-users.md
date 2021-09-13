@@ -21,11 +21,11 @@ search.appverid:
 description: Cada miembro del equipo necesita una cuenta de usuario para poder iniciar sesión y acceder a Microsoft 365 para empresas. Obtenga información sobre cómo agregar usuarios y asignar licencias.
 ms.date: 07/01/2020
 ms.openlocfilehash: b7fa0842812a83e510d7e200ebef3db4507d4b9d
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185329"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
 

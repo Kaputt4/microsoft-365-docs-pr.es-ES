@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar un vínculo Cualquiera en Microsoft 365 compartir fácilmente los archivos de negocio externamente.
-ms.openlocfilehash: 61b61c5d2bbf303e500f57662d63388a5ff703b9b252566ba1281cb2b17306bd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cbe6a12fd8d0c2b2ec16db32178f9c2559a08c22
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809545"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188838"
 ---
 # <a name="easily-share-files-externally"></a>Compartir archivos de forma externa y sencilla
 

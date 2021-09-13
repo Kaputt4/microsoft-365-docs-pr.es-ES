@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Debe habilitar la compatibilidad ClickOnce para usar la versión más reciente de Microsoft Edge para descargar los resultados de búsqueda de la búsqueda de contenido y la exhibición de documentos electrónicos en el centro de seguridad y cumplimiento.
 ms.openlocfilehash: bd42ebffce326e4abe4943ff4187fc2bd960ff65
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574849"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184270"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Use la herramienta de exportación de exhibición de documentos electrónicos en Microsoft Edge
 

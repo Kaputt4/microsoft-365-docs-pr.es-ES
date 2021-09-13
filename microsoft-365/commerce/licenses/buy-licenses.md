@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Siga estos pasos para comprar más licencias o reducir el número de licencias para su suscripción Microsoft 365 para empresas.
 ms.date: 04/07/2021
-ms.openlocfilehash: b5d526ef999da8bb173be2ee26f16d131fe532b64eed88c5c16cbfe8b6a4807e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4fa1b08a7a4304d13fb25ec53c5f034eae77ccec
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820940"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190327"
 ---
 # <a name="buy-or-remove-licenses"></a>Agregar o quitar licencias
 
@@ -35,7 +35,7 @@ Puede comprar más licencias o reducir el número de licencias para sus suscripc
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser un administrador global o de facturación para realizar las tareas descritas en este artículo. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+- Debe ser un administrador global o de facturación para realizar las tareas descritas en este artículo. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
 - Puede agregar [usuarios y asignar licencias al mismo tiempo.](../../admin/add-users/add-users.md)
 - Si compró su Microsoft 365 para empresas o Office 365 Enterprise a través de un partner de terceros, debe comprar licencias adicionales a través de ese partner.
 

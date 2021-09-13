@@ -26,11 +26,11 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo guardar el contenido del buzón de un antiguo empleado.
 ms.openlocfilehash: 24a1fbff978bdc266e778b7fca84c882f9677cfe
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831854"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185238"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>Paso 2: Guardar el contenido del buzón de un antiguo empleado
 

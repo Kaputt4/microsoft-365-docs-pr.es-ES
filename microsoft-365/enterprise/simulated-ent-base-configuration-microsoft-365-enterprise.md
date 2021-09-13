@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use esta Guía del laboratorio de pruebas para crear un entorno de prueba de empresa simulado para Microsoft 365 para empresas.
 ms.openlocfilehash: e3576c5d7e1a00069dd5dd46d1b1e6063da217bf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575257"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187897"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>La configuración básica empresarial simulada
 
@@ -414,6 +414,6 @@ Explore estos conjuntos adicionales de guías de laboratorio de pruebas:
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

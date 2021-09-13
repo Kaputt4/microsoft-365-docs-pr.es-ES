@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para permitir mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81ab9b0aabc9b9699e0cee27b0046748a2a585df511f271316e01200ce552221
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f76b34a439d2eaf2c8315d174483b0b30d3b3b0b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56814780"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185574"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 

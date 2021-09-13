@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: En este artículo se describe cómo configurar Advanced eDiscovery para que pueda empezar a crear y administrar casos. También describe las suscripciones y licencias de Microsoft necesarias. Después de completar algunos pasos rápidos, la Advanced eDiscovery está lista para usarse.
 ms.openlocfilehash: 42ff8a7ef49949b9061972f08ebafeebd6d1a85d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570850"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191474"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>Configurar Microsoft 365 Advanced eDiscovery
 

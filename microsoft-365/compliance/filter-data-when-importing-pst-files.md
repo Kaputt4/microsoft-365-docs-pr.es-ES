@@ -20,11 +20,11 @@ ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo filtrar datos mediante la característica de importación inteligente en el Microsoft 365 importar archivos PST al Microsoft 365.
 ms.openlocfilehash: b893c0678d2821855bfc09ee703e3aa4cb8119cb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569074"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191494"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrar datos al importar archivos PST
 
@@ -119,7 +119,7 @@ Después de crear un trabajo de importación de PST, siga estos pasos para filtr
   
     e. Haga **clic en Importar datos** para iniciar la importación. Se muestra la cantidad total de datos que se importarán. 
   
-    O bien:
+    O bien
   
     a. Haga **clic en No, quiero importar** todo para importar todos los datos de los archivos PST a Office 365 y, a continuación, haga clic en **Siguiente**.
   

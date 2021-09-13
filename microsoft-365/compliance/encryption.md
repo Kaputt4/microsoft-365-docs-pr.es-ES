@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Con Office 365, el contenido se cifra en reposo y en tránsito con el cifrado, protocolos y tecnologías más fuertes disponibles. Obtenga información general sobre el cifrado en Office 365.
-ms.openlocfilehash: 1dcfb16c08eae1cddde10f250093df9ffc43cbc11944745c96e38e3ff0279670
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c54508434c5ae5126a79eba1cb6dab3851d8f746
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900068"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184150"
 ---
 # <a name="encryption"></a>Cifrado
 

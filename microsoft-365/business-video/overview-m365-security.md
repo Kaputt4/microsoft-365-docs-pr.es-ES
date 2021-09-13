@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre las características de seguridad incluidas con Microsoft 365 para empresas.
 ms.openlocfilehash: 686ced4c4612470d25ab3a39fdd824b576bbeab7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572112"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190547"
 ---
 # <a name="overview-of-security"></a>Información general sobre la seguridad
 

@@ -19,11 +19,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el Centro de cumplimiento de Microsoft 365 o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
 ms.openlocfilehash: c6e233ec90c9143b07d32e71933c4c81b94f252b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572352"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190174"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
@@ -125,7 +125,7 @@ En la tabla siguiente se enumeran y describen las directivas de alerta predeterm
 
 En la tabla también se indica Office 365 Enterprise y Office 365 plan del Gobierno de Estados Unidos necesario para cada uno de ellos. Algunas directivas de alerta predeterminadas están disponibles si su organización tiene la suscripción de complemento adecuada además de una suscripción E1/F1/G1 o E3/F3/G3.
 
-| Directiva de alerta predeterminada | Description | Categoría | Enterprise suscripción |
+| Directiva de alerta predeterminada | Descripción | Categoría | Enterprise suscripción |
 |:-----|:-----|:-----|:-----|
 |**Se detectó un clic de dirección URL potencialmente malintencionado**|Genera una alerta cuando un usuario protegido por [Caja fuerte vínculos de](../security/office-365-security/safe-links.md) la organización hace clic en un vínculo malintencionado. Este evento se desencadena cuando Microsoft Defender identifica los cambios de veredicto de url para Office 365 o cuando los usuarios invalidan las páginas de vínculos de Caja fuerte (según la directiva de vínculos de Microsoft 365 para empresas de Caja fuerte de la organización). Esta directiva de alerta tiene **una configuración de** gravedad alta. Para los clientes de Defender Office 365 P2, E5, G5, esta alerta desencadena automáticamente la investigación automatizada y la respuesta [en Office 365](../security/office-365-security/office-365-air.md). Para obtener más información sobre los eventos que desencadenan esta alerta, vea [Configurar Caja fuerte de vínculos](../security/office-365-security/set-up-safe-links-policies.md).|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Resultado de envío de administrador completado**|Genera una alerta cuando un [envío de](../security/office-365-security/admin-submission.md) administrador completa el nuevo análisis de la entidad enviada. Se activará una alerta cada vez que se represente un resultado de nuevo análisis desde un envío de administrador. Estas alertas están diseñadas para recordarle que revise los resultados de envíos anteriores, envíe mensajes [notificados](https://compliance.microsoft.com/reportsubmission)por el usuario para obtener los últimos veredictos de comprobación de directivas y volver a examinar, y le ayudarán a determinar si las directivas de filtrado de su organización están teniendo el impacto previsto. Esta directiva tiene una **configuración de gravedad informativo.**|Administración de amenazas|E1/F1, E3/F3 o E5|
@@ -211,7 +211,7 @@ Cuando se producen varios eventos que coinciden con las condiciones de una direc
 
 La longitud del intervalo de agregación depende de la Office 365 o Microsoft 365 suscripción.
 
-|Suscripción |Intervalo de agregación|
+|Suscripción|Intervalo de agregación|
 |:---------|:---------:|
 |Office 365 o Microsoft 365 E5/G5|1 minuto|
 |Defender para Office 365 Plan 2 |1 minuto|
@@ -248,7 +248,7 @@ En la tabla siguiente se enumeran los roles necesarios para ver alertas de las s
 
 Para ver a qué categoría está asignada una directiva de alerta predeterminada, vea la tabla [en Directivas de alerta predeterminadas](#default-alert-policies).
 
-|Rol|Información de gobierno|Prevención de pérdida de datos|Flujo del correo|Permisos|Administración de amenazas|Otros|
+|Role|Información de gobierno|Prevención de pérdida de datos|Flujo del correo|Permisos|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||
@@ -257,11 +257,11 @@ Para ver a qué categoría está asignada una directiva de alerta predeterminada
 |Administración de dispositivos|||||||
 |Administración de disposición|||||||
 |Administración de cumplimiento de DLP||![Marca de verificación.](../media/checkmark.png)|||||
-|Exportar|||||||
+|Export|||||||
 |Hold|||||||
 |Administrar alertas||||||![Marca de verificación.](../media/checkmark.png)|
 |Configuración de la organización||||||![Marca de verificación.](../media/checkmark.png)|
-|Vista previa|||||||
+|Preview|||||||
 |Administración de registros|![Marca de verificación.](../media/checkmark.png)||||||
 |Administración de retención|![Marca de verificación.](../media/checkmark.png)||||||
 |Revisar|||||||

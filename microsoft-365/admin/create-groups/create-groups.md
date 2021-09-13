@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a crear y eliminar Microsoft 365 grupos, agregar y quitar miembros del grupo y personalizar el funcionamiento del grupo.
 ms.openlocfilehash: 76131f434b3c4210578fe44ff7dd4e435f1fbe6b
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184969"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Crear un grupo en el Centro de administración de Microsoft 365
   

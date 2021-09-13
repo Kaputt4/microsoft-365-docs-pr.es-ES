@@ -22,11 +22,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 22b0a82d8101c0a2a9e21c05413b64cd7dca4e9a
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185918"
 ---
 # <a name="cancel-machine-action-api"></a>Cancelar API de acción de máquina
 
@@ -57,8 +57,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso|Permiso|Nombre para mostrar de permisos|
 |---|---|---|
-|Aplicación|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Recopilar forenses <br>Aislar máquina<br>Restringir la ejecución del código<br>  Máquina de digitalización<br>  Retirar máquina<br> Detener y poner en cuarentena<br> Ejecutar respuesta en directo en un equipo específico|
-|Delegado (cuenta profesional o educativa)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Recopilar forenses<br> Aislar máquina<br>  Restringir la ejecución del código<br> Máquina de digitalización<br>Retirar máquina<br> Detener y poner en cuarentena<br> Ejecutar respuesta en directo en un equipo específico|
+|Aplicación|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Recopilar forenses <br>Aislar máquina<br>Restringir la ejecución del código<br>  Máquina de digitalización<br>  Retirar la máquina<br> Detener y poner en cuarentena<br> Ejecutar respuesta en directo en un equipo específico|
+|Delegado (cuenta profesional o educativa)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Recopilar forenses<br> Aislar máquina<br>  Restringir la ejecución del código<br> Máquina de digitalización<br>Retirar la máquina<br> Detener y poner en cuarentena<br> Ejecutar respuesta en directo en un equipo específico|
 
 ## <a name="http-request"></a>Solicitud HTTP
 

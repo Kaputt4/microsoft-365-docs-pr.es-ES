@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 92c74ae2f7e7236138f28cf30b3e835eb10b636d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572508"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189237"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -54,7 +54,7 @@ En la cola de alertas predeterminada, puede seleccionar Filtros **para** ver un 
 
 Puede filtrar alertas según estos criterios:
 
-- Gravedad
+- Severity
 - Estado
 - Categoría
 - Origen de detección
@@ -153,7 +153,7 @@ Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

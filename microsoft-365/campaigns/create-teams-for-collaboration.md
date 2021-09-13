@@ -24,11 +24,11 @@ search.appverid:
 - MOE150
 description: Cree un espacio de colaboración para su equipo con Microsoft Teams.
 ms.openlocfilehash: c787f2c493643dcba2bbd5985fa518210aa8a5c6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567149"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186478"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Crear equipos para la colaboración en Microsoft Teams
 

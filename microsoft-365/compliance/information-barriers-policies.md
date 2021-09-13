@@ -16,11 +16,11 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 43190dabe55ab3600a05aa8e6094c6ad7393a04d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567453"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191397"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
@@ -71,7 +71,7 @@ Además de las licencias y permisos [necesarios,](information-barriers.md#requir
 - Sin directivas de libreta de direcciones: antes de definir y aplicar directivas de barrera de información, asegúrese de que no Exchange directivas de libreta de direcciones. Las barreras de información se basan en las directivas de libreta de direcciones, pero los dos tipos de directivas no son compatibles. Si tiene estas directivas, asegúrese de quitar primero [las directivas de la libreta de direcciones.](/exchange/address-books/address-book-policies/remove-an-address-book-policy) Una vez habilitadas las directivas de barrera de  información y habilitada la libreta jerárquica [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) de direcciones, todos los usuarios que no estén incluidos en un segmento de barrera de información verán la libreta jerárquica de direcciones en Exchange en línea.
 
 - PowerShell: actualmente, las directivas de barrera de información se definen y administran en el Centro de Office 365 seguridad & cumplimiento con cmdlets de PowerShell. Aunque en este artículo se proporcionan varios ejemplos, deberá familiarizarse con los cmdlets y parámetros de PowerShell. También necesitará el módulo Azure PowerShell.
-  - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
+  - [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
   - [Instalar el Azure PowerShell módulo](/powershell/azure/install-az-ps)
 
 - Consentimiento de los administradores para las barreras de información en Microsoft Teams: cuando las directivas del IB están en su lugar, pueden quitar usuarios que no son del IB de grupos (es decir, canales Teams, que se basan en grupos). Esta configuración ayuda a garantizar que la organización cumpla con las directivas y las normativas. Use el siguiente procedimiento para permitir que las directivas de barrera de información funcionen según lo esperado en Microsoft Teams.
@@ -148,7 +148,7 @@ Después de definir los segmentos, continúe con la [definición de directivas d
 
 En el siguiente ejemplo, estamos definiendo un segmento de modo que "Department es igual a HR". 
 
-| Ejemplo | Nota |
+| Ejemplo | Nota: |
 |:----------|:-------|
 |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` | Observe que en este ejemplo, la definición de segmento incluye un parámetro "igual" que se indica como **-eq**. |
 
@@ -198,7 +198,7 @@ Por ejemplo, supongamos que desea bloquear las comunicaciones entre el segmento 
 
 2. Para definir el segundo segmento de bloqueo, use de nuevo el cmdlet **New-InformationBarrierPolicy** con el parámetro **SegmentsBlocked,** esta vez con los segmentos invertidos.
 
-    | Ejemplo | Nota |
+    | Ejemplo | Nota: |
     |:----------|:-------|
     |`New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` | En este ejemplo, definimos una directiva denominada *Research-Sales* para impedir que *Research* se comunique con *Sales*. |
 
@@ -260,7 +260,7 @@ Con PowerShell, puede ver el estado de cuentas de usuario, segmentos, directivas
 | Segmentos | Use el cmdlet **Get-OrganizationSegment.**<p> Sintaxis: `Get-OrganizationSegment` <p> Este cmdlet mostrará una lista de todos los segmentos definidos para su organización. |
 | Directivas de barreras de información | Use el cmdlet **Get-InformationBarrierPolicy.** <p> Sintaxis: `Get-InformationBarrierPolicy` <p> Este cmdlet mostrará una lista de directivas de barrera de información definidas y su estado. |
 | La aplicación de directiva de barrera de información más reciente | Use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus.** <p> Sintaxis: `Get-InformationBarrierPoliciesApplicationStatus`<p> Este cmdlet mostrará información sobre si la aplicación de directiva se ha completado, ha fallado o está en curso. |
-| Todas las aplicaciones de directiva de barrera de información|El uso de `Get-InformationBarrierPoliciesApplicationStatus -All`<p> Este cmdlet mostrará información sobre si la aplicación de directiva se ha completado, ha fallado o está en curso.|
+| Todas las aplicaciones de directiva de barrera de información|Use `Get-InformationBarrierPoliciesApplicationStatus -All`<p> Este cmdlet mostrará información sobre si la aplicación de directiva se ha completado, ha fallado o está en curso.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 

@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Describe cómo empezar a usar eDiscovery principal en Microsoft 365. Después de asignar permisos de exhibición de documentos electrónicos y crear un caso, puede agregar miembros, crear retenciones de exhibición de documentos electrónicos y, a continuación, buscar y exportar contenido relevante para la investigación.
 ms.openlocfilehash: d1a9e68bedc77f3b74b13f438e73dcbcb83b4c8c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569590"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191484"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Introducción a la exhibición de documentos electrónicos principal en Microsoft 365
 

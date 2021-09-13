@@ -14,11 +14,11 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo configurar la búsqueda en un entorno multige geográfico. Solo algunos clientes, como OneDrive, pueden devolver resultados en un entorno multige geográfico.
 ms.openlocfilehash: a991638e5f0b1270950b50823def61eb4d60669b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566849"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187942"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurar la búsqueda para Microsoft 365 Multi-Geo
 
@@ -66,7 +66,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 <thead>
 <tr class="header">
 <th align="left">Característica</th>
-<th align="left">Cómo funciona</th>
+<th align="left">Funcionamiento</th>
 <th align="left">Solución alternativa</th>
 </tr>
 </thead>
@@ -112,7 +112,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, n
 <thead>
 <tr class="header">
 <th align="left">Característica de búsqueda</th>
-<th align="left">Nota</th>
+<th align="left">Nota:</th>
 </tr>
 </thead>
 <tbody>

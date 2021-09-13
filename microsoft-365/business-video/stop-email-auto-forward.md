@@ -16,18 +16,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Aprende a detener el reenvío automático de mensajes de correo mediante la creación de una regla de flujo de correo para evitar el robo de información propietaria.
-ms.openlocfilehash: b3118fed41408ef83ba007ff9530b49b6072f8c51e9ca6cc07fc3526309decb5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c13e43f29b6d49b13daf4eb0aa6e3d6fd8275ae
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893320"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188785"
 ---
 # <a name="stop-email-auto-forward"></a>Detener el reenvío automático de correo electrónico
 
@@ -39,7 +40,7 @@ Si un hacker obtiene acceso al buzón de un usuario, puede reenviar automáticam
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el Centro de administración de Microsoft 365, seleccione **Exchange** **,** flujo de correo  y, en la pestaña reglas, seleccione el signo más y elija crear **una nueva regla**.
+1. En el  <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, seleccione **Exchange**, flujo de correo y, en la pestaña reglas, seleccione el signo más y elija crear una nueva **regla**.
 1. Seleccione **Más opciones**. Asigne un nombre a la nueva regla.
 1. A continuación, abra la lista desplegable para **aplicar esta regla** si , seleccione el **remitente** y, a continuación, sea **interno externo**.
 1. Seleccione **Dentro de la organización** y, a continuación, **Aceptar**.

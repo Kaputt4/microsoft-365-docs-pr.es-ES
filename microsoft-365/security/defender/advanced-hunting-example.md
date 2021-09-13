@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 91bd008d44495e4c304b353fcbc22785915501e7cfbe000e5cc70eebe5842b7b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d3ac49b4afde0951e7a034c5c11114afbc52c293
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833341"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185705"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Ejemplo de búsqueda avanzada para Microsoft Defender para Office 365
 
@@ -41,7 +41,7 @@ La sección [Introducción](/microsoft-365/security/office-365-security/defender
 
 1. Configure todo con 'Anti' en el nombre.
    - Antimalware
-   - Anti-phishing
+   - Protección contra la suplantación de identidad (anti-phishing)
    - Contra correo electrónico no deseado
 2. Configure todo con "Caja fuerte" en el nombre.
    - Vínculos seguros

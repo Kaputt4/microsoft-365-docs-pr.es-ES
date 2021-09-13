@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: In-Place exhibición de documentos electrónicos y retención In-Place (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Advanced eDiscovery v1.0 también se retiran en el mismo período de tiempo.
 ms.openlocfilehash: 16a43122ce16a134a6068f78dadea02ac8605625
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507237"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188134"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 

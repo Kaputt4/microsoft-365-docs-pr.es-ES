@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Resumen: obtenga información sobre cómo configurar una red virtual de Azure entre locales para las cargas de trabajo de servidores de Office con una conexión VPN de sitio a sitio.'
 ms.openlocfilehash: de8488df370b4ede9fef5ad6698d37bca6c99ac8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568942"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189684"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Conectar una red local con una red virtual de Microsoft Azure
 
@@ -128,7 +128,7 @@ Para determinar el número de direcciones necesarias para la subred, cuente el n
   
 |**Número de máquinas virtuales necesarias**|**Número de bits de host necesarios**|**Tamaño de la subred**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3   <br/> |/29  <br/> |
+|1-3  <br/> |3  <br/> |/29  <br/> |
 |4-11  <br/> |4   <br/> |/28  <br/> |
 |12-27  <br/> |5   <br/> |/27  <br/> |
 |28-59  <br/> |6   <br/> |/26  <br/> |

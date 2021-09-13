@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus compras de autoservicio.
 ms.date: 03/17/2021
-ms.openlocfilehash: 581a142eb18e64bfec237e6108564d68d715e21ca20b74e39337afbb7ac86491
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852204"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191637"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 

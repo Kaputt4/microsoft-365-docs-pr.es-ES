@@ -13,11 +13,11 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.openlocfilehash: 6fa7ab5b30a4cfad8ec4305c0ddf8fcda1c6f284
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571355"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191334"
 ---
 # <a name="insider-risk-management-audit-log"></a>Registro de auditoría de administración de riesgos de Insider
 
@@ -32,7 +32,7 @@ Entre las áreas incluidas en la supervisión de actividades se incluyen:
 - Directivas
 - Casos
 - Alertas
-- Configuraciones
+- Configuración
 - Usuarios
 - Plantillas de aviso
 

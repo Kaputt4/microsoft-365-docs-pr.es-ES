@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 09/03/2021
-ms.openlocfilehash: 8b5cf1f9e48e6022d2269911606ad69b953d8ec2
-ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
+ms.date: 09/08/2021
+ms.openlocfilehash: e136556bc2749261230e0267355ed68ef811e0a8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "58896470"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59212080"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -85,9 +85,33 @@ Todas nuestras actualizaciones contienen
 - mejoras de integración (cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
+<summary> Agosto-2021 (Plataforma: 4.18.2108.7 | Motor: 1.1.18500.10)</summary>
+
+&ensp;Versión de actualización de inteligencia de seguridad: **1.349.22.0**<br/>
+&ensp;Publicado: **2 de septiembre de 2021**<br/>
+&ensp;Plataforma: **4.18.2108.7**<br/>
+&ensp;Motor: **1.1.18500.10**<br/>
+&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
+
+### <a name="whats-new"></a>Novedades
+- Mejoras en el motor de supervisión de comportamiento
+- Nuevo analizador [de rendimiento para Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md)
+- Antivirus de Microsoft Defender contra la carga de DLL malintencionadas
+- Antivirus de Microsoft Defender se endurece con la omisión de TrustedInstaller
+- Se agregó compatibilidad para configurar exclusiones de reglas de reducción de superficie de ataque [por regla](customize-attack-surface-reduction.md)
+- Extensión de notificaciones de cambio de archivo para incluir más datos para Human-Operated ransomware (HumOR)
+
+### <a name="known-issues"></a>Problemas conocidos
+Sin problemas conocidos
+<br/>
+</details><details>
 <summary> Julio-2021 (Plataforma: 4.18.2107.4 | Motor: 1.1.18400.4)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.345.13.0** Publicado: 5 de agosto de &ensp; **2021** &ensp; Plataforma: **4.18.2107.4** &ensp; Motor: **1.1.18400.4** &ensp;  Fase de soporte técnico: Seguridad y actualizaciones críticas
+&ensp;Versión de actualización de inteligencia de seguridad: **1.345.13.0**<br/>
+&ensp;Publicado: **5 de agosto de 2021**<br/>
+&ensp;Plataforma: **4.18.2107.4**<br/>
+&ensp;Motor: **1.1.18400.4**<br/>
+&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
 
 ### <a name="whats-new"></a>Novedades
 - Compatibilidad con el control de dispositivos agregado para Windows dispositivos portátiles
@@ -101,7 +125,11 @@ Sin problemas conocidos
 </details><details>
 <summary> Junio-2021 (Plataforma: 4.18.2106.5 | Motor: 1.1.18300.4)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.343.17.0** Publicado: 28 de junio de &ensp; **2021** &ensp; Plataforma: **4.18.2106.5** &ensp; Motor: **1.1.18300.4** &ensp;  Fase de soporte técnico: Seguridad y actualizaciones críticas
+&ensp;Versión de actualización de inteligencia de seguridad: **1.343.17.0**<br/>
+&ensp;Publicado: **28 de junio de 2021**<br/>
+&ensp;Plataforma: **4.18.2106.5**<br/>
+&ensp;Motor: **1.1.18300.4**<br/>
+&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
 
 ### <a name="whats-new"></a>Novedades
 - Nuevos controles para administrar el proceso de implementación gradual de las actualizaciones de Microsoft Defender. Consulte [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
@@ -112,10 +140,19 @@ Sin problemas conocidos
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas
+
+Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización.
+<details>
 <summary> Mayo-2021 (Plataforma: 4.18.2105.4 | Motor: 1.1.18200.4)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.341.8.0** Publicado: 3 de junio de &ensp; **2021** &ensp; Plataforma: **4.18.2105.4** &ensp; Motor: **1.1.18200.4** &ensp;  Fase de soporte técnico: Seguridad y actualizaciones críticas
+&ensp;Versión de actualización de inteligencia de seguridad: **1.341.8.0**<br/>
+&ensp;Publicado: **3 de junio de 2021**<br/>
+&ensp;Plataforma: **4.18.2105.4**<br/>
+&ensp;Motor: **1.1.18200.4**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 - Mejoras en la [supervisión del comportamiento](client-behavioral-blocking.md)
@@ -124,18 +161,17 @@ Sin problemas conocidos
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas
-
-Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización.
-<details>
+</details><details>
 <summary> Abril-2021 (Plataforma: 4.18.2104.14 | Motor: 1.1.18100.5)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.337.2.0** Publicado: 26 de abril de &ensp; **2021**  (Motor: 1.1.18100.6 publicado el 5 de mayo de 2021) &ensp; Plataforma: **4.18.2104.14** &ensp; Motor: **1.1.18100.5** Fase de soporte técnico: soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.337.2.0**<br/>
+&ensp;Publicado: **26 de abril de 2021**  (Motor: 1.1.18100.6 publicado el 5 de mayo de 2021)<br/>
+&ensp;Plataforma: **4.18.2104.14**<br/>
+&ensp;Motor: **1.1.18100.5**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
-- Lógica de supervisión de comportamiento adicional
+- Más lógica de supervisión de comportamiento
 - Detección mejorada del registrador de claves del modo kernel
 - Se agregaron nuevos controles para administrar el proceso de implementación gradual de actualizaciones [de Microsoft Defender](manage-gradual-rollout.md)
 
@@ -146,13 +182,17 @@ Sin problemas conocidos
 </details><details>
 <summary> Marzo-2021 (Plataforma: 4.18.2103.7 | Motor: 1.1.18000.5)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.335.36.0** Publicado: 2 de abril de &ensp; **2021** &ensp; Plataforma: **4.18.2103.7** &ensp; Motor: **1.1.18000.5** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.335.36.0**<br/>
+&ensp;Publicado: **2 de abril de 2021**<br/>
+&ensp;Plataforma: **4.18.2103.7**<br/>
+&ensp;Motor: **1.1.18000.5**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
 - Mejora del motor de supervisión del comportamiento
 - Mitigaciones de ataques de fuerza bruta de red expandida
-- Generación de eventos de intento de manipulación con error adicional cuando [la protección contra manipulaciones](prevent-changes-to-security-settings-with-tamper-protection.md) está habilitada
+- Generación de eventos de intento de manipulación con más errores cuando [la protección contra](prevent-changes-to-security-settings-with-tamper-protection.md) manipulaciones está habilitada
 
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos
@@ -160,7 +200,11 @@ Sin problemas conocidos
 </details><details>
 <summary> Febrero-2021 (Plataforma: 4.18.2102.3 | Motor: 1.1.17900.7)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.333.7.0** Publicado: 9 de marzo de &ensp; **2021** &ensp; Plataforma: **4.18.2102.3** &ensp; Motor: **1.1.17900.7** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.333.7.0**<br/>
+&ensp;Publicado: **9 de marzo de 2021**<br/>
+&ensp;Plataforma: **4.18.2102.3**<br/>
+&ensp;Motor: **1.1.17900.7**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -173,7 +217,11 @@ Sin problemas conocidos
 </details><details>
 <summary> Enero-2021 (Plataforma: 4.18.2101.9 | Motor: 1.1.17800.5)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.327.1854.0** Publicada: 2 de febrero de &ensp; **2021** &ensp; Plataforma: **4.18.2101.9** &ensp; Motor: **1.1.17800.5** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.327.1854.0**<br/>
+&ensp;Publicado: **2 de febrero de 2021**<br/>
+&ensp;Plataforma: **4.18.2101.9**<br/>
+&ensp;Motor: **1.1.17800.5**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -189,7 +237,11 @@ Sin problemas conocidos
 </details><details>
 <summary> Noviembre-2020 (Plataforma: 4.18.2011.6 | Motor: 1.1.17700.4)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.327.1854.0** Publicado: 03 de diciembre &ensp; de **2020** &ensp; Plataforma: **4.18.2011.6** &ensp; Motor: **1.1.17700.4** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.327.1854.0**<br/>
+&ensp;Publicado: **03 de diciembre de 2020**<br/>
+&ensp;Plataforma: **4.18.2011.6**<br/>
+&ensp;Motor: **1.1.17700.4**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -201,7 +253,11 @@ Sin problemas conocidos
 </details><details>
 <summary> Octubre-2020 (Plataforma: 4.18.2010.7 | Motor: 1.1.17600.5)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.327.7.0** Publicado: 29 de octubre de &ensp; **2020** &ensp; Plataforma: **4.18.2010.7** &ensp; Motor: **1.1.17600.5** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.327.7.0**<br/>
+&ensp;Publicado: **29 de octubre de 2020**<br/>
+&ensp;Plataforma: **4.18.2010.7**<br/>
+&ensp;Motor: **1.1.17600.5**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -217,7 +273,11 @@ Sin problemas conocidos
 </details><details>
 <summary> Septiembre-2020 (Plataforma: 4.18.2009.7 | Motor: 1.1.17500.4)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.325.10.0** Publicado: 01 de octubre &ensp; de **2020** &ensp; Plataforma: **4.18.2009.7** &ensp; Motor: **1.1.17500.4** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.325.10.0**<br/>
+&ensp;Publicado: **01 de octubre de 2020**<br/>
+&ensp;Plataforma: **4.18.2009.7**<br/>
+&ensp;Motor: **1.1.17500.4**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -239,7 +299,11 @@ Sin problemas conocidos
 <details>
 <summary> Agosto-2020 (Plataforma: 4.18.2008.9 | Motor: 1.1.17400.5)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.323.9.0** Publicado: 27 de agosto de &ensp; **2020** &ensp; Plataforma: **4.18.2008.9** &ensp; Motor: **1.1.17400.5** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.323.9.0**<br/>
+&ensp;Publicado: **27 de agosto de 2020**<br/>
+&ensp;Plataforma: **4.18.2008.9**<br/>
+&ensp;Motor: **1.1.17400.5**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -259,7 +323,11 @@ Sin problemas conocidos
 <details>
 <summary> Julio-2020 (Plataforma: 4.18.2007.8 | Motor: 1.1.17300.4)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.321.30.0** Publicado: 28 de julio de &ensp; **2020** &ensp; Plataforma: **4.18.2007.8** &ensp; Motor: **1.1.17300.4** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.321.30.0**<br/>
+&ensp;Publicado: **28 de julio de 2020**<br/>
+&ensp;Plataforma: **4.18.2007.8**<br/>
+&ensp;Motor: **1.1.17300.4**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -274,7 +342,11 @@ Sin problemas conocidos
 <details>
 <summary> Junio-2020 (Plataforma: 4.18.2006.10 | Motor: 1.1.17200.2)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.319.20.0** Publicado: 22 de junio de &ensp; **2020** &ensp; Plataforma: **4.18.2006.10** &ensp; Motor: **1.1.17200.2** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.319.20.0**<br/>
+&ensp;Publicado: **22 de junio de 2020**<br/>
+&ensp;Plataforma: **4.18.2006.10**<br/>
+&ensp;Motor: **1.1.17200.2**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -293,7 +365,11 @@ Sin problemas conocidos
 <details>
 <summary> Mayo-2020 (Plataforma: 4.18.2005.4 | Motor: 1.1.17100.2)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.317.20.0** Publicado: 26 de mayo de &ensp; **2020** &ensp; Plataforma: **4.18.2005.4** &ensp; Motor: **1.1.17100.2** Fase de soporte técnico: soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.317.20.0**<br/>
+&ensp;Publicado: **26 de mayo de 2020**<br/>
+&ensp;Plataforma: **4.18.2005.4**<br/>
+&ensp;Motor: **1.1.17100.2**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -312,7 +388,11 @@ Sin problemas conocidos
 <details>
 <summary> Abril-2020 (Plataforma: 4.18.2004.6 | Motor: 1.1.17000.2)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.315.12.0** Publicado: 30 de abril de &ensp; **2020** &ensp; Plataforma: **4.18.2004.6** &ensp; Motor: **1.1.17000.2** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.315.12.0**<br/>
+&ensp;Publicado: **30 de abril de 2020**<br/>
+&ensp;Plataforma: **4.18.2004.6**<br/>
+&ensp;Motor: **1.1.17000.2**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 - Mejoras de WDfilter
@@ -331,7 +411,11 @@ Sin problemas conocidos
 <details>
 <summary> Marzo-2020 (Plataforma: 4.18.2003.8 | Motor: 1.1.16900.2)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.313.8.0** Publicado: 24 de marzo de &ensp; **2020** &ensp; Plataforma: **4.18.2003.8** &ensp; Motor: **1.1.16900.4** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.313.8.0**<br/>
+&ensp;Publicado: **24 de marzo de 2020**<br/>
+&ensp;Plataforma: **4.18.2003.8**<br/>
+&ensp;Motor: **1.1.16900.4**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -352,7 +436,11 @@ Sin problemas conocidos
 <summary> Febrero-2020 (Plataforma: - | Motor: 1.1.16800.2)</summary>
 
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.311.4.0** Publicado: 25 de febrero de &ensp; **2020** &ensp; Plataforma/Cliente: **-** &ensp; Motor: **1.1.16800.2** Fase de soporte técnico: Soporte técnico de actualización &ensp; **(solo)**
+&ensp;Versión de actualización de inteligencia de seguridad: **1.311.4.0**<br/>
+&ensp;Publicado: **25 de febrero de 2020**<br/>
+&ensp;Plataforma/cliente: **-**<br/>
+&ensp;Motor: **1.1.16800.2**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -366,7 +454,11 @@ Sin problemas conocidos
 <summary> Enero-2020 (Plataforma: 4.18.2001.10 | Motor: 1.1.16700.2)</summary>
 
 
-Versión de actualización de inteligencia de seguridad: **1.309.32.0** Publicado: 30 de enero de **2020** Plataforma/Cliente: **4.18.2001.10** Motor: **1.1.16700.2** Fase de soporte técnico: soporte técnico de actualización &ensp; **(solo)**
+Versión de actualización de inteligencia de seguridad: **1.309.32.0**<br/>
+Publicado: **30 de enero de 2020**<br/>
+Plataforma/cliente: **4.18.2001.10**<br/>
+Motor: **1.1.16700.2**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -393,7 +485,11 @@ Versión de actualización de inteligencia de seguridad: **1.309.32.0** Publicad
 <details>
 <summary> Noviembre-2019 (Plataforma: 4.18.1911.3 | Motor: 1.1.16600.7)</summary>
 
-Versión de actualización de inteligencia de seguridad: **1.307.13.0** Publicado: 7 de diciembre de **2019** Plataforma: **4.18.1911.3** Motor: **1.1.17000.7** Fase de soporte: **Sin** soporte técnico
+Versión de actualización de inteligencia de seguridad: **1.307.13.0**<br/>
+Publicado: **7 de diciembre de 2019**<br/>
+Plataforma: **4.18.1911.3**<br/>
+Motor: **1.1.17000.7**<br/>
+Fase de soporte técnico: **sin compatibilidad**<br/>
 
 ### <a name="whats-new"></a>Novedades
 
@@ -446,7 +542,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 <details>
 <summary>1.1.2109.01</summary>
 
-&ensp;Versión del paquete: **1.1.2109.01** Versión de la &ensp; plataforma: **4.18.2107.4** Versión del &ensp; motor: **1.1.18400.5** Versión de &ensp; firma: **1.347.891.0**
+&ensp;Versión del paquete: **1.1.2109.01**<br/>
+&ensp;Versión de la **plataforma: 4.18.2107.4**<br/>
+&ensp;Versión del motor: **1.1.18400.5**<br/>
+&ensp;Versión de firma: **1.347.891.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -457,7 +556,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2108.01</summary>
 
-&ensp;Versión del paquete: **1.1.2108.01** Versión de la &ensp; plataforma: **4.18.2107.4** Versión del &ensp; motor: **1.1.18300.4** Versión de &ensp; firma: **1.343.2244.0**
+&ensp;Versión del paquete: **1.1.2108.01**<br/>
+&ensp;Versión de la **plataforma: 4.18.2107.4**<br/>
+&ensp;Versión del motor: **1.1.18300.4**<br/>
+&ensp;Versión de firma: **1.343.2244.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -468,7 +570,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2107.02</summary>
 
-&ensp;Versión del paquete: **1.1.2107.02** Versión de la &ensp; plataforma: **4.18.2105.5** Versión del &ensp; motor: **1.1.18300.4** Versión de &ensp; firma: **1.343.658.0**
+&ensp;Versión del paquete: **1.1.2107.02**<br/>
+&ensp;Versión de la **plataforma: 4.18.2105.5**<br/>
+&ensp;Versión del motor: **1.1.18300.4**<br/>
+&ensp;Versión de firma: **1.343.658.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -479,7 +584,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2106.01</summary>
 
-&ensp;Versión del paquete: **1.1.2106.01** Versión de &ensp; plataforma: **4.18.2104.14** Versión del &ensp; motor: **1.1.18100.6** Versión de &ensp; firma: **1.339.1923.0**
+&ensp;Versión del paquete: **1.1.2106.01**<br/>
+&ensp;Versión de la **plataforma: 4.18.2104.14**<br/>
+&ensp;Versión del motor: **1.1.18100.6**<br/>
+&ensp;Versión de firma: **1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -490,7 +598,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2105.01</summary>
 
-&ensp;Versión del paquete: **1.1.2105.01** Versión de la &ensp; plataforma: **4.18.2103.7** Versión del &ensp; motor: **1.1.18100.6** Versión de &ensp; firma: **1.339.42.0**
+&ensp;Versión del paquete: **1.1.2105.01**<br/>
+&ensp;Versión de plataforma: **4.18.2103.7**<br/>
+&ensp;Versión del motor: **1.1.18100.6**<br/>
+&ensp;Versión de firma: **1.339.42.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -501,7 +612,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2104.01</summary>
 
-&ensp;Versión del paquete: **1.1.2104.01** Versión de la &ensp; plataforma: **4.18.2102.4** Versión del &ensp; motor: **1.1.18000.5** Versión de &ensp; firma: **1.335.232.0**
+&ensp;Versión del paquete: **1.1.2104.01**<br/>
+&ensp;Versión de plataforma: **4.18.2102.4**<br/>
+&ensp;Versión del motor: **1.1.18000.5**<br/>
+&ensp;Versión de firma: **1.335.232.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -512,7 +626,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2103.01</summary>
 
-&ensp;Versión del paquete: **1.1.2103.01** Versión de la &ensp; plataforma: **4.18.2101.9** Versión del &ensp; motor: **1.1.17800.5** Versión de &ensp; firma: **1.331.2302.0**
+&ensp;Versión del paquete: **1.1.2103.01**<br/>
+&ensp;Versión de la **plataforma: 4.18.2101.9**<br/>
+&ensp;Versión del motor: **1.1.17800.5**<br/>
+&ensp;Versión de firma: **1.331.2302.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -523,7 +640,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2102.03</summary>
 
-&ensp;Versión del paquete: **1.1.2102.03** Versión de la &ensp; plataforma: **4.18.2011.6** Versión del &ensp; motor: **1.1.17800.5** Versión de &ensp; firma: **1.331.174.0**
+&ensp;Versión del paquete: **1.1.2102.03**<br/>
+&ensp;Versión de plataforma: **4.18.2011.6**<br/>
+&ensp;Versión del motor: **1.1.17800.5**<br/>
+&ensp;Versión de firma: **1.331.174.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -534,7 +654,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2101.02</summary>
 
-&ensp;Versión del paquete: **1.1.2101.02** Versión de la &ensp; plataforma: **4.18.2011.6** Versión del &ensp; motor: **1.1.17700.4** Versión de &ensp; firma: **1.329.1796.0**
+&ensp;Versión del paquete: **1.1.2101.02**<br/>
+&ensp;Versión de plataforma: **4.18.2011.6**<br/>
+&ensp;Versión del motor: **1.1.17700.4**<br/>
+&ensp;Versión de firma: **1.329.1796.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -545,7 +668,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2012.01</summary>
 
-&ensp;Versión del paquete: **1.1.2012.01** Versión de la &ensp; plataforma: **4.18.2010.7** Versión del &ensp; motor: **1.1.17600.5** Versión de &ensp; firma: **1.327.1991.0**
+&ensp;Versión del paquete: **1.1.2012.01**<br/>
+&ensp;Versión de la **plataforma: 4.18.2010.7**<br/>
+&ensp;Versión del motor: **1.1.17600.5**<br/>
+&ensp;Versión de firma: **1.327.1991.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -556,7 +682,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2011.02</summary>
 
-&ensp;Versión del paquete: **1.1.2011.02** Versión de la &ensp; plataforma: **4.18.2010.7** Versión del &ensp; motor: **1.1.17600.5** Versión de &ensp; firma: **1.327.658.0**
+&ensp;Versión del paquete: **1.1.2011.02**<br/>
+&ensp;Versión de la **plataforma: 4.18.2010.7**<br/>
+&ensp;Versión del motor: **1.1.17600.5**<br/>
+&ensp;Versión de firma: **1.327.658.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -567,7 +696,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2011.01</summary>
 
-&ensp;Versión del paquete: **1.1.2011.01** Versión de la &ensp; plataforma: **4.18.2009.7** Versión del &ensp; motor: **1.1.17600.5** Versión de &ensp; firma: **1.327.344.0**
+&ensp;Versión del paquete: **1.1.2011.01**<br/>
+&ensp;Versión de plataforma: **4.18.2009.7**<br/>
+&ensp;Versión del motor: **1.1.17600.5**<br/>
+&ensp;Versión de firma: **1.327.344.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -578,7 +710,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 </details><details>
 <summary>1.1.2009.10</summary>
 
-&ensp;Versión del paquete: **1.1.2011.01** Versión de la &ensp; plataforma: **4.18.2008.9** Versión del &ensp; motor: **1.1.17400.5** Versión de &ensp; firma: **1.327.2216.0**
+&ensp;Versión del paquete: **1.1.2011.01**<br/>
+&ensp;Versión de plataforma: **4.18.2008.9**<br/>
+&ensp;Versión del motor: **1.1.17400.5**<br/>
+&ensp;Versión de firma: **1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
 - Ninguno
@@ -588,7 +723,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 <br/>
 </details>
 
-## <a name="additional-resources"></a>Recursos adicionales
+## <a name="more-resources"></a>Más recursos
 
 | Artículo | Descripción  |
 |:---|:---|

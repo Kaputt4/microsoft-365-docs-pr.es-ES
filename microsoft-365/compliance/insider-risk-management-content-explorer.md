@@ -12,25 +12,25 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1a5a36a59ad286aca59f8630e104f3eef656cac3c5b77e7ae30d53b2e2a99ba4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b76194037dec0ca6a660d2024a35c3376f06eab2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860720"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184017"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorador de contenido de administración de riesgos de Insider
 
 El explorador de  contenido de administración de riesgos insider permite a los usuarios asignados al rol De investigadores de administración de riesgos de *Insider* examinar el contexto y los detalles del contenido asociado con la actividad en las alertas. Los datos de caso en el explorador de contenido se actualizan diariamente para incluir nueva actividad. Para todas las alertas que se confirman en un caso, las copias de los datos y los archivos de mensajes se archivan como una instantánea en el tiempo de los elementos, mientras se mantienen los archivos y mensajes originales en los orígenes de almacenamiento. Si es necesario, los archivos de datos de caso pueden exportarse como un archivo de documento portátil (PDF) o en el formato de archivo original.
 
-La copia de datos y mensajes es transparente para el usuario asociado con la alerta y para el propietario del contenido. Para los nuevos casos, normalmente el contenido tarda aproximadamente una hora en rellenarse en el explorador de contenido. Para los casos con grandes cantidades de contenido, puede tardar más tiempo en crear una instantánea. Si el contenido se sigue cargando en el explorador de contenido, verá un indicador de progreso que muestra el porcentaje de finalización.
+Para los nuevos casos, normalmente el contenido tarda aproximadamente una hora en rellenarse en el explorador de contenido. Para los casos con grandes cantidades de contenido, puede tardar más tiempo en crear una instantánea. Si el contenido se sigue cargando en el explorador de contenido, verá un indicador de progreso que muestra el porcentaje de finalización.
 
 En algunos casos, es posible que los datos asociados a un caso no estén disponibles como instantánea para su revisión en el Explorador de contenido. Esta situación puede producirse cuando los datos de caso se han eliminado o movido, o cuando se produce un error temporal al procesar datos de caso. Si se produce esta situación, seleccione **Ver** archivos en la barra de advertencia para ver los nombres de archivo, la ruta de acceso al archivo y el motivo del error para cada archivo. Si es necesario, esta información se puede exportar a un .csv (valores separados por comas).
 
 Si el contenido incluye permisos de Information Rights Management, estos permisos se mantienen para el contenido copiado y los usuarios asignados al rol Investigadores de administración de riesgos de *Insider* necesitarán estos permisos y derechos si necesitan abrir y ver los archivos. A cada archivo y mensaje se le asigna automáticamente un identificador de archivo único en el caso de administración de riesgos de insider para fines de administración. Los documentos asociados con actividades de indicador de dispositivo no se incluyen en el Explorador de contenido.
 
 > [!NOTE]
-> El explorador de contenido incluye actividades relacionadas con Microsoft Office archivos. Las actividades de nivel de sitio, como cuando se elimina un sitio SharePoint o si se cambian los permisos del sitio, no se incluyen en el explorador de contenido.
+> El explorador de contenido incluye actividades de usuario relacionadas Microsoft 365 archivos de servicio, como la actividad del usuario en SharePoint, Exchange, Microsoft Teams y OneDrive para la Empresa.
 
 ## <a name="column-options"></a>Opciones de columna
 
@@ -74,7 +74,7 @@ Para agregar o quitar encabezados de columna para la cola de contenido, use el c
 | **Asunto** | El texto en la línea de asunto de un mensaje de correo electrónico. |
 | **Asunto/Título** | Para correo electrónico, el texto en la línea de asunto de un mensaje. Para los documentos, el título del documento. Como se explicó anteriormente, la propiedad Title es metadatos especificados en Microsoft Office documentos. Puede escribir el nombre de más de un asunto o título, separados por comas. Dos o más valores están conectados de forma lógica por el operador de OR. |
 | **Lista de temas** | Lista de temas calculada para análisis. |
-| **Title** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
+| **Título** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
 | **To** | El destinatario de un mensaje de correo electrónico en el campo Para. |
 
 ## <a name="filtering"></a>Filtrado
@@ -111,7 +111,7 @@ Puede usar uno o varios filtros para restringir el ámbito de una búsqueda y de
 
 ## <a name="document-filters"></a>Filtros de documentos
 
-| **Filters** | **Descripción** |
+| **Filtros** | **Descripción** |
 |:---------------------|:----------------|
 | **Etiquetas de cumplimiento** | Etiquetas de cumplimiento aplicadas en Office 365. |
 | **Hora de creación (UTC)** | La fecha y hora en que se creó el archivo o el mensaje de correo electrónico. La fecha y la hora se encuentran en hora universal coordinada (UTC). |

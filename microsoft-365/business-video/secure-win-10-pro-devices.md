@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén información sobre cómo administrar Windows 10 Pro de dispositivos con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: fa639da2b12f97e833d892d2b83939d42481c766f8c57c6f52adf7eb5fae0011
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38ed4cac88d500cec6ad4c4fe96a4fb701f1ad5b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873116"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190447"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>Administrar Windows 10 Pro de dispositivos
 
@@ -36,7 +36,7 @@ Puedes usar Microsoft 365 Empresa para garantizar que Antivirus de Windows Defen
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. Inicie sesión en el Centro de administración de Microsoft 365.
+1. Inicie sesión en el 1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 1. En **Directivas,** elija Agregar directiva.
 1. En el **panel Agregar directiva,** escriba un nombre en **Nombre** de directiva y, a continuación, seleccione Windows 10 Configuración de **dispositivo en** Tipo **de directiva**.
 1. Elija **Proteger Windows 10 dispositivos** para ver la configuración.

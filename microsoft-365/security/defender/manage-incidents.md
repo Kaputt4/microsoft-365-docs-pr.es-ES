@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 41a0c893e193c8690c0c50e5b12ecc8630b9a899
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570418"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185694"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -46,7 +46,7 @@ Puede administrar incidentes de incidentes **& alertas** > incidentes en el inic
 Estas son las formas en que puede administrar sus incidentes:
 
 - [Editar el nombre del incidente](#edit-the-incident-name)
-- [Agregar etiquetas de incidente](#add-incident-tags)
+- [Agregar etiquetas de incidentes](#add-incident-tags)
 - [Asignar el incidente a usted mismo](#assign-incidents)
 - [Resolverlos](#resolve-an-incident)
 - [Establecer su clasificación y determinación](#set-the-classification-and-determination)
@@ -74,7 +74,7 @@ Puede editar el nombre del incidente desde el campo **Nombre del** incidente en 
 
 ## <a name="add-incident-tags"></a>Agregar etiquetas de incidente
 
-Puede agregar etiquetas personalizadas a un incidente, por ejemplo, para marcar un grupo de incidentes con una característica común. Más adelante, puede filtrar la cola de incidentes para todos los incidentes que contengan una etiqueta específica.
+Puede agregar etiquetas personalizadas a un incidente, por ejemplo, para marcar un grupo de incidencias con características comunes. Posteriormente, puede filtrar la cola de incidentes para todos los incidentes que contengan una etiqueta específica.
 
 Al empezar a escribir, tiene la opción de seleccionar de una lista de etiquetas seleccionadas.
 
@@ -100,7 +100,7 @@ Un incidente que no se resuelve se muestra como **Activo**.
 
 La clasificación de incidentes es si se trata de una alerta verdadera o una alerta falsa, que se configura desde el **campo Clasificación.** 
 
-Si se trataba de una alerta verdadera, también debe especificar qué tipo de amenaza era con el **campo Determinación.** Especificar el tipo de amenaza ayuda a su equipo de seguridad a ver patrones de amenazas y actuar para defender su organización de ellos. 
+Si se trataba de una alerta verdadera, también debe especificar qué tipo de amenaza era con el **campo Determinación.** La especificación del tipo de amenaza ayuda a su equipo de seguridad a ver los patrones de amenaza y a actuar para defender a su organización de ellos. 
 
 ## <a name="add-comments"></a>Agregar comentarios
 
@@ -114,7 +114,7 @@ Para incidentes en el proceso, continúe con la [investigación](investigate-inc
 
 Para los incidentes resueltos, realice una [revisión posterior al incidente](first-incident-post.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

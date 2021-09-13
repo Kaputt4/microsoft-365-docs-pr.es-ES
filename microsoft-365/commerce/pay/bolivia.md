@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5a02acbb3fac86aa9340387bc3197bfd6ae34bc01eb08765473573f30ee942fa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 90f6594b7041f48e9780ec3f02b2a7794e859946
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796975"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188622"
 ---
 # <a name="payment-information-for-bolivia"></a>Información de pago para Bolivia
 

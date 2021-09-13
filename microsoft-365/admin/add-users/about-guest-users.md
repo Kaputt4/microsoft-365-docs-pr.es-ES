@@ -23,11 +23,11 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo se rellena la lista de usuarios invitados en el Centro de administración de Microsoft 365.
 ms.openlocfilehash: e5911e6d8a8baa723d70904abfc1af49e43d5507
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185337"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Usuarios invitados en Centro de administración de Microsoft 365
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre los reglamentos del Reglamento general de protección de datos (RGPD) que rigen los datos personales de los menores.
-ms.openlocfilehash: 7ec9e54865ce21a55dc2bd5bf777e293f105c51e99625bf95ebc1a6dabb7ee22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7f53a5a6b64f29f5029f0080fef44439c926edb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824988"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187153"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>Menores y adquirir complementos de la Tienda
 

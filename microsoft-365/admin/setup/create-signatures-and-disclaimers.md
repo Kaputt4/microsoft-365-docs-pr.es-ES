@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Administrar firmas de correo electrónico, incluidas declinaciones de responsabilidades legales o declaraciones de divulgación para todos los mensajes de correo electrónico que entran o salen de la organización.
 ms.openlocfilehash: 47087f2d09428214237dba226e680aa3c332625d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567173"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184454"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidades en toda la organización
 

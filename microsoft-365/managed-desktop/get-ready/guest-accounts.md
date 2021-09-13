@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: bb181ab213cc02e5289681b8c3965a96bd8b8dcb
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191104"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Requisitos previos para las cuentas de invitado
 
@@ -49,13 +49,13 @@ Para obtener más información, vea [Administradores sin licencia en Microsoft I
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
 
 1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
-2. Ejecutar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
-1. Comprar [Portal de empresa](../get-started/company-portal.md).
+2. Ejecutar las [herramientas para evaluar la preparación](readiness-assessment-tool.md).
+1. Comprar el [Portal de empresa](../get-started/company-portal.md).
 1. Revise los requisitos previos de las cuentas invitadas (en este artículo).
-1. Compruebe [la configuración de red](network.md).
-1. [Preparar certificados y perfiles de red](certs-wifi-lan.md).
-1. [Preparar el acceso del usuario a los datos](authentication.md).
-1. [Preparar aplicaciones](apps.md).
-1. [Preparar unidades asignadas](mapped-drives.md).
-1. [Preparar recursos de impresión](printing.md).
-1. Nombres [de dispositivo de dirección](address-device-names.md).
+1. Comprobar la [configuración de red](network.md).
+1. [Preparar los certificados y perfiles de red](certs-wifi-lan.md).
+1. [Preparar el acceso de usuario a los datos](authentication.md).
+1. [Preparar las aplicaciones](apps.md).
+1. [Preparar las unidades asignadas](mapped-drives.md).
+1. [Preparar los recursos de impresión](printing.md).
+1. [Nombres del dispositivo](address-device-names.md) de dirección.

@@ -16,11 +16,11 @@ search.appverid:
 recommendations: false
 description: Implemente las funciones de Gobierno de la información de Microsoft para regir los datos de acuerdo a los requisitos normativos o de cumplimiento.
 ms.openlocfilehash: 7bbeefc07da1f620f8b22484ad399f87bb45f74e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569782"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186169"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gobierno de la información de Microsoft en Microsoft 365
 

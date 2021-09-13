@@ -26,11 +26,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo habilitar Microsoft 365 proteger los dispositivos locales unidos a Active-Directory Windows 10 en unos pocos pasos.
 ms.openlocfilehash: 2a60437bafc7aae1928d73342555c030a71689cd
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184417"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Habilitar dispositivos de Windows 10 unidos a un dominio para que los pueda administrar Microsoft 365 Empresa Premium
 

@@ -22,11 +22,11 @@ ms.custom:
 - seo-marvel-jun2020
 ms.technology: m365d
 ms.openlocfilehash: 0bb4b57e3f212820852f23af2665f11f99e5be95
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185617"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir objetivos
 

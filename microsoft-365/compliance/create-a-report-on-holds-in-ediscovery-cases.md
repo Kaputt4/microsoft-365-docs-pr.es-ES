@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo generar un informe que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos.
 ms.openlocfilehash: 5ccb74960a7b0d051b0c7754710f35e81b3edae0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189827"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Crear un informe de suspensiones en casos de eDiscovery
 

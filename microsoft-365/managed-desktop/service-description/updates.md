@@ -11,12 +11,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 37c9c83bd61fe0be89eff47dedf7e3c0492ac78c1b9fc4c48afe822e370a1726
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f817831cda584dc1aa6c968d7332939c68f48e8b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854392"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187673"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Cómo se controlan las actualizaciones en Escritorio administrado de Microsoft
 

@@ -18,11 +18,11 @@ ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configure Advanced eDiscovery que se aplican a todos los conjunto de revisión en un caso. Esto incluye la configuración de análisis y reconocimiento óptico de caracteres.
 ms.openlocfilehash: 4d46ca4dfb5897c7b262858ab7c955221016e3c7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565421"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184249"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurar las opciones de búsqueda y análisis en Advanced eDiscovery
 
@@ -90,7 +90,7 @@ Cuando esta configuración está activada, el procesamiento ocr se ejecutará en
 
 - Cuando se agrega contenido de otros orígenes de datos (que no están asociados con un custodio y se agregan al caso en un origen de datos que no es de custodia) a un conjunto de opiniones.
 
-Después de agregar datos a un conjunto de revisión, el texto de la imagen se puede revisar, buscar, etiquetar y analizar. Puede ver el texto extraído en el visor de texto del archivo de imagen seleccionado en el conjunto de revisión. Para obtener más información, vea:
+Después de agregar datos a un conjunto de revisión, el texto de la imagen se puede revisar, buscar, etiquetar y analizar. Puede ver el texto extraído en el visor de texto del archivo de imagen seleccionado en el conjunto de revisión. Para más información, vea:
 
 - [Clasificación avanzada de los datos de administración](indexing-custodian-data.md)
 

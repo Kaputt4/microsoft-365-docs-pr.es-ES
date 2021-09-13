@@ -11,16 +11,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-ms.custom: Adopt
+ms.custom:
+- Adopt
+- admindeeplinkMAC
 search.appverid: ''
 localization_priority: Normal
 description: Obtenga información sobre cómo planear y ejecutar un programa piloto de prueba para SharePoint Syntex en su organización.
-ms.openlocfilehash: 336a4c164f15035168d8842b05cdd4b5c566a97a
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 51854dafb7ae9c1de350f5f9f29eedc191b8c2aa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863682"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189707"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Ejecutar una prueba de Microsoft SharePoint Syntex
 
@@ -39,7 +41,7 @@ Puede obtener la versión de prueba de uno de los siguientes orígenes:
 
 - El [Centro de administración de Microsoft 365](https://admin.microsoft.com)
     1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com).
-    2. Vaya a **Servicios de compra** de  >  **facturación**.
+    2. Vaya a **Servicios de compra** de  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**facturación**</a>.
     3. Desplácese hacia abajo hasta la sección **Complementos**.
     4. En el icono SharePoint Syntex, seleccione **Detalles**.
     5. Seleccione **Obtener prueba gratuita**.
@@ -108,6 +110,6 @@ Si no compra licencias después de la versión de prueba:
 - Los centros de contenido y los modelos de comprensión de documentos no se eliminarán automáticamente. Estos permanecerán disponibles para su uso si decide comprar licencias en el futuro.
 - Los modelos de procesamiento de formularios se almacenarán en la instancia dataverse (anteriormente denominada Common Data Service [CDS]) del entorno predeterminado de Power Platform. Se podrían usar con licencias futuras para SharePoint Syntex o con funcionalidades de AI Builder en power platform.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Adopción SharePoint Syntex Microsoft: Introducción](adoption-getstarted.md)

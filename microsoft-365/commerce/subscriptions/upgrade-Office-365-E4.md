@@ -16,16 +16,17 @@ ms.collection:
 ms.custom:
 - customer-email
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: Obtenga información sobre cómo actualizar desde una Office 365 de E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3131f163bcf846c623213a3e2d7c88e6d21cd1479f64185d2b70be81de102c23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5741588fddcddbfca47b39cada2fed7dca56afd8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892632"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188329"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Actualización desde una suscripción Office 365 E4
 
@@ -36,7 +37,7 @@ En este artículo se describe el proceso de actualización de un Office 365 E4 a
 
 ## <a name="what-are-my-options-for-how-to-upgrade"></a>¿Cuáles son mis opciones para actualizar?
 
-La forma más sencilla de actualizar el plan es usar la **pestaña** Actualizar en el Centro de administración de Microsoft 365. Sin embargo, el uso **de la pestaña** Actualizar no se admite en todas las situaciones. Si el escenario no es compatible, es posible que pueda actualizar los planes manualmente.
+La forma más sencilla de actualizar el plan es usar la **pestaña** Actualizar en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Sin embargo, el uso **de la pestaña** Actualizar no se admite en todas las situaciones. Si el escenario no es compatible, es posible que pueda actualizar los planes manualmente.
 
 ## <a name="what-is-the-upgrade-tab"></a>¿Qué es la pestaña Actualizar?
 
@@ -57,7 +58,7 @@ Actualizar planes manualmente significa completar los siguientes procedimientos 
 
 ## <a name="find-out-if-you-can-use-the-upgrade-tab-to-upgrade-to-a-new-plan"></a>Descubra si puede usar la pestaña Actualizar para actualizar a un nuevo plan
 
-1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. Seleccione su Office 365 E4.
 3. Seleccione la **pestaña** Actualizar. Si ves otros planes enumerados, significa que puedes actualizar los planes automáticamente.
 4. Si no puede actualizar automáticamente, verá un mensaje que describe el motivo por el que no puede actualizar.
@@ -82,7 +83,7 @@ A continuación, le detallamos algunos aspectos importantes que ha de conocer an
 
 ### <a name="start-the-upgrade-by-using-the-upgrade-tab"></a>Inicie la actualización mediante la pestaña Actualizar
 
-1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. Seleccione su Office 365 E4.
 3. En la página detalles de la suscripción, seleccione la **pestaña** Actualizar.
 4. Busque la suscripción que desea comprar y, a continuación, seleccione **Actualizar**.
@@ -120,14 +121,14 @@ Antes de pasar al siguiente paso, es importante asegurarse de que se hayan confi
 > [!NOTE]
 > Si optó por pagar la nueva suscripción mediante factura, es posible que se requiera una comprobación de crédito. Puede tardar hasta dos días laborables antes de que la suscripción esté disponible.
 
-1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **lista desplegable Estado** de suscripción, seleccione **Activo**.
 3. Asegúrese de que se muestra la nueva suscripción y de que el número de licencias es el mismo que el que tenía para Office 365 E4.
 4. Si necesita comprar más licencias, siga los pasos de [Comprar o quitar licencias de suscripción.](../licenses/buy-licenses.md)
 
 ### <a name="step-3-reassign-licenses-to-users"></a>Paso 3: Reasignar licencias a los usuarios
 
-Puede usar el Centro de administración de Microsoft 365 para reasignar licencias para un máximo de 20 usuarios a la vez. Para obtener información sobre cómo, vea [Mover usuarios a una suscripción diferente.](move-users-different-subscription.md)
+Puede usar el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) para reasignar licencias para un máximo de 20 usuarios a la vez. Para obtener información sobre cómo, vea [Mover usuarios a una suscripción diferente.](move-users-different-subscription.md)
 
 > [!TIP]
 > Si tiene una gran cantidad de usuarios, puede usar [Office 365 PowerShell para asignar licencias de usuario en masa](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).

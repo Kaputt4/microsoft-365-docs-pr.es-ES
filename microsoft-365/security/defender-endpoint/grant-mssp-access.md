@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 4b86df7e4b5ef5a0717e3f646726e9ef3ac4993f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570046"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190904"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Conceder acceso al proveedor de servicios de seguridad administrado (MSSP) (versión preliminar)
 

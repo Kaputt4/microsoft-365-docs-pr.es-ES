@@ -14,11 +14,11 @@ description: Aprende a revisar los mensajes que se notifican y a enviar comentar
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: fb023d68e81c5592078bdd89e4826537790e7d53
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572472"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185593"
 ---
 # <a name="admin-review-for-reported-messages"></a>Revisión del administrador para los mensajes de los que se informe
 

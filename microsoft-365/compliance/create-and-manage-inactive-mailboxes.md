@@ -19,13 +19,14 @@ search.appverid:
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Conserve el contenido de los buzones eliminados mediante la característica de buzones inactivos en Microsoft 365.
-ms.openlocfilehash: f0e95d5853580116db6f7c48396e601058e303e3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 95548710e0a0f737deec6e5dc49ebc217c9ac50c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567777"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189804"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
 
@@ -65,7 +66,7 @@ Para obtener procedimientos paso a paso para colocar un buzón en retención por
   
 ### <a name="step-2-delete-the-mailbox"></a>Paso 2: Eliminar el buzón.
 
-Después de colocar el buzón en espera o de aplicar una directiva de retención, el siguiente paso es eliminar el buzón. La mejor manera de eliminar un buzón es eliminar la cuenta de usuario correspondiente en el Centro de administración de Microsoft 365. Para obtener información sobre cómo eliminar cuentas de usuario, vea [Eliminar un usuario de la organización.](../admin/add-users/delete-a-user.md)
+Después de colocar el buzón en espera o de aplicar una directiva de retención, el siguiente paso es eliminar el buzón. La mejor manera de eliminar un buzón es eliminar la cuenta de usuario correspondiente en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Para obtener información sobre cómo eliminar cuentas de usuario, vea [Eliminar un usuario de la organización.](../admin/add-users/delete-a-user.md)
   
 > [!NOTE]
 > También puede eliminar el buzón mediante el cmdlet **Remove-Mailbox** en Exchange Online PowerShell. Para obtener más información, vea [Eliminar o restaurar buzones](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes)de usuario en Exchange Online . 
@@ -74,9 +75,9 @@ Después de colocar el buzón en espera o de aplicar una directiva de retención
 
 Para ver una lista de los buzones inactivos de la organización:
 
-1. Vaya a e inicie sesión con las credenciales de un administrador global o una cuenta de administrador <https://compliance.microsoft.com> de cumplimiento en su organización.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión con las credenciales de un administrador global o una cuenta de administrador de cumplimiento en su organización.
 
-2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar** todo y, a continuación, haga clic en Gobierno de **> retención**.
+2. En el panel de navegación izquierdo, haga clic **en Mostrar todo** y, a continuación, haga clic en Retención de gobierno **de**  >  **información.**
 
    ![Haga clic en el botón Buzón inactivo de la página Retención.](../media/MCCInactiveMailboxes1.png)
 

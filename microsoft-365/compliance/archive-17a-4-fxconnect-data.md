@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector DataParser de 17a-4 FX Conectar para importar y archivar fx Conectar datos en Microsoft 365.
 ms.openlocfilehash: 91975cb8d0d3dc8d0b1a0baf5a6851f1b2bcea4b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186297"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-fx-connect"></a>Configurar un conector para archivar datos de FX Conectar
 

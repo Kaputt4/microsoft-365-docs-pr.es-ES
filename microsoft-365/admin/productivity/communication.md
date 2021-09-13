@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la comunicación: las personas experimentan la puntuación de productividad.'
-ms.openlocfilehash: 354f5db7eede84d448489cf7c269d1aa1ed6500c7806c66029cc38daad83b5d5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ea17bb859fc02343a97033fa65e830f305b69cf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823512"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186918"
 ---
 # <a name="communication--people-experiences"></a>Comunicación: experiencias de personas
 
@@ -36,7 +36,7 @@ Para empezar con la información de comunicación, los usuarios de la organizaci
 
 - Microsoft Teams
 - Yammer
-- Exchange Online
+- Exchange en línea
 
 Para obtener más información, vea [Asignar licencias a los usuarios.](../manage/assign-licenses-to-users.md)
 

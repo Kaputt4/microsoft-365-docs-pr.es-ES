@@ -1,5 +1,5 @@
 ---
-title: Directivas de seguridad predefinidas
+title: Directivas de seguridad preestablecidas
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,11 +16,11 @@ description: Los administradores pueden aprender a aplicar la configuración de 
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 50558ef4ff9c4f05f0e7833ef8a1697330c35362
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185553"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365
 
@@ -39,7 +39,7 @@ El resto de este artículo describe las directivas de seguridad preestablecidas 
 
 Las directivas de seguridad preestablecidas constan de los siguientes elementos:
 
-- Profiles
+- Perfiles
 - Directivas
 - Configuración de la directiva
 
@@ -47,9 +47,9 @@ Además, el orden de prioridad es importante si se aplican varias directivas de 
 
 ### <a name="profiles-in-preset-security-policies"></a>Perfiles en directivas de seguridad preestablecidas
 
-Un perfil determina el nivel de protección. Los perfiles siguientes están disponibles:
+El perfil determina el nivel de protección. Los perfiles siguientes están disponibles:
 
-- **Protección estándar:** un perfil de protección de línea base adecuado para la mayoría de los usuarios.
+- **Protección estándar**: un perfil básico de protección adecuado para la mayoría de los usuarios.
 - **Protección estricta:** un perfil de protección más agresivo para usuarios seleccionados (destinos de alto valor o usuarios prioritarios).
 
 Se usan reglas con condiciones y excepciones que determinan quiénes son los perfiles o no se aplican.
@@ -78,7 +78,7 @@ Las directivas de seguridad predefinidas usan las directivas correspondientes de
 
     - La misma [configuración de suplantación](set-up-anti-phishing-policies.md#spoof-settings) de identidad que están disponibles en las directivas contra suplantación de identidad de EOP.
     - [Configuración de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-    - [Umbrales de suplantación de identidad avanzada](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - [Umbrales avanzados de phishing](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
   - [Caja fuerte vincula directivas denominadas](set-up-safe-links-policies.md) **Standard Preset Security Policy** y Strict Preset Security **Policy**.
 
@@ -117,7 +117,7 @@ Por ejemplo, si existe una configuración de seguridad  en protección estándar
 
   Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  **Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Usar el portal Microsoft 365 Defender para asignar directivas de seguridad preestablecidas a los usuarios
 
@@ -130,7 +130,7 @@ Por ejemplo, si existe una configuración de seguridad  en protección estándar
    - **Grupos**
    - **Dominios**
 
-   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    Para los usuarios o grupos, puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, escriba un asterisco (\*) para ver todos los valores disponibles.
 

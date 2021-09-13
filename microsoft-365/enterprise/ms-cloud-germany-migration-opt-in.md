@@ -16,14 +16,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: '
-ms.openlocfilehash: 003a643bd861d3937d9e0c62f487d36e950f14c9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4dcd608fcd999c8d07fdedb569279980a943caa0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191287"
 ---
 # <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Cómo participar en la nueva migración de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a los servicios Office 365 en las nuevas regiones del centro de datos alemán
 
@@ -33,7 +34,7 @@ ms.locfileid: "58575653"
 
 ## <a name="how-to-request-migration"></a>Cómo solicitar la migración
 
-Si era un cliente elegible con el servicio aprovisionado en Microsoft Cloud Germany (Microsoft Cloud Deutschland) y había iniciado sesión como administrador de inquilino (global), una página del Centro de administración de Microsoft 365 le permitía participar en la migración. La Opt-In de la Centro de administración de Microsoft 365 ya no permite la inscripción, pero el proceso se describe a continuación con fines de referencia.  
+Si era un cliente elegible con el servicio aprovisionado en Microsoft Cloud Germany (Microsoft Cloud Deutschland) y había iniciado sesión como administrador de inquilinos (global), una página del <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración de Microsoft 365</a> le permitía participar en la migración. La Opt-In de la Centro de administración de Microsoft 365 ya no permite la inscripción, pero el proceso se describe a continuación con fines de referencia.  
 
 Para obtener acceso a la página, expanda **Configuración** en el panel de navegación de la izquierda y, a continuación, haga clic en **Perfil de organización**.
 
@@ -61,7 +62,7 @@ Los Términos de Servicios en línea han cambiado para incluir términos que per
 
 El administrador de inquilinos del cliente recibirá un aviso por correo electrónico y el Centro de mensajes le aconsejará que participar en la migración se realizará automáticamente para una migración asistida por Microsoft. Este aviso se enviará al menos 30 días antes de la suscripción automática. Después de la suscripción a la migración, todas las comunicaciones y actualizaciones de estado se envían a los administradores de inquilinos del cliente en el Centro de mensajes.
 
-Se recomienda a los administradores de inquilinos de clientes y asociados que opten por la migración en el Centro de administración de Microsoft 365 para que el proceso de migración pueda comenzar tan pronto como sea posible.
+Se recomienda a los administradores de inquilinos de <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank"></a> clientes y asociados que opten por la migración en el Centro de administración de Microsoft 365 para que el proceso de migración pueda comenzar tan pronto como sea posible.
 
 ## <a name="next-step"></a>Paso siguiente
 

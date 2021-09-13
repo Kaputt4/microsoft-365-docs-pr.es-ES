@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo configurar la administración de privacidad para su organización, establecer roles y permisos y configurar opciones importantes.
 ms.openlocfilehash: 229d4bec78424858cd7034c8953313f8593e90e3
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745970"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186025"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Introducción a la administración de privacidad (versión preliminar)
 

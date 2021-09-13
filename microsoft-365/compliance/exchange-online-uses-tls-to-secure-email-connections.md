@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Obtenga información sobre Exchange Online y Microsoft 365 seguridad de la capa de transporte (TLS) y el secreto de reenvío (FS) para proteger las comunicaciones de correo electrónico. Obtenga también información sobre el certificado emitido por Microsoft para Exchange Online.
-ms.openlocfilehash: ff2b7bf948e9ceead83b3d871073eb9be9c52d6a3898437212f717ff5cd4493e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc7ca631f9322fdc8a85cfaba197e63d06d08aee
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895276"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184097"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Cómo Exchange Online usa TLS para proteger las conexiones del correo electrónico
 

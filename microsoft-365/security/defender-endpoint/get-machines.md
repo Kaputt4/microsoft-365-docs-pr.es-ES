@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 8ffeca3d13b42e39f539e96d563aceabd464aeaf
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189524"
 ---
 # <a name="list-machines-api"></a>ENUMERAR API de máquinas
 

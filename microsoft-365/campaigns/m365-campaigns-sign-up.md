@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Registrarse paso a paso para Microsoft 365 para campañas. Proteja su campaña de las amenazas de ciberseguridad al correo electrónico, los datos y la comunicación.
-ms.openlocfilehash: eaba43a9163b4ee1db5b653b04c0eedea7716297e510edd4eb5926b41a554bda
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881722"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186470"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrarse para obtener Microsoft 365 campañas 
 

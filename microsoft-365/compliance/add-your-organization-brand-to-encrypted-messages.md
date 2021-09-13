@@ -20,13 +20,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
+- admindeeplinkMAC
 description: Obtenga información Office 365 los administradores globales pueden aplicar la personalización de marca de su organización a los mensajes de correo electrónico cifrados & contenido del portal de cifrado.
-ms.openlocfilehash: 761cf2b85d13db34a0150e1ca21996ad0742e4bb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 87f6ffe0eed66e6cac329e71ad923355233eb657
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567573"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191614"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Agregar la marca de su organización a su Microsoft 365 cifrado de mensajes empresariales
 
@@ -168,7 +169,7 @@ Para obtener información sobre cómo crear una regla de flujo Exchange de corre
 
 2. Elija el **icono** Administrador.
 
-3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **Exchange**.
+3. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, elija **Centros de administración** \> **Exchange**.
 
 4. En el EAC, vaya a **Flujo de correo Reglas** \> **y** seleccione **Nuevo** ![ icono Nuevo.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Crear una nueva regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
 

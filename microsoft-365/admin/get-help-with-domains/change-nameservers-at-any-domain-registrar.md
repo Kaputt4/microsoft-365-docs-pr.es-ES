@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Obtenga información sobre cómo agregar y configurar el dominio en Microsoft 365 para que los servicios como correo electrónico y Skype Empresarial Online usen su propio nombre de dominio.
-ms.openlocfilehash: 9fcd9d5f4f4eea016c2eeacf20064ea550184d998044a7495185a5ea5347c876
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7c30665484413108180c75760fe70cc787d789c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184670"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Cambiar los servidores de nombres para configurar Microsoft 365 con cualquier registrador de dominio
 
@@ -154,7 +154,7 @@ Por ejemplo, aquí se indican algunos pasos adicionales que podrían ser necesar
 
 - Mueva todas las direcciones de correo electrónico que usan el dominio Microsoft 365 antes de cambiar los registros NS.
 
-- ¿Quiere agregar un dominio que se utiliza actualmente con una dirección de página web, como www.fourthcoffee.com? Puede seguir los pasos siguientes mientras agrega el dominio para mantener su sitio web hospedado donde el sitio está hospedado ahora para que los usuarios puedan llegar al sitio web después de cambiar los registros NS del dominio para que apunten a Microsoft 365.
+- ¿Desea agregar un dominio que se usa actualmente con una dirección de sitio web, como `https://www.fourthcoffee.com` ? Puede seguir los pasos siguientes mientras agrega el dominio para mantener su sitio web hospedado donde el sitio está hospedado ahora para que los usuarios puedan llegar al sitio web después de cambiar los registros NS del dominio para que apunten a Microsoft 365.
 
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 

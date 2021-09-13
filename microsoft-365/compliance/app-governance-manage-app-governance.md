@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Implemente funcionalidades de gobernanza de aplicaciones de Microsoft para controlar sus aplicaciones.
 ms.openlocfilehash: 379da2e2ff894b2f6355c14db93b339518dfca02
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862778"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190024"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Complemento de gobernanza de aplicaciones para Microsoft Cloud App Security (en versión preliminar)
 

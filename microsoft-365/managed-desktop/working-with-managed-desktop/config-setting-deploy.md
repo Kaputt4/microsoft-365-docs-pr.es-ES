@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 093697e0a8c491dbd0baf5f2966e08d989416e2496cf7972be35ba2377160e09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aad4995f9c329b0fd8fcbcc8b1d13379453c2a76
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854368"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191034"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Implementar y realizar un seguimiento de la configuración configurable: Escritorio administrado de Microsoft
 

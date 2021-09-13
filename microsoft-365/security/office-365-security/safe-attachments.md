@@ -20,12 +20,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre la característica Caja fuerte datos adjuntos en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0158ef1e182b0c0def6a84f71608660134b5cbc68f467f8a43485447c02c7999
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 127d862d235abc4cd81f62679b97077c7a80bd70
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56815371"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187329"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Caja fuerte Datos adjuntos de Microsoft Defender para Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "56815371"
 
 Caja fuerte Los datos adjuntos de [Microsoft Defender](defender-for-office-365.md) para Office 365 proporcionan una capa adicional de protección para los datos adjuntos de correo electrónico que ya han sido examinados por la protección antimalware en [Exchange Online Protection (EOP).](anti-malware-protection.md) En concreto, Caja fuerte datos adjuntos usa un entorno virtual para comprobar los datos adjuntos de los mensajes de correo electrónico antes de entregarse a los destinatarios (un proceso conocido como _detonación_).
 
-Caja fuerte La protección de datos adjuntos para los mensajes de correo electrónico se controla Caja fuerte de datos adjuntos. No hay ninguna directiva Caja fuerte de datos adjuntos predeterminada, por lo que para obtener la protección de los datos adjuntos de Caja fuerte, debe crear una o más directivas Caja fuerte **datos adjuntos**. Para obtener instrucciones, vea [Configurar Caja fuerte de datos adjuntos en Defender para Office 365](set-up-safe-attachments-policies.md).
+La protección de datos adjuntos seguros para mensajes de correo electrónico se controla mediante directivas de datos adjuntos seguros. No hay ninguna directiva Caja fuerte de datos adjuntos predeterminada, por lo que para obtener la protección de los datos adjuntos de Caja fuerte, debe crear una o más directivas Caja fuerte **datos adjuntos**. Para obtener instrucciones, vea [Configurar Caja fuerte de datos adjuntos en Defender para Office 365](set-up-safe-attachments-policies.md).
 
 En la tabla siguiente se describen escenarios para los datos adjuntos de Caja fuerte en organizaciones de Microsoft 365 y Office 365 que incluyen Microsoft Defender para Office 365 (es decir, la falta de licencias nunca es un problema en los ejemplos).
 
@@ -53,7 +53,7 @@ En la tabla siguiente se describen escenarios para los datos adjuntos de Caja fu
 |La organización de Chris tiene directivas de datos adjuntos Caja fuerte para todos los usuarios de la organización. Chris recibe un correo electrónico que tiene datos adjuntos y, a continuación, reenvía el mensaje a destinatarios externos.|Chis está protegido por Caja fuerte datos adjuntos. <p> Si los destinatarios externos también tienen Caja fuerte de datos adjuntos en su organización, los mensajes reenviados están sujetos a dichas directivas.|
 |
 
-Caja fuerte El examen de datos adjuntos se lleva a cabo en la misma región donde reside Microsoft 365 datos. Para obtener más información acerca de la geografía del centro de datos, [vea ¿Dónde se encuentran los datos?](https://products.office.com/where-is-your-data-located?geo=All)
+El análisis de datos adjuntos seguros tiene lugar en la misma región donde residen los datos de Microsoft 365. Para obtener más información acerca de la geografía del centro de datos, [vea ¿Dónde se encuentran los datos?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
 > Las siguientes características se encuentran en la configuración global de las directivas Caja fuerte datos adjuntos en el portal Microsoft 365 Defender datos adjuntos. Sin embargo, estas opciones de configuración están habilitadas o deshabilitadas globalmente y no requieren directivas Caja fuerte datos adjuntos:

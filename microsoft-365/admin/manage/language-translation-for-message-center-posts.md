@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Las publicaciones del centro de mensajes solo están en inglés, pero se pueden mostrar automáticamente en el idioma que especifique para Microsoft 365.
 ms.openlocfilehash: 84d88c507b16e81fd63f28261cc27be4883584c3
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394257"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184510"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traducción de idioma para publicaciones del Centro de mensajes
 

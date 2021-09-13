@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga los pasos de esta solución para quitar un antiguo empleado Microsoft 365 proteger los datos de su organización.
-ms.openlocfilehash: 08b776430eb51546acd9e0bff82b32e08f045f0cad57d16c646e49bc17e44a7c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c9667b771300a75a91588727f1d333ff2215302
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185193"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Información general: Quitar un antiguo empleado y datos seguros
 

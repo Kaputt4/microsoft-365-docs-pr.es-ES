@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Valide los resultados de la búsqueda viendo las estadísticas que se generan después de ejecutar una búsqueda de colección en Advanced eDiscovery.
-ms.openlocfilehash: 811668ba0a1d6a4ca9e171f634f9802273921d0fa1cf7190b315111183a172b8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899828"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183966"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>Estadísticas de búsqueda en Advanced eDiscovery
 

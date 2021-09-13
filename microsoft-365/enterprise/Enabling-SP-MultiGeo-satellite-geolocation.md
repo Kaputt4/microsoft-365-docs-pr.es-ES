@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: Normal
 description: En este artículo se proporciona información a los administradores globales SharePoint sobre cómo habilitar SharePoint Multi-Geo en ubicaciones geográficas satélite.
 ms.openlocfilehash: 731c8b0125a9f53264d18de55a76f8123021e436
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570226"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187982"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Habilitar SharePoint Multi-Geo en su ubicación geográfica de satélite
 

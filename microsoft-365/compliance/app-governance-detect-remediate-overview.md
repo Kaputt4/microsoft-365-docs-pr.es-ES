@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Más información sobre la detección y corrección de aplicaciones.
 ms.openlocfilehash: 0812615a8a0ed78f0649a59a0f884f1c37a9e368
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571548"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190064"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>Más información sobre la detección y corrección de aplicaciones
 

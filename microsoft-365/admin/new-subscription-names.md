@@ -19,11 +19,11 @@ search.appverid:
 - FRP150
 description: Obtenga información sobre los nuevos Microsoft 365 de suscripción.
 ms.openlocfilehash: f08e3f6395d97dd5f0f54665d247c474db2556b6
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394425"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186926"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 ahora es Microsoft 365
 

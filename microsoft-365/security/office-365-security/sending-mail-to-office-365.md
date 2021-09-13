@@ -19,12 +19,12 @@ ms.custom:
 description: Obtenga información como remitente externo, cómo puede aumentar la capacidad de entregar correo electrónico a los usuarios en Microsoft 365. También obtenga información sobre cómo notificar los intentos de phishing & correo no deseado como un usuario externo.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e4ca59fdcabe96bb91c4b49d4e30c6129783755a0c06c310d0d9f3948fe514c9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4869b0f02415b3802b34625789817068cbe14c57
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57049472"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187313"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Enviar correo a Microsoft 365
 

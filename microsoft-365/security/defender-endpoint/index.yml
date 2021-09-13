@@ -14,11 +14,11 @@ metadata:
   ms.date: 08/30/2021
   localization_priority: Priority
   ms.openlocfilehash: 2edb618e32b18d42db7c2ef233bac9ded7723fd4
-  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/31/2021
-  ms.locfileid: "58822921"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59187518"
 landingContent:
 - title: Microsoft Defender para punto de conexión
   linkLists:
@@ -28,7 +28,7 @@ landingContent:
       url: microsoft-defender-endpoint.md
     - text: ¿Qué es Defender for Endpoint Plan 1?
       url: defender-endpoint-plan-1.md
-    - text: Comparar Defender para el plan de extremo 1 con el plan 2
+    - text: Comparar los planes 1 y 2 de Defender para punto de conexión
       url: defender-endpoint-plan-1-2.md
   - linkListType: whats-new
     links:

@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de protección física de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a sus edificios físicos por usuarios específicos que pueden indicar una posible amenaza interna para su organización.
 ms.openlocfilehash: ae513d01917c0fe4148d265865a77775a5ff2555
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188145"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos de badging físicos (versión preliminar)
 
@@ -63,7 +63,7 @@ El siguiente paso es crear un archivo JSON que contenga información sobre los d
 
 El archivo JSON debe cumplir con la definición de esquema requerida por el conector. A continuación se descripciones de las propiedades de esquema necesarias para el archivo JSON:
 
-|Propiedad|Description|Tipo de datos|
+|Propiedad|Descripción|Tipo de datos|
 |---|---|---|
 |UserId|Un empleado puede tener varias identidades digitales en todos los sistemas. La entrada debe tener el identificador de Azure AD ya resuelto por el sistema de origen.|UPN o dirección de correo electrónico|
 |AssetId|El identificador de referencia del activo físico o punto de acceso físico.|Cadena alfanumérica|

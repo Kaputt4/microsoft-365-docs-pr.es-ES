@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: Optimice el acceso de red a Microsoft 365 inquilinos.
 ms.openlocfilehash: 4bf988aca4145d52d8e5e1bb68c6e8cf134be534
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187222"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 2. Redes óptimas para su Microsoft 365 para inquilinos empresariales
 
@@ -78,7 +78,7 @@ Para obtener más información, [vea Microsoft 365 introducción a la conectivid
 
 Si los trabajadores remotos usan un cliente VPN tradicional para obtener acceso remoto a la red de su organización, compruebe que el cliente VPN tiene compatibilidad de túnel dividido. Sin el túnel dividido, todo el tráfico de trabajo remoto se envía por la conexión VPN, donde debe reenviarse a los dispositivos perimetrales de la organización, procesarse y, después, enviarse por Internet. Aquí le mostramos un ejemplo.
 
-![Tráfico de red de clientes VPN sin túnel.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
+![Tráfico de red de clientes de VPN sin túneles.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
 En esta ilustración, Microsoft 365 tráfico debe tomar una ruta indirecta a través de su organización, que podría reenviarse a una puerta principal de Microsoft Global Network lejos de la ubicación física del cliente VPN. Esta ruta indirecta agrega latencia al tráfico de red y reduce el rendimiento general. 
 
@@ -88,7 +88,7 @@ Para optimizar el acceso a los recursos en la nube de Microsoft 365, configure l
 
 Este es el flujo de tráfico resultante para el túnel dividido, en el que la mayoría del tráfico que se Microsoft 365 aplicaciones en la nube omiten la conexión VPN.
 
-![Tráfico de red de clientes VPN con túnel.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
+![Tráfico de red de clientes de VPN con túneles.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
 En esta ilustración, el cliente VPN envía y recibe un tráfico Microsoft 365 servicio en la nube directamente a través de Internet y a la puerta principal más cercana a la red global de Microsoft.
 

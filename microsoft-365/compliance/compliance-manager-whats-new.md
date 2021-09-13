@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades del Pesebre de cumplimiento y lo que está por venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: dbce7a3781aa10d19a7f615f8a7d7d8ecd5a13daebeab3f58469a5236fe2f89c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 823df0ac274dad0ae278ce981a0dca0f0ad8a9ed
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892284"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189904"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft
 
@@ -48,7 +48,7 @@ Consulte la lista completa de plantillas [de evaluación](compliance-manager-tem
 
 El Administrador de cumplimiento ya está disponible para los clientes del DoD del gobierno de Estados Unidos, además de los clientes Community (GCC) moderados y GCC high.
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 
 ### <a name="active-and-inactive-templates"></a>Plantillas activas e inactivas
 

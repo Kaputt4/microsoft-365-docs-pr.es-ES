@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 8596cf95c7aa4479d1900ba99c98bc10025ee738
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747668"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187486"
 ---
 # <a name="resources"></a>Recursos
 

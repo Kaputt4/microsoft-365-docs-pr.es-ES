@@ -17,11 +17,11 @@ f1.keywords:
 description: Los movimientos de datos son operaciones back-end que se producen cuando Microsoft mueve los servicios y los datos asociados del inquilino a un nuevo centro de datos geográfico.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d2c78ace4fb25d060ecaeab96903ba577a1d7316
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189637"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -85,7 +85,7 @@ Una vez que hayamos completado el movimiento de SharePoint datos en línea, es p
     
 - Estamos quitando las copias transcodadas del centro de datos anterior y transcodándolos de nuevo en el nuevo centro de datos.
     
-### <a name="search"></a>Búsqueda
+### <a name="search"></a>Buscar
 
 En el transcurso de mover los datos SharePoint online, migramos el índice de búsqueda y la configuración de búsqueda a una nueva ubicación. Hasta que hayamos **completado el** movimiento de los datos de SharePoint Online, seguiremos atienden a los usuarios desde el índice en la ubicación original. En la nueva ubicación, la búsqueda comienza automáticamente a rastrear el contenido después de que hayamos completado el movimiento de los SharePoint datos en línea. A partir de este momento, se atiende a los usuarios desde el índice migrado. Los cambios en el contenido que se produjeron después de la migración no se incluyen en el índice migrado hasta que el rastreo los recoge. La mayoría de los clientes no se dan cuenta de que los resultados son menos frescos justo después de que hayamos terminado de mover sus datos de SharePoint Online, pero algunos clientes podrían experimentar una actualización reducida en las primeras 24-48 horas 
   
@@ -116,7 +116,7 @@ Teams archivos se almacenan en SharePoint Online y Teams archivos de chat se alm
 
 ## <a name="skype-for-business"></a>Skype Empresarial
 
-Skype Empresarial los movimientos ya no están disponibles.  [Skype Empresarial Online se retirará el](/lifecycle/announcements/skype-for-business-online-retirement) 31 de julio de 2021. Después de ese tiempo, el servicio ya no será accesible. 
+Skype Empresarial los movimientos ya no están disponibles.  [Skype Empresarial Online se retirará el](/lifecycle/announcements/skype-for-business-online-retirement) 31 de julio de 2021. Después de ese momento, ya no se podrá acceder al servicio. 
   
 ## <a name="related-topics"></a>Temas relacionados 
  

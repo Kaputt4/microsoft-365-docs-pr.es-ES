@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Obtenga información sobre la característica de reconstrucción de conversación en Advanced eDiscovery (denominado subproceso de conversación) para reconstruir, revisar y exportar conversaciones de chat en Microsoft Teams y Yammer grupos.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 62ebfc054db260fd5e41fec3809ba1efdf46b44b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191584"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>Subprocesos de conversación en Advanced eDiscovery
 

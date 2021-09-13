@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 8325f848281a37099e7a89eeda05d738c686b011
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502740"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185790"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>Enumerar vulnerabilidades por recomendación
 

@@ -24,11 +24,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger Windows 10 equipos después de configurar Microsoft 365 Empresa Premium.
 ms.openlocfilehash: 23b2879b22299ad6c43ae5a8e03ee8060ec26789
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595531"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186662"
 ---
 # <a name="secure-windows-10-computers"></a>Proteger equipos con Windows 10
 

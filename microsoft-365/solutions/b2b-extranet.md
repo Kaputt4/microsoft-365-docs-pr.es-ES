@@ -1,5 +1,5 @@
 ---
-title: Crear una extranet B2B con invitados administrados
+title: Para obtener más información, consulte Crear una extranet de B2B con invitados administrados.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,13 +18,13 @@ f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo crear un sitio de extranet B2B o un equipo con invitados administrados de una organización asociada.
 ms.openlocfilehash: 7e3ddf12473095b0a7ac91ded01256e77c299ddf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572388"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185513"
 ---
-# <a name="create-a-b2b-extranet-with-managed-guests"></a>Crear una extranet B2B con invitados administrados
+# <a name="create-a-b2b-extranet-with-managed-guests"></a>Para obtener más información, consulte Crear una extranet de B2B con invitados administrados.
 
 Puede usar la [administración Azure Active Directory derechos](/azure/active-directory/governance/entitlement-management-overview) para crear una extranet B2B para colaborar con una organización asociada que use Azure Active Directory. Esto permite a los usuarios auto inscribirse en el sitio o equipo de extranet y recibir acceso a través de un flujo de trabajo de aprobación.
 
@@ -40,7 +40,7 @@ El uso de esta característica requiere una Azure AD Premium P2 licencia.
 
 Las nubes especializadas, como Azure Germany y Azure China 21Vianet, no están disponibles actualmente para su uso.
 
-## <a name="video-demonstration"></a>Vídeo de demostración
+## <a name="video-demonstration"></a>Demostración de vídeo
 
 En este vídeo se muestran los procedimientos descritos en este artículo.
 
@@ -129,6 +129,6 @@ Para buscar el vínculo del portal de acceso
 
 Una vez copiado el vínculo, puede compartirlo con su contacto en la organización asociada y puede enviarlo a los usuarios de su equipo de colaboración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Crear un entorno seguro de uso compartido para invitados](create-secure-guest-sharing-environment.md)

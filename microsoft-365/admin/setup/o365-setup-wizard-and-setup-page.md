@@ -21,11 +21,11 @@ search.appverid:
 - BEA160
 description: Obtenga información sobre la diferencia entre el asistente para la instalación y la página De instalación.
 ms.openlocfilehash: a4936dded4e13b6cf748a1b4d33513480bf382a9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565595"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184398"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Diferencia entre el asistente para la instalación y la página De instalación
 

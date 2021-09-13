@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: d0d452c0e9a5dbc3a9060c42921f180da7c42b90
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575929"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189257"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>Piloto Microsoft Cloud App Security con Microsoft 365 Defender
 

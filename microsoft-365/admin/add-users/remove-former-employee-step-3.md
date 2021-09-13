@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo a un buzón compartido.
-ms.openlocfilehash: 07973e47dd7f79ad4adc9121c9a2f6d368bb699e22d6d2cbacb91d3b8fce4fbf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9d5cefd761d95a3df03864aa14de1bcfb608d04
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827364"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185225"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Paso 3: Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo a un buzón compartido
 

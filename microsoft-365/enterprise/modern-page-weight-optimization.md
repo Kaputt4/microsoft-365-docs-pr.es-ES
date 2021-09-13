@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar la herramienta Diagnóstico de página para optimizar el peso de la página SharePoint páginas de sitio modernas en línea.
 ms.openlocfilehash: 04c3e94abef062bbd37db268da56f21c2dd7dc65
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573108"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189587"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimizar el peso de la página en páginas de sitio modernas de SharePoint Online
 

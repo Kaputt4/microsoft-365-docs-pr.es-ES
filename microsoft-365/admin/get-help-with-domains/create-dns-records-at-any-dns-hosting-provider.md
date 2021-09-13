@@ -23,11 +23,11 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 ms.openlocfilehash: 1947e8e91beb23f328e59ffe30fac0f596165121
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184657"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Agregar registros DNS para conectarse a su dominio
 

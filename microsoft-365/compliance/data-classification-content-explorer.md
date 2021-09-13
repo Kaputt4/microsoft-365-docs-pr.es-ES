@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
 ms.openlocfilehash: e1cae053c7b13ceec9c7f3274122cf004c7277e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184198"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -145,7 +145,7 @@ Puede buscar en:
 
 ## <a name="see-also"></a>Recursos adicionales
 
-- [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial.md](sensitive-information-type-entity-definitions.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

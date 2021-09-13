@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo configurar Skype Empresarial local para usar la autenticación moderna híbrida (HMA), lo que le ofrece una autenticación y autorización de usuario más seguras.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74046b89ba5ded65c9a645ca43e94b195ddf74896b0fd8832653ac8d96606b5f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9695815d0a085931b10f7f64b9fca2e997af9077
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864915"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187918"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Skype Empresarial local para usar la autenticación moderna híbrida
 

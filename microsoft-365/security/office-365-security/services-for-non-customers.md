@@ -18,11 +18,11 @@ description: Para ayudar a mantener la confianza del usuario en el uso del corre
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 9bed3c24fee91d746957a6418e5f5ea61babef6b
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533644"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185545"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servicios para no clientes que envían correo a Microsoft 365
 

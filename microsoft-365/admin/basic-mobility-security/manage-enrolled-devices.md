@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar los dispositivos móviles de su organización.
 ms.openlocfilehash: 3cb5b34d869ae16faa89ced45d54537fbb07a5e2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185038"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Administrar dispositivos inscritos en Administración de dispositivos móviles en Microsoft 365
 

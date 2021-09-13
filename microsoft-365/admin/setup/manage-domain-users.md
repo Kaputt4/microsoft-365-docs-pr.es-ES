@@ -24,11 +24,11 @@ search.appverid:
 - MOE150
 description: Sincronizar usuarios controlados por dominio con Microsoft 365 para empresas.
 ms.openlocfilehash: 01be69cf0b66c55b914c80e45b0bd2d47a148e31
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360715"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186694"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Sincronizar usuarios del dominio con Microsoft 365
 

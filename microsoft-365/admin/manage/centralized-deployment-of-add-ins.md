@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
 ms.openlocfilehash: 79acef4454428daba68d42b0161d060b7e28ee56
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564398"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184542"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187593"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso Alert
 

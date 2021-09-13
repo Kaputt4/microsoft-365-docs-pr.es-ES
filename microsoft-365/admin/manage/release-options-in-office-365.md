@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Obtenga información sobre cómo configurar la opción de lanzamiento para nuevas actualizaciones de productos y características en el Centro de administración de Microsoft 365.
 ms.openlocfilehash: df64bbac95f9d902ed83080e639544feb384fd72
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566251"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187166"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurar las opciones de versión estándar o dirigida
 

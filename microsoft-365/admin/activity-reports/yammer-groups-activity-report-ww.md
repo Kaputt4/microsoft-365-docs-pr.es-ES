@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: Obtenga el informe Yammer actividad de grupos de usuarios para conocer el número de grupos de Yammer que se crean y usan en la organización y su actividad.
 ms.openlocfilehash: 18ed4519a0f7859d8084f2144a58f4a726db530a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564751"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185369"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365 Informes en el Centro de administración: informe Yammer actividad de grupos
 
@@ -48,12 +48,12 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Elemento|Description|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre del grupo  <br/> |Nombre del grupo. <br/> |
 |Administrador de grupo  <br/> |Nombre del administrador del grupo o propietario.  <br/> |
-|Eliminada  <br/> |El número de grupos Yammer eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
+|Deleted  <br/> |El número de grupos Yammer eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
 |Tipo  <br/> |Tipo de grupo, público o privado. <br/> |
 |Conectado a Office 365  <br/> |Indica si el grupo Yammer es también un Microsoft 365 grupo. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La fecha más reciente en la que el grupo leyó, publicó o gustó un mensaje.  <br/> |

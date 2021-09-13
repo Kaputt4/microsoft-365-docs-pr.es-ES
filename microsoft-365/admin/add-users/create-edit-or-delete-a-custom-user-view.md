@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Aprenda a usar filtros para crear, editar o eliminar la vista de usuario personalizada en Microsoft 365.
-ms.openlocfilehash: 41cba32be3ee1e452462a398d5c7f0cc5a632061b4ce64ed3594d82f69887b68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b4177a561d13d76f6d5a0a1077fe8037d469ee48
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815832"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185281"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Crear, editar o eliminar una vista de usuario personalizada
 

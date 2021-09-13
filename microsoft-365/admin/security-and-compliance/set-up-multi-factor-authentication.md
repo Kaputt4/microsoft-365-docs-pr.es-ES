@@ -27,11 +27,11 @@ ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Obtenga información acerca de cómo configurar la autenticación multifactor para su organización.
 monikerRange: o365-worldwide
 ms.openlocfilehash: 39d9eb7aa25ac721fb7c39535404790e2af214e6
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186798"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
 

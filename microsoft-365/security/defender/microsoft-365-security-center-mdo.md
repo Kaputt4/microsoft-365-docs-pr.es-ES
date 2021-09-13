@@ -18,11 +18,11 @@ ms.collection:
 ms.prod: m365-security
 ms.technology: m365d
 ms.openlocfilehash: e65d7e869011cbbc6a55828f693782a6b7e0dfd6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575941"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185646"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender para Office 365 en Microsoft 365 Defender
 
@@ -51,7 +51,7 @@ En la tabla siguiente se enumeran los cambios en la navegación entre el Centro 
 |Permisos|[Permisos & roles](https://security.microsoft.com/emailandcollabpermissions)|Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Flujo del correo|||Consulta [Exchange de administración](https://admin.exchange.microsoft.com/#/)|
 |Privacidad de datos||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
-|Búsqueda|[Auditoría](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Búsqueda (búsqueda de contenido)||
+|Buscar|[Auditoría](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Búsqueda (búsqueda de contenido)||
 |Informes|[Report](https://security.microsoft.com/emailandcollabreport)|||
 |Garantía de servicio||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Supervisión||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 1ee64608e9ce6ce24dc40f1729303ef99b162cab
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683533"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190994"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Lista de dispositivos expuestos de una actividad de corrección
 
@@ -114,7 +114,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
 - [Obtener una actividad de corrección por id.](get-remediation-one-activity.md)

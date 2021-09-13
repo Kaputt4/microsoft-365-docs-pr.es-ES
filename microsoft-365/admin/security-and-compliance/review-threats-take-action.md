@@ -16,11 +16,11 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtén información sobre cómo revisar y administrar las amenazas detectadas por Antivirus de Microsoft Defender en tus Windows 10 dispositivos.
 ms.openlocfilehash: d1a611143af1f438989a549133c6f7c1e7502357
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186817"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Revisar las amenazas detectadas y actuar al respecto
 
@@ -105,7 +105,7 @@ En la tabla siguiente se describen las acciones que puede ver en Microsoft Endpo
 | Restart | Fuerza a Windows 10 dispositivo a reiniciarse en cinco minutos.<br><br>**IMPORTANTE:** El propietario o usuario del dispositivo no se notifica automáticamente del reinicio y podría perder el trabajo no guardado. |
 | Examen rápido | Inicia un examen rápido del antivirus en el dispositivo, centrándose en ubicaciones comunes donde es posible que se registre malware, como las claves del Registro y las carpetas de inicio conocidas Windows inicio. Los resultados se envían [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Examen completo | Inicia un examen antivirus completo en el dispositivo, centrándose en ubicaciones comunes donde se puede registrar malware e incluyendo todos los archivos y carpetas del dispositivo. Los resultados se envían [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Sincronización | Requiere que un dispositivo se active con Intune (parte de Microsoft Endpoint Manager). Cuando el dispositivo se comprueba, el dispositivo recibe cualquier acción o directivas pendientes asignadas al dispositivo. |
+| Sincronizar | Requiere que un dispositivo se active con Intune (parte de Microsoft Endpoint Manager). Cuando el dispositivo se comprueba, el dispositivo recibe cualquier acción o directivas pendientes asignadas al dispositivo. |
 | Actualizar firmas | Requiere que el dispositivo obtenga actualizaciones [de inteligencia de seguridad](https://go.microsoft.com/fwlink/?linkid=2149926) para la protección antivirus y antimalware. |
 
 > [!TIP]

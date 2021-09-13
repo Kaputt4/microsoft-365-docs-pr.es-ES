@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos XSLT/XML de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de la organización.
 ms.openlocfilehash: f2cd501334718f7b2e056d96d5b07392459b441e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186185"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Configurar un conector para archivar datos XSLT/XML
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Obtenga información sobre las tareas que le ayudarán a empezar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: 3d8c767c82642c40a9f16792da7697ed7ab85711c95a7834937334bba3504a4f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 61a057c3666faae51a012dd9db2d4c63ded0f77a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830988"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184281"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 

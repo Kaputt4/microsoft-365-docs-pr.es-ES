@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 - MOE150
 ms.openlocfilehash: a4ed6e53712ac3aa4b99e991d5fbbbb2bee31b80
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572208"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184286"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 
@@ -153,7 +153,7 @@ En este paso, se profundiza en los problemas detectados como coincidencias con l
 - **Revisión del historial de** actividades de usuario: vea el historial de actividades de mensajes de usuario y acciones de corrección, como notificaciones anteriores y escalaciones, para ver las coincidencias de directivas.
 - **Filtros:** use filtros como el remitente, el destinatario, la fecha y el sujeto para limitar rápidamente las alertas de mensajes que desea revisar.
 
-### <a name="remediate"></a>Corregir
+### <a name="remediate"></a>Corrección
 
 El siguiente paso es corregir los problemas de cumplimiento de comunicaciones que ha investigado con las siguientes opciones:
 

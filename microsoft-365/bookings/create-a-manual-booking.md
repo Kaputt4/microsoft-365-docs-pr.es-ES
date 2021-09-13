@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Sigue estas instrucciones para crear una cita y asignar un empleado a través de la aplicación Microsoft Bookings.
 ms.openlocfilehash: 9af9b28eb1f00bfc41dbdff2d7df4111cb8bdd13
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574441"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190607"
 ---
 # <a name="create-a-manual-booking"></a>Crear un manual de reserva
 

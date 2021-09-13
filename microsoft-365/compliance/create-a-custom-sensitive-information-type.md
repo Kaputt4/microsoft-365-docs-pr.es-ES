@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f1fcb52d99f939d686ac423c80caa0fe00cec24c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4e581fb38bd6fc5887b1648284a7a77f755c6b43
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189877"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -197,11 +197,14 @@ Aquí tiene las definiciones y algunos ejemplos de las comprobaciones adicionale
 
 > [!TIP]
 > Para detectar patrones que contengan caracteres chinos/japoneses y caracteres de un solo byte o para detectar patrones que contengan chino/japonés e inglés, defina dos variantes de la palabra clave o regex. 
+> - Por ejemplo, para detectar una palabra clave como "机密的document", utilice dos variantes de la palabra clave; una con un espacio entre el texto japonés y el inglés y otra sin espacio entre el texto japonés y el inglés. Por lo tanto, las palabras clave que deben agregarse en el SIT deben ser "机密的document" y "机密的document". Del mismo modo, para detectar la frase "東京オリンピック2020", se deben utilizar dos variantes: "東京オリンピック 2020" y "東京オリンピック2020"".
 >
-> Por ejemplo, para detectar una palabra clave como "机密的document", utilice dos variantes de la palabra clave; una con un espacio entre el texto japonés y el inglés y otra sin espacio entre el texto japonés y el inglés. Por lo tanto, las palabras clave que deben agregarse en el SIT deben ser "机密的document" y "机密的document". Del mismo modo, para detectar la frase "東京オリンピック2020", se deben utilizar dos variantes: "東京オリンピック 2020" y "東京オリンピック2020"".
+> Junto con los caracteres de doble byte chino/japonés, si la lista de palabras clave o frases también contiene palabras no chinas/japonesas también (como solo inglés), se recomienda crear dos diccionarios/listas de palabras clave. Una para palabras clave que contienen caracteres de byte chino/japonés/doble y otra solo para inglés. 
+> - Por ejemplo, si desea crear un diccionario o lista de palabras clave con tres frases "Extremadamente confidencial", "機密性 机密的 
+>     1. Extremadamente confidencial
+>     2. 機密性 la 机密的document y 机密的 documento
 >
 > Al crear una regex que utilice un guión de doble byte o un punto de doble byte, asegúrese de escapar ambos caracteres como se escaparía un guión o un punto en una regex. A continuación le mostramos un ejemplo de regex a modo de referencia:
->
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 >
 > Se recomienda utilizar una coincidencia de cadenas en lugar de una coincidencia de palabras en una lista de palabras clave.

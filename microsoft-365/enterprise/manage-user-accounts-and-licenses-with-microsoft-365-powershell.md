@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: Obtenga información sobre cómo administrar Microsoft 365 cuentas de usuario, licencias y grupos con PowerShell.
 ms.openlocfilehash: 77aa0003186eb44ce201e0e4b332c2a119c72069
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185985"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell
 

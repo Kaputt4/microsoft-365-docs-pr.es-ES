@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar El analizador de configuración de cumplimiento de Microsoft para rápida ejecución con El Administrador de cumplimiento de Microsoft.
 ms.openlocfilehash: 9bf88a79de07accbf8487f09f642324efcbaf086
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572076"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189957"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)
 
@@ -48,7 +48,7 @@ Para instalar MCCA, empiece con PowerShell en modo de administrador. Siga los pa
 
 1. Seleccione el Windows **Inicio.**
 2. Escriba **PowerShell**, haga clic con el botón secundario **en Windows PowerShell** y, a continuación, seleccione Ejecutar como **administrador**.
-1. En el símbolo del sistema, escriba:
+1. En el símbolo del sistema, escriba lo siguiente:
 
     ```powershell
     Install-Module -Name MCCAPreview
@@ -103,7 +103,7 @@ Siga estas instrucciones para ejecutar un informe en función de una ubicación 
   | :------------- | :------------: |
   | 1 | Asia-Pacífico |
   | 2 | Australia |
-  | 3  | Canadá |
+  | 3 | Canadá |
   | 4  | Europa (excluyendo Francia) / Oriente Medio / África |
   | 5  | Francia |
   | 6  | India |
@@ -111,9 +111,9 @@ Siga estas instrucciones para ejecutar un informe en función de una ubicación 
   | 8  | Corea |
   | 9  | Norteamérica (excepto Canadá) |
   | 10 | Sudamérica |
-  | 11  | Sudáfrica |
+  | 11 | Sudáfrica |
   | 12  | Suiza |
-  | 13  | Emiratos Árabes Unidos |
+  | 13 | Emiratos Árabes Unidos |
   | 14  | Reino Unido |
 
 

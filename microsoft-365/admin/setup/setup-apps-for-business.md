@@ -25,11 +25,11 @@ search.appverid:
 - BEA160
 description: Obtenga información acerca de cómo configurar su suscripción a Aplicaciones de Microsoft 365 para negocios.
 ms.openlocfilehash: 2010bc13f28d88d9589a53b3f84dd266549356c1
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866648"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184385"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurar Aplicaciones de Microsoft 365 para negocios
 

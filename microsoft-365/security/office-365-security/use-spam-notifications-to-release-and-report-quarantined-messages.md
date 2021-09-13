@@ -22,11 +22,11 @@ description: Los administradores pueden obtener información sobre las notificac
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: a07a4196b9ad936c6dc83d8eb300332ad9aaac47
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568461"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185521"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Usar notificaciones de correo no deseado de usuario para liberar e informar de mensajes en cuarentena
 
@@ -46,7 +46,7 @@ En el caso de los buzones compartidos, las notificaciones de correo no deseado d
 > [!NOTE]
 > Los mensajes que se han puesto en cuarentena como phishing de elevada confianza, malware o por reglas de flujo de correo (también conocidas como reglas de transporte) solo están disponibles para los administradores. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
 >
-> Las notificaciones de correo no deseado del usuario final no son compatibles con los grupos.
+> No se admiten las notificaciones de correo no deseado del usuario final para los grupos.
 
 Una notificación de correo no deseado del usuario final contiene la siguiente información para cada mensaje en cuarentena:
 

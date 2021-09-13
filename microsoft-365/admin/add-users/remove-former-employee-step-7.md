@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para eliminar la cuenta de usuario de un antiguo empleado.
-ms.openlocfilehash: be7f46ebae50c078ab90b4eb00fd658e3dbe0c008bd1862fa88162b76c5e07cb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f1f307a7029bcf1cbf71a2ce85908b9ccb28ba5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827352"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185198"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Paso 7: Eliminar la cuenta de usuario de un antiguo empleado
 

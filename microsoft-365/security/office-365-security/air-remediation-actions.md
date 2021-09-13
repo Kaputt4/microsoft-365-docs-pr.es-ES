@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 156bc4cc6a68d8c2e6fc0d8074e31f6533e6e1f549f15f1fd8bfe66c9348298c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 71c8ca842d9c88086dee041316899bbc08f943fe
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56879504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185585"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Acciones de corrección en Microsoft Defender para Office 365
 
@@ -67,7 +67,7 @@ Microsoft Defender para Office 365 incluye acciones de corrección para abordar 
 |Usuario|Filtración de datos <br> (Un usuario infringió las directivas DLP de correo electrónico o de uso [compartido de archivos](../../compliance/dlp-learn-about-dlp.md) |La investigación automatizada no da como resultado una acción pendiente específica. <p> [Ver informes dlp y tomar medidas.](../../compliance/view-the-dlp-reports.md)|
 |Usuario|Envío de correo electrónico anómalo <br> (Un usuario envió recientemente más correo electrónico que durante los 7-10 días anteriores).|La investigación automatizada no da como resultado una acción pendiente específica. <p> Enviar un gran volumen de correo electrónico no es malintencionado por sí solo; es posible que el usuario acaba de enviar correo electrónico a un gran grupo de destinatarios para un evento. Para investigar, use información sobre [](mfi-mail-flow-map-report.md) el flujo [de](mail-flow-insights-v2.md)correo, incluido el informe de mapa de flujo de correo para determinar lo que está sucediendo y tomar medidas.|
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver detalles y resultados de una investigación automatizada en Microsoft Defender para Office 365](air-view-investigation-results.md)
 - [Ver acciones de corrección pendientes o completadas después de una investigación automatizada en Microsoft Defender para Office 365](air-review-approve-pending-completed-actions.md)

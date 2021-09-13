@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo configurar y proteger las cuentas de administrador.
 ms.openlocfilehash: 44b5f9bb07736e06f7e427e521b5c85364091020
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188686"
 ---
 # <a name="protect-your-administrator-accounts"></a>Proteger las cuentas de administrador
 

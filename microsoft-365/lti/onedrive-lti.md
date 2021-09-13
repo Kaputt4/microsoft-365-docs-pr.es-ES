@@ -14,11 +14,11 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Cree y cale las asignaciones, cree y cura el contenido del curso y colabore en archivos en tiempo real con la nueva aplicación de interoperabilidad Microsoft OneDrive Learning Tools.
 ms.openlocfilehash: e67e772ce8ef460075729b34bc7da86d486c51e9
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189557"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integrar Microsoft OneDrive LTI con Canvas
 

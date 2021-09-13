@@ -16,14 +16,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: comprender la migración de Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios de Office 365 en las nuevas regiones del centro de datos alemán'
-ms.openlocfilehash: 32e1098736a1284a37fc3f1af478debbad34c00f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 9f7800a1cbf75e2b68d43fc20b1e79505eb51a81
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573720"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185953"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migración de Microsoft Cloud Deutschland a Office 365 servicios en las nuevas regiones del centro de datos alemán
 
@@ -45,7 +46,7 @@ En este artículo se proporciona información general sobre el enfoque basado en
 Los siguientes servicios se migrarán como parte del enfoque liderado por Microsoft:
 
 - Azure Active Directory (Azure AD)
-- Exchange Online
+- Exchange en línea
 - Exchange Online Protection
 - SharePoint Online
 - OneDrive para la Empresa
@@ -65,7 +66,7 @@ Esta figura muestra las diez fases de migración a los nuevos centros de datos a
 
 :::image type="content" alt-text="Las diez fases de migración a los nuevos centros de datos de Alemania." source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
-Estas fases comienzan cuando [se opta por la migración.](./ms-cloud-germany-migration-opt-in.md) La mayoría de las fases de migración se ejecutan como operaciones de servicio back-end con una interacción mínima del cliente necesaria y se ejecutan una fase tras otra. El inicio de tareas adicionales dirigidas por el cliente y el estado general de migración se comunicarán a través del Centro de mensajes del Centro de administración de Microsoft 365 durante el proceso de migración. Ejemplo de tareas puede incluir actualizaciones dns administradas por el cliente, reconfiguración de la configuración híbrida para Exchange híbridos o migración de Azure.
+Estas fases comienzan cuando [se opta por la migración.](./ms-cloud-germany-migration-opt-in.md) La mayoría de las fases de migración se ejecutan como operaciones de servicio back-end con una interacción mínima del cliente necesaria y se ejecutan una fase tras otra. El inicio de tareas adicionales dirigidas por el cliente y el estado general de migración se comunicarán a través del Centro de mensajes del <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración de Microsoft 365</a> durante el proceso de migración. Ejemplo de tareas puede incluir actualizaciones dns administradas por el cliente, reconfiguración de la configuración híbrida para Exchange híbridos o migración de Azure.
 
 La migración no comienza inmediatamente cuando se produce la suscripción. La organización se agrega a la lista de inquilinos que están programados para la migración posterior. Ahora puede comenzar las fases previas al trabajo, ya que son fundamentales para garantizar una migración y un uso correctos al finalizar:
 
@@ -96,7 +97,7 @@ Después del último traslado de Azure AD al servicio mundial, se espera que tod
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>Mover a las nuevas regiones del centro de datos alemán
 
-Los clientes existentes de Microsoft Cloud Deutschland ahora pueden comenzar a migrar sus servicios Office 365, Dynamics 365 Customer Engagement y Power Platform. El primer paso consiste en [participar en una migración dirigida por Microsoft](./ms-cloud-germany-migration-opt-in.md) a las nuevas regiones del centro de datos alemán. Al renovar la suscripción, opta automáticamente por una migración asistida por Microsoft. Microsoft notificará a los administradores de inquilinos del cliente con correo electrónico y en el Centro de mensajes del Centro de administración de Microsoft 365 cuando esto haya ocurrido. Sin embargo, si prefiere iniciar el proceso ahora, puede participar [directamente](./ms-cloud-germany-migration-opt-in.md) en Centro de administración de Microsoft 365 hoy. Se espera que las migraciones comiencen a principios de 2021 y que se completen el 29 de octubre de 2021. 
+Los clientes existentes de Microsoft Cloud Deutschland ahora pueden comenzar a migrar sus servicios Office 365, Dynamics 365 Customer Engagement y Power Platform. El primer paso consiste en [participar en una migración dirigida por Microsoft](./ms-cloud-germany-migration-opt-in.md) a las nuevas regiones del centro de datos alemán. Al renovar la suscripción, opta automáticamente por una migración asistida por Microsoft. Microsoft notificará a los administradores de inquilinos del cliente con correo electrónico y en el Centro de mensajes del <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración de Microsoft 365</a> cuando esto haya ocurrido. Sin embargo, si prefiere iniciar el proceso ahora, puede participar directamente [en](./ms-cloud-germany-migration-opt-in.md) Centro de administración de Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">hoy.</a> Se espera que las migraciones comiencen a principios de 2021 y que se completen el 29 de octubre de 2021. 
 
 Como resultado de la migración, los datos principales del cliente y las suscripciones se mueven a las nuevas regiones del centro de datos alemán.
 

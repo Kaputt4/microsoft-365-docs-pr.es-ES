@@ -13,12 +13,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79247ad0018f8bfb08e58254870fd510ca6fb0ad291a72b2bee4d16b9113ac4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee410bf455e770087da7999ad2019c17419a8e00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795859"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184033"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Atributos para las directivas de barreras de información
 
@@ -60,7 +60,7 @@ En la tabla siguiente se enumeran los atributos que puede usar con barreras de i
 |**Azure Active Directory de propiedad <br/> (nombre para mostrar ldap)**|**Exchange nombre de la propiedad**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
-| Empresa | Empresa |
+| Company | Company |
 | Departamento | Departamento |
 | ExtensionAttribute1 | CustomAttribute1 |
 | ExtensionAttribute2 | CustomAttribute2 |
@@ -94,7 +94,7 @@ En la tabla siguiente se enumeran los atributos que puede usar con barreras de i
 | Descripción | Descripción |
 | MemberOf | MemberOfGroup |
 
-## <a name="resources"></a>Recursos
+## <a name="resources"></a>Resources
 
 - [Definir directivas para las barreras de información en Microsoft Teams](information-barriers-policies.md)
 - [Solución de problemas de barreras de información](information-barriers-troubleshooting.md)

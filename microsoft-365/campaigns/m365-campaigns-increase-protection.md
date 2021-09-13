@@ -18,17 +18,18 @@ ms.custom:
 - Adm_O365
 - MiniMaven
 - MSB365
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365
-ms.openlocfilehash: 96aee5716374fda43c0258c55ab22d425001b8b5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 7890d25b337bd143d8a5c79f0a2994a81fca8caf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573372"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188710"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Aumentar la protección contra amenazas para Microsoft 365 suscripción
 
@@ -42,9 +43,9 @@ Para obtener más información, vea [Puntuación segura de Microsoft](../securit
 
 El Office 365 o Microsoft 365 incluye protección contra malware, pero puede aumentar esta protección bloqueando los datos adjuntos con tipos de archivo que se usan habitualmente para malware. Para proteger contra malware en el correo electrónico:
 
-1. Ve a <https://protection.office.com> e inicia sesión con las credenciales de tu cuenta de administrador.
+1. Vaya al Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 seguridad & cumplimiento</a> e inicie sesión con las credenciales de la cuenta de administrador.
 
-2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración** de amenazas, elija **Directiva** \> **antimalware**.
+2. En el panel de navegación izquierdo, en **Administración de amenazas,** elija **Directiva** \> **antimalware.**
 
 3. Haga doble clic en la directiva predeterminada para editar esta directiva en toda la empresa.
 
@@ -82,15 +83,15 @@ Para crear una regla de transporte de correo:
 
 6. Haga clic en **Guardar**.
 
-|Valor|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Setting|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
-|Nombre|Regla anti ransomware: advertir a los usuarios|
+|Name|Regla anti ransomware: advertir a los usuarios|
 |Aplique esta regla si . . .|Cualquier dato adjunto . . . extensión de archivo coincide con . . .|
 |Especificar palabras o frases|Agregue estos tipos de archivo: <br/> `dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm`|
 |Haga lo siguiente. . .|Notificar al destinatario con un mensaje|
 |Proporcionar texto del mensaje|No abra estos tipos de archivos de personas que no conoce porque pueden contener macros con código malintencionado.|
 
-Para obtener más información, vea:
+Para más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -102,7 +103,7 @@ Los hackers que obtienen acceso al buzón de un usuario pueden robar el correo e
 
 Para crear una regla de transporte de correo, vea [este breve vídeo](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) o siga estos pasos:
 
-1. En la Centro de administración de Microsoft 365, haga clic en **Centros de administración** \> **Exchange**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, haga clic en **Centros de administración** \> **Exchange**.
 
 2. En la categoría **flujo de** correo, haga clic en **reglas**.
 
@@ -114,9 +115,9 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
 
 6. Haga clic en **Guardar**.
 
-|Valor|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Setting|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
-|Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
+|Name|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
 |Agregar condición|Las propiedades del mensaje . . . incluir el tipo de mensaje . . . Reenvío automático|
 |Haga lo siguiente...|Bloquear el mensaje . . . rechazar el mensaje e incluir una explicación.|
@@ -130,9 +131,9 @@ Se recomienda empezar a usar esta protección mediante la creación de una direc
 
 Para crear una directiva contra la suplantación de identidad en Defender para Office 365, vea este breve [vídeo](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)de aprendizaje o siga estos pasos:
 
-1. Ve a <https://protection.office.com>.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a>.
 
-2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración de amenazas,** elija **Directiva**.
+2. En el panel de navegación izquierdo, en **Administración de amenazas,** elija **Directiva**.
 
 3. En la **página Directiva,** elija **Anti-phishing**.
 
@@ -144,7 +145,7 @@ Para crear una directiva contra la suplantación de identidad en Defender para O
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Nombre|Dominio y personal más valioso|
+|Name|Dominio y personal más valioso|
 |Descripción|Asegúrese de que el personal más importante y nuestro dominio no se suplanten.|
 |Agregar usuarios que proteger|Seleccione **+ Agregar una condición, El destinatario es**. Escriba nombres de usuario o escriba la dirección de correo electrónico de los propietarios, socios o candidatos, administradores y otros miembros importantes del personal. Puede agregar hasta 20 direcciones internas y externas que desea proteger de la suplantación.|
 |Agregar dominios que proteger|Seleccione **+ Agregar una condición, El dominio de destinatario es**. Escriba el dominio personalizado asociado con su Microsoft 365 suscripción, si ha definido uno. Puede escribir más de un dominio.|
@@ -185,9 +186,9 @@ Las personas envían, reciben y comparten datos adjuntos con regularidad, como d
 
 Para crear una directiva Caja fuerte datos adjuntos, vea [este breve vídeo](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)o complete los pasos siguientes:
 
-1. Ve a <https://protection.office.com> e inicia sesión con tu cuenta de administrador.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Centro Office 365 seguridad & cumplimiento</a> e inicie sesión con su cuenta de administrador.
 
-2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración de amenazas,** elija **Directiva**.
+2. En el panel de navegación izquierdo, en **Administración de amenazas,** elija **Directiva**.
 
 3. En la página Directiva, elija **Caja fuerte datos adjuntos**.
 
@@ -201,8 +202,8 @@ Para crear una directiva Caja fuerte datos adjuntos, vea [este breve vídeo](htt
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Nombre|Bloquear los correos electrónicos actuales y futuros con malware detectado.|
-|Description|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
+|Name|Bloquear los correos electrónicos actuales y futuros con malware detectado.|
+|Descripción|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
 |Guardar datos adjuntos respuesta de malware desconocido|Seleccione **Bloquear: bloquee los correos electrónicos y** los datos adjuntos actuales y futuros con malware detectado.|
 |Redirigir datos adjuntos al detectar|Habilitar redirección (seleccione este cuadro) <br/> Escriba la cuenta de administrador o una configuración de buzón para la cuarentena. <br/> Aplica la selección anterior si el examen de malware para datos adjuntos se encuentra en tiempo de espera o si se produce un error (selecciona este cuadro).|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
@@ -221,9 +222,9 @@ Se recomienda hacer lo siguiente:
 
 Para configurar vínculos Caja fuerte, vea [este breve vídeo](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)de aprendizaje o siga estos pasos:
 
-1. Ve a <https://protection.office.com> e inicia sesión con tu cuenta de administrador.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Centro Office 365 seguridad & cumplimiento</a> e inicie sesión con su cuenta de administrador.
 
-2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración de amenazas,** elija **Directiva**.
+2. En el panel de navegación izquierdo, en **Administración de amenazas,** elija **Directiva**.
 
 3. En la página Directiva, elija **Caja fuerte Vínculos**.
 
@@ -245,7 +246,7 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Nombre|Caja fuerte de vínculos para todos los destinatarios del dominio|
+|Name|Caja fuerte de vínculos para todos los destinatarios del dominio|
 |Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes|Seleccionar Activado: las direcciones URL se reescribirán y comprobarán en una lista de **vínculos malintencionados** conocidos cuando el usuario haga clic en el vínculo .|
 |Usar Caja fuerte datos adjuntos para examinar el contenido descargable|Seleccione este cuadro.|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
@@ -289,8 +290,9 @@ En la siguiente figura se muestran las directivas predeterminadas que se incluye
 
 Puede impedir que los usuarios de su organización compartan sus calendarios o también puede administrar lo que pueden compartir. Por ejemplo, puede restringir el uso compartido solo a horas de disponibilidad.
 
-1. Vaya al Centro de administración en <https://admin.microsoft.com> y **elija Configuración** \> **Org Configuración**.
-2. En **la** página Servicios, elija **Calendario** y elija si las personas de su organización pueden compartir sus calendarios con personas externas que tienen Office 365 o Exchange, o con alguien.
+1. Vaya al Centro de administración en <https://admin.microsoft.com> y **elija Configuración** \> **Org Configuración**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a>.
+
+1. Elija **Calendario** y elija si los usuarios de su organización pueden compartir sus calendarios con personas de fuera que tienen Office 365 o Exchange, o con alguien.
 
    Si elige la opción compartir con cualquiera, también puede decidir compartir solo la información de disponibilidad.
 

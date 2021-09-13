@@ -18,11 +18,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 8bdc8451d3f3885cb9704a954cae8f439cad1abf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189367"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Ver y organizar la cola de incidentes de Microsoft Defender para punto de conexión
 
@@ -53,13 +53,13 @@ En la navegación superior puede:
 ## <a name="sort-and-filter-the-incidents-queue"></a>Ordenar y filtrar la cola de incidentes
 Puede aplicar los siguientes filtros para limitar la lista de incidentes y obtener una vista más centrada.
 
-### <a name="severity"></a>Gravedad
+### <a name="severity"></a>Severity
 
-Gravedad del incidente | Description
+Gravedad del incidente | Descripción
 :---|:---
 Alto </br>(Rojo) | Amenazas asociadas a menudo con amenazas persistentes avanzadas (APT). Estos incidentes indican un alto riesgo debido a la gravedad de los daños que pueden causar en los dispositivos.
 Medio </br>(Naranja) | Las amenazas rara vez se observan en la organización, como cambios anómalos en el Registro, ejecución de archivos sospechosos y comportamientos observados típicos de fases de ataque.
-Bajo </br>(Amarillo) | Amenazas asociadas con malware y herramientas de piratería que no indican necesariamente una amenaza avanzada dirigida a la organización.
+Mínimo </br>(Amarillo) | Amenazas asociadas con malware y herramientas de piratería que no indican necesariamente una amenaza avanzada dirigida a la organización.
 Informativo </br>(Gris) | Es posible que los incidentes informativos no se consideren perjudiciales para la red, pero podrían ser buenos para realizar un seguimiento.
 
 ## <a name="assigned-to"></a>Asignado a

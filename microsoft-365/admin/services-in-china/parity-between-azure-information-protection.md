@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Obtenga más información sobre Azure Information Protection (AIP) para Office 365 operado por 21Vianet y cómo configurarlo para clientes en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 4ccd3a6e86a39931cd30335825adcc0fefe660cc54e0334a62d95ac58b9d4e3f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8b85ae43df31bb1947b841d616cc83c3a0b614e4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822384"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186766"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Compatibilidad con Azure Information Protection para Office 365 operado por 21Vianet
 
@@ -137,7 +137,7 @@ Inicie sesión en el proveedor dns, vaya a la configuración dns del dominio y, 
 
 Descargue e instale el cliente de etiquetado unificado AIP desde el [Centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
-Para obtener más información, vea:
+Para más información, vea:
 
 - [Documentación de AIP](/azure/information-protection/)
 - [Historial de versiones de AIP y directiva de soporte técnico](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
@@ -217,7 +217,7 @@ Para obtener más información, vea ¿Qué es el escáner de etiquetado unificad
 
     El escáner ahora tiene un token para autenticarse en Azure AD. Este token es válido durante un año, dos años o nunca, según la configuración del secreto de cliente de la aplicación **web /API** en Azure AD. Cuando expire el token, debe repetir este procedimiento.
 
-1. Ejecute el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) para establecer el escáner para que funcione en modo sin conexión. Ejecutar:
+1. Ejecute el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) para establecer el escáner para que funcione en modo sin conexión. Ejecute: 
 
     ```powershell
     Set-AIPScannerConfiguration -OnlineConfiguration Off
@@ -281,7 +281,7 @@ En la tabla siguiente se enumeran los cmdlets de PowerShell que son relevantes p
 | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Define la configuración de un repositorio existente en el trabajo de examen de contenido. |
 | | |
 
-Para obtener más información, vea:
+Para más información, vea:
 
 - [¿Qué es el escáner de etiquetado unificado de Azure Information Protection?](/azure/information-protection/deploy-aip-scanner)
 - [Configuración e instalación del escáner de etiquetado unificado de Azure Information Protection (AIP)](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=powershell-only)

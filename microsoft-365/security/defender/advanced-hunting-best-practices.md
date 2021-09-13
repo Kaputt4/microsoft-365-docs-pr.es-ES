@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 20a9206574565b2a02e1dcf57545e7b40619beec212daf29d6d2cc571e08dffb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae2e7fb960dd8ce2a42ce62fe0b8da7675e00ce5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867756"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189347"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Prácticas recomendadas para la consulta de búsqueda avanzada
 
@@ -254,7 +254,7 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>Analizar cadenas
 Hay varias funciones que puede usar para controlar eficazmente las cadenas que necesitan análisis o conversión.
 
-| String | Función | Ejemplo de uso |
+| Cadena | Función | Ejemplo de uso |
 |--|--|--|
 | Líneas de comandos | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | Extraiga el comando y todos los argumentos. |
 | Paths | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | Extraiga las secciones de una ruta de acceso de archivo o carpeta. |
@@ -269,7 +269,7 @@ Para obtener información sobre todas las funciones de análisis admitidas, [lea
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Documentación del idioma de consulta de Kusto](/azure/data-explorer/kusto/query/)
-- [Parámetros de uso y cuotas](advanced-hunting-limits.md)
+- [Cuotas y parámetros de uso](advanced-hunting-limits.md)
 - [Controlar errores de búsqueda avanzados](advanced-hunting-errors.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles del estado Aplicaciones Microsoft 365: puntuación de productividad de experiencias tecnológicas.'
-ms.openlocfilehash: def83cb3a468a31ce5d714af4337f786ef660ebd89293ead9c6c92d9ec23c34d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d8e9cb1f29c8138616c1cc2461bfa07fb9dafd9c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823403"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186921"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Estado de Aplicaciones de Microsoft 365: experiencias tecnológicas
 

@@ -21,11 +21,11 @@ search.appverid:
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Resumen: describe los certificados SSL necesarios para Exchange local e híbrido, SSO con AD FS, servicios Exchange Online y servicios Exchange web.'
 ms.openlocfilehash: f2ad14bd35d68067cdc462706bed763e894455f8
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187905"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-microsoft-365"></a>Planificación de los certificados SSL de terceros para Microsoft 365
 

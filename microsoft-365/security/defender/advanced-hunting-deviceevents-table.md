@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3a55e5647299e5c093c631ea10504e1a63698ea5d6b729caa25980d21a527f45
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 63a2d41714329918192caccd384587a4e4f04112
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817104"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189344"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -55,52 +55,52 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `MD5` | cadena | Hash MD5 del archivo al que se aplicó la acción grabada |
 | `FileSize` | largo | Tamaño del archivo en bytes |
-| `AccountDomain` | cadena | Dominio de la cuenta |
-| `AccountName` | cadena | Nombre de usuario de la cuenta |
-| `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
+| `AccountDomain` | cadenas | Dominio de la cuenta |
+| `AccountName` | cadenas | Nombre de usuario de la cuenta |
+| `AccountSid` | cadenas | Identificador de seguridad (SID) de la cuenta |
 | `RemoteUrl` | cadena | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
 | `RemoteDeviceName` | cadena | Nombre de la máquina que realizó una operación remota en la máquina afectada. Según el evento notificado, este nombre podría ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información de dominio |
 | `ProcessId` | Entero | Identificador de proceso (PID) del proceso recién creado |
-| `ProcessCommandLine` | cadena | Línea de comandos usada para crear el nuevo proceso |
+| `ProcessCommandLine` | cadenas | Línea de comandos usada para crear el nuevo proceso |
 | `ProcessCreationTime` | datetime | Fecha y hora en que se creó el proceso |
-| `ProcessTokenElevation` | cadena | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso recién creado |
-| `LogonId` | cadena | Identificador de una sesión de inicio de sesión. Este identificador es único en el mismo equipo solo entre reinicios |
-| `RegistryKey` | cadena | Clave del Registro a la que se aplicó la acción grabada |
-| `RegistryValueName` | cadena | Nombre del valor del Registro al que se aplicó la acción grabada |
-| `RegistryValueData` | cadena | Datos del valor del Registro al que se aplicó la acción grabada |
+| `ProcessTokenElevation` | cadenas | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso recién creado |
+| `LogonId` | cadenas | Identificador de una sesión de inicio de sesión. Este identificador es único en el mismo equipo solo entre reinicios |
+| `RegistryKey` | cadenas | Clave del Registro a la que se aplicó la acción grabada |
+| `RegistryValueName` | cadenas | Nombre del valor del Registro al que se aplicó la acción grabada |
+| `RegistryValueData` | cadenas | Datos del valor del Registro al que se aplicó la acción grabada |
 | `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
 | `RemotePort` | Entero | Puerto TCP en el dispositivo remoto al que se estaba conectando |
-| `LocalIP` | cadena | Dirección IP asignada al equipo local usado durante la comunicación |
+| `LocalIP` | cadenas | Dirección IP asignada al equipo local usado durante la comunicación |
 | `LocalPort` | Entero | Puerto TCP en el equipo local usado durante la comunicación |
-| `FileOriginUrl` | cadena | DIRECCIÓN URL desde la que se descargó el archivo |
-| `FileOriginIP` | cadena | Dirección IP desde la que se descargó el archivo |
-| `InitiatingProcessSHA1` | cadena | SHA-1 del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessSHA256` | cadena | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
+| `FileOriginUrl` | cadenas | DIRECCIÓN URL desde la que se descargó el archivo |
+| `FileOriginIP` | cadenas | Dirección IP desde la que se descargó el archivo |
+| `InitiatingProcessSHA1` | cadenas | SHA-1 del proceso (archivo de imagen) que inició el evento |
+| `InitiatingProcessSHA256` | cadenas | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessMD5` | cadena | Hash MD5 del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessFileName` | cadena | Nombre del proceso que inició el evento |
+| `InitiatingProcessFileName` | cadenas | Nombre del proceso que inició el evento |
 | `InitiatingProcessFileSize` | largo | Tamaño del archivo que ejecutó el proceso responsable del evento |
-| `InitiatingProcessFolderPath` | cadena | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
+| `InitiatingProcessFolderPath` | cadenas | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessId` | Entero | Identificador de proceso (PID) del proceso que inició el evento |
-| `InitiatingProcessCommandLine` | cadena | Línea de comandos usada para ejecutar el proceso que inició el evento |
+| `InitiatingProcessCommandLine` | cadenas | Línea de comandos usada para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
-| `InitiatingProcessAccountDomain` | cadena | Dominio de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountName` | cadena | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountSid` | cadena | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountObjectId` | cadena | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
-| `InitiatingProcessVersionInfoCompanyName` | cadena | Nombre de la compañía a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoProductName` | cadena | Nombre del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoProductVersion` | cadena | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
-|` InitiatingProcessVersionInfoInternalFileName` | cadena | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoOriginalFileName` | cadena | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoFileDescription` | cadena | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessAccountDomain` | cadenas | Dominio de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountName` | cadenas | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountSid` | cadenas | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountUpn` | cadenas | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountObjectId` | cadenas | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
+| `InitiatingProcessVersionInfoCompanyName` | cadenas | Nombre de la compañía a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoProductName` | cadenas | Nombre del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoProductVersion` | cadenas | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
+|` InitiatingProcessVersionInfoInternalFileName` | cadenas | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoOriginalFileName` | cadenas | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoFileDescription` | cadenas | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessParentId` | Entero | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
-| `InitiatingProcessParentFileName` | cadena | Nombre del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentFileName` | cadenas | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el elemento primario del proceso responsable del evento |
-| `InitiatingProcessLogonId` | cadena | Identificador de una sesión de inicio de sesión del proceso que inició el evento. Este identificador es único en el mismo equipo solo entre reinicios |
+| `InitiatingProcessLogonId` | cadenas | Identificador de una sesión de inicio de sesión del proceso que inició el evento. Este identificador es único en el mismo equipo solo entre reinicios |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
-| `AppGuardContainerId` | cadena | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
-| `AdditionalFields` | cadena | Información adicional sobre el evento en formato de matriz JSON |
+| `AppGuardContainerId` | cadenas | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
+| `AdditionalFields` | cadenas | Información adicional sobre el evento en formato de matriz JSON |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

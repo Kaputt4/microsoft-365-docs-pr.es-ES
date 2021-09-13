@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
 ms.openlocfilehash: b6aaf63f61919c520c77a09bf3607174757d4c2b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566321"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184726"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 

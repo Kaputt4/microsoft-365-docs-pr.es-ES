@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Supervisar los mensajes de correo electrónico con errores y retrasos enviados a o desde cuentas que tienen un alto impacto empresarial.
-ms.openlocfilehash: 4ade66d811fd63cbf7bb28d254f21ee454741f13
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 5d1122502c2ba7eff653874f5affba7774e9feb5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186665"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Administrar y supervisar cuentas de prioridad
 
@@ -48,7 +48,7 @@ La **característica de protección de** cuentas de prioridad que se describe en
 La **Premium supervisión Flow correo** electrónico que se describe en este tema solo está disponible para las organizaciones que cumplen los siguientes requisitos:
 
 - Su organización debe tener un recuento de licencias de al menos 5.000, desde uno de los siguientes productos o una combinación de los siguientes productos: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. Por ejemplo, su organización podría tener 3000 licencias de Office 365 E3 y 2500 de Microsoft 365 E5, con un total de 5500 licencias de productos aptos.
-- Su organización necesita tener al menos 50 usuarios activos de Exchange Online mensuales.
+- Su organización debe tener al menos 50 usuarios activos mensuales para una o más cargas de trabajo principales: Teams, One Drive para empresas, SharePoint Online, Exchange Online y Office aplicaciones.
 
 > [!NOTE]
 > Puede supervisar hasta 250 cuentas de prioridad.

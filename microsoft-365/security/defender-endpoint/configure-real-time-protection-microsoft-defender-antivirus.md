@@ -16,11 +16,11 @@ ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
 ms.openlocfilehash: 93a22ef86be7067c8bda955fdfd085f7ef6cbd64
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185878"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Habilitar y configurar la protección siempre activa del Antivirus de Windows Defender en la directiva de grupo
 
@@ -57,7 +57,7 @@ Para habilitar y configurar la protección siempre activa:
 
       ****
 
-      |Valor|Configuración predeterminada|
+      |Setting|Configuración predeterminada|
       |---|---|
       |Permitir que el servicio antimalware se inicie con prioridad normal <p> Puede reducir la prioridad del motor Antivirus de Microsoft Defender motor. Reducir la prioridad puede ser útil en casos en los que quieras tener un proceso de inicio lo más delgado posible; sin embargo, la toma de esta acción podría afectar a la protección de puntos de conexión. Continúe con precaución.|Habilitado
       |Permitir que el servicio antimalware siga ejecutándose siempre <p> Si las actualizaciones de protección se han deshabilitado, puede Antivirus de Microsoft Defender para que se ejecuten. Deshabilitar las actualizaciones de protección reduce la protección de puntos de conexión.|Deshabilitado|
@@ -92,7 +92,7 @@ Para habilitar y configurar la protección siempre activa:
 
       ****
 
-      |Valor|Configuración predeterminada|
+      |Setting|Configuración predeterminada|
       |---|---|
       |Activar heurística <p> La protección heurística deshabilitará o bloqueará la actividad sospechosa inmediatamente antes de que se pida al Antivirus de Microsoft Defender que detecte la actividad.|Habilitado|
       |
@@ -107,7 +107,7 @@ Para habilitar y configurar la protección siempre activa:
 
 ****
 
-|Valor|Configuración predeterminada|
+|Setting|Configuración predeterminada|
 |---|---|
 |Activar la supervisión del comportamiento <p> El motor antivirus supervisará los procesos de archivos, los cambios de archivos y del Registro y otros eventos en los puntos de conexión en busca de actividad malintencionada sospechosa y conocida.|Habilitado|
 |Examinar todos los archivos y datos adjuntos descargados <p> Los archivos descargados y los datos adjuntos se examinan automáticamente. Este examen funciona además del filtro Windows Defender SmartScreen, que examina los archivos antes y durante la descarga.|Habilitado|
@@ -151,7 +151,7 @@ La principal funcionalidad de protección en tiempo real está habilitada de for
 
 6. Cierre **el Editor de directivas de grupo local**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar la protección en tiempo real, heurística y de comportamiento](configure-protection-features-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

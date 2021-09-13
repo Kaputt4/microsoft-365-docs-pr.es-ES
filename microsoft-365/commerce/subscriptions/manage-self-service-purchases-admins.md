@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Los administradores pueden aprender a administrar las compras de autoservicio realizadas por los usuarios de su organización.
 ms.date: 03/26/2021
-ms.openlocfilehash: 3ab07fac52a55518f2d8259b35f1de808bb544685ef4c463ac9c5e9d3706a973
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a4ac4b79a9a73f80fc22e6f14696e25925df9faf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852240"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191644"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Administrar compras de autoservicio (administrador)
 

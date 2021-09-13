@@ -20,12 +20,12 @@ metadata:
   - MET150
   description: Encuentre respuestas a las preguntas más frecuentes acerca de las compras de autoservicio.
   ms.date: 09/15/2020
-  ms.openlocfilehash: 9cca88d8eb2d943d8d8d5377f4223e5a69251d6aa9048d8e0ab721373605cd4d
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 7dcf16ff51854b595f61c2797a62632a3003b7c9
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53892644"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59188334"
 title: Preguntas más frecuentes sobre la compra de autoservicio
 summary: >
   La compra de autoservicio ofrece a los usuarios la oportunidad de probar nuevas tecnologías y desarrollar soluciones que, en última instancia, beneficien a sus organizaciones más grandes. Los equipos centrales de adquisiciones y DEA tienen visibilidad para todos los usuarios que compran e implementan soluciones de compra de autoservicio a través de <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">la Centro de administración de Microsoft 365</a>. Los administradores pueden desactivar las compras de autoservicio por producto a través de PowerShell. Para obtener más información, [vea Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).

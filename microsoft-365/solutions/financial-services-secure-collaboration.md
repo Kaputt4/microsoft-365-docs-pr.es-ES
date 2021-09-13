@@ -13,11 +13,11 @@ localization_priority: Priority
 description: Conozca la forma en que las instituciones de servicios financieros pueden mantener el cumplimiento de la seguridad financiera y colaborar de forma eficaz al usar Microsoft 365 y Teams.
 f1.keywords: NOCSH
 ms.openlocfilehash: 0e3fada6a74776e4edf2c8c41ef9026ce17871ad
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568005"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189027"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave de cumplimiento y seguridad para los mercados de capital y los bancos de Estados Unidos
 

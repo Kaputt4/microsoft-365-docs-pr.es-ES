@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: Antes de poder usar Microsoft 365 con el dispositivo, es posible que deba inscribirlo primero en Movilidad básica y seguridad para Microsoft 365.
 ms.openlocfilehash: abe1a7f82ac1435894073b99a23dd07c9e420499
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394341"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185070"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Inscribir el dispositivo móvil con movilidad básica y seguridad
 

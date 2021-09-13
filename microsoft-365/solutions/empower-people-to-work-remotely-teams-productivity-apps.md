@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: Puede hacer que los usuarios sean más productivos utilizando Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
 ms.openlocfilehash: 034f0c3d4127ed75db8ba9a7cbe628a2502d192c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566483"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187249"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Paso 5: Implementar servicios y aplicaciones de productividad para los trabajadores híbridos
 

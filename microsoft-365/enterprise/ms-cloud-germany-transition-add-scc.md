@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: pasos de migración de exhibición de documentos electrónicos para la migración desde Microsoft Cloud Deutschland.'
-ms.openlocfilehash: d73a0bccf870999e63f9d05eaff796e7066a90240c45c7b93208fd715a0d2baa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0128c8563b2043e4ec41d2c5ab1b208bd3977511
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191234"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>Información sobre la experiencia de exhibición de documentos electrónicos durante la migración desde Microsoft Cloud Deutschland
 Las secciones siguientes proporcionan información adicional sobre la experiencia de exhibición de documentos electrónicos al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.

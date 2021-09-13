@@ -18,14 +18,14 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar la herramienta de administración de custodia Advanced eDiscovery administrar los datos de un caso legal.
-ms.openlocfilehash: 92102a0748f37b2d6d18ab36baf6d50ef95e699e64c278bf5daf273e6c94b312
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 22297edbf73f561ad46e5fae521abeb371fdc88d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842156"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188057"
 ---
-# <a name="work-with-custodians-and-non-custodial-data-sources-in-advanced-ediscovery"></a>Trabajar con custodios y orígenes de datos no custodiados en Advanced eDiscovery
+# <a name="work-with-custodians-and-non-custodial-data-sources-in-advanced-ediscovery"></a>Trabajar con orígenes de datos de custodios y no custodios en eDiscovery avanzado
 
 Cuando una organización responde a una investigación legal, el flujo de trabajo en torno a la identificación, conservación y recopilación de contenido potencialmente relevante se basa en las personas de la organización que son los custodios de los datos relevantes. En la exhibición de documentos electrónicos, estos individuos se denominan *custodios* de datos (o simplemente *custodios)* y se definen como "personas que tienen control administrativo de un documento o archivo electrónico". Por ejemplo, el administrador de un mensaje de correo electrónico podría ser el propietario del buzón que contiene el mensaje correspondiente.
 

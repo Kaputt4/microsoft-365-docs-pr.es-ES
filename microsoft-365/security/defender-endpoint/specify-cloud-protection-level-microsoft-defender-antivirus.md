@@ -17,11 +17,11 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.openlocfilehash: a7b8214165e80347d6200c755db477b81e430630
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863706"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187401"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Especificar el nivel de protección en la nube
 
@@ -84,6 +84,6 @@ La protección en la nube funciona Antivirus de Microsoft Defender para ofrecer 
 > [!TIP]
 > ¿Usa objetos de directiva de grupo local? Vea cómo se traducen en la nube. [Analice los objetos de directiva de grupo locales mediante el análisis](/mem/intune/configuration/group-policy-analytics)de directivas de grupo en Microsoft Endpoint Manager - Vista previa . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [¿Por qué se debe habilitar la protección en la nube para Antivirus de Microsoft Defender](why-cloud-protection-should-be-on-mdav.md)

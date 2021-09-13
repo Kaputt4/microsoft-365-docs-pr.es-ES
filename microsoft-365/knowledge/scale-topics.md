@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre procedimientos recomendados para administrar los muchos temas de su organización con Temas de Viva.
-ms.openlocfilehash: 92a8dd3e53a14bc0bbf5e2d5570930e3bdc860b5d2cee1ea7bd576c4e1cd871a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 96580df486195af991e446ae6f1bbb4b08013947
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891390"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187753"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Administrar temas a escala en Temas Microsoft Viva
 
@@ -142,7 +142,7 @@ El uso de taxonomías existentes puede proporcionar una lista de temas que proba
 
 Este enfoque también podría adoptarse en un nivel departamental o funcional, con expertos en la materia que comprendan esa área de su organización. El objetivo no es que revisen una selección o todos los temas. En su lugar, aportan su propia experiencia de dominio para guiar la curación selectiva.
 
-### <a name="search"></a>Búsqueda
+### <a name="search"></a>Buscar
 
 Los términos de búsqueda comunes a menudo se detectan como temas. Al usar los informes [de consulta principales de Búsqueda de Microsoft,](/sharepoint/view-search-usage-reports)puede identificar los términos de búsqueda más frecuentes de su organización. Si se han detectado temas para estos términos, son buenos candidatos para la curación. Estos temas se pueden presentar como tarjetas de respuesta en Búsqueda de Microsoft.
 

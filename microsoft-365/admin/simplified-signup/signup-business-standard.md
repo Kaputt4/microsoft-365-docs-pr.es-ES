@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolio
 description: Compre Microsoft 365 Empresa Estándar y configure su organización.
 ms.openlocfilehash: 7c5489a674145052eb40c533595a245a1d785247
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866922"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186630"
 ---
-# <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Registrarse para una suscripción Microsoft 365 Empresa Estándar suscripción
+# <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Registrarse para una suscripción a Microsoft 365 Empresa Estándar
 
 Hay un par de formas de obtener información Microsoft 365 Empresa Estándar:
 - **[Comprar](https://go.microsoft.com/fwlink/?linkid=2109397) Microsoft 365 Empresa Estándar y completar su propia configuración**: Para comprar Microsoft 365 Empresa Estándar, siga los pasos [siguientes](#sign-up-steps).
@@ -36,7 +36,7 @@ Hay un par de formas de obtener información Microsoft 365 Empresa Estándar:
 Para registrarse y comprar Microsoft 365 Empresa Estándar (o Aplicaciones Microsoft 365) para su empresa, siga estos pasos.
 
 > [!IMPORTANT]
-> La persona que se inscribe en Microsoft 365 empresa (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puedes agregar otras personas como administradores si quieres ayuda para administrar los servicios Microsoft 365 usuario. Consulta [Agregar un administrador](../../business-video/add-admin.md) para obtener más información.
+> La persona que se suscribe a Microsoft 365 para empresas (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puede agregar a otras personas como administradores si desea obtener ayuda para administrar los servicios de Microsoft 365. Consulte [Agregar un administrador](../../business-video/add-admin.md) para obtener más información.
 
 1. En la [página Microsoft 365 para empresas,](https://go.microsoft.com/fwlink/?linkid=2109654)seleccione **Ver planes & precios**.
 2. En la página siguiente, descubra el costo mensual y, a continuación, desplácese hacia abajo por la página para obtener más información sobre lo que se incluye en Microsoft 365. En Microsoft 365 Empresa Estándar, seleccione **Comprar ahora**.
@@ -132,4 +132,4 @@ Póngase en contacto con nuestros expertos en soporte técnico para pequeñas em
 
 [Configurar Microsoft 365 Empresa Premium en el Asistente para configuración](../../business/set-up.md)
 
-[Invitar a los usuarios a Microsoft 365 Empresa Estándar](user-invite-business-standard.md)
+[Invitar a usuarios a Microsoft 365 Empresa Estándar](user-invite-business-standard.md)

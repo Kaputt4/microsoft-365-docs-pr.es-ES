@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: Usa Windows PowerShell para obtener detalles sobre los dispositivos de movilidad y seguridad básicas de la organización.
 ms.openlocfilehash: 231eeb87d3f72ca4107c0ee6bef5bd60c713bb3f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564470"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185057"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtener detalles sobre dispositivos administrados de movilidad básica y seguridad
 
@@ -73,7 +73,7 @@ Para obtener más información sobre estos pasos, vea [Conectar para Microsoft
 
 2. En el Windows PowerShell de diálogo Solicitud de credenciales, escriba el nombre de usuario y la contraseña de su cuenta de administrador global Microsoft 365 y, a continuación, seleccione **Aceptar**.
 
-3. Ejecuta el siguiente comando.
+3. Ejecute el comando siguiente.
 
    ```powershell
    Connect-MsolService -Credential $UserCredential
@@ -88,7 +88,7 @@ Para ejecutar el script Get-MsolUserDeviceComplianceStatus.ps1, debe habilitar l
 
 1. En el escritorio Windows, seleccione **Inicio** y, a continuación, escriba Windows PowerShell. Haga clic con el Windows PowerShell y, a continuación, **seleccione Ejecutar como administrador**.
 
-2. Ejecuta el siguiente comando.
+2. Ejecute el comando siguiente.
 
    ```powershell
    Set-ExecutionPolicy  RemoteSigned
@@ -100,7 +100,7 @@ Para ejecutar el script Get-MsolUserDeviceComplianceStatus.ps1, debe habilitar l
 
 1. Abra el Módulo Microsoft Azure Active Directory para Windows PowerShell.
 
-2. Ejecuta el siguiente comando.
+2. Ejecute el comando siguiente.
 
    ```powershell
    Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}

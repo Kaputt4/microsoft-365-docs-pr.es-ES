@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: d04590eee8f771fe8001f44dfae490645e270e64
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190907"
 ---
 # <a name="list-indicators-api"></a>API de indicadores de lista
 
@@ -71,7 +71,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Autorización|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

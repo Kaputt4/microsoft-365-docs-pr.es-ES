@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 9b19f526434cdaf0eb1b6f6ad1fc0b6f7232b77d6b6b96d43bb777e45e19856d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a56a1abab388e98af52fadc322d41484c1610a5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898400"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187654"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -44,7 +44,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |`AlertId`|string|Identificador único de alerta.|
 |`Timestamp`|datetime|Fecha y hora en que se registró el evento.|
 |`DeviceId`|cadena|Identificador único del dispositivo en el servicio|
-|`DeviceName`|cadena|Nombre de dominio completo (FQDN) del dispositivo|
+|`DeviceName`|cadenas|Nombre de dominio completo (FQDN) del dispositivo|
 |`Severity`|cadena|El indicador de amenazas indica el posible impacto (alto, medio o bajo) de las actividades de vulneración identificadas por la alerta.|
 |`Category`|cadena|Tipo de indicador de amenazas o actividad de vulneración identificada por la alerta|
 |`Title`|cadena|Título de la alerta.|
@@ -52,7 +52,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |`SHA1`|cadena|SHA-1 del archivo donde fue aplicada la acción registrada|
 |`RemoteUrl`|cadena|La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado.|
 |`RemoteIP`|cadena|Dirección IP a la que se ha conectado|
-|`AttackTechniques`|cadena|MITRE ATT&técnicas de CK asociadas con la actividad que desencadenó la alerta|
+|`AttackTechniques`|cadenas|MITRE ATT&técnicas de CK asociadas con la actividad que desencadenó la alerta|
 |`ReportId`|largo|Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las `DeviceName` columnas y `Timestamp`|
 |`Table`|cadena|Tabla con el contenido detallado del evento|
 

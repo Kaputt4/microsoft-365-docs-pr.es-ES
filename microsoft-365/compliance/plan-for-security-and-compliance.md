@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Esta página de aterrizaje proporciona vínculos e información de planeación para la seguridad y el cumplimiento en Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03e722baa51f0e91b59bc61f30ce004ff38ed9a051a110d7e11ba49a9efb25dd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6300d254e67cad466dc25a902fc70f43ec0b776a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871710"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186110"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planear el cumplimiento de &amp; la seguridad
 

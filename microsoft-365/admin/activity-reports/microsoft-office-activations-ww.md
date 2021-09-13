@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Obtenga información sobre cómo obtener un informe Office activación para saber qué usuarios han activado su suscripción Office suscripción e identificar usuarios que podrían necesitar ayuda adicional.
 ms.openlocfilehash: de5ca46cd8ecabb88e250c5fb754b9943a01d4e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185446"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365 Informes en el Centro de administración: Microsoft Office activaciones
 
@@ -48,7 +48,7 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
-|Elemento|Description|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario.  <br/> |

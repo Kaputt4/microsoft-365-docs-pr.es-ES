@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: 2928d1f6c7cc01819eab6c3f3dcd2f41291191e3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 243740f725db14fc9355c28f44771d4d2573fb31
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567729"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188150"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
@@ -251,7 +251,7 @@ Después de completar este paso, asegúrese de copiar el identificador de trabaj
 
    1. **Id. de trabajo.** Necesitará este identificador de trabajo para ejecutar el script en el paso siguiente. Puede copiarlo desde esta página o desde la página desplegable del conector.
 
-   1. **Vínculo al script de ejemplo.** Haga clic **en el** vínculo aquí para ir al sitio GitHub para obtener acceso al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para poder copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para que pueda tener acceso de nuevo al ejecutar el script. Este vínculo también está disponible en la página desplegable del conector.
+   2. **Vínculo al script de ejemplo.** Haga clic **en el** vínculo aquí para ir al sitio GitHub para obtener acceso al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para poder copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para que pueda tener acceso de nuevo al ejecutar el script. Este vínculo también está disponible en la página desplegable del conector.
 
 9. Haga clic en **Listo**.
 
@@ -269,7 +269,7 @@ También puede hacer clic en **Editar** para cambiar el identificador de aplicac
 
 El último paso para configurar un conector de recursos humanos es ejecutar un script de ejemplo que cargará los datos de RECURSOS humanos en el archivo CSV (que creó en el paso 1) en la nube de Microsoft. En concreto, el script carga los datos en el conector de recursos humanos. Después de ejecutar el script, el conector de RECURSOS humanos que creó en el paso 3 importa los datos de recursos humanos a la organización de Microsoft 365 a la que pueden tener acceso otras herramientas de cumplimiento, como la solución de administración de riesgos Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Vea [Programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Vaya a la ventana que dejó abierta desde el paso anterior para obtener acceso al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcador o use la dirección URL que copió.
+1. Vaya a la ventana que dejó abierta desde el paso anterior para obtener acceso al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcador o use la dirección URL que copió. También puede obtener acceso al script [aquí](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1).
 
 2. Haga clic en **el botón** Sin procesar para mostrar el script en la vista de texto.
 
@@ -277,7 +277,7 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 
 4. Modifique el script de ejemplo de la organización, si es necesario.
 
-5. Guarde el archivo de texto como un archivo Windows PowerShell script mediante un sufijo de nombre de `.ps1` archivo de ; por ejemplo, `HRConnector.ps1` .
+5. Guarde el archivo de texto como un archivo Windows PowerShell script mediante un sufijo de nombre de `.ps1` archivo de ; por ejemplo, `HRConnector.ps1` . Como alternativa, puede usar el nombre GitHub nombre de archivo del script, que es `upload_termination_records.ps1` .
 
 6. Abra un símbolo del sistema en el equipo local y vaya al directorio donde guardó el script.
 
@@ -289,7 +289,7 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 
    En la tabla siguiente se describen los parámetros que se deben usar con este script y sus valores necesarios. La información obtenida en los pasos anteriores se usa en los valores de estos parámetros.
 
-   | Parámetro | Description |
+   | Parámetro | Descripción |
    |:-----|:-----|:-----|
    |`tenantId`|Este es el identificador de la Microsoft 365 que obtuvo en el paso 2. También puede obtener el identificador de  inquilino de su organización en la hoja Información general del Centro de administración de Azure AD. Esto se usa para identificar la organización.|
    |`appId` |Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 2. Azure AD lo usa para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización. | 

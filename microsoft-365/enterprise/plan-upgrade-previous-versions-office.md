@@ -17,11 +17,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene recursos para los usuarios que usan Office 2007 o Office 2010 para ayudarles a planear su actualización.
 ms.openlocfilehash: 1e4379510ba6c4cf36200a6f49f56aa11a151140
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378040"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187902"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planear la actualización desde servidores y clientes de Office 2007 o 2010
 

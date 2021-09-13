@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Aprende a cargar dispositivos con AutoPilot en Microsoft 365 Empresa Premium. Puedes asignar un perfil a un dispositivo o a un grupo de dispositivos.
 ms.openlocfilehash: 37617a37f7ea07c46aca19bc75046ebccb0bb4a9
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184889"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Crear y editar dispositivos de Autopilot
 

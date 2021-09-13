@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear y administrar directivas para controlar los datos personales de su organización en Microsoft 365, responder a alertas y solucionar problemas.
 ms.openlocfilehash: 49f772119cfc25284fecd66b2f3a79e063f11c09
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747202"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186049"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>Crear y administrar directivas en la administración de privacidad (versión preliminar)
 

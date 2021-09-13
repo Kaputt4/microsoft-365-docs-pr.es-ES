@@ -18,13 +18,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Obtenga información sobre cómo colocar retenciones en los custodios y sus orígenes de datos para conservar el contenido relevante para su Advanced eDiscovery caso.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5c5781d5dd2ce08c3b57695fa08720c1cc3ab38c6f41bceeb6f12a388232c70c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.custom:
+- seo-marvel-mar2020
+- admindeeplinkMAC
+ms.openlocfilehash: 12fdc5e6282358f96dcc1d454156a7fccf7518a4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859808"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186145"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Administrar retenciones en Advanced eDiscovery
 
@@ -54,7 +56,7 @@ Al crear una retención, tiene las siguientes opciones para tener en cuenta el c
 
 Para crear una retención sin custodia para un Advanced eDiscovery caso:
 
-1. En el Centro de cumplimiento de Microsoft 365, haga clic en **eDiscovery > Advanced** para mostrar la lista de casos de la organización.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, haga clic en **eDiscovery > Advanced** para mostrar la lista de casos de la organización.
   
 2. Haga **clic en** Abrir junto al caso en el que desea crear las retenciones.
   
@@ -137,7 +139,7 @@ Microsoft Teams se basa en Office 365 grupos. Por lo tanto, colocarlos en espera
 
  - Cuando se busca el buzón de un usuario, no se buscará ningún grupo de Microsoft 365 o equipo de Microsoft del que el usuario sea miembro. Del mismo modo, cuando se coloca una retención Microsoft 365 grupo o Microsoft Team, solo se ponen en espera el buzón de grupo y el sitio de grupo; los buzones y OneDrive para la Empresa de los miembros del grupo no se ponen en espera a menos que los agregue explícitamente como custodios o coloque sus orígenes de datos en espera. Por lo tanto, si necesita poner un grupo de Microsoft 365 o un equipo de Microsoft en espera para un custodio específico, considere la posibilidad de asignar el sitio de grupo y el buzón de grupo al custodio (consulte Managing Custodians in Advanced eDiscovery). Si el grupo Microsoft 365 o Microsoft Team no es atribuible a un único custodio, considere la posibilidad de agregar el origen a una retención que no sea de custodia. 
  
- - Para obtener una lista de los miembros de un grupo de Microsoft 365 o microsoft team, puede ver las propiedades en la página Grupos > inicio en el Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
+ - Para obtener una lista de los miembros de un grupo de Microsoft 365 o de Microsoft Team, puede ver las propiedades en la página Grupos principales en  >  [](https://go.microsoft.com/fwlink/p/?linkid=2052855) el Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

@@ -15,11 +15,11 @@ description: Los administradores pueden aprender a usar el informe de dominio no
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 3b2ddbc6215ebbc3b1a2b2ccff4a5bc8ad7118c3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574549"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189097"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Informe de dominio no aceptado en el Centro de seguridad & cumplimiento
 
@@ -50,7 +50,7 @@ Si mantiene el mouse sobre un punto de datos (día) en el gráfico, verá el nú
 
 Si hace clic **en Ver tabla de detalles** en una vista de informe, se muestra la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Nombre del conector de entrada**
 - **Dominio del remitente**
 - **Recuento de mensajes**
@@ -62,7 +62,7 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Al seleccionar una fila de la tabla, aparece un menú desplegable con la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Nombre del conector de entrada**
 - **Dominio del remitente**
 - **Recuento de mensajes**

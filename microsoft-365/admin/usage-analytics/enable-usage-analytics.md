@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtén información sobre cómo empezar a recopilar datos para el inquilino mediante la aplicación de plantilla Microsoft 365 de análisis de uso en Power BI.
 ms.openlocfilehash: a05ea19915af96720c3aeaf4a4d01fbe879fbc27
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884665"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188929"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitar análisis de uso de Microsoft 365
 
@@ -100,7 +100,7 @@ Los administradores globales pueden revertir este cambio para su inquilino y mos
 
 2. Seleccione **Informes**. 
   
-3. Desactive la instrucción **En todos los informes, muestre nombres sin** identificar para usuarios, grupos y sitios y, a continuación, guarde los cambios.  
+3. Desactive la instrucción **En todos los informes, mostrar nombres sin identificar para usuarios, grupos y sitios** y, a continuación, guarde los cambios.  
   
 Estos cambios tardarán unos minutos en tener efecto. Mostrar información de usuario identificable es un evento registrado en el Centro de cumplimiento de Microsoft 365 de auditoría.   
 

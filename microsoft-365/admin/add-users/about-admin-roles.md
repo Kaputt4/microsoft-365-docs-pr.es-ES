@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador, como los administradores de servicios, se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración.
 ms.openlocfilehash: 42c28d230cef36f7f6e0421cc46f64a53222eca8
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185361"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 

@@ -23,11 +23,11 @@ search.appverid:
 - MOE150
 description: Obtenga el SharePoint de uso del sitio para saber cuántos archivos almacenan los usuarios en SharePoint sitios, cuántos se usan activamente y el almacenamiento total consumido.
 ms.openlocfilehash: a55f76fe1ca53129af27647b42ca44ce267a626c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564797"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185385"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 Informes en el Centro de administración: SharePoint de sitio
 
@@ -50,11 +50,11 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Elemento|Description|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Dirección URL del sitio  <br/> |La dirección URL completa del sitio. <br/> |
-|Eliminada  <br/> |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  <br/> |
+|Deleted  <br/> |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  <br/> |
 |Propietario del sitio  <br/> |Nombre de usuario del propietario principal del sitio.   <br/> |
 |Nombre principal del propietario del sitio  <br/> |La dirección de correo electrónico del propietario del sitio. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La fecha de la última vez que se detectó la actividad del archivo o una página se visualizó en el sitio.  <br/> |

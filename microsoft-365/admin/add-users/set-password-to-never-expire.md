@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Inicie sesión en su cuenta Microsoft 365 administrador para establecer algunas contraseñas de usuario individuales para que nunca expiren mediante Windows PowerShell.
-ms.openlocfilehash: c56a4787390e18443bdd006e2f898ef931812b706d5f743bf0649dfd7c294e73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 29d0ebcbb3f9fb197e574731e23aaa64c2fa7894
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827316"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185161"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual para que nunca expire
 

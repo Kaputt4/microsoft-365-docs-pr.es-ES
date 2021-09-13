@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Cómo proteger el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, incluidos ransomware, phishing y datos adjuntos malintencionados.
 ms.openlocfilehash: 301aa152d462dc7fc712d4b6aa56f4a521463690
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186814"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las 10 formas principales de proteger Microsoft 365 planes empresariales
 
@@ -41,7 +41,7 @@ Microsoft recomienda completar las tareas enumeradas en la tabla siguiente que s
 |---|---|---|---|
 |1|[Configurar la autenticación multifactor](secure-your-business-data.md#setup)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Proporcionar formación a los usuarios](secure-your-business-data.md#train)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3|[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Aumentar el nivel de protección contra malware en el correo](secure-your-business-data.md#malware)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Protección contra ransomware](secure-your-business-data.md#ransomware)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Detener el reenvío automático para correo electrónico](secure-your-business-data.md#forwarding)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -154,11 +154,11 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 
 5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiar estos valores.
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
-| Valor | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
+| Setting | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
 |:-----|:-----|:-----|
-|Nombre  <br/> |Regla anti ransomware: advertir a los usuarios  <br/> |Regla anti ransomware: bloquear tipos de archivo  <br/> |
+|Name  <br/> |Regla anti ransomware: advertir a los usuarios  <br/> |Regla anti ransomware: bloquear tipos de archivo  <br/> |
 |Aplique esta regla si . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |
 |Especificar palabras o frases  <br/> |Agregue estos tipos de archivo:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm  <br/> |Agregue estos tipos de archivo:  <br/> ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsf, wsh, exe, pif  <br/> |
 |Haga lo siguiente. . .  <br/> |Anteponer un aviso de declinación de responsabilidades  <br/> |Bloquear el mensaje . . . rechazar el mensaje e incluir una explicación  <br/> |
@@ -167,7 +167,7 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 > [!TIP]
 > También puede agregar los archivos que desea bloquear a la lista Antimalware en el [paso 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Para obtener más información, vea:
+Para más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -190,11 +190,11 @@ Para crear una regla de transporte de correo:
 
 5. Aplique la configuración en la tabla siguiente. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiar estos valores.
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
-|Valor|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
+|Setting|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
 |---|---|
-|Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
+|Name|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
 |Agregar condición|El destinatario . . . es externo/interno . . . Fuera de la organización|
 |Agregar condición|Las propiedades del mensaje . . . incluir el tipo de mensaje . . . Reenvío automático|
@@ -257,7 +257,7 @@ Para crear una directiva contra la suplantación de identidad en Defender para O
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Nombre|Personal de la campaña más valioso y de dominio|
+|Name|Personal de la campaña más valioso y de dominio|
 |Descripción|Asegúrese de que el personal más importante y nuestro dominio no se suplanten.|
 |Agregar usuarios que proteger|Seleccione **+ Agregar una condición, El destinatario es**. Escriba nombres de usuario o escriba la dirección de correo electrónico del candidato, el jefe de campaña y otros miembros importantes del personal. Puede agregar hasta 20 direcciones internas y externas que desea proteger de la suplantación.|
 |Agregar dominios que proteger|Seleccione **+ Agregar una condición, El dominio de destinatario es**. Escriba el dominio personalizado asociado con su Microsoft 365 suscripción, si ha definido uno. Puede escribir más de un dominio.|
@@ -292,8 +292,8 @@ Para crear una directiva Caja fuerte datos adjuntos, vea un [breve vídeo de apr
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Nombre|Bloquear los correos electrónicos actuales y futuros con malware detectado.|
-|Description|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
+|Name|Bloquear los correos electrónicos actuales y futuros con malware detectado.|
+|Descripción|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
 |Guardar datos adjuntos respuesta de malware desconocido|Seleccione **Bloquear: bloquee los correos electrónicos y** los datos adjuntos actuales y futuros con malware detectado.|
 |Redirigir datos adjuntos al detectar|Habilitar redirección (seleccione este cuadro) <br/> Escriba la cuenta de administrador o una configuración de buzón para la cuarentena. <br/> Aplica la selección anterior si el examen de malware para datos adjuntos se encuentra en tiempo de espera o si se produce un error (selecciona este cuadro).|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
@@ -328,7 +328,7 @@ Para modificar la directiva predeterminada:
 
 3. En **Configuración** que se aplican al contenido excepto el correo electrónico , seleccione Office 365 **aplicaciones**, No realizar un seguimiento cuando los usuarios hacen clic en vínculos seguros y No permitir que los usuarios hagan clic a través de vínculos seguros **a** la dirección **URL original.**
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
@@ -336,11 +336,11 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
 2. Aplique la configuración que se muestra en la tabla siguiente.
 
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Nombre|Caja fuerte de vínculos para todos los destinatarios del dominio|
+|Name|Caja fuerte de vínculos para todos los destinatarios del dominio|
 |Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes|Seleccionar Activado: las direcciones URL se reescribirán y comprobarán en una lista de **vínculos malintencionados** conocidos cuando el usuario haga clic en el vínculo .|
 |Aplicar análisis de url en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos|Seleccione este cuadro.|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|

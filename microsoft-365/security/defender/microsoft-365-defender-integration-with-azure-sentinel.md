@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: d7982e8a8c320336a47cd64152b5477be7ae51f5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568113"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185681"
 ---
 # <a name="microsoft-365-defender-integration-with-azure-sentinel"></a>Integración de Microsoft 365 Defender con Azure Sentinel.
 
@@ -58,7 +58,7 @@ Así es como funciona.
 1. Obtenga una comprensión más profunda de [Microsoft 365 Defender integración con Azure Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 2. [Conectar datos de Microsoft 365 Defender a Azure Sentinel](/azure/sentinel/connect-microsoft-365-defender).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes en Microsoft 365 Defender](incidents-overview.md)
 - [Investigar incidentes con Azure Sentinel](/azure/sentinel/tutorial-investigate-cases)

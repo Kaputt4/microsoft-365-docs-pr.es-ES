@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Cambia el tema de color de la página de reserva en la aplicación Microsoft Bookings.
 ms.openlocfilehash: 5faf769eeee8a34989e1fc3f1d5859c9770f85a3
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822741"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190604"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personalizar y publicar la página de reserva
 

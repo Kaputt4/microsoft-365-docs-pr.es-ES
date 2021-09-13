@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Obtenga información sobre cómo quitar un dominio antiguo de Microsoft 365 y mover usuarios y grupos a otro dominio o cancelar la suscripción.
-ms.openlocfilehash: 157ae1b8fb36e9bfb13f6e496a7bab4772e7bef851ba0c917d3cfc7e7762478a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 227ca3e58a4c6278278048deeffcf68c1d659546
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825720"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184601"
 ---
 # <a name="remove-a-domain"></a>Quitar un dominio
 

@@ -17,11 +17,11 @@ ms.custom:
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo implementar Microsoft 365 Lighthouse líneas base.
 ms.openlocfilehash: 62fc9afcbf10a0cd77c2fe2d2f7140b5197dd42a
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191134"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Implementar Microsoft 365 Lighthouse base 
 

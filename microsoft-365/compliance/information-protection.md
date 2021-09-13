@@ -19,11 +19,11 @@ ms.collection:
 recommendations: false
 description: Implemente Microsoft Information Protection (MIP) para proteger la información confidencial donde esta resida o hacia donde se transfiera.
 ms.openlocfilehash: 8b576ca7f6fd3914d160592c0d1e34d20c3bdcc1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567441"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191357"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection en Microsoft 365.
 

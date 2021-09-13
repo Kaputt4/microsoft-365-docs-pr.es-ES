@@ -20,11 +20,11 @@ description: Los administradores pueden aprender a configurar el filtrado de con
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 6edcbbe885f8271b073afdff248106ce0d209960
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572448"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189134"
 ---
 # <a name="configure-connection-filtering"></a>Configurar el filtrado de la conexión
 
@@ -91,7 +91,7 @@ En este artículo se describe cómo configurar la directiva de filtro de conexi�
        - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
        - IP cidr: por ejemplo, 192.168.0.1/25. Los valores válidos de máscara de subred son de /24 a /32. Para omitir el filtrado de correo no deseado para /1 a /23, vea la sección Omitir filtrado de correo no deseado para una [DIRECCIÓN IP cidr](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) fuera del intervalo disponible más adelante en este artículo.
 
-       Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Quitar icono.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+       Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
      Para agregar la dirección IP o el intervalo de direcciones, haga clic en el cuadro y escriba itclick **Add** ![ Add Icon. ](../../media/ITPro-EAC-AddIcon.png) . Para quitar una entrada, seleccione la entrada en **Dirección IP permitida** y, a continuación, haga clic en **Quitar** ![ quitar ](../../media/scc-remove-icon.png) . Cuando haya terminado, haga clic en **Guardar**.
 
@@ -148,7 +148,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-HostedConnectionFilterPolicy](/powershell/module/exchange/set-hostedconnectionfilterpolicy).
 
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que ha modificado correctamente la directiva de filtro de conexión predeterminada, siga estos pasos:
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cómo se protege la privacidad con la puntuación de productividad.
-ms.openlocfilehash: 928dfc8677cc452fb3c6309d6a42e4390a238d52b7dffa0217a4b4507c8d72a0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5b5997532ddcd1fdf43b4124f8e2d8183bb3d89e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186878"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Controles de privacidad para la puntuación de productividad
 

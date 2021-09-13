@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
 ms.openlocfilehash: 7795f4d7f02a9b60e0bbd58fb97608733385dc9c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563587"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187646"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Comprender el esquema de búsqueda avanzada en Microsoft Defender para endpoint
 
@@ -70,13 +70,13 @@ Los nombres de tabla y columna también se enumeran en el Centro de seguridad de
 |**[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)**|Creación de procesos y eventos relacionados|
 |**[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)**|Conexión de red y eventos relacionados|
 |**[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)**|Creación y modificación de archivos y otros eventos del sistema de archivos|
-|**[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)**|Creación y modificación de entradas de registro|
+|**[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)**|Creación y modificación de entradas de Registro|
 |**[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)**|Inicios de sesión y otros eventos de autenticación|
 |**[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)**|Eventos de carga de DLL|
 |**[DeviceEvents](advanced-hunting-deviceevents-table.md)**|Varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad como Antivirus de Microsoft Defender protección contra vulnerabilidades y vulnerabilidades de seguridad|
-|**[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)**|Información de certificado de archivos firmados obtenidos de eventos de comprobación de certificados en puntos de conexión|
-|**[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)**|Inventario de software instalado en dispositivos, incluida la información de versión y el estado de fin de soporte técnico|
-|**[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)**|Vulnerabilidades de software encontradas en dispositivos y la lista de actualizaciones de seguridad disponibles que abordan cada vulnerabilidad|
+|**[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)**|Información de certificados de archivos firmados obtenidos de los eventos de comprobación de certificados en puntos de conexión|
+|**[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)**|Inventario del software instalado en dispositivos, incluida la información de la versión y el estado de finalización del soporte técnico|
+|**[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)**|Vulnerabilidades de software encontradas en los dispositivos y lista de actualizaciones de seguridad disponibles que abordan cada vulnerabilidad|
 |**[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)**|La base de conocimiento de vulnerabilidades de la que se ha informado públicamente, incluyendo si el código que aprovecha la vulnerabilidad está disponible para el público|
 |**[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)**|Eventos de evaluación de administración de amenazas y vulnerabilidades, donde se indica el estado de las distintas configuraciones de seguridad de los dispositivos|
 |**[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)**|Base de conocimiento de las configuraciones de seguridad utilizadas por la administración de amenazas y vulnerabilidades para evaluar dispositivos, incluidas las asignaciones a diferentes estándares y criterios de referencia|

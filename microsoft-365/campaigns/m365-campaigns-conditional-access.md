@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización de ataques relacionados con la identidad proporcionando una configuración de seguridad preconfigurada.
-ms.openlocfilehash: 88fac794b59785a37121800c95a99e2b6be3b35deb2830c927600442f3bdb42f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809129"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188702"
 ---
 # <a name="turn-on-security-defaults"></a>Activar valores predeterminados de seguridad
 

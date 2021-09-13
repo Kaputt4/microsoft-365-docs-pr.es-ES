@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: Obtenga el OneDrive de uso de la organización y conozca la actividad de cada usuario OneDrive, el número de archivos compartidos y el uso del almacenamiento.
 ms.openlocfilehash: 145bf6cc4f079e4916730b949ed0c4a798242860
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564833"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185422"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365 Informes en el Centro de administración: OneDrive para la Empresa actividad
 
@@ -49,7 +49,7 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Elemento|Description|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |Nombre de usuario del propietario de la OneDrive cuenta.  <br/> |
@@ -58,7 +58,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |Archivos sincronizados  <br/> |El número de archivos que se han sincronizado desde el dispositivo local de un usuario con la cuenta OneDrive usuario. <br/> |
 |Archivos compartidos internamente  <br/> | El número de archivos que se han compartido con usuarios de la organización o con usuarios de grupos (que pueden incluir usuarios externos).  <br/> |
 |Archivos compartidos externamente  <br/> |El número de archivos que se han compartido con usuarios externos a la organización. <br/>|
-|Eliminada  <br/> | Esto indica que se quitó la licencia del usuario.  <br/> NOTA: La actividad de un usuario eliminado seguirá mostrándose en un informe siempre y cuando se le haya concedido una licencia en algún momento durante el período de tiempo seleccionado. En la columna **Eliminado** puede observar que es posible que el usuario ya no esté activo, pero ha contribuido a los datos del informe.  <br/> |
+|Deleted  <br/> | Esto indica que se quitó la licencia del usuario.  <br/> NOTA: La actividad de un usuario eliminado seguirá mostrándose en un informe siempre y cuando se le haya concedido una licencia en algún momento durante el período de tiempo seleccionado. En la columna **Eliminado** puede observar que es posible que el usuario ya no esté activo, pero ha contribuido a los datos del informe.  <br/> |
 |Fecha de eliminación  <br/> |La fecha en la que se quitó la licencia del usuario. <br/>|
 |Producto asignado  <br/> |Los Microsoft 365 que tienen licencia para el usuario.|
 |||

@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo usar el conmutador de inquilinos y las vistas multiinquilino que le ofrecen la capacidad de administrar los inquilinos desde una única ubicación.
 ms.openlocfilehash: 6dbad8dbfaa84d490983cd5eccaf5ecf5d6979e5
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393441"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186937"
 ---
 # <a name="multi-tenant-management"></a>Administración multiinquilino
 

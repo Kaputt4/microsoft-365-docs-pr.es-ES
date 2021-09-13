@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ms.openlocfilehash: de016e9ef29265fb89799eadebe54c973dac80d0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185510"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Ilustraciones de la nube de Microsoft para arquitectos de TI
 
@@ -59,14 +59,14 @@ Lo que los arquitectos de TI necesitan saber sobre las redes para las plataforma
 
 Lo que los arquitectos de TI necesitan saber sobre la nube híbrida para las plataformas y los servicios Microsoft.
   
-| Item | Description |
+| Item | Descripción |
 |:-----|:-----|
 |[![Imagen digital del modelo de nube híbrida de Microsoft.](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](../downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [Ver como un PDF](../downloads/MSFT_cloud_architecture_hybrid.pdf) \| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf) \| [Descargar como un Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx)     <br>Actualizado en agosto de 2020 | Este modelo contiene lo siguiente: <ul><li> Ofertas de la nube de Microsoft (SaaS, IaaS de Azure y PaaS de Azure) y sus elementos comunes. </li><li> Arquitectura de nube híbrida para las ofertas en la nube de Microsoft </li><li> Escenarios de nube híbrida para SaaS de Microsoft (Office 365), IaaS de Azure y PaaS de Azure </li></ul><br/>|
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Métodos de arquitectura para migraciones de inquilino a inquilino de la nube de Microsoft 
 En esta serie de temas se muestran varios métodos de arquitectura para las fusiones, las adquisiciones, las ventas y otros casos que podrían llevarle a migrar a un nuevo inquilino en la nube. Estos temas proporcionan instrucciones de punto de partida para la planeación de recursos empresariales. 
 
-| Elemento | Description |
+| Item | Descripción |
 |:-----|:-----|
 |[![Imagen digital de las migraciones de inquilino a inquilino en la nube de Microsoft.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| Actualizado en febrero de 2021    |Este modelo contiene lo siguiente: <ul><li>Una asignación de escenarios empresariales a métodos arquitectónicos</li><li>Consideraciones sobre diseño</li><li>Ejemplo de flujo de migración de eventos únicos</li><li>Ejemplo de flujo de migración por fases</li><li>Ejemplo de movimiento de inquilino o flujo dividido</li></ul>|
 
@@ -74,7 +74,7 @@ En esta serie de temas se muestran varios métodos de arquitectura para las fusi
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Ataques comunes y funcionalidades de Microsoft que protegen su organización
 Obtenga información sobre los ciberataques más comunes y cómo Microsoft puede ser de utilidad a su organización en todas las fases de un ataque. 
 
-| Item | Description |
+| Item | Descripción |
 |:-----|:-----|
 |[![Ilustración del póster Ataques comunes. ](../media/solutions-architecture-center/common-attacks-model-thumb.png)](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Actualizado en agosto de 2017 | Este póster ilustra la ruta de acceso de los ataques comunes y en él se describen las funcionalidades que ayudan a detener a los intrusos en cada fase de un ataque. <br/>|
 

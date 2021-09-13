@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 95b37a429f2bca13f65b09871007509734159e94768c063e48e781efb0d5faab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1dfa710b86afdcfd8a5643555564a0f34c7b4702
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189334"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -53,7 +53,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ConfigurationSubcategory` | cadena |Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
 | `ConfigurationBenchmarks` | string | Lista de bancos de pruebas del sector que recomiendan la misma configuración u otra similar |
 | `Tags` | string | Etiquetas que representan varios atributos usados para identificar o clasificar una configuración de seguridad |
-| `RemediationOptions` | cadena | Acciones recomendadas para reducir o solucionar los riesgos asociados |
+| `RemediationOptions` | cadenas | Acciones recomendadas para reducir o solucionar los riesgos asociados |
 
 ## <a name="related-topics"></a>Temas relacionados
 

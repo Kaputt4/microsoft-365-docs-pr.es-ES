@@ -21,11 +21,11 @@ description: En este tema se le guía a través de la configuración recomendada
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 838b9b01790b85c3903206285356cc6c22507821
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187310"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar el inquilino de Microsoft 365 para aumentar la seguridad
 
@@ -71,7 +71,7 @@ Visite estos informes y paneles para obtener más información sobre el estado d
 
 ****
 
-|Panel|Description|
+|Panel|Descripción|
 |---|---|
 |Informes de seguridad de correo electrónico|Estos informes están disponibles en Exchange Online Protection. Para obtener más información, vea [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).|
 |Defender para Office 365 informes|Los informes solo están disponibles en Defender para Office 365. Para obtener más información, vea [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).|

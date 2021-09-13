@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga una lista de requisitos para usar Microsoft 365 Lighthouse.
-ms.openlocfilehash: 2247afb35e3b0e4757d7a6786b3a6a9027491e06
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 610b8cee89576b1112e9b5e3e49d59fa4becd3a3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507811"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187729"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Requisitos para Microsoft 365 Lighthouse
 
@@ -35,7 +35,7 @@ Los MSP deben estar inscritos en el programa Proveedor de soluciones en la nube 
 Además, cada inquilino de cliente MSP debe cumplir los siguientes requisitos: 
  
 - Privilegios de administrador delegados (DAP) para msp 
-- Al menos una Microsoft 365 Empresa Premium licencia 
+- Al menos una Microsoft 365 Empresa Premium o Microsoft 365 E3 licencia 
 - Menos de 500 usuarios con licencia  
 
 ## <a name="requirements-for-enablingdevice-management"></a>Requisitos para habilitar la administración de dispositivos   
@@ -47,7 +47,7 @@ Para ver los dispositivos de inquilino del cliente en las páginas de administra
 
 ## <a name="requirements-for-enabling-usermanagement"></a>Requisitos para habilitar la administración de usuarios 
 
-Para que los datos de los clientes se muestren en informes en páginas de administración de usuarios, incluidos usuarios arriesgados, autenticación multifactor y restablecimiento de contraseña, los inquilinos de clientes deben tener licencias para Azure Active Directory Premium P1 o posterior. Azure AD Premium P1 se incluye con Microsoft 365 Empresa Premium.   
+Para que los datos de los clientes se muestren en informes en páginas de administración de usuarios, incluidos usuarios arriesgados, autenticación multifactor y restablecimiento de contraseña, los inquilinos de clientes deben tener licencias para Azure Active Directory Premium P1 o posterior. Azure AD Premium P1 se incluye con Microsoft 365 Empresa Premium y Microsoft 365 E3.   
 
 ## <a name="requirements-for-enablingthreat-management"></a>Requisitos para habilitar la administración de amenazas 
 

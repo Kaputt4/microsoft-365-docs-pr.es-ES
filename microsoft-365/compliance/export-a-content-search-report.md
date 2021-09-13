@@ -23,11 +23,11 @@ ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: En lugar de exportar los resultados reales de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportaría.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 56a61bb1cd0fa9952f85d75ae50f42754c583ce7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570250"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184086"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 

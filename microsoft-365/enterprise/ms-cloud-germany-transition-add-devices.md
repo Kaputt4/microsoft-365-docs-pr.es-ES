@@ -19,11 +19,11 @@ ms.custom:
 - Ent_TLGs
 description: 'Resumen: información adicional del dispositivo sobre los servicios al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
 ms.openlocfilehash: b38c279bbbb763c8f0859d6d45cd838c8652ec5e
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191257"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información adicional del dispositivo para la migración desde Microsoft Cloud Deutschland
 
@@ -65,7 +65,7 @@ Si el usuario no es un administrador del dispositivo, un administrador de **Azur
 
 *Configuración > cuentas > otras cuentas > credenciales desconocidas > Agregar usuario sin Microsoft-Account*
 
-Para obtener más información, vea [Sobre los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles?).
+Para obtener más información, vea [Asignar roles de administrador](/microsoft-365/admin/add-users/about-admin-roles?).
 
 Para volver a unirse, las credenciales de cualquier cuenta de trabajo de la organización se pueden usar en este paso.
 
@@ -155,7 +155,7 @@ En dispositivos iOS, un usuario tendrá que quitar manualmente las cuentas almac
 
 Los usuarios pueden ir a aplicaciones individuales como Outlook, Teams y OneDrive y quitar cuentas de esas aplicaciones.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Cómo puedo saber si mi organización está afectada?**
 

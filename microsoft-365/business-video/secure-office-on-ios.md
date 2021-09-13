@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtén información sobre cómo proteger Office aplicaciones en iOS con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: bdab7e1ddbd55e64c1c568cc65ff3f700223d9dfd4c93213f51e8c0909fbc6c3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 748a24aeeb7859726f37491511c4e120207ef59e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852772"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59190454"
 ---
 # <a name="secure-office-apps-on-ios"></a>Proteger aplicaciones de Office en iOS
 
@@ -36,7 +37,7 @@ Puede configurar una directiva de acceso de usuario que requiera que los usuario
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. Inicie sesión en el Centro de administración de Microsoft 365.
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 1. En **Directivas,** elija **Agregar directiva**.
 1. En el **panel Agregar directiva,** escriba un nombre en **Nombre** de directiva y elija el tipo de directiva que desee en Tipo **de directiva**.
 1. Activa Administrar **cómo los usuarios acceden Office archivos en** dispositivos móviles y, a continuación, asegúrate de que las tres opciones de configuración siguientes estén activadas:

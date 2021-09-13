@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de los registros para que pueda implementar la solución de administración de registros en Microsoft 365.
 ms.openlocfilehash: 5e77d38ed6e3b122ceb85a6cff901a09dbe782d1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186009"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usar el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive
 

@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: Usa Movilidad y seguridad básicas para crear directivas de dispositivo que protejan la información de la organización.
 ms.openlocfilehash: 9792a936f2f209eabb4da9ce725e611ef3766526
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185081"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Crear directivas de seguridad de dispositivos en Movilidad y seguridad básicas
 

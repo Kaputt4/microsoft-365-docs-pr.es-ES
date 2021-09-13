@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre el programa De asistencia empresarial y cómo puede ayudar a su organización con ayuda y uso mejorados para Microsoft 365 para empresas.
 ms.openlocfilehash: fefefe5dc587674609201be13f19cd6223b80c49
-ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58923923"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187033"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Ayuda empresarial para Microsoft 365
 

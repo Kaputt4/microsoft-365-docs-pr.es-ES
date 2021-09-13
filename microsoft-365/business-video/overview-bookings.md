@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre Microsoft Bookings, una aplicación móvil y en línea para pequeñas empresas que proporciona reserva de citas para sus clientes.
-ms.openlocfilehash: 80c9abb5efa6b21b8491977ae3cbab15832c8eef2c092e8302a1ac5c0f26ad6e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f797a18616f63aea873ea5c1060a54dffbe078ef
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188846"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Información general sobre Microsoft Bookings
 

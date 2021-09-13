@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo registrarse para Microsoft 365 Empresa Premium (anteriormente denominada Microsoft 365 Empresa).
-ms.openlocfilehash: c0ff8a92e240c7b00b505fcd6acacff9c802c81ab7a3ee1be9ed62b9bd2e4a12
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 339c0571d1deec988ad706db3aadcd1ca7cc679a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803535"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188814"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>Registrarse para obtener una Microsoft 365 Empresa Premium suscripción
 
@@ -47,4 +48,4 @@ Siga estos pasos para registrarse en Microsoft 365 Empresa Premium (anteriorment
 8. Escriba el número de usuarios, elija un plan de facturación y, a continuación,  **seleccione Siguiente**.
 9.  Escriba la dirección&#39;empresa y, a continuación,  **Siguiente**.
 10. Escriba la información de la tarjeta de crédito y, a  **continuación, haga el pedido**. Después de unos instantes, se creará la cuenta.
-11. En este punto, puede **seleccionar Continuar para** configurar la cuenta o puede iniciar sesión en el Centro de administración de Microsoft 365 y completar la configuración más adelante.
+11. En este punto, puede **seleccionar Continuar para** configurar la cuenta o puede iniciar sesión en el Centro de administración de Microsoft 365 y completar la configuración más adelante. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>

@@ -17,11 +17,11 @@ search.appverid:
 description: Obtenga información sobre cómo importar datos no Microsoft 365 a un conjunto de revisión para su análisis en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 65244b74cd868c4ec308327d15a070e67b9ac551
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59188073"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Cargar datos que no son de Microsoft 365 en un conjunto de revisión
 

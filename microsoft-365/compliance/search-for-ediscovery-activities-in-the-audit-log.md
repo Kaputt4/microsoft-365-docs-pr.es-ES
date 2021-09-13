@@ -18,11 +18,11 @@ ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre qué eventos se registran cuando los usuarios asignados a permisos de exhibición de documentos electrónicos realizan búsquedas de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery tareas en el Centro de cumplimiento de Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 637785a86e7fa28c0c058e9f729fcf2c1604a6f3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256421"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183969"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría
 
@@ -67,7 +67,7 @@ Actualmente, debe hacer algunas cosas específicas para ver las actividades de e
 
     Se **muestra** una página desplegable Detalles que contiene las propiedades detalladas del registro de eventos. Para mostrar detalles adicionales, haga clic **en Más información**. Para obtener una descripción de estas propiedades, vea la [sección Propiedades detalladas para actividades de exhibición de documentos electrónicos.](#detailed-properties-for-ediscovery-activities)
 
-9. Si lo desea, puede exportar los resultados de la búsqueda del registro de auditoría a un archivo CSV y, a continuación, usar la característica Excel Power Query para dar formato y filtrar estos registros. Para más información, consulte[Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
+9. Si lo desea, puede exportar los resultados de la búsqueda del registro de auditoría a un archivo CSV y, a continuación, usar la característica Excel Power Query para dar formato y filtrar estos registros. Para más información, consulte[Exportar, configurar y ver registros de auditoría](export-view-audit-log-records.md).
 
 ## <a name="ediscovery-activities"></a>Actividades de eDiscovery
 
@@ -227,5 +227,5 @@ En la tabla siguiente se describen las propiedades que se incluyen en la página
 |UserKey  <br/> |Un id. alternativo para el usuario identificado en la propiedad id. de usuario. Para las actividades de exhibición de documentos electrónicos, el valor de esta propiedad suele ser el mismo que la propiedad UserId.  <br/> |
 |UserServicePlan  <br/> |La suscripción que usa la organización. Para las actividades de exhibición de documentos electrónicos, esta propiedad suele estar en blanco.  <br/> |
 |UserType  <br/> |El tipo de usuario que llevó a cabo la operación. Los siguientes valores indican el tipo de usuario.  <br/> 0 Un usuario normal. 2 Un administrador de la organización. 3 Una cuenta de sistema de centro de datos o administrador de centros de datos de Microsoft. 4 Una cuenta del sistema. 5 Una aplicación. 6 Una entidad de servicio. |
-|Version  <br/> |Indica el número de versión de la actividad (identificada por la propiedad Operation) que se registra.  <br/> |
+|Versión  <br/> |Indica el número de versión de la actividad (identificada por la propiedad Operation) que se registra.  <br/> |
 |Carga de trabajo  <br/> |El servicio donde se produjo la actividad. Para las actividades de exhibición de documentos electrónicos, el valor **es SecurityComplianceCenter**.  <br/> |

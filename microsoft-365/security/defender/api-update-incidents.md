@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4a083f4d891ef51b3156c2ad407a55de597cd6a754fa77d9d96fe5d6e3cffe4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c30d9918e4e61973dc03e6a2e621ffda5e7e01e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863240"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59185689"
 ---
 # <a name="update-incidents-api"></a>ACTUALIZAR LA API de incidentes
 
@@ -78,10 +78,10 @@ Content-Type|Cadena|application/json. **Necesario**.
 
 En el cuerpo de la solicitud, proporcione los valores de los campos que deben actualizarse. Las propiedades existentes que no se incluyen en el cuerpo de la solicitud mantendrán sus valores, a menos que tengan que volver a calcularse debido a los cambios en los valores relacionados. Para obtener el mejor rendimiento, debe omitir los valores existentes que no han cambiado.
 
-Propiedad|Tipo|Description
+Propiedad|Tipo|Descripción
 ---|---|---
 status|Enum|Especifica el estado actual del incidente. Los valores posibles son: `Active` `Resolved` , y `Redirected` .
-assignedTo|cadena|Propietario del incidente.
+assignedTo|cadenas|Propietario del incidente.
 classification|Enum|Especificación del incidente. Los valores posibles son: `Unknown`, `FalsePositive` y `TruePositive`.
 determinación|Enum|Especifica la determinación del incidente. Valores posibles: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
 tags|lista de cadenas|Lista de etiquetas de incidentes.

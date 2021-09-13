@@ -11,11 +11,11 @@ search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo configurar Temas Microsoft Viva
 ms.openlocfilehash: fc5647b65a62afdff55c22b8a8b5526a7ddfa14a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189574"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurar Temas Microsoft Viva
 
@@ -28,7 +28,7 @@ Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/top
 > [!IMPORTANT]
 > Si has configurado SharePoint para [requerir dispositivos administrados,](/sharepoint/control-access-from-unmanaged-devices)debes configurar Temas desde un dispositivo administrado.
 
-## <a name="video-demonstration"></a>Vídeo de demostración
+## <a name="video-demonstration"></a>Demostración de vídeo
 
 En este vídeo se muestra el proceso de configuración de temas en Microsoft 365.
 
@@ -108,7 +108,7 @@ Para configurar temas
     
     Seleccione **Siguiente**.
 
-6. En la **Quién puede ver los temas y dónde pueden verlos,** configurará la visibilidad de los temas. En **la Quién** puede ver la configuración de temas, elija quién tendrá acceso a los detalles del tema, como temas resaltados, tarjetas de temas, respuestas de temas en la búsqueda y páginas de temas. Puede seleccionar:
+6. En la **Quién puede ver los temas y dónde pueden verlos,** configurará la visibilidad de los temas. En **la Quién** puede ver la configuración de temas, elija quién tendrá acceso a los detalles del tema, como temas resaltados, tarjetas de temas, respuestas de temas en la búsqueda y páginas de temas. También puede seleccionar:
     - **Todos los miembros de mi organización**
     - **Solo personas o grupos de seguridad seleccionados**
     - **Nadie**

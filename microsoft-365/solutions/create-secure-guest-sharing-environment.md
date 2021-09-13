@@ -19,11 +19,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
 ms.openlocfilehash: 1986140e2aa809e81415a8e581ce626c5100809d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187265"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 

@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 028723dfb41f8e4cca71ea67aea5a88a46c9bb50
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572964"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189234"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtener notificaciones de incidentes por correo electrónico
 
@@ -59,11 +59,11 @@ Siga estos pasos para crear una nueva regla y personalizar la configuración de 
 2. Seleccione **Agregar elemento**.
 3. En la **página Conceptos básicos,** escriba el nombre de la regla y una descripción y, a continuación, **seleccione Siguiente**.
 4. En la **página Configuración de** notificaciones, configure:
-    - **Gravedad de alerta:** elija las gravedades de alerta que desencadenarán una notificación de incidente. Por ejemplo, si solo desea que se le informe sobre incidentes de alta gravedad, seleccione **Alto**.
-    - **Ámbito de grupo de dispositivos:** puede especificar todos los grupos de dispositivos o seleccionar en la lista de grupos de dispositivos del espacio empresarial.
-    - **Notificar solo en la primera aparición por** incidente: seleccione si desea una notificación solo en la primera alerta que coincida con las demás selecciones. Las actualizaciones posteriores o las alertas relacionadas con el incidente no enviarán notificaciones adicionales.
-    - **Incluir el nombre de la organización en el correo** electrónico: seleccione si desea que el nombre de la organización aparezca en la notificación de correo electrónico.
-    - **Incluir vínculo de portal específico** del inquilino: seleccione si desea agregar un vínculo con el identificador de inquilino en la notificación de correo electrónico para obtener acceso a un inquilino Microsoft 365 inquilino específico.
+    - **Gravedad de alerta**: elija los niveles de gravedad de alerta que desencadenarán una notificación de incidente. Por ejemplo, si solo desea que se le informe sobre incidentes de alta gravedad, seleccione **Alto**.
+    - **Ámbito del grupo de dispositivos**: puede especificar todos los grupos de dispositivos o seleccionarlos en la lista de grupos de dispositivos del inquilino.
+    - **Notificar solo la primera aparición por incidente**: seleccione si desea una notificación solo en la primera alerta que coincida con las demás selecciones. Las actualizaciones o alertas posteriores relacionadas con el incidente no enviarán notificaciones adicionales.
+    - **Incluir el nombre de la organización en el correo electrónico**: seleccione si desea que el nombre de la organización aparezca en la notificación por correo electrónico.
+    - **Incluir vínculo del portal específico del inquilino**: seleccione si desea agregar un vínculo con el identificador de inquilino en la notificación de correo electrónico para acceder a un inquilino de Microsoft 365 específico.
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Configuración de notificaciones para notificaciones de correo electrónico de incidentes.":::
 
@@ -74,7 +74,7 @@ Para editar una regla existente, selecciónelo en la lista de reglas. En el pane
 
 Para eliminar una regla, selecciónelo en la lista de reglas. En el panel con el nombre de regla, seleccione **Eliminar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)
 - [Investigar incidentes](investigate-incidents.md)

@@ -31,11 +31,11 @@ search.appverid:
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: Los perfiles de AutoPilot te ayudan a controlar Windows se instala en dispositivos de usuario. Los perfiles contienen configuraciones predeterminadas y opcionales, como omitir Cortana instalación.
 ms.openlocfilehash: 9d425e73a5cedf51ce8267afa9505cbde8b97038
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360829"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184910"
 ---
 # <a name="about-autopilot-profile-settings"></a>Información sobre la configuración de los perfiles de AutoPilot
 

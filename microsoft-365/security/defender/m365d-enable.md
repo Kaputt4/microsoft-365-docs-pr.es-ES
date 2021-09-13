@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 9585547ea926dbee09aacada05f24e9217c07923
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189217"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activar Microsoft 365 Defender
 
@@ -43,7 +43,7 @@ Microsoft 365 Defender activa automáticamente cuando los clientes elegibles con
 
 Una licencia de un Microsoft 365 de seguridad por lo general le da derecho a usar Microsoft 365 Defender sin costo de licencia adicional. Se recomienda obtener una Microsoft 365 E5, una licencia de seguridad de E5, A5 o A5 o una combinación válida de licencias que proporciona acceso a todos los servicios compatibles.
 
-Para obtener información detallada sobre las licencias, [lea los requisitos de licencia](prerequisites.md#licensing-requirements).
+Para obtener información detallada sobre las licencias, [lee los requisitos de licencia](prerequisites.md#licensing-requirements).
 
 ### <a name="check-your-role"></a>Comprobar el rol
 
@@ -51,7 +51,7 @@ Debe ser un administrador **global o** **un** administrador de seguridad en Azur
 
 ## <a name="supported-services"></a>Servicios compatibles
 
-Microsoft 365 Defender agrega datos de los distintos servicios compatibles que ya ha implementado. Procesará y almacenará datos de forma centralizada para identificar nuevos conocimientos y hacer posibles los flujos de trabajo de respuesta centralizados. Lo hace sin afectar a las implementaciones, la configuración o los datos existentes asociados con los servicios integrados.
+Microsoft 365 Defender agrega datos de los distintos servicios compatibles que ya ha implementado. Procesará y almacenará los datos de forma centralizada para identificar nuevas conclusiones y hacer posibles flujos de trabajo de respuesta centralizados. Lo hace sin afectar a las implementaciones, la configuración o los datos existentes asociados a los servicios integrados.
 
 Para obtener la mejor protección y optimizar Microsoft 365 Defender, se recomienda implementar todos los servicios compatibles aplicables en la red. Para obtener más información, [lea acerca de la implementación de servicios compatibles.](deploy-supported-services.md)
 

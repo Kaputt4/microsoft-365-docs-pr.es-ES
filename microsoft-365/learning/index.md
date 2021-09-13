@@ -15,11 +15,11 @@ ms.collection:
 localization_priority: None
 description: Obtenga información sobre cómo buscar recursos para Aprendizaje Microsoft Viva (versión preliminar).
 ms.openlocfilehash: f868c90e0dcb280bf3bd7ca592a950d9735143de
-ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "58942595"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59191177"
 ---
 # <a name="introduction-to-microsoft-viva-learning-preview"></a>Introducción a Aprendizaje Microsoft Viva (versión preliminar)
 

@@ -18,11 +18,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo regular las características relacionadas en Microsoft 365 grupos, Teams, SharePoint y Yammer.
 ms.openlocfilehash: fefda518d9864984d7fb8ee6f82e57ad14ff7b6e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563323"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187273"
 ---
 # <a name="what-is-collaboration-governance"></a>¿Qué es la gobernanza de la colaboración?
 
@@ -56,7 +56,7 @@ Microsoft 365 incluyen un conjunto de recursos vinculados que los usuarios puede
 
 |Recurso|Descripción|
 |:------|:----------|
-|[Calendario](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|Para programar eventos relacionados con el grupo|
+|[Calendar](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|Para programar eventos relacionados con el grupo|
 |[Bandeja de entrada](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|Para conversaciones de correo electrónico entre miembros del grupo. Esta bandeja de entrada tiene una dirección de correo electrónico y se puede configurar para aceptar mensajes de personas fuera del grupo e incluso fuera de la organización, como una lista de distribución tradicional.|
 |[Bloc de notas de OneNote](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Para recopilar ideas, investigación e información|
 |[Planificador](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|Para asignar y administrar tareas de proyecto entre los miembros del grupo|
@@ -224,7 +224,7 @@ Este conjunto de ilustraciones usa uno de los sectores más regulados, los servi
 
 | Elemento | Description |
 |:-----|:-----|
-|[![Póster del modelo: Microsoft 365 de protección de la información y cumplimiento.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Inglés: [Descargar como PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonés: [Descargar como PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Actualizado en noviembre de 2020|Incluye: <ul><li>  Protección de la información y prevención de la pérdida de datos de Microsoft</li><li>Directivas y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de comunicaciones</li><li>Riesgo de Insider</li><li>Ingesta de datos de terceros</li>|
+|[![Póster modelo: capacidades de protección y cumplimiento de la información de Microsoft 365.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Inglés: [Descargar como PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonés: [Descargar como PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Actualizado en noviembre de 2020|Incluye: <ul><li>  Protección de la información y prevención de la pérdida de datos de Microsoft</li><li>Directivas y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de comunicaciones</li><li>Riesgo de Insider</li><li>Ingesta de datos de terceros</li>|
 
 ## <a name="conference-sessions"></a>Sesiones de conferencia
 
@@ -248,7 +248,7 @@ Vea un ejemplo en segundo plano de cómo los grupos de Microsoft 365, SharePoint
 
 - [Encontrar el lugar ideal de colaboración con Office 365 grupos, SharePoint, Teams y Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Documentación de Seguridad de Microsoft 365](../security/index.yml)
 

@@ -26,11 +26,11 @@ ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: La autenticación multifactor (MFA) usa una contraseña, que debe ser segura, y un método de comprobación adicional.
 ms.openlocfilehash: d0f88043ecaa4d2dd990f74661e904351db97524
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566101"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186838"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Autenticación multifactor para Microsoft 365
 

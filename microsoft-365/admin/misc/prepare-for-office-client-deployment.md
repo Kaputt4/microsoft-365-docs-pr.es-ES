@@ -24,11 +24,11 @@ ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Obtén información sobre cómo instalar automáticamente las aplicaciones Office de 32 bits en Windows 10 equipos y mantenerlas actualizadas.
 ms.openlocfilehash: ea131e37fa7f82a0ab03aa52b71569e3c96a2c7f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566113"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186977"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Prepararse para la Office cliente mediante Microsoft 365 para empresas
 
