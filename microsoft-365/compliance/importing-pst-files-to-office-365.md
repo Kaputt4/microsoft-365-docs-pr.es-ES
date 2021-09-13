@@ -19,20 +19,21 @@ search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Obtenga información acerca de cómo usar el servicio de importación en el Centro de cumplimiento de Microsoft 365 para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
-ms.openlocfilehash: d885fbcf6f4b94ec7b1716c53f6d1fa541994434
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: efb51aebcca5d724b8a1f8ecaabb6eeb5f31e8dd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59184065"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Información general sobre la importación de archivos PST de su organización
 
 > [!NOTE]
 > Este artículo está dirigido a administradores. ¿Está intentando importar archivos PST a su propio buzón? Consulte [Importar el correo electrónico, los contactos y el calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
 
-Puede usar el servicio de importación en el Centro de cumplimiento de Microsoft 365 para importar archivos PST de forma masiva rápidamente a buzones de Exchange Online de su organización. Hay dos maneras de importar archivos PST a Office 365:
+Puede usar el servicio de importación en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> para importar archivos PST de forma masiva rápidamente a buzones de Exchange Online de su organización. Hay dos maneras de importar archivos PST a Office 365:
 
 - **Carga de red** ![ Carga en la nube.](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) : cargue los archivos PST a través de la red en una ubicación temporal de Azure Storage en la nube de Microsoft. Después, use el servicio de importación de Office 365 para importar los datos PST a los buzones de su organización.
 
@@ -152,7 +153,7 @@ La carga en la red está disponible actualmente en estas regiones: Estados Unido
 
 Using network upload to import PST files is free.
 
-Esto también significa que después de que los archivos PST se eliminen del área de Azure Storage, ya no se mostrarán en la lista de archivos para un trabajo de importación completado en el Centro de administración de Microsoft 365. Aunque todavía puede aparecer un trabajo de importación en la página **Importar datos a Office 365**, la lista de archivos PST puede estar vacía cuando vea los detalles de los trabajos de importación más antiguos.
+Esto también significa que después de que los archivos PST se eliminen del área de Azure Storage, ya no se mostrarán en la lista de archivos para un trabajo de importación completado en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Aunque todavía puede aparecer un trabajo de importación en la página **Importar datos a Office 365**, la lista de archivos PST puede estar vacía cuando vea los detalles de los trabajos de importación más antiguos.
 
 #### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-office-365"></a>What version of the PST file format is supported for importing to Office 365?
 
