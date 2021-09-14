@@ -10,26 +10,27 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkMAC
 search.appverid: MET150
 localization_priority: Priority
 description: Configurar SharePoint Syntex
-ms.openlocfilehash: 3b03b36e58b9f5cbb97a967be941fc43285892fd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2f77176e2bfd90b4f912379b3b2dcf15b62c7cf4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187990"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
-Los administradores pueden usar el Centro de administración de Microsoft 365 para configurar [Microsoft SharePoint Syntex](index.md). 
+Los administradores pueden usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para configurar [Microsoft SharePoint Syntex](index.md). 
 
 Considere lo siguiente antes de empezar:
 
 - ¿En qué sitios de SharePoint se va a habilitar el procesamiento de formularios? ¿Todos ellos, algunos, o seleccionar sitios?
 - ¿Qué nombre le pondrá a su centro de contenido de forma predeterminada?
 
-Puede cambiar su configuración después de la configuración inicial en el Centro de administración de Microsoft 365.
+Puede cambiar su configuración después de la configuración inicial en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
 Antes de la configuración, asegúrese de planear la mejor forma de configurar la comprensión del contenido en su entorno. Por ejemplo, necesita tomar las siguientes decisiones:
 
@@ -41,7 +42,7 @@ Antes de la configuración, asegúrese de planear la mejor forma de configurar l
 > [!NOTE]
 > Debe tener permisos de administrador global o de administrador de SharePoint para poder acceder al centro de administración de Microsoft 365 y configurar SharePoint Syntex.
 
-Como administrador, también puede realizar cambios en la configuración seleccionada en cualquier momento después de la configuración, y a lo largo de la comprensión del contenido de la configuración de administración en el Centro de administración de Microsoft 365.
+Como administrador, también puede realizar cambios en la configuración seleccionada en cualquier momento después de la configuración, y a lo largo de la introducción al contenido de la configuración de administración en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
 Si tiene previsto usar un entorno de Power Platform personalizado, deberá [instalar la aplicación *Generador de IA para Proyecto Cortex* en este entorno](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) y [asignar los créditos de Generador de AI](/power-platform/admin/capacity-add-on) a esta antes de poder crear modelos de procesamiento de formularios.
 
@@ -55,9 +56,11 @@ Para usar SharePoint Syntex, su organización debe tener una suscripción a Shar
 
 Para usar el procesamiento de formularios, también necesita créditos de AI Builder. Si tiene 300 o más usuarios con licencia, se proporciona una asignación de créditos de AI Builder cada mes.
 
+Para obtener más información sobre las licencias de SharePoint Syntex, vea[ beginning="1" end="2">SharePoint Syntex licensing](syntex-licensing.md)
+
 ## <a name="to-set-up-sharepoint-syntex"></a>Para configurar SharePoint Syntex
 
-1. En el Centro de administración de Microsoft 365, seleccione **Configuración** y luego vea la sección **Archivos y contenido**.
+1. En el Centro de administración de Microsoft 365, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Configuración**</a> y luego consulte la sección **Archivos y contenido**.
 
 2. En la sección **Archivos y contenido**, seleccione **Automatizar la comprensión del contenido**. Tenga en cuenta que la disponibilidad de crédito actual del Generador de IA se muestra en la sección **De un vistazo**.<br/>
 
@@ -112,7 +115,7 @@ Una vez que haya configurado SharePoint Syntex, debe asignar licencias para los 
 
 Para asignar licencias:
 
-1. En el Centro de administración de Microsoft 365, en **Usuarios**, haga clic en **Usuarios activos**.
+1. En el Centro de administración de Microsoft 365, en **Usuarios**, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Usuarios activos**</a>.
 
 2. Seleccione los usuarios a los que quiere conceder licencias y haga clic en **Administrar licencias de productos**.
 
