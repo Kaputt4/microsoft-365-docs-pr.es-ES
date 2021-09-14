@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: trabajar desde casa, trabajo desde casa, híbrido, trabajador remoto, trabajo híbrido, empleados remotos, conectividad híbrida, acceso remoto, trabajo remoto, teletrabajo, teletrabajar, trabajo móvil, trabajo remoto, empleo remoto, trabajar desde cualquier lugar, lugar de trabajo flexible
 description: Desplazarse por las capas de la infraestructura para que los trabajadores híbridos puedan acceder de forma segura a los recursos locales y de Microsoft 365..
-ms.openlocfilehash: 4ca2d190643b7d2bf557fcf87b4319ba4e3adc99
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2bc5a4f1f6c6784413b716ce752855393bfed90f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566471"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59187238"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configure su infraestructura para el trabajo híbrido con Microsoft 365
 
@@ -86,7 +86,7 @@ Para habilitar las funcionalidades de Microsoft 365 para sus trabajadores híbri
 |---|---|---|
 |MFA aplicada en los valores predeterminados de seguridad|Protege frente a ataques a identidades y dispositivos, pues obliga a usar una segunda forma de autenticación para iniciar sesión. Los valores predeterminados de seguridad requieren MFA para todas las cuentas de usuario.|Microsoft 365 E3 o E5|
 |MFA aplicada con acceso condicional|Requerir la MFA según las propiedades del inicio de sesión con directivas de Acceso condicional.|Microsoft 365 E3 o E5|
-|MFA aplicada con Acceso condicional basado en los riesgos|Requerir la MFA según el riesgo de inicio de sesión del usuario con Microsoft Defender for Identity.|Microsoft 365 E5 o E3 con las licencias de Azure AD Premium P2|
+|MFA aplicada con Acceso condicional basado en los riesgos|Requerir la MFA según el riesgo de inicio de sesión del usuario con Azure AD Identity Protection.|Microsoft 365 E5 o E3 con las licencias de Azure AD Premium P2|
 |Autoservicio de restablecimiento de contraseña (SSPR)|Permitir que los usuarios restablezcan o desbloqueen su contraseña o cuenta ellos mismos.|Microsoft 365 E3 o E5|
 |Proxy de aplicación de Azure AD|Da acceso remoto seguro para aplicaciones basadas en web que se encuentren en servidores de intranet.|Se requiere una suscripción de pago de Azure aparte.|
 |VPN de Azure de punto a sitio|Crea una conexión segura desde el dispositivo de un trabajador remoto a la intranet a través de una red virtual de Azure.|Se requiere una suscripción de pago de Azure aparte.|

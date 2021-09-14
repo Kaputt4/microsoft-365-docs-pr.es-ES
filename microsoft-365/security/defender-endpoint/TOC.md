@@ -353,9 +353,11 @@
 ##### [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
 
 #### [Control de dispositivo]()
+
 ##### [Control de dispositivos USB y otros medios extraíbles](control-usb-devices-using-intune.md)
 ##### [Protección de almacenamiento extraíble](device-control-removable-storage-protection.md)
 ##### [Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)
+##### [Instalación de dispositivo](mde-device-control-device-installation.md)
 ##### [Protección de la impresora de control de dispositivo](printer-protection.md)
 ##### [Informes de control de dispositivos](device-control-report.md)
 

@@ -130,19 +130,19 @@
               href: ../defender-identity/notifications.md
     - name: Investigar y responder a amenazas
       items:
-        - name: Incidentes
+        - name: Responder a los incidentes
           items:
             - name: Información general
               href: incidents-overview.md
-            - name: Priorizar
+            - name: Priorizar incidentes
               href: incident-queue.md
-            - name: Administrar
+            - name: Administrar incidentes
               href: manage-incidents.md
-            - name: Investigación
+            - name: Investigar incidentes
               href: investigate-incidents.md
-            - name: Alertas de incidentes
+            - name: Investigar alertas
               href: investigate-alerts.md
-            - name: Usuarios con incidentes
+            - name: Investigar usuarios
               href: investigate-users.md
             - name: Responder al primer incidente
               items:
@@ -164,15 +164,9 @@
                       href: first-incident-path-identity.md
             - name: Cuadernos de estrategias de respuesta a incidentes
               href: /security/compass/incident-response-playbooks
-            - name: Notificaciones de correo electrónico
+            - name: Recibir notificaciones de incidentes por correo electrónico
               href: get-incident-notifications.md
-        - name: Análisis de amenazas
-          items:
-            - name: Seguir las amenazas emergentes y responder a ellas
-              href: threat-analytics.md
-            - name: 'Comprender el informe de análisis '
-              href: threat-analytics-analyst-reports.md
-        - name: Investigación y respuesta automatizadas
+        - name: Administrar la investigación y respuesta automatizada
           items:
             - name: Información general
               href: m365d-autoir.md
@@ -188,9 +182,9 @@
               href: m365d-autoir-results.md
             - name: Abordar falsos positivos y falsos negativos
               href: m365d-autoir-report-false-positives-negatives.md
-        - name: Búsqueda avanzada
+        - name: Buscar amenazas con la búsqueda avanzada
           items:
-            - name: Información general sobre la búsqueda avanzada
+            - name: Información general
               href: advanced-hunting-overview.md
             - name: 'Aprender, entrenar y obtener ejemplos'
               items:
@@ -212,7 +206,7 @@
               href: advanced-hunting-query-results.md
             - name: Realizar una acción en los resultados de consulta
               href: advanced-hunting-take-action.md
-            - name: Ir a la caza
+            - name: Investigue de manera rápida con go hunt
               href: advanced-hunting-go-hunt.md
             - name: Optimizar y controlar errores
               items:
@@ -300,15 +294,21 @@
                   href: custom-detections-overview.md
                 - name: Crear y administrar reglas de detección
                   href: custom-detection-rules.md
-        - name: Expertos en amenazas de Microsoft
+        - name: Seguir las amenazas emergentes y responder a ellas
           items:
-            - name: Información general sobre Expertos en amenazas de Microsoft
+            - name: Información general sobre el análisis de amenazas
+              href: threat-analytics.md
+            - name: 'Comprender el informe de análisis '
+              href: threat-analytics-analyst-reports.md
+        - name: Colaborar con los Expertos en amenazas de Microsoft
+          items:
+            - name: Información general
               href: ../mtp/microsoft-threat-experts.md
             - name: Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
               href: ../mtp/configure-microsoft-threat-experts.md
-        - name: Integración de Microsoft 365 Defender en las operaciones de seguridad
+        - name: Integración de SecOps para Microsoft 365 Defender
           items:
-            - name: Introducción
+            - name: Información general
               href: integrate-microsoft-365-defender-secops.md
             - name: Paso 1. Preparación de operaciones
               href: integrate-microsoft-365-defender-secops-plan.md
@@ -322,7 +322,7 @@
               href: integrate-microsoft-365-defender-secops-use-cases.md
             - name: Paso 6. Tareas de mantenimiento de SOC
               href: integrate-microsoft-365-defender-secops-tasks.md
-        - name: Usar Power Automate
+        - name: Usar Power Automate para clasificar las amenazas
           href: use-power-automate.md
     - name: Guías de procedimientos
       items:
