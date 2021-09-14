@@ -16,13 +16,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+ms.custom: admindeeplinkMAC
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 34f4bb10ba79e6521d785df157368cdaae89118a
-ms.sourcegitcommit: bdf506c47bfed0f7e639301a7edd94c4eb150150
+ms.openlocfilehash: 6a58092bb81f45f40f2b0bcdd76312fc1d420e4d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58869196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59213950"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -67,7 +68,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 
 ### <a name="retention-policy-for-teams-locations"></a>Directiva de retención para ubicaciones de Teams
 
-1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Directivas de** > **retención**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">centro de cumplimiento de Microsoft 365</a>, seleccione **Directivas de** > **retención**.
 
 2. Seleccione **Nueva directiva de retención** para iniciar la Configuración de directivas de retención y asignar un nombre a su nueva directiva de retención.
 
@@ -122,7 +123,7 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 >
 > Para usar esta característica, la red de Yammer debe estar en [Modo nativo](/yammer/configure-your-yammer-network/overview-native-mode), en lugar de en Modo híbrido.
 
-1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Directivas de** > **retención**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">centro de cumplimiento de Microsoft 365</a>, seleccione **Directivas de** > **retención**.
 
 2. Seleccione **Nueva directiva de retención** para crear una nueva directiva de retención.
 
@@ -169,7 +170,7 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
 - Grupos de Microsoft 365
 - Skype Empresarial
 
-1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Directivas de** > **retención**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">centro de cumplimiento de Microsoft 365</a>, seleccione **Directivas de** > **retención**.
 
 2. Seleccione **Nueva directiva de retención** para iniciar la Configuración de directivas de retención y asignar un nombre a su nueva directiva de retención.
 
@@ -211,9 +212,16 @@ Cuando especifica sus ubicaciones para los sitios de SharePoint o las cuentas de
 
 Para especificar las cuentas individuales de OneDrive a incluir o excluir, la dirección URL del OneDrive de cada usuario suele tener el siguiente formato. Para el nombre principal de usuario (UPN), los caracteres especiales como un punto, una coma, un espacio y el signo de arroba ("@") se convierten en caracteres de subrayado ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
 
-Por ejemplo, para un usuario de la cuenta empresarial de Contoso que tiene un UPN de "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. Sin embargo, los números o GUID se pueden anexar cuando se detectan conflictos.
+Por ejemplo, para un usuario del espacio empresarial de Contoso que tiene un UPN de "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`.
 
-Siempre es mejor confirmar la dirección URL de un usuario para su cuenta de OneDrive. Esto lo puede hacer con el Centro de administración de Microsoft 365 o con PowerShell. Para obtener más información, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
+O bien, si usa un nombre de dominio personalizado para que el UPN sea "rsimone@contoso.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
+
+Sin embargo, los números o GUID se pueden anexar a la dirección URL cuando se detectan conflictos, por lo que siempre es mejor confirmar la dirección URL de un usuario para su cuenta OneDrive usuario. Para confirmar la dirección URL, puede usar el Centro de administración de Microsoft 365 o PowerShell. Para obtener más información, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
+
+> [!NOTE]
+> Cuando especifique cuentas de OneDrive individuales para incluir o excluir, tenga en cuenta que, a menos que las cuentas de OneDrive estén [aprovisionadas previamente](/onedrive/pre-provision-accounts), la dirección URL no se creará hasta que un usuario tenga acceso a sus cuentas de OneDrive por primera vez.
+> 
+> Además, la URL de OneDrive cambiará [automáticamente](/onedrive/upn-changes) si hay un cambio en el UPN del usuario. Por ejemplo, un evento por el que se cambian los apellidos, como el matrimonio. O un cambio de nombre de dominio para admitir el cambio de nombre o la reestructuración empresarial de una organización. Si el UPN cambia, deberá actualizar las direcciones URL de OneDrive que especifique aquí.
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Información de configuración para los Grupos de Microsoft 365
 

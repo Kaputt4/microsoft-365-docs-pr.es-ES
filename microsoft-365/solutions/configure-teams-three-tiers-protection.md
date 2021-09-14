@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Obtenga información acerca de cómo configurar Teams para mejorar la seguridad del uso compartido de sus archivos al usar tres niveles de protección y equilibrar la seguridad con la simplicidad en la colaboración.
-ms.openlocfilehash: f0c7bbe1043116eb678df77ffe95bdc8654839f7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5cd06f540ba96f55aa52a1cc9b5e6e7c54c7bbab
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575461"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59217880"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
@@ -98,9 +98,7 @@ De forma predeterminada, los propietarios y miembros del equipo pueden compartir
 
 Si necesita colaborar con personas de fuera de su organización, le recomendamos que configure la [integración de SharePoint y OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) para obtener la mejor experiencia de uso compartido y administración.
 
-El uso compartido de invitado de Teams está desactivado de forma predeterminada, aunque el uso compartido para grupos de Office 365 (donde se almacenan los miembros del equipo) y SharePoint está activado. Activamos el uso compartido de Teams en el nivel de línea base, y puede desactivarlo si es necesario en los niveles confidenciales y altamente confidenciales mediante el uso de una etiqueta de confidencialidad.
-
-La etiqueta de confidencialidad solo afecta al uso compartido de invitado para el equipo. La configuración de uso compartido de invitado para el sitio de SharePoint asociado se controla por separado, y hemos alineado las dos configuraciones tanto para los niveles confidenciales como altamente confidenciales.
+El uso compartido de invitados de Teams está activado de forma predeterminada, pero puede desactivarlo si es necesario en los niveles confidencial y altamente confidencial con una etiqueta de confidencialidad.
 
 En la capa altamente confidencial, configuramos la etiqueta de confidencialidad para cifrar los archivos a los que se aplica. Si necesita que los invitados tengan acceso a estos archivos, deberá concederles permisos cuando cree la etiqueta.
 
