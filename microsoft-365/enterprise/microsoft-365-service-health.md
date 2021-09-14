@@ -13,15 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Estado de mantenimiento del servicio de Microsoft 365
-ms.openlocfilehash: a8e91f3f7a5c5454413a57e8e57749ccb918d9af630b1065522fee677c4c867c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 82b5a666d4cc707981ea6da72a53bbd8d67c505d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813143"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167222"
 ---
 # <a name="microsoft-365-network-health-status"></a>Estado de mantenimiento de la red de Microsoft 365
 
@@ -31,7 +32,7 @@ Esta información incluye problemas de red que afectan a todo nuestro software c
 
 _Es posible que se produzcan retrasos en las actualizaciones de esta página. La estamos actualizando de forma manual mientras creamos una solución más automatizada._
 
-Cuando detectemos problemas importantes en la red global de Microsoft o con la conectividad a Internet entre nuestros clientes y la red de Microsoft, publicaremos dicha información aquí. Se recomienda a los clientes seguir usando el panel de estado del servicio del Centro de administración de Microsoft 365 para comprender el impacto de cualquier problema importante de red en su espacio empresarial, ya que ahí proporcionamos información más detallada y específica.
+Cuando detectemos problemas importantes en la red global de Microsoft o con la conectividad a Internet entre nuestros clientes y la red de Microsoft, publicaremos dicha información aquí. Recomendamos a los clientes que sigan utilizando el <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Panel de estado de servicio</a> del Centro de administración de Microsoft 365 para comprender el impacto de cualquier problema de red importante en su inquilino, ya que ahí proporcionamos información mucho más detallada y específica.
 
 ## <a name="current-network-issues"></a>Problemas de red actuales
 

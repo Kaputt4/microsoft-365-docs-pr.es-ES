@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Más información sobre las opciones de configuración de uso compartido de invitados disponibles en Microsoft 365 que pueden afectar al uso compartido con personas de fuera de su organización.
-ms.openlocfilehash: 056152e44dbe2fc11265e64c548b1056fd72e517
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: db7622da1094dd1abf69752c6a0c41c374e80e9f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573828"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165478"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -61,7 +61,7 @@ El Centro de administración de Microsoft 365 tiene configuración a nivel de or
 
 ### <a name="sharing"></a>Compartir
 
-**Navegación:** [Centro de administración de Microsoft 365](https://admin.microsoft.com) > Configuración > Configuración de la organización > pestaña Seguridad y privacidad > Uso compartido
+**Navegación:** [Centro de administración de Microsoft 365](https://admin.microsoft.com) > **Configuración** > **Configuración de la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**pestaña** seguridad y privacidad</a> > **Compartir**.
 
 ![Captura de pantalla de la configuración de uso compartido de invitados de seguridad y privacidad en el Centro de administración de Microsoft 365.](../media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -71,7 +71,7 @@ El Centro de administración de Microsoft 365 tiene configuración a nivel de or
 
 ### <a name="microsoft-365-groups"></a>Grupos de Microsoft 365
 
-**Navegación:**[Centro de administración de Microsoft 365](https://admin.microsoft.com) > Configuración > Configuración > Grupos de Microsoft 365
+**Navegación:** [Centro de administración de Microsoft 365](https://admin.microsoft.com) > **Configuración** > **Configuración de la organización** > Grupos de Microsoft 365
 
 ![Captura de pantalla de la configuración de invitados de Grupos de Microsoft 365 en el Centro de administración de Microsoft 365.](../media/office-365-groups-guest-settings.png)
 

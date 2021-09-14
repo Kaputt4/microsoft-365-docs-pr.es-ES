@@ -12,16 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: b949b712721acc7921d3c6ac25a07c14338d7609
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a905847da3a6c28d8d24d13adb193423b57d83d1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567945"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193147"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -57,7 +58,7 @@ Además:
 
 - En la versión preliminar: de forma predeterminada, cada persona que accede a la página **Eliminación** solo ve los elementos que tienen asignados para revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención que están configuradas para la revisión para eliminación: vaya a **Configuración de administración de registros** > **General** > **Grupo de seguridad para el administrador de registros** para seleccionar y habilitar un grupo de seguridad habilitado para correo que contiene las cuentas de administrador.
     
-    Los grupos de Microsoft 365 y los grupos de seguridad que no están habilitados para correo no admiten esta característica y no se mostrarán en la lista para seleccionar. Si necesita crear un grupo de seguridad habilitado para correo, use el vínculo al Centro de administración de Microsoft 365 para crear el nuevo grupo. 
+    Los grupos de Microsoft 365 y los grupos de seguridad que no están habilitados para correo no admiten esta característica y no se mostrarán en la lista para seleccionar. Si necesita crear un grupo de seguridad habilitado para un correo nuevo, use el vínculo al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para crear el grupo nuevo. 
     
     > [!IMPORTANT]
     > Una vez habilitado el grupo, no puede cambiarlo en el centro de cumplimiento. Vea la sección siguiente sobre cómo habilitar un grupo diferente mediante PowerShell.

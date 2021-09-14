@@ -12,25 +12,26 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Usar supervisión de Exchange Online para obtener información sobre avisos o incidentes de correo electrónico en Microsoft 365.
-ms.openlocfilehash: e7e0a39f00b4d23ed870d501a3aefbabaf362e13
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 27f2cfb952359c2ef428b7bd425f611ca9458566
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603022"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59215890"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Supervisión de Exchange Online para Microsoft 365
 
-Puede usar la supervisión de Exchange Online en el Centro de administración de Microsoft 365 para supervisar el estado del servicio de Exchange para la suscripción de Microsoft 365 de su organización. La supervisión de Exchange Online ofrece información sobre incidentes y avisos que se recopilan en estas categorías:
+Puede usar la supervisión de Exchange Online en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para supervisar el estado del servicio de Exchange para la suscripción de Microsoft 365 de su organización. La supervisión de Exchange Online ofrece información sobre incidentes y avisos que se recopilan en estas categorías:
 
 - **Infraestructura**: se detecta un problema en la infraestructura de Microsoft 365 que es propiedad de Microsoft para proporcionar actualizaciones periódicas y solucionar el problema. Por ejemplo, los usuarios no pueden acceder a Exchange Online debido a problemas con Exchange u otra infraestructura en la nube de Microsoft 365.
 - **Infraestructura de terceros**: se detecta un problema en una infraestructura de terceros en la que la organización tiene una dependencia y necesita una acción de su organización para su resolución. Por ejemplo, las transacciones de autenticación de usuario se limitan con un proveedor de servicio de token de seguridad (STS) de terceros que impide que los usuarios se conecten a Exchange Online.
 - **Infraestructura del cliente**: se detecta un problema en la infraestructura de la organización y requiere una acción de su organización para su resolución. Por ejemplo, los usuarios no pueden acceder a Exchange Online porque no pueden obtener un token de autenticación de un proveedor de STS hospedado por la organización debido a un certificado caducado.
 
-Este es un ejemplo de la página **Estado del servicio** en el Centro de administración de Microsoft 365, disponible en Health > **Servicio > Estado del servicio** para escenarios de la organización.
+Este es un ejemplo de la página **Estado del servicio** en el Centro de administración de Microsoft 365, disponible en **Estado** > [**Estado del servicio**](https://go.microsoft.com/fwlink/p/?linkid=842900) para escenarios de la organización.
 
 ![La página de Estado del servicio en el Centro de administración de Microsoft 365.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
@@ -40,7 +41,7 @@ El valor de la columna **Estado** en **Problemas de la organización** indica si
 
 El valor de la columna **Estado** en **Estado del servicio Microsoft** indica que el servicio está en buen estado o tiene avisos o incidentes basados en los servicios en la nube que mantiene Microsoft.
 
-Este es un ejemplo de la página de supervisión de Exchange Online en el Centro de administración de Microsoft 365 que muestra el estado de los escenarios de nivel de organización, disponible en **Estado > Estado del servicio > Exchange Online**.
+Este es un ejemplo de la página de supervisión de Exchange Online en el Centro de administración de Microsoft 365 que muestra el estado de los escenarios de nivel de organización, disponible en **Estado** > [**Estado del servicio**](https://go.microsoft.com/fwlink/p/?linkid=842900) > **Exchange Online**.
 
 ![La página de supervisión de Exchange Online en el Centro de administración de Microsoft 365.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
@@ -48,13 +49,13 @@ Con la página de supervisión de **Exchange Online**, puede ver si el servicio 
 
 ## <a name="requirements"></a>Requisitos
 
-Esta vista previa está habilitada para los clientes que cumplan estos requisitos: 
+Esta vista previa está habilitada para los clientes que cumplan estos requisitos:
 
 - Su organización necesita tener al menos 5000 licencias de uno o varios de estos productos: Office 365 E3, Microsoft 365 E3, Office 365 E5 o Microsoft 365 E5.
 
   Por ejemplo, su organización podría tener 3000 licencias de Office 365 E3 y 2500 de Microsoft 365 E5, con un total de 5500 licencias de productos aptos.
 
-- Su organización necesita tener al menos 50 usuarios activos de Exchange Online mensuales.
+- Su organización necesita tener al menos 50 usuarios activos mensuales para uno o más servicios principales de Microsoft 365, entre los que se incluyen Microsoft Teams, OneDrive para la Empresa, SharePoint Online, Exchange Online y aplicaciones de Office.
 
 - Cualquier rol con permisos de nivel de panel de Estado del servicio puede tener acceso a la supervisión de Exchange Online. Para más información, consulte [Cómo comprobar el estado del servicio de Microsoft 365](view-service-health.md).
 
@@ -100,7 +101,7 @@ Hay dos formas de proporcionar comentarios:
 
 #### <a name="1-why-dont-i-see-exchange-online-monitoring-under-health-in-the-microsoft-365-admin-center"></a>1. ¿Por qué no veo "Supervisión de Exchange Online" en Estado en el Centro de administración de Microsoft 365? 
 
-En primer lugar, asegúrese de que ha habilitado el nuevo Centro de administración en la página **Inicio** del Centro de administración de Microsoft 365.
+En primer lugar, asegúrese de que ha habilitado el nuevo centro de administración en la página **Inicio** del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
 Después, asegúrese de que cumple los siguientes requisitos: 
 
@@ -112,7 +113,7 @@ Si el número de licencias de la organización es inferior a 5000 usuarios y los
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. El número de usuarios activos en el panel de control de cada cliente parece ser bajo. Tenemos muchas licencias activas asignadas a los usuarios. ¿Qué significa esto?
 
-El recuento de usuarios activos que se muestra en la supervisión se basa en una ventana de 30 minutos donde los usuarios han realizado la actividad indicada en la característica. No debe confundirse con los números de uso. Para ver los números de uso, utilice los informes de actividad en el Centro de administración de Microsoft 365 (**Informes > Uso**).
+El recuento de usuarios activos que se muestra en la supervisión se basa en una ventana de 30 minutos donde los usuarios han realizado la actividad indicada en la característica. No debe confundirse con los números de uso. Para ver los números de uso, use los informes de actividad en el Centro de administración de Microsoft 365 (**Informes** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">**Uso**</a>).
 
 #### <a name="3-will-there-be-other-monitoring-scenarios-for-other-services-such-as-teams-and-sharepoint"></a>3. ¿Hay otros escenarios de supervisión para otros servicios, como Microsoft Teams y SharePoint?
 
@@ -120,7 +121,7 @@ Microsoft está integrando esta experiencia directamente en el panel de Estado d
 
 #### <a name="4-what-is-the-plan-for-general-availability-of-this-experience"></a>4. ¿Cuál es el plan para la disponibilidad general de esta experiencia?
 
-Microsoft ha integrado la supervisión de Exchange Online directamente en el panel de **Estado del servicio** en el Centro de administración de Microsoft 365.
+Microsoft ha integrado la supervisión de Exchange Online directamente en el panel <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Estado de servicio**</a> del Centro de administración de Microsoft 365.
 
 Con esta nueva experiencia integrada, el plan de Microsoft es recopilar sus comentarios y definir nuestro plan de disponibilidad general.
 

@@ -16,16 +16,16 @@ search.appverid:
 - SPO160
 - MET150
 f1.keywords: NOCSH
-ms.custom: ''
+ms.custom: admindeeplinkMAC
 localization_priority: Priority
 recommendations: false
 description: Obtenga más información sobre las opciones para limitar o deshabilitar el uso compartido de Microsoft 365.
-ms.openlocfilehash: ba7bd7796e0c70b91f7f1c5073e8f51cd5d778be
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 3a8bdc738507760fcb7eff02692859f07dc8d5c9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569278"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59189017"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitar el uso compartido en Microsoft 365
 
@@ -59,15 +59,15 @@ Si quiere limitar el uso compartido en un grupo de Microsoft 365 o un equipo de
 Si quiere evitar el acceso de invitados en Teams, puede desactivar el uso compartido de invitados en el centro de administración de Teams.
 
 Para desactivar el uso compartido de invitados en Teams
-1. En el centro de administración de Teams, expanda **Configuración de toda la organización** y, después, haga clic en **Acceso de invitado**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2066851" target="_blank">Centro de administración de Teams</a>, expanda la **Configuración de toda la organización**, y haga clic en **Acceso de invitados**.
 2. Desactive **Permitir el acceso de invitado en Teams**.
 3. Haga clic en **Guardar**.
 
 Si quiere evitar el acceso de invitado en los Grupos de Microsoft 365, puede desactivar la configuración del acceso de invitado de los grupos en el Centro de administración de Microsoft 365.
 
 Para desactivar el uso compartido de invitados en los grupos de Microsoft 365
-1. En el Centro de administración de Microsoft 365, haga clic en **Configuración** y después haga clic en **Configuración de la organización**.
-2. En la pestaña **Servicios**, haga clic en **Grupos de Microsoft 365**.
+1. En el Centro de administración de Microsoft 365, haga clic en la pestaña **Configuración** > **Configuración de la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Servicios**</a>.
+2. Haga clic en **Grupos de Microsoft 365**
 3. Desactive las casillas **Permitir que los miembros del grupo de fuera de la organización tengan acceso al contenido del grupo** y **Permitir que los propietarios de grupos agreguen a usuarios ajenos a la organización a los grupos**.
 4. Haga clic en **Guardar cambios**.
 
