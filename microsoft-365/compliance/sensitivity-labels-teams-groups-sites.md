@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: edd6aea4aade2378a195aa471ba0aa329afb7582
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5480a5b8336c03323c26785e884da811a5d00d97
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569038"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59216470"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -315,9 +315,11 @@ También puede cambiar y aplicar una etiqueta desde esta página:
 
 2. Seleccione la pestaña **Directivas** y después, elija **Editar** para la configuración **Confidencialidad**.
 
-3. En el panel **Editar configuración de confidencialidad**, seleccione la etiqueta de confidencialidad que desea aplicar al sitio y, a continuación, elija **Guardar**.
+3. En el panel **Editar configuración de confidencialidad** seleccione la etiqueta de confidencialidad que desea aplicar al sitio. A diferencia de las aplicaciones de usuario, donde las etiquetas de confidencialidad se pueden asignar a usuarios específicos, el Centro de administración muestra todas las etiquetas de confidencialidad para el espacio empresarial. Después de elegir una etiqueta, seleccione **Guardar**.
 
 ## <a name="support-for-sensitivity-labels"></a>Compatibilidad con etiquetas de confidencialidad.
+
+Cuando use centros de administración que admitan etiquetas de confidencialidad, verá todas las etiquetas de confidencialidad del espacio empresarial. En comparación, las aplicaciones y servicios de usuario que filtran etiquetas de confidencialidad según las directivas de publicación pueden provocar que veas un subconjunto de esas etiquetas.
 
 Las siguientes aplicaciones y servicios son compatibles con etiquetas de confidencialidad establecidas para la configuración de sitio y grupo:
 
@@ -326,7 +328,7 @@ Las siguientes aplicaciones y servicios son compatibles con etiquetas de confide
   - Centro de administración de SharePoint
   - Portal de Azure Active Directory
   - Centro de administración de Microsoft 365
-  - Centro de cumplimiento de Microsoft 365, Centro de seguridad de Microsoft 365 y Centro de seguridad y cumplimiento
+  - Centro de cumplimiento de Microsoft 365
 
 - Servicios y aplicaciones de usuario:
 
@@ -450,6 +452,6 @@ Si dichos contenedores tienen valores de clasificación de Azure AD aplicados, e
 
 Consulte la grabación y las preguntas contestadas sobre el [Uso de etiquetas de sensibilidad con Microsoft Teams, grupos de O365 y sitios de SharePoint Online](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
 
-Para obtener más información sobre la administración de sitios conectados de Teams y sitios de canales, vea [Administrar sitios conectados de Teams y sitios de canales](/SharePoint/teams-connected-sites).
+Este seminario web se grabó cuando la característica aún estaba en la versión preliminar, por lo que es posible que observe algunas discrepancias en la interfaz de usuario. Aún así, la información de esta característica es precisa, con las nuevas funciones que se documentan en esta página.
 
-Este seminario web se grabó cuando la característica aún estaba en la versión preliminar, por lo que es posible que observe algunas discrepancias con la interfaz de usuario. Aún así, la información de esta característica es precisa, con las nuevas funciones que se documentan en esta página.
+Para obtener más información sobre la administración de sitios conectados de Teams y sitios de canales, vea [Administrar sitios conectados de Teams y sitios de canales](/SharePoint/teams-connected-sites).
