@@ -12,16 +12,17 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 ms.topic: article
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: ceea450ca55e46a5a106a5d9fd3ce9420b674d36
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: f3556096b77e775e783cd8d949e1ed5dc2c25024
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59186337"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -123,7 +124,7 @@ Los ajustes de etiquetado automático para las aplicaciones de Office están dis
 
 ![Opciones de ámbito de etiqueta de confidencialidad para archivos y correos electrónicos.](../media/filesandemails-scope-options-sensitivity-label.png)
 
-A medida que se desplace por el asistente, verá la página **Etiquetado automático para archivos y mensajes de correo electrónico**, en la que puede elegir entre una lista de tipos de información confidencial o clasificadores que se pueden entrenar:
+A medida que se desplace por la configuración, verá la página **Etiquetado automático para archivos y mensajes de correo electrónico**, en la que puede elegir entre una lista de tipos de información confidencial o clasificadores que se pueden entrenar:
 
 ![Condiciones de etiqueta para el etiquetado automático en las aplicaciones de Office](../media/sensitivity-labels-conditions.png)
 
@@ -247,7 +248,7 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
 ### <a name="creating-an-auto-labeling-policy"></a>Creación de una directiva de etiquetado automático
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta las etiquetas de confidencialidad:
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, desplácese hasta las etiquetas de confidencialidad:
 
     - **Soluciones** > **Protección de la información**
 
@@ -260,9 +261,9 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     > [!NOTE]
     > Si no ve la pestaña **Etiquetado automático**, esta función no se encuentra disponible en su región.
 
-3. Seleccione **+ Crear directiva de etiquetado automático**. Se iniciará el asistente de Nueva Directiva:
+3. Seleccione **+ Crear directiva de etiquetado automático**. Esto inicia la configuración de Nueva directiva:
 
-    ![Asistente para nueva directiva de etiquetado automático](../media/auto-labeling-wizard.png)
+    ![Configuración de Nueva directiva para el etiquetado automático.](../media/auto-labeling-wizard.png)
 
 4. En la página **Elegir la información a la que quiere aplicar esta etiqueta**: seleccione una de las plantillas, como **Finanzas** o **Privacidad**. Puede refinar la búsqueda con la lista desplegable **Mostrar opciones para**. O bien, seleccione **directiva personalizada** si las plantillas no satisfacen sus necesidades. Seleccione **Siguiente**.
 
@@ -270,13 +271,20 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
 6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, SharePoint y OneDrive. Si no desea mantener el valor predeterminado de **Todos** para las ubicaciones elegidas, seleccione el vínculo para elegir instancias específicas. Después, seleccione **Siguiente**.
 
-    ![Elija el asistente de etiquetado automático de página de ubicaciones.](../media/locations-auto-labeling-wizard.png)
+    ![Página Elegir ubicaciones para la configuración de etiquetado automático.](../media/locations-auto-labeling-wizard.png)
     
     Para especificar cuentas individuales de OneDrive, la dirección URL de OneDrive de un usuario suele tener el siguiente formato. Para el nombre principal de usuario (UPN), los caracteres especiales como un punto, una coma, un espacio y el signo de arroba ("@") se convierten en caracteres de subrayado ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
     
-    Por ejemplo, para un usuario de la cuenta empresarial de Contoso que tiene un UPN de "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. Sin embargo, los números o GUID se pueden anexar cuando se detectan conflictos.
+    Por ejemplo, para un usuario de la cuenta empresarial de Contoso que tiene un UPN de "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`.
     
-    Siempre es mejor confirmar la dirección URL de un usuario para su cuenta de OneDrive. Esto lo puede hacer con el Centro de administración de Microsoft 365 o con PowerShell. Para obtener más información, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
+    O bien, si usa un nombre de dominio personalizado para que el UPN sea "rsimone@contoso.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
+    
+    Sin embargo, los números o GUID se pueden anexar a la dirección URL cuando se detectan conflictos, por lo que siempre es mejor confirmar la dirección URL de un usuario para su cuenta OneDrive usuario. Para confirmar la dirección URL, puede usar el Centro de administración de Microsoft 365 o PowerShell. Para obtener más información, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
+    
+    > [!NOTE]
+    > Cuando especifique cuentas de OneDrive individuales, tenga en cuenta que, a menos que las cuentas de OneDrive estén [aprovisionadas previamente](/onedrive/pre-provision-accounts), la dirección URL no se creará hasta que un usuario tenga acceso a sus cuentas de OneDrive por primera vez.
+    > 
+    > Además, la URL de OneDrive cambiará [automáticamente](/onedrive/upn-changes) si hay un cambio en el UPN del usuario. Por ejemplo, un evento por el que se cambian los apellidos, como el matrimonio. O un cambio de nombre de dominio para admitir el cambio de nombre o la reestructuración empresarial de una organización. Si el UPN cambia, deberá actualizar las direcciones URL de OneDrive que especifique aquí.
 
 7. En la página **Configurar reglas comunes o avanzadas**: mantenga el valor predeterminado de **Reglas comunes** para definir las reglas que identifican el contenido que se debe etiquetar en todas las ubicaciones seleccionadas. Si necesita distintas reglas dependiendo de la ubicación, seleccione **Reglas avanzadas**. Después, seleccione **Siguiente**.
 
@@ -313,9 +321,9 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
 10. En la página **Decidir si quiere probar la directiva ahora o más tarde**: seleccione **Ejecutar directiva en modo de simulación** si ya está listo para ejecutar la directiva de etiquetado automático ahora, en el modo de simulación. En caso contrario, seleccione **Dejar la directiva desactivada**. Seleccione **Siguiente**:
 
-    ![Pruebe el asistente para etiquetado automático de directivas.](../media/simulation-mode-auto-labeling-wizard.png)
+    ![Pruebe la directiva de etiquetado automático configurada.](../media/simulation-mode-auto-labeling-wizard.png)
 
-11. En la página **Resumen**: revise la configuración de la directiva de etiquetado automático, realice los cambios que sean necesarios y finalice el asistente.
+11. En la página **Resumen**: Revise la configuración de la directiva de etiquetado automático, realice los cambios que sean necesarios y finalice la configuración.
 
 Ahora, en la página de **Protección de la información** > **Etiquetado automático**, verá su directiva de etiquetado automático en la sección **Simulación** o **Desactivado**, en función de si ha elegido ejecutarla en el modo simulación o no. Seleccione su directiva para ver los detalles de la configuración y el estado (por ejemplo, **Simulación de directiva aún en ejecución**). Para las directivas en el modo de simulación, seleccione la pestaña **Elementos coincidentes** para ver los correos electrónicos o documentos que coinciden con las reglas especificadas.
 
