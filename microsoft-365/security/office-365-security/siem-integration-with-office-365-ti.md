@@ -19,12 +19,12 @@ description: Integre el servidor SIEM de su organización con Microsoft Defender
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cf5206b1b821f876aa810ba2bf280ba2f426544
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3eb38325c9695ae0ed5cfb9389e8972ee599739f
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211570"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356008"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Integración de SIEM con Microsoft Defender para Office 365
 
@@ -55,7 +55,7 @@ El servidor SIEM u otro sistema similar sondea la carga de **trabajo audit.gener
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
 
-En la tabla siguiente se resumen los valores **de AuditLogRecordType** que son relevantes para Microsoft Defender para Office 365 eventos:
+En la tabla siguiente se resumen los valores **de AuditLogRecordType** que son relevantes para Microsoft Defender para Office 365 eventos:<br/><br/>
 
 | Valor | Nombre del miembro | Descripción |
 |---|---|---|
@@ -63,14 +63,13 @@ En la tabla siguiente se resumen los valores **de AuditLogRecordType** que son r
 | 41| ThreatIntelligenceUrl | Caja fuerte Vincula el tiempo de bloqueo y bloquea eventos de invalidación de Microsoft Defender para Office 365. |
 | 47| ThreatIntelligenceAtpContent | Eventos de suplantación de identidad y malware para archivos de SharePoint Online, OneDrive para la Empresa y Microsoft Teams, desde Microsoft Defender para Office 365. |
 | 64| AirInvestigation | Eventos automatizados de investigación y respuesta, como detalles de investigación y artefactos relevantes, de Microsoft Defender para Office 365 Plan 2. |
-|
 
 > [!IMPORTANT]
 > Debe tener asignado el rol administrador global o administrador de seguridad en el portal de Microsoft 365 Defender para configurar la integración de SIEM con Microsoft Defender para Office 365. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 >
 > El registro de auditoría debe estar activado para el Microsoft 365 de auditoría. Para obtener ayuda con esto, vea Activar o desactivar la búsqueda [del registro de auditoría.](../../compliance/turn-audit-log-search-on-or-off.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Investigación y respuesta de amenazas de Office 365](office-365-ti.md)
 

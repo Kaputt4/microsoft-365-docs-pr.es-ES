@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54883ab437dcf01b042b5458bdc6312eaf24d179
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f85c4cd8cf5d657e4043aae80da8b3dae989a29d
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218317"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356627"
 ---
 # <a name="advanced-hunting-api"></a>API de búsqueda avanzada
 
@@ -49,7 +49,7 @@ ms.locfileid: "59218317"
 
 4. El tiempo máximo de ejecución de una sola solicitud es de 10 minutos.
 
-5. La respuesta 429 representará alcanzar el límite de cuota por número de solicitudes o por CPU. Lea el cuerpo de la respuesta para comprender qué límite se ha alcanzado. 
+5. La respuesta 429 representará alcanzar el límite de cuota por número de solicitudes o por CPU. Lea el cuerpo de la respuesta para comprender qué límite se ha alcanzado.
 
 6. El tamaño máximo del resultado de la consulta de una sola solicitud no puede superar los 124 MB. Si se supera, HTTP 400 Bad Request con el mensaje "La ejecución de la consulta ha excedido el tamaño de resultado permitido. Optimizar la consulta limitando la cantidad de resultados e intentarlo de nuevo" aparecerá.
 
@@ -105,7 +105,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ```json
 {
-    "Query":"DeviceProcessEvents  
+    "Query":"DeviceProcessEvents
 |where InitiatingProcessFileName =~ 'powershell.exe'
 |where ProcessCommandLine contains 'appdata'
 |project Timestamp, FileName, InitiatingProcessFileName, DeviceId

@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 0833a616f1b6052519e92a5e46c8f36f01c80818
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1e4e32864c2541cfc0cf14602ec954d5e643f309
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213470"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357598"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Solucionar problemas de reglas de reducción de superficie de ataque
 
@@ -35,21 +35,16 @@ ms.locfileid: "59213470"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-
 Cuando usas [reglas de reducción de](attack-surface-reduction.md) superficie de ataque, puedes encontrar problemas, como:
 
 - Una regla bloquea un archivo, proceso o realiza alguna otra acción que no debería (falso positivo)
-
 - Una regla no funciona como se describe o no bloquea un archivo o proceso que debe (falso negativo)
 
 Hay cuatro pasos para solucionar estos problemas:
 
 1. [Confirmar requisitos previos](#confirm-prerequisites)
-
 2. [Usar el modo de auditoría para probar la regla](#use-audit-mode-to-test-the-rule)
-
 3. [Agregar exclusiones para la regla especificada](#add-exclusions-for-a-false-positive) (para falsos positivos)
-
 4. [Enviar registros de soporte técnico](#collect-diagnostic-data-for-file-submissions)
 
 ## <a name="confirm-prerequisites"></a>Confirmar requisitos previos
@@ -94,9 +89,9 @@ Si la regla de reducción de superficie de ataque bloquea algo que no debe bloqu
 
 Para agregar una exclusión, consulta [Personalizar reducción de superficie de ataque](customize-attack-surface-reduction.md).
 
->[!IMPORTANT]
->Puede especificar archivos y carpetas individuales que se excluirán, pero no puede especificar reglas individuales.
->Esto significa que los archivos o carpetas que se excluyen se excluirán de todas las reglas ASR.
+> [!IMPORTANT]
+> Puede especificar archivos y carpetas individuales que se excluirán, pero no puede especificar reglas individuales.
+> Esto significa que los archivos o carpetas que se excluyen se excluirán de todas las reglas ASR.
 
 ## <a name="report-a-false-positive-or-false-negative"></a>Informar de un falso positivo o falso negativo
 
@@ -123,7 +118,5 @@ Cuando informes de un problema con las reglas de reducción de superficie de ata
 ## <a name="related-articles"></a>Artículos relacionados
 
 - [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)
-
 - [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
-
 - [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)

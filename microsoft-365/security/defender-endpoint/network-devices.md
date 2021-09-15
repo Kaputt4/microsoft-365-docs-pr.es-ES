@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b365be018fafb487fb689acb09749804f849ce3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b67a2551e592e2fd1186985590759d44bdcc177b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220401"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356806"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Detección de dispositivos de red y administración de vulnerabilidades
 
@@ -37,12 +37,12 @@ ms.locfileid: "59220401"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-> [!NOTE]  
+> [!NOTE]
 > El Blog sobre detección de [dispositivos](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) de red y evaluaciones de vulnerabilidad publicado \( el 04-13-2021 proporciona información sobre las nuevas capacidades de detección de dispositivos de red en \) Defender para endpoint.  En este artículo se proporciona  información general sobre el desafío que la detección de dispositivos de red está diseñada para abordar e información detallada sobre cómo empezar a usar estas nuevas funcionalidades.
 
-Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del centro Microsoft 365 seguridad y Microsoft 365 Defender consolas.  
+Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del centro Microsoft 365 seguridad y Microsoft 365 Defender consolas.
 
-Se usará un dispositivo designado de Microsoft Defender para endpoint en cada segmento de red para realizar exámenes periódicos autenticados de dispositivos de red preconfigurados. Una vez descubierto, las capacidades de Defender for Endpoint Administración de amenazas y vulnerabilidades proporcionan flujos de trabajo integrados para proteger conmutadores detectados, enrutadores, controladores WLAN, firewalls y puertas de enlace VPN.  
+Se usará un dispositivo designado de Microsoft Defender para endpoint en cada segmento de red para realizar exámenes periódicos autenticados de dispositivos de red preconfigurados. Una vez descubierto, las capacidades de Defender for Endpoint Administración de amenazas y vulnerabilidades proporcionan flujos de trabajo integrados para proteger conmutadores detectados, enrutadores, controladores WLAN, firewalls y puertas de enlace VPN.
 
 Una vez detectados y clasificados los dispositivos de red, los administradores de seguridad podrán recibir las recomendaciones de seguridad más recientes y revisar las vulnerabilidades detectadas recientemente en los dispositivos de red implementados en sus organizaciones.
 
@@ -55,9 +55,9 @@ Habrá dos tipos de dispositivos a tener en cuenta:
 - **Dispositivo de evaluación:** un dispositivo que ya está incorporado y que usarás para examinar los dispositivos de red.
 - **Dispositivos de** red: los dispositivos de red que tiene previsto examinar e incorporar.
 
-### <a name="vulnerability-management-for-network-devices"></a>Administración de vulnerabilidades para dispositivos de red 
+### <a name="vulnerability-management-for-network-devices"></a>Administración de vulnerabilidades para dispositivos de red
 
-Una vez detectados y clasificados los dispositivos de red, los administradores de seguridad podrán recibir las recomendaciones de seguridad más recientes y revisar las vulnerabilidades detectadas recientemente en los dispositivos de red implementados en sus organizaciones.  
+Una vez detectados y clasificados los dispositivos de red, los administradores de seguridad podrán recibir las recomendaciones de seguridad más recientes y revisar las vulnerabilidades detectadas recientemente en los dispositivos de red implementados en sus organizaciones.
 
 ## <a name="operating-systems-that-are-supported"></a>Sistemas operativos compatibles
 
@@ -74,37 +74,37 @@ Se agregarán más proveedores de redes y sos con el tiempo, en función de los 
 
 El primer paso es seleccionar un dispositivo que realizará los exámenes de red autenticados.
 
-1. Decide un dispositivo integrado de Defender for Endpoint (cliente o servidor) que tenga una conexión de red al puerto de administración de los dispositivos de red que planeas examinar. 
+1. Decide un dispositivo integrado de Defender for Endpoint (cliente o servidor) que tenga una conexión de red al puerto de administración de los dispositivos de red que planeas examinar.
 
 2. Se debe permitir el tráfico SNMP entre el dispositivo de evaluación de Defender para endpoints y los dispositivos de red de destino (por ejemplo, mediante el Firewall).
 
-3. Decida qué dispositivos de red se evaluarán para las vulnerabilidades (por ejemplo: un conmutador cisco o un firewall de Palo Alto Networks).  
+3. Decida qué dispositivos de red se evaluarán para las vulnerabilidades (por ejemplo: un conmutador cisco o un firewall de Palo Alto Networks).
 
 4. Asegúrese de que SNMP de solo lectura está habilitado en todos los dispositivos de red configurados para permitir que el dispositivo de evaluación de Defender for Endpoint consulte los dispositivos de red configurados. La "escritura SNMP" no es necesaria para la funcionalidad adecuada de esta característica.
 
 5. Obtener las direcciones IP de los dispositivos de red que se van a examinar (o las subredes donde se implementan estos dispositivos).
 
-6. Obtenga las credenciales SNMP de los dispositivos de red (por ejemplo: Community String, noAuthNoPriv, authNoPriv, authPriv). Tendrás que proporcionar las credenciales al configurar un nuevo trabajo de evaluación.  
+6. Obtenga las credenciales SNMP de los dispositivos de red (por ejemplo: Community String, noAuthNoPriv, authNoPriv, authPriv). Tendrás que proporcionar las credenciales al configurar un nuevo trabajo de evaluación.
 
 7. Configuración del cliente proxy: no se requiere ninguna configuración adicional que no sea los requisitos de proxy de dispositivo defender para extremo.
 
 8. Para permitir que el escáner de red se autentique y funcione correctamente, es esencial que agregue los siguientes dominios o direcciones URL:
 
-    - login.windows.net  
-    - *.security.microsoft.com
+    - login.windows.net
+    - \*.security.microsoft.com
     - login.microsoftonline.com
-    - *.blob.core.windows.net/networkscannerstable/ *
+    - \*.blob.core.windows.net/networkscannerstable/\*
 
     > [!NOTE]
     > No todas las direcciones URL se especifican en la lista documentada Defender for Endpoint de la colección de datos permitida.
 
 ## <a name="permissions"></a>Permisos
 
-Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en el Centro de seguridad**. Para encontrar el permiso, vaya a **Configuración**  >  **Roles**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md).
+Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en el Centro de seguridad**. Para encontrar el permiso, vaya a **Configuración** \> **Roles**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Instalar el escáner de red
 
-1. Vaya a Microsoft 365 **de Configuración** de evaluación de puntos de conexión  >    >    >   (en **Evaluaciones de red).**
+1. Vaya a Microsoft 365 **de Configuración** de evaluación de puntos de conexión \>  \>  \>  (en **Evaluaciones de red).**
     1. En el portal Microsoft 365 Defender, vaya a la página Configuración > trabajos de evaluación.
 
 2. Descargue el escáner de red e instállo en el dispositivo de evaluación de Defender para endpoint designado.
@@ -127,7 +127,7 @@ Para completar el proceso de registro del escáner de red:
 
 3. Cuando haya terminado, debería ver un mensaje que confirme que ha iniciado sesión.
 
-## <a name="configure-a-new-assessment-job"></a>Configurar un nuevo trabajo de evaluación  
+## <a name="configure-a-new-assessment-job"></a>Configurar un nuevo trabajo de evaluación
 
 En la página Trabajos de evaluación **de Configuración**, seleccione Agregar trabajo de evaluación **de red**. Siga el proceso de configuración para elegir los dispositivos de red que se examinarán periódicamente y se agregarán al inventario de dispositivos.
 
@@ -140,11 +140,11 @@ Adición de pasos de trabajo de evaluación de red:
 
 1. Elige un nombre de "Trabajo de evaluación" y el "Dispositivo de evaluación" en el que se instaló el escáner de red. Este dispositivo realizará los exámenes periódicos autenticados.
 
-2. Agregue las direcciones IP de los dispositivos de red de destino que se van a examinar (o las subredes donde se implementan estos dispositivos). 
+2. Agregue las direcciones IP de los dispositivos de red de destino que se van a examinar (o las subredes donde se implementan estos dispositivos).
 
-3. Agregue las credenciales SNMP necesarias de los dispositivos de red de destino. 
+3. Agregue las credenciales SNMP necesarias de los dispositivos de red de destino.
 
-4. Guarde el trabajo de evaluación de red recién configurado para iniciar el examen periódico de red. 
+4. Guarde el trabajo de evaluación de red recién configurado para iniciar el examen periódico de red.
 
 ### <a name="scan-and-add-network-devices"></a>Examinar y agregar dispositivos de red
 
@@ -153,7 +153,7 @@ Durante el proceso de configuración, puede realizar un examen de prueba de una 
 - Hay conectividad entre el dispositivo de evaluación de Defender para endpoints y los dispositivos de red de destino configurados.
 - Las credenciales SNMP configuradas son correctas.
 
-Cada dispositivo de evaluación puede admitir hasta 1.500 direcciones IP correctas. Por ejemplo, si analiza 10 subredes diferentes donde solo 100 direcciones IP devuelven resultados correctos, podrá examinar 1.400 direcciones IP adicionales de otras subredes en el mismo dispositivo de evaluación.  
+Cada dispositivo de evaluación puede admitir hasta 1.500 direcciones IP correctas. Por ejemplo, si analiza 10 subredes diferentes donde solo 100 direcciones IP devuelven resultados correctos, podrá examinar 1.400 direcciones IP adicionales de otras subredes en el mismo dispositivo de evaluación.
 
 Si hay varios intervalos de direcciones IP/subredes que examinar, los resultados del examen de prueba tardarán varios minutos en aparecer. Un examen de prueba estará disponible para hasta 1.024 direcciones.
 
@@ -180,9 +180,9 @@ Compruebe que las direcciones URL necesarias se agregan a los dominios permitido
 
 Los resultados del examen deben actualizarse unas horas después del examen inicial que se realizó después de completar la configuración del trabajo de evaluación.
 
-Si aún no se muestran dispositivos, compruebe que el servicio 'MdatpNetworkScanService' se está ejecutando en los dispositivos de evaluación, en los que instaló el escáner de red, y realice un "Examen de ejecución" en la configuración del trabajo de evaluación correspondiente.  
+Si aún no se muestran dispositivos, compruebe que el servicio 'MdatpNetworkScanService' se está ejecutando en los dispositivos de evaluación, en los que instaló el escáner de red, y realice un "Examen de ejecución" en la configuración del trabajo de evaluación correspondiente.
 
-Si aún no obtiene resultados después de 5 minutos, reinicie el servicio.  
+Si aún no obtiene resultados después de 5 minutos, reinicie el servicio.
 
 ### <a name="devices-last-seen-time-is-longer-than-24-hours"></a>El tiempo de vista por última vez de los dispositivos es de más de 24 horas
 

@@ -16,28 +16,28 @@ search.appverid:
 - MET150
 description: Al realizar un análisis Advanced eDiscovery, el subproceso de correo electrónico analiza una conversación de correo electrónico y separa cada mensaje en diferentes categorías.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b087bfc84175f80daaf1c0d2f1394584a70757ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: feb0294b47e01eae6849835e92e390a912558c71
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218947"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357455"
 ---
 # <a name="email-threading-in-advanced-ediscovery"></a>Subprocesos de correo electrónico en Advanced eDiscovery
 
-Considere una conversación de correo electrónico que ha estado sucediendo durante un tiempo. En la mayoría de los casos, el último correo electrónico del subproceso incluirá el contenido de todos los correos electrónicos anteriores; revisar el último correo electrónico le dará un contexto completo de la conversación que ocurrió en el subproceso. El subproceso de correo electrónico identifica dichos correos electrónicos para que los revisores puedan revisar una fracción de documentos recopilados sin perder ningún contexto.
+Considere una conversación de correo electrónico que ha estado sucediendo durante un tiempo. En la mayoría de los casos, el último mensaje del subproceso de correo electrónico incluirá el contenido de todos los mensajes anteriores. Por lo tanto, revisar el último mensaje dará un contexto completo de la conversación que ocurrió en el subproceso. El subproceso de correo electrónico identifica estos mensajes para que los revisores puedan revisar una fracción de documentos recopilados sin perder ningún contexto.
 
 ## <a name="what-does-email-threading-do"></a>¿Qué hace el subproceso de correo electrónico?
 
-El subproceso de correo electrónico analiza cada correo electrónico y lo deconstruye en mensajes individuales; cada correo electrónico es una cadena de mensajes individuales. A continuación, analiza todos los correos electrónicos del conjunto de revisión para determinar si un correo electrónico tiene contenido único o si la cadena está totalmente contenida en un correo electrónico diferente. Al final, los correos electrónicos se dividen en cuatro categorías:
+El subproceso de correo electrónico analiza cada subproceso de correo electrónico y lo deconstruye en mensajes individuales. Cada subproceso de correo electrónico es una cadena de mensajes individuales. Advanced eDiscovery analiza todos los mensajes de correo electrónico del conjunto de opiniones para determinar si un mensaje de correo electrónico tiene contenido único o si la cadena (mensajes primarios) está totalmente contenida en el mensaje final del subproceso de correo electrónico. Los mensajes de correo electrónico se dividen en cuatro valores inclusivos:
 
-- **Hilo completo**: el último mensaje del correo electrónico tiene contenido único y, además, el correo electrónico tiene todos los datos adjuntos que se incluyeron en otros correos electrónicos cuyo contenido está contenido en este correo electrónico.
+- **Inclusive:** un *correo electrónico* inclusivo es el mensaje de correo electrónico final de un subproceso de correo electrónico y contiene todo el contenido anterior de ese subproceso de correo electrónico.
 
-- **Hilo completo sin un adjunto**: el último mensaje del correo electrónico tiene contenido único, pero el correo electrónico no contiene algunos de los datos adjuntos que se incluyeron en otros correos electrónicos cuyo contenido contenga este correo electrónico.
+- **Inclusive menos:** un mensaje de correo electrónico se designa como *Inclusive menos* si hay uno o más datos adjuntos asociados con el mensaje específico dentro del subproceso de correo electrónico. Un revisor puede usar el valor menos inclusivo para determinar qué mensaje de correo electrónico específico dentro del subproceso tiene datos adjuntos asociados. 
 
-- **Copia de hilo completo**: una copia exacta de un correo electrónico de hilo completo o hilo completo sin un adjunto
+- **Copia inclusiva:** un mensaje  de correo electrónico se considera una copia inclusiva si es una copia exacta de un mensaje menos inclusivo o inclusivo. 
 
-- **Ninguno**: el contenido de este correo electrónico está contenido en al menos un correo electrónico que se marca como "menos inclusivo/inclusivo".
+- **None:** el *valor None* indica que el contenido del mensaje está totalmente contenido en al menos otro mensaje de correo electrónico marcado como Inclusivo o Inclusivo menos.
 
 ## <a name="how-is-it-different-from-conversations-in-outlook"></a>¿En qué se diferencia de las conversaciones de Outlook?
 

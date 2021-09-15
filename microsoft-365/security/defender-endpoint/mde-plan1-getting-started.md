@@ -7,18 +7,18 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: 3af483db6b2cc9801a56d96147a0a4aed90e33ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f02873148fbd6415c987aad8e5161cff34c2004b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213667"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355830"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Introducción al Plan 1 de Microsoft Defender para endpoints (versión preliminar)
 
@@ -55,7 +55,7 @@ La tarjeta le proporciona información de un vistazo, junto con un vínculo o bo
 
 ### <a name="navigation-bar-makes-it-easy-to-find-alerts-the-action-center-and-more"></a>La barra de navegación facilita la búsqueda de alertas, el Centro de acciones y mucho más
 
-La barra de navegación de la parte izquierda de la pantalla le permite moverse fácilmente entre incidentes, alertas, centro de acción, informes y configuración. En la tabla siguiente se describe la barra de navegación.
+La barra de navegación de la parte izquierda de la pantalla le permite moverse fácilmente entre incidentes, alertas, centro de acción, informes y configuración. En la tabla siguiente se describe la barra de navegación.<br/><br/>
 
 | Elemento de barra de navegación | Descripción |
 |:---|:---|
@@ -167,7 +167,7 @@ Desplácese hacia abajo para ver todas las vistas del informe de protección web
 > [!TIP]
 > Para obtener más información, vea [Protección web](web-protection-overview.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Administrar Microsoft Defender para endpoint plan 1 (versión preliminar)](mde-p1-maintenance-operations.md)
 - [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md)

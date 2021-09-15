@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo comprar Windows 365 Empresa para su organización y ayudar a los usuarios a empezar a usar sus equipos en la nube.
-ms.openlocfilehash: 4c53aba7ae2d4bd47b5df2f32c50dcf6bb448201
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 39d43d81d292c343591e5f5e1192d8de198a7b7c
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184438"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355665"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Introducción a Windows 365 Empresa y equipos en la nube
 
@@ -107,7 +107,7 @@ En su Windows principal de 365, los usuarios ven los equipos en la nube a los qu
 Los usuarios pueden **seleccionar Abrir en el explorador** para abrir su equipo en la nube.
 
 > [!NOTE]  
-> Los dispositivos móviles no son compatibles actualmente.
+> Actualmente, los dispositivos móviles no son compatibles con el uso de un explorador para abrir pc en la nube. Se admite la aplicación escritorio remoto.
 
 #### <a name="user-actions"></a>Acciones del usuario
 

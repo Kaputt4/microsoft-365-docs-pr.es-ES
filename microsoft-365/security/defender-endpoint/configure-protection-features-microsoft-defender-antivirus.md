@@ -15,12 +15,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 2db625e98bd685c0dffb7820847c483b54f600fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 776a3ba076abdb5727a878fd37dabf96407ce1ae
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221637"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357443"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Configurar la protección en tiempo real, heurística y de comportamiento
 
@@ -31,7 +31,7 @@ ms.locfileid: "59221637"
 
 Antivirus de Microsoft Defender varios métodos para proporcionar protección contra amenazas:
 
-- Protección entregada en la nube para la detección casi instantánea y el bloqueo de amenazas nuevas y emergentes
+- Protección en la nube para la detección casi instantánea y el bloqueo de amenazas nuevas y emergentes
 - Análisis siempre en tiempo real, con supervisión del comportamiento de archivos y procesos y otra heurística (también conocida como "protección en tiempo real")
 - Actualizaciones de protección dedicadas que se basan en el aprendizaje automático, los análisis humanos y automatizados de macrodatos y el estudio detallado de la resistencia ante amenazas.
 
@@ -39,11 +39,11 @@ Puede configurar cómo Antivirus de Microsoft Defender estos métodos con la dir
 
 En esta sección se describe la configuración del análisis siempre en marcha, incluido cómo detectar y bloquear aplicaciones que se consideran no seguras, pero que no se pueden detectar como malware.
 
-Consulte [Use next-gen Antivirus de Microsoft Defender a través](cloud-protection-microsoft-defender-antivirus.md) de la protección entregada en la nube para obtener información sobre cómo habilitar y configurar la Antivirus de Microsoft Defender de entrega en la nube.
+Consulta [Usar tecnologías de Antivirus de Microsoft Defender de](cloud-protection-microsoft-defender-antivirus.md) última generación a través de la protección en la nube para obtener información sobre cómo habilitar y configurar la Antivirus de Microsoft Defender nube.
 
 ## <a name="in-this-section"></a>En esta sección
 
- Tema|Descripción
----|---
-[Detectar y bloquear aplicaciones potencialmente no deseadas](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)|Detectar y bloquear aplicaciones que pueden no ser deseadas en la red, como el software publicitario, modificadores de explorador y barras de herramientas, y aplicaciones antivirus falsas o falsas
-[Habilitar y configurar las Antivirus de Microsoft Defender de protección](configure-real-time-protection-microsoft-defender-antivirus.md)|Habilitar y configurar la protección en tiempo real, la heurística y otras características de supervisión Antivirus de Microsoft Defender siempre activas
+| Tema|Descripción |
+|---|---|
+| [Detectar y bloquear aplicaciones potencialmente no deseadas](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)| Detectar y bloquear aplicaciones que pueden no ser deseadas en la red, como el software publicitario, modificadores de explorador y barras de herramientas, y aplicaciones antivirus falsas o falsas |
+| [Habilitar y configurar las Antivirus de Microsoft Defender de protección](configure-real-time-protection-microsoft-defender-antivirus.md)|Habilitar y configurar la protección en tiempo real, la heurística y otras características de supervisión Antivirus de Microsoft Defender siempre activas |

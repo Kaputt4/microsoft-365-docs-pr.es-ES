@@ -23,40 +23,55 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Cree un buzón de sala o equipamiento para que todos los usuarios de su organización puedan reservarlo para reuniones o eventos con Outlook. '
-ms.openlocfilehash: 7c4406a16e3318adabcb50ff14ef75b0abce1b6d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 3ee0d5dd137fa9c7be87891696d74efc9ef94512
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566179"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355946"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Buzones de sala y equipamiento
 
 Si tiene una sala de conferencias, un coche de la empresa o equipamiento que todos necesitan usar, entonces necesita encontrar una manera de hacer que todos los usuarios puedan reservar esos recursos. La mejor manera de hacerlo es crear un buzón de correo de equipamiento o de sala en Microsoft 365 para cada recurso. Puede crear uno para la sala de conferencias de la primera planta, el equipamiento multimedia o un camión de mudanza.
   
-Una vez que cree un buzón de sala o equipamiento, todas las personas de la empresa pueden reservarlo para reuniones o eventos con Outlook. Obtenga información **sobre cómo usarlo** y **cómo configurarlo** en las dos pestañas siguientes. Aquí se muestran otras preguntas comunes sobre los buzones de sala y equipamiento. 
+Una vez que cree un buzón de sala o equipamiento, todas las personas de la empresa pueden reservarlo para reuniones o eventos con Outlook. Obtenga información **sobre cómo usarlo** y **cómo configurarlo** en las dos pestañas siguientes. Aquí se muestran otras preguntas comunes sobre los buzones de sala y equipamiento.
   
 ## <a name="use-room-and-equipment-mailboxes"></a>Usar buzones de sala y equipamiento
 
 Para usar buzones de equipamiento o de sala, abra Outlook desde su equipo o inicie sesión en Outlook en la Web. Programe una reunión nueva y agregue la sala o el equipamiento a la reunión como haría al invitar a otros empleados o clientes. Ahora ya lo ha reservado.
   
-1. Abra **Outlook** en el equipo. 
+1. Abra **Outlook** en el equipo.
+
+2. En la pestaña **Inicio**, pulse **Nuevos elementos** \> **Reunión**.
+
+   ![To schedule a meeting, on the Home tab, in the New group, choose New Items, and then Meeting.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)
+
+   O, desde su calendario, simplemente seleccione **Nueva reunión**.
     
-2. En la pestaña **Inicio**, pulse **Nuevos elementos** \> **Reunión**.<br/>![Para programar una reunión, en la pestaña Inicio, en el grupo Nuevo, pulse Nuevos elementos y, después, Reunión.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>O, desde su calendario, simplemente seleccione **Nueva reunión**.
-    
-3. En el campo Para, escriba el nombre de la sala de conferencias o del equipamiento que quiere reservar, además de los asistentes a los que quiere invitar.<br/>O bien seleccione **Para** y haga doble clic en la sala de conferencias o en el equipamiento de la lista. A continuación, seleccione **Aceptar**.<br/>![Reservar un buzón de sala en Outlook](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
+3. En el campo Para, escriba el nombre de la sala de conferencias o del equipamiento que quiere reservar, además de los asistentes a los que quiere invitar.
+
+   O bien seleccione **Para** y haga doble clic en la sala de conferencias o en el equipamiento de la lista. A continuación, seleccione **Aceptar**.
+
+   ![Reservar un buzón de sala en Outlook.](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
 4. En la línea **Asunto**, escriba la finalidad de la reserva o de la reunión. 
     
 5. Cambie el valor de la **ubicación** o déjelo como está. 
     
-6. Cambie la **Hora de inicio** y la **Hora de finalización**. O bien pulse **Todo el día**. Para que se repita la reunión o la reserva, pulse **Periodicidad** en la parte superior.<br/>![Reservar una hora de reunión.](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
+6. Cambie la **Hora de inicio** y la **Hora de finalización**. O bien pulse **Todo el día**. Para que se repita la reunión o la reserva, pulse **Periodicidad** en la parte superior.
+ 
+   ![Reservar una hora de reunión.](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
 7. Escriba un mensaje describiendo la finalidad y adjunte algún archivo si es necesario.
     
 8. Para permitir que otras personas se unan en línea o llamen a la reunión, seleccione **Reunión de Skype**.
     
-9. Para garantizar que tanto la sala como el equipamiento y las personas que haya invitado estén disponibles, seleccione **Asistente para programación** en la parte superior. A continuación, seleccione una hora que esté disponible en el calendario.<br/> ![Comprobar si el equipamiento de la sala está disponible.](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>SUGERENCIA: En el calendario de programación, el azul significa que la sala o el equipo está reservado o ocupado. Seleccione el área blanca o libre del calendario. 
+9. Para garantizar que tanto la sala como el equipamiento y las personas que haya invitado estén disponibles, seleccione **Asistente para programación** en la parte superior. A continuación, seleccione una hora que esté disponible en el calendario.
+
+   ![Comprobar si el equipamiento de la sala está disponible.](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)
+
+   > [!TIP]
+   > En el calendario de la programación, azul significa que la sala o el equipamiento están reservados u ocupados. Seleccione el área libre o en blanco del calendario. 
   
 10. Cuando finalice, haga clic en **Enviar**.
     
@@ -68,19 +83,21 @@ Para configurar un buzón de sala o equipamiento, vaya al <a href="https://go.mi
   
 2. Seleccione **Agregar**.
     
-3. Rellene los campos de la sala o del equipamiento:<br/>![Agregar un buzón de sala en Microsoft 365.](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Rellene los campos de la sala o del equipamiento:
+
+   ![Agregar un buzón de sala en Microsoft 365.](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)
   
-  - **Sala** o **Equipamiento**: el tipo de buzón que quiere crear.
+   - **Sala** o **Equipamiento**: el tipo de buzón que quiere crear.
     
-  - **Nombre**: un nombre descriptivo o incluso una descripción breve.
+   - **Nombre**: un nombre descriptivo o incluso una descripción breve.
     
-  - **Correo electrónico**: el alias de correo electrónico de la sala o del equipamiento. Esto es necesario para enviar una solicitud de reunión a la sala o al equipamiento.
+   - **Correo electrónico**: el alias de correo electrónico de la sala o del equipamiento. Esto es necesario para enviar una solicitud de reunión a la sala o al equipamiento.
     
-  - **Capacidad**: el número de personas que pueden encontrarse en la sala o usar el equipamiento a la vez.
+   - **Capacidad**: el número de personas que pueden encontrarse en la sala o usar el equipamiento a la vez.
     
-  - **Ubicación**: el número de la sala o la ubicación de esta en un edificio o región.
+   - **Ubicación**: el número de la sala o la ubicación de esta en un edificio o región.
     
-  - **Número de teléfono**: el número de la sala. Esto es diferente del número de teléfono de la reunión que se ha generado al usar Skype Empresarial.
+   - **Número de teléfono**: el número de la sala. Esto es diferente del número de teléfono de la reunión que se ha generado al usar Skype Empresarial.
     
 4. Seleccione **Agregar**.
     
@@ -103,11 +120,11 @@ Abra la reunión que ha programado en Outlook y, después, quite la sala o el eq
   
 ### <a name="does-someone-have-to-accept-or-decline-every-room-or-equipment-request"></a>¿Alguien tiene que aceptar o rechazar cada solicitud de sala o equipamiento?
 
- No, no necesita que nadie acepte o rechace las solicitudes. Puede decidir si quiere permitir que la sala o el equipamiento se puedan reservar de manera automática o si prefiere que lo administre un miembro de la empresa. 
+No, no necesita que nadie acepte o rechace las solicitudes. Puede decidir si quiere permitir que la sala o el equipamiento se puedan reservar de manera automática o si prefiere que lo administre un miembro de la empresa. 
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>¿Un buzón de sala o un buzón de correo de equipamiento necesitan una licencia de producto?
 
-No. Aunque la mayoría de los usuarios de su organización necesita una licencia para usar Microsoft 365, no tiene que asignar ninguna licencia a un buzón de sala o buzón de correo de equipamiento.
+No. Aunque la mayoría de las personas de la organización necesitan una licencia para usar Microsoft 365, no es necesario asignar una licencia a un buzón de sala o un buzón de equipamiento, en caso de que el buzón de recursos necesite tener un tamaño superior a 50 GB, o, en caso de que se necesiten algunas características (directivas de retención de seguridad y cumplimiento, o retención de Exchange Online) o, en caso de que el buzón de recursos no necesite un archivo en línea adjunto.
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>¿Necesito un propietario que se encargue de reservar las salas o el equipamiento?
 

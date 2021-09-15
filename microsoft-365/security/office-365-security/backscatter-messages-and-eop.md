@@ -19,12 +19,12 @@ ms.custom:
 description: En este artículo, aprenderá sobre Backscatter y Microsoft Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5882f611c3feec9a22760e696973cd0713649b2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31af8d1467d1e38287c8308dcbac5e55fb7478bf
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192374"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356118"
 ---
 # <a name="backscatter-in-eop"></a>Reenvío masivo de correo electrónico en EOP
 
@@ -35,11 +35,11 @@ ms.locfileid: "59192374"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-*Backscatter* son informes de no entrega (también conocidos como NDR o mensajes de rebote) que recibe para los mensajes que no envió. Los emisores de correo electrónico no deseado falsifican (suplantan electrónicamente) la dirección De: de sus mensajes y, a menudo, utilizan direcciones de correo electrónico reales para dar credibilidad a sus mensajes. Por lo tanto, cuando los spammers envían mensajes inevitablemente a destinatarios inexistentes (el correo no deseado es una operación de gran volumen), el servidor de correo electrónico de destino es esencialmente engañado para devolver el mensaje no entregado en un NDR al remitente falsificado en la dirección De: .
+*Backscatter* son informes de no entrega (también conocidos como NDR o mensajes de despegar) que recibe para los mensajes que no envió. El backscatter se debe a que los spammers forjan (suplantan) la dirección From (también conocida como la dirección `5322.From` O P2) en sus mensajes. Los spammers suelen usar direcciones de correo electrónico reales como la dirección De para dar crédito a sus mensajes. Cuando el correo no deseado se envía a un destinatario inexistente, el servidor de correo electrónico de destino es esencialmente engañado para devolver el mensaje no entregado en un NDR al remitente falsificado en la dirección De.
 
 En Microsoft 365 organizaciones con buzones en organizaciones de Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP hace todo lo posible para identificar y colocar mensajes de orígenes dudosos sin generar un NDR. Pero, en función del gran volumen de correo electrónico que fluye a través del servicio, siempre existe la posibilidad de que EOP envíe de forma involuntaria backscatter.
 
-Backscatterer.org mantiene una lista de bloqueo (también conocida como lista de bloques DNS o DNSBL) de servidores de correo electrónico que eran responsables de enviar backscatter, y los servidores EOP podrían aparecer en esta lista. Pero no intentamos quitarnos de la lista de Backscatterer.org porque no es una lista de spammers (por su propia admisión).
+Backscatterer.org mantiene una lista de bloqueo (también conocida como lista de bloqueo DNS o DNSBL) de servidores de correo electrónico que eran responsables de enviar backscatter, y los servidores EOP podrían aparecer en esta lista. Pero no intentamos quitarnos de la lista de bloqueo de Backscatterer.org porque (por su propia admisión) su lista no es una lista de spammers.
 
 > [!TIP]
-> El Backscatter.org web de Backscatter.org ( ) recomienda usar su servicio para comprobar el correo electrónico entrante en modo Caja fuerte en lugar del modo de rechazo (los servicios de correo electrónico grandes casi siempre envían algún <http://www.backscatterer.org/?target=usage> backscatter).
+> El sitio Backscatterer.org web ( ) recomienda usar su servicio en modo Caja fuerte en lugar del modo de rechazo, ya que los servicios de correo electrónico grandes casi siempre envían algún <http://www.backscatterer.org/?target=usage> backscatter.

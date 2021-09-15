@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
-ms.openlocfilehash: 937ca4baefe4456edb97bac7f5cfc56d346c08bb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2406dc875fce48e3af21258b5152fef6603cd923
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213600"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355425"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -128,16 +128,13 @@ Para obtener la inteligencia de seguridad antimalware actualizada, debe tener el
 
 De forma predeterminada, Windows Update no descarga e instala actualizaciones automáticamente en Windows Server 2019 o Windows Server 2016. Puede cambiar esta configuración mediante uno de los métodos siguientes:
 
-<br>
-
-****
+<br/><br/>
 
 |Método|Descripción|
 |---|---|
 |**Windows actualización en** el Panel de control|**Instalar actualizaciones automáticamente da como** resultado que todas las actualizaciones se instalen automáticamente, incluidas Windows Defender de inteligencia de seguridad. <p> **Descargue las actualizaciones, pero permítanme** elegir si instalarlas permite a Windows Defender descargar e instalar actualizaciones de inteligencia de seguridad automáticamente, pero otras actualizaciones no se instalan automáticamente.|
 |**Directiva de grupo**|Puede configurar y administrar Windows Update mediante la configuración disponible en la directiva de grupo, en la siguiente ruta de acceso: **Plantillas administrativas\componentes Windows\Windows Actualizar\Configurar** actualizaciones automáticas|
 |La **clave del Registro AUOptions**|Los dos valores siguientes permiten a Windows Update descargar e instalar automáticamente las actualizaciones de inteligencia de seguridad: <p> **4**  -  **Instalar actualizaciones automáticamente**. Este valor da como resultado que todas las actualizaciones se instalen automáticamente, incluidas Windows Defender de inteligencia de seguridad. <p> **3**  -  **Descargue las actualizaciones, pero permítanme elegir si desea instalarlas.** Este valor permite Windows Defender descargar e instalar actualizaciones de inteligencia de seguridad automáticamente, pero otras actualizaciones no se instalan automáticamente.|
-|
 
 Para garantizar que se mantiene la protección contra malware, se recomienda habilitar los siguientes servicios:
 

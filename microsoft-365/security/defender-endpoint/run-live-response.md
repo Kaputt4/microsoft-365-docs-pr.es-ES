@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f94e4d5e51b6a846a0439e3833a01d252c51bd0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae3b0e3ad09487d9b48ddab10a43eb36e5abed35
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218277"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353675"
 ---
-#  <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
+# <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,19 +50,19 @@ Ejecuta una secuencia de comandos de respuesta en directo en un dispositivo
 
 ## <a name="limitations"></a>Limitaciones
 
-1.  Las limitaciones de velocidad para esta API son 10 llamadas por minuto (las solicitudes adicionales se responden con HTTP 429).
+1. Las limitaciones de velocidad para esta API son 10 llamadas por minuto (las solicitudes adicionales se responden con HTTP 429).
 
-2.  25 sesiones en ejecución simultánea (las solicitudes que superen el límite de limitación recibirán una respuesta "429 - Demasiadas solicitudes").
+2. 25 sesiones en ejecución simultánea (las solicitudes que superen el límite de limitación recibirán una respuesta "429 - Demasiadas solicitudes").
 
-3.  Si el equipo no está disponible, la sesión se pondrá en cola durante un máximo de 3 días.
+3. Si el equipo no está disponible, la sesión se pondrá en cola durante un máximo de 3 días.
 
-4.  Los tiempos de espera del comando RunScript se agotan después de 10 minutos.
+4. Los tiempos de espera del comando RunScript se agotan después de 10 minutos.
 
-5.  Los comandos de respuesta activa no se pueden poner en cola y solo se pueden ejecutar uno a la vez. 
+5. Los comandos de respuesta activa no se pueden poner en cola y solo se pueden ejecutar uno a la vez.
 
-6.  Si la máquina que intenta ejecutar esta llamada a la API se encuentra en un grupo de dispositivos RBAC que no tiene asignado un nivel de corrección automatizado, deberá habilitar al menos el nivel mínimo de corrección para un grupo de dispositivos determinado.
+6. Si la máquina que intenta ejecutar esta llamada a la API se encuentra en un grupo de dispositivos RBAC que no tiene asignado un nivel de corrección automatizado, deberá habilitar al menos el nivel mínimo de corrección para un grupo de dispositivos determinado.
 
-7.  Se pueden ejecutar varios comandos de respuesta en directo en una sola llamada a la API. Sin embargo, cuando se produce un error en un comando de respuesta en directo, no se ejecutarán todas las acciones posteriores.
+7. Se pueden ejecutar varios comandos de respuesta en directo en una sola llamada a la API. Sin embargo, cuando se produce un error en un comando de respuesta en directo, no se ejecutarán todas las acciones posteriores.
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
@@ -82,7 +82,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   - **Windows Servidor 2019: solo aplicable para la versión preliminar pública**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
     - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
-    
+
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Get started](apis-intro.md).
@@ -102,7 +102,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Authorization|Cadena|Portador\<token>\. Obligatorio.|
+|Authorization|String|Portador\<token>\. Obligatorio.|
 |Content-Type|string|application/json. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -112,7 +112,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 |Comentario|Cadena|Comentario para asociarlo a la acción.|
 |Comandos|Matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|
 
-**Comandos**:
+## <a name="commands"></a>Comandos
 
 |Tipo de comando|Parámetros|Description|
 |---|---|---|

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3049d77ef7f934a254da54a63560e33fe2603e3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18f2aa79632378e477ae79f6f621fbea72350bca
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187430"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356679"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
@@ -53,7 +53,7 @@ Al trabajar con características en versión preliminar pública, estas caracter
 - Son totalmente compatibles con Microsoft.
 - Solo puede estar disponible en regiones geográficas seleccionadas o entornos en la nube. Por ejemplo, es posible que la característica no exista en la nube del gobierno.
 - Las características individuales de la versión preliminar pueden tener más restricciones de uso y compatibilidad. Si es así, esta información se indica normalmente en la documentación de características.
-- Las versiones preliminares se proporcionan con un nivel de soporte estándar y se pueden usar para entornos de producción. 
+- Las versiones preliminares se proporcionan con un nivel de soporte estándar y se pueden usar para entornos de producción.
 
 ## <a name="turn-on-preview-features"></a>Activar la versión preliminar de las características
 
@@ -61,9 +61,9 @@ Tendrás acceso a las próximas características sobre las que puedes proporcion
 
 Active la configuración de la experiencia de la versión preliminar para estar entre los primeros en probar las próximas características.
 
-1. En el panel de navegación, seleccione **Configuración**  >  **Endpoints**  >  **Advanced features** Preview  >  **features**.
+1. En el panel de navegación, seleccione **Configuración** \> **Endpoints** \> **Advanced features** Preview \> **features**.
 
 2. Alterna la configuración entre **Activar** y **Desactivar** y selecciona **Guardar preferencias**.
 
 > [!TIP]
-> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)  
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)

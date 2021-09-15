@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: fb78ee4b6cc8c79b2e8ef3aeda55fcbd66499d4d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1aed90c47ca72cb514d8d3df1fa22e5dff4feb44
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165499"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357294"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Implementar capacidades de protección contra amenazas en Microsoft 365 E5
 
@@ -56,11 +56,11 @@ En la siguiente ilustración se muestra una ruta de acceso recomendada para impl
 > [!div class="mx-imgBorder"]
 > ![Señales de protección contra amenazas M365.](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
 
-Vea este vídeo para obtener información general del proceso.
+Vea este vídeo para obtener información general del proceso de implementación.
 <br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI7]
 
-En la tabla siguiente se describen las distintas soluciones/capacidades que se deben configurar y lo que hacen.
+En la tabla siguiente se describen las distintas soluciones/capacidades que se deben configurar y lo que hacen.<br/><br/>
 
 |Paso |Solución/funcionalidades  |Descripción  |
 |--|---------|---------|

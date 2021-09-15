@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: b20107b33a0bff72375885b11f205fa915a3b718
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b920cdd703a3c2893da3a4df3cc5b62513970c9
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166979"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357662"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Administrar Microsoft Defender para endpoint con PowerShell, WMI y MPCmdRun.exe
 
@@ -51,7 +51,7 @@ Puede administrar algunas opciones Antivirus de Microsoft Defender en dispositiv
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-powershell"></a>Configurar Microsoft Defender para endpoint con PowerShell
 
-Puede usar PowerShell para administrar el Antivirus de Microsoft Defender, la protección contra vulnerabilidades y las reglas de reducción de superficie de ataque.
+Puede usar PowerShell para administrar el Antivirus de Microsoft Defender, la protección contra vulnerabilidades y las reglas de reducción de superficie de ataque.<br/><br/>
 
 |Tarea|Recursos para obtener más información|
 |---|---|
@@ -74,7 +74,7 @@ WMI es una interfaz de scripting que permite recuperar, modificar y actualizar l
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe"></a>Configurar Microsoft Defender para endpoint con Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe)
 
-En un dispositivo individual, puede ejecutar un examen, iniciar el seguimiento de diagnóstico, comprobar si hay actualizaciones de inteligencia de seguridad y mucho más con la mpcmdrun.exe de línea de comandos. Puede encontrar la utilidad en `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Ejecutarlo desde un símbolo del sistema.
+En un dispositivo individual, puede ejecutar un examen, iniciar el seguimiento de diagnóstico, comprobar si hay actualizaciones de inteligencia de seguridad y mucho más con la mpcmdrun.exe de línea de comandos. Puede encontrar la utilidad en `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Ejecutarlo desde un símbolo del sistema.<br/><br/>
 
 |Tarea|Recursos para obtener más información|
 |---|---|

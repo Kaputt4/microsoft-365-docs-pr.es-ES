@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aprende a migrar el correo electrónico, los contactos y el calendario de Google Workspace a Microsoft 365 para empresas.
-ms.openlocfilehash: cde27ce3ab94b003d9950f1b4bc2af270dea906e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 58037d033c35bad97d5b18dc408e5450340d0c25
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211267"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357199"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrar el calendario y el correo electrónico empresarial desde Google Workspace
 
@@ -50,7 +50,7 @@ El proceso de migración toma varios pasos y puede tardar de varias horas a un p
 1. Seleccione Habilitar la delegación de todo el dominio de **G Suite,** escriba un nombre de producto para la pantalla de consentimiento y elija **Guardar**. 
 
     > [!NOTE]
-> El proceso de migración no usa el nombre del producto, pero es necesario guardarlo en el cuadro de diálogo.     
+    > El proceso de migración no usa el nombre del producto, pero es necesario guardarlo en el cuadro de diálogo.     
 
 1. Vuelva a **abrir el menú** Acciones y seleccione Crear **clave**. 
 1. Elija **JSON** y, a **continuación, Cree**. 
@@ -64,7 +64,7 @@ El proceso de migración toma varios pasos y puede tardar de varias horas a un p
 1. Vaya a la [página API](https://console.developers.google.com/apis/library). 
 1. En la barra de búsqueda, escriba **API de Gmail**.
 1. Selecciónelo y, a continuación, **elija Habilitar**.
-1. Repita este proceso para la API de Calendario de Google y la API de contactos. 
+1. Repita este proceso para la API de Calendario de Google, la API de personas y la API de contactos. 
 
 ### <a name="grant-access-to-the-service-account"></a>Conceder acceso a la cuenta de servicio
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 6f652987caf977e520dc0681b54c605f7a03b3e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5fa34de0394c1455fccb70a875fe12cddee3ed8
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221918"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357431"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Revisar eventos y errores con el Visor de eventos
 
@@ -81,7 +81,7 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
    |26|Microsoft Defender para el servicio de extremo no pudo establecer el estado de incorporación en el Registro. Código de error: `variable` .|El dispositivo no se incorporó correctamente. <p> Se presentará en el portal, pero es posible que el servicio no aparezca como registrado en SCCM o en el Registro.|Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
    |27|El servicio de Microsoft Defender para puntos de conexión no pudo habilitar el modo consciente de SENSE en Antivirus de Microsoft Defender. Error en el proceso de incorporación. Código de error: `variable` .|Normalmente, Antivirus de Microsoft Defender un estado pasivo especial si otro producto antimalware en tiempo real se ejecuta correctamente en el dispositivo y el dispositivo informa a Defender para endpoint.|Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md). <p> Asegúrese de que la protección antimalware en tiempo real se está ejecutando correctamente.|
    |28|Error en el registro del servicio de telemetría y experiencias de usuario conectado de Microsoft Defender para puntos de conexión. Código de error: `variable` .|Se produjo un error con el servicio Windows telemetría.|[Asegúrese de que el servicio de datos de diagnóstico está habilitado.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) <p> Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
-   |29|No se pudieron leer los parámetros de offboarding. Tipo de error: %1, Código de error: %2, Descripción: %3|Este evento se produce cuando el sistema&#39;leer los parámetros de offboarding.|Asegúrate de que el dispositivo tiene acceso a Internet y, a continuación, vuelve a ejecutar todo el proceso de offboarding. Asegúrese de que el paquete de offboarding no ha expirado.|
+   |29|No se pudieron leer los parámetros de offboarding. Tipo de error: %1, Código de error: %2, Descripción: %3|Este evento se produce cuando el sistema no puede leer los parámetros de offboarding.|Asegúrate de que el dispositivo tiene acceso a Internet y, a continuación, vuelve a ejecutar todo el proceso de offboarding. Asegúrese de que el paquete de offboarding no ha expirado.|
    |30|Microsoft Defender para el servicio de extremo no pudo deshabilitar el modo consciente de SENSE en Antivirus de Microsoft Defender. Código de error: `variable` .|Normalmente, Antivirus de Microsoft Defender un estado pasivo especial si otro producto antimalware en tiempo real se ejecuta correctamente en el dispositivo y el dispositivo informa a Defender para endpoint.|Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md). <p> Asegúrese de que la protección antimalware en tiempo real se está ejecutando correctamente.|
    |31|Error en la anulación de la registro de Microsoft Defender para experiencias de usuario conectadas a puntos de conexión y servicio de telemetría. Código de error: `variable` .|Se produjo un error con el Windows de telemetría durante la incorporación. El proceso de offboarding continúa.|[Compruebe si hay errores con el servicio Windows telemetría](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled).|
    |32|Microsoft Defender para el servicio de extremo no pudo solicitar que se detuviera después del proceso de desaborde. Código de error: %1|Se produjo un error durante el offboarding.|Reinicie el dispositivo.|
@@ -149,7 +149,7 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 - [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
 - [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md)
 - [Solucionar problemas de Microsoft Defender para punto de conexión](troubleshoot-onboarding.md)

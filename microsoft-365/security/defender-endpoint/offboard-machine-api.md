@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 83e43a36df3d4b4d0efdfd655e929c8aa39aeb74
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b62dbc0881ffe1b7129c053d13ee509796aef5b9
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218370"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357394"
 ---
 # <a name="offboard-machine-api"></a>API de máquina fuera de la máquina
 
@@ -32,8 +32,6 @@ ms.locfileid: "59218370"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -47,10 +45,11 @@ Dispositivo offboard de Defender para endpoint.
 
 - Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
-[!include[Machine actions note](../../includes/machineactionsnote.md)]
+  [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
->[!Note]
+> [!NOTE]
 > Esta API se admite en Windows 10, versión 1703 y posteriores, o Windows Server 2019 y versiones posteriores.
+>
 > Esta API no se admite en dispositivos MacOS o Linux.
 
 ## <a name="permissions"></a>Permisos
@@ -58,7 +57,7 @@ Dispositivo offboard de Defender para endpoint.
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Defender for Endpoint API](apis-intro.md)
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
-:---|:---|:---
+---|---|---
 Aplicación|Machine.Offboard|'Offboard machine'
 Delegado (cuenta profesional o educativa)|Machine.Offboard|'Offboard machine'
 
@@ -77,16 +76,16 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ## <a name="request-headers"></a>Encabezados de solicitud
 
 Nombre|Tipo|Descripción
-:---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|string|application/json. **Necesario**.
+---|---|---
+Authorization|String|Portador {token}. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Description
-:---|:---|:---
+Parámetro|Tipo|Descripción
+---|---|---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
 
 ## <a name="response"></a>Respuesta

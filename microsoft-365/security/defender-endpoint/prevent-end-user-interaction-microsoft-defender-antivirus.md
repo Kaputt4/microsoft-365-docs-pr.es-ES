@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 73a802f158b8804d7cf94708ecf3a6ac9355baae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: af938fda518e5a7eea3cb9341f04c8573a647044
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187425"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357076"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario
 
@@ -46,8 +46,8 @@ Con la configuración establecida en **Deshabilitado** o no configurada:
 
 :::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Captura de pantalla Seguridad de Windows con el icono de escudo y las secciones de protección contra amenazas.":::
 
->[!NOTE]
->Ocultar la interfaz también impedirá que Antivirus de Microsoft Defender notificaciones en el punto de conexión. Las notificaciones de Microsoft Defender para puntos de conexión seguirán apareciendo. También puede configurar [individualmente las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
+> [!NOTE]
+> Ocultar la interfaz también impedirá que Antivirus de Microsoft Defender notificaciones en el punto de conexión. Las notificaciones de Microsoft Defender para puntos de conexión seguirán apareciendo. También puede configurar [individualmente las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
 
 En versiones anteriores de Windows 10, la configuración ocultará la interfaz Windows Defender cliente. Si el usuario intenta abrirlo, recibirá una advertencia que indica: "El administrador del sistema ha restringido el acceso a esta aplicación".
 
@@ -63,7 +63,7 @@ En versiones anteriores de Windows 10, la configuración ocultará la interfaz W
 
 4. Expanda el árbol para Windows **componentes > Antivirus de Microsoft Defender > interfaz de cliente**.
 
-5. Haz doble clic en **la opción Habilitar modo de interfaz de** usuario sin cabeza y establece la opción en **Habilitado**. Haga clic en **Aceptar**. 
+5. Haz doble clic en **la opción Habilitar modo de interfaz de** usuario sin cabeza y establece la opción en **Habilitado**. Haga clic en **Aceptar**.
 
 Consulta [Impedir que los usuarios modifiquen localmente](configure-local-policy-overrides-microsoft-defender-antivirus.md) la configuración de directiva para obtener más opciones sobre cómo impedir que los usuarios forme parte de la protección de sus equipos.
 
@@ -82,14 +82,12 @@ Puede impedir que los usuarios pauten los exámenes, lo que puede ser útil para
 
 3. Haga clic **en Plantillas administrativas**.
 
-4. Expanda el árbol para Windows **componentes**  >  **Antivirus de Microsoft Defender**  >  **Scan**.
+4. Expanda el árbol para Windows **componentes** \> **Antivirus de Microsoft Defender** \> **Scan**.
 
-5. Haga doble clic en **la opción Permitir a los usuarios pausar el** examen y establezca la opción en **Deshabilitado**. Haga clic en **Aceptar**. 
+5. Haga doble clic en **la opción Permitir a los usuarios pausar el** examen y establezca la opción en **Deshabilitado**. Haga clic en **Aceptar**.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
 - [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
-
 - [Configurar la interacción del usuario final con Antivirus de Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)
-
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: b46cc436c9ff616f5562787327df8ec9031e0ead
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b927f9bfb1ad9949adc8789b4dfd90b4e56c60b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166907"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357057"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para endpoint- Fase 1: Preparar
 
@@ -40,7 +40,7 @@ ms.locfileid: "59166907"
 |--|--|--|
 |*¡Estás aquí!*| | |
 
-**Bienvenido a la fase Preparar de [cambiar a Defender para endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. 
+**Bienvenido a la fase Preparar de [cambiar a Defender para endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**.
 
 Esta fase de migración incluye los siguientes pasos:
 
@@ -55,7 +55,7 @@ Como práctica recomendada, mantenga actualizados los dispositivos y los puntos 
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>Asegúrese de que la solución existente esté actualizada
 
-Mantenga actualizada la solución de protección de puntos de conexión existente y asegúrese de que los dispositivos de su organización tienen las actualizaciones de seguridad más recientes. 
+Mantenga actualizada la solución de protección de puntos de conexión existente y asegúrese de que los dispositivos de su organización tienen las actualizaciones de seguridad más recientes.
 
 ¿Necesita ayuda? Consulte la documentación del proveedor de soluciones.
 
@@ -63,27 +63,29 @@ Mantenga actualizada la solución de protección de puntos de conexión existent
 
 ¿Necesita ayuda para actualizar los dispositivos de su organización? Vea los siguientes recursos:
 
-|SO | Resource |
-|:--|:--|
-|Windows |[Microsoft Update](https://www.update.microsoft.com) |
-|macOS | [Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|
-|iOS |[Actualizar el iPhone, iPad o iPod touch](https://support.apple.com/HT204204)|
-|Android |[Comprobar & actualizar la versión de Android](https://support.google.com/android/answer/7680439) |
-|Linux | [Linux 101: actualizar el sistema](https://www.linux.com/training-tutorials/linux-101-updating-your-system) |
+<br/><br/>
+
+|SO|Recurso|
+|---|---|
+|Windows|[Microsoft Update](https://www.update.microsoft.com)|
+|macOS|[Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|
+|iOS|[Actualizar el iPhone, iPad o iPod touch](https://support.apple.com/HT204204)|
+|Android|[Comprobar & actualizar la versión de Android](https://support.google.com/android/answer/7680439)|
+|Linux|[Linux 101: actualizar el sistema](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
 
 ## <a name="get-microsoft-defender-for-endpoint"></a>Obtener Microsoft Defender para endpoint
 
 Ahora que ha actualizado los dispositivos de su organización, el siguiente paso es obtener Defender for Endpoint, asignar licencias y asegurarse de que el servicio está aprovisionado.
 
-1. Compre o pruebe Defender for Endpoint hoy mismo. [Inicie una prueba gratuita o solicite una cotización](https://aka.ms/mdatp). 
+1. Compre o pruebe Defender for Endpoint hoy mismo. [Inicie una prueba gratuita o solicite una cotización](https://aka.ms/mdatp).
 
 2. Compruebe que las licencias están aprovisionadas correctamente. [Compruebe el estado de la licencia](production-deployment.md#check-license-state).
 
 3. Configura la instancia de nube dedicada de Defender para Endpoint. Vea [Defender for Endpoint setup: Tenant configuration](production-deployment.md#tenant-configuration).
 
 4. Si los puntos de conexión (como dispositivos) de su organización usan un proxy para tener acceso a Internet, vea Configuración de defender para puntos de [conexión: Configuración de red](production-deployment.md#network-configuration).
- 
-En este punto, está listo para conceder acceso a los administradores de seguridad y operadores de seguridad que usarán el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ). 
+
+En este punto, está listo para conceder acceso a los administradores de seguridad y operadores de seguridad que usarán el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
 > [!NOTE]
 > El Microsoft 365 Defender se conoce a veces como el portal de Defender para endpoint y se puede obtener acceso a este en [https://security.microsoft.com](https://security.microsoft.com) . The former Centro de seguridad de Microsoft Defender ( https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. Para obtener más información, [vea Microsoft 365 Defender información general del portal](portal-overview.md).
@@ -110,14 +112,16 @@ Los permisos del portal Microsoft 365 Defender pueden concederse mediante permis
 
 Para habilitar la comunicación entre los dispositivos y Defender para endpoint, configure la configuración de proxy e Internet. En la tabla siguiente se incluyen vínculos a los recursos que puede usar para configurar el proxy y la configuración de Internet para varios sistemas operativos y capacidades:
 
-| Capacidades  | Sistema operativo | Resources |
-|:--|:--|:--|
-| [Detección y respuesta de extremos](overview-endpoint-detection-response.md) (EDR) | [Windows 10](/windows/release-health/release-information) <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803)  | [Configurar el proxy de máquina y la configuración de conectividad a Internet](configure-proxy-internet.md) |
-| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-| EDR  | macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)   | [Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)  |
-| [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803) <br/>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md) |
-| Antivirus | macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave) | [Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections) |
-| Antivirus | Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS o LTS superior; SLES 12+; Debian 9+; Oracle Linux 7.2 | [Defender para endpoint en Linux: conexiones de red](microsoft-defender-endpoint-linux.md#network-connections) |
+<br/><br/>
+
+|Capacidades|Sistema operativo|Recursos|
+|---|---|---|
+|[Detección y respuesta de extremos](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <p> [Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configurar el proxy de máquina y la configuración de conectividad a Internet](configure-proxy-internet.md)|
+|EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <p> [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|EDR|macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|[Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
+|[Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <p> [Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803) <p> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)|
+|Antivirus|macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|[Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
+|Antivirus|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS o LTS superior; SLES 12+; Debian 9+; Oracle Linux 7.2|[Defender para endpoint en Linux: conexiones de red](microsoft-defender-endpoint-linux.md#network-connections)|
 
 ## <a name="next-step"></a>Paso siguiente
 

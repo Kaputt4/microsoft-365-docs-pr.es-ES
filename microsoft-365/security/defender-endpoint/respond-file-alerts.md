@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f1ea6f3b2dd9447ff9901518a80aafa4dec56a5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b9f7cda368f9770a645fa588597196eccf038b4f
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166915"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356653"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -56,7 +56,7 @@ Algunas acciones requieren ciertos permisos. En la tabla siguiente se describe q
 ****
 
 |Permiso|Archivos PE|Archivos que no son PE|
-|:---------------------|:------:|:----------:|
+|---|:---:|:---:|
 |Ver datos|X|X|
 |Investigación de alertas|&#x2611;|X|
 |Respuesta en directo básica|X|X|
@@ -160,7 +160,7 @@ Los archivos que han sido puestos en cuarentena por Antivirus de Microsoft Defen
 
 La ubicación depende de la configuración geográfica de su organización (UE, Reino Unido o EE. UU.). Un archivo en cuarentena solo se recopilará una vez por organización. Obtenga más información sobre la protección de datos de Microsoft desde el Portal de confianza de servicio en https://aka.ms/STP .
 
-Tener activada esta configuración puede ayudar a los equipos de seguridad a examinar archivos potencialmente no deseados e investigar incidentes de forma rápida y menos arriesgada. Sin embargo, si necesita desactivar esta configuración, vaya **a Configuración** Características avanzadas de extremos descargar archivos en cuarentena para  >    >    >   ajustar la configuración. [Más información sobre las características avanzadas](advanced-features.md)
+Tener activada esta configuración puede ayudar a los equipos de seguridad a examinar archivos potencialmente no deseados e investigar incidentes de forma rápida y menos arriesgada. Sin embargo, si necesita desactivar esta configuración, vaya **a Configuración** Características avanzadas de extremos descargar archivos en cuarentena para \>  \>  \>  ajustar la configuración. [Más información sobre las características avanzadas](advanced-features.md)
 
 #### <a name="backing-up-quarantined-files"></a>Copia de seguridad de archivos en cuarentena
 
@@ -168,13 +168,14 @@ Es posible que se pida a los usuarios que proporcionen un consentimiento explíc
 
 Esta característica no funcionará si el envío de ejemplo está desactivado. Si se establece el envío automático de muestra para solicitar permiso al usuario, solo se recopilarán las muestras que el usuario acepte enviar.
 
->[!IMPORTANT]
->Descargar requisitos de archivos en cuarentena:
->- Su organización usa Antivirus de Microsoft Defender en modo activo 
->- La versión del motor antivirus es 1.1.17300.4 o posterior. Ver [Versiones mensuales de la plataforma y el motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
->- La protección basada en la nube está habilitada. Consulte [Activar la protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
->- El envío de ejemplo está activado
->- Los dispositivos Windows 10 versión 1703 o posterior, o Windows 2016 o 2019
+> [!IMPORTANT]
+> Descargar requisitos de archivos en cuarentena:
+>
+> - Su organización usa Antivirus de Microsoft Defender en modo activo
+> - La versión del motor antivirus es 1.1.17300.4 o posterior. Ver [Versiones mensuales de la plataforma y el motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+> - La protección basada en la nube está habilitada. Consulte [Activar la protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
+> - El envío de ejemplo está activado
+> - Los dispositivos Windows 10 versión 1703 o posterior, o Windows 2016 o 2019
 
 ### <a name="collect-files"></a>Recopilar archivos
 
@@ -214,7 +215,7 @@ Consulta [Administrar indicadores para](manage-indicators.md) obtener más infor
 
 Para detener el bloqueo de un archivo, quite el indicador. Puede hacerlo a través de la acción **Editar indicador** en la página de perfil del archivo. Esta acción estará visible en la  misma posición que la acción Agregar indicador, antes de agregar el indicador.
 
-También puede editar indicadores desde la **página Configuración,** en   >  **Indicadores de reglas**. Los indicadores se enumeran en esta área mediante el hash de su archivo.
+También puede editar indicadores desde la **página Configuración,** en  \> **Indicadores de reglas**. Los indicadores se enumeran en esta área mediante el hash de su archivo.
 
 ## <a name="consult-a-threat-expert"></a>Consultar a un experto en amenazas
 
@@ -249,8 +250,6 @@ El resumen de análisis profundo incluye una lista de *comportamientos observado
 Los resultados del análisis profundo se comparan con la inteligencia de amenazas y cualquier coincidencia generará alertas adecuadas.
 
 Use la característica de análisis profundo para investigar los detalles de cualquier archivo, normalmente durante una investigación de una alerta o por cualquier otro motivo en el que sospeche un comportamiento malintencionado. Esta característica está disponible en la **pestaña Análisis profundo,** en la página de perfil del archivo.
-
-<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 

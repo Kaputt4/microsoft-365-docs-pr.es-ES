@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6f55e1a30f61b8ed41ec2575b26a9346ba45cafd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 824d32b07acbba0d19a5f2afdafffcbba53baeeb
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192477"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357586"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Respuesta a incidentes con Microsoft 365 Defender
 
@@ -181,23 +181,28 @@ Para obtener más información acerca de SecOps en todos los productos de Micros
 - [Procedimientos recomendados](/security/compass/security-operations)
 - [Vídeos y diapositivas](/security/compass/security-operations-videos-and-decks)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-**Si es nuevo en el análisis** de seguridad y la respuesta a incidentes:
+Use los pasos enumerados en función del nivel de experiencia o el rol del equipo de seguridad.
 
-- Consulte [el](first-incident-overview.md) tutorial Responder al primer incidente para obtener una visita guiada de un proceso típico de análisis, corrección y revisión posterior al incidente en el portal de Microsoft 365 Defender con un ataque de ejemplo.
+### <a name="experience-level"></a>Nivel de experiencia
 
-**Si tiene experiencia con el análisis** de seguridad y la respuesta a incidentes:
+Siga esta tabla para obtener su nivel de experiencia con el análisis de seguridad y la respuesta a incidentes.
 
-- Introducción a la cola de incidentes desde **la página Incidentes** del portal Microsoft 365 Defender incidentes. Desde ahí, puede hacer lo siguiente:
+| Nivel | Pasos |
+|:-------|:-----|
+| **New** | <ol><li> Consulte [el](first-incident-overview.md) tutorial Responder al primer incidente para obtener una visita guiada de un proceso típico de análisis, corrección y revisión posterior al incidente en el portal de Microsoft 365 Defender con un ataque de ejemplo. </li><li> Vea qué incidentes deben [priorizarse en](incident-queue.md) función de la gravedad y otros factores. </li><li> [Administrar incidentes, que](manage-incidents.md)incluye cambiar el nombre, asignar, clasificar y agregar etiquetas y comentarios en función del flujo de trabajo de administración de incidentes.</li></ol> |
+| **Experimentado** | <ol><li> Introducción a la cola de incidentes desde **la página Incidentes** del portal Microsoft 365 Defender incidentes. Desde allí, puedes hacer lo siguiente: </li> <ul><li> Vea qué incidentes deben [priorizarse en](incident-queue.md) función de la gravedad y otros factores. </li><li> [Administrar incidentes, que](manage-incidents.md)incluye cambiar el nombre, asignar, clasificar y agregar etiquetas y comentarios en función del flujo de trabajo de administración de incidentes. </li><li> Realizar [investigaciones](investigate-incidents.md) de incidentes. </li></ul> </li><li> Realizar un seguimiento y responder a amenazas emergentes con [análisis de amenazas.](threat-analytics.md) </li><li>  Búsqueda proactiva de amenazas con búsqueda [avanzada de amenazas.](advanced-hunting-overview.md) </li><li> Consulta estos [libros de reproducción de respuesta a](/security/compass/incident-response-playbooks) incidentes para obtener instrucciones detalladas sobre los ataques de suplantación de identidad (phishing), el uso de contraseñas y la concesión de consentimiento de la aplicación. </li></ol> |
 
-  - Vea qué incidentes deben [priorizarse en](incident-queue.md) función de la gravedad y otros factores. 
 
-  - [Administrar incidentes, que](manage-incidents.md)incluye cambiar el nombre, asignar, clasificar y agregar etiquetas y comentarios en función del flujo de trabajo de administración de incidentes.
+### <a name="security-team-role"></a>Rol de equipo de seguridad
 
-  - Realizar [investigaciones](investigate-incidents.md) de incidentes.
+Siga esta tabla en función del rol de equipo de seguridad.
 
-- Vea cómo [integrar Microsoft 365 Defender en el Centro de operaciones de seguridad (SOC).](integrate-microsoft-365-defender-secops.md)
-
-- Consulta estos [libros de reproducción de respuesta a](/security/compass/incident-response-playbooks) incidentes para obtener instrucciones detalladas sobre los ataques de suplantación de identidad (phishing), el uso de contraseñas y la concesión de consentimiento de la aplicación.
+| Rol | Pasos |
+|:-------|:-----|
+| Respondedor de incidentes (nivel 1) | Introducción a la cola de incidentes desde **la página Incidentes** del portal Microsoft 365 Defender incidentes. Desde allí, puedes hacer lo siguiente: <ul><li> Vea qué incidentes deben [priorizarse en](incident-queue.md) función de la gravedad y otros factores. </li><li> [Administrar incidentes, que](manage-incidents.md)incluye cambiar el nombre, asignar, clasificar y agregar etiquetas y comentarios en función del flujo de trabajo de administración de incidentes. </li></ul> |
+| Investigador o analista de seguridad (nivel 2) | <ol><li> Realice [investigaciones de](investigate-incidents.md) incidentes desde la **página Incidentes** del portal Microsoft 365 Defender web. </li><li> Consulta estos [libros de reproducción de respuesta a](/security/compass/incident-response-playbooks) incidentes para obtener instrucciones detalladas sobre los ataques de suplantación de identidad (phishing), el uso de contraseñas y la concesión de consentimiento de la aplicación. </li></ol> |
+| Analista de seguridad avanzado o cazador de amenazas (nivel 3) | <ol><li>Realice [investigaciones de](investigate-incidents.md) incidentes desde la **página Incidentes** del portal Microsoft 365 Defender web. </li><li> Realizar un seguimiento y responder a amenazas emergentes con [análisis de amenazas.](threat-analytics.md) </li><li> Búsqueda proactiva de amenazas con búsqueda [avanzada de amenazas.](advanced-hunting-overview.md) </li><li> Consulta estos [libros de reproducción de respuesta a](/security/compass/incident-response-playbooks) incidentes para obtener instrucciones detalladas sobre los ataques de suplantación de identidad (phishing), el uso de contraseñas y la concesión de consentimiento de la aplicación. |
+| Administrador de SOC | Vea cómo [integrar Microsoft 365 Defender en el Centro de operaciones de seguridad (SOC).](integrate-microsoft-365-defender-secops.md) |
 

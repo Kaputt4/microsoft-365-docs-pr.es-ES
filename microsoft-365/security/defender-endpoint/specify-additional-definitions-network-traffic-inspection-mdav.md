@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 82568df0a6ad2225fd31b4c0fa4a654710f1e98b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bc73d785e5e0f655bda297775769ff977ed10be1
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220257"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356554"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red
 
@@ -37,27 +37,25 @@ Puede especificar conjuntos de definiciones adicionales para la inspección del 
 
 1. En el extremo de administración de directivas de grupo, abra la Consola [de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Vaya a **Windows Components**  >  **Antivirus de Microsoft Defender**  >  **Network Inspection System**. 
+2. Vaya a **Windows Components** \> **Antivirus de Microsoft Defender** \> **Network Inspection System**.
 
-3. Seleccione **Especificar conjuntos de definiciones adicionales para la inspección de tráfico de red.** De forma predeterminada, esta directiva se establece en **No configurado**. 
+3. Seleccione **Especificar conjuntos de definiciones adicionales para la inspección de tráfico de red.** De forma predeterminada, esta directiva se establece en **No configurado**.
 
 4. Para editar la directiva, seleccione el vínculo **Editar configuración de** directiva.
 
 5. Seleccione **Habilitado** y, a continuación, en la **sección Opciones,** seleccione **Mostrar...**.
 
-6. Agregue entradas a la lista y, a continuación, seleccione **Aceptar**. 
+6. Agregue entradas a la lista y, a continuación, seleccione **Aceptar**.
 
-   Cada entrada debe aparecer como un par nombre-valor, donde el nombre es una representación de cadena de un GUID del conjunto de definiciones. Por ejemplo, el GUID del conjunto de definiciones para habilitar la inteligencia de seguridad de pruebas se define como: `{b54b6ac9-a737-498e-9120-6616ad3bf590}` . El valor no se usa, por lo que se recomienda establecerlo en `0` . 
+   Cada entrada debe aparecer como un par nombre-valor, donde el nombre es una representación de cadena de un GUID del conjunto de definiciones. Por ejemplo, el GUID del conjunto de definiciones para habilitar la inteligencia de seguridad de pruebas se define como: `{b54b6ac9-a737-498e-9120-6616ad3bf590}` . El valor no se usa, por lo que se recomienda establecerlo en `0` .
 
 7. Seleccione **Aceptar** y, a continuación, implemente el objeto de directiva de grupo actualizado. Consulte [Consola de administración de directivas de grupo](/windows/win32/srvnodes/group-policy).
 
 > [!TIP]
-> ¿Usa objetos de directiva de grupo local? Vea cómo se traducen en la nube. [Analice los objetos de directiva de grupo locales mediante el análisis](/mem/intune/configuration/group-policy-analytics)de directivas de grupo en Microsoft Endpoint Manager - Vista previa . 
-  
+> ¿Usa objetos de directiva de grupo local? Vea cómo se traducen en la nube. [Analice los objetos de directiva de grupo locales mediante el análisis](/mem/intune/configuration/group-policy-analytics)de directivas de grupo en Microsoft Endpoint Manager - Vista previa .
+
 ## <a name="related-articles"></a>Artículos relacionados
 
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)
- 
 - [Habilitar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
-
 - [Cómo crear e implementar directivas antimalware: Servicio de protección en la nube](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

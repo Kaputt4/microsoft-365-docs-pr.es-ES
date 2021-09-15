@@ -16,12 +16,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: a7b8214165e80347d6200c755db477b81e430630
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8adb0be672c20b8e51c4178df63d7b25332455ce
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187401"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356473"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Especificar el nivel de protección en la nube
 
@@ -39,7 +39,7 @@ La protección en la nube funciona Antivirus de Microsoft Defender para ofrecer 
 
 1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
 
-2. Elija **Endpoint security**  >  **Antivirus**.
+2. Elija **Endpoint security** \> **Antivirus**.
 
 3. Seleccione un perfil antivirus. (Si aún no tienes uno, o si quieres crear un perfil nuevo, consulta Configurar la configuración de restricción de [dispositivos en Microsoft Intune](/intune/device-restrictions-configure).
 
@@ -51,26 +51,25 @@ La protección en la nube funciona Antivirus de Microsoft Defender para ofrecer 
     - **High plus:** usa el **nivel alto** y aplica medidas de protección adicionales (puede afectar al rendimiento del cliente).
     - **Tolerancia cero:** bloquea todos los ejecutables desconocidos.
 
-6. Elija **Revisar + guardar** y, a continuación, elija **Guardar**. 
+6. Elija **Revisar + guardar** y, a continuación, elija **Guardar**.
 
 > [!TIP]
 > ¿Necesita ayuda? Vea los siguientes recursos:
+>
 > - [Configurar Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 > - [Agregar configuración de protección de puntos de conexión en Intune](/mem/intune/protect/endpoint-protection-configure)
-  
 
 ## <a name="use-group-policy-to-specify-the-level-of-cloud-protection"></a>Usar la directiva de grupo para especificar el nivel de protección en la nube
 
-1.  En el equipo de administración de directivas de grupo, abra la Consola [de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+1. En el equipo de administración de directivas de grupo, abra la Consola [de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
 2. Haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y, a continuación, **seleccione Editar**.
 
-3.  En el **Editor de administración de directivas de grupo** vaya a **Configuración** del equipo  >  **Plantillas administrativas.**
+3. En el **Editor de administración de directivas de grupo** vaya a **Configuración** del equipo \> **Plantillas administrativas.**
 
-4.  Expanda el árbol para **Windows componentes**  >  **Antivirus de Microsoft Defender**  >  **MpEngine**.
+4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **MpEngine**.
 
-5.  Haga doble clic en la **configuración Seleccionar nivel de** protección en la nube y estabóla en **Habilitado**. Seleccione el nivel de protección:
-
+5. Haga doble clic en la **configuración Seleccionar nivel de** protección en la nube y estabóla en **Habilitado**. Seleccione el nivel de protección:
     - **El nivel de bloqueo predeterminado** proporciona una detección segura sin aumentar el riesgo de detectar archivos legítimos.
     - **El nivel de bloqueo moderado** proporciona moderación solo para detecciones de elevada confianza
     - **El nivel alto de bloqueo** aplica un alto nivel de detección a la vez que optimiza el rendimiento del cliente (pero también puede ofrecer una mayor probabilidad de falsos positivos).
@@ -84,6 +83,6 @@ La protección en la nube funciona Antivirus de Microsoft Defender para ofrecer 
 > [!TIP]
 > ¿Usa objetos de directiva de grupo local? Vea cómo se traducen en la nube. [Analice los objetos de directiva de grupo locales mediante el análisis](/mem/intune/configuration/group-policy-analytics)de directivas de grupo en Microsoft Endpoint Manager - Vista previa . 
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [¿Por qué se debe habilitar la protección en la nube para Antivirus de Microsoft Defender](why-cloud-protection-should-be-on-mdav.md)

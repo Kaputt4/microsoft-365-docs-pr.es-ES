@@ -18,12 +18,12 @@ ms.custom:
 description: Obtenga información general sobre la integración del servidor de administración de eventos y información de seguridad (SIEM) con Microsoft 365 y aplicaciones en la nube
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea4d844595aaab8d8148666430187edef463b92e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 542c6a75282d32aa3b67d61f7236e82210174531
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211567"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353615"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de administración de eventos y de información de seguridad (SIEM) Microsoft 365 servicios y aplicaciones
 
@@ -52,16 +52,13 @@ Si necesita un servidor SIEM depende de muchos factores, como los requisitos de 
 
 Un servidor SIEM puede recibir datos de una amplia variedad de Microsoft 365 y aplicaciones. En la tabla siguiente se enumeran varios Microsoft 365 y aplicaciones, junto con las entradas y recursos del servidor SIEM para obtener más información.
 
-<br>
-
-****
+<br/><br/>
 
 |Microsoft 365 Servicio o aplicación|Métodos y entradas de servidor SIEM|Recursos para obtener más información|
 |---|---|---|
 |[Microsoft Defender para Office 365](defender-for-office-365.md)|Registros de auditoría|[Integración de SIEM con Microsoft Defender para Office 365](siem-integration-with-office-365-ti.md)|
 |[Microsoft Defender para punto de conexión](/windows/security/threat-protection/)|Punto de conexión HTTPS hospedado en Azure <p> API REST|[Extraer alertas a las herramientas SIEM](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|Integración de registros|[Integración siem con Microsoft Cloud App Security](/cloud-app-security/siem)|
-|
 
 > [!TIP]
 > Echa un vistazo a [Azure Sentinel](/azure/sentinel/overview). Azure Sentinel viene con conectores para soluciones de Microsoft. Estos conectores están disponibles "de forma completa" y proporcionan una integración en tiempo real. Puede usar Azure Sentinel con sus soluciones de Microsoft 365 Defender y servicios Microsoft 365, incluidos Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Cloud App Security y mucho más.

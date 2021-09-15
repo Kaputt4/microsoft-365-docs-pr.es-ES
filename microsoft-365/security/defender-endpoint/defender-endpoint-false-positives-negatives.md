@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 708ae221a020b8d6410b35a1db538d5ad50aba48
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 68a14ab44011506d89e219f1350dbc86939a6432
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213710"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356382"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -74,16 +74,13 @@ Antes de clasificar o suprimir una alerta, determine si la alerta es precisa, un
 
 4. Según el estado de alerta, siga los pasos descritos en la tabla siguiente:
 
-<br>
-
-****
+<br/>
 
 |Estado de alerta|Qué hacer|
 |---|---|
 |La alerta es precisa|Asigne la alerta y, a [continuación, investigue más.](investigate-alerts.md)|
 |La alerta es un falso positivo|<ol><li>[Clasifique la alerta](#classify-an-alert) como falso positivo.</li><li>[Suprimir la alerta](#suppress-an-alert).</li><li>[Cree un indicador para](#indicators-for-microsoft-defender-for-endpoint) Microsoft Defender para Endpoint.</li><li>[Enviar un archivo a Microsoft para su análisis.](#part-4-submit-a-file-for-analysis)</li></ol>|
 |La alerta es precisa, pero benigna (sin importancia)|[Clasifique la alerta](#classify-an-alert) como un verdadero positivo y, a continuación, [suprima la alerta](#suppress-an-alert).|
-|||
 
 ### <a name="classify-an-alert"></a>Clasificar una alerta
 
@@ -456,7 +453,7 @@ Si ha trabajado en todos los pasos de este artículo y todavía necesita ayuda, 
 
 3. En la **ventana Asistente de** soporte técnico, describa el problema y, a continuación, envíe el mensaje. Desde allí, puede abrir una solicitud de servicio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Administrar Microsoft Defender para el punto de conexión](manage-atp-post-migration.md)
 

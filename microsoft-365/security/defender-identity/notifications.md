@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: b4c499392bf9c48d704b1a0a960d9d92d097bd05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dfb3c5e1edbbf77a95a1e1d5888b070a12bfd7a7
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218200"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353627"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Notificaciones de Defender for Identity en Microsoft 365 Defender
 
@@ -82,7 +82,7 @@ Defender for Identity puede notificarte cuando detecta actividades sospechosas e
 1. Escriba los siguientes detalles:
 
     - **Sensor:** en la lista desplegable, elija el sensor que enviará las alertas.
-    - **Punto de conexión** de servicio y **puerto:** escriba la dirección IP o el nombre de dominio completo (FQDN) del servidor de syslog y especifique el número de puerto.
+    - **Punto de conexión** de servicio y **puerto:** escriba la dirección IP o el nombre de dominio completo (FQDN) del servidor de syslog y especifique el número de puerto. Solo puede configurar un extremo de Syslog.
     - **Transporte:** seleccione el **protocolo** de transporte (TCP o UDP).
     - **Formato:** seleccione el formato (RFC 3164 o RFC 5424).
 
@@ -94,6 +94,6 @@ Defender for Identity puede notificarte cuando detecta actividades sospechosas e
 
     ![Servicio de Syslog configurado.](../../media/defender-identity/syslog-configured.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Administrar alertas de seguridad de Defender for Identity](manage-security-alerts.md)

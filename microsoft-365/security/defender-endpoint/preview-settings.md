@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e064b537b11fe54304a2bb26ce65299f0b23876a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: c46ee9cda0ca8bf52a6d62a2be215070eb20856a
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575761"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356734"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Activar la experiencia de vista previa en Microsoft Defender para endpoint
 
@@ -36,7 +36,7 @@ ms.locfileid: "58575761"
 
 Active la configuración de la experiencia de la versión preliminar para estar entre los primeros en probar las próximas características.
 
-1. En el panel de navegación, **seleccione Configuración** Características avanzadas  >  **de**  >  **endpoints**.
+1. En el panel de navegación, **seleccione Configuración** Características avanzadas \> **de** \> **endpoints**.
 
     :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="configuración y vista previa de la imagen de la experiencia.":::
 

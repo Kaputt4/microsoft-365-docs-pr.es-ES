@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 2d474f4cc2c990ac8ebf3a964bbb532752741160
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 11855b9ebd6a2dd4641087e2e0a711860acb76d5
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189484"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355849"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Administrar Microsoft Defender para endpoint con Configuration Manager
 
@@ -53,7 +53,6 @@ Se recomienda usar [Microsoft Endpoint Manager](/mem), que incluye [Microsoft In
 |**Elegir métodos para actualizar actualizaciones de antimalware** en los dispositivos de la organización <p> *Con Endpoint Protection Configuration Manager, puede elegir entre varios métodos para mantener las definiciones de antimalware actualizadas en los dispositivos de la organización.*|[Configurar actualizaciones de definiciones para Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-definition-updates) <p> [Usar Configuration Manager para entregar actualizaciones de definiciones](/mem/configmgr/protect/deploy-use/endpoint-definitions-configmgr)|
 |**Habilitar la protección de** red para ayudar a evitar que los empleados utilicen aplicaciones que usan contenido malintencionado en Internet <p> *Se recomienda usar [el modo de auditoría](/microsoft-365/security/defender-endpoint/evaluate-network-protection) al principio para la protección de red en un entorno de prueba para ver qué aplicaciones se bloquearían antes de implementarse.*|[Activar la protección de red con Configuration Manager](/microsoft-365/security/defender-endpoint/enable-network-protection#microsoft-endpoint-configuration-manager)|
 |**Configurar el acceso controlado a carpetas** para proteger contra ransomware <p> *El acceso controlado a carpetas también se conoce como protección antiransomware.*|[Protección de extremo: acceso controlado a carpetas](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <p> [Habilitar el acceso controlado a carpetas en Administración de configuración de punto de conexión de Microsoft](/microsoft-365/security/defender-endpoint/enable-controlled-folders#microsoft-endpoint-configuration-manager)|
-|||
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configurar el portal Microsoft 365 Defender web
 

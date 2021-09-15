@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 9f4b8e713d9712796261dba69d76ebaaa9d80e9dfcafec0193e2e6b81cc8b563
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e914ec5f52d7c43e917a37b630a9e0c8ff3b564
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817673"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356542"
 ---
-# <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>Api de consulta de extremo admitidas de Microsoft Defender 
+# <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>Api de consulta de extremo admitidas de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,21 +36,27 @@ ms.locfileid: "53817673"
 Obtenga información sobre las llamadas API relacionadas con la respuesta admitidas que puede ejecutar y detalles como los encabezados de solicitud necesarios y la respuesta esperada de las llamadas.
 
 ## <a name="in-this-section"></a>En esta sección
-Tema | Descripción
-:---|:---
-Recopilar paquete de investigación | Ejecute esta API para recopilar un paquete de investigación desde un dispositivo.
-Aislar dispositivo | Ejecute esta API para aislar un dispositivo de la red.
-Unisolate device | Quita un dispositivo del aislamiento. 
-Restringir la ejecución de código | Ejecute esta API para contener un ataque deteniendo procesos malintencionados. También puedes bloquear un dispositivo e impedir que se ejecuten los intentos posteriores de programas potencialmente malintencionados.
-Ejecución de código sin restricto | Ejecute esto para revertir la restricción de la directiva de aplicaciones después de comprobar que el dispositivo en peligro se ha corregido.
-Ejecutar examen antivirus | Inicie de forma remota un examen antivirus para ayudar a identificar y corregir malware que podría estar presente en un dispositivo en peligro.
-Detener y poner en cuarentena un archivo |  Ejecute esta llamada para detener la ejecución de procesos, poner en cuarentena archivos y eliminar la persistencia, como las claves del Registro.
-Ejemplo de solicitud | Ejecute esta llamada para solicitar una muestra de un archivo desde un dispositivo específico. El archivo se recopilará desde el dispositivo y se cargará en un almacenamiento seguro.
-Bloquear archivo | Ejecute esta API para evitar la propagación posterior de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o malware sospechoso. 
-Desbloquear archivo | Permitir que un archivo se ejecute en la organización mediante Antivirus de Microsoft Defender.
-Obtener EL URI de SAS del paquete | Ejecute esta API para obtener un URI que permita descargar un paquete de investigación.
-Obtener objeto MachineAction | Ejecute esta API para obtener el objeto MachineAction.
-Obtener colección MachineActions | Ejecute esto para obtener la colección MachineAction.
-Obtener colección FileActions | Ejecute esta API para obtener la colección FileActions.
-Obtener objeto FileMachineAction | Ejecute esta API para obtener el objeto FileMachineAction.
-Obtener colección FileMachineActions | Ejecute esta API para obtener la colección FileMachineAction.
+
+<br>
+
+****
+
+|Tema|Descripción|
+|---|---|
+|Recopilar el paquete de investigación|Ejecute esta API para recopilar un paquete de investigación desde un dispositivo.|
+|Aislar el dispositivo|Ejecute esta API para aislar un dispositivo de la red.|
+|Unisolate device|Quita un dispositivo del aislamiento.|
+|Restringir la ejecución del código|Ejecute esta API para contener un ataque deteniendo procesos malintencionados. También puedes bloquear un dispositivo e impedir que se ejecuten los intentos posteriores de programas potencialmente malintencionados.|
+|Ejecución de código sin restricto|Ejecute esto para revertir la restricción de la directiva de aplicaciones después de comprobar que el dispositivo en peligro se ha corregido.|
+|Ejecutar examen de antivirus|Inicie de forma remota un examen antivirus para ayudar a identificar y corregir malware que podría estar presente en un dispositivo en peligro.|
+|Detener y poner en cuarentena un archivo|Ejecute esta llamada para detener la ejecución de procesos, poner en cuarentena archivos y eliminar la persistencia, como las claves del Registro.|
+|Solicitar ejemplo|Ejecute esta llamada para solicitar una muestra de un archivo desde un dispositivo específico. El archivo se recopilará desde el dispositivo y se cargará en un almacenamiento seguro.|
+|Bloquear archivo|Ejecute esta API para evitar la propagación posterior de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o malware sospechoso.|
+|Desbloquear archivo|Permitir que un archivo se ejecute en la organización mediante Antivirus de Microsoft Defender.|
+|Obtener EL URI de SAS del paquete|Ejecute esta API para obtener un URI que permita descargar un paquete de investigación.|
+|Obtener objeto MachineAction|Ejecute esta API para obtener el objeto MachineAction.|
+|Obtener colección MachineActions|Ejecute esto para obtener la colección MachineAction.|
+|Obtener colección FileActions|Ejecute esta API para obtener la colección FileActions.|
+|Obtener objeto FileMachineAction|Ejecute esta API para obtener el objeto FileMachineAction.|
+|Obtener colección FileMachineActions|Ejecute esta API para obtener la colección FileMachineAction.|
+|

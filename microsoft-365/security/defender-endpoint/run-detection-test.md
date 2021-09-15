@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d3430dc7765dfb7d84110a3a0cbae9f53e89b379
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2c1772cc67c145b59870735910e09ae05e52b899
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218280"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357306"
 ---
-# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado 
+# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,11 +41,12 @@ ms.locfileid: "59218280"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Los dispositivos de incorporación son el método para agregar dispositivos al servicio de Microsoft Defender para endpoints. Permite a los dispositivos notificar señales al servicio.  
+Los dispositivos de incorporación son el método para agregar dispositivos al servicio de Microsoft Defender para endpoints. Permite a los dispositivos notificar señales al servicio.
 
-Comprobar que un dispositivo se ha agregado correctamente al servicio es un paso importante en todo el proceso de implementación. 
+Comprobar que un dispositivo se ha agregado correctamente al servicio es un paso importante en todo el proceso de implementación.
 
 ## <a name="verify-onboarding-using-a-detection-test"></a>Comprobar la incorporación mediante una prueba de detección
+
 Ejecute el siguiente script de PowerShell en un dispositivo recién incorporado para comprobar que está informando correctamente al servicio Defender for Endpoint.
 
 1. Cree una carpeta: 'C:\test-MDATP-test'.
@@ -66,6 +67,7 @@ Ejecute el siguiente script de PowerShell en un dispositivo recién incorporado 
 La ventana símbolo del sistema se cerrará automáticamente. Si se realiza correctamente, la prueba de detección se marcará como completada y aparecerá una nueva alerta en el portal del dispositivo incorporado en aproximadamente 10 minutos.
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
 - [Servidores integrados](configure-server-endpoints.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

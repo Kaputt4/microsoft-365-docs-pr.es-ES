@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a administrar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: aca302aedfaa97b9e2661716d7bc7a6e846fa6fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 511dde8921f9406f753c857e2d813ccd80976c40
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214240"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353639"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -241,7 +241,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ge
 
   Por ejemplo, `t.co` se permite; `.com` o no `contoso.` se permite.
 
-- Las subpaths no están implícitas.
+- Las subpaths no están implícitas para allows.
 
   Por ejemplo, `contoso.com` no incluye `contoso.com/a` .
 

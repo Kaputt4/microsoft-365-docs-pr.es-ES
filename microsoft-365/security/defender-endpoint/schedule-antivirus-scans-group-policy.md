@@ -16,12 +16,12 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 6f6018ec8b514234ab4f98e3d5416b472ff88739
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6ca4616cd1c2818e0a1eb0b5c286142e9f65f32b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218267"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353591"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>Programar los exámenes de antivirus con la directiva de grupo
 
@@ -33,7 +33,7 @@ En este artículo se describe cómo configurar exámenes programados mediante la
 
 ## <a name="configure-antivirus-scans-using-group-policy"></a>Configurar exámenes antivirus mediante la directiva de grupo
 
-1. En el equipo de administración de directivas de grupo, en el Editor de directivas de grupo, vaya a Configuración del equipo Plantillas administrativas  >    >  **Windows componentes**  >  **Antivirus de Microsoft Defender**  >  **Examinar**.
+1. En el equipo de administración de directivas de  grupo, en el Editor de directivas de grupo, vaya a Configuración del equipo Plantillas administrativas \>  \> **Windows componentes** \> **Antivirus de Microsoft Defender** \> **Examinar**.
 
 2. Haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y, a continuación, **seleccione Editar**.
 
