@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 1001081d14440f1e02800f64b891c6a988f1f10a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c340e8b1bb8e126445b802e6b03c91d595e32a43
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166510"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355965"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -153,12 +153,25 @@ En ocasiones, los nuevos usuarios aparecen como **desconocido**. Esto suele pasa
   
 ## <a name="show-user-details-in-the-reports"></a>Mostrar detalles de usuario en los informes
 
-Los informes proporcionan información sobre los datos de uso de la organización. De forma predeterminada, los informes muestran información con nombres identificables para usuarios, grupos y sitios. A partir del 1 de septiembre de 2021, ocultamos información de usuario de forma predeterminada para todos los informes como parte de nuestro compromiso continuo de ayudar a las empresas a apoyar sus leyes de privacidad locales.
+De forma predeterminada, los detalles del usuario se ocultarán para todos los informes.
   
 La lista de usuarios será similar a la siguiente:
-  
+ 
 ![Informes: lista anónima de usuarios](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+
+
+Si desea mostrar información de nivel de usuario al generar los informes, un administrador global puede realizar ese cambio de manera rápida en el centro de administración.
+
+Los informes proporcionan información sobre los datos de uso de la organización. De forma predeterminada, los informes muestran información con nombres identificables para usuarios, grupos y sitios. A partir del 1 de septiembre de 2021, ocultamos información de usuario de forma predeterminada para todos los informes como parte de nuestro compromiso continuo de ayudar a las empresas a apoyar sus leyes de privacidad locales.
+
   
+1. En el centro de administración, vaya a la página **Configuración** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">de servicios &amp;complementos</a>.
+
+2. Seleccione **Configuración** y elija **Servicios** . 
+  
+3. En el panel **Reportes**, seleccione **Elegir cómo mostrar la información del usuario** y elija **Mostrar información de usuario identificable en los informes**.
+  
+
 Los administradores globales pueden revertir este cambio para su inquilino y mostrar información de usuario identificable si las prácticas de privacidad de su organización lo permiten. Se puede lograr en el Centro de administración de Microsoft 365 siguiendo estos pasos:
   
 1. En el Centro de administración, vaya a la página **Configuración** \> **Configuración de organización** \> **Servicios**.
@@ -168,6 +181,7 @@ Los administradores globales pueden revertir este cambio para su inquilino y mos
 3. Desactive la instrucción **En todos los informes, mostrar nombres sin identificar para usuarios, grupos y sitios** y, a continuación, guarde los cambios.  
   
 Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a los informes de uso de Microsoft 365 en [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) y [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) y a los [informes de uso en el Centro de administración de Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Mostrar información de usuario identificable es un evento registrado en el Centro de cumplimiento de Microsoft 365 de auditoría.   
+
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>¿Qué ocurre con los datos de uso cuando se cierra una cuenta de usuario?
 

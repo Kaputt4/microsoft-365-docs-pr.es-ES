@@ -323,6 +323,8 @@
               href: usage-analytics/usage-analytics-data-model.md
             - name: Solucionar errores de análisis de uso
               href: usage-analytics/usage-analytics-errors.md
+        - name: Guía de configuración de compatibilidad de Microsoft 365 con ServiceNow
+          href: manage/microsoft-365-servicenow-support-integration.md
     - name: Administrar suscripciones y facturación
       href: ../commerce/index.yml
     - name: Proteger su organización
