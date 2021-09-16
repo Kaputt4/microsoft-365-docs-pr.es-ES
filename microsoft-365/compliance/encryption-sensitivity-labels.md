@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7853a7b0439ee42cbe4b653f0572b055b19c3a2b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ff68caef8989ec6159b60bba8be03fe7246fdbc
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184166"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400683"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -63,7 +63,7 @@ Cuando usa esta solución de cifrado, la característica de **superusuario** gar
     
     ![Opciones de protección de etiquetas de confidencialidad para archivos y mensajes de correo electrónico.](../media/protection-options-sensitivity-label.png)
 
-4.  En la página **Cifrado** del asistente, seleccione una de las siguientes opciones:
+4.  En la página **Cifrado**, seleccione una de las siguientes opciones:
     
     - **Quitar el cifrado del archivo (si lo tiene)**: esta opción solo es compatible con el cliente de etiquetas unificado de Azure Information Protection. Si selecciona esta opción y usa etiquetas integradas, es posible que la etiqueta no se muestre en las aplicaciones o que se muestre, pero no se realicen cambios de cifrado.
         
@@ -114,7 +114,7 @@ Los documentos que ya están cifrados y se agregan como datos adjuntos siempre c
 
 ## <a name="configure-encryption-settings"></a>Configurar opciones de cifrado
 
-Cuando seleccione **Establecer la configuración de cifrado**, en la página **Cifrado** del asistente para crear o editar una etiqueta de confidencialidad, elija una de las siguientes opciones:
+Cuando seleccione **Establecer la configuración de cifrado**, en la página **Cifrado** para crear o editar una etiqueta de confidencialidad, elija una de las siguientes opciones:
 
 - **Asignar permisos ahora** para que pueda determinar exactamente qué permisos obtienen los distintos usuarios para el contenido que tenga aplicada la etiqueta. Para obtener más información, vea la sección siguiente [Asignar permisos ahora](#assign-permissions-now).
 - **Permitir a los usuarios asignar permisos** al aplicar la etiqueta al contenido. De esta forma, puede permitir a los usuarios de su organización cierta flexibilidad que pueden necesitar para colaborar y llevar a cabo su trabajo. Para obtener más información, vea la sección [Permitir a los usuarios asignar permisos](#let-users-assign-permissions) en esta página.
@@ -303,7 +303,7 @@ Para las etiquetas integradas, los usuarios verán el mismo cuadro de diálogo s
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>Configuraciones de ejemplo para la configuración de cifrado
 
-Para cada ejemplo que se muestra a continuación, lleve a cabo la configuración desde la página **Cifrado** del asistente, cuando **Establecer la configuración de cifrado** esté seleccionada:
+Para cada ejemplo que se muestra a continuación, lleve a cabo la configuración desde la página **Cifrado**, cuando **Establecer la configuración de cifrado** esté seleccionada:
 
 ![Opción de aplicar cifrado en el Asistente de etiquetas de confidencialidad.](../media/apply-encryption-option.png)
 
@@ -319,7 +319,7 @@ Los usuarios escriben la dirección de correo electrónico de Gmail en el cuadro
 
 3. Si está seleccionada, desactive la casilla: **En Word, PowerPoint y Excel, pedir a los usuarios que especifiquen los permisos**.
 
-4. Seleccione **Siguiente** y finalice el asistente.
+4. Seleccione **Siguiente** y complete la configuración.
 
 ### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>Ejemplo 2: etiqueta que restringe los permisos de solo lectura a todos los usuarios de otra organización
 
@@ -343,7 +343,7 @@ Esta etiqueta no es adecuada para correos electrónicos.
 
 8. De nuevo, en el panel **asignar permisos**, seleccione **guardar**.
 
-9. En la página **cifrado**, seleccione **siguiente** y finalice el asistente.
+9. En la página **Cifrado,** seleccione **Siguiente** y complete la configuración.
 
 ### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>Ejemplo 3: agregar usuarios externos a una etiqueta existente que cifra el contenido
 
@@ -363,7 +363,7 @@ Los nuevos usuarios que agregue serán capaces de abrir documentos y mensajes de
 
 7. De nuevo, en el panel **asignar permisos**, repita los pasos del 3 al 6 para cada usuario (o grupo) que quiera agregar a esta etiqueta. Después, haga clic en **Guardar**.
 
-8. En la página **cifrado**, seleccione **siguiente** y finalice el asistente.
+8. En la página **Cifrado,** seleccione **Siguiente** y complete la configuración.
 
 ### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>Ejemplo 4: etiqueta que cifra el contenido, pero que no restringe quién puede tener acceso a él.
 
@@ -387,7 +387,7 @@ Use esta configuración solo si no necesita restringir quién puede abrir el doc
 
 7. De nuevo, en el panel **asignar permisos**, seleccione **guardar**.
 
-8. En la página **cifrado**, seleccione **siguiente** y finalice el asistente.
+8. En la página **Cifrado,** seleccione **Siguiente** y complete la configuración.
 
 ## <a name="considerations-for-encrypted-content"></a>Consideraciones sobre el contenido cifrado
 
@@ -401,7 +401,9 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 
 - Si comparte documentos cifrados con personas de fuera de su organización, es posible que tenga que crear cuentas de invitado y modificar las directivas de Acceso condicional. Para obtener más información, consulte [Uso compartido de documentos cifrados con usuarios externos](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
 
-- Para que varios usuarios puedan modificar un archivo cifrado al mismo tiempo, deben usar Office para la Web. Si este no es el caso, y el archivo ya está abierto:
+- Cuando los usuarios autorizados abren documentos cifrados en sus aplicaciones de Office, ven el nombre y descripción de la etiqueta en una barra de mensajes amarilla en la parte superior de la aplicación. Esta barra de mensajes informa a los usuarios de que el documento está restringido y, mediante el botón **Ver permisos**, pueden ver los permisos que se les han concedido para ese documento. Cuando los permisos de cifrado se extienden a personas fuera de la organización, revise detenidamente los nombres y descripciones de las etiquetas que estarán visibles en esta barra de mensajes cuando se abra el documento.
+
+- Para que varios usuarios puedan modificar un archivo cifrado al mismo tiempo, deben usar Office para la Web.  O, para Windows y Mac, se ha [habilitado la coautoría para los archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md) y los usuarios tienen las [versiones mínimas necesarias](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) de Word, Excel y PowerPoint. Si este no es el caso, y el archivo ya está abierto:
 
   - En las aplicaciones de Office (Windows, Mac, Android y iOS), los usuarios verán un mensaje de **archivo en uso** con el nombre de la persona que ha desprotegido el archivo. Podrán ver una copia de solo lectura, guardar y editar una copia del archivo, y recibir una notificación cuando el archivo esté disponible.
   - En Office para la web, los usuarios ven un mensaje de error que indica que no pueden editar el documento con otras personas. Pueden seleccionar **Abrir en vista de lectura**.

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: f3556096b77e775e783cd8d949e1ed5dc2c25024
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f8691f8e8357f7f810468007f9802c19e70dac49
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186337"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401475"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -273,18 +273,7 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
     ![Página Elegir ubicaciones para la configuración de etiquetado automático.](../media/locations-auto-labeling-wizard.png)
     
-    Para especificar cuentas individuales de OneDrive, la dirección URL de OneDrive de un usuario suele tener el siguiente formato. Para el nombre principal de usuario (UPN), los caracteres especiales como un punto, una coma, un espacio y el signo de arroba ("@") se convierten en caracteres de subrayado ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
-    
-    Por ejemplo, para un usuario de la cuenta empresarial de Contoso que tiene un UPN de "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`.
-    
-    O bien, si usa un nombre de dominio personalizado para que el UPN sea "rsimone@contoso.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
-    
-    Sin embargo, los números o GUID se pueden anexar a la dirección URL cuando se detectan conflictos, por lo que siempre es mejor confirmar la dirección URL de un usuario para su cuenta OneDrive usuario. Para confirmar la dirección URL, puede usar el Centro de administración de Microsoft 365 o PowerShell. Para obtener más información, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
-    
-    > [!NOTE]
-    > Cuando especifique cuentas de OneDrive individuales, tenga en cuenta que, a menos que las cuentas de OneDrive estén [aprovisionadas previamente](/onedrive/pre-provision-accounts), la dirección URL no se creará hasta que un usuario tenga acceso a sus cuentas de OneDrive por primera vez.
-    > 
-    > Además, la URL de OneDrive cambiará [automáticamente](/onedrive/upn-changes) si hay un cambio en el UPN del usuario. Por ejemplo, un evento por el que se cambian los apellidos, como el matrimonio. O un cambio de nombre de dominio para admitir el cambio de nombre o la reestructuración empresarial de una organización. Si el UPN cambia, deberá actualizar las direcciones URL de OneDrive que especifique aquí.
+    Para especificar cuentas individuales de OneDrive, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
 
 7. En la página **Configurar reglas comunes o avanzadas**: mantenga el valor predeterminado de **Reglas comunes** para definir las reglas que identifican el contenido que se debe etiquetar en todas las ubicaciones seleccionadas. Si necesita distintas reglas dependiendo de la ubicación, seleccione **Reglas avanzadas**. Después, seleccione **Siguiente**.
 

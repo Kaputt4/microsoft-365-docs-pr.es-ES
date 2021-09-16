@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkMAC
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 6a58092bb81f45f40f2b0bcdd76312fc1d420e4d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a6d78ea9b96bb4967ef41471cd039a4c245b4aa1
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213950"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400155"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -210,13 +210,7 @@ Si bien la directiva de retención se aplica en el nivel de sitio, la configurac
 
 Cuando especifica sus ubicaciones para los sitios de SharePoint o las cuentas de OneDrive, no necesita permisos para acceder a los sitios y no se lleva a cabo ninguna validación en el momento en el que especifica la dirección URL en la página **Editar ubicaciones**. Sin embargo, se comprueba que existan los sitios de SharePoint que especifique al final de la configuración. Si se produce un error en esta comprobación, verá un mensaje que indica que no se pudo realizar la validación de la dirección URL indicada y el proceso de configuración no creará la directiva de retención hasta que se supere la comprobación de validación. Si ve este mensaje, vuelva al asistente para cambiar la dirección URL o eliminar el sitio de la directiva de retención.
 
-Para especificar las cuentas individuales de OneDrive a incluir o excluir, la dirección URL del OneDrive de cada usuario suele tener el siguiente formato. Para el nombre principal de usuario (UPN), los caracteres especiales como un punto, una coma, un espacio y el signo de arroba ("@") se convierten en caracteres de subrayado ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
-
-Por ejemplo, para un usuario del espacio empresarial de Contoso que tiene un UPN de "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`.
-
-O bien, si usa un nombre de dominio personalizado para que el UPN sea "rsimone@contoso.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
-
-Sin embargo, los números o GUID se pueden anexar a la dirección URL cuando se detectan conflictos, por lo que siempre es mejor confirmar la dirección URL de un usuario para su cuenta OneDrive usuario. Para confirmar la dirección URL, puede usar el Centro de administración de Microsoft 365 o PowerShell. Para obtener más información, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
+Para especificar cuentas individuales de OneDrive para incluir o excluir, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
 
 > [!NOTE]
 > Cuando especifique cuentas de OneDrive individuales para incluir o excluir, tenga en cuenta que, a menos que las cuentas de OneDrive estén [aprovisionadas previamente](/onedrive/pre-provision-accounts), la dirección URL no se creará hasta que un usuario tenga acceso a sus cuentas de OneDrive por primera vez.

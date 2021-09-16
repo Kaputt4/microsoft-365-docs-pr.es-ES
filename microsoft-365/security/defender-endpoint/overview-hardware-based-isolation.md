@@ -16,12 +16,12 @@ ms.topic: conceptual
 ms.author: macapara
 ms.date: 09/07/2018
 ms.technology: mde
-ms.openlocfilehash: 06d07b6457e57f6693e029c9ecccf1ca7f90b0cc
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 921cdbc0287cce8affa249ba4d371fc66750d77b
+ms.sourcegitcommit: bf801ff8b45a68edb587f1661d06acd4121ecb49
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401631"
+ms.locfileid: "59407680"
 ---
 # <a name="hardware-based-isolation-in-windows-10"></a>Aislamiento basado en hardware en Windows 10
 
@@ -41,6 +41,6 @@ El aislamiento basado en hardware ayuda a proteger la integridad del sistema Win
 
 |Característica|Descripción|
 |---|---|
-|[Protección de aplicaciones de Windows Defender](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)|Protección de aplicaciones protege el dispositivo de ataques avanzados mientras te mantiene productivo. Con un enfoque de aislamiento basado en hardware único, el objetivo es aislar sitios web y documentos PDF que no son de confianza dentro de un contenedor ligero que está separado del sistema operativo a través del hipervisor Windows nativo. Si un sitio o documento PDF que no es de confianza resulta ser malintencionado, sigue estando contenido en el contenedor seguro de Application Guard, manteniendo el equipo de escritorio protegido y el atacante alejado de los datos de la empresa.|
-|[Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows)|System Guard protege y mantiene la integridad del sistema cuando se inicia y después de que se ejecuta, y valida la integridad del sistema mediante atestación.|
+|[Protección de aplicaciones de Windows Defender](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md)|Protección de aplicaciones protege el dispositivo de ataques avanzados mientras te mantiene productivo. Con un enfoque de aislamiento basado en hardware único, el objetivo es aislar sitios web y documentos PDF que no son de confianza dentro de un contenedor ligero que está separado del sistema operativo a través del hipervisor Windows nativo. Si un sitio o documento PDF que no es de confianza resulta ser malintencionado, sigue estando contenido en el contenedor seguro de Application Guard, manteniendo el equipo de escritorio protegido y el atacante alejado de los datos de la empresa.|
+|[Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)|System Guard protege y mantiene la integridad del sistema cuando se inicia y después de que se ejecuta, y valida la integridad del sistema mediante atestación.|
 |
