@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4fff8c3f461a84d7bb6616c2264120a4c8fcd0ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7bb79ca6e04d283ee9ec9d7e01113364ebd6588
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214817"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400611"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurar Microsoft Defender para la implementación de puntos de conexión
 
@@ -62,7 +62,7 @@ Comprobar el estado de la licencia y si se aprovisionó correctamente, se puede 
 
    ![Imagen de la página Licencias de Azure.](images/atp-licensing-azure-portal.png)
 
-1. Como alternativa, en el Centro de administración, vaya a **Suscripciones de**  >  **facturación.**
+1. Como alternativa, en el Centro de administración, vaya a **Suscripciones de** \> **facturación.**
 
     En la pantalla, verá todas las licencias aprovisionadas y su estado **actual.**
 
@@ -111,7 +111,7 @@ Configure un proxy estático basado en el Registro para permitir que solo el sen
 
 1. Abra la Consola de administración de directivas de grupo.
 2. Cree una directiva o edite una directiva existente basada en las prácticas organizativas.
-3. Edite la directiva de grupo y vaya a Plantillas administrativas Windows Componentes de recopilación de datos y versiones preliminares Configure **\> \> \> Authenticated Proxy usage for the Connected User Experience and Telemetry Service**. 
+3. Edite la directiva de grupo y vaya a Plantillas administrativas Windows Componentes de recopilación de datos y versiones preliminares Configure **\> \> \> Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
    ![Imagen de configuración de directiva de grupo.](images/atp-gpo-proxy1.png)
 
@@ -173,7 +173,7 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 
 ****
 
-|Hoja de cálculo de la lista de dominios|Description|
+|Hoja de cálculo de la lista de dominios|Descripción|
 |---|---|
 |![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
@@ -196,8 +196,7 @@ Puede encontrar los intervalos IP de Azure en Intervalos IP de [Azure y etiqueta
 
 > [!NOTE]
 > Como solución basada en la nube, los intervalos de direcciones IP pueden cambiar. Se recomienda pasar a reglas basadas en DNS.
-
-> [!NOTE]
+>
 > Si es un cliente del Gobierno de Estados Unidos, consulte la sección correspondiente en la página [Defender for Endpoint for US Government.](gov.md#service-backend-ip-ranges)
 
 ## <a name="next-step"></a>Paso siguiente

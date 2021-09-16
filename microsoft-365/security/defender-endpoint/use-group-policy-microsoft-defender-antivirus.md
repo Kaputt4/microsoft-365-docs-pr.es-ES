@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 881db58dc6658c7ed73201e48e7e2079dbf6aa97
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220180"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401019"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender
 
@@ -55,9 +55,9 @@ En general, puede usar el siguiente procedimiento para configurar o cambiar la c
 En la tabla siguiente de este tema se enumeran las opciones de configuración de directiva de grupo disponibles en Windows 10, versión 1703, y se proporcionan vínculos al tema correspondiente en esta biblioteca de documentación (cuando corresponda). 
 
 > [!TIP]
-> Descargue la hoja de cálculo de referencia Configuración directiva de grupo [para Windows 10 de mayo de 2020 (2004).](https://www.microsoft.com/download/101451) Esta hoja de cálculo enumera la configuración de directiva para las configuraciones de equipo y usuario que se incluyen en los archivos de plantilla administrativa entregados para la actualización de mayo de 2020 (2004) para Windows 10 mayo de 2020. Puede configurar hacer referencia a la hoja de cálculo al editar objetos de directiva de grupo.
+> Descargue la hoja de cálculo de referencia Configuración directiva de grupo [para Windows 10 de mayo de 2020 (2004).](https://www.microsoft.com/download/101451) Esta hoja de cálculo enumera la configuración de directiva para las configuraciones de equipo y usuario que se incluyen en los archivos de plantilla administrativa entregados para la actualización de mayo de 2020 (2004) para Windows 10 mayo de 2020. Puede configurar hacer referencia a la hoja de cálculo al editar objetos de directiva de grupo.<br/><br/>
 
-| Ubicación | Setting | Artículo |
+| Ubicación | Valor | Artículo |
 |:---|:---|:---|
 | Interfaz de cliente | Habilitar el modo de interfaz de usuario sin cabeza | [Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
 | Interfaz de cliente | Mostrar texto adicional a los clientes cuando necesitan realizar una acción | [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md) |
@@ -76,8 +76,8 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 | Sistema de inspección de red | Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red | [Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red](specify-additional-definitions-network-traffic-inspection-mdav.md) |
 | Sistema de inspección de red | Activar la retirada de definiciones | [Configurar la retirada de definiciones](turn-on-definition-retirement.md)  |
 | Sistema de inspección de red | Activar el reconocimiento de protocolos | [Activar el reconocimiento de protocolos](turn-on-protocol-recognition.md)  |
-| Quarantine | Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| Quarantine | Configurar la eliminación de elementos de la carpeta cuarentena | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
+| Cuarentena | Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
+| Cuarentena | Configurar la eliminación de elementos de la carpeta cuarentena | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
 | Protección en tiempo real | Configurar la invalidación de configuración local para la actividad del programa y el archivo de supervisión en el equipo | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Protección en tiempo real | Configurar la invalidación de configuración local para la supervisión de la actividad de archivos entrantes y salientes | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Protección en tiempo real | Configurar la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
@@ -96,9 +96,9 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 | Corrección | Especificar la hora del día para ejecutar un examen completo programado para completar la corrección | [Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Creación de informes | Desactivar las notificaciones mejoradas | [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
 | Raíz | Desactivar Antivirus de Microsoft Defender | No se usa (esta configuración debe establecerse en **No configurar para** garantizar que las aplicaciones antivirus de terceros instaladas funcionen correctamente)
-| Raíz | Definir direcciones para omitir el servidor proxy | No se usa |
-| Raíz | Definir proxy autoconfig (.pac) para conectarse a la red | No se usa |
-| Raíz | Definir servidor proxy para conectarse a la red | No se usa |
+| Raíz | Definir direcciones para omitir el servidor proxy | [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
+| Raíz | Definir proxy autoconfig (.pac) para conectarse a la red | [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
+| Raíz | Definir servidor proxy para conectarse a la red | [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
 | Raíz | Configurar el comportamiento de combinación de administradores locales para listas | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Raíz | Permitir que el servicio antimalware se inicie con prioridad normal | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
 | Raíz | Permitir que el servicio antimalware siga ejecutándose siempre | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
@@ -151,7 +151,7 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 | Amenazas | Especificar niveles de alerta de amenazas en los que no se debe realizar ninguna acción predeterminada cuando se detecte | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
 | Amenazas | Especificar amenazas en las que no se debe realizar una acción predeterminada cuando se detecte | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Temas de referencia para herramientas de administración y configuración](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

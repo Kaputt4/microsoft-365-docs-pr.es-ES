@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/09/2021
+ms.date: 09/13/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 6ca4616cd1c2818e0a1eb0b5c286142e9f65f32b
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 8f1025ac7392e146be3486655513ce39086d3337
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353591"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400791"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>Programar los exámenes de antivirus con la directiva de grupo
 
@@ -43,8 +43,12 @@ En este artículo se describe cómo configurar exámenes programados mediante la
 
 5. Implemente el objeto de directiva de grupo como lo hace normalmente. Si necesita ayuda con objetos de directiva de grupo, vea [Crear un objeto de directiva de grupo](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object).
 
-> [!TIP]
-> Consulta Administrar [cuándo se deben descargar y](manage-protection-update-schedule-microsoft-defender-antivirus.md) aplicar las actualizaciones de protección y Evitar o permitir que los usuarios [modifiquen localmente los](configure-local-policy-overrides-microsoft-defender-antivirus.md) temas de configuración de directivas.
+> [!NOTE]
+> Al configurar exámenes programados, la configuración Iniciar el examen programado solo cuando el equipo está activado pero no está en uso **,** que está habilitado de forma predeterminada, puede afectar a la hora programada esperada al requerir que el equipo esté inactivo primero.
+>
+> Para los exámenes semanales, el comportamiento predeterminado en Windows Server es examinar fuera del mantenimiento automático cuando la máquina está inactiva. El valor predeterminado en Windows 10 y posteriores es examinar durante el mantenimiento automático cuando la máquina está inactiva. Para cambiar este comportamiento, modifique la configuración **deshabilitando ScanOnlyIfIdle** y, a continuación, defina una programación.
+
+Para obtener más información, vea [administrar](manage-protection-update-schedule-microsoft-defender-antivirus.md) cuándo se deben descargar y aplicar las actualizaciones de protección y evitar o permitir a los usuarios [modificar localmente los](configure-local-policy-overrides-microsoft-defender-antivirus.md) temas de configuración de directivas.
 
 ## <a name="group-policy-settings-for-scheduling-scans"></a>Configuración de directiva de grupo para la programación de exámenes
 

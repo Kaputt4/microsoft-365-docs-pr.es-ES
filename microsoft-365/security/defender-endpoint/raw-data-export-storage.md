@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5a38f1347c959cd52e0ae393fa60b4e9c371eb2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2631d68077a51df1ae3e2e7c6f4abd3a246c5d8c
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220353"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401619"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a su Storage cuenta
 
@@ -52,7 +52,7 @@ ms.locfileid: "59220353"
 
 5. Elija **Reenviar eventos para Azure Storage**.
 
-6. Escriba su **Storage de recurso de cuenta**. Para obtener el identificador de recurso de cuenta **de Storage,** vaya a la página de la cuenta de Storage en la pestaña propiedades de [Azure Portal](https://ms.portal.azure.com/) > > copie el texto en el identificador de recurso de cuenta Storage **:**
+6. Escriba su **Storage de recurso de cuenta**. Para obtener el identificador de **recurso Storage** cuenta, vaya a la página de la cuenta de Storage en la pestaña propiedades de [Azure Portal](https://ms.portal.azure.com/) copie el texto en Storage id. de recurso \> de \> **cuenta:**
 
    ![Imagen del id. de recurso del centro de eventos1.](images/storage-account-resource-id.png)
 
@@ -60,19 +60,19 @@ ms.locfileid: "59220353"
 
 ## <a name="the-schema-of-the-events-in-the-storage-account"></a>El esquema de los eventos de la cuenta Storage cuenta
 
-- Se creará un contenedor de blobs para cada tipo de evento: 
+- Se creará un contenedor de blobs para cada tipo de evento:
 
   ![Imagen del id. de recurso del centro de eventos2.](images/storage-account-event-schema.png)
 
-- El esquema de cada fila de un blob es el siguiente JSON: 
+- El esquema de cada fila de un blob es el siguiente JSON:
 
-  ```
+  ```json
   {
           "time": "<The time WDATP received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
           "properties": { <WDATP Advanced Hunting event as Json> }
-  }               
+  }
   ```
 
 - Cada blob contiene varias filas.
@@ -89,19 +89,20 @@ Para obtener los tipos de datos de nuestras propiedades de eventos, haga lo sigu
 
 1. Inicie sesión en [Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com) y vaya a [la página Búsqueda avanzada](https://securitycenter.windows.com/hunting-package).
 
-2. Ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento: 
+2. Ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento:
 
    ```
    {EventType}
    | getschema
-   | project ColumnName, ColumnType 
+   | project ColumnName, ColumnType
    ```
 
-- Este es un ejemplo para el evento Device Info: 
+- Este es un ejemplo para el evento Device Info:
 
   ![Imagen del recurso del centro de eventos ID3.](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [API de Streaming de Microsoft Defender para endpoints](raw-data-export.md)
 - [Transmitir eventos de Microsoft Defender para endpoint a su cuenta de Azure Storage](raw-data-export-storage.md)

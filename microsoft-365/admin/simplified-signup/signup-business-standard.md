@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Compre Microsoft 365 Empresa Estándar y configure su organización.
-ms.openlocfilehash: 7c5489a674145052eb40c533595a245a1d785247
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 498906bf227aa4cfd6a964212bb9553932d32602
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186630"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401847"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Registrarse para una suscripción a Microsoft 365 Empresa Estándar
 
@@ -27,7 +27,7 @@ Hay un par de formas de obtener información Microsoft 365 Empresa Estándar:
 - **[Comprar](https://go.microsoft.com/fwlink/?linkid=2109397) Microsoft 365 Empresa Estándar y completar su propia configuración**: Para comprar Microsoft 365 Empresa Estándar, siga los pasos [siguientes](#sign-up-steps).
 - **Para partners de Microsoft:** si es partner, vea [Get Microsoft 365 Business](../../business/get-microsoft-365-business.md).
 
-**¿Necesita algo diferente?** Podrá:
+**¿Necesita algo diferente?** Puede:
 
 - [Regístrate en un plan de hogar o familia](https://go.microsoft.com/fwlink/?linkid=2109398) si no estás comprando para una empresa.
 
@@ -124,7 +124,7 @@ Para proporcionar a los clientes la mayor cantidad de flexibilidad, hay diferent
 
 Cuando la facturación periódica está activada, la suscripción seguirá siendo facturada cada año el día en que se suscribió. Puede desactivar o volver a activar esta opción en el centro de administración mientras su suscripción esté activa. Obtenga más información en Desactivar o activar la facturación [periódica.](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)
 
-### <a name="what-if-i-want-to-change-my-business-name-in-future-how-do-i-do-that"></a>¿Qué sucede si deseo cambiar el nombre de mi empresa en el futuro? ¿Cómo puedo hacerlo?
+### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>¿Qué puedo hacer si deseo cambiar el nombre de mi empresa?
 
 Póngase en contacto con nuestros expertos en soporte técnico para pequeñas empresas que pueden ayudarle a cambiar el nombre de su empresa. Obtenga más información en [Obtener soporte](../../business-video/get-help-support.md)técnico .
 

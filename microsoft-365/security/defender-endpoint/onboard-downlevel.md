@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a1a000ec60d84e5abc4ec23591b917eb3072582e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 44a613f1f6a35f22f207b85180296c34ebf1cf11
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214870"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401271"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -38,7 +38,6 @@ ms.locfileid: "59214870"
 - Windows 8.1 Pro
 - Windows 8.1 Enterprise
 
-
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Defender for Endpoint amplía la compatibilidad para incluir sistemas operativos de nivel inferior, lo que proporciona capacidades avanzadas de detección de ataques e investigación en versiones Windows compatibles.
@@ -52,6 +51,7 @@ Para incorporar puntos de conexión Windows cliente a Defender for Endpoint, deb
 > Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que está correctamente incorporado al servicio. Para obtener más información, vea [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Configurar y actualizar System Center Endpoint Protection clientes
+
 > [!IMPORTANT]
 > Este paso solo es necesario si la organización usa System Center Endpoint Protection (SCEP).
 
@@ -59,7 +59,7 @@ Defender for Endpoint se integra con System Center Endpoint Protection para prop
 
 Se requieren los siguientes pasos para habilitar esta integración:
 
-- Instalar la actualización de la plataforma antimalware de enero de [2017 para Endpoint Protection cliente](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
+- Instalar la actualización de la plataforma antimalware de enero de [2017 para Endpoint Protection cliente](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
 - Configurar la pertenencia del servicio de protección en la nube del cliente SCEP a la **configuración** Avanzada
 - Configure la red para permitir conexiones a la Antivirus de Microsoft Defender nube. Para obtener más información, consulte [Allow connections to the Antivirus de Microsoft Defender cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
@@ -70,7 +70,7 @@ Se requieren los siguientes pasos para habilitar esta integración:
 Revise los siguientes detalles para comprobar los requisitos mínimos del sistema:
 
 - Instalar el paquete acumulativo de actualizaciones [mensuales de febrero de 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-  
+
   > [!NOTE]
   > Solo se aplica Windows 7 SP1 Enterprise y Windows 7 SP1 Pro.
 
@@ -112,6 +112,7 @@ Una vez completado, debería ver puntos de conexión incorporados en el portal e
 - Si un proxy o firewall bloquea todo el tráfico de forma predeterminada y permite solo dominios específicos a través o el examen HTTPS (inspección SSL) está habilitado, asegúrese de habilitar el acceso a las direcciones URL del servicio [defender](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)para puntos de conexión .
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecutar una prueba de detección para comprobar la incorporación
+
 Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.
 
 ## <a name="offboard-client-endpoints"></a>Extremos de cliente offboard

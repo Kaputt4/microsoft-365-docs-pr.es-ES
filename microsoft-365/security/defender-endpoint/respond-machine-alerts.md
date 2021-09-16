@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: ab1cb1563f3ccc0f7bfda9b1f8875c76446153e3
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357318"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399243"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -225,7 +225,7 @@ También se muestran todos los demás detalles relacionados, por ejemplo, fecha 
 
 ![Imagen del centro de acción con información.](images/action-center-details.png)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Realizar acciones de respuesta en un archivo](respond-file-alerts.md)
 - [Acciones de respuesta manuales en Microsoft Defender para endpoint plan 1 (versión preliminar)](defender-endpoint-plan-1.md#manual-response-actions)

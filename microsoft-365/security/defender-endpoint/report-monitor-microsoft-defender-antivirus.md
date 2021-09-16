@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 91891af35def83f21b3db8c7e8fa4b320bef563c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2b2a15879b0dcac69193953ae3c57fd0ff40058
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220322"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399235"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Informe en el Antivirus de Windows Defender
 
@@ -34,15 +34,15 @@ ms.locfileid: "59220322"
 
 Antivirus de Microsoft Defender está integrado en Windows 10, Windows Server 2019 y Windows Server 2016. Antivirus de Microsoft Defender es de la protección de próxima generación en Microsoft Defender para endpoint. La protección de última generación ayuda a proteger los dispositivos de amenazas de software como virus, malware y spyware en el correo electrónico, las aplicaciones, la nube y la web.
 
-Con Antivirus de Microsoft Defender, tiene varias opciones para revisar el estado de protección y las alertas. Puede usar Microsoft Endpoint Manager para [supervisar Antivirus de Microsoft Defender](/configmgr/protect/deploy-use/monitor-endpoint-protection) o [crear alertas de correo electrónico](/configmgr/protect/deploy-use/endpoint-configure-alerts). O bien, puede supervisar la protección mediante [Microsoft Intune](/intune/introduction-intune).  
+Con Antivirus de Microsoft Defender, tiene varias opciones para revisar el estado de protección y las alertas. Puede usar Microsoft Endpoint Manager para [supervisar Antivirus de Microsoft Defender](/configmgr/protect/deploy-use/monitor-endpoint-protection) o [crear alertas de correo electrónico](/configmgr/protect/deploy-use/endpoint-configure-alerts). O bien, puede supervisar la protección mediante [Microsoft Intune](/intune/introduction-intune).
 
 Microsoft Operations Management Suite tiene un complemento [Update Compliance](/windows/deployment/update/update-compliance-get-started) que informa sobre problemas clave Antivirus de Microsoft Defender, incluidas las actualizaciones de protección y la configuración de protección en tiempo real.
 
-Si tiene un servidor de administración de eventos (SIEM) y de información de seguridad de terceros, también puede consumir Windows Defender [eventos de cliente](/windows/win32/events/windows-events). 
+Si tiene un servidor de administración de eventos (SIEM) y de información de seguridad de terceros, también puede consumir Windows Defender [eventos de cliente](/windows/win32/events/windows-events).
 
-Windows incluyen varios orígenes de eventos de seguridad, incluidos los eventos del Administrador [](/windows/device-security/auditing/security-auditing-overview) de cuentas de seguridad (SAM) (mejorados para[Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), vea también el tema Auditoría de seguridad) y [Windows Defender eventos](troubleshoot-microsoft-defender-antivirus.md). 
+Windows incluyen varios orígenes de eventos de seguridad, incluidos los eventos del Administrador [](/windows/device-security/auditing/security-auditing-overview) de cuentas de seguridad (SAM) (mejorados para[Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), vea también el tema Auditoría de seguridad) y [Windows Defender eventos](troubleshoot-microsoft-defender-antivirus.md).
 
-Estos eventos se pueden agregar de forma centralizada mediante [el recopilador Windows eventos](/windows/win32/wec/windows-event-collector). A menudo, los servidores SIEM tienen conectores para Windows eventos, lo que le permite correlacionar todos los eventos de seguridad del servidor SIEM. 
+Estos eventos se pueden agregar de forma centralizada mediante [el recopilador Windows eventos](/windows/win32/wec/windows-event-collector). A menudo, los servidores SIEM tienen conectores para Windows eventos, lo que le permite correlacionar todos los eventos de seguridad del servidor SIEM.
 
 También puede supervisar [eventos de malware mediante la solución de evaluación de malware en Log Analytics](/azure/log-analytics/log-analytics-malware).
 

@@ -1,5 +1,5 @@
 ---
-title: Aplicar un modelo de comprensión mediante documentos a una biblioteca de documentos
+title: Aplicar un modelo de comprensión mediante documentos en la sintaxis de Microsoft SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Normal
-description: Obtenga información sobre cómo aplicar un modelo publicado a una biblioteca SharePoint documentos.
-ms.openlocfilehash: d277b959fc05318380363e1eaba14343c84af126
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Obtenga información sobre cómo aplicar un modelo publicado a una SharePoint de documentos en Microsoft SharePoint Syntex.
+ms.openlocfilehash: 048197b8f477b62527b2f379a5361d1765c70a3b
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183945"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399999"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Aplicar un modelo de comprensión mediante documentos en la sintaxis de Microsoft SharePoint
 
@@ -28,82 +28,84 @@ ms.locfileid: "59183945"
 
 </br>
 
-Después de publicar el modelo de comprensión mediante documentos, puede aplicarlo a una o más bibliotecas de documentos de SharePoint en su espacio empresarial de Microsoft 365.
+Después de publicar el modelo de comprensión de documentos, puede aplicarlo a una o más bibliotecas de documentos SharePoint bibliotecas de documentos de su Microsoft 365 inquilino.
 
 > [!NOTE]
 > Solo puede aplicar el modelo a las bibliotecas de documentos a las que tenga acceso.
 
 
-## <a name="apply-your-model-to-a-document-library"></a>Aplique el modelo a una biblioteca de documentos.
+## <a name="apply-your-model-to-a-document-library"></a>Aplicar el modelo a una biblioteca de documentos
 
 Para aplicar el modelo a una biblioteca de documentos de SharePoint:
 
-1. En la página principal del modelo, en el cuadro **Aplicar modelo a las bibliotecas**, seleccione **Publicar modelo**. También puede seleccionar **+Agregar biblioteca** en la sección **Bibliotecas con este modelo**. </br>
+1. En la página principal del modelo, en el icono Aplicar modelo a **bibliotecas,** seleccione **Aplicar modelo**. O bien, en la sección Dónde se aplica **el modelo,** seleccione  **+Agregar biblioteca** .
 
-    ![Agregar modelo a la biblioteca.](../media/content-understanding/apply-to-library.png)</br>
+    ![Captura de pantalla de la sección Donde se aplica el modelo con la opción Agregar biblioteca resaltada.](../media/content-understanding/apply-to-library.png)
 
-2. Después, puede seleccionar el sitio de SharePoint que contiene la biblioteca de documentos a la que desea aplicar el modelo. Si el sitio no aparece en la lista, use el cuadro de búsqueda para encontrarlo.</br>
+2. Después, puede seleccionar el sitio de SharePoint que contiene la biblioteca de documentos a la que desea aplicar el modelo. Si el sitio no aparece en la lista, use el cuadro de búsqueda para encontrarlo.
 
-    ![Seleccione un sitio.](../media/content-understanding/site-search.png)</br>
+    ![Seleccione un sitio.](../media/content-understanding/site-search.png)
 
     > [!NOTE]
-    > Debe tener permisos de *Administración de lista* o de *Edición* en la biblioteca de documentos a la que va a aplicar el modelo.</br>
+    > Debe tener permisos de *Administración de lista* o de *Edición* en la biblioteca de documentos a la que va a aplicar el modelo.
 
-3. Después de seleccionar el sitio, seleccione la biblioteca de documentos a la que quiere aplicar el modelo. En el ejemplo, seleccione la biblioteca de documentos *Documentos* en el sitio de *Seguimiento de casos de Contoso*.</br>
+3. Después de seleccionar el sitio, seleccione la biblioteca de documentos a la que quiere aplicar el modelo. En el ejemplo, seleccione la biblioteca de documentos *Documentos* en el sitio de *Seguimiento de casos de Contoso*.
 
-    ![Seleccione una biblioteca de documentos.](../media/content-understanding/select-doc-library.png)</br>
+    ![Seleccione una biblioteca de documentos.](../media/content-understanding/select-doc-library.png)
 
-4. Como el modelo está asociado a un tipo de contenido, cuando lo aplique a la biblioteca, se agregará el tipo de contenido y su vista con las etiquetas que extrajo mostrándolo como columnas. De forma predeterminada, esta vista es la vista predeterminada de la biblioteca, pero si lo prefiere, puede elegir que no sea la vista predeterminada seleccionando **Configuración avanzada** y anulando la selección **Establecer esta vista nueva como predeterminada**.</br>
+4. Dado que el modelo está asociado a un tipo de contenido, al aplicarlo a la biblioteca, agregará el tipo de contenido y su vista con las etiquetas extraídas que se muestran como columnas. De forma predeterminada, esta vista es la vista predeterminada de la biblioteca. Sin embargo, si lo desea, puede optar por  no ser la vista predeterminada seleccionando Configuración avanzada y desactivando la casilla Establecer esta nueva vista **como predeterminada.**
 
-    ![Vista Biblioteca.](../media/content-understanding/library-view.png)</br>
+    ![Vista Biblioteca.](../media/content-understanding/library-view.png)
 
-5. Seleccione **Agregar** para aplicar el modelo a la biblioteca. 
-6. En la página principal del modelo, en la sección **Bibliotecas con este modelo**, debe ver la dirección URL del sitio de SharePoint que se muestra.</br>
+5. Seleccione **Agregar** para aplicar el modelo a la biblioteca.
 
-    ![Biblioteca seleccionada.](../media/content-understanding/selected-library.png)</br>
+6. En la página principal del modelo, en la sección **Dónde** se aplica el modelo, debería ver el nombre del sitio SharePoint lista.
 
 7. Vaya a la biblioteca de documentos y asegúrese de estar en la vista de biblioteca de documentos del modelo. Tenga en cuenta que, si selecciona el botón de información situado junto al nombre de la biblioteca de documentos, se mostrará un mensaje que indica que la biblioteca de documentos tiene aplicado un modelo.
 
-    ![Vista de información.](../media/content-understanding/info-du.png)</br> 
+    ![Vista de información.](../media/content-understanding/info-du.png) 
 
     Puede seleccionar la opción **Ver modelos activos** para consultar detalles sobre los modelos que se aplican a la biblioteca de documentos.
 
 8. Puede seleccionar la opción **Modelos activos** para ver los modelos que se aplican a la biblioteca de documentos. Seleccione un modelo para ver más detalles sobre él, como una descripción, quién lo publicó y si el modelo aplica una etiqueta de retención a los archivos que clasifica.
 
-    ![Panel Modelos activos.](../media/content-understanding/active-models.png)</br> 
+    ![Panel Modelos activos.](../media/content-understanding/active-models.png) 
 
 Después de aplicar el modelo a la biblioteca de documentos, puede iniciar la carga de documentos en el sitio y ver los resultados.
 
-El modelo identifica los archivos con el tipo de contenido asociado al modelo y los enumera en la vista. Si su modelo tiene algún extractor, la vista muestra columnas para los datos que se extraen de cada archivo.
+El modelo identifica los archivos y carpetas con el tipo de contenido asociado del modelo y los enumera en la vista. Si el modelo tiene extractores, la vista muestra las columnas de los datos que va a extraer de cada archivo o carpeta.
 
-### <a name="apply-the-model-to-files-already-in-the-document-library"></a>Aplicar el modelo a los archivos que ya se encuentren en la biblioteca de documentos
+## <a name="apply-the-model-to-files-and-folder-content-already-in-the-document-library"></a>Aplicar el modelo a archivos y contenido de carpetas que ya están en la biblioteca de documentos
 
-Si bien un modelo aplicado procesa todos los archivos cargados en la biblioteca de documentos después de su aplicación, también puede hacer lo siguiente para ejecutar el modelo en archivos que ya existen en la biblioteca de documentos antes de que se aplique el modelo:
+Aunque un modelo aplicado procesa todos los archivos y el contenido de carpetas cargados en la biblioteca de documentos después de aplicarlo, también puede hacer lo siguiente para ejecutar el modelo en archivos y contenido de carpetas que ya existen en la biblioteca de documentos antes de aplicar el modelo:
 
-1. En la biblioteca de documentos, seleccione los archivos que quiere que sean procesados por su modelo.
-2. Después de seleccionar los archivos, en la cinta de la biblioteca de documentos se mostrará **Clasificar y extraer**. Seleccione **Clasificar y extraer**.
-3. Los archivos que seleccionó se agregarán a la cola para su procesamiento.
+1. En la biblioteca de documentos, seleccione los archivos y carpetas que desea procesar el modelo.
 
-      ![Clasificar y extraer.](../media/content-understanding/extract-classify.png)</br> 
+2. Después de seleccionar los archivos y carpetas, **Clasificar y extraer** aparecerá en la cinta de opciones de la biblioteca de documentos. Seleccione **Clasificar y extraer**.
 
-> [!NOTE]
-> Puede copiar archivos individuales a una biblioteca y aplicarlos a un modelo, pero no carpetas.
+      ![Captura de pantalla que muestra la opción Clasificar y extraer.](../media/content-understanding/extract-classify.png) 
 
-### <a name="the-classification-date-field"></a>Campo Fecha de clasificación
+3. Los archivos y carpetas seleccionados se agregarán a la cola que se procesará.
 
-Cuando se aplica un modelo de procesamiento de formularios o información de documentos de SharePoint Syntex a una biblioteca de documentos, en el esquema de la biblioteca se incluye un campo <b>Fecha de clasificación</b>. De forma predeterminada, este campo está vacío, pero cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
+    > [!NOTE]
+    > Recibirá un mensaje que indica cuánto tiempo puede tardar la clasificación. Si solo ha seleccionado archivos, la clasificación puede tardar hasta 30 minutos. Si ha seleccionado una o más carpetas, la clasificación puede tardar hasta 24 horas.
 
-   ![Columna Fecha de clasificación.](../media/content-understanding/class-date-column.png)</br> 
+### <a name="classification-date-field"></a>Campo Fecha de clasificación
 
-El desencadenador [<b>Cuando un modelo de comprensión de contenidos clasifica un archivo</b>](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) usa el campo Fecha de clasificación para ejecutar un flujo de Power Automate después de que un modelo de comprensión de contenidos de Syntex haya terminado de procesar un archivo y haya actualizado el campo "Fecha de clasificación".
+Cuando se SharePoint Syntex un modelo de comprensión de documentos o de procesamiento de formularios a una biblioteca de documentos, el campo **Fecha** de clasificación se incluye en el esquema de biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
 
-   ![Flow desencadenador.](../media/content-understanding/trigger.png)</br>
+   ![Captura de pantalla de una biblioteca de documentos que muestra la columna Fecha de clasificación.](../media/content-understanding/class-date-column.png) 
 
-El desencadenador <b>Cuando un modelo de comprensión de contenidos clasifica un archivo</b> se puede usar después para iniciar otro flujo de trabajo con la información extraída del archivo.
+El campo Fecha de [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) clasificación lo usa el desencadenador Cuando un modelo de descripción de contenido clasifica un archivo para ejecutar un  flujo de Power Automate después de que un modelo de comprensión de contenido syntex haya terminado de procesar un archivo o carpeta y haya actualizado el campo Fecha de clasificación. 
+
+   ![Flow desencadenador.](../media/content-understanding/trigger.png)
+
+El **desencadenador When a file is classified by a content understanding model** can then be used to start another workflow using any extracted information from the file or folder.
 
 
 
 ## <a name="see-also"></a>Consulte también
+
 [Crear un clasificador](create-a-classifier.md)
 
 [Crear un extractor](create-an-extractor.md)

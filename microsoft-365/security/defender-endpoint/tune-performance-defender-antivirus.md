@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 964447ee755d5587d03c6c3ee6cb56131013d34d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0ceb715549c208ccc7f961c115083c50e56dd526
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166851"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400551"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizador de rendimiento para Antivirus de Microsoft Defender
 
@@ -93,7 +93,7 @@ Para ver ejemplos que describen el proceso de "exportación" y "conversión" a t
 Antivirus de Microsoft Defender analizador de rendimiento tiene los siguientes requisitos previos:
 
 - Versiones Windows compatibles: Windows 10, Windows 11 y Windows Server 2016 versiones posteriores
-- Versión de plataforma: 4.18.2108.X+
+- Versión de la plataforma: 4.18.2108.7+
 - Versión de PowerShell: PowerShell versión 5.1
 
 ## <a name="powershell-reference"></a>Referencia de PowerShell

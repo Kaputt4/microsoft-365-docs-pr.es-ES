@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 3366f90273536a1fc1fede52159b8c1199ad9324
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fa496e976f0d023960b6d2e633347931b7456ac3
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216477"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401127"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -271,7 +271,3 @@ También puede obtener más información sobre [las soluciones de asociados que 
 Para planear la implementación y obtener una guía que incluye información sobre licencias, permisos, estrategia de implementación, una lista de escenarios admitidos y la documentación del usuario final, vea [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md).
 
 Para obtener información sobre cómo usar las etiquetas de confidencialidad para cumplir con las normativas de privacidad de los datos, vea [Implementar Information Protection para las normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
-
-## <a name="see-also"></a>Vea también
-
-[Administrar sitios de Teams conectados y sitios de canales](/SharePoint/teams-connected-sites)

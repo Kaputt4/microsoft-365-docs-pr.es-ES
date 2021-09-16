@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre las opciones de configuración global para la administración de privacidad.
-ms.openlocfilehash: 071006c354d975cbed06834d60c2d647bbc5df60
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd67dc80ab7dec2132bfffe190f64692f69076ed
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186030"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401055"
 ---
 # <a name="manage-privacy-management-settings-preview"></a>Administrar la configuración de administración de privacidad (versión preliminar)
 
@@ -39,17 +39,9 @@ Las directivas de administración de privacidad le permiten establecer parámetr
 
 Integre Microsoft Teams con la administración de privacidad para mejorar la colaboración con las partes interesadas. Cada vez que se crea una solicitud de derechos de sujeto, se creará un equipo asociado. Los usuarios se pueden agregar a un equipo desde la pestaña Colaboradores de la solicitud. Para obtener más información acerca de las solicitudes de derechos de sujeto, vea [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 
-## <a name="power-automate-flows"></a>Power Automate flujos  
-
-Use Power Automate para administrar automáticamente procesos y tareas relacionados con la privacidad. Puede crear flujos en la sección Configuración con plantillas de administración de privacidad integradas o usar la consola Power Automate para crear flujos personalizados. Para obtener más información sobre Power Automate, consulte la [Power Automate](/power-automate/) documentación.
-
 ## <a name="data-matching"></a>Coincidencia de datos  
 
 Use esta sección para cargar esquemas de datos que describen los atributos de los interesados, lo que le ayudará a identificar al interesado correcto al buscar datos personales en su entorno Microsoft 365 datos. Los esquemas y paquetes de reglas se crean y cargan en formato XML. En Carga de datos personales, también puede enviar datos personales que coincidan con un esquema proporcionado. Puede crear y cargar su propio archivo o elegir cargar datos personales de Azure. Para obtener más información acerca de las solicitudes de derechos de sujeto, vea [Manage subject rights requests](privacy-management-subject-rights-requests.md).
-
-## <a name="data-retention-periods"></a>Períodos de retención de datos  
-
-Para las solicitudes de derechos de sujeto, elija cuánto tiempo desea conservar los datos recopilados y los informes generados. Puede seleccionar entre 30 o 90 días después de cerrar la solicitud. Para obtener más información acerca de las solicitudes de derechos de sujeto, vea [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 
 ## <a name="data-review-tags"></a>Etiquetas de revisión de datos  
 

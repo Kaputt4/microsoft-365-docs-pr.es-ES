@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8395a9c5dd2389fe25761dcbe76a13051baaa1b4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6e918c85e50f0e6f675cc623cf7765de6518ab1d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573024"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401295"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>Informar y solucionar problemas de Microsoft Defender para las reglas ASR de ATP
 
@@ -59,7 +59,7 @@ Con la búsqueda avanzada puedes dar forma a las consultas a tu gusto, para que 
 
 Una alternativa a la búsqueda avanzada, pero con un ámbito más estrecho, es la escala de tiempo de la máquina de Microsoft Defender para endpoint. Puedes ver todos los eventos recopilados de un dispositivo, durante los últimos seis meses, en el Microsoft 365 Defender, yendo a la lista Máquinas, selecciona una máquina determinada y, a continuación, haz clic en la pestaña Escala de tiempo.
 
-A continuación se muestra una captura de pantalla de la vista Escala de tiempo de estos eventos en un punto de conexión determinado.  Desde esta vista, puede filtrar la lista de eventos en función de cualquiera de los grupos de eventos a lo largo del panel derecho. También puedes habilitar o deshabilitar eventos marcados y detallados al ver alertas y desplazarte por la escala de tiempo histórica.
+A continuación se muestra una captura de pantalla de la vista Escala de tiempo de estos eventos en un punto de conexión determinado. Desde esta vista, puede filtrar la lista de eventos en función de cualquiera de los grupos de eventos a lo largo del panel derecho. También puedes habilitar o deshabilitar eventos marcados y detallados al ver alertas y desplazarte por la escala de tiempo histórica.
 
 :::image type="content" source="images/mic-sec-def-timelinenew.png" lightbox="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defender escala de tiempo.":::
 
@@ -103,7 +103,7 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ac
 
 Los eventos de regla ASR se pueden ver en el Windows Defender registro.
 
-Para acceder a él, abra Windows visor de eventos y vaya a Registros de aplicaciones y servicios  >  **de Microsoft**  >  **Windows**  >  **Windows Defender**  >  **Operativo**.
+Para acceder a él, abra Windows visor  de eventos y vaya a Registros de aplicaciones y servicios \> **de Microsoft** \> **Windows** \> **Windows Defender** \> **Operativo**.
 
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="scr del visor de eventos.":::
 

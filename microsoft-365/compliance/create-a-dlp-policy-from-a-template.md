@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: En este artículo, aprenderá a crear directivas DLP con una de las plantillas incluidas en Office 365.
-ms.openlocfilehash: 1fe14035f23443a8f8f35b5c9ac9edf69bf60ffd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29f8821316fcd4caf87ca0b7f77fb6a9c4f8c85e
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189867"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400899"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
@@ -85,12 +85,8 @@ También puede elegir la plantilla Personalizada, que no tiene reglas predetermi
 
 10. Elija **Siguiente**.
 
-11. En la **página Acciones de** protección si lo desea, puede personalizar las notificaciones de sugerencias de directiva y los correos electrónicos de notificación. Habilitar Cuando el contenido coincida con las condiciones de la directiva, mostrar sugerencias de directiva a los usuarios y **sen una** notificación de correo electrónico y, a continuación, elija Personalizar la **sugerencia y el correo electrónico**.
-1. c
-1. 
-1. 
-1. 
-1. hoose **Next**.
+11. En la **página Acciones de** protección si lo desea, puede personalizar las notificaciones de sugerencias de directiva y los correos electrónicos de notificación. Habilitar Cuando el contenido coincide con las condiciones de la **directiva, mostrar** sugerencias de directiva a los usuarios y enviarles una notificación de correo electrónico y, a continuación, elija **Personalizar la sugerencia y el correo electrónico**.
+12. Elija **Siguiente**.
 
 
 <!--    In this example, the U.S. PII Data template includes two predefined rules:

@@ -16,42 +16,40 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6ab81054cf2c2f4d6394730651a891c7d47b1794
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 11fbff0bb43cc07825e236884985e4d6f27f7ae6
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573504"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400779"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Técnicas en la escala de tiempo del dispositivo
 
-
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
 
 Puedes obtener más información en una investigación analizando los eventos que sucedieron en un dispositivo específico. En primer lugar, selecciona el dispositivo de interés de la [lista Dispositivos](machines-view-overview.md). En la página del dispositivo, puedes seleccionar la pestaña **Escala** de tiempo para ver todos los eventos que se produjeron en el dispositivo.
 
 ## <a name="understand-techniques-in-the-timeline"></a>Comprender técnicas en la escala de tiempo
 
->[!IMPORTANT]
->Parte de la información se relaciona con una característica de producto publicada previamente en la versión preliminar pública que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+> [!IMPORTANT]
+> Parte de la información se relaciona con una característica de producto publicada previamente en la versión preliminar pública que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-En Microsoft Defender para endpoint, **las técnicas son** un tipo de datos adicional en la escala de tiempo del evento. Las técnicas proporcionan más información sobre las actividades asociadas con [MITRE ATT&técnicas de CK](https://attack.mitre.org/) o sub-técnicas. 
+En Microsoft Defender para endpoint, **las técnicas son** un tipo de datos adicional en la escala de tiempo del evento. Las técnicas proporcionan más información sobre las actividades asociadas con [MITRE ATT&técnicas de CK](https://attack.mitre.org/) o sub-técnicas.
 
 Esta característica simplifica la experiencia de investigación al ayudar a los analistas a comprender las actividades que se observaron en un dispositivo. A continuación, los analistas pueden decidir investigar más a fondo.
 
-Para la vista previa pública, las técnicas están disponibles de forma predeterminada y se muestran junto con los eventos cuando se visualiza la escala de tiempo de un dispositivo. 
+Para la vista previa pública, las técnicas están disponibles de forma predeterminada y se muestran junto con los eventos cuando se visualiza la escala de tiempo de un dispositivo.
 
 ![Técnicas en la captura de pantalla de la escala de tiempo del dispositivo.](images/device-timeline-2.png)
 
-Las técnicas se resaltan en texto en negrita y aparecen con un icono azul a la izquierda. El nombre de la técnica y el identificador de CK&MITRE ATT correspondiente también aparecen como etiquetas en Información adicional. 
+Las técnicas se resaltan en texto en negrita y aparecen con un icono azul a la izquierda. El nombre de la técnica y el identificador de CK&MITRE ATT correspondiente también aparecen como etiquetas en Información adicional.
 
 Las opciones de búsqueda y exportación también están disponibles para Técnicas.
 
 ## <a name="investigate-using-the-side-pane"></a>Investigar con el panel lateral
 
-Seleccione una técnica para abrir su panel lateral correspondiente. Aquí puede ver información e información adicionales, como att relacionado&técnicas de CK, tácticas y descripciones. 
+Seleccione una técnica para abrir su panel lateral correspondiente. Aquí puede ver información e información adicionales, como att relacionado&técnicas de CK, tácticas y descripciones.
 
 Seleccione la técnica *de ataque específica* para abrir la página relacionada&técnica de CK de ATT donde encontrará más información al respecto.
 
@@ -63,24 +61,23 @@ Puede hacer lo mismo con las líneas de comandos.
 
 ![Copiar línea de comandos.](images/techniques-side-pane-command.png)
 
-
 ## <a name="investigate-related-events"></a>Investigar eventos relacionados
 
 Para usar [la búsqueda avanzada](advanced-hunting-overview.md) para buscar eventos relacionados con la técnica seleccionada, seleccione Buscar para eventos **relacionados.** Esto lleva a la página de búsqueda avanzada con una consulta para encontrar eventos relacionados con la técnica.
 
 ![Buscar eventos relacionados.](images/techniques-hunt-for-related-events.png)
 
->[!NOTE]
->Las consultas con el botón **Buscar** eventos relacionados desde un panel lateral Técnica muestran todos los eventos relacionados con la técnica identificada, pero no incluyen la técnica en sí en los resultados de la consulta.
-
+> [!NOTE]
+> Las consultas con el botón **Buscar** eventos relacionados desde un panel lateral Técnica muestran todos los eventos relacionados con la técnica identificada, pero no incluyen la técnica en sí en los resultados de la consulta.
 
 ## <a name="customize-your-device-timeline"></a>Personalizar la escala de tiempo del dispositivo
 
-En la parte superior derecha de la escala de tiempo del dispositivo, puedes elegir un intervalo de fechas para limitar el número de eventos y técnicas de la escala de tiempo. 
+En la parte superior derecha de la escala de tiempo del dispositivo, puedes elegir un intervalo de fechas para limitar el número de eventos y técnicas de la escala de tiempo.
 
 Puede personalizar las columnas que se deben exponer. También puede filtrar los eventos marcados por tipo de datos o por grupo de eventos.
 
 ### <a name="choose-columns-to-expose"></a>Elegir columnas para exponer
+
 Puede elegir qué columnas exponer en la escala de tiempo seleccionando el **botón Elegir** columnas.
 
 ![Personalizar columnas.](images/filter-customize-columns.png)
@@ -93,11 +90,7 @@ Para ver solo eventos o técnicas, selecciona **Filtros en** la escala de tiempo
 
 ![Filtra la captura de pantalla.](images/device-timeline-filters.png)
 
-
-
 ## <a name="see-also"></a>Vea también
+
 - [Ver y organizar la lista de dispositivos](machines-view-overview.md)
-- [Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión](device-timeline-event-flag.md) 
-
-
- 
+- [Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión](device-timeline-event-flag.md)

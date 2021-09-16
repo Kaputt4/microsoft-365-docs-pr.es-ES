@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 337f034dced0cad5d483b55fa279a7b220fb8e72
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213417"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401583"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros
 
@@ -37,7 +37,7 @@ Puede encontrar ayuda aquí si encuentra problemas al migrar desde una solución
 
 Abra la aplicación Visor de eventos seleccionando el icono **Buscar** en la barra de tareas y buscando el *visor de eventos.*
 
-Encontrará información Antivirus de Microsoft Defender en **Registros** de aplicaciones y servicios  >  **Microsoft**  >  **Windows**  >  **Windows Defender**.
+Encontrará información Antivirus de Microsoft Defender en **Registros** de aplicaciones y servicios \> **Microsoft** \> **Windows** \> **Windows Defender**.
 
 Desde allí, seleccione **Abrir debajo** de **Operativo**.
 
@@ -52,7 +52,7 @@ Este problema puede manifestarse en forma de varios IDs de eventos diferentes, t
 Id. de evento|Nombre de registro|Descripción|Origen
 ---|---|---|---
 15 |Aplicación|Se Windows Defender el estado correctamente para SECURITY_PRODUCT_STATE_OFF.|Centro de seguridad
-5007|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender La configuración ha cambiado.  Si se trata de un evento inesperado, debes revisar la configuración, ya que puede ser el resultado de malware. <p> **Valor antiguo:** Default\IsServiceRunning = 0x0 p> **Nuevo valor:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5007|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender La configuración ha cambiado. Si se trata de un evento inesperado, debes revisar la configuración, ya que puede ser el resultado de malware. <p> **Valor antiguo:** Default\IsServiceRunning = 0x0 <p> **Nuevo valor:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender está deshabilitado el examen de spyware y otro software potencialmente no deseado.|Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>Cómo saber si Antivirus de Microsoft Defender no se iniciará porque está instalado un antivirus de terceros
@@ -66,7 +66,7 @@ En un dispositivo Windows 10, si no usa Microsoft Defender para Endpoint y tiene
 
 Para abrir la aplicación Servicios, seleccione el icono **Buscar** de la barra de tareas y busque *servicios.* También puedes abrir la aplicación desde la línea de comandos escribiendo *services.msc*.
 
-La información sobre Antivirus de Microsoft Defender aparecerá en la aplicación Servicios en **Windows Defender**  >  **Operativo**. El nombre del servicio antivirus *es Antivirus de Windows Defender servicio*.
+La información sobre Antivirus de Microsoft Defender aparecerá en la aplicación Servicios en **Windows Defender** \> **Operativo**. El nombre del servicio antivirus *es Antivirus de Windows Defender servicio*.
 
 Al comprobar la aplicación, es posible que veas que el servicio *de Antivirus de Windows Defender* está establecido en manual, pero cuando intentas iniciar este servicio manualmente, recibes una advertencia que indica que el servicio de servicio Antivirus de Windows Defender en el equipo local se inició y, a continuación, se *detuvo. Algunos servicios se detienen automáticamente si otros* servicios o programas no los usan.
 
@@ -88,7 +88,7 @@ Esto generará un informe ubicado en *./gpresult.html*. Abra este archivo y es p
 
 En el informe GPResults, bajo el título *Windows Components/Antivirus de Windows Defender*, puede ver algo como la siguiente entrada, que indica que Antivirus de Microsoft Defender está desactivado.
 
-Directiva|Setting|GPO ganador
+Directiva|Valor|GPO ganador
 ---|---|---
 Desactivar Antivirus de Windows Defender|Habilitado|Win10-Workstations
 
@@ -135,7 +135,7 @@ Otra característica, conocida como [examen periódico limitado,](limited-period
 > [!IMPORTANT]
 > No se recomienda el examen periódico limitado en entornos empresariales. Las capacidades de detección, administración e informes disponibles al ejecutar Antivirus de Microsoft Defender en este modo se reducen en comparación con el modo activo.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 
 - [Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md)
 - [Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md)

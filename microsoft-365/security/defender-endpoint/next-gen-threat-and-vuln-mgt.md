@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 06fdea1c4d84ca4cd23aeb7e715c0087f65275b1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f909d39fee3eb55caaa47ef6a636d33ff4c7f025
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166947"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400179"
 ---
 # <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
 
@@ -31,7 +31,6 @@ ms.locfileid: "59166947"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Identificar, evaluar y corregir eficazmente las debilidades de los puntos de conexión es fundamental para ejecutar un programa de seguridad correcto y reducir los riesgos de la organización. La administración de amenazas y vulnerabilidades funciona a modo de infraestructura para reducir la exposición en la organización, fortalecer la superficie de los puntos de conexión y aumentar la resistencia de la organización.
@@ -40,7 +39,7 @@ Descubra vulnerabilidades y configuraciones erróneas en tiempo real con sensore
 
 Vea este vídeo para obtener una introducción rápida a Administración de amenazas y vulnerabilidades.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
 
 ## <a name="bridging-the-workflow-gaps"></a>Puentear las diferencias de flujo de trabajo
 
@@ -79,18 +78,23 @@ Las amenazas y administración de vulnerabilidades permiten a los administradore
 
 Vea este vídeo para ver un recorrido completo de Administración de amenazas y vulnerabilidades.
 
->[!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
+> [!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
 
 ## <a name="navigation-pane"></a>Panel de navegación 
 
-Área | Descripción
-:---|:---
-**Panel**   | Obtenga una vista de alto nivel de la puntuación de exposición de la organización, puntuación segura de Microsoft para dispositivos, distribución de exposición de dispositivos, recomendaciones de seguridad principales, software vulnerable superior, actividades de corrección superior y datos de dispositivos expuestos superiores.
-[**Recomendaciones de seguridad**](tvm-security-recommendation.md) | Consulta la lista de recomendaciones de seguridad e información de amenazas relacionada. Al seleccionar un elemento de la lista, se abre un panel desplegable con detalles de vulnerabilidad, un vínculo para abrir la página de software y opciones de corrección y excepción. También puedes abrir un vale en Intune si los dispositivos están unidos a través de Azure Active Directory y has habilitado las conexiones de Intune en Defender para endpoint.
-[**Corrección**](tvm-remediation.md) | Vea las actividades de corrección que ha creado y las excepciones de recomendación.
-[**Inventario de software**](tvm-software-inventory.md) | Consulta la lista de software vulnerable de tu organización, junto con información de debilidad y amenazas.
-[**Debilidades**](tvm-weaknesses.md) | Consulta la lista de vulnerabilidades y exposiciones comunes (CVE) en tu organización.
-[**Línea de tiempo de eventos**](threat-and-vuln-mgt-event-timeline.md) | Ver eventos que pueden afectar el riesgo de su organización.
+<br>
+
+****
+
+|Área|Descripción|
+|---|---|
+|**Panel**|Obtenga una vista de alto nivel de la puntuación de exposición de la organización, puntuación segura de Microsoft para dispositivos, distribución de exposición de dispositivos, recomendaciones de seguridad principales, software vulnerable superior, actividades de corrección superior y datos de dispositivos expuestos superiores.|
+|[**Recomendaciones de seguridad**](tvm-security-recommendation.md)|Consulta la lista de recomendaciones de seguridad e información de amenazas relacionada. Al seleccionar un elemento de la lista, se abre un panel desplegable con detalles de vulnerabilidad, un vínculo para abrir la página de software y opciones de corrección y excepción. También puedes abrir un vale en Intune si los dispositivos están unidos a través de Azure Active Directory y has habilitado las conexiones de Intune en Defender para endpoint.|
+|[**Corrección**](tvm-remediation.md)|Vea las actividades de corrección que ha creado y las excepciones de recomendación.|
+|[**Inventario de software**](tvm-software-inventory.md)|Consulta la lista de software vulnerable de tu organización, junto con información de debilidad y amenazas.|
+|[**Debilidades**](tvm-weaknesses.md)|Consulta la lista de vulnerabilidades y exposiciones comunes (CVE) en tu organización.|
+|[**Línea de tiempo de eventos**](threat-and-vuln-mgt-event-timeline.md)|Ver eventos que pueden afectar el riesgo de su organización.|
+|||
 
 ## <a name="apis"></a>API
 
@@ -106,7 +110,7 @@ Vea los siguientes artículos para obtener las API relacionadas:
 - [API de vulnerabilidad](vulnerability.md)
 - [Enumerar vulnerabilidades por máquina y software](get-all-vulnerabilities-by-machines.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Plataformas y sistemas operativos compatibles](tvm-supported-os.md)
 - [Panel de administración de vulnerabilidades amenazas](tvm-dashboard-insights.md)

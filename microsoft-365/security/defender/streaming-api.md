@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 431fd1271bf826ded53f88818741c5bbaa61e9b5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b8912ee40c090522a0b6228643f37b161dbde14
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189187"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401235"
 ---
 # <a name="streaming-api"></a>API de streaming
 
@@ -44,6 +44,7 @@ Tema | Descripción
 :---|:---
 [Transmitir eventos a Azure Event Hubs](streaming-api-event-hub.md)| Obtenga información sobre cómo habilitar la API de streaming en el espacio empresarial y configurar Microsoft 365 Defender para transmitir [la búsqueda avanzada](../defender/advanced-hunting-overview.md) a los centros de eventos.
 [Transmitir eventos a su cuenta de Azure Storage](streaming-api-storage.md)| Obtenga información sobre cómo habilitar la API de streaming en el inquilino y configurar Microsoft 365 Defender para transmitir [la búsqueda avanzada](advanced-hunting-overview.md) a su cuenta de Azure Storage.
+[Tipos de eventos admitidos](supported-event-types.md) | Obtén información sobre qué tipos de eventos de búsqueda avanzada admite la API de streaming.
 
 
 ## <a name="related-topics"></a>Temas relacionados

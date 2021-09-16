@@ -20,94 +20,131 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 754ec7b6cdd6e6c5e3c9f5765d839bd94a1d720b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a0d715bd9c51f73eb58e06d68892ba955bdb7d1d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218290"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400815"
 ---
-#  <a name="run-the-client-analyzer-on-windows"></a>Ejecutar el analizador de cliente en Windows
+# <a name="run-the-client-analyzer-on-windows"></a>Ejecutar el analizador de cliente en Windows
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-1.  Descargue la [herramienta MDE Client Analyzer](https://aka.ms/mdatpanalyzer) en la Windows que necesita investigar.
+1. Descargue la [herramienta MDE Client Analyzer](https://aka.ms/mdatpanalyzer) en la Windows que necesita investigar.
 
-2.  Extraiga el contenido de MDEClientAnalyzer.zip en el equipo.
+2. Extraiga el contenido de MDEClientAnalyzer.zip en el equipo.
 
-3.  Abra un símbolo del sistema con privilegios elevados:
+3. Abra un símbolo del sistema con privilegios elevados:
     1. Vaya a **Inicio** y escriba **cmd**.
     2. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-4.  Escriba el siguiente comando y presione **Entrar**:
+4. Escriba el siguiente comando y presione **Entrar**:
 
-```
-HardDrivePath\MDEClientAnalyzer.cmd
-```
+   ```dos
+   HardDrivePath\MDEClientAnalyzer.cmd
+   ```
 
-**Reemplace HardDrivePath por la ruta de acceso a la que se extrajo la herramienta, por ejemplo:**
+   **Reemplace HardDrivePath por la ruta de acceso a la que se extrajo la herramienta, por ejemplo:**
 
-`C:\Work\tools\MDATPClientAnalyzer\MDEClientAnalyzer.cmd`
+   ```dos
+   C:\Work\tools\MDATPClientAnalyzer\MDEClientAnalyzer.cmd
+   ```
 
 Además de lo anterior, también hay una opción para recopilar los registros de soporte técnico del analizador [mediante la respuesta en directo.](troubleshoot-collect-support-log.md).
 
-> [!NOTE]  
-> En windows 10, Windows Server 2019 o versiones posteriores del sistema operativo, el script del analizador de cliente llama a un archivo ejecutable llamado para ejecutar las pruebas de conectividad a las direcciones URL del servicio en la `MDEClientAnalyzer.exe` nube. <br> <br> En Windows 8.1, Windows Server 2016 o ediciones anteriores del sistema operativo, el script del analizador de cliente llama a un archivo ejecutable llamado para ejecutar pruebas de conectividad para las direcciones URL de comando y control (CnC), al tiempo que llama Microsoft Monitoring Agent una herramienta de conectividad Microsoft Monitoring Agent las direcciones URL del canal de datos `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe` cibernéticos.
+> [!NOTE]
+> En windows 10, Windows Server 2019 o versiones posteriores del sistema operativo, el script del analizador de cliente llama a un archivo ejecutable llamado para ejecutar las pruebas de conectividad a las direcciones URL del servicio en la `MDEClientAnalyzer.exe` nube.
+>
+> En Windows 8.1, Windows Server 2016 o ediciones anteriores del sistema operativo, el script del analizador de cliente llama a un archivo ejecutable llamado para ejecutar pruebas de conectividad para las direcciones URL de comando y control (CnC), al tiempo que llama Microsoft Monitoring Agent una herramienta de conectividad Microsoft Monitoring Agent las direcciones URL del canal de datos `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe` cibernéticos.
 
 ## <a name="result-package-contents-on-windows"></a>Contenido del paquete de resultados Windows
 
-> [!NOTE]    
+> [!NOTE]
 > Los archivos exactos capturados pueden cambiar en función de factores como:
-> -   La versión de las ventanas en las que se ejecuta el analizador.
-> -   Disponibilidad del canal de registro de eventos en el equipo.
-> -   El estado de inicio del sensor EDR (Sense se detiene si la máquina aún no está incorporada).
->-   Si se usó un parámetro de solución de problemas avanzado con el comando analyzer.
+>
+> - La versión de las ventanas en las que se ejecuta el analizador.
+> - Disponibilidad del canal de registro de eventos en el equipo.
+> - El estado de inicio del sensor EDR (Sense se detiene si la máquina aún no está incorporada).
+> - Si se usó un parámetro de solución de problemas avanzado con el comando analyzer.
 
 De forma predeterminada, el archivo MDEClientAnalyzerResult.zip descomprimido contendrá los siguientes elementos.
 
--   MDEClientAnalyzer.htm este es el archivo de salida HTML principal, que contendrá los resultados y las instrucciones que puede producir el script del analizador \| en la máquina.
+- MDEClientAnalyzer.htm
 
--   SystemInfoLogs [Carpeta]
+  Este es el archivo de salida HTML principal, que contendrá los resultados y las instrucciones que puede producir el script del analizador en la máquina.
 
-    -   AddRemovePrograms.csv <br> Descripción: lista del software instalado recopilado del Registro.
+- Carpeta SystemInfoLogs \[\]
+  - AddRemovePrograms.csv
 
--   AddRemoveProgramsWOW64.csv <br> Descripción: lista del software instalado x86 en el software del sistema operativo x64 recopilado del Registro.
+    Descripción: lista del software instalado x86 en el software del sistema operativo x64 recopilado del Registro.
 
-    -   CertValidate.log <br> Descripción: resultado detallado de la revocación de certificado ejecutada llamando a [CertUtil](/windows-server/administration/windows-commands/certutil).
+  - AddRemoveProgramsWOW64.csv
 
-    -   dsregcmd.txt <br> Descripción: Salida de la ejecución [de dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd).
-        Esto proporciona detalles sobre el estado de Azure AD del equipo.
+    Descripción: lista del software instalado x86 en el software del sistema operativo x64 recopilado del Registro.
 
-    -   IFEO.txt <br> Descripción: salida de las [opciones de ejecución de archivos de imagen](/previous-versions/windows/desktop/xperf/image-file-execution-options) configuradas en el equipo
+    - CertValidate.log
 
-    -   MDEClientAnalyzer.txt <br> Descripción: se trata de un archivo de texto detallado que muestra los detalles de la ejecución del script del analizador.
+      Descripción: resultado detallado de la revocación de certificado ejecutada llamando a [CertUtil](/windows-server/administration/windows-commands/certutil).
 
-    -   MDEClientAnalyzer.xml <br> Descripción: formato XML que contiene los resultados del script del analizador.
+    - dsregcmd.txt
 
-    -   RegOnboardedInfoCurrent.Jsen <br> Descripción: la información del equipo incorporado recopilada en formato JSON del Registro.
+      Descripción: Salida de la ejecución [de dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Esto proporciona detalles sobre el estado de Azure AD del equipo.
 
-    -   RegOnboardingInfoPolicy.Jsen <br> Descripción: la configuración de directiva de incorporación recopilada en formato JSON del Registro.
+    - IFEO.txt
 
-    -   SCHANNEL.txt <br> Descripción: detalles sobre la [configuración de SCHANNEL](/windows-server/security/tls/manage-tls) aplicada a la máquina, tal como se recopila desde el Registro.
+      Descripción: salida de las [opciones de ejecución de archivos de imagen](/previous-versions/windows/desktop/xperf/image-file-execution-options) configuradas en el equipo
 
-    -   SessionManager.txt <br> Descripción: la configuración específica del Administrador de sesiones se recopila desde el Registro.
+    - MDEClientAnalyzer.txt
 
-    -   SSL_00010002.txt <br> Descripción: detalles sobre la [configuración SSL](/windows-server/security/tls/manage-tls) aplicada a la máquina recopilada desde el Registro.
+      Descripción: se trata de un archivo de texto detallado que muestra los detalles de la ejecución del script del analizador.
 
--   EventLogs [Folder]
+    - MDEClientAnalyzer.xml
 
-    -   utc.evtx <br> Descripción: Exportación del registro de eventos de DiagTrack
+      Descripción: formato XML que contiene los resultados del script del analizador.
 
-    -   senseIR.evtx <br> Descripción: exportación del registro de eventos de investigación automatizada
+    - RegOnboardedInfoCurrent.Json
 
-    -   sense.evtx <br> Descripción: Exportación del registro de eventos principales del sensor
+      Descripción: la información del equipo incorporado recopilada en formato JSON del Registro.
 
-    -   OperationsManager.evtx <br> Descripción: exportación del registro Microsoft Monitoring Agent de eventos
+  - RegOnboardingInfoPolicy.Json
 
+    Descripción: la configuración de directiva de incorporación recopilada en formato JSON del Registro.
 
-## <a name="see-also"></a>Consulte también
+    - SCHANNEL.txt
+
+      Descripción: detalles sobre la [configuración de SCHANNEL](/windows-server/security/tls/manage-tls) aplicada a la máquina, tal como se recopila desde el Registro.
+
+    - SessionManager.txt
+
+      Descripción: la configuración específica del Administrador de sesiones se recopila desde el Registro.
+
+    - SSL_00010002.txt
+
+      Descripción: detalles sobre la [configuración SSL](/windows-server/security/tls/manage-tls) aplicada a la máquina recopilada desde el Registro.
+
+- EventLogs [Folder]
+
+  - utc.evtx
+
+    Descripción: Exportación del registro de eventos de DiagTrack
+
+  - senseIR.evtx
+
+    Descripción: exportación del registro de eventos de investigación automatizada
+
+  - sense.evtx
+
+    Descripción: Exportación del registro de eventos principales del sensor
+
+  - OperationsManager.evtx
+
+    Descripción: exportación del registro Microsoft Monitoring Agent de eventos
+
+## <a name="see-also"></a>Vea también
+
 - [Información general del Analizador de clientes](overview-client-analyzer.md)
 - [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)
 - [ Recopilación de datos para solucionar problemas avanzados en Windows](data-collection-analyzer.md)

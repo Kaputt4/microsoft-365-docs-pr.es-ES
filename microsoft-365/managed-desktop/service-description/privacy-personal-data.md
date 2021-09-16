@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: f8c27f5776c41376abd6f9c0e412480e02bab217
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 99dd3a0782f44f0db1066ab33d3fe6ddd9a5def6
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215280"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402231"
 ---
 # <a name="overview"></a>Información general
 
@@ -40,7 +40,7 @@ Escritorio administrado de Microsoft proporciona su servicio a los clientes empr
 
 ## <a name="microsoft-managed-desktop-data-process-and-storage"></a>Escritorio administrado de Microsoft y almacenamiento de datos
 
-Escritorio administrado de Microsoft se basa en datos de varios productos y servicios de Microsoft para proporcionar su servicio a clientes empresariales. Para lograr el objetivo de proteger y mantener los dispositivos inscritos, procesamos y copiamos datos de estos servicios a Escritorio administrado de Microsoft. Cuando procesamos datos, seguimos las instrucciones documentadas que proporciona, como se hace referencia en los Términos de Servicios en línea y la Declaración de privacidad de Microsoft. Cuando procesamos datos, seguimos las instrucciones documentadas que proporciona, como se hace referencia en los Términos de [Servicios](https://www.microsoft.com/licensing/product-licensing/products) en línea y la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement). Escritorio administrado de Microsoft tareas del procesador incluyen garantizar la confidencialidad, la seguridad y la resistencia adecuadas. Escritorio administrado de Microsoft emplea medidas adicionales de privacidad y seguridad para garantizar un tratamiento adecuado de los datos de identificación personal. 
+Escritorio administrado de Microsoft se basa en datos de varios productos y servicios de Microsoft para proporcionar su servicio a clientes empresariales. Para lograr el objetivo de proteger y mantener los dispositivos inscritos, procesamos y copiamos datos de estos servicios a Escritorio administrado de Microsoft.  Cuando procesamos datos, seguimos las instrucciones documentadas que proporciona, como se hace referencia en los Términos de [Servicios](https://www.microsoft.com/licensing/product-licensing/products) en línea y la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement). Escritorio administrado de Microsoft tareas del procesador incluyen garantizar la confidencialidad, la seguridad y la resistencia adecuadas. Escritorio administrado de Microsoft emplea medidas adicionales de privacidad y seguridad para garantizar un tratamiento adecuado de los datos de identificación personal. 
 
 
 ## <a name="microsoft-managed-desktop-data-storage-and-staff-location"></a>Escritorio administrado de Microsoft almacenamiento de datos y ubicación del personal
