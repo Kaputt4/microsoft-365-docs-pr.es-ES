@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las funcionalidades de gobernanza de aplicaciones para controlar sus aplicaciones.
-ms.openlocfilehash: 35a04beb04f22558ca150294ebb566a8284d5270
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d733d62927e78b99ad5289206caf51df3459522c
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190034"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401103"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Introducción a la gobernanza de aplicaciones (en versión preliminar)
 
@@ -34,19 +34,18 @@ Para empezar a usar el complemento de gobernanza de aplicaciones para Microsoft 
 
 ## <a name="step-2-sign-up-for-free-trial-of-app-governance"></a>Paso 2: Registrarse para obtener una evaluación gratuita de la gobernanza de aplicaciones
 
-Para los clientes nuevos de Microsoft 365:
-
-1. En la parte superior de esta página, seleccione el botón  **Cuenta gratuita** .
-1. En  **Probar Microsoft 365 para empresas** seleccione **Probar 1 mes gratis**.
-1. Complete los pasos para el registro.
-1. Continúe con los pasos para los clientes de Microsoft 365 existentes.
-
 Para los clientes existentes de Microsoft 365:
 
 1. Vaya a la página de registro[para obtener la evaluación gratuita](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc). 
 1. Complete los pasos para agregar gobernanza de aplicaciones. El registro es sencillo, tal como se muestra en el siguiente gráfico.
 
-:::image type="content" source="../media/manage-app-protection-governance/app-governance-signup2.gif" alt-text="Pasos sencillos para agregar gobernanza de aplicaciones a su cuenta.":::
+:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Pasos sencillos para agregar gobernanza de aplicaciones a su cuenta.":::
+
+Si aún no es cliente de Microsoft 365, puede registrarse para obtener una prueba gratuita:
+
+1. En la parte superior de esta página, seleccione el botón  **Cuenta gratuita** .
+1. En  **Probar Microsoft 365 para empresas** seleccione **Probar 1 mes gratis**.
+1. Complete los pasos para el registro.
 
 ## <a name="step-3-add-integration-with-mcas"></a>Paso 3: Agregar la integración con MCAS
 
@@ -116,9 +115,6 @@ Se requiere uno de los siguientes roles de administrador para ver las páginas d
 - Administrador de seguridad
 - Operador de seguridad
 - Lector de seguridad (solo lectura)
-
-> [!NOTE]
-> Solo un administrador global puede activar la evaluación gratuita de gobernanza de aplicaciones.
 
 Estas son las funcionalidades de cada rol.
 

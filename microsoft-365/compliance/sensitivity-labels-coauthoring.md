@@ -13,19 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: f4399635be64343b4858dbf0b507284afc1f6573
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3a538f866be9d43088ab22923b41c6b070855ea3
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216500"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356130"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-> [!NOTE]
-> Esta característica se encuentra en versión preliminar y está sujeta a cambios.
 
 Habilite la configuración para admitir la [coautoría](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) para las aplicaciones de escritorio de Office de modo que cuando las [etiquetas de confidencialidad](sensitivity-labels.md) etiquetan y cifran documentos, varios usuarios puedan editar estos documentos al mismo tiempo.
 
@@ -33,7 +30,7 @@ Sin esta configuración habilitada para su espacio empresarial, los usuarios deb
 
 Además, habilitar esta funcionalidad hace que la característica de [Autoguardado](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) sea compatible con estos archivos cifrados y etiquetados.
 
-Para leer el anuncio de lanzamiento inicial, consulte la publicación del blog [Anunciar la coautoría en documentos cifrados de protección de la información de Microsoft y actualizaciones de etiquetado](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
+Para leer el anuncio de lanzamiento, consulte la entrada de blog [La coautoría en documentos cifrados con Microsoft Information Protection ya está disponible con carácter general](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/2693718).
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>Cambios de metadatos para etiquetas de confidencialidad
 
@@ -77,15 +74,15 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
 - Las etiquetas de confidencialidad deben estar [habilitadas para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) para el espacio empresarial. Si esta característica no está ya habilitada, se habilitará automáticamente al seleccionar la configuración para activar la coautoría para los archivos con etiquetas de confidencialidad.
 
 - Aplicaciones de Microsoft 365 para empresas:
-    - **Windows**: versión mínima 2106
-    - **macOS**: versión mínima 16.50
+    - **Windows**: versión mínima 2107
+    - **macOS**: versión mínima 16.51
     - **iOS**: aún no compatible
     - **Android**: aún no compatible
 
 - Todas las aplicaciones, servicios y herramientas operativas de su espacio empresarial deben admitir los nuevos [metadatos de etiquetado](#metadata-changes-for-sensitivity-labels). Si usa alguna de las siguientes, compruebe las versiones mínimas requeridas:
     
     - **Cliente de etiquetado unificado de Azure Information Protection para Windows y escáner:**
-        - Una versión preliminar pública (con el nombre de instalación de AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe) que puede instalar desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
+        - Versión mínima [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) que puede instalar desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
     
     - **Aplicación de Sincronización de Microsoft OneDrive para Windows o macOS:**
         - Versión mínima de 19.002.0121.0008
@@ -112,6 +109,8 @@ Antes de habilitar la configuración de espacio empresarial para la coautoría d
     
     Específico de Excel: Los metadatos para una etiqueta de confidencialidad que no aplica cifrado pueden eliminarse de un archivo si alguien edita y guarda el archivo con una versión de Excel que no admite los cambios de metadatos de etiquetado para etiquetas de confidencialidad.
 
+- Las aplicaciones de Office no son compatibles para iOS y Android actualmente.
+
 - La coautoría y el autoguardado no son compatibles y no funcionan en documentos de Office etiquetados y cifrados que usan cualquiera de las siguientes [configuraciones para el cifrado](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Permitir que los usuarios asignen permisos cuando apliquen la etiqueta** y la casilla **En Word, PowerPoint y Excel, pedir a los usuarios que especifiquen permisos** seleccionada. Esta configuración se conoce a veces como "permisos definidos por el usuario".
     - **El acceso del usuario al contenido expira** establecido en un valor distinto de **Nunca**.
@@ -119,30 +118,20 @@ Antes de habilitar la configuración de espacio empresarial para la coautoría d
     
     Para las etiquetas con cualquiera de estas configuraciones de cifrado, las etiquetas se muestran en las aplicaciones de Office. Sin embargo, cuando los usuarios seleccionan estas etiquetas y nadie más está editando el documento, se les advierte de que la coautoría y el Autoguardado no estarán disponibles. Si alguien más está editando el documento, los usuarios verán un mensaje que indica que no se pueden aplicar las etiquetas.
 
-- Si usa el cliente de etiquetado unificado de Azure Information Protection: Compruebe la documentación de este cliente de etiquetado para ver [otros requisitos o limitaciones](/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
-
-## <a name="known-issues-for-this-preview"></a>Problemas conocidos para esta versión preliminar
-
-Esta versión preliminar de coautoría para archivos cifrados con etiquetas de confidencialidad tiene los siguientes problemas conocidos:
-
-- Los usuarios no podrán aplicar ninguna etiqueta en Office para la Web para archivos de Word, Excel y PowerPoint que sean superiores a 300 MB. Para estos archivos, puede usar las aplicaciones de escritorio de Office para aplicar una etiqueta, pero debe ser la única persona que tiene abierto el archivo.
-
-- Actualmente en implementación: compatibilidad con [directivas DLP que usan etiquetas de confidencialidad como condiciones](dlp-sensitivity-label-as-condition.md) y datos adjuntos sin cifrar para los correos electrónicos.
-
-- Algunos documentos no son compatibles con etiquetas de confidencialidad debido a características como [protección con contraseña](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643), [libros compartidos](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534), o contenido que incluya controles ActiveX. Otros motivos están documentados en [solución de problemas de coautoría en Office](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7). Para esos documentos, verá el mensaje **Error al cargar** y deberá seleccionar la opción **Descartar cambios**. Mientras no quede solucionado este problema, evite etiquetar los documentos que presentan dicho mensaje de error.
-
-- Las aplicaciones de Office para iOS y Android no son compatibles.
+- Si usa el cliente de etiquetado unificado de Azure Information Protection: Compruebe la documentación de este cliente de etiquetado para ver [otros requisitos o limitaciones](/azure/information-protection/known-issues#known-issues-for-co-authoring).
 
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Cómo habilitar la coautoría en archivos con etiquetas de confidencialidad
 
 > [!CAUTION]
-> Habilitar este valor es una acción unidireccional. Mientras la característica está en versión preliminar, habilítela solo después de haber leído y comprendido los cambios de metadatos, los requisitos previos, las limitaciones y cualquier problema conocido documentado en esta página.
+> Habilitar este valor es una acción unidireccional. Habilítela solo después de haber leído y comprendido los cambios de metadatos, los requisitos previos, las limitaciones y cualquier problema conocido documentado en esta página.
+
+Si ya ha activado esta configuración durante el período de versión preliminar, no es necesario realizar ninguna otra acción y puede saltarse este procedimiento.
 
 1. Inicie sesión en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) como administrador global de su espacio empresarial.
 
 2. En el panel de navegación, seleccione **Configuración** > **Coautoría para archivos con archivos de confidencialidad**.
 
-2. En la página **Coautoría para archivos con etiquetas de confidencialidad (versión preliminar)**, lea la descripción de resumen, los requisitos previos, lo que puede esperar y la advertencia de que no puede desactivar este valor después de activarlo.
+2. En **Coautoría para archivos con etiquetas de confidencialidad**, lea la descripción de resumen, los requisitos previos, lo que puede esperar y la advertencia de que no puede desactivar este valor después de activarlo.
     
     Después, seleccione **Activar la coautoría para archivos con etiquetas de confidencialidad** y **Aplicar**:
     

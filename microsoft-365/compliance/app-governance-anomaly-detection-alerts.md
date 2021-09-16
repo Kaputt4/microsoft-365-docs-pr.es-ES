@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Investigar las alertas de detección de anomalías.
-ms.openlocfilehash: 57e32f0fc2d50e5e1f1d4d9fb9e6b1520f0f99e6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 69f0f3cee8c818ac071204baa10cb2be8aae6336
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190134"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401787"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Investigar las alertas de detección de anomalías
 
@@ -38,7 +38,7 @@ Esta guía proporciona información sobre cómo investigar y solucionar las aler
 - Evasión de defensa
 - Acceso a credenciales
 - Colección
-- Exfiltración
+- Filtración
 - Impacto
 
 ## <a name="security-alert-classifications"></a>Clasificación de las alertas de seguridad
@@ -295,3 +295,28 @@ Esta detección identifica si una aplicación consiente el ámbito de privilegio
 1. Revise los alcances otorgados por la aplicación.  
 1. Revise cualquier acción de regla de bandeja de entrada creada por la aplicación.  
 1. Revise las actividades de búsqueda de SharePoint o OneDrive realizadas por la aplicación.
+
+### <a name="app-made-high-volume-of-importance-mail-read-and-created-inbox-rule"></a>La aplicación realizó un gran volumen de lectura de correo importante y creó la regla de bandeja de entrada
+
+**Gravedad**: media  
+
+**Id. de MITRE**: T1137, T1114
+
+Esta detección identifica que una aplicación consiente el ámbito de privilegios elevados, crea una regla de bandeja de entrada sospechosa y ha realizado un gran volumen de lectura de correos importantes a través de la API de Graph. Esto puede indicar un intento de vulneración de seguridad en su organización, por ejemplo, un rival que intenta leer el correo electrónico importante de su organización a través de la API de Graph.  
+
+**¿TP o FP?**
+
+- **TP**: si se puede confirmar que se ha leído un gran volumen de correo electrónico importante a través de la API de Graph mediante una aplicación de OAuth con un ámbito de privilegios alto y que se entrega desde un origen desconocido.  
+
+  **Acción recomendada**: deshabilitar y quitar la aplicación, restablecer la contraseña y quitar la regla de bandeja de entrada.  
+
+- **FP**: si se puede confirmar que la aplicación ha leído un gran volumen de correo electrónico importante a través de la API de Graph y ha creado una regla de bandeja de entrada para una cuenta de correo electrónico externa nueva o personal por motivos legítimos.  
+
+  **Acción recomendada**: descartar la alerta  
+
+**Comprender el alcance de la infracción**
+
+1. Revise todas las actividades realizadas por la aplicación.  
+1. Revise los alcances otorgados por la aplicación.  
+1. Revise cualquier acción de regla de bandeja de entrada creada por la aplicación.  
+1. Revise cualquier actividad de lectura de correo electrónico importante realizada por la aplicación.  

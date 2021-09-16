@@ -8,6 +8,8 @@
           href: admin-overview/sign-up-for-office-365.md
         - name: Probar o comprar Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
+        - name: Planear la configuración de Microsoft 365 para empresas
+          href: setup/plan-your-setup.md
         - name: Suscribirse a Microsoft 365 Empresa Premium
           items:
             - name: Registrarse
@@ -19,7 +21,7 @@
             - name: Registrarse en Microsoft 365 Empresa Estándar
               href: ../admin/simplified-signup/signup-business-standard.md
             - name: Configurar Microsoft 365 Empresa Estándar
-              href: ../admin/simplified-signup/signup-business-standard.md
+              href: ../admin/setup/setup-business-standard.md
             - name: Invitar a usuarios a Microsoft 365 Empresa Estándar
               href: ../admin/simplified-signup/admin-invite-business-standard.md
             - name: Aceptar invitación por correo electrónico a Microsoft 365 Empresa Estándar
@@ -28,8 +30,6 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: Migrar datos a mi suscripción de Microsoft 365 Empresa Estándar
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: Planear la configuración
-          href: setup/plan-your-setup.md
         - name: Plan para Windows 365 Empresa
           items:
             - name: Introducción a Windows 365 Empresa y equipos en la nube
@@ -38,7 +38,7 @@
               href: setup/windows-365-business-sizing.md
             - name: Solucionar problemas de configuración de PC en la nube Windows 365
               href: setup/troubleshoot-windows-365-business.md
-        - name: Configurar la organización con la configuración guiada
+        - name: Configurar Microsoft 365 para la organización de empresas
           items:
             - name: Microsoft 365 Empresa Básico
               href: setup/setup-business-basic.md

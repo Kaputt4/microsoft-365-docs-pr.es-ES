@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Obtener información sobre el número máximo de directivas y elementos por directiva para directivas de retención y directivas de etiquetas de retención
-ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 322a0c711ed1838dfd5349d43b1c3bcbf656618e
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188014"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399867"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 
@@ -31,9 +31,13 @@ ms.locfileid: "59188014"
 
 Al usar [directivas de retención y directivas de etiqueta de retención](retention.md#retention-policies-and-retention-labels) para conservar o eliminar automáticamente datos de su organización, debe conocer ciertos límites.
 
+## <a name="maximum-number-of-retention-labels-per-tenant"></a>Número máximo de etiquetas de retención por inquilino
+
+Se admite un máximo de 1000 etiquetas de retención por inquilino.
+
 ## <a name="maximum-number-of-policies-per-tenant"></a>Número máximo de directivas por espacio empresarial
 
-Un solo espacio empresarial puede tener un máximo de 10 000 directivas (cualquier configuración). Este número máximo incluye las diferentes directivas de retención y otras directivas de cumplimiento como directivas para DLP, barreras de información, retenciones de eDiscovery y etiquetas de confidencialidad.
+Un solo espacio empresarial puede tener un máximo de 10 000 directivas (cualquier configuración). Este número máximo incluye las diferentes directivas de retención y otras directivas de cumplimiento como directivas para DLP, barreras de información, retenciones de eDiscovery y etiquetas de confidencialidad.
 
 Dentro de este límite de 10 000 directivas, también hay algunos límites en el número máximo de directivas para la retención por carga de trabajo:
 
