@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a72c7d363ab57c8c108279c71a3e1424e88a577
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29aa8008dc3674760e4e720f155d6df82068ab55
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166918"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402183"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Extraer Microsoft Defender para detecciones de puntos de conexión con la API de REST de SIEM
 
@@ -38,14 +38,16 @@ ms.locfileid: "59166918"
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
->[!Note]
->- [Microsoft Defender para alerta de](alerts.md) extremo se compone de una o más detecciones.
->- [Microsoft Defender para la detección de](api-portal-mapping.md) puntos de conexión se compone del evento sospechoso que se produjo en el dispositivo y sus detalles de alerta relacionados.
->-La API de alertas de punto de conexión de Microsoft Defender es la API más reciente para el consumo de alertas y contiene una lista detallada de pruebas relacionadas para cada alerta. Para obtener más información, vea [Alert methods and properties y](alerts.md) List [alerts](get-alerts.md).
+> [!NOTE]
+>
+> - [Microsoft Defender para alerta de](alerts.md) extremo se compone de una o más detecciones.
+> - [Microsoft Defender para la detección de](api-portal-mapping.md) puntos de conexión se compone del evento sospechoso que se produjo en el dispositivo y sus detalles de alerta relacionados.
+> s-La API de alertas de punto de conexión de Microsoft Defender es la API más reciente para el consumo de alertas y contiene una lista detallada de pruebas relacionadas para cada alerta. Para obtener más información, vea [Alert methods and properties y](alerts.md) List [alerts](get-alerts.md).
 
 Microsoft Defender para endpoint admite el protocolo OAuth 2.0 para extraer detecciones de la API.
 
 En general, el protocolo OAuth 2.0 admite cuatro tipos de flujos:
+
 - Flujo de concesión de autorización
 - Flujo implícito
 - Flujo de credenciales de cliente
@@ -61,10 +63,11 @@ El _flujo de credenciales de cliente_ usa credenciales de cliente para autentica
 
 Use el siguiente método en la API de Microsoft Defender para Endpoint para extraer detecciones en formato JSON.
 
->[!NOTE]
->Centro de seguridad de Microsoft Defender combina detecciones de alertas similares en una sola alerta. Esta API extrae detecciones de alertas en su forma sin procesar en función de los parámetros de consulta que establezca, lo que le permite aplicar su propia agrupación y filtrado. 
+> [!NOTE]
+> Centro de seguridad de Microsoft Defender combina detecciones de alertas similares en una sola alerta. Esta API extrae detecciones de alertas en su forma sin procesar en función de los parámetros de consulta que establezca, lo que le permite aplicar su propia agrupación y filtrado.
 
 ## <a name="before-you-begin"></a>Antes de empezar
+
 - Antes de llamar al extremo de Microsoft Defender para endpoint para extraer detecciones, deberá habilitar la aplicación de integración siem en Azure Active Directory (AAD). Para obtener más información, vea [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md).
 
 - Anote los siguientes valores en su registro de aplicaciones de Azure ya que los necesitará para configurar el flujo de OAuth en su aplicación de servicio o demonio:
@@ -74,6 +77,7 @@ Use el siguiente método en la API de Microsoft Defender para Endpoint para extr
     - Para ver este valor, haga clic en **Ver puntos de conexión** en la parte inferior del Portal de administración de Azure, en la página de su aplicación. El punto de conexión será algo similar a `https://login.microsoftonline.com/{tenantId}/oauth2/token`.
 
 ## <a name="get-an-access-token"></a>Obtener un token de acceso
+
 Antes de crear llamadas al punto de conexión, deberá obtener un token de acceso.
 
 Usarás el token de acceso para obtener acceso al recurso protegido, que es detecciones en Microsoft Defender para endpoint.
@@ -81,13 +85,13 @@ Usarás el token de acceso para obtener acceso al recurso protegido, que es dete
 Para obtener un token de acceso, deberá realizar una solicitud POST al punto de conexión de emisión de tokens. Esta es una solicitud de ejemplo:
 
 ```http
-
 POST /72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/token HTTP/1.1
 Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
 resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80f1d3745&client_secret=IKXc6PxB2eoFNJ%2FIT%2Bl2JZZD9d9032VXz6Ul3D2WyUQ%3D&grant_type=client_credentials
 ```
+
 La respuesta incluirá un acceso token e información de expiración.
 
 ```json
@@ -101,36 +105,41 @@ La respuesta incluirá un acceso token e información de expiración.
   "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
 }
 ```
+
 Ahora puede usar el valor en el campo *access_token* en una solicitud a la API de Defender for Endpoint.
 
 ## <a name="request"></a>Solicitud
+
 Con un token de acceso, la aplicación puede realizar solicitudes autenticadas a la API de Microsoft Defender para endpoints. Su aplicación debe anexar el token de acceso al encabezado de autorización de cada solicitud.
 
 ### <a name="request-syntax"></a>Sintaxis de solicitud
-Método | URI de solicitud
-:---|:---|
-GET| Use el URI aplicable para su región. <br><br> **Para la UE**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **Para EE. UU.**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **Para Reino Unido**: `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
+
+Método|URI de solicitud
+---|---
+GET|Use el URI aplicable para su región. <p> **Para la UE**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` <p> **Para EE. UU.**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <p> **Para Reino Unido**: `https://wdatp-alertexporter-uk.windows.com/api/alerts`
 
 ### <a name="request-header"></a>Encabezado de solicitud
-Encabezado | Tipo | Descripción|
-:--|:--|:--
-Authorization | string | Necesario. El token de acceso de Azure AD con el formato **Bearer** &lt; *token* &gt; . |
+
+Encabezado|Tipo|Descripción|
+---|---|---
+Authorization|string|Obligatorio. El token de acceso de Azure AD con el formato **Bearer** &lt; *token* &gt; .|
 
 ### <a name="request-parameters"></a>Parámetros de la solicitud
 
 Use parámetros de consulta opcionales para especificar y controlar la cantidad de datos devueltos en una respuesta. Si llama a este método sin parámetros, la respuesta contiene todas las alertas de la organización en las últimas 2 horas.
 
-Name | Valor| Descripción
-:---|:---|:---
-sinceTimeUtc | DateTime | Define las alertas de límite de tiempo inferior de las que se recuperan, según el campo: <br> `LastProcessedTimeUtc` <br> El intervalo de tiempo será: de la hora sinceTimeUtc a la hora actual. <br><br> **NOTA:** Cuando no se especifica, se recuperan todas las alertas generadas en las últimas dos horas.
-untilTimeUtc | DateTime | Define las alertas enlazadas de tiempo superior que se recuperan. <br> El intervalo de tiempo será: de `sinceTimeUtc` vez en `untilTimeUtc` cuando. <br><br> **NOTA**: Cuando no se especifica, el valor predeterminado será la hora actual.
-ago | string | Extrae alertas en el siguiente intervalo de tiempo: `(current_time - ago)` de vez en `current_time` cuando. <br><br> El valor debe establecerse según **el formato de duración ISO 8601** <br> Ejemplo: `ago=PT10M` extraerá las alertas recibidas en los últimos 10 minutos.
-límite | Entero | Define el número de alertas que se recuperarán. Las alertas más recientes se recuperarán en función del número definido.<br><br> **NOTA**: Cuando no se especifique, se recuperarán todas las alertas disponibles en el intervalo de tiempo.
-machinegroups | string | Especifica los grupos de dispositivos de los que extraer alertas. <br><br> **NOTA:** Cuando no se especifica, se recuperarán las alertas de todos los grupos de dispositivos. <br><br> Ejemplo: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
-DeviceCreatedMachineTags | string | Etiqueta de dispositivo única del Registro.
-CloudCreatedMachineTags | cadena | Etiquetas de dispositivo que se crearon en Centro de seguridad de Microsoft Defender.
+Nombre|Valor|Descripción
+---|---|---
+sinceTimeUtc|DateTime|Define las alertas de límite de tiempo inferior de las que se recuperan, según el campo: <p> `LastProcessedTimeUtc` <p> El intervalo de tiempo será: de la hora sinceTimeUtc a la hora actual. <p> **NOTA:** Cuando no se especifica, se recuperan todas las alertas generadas en las últimas dos horas.
+untilTimeUtc|DateTime|Define las alertas enlazadas de tiempo superior que se recuperan. <p> El intervalo de tiempo será: de `sinceTimeUtc` vez en `untilTimeUtc` cuando. <p> **NOTA**: Cuando no se especifica, el valor predeterminado será la hora actual.
+ago|string|Extrae alertas en el siguiente intervalo de tiempo: `(current_time - ago)` de vez en `current_time` cuando. <p> El valor debe establecerse según **el formato de duración ISO 8601** <p> Ejemplo: `ago=PT10M` extraerá las alertas recibidas en los últimos 10 minutos.
+límite|Entero|Define el número de alertas que se recuperarán. Las alertas más recientes se recuperarán en función del número definido.<p> **NOTA**: Cuando no se especifique, se recuperarán todas las alertas disponibles en el intervalo de tiempo.
+machinegroups|string|Especifica los grupos de dispositivos de los que extraer alertas. <p> **NOTA:** Cuando no se especifica, se recuperarán las alertas de todos los grupos de dispositivos. <p> Ejemplo: <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
+DeviceCreatedMachineTags|string|Etiqueta de dispositivo única del Registro.
+CloudCreatedMachineTags|cadena|Etiquetas de dispositivo que se crearon en Centro de seguridad de Microsoft Defender.
 
 ### <a name="request-example"></a>Ejemplo de solicitud
+
 En el ejemplo siguiente se muestra cómo recuperar todas las detecciones de la organización.
 
 ```http
@@ -146,13 +155,14 @@ Authorization: Bearer <your access token>
 ```
 
 ## <a name="response"></a>Respuesta
+
 El valor devuelto es una matriz de objetos de alerta en formato JSON.
 
 Este es un valor devuelto de ejemplo:
 
-```json 
+```json
 [
-{        
+{
         "AlertTime": "2020-09-30T14:09:20.35743Z",
         "ComputerDnsName": "mymachine1.domain.com",
         "AlertTitle": "Suspicious File Activity",
@@ -208,7 +218,9 @@ Este es un valor devuelto de ejemplo:
 ```
 
 ## <a name="code-examples"></a>Ejemplos de código
+
 ### <a name="get-access-token"></a>Obtener token de acceso
+
 En los ejemplos de código siguientes se muestra cómo obtener un token de acceso para llamar a la API SIEM de Microsoft Defender para endpoint.
 
 ```csharp
@@ -250,15 +262,16 @@ oAuthUri="https://login.microsoftonline.com/$tenantId/oauth2/token"
 scriptDir=$(pwd)
 
 apiResponse=$(curl -s X POST "$oAuthUri" -d "resource=$resourceAppIdUri&client_id=$appId&client_secret=$appSecret&\
-        grant_type=client_credentials" | cut -d "{" -f2 | cut -d "}" -f1)
+        grant_type=client_credentials"|cut -d "{" -f2|cut -d "}" -f1)
 IFS=","
 apiResponseArr=($apiResponse)
 IFS=":"
 tokenArr=(${apiResponseArr[6]})
-echo ${tokenArr[1]} | cut -d "\"" -f2 | cut -d "\"" -f1 >> $scriptDir/LatestSIEM-token.txt
+echo ${tokenArr[1]}|cut -d "\"" -f2|cut -d "\"" -f1 >> $scriptDir/LatestSIEM-token.txt
 ```
 
 ### <a name="use-token-to-connect-to-the-detections-endpoint"></a>Usar token para conectarse al extremo de detecciones
+
 Los ejemplos de código siguientes muestran cómo usar un token de acceso para llamar a la API SIEM de Defender for Endpoint para obtener alertas.
 
 ```csharp
@@ -283,29 +296,29 @@ $dateTime = (Get-Date).ToUniversalTime().AddHours(-200).ToString("o")
 $url = 'https://wdatp-alertexporter-us.windows.com/api/alerts?limit=20&sinceTimeUtc=2020-01-01T00:00:00.000'
 
 #Set the WebRequest headers
-$headers = @{ 
+$headers = @{
     'Content-Type' = 'application/json'
     Accept = 'application/json'
-    Authorization = "Bearer $token" 
+    Authorization = "Bearer $token"
 }
 
-#Send the webrequest and get the results. 
+#Send the webrequest and get the results.
 $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 $response
 Write-Host
 
-#Extract the alerts from the results.  This works for SIEM API:
-$alerts =  $response.Content | ConvertFrom-Json | ConvertTo-Json
+#Extract the alerts from the results. This works for SIEM API:
+$alerts =  $response.Content|ConvertFrom-Json|ConvertTo-Json
 
 #Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
-$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
+$dateTimeForFileName = Get-Date -Format o|foreach {$_ -replace ":", "."}
 
 #Save the result as json and as csv
-$outputJsonPath = "$scriptDir\Latest Alerts $dateTimeForFileName.json"     
+$outputJsonPath = "$scriptDir\Latest Alerts $dateTimeForFileName.json"
 $outputCsvPath = "$scriptDir\Latest Alerts $dateTimeForFileName.csv"
 
 Out-File -FilePath $outputJsonPath -InputObject $alerts
-Get-Content -Path $outputJsonPath -Raw | ConvertFrom-Json | Select-Object -ExpandProperty value | Export-CSV $outputCsvPath -NoTypeInformation
+Get-Content -Path $outputJsonPath -Raw|ConvertFrom-Json|Select-Object -ExpandProperty value|Export-CSV $outputCsvPath -NoTypeInformation
 ```
 
 ```Bash
@@ -320,22 +333,24 @@ url='https://wdatp-alertexporter-us.windows.com/api/alerts?limit=20&sinceTimeUtc
 
 #send web requst to API and echo JSON content
 apiResponse=$(curl -s X GET "$url" -H "Content-Type: application/json" -H "Accept: application/json"\
-         -H "Authorization: Bearer $token" | cut -d "[" -f2 | cut -d "]" -f1)
+         -H "Authorization: Bearer $token"|cut -d "[" -f2|cut -d "]" -f1)
 echo "If you see Alert info in JSON format, congratulations you accessed the MDATP SIEM API!"
 echo
 echo $apiResponse
 ```
 
 ## <a name="error-codes"></a>Códigos de error
+
 La API de REST de Microsoft Defender para endpoint devuelve los siguientes códigos de error causados por una solicitud no válida.
 
-Código de error HTTP | Descripción
-:---|:---
-401 | Solicitud malformada o token no válido.
-403 | Excepción no autorizada: el administrador de inquilinos no administra ninguno de los dominios o se elimina el estado del espacio empresarial.
-500 | Error en el servicio.
+Código de error HTTP|Descripción
+---|---
+401|Solicitud malformada o token no válido.
+403|Excepción no autorizada: el administrador de inquilinos no administra ninguno de los dominios o se elimina el estado del espacio empresarial.
+500|Error en el servicio.
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Habilitar la integración de SIEM en Microsoft Defender para endpoint](enable-siem-integration.md)
 - [Configurar ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión](configure-arcsight.md)
 - [Extraer detecciones a las herramientas SIEM](configure-siem.md)

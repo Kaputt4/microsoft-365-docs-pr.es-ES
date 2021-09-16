@@ -21,11 +21,11 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.technology: mde
 ms.openlocfilehash: c590812ccc975206c6c278794f943f7e16c8bdd1
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357686"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400827"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
@@ -162,7 +162,7 @@ Actualmente, la ejecución Antivirus de Microsoft Defender en modo pasivo no se 
 
 Si decide deshabilitar EDR en modo de bloqueo, el sistema puede tardar hasta 30 minutos en deshabilitar esta funcionalidad.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Blog Community tech: Introducción a EDR en modo de bloque: Detener ataques en sus pistas](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)

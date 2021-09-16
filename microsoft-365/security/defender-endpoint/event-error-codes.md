@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
 ms.openlocfilehash: d5fa34de0394c1455fccb70a875fe12cddee3ed8
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357431"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400329"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Revisar eventos y errores con el Visor de eventos
 
@@ -149,7 +149,7 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 - [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
 - [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md)
 - [Solucionar problemas de Microsoft Defender para punto de conexión](troubleshoot-onboarding.md)

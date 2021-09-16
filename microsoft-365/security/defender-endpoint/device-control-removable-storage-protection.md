@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 80a3d5bee2f26e708969832c67982f679b95c0b4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b092db48a27407bd5e3ef3fdfd6c6eda02ef0c34
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222838"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401943"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender para Endpoint Device Control Removable Storage Protection
 
@@ -98,9 +98,7 @@ La protección de almacenamiento extraíble del control de dispositivos en Micro
 
 Microsoft Defender para Endpoint Device Control Removable Storage Protection le permite restringir el acceso de almacenamiento extraíble en función de las propiedades descritas en la tabla siguiente:
 
-<br>
-
-****
+<br/><br/>
 
 |Nombre de la propiedad|Directivas aplicables|Se aplica a sistemas operativos|Descripción|
 |---|---|---|---|
@@ -108,8 +106,7 @@ Microsoft Defender para Endpoint Device Control Removable Storage Protection le 
 |Id. principal|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows|El identificador principal incluye almacenamiento extraíble y CD/DVD y Windows dispositivo portátil/WPD.|
 |Id. de dispositivo|[Control de acceso de almacenamiento extraíble;](device-control-removable-storage-access-control.md) <p> [Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint](control-usb-devices-using-intune.md)|Windows|Para obtener información sobre los formatos de id. de dispositivo, consulte [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers), por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
 |Id. de hardware|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md) <p> [Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint](control-usb-devices-using-intune.md)|Windows|Una cadena identificó el dispositivo en el sistema, por ejemplo, USBSTOR\DiskGeneric_Flash_Disk___8.07; **Nota:** El identificador de hardware no es único; diferentes dispositivos pueden compartir el mismo valor.|
-|Id. de instancia|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md) <p> Instalación de dispositivos|Windows|Una cadena identifica de forma única el dispositivo en el sistema, por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
+|Id. de instancia|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md) <p> Instalación de dispositivo|Windows|Una cadena identifica de forma única el dispositivo en el sistema, por ejemplo, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
 |Nombre descriptivo|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows|Una cadena adjunta al dispositivo, por ejemplo, Dispositivo USB de disco flash genérico|
 |Id. de proveedor /Id. de producto|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows <p> macOS|Id. de proveedor es el código de proveedor de cuatro dígitos que el comité USB asigna al proveedor. Id. de producto es el código de producto de cuatro dígitos que el proveedor asigna al dispositivo; Admite caracteres comodín.|
 |NumberId de serie|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows <p> macOS |Por ejemplo, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>|
-|

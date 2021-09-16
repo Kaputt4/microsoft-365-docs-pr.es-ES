@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: afc383c158da353da35def39d5b21e2857b9e2ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6574b19427814b53e131f72f708e534f3b29554d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213397"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399375"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Solucionar problemas de informes del Antivirus de Windows Defender en la comprobación de actualizaciones
 
@@ -39,11 +39,12 @@ Puede usar el Antivirus de Microsoft Defender update compliance. Verá el estado
 Al usar Windows Analytics Update Compliance para obtener informes sobre el estado de protección de los [dispositivos](/windows/deployment/update/update-compliance-using#wdav-assessment) o puntos de conexión de la red que usan Antivirus de Microsoft Defender, es posible que encuentre problemas o problemas.
 
 Normalmente, los indicadores más comunes de un problema son:
+
 - Solo ves un número o subconjunto pequeño de todos los dispositivos que esperabas ver
 - No ve ningún dispositivo en absoluto
 - Los informes y la información que ve están obsoletos (con más de unos días)
 
-Para obtener códigos de error comunes e IDs de eventos relacionados con el servicio Antivirus de Microsoft Defender que no están relacionados con Update Compliance, vea [Antivirus de Microsoft Defender eventos](troubleshoot-microsoft-defender-antivirus.md). 
+Para obtener códigos de error comunes e IDs de eventos relacionados con el servicio Antivirus de Microsoft Defender que no están relacionados con Update Compliance, vea [Antivirus de Microsoft Defender eventos](troubleshoot-microsoft-defender-antivirus.md).
 
 Hay tres pasos para solucionar estos problemas:
 
@@ -51,16 +52,16 @@ Hay tres pasos para solucionar estos problemas:
 2. Comprobar la conectividad con el servicio Windows Defender basado en la nube
 3. Enviar registros de soporte técnico
 
->[!IMPORTANT]
->Normalmente, los dispositivos tardan 3 días en aparecer en Update Compliance.
-
+> [!IMPORTANT]
+> Normalmente, los dispositivos tardan 3 días en aparecer en Update Compliance.
 
 ## <a name="confirm-prerequisites"></a>Confirmar requisitos previos
 
 Para que los dispositivos se muestren correctamente en Update Compliance, debes cumplir ciertos requisitos previos tanto para el servicio de cumplimiento de actualizaciones como para Antivirus de Microsoft Defender:
 
 >[!div class="checklist"]
->- Los puntos de conexión usan Antivirus de Microsoft Defender como la única aplicación de protección antivirus. El uso de cualquier otra aplicación antivirus hará [que Antivirus de Microsoft Defender se deshabilite](microsoft-defender-antivirus-compatibility.md) y el punto de conexión no se notirá en Update Compliance.
+>
+> - Los puntos de conexión usan Antivirus de Microsoft Defender como la única aplicación de protección antivirus. El uso de cualquier otra aplicación antivirus hará [que Antivirus de Microsoft Defender se deshabilite](microsoft-defender-antivirus-compatibility.md) y el punto de conexión no se notirá en Update Compliance.
 > - [La protección entregada en la nube está habilitada.](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - Los puntos de conexión [pueden conectarse a la Antivirus de Microsoft Defender nube](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
 > - Si el extremo se ejecuta Windows 10 versión 1607 o anterior, Windows 10 datos de diagnóstico deben establecerse [en el nivel mejorado](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level).
@@ -71,7 +72,7 @@ Para que los dispositivos se muestren correctamente en Update Compliance, debes 
 Si se han cumplido todos los requisitos previos anteriores, es posible que deba continuar con el siguiente paso para recopilar información de diagnóstico y enviarla a nosotros.
 
 > [!div class="nextstepaction"]
-> [Recopilar datos de diagnóstico para la solución de problemas de cumplimiento de actualizaciones](collect-diagnostic-data.md)  
+> [Recopilar datos de diagnóstico para la solución de problemas de cumplimiento de actualizaciones](collect-diagnostic-data.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -20,11 +20,11 @@ ms.custom:
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
 ms.openlocfilehash: 21cff6ecd695ef95173149eed211b40989fa47ce
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357500"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402111"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de microsoft defender para Office 365 prueba
 

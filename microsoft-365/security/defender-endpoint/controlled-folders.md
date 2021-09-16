@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 19737781f2c22a356da2c237e2f059a362140956
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f2d9c6895abe4654270a9ae3818e2853fc00dd85
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222888"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400359"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -115,16 +115,13 @@ Puedes revisar el registro Windows eventos para ver los eventos que se crean cua
 
 En la tabla siguiente se muestran los eventos relacionados con el acceso controlado a carpetas:
 
-<br>
-
-****
+<br/><br/>
 
 |Id. de evento|Descripción|
 |---|---|
 |5007|Evento cuando se cambia la configuración|
 |1124|Evento de acceso a carpetas controladas auditada|
 |1123|Evento de acceso controlado a carpetas bloqueadas|
-|
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>Ver o cambiar la lista de carpetas protegidas
 

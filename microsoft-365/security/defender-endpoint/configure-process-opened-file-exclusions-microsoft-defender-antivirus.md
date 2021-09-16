@@ -15,12 +15,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: ea06094121f9c6a654234da1cb6d7757db5c78dd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e78706f1c95dd507ae41a6bf89403c45dc689b73
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212290"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400287"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurar exclusiones para archivos abiertos por procesos
 
@@ -35,16 +35,13 @@ En este artículo se describe cómo configurar listas de exclusión.
 
 ## <a name="examples-of-exclusions"></a>Ejemplos de exclusiones
 
-<br>
-
-****
+<br/><br/>
 
 |Exclusión|Ejemplo|
 |---|---|
 |Cualquier archivo del equipo que abra cualquier proceso con un nombre de archivo específico|Especificar `test.exe` excluiría los archivos abiertos por: <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
 |Cualquier archivo del equipo que abra cualquier proceso en una carpeta específica|Especificar `c:\test\sample\*` excluiría los archivos abiertos por: <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
 |Cualquier archivo del equipo que se abra mediante un proceso específico en una carpeta específica|Especificar `c:\test\process.exe` excluiría los archivos solo abiertos por `c:\test\process.exe`|
-|
 
 Al agregar un proceso a la lista de exclusión de procesos, Antivirus de Microsoft Defender no examinará los archivos abiertos por ese proceso, independientemente de dónde se encuentran los archivos. Sin embargo, el proceso en sí se examinará a menos que también se haya agregado a la lista [de exclusión de archivos](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
@@ -97,16 +94,13 @@ El formato de los cmdlets es:
 
 Se permite lo siguiente como \<cmdlet\> :
 
-<br>
-
-****
+<br/><br/>
 
 |Acción de configuración|Cmdlet de PowerShell|
 |---|---|
 |Crear o sobrescribir la lista|`Set-MpPreference`|
 |Agregar a la lista|`Add-MpPreference`|
 |Quitar elementos de la lista|`Remove-MpPreference`|
-|
 
 > [!IMPORTANT]
 > Si ha creado una lista, ya sea con o con el `Set-MpPreference` `Add-MpPreference` cmdlet de nuevo `Set-MpPreference` sobrescribirá la lista existente.
@@ -143,15 +137,12 @@ En concreto, no puede usar el signo de interrogación ( ) comodín y el asterisc
 
 En la tabla siguiente se describe cómo se pueden usar los caracteres comodín en la lista de exclusión de procesos:
 
-<br>
-
-****
+<br/><br/>
 
 |Carácter comodín|Uso de ejemplo|Coincidencias de ejemplo|
 |---|---|---|
 |`*` (asterisco) <p> Reemplaza cualquier número de caracteres|`C:\MyData\*`|Cualquier archivo abierto por `C:\MyData\file.exe`|
 |Variables de entorno <p> La variable definida se rellena como una ruta de acceso cuando se evalúa la exclusión|`%ALLUSERSPROFILE%\CustomLogFiles\file.exe`|Cualquier archivo abierto por `C:\ProgramData\CustomLogFiles\file.exe`|
-|
 
 ## <a name="review-the-list-of-exclusions"></a>Revisar la lista de exclusiones
 

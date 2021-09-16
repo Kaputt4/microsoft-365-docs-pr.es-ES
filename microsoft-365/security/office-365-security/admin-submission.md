@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: siosulli
 author: siosulli
 manager: dansimp
-ms.date: ''
 audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
@@ -19,12 +18,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el portal de envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7bd845f67c25dae154832dbe280b6d158b22db8c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b36497ad6abe0325ea5d8830c4e1995370161c87
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219920"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400923"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el portal de envíos para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft
 
@@ -124,6 +123,9 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 > [!div class="mx-imgBorder"]
 > ![Ejemplo de envío de nuevos datos adjuntos.](../../media/submission-file-flyout.png)
+
+> [!NOTE]
+> Si el filtrado de malware ha reemplazado los datos adjuntos del mensaje por el archivo Text.txt de alerta de malware, debe enviar el mensaje original desde la cuarentena que contiene los datos adjuntos originales. Para obtener más información sobre la cuarentena y cómo liberar mensajes con falsos positivos de malware, vea [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Ver envíos de administrador a Microsoft
 

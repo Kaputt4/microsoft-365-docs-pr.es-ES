@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 4891505408a3f831e6ecc0c2cecb0c67fa52e49f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 90cc05e801198ad2df8516fb2d9aa1f425f943c9
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220461"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402195"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Administrar Microsoft Defender para endpoint con Intune
 
@@ -61,9 +61,7 @@ En este artículo se describe cómo encontrar la configuración de Microsoft Def
 
 En la tabla siguiente se enumeran varias tareas que puede realizar para configurar Microsoft Defender para endpoint con Intune. No es necesario configurar todo a la vez; elija una tarea, lea los recursos correspondientes y, a continuación, continúe.
 
-<br>
-
-****
+<br/><br/>
 
 |Tarea|Recursos para obtener más información|
 |---|---|
@@ -82,7 +80,6 @@ En la tabla siguiente se enumeran varias tareas que puede realizar para configur
 |**Configurar Credential Guard de Microsoft Defender** para protegerse contra ataques de robo de credenciales|Para Windows 10, Windows Server 2016 y Windows Server 2019, vea [Endpoint protection: Microsoft Defender Credential Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-credential-guard) <p> Para Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 y Windows Server 2012 R2, vea [Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft, Versions 1 and 2](https://www.microsoft.com/download/details.aspx?id=36036)|
 |**Configurar el control de aplicaciones de Microsoft Defender** para elegir si auditar o confiar en aplicaciones en los dispositivos de la organización <p> *El control de aplicaciones de Microsoft Defender también se conoce como [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).*|[Implementar directivas de control de aplicaciones de Microsoft Defender mediante Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) <p> [Protección de extremo: Control de aplicaciones de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control) <p> [AppLocker CSP](/windows/client-management/mdm/applocker-csp)|
 |**Configurar el control de dispositivos y** el acceso a periféricos USB para ayudar a evitar que las amenazas en periféricos no autorizados puedan poner en peligro los dispositivos|[Controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para Endpoint e Intune](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)|
-|||
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configurar el portal Microsoft 365 Defender web
 
@@ -91,7 +88,7 @@ Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver a
 - [Información general sobre Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Protección de extremo: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Introducción a la administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visite el panel Microsoft 365 Defender operaciones de seguridad del portal](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

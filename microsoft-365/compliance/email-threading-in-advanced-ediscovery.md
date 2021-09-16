@@ -17,11 +17,11 @@ search.appverid:
 description: Al realizar un análisis Advanced eDiscovery, el subproceso de correo electrónico analiza una conversación de correo electrónico y separa cada mensaje en diferentes categorías.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: feb0294b47e01eae6849835e92e390a912558c71
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357455"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399879"
 ---
 # <a name="email-threading-in-advanced-ediscovery"></a>Subprocesos de correo electrónico en Advanced eDiscovery
 

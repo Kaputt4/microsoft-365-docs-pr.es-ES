@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7665fbd52e45636988b375e4b811e3f93d8f3981
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8cf8b1e049a96e7a03fb4df0199294afe193a660
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185889"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399852"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -39,12 +39,14 @@ El sensor Defender for Endpoint requiere que Microsoft Windows HTTP (WinHTTP) in
 El sensor de Defender for Endpoint incrustado se ejecuta en el contexto del sistema mediante la cuenta LocalSystem. El sensor usa Microsoft Windows HTTP Services (WinHTTP) para habilitar la comunicación con el servicio en la nube de Defender for Endpoint.
 
 > [!TIP]
-> Para las organizaciones que usan servidores proxy de reenvío como puerta de enlace a Internet, puede usar la protección de red para investigar lo que ocurre detrás de un servidor proxy. Para obtener más información, vea [Investigar eventos de conexión que ocurren detrás de los servidores proxy de reenvío](investigate-behind-proxy.md).
+> Para las organizaciones que usan servidores proxy de reenvío como puerta de enlace a Internet, puede usar la protección de red para investigar los eventos de conexión que se producen detrás [de servidores proxy de reenvío.](investigate-behind-proxy.md)
 
-La configuración de WinHTTP es independiente de la configuración de proxy de exploración de Internet de Windows (WinINet) y solo puede detectar un servidor proxy mediante los siguientes métodos de detección:
+La configuración de WinHTTP es independiente de la configuración de proxy de exploración de Windows Internet (WinINet) y solo puede detectar un servidor proxy mediante los siguientes métodos de detección:
 
 - Métodos de detección automática:
+
   - Proxy transparente
+  
   - Protocolo de detección automática de proxy web (WPAD)
 
     > [!NOTE]
@@ -53,11 +55,12 @@ La configuración de WinHTTP es independiente de la configuración de proxy de e
 - Configuración del proxy estático manual:
 
   - Configuración basada en el registro
+  
   - WinHTTP configurado mediante el comando netsh: adecuado solo para escritorios en una topología estable (por ejemplo: un escritorio en una red corporativa detrás del mismo proxy)
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurar manualmente el servidor proxy mediante un proxy estático basado en el registro
 
-Configure un proxy estático basado en el Registro para permitir que solo el sensor Defender for Endpoint informe datos de diagnóstico y se comunique con Defender for Endpoint services si un equipo no tiene permiso para conectarse a Internet.
+Configure un proxy estático basado en el Registro para el sensor Defender for Endpoint detection and response (EDR) para informar de datos de diagnóstico y comunicarse con Defender for Endpoint services si un equipo no tiene permiso para conectarse a Internet.
 
 > [!NOTE]
 > Al usar esta opción en Windows 10 o Windows Server 2019, se recomienda tener la siguiente compilación (o posterior) y el paquete acumulativo de actualizaciones acumulativas:
@@ -69,9 +72,9 @@ Configure un proxy estático basado en el Registro para permitir que solo el sen
 >
 > Estas actualizaciones mejoran la conectividad y la confiabilidad del canal CnC (comando y control).
 
-El proxy estático se puede configurar mediante la directiva de grupo (GP). La directiva de grupo se puede encontrar aquí:
+El proxy estático también se puede configurar a través de la directiva de grupo (GP). La directiva de grupo se puede encontrar aquí:
 
-- **Plantillas administrativas > Windows componentes > recopilación de datos y versiones preliminares > Configurar el uso de proxy autenticado para el servicio de telemetría y experiencia del usuario conectado**
+- **Plantillas administrativas > Windows componentes >** recopilación de datos y versiones preliminares > Configurar el uso de proxy autenticado para el servicio de telemetría y experiencia del usuario conectado.
 
   Estabilizelo **en Habilitado** y seleccione **Deshabilitar el uso de proxy autenticado.**
 
@@ -83,17 +86,47 @@ El proxy estático se puede configurar mediante la directiva de grupo (GP). La d
 
   ![Imagen de configuración de directiva de grupo2.](images/atp-gpo-proxy2.png)
 
-  La directiva establece dos valores del Registro, `TelemetryProxyServer` como REG_SZ y como `DisableEnterpriseAuthProxy` REG_DWORD, en la clave del Registro `HKLM\Software\Policies\Microsoft\Windows\DataCollection` .
 
-  El valor del `TelemetryProxyServer` Registro tiene el siguiente formato de cadena:
+| Directiva de grupo | Clave del Registro | Entrada del Registro | Valor |
+|:---|:---|:---|:---|
+| Configurar el uso de proxy autenticado para la experiencia del usuario conectado y el servicio de telemetría | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
+| Configurar la telemetría y las experiencias de usuario conectados | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```http://servername or ip:port``` <br> <br> Por ejemplo: ```http://10.0.0.6:8080``` (REG_SZ) |
 
-  ```text
-  <server name or ip>:<port>
-  ```
+## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Configurar un proxy estático para Antivirus de Microsoft Defender
 
-  Por ejemplo, 10.0.0.6:8080
+Antivirus de Microsoft Defender protección [entregada en la nube](cloud-protection-microsoft-defender-antivirus.md) proporciona protección automatizada casi instantánea contra amenazas nuevas y emergentes. Tenga en cuenta que la conectividad es necesaria para [los indicadores personalizados](manage-indicators.md) cuando Defender Antivirus es la solución antimalware activa; y para [EDR en modo de bloqueo](edr-in-block-mode.md) incluso cuando se usa una solución que no es microsoft como la solución antimalware principal.
 
-  El valor del registro `DisableEnterpriseAuthProxy` debe establecerse en 1.
+Configure el proxy estático mediante la directiva de grupo que se encuentra aquí:
+
+1. **Plantillas administrativas > Windows componentes > Antivirus de Microsoft Defender > Definir servidor proxy para conectarse a la red**. 
+
+2. Esta opción se **establece en Habilitado** y defina el servidor proxy. Tenga en cuenta que la dirección URL debe tener http:// o https://. Para obtener versiones compatibles para https://, vea [Manage Antivirus de Microsoft Defender updates](manage-updates-baselines-microsoft-defender-antivirus.md).
+
+   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Servidor proxy para Antivirus de Microsoft Defender.":::
+
+3. En la clave del  `HKLM\Software\Policies\Microsoft\Windows Defender` Registro, la directiva establece el valor del  `ProxyServer`   Registro como REG_SZ. 
+
+   El valor del  `ProxyServer`   Registro tiene el siguiente formato de cadena:
+
+    ```text
+    <server name or ip>:<port>
+
+    For example: http://10.0.0.6:8080
+    ```
+
+> [!NOTE]
+>
+> Por motivos de resistencia y la naturaleza en tiempo real de la protección entregada en la nube, Antivirus de Microsoft Defender almacenará en caché el último proxy de trabajo conocido. Asegúrese de que la solución de proxy no realiza la inspección SSL, ya que esto interrumpirá la conexión en la nube segura. 
+>
+> Antivirus de Microsoft Defender usar el proxy estático para conectarse a Windows Update o Microsoft Update para descargar actualizaciones. En su lugar, usará un proxy para todo el sistema si está configurado para usar Windows Update o el origen de actualización interno configurado según el orden de reserva [configurado.](manage-protection-updates-microsoft-defender-antivirus.md) 
+>
+> Si es necesario, puede usar Plantillas administrativas > Windows Componentes > Antivirus de Microsoft Defender > Definir configuración automática **de proxy (.pac)** para conectarse a la red si necesita configurar configuraciones avanzadas con varios servidores proxy, Use Plantillas administrativas > Windows Componentes **> Antivirus de Microsoft Defender >** Definir direcciones para omitir el servidor proxy para evitar que Antivirus de Microsoft Defender use un servidor proxy para esos destinos. 
+>
+> También puede usar PowerShell con el `Set-MpPreference` cmdlet para configurar estas opciones: 
+>
+> - ProxyBypass 
+> - ProxyPacUrl 
+> - ProxyServer 
 
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>Configurar el servidor proxy manualmente mediante el comando netsh
 
@@ -128,7 +161,7 @@ Para obtener más información, vea [Sintaxis de comando Netsh, contextos y form
 
 Si un servidor proxy o firewall bloquea todo el tráfico de forma predeterminada y permite únicamente el acceso a dominios específicos, agregue los dominios que aparecen en la hoja descargable a la lista de dominios permitidos.
 
-En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Debe asegurarse de que no hay reglas de filtrado de red o firewall que denieguen el acceso *a* estas direcciones URL, o puede que necesite crear una regla de permitir específicamente para ellas.
+En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Asegúrese de que no hay reglas de filtrado de red o firewall que denieguen el acceso *a* estas direcciones URL, o puede que necesite crear una regla de permitido específicamente para ellas.
 
 <br>
 
@@ -170,7 +203,7 @@ La siguiente información enumera la información de configuración de proxy y f
 
 ## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>Confirmar Microsoft Monitoring Agent url de servicio (MMA) 
 
-Consulte las siguientes instrucciones para eliminar el requisito de comodín (*) para su entorno específico al usar el Microsoft Monitoring Agent (MMA) para versiones anteriores de Windows.
+ Consulte las siguientes instrucciones para eliminar el requisito de comodín (*) para su entorno específico al usar el Microsoft Monitoring Agent (MMA) para versiones anteriores de Windows.
 
 1. Incorporar un sistema operativo anterior con el Microsoft Monitoring Agent (MMA) en Defender para endpoint (para obtener más información, vea [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and Onboard Windows [servers](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
 
@@ -178,7 +211,7 @@ Consulte las siguientes instrucciones para eliminar el requisito de comodín (*)
 
 3. Ejecute la herramienta TestCloudConnection.exe desde "C:\Program Files\Microsoft Monitoring Agent\Agent" para validar la conectividad y ver las direcciones URL necesarias para su área de trabajo específica.
 
-4. Consulte la lista de direcciones URL de punto de conexión de Microsoft Defender para obtener la lista completa de requisitos para su región (consulte la hoja de cálculo de direcciones URL de [servicio](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
+4. Compruebe la lista de direcciones URL de punto de conexión de Microsoft Defender para obtener la lista completa de requisitos para su región (consulte la hoja de cálculo de direcciones URL de [servicio](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
 
     ![Imagen del administrador en Windows PowerShell.](images/admin-powershell.png)
 
@@ -239,5 +272,7 @@ Pero si los resultados de la comprobación de conectividad indican un error, se 
 
 ## <a name="related-topics"></a>Temas relacionados
 
+- [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)
+- [Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
 - [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

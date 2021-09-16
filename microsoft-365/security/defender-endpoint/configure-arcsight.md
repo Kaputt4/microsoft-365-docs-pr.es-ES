@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1ab7e1f31fff1e4b553d5d301eb7fbe4749de19e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 41d07ae2c6acc4bdbe828bc98d8bdfecdbf45f2e
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185913"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401727"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>Configurar Micro Focus ArcSight para extraer Defender para detecciones de puntos de conexión
 
@@ -104,7 +104,7 @@ En los pasos siguientes se supone que ha completado todos los pasos necesarios e
    |Campo|Valor|
    |---|---|
    |Archivo de configuración|Escriba el nombre del archivo de propiedad de cliente. El nombre debe coincidir con el archivo proporcionado en el .zip que descargó. <p> Por ejemplo, si el archivo de configuración del directorio "flexagent" se denomina "WDATP-Connector.jsonparser.properties", debe escribir "WDATP-Connector" como el nombre del archivo de propiedad del cliente.|
-   |Dirección URL de eventos|En función de la ubicación del centro de datos, seleccione la dirección URL de la UE o estados unidos: <ul><li>**Para la UE**:  `https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Para EE. UU.**: `https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Para Reino Unido**: `https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
+   |Dirección URL de eventos|Según la ubicación del centro de datos, seleccione la DIRECCIÓN URL de la UE, estados unidos o Reino Unido: <ul><li>**Para la UE**:  `https://wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Para EE. UU.**: `https://wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Para Reino Unido**: `https://wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
    |Tipo de autenticación|OAuth 2|
    |Archivo de propiedades de cliente de OAuth 2|Vaya a la ubicación del *archivo wdatp-connector.properties.* El nombre debe coincidir con el archivo proporcionado en el .zip que descargó.|
    |Token de actualización|Puede obtener un token de actualización de dos maneras: generando un token de actualización desde la página de configuración de **SIEM** o usando la herramienta restutil. <p> Para obtener más información sobre cómo  generar un token de actualización desde la configuración de preferencias, vea [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md). <p> **Obtenga el token de actualización con la herramienta restutil**: <ol><li>Abra un símbolo del sistema. Vaya a C: \\ *ubicación de \_ carpeta*\current\bin donde *la \_* ubicación de la carpeta representa la ubicación donde instaló la herramienta.</li><li>Tipo: `arcsight restutil token -config` desde el directorio bin. Por ejemplo: **arcsight restutil boxtoken -proxy proxy.location.hp.com:8080**. Se abrirá una ventana del explorador web.</li><li>Escriba sus credenciales y, a continuación, haga clic en el campo de contraseña para permitir que la página redirija. En el símbolo del sistema de inicio de sesión, escriba sus credenciales.</li><li>Se muestra un token de actualización en el símbolo del sistema.</li><li>Cópielo y péguelo en el **campo Actualizar token.**|

@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
-ms.openlocfilehash: 93a22ef86be7067c8bda955fdfd085f7ef6cbd64
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4110d79caf2ddc4f5f9bb8af717334b874a248e9
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185878"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400839"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Habilitar y configurar la protección siempre activa del Antivirus de Windows Defender en la directiva de grupo
 
@@ -53,15 +53,12 @@ Para habilitar y configurar la protección siempre activa:
 
    1. En el **Antivirus de Microsoft Defender** detalles de la derecha, haga doble clic en la configuración de directiva especificada en la tabla siguiente:
 
-      <br>
+      <br/><br/>
 
-      ****
-
-      |Setting|Configuración predeterminada|
+      |Valor|Configuración predeterminada|
       |---|---|
       |Permitir que el servicio antimalware se inicie con prioridad normal <p> Puede reducir la prioridad del motor Antivirus de Microsoft Defender motor. Reducir la prioridad puede ser útil en casos en los que quieras tener un proceso de inicio lo más delgado posible; sin embargo, la toma de esta acción podría afectar a la protección de puntos de conexión. Continúe con precaución.|Habilitado
       |Permitir que el servicio antimalware siga ejecutándose siempre <p> Si las actualizaciones de protección se han deshabilitado, puede Antivirus de Microsoft Defender para que se ejecuten. Deshabilitar las actualizaciones de protección reduce la protección de puntos de conexión.|Deshabilitado|
-      |
 
    2. Configure la configuración según corresponda y seleccione **Aceptar**.
 
@@ -86,16 +83,12 @@ Para habilitar y configurar la protección siempre activa:
       ![Antivirus de Microsoft Defender Opciones de examen](images/gpedit-windows-defender-antivirus-scan.png)
 
    2. En el **panel Detección** de detalles de la derecha, haga doble clic en la configuración de directiva especificada en la tabla siguiente:
+      <br/><br/>
 
-
-      <br>
-
-      ****
-
-      |Setting|Configuración predeterminada|
+      |Valor|Configuración predeterminada|
       |---|---|
       |Activar heurística <p> La protección heurística deshabilitará o bloqueará la actividad sospechosa inmediatamente antes de que se pida al Antivirus de Microsoft Defender que detecte la actividad.|Habilitado|
-      |
+
 
    3. Configure la configuración según corresponda y seleccione **Aceptar**.
 
@@ -103,11 +96,7 @@ Para habilitar y configurar la protección siempre activa:
 
 ### <a name="real-time-protection-policy-settings"></a>Configuración de directiva de protección en tiempo real
 
-<br>
-
-****
-
-|Setting|Configuración predeterminada|
+|Valor|Configuración predeterminada|
 |---|---|
 |Activar la supervisión del comportamiento <p> El motor antivirus supervisará los procesos de archivos, los cambios de archivos y del Registro y otros eventos en los puntos de conexión en busca de actividad malintencionada sospechosa y conocida.|Habilitado|
 |Examinar todos los archivos y datos adjuntos descargados <p> Los archivos descargados y los datos adjuntos se examinan automáticamente. Este examen funciona además del filtro Windows Defender SmartScreen, que examina los archivos antes y durante la descarga.|Habilitado|
@@ -121,7 +110,6 @@ Para habilitar y configurar la protección siempre activa:
 |Configurar la invalidación de configuración local para activar la protección en tiempo real <p> Configure una invalidación local para que la configuración active la protección en tiempo real. Esta configuración solo se puede establecer mediante la directiva de grupo. Si habilita esta configuración, la configuración de preferencia local tendrá prioridad sobre la directiva de grupo. Si deshabilita o no configura esta configuración, la directiva de grupo tendrá prioridad sobre la configuración de preferencia local.|Habilitado|
 |Configurar la invalidación de configuración local para la supervisión de la actividad de archivos entrantes y salientes <p> Configure una invalidación local para la configuración de la supervisión de la actividad de archivos entrantes y salientes. Esta configuración solo se puede establecer mediante la directiva de grupo. Si habilita esta configuración, la configuración de preferencia local tendrá prioridad sobre la directiva de grupo. Si deshabilita o no configura esta configuración, la directiva de grupo tendrá prioridad sobre la configuración de preferencia local.|Habilitado|
 |Configurar la supervisión para la actividad del programa y los archivos entrantes y salientes <p> Especifique si la supervisión debe producirse en la dirección entrante, saliente, ambas o ninguna. Esta acción es relevante para las instalaciones de Windows Server en las que ha definido servidores específicos o roles de servidor que ven grandes cantidades de cambios de archivo en una sola dirección y desea mejorar el rendimiento de la red. Los puntos de conexión (y los servidores) totalmente actualizados en una red verán poco impacto en el rendimiento independientemente del número o la dirección de los cambios en los archivos.|Habilitado (ambas direcciones)|
-|
 
 ## <a name="disable-real-time-protection-in-group-policy"></a>Deshabilitar la protección en tiempo real en la directiva de grupo
 
@@ -151,7 +139,7 @@ La principal funcionalidad de protección en tiempo real está habilitada de for
 
 6. Cierre **el Editor de directivas de grupo local**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Configurar la protección en tiempo real, heurística y de comportamiento](configure-protection-features-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

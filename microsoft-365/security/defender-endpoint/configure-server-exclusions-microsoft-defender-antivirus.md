@@ -16,12 +16,12 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 08/17/2021
-ms.openlocfilehash: d50146c3689f7b19fc6b546478bc0b01ada1fc30
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31a5eb4e322a4ed897f0bcc59b6dffe1f53da43d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213780"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401967"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurar Antivirus de Microsoft Defender exclusiones en Windows Server
 
@@ -39,16 +39,13 @@ Dado Antivirus de Microsoft Defender está integrado en Windows Server 2016 y ve
 
 En este artículo se incluyen las siguientes secciones:
 
-<br>
-
-****
+<br/><br/>
 
 |Sección|Descripción|
 |---|---|
 |[Exclusiones automáticas en Windows Server 2016 o posterior](#automatic-exclusions-on-windows-server-2016-or-later)|Describe los dos tipos principales de exclusiones automáticas e incluye una lista detallada de exclusiones automáticas|
 |[No participar en exclusiones automáticas](#opting-out-of-automatic-exclusions)|Incluye consideraciones y procedimientos importantes que describen cómo excluirse de las exclusiones automáticas|
 |[Definición de exclusiones personalizadas](#defining-custom-exclusions)|Proporciona vínculos a información sobre cómo definir exclusiones personalizadas|
-|
 
 > [!IMPORTANT]
 > Tenga en cuenta los siguientes puntos:
@@ -167,16 +164,13 @@ En esta sección se enumeran las exclusiones predeterminadas para todos los role
 
 En la tabla siguiente se enumeran las exclusiones de tipo de archivo, las exclusiones de carpetas y las exclusiones de proceso que se entregan automáticamente al instalar el rol de Hyper-V.
 
-<br>
-
-****
+<br><br/>
 
 |Tipo de exclusión|Detalles|
 |---|---|
 |Tipos de archivo|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
 |Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
 |Procesos|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
-|
 
 ##### <a name="sysvol-files"></a>Archivos SYSVOL
 
@@ -378,7 +372,7 @@ Si es necesario, puede agregar o quitar exclusiones personalizadas. Para ello, c
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)

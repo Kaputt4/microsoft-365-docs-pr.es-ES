@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 4bd6726550e444ffc31e241b8fb5c52c9967a267
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b4e6becbdb0e26317bcc29e5bb70e24486d43414
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212317"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400455"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>Incorporar los dispositivos Windows 10 con la directiva de grupo
 
@@ -43,9 +43,7 @@ ms.locfileid: "59212317"
 
 ## <a name="onboard-devices-using-group-policy"></a>Incorporar dispositivos con la directiva de grupo
 
-[![Imagen del PDF que muestra las distintas rutas de implementación.](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
-
-Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
+Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
 
 1. Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Defender portal:](https://security.microsoft.com/)
     1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** \> **Device management** \> **Onboarding**.  
@@ -121,7 +119,7 @@ Todas las directivas se encuentran en `Computer Configuration\Policies\Administr
 
 **Ubicación de la directiva:** \Windows Components\Windows Defender ATP
 
-Directiva|Setting
+Directiva|Valor
 ---|---
 Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muestras en máquinas" activada
 
@@ -129,7 +127,7 @@ Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muest
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender
 
-Directiva|Setting
+Directiva|Valor
 ---|---
 Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, Block
 
@@ -137,7 +135,7 @@ Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, B
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\MAPS
 
-Directiva|Setting
+Directiva|Valor
 ---|---
 Unirse a Microsoft MAPS|Mapas avanzados habilitados
 Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales | Habilitado, Enviar muestras seguras
@@ -146,7 +144,7 @@ Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales 
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Real-time Protection
 
-Directiva|Setting
+Directiva|Valor
 ---|---
 Desactivar la protección en tiempo real|Deshabilitado
 Activar la supervisión del comportamiento|Habilitado
@@ -159,7 +157,7 @@ Supervisar la actividad de archivos y programas en el equipo|Habilitado
 
 Estas opciones configuran exámenes periódicos del extremo. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
-Directiva|Setting
+Directiva|Valor
 ---|---
 Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de ejecutar un examen programado |Habilitado
 
@@ -181,7 +179,7 @@ Obtener la lista actual de GUID de reducción de superficie de ataque de [Person
 
    ![Imagen de configuración de reducción de superficie de ataque.](images/asr-guid.png)
 
-Directiva|Setting
+Directiva|Valor
 ---|---
 Configurar acceso controlado a carpetas| Habilitado, modo auditoría
 

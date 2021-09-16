@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector 17a-4 Symphony DataParser para importar y archivar datos de Sinfónico en Microsoft 365.
 ms.openlocfilehash: 4bff017a3bb29062011d6d7e63cf5328c7fc5f98
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357251"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401499"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-symphony"></a>Configurar un conector para archivar datos de Symphony
 

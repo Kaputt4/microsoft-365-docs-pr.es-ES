@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43190dabe55ab3600a05aa8e6094c6ad7393a04d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae7d6d448c753737a96db4f74ffd6532ed7e6e66
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191397"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399603"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
@@ -70,21 +70,21 @@ Además de las licencias y permisos [necesarios,](information-barriers.md#requir
 
 - Sin directivas de libreta de direcciones: antes de definir y aplicar directivas de barrera de información, asegúrese de que no Exchange directivas de libreta de direcciones. Las barreras de información se basan en las directivas de libreta de direcciones, pero los dos tipos de directivas no son compatibles. Si tiene estas directivas, asegúrese de quitar primero [las directivas de la libreta de direcciones.](/exchange/address-books/address-book-policies/remove-an-address-book-policy) Una vez habilitadas las directivas de barrera de  información y habilitada la libreta jerárquica [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) de direcciones, todos los usuarios que no estén incluidos en un segmento de barrera de información verán la libreta jerárquica de direcciones en Exchange en línea.
 
-- PowerShell: actualmente, las directivas de barrera de información se definen y administran en el Centro de Office 365 seguridad & cumplimiento con cmdlets de PowerShell. Aunque en este artículo se proporcionan varios ejemplos, deberá familiarizarse con los cmdlets y parámetros de PowerShell. También necesitará el módulo Azure PowerShell.
+- PowerShell: actualmente, las directivas de barrera de información se definen y administran en PowerShell del Centro de & seguridad. Aunque en este artículo se proporcionan varios ejemplos, deberá familiarizarse con los cmdlets y parámetros de PowerShell. También necesitará el módulo Azure Active Directory PowerShell.
   - [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
-  - [Instalar el Azure PowerShell módulo](/powershell/azure/install-az-ps)
+  - [Instalar Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/install-adv2)
 
 - Consentimiento de los administradores para las barreras de información en Microsoft Teams: cuando las directivas del IB están en su lugar, pueden quitar usuarios que no son del IB de grupos (es decir, canales Teams, que se basan en grupos). Esta configuración ayuda a garantizar que la organización cumpla con las directivas y las normativas. Use el siguiente procedimiento para permitir que las directivas de barrera de información funcionen según lo esperado en Microsoft Teams.
 
-   1. Requisito previo: Instalar Azure PowerShell [desde Instalar Azure PowerShell](/powershell/azure/install-az-ps).
+   1. Requisito previo: [Instalar Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/install-adv2).
 
    1. Ejecute los siguientes cmdlets de PowerShell:
 
       ```powershell
-      Connect-AzAccount -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzAccount -Tenant "Contoso.onmicrosoft.com"
+      Connect-AzureAD -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzureAD -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
-      if ($sp -eq $null) { New-AzureADServicePrincipal -ApplicationId $appId }
+      if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 

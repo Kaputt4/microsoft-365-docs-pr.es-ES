@@ -7,19 +7,20 @@ author: brendacarter
 manager: johmar
 audience: Admin
 ms.topic: tutorial
-ms.service: O365-seccomp
+ms.prod: m365-security
+ms.technology: m365d
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos Microsoft 365 y las acciones recomendadas para mitigar estos riesgos.
-ms.openlocfilehash: 8f5c6e75097814841f8478cd8240c80b4eebc51a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 24f570b85a871538f4aeca98795ddb3a27d99e55
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220682"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400431"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Seguridad para los responsables de la toma de decisiones empresariales (BDMs)
 
@@ -58,7 +59,7 @@ Recomendaciones adicionales:
 
 El siguiente área de enfoque es reducir la superficie del ataque. Esto se puede lograr con el mínimo esfuerzo e impacto para los usuarios y servicios. Al reducir la superficie de ataque, los atacantes tienen menos formas de iniciar un ataque contra la organización.
 
-Estos son algunos ejemplos:
+Aquí le mostramos otros ejemplos:
 - Deshabilitar los protocolos POP3, IMAP y SMTP. La mayoría de las organizaciones modernas ya no usan estos protocolos más antiguos. Puede deshabilitarlas de forma segura y permitir excepciones solo según sea necesario. 
 - Reduzca y mantenga el número de administradores globales en el inquilino en el mínimo necesario. Esto reduce directamente la superficie de ataque para todas las aplicaciones en la nube. 
 - Retire servidores y aplicaciones que ya no se usan en el entorno. 
@@ -97,7 +98,7 @@ En el siguiente diagrama se ilustran estas funcionalidades.
 Recomendaciones adicionales:
 - Proteger las comunicaciones de canales de partners, como correos electrónicos con TLS.
 - Abra Teams federación solo a los partners con los que se comunique.
-- No agregue dominios de remitente, remitentes individuales o direcciones IP de origen a la lista de permitidos, ya que esto permite omitir las comprobaciones de correo no deseado y malware: una práctica común con los clientes es agregar sus propios dominios aceptados o varios otros dominios en los que se hayan notificado problemas de flujo de correo electrónico a la lista de permitidos. No agregue dominios en la lista de filtrado de correo no deseado y de conexión, ya que esto podría omitir todas las comprobaciones de correo no deseado. 
+- No agregue dominios de remitente, remitentes individuales o direcciones IP de origen a la lista de permitidos, ya que esto permite omitir las comprobaciones de correo no deseado y malware: una práctica común con los clientes es agregar sus propios dominios aceptados o muchos otros dominios en los que se hayan notificado problemas de flujo de correo electrónico a la lista de permitidos. No agregue dominios en la lista de filtrado de correo no deseado y de conexión, ya que esto podría omitir todas las comprobaciones de correo no deseado. 
 - Habilitar las notificaciones de correo no deseado salientes: habilite las notificaciones de correo no deseado salientes a una lista de distribución internamente al departamento de soporte técnico o al equipo de administración de TI para informar si alguno de los usuarios internos envía correos electrónicos no deseados externamente. Esto podría ser un indicador de que la cuenta se ha visto comprometida.
 - Deshabilitar PowerShell remoto para todos los usuarios: PowerShell remoto lo usan principalmente los administradores para obtener acceso a servicios con fines administrativos o acceso a la API mediante programación. Se recomienda deshabilitar esta opción para que los usuarios que no son administradores eviten el reconocimiento a menos que tengan un requisito empresarial para acceder a ella. 
 - Bloquear el acceso al portal de administración Microsoft Azure a todos los usuarios que no son administradores. Para ello, cree una regla de acceso condicional para bloquear todos los usuarios, excepto los administradores. 
@@ -105,13 +106,13 @@ Recomendaciones adicionales:
 
 ## <a name="assume-breach"></a>Asumir infracción
 
-Aunque Microsoft toma todas las medidas posibles para evitar amenazas y ataques, se recomienda trabajar siempre con la mentalidad "Asumir vulneración". Incluso si un atacante ha logrado entrar en el entorno, debemos asegurarnos de que no puedan filtrar datos o información de identidad del entorno. Por este motivo, se recomienda habilitar la protección contra pérdidas de datos confidenciales, como números de seguridad social, números de tarjetas de crédito, información personal adicional y otra información confidencial de nivel organizativo. 
+Aunque Microsoft toma todas las medidas posibles para evitar amenazas y ataques, se recomienda trabajar siempre con la mentalidad "Asumir vulneración". Incluso si un atacante ha logrado entrar en el entorno, debemos asegurarnos de que no puedan filtrar datos o información de identidad del entorno. Por este motivo, se recomienda habilitar la protección contra pérdidas de datos confidenciales, como números de seguridad social, números de tarjetas de crédito, otra información personal y otra información confidencial de nivel organizativo. 
 
 La mentalidad "Asumir vulneración" requiere implementar una estrategia de red de confianza cero, lo que significa que los usuarios no son de plena confianza solo porque son internos de la red. En su lugar, como parte de la autorización de lo que los usuarios pueden hacer, se especifican conjuntos de condiciones y, cuando se cumplen estas condiciones, se aplican ciertos controles. Las condiciones pueden incluir el estado del dispositivo, el acceso a la aplicación, las operaciones que se realizan y el riesgo del usuario. Por ejemplo, una acción de inscripción de dispositivos siempre debe desencadenar la autenticación MFA para asegurarse de que no se agregan dispositivos de color rojo al entorno. 
 
 Una estrategia de red de confianza cero también requiere saber dónde se almacena la información y aplicar los controles adecuados para la clasificación, protección y retención. Para proteger eficazmente los activos más críticos y confidenciales, primero debe identificar dónde se encuentran y realizar un inventario, lo que puede resultar complicado. A continuación, trabaje con su organización para definir una estrategia de gobierno. La definición de un esquema de clasificación para una organización y la configuración de directivas, etiquetas y condiciones requieren una planeación y preparación cuidadosas. Es importante tener en cuenta que no se trata de un proceso basado en LA. Asegúrese de trabajar con su equipo legal y de cumplimiento para desarrollar un esquema de clasificación y etiquetado adecuado para los datos de su organización.
 
-Microsoft 365 capacidades de protección de la información pueden ayudarle a descubrir qué información tiene, dónde se almacena y qué información requiere protección adicional. La protección de la información es un proceso continuo y las capacidades de Microsoft 365 proporcionan visibilidad sobre cómo los usuarios usan y distribuyen información confidencial, dónde se almacena actualmente la información y dónde fluye. También puede ver cómo los usuarios administran la información regulada para asegurarse de que se aplican las etiquetas y protecciones adecuadas.
+Microsoft 365 de protección de la información pueden ayudarle a descubrir qué información tiene, dónde se almacena y qué información requiere protección adicional. La protección de la información es un proceso continuo y las capacidades de Microsoft 365 proporcionan visibilidad sobre cómo los usuarios usan y distribuyen información confidencial, dónde se almacena actualmente la información y dónde fluye. También puede ver cómo los usuarios administran la información regulada para asegurarse de que se aplican las etiquetas y protecciones adecuadas.
 
 
 |Recomendación |E3|E5 |

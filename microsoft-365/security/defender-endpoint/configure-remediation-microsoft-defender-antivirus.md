@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: bd6353a2afc1382737fb95ec07faba1807b7cfd1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d0cda809878f06063663b18f03f052286070b08d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185862"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401715"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Corregir la detección de correcciones para el Antivirus de Windows Defender
 
@@ -48,19 +48,16 @@ También puede usar el [ `Set-MpPreference` cmdlet de PowerShell](/powershell/mo
 
 5. Seleccione **Aceptar**.
 
-<br>
-
-****
+<br/><br/>
 
 |Ubicación|Valor|Descripción|Configuración predeterminada (si no está configurada)|
 |---|---|---|---|
 |Examinar|Crear un punto de restauración del sistema|Se creará un punto de restauración del sistema cada día antes de intentar limpiar o examinar|Deshabilitado|
 |Examinar|Activar la eliminación de elementos de la carpeta historial de examen|Especificar cuántos días deben mantenerse los elementos en el historial de examen|30 días|
 |Raíz|Desactivar la corrección rutinaria|Puede especificar si Antivirus de Microsoft Defender corrige automáticamente las amenazas o si debe preguntar al usuario del extremo qué hacer.|Deshabilitado (las amenazas se corrigen automáticamente)|
-|Quarantine|Configurar la eliminación de elementos de la carpeta cuarentena|Especificar cuántos días deben mantenerse en cuarentena los elementos antes de quitarse|90 días|
-|Amenazas|Especificar niveles de alerta de amenazas en los que no se debe realizar ninguna acción predeterminada cuando se detecte|A todas las amenazas detectadas por Antivirus de Microsoft Defender se le asigna un nivel de amenaza (bajo, medio, alto o grave). Puede usar esta configuración para definir cómo deben corregirse todas las amenazas de cada uno de los niveles de amenaza (en cuarentena, eliminados o omitidos)|No aplicable|
+|Cuarentena|Configurar la eliminación de elementos de la carpeta cuarentena|Especificar cuántos días deben mantenerse en cuarentena los elementos antes de quitarse|90 días|
+|Amenazas|Especificar niveles de alerta de amenazas en los que no se debe realizar ninguna acción predeterminada cuando se detecte|A todas las amenazas detectadas por Antivirus de Microsoft Defender se le asigna un nivel de amenaza (bajo, medio, alto o grave). Puede usar esta configuración para definir cómo deben corregirse todas las amenazas de cada uno de los niveles de amenaza (en cuarentena, eliminados o omitidos)|No disponible|
 |Amenazas|Especificar amenazas en las que no se debe realizar una acción predeterminada cuando se detecte|Especifique cómo deben corregirse las amenazas específicas (mediante su identificador de amenaza). Puede especificar si la amenaza específica debe ponerse en cuarentena, quitarse o omitirse.|No aplicable|
-|
 
 > [!IMPORTANT]
 > Antivirus de Microsoft Defender detecta y corrige los archivos en función de muchos factores. A veces, completar una corrección requiere un reinicio. Incluso si más adelante se determina que la detección es un falso positivo, el reinicio debe completarse para garantizar que se hayan completado todos los pasos de corrección adicionales.
@@ -71,7 +68,7 @@ También puede usar el [ `Set-MpPreference` cmdlet de PowerShell](/powershell/mo
 
 Vea también [Configure remediation-required scheduled full Antivirus de Microsoft Defender scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) for more remediation-related settings.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Configurar opciones de análisis del Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)

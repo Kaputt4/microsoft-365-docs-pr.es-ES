@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: e7631647d97abc7f67129c9d40887996cfc7eb0b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f60b310d435693972a6573d7c9dccd920866bbe
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221654"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400335"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -55,9 +55,7 @@ En la tabla de esta sección se enumeran los servicios y sus direcciones de siti
 
 Asegúrese de que no hay reglas de filtrado de red o firewall que denieguen el acceso a estas direcciones URL. De lo contrario, es posible que deba crear una regla de permitir específicamente para ellos (excluyendo la dirección `*.blob.core.windows.net` URL). Las direcciones URL de la tabla siguiente usan el puerto 443 para la comunicación.
 
-<br>
-
-****
+<br/><br/>
 
 |Servicio y descripción|URL|
 |---|---|
@@ -117,3 +115,8 @@ También verás una detección en Amenazas en cuarentena **en** **la** sección 
    > Las versiones Windows 10 versiones anteriores a la 1703 tienen una interfaz de usuario diferente. Consulta [Antivirus de Microsoft Defender en la aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
 
    El Windows de eventos también mostrará Windows Defender [identificador de evento de cliente 1116](troubleshoot-microsoft-defender-antivirus.md).
+
+## <a name="see-also"></a>Vea también
+
+- [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md)
+- [Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)

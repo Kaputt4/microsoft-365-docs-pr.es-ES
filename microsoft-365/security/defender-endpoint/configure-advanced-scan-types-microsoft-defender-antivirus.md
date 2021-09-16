@@ -14,14 +14,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.date: 05/26/2021
+ms.date: 09/14/2021
 ms.topic: how-to
-ms.openlocfilehash: 9c25e0fd4dbdd9e8e2c05c0a3a49d767d5dbd3c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 87200c519aa27a2f8472a025f90a283978fd21a0
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187566"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399819"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurar opciones de análisis del Antivirus de Microsoft Defender
 
@@ -53,10 +53,6 @@ Para obtener más información sobre cómo Microsoft Endpoint Manager (rama actu
 
 ### <a name="settings-and-locations"></a>Configuración y ubicaciones
 
-<br>
-
-****
-
 |Ubicación y elemento de directiva|Configuración predeterminada (si no está configurada)|Parámetro de PowerShell `Set-MpPreference` o propiedad WMI para `MSFT_MpPreference` clase|
 |---|---|---|
 |Análisis de correo electrónico <p> **Examen** \> **Activar el examen de correo electrónico**<p>Vea [Limitaciones del examen de correo](#email-scanning-limitations) electrónico (en este artículo)|Deshabilitado|`-DisableEmailScanning`|
@@ -70,7 +66,6 @@ Para obtener más información sobre cómo Microsoft Endpoint Manager (rama actu
 |Especifique la carga máxima de CPU (como porcentaje) durante un examen. <p> **Examen** \> **Especificar el porcentaje máximo de uso de CPU durante un examen**|50|`-ScanAvgCPULoadFactor` <p>**NOTA:** La carga máxima de CPU no es un límite difícil, pero es una guía para que el motor de análisis no supere el máximo en promedio. Los exámenes de ejecución manual omitirán esta configuración y se ejecutarán sin límites de CPU.|
 |Especifique el tamaño máximo (en kilobytes) de los archivos de archivo que deben examinarse. <p> **Examen** \> **Especificar el tamaño máximo de los archivos de archivo que se examinarán**|Sin límite|No disponible <p>El valor predeterminado de 0 no aplica ningún límite|
 |Configurar una prioridad de CPU baja para exámenes programados <p> **Examen** \> **Configurar una prioridad de CPU baja para exámenes programados**|Deshabilitado|No disponible|
-|
 
 > [!NOTE]
 > Si la protección en tiempo real está activada, los archivos se examinan antes de tener acceso a ellos y ejecutarse. El ámbito de examen incluye todos los archivos, incluidos los archivos en medios extraíbles montados, como las unidades USB. Si el dispositivo que realiza el examen tiene activada la protección en tiempo real o la protección en tiempo real, el examen también incluirá recursos compartidos de red.
@@ -105,7 +100,7 @@ Si Antivirus de Microsoft Defender detecta una amenaza dentro de un mensaje de c
 
 En cualquier sistema operativo, solo se examinan las unidades de red asignadas a nivel del sistema. Las unidades de red asignadas a nivel de usuario no se examinan. Las unidades de red asignadas a nivel de usuario son aquellas que un usuario asigna en su sesión manualmente y usan sus propias credenciales.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Personalizar, iniciar y revisar los resultados de Antivirus de Microsoft Defender análisis y corrección](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender](run-scan-microsoft-defender-antivirus.md)

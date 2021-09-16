@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Cree un buzón de sala o equipamiento para que todos los usuarios de su organización puedan reservarlo para reuniones o eventos con Outlook. '
-ms.openlocfilehash: 3ee0d5dd137fa9c7be87891696d74efc9ef94512
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 7cee521b4046a3d5ca3acc6dabb657a56ccbc7d3
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355946"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400563"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Buzones de sala y equipamiento
 
@@ -124,7 +124,7 @@ No, no necesita que nadie acepte o rechace las solicitudes. Puede decidir si qui
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>¿Un buzón de sala o un buzón de correo de equipamiento necesitan una licencia de producto?
 
-No. Aunque la mayoría de las personas de la organización necesitan una licencia para usar Microsoft 365, no es necesario asignar una licencia a un buzón de sala o un buzón de equipamiento, en caso de que el buzón de recursos necesite tener un tamaño superior a 50 GB, o, en caso de que se necesiten algunas características (directivas de retención de seguridad y cumplimiento, o retención de Exchange Online) o, en caso de que el buzón de recursos no necesite un archivo en línea adjunto.
+No. Aunque la mayoría de las personas de la organización necesitan una licencia para usar Microsoft 365, no es necesario asignar una licencia a un buzón de sala o un buzón de equipamiento, en caso de que el buzón de recursos no necesite tener un tamaño superior a 50 GB, o, en caso de que no se necesiten algunas características (directivas de retención de seguridad y cumplimiento, o retención de Exchange Online) o, en caso de que el buzón de recursos no necesite un archivo en línea adjunto.
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>¿Necesito un propietario que se encargue de reservar las salas o el equipamiento?
 

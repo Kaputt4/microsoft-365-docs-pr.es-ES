@@ -14,13 +14,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 08/27/2021
-ms.openlocfilehash: 76508ef21b60d4376512f08a07925eca109f68e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/14/2021
+ms.openlocfilehash: 5dfa84335e9f31e531759b209ac3c2491c657fe0
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221697"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399807"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
@@ -51,11 +51,8 @@ Para excluir determinados archivos de Antivirus de Microsoft Defender exámenes,
 >
 > Las exclusiones automáticas solo se aplican Windows Server 2016 y versiones posteriores. Estas exclusiones no son visibles en la Seguridad de Windows y en PowerShell.
 
-En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta.
-
-<br>
-
-****
+En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta. 
+<br/><br/>
 
 |Exclusión|Ejemplos|Lista de exclusión|
 |---|---|---|
@@ -203,7 +200,7 @@ Puede usar el asterisco, el signo de interrogación o las variables de entorno (
     
 En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y se proporcionan algunos ejemplos.
 
-<br>
+<br/><br/>
 
 |Carácter comodín|Ejemplos|
 |---|---|
@@ -222,8 +219,7 @@ En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y
 
 ### <a name="system-environment-variables"></a>Variables de entorno del sistema
 
-En la tabla siguiente se enumeran y describen las variables de entorno de cuentas del sistema.
-
+En la tabla siguiente se enumeran y describen las variables de entorno de cuentas del sistema.<br/><br/>
     
 |Esta variable de entorno del sistema...|Redirige a esto|
 |---|---|
@@ -381,7 +377,7 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarla con el nombre de archivo o en la carpeta que está intentando excluir.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)

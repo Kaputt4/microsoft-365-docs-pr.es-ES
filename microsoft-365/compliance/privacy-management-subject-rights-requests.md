@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El área de solicitud de derechos de sujeto en administración de privacidad de Microsoft le ayuda a encontrar datos personales y colaborar en la revisión del contenido y la creación de informes.
-ms.openlocfilehash: 28059996d4969b23f856df3bb05584b4055ba3d2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8c994d87593ff6fb04e9fd58025e8079d30511e0
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210927"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399591"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Administrar solicitudes de derechos de sujeto en la administración de privacidad (versión preliminar)
 
@@ -102,7 +102,7 @@ En esta fase, los colaboradores deben revisar los resultados en la pestaña Dato
 
 - Elija si desea incluir los elementos identificados en los resúmenes o exportaciones. Si no es necesaria una coincidencia notificada en el informe o exportación, seleccione la opción "Excluir". Si el contenido parece ser un falso positivo, puedes elegir "No coincidir" para excluir el archivo de los informes finales y marcar el elemento como algo que no debería haber sido recogido por la solicitud. Para establecer el estado de un elemento, use el menú de acción (puntos suspensivos verticales) junto a su nombre y seleccione la opción que desee. Si se le pide, agregue una nota de referencia interna para explicar su decisión. Las notas son necesarias al excluir archivos.
 - Use la **opción Aplicar etiquetas** para ayudarle a identificar los elementos que necesitan atención. Las etiquetas disponibles incluyen opciones proporcionadas por el sistema, por ejemplo, etiquetar un elemento para seguimiento y pueden incluir etiquetas personalizadas según se define en Configuración.
-- Use **Anotación para** crear marcas o redacciones en línea en un archivo seleccionado. Por ejemplo, si necesita incluir un archivo para una persona que también  contiene la información personal de otros, puede usar la redacción área (debajo del botón Dibujo de la barra de comandos) para cerrar toda la información que no pertenezca a la persona que realizó la solicitud. Una vez completadas las ediciones, seleccione Incluir para agregar el archivo redactado a la solicitud. Tenga en cuenta que la anotación crea una copia del archivo, de modo que no se altere nada en el archivo original y permanezca en su ubicación original. La copia se almacena en el blob de Azure y permanecerá durante el período de retención de datos indicado. Para obtener más información, vea [Retención de datos a](#data-retention) continuación.
+- Use **Anotación para** crear marcas o redacciones en línea en un archivo seleccionado. Por ejemplo, si necesita incluir un archivo para una persona que también  contiene la información personal de otros, puede usar la redacción área (debajo del botón Dibujo de la barra de comandos) para cerrar toda la información que no pertenezca a la persona que realizó la solicitud. Una vez completadas las ediciones, seleccione Incluir para agregar el archivo redactado a la solicitud. Tenga en cuenta que la anotación crea una copia del archivo, de modo que no se altere nada en el archivo original y permanezca en su ubicación original. La copia se almacena en el blob de Azure.
 - Para revisar las notas de un elemento, selecciónelo y vaya a la pestaña Notas del archivo. También puede usar la opción Agregar nota de archivo para crear un nuevo comentario. Para revisar o agregar notas en un nivel de caso general, vaya a la pestaña Notas principal anterior y use **Agregar nota de caso**. Estas notas serán visibles para los usuarios que trabajen en la solicitud, pero no se incluirán en el informe final ni se compartirán con el interesado.
 
 Cuando se hayan revisado todos los elementos y se hayan establecido sus estados, seleccione **Completar** revisión para abrir un panel de sobrevía donde puede revisar un resumen de los datos y agregar las notas relevantes. Estas notas son para el mantenimiento de registros internos y no se comparten con el interesado. Seleccione Completar revisión de nuevo para pasar a la siguiente fase. Los resúmenes de sus decisiones se proporcionan más adelante en la pestaña Informes.
@@ -122,10 +122,6 @@ Para ver información detallada sobre la búsqueda de datos detrás de una solic
 Aquí tendrá la opción obtener una vista **previa** de los resultados de la búsqueda para ver qué tipo de contenido se devolverá para esta consulta. Si determina que desea cambiar las propiedades de esta búsqueda y no ha iniciado la fase Recuperar datos, puede usar la opción Editar consulta **de** búsqueda. Este asistente ofrece la capacidad de cambiar o agregar propiedades para la identificación del interesado, los filtros y condiciones de búsqueda y las ubicaciones en las que buscar datos (incluidos Exchange, SharePoint, OneDrive o Teams). Usa estas opciones para alcanzar el nivel de especificidad deseado. Puede revisar la versión final de la nueva consulta antes de presionar **Guardar**.
 
 Cuando termine de editar la consulta de búsqueda, se ejecutará una nueva búsqueda para reemplazar los resultados de búsqueda anteriores. Esto restablece el estado de la sección Progreso al primer paso, **Estimación de datos.** La nueva búsqueda puede tardar hasta 60 minutos en completarse. Una vez hecho esto, verá los resultados actualizados en la página de detalles de la solicitud.
-
-### <a name="data-retention"></a>Retención de datos
-
-Los informes generados a través de esta herramienta y los datos asociados, como los archivos anotados guardados en Azure, se almacenan durante un período de tiempo especificado. Esta duración se define a nivel global a través de **Configuración** en la sección **Períodos** de retención de datos, que le permiten elegir entre 30 y 90 días. Para obtener más información, vea [Introducción a la administración de privacidad.](privacy-management-setup.md)
 
 ## <a name="collaborate-on-requests-with-teams"></a>Colaborar en solicitudes con Teams
 
