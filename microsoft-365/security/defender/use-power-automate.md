@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9d6b786076a218a5257bbd12669f62064ae51f2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a707de259897080f8e726aed70618ea6505bdea6
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189147"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444120"
 ---
 # <a name="use-power-automate-in-microsoft-365-defender"></a>Use Power Automate en Microsoft 365 Defender
 
@@ -64,6 +64,6 @@ En este vídeo también se describe cómo conectar la automatización de energí
 
 ## <a name="related-information"></a>Información relacionada
 
-- [Integrar Power Automate con Microsoft Cloud App Security](https://aka.ms/flow-integration)
+- [Integrar Power Automate con Microsoft Cloud App Security](/cloud-app-security/flow-integration)
 
-- [Documentación Power Automate Microsoft](https://aka.ms/power-automate-docs)
+- [Documentación Power Automate Microsoft](/power-automate)
