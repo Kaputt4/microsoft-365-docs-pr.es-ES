@@ -71,12 +71,20 @@
                   href: create-secure-guest-sharing-environment.md
             - name: Referencia de uso compartido externo
               href: microsoft-365-guest-settings.md
-    - name: Implementación de protección contra amenazas en Microsoft 365
+    - name: "Implementar la protección contra ransomware para el inquilino de Microsoft\_365"
       items:
         - name: Información general
-          href: deploy-threat-protection.md
-        - name: Pasos para implementar la protección contra amenazas
-          href: deploy-threat-protection-configure.md
+          href: ransomware-protection-microsoft-365.md
+        - name: Paso 1. Configurar las líneas base de seguridad
+          href: ransomware-protection-microsoft-365-security-baselines.md
+        - name: Paso 2. Implementar la detección y respuesta ante ataques
+          href: ransomware-protection-microsoft-365-attack-detection-response.md
+        - name: Paso 3. Proteger identidades
+          href: ransomware-protection-microsoft-365-identities.md
+        - name: Paso 4. Proteger dispositivos
+          href: ransomware-protection-microsoft-365-devices.md
+        - name: Paso 5. Proteger información
+          href: ransomware-protection-microsoft-365-information.md
     - name: Implementación de protección de la información para las normativas de privacidad de los datos
       items:
         - name: Información general
