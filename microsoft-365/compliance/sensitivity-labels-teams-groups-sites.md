@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 5480a5b8336c03323c26785e884da811a5d00d97
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fb1f0dad7aba15b33fce51b855a9b037478db627
+ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216470"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447341"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -355,7 +355,7 @@ Las siguientes aplicaciones y servicios actualmente no son compatibles con las e
 
 ## <a name="classic-azure-ad-group-classification"></a>Clasificación de grupos de Azure AD clásica
 
-Microsoft 365 ya no admitirá las antiguas clasificaciones para los nuevos grupos de Microsoft 365 y sitios de SharePoint después de que habilite etiquetas de confidencialidad para contenedores. Sin embargo, los grupos y sitios existentes que son compatibles con etiquetas de confidencialidad aún mostrarán los valores de clasificación antiguos hasta que los convierta para usar etiquetas de confidencialidad.
+Después de habilitar etiquetas de confidencialidad para contenedores, las clasificaciones de grupo de Azure AD ya no serán compatibles con Microsoft 365 y no se mostrarán en sitios que admitan etiquetas de confidencialidad. Sin embargo, puede convertir las clasificaciones antiguas en etiquetas de confidencialidad.
 
 Como ejemplo de cómo podría haber utilizado la antigua clasificación de grupos para SharePoint, consulte [Clasificación de sitios "modernos" de SharePoint](/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 

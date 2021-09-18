@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cf5f0a63645fccb9f3895796c8ec514efe091a94
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ee5a65bab280b6a6024d2a0d6deca1e17962794f
+ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401571"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447377"
 ---
 # <a name="hunt-for-ransomware"></a>Buscar ransomware
 
@@ -265,6 +265,7 @@ Información clave de Microsoft:
 
 Microsoft 365:
 
+- [Implementar la protección contra ransomware para su Microsoft 365 inquilino](/microsoft-365/solutions/ransomware-protection-microsoft-365)
 - [Recuperarse de un ataque de ransomware](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [Protección de malware y ransomware](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Proteger el equipo Windows 10 de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
