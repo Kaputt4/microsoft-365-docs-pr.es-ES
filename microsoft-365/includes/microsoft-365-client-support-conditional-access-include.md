@@ -5,7 +5,7 @@
 |ADMINISTRADOR DE AZURE ACTIVE DIRECTORY|N/D|N/D|N/D|Planeado|N/D|
 |PORTAL DE EMPRESA|Planeado|Planeado|Planeado|N/D|Planeado|
 |CORTANA|N/D|N/D|N/D|N/D|Planeado|
-|EXCEL|✔|Planeado|Planeado|Planeado|N/D|
+|EXCEL|✔|✔|✔|✔|N/D|
 |ADMINISTRADOR DE EXCHANGE|N/D|N/D|N/D|✔|N/D|
 |FORMULARIOS|N/D|N/D|N/D|N/D|N/D|
 |KAIZALA|Planeado|Planeado|N/D|N/D|N/D|
@@ -15,13 +15,13 @@
 |OFFICE MOBILE|✔|Planeado|N/D|N/D|N/D|
 |OFFICE.COM|N/D|N/D|N/D|N/D|Planeado|
 |ONEDRIVE|✔|✔|✔|✔|Planeado|
-|ONENOTE|✔|Planeado|Planeado|Planeado|Planeado|
-|OUTLOOK|✔|✔|Planeado|Planeado|Planeado|
+|ONENOTE|✔|✔|✔|✔|✔|
+|OUTLOOK|✔|✔|Planeado|✔|Planeado|
 |PLANNER|Planeado|Planeado|N/D|N/D|N/D|
 |POWER APPS|Planeado|Planeado|N/D|N/D|Planeado|
 |POWER AUTOMATE|Planeado|Planeado|N/D|N/D|N/D|
 |POWER BI|Planeado|Planeado|N/D|Planeado|Planeado|
-|POWERPOINT|✔|Planeado|Planeado|Planeado|N/D|
+|POWERPOINT|✔|✔|✔|✔|N/D|
 |PROJECT|N/D|N/D|N/D|Planeado|N/D|
 |PUBLISHER|N/D|N/D|N/D|✔|N/D|
 |ADMINISTRADOR DE SHAREPOINT|N/D|N/D|N/D|Planeado|N/D|
@@ -33,6 +33,6 @@
 |TO-DO|Planeado|Planeado|Planeado|N/D|Planeado|
 |VISIO|N/D|✔|N/D|Planeado|N/D|
 |PIZARRA|✔|Planeado|N/D|N/D|Planeado|
-|WORD|✔|Planeado|Planeado|Planeado|N/D|
+|WORD|✔|✔|✔|✔|N/D|
 |WORKPLACE ANALYTICS|N/D|N/D|N/D|N/D|N/D|
 |YAMMER|Planeado|Planeado|Planeado|Planeado|N/D|

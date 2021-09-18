@@ -1,6 +1,6 @@
 ---
-title: Definir directivas de barreras de información
-description: Obtenga información sobre cómo definir directivas para las barreras de información en Microsoft Teams.
+title: Introducción a las barreras de información
+description: Obtenga información sobre cómo empezar con las barreras de información.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,14 +15,14 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae7d6d448c753737a96db4f74ffd6532ed7e6e66
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c2c8721cbabd6267bb7c67efc56953bb22186a0b
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399603"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443964"
 ---
-# <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
+# <a name="get-started-with-information-barriers"></a>Introducción a las barreras de información
 
 Con las barreras de información, puede definir directivas diseñadas para impedir que determinados segmentos de usuarios se comuniquen entre sí o permitir que segmentos específicos se comuniquen solo con otros segmentos. Las directivas de barrera de información pueden ayudar a su organización a mantener el cumplimiento de los estándares y normativas relevantes del sector y evitar posibles conflictos de interés. Para obtener más información, vea [Information barriers](information-barriers.md).
 
@@ -51,7 +51,7 @@ Al definir directivas para barreras de información, trabajará con atributos de
 | [Parte 2: Definir directivas de barrera de información](#part-2-define-information-barrier-policies) | - Definir las directivas (aún no se aplican)<br/>- Elegir entre dos tipos (bloquear o permitir) |
 | [Parte 3: Aplicar directivas de barrera de información](#part-3-apply-information-barrier-policies) | - Establecer directivas en estado activo<br/>- Ejecutar la aplicación de directiva<br/>- Ver el estado de la directiva |
 | (Según sea necesario) [Editar un segmento o una directiva](information-barriers-edit-segments-policies.md) | - Editar un segmento<br/>- Editar o quitar una directiva<br/>- Volver a ejecutar la aplicación de directiva<br/>- Ver el estado de la directiva |
-| (Según sea necesario) [Solución de problemas](information-barriers-troubleshooting.md)| - Tomar medidas cuando las cosas no funcionen como se esperaba|
+| (Según sea necesario) [Solución de problemas](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)| - Tomar medidas cuando las cosas no funcionen como se esperaba|
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -268,7 +268,7 @@ Con PowerShell, puede ver el estado de cuentas de usuario, segmentos, directivas
 
 Los recursos están disponibles para ayudarle a administrar sus directivas de barrera de información.
 
-- Si algo sale mal con las barreras de información, vea [Troubleshooting information barriers](information-barriers-troubleshooting.md).
+- Si algo sale mal con las barreras de información, vea [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting).
 - Para impedir que se apliquen directivas, vea [Stop a policy application](information-barriers-edit-segments-policies.md#stop-a-policy-application).
 - Para quitar una directiva de barrera de información, vea [Remove a policy](information-barriers-edit-segments-policies.md#remove-a-policy).
 - Para realizar cambios en segmentos o directivas, vea [Editar (o quitar) directivas de](information-barriers-edit-segments-policies.md)barrera de información .

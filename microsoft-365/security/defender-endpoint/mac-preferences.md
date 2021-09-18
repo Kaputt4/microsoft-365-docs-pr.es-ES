@@ -1,6 +1,6 @@
 ---
 title: Establecer preferencias para Microsoft Defender para Endpoint en Mac
-description: Configurar MMicrosoft Defender para Endpoint en Mac en organizaciones empresariales.
+description: Configurar Microsoft Defender para Endpoint en Mac en organizaciones empresariales.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b5db9e2b75e7dcb7cb08ea29f696531935b2f486
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a396f704405b062954b5d51fff4e69e85807e621
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165694"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444192"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Establecer preferencias para Microsoft Defender para endpoint en macOS
 
@@ -83,6 +83,22 @@ Especifique si se va a habilitar la protección en tiempo real, que examina los 
 |**Posibles valores**|true (valor predeterminado) <p> false|
 |||
 
+#### <a name="run-a-scan-after-definitions-are-updated"></a>Ejecutar un examen después de actualizar las definiciones
+Especifica si se debe iniciar un examen de proceso después de que se descarguen nuevas actualizaciones de inteligencia de seguridad en el dispositivo. Al habilitar esta configuración, se desencadenará un examen antivirus en los procesos en ejecución del dispositivo.
+
+<br>
+
+****
+
+|Sección|Valor|
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|scanAfterDefinitionUpdate|
+|**Tipo de datos**|Booleano|
+|**Posibles valores**|false (predeterminado) <p> true|
+|**Comments**|Disponible en Microsoft Defender para endpoint versión 101.41.10 o posterior.|
+|||
+
 #### <a name="enable--disable-passive-mode"></a>Habilitar o deshabilitar el modo pasivo
 
 Especifique si el motor antivirus se ejecuta en modo pasivo. El modo pasivo tiene las siguientes implicaciones:
@@ -105,7 +121,7 @@ Especifique si el motor antivirus se ejecuta en modo pasivo. El modo pasivo tien
 |**Posibles valores**|false (predeterminado) <p> true|
 |**Comments**|Disponible en Microsoft Defender para endpoint versión 100.67.60 o posterior.|
 |||
-
+  
 #### <a name="exclusion-merge-policy"></a>Directiva de combinación de exclusión
 
 Especifique la directiva de combinación para exclusiones. Puede ser una combinación de exclusiones definidas por el administrador y definidas por el usuario ( ) o solo `merge` exclusiones definidas por el administrador ( `admin_only` ). Esta configuración se puede usar para restringir que los usuarios locales definan sus propias exclusiones.
@@ -693,6 +709,10 @@ El siguiente perfil de configuración (o, en el caso de JAMF, una lista de propi
                 <dict>
                     <key>enableRealTimeProtection</key>
                     <true/>
+                    <key>passiveMode</key>
+                    <false/>
+                    <key>ScanAfterDefinitionUpdate</key>
+                    <false/>
                     <key>threatTypeSettings</key>
                     <array>
                         <dict>
@@ -740,6 +760,8 @@ Las plantillas siguientes contienen entradas para todas las configuraciones desc
         <key>enableRealTimeProtection</key>
         <true/>
         <key>passiveMode</key>
+        <false/>
+        <key>ScanAfterDefinitionUpdate</key>
         <false/>
         <key>maximumOnDemandScanThreads</key>
         <integer>1</integer>
@@ -1034,13 +1056,13 @@ En la consola JAMF, abra **Perfiles** de configuración de equipos , vaya al per
 
 5. Abra el perfil de configuración y cargue el `com.microsoft.wdav.xml` archivo. (Este archivo se creó en el paso 3).
 
-6. Seleccione **Aceptar**.
+6. Haga clic en **Aceptar**.
 
 7. Seleccione **Administrar** \> **asignaciones**. En la **pestaña Incluir,** seleccione **Asignar a todos los usuarios & Todos los dispositivos**.
 
 > [!CAUTION]
 > Debe escribir el nombre del perfil de configuración personalizado correcto; de lo contrario, Microsoft Defender no reconocerá estas preferencias para endpoint.
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Recursos
 
 - [Referencia de los perfiles de configuración (documentación para desarrolladores de Apple)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)

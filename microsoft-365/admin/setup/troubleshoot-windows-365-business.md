@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo solucionar problemas de configuración Windows equipos de 365 Business Cloud.
 ms.date: 08/13/2021
-ms.openlocfilehash: 701d1ce3ae97836d6687050e16a176aad85e2995
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cae971187e188e6213242481b9cfaeb7dc21c7f2
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192104"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444132"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>Solucionar Windows problemas de configuración de 365 Business Cloud PC
 
@@ -47,6 +47,14 @@ Asegúrese de **que los usuarios pueden unir dispositivos a Azure AD** está est
 4. Si **los usuarios pueden unir dispositivos** a Azure AD no está establecido en **Todos**, seleccione Todo **y,** a continuación, **seleccione Guardar**.
 5. Vaya al [paso 2. Compruebe que la cuenta Windows 365 BPRT Permanent User system está activa.](#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active)
 
+Asegúrese de que **el número máximo de** dispositivos por usuario sea lo suficientemente alto para que los equipos en la nube que está intentando configurar puedan asignarse a los usuarios designados.
+
+1. Inicie sesión en el portal Microsoft Azure en https://portal.azure.com/ .
+2. En **Administrar Azure Active Directory**, seleccione **Ver**.
+3. En el panel de navegación izquierdo, en **Administrar**, seleccione **Dispositivos** y, a continuación, **seleccione Configuración del dispositivo**.
+4. Para **Número máximo de dispositivos por usuario,** escriba el valor.
+5. Si ha realizado algún cambio, seleccione **Guardar**.
+
 ## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>Paso 2. Comprobar que la cuenta Windows 365 BPRT Permanent User system está activa
 
 La primera vez que se asigna una licencia Windows 365 en la organización, se crea automáticamente en Azure AD una cuenta del sistema denominada **Windows 365 usuario permanente de BPRT.** No elimine esta cuenta ni realice ningún cambio en ella (como cambiar el nombre o UPN). Si la cuenta del sistema se modifica o elimina, se producirá un error en la configuración. Esta cuenta del sistema garantiza un proceso de configuración sin problemas y no tiene ninguna capacidad de escritura ni acceso a su organización más allá de las capacidades de servicio de ámbito de Windows 365 Empresa. Si elimina o modifica esta cuenta del sistema, debe iniciar sesión en windows365.microsoft.com con cualquier cuenta que tenga una licencia de Windows 365 Empresa y esperar 12 horas para que el token se actualice.
@@ -57,7 +65,7 @@ Para asegurarse de que Windows cuenta del sistema de usuario permanente de 365 B
 2. En la navegación izquierda, en **Administrar**, seleccione **Usuarios**.
 3. En el cuadro de búsqueda, **escriba Windows 365 BPRT Permanent User** y, a continuación, presione **ENTRAR**.
 4. Si la Windows del sistema de usuario permanente de 365 BPRT está presente, vaya al [paso 3. Compruebe que MFA basada en dispositivos está desactivada.](#step-3-verify-that-device-based-mfa-is-turned-off)
-5. Si falta la cuenta del sistema de usuario permanente de Windows 365 BPRT o si se han realizado cambios en ella, inicie sesión en windows365.microsoft.com con cualquier cuenta que tenga asignada una licencia de Windows 365 Empresa. Se generará Windows usuario permanente de 365 BPRT en 12 horas. Después de que el token se haya regenerado, vaya directamente al [paso 6. Restablecer los equipos en la nube](#step-6-reset-your-cloud-pcs).
+5. Si falta la cuenta del sistema de usuario permanente de Windows 365 BPRT o si se han realizado cambios en ella (por ejemplo, restablecimiento de contraseña, cambio de propiedad, asignar o desasignar una licencia, entre otras), inicie sesión en windows365.microsoft.com con cualquier cuenta que tenga una licencia de Windows 365 Empresa asignada después de 12 horas. Se generará Windows usuario permanente de 365 BPRT. Después de que el token se haya regenerado, vaya directamente al [paso 6. Restablecer los equipos en la nube](#step-6-reset-your-cloud-pcs).
 
 ## <a name="step-3-verify-that-device-based-mfa-is-turned-off"></a>Paso 3. Comprobar que MFA basada en dispositivos está desactivada
 

@@ -1,5 +1,5 @@
 ---
-title: Atributos para las directivas de barreras de información
+title: Atributos de barreras de información
 description: Este artículo es una referencia para los atributos Azure Active Directory cuenta de usuario que puede usar para definir segmentos de barrera de información.
 ms.author: robmazz
 author: robmazz
@@ -13,14 +13,14 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee410bf455e770087da7999ad2019c17419a8e00
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e4309b7973b3f74ba43d178b6761449c91856d06
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184033"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443952"
 ---
-# <a name="attributes-for-information-barrier-policies"></a>Atributos para las directivas de barreras de información
+# <a name="information-barriers-attributes"></a>Atributos de barreras de información
 
 Algunos atributos de Azure Active Directory pueden usarse para segmentar usuarios. Una vez definidos los segmentos, estos segmentos se pueden usar como filtros para las directivas de barrera de información. Por ejemplo, puede usar **Department** para definir segmentos de usuarios por departamento dentro de su organización (suponiendo que ningún empleado trabaje para dos departamentos al mismo tiempo).
 
@@ -94,8 +94,8 @@ En la tabla siguiente se enumeran los atributos que puede usar con barreras de i
 | Descripción | Descripción |
 | MemberOf | MemberOfGroup |
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Recursos
 
 - [Definir directivas para las barreras de información en Microsoft Teams](information-barriers-policies.md)
-- [Solución de problemas de barreras de información](information-barriers-troubleshooting.md)
+- [Solución de problemas de barreras de información](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
 - [Barreras de información](information-barriers.md)

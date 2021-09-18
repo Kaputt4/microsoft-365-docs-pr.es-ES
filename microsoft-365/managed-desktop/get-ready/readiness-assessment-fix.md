@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f3ccb47c2facffed0a259b4807f8155b4c87cb70
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9332483dffa9fc67bf319cc57aef89d25c866843
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215540"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444000"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -38,7 +38,7 @@ Puede acceder a la configuración de Intune en el centro Microsoft Endpoint Mana
 
 ### <a name="autopilot-deployment-profile"></a>Perfil de implementación de Autopilot
 
-No debes tener ningún perfil de Autopilot existente destinado a grupos dinámicos o asignados con Escritorio administrado de Microsoft dispositivos. Escritorio administrado de Microsoft autopilot para aprovisionar nuevos dispositivos.
+No debes tener ningún perfil de Autopilot existente destinado a grupos dinámicos o asignados con Escritorio administrado de Microsoft dispositivos. Escritorio administrado de Microsoft autopilot para aprovisionar nuevos dispositivos. Si tiene un perfil de implementación de Autopilot existente, la configuración "Convertir todos los dispositivos de destino en Autopilot" debe establecerse en "No" para que la prueba de preparación del escritorio administrado para que Autopilot se haga correctamente.
 
 **No preparado**
 

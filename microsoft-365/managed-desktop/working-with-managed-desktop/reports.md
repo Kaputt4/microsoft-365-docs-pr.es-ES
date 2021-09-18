@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2a28112c8afe9165453153d2d23752325ae2e6d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5bb575efa9c7e18f20025d7840d3ddc86aefb330
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215150"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444288"
 ---
 # <a name="work-with-reports"></a>Trabajar con informes
 
@@ -29,7 +29,7 @@ Al seleccionar la **pestaña Informes,** verá descripciones de los informes det
 - El [ **informe de estado del** dispositivo](device-status-report.md) (*en* versión preliminar ) muestra el uso del servicio Escritorio administrado de Microsoft basado en la actividad y el uso del dispositivo. 
 - Puedes usar la **tendencia de estado** del dispositivo ( en versión preliminar ) para supervisar las tendencias en el estado del dispositivo en los últimos 60 días para los dispositivos Escritorio administrado de Microsoft dispositivos. Las tendencias pueden ayudarte a asociar el estado del dispositivo con otros cambios con el tiempo, por ejemplo, nuevas implementaciones. 
 - El [ **Windows actualizaciones de**](security-updates-report.md) seguridad *(* en versión preliminar ) muestra cómo se liberan Windows actualizaciones de seguridad en todos los Escritorio administrado de Microsoft dispositivos.
-
+- El **informe de uso de la** aplicación proporciona información sobre el uso típico de la aplicación en Escritorio administrado de Microsoft dispositivos. Para que los dispositivos proporcionen datos a este informe, deben establecerse en el nivel de datos de diagnóstico opcional.
 
 ## <a name="endpoint-analytics"></a>Análisis de puntos de conexión
 Escritorio administrado de Microsoft está integrado con endpoint [analytics.](/mem/analytics/overview) Estos informes le proporcionan información para medir cómo funciona su organización y la calidad de la experiencia que se ofrece a los usuarios. El análisis de extremos se encuentra en **el menú** Informes [de Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Para pivotar una puntuación para incluir solo los dispositivos  administrados por Escritorio administrado de Microsoft ir a cualquier informe, seleccione la lista desplegable Filtro y, a continuación, **seleccione Escritorio administrado de Microsoft dispositivos**.
