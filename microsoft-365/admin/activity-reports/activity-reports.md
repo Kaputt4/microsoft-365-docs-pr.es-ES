@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: c340e8b1bb8e126445b802e6b03c91d595e32a43
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 863ef1c40781e2bff3e9b2de6217e1dad114f46a
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355965"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443794"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -178,7 +178,7 @@ Los administradores globales pueden revertir este cambio para su inquilino y mos
 
 2. Seleccione **Informes**. 
   
-3. Desactive la instrucción **En todos los informes, mostrar nombres sin identificar para usuarios, grupos y sitios** y, a continuación, guarde los cambios.  
+3. Desactive la instrucción **Mostrar nombres ocultos de usuarios, grupos y sitios en todos los informes** y, a continuación, guarde los cambios.  
   
 Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a los informes de uso de Microsoft 365 en [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) y [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) y a los [informes de uso en el Centro de administración de Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Mostrar información de usuario identificable es un evento registrado en el Centro de cumplimiento de Microsoft 365 de auditoría.   
 

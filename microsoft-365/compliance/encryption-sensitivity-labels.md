@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ff68caef8989ec6159b60bba8be03fe7246fdbc
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 64957adeb242d14b2f4c986d3cffc282379c93f3
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400683"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444144"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -401,14 +401,14 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 
 - Si comparte documentos cifrados con personas de fuera de su organización, es posible que tenga que crear cuentas de invitado y modificar las directivas de Acceso condicional. Para obtener más información, consulte [Uso compartido de documentos cifrados con usuarios externos](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
 
-- Cuando los usuarios autorizados abren documentos cifrados en sus aplicaciones de Office, ven el nombre y descripción de la etiqueta en una barra de mensajes amarilla en la parte superior de la aplicación. Esta barra de mensajes informa a los usuarios de que el documento está restringido y, mediante el botón **Ver permisos**, pueden ver los permisos que se les han concedido para ese documento. Cuando los permisos de cifrado se extienden a personas fuera de la organización, revise detenidamente los nombres y descripciones de las etiquetas que estarán visibles en esta barra de mensajes cuando se abra el documento.
+- Cuando los usuarios autorizados abren documentos cifrados en sus aplicaciones de Office, ven el nombre y descripción de la etiqueta en una barra de mensajes amarilla en la parte superior de la aplicación. Cuando los permisos de cifrado se extienden a personas fuera de la organización, revise detenidamente los nombres y descripciones de las etiquetas que estarán visibles en esta barra de mensajes cuando se abra el documento.
 
 - Para que varios usuarios puedan modificar un archivo cifrado al mismo tiempo, deben usar Office para la Web.  O, para Windows y Mac, se ha [habilitado la coautoría para los archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md) y los usuarios tienen las [versiones mínimas necesarias](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) de Word, Excel y PowerPoint. Si este no es el caso, y el archivo ya está abierto:
 
   - En las aplicaciones de Office (Windows, Mac, Android y iOS), los usuarios verán un mensaje de **archivo en uso** con el nombre de la persona que ha desprotegido el archivo. Podrán ver una copia de solo lectura, guardar y editar una copia del archivo, y recibir una notificación cuando el archivo esté disponible.
   - En Office para la web, los usuarios ven un mensaje de error que indica que no pueden editar el documento con otras personas. Pueden seleccionar **Abrir en vista de lectura**.
 
-- La funcionalidad de [autoguardado](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) en las aplicaciones de Office (Windows, Mac, Android y iOS) está deshabilitada para archivos cifrados. Los usuarios verán un mensaje en el que se indica que el archivo tiene permisos restringidos que deben quitarse para que se pueda activar el autoguardado.
+- La funcionalidad [Autoguardado](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) en las aplicaciones de Office para iOS y Android está deshabilitada para los archivos cifrados. Esta funcionalidad también está deshabilitada para los archivos cifrados en Windows y Mac si no ha [habilitado la autoría conjunta para archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md). Los usuarios verán un mensaje en el que se indica que el archivo tiene permisos restringidos que deben quitarse para que se pueda activar el autoguardado.
 
 - Los archivos cifrados pueden tardar más en abrirse en las aplicaciones de Office (Windows, Mac, Android y iOS).
 

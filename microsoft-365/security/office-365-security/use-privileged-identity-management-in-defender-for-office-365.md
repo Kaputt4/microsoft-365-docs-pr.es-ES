@@ -1,11 +1,11 @@
 ---
-title: Use Privileged Identity Management (PIM) en Defender para Office 365.
+title: Use Privileged Identity Management (PIM) en Microsoft Defender para Office 365.
 f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 08/09/2021
+ms.date: 09/03/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Priority
@@ -20,13 +20,14 @@ ms.custom:
 description: Aprenda a integrar PIM para conceder acceso Just-In-Time limitado a los usuarios para que realicen tareas con privilegios elevados en Microsoft Defender para Office 365 y reducir así el riesgo para los datos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d1333963f841a9d9263f44263ad43d20ec75057
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 22fbb2dd57c8bd3d6ac9b25b219895bc480c266c
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58615045"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444273"
 ---
+<!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) y por qué usarlo con Microsoft Defender para Office 365
 
 Privileged Identity Management (PIM) es una característica de Azure que, una vez configurada, proporciona a los usuarios acceso a los datos durante un período de tiempo limitado (a veces denominado período de tiempo con cuadro de tiempo) para que se pueda realizar una tarea específica. A este acceso se le da "just-in-time" (o el tiempo suficiente) para realizar la acción necesaria y, a continuación, se revoca. PIM limita el acceso y el tiempo que el usuario tiene a los datos confidenciales, lo que reduce el riesgo de exposición en comparación con las cuentas de administración con privilegios que tienen acceso a largo plazo a datos y otras configuraciones. Entonces, ¿cómo podemos usar esta característica (PIM) junto con Microsoft Defender para Office 365?
@@ -38,11 +39,10 @@ Privileged Identity Management (PIM) es una característica de Azure que, una ve
 
 Al configurar PIM para que funcione con Defender para Office 365, los administradores crean un proceso para que un usuario solicite acceso para realizar las acciones que necesita. El usuario debe *justificar* la necesidad de la elevación de sus privilegios.
 
-En este ejemplo, configuraremos a "Alex", un miembro de nuestro equipo de seguridad que no tendrá acceso permanente en Office 365, pero que puede elevarse a un rol necesario para las operaciones cotidianas normales y, a continuación, a un mayor nivel de privilegios cuando se requieran operaciones menos frecuentes pero confidenciales, como purgar correo electrónico.
+En este ejemplo, configuraremos a "Alex", un miembro de nuestro equipo de seguridad que no tendrá acceso permanente en Office 365, pero que puede elevarse a un rol necesario para las operaciones cotidianas normales (como [Búsqueda de amenazas](threat-hunting-in-threat-explorer.md)) y, a continuación, a un mayor nivel de privilegios cuando se requieran operaciones menos frecuentes pero confidenciales, como la [corrección de correo electrónico malintencionado](remediate-malicious-email-delivered-office-365.md).
 
 > [!NOTE]
 > Esto le llevará a través de los pasos necesarios para configurar PIM para un analista de seguridad que requiere la capacidad de purgar correos electrónicos con el Explorador de amenazas en Microsoft Defender para Office 365, pero se pueden usar los mismos pasos para otros roles RBAC dentro del portal de seguridad y cumplimiento. Por ejemplo, este proceso podría usarse para un trabajador de la información que necesita acceso diario en eDiscovery para realizar búsquedas y casos de trabajo, pero solo en ocasiones necesita el derecho elevado para exportar datos desde el inquilino.
-
 
 ***paso 1***. En la consola de Azure PIM de la suscripción, agregue al usuario (Alex) al rol lector de seguridad de Azure y configure las opciones de seguridad relacionadas con la activación.
 
@@ -58,15 +58,15 @@ El nombre de su usuario (aquí "Alex") aparecerá en Asignaciones Aptas en la p�
 > [!NOTE]
 > Para una revisión rápida de Privileged Identity Management vea [este vídeo](https://www.youtube.com/watch?v=VQMAg0sa_lE).
 
-:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hour-max-activation.PNG" alt-text="Asegúrese de examinar la configuración del rol Lector de seguridad en Privileged Access Management. Aquí verá que la duración máxima de la activación de PIM es de 8 horas.":::
+:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="Asegúrese de examinar la configuración del rol Lector de seguridad en Privileged Access Management. Aquí verá que la duración máxima de la activación de PIM es de 8 horas.":::
 
 ***paso 2***. Cree el segundo grupo de permisos necesario (con privilegios elevados) para tareas adicionales y asigne elegibilidad.
 
-Con los [Grupos de acceso con privilegios](/azure/active-directory/privileged-identity-management/groups-features) ya se pueden crear grupos personalizados y combinar permisos o aumentar la granularidad cuando sea necesario para satisfacer las prácticas y necesidades de la organización.
+Con los [Grupos de acceso con privilegios](/azure/active-directory/privileged-identity-management/groups-features), ya se pueden crear grupos personalizados y combinar permisos o aumentar la granularidad cuando sea necesario para satisfacer las prácticas y necesidades de la organización.
 
-### <a name="create-a-role-group-requiring-the-permissions-we-need"></a>Cree un grupo de roles que requiera los permisos que necesitamos.
+### <a name="create-a-role-group-requiring-the-permissions-we-need"></a>Cree un grupo de roles que requiera los permisos que necesitamos
 
-En el Portal de seguridad, cree un grupo de roles personalizado que contenga los permisos que desee. 
+En el Portal de seguridad, cree un grupo de roles personalizado que contenga los permisos que desee.
 
 1. Vaya al portal de Microsoft 365 Defender (https://security.microsoft.com) > **Permisos y roles** > seleccione **Roles** en Correo electrónico y colaboración > **Crear**.
 2. Asigne un nombre al grupo para que refleje su propósito, como "Buscar y purgar PIM".
@@ -89,16 +89,17 @@ En el Portal de seguridad, cree un grupo de roles personalizado que contenga los
 
     `Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
 
+## <a name="test-your-configuration-of-pim-with-defender-for-office-365"></a>Probar la configuración de PIM con Defender para Office 365
 
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
-
-1. Inicie sesión con el usuario de prueba, que no tendrá acceso administrativo.
+1. Inicie sesión con el usuario de prueba (Alex), que no debería tener acceso administrativo en el [portal de Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center) en este momento.
 2. Vaya a PIM, donde el usuario puede activar su rol de lector de seguridad diario.
 3. Si intenta purgar un correo electrónico mediante el Explorador de amenazas, recibirá un error que indica que necesita permisos adicionales.
 4. Utilice PIM una segunda vez en el rol más elevado. Tras un breve retraso, ahora debería poder purgar los correos electrónicos sin problemas.
 
-La asignación permanente del rol de búsqueda y purga no se mantiene con la iniciativa de seguridad Confianza cero, pero PIM se puede usar para conceder acceso just-in-time al conjunto de herramientas necesario.
+   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="Si el usuario que agregamos (Alex) a través del rol PIM lector de seguridad intenta eliminar un correo electrónico sospechoso, recibirá un mensaje que dice &quot;Necesita el rol de Búsqueda y purga para realizar acciones en este correo electrónico. Póngase en contacto con el administrador para obtener la asignación de roles o agregue el correo electrónico a un incidente.":::
 
-:::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="Si el usuario que agregamos (Alex) a través del rol PIM lector de seguridad intenta eliminar un correo electrónico sospechoso, recibirá un mensaje que dice &quot;Necesita el rol de Búsqueda y purga para realizar acciones en este correo electrónico. Póngase en contacto con el administrador para obtener la asignación de roles o agregue el correo electrónico a un incidente.":::
+La asignación permanente de roles administrativos y permisos, como el rol de búsqueda y purga, no se mantiene con la iniciativa de seguridad Confianza cero, pero, como puede ver, PIM se puede usar para conceder acceso, solo cuando sea necesario, al conjunto de herramientas necesario.
 
-La asignación permanente del rol de Búsqueda y purga no se mantiene con la iniciativa de seguridad De confianza cero, pero PIM también se puede usar aquí para conceder acceso just-in-time.
+*Expresamos nuestros agradecimientos al ingeniero de clientes Ben Harris por el acceso a la entrada de blog y a los recursos usados para este contenido.*
+
+<!--A-->
