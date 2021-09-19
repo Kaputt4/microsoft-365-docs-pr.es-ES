@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: f8691f8e8357f7f810468007f9802c19e70dac49
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 0f4d702581192ab35d3d515fa668043e9a1c1399
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401475"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444024"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -52,34 +52,34 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     Para obtener instrucciones de configuración, consulte [Cómo configurar el etiquetado automático en aplicaciones de Office](#how-to-configure-auto-labeling-for-office-apps) en esta página.
 
 - **Etiquetas del lado de servicio cuando el contenido ya está guardado (en SharePoint o en OneDrive) o enviado por correo electrónico (procesado por Exchange Online)**: use una directiva de etiquetado automático.
+    
+    También se conoce a este método como etiquetado automático para datos en reposo (documentos en SharePoint y OneDrive) y datos en tránsito (correo electrónico enviado o recibido por Exchange). En el caso de Exchange, no incluye correos electrónicos en reposo (buzones).
+    
+    Ya que este etiquetado lo aplican los servicios en lugar de las aplicaciones, no tiene que preocuparse por qué aplicaciones tienen los usuarios y qué versión. Por lo tanto, esta funcionalidad está disponible inmediatamente en toda la organización y es adecuada para aplicar las etiquetas a cualquier escala. Las directivas de etiquetado automático no admiten el etiquetado recomendado, ya que el usuario no interactúa con el proceso de etiquetado. En su lugar, el administrador ejecuta las directivas en el modo de simulación para ayudarle a garantizar el etiquetado correcto del contenido antes de aplicar la etiqueta.
 
-  También se conoce a este método como etiquetado automático para datos en reposo (documentos en SharePoint y OneDrive) y datos en tránsito (correo electrónico enviado o recibido por Exchange). En el caso de Exchange, no incluye correos electrónicos en reposo (buzones).
+    Vea las instrucciones de configuración en [Cómo configurar directivas de etiquetado automático para SharePoint, OneDrive y Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) en esta página.
+    
+    Específico para el etiquetado automático para SharePoint y OneDrive:
+    
+    - Son compatibles los archivos de Office para Word (.docx), PowerPoint (.pptx) y Excel (.xlsx).
+        - Estos archivos se pueden etiquetar automáticamente en reposo antes o después de que se creen las políticas de etiquetado automático. Los archivos no se pueden etiquetar automáticamente si forman parte de una sesión abierta (el archivo está abierto).
+        - Actualmente, los datos adjuntos a elementos de lista no son compatibles y no se etiquetarán automáticamente.
+    - Máximo 25 000 archivos etiquetados automáticamente en su espacio empresarial por día
+    - Máximo de 100 directivas de etiquetado automático por espacio empresarial, cada una con un máximo de 100 sitios (SharePoint o OneDrive) cuando se especifican individualmente. También puede especificar todos los sitios, y esta configuración está exenta del máximo de 100 sitios.
+    - Los valores existentes para modificado, modificado por y la fecha no se cambian como resultado de las directivas de etiquetado automático, tanto en el modo de simulación como al aplicar las etiquetas.
+    - Cuando la etiqueta aplica el cifrado de, el [issuer Management y el propietario de Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la cuenta en la que se modificó por última vez el archivo.
 
-  Ya que este etiquetado lo aplican los servicios en lugar de las aplicaciones, no tiene que preocuparse por qué aplicaciones tienen los usuarios y qué versión. Por lo tanto, esta funcionalidad está disponible inmediatamente en toda la organización y es adecuada para aplicar las etiquetas a cualquier escala. Las directivas de etiquetado automático no admiten el etiquetado recomendado, ya que el usuario no interactúa con el proceso de etiquetado. En su lugar, el administrador ejecuta las directivas en el modo de simulación para ayudarle a garantizar el etiquetado correcto del contenido antes de aplicar la etiqueta.
-
-  Vea las instrucciones de configuración en [Cómo configurar directivas de etiquetado automático para SharePoint, OneDrive y Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) en esta página.
-
-  Específico para el etiquetado automático para SharePoint y OneDrive:
-
-  - Son compatibles los archivos de Office para Word, PowerPoint y Excel. El formato Open XML (como .docx y .xlsx) es compatible, pero el formato de Microsoft Office 97-2003 (como .doc y .xls) no lo es.
-    - Estos archivos se pueden etiquetar automáticamente en reposo antes o después de que se creen las políticas de etiquetado automático. Los archivos no se pueden etiquetar automáticamente si forman parte de una sesión abierta (el archivo está abierto).
-    - Actualmente, los datos adjuntos a elementos de lista no son compatibles y no se etiquetarán automáticamente.
-  - Máximo 25 000 archivos etiquetados automáticamente en su espacio empresarial por día
-  - Máximo de 100 directivas de etiquetado automático por espacio empresarial, cada una con un máximo de 100 sitios (SharePoint o OneDrive) cuando se especifican individualmente. También puede especificar todos los sitios, y esta configuración está exenta del máximo de 100 sitios.
-  - Los valores existentes para modificado, modificado por y la fecha no se cambian como resultado de las directivas de etiquetado automático, tanto en el modo de simulación como al aplicar las etiquetas.
-  - Cuando la etiqueta aplica el cifrado de, el [issuer Management y el propietario de Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la cuenta en la que se modificó por última vez el archivo.
-
-  Específico para el etiquetado automático para Exchange:
-
-  - A diferencia del etiquetado manual o el etiquetado automático con las aplicaciones de Office, tanto los datos adjuntos de PDF como los datos adjuntos de Office (archivos de Word, Excel y PowerPoint) también se analizan en función de las condiciones que especifique en la directiva de etiquetado automático. Cuando haya una coincidencia, el correo electrónico se etiquetará, pero no los datos adjuntos.
-    - En el caso de los archivos PDF, si la etiqueta aplica el cifrado, estos archivos se cifran cuando la cuenta empresarial [se habilita para los datos adjuntos de PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
-    - Para estos archivos de Office, el formato Open XML es compatible (como .docx y .xlsx), pero el formato de Microsoft Office 97-2003 (como .doc y .xls) no lo es. Si la etiqueta aplica el cifrado, estos archivos se cifrarán.
-  - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
-  - El correo electrónico con cifrado IRM sin etiqueta se reemplazará por una etiqueta con una configuración de cifrado cuando haya una coincidencia al usar etiquetado automático.
-  - El correo electrónico recibido se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático:
+    Específico para el etiquetado automático para Exchange:
+    
+    - A diferencia del etiquetado manual o el etiquetado automático con las aplicaciones de Office, tanto los datos adjuntos de PDF como los datos adjuntos de Office también se analizan en función de las condiciones que especifique en la directiva de etiquetado automático. Cuando haya una coincidencia, el correo electrónico se etiquetará, pero no los datos adjuntos.
+        - En el caso de los archivos PDF, si la etiqueta aplica cifrado, estos archivos se cifran mediante el [Cifrado de mensajes de Office 365 (OME)](ome.md) cuando el espacio empresarial está [habilitado para los datos adjuntos de PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - Para estos archivos de Office, son compatibles Word, PowerPoint y Excel. Si la etiqueta aplica cifrado, se cifran mediante el [Cifrado de mensajes de Office 365 (OME)](ome.md).
+    - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
+    - El correo electrónico con cifrado IRM sin etiqueta se reemplazará por una etiqueta con una configuración de cifrado cuando haya una coincidencia al usar etiquetado automático.
+    - El correo electrónico recibido se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático:
     - Si la etiqueta está configurada para el [cifrado](encryption-sensitivity-labels.md), este cifrado no se aplica.
     - Si la etiqueta está configurada para aplicar [marcas dinámicas](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), tenga en cuenta que esto puede afectar a los nombres de las personas externas a su organización.
-  - Cuando la etiqueta aplica cifrado, el [emisor de la administración de derechos y el propietario la administración de derechos](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la persona que envía el correo electrónico. Actualmente, no existe una forma de establecer un propietario de Rights Manager para todos los mensajes de correo electrónico entrantes que se cifran automáticamente.
+    - Cuando la etiqueta aplica cifrado, el [emisor de la administración de derechos y el propietario la administración de derechos](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la persona que envía el correo electrónico. Actualmente, no existe una forma de establecer un propietario de Rights Manager para todos los mensajes de correo electrónico entrantes que se cifran automáticamente.
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Comparar el etiquetado automático de las aplicaciones de Office con las directivas de etiquetado automático
 
