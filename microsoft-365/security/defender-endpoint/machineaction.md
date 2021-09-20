@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5ac9de03cec817f469fe096689e4badf615bb4c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 33df420b8b480b6957e2ec71b3bb5494f61fce63
+ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166990"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59453621"
 ---
 # <a name="machineaction-resource-type"></a>Tipo de recurso MachineAction
 
@@ -68,14 +68,14 @@ ms.locfileid: "59166990"
 |scope|cadena|Ámbito de la acción. "Completo" o "Selectivo" para aislamiento, "Rápido" o "Completo" para el examen antivirus.|
 |solicitante|Cadena|Identidad de la persona que ejecutó la acción.|
 |externalID|Cadena|Id que el cliente puede enviar en la solicitud de correlación personalizada.|
-|requestSource|string|Nombre del usuario o aplicación que envió la acción.|
+|requestSource|cadena|Nombre del usuario o aplicación que envió la acción.|
 |Comandos |matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|
 |cancellationRequestor|Cadena|Identidad de la persona que canceló la acción.|
 |requestorComment|Cadena|Comentario que se escribió al emitir la acción.|
 |cancellationComment|Cadena|Comentario que se escribió al cancelar la acción.|
 |status|Enum|Estado actual del comando. Los valores posibles son: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" y "Cancelled".|
 |machineId|Cadena|Id. de [la máquina](machine.md) en la que se ejecutó la acción.|
-|machineId|Cadena|Nombre de la [máquina](machine.md) en la que se ejecutó la acción.|
+|computerDnsName|Cadena|Nombre de la [máquina](machine.md) en la que se ejecutó la acción.|
 |creationDateTimeUtc|DateTimeOffset|Fecha y hora en que se creó la acción.|
 |cancellationDateTimeUtc|DateTimeOffset|Fecha y hora en que se canceló la acción.|
 |lastUpdateDateTimeUtc|DateTimeOffset|La última fecha y hora en que se actualizó el estado de la acción.|

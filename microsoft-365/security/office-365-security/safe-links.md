@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre Caja fuerte protección de vínculos en Defender for Office 365 para proteger una organización contra la suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte y vea los gráficos de los Caja fuerte links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 41520f2b731e5d76526393dafda6ce9be0fb290f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b1faafe3b15ba0bb846fc10a87312c3174efac6
+ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211597"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59453603"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte Vínculos en Microsoft Defender para Office 365
 
@@ -129,7 +129,7 @@ La configuración de las Caja fuerte de vínculos que se aplican a los mensajes 
 
   Para obtener más información acerca de los valores recomendados para la configuración de directivas estándar y estricta para las directivas Caja fuerte vínculos, vea Caja fuerte configuración de directiva [vínculos](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
- - **No reescriba direcciones URL,** realice comprobaciones solo a través de la API SafeLinks: si esta configuración está habilitada, no se realiza ningún ajuste de dirección URL. Caja fuerte Los vínculos se llaman exclusivamente a través de API en el momento en que la dirección URL hace clic Outlook clientes que la admiten. El valor recomendado está deshabilitado.
+- **No reescriba direcciones URL,** realice comprobaciones solo a través de la API SafeLinks: si esta configuración está habilitada, no se realiza ningún ajuste de dirección URL. Caja fuerte Los vínculos se llaman exclusivamente a través de API en el momento en que la dirección URL hace clic Outlook clientes que la admiten. El valor recomendado está deshabilitado.
   
 - **Filtros de destinatarios:** debe especificar las condiciones de destinatario y las excepciones que determinan a quién se aplica la directiva. Puede usar estas propiedades para condiciones y excepciones:
   - **El destinatario es**
@@ -164,13 +164,16 @@ En un nivel alto, aquí se muestra cómo funciona la protección Caja fuerte ví
 
 Puede habilitar o deshabilitar la protección Caja fuerte vínculos para Microsoft Teams en Caja fuerte de vínculos. En concreto, se usa la opción Seleccionar la acción para direcciones URL desconocidas o potencialmente malintencionadas **dentro Microsoft Teams** configuración. El valor recomendado es **On**.
 
+> [!NOTE]
+> Al activar o desactivar la protección de vínculos Caja fuerte para Teams, el cambio puede tardar hasta 24 horas en tener efecto.
+
 La siguiente configuración en Caja fuerte de vínculos que se aplican a los vínculos de los mensajes de correo electrónico también se aplican a los vínculos de Teams:
 
 - **Aplicar análisis de url en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos**
 - **No realizar un seguimiento de los clics del usuario**
 - **No permitir que los usuarios hagan clic en la dirección URL original**
 
-Esta configuración se explica anteriormente en la configuración [Caja fuerte vínculos para mensajes de correo electrónico](#safe-links-settings-for-email-messages).
+Esta configuración se explica anteriormente en Caja fuerte [de vínculos para mensajes de correo electrónico.](#safe-links-settings-for-email-messages)
 
 Después de activar la protección de vínculos de Caja fuerte para Microsoft Teams, las direcciones URL de Teams se comprueban en una lista de vínculos malintencionados conocidos cuando el usuario protegido hace clic en el vínculo (protección con tiempo de clic). Las direcciones URL no se reescritan. Si se encuentra que un vínculo es malintencionado, los usuarios tendrán las siguientes experiencias:
 
@@ -281,7 +284,7 @@ En la tabla siguiente se describen ejemplos de los valores que puede especificar
 
 |Valor|Resultado|
 |---|---|
-|`contoso.com` <p> o <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de acceso. Por ejemplo, `https://www.contoso.com` , `https://sub.contoso.com` y se `https://contoso.com/abc` bloquean.|
+|`contoso.com` <p> o bien <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de acceso. Por ejemplo, `https://www.contoso.com` , `https://sub.contoso.com` y se `https://contoso.com/abc` bloquean.|
 |`https://contoso.com/a`|Bloques `https://contoso.com/a` pero no subpaths adicionales como `https://contoso.com/a/b` .|
 |`https://contoso.com/a*`|Bloques `https://contoso.com/a` y subpaths adicionales como `https://contoso.com/a/b` .|
 |`https://toys.contoso.com*`|Bloquea un subdominio ( en este ejemplo), pero permite hacer clic en otras direcciones URL de `toys` dominio (como o `https://contoso.com` `https://home.contoso.com` ).|

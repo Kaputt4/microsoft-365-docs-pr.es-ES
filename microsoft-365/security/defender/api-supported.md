@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: acd8ec28fb1d78e3724cb0ca0ebee48133e7310f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77c20811e6aeba266908b4d83c4f81da8b5716d4
+ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189327"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59453585"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>API de Microsoft 365 Defender (versión preliminar) admitidas 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -43,7 +43,7 @@ Artículo | Descripción
 -|-
 [API de Búsqueda avanzada de amenazas](api-advanced-hunting.md) | Ejecute consultas de búsqueda avanzada.
 [API de incidentes](api-incident.md) | Enumerar y actualizar incidentes, junto con otras tareas prácticas.
-[API de streaming](streaming-api.md) (versión preliminar) | Envíe alertas y eventos en tiempo real a medida que se produzcan en un único flujo de datos.
+[API de streaming](streaming-api.md) | Envíe alertas y eventos en tiempo real a medida que se produzcan en un único flujo de datos.
 
 ### <a name="endpoint-uris"></a>URI de extremo
 
