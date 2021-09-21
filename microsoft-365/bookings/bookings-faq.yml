@@ -9,12 +9,12 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Preguntas frecuentes de Microsoft Bookings.
-  ms.openlocfilehash: ae2f6afcd350edba17d73801aec838f3980c46b4
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 31ec8f86a73eb61eb6fc1adcd3ad765a8d79d38c
+  ms.sourcegitcommit: 5eecb0ccc70bf75779411d80147ed5588132b103
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59212870"
+  ms.lasthandoff: 09/21/2021
+  ms.locfileid: "59461601"
 title: Preguntas más frecuentes de Microsoft Bookings
 summary: ''
 sections:
@@ -31,7 +31,7 @@ sections:
   - question: >
       Quién Tiene acceso a Microsoft Bookings?
     answer: >
-      Las reservas están disponibles y activas de forma predeterminada para clientes de Microsoft 365 Empresa Premium, Microsoft 365 Empresa Estándar, A3, A5, E3 y E5 en todo el mundo. Las reservas también están disponibles en Office 365 operado por 21Vianet.
+      Las reservas están disponibles y activas de forma predeterminada para clientes de Microsoft 365 Empresa Premium, Microsoft 365 Empresa Estándar, F1, F3, A3, A5, E3 y E5 en todo el mundo. Las reservas también están disponibles en Office 365 operado por 21Vianet.
   - question: >
       ¿Mis clientes verán mi calendario personal o empresarial?
     answer: >
@@ -43,7 +43,7 @@ sections:
   - question: >
       ¿Cómo acceden los usuarios finales a la aplicación Bookings?
     answer: >
-      Cualquier persona con licencia para Microsoft 365 Empresa Premium, Microsoft 365 Empresa Estándar, A3, A5, E3, E5 o que se haya agregado como miembro del personal en los roles Administrador o Visor puede acceder a Bookings en el elegidor de la aplicación dentro de la experiencia web de Microsoft 365. También hay una aplicación complementaria disponible para iOS y Android.
+      Cualquier persona con licencia para Microsoft 365 Empresa Premium, Microsoft 365 Empresa Estándar, A3, A5, E3, E5, F1, F3 o que se haya agregado como miembro del personal en los roles Administrador o Visor puede acceder a Bookings en el elegidor de la aplicación dentro de la experiencia web de Microsoft 365. También hay una aplicación complementaria disponible para iOS y Android.
   - question: >
       ¿Puedo usar Bookings en mi propio sitio web?
     answer: >
