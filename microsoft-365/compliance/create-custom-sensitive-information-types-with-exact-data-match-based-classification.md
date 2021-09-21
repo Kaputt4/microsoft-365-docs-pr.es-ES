@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 663180b87a9886681a1643279e49641c3fbfed3c
-ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
+ms.openlocfilehash: 4a8ebc2aedc624028cf0b5144d434185c20243b9
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447389"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460469"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -108,9 +108,6 @@ El archivo de datos puede incluir un máximo de:
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Definir el esquema de la base de datos de información confidencial
 
 Si por razones técnicas o de negocios prefiere no usar PowerShell o la línea de comandos para crear el esquema y el tipo de información confidencial de EDM patter (paquete de reglas), puede usar el [Asistente de tipo de información confidencial y esquema de coincidencia de datos](sit-edm-wizard.md) para crearlos. Cuando termine de crear el esquema y el patrón de tipo de información confidencial de EDM, vuelva a completar todos los pasos necesarios para que su tipo de información confidencial basado en EDM esté disponible para su uso.
-
-> [!NOTE]
-> El esquema de coincidencia exacta de datos y el Asistente para tipos de información confidencial solo están disponibles para las nubes en todo el mundo y GCC.
 
 1. Defina el esquema de la base de datos de información confidencial en formato XML (similar al siguiente ejemplo). Dé un nombre a este archivo de esquema **edm.xml** y configúrelo para que por cada columna de la base de datos haya una línea que use la sintaxis:
 

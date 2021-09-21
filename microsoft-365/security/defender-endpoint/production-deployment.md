@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d7bb79ca6e04d283ee9ec9d7e01113364ebd6588
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ab7007143fd472757f8f6489cb14babc8cda1129
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400611"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460201"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurar Microsoft Defender para la implementación de puntos de conexión
 
@@ -177,27 +177,6 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 |---|---|
 |![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
-
-### <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Intervalos IP de back-end de Servicio de extremo de Microsoft Defender para Endpoint
-
-Si los dispositivos de red no admiten reglas basadas en DNS, usa intervalos IP en su lugar.
-
-Defender for Endpoint se basa en la nube de Azure, se implementa en las siguientes regiones:
-
-- AzureCloud.eastus
-- AzureCloud.eastus2
-- AzureCloud.westcentralus
-- AzureCloud.northeurope
-- AzureCloud.westeurope
-- AzureCloud.uksouth
-- AzureCloud.ukwest
-
-Puede encontrar los intervalos IP de Azure en Intervalos IP de [Azure y etiquetas](https://www.microsoft.com/download/details.aspx?id=56519)de servicio - Public Cloud .
-
-> [!NOTE]
-> Como solución basada en la nube, los intervalos de direcciones IP pueden cambiar. Se recomienda pasar a reglas basadas en DNS.
->
-> Si es un cliente del Gobierno de Estados Unidos, consulte la sección correspondiente en la página [Defender for Endpoint for US Government.](gov.md#service-backend-ip-ranges)
 
 ## <a name="next-step"></a>Paso siguiente
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9e06ad5e7ea1db33b50ea3cc4d3fdb2d657f3503
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dc4986f5ef71f7080c3296448c1b85a717336940
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212210"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460297"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Implementar Microsoft Defender para endpoint en Linux con Ansible
 
@@ -168,10 +168,10 @@ Crea una subtarea o archivos de roles que contribuyan a un libro de juegos o una
 
   - name: Add  Microsoft yum repository for MDATP
     yum_repository:
-      name: packages-microsoft-com-prod-[channel]
+      name: packages-microsoft-[channel]
       description: Microsoft Defender for Endpoint
       file: microsoft-[channel]
-      baseurl: https://packages.microsoft.com/config/[distro]/[version]/[channel]/
+      baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/ 
       gpgcheck: yes
       enabled: Yes
     when: ansible_os_family == "RedHat"
@@ -283,5 +283,5 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 - [Administrar paquetes aptos](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Investigar problemas de estado del agente](health-status.md)

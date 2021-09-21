@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 4ddc063c3388770304667c532585f5242ba93011
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a8fcd811d8211e253b069346de9c00bb738bf981
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216860"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460090"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -41,14 +41,41 @@ Antes de empezar con la administración de riesgos de insider, debes confirmar l
 - Microsoft 365 A5 suscripción (versión de pago o de prueba)
 - Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
 - Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
-- Microsoft 365 Suscripción de G5 (versión de pago o de prueba)
-- Microsoft 365 G3 suscripción + el Microsoft 365 de cumplimiento de G5
-- Microsoft 365 G3 suscripción + el complemento Microsoft 365 G5 Insider Risk Management
-- Office 365 E3 suscripción + Enterprise Mobility and Security E3 + Cumplimiento de Microsoft 365 E5 add-on
+- Suscripción a Microsoft 365 G5 (versión de pago o de prueba)
+- Suscripción a Microsoft 365 G3 + complemento de Cumplimiento de Microsoft 365 G5
+- Subscripción a Microsoft 365 G3 + complemento de Administración de riesgos internos de Microsoft 365 G5
+- Suscripción a Office 365 E3 + Enterprise Mobility + Security E3 + el complemento Cumplimiento de Microsoft 365 E5
 
 Los usuarios incluidos en las directivas de administración de riesgos de insider deben tener asignada una de las licencias anteriores.
 
 Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de insider, puede agregar [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) a su suscripción existente o registrarse para una prueba de Microsoft 365 Enterprise E5. [](https://www.microsoft.com/microsoft-365/enterprise)
+
+## <a name="recommended-actions-preview"></a>Acciones recomendadas (versión preliminar)
+
+Las acciones recomendadas pueden ayudar a su organización a empezar rápidamente y a sacar el máximo partido de las capacidades de administración de riesgos de insider. Incluidas en **la** página Información general, las acciones recomendadas ayudan a guiarle a través de los pasos para configurar e implementar directivas y para realizar acciones de investigación para acciones de usuario que generen alertas a partir de coincidencias de directivas.
+
+![Acciones recomendadas de administración de riesgos de Insider.](../media/insider-risk-recommended-actions.png)
+
+Las siguientes recomendaciones están disponibles para ayudarle a empezar a usar o maximizar la configuración de administración de riesgos de insider:
+
+- **Activar la auditoría:** cuando está activada, la actividad de usuario y administrador de la organización se registra en el Microsoft 365 auditoría. Las directivas y análisis de riesgos de Insider usan este registro para detectar actividades de riesgo.
+- **Obtener permisos para la administración de riesgos** de usuario: el nivel de acceso que tiene a las características de administración de riesgos de insider depende del grupo de roles que se haya asignado. Para obtener acceso y configurar las acciones recomendadas, los usuarios deben estar asignados a los grupos de roles *Insider Risk Management* o *Insider Risk Management Admins.*
+- **Elegir indicadores de directiva:** los indicadores son esencialmente las actividades de usuario que desea detectar e investigar. Puede elegir indicadores para realizar un seguimiento de la actividad en varias Microsoft 365 y servicios.
+- **Examinar los posibles riesgos de insider:** ejecute un examen de análisis para detectar posibles riesgos de insider que se produzcan en su organización. Después de evaluar los resultados, revise las directivas recomendadas para configurar.
+- **Asignar permisos a** otros usuarios: si hay miembros del equipo adicionales que serán responsables de administrar las características de riesgo de insider, deberá asignarlos a los grupos de roles adecuados.
+- **Cree la primera** directiva: para recibir alertas sobre actividades potencialmente arriesgadas, debe configurar directivas basadas en plantillas predefinidas que definan las actividades de usuario que desea detectar e investigar.
+- **Revisar el** usuario cuya actividad  se está puntuando: el panel Usuarios permite ver los usuarios cuya actividad está asignada actualmente a puntuaciones de riesgo, independientemente de si esa actividad ha cumplido el umbral para generar una alerta.
+- **Revisar alertas:** después de que se produzca un evento desencadenante para un usuario, las directivas comienzan a asignar puntuaciones de riesgo a la actividad detectada. Si una puntuación de riesgo cumple los umbrales de una directiva, verá una alerta que contiene un desglose detallado de toda la actividad que se va a puntuar para ese usuario.
+- **Investigar un caso:** los casos se crean manualmente a partir de alertas cuando se necesita más investigación para identificar posibles riesgos de información interna. Cada caso está en el ámbito de un único usuario y se pueden agregar varias alertas para el usuario a un caso existente o a un nuevo caso.
+
+Cada acción recomendada incluida en esta experiencia tiene cuatro atributos:
+
+- **Action:** el nombre y la descripción de la acción recomendada.
+- **Estado:** el estado de la acción recomendada. Los valores *no se inician*, *en curso*, *guardados para más* adelante o *completados*.
+- **Obligatorio u opcional:** si la acción recomendada es necesaria u opcional para que las características de administración de riesgos insider funcionen según lo esperado.
+- **Tiempo estimado para completar:** tiempo estimado para completar la acción recomendada en minutos.
+
+Seleccione una recomendación de la lista para empezar a configurar la administración de riesgos de insider. Cada acción recomendada le guía a través de las actividades necesarias para la recomendación, incluidos los requisitos, qué esperar y el impacto de configurar la característica en su organización.   Cada acción recomendada se marca automáticamente como completa cuando se configura o deberá seleccionar manualmente la acción como completa cuando esté configurada.
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>Paso 1: Habilitar permisos para la administración de riesgos de insider
 
@@ -64,11 +91,11 @@ Dependiendo de la estructura de su equipo de administración de cumplimiento, ti
 
 | **Grupo de funciones** | **Permisos de funciones** |
 | :------------- | :------------------- |
-| **Administración de riesgos de Insider** | Use este grupo de roles para administrar la administración de riesgos internos para su organización en un solo grupo. Al agregar todas las cuentas de usuario para administradores, analistas, investigadores y auditores designados, puede configurar los permisos de administración de riesgos de insider en un solo grupo. Este grupo de roles contiene todos los roles de permisos de administración de riesgos insider y los permisos asociados. Esta configuración es la forma más sencilla de empezar rápidamente con la administración de riesgos de insider y es una buena opción para organizaciones que no necesitan permisos independientes definidos para grupos independientes de usuarios. Al usar esta configuración, debe asegurarse de tener siempre al menos un usuario asignado a este grupo de roles para asegurarse de que las directivas funcionan según lo esperado y para que el usuario pueda crear y editar directivas, configurar la configuración de soluciones y revisar las **_advertencias_** de estado de la directiva .|
+| **Administración de riesgos internos** | Use este grupo de roles para administrar la administración de riesgos internos para su organización en un solo grupo. Al agregar todas las cuentas de usuario para administradores, analistas, investigadores y auditores designados, puede configurar los permisos de administración de riesgos de insider en un solo grupo. Este grupo de roles contiene todos los roles de permisos de administración de riesgos insider y los permisos asociados. Esta configuración es la forma más sencilla de empezar rápidamente con la administración de riesgos de insider y es una buena opción para organizaciones que no necesitan permisos independientes definidos para grupos independientes de usuarios. Al usar esta configuración, debe asegurarse de tener siempre al menos un usuario asignado a este grupo de roles para asegurarse de que las directivas funcionan según lo esperado y para que el usuario pueda crear y editar directivas, configurar la configuración de soluciones y revisar las **_advertencias_** de estado de la directiva .|
 | **Administrador de administración de riesgos de Insider** | Use este grupo de roles para configurar inicialmente la administración de riesgos de insider y posteriormente para separar a los administradores de riesgos de insider en un grupo definido. Los usuarios de este grupo de roles pueden habilitar y ver información de análisis y crear, leer, actualizar y eliminar directivas de administración de riesgos internas, configuración global y asignaciones de grupos de roles. Al usar esta configuración, debe asegurarse de tener siempre al menos un usuario asignado a este grupo de roles para asegurarse de que las directivas funcionan según lo esperado y para que el usuario pueda crear y editar directivas, configurar la configuración de soluciones y revisar las **_advertencias_** de estado de la directiva . |
 | **Analistas de administración de riesgos internos** | Use este grupo para asignar permisos a los usuarios que actuarán como analistas de casos de administración de riesgos internos. Los usuarios de este grupo de roles pueden acceder y ver todas las alertas de administración de riesgos, casos, información de análisis y plantillas de avisos. No pueden acceder al explorador de contenido de riesgo interno. |
 | **Investigadores de administración de riesgos internos** | Use este grupo para asignar permisos a usuarios que actúen como investigadores de datos de riesgos internos. Los usuarios de este grupo de roles pueden tener acceso a todas las alertas de administración de riesgos, casos, plantillas de avisos y el explorador de contenido para todos los casos. |
-| **Auditores de administración de riesgos de Insider** | Use este grupo para asignar permisos a los usuarios que auditarán las actividades de administración de riesgos internas. Los usuarios de este grupo de roles pueden tener acceso al registro de auditoría de riesgos de insider. |
+| **Auditores de administración de riesgos de Insider** | Use este grupo para asignar permisos a los usuarios que auditarán las actividades de administración de riesgos internas. Los usuarios de este grupo de roles pueden tener acceso al registro de auditoría de riesgos de insider. Los usuarios de este grupo de roles no pueden tener acceso a la característica de acciones recomendadas (versión preliminar) ni usarla.|
 
 > [!NOTE]
 > Estos grupos de roles actualmente no se admiten en Privileged Identity Management (PIM). Para obtener más información sobre PIM, consulte [Asignar roles de Azure AD en Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
@@ -91,9 +118,11 @@ Siga estos pasos para agregar usuarios a un grupo de roles de administración de
 
 7. Seleccione **Guardar** para agregar los usuarios al grupo de roles. Seleccione **Cerrar** para completar los pasos.
 
-## <a name="step-2-enable-the-microsoft-365-audit-log"></a>Paso 2: Habilitar el registro Microsoft 365 auditoría
+## <a name="step-2-enable-the-microsoft-365-audit-log-optional"></a>Paso 2: Habilitar el registro Microsoft 365 auditoría (opcional)
 
 La administración de riesgos de Insider Microsoft 365 registros de auditoría para información del usuario y actividades identificadas en las directivas y las perspectivas de análisis. Los Microsoft 365 de auditoría son un resumen de todas las actividades de la organización y las directivas de administración de riesgos internas pueden usar estas actividades para generar información sobre directivas.
+
+La auditoría está habilitada para Microsoft 365 organizaciones de forma predeterminada. Algunas organizaciones pueden haber deshabilitado la auditoría por motivos específicos. Si la auditoría está deshabilitada para la organización, puede deberse a que otro administrador la ha desactivado. Se recomienda confirmar que está bien volver a activar la auditoría al completar este paso.
 
 Para obtener instrucciones paso a paso para activar la auditoría, vea Activar o desactivar la búsqueda del [registro de auditoría.](turn-audit-log-search-on-or-off.md) Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información acerca del uso del Microsoft 365 de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
 
@@ -250,7 +279,7 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 16. Seleccione **Siguiente** para continuar.
 17. En la página **Revisión**, revise la configuración que ha elegido para la directiva y cualquier sugerencia o advertencia sobre sus selecciones. Seleccione **Editar** para cambiar cualquiera de los valores de la directiva o seleccione **Enviar** para crear y activar la directiva.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Próximos pasos
 
 Después de completar estos pasos para crear la primera directiva de administración de riesgos de insider, empezará a recibir alertas de indicadores de actividad después de unas 24 horas. Configure directivas adicionales según sea necesario con las instrucciones del paso 4 de este artículo o los pasos descritos en [Create a new insider risk policy](insider-risk-management-policies.md#create-a-new-policy).
 

@@ -17,12 +17,12 @@ ms.collection:
 description: Más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c737647202e82af0fc217c0eadb3e2573d13a9b1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 14ab9ee240c1219982663c1f3557c1cf5f244144
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219797"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460033"
 ---
 # <a name="secure-by-default-in-office-365"></a>Proteger de forma predeterminada en Office 365
 
@@ -54,6 +54,7 @@ Debido a que Microsoft quiere mantener seguros a nuestros clientes de forma pred
 - Listas de remitentes permitidos o listas de dominios permitidos (directivas contra correo no deseado)
 - Remitentes seguros de Outlook
 - Lista de direcciones IP permitidas (filtrado de conexiones)
+- Exchange de flujo de correo (también conocidas como reglas de transporte)
 
 Puede encontrar más información sobre estas invalidaciones en [Crear listas de remitentes seguros](create-safe-sender-lists-in-office-365.md).
 
@@ -73,11 +74,6 @@ También hemos determinado que el remitente permitido y las listas de dominios p
 Dicho de otro modo: como servicio de seguridad, estamos actuando en su nombre para evitar que los usuarios se vean comprometidos.
 
 ## <a name="exceptions"></a>Excepciones
-
-> [!NOTE]
-> En agosto de 2021, la protección se ampliará de forma predeterminada a las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte). Si usa reglas de flujo de correo para permitir simulaciones de suplantación de identidad (phishing) de terceros o entrega sin filtrar a buzones de operaciones de seguridad, tendrá que eliminar estas reglas y cambiar al uso de la [directiva de entrega avanzada](configure-advanced-delivery.md) _cuando la característica esté disponible para usted_.
-
-La única invalidación que permite que el mensaje de suplantación de identidad de alta confianza omita el filtrado son las reglas de flujo de correo. Para usar reglas de flujo de correo para omitir el filtrado, consulte [Usar reglas de flujo de correo para configurar el SCL en los mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 Solo debe considerar el uso de invalidaciones en los escenarios siguientes:
 

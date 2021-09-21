@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 9/20/2021
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Entienda los elementos básicos del cifrado de seguridad de datos en OneDrive para la Empresa y SharePoint Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca93d04fa21487ad054cd9cb924dff1fc15abfbd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 91bb261c25a1c4bf993deb0d12d1d1b8e9f5f874
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184182"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460485"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Cifrado de datos en OneDrive para la Empresa y SharePoint Online
 
@@ -52,7 +52,7 @@ El cifrado en reposo incluye dos componentes: cifrado de nivel de disco de BitLo
   
 BitLocker se implementa para OneDrive para la Empresa y SharePoint Online en todo el servicio. El cifrado por archivo también está en OneDrive para la Empresa y SharePoint Online en Microsoft 365 entornos multiinquilino y nuevos entornos dedicados basados en tecnología multiinquilino.
   
-Mientras que BitLocker cifra todos los datos en un disco, el cifrado por archivo va más allá al incluir una clave de cifrado única para cada archivo. Además, la actualización de cada archivo se cifra mediante su propia clave de cifrado. Antes de almacenarse, las claves del contenido cifrado se almacenan en una ubicación físicamente independiente del contenido. Cada paso de este cifrado usa el Estándar de cifrado avanzado (AES) con claves de 256 bits y cumple el Estándar federal de procesamiento de información (FIPS) 140-2. El contenido cifrado se distribuye entre varios contenedores en el centro de datos y cada contenedor tiene credenciales exclusivas. Estas credenciales se almacenan en una ubicación física independiente del contenido o de las claves de contenido.
+Mientras que BitLocker cifra todos los datos en un disco, el cifrado por archivo va más allá al incluir una clave de cifrado única para cada archivo. Además, la actualización de cada archivo se cifra mediante su propia clave de cifrado. Las claves del contenido cifrado se almacenan en una ubicación físicamente independiente del contenido. Cada paso de este cifrado usa el Estándar de cifrado avanzado (AES) con claves de 256 bits y cumple el Estándar federal de procesamiento de información (FIPS) 140-2. El contenido cifrado se distribuye entre varios contenedores en el centro de datos y cada contenedor tiene credenciales exclusivas. Estas credenciales se almacenan en una ubicación física independiente del contenido o de las claves de contenido.
   
 Para obtener información adicional sobre el cumplimiento de FIPS 140-2, vea [FIPS 140-2 Compliance](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).
   

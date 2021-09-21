@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9a77662d1473a56031a30e44a1d39df8e3964541
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6d2e0fc1ffeccfd189b95fbd5908a959e4a823a8
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218387"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460173"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -46,7 +46,7 @@ Hay algunas aplicaciones que dejan de funcionar cuando se detecta una VPN activa
 
 De forma predeterminada, Defender para endpoint en iOS incluye y habilita la característica de protección web. [La protección web](web-protection-overview.md) ayuda a proteger los dispositivos contra amenazas web y a proteger a los usuarios de ataques de phishing. Defender para endpoint en iOS usa una VPN para proporcionar esta protección. Tenga en cuenta que se trata de una VPN local y, a diferencia de la VPN tradicional, el tráfico de red no se envía fuera del dispositivo.
 
-Aunque está habilitado de forma predeterminada, puede haber algunos casos que requieran deshabilitar VPN. Por ejemplo, quieres ejecutar algunas aplicaciones que no funcionan cuando se configura una VPN. En tales casos, puedes optar por deshabilitar VPN desde la aplicación en el dispositivo siguiendo los pasos siguientes:
+Aunque está habilitado de forma predeterminada, puede haber algunos casos que requieran deshabilitar VPN. Por ejemplo, quieres ejecutar algunas aplicaciones que no funcionan cuando se configura una VPN. En tales casos, puedes optar por deshabilitar la VPN directamente desde la aplicación Defender for Endpoint o mediante los siguientes pasos:
 
 1. En el dispositivo iOS, abre la **aplicación Configuración,** haz clic o pulsa **General** y, a continuación, **VPN.**
 1. Haga clic o pulse en el botón "i" de Microsoft Defender para endpoint.
@@ -56,7 +56,7 @@ Aunque está habilitado de forma predeterminada, puede haber algunos casos que r
     > ![Los config de VPN se conectan a petición.](images/ios-vpn-config.png)
 
 > [!NOTE]
-> La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar Protección web, abra la aplicación Microsoft Defender para endpoint en el dispositivo y haga clic o pulse **Iniciar VPN**.
+> La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar Web Protection, abra la aplicación Microsoft Defender para Endpoint en el dispositivo y Habilite La protección web.
 
 ## <a name="co-existence-with-multiple-vpn-profiles"></a>Coexistencia con varios perfiles vpn
 
@@ -82,7 +82,7 @@ Además, es fundamental que Microsoft Defender para Endpoint esté al día con n
 
 ## <a name="report-unsafe-site"></a>Informe de sitio no seguro
 
-Los sitios web de suplantación de identidad suplantan sitios web de confianza con el fin de obtener su información personal o financiera. Visite la [página Proporcionar comentarios sobre la protección de](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) red para informar de un sitio web que podría ser un sitio de suplantación de identidad.
+Los sitios web de suplantación de identidad suplantan sitios web de confianza con el fin de obtener su información personal o financiera. Visite la [página Proporcionar comentarios sobre la protección de](https://www.microsoft.com/wdsi/support/report-unsafe-site) red para informar de un sitio web que podría ser un sitio de suplantación de identidad.
 
 ## <a name="malicious-site-detected"></a>Sitio malintencionado detectado
 
@@ -103,4 +103,8 @@ Después de la incorporación, el dispositivo tarda unas horas en aparecer en el
 ## <a name="data-and-privacy"></a>Datos y privacidad
 
 Para obtener más información acerca de los datos recopilados y la privacidad, consulte [Privacy Information - Microsoft Defender for Endpoint on iOS](ios-privacy.md).
+
+## <a name="issues-during-app-updates-from-the-app-store"></a>Problemas durante las actualizaciones de aplicaciones de la tienda de aplicaciones
+
+Si observas problemas cuando la aplicación se actualiza a través de la tienda de aplicaciones (ya sea actualizaciones automáticas o actualizaciones manuales), es posible que deba reiniciar el dispositivo. Si eso no resuelve el problema, puedes deshabilitar la VPN de Defender y realizar la actualización de la aplicación. También puedes proporcionar comentarios desde la aplicación para informar de este problema.
 

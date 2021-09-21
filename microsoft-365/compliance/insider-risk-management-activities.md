@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bbb0cfe262687a22277dda99f47690a4932d8abc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f49085c2df8ee7922b2a461bb052bb7bdc6778a9
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191347"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460415"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigar actividades de administración de riesgos de insider
 
@@ -25,7 +25,7 @@ Investigar actividades de usuario arriesgadas es un primer paso importante para 
 
 ## <a name="user-activity-reports-preview"></a>Informes de actividad de usuario (versión preliminar)
 
-Los informes de actividad de usuario permiten examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos de insider. En la mayoría de los escenarios de administración de riesgos internas, los usuarios se definen explícitamente en las directivas y pueden tener alertas de directiva (según los eventos desencadenantes) y puntuaciones de riesgo asociadas con las actividades. Pero en algunos escenarios, es posible que desee examinar las actividades de los usuarios que no están definidas explícitamente en una directiva. Pueden ser usuarios que haya recibido una sugerencia sobre el usuario y las actividades potencialmente arriesgadas, o usuarios que normalmente no necesitan asignarse a una directiva de administración de riesgos de insider.
+Los informes de actividad de usuario permiten examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos de insider. En la mayoría de los escenarios de administración de riesgos internas, los usuarios se definen explícitamente en las directivas y pueden tener alertas de directiva (según los eventos desencadenantes) y puntuaciones de riesgo asociadas con las actividades. Pero en algunos escenarios, es posible que desee examinar las actividades de los usuarios que no están definidas explícitamente en una directiva. Estas actividades pueden ser para usuarios que han recibido una sugerencia sobre el usuario y actividades potencialmente arriesgadas, o usuarios que normalmente no necesitan asignarse a una directiva de administración de riesgos de información interna.
 
 Después de configurar los indicadores en  la página de administración de riesgos Configuración información interna, se detecta actividad de usuario para la actividad de riesgo asociada con los indicadores seleccionados. No es necesario configurar una directiva para que los informes de actividad de los usuarios detecten e informen actividades de riesgo por parte de los usuarios de la organización. Las actividades incluidas en los informes de actividad de usuario no requieren la activación de eventos para que se muestren las actividades. Esta configuración significa que toda la actividad detectada para el usuario está disponible para su revisión, independientemente de si tiene un evento desencadenante o si crea una alerta. Los informes se crean por usuario y pueden incluir todas las actividades durante un período personalizado de 90 días. No se admiten varios informes para el mismo usuario.
 
@@ -90,7 +90,7 @@ Según el número y el tipo de directivas activas de administración de riesgos 
 
 - **Estado:** seleccione uno o más valores de estado para filtrar la lista de alertas. Las opciones son *Confirmada*, *Descartada*, *Falta por revisar*, y *Resuelta*.
 - **Gravedad:** seleccione uno o más niveles de gravedad de riesgo de alerta para filtrar la lista de alertas. Las opciones son *Alta*, *Media*, y *Baja*.
-- **Hora detectada:** seleccione las fechas de inicio y finalización para cuando se creó la alerta.
+- **Hora detectada:** seleccione las fechas de inicio y finalización para cuando se creó la alerta. Este filtro busca alertas entre las 00:00 UTC de la fecha de inicio y las 00:00 UTC de la fecha de finalización. Para filtrar alertas para un día específico, escriba la fecha del día en el campo **Fecha** de inicio y la fecha del día siguiente en el **campo Fecha de** finalización.
 - **Directiva:** seleccione una o varias directivas para filtrar las alertas generadas por las directivas seleccionadas.
 
 ## <a name="search-alerts-on-the-alert-dashboard"></a>Alertas de búsqueda en el panel de alertas
@@ -115,24 +115,39 @@ Para realizar una evaluación de una alerta de riesgo insider, siga estos pasos:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel De alertas,** seleccione la alerta que desea triage.
-3. En el **panel de detalles Alertas,** puede revisar las siguientes pestañas y realizar una evaluación de la alerta:
-    - **Resumen:** esta pestaña contiene información general sobre la alerta y le permite confirmar la alerta y crear un nuevo caso o le permite descartar la alerta. Incluye el estado actual de la alerta y el nivel de gravedad del riesgo de alerta, enumerados como *High*, *Medium* o *Low*. El nivel de gravedad puede aumentar o disminuir con el tiempo si la alerta no está triaged.
-        - **Qué sucedió (versión preliminar):** muestra las tres actividades de riesgo y las coincidencias de directiva principales durante el período de evaluación de actividad, incluido el tipo de infracción asociada a la actividad y el número de repeticiones.
+3. En la página Detalles **de** alerta, puede revisar la información sobre la alerta y puede confirmar la alerta y crear un nuevo caso, confirmar la alerta y agregarla a un caso existente, o descartar la alerta. Esta página también incluye el estado actual de la alerta y el nivel de gravedad del riesgo de alerta, enumerado como Alto, Medio o Bajo. El nivel de gravedad puede aumentar o disminuir con el tiempo si la alerta no está triaged.
+
+    Las pestañas de la **página Detalles de** alerta proporcionan más información para la alerta:
+    - **Resumen:** esta pestaña contiene información general sobre la alerta.
+        - **¿Cuál fue el evento desencadenante?**: Muestra el evento de activación más reciente que instó a la directiva a empezar a asignar puntuaciones de riesgo a la actividad del usuario.
+        - **Actividad que generó esta alerta:** muestra la actividad de mayor riesgo y la coincidencia de directiva durante el período de evaluación de actividad que llevó a la alerta que se generó.
+        - **Perspectivas de riesgos para la actividad de esta alerta:** muestra el número de información de riesgos para la alerta. Algunos ejemplos son si la alerta contiene actividades de secuencia, riesgo acumulado de actividad de exfiltración, actividad que incluye eventos con dominios no permitidos, actividad que incluye eventos con contenido prioritario o actividades que son inusuales para el usuario.
         - **Detalles del usuario:** muestra información general sobre el usuario asignado a la alerta. Si la anonimización está habilitada, los campos nombre de usuario, dirección de correo electrónico, alias y organización se anonimizan.
         - **Detalles de** la alerta: incluye el período de tiempo desde que se generó la alerta, se enumeran las directivas que generaron la alerta y se muestra el caso generado a partir de la alerta. Para las alertas nuevas, el **campo Caso** muestra Ninguno.
-        - **Contenido detectado (versión preliminar):** incluye contenido asociado a las actividades de riesgo de la alerta y resume los eventos de actividad por áreas clave. Al seleccionar un vínculo de actividad, se abre el explorador de actividades y se muestran detalles adicionales sobre la actividad.
-    - **Actividad de usuario:** esta pestaña muestra el historial de actividades del usuario asociado a la alerta. Este historial incluye otras alertas y actividades relacionadas con los indicadores de riesgo definidos en la plantilla asignada a la directiva para esta alerta. Este historial permite a los analistas de riesgos e investigadores tener en cuenta cualquier comportamiento de riesgo pasado para el empleado como parte del proceso de evaluación.
-    - **Acciones:** las siguientes acciones están disponibles para cada alerta:
-        - **Vista expandida abierta:** abre el panel **del explorador de** actividades.
-        - **Confirmar y crear caso:** use esta acción para confirmar y crear un nuevo caso para todas las alertas asociadas con un usuario. Esta acción cambia automáticamente el estado de alerta a *Confirmado*.
-        - **Descartar alerta:** use esta acción para descartar la alerta. Esta acción cambia el estado de alerta a *Resuelto*.
+        - **Contenido detectado:** incluye contenido asociado a las actividades de riesgo de la alerta y resume los eventos de actividad por áreas clave. Al seleccionar un vínculo de actividad, se abre el explorador de actividades y se muestran detalles adicionales sobre la actividad.
+    - **Explorador de actividades:** esta pestaña abre el **explorador de actividades**. Vea la siguiente sección de este artículo para obtener más información.
 
-## <a name="activity-explorer-preview"></a>Explorador de actividades (versión preliminar)
+## <a name="activity-explorer"></a>Explorador de actividad
 
 > [!NOTE]
 > El explorador de actividades está disponible en el área de administración de alertas para usuarios con eventos desencadenados después de que esta característica esté disponible en la organización.
 
-El explorador de actividades proporciona a los investigadores y analistas de riesgos una herramienta de análisis completa que proporciona información detallada sobre las alertas. Con el explorador de actividades, los revisores pueden revisar rápidamente una escala de tiempo de actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas con alertas. Para filtrar alertas en el Explorador de actividades, seleccione el control Filtro. Puede filtrar las alertas por uno o varios atributos enumerados en el panel de detalles de la alerta. El explorador de actividades también admite columnas personalizables para ayudar a los investigadores y analistas a centrar el panel en la información más importante para ellos.
+El explorador de actividades proporciona a los investigadores y analistas de riesgos una herramienta de análisis completa que proporciona información detallada sobre las alertas. Con el explorador de actividades, los revisores pueden revisar rápidamente una escala de tiempo de actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas con alertas. 
+
+Para filtrar alertas en el Explorador de actividades para obtener información de columna, seleccione el control Filtro. Puede filtrar las alertas por uno o varios atributos enumerados en el panel de detalles de la alerta. El explorador de actividades también admite columnas personalizables para ayudar a los investigadores y analistas a centrar el panel en la información más importante para ellos.
+
+Use los filtros Ámbito de actividad y Perspectiva de riesgos para mostrar y ordenar actividades e información para las siguientes áreas.
+
+- **Filtros de ámbito de** actividad: filtra todas las actividades puntuadas para el usuario.
+    - Toda la actividad puntuada para este usuario
+    - Solo actividad puntuada en esta alerta
+
+- **Filtros de información de riesgos:** filtra la actividad aplicable a todas las directivas que asignan puntuaciones de riesgo.
+    - Actividades de exfiltración acumulativas
+    - Incluye evento con contenido de prioridad
+    - Incluye evento con dominio no permitido
+    - Actividades de secuencia
+    - Actividad inusual
 
 ![Introducción al explorador de actividades de administración de riesgos de Insider.](../media/insider-risk-activity-explorer.png)
 
@@ -144,6 +159,11 @@ Para usar el **explorador de actividades,** siga estos pasos:
 4. En la página de la alerta seleccionada, seleccione la **pestaña Explorador de** actividades.
 
 Al revisar las actividades en el explorador de actividades, los investigadores y analistas pueden seleccionar una actividad específica y abrir el panel de detalles de la actividad. El panel muestra información detallada sobre la actividad que los investigadores y analistas pueden usar durante el proceso de evaluación de alertas. La información detallada puede proporcionar contexto para la alerta y ayudar a identificar el ámbito completo de la actividad de riesgo que desencadenó la alerta.
+
+Al seleccionar los eventos de una actividad de la escala de tiempo de actividad, es posible que el número de actividades que se muestran en el explorador no coincida con el número de eventos de actividad enumerados en la escala de tiempo. Ejemplos de por qué esto puede ocurrir:
+
+- **Detección acumulativa** de exfiltración: la detección acumulativa de exfiltración analiza los registros de eventos, pero aplica un modelo que incluye la desduplicación de actividades similares para calcular el riesgo de exfiltración acumulado.
+- **Correos electrónicos a destinatarios externos:** la actividad de los correos electrónicos enviados a destinatarios externos tiene asignada una puntuación de riesgo en función del número de correos electrónicos enviados, que puede no coincidir con los registros de eventos de actividad.
 
 ![Detalles del explorador de actividades de administración de riesgos de Insider.](../media/insider-risk-activity-explorer-details.png)
 
@@ -158,3 +178,32 @@ A medida que se revisa y se revisa la alerta, puede crear un nuevo caso para inv
 5. Seleccione **Crear caso** para crear un nuevo caso o **cancelar** para cerrar el cuadro de diálogo sin crear un caso.
 
 Una vez creado el caso, los investigadores y analistas pueden administrar y actuar en el caso. Para obtener más información, consulte el artículo sobre casos de administración [de riesgos de Insider.](insider-risk-management-cases.md)
+
+## <a name="get-help-managing-your-insider-risk-alert-queue"></a>Obtener ayuda para administrar la cola de alertas de riesgo de insider
+
+Revisar, investigar y actuar en alertas de riesgo de información interna son partes importantes para minimizar los riesgos de insider en la organización. Tomar medidas rápidamente para minimizar el impacto de estos riesgos puede ahorrar tiempo, dinero y ramificaciones legales o reglamentarias para su organización. En este proceso de corrección, el primer paso de revisar las alertas puede parecer la tarea más difícil para muchos analistas e investigadores. Según sus circunstancias, es posible que se esté enfrentando a algunos obstáculos menores al actuar en alertas de riesgo de información interna. Revise las siguientes recomendaciones y obtenga información sobre cómo optimizar el proceso de revisión de alertas.
+
+### <a name="too-many-alerts-to-review"></a>Demasiadas alertas para revisar
+
+Sentirse abrumado por el número de alertas generadas por las directivas de administración de riesgos de insider podría resultar frustrante. Esto se puede solucionar rápidamente con pasos sencillos, según los tipos de volumen de alerta que esté recibiendo. Es posible que reciba demasiadas alertas válidas o que tenga demasiadas alertas de bajo riesgo obsoletas. Considere la posibilidad de realizar las siguientes acciones:
+
+- Ajustar las directivas de riesgo de **insider:** seleccionar y configurar la directiva de riesgo insider correcta es el método más básico para abordar el tipo y el volumen de alertas. A partir de la plantilla [de directiva adecuada,](insider-risk-management-policies.md#policy-templates) ayuda a centrar los tipos de actividades de riesgo y alertas que verá. Otros factores que pueden afectar al volumen de alertas son el tamaño del usuario y los grupos del ámbito y el contenido y los canales que [se priorizan.](insider-risk-management-policies.md#prioritize-content-in-policies) Considere la posibilidad de ajustar las directivas para refinar estas áreas a lo que es más importante para su organización.
+- Modificar la configuración de riesgos de **insider:** las opciones de riesgo de Insider incluyen una amplia variedad de opciones de configuración que pueden afectar al volumen y a los tipos de alertas que recibirás. Estos incluyen la configuración de [indicadores de directiva,](insider-risk-management-settings.md#indicators) [umbrales de indicadores](insider-risk-management-settings.md#indicator-level-settings-preview)y [períodos de tiempo de directiva.](insider-risk-management-settings.md#policy-timeframes) Considere la posibilidad de configurar opciones de detecciones [inteligentes](insider-risk-management-settings.md#intelligent-detections) para excluir tipos de archivo específicos, definir umbrales mínimos antes de que las directivas notifican alertas de actividad y cambiar la configuración del volumen de alertas a una configuración inferior.
+- **Eliminación masiva de alertas** cuando corresponda: puede ayudar a ahorrar tiempo de triaje para que los analistas e investigadores descarten inmediatamente [varias alertas](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) a la vez. Puede seleccionar hasta 400 alertas para descartar a la vez.
+
+### <a name="not-familiar-with-the-alert-triage-process"></a>No está familiarizado con el proceso de evaluación de alertas
+
+Investigar y actuar en alertas en la administración de riesgos de insider es sencillo:
+
+1. **Revise el [panel de alertas](insider-risk-management-activities.md#alert-dashboard) para alertas con el estado Necesita revisión**. [Filtrar](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) por estado *de alerta* si es necesario para ayudar a localizar estos tipos de alertas.
+2. **Comience con las alertas con la gravedad más alta.** [Filtrar](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) por gravedad *de alerta si* es necesario para ayudar a localizar estos tipos de alertas.
+3. **Seleccione una alerta para descubrir más información y revisar los detalles de la alerta**. Si es necesario, use el [Explorador de actividades](insider-risk-management-activities.md#activity-explorer) para revisar una escala de tiempo del comportamiento de riesgo asociado e identificar todas las actividades de riesgo de la alerta.
+4. **Actuar en la alerta**. Puede confirmar y crear [un caso para](insider-risk-management-activities.md#create-a-case-for-an-alert) la alerta o descartar y resolver la alerta.
+
+### <a name="resource-constraints-in-my-organization"></a>Restricciones de recursos en mi organización
+
+Los usuarios modernos del lugar de trabajo suelen tener una amplia variedad de responsabilidades y demandas en su tiempo. Hay varias acciones que puede realizar para ayudar a solucionar las restricciones de recursos:
+
+- En primer lugar, centra los esfuerzos de analistas e **investigadores en las alertas de mayor riesgo.** Dependiendo de las directivas, es posible que esté capturando actividades y generando alertas con distintos grados de impacto potencial en sus esfuerzos de mitigación de riesgos. [Filtra las alertas](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) por gravedad y prioriza *las alertas de gravedad* alta.
+- **Asignar usuarios como analistas e investigadores**. Tener asignado el usuario adecuado a los roles adecuados es una parte importante del proceso de revisión de alertas de riesgo de insider. Asegúrese de que ha asignado los usuarios adecuados a los grupos de roles Analistas de administración de riesgos de *Insider* e Investigadores de administración de riesgos de *Insider.*  
+- **Use características de riesgo insider automatizadas para ayudar a descubrir las actividades de mayor riesgo.** La detección [](insider-risk-management-policies.md#sequence-detection-preview) de secuencias de administración de riesgos insider y las características acumulativas de detección de [exfiltración](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) pueden ayudarle a descubrir rápidamente los riesgos más difíciles de encontrar en su organización. Considera la posibilidad de ajustar los [refuerzos de la puntuación](insider-risk-management-settings.md#indicators)de riesgo, [las exclusiones](insider-risk-management-settings.md#file-type-exclusions)de tipos de [archivo,](insider-risk-management-settings.md#domains-preview)los dominios y la configuración mínima del umbral del indicador [para](insider-risk-management-settings.md#indicator-level-settings-preview) tus directivas.

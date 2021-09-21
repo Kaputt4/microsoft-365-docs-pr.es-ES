@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 33d32918316b997b2cc97d63dac8c8deff135528
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51a94e2fd87bc5356de80e26fb70297e1dd3b710
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216840"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460117"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Obtenga información sobre la administración de riesgos de insider en Microsoft 365
 
@@ -64,6 +64,10 @@ La administración de riesgos de Insider se centra en los siguientes principios:
 Los análisis de riesgos internos le permiten realizar una evaluación de los posibles riesgos internos en su organización sin necesidad de configurar ninguna directiva de riesgos internos. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar. Esta evaluación también puede ayudarle a determinar las necesidades de licencias adicionales o la optimización futura de las directivas de riesgos internas existentes.
 
 Para obtener más información sobre el análisis de riesgos de insider, consulte Configuración de administración de riesgos [de Insider: Analytics](insider-risk-management-settings.md#analytics-preview).
+
+## <a name="get-started-with-recommended-actions-preview"></a>Introducción a las acciones recomendadas (versión preliminar)
+
+Ya sea que estés configurando la administración de riesgos de insider [](insider-risk-management-configure.md#recommended-actions-preview) por primera vez o empezando a crear nuevas directivas, la nueva experiencia de acciones recomendadas puede ayudarte a sacar el máximo partido de las capacidades de administración de riesgos internas. Entre las acciones recomendadas se incluyen la configuración de permisos, la elección de indicadores de directiva, la creación de una directiva y mucho más.
 
 ## <a name="workflow"></a>Flujo de trabajo
 
@@ -110,7 +114,7 @@ Para resolver las alertas, se abre un nuevo caso, se asigna la alerta a un caso 
 
 ![Evaluación de la administración de riesgos de Insider.](../media/insider-risk-triage.png)
 
-### <a name="investigate"></a>Investigación
+### <a name="investigate"></a>Investigar
 
 Investigar rápidamente todas las actividades de un usuario seleccionado con [informes de actividad de usuario (versión preliminar).](insider-risk-management-activities.md#user-activity-reports-preview) Estos informes permiten a los investigadores de la organización examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos de información interna. Después de examinar las actividades de un usuario, los investigadores pueden descartar actividades individuales como benignas, compartir o enviar por correo electrónico un vínculo al informe con otros investigadores, o elegir asignar al usuario de forma temporal o explícita a una directiva de administración de riesgos de insider.
 
@@ -126,7 +130,7 @@ Si se selecciona un caso en el panel de casos, se abre el caso para su investiga
 
 Además, el nuevo registro de [auditoría (versión preliminar)](insider-risk-management-audit-log.md) permite mantenerse informado de las acciones realizadas en las características de administración de riesgos internas. Este recurso permite una revisión independiente de las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos insider.
 
-### <a name="action"></a>Acción
+### <a name="action"></a>Action
 
 Una vez que se investigan los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas en riesgos de la organización. Si los usuarios infringen accidentalmente o inadvertidamente las condiciones de la directiva, se puede enviar un aviso simple al usuario desde plantillas de aviso que puede personalizar para su organización. Estos avisos pueden servir como recordatorios sencillos o pueden dirigir al usuario a cursos de actualización o instrucciones para ayudar a evitar comportamientos de riesgo futuros. Para más información, consulte [plantillas de notificación de administración de riesgos internos](insider-risk-management-notices.md).
 

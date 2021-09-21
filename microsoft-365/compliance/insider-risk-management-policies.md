@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f10099fcfe2c8b4701ed5aa0981a3bb84bf5c7c3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 88582efe5e285df2b5439c6d01b63ed4c5ef7855
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188142"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460129"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -183,7 +183,7 @@ La detección de filtración acumulada está activada de forma predeterminada cu
 - Filtraciones de datos por parte de usuarios inconformes
 
 > [!NOTE]
-> La detección de filtración acumulada utiliza los indicadores de filtración activados en la configuración global para la administración de riesgos internos y los indicadores de filtración seleccionados en una directiva. Como tal, la detección de filtración acumulada solo se evalúa para los indicadores de filtración necesarios seleccionados.
+> La detección de filtración acumulada utiliza los indicadores de filtración activados en la configuración global para la administración de riesgos internos y los indicadores de filtración seleccionados en una directiva. Como tal, la detección de filtración acumulada solo se evalúa para los indicadores de filtración necesarios seleccionados. Las actividades de exfiltración acumulativas para las etiquetas [de confidencialidad](sensitivity-labels.md) configuradas en el contenido de prioridad generan mayores puntuaciones de riesgo.
 
 Cuando la detección de filtración acumulada está activada para las directivas de robo o filtración de datos, la información de las actividades de filtración acumulada se muestra en la pestaña **Actividad del usuario** dentro de un caso de administración de riesgos internos.
 

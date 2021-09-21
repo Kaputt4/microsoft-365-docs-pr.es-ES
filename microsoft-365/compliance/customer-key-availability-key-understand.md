@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Obtenga información sobre la clave de disponibilidad usada para recuperar las claves de cliente perdidas.
-ms.openlocfilehash: 76137438231e69f5d93673322ab6825146ee6e2e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9fb4602f61146a28e8e35fb6715da3ebb2aa7d5f
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216890"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460333"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Obtener más información sobre la clave de disponibilidad de Clave de cliente
 
@@ -29,7 +29,7 @@ Storage y el control de la clave de disponibilidad son deliberadamente diferente
 - La separación de controles lógicos y ubicaciones de almacenamiento seguras proporciona defensa en profundidad y protege contra la pérdida de todas las claves y los datos de un solo ataque o punto de error.
 - La clave de disponibilidad proporciona una funcionalidad de alta disponibilidad si Microsoft 365 servicios no pueden alcanzar las claves hospedadas en Azure Key Vault debido a errores transitorios. Esta regla solo se aplica al Exchange Online y Skype Empresarial de servicio. SharePoint Los archivos OneDrive para la Empresa, Teams y en línea nunca usan la clave de disponibilidad a menos que indique explícitamente a Microsoft que inicie el proceso de recuperación.
 
-Compartir la responsabilidad de proteger los datos, usando una variedad de protecciones y procesos para la administración de claves, reduce en última instancia el riesgo de que todas las claves (y, por lo tanto, los datos) se pierdan o destruyan permanentemente. Microsoft le proporciona la autoridad única sobre la deshabilitación o destrucción de la clave de disponibilidad al salir del servicio. Por diseño, nadie de Microsoft tiene acceso a la clave de disponibilidad: solo es accesible mediante Microsoft 365 código de servicio.
+Compartir la responsabilidad de proteger los datos, mediante diversas protecciones y procesos para la administración de claves, reduce en última instancia el riesgo de que todas las claves (y, por lo tanto, sus datos) se pierdan o destruyan permanentemente. Microsoft le proporciona la autoridad única sobre la deshabilitación o destrucción de la clave de disponibilidad al salir del servicio. Por diseño, nadie de Microsoft tiene acceso a la clave de disponibilidad: solo es accesible mediante Microsoft 365 código de servicio.
 
 Consulta el [Centro de confianza de Microsoft](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) para obtener más información sobre cómo protegemos las claves.
   
@@ -125,7 +125,7 @@ En caso de perder acceso a las claves de cliente, Microsoft 365 también cifra l
   
 Por motivos de disponibilidad y escala, los TIK descifrados se almacenan en caché en una memoria caché de tiempo limitado. Dos horas antes de que una memoria caché de TIK expire, Microsoft 365 intentar descifrar cada TIK. Descifrar los TIK amplía la duración de la memoria caché. Si se produce un error de descifrado de TIK durante una cantidad significativa de tiempo, Microsoft 365 genera una alerta para notificar a los ingenieros antes de la expiración de la memoria caché. Solo si el cliente llama Microsoft 365 Microsoft iniciará la operación de recuperación, lo que implica descifrar la TIK con la clave de disponibilidad almacenada en el almacén secreto de Microsoft y volver a incorporar el espacio empresarial con la TIK descifrada y un nuevo conjunto de claves de Azure Key Vault suministradas por el cliente.
   
-A partir de hoy, la clave de cliente está implicada en la cadena de cifrado y descifrado de datos de archivos de SharePoint Online almacenados en el almacén de blobs de Azure, pero no en los elementos de lista o metadatos de SharePoint Online almacenados en el SQL Database. Microsoft 365 no usa la clave de disponibilidad para los archivos Exchange Online, Skype Empresarial, SharePoint Online, OneDrive para la Empresa y Teams que no sea el caso descrito anteriormente, iniciado por el cliente. El acceso humano a los datos del cliente está protegido por la caja de seguridad del cliente.
+A partir de hoy, la clave de cliente está implicada en la cadena de cifrado y descifrado de datos de archivos de SharePoint Online almacenados en el almacén de blobs de Azure, pero no en los elementos de lista o metadatos de SharePoint Online almacenados en el SQL Database. Microsoft 365 no usa la clave de disponibilidad para los archivos Exchange Online, Skype Empresarial, SharePoint Online, OneDrive para la Empresa y Teams que no sea el caso descrito anteriormente, que es iniciado por el cliente. El acceso humano a los datos del cliente está protegido por la caja de seguridad del cliente.
 
 ## <a name="availability-key-triggers"></a>Desencadenadores de clave de disponibilidad
 
@@ -172,11 +172,11 @@ Cuando Exchange Online y Skype Empresarial acceso a la clave de disponibilidad p
 
 Los registros incluyen atributos como fecha, hora, actividad, id. de organización e id. de directiva de cifrado de datos. El registro está disponible como parte de registros de auditoría unificados y es accesible desde la pestaña Búsqueda de registros de auditoría del Centro de & cumplimiento.
 
-![Búsqueda de registros de auditoría para eventos clave de disponibilidad.](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
+![Búsqueda de registros de auditoría para eventos clave de disponibilidad](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
 Exchange Online y Skype Empresarial clave de disponibilidad usan el esquema común [](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) de actividad de administración de Office 365 con parámetros personalizados agregados: Id. de directiva, Identificador de versión de clave de ámbito e Identificador de solicitud.
 
-![Parámetros personalizados de clave de disponibilidad.](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
+![Parámetros personalizados de clave de disponibilidad](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
 ### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>SharePoint Registro de claves OneDrive para la Empresa, OneDrive para la Empresa y Teams de disponibilidad de archivos
 
@@ -192,11 +192,11 @@ Microsoft 365 la clave de disponibilidad para ajustar el nivel de claves inferio
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Cifrados usados para cifrar claves para Exchange Online y Skype Empresarial
 
-![Cifrado de cifrado para Exchange Online clave de cliente.](../media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Cifrado de cifrado para Exchange Online clave de cliente](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>Cifrados usados para cifrar claves para SharePoint Online y OneDrive para la Empresa
 
-![Cifrado de cifrado para SharePoint clave de cliente en línea.](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Cifrado de cifrado para SharePoint clave de cliente en línea](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

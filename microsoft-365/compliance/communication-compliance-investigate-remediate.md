@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 568441bb2f9172bb382629dc5e5ad4704cc1b2f6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 416cd6da85877e2e448e65f3f71b68f8554bf347
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165974"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460273"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -116,7 +116,7 @@ Después de revisar los conceptos básicos del mensaje, es el momento de abrir u
 
 Ahora que ha revisado los detalles del mensaje para la alerta, puede elegir varias acciones de corrección:
 
-- **Resolver:** al seleccionar el control **Resolver,**  se quita inmediatamente el mensaje de la cola de alertas pendientes y no se puede realizar ninguna acción adicional en el mensaje. Al seleccionar **Resolver,** básicamente ha cerrado la alerta sin clasificación adicional y no se puede volver a abrir para otras acciones. Todos los mensajes resueltos se muestran en la **pestaña Resuelto.**
+- **Resolver:** al seleccionar el control **Resolver,**  se quita inmediatamente el mensaje de la cola de alertas pendientes y no se puede realizar ninguna acción adicional en el mensaje. Al seleccionar **Resolver,** básicamente ha cerrado la alerta sin clasificación adicional. Todos los mensajes resueltos se muestran en la **pestaña Resuelto.**
 - **Informe como clasificado erróneamente (versión preliminar):** siempre puede resolver un mensaje como mal clasificado en cualquier momento durante el flujo de trabajo de revisión de mensajes. La clase errónea significa que la alerta no era procesable o que la alerta se generó incorrectamente por el proceso de alerta y los clasificadores que se pueden entrenar. La resolución del elemento como clasificado erróneamente envía contenido del mensaje, datos adjuntos y el asunto del mensaje (incluidos los metadatos) a Microsoft para ayudar a mejorar los clasificadores que se pueden entrenar. Los datos que se envían a Microsoft no contienen información que pueda identificar o usarse para identificar a los usuarios de su organización. No se pueden realizar acciones adicionales en el mensaje y todos los mensajes mal clasificados se muestran en la **pestaña** Resuelto.
 - **Power Automate (versión preliminar):** use un flujo de Power Automate para automatizar las tareas de proceso de un mensaje de alerta. De forma predeterminada,  el cumplimiento de la comunicación incluye el Administrador de notificaciones cuando un usuario tiene una plantilla de flujo de alerta de cumplimiento de comunicación que los revisores pueden usar para automatizar el proceso de notificación para los usuarios con alertas de mensajes. Para obtener más información sobre cómo crear y administrar Power Automate flujos de cumplimiento de comunicaciones, vea el artículo de referencia de la característica de cumplimiento [de](communication-compliance-feature-reference.md#power-automate-flows) comunicación.
 - **Etiqueta como**: Etiquetar el *mensaje* como *compatible,* no conforme o tan *cuestionable* como se refiere a las directivas y estándares de su organización. Agregar etiquetas y etiquetas de comentarios le ayuda a alertas de directivas de microfiltro para escalaciones o como parte de otros procesos de revisión interna. Una vez completado el etiquetado, también puede decidir resolver el mensaje para sacarlo de la cola de revisión pendiente.
@@ -130,3 +130,18 @@ Ahora que ha revisado los detalles del mensaje para la alerta, puede elegir vari
 ### <a name="step-4-determine-if-message-details-should-be-archived-outside-of-communication-compliance"></a>Paso 4: Determinar si los detalles del mensaje deben archivarse fuera del cumplimiento de la comunicación
 
 Los detalles del mensaje se pueden exportar o descargar si necesita archivar los mensajes en una solución de almacenamiento independiente. Al seleccionar el control **Descargar** los mensajes seleccionados se agregan automáticamente a un archivo .ZIP que se puede guardar en almacenamiento fuera de Microsoft 365.
+
+### <a name="unresolve-messages-preview"></a>Unresolve messages (preview)
+
+Cuando se resuelven los mensajes, se quitan de la **vista** de pestaña Pendiente y se muestran en la **vista de** pestaña Resuelto. Las acciones de investigación y corrección no están disponibles para los mensajes en la *vista* Resuelto. Sin embargo, puede haber instancias en las que necesite tomar medidas adicionales en un mensaje que se haya resuelto por error o que necesite más investigación después de la resolución inicial. Puede usar la característica de comando deshacer el movimiento de uno o más mensajes de la *vista* Resuelto a la *vista* Pendiente.
+
+Para deshacer la resolve de los mensajes, siga estos pasos:
+
+1. Inicie sesión en [el Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) con las credenciales  de un  usuario asignado al analista de cumplimiento de comunicaciones o a los grupos de roles del investigador de cumplimiento de comunicaciones de Microsoft 365 organización.
+2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones**.
+3. Seleccione la **pestaña Directivas** y, a continuación, seleccione una directiva que contenga el mensaje de alerta resuelto, haga doble clic para abrir la **página** Directiva.
+4. En la **página Directiva,** seleccione la **pestaña Resuelto.**
+5. En la **ficha Resuelto,** seleccione uno o varios mensajes para volver a *Pendiente*.
+6. En la barra de comandos, seleccione **Unresolve**.
+7. En el **panel Desasolve** del elemento, agregue los comentarios  aplicables a la acción deshacer y seleccione Guardar para volver a mover el elemento a *Pendiente*.
+8. Seleccione la **pestaña** Pendiente para comprobar que se muestran los elementos seleccionados.

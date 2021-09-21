@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0a1b91c888e1ee91d03d5a2d315e4d4fc38b2d10
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 86344a570c04ed67c8811d91ca92a59dcec6102d
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184022"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460357"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
@@ -84,14 +84,14 @@ La **pestaña Información general** del caso resume los detalles del caso para 
 - **Nombre del administrador:** el nombre del administrador del usuario.
 - **Correo electrónico del** administrador: alias de correo electrónico del administrador del usuario.
 
+![Detalles de casos de administración de riesgos de Insider.](../media/insider-risk-case-details.png)
+
 La **pestaña Información general** del caso también incluye una sección **Alertas** que incluye la siguiente información acerca de las alertas de coincidencia de directivas asociadas con el caso:
 
 - **Coincidencias de directiva:** el nombre de la directiva de administración de riesgos de insider asociada con las alertas de coincidencia para la actividad del usuario.
 - **Estado:** Estado de la alerta.
 - **Gravedad:** gravedad de la alerta.
 - **Hora detectada:** el tiempo transcurrido desde que se generó la alerta.
-
-![Detalles de casos de administración de riesgos de Insider.](../media/insider-risk-case-details.png)
 
 ### <a name="alerts"></a>Alertas
 
@@ -147,7 +147,7 @@ La pestaña de **Actividade del usuario** es una de las herramientas más eficac
 
 La **pestaña Explorador de** actividades permite a los analistas de riesgos e investigadores revisar los detalles de actividad asociados con las alertas de riesgo. Por ejemplo, como parte de las acciones de administración de casos, es posible que los investigadores y analistas deba revisar todas las actividades de riesgo asociadas con el caso para obtener más detalles. Con el **explorador de actividades,** los revisores pueden revisar rápidamente una escala de tiempo de actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas con las alertas.
 
-Para obtener más información sobre el explorador de actividades, consulte el artículo Alertas de administración de [riesgos de Insider.](insider-risk-management-activities.md#activity-explorer-preview)
+Para obtener más información sobre el explorador de actividades, consulte el artículo Alertas de administración de [riesgos de Insider.](insider-risk-management-activities.md#activity-explorer)
 
 ### <a name="content-explorer"></a>Explorador de contenido
 

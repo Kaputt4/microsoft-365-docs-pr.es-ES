@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e50e9b0dfa9119cd3c3f6fe8b45158ca9f8c5cc3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b9f2933f6e259a8e39069a0bb90eafc6c1c9a30e
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210980"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460057"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Panel de usuarios de administración de riesgos de Insider
 
@@ -68,6 +68,8 @@ Cada usuario que se muestra en el **panel Usuarios** tiene la siguiente informac
 - **Alertas activas:** número de alertas activas para todas las directivas.
 - **Infracciones confirmadas:** el número de casos resueltos como *infracción de directiva confirmada* para el usuario.
 - **Case:** el caso activo actual del usuario.
+
+Para localizar rápidamente un usuario específico, use **La búsqueda** en la parte superior derecha del panel de usuario. Al buscar usuarios, debe usar el nombre principal de usuario (UPN). Por ejemplo, al buscar un usuario llamado "Tiara Hidayah" que tenga un UPN de "thidayah" en su organización, escribiría "thidayah" o alguna parte del UPN en **Search**.
 
 ![Panel de usuarios de administración de riesgos insider.](../media/insider-risk-users-dashboard.png)
 

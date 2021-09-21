@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e0605e6be5bc3bc5e12c2a50e00f07ab68c19d8d
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: e018bcdfe164d51bd3e57648a9b9bb201f661372
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444036"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460451"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -99,7 +99,7 @@ Windows 10, versión 1709|![No.](images/svg/check-no.svg) <p> Nota: No se admite
 Windows 10, versión 1703 y versiones anteriores|![No.](images/svg/check-no.svg) <p> Nota: No se admite|![No](images/svg/check-no.svg) <p> Nota: No se admite|![No](images/svg/check-no.svg) <p> Nota: No se admite
 Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839))|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2016|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 8.1 Enterprise|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 8 Pro|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
@@ -123,7 +123,7 @@ Versión del sistema operativo|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows Server 2019|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2016|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 
 ## <a name="required-connectivity-settings"></a>Configuración de conectividad necesaria
@@ -142,20 +142,6 @@ Para obtener más información, vea [Configure device proxy and Internet connect
 > La hoja de cálculo también contiene direcciones URL comerciales, asegúrese de comprobar las pestañas "Us Gov".
 >
 > Al filtrar, busque los registros etiquetados como "US Gov" y su nube específica en la columna geography.
-
-### <a name="service-backend-ip-ranges"></a>Intervalos IP de back-end de servicio
-
-Si los dispositivos de red no admiten reglas basadas en DNS, usa intervalos IP en su lugar.
-
-Defender for Endpoint for US Government customers se basa en el entorno de Azure US Government, implementado en las siguientes regiones:
-
-- AzureCloud.usgovtexas
-- AzureCloud.usgovvirginia
-
-Puede encontrar los intervalos IP de Azure en [Intervalos IP](https://www.microsoft.com/download/details.aspx?id=57063)de Azure y etiquetas de servicio - Us Government Cloud .
-
-> [!NOTE]
-> Como solución basada en la nube, los intervalos de direcciones IP pueden cambiar. Se recomienda pasar a reglas basadas en DNS.
 
 ## <a name="api"></a>API
 

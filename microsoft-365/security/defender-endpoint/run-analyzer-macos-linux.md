@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 813dff46f3ba26c32f3b704645a9ca35ca740001
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 258adabaa29420ca0b713e290926048a2ed1752d
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353603"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460021"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Ejecutar el analizador de clientes en macOS o Linux
 
@@ -52,16 +52,26 @@ ms.locfileid: "59353603"
 
 ## <a name="running-the-analyzer-using-a-terminal-or-ssh-scenario"></a>Ejecución del analizador mediante un escenario de terminal o SSH
 
-1. Abra un terminal o SSH en la máquina correspondiente.
+Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes comandos:
 
-2. Ejecutar `wget --quiet -O XMDEClientAnalyzer.zip* <https://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd XMDEClientAnalyzer && chmod +x mde_support_tool.sh"`
+1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer *`
 
-3. Ejecute `./mde_support_tool.sh -d` para generar el archivo de archivo de resultados.
+2. `unzip -q XMDEClientAnalyzer.zip`
+
+3. `cd XMDEClientAnalyzer`
+
+4. `chmod +x mde_support_tool.sh"`
+
+3. Ejecutar como uso no raíz para instalar pip y lxml necesarios qué componentes: `./mde_support_tool.sh`
+
+4. Para recopilar el paquete de diagnóstico real y generar el archivo de archivo de resultados, vuelva a ejecutarse como raíz: `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> Para Linux, el analizador requiere 'lxml' para producir el resultado. Si no está instalado, el analizador intentará capturarlo desde el repositorio oficial para los paquetes python siguientes: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
->
-> Además, la herramienta requiere actualmente la instalación de Python versión 3 o posterior.
+> - Para Linux, el analizador requiere 'lxml' para producir el resultado. Si no está instalado, el analizador intentará capturarlo desde el repositorio oficial para los paquetes python siguientes: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> 
+> - Además, la herramienta requiere actualmente la instalación de Python versión 3 o posterior.
+> 
+> - Si el dispositivo está detrás de un proxy, simplemente puedes pasar el servidor proxy como una variable de entorno al script mde_support_tool.sh. Por ejemplo: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 Ejemplo:
 
@@ -94,7 +104,7 @@ Ayuda de sintaxis adicional:
 
   Descripción: el mismo resultado de diagnóstico que se genera al ejecutar la creación de diagnóstico de *mdatp* en [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
-  o
+  o bien
 
   [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 

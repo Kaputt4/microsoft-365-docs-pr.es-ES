@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 2d9914dec5abcf87885404adbc5092605402a045
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f08273cf759173ea4e9dda8cfe1aae25bd070007
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212607"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460436"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
-La configuración de administración de riesgos de Insider se aplica a todas las directivas de administración de riesgos de insider, independientemente de la plantilla que elija al crear una directiva. La configuración se ajusta con el control de la **Configuración de riesgos internos** que se encuentra en la parte superior de todas las pestañas de administración de riesgos internos. Estos componentes de directiva de control de configuración para las siguientes áreas:
+La configuración de administración de riesgos de Insider se aplica a todas las directivas de administración de riesgos de insider, independientemente de la plantilla que elija al crear una directiva. Configuración se configuran mediante el control de configuración de riesgos **de Insider** ubicado en la parte superior de todas las páginas de administración de riesgos insider. Estos componentes de directiva de control de configuración para las siguientes áreas:
 
 - Privacidad
 - Indicadores
@@ -195,7 +195,7 @@ A las actividades de usuario detectadas por las directivas de riesgo de insider 
 Según los tipos de señales que le interesen, puede elegir importar alertas a la administración de riesgos de información interna en función del estado de evaluación de alertas de Defender for Endpoint. Puede definir uno o varios de los siguientes estados de triaje de alertas en la configuración global que se va a importar:
 
 - Unknown
-- Nuevo
+- Nueva
 - En curso
 - Resuelto
 
@@ -227,7 +227,7 @@ Para cada una de las siguientes opciones de configuración de dominio, puede esp
 
 ## <a name="export-alerts-preview"></a>Exportar alertas (versión preliminar)
 
-La información de alertas de administración de riesgos de Insider se puede exportar a los servicios de administración de eventos y de información de seguridad (SIEM) mediante el esquema de la API de Office 365 [actividad de administración.](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema) Puede usar las API de Office 365 actividad de administración para exportar información de alerta a otras aplicaciones que su organización puede usar para administrar o agregar información de riesgo de información interna.
+La información de alertas de administración de riesgos de Insider se puede exportar a los servicios de administración de eventos y de información de seguridad (SIEM) mediante el esquema de la API de Office 365 [actividad de administración.](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema) Puede usar las API de Office 365 actividad de administración para exportar información de alerta a otras aplicaciones que su organización puede usar para administrar o agregar información de riesgo de información interna. La información de alerta se exporta y está disponible cada 60 minutos a través Office 365 API de actividad de administración.
 
 >[!IMPORTANT]
 >Para mantener la integridad referencial de los usuarios que tienen alertas de riesgo de información interna o casos en Microsoft 365 u otros sistemas, el anonimización de nombres de usuario no se conserva para las alertas exportadas. Las alertas exportadas mostrarán nombres de usuario para cada alerta.
@@ -249,7 +249,7 @@ Los siguientes campos y valores se exportan para alertas de administración de r
 | AlertType | El tipo de alerta es *Custom*.  |
 | AlertId | GUID de la alerta. Las alertas de administración de riesgos de Insider son mutables. A medida que cambia el estado de alerta, se genera un nuevo registro con el mismo AlertID. Este AlertID se puede usar para correlacionar las actualizaciones de una alerta. |
 | Categoría | La categoría de la alerta *es InsiderRiskManagement*. Esta categoría se puede usar para distinguir de estas alertas de otras alertas de seguridad & cumplimiento. |
-| Comments | Comentarios predeterminados para la alerta. Los valores *son Nueva alerta* (registrada cuando se crea una alerta) y Alerta *actualizada* (registrada cuando hay una actualización de una alerta). Use alertID para correlacionar las actualizaciones de una alerta. |
+| Comentarios | Comentarios predeterminados para la alerta. Los valores *son Nueva alerta* (registrada cuando se crea una alerta) y Alerta *actualizada* (registrada cuando hay una actualización de una alerta). Use alertID para correlacionar las actualizaciones de una alerta. |
 | Datos | Los datos de la alerta incluyen el identificador de usuario único, el nombre principal del usuario y la fecha y hora (UTC) cuando el usuario se desencadenó en una directiva. |
 | Nombre | Nombre de la directiva para la directiva de administración de riesgos insider que generó la alerta. |
 | PolicyId | GUID de la directiva de administración de riesgos insider que desencadenó la alerta. |
@@ -286,8 +286,8 @@ Para crear un nuevo grupo de usuarios de prioridad, usará la configuración de 
 Complete los pasos siguientes para crear un grupo de usuarios de prioridad:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione **Configuración de riesgos de Insider**.
-2. Seleccione la **pestaña Grupos de usuarios prioritarios (versión** preliminar).
-3. En la **pestaña Grupos de usuarios prioritarios (versión** preliminar), seleccione Crear grupo de usuarios **prioritarios** para iniciar el Asistente para la creación de grupos.
+2. Seleccione la **página Grupos de usuarios prioritarios (versión** preliminar).
+3. En la **página Grupos de usuarios prioritarios (versión** preliminar), seleccione Crear grupo de usuarios **prioritarios** para iniciar el asistente para la creación de grupos.
 4. En la **página Nombre y descripción,** complete los siguientes campos:
     - **Nombre (obligatorio):** escriba un nombre descriptivo para el grupo de usuarios de prioridad. No puede cambiar el nombre del grupo de usuarios de prioridad después de completar el asistente.
     - **Descripción (opcional):** escriba una descripción para el grupo de usuarios de prioridad.
@@ -306,7 +306,7 @@ Para actualizar un grupo de usuarios de prioridad existente, usará la configura
 Siga estos pasos para editar un grupo de usuarios prioritario:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione **Configuración de riesgos de Insider**.
-2. Seleccione la **pestaña Grupos de usuarios prioritarios (versión** preliminar).
+2. Seleccione la **página Grupos de usuarios prioritarios (versión** preliminar).
 3. Seleccione el grupo de usuarios de prioridad que desea editar y seleccione **Editar grupo**.
 4. En la **página Nombre y descripción,** actualice el campo Descripción si es necesario. No puede actualizar el nombre del grupo de usuarios de prioridad. Seleccione **Siguiente** para continuar.
 5. En la **página Elegir miembros,** agregue nuevos miembros al grupo mediante el **control Elegir miembros.** Para quitar un usuario del grupo, seleccione la "X" junto al usuario que desea quitar. Seleccione **Siguiente** para continuar.
@@ -325,7 +325,7 @@ Para eliminar un grupo de usuarios de prioridad existente, usará los controles 
 Siga estos pasos para eliminar un grupo de usuarios prioritario:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione **Configuración de riesgos de Insider**.
-2. Seleccione la **pestaña Grupos de usuarios prioritarios (versión** preliminar).
+2. Seleccione la **página Grupos de usuarios prioritarios (versión** preliminar).
 3. Seleccione el grupo de usuarios de prioridad que desea editar y seleccione **Eliminar en** el menú del panel.
 4. En el **cuadro de diálogo** Eliminar, seleccione **Sí** para eliminar el grupo de usuarios de prioridad o **seleccione Cancelar** para volver al panel.
 
@@ -353,9 +353,9 @@ Siga estos pasos para configurar activos físicos prioritarios:
     > Para que las directivas de administración de riesgos internas usen y correlacionan los datos de señal relacionados con los usuarios que salen y terminan con los datos de eventos de las plataformas de control físico y acceso, también debe configurar el conector de Microsoft 365 recursos humanos. Si habilita el conector de protección física sin habilitar el conector de recursos humanos de Microsoft 365, las directivas de administración de riesgos internas solo procesarán eventos para actividades de acceso físico para los usuarios de la organización.
 
 2. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione Configuración de riesgo **de Insider**  >  **Activos físicos prioritarios.**
-3. En  la página Activos físicos prioritarios, puede agregar manualmente los identificadores de activos físicos que desea supervisar para los eventos de activos importados por el conector de pérdida física o importar un archivo .csv de todos los identificadores de activos físicos importados por el conector de configuración de activos físicos: a) Para agregar manualmente identificadores de activos físicos, elija Agregar activos físicos prioritarios, escriba un identificador de activo físico y, a continuación, seleccione **Agregar**. Escriba otros IDs de activos físicos y, a continuación, seleccione Agregar activos físicos **prioritarios** para guardar todos los activos especificados.
+3. En  la página Activos físicos prioritarios, puede agregar manualmente los ID de activos físicos que desea supervisar para los eventos de activos importados por el conector de pérdida física o importar un archivo .csv de todos los ID de activos físicos importados por el conector de badging físico: a) Para agregar manualmente los documentos de activos físicos, elija **Agregar** activos físicos prioritarios ,  escriba un identificador de activo físico y, a continuación, **seleccione Agregar**. Escriba otros IDs de activos físicos y, a continuación, seleccione Agregar activos físicos **prioritarios** para guardar todos los activos especificados.
     b) Para agregar una lista de los IDs de activos físicos de un archivo .csv, elija **Importar activos físicos prioritarios.** En el cuadro de diálogo explorador de archivos, seleccione .csv archivo que desea importar y, a continuación, **seleccione Abrir**. Los IDs de activos físicos de .csv archivos se agregan a la lista.
-4. Vaya a la **pestaña Indicadores de directiva** en Configuración.
+4. Vaya a la **página Indicadores de directiva** en **Configuración**.
 5. En la **página Indicadores de** directiva, vaya a la sección **Indicadores** de acceso físico y active la casilla Acceso físico después de la finalización o error en el acceso al **activo confidencial.**
 6. Seleccione **Guardar** para configurar y salir.
 
@@ -392,7 +392,7 @@ Las siguientes Power Automate se proporcionan a los clientes para admitir la aut
 
 ### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>Crear un flujo Power Automate de la plantilla de administración de riesgos insider
 
-Para crear un flujo de Power Automate a partir de una plantilla de administración de riesgos insider recomendada, usará los controles de configuración de la solución de  administración de riesgos **Insider** en Centro de cumplimiento de Microsoft 365 o la opción Administrar flujos **de Power Automate** del control **Automatizar** cuando trabaje directamente en los paneles Casos o **Usuarios.**
+Para crear un flujo Power Automate a partir de una plantilla de administración de riesgos insider recomendada, usará los controles de configuración de la solución de administración de riesgos **insider** en la opción Centro de cumplimiento de Microsoft 365 o administrar flujos **de Power Automate** desde el control **Automatizar** al trabajar directamente en los **paneles Casos** **o Usuarios**.
 
 Para crear un flujo Power Automate en el área de configuración, debe ser miembro del grupo de roles *Insider Risk Management* o *Insider Risk Management Admin.* Para crear un flujo Power Automate con la opción Administrar flujos de **Power Automate,** debe ser miembro de al menos un grupo de roles de administración de riesgos interno.
 
@@ -482,7 +482,7 @@ Para obtener más información sobre cómo usar equipos y canales en Microsoft T
 Habilitar Microsoft Teams compatibilidad con casos es rápido y fácil de configurar. Para habilitar Microsoft Teams para la administración de riesgos de insider, siga estos pasos:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Insider risk management**  >  **Insider risk settings**.
-2. Seleccione la **Microsoft Teams** pestaña.
+2. Seleccione la **Microsoft Teams** página.
 3. Habilite Microsoft Teams integración para la administración de riesgos de insider.
 4. Seleccione **Guardar** para configurar y salir.
 
@@ -507,7 +507,7 @@ Según el número de usuarios asignados a grupos de roles de administración de 
 
 Los análisis de riesgos internos le permiten realizar una evaluación de los posibles riesgos internos en su organización sin necesidad de configurar ninguna directiva de riesgos internos. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar. Los exámenes de análisis ofrecen las siguientes ventajas para su organización:
 
-- Fácil de configurar: para empezar con los exámenes de análisis, puede seleccionar Ejecutar examen cuando se le solicite la recomendación de análisis o ir a Configuración de riesgos de Insider > pestaña Análisis y habilitar análisis.
+- Fácil de configurar: para empezar con los exámenes de análisis, puede seleccionar Ejecutar examen cuando se le pida la recomendación de análisis o ir a Configuración de riesgos de **Insider** Análisis y habilitar  >   análisis.
 - Requisitos mínimos de privacidad: los resultados y las perspectivas del examen se devuelven como actividad de usuario anonimizada, los revisores no identifican nombres de usuario individuales.
 - Comprender los posibles riesgos a través de información consolidada: los resultados del examen pueden ayudarle a identificar rápidamente las posibles áreas de riesgo para los usuarios y qué directiva sería mejor para ayudar a mitigar estos riesgos.
 
@@ -524,7 +524,7 @@ La información de análisis de los exámenes se basa en las mismas señales de 
 
 ### <a name="enable-analytics-and-start-your-scan"></a>Habilitar análisis e iniciar el examen
 
-Para habilitar el análisis de riesgos de insider, debe ser miembro del grupo de roles Administración de riesgos de Insider, Administrador de administración de riesgos de Insider o Microsoft 365 de roles de administración global.
+Para habilitar el análisis de riesgos de *insider,* debe ser miembro del grupo de roles de administración global Insider Risk Management , *Insider Risk Management Admin* *o Microsoft 365 global.*
 Siga estos pasos para habilitar el análisis de riesgos de insider:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider**.
@@ -560,3 +560,16 @@ Complete los siguientes pasos para desactivar el análisis de riesgos de insider
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider**.
 2. Selecciona **Configuración de riesgos de Insider** Página  >  **de** análisis.
 3. En la **página Análisis,** desactive Examinar la actividad de usuario del inquilino para identificar posibles riesgos **de información interna.**
+
+## <a name="admin-notifications"></a>Notificaciones de administrador
+
+Las notificaciones de administrador envían automáticamente una notificación por correo electrónico a los usuarios incluidos en los grupos de roles *Insider Risk Management*, *Insider Risk Management Analysts* y *Insider Risk Management Investigators* cuando se genera la primera alerta para una nueva directiva. Esto está habilitado de forma predeterminada para todas las organizaciones y las directivas se comprueban cada 24 horas para las alertas de primera vez. Las notificaciones no se envían para las alertas que se producen en las directivas después de la primera alerta.
+
+Si prefiere deshabilitar las notificaciones de administrador, siga estos pasos:
+
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Insider risk management**  >  **Insider risk settings**.
+2. Seleccione la **página Notificaciones de administrador.**
+3. Desactive la casilla Enviar un correo electrónico de notificación cuando se genere la primera alerta **para una nueva directiva.**
+4. Seleccione **Guardar** para configurar y salir.
+
+![Configuración de notificaciones de administración de riesgos de Insider.](../media/insider-risk-admin-notifications.png)

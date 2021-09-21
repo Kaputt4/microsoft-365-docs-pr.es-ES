@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4dc2d9e0d4ea06b7b51a29be11af4e6316c83bcc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 63e1f78ff3431db03ab2f7b414eca13cdca21f41
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213580"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460181"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender para punto de conexión en iOS
 
@@ -59,7 +59,10 @@ ms.locfileid: "59213580"
 
 - Acceso al portal Centro de seguridad de Microsoft Defender web.
 
-- Acceso a [Microsoft Endpoint Manager de administración](https://go.microsoft.com/fwlink/?linkid=2109431), para implementar la aplicación en grupos de usuarios inscritos en su organización.
+- Acceso a [Microsoft Endpoint Manager de administración](https://go.microsoft.com/fwlink/?linkid=2109431), para:
+   - Implemente la aplicación en grupos de usuarios inscritos en su organización.
+   - Configurar Microsoft Defender para señales de riesgo de extremo en la directiva de protección de aplicaciones (MAM)
+
 
     > [!NOTE]
     > - Microsoft Defender para endpoint ahora amplía la protección a los datos de una organización dentro de una aplicación administrada para aquellos que no usan la administración de dispositivos móviles (MDM), pero que usan Intune para administrar aplicaciones móviles. También amplía esta compatibilidad a los clientes que usan otras soluciones de administración de movilidad empresarial, mientras que sigue usando Intune para la administración de aplicaciones móviles [(MAM).](/mem/intune/apps/mam-faq)
@@ -67,25 +70,27 @@ ms.locfileid: "59213580"
 
 **Requisitos del sistema**
 
-- Dispositivo iOS que ejecuta iOS 11.0 y posteriores. iPad dispositivos se admiten oficialmente a partir de la versión 1.1.15010101.
+- Dispositivo iOS que ejecuta iOS 11.0 y posteriores. También se admiten iPads.
 
 - El dispositivo se inscribe con la [aplicación Portal de empresa de Intune o](https://apps.apple.com/us/app/intune-company-portal/id719171358) se registra con Azure Active Directory a través de [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
 ## <a name="installation-instructions"></a>Instrucciones de instalación
 
 La implementación de Microsoft Defender para endpoint en iOS se puede realizar a través de Microsoft Endpoint Manager (MEM) y se admiten dispositivos supervisados y no supervisados. Los usuarios finales también pueden instalar directamente la aplicación desde la [Tienda de aplicaciones de Apple](https://aka.ms/mdatpiosappstore).
-Para obtener más información, vea [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
+
+- Para obtener información sobre la implementación en dispositivos inscritos mediante Microsoft Endpoint Manager o Intune, vea [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
+- Para obtener información sobre cómo usar Defender para endpoint en la directiva de protección de aplicaciones (MAM), consulta Configurar la directiva de protección de aplicaciones para incluir las señales de riesgo de [Defender for Endpoint (MAM)](ios-install-unmanaged.md)
 
 ## <a name="resources"></a>Recursos
 
 - Manténgase informado sobre las próximas versiones visitando Novedades de Microsoft Defender para endpoint [en iOS](ios-whatsnew.md) o nuestro [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).
 
-- Proporcionar comentarios a través del sistema de comentarios desde la aplicación o a través del [portal de SecOps](https://securitycenter.microsoft.com)
+- Proporcionar comentarios a través del sistema de comentarios desde la aplicación o a través de la [consola de seguridad unificada](https://security.microsoft.com)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Próximos pasos
 
-- [Implementar Microsoft Defender para endpoint en iOS](ios-install.md)
-- [Configurar Microsoft Defender para endpoint en características de iOS](ios-configure-features.md)
+- [Implementar Microsoft Defender para endpoint en iOS a través de Intune para dispositivos inscritos](ios-install.md)
 - [Configurar la directiva de protección de aplicaciones para incluir las señales de riesgo de Defender for Endpoint (MAM)](ios-install-unmanaged.md)
+- [Configurar Microsoft Defender para endpoint en características de iOS](ios-configure-features.md)
 - [Configurar la directiva de acceso condicional en función de la puntuación de riesgo del dispositivo de Microsoft Defender para el extremo](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
 - [Conceptos básicos de administración de aplicaciones móviles (MAM)](/mem/intune/apps/app-management#mobile-application-management-mam-basics)

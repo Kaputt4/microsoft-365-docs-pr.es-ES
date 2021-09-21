@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 441e7a598e0487759dc5e48dab3e74a7b3b1ead6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afff05ac0e18ac41b1e2ba70b59ed4dfd0c6a22a
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187569"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460321"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurar Defender para las características de Endpoint en Android
 
@@ -51,6 +51,32 @@ Defender for Endpoint en Android permite a los administradores de TI configurar 
 > [!NOTE]
 > Defender for Endpoint en Android usaría una VPN para proporcionar la característica de Protección web. No se trata de una VPN normal y es una VPN local o auto-looping que no toma tráfico fuera del dispositivo.
 > Para obtener más información, vea [Configure web protection on devices that run Android](/mem/intune/protect/advanced-threat-protection-manage-android).
+
+## <a name="configure-privacy-for-malware-threat-report"></a>Configurar la privacidad para el informe de amenazas de malware
+
+> [!NOTE]
+> Los controles de privacidad de Defender para Endpoint en Android se encuentran actualmente en versión preliminar y pueden modificarse considerablemente antes de su lanzamiento comercial.
+
+El control de privacidad del informe de amenazas de malware se puede usar para deshabilitar la colección de detalles de la aplicación (información de nombre y paquete) del informe de amenazas de malware. Esto ofrece a las organizaciones la flexibilidad de elegir si quieren recopilar el nombre de la aplicación cuando se detecta una aplicación malintencionada. *Actualmente, esta característica solo está disponible para dispositivos inscritos en el **modo administrador de dispositivos Android.***
+
+Siga estos pasos para habilitarlo para usuarios dirigidos:
+
+1. En [Microsoft Endpoint Manager de administración,](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a **Perfiles** de configuración  >  **de dispositivos** Crear  >  **perfil** y escriba la siguiente configuración:
+
+   - **Plataforma:** seleccionar administrador de dispositivos Android
+   - **Perfil:** seleccione "Personalizado" y haga clic en Crear
+
+2. En la sección Conceptos básicos, especifique un nombre y una descripción del perfil.
+3. En configuración, seleccione Agregar **configuración de OMA-URI:**
+
+   - **Nombre:** escriba un nombre y una descripción únicos para esta configuración de OMA-URI para que pueda encontrarlo fácilmente más adelante.
+   - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
+   - Tipo de datos: seleccione Integer en la lista desplegable.
+   - Valor: escriba 1 para habilitar la configuración de privacidad (de forma predeterminada, el valor es 0)
+
+4. Haz **clic en Siguiente** y asigna este perfil a dispositivos o usuarios dirigidos.
+
+Habilitar el control de privacidad anterior no afectará a la comprobación de cumplimiento del dispositivo o al acceso condicional, por ejemplo, los dispositivos con una aplicación malintencionada siempre tendrán un nivel de riesgo de "Medium".
 
 ## <a name="related-topics"></a>Temas relacionados
 
