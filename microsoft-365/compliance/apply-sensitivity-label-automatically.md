@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 0f4d702581192ab35d3d515fa668043e9a1c1399
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 65926c72dfd61cc7a610f547d6c9a9d5fa04451e
+ms.sourcegitcommit: 3ec80aba8d5d9acf42ed9b9bf8817c2ec4ab6764
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444024"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59456298"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -72,8 +72,8 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     Específico para el etiquetado automático para Exchange:
     
     - A diferencia del etiquetado manual o el etiquetado automático con las aplicaciones de Office, tanto los datos adjuntos de PDF como los datos adjuntos de Office también se analizan en función de las condiciones que especifique en la directiva de etiquetado automático. Cuando haya una coincidencia, el correo electrónico se etiquetará, pero no los datos adjuntos.
-        - En el caso de los archivos PDF, si la etiqueta aplica cifrado, estos archivos se cifran mediante el [Cifrado de mensajes de Office 365 (OME)](ome.md) cuando el espacio empresarial está [habilitado para los datos adjuntos de PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - Para estos archivos de Office, son compatibles Word, PowerPoint y Excel. Si la etiqueta aplica cifrado, se cifran mediante el [Cifrado de mensajes de Office 365 (OME)](ome.md).
+        - En el caso de los archivos PDF, si la etiqueta aplica el cifrado, estos archivos se cifran cuando la cuenta empresarial [se habilita para los datos adjuntos de PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - Para estos archivos de Office, son compatibles Word (.docx), PowerPoint (.pptx) y Excel (.xlsx). Si la etiqueta aplica cifrado, estos archivos se cifran.
     - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
     - El correo electrónico con cifrado IRM sin etiqueta se reemplazará por una etiqueta con una configuración de cifrado cuando haya una coincidencia al usar etiquetado automático.
     - El correo electrónico recibido se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático:
