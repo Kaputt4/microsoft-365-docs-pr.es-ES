@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jmueller
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén información sobre cómo mover usuarios a una suscripción diferente cuando necesites nuevas características.
-ms.openlocfilehash: 95d3a4d8e32fb7e0e56e7318f507a911adbc59d9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 436df4d563dea3717e463dab71c3a8b7e465dd70
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219410"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477556"
 ---
 # <a name="move-users-to-different-subscriptions"></a>Mover usuarios a distintas suscripciones
 
@@ -38,6 +39,9 @@ ms.locfileid: "59219410"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
 A medida que los usuarios cambian de roles, es posible que necesiten características que no estén disponibles en su suscripción Microsoft 365 Empresa Premium actual. Cuando esto sucede, puedes agregar una nueva suscripción que incluya esas características y asignar licencias a las personas que las necesiten.
+
+> [!NOTE]
+> Para algunas suscripciones, solo puedes cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactiva la facturación periódica para cancelar la suscripción al final de su término.
 
 ## <a name="try-it"></a>¿Se atreve?
 

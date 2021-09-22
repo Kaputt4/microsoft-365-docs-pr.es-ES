@@ -21,20 +21,23 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: El método que use para desasignación de licencias de productos depende de si desasigna licencias de usuarios específicos o de un producto específico.
-ms.date: 06/07/2021
-ms.openlocfilehash: 8a67d7e690ff07631f696a97d6ed59925bc871df
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: c657f4ef00b797a5f66ce6ecd28ca95cf9a5d9b6
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187137"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477568"
 ---
 # <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a usuarios
 
 Puede desasignación de licencias de usuarios en la **página Usuarios** activos o en la **página Licencias.** El método que use depende de si desea desasignación de licencias de productos de usuarios específicos o desasignación de licencias de usuarios de un producto específico.
 
 > [!NOTE]
-> Como administrador, no puede asignar o cancelar la asignación de licencias para una suscripción de compra de autoservicio adquirida por un usuario de su organización. Puede [apoderarse de una suscripción de compra de autoservicio](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription) y, a continuación, asignar o cancelar la asignación de licencias.
+> 
+> - Como administrador, no puede asignar o cancelar la asignación de licencias para una suscripción de compra de autoservicio adquirida por un usuario de su organización. Puede [apoderarse de una suscripción de compra de autoservicio](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription) y, a continuación, asignar o cancelar la asignación de licencias.
+> 
+> - Para algunas suscripciones, solo puedes cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactiva la facturación periódica para cancelar la suscripción al final de su término.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -54,19 +57,22 @@ Al usar la página **Licencias** para desasignar licencias, se desasigna licenci
 
 ::: moniker range="o365-germany"
 
- 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
+1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"> Licencias</a>.
+1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"> Licencias</a>.
 
 ::: moniker-end
 
 2. Seleccione el producto para el que desea desasignación de licencias.
+
 3. Seleccione los usuarios para los que desea desasignación de licencias.
+
 4. Seleccione **Unassign licenses**.
+
 5. En el **cuadro Unassign licenses,** seleccione **Unassign**.
 
 ## <a name="use-the-active-users-page-to-unassign-licenses"></a>Usar la página Usuarios activos para desasignación de licencias
@@ -83,18 +89,20 @@ Al usar la página **Usuarios activos** para desasignación de licencias, se des
 
 ::: moniker range="o365-germany"
 
- 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
 2. Seleccione la fila del usuario para el que desea desasignación de una licencia.
+
 3. En el panel derecho, seleccione **licencias y aplicaciones**.
+
 4. Expanda la **sección Licencias,** desactive los cuadros de las licencias que desea desasignación y, a continuación, **seleccione Guardar cambios**.
 
 ### <a name="unassign-licenses-from-multiple-users"></a>Unassign licenses from multiple users
@@ -107,19 +115,22 @@ Al usar la página **Usuarios activos** para desasignación de licencias, se des
 
 ::: moniker range="o365-germany"
 
- 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
 2. Seleccione los círculos junto a los nombres de los usuarios para los que desea desasignar licencias.
+
 3. En la parte superior, seleccione **Administrar licencias de producto**.
+
 4. En el **panel Administrar licencias de productos,** seleccione **Unassign all** Save  >  **changes**.
+
 5. En la parte inferior del panel, seleccione **Listo**.  
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>¿Qué sucede con los datos de un usuario al quitar su licencia?
@@ -131,7 +142,7 @@ Al usar la página **Usuarios activos** para desasignación de licencias, se des
 - Para obtener información sobre cómo bloquear el acceso de un usuario Microsoft 365 datos después de quitar su licencia y cómo obtener acceso a los datos después, vea [Remove a former employee](../add-users/remove-former-employee.md).
 - Si quitas la licencia de un usuario y aún tienen Office aplicaciones instaladas, verán Errores de activación y producto sin licencia en [Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usen Office aplicaciones.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Próximos pasos
 
 Si no va a reasignar las licencias no [usadas](../../managed-desktop/get-started/assign-licenses.md)a otros usuarios, considere la posibilidad de quitar las licencias de la suscripción para que no pague más licencias de las que necesita. [](../../commerce/licenses/buy-licenses.md)
 
@@ -139,4 +150,4 @@ Si no va a reasignar las licencias no [usadas](../../managed-desktop/get-started
 
 [Quitar licencias de la suscripción](../../commerce/licenses/buy-licenses.md) (artículo)\
 [Asignar licencias a los usuarios](assign-licenses-to-users.md) (artículo)\
-[Comprender las suscripciones y licencias en Microsoft 365 para empresas](../../commerce/licenses/subscriptions-and-licenses.md) (artículo)
+[Información sobre las suscripciones y licencias en Microsoft 365 para empresas](../../commerce/licenses/subscriptions-and-licenses.md) (artículo)

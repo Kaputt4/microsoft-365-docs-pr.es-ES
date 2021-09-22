@@ -1,7 +1,6 @@
 ---
-title: Ejecutar una prueba de detección después de agregar un dispositivo a Microsoft Defender para el dispositivo endpoint
-description: Ejecute el script de detección en un dispositivo que se ha agregado recientemente al servicio de Microsoft Defender para endpoints para comprobar que está correctamente incorporado.
-keywords: prueba de detección, detección, powershell, script, comprobación, incorporación, Microsoft Defender para incorporación de puntos de conexión, clientes, servidores, prueba
+title: Ejecutar una prueba de detección en un dispositivo para comprobar que se ha incorporado correctamente a Microsoft Defender para endpoint
+description: Ejecute el script de prueba de detección en un dispositivo recién incorporado al servicio Microsoft Defender para endpoints para comprobar que se ha agregado correctamente.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c1772cc67c145b59870735910e09ae05e52b899
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 63c75ccb3ce8d3063235763986d5b9e85969ef45
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400803"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477640"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado
 
@@ -41,11 +40,11 @@ ms.locfileid: "59400803"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Los dispositivos de incorporación son el método para agregar dispositivos al servicio de Microsoft Defender para endpoints. Permite a los dispositivos notificar señales al servicio.
+Cuando agregas un dispositivo al servicio Microsoft Defender para endpoints para la administración, también se denomina dispositivos de incorporación. La incorporación permite a los dispositivos notificar señales sobre su estado de mantenimiento al servicio.
 
-Comprobar que un dispositivo se ha agregado correctamente al servicio es un paso importante en todo el proceso de implementación.
+Asegurarse o comprobar que un dispositivo se ha agregado correctamente al servicio es un paso fundamental en todo el proceso de implementación. Asegura que se están administrando todos los dispositivos esperados. 
 
-## <a name="verify-onboarding-using-a-detection-test"></a>Comprobar la incorporación mediante una prueba de detección
+## <a name="verify-microsoft-defender-for-endpoint-onboarding-of-a-device-using-a-powershell-detection-test"></a>Comprobar microsoft defender para la incorporación de puntos de conexión de un dispositivo mediante una prueba de detección de PowerShell
 
 Ejecute el siguiente script de PowerShell en un dispositivo recién incorporado para comprobar que está informando correctamente al servicio Defender for Endpoint.
 
@@ -64,7 +63,7 @@ Ejecute el siguiente script de PowerShell en un dispositivo recién incorporado 
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-La ventana símbolo del sistema se cerrará automáticamente. Si se realiza correctamente, la prueba de detección se marcará como completada y aparecerá una nueva alerta en el portal del dispositivo incorporado en aproximadamente 10 minutos.
+La ventana símbolo del sistema se cerrará automáticamente. Si se realiza correctamente, la prueba de detección se marcará como completada y aparecerá una nueva alerta en el portal del dispositivo incorporado en unos 10 minutos.
 
 ## <a name="related-topics"></a>Temas relacionados
 

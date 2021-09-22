@@ -1,7 +1,7 @@
 ---
-title: Introducción a la respuesta a su primer incidente
+title: Responder al primer incidente
 description: Los conceptos básicos de responder a su primer incidente en Microsoft 365 Defender.
-keywords: incidentes, alertas, investigar, correlación, ataque, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque
+keywords: incidentes, alertas, investigar, correlación, ataque, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque, auto estudio, rampa arriba, rampa arriba, incorporación, respondedor de incidentes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4176b718105643b59f23024c1a70cd8fe220eea9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f13569c8995433e0d629a3ce060d6c855f78700a
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211897"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477604"
 ---
-# <a name="introduction-to-responding-to-your-first-incident"></a>Introducción a la respuesta a su primer incidente
+# <a name="responding-to-your-first-incident"></a>Responder al primer incidente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La estrategia de respuesta a incidentes de una organización determina su capacidad para hacer frente a incidentes de seguridad y ciberdelincuencia cada vez más disruptivos. Aunque es importante tomar medidas de prevención, la capacidad de actuar rápidamente para contener, eliminar y recuperarse de incidentes detectados puede minimizar los daños y las pérdidas empresariales.
 
@@ -56,7 +56,7 @@ Los incidentes en Microsoft 365 Defender son los puntos de partida lógicos para
 
 Asegúrese de que su organización y Microsoft 365 inquilino esté [preparado para el tratamiento de incidentes.](first-incident-prepare.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Instrucciones de respuesta a incidentes para Microsoft 365 Defender:
 
