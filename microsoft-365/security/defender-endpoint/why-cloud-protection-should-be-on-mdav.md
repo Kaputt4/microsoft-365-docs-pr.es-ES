@@ -14,22 +14,24 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 08/31/2021
-ms.openlocfilehash: 94e97c9d289ccf39d66618025822e0259b836219
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/21/2021
+ms.openlocfilehash: 0f0937ef59b74ea30f673aa1d05c4b75e3e5bbcc
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212027"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480789"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>¿Por qué se debe habilitar la protección en la nube para Antivirus de Microsoft Defender
 
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
-- Antivirus de Microsoft Defender
+- Antivirus de Microsoft Defender
 
 Antivirus de Microsoft Defender protección en la nube ayuda a proteger contra malware en los puntos de conexión y en toda la red. Se recomienda mantener activada la protección en la nube, ya que determinadas funciones y características de seguridad de Microsoft Defender para endpoint solo funcionan cuando la protección en la nube está habilitada. 
+
+[:::image type="content" source="mde-cloud-protection.png" alt-text="Diagrama que muestra cómo funciona la protección en la nube junto con Antivirus de Microsoft Defender":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 En la tabla siguiente se resumen las características y capacidades que dependen de la protección en la nube: <br/><br/>
 
@@ -45,7 +47,7 @@ En la tabla siguiente se resumen las características y capacidades que dependen
 | Indicadores de peligro (IoCs) | Microsoft 365 E5  | Los IoCs de Defender for Endpoint se pueden configurar para definir la detección, prevención y exclusión de entidades. Por ejemplo, los indicadores "permitir" se pueden usar para definir excepciones para realizar Antivirus de Microsoft Defender análisis y acciones de corrección en Defender para endpoint. Como otro ejemplo, se pueden usar indicadores de "alerta y bloqueo" para evitar que se ejecuten archivos o procesos y para realizar un seguimiento de estas actividades con alertas que se pueden ver en el portal de Microsoft 365 Defender web. <br/><br/>Para obtener más información, vea [Crear indicadores](manage-indicators.md).    |
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Próximos pasos
 
 Ahora que tiene una introducción a la protección en la nube y su rol en Antivirus de Microsoft Defender, estos son algunos pasos siguientes:
 

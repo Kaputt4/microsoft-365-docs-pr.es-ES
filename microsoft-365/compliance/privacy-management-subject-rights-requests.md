@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El área de solicitud de derechos de sujeto en administración de privacidad de Microsoft le ayuda a encontrar datos personales y colaborar en la revisión del contenido y la creación de informes.
-ms.openlocfilehash: 8c994d87593ff6fb04e9fd58025e8079d30511e0
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 76c35bd7ad4ef557db75b61939ac5ebbaa001384
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399591"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481029"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Administrar solicitudes de derechos de sujeto en la administración de privacidad (versión preliminar)
 
@@ -77,7 +77,7 @@ Los iconos de esta página incluyen:
 
 - **Detalles:** los detalles básicos sobre la solicitud, incluida la fecha límite y la fecha de solicitud, su descripción y el reglamento de privacidad relacionado.
 - **Progreso:** escala de tiempo que indica los pasos completados y las tareas pendientes de finalizar.
-- **Resumen de estimación de datos:** información general sobre los datos evaluados en la búsqueda. Para obtener más información sobre esta información, vea Ver y editar consultas de búsqueda.
+- Estadísticas sobre la fase de progreso actual. Este icono puede mostrar información como un resumen de estimación de datos, cuántos elementos se encontraron en la búsqueda y sus ubicaciones en Microsoft 365, o el estado de las exportaciones.
 - **Elementos** prioritarios para revisar: si procede, se mostrará información sobre los elementos importantes que la administración de privacidad ha detectado por usted, incluida la información confidencial que ya lleva una etiqueta de confidencialidad de Microsoft, o los elementos con datos sobre varias personas que pueden requerir una redacción. Los elementos de prioridad se pueden encontrar en Datos recopilados mediante el filtrado por la columna "Tipos de prioridad".
 
 ### <a name="monitor-progress-and-complete-requests"></a>Supervisar el progreso y completar las solicitudes
@@ -117,7 +117,7 @@ Cuando haya realizado las acciones necesarias para resolver la solicitud de dere
 
 ### <a name="view-and-edit-search-queries"></a>Ver y editar consultas de búsqueda
 
-Para ver información detallada sobre la búsqueda de datos detrás de una solicitud de derechos de sujeto, seleccione **Ver** detalles de consulta de búsqueda en la tarjeta de resumen de estimación de datos. Se abre un panel que resume la consulta y muestra más detalles sobre lo que se encontró.
+Para ver información detallada sobre la búsqueda de datos detrás de una solicitud de derechos de sujeto, seleccione **Ver detalles de consulta de búsqueda.** Se abre un panel que resume la consulta y muestra más detalles sobre lo que se encontró.
 
 Aquí tendrá la opción obtener una vista **previa** de los resultados de la búsqueda para ver qué tipo de contenido se devolverá para esta consulta. Si determina que desea cambiar las propiedades de esta búsqueda y no ha iniciado la fase Recuperar datos, puede usar la opción Editar consulta **de** búsqueda. Este asistente ofrece la capacidad de cambiar o agregar propiedades para la identificación del interesado, los filtros y condiciones de búsqueda y las ubicaciones en las que buscar datos (incluidos Exchange, SharePoint, OneDrive o Teams). Usa estas opciones para alcanzar el nivel de especificidad deseado. Puede revisar la versión final de la nueva consulta antes de presionar **Guardar**.
 

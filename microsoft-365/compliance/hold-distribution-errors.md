@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Solucionar errores relacionados con las retenciones legales aplicadas a custodios y orígenes de datos no custodiados en eDiscovery principal.
-ms.openlocfilehash: 3e5cc6351d5026feda560bee646a1e6a03475ee2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8a6a8e85721676e263c5da0ae9bbe9b79d1ac83a
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191414"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480827"
 ---
 # <a name="troubleshoot-ediscovery-hold-errors"></a>Solución de problemas de suspensión de eDiscovery
 
@@ -51,64 +51,84 @@ Para reducir el número de errores relacionados con las retenciones de exhibici�
   **Correcto:**
 
     ```powershell
-    Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation {$user1, $user2, $user3, $user4, $user5}
+    Set-CaseHoldPolicy -Identity "policyname" -AddExchangeLocation "User1", "User2", "User3", "User4", "User5"
     ```
 
    **Incorrecto:**
 
     ```powershell
-    $users = {$user1, $user2, $user3, $user4, $user5}
+    $users = "User1", "User2", "User3", "User4", "User5"
     ForEach($user in $users)
     {
-        Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation $user
+        Set-CaseHoldPolicy -Identity "policyname" -AddExchangeLocation $user
     }
     ```
 
    En el ejemplo incorrecto anterior, el cmdlet se ejecuta cinco veces distintas para completar la tarea. Para obtener más información acerca de los procedimientos recomendados para agregar usuarios a una directiva de retención, vea la [sección Más](#more-information) información.
 
-- Antes de ponerse en contacto con el Soporte técnico de Microsoft sobre problemas de retención de exhibición de documentos electrónicos, siga los pasos de la sección [Error/problema:](#errorissue-holds-dont-sync) las retenciones no se sincronizan para reintentar la distribución de retención. Este proceso suele resolver problemas temporales, incluidos los errores internos del servidor.
+- Antes de ponerse en contacto con el Soporte técnico de Microsoft acerca de los problemas de retención de exhibición de documentos electrónicos, compruebe qué está provocando que la directiva falle al comprobar distributionResults, en función del ResultCode:
 
-## <a name="errorissue-holds-dont-sync"></a>Error o problema: las retenciones no se sincronizan
+   ```powershell
+   Get-CaseHoldPolicy -Identity "policyname" -DistributionDetail | Select -ExpandProperty DistributionResults
+   ```
 
-Si ve uno de los siguientes mensajes de error al poner a los custodios y orígenes de datos en espera, siga los pasos de resolución para solucionar el problema.
+   ![DistributionResults](../media/HoldDistributionResults.png)
 
-> Recursos: tarda más de lo esperado en implementar la directiva. Podría tardar 2 horas adicionales en actualizar el estado de implementación final, por lo que vuelve a comprobarlo en un par de horas.
+## <a name="error-policysynctimeout"></a>Error: PolicySyncTimeout
+
+Si ve este error en **ResultCode: PolicySyncTimeout** y el siguiente mensaje de error, compruebe LastResultTime para ver si ha pasado más de dos horas desde que la sincronización ha alcanzado el tiempo de espera.
+
+> La implementación de la directiva tarda más de lo esperado. Podría tardar 2 horas adicionales en actualizar el estado de implementación final, por lo que vuelve a comprobarlo en un par de horas.
+
+### <a name="resolution"></a>Solución
+
+Al ejecutar **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** se resolverá el problema.
+
+   ```powershell
+   Set-CaseHoldPolicy "policyname" -RetryDistribution
+   ```
+
+También en la página de retención de casos de la Centro de cumplimiento de Microsoft 365, puede volver a implementar la directiva haciendo clic en **Reintentar**.
+
+![Botón Reintentar en CaseHold](../media/RetryCaseHold.png)
+
+## <a name="error-policynotifyerror"></a>Error: PolicyNotifyError
+
+Si ve este error en **ResultCode: PolicyNotifyError** y el siguiente mensaje de error, un problema del centro de datos interrumpió la sincronización de directivas.
 
 > La directiva no se puede implementar en el origen de contenido debido a un problema Office 365 centro de datos. La directiva actual no se aplica a ningún contenido del origen, por lo que no hay ningún impacto de la implementación bloqueada. Para solucionar este problema, intente volver a implementar la directiva.
 
-> Lo sentimos, no pudimos realizar los cambios solicitados en la directiva debido a un error transitorio del servidor interno. Vuelva a intentarlo en 30 minutos.
+### <a name="resolution"></a>Solución
+
+Al ejecutar **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** se resolverá el problema.
+
+   ```powershell
+   Set-CaseHoldPolicy "policyname" -RetryDistribution
+   ```
+
+También en la página de retención de casos de la Centro de cumplimiento de Microsoft 365, puede volver a implementar la directiva haciendo clic en **Reintentar**.
+
+![Botón Reintentar en CaseHold](../media/RetryCaseHold.png)
+
+## <a name="error-internalerror"></a>Error: InternalError
+
+Si ve este error en **ResultCode: InternalError** y el siguiente mensaje de error, Microsoft debe resolver este problema.
+
+> La implementación de directivas se ha interrumpido por un problema inesperado Office 365 centro de datos. Póngase en contacto con el soporte técnico de Microsoft para solucionar el problema de implementación.
 
 ### <a name="resolution"></a>Solución
 
-1. Conectar [a PowerShell & Centro](/powershell/exchange/connect-to-scc-powershell) de seguridad y cumplimiento y ejecute el siguiente comando para una retención de exhibición de documentos electrónicos:
+Póngase en contacto con el soporte técnico de Microsoft con la siguiente información:
 
-   ```powershell
-   Get-CaseHoldPolicy <policyname> -DistributionDetail | FL
-   ```
+- Nombre de la directiva
+- Servicio o característica de Microsoft 365
+- Código de resultados
+- Mensaje de resultados
+- Diagnósticos adicionales
 
-2. Examine el valor del parámetro *DistributionDetail.* Busque errores como los siguientes:
+## <a name="error-failedtoopencontainer"></a>Error: FailedToOpenContainer
 
-   > Error: Recursos: tarda más de lo esperado en implementar la directiva. Podría tardar 2 horas adicionales en actualizar el estado de implementación final, por lo que vuelve a comprobarlo en un par de horas.
-
-3. Intente ejecutar el **comando Set-CaseHoldPolicy -RetryDistribution** en la directiva de retención en cuestión; por ejemplo:
-
-   ```powershell
-   Set-CaseHoldPolicy <policyname> -RetryDistribution
-   ```
-
-## <a name="error-the-sharepoint-site-is-read-only-or-not-accessible"></a>Error: el sitio SharePoint es de solo lectura o no es accesible
-
-Si ve el siguiente mensaje de error al poner en espera a los custodios y los orígenes de datos, significa que el administrador [global](/sharepoint/sharepoint-admin-role) de la organización o el administrador SharePoint ha bloqueado el sitio. Un sitio bloqueado impide que la exhibición de documentos electrónicos coloque una retención en el sitio.
-
-> El SharePoint es de solo lectura o no es accesible. Póngase en contacto con el administrador del sitio para que el sitio se grabe y, a continuación, vuelva a implementar esta directiva.
-
-### <a name="resolution"></a>Solución
-
-Desbloquea el sitio (o pide a un administrador que lo desbloquee) para resolver este problema. Para obtener más información sobre cómo cambiar el estado de bloqueo de un sitio, vea [Bloquear y desbloquear sitios](/sharepoint/manage-lock-status).
-
-## <a name="error-the-mailbox-or-sharepoint-site-may-not-exist"></a>Error: es posible que el buzón SharePoint sitio no exista
-
-Si ve el siguiente mensaje de error al poner en espera a los custodios y orígenes de datos, siga los pasos de resolución para solucionar el problema.
+Si ve este error en **ResultCode: FailedToOpenContainer** y el siguiente mensaje de error al poner a los custodios y orígenes de datos en espera, siga los pasos de resolución para solucionar el problema.
 
 > Es posible que el buzón SharePoint sitio no exista.  Si esto es incorrecto, póngase en contacto con el soporte técnico de Microsoft.  De lo contrario, quítela de esta directiva.
 
@@ -119,6 +139,54 @@ Si ve el siguiente mensaje de error al poner en espera a los custodios y orígen
 - Ejecute el cmdlet [Get-SPOSite](/powershell/module/sharepoint-online/get-sposite) en SharePoint PowerShell en línea para comprobar si el sitio existe en la organización.
 
 - Compruebe si la dirección URL del sitio ha cambiado.
+
+- Quite el buzón o el sitio de la directiva, si el objeto no existe.
+
+## <a name="error-siteinreadonlyornotaccessible"></a>Error: SiteInReadonlyOrNotAccessible
+
+Si ve este error en **ResultCode: SiteInReadonlyOrNotAccessible** y el siguiente mensaje de error, el sitio SharePoint está en modo de solo lectura.
+
+> El SharePoint es de solo lectura o no es accesible. Póngase en contacto con el administrador del sitio para que el sitio se grabe y, a continuación, vuelva a implementar esta directiva.
+
+### <a name="resolution"></a>Solución
+
+Desbloquea el sitio (o pide a un administrador que lo desbloquee) para resolver este problema. Para obtener más información sobre cómo cambiar el estado de bloqueo de un sitio, vea [Bloquear y desbloquear sitios](/sharepoint/manage-lock-status).
+
+## <a name="error-siteoutofquota"></a>Error: SiteOutOfQuota
+
+Si ve este error en **ResultCode: SiteOutOfQuota** y el siguiente mensaje de error, el sitio SharePoint ha alcanzado su cuota de almacenamiento.
+
+> El sitio SharePoint no tiene suficiente cuota. Asigne más cuota a la colección de sitios y, a continuación, vuelva a implementar esta directiva.
+
+### <a name="resolution"></a>Solución
+
+Agregue más almacenamiento al sitio (o pida a un administrador que agregue más almacenamiento) a la colección de sitios. Para obtener más información sobre cómo administrar las cuotas de almacenamiento de un sitio, vea [Manage site collection storage limits](/sharepoint/manage-site-collection-storage-limits).
+
+Después de agregar más cuota de almacenamiento al sitio, la directiva tendrá que volver a implementarse.
+
+   ```powershell
+   Set-CaseHoldPolicy "policyname" -RetryDistribution
+   ```
+
+También en la página de retención de casos de la Centro de cumplimiento de Microsoft 365, puede volver a implementar la directiva haciendo clic en **Reintentar**.
+
+![Botón Reintentar en CaseHold](../media/RetryCaseHold.png)
+
+## <a name="error-recipienttypenotallowed"></a>Error: RecipientTypeNotAllowed
+
+Si ve este error en **ResultCode: RecipientTypeNotAllowed** y el siguiente mensaje de error, se asigna una ubicación Exchange que es un buzón de correo a la directiva.
+
+> El tipo de destinatario no está permitido para retenciones.
+
+### <a name="resolution"></a>Solución
+
+Ejecute [get-recipient](/powershell/module/exchange/get-recipient) en Exchange Online PowerShell para comprobar si la dirección en el extremo es un buzón válido.
+
+Si el cmdlet anterior muestra que la dirección SMTP no es un buzón válido, quítela de la directiva.
+
+```powershell
+Set-CaseHoldPolicy "policyname" -RemoveExchangeLocation "non-mailbox user"
+```
 
 ## <a name="more-information"></a>Más información
 

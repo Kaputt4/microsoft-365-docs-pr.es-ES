@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 86344a570c04ed67c8811d91ca92a59dcec6102d
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 55373830a351bc3bad40a4a492101c5ac011d8b0
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460357"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479530"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
-Los casos son el núcleo de la administración de riesgos de información interna y le permiten investigar profundamente y actuar en los problemas generados por los indicadores de riesgo definidos en sus directivas. Los casos se crean manualmente a partir de alertas en situaciones en las que es necesario realizar más acciones para solucionar un problema relacionado con el cumplimiento de un usuario. Cada caso está en el ámbito de un único usuario y se pueden agregar varias alertas para el usuario a un caso existente o a un nuevo caso. 
+Los casos son el núcleo de la administración de riesgos de información interna y le permiten investigar profundamente y actuar en los problemas generados por los indicadores de riesgo definidos en sus directivas. Los casos se crean manualmente a partir de alertas en situaciones en las que es necesario realizar más acciones para solucionar un problema relacionado con el cumplimiento de un usuario. Cada caso está en el ámbito de un único usuario y se pueden agregar varias alertas para el usuario a un caso existente o a un nuevo caso.
 
 Después de investigar los detalles de un caso, puede tomar medidas mediante:
 
@@ -190,7 +190,7 @@ Para agregar un colaborador a un caso:
 
 ## <a name="case-actions"></a>Acciones de casos
 
-Los analistas e investigadores de riesgos pueden actuar en un caso en uno de varios métodos, según la gravedad del caso, el historial de riesgos del usuario y las directrices de riesgo de su organización. En algunas situaciones, es posible que deba escalar un caso a un usuario o una investigación de datos para colaborar con otras áreas de su organización y profundizar en las actividades de riesgo. La administración de riesgos de Insider está estrechamente integrada con otras Microsoft 365 de cumplimiento normativo para ayudarle con la administración de resolución integral.
+Los investigadores de riesgos pueden actuar en un caso en uno de varios métodos, según la gravedad del caso, el historial de riesgos del usuario y las directrices de riesgo de su organización. En algunas situaciones, es posible que deba escalar un caso a un usuario o una investigación de datos para colaborar con otras áreas de su organización y profundizar en las actividades de riesgo. La administración de riesgos de Insider está estrechamente integrada con otras Microsoft 365 de cumplimiento normativo para ayudarle con la administración de resolución integral.
 
 ### <a name="send-email-notice"></a>Enviar aviso de correo electrónico
 

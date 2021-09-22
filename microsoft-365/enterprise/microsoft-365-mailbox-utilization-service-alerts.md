@@ -1,8 +1,8 @@
 ---
 title: Alertas del servicio de uso de buzones
-ms.author: markjjo
-author: markjjo
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: ''
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Use alertas de servicio de uso de buzones para supervisar los buzones en espera que están alcanzando su cuota de buzón.
-ms.openlocfilehash: 417e0106505dcc31af6e9a279fd79655df712dd2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afae43f0c589d6c025fb0e1d20a7c5cf81eacbe2
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220862"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479890"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alertas de servicio para el uso de buzones en Exchange Online supervisión
 
@@ -84,7 +84,7 @@ Las alertas de servicio para el uso de buzones también pueden contener una tabl
 |:--------------|:--------------|:---------------|:---------------|:---------------|:--------------- |
 | 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | Verdadero | False | True | 398 |
 | 6c041498-1611-5011-a058-1156ce60890c | Principal | Verdadero | False | True | 10 |
-| 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | True | Falso | 7  |
+| 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | True | False | 7  |
 | 269f6a85-1234-4648-8cde-59bbc7bc67d0 | PrimaryWithArchive | True | True | True | 1 |
 | 13fb778d-e1cb-4c44-5768-ad4282906c1f | PrimaryWithArchive | True | True  | False | 1 |
 |||||||

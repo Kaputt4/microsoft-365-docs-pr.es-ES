@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d10c4df273cfcff39bf93fa6532b57c4f8ef640
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: baea981e712a02bfffb6b664d4bb6a3d8c9b5ae5
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219850"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481053"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -36,7 +36,7 @@ Para mantener la organización segura de forma [predeterminada,](secure-by-defau
 - **Simulaciones de suplantación** de identidad de terceros: los ataques simulados pueden ayudarle a identificar usuarios vulnerables antes de que un ataque real impacte en su organización.
 - Buzones de operaciones de seguridad **(SecOps):** buzones dedicados que usan los equipos de seguridad para recopilar y analizar mensajes sin filtrar (tanto buenos como malos).
 
-Use la directiva _de entrega avanzada_ en Microsoft 365 para evitar que estos mensajes en estos _escenarios específicos_ se filtren. <sup>\*</sup> La directiva de entrega avanzada garantiza que los mensajes en estos escenarios consigan los siguientes resultados:
+Use la directiva _de entrega avanzada_ en Microsoft 365 para evitar que se filtren los mensajes entrantes en estos _escenarios específicos._ <sup>\*</sup> La directiva de entrega avanzada garantiza que los mensajes en estos escenarios consigan los siguientes resultados:
 
 - Los filtros de EOP y Microsoft Defender Office 365 realizar ninguna acción en estos mensajes.<sup>\*</sup>
 - [La purga de hora cero (ZAP)](zero-hour-auto-purge.md) para correo no deseado y suplantación de identidad (phishing) no toma ninguna acción en estos mensajes.<sup>\*</sup>
@@ -45,7 +45,7 @@ Use la directiva _de entrega avanzada_ en Microsoft 365 para evitar que estos me
 - Específicamente para simulaciones de suplantación de identidad de terceros:
   - [Los envíos de](admin-submission.md) administrador generan una respuesta automática que indica que el mensaje forma parte de una campaña de simulación de suplantación de identidad (phishing) y no es una amenaza real. Las alertas y AIR no se desencadenarán. La experiencia de envíos de administrador mostrará estos mensajes como una amenaza simulada.
   - Cuando un usuario informa de un mensaje de simulación de suplantación de identidad [(phishing)](enable-the-report-message-add-in.md)mediante el complemento Report Phishing para Outlook , el sistema no generará una alerta, investigación o incidente. El mensaje también se mostrará en la pestaña Mensajes notificados por el usuario de la página envíos.
-  - [Caja fuerte vínculos en Defender para Office 365](safe-links.md) no bloquea ni detona las direcciones URL identificadas específicamente en estos mensajes.
+  - [Caja fuerte vínculos](safe-links.md) en Defender para Office 365 no bloquea ni detona las direcciones URL identificadas específicamente en estos mensajes en el momento de hacer clic. Las direcciones URL aún están ajustadas, pero no están bloqueadas.
   - [Caja fuerte datos adjuntos en Defender para Office 365](safe-attachments.md) no detonan datos adjuntos en estos mensajes.
 
 <sup>\*</sup> No puede omitir el filtrado de malware o ZAP para malware.
@@ -71,7 +71,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
   Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > Agregar usuarios al rol de Azure Active Directory correspondiente proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Usar el portal Microsoft 365 Defender para configurar buzones de SecOps en la directiva de entrega avanzada
 
@@ -103,21 +103,30 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
 
 3. En el **control desplegable Editar simulación de suplantación** de identidad de terceros que se abre, configure las siguientes opciones:
 
-   - **Dominio** de envío: expanda esta configuración y escriba al menos un dominio de dirección de correo electrónico (por ejemplo, contoso.com) haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas.
+   - **Dominio:** expanda esta configuración y escriba al menos un dominio de dirección de correo electrónico (por ejemplo, contoso.com) haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas.
 
      > [!NOTE]
-     > Use el dominio de la dirección (también conocida como dirección `5321.MailFrom` **MAIL FROM,** remitente P1 o remitente de sobre) que se usa en la transmisión SMTP del mensaje.
+     > Use el dominio de la dirección (también conocida como dirección MAIL FROM, remitente P1 o remitente de sobre) que se usa en la transmisión SMTP del mensaje o en un dominio `5321.MailFrom` domainKeys Identified Mail  (DKIM), según lo especificado por el proveedor de simulación de suplantación de identidad ( phishing simulation vendor).  
 
-   - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores admitidos son:
+   - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores válidos son:
      - IP única: por ejemplo, 192.168.1.1.
      - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
      - IP cidr: por ejemplo, 192.168.0.1/25.
-   - Direcciones **URL** de simulación para permitir: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que forman parte de la campaña de simulación de suplantación de identidad que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas. Para obtener el formato de sintaxis de dirección URL, vea [Sintaxis url para la lista de inquilinos permitidos o bloqueados.](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)
+   - Direcciones **URL** de simulación para permitir: expanda esta configuración y, opcionalmente, escriba direcciones URL específicas que forman parte de la campaña de simulación de suplantación de identidad que no se deben bloquear ni detonar haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Puede agregar hasta 10 entradas. Para obtener el formato de sintaxis de dirección URL, vea [Sintaxis url para la lista de inquilinos permitidos o bloqueados.](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list) Estas direcciones URL se encapsulan en el momento de hacer clic, pero no se bloquean.
 
    Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
    > [!NOTE]
-   > Debe especificar al menos un dominio **de** envío y al menos un **IP** de envío para configurar una simulación de suplantación de identidad de terceros en entrega avanzada. Opcionalmente, puede incluir direcciones **URL de Simulation para garantizar** que las direcciones URL presentes en los mensajes de simulación no se bloqueen. Puede especificar hasta 10 entradas para cada campo. Debe haber una coincidencia en al menos un dominio de **envío y** un **IP** de envío, pero no se mantiene ninguna asociación entre valores.
+   > Para configurar una simulación de suplantación de identidad de terceros en la entrega avanzada, debe enviar la siguiente información:
+   > 
+   > - Al menos un **dominio** de cualquiera de los siguientes orígenes:
+   >   - La `5321.MailFrom` dirección (también conocida como dirección MAIL FROM, remitente P1 o remitente de sobre).
+   >   - Dominio DKIM.
+   > - Al menos una **dirección IP de envío**.
+   > 
+   > Opcionalmente, puede incluir direcciones **URL de Simulation para** garantizar que las direcciones URL de los mensajes de simulación no se bloqueen.
+   > Puede especificar hasta 10 entradas para cada campo.
+   > Debe haber una coincidencia en al menos un **dominio** y un **IP** de envío, pero no se mantiene ninguna asociación entre valores.
 
 4. Cuando haya terminado, siga uno de los pasos siguientes:
    - **Primera vez:** haga clic **en Agregar** y, a continuación, en **Cerrar**.

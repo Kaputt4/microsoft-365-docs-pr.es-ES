@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ff6348a0496878ee6a7b422d441b8c96d553395
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4f473963bca6a3ad3e3ece57ecc30118e4ec6f62
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214237"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479566"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -43,8 +43,6 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
 > [!TIP]
 > ¿Aún no tiene Microsoft Defender para Office 365? [Póngase en contacto con ventas para iniciar una versión de prueba.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
-
-
 Para obtener más información sobre las novedades de otros productos de seguridad de Microsoft Defender, vea:
 
 - [Novedades de Microsoft 365 Defender](../defender/whats-new.md)
@@ -52,9 +50,9 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
-
 ## <a name="september-2021"></a>Septiembre de 2021
 
+- [Experiencia de informes mejorada en Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/improving-the-reporting-experience-in-microsoft-defender-for/ba-p/2760898)
 - [Directivas de cuarentena:](quarantine-policies.md)los administradores pueden configurar un control pormenorizado para el acceso de los destinatarios a los mensajes en cuarentena y personalizar las notificaciones de correo no deseado del usuario final.
   - [Vídeo de la experiencia de administrador](https://youtu.be/vnar4HowfpY)
   - [Vídeo de la experiencia del usuario final](https://youtu.be/s-vozLO43rI)
@@ -105,7 +103,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 ¿Sabía que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que cada plan incluye](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Microsoft 365 guía básica](https://www.microsoft.com/microsoft-365/roadmap)
 

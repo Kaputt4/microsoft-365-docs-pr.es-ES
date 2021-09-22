@@ -15,19 +15,19 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 82b773488fffb5b37390cc72043c1b011c5c6685
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4018adc6fcf19e072f8c82292d488a6bbfa344d4
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222761"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480801"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activar la protección en la nube en Antivirus de Microsoft Defender
 
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
-- Antivirus de Microsoft Defender
+- Antivirus de Microsoft Defender
 
 [La protección en la nube Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) proporciona una protección precisa, en tiempo real e inteligente. La protección en la nube debe estar habilitada de forma predeterminada; sin embargo, puede configurar la protección en la nube para que se adapte a las necesidades de su organización.
 
@@ -115,11 +115,9 @@ Set-MpPreference -SubmitSamplesConsent SendAllSamples
 
 Para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/). [CSP de directiva: Defender](/windows/client-management/mdm/policy-csp-defender) también tiene más información específica sobre [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
-> [!NOTE]
-> También puede establecer **-SubmitSamplesConsent** en `SendSafeSamples` (la configuración predeterminada), `NeverSend` o `AlwaysPrompt` . La `SendSafeSamples` configuración significa que la mayoría de las muestras se enviarán automáticamente. Los archivos que probablemente contengan información personal seguirán solicitando y necesitarán confirmación adicional.
-
-> [!WARNING]
-> Establecer **-SubmitSamplesConsent** en `NeverSend` o `AlwaysPrompt` disminuirá el nivel de protección del dispositivo. Además, establecerlo en significa que la característica Bloquear a primera vista de Microsoft Defender para endpoint `NeverSend` no funcionará. [](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+> [!IMPORTANT]
+> Puede establecer **-SubmitSamplesConsent** en `SendSafeSamples` (la configuración predeterminada, recomendada), `NeverSend` o `AlwaysPrompt` . La `SendSafeSamples` configuración significa que la mayoría de las muestras se enviarán automáticamente. Los archivos que probablemente contengan información personal darán como resultado un mensaje para continuar y requerirán confirmación.
+> La `NeverSend` configuración y reduce el nivel de protección del `AlwaysPrompt` dispositivo. Además, la configuración significa que la característica Bloquear a `NeverSend` [primera vista](configure-block-at-first-sight-microsoft-defender-antivirus.md) de Microsoft Defender para endpoint no funcionará.
 
 ## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-protection"></a>Usar Windows management instruction (WMI) para activar la protección en la nube
 
@@ -145,10 +143,10 @@ Para obtener más información acerca de los parámetros [permitidos, vea Window
 
 3. Confirme que **la protección basada en la nube y** el **envío** automático de muestras se cambien a **On**.
 
-> [!NOTE]
-> Si el envío de ejemplo automático se ha configurado con la directiva de grupo, la configuración será gris y no estará disponible.
+   > [!NOTE]
+   > Si el envío de ejemplo automático se ha configurado con la directiva de grupo, la configuración será gris y no estará disponible.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Usar la protección en la nube de Microsoft en Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre la información general y el perfil de datos en la administración de privacidad y cómo obtener información sobre los datos personales en el entorno Microsoft 365 organización.
-ms.openlocfilehash: 4007fa1c55857211c3cf188a089f8e6d246153ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2d0b72aff73649ff4a34952de5a915dcd28dc670
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216600"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480597"
 ---
 # <a name="find-and-visualize-personal-data-in-privacy-management-preview"></a>Buscar y visualizar datos personales en la administración de privacidad (versión preliminar)
 
@@ -43,7 +43,7 @@ La página de información general consta de tres secciones principales. Los ico
 
 #### <a name="policy-matches-over-past-7-days"></a>Coincidencias de directivas en los últimos 7 días
 
-Cuando las directivas se establecen en la administración de privacidad, los datos se evaluarán para determinadas condiciones que pueden presentar riesgos de privacidad. Las coincidencias de directiva indican descubrimientos de datos que pueden necesitar más revisión o corrección. Esta tarjeta muestra el recuento de las coincidencias de directiva que se han producido en los últimos siete días. Las coincidencias se mostrarán aquí si las directivas están activadas o se están ejecutando en modo de prueba, de modo que pueda ver los resultados de todas las directivas activas. Hacer clic en este icono te llevará a una vista filtrada de la página Directivas de administración de privacidad, que muestra las directivas que han tenido una coincidencia en los últimos siete días.
+Cuando las directivas se establecen en la administración de privacidad, los datos se evaluarán para determinadas condiciones que pueden presentar riesgos de privacidad. Las coincidencias de directiva indican descubrimientos de datos que pueden necesitar más revisión o corrección. Este icono muestra el recuento de las coincidencias de directiva que se han producido en los últimos siete días. Las coincidencias se mostrarán aquí si las directivas están activadas o se están ejecutando en modo de prueba, de modo que pueda ver los resultados de todas las directivas activas. Hacer clic en este icono te llevará a una vista filtrada de la página Directivas de administración de privacidad, que muestra las directivas que han tenido una coincidencia en los últimos siete días.
 
 #### <a name="items-with-personal-data"></a>Elementos con datos personales
 
@@ -125,18 +125,18 @@ Esta vista de mapa le ayuda a visualizar el volumen de solicitudes de derechos d
 
 ### <a name="personal-data-type-instances-detected-in-microsoft-365"></a>Instancias de tipo de datos personales detectadas en Microsoft 365
 
-Esta tarjeta le ayuda a visualizar la cantidad de datos personales que existe en su entorno de Microsoft 365 y cómo se distribuyen los datos entre Exchange, OneDrive, SharePoint y Teams.
+Este icono le ayuda a visualizar la cantidad de datos personales que existen en el entorno de Microsoft 365 y cómo se distribuyen los datos en Exchange, OneDrive, SharePoint y Teams.
 
-El gráfico de barras muestra el recuento agregado aproximado de instancias de tipo de datos personales únicos que se encuentran en el contenido. Algunos ejemplos de tipos de datos pueden incluir elementos como números de tarjeta de crédito y números de seguridad social. Por lo tanto, un archivo detectado que contiene tres números de tarjeta de crédito y un número de seguridad social contendrá dos tipos de datos personales únicos y cuatro instancias. La persona inferior de esta tarjeta muestra los tipos de datos personales únicos dentro de cada Microsoft 365 ubicación. Proporciona una vista de la diversidad de tipos de datos personales detectados en el contenido de la organización.
+El gráfico de barras muestra el recuento agregado aproximado de instancias de tipo de datos personales únicos que se encuentran en el contenido. Algunos ejemplos de tipos de datos pueden incluir elementos como números de tarjeta de crédito y números de seguridad social. Por lo tanto, un archivo detectado que contiene tres números de tarjeta de crédito y un número de seguridad social contendrá dos tipos de datos personales únicos y cuatro instancias. La parte inferior de este icono muestra los tipos de datos personales únicos dentro de cada Microsoft 365 ubicación. Proporciona una vista de la diversidad de tipos de datos personales detectados en el contenido de la organización.
 
 ### <a name="top-personal-data-types-across-your-organization"></a>Tipos de datos personales principales en toda la organización
 
-Esta tarjeta proporciona una instantánea de los principales tipos de datos personales detectados en su entorno, junto con información sobre cuántos elementos contienen ese tipo de datos personales y en qué ubicaciones.
+Este icono proporciona una instantánea de los tipos de datos personales principales detectados en el entorno, junto con información sobre cuántos elementos contienen ese tipo de datos personales y en qué ubicaciones.
 
 ### <a name="personal-data-by-region"></a>Datos personales por región
 
-Para entornos multige geográficos, esta tarjeta agrega regionalmente instancias de tipo de datos personales que se encuentran en el contenido, en función de las regiones en las que se hospeda este contenido. Para las organizaciones de una sola región, esta tarjeta mostrará un punto que representa la Microsoft 365 de servicio. Si se mantiene el mouse sobre puntos en el mapa, se mostrará el recuento aproximado de instancias de tipo de datos personales detectadas en esa región.
+Para entornos multige geográficos, este icono agrega regionalmente instancias de tipo de datos personales que se encuentran en el contenido, en función de las regiones en las que se hospeda este contenido. Para las organizaciones de una sola región, este icono mostrará un punto que representa la ubicación Microsoft 365 servicio. Si se mantiene el mouse sobre puntos en el mapa, se mostrará el recuento aproximado de instancias de tipo de datos personales detectadas en esa región.
 
 ### <a name="exploring-content"></a>Explorar contenido
 
-Si selecciona **Explorar** en cualquier tarjeta de perfil de datos, se abrirá el explorador de contenido. En este momento, no puede buscar un elemento de contenido específico y no verá Teams datos en esta vista. Esto significa que es posible que los números del explorador de contenido no coincidan con los números que se muestran en la página de perfil de datos, ya que la página de perfil de datos incluye Teams contenido. Los administradores de privacidad que desean obtener más información sobre sus datos de privacidad pueden hacerlo aquí en función del tipo de datos personales (tipo de información confidencial) o por ubicación (Exchange, OneDrive o SharePoint).
+Si selecciona **Explorar** en cualquier icono de perfil de datos, se abrirá el explorador de contenido. En este momento, no puede buscar un elemento de contenido específico y no verá Teams datos en esta vista. Esto significa que es posible que los números del explorador de contenido no coincidan con los números que se muestran en la página de perfil de datos, ya que la página de perfil de datos incluye Teams contenido. Los administradores de privacidad que desean obtener más información sobre sus datos de privacidad pueden hacerlo aquí en función del tipo de datos personales (tipo de información confidencial) o por ubicación (Exchange, OneDrive o SharePoint).

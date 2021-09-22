@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 053ee63d80f37753b3737d834c9e79e4001f8a79
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b09ffa936ef7395bd16df37378db2d7de4a253f8
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186062"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480741"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Preparación para TLS 1.2 en Office 365 y Office 365 GCC
 
@@ -37,6 +37,9 @@ Después de actualizar a TLS 1.2, asegúrese de que los conjuntos de cifrado que
 Ya hemos comenzado la interrupción de TLS 1.0 y 1.1 a partir de enero de 2020. No se admiten todos los clientes, dispositivos o servicios que se conecten a Office 365 a través de TLS 1.0 o 1.1 en nuestras instancias DoD o GCC High. Para nuestros clientes comerciales de Office 365, el desuso de TLS 1.0 y 1.1 empezará el 15 de octubre de 2020 y el lanzamiento continuará en las siguientes semanas y meses.
 
 Recomendamos que todas las combinaciones de cliente-servidor y navegador-servidor utilicen TLS 1.2 (o una versión posterior) para mantener la conexión con los servicios de Office 365. Es posible que tenga que actualizar ciertas combinaciones cliente-servidor y navegador-servidor.
+
+  > [!NOTE]
+  > Para el flujo de correo entrante SMTP, después de desuso de TLS 1.0 y 1.1, solo aceptaremos la conexión TLS 1.2. Sin embargo, seguiremos aceptando la conexión SMTP que no está cifrada sin NINGÚN TLS. Aunque no recomendamos la transmisión de correo electrónico sin cifrado. 
 
 Deberá actualizar las aplicaciones que llamen Microsoft 365 a través de TLS 1.0 o TLS 1.1 para usar TLS 1.2. .NET 4.5 tiene como valor predeterminado TLS 1.1. Para actualizar la configuración de .NET, vea [How to enable Transport Layer Security (TLS) 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 

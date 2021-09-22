@@ -20,12 +20,12 @@ description: Los administradores pueden aprender a buscar y usar defender para O
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5cc6c39c9d18e1fcc206f1d8cb81451201541e61
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fc614d873a07a40c1ef65fde3681ce89edaae6d8
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211507"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479578"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver Defender para obtener Office 365 informes en el portal Microsoft 365 Defender web
 
@@ -35,9 +35,23 @@ ms.locfileid: "59211507"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender para organizaciones Office 365 (por ejemplo, suscripciones Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 1 o Microsoft Defender para complementos del Plan 2 de Office 365) contienen una variedad de informes relacionados con la seguridad. Si tiene los [permisos](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)necesarios, puede ver estos informes en el  portal de Microsoft 365 Defender yendo a Informes de correo electrónico & colaboración Correo electrónico & informes \>  \> **de colaboración**. Para ir directamente a la página **Informes de colaboración & correo** electrónico, abra <https://security.microsoft.com/emailandcollabreport> .
+Microsoft Defender para organizaciones Office 365 (por ejemplo, suscripciones Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 1 o Microsoft Defender para complementos del Plan 2 de Office 365) contienen una variedad de informes relacionados con la seguridad. Si tiene los permisos [necesarios,](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)puede ver y descargar estos informes en el portal Microsoft 365 Defender web.
 
-![Página & informes de colaboración en el portal de Microsoft 365 Defender correo electrónico.](../../media/email-collaboration-reports.png)
+## <a name="view-and-download-reports"></a>Ver o descargar informes
+
+### <a name="view-reports"></a>Ver informes
+
+1. Vaya a **Informes Correo** \> **& colaboración** Correo & informes de \> **colaboración**. Para ir directamente a la página **Informes de colaboración & correo** electrónico, abra <https://security.microsoft.com/emailandcollabreport> .
+
+1. Elija el informe que desea ver y, a continuación, seleccione **Ver detalles**.  
+
+### <a name="download-reports"></a>Descargar informes
+
+1. En el portal Microsoft 365 Defender, vaya a **Informes**  >  **de correo electrónico & colaboración**.
+
+2. Seleccione **Informes para descargar**.
+
+![Página & informes de colaboración en el portal de Microsoft 365 Defender correo electrónico.](/microsoft-365/media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
@@ -145,7 +159,7 @@ La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en 
 - **Hora de hacer clic**
 - **Usuario**
 - **URL**
-- **Acción**
+- **Action**
 - **Aplicación**
 
 ### <a name="view-data-by-url-click-by-application"></a>Ver datos por dirección URL hacer clic por aplicación
@@ -177,7 +191,7 @@ La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en 
 - **Hora de hacer clic**
 - **Usuario**
 - **URL**
-- **Acción**
+- **Action**
 - **Aplicación**
 
 ## <a name="additional-reports-to-view"></a>Informes adicionales para ver
@@ -222,7 +236,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 
