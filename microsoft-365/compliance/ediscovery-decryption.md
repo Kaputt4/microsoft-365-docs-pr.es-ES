@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft 365 herramientas de exhibición de documentos electrónicos administran documentos cifrados adjuntos a mensajes de correo electrónico y almacenados en SharePoint Online y OneDrive para la Empresa.
-ms.openlocfilehash: 0662b6a2bbedefc2dd996491171dc1abde49bb8e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b816990e0524222938233089e6f920b753406544
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218977"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483068"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos
 
@@ -86,3 +86,15 @@ En ambos escenarios, una búsqueda de exhibición de documentos electrónicos pu
 Debe tener asignado el rol Descifrar RMS para obtener una vista previa, revisar y exportar archivos cifrados con tecnologías de cifrado de Microsoft. También debe tener asignado este rol para revisar y consultar archivos cifrados que se agregan a un conjunto de revisión en Advanced eDiscovery.
 
 Este rol se asigna de forma predeterminada al grupo de roles administrador de exhibición de documentos electrónicos en la **página** Permisos de la Centro de cumplimiento de Microsoft 365. Para obtener más información acerca del rol Descifrar RMS, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md#rms-decrypt).
+
+### <a name="decrypting-rms-protected-email-messages-and-encrypted-file-attachments-using-content-search-or-core-ediscovery"></a>Descifrar mensajes de correo electrónico protegidos por RMS y datos adjuntos de archivos cifrados mediante la búsqueda de contenido o la exhibición de documentos electrónicos principales
+
+Los mensajes de correo electrónico protegidos por derechos (protegidos por RMS) incluidos en los resultados de una búsqueda de contenido se descifrarán al exportarlos. Además, los archivos cifrados con una tecnología de cifrado de [Microsoft](encryption.md) y que se adjuntan a un mensaje de correo electrónico que se incluye en los resultados de la búsqueda se descifrarán cuando se exporten. Esta funcionalidad de descifrado está habilitada de forma predeterminada para los miembros del grupo de roles administrador de exhibición de documentos electrónicos. Esto se debe a que el rol de administración Descifrar RMS está asignado a este grupo de funciones de forma predeterminada. Tenga en cuenta lo siguiente al exportar mensajes de correo electrónico cifrados y datos adjuntos:
+  
+- Como se explicó anteriormente, para descifrar mensajes protegidos con RMS al exportarlos, debe exportar los resultados de búsqueda como mensajes individuales. Si exporta resultados de búsqueda a un archivo PST, los mensajes protegidos por RMS permanecen cifrados.
+
+- Los mensajes descifrados se identifican en el **informe ResultsLog.** Este informe contiene una columna denominada **Estado de descodificación** y un valor **de Descodificado** identifica los mensajes que se descifraron.
+
+- Además de descifrar los datos adjuntos de archivos al exportar resultados de búsqueda, también puede obtener una vista previa del archivo descifrado al obtener una vista previa de los resultados de búsqueda. Solo puede ver el mensaje de correo electrónico protegido por derechos después de exportarlo.
+
+- Si necesita impedir que alguien descifra mensajes de protección RMS y datos adjuntos de archivos cifrados, debe crear un grupo de roles personalizado (copiando el grupo de roles integrado del Administrador de exhibición de documentos electrónicos) y, a continuación, quitar el rol de administración Descifrar RMS del grupo de roles personalizado. A continuación, agregue la persona que no desea descifrar los mensajes como miembro del grupo de roles personalizado.

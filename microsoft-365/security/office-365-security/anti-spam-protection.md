@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la configuración y los filtros contra correo no deseado que ayudarán a evitar el correo no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9b960894b6923633489c005ee75307ec02b248f5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dcc96cf6ad7b7c6b43f4bc232cf0be67b72c1615
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218090"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483788"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protección contra correo no deseado en EOP
 
@@ -57,7 +57,7 @@ La configuración contra correo no deseado en EOP está hecha de las siguientes 
 
 - **Filtrado de** conexiones: identifica los servidores de origen de correo electrónico buenos y malos al principio de la conexión de correo electrónico entrante a través de la lista de direcciones IP permitidos, la lista de direcciones IP bloqueados y la lista segura *(una* lista dinámica pero no editable de remitentes de confianza mantenidos por Microsoft). Estas opciones se configuran en la directiva de filtro de conexión. Obtenga más información en [Configurar el filtrado de conexiones](configure-the-connection-filter-policy.md).
 
-- Filtrado de correo no deseado (filtrado de **contenido):** EOP usa los veredictos de filtrado de correo no deseado **Correo** no deseado **,** Correo no deseado de alta **confianza,** Correo electrónico masivo, **Correo** electrónico de suplantación de identidad y Correo electrónico de **suplantación** de identidad de elevada confianza para clasificar los mensajes. Puede configurar las acciones que deben realizarse en función de estos veredictos y puede configurar las opciones de notificación del usuario final para los mensajes que se han puesto en cuarentena en lugar de entregarse. Para obtener más información, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+- Filtrado de correo no deseado (filtrado de **contenido):** EOP usa los veredictos de filtrado de correo no deseado **Correo** no deseado **,** Correo no deseado de alta **confianza,** Correo electrónico masivo, **Correo** electrónico de suplantación de identidad y Correo electrónico de **suplantación** de identidad de elevada confianza para clasificar los mensajes. Puede configurar las acciones que deben realizarse en función de estos veredictos, puede configurar las opciones de notificación del usuario final para los mensajes que se han puesto en cuarentena en lugar de entregados y puede configurar lo que los usuarios pueden hacer a los mensajes en cuarentena mediante directivas de [cuarentena.](quarantine-policies.md) Para obtener más información, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
   > De forma predeterminada, el filtrado de correo no deseado está configurado para enviar mensajes marcados como correo no deseado a la carpeta de correo no deseado del destinatario. Sin embargo, en entornos híbridos donde EOP protege los buzones de correo de Exchange locales, debe configurar dos reglas de flujo de correo (también conocidas como reglas de transporte) en la organización de Exchange local para reconocer los encabezados de correo no deseado de EOP que se agregan a los mensajes. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
@@ -68,11 +68,11 @@ La configuración contra correo no deseado en EOP está hecha de las siguientes 
 
 ## <a name="manage-errors-in-spam-filtering"></a>Administrar errores en el filtrado de correo no deseado
 
-Es posible que los mensajes buenos se puedan identificar como correo no deseado (también conocidos como falsos positivos) o que el correo no deseado se pueda entregar en la Bandeja de entrada. Puede usar las sugerencias de las secciones siguientes para averiguar qué ocurrió y ayudar a evitar que suceda en el futuro.
+Es posible que los mensajes buenos se puedan identificar como correo no deseado (también conocidos como falsos positivos) o que el correo no deseado se pueda entregar a la Bandeja de entrada (también conocido como falsos negativos). Puede usar las sugerencias de las secciones siguientes para averiguar qué ocurrió y ayudar a evitar que suceda en el futuro.
 
 Estos son algunos procedimientos recomendados que se aplican a cualquiera de los dos escenarios:
 
-- Envíe siempre mensajes mal clasificados a Microsoft. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
+- Informe siempre mensajes mal clasificados a Microsoft. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - **Examine los encabezados de mensajes** contra correo no deseado: estos valores le dirán por qué se marcó un mensaje como correo no deseado o por qué omitió el filtrado de correo no deseado. Para obtener más información, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).
 

@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 09274557ea35c87cb4346e797d1b5e5e26e96aa3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ceaba46bbff3f63af8b7571660919d6c10959907
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219947"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484019"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Investigación y respuesta automatizadas en Microsoft 365 Defender
 
@@ -102,6 +102,16 @@ En Microsoft 365 Defender, cada investigación automatizada correlaciona las se�
 
 Para ver las investigaciones, vaya a la **página Incidentes.** Seleccione un incidente y, a continuación, seleccione la **pestaña Investigaciones.** Para obtener más información, vea [Detalles y resultados de una investigación automatizada.](m365d-autoir-results.md)
 
+## <a name="training-for-security-analysts"></a>Aprendizaje para analistas de seguridad
+
+Use este módulo de aprendizaje de Microsoft Learn para comprender cómo Microsoft 365 Defender autoatensado automatizado para la investigación y respuesta a incidentes.
+
+|Aprendizaje:|Recuperación automática automatizada con Microsoft 365 Defender|
+|---|---|
+|![Automatice la recuperación automática con Microsoft 365 Defender de aprendizaje.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender AI para automatizar la corrección de incidentes, lo que ayuda al equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz. <p> 11 min - 5 unidades |
+
+> [!div class="nextstepaction"]
+> [Iniciar >](/learn/modules/defender-self-healing/)
 
 ## <a name="next-steps"></a>Siguientes pasos
 

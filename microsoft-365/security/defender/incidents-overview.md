@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 824d32b07acbba0d19a5f2afdafffcbba53baeeb
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 0f0bffad66588c758d4ea8c59af365362504d7f4
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401043"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483335"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Respuesta a incidentes con Microsoft 365 Defender
 
@@ -181,7 +181,18 @@ Para obtener más información acerca de SecOps en todos los productos de Micros
 - [Procedimientos recomendados](/security/compass/security-operations)
 - [Vídeos y diapositivas](/security/compass/security-operations-videos-and-decks)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="training-for-security-analysts"></a>Aprendizaje para analistas de seguridad
+
+Use este módulo de aprendizaje de Microsoft Learn para comprender cómo usar Microsoft 365 Defender para administrar incidentes y alertas.
+
+|Aprendizaje:|Investigar incidentes con Microsoft 365 Defender|
+|---|---|
+|![Investigar incidentes con Microsoft 365 Defender de aprendizaje.](../../media/incidents-overview/m365-defender-address-security-investigation.svg)| Microsoft 365 Defender unifica los datos de amenazas de varios servicios y usa la inteligencia artificial para combinarlos en incidentes y alertas. Obtenga información sobre cómo minimizar el tiempo entre un incidente y su administración mediante respuesta y resolución posteriores. <p> 27 min - 6 unidades |
+
+> [!div class="nextstepaction"]
+> [Iniciar >](/learn/modules/defender-investigate-incidents/)
+
+## <a name="next-steps"></a>Siguientes pasos
 
 Use los pasos enumerados en función del nivel de experiencia o el rol del equipo de seguridad.
 

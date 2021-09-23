@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9be51ab9204ac8a950bf316f716b70b824980ba8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad85439d817013fa394fcb80bd5d47dbf391601f
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213797"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484124"
 ---
 # <a name="register-new-devices-yourself"></a>Registre nuevos dispositivos usted mismo
 
@@ -114,7 +114,7 @@ Puedes supervisar el progreso del registro del dispositivo en la página princip
 | El hash de hardware no es válido | El hash de hardware que proporcionaste para este dispositivo no se formateó correctamente. Compruebe el hash de hardware y vuelva a enviar. |
 | Dispositivo ya registrado | Este dispositivo ya está registrado en la organización. No se requiere ninguna acción adicional. |
 | Dispositivo reclamado por otra organización | Este dispositivo ya ha sido reclamado por otra organización. Consulta con el proveedor de dispositivos. |
-| Error inesperado | La solicitud no se pudo procesar automáticamente. Póngase en contacto con el soporte técnico y proporcione el identificador de solicitud: <requestId> |
+| Error inesperado | La solicitud no se pudo procesar automáticamente. Póngase en contacto con el soporte técnico y proporcione el identificador de solicitud: \<requestId\> |
 
 ### <a name="check-the-image"></a>Comprobar la imagen
 
@@ -124,7 +124,7 @@ También puedes aplicar la imagen por tu cuenta si lo prefieres. Para empezar, p
 
 ### <a name="autopilot-group-tag"></a>Etiqueta de grupo Autopilot
 
-Al usar el portal de administración para registrar dispositivos, asignamos automáticamente la etiqueta de grupo **Microsoft365Managed_Autopilot** Autopilot.
+Cuando usas el portal de administración para registrar dispositivos, asignamos automáticamente la etiqueta de grupo Autopilot asociada al perfil de dispositivo enumerado en Registrar dispositivos mediante [el Centro de partners.](register-devices-partner.md#register-devices-by-using-partner-center)
 El servicio supervisa todos los dispositivos Escritorio administrado de Microsoft todos los días y asigna la etiqueta de grupo a cualquiera que aún no la tenga.
 
 ### <a name="deliver-the-device"></a>Entregar el dispositivo

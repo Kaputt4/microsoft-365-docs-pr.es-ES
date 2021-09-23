@@ -15,12 +15,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 46e0090106ce87e130cd78c7a9f6e844bd2de187
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f4bf0a03db22df2c0e054bea86a8b65c5d77f28b
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218590"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482817"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -92,33 +92,43 @@ Preparar el espacio empresarial de origen:
 
 #### <a name="step-by-step-instructions-for-the-target-tenant-admin"></a>Instrucciones paso a paso para el administrador de inquilinos de destino
 
-1. Descargue el script SetupCrossTenantRelationshipForTargetTenant.ps1 para la instalación del espacio empresarial de destino desde [el repositorio GitHub destino](https://github.com/microsoft/cross-tenant/releases/tag/Preview).
+1. Descargue el script SetupCrossTenantRelationshipForTargetTenant.ps1 para la instalación del espacio empresarial de destino desde [el repositorio GitHub destino](https://aka.ms/LatestRelease). 
 2. Guarde el script (SetupCrossTenantRelationshipForTargetTenant.ps1) en el equipo desde el que va a ejecutar el script.
 3. Cree una conexión remota de PowerShell al Exchange Online de destino. De nuevo, asegúrese de que tiene los permisos necesarios para ejecutar los scripts de implementación con el fin de configurar el certificado y el almacenamiento de Azure Key Vault, la aplicación Mover buzón de correo, el extremo de migración exo y la relación de la organización de EXO.
 4. Cambie el directorio de la carpeta de archivos a la ubicación del script o compruebe que el script está guardado actualmente en la ubicación que se encuentra actualmente en la sesión remota de PowerShell.
 5. Ejecute el script con los siguientes parámetros y valores.
 
-   |Parámetro|Valor|Obligatorio u opcional
-   |---|---|---|
-   |-TargetTenantDomain|Dominio de inquilino de destino, como fabrikam \. onmicrosoft.com.|Obligatorio|
-   |-ResourceTenantDomain|Dominio de inquilino de origen, como contoso \. onmicrosoft.com.|Obligatorio|
-   |-ResourceTenantAdminEmail|Dirección de correo electrónico del administrador del espacio empresarial de origen. Este es el administrador de inquilinos de origen que dará su consentimiento al uso de la aplicación de migración de buzones enviada desde el administrador de destino. Este es el administrador que recibirá la invitación de correo electrónico para la aplicación.|Obligatorio|
-   |-ResourceTenantId|Identificador de organización de inquilino de origen (GUID).|Obligatorio|
-   |-SubscriptionId|La suscripción de Azure que se usará para crear recursos.|Obligatorio|
-   |-ResourceGroup|Nombre del grupo de recursos de Azure que contiene o contendrá el Almacén de claves.|Obligatorio|
-   |-KeyVaultName|Instancia de Azure Key Vault que almacenará el certificado o secreto de la aplicación de migración de buzones.|Obligatorio|
-   |-CertificateName|Nombre del certificado al generar o buscar certificado en el almacén de claves.|Obligatorio|
-   |-CertificateSubject|Nombre de sujeto del certificado de Azure Key Vault, como CN=contoso_fabrikam.|Obligatorio|
-   |-AzureResourceLocation|Ubicación del grupo de recursos de Azure y del almacén de claves.|Obligatorio|
-   |-ExistingApplicationId|Aplicación de migración de correo que se usará si ya se creó una.|Opcional|
-   |-AzureAppPermissions|Los permisos necesarios para concederse a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al inquilino de recursos).|Obligatorio|
-   |-UseAppAndCertGeneratedForSendingInvitation|Parámetro para usar la aplicación creada para la migración que se usará para enviar una invitación de vínculo de consentimiento al administrador del espacio empresarial de origen. Si no está presente, se pedirán las credenciales del administrador de destino para conectarse al Administrador de invitaciones de Azure y enviar la invitación como administrador de destino.|Opcional|
-   |-KeyVaultAuditStorageAccountName|Cuenta de almacenamiento donde se almacenarían los registros de auditoría de Key Vault.|Opcional|
-   |-KeyVaultAuditStorageResourceGroup|El grupo de recursos que contiene la cuenta de almacenamiento para almacenar registros de auditoría de Key Vault.|Opcional|
-   ||||
+    | Parámetro                                   | Valor                                                                                                                                                                                                                                                                               | Obligatorio u opcional |
+    | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+    | -TargetTenantDomain                         | Dominio de inquilino de destino, como fabrikam \. onmicrosoft.com.                                                                                                                                                                                                                            | Necesario             |
+    | -ResourceTenantDomain                       | Dominio de inquilino de origen, como contoso \. onmicrosoft.com.                                                                                                                                                                                                                             | Necesario             |
+    | -ResourceTenantAdminEmail                   | Dirección de correo electrónico del administrador del espacio empresarial de origen. Este es el administrador de inquilinos de origen que dará su consentimiento al uso de la aplicación de migración de buzones enviada desde el administrador de destino. Este es el administrador que recibirá la invitación de correo electrónico para la aplicación.                                    | Necesario             |
+    | -ResourceTenantId                           | Identificador de inquilino del inquilino de origen. Por ejemplo, el identificador de inquilino [de Azure AD](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) de contoso onmicrosoft.com \. inquilino.                                                                 | Necesario             |
+    | -SubscriptionId                             | La suscripción de Azure que se usará para crear recursos.                                                                                                                                                                                                                               | Necesario             |
+    | -ResourceGroup                              | Nombre del grupo de recursos de Azure que contiene o contendrá el Almacén de claves.                                                                                                                                                                                                              | Necesario             |
+    | -KeyVaultName                               | Instancia de Azure Key Vault que almacenará el certificado o secreto de la aplicación de migración de buzones.                                                                                                                                                                                     | Necesario             |
+    | -CertificateName                            | Nombre del certificado al generar o buscar certificado en Key Vault.                                                                                                                                                                                                         | Necesario             |
+    | -CertificateSubject                         | Nombre de sujeto del certificado de Azure Key Vault, como CN=contoso_fabrikam.                                                                                                                                                                                                              | Necesario             |
+    | -AzureResourceLocation                      | La ubicación (nombre para mostrar) del grupo de recursos de Azure y del almacén de claves. Puede ejecutar para `Get-AzResourceProvider -ProviderNamespace Microsoft.KeyVault | Select-Object -ExpandProperty Locations -Unique` ver los nombres disponibles.                                                     | Necesario             |
+    | -ExistingApplicationId                      | Aplicación de migración de correo que se usará si ya se creó una.                                                                                                                                                                                                                       | Opcional             |
+    | -AzureAppPermissions                        | Los permisos necesarios para concederse a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al inquilino de recursos).                                                    | Necesario             |
+    | -UseAppAndCertGeneratedForSendingInvitation | Parámetro para usar la aplicación creada para la migración que se usará para enviar una invitación de vínculo de consentimiento al administrador del espacio empresarial de origen. Si no está presente, se pedirán las credenciales del administrador de destino para conectarse al Administrador de invitaciones de Azure y enviar la invitación como administrador de destino. | Opcional             |
+    | -KeyVaultAuditStorageAccountName            | Cuenta de almacenamiento donde se almacenarían los registros de auditoría de Key Vault.                                                                                                                                                                                                                   | Opcional             |
+    | -KeyVaultAuditStorageResourceGroup          | El grupo de recursos que contiene la cuenta de almacenamiento para almacenar registros de auditoría de Key Vault.                                                                                                                                                                                              | Opcional             |
+    | -KeyVaultAuditStorageAccountLocation        | `Required if using a KeyVaultAuditStorage Parameter`Especifica la ubicación de la Storage cuenta.                                                                                                                                                                                 | Opcional             |
+    | -KeyVaultAuditStorageAccountSKU             | `Required if using a KeyVaultAuditStorage Parameter`Especifica el nombre sku de la Storage cuenta.                                                                                                                                                                                 | Opcional             |
+    |                                             | Standard_LRS. Almacenamiento con redundancia local.                                                                                                                                                                                                                                            |                      |
+    |                                             | Standard_ZRS. Almacenamiento redundante de zona.                                                                                                                                                                                                                                               |                      |
+    |                                             | Standard_GRS. Almacenamiento con redundancia geográfica.                                                                                                                                                                                                                                                |                      |
+    |                                             | Standard_RAGRS. Lea el almacenamiento con redundancia geográfica de acceso.                                                                                                                                                                                                                                  |                      |
+    |                                             | Premium_LRS. Premium almacenamiento redundante localmente.                                                                                                                                                                                                                                     |                      |
+    |                                             | Premium_ZRS. Premium de almacenamiento redundante de zona.                                                                                                                                                                                                                                        |                      |
+    |                                             | Standard_GZRS: almacenamiento con redundancia geográfica de zona redundante.                                                                                                                                                                                                                               |                      |
+    |                                             | Standard_RAGZRS: leer el almacenamiento redundante de zona con redundancia geográfica de acceso.                                                                                                                                                                                                                 |                      |
+    |                                             |                                                                                                                                                                                                                                                                                     |                      |
 
-    > [!NOTE]
-    > Asegúrese de haber instalado el módulo de PowerShell de Azure AD antes de ejecutar los scripts. Consulte aquí [los pasos](/powershell/azure/install-az-ps) de instalación
+    >[!Note]
+    > Asegúrese de haber instalado el módulo de PowerShell de Azure AD antes de ejecutar los scripts. Consulte aquí ![ los pasos de ](/powershell/azure/install-az-ps?view=azps-5.1.0) instalación
 
 6. El script se pausará y le pedirá que acepte o acepte la aplicación de migración Exchange buzón de correo que se creó durante este proceso. Aquí le mostramos un ejemplo.
 
@@ -187,14 +197,14 @@ La configuración de administración de destino ya está completa.
 
 7. Ejecute el script con los siguientes parámetros y valores necesarios.
 
-   |Parámetro|Valor|
-   |---|---|
-   |-SourceMailboxMovePublishedScopes|Grupo de seguridad habilitado para correo creado por el inquilino de origen para las identidades o buzones que están en el ámbito de la migración.|
-   |-ResourceTenantDomain|Nombre de dominio del espacio empresarial de origen, como contoso \. onmicrosoft.com.|
-   |-ApplicationId|Identificador de aplicación de Azure (GUID) de la aplicación usada para la migración. Id. de aplicación disponible a través de Azure Portal (Azure AD, Enterprise Aplicaciones, nombre de la aplicación, id. de aplicación) o incluido en el correo electrónico de invitación.|
-   |-TargetTenantDomain|Nombre de dominio de inquilino de destino, como fabrikam \. onmicrosoft.com.|
-   |-TargetTenantId|Identificador de inquilino del inquilino de destino. Por ejemplo, el identificador de inquilino de Azure AD de contoso \. onmicrosoft.com inquilino.|
-   |||
+    | Parámetro                         | Valor                                                                                                                                                                                                                 |
+    | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | -SourceMailboxMovePublishedScopes | Grupo de seguridad habilitado para correo creado por el inquilino de origen para las identidades o buzones que están en el ámbito de la migración.                                                                                                    |
+    | -ResourceTenantDomain             | Nombre de dominio del espacio empresarial de origen, como contoso \. onmicrosoft.com.                                                                                                                                                          |
+    | -ApplicationId                    | Identificador de aplicación de Azure (GUID) de la aplicación usada para la migración. Id. de aplicación disponible a través de Azure Portal (Azure AD, Enterprise Aplicaciones, nombre de la aplicación, id. de aplicación) o incluido en el correo electrónico de invitación. |
+    | -TargetTenantDomain               | Nombre de dominio de inquilino de destino, como fabrikam \. onmicrosoft.com.                                                                                                                                                         |
+    | -TargetTenantId                   | Identificador de inquilino del inquilino de destino. Por ejemplo, el identificador de inquilino [de Azure AD](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) de fabrikam onmicrosoft.com \. inquilino.  |
+    |                                   |                                                                                                                                                                                                                       |
 
     Aquí le mostramos un ejemplo.
 
@@ -312,39 +322,39 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
       - No puede agregar direcciones de proxy smtp heredadas desde el buzón de origen al mailuser de destino. Por ejemplo, no puede mantener contoso.com en el MEU en fabrikam.onmicrosoft.com objetos de inquilino). Los dominios están asociados a un inquilino de Azure AD Exchange Online único.
 
      Objeto  MailUser de destino de ejemplo:
-
-     |Atributo|Valor|
-     |---|---|
-     |Alias|LaraN|
-     |RecipientType|MailUser|
-     |RecipientTypeDetails|MailUser|
-     |UserPrincipalName|LaraN@northwintraders.onmicrosoft.com|
-     |PrimarySmtpAddress|Lara.Newton@northwind.com|
-     |ExternalEmailAddress|SMTP:LaraN@contoso.onmicrosoft.com|
-     |ExchangeGuid|1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8|
-     |DN de Exchange heredado|/o=First Organization/ou=Exchange Administrative Group|
-     ||(FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara|
-     |EmailAddresses|x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190|
-     ||7273f1f9-Lara|
-     ||smtp:LaraN@northwindtraders.onmicrosoft.com|
-     ||SMTP:Lara.Newton@northwind.com|
-     |||
+ 
+     | Atributo            | Valor                                                                                                                   |
+     | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+     | Alias                | LaraN                                                                                                                   |
+     | RecipientType        | MailUser                                                                                                                |
+     | RecipientTypeDetails | MailUser                                                                                                                |
+     | UserPrincipalName    | LaraN@northwintraders.onmicrosoft.com                                                                                   |
+     | PrimarySmtpAddress   | Lara.Newton@northwind.com                                                                                               |
+     | ExternalEmailAddress | SMTP:LaraN@contoso.onmicrosoft.com                                                                                      |
+     | ExchangeGuid         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                    |
+     | DN de Exchange heredado     | /o=First Organization/ou=Exchange Administrative Group                                                                  |
+     |                      | (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara                                                 |
+     | EmailAddresses       | x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190 |
+     |                      | 7273f1f9-Lara                                                                                                           |
+     |                      | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                             |
+     |                      | SMTP:Lara.Newton@northwind.com                                                                                          |
+     |                      |                                                                                                                         |
 
      Objeto **Mailbox de origen** de ejemplo:
 
-     |Atributo|Valor|
-     |---|---|
-     |Alias|LaraN|
-     |RecipientType|UserMailbox|
-     |RecipientTypeDetails|UserMailbox|
-     |UserPrincipalName|LaraN@contoso.onmicrosoft.com|
-     |PrimarySmtpAddress|Lara.Newton@contoso.com|
-     |ExchangeGuid|1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8|
-     |DN de Exchange heredado|/o=First Organization/ou=Exchange Administrative Group|
-     ||(FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara|
-     |EmailAddresses|smtp:LaraN@contoso.onmicrosoft.com
-     ||SMTP:Lara.Newton@contoso.com|
-     |||
+     | Atributo            | Valor                                                                   |
+     | -------------------- | ----------------------------------------------------------------------- |
+     | Alias                | LaraN                                                                   |
+     | RecipientType        | UserMailbox                                                             |
+     | RecipientTypeDetails | UserMailbox                                                             |
+     | UserPrincipalName    | LaraN@contoso.onmicrosoft.com                                           |
+     | PrimarySmtpAddress   | Lara.Newton@contoso.com                                                 |
+     | ExchangeGuid         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                    |
+     | DN de Exchange heredado     | /o=First Organization/ou=Exchange Administrative Group                  |
+     |                      | (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara |
+     | EmailAddresses       | smtp:LaraN@contoso.onmicrosoft.com                                      |
+     |                      | SMTP:Lara.Newton@contoso.com                                            |
+     |                      |                                                                         |
 
    - Los atributos adicionales pueden incluirse en Exchange escritura híbrida ya. Si no es así, deben incluirse.
    - msExchBlockedSendersHash: escribe datos de remitentes seguros y bloqueados de clientes en Active Directory local.
@@ -427,13 +437,21 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
 > [!NOTE]
 > La dirección de correo electrónico del archivo CSV debe ser la especificada en el inquilino de destino, no el inquilino de origen.
 
+:::image type="content" source="../media/tenant-to-tenant-mailbox-move/csv-sample.png" alt-text="Ejemplo CSV":::
+
 El envío por lotes de migración también se admite desde el nuevo Centro Exchange administración al seleccionar la opción entre inquilinos.
 
 #### <a name="update-on-premises-mailusers"></a>Actualizar MailUsers local
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo locales, tanto de origen como de destino, se actualicen con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+### <a name="test-mailbox"></a>Buzón de prueba
+
+`Test-MigrationServerAvailability -Endpoint <EndPoint> -TestMailbox <SMTP ADDRESS>`
+
+El parámetro TestMailbox especifica un buzón de correo en el servidor de destino. El cmdlet intentará tener acceso a este buzón con las credenciales de la cuenta de administrador en el servidor de destino. Use la dirección SMTP principal como valor para el parámetro -TestMailbox.  
+
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del movimiento?**
 
@@ -696,41 +714,38 @@ Recuerde que esta característica está actualmente en versión preliminar y el 
     ------------------        -------------------------               --------------------
     proxytest@fabrikam.com    e2513482-1d5b-4066-936a-cbc7f8f6f817    SMTP:proxytest@fabrikam.com
     ```
+    
+   - Cuando msExchRemoteRecipientType se establece en 8 (DeprovisionMailbox), para los MailUser locales que se migran al inquilino de destino, la lógica de depuración de proxy en Azure quitará los dominios no conocidos y restablecerá el primarySMTP a un dominio de propiedad. Al borrar msExchRemoteRecipientType en el mailuser local, la lógica de depuración de proxy ya no se aplica. <br/><br>A continuación se muestra el conjunto completo de planes de servicio posibles que incluyen Exchange Online.
 
-    - Cuando msExchRemoteRecipientType se establece en 8 (DeprovisionMailbox), para los MailUser locales que se migran al inquilino de destino, la lógica de depuración de proxy en Azure quitará los dominios no conocidos y restablecerá el primarySMTP a un dominio de propiedad. Al borrar msExchRemoteRecipientType en el mailuser local, la lógica de depuración de proxy ya no se aplica.
-
-      A continuación se muestra el conjunto completo de planes de servicio posibles que incluyen Exchange Online.
-
-      |Nombre|
-      |---|
-      |Advanced eDiscovery Storage (500 GB)|
-      |Caja de seguridad del cliente|
-      |Prevención de pérdida de datos|
-      |Servicios de Exchange Enterprise CAL (EOP, DLP)|
-      |Exchange Essentials|
-      |Exchange Foundation|
-      |Exchange Online (P1)|
-      |Exchange Online (plan 1)|
-      |Exchange Online (plan 2)|
-      |Archivado de Exchange Online para Exchange Online|
-      |Archivado de Exchange Online para Exchange Server|
-      |Exchange Online Complemento de usuario inactivo|
-      |Quiosco de Exchange Online|
-      |Exchange Online Multi-Geo|
-      |Plan 1 de Exchange Online|
-      |POP de Exchange Online|
-      |Exchange Online Protection|
-      |Barreras de información|
-      |Information Protection para Office 365 - Premium|
-      |Information Protection para Office 365 - Estándar|
-      |Ideas de MyAnalytics|
-      |Microsoft 365 Auditoría avanzada|
-      |Microsoft Bookings|
-      |Centro de negocios de Microsoft|
-      |Microsoft MyAnalytics (Completo)|
-      |eDiscovery avanzado de Office 365|
-      |Microsoft Defender para Office 365 (Plan 1)|
-      |Microsoft Defender para Office 365 (Plan 2)|
-      |Office 365 Privileged Access Management|
-      |Premium Cifrado en Office 365|
-      ||
+   | Nombre                                             |
+   | ------------------------------------------------ |
+   | Advanced eDiscovery Storage (500 GB)              |
+   | Caja de seguridad del cliente                                 |
+   | Prevención de pérdida de datos                             |
+   | Servicios de Exchange Enterprise CAL (EOP, DLP)      |
+   | Exchange Essentials                              |
+   | Exchange Foundation                              |
+   | Exchange Online (P1)                             |
+   | Exchange Online (plan 1)                         |
+   | Exchange Online (plan 2)                         |
+   | Archivado de Exchange Online para Exchange Online    |
+   | Archivado de Exchange Online para Exchange Server    |
+   | Exchange Online Complemento de usuario inactivo             |
+   | Quiosco de Exchange Online                            |
+   | Exchange Online Multi-Geo                        |
+   | Plan 1 de Exchange Online                           |
+   | POP de Exchange Online                              |
+   | Exchange Online Protection                       |
+   | Barreras de información                             |
+   | Information Protection para Office 365 - Premium  |
+   | Information Protection para Office 365 - Estándar |
+   | Ideas de MyAnalytics                          |
+   | Microsoft 365 Auditoría avanzada                  |
+   | Microsoft Bookings                               |
+   | Centro de negocios de Microsoft                        |
+   | Microsoft MyAnalytics (Completo)                     |
+   | eDiscovery avanzado de Office 365                   |
+   | Microsoft Defender para Office 365 (Plan 1)       |
+   | Microsoft Defender para Office 365 (Plan 2)       |
+   | Office 365 Privileged Access Management          |
+   | Premium Cifrado en Office 365                 |

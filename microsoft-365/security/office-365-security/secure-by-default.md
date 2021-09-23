@@ -17,12 +17,12 @@ ms.collection:
 description: Más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14ab9ee240c1219982663c1f3557c1cf5f244144
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 9a688953d320eb16f140d631f6231f642819fa89
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460033"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482847"
 ---
 # <a name="secure-by-default-in-office-365"></a>Proteger de forma predeterminada en Office 365
 
@@ -61,7 +61,7 @@ Puede encontrar más información sobre estas invalidaciones en [Crear listas de
 > [!NOTE]
 > Hemos dejado de usar la acción **Mover mensaje a correo no deseado** acción para un **correo electrónico de suplantación de identidad de alta confianza** veredicto en las directivas contra correo no deseado de EOP. Las directivas contra correo no deseado que usan esta acción para mensajes de suplantación de identidad de alta confianza se convertirán en **mensaje en cuarentena**. El mensaje de redirección **a la dirección de correo electrónico** acción para mensajes de suplantación de identidad de alta confianza no se ve afectada.
 
-La protección de forma predeterminada no es una configuración que se pueda activar o desactivar, pero es la forma en que nuestro filtrado funciona de forma predeterminada para mantener mensajes potencialmente peligrosos o no deseados fuera de los buzones. Los mensajes de suplantación de identidad (phishing) de alto nivel y malware deben estar en cuarentena. Solo los administradores pueden administrar los mensajes que se ponen en cuarentena como malware o suplantación de identidad de alta confianza, y también pueden notificar falsos positivos a Microsoft desde allí. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
+La protección de forma predeterminada no es una configuración que se pueda activar o desactivar, pero es la forma en que nuestro filtrado funciona de forma predeterminada para mantener mensajes potencialmente peligrosos o no deseados fuera de los buzones. Los mensajes de suplantación de identidad (phishing) de alto nivel y malware deben estar en cuarentena. De forma predeterminada, solo los administradores pueden administrar mensajes que se ponen en cuarentena como malware o phishing de elevada confianza, y también pueden notificar falsos positivos a Microsoft desde allí. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
 
 ## <a name="more-on-why-were-doing-this"></a>Más información sobre por qué estamos haciendo esto
 

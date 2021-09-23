@@ -23,12 +23,12 @@ ms.custom:
 description: Obtenga información sobre Microsoft Defender para Office 365 para archivos en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f9ab3c10292aed5f6f39a8534680cb8e9c5d3551
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fe601cdb6ea130e904f8b7526dc265cd19e2ab77
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189094"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483848"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 
@@ -66,7 +66,7 @@ Para obtener más información acerca de la experiencia del usuario cuando se ha
 
 Los archivos identificados como malintencionados por Caja fuerte Attachments for SharePoint, OneDrive y Microsoft Teams aparecerán en informes de [Microsoft Defender](view-reports-for-mdo.md) para Office 365 y en el Explorador (y detecciones en tiempo [real).](threat-explorer.md)
 
-A partir de mayo de 2018, cuando un archivo se identifica como malintencionado por los datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams, el archivo también está disponible en cuarentena. Para obtener más información, vea [Manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
+Cuando un archivo se identifica como malintencionado por Caja fuerte Attachments for SharePoint, OneDrive y Microsoft Teams, el archivo también está disponible en cuarentena, pero solo para los administradores. Para obtener más información, vea [Manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
 
 ## <a name="keep-these-points-in-mind"></a>Tenga en cuenta estos puntos
 

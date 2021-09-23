@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 577fc2cd228da6e09de01cf98e3e5deb9af7b730
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2b5ef1857c246629c5d5fb9da067ccaa6a5339e
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185670"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482828"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -99,22 +99,22 @@ Microsoft 365 Defender características entre productos incluyen:
 
 ## <a name="get-started"></a>Introducción
 
-Microsoft 365 Defender requisitos de licencia deben cumplirse para poder habilitar el servicio en el portal de Microsoft 365 Defender en [security.microsoft.com](https://security.microsoft.com). Para más información, vea:
+Microsoft 365 Defender requisitos de licencia deben cumplirse para poder habilitar el servicio en el portal de Microsoft 365 Defender en [security.microsoft.com](https://security.microsoft.com). Para obtener más información, vea:
 
 - [Requisitos de licencia](prerequisites.md#licensing-requirements)
 - [Activar Microsoft 365 Defender](m365d-enable.md)
 
-## <a name="training-for-security-analysts"></a>Formación para analistas de seguridad
+## <a name="training-for-security-analysts"></a>Aprendizaje para analistas de seguridad
 
 Con esta ruta de aprendizaje de Microsoft Learn, puede comprender Microsoft 365 Defender y cómo puede ayudar a identificar, controlar y corregir las amenazas de seguridad.
 
 |Aprendizaje:|Detectar y responder a ataques cibernéticos con Microsoft 365 Defender|
 |---|---|
-|![Microsoft 365 Defender de aprendizaje.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender unifica las señales de amenazas entre puntos de conexión, identidades, correo electrónico y aplicaciones para proporcionar una protección integrada frente ataques cibernéticos sofisticados. Microsoft 365 Defender es una experiencia central desde la cual investigar y responder a incidentes y buscar proactivamente actividades de ciberseguridad malintencionadas en curso.<p> 1 h 38 min - Learning path - 5 módulos|
+|![Icono de aprendizaje de Microsoft 365 Defender.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender unifica las señales de amenazas entre puntos de conexión, identidades, correo electrónico y aplicaciones para proporcionar una protección integrada frente ataques cibernéticos sofisticados. Microsoft 365 Defender es una experiencia central desde la cual investigar y responder a incidentes y buscar proactivamente actividades de ciberseguridad malintencionadas en curso.<p> 1 h 38 min - Learning path - 5 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/paths/defender-detect-respond/)
 
 
-## <a name="see-also"></a>Consulte también
-- [Implementar capacidades de protección contra amenazas en Microsoft 365 E5](/microsoft-365/solutions/deploy-threat-protection)
+## <a name="see-also"></a>Vea también
+- [Implementar la protección contra ransomware para el inquilino de Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)

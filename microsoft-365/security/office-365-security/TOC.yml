@@ -288,6 +288,8 @@
           href: mfi-slow-mail-flow-rules-insight.md
         - name: Administrar mensajes en cuarentena y archivos como administrador
           href: manage-quarantined-messages-and-files.md
+        - name: Directivas de cuarentena
+          href: quarantine-policies.md
         - name: Quitar usuarios bloqueados del portal de Usuarios restringidos
           href: removing-user-from-restricted-users-portal-after-spam.md
         - name: Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
@@ -330,7 +332,7 @@
           href: backscatter-messages-and-eop.md
         - name: Nivel de quejas en masa (BCL)
           href: bulk-complaint-level-values.md
-        - name: Notificaciones de spam para usuarios finales
+        - name: Notificaciones de cuarentena
           href: use-spam-notifications-to-release-and-report-quarantined-messages.md
         - name: Grupos de entrega de salida
           href: high-risk-delivery-pool-for-outbound-messages.md

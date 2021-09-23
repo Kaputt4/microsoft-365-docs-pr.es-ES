@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de correo no deseado saliente en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28463c30b4c256c813e5f949db43eceb060fa02a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ec82ce1f1049039fc6f4317662e5de016ba381d7
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219817"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483824"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurar el filtrado de correo no deseado saliente en EOP
 
@@ -43,7 +43,7 @@ EOP usa directivas de correo no deseado salientes como parte de la defensa gener
 
 Los administradores pueden ver, editar y configurar (pero no eliminar) la directiva de correo no deseado saliente predeterminada. Para mayor granularidad, también puede crear directivas de correo no deseado saliente personalizadas que se aplican a usuarios, grupos o dominios específicos de la organización. Las directivas personalizadas siempre tienen prioridad sobre las directivas predeterminadas, pero su prioridad (el orden de ejecución) se puede cambiar.
 
-Puede configurar directivas de correo no deseado salientes en el portal de Microsoft 365 Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones Exchange Online).
+Puede configurar directivas de correo no deseado salientes en el portal de Microsoft 365 Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin Exchange Online buzones de correo).
 
 Los elementos básicos de una directiva de correo no deseado saliente en EOP son:
 
@@ -204,7 +204,7 @@ La creación de una directiva de correo no deseado saliente personalizada en el 
 
    Para la directiva de correo no deseado saliente predeterminada, la sección **Aplicado** a no está disponible (la directiva se aplica a todos) y no puede cambiar el nombre de la directiva.
 
-Vea las secciones siguientes para habilitar o deshabilitar una directiva, establecer el orden de prioridad de la directiva o configurar las notificaciones en cuarentena para el usuario final.
+Para habilitar o deshabilitar una directiva, establezca el orden de prioridad de la directiva o configure las notificaciones del usuario final, consulte las secciones siguientes.
 
 ### <a name="enable-or-disable-custom-outbound-spam-policies"></a>Habilitar o deshabilitar directivas de correo no deseado saliente personalizadas
 

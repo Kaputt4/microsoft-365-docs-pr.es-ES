@@ -19,12 +19,12 @@ description: Los administradores pueden aprender a buscar y usar los informes de
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d85918b35f4c05a83b779a7f3893d0c5942c4894
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b635c865901c01b32549fe51a71c795c47d6993c
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211527"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483212"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -35,9 +35,7 @@ ms.locfileid: "59211527"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Hay una variedad de informes disponibles en el portal de Microsoft 365 Defender para ayudarle a ver cómo las características de seguridad del correo electrónico, como el correo no deseado, antimalware y las características de cifrado en Microsoft 365 protegen su <https://security.microsoft.com> organización. Si tiene los [permisos](#what-permissions-are-needed-to-view-these-reports)necesarios, puede ver estos informes en el  portal de Microsoft 365 Defender yendo a Informes de correo electrónico & colaboración Correo electrónico & informes \>  \> **de colaboración**. Para ir directamente a la página **Informes de colaboración & correo** electrónico, abra <https://security.microsoft.com/emailandcollabreport> .
-
-![Página & informes de colaboración en el portal de Microsoft 365 Defender correo electrónico.](../../media/email-collaboration-reports.png)
+Hay una variedad de informes disponibles en el portal de Microsoft 365 Defender para ayudarle a ver cómo las características de seguridad del correo electrónico, como el correo no deseado, antimalware y las características de cifrado en Microsoft 365 protegen su <https://security.microsoft.com> organización. Si tiene los permisos [necesarios,](#what-permissions-are-needed-to-view-these-reports)puede ver y descargar estos informes en el portal Microsoft 365 Defender web. Para obtener más información, [vea View Defender for Office 365 reports](view-reports-for-mdo.md#view-and-download-reports).
 
 > [!NOTE]
 >
@@ -67,7 +65,7 @@ La tabla de detalles debajo del gráfico muestra la siguiente información:
 
 - **Tiempo de creación**
 - **Nombre de usuario**
-- **Acción**
+- **Action**
 
 Puede filtrar tanto el gráfico como  la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el menú desplegable que aparece:
 
@@ -99,7 +97,7 @@ Si selecciona Desglose **de gráficos por dirección,** los siguientes gráficos
 
 La siguiente información se muestra en la tabla de detalles debajo del gráfico:
 
-- **Date**
+- **Fecha**
 - **Directiva DLP** (**Ver datos por DLP Exchange reglas de transporte)**
 - **Regla de transporte**
 - **Asunto**
@@ -128,7 +126,7 @@ Si selecciona Desglose **de gráficos por gravedad,** los siguientes gráficos e
 
 La siguiente información se muestra en la tabla de detalles debajo del gráfico:
 
-- **Fecha**
+- **Date**
 - **Directiva DLP** (**Ver datos por DLP Exchange reglas de transporte)**
 - **Regla de transporte**
 - **Asunto**
@@ -383,7 +381,7 @@ En la **página Informe de detecciones de malware,** el gráfico muestra la sigu
 
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 
-- **Date**
+- **Fecha**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Id. de** mensaje: disponible en el **campo de encabezado Id. de** mensaje en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (tenga en cuenta los corchetes angulares).
@@ -447,11 +445,11 @@ En la **página Informe** de correo suplantado, puede filtrar tanto el gráfico 
 
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 
-- **Date**
+- **Fecha**
 - **Usuario suplantado**
 - **Infraestructura de envío**
 - **Tipo de suplantación**
-- **Result**
+- **Resultado**
 - **Código de resultados**
 - **SPF**
 - **DKIM**
@@ -567,7 +565,7 @@ En la vista Ver  **datos por \> phishing** de correo electrónico y desglose de 
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Date**
+- **Fecha**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**
@@ -608,7 +606,7 @@ En la vista Ver  **datos por malware de \> correo** electrónico y desglose de g
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**
@@ -752,7 +750,7 @@ En la **vista Ver datos por invalidación del** sistema y Desglose de gráficos 
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Date**
+- **Fecha**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**
@@ -919,7 +917,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b0b7e93c59484bb3f7b1e34d33dd3ee7a19f7634
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 291856addf7ce2702a1cd5f26c9cf3d2e833bbc2
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217947"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483416"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -119,6 +119,8 @@ La siguiente configuración de suplantación de identidad está disponible en la
     - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
+    Si selecciona **Poner en cuarentena el** mensaje, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que fueron puestos en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+
 ### <a name="unauthenticated-sender"></a>Remitente no autenticado
 
 Las notificaciones de remitente no autenticados [](#spoof-settings) forman parte de la configuración de suplantación de identidad que están disponibles en las directivas contra suplantación de identidad en EOP y Defender para Office 365 como se describe en la sección anterior. La siguiente configuración solo está disponible cuando la inteligencia de suplantación está activada:
@@ -199,6 +201,9 @@ La siguiente configuración de suplantación solo está disponible en las direct
     - [Cuarentena en Microsoft 365](quarantine-email-messages.md)
     - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+
+    Si selecciona **Poner en cuarentena el** mensaje, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por suplantación de usuario o protección de suplantación de dominio. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+
   - Entregue el mensaje y agregue otras direcciones a la línea **CCO:** entregue el mensaje a los destinatarios previstos y entregue el mensaje de forma silenciosa a los destinatarios especificados.
   - **Elimine el mensaje antes de entregarlo:** elimina silenciosamente todo el mensaje, incluidos todos los datos adjuntos.
 
@@ -217,7 +222,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
   - **No aplicar ninguna acción:** tenga en cuenta que este  valor tiene el mismo resultado que activar la inteligencia de buzones pero desactivar Habilitar protección de **suplantación de inteligencia**.
   - **Redirigir el mensaje a otras direcciones de correo electrónico**
   - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-  - **Poner en cuarentena el mensaje**
+  - **Poner en cuarentena el** mensaje: si selecciona esta acción, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que la protección de inteligencia de buzones de correo pone en cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
   - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
   - **Eliminar el mensaje antes de entregarlo**
 

@@ -16,12 +16,12 @@ ms.collection:
 description: Seguridad en Office 365, desde EOP a Defender para Office 365 Planes 1 y 2, Configuraciones de seguridad estándar vs. estrictas y mucho más. Comprenda lo que tiene y aprenda a proteger sus propiedades.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ef88d80a4d02a51055c9bfe338617b04162888a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: fac32e667b0393cacf56c9e478d50980c7ad36ec
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571968"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482792"
 ---
 # <a name="office-365-security"></a>Seguridad de Office 365
 
@@ -91,7 +91,7 @@ comenzando por **Exchange Online Protection**:
 
 |Prevención/detección|Investigación|Respuesta|
 |---|---|---|
-|Entre las tecnologías se incluyen:<ul><li>correo no deseado</li><li>suplantación de identidad</li><li>malware</li><li>correo masivo</li><li>inteligencia contra la suplantación de identidad</li><li>detección de suplantación</li><li>Cuarentena del administrador</li><li>Entregas de usuarios y administradores de Falsos positivos y Falsos negativos</li><li>Permitir/bloquear direcciones URL y archivos</li><li>Informes</li></u1>|<li>Búsqueda en el registro de auditoría</li><li>Seguimiento de mensajes</li>|<li>Purga automática (ZAP)</li><li>Refinamiento y pruebas de las listas de permitidos y bloqueados</li>|
+|Entre las tecnologías se incluyen:<ul><li>correo no deseado</li><li>suplantación de identidad</li><li>malware</li><li>correo masivo</li><li>inteligencia contra la suplantación de identidad</li><li>detección de suplantación</li><li>Cuarentena del administrador</li><li>Entregas de usuarios y administradores de Falsos positivos y Falsos negativos</li><li>Permitir/bloquear direcciones URL y archivos</li><li>Informes</li></ul>|<li>Búsqueda en el registro de auditoría</li><li>Seguimiento de mensajes</li>|<li>Purga automática de hora cero (ZAP)</li><li>Refinamiento y pruebas de las listas de permitidos y bloqueados</li>|
 |
 
 Si desea profundizar en EOP, **[vaya a este artículo](exchange-online-protection-overview.md)**.
@@ -103,7 +103,7 @@ Ganancias con **Defender para Office 365, Plan 1** (hasta la fecha):
 
 |Prevención/detección|Investigación|Respuesta|
 |---|---|---|
-|Las tecnologías incluyen todo lo de EOP además de:<u1><li>Datos adjuntos seguros</li><li>Vínculos seguros<li>Protección de Microsoft Defender para Office 365 para cargas de trabajo (p. ej. SharePoint Online y OneDrive para la Empresa)</li><li>Protección al momento del clic en correos electrónicos, clientes de Office y Teams</li><li>Protección contra phishing en Defender para Office 365</li><li>Protección contra la suplantación de usuario y de dominio</li><li>Alertas y API de integración SIEM para las alertas</li>|<li>API de integración SIEM para la detección</li><li>**Herramienta de detecciones en tiempo real**</li><li>Seguimiento de URL</li>|<li>Igual</li></u1>
+|Las tecnologías incluyen todo lo de EOP además de:<ul><li>Datos adjuntos seguros</li><li>Vínculos seguros<li>Protección de Microsoft Defender para Office 365 para cargas de trabajo (p. ej. SharePoint Online y OneDrive para la Empresa)</li><li>Protección al momento del clic en correos electrónicos, clientes de Office y Teams</li><li>Protección contra phishing en Defender para Office 365</li><li>Protección contra la suplantación de usuario y de dominio</li><li>Alertas y API de integración SIEM para las alertas</li>|<li>API de integración SIEM para la detección</li><li>**Herramienta de detecciones en tiempo real**</li><li>Seguimiento de URL</li>|<li>Igual</li></ul>
 
 Por lo tanto, Microsoft Defender para Office 365 P1 amplía el aspecto de la ***prevención** _ y añade formas adicionales de _*_detección_**.
 
@@ -114,7 +114,7 @@ Ganancias con **Defender para Office 365, Plan 2** (hasta la fecha):
 
 |Prevención/detección|Investigación|Respuesta|
 |---|---|---|
-|Las tecnologías incluyen todo lo de EOP y Microsoft Defender para Office 365 P1, además de:<u1><li>Igual</li>|<li>**Explorador de amenazas**</li><li>Rastreadores de amenazas</li><li>Vistas de la campaña</li>|<li>Investigación y respuesta automatizadas (AIR)</li><li>AIR desde el Explorador de amenazas</li><li>AIR para usuarios en peligro</li><li>API de integración SIEM para investigaciones automatizadas</li>
+|Las tecnologías incluyen todo lo de EOP y Microsoft Defender para Office 365 P1, además de:<ul><li>Igual</li>|<li>**Explorador de amenazas**</li><li>Rastreadores de amenazas</li><li>Vistas de la campaña</li>|<li>Investigación y respuesta automatizadas (AIR)</li><li>AIR desde el Explorador de amenazas</li><li>AIR para usuarios en peligro</li><li>API de integración SIEM para investigaciones automatizadas</li>
 
 Por lo tanto, Microsoft Defender para Office 365 P2 amplía el aspecto de ***investigación y respuesta*** y añade un nuevo punto de seguridad a la búsqueda. Automatización.
 

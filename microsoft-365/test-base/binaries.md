@@ -14,27 +14,30 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 38c21f69680d6e9d6a3231c8bf2dc44f15e057f6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a1b0ca307cbbfb5b2c99085d4b3bec89758d51bd
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219710"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483008"
 ---
 # <a name="step-3-upload-your-binaries-dependencies-and-scripts"></a>Paso 3: Upload archivos binarios, dependencias y scripts
 
 En esta pestaña, cargará un único paquete zip que contenga los archivos binarios, dependencias y scripts usados para ejecutar el conjunto de pruebas.
 
+> [!NOTE]
+> El tamaño del paquete zip debe estar entre un mínimo de 10 MB y un máximo de 2 GB.
+
 ## <a name="upload-package-zip-file"></a>Upload archivo zip del paquete
 
-![Upload los archivos binarios.](Media/AddBinaries.png)
+:::image type="content" alt-text="Upload los archivos binarios." source="Media/AddBinaries.png":::
 
-  - Las dependencias cargadas pueden incluir marcos de prueba, motores de scripting o datos a los que se tendrá acceso para ejecutar los casos de prueba o aplicación. Por ejemplo, puede cargar Selenio y un instalador de webdriver para ayudar a ejecutar pruebas basadas en explorador.
+  - Las dependencias cargadas pueden incluir marcos de prueba, motores de scripting o datos a los que se tendrá acceso para ejecutar los casos de prueba o aplicación. Por ejemplo, puede cargar Selenio y un instalador de controladores web para ayudar a ejecutar pruebas basadas en explorador.
   - Es una práctica recomendada asegurarse de que las actividades de script se mantienen modulares, por ejemplo. 
-    - El ```Install``` script solo realiza operaciones de instalación.
-    - El ```Launch``` script solo inicia la aplicación.
-    - El ```Close``` script solo cierra la aplicación.
-    - El ```Uninstall``` script opcional solo desinstala la aplicación.
+    - El `Install` script solo realiza operaciones de instalación.
+    - El `Launch` script solo inicia la aplicación.
+    - El `Close` script solo cierra la aplicación.
+    - El `Uninstall` script opcional solo desinstala la aplicación.
 
 **Actualmente, el portal solo admite scripts de PowerShell.**
 

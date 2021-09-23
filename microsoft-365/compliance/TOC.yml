@@ -40,6 +40,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: Referencia de características para el cumplimiento de las comunicaciones
           href: communication-compliance-feature-reference.md
+        - name: Cumplimiento de comunicaciones con soluciones de SIEM
+          href: communication-compliance-siem.md
         - name: 'Caso práctico: Contoso configura rápidamente una directiva de lenguaje ofensivo'
           href: communication-compliance-case-study.md
     - name: Administración de riesgos internos

@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas avanzadas contra la suplantación de identidad que están disponibles en organizaciones con Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35f8ae19b0741153d6cad695059bd91aa6199aea
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c9446104a003dfe6374e86b4525dde6a2609b9ea
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219827"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483272"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -204,7 +204,10 @@ La creación de una directiva contra suplantación de identidad personalizada en
        - **No aplicar ninguna acción**
        - **Redirigir el mensaje a otras direcciones de correo electrónico**
        - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-       - **Poner en cuarentena el mensaje**
+       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de suplantación de usuario. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+
+         Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de suplantación de usuario). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
+  
        - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
        - **Eliminar el mensaje antes de entregarlo**
 
@@ -212,7 +215,10 @@ La creación de una directiva contra suplantación de identidad personalizada en
        - **No aplicar ninguna acción**
        - **Redirigir el mensaje a otras direcciones de correo electrónico**
        - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-       - **Poner en cuarentena el mensaje**
+       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de suplantación de dominio.
+
+         Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de suplantación de dominio). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
+
        - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
        - **Eliminar el mensaje antes de entregarlo**
 
@@ -220,13 +226,18 @@ La creación de una directiva contra suplantación de identidad personalizada en
        - **No aplicar ninguna acción**
        - **Redirigir el mensaje a otras direcciones de correo electrónico**
        - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-       - **Poner en cuarentena el mensaje**
+       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que la protección de inteligencia de buzones de correo pone en cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+
+         Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de inteligencia de buzones). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
+
        - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
        - **Eliminar el mensaje antes de entregarlo**
 
      - **Si el mensaje se detecta como** suplantación: esta configuración solo está disponible si seleccionó Habilitar la inteligencia de suplantación en la página anterior.  Seleccione una de las siguientes acciones en la lista desplegable para los mensajes de remitentes suplantados bloqueados:
        - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-       - **Poner en cuarentena el mensaje**
+       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+
+         Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de inteligencia suplantación). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
 
    - **Sugerencias de & indicadores** de seguridad: Configure las siguientes opciones:
      - **Mostrar el primer contacto consejo de seguridad**: Para obtener más información, vea First contact [consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip).
@@ -235,9 +246,6 @@ La creación de una directiva contra suplantación de identidad personalizada en
      - **Mostrar caracteres inusuales de suplantación de usuario consejo de seguridad** Esta configuración solo está disponible si seleccionó **Habilitar** usuarios para proteger o Habilitar dominios **para** proteger en la página anterior.
      - **Mostrar (?)** para remitentes no autenticados para suplantación de identidad: esta configuración solo está disponible si seleccionó Habilitar la inteligencia de suplantación de identidad en la página anterior.  Agrega un signo de interrogación a la foto del remitente en el cuadro De de  Outlook si el mensaje no pasa las comprobaciones SPF o DKIM y el mensaje no pasa dmarc ni autenticación compuesta [.](email-validation-and-authentication.md#composite-authentication)
      - **Mostrar etiqueta "via":** esta configuración solo está disponible si seleccionó Habilitar la inteligencia **de** suplantación en la página anterior. Agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección De si es diferente del dominio en la firma DKIM o la **dirección MAIL FROM.** El valor predeterminado está en (seleccionado). Para desactivarla, desactive la casilla.
-
-       > [!NOTE]
-       > Si no tiene la configuración de etiqueta **Mostrar "a** través", el signo de interrogación y la etiqueta via están controlados por show  **(?)** para remitentes no autenticados para la configuración de suplantación de identidad en su organización.
 
      Para activar una configuración, active la casilla. Para desactivarla, desactive la casilla.
 
@@ -365,17 +373,22 @@ En este ejemplo se crea una directiva contra phishing denominada Cuarentena de i
 
 - La directiva está habilitada (no estamos usando el parámetro _Enabled_ y el valor predeterminado es `$true` ).
 - La descripción es: Directiva del departamento de investigación.
+- Cambia la acción predeterminada para las detecciones de [](quarantine-policies.md) suplantación a Cuarentena y usa la directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _SpoofQuarantineTag)._
 - Habilita la protección de dominios de la organización para todos los dominios aceptados y la protección de dominios de destino para fabrikam.com.
+- Especifica Cuarentena como acción para las detecciones de [](quarantine-policies.md) suplantación de dominio y usa la directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _TargetedDomainQuarantineTag)._
 - Especifica Mai Fujito (mfujito@fabrikam.com) como el usuario que se debe proteger de la suplantación.
-- Habilita la inteligencia de buzones.
-- Habilita la protección de inteligencia de buzones de correo y especifica la acción de cuarentena.
-- Habilita las sugerencias de seguridad.
+- Especifica Cuarentena como acción para las detecciones de [](quarantine-policies.md) suplantación de usuario y usa la directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _TargetedUserQuarantineTag)._
+- Habilita la inteligencia de buzones (_EnableMailboxIntelligence_), permite que la protección de inteligencia de buzones de correo tome [](quarantine-policies.md) medidas en los mensajes (_EnableMailboxIntelligenceProtection_), especifica Cuarentena como acción para los mensajes detectados y usa la directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _MailboxIntelligenceQuarantineTag)._
+- Habilita todas las sugerencias de seguridad.
 
 ```powershell
-New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
+New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).
+
+> [!NOTE]
+> Para obtener instrucciones detalladas para especificar las directivas de cuarentena que se usarán en una directiva contra [phishing, vea Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies). [](quarantine-policies.md)
 
 #### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a>Paso 2: Usar PowerShell para crear una regla contra suplantación de identidad
 
@@ -466,6 +479,9 @@ Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Set-AntiPhishPolicy](/powershell/module/exchange/Set-AntiPhishPolicy).
+
+> [!NOTE]
+> Para obtener instrucciones detalladas para especificar las directivas de cuarentena que se usarán en una directiva contra [phishing, vea Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies). [](quarantine-policies.md)
 
 ### <a name="use-powershell-to-modify-anti-phish-rules"></a>Usar PowerShell para modificar reglas contra suplantación de identidad
 

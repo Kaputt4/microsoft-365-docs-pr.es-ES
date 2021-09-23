@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el aprendizaje de simulación de ataques para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fa10d0d29b76d1631dd349d255b6c386557b5b8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ece26ef2d41637d35afa8d719b6b785b733ca9f1
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214487"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484160"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Introducción al uso de aprendizaje de simulación de ataques
 
@@ -44,9 +44,13 @@ Si su organización tiene Microsoft 365 E5 o Microsoft Defender para el Plan 2 d
 
 - Para obtener más información acerca de la disponibilidad del aprendizaje de simulación de ataques en Microsoft 365 suscripciones, vea Microsoft Defender para obtener Office 365 [descripción del servicio](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Debe tener asignados permisos en el portal de Microsoft 365 Defender o en Azure Active Directory para poder realizar los procedimientos descritos en este artículo. En concreto, debe ser miembro de **administración** de la **organización,** administrador de seguridad o uno de los siguientes roles:
-  - **Administradores del simulador de ataque:** crea y administra todos los aspectos de las campañas de simulación de ataque.
-  - **Autores de carga del simulador de** ataque: crea cargas de ataque que un administrador puede iniciar más adelante.
+- Debe tener asignados permisos en Azure Active Directory **para** poder realizar los procedimientos de este artículo. En concreto, debe ser miembro de uno de los siguientes roles:
+  - **Administración de organizaciones**
+  - **Administrador de seguridad**
+  - **Administradores de simulación de ataques:** <sup>\*</sup> crear y administrar todos los aspectos de las campañas de simulación de ataques.
+  - **Autor de la carga de** <sup>\*</sup> ataque: cree cargas de ataque que un administrador pueda iniciar más adelante.
+
+  <sup>\*</sup>La adición de usuarios a este rol en el portal de Microsoft 365 Defender no es compatible actualmente.
 
   Para obtener más información, vea [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) o About admin [roles](../../admin/add-users/about-admin-roles.md).
 

@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo definir directivas Caja fuerte dat
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ffe207eb1f1aab42f3a0c2639410d308fbfb64e0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8fcfb578f69062d39caa44886b63a84e926f9635
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217930"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483368"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte datos adjuntos en Microsoft Defender para Office 365
 
@@ -40,7 +40,7 @@ Caja fuerte Los datos adjuntos son una característica de [Microsoft Defender](w
 
 No hay ninguna directiva de datos adjuntos integrada o predeterminada Caja fuerte datos adjuntos. Para obtener Caja fuerte análisis de datos adjuntos de mensajes de correo electrónico, debe crear una o más directivas de datos adjuntos Caja fuerte como se describe en este artículo.
 
-Puede configurar directivas de datos adjuntos de Caja fuerte en el portal de Microsoft 365 Defender o en PowerShell (PowerShell de Exchange Online para organizaciones de Microsoft 365 elegibles con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de Exchange Online, pero con Defender para suscripciones de complemento de Office 365).
+Puede configurar directivas de datos adjuntos de Caja fuerte en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 elegibles con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online buzones de correo, pero con Defender para Office 365 suscripciones de complemento).
 
 Los elementos básicos de una directiva Caja fuerte datos adjuntos son:
 
@@ -72,7 +72,7 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
   **Notas**:
 
-  - Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para obtener la configuración recomendada para las Caja fuerte de datos adjuntos, [vea Caja fuerte de datos adjuntos](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
@@ -118,6 +118,10 @@ La creación de una directiva Caja fuerte datos adjuntos personalizada en el por
      - **Entrega dinámica (característica de vista previa)**
 
      Estos valores se explican en Caja fuerte [de directiva de datos adjuntos](safe-attachments.md#safe-attachments-policy-settings).
+
+   - **Directiva de cuarentena:** seleccione la directiva de cuarentena que se aplica a los mensajes que se ponen en cuarentena mediante Caja fuerte datos adjuntos (**Bloque**, **Reemplazar** o **Entrega dinámica**). Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+
+     Un valor en blanco significa que se usa la directiva de cuarentena predeterminada (AdminOnlyAccessPolicy para las detecciones de correo electrónico Caja fuerte datos adjuntos). Cuando más adelante edite la directiva Caja fuerte datos adjuntos o vea la configuración, se muestra el nombre de directiva de cuarentena predeterminado.
 
    - Redirigir mensajes con datos adjuntos detectados: si selecciona Habilitar redireccionamiento, puede especificar una dirección de correo electrónico en el cuadro Enviar mensajes que contengan datos adjuntos **bloqueados,** supervisados o reemplazados en el cuadro dirección de correo electrónico especificada para enviar mensajes que contengan datos adjuntos de malware para su análisis e investigación.
 
@@ -237,12 +241,13 @@ Crear una directiva Caja fuerte datos adjuntos en PowerShell es un proceso de do
 Para crear una directiva de datos adjuntos seguros, use esta sintaxis:
 
 ```PowerShell
-New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
+New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>] [-QuarantineTag <QuarantinePolicyName>]
 ```
 
 En este ejemplo se crea una directiva de datos adjuntos segura denominada Contoso All con los siguientes valores:
 
 - Bloquear los mensajes que se encuentran que contienen malware mediante el examen de documentos Caja fuerte (no estamos usando el parámetro _Action_ y el valor predeterminado es `Block` ).
+- Se usa [la directiva de](quarantine-policies.md) cuarentena predeterminada (AdminOnlyAccessPolicy), ya que no estamos usando el parámetro _QuarantineTag._
 - El redireccionamiento está habilitado y los mensajes que se encuentran que contienen malware se envían a sec-ops@contoso.com para su análisis e investigación.
 - Si Caja fuerte análisis de datos adjuntos no está disponible o encuentra errores, no entregue el mensaje (no estamos usando el parámetro _ActionOnError_ y el valor predeterminado es `$true` ).
 
@@ -251,6 +256,9 @@ New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true -Redirect $true -Redi
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy).
+
+> [!NOTE]
+> Para obtener instrucciones detalladas para especificar la directiva de cuarentena que se usará en una directiva de datos adjuntos seguros, vea [Use PowerShell to specify the quarantine policy in Caja fuerte Attachments policies](quarantine-policies.md#safe-attachments-policies-in-powershell). [](quarantine-policies.md)
 
 #### <a name="step-2-use-powershell-to-create-a-safe-attachment-rule"></a>Paso 2: Usar PowerShell para crear una regla de datos adjuntos seguros
 
@@ -340,6 +348,9 @@ Set-SafeAttachmentPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safeattachmentpolicy).
+
+> [!NOTE]
+> Para obtener instrucciones detalladas para especificar la directiva de cuarentena que se usará en una directiva de datos adjuntos seguros, vea [Use PowerShell to specify the quarantine policy in Caja fuerte Attachments policies](quarantine-policies.md#safe-attachments-policies-in-powershell). [](quarantine-policies.md)
 
 ### <a name="use-powershell-to-modify-safe-attachment-rules"></a>Usar PowerShell para modificar reglas de datos adjuntos seguros
 

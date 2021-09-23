@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo usar las capacidades de investigac
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a67d9291e7cb33e6385c916f90da5dfae54e352
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1fef669f8e961ab60c222fad59811f78d55baabb
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189117"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484040"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Investigar el correo electrónico malintencionado que se entregó en Microsoft 365
 
@@ -122,7 +122,7 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
 
     - **Entregado:** el correo electrónico se entregó a la bandeja de entrada o carpeta de un usuario y el usuario puede acceder directamente a él.
     - **Correo no** deseado (entregado a la correo no deseado): el correo electrónico se envió a la carpeta de correo no deseado del usuario o a la carpeta eliminada y el usuario tiene acceso a los mensajes de correo electrónico en su carpeta Correo no deseado o Eliminado.
-    - **Bloqueado:** cualquier mensaje de correo electrónico que se ponga en cuarentena, que falle o que se haya descartado. (Esto es completamente inaccesible para el usuario).
+    - **Bloqueado:** cualquier mensaje de correo electrónico que se ponga en cuarentena, que falle o que se haya descartado.
     - **Reemplazado:** cualquier correo electrónico en el que los datos adjuntos malintencionados se reemplazan por .txt que los datos adjuntos son malintencionados.
 
     **Ubicación de** entrega: el filtro ubicación de entrega está disponible para ayudar a los administradores a comprender dónde terminó el correo malintencionado sospechoso y qué acciones se llevaron a cabo en él. Los datos resultantes se pueden exportar a hoja de cálculo. Las ubicaciones de entrega posibles son:
@@ -177,7 +177,7 @@ La acción de entrega es la acción realizada en un correo electrónico debido a
 
 - **Entregado:** el correo electrónico se entregó a la bandeja de entrada o carpeta de un usuario y el usuario puede acceder directamente a él.
 - **Junked:** el correo electrónico se envió a la carpeta de correo no deseado del usuario o a la carpeta eliminada y el usuario tiene acceso a los mensajes de correo electrónico en su carpeta Correo no deseado o Eliminado.
-- **Bloqueado:** cualquier mensaje de correo electrónico que se ponga en cuarentena, que falle o que se haya descartado. (Esto es completamente inaccesible para el usuario).
+- **Bloqueado:** cualquier mensaje de correo electrónico que se ponga en cuarentena, que falle o que se haya descartado.
 - **Reemplazado:** cualquier correo electrónico en el que los datos adjuntos malintencionados se reemplazan .txt los archivos adjuntos que den a los datos adjuntos son malintencionados.
 
 La ubicación de entrega muestra los resultados de las directivas y detecciones que se ejecutan después de la entrega. Está vinculado a una acción de entrega. Este campo se agregó para proporcionar información sobre la acción realizada cuando se encuentra un correo con problemas. Estos son los posibles valores de la ubicación de entrega:

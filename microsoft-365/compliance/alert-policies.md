@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el Centro de cumplimiento de Microsoft 365 o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: c6e233ec90c9143b07d32e71933c4c81b94f252b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a5828d086b2bd09fbdd75faa714fd8c5a634d14
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190174"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483776"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
@@ -146,9 +146,9 @@ En la tabla también se indica Office 365 Enterprise y Office 365 plan del Gobie
 |**Campaña de malware detectada y bloqueada**|Genera una alerta cuando alguien ha intentado enviar un número inusualmente grande de mensajes de correo electrónico que contienen un determinado tipo de malware a los usuarios de la organización. Si se produce este evento, Microsoft bloquea los mensajes infectados y no se entregan a los buzones. Esta directiva tiene una **configuración de** gravedad baja.|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Campaña de malware detectada en SharePoint y OneDrive**|Genera una alerta cuando se detecta un volumen inusualmente alto de malware o virus en archivos ubicados en SharePoint sitios o OneDrive cuentas de la organización. Esta directiva tiene una **configuración de** gravedad alta.|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Malware no zapped porque ZAP está deshabilitado**| Genera una alerta cuando Microsoft detecta la entrega de un mensaje de malware a un buzón porque Zero-Hour la purga automática de mensajes de suplantación de identidad está deshabilitada. Esta directiva tiene una **configuración de gravedad informativo.** |Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
-|**Phish delivered because a user's Junk Mail folder is disabled**|Genera una alerta cuando Microsoft detecta que la carpeta correo no deseado de un usuario está deshabilitada, lo que permite la entrega de un mensaje de suplantación de identidad de elevada confianza en un buzón. Esta directiva tiene una **configuración de gravedad informativo.**|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P1 o P2|
-|**Phish delivered due to an ETR override**|Genera una alerta cuando Microsoft detecta una regla de Exchange de transporte (ETR) que permitía la entrega de un mensaje de suplantación de identidad de elevada confianza en un buzón. Esta directiva tiene una **configuración de gravedad informativo.** Para obtener más información sobre Exchange de transporte (reglas de flujo de correo), vea Reglas de flujo de correo [(reglas de transporte) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P1 o P2|
-|**Phish delivered due to an IP allow policy**|Genera una alerta cuando Microsoft detecta una directiva de direcciones IP permitidas que permitía la entrega de un mensaje de suplantación de identidad de elevada confianza a un buzón. Esta directiva tiene una **configuración de gravedad informativo.** Para obtener más información acerca de la directiva de ip allow (filtrado de conexiones), vea [Configure the default connection filter policy - Office 365](../security/office-365-security/configure-the-connection-filter-policy.md).|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P1 o P2|
+|**Phish delivered because a user's Junk Mail folder is disabled**|Genera una alerta cuando Microsoft detecta que la carpeta correo no deseado de un usuario está deshabilitada, lo que permite la entrega de un mensaje de suplantación de identidad de elevada confianza en un buzón. Esta directiva tiene una **configuración de gravedad informativo.**|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
+|**Phish delivered due to an ETR override**|Genera una alerta cuando Microsoft detecta una regla de Exchange de transporte (ETR) que permitía la entrega de un mensaje de suplantación de identidad de elevada confianza en un buzón. Esta directiva tiene una **configuración de gravedad informativo.** Para obtener más información sobre Exchange de transporte (reglas de flujo de correo), vea Reglas de flujo de correo [(reglas de transporte) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
+|**Phish delivered due to an IP allow policy**|Genera una alerta cuando Microsoft detecta una directiva de direcciones IP permitidas que permitía la entrega de un mensaje de suplantación de identidad de elevada confianza a un buzón. Esta directiva tiene una **configuración de gravedad informativo.** Para obtener más información acerca de la directiva de ip allow (filtrado de conexiones), vea [Configure the default connection filter policy - Office 365](../security/office-365-security/configure-the-connection-filter-policy.md).|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Phish no zapped porque ZAP está deshabilitado**| Genera una alerta cuando Microsoft detecta la entrega de un mensaje de suplantación de identidad de elevada confianza a un buzón porque Zero-Hour la purga automática de mensajes de suplantación de identidad está deshabilitada. Esta directiva tiene una **configuración de gravedad informativo.**|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Phish delivered due to tenant or user override**<sup>1</sup>|Genera una alerta cuando Microsoft detecta un administrador o una invalidación de usuario que permite la entrega de un mensaje de suplantación de identidad a un buzón. Algunos ejemplos de invalidaciones incluyen una regla de flujo de correo o bandeja de entrada que permite mensajes de un remitente o dominio específico, o una directiva contra correo no deseado que permite mensajes de remitentes o dominios específicos. Esta directiva tiene una **configuración de** gravedad alta.|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Actividad de reenvío de correo electrónico sospechoso**|Genera una alerta cuando alguien de la organización ha enviado automáticamente correo electrónico a una cuenta externa sospechosa. Se trata de una advertencia anticipada para el comportamiento que puede indicar que la cuenta está en peligro, pero no lo suficientemente grave como para restringir al usuario. Esta directiva tiene una **configuración de** gravedad alta. Aunque es poco común, una alerta generada por esta directiva puede ser una anomalía. Es una buena idea comprobar si la cuenta [de usuario está en peligro.](../security/office-365-security/responding-to-a-compromised-email-account.md)|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
@@ -234,7 +234,7 @@ Tenga en cuenta lo siguiente acerca de la agregación de alertas:
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Permisos RBAC necesarios para ver alertas
 
-Los permisos de control de acceso basado en roles (RBAC) asignados a los usuarios de la organización determinan qué alertas puede ver un usuario en la **página Alertas.** ¿Cómo se logra esto? Los roles de administración asignados a los usuarios (en función de su pertenencia a grupos de roles en el portal de Centro de cumplimiento de Microsoft 365 o Microsoft 365 Defender) determinan qué categorías de alertas puede ver un **usuario** en la página Alertas. Estos son algunos ejemplos:
+Los permisos de control de acceso basado en roles (RBAC) asignados a los usuarios de la organización determinan qué alertas puede ver un usuario en la **página Alertas.** ¿Cómo se logra esto? Los roles de administración asignados a los usuarios (en función de su pertenencia a grupos de roles en el portal de Centro de cumplimiento de Microsoft 365 o Microsoft 365 Defender) determinan qué categorías de alertas puede ver un **usuario** en la página Alertas. Aquí le mostramos otros ejemplos:
 
 - Los miembros del grupo de roles Administración de registros solo pueden ver las alertas generadas por las directivas de alerta a las que se asigna la **categoría Gobierno de** información.
 
@@ -248,7 +248,7 @@ En la tabla siguiente se enumeran los roles necesarios para ver alertas de las s
 
 Para ver a qué categoría está asignada una directiva de alerta predeterminada, vea la tabla [en Directivas de alerta predeterminadas](#default-alert-policies).
 
-|Role|Información de gobierno|Prevención de pérdida de datos|Flujo del correo|Permisos|Administración de amenazas|Otros|
+|Rol|Información de gobierno|Prevención de pérdida de datos|Flujo del correo|Permisos|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||
@@ -324,7 +324,7 @@ Estas son algunas tareas que puede realizar para administrar alertas.
 
 Las alertas que se desencadenan Office 365 Cloud App Security directivas se muestran ahora en la página **Alertas** del Centro de cumplimiento. Esto incluye alertas desencadenadas por directivas de actividad y alertas desencadenadas por directivas de detección de anomalías en Office 365 Cloud App Security. Esto significa que puede ver todas las alertas en el centro de cumplimiento. Office 365 Cloud App Security solo está disponible para organizaciones con una suscripción Office 365 Enterprise E5 o Office 365 us Government G5. Para obtener más información, vea [Overview of Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
-Las organizaciones que tienen Microsoft Cloud App Security como parte de una suscripción Enterprise Mobility + Security E5 o como un servicio independiente también pueden ver alertas de Cloud App Security relacionadas con aplicaciones y servicios de Microsoft 365 en Centro de cumplimiento de Microsoft 365 o en el portal de Microsoft 365 Defender.
+Las organizaciones que Microsoft Cloud App Security como parte de una suscripción Enterprise Mobility + Security E5 o como un servicio independiente también pueden ver alertas de Cloud App Security relacionadas con Microsoft 365 aplicaciones y servicios en el Centro de cumplimiento de Microsoft 365 o el Microsoft 365 Defender web.
 
 Para mostrar solo Cloud App Security alertas en el centro de  cumplimiento o en el portal de Defender, use el filtro Origen y **seleccione Cloud App Security**.
 

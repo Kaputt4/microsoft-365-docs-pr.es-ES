@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4d3d1d913dd08a48fb70419133c0c484b3248f8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cdf022be492701e790606479877bf57f6f426094
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213577"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483584"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -52,8 +52,7 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Microsoft
 
 > [!NOTE]
 > El agente de Microsoft Defender para Endpoint en Linux es independiente [del agente OMS](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender para endpoint se basa en su propia canalización de telemetría independiente.
->
-> Microsoft Defender para Endpoint en Linux aún no está integrado en Azure Security Center.
+
 
 ### <a name="installation-instructions"></a>Instrucciones de instalación
 
@@ -138,7 +137,7 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 
 ****
 
-|Hoja de cálculo de la lista de dominios|Description|
+|Hoja de cálculo de la lista de dominios|Descripción|
 |---|---|
 |![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> Descargue la hoja de [cálculo aquí](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).|
 |||
@@ -168,6 +167,6 @@ Microsoft publica periódicamente actualizaciones de software para mejorar el re
 
 Las instrucciones sobre cómo configurar el producto en entornos empresariales están disponibles en Establecer preferencias para [Microsoft Defender para Endpoint en Linux.](linux-preferences.md)
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Recursos
 
 - Para obtener más información sobre el registro, la desinstalación u otros temas, vea [Resources](linux-resources.md).

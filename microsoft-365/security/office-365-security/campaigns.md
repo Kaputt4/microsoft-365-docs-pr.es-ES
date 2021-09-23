@@ -19,12 +19,12 @@ ms.collection:
 description: Obtenga información sobre las vistas de campaña en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca5049b234972ef55b951c0886a9d4074613c860
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5bc2bb1adc39aae70f8ace89bf0efaaf5a7a5c5a
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219887"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482852"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campaña en Microsoft Defender para Office 365
 
@@ -214,7 +214,7 @@ El diagrama contiene la información siguiente:
 
   ****
 
-  |Valor|Veredicto de filtro de correo no deseado|Description|
+  |Valor|Veredicto de filtro de correo no deseado|Descripción|
   |---|---|---|
   |**Permitido**|`SFV:SKN` <p> `SFV:SKI`|El mensaje se marcó como no correo no deseado o filtrado omitido antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, una regla de flujo de correo (también conocida como regla de transporte) marcó el mensaje como no correo no deseado. <p> El mensaje omitió el filtrado de correo no deseado por otros motivos. Por ejemplo, el remitente y el destinatario parecen estar en la misma organización.|
   |**Bloqueado**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, mediante una regla de flujo de correo.|
@@ -225,7 +225,7 @@ El diagrama contiene la información siguiente:
   |**Bloque de inquilinos**<sup>\*\*</sup>|`SFV:SKA`|El filtrado de correo no deseado bloqueó el mensaje debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
   |**User Allow**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes Caja fuerte usuario.|
   |**Bloqueo de usuario**<sup>\*\*</sup>|`SFV:BLK`|El mensaje se bloqueó mediante el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes bloqueados de un usuario.|
-  |**ZAP**|No aplicable|[La purga automática de hora cero (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta o cuarentena de correo no deseado. La acción se configura en la directiva contra correo no deseado.|
+  |**ZAP**|N/D|[La purga automática de hora cero (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta o cuarentena de correo no deseado. La acción se configura en directivas [contra correo no deseado.](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.

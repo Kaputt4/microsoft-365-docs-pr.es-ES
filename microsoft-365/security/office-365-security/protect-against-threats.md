@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06f87213131f8fccdd9cfd83d7bdf4ead10c0667
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 11d1f90278bec224bcc9f043abf57fa5a27010e5
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214280"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483128"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -97,6 +97,7 @@ Para obtener más información acerca de la configuración recomendada para anti
    - **Sección Configuración de** protección:
      - **Habilitar el filtro de datos adjuntos** común: Seleccionar (activar). Haga **clic en Personalizar tipos de archivo** para agregar más tipos de archivo.
      - **Habilitar la purga automática de hora cero para malware:** compruebe que esta configuración está seleccionada. Para obtener más información acerca de ZAP para malware, vea [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
+   - **Directiva de cuarentena:** deje seleccionado el valor predeterminado AdminOnlyAccessPolicy. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
    - **Sección notificación:** compruebe que no se haya seleccionado ninguna de las opciones de configuración de notificación.
 
    Cuando haya terminado, haga clic en **Guardar**.
@@ -133,10 +134,10 @@ En el siguiente procedimiento se describe cómo configurar la directiva contra s
 
    - **Sección** Acciones: haga **clic en Editar acciones** y configure las siguientes opciones en el control desplegable que se abre:
      - **Sección Acciones de** mensaje: Configure las siguientes opciones:
-       - **Si el mensaje se detecta como un usuario suplantado:** <sup>\*</sup> Seleccione Poner en cuarentena el **mensaje**.
-       - **Si el mensaje se detecta como un dominio suplantado:** <sup>\*</sup> Seleccione Poner en cuarentena el **mensaje**.
-       - **Si la inteligencia de buzones detecta un** usuario suplantado: seleccione Mover mensaje a las carpetas de correo no deseado (Estándar) de los destinatarios o Poner en cuarentena <sup>\*</sup> el **mensaje** (estricto). 
-       - **Si el mensaje se detecta** como suplantación: seleccione Mover mensaje a las **carpetas** de correo no deseado (Estándar) de los destinatarios o Poner en cuarentena **el mensaje** (Estricto).
+       - **Si el mensaje se detecta como un usuario suplantado:** <sup>\*</sup> Seleccione Poner en cuarentena el **mensaje**. Aparece **un cuadro Aplicar directiva** [](quarantine-policies.md) de cuarentena donde se selecciona la directiva de cuarentena que se aplica a los mensajes que la protección de suplantación de usuario pone en cuarentena.
+       - **Si el mensaje se detecta como un dominio suplantado:** <sup>\*</sup> Seleccione Poner en cuarentena el **mensaje**. Aparece **un cuadro Aplicar directiva** [](quarantine-policies.md) de cuarentena donde se selecciona la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de suplantación de dominio.
+       - **Si la inteligencia de buzones detecta un** usuario suplantado: seleccione Mover mensaje a las carpetas de correo no deseado (Estándar) de los destinatarios o Poner en cuarentena <sup>\*</sup> el **mensaje** (estricto).  Si selecciona Poner en  cuarentena **el** mensaje, aparecerá [](quarantine-policies.md) un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que la protección de inteligencia de buzones de correo pone en cuarentena.
+       - **Si el mensaje se detecta** como suplantación: seleccione Mover mensaje a las **carpetas** de correo no deseado (Estándar) de los destinatarios o Poner en cuarentena **el mensaje** (Estricto).  Si selecciona **Poner** en  cuarentena el mensaje, aparecerá [](quarantine-policies.md) un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de inteligencia suplantada.
      - **Sugerencias de seguridad & de indicadores:** Configure las siguientes opciones:
        - **Mostrar el primer contacto consejo de seguridad**: Seleccionar (activar).
        - **Mostrar la suplantación de consejo de seguridad:** <sup>\*</sup> Seleccione (activar).
@@ -175,15 +176,14 @@ Para obtener más información acerca de la configuración recomendada para el c
        - **Suplantación de identidad**: Seleccione **Mensaje en cuarentena**.
        - **Phishing de elevada confianza:** compruebe que **los mensajes de cuarentena** están seleccionados.
        - **Masivo:** compruebe **que mover el mensaje a la** carpeta de correo no deseado está seleccionado (Estándar) o seleccione Mensaje de cuarentena **(estricto).**
+
+       Para cada acción en la que seleccione Mensaje de **cuarentena,** aparecerá un cuadro Seleccionar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica **a** los mensajes que están en cuarentena mediante protección contra correo no deseado. [](quarantine-policies.md)
+
      - Conservar el correo no deseado **en cuarentena durante estos días:** compruebe el valor **30** días.
      - **Habilitar sugerencias de seguridad contra correo** no deseado: compruebe que esta configuración está seleccionada (activada).
      - Habilitar la purga automática de hora **cero (ZAP):** compruebe que esta configuración está seleccionada (activada).
        - **Habilitar para mensajes de suplantación de** identidad : Compruebe que esta configuración está seleccionada (activada). Para obtener más información, vea [Zero-hour auto purge (ZAP) for phishing](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-phishing).
        - **Habilitar para mensajes de correo no** deseado: compruebe que esta configuración está seleccionada (activada). Para obtener más información, vea [Zero-hour auto purge (ZAP) for spam](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-spam).
-     - **Sección Notificaciones:**
-       - Seleccione **Habilitar notificaciones de correo no deseado del usuario final**.
-         - Enviar notificaciones de correo no deseado del usuario **final cada (días):** Compruebe el valor **3** días.
-         - **Idioma:** compruebe el valor **Predeterminado** o seleccione un idioma.
 
      Cuando haya terminado, haga clic en **Guardar**.
 
@@ -211,7 +211,7 @@ Para obtener más información acerca de la configuración recomendada para Caja
      > [!IMPORTANT]
      > Antes de activar Caja fuerte datos adjuntos para **SharePoint, OneDrive y Microsoft Teams,** compruebe que el registro de auditoría esté activado en la organización . Normalmente, esta acción la realiza alguien que tiene el rol Registros de auditoría asignado en Exchange Online. Para obtener más información, vea Activar o desactivar la búsqueda [del registro de auditoría!](../../compliance/turn-audit-log-search-on-or-off.md)
 
-   - **Activar documentos Caja fuerte para Office** clientes: Active esta opción ( ![ Activar. ](../../media/scc-toggle-on.png) ). Tenga en cuenta que esta característica solo está disponible y es significativa Microsoft 365 E5 o Seguridad de Microsoft 365 E5 licencias.
+   - **Activar documentos Caja fuerte para Office** clientes: Active esta opción ( ![ Activar. ](../../media/scc-toggle-on.png) ). Tenga en cuenta que esta característica solo está disponible y significativa con los tipos de licencias necesarios. Para obtener más información, [vea Caja fuerte Documents en Microsoft 365 E5](safe-docs.md).
    - **Permitir que los usuarios haga** clic en la vista protegida incluso si Caja fuerte Documentos identifica el archivo como malintencionado : Compruebe que esta configuración está desactivada ( ![ Desactivar. ](../../media/scc-toggle-off.png) ).
 
    Cuando haya terminado, haga clic en **Guardar**
@@ -225,6 +225,7 @@ Para obtener más información acerca de la configuración recomendada para Caja
    - **Página Usuarios y dominios:** dado que esta es la primera directiva y es probable que quiera maximizar la cobertura, considere la posibilidad de escribir los dominios aceptados [en](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) el **cuadro** Dominios. De lo contrario, puede usar los **cuadros Usuarios** **y** Grupos para un control más detallado. Puede especificar excepciones seleccionando Excluir estos **usuarios, grupos y dominios** y especificando valores.
    - **Configuración:**
      - **Caja fuerte datos adjuntos respuesta de malware desconocido:** Seleccione **Bloquear**.
+     - **Directiva de cuarentena:** el valor predeterminado está en blanco, lo que significa que se usa la directiva AdminOnlyAccessPolicy. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
      - **Redirigir datos adjuntos con datos** adjuntos detectados: **Habilitar** redireccionamiento: Active esta opción (seleccionar) e introduzca una dirección de correo electrónico para recibir los mensajes detectados.
      - Aplicar la Caja fuerte de detección de datos adjuntos si el examen no se puede **completar (tiempo** de espera o errores): compruebe que esta configuración está seleccionada.
 
@@ -319,10 +320,10 @@ Para obtener más información acerca de las directivas de alerta, vea [Directiv
 > [!NOTE]
 > Cuando haya terminado de configurar, use estos vínculos para iniciar investigaciones de carga de trabajo:
 >
->- [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
->- [Use el portal Microsoft 365 Defender para administrar archivos en cuarentena en Defender para Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
->- [Qué hacer cuando se encuentra un archivo malintencionado en SharePoint Online, OneDrive o Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
->- [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
+> - [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
+> - [Use el portal Microsoft 365 Defender para administrar archivos en cuarentena en Defender para Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+> - [Qué hacer cuando se encuentra un archivo malintencionado en SharePoint Online, OneDrive o Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
 
 ## <a name="post-setup-tasks-and-next-steps"></a>Tareas posteriores a la instalación y pasos siguientes
 

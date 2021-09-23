@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b8fff1c53575b7de7d3c627c5bc79d00f97d6e39
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 36d4c90eb02bc9fb147ed0a28481444508be068e
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187489"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483524"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -102,6 +102,23 @@ Determina si el motor antivirus se ejecuta en modo pasivo o no. En modo pasivo:
 |**Posibles valores**|false (predeterminado) <p> true|
 |**Comments**|Disponible en Defender para endpoint versión 100.67.60 o posterior.|
 |
+  
+#### <a name="run-a-scan-after-definitions-are-updated"></a>Ejecutar un examen después de actualizar las definiciones
+
+Especifica si se debe iniciar un examen de proceso después de que se descarguen nuevas actualizaciones de inteligencia de seguridad en el dispositivo. Al habilitar esta configuración, se desencadenará un examen antivirus en los procesos en ejecución del dispositivo.
+
+<br>
+
+****
+
+|Descripción|Valor|
+|---|---|
+|**Clave**|scanAfterDefinitionUpdate|
+|**Tipo de datos**|Booleano|
+|**Posibles valores**|false (predeterminado) <p> true|
+|**Comments**|Disponible en Defender para endpoint versión 101.41.51 o posterior.|
+|
+  
 
 #### <a name="exclusion-merge-policy"></a>Directiva de combinación de exclusión
 
@@ -472,6 +489,7 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
       "enableRealTimeProtection":true,
       "maximumOnDemandScanThreads":1,
       "passiveMode":false,
+      "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {
@@ -537,7 +555,7 @@ python -m json.tool mdatp_managed.json
 
 Si el JSON está bien formado, el comando anterior lo devuelve al Terminal y devuelve un código de salida de `0` . De lo contrario, se muestra un error que describe el problema y el comando devuelve un código de salida de `1` .
 
-## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Comprobar que el archivo mdatp_managed.jsestá funcionando según lo esperado
+## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Comprobar que el archivo mdatp_managed.json funciona de la forma esperada
 
 Para comprobar que el /etc/opt/microsoft/mdatp/managed/mdatp_managed.json funciona correctamente, debería ver "[administrado]" junto a esta configuración:
 
@@ -548,8 +566,8 @@ Para comprobar que el /etc/opt/microsoft/mdatp/managed/mdatp_managed.json funcio
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> Para que mdatp_managed.jsse haga efectivo, no es necesario reiniciar el wdavdaemon.
+> Para que mdatp_managed.json entre en vigor, no es necesario reiniciar el wdavdaemon.
 
 ## <a name="configuration-profile-deployment"></a>Implementación de perfiles de configuración
 
-Una vez que haya creado el perfil de configuración para su empresa, puede implementarlo a través de la herramienta de administración que usa su empresa. Defender para endpoint en Linux lee la configuración administrada del archivo */etc/opt/microsoft/mdatp/managed/mdatp_managed.json.*
+Una vez que haya creado el perfil de configuración para su empresa, puede implementarlo a través de la herramienta de administración que usa su empresa. Defender para Endpoint en Linux lee la configuración administrada del archivo */etc/opt/microsoft/mdatp/managed/mdatp_managed.json.*

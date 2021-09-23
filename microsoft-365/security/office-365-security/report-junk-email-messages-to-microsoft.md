@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre las distintas formas de notificar mensajes y archivos buenos y malos a Microsoft para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 898fd42e687ec9d5776c1791ed353937921af4ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c78b606ed63e18d23bb1d1a6ebf72ae2617e9386
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187353"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483392"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Notificar mensajes y archivos a Microsoft
 
@@ -48,8 +48,6 @@ En Microsoft 365 organizaciones con buzones de correo en organizaciones de Excha
 |[Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Obtenga información sobre cómo crear una regla de flujo de correo (también conocida como regla de transporte) que le notifica cuándo los usuarios notifican mensajes a Microsoft para su análisis.|
 |[Enviar malware y no malware a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Use el sitio de Inteligencia de seguridad de Microsoft para enviar datos adjuntos y otros archivos.|
 |
-
-Si los mensajes de correo no deseado o suplantación de identidad se han puesto en cuarentena en lugar de entregarse, los usuarios pueden notificar los mensajes a Microsoft desde cuarentena en el portal Microsoft 365 Defender correo electrónico. Para obtener más información, vea Buscar y liberar mensajes en cuarentena [como un usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md).
 
 > [!NOTE]
 > Los datos de envíos a Microsoft residen en el límite de cumplimiento de Office 365 en los centros de datos de Norteamérica. Los analistas del equipo de ingeniería revisan los datos para ayudar a mejorar la eficacia de los filtros.

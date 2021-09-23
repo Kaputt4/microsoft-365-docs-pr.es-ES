@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad390c00bdbef33f52603c9d4a63884d3b91de49
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 79867d5d22a78fda9f5b2049688a8bc0b63e9feb
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165547"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483260"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Análisis de correo electrónico en investigaciones para Microsoft Defender para Office 365
 
@@ -54,7 +54,7 @@ Estas son mejoras adicionales para el análisis de correo electrónico en las in
 
 ## <a name="air-investigation-ignores-advanced-delivery-items-secops-mailbox-and-phishedu-messages"></a>La investigación de AIR omite los elementos de entrega avanzados (buzones de SecOps y mensajes phishEDU)
 
-Durante el análisis de agrupación en clústeres de correo electrónico, todas las consultas de agrupación en clústeres omitirán los buzones de seguridad configurados como buzones de operaciones de seguridad en la directiva de entrega avanzada. Del mismo modo, las consultas de agrupación en clústeres de correo electrónico omitirán los mensajes de simulación de suplantación de identidad (educación) configurados en la directiva de entrega avanzada. Ni los valores de exclusión SecOps ni PhishEdu se muestran en la consulta para que los atributos de agrupación en clústeres sean más sencillos y fáciles de leer. Esta exclusión garantiza que la inteligencia de amenazas y los buzones operativos (buzones de SecOps) y las simulaciones de suplantación de identidad (PhishEdu) se omiten durante el análisis de amenazas y no se quitan durante ninguna corrección. 
+Durante el análisis de agrupación en clústeres de correo electrónico, todas las consultas de agrupación en clústeres omitirán los buzones de seguridad configurados como buzones de operaciones de seguridad en la directiva de entrega avanzada. Del mismo modo, las consultas de agrupación en clústeres de correo electrónico omitirán los mensajes de simulación de suplantación de identidad (educación) configurados en la directiva de entrega avanzada. Ni los valores de exclusión SecOps ni PhishEdu se muestran en la consulta para que los atributos de agrupación en clústeres sean más sencillos y fáciles de leer. Esta exclusión garantiza que la inteligencia de amenazas y los buzones operativos (buzones de SecOps) y las simulaciones de suplantación de identidad (PhishEdu) se omiten durante el análisis de amenazas y no se quitan durante ninguna corrección.
 
 >[!Note]
 >Al abrir un clúster de correo electrónico para verlo en el Explorador desde los detalles del clúster de correo electrónico, los filtros de buzón phishedu y secops se aplicarán en el Explorador, pero no se mostrarán. Si cambia los filtros del Explorador, las fechas o la actualización de la consulta dentro de la página, las exclusiones de filtro PhishEdu/SecOps se quitarán y los correos electrónicos que coincidan con estos se mostrarán una vez más. Si actualiza la página explorador mediante la función de actualización del explorador, los filtros de consulta originales se volverán a cargar, incluidos los filtros PhishEdu/SecOps, pero eliminando los cambios posteriores que haya realizado.
@@ -62,11 +62,11 @@ Durante el análisis de agrupación en clústeres de correo electrónico, todas 
 
 ## <a name="air-updates-pending-email-action-status"></a>Estado de acción de correo electrónico pendiente de actualizaciones de AIR
 
-El análisis de correo electrónico de investigación calcula las amenazas y ubicaciones de correo electrónico en el momento de la investigación para crear las pruebas y acciones de investigación. Estos datos pueden estar obsoletos y obsoletos cuando las acciones fuera de la investigación afectan a los correos electrónicos implicados en la investigación. Por ejemplo, la búsqueda manual de operaciones de seguridad y la corrección pueden limpiar los correos electrónicos incluidos en una investigación. Del mismo modo, las acciones de eliminación aprobadas en investigaciones paralelas o acciones de cuarentena automática de protección automática de hora cero (ZAP) pueden haber quitado correos electrónicos. Además, las detecciones retrasadas de amenazas después de la entrega de correo electrónico pueden cambiar el número de amenazas incluidas en las consultas o clústeres de correo electrónico de la investigación. 
+El análisis de correo electrónico de investigación calcula las amenazas y ubicaciones de correo electrónico en el momento de la investigación para crear las pruebas y acciones de investigación. Estos datos pueden estar obsoletos y obsoletos cuando las acciones fuera de la investigación afectan a los correos electrónicos implicados en la investigación. Por ejemplo, la búsqueda manual de operaciones de seguridad y la corrección pueden limpiar los correos electrónicos incluidos en una investigación. Del mismo modo, las acciones de eliminación aprobadas en investigaciones paralelas o acciones de cuarentena automática de purga automática de hora cero (ZAP) pueden haber quitado correos electrónicos. Además, las detecciones retrasadas de amenazas después de la entrega de correo electrónico pueden cambiar el número de amenazas incluidas en las consultas o clústeres de correo electrónico de la investigación.
 
-Para garantizar que las acciones de investigación estén actualizadas, cualquier investigación que tenga acciones pendientes volverá a ejecutar periódicamente las consultas de análisis de correo electrónico para actualizar las ubicaciones de correo electrónico y las amenazas. 
+Para garantizar que las acciones de investigación estén actualizadas, cualquier investigación que tenga acciones pendientes volverá a ejecutar periódicamente las consultas de análisis de correo electrónico para actualizar las ubicaciones de correo electrónico y las amenazas.
 
-- Cuando cambien los datos del clúster de correo electrónico, se actualizarán los recuentos de amenazas y de ubicación de entrega más recientes. 
+- Cuando cambien los datos del clúster de correo electrónico, se actualizarán los recuentos de amenazas y de ubicación de entrega más recientes.
 - Si los correos electrónicos o el clúster de correo electrónico con acciones pendientes ya no están en el buzón de correo, se cancelará la acción pendiente y se considerará corregido el correo electrónico o clúster malintencionado.
 - Una vez que todas las amenazas de la investigación se hayan corregido o cancelado como se mencionó anteriormente, la investigación pasará a un estado corregido y se resolverá la alerta original.
 
@@ -95,6 +95,6 @@ Para los clústeres de  correo electrónico o correo electrónico de la pestaña
 
 En este ejemplo, el correo electrónico es malintencionado, pero no en un buzón.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver acciones de corrección pendientes o completadas](air-review-approve-pending-completed-actions.md)

@@ -15,12 +15,12 @@ ms.custom:
 description: Obtenga información sobre Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos independientes e híbridos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a925b251ff79aec5acaa0b2c1da2aee3f5a6d70d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 006be2cf23735f6ec44c749de869e87d55be2123
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214440"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483104"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -48,13 +48,13 @@ Para comprender el funcionamiento de EOP, es muy útil ver cómo se procesa el c
 
 1. Cuando un mensaje entrante entra en EOP, pasa inicialmente a través del filtrado de conexiones, lo que comprueba la reputación del remitente. La mayoría del correo no deseado se detiene en este momento y EOP lo rechaza. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).
 
-2. A continuación, se inspecciona el mensaje en busca de malware. Si se encuentra malware en el mensaje o en los datos adjuntos, el mensaje se enruta a un almacén de cuarentena de solo administrador. Para obtener más información acerca de la protección contra malware, vea [Protección contra malware en EOP](anti-malware-protection.md).
+2. A continuación, se inspecciona el mensaje en busca de malware. Si se encuentra malware en el mensaje o en los datos adjuntos, el mensaje se entrega en cuarentena. De forma predeterminada, solo los administradores pueden ver e interactuar con mensajes en cuarentena de malware. Sin embargo, los administradores pueden crear y usar directivas [de cuarentena](quarantine-policies.md) para especificar qué pueden hacer los usuarios en los mensajes en cuarentena. Para obtener más información acerca de la protección contra malware, vea [Protección contra malware en EOP](anti-malware-protection.md).
 
 3. El mensaje continúa a través del filtrado de directivas, donde se evalúa con las reglas de flujo de correo (también conocidas como reglas de transporte) que haya creado. Por ejemplo, una regla puede enviar una notificación a un administrador cuando un mensaje llega de un remitente específico.
 
    En la organización local con Exchange Enterprise CAL con licencias de servicios, las comprobaciones de prevención de pérdida de datos [(DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) en EOP también se realizan en este momento.
 
-4. El mensaje pasa a través del filtrado de contenido (antispam y contra la suplantación de identidad) donde los mensajes dañinos se identifican como correo no deseado, correo no deseado de elevada confianza, phishing, phishing de elevada confianza o masivo (directivas contra correo no deseado) o suplantación de identidad (configuración de suplantación de identidad en directivas contra suplantación de identidad). Puede configurar la acción para realizar el mensaje en función del veredicto de filtrado (cuarentena, mover a la carpeta correo no deseado, etc.). Para obtener más información, vea [Configure anti-spam policies](configure-your-spam-filter-policies.md) y [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+4. El mensaje pasa a través del filtrado de contenido (antispam y contra la suplantación de identidad) donde los mensajes dañinos se identifican como correo no deseado, correo no deseado de elevada confianza, phishing, phishing de elevada confianza o masivo (directivas contra correo no deseado) o suplantación de identidad (configuración de suplantación de identidad en directivas contra suplantación de identidad). Puede configurar la acción para realizar el mensaje en función del veredicto de filtrado (cuarentena, traslado a la carpeta correo no deseado, etc.) y lo que los usuarios pueden hacer con los mensajes en cuarentena mediante directivas de [cuarentena.](quarantine-policies.md) Para obtener más información, vea [Configure anti-spam policies](configure-your-spam-filter-policies.md) y [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
 Un mensaje que pasa correctamente todas estas capas de protección se entrega a los destinatarios.
 
@@ -92,7 +92,7 @@ Para obtener información sobre los requisitos, los límites importantes y la di
 <br>
 
 ****
-|Característica|Comments|
+|Característica|Comentarios|
 |---|---|
 |**Protection**||
 |Antimalware|[Protección contra malware en EOP](anti-malware-protection.md) <p> [Preguntas más frecuentes sobre la protección antimalware](anti-malware-protection-faq-eop.yml) <p> [Configurar directivas antimalware en EOP](configure-anti-malware-policies.md)|
@@ -111,7 +111,7 @@ Para obtener información sobre los requisitos, los límites importantes y la di
 |Envío de administrador|[Usar el envío de administrador para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md)|
 |Envíos de usuario (buzón personalizado)|[Directiva de envíos de usuarios](user-submission.md)|
 |Cuarentena: administradores|[Administración de mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md) <p> [Preguntas más frecuentes sobre mensajes en cuarentena](quarantine-faq.yml) <p> [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md) <p> [Encabezados de mensajes de correo no deseado en Microsoft 365](anti-spam-message-headers.md) <p> Puede analizar los encabezados de mensaje de los mensajes en cuarentena mediante el Analizador de [encabezados de mensaje en](https://mha.azurewebsites.net/).|
-|Cuarentena: usuarios finales|[Búsqueda y liberación de mensajes en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md) <p> [Usar notificaciones de correo no deseado de usuario para liberar e informar de mensajes en cuarentena](use-spam-notifications-to-release-and-report-quarantined-messages.md)|
+|Cuarentena: usuarios finales|[Búsqueda y liberación de mensajes en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md) <p> [Usar notificaciones de cuarentena para liberar e informar de mensajes en cuarentena](use-spam-notifications-to-release-and-report-quarantined-messages.md) <p> [Directivas de cuarentena](quarantine-policies.md)|
 |**Flujo de correo**||
 |Reglas de flujo de correo|[Reglas de flujo de correo (reglas de transporte) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Condiciones y excepciones de regla de flujo de correo (predicados) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Acciones de reglas de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Administrar reglas de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Procedimientos de regla de flujo de correo Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
 |Dominios aceptados|[Administrar dominios aceptados en Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)|

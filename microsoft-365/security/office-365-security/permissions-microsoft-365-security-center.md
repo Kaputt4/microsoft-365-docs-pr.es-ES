@@ -19,12 +19,12 @@ description: Los administradores pueden aprender a administrar los permisos en e
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3eb4f424ba8b9fd73f5cad62c2a136da8fd8249
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6e5980249d3df0dc94a83b8250f3be55298de5bd
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211620"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482864"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Permisos en el portal de Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ Los permisos del portal de Microsoft 365 Defender se basan en el modelo de permi
 
 Un **rol** concede permisos para realizar un conjunto de tareas.
 
-Un **grupo de roles** es un conjunto de roles que permite a las personas hacer su trabajo en el portal de Microsoft 365 Defender. Por ejemplo, el grupo de roles Administradores de simulador de ataques incluye el rol de Administrador de simulador de ataques para crear y administrar todos los aspectos del aprendizaje de simulación de ataques.
+Un **grupo de roles** es un conjunto de roles que permite a las personas hacer su trabajo en el portal de Microsoft 365 Defender.
 
 El portal de Microsoft 365 Defender incluye grupos de roles predeterminados para las tareas y funciones más comunes que debe asignar. Por lo general, le recomendamos que simplemente agregue usuarios individuales como **miembros** a los grupos de roles predeterminados.
 

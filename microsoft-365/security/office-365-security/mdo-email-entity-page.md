@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los clientes de Microsoft Defender Office 365 E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con página de entidad de correo electrónico.
-ms.openlocfilehash: 8bd5f152ff945a6a60941e836e7bdc34890e974b
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: bf5f191ec183c5fcc135e78f0eec83f69b4a5f95
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356518"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483860"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -107,7 +107,7 @@ Los usuarios verán detalles enriquecidos de detonación para datos adjuntos mal
 
 *Etiquetas:* se trata de etiquetas aplicadas a los usuarios. Si el usuario es un destinatario, los administradores verán una *etiqueta de* destinatario. Del mismo modo, si el usuario es un remitente, una *etiqueta de* remitente. Aparecerá en el lado izquierdo de la página entidades de correo  electrónico (en la parte que se describe como pegajosa y, por lo tanto, anclada a la página).
 
-*Ubicación de entrega más* reciente: la ubicación de entrega más reciente es la ubicación en la que un correo electrónico aterrizó después de acciones del sistema como ZAP o acciones de administración como Mover a elementos eliminados, finalizar. La ubicación de entrega más reciente no está diseñada para informar a los administradores de la ubicación actual *del* mensaje. Por ejemplo, si un usuario elimina un mensaje o lo mueve al archivo, la ubicación de entrega no se actualizará. Sin embargo, si se ha realizado una acción del sistema y se actualiza la ubicación (como un ZAP que da como resultado que un correo electrónico se mueva a Cuarentena), se actualizaría la ubicación de entrega más reciente a Cuarentena.
+*Ubicación de entrega más* reciente: la ubicación de entrega más reciente es la ubicación en la que un correo electrónico aterrizó después de acciones del sistema como ZAP o acciones de administración como Mover a elementos eliminados, finalizar. La ubicación de entrega más reciente no está diseñada para informar a los administradores de la ubicación actual *del* mensaje. Por ejemplo, si un usuario elimina un mensaje o lo mueve al archivo, la ubicación de entrega no se actualizará. Sin embargo, si se lleva a cabo una acción del sistema y se actualiza la ubicación (como un ZAP que da como resultado que un correo electrónico se mueva a cuarentena), se actualizaría la ubicación de entrega más reciente a la cuarentena.
 
 *Detalles del correo* electrónico: detalles necesarios para una comprensión más detallada del correo electrónico disponible en la *pestaña* Análisis.
 

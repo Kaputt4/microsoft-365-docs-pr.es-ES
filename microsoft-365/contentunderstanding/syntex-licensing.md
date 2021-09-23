@@ -13,16 +13,19 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Más información sobre las licencias para SharePoint Syntex
-ms.openlocfilehash: 1ab7ab290ca00ba6b47510dfc43f18412b528b0c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c44545136a7ca67a63315a8378389212a160373
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210810"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484052"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>Licencias para SharePoint Syntex
 
 Para usar SharePoint Syntex, su organización debe tener una suscripción a SharePoint Syntex y cada usuario de Syntex debe tener una licencia. Si cancela su suscripción de SharePoint Syntex en una fecha futura (o la versión de prueba expira), los usuarios ya no podrán crear, publicar ni ejecutar modelos de comprensión de documentos o de procesamiento de formularios. Además, los informes de almacén de términos, la importación de taxonomía SKOS y la inserción de tipo de contenido ya no estarán disponibles. No se eliminarán modelos, ni contenido ni metadatos y no se cambiarán los permisos del sitio.
+ 
+> [!NOTE] 
+> SharePoint Syntex es una licencia de complemento y requiere que los usuarios también tengan una licencia para Microsoft 365.
  
 ## <a name="tasks-requiring-a-license"></a>Tareas que requieren una licencia
  
@@ -33,7 +36,7 @@ Las siguientes tareas requieren una licencia de SharePoint Syntex para que el us
 - Carga de contenido en una biblioteca en la que se ha aplicado un modelo de procesamiento de formularios o de comprensión mediante documentos
 - Ejecución a petición de un modelo de comprensión mediante documentos
 - Visualización de los metadatos extraídos de los archivos mediante un modelo de comprensión mediante documentos o de procesamiento de formularios (Los usuarios deben tener licencia para acceder a los metadatos asociados a los archivos procesados y usarlos, independientemente de dónde se muevan los archivos).
-- Use servicios de taxonomía premium. (Los servicios de taxonomía premium comprenden la importación de conjuntos de términos basados en SKOS, la inserción de tipos de contenido empresarial en sitios asociados al centro y los informes de almacén de términos).
+- Use los servicios de taxonomía premium. (Los servicios de taxonomía premium comprenden la importación de conjuntos de términos basados en SKOS, la inserción de tipos de contenido empresarial en sitios asociados al centro y los informes de almacén de términos).
 
 A los usuarios sin licencia se les puede conceder acceso a un centro de contenido y pueden crear modelos de comprensión mediante documentos allí, pero no pueden aplicarlos a una biblioteca de documentos.
  

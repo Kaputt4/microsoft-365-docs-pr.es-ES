@@ -17,16 +17,16 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, ransomware operado por personas, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología
 description: Use el acceso controlado a carpetas, MIP, DLP y Microsoft Cloud App Security para proteger los datos confidenciales de Microsoft 365.
-ms.openlocfilehash: 2221b269d5b3b775f870d7c7f8b47ea89912f388
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 9548b394f5fa2cad6ec1e55e9386905b85f0335b
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444758"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483056"
 ---
 # <a name="step-5-protect-information"></a>Paso 5. Proteger información
 
-Dado que los atacantes de ransomware también examinarán los datos locales ubicados en archivos, bases de datos y otros tipos de servidores, una de las mejores formas de proteger esos datos es migrarlos a su espacio empresarial de Microsoft 365. Una vez allí, se pueden proteger mediante características integradas de mitigación y recuperación, como [control de versiones, papelera de reciclaje y la biblioteca de suspensión para conservación](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
+Dado que los atacantes de ransomware también examinarán los datos locales ubicados en archivos, bases de datos y otros tipos de servidores, una de las mejores formas de proteger esos datos es migrarlos a su espacio empresarial de Microsoft 365. Una vez allí, se pueden proteger mediante características integradas de mitigación y recuperación, como [control de versiones, papelera de reciclaje y la restauración de archivos](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
 Para proporcionar protección adicional a la información confidencial en su espacio empresarial de Microsoft 365:
 
@@ -69,7 +69,7 @@ Una vez que un atacante de ransomware se ha infiltrado en el espacio empresarial
 En función de este comportamiento típico del atacante, hay dos niveles de dificultad para el atacante:
 
 - **Bajo:** un atacante puede usar una cuenta con permisos reducidos y detectar la información confidencial debido a un amplio acceso en todo el espacio empresarial.
-- **Más alto:** un atacante no puede usar una cuenta con permisos bajos y detectar la información confidencial debido a permisos estrictos. Deben escalar sus permisos determinando y, a continuación, poniendo en peligro las credenciales de una cuenta que tiene acceso a una ubicación con información confidencial, pero es posible que solo puedan realizar un conjunto limitado de acciones.
+- **Más alto:** Un atacante no puede usar una cuenta con permisos bajos y detectar la información confidencial debido a permisos estrictos. Deben escalar sus permisos determinando y, a continuación, poniendo en peligro las credenciales de una cuenta que tiene acceso a una ubicación con información confidencial, pero es posible que solo puedan realizar un conjunto limitado de acciones.
 
 En el caso de la información confidencial, debe hacer que el nivel de dificultad sea lo más alto posible.
 
