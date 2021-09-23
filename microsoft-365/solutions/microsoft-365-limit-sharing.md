@@ -16,16 +16,18 @@ search.appverid:
 - SPO160
 - MET150
 f1.keywords: NOCSH
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkTEAMS
 localization_priority: Priority
 recommendations: false
 description: Obtenga más información sobre las opciones para limitar o deshabilitar el uso compartido de Microsoft 365.
-ms.openlocfilehash: 3a8bdc738507760fcb7eff02692859f07dc8d5c9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 500d2dd8aa1a657cd3a71cb87b30a2faf63bb4c4
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189017"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479770"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitar el uso compartido en Microsoft 365
 
@@ -59,7 +61,7 @@ Si quiere limitar el uso compartido en un grupo de Microsoft 365 o un equipo de
 Si quiere evitar el acceso de invitados en Teams, puede desactivar el uso compartido de invitados en el centro de administración de Teams.
 
 Para desactivar el uso compartido de invitados en Teams
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2066851" target="_blank">Centro de administración de Teams</a>, expanda la **Configuración de toda la organización**, y haga clic en **Acceso de invitados**.
+1. En el Centro de administración de Teams, expanda la pestaña **Configuración de toda la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**** Acceso de invitados</a>.
 2. Desactive **Permitir el acceso de invitado en Teams**.
 3. Haga clic en **Guardar**.
 

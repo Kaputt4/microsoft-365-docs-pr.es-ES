@@ -17,14 +17,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkTEAMS
 recommendations: false
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
-ms.openlocfilehash: 24bdb7a5d5f4c124365a6b5b7cdc67d53adf8278
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a21aa9bf3aeb5d5f5cb2efbc90589cafe2a11be1
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214230"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479746"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 
@@ -53,7 +54,7 @@ Para establecer la configuración de acceso de invitados de Teams
 1. Inicie sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
 2. En el panel de navegación izquierdo, haga clic en **Mostrar todos**.
 3. En **Centros de administración**, haga clic en **Teams**.
-4. En el centro de administración de Teams, en el panel de navegación de la izquierda, expanda **Configuración de toda la organización** y haga clic en **Acceso de invitado**.
+4. En el centro de administración de Teams, en el panel de navegación izquierdo, expanda **Configuración de toda la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Acceso de invitados**</a>.
 5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
 6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
 

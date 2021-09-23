@@ -15,15 +15,16 @@ ms.collection:
 f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkTEAMS
 localization_priority: Priority
 recommendations: false
 description: Más información sobre las opciones de configuración de uso compartido de invitados disponibles en Microsoft 365 que pueden afectar al uso compartido con personas de fuera de su organización.
-ms.openlocfilehash: db7622da1094dd1abf69752c6a0c41c374e80e9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d3db87c0c01a9bddead9b7367b6ac64a7633e107
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165478"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477628"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -77,40 +78,40 @@ El Centro de administración de Microsoft 365 tiene configuración a nivel de or
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
-|Permitir que los miembros del grupo de fuera de la organización tengan acceso al contenido del grupo|Activado|Si se establece en **Activado**, los invitados pueden acceder al contenido de los grupos; si se establece en **Desactivado**, no pueden hacerlo. Esta configuración debe establecerse en **Activado** para cualquier escenario en el que los invitados interactúen con grupos de Microsoft 365 o Teams.|
+|Permitir que los miembros del grupo de fuera de la organización tengan acceso al contenido del grupo|Activado|Si se establece en **Activado**, los invitados pueden acceder al contenido de los grupos; si se establece en **Desactivado**, no pueden hacerlo. Esta configuración debe establecerse en **Activado** para cualquier escenario en el que los invitados interactúen con grupos de Microsoft 365 o Teams.|
 |Permitir que los propietarios de grupos agreguen a usuarios ajenos a la organización a los grupos|Activado|Si está **Activado**, los propietarios de los grupos de Microsoft 365 o Teams pueden invitar a nuevos invitados al grupo. Si está **Desactivado**, los propietarios solo pueden invitar a los que ya están en el directorio.|
 
 Esta configuración se aplica a toda la organización. Vea [Crear una configuración para un grupo específico](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) para crear una configuración a nivel de grupo con PowerShell.
 
 ## <a name="teams"></a>Teams
 
-El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de invitado en Teams**, debe estar **Activado** para que las demás opciones de configuración de invitados estén disponibles.
+El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de invitados en Teams**, debe estar **Activado** para que las demás opciones de configuración de invitados estén disponibles.
 
 **Rol de administrador**: administrador de servicios de Teams
 
-### <a name="guest-access"></a>Acceso de invitado
+### <a name="guest-access"></a>Acceso de invitados
 
-**Navegación:** [Centro de administración de Teams](https://admin.teams.microsoft.com) > Configuración de toda la organización > Acceso de invitado
+**Navegación:** [centro de administración de Teams](https://admin.teams.microsoft.com) > **Configuración de toda la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Acceso de invitados**</a>
 
 ![Captura de pantalla de la opción de acceso de invitados de Teams.](../media/teams-guest-access-toggle.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
-|Permitir el acceso de invitado en Teams|Desactivado|Activa o desactiva el acceso de invitado a Teams en general. Esta configuración puede tardar 24 horas en aplicarse una vez cambiada.|
+|Permitir el acceso de invitados en Teams|Desactivado|Activa o desactiva el acceso de invitados a Teams en general. Esta configuración puede tardar 24 horas en aplicarse una vez cambiada.|
 
 ### <a name="guest-calling"></a>Llamadas de invitado
 
-**Navegación:** [Centro de administración de Teams](https://admin.teams.microsoft.com) > Configuración de toda la organización > Acceso de invitado
+**Navegación:** [centro de administración de Teams](https://admin.teams.microsoft.com) > **Configuración de toda la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Acceso de invitados**</a>
 
-![Captura de pantalla de las opciones de llamada de invitado de Teams.](../media/teams-guest-calling-setting.png)
+![Captura de pantalla de las opciones de llamada de invitados de Teams.](../media/teams-guest-calling-setting.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Realizar llamadas privadas|Activado|Si está **Activado**, los invitados pueden realizar llamadas de punto a punto en Teams; si está **Desactivado**, no pueden hacerlo.|
 
-### <a name="guest-meeting"></a>Reunión de invitado
+### <a name="guest-meeting"></a>Reunión de invitados
 
-**Navegación:** [Centro de administración de Teams](https://admin.teams.microsoft.com) > Configuración de toda la organización > Acceso de invitado
+**Navegación:** [centro de administración de Teams](https://admin.teams.microsoft.com) > **Configuración de toda la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Acceso de invitados**</a>
 
 ![Captura de pantalla de la configuración de reunión de invitado de Teams.](../media/teams-guest-meeting-settings.png)
 
@@ -122,9 +123,9 @@ El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de 
 
 ### <a name="guest-messaging"></a>Mensajería de invitado
 
-**Navegación:** [Centro de administración de Teams](https://admin.teams.microsoft.com) > Configuración de toda la organización > Acceso de invitado
+**Navegación:** [centro de administración de Teams](https://admin.teams.microsoft.com) > **Configuración de toda la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Acceso de invitados**</a>
 
-![Captura de pantalla de la configuración de mensajería de invitado de Teams.](../media/teams-guest-messaging-settings.png)
+![Captura de pantalla de la configuración de mensajería de invitados de Teams.](../media/teams-guest-messaging-settings.png)
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|

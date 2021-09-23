@@ -23,20 +23,22 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Asigne licencias dependiendo de si quiere asignar licencias de producto a usuarios específicos o asignar licencias de usuarios a un producto específico.
-ms.date: 04/26/2021
-ms.openlocfilehash: 987572ae15ffdf6d2042c6e54eba586cd39ebcb9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 48763019211f1358e09f9c712f27870bd13a4435
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184566"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477544"
 ---
 # <a name="assign-licenses-to-users"></a>Asignar licencias a los usuarios
 
 Puede asignar licencias a los usuarios en la página **usuarios activos** o en la página **licencias**. El método que use dependerá de si desea asignar licencias de producto a usuarios específicos o si quiere asignar licencias de usuarios a productos específicos.
 
 > [!NOTE]
-> Como administrador, no puede asignar o cancelar la asignación de licencias para una suscripción de compra de autoservicio adquirida por un usuario de su organización. Puede [apoderarse de una suscripción de compra de autoservicio](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription) y, a continuación, asignar o cancelar la asignación de licencias.
+> 
+> - Como administrador, no puede asignar o cancelar la asignación de licencias para una suscripción de compra de autoservicio adquirida por un usuario de su organización. Puede [apoderarse de una suscripción de compra de autoservicio](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription) y, a continuación, asignar o cancelar la asignación de licencias.
+> - Para algunas suscripciones, solo puede cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactive la facturación periódica para cancelar la suscripción al final de su término.
 
 [Obtenga información sobre cómo agregar un usuario y asignar una licencia al mismo tiempo](../add-users/add-users.md).
 
@@ -60,21 +62,24 @@ Al usar la página de **licencias** de para asignar licencias, asigna licencias 
 
 ::: moniker range="o365-germany"
 
- 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
+1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"> Licencias</a>.
+1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"> Licencias</a>.
 
 ::: moniker-end
 
-
 2. Seleccione un producto.
+
 3. En la página de detalles del producto, seleccione **Asignar licencias**.
+
 4. En el panel **asignar licencias a usuarios**, empiece a escribir un nombre y elíjalo en los resultados para agregarlo a la lista. Puede agregar hasta 20 usuarios a la vez.
+
 4. Seleccione **activar o desactivar aplicaciones y servicios** para asignar o quitar el acceso a elementos específicos.
+
 6. Cuando termine, seleccione **Asignar** y haga clic en **Cerrar**.
 
 Si hay un conflicto, se muestra un mensaje que indica cuál es el problema y cómo corregirlo. Por ejemplo, si seleccionó licencias que contienen servicios en conflicto, el mensaje de error indica que debe revisar los servicios incluidos en cada licencia y volver a intentarlo.
@@ -89,19 +94,20 @@ Si hay un conflicto, se muestra un mensaje que indica cuál es el problema y có
 
 ::: moniker range="o365-germany"
 
- 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
+1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"> Licencias</a>.
+1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"> Licencias</a>.
 
 ::: moniker-end
 
-
 2. En la página **Licencias**, seleccione la fila para un usuario específico.
+
 3. En el panel derecho, active o desactive las aplicaciones y servicios a los que quiere dar o quitar acceso.
+
 4. Cuando haya terminado, seleccione **guardar** y haga clic en **cerrar**.
 
 ## <a name="use-the-active-users-page-to-assign-licenses"></a>Use la página Usuarios activos para asignar licencias
@@ -118,25 +124,27 @@ Cuando usa la página **Usuarios activos** para asignar licencias, asigna licenc
 
 ::: moniker range="o365-germany"
 
- 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
-
 2. Seleccione los círculos que se encuentran junto a los nombres de los usuarios a los que quiere asignarles licencias.
+
 3. En la parte superior, seleccione **Administrar licencias de producto**.
+
 4. En el panel **Administrar licencias de producto**, seleccione **Asignar más: mantener las licencias existentes y asignar más** \> **Siguiente**.
+
 5. En **Licencias**, seleccione la casilla de las licencias que desea que tengan los usuarios seleccionados.\
     De manera predeterminada, todos los servicios asociados a esas licencias se asignan automáticamente al usuario. Puede limitar los servicios disponibles para el usuario. Quite la selección de las casillas de los servicios que no quiere que tenga el usuario.
+
 6. En la parte inferior del panel, seleccione **Guardar cambios**.  
     Es posible que tenga que comprar otras licencias si no tiene suficientes licencias para todos los usuarios.
-
 
 > [!NOTE]
 > Si quiere asignar licencias para un gran número de usuarios, use la opción [Asignar licencias a usuarios por pertenencia a grupos en Azure Active Directory.](/azure/active-directory/enterprise-users/licensing-groups-assign)
@@ -151,19 +159,20 @@ Cuando usa la página **Usuarios activos** para asignar licencias, asigna licenc
 
 ::: moniker range="o365-germany"
 
- 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
-
 2. Seleccione la fila del usuario al que quiere asignar una licencia.
+
 3. En el panel derecho, seleccione **licencias y aplicaciones**.
+
 4. Expanda la sección **licencias**, active las casillas de las licencias que quiera asignar y seleccione **guardar los cambios**.
 
 ## <a name="assign-a-license-to-a-guest-user"></a>Asignar una licencia a un usuario invitado
@@ -174,15 +183,25 @@ Puede invitar a usuarios para colaborar con su organización en el centro de adm
 > Para poder realizar estos pasos, debe ser un administrador global.
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Centro de administración de Azure Active Directory</a>.
+
 2. En el panel de navegación, seleccione **Usuarios**.
+
 3. En la página **Usuarios | Todos los usuarios (vista previa)**, seleccione **Agregar filtros**.
+
 4. En el menú **Elegir un campo**, seleccione **Tipo de usuario** y, después, seleccione **Aplicar**.
+
 5. En el menú siguiente, seleccione **Invitado**.
+
 6. En la lista de resultados, seleccione el usuario que necesita una licencia.
+
 7. En **Administrar**, seleccione **Licencias**.
+
 8. Seleccione **Asignaciones**.
+
 9. En la página **Actualizar asignaciones de licencia**, seleccione el producto al que quiere asignar una licencia.
+
 10. En la parte derecha, desactive las casillas de los servicios a los que no quiere que el usuario invitado tenga acceso.
+
 11. Seleccione **Guardar**.
 
 ## <a name="next-steps"></a>Pasos siguientes

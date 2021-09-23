@@ -19,19 +19,22 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Obtenga información sobre lo que sucede con sus datos cuando su suscripción de Microsoft 365 para empresas expira, está deshabilitada o la cancela.
-ms.date: 04/08/2021
-ms.openlocfilehash: 55a34352da6deef2fd48542dd06859e0024e6966
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 089caf11d590d38cc729466f53f91c1123f8b596
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188313"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481005"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?
 
 Si su suscripción finaliza, ya sea porque expira o porque decide cancelarla, el acceso a los servicios, aplicaciones y datos de clientes de Microsoft 365 pasa por varios estados antes de que la suscripción se desactive por completo o se *elimine*. Si está al tanto de esta progresión, estará más preparado para devolver su suscripción a un estado activo antes de que sea tarde o, si decide abandonar Microsoft 365, realizar una copia de seguridad de sus datos antes de que se eliminen finalmente.
 
 Lea esta información importante antes de ponerse en contacto con el [soporte técnico de Microsoft 365](../../business-video/get-help-support.md).
+
+> [!NOTE]
+> Para algunas suscripciones, solo podrá cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactive la facturación periódica para cancelar la suscripción al final de su término.
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>¿Qué ocurre con los datos cuando una suscripción expira?
 

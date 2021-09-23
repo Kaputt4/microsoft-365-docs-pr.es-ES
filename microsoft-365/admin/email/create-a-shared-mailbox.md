@@ -24,17 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: b6aaf63f61919c520c77a09bf3607174757d4c2b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a9b96497ab88fb6872a54468278fffb74c8fdd7b
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184726"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477592"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
 > [!NOTE]
-> Si su organización usa un entorno híbrido de Exchange, debe usar el Centro de administración de Exchange (EAC) local para crear y administrar buzones compartidos. Consulte [Crear buzones compartidos en el centro de administración de Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)<br><br>
+> Si su organización usa un entorno híbrido de Exchange, debe usar el Centro de administración de Exchange (EAC) local para crear y administrar buzones compartidos. Consulte [Crear buzones compartidos en el centro de administración de Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+>
 > Si no está seguro de si debería crear un buzón compartido o un grupo de Microsoft 365 para Outlook, vea [Comparar grupos](../create-groups/compare-groups.md) para tener más clara su decisión. Tenga en cuenta que no es posible migrar un buzón compartido a un grupo de Microsoft 365 en este momento. Si esto le interesaría, indíquelo [votando aquí](https://go.microsoft.com/fwlink/?linkid=871518).
 
 Es fácil crear buzones compartidos de Office 365 para que un grupo de personas pueda supervisar y enviar correos electrónicos desde una dirección de correo electrónico común, como, por ejemplo, info@contoso.com. Cuando un miembro del grupo responde a un mensaje enviado al buzón compartido, parece que el correo electrónico procede del buzón compartido y no de un usuario individual.
@@ -49,39 +50,39 @@ Antes de crear un buzón compartido, asegúrese de leer [acerca de los buzones c
 
 ::: moniker range="o365-worldwide"
 
-2. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
+2. En el Centro de administración, vaya a la página **Teams y Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-2. En el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=848041), vaya a la página **Grupos** \> **Buzones compartidos**.
+2. En el [Centro de administración](https://go.microsoft.com/fwlink/p/?linkid=848041), vaya a la página **Teams y Grupos** \> **Buzones compartidos**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-2. En el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=850627), vaya a la página **Grupos** \> **Buzones compartidos**.
+2. En el [Centro de administración](https://go.microsoft.com/fwlink/p/?linkid=850627), vaya a la página **Teams y Grupos** \> **Buzones compartidos**.
 
 ::: moniker-end
     
-3. En la página **buzones compartidos**, seleccione **+ agregar un buzón**. Escriba un nombre para el buzón compartido. A continuación, el asistente elige una dirección de correo electrónico, pero puede editarla.
+3. En la página **Buzones compartidos**, seleccione **+ Agregar un buzón compartido**. Escriba un nombre para el buzón compartido. Se elige una dirección de correo electrónico pero puede editarla si fuera necesario.
     
-    ![Asigne un nombre a su buzón  compartido.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
+    ![Asigne un nombre a su buzón compartido.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
-4. Seleccione **Agregar**. Puede tardar unos minutos antes de poder agregar miembros.
+4. Seleccione **Guardar cambios**. Puede tardar unos minutos antes de poder agregar miembros.
 
 5. En **Pasos siguientes**, elija **Agregar miembros a este buzón**. Los miembros son las personas que podrán ver el correo entrante para este buzón de correo compartido y las respuestas salientes.
 
    ![Seleccione Agregar miembros.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
-6. Elija el botón **+ Agregar miembros**. Coloque una marca de verificación junto a las personas que desea que usen este buzón de correo compartido y seleccione **Guardar**.
+6. Elija el botón **+ Agregar miembros**. Coloque una marca de verificación junto a las personas con las que desea usar este buzón compartido y, a continuación, seleccione **Guardar**.
 
    ![Asignar miembros al buzón compartido.](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Seleccione **Cerrar**.
 
-Tiene un buzón compartido que incluye un calendario compartido. Ahora, vaya al siguiente paso: bloquear el inicio para la cuenta de buzón compartido.
+Tiene un buzón compartido que incluye un calendario compartido. Vaya al siguiente paso: [bloquear el inicio de sesión para la cuenta de buzón compartido](#block-sign-in-for-the-shared-mailbox-account).
 
 ## <a name="which-permissions-should-you-use"></a>¿Qué permisos debe usar?
 
@@ -130,13 +131,14 @@ Pero, ¿qué sucede si un administrador simplemente restablece la contraseña de
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 ::: moniker-end
 
-1. En la lista de cuentas de usuario, busque la cuenta para el buzón de correo compartido (por ejemplo, cambie el filtro a **usuarios sin licencia**).
+2. En la lista de cuentas de usuario, busque la cuenta para el buzón de correo compartido (por ejemplo, cambie el filtro a **usuarios sin licencia**).
 
-1. Seleccione el usuario para abrir su panel de propiedades y seleccione el icono **bloquear este usuario** ![captura de pantalla del icono bloquear este usuario](../../media/block-user-icon.png).
+3. Seleccione el usuario para abrir su panel de propiedades y seleccione el icono **bloquear este usuario** ![captura de pantalla del icono bloquear este usuario](../../media/block-user-icon.png).
 
-   **Nota**: Si la cuenta ya está bloqueada, se mostrará **inicio de sesión bloqueado** en la parte superior y el icono indicará **desbloquear este usuario**.
+   > [!NOTE]
+   > Si la cuenta ya está bloqueada, aparecerá la leyenda **Inicio de sesión bloqueado** en la parte superior y el icono indicará **Desbloquear a este usuario**.
 
-1. En el panel **¿bloquear este usuario?**, seleccione **impedir que los usuarios inicien sesión** y seleccione **guardar cambios**.
+4. En el panel **¿bloquear este usuario?**, seleccione **impedir que los usuarios inicien sesión** y seleccione **guardar cambios**.
 
 Para obtener instrucciones sobre cómo bloquear el inicio de sesión para cuentas con el PowerShell de Azure AD (incluyendo varias cuentas al mismo tiempo), consulte [Bloquear cuentas de usuario con PowerShell de Office 365](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 

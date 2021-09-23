@@ -15,16 +15,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
+- admindeeplinkTEAMS
 localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los pasos de configuración necesarios para Microsoft 365 para configurar un equipo para la colaboración en tareas, conversaciones y documentación con invitados en Teams.
-ms.openlocfilehash: 142f8d9adf9423d1c9a2d8e59405fd4f39dfb751
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e0d787691ee7ec580efcbd61d6bab7bd1052e54c
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217890"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477620"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -61,9 +62,9 @@ Si trabaja con invitados de varias organizaciones, tal vez quiera restringir su 
 
 ## <a name="teams-guest-access-settings"></a>Configuración de acceso de invitado de Teams
 
-Teams tiene un modificador principal para el acceso de invitados y una amplia variedad de opciones de configuración disponibles para controlar lo que pueden hacer los invitados en un equipo. El modificador principal, **Permitir el acceso de invitado en Teams** debe estar **Activado** para que el acceso de invitado funcione en Teams.
+Teams tiene un modificador principal para el acceso de invitados y una amplia variedad de opciones de configuración disponibles para controlar lo que pueden hacer los invitados en un equipo. El modificador principal, **Permitir el acceso de invitados en Teams** debe estar **Activado** para que el acceso de invitados funcione en Teams.
 
-Compruebe que el acceso de invitado esté habilitado en Teams y realice ajustes en la configuración de invitado según las necesidades de la empresa. Tenga en cuenta que esta configuración afecta a todos los equipos.
+Compruebe que el acceso de invitados esté habilitado en Teams y realice ajustes en la configuración de invitados según las necesidades de la empresa. Tenga en cuenta que esta configuración afecta a todos los equipos.
 
 ![Captura de pantalla de la opción de acceso de invitados de Teams.](../media/teams-guest-access-toggle-on.png)
 
@@ -72,27 +73,27 @@ Para establecer la configuración de acceso de invitados de Teams
 1. Inicie sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
 2. En el panel de navegación izquierdo, haga clic en **Mostrar todo**.
 3. En **Centros de administración**, haga clic en **Teams**.
-4. En el centro de administración de Teams, en el panel de navegación de la izquierda, expanda **Configuración de toda la organización** y haga clic en **Acceso de invitado**.
+4. En el centro de administración de Teams, en el panel de navegación izquierdo, seleccione **Configuración de toda la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Acceso de invitados**</a>.
 5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
 6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
 
-Una vez activado el acceso de invitado de Teams, de manera opcional puede controlar el acceso de invitado a equipos individuales y sus sitios de SharePoint asociados mediante etiquetas de confidencialidad. Para más información, consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
+Una vez activado el acceso de invitados de Teams, de manera opcional puede controlar el acceso de invitados a equipos individuales y sus sitios de SharePoint asociados mediante etiquetas de confidencialidad. Para más información, consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 > [!NOTE]
-> La configuración de invitado de Teams puede tardar hasta veinticuatro horas en activarse después de activarla.
+> La configuración de invitados de Teams puede tardar hasta veinticuatro horas en activarse después de activarla.
 
-## <a name="microsoft-365-groups-guest-settings"></a>Configuración de invitado de Grupos de Microsoft 365
+## <a name="microsoft-365-groups-guest-settings"></a>Configuración de invitados de Grupos de Microsoft 365
 
-Teams usa Grupos de Microsoft 365 para la pertenencia a equipos. La configuración de invitado de Grupos de Microsoft 365 debe estar activada para que funcione el acceso de invitados en Teams.
+Teams usa Grupos de Microsoft 365 para la pertenencia a equipos. La configuración de invitados de Grupos de Microsoft 365 debe estar activada para que funcione el acceso de invitados en Teams.
 
 ![Captura de pantalla de la configuración de invitados de Grupos de Microsoft 365 en el Centro de administración de Microsoft 365.](../media/office-365-groups-guest-settings.png)
 
-Para establecer la configuración de invitado de Grupos de Microsoft 365
+Para establecer la configuración de invitados de Grupos de Microsoft 365
 
 1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, expanda **Configuración**.
 2. Haga clic en **Configuración de la organización**.
 3. En la lista, haga clic en **Grupos de Microsoft 365**.
-4. Asegúrese de que las casillas **Permitir que los propietarios del grupo agreguen personas de fuera de la organización a Grupos de Microsoft 365 como invitados** y **Permitir que los miembros del grupo invitados accedan al contenido del grupo** están activadas.
+4. Asegúrese de que las casillas **Permitir que los propietarios del grupo agreguen personas de fuera de la organización a Grupos de Microsoft 365 como invitados** y **Permitir que los miembros del grupo invitados accedan al contenido del grupo** están activadas.
 5. Si ha realizado cambios, haga clic en **Guardar cambios**.
 
 
