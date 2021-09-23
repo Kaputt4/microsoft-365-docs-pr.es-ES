@@ -15,12 +15,13 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: c303251ff8a6e37ac351e57dc18a1ca3dcee8751
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: m365-security-compliance
+ms.openlocfilehash: f5518992b0524ac1a07564316877d06c4541f011
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356818"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491462"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -119,7 +120,7 @@ En los procedimientos de este artículo se describe primero cómo establecer el 
    6. Haga clic en **Aceptar**. Esto establecerá el orden de los recursos compartidos de archivos cuando se haga referencia a ese origen en la configuración de directiva de grupo Definir **el orden de orígenes...**
 
 > [!NOTE]
-> Para Windows 10, versiones 1703 hasta 1809 incluidas, la ruta de acceso de directiva es **componentes de Windows** > Antivirus de Microsoft Defender > Actualizaciones de firma Para Windows 10, versión 1903, la ruta de acceso de directiva es Windows Components > Antivirus de Microsoft Defender > Security Intelligence **Updates**
+> Para Windows 10, versiones 1703 hasta 1809 incluidas, la ruta de acceso de directiva es **Windows Components > Antivirus de Microsoft Defender > Signature Updates** For Windows 10, version 1903, the policy path is Windows Components **> Antivirus de Microsoft Defender > de inteligencia de seguridad**
 
 ## <a name="use-configuration-manager-to-manage-the-update-location"></a>Usar Configuration Manager para administrar la ubicación de actualización
 

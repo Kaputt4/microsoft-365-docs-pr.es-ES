@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78ad8b65a7ad727417dd6152fcb34c6df34080c9
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 2e7ec8ca3b9f428708c21c5a75bbfd4174373d62
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480861"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491330"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -38,30 +38,31 @@ ms.locfileid: "59480861"
 > [!TIP]
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-El filtrado de contenido web forma parte de [las funciones de protección web](web-protection-overview.md) en Microsoft Defender para endpoint. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
+El filtrado de contenido web forma parte de las [funciones de protección web](web-protection-overview.md) en Microsoft Defender para endpoint. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
 
 Configure directivas en los grupos de dispositivos para bloquear determinadas categorías. El bloqueo de una categoría impide que los usuarios de grupos de dispositivos especificados tengan acceso a direcciones URL asociadas a la categoría. Para cualquier categoría que no está bloqueada, las direcciones URL se auditan automáticamente. Los usuarios pueden acceder a las direcciones URL sin interrupciones y recopilará estadísticas de acceso para ayudar a crear una decisión de directiva más personalizada. Los usuarios verán una notificación de bloqueo si un elemento de la página que están viendo está realizando llamadas a un recurso bloqueado.
 
 El filtrado de contenido web está disponible en los principales exploradores web, con bloques realizados por Windows Defender SmartScreen (Microsoft Edge) y Network Protection (Chrome, Firefox, Brave y Opera). Para obtener más información acerca de la compatibilidad con exploradores, consulte la sección requisitos previos.
 
-Resumen de las ventajas:
+## <a name="benefits-of-web-content-filtering"></a>Ventajas del filtrado de contenido web
 
-- Se impide que los usuarios accedan a sitios web en categorías bloqueadas, ya sea que estén explorando localmente o lejos
-- El equipo de seguridad puede implementar directivas cómodamente en grupos de usuarios que usan grupos de dispositivos definidos en La configuración del control de acceso basado en roles de [Microsoft Defender](/microsoft-365/security/defender-endpoint/rbac) para endpoint
-- El equipo de seguridad puede tener acceso a los informes web en la misma ubicación central, con visibilidad sobre los bloques reales y el uso web
+- Se impide que los usuarios accedan a sitios web en categorías bloqueadas, ya sea que estén explorando localmente o lejos.
+
+- El equipo de seguridad puede implementar cómodamente directivas para grupos de usuarios que usan grupos de dispositivos definidos en Microsoft Defender para la configuración del control de acceso basado en roles de [punto de conexión.](/microsoft-365/security/defender-endpoint/rbac)
+
+- El equipo de seguridad puede acceder a los informes web en la misma ubicación central, con visibilidad sobre los bloques reales y el uso web.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Antes de probar esta característica, asegúrese de cumplir los siguientes requisitos:
 
-- Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 + Seguridad de Microsoft 365 E5 complemento o la licencia independiente de Microsoft Defender para endpoint. 
-- Acceso a Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ).
-- Dispositivos que Windows 10 actualización de aniversario (versión 1607) o posterior con las [últimas actualizaciones antivirus/antimalware](manage-updates-baselines-microsoft-defender-antivirus.md).
-- Windows Defender SmartScreen y Network Protection habilitados.
+- La suscripción incluye una de las siguientes opciones: Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 + Seguridad de Microsoft 365 E5 complemento o la licencia independiente de Microsoft Defender para Endpoint. 
 
-## <a name="user-experience"></a>Experiencia del usuario
+- Tiene acceso a Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
-La protección de red proporciona la experiencia de bloqueo para exploradores compatibles con terceros, que proporciona un mensaje de nivel del sistema que notifica al usuario de una conexión bloqueada. Para una experiencia más fácil de usar en el explorador, considere la posibilidad de usar Microsoft Edge.
+- Los dispositivos de la organización están Windows 10 actualización de aniversario (versión 1607) o posterior con las últimas actualizaciones [antivirus/antimalware](manage-updates-baselines-microsoft-defender-antivirus.md).
+
+- Windows Defender SmartScreen y Network Protection están habilitados en los dispositivos de la organización.
 
 ## <a name="data-handling"></a>Control de datos
 
@@ -179,6 +180,10 @@ Para agregar una nueva directiva, siga estos pasos:
 > - Si quita una directiva o cambia los grupos de dispositivos al mismo tiempo, esto puede provocar un retraso en la implementación de directivas.
 > - El bloqueo de la categoría "Uncategorized" puede provocar resultados inesperados y no deseados.  
 
+## <a name="end-user-experience"></a>Experiencia del usuario final
+
+La protección de red proporciona la experiencia de bloqueo para exploradores compatibles con terceros, que proporciona un mensaje de nivel del sistema que notifica al usuario de una conexión bloqueada. Para una experiencia más fácil de usar en el explorador, considere la posibilidad de usar Microsoft Edge.
+
 ### <a name="allow-specific-websites"></a>Permitir sitios web específicos
 
 Es posible invalidar la categoría bloqueada en el filtrado de contenido web para permitir un solo sitio mediante la creación de una directiva de indicador personalizada. La directiva de indicador personalizado reemplazará la directiva de filtrado de contenido web cuando se aplique al grupo de dispositivos en cuestión.
@@ -243,9 +248,7 @@ Para obtener acceso a los **detalles del informe** para cada tarjeta, seleccione
 
 Use el filtro de intervalo de tiempo en la parte superior izquierda de la página para seleccionar un período de tiempo. También puede filtrar la información o personalizar las columnas. Seleccione una fila para abrir un panel desplegable con más información sobre el elemento seleccionado.
 
-## <a name="errors-and-issues"></a>Errores y problemas
-
-### <a name="limitations-and-known-issues-in-this-preview"></a>Limitaciones y problemas conocidos en esta versión preliminar
+### <a name="known-issues-and-limitations"></a>Problemas y limitaciones conocidos
 
 - Solo Microsoft Edge se admite si la configuración del sistema operativo del dispositivo es Server (**cmd**  >  **Systeminfo**  >  **OS Configuration**). La protección de red solo se admite en el modo de inspección en dispositivos de servidor, que es responsable de proteger el tráfico en exploradores de terceros compatibles.
 
@@ -253,7 +256,7 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 
 - Actualmente, los informes de filtrado de contenido web están limitados a mostrar los 5000 registros principales. Por ejemplo, el informe Dominios solo mostrará un máximo de los 5000 dominios principales para una consulta de filtro determinada, si procede. 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a protección web](web-protection-overview.md)
 - [Protección contra amenazas web](web-threat-protection.md)

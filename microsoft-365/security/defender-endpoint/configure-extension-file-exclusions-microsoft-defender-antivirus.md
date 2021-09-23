@@ -15,19 +15,20 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.date: 09/14/2021
-ms.openlocfilehash: 5dfa84335e9f31e531759b209ac3c2491c657fe0
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: e629cfa55467bc7f5f0a021e52cc8ade5118c8c4
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399807"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491594"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
-- Antivirus de Microsoft Defender
+- Antivirus de Microsoft Defender
 
 Puede definir exclusiones para Antivirus de Microsoft Defender que se aplican [](run-scan-microsoft-defender-antivirus.md)a exámenes programados, [](schedule-antivirus-scans.md)exámenes a petición y protección y supervisión siempre activas en tiempo [real.](configure-real-time-protection-microsoft-defender-antivirus.md) **Por lo general, no es necesario aplicar exclusiones**. Si necesita aplicar exclusiones, puede elegir entre varios tipos diferentes:
 
@@ -377,7 +378,7 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarla con el nombre de archivo o en la carpeta que está intentando excluir.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)

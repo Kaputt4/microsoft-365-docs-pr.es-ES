@@ -3,7 +3,7 @@ title: Durante y después del movimiento de datos
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 09/22/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Los movimientos de datos son operaciones back-end que se producen cuando Microsoft mueve los servicios y los datos asociados del inquilino a un nuevo centro de datos geográfico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d2c78ace4fb25d060ecaeab96903ba577a1d7316
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f90957447e9d301594f50e67ff51ae495464b63e
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189637"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491092"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -48,7 +48,7 @@ Vea el Centro Microsoft 365 mensajes para obtener confirmación cuando se mueva 
 |Alemania  <br/> |1 de mayo de 2023  <br/> |
 |Brasil  <br/> |1 de junio de 2023  <br/> |
 
-## <a name="exchange-online"></a>Exchange en línea
+## <a name="exchange-online"></a>Exchange Online
 
 Dado que se tarda tiempo en mover cada usuario a la nueva ubicación geográfica del centro de datos para un único inquilino, algunos usuarios seguirán estando en la antigua ubicación geográfica del centro de datos durante el movimiento, mientras que otros estarán en la nueva ubicación geográfica del centro de datos. Esto significa que es posible que algunas características que implican el acceso a varios buzones no funcionen completamente durante un período del proceso de movimiento, que puede durar semanas. Estas características se describen en las secciones siguientes.
   
@@ -85,7 +85,7 @@ Una vez que hayamos completado el movimiento de SharePoint datos en línea, es p
     
 - Estamos quitando las copias transcodadas del centro de datos anterior y transcodándolos de nuevo en el nuevo centro de datos.
     
-### <a name="search"></a>Buscar
+### <a name="search"></a>Búsqueda
 
 En el transcurso de mover los datos SharePoint online, migramos el índice de búsqueda y la configuración de búsqueda a una nueva ubicación. Hasta que hayamos **completado el** movimiento de los datos de SharePoint Online, seguiremos atienden a los usuarios desde el índice en la ubicación original. En la nueva ubicación, la búsqueda comienza automáticamente a rastrear el contenido después de que hayamos completado el movimiento de los SharePoint datos en línea. A partir de este momento, se atiende a los usuarios desde el índice migrado. Los cambios en el contenido que se produjeron después de la migración no se incluyen en el índice migrado hasta que el rastreo los recoge. La mayoría de los clientes no se dan cuenta de que los resultados son menos frescos justo después de que hayamos terminado de mover sus datos de SharePoint Online, pero algunos clientes podrían experimentar una actualización reducida en las primeras 24-48 horas 
   
@@ -107,12 +107,13 @@ Como parte de la migración, la región predeterminada cambiará y todo el conte
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Además de Exchange Online, SharePoint Online y OneDrive para la Empresa, Microsoft migrará los Teams del servicio de chat al centro de datos local.
+### <a name="files-tab"></a>Ficha Archivos
 
-- Teams chat, incluidos los mensajes privados y los mensajes de canal.
-- Teams imágenes usadas en chats.
+Una vez completada la migración, la pestaña Archivos puede tardar más tiempo (hasta 7 segundos) en cargarse completamente cuando el usuario intente usarlo por primera vez. 
 
-Teams archivos se almacenan en SharePoint Online y Teams archivos de chat se almacenan en OneDrive para la Empresa. El correo de voz, el calendario, el historial de chat y los contactos se almacenan en Exchange Online. En muchos casos, Exchange Online, SharePoint Online y OneDrive para la Empresa ya los usa el cliente en la ubicación geográfica del centro de datos local y también forman parte del programa de migración de Microsoft 365 para los países de clientes elegibles.
+### <a name="read-only-period"></a>Período de solo lectura
+
+Teams chat mueve cada subproceso individualmente.  El subproceso está bloqueado en un estado de solo lectura durante el movimiento, que dura unos segundos por subproceso.  Los subprocesos permanecen accesibles durante la migración.
 
 ## <a name="skype-for-business"></a>Skype Empresarial
 

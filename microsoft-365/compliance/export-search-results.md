@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporte los resultados de la búsqueda de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido SharePoint y OneDrive para la Empresa se exportan como documentos Office nativos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ce3317dbd9b1d21ab1e703fce1b168885b81aa2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 15f1af054cb8ec09795ba84412efd2b63e3ad48a
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191557"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489558"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -43,20 +43,15 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
   
   - Versión más reciente de Windows (32 bits o 64 bits)
   
-  - Microsoft .NET Framework 4.7
+  - Microsoft .NET Framework 4.7 o posterior
   
-- Debe usar uno de los siguientes exploradores compatibles para ejecutar la herramienta de exportación de exhibición de documentos<sup>electrónicos 1</sup>:
-
-  - Microsoft Edge <sup>2</sup>
-  
-    OR
-
-  - Microsoft Internet Explorer 10 y versiones posteriores
+- Debe usar Microsoft Edge <sup>1</sup> para ejecutar la herramienta de exportación de exhibición de documentos electrónicos. El uso de Internet Explorer 11 para exportar resultados de búsqueda ya no es compatible<sup>con 2</sup>. 
   
   > [!NOTE]
-  > <sup>1</sup> Microsoft no fabrica extensiones de terceros ni complementos para ClickOnce aplicaciones. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.<br/>
-  > <sup>2</sup> Como resultado de los cambios recientes en Microsoft Edge, ClickOnce soporte técnico ya no está habilitado de forma predeterminada. Para obtener instrucciones sobre cómo ClickOnce compatibilidad en Edge, vea [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
-  
+  > <sup>1</sup> Como resultado de los cambios recientes en el Microsoft Edge, ClickOnce soporte técnico ya no está habilitado de forma predeterminada. Para obtener instrucciones sobre cómo ClickOnce compatibilidad en Edge, vea [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md). Además, Microsoft no fabrica extensiones de terceros ni complementos para ClickOnce aplicaciones. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.
+  > 
+  > <sup>2</sup> A partir de agosto de 2021, las aplicaciones y servicios de Microsoft 365 ya no admitirán Internet Explorer 11 (IE11) y los usuarios pueden tener una experiencia degradada o no poder conectarse a esas aplicaciones y servicios. Estas aplicaciones y servicios se desatendrán gradualmente en las próximas semanas y meses para garantizar un fin suave de la compatibilidad. Cada aplicación y servicio se están eliminando gradualmente en programaciones independientes. Para obtener más información, vea esta [entrada de blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
+
 - La herramienta de exportación de exhibición de documentos electrónicos que se usa en el paso 2 para descargar resultados de búsqueda no admite la automatización (mediante un script o cmdlets en ejecución). Le recomendamos encarecidamente que no automatice el proceso de preparación en el paso 1 o el proceso de descarga en el paso 2. Si automatiza cualquiera de estos procesos, el Soporte técnico de Microsoft no proporcionará asistencia si tiene problemas.
 
 - Se recomienda descargar los resultados de la búsqueda en un equipo local. Para eliminar la infraestructura de firewall o proxy de su empresa para evitar problemas al descargar resultados de búsqueda, puede que considere la posibilidad de descargar resultados de búsqueda en un escritorio virtual fuera de la red. Esto puede disminuir los tiempos de espera que se producen en las conexiones de datos de Azure al exportar un gran número de archivos. Para obtener más información acerca de los escritorios virtuales, [vea Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
@@ -67,9 +62,9 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
   
 - Si su organización usa un servidor proxy para comunicarse con Internet, debe definir la configuración del servidor proxy en el equipo que use para exportar los resultados de la búsqueda (para que el servidor proxy pueda autenticar la herramienta de exportación). Para ello, abra el archivo *machine.config* en la ubicación que coincida con la versión de Windows. 
   
-  - **32 bits:**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
+  - **32 bits:** `%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
   
-  - **64 bits:**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
+  - **64 bits:** `%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
   
     Agregue las siguientes líneas al  *archivomachine.config*  en algún lugar entre las  `<configuration>`  `</configuration>` etiquetas y. Asegúrese de reemplazar  `ProxyServer` y con los valores  `Port` correctos para su organización; por ejemplo, `proxy01.contoso.com:80` . 
   

@@ -15,19 +15,20 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 08/31/2021
-ms.openlocfilehash: 5d9f6ace79d05eff795041732e045abf18d5f792
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 946027419feca235442476db41533fb29adc6007
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192784"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490756"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
 
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
-- Antivirus de Microsoft Defender
+- Antivirus de Microsoft Defender
 
 Antivirus de Microsoft Defender muchos mecanismos inteligentes para detectar malware. Una de las capacidades más eficaces es la capacidad de aplicar la potencia de la nube para detectar malware y realizar análisis rápidos. La protección en la nube y el envío automático de muestras funcionan Antivirus de Microsoft Defender para ayudar a proteger contra amenazas nuevas y emergentes. 
 
@@ -123,7 +124,7 @@ Además, Defender for Endpoint ha recibido varias certificaciones de cumplimient
 - SOC I, II, III
 - y PCI
 
-Para más información, consulte los siguientes recursos:
+Para obtener más información, vea los recursos siguientes:
 
 - [Ofertas de cumplimiento de Azure](/azure/storage/common/storage-compliance-offerings) 
 - [Portal de confianza del servicio](https://servicetrust.microsoft.com)

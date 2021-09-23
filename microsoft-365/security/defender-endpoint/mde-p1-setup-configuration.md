@@ -13,12 +13,13 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: 7927ba193d6b488911d3d658ac48f4980d90969c
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 53d8742b411c500705434fcef181793df591eb19
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444108"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490972"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Configurar y configurar Microsoft Defender para endpoint plan 1 (versión preliminar)
 
@@ -40,7 +41,7 @@ El proceso general de configuración y configuración de Defender for Endpoint P
 | 2 | [Planear la implementación](#plan-your-deployment) | Enumera varios métodos de implementación a tener en cuenta e incluye vínculos a más recursos para ayudarle a decidir qué método usar  |
 | 3 | [Configurar el entorno de inquilino](#set-up-your-tenant-environment) | Enumera las tareas para configurar el entorno de inquilino |
 | 4  | [Asignar roles y permisos](#assign-roles-and-permissions) | Enumera los roles y permisos que se deben tener en cuenta para el equipo de seguridad <br/><br/>**SUGERENCIA:** Tan pronto como se asignan roles y permisos, el equipo de seguridad puede empezar a usar el portal Microsoft 365 Defender seguridad. Para obtener más información, vea [Introducción.](mde-plan1-getting-started.md) |
-| 5  | [Incorporación a Defender para endpoint](#onboard-to-defender-for-endpoint) | Enumera varios métodos por sistema operativo para incorporar a Defender for Endpoint Plan 1 e incluye vínculos a información más detallada para cada método  |
+| 5 | [Incorporación a Defender para endpoint](#onboard-to-defender-for-endpoint) | Enumera varios métodos por sistema operativo para incorporar a Defender for Endpoint Plan 1 e incluye vínculos a información más detallada para cada método  |
 | 6  | [Configurar protección de última generación](#configure-next-generation-protection) | Describe cómo configurar las opciones de protección de próxima generación en Microsoft Endpoint Manager  |
 | 7  | [Configurar las capacidades de reducción de superficie de ataque](#configure-your-attack-surface-reduction-capabilities)        | Enumera los tipos de capacidades de reducción de superficie de ataque que puedes configurar e incluye procedimientos con vínculos a más recursos  |
 
@@ -54,7 +55,7 @@ En la tabla siguiente se enumeran los requisitos básicos de Defender para el pl
 | Requisito | Descripción |
 |:---|:---|
 | Requisitos de licencias | Plan 1 de Defender para punto de conexión (versión preliminar) <br/><br/>*Si tiene Microsoft 365 E3, puede unirse al programa de vista previa.* |
-| Requisitos de los exploradores | Microsoft Edge <br/> Versión 11 de Internet Explorer <br/> Google Chrome |
+| Requisitos de los exploradores | Microsoft Edge <br/> Versión 11 de Internet Explorer <br/> Google Chrome |
 | Sistemas operativos | Windows 10, versión 1709 o posterior <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina) o 10.14.6 (Mojave) <br/>iOS <br/>Sistema operativo Android  |
 | Datacenter | Una de las siguientes ubicaciones de centro de datos: <br/>- Unión Europea <br/>- Reino Unido <br/>- Estados Unidos |
 
@@ -311,7 +312,7 @@ Con la protección web, puede proteger los dispositivos de su organización fren
 
 5. En la **pestaña Configuración,** expanda **Protección web**, especifique la configuración de la tabla siguiente y, a continuación, **elija Siguiente**. <br/><br/>
 
-   | Configuración | Recomendación |
+   | Valor | Recomendación |
    |:---|:---|
    | **Habilitar la protección de red** | Se establece en **Habilitado**. Impide que los usuarios visiten sitios o dominios malintencionados. <br/><br/>Como alternativa, puede establecer la protección de red en **modo auditoría** para ver cómo funcionará en su entorno. En el modo de auditoría, la protección de red no impide que los usuarios visiten sitios o dominios, pero sí realiza un seguimiento de las detecciones como eventos. |
    | **Requerir SmartScreen para Microsoft Edge (versión anterior)** | Se establece en **Sí**. Ayuda a proteger a los usuarios de posibles estafas de suplantación de identidad (phishing) y software malintencionado. |

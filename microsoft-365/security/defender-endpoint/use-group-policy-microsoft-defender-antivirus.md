@@ -16,12 +16,13 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 3e3014feb80383c370aa49f387966c574df587f9
-ms.sourcegitcommit: bf801ff8b45a68edb587f1661d06acd4121ecb49
+ms.collection: m365-security-compliance
+ms.openlocfilehash: f2febd14482544e9e161336e30eea54513113a5f
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59407686"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490936"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender
 
@@ -96,9 +97,9 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 | Corrección | Especificar la hora del día para ejecutar un examen completo programado para completar la corrección | [Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Creación de informes | Desactivar las notificaciones mejoradas | [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
 | Raíz | Desactivar Antivirus de Microsoft Defender | No se usa (esta configuración debe establecerse en **No configurar para** garantizar que las aplicaciones antivirus de terceros instaladas funcionen correctamente)
-| Raíz | Definir direcciones para omitir el servidor proxy | No se usa |
-| Raíz | Definir proxy autoconfig (.pac) para conectarse a la red | No se usa |
-| Raíz | Definir servidor proxy para conectarse a la red | No se usa |
+| Raíz | Definir direcciones para omitir el servidor proxy | [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
+| Raíz | Definir proxy autoconfig (.pac) para conectarse a la red | [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
+| Raíz | Definir servidor proxy para conectarse a la red | [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
 | Raíz | Configurar el comportamiento de combinación de administradores locales para listas | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Raíz | Permitir que el servicio antimalware se inicie con prioridad normal | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
 | Raíz | Permitir que el servicio antimalware siga ejecutándose siempre | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
@@ -151,7 +152,7 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 | Amenazas | Especificar niveles de alerta de amenazas en los que no se debe realizar ninguna acción predeterminada cuando se detecte | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
 | Amenazas | Especificar amenazas en las que no se debe realizar una acción predeterminada cuando se detecte | [Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Temas de referencia para herramientas de administración y configuración](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

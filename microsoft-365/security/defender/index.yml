@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 4ce4681ff5008cc3209789139bacd8441a7f724f
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: bf167feb138be131ac565817767da2d1b1dd5be7
+  ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59192467"
+  ms.lasthandoff: 09/23/2021
+  ms.locfileid: "59491426"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -30,7 +30,7 @@ landingContent:
       url: overview-security-center.md
   - linkListType: whats-new
     links:
-    - text: Novedades Microsoft 365 Defender
+    - text: Novedades de Microsoft 365 Defender
       url: ../defender/whats-new.md
   - linkListType: video
     links:
@@ -44,7 +44,7 @@ landingContent:
       url: eval-overview.md
     - text: Ejecutar proyecto piloto en producción
       url: eval-overview.md
-- title: Comenzar
+- title: Introducción
   linkLists:
   - linkListType: get-started
     links:
@@ -64,7 +64,7 @@ landingContent:
       url: /defender-for-identity/what-is
     - text: Arquitectura de Microsoft Defender for Identity
       url: /defender-for-identity/architecture
-- title: Microsoft Defender para Office 365
+- title: Microsoft Defender para Office 365
   linkLists:
   - linkListType: overview
     links:
@@ -110,5 +110,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Microsoft 365 Defender API (versión preliminar)
+    - text: Microsoft 365 Defender API
       url: api-overview.md

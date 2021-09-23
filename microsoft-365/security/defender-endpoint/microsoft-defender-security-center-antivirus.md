@@ -15,12 +15,13 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d8bc077e12d52a5194b6e698a989704bdc273c52
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 23e89bd4aee02299e0710ff65fbe496fd8535b8f
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213520"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490122"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación
 
@@ -142,4 +143,4 @@ Para obtener más información, consulte los siguientes recursos:
 
 ## <a name="see-also"></a>Consulte también
 
-- [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

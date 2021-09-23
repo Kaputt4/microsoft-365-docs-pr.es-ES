@@ -16,12 +16,13 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 5b1562a92302e404d10e5f309a702c09491aab80
-ms.sourcegitcommit: bf801ff8b45a68edb587f1661d06acd4121ecb49
+ms.collection: M365-security-compliance
+ms.openlocfilehash: a725d1e239fb6b8d853c3f7f33814c62a77f6e8d
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59407662"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490816"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -115,3 +116,8 @@ También verás una detección en Amenazas en cuarentena **en** **la** sección 
    > Las versiones Windows 10 versiones anteriores a la 1703 tienen una interfaz de usuario diferente. Consulta [Antivirus de Microsoft Defender en la aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
 
    El Windows de eventos también mostrará Windows Defender [identificador de evento de cliente 1116](troubleshoot-microsoft-defender-antivirus.md).
+
+## <a name="see-also"></a>Consulte también
+
+- [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md)
+- [Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)

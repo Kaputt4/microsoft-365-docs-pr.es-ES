@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.openlocfilehash: 44f75b2912a8e54df6584a8f97d0f6e76cac6b15
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: ab658009d5459093477dede8fdab5e8da4186eb6
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192707"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491162"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -50,7 +51,7 @@ La protección de red Windows 10 Pro o Enterprise y Antivirus de Microsoft Defen
 
 ****
 
-|Versión de Windows|Antivirus de Microsoft Defender|
+|Versión de Windows|Antivirus de Microsoft Defender|
 |---|---|
 |Windows 10 versión 1709 o posterior <p> Windows Servidor 1803 o posterior|[Antivirus de Microsoft Defender la protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y la protección [en](enable-cloud-protection-microsoft-defender-antivirus.md) la nube deben estar habilitadas|
 |

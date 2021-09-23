@@ -12,16 +12,16 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/06/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a847e65adb0402d4c5f98e19424677ccdc1011da
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 84b739256ffe1bae3e663cb6be9fe1ec5471be7d
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220617"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491198"
 ---
 # <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Implementación y habilitación en el Antivirus de Windows Defender
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d2e0fc1ffeccfd189b95fbd5908a959e4a823a8
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: c7ee6f1debaf697c49e292068ba88c436714addf
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460173"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491128"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -103,6 +103,10 @@ Después de la incorporación, el dispositivo tarda unas horas en aparecer en el
 ## <a name="data-and-privacy"></a>Datos y privacidad
 
 Para obtener más información acerca de los datos recopilados y la privacidad, consulte [Privacy Information - Microsoft Defender for Endpoint on iOS](ios-privacy.md).
+
+## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>Problemas en dispositivos supervisados con el perfil de filtro de contenido instalado
+
+Hay un problema en dispositivos supervisados con el filtro de contenido de Defender for Endpoint instalado. Si observa lentitud o latencia en la conectividad entre conjunto en estos dispositivos, desinstale o elimine el perfil de filtro de contenido del dispositivo. Estamos trabajando para resolver este problema y actualizaremos este lugar una vez que disponen de una resolución. 
 
 ## <a name="issues-during-app-updates-from-the-app-store"></a>Problemas durante las actualizaciones de aplicaciones de la tienda de aplicaciones
 

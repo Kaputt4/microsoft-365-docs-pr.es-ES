@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 81d9194d9e0c6677f01f34b8052efa0333270c04
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5616a2b4aecede00ca11a56d37bc7d074d260627
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215097"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491174"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Novedades de Microsoft Defender para endpoint en iOS
 
@@ -34,6 +34,11 @@ ms.locfileid: "59215097"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1120240103"></a>1.1.20240103
+- Tarjeta de estado del dispositivo: la tarjeta de mantenimiento del dispositivo notifica a los usuarios finales sobre las actualizaciones de software pendientes.
+- Mejoras de facilidad de uso: los usuarios finales ahora pueden deshabilitar defender la VPN de extremo desde la propia aplicación MSDefender. Antes de esta actualización, los usuarios finales tenían que deshabilitar VPN solo desde la Configuración aplicación.
+- Correcciones de errores.
 
 ## <a name="1120020101"></a>1.1.20020101
 - Mejoras de la experiencia de usuario: Microsoft Defender para endpoint tiene un aspecto nuevo.

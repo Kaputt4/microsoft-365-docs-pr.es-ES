@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf043741e2d066c8eaa7c4919b194a6ffd6d857d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5dde826fcf5ecfd5e1c18c9efefd6c456ba6ecab
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220562"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491498"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementar Microsoft Defender para endpoint en iOS
 
@@ -152,17 +152,6 @@ Intune te permite configurar la aplicación Defender para iOS a través de una d
    Haga clic en **Siguiente**.
 
 1. En la **página Revisar y crear,** cuando haya terminado, elija **Crear**. El nuevo perfil se muestra en la lista de perfiles de configuración.
-
-1. A continuación, para obtener funcionalidades mejoradas contra la suplantación de identidad, puede implementar un perfil personalizado en los dispositivos iOS supervisados. Siga los pasos siguientes:
-    - Descargar el perfil de configuración desde [https://aka.ms/mdatpiossupervisedprofile](https://aka.ms/mdatpiossupervisedprofile)
-    - Vaya a  ->  **Dispositivos iOS/iPadOS**  ->  **Configuration profiles**  ->  **Create Profile**
-
-    > [!div class="mx-imgBorder"]
-    > ![Imagen de Microsoft Endpoint Manager Centro de administración7.](images/ios-deploy-7.png)
-
-    - Proporcione un nombre del perfil. Cuando se le pida que importe un archivo de perfil de configuración, seleccione el que se descargó anteriormente.
-    - En la **sección Asignación,** selecciona el grupo de dispositivos al que quieres aplicar este perfil. Como práctica recomendada, esto debe aplicarse a todos los dispositivos iOS administrados. Haga clic en **Siguiente**.
-    - En la **página Revisar y crear,** cuando haya terminado, elija **Crear**. El nuevo perfil se muestra en la lista de perfiles de configuración.
 
 ## <a name="next-steps"></a>Siguientes pasos
 

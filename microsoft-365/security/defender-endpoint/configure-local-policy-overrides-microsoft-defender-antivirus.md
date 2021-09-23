@@ -1,5 +1,5 @@
 ---
-title: Configurar invalidaciones locales para la configuración de Antivirus de Microsoft Defender
+title: Configurar invalidaciones locales para Antivirus de Microsoft Defender configuración
 description: Habilite o deshabilite a los usuarios para que no cambien la configuración localmente en El antivirus de Microsoft Defender.
 keywords: invalidación local, directiva local, directiva de grupo, gpo, bloqueo, combinación, listas
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,13 @@ ms.custom: nextgen
 ms.date: 09/14/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 18260bd67d99aa372de7a14dab7decd3983d1beb
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 847b2085d6285299cea7f32f98c8c682dcb3fb4d
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355889"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490158"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedir o permitir que los usuarios modifiquen localmente Antivirus de Microsoft Defender configuración de directiva
 
