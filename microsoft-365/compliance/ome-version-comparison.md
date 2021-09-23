@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Este artículo ayuda a explicar las diferencias entre las diferentes versiones de Cifrado de mensajes de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 92beb3625c0b115fe77f1667a448bf0bf9589040
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 161415dfafc28bbb82043b0ecefea4dcb15d144b
+ms.sourcegitcommit: 0166442bb1f9922f627bc34e97bd74c609aa9507
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216657"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482154"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versiones de OME
 
@@ -36,7 +36,7 @@ Este artículo forma parte de una serie más grande de artículos sobre Cifrado 
 
 Exchange Online incluye funcionalidad de Information Rights Management (IRM) que proporciona protección en línea y sin conexión de mensajes de correo electrónico y datos adjuntos. De forma predeterminada, Exchange Online Azure Information Protection. Sin embargo, es posible que la organización haya configurado Exchange Online IRM para usar el Servicio de administración de derechos de Active Directory (AD RMS) local. La compatibilidad con AD RMS Exchange Online se retira. En su lugar, Azure Information Protection reemplazará a AD RMS por completo.
 
-Para evaluar si este desuso afecta a su organización, vea [How to migrate AD RMS to Azure RMS in Exchange Online](https://support.microsoft.com/help/5001237). En este artículo se proporcionan recomendaciones sobre las opciones de migración.
+Para evaluar si este desuso afecta a su organización, vea [How to migrate AD RMS to Azure RMS in Exchange Online](/exchange/troubleshoot/administration/migrate-ad-rms-to-azure). En este artículo se proporcionan recomendaciones sobre las opciones de migración.
 
 ## <a name="side-by-side-comparison-of-ome-features-and-capabilities"></a>Comparación en paralelo de características y funcionalidades de OME
 

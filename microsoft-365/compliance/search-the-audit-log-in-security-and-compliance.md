@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: a77af4e72c5eaa5d66f120f05e91913c292051ab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: abfd937b98ff863876060fcf6bbbe38c6b64f23f
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183961"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481065"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -409,9 +409,22 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
         [Actividades de barreras de información](#information-barriers-activities)
     :::column-end:::
     :::column:::
-        [Actividades de administración de Exchange](#exchange-admin-audit-log)
+        [Actividades de revisión para eliminación](#disposition-review-activities)
     :::column-end:::
 :::row-end:::
+
+:::row:::
+    :::column:::
+        [Actividades de administración de Exchange](#exchange-admin-audit-log)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+:::row-end:::
+
 
 ### <a name="file-and-page-activities"></a>Actividades de páginas y archivos
 
@@ -984,6 +997,8 @@ En la tabla siguiente se enumeran los eventos que se producen a partir de las ta
 
 ### <a name="retention-policy-and-retention-label-activities"></a>Actividades de las directivas y etiquetas de retención
 
+En la tabla siguiente se describen las actividades de configuración de las [directivas de retención y las etiquetas de retención](retention.md) cuando se crearon, reconfiguraron o eliminaron.
+
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 | Opciones configuradas para una directiva de retención |NewRetentionComplianceRule |El administrador estableció la configuración de retención para una nueva directiva de retención. La configuración de retención incluye cuánto tiempo se retienen los elementos y qué sucede con los elementos cuando expira el período de retención (como eliminar elementos, retener elementos o retenerlos y luego eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule).|
@@ -1031,6 +1046,18 @@ En la tabla siguiente se enumeran las actividades en las barreras de informació
 | Añadir segmentos a un sitio | SegmentsAdded | Un SharePoint, administrador global o propietario de un sitio agregó uno o más segmentos de barreras de información a un sitio. |
 | Segmentos cambiados de un sitio | SegmentsChanged | Un administrador global o SharePoint cambió uno o más segmentos de barreras de información para un sitio. |
 | Segmentos quitados de un sitio | SegmentsRemoved | Un administrador global o SharePoint quitó uno o más segmentos de barreras de información desde un sitio. |
+||||
+
+### <a name="disposition-review-activities"></a>Actividades de revisión para eliminación
+
+En la tabla siguiente se enumeran las actividades que realizó un revisor para eliminación cuando un elemento alcanzó el final de su período de retención configurado. Para más información, vea [Visualización y eliminación de contenido](disposition.md#viewing-and-disposing-of-content).
+
+|**Nombre descriptivo**|**Operación**|**Descripción**|
+|:-----|:-----|:-----|
+|Eliminación aprobada|ApproveDisposal|Un revisor de eliminación aprobó la eliminación del elemento para moverlo a la siguiente fase de eliminación. Si el elemento estaba en fase única o final de la revisión de eliminación, la aprobación para eliminación marcó el elemento como apto para su eliminación permanente.|
+|Período de retención extendido|ExtendRetentiond|Un revisor de disposición extendió el período de retención del elemento.|
+|Elemento etiquetado de nuevo|RelabelItem|Un revisor de eliminación reetiquetó la etiqueta de retención.|
+|Revisores agregados|AddReviewer|Un revisor de eliminación agregó uno o más usuarios a la fase actual de la revisión para eliminación.|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Registro de auditoría de administración de Exchange

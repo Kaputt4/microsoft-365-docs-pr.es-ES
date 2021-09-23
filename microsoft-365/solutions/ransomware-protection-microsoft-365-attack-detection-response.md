@@ -1,5 +1,5 @@
 ---
-title: Paso 2. Implementar la detección y respuesta ante ataques
+title: Paso 2. Implementación de la detección y respuesta de ataques
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,16 +17,18 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, ransomware operado por personas, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología
 description: Usa Microsoft 365 Defender y sus orígenes de señal de seguridad para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: 7380e546733a299e7cf888946d502c43074822f5
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 09b2e7930d6fbe0295dcf8343a559a19b680f547
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444666"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481101"
 ---
-# <a name="step-2-deploy-attack-detection-and-response"></a>Paso 2. Implementar la detección y respuesta ante ataques
+# <a name="step-2-deploy-attack-detection-and-response"></a>Paso 2. Implementación de la detección y respuesta de ataques
 
-Habilite, configure y use estas herramientas para la detección y respuesta de ataques de ransomware.
+Como primer paso muy recomendado para la detección y respuesta de ataques de ransomware en su inquilino de Microsoft 365, [configure un entorno de prueba](/microsoft-365/security/defender/eval-overview) para evaluar las características y funcionalidades de Microsoft 365 Defender.
+
+Consulte estos recursos para más información.
 
 | Característica | Descripción | ¿Por dónde empezar? | Cómo usarlo para la detección y respuesta |
 |:-------|:-----|:-------|:-------|
@@ -76,8 +78,6 @@ Las siguientes herramientas usan Microsoft 365 Defender y su portal (https://sec
 - Microsoft Cloud App Security
 
 Microsoft 365 Defender combina señales de amenazas en alertas y alertas conectadas en un incidente para que los analistas de seguridad puedan detectar, investigar y corregir más rápidamente las fases de un ataque de ransomware.
-
-Puede [ configurar un entorno de prueba](/microsoft-365/security/defender/eval-overview) para evaluar las características y funcionalidades de Microsoft 365 Defender.
 
 ## <a name="resulting-configuration"></a>Configuración resultante
 

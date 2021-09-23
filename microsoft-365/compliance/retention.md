@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 9415b7aa8e258264095de41a7f820751d3794a13
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3cb6548cee9b14de661faed2d4a2aa2f45de3b83
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210920"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477725"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -421,6 +421,9 @@ Las acciones de retención que se registran como eventos de auditoría solo est�
 
 - Cuando un elemento etiquetado en SharePoint, OneDrive o Exchange se marca como un registro o registro normativo, y se elimina de manera permanente:
     - En **Actividades de archivos y páginas**, seleccione **Archivo eliminado marcado como un registro.**
+
+- Cuando un revisor de eliminación realiza una acción para un elemento que ha llegado al final de su período de retención:
+    -  Desde **Actividades de revisión para eliminación**, seleccione **Eliminación aprobada**, **Período de retención extendido**, **Elemento reetiquetado** o **Revisores agregados**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlets de PowerShell para directivas de retención y etiquetas de retención
 

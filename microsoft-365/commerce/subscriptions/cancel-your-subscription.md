@@ -19,13 +19,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Si tiene menos de 25 licencias de usuario, puede cancelar la suscripción de prueba o de pago de Microsoft 365 para empresas en el Centro de administración.
-ms.date: 04/08/2021
-ms.openlocfilehash: 900fd5f544a405b5f337623ba35a353cefaf9bab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 932cac44b9bf1b8632116d544cf4b33c0cb19a27
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221222"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481041"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -37,7 +37,9 @@ ms.locfileid: "59221222"
 *Reembolso:* cualquier crédito prorrateado se le devolverá en el próximo ciclo de facturación.
 
 > [!NOTE]
-> Si tiene varias suscripciones al mismo producto, como Microsoft 365 Empresa Premium, cancelar una de ellas no afectará a las licencias o los servicios comprados dentro de las demás suscripciones.
+> 
+> - Si tiene varias suscripciones al mismo producto, como Microsoft 365 Empresa Premium, cancelar una de ellas no afectará a las licencias o los servicios comprados dentro de las demás suscripciones.
+> - Para algunas suscripciones, solo puede cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactive la facturación periódica para cancelar la suscripción al final de su término.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -66,7 +68,9 @@ Si ha agregado su propio nombre de dominio para usarlo con su suscripción, debe
 ::: moniker-end
 
 2. Busque la suscripción que desea cancelar. Seleccione los tres puntos (más acciones) y, después, seleccione **Cancelar suscripción**.
+
 3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
+
 4. Seleccione **Guardar**.
 
 Su suscripción ahora aparecerá en estado de **Deshabilitada** y tendrá funcionalidad reducida hasta que se elimine. Para obtener más información acerca de lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, consulte [¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?](what-if-my-subscription-expires.md)

@@ -17,25 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: a905847da3a6c28d8d24d13adb193423b57d83d1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ac98276e79679d2917a955f02318132c96e2863b
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193147"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480873"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use la página **Eliminación** de **Administración de registros** en el Centro de cumplimiento de Microsoft 365 para administrar las revisiones de eliminación y ver los metadatos de los [registros](records-management.md#records) que se hayan eliminado automáticamente al final de su período de retención.
-
-> [!NOTE]
-> Versión preliminar: **revisión para eliminación de varias etapas**
-> 
-> Ahora un administrador puede agregar hasta cinco fases consecutivas de revisión para eliminación en una etiqueta de retención y los revisores pueden agregar a otros usuarios a su fase de revisión para eliminación. También puede personalizar las notificaciones por correo electrónico y los avisos. En las siguientes secciones se ofrece más información sobre los cambios en esta versión preliminar.
->
-> Para leer el anuncio de la versión, consulte la entrada de blog [Anuncio de la disposición de varias etapas en la Administración de registros de Microsoft](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-multi-stage-disposition-in-microsoft-records/ba-p/2361849).
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Requisitos previos para ver las eliminaciones de contenido
 
@@ -56,14 +49,14 @@ Además:
 
 - Para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios al grupo de roles **Visor de contenido del Explorador de contenido**. Si los usuarios no tienen los permisos de este grupo de roles, aún pueden seleccionar una acción de revisión para eliminación para completar la revisión para eliminación, pero deben hacerlo sin poder ver el contenido del elemento desde el panel de vista previa en miniatura del centro de cumplimiento.
 
-- En la versión preliminar: de forma predeterminada, cada persona que accede a la página **Eliminación** solo ve los elementos que tienen asignados para revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención que están configuradas para la revisión para eliminación: vaya a **Configuración de administración de registros** > **General** > **Grupo de seguridad para el administrador de registros** para seleccionar y habilitar un grupo de seguridad habilitado para correo que contiene las cuentas de administrador.
+- De forma predeterminada, cada persona que accede a la página **Eliminación** solo ve los elementos que tienen asignados para revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención que están configuradas para la revisión para eliminación: vaya a **Configuración de administración de registros** > **General** > **Grupo de seguridad para el administrador de registros** para seleccionar y habilitar un grupo de seguridad habilitado para correo que contiene las cuentas de administrador.
     
-    Los grupos de Microsoft 365 y los grupos de seguridad que no están habilitados para correo no admiten esta característica y no se mostrarán en la lista para seleccionar. Si necesita crear un grupo de seguridad habilitado para un correo nuevo, use el vínculo al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para crear el grupo nuevo. 
+    Los grupos de Microsoft 365 y los grupos de seguridad que no están habilitados para correo no admiten esta característica y no se muestran en la lista para seleccionar. Si necesita crear un grupo de seguridad habilitado para un correo nuevo, use el vínculo al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para crear el grupo nuevo. 
     
     > [!IMPORTANT]
     > Una vez habilitado el grupo, no puede cambiarlo en el centro de cumplimiento. Vea la sección siguiente sobre cómo habilitar un grupo diferente mediante PowerShell.
 
-- En la versión preliminar: la opción **Configuración de administración de registros** solo está visible para los administradores de administración de registros. 
+- La opción **Configuración de administración de registros** solo está visible para los administradores de administración de registros. 
 
 #### <a name="enabling-another-security-group-for-disposition"></a>Habilitar otro grupo de seguridad para su eliminación
 
@@ -77,7 +70,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 ### <a name="enable-auditing"></a>Habilitar auditoría
 
-Asegúrese de que la auditoría está activada al menos un día antes de la primera acción de eliminación. Para más información, vea [Buscar en el registro de auditoría del Centro de seguridad &amp; cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md). 
+Asegúrese de que la auditoría está activada al menos un día antes de la primera acción de eliminación. Para más información, vea [Buscar en el registro de auditoría en el centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md). 
 
 ## <a name="disposition-reviews"></a>Revisiones para eliminación
 
@@ -89,16 +82,19 @@ Cuando el contenido llegue al final de su período de retención, hay varios mot
 
 - Mover el contenido desde su ubicación existente a una ubicación de archivo. Por ejemplo, si ese contenido tiene valor histórico o de investigación.
 
-Cuando se activa una revisión para eliminación al final del período de retención:
-  
-- Los revisores que elija recibirán una notificación por correo electrónico de que tienen contenido para revisar. Estos revisores pueden ser usuarios individuales o grupos de seguridad habilitados para correo. Novedades de la versión preliminar:
-   - Puede personalizar el correo electrónico que reciben, incluidas instrucciones en diferentes idiomas. Para obtener compatibilidad con varios idiomas, debe especificar las traducciones usted mismo y este texto personalizado se mostrará a todos los revisores, con independencia de su configuración regional.
-   - Los usuarios reciben una notificación por correo electrónico inicial por etiqueta al final del periodo de retención del elemento, con un aviso por etiqueta una vez por semana de todas las revisiones para eliminación que se les han asignado. Pueden hacer clic en el vínculo de los correos electrónicos de notificación y aviso para ir a la página **Eliminación** del Centro de cumplimiento de Microsoft 365 para revisar el contenido y tomar medidas. De forma alternativa, los revisores pueden ir directamente a la página de **Eliminación** en el centro de cumplimiento.
-   - Los revisores solo ven las revisiones para eliminación que se les han asignado, mientras que los administradores agregados al grupo de seguridad del administrador de registros seleccionado ven todas las revisiones para eliminación.
-   - Los revisores pueden agregar nuevos usuarios a la misma revisión para eliminación. Actualmente, esta acción no concede automáticamente a estos usuarios agregados los [permisos necesarios](#permissions-for-disposition).
-   - Para el proceso de revisión para eliminación, un panel de revisión en miniatura de cada elemento muestra una vista previa del contenido si tienen permisos para verlo. Si no tienen permisos, pueden seleccionar el vínculo de contenido y solicitar permisos. Este panel de revisión en pequeño también tiene pestañas para obtener información adicional sobre el contenido:
-       - **Detalles** para mostrar las propiedades indizadas, dónde se encuentra, quién lo creó, cuándo, quién lo modificó por última vez y cuándo.
-       - **Historial** muestra el historial de cualquier acción de revisión para eliminación hasta la fecha, con comentarios del revisor si están disponibles.
+Cuando se desencadena una revisión para eliminación al final del período de retención, los revisores que elija recibirán una notificación por correo electrónico de que tienen contenido para revisar. Estos revisores pueden ser usuarios individuales o grupos de seguridad habilitados para correo.
+
+Puede personalizar el correo electrónico de notificación que reciben los revisores, incluidas las instrucciones en distintos idiomas. Para obtener compatibilidad con varios idiomas, debe especificar las traducciones usted mismo y este texto personalizado se mostrará a todos los revisores, con independencia de su configuración regional.
+
+Los usuarios reciben una notificación por correo electrónico inicial por etiqueta al final del periodo de retención del elemento, con un aviso por etiqueta una vez por semana de todas las revisiones para eliminación que se les han asignado. Pueden hacer clic en el vínculo de los correos electrónicos de notificación y aviso para ir a la página **Eliminación** del Centro de cumplimiento de Microsoft 365 para revisar el contenido y tomar medidas. De forma alternativa, los revisores pueden ir directamente a la página de **Eliminación** en el centro de cumplimiento. Luego:
+
+- Los revisores solo ven las revisiones para eliminación que se les han asignado, mientras que los administradores agregados al grupo de seguridad del administrador de registros seleccionado ven todas las revisiones para eliminación.
+
+- Los revisores pueden agregar nuevos usuarios a la misma revisión para eliminación. Tenga en cuenta que esta acción no concede automáticamente a estos usuarios agregados los [permisos necesarios](#permissions-for-disposition).
+
+- Para el proceso de revisión para eliminación, un panel de revisión en miniatura de cada elemento muestra una vista previa del contenido si tienen permisos para verlo. Si no tienen permisos, pueden seleccionar el vínculo de contenido y solicitar permisos. Este panel de revisión en pequeño también tiene pestañas para obtener información adicional sobre el contenido:
+   - **Detalles** para mostrar las propiedades indizadas, dónde se encuentra, quién lo creó, cuándo, quién lo modificó por última vez y cuándo.
+   - **Historial** muestra el historial de cualquier acción de revisión para eliminación hasta la fecha, con comentarios del revisor si están disponibles.
 
 Una revisión para eliminación puede incluir contenido en buzones de Exchange, sitios de SharePoint y cuentas de OneDrive. El contenido pendiente de una revisión para eliminación en esas ubicaciones se elimina permanentemente solo después de que un revisor para la fase final de eliminación elija eliminar el contenido de forma permanente.
 
@@ -116,7 +112,7 @@ Al seleccionar **Ver todas las eliminaciones pendientes**, se le dirigirá a la 
 
 ### <a name="workflow-for-a-disposition-review"></a>Flujo de trabajo para una revisión para eliminación
 
-El siguiente diagrama muestra el flujo de trabajo básico de una revisión para eliminación cuando se publica una etiqueta de retención y un usuario la aplica de forma manual. Como alternativa, puede aplicar automáticamente la etiqueta de retención configurada para una revisión para eliminación al contenido.
+El siguiente diagrama muestra el flujo de trabajo básico de una revisión para eliminación (fase única) cuando se publica una etiqueta de retención y un usuario la aplica de forma manual. Como alternativa, puede aplicar automáticamente la etiqueta de retención configurada para una revisión para eliminación al contenido.
   
 ![Gráfico que muestra el flujo de trabajo de eliminación.](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
 
@@ -128,20 +124,20 @@ En la página **Definir la configuración de retención** de una etiqueta de ret
 
 ![Configuración de retención para una etiqueta.](../media/disposition-review-option.png)
  
-Después de seleccionar la opción **Desencadenar una revisión para eliminación**, en la siguiente página del asistente, especifique cuántas fases consecutivas de eliminación quiere y los revisores de eliminación para cada fase:
+Después de seleccionar la opción **Desencadenar una revisión para eliminación**, en la siguiente página de la configuración, especifique cuántas fases consecutivas de eliminación quiere y los revisores de eliminación para cada fase:
 
 ![Especificar revisores de eliminación.](../media/disposition-reviewers.png) 
 
 Seleccione **Agregar una fase** y asigne un nombre a la fase para fines de identificación. Después, especifique los revisores de esa fase.
 
-Para los revisores, especifique un usuario o un grupo de seguridad habilitado para correo. En esta opción, actualmente no se admiten los grupos de Microsoft 365 ([anteriormente llamados grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)).
+Para los revisores, especifique un usuario o un grupo de seguridad habilitado para correo. En esta opción no se admiten los grupos de Microsoft 365 ([anteriormente llamados grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)).
 
 Si necesita que más de una persona revise un elemento al final del periodo de retención, seleccione **Agregar una fase** de nuevo y repita el proceso de configuración para el número de fases que necesita, con un máximo de cinco fases. 
 
 Dentro de cada fase individual de eliminación, cualquiera de los usuarios que especifique para esa fase están autorizados para realizar la siguiente acción para el elemento al final del período de retención. Estos usuarios también pueden agregar otros usuarios a su fase de revisión para eliminación.
 
 > [!NOTE]
-> Las etiquetas de retención existentes configuradas para la revisión para eliminación pueden actualizarse para usar la revisión para eliminación preconfigurada mediante la configuración de la etiqueta. En el asistente para etiquetas, seleccione **Agregar una fase**, edite los revisores existentes o agregue nuevos revisores.
+> Si configuró etiquetas de retención antes de que estuviera disponible la revisión para eliminación de varias fases, puede actualizar las etiquetas para admitir esta característica: en el asistente para etiquetas, seleccione **Agregar una fase**, edite los revisores existentes o agregue nuevos revisores.
 
 Durante la fase de configuración, para cada fase especificada, puede cambiar el nombre, cambiar el orden o quitarla seleccionando la opción de Acciones de fase (**...**): 
 
@@ -157,7 +153,7 @@ Ejemplo de notificación de correo electrónico predeterminada que se envía a u
 
 ![Ejemplo de notificación por correo electrónico con texto predeterminado cuando un elemento está listo para la revisión para eliminación.](../media/disposition-review-email.png)
 
-También en la vista previa, puede personalizar los mensajes de correo electrónico que se envían a los revisores para eliminación para la notificación inicial y los avisos.
+Puede personalizar los mensajes de correo electrónico que se envían a los revisores para eliminación para la notificación inicial y los avisos.
 
 En cualquiera de las páginas de Eliminación del Centro de cumplimiento, seleccione **Configuración de administración de registros**:  
 
@@ -165,7 +161,7 @@ En cualquiera de las páginas de Eliminación del Centro de cumplimiento, selecc
 
 Después, seleccione la pestaña **Notificaciones de eliminación** y especifique si desea usar solo el mensaje de correo electrónico predeterminado o agregar su propio texto al mensaje predeterminado. El texto personalizado se agrega a las instrucciones de correo electrónico después de la información sobre la etiqueta de retención y antes de las instrucciones de los pasos siguientes.
 
-Se puede agregar texto para todos los idiomas, pero actualmente el formato y las imágenes no son compatibles. Las direcciones URL y las direcciones de correo pueden especificarse como texto y, en función del cliente de correo electrónico, mostrarse como hipervínculos o texto sin formato en el correo electrónico personalizado.
+Se puede agregar texto para todos los idiomas, pero el formato y las imágenes no son compatibles. Las direcciones URL y las direcciones de correo pueden especificarse como texto y, en función del cliente de correo electrónico, mostrarse como hipervínculos o texto sin formato en el correo electrónico personalizado.
 
 Texto de ejemplo que se añadirá:
 
@@ -200,9 +196,9 @@ Como puede ver en el ejemplo que se muestra, las acciones admitidas son las sigu
     - Cuando se selecciona esta acción, se pide al usuario que especifique y agregue otros usuarios para su revisión.
     
     > [!NOTE]
-    > Esta acción no concede automáticamente los [permisos necesarios](#permissions-for-disposition) a los usuarios agregados. Si no tienen estos permisos, no podrán participar en la revisión para eliminación.
+    > Esta acción no concede automáticamente los [permisos necesarios](#permissions-for-disposition) a los usuarios agregados. Si no tienen estos permisos, no pueden participar en la revisión para eliminación.
 
-Todas las acciones realizadas se guardan y almacenan, aunque todavía no puede buscarlas en el registro de auditoría.
+Cada acción realizada tiene un evento de auditoría correspondiente en el grupo de actividades de auditoría [Actividades de revisión para eliminación](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities).
 
 Durante una revisión para eliminación, el contenido nunca se mueve de su ubicación original y no se marca para su eliminación permanente hasta que un revisor selecciona esta acción para última o única fase de eliminación.
 

@@ -18,11 +18,11 @@ f1.keywords:
 - NOCSH
 description: Use alertas de servicio de uso de buzones para supervisar los buzones en espera que están alcanzando su cuota de buzón.
 ms.openlocfilehash: afae43f0c589d6c025fb0e1d20a7c5cf81eacbe2
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479890"
+ms.locfileid: "59480777"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alertas de servicio para el uso de buzones en Exchange Online supervisión
 
