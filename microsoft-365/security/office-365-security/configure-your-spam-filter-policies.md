@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f12a416a95f55a73bd0bbd80bfb1a4fe5121aeec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2510ca3289cf6b6f7ed774b1d87aa2692e8b3f5d
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192364"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484064"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -154,7 +154,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      |**Anteponer la línea de asunto al texto**: agrega texto al principio de la línea de asunto del mensaje. El mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1,2</sup> <p> Especifique el texto más adelante en el cuadro **Prefijo de línea de asunto con este texto**.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
      |**Redirigir el mensaje a la dirección de correo electrónico**: envía el mensaje a otros destinatarios en vez de a los especificados. <p> Especifique los destinatarios más tarde en el cuadro **Redirigir a esta dirección de correo electrónico**.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
      |**Eliminar mensaje**: elimina el mensaje completo, incluidos todos los datos adjuntos.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
-     |**Colocar el mensaje en cuarentena**: envía el mensaje a la cuarentena en lugar de a los destinatarios. <p> Especifique cuánto tiempo se debe conservar el mensaje en cuarentena más adelante en el cuadro **Cuarentena**.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)|
+     |**Colocar el mensaje en cuarentena**: envía el mensaje a la cuarentena en lugar de a los destinatarios. <p> Especifique cuánto tiempo se debe conservar el mensaje en cuarentena más adelante en el cuadro **Cuarentena**. <p> Especifique la [política sobre cuarentena](quarantine-policies.md) que se aplica a los mensajes en cuarentena para el veredicto del filtro de correo no deseado en el cuadro **Seleccionar una política** que aparece. Para obtener más información, vea [Políticas sobre cuarentena](quarantine-policies.md). <sup>3</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)|
      |**Ninguna acción**|||||![Marca de verificación](../../media/checkmark.png)|
      |
 
@@ -163,9 +163,10 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      > En entornos híbridos en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
      >
      > <sup>2</sup> Puede usar este valor como condición en las reglas de flujo de correo (también conocidas como reglas de transporte) para filtrar o redirigir el mensaje.
+     >
+     > <sup>3</sup> Un valor de **Seleccione política** en blanco significa que se usa la política de cuarentena predeterminada para ese veredicto en particular. Cuando más adelante usted edite la política contra correo no deseado o vea la configuración, se muestra el nombre predeterminado de la política sobre cuarentena. Para obtener más información acerca de las políticas de cuarentena predeterminadas que se usan para los veredictos de filtro de correo no deseado, vea [esta tabla](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
    - **Mantener correo no deseado en cuarentena durante este número de días**: especifica cuánto tiempo debe mantenerse el mensaje en cuarentena si ha seleccionado **Mensaje en cuarentena** como la acción para un veredicto de filtrado de correo no deseado. Cuando expire el período de tiempo, el mensaje se eliminará. El valor predeterminado es 30 días. Los valores válidos están comprendidos entre 1 y 30 días. Para más información acerca de la cuarentena, consulte los siguientes artículos:
-
      - [Mensajes en cuarentena en EOP](quarantine-email-messages.md)
      - [Administración de mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md)
      - [Búsqueda y liberación de mensajes en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md)
@@ -191,7 +192,8 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      - **Habilitar ZAP para los mensajes de suplantación de identidad**: de manera predeterminada, ZAP está habilitada para la detección de la suplantación de identidad, pero puede deshabilitarla si desactiva la casilla.
      - **Habilitar ZAP para los mensajes de correo no deseado**: de forma predeterminada, ZAP está habilitada para la detección de correo no deseado, pero puede deshabilitarla si desactiva la casilla.
 
-   - **Habilitar notificaciones de correo no deseado para el usuario final**: para más información, vea la sección [Configurar las notificaciones de correo no deseado para el usuario final](#configure-end-user-spam-notifications) más adelante en este artículo.
+   > [!NOTE]
+   > Las notificaciones de correo no deseado del usuario final se han reemplazado por _notificaciones de cuarentena_ en políticas de cuarentena que contienen información sobre los mensajes en cuarentena para todas las características de protección admitidas (no solo los veredictos de políticas contra correo no deseado). Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -313,36 +315,6 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad
 
 4. Cuando haya terminado, haga clic en **Cerrar** en el control flotante de detalles de la directiva.
 
-### <a name="configure-end-user-spam-notifications"></a>Configurar notificaciones de correo no deseado para el usuario final
-
-> [!NOTE]
-> No se admiten las notificaciones de correo no deseado del usuario final para los grupos.
-
-Cuando un veredicto de filtrado de correo no deseado pone en cuarentena un mensaje, puede configurar las notificaciones de correo no deseado para el usuario final para que los destinatarios sepan lo que ha sucedido con los mensajes que se les han enviado. Para obtener más información acerca de estas notificaciones, consulte [Notificaciones de correo no deseado para el usuario final en EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
-
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
-
-2. En la página **Directivas contra el correo no deseado**, seleccione una directiva contra el correo no deseado en la lista. Para ello, haga clic en el nombre:
-   - Una directiva personalizada que creó, cuyo valor de la columna **Tipo** es **Directiva contra correo no deseado personalizada**.
-   - La directiva predeterminada denominada **Directiva de entrada contra correo no deseado (predeterminado)**.
-
-3. En el control flotante de detalles de la directiva que aparece, haga clic en **Editar** en la sección **Acciones**. En el control flotante de **Acciones** que aparece, configure las opciones siguientes:
-
-   - **Habilitar las notificaciones de correo no deseado para el usuario final**: seleccione la casilla para habilitar las notificaciones o desactive la casilla para deshabilitar las notificaciones. Al seleccionar la casilla, se mostrarán las siguientes opciones de configuración adicionales:
-
-     - **Enviar notificaciones de correo no deseado para el usuario final cada (días)**: seleccione la frecuencia con la que se envían las notificaciones. El valor predeterminado es 3 días. Puede escribir entre 1 y 15 días.
-
-       Existen tres ciclos de notificaciones de correo no deseado del usuario final dentro de un período de 24 horas que comienzan en los siguientes horarios: 01:00 UTC, 08:00 UTC y 16:00 UTC.
-
-       > [!NOTE]
-       > Si alguna notificación se ausenta durante un ciclo anterior, el ciclo subsiguiente enviará la notificación. Esto puede hacer que parezca que hay varias notificaciones en un mismo día.
-
-     - **Idioma**: haga clic en la lista desplegable y seleccione un idioma disponible de la lista. El valor por defecto es **Default** que corresponde al idioma inglés.
-
-   Cuando haya terminado, haga clic en **Guardar**.
-
-4. De nuevo en el control flotante de detalles de la directiva, haga clic en **Cerrar**.
-
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-spam-policies"></a>Usar el portal de Microsoft 365 Defender para quitar directivas contra correo no deseado personalizadas
 
 Cuando se utiliza el portal de Microsoft 365 Defender para eliminar una directiva antispam personalizada, se eliminan tanto la regla del filtro antispam como la directiva del filtro antispam correspondiente. No se puede eliminar la directiva antispam predeterminada.
@@ -366,7 +338,6 @@ La diferencia entre las directivas de filtro de correo no deseado y las reglas d
 Las siguientes opciones de configuración de directivas contra correo no deseado solo están disponibles en PowerShell:
 
 - El parámetro _MarkAsSpamBulkMail_ que es `On` de forma predeterminada. Los efectos de esta opción se explicaron anteriormente en este artículo, en la sección [Uso del portal de Microsoft 365 Defender para crear directivas contra correo no deseado](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies).
-
 - Las siguientes opciones de configuración del correo no deseado para el usuario final ponen las notificaciones en cuarentena:
   - El parámetro _DownloadLink_ que muestra u oculta el vínculo a la Herramienta de informes de correo no deseado para Outlook.
   - El parámetro _EndUserSpamNotificationCustomSubject_ que puede usar para personalizar la línea de asunto de la notificación.
@@ -397,7 +368,7 @@ New-HostedContentFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments
 
 En este ejemplo se crea una directiva de filtro de correo no deseado llamada Contoso Executives con la siguiente configuración:
 
-- Poner en cuarentena mensajes cuando el veredicto de filtrado de correo no deseado determine que es correo no deseado o correo no deseado de alta confianza.
+- Poner en cuarentena los mensajes cuando el veredicto de filtrado de correo no deseado es correo no deseado o correo no deseado de elevada confianza y usar [la política de cuarentena](quarantine-policies.md) predeterminada para los mensajes en cuarentena (no estamos usando los parámetros _SpamQuarantineTag_ o _HighConfidenceSpamQuarantineTag)._
 - BCL 7, 8 o 9 activa la acción para un veredicto de filtrado de correo no deseado en masa.
 
 ```PowerShell
@@ -405,6 +376,9 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 ```
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
+
+> [!NOTE]
+> Para obtener instrucciones detalladas para especificar la [política de cuarentena](quarantine-policies.md) que se usará en una política de filtro de correo no deseado, vea [Use PowerShell to specify the quarantine policy in anti-spam policies](quarantine-policies.md#anti-spam-policies-in-powershell). 
 
 #### <a name="step-2-use-powershell-to-create-a-spam-filter-rule"></a>Paso 2: Uso de PowerShell para crear una regla de filtro de correo no deseado
 
@@ -499,6 +473,9 @@ Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy).
+
+> [!NOTE]
+> Para obtener instrucciones detalladas para especificar la [política de cuarentena](quarantine-policies.md) que se usará en una política de filtro de correo no deseado, vea [Use PowerShell to specify the quarantine policy in anti-spam policies](quarantine-policies.md#anti-spam-policies-in-powershell). 
 
 ### <a name="use-powershell-to-modify-spam-filter-rules"></a>Uso de PowerShell para modificar reglas de filtro de correo no deseado
 
