@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Se ha decidido a implementar etiquetas de confidencialidad para proteger los datos de su organización, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: 7f53adddf19b3b09794c65d5157aeb1f8338008e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0a3d4e1446b984bd0f7f9fad997e1ecc3882ac12
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191437"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498057"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -52,7 +52,7 @@ Flujo básico para la implementación y aplicación de etiquetas de confidencial
 
 Distintas suscripciones admiten diferentes etiquetas de confidencialidad y los requisitos de licencias para los usuarios dependen de las características que use.
 
-Para ver las opciones para que los usuarios puedan beneficiarse de las características de cumplimiento de Microsoft 365, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para las etiquetas de confidencialidad, vea la sección [Protección de la información](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) y la descarga relacionada de archivos PDF o Excel.
+Para ver las opciones para que los usuarios puedan beneficiarse de las características de cumplimiento de Microsoft 365, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para las etiquetas de confidencialidad, consulte la sección de [Protección de la información](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) y la descarga del PDF correspondiente para conocer los requisitos de las licencias de nivel de características.
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Permisos necesarios para crear y administrar etiquetas de confidencialidad
 

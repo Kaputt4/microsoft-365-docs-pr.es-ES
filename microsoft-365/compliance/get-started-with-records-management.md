@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de alto valor para obligaciones legales, empresariales o reglamentarias, pero no sabe por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 8e6f32a7f1bc68449f1b43531725f07999043b82
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0af5391a7964e242067d70e559d082ede0c9fb3a
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191457"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497779"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
@@ -45,7 +45,7 @@ ms.locfileid: "59191457"
 
 Distintas suscripciones admiten diferentes administraciones de registros y los requisitos de licencias para los usuarios dependen de las características que use.
 
-Para ver las opciones para que los usuarios puedan beneficiarse de las características de cumplimiento de Microsoft 365, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para la administración de registros, vea la sección de [Administración de registros](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) y las descargas relacionadas en PDF o Excel para obtener más información sobre los requisitos de licencias de nivel de características.
+Para ver las opciones para que los usuarios puedan beneficiarse de las características de cumplimiento de Microsoft 365, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para la administración de registros, vea la sección de [Administración de registros](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) y las descargas relacionadas en PDF para obtener más información sobre los requisitos de licencias de nivel de características.
 
 ## <a name="permissions-required-for-records-management"></a>Permisos necesarios para la administración de registros
 

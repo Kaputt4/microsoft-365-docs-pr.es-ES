@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f89303e22432f2e3297bec01912710daf21d7379
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afed2a8a12f158ff7e283e7d82d1abe7c35a0732
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166147"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498117"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Soluciones de auditoría en Microsoft 365
 
@@ -103,6 +103,7 @@ En las secciones siguientes se identifican los requisitos de licencia para audit
 - Suscripción a Microsoft 365 Educación A3
 - Suscripción a Microsoft 365 Administración Pública G3
 - Suscripción a Microsoft 365 Administración Pública G1
+- Suscripción a Microsoft 365 Frontline F1 o F3, o al complemento F5 Security
 - Suscripción a Office 365 Enterprise E3
 - Suscripción a Office 365 Enterprise E1
 - Suscripción a Office 365 Educación A1
@@ -119,6 +120,7 @@ En las secciones siguientes se identifican los requisitos de licencia para audit
 - Microsoft 365 Administración Pública G5
 - Suscripción a Microsoft 365 Administración General G5 y complemento de Cumplimiento de Microsoft 365 G5
 - Suscripción a Microsoft 365 Administración Pública G5 y complemento de eDiscovery y auditoría de Microsoft 365 G5
+- Microsoft 365 Frontline F5 Compliance o el complemento F5 Security & Compliance
 - Suscripción a Office 365 Enterprise E5
 - Suscripción a Office 365 Educación A5
 - Suscripción a Office 365 Enterprise E3 y complemento de Cumplimiento avanzado de Office 365 (ya no está disponible para las suscripciones nuevas)

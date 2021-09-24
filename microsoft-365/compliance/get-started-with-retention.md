@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: a58b50aeea2cfd223e54d1dd4d2c4aa91026afe8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdcae8f3879beea5ba7b80f34378b2a3b1452fcb
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191454"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497625"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Introducción a las directivas de retención y las etiquetas de retención
 
@@ -48,7 +48,7 @@ ms.locfileid: "59191454"
 
 Varias suscripciones diferentes admiten etiquetas de retención y directivas de retención, y los requisitos de licencias para los usuarios dependen de las características que usted emplee.
 
-Para ver las opciones para que los usuarios puedan beneficiarse de las características de cumplimiento de Microsoft 365, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para la retención, consulte la sección [Gobernanza de la información](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) y la información relacionada para descarga en PDF o Excel para conocer los requisitos de licencia de nivel de características.
+Para ver las opciones para que los usuarios puedan beneficiarse de las características de cumplimiento de Microsoft 365, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para la retención, consulte la sección [Gobernanza de la información](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) y la información relacionada para descarga en PDF para conocer los requisitos de licencia de nivel de características.
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>Permisos necesarios para crear y administrar directivas de retención y etiquetas de retención
 
