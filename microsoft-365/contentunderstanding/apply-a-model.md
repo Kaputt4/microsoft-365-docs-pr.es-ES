@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Normal
 description: Obtenga información sobre cómo aplicar un modelo publicado a una SharePoint de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 048197b8f477b62527b2f379a5361d1765c70a3b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2cc4719720693f6aa386abfc191e2b26b75f813f
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399999"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498106"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Aplicar un modelo de comprensión mediante documentos en la sintaxis de Microsoft SharePoint
 
@@ -61,15 +61,13 @@ Para aplicar el modelo a una biblioteca de documentos de SharePoint:
 
 6. En la página principal del modelo, en la sección **Dónde** se aplica el modelo, debería ver el nombre del sitio SharePoint lista.
 
-7. Vaya a la biblioteca de documentos y asegúrese de estar en la vista de biblioteca de documentos del modelo. Tenga en cuenta que, si selecciona el botón de información situado junto al nombre de la biblioteca de documentos, se mostrará un mensaje que indica que la biblioteca de documentos tiene aplicado un modelo.
+7. Vaya a la biblioteca de documentos y asegúrese de estar en la vista de biblioteca de documentos del modelo. Seleccione **Automatizar ver** modelos de descripción de  >  **documentos.**
 
-    ![Vista de información.](../media/content-understanding/info-du.png) 
+8. En la **página Revisar modelos y** aplicar  nuevos, seleccione la pestaña Aplicado para ver los modelos que se aplican a la biblioteca de documentos.
 
-    Puede seleccionar la opción **Ver modelos activos** para consultar detalles sobre los modelos que se aplican a la biblioteca de documentos.
+    ![Captura de pantalla que muestra la pestaña Aplicada seleccionada y los modelos aplicados.](../media/content-understanding/applied-models.png) 
 
-8. Puede seleccionar la opción **Modelos activos** para ver los modelos que se aplican a la biblioteca de documentos. Seleccione un modelo para ver más detalles sobre él, como una descripción, quién lo publicó y si el modelo aplica una etiqueta de retención a los archivos que clasifica.
-
-    ![Panel Modelos activos.](../media/content-understanding/active-models.png) 
+9. Seleccione **Ver** detalles del modelo para ver información sobre un modelo, como una descripción del modelo, quién publicó el modelo y si el modelo aplica etiquetas de retención o confidencialidad a los archivos que clasifica.
 
 Después de aplicar el modelo a la biblioteca de documentos, puede iniciar la carga de documentos en el sitio y ver los resultados.
 

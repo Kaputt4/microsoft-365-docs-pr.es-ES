@@ -15,12 +15,13 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 2f18e54fcbbcd225ce7df83005ab65c0c33b1f0f
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 8b299c2c097214bfbfeb4662bcdde070c7b8c544
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355908"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498357"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-azure-virtual-desktop"></a>Incorporación Windows 10 de varias sesiones en Azure Virtual Desktop
 
@@ -155,7 +156,7 @@ Además, si usa perfiles de usuario FSlogix, se recomienda excluir los siguiente
 
 #### <a name="licensing-requirements"></a>Requisitos de licencias
 
-Nota sobre las licencias Windows 10 Enterprise: cuando se usa una sesión múltiple, según sus requisitos, puede elegir que todos los usuarios tengan licencia a través de Microsoft Defender para Endpoint (por usuario), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5, o que la máquina virtual tenga licencia a través de Azure Defender.
+Nota sobre las licencias Windows 10 Enterprise: al usar una sesión múltiple, según sus requisitos, puede elegir que todos los usuarios tengan licencia a través de Microsoft Defender para endpoint (por usuario), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5, o tener la máquina virtual con licencia a través de Azure Defender.
 Los requisitos de licencia para Microsoft Defender para el punto de conexión se pueden encontrar en: [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
 
 #### <a name="related-links"></a>Vínculos relacionados

@@ -15,12 +15,12 @@ metadata:
   - NOCSH
   description: Encuentre respuestas a las preguntas más frecuentes (preguntas frecuentes) sobre cómo mover datos principales a una nueva ubicación geográfica Office 365 centro de datos.
   ms.custom: seo-marvel-mar2020
-  ms.openlocfilehash: cbc359db637d2d60315a724b9bf78ffb9ae0359d
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 12c486e94b6039b2ee9914f83d51dec21b32d422
+  ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59218577"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "59498297"
 title: Preguntas más frecuentes sobre el movimiento de datos
 summary: Estas son las respuestas a preguntas generales sobre cómo mover los datos principales de los clientes en reposo a una nueva ubicación geográfica del centro de datos.
 sections:
@@ -138,7 +138,7 @@ sections:
     answer: >
       Sí. Microsoft mantiene una gran red global con conexiones públicas a Internet en más de 130 ubicaciones en 35 países de todo el mundo con acuerdos de emparejamiento con más de 2.700 proveedores de servicios de Internet (ISP). Los usuarios podrán acceder a los centros de datos desde cualquier lugar en Internet.
   - question: >
-      Mi inquilino ha configurado el complemento Multi Geo. ¿Todavía puedo inscribirme en mi inquilino en el programa de movimiento de Microsoft 365 para cambiar mi geo predeterminado y mover cualquier usuario que no se encuentra en una región satélite a la nueva geo predeterminada?
+      Mi inquilino ha configurado el complemento Multi Geo. ¿Todavía puedo inscribirme en mi inquilino en el Microsoft 365 Move Program? para cambiar mi geo predeterminado y mover cualquier usuario que no se encuentra en una región satélite a la nueva geo predeterminada.
     answer: >
       Sí, el inquilino es apto para inscribirse, pero hay consideraciones importantes ya que el movimiento a nivel de inquilino no es totalmente compatible con los clientes que han configurado [Multi-Geo](https://aka.ms/multi-geo).
 
@@ -146,5 +146,5 @@ sections:
       SharePoint Online y OneDrive para la Empresa pueden migrar a la nueva ubicación geográfica del centro de datos en el nivel de inquilino a través de este programa. El administrador del cliente puede configurar OneDrive para la Empresa recursos compartidos para que se muevan a cualquier región disponible mediante Multi-Geo, pero la ubicación predeterminada del inquilino no se puede cambiar una vez que se haya configurado Multi-Geo para un inquilino.
 
 
-      Para los clientes que optan por la migración: moveremos todos los buzones de correo Exchange Online de la geo predeterminada actual a la nueva ubicación geográfica del centro de datos local y actualizaremos la región Exchange Online predeterminada. No moveremos ningún buzón EXO configurado en regiones satélite multigeósticas para seguir respetando la residencia de datos de región satélite como ha previsto.
+      Para los clientes que optan por la migración: moveremos todos los buzones de correo Exchange Online de la geo predeterminada actual a la nueva ubicación geográfica del centro de datos local y actualizaremos la región Exchange Online predeterminada. No moveremos ningún buzón EXO configurado en regiones satélite multigeósticas para seguir respetando la residencia de datos de región satélite como ha previsto.  Teams de inquilinos del servicio de chat para clientes con una configuración multigeós se comportan de forma similar a Exchange Online.
 additionalContent: "\n## <a name=\"related-topics\"></a>Temas relacionados\n  [Mover datos principales a nuevas Microsoft 365 del centro de datos](moving-data-to-new-datacenter-geos.md)\n\n  [Cómo solicitar el movimiento de datos](request-your-data-move.md)\n\n  [Microsoft 365 Multi Geo](https://aka.ms/multi-geo)\n\n  [Microsoft 365 de centro de datos interactivo](https://office.com/datamaps)\n\n  [Microsoft 365 Soporte técnico](../business-video/get-help-support.md)\n\n  [Nuevas geos del centro de datos para Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)\n\n  [Servicios de Azure por región](https://azure.microsoft.com/regions/)"

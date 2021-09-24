@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: En lugar de exportar los resultados reales de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportaría.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56a61bb1cd0fa9952f85d75ae50f42754c583ce7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 715476f71a480555d9559165d997eb57f7c79abd
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184086"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497817"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
-En lugar de exportar el conjunto completo de resultados de búsqueda desde una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 (o desde una búsqueda asociada a un caso de exhibición de documentos electrónicos principal), puede exportar los mismos informes que se generan al exportar los resultados de búsqueda reales.
+En lugar de exportar el conjunto completo de resultados de búsqueda de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 (o de una búsqueda asociada a un caso de exhibición de documentos electrónicos principal), puede exportar los mismos informes que se generan al exportar los resultados de búsqueda reales.
   
 Al exportar un informe, los archivos de informe se descargan en una carpeta del equipo local que tiene el mismo nombre que la búsqueda de contenido, pero que se anexa con *_ReportsOnly*. Por ejemplo, si la búsqueda de contenido se denomina  *ContosoCase0815*, el informe se descarga en una carpeta denominada *ContosoCase0815_ReportsOnly*. Para obtener una lista de los documentos que se incluyen en el informe, vea [What's included in the report](#whats-included-in-the-report).
 
@@ -41,23 +41,18 @@ Al exportar un informe, los archivos de informe se descargan en una carpeta del 
 
 - Al exportar un informe, los datos se almacenan temporalmente en una ubicación Azure Storage en la nube de Microsoft antes de que se descarguen en el equipo local. Asegúrese de que su organización puede conectarse al punto de conexión de Azure, que **\* es .blob.core.windows.net** (el comodín representa un identificador único para la exportación). Los datos de resultados de búsqueda se eliminan de la Azure Storage dos semanas después de su creación.
 
-- El equipo que use para exportar los resultados de búsqueda debe cumplir los siguientes requisitos del sistema:
-
+- El equipo que use para exportar el informe de búsqueda debe cumplir los siguientes requisitos del sistema:
+  
   - Versión más reciente de Windows (32 bits o 64 bits)
-
-  - Microsoft .NET Framework 4.7
-
-- Debe usar uno de los siguientes exploradores compatibles para ejecutar la herramienta de exportación de exhibición de documentos<sup>electrónicos 1</sup>:
-
-  - Microsoft Edge <sup>2</sup>
-
-    OR
-
-  - Microsoft Internet Explorer 10 y versiones posteriores
-
+  
+  - Microsoft .NET Framework 4.7 o posterior
+  
+- Debe usar Microsoft Edge<sup>1</sup> para ejecutar la herramienta de exportación de exhibición de documentos electrónicos. El uso de Internet Explorer 11 para exportar resultados de búsqueda ya no es compatible<sup>con 2</sup>.
+  
   > [!NOTE]
-  > <sup>1</sup> Microsoft no fabrica extensiones de terceros ni complementos para ClickOnce aplicaciones. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.<br/>
-  > <sup>2</sup> Como resultado de los cambios recientes en Microsoft Edge, ClickOnce soporte técnico ya no está habilitado de forma predeterminada. Para obtener instrucciones sobre cómo ClickOnce compatibilidad en Edge, vea [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
+  > <sup>1</sup> Como resultado de los cambios recientes en el Microsoft Edge, ClickOnce soporte técnico ya no está habilitado de forma predeterminada. Para obtener instrucciones sobre cómo ClickOnce compatibilidad en Edge, vea [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md). Además, Microsoft no fabrica extensiones de terceros ni complementos para ClickOnce aplicaciones. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.
+  > 
+  > <sup>2</sup> A partir de agosto de 2021, las aplicaciones y servicios de Microsoft 365 ya no admitirán Internet Explorer 11 (IE11) y los usuarios pueden tener una experiencia degradada o no poder conectarse a esas aplicaciones y servicios. Estas aplicaciones y servicios se desatendrán gradualmente en las próximas semanas y meses para garantizar un fin suave de la compatibilidad. Cada aplicación y servicio se están eliminando gradualmente en programaciones independientes. Para obtener más información, vea esta [entrada de blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
 
 - Si el tamaño total estimado de los resultados devueltos por la búsqueda supera los 2 TB, se produce un error al exportar los informes. Para exportar correctamente los informes, intente restringir el ámbito y volver a ejecutar la búsqueda para que el tamaño estimado de los resultados sea inferior a 2 TB.
 
@@ -140,7 +135,7 @@ Al generar y exportar un informe sobre los resultados de una búsqueda de conten
 
    Si incluye elementos no indexados al exportar el informe, el número de elementos sin indexar se incluye en el número total de resultados de búsqueda estimados y en el número total de resultados de búsqueda descargados (si desea exportar los resultados de búsqueda) que aparecen en el informe de resumen de exportación. En otras palabras, el número total de elementos que se descargarían es igual al número total de resultados estimados y al número total de elementos no indexados.
   
-- **Manifiesto:** Un archivo de manifiesto (en formato XML) que contiene información sobre cada elemento incluido en los resultados de la búsqueda. Si ha habilitado la opción de desduplicación, el mensaje duplicado no se incluye en el archivo de manifiesto.
+- **Manifiesto:** Un archivo de manifiesto (en formato XML) que contiene información sobre cada elemento incluido en los resultados de la búsqueda. Si ha habilitado la opción de desduplicación, los mensajes duplicados no se incluyen en el archivo de manifiesto.
 
 - **Resultados:** Un Excel que contiene una fila con información sobre cada elemento indizado que se exportaría con los resultados de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos: 
 
@@ -165,6 +160,6 @@ Al generar y exportar un informe sobre los resultados de una búsqueda de conten
   > [!NOTE]
   > El número de filas del informe **de** resultados debe ser igual al número total de resultados de búsqueda menos el número total de elementos enumerados en el informe **Elementos sin** indizar.
   
-- **Trace.log:** un registro de seguimiento que contiene información de registro detallada sobre el proceso de exportación y puede ayudar a descubrir problemas durante la exportación. Si abre un vale con el Soporte técnico de Microsoft sobre un problema relacionado con la exportación de informes de búsqueda, es posible que se le pida que proporcione este registro de seguimiento.
+- **Trace.log:** Un registro de seguimiento que contiene información de registro detallada sobre el proceso de exportación y puede ayudar a descubrir problemas durante la exportación. Si abre un vale con el Soporte técnico de Microsoft sobre un problema relacionado con la exportación de informes de búsqueda, es posible que se le pida que proporcione este registro de seguimiento.
 
 - **Elementos sin indizar:** Un Excel que contiene información sobre los elementos no indexados incluidos en los resultados de la búsqueda. Si no incluye elementos sin indizar al generar el informe de resultados de búsqueda, este informe se seguirá descargando, pero estará vacío.

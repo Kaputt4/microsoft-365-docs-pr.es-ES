@@ -15,12 +15,13 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 2dda17d55dbe5e86b6d76e3a766a020c6e0bc3aa
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 61766babf6da4b0e564a85bf37c9bf7222afbf34
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356530"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497644"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -1352,17 +1353,17 @@ Descripción:
 <td >
 Informe de estado del cliente antivirus.
 <dl>
-<dt>Versión de la plataforma: &lt; &gt;</dt>Versión actual del motor de la
-<dt>plataforma: &lt; versión &gt; </dt>Antimalware Engine Versión del motor de inspección en tiempo real de
-<dt>red: &lt; &gt; </dt>Versión de firma del motor de inspección en tiempo real de red
-<dt>Versión &lt; &gt; </dt>de firma antivirus versión de firma
-<dt> &lt; antispyware: &gt; </dt>versión de firma antispyware Versión de firma de inspección en tiempo real
-<dt>de red: &lt; &gt; </dt>Estado rtp de la firma de inspección en tiempo real de red: protección en tiempo real estado (habilitado o
-<dt> &lt; &gt; deshabilitado)</dt>Estado de
-<dt>la OA: Estado de IOAV de estado de acceso &lt; &gt; (habilitado</dt>o deshabilitado): Descargas de
-<dt>I Outlook E y estado de datos adjuntos rápidos &lt; &gt; (habilitados</dt>o deshabilitados) estado BM: Estado de supervisión del comportamiento (habilitado o
+<dt>Versión de la plataforma: &lt; Versión &gt; </dt>actual del motor de la
+<dt>plataforma: &lt; Antimalware Engine &gt; </dt>versión del motor de inspección en tiempo real de
+<dt>red: &lt; &gt; </dt>Versión de firma del motor de inspección en tiempo real de red Versión de firma
+<dt>antivirus: &lt; &gt; </dt>Versión de firma antivirus Antispyware versión de firma: Versión de firma
+<dt> &lt; &gt; antispyware</dt>Versión de firma de inspección en tiempo real de
+<dt>red: Red &lt; &gt;</dt>Estado RTP de la versión de firma de inspección en tiempo real: Estado de OA de protección en tiempo real (habilitado o
+<dt> &lt; &gt; deshabilitado):</dt>Estado de IOAV de estado de acceso
+<dt> &lt; &gt; (habilitado</dt>o deshabilitado): Descargas de
+<dt>I Outlook E y estado de datos adjuntos rápidos (habilitados o &lt; deshabilitados) &gt; </dt>estado BM: Estado de supervisión del comportamiento (habilitado o
 <dt> &lt; &gt; deshabilitado)</dt>Antigüedad de firma del antivirus: antigüedad de firma del
-<dt>antivirus &lt; &gt; (en días) </dt>Antigüedad de firma antispyware: Antigüedad de firma 
+<dt>antivirus &lt; &gt; (en días )</dt>Antigüedad de firma antispyware: antigüedad de firma
 <dt> &lt; antispyware &gt; (en días)</dt>Última antigüedad del examen rápido: Última antigüedad del examen rápido
 <dt> &lt; &gt; (en días)</dt>Última antigüedad completa del examen: Última antigüedad completa del examen
 <dt> &lt; &gt; (en días)</dt>Tiempo de creación de firmas
@@ -1466,7 +1467,7 @@ Antivirus de Microsoft Defender ha encontrado un error al intentar actualizar fi
 </dt>
 <dt>Update Stage: &lt; Update stage , por &gt; ejemplo:
 <ul>
-<li>Buscar</li>
+<li>Búsqueda</li>
 <li>Descargar</li>
 <li>Instalar</li>
 </ul>

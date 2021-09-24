@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporte los resultados de la búsqueda de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido SharePoint y OneDrive para la Empresa se exportan como documentos Office nativos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15f1af054cb8ec09795ba84412efd2b63e3ad48a
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 8d79e753b052e4514cb8f8aab6a94a858c8cd9b5
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489558"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497853"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -45,11 +45,11 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
   
   - Microsoft .NET Framework 4.7 o posterior
   
-- Debe usar Microsoft Edge <sup>1</sup> para ejecutar la herramienta de exportación de exhibición de documentos electrónicos. El uso de Internet Explorer 11 para exportar resultados de búsqueda ya no es compatible<sup>con 2</sup>. 
+- Debe usar Microsoft Edge<sup>1</sup> para ejecutar la herramienta de exportación de exhibición de documentos electrónicos. El uso de Internet Explorer 11 para exportar resultados de búsqueda ya no es compatible<sup>con 2</sup>.
   
   > [!NOTE]
   > <sup>1</sup> Como resultado de los cambios recientes en el Microsoft Edge, ClickOnce soporte técnico ya no está habilitado de forma predeterminada. Para obtener instrucciones sobre cómo ClickOnce compatibilidad en Edge, vea [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md). Además, Microsoft no fabrica extensiones de terceros ni complementos para ClickOnce aplicaciones. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.
-  > 
+  >
   > <sup>2</sup> A partir de agosto de 2021, las aplicaciones y servicios de Microsoft 365 ya no admitirán Internet Explorer 11 (IE11) y los usuarios pueden tener una experiencia degradada o no poder conectarse a esas aplicaciones y servicios. Estas aplicaciones y servicios se desatendrán gradualmente en las próximas semanas y meses para garantizar un fin suave de la compatibilidad. Cada aplicación y servicio se están eliminando gradualmente en programaciones independientes. Para obtener más información, vea esta [entrada de blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
 
 - La herramienta de exportación de exhibición de documentos electrónicos que se usa en el paso 2 para descargar resultados de búsqueda no admite la automatización (mediante un script o cmdlets en ejecución). Le recomendamos encarecidamente que no automatice el proceso de preparación en el paso 1 o el proceso de descarga en el paso 2. Si automatiza cualquiera de estos procesos, el Soporte técnico de Microsoft no proporcionará asistencia si tiene problemas.

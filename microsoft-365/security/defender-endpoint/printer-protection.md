@@ -13,12 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d1a0b8af6dbf725623986582f5ee8e0b3912f0b5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: e60ca593f9cea750473212daca834b2e63711ace
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187409"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497613"
 ---
 # <a name="device-control-printer-protection"></a>Protección de la impresora de control de dispositivo
 

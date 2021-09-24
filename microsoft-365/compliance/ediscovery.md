@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido encontrado en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, grupos de Microsoft 365, conversaciones de Microsoft Teams y Skype Empresarial. La exhibición de documentos electrónicos Advanced eDiscovery proporciona muchas características adicionales que le ayudarán a administrar las investigaciones.
-ms.openlocfilehash: d44c0b30bc6256f98063f33d838d2cabb6ceebf1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f1e2f7fd3403bb90edf3fe4102ed61632a641ee2
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218960"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498033"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Soluciones de exhibición de documentos electrónicos en Microsoft 365
 
@@ -39,7 +39,7 @@ Microsoft 365 proporciona tres soluciones de exhibición de documentos electrón
 
 - **Búsqueda de contenido**. Use la herramienta de búsqueda de contenido para buscar contenido en Microsoft 365 de datos y, a continuación, exporte los resultados de la búsqueda al equipo local.
 
-- **EDiscovery principal**. La exhibición de documentos electrónicos principal se basa en la funcionalidad básica de búsqueda y exportación de la búsqueda de contenido que permite crear casos de exhibición de documentos electrónicos y administradores de exhibición de documentos electrónicos que solo pueden acceder al caso de los que son miembros. La exhibición de documentos electrónicos principal le permite asociar búsquedas y exportaciones con un caso y le permite colocar una retención de exhibición de documentos electrónicos en ubicaciones de contenido relevantes para el caso.
+- **EDiscovery principal**. La exhibición de documentos electrónicos principal se basa en la funcionalidad básica de búsqueda y exportación de la búsqueda de contenido, ya que permite crear casos de exhibición de documentos electrónicos y asignar administradores de exhibición de documentos electrónicos a casos específicos. Los administradores de exhibición de documentos electrónicos solo pueden tener acceso a los casos de los que son miembros. La exhibición de documentos electrónicos principal también le permite asociar búsquedas y exportaciones con un caso y le permite colocar una retención de exhibición de documentos electrónicos en ubicaciones de contenido relevantes para el caso.
 
 - **Advanced eDiscovery**. La Advanced eDiscovery se basa en las capacidades existentes de administración de casos, conservación, búsqueda y exportación en eDiscovery principal. Advanced eDiscovery proporciona un flujo de trabajo completo para identificar, conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de la organización. Permite a los equipos legales administrar los custodios y el flujo de trabajo de notificación de retención legal para comunicarse con los custodios implicados en un caso. Le permite recopilar y copiar datos del servicio dinámico en conjuntos de revisión, cuando puede filtrar, buscar y etiquetar contenido para buscar contenido no relevante de una revisión posterior para que el flujo de trabajo pueda identificar y centrarse en el contenido más relevante. Advanced eDiscovery proporciona modelos de codificación predictiva basados en análisis y aprendizaje automático para restringir aún más el ámbito de la investigación al contenido más relevante.
 
@@ -104,7 +104,7 @@ Esta es la descripción de cada funcionalidad de exhibición de documentos elect
 
 - **Reconocimiento óptico de caracteres (OCR).** Cuando se agrega contenido a un conjunto de revisión, la funcionalidad OCR extrae texto de imágenes e incluye el texto de la imagen con el contenido que se agrega a un conjunto de revisión. Esto le permite buscar texto de imagen al consultar el contenido del conjunto de revisión.
 
-- **Subprocesos de conversación**. Cuando los mensajes de Teams y Yammer conversaciones se agregan a un conjunto de revisión, tienes la opción de recopilar todo el hilo de conversación. Esto significa que toda la conversación de chat que contiene elementos que coinciden con los criterios de la colección se agrega al conjunto de revisión. Esto te permite revisar los elementos de chat en el contexto de la conversación de ida y vuelta.
+- **Subprocesos de conversación**. Cuando los mensajes de Teams y Yammer conversaciones se agregan a un conjunto de revisión, puede recopilar todo el hilo de conversación. Esto significa que toda la conversación de chat que contiene elementos que coinciden con los criterios de la colección se agrega al conjunto de revisión. Esto te permite revisar los elementos de chat en el contexto de la conversación de ida y vuelta.
 
 - **Estadísticas e informes de colección**. Después de crear una colección borrador o confirmar una confirmación de una colección en un conjunto de revisión, puede ver un conjunto enriquecido de estadísticas en los elementos recuperados, como las ubicaciones de contenido que contienen la mayoría de los elementos que coinciden con los criterios de búsqueda y el número de elementos devueltos por la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados. Además, esto incluye el número de elementos secundarios que se extrajeron de sus elementos primarios y se agregaron como elementos independientes al conjunto de revisión.
 
@@ -130,12 +130,14 @@ En las secciones siguientes se muestran los requisitos mínimos de suscripción 
 
 - Microsoft 365 Suscripción a E1
 - Microsoft 365 Suscripción a G1
+- Microsoft 365 F1 de F3 o de F5 Security
 - Suscripción a Office 365 Educación A1
 
 ### <a name="core-ediscovery"></a>Core eDiscovery
 
 - Microsoft 365 E3 suscripción
 - Microsoft 365 G3 suscripción
+- Microsoft 365 Complemento de cumplimiento F5 o complemento de seguridad F5 & cumplimiento
 - Microsoft 365 Educación Suscripción A3 o Office 365 Educación A3
 
 ### <a name="advanced-ediscovery"></a>eDiscovery avanzado
@@ -146,6 +148,7 @@ En las secciones siguientes se muestran los requisitos mínimos de suscripción 
 - Microsoft 365 Suscripción a G5
 - Microsoft 365 Suscripción de G5 con complemento de cumplimiento de G5
 - Microsoft 365 Suscripción de G5 con el complemento de exhibición de documentos electrónicos y auditoría de G5
+- Microsoft 365 Complemento de cumplimiento F5 o complemento de seguridad F5 & cumplimiento
 - Microsoft 365 Educación Suscripción A5 o Office 365 Educación A5
 
 ## <a name="get-started-with-ediscovery"></a>Introducción a la exhibición de documentos electrónicos

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Describe cómo empezar a usar eDiscovery principal en Microsoft 365. Después de asignar permisos de exhibición de documentos electrónicos y crear un caso, puede agregar miembros, crear retenciones de exhibición de documentos electrónicos y, a continuación, buscar y exportar contenido relevante para la investigación.
-ms.openlocfilehash: d1a9e68bedc77f3b74b13f438e73dcbcb83b4c8c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa6e1efb6ef3a773eaae697fcc60a4293967d845
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191484"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498225"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Introducción a la exhibición de documentos electrónicos principal en Microsoft 365
 
@@ -34,9 +34,9 @@ En este artículo se analizan los pasos necesarios para configurar la exhibició
 
 Las licencias para la exhibición de documentos electrónicos principales requieren la suscripción de la organización adecuada y las licencias por usuario.
 
-- **Suscripción a la organización:** Para tener acceso a eDiscovery principal en el Centro de cumplimiento de Microsoft 365 y usar las características de retención y exportación, la organización debe tener una Microsoft 365 E3 o Office 365 E3 suscripción o superior.
+- **Suscripción a la organización:** Para tener acceso a eDiscovery principal en el Centro de cumplimiento de Microsoft 365 y usar las características de retención y exportación, la organización debe tener una Microsoft 365 E3 o Office 365 E3 suscripción o superior. Microsoft 365 Las organizaciones en primera línea deben tener una suscripción F5.
 
-- **Licencias por usuario:** Para colocar una retención de exhibición de documentos electrónicos en buzones y sitios, se debe asignar a un usuario una de las siguientes licencias, según la suscripción de la organización:
+- **Licencias por usuario:** Para colocar una retención de exhibición de documentos electrónicos en buzones y sitios, los usuarios deben tener asignada una de las siguientes licencias, según la suscripción de la organización:
 
   - Una Microsoft 365 E3 o Office 365 E3 o posterior
 
@@ -44,15 +44,19 @@ Las licencias para la exhibición de documentos electrónicos principales requie
 
   - Office 365 E1 con una licencia Exchange Online plan 2 o Archivado de Exchange Online de complementos
 
+   OR
+
+  - Microsoft 365 Frontline F5 Compliance o F5 Security & licencia de complemento cumplimiento  
+
   AND
 
-  - Office 365 E1 licencia con una SharePoint de complemento de Plan 2 o OneDrive para la Empresa plan 2
+  - Office 365 E1 licencia con una SharePoint de complementos de Plan 2 o OneDrive para la Empresa plan 2
   
   Para obtener información sobre cómo asignar licencias, vea [Asignar licencias a usuarios.](../admin/manage/assign-licenses-to-users.md)
 
 Para obtener información sobre las licencias:
 
-- Descargue y vea la solución "Descubrir & Responder" en el Microsoft 365 comparación de licencias [de cumplimiento.](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)
+- Descargue y vea la sección "eDiscovery and auditing" en la [Microsoft 365 de comparación](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 - Vea la [descripción del servicio & centro de seguridad y cumplimiento](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
@@ -132,7 +136,7 @@ Para empezar a usar la exhibición de documentos electrónicos principal, este e
 
 ![Flujo de trabajo principal de exhibición de documentos electrónicos.](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[Crear una retención de exhibición de documentos electrónicos](create-ediscovery-holds.md)**. El primer paso después de crear un caso es colocar una retención (también denominada retención de *exhibición* de documentos electrónicos) en las ubicaciones de contenido de las personas de interés en la investigación. Las ubicaciones de contenido incluyen Exchange buzones de correo, SharePoint, cuentas de OneDrive y los buzones y sitios asociados con Microsoft Teams y Office 365 grupos. Aunque este paso es opcional, la creación de una retención de exhibición de documentos electrónicos conserva el contenido que puede ser relevante para el caso durante la investigación. Al crear una retención de exhibición de documentos electrónicos, puede conservar todo el contenido en ubicaciones de contenido específicas o puede crear una retención basada en consultas para conservar solo el contenido que coincida con una consulta de retención. Además de conservar el contenido, otra buena razón para crear retenciones de exhibición de documentos electrónicos es buscar rápidamente en las ubicaciones de contenido en espera (en lugar de tener que seleccionar cada ubicación para buscar) al crear y ejecutar búsquedas en el paso siguiente. Después de completar la investigación, puede liberar cualquier retención que haya creado.
+1. **[Crear una retención de exhibición de documentos electrónicos](create-ediscovery-holds.md)**. El primer paso después de crear un caso es colocar una retención (también denominada retención de *exhibición* de documentos electrónicos) en las ubicaciones de contenido de las personas de interés en la investigación. Las ubicaciones de contenido incluyen Exchange buzones de correo, SharePoint, cuentas de OneDrive y buzones y sitios asociados con Microsoft Teams y Microsoft 365 grupos. Aunque este paso es opcional, la creación de una retención de exhibición de documentos electrónicos conserva el contenido que puede ser relevante para el caso durante la investigación. Al crear una retención de exhibición de documentos electrónicos, puede conservar todo el contenido en ubicaciones de contenido específicas o puede crear una retención basada en consultas para conservar solo el contenido que coincida con una consulta de retención. Además de conservar el contenido, otra buena razón para crear retenciones de exhibición de documentos electrónicos es buscar rápidamente en las ubicaciones de contenido en espera (en lugar de tener que seleccionar cada ubicación para buscar) al crear y ejecutar búsquedas en el paso siguiente. Después de completar la investigación, puede liberar cualquier retención que haya creado.
 
 2. **[Buscar contenido](search-for-content-in-core-ediscovery.md)**. Después de crear retenciones de exhibición de documentos electrónicos, use la herramienta de búsqueda integrada para buscar en las ubicaciones de contenido en espera. También puede buscar en otras ubicaciones de contenido datos que puedan ser relevantes para el caso. Puede crear y ejecutar distintas búsquedas asociadas con el caso. Se usan palabras clave, propiedades [](keyword-queries-and-search-conditions.md) y condiciones para crear consultas de búsqueda que devuelvan resultados de búsqueda con los datos que probablemente sean relevantes para el caso. También puede:
 
