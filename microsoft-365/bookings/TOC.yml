@@ -9,6 +9,8 @@
           href: enter-business-information.md
         - name: Definir las ofertas de servicio
           href: define-service-offerings.md
+        - name: Configurar notificaciones de SMS
+          href: bookings-sms.md
         - name: Agregar personal a Bookings
           href: add-staff.md
         - name: Programar el cierre del negocio y el tiempo libre

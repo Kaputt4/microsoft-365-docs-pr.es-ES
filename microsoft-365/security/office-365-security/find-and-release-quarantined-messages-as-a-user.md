@@ -20,12 +20,12 @@ ms.custom:
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04a3831ec923ec24846eb6d0e76273d1010862c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3fcd6cb3eb6aee387fd1e4943c837f855abc5f34
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214430"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483668"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
@@ -38,7 +38,7 @@ ms.locfileid: "59214430"
 
 En las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, la cuarentena retiene los mensajes que pueden ser peligrosos o no deseados. Para más información, consulte [Cuarentena en EOP](quarantine-email-messages.md).
 
-Como destinatario de un mensaje en cuarentena, lo que puede hacer con el mensaje como usuario normal (no administrador) se describe en la tabla siguiente:
+Como usuario normal (no como administrador), en la tabla siguiente se describen las funcionalidades **predeterminadas** que están disponibles para usted como destinatario de un mensaje en cuarentena:
 
 <br>
 
@@ -46,12 +46,29 @@ Como destinatario de un mensaje en cuarentena, lo que puede hacer con el mensaje
 
 |Motivo de la cuarentena:|Ver|Liberar|Eliminar|
 |---|:---:|:---:|:---:|
+|**Directivas contra correo electrónico no deseado**||||
 |Masivo|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
 |Correo no deseado|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
-|Suplantación de identidad (suplantación de identidad no de alta confianza)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Correo no deseado de alta confianza|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Suplantación de identidad (phishing)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Phishing de alta confianza||||
+|**Directivas contra phishing**||||
+|Protección de inteligencia contra la suplantación de identidad en EOP|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Protección de usuario suplantado en Defender para Office 365|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Protección de dominio suplantado en Defender para Office 365|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|Protección de inteligencia de buzones en Defender para Office 365|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
+|**Directivas antimalware**||||
+|Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware.||||
+|**Datos adjuntos seguros en Microsoft Defender para Office 365**||||
+|Directivas de datos adjuntos seguros que ponen en cuarentena los mensajes de correo electrónico con datos adjuntos malintencionados como malware.||||
+|Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams que pone en cuarentena archivos malintencionados como malware.||||
+|**Reglas de flujo de correo (reglas de transporte)**||||
+|Reglas de flujo de correo que ponen en cuarentena los mensajes de correo electrónico.||||
 |
 
-Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365 Defender o, si un administrador lo ha configurado, en [notificaciones de correo no deseado para el usuario](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+Las _directivas de cuarentena_ definen qué pueden hacer los usuarios en los mensajes en cuarentena en función del motivo por el que el mensaje se puso en cuarentena en [características admitidas](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Las directivas de cuarentena predeterminadas aplican las funcionalidades históricas como se describe en la tabla anterior. Los administradores pueden crear y aplicar directivas de cuarentena personalizadas que definan funcionalidades menos restrictivas o más restrictivas para los usuarios con características admitidas. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
+
+Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365 Defender o (si un administrador ha configurado esto) las notificaciones de cuarentena de las directivas de cuarentena.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
@@ -59,13 +76,12 @@ Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365
 
 - Los administradores pueden configurar cuánto tiempo se conservan los mensajes en cuarentena antes de que se eliminen de forma permanente (directivas contra correo electrónico no deseado). Los mensajes que han expirado de la cuarentena no se pueden recuperar. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
-- Los administradores también pueden [configurar notificaciones de correo no deseado para el usuario final](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) en directivas contra correo no deseado. Los destinatarios del mensaje original pueden *liberar* mensajes de correo no deseado en cuarentena directamente desde estas notificaciones. Los destinatarios del mensaje original pueden *revisar* mensajes de phishing en cuarentena (mensajes de suplantación de identidad no de confianza alta) directamente desde estas notificaciones. Para obtener más información, consulte [Notificaciones de correo no deseado para el usuario final en EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
-
-- Los mensajes puestos en cuarentena por suplantación de identidad de alta confianza, malware o por reglas de flujo de correo (también conocidas como reglas de transporte) solo están disponibles para los administradores y no son visibles para los usuarios. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
-
-- Únicamente puede liberar un mensaje e identificarlo como un falso positivo (deseado) una vez.
+- De forma predeterminada, los mensajes puestos en cuarentena por suplantación de identidad de alta confianza, malware o por reglas de flujo de correo solo están disponibles para los administradores y no son visibles para los usuarios. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
 
 ## <a name="view-your-quarantined-messages"></a>Ver los mensajes en cuarentena
+
+> [!NOTE]
+> La capacidad de ver los mensajes en cuarentena se controla mediante la [directiva de cuarentena](quarantine-policies.md) que se aplica al tipo de mensaje en cuarentena (que podría ser la [directiva de cuarentena predeterminada para el motivo de cuarentena](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)).
 
 1. En el portal de Microsoft 365 Defender, vaya a **Colaboración y correos electrónicos** \> **Revisar** \> **Cuarentena**.
 2. En la página **Cuarentena**, puede ordenar los resultados haciendo clic en un encabezado de columna disponible. Haga clic en **Personalizar columnas**  para cambiar las columnas que se muestran. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
@@ -138,7 +154,7 @@ Cuando selecciona un mensaje de correo electrónico de la lista, aparecen los de
 - **Dirección del remitente**
 - **Recibido**: La fecha/hora en que se ha recibido el mensaje.
 - **Asunto**
-- **Motivo de la cuarentena**: Muestra si un mensaje se ha identificado como **Correo no deseado**, **Masivo** o **Suplantación de identidad**.
+- **Motivo de la cuarentena**
 - **Tipo de directiva**: El tipo de directiva. Por ejemplo, **Directiva contra correo electrónico no deseado**.
 - **Número de destinatarios**
 - **Destinatarios**: Si el mensaje contiene varios destinatarios, deberá hacer clic en **Vista previa del mensaje** o **Ver encabezado del mensaje** para ver la lista completa de destinatarios.
@@ -152,6 +168,9 @@ Para actuar sobre el mensaje, consulte la siguiente sección.
 > ![Las flechas arriba y abajo del control flotante de detalles de un mensaje en cuarentena.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### <a name="take-action-on-quarantined-email"></a>Llevar a cabo una acción en un correo electrónico en cuarentena
+
+> [!NOTE]
+> La capacidad de realizar acciones en los mensajes en cuarentena se controla mediante la [directiva de cuarentena](quarantine-policies.md) que se aplica al tipo de mensaje en cuarentena (que podría ser la [directiva de cuarentena predeterminada para el motivo de cuarentena](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). En esta sección se describen todas las acciones disponibles.
 
 Después de seleccionar un mensaje en cuarentena de la lista, las siguientes acciones están disponibles en el control flotante de detalles:
 

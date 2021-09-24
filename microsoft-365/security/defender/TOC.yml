@@ -352,13 +352,13 @@
               items:
                 - name: Información general de la integración de ServiceNow
                   href: ./tickets.md
-        - name: API de Microsoft 365 Defender (versión preliminar)
+        - name: "Las API de Microsoft\_365 Defender"
           items:
-            - name: Información general sobre las API de Microsoft 365 Defender (versión preliminar)
+            - name: "Información general sobre las API de Microsoft\_365 Defender"
               href: api-overview.md
-            - name: API de Microsoft 365 Defender (versión preliminar) admitidas
+            - name: "Las API de Microsoft\_365 Defender compatibles"
               href: api-supported.md
-            - name: Introducción a las API de Microsoft 365 Defender (versión preliminar)
+            - name: "Introducción a las API de Microsoft\_365 Defender"
               items:
                 - name: Licencia y términos de uso de la API de Microsoft 365 Defender
                   href: api-terms.md
@@ -374,7 +374,7 @@
                   href: api-partner-access.md
                 - name: Otros recursos de API
                   href: api-articles.md
-            - name: Esquema y API de Microsoft 365 Defender (versión preliminar)
+            - name: "Esquema y API de Microsoft\_365 Defender"
               items:
                 - name: Códigos de error comunes de API de REST
                   href: api-error-codes.md
