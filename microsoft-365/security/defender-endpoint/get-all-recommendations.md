@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: da9286d548cbe1f2566bfdac1397178d40ae9dc8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a57a9be69401368a6b6b893e0850a3ba8c6aaf9a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221546"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776985"
 ---
 # <a name="list-all-recommendations"></a>Enumerar todas las recomendaciones
 
@@ -41,6 +41,19 @@ ms.locfileid: "59221546"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Recupera una lista de todas las recomendaciones de seguridad que afectan a la organización.
+
+
+## <a name="api-description"></a>Descripción de la API
+
+Devuelve información sobre todas las recomendaciones de seguridad que afectan a la organización.
+
+*DIRECCIÓN URL:* GET:/api/recommendations
+<br>Admite [consultas de OData V4](https://www.odata.org/documentation/).
+<br>Operadores compatibles con OData:
+<br>```$filter``` on:  ```id``` , , , , , , , , ```productName``` , y ```vendor``` ```recommendedVersion``` ```recommendationCategory``` ```subCategory``` ```severityScore``` ```remediationType``` ```recommendedProgram``` ```recommendedVendor``` ```status``` properties.
+<br>```$top``` con un valor máximo de 10 000.
+<br>```$skip```.
+<br>Vea ejemplos en [consultas de OData con Microsoft Defender para Endpoint](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Permisos
 

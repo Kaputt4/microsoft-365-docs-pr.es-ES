@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -25,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo guardar el contenido del buzón de un antiguo empleado.
-ms.openlocfilehash: 24a1fbff978bdc266e778b7fca84c882f9677cfe
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 287e7cd54449a86775f556d0165a19ce7ffadac8
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185238"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775317"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>Paso 2: Guardar el contenido del buzón de un antiguo empleado
 
@@ -48,7 +47,7 @@ Una vez que haya bloqueado que un usuario pueda iniciar sesión en su organizaci
 
     Para obtener información sobre cómo colocar una retención en un buzón, vea [Manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
 
-    **O**
+    **OR**
 
 2. Agregue la dirección de correo electrónico del antiguo empleado a la versión de Outlook escritorio y, a continuación, exporte los datos a un archivo .pst. Puede importar los datos a otra cuenta de correo electrónico si lo necesita. Consulte el [paso 4: dar a](remove-former-employee-step-4.md)otro empleado acceso a OneDrive y Outlook datos .
 

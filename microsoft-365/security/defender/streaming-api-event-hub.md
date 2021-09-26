@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ecfc8281c642e7240832a7c057f37f9df4caad68
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9e6c1fec6eea7bf1335eec061d6812d02df16556
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211800"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776841"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Centro de eventos de Azure
 
@@ -71,7 +71,9 @@ Una vez creado el espacio de nombres de Event Hub, tendrá que:
 
    ![Imagen del recurso del centro de eventos Id1.](../defender-endpoint/images/event-hub-resource-id.png)
 
-8. Elija los eventos que desea transmitir y haga clic en **Guardar**.
+8. Vaya a la API Microsoft 365 Defender eventos admitidos en [la API](supported-event-types.md) de streaming de eventos para revisar el estado de soporte técnico de los tipos de eventos en la API Microsoft 365 streaming.
+
+9. Elija los eventos que desea transmitir y haga clic en **Guardar**.
 
 ## <a name="the-schema-of-the-events-in-azure-event-hub"></a>Esquema de los eventos en Azure Event Hub
 
@@ -119,6 +121,7 @@ Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:
 
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Microsoft 365 Defender API de streaming](streaming-api.md)
+- [Tipos Microsoft 365 Defender eventos admitidos en la API de streaming de eventos](supported-event-types.md)
 - [Transmitir Microsoft 365 Defender eventos a su cuenta de Azure Storage](streaming-api-storage.md)
 - [Documentación de Azure Event Hub](/azure/event-hubs/)
 - [Solucionar problemas de conectividad: Azure Event Hub](/azure/event-hubs/troubleshooting-guide)

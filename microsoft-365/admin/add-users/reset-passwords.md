@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - MSStore_Link
@@ -28,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Inicie sesión con su cuenta Microsoft 365 administrador para restablecer las contraseñas de los usuarios en Microsoft 365 suscripción para empresas.
-ms.openlocfilehash: 64382d94ae92373d8d814eae0e9f6aa7c6e0043b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 50b964826b59287405c86a7918609535edb87b4f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185174"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775329"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -87,7 +86,7 @@ Si ha olvidado la contraseña y no puede iniciar sesión:
 
 - Asegúrese de que ha proporcionado información de contacto alternativa, incluido un número de teléfono móvil.
 
-- O bien, [llama al soporte técnico de Microsoft](../../business-video/get-help-support.md).
+- O bien, [llame al soporte técnico de Microsoft](../../business-video/get-help-support.md).
 
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Restablecer todas las contraseñas empresariales para todos los usuarios de la organización al mismo tiempo
 <a name="bkmk_forgot"> </a>

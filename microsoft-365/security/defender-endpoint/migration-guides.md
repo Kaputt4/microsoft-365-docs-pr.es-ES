@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 0aace52d05103afa490ec98b50ee9b6539e6b794
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 1fd410be19a8b5181cb2ef2b88d53e198753c7a3
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401667"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776745"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>Cambiar a Microsoft Defender para endpoint
 
@@ -36,9 +36,7 @@ ms.locfileid: "59401667"
 
 Si estás pensando en moverte a Defender para Endpoint, tenemos instrucciones para ayudarte. En la tabla siguiente, revise los escenarios. Seleccione el escenario que mejor representa su situación y vea las instrucciones recomendadas.
 
-<br>
-
-****
+<br/><br/>
 
 |Escenario|Instrucciones|
 |---|---|
@@ -52,7 +50,7 @@ Si estás pensando en moverte a Defender para Endpoint, tenemos instrucciones pa
 
 Háganos saber lo que piensa. Envíe sus comentarios en la parte inferior de la página. Tomaremos en cuenta sus comentarios a medida que sigamos mejorando y agregando a nuestra guía de migración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection)
 - [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-atp)

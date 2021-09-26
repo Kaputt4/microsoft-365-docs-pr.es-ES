@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 68a14ab44011506d89e219f1350dbc86939a6432
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: c897a65296f0f5b016b2bdb22e28773a01be494a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356382"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776997"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -74,13 +74,13 @@ Antes de clasificar o suprimir una alerta, determine si la alerta es precisa, un
 
 4. Según el estado de alerta, siga los pasos descritos en la tabla siguiente:
 
-<br/>
+<br/><br/>
 
-|Estado de alerta|Qué hacer|
-|---|---|
-|La alerta es precisa|Asigne la alerta y, a [continuación, investigue más.](investigate-alerts.md)|
-|La alerta es un falso positivo|<ol><li>[Clasifique la alerta](#classify-an-alert) como falso positivo.</li><li>[Suprimir la alerta](#suppress-an-alert).</li><li>[Cree un indicador para](#indicators-for-microsoft-defender-for-endpoint) Microsoft Defender para Endpoint.</li><li>[Enviar un archivo a Microsoft para su análisis.](#part-4-submit-a-file-for-analysis)</li></ol>|
-|La alerta es precisa, pero benigna (sin importancia)|[Clasifique la alerta](#classify-an-alert) como un verdadero positivo y, a continuación, [suprima la alerta](#suppress-an-alert).|
+   |Estado de alerta|Qué hacer|
+   |---|---|
+   |La alerta es precisa|Asigne la alerta y, a [continuación, investigue más.](investigate-alerts.md)|
+   |La alerta es un falso positivo|<ol><li>[Clasifique la alerta](#classify-an-alert) como falso positivo.</li><li>[Suprimir la alerta](#suppress-an-alert).</li><li>[Cree un indicador para](#indicators-for-microsoft-defender-for-endpoint) Microsoft Defender para Endpoint.</li><li>[Enviar un archivo a Microsoft para su análisis.](#part-4-submit-a-file-for-analysis)</li></ol>|
+   |La alerta es precisa, pero benigna (sin importancia)|[Clasifique la alerta](#classify-an-alert) como un verdadero positivo y, a continuación, [suprima la alerta](#suppress-an-alert).|
 
 ### <a name="classify-an-alert"></a>Clasificar una alerta
 
@@ -176,6 +176,7 @@ Cuando haya terminado de revisar y deshacer acciones que se realizaron como resu
 Puede revertir y quitar un archivo de la cuarentena si ha determinado que está limpio después de una investigación. Ejecute el siguiente comando en cada dispositivo en el que se ha puesto en cuarentena el archivo.
 
 1. Abra un símbolo del sistema con privilegios elevados en el dispositivo:
+
    1. Vaya a **Inicio** y escriba _cmd_.
    2. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
@@ -377,6 +378,7 @@ Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 4. En la **pestaña Conceptos** básicos, especifique un nombre y una descripción para la directiva. A continuación, elija **Siguiente**.
 
 5. En la **pestaña Configuración,** expanda **Protección de la nube** y especifique la siguiente configuración:
+
    - Establezca **Activar la protección entregada en la nube** en **Sí**.
    - Establezca **Nivel de protección proporcionada en la nube** en **Sin configurar**. (Este nivel proporciona un alto nivel de protección de forma predeterminada, al tiempo que reduce las posibilidades de obtener falsos positivos).
 
@@ -453,7 +455,7 @@ Si ha trabajado en todos los pasos de este artículo y todavía necesita ayuda, 
 
 3. En la **ventana Asistente de** soporte técnico, describa el problema y, a continuación, envíe el mensaje. Desde allí, puede abrir una solicitud de servicio.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Administrar Microsoft Defender para el punto de conexión](manage-atp-post-migration.md)
 

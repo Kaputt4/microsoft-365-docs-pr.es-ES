@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/23/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 0b920cdd703a3c2893da3a4df3cc5b62513970c9
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 27391b65b583a05e2c3d50f93dd1a0d2f3ce561b
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401919"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59777009"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Administrar Microsoft Defender para endpoint con PowerShell, WMI y MPCmdRun.exe
 
@@ -55,30 +55,28 @@ Puede usar PowerShell para administrar el Antivirus de Microsoft Defender, la pr
 
 |Tarea|Recursos para obtener más información|
 |---|---|
-|**Administrar Antivirus de Microsoft Defender** <p> Ver el estado de la protección antimalware, configurar las preferencias para los exámenes antivirus & actualizaciones y realizar otros cambios en la protección antivirus.*|[Use cmdlets de PowerShell para configurar y administrar Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus) <p> [Usar cmdlets de PowerShell para habilitar la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)|
-|**Configurar la protección contra vulnerabilidades** de seguridad para mitigar las amenazas en los dispositivos de la organización <p> *Se recomienda usar la protección contra vulnerabilidades de seguridad en [el modo de auditoría](/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) al principio. De este modo, puede ver cómo la protección contra vulnerabilidades afecta a las aplicaciones que usa su organización.*|[Personalizar la protección contra vulnerabilidades de seguridad](/microsoft-365/security/defender-endpoint/customize-exploit-protection) <p> [Cmdlets de PowerShell para protección contra vulnerabilidades](/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)|
-|**Configurar reglas de reducción de superficie de ataque** con PowerShell <p> *Puede usar PowerShell para excluir archivos y carpetas de las reglas de reducción de superficie de ataque.*|[Personalizar reglas de reducción de superficie de ataque: usar PowerShell para excluir archivos & carpetas](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders) <p> Vea también la herramienta de interfaz gráfica de usuario de [António Vasconcelo](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI)para establecer reglas de reducción de superficie de ataque con PowerShell .|
-|**Habilitar la protección de red** con PowerShell <p> *Puede usar PowerShell para habilitar La protección de red.*|[Activar la protección de red con PowerShell](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell)|
-|**Configurar el acceso controlado a carpetas** para proteger contra ransomware <p> *[El acceso controlado a](/microsoft-365/security/defender-endpoint/controlled-folders) carpetas también se conoce como protección antiransomware.*|[Habilitar el acceso controlado a carpetas con PowerShell](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell)|
+|**Administrar Antivirus de Microsoft Defender** <br/><br/> Ver el estado de la protección antimalware, configurar las preferencias para los exámenes antivirus & actualizaciones y realizar otros cambios en la protección antivirus.*|[Use cmdlets de PowerShell para configurar y administrar Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus) <br/><br/> [Usar cmdlets de PowerShell para habilitar la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)|
+|**Configurar la protección contra vulnerabilidades** de seguridad para mitigar las amenazas en los dispositivos de la organización <br/><br/> *Se recomienda usar la protección contra vulnerabilidades de seguridad en [el modo de auditoría](/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) al principio. De este modo, puede ver cómo la protección contra vulnerabilidades afecta a las aplicaciones que usa su organización.*|[Personalizar la protección contra vulnerabilidades de seguridad](/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/> [Cmdlets de PowerShell para protección contra vulnerabilidades](/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)|
+|**Configurar reglas de reducción de superficie de ataque** con PowerShell <br/><br/> *Puede usar PowerShell para excluir archivos y carpetas de las reglas de reducción de superficie de ataque.*|[Personalizar reglas de reducción de superficie de ataque: usar PowerShell para excluir archivos & carpetas](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders) <br/><br/> Vea también la herramienta de interfaz gráfica de usuario de [António Vasconcelo](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI)para establecer reglas de reducción de superficie de ataque con PowerShell .|
+|**Habilitar la protección de red** con PowerShell <br/><br/> *Puede usar PowerShell para habilitar La protección de red.*|[Activar la protección de red con PowerShell](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell)|
+|**Configurar el acceso controlado a carpetas** para proteger contra ransomware <br/><br/> *[El acceso controlado a](/microsoft-365/security/defender-endpoint/controlled-folders) carpetas también se conoce como protección antiransomware.*|[Habilitar el acceso controlado a carpetas con PowerShell](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell)|
 |**Configurar Firewall de Microsoft Defender para** bloquear el tráfico de red no autorizado que entra o sale de los dispositivos de la organización|[Firewall de Microsoft Defender con administración avanzada de seguridad mediante Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
 |**Configurar el cifrado y BitLocker** para proteger la información en los dispositivos de la organización que se ejecutan Windows|[Guía de referencia de PowerShell de BitLocker](/powershell/module/bitlocker/)|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi"></a>Configurar Microsoft Defender para endpoint con Windows Management Instrumentation (WMI)
 
-WMI es una interfaz de scripting que permite recuperar, modificar y actualizar la configuración. Para obtener más información, vea [Using WMI](/windows/win32/wmisdk/using-wmi).
+WMI es una interfaz de scripting que permite recuperar, modificar y actualizar la configuración. Para obtener más información, vea [Using WMI](/windows/win32/wmisdk/using-wmi).<br/><br/>
 
 |Tarea|Recursos para obtener más información|
 |---|---|
 |**Habilitar la protección de entrega en la nube** en un dispositivo|[Use Windows Management Instruction (WMI) para habilitar la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection)|
-|**Recuperar, modificar y actualizar la configuración** de Antivirus de Microsoft Defender|[Usar WMI para configurar y administrar Antivirus de Microsoft Defender] (/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus <p> [Revisar la lista de clases WMI disponibles y scripts de ejemplo](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <p> Vea también la información de referencia [Windows Defender de proveedor WMIv2 archivada](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)|
+|**Recuperar, modificar y actualizar la configuración** de Antivirus de Microsoft Defender|[Usar WMI para configurar y administrar Antivirus de Microsoft Defender] (/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus <br/><br/> [Revisar la lista de clases WMI disponibles y scripts de ejemplo](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/> Vea también la información de referencia [Windows Defender de proveedor WMIv2 archivada](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe"></a>Configurar Microsoft Defender para endpoint con Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe)
 
-En un dispositivo individual, puede ejecutar un examen, iniciar el seguimiento de diagnóstico, comprobar si hay actualizaciones de inteligencia de seguridad y mucho más con la mpcmdrun.exe de línea de comandos. Puede encontrar la utilidad en `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Ejecutarlo desde un símbolo del sistema.<br/><br/>
+En un dispositivo individual, puede ejecutar un examen, iniciar el seguimiento de diagnóstico, comprobar si hay actualizaciones de inteligencia de seguridad y mucho más con la mpcmdrun.exe de línea de comandos. Puede encontrar la utilidad en `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Ejecutarlo desde un símbolo del sistema.
 
-|Tarea|Recursos para obtener más información|
-|---|---|
-|**Administrar Antivirus de Microsoft Defender**|[Configurar y administrar Antivirus de Microsoft Defender con mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)|
+Para obtener más información, vea [Configure and manage Antivirus de Microsoft Defender with mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus).
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configurar el portal Microsoft 365 Defender web
 

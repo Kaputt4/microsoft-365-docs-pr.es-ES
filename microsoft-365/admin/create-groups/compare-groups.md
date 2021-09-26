@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: Los miembros de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, Stream y un Planner.
-ms.openlocfilehash: 0b622f791de7615e45e49faec47558b0e67067f2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Los miembros del Grupo de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, así como Stream y Planner.
+ms.openlocfilehash: 3c805084afcf3ad8538decd0859d91a6a65cfe00
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184977"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59785968"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
 En la sección <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Grupos**</a> del Centro de administración de Microsoft 365, puede crear y administrar estos tipos de grupos: 
 
-- **Los grupos de Microsoft 365** se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía. Incluyen servicios de colaboración como SharePoint y Planner.
+- Los **Grupos de Microsoft 365** se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía. Incluyen servicios de colaboración como SharePoint y Planner.
 - **Los grupos de distribución** se usan para enviar notificaciones de correo electrónico a un grupo de personas.
 - **Los grupos de seguridad** se usan para conceder acceso a los recursos como SharePoint.
 - **Los grupos de seguridad habilitados para correo** se usan para conceder acceso a recursos como SharePoint y enviar notificaciones por correo electrónico a estos usuarios.
@@ -52,17 +52,17 @@ Todos estos tipos de grupo se pueden usar con Power Automate.
 
 ## <a name="microsoft-365-groups"></a>Grupos de Microsoft 365
 
-Los grupos de Microsoft 365 se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía. Con cada grupo de Microsoft 365, los miembros obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, Stream y un Planner.
+Los Grupos de Microsoft 365 se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía. Con cada Grupo de Microsoft 365, los miembros obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, así como Stream y Planner.
 
 Puede agregar personas externas a su empresa a un grupo siempre y cuando esta opción se haya [habilitado por parte del administrador](manage-guest-access-in-groups.md). También puede permitir que los remitentes externos puedan enviar correos electrónicos a la dirección de correo electrónico del grupo.
 
-Los grupos de Microsoft 365 se pueden [configurar para la pertenencia dinámica en Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), lo que permite que los miembros del grupo se agreguen o eliminen automáticamente en función de los atributos del usuario como el departamento, la ubicación, el puesto, etc.
+Los Grupos de Microsoft 365 se pueden [configurar para la pertenencia dinámica en Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), lo que permite agregar o eliminar a los miembros del grupo automáticamente en función de los atributos del usuario como el departamento, la ubicación, el cargo, etc.
 
-Se puede tener acceso a los grupos de Microsoft 365 a través de aplicaciones móviles como Outlook para iOS y Outlook para Android.
+Se puede tener acceso a los Grupos de Microsoft 365 a través de aplicaciones móviles como Outlook para iOS y Outlook para Android.
 
 Los miembros del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del grupo si está opción ha sido [activada por el administrador](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
-Los grupos de Microsoft 365 no admiten el anidamiento con otros grupos de Microsoft 365 o con grupos de distribución o seguridad.
+Los Grupos de Microsoft 365 no admiten anidamiento con otros Grupos de Microsoft 365 o con grupos de distribución o de seguridad.
 
 ## <a name="distribution-groups"></a>Grupos de distribución
 
@@ -70,11 +70,11 @@ Los grupos de Microsoft 365 no admiten el anidamiento con otros grupos de Micros
 
 Los grupos de distribución son mejores para las situaciones en las que necesita transmitir información a un grupo definido de personas, como "Usuarios del edificio A" o "Todos los usuarios de Contoso".
 
-Los grupos de distribución se pueden [actualizar a grupos de Microsoft 365](../manage/upgrade-distribution-lists.md).
+Los grupos de distribución se pueden [actualizar a Grupos de Microsoft 365](../manage/upgrade-distribution-lists.md).
 
 Los grupos de distribución se pueden agregar a un equipo en Microsoft Teams.
 
-Los grupos de Microsoft 365 no pueden ser miembros de grupos de distribución.
+Los Grupos de Microsoft 365 no pueden ser miembros de ningún grupo de distribución.
 
 ## <a name="security-groups"></a>Grupos de seguridad
 
@@ -86,7 +86,7 @@ Los grupos de seguridad se pueden [configuran para la pertenencia dinámica en A
 
 Se pueden agregar grupos de seguridad a un equipo.
 
-Los grupos de Microsoft 365 no pueden ser miembros de grupos de seguridad.
+Los Grupos de Microsoft 365 no pueden ser miembros de ningún grupo de seguridad.
 
 ## <a name="mail-enabled-security-groups"></a>Grupos de seguridad habilitados para correo
 
@@ -106,11 +106,11 @@ Los buzones compartidos incluyen un calendario que se puede usar para la colabor
 
 Los usuarios con permisos para el buzón del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del buzón si el administrador le ha concedido permisos de usuario para hacerlo. Esto es especialmente útil para los buzones de ayuda y soporte técnico, ya que los usuarios pueden enviar mensajes de correo electrónico desde "Soporte técnico de Contoso" o "Escritorio de recepción del edificio A".
 
-No es posible migrar un buzón compartido a un grupo de Microsoft 365. 
+No es posible migrar un buzón compartido a un Grupo de Microsoft 365. 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Obtener información sobre los grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Obtener información sobre los Grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Actualizar listas de distribución a Grupos de Microsoft 365 en Outlook](/microsoft-365/admin/manage/upgrade-distribution-lists)
 

@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
+- Adm_TOC
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Aprenda a comprobar qué suscripciones tiene su organización yendo a la página Sus productos.
 ms.date: 01/21/2021
-ms.openlocfilehash: bb11ab4fc8933e2e199998992f0c12ea8de0d23a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9c6870ae7008dee25a8dd6e5a3e2f44e534b0028
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185110"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786004"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 

@@ -13,7 +13,6 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365_Setup
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - SaRA
@@ -27,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Use el Asistente para la instalación para agregar el dominio Microsoft 365 en el Centro de administración de Microsoft 365 agregando un registro DNS en el host DNS.
-ms.openlocfilehash: caec9951fa80d19467623922dffa8551d0b4ad0d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b1c5bcb19d667d5e39a7c7567b9024696dc3730a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184462"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776217"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 

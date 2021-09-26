@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Es posible que reciba errores al configurar buzones compartidos. Pruebe estas soluciones si tiene problemas con buzones compartidos.
-ms.openlocfilehash: ae76bc1cb97c44087be57adc7791ea8814b94b40
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 27c3d23b3d5a496a6de85811c7aa23c8f199d654
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184681"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774633"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Resolver problemas con los buzones compartidos
 

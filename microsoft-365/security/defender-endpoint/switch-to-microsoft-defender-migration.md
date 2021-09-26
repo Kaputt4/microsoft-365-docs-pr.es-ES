@@ -21,15 +21,15 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 08/16/2021
+ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 267787b2cacc00a1d402c2f4dd2e57f42bd3dda3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: e9562ae976e4eeac1197c5280caebef449ae0180
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402171"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776769"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Cambiar de la protección de puntos de conexión que no son de Microsoft a Microsoft Defender para el extremo
 
@@ -45,11 +45,13 @@ El proceso de migración a Defender for Endpoint se puede dividir en tres fases,
 
 ![Proceso de migración de MDE.](images/phase-diagrams/migration-phases.png)
 
+<br/><br/>
+
 |Fase|Descripción|
 |--|--|
-|[Preparar la migración](switch-to-microsoft-defender-prepare.md)|Durante [la fase **de** preparación:](switch-to-microsoft-defender-prepare.md) <ol><li>Actualice los dispositivos de la organización.</li><li>Obtener Defender para endpoint.</li><li>Planee roles y permisos y conceda acceso al portal de Microsoft 365 Defender web.</li><li>Configure el proxy de dispositivo y la configuración de Internet para habilitar la comunicación entre los dispositivos de la organización y Defender para endpoint.</li></ol>|
-|[Configurar Defender para endpoint](switch-to-microsoft-defender-setup.md)|Durante [la fase **de** instalación:](switch-to-microsoft-defender-setup.md) <ol><li>Habilite o reinstale Antivirus de Microsoft Defender y estabilite en modo pasivo.</li><li> Configurar Defender para endpoint.</li><li>Agregue Defender for Endpoint a la lista de exclusión de la solución existente.</li><li>Agregue la solución existente a la lista de exclusión para Antivirus de Microsoft Defender.</li><li>Configura los grupos de dispositivos, las colecciones y las unidades organizativas.</li><li>Configure las directivas de antimalware y las opciones de protección en tiempo real.</li></ol>|
-|[Incorporación a Defender para endpoint](switch-to-microsoft-defender-onboard.md)|Durante [la fase de **incorporación**](switch-to-microsoft-defender-onboard.md): <ol><li>Incorpore los dispositivos a Defender para endpoint.</li><li>Ejecute una prueba de detección.</li><li>Confirme que Antivirus de Microsoft Defender se está ejecutando en modo pasivo.</li><li>Obtener actualizaciones para Antivirus de Microsoft Defender.</li><li>Desinstale la solución de protección de puntos de conexión existente.</li><li>Asegúrese de que Defender for Endpoint funciona correctamente.</li></ol>|
+|[Preparar la migración](switch-to-microsoft-defender-prepare.md)|Durante [la fase **de** preparación:](switch-to-microsoft-defender-prepare.md) <br/>1. Actualice los dispositivos de su organización.<br/>2. Obtener Defender para endpoint.<br/>3. Planee roles y permisos y conceda acceso al portal Microsoft 365 Defender web.<br/>4. Configure el proxy del dispositivo y la configuración de Internet para habilitar la comunicación entre los dispositivos de la organización y Defender para endpoint. |
+|[Configurar Defender para endpoint](switch-to-microsoft-defender-setup.md)|Durante [la fase **de** instalación:](switch-to-microsoft-defender-setup.md) <br/>1. Habilite o vuelva a instalar Antivirus de Microsoft Defender y estabilite en modo pasivo.<br/>2. Configure Defender for Endpoint.<br/>3. Agregue Defender for Endpoint a la lista de exclusión de la solución existente.<br/>4. Agregue la solución existente a la lista de exclusión para Antivirus de Microsoft Defender.<br/>5. Configure los grupos de dispositivos, las colecciones y las unidades organizativas.<br/>6. Configure las directivas antimalware y la configuración de protección en tiempo real.|
+|[Incorporación a Defender para endpoint](switch-to-microsoft-defender-onboard.md)|Durante [la fase de **incorporación**](switch-to-microsoft-defender-onboard.md): <br/>1. Incorpore los dispositivos a Defender para endpoint.<br/>2. Ejecute una prueba de detección.<br/>3. Confirme que Antivirus de Microsoft Defender se está ejecutando en modo pasivo.<br/>4. Obtener actualizaciones para Antivirus de Microsoft Defender.<br/>5. Desinstale la solución de protección de extremo existente.<br/>6. Asegúrese de que Defender for Endpoint funciona correctamente.|
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>¿Qué se incluye en Microsoft Defender para endpoint?
 
@@ -62,7 +64,7 @@ En esta guía de [](microsoft-defender-antivirus-in-windows-10.md) migración, n
 |[Administración de vulnerabilidades y amenazas](next-gen-threat-and-vuln-mgt.md)|Las & administración de vulnerabilidades de amenazas ayudan a identificar, evaluar y corregir puntos débiles en los puntos de conexión (como dispositivos).|
 |[Reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)|Las reglas de reducción de superficie de ataque ayudan a proteger los dispositivos y aplicaciones de la organización de ciberamenazas y ataques.|
 |[Protección de última generación](microsoft-defender-antivirus-in-windows-10.md)|La protección de última generación Antivirus de Microsoft Defender ayuda a bloquear amenazas y malware.|
-|[EDR](overview-endpoint-detection-response.md)|Las capacidades de detección y respuesta de puntos de conexión detectan, investigan y responden a intentos de intrusión e infracciones activas.|
+|[Detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md)|Las capacidades de detección y respuesta de puntos de conexión detectan, investigan y responden a intentos de intrusión e infracciones activas.|
 |[Búsqueda avanzada de amenazas](advanced-hunting-overview.md)|Las capacidades avanzadas de búsqueda permiten al equipo de operaciones de seguridad localizar indicadores y entidades de amenazas conocidas o potenciales.|
 |[Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)|Las capacidades de bloqueo y contención del comportamiento ayudan a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse.|
 |[Investigación y corrección automatizadas](automated-investigations.md)|Las capacidades automatizadas de investigación y respuesta examinan las alertas y toman medidas de corrección inmediatas para resolver infracciones.|

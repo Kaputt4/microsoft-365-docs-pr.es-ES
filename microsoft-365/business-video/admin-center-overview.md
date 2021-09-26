@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Use la vista simplificada en Microsoft 365 para administrar tareas comunes o la vista de panel para configuraciones y tareas más complejas.
-ms.openlocfilehash: e3bee5487a0004f6741e51494c01f7e2c2355227
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d1f187f7ab3f7fdad53727a3cd74e2543c3cbcef
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188881"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786376"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
@@ -117,7 +118,7 @@ Si no tiene idea de con quién ponerse en contacto en su trabajo o escuela para 
 
 Mientras esté en el Centro de administración, puede  enviar comentarios a Microsoft sobre su experiencia seleccionando Dar comentarios justo al lado del botón ¿Necesita **ayuda?** en la parte inferior de cada página. Díganos lo que le gusta y lo que podríamos hacer mejor. Además, puede obtener encuestas emergentes de vez en cuando preguntando sobre sus impresiones generales o una experiencia determinada que se acaba de publicar. También puede enviar comentarios al final de este artículo seleccionando **¿Esta información fue útil?**
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ¿No ve sus preguntas contestadas aquí? Vaya a la **sección** Comentarios de la parte inferior de esta página y haga su pregunta.
 
@@ -149,42 +150,42 @@ El Centro de administración de Microsoft 365 está totalmente localizado en 40 
 |---------|---------|
 |Árabe | ar |
 |Bulgarian | bg |
-|Catalan | ca |
-|Czech | cs |
-|Danish | da |
-|German | de |
-|Greek | el |
-|Spanish | es |
+|Catalán | ca |
+|Checo | cs |
+|Danés | da |
+|Alemán | de |
+|Griego | el |
+|Español | es |
 |Inglés | en |
 |Estonian | et |
 |Basque | eu |
 |Finnish | fi |
-|French | fr |
+|Francés | fr |
 |Galician | gl |
 |Hebrew | he |
 |Croatian | hr |
-|Hungarian | hu |
-|Indonesian  | id |
-|Italian | it |
-|Japanese | ja |
-|Korean | ko |
+|Húngaro | hu |
+|Indonesio  | id |
+|Italiano | it |
+|Japonés | ja |
+|Coreano | ko |
 |Lithuanian | lt |
 |Latvian | lv |
-|Dutch | nl |
+|Neerlandés | nl |
 |Noruego | no |
-|Polish | pl |
+|Polaco | pl |
 |Portugués (Brasil) | pt |
 |Portugués (Portugal) | pt-pt |
-|Romanian | ro |
-|Russian | ru |
+|Rumano | ro |
+|Ruso | ru |
 |Slovak | sk |
 |Slovenian | sl |
 |Serbio (cirílico)  | sr-cyrl |
 |Serbian Latin | sr |
-|Swedish | sv |
-|Thai | th |
-|Turkish | tr |
-|Ukrainian | uk |
+|Sueco | sv |
+|Tailandés | th |
+|Turco | tr |
+|Ucraniano | uk |
 |Vietnamese | vi |
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |

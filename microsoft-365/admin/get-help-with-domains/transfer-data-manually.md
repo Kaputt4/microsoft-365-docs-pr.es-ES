@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Encuentre cómo transferir datos manualmente entre dos cuentas Microsoft 365 cuando cambie el plan o el nombre de la compañía, o combine varias suscripciones en una.
-ms.openlocfilehash: e06136195481abcce66afa6ecc21d1c3c54415d7
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: a400784db27fabfdb57f5ece04236a035b43b168
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400144"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775389"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Transferir datos manualmente entre dos cuentas
 
@@ -60,7 +59,7 @@ Si va a transferir datos de Microsoft 365 a Microsoft 365 mediana empresa o Micr
   
 Para Microsoft 365 Enterprise y Microsoft 365 mediana empresa:
   
-|**Ubicación**|**Finalidad**|
+|**Location**|**Finalidad**|
 |:-----|:-----|
 |**Administrador** \> **Microsoft 365** \> **Configuración del servicio** <br/> |Seleccione cada pestaña para la configuración de correo, sitios, Lync, software de usuario, contraseñas, comunidad, administración de derechos y móvil.  <br/> |
 |**Administrador** \> **Exchange** <br/> | Exchange Online configuración  <br/> |
@@ -69,7 +68,7 @@ Para Microsoft 365 Enterprise y Microsoft 365 mediana empresa:
 
 Para Microsoft 365 pequeña empresa
   
-|**Ubicación**|**Finalidad**|
+|**Location**|**Finalidad**|
 |:-----|:-----|
 |**Administrador** \> **Administrar la configuración de toda la organización** <br/> |Configuración administrativa  <br/> |
 

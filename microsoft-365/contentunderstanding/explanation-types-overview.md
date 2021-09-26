@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga más información sobre la lista de frases, las expresiones regulares y los tipos de explicación de proximidad en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 405080575f48f439e7d978a8fc7ca00ecf956be0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 178f56ea0513d0cc8ba0c47a3c9cde3a24796899
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210877"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786400"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Tipos de explicación en Microsoft SharePoint Syntex
 
@@ -138,6 +138,9 @@ Redmond, WA 98034<br>
 Use la explicación de proximidad para definir el número de teléfono que se debe desplazar para identificar mejor el número de la calle en los documentos.
 
 ![Explicación de proximidad.](../media/content-understanding/proximity.png)
+
+> [!NOTE]
+> Actualmente, las expresiones regulares no se pueden usar con el tipo de explicación de proximidad.
 
 #### <a name="what-are-tokens"></a>¿Qué son los tokens?
 

@@ -9,17 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- Adm_TOC
+ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 description: Aceptar invitación para unirse a una Microsoft 365 Empresa Estándar organización
-ms.openlocfilehash: cdb77b7f0263aaeabad972dc5a005e42ce0d6deb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c6d5142f966501451517e31b611fdbbe12c94bdd
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186625"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776361"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>Aceptar una invitación de correo electrónico a Microsoft 365 Empresa Estándar suscripción (usuario)
 
@@ -60,7 +59,7 @@ Siga los pasos de la suscripción Migrar datos a mi [Microsoft 365 Empresa Está
 
 Descargar y empezar a usar [Office aplicaciones para empresas](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="i-didnt-receive-an-upgrade-email"></a>¿No he recibido un correo electrónico de actualización?
 

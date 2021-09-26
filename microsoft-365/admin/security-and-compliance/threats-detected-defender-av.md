@@ -11,16 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtenga información sobre Antivirus de Microsoft Defender protege los dispositivos Windows de amenazas de software, como virus, malware y spyware.
-ms.openlocfilehash: 4343726b1a0856616eaa8291adc24633aaad5eb0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7894a1f2a3947a3d71f46bf0ca3797370db078f4
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186785"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772739"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Amenazas detectadas por Antivirus de Microsoft Defender
 

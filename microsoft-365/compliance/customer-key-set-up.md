@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente para Microsoft 365.
-ms.openlocfilehash: e187c01a355cc9b926e892cb3326b5a527c714a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 739653151031026e788c4b39fa3b182184115175
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212677"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776637"
 ---
 # <a name="set-up-customer-key"></a>Configurar clave de cliente
 
@@ -52,7 +52,7 @@ La mayoría de estas tareas se completarán mediante la conexión remota a Azure
  
 - [Registrar suscripciones de Azure para usar un período de retención obligatorio](#register-azure-subscriptions-to-use-a-mandatory-retention-period)
 
-  El registro puede tardar de uno a cinco días laborables.
+  Este proceso de registro tardaría cinco días laborables en completarse.
 
 - [Crear un Almacén de claves de Azure premium en cada suscripción](#create-a-premium-azure-key-vault-in-each-subscription)
 
@@ -111,7 +111,7 @@ Para enviar una oferta para activar la clave de cliente, siga estos pasos:
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Registrar suscripciones de Azure para usar un período de retención obligatorio
 
-La pérdida temporal o permanente de claves de cifrado raíz puede ser perjudicial o incluso catastrófica para la operación del servicio y puede provocar la pérdida de datos. Por este motivo, los recursos usados con la clave de cliente requieren una protección sólida. Todos los recursos de Azure que se usan con clave de cliente ofrecen mecanismos de protección más allá de la configuración predeterminada. Puede etiquetar o registrar suscripciones de Azure durante *un período de retención obligatorio.* Un período de retención obligatorio impide la cancelación inmediata e irrevocable de la suscripción de Azure. Los pasos necesarios para registrar suscripciones de Azure durante un período de retención obligatorio requieren colaboración con el Microsoft 365 equipo. Este proceso puede tardar de uno a cinco días laborables. Anteriormente, el período de retención obligatorio a veces se denominaba "No cancelar".
+La pérdida temporal o permanente de claves de cifrado raíz puede ser perjudicial o incluso catastrófica para la operación del servicio y puede provocar la pérdida de datos. Por este motivo, los recursos usados con la clave de cliente requieren una protección sólida. Todos los recursos de Azure que se usan con clave de cliente ofrecen mecanismos de protección más allá de la configuración predeterminada. Puede etiquetar o registrar suscripciones de Azure durante *un período de retención obligatorio.* Un período de retención obligatorio impide la cancelación inmediata e irrevocable de la suscripción de Azure. Los pasos necesarios para registrar suscripciones de Azure durante un período de retención obligatorio requieren colaboración con el Microsoft 365 equipo. Este proceso tardaría cinco días laborables en completarse. Anteriormente, el período de retención obligatorio a veces se denominaba "No cancelar".
   
 Antes de ponerse en contacto Microsoft 365 equipo, debe realizar los siguientes pasos para cada suscripción de Azure que use con la clave de cliente. Asegúrese de que tiene instalado [el Azure PowerShell Az](/powershell/azure/new-azureps-module-az) antes de empezar.
   
@@ -132,13 +132,13 @@ Antes de ponerse en contacto Microsoft 365 equipo, debe realizar los siguientes 
 
    - Para habilitar la clave de cliente para asignar DEP para cifrar el contenido en varias cargas de trabajo de Microsoft 365 (Exchange Online, Teams, MIP EDM) para todos los usuarios del espacio empresarial, póngase en [contacto con m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
 
-- Incluya la siguiente información en su correo electrónico:
+   - Incluya la siguiente información en su correo electrónico:
 
-   **Asunto**: Clave de cliente para \<*Your tenant's fully qualified domain name*\>
+     **Asunto**: Clave de cliente para \<*Your tenant's fully qualified domain name*\>
 
-   **Cuerpo:** incluya los identificadores de suscripción para los que desea completar el período de retención obligatorio y el resultado de Get-AzProviderFeature para cada suscripción.
+     **Cuerpo:** incluya los identificadores de suscripción para los que desea completar el período de retención obligatorio y el resultado de Get-AzProviderFeature para cada suscripción.
 
-   El Contrato de nivel de servicio (SLA) para la finalización de este proceso es de cinco días laborables después de que Microsoft haya sido notificado (y comprobado) de que ha registrado sus suscripciones para usar un período de retención obligatorio.
+     El Contrato de nivel de servicio (SLA) para la finalización de este proceso es de cinco días laborables después de que Microsoft haya sido notificado (y comprobado) de que ha registrado sus suscripciones para usar un período de retención obligatorio.
 
 4. Una vez que reciba la notificación de Microsoft de que el registro se ha completado, compruebe el estado del registro ejecutando el Get-AzProviderFeature siguiente. Si se comprueba, Get-AzProviderFeature comando devuelve un valor **de Registered** para la propiedad **Registration State.** Complete este paso para cada suscripción.
 
@@ -205,7 +205,7 @@ Deberá definir tres conjuntos de permisos independientes para cada almacén de 
 
 - **Permisos para Microsoft 365** para cada almacén de claves que use para la clave de cliente, debe conceder wrapKey, unwrapKey y obtener permisos a la entidad de servicio Microsoft 365 de servicio correspondiente. 
 
-Para conceder permiso a Microsoft 365 entidad de servicio, ejecute el cmdlet **Set-AzKeyVaultAccessPolicy** con la siguiente sintaxis:
+  Para conceder permiso a Microsoft 365 entidad de servicio, ejecute el cmdlet **Set-AzKeyVaultAccessPolicy** con la siguiente sintaxis:
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -274,7 +274,7 @@ Donde:
   
 Si desea proteger la clave con un HSM, asegúrese de especificar **HSM** como el valor del parámetro _Destination,_ de lo contrario, especifique **Software**.
 
-Por ejemplo,
+Por ejemplo:
   
 ```powershell
 Add-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -Destination HSM -KeyOps wrapKey,unwrapKey
@@ -387,7 +387,7 @@ En Azure PowerShell:
 (Get-AzKeyVaultKey -VaultName <vault name>).Id
 ```
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que haya completado los pasos de este artículo, estará listo para crear y asignar DEP. Para obtener instrucciones, vea [Manage Customer Key](customer-key-manage.md).
 

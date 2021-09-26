@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la movilidad: las personas experimenta la puntuación productividad.'
-ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1bf45022193e8e1f5e4788312fb19705a6be7446
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186894"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776277"
 ---
 # <a name="mobility--people-experiences"></a>Movilidad: experiencias de personas
 
@@ -77,7 +76,7 @@ Este gráfico muestra la línea de tendencia, donde el numerador es el número d
 
 ### <a name="scoring-framework"></a>Marco de puntuación
 
-La puntuación de movilidad de la organización mide en un nivel de organización (agregado) si las personas usan Aplicaciones Microsoft 365 - Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype - en las diferentes plataformas : escritorio, web y móvil.
+La puntuación de movilidad de la organización mide en un nivel de organización (agregado) si las personas usan Aplicaciones Microsoft 365: Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype - en las diferentes plataformas: escritorio, web y móvil.
 
 Las puntuaciones no se proporcionan en el nivel de usuario individual.
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom: AdminSurgePortfolio
 search.appverid:
@@ -21,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Obtenga información sobre cómo el análisis de uso se conecta a una API y proporciona una tendencia mensual de uso de varios Microsoft 365 servicios.  '
-ms.openlocfilehash: 2f271414f515d2c3a86c6e59d64dc62f44f8ef01
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a99ee64715d9fdfa27b0f0feb8900dd301ebdaac
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186534"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775617"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modelo de datos de análisis de uso de Microsoft 365
 
@@ -206,7 +205,7 @@ Esta tabla proporciona datos de resumen mes a mes sobre los clientes que los usu
    
 ### <a name="data-table---tenant-sharepoint-online-usage"></a>Tabla de datos: Uso de SharePoint Online de espacio empresarial
 
-Esta tabla consiste en los datos de resumen de mes a mes sobre el uso o la actividad de sitios de SharePoint Online. Esto solo cubre los sitios de grupo. El estado de fin de mes de los sitios de SharePoint Online se representa en esta columna, por ejemplo, si un usuario creó cinco documentos y usó 10 MB para el almacenamiento total y, a continuación, eliminó algunos archivos y agregó más archivos para que al final del mes el estado de los archivos sea de siete en total que usan cinco MB de almacenamiento, el valor de representado en esta tabla es estado de fin de mes. Esta tabla está oculta para evitar contabilizar duplicados de agregaciones y se usa como origen para crear dos tablas de referencia.
+Esta tabla consiste en los datos de resumen de mes a mes sobre el uso o la actividad de sitios de SharePoint Online. Esto solo cubre los sitios de grupo. El estado de fin de mes de los sitios de SharePoint Online se representa en esta columna, por ejemplo, si un usuario creó cinco documentos y usó 10 MB para el almacenamiento total y, a continuación, eliminó algunos archivos y agregó más archivos para que al final del mes el estado de los archivos sea de siete en total que usan cinco MB de almacenamiento,  el valor de representado en esta tabla es estado de fin de mes. Esta tabla está oculta para evitar contabilizar duplicados de agregaciones y se usa como origen para crear dos tablas de referencia.
   
 |**Nombre de columna**|**Descripción de columna**|
 |:-----|:-----|

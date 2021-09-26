@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -20,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración al agregar varios usuarios.
-ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6ef35bb395417597d10b8b33c042e1baceeb40db
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185289"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773492"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Crear y usar una plantilla para agregar usuarios
 
@@ -43,7 +42,7 @@ Al crear una plantilla después de agregar un usuario, los valores que elija par
 - Ubicación de la licencia
 - Opciones de licencia
 - Opciones de aplicación
-- Role
+- Rol
 - La mayoría de la información de perfil, como **Perfil** de trabajo, **Departamento**, **Office**, **Office teléfono** y Dirección de **la calle** 
 
 La siguiente información es específica del usuario y no se guarda en la plantilla:

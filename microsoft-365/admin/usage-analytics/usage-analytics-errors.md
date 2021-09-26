@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Obtén información sobre cómo solucionar problemas con la Microsoft 365 de plantilla análisis de uso.
-ms.openlocfilehash: 74ee32ae015421a2352474daefa0eaa0a53fbbc9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b13ec0338c6ad48a5f5006528d77fbbdc290e7f5
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186526"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774357"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Solución de problemas Microsoft 365 análisis de uso
 

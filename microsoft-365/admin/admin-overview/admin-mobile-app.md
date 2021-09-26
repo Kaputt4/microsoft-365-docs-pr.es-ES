@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -24,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén la Administración de Microsoft 365 y aprende a administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: 7e503b70f6263e0bf5e949c7ca18ccfe0eb31ffb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdd379c6652492b2a0695b6c67b9cd46e2bdb184
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185134"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773444"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la Microsoft 365 móvil de administrador
 
@@ -66,7 +65,7 @@ Debes ser administrador de una organización Microsoft 365 para usar la aplicaci
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 A continuación, le mostramos las respuestas a algunas preguntas frecuentes.
   
@@ -74,7 +73,7 @@ A continuación, le mostramos las respuestas a algunas preguntas frecuentes.
 
 Para usar la aplicación, debes tener permisos de administrador y una suscripción válida a una de las siguientes Microsoft 365 suscripciones:
 
-- Aplicaciones de Microsoft 365 para empresas
+- Aplicaciones de Microsoft 365 para empresas
 - Aplicaciones Microsoft 365 para empresas
 - Microsoft 365 Empresa Premium
 - Microsoft 365 Empresa Estándar

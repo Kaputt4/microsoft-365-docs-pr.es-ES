@@ -12,16 +12,15 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo explicar los Microsoft 365 a los usuarios.
-ms.openlocfilehash: 828dffbed42b0b2bb2023a17f499802f7b2c2db1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 96085502c0600b5d36472fa40728cd4558cee3ed
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184945"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774969"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>Explicar los Microsoft 365 a los usuarios
 
@@ -35,7 +34,7 @@ Dado que los grupos se pueden crear de varias maneras, se recomienda formar a lo
 - Si su organización usa mucho SharePoint o está migrando desde SharePoint local, indique a los usuarios que creen SharePoint de grupo para la colaboración.
 - Si su organización ha implementado Teams, indique a los usuarios que creen un equipo cuando necesiten un espacio de colaboración.
 
-[![image desc. ](../../media/03.png)](../../media/03.png#lightbox)
+[![image desc. ](../../media/03.png) ](../../media/03.png#lightbox)
 
 Si entrena a los usuarios para que siempre usen el método de creación de grupos que más se alinee con su forma de trabajar cuando necesiten un espacio para colaborar con otros usuarios, puede ayudar a evitar confusiones y duplicaciones de recursos. A medida que los usuarios se vuelven más experimentados, comprenderán mejor la colección de servicios que vienen con un grupo y que los distintos métodos de creación llevan al mismo resultado.
 

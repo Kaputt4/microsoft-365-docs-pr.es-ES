@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el Microsoft 365 de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
-ms.openlocfilehash: fec3b0e88f7f399fcde821d1cdc55baa99c477e9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9eff7bb1e22107e80c1eefa9547ecb9ee6f0cb95
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187161"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773181"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -58,7 +57,7 @@ También puedes usar la aplicación [Administración de Microsoft 365 en](https:
 
 Para cancelar la suscripción a los correos electrónicos del Centro de mensajes, consulte Cancelar la suscripción a los correos [electrónicos del Centro](#unsubscribe-from-message-center-emails) de mensajes en este artículo.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 <br>
 
@@ -212,7 +211,7 @@ Esta es una introducción rápida a la información que verá en cada columna.
 |Título del mensaje|Los títulos de los mensajes son breves descripciones de los próximos cambios. Si no se muestra el título completo, coloca el cursor sobre él y todo el título aparecerá en un cuadro emergente.|
 |Servicio|Los iconos indican la aplicación a la que se aplica el mensaje.|
 |Más opciones|Más opciones te permiten descartar un mensaje, marcarlo como leído o no leído, o compartirlo con otro administrador. Para restaurar un mensaje archivado, seleccione **la** pestaña Archivo, seleccione la marca de verificación situada junto al mensaje y **seleccione Restaurar**.|
-|Etiquetas|Puede elegir etiquetas en **la** lista desplegable Etiqueta para filtrar mensajes. Las etiquetas disponibles son: **Impacto de administrador**, Actualización **principal** **,** Privacidad de datos , Actualización de **características**, **Nueva característica,** Retiro **e** Impacto del **usuario.**|
+|Etiquetas| Puede elegir etiquetas en la lista desplegable Etiqueta para filtrar mensajes. <br> <p> **Privacidad de datos:** notificación de privacidad de datos (limitada a roles de lector de privacidad del centro de mensajes y administrador global). <p> **Actualización principal:** cambios comunicados con al menos 30 días de antelación ([Actualizaciones principales](#major-updates)). <p> **Retiro:** retiro de un servicio o característica. <p> **Nueva característica:** Nueva característica o servicio. <p> **Actualización de características:** actualice a una característica existente. <p> **Impacto del administrador:** cuando el cambio afecta claramente al administrador de las siguientes maneras: cambio de interfaz de usuario, cambio de flujo de trabajo, control disponible y Acción específica/potencial. <p> **Impacto del usuario:** cuando el cambio en el servicio afecta claramente al usuario: cambio de interfaz de usuario y cambio de flujo de trabajo. <p> **Mensaje actualizado:** cuando se actualiza un mensaje.|
 |Categoría| Esto no se muestra de forma predeterminada, pero se puede especificar en el panel **Elegir** columnas. Los mensajes se identifican mediante una de las tres categorías siguientes: <p> **Evitar o solucionar problemas:** le informa de los problemas conocidos que afectan a su organización y puede requerir que tome medidas para evitar interrupciones en el servicio. Evitar o solucionar problemas son diferentes de los mensajes de mantenimiento del servicio porque le piden que sea proactivo para evitar problemas. <p> **Planear el cambio:** le informa de los cambios realizados Microsoft 365 que pueden requerir que actúe para evitar interrupciones en el servicio. Por ejemplo, le haremos saber sobre los cambios en los requisitos del sistema o sobre las características que se están quitando. Intentamos proporcionar al menos 30 días de aviso de cualquier cambio que requiera que un administrador actúe para mantener el servicio funcionando con normalidad. <p> **Mantenerse informado:** le informa sobre las características nuevas o actualizadas que estamos activar en su organización. Las características normalmente se anuncian primero en el [Microsoft 365 guía básica](https://go.microsoft.com/fwlink/?linkid=2070821). <p> También puede que le permita saber sobre el mantenimiento planeado de acuerdo con nuestro Contrato de nivel de servicio. El mantenimiento planeado puede dar lugar a tiempo de inatención, donde usted o sus usuarios no pueden acceder a Microsoft 365, una característica específica o un servicio como correo electrónico o OneDrive para la Empresa.|
 |Actuar por|Solo tendremos fechas aquí si estamos realizando un cambio que requiere que hagas una acción antes de una fecha límite determinada. Dado que rara vez usamos **la ley por** columna, si ves algo aquí, debes prestarle más atención.|
 |Actualizado por última vez|Fecha en que el mensaje se publicó o se actualizó por última vez.|

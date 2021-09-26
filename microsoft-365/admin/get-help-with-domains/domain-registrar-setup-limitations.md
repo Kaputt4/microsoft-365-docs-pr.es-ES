@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -21,12 +20,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: Algunos registradores de dominios ofrecen servicios limitados, lo que significa que no todas las características de Microsoft funcionarán con todos los dominios.
-ms.openlocfilehash: 3af1503b99290611d04b1012ce5087f719f01315
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7fe6b047773e47964b5a00728b8c1443bdeef36e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247324"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774597"
 ---
 # <a name="domain-registrars-with-setup-limitations"></a>Registradores de dominios con limitaciones de configuración
 
@@ -62,7 +61,7 @@ Vaya a la página donde están los registros DNS del dominio. Si está trabajand
 
 ## <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Crear registros DNS cuando Google (eNom) administra su dominio
 
-Si ha adquirido el dominio a través de Google al registrarse para su cuenta Google Apps for Work, Google administra sus registros DNS, pero están registrados con eNom. Puede acceder a eNom y crear DNS a través de la página Dominios de Google.
+Si compró el dominio a través de Google mientras se registraba en su cuenta profesional de Google Apps, Google administra los registros DNS, aunque se registren con eNom. Puede acceder al eNom y crear un DNS a través de la página Google Domains.
 
 ## <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Crear registros DNS en 1&1 IONOS para Microsoft
 
@@ -70,10 +69,10 @@ Si ha adquirido el dominio a través de Google al registrarse para su cuenta Goo
 
 Si a pesar de esta limitación de servicio, decide administrar sus propios registros DNS de Microsoft en 1&1 IONOS, siga los pasos de este artículo para comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online, etc.
 
-1&1 IONOS requiere de una solución alternativa para poder usar un registro MX junto con los registros CNAME necesarios para los servicios de correo electrónico de Microsoft. Esta solución requiere que se cree un conjunto de subdominios en 1&1 IONOS y que se asignen a registros CNAME.
+1&1 IONOS requiere una solución alternativa para que pueda usar un registro MX junto con los registros CNAME necesarios para los servicios de correo electrónico de Microsoft. Esta solución alternativa requiere que cree un conjunto de subdominios en 1&1 IONOS y que los asigne a registros CNAME.
 
 > [!NOTE]
-> Asegúrese de que tiene al menos dos subdominios disponibles antes de iniciar este procedimiento. Solo recomendamos esta solución si ya tiene experiencia con la creación de subdominios en 1&1 IONOS.
+> Asegúrese de que tiene al menos dos subdominios disponibles antes de iniciar este procedimiento. Se recomienda esta solución solo si ya tiene experiencia con la creación de subdominios en 1&1 IONOS.
 
 ### <a name="basic-cname-records"></a>Registros CNAME básicos
 
@@ -111,7 +110,7 @@ Si a pesar de esta limitación de servicio, decide administrar sus propios regis
 
 ### <a name="additional-cname-records"></a>Registros CNAME adicionales
 
-Los registros CNAME adicionales que figuran en el siguiente procedimiento, habilitan los servicios de Skype Empresarial Online. Repita los mismos pasos que siguió para crear los dos registros CNAME anteriores.
+Los registros CNAME adicionales del procedimiento siguiente habilitan los servicios de Skype Empresarial Online. Siga los mismos pasos que usó para los dos registros CNAME que ya ha creado.
 
 **Cree el tercer subdominio (Lyncdiscover)**
 

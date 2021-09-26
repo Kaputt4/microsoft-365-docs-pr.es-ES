@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: Obtenga información sobre cómo mantenerse al tanto de las actualizaciones Microsoft 365 con el Centro de mensajes, la versión dirigida, la guía básica y los blogs y Community.
-ms.openlocfilehash: d37680c4c0036f6e27619a09954d0776ca071e9e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e25093d784750ae97ffd2fef0700fd8d925f6f64
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187081"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776001"
 ---
 # <a name="stay-on-top-of-changes"></a>Mantenerse al día de los cambios
 

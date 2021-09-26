@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas forman parte de los Microsoft 365 de seguridad.
-ms.openlocfilehash: 74b6aeb5b768dc668a66bcb8c82f6c8393219561
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f348a81689aed43dcc8dbce15e92c0b7842aba69
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185094"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775161"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elegir entre Movilidad básica y seguridad o Intune
 

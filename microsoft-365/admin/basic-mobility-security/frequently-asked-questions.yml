@@ -13,18 +13,17 @@ metadata:
   ms.collection:
   - M365-subscription-management
   - Adm_O365
-  - Adm_TOC
   ms.custom:
   - AdminSurgePortfolio
   search.appverid:
   - MET150
   description: Preguntas más frecuentes sobre movilidad básica y seguridad.
-  ms.openlocfilehash: 4d57b1fce05329b294aade2806400e343f7f6ad7
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: ad39687332a8448c405112c88d685409d07c98a8
+  ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59185065"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "59773408"
 title: Preguntas más frecuentes sobre movilidad básica y seguridad (FAQ)
 summary: Este artículo contiene preguntas más frecuentes sobre Movilidad básica y seguridad, una característica que le ayuda a administrar y proteger dispositivos móviles en Microsoft 365. Si no encuentra una respuesta a su pregunta, háganoslo saber dejando un comentario en la página para que podamos considerar agregar su pregunta a este artículo.
 sections:
