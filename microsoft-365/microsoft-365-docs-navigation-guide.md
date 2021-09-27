@@ -10,12 +10,13 @@ ms.topic: conceptual
 author: samanro
 ms.author: samanro
 manager: pamgreen
-ms.openlocfilehash: 23d8750b05781df858328b581056a9502b4f685e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: Adm_TOC
+ms.openlocfilehash: 4e1b03d0424a7d1007e972c6d571fb12560da81f
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220689"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934028"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 de navegación de documentos
 
@@ -73,6 +74,6 @@ Si encuentra algo incorrecto en un artículo, puede enviar comentarios al equipo
 
 - [Guía de colaboradores de Microsoft Docs](/contribute/)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Introducción a la documentación [Microsoft 365 técnica](index.yml).

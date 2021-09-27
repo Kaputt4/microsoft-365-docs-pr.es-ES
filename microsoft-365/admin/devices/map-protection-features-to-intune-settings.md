@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Obtenga información sobre cómo las características de protección Microsoft 365 Empresa Premium se asignan a la configuración de Intune. La suscripción le proporciona una licencia para modificar la configuración de Intune.
-ms.openlocfilehash: 9a6dcf014e009389e49860fa96486c264c22f501
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c12907d5c50499a987e78403e25ace7bc89f4c79
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184857"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933740"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Cómo se asignan las características de protección Microsoft 365 Empresa Premium a la configuración de Intune
 

@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Descubra cómo usar Microsoft 365 para empresas para quitar los datos de la empresa que los usuarios tienen en sus dispositivos o Windows equipos.
-ms.openlocfilehash: f249af524dcdc00601357428425c57da3b3f738c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd3995b97803725c3d7d91e420387ff114876f26
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184838"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933260"
 ---
 # <a name="remove-company-data-from-devices"></a>Eliminar datos de la empresa de dispositivos
 

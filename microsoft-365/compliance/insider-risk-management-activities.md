@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f49085c2df8ee7922b2a461bb052bb7bdc6778a9
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 53e6c5ba245a99970a66aa7a61c74cecb6555420
+ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460415"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934682"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigar actividades de administración de riesgos de insider
 
@@ -49,7 +49,7 @@ El **informe de actividad de usuario** del usuario seleccionado contiene las pes
 
 ## <a name="alert-dashboard"></a>Panel de alertas
 
-Las alertas de administración de riesgos internos se generan automáticamente a través de los indicadores de riesgo definidos en las directivas de administración de riesgos internos. Estas alertas ofrecen a los investigadores y analistas de cumplimiento una vista actualizada del estado de riesgo actual y permiten que su organización valore y tome medidas en función de los riesgos detectados. De forma predeterminada, las directivas generan una cierta cantidad de alertas de gravedad baja, media y alta, pero puede aumentar o disminuir el volumen de alertas según sus necesidades. [](insider-risk-management-settings.md#alert-volume) Además, puede configurar el umbral de alerta para los indicadores de [directiva](insider-risk-management-settings.md#indicator-level-settings-preview) al crear una nueva directiva con el asistente para directivas.
+Las alertas de administración de riesgos internos se generan automáticamente a través de los indicadores de riesgo definidos en las directivas de administración de riesgos internos. Estas alertas ofrecen a los investigadores y analistas de cumplimiento una vista actualizada del estado de riesgo actual y permiten que su organización valore y tome medidas en función de los riesgos detectados. De forma predeterminada, las directivas generan una cierta cantidad de alertas de gravedad baja, media y alta, pero puede aumentar o disminuir el volumen de alertas según sus necesidades. [](insider-risk-management-settings.md#alert-volume) Además, puede configurar el umbral de alerta para los indicadores de [directiva](insider-risk-management-settings.md#indicator-level-settings-preview) al crear una nueva directiva con la herramienta de creación de directivas.
 
 Consulte el [vídeo Insider Risk Management Alerts Triage Experience](https://www.youtube.com/watch?v=KgmpxBLJLPI) para obtener información general sobre cómo las alertas proporcionan detalles, contexto y contenido relacionado para la actividad de riesgo y cómo hacer que el proceso de investigación sea más eficaz.
 
@@ -124,8 +124,8 @@ Para realizar una evaluación de una alerta de riesgo insider, siga estos pasos:
         - **Perspectivas de riesgos para la actividad de esta alerta:** muestra el número de información de riesgos para la alerta. Algunos ejemplos son si la alerta contiene actividades de secuencia, riesgo acumulado de actividad de exfiltración, actividad que incluye eventos con dominios no permitidos, actividad que incluye eventos con contenido prioritario o actividades que son inusuales para el usuario.
         - **Detalles del usuario:** muestra información general sobre el usuario asignado a la alerta. Si la anonimización está habilitada, los campos nombre de usuario, dirección de correo electrónico, alias y organización se anonimizan.
         - **Detalles de** la alerta: incluye el período de tiempo desde que se generó la alerta, se enumeran las directivas que generaron la alerta y se muestra el caso generado a partir de la alerta. Para las alertas nuevas, el **campo Caso** muestra Ninguno.
-        - **Contenido detectado:** incluye contenido asociado a las actividades de riesgo de la alerta y resume los eventos de actividad por áreas clave. Al seleccionar un vínculo de actividad, se abre el explorador de actividades y se muestran detalles adicionales sobre la actividad.
-    - **Explorador de actividades:** esta pestaña abre el **explorador de actividades**. Vea la siguiente sección de este artículo para obtener más información.
+        - **Contenido detectado:** incluye contenido asociado a las actividades de riesgo de la alerta y resume los eventos de actividad por áreas clave. Al seleccionar un vínculo de actividad, se abre el explorador de actividades y se muestran más detalles sobre la actividad.
+    - **Explorador de actividades:** esta pestaña abre el **explorador de actividades**. Para obtener más información, consulte la siguiente sección de este artículo.
 
 ## <a name="activity-explorer"></a>Explorador de actividad
 
@@ -160,9 +160,9 @@ Para usar el **explorador de actividades,** siga estos pasos:
 
 Al revisar las actividades en el explorador de actividades, los investigadores y analistas pueden seleccionar una actividad específica y abrir el panel de detalles de la actividad. El panel muestra información detallada sobre la actividad que los investigadores y analistas pueden usar durante el proceso de evaluación de alertas. La información detallada puede proporcionar contexto para la alerta y ayudar a identificar el ámbito completo de la actividad de riesgo que desencadenó la alerta.
 
-Al seleccionar los eventos de una actividad de la escala de tiempo de actividad, es posible que el número de actividades que se muestran en el explorador no coincida con el número de eventos de actividad enumerados en la escala de tiempo. Ejemplos de por qué esto puede ocurrir:
+Al seleccionar los eventos de una actividad de la escala de tiempo de actividad, es posible que el número de actividades que se muestran en el explorador no coincida con el número de eventos de actividad enumerados en la escala de tiempo. Ejemplos de por qué puede producirse esta diferencia:
 
-- **Detección acumulativa** de exfiltración: la detección acumulativa de exfiltración analiza los registros de eventos, pero aplica un modelo que incluye la desduplicación de actividades similares para calcular el riesgo de exfiltración acumulado.
+- **Detección acumulativa** de exfiltración: la detección acumulativa de exfiltración analiza los registros de eventos, pero aplica un modelo que incluye la desduplicación de actividades similares para calcular el riesgo de exfiltración acumulado. Además, también puede haber una diferencia en el número de actividades que se muestran en el explorador de actividades si ha realizado cambios en la directiva o configuración existentes. Por ejemplo, si modifica dominios permitidos o no permitidos o agrega nuevas exclusiones de tipos de archivo después de crear una directiva y de que se hayan producido coincidencias de actividad, las actividades acumulativas de detección de exfiltración diferirán de los resultados antes de que cambie la directiva o la configuración. Los totales acumulados de actividad de detección de exfiltración se basan en la configuración de directiva y configuración en el momento del cálculo y no incluyen actividades antes de los cambios de directiva y configuración
 - **Correos electrónicos a destinatarios externos:** la actividad de los correos electrónicos enviados a destinatarios externos tiene asignada una puntuación de riesgo en función del número de correos electrónicos enviados, que puede no coincidir con los registros de eventos de actividad.
 
 ![Detalles del explorador de actividades de administración de riesgos de Insider.](../media/insider-risk-activity-explorer-details.png)
@@ -185,7 +185,7 @@ Revisar, investigar y actuar en alertas de riesgo de información interna son pa
 
 ### <a name="too-many-alerts-to-review"></a>Demasiadas alertas para revisar
 
-Sentirse abrumado por el número de alertas generadas por las directivas de administración de riesgos de insider podría resultar frustrante. Esto se puede solucionar rápidamente con pasos sencillos, según los tipos de volumen de alerta que esté recibiendo. Es posible que reciba demasiadas alertas válidas o que tenga demasiadas alertas de bajo riesgo obsoletas. Considere la posibilidad de realizar las siguientes acciones:
+Sentirse abrumado por el número de alertas generadas por las directivas de administración de riesgos de insider podría resultar frustrante. El número de alertas se puede abordar rápidamente con pasos sencillos, en función de los tipos de volumen de alerta que reciba. Es posible que reciba demasiadas alertas válidas o que tenga demasiadas alertas de bajo riesgo obsoletas. Considere la posibilidad de realizar las siguientes acciones:
 
 - Ajustar las directivas de riesgo de **insider:** seleccionar y configurar la directiva de riesgo insider correcta es el método más básico para abordar el tipo y el volumen de alertas. A partir de la plantilla [de directiva adecuada,](insider-risk-management-policies.md#policy-templates) ayuda a centrar los tipos de actividades de riesgo y alertas que verá. Otros factores que pueden afectar al volumen de alertas son el tamaño del usuario y los grupos del ámbito y el contenido y los canales que [se priorizan.](insider-risk-management-policies.md#prioritize-content-in-policies) Considere la posibilidad de ajustar las directivas para refinar estas áreas a lo que es más importante para su organización.
 - Modificar la configuración de riesgos de **insider:** las opciones de riesgo de Insider incluyen una amplia variedad de opciones de configuración que pueden afectar al volumen y a los tipos de alertas que recibirás. Estos incluyen la configuración de [indicadores de directiva,](insider-risk-management-settings.md#indicators) [umbrales de indicadores](insider-risk-management-settings.md#indicator-level-settings-preview)y [períodos de tiempo de directiva.](insider-risk-management-settings.md#policy-timeframes) Considere la posibilidad de configurar opciones de detecciones [inteligentes](insider-risk-management-settings.md#intelligent-detections) para excluir tipos de archivo específicos, definir umbrales mínimos antes de que las directivas notifican alertas de actividad y cambiar la configuración del volumen de alertas a una configuración inferior.

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f9999fdea57465120040cb04a497f1510bcb988b
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 18f7436c974ab9b976980861ae93bd4b3ea1fc2e
+ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483512"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934694"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -61,6 +61,30 @@ Puede filtrar alertas según estos criterios:
 - Etiquetas
 - Directiva
 - Activos afectados
+
+## <a name="required-roles-for-defender-for-office-365-alerts"></a>Roles necesarios para Defender para Office 365 alertas
+
+Tendrás que tener cualquiera de los siguientes roles para tener acceso a Microsoft Defender para obtener Office 365 alertas:
+
+- Para Azure Active Directory global (Azure AD):
+
+   - Administrador global
+
+   - Administrador de seguridad
+
+   - Operador de seguridad
+
+   - Lector global
+
+   - Lector de seguridad
+
+- Office 365 Grupos de & de seguridad
+
+   - Administrador de cumplimiento
+
+   - Administración de la organización 
+
+- Un [rol personalizado](custom-roles.md)
 
 ## <a name="analyze-an-alert"></a>Analizar una alerta
 
@@ -149,7 +173,7 @@ Una vez que haya terminado de analizar una alerta  y se pueda resolver, vaya al 
 
 Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365 Defender para proporcionar alertas más verdaderas y menos falsas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 

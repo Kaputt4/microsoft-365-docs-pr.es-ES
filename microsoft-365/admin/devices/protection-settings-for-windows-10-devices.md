@@ -16,6 +16,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -29,12 +30,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Obtén información sobre cómo crear o editar directivas de administración de aplicaciones y proteger los archivos de trabajo en los dispositivos Windows 10 usuarios.
-ms.openlocfilehash: 66ddde8321742d7bcaf6294e905fdd9601482c0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7525cf1194022e5712f1a661c7176c8066de84e8
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184846"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933752"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Establecer o editar la configuración de protección de aplicaciones para Windows 10 dispositivos
 

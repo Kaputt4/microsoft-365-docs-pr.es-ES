@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Obtenga información sobre la configuración disponible en Microsoft 365 para empresas para proteger Windows 10 dispositivos.
-ms.openlocfilehash: 29fb5c18f016bd2832c25ff66db258671b95bd6f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1c1e510af4280233079961651ef8fe002d9bc3d6
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184841"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933296"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Editar o crear la configuración de protección de dispositivos Windows 10 equipos
 

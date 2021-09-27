@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre el uso de complementos centralizados para implementar complementos para usuarios y grupos de la organización.
-ms.openlocfilehash: 4dd2cbc842d10770b544df014685173a8888df67
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b091065fa1e4f171469efa57e9856a9e9549cfc0
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184497"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933896"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Administrar complementos en el centro de administración
 
@@ -105,7 +106,7 @@ Como organización, es posible que quieras impedir la descarga de nuevos Office 
         
       - Windows
       - Mac
-      - Oficina
+      - Office
         
         
     - Adquisiciones a partir de **AppSource**

@@ -11,18 +11,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid:
 - MET150
 description: Proporcione a los usuarios titulares de noticias actualizados sobre su sector e información de su organización, use el servicio de noticias para habilitar una fuente de noticias personalizada para su organización.
-ms.openlocfilehash: 0292668ad37020f9ca2049d7c011465bd7e28479
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: bde55ffbd9bef2f8eac7db1a4d200aeb58f32f89
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479554"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933512"
 ---
 # <a name="manage-industry-news"></a>Administrar noticias del sector
 

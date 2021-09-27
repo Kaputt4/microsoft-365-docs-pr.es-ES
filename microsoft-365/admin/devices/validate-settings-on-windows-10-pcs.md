@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Obtén información sobre cómo comprobar que la Microsoft 365 de protección de aplicaciones empresariales ha tenido efecto en los dispositivos Windows 10 usuarios.
-ms.openlocfilehash: 67608c2c4b8396bced350685f439cb15f6378e6a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c0d5ded2eeda022984f86c33429572fa4a8671bb
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184830"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933380"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Validar la configuración de protección de dispositivos Windows 10 equipos
 
@@ -53,7 +54,7 @@ Después de [configurar directivas de dispositivos,](protection-settings-for-win
     
     ![Elegir cómo se entregan las actualizaciones en la página indica que la configuración está oculta o administrada por la organización.](../../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. Para abrir el Centro Windows Defender seguridad, vaya **a Configuración** Actualizar seguridad Windows Defender haga clic en Abrir Windows Defender Configuración de protección contra virus del Centro de \> **&amp;** \>  \>  \> **&amp;** \> **&amp;** seguridad. 
+4. Para abrir el Centro Windows Defender seguridad, vaya **a Configuración** Actualizar seguridad Windows Defender haga clic en Abrir Windows Defender Protección contra virus del Centro de seguridad Protección contra amenazas de \> **&amp;** \>  \>  \> **&amp;** \> **&amp; virus configuración**. 
     
 5. Compruebe que todas las opciones están atenuadas. 
     

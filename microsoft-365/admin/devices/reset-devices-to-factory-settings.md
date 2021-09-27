@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Obtén información sobre cómo usar Microsoft 365 para empresas para restablecer de fábrica Windows 10 dispositivos que administras, reviertándolos a su configuración original en la compra.
-ms.openlocfilehash: 29d5b8758ef7d86c7ac283460d0a1a87bffaf5f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 64f0ea1f6b39ec4ea6cc817bbe96ee78b3b96cdb
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184833"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933332"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Restablecer dispositivos Windows 10 a la configuración de fábrica
 

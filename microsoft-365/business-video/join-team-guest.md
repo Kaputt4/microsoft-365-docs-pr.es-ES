@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo unirse a un equipo como invitado en Microsoft Teams.
-ms.openlocfilehash: b551a681680f38f9f6c540cf5ea2b5f8a45fab5b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: acd5c68a7ed3e03f39037784a08cb4dce86f8163
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191827"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933968"
 ---
 # <a name="join-a-team-as-a-guest"></a>Unirse a un equipo como invitado
 

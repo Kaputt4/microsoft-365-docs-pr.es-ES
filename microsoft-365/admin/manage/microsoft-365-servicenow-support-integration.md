@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 la integración con la guía de configuración de ServiceNow
+title: Guía de configuración de compatibilidad de Microsoft 365 con ServiceNow
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -11,19 +11,20 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: 01e8e929145d8941e27aab9d02c23a422b807eb9
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: d812866ce2310b25b857b701be7d29d6d7ea5f22
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356230"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933644"
 ---
-# <a name="microsoft-365-support-integration-with-servicenow-configuration-guide"></a>Microsoft 365 la integración con la guía de configuración de ServiceNow
+# <a name="microsoft-365-support-integration-with-servicenow-configuration-guide"></a>Guía de configuración de compatibilidad de Microsoft 365 con ServiceNow
 
 [Información general](#overview) 
 
@@ -719,7 +720,7 @@ Estos son los pasos para probar la configuración de la Microsoft 365 la integra
 |2|Seleccione **soluciones recomendadas de Microsoft** pero obtenga el error "Póngase en contacto con el administrador de ServiceNow y pídales que completen los pasos de configuración de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
 |3|Seleccione **soluciones recomendadas de Microsoft** pero obtenga el error "Póngase en contacto con el administrador de ServiceNow y pídales que completen el paso de configuración final de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
 |4 |Escriba el problema en el cuadro de búsqueda y seleccione Soluciones recomendadas de **Microsoft** pero obtenga el error "Póngase en contacto con el administrador de ServiceNow y pídale que complete los pasos de configuración de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
-|5 |Escriba problema en el cuadro de búsqueda y seleccione Soluciones recomendadas de **Microsoft** pero obtenga el error "Póngase en contacto con el administrador de ServiceNow y pídale que complete el paso de configuración final de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
+|5|Escriba problema en el cuadro de búsqueda y seleccione Soluciones recomendadas de **Microsoft** pero obtenga el error "Póngase en contacto con el administrador de ServiceNow y pídale que complete el paso de configuración final de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
 |6 |Selecciona Póngase en contacto con el soporte técnico de **Microsoft,** pero recibe el error "Póngase en contacto con el administrador de ServiceNow y pídale que complete los pasos de configuración de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
 |7 |Selecciona Póngase en contacto con el soporte técnico de **Microsoft,** pero recibe el error "Póngase en contacto con el administrador de ServiceNow y pídale que complete el paso de configuración final de la aplicación".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|
 |8 |Seleccione **Póngase en contacto con** el soporte técnico de Microsoft pero obtenga el error "{EmailAddress} no es una cuenta de administrador Microsoft 365 válida. Necesita privilegios Microsoft 365 administrador para abrir una solicitud de servicio. En la aplicación, vincula la cuenta de administrador".|Compruebe el mensaje de error en la parte superior del formulario y **registros del** sistema  >  **todos con** filtro x_mioms_m365_assit|

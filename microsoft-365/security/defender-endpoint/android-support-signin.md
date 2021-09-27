@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: daedf3ebbf88c70cf5b3889a9d7560800ad16f5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 81be4d293398b264dfa72bbca0eb74b0429add71
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59223059"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934124"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Solución de problemas en Microsoft Defender para punto de conexión en Android
 
@@ -44,7 +44,7 @@ En este artículo se proporcionan soluciones para ayudar a solucionar los proble
 
 **Error de inicio de sesión:** *error inesperado, inténtelo más tarde*
 
-![Imagen de error de inicio de sesión Error inesperado.](images/f9c3bad127d636c1f150d79814f35d4c.png)
+:::image type="content" alt-text="Imagen de error de inicio de sesión Error inesperado." source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **Mensaje:**
 
@@ -62,7 +62,7 @@ Instalar la versión más reciente [y Microsoft Authenticator](https://play.goog
 
 **Error al iniciar sesión: licencia** *no válida, póngase en contacto con el administrador*
 
-![Imagen del error de inicio de sesión póngase en contacto con el administrador.](images/920e433f440fa1d3d298e6a2a43d4811.png)
+:::image type="content" alt-text="Imagen del error de inicio de sesión póngase en contacto con el administrador." source="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **Mensaje: Licencia** *no válida, póngase en contacto con el administrador*
 
@@ -140,3 +140,29 @@ Los usuarios pueden seguir estos pasos para habilitar los mismos permisos desde 
    ![Busque "Punto de conexión de Microsoft Defender" y seleccione "No optimizar".](images/select-dont-optimise.png)
 
 Vuelva a la pantalla de incorporación de Puntos de conexión de Microsoft Defender, seleccione **Permitir** y se le redirigirá a la pantalla del panel.
+
+## <a name="send-in-app-feedback"></a>Enviar comentarios desde la aplicación
+
+Si un usuario se enfrenta a un problema que aún no se ha tratado en  las secciones anteriores o no puede resolver con los pasos enumerados, el usuario puede proporcionar comentarios desde la aplicación junto con los datos **de diagnóstico.** A continuación, nuestro equipo puede investigar los registros para proporcionar la solución adecuada. Los usuarios pueden seguir estos pasos para hacer lo mismo:
+
+1.  Abre la **aplicación MDE** en el dispositivo y haz clic en el icono **de perfil** en la esquina superior izquierda.
+
+    :::image type="content" alt-text="Haga clic en el icono de perfil." source="images/select-profile-icon-1.jpg":::
+
+2.  Seleccione "Ayuda & comentarios".
+
+    :::image type="content" alt-text="Seleccione ayuda y comentarios." source="images/selecthelpandfeedback2.png":::
+
+3.  Seleccione "Enviar comentarios a Microsoft".
+
+    :::image type="content" alt-text="Seleccione Enviar comentarios a Microsoft." source="images/send-feedback-to-microsoft-3.jpg":::
+
+4.  Elija entre las opciones dadas. Para informar de un problema, seleccione "Quiero informar de un problema".
+
+    :::image type="content" alt-text="Informar de un problema." source="images/report-issue-4.jpg":::
+
+5.  Proporcione detalles del problema al que se enfrenta y compruebe "Enviar datos de diagnóstico". Se recomienda comprobar "Incluir la dirección de correo electrónico" para que el equipo pueda contactar con usted con una solución o un seguimiento.
+
+    :::image type="content" alt-text="Agregue detalles y adjunte datos de diagnóstico." source="images/finalsubmit5.png":::
+
+6.  Haga clic en "Enviar" para enviar correctamente los comentarios.

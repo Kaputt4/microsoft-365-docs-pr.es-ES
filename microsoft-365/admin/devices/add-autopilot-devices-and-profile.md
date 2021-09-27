@@ -11,6 +11,7 @@ ms.service: o365-administration
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 localization_priority: Normal
 ms.custom:
 - Core_O365Admin_Migration
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Aprende a usar Windows AutoPilot para configurar nuevos dispositivos Windows 10 para tu empresa para que estén listos para el uso de los empleados.
-ms.openlocfilehash: 1a2350e836a84870a9eb304196d6c72831f52d60
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ba80deb2f1af5f0edc6969674e64df5259cbd44
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184913"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933788"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Usar la guía paso a paso para agregar perfiles y dispositivos de AutoPilot
 

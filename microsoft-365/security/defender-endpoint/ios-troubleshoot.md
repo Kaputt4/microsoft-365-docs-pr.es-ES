@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c7ee6f1debaf697c49e292068ba88c436714addf
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 840ea513980d3167d34437c048eb8d8164a2d57b
+ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491128"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934670"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -58,7 +58,7 @@ Aunque está habilitado de forma predeterminada, puede haber algunos casos que r
 > [!NOTE]
 > La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar Web Protection, abra la aplicación Microsoft Defender para Endpoint en el dispositivo y Habilite La protección web.
 
-## <a name="co-existence-with-multiple-vpn-profiles"></a>Coexistencia con varios perfiles vpn
+## <a name="coexistence-with-multiple-vpn-profiles"></a>Coexistencia con varios perfiles vpn
 
 Apple iOS no admite varias VPN de todo **el** dispositivo para estar activas simultáneamente. Aunque pueden existir varios perfiles de VPN en el dispositivo, solo una VPN puede estar activa a la vez.
 
@@ -66,7 +66,7 @@ Microsoft Defender para endpoint VPN puede coexistir con otras VPN configuradas 
 
 ## <a name="battery-consumption"></a>Consumo de batería
 
-En la Configuración, iOS solo muestra el uso de batería de aplicaciones que son visibles para el usuario durante un período de tiempo específico. El uso de la batería por parte de las aplicaciones que se muestran en la pantalla es solo durante ese tiempo y lo calcula iOS en función de una gran variedad de factores, incluido el uso de la CPU y la red. Microsoft Defender para endpoint usa una VPN local/loop-back en segundo plano para comprobar el tráfico web en busca de sitios web o conexiones malintencionadas. Los paquetes de red de cualquier aplicación pasan por esta comprobación y eso hace que el uso de la batería de Microsoft Defender para Endpoint se calcule incorrectamente. El consumo real de batería de Microsoft Defender para Endpoint es mucho menor que lo que se muestra en la página Battery Configuración en el dispositivo.
+En la Configuración, iOS solo muestra el uso de batería de aplicaciones que son visibles para el usuario durante un período de tiempo específico. El uso de la batería por parte de las aplicaciones mostradas en la pantalla solo es durante ese tiempo y lo calcula iOS en función de una gran variedad de factores, incluido el uso de la CPU y la red. Microsoft Defender para endpoint usa una VPN local/loop-back en segundo plano para comprobar el tráfico web en busca de sitios web o conexiones malintencionadas. Los paquetes de red de cualquier aplicación pasan por esta comprobación y eso hace que el uso de la batería de Microsoft Defender para Endpoint se calcule incorrectamente. El consumo real de batería de Microsoft Defender para Endpoint es mucho menor que lo que se muestra en la página Battery Configuración en el dispositivo.
 
 En promedio, el uso de batería por día por parte de Microsoft Defender para endpoint que se ejecuta en segundo plano es aproximadamente el **8,81 %** de la batería total consumida en ese día. Apple informa de esta métrica en función del uso real de Microsoft Defender para Endpoint en dispositivos de usuario final y debido a los motivos mencionados anteriormente también se pueden tener en cuenta en otras aplicaciones que tienen actividad de red.
 
@@ -82,7 +82,7 @@ Además, es fundamental que Microsoft Defender para Endpoint esté al día con n
 
 ## <a name="report-unsafe-site"></a>Informe de sitio no seguro
 
-Los sitios web de suplantación de identidad suplantan sitios web de confianza con el fin de obtener su información personal o financiera. Visite la [página Proporcionar comentarios sobre la protección de](https://www.microsoft.com/wdsi/support/report-unsafe-site) red para informar de un sitio web que podría ser un sitio de suplantación de identidad.
+Los sitios web de suplantación de identidad suplantan sitios web de confianza para obtener su información personal o financiera. Visite la [página Proporcionar comentarios sobre la protección de](https://www.microsoft.com/wdsi/support/report-unsafe-site) red para informar de un sitio web que podría ser un sitio de suplantación de identidad.
 
 ## <a name="malicious-site-detected"></a>Sitio malintencionado detectado
 
@@ -111,4 +111,17 @@ Hay un problema en dispositivos supervisados con el filtro de contenido de Defen
 ## <a name="issues-during-app-updates-from-the-app-store"></a>Problemas durante las actualizaciones de aplicaciones de la tienda de aplicaciones
 
 Si observas problemas cuando la aplicación se actualiza a través de la tienda de aplicaciones (ya sea actualizaciones automáticas o actualizaciones manuales), es posible que deba reiniciar el dispositivo. Si eso no resuelve el problema, puedes deshabilitar la VPN de Defender y realizar la actualización de la aplicación. También puedes proporcionar comentarios desde la aplicación para informar de este problema.
+
+## <a name="send-in-app-feedback"></a>Enviar comentarios desde la aplicación
+
+Si un usuario se enfrenta a un problema que aún no se ha tratado en las secciones anteriores o no puede resolver con los pasos enumerados, el usuario puede proporcionar comentarios desde la aplicación junto con los datos de diagnóstico. A continuación, nuestro equipo investigará los registros para proporcionar la solución adecuada. Los usuarios pueden usar los siguientes pasos para enviar la devolución:
+
+  - Abre la aplicación MSDefender en el dispositivo iOS/iPadOS.
+  - Pulsa en Menú (icono de perfil) en la esquina superior izquierda.
+  - Pulsa **Enviar comentarios**.
+  - Elija entre las opciones dadas. Para informar de un problema, seleccione **No me gusta nada**.
+  - Proporcione detalles del problema al que se enfrenta y compruebe **Enviar datos de diagnóstico**. Le recomendamos que incluya su dirección de correo electrónico para que el equipo pueda ponerse en contacto con usted para obtener una solución o un seguimiento.
+  - Pulsa **Enviar** para enviar correctamente los comentarios.
+
+
 
