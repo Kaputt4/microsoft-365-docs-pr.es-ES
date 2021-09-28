@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador Microsoft 365 es una herramienta que se puede entrenar para reconocer varios tipos de contenido para la aplicación de directivas o de la formación, ya que le proporciona ejemplos positivos y negativos que buscar.
-ms.openlocfilehash: ea4be5c5e429e3305373229020bfb5444912b365
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 086ca0575bc701deccbb7c49dbc7c71bdd838d5a
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166059"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942018"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -57,7 +57,7 @@ Tanto los clasificadores integrados como los clasificadores entrenables están d
 Las etiquetas de confidencialidad pueden usar clasificadores como condiciones, vea [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
-> Los clasificadores solo funcionan con elementos que no están cifrados y están en inglés.
+> Los clasificadores solo funcionan con elementos que no están cifrados.
 
 ## <a name="types-of-classifiers"></a>Tipos de clasificadores
 
@@ -75,7 +75,7 @@ Microsoft 365 viene con cinco clasificadores previamente formados:
 - **Código fuente:** detecta elementos que contienen un conjunto de instrucciones y instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub
     - ActionScript
     - C
-    - C #
+    - C#
     - C++
     - Clojure
     - CoffeeScript
@@ -115,6 +115,9 @@ Aparecen en la vista **clasificadores Centro de cumplimiento de Microsoft 365** 
 > [!IMPORTANT]
 > Tenga en cuenta que el lenguaje ofensivo, el acoso, la profanación, la discriminación y los clasificadores de amenazas solo funcionan con texto que admite búsquedas y no son una lista exhaustiva o completa de términos o idiomas en estas áreas. Además, los estándares lingüísticos y culturales cambian continuamente y, a la luz de estas realidades, Microsoft se reserva el derecho de actualizar estos clasificadores a su discreción. Aunque los clasificadores pueden ayudar a su organización a detectar estas áreas, los clasificadores no están diseñados para proporcionar el único medio de su organización para detectar o abordar el uso de dicho idioma. Su organización, no Microsoft ni sus subsidiarias, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, el examen, el bloqueo, la eliminación y la retención de cualquier contenido identificado por un clasificador previamente formado, incluido el cumplimiento de la privacidad local y otras leyes aplicables. Microsoft anima a consultar con abogados antes de la implementación y el uso.
 
+Los clasificadores previamente formados pueden examinar el contenido en estos idiomas:
+
+• Chino (simplificado) • Inglés • Francés • Alemán • Italiano • Japonés • Portugués • Español
 
 ### <a name="custom-classifiers"></a>Clasificadores personalizados
 
@@ -139,7 +142,7 @@ Puede ayudar a mejorar la precisión de todos los clasificadores personalizados 
 
 ![flujo de trabajo de reciclaje de clasificadores.](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

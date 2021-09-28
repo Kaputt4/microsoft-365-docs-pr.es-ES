@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: bb181ab213cc02e5289681b8c3965a96bd8b8dcb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 646007176a35506f0c30d6b7092d70f52f762e57
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191104"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941984"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Requisitos previos para las cuentas de invitado
 
@@ -30,6 +30,8 @@ Escritorio administrado de Microsoft requiere la siguiente configuración en la 
     -   Si selecciona Permitir invitaciones solo a los dominios **especificados (más**  restrictivos), asegúrese de que Microsoft.com en los dominios de destino.
 
 Si establece restricciones que interactúan con estas opciones de configuración, asegúrese de excluir las Azure Active Directory **modern Workplace Service Accounts**. Por ejemplo, si tiene una directiva de acceso condicional que impide que las cuentas de invitado tengan acceso al portal de Intune, excluya el grupo **Cuentas** de servicio de lugares de trabajo modernos de esta directiva.
+
+Para obtener más información, vea [Habilitar la colaboración externa B2B y administrar quién puede invitar invitados.](/azure/active-directory/external-identities/delegate-invitations#to-configure-external-collaboration-settings)
 
 ## <a name="unlicensed-intune-admin"></a>Administrador de Intune sin licencia
 

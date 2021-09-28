@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8ea5e2c5efef1becf69f0d5f7e46b57aa89ef94a
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 7057de56de516843fa91e87a50d56e03a2d88e50
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460285"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941950"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>Implementar Microsoft Defender para endpoint en dispositivos iOS no inscritos
 
@@ -44,7 +44,7 @@ Microsoft Defender para endpoint se puede configurar para enviar señales de ame
 ### <a name="pre-requisites"></a>Requisitos previos
 
 1. **Compruebe que el conector está habilitado.** <br> En la [consola de seguridad unificada,](https://security.microsoft.com)vaya **a Configuración**  >  **Endpoints**  >  **Advanced Features** y asegúrese de que Microsoft Intune **conexión** está habilitada.
-2. **Veerify que el conector está habilitado en el portal de Intune**. <br> En [el Centro de administración de Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Endpoint **Security** Microsoft Defender para Endpoint y asegúrese de que el estado de conexión está  >   habilitado.
+2. **Compruebe que el conector está habilitado en el portal de Intune**. <br> En [el Centro de administración de Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Endpoint **Security** Microsoft Defender para Endpoint y asegúrese de que el estado de conexión está  >   habilitado.
 
 Siga estos pasos para configurar directivas de protección de aplicaciones con Microsoft Defender para endpoint:
 

@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1dc5a22fe23a64669c7ab89ecd2141aff1659166
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9fc149a8c76180ca2baf0bd38bef149f00611899
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192264"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942354"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -114,6 +114,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
      - **Sección Experiencia de informes de usuarios**
        - **Antes de informar:**  en  los cuadros de cuerpo Título y Mensaje, escriba el texto descriptivo que los usuarios ven antes de informar de un mensaje mediante el complemento Report Message o el complemento Report Phishing. Puede usar la variable %type% para incluir el tipo de envío (correo no deseado, no deseado, phish, etc.).
        - **Después de la** pestaña  Informes: en los cuadros Título y Mensaje de confirmación, escriba el texto descriptivo que los usuarios ven después de informar de un mensaje mediante el complemento Report Message o el complemento Report Phishing.  Puede usar la variable %type% para incluir el tipo de envío.
+       -  **Solo se muestra cuando el usuario informa de suplantación** de identidad : active esta opción si desea mostrar el mensaje solo cuando se notifica un correo electrónico como suplantación de identidad. Si no es así, los mensajes marcados se mostrarán para cualquier tipo de informe.
 
        Como se muestra en la página, si selecciona una opción que envía los mensajes notificados a Microsoft, también se agrega el siguiente texto a la notificación:
 
@@ -121,6 +122,8 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
    - **Botón Outlook mensaje de informe de Microsoft** \> **Desactivado** ![ Desactivar. : seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento Mensaje de informe, el complemento Report Phishing o los informes integrados en Outlook en la Web y, a continuación, configure las siguientes ](../../media/scc-toggle-off.png) opciones:
      - Seleccione **Usar este buzón personalizado para recibir envíos notificados por el usuario**. En el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de correo Exchange Online que pueda recibir correo electrónico.
+
+   - **Botón Outlook mensaje de informe de Microsoft:** habilite esta característica si desea permitir que los usuarios finales informen mensajes desde la cuarentena.
 
    Cuando haya terminado, haga clic en **Confirmar**. Para borrar estos valores, haga clic en **Restaurar**
 

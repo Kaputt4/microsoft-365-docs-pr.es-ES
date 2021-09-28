@@ -20,12 +20,12 @@ description: Los administradores pueden aprender a buscar y usar defender para O
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80ba6c1f7c04a48b5472a12db75d602bd503465e
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 2613b8547d27ce39a14bccfb5e3bfe63f66de36f
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483311"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942094"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver Defender para obtener Office 365 informes en el portal Microsoft 365 Defender web
 
@@ -115,22 +115,22 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 El **informe de estado** de protección contra amenazas es una única vista que reúne información sobre contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) y Microsoft Defender para Office 365. Para obtener más información, vea [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
 
-## <a name="url-threat-protection-report"></a>Informe de protección contra amenazas de url
+## <a name="url-protection-report"></a>Informe de protección de direcciones URL
 
-El **informe de protección contra** amenazas url proporciona vistas de resumen y tendencias para las amenazas detectadas y las acciones realizadas en los clics de dirección URL como parte de Caja fuerte [vínculos](safe-links.md). Este informe no tendrá los datos de clic de los usuarios en los que la directiva de vínculos de Caja fuerte tiene seleccionada la opción No realizar seguimiento de los **clics del** usuario.
+El **informe de protección de direcciones URL** proporciona vistas de resumen y tendencias para las amenazas detectadas y las acciones realizadas en los clics de dirección URL como parte de Caja fuerte [vínculos](safe-links.md). Este informe no tendrá los datos de clic de los usuarios en los que la directiva de vínculos de Caja fuerte tiene seleccionada la opción No realizar seguimiento de los **clics del** usuario.
 
 Para ver el informe, abra el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración.** En la página **Informes de colaboración &** correo electrónico, busque la página protección de direcciones **URL** y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/URLProtectionActionReport> .
 
 ![Widget de informe de protección de direcciones URL en la página & informes de colaboración de correo electrónico.](../../media/url-protection-report-widget.png)
 
-Las vistas disponibles en la página **informe de protección contra** amenazas de url se describen en las secciones siguientes.
+Las vistas disponibles en la página de informe **de protección** de direcciones URL se describen en las secciones siguientes.
 
 > [!NOTE]
 > Se trata de un *informe de tendencias de protección,* lo que significa que los datos representan tendencias en un conjunto de datos más grande. Como resultado, los datos de los gráficos no están disponibles en tiempo real aquí, pero los datos de la tabla de detalles lo son, por lo que puede ver una ligera discrepancia entre los dos. Los gráficos se actualizan una vez cada cuatro horas y contienen datos de los últimos 90 días.
 
 ### <a name="view-data-by-url-click-protection-action"></a>Ver datos por acción de protección de clics de dirección URL
 
-![Url click protection action view in the URL threat protection report.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+![Url click protection action view in the URL protection report.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 La **vista Ver datos por acción** de protección de clics de dirección URL muestra el número de clics de dirección URL de los usuarios de la organización y los resultados del clic:
 
@@ -157,14 +157,14 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en tiempo real de todos los clics que se han producido en la organización durante los últimos 7 días:
 
 - **Hora de hacer clic**
-- **Usuario**
+- **User**
 - **URL**
 - **Action**
 - **Aplicación**
 
 ### <a name="view-data-by-url-click-by-application"></a>Ver datos por dirección URL hacer clic por aplicación
 
-![Url click by application view in the URL threat protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
+![Url click by application view in the URL protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
 La **vista Ver datos por dirección URL clic** por aplicación muestra el número de clics de dirección URL de las aplicaciones que admiten Caja fuerte vínculos:
 
@@ -189,7 +189,7 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en tiempo real de todos los clics que se han producido en la organización durante los últimos 7 días:
 
 - **Hora de hacer clic**
-- **Usuario**
+- **User**
 - **URL**
 - **Action**
 - **Aplicación**
@@ -236,7 +236,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

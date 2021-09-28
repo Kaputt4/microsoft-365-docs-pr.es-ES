@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administradores pueden aprender a recuperarse de un ataque de ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee90b01580115bff7050b0f101e8c9e049841bbb
-ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
+ms.openlocfilehash: 755086b039a95770ef1f615733f46c3c782214fc
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447359"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941944"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
@@ -31,7 +31,8 @@ ms.locfileid: "59447359"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Incluso si toma todas las precauciones para proteger su organización, todavía puede ser víctima de un [ataque de ransomware.](/windows/security/threat-protection/intelligence/ransomware-malware) El ransomware es una gran empresa y los ataques son muy sofisticados.
+Incluso si toma todas las precauciones para proteger su organización, todavía puede ser víctima de un [ataque de ransomware.](/windows/security/threat-protection/intelligence/ransomware-malware) Ransomware es una gran empresa y en el panorama de amenazas actual Microsoft 365 es un objetivo cada vez mayor [para ataques sofisticados.](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf)
+
 
 Los pasos de este artículo le darán la mejor oportunidad de recuperar datos y detener la propagación interna de la infección. Antes de empezar, tenga en cuenta los siguientes elementos:
 
@@ -43,9 +44,13 @@ Los pasos de este artículo le darán la mejor oportunidad de recuperar datos y 
 
 - Es importante que respondas rápidamente al ataque y sus consecuencias. Cuanto más tiempo espere, menos probable es que pueda recuperar los datos afectados.
 
-## <a name="step-1-verify-your-backups"></a>Paso 1: Comprobar las copias de seguridad
+## <a name="step-1-verify-your-third-party-backups"></a>Paso 1: Comprobar las copias de seguridad de terceros
 
-Si tiene copias de seguridad sin conexión, probablemente pueda restaurar los datos cifrados después de haber quitado la carga de ransomware (malware) del entorno. 
+El conjunto de herramientas de cumplimiento de Microsoft 365 está [](/microsoft-365/compliance/) diseñado para cumplir con los estándares [](https://www.microsoft.com/servicesagreement) legales y normativos de su organización, por lo que, como práctica recomendada, se recomienda realizar una copia de seguridad periódica del contenido y los datos de Microsoft 365 con servicios y aplicaciones de terceros.
+
+Para asegurarse de que tiene la capacidad de restaurar los datos, es importante probar periódicamente las copias de seguridad y validar que se pueden restaurar en caso de ataque. En el caso de un ataque real, estas  restauraciones no deben completarse hasta después  de haber quitado la carga de ransomware (malware) del entorno y después de comprobar que no hay acceso no autorizado en los entornos de Microsoft 365.
+
+Para asegurarse de que las copias de seguridad no se vieron afectadas por el ransomware, el servicio de terceros debe estar cubierto por aire desde sus entornos.
 
 Si no tiene copias de seguridad o si las copias de seguridad también se vieron afectadas por el ransomware, puede omitir este paso.
 
@@ -93,7 +98,7 @@ Restaurar archivos en OneDrive para la Empresa permite restaurar toda la OneDriv
 
 ## <a name="step-6-recover-deleted-email"></a>Paso 6: Recuperar correo electrónico eliminado
 
-En el caso excepcional de que el ransomware eliminó todo el correo electrónico, probablemente puede recuperar los elementos eliminados. Para obtener más información, vea:
+En el caso excepcional de que el ransomware eliminó todo el correo electrónico, probablemente puede recuperar los elementos eliminados. Para más información vea:
 
 - [Recuperar mensajes eliminados en el buzón de un usuario](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -141,50 +146,50 @@ Si su país no aparece en la lista, pregúntele a las agencias de seguridad loca
 
 Puede notificar mensajes de suplantación de identidad que contienen ransomware mediante uno de varios métodos. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="additional-ransomware-resources"></a>Recursos ransomware adicionales
+## <a name="additional-ransomware-resources"></a>Recursos adicionales de ransomware
 
 Información clave de Microsoft:
 
-- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
+- [La creciente amenaza de ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), entrada de blog de Microsoft On the Issues del 20 de julio de 2021
 - [Ransomware operado por humanos](/security/compass/human-operated-ransomware)
-- [Proteger rápidamente contra ransomware y extorsión](/security/compass/protect-against-ransomware)
-- [The latest Inteligencia de seguridad de Microsoft Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
-- **Ransomware: un informe de amenazas generalizado** y continuo en el nodo **Análisis** de amenazas del portal de Microsoft 365 Defender (consulte estos requisitos [de licencia)](/microsoft-365/security/defender/prerequisites#licensing-requirements)
+- [Protéjase contra ransomware y extorsión de manera rápida](/security/compass/protect-against-ransomware)
+- [El informe de inteligencia de seguridad de Microsoft más reciente](https://www.microsoft.com/securityinsights/) (vea las páginas 22-24)
+- **Ransomware: Un informe de amenazas generalizado y continuo** en el nodo del **Análisis de amenazas** del portal de Microsoft 365 Defender (consulte estos [requisitos de licencia](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 
-Microsoft 365:
+Microsoft 365:
 
-- [Implementar la protección contra ransomware para su Microsoft 365 inquilino](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [Implementar la protección contra ransomware para el inquilino de Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)
 - [Protección de malware y ransomware](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [Proteger el equipo Windows 10 de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
-- [Control de ransomware en SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+- [Proteger su equipo con Windows 10 de los ataques de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Control de ransomware en SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 
-Microsoft 365 Defender:
+Microsoft 365 Defender:
 
-- [Buscar ransomware con búsqueda avanzada](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
+- [Buscar ransomware con la búsqueda avanzada de amenazas](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
-Microsoft Azure:
+Microsoft Azure:
 
-- [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
-- [Plan de copia de seguridad y restauración para proteger contra ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
+- [Defensas de Azure para los ataques de ransomware](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Plan de restauración y copia de seguridad para la protección contra ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Ayudar a proteger contra ransomware con Microsoft Azure copia de seguridad](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
-- [Recuperación de un riesgo de identidad sistémico](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Detección avanzada de ataques multietaje en Azure Sentinel](/azure/sentinel/fusion#ransomware)
-- [Detección de fusión para ransomware en Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Recuperación de una identidad en peligro](/azure/security/fundamentals/recover-from-identity-compromise)
+- [Detección de ataques de varias fases en Azure Sentinel](/azure/sentinel/fusion#ransomware)
+- [Detección de fusión para ransomware en Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Cloud App Security:
 
--  [Crear directivas de detección de anomalías en Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+-  [Crear directivas de detección de anomalías en Cloud App Security](/cloud-app-security/anomaly-detection-policy)
 
-Entradas del blog del equipo de Seguridad de Microsoft:
+Entradas de blog del equipo de Seguridad de Microsoft:
 
-- [3 pasos para evitar y recuperarse de ransomware (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [Volverse resistente al comprender los riesgos de ciberseguridad: Parte 4: navegar por las amenazas actuales (mayo de 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+- [3 pasos para evitar y recuperarse del ransomware (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Camino a la resistencia al comprender los riesgos de ciberseguridad: Parte 4 — Navegación por las amenazas actuales (mayo de 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
-  Consulta la **sección Ransomware.**
+  Consulte la sección **Ransomware**.
 
-- [Ataques de ransomware operados por humanos: un desastre evitable (marzo de 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+- [Ataques de ransomware operados por humanos: Un desastre evitable (marzo de 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-  Incluye análisis de cadena de ataques de ataques reales.
+  Incluye análisis de cadenas de ataques, de ataques reales.
 
-- [Respuesta ransomware: ¿pagar o no pagar? (Diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
-- [Norsk Hydro responde al ataque ransomware con transparencia (diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [Respuesta frente a ransomware: ¿pagar o no pagar? (diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro responde ante ataques de ransomware con transparencia (diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
