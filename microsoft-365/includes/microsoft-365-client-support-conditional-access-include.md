@@ -25,7 +25,7 @@
 |PROJECT|N/D|N/D|N/D|Planeado|N/D|
 |PUBLISHER|N/D|N/D|N/D|✔|N/D|
 |ADMINISTRADOR DE SHAREPOINT|N/D|N/D|N/D|Planeado|N/D|
-|SHAREPOINT|Planeado|Planeado|N/D|N/D|N/D|
+|SHAREPOINT|Planeado|N/D|N/D|N/D|N/D|
 |NOTAS PEGAJOSAS|N/D|N/D|N/D|N/D|Planeado|
 |STREAM|Planeado|Planeado|N/D|N/D|N/D|
 |SWAY|N/D|N/D|N/D|N/D|Planeado|

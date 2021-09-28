@@ -20,7 +20,7 @@
 |POWERPOINT|✔|✔|✔|✔|✔|
 |PROJECT|N/D|N/D|N/D|✔|N/D|
 |PUBLISHER|N/D|N/D|N/D|✔|N/D|
-|SHAREPOINT|✔|✔|N/D|N/D|N/D|
+|SHAREPOINT|✔|N/D|N/D|N/D|N/D|
 |SKYPE EMPRESARIAL|Planeado|Planeado|N/D|N/D|N/D|
 |NOTAS PEGAJOSAS|N/D|N/D|N/D|N/D|✔|
 |STREAM|Planeado|Planeado|N/D|N/D|N/D|
