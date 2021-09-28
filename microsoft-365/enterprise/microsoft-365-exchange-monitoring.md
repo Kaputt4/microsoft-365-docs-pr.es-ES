@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Usar supervisión de Exchange Online para obtener información sobre avisos o incidentes de correo electrónico en Microsoft 365.
-ms.openlocfilehash: 8831e63e8c522513828a9dc3af83c5baf586f5f0
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 0f3b93d13d503ef09edc98f3f9c90f9a1f2a0a32
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480993"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933860"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Supervisión de Exchange Online para Microsoft 365
 
@@ -31,21 +31,21 @@ Puede usar la supervisión de Exchange Online en el <a href="https://go.microsof
 - **Infraestructura de terceros**: se detecta un problema en una infraestructura de terceros en la que la organización tiene una dependencia y necesita una acción de su organización para su resolución. Por ejemplo, las transacciones de autenticación de usuario se limitan con un proveedor de servicio de token de seguridad (STS) de terceros que impide que los usuarios se conecten a Exchange Online.
 - **Infraestructura del cliente**: se detecta un problema en la infraestructura de la organización y requiere una acción de su organización para su resolución. Por ejemplo, los usuarios no pueden acceder a Exchange Online porque no pueden obtener un token de autenticación de un proveedor de STS hospedado por la organización debido a un certificado caducado.
 
-Este es un ejemplo de la página **Estado del servicio** en el Centro de administración de Microsoft 365, disponible en **Estado** > [**Estado del servicio**](https://go.microsoft.com/fwlink/p/?linkid=842900) para escenarios de la organización.
+Este es un ejemplo de la página **Estado del servicio** del Centro de administración de Microsoft 365, disponible en **Estado > Estado del servicio** para organizaciones y escenarios de [cuentas prioritarias](../admin/setup/priority-accounts.md).
 
 ![La página de Estado del servicio en el Centro de administración de Microsoft 365.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
-**Los problemas de la organización** se identificarán y usarán en la supervisión a nivel organizativo.
+**Los problemas de la organización** se identificarán y usarán mediante la supervisión de nivel organizativo y la supervisión de cuentas prioritarias.
 
-El valor de la columna **Estado** en **Problemas de la organización** indica si la infraestructura de la organización o el software de terceros afectan a la experiencia de mantenimiento del servicio de los usuarios de la organización con Exchange Online. Los avisos o incidencias requieren *sus* acciones para resolverse.
+El valor de la columna **Estado** en **Problemas de la organización** indica si la infraestructura de la organización o el software de terceros afectan a la experiencia del estado del servicio de los usuarios de la organización o de las cuentas prioritarias en Exchange Online. Los avisos o incidencias requieren *sus* acciones para resolverse.
 
 El valor de la columna **Estado** en **Estado del servicio Microsoft** indica que el servicio está en buen estado o tiene avisos o incidentes basados en los servicios en la nube que mantiene Microsoft.
 
-Este es un ejemplo de la página de supervisión de Exchange Online en el Centro de administración de Microsoft 365 que muestra el estado de los escenarios de nivel de organización, disponible en **Estado** > [**Estado del servicio**](https://go.microsoft.com/fwlink/p/?linkid=842900) > **Exchange Online**.
+Este es un ejemplo de la página de supervisión de Exchange Online del Centro de administración de Microsoft 365 que muestra el estado de los escenarios de nivel de organización y de las cuentas prioritarias, disponible en **Estado > Estado del servicio > Exchange Online**.
 
 ![La página de supervisión de Exchange Online en el Centro de administración de Microsoft 365.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
-Con la página de supervisión de **Exchange Online**, puede ver si el servicio de Exchange Online está en buen estado o no y si hay incidentes o avisos asociados. Con la supervisión de Exchange Online, puede observar el estado del servicio para escenarios de correo electrónico específicos y ver señales casi en tiempo real para determinar el impacto por escenario a nivel de organización.
+Con la página de supervisión de **Exchange Online**, puede ver si el servicio de Exchange Online está en buen estado o no y si hay incidentes o avisos asociados. Con la supervisión de Exchange Online, puede observar el estado del servicio para escenarios de correo electrónico específicos y ver señales casi en tiempo real para determinar el impacto por escenario a nivel de organización. También puede ver el estado de los escenarios de cuentas prioritarias.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,7 +77,7 @@ Con la supervisión de Exchange Online se admiten los siguientes escenarios:
    >[!Note]
    > El recuento de usuarios activos se mide por una única actividad, por ejemplo, cuando un usuario lee un correo electrónico. Solo se tienen en cuenta los últimos 30 minutos de actividad.
 
-- **Conectividad de aplicaciones**: la conectividad estimada se basa en el porcentaje de conexiones sintéticas correctas entre los dispositivos de la organización y Exchange Online, y puede incluir problemas fuera del control de Microsoft. 
+- **Conectividad de aplicaciones**: la conectividad estimada se basa en el porcentaje de conexiones sintéticas correctas entre los dispositivos de la organización y Exchange Online, y puede incluir problemas fuera del control de Microsoft. Para obtener más información, consulte [Microsoft 365 Connectivity Optics](microsoft-365-connectivity-optics.md).
 
 - **Autenticación básica y autenticación moderna**: número de usuarios validados correctamente en el servicio de Exchange Online.
 
@@ -86,6 +86,44 @@ Con la supervisión de Exchange Online se admiten los siguientes escenarios:
   ![Un ejemplo de supervisión del estado de Exchange para la entrega de correo.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
 Para todos estos escenarios, los números clave son para los últimos 30 minutos en el panel principal. Las vistas detalladas de cada uno de estos escenarios muestran la tendencia en tiempo casi real durante siete días con un agregado de 30 minutos en comparación con la semana anterior.
+
+## <a name="priority-accounts-monitoring-scenarios"></a>Escenarios de supervisión de cuentas prioritarias
+
+Con la supervisión de las cuentas prioritarias de Exchange Online, puede ver el estado de los siguientes escenarios después de configurar [cuentas prioritarias](/microsoft-365/admin/setup/priority-accounts):
+
+- Licencias de Exchange
+
+- Almacenamiento de buzones
+
+- Límite de mensajes
+
+- Subcarpetas por carpeta
+
+- Jerarquía de carpetas
+
+- Elementos recuperables
+
+El escenario de la licencia de Exchange comprueba si la cuenta de prioridad no puede iniciar sesión porque haya problemas de licencia no válida, que puede solucionar el administrador del espacio empresarial.
+
+Los otros cinco escenarios anteriores comprueban si el buzón de la cuenta prioritaria está cerca de llegar al límite, o si ya lo ha alcanzado, según los límites descritos en [límites de Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
+
+En estos escenarios, puede ver avisos e incidentes, activos y resueltos, que afectan a sus cuentas prioritarias. La información identificable de las cuentas prioritarias se mostrará en los detalles de aviso o de incidente junto con las recomendaciones. Este es un ejemplo de la página **Estado > Estado del servicio > Exchange Online**.
+
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-priority-accounts-example.png" alt-text="Ejemplo de avisos e incidentes, activos y resueltos, que afectan a sus cuentas prioritarias":::
+
+En el panel de cuentas afectadas, la columna **Estado** tiene estos valores:
+
+- Corregido: el problema que causaba el aviso o el incidente se ha solucionado para la cuenta prioritaria. Ya no hay ningún problema. 
+
+- Activo: el problema que causa el aviso o el incidente continúa para la cuentaprioritaria. Sigue estando el problema. 
+
+- Retraso: el problema que causa el aviso o el incidente no se ha resuelto para la cuenta de prioridad en el plazo de 96 horas, por lo que se ha suspendido. Sigue estando el problema. 
+
+Aquí le mostramos un ejemplo.
+
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-status-column-example.png" alt-text="Ejemplo de la columna de estado del panel de cuentas afectadas":::
+
+Un aviso o un incidente se resolverá después de que ninguna cuenta continúe en el estado **Activo**. 
 
 ## <a name="send-us-feedback"></a>Enviarnos comentarios
 
@@ -103,13 +141,13 @@ Hay dos formas de proporcionar comentarios:
 
 En primer lugar, asegúrese de que ha habilitado el nuevo centro de administración en la página **Inicio** del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
-Después, asegúrese de que cumple los siguientes requisitos: 
+Después, asegúrese de que cumple los siguientes requisitos:
 
-- Su organización necesita tener al menos 5000 licencias de uno o varios de estos productos: Office 365 E3, Microsoft 365 E3, Office 365 E5 o Microsoft 365 E5. 
+- Su organización necesita tener al menos 5000 licencias de uno o varios de estos productos: Office 365 E3, Microsoft 365 E3, Office 365 E5 o Microsoft 365 E5.
 
-- Su organización necesita tener al menos 50 usuarios activos de Exchange Online mensuales.
+- Su organización necesita tener al menos 50 usuarios activos mensuales para uno o más servicios principales de Microsoft 365, entre los que se incluyen Microsoft Teams, OneDrive para la Empresa, SharePoint Online, Exchange Online y aplicaciones de Office.
 
-Si el número de licencias de la organización es inferior a 5000 usuarios y los usuarios activos mensuales son menos de 50, no se habilitará la supervisión de Exchange Online hasta que se cumplan estos requisitos.
+Si el número de licencias de la organización es inferior a 5000 usuarios y los usuarios activos mensuales son menos de 50 para los servicios principales, no se habilitará la supervisión de Exchange Online hasta que se cumplan estos requisitos.
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. El número de usuarios activos en el panel de control de cada cliente parece ser bajo. Tenemos muchas licencias activas asignadas a los usuarios. ¿Qué significa esto?
 
@@ -146,4 +184,11 @@ La supervisión se centra en los metadatos del servicio y no se supervisa el con
 ## <a name="see-also"></a>Vea también
 
 - [Cómo comprobar el estado del servicio de Microsoft 365](view-service-health.md) 
+
 - [Límites de Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits)
+
+- [Administrar y supervisar cuentas prioritarias](/microsoft-365/admin/setup/priority-accounts)
+
+- [Uso de Cuentas prioritarias en Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
+
+- [Alertas de servicio para el uso de buzones en la supervisión de Exchange Online](microsoft-365-mailbox-utilization-service-alerts.md)
