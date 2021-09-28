@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a la visibilidad y la información.
-ms.openlocfilehash: ac99e9112dc7e0278243121a8530326c88f333dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82c099c2955545f6546f978ded9e2d07a74b48cf
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190014"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941962"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>Introducción a la visibilidad y la información
 
@@ -52,7 +52,7 @@ El panel contiene un resumen de los componentes del ecosistema de aplicaciones M
 
 ## <a name="view-app-insights"></a>Ver información de la aplicación
 
-Uno de los principales puntos de valor para la gobernanza de aplicaciones es la capacidad de ver rápidamente las alertas y la información de la aplicación. Para ver información detallada de las aplicaciones:
+Uno de los principales puntos de valor para el gobierno de las aplicaciones es la posibilidad de ver rápidamente las alertas y la información de las aplicaciones. Para ver la información de sus aplicaciones:
 
 1. En la página del portal de gobernanza de aplicaciones, seleccione **Aplicaciones**.
 1. Use la lista desplegable **Categorías** para seleccionar entre las siguientes opciones:
@@ -62,12 +62,14 @@ Uno de los principales puntos de valor para la gobernanza de aplicaciones es la 
     - Editor no verificado
     - Solo aplicación
     - Aplicaciones nuevas
-1. Seleccione el nombre de una aplicación para ver los detalles. Puede seleccionar varias aplicaciones para guardarlas como una consulta guardada colocando una marca de verificación a la izquierda del nombre de la aplicación. Al seleccionar un nombre de aplicación, se abre un panel de detalles a la derecha, como se muestra en el siguiente gráfico.
+1. Seleccione el nombre de una aplicación para ver los detalles. Al seleccionar un nombre de aplicación, se abre un panel de detalles a la derecha, como se muestra en el siguiente gráfico.
 
 :::image type="content" source="../media/manage-app-protection-governance/app-governance-app-insight.png" alt-text="Imagen que muestra el panel de detalles de una aplicación seleccionada.":::
 
 > [!NOTE]
 > Las aplicaciones que se muestran dependerán de las aplicaciones presentes en el inquilino.
+
+Guardar la consulta permite guardar la lista de filtros definida en la vista actual. Esto podría ahorrar tiempo al seleccionar un subconjunto de datos en el futuro.
 
 El panel de detalles también le permite ver el uso de la aplicación durante los últimos 30 días, los usuarios que han dado su consentimiento a la aplicación y los permisos asignados a la aplicación. Un administrador podría revisar la actividad y los permisos de una aplicación que genera alertas y tomar la decisión de deshabilitar la aplicación mediante el botón **Deshabilitar aplicación** del panel Detalles.
 
