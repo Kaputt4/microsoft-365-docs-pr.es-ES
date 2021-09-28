@@ -15,31 +15,34 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las funcionalidades de gobernanza de aplicaciones para controlar sus aplicaciones.
-ms.openlocfilehash: d733d62927e78b99ad5289206caf51df3459522c
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c0e5b92f534533fb03505421b5e6a49208891443
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401103"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942039"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Introducción a la gobernanza de aplicaciones (en versión preliminar)
 
+[![Registrarse para la prueba gratuita de la gobernanza de aplicaciones](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)
+
 Para empezar a usar el complemento de gobernanza de aplicaciones para Microsoft Cloud App Security, debe realizar tres pasos:
 
-## <a name="step-1-meet-the-licensing-and-administrator-role-prerequisites"></a>Paso 1: Cumplir los requisitos previos del rol de administrador y la licencia
+1. [Compruebe los requisitos previos de licencia y administrador](#licensing-and-administrator-role-prerequisites).
+1. [Regístrate para la prueba de gobernanza de aplicaciones](#sign-up-for-free-trial-of-app-governance).
+1. [Agregar integración de MCAS](#add-integration-with-mcas).
 
-1. Compruebe que su cuenta tiene el nivel de licencia [adecuado](#licensing-for-app-governance). La gobernanza de aplicaciones es una característica complementaria para Microsoft Cloud App Security (MCAS) y, por tanto, MCAS debe estar presente en su cuenta como un producto independiente o como parte de los distintos paquetes de licencia.
-1. Debe tener uno de los [roles de administrador](#administrator-roles) que se enumeran a continuación para acceder a las páginas de gobernanza de la aplicación en el portal.
-1. La dirección de facturación de su organización debe estar dentro de una de las [áreas admitidas de Norteamérica, Europa o África](app-governance-countries.md) para activar la prueba gratuita.
 
-## <a name="step-2-sign-up-for-free-trial-of-app-governance"></a>Paso 2: Registrarse para obtener una evaluación gratuita de la gobernanza de aplicaciones
+## <a name="sign-up-for-free-trial-of-app-governance"></a>Regístrese para obtener una evaluación gratuita de gobernanza de aplicaciones
 
 Para los clientes existentes de Microsoft 365:
 
-1. Vaya a la página de registro[para obtener la evaluación gratuita](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc). 
+1. Vaya a la página de registro[para obtener la evaluación gratuita](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc).
 1. Complete los pasos para agregar gobernanza de aplicaciones. El registro es sencillo, tal como se muestra en el siguiente gráfico.
 
-:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Pasos sencillos para agregar gobernanza de aplicaciones a su cuenta.":::
+<!--
+:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Simple steps to add app governance to your account.":::
+-->
 
 Si aún no es cliente de Microsoft 365, puede registrarse para obtener una prueba gratuita:
 
@@ -47,7 +50,7 @@ Si aún no es cliente de Microsoft 365, puede registrarse para obtener una prueb
 1. En  **Probar Microsoft 365 para empresas** seleccione **Probar 1 mes gratis**.
 1. Complete los pasos para el registro.
 
-## <a name="step-3-add-integration-with-mcas"></a>Paso 3: Agregar la integración con MCAS
+## <a name="add-integration-with-mcas"></a>Incorporación de la integración con MCAS
 
 Requisitos previos:
 
@@ -61,17 +64,19 @@ Para habilitar la sincronización de gobernanza de aplicaciones con Cloud App Se
 1. En **Protección contra amenazas**, seleccione **Gobernanza de aplicaciones**.
 1. Seleccione **Habilitar la integración de Gobernanza de aplicaciones** y, a continuación, seleccione **Guardar**.
 
-A continuación, revise las directivas recién habilitadas en MCAS. Las nuevas directivas pueden tardar unos minutos en aparecer una vez habilitada la integración.
+Para comprobar que la integración con MCAS está activa, busque las directivas de gobernanza de aplicaciones que se enumeran a continuación que aparecen en MCAS. Las nuevas directivas pueden tardar unos minutos en aparecer una vez habilitada la integración.
 
 - Reputación de la aplicación de OAuth Microsoft 365
 - Microsoft 365 detección de suplantación de identidad (phishing) de OAuth
 - Microsoft 365 gobernanza de aplicaciones de OAuth
-- Revisión del widget de gobernanza de aplicaciones en el panel de MCAS
-- Revisión de las alertas de gobernanza de aplicaciones recién generadas en las alertas de MCAS
-- Revisión de las directivas de MCAS Microsoft 365 OAuth en la lista de directivas de gobernanza de aplicaciones
-- Revisión de las alertas de OAuth de MCAS Microsoft 365 recién generadas en las alertas de gobernanza de aplicaciones
 
-## <a name="licensing-for-app-governance"></a>Licencias para la gobernanza de aplicaciones
+## <a name="licensing-and-administrator-role-prerequisites"></a>Requisitos previos de rol de administrador y licencias
+
+1. Compruebe que su cuenta tiene el nivel de licencia [adecuado](#licensing-for-app-governance). La gobernanza de aplicaciones es una característica complementaria para Microsoft Cloud App Security (MCAS) y, por tanto, MCAS debe estar presente en su cuenta como un producto independiente o como parte de los distintos paquetes de licencia.
+1. Debe tener uno de los [roles de administrador](#administrator-roles) que se enumeran a continuación para acceder a las páginas de gobernanza de la aplicación en el portal.
+1. La dirección de facturación de su organización debe estar dentro de una de las [áreas admitidas de Norteamérica, Europa o África](app-governance-countries.md) para activar la prueba gratuita.
+
+### <a name="licensing-for-app-governance"></a>Licencias para la gobernanza de aplicaciones
 
 Antes de empezar a trabajar con la gobernanza de aplicaciones, debería confirmar [Centro de administración de Microsoft 365: suscripciones](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) y los complementos. Para obtener acceso y usar la gobernanza de aplicaciones, su organización debe tener una de las siguientes suscripciones:
 
@@ -98,7 +103,7 @@ Antes de empezar a trabajar con la gobernanza de aplicaciones, debería confirma
 - Microsoft 365 A5 sin audioconferencia para estudiantes
 - Ventajas de uso de Microsoft 365 A5 sin audioconferencia para estudiantes
 
-## <a name="administrator-roles"></a>Roles de administrador
+### <a name="administrator-roles"></a>Roles de administrador
 
 > [!NOTE]
 > Solo el rol de administrador global puede activar la prueba gratuita de gobernanza de aplicaciones.
