@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Obtenga información sobre cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada con su cuenta Microsoft 365 para empresas. '
-ms.openlocfilehash: 83413bcf0adffd0af09405db7e936cec523530d9
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 06a125fac933ca8755c7306b77024365393d00c2
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774861"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988216"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Agregar otro alias de correo electrónico para un usuario
   
@@ -44,7 +45,7 @@ Puede crear hasta 400 alias para un usuario. No se necesitan licencias o cargos 
   
 ## <a name="add-email-aliases-to-a-user"></a>Agregar alias de correo electrónico a un usuario
 
-Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para hacerlo. 
+Debe tener derechos de administrador global para agregar alias de correo electrónico a un usuario.
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 

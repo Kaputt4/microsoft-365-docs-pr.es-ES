@@ -2,8 +2,8 @@
 title: Corrección de información de reglas de flujo de correo lento
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -15,12 +15,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar la información corregir reglas de flujo de correo lento en el Centro de seguridad y cumplimiento de & para identificar y corregir reglas de flujo de correo ineficaces o rotas (también conocidas como reglas de transporte) en su organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76fdfd7595fc3a7c760eadd51498883d8d7a63fe
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31c755c2d5412840def5a47f464042bce9a8202e
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217970"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988456"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Corregir la información de reglas de flujo de correo lento en el Centro de seguridad & cumplimiento
 
@@ -56,6 +56,6 @@ Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con 
 
 Para obtener más información acerca de las condiciones y excepciones en las reglas de flujo de correo, vea Condiciones de regla de flujo de correo y excepciones [(predicados) en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

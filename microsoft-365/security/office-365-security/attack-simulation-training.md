@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365.
 ms.technology: mdo
-ms.openlocfilehash: 40baa8aa3eda6f0f6045115d45e2dac1426c4455
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 304baf82d2b951ada35dc6cb97add1ac85b27236
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214457"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988720"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simular un ataque de suplantación de identidad
 
@@ -71,7 +71,7 @@ Seleccione una carga de la lista para ver una vista previa de la carga con infor
 
 Si quieres crear tu propia carga, lee crear una [carga para el entrenamiento de simulación de ataque.](attack-simulation-training-payloads.md)
 
-## <a name="audience-targeting"></a>Identificación de audiencia
+## <a name="audience-targeting"></a>Segmentación de público
 
 Ahora es el momento de seleccionar la audiencia de esta simulación. Puede elegir incluir todos **los usuarios de la organización** o incluir solo usuarios y grupos **específicos.**
 
@@ -81,7 +81,7 @@ Cuando elige incluir **solo usuarios y** grupos específicos, puede:
 
   ![Filtrado de usuarios en el aprendizaje de simulación de ataques en el portal Microsoft 365 Defender web.](../../media/attack-sim-preview-user-targeting.png)
 
-- **Importar desde CSV** permite importar un conjunto predefinido de usuarios para esta simulación.
+- **Importar desde CSV** permite importar un conjunto predefinido de usuarios para esta simulación. El archivo CSV debe contener una dirección de correo electrónico por línea.
 
 ## <a name="assigning-training"></a>Asignar formación
 

@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Usar supervisión de Exchange Online para obtener información sobre avisos o incidentes de correo electrónico en Microsoft 365.
-ms.openlocfilehash: 0f3b93d13d503ef09edc98f3f9c90f9a1f2a0a32
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 2c97e161c46998f9a78e14b1efc2eb0e701e5b01
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933860"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988252"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Supervisión de Exchange Online para Microsoft 365
 
@@ -70,7 +70,6 @@ Con la supervisión de Exchange Online se admiten los siguientes escenarios:
   - Clientes de correo electrónico nativo de iOS y Android
   - Aplicación móvil de Outlook en iOS y Android
   - Cliente de Outlook para Mac
-  - Abrir Outlook en la Web
 
    Para estos clientes, puede ver el número de usuarios activos en los últimos 30 minutos basándose en los usuarios que lean un correo electrónico, así como la cantidad de incidentes y avisos en el panel. Estos datos se comparan con el mismo intervalo de la semana anterior para ver si hay un problema.
 
@@ -113,11 +112,11 @@ En estos escenarios, puede ver avisos e incidentes, activos y resueltos, que afe
 
 En el panel de cuentas afectadas, la columna **Estado** tiene estos valores:
 
-- Corregido: el problema que causaba el aviso o el incidente se ha solucionado para la cuenta prioritaria. Ya no hay ningún problema. 
+- Corregido: se ha solucionado el problema que causaba el aviso o incidente para la cuenta de prioridad. Ya no hay ningún problema. 
 
-- Activo: el problema que causa el aviso o el incidente continúa para la cuentaprioritaria. Sigue estando el problema. 
+- Activo: el problema que causa el aviso o incidente está en curso para la cuenta de prioridad. El problema persiste. 
 
-- Retraso: el problema que causa el aviso o el incidente no se ha resuelto para la cuenta de prioridad en el plazo de 96 horas, por lo que se ha suspendido. Sigue estando el problema. 
+- Retrasado: el problema que causa el aviso o incidente no se ha solucionado para la cuenta prioritaria en 96 horas, por lo que se ha suspendido. El problema persiste. 
 
 Aquí le mostramos un ejemplo.
 

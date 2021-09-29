@@ -2,8 +2,8 @@
 title: Inteligencia de flujo de correo
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
@@ -14,12 +14,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocidos como inteligencia de flujo de correo).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8df87c5d8a93bec8051f29c1ba8eae0fbe8bab9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd0d44ae991ec37cf76b664fd56ae9123c98eac8
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211680"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988972"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Inteligencia de flujo de correo en EOP
 

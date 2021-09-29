@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0e0e6d2359b9dbec64263deede1776d2bd5889a8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a8b2cc5498d15fe174d58fc9b4caf2b33982f38d
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165987"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988918"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -227,7 +227,7 @@ Los clasificadores globales y capacitados integrados analizan los mensajes envia
 - Italiano
 - Japonés
 - Portugués
-- Spanish
+- Español
 
 Los clasificadores globales y capacitados para el cumplimiento de la comunicación analizan las comunicaciones en busca de términos, imágenes y sentimientos para los siguientes tipos de idioma y contenido:
 
@@ -300,7 +300,7 @@ Cada palabra que escriba y separe con una coma se aplica por separado (solo debe
 > *confidencial* <br>
 > *insider trading*
 
-Para examinar los mensajes de correo electrónico y los datos adjuntos [](create-a-keyword-dictionary.md) de las mismas palabras clave, cree una directiva de prevención de pérdida de datos con un diccionario de palabras clave personalizado para los [términos](create-test-tune-dlp-policy.md) que desea examinar en los mensajes. Esta configuración de directiva identifica palabras clave definidas que aparecen en el mensaje de correo **electrónico O en** los datos adjuntos del correo electrónico. El uso de la configuración de directiva condicional estándar (*Message* contiene cualquiera de estas palabras y Attachment  *contiene* cualquiera de estas palabras ) para identificar los términos de los mensajes y los datos adjuntos requiere que los términos se presenten tanto en el mensaje como en los datos adjuntos.
+Para examinar los mensajes de correo electrónico y [](create-a-keyword-dictionary.md) los datos adjuntos de las mismas palabras clave, cree un diccionario de palabras clave personalizado para los términos que desea examinar en los mensajes. Esta configuración de directiva identifica palabras clave definidas que aparecen en el mensaje de correo **electrónico O en** los datos adjuntos del correo electrónico. El uso de la configuración de directiva condicional estándar (*Message* contiene cualquiera de estas palabras y Attachment  *contiene* cualquiera de estas palabras ) para identificar los términos de los mensajes y los datos adjuntos requiere que los términos se presenten tanto en el mensaje como en los datos adjuntos.
 
 #### <a name="enter-multiple-conditions"></a>Especificar varias condiciones
 
@@ -363,15 +363,15 @@ Los filtros de cumplimiento de comunicaciones permiten filtrar y ordenar mensaje
 
 |**Filter**|**Detalles**|
 |:-----|:-----|
-| **Date** | La fecha en que un usuario de la organización envió o recibió el mensaje. Para filtrar por un solo día, seleccione un intervalo de fechas que comience con el día para el que desea obtener los resultados y termine con el día siguiente. Por ejemplo, si desea filtrar los resultados del 20/9/2020, elegiría un intervalo de fechas de filtro del 20/09/2020-9/21/2020.|
+| **Fecha** | La fecha en que un usuario de la organización envió o recibió el mensaje. Para filtrar por un solo día, seleccione un intervalo de fechas que comience con el día para el que desea obtener los resultados y termine con el día siguiente. Por ejemplo, si desea filtrar los resultados del 20/9/2020, elegiría un intervalo de fechas de filtro del 20/09/2020-9/21/2020.|
 | **Clase File** | Clase del mensaje basada en el tipo de mensaje, ya sea *mensaje o* *datos adjuntos.* |
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
 | **Clase Item** | El origen del mensaje según el tipo de mensaje, el correo electrónico, el chat de Microsoft Team, Bloomberg, etc. Para obtener más información sobre tipos de elementos y clases de mensaje comunes, vea [Tipos de elementos y clases de mensaje](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Dominios de destinatarios** | Dominio al que se envió el mensaje. Normalmente, este dominio es su Microsoft 365 de suscripción de forma predeterminada. |
-| **Destinatario** | El usuario al que se envió el mensaje. |
+| **Recipient** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | Dominio que envió el mensaje. |
-| **Tamaño** | Tamaño del mensaje en KB. |
+| **Size** | Tamaño del mensaje en KB. |
 | **Asunto/Título** | Asunto del mensaje o título del chat. |
 | **Tags** | Las etiquetas asignadas a un mensaje, *ya sea Questionable*, *Compliant* o *Non-compliant*. |
 | **Language** | El idioma de texto detectado en el mensaje. El mensaje se clasifica según el idioma de la mayoría del texto del mensaje. Por ejemplo, para un mensaje que contiene texto alemán e italiano, pero la mayoría de texto es alemán, el mensaje se clasifica como alemán (DE). Se admiten los siguientes idiomas: chino (simplificado - ZH), inglés (EN), francés (FR), alemán (DE), italiano (IT), japonés (JP), portugués (PT) y español (ES). Por ejemplo, para filtrar mensajes clasificados como alemán e italiano, escriba "DE,IT" (los códigos de idioma de 2 dígitos) en el cuadro de búsqueda Filtro de idioma. Para ver la clasificación de idioma detectado para un mensaje, seleccione un mensaje, seleccione Ver detalles del mensaje y desplácese al campo EmailDetectedLanguage. |

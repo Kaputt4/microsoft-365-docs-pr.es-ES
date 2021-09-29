@@ -2,8 +2,8 @@
 title: Corrección de posible información de bucle de correo
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar la información sobre corregir posibles bucles de correo en el panel flujo de correo del Centro de seguridad y cumplimiento de & para identificar y corregir bucles de correo en su organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0c866dbec4a406c47bec072225dbe038510d71de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 338c76e751ad8fd504ff8182c59fe2a4d8dfb9d8
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218000"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988240"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corregir posibles perspectivas de bucle de correo en el Centro de seguridad & cumplimiento
 
@@ -52,6 +52,6 @@ Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con 
 
 ![Control desplegable de detalles que aparece después de hacer clic en Ver detalles en la información corregir posibles bucles de correo.](../../media/mfi-fix-possible-mail-loop-details.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

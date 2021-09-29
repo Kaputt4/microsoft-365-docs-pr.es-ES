@@ -2,8 +2,8 @@
 title: Informe de dominio no aceptado en el panel flujo de correo
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el informe de dominio no aceptado en el panel flujo de correo del Centro de seguridad y cumplimiento de & para supervisar los mensajes de la organización local donde el dominio del remitente no está configurado en Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b2ddbc6215ebbc3b1a2b2ccff4a5bc8ad7118c3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b9bab55ddf23f991179245837f4ecb4e7d28b8f1
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189097"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988360"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Informe de dominio no aceptado en el Centro de seguridad & cumplimiento
 
@@ -62,7 +62,7 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Al seleccionar una fila de la tabla, aparece un menú desplegable con la siguiente información:
 
-- **Date**
+- **Fecha**
 - **Nombre del conector de entrada**
 - **Dominio del remitente**
 - **Recuento de mensajes**

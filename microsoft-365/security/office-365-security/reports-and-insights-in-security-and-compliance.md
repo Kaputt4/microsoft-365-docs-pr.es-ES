@@ -2,8 +2,8 @@
 title: 'Informes inteligentes, insights: Microsoft 365 Security & Compliance Center'
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ description: Obtenga información sobre los informes e información inteligentes
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef92717dc43e5af7a6c98d497405160fec45b7cd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 627ca557e7df0d12565f833287c7a6aad18854f1
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187334"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988756"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
 

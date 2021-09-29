@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las consideraciones de implementación y las preguntas más frecuentes sobre la simulación de ataques y el aprendizaje en Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a47f953b0c87e3ab88df45f150bd2e6d71611664
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 239d1e4bf28a93627a80ea40375e6791e1a3a5a8
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214507"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988444"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  
 
@@ -139,7 +139,7 @@ A: Hay varias opciones disponibles para los usuarios de destino:
 
 - Incluya todos los usuarios (actualmente disponibles para organizaciones con menos de 40 000 usuarios).
 - Elija usuarios específicos.
-- Seleccione usuarios de un archivo CSV.
+- Seleccione usuarios de un archivo CSV (una dirección de correo electrónico por línea).
 - Destino basado en grupos de Azure AD.
 
 Hemos encontrado que las campañas en las que los grupos de Azure AD identifican a los usuarios dirigidos suelen ser más fáciles de administrar.

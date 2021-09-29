@@ -2,8 +2,8 @@
 title: Configuración del mensaje notificado por el usuario
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9fc149a8c76180ca2baf0bd38bef149f00611899
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 5c2bd56198ac64119ec684422a94914b178d8ecf
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942354"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59989008"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 

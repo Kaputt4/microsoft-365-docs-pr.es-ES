@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 840ea513980d3167d34437c048eb8d8164a2d57b
-ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
+ms.openlocfilehash: 1a7900256207dd50f64a4bb8fe43b86bcf2b2913
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934670"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988276"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -60,7 +60,7 @@ Aunque está habilitado de forma predeterminada, puede haber algunos casos que r
 
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>Coexistencia con varios perfiles vpn
 
-Apple iOS no admite varias VPN de todo **el** dispositivo para estar activas simultáneamente. Aunque pueden existir varios perfiles de VPN en el dispositivo, solo una VPN puede estar activa a la vez.
+Apple iOS no admite varias VPN de todo **el** dispositivo para estar activas simultáneamente. Aunque pueden existir varios perfiles de VPN en el dispositivo, solo una VPN puede estar activa a la vez. Si necesitas usar otra VPN en el dispositivo, puedes deshabilitar Defender for Endpoint VPN mientras usas la otra VPN.
 
 Microsoft Defender para endpoint VPN puede coexistir con otras VPN configuradas como *por aplicación* o *"Personal".*
 

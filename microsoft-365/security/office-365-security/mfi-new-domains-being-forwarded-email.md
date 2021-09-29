@@ -2,8 +2,8 @@
 title: Información de nuevos dominios a los que se reenvía correo electrónico
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: ''
 description: Los administradores pueden aprender a usar la información de correo electrónico nuevos dominios que se reenvía en el panel flujo de correo del Centro de cumplimiento de seguridad & para investigar cuándo sus usuarios reenvía mensajes a dominios externos a los que nunca se ha reenviado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 87af41d4c6fe1964510944f0ad06554056ce4f37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae1d7ce0bb62082797afc0d4a2bee77fbc24c982
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217997"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988516"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nuevos dominios que se reenvía información de correo electrónico en el Centro de seguridad & cumplimiento
 

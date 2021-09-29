@@ -2,8 +2,8 @@
 title: Información sobre colas en el panel flujo de correo
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden aprender a usar el widget Colas en el panel flujo de correo del Centro de seguridad y cumplimiento de & para supervisar el flujo de correo fallido a sus organizaciones locales o asociadas a través de conectores salientes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb907d6eed5ce1c406288338c478936db00e4a67
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4acebd3ca65eedf82cead5f51c23a0f8bc3f01a2
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217977"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988432"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Información sobre colas en el Centro de seguridad & cumplimiento
 
@@ -95,6 +95,6 @@ Se muestra el mismo menú desplegable después de hacer clic en **Ver cola** en 
 
 ![Los mensajes se han retrasado en los detalles de alerta en el Centro de seguridad & cumplimiento.](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

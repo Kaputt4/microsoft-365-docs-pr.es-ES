@@ -2,8 +2,8 @@
 title: Información e informe de clientes de autenticación SMTP en el panel flujo de correo
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar la información y el informe de autenticación SMTP en el panel flujo de correo del Centro de seguridad y cumplimiento de & para supervisar los remitentes de correo electrónico de su organización que usan SMTP autenticado (AUTH SMTP) para enviar mensajes de correo electrónico.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3d4c39e722ed7d9853a4fb328a8e87aac535bea9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 950661664479e38b8c9094c52908ee23ba34e66c
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217967"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988768"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Información e informes de clientes de autenticación SMTP en el Centro de seguridad & cumplimiento
 

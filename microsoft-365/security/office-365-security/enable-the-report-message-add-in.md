@@ -2,7 +2,7 @@
 title: Habilitar los complementos Informar sobre el mensaje o Informar sobre suplantación de identidad
 f1.keywords:
 - NOCSH
-ms.author: siosulli
+ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga información sobre cómo habilitar el mensaje de informe o los complementos de suplantación de identidad de informes para Outlook y Outlook en la Web, para usuarios individuales o para toda la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7c077521700a8bd4c7d1997bb87bab0f214337d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a1481676468ac3ee505da41de91d0eba3b7e55e2
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218060"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988984"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Habilitar los complementos Informar sobre el mensaje o Informar sobre suplantación de identidad
 
@@ -50,7 +50,7 @@ Si eres un usuario individual, puedes habilitar ambos complementos por ti mismo.
 
 Si es un administrador global o un administrador de Exchange Online y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento Report Message y el complemento Report Phishing para su organización. Ambos complementos ya están disponibles a través [de la implementación centralizada](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Tanto el complemento Report Message como el complemento Report Phishing funcionan con la mayoría Microsoft 365 suscripciones y los siguientes productos:
   - Outlook en la Web

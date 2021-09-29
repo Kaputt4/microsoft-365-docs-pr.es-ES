@@ -2,7 +2,7 @@
 title: Notificar mensajes de correo no deseado, no deseado y suplantación de identidad a Microsoft
 f1.keywords:
 - NOCSH
-ms.author: siosulli
+ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.date: ''
@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre las distintas formas de notificar mensajes y archivos buenos y malos a Microsoft para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c78b606ed63e18d23bb1d1a6ebf72ae2617e9386
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 77b370bcd0a1ee59e80a638669598cf27ef32942
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483392"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988924"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Notificar mensajes y archivos a Microsoft
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2e7ec8ca3b9f428708c21c5a75bbfd4174373d62
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: bbf230d7ae21bd694fb3568b51903d6fa6581ab9
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491330"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988792"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -30,10 +30,6 @@ ms.locfileid: "59491330"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-> [!IMPORTANT]
-> **El filtrado de contenido web está actualmente en versión preliminar pública**<br>
-> Esta versión preliminar se proporciona sin un contrato de nivel de servicio y no se recomienda para cargas de trabajo de producción. Es posible que algunas características no se admitan o que tengan funcionalidades restringidas. Para obtener más información, consulte [Características de versión preliminar de Microsoft Defender para punto de conexión](preview.md).
 
 > [!TIP]
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
@@ -256,7 +252,7 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 
 - Actualmente, los informes de filtrado de contenido web están limitados a mostrar los 5000 registros principales. Por ejemplo, el informe Dominios solo mostrará un máximo de los 5000 dominios principales para una consulta de filtro determinada, si procede. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Introducción a protección web](web-protection-overview.md)
 - [Protección contra amenazas web](web-threat-protection.md)

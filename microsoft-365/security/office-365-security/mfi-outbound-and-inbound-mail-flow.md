@@ -2,8 +2,8 @@
 title: Información sobre el flujo de correo entrante y saliente en el panel flujo de correo
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Los administradores pueden obtener información sobre el flujo de correo saliente y entrante en el panel flujo de correo en el Centro de seguridad & cumplimiento.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6fe4f7bded7a3d1fcca26d537de24513f27bc0ec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 278f9620b0416a1bdc23ba1efaa1581a5318b6a7
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192307"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988468"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Información sobre el flujo de correo entrante y saliente en el Centro de seguridad & cumplimiento
 
@@ -60,6 +60,6 @@ Puede hacer clic en el **vínculo Informe de conector** para ir al informe de [C
 
 Para las conexiones TLS 1.0, realmente necesita actualizar o solucionar el servidor de correo electrónico o el servidor de su partner para evitar cualquier problema cuando la compatibilidad con TLS 1.0 esté en desuso en Microsoft 365.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

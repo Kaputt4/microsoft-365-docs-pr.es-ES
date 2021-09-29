@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Configuración del Programador para Microsoft 365.
-ms.openlocfilehash: 08083937255d9af3499016a32959e2690a222919
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01e574fd2f4cd766b3347c6fa56149f6bcd600d5
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187689"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988828"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Configuración del Planificador para Microsoft 365
 
@@ -80,7 +80,7 @@ Después de ejecutar este comando "set" en el buzón del asistente del programad
 Para comprobar que se ha creado el buzón del asistente del programador
 
 ```PowerShell
-Get-CalendarProcessing cortana$domain <cortana>@microsoft.com   | fl DeleteNonCalendarItems`
+Get-CalendarProcessing cortana$domain | fl DeleteNonCalendarItems
 ```
 
 El resultado debe ser "false".
@@ -88,7 +88,7 @@ El resultado debe ser "false".
 <br>
 
 ```PowerShell
-Get-Mailbox -Identity <cortana>@microsoft.com$domain -Organization microsoft.com$domain | fl *type*
+Get-Mailbox -Identity cortana$domain | fl *type*
 ```
 
 El resultado debe ser

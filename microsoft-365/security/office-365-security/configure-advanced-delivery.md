@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: baea981e712a02bfffb6b664d4bb6a3d8c9b5ae5
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 5045e3ce38c1ae1a0d1f59aaa4a0daddde112d6a
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481053"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988960"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -317,7 +317,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ne
 Utilice la siguiente sintaxis:
 
 ```powershell
-New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
 ```
 
 Independientemente del valor name que especifique, el nombre de la regla será _PhishSimOverrideRule_ donde es un valor GUID único \<GUID\> \<GUID\> (por ejemplo, a0eae53e-d755-4a42-9320-b9c6b55c5011).
@@ -331,7 +331,7 @@ Una entrada de dirección IP válida es uno de los siguientes valores:
 En este ejemplo se crea la regla de invalidación de simulación de suplantación de identidad con la configuración especificada.
 
 ```powershell
-New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
 ```
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [vea New-PhishSimOverrideRule](/powershell/module/exchange/new-phishsimoverriderule).
@@ -341,7 +341,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [ve
 Utilice la siguiente sintaxis:
 
 ```powershell
-New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URLN>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URL10>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
 ```
 
 Para obtener más información acerca de la sintaxis de la dirección URL, vea [Sintaxis url para la lista de inquilinos permitidos o bloqueados.](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)
@@ -494,4 +494,3 @@ Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
-

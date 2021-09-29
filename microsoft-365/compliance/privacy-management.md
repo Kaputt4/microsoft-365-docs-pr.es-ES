@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La administración de privacidad de Microsoft ofrece soluciones para evaluar los datos personales que la organización almacena en Microsoft 365 y le ayuda a identificar y corregir los riesgos de privacidad.
-ms.openlocfilehash: 1243e786dcfa936802b0e82eb217ec6fc4f45bbf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9eddf65236befb35df7927e1ff3f7e4ddf6f03e7
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165902"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988672"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Administración de privacidad de Microsoft (versión preliminar)
 
@@ -83,7 +83,7 @@ La administración de privacidad no recopila datos más allá de lo que ya se re
 
 ## <a name="how-privacy-management-identifies-items-with-personal-data"></a>Cómo la administración de privacidad identifica elementos con datos personales
 
-La administración de privacidad usa las capacidades de Microsoft 365 para ayudarle a identificar y etiquetar elementos confidenciales. Esto se realiza mediante el uso de tipos de información confidencial [(SIT),](sensitive-information-type-learn-about.md)clasificadores entrenables y aplicación automática y manual de [etiquetas](classifier-learn-about.md) [de confidencialidad.](sensitivity-labels.md)
+La administración de privacidad usa las capacidades de Microsoft 365 para ayudarle a identificar y etiquetar elementos confidenciales. Esto se realiza mediante el uso de tipos de información confidencial [(SIT)](sensitive-information-type-learn-about.md) y la aplicación de etiquetas [de confidencialidad.](sensitivity-labels.md)
 
 Los tipos de información confidencial (SIT) son los tipos de datos admitidos por la clasificación de datos de Microsoft. Por ejemplo, estos tipos de datos incluyen información personal sobre personas como su nombre, dirección o número de Seguridad Social.
 

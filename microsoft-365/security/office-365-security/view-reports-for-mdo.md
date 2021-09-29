@@ -20,12 +20,12 @@ description: Los administradores pueden aprender a buscar y usar defender para O
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2613b8547d27ce39a14bccfb5e3bfe63f66de36f
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: da89b5421171eefe56363f38e1959cede2ef5afb
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942094"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988501"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver Defender para obtener Office 365 informes en el portal Microsoft 365 Defender web
 
@@ -62,12 +62,12 @@ Microsoft Defender para organizaciones Office 365 (por ejemplo, suscripciones Mi
 ## <a name="safe-attachments-file-types-report"></a>Caja fuerte Informe de tipos de archivo de datos adjuntos
 
 > [!NOTE]
-> El **informe Caja fuerte tipos de archivos adjuntos** desaparecerá finalmente. La misma información está disponible en el informe [de estado de protección contra amenazas](#threat-protection-status-report).
+> Este informe ha quedado en desuso. La misma información está disponible en el informe [de estado de protección contra amenazas](#threat-protection-status-report).
 
 ## <a name="safe-attachments-message-disposition-report"></a>Caja fuerte Informe de eliminación de mensajes de datos adjuntos
 
 > [!NOTE]
-> El **Caja fuerte de eliminación** de mensajes de datos adjuntos desaparecerá. La misma información está disponible en el informe [de estado de protección contra amenazas](#threat-protection-status-report).
+> Este informe ha quedado en desuso. La misma información está disponible en el informe [de estado de protección contra amenazas](#threat-protection-status-report).
 
 ## <a name="mail-latency-report"></a>Informe de latencia de correo
 
@@ -110,6 +110,8 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 - **Percentiles:** **50**, **90** o **99**
 - **Recuento de mensajes**
 - **Latencia general**
+
+En la página de informe principal, el ![ icono Exportar.](../../media/m365-cc-sc-download-icon.png) **[El](view-email-security-reports.md#export-report)** botón Exportar está disponible.
 
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 
@@ -162,6 +164,8 @@ La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en 
 - **Action**
 - **Aplicación**
 
+En la página de informe principal, el ![ icono Crear programación.](../../media/m365-cc-sc-create-icon.png) **[Crear programación,](view-email-security-reports.md#schedule-report)** ![ icono Solicitar informe.](../../media/m365-cc-sc-download-icon.png) **[Informe de solicitud](view-email-security-reports.md#request-report)** y ![ icono Exportar.](../../media/m365-cc-sc-download-icon.png) **[Los botones](view-email-security-reports.md#export-report)** de exportación están disponibles.
+
 ### <a name="view-data-by-url-click-by-application"></a>Ver datos por dirección URL hacer clic por aplicación
 
 ![Url click by application view in the URL protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
@@ -193,6 +197,8 @@ La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en 
 - **URL**
 - **Action**
 - **Aplicación**
+
+En la página de informe principal, el ![ icono Crear programación.](../../media/m365-cc-sc-create-icon.png) **[Crear programación,](view-email-security-reports.md#schedule-report)** ![ icono Solicitar informe.](../../media/m365-cc-sc-download-icon.png) **[Informe de solicitud](view-email-security-reports.md#request-report)** y ![ icono Exportar.](../../media/m365-cc-sc-download-icon.png) **[Los botones](view-email-security-reports.md#export-report)** de exportación están disponibles.
 
 ## <a name="additional-reports-to-view"></a>Informes adicionales para ver
 

@@ -16,12 +16,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8ffeca3d13b42e39f539e96d563aceabd464aeaf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2e5b4b67980c3d1450832e84ab0d2a1396c2a69d
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189524"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988396"
 ---
 # <a name="list-machines-api"></a>ENUMERAR API de máquinas
 
@@ -41,7 +41,7 @@ Recupera una colección de [máquinas](machine.md) que se han comunicado con Mic
 
 Admite [consultas de OData V4](https://www.odata.org/documentation/).
 
-La consulta de OData `$filter` se admite en: `computerDnsName` , , , , , , , `id` , y `version` `deviceValue` `aadDeviceId` `machineTags` `lastSeen` `exposureLevel` `lastIpAddress` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` .
+La consulta de OData `$filter` se admite en: `computerDnsName` , , , , , , , `id` , , `version` y `deviceValue` `aadDeviceId` `machineTags` `lastSeen` `exposureLevel` `onboardingStatus` `lastIpAddress` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` .
 <br>```$stop``` con un valor máximo de 10 000
 <br>```$skip``` Vea ejemplos en [consultas de OData con Defender para endpoint](exposed-apis-odata-samples.md)
 
