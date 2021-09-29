@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 43a2b3b3e211215e8180308360a546a8454d5bc2
-ms.sourcegitcommit: 5eecb0ccc70bf75779411d80147ed5588132b103
+ms.openlocfilehash: 72238bd3f9ccabc64e0846f0384397d14f752bd9
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59461613"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988300"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -228,13 +228,15 @@ Asegúrese de tener en cuenta los requisitos previos antes de configurar las dir
 
 El modo de simulación es único en las directivas de etiquetado automático y se integra en el flujo de trabajo. No puede etiquetar automáticamente documentos y mensajes de correo electrónico hasta que la directiva haya ejecutado al menos una simulación.
 
+El modo de simulación admite hasta 1 000 000 de archivos coincidentes. Si más de este número de archivos coinciden con una directiva de etiquetado automático, no se puede activar la directiva para aplicar las etiquetas. En este caso, debe volver a configurar la directiva de etiquetado automático para que coincidan menos archivos y volver a ejecutar la simulación. Este máximo de 1 000 000 de archivos coincidentes solo se aplica al modo de simulación y no a una directiva de etiquetado automático que ya está aplicando etiquetas de confidencialidad.
+
 Flujo de trabajo para una directiva de etiquetado automático:
 
 1. Crear y configurar una directiva de etiquetado automático.
 
 2. Ejecute la directiva en modo simulación, que puede tardar 12 horas en completarse. La simulación completada desencadena una notificación por correo electrónico que se envía al usuario configurado para recibir [alertas de actividad](alert-policies.md).
 
-3. Revise los resultados y, si es necesario, perfeccione su directiva. Vuelva a ejecutar el modo de simulación y espere a que se complete de nuevo.
+3. Revise los resultados y, si es necesario, perfeccione su directiva. Por ejemplo, es posible que deba editar las reglas de directiva para reducir falsos positivos o quitar algunos sitios para que el número de archivos coincidentes no supere 1 000 000. Vuelva a ejecutar el modo de simulación y espere a que se complete de nuevo.
 
 4. Si es necesario, repita el paso 3.
 
@@ -245,6 +247,7 @@ La implementación simulada se ejecuta como el parámetro WhatIf para PowerShell
 El modo de simulación también le permite aumentar gradualmente el ámbito de la directiva de etiquetado automático antes de la implementación. Por ejemplo, puede empezar con una única ubicación, como un sitio de SharePoint, con una única biblioteca de documentos. Después, con cambios iterativos, aumente el ámbito a varios sitios y a otra ubicación, como OneDrive.
 
 Por último, puede usar el modo de simulación para ofrecer una aproximación del tiempo necesario para ejecutar la directiva de etiquetado automático, para ayudarle a planear y programar cuándo ejecutarla sin el modo de simulación.
+
 
 ### <a name="creating-an-auto-labeling-policy"></a>Creación de una directiva de etiquetado automático
 
@@ -387,7 +390,7 @@ Las recientes mejoras para las directivas de etiquetado automático para OneDriv
 
 - Cuando especifica sitios individuales en una directiva de etiquetado automático, se admitirán hasta 100 sitios en lugar de 10.
 
-- Un máximo de 1 000 000 de archivos coincidentes por directiva de etiquetado automático, aunque el total de 25 000 archivos etiquetados automáticamente en su inquilino por día sigue siendo el mismo.
+- Máximo de 1 000 000 de archivos coincidentes por directiva de etiquetado automático en modo de simulación. Si coinciden más de este número de archivos durante la simulación, no podrá activar la directiva. Vuelva a configurar la directiva de etiquetado automático para que coincida con un número menor de archivos y vuelva a ejecutar la simulación.
 
 - Mejoras de simulación:
   - La ejecución de la directiva de etiquetado automático en modo de simulación se completa en 12 horas en lugar de hasta 48 horas.
