@@ -11,7 +11,7 @@
 |OFFICE MOBILE|✔|✔|N/D|N/D|N/D|
 |OFFICE.COM|N/D|N/D|N/D|N/D|✔|
 |ONEDRIVE|✔|✔|Planeado|✔|✔|
-|ONENOTE|✔|✔|✔|Planeado|✔|
+|ONENOTE|✔|✔|✔|✔|✔|
 |OUTLOOK|✔|✔|✔|✔|✔|
 |PLANNER|✔|✔|N/D|N/D|N/D|
 |POWER APPS|✔|✔|N/D|N/D|Planeado|
