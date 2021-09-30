@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: cb693fb60277e5262578cc442df7e1c5ba3f3c16
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c6aede6ba25ebd7f28008e4c52450bd3e4b74c2d
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186329"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009462"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -149,8 +149,10 @@ Además, los elementos de SharePoint que están en borrador o que nunca se han p
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Aplicar automáticamente etiquetas a los contenidos con tipos específicos de información sensible
 
-> [!WARNING]
-> Actualmente, esta configuración tiene una limitación conocida, por la que todos los correos electrónicos sin etiqueta siempre tienen la etiqueta de retención seleccionada aplicada cuando hay una coincidencia para los tipos de información confidencial seleccionados. Por ejemplo, incluso si especifica el ámbito de la directiva de aplicación automática para usuarios específicos o para seleccionar ubicaciones distintas de Exchange para la directiva, la etiqueta siempre se aplicará a los correos electrónicos sin etiqueta cuando haya una coincidencia.
+> [!IMPORTANT]
+> En el caso de los correos electrónicos que se aplican automáticamente mediante la identificación de información confidencial, no se admite el ámbito de la directiva para incluir o excluir destinatarios específicos; esta configuración de directiva solo admite la configuración **Todos los destinatarios**. Específico de esta configuración de directiva, **Todos los destinatarios** incluyen buzones de grupos de Microsoft 365.
+> 
+> También es específico de esta configuración de directiva, si seleccionas la ubicación **Grupos de Microsoft 365**, solo se incluyen los sitios de SharePoint conectados a un grupo de Microsoft 365 y no los buzones de grupos de Microsoft 365.
 
 Al crear directivas de etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que cuando se crea una directiva de prevención de pérdida de datos (DLP). Cada plantilla está preconfigurada para buscar determinados tipos de información confidencial. En el siguiente ejemplo, los tipos de información confidencial son de la categoría **Privacidad**, y **la plantilla de datos de información personal identificable (PII) de Estados Unidos** :
 
@@ -169,6 +171,8 @@ Para obtener más información sobre estas opciones, consulte las siguientes ins
 Que debe tener en cuenta al usar tipos de información confidencial para aplicar las etiquetas de retención automáticamente:
 
 - Si usa tipos personalizados de información confidencial, estos no pueden etiquetar automáticamente los elementos existentes en SharePoint y OneDrive.
+
+- En el caso de los correos electrónicos, no puede seleccionar destinatarios específicos para incluirlos o excluirlos; solo se admite la configuración **Todos los destinatarios** y, solo para esta configuración, incluye buzones de grupos de Microsoft 365. 
 
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Aplicar automáticamente etiquetas a contenido con palabras clave o propiedades que se puedan buscar
 

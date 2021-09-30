@@ -84,6 +84,14 @@
           href: information-barriers-edit-segments-policies.md
         - name: Atributos de barreras de información
           href: information-barriers-attributes.md
+        - name: Barreras de información & servicios Microsoft 365
+          items:
+            - name: Microsoft Teams y barreras de información
+              href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: OneDrive y barreras de información
+              href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: SharePoint y barreras de información
+              href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: Administración del acceso con privilegios
       items:
         - name: Información general
@@ -545,10 +553,10 @@
       items:
         - name: Habilitar buzones de archivo
           href: enable-archive-mailboxes.md
-        - name: Información general sobre el archivado ilimitado
-          href: unlimited-archiving.md
-        - name: Habilitar el archivado ilimitado
-          href: enable-unlimited-archiving.md
+        - name: Información general sobre el archivado de ampliación automática
+          href: autoexpanding-archiving.md
+        - name: Habilitar el archivado de ampliación automática
+          href: enable-autoexpanding-archiving.md
         - name: Configurar una directiva de archivo y eliminación para buzones de correo
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Administrar buzones inactivos

@@ -58,8 +58,6 @@
           href: office-365-ti.md
         - name: Respuesta a incidentes de seguridad de Office 365
           href: office365-security-incident-response-overview.md
-        - name: Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
-          href: mail-flow-insights-v2.md
         - name: 'Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles'
           href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
     - name: Implementar
@@ -170,10 +168,6 @@
               href: modify-remove-entries-tenant-allow-block.md
         - name: Seguimiento de mensajes
           href: message-trace-scc.md
-        - name: Notificar mensajes y archivos a Microsoft
-          href: report-junk-email-messages-to-microsoft.md
-        - name: Habilitar los complementos Informar sobre el mensaje e Informar sobre suplantación de identidad
-          href: enable-the-report-message-add-in.md
         - name: Usar reglas de flujo de correo para bloquear mensajes con datos adjuntos ejecutables
           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
         - name: Usar reglas de flujo de correo para filtrar correo electrónico masivo
@@ -200,8 +194,6 @@
           href: ../../compliance/alert-policies.md
         - name: Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
           href: reports-and-insights-in-security-and-compliance.md
-        - name: Informar de falsos positivos y falsos negativos en Outlook
-          href: report-false-positives-and-false-negatives.md
         - name: Reglas de flujo del correo (reglas de transporte)
           href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
         - name: Ejecución de un informe de grupo de funciones de administrador
@@ -216,48 +208,66 @@
           href: investigate-malicious-email-that-was-delivered.md
         - name: Ver detalles y resultados de una investigación automatizada
           href: air-view-investigation-results.md
-        - name: Ver informes de Defender para Office 365
-          href: view-reports-for-mdo.md
-        - name: Ver informes de seguridad de correo electrónico
-          href: view-email-security-reports.md
-        - name: Ver informes de flujo de correo
-          href: view-mail-flow-reports.md
         - name: Ver el registro de auditoría de administrador
           href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
-        - name: Informes y seguimiento de mensajes en EOP independiente
-          href: reporting-and-message-trace-in-exchange-online-protection.md
-        - name: Información de mensajes reenviados automáticamente
-          href: mfi-auto-forwarded-messages-report.md
         - name: Información sobre la suplantación
           href: impersonation-insight.md
-        - name: Mapa de flujo de correo
-          href: mfi-mail-flow-map-report.md
-        - name: Enviar manualmente mensajes a Microsoft
-          href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-        - name: Información de nuevos dominios a los que se reenvía correo electrónico
-          href: mfi-new-domains-being-forwarded-email.md
-        - name: Información de nuevos usuarios que reenvían correo electrónico
-          href: mfi-new-users-forwarding-email.md
-        - name: Informe de dominios no aceptados
-          href: mfi-non-accepted-domain-report.md
-        - name: Informe de no entrega
-          href: mfi-non-delivery-report.md
-        - name: Información de flujo de correo entrante y saliente
-          href: mfi-outbound-and-inbound-mail-flow.md
-        - name: Información e informes de clientes de autenticación SMTP
-          href: mfi-smtp-auth-clients-report.md
         - name: Información de la inteligencia contra la suplantación de identidad
           href: learn-about-spoof-intelligence.md
-        - name: Enviar malware y no malware a Microsoft
-          href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-        - name: Información de estado de flujo de correo de dominio superior
-          href: mfi-domain-mail-flow-status-insight.md
-        - name: Administrar envíos
-          href: admin-submission.md
-        - name: Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
-        - name: Información de colas
-          href: mfi-queue-alerts-and-queues.md
+        - name: Informes en EOP y Defender para Office 365
+          items:
+            - name: Informes en EOP y Defender para Office 365
+              href: reporting-and-message-trace-in-exchange-online-protection.md
+            - name: Ver informes de seguridad de correo electrónico
+              href: view-email-security-reports.md
+            - name: Ver informes de Defender para Office 365
+              href: view-reports-for-mdo.md
+            - name: Ver informes de flujo de correos en el Centro de seguridad y cumplimiento.
+              href: view-mail-flow-reports.md
+        - name: Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
+          items:
+            - name: Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
+              href: mail-flow-insights-v2.md
+            - name: Información de mensajes reenviados automáticamente
+              href: mfi-auto-forwarded-messages-report.md
+            - name: Corrección de posible información de bucle de correo
+              href: mfi-mail-loop-insight.md
+            - name: Corrección de información de reglas de flujo de correo lento
+              href: mfi-slow-mail-flow-rules-insight.md
+            - name: Mapa de flujo de correo
+              href: mfi-mail-flow-map-report.md
+            - name: Información de nuevos dominios a los que se reenvía correo electrónico
+              href: mfi-new-domains-being-forwarded-email.md
+            - name: Información de nuevos usuarios que reenvían correo electrónico
+              href: mfi-new-users-forwarding-email.md
+            - name: Informe de dominios no aceptados
+              href: mfi-non-accepted-domain-report.md
+            - name: Informe de no entrega
+              href: mfi-non-delivery-report.md
+            - name: Información de flujo de correo entrante y saliente
+              href: mfi-outbound-and-inbound-mail-flow.md
+            - name: Información de colas
+              href: mfi-queue-alerts-and-queues.md
+            - name: Información e informes de clientes de autenticación SMTP
+              href: mfi-smtp-auth-clients-report.md
+            - name: Información de estado de flujo de correo de dominio superior
+              href: mfi-domain-mail-flow-status-insight.md
+        - name: Notificar mensajes y archivos a Microsoft
+          items:
+            - name: Notificar mensajes y archivos a Microsoft
+              href: report-junk-email-messages-to-microsoft.md
+            - name: Envíos de administradores
+              href: admin-submission.md
+            - name: Habilitar los complementos Informar sobre el mensaje e Informar sobre suplantación de identidad
+              href: enable-the-report-message-add-in.md
+            - name: Informar de falsos positivos y falsos negativos en Outlook
+              href: report-false-positives-and-false-negatives.md
+            - name: Enviar manualmente mensajes a Microsoft
+              href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+            - name: Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
+              href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
+            - name: Enviar malware y no malware a Microsoft
+              href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
     - name: Respuesta
       items:
         - name: Detectar y dirigirse rápidamente a las cuentas de usuario en peligro
@@ -282,10 +292,6 @@
           href: tuning-anti-phishing.md
         - name: Buscar y liberar mensajes en cuarentena como usuario
           href: find-and-release-quarantined-messages-as-a-user.md
-        - name: Corrección de posible información de bucle de correo
-          href: mfi-mail-loop-insight.md
-        - name: Corrección de información de reglas de flujo de correo lento
-          href: mfi-slow-mail-flow-rules-insight.md
         - name: Administrar mensajes en cuarentena y archivos como administrador
           href: manage-quarantined-messages-and-files.md
         - name: Directivas de cuarentena

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Obtenga información acerca de cómo usar el servicio de importación en el Centro de cumplimiento de Microsoft 365 para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
-ms.openlocfilehash: efb51aebcca5d724b8a1f8ecaabb6eeb5f31e8dd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da5d795c2b2babb2f2ff89bb1cdd5531d4818b1b
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184065"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011277"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Información general sobre la importación de archivos PST de su organización
 
@@ -92,7 +92,7 @@ A continuación, le presentamos una ilustración y una descripción del proceso 
 
 - Importar datos de correo a Microsoft 365 ayuda a satisfacer las necesidades de cumplimiento de la organización, ya que le permite:
 
-  - Habilitar [buzones de archivo](enable-archive-mailboxes.md) y [archivo ilimitado](unlimited-archiving.md) proporciona a los usuarios un mayor espacio de almacenamiento en su buzón.
+  - Habilitar [buzones de archivo](enable-archive-mailboxes.md) y [archivado de ampliación automática](autoexpanding-archiving.md) proporciona a los usuarios un mayor espacio de almacenamiento en su buzón.
 
   - Establezca los buzones en [Suspensión por litigio](./create-a-litigation-hold.md) para conservar el contenido.
 
