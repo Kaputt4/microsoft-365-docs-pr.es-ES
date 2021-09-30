@@ -22,16 +22,17 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener soporte técnico en línea o por teléfono para su suscripción Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: a83085a9cc7abc66aa3505208b8480c94f7b692a
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: e224b5a6224dc182d36a99f0b7943a586c64b08a
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934064"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988612"
 ---
 # <a name="get-support"></a>Obtener soporte técnico
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="watch-get-help-or-support"></a>Ver: obtener ayuda o soporte técnico
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
@@ -76,6 +77,12 @@ Administradores, tengan los datos de su cuenta preparados cuando llamen.
 Si no encuentra su número de teléfono de soporte en la lista anterior, use el siguiente menú desplegable para elegir su país o región.
 
 [!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+
+## <a name="small-business-support-with-business-assist"></a>Soporte técnico para pequeñas empresas con Business Assist
+
+Saque el máximo partido a su suscripción con consejos expertos de especialistas en pequeñas empresas.
+
+Business Assist para Microsoft 365 está diseñado para que usted y sus empleados tengan acceso las 24 horas a los especialistas de pequeñas empresas a medida que crece su negocio, desde el momento de la incorporación hasta el uso diario. Para obtener más información, vea [Business Assist](../admin/misc/business-assist.md).
 
 ::: moniker-end
 
@@ -239,7 +246,6 @@ Las opciones de soporte asistido son solo para administradores de organizaciones
 También puede [buscar en los foros de la comunidad de Microsoft 365 para empresas](https://go.microsoft.com/fwlink/p/?LinkId=518605) para encontrar problemas conocidos y temas destacados, o publicar una pregunta nueva. Los foros de la comunidad están supervisados por agentes de soporte técnico de Microsoft cualificados que pueden ayudarle a solucionar el problema.
 
 ::: moniker-end
-
 
 ## <a name="related-content"></a>Contenido relacionado
 
