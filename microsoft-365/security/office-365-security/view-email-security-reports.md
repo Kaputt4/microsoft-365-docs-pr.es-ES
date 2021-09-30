@@ -19,12 +19,12 @@ description: Los administradores pueden aprender a buscar y usar los informes de
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6486059702875e4bf318d04da9be0249dc6cb7df
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 9f3861cc57276cec6dcd09ba843ede35ab9dd583
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942311"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011493"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -602,7 +602,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 - **Asunto**
 - **Remitente**
 - **Destinatarios**
-- **Tecchnology de detección**
+- **Tecnología de detección**
 - **Estado de entrega**
 - **IP del remitente**
 - **Tags**

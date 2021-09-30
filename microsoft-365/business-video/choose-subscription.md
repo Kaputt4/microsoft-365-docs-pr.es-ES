@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información Microsoft 365 suscripción adecuada para su organización.
-ms.openlocfilehash: 2c269ff7dc620da0c638f2c82a836ae9b0406780
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4c1bd7ac67cd44baa8317295ade0e5525764b523
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219380"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011409"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Elegir una Microsoft 365 suscripción
 
@@ -64,12 +64,12 @@ Elegir la suscripción Microsoft 365 es clave para sacar el máximo partido al s
 | **Protección de la información** | Office 365 de pérdida de datos | No | Sí | Sí |
  | Plan 1 de Azure Information Protection, cumplimiento de BitLocker | | No | Sí | No |
 | **Derechos de CAL locales** | Suite ECAL (Exchange, SharePoint, Skype) | No | No | Sí |
-| **Cumplimiento** | Archivado de correo electrónico ilimitado\*\*\* | No | Sí | Sí |
+| **Cumplimiento** | Archivado de correo electrónico adicional\*\*\* | No | Sí | Sí |
 
 \*Indica que Microsoft 365 Empresa Estándar tiene el Plan 1 de la funcionalidad y Office 365 Enterprise E3 tiene plan 2.
 
 \*\* Disponible en Estados Unidos, Reino Unido, Canadá.
 
-\*\*\* Archivado ilimitado cuando se ha activado la expansión automática.
+\*\*\* Espacio de almacenamiento de archivo adicional cuando se ha activado el archivado de expansión automática.
 
 Para comparar Microsoft 365 Empresa Premium con otros productos, incluidos otros planes de Microsoft 365, vea [Licensing Microsoft 365 for small and medium-sized businesses](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb).

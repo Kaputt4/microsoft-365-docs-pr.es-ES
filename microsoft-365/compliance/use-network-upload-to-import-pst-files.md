@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 625d9e37246fa6c4e24754be2e3bc830740124a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fbe16615c4497babee9c7d1ce905b8cd4d2c23cd
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216227"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011481"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365
 
@@ -316,7 +316,7 @@ Después de crear e iniciar el trabajo de importación en el paso 5, Microsoft 3
 
   - Permite satisfacer las necesidades de cumplimiento de su organización, ya que facilita la aplicación de las características de cumplimiento de Microsoft 365 a los datos de los archivos PST que ha importado. Esto incluye:
 
-  - Habilitar [buzones de archivo](enable-archive-mailboxes.md) y el [archivado de ampliación automática](enable-unlimited-archiving.md) para dar a los usuarios espacio de almacenamiento de buzón adicional para almacenar los datos importados.
+  - Habilitar [buzones de archivo](enable-archive-mailboxes.md) y el [archivado de ampliación automática](enable-autoexpanding-archiving.md) para dar a los usuarios espacio de almacenamiento de buzón adicional para almacenar los datos importados.
 
   - Colocar los buzones en [Suspensión por litigio](./create-a-litigation-hold.md) para conservar los datos importados.
 

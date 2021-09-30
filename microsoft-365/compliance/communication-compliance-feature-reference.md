@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a8b2cc5498d15fe174d58fc9b4caf2b33982f38d
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 2d2ea7c85badc5fbd8b9ed2939cefbb42fd276e6
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988918"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011313"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -94,7 +94,7 @@ Para administrar las directivas que se acercan a los límites de almacenamiento 
 - Examine la directiva en busca de alertas falsas positivas excesivas. Considere la posibilidad de agregar excepciones o cambios a las condiciones de la directiva para omitir las alertas falsas positivas comunes.
 - Si una directiva ha alcanzado los límites de almacenamiento o mensaje y se ha desactivado, realice una copia de la directiva para seguir detectando y haciendo acciones para las mismas condiciones y usuarios.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 > [!IMPORTANT]
 > De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Los roles asignados en este paso son necesarios antes de que se pueda acceder a las características de cumplimiento de comunicaciones.
@@ -363,7 +363,7 @@ Los filtros de cumplimiento de comunicaciones permiten filtrar y ordenar mensaje
 
 |**Filter**|**Detalles**|
 |:-----|:-----|
-| **Fecha** | La fecha en que un usuario de la organización envió o recibió el mensaje. Para filtrar por un solo día, seleccione un intervalo de fechas que comience con el día para el que desea obtener los resultados y termine con el día siguiente. Por ejemplo, si desea filtrar los resultados del 20/9/2020, elegiría un intervalo de fechas de filtro del 20/09/2020-9/21/2020.|
+| **Date** | La fecha en que un usuario de la organización envió o recibió el mensaje. Para filtrar por un solo día, seleccione un intervalo de fechas que comience con el día para el que desea obtener los resultados y termine con el día siguiente. Por ejemplo, si desea filtrar los resultados del 20/9/2020, elegiría un intervalo de fechas de filtro del 20/09/2020-9/21/2020.|
 | **Clase File** | Clase del mensaje basada en el tipo de mensaje, ya sea *mensaje o* *datos adjuntos.* |
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
 | **Clase Item** | El origen del mensaje según el tipo de mensaje, el correo electrónico, el chat de Microsoft Team, Bloomberg, etc. Para obtener más información sobre tipos de elementos y clases de mensaje comunes, vea [Tipos de elementos y clases de mensaje](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
@@ -387,7 +387,7 @@ Para las directivas de cumplimiento de comunicaciones, los siguientes valores de
 |**Desencadenador de directiva de alerta**|**Valor predeterminado**|
 |:-----|:-----|
 | Agregación | Agregación sencilla |
-| Umbral | Mínimo: 3 actividades <br> Máximo: 2.147.483.647 actividades |
+| Umbral | Mínimo: 4 actividades <br> Máximo: 2.147.483.647 actividades |
 | Window | Mínimo: 60 minutos <br> Máximo: 10.000 minutos |
 
 > [!NOTE]

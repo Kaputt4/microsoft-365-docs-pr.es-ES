@@ -17,30 +17,30 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Use alertas de servicio de uso de buzones para supervisar los buzones en espera que están alcanzando su cuota de buzón.
-ms.openlocfilehash: afae43f0c589d6c025fb0e1d20a7c5cf81eacbe2
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 32536cf8a034867ecb82e44487f34280a9b591ac
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480777"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011469"
 ---
-# <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alertas de servicio para el uso de buzones en Exchange Online supervisión
+# <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alertas de servicio para el uso de buzones en la supervisión de Exchange Online
 
 Hemos publicado una nueva alerta de servicio Exchange Online que le informa de los buzones que están en espera y que están en riesgo de alcanzar o exceder su cuota. Estas alertas de servicio proporcionan visibilidad del número de buzones de la organización que pueden requerir intervención del administrador.
 
 Estas alertas de servicio se muestran en el Centro de administración de Microsoft 365. Para ver estas alertas de servicio, vaya a **Health** Service health Exchange Online y, a  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >  **continuación,** haga clic en la pestaña Problemas **activos.** Este es un ejemplo de una alerta de servicio de uso de buzones.
 
-![Alerta del servicio de uso de buzones](../media/MailboxUtilizationServiceAlert.png)
+:::image type="content" alt-text="Alerta del servicio de uso de buzones." source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
 Para mostrar una lista de buzones que se acercan a su cuota de almacenamiento (denominado informe de uso del *buzón),* haga clic en el vínculo resaltado en la siguiente captura de pantalla. Este vínculo se muestra en la alerta de servicio.
 
-![Vínculo al informe de uso del buzón](../media/LinkToMailboxUsageReport.png)
+:::image type="content" alt-text="Vínculo al informe de uso del buzón." source="../media/LinkToMailboxUsageReport.png" lightbox="../media/LinkToMailboxUsageReport.png":::
 
 Como alternativa, la dirección URL directa al informe de uso del buzón es <https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage/MailboxUsage> .
 
 ## <a name="what-do-these-service-alerts-indicate"></a>¿Qué indican estas alertas de servicio?
 
-Las alertas de servicio para el uso del buzón informan a los administradores sobre los buzones en espera que se acercan a la cuota de almacenamiento del buzón. El tipo de retenciones que se pueden colocar en los buzones incluyen retenciones por juicio, retención de exhibición de documentos electrónicos y directivas de retención Microsoft 365 (que están configuradas para retener datos). Cuando un buzón está en espera, los usuarios (o procesos automatizados) no pueden quitar permanentemente los datos de su buzón. En su lugar, los administradores deben configurar directivas de retención de MRM en Exchange Online (en línea con las directivas de cumplimiento de su organización relacionadas con la retención de datos) para mover datos del buzón principal de un usuario a su buzón de archivo. Si no es así y un buzón de correo en una retención [](../compliance/enable-unlimited-archiving.md) alcanza un estado crítico o de advertencia, los [administradores](../compliance/enable-archive-mailboxes.md) tienen que habilitar buzones de archivo y habilitar el archivado de expansión automática y, a continuación, asegurarse de que el período de retención de la directiva de archivo asignada al buzón (que mueve el correo electrónico del buzón principal al buzón de archivo) sea lo suficientemente corto. Si no se hace nada para resolver los problemas de cuota identificados por las alertas del servicio de uso de buzones de correo, es posible que los usuarios no puedan enviar ni recibir mensajes de correo electrónico ni invitaciones a reuniones.
+Las alertas de servicio para el uso del buzón informan a los administradores sobre los buzones en espera que se acercan a la cuota de almacenamiento del buzón. El tipo de retenciones que se pueden colocar en los buzones incluyen retenciones por juicio, retención de exhibición de documentos electrónicos y directivas de retención Microsoft 365 (que están configuradas para retener datos). Cuando un buzón está en espera, los usuarios (o procesos automatizados) no pueden quitar permanentemente los datos de su buzón. En su lugar, los administradores deben configurar directivas de retención de MRM en Exchange Online (en línea con las directivas de cumplimiento de su organización relacionadas con la retención de datos) para mover datos del buzón principal de un usuario a su buzón de archivo. Si no es así y un buzón de correo en una retención [](../compliance/enable-autoexpanding-archiving.md) alcanza un estado crítico o de advertencia, los [administradores](../compliance/enable-archive-mailboxes.md) tienen que habilitar buzones de archivo y habilitar el archivado de expansión automática y, a continuación, asegurarse de que el período de retención de la directiva de archivo asignada al buzón (que mueve el correo electrónico del buzón principal al buzón de archivo) sea lo suficientemente corto. Si no se hace nada para resolver los problemas de cuota identificados por las alertas del servicio de uso de buzones de correo, es posible que los usuarios no puedan enviar ni recibir mensajes de correo electrónico ni invitaciones a reuniones.
 
 Una alerta de servicio para el uso de buzones contiene tablas sobre el número de buzones que se acercan a su cuota. En las secciones siguientes se describe la información de estas tablas y la acción que los administradores pueden realizar para ayudar a garantizar que estos buzones no superen su cuota.
 
@@ -82,8 +82,8 @@ Las alertas de servicio para el uso de buzones también pueden contener una tabl
 
 | RetentionPolicyGuid | MailboxType | HasMoveDumpsterToArchiveTag | HasMovePrimaryToArchiveTag | HasPersonalArchiveTag |  Buzones |
 |:--------------|:--------------|:---------------|:---------------|:---------------|:--------------- |
-| 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | Verdadero | False | True | 398 |
-| 6c041498-1611-5011-a058-1156ce60890c | Principal | Verdadero | False | True | 10 |
+| 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | True | False | True | 398 |
+| 6c041498-1611-5011-a058-1156ce60890c | Principal | True | False | True | 10 |
 | 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | True | False | 7  |
 | 269f6a85-1234-4648-8cde-59bbc7bc67d0 | PrimaryWithArchive | True | True | True | 1 |
 | 13fb778d-e1cb-4c44-5768-ad4282906c1f | PrimaryWithArchive | True | True  | False | 1 |

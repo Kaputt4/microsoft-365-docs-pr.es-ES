@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - MSStore_Link
@@ -27,16 +28,19 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Inicie sesión con su cuenta Microsoft 365 administrador para restablecer las contraseñas de los usuarios en Microsoft 365 suscripción para empresas.
-ms.openlocfilehash: 50b964826b59287405c86a7918609535edb87b4f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 03081e4a0465206ae66cc8201411206932d15e8c
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775329"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011215"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
 En este artículo se explica cómo restablecer las contraseñas para usted y para los usuarios cuando tiene una suscripción Microsoft 365 para empresas.
+
+> [!NOTE]
+> También puedes configurar el restablecimiento de contraseñas de autoservicio para los usuarios para que puedan restablecer sus propias contraseñas. Para obtener más información, vea [Permitir que los usuarios restablezcan sus propias contraseñas.](let-users-reset-passwords.md)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -64,7 +68,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 ## <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
-Le recomendamos encarecidamente que configure el autoservicio de restablecimiento de contraseña. Así, no tendrá que restablecer de forma manual las contraseñas de los usuarios. Para obtener información sobre cómo hacerlo, vea [Permitir que los usuarios puedan restablecer sus propias contraseñas en Office 365](let-users-reset-passwords.md).
+Le recomendamos encarecidamente que configure el autoservicio de restablecimiento de contraseña. Así, no tendrá que restablecer de forma manual las contraseñas de los usuarios. Así no tendrá tanto trabajo. Para obtener información sobre cómo hacerlo, vea [Permitir que los usuarios puedan restablecer sus propias contraseñas en Office 365](let-users-reset-passwords.md).
 
 ## <a name="reset-my-admin-password"></a>Restablecer mi contraseña de administrador
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: El administrador puede aprender a importar masivamente archivos PST Microsoft 365 buzones de correo copiando archivos PST en un disco duro y, a continuación, envio a Microsoft.
-ms.openlocfilehash: 30b345a887f0b2288394fc07b3b5b290b58c9fed
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c80428d1c1fc5fdbb8a8863dc4c6fbc4438d6c26
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401811"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011421"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Usar el trasvase de unidades para importar los archivos PST de la organización
 
@@ -372,13 +372,13 @@ Una vez cargados los archivos PST en Azure, el estado cambia a **Análisis en cu
   
 6. Realiza una de las siguientes acciones:
 
-    A. Para recortar los datos que importa, haga clic en **Sí, quiero filtrarlos antes de importarlos**.
+   1. Para recortar los datos que importa, haga clic en **Sí, quiero filtrarlos antes de importarlos**.
 
-    Para obtener instrucciones detalladas paso a paso sobre cómo filtrar los datos en los archivos PST y, después, iniciar el trabajo de importación, vea [Filtrar datos al importar archivos PST a Office 365](filter-data-when-importing-pst-files.md).
+      Para obtener instrucciones detalladas paso a paso sobre cómo filtrar los datos en los archivos PST y, después, iniciar el trabajo de importación, vea [Filtrar datos al importar archivos PST a Office 365](filter-data-when-importing-pst-files.md).
 
-    O bien
+      O bien:
 
-    B. Para importar todos los datos de los archivos PST, haga clic en **No, quiero importarlos todos** y en **Siguiente**.
+   1. Para importar todos los datos de los archivos PST, haga clic en **No, quiero importarlos todos** y en **Siguiente**.
 
 7. Si ha elegido importar todos los datos, haga clic en **Importar datos** para iniciar el trabajo de importación. 
 
@@ -445,7 +445,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
 
 - El trasvase de unidades es una forma eficaz de importar grandes cantidades de datos de mensajería de archivo a Microsoft 365 aprovechar las características de cumplimiento que están disponibles para su organización. Después de importar datos de archivo a buzones de usuario, puede:
 
-  - Habilite [los buzones de archivo](enable-archive-mailboxes.md) y el archivado de expansión [automática](enable-unlimited-archiving.md) para proporcionar a los usuarios más espacio de almacenamiento de buzones de correo para los datos. 
+  - Habilite [los buzones de archivo](enable-archive-mailboxes.md) y el archivado de expansión [automática](enable-autoexpanding-archiving.md) para proporcionar a los usuarios más espacio de almacenamiento de buzones de correo para los datos. 
 
   - Colocar buzones en retención [por](./create-a-litigation-hold.md) juicio para conservar los datos. 
 

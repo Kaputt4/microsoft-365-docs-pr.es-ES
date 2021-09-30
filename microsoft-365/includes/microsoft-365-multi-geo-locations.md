@@ -13,7 +13,7 @@
 |Corea                        |KOR     |Centros de datos de Asia oriental o Asia sudoriental|
 |Norteamérica                |NAM     |Centros de datos de Estados Unidos                    |
 |Noruega                       |NOR     |(Ubicación de datos de eDiscovery disponible próximamente)|
-|Sudáfrica                 |ZAF     |Centros de datos de Asia oriental o Asia sudoriental|
+|Sudáfrica                 |ZAF     |Centros de datos de Europa                |
 |Suiza                  |CHE     |Centros de datos de Europa                |
 |Emiratos Árabes Unidos         |ARE     |Centros de datos de Asia oriental o Asia sudoriental|
 |Reino Unido               |GBR     |Centros de datos de Europa                |

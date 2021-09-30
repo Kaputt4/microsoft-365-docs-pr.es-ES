@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f473963bca6a3ad3e3ece57ecc30118e4ec6f62
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: 363abb059acc656de7ebdf074729374e75f84cff
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479566"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011457"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -57,6 +57,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
   - [Vídeo de la experiencia de administrador](https://youtu.be/vnar4HowfpY)
   - [Vídeo de la experiencia del usuario final](https://youtu.be/s-vozLO43rI)
   - Otras nuevas funcionalidades que llegan a la experiencia de cuarentena se describen en esta entrada de blog: [Simplificación de la experiencia de cuarentena](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388).
+  - El redireccionamiento del portal de forma predeterminada comienza y redirige a los usuarios desde seguridad & cumplimiento a Microsoft 365 Defender <https://security.microsoft.com> . Para obtener más información sobre esto, vea: [Redirecting accounts from Office 365 Security and Compliance Center to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
 
 ## <a name="august-2021"></a>Agosto de 2021
 
