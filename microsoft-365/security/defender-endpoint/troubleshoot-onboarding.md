@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: fbf7b2328a453f1fb20d77553548a71a0e1ca8ab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 47e532f8746c0fa4bb0b256754bfb5602b5e367b
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185729"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60008922"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -72,7 +72,7 @@ Si la incorporación se completó correctamente pero los  dispositivos no aparec
 
 1. Haga **clic en Inicio**, escriba Visor de **eventos** y presione **Entrar**.
 
-2. Vaya a **Windows Logs**  >  **Application**.
+2. Vaya a **Windows Logs** \> **Application**.
 
 3. Busque un evento del origen **de eventos WDATPOnboarding.**
 
@@ -81,16 +81,21 @@ Si el script falla y el evento es un error, puede comprobar el identificador de 
 > [!NOTE]
 > Los siguientes IDs de eventos son específicos solo del script de incorporación.
 
-Id. de evento | Tipo de error | Pasos de resolución
-:---:|:---|:---
- `5` | Se encontraron datos de offboarding, pero no se pudieron eliminar | Comprobar los permisos en el Registro, específicamente<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
-`10` | Los datos de incorporación no se pudieron escribir en el Registro |  Comprobar los permisos en el Registro, específicamente<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.<br>Compruebe que el script se ha ejecutado como administrador.
-`15` |  Error al iniciar el servicio SENSE |Compruebe el estado del servicio ( `sc query sense` comando). Asegúrese de que no está en un estado intermedio (*'Pending_Stopped',* *'Pending_Running'*) e intente volver a ejecutar el script (con derechos de administrador). <br> <br> Si el dispositivo se ejecuta Windows 10, la versión 1607 y la ejecución del comando `sc query sense` devuelve , reinicie el `START_PENDING` dispositivo. Si reiniciar el dispositivo no aborda el problema, actualice a KB4015217 e intente incorporarlo de nuevo.
-`15` | Error al iniciar el servicio SENSE | Si el mensaje del error es: Error del sistema 577 o error 1058, debe habilitar el controlador ELAM de Antivirus de Microsoft Defender, consulte [Ensure that Antivirus de Microsoft Defender is not disabled by a policy](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) for instructions.
-`30` |  El script no pudo esperar a que el servicio comenzara a ejecutarse | El servicio podría haber necesitado más tiempo para iniciarse o haber encontrado errores al intentar iniciarse. Para obtener más información sobre los eventos y errores relacionados con SENSE, vea [Review events and errors using Event viewer](event-error-codes.md).
-`35` |  El script no pudo encontrar el valor del Registro de estado de incorporación necesario | Cuando el servicio SENSE se inicia por primera vez, escribe el estado de incorporación en la ubicación del Registro<br>`HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`.<br> El script no pudo encontrarlo después de varios segundos. Puedes probarla manualmente y comprobar si está ahí. Para obtener más información sobre los eventos y errores relacionados con SENSE, vea [Review events and errors using Event viewer](event-error-codes.md).
-`40` | El estado de incorporación del servicio SENSE no está establecido en **1** | El servicio SENSE no se ha incorporado correctamente. Para obtener más información sobre los eventos y errores relacionados con SENSE, vea [Review events and errors using Event viewer](event-error-codes.md).
-`65` | Privilegios insuficientes| Vuelva a ejecutar el script con privilegios de administrador.
+<br>
+
+****
+
+|Id. de evento|Tipo de error|Pasos de resolución|
+|:---:|---|---|
+|`5`|Se encontraron datos de offboarding, pero no se pudieron eliminar|Comprobar los permisos en el Registro, específicamente <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.|
+|`10`|Los datos de incorporación no se pudieron escribir en el Registro|Comprobar los permisos en el Registro, específicamente <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`. <p> Compruebe que el script se ha ejecutado como administrador.|
+|`15`|Error al iniciar el servicio SENSE|Compruebe el estado del servicio ( `sc query sense` comando). Asegúrese de que no está en un estado intermedio (*'Pending_Stopped',* *'Pending_Running'*) e intente volver a ejecutar el script (con derechos de administrador). <p> Si el dispositivo se ejecuta Windows 10, la versión 1607 y la ejecución del comando `sc query sense` devuelve , reinicie el `START_PENDING` dispositivo. Si reiniciar el dispositivo no aborda el problema, actualice a KB4015217 e intente incorporarlo de nuevo.|
+|`15`|Error al iniciar el servicio SENSE|Si el mensaje del error es: Error del sistema 577 o error 1058, debe habilitar el controlador ELAM de Antivirus de Microsoft Defender, consulte [Ensure that Antivirus de Microsoft Defender is not disabled by a policy](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) for instructions.|
+|`30`|El script no pudo esperar a que el servicio comenzara a ejecutarse|El servicio podría haber necesitado más tiempo para iniciarse o haber encontrado errores al intentar iniciarse. Para obtener más información sobre los eventos y errores relacionados con SENSE, vea [Review events and errors using Event viewer](event-error-codes.md).|
+|`35`|El script no pudo encontrar el valor del Registro de estado de incorporación necesario|Cuando el servicio SENSE se inicia por primera vez, escribe el estado de incorporación en la ubicación del Registro <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> El script no pudo encontrarlo después de varios segundos. Puedes probarla manualmente y comprobar si está ahí. Para obtener más información sobre los eventos y errores relacionados con SENSE, vea [Review events and errors using Event viewer](event-error-codes.md).|
+|`40`|El estado de incorporación del servicio SENSE no está establecido en **1**|El servicio SENSE no se ha incorporado correctamente. Para obtener más información sobre los eventos y errores relacionados con SENSE, vea [Review events and errors using Event viewer](event-error-codes.md).|
+|`65`|Privilegios insuficientes|Vuelva a ejecutar el script con privilegios de administrador.|
+|
 
 ### <a name="troubleshoot-onboarding-issues-using-microsoft-intune"></a>Solucionar problemas de incorporación mediante Microsoft Intune
 
@@ -108,23 +113,33 @@ Si ninguno de los registros de eventos y los pasos de solución de problemas fun
 
 #### <a name="microsoft-intune-error-codes-and-oma-uris"></a>Microsoft Intune códigos de error y OMA-URIs
 
-Hexadecimal de código de error | Código de error Dec | Descripción del error | OMA-URI | Posibles pasos de causa y solución de problemas
-:---:|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | Error de corrección | Incorporación <br> Offboarding | **Causa posible:** Error en la incorporación o el offboarding en un blob incorrecto: firma incorrecta o faltaban campos PreviousOrgIds. <br><br> **Pasos de solución de problemas:** <br> Compruebe los IDs de eventos en la sección Ver errores de incorporación de [agentes en la sección registro de eventos del](#view-agent-onboarding-errors-in-the-device-event-log) dispositivo. <br><br> Compruebe los registros de eventos MDM en la tabla siguiente o siga las instrucciones de Diagnosticar errores [de MDM en Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
- | | | | Incorporación <br> Offboarding <br> SampleSharing | **Causa posible:** La clave del Registro de Microsoft Defender para directiva de extremo no existe o el cliente de OMA DM no tiene permisos para escribir en ella. <br><br> **Pasos de solución de problemas:** Asegúrese de que existe la siguiente clave del Registro: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> Si no existe, abra un comando con privilegios elevados y agregue la clave.
- | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Causa posible:** Un intento de corregir mediante una propiedad de solo lectura. Error en la incorporación. <br><br> **Pasos de solución de problemas:** Consulta los pasos de solución de problemas en [Solucionar problemas de incorporación en el dispositivo](#troubleshoot-onboarding-issues-on-the-device). <br><br> Compruebe los registros de eventos MDM en la tabla siguiente o siga las instrucciones de Diagnosticar errores [de MDM en Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
- | | | | Todo | **Causa posible:** Intente implementar Microsoft Defender para endpoint en SKU o plataforma no admitidas, especialmente sku holográfica. <br><br> Plataformas compatibles actualmente:<br> Enterprise, Educación y Professional.<br> El servidor no es compatible.
- 0x87D101A9 | -2016345687 |SyncML(425): error en el comando solicitado porque el remitente no tiene permisos de control de acceso (ACL) adecuados en el destinatario. | Todo |  **Causa posible:** Intente implementar Microsoft Defender para endpoint en SKU o plataforma no admitidas, especialmente sku holográfica.<br><br> Plataformas compatibles actualmente:<br>  Enterprise, Educación y Professional.
+<br>
+
+****
+
+|Hexadecimal de código de error|Código de error Dec|Descripción del error|OMA-URI|Posibles pasos de causa y solución de problemas|
+|:---:|---|---|---|---|
+|0x87D1FDE8|-2016281112|Error de corrección|Incorporación <p> Offboarding|**Causa posible:** Error en la incorporación o el offboarding en un blob incorrecto: firma incorrecta o faltaban campos PreviousOrgIds. <p> **Pasos de solución de problemas:** <p> Compruebe los IDs de eventos en la sección Ver errores de incorporación de [agentes en la sección registro de eventos del](#view-agent-onboarding-errors-in-the-device-event-log) dispositivo. <p> Compruebe los registros de eventos MDM en la tabla siguiente o siga las instrucciones de Diagnosticar errores [de MDM en Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
+||||Incorporación <p> Offboarding <p> SampleSharing|**Causa posible:** La clave del Registro de Microsoft Defender para directiva de extremo no existe o el cliente de OMA DM no tiene permisos para escribir en ella. <p> **Pasos de solución de problemas:** Asegúrese de que existe la siguiente clave del Registro: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> Si no existe, abra un comando con privilegios elevados y agregue la clave.|
+||||SenseIsRunning <p> OnboardingState <p> OrgId|**Causa posible:** Un intento de corregir mediante una propiedad de solo lectura. Error en la incorporación. <p> **Pasos de solución de problemas:** Consulta los pasos de solución de problemas en [Solucionar problemas de incorporación en el dispositivo](#troubleshoot-onboarding-issues-on-the-device). <p> Compruebe los registros de eventos MDM en la tabla siguiente o siga las instrucciones de Diagnosticar errores [de MDM en Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
+||||Todo|**Causa posible:** Intente implementar Microsoft Defender para endpoint en SKU o plataforma no admitidas, especialmente sku holográfica. <p> Plataformas compatibles actualmente: <p> Enterprise, Educación y Professional.<p> El servidor no es compatible.|
+|0x87D101A9|-2016345687|SyncML(425): error en el comando solicitado porque el remitente no tiene permisos de control de acceso (ACL) adecuados en el destinatario.|Todo|**Causa posible:** Intente implementar Microsoft Defender para endpoint en SKU o plataforma no admitidas, especialmente sku holográfica.<p> Plataformas compatibles actualmente: <p> Enterprise, Educación y Professional.|
+|
 
 #### <a name="known-issues-with-non-compliance"></a>Problemas conocidos con el incumplimiento
 
 En la tabla siguiente se proporciona información sobre los problemas de incumplimiento y cómo se pueden solucionar los problemas.
 
-Case | Síntomas | Posibles pasos de causa y solución de problemas
-:---:|:---|:---
- `1` | El dispositivo es compatible con SenseIsRunning OMA-URI. Pero orgId, onboarding e onboardingState OMA-URIs no cumplen. | **Causa posible:** Compruebe que el usuario ha pasado OOBE después Windows instalación o actualización. Durante la incorporación de OOBE no se pudo completar, pero SENSE ya se está ejecutando.<br><br> **Pasos de solución de problemas:** Espere a que se complete OOBE.
- `2` |  El dispositivo es compatible con OrgId, Onboarding e OnboardingState OMA-URIs, pero senseIsRunning OMA-URI no es compatible. |  **Causa posible:** El tipo de inicio del servicio Sense se establece como "Inicio retrasado". A veces esto hace que el Microsoft Intune informe del dispositivo como no compatible con SenseIsRunning cuando se produce una sesión de DM al iniciar el sistema. <br><br> **Pasos de solución de problemas:** El problema debe solucionarse automáticamente en un plazo de 24 horas.
- `3` | El dispositivo no es compatible | **Pasos de solución de problemas:** Asegúrese de que las directivas de incorporación y offboarding no se implementan en el mismo dispositivo al mismo tiempo.
+<br>
+
+****
+
+|Case|Síntomas|Posibles pasos de causa y solución de problemas|
+|:---:|---|---|
+|`1`|El dispositivo es compatible con SenseIsRunning OMA-URI. Pero orgId, onboarding e onboardingState OMA-URIs no cumplen.|**Causa posible:** Compruebe que el usuario ha pasado OOBE después Windows instalación o actualización. Durante la incorporación de OOBE no se pudo completar, pero SENSE ya se está ejecutando. <p> **Pasos de solución de problemas:** Espere a que se complete OOBE.|
+|`2`|El dispositivo es compatible con OrgId, Onboarding e OnboardingState OMA-URIs, pero senseIsRunning OMA-URI no es compatible.|**Causa posible:** El tipo de inicio del servicio Sense se establece como "Inicio retrasado". A veces esto hace que el Microsoft Intune informe del dispositivo como no compatible con SenseIsRunning cuando se produce una sesión de DM al iniciar el sistema. <p> **Pasos de solución de problemas:** El problema debe solucionarse automáticamente en un plazo de 24 horas.|
+|`3`|El dispositivo no es compatible|**Pasos de solución de problemas:** Asegúrese de que las directivas de incorporación y offboarding no se implementan en el mismo dispositivo al mismo tiempo.|
+|
 
 #### <a name="mobile-device-management-mdm-event-logs"></a>Registros de eventos de administración de dispositivos móviles (MDM)
 
@@ -134,9 +149,14 @@ Nombre del registro: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Pr
 
 Nombre del canal: Administrador
 
-Id. | Severity | Descripción del evento | Pasos para la solución de problemas
-:---|:---|:---|:---
-1819 | Error | Microsoft Defender para CSP de extremo: no se pudo establecer el valor del nodo. NodeId: (%1), TokenName: (%2), Result: (%3). | Descargue la [actualización acumulativa para Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
+<br>
+
+****
+
+|Identificador|Severity|Descripción del evento|Pasos para la solución de problemas|
+|---|---|---|---|
+|1819|Error|Microsoft Defender para CSP de extremo: no se pudo establecer el valor del nodo. NodeId: (%1), TokenName: (%2), Result: (%3).|Descargue la [actualización acumulativa para Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).|
+|
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>Solucionar problemas de incorporación en el dispositivo
 
@@ -152,7 +172,7 @@ Si las herramientas de implementación usadas no indican un error en el proceso 
 
 1. Haga **clic en Inicio**, escriba Visor de **eventos** y presione **Entrar**.
 
-2. En el **panel Visor de eventos (local),** expanda Registros **de** aplicaciones y servicios  >  **microsoft**  >  **Windows**  >  **SENSE**.
+2. En el **panel Visor de eventos (local),** expanda Registros **de** aplicaciones y servicios \> **microsoft** \> **Windows** \> **SENSE**.
 
    > [!NOTE]
    > SENSE es el nombre interno que se usa para hacer referencia al sensor de comportamiento que potencia Microsoft Defender para Endpoint.
@@ -167,27 +187,30 @@ Si las herramientas de implementación usadas no indican un error en el proceso 
 
 6. Los eventos que pueden indicar problemas aparecerán en el **panel** Operativo. Puede intentar solucionarlos en función de las soluciones de la tabla siguiente:
 
-Identificador de evento | Mensaje | Pasos de resolución
-:---:|:---|:---
- `5` | Error al conectarse al servidor en la variable Microsoft Defender para el servicio de _punto de conexión_ | [Asegúrese de que el dispositivo tiene acceso a Internet.](#ensure-the-device-has-an-internet-connection)
- `6` | El servicio de Microsoft Defender para puntos de conexión no está incorporado y no se encontraron parámetros de incorporación. Código de error: _variable_ | [Vuelva a ejecutar el script de incorporación](configure-endpoints-script.md).
- `7` | Microsoft Defender para el servicio de extremo no pudo leer los parámetros de incorporación. Código de error: _variable_ | [Asegúrese de que el dispositivo tiene acceso a Internet](#ensure-the-device-has-an-internet-connection)y vuelva a ejecutar todo el proceso de incorporación.
- `9` | Microsoft Defender para el servicio de extremo no pudo cambiar su tipo de inicio. Código de error: variable | Si el evento se produjo durante la incorporación, reinicie y vuelva a intentar ejecutar el script de incorporación. Para obtener más información, [vea Ejecutar el script de incorporación de nuevo](configure-endpoints-script.md). <br><br>Si el evento se produjo durante el offboarding, póngase en contacto con el soporte técnico.
-`10` | Microsoft Defender para el servicio de extremo no pudo conservar la información de incorporación. Código de error: variable | Si el evento se produjo durante la incorporación, vuelva a intentar ejecutar el script de incorporación. Para obtener más información, [vea Ejecutar el script de incorporación de nuevo](configure-endpoints-script.md). <br><br>Si el problema persiste, póngase en contacto con el soporte técnico.
-`15` | Microsoft Defender para endpoint no puede iniciar el canal de comandos con dirección URL: _variable_ | [Asegúrese de que el dispositivo tiene acceso a Internet.](#ensure-the-device-has-an-internet-connection)
-`17` | Microsoft Defender para el servicio de extremo no pudo cambiar la ubicación del servicio Telemetría y experiencias del usuario conectado. Código de error: variable | [Vuelva a ejecutar el script de incorporación](configure-endpoints-script.md). Si el problema persiste, póngase en contacto con el soporte técnico.
-`25` | Microsoft Defender para el servicio de extremo no pudo restablecer el estado de mantenimiento en el Registro. Código de error: _variable_ | Póngase en contacto con el servicio de soporte técnico.
-`27` | No se pudo habilitar Microsoft Defender para el modo de extremo en Windows Defender. Error en el proceso de incorporación. Código de error: variable | Póngase en contacto con el servicio de soporte técnico.
-`29` | No se pudieron leer los parámetros de offboarding. Tipo de error: %1, Código de error: %2, Descripción: %3 | Asegúrate de que el dispositivo tiene acceso a Internet y, a continuación, vuelve a ejecutar todo el proceso de offboarding.
-`30` | No se pudo deshabilitar el modo $(build.sense.productDisplayName) en Microsoft Defender para Endpoint. Código de error: %1 | Póngase en contacto con el servicio de soporte técnico.
-`32` | El servicio $(build.sense.productDisplayName) no pudo solicitar que se detuviera después del proceso de offboarding. Código de error: %1 | Compruebe que el tipo de inicio del servicio es manual y reinicie el dispositivo.
-`55` | No se pudo crear el registrador automático de ETW seguro. Código de error: %1 | Reinicie el dispositivo.
-`63` | Actualizar el tipo de inicio del servicio externo. Nombre: %1, tipo de inicio real: %2, tipo de inicio esperado: %3, código de salida: %4 | Identifique lo que está provocando cambios en el tipo de inicio del servicio mencionado. Si el código de salida no es 0, corrija el tipo de inicio manualmente en el tipo de inicio esperado.
-`64` | Inicio del servicio externo detenido. Nombre: %1, código de salida: %2 | Póngase en contacto con el soporte técnico si el evento vuelve a aparecer.
-`68` | El tipo de inicio del servicio es inesperado. Nombre del servicio: %1, tipo de inicio real: %2, tipo de inicio esperado: %3 | Identifique lo que está provocando cambios en el tipo de inicio. Corregir el tipo de inicio de servicio mencionado.
-`69` | El servicio se detiene. Nombre del servicio: %1 | Inicie el servicio mencionado. Póngase en contacto con el soporte técnico si persiste.
+   <br>
 
-<br />
+   ****
+
+   |Identificador de evento|Mensaje|Pasos de resolución|
+   |:---:|---|---|
+   |`5`|Error al conectarse al servidor en la variable Microsoft Defender para el servicio de _punto de conexión_|[Asegúrese de que el dispositivo tiene acceso a Internet.](#ensure-the-device-has-an-internet-connection)|
+   |`6`|El servicio de Microsoft Defender para puntos de conexión no está incorporado y no se encontraron parámetros de incorporación. Código de error: _variable_|[Vuelva a ejecutar el script de incorporación](configure-endpoints-script.md).|
+   |`7`|Microsoft Defender para el servicio de extremo no pudo leer los parámetros de incorporación. Código de error: _variable_|[Asegúrese de que el dispositivo tiene acceso a Internet](#ensure-the-device-has-an-internet-connection)y vuelva a ejecutar todo el proceso de incorporación.|
+   |`9`|Microsoft Defender para el servicio de extremo no pudo cambiar su tipo de inicio. Código de error: variable|Si el evento se produjo durante la incorporación, reinicie y vuelva a intentar ejecutar el script de incorporación. Para obtener más información, [vea Ejecutar el script de incorporación de nuevo](configure-endpoints-script.md). <br><br>Si el evento se produjo durante el offboarding, póngase en contacto con el soporte técnico.|
+   |`10`|Microsoft Defender para el servicio de extremo no pudo conservar la información de incorporación. Código de error: variable|Si el evento se produjo durante la incorporación, vuelva a intentar ejecutar el script de incorporación. Para obtener más información, [vea Ejecutar el script de incorporación de nuevo](configure-endpoints-script.md). <br><br>Si el problema persiste, póngase en contacto con el soporte técnico.|
+   |`15`|Microsoft Defender para endpoint no puede iniciar el canal de comandos con dirección URL: _variable_|[Asegúrese de que el dispositivo tiene acceso a Internet.](#ensure-the-device-has-an-internet-connection)|
+   |`17`|Microsoft Defender para el servicio de extremo no pudo cambiar la ubicación del servicio Telemetría y experiencias del usuario conectado. Código de error: variable|[Vuelva a ejecutar el script de incorporación](configure-endpoints-script.md). Si el problema persiste, póngase en contacto con el soporte técnico.|
+   |`25`|Microsoft Defender para el servicio de extremo no pudo restablecer el estado de mantenimiento en el Registro. Código de error: _variable_|Póngase en contacto con el servicio de soporte técnico.|
+   |`27`|No se pudo habilitar Microsoft Defender para el modo de extremo en Windows Defender. Error en el proceso de incorporación. Código de error: variable|Póngase en contacto con el servicio de soporte técnico.|
+   |`29`|No se pudieron leer los parámetros de offboarding. Tipo de error: %1, Código de error: %2, Descripción: %3|Asegúrate de que el dispositivo tiene acceso a Internet y, a continuación, vuelve a ejecutar todo el proceso de offboarding.|
+   |`30`|No se pudo deshabilitar el modo $(build.sense.productDisplayName) en Microsoft Defender para Endpoint. Código de error: %1|Póngase en contacto con el servicio de soporte técnico.|
+   |`32`|El servicio $(build.sense.productDisplayName) no pudo solicitar que se detuviera después del proceso de offboarding. Código de error: %1|Compruebe que el tipo de inicio del servicio es manual y reinicie el dispositivo.|
+   |`55`|No se pudo crear el registrador automático de ETW seguro. Código de error: %1|Reinicie el dispositivo.|
+   |`63`|Actualizar el tipo de inicio del servicio externo. Nombre: %1, tipo de inicio real: %2, tipo de inicio esperado: %3, código de salida: %4|Identifique lo que está provocando cambios en el tipo de inicio del servicio mencionado. Si el código de salida no es 0, corrija el tipo de inicio manualmente en el tipo de inicio esperado.|
+   |`64`|Inicio del servicio externo detenido. Nombre: %1, código de salida: %2|Póngase en contacto con el soporte técnico si el evento vuelve a aparecer.|
+   |`68`|El tipo de inicio del servicio es inesperado. Nombre del servicio: %1, tipo de inicio real: %2, tipo de inicio esperado: %3|Identifique lo que está provocando cambios en el tipo de inicio. Corregir el tipo de inicio de servicio mencionado.|
+   |`69`|El servicio se detiene. Nombre del servicio: %1|Inicie el servicio mencionado. Póngase en contacto con el soporte técnico si persiste.|
+   |
 
 Hay componentes adicionales en el dispositivo de los que depende el agente de Microsoft Defender para Endpoint para funcionar correctamente. Si no hay errores relacionados con la incorporación en el registro de eventos del agente de Microsoft Defender para endpoints, siga estos pasos para asegurarse de que los componentes adicionales estén configurados correctamente.
 
@@ -295,13 +318,14 @@ Si se produce un error en la comprobación y el entorno usa un proxy para conect
    > Todos Windows Defender (wdboot, wdfilter, wdnisdrv, wdnissvc y windefend) deben estar en su estado predeterminado. Cambiar el inicio de estos servicios no es compatible y puede forzarte a volver a crear una imagen del sistema.
    >
    > Configuraciones predeterminadas de ejemplo para WdBoot y WdFilter:
+   >
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
 ## <a name="troubleshoot-onboarding-issues-on-a-server"></a>Solucionar problemas de incorporación en un servidor
 
->[!NOTE]
->La siguiente guía de solución de problemas solo se aplica Windows Server 2016 y inferior.
+> [!NOTE]
+> La siguiente guía de solución de problemas solo se aplica Windows Server 2016 y inferior.
 
 Si encuentra problemas al incorporar un servidor, siga los siguientes pasos de comprobación para solucionar posibles problemas.
 
@@ -314,13 +338,13 @@ También es posible que tenga que comprobar lo siguiente:
 
     ![Imagen de la vista de proceso con Microsoft Defender para Endpoint Service en ejecución.](images/atp-task-manager.png)
 
-- Compruebe **Event Viewer** Applications and Services  >  **Logs** Operation  >  **Manager** para ver si hay algún error.
+- Compruebe **Event Viewer** Applications and Services \> **Logs** Operation \> **Manager** para ver si hay algún error.
 
 - En **Servicios,** compruebe si **el Microsoft Monitoring Agent** se está ejecutando en el servidor. Por ejemplo,
 
     ![Imagen de los servicios.](images/atp-services.png)
 
-- En **Microsoft Monitoring Agent**  >  **Azure Log Analytics (OMS),** compruebe los espacios de trabajo y compruebe que el estado se está ejecutando.
+- En **Microsoft Monitoring Agent** \> **Azure Log Analytics (OMS),** compruebe los espacios de trabajo y compruebe que el estado se está ejecutando.
 
     ![Imagen de Microsoft Monitoring Agent propiedades.](images/atp-mma-properties.png)
 
@@ -338,10 +362,12 @@ Los pasos siguientes proporcionan instrucciones para el siguiente escenario:
 - En este escenario, el servicio SENSE no se iniciará automáticamente aunque se haya implementado el paquete de incorporación
 
 > [!NOTE]
-> User Logon after OOBE is no longer required for SENSE service to start on the following or more recent Windows versions: Windows 10, versión 1809 or Windows Server 2019 with [April 22 2021 update rollup](https://support.microsoft.com/kb/5001384). Windows 10, versión 1909 con paquete acumulativo de actualizaciones de [abril de 2021](https://support.microsoft.com/kb/5001396). Windows 10, versión 2004/20H2 con paquete acumulativo de actualizaciones del 28 de abril de [2021](https://support.microsoft.com/kb/5001391). 
-
-
-> [!NOTE]
+> El inicio de sesión del usuario después de OOBE ya no es necesario para que el servicio SENSE se inicie en las siguientes versiones o versiones Windows recientes:
+>
+> - Windows 10, versión 1809 o Windows Server 2019 con el paquete acumulativo de actualizaciones del 22 de abril de [2021](https://support.microsoft.com/kb/5001384).
+> - Windows 10, versión 1909 con paquete acumulativo de actualizaciones de [abril de 2021](https://support.microsoft.com/kb/5001396).
+> - Windows 10, versión 2004/20H2 con paquete acumulativo de actualizaciones del 28 de abril de [2021](https://support.microsoft.com/kb/5001391).
+>
 > Los pasos siguientes solo son relevantes al usar Microsoft Endpoint Configuration Manager. Para obtener más información acerca de la incorporación mediante Microsoft Endpoint Configuration Manager, vea [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
 1. Cree una aplicación en Microsoft Endpoint Configuration Manager.
@@ -372,7 +398,7 @@ Los pasos siguientes proporcionan instrucciones para el siguiente escenario:
 
     ![Imagen de Microsoft Endpoint Configuration Manager configuration7.](images/mecm-7.png)
 
-8. En **el programa de** instalación de  >  **contenido,** especifique el comando: `net start sense` .
+8. En **el programa de** instalación de \> **contenido,** especifique el comando: `net start sense` .
 
     ![Imagen de Microsoft Endpoint Configuration Manager configuration8.](images/mecm-8.png)
 
@@ -459,7 +485,6 @@ Los pasos siguientes proporcionan instrucciones para el siguiente escenario:
 28. En **Finalización,** seleccione **Cerrar**.
 
     ![Imagen de Microsoft Endpoint Configuration Manager configuration30.](images/mecm-30.png)
-
 
 ## <a name="related-topics"></a>Temas relacionados
 

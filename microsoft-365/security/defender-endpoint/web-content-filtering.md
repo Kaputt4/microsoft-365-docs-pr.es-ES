@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bbf230d7ae21bd694fb3568b51903d6fa6581ab9
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: a394fadc5728258208abe2e9de5e94f849dd921e
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988792"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009582"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -66,11 +66,11 @@ Los datos se almacenan en la región seleccionada como parte de la configuració
 
 ## <a name="turn-on-web-content-filtering"></a>Activar el filtrado de contenido web
 
-En el menú de navegación de la izquierda, **seleccione Configuración**  >  **Endpoints**  >  **General**  >  **Advanced Features**. Desplácese hacia abajo hasta que vea la entrada para el filtrado **de contenido web**. Cambie la alternancia a **Las preferencias Activar** **y Guardar**.
+En el menú de navegación de la izquierda, **seleccione Configuración** \> **Endpoints** \> **General** \> **Advanced Features**. Desplácese hacia abajo hasta que vea la entrada para el filtrado **de contenido web**. Cambie la alternancia a **Las preferencias Activar** **y Guardar**.
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurar directivas de filtrado de contenido web
 
-Las directivas de filtrado de contenido web especifican qué categorías de sitio están bloqueadas en qué grupos de dispositivos. Para administrar las directivas, vaya a **Configuración** filtrado de contenido web de puntos de conexión  >    >   (en **Reglas**).
+Las directivas de filtrado de contenido web especifican qué categorías de sitio están bloqueadas en qué grupos de dispositivos. Para administrar las directivas, vaya a **Configuración** filtrado de contenido web de puntos de conexión \>  \>  (en **Reglas**).
 
 Las directivas se pueden implementar para bloquear cualquiera de las siguientes categorías primarias o secundarias:
 
@@ -172,9 +172,10 @@ Para agregar una nueva directiva, siga estos pasos:
 5. Revise el resumen y guarde la directiva. La actualización de directiva puede tardar hasta 2 horas en aplicarse a los dispositivos seleccionados.
 
 > [!NOTE]
+>
 > - Puedes implementar una directiva sin seleccionar ninguna categoría en un grupo de dispositivos. Esta acción creará una directiva de solo auditoría para ayudarle a comprender el comportamiento de los usuarios antes de crear una directiva de bloqueo.
 > - Si quita una directiva o cambia los grupos de dispositivos al mismo tiempo, esto puede provocar un retraso en la implementación de directivas.
-> - El bloqueo de la categoría "Uncategorized" puede provocar resultados inesperados y no deseados.  
+> - El bloqueo de la categoría "Uncategorized" puede provocar resultados inesperados y no deseados.
 
 ## <a name="end-user-experience"></a>Experiencia del usuario final
 
@@ -186,29 +187,29 @@ Es posible invalidar la categoría bloqueada en el filtrado de contenido web par
 
 Para definir un indicador personalizado, siga estos pasos:
 
-1. En el portal Microsoft 365 Defender ( ), vaya a Configuración Dirección URL de indicadores de puntos de [https://security.microsoft.com](https://security.microsoft.com)   >    >    >  **conexión/Agregar**  >  **elemento de dominio**.
+1. En el portal Microsoft 365 Defender ( ), vaya a Configuración Dirección URL de indicadores de puntos de <https://security.microsoft.com>  \>  \>  \> **conexión/Agregar** \> **elemento de dominio**.
 
 2. Escriba el dominio del sitio.
 
-3. Establezca la acción de directiva en **Permitir**.  
+3. Establezca la acción de directiva en **Permitir**.
 
 ### <a name="dispute-categories"></a>Categorías de disputas
 
-Si encuentra un dominio que se ha categorizado incorrectamente, puede disputar la categoría directamente desde el portal. 
+Si encuentra un dominio que se ha categorizado incorrectamente, puede disputar la categoría directamente desde el portal.
 
-Para disputar la categoría de un dominio, vaya a **Report**  >  **Web protection Web** Content Filtering  >  **Details**  >  **Domains**. En la pestaña dominios de los informes de filtrado de contenido web, verá puntos suspensivos junto a cada uno de los dominios. Mantenga el puntero sobre estos puntos suspensivos y seleccione **Categoría de disputa**.
+Para disputar la categoría de un dominio, vaya a **Report** \> **Web protection Web** Content Filtering \> **Details** \> **Domains**. En la pestaña dominios de los informes de filtrado de contenido web, verá puntos suspensivos junto a cada uno de los dominios. Mantenga el puntero sobre estos puntos suspensivos y seleccione **Categoría de disputa**.
 
 Se abrirá un panel donde puede seleccionar la prioridad y agregar más detalles, como la categoría sugerida para la recategorización. Una vez completado el formulario, seleccione **Enviar**. Nuestro equipo revisará la solicitud en un plazo de un día laborable. Para desbloquear inmediatamente, cree un [indicador de permitir personalizado](indicator-ip-domain.md).
 
 ### <a name="url-category-lookup"></a>Búsqueda de categorías de dirección URL
 
-Para determinar la categoría de un sitio web, puede usar la función de búsqueda de dirección URL disponible en el portal de Microsoft 365 Defender ( ) en [https://security.microsoft.com](https://security.microsoft.com) **Búsqueda de extremos**  >  . En los resultados de búsqueda url, la categoría de filtrado de contenido web aparece en **Dirección URL/Detalles del dominio**. Los administradores también pueden disputar la categoría del dominio directamente desde esta página, como se muestra en la imagen siguiente. Si no se muestra el resultado de la categoría, la dirección URL no está asignada actualmente a una categoría de filtrado de contenido web existente.
+Para determinar la categoría de un sitio web, puede usar la función de búsqueda de dirección URL disponible en el portal de Microsoft 365 Defender ( ) en <https://security.microsoft.com> **Búsqueda de extremos** \> . En los resultados de búsqueda url, la categoría de filtrado de contenido web aparece en **Dirección URL/Detalles del dominio**. Los administradores también pueden disputar la categoría del dominio directamente desde esta página, como se muestra en la imagen siguiente. Si no se muestra el resultado de la categoría, la dirección URL no está asignada actualmente a una categoría de filtrado de contenido web existente.
 
 ![Imagen de los resultados de búsqueda de categorías de filtrado de contenido web.](../../media/web-content-filtering-category-lookup.png)
 
 ## <a name="web-content-filtering-cards-and-details"></a>Detalles y tarjetas de filtrado de contenido web
 
-Seleccione **Protección**  >  **web de informes** para ver tarjetas con información sobre el filtrado de contenido web y la protección contra amenazas web. Las siguientes tarjetas proporcionan información resumida sobre el filtrado de contenido web.
+Seleccione **Protección** \> **web de informes** para ver tarjetas con información sobre el filtrado de contenido web y la protección contra amenazas web. Las siguientes tarjetas proporcionan información resumida sobre el filtrado de contenido web.
 
 ### <a name="web-activity-by-category"></a>Actividad web por categoría
 
@@ -246,11 +247,7 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 
 ### <a name="known-issues-and-limitations"></a>Problemas y limitaciones conocidos
 
-- Solo Microsoft Edge se admite si la configuración del sistema operativo del dispositivo es Server (**cmd**  >  **Systeminfo**  >  **OS Configuration**). La protección de red solo se admite en el modo de inspección en dispositivos de servidor, que es responsable de proteger el tráfico en exploradores de terceros compatibles.
-
-- Los dispositivos sinsignar tendrán datos incorrectos que se mostrarán en el informe. En el **pivot Detalles del** informe Grupos de dispositivos, es posible que  >   veas una fila con un campo Grupo de dispositivos en blanco. Este grupo contiene los dispositivos sinsignación antes de que se coloquen en el grupo especificado. Es posible que el informe de esta fila no contenga un recuento preciso de dispositivos o recuentos de acceso.
-
-- Actualmente, los informes de filtrado de contenido web están limitados a mostrar los 5000 registros principales. Por ejemplo, el informe Dominios solo mostrará un máximo de los 5000 dominios principales para una consulta de filtro determinada, si procede. 
+Solo Microsoft Edge se admite si la configuración del sistema operativo del dispositivo es Server (**cmd** \> **Systeminfo** \> **OS Configuration**). La protección de red solo se admite en el modo de inspección en dispositivos de servidor, que es responsable de proteger el tráfico en exploradores de terceros compatibles.
 
 ## <a name="see-also"></a>Vea también
 

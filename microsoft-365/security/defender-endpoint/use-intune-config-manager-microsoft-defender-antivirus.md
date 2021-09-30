@@ -18,12 +18,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 112d4b8336456dd3668e3b1ad6abdd04788991ff
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: b2ab5052d51e966cc34fe6f1cfa292aa38f3be5a
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490840"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009606"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>Use Microsoft Endpoint Manager para configurar y administrar Antivirus de Microsoft Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "59490840"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-Puede usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para configurar los Antivirus de Microsoft Defender digitalizaciones. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Configuration Manager](/mem/configmgr/core/understand/introduction) ahora forman parte de Endpoint Manager.  
+Puede usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para configurar los Antivirus de Microsoft Defender digitalizaciones. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Configuration Manager](/mem/configmgr/core/understand/introduction) ahora forman parte de Endpoint Manager.
 
 ## <a name="configure-microsoft-defender-antivirus-scans-in-endpoint-manager"></a>Configurar Antivirus de Microsoft Defender exámenes en Endpoint Manager
 
@@ -44,7 +44,7 @@ Puede usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para con
 
 3. En **Administrar**, elija **Antivirus**.
 
-4. Seleccione la directiva Antivirus de Microsoft Defender usuario. 
+4. Seleccione la directiva Antivirus de Microsoft Defender usuario.
 
 5. En **Administrar**, elija **Propiedades**.
 
@@ -54,10 +54,8 @@ Puede usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para con
 
 8. Elija **Revisar y guardar**
 
-
 > [!TIP]
 > ¿Necesita ayuda? Consulte [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
-
 
 ## <a name="related-articles"></a>Artículos relacionados
 

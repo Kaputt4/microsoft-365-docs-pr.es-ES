@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5a3ea32227f64fbf00563f2b48f99b0a21e5510e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e1dc8c9cb2ad868c0ef8a1265150abc5f2d1d8b8
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214727"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009474"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuario
 
@@ -37,8 +37,7 @@ ms.locfileid: "59214727"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
-Método|Tipo de valor devuelto |Descripción
-:---|:---|:---
-[Enumerar alertas relacionadas con el usuario](get-user-related-alerts.md) | Colección [alert](alerts.md) |  Enumerar todas las alertas asociadas a un [usuario](user.md).
-[Enumerar dispositivos relacionados con el usuario](get-user-related-machines.md) | [colección machine](machine.md) | Enumerar todos los dispositivos que un usuario ha iniciado [sesión.](user.md)
+Método|Tipo de valor devuelto|Descripción
+---|---|---
+[Enumerar alertas relacionadas con el usuario](get-user-related-alerts.md)|Colección [alert](alerts.md)|Enumerar todas las alertas asociadas a un [usuario](user.md).
+[Enumerar dispositivos relacionados con el usuario](get-user-related-machines.md)|[colección machine](machine.md)|Enumerar todos los dispositivos que un usuario ha iniciado [sesión.](user.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 30e1229db1af93c74731678723b60d7d20640f9b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2d6831cfaec813f5ab2598087c2777d867a5f8a7
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213380"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009426"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnerabilidades en mi organización: Administración de amenazas y vulnerabilidades
 
@@ -40,11 +40,11 @@ Threat y administración de vulnerabilidades usa las mismas señales en Defender
 
 En la página Puntos débiles se enumeran las vulnerabilidades de software a las que se exponen los dispositivos al enumerar el identificador vulnerabilidades y **exposiciones** comunes (CVE). También puede ver la gravedad, la clasificación del Sistema de puntuación de vulnerabilidad común (CVSS), la prevalencia en su organización, la vulneración correspondiente, las perspectivas de amenazas y mucho más.
 
->[!NOTE]
->Si no hay ningún identificador CVE oficial asignado a una vulnerabilidad, el nombre de vulnerabilidad se asigna mediante Administración de amenazas y vulnerabilidades.
+> [!NOTE]
+> Si no hay ningún identificador CVE oficial asignado a una vulnerabilidad, el nombre de vulnerabilidad se asigna mediante Administración de amenazas y vulnerabilidades.
 
->[!TIP]
->Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
+> [!TIP]
+> Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-weaknesses-page"></a>Vaya a la página Puntos débiles
 
@@ -76,13 +76,13 @@ Corrija las vulnerabilidades de los dispositivos expuestos para reducir el riesg
 
 Vea cualquier información relacionada sobre infracciones y amenazas en la columna **Amenaza** cuando los iconos estén de color rojo.
 
- >[!NOTE]
- > Priorice siempre las recomendaciones asociadas con amenazas continuas. Estas recomendaciones se marcan con el icono de información de amenazas ![ Dibujo simple de un error rojo.](images/tvm_bug_icon.png) e icono de información de vulneración ![ Dibujo simple de una flecha que alcanza un destino. ](images/tvm_alert_icon.png) .  
+ > [!NOTE]
+ > Priorice siempre las recomendaciones asociadas con amenazas continuas. Estas recomendaciones se marcan con el icono de información de amenazas ![ Dibujo simple de un error rojo.](images/tvm_bug_icon.png) e icono de información de vulneración ![ Dibujo simple de una flecha que alcanza un destino. ](images/tvm_alert_icon.png) .
 
 El icono de información de infracciones se resalta si hay una vulnerabilidad encontrada en su organización.
 ![Ejemplo de un texto de información de infracciones que podría aparecer al pasar el mouse sobre el icono. Este dice que "la posible alerta activa está asociada con esta recomendación.](images/tvm-breach-insights.png)
 
-El icono de información sobre amenazas se resalta si hay vulnerabilidades asociadas en la vulnerabilidad encontrada en la organización. Si se mantiene el mouse sobre el icono, se muestra si la amenaza forma parte de un kit de vulnerabilidades o está conectada a grupos de actividades o campañas persistentes avanzadas específicos. Cuando está disponible, hay un vínculo a un informe de Análisis de amenazas con noticias de explotación de día cero, divulgaciones o avisos de seguridad relacionados.  
+El icono de información sobre amenazas se resalta si hay vulnerabilidades asociadas en la vulnerabilidad encontrada en la organización. Si se mantiene el mouse sobre el icono, se muestra si la amenaza forma parte de un kit de vulnerabilidades o está conectada a grupos de actividades o campañas persistentes avanzadas específicos. Cuando está disponible, hay un vínculo a un informe de Análisis de amenazas con noticias de explotación de día cero, divulgaciones o avisos de seguridad relacionados.
 
 ![Threat insights text that could show up when hovering over icon. Este tiene varios puntos de viñeta y texto vinculado.](images/tvm-threat-insights.png)
 

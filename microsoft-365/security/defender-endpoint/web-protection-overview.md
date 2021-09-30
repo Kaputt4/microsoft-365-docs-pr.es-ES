@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 345088af66e08cb693d2b0a8a1e9bfbc51400aab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8adc45741bfecfce7373ba23303803f90aea65ab
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214720"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010098"
 ---
 # <a name="web-protection"></a>Protección web
 
@@ -49,9 +49,7 @@ Las tarjetas que hacen de la protección contra amenazas web son **las deteccion
 La protección contra amenazas web incluye:
 
 - Visibilidad completa de las amenazas web que afectan a su organización.
-
 - Capacidades de investigación sobre la actividad de amenazas relacionadas con la web a través de alertas y perfiles completos de direcciones URL y los dispositivos que tienen acceso a estas direcciones URL.
-
 - Un conjunto completo de características de seguridad que realiza un seguimiento de las tendencias generales de acceso a sitios web malintencionados y no deseados.
 
 Para obtener más información, vea [Protección contra amenazas web](web-threat-protection.md).
@@ -63,9 +61,7 @@ Las detecciones de indicadores personalizados también se resumen en los informe
 El indicador personalizado incluye:
 
 - Capacidad para crear indicadores de peligro basados en IP y URL para proteger su organización contra amenazas.
-
 - Capacidades de investigación sobre actividades relacionadas con los perfiles de IP/URL personalizados y los dispositivos que tienen acceso a estas direcciones URL.
-
 - La capacidad de crear directivas de permitir, bloquear y advertir para direcciones IP y direcciones URL.
 
 Para obtener más información, vea [Create indicators for IPs and URLs/domains](indicator-ip-domain.md)
@@ -77,9 +73,7 @@ El filtrado de contenido web incluye **actividad web por categoría,** resumen d
 El filtrado de contenido web incluye:
 
 - Se impide que los usuarios accedan a sitios web en categorías bloqueadas, ya sea que estén explorando localmente o lejos.
-
 - Puedes implementar cómodamente directivas variadas en varios conjuntos de usuarios mediante los grupos de dispositivos definidos en la configuración del control de acceso basado en roles de Microsoft Defender para [endpoint.](/microsoft-365/security/defender-endpoint/rbac)
-
 - Puede tener acceso a los informes web en la misma ubicación central, con visibilidad sobre los bloques reales y el uso web.
 
 Para obtener más información, vea [Filtrado de contenido web](web-content-filtering.md).
@@ -89,26 +83,24 @@ Para obtener más información, vea [Filtrado de contenido web](web-content-filt
 La protección web está hecha de los siguientes componentes, enumerados en orden de prioridad. Cada uno de estos componentes es aplicado por el cliente smartscreen en Microsoft Edge y por el cliente de protección de red en todos los demás exploradores y procesos.
 
 - Indicadores personalizados (IP/URL, directivas Microsoft Cloud App Security (MCAS)
-
-    - Permitir
-    - Advertir
-    - Bloquear
+  - Permitir
+  - Advertir
+  - Bloquear
 
 - Amenazas web (malware, phish)
-
-    - SmartScreen Intel, incluido Exchange Online Protection (EOP)
-    - Escalaciones
+  - SmartScreen Intel, incluido Exchange Online Protection (EOP)
+  - Escalaciones
 
 - Filtrado de contenido web (WCF)
 
->[!Note]
->Microsoft Cloud App Security (MCAS) genera actualmente indicadores solo para direcciones URL bloqueadas.
+> [!NOTE]
+> Microsoft Cloud App Security (MCAS) genera actualmente indicadores solo para direcciones URL bloqueadas.
 
-El orden de prioridad se relaciona con el orden de operaciones mediante el cual se evalúa una dirección URL o IP. Por ejemplo, si tiene una directiva de filtrado de contenido web, puede crear exclusiones a través de indicadores de IP/URL personalizados. Los indicadores personalizados de compromiso (IoC) son más altos en el orden de prioridad que los bloques WCF. 
+El orden de prioridad se relaciona con el orden de operaciones mediante el cual se evalúa una dirección URL o IP. Por ejemplo, si tiene una directiva de filtrado de contenido web, puede crear exclusiones a través de indicadores de IP/URL personalizados. Los indicadores personalizados de compromiso (IoC) son más altos en el orden de prioridad que los bloques WCF.
 
 Del mismo modo, durante un conflicto entre indicadores, siempre permite tener prioridad sobre los bloques (lógica de invalidación). Esto significa que un indicador de permitir ganará sobre cualquier indicador de bloque que esté presente.
 
-En la tabla siguiente se resumen algunas configuraciones comunes que presentarían conflictos dentro de la pila de protección web. También identifica las determinaciones resultantes en función de la prioridad enumerada anteriormente. 
+En la tabla siguiente se resumen algunas configuraciones comunes que presentarían conflictos dentro de la pila de protección web. También identifica las determinaciones resultantes en función de la prioridad enumerada anteriormente.
 
 <br>
 
@@ -119,6 +111,7 @@ En la tabla siguiente se resumen algunas configuraciones comunes que presentarí
 |Permitir|Bloquear|Bloquear|Bloquear|Allow (invalidación de protección web)|
 |Permitir|Permitir|Bloquear|Bloquear|Allow (excepción WCF)|
 |Advertir|Bloquear|Bloquear|Bloquear|Advertencia (invalidación)|
+|
 
 Los indicadores personalizados no admiten las direcciones IP internas. Para una directiva de advertencia cuando el usuario final omite, el sitio se desbloqueará durante 24 horas para ese usuario de forma predeterminada. El administrador puede modificar este período de tiempo y el servicio en la nube de SmartScreen lo pasa. La capacidad de omitir una advertencia también se puede deshabilitar Microsoft Edge usar CSP para bloques de amenazas web (malware/phishing). Para obtener más información, [vea Microsoft Edge SmartScreen Configuración](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
 
@@ -130,11 +123,11 @@ En todos los escenarios de protección web, SmartScreen y Network Protection se 
 
 ## <a name="troubleshoot-endpoint-blocks"></a>Solucionar problemas de bloques de extremo
 
-Las respuestas de la nube de SmartScreen están estandarizadas. Herramientas como Fiddler se pueden usar para inspeccionar la respuesta desde el servicio en la nube, lo que ayudará a determinar el origen del bloque. 
+Las respuestas de la nube de SmartScreen están estandarizadas. Herramientas como Fiddler se pueden usar para inspeccionar la respuesta desde el servicio en la nube, lo que ayudará a determinar el origen del bloque.
 
 Cuando el servicio en la nube smartScreen responde con una respuesta de permitir, bloquear o advertir, una categoría de respuesta y un contexto de servidor se retransmiten de nuevo al cliente. En Microsoft Edge, la categoría de respuesta es la que se usa para determinar la página de bloqueo adecuada para mostrar (malintencionada, suplantación de identidad, directiva organizativa).
 
-En la tabla siguiente se muestran las respuestas y sus características correlacionadas.  
+En la tabla siguiente se muestran las respuestas y sus características correlacionadas.
 
 <br>
 
@@ -147,27 +140,28 @@ En la tabla siguiente se muestran las respuestas y sus características correlac
 |CasbPolicy|MCAS|
 |Malintencionado|Amenazas web|
 |Suplantación de identidad (phishing)|Amenazas web|
+|||
 
 ## <a name="advanced-hunting-for-web-protection"></a>Búsqueda avanzada para protección web
 
 Las consultas kusto en búsqueda avanzada se pueden usar para resumir los bloques de protección web de la organización durante un máximo de 30 días. Estas consultas usan la información mencionada anteriormente para distinguir entre los distintos orígenes de bloques y resumirlas de una manera fácil de usar. Por ejemplo, en la consulta siguiente se enumeran todos los bloques WCF que se originaron Microsoft Edge.
 
 ```kusto
-DeviceEvents  
-| where ActionType == "SmartScreenUrlWarning" 
-| extend ParsedFields=parse_json(AdditionalFields) 
+DeviceEvents 
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomPolicy" 
+| where Experience == "CustomPolicy"
 ```
 
 Del mismo modo, puede usar la siguiente consulta para enumerar todos los bloques WCF que se originen en Network Protection (por ejemplo, un bloque WCF en un explorador de terceros). Tenga en cuenta que ActionType se ha actualizado y "Experiencia" se ha cambiado a "ResponseCategory".
 
 ```kusto
-DeviceEvents  
-| where ActionType == "ExploitGuardNetworkProtectionBlocked" 
-| extend ParsedFields=parse_json(AdditionalFields) 
+DeviceEvents 
+| where ActionType == "ExploitGuardNetworkProtectionBlocked"
+| extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
-| where ResponseCategory == "CustomPolicy" 
+| where ResponseCategory == "CustomPolicy"
 ```
 
 Para enumerar los bloques que se deben a otras características (como indicadores personalizados), consulte la tabla anterior en la que se delinea cada característica y su categoría de respuesta respectiva. Estas consultas también pueden modificarse para buscar telemetría relacionada con equipos específicos de la organización. Tenga en cuenta que ActionType que se muestra en cada consulta anterior mostrará solo las conexiones bloqueadas por una característica de Protección web y no todo el tráfico de red.
@@ -184,7 +178,7 @@ Si está bloqueado por WCF o un indicador personalizado, se muestra una página 
 > [!div class="mx-imgBorder"]
 > ![Página bloqueada por la organización.](../../media/web-protection-indicator-blockpage.png)
 
-En cualquier caso, no se muestran páginas de bloqueo en exploradores de terceros y el usuario ve una página "Error de conexión segura" junto con una notificación del sistema. Según la directiva responsable del bloque, un usuario verá un mensaje diferente en la notificación del sistema. Por ejemplo, el filtrado de contenido web mostrará el mensaje "Este contenido está bloqueado". 
+En cualquier caso, no se muestran páginas de bloqueo en exploradores de terceros y el usuario ve una página "Error de conexión segura" junto con una notificación del sistema. Según la directiva responsable del bloque, un usuario verá un mensaje diferente en la notificación del sistema. Por ejemplo, el filtrado de contenido web mostrará el mensaje "Este contenido está bloqueado".
 
 > [!div class="mx-imgBorder"]
 > ![Página bloqueada por WCF.](../../media/web-protection-np-block.png)
@@ -199,8 +193,12 @@ Para obtener más información sobre cómo enviar falsos positivos/negativos, ve
 
 ## <a name="related-information"></a>Información relacionada
 
-Tema|Descripción
----|---
-[Protección contra amenazas web](web-threat-protection.md) | Detenga el acceso a sitios de suplantación de identidad (phishing), vectores de malware, sitios de vulnerabilidad, sitios que no son de confianza o de baja reputación y sitios que ha bloqueado.
-[Filtrado de contenido web](web-content-filtering.md) | Realice un seguimiento y regule el acceso a sitios web en función de sus categorías de contenido.
+<br>
 
+****
+
+|Tema|Descripción|
+|---|---|
+|[Protección contra amenazas web](web-threat-protection.md) | Detenga el acceso a sitios de suplantación de identidad (phishing), vectores de malware, sitios de vulnerabilidad, sitios que no son de confianza o de baja reputación y sitios que ha bloqueado.|
+|[Filtrado de contenido web](web-content-filtering.md) | Realice un seguimiento y regule el acceso a sitios web en función de sus categorías de contenido.|
+|

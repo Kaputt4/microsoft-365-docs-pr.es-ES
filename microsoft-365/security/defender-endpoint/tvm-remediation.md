@@ -1,7 +1,7 @@
 ---
 title: Corregir vulnerabilidades con Administración de amenazas y vulnerabilidades
 description: Corrija las debilidades de seguridad detectadas mediante recomendaciones de seguridad y cree excepciones si es necesario, en Administración de amenazas y vulnerabilidades.
-keywords: Microsoft Defender para la corrección de endpoint tvm, Microsoft Defender para Endpoint tvm, Administración de amenazas y vulnerabilidades, threat & administración de vulnerabilidades, threat & administración de vulnerabilidades remediation, tvm remediation intune, tvm remediation sccm
+keywords: Corrección de Tvm de Microsoft Defender para Endpoint, Microsoft Defender para Endpoint tvm, Administración de amenazas y vulnerabilidades, & administración de vulnerabilidades amenazas, amenazas & administración de vulnerabilidades remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3bedc28f6af13d91c73dca7f8512379989f2d0e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0e8deced4010852401fa281315237c472ace61fb
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213387"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010322"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Corregir vulnerabilidades con Administración de amenazas y vulnerabilidades
 
@@ -42,7 +42,7 @@ La Administración de amenazas y vulnerabilidades de Microsoft Defender para end
 
 ### <a name="enable-microsoft-intune-connection"></a>Habilitar Microsoft Intune conexión
 
-Para usar esta funcionalidad, habilite las Microsoft Intune conexión. En el portal Microsoft 365 Defender, vaya **a** Configuración  >  **características**  >  **avanzadas generales.** Desplácese hacia abajo y busque **Microsoft Intune conexión**. De forma predeterminada, la alternancia está desactivada. Activar la **Microsoft Intune de** **conexión** activa .
+Para usar esta funcionalidad, habilite las Microsoft Intune conexión. En el portal Microsoft 365 Defender, vaya **a** Configuración \> **características** \> **avanzadas generales.** Desplácese hacia abajo y busque **Microsoft Intune conexión**. De forma predeterminada, la alternancia está desactivada. Activar la **Microsoft Intune de** **conexión** activa .
 
 **Nota:** Si tienes habilitada la conexión de Intune, obtienes una opción para crear una tarea de seguridad de Intune al crear una solicitud de corrección. Esta opción no aparece si la conexión no está establecida.
 
@@ -65,8 +65,8 @@ Consulta [Usar Intune para corregir las vulnerabilidades identificadas por Micro
 
 Si quieres comprobar cómo se muestra el vale en Intune, consulta Usar Intune para corregir las vulnerabilidades identificadas por [Microsoft Defender](/intune/atp-manage-vulnerabilities) para endpoint para obtener más información.
 
->[!NOTE]
->Si la solicitud implica la corrección de más de 10 000 dispositivos, solo podemos enviar 10 000 dispositivos para su corrección a Intune.
+> [!NOTE]
+> Si la solicitud implica la corrección de más de 10 000 dispositivos, solo podemos enviar 10 000 dispositivos para su corrección a Intune.
 
 Después de identificar y asignar las debilidades de seguridad cibernética de su organización a recomendaciones de seguridad que se pueden [realizar,](tvm-security-recommendation.md)comience a crear tareas de seguridad. Puede crear tareas a través de la integración con Microsoft Intune donde se crean vales de corrección.
 
@@ -82,7 +82,7 @@ Una vez que se encuentra en la página Corrección, seleccione la actividad de c
 
 :::image type="content" source="../../media/remediation-flyouteolswnew.png" lightbox="../../media/remediation-flyouteolswnew.png" alt-text="Ejemplo de la página Corrección, con una actividad de corrección seleccionada, y el control desplegable de esa actividad que enumera la descripción, las herramientas de administración de dispositivos y servicios de IT y la corrección de dispositivos":::
 
->[!NOTE]
+> [!NOTE]
 > Hay un período de retención de 180 días para las actividades de corrección completadas. Para mantener el rendimiento óptimo de la página Corrección, la actividad de corrección se quitará 6 meses después de su finalización.
 
 ### <a name="completed-by-column"></a>Completado por columna

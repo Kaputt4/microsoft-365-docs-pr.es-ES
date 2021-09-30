@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 291856addf7ce2702a1cd5f26c9cf3d2e833bbc2
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: b08439f07bcf80a76e45cad02001194543491c14
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483416"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009534"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -86,7 +86,7 @@ La siguiente configuración de directiva está disponible en las directivas cont
 
   - **Excluir estos usuarios, grupos y dominios:** excepciones para la directiva. La configuración y el comportamiento son exactamente iguales a las condiciones:
     - **Usuarios**
-    - **Grupos**
+    - **Groups**
     - **Dominios**
 
   > [!NOTE]
@@ -100,7 +100,7 @@ La siguiente configuración de suplantación de identidad está disponible en la
 
 - **Habilitar la inteligencia de suplantación:** activa o desactiva la inteligencia de suplantación. Le recomendamos que lo deje activado.
 
-  Cuando la inteligencia de suplantación de identidad está habilitada, la información de inteligencia suplantada muestra remitentes suplantados que se detectaron y permitieron o bloquearon automáticamente mediante la inteligencia de suplantación de identidad.  Puede invalidar manualmente el veredicto de suplantación de identidad para permitir o bloquear los remitentes suplantados detectados desde dentro de la información. Pero, cuando lo hace, el remitente suplantado desaparece de la información de  inteligencia suplantada y ahora solo está visible en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del espacio empresarial. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados en la lista de inquilinos permitidos o bloqueados. Para más información, consulte los siguientes artículos:
+  Cuando la inteligencia de suplantación de identidad está habilitada, la información de inteligencia suplantada muestra remitentes suplantados que se detectaron y permitieron o bloquearon automáticamente mediante la inteligencia de suplantación de identidad.  Puede invalidar manualmente el veredicto de suplantación de identidad para permitir o bloquear los remitentes suplantados detectados desde dentro de la información. Pero, cuando lo hace, el remitente suplantado desaparece de la información de  inteligencia suplantada y ahora solo está visible en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del espacio empresarial. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados en la lista de inquilinos permitidos o bloqueados. Para obtener más información, consulte los siguientes artículos:
 
   - [Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md)
   - [Administrar la lista de inquilinos permitidos o bloqueados en EOP](tenant-allow-block-list.md)
@@ -119,7 +119,7 @@ La siguiente configuración de suplantación de identidad está disponible en la
     - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-    Si selecciona **Poner en cuarentena el** mensaje, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que fueron puestos en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+    Si selecciona **Poner en cuarentena el** mensaje, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que fueron puestos en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
 ### <a name="unauthenticated-sender"></a>Remitente no autenticado
 
@@ -152,6 +152,9 @@ La configuración mostrar el primer contacto **consejo de seguridad** está disp
 Esta funcionalidad agrega una capa adicional de protección de seguridad contra posibles ataques de suplantación, por lo que se recomienda activarla.
 
 El primer consejo de seguridad de contacto también reemplaza la necesidad de crear reglas de flujo de correo (también conocidas como reglas de transporte) que agreguen el encabezado denominado **X-MS-Exchange-EnableFirstContactSafetyTip** con el valor **Enable** to messages (aunque esta funcionalidad aún está disponible).
+
+> [!NOTE]
+> Si el mensaje tiene varios destinatarios, si se muestra la sugerencia y a quién se basa en un modelo de mayoría. Si la mayoría de los destinatarios nunca han recibido mensajes del remitente o no los reciben a menudo, los destinatarios afectados recibirán la sugerencia Algunas personas que recibieron **este** mensaje. Si le preocupa que este comportamiento exponga los hábitos de comunicación de un destinatario a otro, no debe habilitar el primer contacto consejo de seguridad y seguir usando reglas de flujo de correo en su lugar.
 
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración exclusiva en directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -202,7 +205,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
     - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-    Si selecciona **Poner en cuarentena el** mensaje, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por suplantación de usuario o protección de suplantación de dominio. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+    Si selecciona **Poner en cuarentena el** mensaje, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por suplantación de usuario o protección de suplantación de dominio. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
   - Entregue el mensaje y agregue otras direcciones a la línea **CCO:** entregue el mensaje a los destinatarios previstos y entregue el mensaje de forma silenciosa a los destinatarios especificados.
   - **Elimine el mensaje antes de entregarlo:** elimina silenciosamente todo el mensaje, incluidos todos los datos adjuntos.
@@ -222,7 +225,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
   - **No aplicar ninguna acción:** tenga en cuenta que este  valor tiene el mismo resultado que activar la inteligencia de buzones pero desactivar Habilitar protección de **suplantación de inteligencia**.
   - **Redirigir el mensaje a otras direcciones de correo electrónico**
   - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-  - **Poner en cuarentena el** mensaje: si selecciona esta acción, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que la protección de inteligencia de buzones de correo pone en cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+  - **Poner en cuarentena el** mensaje: si selecciona esta acción, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que la protección de inteligencia de buzones de correo pone en cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
   - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
   - **Eliminar el mensaje antes de entregarlo**
 

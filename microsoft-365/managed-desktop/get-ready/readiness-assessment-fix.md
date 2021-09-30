@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9332483dffa9fc67bf319cc57aef89d25c866843
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 32e750dc824484624a5f0d953b75f242639c3e23
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444000"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009510"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -131,7 +131,7 @@ Escritorio administrado de Microsoft dispositivos deben poder inscribirse en Int
 Actualmente tiene al menos una directiva de restricción de inscripción configurada para impedir Windows dispositivos de inscripción en Intune. Siga los pasos descritos en [Establecer restricciones](/mem/intune/enrollment/enrollment-restrictions-set) de inscripción para cada directiva de restricción de inscripción dirigida Escritorio administrado de Microsoft usuarios y cambie la configuración **de Windows (MDM)** a **Permitir**. Sin embargo, puedes establecer cualquier dispositivo de propiedad **personal** **Windows (MDM)** en **Bloquear**. 
 
 
-### <a name="enrollment-status-page"></a>Página estado de inscripción
+### <a name="enrollment-status-page"></a>Página de estado de inscripción
 
 Actualmente tiene habilitada la página de estado de inscripción (ESP). Si desea participar en la vista previa Escritorio administrado de Microsoft pública de esta característica, puede omitir este elemento. Para obtener más información, vea [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
 
@@ -277,6 +277,14 @@ Enterprise La itinerancia de estado debe estar habilitada.
 **Advertencia**
 
 Asegúrese de que Enterprise itinerancia de estado está habilitada para **Todos** o para **grupos seleccionados.** Para obtener más información, vea [Enable Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable).
+
+### <a name="guest-invitation-settings"></a>Configuración de invitación de invitado
+
+Escritorio administrado de Microsoft recomienda ajustar la configuración de invitación de invitado, ya que la configuración predeterminada permite que todos los usuarios e invitados del directorio inviten a invitados.
+
+**Advertencia**
+
+Los usuarios miembros y los usuarios asignados a roles de administrador específicos pueden invitar a usuarios **invitados, incluidos** los invitados con permisos de miembro. Para ver los pasos, consulte [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
 
 ### <a name="licenses"></a>Licencias
 

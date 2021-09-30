@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 988b1177932a67f10f79651cc0190fd665de4c17
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e2b6d88f7cd443c7fb093d791a7904baafeb9c1d
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166814"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010134"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Plan for end-of-support software and software versions with Administración de amenazas y vulnerabilidades
 
@@ -41,7 +41,7 @@ El fin de la compatibilidad (EOS), también conocido como fin de vida (EOL), par
 
 Es fundamental que los administradores de SEGURIDAD y TI trabajen juntos y se aseguren de que el inventario de software de la organización esté configurado para obtener resultados óptimos, cumplimiento y un ecosistema de red en buen estado. Deben examinar las opciones para quitar o reemplazar aplicaciones que han alcanzado versiones de fin de soporte y actualización que ya no son compatibles. Es mejor crear e implementar un **plan** antes de que finalicen las fechas de soporte técnico.
 
->[!NOTE]
+> [!NOTE]
 > Actualmente, la funcionalidad de fin de soporte técnico solo está disponible para Windows productos.
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>Buscar versiones de software o software que ya no son compatibles

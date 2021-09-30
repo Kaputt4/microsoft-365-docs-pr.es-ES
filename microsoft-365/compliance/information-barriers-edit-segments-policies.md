@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: dff13dd6c4011ec73a1976bce0af69b607e391b0
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 79f82ba1133af3c3cfe1d8c7b05b481528bcb003
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444060"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010110"
 ---
 # <a name="manage-information-barrier-policies"></a>Administrar directivas de barrera de información
 
@@ -37,7 +37,7 @@ Después de definir [directivas](information-barriers-policies.md)de barrera de 
 | [Solución de problemas de barreras de información](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | Consulte este artículo cuando se encontrará con problemas inesperados con las barreras de información. |
 
 > [!IMPORTANT]
-> Para realizar las tareas descritas en este artículo, se le debe asignar un rol adecuado, como uno de los siguientes:<br/>- Microsoft 365 Enterprise administrador global<br/>- Administrador global<br/>- Administrador de cumplimiento<br/>- Administración de cumplimiento de IB (este es un nuevo rol!<br><br>Para obtener más información sobre los requisitos previos para las barreras de información, vea [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<br><br> Asegúrese de [conectarse al PowerShell del Centro & de seguridad.](/powershell/exchange/connect-to-scc-powershell)
+> Para realizar las tareas descritas en este artículo, se le debe asignar un rol adecuado, como uno de los siguientes:<br/>- Microsoft 365 Enterprise administrador global<br/>- Administrador global<br/>- Administrador de cumplimiento<br/>- Administración de cumplimiento de IB (este es un nuevo rol!<br><br>Para obtener más información sobre los requisitos previos para las barreras de información, vea [Prerequisites (for information barrier policies)](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met).<br><br> Asegúrese de [conectarse al PowerShell del Centro & de seguridad.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>Editar atributos de cuenta de usuario
 
@@ -76,7 +76,7 @@ Use este procedimiento para editar la definición de un segmento de usuario. Por
     |:---------|:----------|
     | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p> En este ejemplo, para el segmento que tiene el GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd,* actualizamos el nombre del departamento a "HRDept". |
 
-Cuando haya terminado de editar segmentos para su organización, puede [definir](information-barriers-policies.md#part-2-define-information-barrier-policies) o [editar directivas](#edit-a-policy) de barrera de información.
+Cuando haya terminado de editar segmentos para su organización, puede [definir](information-barriers-policies.md#step-3-define-information-barrier-policies) o [editar directivas](#edit-a-policy) de barrera de información.
 
 ## <a name="edit-a-policy"></a>Editar una directiva
 
@@ -94,7 +94,7 @@ Cuando haya terminado de editar segmentos para su organización, puede [definir]
 
     En este ejemplo, cambiamos "SegmentsBlocked" a "SegmentsAllowed" y especificamos el segmento *hr.*
 
-3. Cuando haya terminado de editar una directiva, asegúrese de aplicar los cambios. (Vea [Aplicar directivas de barrera de información](information-barriers-policies.md#part-3-apply-information-barrier-policies).)
+3. Cuando haya terminado de editar una directiva, asegúrese de aplicar los cambios. (Vea [Aplicar directivas de barrera de información](information-barriers-policies.md#step-4-apply-information-barrier-policies).)
 
 ## <a name="set-a-policy-to-inactive-status"></a>Establecer una directiva en estado inactivo
 

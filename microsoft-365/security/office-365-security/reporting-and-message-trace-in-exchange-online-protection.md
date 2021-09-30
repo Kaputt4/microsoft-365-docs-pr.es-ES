@@ -15,12 +15,12 @@ ms.custom:
 description: En este artículo, aprenderá sobre los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online protección contra errores (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 619b8376c6c9d5d733799b4350c308fc4c57f62b
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187350"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010286"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Informes y seguimiento de mensajes en EOP
 
@@ -46,6 +46,10 @@ Estos informes mejorados proporcionan una experiencia interactiva de informes pa
 
 - **Defender para Office 365:** ver información sobre Caja fuerte vínculos y Caja fuerte adjuntos que forman parte de Microsoft Defender para Office 365. Para obtener más información, vea [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
 - **EOP:** ver información sobre detecciones de malware, correo suplantado, detecciones de correo no deseado y flujo de correo desde y hacia su organización. Para obtener más información, vea [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).
+
+## <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
+
+Para obtener más información, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Informes personalizados con Microsoft Graph
 

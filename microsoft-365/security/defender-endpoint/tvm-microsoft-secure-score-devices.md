@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc25da8c4cffa5c67747ea02a0f431c0c2c7a436
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ffed82085b07949e13aa059667f278b8640a1955
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166774"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009438"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Puntuación de seguridad de Microsoft para dispositivos
 
@@ -37,8 +37,7 @@ ms.locfileid: "59166774"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-
->[!NOTE]
+> [!NOTE]
 > La puntuación de configuración ahora forma Administración de amenazas y vulnerabilidades como puntuación segura de Microsoft para dispositivos.
 
 La puntuación de los dispositivos está visible [en Administración de amenazas y vulnerabilidades panel](tvm-dashboard-insights.md) del portal Microsoft 365 Defender usuario. Una puntuación segura de Microsoft más alta para dispositivos significa que los puntos de conexión son más resistentes frente a los ataques de amenazas de ciberseguridad. Refleja el estado de configuración de seguridad colectiva de los dispositivos en las siguientes categorías:
@@ -57,8 +56,7 @@ Reenvía Microsoft Defender para las señales de punto de conexión, lo que ofre
 
 Los cambios pueden tardar hasta unas horas en reflejarse en el panel.
 
-
-1. En el panel de navegación, vaya **a Configuración** características avanzadas generales de puntos de  >    >    >  **conexión** 
+1. En el panel de navegación, vaya **a Configuración** características avanzadas generales de puntos de \>  \>  \> **conexión**
 
 2. Desplácese hacia abajo **hasta Puntuación segura de Microsoft** y cambie la configuración a **On**.
 
@@ -66,7 +64,7 @@ Los cambios pueden tardar hasta unas horas en reflejarse en el panel.
 
 ## <a name="how-it-works"></a>Funcionamiento
 
->[!NOTE]
+> [!NOTE]
 > La puntuación segura de Microsoft para dispositivos actualmente admite configuraciones establecidas a través de la directiva de grupo. Debido a la compatibilidad parcial actual de Intune, las configuraciones que podrían haber sido configuradas a través de Intune podrían aparecer como mal configuradas. Póngase en contacto con el administrador de TI para comprobar el estado de configuración real en caso de que su organización use Intune para la administración de configuración segura.
 
 Los datos de la tarjeta Puntuación segura de Microsoft para dispositivos son el producto del proceso de detección de vulnerabilidades meticuloso y continuo. Se agrega con evaluaciones de detección de configuración que continuamente:
@@ -100,16 +98,18 @@ Mejore la configuración de seguridad mediante la corrección de problemas de la
 
 7. Revisa la **tarjeta Puntuación segura de Microsoft para** dispositivos de nuevo en el panel. El número de recomendaciones de controles de seguridad disminuirá. Cuando selecciona **Controles de seguridad**  para volver a la página Recomendaciones de seguridad, el elemento que ha abordado ya no aparecerá en la lista. La puntuación segura de Microsoft para dispositivos debe aumentar.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Para aumentar las tasas de detección de evaluación de vulnerabilidades, descargue las siguientes actualizaciones de seguridad obligatorias e impleméntelas en la red:
->- Clientes de 19H1 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
->- Clientes de RS5 | [Kb 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
->- Clientes de RS4 | [Kb 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
->- Clientes de RS3 | [Kb 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 >
->Para descargar las actualizaciones de seguridad:
->1. Vaya a [Catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/home.aspx).
->2. Clave en el número KB de actualización de seguridad que necesita descargar y, a continuación, haga clic en **Buscar**.  
+> - Clientes de 19H1 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+> - Clientes de RS5 | [Kb 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+> - Clientes de RS4 | [Kb 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+> - Clientes de RS3 | [Kb 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+>
+> Para descargar las actualizaciones de seguridad:
+>
+> 1. Vaya a [Catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/home.aspx).
+> 2. Clave en el número KB de actualización de seguridad que necesita descargar y, a continuación, haga clic en **Buscar**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

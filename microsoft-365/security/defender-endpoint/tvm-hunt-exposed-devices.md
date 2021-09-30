@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bec319f840728599f01680c32561bf3998d59381
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2bf488957b35a9d0a914ff4c211a02058cde761c
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166782"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010122"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Buscar dispositivos expuestos: Administración de amenazas y vulnerabilidades
 
@@ -55,7 +55,7 @@ La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en cons
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>Comprobar qué dispositivos están implicados en alertas de alta gravedad
 
-1. Ve a **Búsqueda** avanzada de búsqueda desde el panel de navegación izquierdo  >   del portal Microsoft 365 Defender búsqueda.
+1. Ve a **Búsqueda** avanzada de búsqueda desde el panel de navegación izquierdo \>  del portal Microsoft 365 Defender búsqueda.
 
 2. Desplácese hacia abajo hasta los esquemas de búsqueda avanzados de TVM para familiarizarse con los nombres de columna.
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear cargas personalizadas para el aprendizaje de simulación de ataques en Microsoft Defender para Office 365.
 ms.technology: mdo
-ms.openlocfilehash: 72600b787f1570839b0d6ee3fefc7467af5ac08b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d67da825862cc026b8dd3bc5b7a2f603606f1a4a
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214477"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010306"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Crear una carga personalizada para la simulación de ataques formación
 
@@ -38,7 +38,7 @@ En el siguiente paso, asigne un nombre a la carga. Opcionalmente, puede darle un
 
 ## <a name="configure-payload"></a>Configurar carga
 
-Ahora es el momento de crear la carga útil. Introduzca el nombre del remitente, la dirección de correo electrónico y el asunto del correo electrónico en la **sección Detalles del** remitente. Elija una dirección URL de suplantación de identidad de la lista proporcionada. Esta dirección URL se incrustará más adelante en el cuerpo del mensaje.
+Ahora es el momento de crear la carga útil. Introduzca el nombre del remitente, la dirección de correo electrónico y el asunto del correo electrónico en la **sección Detalles del** remitente. Puede seleccionar un idioma en el que se configurará la carga. Elija una dirección URL de suplantación de identidad de la lista proporcionada. Esta dirección URL se incrustará más adelante en el cuerpo del mensaje.
 
 > [!TIP]
 > Puede elegir un correo electrónico interno para el remitente de la carga, lo que hará que la carga aparezca como procedente de otro empleado de la compañía. Esto aumentará la susceptibilidad a la carga útil y ayudará a educar a los empleados sobre el riesgo de amenazas internas.

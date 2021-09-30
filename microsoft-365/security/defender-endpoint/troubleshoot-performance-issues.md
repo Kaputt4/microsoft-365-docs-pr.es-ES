@@ -17,12 +17,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4418b91bb72549db5bb11b9a36a1d3d5c55cb741
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: df841029c95c66a64c63ef1040bd033e5a74d27c
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490804"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009450"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Solucionar problemas de rendimiento relacionados con la protección en tiempo real
 
@@ -59,6 +59,10 @@ En **MPLog-xxxxxxxx-xxxxxx.log**, puede encontrar la información de impacto en 
 
 `Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%`
 
+<br>
+
+****
+
 |Nombre del campo|Descripción|
 |---|---|
 |ProcessImageName|Nombre de imagen de proceso|
@@ -67,6 +71,7 @@ En **MPLog-xxxxxxxx-xxxxxx.log**, puede encontrar la información de impacto en 
 |MaxTime|Duración en milisegundos en el examen único más largo de un archivo al que tiene acceso este proceso|
 |MaxTimeFile|Ruta de acceso del archivo al que ha accedido este proceso para el que se registró el examen más largo `MaxTime` de duración|
 |EstimatedImpact|El porcentaje de tiempo invertido en exámenes para los archivos a los que tiene acceso este proceso fuera del período en el que este proceso experimentó actividad de examen|
+|
 
 Si el impacto en el rendimiento es alto, intente agregar el proceso a las exclusiones de ruta de acceso o proceso siguiendo los pasos descritos en Configurar y validar [exclusiones](collect-diagnostic-data.md)para Antivirus de Microsoft Defender exámenes .
 
@@ -188,8 +193,8 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
 
     ![in-file.](images/wpr-infile.png)
 
-    >[!WARNING]
-    >Si el servidor Windows tiene 64 GB de RAM o más, use la medida personalizada `Microsoft Defender for Endpoint analysis for large servers` en lugar de `Microsoft Defender for Endpoint analysis` . De lo contrario, el sistema podría consumir una gran cantidad de memoria de grupo no paginada o búferes que pueden provocar inestabilidad en el sistema. Puede elegir qué perfiles agregar expandiendo **Análisis de recursos**.
+    > [!WARNING]
+    > Si el servidor Windows tiene 64 GB de RAM o más, use la medida personalizada `Microsoft Defender for Endpoint analysis for large servers` en lugar de `Microsoft Defender for Endpoint analysis` . De lo contrario, el sistema podría consumir una gran cantidad de memoria de grupo no paginada o búferes que pueden provocar inestabilidad en el sistema. Puede elegir qué perfiles agregar expandiendo **Análisis de recursos**.
     Este perfil personalizado proporciona el contexto necesario para un análisis detallado del rendimiento.
 
 8. Para usar el perfil de análisis detallado de Medida personalizada de Microsoft Defender para extremo en la interfaz de usuario de WPR:
@@ -264,7 +269,7 @@ La herramienta de línea *de comandoswpr.exe* forma parte del sistema operativo 
 5. Reproduce el problema.
 
     > [!TIP]
-    > Mantenga la colección de datos no en más de cinco minutos.  Según el escenario, de dos a tres minutos es un buen intervalo, ya que se recopilan muchos datos.
+    > Mantenga la colección de datos no en más de cinco minutos. Según el escenario, de dos a tres minutos es un buen intervalo, ya que se recopilan muchos datos.
 
 6. En el símbolo del sistema con privilegios elevados, ejecute el siguiente comando para detener el seguimiento de rendimiento, asegurándose de proporcionar información sobre el problema y cómo reprodujo el problema:
 
@@ -276,7 +281,7 @@ La herramienta de línea *de comandoswpr.exe* forma parte del sistema operativo 
 
 8. Incluya el archivo y la carpeta en el envío al soporte técnico de Microsoft.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Recopilar Antivirus de Microsoft Defender de diagnóstico](collect-diagnostic-data.md)
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)

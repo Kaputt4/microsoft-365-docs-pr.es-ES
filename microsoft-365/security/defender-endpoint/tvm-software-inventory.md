@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 333cacf1bce50463fdfbac4023ae724a7564809c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2ffeeba73fa2dcff2d11522e399c38a3579b7c9a
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220207"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60008871"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventario de software: Administración de amenazas y vulnerabilidades
 
@@ -50,8 +50,8 @@ Para obtener acceso a la página Inventario de software, seleccione **Inventario
 
 Ver software en dispositivos específicos en las páginas de dispositivos individuales de la [lista de dispositivos](machines-view-overview.md).
 
->[!NOTE]
->Si busca software con la búsqueda global de Microsoft Defender para endpoint, asegúrese de colocar un carácter de subrayado en lugar de un espacio. Por ejemplo, para obtener los mejores resultados de búsqueda, escribirías "windows_10" en lugar de "Windows 10".
+> [!NOTE]
+> Si busca software con la búsqueda global de Microsoft Defender para endpoint, asegúrese de colocar un carácter de subrayado en lugar de un espacio. Por ejemplo, para obtener los mejores resultados de búsqueda, escribirías "windows_10" en lugar de "Windows 10".
 
 ## <a name="software-inventory-overview"></a>Introducción al inventario de software
 

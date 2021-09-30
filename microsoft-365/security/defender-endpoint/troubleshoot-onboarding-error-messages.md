@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 24d6873df2432adf5e56b62f01e784f65df4e980
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a80f30d132706633232713f1ba4b30fa1e64b800
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185737"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010146"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Solucionar problemas de acceso a la suscripción y al portal
 
@@ -42,10 +42,11 @@ Si recibe un mensaje de error, Microsoft 365 Defender proporcionará una explica
 Si al acceder Microsoft 365 Defender recibe un mensaje **No se** encontró suscripciones, significa que el Azure Active Directory (Azure AD) usado para iniciar sesión en el usuario en el portal, no tiene una licencia de Microsoft Defender para endpoint.
 
 Posibles razones:
+
 - Las licencias de Windows E5 y Office E5 son licencias separadas.
 - La licencia se compró pero no se aprovisionó en esta instancia de Azure AD.
-    - Podría ser un problema de aprovisionamiento de licencias.
-    - Podría ser que aprovisionó la licencia de forma involuntaria a un Microsoft Azure AD diferente al que se usa para la autenticación en el servicio.
+  - Podría ser un problema de aprovisionamiento de licencias.
+  - Podría ser que aprovisionó la licencia de forma involuntaria a un Microsoft Azure AD diferente al que se usa para la autenticación en el servicio.
 
 En ambos casos, debes ponerse en contacto con el soporte técnico de Microsoft en [General Microsoft Defender para](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) soporte técnico de endpoints o compatibilidad con licencias por [volumen.](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)
 
@@ -53,7 +54,7 @@ En ambos casos, debes ponerse en contacto con el soporte técnico de Microsoft e
 
 ## <a name="your-subscription-has-expired"></a>Su suscripción ha expirado
 
-Si al acceder a Microsoft 365 Defender recibe un mensaje Su suscripción ha **expirado,** la suscripción de servicio en línea ha expirado. La suscripción de Microsoft Defender para endpoint, como cualquier otra suscripción de servicio en línea, tiene una fecha de expiración. 
+Si al acceder a Microsoft 365 Defender recibe un mensaje Su suscripción ha **expirado,** la suscripción de servicio en línea ha expirado. La suscripción de Microsoft Defender para endpoint, como cualquier otra suscripción de servicio en línea, tiene una fecha de expiración.
 
 Puede elegir renovar o ampliar la licencia en cualquier momento. Al acceder al portal después  de la fecha de expiración, se mostrará una opción para descargar el paquete de descarga del dispositivo después de la fecha de expiración, en caso de que decidas no renovar la licencia.
 
@@ -70,27 +71,25 @@ Para obtener más información, vea [**Asignar acceso de usuario al portal**](/w
 ![Imagen de no autorizado para acceder al portal.](images/atp-not-authorized-to-access-portal.png)
 
 ## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>Actualmente, los datos no están disponibles en algunas secciones del portal
+
 Si el panel del portal y otras secciones muestran un mensaje de error como "Los datos actualmente no están disponibles":
 
 ![La imagen de los datos actualmente no está disponible.](images/atp-data-not-available.png)
 
 Tendrás que permitir los `security.windows.com` subdominios y todos los subdominios que hay en él. Por ejemplo, `*.security.windows.com`.
 
-
 ## <a name="portal-communication-issues"></a>Problemas de comunicación del portal
+
 Si tiene problemas con el acceso al portal, la falta de datos o el acceso restringido a partes del portal, deberá comprobar que las siguientes direcciones URL están permitidas y abiertas para la comunicación.
 
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
-- `https://*.securitycenter.windows.com` 
+- `https://*.securitycenter.windows.com`
 - `https://automatediracs-eus-prd.securitycenter.windows.com`
 - `https://login.microsoftonline.com`
 - `https://login.windows.net`
 - `https://onboardingpackagescusprd.blob.core.windows.net`
-- `https://secure.aadcdn.microsoftonline-p.com` 
-- `https://securitycenter.windows.com` 
-- `https://static2.sharepointonline.com` 
-
-
-
+- `https://secure.aadcdn.microsoftonline-p.com`
+- `https://securitycenter.windows.com`
+- `https://static2.sharepointonline.com`

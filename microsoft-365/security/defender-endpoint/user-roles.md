@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 60a0d59bd199e46e52623e36fa962465b313c9bd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1f8ab38d3e224155fc6af311e7dde42410a07823
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214740"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009594"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Crear y administrar roles para el control de acceso basado en roles
 
@@ -41,7 +41,7 @@ Los siguientes pasos le guían sobre cómo crear roles en Microsoft 365 Defender
 
 1. Inicie sesión en [Microsoft 365 Defender](https://security.microsoft.com/) cuenta con un administrador de seguridad o un rol de administrador global asignado.
 
-2. En el panel de navegación, **seleccione Configuración** roles de extremos  >    >   (en **Permisos).**
+2. En el panel de navegación, **seleccione Configuración** roles de extremos \>  \>  (en **Permisos).**
 
 3. Seleccione **Agregar elemento**.
 
@@ -61,15 +61,15 @@ Los siguientes pasos le guían sobre cómo crear roles en Microsoft 365 Defender
 ### <a name="permission-options"></a>Opciones de permiso
 
 - **Ver datos**
-    - **Operaciones de seguridad:** ver todos los datos de operaciones de seguridad en el portal
-    - **Amenaza y administración de vulnerabilidades:** ver Administración de amenazas y vulnerabilidades datos en el portal
+  - **Operaciones de seguridad:** ver todos los datos de operaciones de seguridad en el portal
+  - **Amenaza y administración de vulnerabilidades:** ver Administración de amenazas y vulnerabilidades datos en el portal
 
 - **Acciones de corrección activas**
-    - **Operaciones de seguridad:** realizar acciones de respuesta, aprobar o descartar acciones de corrección pendientes, administrar listas permitidas o bloqueadas para automatización e indicadores
-    - **Amenazas y administración de vulnerabilidades: control de excepciones:** crear nuevas excepciones y administrar excepciones activas
-    - **Amenazas y administración de vulnerabilidades: control de** corrección: enviar nuevas solicitudes de corrección, crear vales y administrar las actividades de corrección existentes
+  - **Operaciones de seguridad:** realizar acciones de respuesta, aprobar o descartar acciones de corrección pendientes, administrar listas permitidas o bloqueadas para automatización e indicadores
+  - **Amenazas y administración de vulnerabilidades: control de excepciones:** crear nuevas excepciones y administrar excepciones activas
+  - **Amenazas y administración de vulnerabilidades: control de** corrección: enviar nuevas solicitudes de corrección, crear vales y administrar las actividades de corrección existentes
 
-- **Investigación de alertas:** administrar alertas, iniciar investigaciones automatizadas, ejecutar exámenes, recopilar paquetes de investigación, administrar etiquetas de dispositivo y descargar solo archivos ejecutables portátiles (PE) 
+- **Investigación de alertas:** administrar alertas, iniciar investigaciones automatizadas, ejecutar exámenes, recopilar paquetes de investigación, administrar etiquetas de dispositivo y descargar solo archivos ejecutables portátiles (PE)
 
 - **Administrar la configuración del** sistema del portal: configurar las opciones de almacenamiento, SIEM y la API intel de amenazas (se aplica globalmente), la configuración avanzada, las cargas automatizadas de archivos, los roles y los grupos de dispositivos
 
@@ -79,29 +79,29 @@ Los siguientes pasos le guían sobre cómo crear roles en Microsoft 365 Defender
 - **Administrar la configuración** de seguridad en el Centro de seguridad: configure la configuración de supresión de alertas, administre las exclusiones de carpetas para la automatización, los dispositivos integrados y externos, y administre las notificaciones de correo electrónico, administre el laboratorio de evaluación
 
 - **Capacidades de respuesta en directo**
-    - **Comandos** básicos:
-        - Iniciar una sesión de respuesta en directo
-        - Realizar comandos de solo lectura de respuesta en directo en dispositivo remoto (excepto copia y ejecución de archivos)
-        - Descargar un archivo desde el dispositivo remoto a través de una respuesta en directo
-    - **Comandos** avanzados:
-        - Descargar archivos PE y que no son PE de la página de archivos
-        - Upload un archivo al dispositivo remoto
-        - Ver un script desde la biblioteca de archivos
-        - Ejecutar un script en el dispositivo remoto desde la biblioteca de archivos
+  - **Comandos** básicos:
+    - Iniciar una sesión de respuesta en directo
+    - Realizar comandos de solo lectura de respuesta en directo en dispositivo remoto (excepto copia y ejecución de archivos)
+    - Descargar un archivo desde el dispositivo remoto a través de una respuesta en directo
+  - **Comandos** avanzados:
+    - Descargar archivos PE y que no son PE de la página de archivos
+    - Upload un archivo al dispositivo remoto
+    - Ver un script desde la biblioteca de archivos
+    - Ejecutar un script en el dispositivo remoto desde la biblioteca de archivos
 
 Para obtener más información sobre los comandos disponibles, consulta [Investigar dispositivos con live response](live-response.md).
-  
+
 ## <a name="edit-roles"></a>Editar roles
 
 1. Inicie sesión [en](https://security.microsoft.com/) Microsoft 365 Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
-2. En el panel de navegación, **seleccione Configuración** roles de extremos  >    >   (en **Permisos).**
+2. En el panel de navegación, **seleccione Configuración** roles de extremos \>  \>  (en **Permisos).**
 
 3. Seleccione el rol que desea editar.
 
 4. Haga clic en **Editar**.
 
-5. Modifique los detalles o los grupos asignados al rol. 
+5. Modifique los detalles o los grupos asignados al rol.
 
 6. Haga **clic en Guardar y cerrar**.
 
@@ -109,7 +109,7 @@ Para obtener más información sobre los comandos disponibles, consulta [Investi
 
 1. Inicie sesión [en](https://security.microsoft.com/) Microsoft 365 Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
-2. En el panel de navegación, **seleccione Configuración** roles de extremos  >    >   (en **Permisos).**
+2. En el panel de navegación, **seleccione Configuración** roles de extremos \>  \>  (en **Permisos).**
 
 3. Seleccione el rol que desea eliminar.
 

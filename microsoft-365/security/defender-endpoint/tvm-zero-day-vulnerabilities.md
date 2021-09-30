@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4180b57ac053fffe3ea1b7ac584799c65c94ea95
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad582fe34f4fa3b7943dc90ffd6fd12e7615c618
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213377"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010214"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Mitigar vulnerabilidades de día cero: Administración de amenazas y vulnerabilidades
 
@@ -45,7 +45,7 @@ Las amenazas administración de vulnerabilidades solo mostrarán vulnerabilidade
 
 Una vez que se haya encontrado una vulnerabilidad de día cero, la información sobre ella se transmitirá a través de las siguientes experiencias en Microsoft 365 Defender portal.
 
->[!NOTE]
+> [!NOTE]
 > La capacidad de vulnerabilidad de 0 días está disponible actualmente solo para Windows productos.
 
 ### <a name="threat-and-vulnerability-management-dashboard"></a>Panel de administración de vulnerabilidades amenazas

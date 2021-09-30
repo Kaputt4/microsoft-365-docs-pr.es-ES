@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 498d88e2a75a0485043297eebf27c3da014a63b9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1894721cb929aaf92df371668348b36bb788727b
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216097"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010238"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -143,7 +143,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 
 Se agregaron las páginas siguientes:
 
-- [Personalizar referencia de filtros de tipo de información confidencial ](sit-custom-sit-filters.md)
+- [Personalizar referencia de filtros de tipo de información confidencial](sit-custom-sit-filters.md)
 - [Modificar un tipo de información confidencial personalizada con PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md)
 - [Quitar un tipo de información confidencial personalizada con PowerShell](sit-remove-a-custom-sensitive-information-type-in-powershell.md)
 
@@ -174,9 +174,9 @@ Se agregaron las páginas siguientes:
 - El Asistente para directivas de etiquetas de confidencialidad ahora admite Outlook [opciones](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) específicas para la etiqueta predeterminada y el etiquetado obligatorio como una configuración más sencilla que la configuración avanzada de PowerShell (aún compatible).
 - Ahora se [está implementando](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) la compatibilidad con marcas dinámicas con variables para Word, Excel y PowerPoint en la Web
 - Para [las directivas de etiquetado](apply-sensitivity-label-automatically.md) automático para Exchange, si la etiqueta está configurada para el cifrado, ese cifrado no se aplica. Además, Exchange directivas de etiquetado automático, ahora puede configurar excepciones y las siguientes condiciones nuevas: asunto, dirección de destinatario o dirección del remitente coinciden con patrones; la dirección del destinatario contiene palabras; el dominio del remitente es, el destinatario es un miembro de; sender is.
-- Al usar etiquetas de confidencialidad con equipos, grupos y sitios, puede usar Set-SPOTenant con el parámetro BlockSendLabelMismatchEmail para evitar que el correo electrónico generado automáticamente cuando se registra el evento de auditoría Desajuste de confidencialidad del documento detectado.   Para obtener más información, vea [Auditing sensitivity label activities](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities ).
+- Al usar etiquetas de confidencialidad con equipos, grupos y sitios, puede usar Set-SPOTenant con el parámetro BlockSendLabelMismatchEmail para evitar que el correo electrónico generado automáticamente cuando se registra el evento de auditoría Desajuste de confidencialidad del documento detectado.   Para obtener más información, vea [Auditing sensitivity label activities](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities).
 - La [configuración del contexto de autenticación](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) ahora se ha implantado completamente en la vista previa de las etiquetas de confidencialidad. Además, esta configuración ahora es compatible con Microsoft Teams.
-- Los archivos etiquetados y cifrados por un nombre de principio de servicio (como Microsoft Cloud App Security) y luego cargados en SharePoint y OneDrive ahora se pueden abrir en Office para la Web cuando haya habilitado etiquetas de confidencialidad para archivos Office en SharePoint y [OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+- Los archivos etiquetados y cifrados por un nombre de principio de servicio (como Microsoft Cloud App Security) y luego cargados en SharePoint y OneDrive ahora se pueden abrir en Office para la Web cuando haya habilitado etiquetas de confidencialidad para archivos Office en [ SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 - La [co-autoría](sensitivity-labels-coauthoring.md) y autoguardado ya no se restringen a los inquilinos de prueba y ahora se admiten en producción cuando se usa la versión 2105: 18 de junio para Windows y versión 16.50+ para macOS. Ten en cuenta que esta característica aún no es compatible con iOS y Android y permanece en versión preliminar.
 
 ## <a name="may-2021"></a>Mayo de 2021

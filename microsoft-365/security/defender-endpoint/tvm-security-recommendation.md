@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de94125566985447b10997cd354c7c9aed01630d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da78b5fe13c9b2b1af086a10b61b085e3d20af64
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166763"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010226"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -109,8 +109,8 @@ En el menú desplegable, puede elegir cualquiera de las siguientes opciones:
 
 - [**Opciones de excepción:**](tvm-exception.md) envíe una excepción, proporcione una justificación y establezca la duración de la excepción si aún no puede corregir el problema.
 
->[!NOTE]
->Cuando se realiza un cambio de software en un dispositivo, normalmente los datos tardan dos horas en reflejarse en el portal de seguridad. Sin embargo, a veces pueden tardar más. Los cambios de configuración pueden tardar entre 4 y 24 horas.
+> [!NOTE]
+> Cuando se realiza un cambio de software en un dispositivo, normalmente los datos tardan dos horas en reflejarse en el portal de seguridad. Sin embargo, a veces pueden tardar más. Los cambios de configuración pueden tardar entre 4 y 24 horas.
 
 ### <a name="investigate-changes-in-device-exposure-or-impact"></a>Investigar los cambios en la exposición o el impacto del dispositivo
 
@@ -138,7 +138,7 @@ Cuando se crea una excepción para una recomendación, la recomendación ya no e
 
 ### <a name="how-to-create-an-exception"></a>Cómo crear una excepción
 
-Seleccione una recomendación de seguridad para la que quiera crear una excepción y, a continuación, seleccione **Opciones de excepción**.  
+Seleccione una recomendación de seguridad para la que quiera crear una excepción y, a continuación, seleccione **Opciones de excepción**.
 
 ![Mostrar dónde se encuentra el botón de "opciones de excepción" en un control de control de recomendación de seguridad.](images/tvm-exception-options.png)
 

@@ -1,7 +1,7 @@
 ---
 title: 'Crear y ver excepciones para recomendaciones de seguridad: Administración de amenazas y vulnerabilidades'
 description: Cree y supervise excepciones para las recomendaciones de seguridad en Administración de amenazas y vulnerabilidades.
-keywords: Microsoft Defender para la corrección de endpoint tvm, Microsoft Defender para Endpoint tvm, Administración de amenazas y vulnerabilidades, threat & administración de vulnerabilidades, threat & administración de vulnerabilidades remediation, tvm remediation intune, tvm remediation sccm
+keywords: Corrección de Tvm de Microsoft Defender para Endpoint, Microsoft Defender para Endpoint tvm, Administración de amenazas y vulnerabilidades, & administración de vulnerabilidades amenazas, amenazas & administración de vulnerabilidades remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de458eed2b52b6043a4f5aaa5f8593b6136f9d37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aaa1c8cf1d54fe589adfd06939fc3f4c4398b18e
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166803"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009498"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Crear y ver excepciones para recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -35,14 +35,13 @@ ms.locfileid: "59166803"
 - [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Como alternativa a una solicitud de corrección cuando una recomendación no es relevante en este momento, puede crear excepciones para las recomendaciones. Si tu organización tiene grupos de dispositivos, podrás tener en cuenta la excepción para grupos de dispositivos específicos. Las excepciones se pueden crear para grupos de dispositivos seleccionados o para todos los grupos de dispositivos pasados y presentes.  
+Como alternativa a una solicitud de corrección cuando una recomendación no es relevante en este momento, puede crear excepciones para las recomendaciones. Si tu organización tiene grupos de dispositivos, podrás tener en cuenta la excepción para grupos de dispositivos específicos. Las excepciones se pueden crear para grupos de dispositivos seleccionados o para todos los grupos de dispositivos pasados y presentes.
 
 Cuando se crea una excepción para una recomendación, la recomendación no estará activa hasta el final de la duración de la excepción. El estado de recomendación cambiará a **Excepción completa** o **Excepción parcial** (por grupo de dispositivos).
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 Solo los usuarios con permisos de "control de excepciones" pueden administrar excepciones (incluida la creación o la cancelación). [Obtenga más información sobre los roles RBAC](user-roles.md).
 
@@ -50,7 +49,7 @@ Solo los usuarios con permisos de "control de excepciones" pueden administrar ex
 
 ## <a name="create-an-exception"></a>Crear una excepción
 
-Seleccione una recomendación de seguridad para la que quiera crear una excepción y, a continuación, seleccione **Opciones de excepción** y rellene el formulario.  
+Seleccione una recomendación de seguridad para la que quiera crear una excepción y, a continuación, seleccione **Opciones de excepción** y rellene el formulario.
 
 ![Mostrar dónde se encuentra el botón de "opciones de excepción" en un control de control de recomendación de seguridad.](images/tvm-exception-options.png)
 
@@ -64,7 +63,7 @@ Aplica la excepción a todos los grupos de dispositivos actuales o elige grupos 
 
 Si has filtrado por grupo de dispositivos en cualquiera de las Administración de amenazas y vulnerabilidades, solo los grupos de dispositivos filtrados aparecerán como opciones.
 
-Este es el botón para filtrar por grupo de dispositivos en cualquiera de las Administración de amenazas y vulnerabilidades: 
+Este es el botón para filtrar por grupo de dispositivos en cualquiera de las Administración de amenazas y vulnerabilidades:
 
 ![Mostrar el filtro de grupos de dispositivos seleccionados.](images/tvm-selected-device-groups.png)
 

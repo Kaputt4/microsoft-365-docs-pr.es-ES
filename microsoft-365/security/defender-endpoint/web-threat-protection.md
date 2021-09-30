@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d309f8851720578dfdd321efff862f15afd9bca8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18243e1d8ad908572c0dccc4cd2a3bdfefa47d46
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192604"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009414"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Proteja su organización contra las amenazas web
 
@@ -56,7 +56,7 @@ En el siguiente procedimiento se describe cómo configurar la protección contra
 
 1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
  
-2. Elija **Endpoint security** Attack surface  >  **reduction** y, a continuación, elija + Create **policy**.
+2. Elija **Endpoint security** Attack surface \> **reduction** y, a continuación, elija + Create **policy**.
 
 3. Seleccione una plataforma, como Windows 10 y **posterior,** seleccione el perfil de protección **web** y, a continuación, **elija Crear**. 
 
