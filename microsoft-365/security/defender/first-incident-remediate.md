@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 954fa4d9879e9654847f50ad15f8ff3c3a88caf4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dfcb6b08286e4751d764e5eb10542a6d8baeecf4
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213290"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042823"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corregir el primer incidente
 
@@ -52,7 +52,7 @@ Microsoft 365 Defender ofrece varias acciones de corrección que los analistas p
 
 ## <a name="actions-on-files"></a>Acciones en archivos
 
-- **Detener y poner en cuarentena** el archivo: esta acción incluye la detención de procesos en ejecución, la cuarentena de archivos y la eliminación de datos persistentes, como cualquier clave del Registro. Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o posterior, donde se observó el archivo en los últimos 30 días. 
+- **Detener y poner en cuarentena** el archivo: esta acción incluye la detención de procesos en ejecución, la cuarentena de archivos y la eliminación de datos persistentes, como cualquier clave del Registro. Esta acción tiene efecto en dispositivos con Windows 11 o Windows 10, versión 1703 o posterior, donde se observó el archivo en los últimos 30 días. 
 - **Agregar indicadores para bloquear** o permitir el archivo: impedir la propagación posterior de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o malware sospechoso. Esta operación impedirá que el archivo se lea, escriba o ejecute en dispositivos de la organización.
 - **Descargar o recopilar** archivo: esta acción permite a los analistas descargar un archivo en un archivo de archivo protegido .zip contraseña para su posterior análisis por parte de la organización.
 - **Análisis profundo:** esta acción ejecuta un archivo en un entorno de nube seguro y totalmente instrumentado. Los resultados de análisis profundo muestran las actividades del archivo, los comportamientos observados y los artefactos asociados, como archivos eliminados, modificaciones del Registro y comunicación con direcciones IP. 
@@ -95,7 +95,7 @@ Los libros de reproducción también se pueden crear durante [la revisión poste
 
 Obtenga información sobre cómo [realizar una revisión posterior al incidente de un incidente](first-incident-post.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

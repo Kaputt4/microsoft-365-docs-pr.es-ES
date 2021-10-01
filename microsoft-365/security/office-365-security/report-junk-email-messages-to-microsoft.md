@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre las distintas formas de notificar mensajes y archivos buenos y malos a Microsoft para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77b370bcd0a1ee59e80a638669598cf27ef32942
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 6dbf5a840da4474306b6140e16bdc01d24761eed
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988924"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042811"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Notificar mensajes y archivos a Microsoft
 
@@ -50,4 +50,4 @@ En Microsoft 365 organizaciones con buzones de correo en organizaciones de Excha
 |
 
 > [!NOTE]
-> Los datos de envíos a Microsoft residen en el límite de cumplimiento de Office 365 en los centros de datos de Norteamérica. Los analistas del equipo de ingeniería revisan los datos para ayudar a mejorar la eficacia de los filtros.
+> Los datos de envíos a Microsoft residen en el límite de cumplimiento de Office 365 en los centros de datos de Norteamérica. Los analistas del equipo de ingeniería revisan los datos para ayudar a mejorar la eficacia de los filtros. El envío se considera comentarios para ayudar a mejorar los filtros y se mantiene durante un período de 30 días. Después de lo cual, se elimina.

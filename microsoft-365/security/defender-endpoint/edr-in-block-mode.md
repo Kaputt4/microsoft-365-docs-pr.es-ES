@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c590812ccc975206c6c278794f943f7e16c8bdd1
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: e58d98f059dc723b06a65bfad36d6e72807e2f63
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400827"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042920"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
@@ -80,9 +80,9 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 |Requisito|Detalles|
 |---|---|
 |Permisos|Debe tener asignado el rol Administrador global o Administrador de seguridad en [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Para obtener más información, vea [Basic permissions](basic-permissions.md).|
-|Sistema operativo|Los dispositivos deben ejecutar una de las siguientes versiones de Windows: <ul><li>Windows 10 (todas las versiones)</li><li>Windows Servidor, versión 1803 o posterior</li><li>Windows Server 2019</li><li>Windows Server 2016 (solo cuando Antivirus de Microsoft Defender está en modo activo)</li></ul>|
+|Sistema operativo|Los dispositivos deben ejecutar una de las siguientes versiones de Windows: <ul><li>Windows 10 (todas las versiones)</li><li>Windows Servidor, versión 1803 o posterior</li><li>Windows Server 2019</li><li>Windows Server 2022</li><li>Windows Server 2016 (solo cuando Antivirus de Microsoft Defender está en modo activo)</li></ul>|
 |Microsoft Defender para punto de conexión|Los dispositivos deben incorporarse a Defender for Endpoint. Consulte [Requisitos mínimos de Microsoft Defender para endpoint](minimum-requirements.md).|
-|Antivirus de Microsoft Defender|Los dispositivos deben Antivirus de Microsoft Defender instalados y en ejecución en modo activo o en modo pasivo. [Confirme Antivirus de Microsoft Defender está en modo activo o pasivo](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).|
+|Antivirus de Microsoft Defender|Los dispositivos deben Antivirus de Microsoft Defender instalados y en ejecución en modo activo o en modo pasivo. [Confirme Antivirus de Microsoft Defender está en modo activo o pasivo](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).|
 |Protección entregada en la nube|Antivirus de Microsoft Defender debe configurarse de modo que [la protección entregada en la nube esté habilitada.](enable-cloud-protection-microsoft-defender-antivirus.md)|
 |Antivirus de Microsoft Defender plataforma|Los dispositivos deben estar actualizados. Para confirmar, con PowerShell, ejecute el cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) como administrador. En la **línea AMProductVersion,** debería ver **4.18.2001.10** o posterior. <p> Para obtener más información, consulte [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia](manage-updates-baselines-microsoft-defender-antivirus.md).|
 |Antivirus de Microsoft Defender motor|Los dispositivos deben estar actualizados. Para confirmar, con PowerShell, ejecute el cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) como administrador. En la **línea AMEngineVersion,** debería ver **1.1.16700.2** o posterior. <p> Para obtener más información, consulte [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia](manage-updates-baselines-microsoft-defender-antivirus.md).|
@@ -113,7 +113,7 @@ Se necesita protección en la nube para activar la característica en el disposi
 
 ### <a name="what-is-the-difference-between-active-and-passive-mode"></a>¿Cuál es la diferencia entre el modo activo y el pasivo?
 
-Para los puntos de conexión que ejecutan Windows 10, Windows Server, versión 1803 o posterior, o Windows Server 2019, cuando Antivirus de Microsoft Defender está en modo activo, se usa como el antivirus principal del dispositivo. Cuando se ejecuta en modo pasivo, Antivirus de Microsoft Defender no es el producto antivirus principal. En este caso, las amenazas no se corrigen Antivirus de Microsoft Defender en tiempo real.
+Para los puntos de conexión que ejecutan Windows 10, Windows Server, versión 1803 o posterior, Windows Server 2019 o Windows Server 2022 cuando Antivirus de Microsoft Defender está en modo activo, se usa como el antivirus principal del dispositivo. Cuando se ejecuta en modo pasivo, Antivirus de Microsoft Defender no es el producto antivirus principal. En este caso, las amenazas no se corrigen Antivirus de Microsoft Defender en tiempo real.
 
 > [!NOTE]
 > Antivirus de Microsoft Defender puede ejecutarse en modo pasivo solo cuando el dispositivo está incorporado a Microsoft Defender para Endpoint.
@@ -126,7 +126,7 @@ Para confirmar si Antivirus de Microsoft Defender se está ejecutando en modo ac
 
 <br/><br/>
 
-|Método|Procedure|
+|Method|Procedure|
 |---|---|
 |PowerShell|<ol><li>Seleccione el menú Inicio, empiece a escribir y, a `PowerShell` continuación, abra Windows PowerShell en los resultados.</li><li>Tipo `Get-MpComputerStatus`.</li><li>En la lista de resultados, en la **fila AMRunningMode,** busque uno de los siguientes valores:<ul><li>`Normal`</li><li>`Passive Mode`</li></ul></li></ol> <p> Para obtener más información, [vea Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
 |Símbolo del sistema|<ol><li>Seleccione el menú Inicio, empiece a escribir y, a continuación, abra Windows símbolo del `Command Prompt` sistema en los resultados.</li><li>Tipo `sc query windefend`.</li><li>En la lista de resultados, en la **fila STATE,** confirme que el servicio se está ejecutando.</li></ol>|
@@ -151,6 +151,7 @@ Si Antivirus de Microsoft Defender se ejecuta en modo activo o pasivo, EDR en mo
 - Windows 10 (todas las versiones)
 - Windows Servidor, versión 1803 o posterior
 - Windows Server 2019
+- Windows Server 2022
 
 #### <a name="what-about-windows-server-2016"></a>¿Qué hay Windows Server 2016?
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9da8f0c15fdffbecb701955be10289ff19f28d1f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 336fc335b5008445e19464bb09cdaa6312e6b334
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167086"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042643"
 ---
 # <a name="start-investigation-api"></a>INICIAR API de investigación
 
@@ -54,6 +54,7 @@ Su organización debe tener Defender para endpoint (consulte [Requisitos mínimo
 Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 
 - Windows Server 2019
+- Windows Server 2022
 - Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) o posterior
 - Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)o posterior
 - Windows 10, versión [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) o posterior
@@ -83,7 +84,7 @@ POST https://api.security.microsoft.com/api/machines/{id}/startInvestigation
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

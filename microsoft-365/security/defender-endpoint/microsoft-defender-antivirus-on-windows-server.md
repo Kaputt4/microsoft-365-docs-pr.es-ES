@@ -1,6 +1,6 @@
 ---
 title: Antivirus de Microsoft Defender en Windows Server
-description: Obtenga información sobre cómo habilitar y configurar Antivirus de Microsoft Defender en Windows Server 2016 y Windows Server 2019.
+description: Obtenga información sobre cómo habilitar y configurar Antivirus de Microsoft Defender en Windows Server 2016, Windows Server 2019 y Windows Server 2022.
 keywords: windows defender, server, scep, system center endpoint protection, server 2016, current branch, server 2012
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d7f5921e3c292d453f91ba802d036293260d478a
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: ae209a9b3442d1bb5744c7f8255ae9ddf041a321
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491020"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043196"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -34,6 +34,7 @@ ms.locfileid: "59491020"
 Antivirus de Microsoft Defender está disponible en las siguientes ediciones o versiones de Windows Server:
 
 - Windows Server 2019
+- Windows Server 2022
 - Windows Servidor, versión 1803 o posterior
 - Windows Server 2016.
 
@@ -71,7 +72,7 @@ Si la GUI no está instalada en el servidor y desea instalarla, el Asistente par
 
    ![Agregar roles y asistente para características que muestren la gui Windows Defender opción.](images/server-add-gui.png)
 
-   En Windows Server 2019, el Asistente para agregar **roles y** características es similar.
+   En Windows Server 2019 y Windows Server 2022, el Asistente para agregar **roles y** características es similar.
 
 ### <a name="turn-on-the-gui-using-powershell"></a>Activar la GUI con PowerShell
 
@@ -127,7 +128,7 @@ El `sc query` comando devuelve información sobre el Antivirus de Microsoft Defe
 
 Para obtener la inteligencia de seguridad antimalware actualizada, debe tener el servicio Windows update en ejecución. Si usa un servicio de administración de actualizaciones, como Windows Server Update Services (WSUS), asegúrese de que las actualizaciones de la inteligencia de seguridad de Antivirus de Microsoft Defender están aprobadas para los equipos que administra.
 
-De forma predeterminada, Windows Update no descarga e instala actualizaciones automáticamente en Windows Server 2019 o Windows Server 2016. Puede cambiar esta configuración mediante uno de los métodos siguientes:
+De forma predeterminada, Windows Update no descarga e instala actualizaciones automáticamente en Windows Server 2019 o Windows Server 2022 o Windows Server 2016. Puede cambiar esta configuración mediante uno de los métodos siguientes:
 
 <br/><br/>
 
@@ -175,7 +176,7 @@ Para habilitar el envío automático de ejemplo, inicie una consola Windows Powe
 
 |Valor|Descripción|
 |---|---|
-|**0**  -  **Preguntar siempre**|El Antivirus de Microsoft Defender solicita que confirme el envío de todos los archivos necesarios. Esta es la configuración predeterminada para Antivirus de Microsoft Defender, pero no se recomienda para instalaciones en Windows Server 2016 o 2019 sin una GUI.|
+|**0**  -  **Preguntar siempre**|El Antivirus de Microsoft Defender solicita que confirme el envío de todos los archivos necesarios. Esta es la configuración predeterminada para Antivirus de Microsoft Defender, pero no se recomienda para instalaciones en Windows Server 2016 o 2019, o Windows Server 2022 sin una GUI.|
 |**1**   -  **Enviar muestras seguras automáticamente**|El Antivirus de Microsoft Defender envía todos los archivos marcados como "seguros" y solicita el resto de los archivos.|
 |**2**  -  **Nunca enviar**|El Antivirus de Microsoft Defender no solicita y no envía ningún archivo.|
 |**3**  -  **Enviar todas las muestras automáticamente**|El Antivirus de Microsoft Defender envía todos los archivos sin necesidad de confirmación.|
@@ -183,7 +184,7 @@ Para habilitar el envío automático de ejemplo, inicie una consola Windows Powe
 
 ## <a name="configure-automatic-exclusions"></a>Configurar exclusiones automáticas
 
-Para garantizar la seguridad y el rendimiento, se agregan automáticamente determinadas exclusiones en función de los roles y características que se instalan al usar Antivirus de Microsoft Defender en Windows Server 2016 o 2019.
+Para garantizar la seguridad y el rendimiento, se agregan automáticamente determinadas exclusiones en función de los roles y características que se instalan al usar Antivirus de Microsoft Defender en Windows Server 2016 o 2019, o Windows Server 2022.
 
 Vea [Configure exclusions in Antivirus de Microsoft Defender on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md).
 
@@ -191,7 +192,7 @@ Vea [Configure exclusions in Antivirus de Microsoft Defender on Windows Server](
 
 Si usa un producto antivirus que no sea de Microsoft como solución antivirus principal en Windows Server, debe establecer Antivirus de Microsoft Defender en modo pasivo o en modo deshabilitado.
 
-- En Windows Server, versión 1803 o posterior, o Windows Server 2019, puede establecer Antivirus de Microsoft Defender en modo pasivo. Vea las secciones siguientes:
+- En Windows Server, versión 1803 o posterior, o Windows Server 2019 o Windows Server 2022, puede establecer Antivirus de Microsoft Defender en modo pasivo. Vea las secciones siguientes:
   - [Establecer Antivirus de Microsoft Defender en modo pasivo mediante una clave del Registro](#set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key)
   - [Deshabilitar Antivirus de Microsoft Defender mediante el Asistente para quitar roles y características](#disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard)
   - [Desactivar la interfaz Antivirus de Microsoft Defender usuario con PowerShell](#turn-off-the-microsoft-defender-antivirus-user-interface-using-powershell)
@@ -200,7 +201,7 @@ Si usa un producto antivirus que no sea de Microsoft como solución antivirus pr
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key"></a>Establecer Antivirus de Microsoft Defender en modo pasivo mediante una clave del Registro
 
-Si usa Windows Server, versión 1803 o Windows Server 2019, puede establecer Antivirus de Microsoft Defender en modo pasivo estableciendo la siguiente clave del Registro:
+Si usa Windows Server, versión 1803 o Windows Server 2019 o Windows Server 2022, puede establecer Antivirus de Microsoft Defender en modo pasivo estableciendo la siguiente clave del Registro:
 
 - Ruta de acceso: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Nombre: `ForceDefenderPassiveMode`

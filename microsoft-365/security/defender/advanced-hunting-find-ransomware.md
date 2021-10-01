@@ -1,5 +1,5 @@
 ---
-title: Buscar ransomware con búsqueda avanzada
+title: Buscar ransomware con la búsqueda avanzada de amenazas
 description: Usa la búsqueda avanzada para localizar dispositivos potencialmente afectados por ransomware.
 keywords: búsqueda avanzada, ransomware, búsqueda de amenazas, búsqueda de amenazas cibernéticas, búsqueda, consulta, telemetría, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ee5a65bab280b6a6024d2a0d6deca1e17962794f
-ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
+ms.openlocfilehash: a5cc69edfb6e1b2224b51036d879538dffde64b8
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447377"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043184"
 ---
 # <a name="hunt-for-ransomware"></a>Buscar ransomware
 
@@ -253,47 +253,47 @@ De forma predeterminada, el resultado de la consulta enumera solo los dispositiv
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)
 
-## <a name="additional-ransomware-resources"></a>Recursos ransomware adicionales
+## <a name="additional-ransomware-resources"></a>Recursos adicionales de ransomware
 
 Información clave de Microsoft:
 
-- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
+- [La creciente amenaza de ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), entrada de blog de Microsoft On the Issues del 20 de julio de 2021
 - [Ransomware operado por humanos](/security/compass/human-operated-ransomware)
-- [Proteger rápidamente contra ransomware y extorsión](/security/compass/protect-against-ransomware)
-- [The latest Inteligencia de seguridad de Microsoft Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
-- **Ransomware: un informe de amenazas generalizado** y continuo en el nodo **Análisis** de amenazas del portal de Microsoft 365 Defender (consulte estos requisitos [de licencia)](/microsoft-365/security/defender/prerequisites#licensing-requirements)
+- [Protéjase contra ransomware y extorsión de manera rápida](/security/compass/protect-against-ransomware)
+- [El informe de inteligencia de seguridad de Microsoft más reciente](https://www.microsoft.com/securityinsights/) (vea las páginas 22-24)
+- **Ransomware: Un informe de amenazas generalizado y continuo** en el nodo del **Análisis de amenazas** del portal de Microsoft 365 Defender (consulte estos [requisitos de licencia](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 
-Microsoft 365:
+Microsoft 365:
 
-- [Implementar la protección contra ransomware para su Microsoft 365 inquilino](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [Implementar la protección contra ransomware para el inquilino de Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)
 - [Recuperarse de un ataque de ransomware](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [Protección de malware y ransomware](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [Proteger el equipo Windows 10 de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
-- [Control de ransomware en SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+- [Proteger el equipo Windows de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Control de ransomware en SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 
-Microsoft Azure:
+Microsoft Azure:
 
-- [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
-- [Plan de copia de seguridad y restauración para proteger contra ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
+- [Defensas de Azure para los ataques de ransomware](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Plan de restauración y copia de seguridad para la protección contra ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Ayudar a proteger contra ransomware con Microsoft Azure copia de seguridad](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
-- [Recuperación de un riesgo de identidad sistémico](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Detección avanzada de ataques multietaje en Azure Sentinel](/azure/sentinel/fusion#ransomware)
-- [Detección de fusión para ransomware en Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Recuperación de una identidad en peligro](/azure/security/fundamentals/recover-from-identity-compromise)
+- [Detección de ataques de varias fases en Azure Sentinel](/azure/sentinel/fusion#ransomware)
+- [Detección de fusión para ransomware en Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Cloud App Security:
 
--  [Crear directivas de detección de anomalías en Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+-  [Crear directivas de detección de anomalías en Cloud App Security](/cloud-app-security/anomaly-detection-policy)
 
-Entradas del blog del equipo de Seguridad de Microsoft:
+Entradas de blog del equipo de Seguridad de Microsoft:
 
-- [3 pasos para evitar y recuperarse de ransomware (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [Volverse resistente al comprender los riesgos de ciberseguridad: Parte 4: navegar por las amenazas actuales (mayo de 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+- [3 pasos para evitar y recuperarse del ransomware (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Camino a la resistencia al comprender los riesgos de ciberseguridad: Parte 4 — Navegación por las amenazas actuales (mayo de 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
-  Consulta la **sección Ransomware.**
+  Consulte la sección **Ransomware**.
 
-- [Ataques de ransomware operados por humanos: un desastre evitable (marzo de 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+- [Ataques de ransomware operados por humanos: Un desastre evitable (marzo de 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-  Incluye análisis de cadena de ataques de ataques reales.
+  Incluye análisis de cadenas de ataques, de ataques reales.
 
-- [Respuesta ransomware: ¿pagar o no pagar? (Diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
-- [Norsk Hydro responde al ataque ransomware con transparencia (diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [Respuesta frente a ransomware: ¿pagar o no pagar? (diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro responde ante ataques de ransomware con transparencia (diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)

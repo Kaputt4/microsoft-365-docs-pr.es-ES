@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 04/16/2020
+ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: c2d33c40cba675f36f9be3a181db655e8087a811
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 494cfb352d8ccbf6dd0640d559083c9e733fa9b7
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222963"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041641"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>Incorporación de dispositivos de infraestructura de escritorio virtual no persistente
 
@@ -33,7 +33,7 @@ ms.locfileid: "59222963"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Dispositivos de infraestructura de escritorio virtual (VDI)
-- Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
+- Windows 10, Windows Server 2019, Windows Server 2022, Windows Server 2008R2/2012R2/2016
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
@@ -60,7 +60,7 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 > [!WARNING]
 > En los entornos en los que hay configuraciones de recursos bajos, el procedimiento de arranque de VDI puede ralentizar la incorporación del sensor Defender for Endpoint.
 
-### <a name="for-windows-10-or-windows-server-2019"></a>Para Windows 10 o Windows Server 2019
+### <a name="for-windows-10-or-windows-server-2019-or-windows-server-2022"></a>Para Windows 10 o Windows Server 2019 o Windows Server 2022
 
 1. Abra el archivo de configuración .zip VDI (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde el [portal de Microsoft 365 Defender:](https://security.microsoft.com/)
    1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** \> **Device management** \> **Onboarding**.

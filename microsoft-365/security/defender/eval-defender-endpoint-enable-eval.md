@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 09785d48d2ad5efb2d33559d0580c5a0ff63c768
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e4c3f6d96c1b161274c1ae00c8e372e1f93bcdb7
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220020"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043052"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Habilitar el entorno de evaluación de Microsoft Defender para puntos de conexión
 
@@ -64,7 +64,7 @@ Primero tendrá que comprobar el estado de la licencia para comprobar que se apr
 
 Después de comprobar que el estado de la licencia se ha aprovisionado correctamente, puede iniciar la incorporación de dispositivos al servicio. 
 
-Con el fin de evaluar Microsoft Defender para Endpoint, recomendamos elegir un par de dispositivos Windows 10 para realizar la evaluación.
+Con el fin de evaluar Microsoft Defender para Endpoint, recomendamos elegir un par de dispositivos Windows para realizar la evaluación.
 
 Puedes elegir usar cualquiera de las herramientas de administración admitidas, pero Intune proporciona una integración óptima. Para obtener más información, vea [Configure Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
@@ -78,7 +78,7 @@ Vea este vídeo para obtener una introducción rápida al proceso de incorporaci
 
 En la tabla siguiente se enumeran las herramientas disponibles en función del extremo que necesita incorporar.
 
-Extremo | Opciones de herramientas
+Punto de conexión | Opciones de herramientas
 :---|:---
 **Windows** | [Script local (hasta 10 dispositivos),](../defender-endpoint/configure-endpoints-script.md)Directiva de grupo [,](../defender-endpoint/configure-endpoints-gp.md) [Microsoft Endpoint Manager/ Administrador](../defender-endpoint/configure-endpoints-mdm.md)de dispositivos móviles , [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), [Integración con Azure Defender](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
 **macOS** | [Scripts locales](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md), Administración [de dispositivos móviles](../defender-endpoint/mac-install-with-other-mdm.md)

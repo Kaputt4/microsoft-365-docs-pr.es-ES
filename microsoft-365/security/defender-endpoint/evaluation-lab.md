@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1a51ec4d2e17275379eb40521f506e4a83d19ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3765bdc36dc53f10c1842754266f72434f5b2f1c
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185857"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043136"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio de evaluación de Microsoft Defender para puntos de conexión
 
@@ -44,7 +44,7 @@ Con la experiencia de configuración simplificada, puede centrarse en ejecutar s
 
 Tendrás acceso completo a las potentes capacidades de la plataforma, como investigaciones automatizadas, búsqueda avanzada y análisis de amenazas, lo que te permite probar la pila de protección completa que ofrece Defender for Endpoint.
 
-Puede agregar dispositivos Windows 10 o Windows Server 2019 que vienen preconfigurados para tener las versiones más recientes del sistema operativo y los componentes de seguridad adecuados en su lugar, así como Office 2019 Standard instalado.
+Puede agregar dispositivos Windows 10 o Windows Server 2019 o Windows Server 2022 que vienen preconfigurados para tener instaladas las versiones más recientes del sistema operativo y los componentes de seguridad adecuados, así como Office 2019 Standard.
 
 También puedes instalar simuladores de amenazas. Defender for Endpoint se ha asociado con plataformas de simulación de amenazas líderes del sector para ayudarle a probar las capacidades de Defender for Endpoint sin tener que salir del portal.
 
@@ -106,7 +106,7 @@ Una vez completado el proceso de configuración del laboratorio, puede agregar d
 
 ## <a name="add-devices"></a>Agregar dispositivos
 
-Cuando agregas un dispositivo a tu entorno, Defender para endpoint configura un dispositivo bien configurado con detalles de conexión. Puede agregar dispositivos Windows 10 o Windows Server 2019.
+Cuando agregas un dispositivo a tu entorno, Defender para endpoint configura un dispositivo bien configurado con detalles de conexión. Puede agregar Windows 10 o Windows Server 2019 o Windows Server 2022.
 
 El dispositivo se configurará con la versión más actualizada del sistema operativo y Office 2019 Standard, así como con otras aplicaciones como Java, Python y SysIntenals.
 
@@ -135,7 +135,7 @@ La configuración de investigación automatizada dependerá de la configuración
 
 1. En el panel, selecciona **Agregar dispositivo**.
 
-2. Elige el tipo de dispositivo que quieres agregar. Puede elegir agregar Windows 10 o Windows Server 2019.
+2. Elige el tipo de dispositivo que quieres agregar. Puede elegir agregar Windows 10 o Windows Server 2019 o Windows Server 2022.
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="configuración del laboratorio con opciones de dispositivo.":::
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab1cb1563f3ccc0f7bfda9b1f8875c76446153e3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7626c01aeee81c50ee1bed418735c87dc61c8853
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399243"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042619"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -57,7 +57,7 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 
 > [!IMPORTANT]
 >
-> - Estas acciones de respuesta solo están disponibles para dispositivos Windows 10, versión 1703 o posterior y Windows Server 2019.
+> - Estas acciones de respuesta solo están disponibles para dispositivos de Windows 10, versión 1703 o posterior, Windows Server 2019 y Windows Server 2022.
 > - Para las plataformas Windows, las capacidades de respuesta (como el aislamiento de dispositivos) dependen de las capacidades de terceros.
 > - Para los agentes de microsoft de primera parte, consulte el vínculo "más información" en cada característica para obtener los requisitos mínimos del sistema operativo.
 
@@ -182,8 +182,8 @@ Según la gravedad del ataque y la confidencialidad del dispositivo, es posible 
 
 > [!IMPORTANT]
 >
-> - El aislamiento total está disponible para dispositivos Windows 10, versión 1703 y Windows Server 2019.
-> - El aislamiento selectivo está disponible para dispositivos Windows 10, versión 1709 o posterior y Windows Server 2019.
+> - El aislamiento total está disponible para dispositivos de Windows 10, versión 1703, Windows Server 2019 y Windows Server 2022.
+> - El aislamiento selectivo está disponible para dispositivos de Windows 10, versión 1709 o posterior, Windows Server 2019 y Windows Server 2022.
 > - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán llegar al servicio en la nube de Microsoft Defender para Endpoint después de aislar el dispositivo. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para endpoint y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
 
 Esta característica de aislamiento de dispositivos desconecta el dispositivo en peligro de la red y conserva la conectividad con el servicio Defender for Endpoint, que sigue supervisando el dispositivo.

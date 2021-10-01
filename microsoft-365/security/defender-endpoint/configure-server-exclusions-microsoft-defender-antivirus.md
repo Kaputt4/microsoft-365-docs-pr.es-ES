@@ -15,14 +15,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 08/17/2021
+ms.date: 09/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3766c78e1c2af55f9e785d73cf639d9a6b1bf2a7
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 0809de7a30a624394103b8e6c3fb594e72c7cd77
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491234"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043160"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurar Antivirus de Microsoft Defender exclusiones en Windows Server
 
@@ -78,7 +78,7 @@ Las secciones siguientes contienen las exclusiones que se entregan con rutas de 
 
 #### <a name="default-exclusions-for-all-roles"></a>Exclusiones predeterminadas para todos los roles
 
-En esta sección se enumeran las exclusiones predeterminadas para todos los roles de Windows Server 2016 y Windows Server 2019.
+En esta sección se enumeran las exclusiones predeterminadas para todos los roles de Windows Server 2016, Windows Server 2019 y Windows Server 2022.
 
 > [!NOTE]
 > Las ubicaciones predeterminadas pueden ser diferentes de las que se enumeran en este artículo.
@@ -325,13 +325,13 @@ En esta sección se enumeran las exclusiones de carpetas que se entregan automá
 En Windows Server 2016 y posteriores, las exclusiones predefinidas que entregan las actualizaciones de inteligencia de seguridad solo excluyen las rutas predeterminadas para un rol o característica. Si instaló un rol o una característica en una ruta de acceso personalizada o desea controlar manualmente el conjunto de exclusiones, asegúrese de no participar en las exclusiones automáticas que se entregan en Actualizaciones de inteligencia de seguridad. Pero tenga en cuenta que las exclusiones que se entregan automáticamente están optimizadas para Windows Server 2016 y posteriores. Consulte [Recomendaciones para definir exclusiones antes](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) de definir las listas de exclusión.
 
 > [!WARNING]
-> La exclusión automática puede afectar negativamente al rendimiento o provocar daños en los datos. Las exclusiones que se entregan automáticamente se optimizan para Windows Server 2016 y Windows roles de Server 2019.
+> La exclusión automática puede afectar negativamente al rendimiento o provocar daños en los datos. Las exclusiones que se entregan automáticamente se optimizan para Windows Server 2016, Windows Server 2019 y Windows Server 2022.
 
 Dado que las exclusiones predefinidas solo excluyen las rutas predeterminadas **,** si mueve las carpetas NTDS y SYSVOL a otra unidad o ruta de acceso que sea diferente de la ruta de acceso *original,* debe agregar exclusiones manualmente. Consulte [Configure the list of exclusions based on folder name or file extension](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension).
 
 Puede deshabilitar las listas de exclusión automática con la directiva de grupo, los cmdlets de PowerShell y WMI.
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Usar la directiva de grupo para deshabilitar la lista de exclusiones automáticas en Windows Server 2016 y Windows Server 2019
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022"></a>Usar la directiva de grupo para deshabilitar la lista de exclusiones automáticas en Windows Server 2016, Windows Server 2019 y Windows Server 2022
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y, a continuación, **seleccione Editar**.
 
@@ -373,7 +373,7 @@ Si es necesario, puede agregar o quitar exclusiones personalizadas. Para ello, c
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)

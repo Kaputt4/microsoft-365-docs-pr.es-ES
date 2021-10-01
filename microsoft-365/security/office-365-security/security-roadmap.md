@@ -19,12 +19,12 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: Recomendaciones principales del equipo de ciberseguridad de Microsoft para implementar capacidades de seguridad para proteger su entorno Microsoft 365 seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc401f20a7f7425e619fc057dbe481341db993ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a2e982f1da196185d466dfddfbbc61e98100070
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187326"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042799"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Hoja de ruta de seguridad: prioridades principales para los primeros 30 días, 90 días y más allá
 
@@ -61,10 +61,10 @@ Estas tareas pueden realizarse rápidamente y tienen un impacto menor para los u
 
 ****
 
-|Área|Tasks|
+|Área|Tareas|
 |---|---|
 |Administración de seguridad|<ul><li>Compruebe Puntuación segura y tome nota de la puntuación actual ( <https://security.microsoft.com/securescore> ).</li><li>Active el registro de auditoría para Office 365. Consulte [Buscar en el registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).</li><li>[Configure Microsoft 365 para aumentar la seguridad](tenant-wide-setup-for-increased-security.md).</li><li>Revise periódicamente los paneles y los informes en el portal Microsoft 365 Defender y Cloud App Security.</li></ul>|
-|Protección contra amenazas|[Conectar Microsoft 365 para Microsoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) iniciar la supervisión mediante las directivas de detección de amenazas predeterminadas para comportamientos anómalos. Se tardan siete días en crear una línea base para la detección de anomalías. <p>  Implementar la protección para cuentas de administrador:<ul><li>Usa cuentas de administrador dedicadas para la actividad de administración.</li><li>Exigir la autenticación multifactor (MFA) para cuentas de administrador.</li><li>Usa un [dispositivo de Windows 10 altamente seguro para](/windows-hardware/design/device-experiences/oem-highly-secure) la actividad de administración.</li></ul>|
+|Protección contra amenazas|[Conectar Microsoft 365 para Microsoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) iniciar la supervisión mediante las directivas de detección de amenazas predeterminadas para comportamientos anómalos. Se tardan siete días en crear una línea base para la detección de anomalías. <p>  Implementar la protección para cuentas de administrador:<ul><li>Usa cuentas de administrador dedicadas para la actividad de administración.</li><li>Exigir la autenticación multifactor (MFA) para cuentas de administrador.</li><li>Usa un [dispositivo de Windows altamente seguro para](/windows-hardware/design/device-experiences/oem-highly-secure) la actividad de administración.</li></ul>|
 |Administración de acceso e identidad  |<ul><li>[Habilitar Azure Active Directory de identidad](/azure/active-directory/active-directory-identityprotection-enable).</li><li>Para entornos de identidad federada, aplique la seguridad de la cuenta (longitud de contraseña, antigüedad, complejidad, etc.).</li></ul>|
 |Protección de la información|Revise recomendaciones de protección de información de ejemplo. La protección de la información requiere coordinación en toda la organización. Empiece con estos recursos:<ul><li>[Information Protection de Office 365 para RGPD](/compliance/regulatory/gdpr)</li><li>[Configurar Teams con tres niveles de protección](../../solutions/configure-teams-three-tiers-protection.md) (incluye uso compartido, clasificación, prevención de pérdida de datos y Azure Information Protection)</li></ul>|
 |

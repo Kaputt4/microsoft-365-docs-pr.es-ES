@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4bc846927524bd80adf512107e1d072c7969d58f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 09817ff370af6a813b6473edf874a10a510f7185
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211830"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043040"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender requisitos previos
 
@@ -44,6 +44,7 @@ Cualquiera de estas licencias le da acceso a Microsoft 365 Defender característ
 - Microsoft 365 E3 con el Seguridad de Microsoft 365 E5 complemento
 - Microsoft 365 A3 con el complemento Microsoft 365 A5 seguridad
 - Windows 10 Enterprise E5 o A5
+- Windows 11 Enterprise E5 o A5
 - Enterprise Mobility + Seguridad (EMS) E5 o A5 
 - Office 365 E5 o A5
 - Microsoft Defender para punto de conexión

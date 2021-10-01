@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administradores pueden aprender a recuperarse de un ataque de ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 755086b039a95770ef1f615733f46c3c782214fc
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 94f45fd03d33fb5c1111e8a9098acc21b4830b01
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941944"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041713"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
@@ -84,7 +84,7 @@ Si estas opciones no funcionan, puedes probar Windows Defender [sin](https://sup
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Paso 4: Recuperar archivos en un equipo o dispositivo limpiado
 
-Después de completar el paso anterior para quitar la carga ransomware del entorno (lo que impedirá [](https://support.microsoft.com/help/17128) que el ransomware cifre o quite los archivos), puede usar el Historial de archivos en Windows 10 y Windows 8.1 o Protección del sistema en Windows 7 para intentar recuperar los archivos y carpetas locales.
+Después de completar el paso anterior para quitar la carga de ransomware del entorno (lo que impedirá que el ransomware cifre o quite los archivos), puede usar el Historial de archivos en Windows 11, Windows 10, Windows 8.1 y mediante System Protection en Windows 7 para intentar recuperar los archivos y carpetas locales. [](https://support.microsoft.com/help/17128)
 
 **Notas**:
 
@@ -160,7 +160,7 @@ Microsoft 365:
 
 - [Implementar la protección contra ransomware para el inquilino de Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)
 - [Protección de malware y ransomware](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [Proteger su equipo con Windows 10 de los ataques de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Proteger el equipo Windows de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Control de ransomware en SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 
 Microsoft 365 Defender:

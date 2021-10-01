@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1405d2b2c40f208ebe09a8be29fa1a7f5f8a03ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea7f520fffa7efc7c16a61184f7f5ceb15123978
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214897"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043100"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Instalación de dispositivos de control de dispositivos de Microsoft Defender para endpoint 
 
@@ -34,13 +34,12 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 |Privilegio|Permiso|
 |---|---|
-|Access|Instalación del dispositivo |
+|Acceso|Instalación del dispositivo |
 |Modo de acción|Allow, Prevent |
 |Compatibilidad con CSP|Sí|
 |Compatibilidad con GPO|Sí|
 |Soporte técnico basado en usuarios|No|
 |Compatibilidad basada en máquina|Sí|
-|||
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
@@ -62,7 +61,7 @@ Las siguientes propiedades del dispositivo son compatibles con la instalación d
 
 Esta configuración de directiva le permite especificar una lista de los IDs de hardware plug and play y los IDs compatibles para dispositivos que Windows pueden instalar. Esta configuración de directiva está diseñada para usarse solo cuando la configuración de directiva Aplicar orden de evaluación por capas para **Permitir** e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos está habilitada.
 
-Cuando esta configuración de directiva  está habilitada junto con la opción Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar cualquier dispositivo cuyo identificador de hardware plug and play o id. compatible aparezca en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación, como la siguiente configuración de directiva:
+Cuando esta configuración de directiva  está habilitada junto con la opción Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar cualquier dispositivo cuyo identificador de hardware plug and play o id. compatible aparezca en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación,  como la siguiente configuración de directiva:
 
 - Impedir la instalación de dispositivos que coincidan con estos IDs de dispositivo.
 - Impedir la instalación de dispositivos que coincidan con cualquiera de estos IDs de instancia de dispositivo.
@@ -76,7 +75,7 @@ Si  la configuración de directiva Aplicar orden de evaluación por capas para p
 
 Esta configuración de directiva te permite especificar una lista de los IDs de instancia de dispositivo Plug and Play para dispositivos que Windows pueden instalar. Esta configuración de directiva está diseñada para usarse solo cuando la configuración de directiva Aplicar orden de evaluación por capas para **Permitir** e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos está habilitada. 
 
-Cuando esta configuración de directiva  está habilitada junto con el orden de evaluación Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar cualquier dispositivo cuyo identificador de instancia de dispositivo Plug and Play aparezca en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación, como la siguiente configuración de directiva:
+Cuando esta configuración de directiva  está habilitada junto con la opción Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las opciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar cualquier dispositivo cuyo identificador de instancia de dispositivo Plug and Play aparezca en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación,  como la siguiente configuración de directiva:
 
 - Impedir la instalación de dispositivos que coincidan con cualquiera de estos IDs de instancia de dispositivo 
 
@@ -86,7 +85,7 @@ Si  la configuración de directiva Aplicar orden de evaluación por capas para p
 
 Esta configuración de directiva te permite especificar una lista de identificadores únicos globales (GUID) de la clase de configuración de dispositivo para los paquetes de controladores que Windows pueden instalarse. Esta configuración de directiva está diseñada para usarse solo cuando la configuración de directiva Aplicar orden de evaluación por capas para **Permitir** e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos está habilitada.
 
-Cuando esta configuración de directiva  está habilitada junto con el orden de evaluación Aplicar orden de evaluación por capas para permitir y evitar directivas de instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar paquetes de controladores cuyos GUID de clase de configuración de dispositivo aparecen en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación, como la siguiente configuración de directiva: 
+Cuando esta configuración de directiva  está habilitada junto con el orden de evaluación Aplicar orden de evaluación en capas para permitir y evitar directivas de instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar paquetes de controladores cuyos GUID de clase de configuración de dispositivo aparecen en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación,  como la siguiente configuración de directiva: 
 
 - Impedir la instalación de dispositivos para estas clases de dispositivo 
 - Impedir la instalación de dispositivos que coincidan con estos IDs de dispositivo 
@@ -96,7 +95,7 @@ Si  la configuración de directiva Aplicar orden de evaluación por capas para p
 
 ### <a name="apply-layered-order-of-evaluation-for-allow-and-prevent-device-installation-policies-across-all-device-match-criteria"></a>Aplicar el orden de evaluación por capas para las directivas de instalación de dispositivos permitir e impedir en todos los criterios de coincidencia de dispositivos 
 
-Esta configuración de directiva cambiará el orden de evaluación en el que se aplica la configuración de directiva Permitir e Impedir cuando se aplique más de una configuración de directiva de instalación para un dispositivo determinado. Habilite esta configuración de directiva para asegurarse de que los criterios de coincidencia de dispositivos superpuestos se aplican en función de una jerarquía establecida en la que los criterios de coincidencia más específicos superpongan criterios de coincidencia menos específicos. El orden jerárquico de evaluación de la configuración de directiva que especifica los criterios de coincidencia de dispositivos es el siguiente:
+Esta configuración de directiva cambiará el orden de evaluación en el que se aplica la configuración de directiva Permitir e Impedir cuando se aplique más de una configuración de directiva de instalación para un dispositivo determinado. Habilite esta configuración de directiva para asegurarse de que los criterios de coincidencia de dispositivos superpuestos se aplican en función de una jerarquía establecida en la que los criterios de coincidencia más específicos sustituyen a criterios de coincidencia menos específicos. El orden jerárquico de evaluación de la configuración de directiva que especifica los criterios de coincidencia de dispositivos es el siguiente:
 
 **Los IDs de instancia de dispositivo > de dispositivos > clase de configuración de dispositivo > dispositivos extraíbles**
 
@@ -193,7 +192,7 @@ Para la implementación de directivas en Intune, la cuenta debe tener permisos p
 
 #### <a name="deploying-policy"></a>Implementación de directivas 
 
-En Microsoft Endpoint Manager[https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)  
+En Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)  
 
 1. Configurar **Impedir la instalación de dispositivos con controladores que coincidan con estas clases de configuración del dispositivo**.
 
@@ -226,7 +225,7 @@ En Microsoft Endpoint Manager[https://endpoint.microsoft.com/](https://endpoint.
     :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="control de dispositivo":::
 
     > [!NOTE]
-    > Algunos dispositivos del sistema tienen varias capas de conectividad para definir su instalación en el sistema. Las unidades usb son estos dispositivos. Por lo tanto, cuando se busca bloquearlos o permitirlos en un sistema, es importante comprender la ruta de conectividad para cada dispositivo. Existen varios IDs de dispositivo genéricos que se usan habitualmente en sistemas y podrían proporcionar un buen comienzo para crear una "lista de permitidos" en estos casos. Vea a continuación la lista:
+    > Algunos dispositivos del sistema tienen varias capas de conectividad para definir su instalación en el sistema. Las unidades usb son estos dispositivos. Por lo tanto, cuando se busca bloquearlos o permitirlos en un sistema, es importante comprender la ruta de conectividad para cada dispositivo. Hay varios IDs de dispositivo genéricos que se usan habitualmente en sistemas y podrían proporcionar un buen comienzo para crear una "lista de permitidos" en estos casos. El siguiente es un ejemplo (no siempre es lo mismo para todos los USB; debes comprender el árbol PnP del dispositivo que quieres administrar a través del Administrador de dispositivos):
     >
     > PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST (para controladores de host)/ USB\ROOT_HUB30; USB\ROOT_HUB20 (para concentradores raíz USB)/ USB\USB20_HUB (para concentradores USB genéricos)/ 
     >

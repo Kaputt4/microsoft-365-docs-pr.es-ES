@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 04/24/2018
+ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: b4e6becbdb0e26317bcc29e5bb70e24486d43414
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 0d33484a7d7369cd9b3727fbd125e208649c533d
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400455"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041785"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>Incorporar los dispositivos Windows 10 con la directiva de grupo
 
@@ -39,7 +39,7 @@ ms.locfileid: "59400455"
 > [!NOTE]
 > Para usar las actualizaciones de directiva de grupo (GP) para implementar el paquete, debe estar en Windows Server 2008 R2 o posterior.
 >
-> Para Windows Server 2019, es posible que deba reemplazar NT AUTHORITY\Well-Known-System-Account por NT AUTHORITY\SYSTEM del archivo XML que crea la preferencia de directiva de grupo.
+> Para Windows Server 2019 y Windows Server 2022, es posible que deba reemplazar NT AUTHORITY\Well-Known-System-Account por NT AUTHORITY\SYSTEM del archivo XML que crea la preferencia de directiva de grupo.
 
 ## <a name="onboard-devices-using-group-policy"></a>Incorporar dispositivos con la directiva de grupo
 
@@ -113,7 +113,7 @@ Puede usar la directiva de grupo (GP) para configurar opciones, como las opcione
 
 ### <a name="update-endpoint-protection-configuration"></a>Actualizar la configuración de protección de puntos de conexión
 
-Después de configurar el script de incorporación, siga editando la misma directiva de grupo para agregar configuraciones de protección de extremos. Realice ediciones de directivas de grupo desde un sistema que ejecute Windows 10 o Server 2019 para asegurarse de que tiene todas las Antivirus de Microsoft Defender necesarias. Es posible que deba cerrar y volver a abrir el objeto de directiva de grupo para registrar las opciones de configuración de Defender ATP.
+Después de configurar el script de incorporación, siga editando la misma directiva de grupo para agregar configuraciones de protección de extremos. Realice ediciones de directivas de grupo desde un sistema que ejecute Windows 10 o Server 2019 o Windows Server 2022 para asegurarse de que tiene todas las funcionalidades Antivirus de Microsoft Defender necesarias. Es posible que deba cerrar y volver a abrir el objeto de directiva de grupo para registrar las opciones de configuración de Defender ATP.
 
 Todas las directivas se encuentran en `Computer Configuration\Policies\Administrative Templates` .
 

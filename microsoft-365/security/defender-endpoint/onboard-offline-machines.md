@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c271aeac44e6590a4273fa9650c101a039225003
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: eb74f3fab320364c1311efa1a629e43eb90a1aae
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353687"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042763"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Incorporar dispositivos sin acceso a Internet a Microsoft Defender para endpoint
 
@@ -42,9 +42,9 @@ Para incorporar dispositivos sin acceso a Internet, deberá seguir los siguiente
 > Los pasos siguientes solo se aplican a dispositivos que ejecutan versiones anteriores de Windows como: Windows Server 2016 anteriores o anteriores Windows 8.1 versiones anteriores.
 
 > [!NOTE]
-> - Un servidor de puerta de enlace OMS no se puede usar como proxy para dispositivos Windows 10 o Windows Server 2019 desconectados cuando se configura mediante el Registro o GPO de 'TelemetryProxyServer'.
-> - Para Windows 10 o Windows Server 2019: aunque puede usar TelemetryProxyServer, debe apuntar a un dispositivo o dispositivo proxy estándar.
-> - Además, Windows 10 o Windows Server 2019 en entornos desconectados deben poder actualizar las listas de confianza de certificados sin conexión a través de un archivo o servidor web interno.
+> - Un servidor de puerta de enlace OMS no se puede usar como proxy para dispositivos de Windows 10 o Windows Server 2019 desconectados o de Windows Server 2022 cuando se configuran mediante el registro o GPO de 'TelemetryProxyServer'.
+> - Para Windows 10 o Windows Server 2019 o Windows Server 2022: aunque puede usar TelemetryProxyServer, debe apuntar a un dispositivo o dispositivo proxy estándar.
+> - Además, Windows 10 o Windows Server 2019 o Windows Server 2022 en entornos desconectados deben poder actualizar las listas de confianza de certificados sin conexión a través de un archivo o servidor web interno.
 > - Para obtener más información acerca de cómo actualizar las CTL sin conexión, vea [Configure a file or web server to download the CTL files](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files).
 
 Para obtener más información acerca de los métodos de incorporación, vea los artículos siguientes:

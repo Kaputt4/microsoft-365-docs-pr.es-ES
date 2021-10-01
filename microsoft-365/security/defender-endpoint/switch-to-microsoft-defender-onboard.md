@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: de37ae2b13a100c3e60b6b0e5de1c0d8a96799ce
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: faf18134d125932c4da9e041c6bf80ccc3881761
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776925"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042847"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para endpoint - Fase 3: Incorporación
 
@@ -68,7 +68,7 @@ Los métodos de implementación varían según el sistema operativo y los métod
 
 <br/><br/>
 
-|Sistemas operativos|Methods|
+|Sistemas operativos|Métodos|
 |---|---|
 |Windows 10|[Directiva de grupo](configure-endpoints-gp.md) <br/><br/> [Configuration Manager](configure-endpoints-sccm.md) <br/><br/> [Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md) <br/><br/> [Script local](configure-endpoints-script.md) <br/><br/> **NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.|
 |Windows 8.1 Enterprise <br/><br/> Windows 8.1 Pro <br/><br/> Windows 7 SP1 Enterprise <br/><br/> Windows 7 SP1 Pro|[Microsoft Monitoring Agent](onboard-downlevel.md) <br/><br/> **NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).|
@@ -86,9 +86,10 @@ Para comprobar que los dispositivos incorporados están correctamente conectados
 
 |Sistema operativo|Instrucciones|
 |---|---|
-|Windows 10 <br/><br/> Windows Server 2019 <br/><br/> Windows Servidor, versión 1803 o posterior <br/><br/> Windows Server 2016 <br/><br/> Windows Server 2012 R2|Consulte [Ejecutar una prueba de detección.](run-detection-test.md) <br/><br/> Visite el sitio de escenarios de demostración de Defender for Endpoint ( ) y <https://demo.wd.microsoft.com> pruebe uno o varios de los escenarios. Por ejemplo, pruebe el escenario **de demostración de** protección entregado en la nube.|
-|macOS:<br/>- 11.3.1 (Big Sur)<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)|Descargue y use la aplicación DE BRICOLAJE en <https://aka.ms/mdatpmacosdiy> . <br/><br/> Para obtener más información, [vea Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
-|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS o LTS superior<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2|1. Ejecute el siguiente comando y busque un resultado de **1**: `mdatp health --field real_time_protection_enabled` .<br/><br/>2. Abra una ventana terminal y ejecute el siguiente comando: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` .<br/><br/>3. Ejecute el siguiente comando para enumerar las amenazas detectadas: `mdatp threat list` . <br/><br/> Para obtener más información, [vea Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
+|Windows 10 <p> Windows Server 2019 <p> <p> Windows Server 2022 <p>Windows Servidor, versión 1803 o posterior <p> Windows Server 2016 <p> Windows Server 2012 R2|Consulte [Ejecutar una prueba de detección.](run-detection-test.md) <p> Visite el sitio de escenarios de demostración de Defender for Endpoint ( ) y <https://demo.wd.microsoft.com> pruebe uno o varios de los escenarios. Por ejemplo, pruebe el escenario **de demostración de** protección entregado en la nube.|
+|macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|Descargue y use la aplicación DE BRICOLAJE en <https://aka.ms/mdatpmacosdiy> . <p> Para obtener más información, [vea Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
+|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS o LTS superior; SLES 12+; Debian 9+; Oracle Linux 7.2|<ol><li>Ejecute el siguiente comando y busque un resultado de **1**: `mdatp health --field real_time_protection_enabled` .</li><li>Abra una ventana de Terminal y ejecute el siguiente comando: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` .</li><li>Ejecute el siguiente comando para enumerar las amenazas detectadas: `mdatp threat list` .</li></ol> <p> Para obtener más información, [vea Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
+
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Confirme que Antivirus de Microsoft Defender está en modo pasivo en los puntos de conexión
 
@@ -109,7 +110,7 @@ Ahora que los puntos de conexión se han incorporado a Defender for Endpoint, el
 
 ### <a name="set-microsoft-defender-antivirus-on-windows-server-to-passive-mode-manually"></a>Establecer Antivirus de Microsoft Defender en Windows server en modo pasivo manualmente
 
-Para establecer Antivirus de Microsoft Defender en modo pasivo en Windows Server, versión 1803 o posterior, o Windows Server 2019, siga estos pasos:
+Para establecer Antivirus de Microsoft Defender en modo pasivo en Windows Server, versión 1803 o posterior, o Windows Server 2019 o Windows Server 2022, siga estos pasos:
 
 1. Abra el Editor del Registro y, a continuación, vaya a:
 
@@ -160,7 +161,7 @@ Ahora que has incorporado a Defender for Endpoint y has desinstalado la solució
 - Aplicaciones potencialmente no deseadas (PUA)
 - Protección de red (NP)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 **¡Enhorabuena!** Ha completado la migración [a Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
 

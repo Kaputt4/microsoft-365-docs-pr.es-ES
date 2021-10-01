@@ -18,12 +18,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 09/08/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5745e5ee7604636b3ae3595ba907e055b86cc012
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 173fd730edfb2fe0ca535a45da07abfea50d5f4d
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491342"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043328"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -536,7 +536,7 @@ Para obtener Windows 10 de la versión, consulte la Windows de datos del ciclo [
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Actualizaciones para administración y mantenimiento de imágenes de implementación (DISM)
 
-Se recomienda actualizar las ediciones Windows 10 (Enterprise, Pro y Home), Windows Server 2019 y las imágenes de instalación del sistema operativo Windows Server 2016 con las últimas actualizaciones de antivirus y antimalware. Mantener las imágenes de instalación del sistema operativo actualizadas ayuda a evitar un vacío en la protección.
+Se recomienda actualizar las ediciones Windows 10 (Enterprise, Pro y Home), Windows Server 2019, Windows Server 2022 y Windows Server 2016 OS con las últimas actualizaciones de antivirus y antimalware. Mantener las imágenes de instalación del sistema operativo actualizadas ayuda a evitar un vacío en la protección.
 
 Para obtener más información, vea [Actualización de Microsoft Defender para obtener Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
@@ -728,7 +728,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 
 | Artículo | Descripción  |
 |:---|:---|
-|[Actualización de Microsoft Defender para Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Revisar los paquetes de actualización de antimalware para las imágenes de instalación del sistema operativo (archivos WIM y VHD). Obtenga Antivirus de Microsoft Defender actualizaciones de Windows 10 (ediciones Enterprise, Pro y Home), Windows Server 2019 y Windows Server 2016 de instalación.  |
+|[Actualización de Microsoft Defender para Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Revisar los paquetes de actualización de antimalware para las imágenes de instalación del sistema operativo (archivos WIM y VHD). Obtenga Antivirus de Microsoft Defender actualizaciones de Windows 10 (ediciones Enterprise, Pro y Home), Windows Server 2019, Windows Server 2022 y Windows Server 2016 de instalación.  |
 |[Administrar cómo se descargan y aplican las actualizaciones de protección](manage-protection-updates-microsoft-defender-antivirus.md) | Las actualizaciones de protección se pueden entregar a través de muchos orígenes. |
 |[Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Puede programar cuándo deben descargarse las actualizaciones de protección. |
 |[Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Si un extremo pierde una actualización o un examen programado, puede forzar una actualización o examinar la próxima vez que un usuario inicia sesión. |

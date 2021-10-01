@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2d6831cfaec813f5ab2598087c2777d867a5f8a7
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 13391bb906f2d056d4c554d52ffcf1ed8b6a6e2b
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009426"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042751"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnerabilidades en mi organización: Administración de amenazas y vulnerabilidades
 
@@ -141,7 +141,7 @@ Ver información de puntos débiles relacionados en la página del dispositivo.
 
 De forma similar a la evidencia de software, ahora mostramos la lógica de detección que aplicamos en un dispositivo para decir que es vulnerable. La nueva sección se denomina "Lógica de detección" (en cualquier vulnerabilidad detectada en la página del dispositivo) y muestra la lógica y el origen de detección.
 
-La categoría "Característica del sistema operativo" también se muestra en escenarios relevantes. Una CVE afectaría a los dispositivos que ejecutan un sistema operativo vulnerable solo si se habilita un componente del sistema operativo específico. Supongamos que Windows Server 2019 tiene vulnerabilidad en su componente DNS. Con esta nueva funcionalidad, solo adjuntaremos esta CVE a los dispositivos de Windows Server 2019 con la funcionalidad DNS habilitada en su sistema operativo.
+La categoría "Característica del sistema operativo" también se muestra en escenarios relevantes. Una CVE afectaría a los dispositivos que ejecutan un sistema operativo vulnerable solo si se habilita un componente del sistema operativo específico. Supongamos que Windows Server 2019 o Windows Server 2022 tiene vulnerabilidad en su componente DNS. Con esta nueva funcionalidad, solo adjuntaremos esta CVE a los dispositivos de Windows Server 2019 y Windows Server 2022 con la funcionalidad DNS habilitada en su sistema operativo.
 
 :::image type="content" alt-text="Ejemplo de lógica de detección que enumera el software detectado en el dispositivo y los KB." source="images/tvm-cve-detection-logic.png":::
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ae3b0e3ad09487d9b48ddab10a43eb36e5abed35
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 7f18d72907ec8f2775ee258906c9185672bfa9be
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353675"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041701"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
 
@@ -82,6 +82,8 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   - **Windows Servidor 2019: solo aplicable para la versión preliminar pública**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
     - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    
+  - **Windows Server 2022**
 
 ## <a name="permissions"></a>Permisos
 

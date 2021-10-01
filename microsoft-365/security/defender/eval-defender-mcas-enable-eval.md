@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1b5e664e6675b477ecb2507fd52588aa159bcc9b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c36e0f9841d0b1e95d17734047a1ad9f35d3739c
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189294"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042595"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>Habilitar el entorno de evaluación para Microsoft Cloud App Security
 
@@ -40,7 +40,7 @@ En este artículo se explica el proceso de acceso al portal de Cloud App Securit
 
 Para descubrir las aplicaciones en la nube que se usan en el entorno, puede realizar una o ambas de las siguientes acciones:
 
-- Para empezar a trabajar rápidamente con Cloud Discovery, integre con Microsoft Defender para Endpoint. Esta integración nativa le permite empezar inmediatamente a recopilar datos sobre el tráfico en la nube en Windows 10 dispositivos, en y fuera de la red.
+- Para empezar a trabajar rápidamente con Cloud Discovery, integre con Microsoft Defender para Endpoint. Esta integración nativa le permite empezar inmediatamente a recopilar datos sobre el tráfico en la nube en Windows 10 y Windows 11 dispositivos, tanto en la red como fuera de la red.
 - Para descubrir todas las aplicaciones en la nube a las que acceden todos los dispositivos conectados a la red, implemente el recopilador de registros Cloud App Security en los firewalls y otros servidores proxy. Esto recopila datos de los puntos de conexión y los envía a Cloud App Security para su análisis. Cloud App Security se integra de forma nativa con algunos servidores proxy de terceros para obtener aún más funcionalidades.
 
 En este artículo se incluyen instrucciones para ambos métodos.
@@ -64,7 +64,7 @@ Si aún tiene problemas, revise [Requisitos de red](/cloud-app-security/network-
 
 ## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>Paso 2. Integrar con Microsoft Defender para endpoint
 
-Microsoft Cloud App Security se integra con Microsoft Defender para Endpoint de forma nativa. La integración simplifica el lanzamiento de Cloud Discovery, amplía las capacidades de Cloud Discovery más allá de la red corporativa y habilita la investigación basada en dispositivos. Esta integración muestra los servicios y aplicaciones en la nube a los que se accede desde dispositivos Windows 10 administración de IT. 
+Microsoft Cloud App Security se integra con Microsoft Defender para Endpoint de forma nativa. La integración simplifica el lanzamiento de Cloud Discovery, amplía las capacidades de Cloud Discovery más allá de la red corporativa y habilita la investigación basada en dispositivos. Esta integración muestra los servicios y aplicaciones en la nube a los que se accede desde dispositivos administrados por WINDOWS 10 y Windows 11 dispositivos. 
 
 Si ya has configurado Microsoft Defender para Endpoint, configurar la integración con Cloud App Security es un botón de alternancia en Microsoft 365 Defender. Una vez activada la integración, puede volver al portal de Cloud App Security y ver datos enriquecidos en el Panel de detección de nube.
 
@@ -87,7 +87,7 @@ El panel de detección de nube está diseñado para ofrecerte más información 
 
 Para empezar a usar el panel de detección en la nube, consulta [Trabajar con aplicaciones detectadas.](/cloud-app-security/discovered-apps)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Paso 3 de 3: [Piloto Microsoft Cloud App Security](eval-defender-mcas-pilot.md)
 

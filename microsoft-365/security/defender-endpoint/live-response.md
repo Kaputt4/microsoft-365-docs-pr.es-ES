@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71fd1428df73686f59199c70d988599f511faaf3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5e77cecfe06606f974c4e488bcec14e12c9ce0de
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165699"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043340"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -66,6 +66,9 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   - **Windows Servidor 2019: solo aplicable para la versión preliminar pública**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
     - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    
+  - **Windows Server 2022**
+       
 
 - **Habilitar la respuesta en directo desde la página de configuración avanzada**.
 
@@ -211,7 +214,7 @@ Para permitir que el equipo de operaciones de seguridad continúe investigando u
 - Si está esperando a que se descargue un archivo, puede moverlo al fondo mediante Ctrl + Z.
 - Para llevar una descarga de archivos al primer plano, en la consola de comandos de respuesta en directo, escriba `fg <command_id>` .
 
-Estos son algunos ejemplos:
+Aquí le mostramos otros ejemplos:
 
 <br>
 
@@ -321,7 +324,7 @@ processes > output.txt
 
 Selecciona la **pestaña Registro de** comandos para ver los comandos usados en el dispositivo durante una sesión. Cada comando se realiza un seguimiento con detalles completos como:
 
-- Id.
+- ID
 - Línea de comandos
 - Duración
 - Estado y barra lateral de entrada o salida

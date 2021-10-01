@@ -17,18 +17,21 @@ ms.collection:
 - m365solution-spintranet
 localization_priority: Normal
 description: Obtenga información sobre cómo Teams funciona con Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 7da2032e1106d03178eccf3bcfb4f37fc63780d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6df7d20b8541ec6aefca1f30d7fbfe6bf7c3f6c9
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210680"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043016"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>Capacidades multige geográficas en Microsoft Teams
 
 Las funcionalidades multige geográficas de Teams permiten que Teams datos de chat se almacenen en reposo en una ubicación geográfica especificada. Los datos de chat constan de mensajes de chat, incluidos mensajes privados, mensajes de canal e imágenes usadas en chats.
 
 Teams la ubicación de datos preferida (PDL) para que los usuarios y grupos determinen dónde almacenar los datos. Si la PDL no está establecida o no es válida, los datos se almacenan en la ubicación central del inquilino.
+
+> [!NOTE]
+> En julio de 2021 se Teams funcionalidades multigeós en Teams. Los mensajes de chat y canal se migrarán automáticamente a la ubicación geográfica correcta en los próximos trimestres. Los cambios de PDL nuevos se procesarán después de que el inquilino haya completado la sincronización inicial y los nuevos cambios de PDL posteriores se pondrán en cola y se procesarán en el orden en que se reciban.
 
 ## <a name="user-chat"></a>Chat de usuario
 
@@ -66,7 +69,7 @@ Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
 
 Teams Multi-Geo es perfecto para el usuario final. Una vez que cambie la PDL de un usuario o un grupo, los datos respectivos se pondrán en cola para la migración y la migración se producirá automáticamente sin ningún impacto para el usuario o su cliente de Teams incluso si están activos mientras se produce la migración.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Configuración de inquilino de Microsoft 365 Multi-Geo](/microsoft-365/enterprise/multi-geo-tenant-configuration)
 

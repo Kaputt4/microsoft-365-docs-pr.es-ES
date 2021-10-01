@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 63c75ccb3ce8d3063235763986d5b9e85969ef45
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: 11b7339dce44d3fb55593e7b54a5d38982f957cd
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477640"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043304"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado
 
@@ -34,7 +34,8 @@ ms.locfileid: "59477640"
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Servidor, versión 1803
-- Windows Server, 2019
+- Windows Server 2019
+- Windows Server 2022
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

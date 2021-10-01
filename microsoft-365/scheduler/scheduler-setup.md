@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Configuración del Programador para Microsoft 365.
-ms.openlocfilehash: 01e574fd2f4cd766b3347c6fa56149f6bcd600d5
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: bebb2befa6a24f8913b70aa77ca66ef7e664e9d2
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988828"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042571"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Configuración del Planificador para Microsoft 365
 
-Los administradores de inquilinos deben configurar un buzón del asistente programador y obtener licencias del programador para los organizadores de reuniones para habilitar el Programador para Microsoft 365 servicio. 
+Los administradores de inquilinos deben configurar un buzón de asistente programador y obtener licencias de programador para los organizadores de reuniones para habilitar el Programador para Microsoft 365 servicio. 
 
 ## <a name="licensing"></a>Licencias
 
@@ -51,7 +51,7 @@ Use el Centro de administración de Microsoft 365 para crear un buzón de usuari
 Use el nombre Cortana en la dirección SMTP principal del buzón. Nombres como `Cortana@yourdomain.com` , o se `CortanaScheduler@contoso.com` `Cortana.Scheduler@yourdomain.com` recomiendan.
 
 ```PowerShell
-$domain="yourdomain.com  "
+$domain="yourdomain.com"
 $tenantAdmin="<tenantadmin>@$domain"
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $tenantAdmin
@@ -80,7 +80,7 @@ Después de ejecutar este comando "set" en el buzón del asistente del programad
 Para comprobar que se ha creado el buzón del asistente del programador
 
 ```PowerShell
-Get-CalendarProcessing cortana$domain | fl DeleteNonCalendarItems
+Get-CalendarProcessing cortana@$domain | fl DeleteNonCalendarItems
 ```
 
 El resultado debe ser "false".
@@ -88,7 +88,7 @@ El resultado debe ser "false".
 <br>
 
 ```PowerShell
-Get-Mailbox -Identity cortana$domain | fl *type*
+Get-Mailbox -Identity cortana@$domain | fl *type*
 ```
 
 El resultado debe ser

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8cf8b1e049a96e7a03fb4df0199294afe193a660
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 81640ff0716d6dd0803dcad5b0db1849dfbee0d5
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399852"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042667"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -63,9 +63,9 @@ La configuración de WinHTTP es independiente de la configuración de proxy de e
 Configure un proxy estático basado en el Registro para el sensor Defender for Endpoint detection and response (EDR) para informar de datos de diagnóstico y comunicarse con Defender for Endpoint services si un equipo no tiene permiso para conectarse a Internet.
 
 > [!NOTE]
-> Al usar esta opción en Windows 10 o Windows Server 2019, se recomienda tener la siguiente compilación (o posterior) y el paquete acumulativo de actualizaciones acumulativas:
+> Al usar esta opción en Windows 10 o Windows Server 2019 o Windows Server 2022, se recomienda tener la siguiente compilación (o posterior) y el paquete acumulativo de actualizaciones acumulativas:
 >
-> - Windows 10, versión 1809 o Windows Server 2019 :<https://support.microsoft.com/kb/5001384>
+> - Windows 10, versión 1809 o Windows Server 2019 o Windows Server 2022 :<https://support.microsoft.com/kb/5001384>
 > - Windows 10, versión 1909 -<https://support.microsoft.com/kb/4601380>
 > - Windows 10, versión 2004 -<https://support.microsoft.com/kb/4601382>
 > - Windows 10, versión 20H2 -<https://support.microsoft.com/kb/4601382>

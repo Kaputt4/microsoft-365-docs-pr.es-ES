@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4e52906cda48314967e40039caabfd81e38514c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 91a4e2cd0d0a19fcbceb36560fea5c49ad904237
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210340"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042908"
 ---
 # <a name="get-live-response-results"></a>Obtener resultados de respuesta en directo
 
@@ -69,6 +69,8 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   - **Windows Servidor 2019: solo aplicable para la versión preliminar pública**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
     - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    
+  - **Windows Server 2022**  
 
 ## <a name="permissions"></a>Permisos
 
@@ -91,7 +93,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Authorization|Cadena|{token} de portador. Obligatorio.|
+|Authorization|String|{token} de portador. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

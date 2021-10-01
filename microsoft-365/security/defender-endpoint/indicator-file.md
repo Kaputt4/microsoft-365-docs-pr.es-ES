@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8c8de260ebd8d16d7b402465e91a37d78e9d904b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 34c2e3a797dd463ad44fbc5d8576bc2b77b75f5c
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187513"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042655"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -52,7 +52,7 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 
 - La versión del cliente Antimalware debe ser 4.18.1901.x o posterior. Ver [Versiones mensuales de la plataforma y el motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Compatible con dispositivos con Windows 10, versión 1703 o posterior, Windows Server 2016 y 2019.
+- Compatible con dispositivos con Windows 10, versión 1703 o posterior, Windows Server 2016, 2019 y Windows Server 2022.
 
 - Para empezar a bloquear archivos, primero debe activar [la característica "bloquear](advanced-features.md) o permitir" en Configuración.
 
@@ -166,7 +166,7 @@ Las características de aplicación vulnerables de bloqueo de amenazas y adminis
 |Antivirus de Microsoft Defender exclusión|Permitir|Bloquear|Permitir|
 |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee6241e6db062730446505e2bcbc377b15ffee9c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49c307bc2a68ae750e7ac9c54fd52b3b2b5f45ad
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187553"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043208"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -140,9 +140,9 @@ Puede incorporar Windows Server 2012 R2 y Windows Server 2016 mediante Microsoft
 
 Después de completar los pasos de incorporación, deberá configurar y actualizar los [System Center Endpoint Protection cliente.](#configure-and-update-system-center-endpoint-protection-clients)
 
-## <a name="windows-server-sac-version-1803-windows-server-2019-and-windows-server-2019-core-edition"></a>Windows Server (SAC) versión 1803, Windows Server 2019 y Windows Server 2019 Core Edition
+## <a name="windows-server-sac-version-1803-windows-server-2019-windows-server-2022-and-windows-server-2019-core-edition"></a>Windows Server (SAC) versión 1803, Windows Server 2019, Windows Server 2022 y Windows Server 2019 Core edition
 
-Puede incorporar Windows Server (SAC) versión 1803, Windows Server 2019 o Windows Server 2019 Core edition mediante los siguientes métodos de implementación:
+Puede incorporar Windows Server (SAC) versión 1803 o Windows Server 2019, o Windows Server 2022 o Windows Server 2019 Core edition mediante los siguientes métodos de implementación:
 
 - [Script local](configure-endpoints-script.md)
 - [Directiva de grupo](configure-endpoints-gp.md)
@@ -152,7 +152,7 @@ Puede incorporar Windows Server (SAC) versión 1803, Windows Server 2019 o Windo
 
 > [!NOTE]
 >
-> - El paquete de incorporación para Windows Server 2019 a Microsoft Endpoint Manager envía actualmente un script. Para obtener más información sobre cómo implementar scripts en Configuration Manager, vea [Paquetes y programas en Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+> - El paquete de incorporación para Windows Server 2019 y Windows Server 2022 a Microsoft Endpoint Manager incluye actualmente un script. Para obtener más información sobre cómo implementar scripts en Configuration Manager, vea [Paquetes y programas en Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 > - Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo o Microsoft Endpoint Configuration Manager.
 
 La compatibilidad con Windows Server proporciona información más detallada sobre las actividades del servidor, la cobertura para la detección de ataques de kernel y memoria y habilita acciones de respuesta.
@@ -196,7 +196,7 @@ En esta integración se incluyen las siguientes funcionalidades:
 - Incorporación automatizada: el sensor Defender for Endpoint se habilita automáticamente en los servidores Windows que están incorporados a Azure Defender. Para obtener más información sobre la incorporación de Azure Defender, consulte [Use the integrated Microsoft Defender for Endpoint license](/azure/security-center/security-center-wdatp).
 
     > [!NOTE]
-    > La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha expandido para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+    > La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha ampliado para admitir Windows Server 2022, [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows servidores supervisados por Azure Defender también estarán disponibles en Defender para endpoint: Azure Defender se conecta perfectamente al inquilino de Defender para endpoint, lo que proporciona una vista única entre clientes y servidores. Además, las alertas de Defender para extremo estarán disponibles en la consola de Azure Defender.
 
@@ -227,7 +227,7 @@ Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de dete
 
 ## <a name="offboard-windows-servers"></a>Servidores de Windows offboard
 
-Puede salir de Windows Server (SAC), Windows Server 2019 y Windows Server 2019 Core edition en el mismo método disponible para dispositivos cliente Windows 10 cliente.
+Puede salir de Windows Server (SAC), Windows Server 2019, Windows Server 2022 y Windows Server 2019 Core edition en el mismo método disponible para dispositivos cliente Windows 10.
 
 - [Offboarding con directiva de grupo](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Dispositivos offboard con Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)

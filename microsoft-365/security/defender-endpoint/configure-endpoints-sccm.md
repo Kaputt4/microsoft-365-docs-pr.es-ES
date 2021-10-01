@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 02/07/2020
+ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: e61e525f23cf1e763c64fae1828e7d505d51a5cb
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 9a5ef03cf94501d83340f159ecd1b54f26f68b0a
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402003"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042932"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Incorporar los dispositivos Windows 10 con Configuration Manager
 
@@ -53,9 +53,10 @@ En función de la versión de Configuration Manager que esté ejecutando, se pue
   - Windows Server 2016
   - Windows Server 2016 versión 1803 o posterior
   - Windows Server 2019
+  - Windows Server 2022
 
 > [!NOTE]
-> Para obtener más información sobre cómo incorporar Windows Server 2012 R2, Windows Server 2016 y Windows Server 2019, vea [Onboard Windows servers](configure-server-endpoints.md).
+> Para obtener más información sobre cómo incorporar Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 y Windows Server 2022, vea [Onboard Windows servers](configure-server-endpoints.md).
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>Incorporar dispositivos con System Center Configuration Manager
 

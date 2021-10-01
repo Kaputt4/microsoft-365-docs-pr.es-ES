@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1fae1d1a800c6005f690ac3b4ac5a32cff38d549
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2bdb81ff6e6f95c30cb7661fde98b272310539d
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189307"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043280"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Ejecutar una simulación de ataque en un Microsoft 365 Defender piloto
 
@@ -94,13 +94,13 @@ Para cada simulación o tutorial:
 
 ## <a name="simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional"></a>Simular un ataque con un controlador de dominio aislado y un dispositivo cliente (opcional)
 
-En este ejercicio de respuesta a incidentes opcional, simulará un ataque a un controlador de dominio de Servicios de dominio de Active Directory (AD DS) aislado y un dispositivo Windows 10 mediante un script de PowerShell y, a continuación, investigará, corregirá y resolverá el incidente.
+En este ejercicio de respuesta a incidentes opcional, simulará un ataque a un controlador de dominio de Servicios de dominio de Active Directory (AD DS) aislado y un dispositivo Windows mediante un script de PowerShell y, a continuación, investigará, corregirá y resolverá el incidente.
 
 En primer lugar, debe agregar puntos de conexión al entorno piloto.
 
 ### <a name="add-pilot-environment-endpoints"></a>Agregar extremos de entorno piloto
 
-En primer lugar, debes agregar un controlador de dominio de AD DS aislado y un dispositivo Windows 10 a tu entorno piloto.
+En primer lugar, debes agregar un controlador de dominio de AD DS aislado y un Windows dispositivo a tu entorno piloto.
 
 1. Compruebe que el inquilino del entorno piloto [ha habilitado Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 
@@ -141,7 +141,7 @@ Durante la simulación, el ataque inserta el shellcode en un proceso aparentemen
 
 Para ejecutar la simulación del escenario de ataque:
 
-1. Asegúrese de que el entorno piloto incluye el controlador de dominio de AD DS aislado y Windows 10 dispositivo.
+1. Asegúrese de que el entorno piloto incluye el controlador de dominio de AD DS aislado y Windows dispositivo.
 
 2. Inicie sesión en el dispositivo de prueba con la cuenta de usuario de prueba.
 

@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: c897a65296f0f5b016b2bdb22e28773a01be494a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: dcc6a0fd065ecffd302fd0b1ea9296ddaa1a5c80
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776997"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042583"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -268,7 +268,7 @@ Antes de crear indicadores para archivos, asegúrese de que se cumplen los sigui
 
 - Antivirus de Microsoft Defender se configura con la protección basada en la nube habilitada (consulte [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
 - La versión del cliente antimalware es 4.18.1901.x o posterior
-- Los dispositivos se Windows 10, versión 1703 o posterior; Windows Server 2016; o Windows Server 2019
+- Los dispositivos se Windows 10, versión 1703 o posterior; Windows Server 2016 o Windows Server 2019 o Windows Server 2022
 - La [característica Bloquear o permitir está activada](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-ip-addresses-urls-or-domains"></a>Indicadores de direcciones IP, direcciones URL o dominios
@@ -291,7 +291,7 @@ Antes de crear indicadores para certificados de aplicación, asegúrese de que s
 
 - Antivirus de Microsoft Defender se configura con la protección basada en la nube habilitada (consulte [Manage cloud-based protection](deploy-manage-report-microsoft-defender-antivirus.md))
 - La versión del cliente antimalware es 4.18.1901.x o posterior
-- Los dispositivos se Windows 10, versión 1703 o posterior; Windows Server 2016; o Windows Server 2019
+- Los dispositivos se Windows 10, versión 1703 o posterior; Windows Server 2016 o Windows Server 2019 o Windows Server 2022
 - Las definiciones de protección contra virus y amenazas están actualizadas
 
 > [!TIP]
@@ -455,7 +455,7 @@ Si ha trabajado en todos los pasos de este artículo y todavía necesita ayuda, 
 
 3. En la **ventana Asistente de** soporte técnico, describa el problema y, a continuación, envíe el mensaje. Desde allí, puede abrir una solicitud de servicio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar Microsoft Defender para el punto de conexión](manage-atp-post-migration.md)
 

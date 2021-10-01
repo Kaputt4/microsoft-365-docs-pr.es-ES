@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b9f7cda368f9770a645fa588597196eccf038b4f
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 3169464afe92a8af80df1b6dedfd9f7eb806a402
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356653"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042631"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -175,7 +175,7 @@ Esta característica no funcionará si el envío de ejemplo está desactivado. S
 > - La versión del motor antivirus es 1.1.17300.4 o posterior. Ver [Versiones mensuales de la plataforma y el motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - La protección basada en la nube está habilitada. Consulte [Activar la protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - El envío de ejemplo está activado
-> - Los dispositivos Windows 10 versión 1703 o posterior, o Windows 2016 o 2019
+> - Los dispositivos Windows 10 versión 1703 o posterior, o Windows server 2016 o 2019, o Windows Server 2022
 
 ### <a name="collect-files"></a>Recopilar archivos
 

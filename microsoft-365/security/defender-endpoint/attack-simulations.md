@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 3ccb0bf5392bcfd8b520c1124d5daa568f1bc8be
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2d60897d00b2b0228fd1a716dd9b4b7bb12a7bb9
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222086"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041677"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Experiencia de Microsoft Defender para endpoint a través de ataques simulados 
 
@@ -69,4 +69,4 @@ Lea el documento del tutorial proporcionado con cada escenario de ataque. Cada d
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Incorporar dispositivos](onboard-configure.md)
-- [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
+- [Dispositivos Windows integrados](configure-endpoints.md)
