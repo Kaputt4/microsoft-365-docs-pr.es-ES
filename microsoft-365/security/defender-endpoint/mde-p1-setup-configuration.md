@@ -7,24 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 53d8742b411c500705434fcef181793df591eb19
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: b0b11d43b0736224a26c2863afa6de6be31e4a63
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490972"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069130"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Configurar y configurar Microsoft Defender para endpoint plan 1 (versión preliminar)
 
 > [!TIP]
-> Si tiene Microsoft 365 E3 pero no Microsoft 365 E5, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) para registrarse en el programa de vista previa.
+> Si tiene Microsoft 365 E3 O A3 pero no Microsoft 365 E5 o A5, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) para registrarse en el programa de vista previa.
 
 En este artículo se describe cómo configurar y configurar Defender for Endpoint Plan 1 (versión preliminar). Tanto si tiene asistencia como si lo está haciendo usted mismo, puede usar este artículo como guía durante toda la implementación.  
 
@@ -54,7 +54,7 @@ En la tabla siguiente se enumeran los requisitos básicos de Defender para el pl
 
 | Requisito | Descripción |
 |:---|:---|
-| Requisitos de licencias | Plan 1 de Defender para punto de conexión (versión preliminar) <br/><br/>*Si tiene Microsoft 365 E3, puede unirse al programa de vista previa.* |
+| Requisitos de licencias | Plan 1 de Defender para punto de conexión (versión preliminar) <br/><br/>*Si tiene una Microsoft 365 E3 O A3, puede unirse al programa de vista previa.* |
 | Requisitos de los exploradores | Microsoft Edge <br/> Versión 11 de Internet Explorer <br/> Google Chrome |
 | Sistemas operativos | Windows 10, versión 1709 o posterior <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina) o 10.14.6 (Mojave) <br/>iOS <br/>Sistema operativo Android  |
 | Datacenter | Una de las siguientes ubicaciones de centro de datos: <br/>- Unión Europea <br/>- Reino Unido <br/>- Estados Unidos |
@@ -403,7 +403,7 @@ Para ayudarle con la planeación de la implementación de WDAC, consulte los sig
 
 - [Windows Defender Implementación de Control de aplicaciones en diferentes escenarios: tipos de dispositivos](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ha pasado por el proceso de configuración y configuración, el siguiente paso es empezar a usar Defender para endpoint. 
 

@@ -7,24 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7083ebea0a43c997f9ad3942523033dc38e4c0ba
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: e9caad6640b0c70382852c548d4b78b9fa95d450
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491366"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069142"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Introducción al Plan 1 de Microsoft Defender para endpoints (versión preliminar)
 
 > [!TIP]
-> Si tiene Microsoft 365 E3 pero no Microsoft 365 E5, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) para registrarse en el programa de vista previa.
+> Si tiene Microsoft 365 E3 O A3 pero no Microsoft 365 E5 o A5, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) para registrarse en el programa de vista previa.
 
 El portal de Microsoft 365 Defender ( ) le permite ver información sobre las amenazas detectadas, administrar las alertas e incidentes, tomar las medidas necesarias en las amenazas detectadas y administrar [https://security.microsoft.com](https://security.microsoft.com) dispositivos. El Microsoft 365 Defender es donde puede empezar a interactuar con las capacidades de protección contra amenazas que obtiene con Defender for Endpoint Plan 1 (versión preliminar). En las secciones siguientes se describe cómo empezar:
 
@@ -168,7 +168,7 @@ Desplácese hacia abajo para ver todas las vistas del informe de protección web
 > [!TIP]
 > Para obtener más información, vea [Protección web](web-protection-overview.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Administrar Microsoft Defender para endpoint plan 1 (versión preliminar)](mde-p1-maintenance-operations.md)
 - [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md)

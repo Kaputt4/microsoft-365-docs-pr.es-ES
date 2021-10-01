@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 06/02/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: aec229a8286113b78b39f8aad330ca3545bc92a6
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 230e70000e4561c7b88bcedb7bab143b03b95b49
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490852"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042895"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Detectar y bloquear aplicaciones potencialmente no deseadas
 
@@ -42,7 +42,7 @@ Estos son algunos ejemplos:
 > [!TIP]
 > Para obtener más ejemplos y una explicación de los criterios que usamos para etiquetar aplicaciones para que las características de seguridad les presten especial atención, consulte [Cómo identifica Microsoft el malware y las aplicaciones potencialmente no deseadas](/windows/security/threat-protection/intelligence/criteria).
 
-Las aplicaciones potencialmente no deseadas pueden aumentar el riesgo de que su red se infecte con malware real, puede hacer que sea más difícil identificar infecciones de malware o que se pierdan recursos de TI al limpiar las infecciones. La protección contra PUA es compatible con Windows 10, Windows Server 2019 y Windows Server 2016. En Windows 10 (versión 2004 y posteriores), Antivirus de Microsoft Defender bloquea las aplicaciones que se consideran PUA para dispositivos Enterprise (E5) de forma predeterminada.
+Las aplicaciones potencialmente no deseadas pueden aumentar el riesgo de que su red se infecte con malware real, puede hacer que sea más difícil identificar infecciones de malware o que se pierdan recursos de TI al limpiar las infecciones. La protección de PUA se admite en Windows 10, Windows Server 2019, Windows Server 2022 y Windows Server 2016. En Windows 10 (versión 2004 y posteriores), Antivirus de Microsoft Defender bloquea las aplicaciones que se consideran PUA para dispositivos Enterprise (E5) de forma predeterminada.
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -74,7 +74,7 @@ Aunque Microsoft Defender para punto de conexión tiene su propia lista de bloqu
 La característica de protección contra aplicaciones potencialmente no deseadas (PUA) de Antivirus de Microsoft Defender puede detectar y bloquear PUA en los puntos de conexión de su red.
 
 > [!NOTE]
-> Esta característica está disponible en Windows 10, Windows Server 2019 y Windows Server 2016.
+> Esta característica está disponible en Windows 10, Windows Server 2019, Windows Server 2022 y Windows Server 2016.
 
 Antivirus de Microsoft Defender bloquea los archivos PUA que se detecten y cualquier intento de descargarlos, moverlos, ejecutarlos o instalarlos. A continuación, los archivos PUA bloqueados se ponen en cuarentena. Cuando se detecta un archivo PUA en un punto de conexión, Antivirus de Microsoft Defender envía una notificación al usuario ([a menos que se hayan deshabilitado las notificaciones](configure-notifications-microsoft-defender-antivirus.md)) en el mismo formato de otras detecciones de amenazas. A la notificación se antepone `PUA:` para indicar su contenido.
 
@@ -122,7 +122,7 @@ Para System Center 2012 Configuration Manager, consulte [Cómo implementar una d
 
 7. Seleccione **Habilitado** para habilitar la protección contra PUA.
 
-8. En **Opciones**, seleccione **Bloquear** para bloquear aplicaciones potencialmente no deseadas o seleccione **Modo de auditoría** para probar cómo funciona la configuración en su entorno. Seleccione **Aceptar**.
+8. En **opciones**, seleccione **Bloquear** para bloquear aplicaciones potencialmente no deseadas o seleccione **Modo auditoría** para probar cómo funciona la configuración en su entorno. Seleccione **De acuerdo**.
 
 9. Implemente el objeto de directiva de grupo como lo haría normalmente.
 

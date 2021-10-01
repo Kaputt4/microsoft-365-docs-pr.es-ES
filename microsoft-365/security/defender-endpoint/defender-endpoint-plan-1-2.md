@@ -8,19 +8,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8c0e8a07ae0d2a37b2eb5a1829c5ed5ec5904c30
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: c5be94c73e99cdb67c9db3a1b067c9723a4e2945
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491210"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069082"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-preview-and-plan-2"></a>Plan 1 (versión preliminar) y Plan 2 de Microsoft Defender para Endpoint Plan 1 (versión preliminar)
 
@@ -42,7 +42,7 @@ En la tabla siguiente se describe lo que se incluye en cada plan en un nivel alt
 > [!IMPORTANT]
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. Este contenido incluye vínculos a otros artículos que podrían describir algunas características que no se incluyen en Defender for Endpoint Plan 1 (versión preliminar).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtener una introducción al Plan 1 de Microsoft Defender para endpoints (versión preliminar)](defender-endpoint-plan-1.md)
 - [Configurar y configurar Defender para endpoint plan 1 (versión preliminar)](mde-p1-setup-configuration.md)
