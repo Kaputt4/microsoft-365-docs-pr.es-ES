@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las funcionalidades de gobernanza de aplicaciones para controlar sus aplicaciones.
-ms.openlocfilehash: c0e5b92f534533fb03505421b5e6a49208891443
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: b57d5b36266a5facebe8136b14d01014cfe68b03
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942039"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042787"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Introducción a la gobernanza de aplicaciones (en versión preliminar)
 
@@ -72,7 +72,7 @@ Para comprobar que la integración con MCAS está activa, busque las directivas 
 
 ## <a name="licensing-and-administrator-role-prerequisites"></a>Requisitos previos de rol de administrador y licencias
 
-1. Compruebe que su cuenta tiene el nivel de licencia [adecuado](#licensing-for-app-governance). La gobernanza de aplicaciones es una característica complementaria para Microsoft Cloud App Security (MCAS) y, por tanto, MCAS debe estar presente en su cuenta como un producto independiente o como parte de los distintos paquetes de licencia.
+1. Compruebe que su cuenta tenga el [nivel de licencias adecuado](#licensing-for-app-governance). La gobernanza de aplicaciones es un complemento para Microsoft Cloud App Security (MCAS) y, por tanto, MCAS debe estar presente en su cuenta como un producto independiente o como parte de los distintos paquetes de licencia.
 1. Debe tener uno de los [roles de administrador](#administrator-roles) que se enumeran a continuación para acceder a las páginas de gobernanza de la aplicación en el portal.
 1. La dirección de facturación de su organización debe estar dentro de una de las [áreas admitidas de Norteamérica, Europa o África](app-governance-countries.md) para activar la prueba gratuita.
 
@@ -81,27 +81,13 @@ Para comprobar que la integración con MCAS está activa, busque las directivas 
 Antes de empezar a trabajar con la gobernanza de aplicaciones, debería confirmar [Centro de administración de Microsoft 365: suscripciones](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) y los complementos. Para obtener acceso y usar la gobernanza de aplicaciones, su organización debe tener una de las siguientes suscripciones:
 
 - Microsoft Cloud App Security
-- Microsoft 365 E5
-- Cumplimiento de Microsoft 365 E5
-- Microsoft 365 E5 Developer (sin Windows ni audioconferencia)
-- Gobierno y protección de información de Microsoft 365 E5
-- Seguridad de Microsoft 365 E5
-- Microsoft 365 E5 con minutos de llamada
-- Microsoft 365 E5 sin audioconferencia
-- Cumplimiento de Microsoft 365 A5 para profesores
-- Cumplimiento de Microsoft 365 A5 para estudiantes
-- Microsoft 365 A5 para profesores
-- Microsoft 365 A5 para estudiantes
-- Gobierno y protección de información de Microsoft 365 A5 para profesores
-- Gobierno y protección de información de Microsoft 365 A5 para estudiantes
-- Seguridad de Microsoft 365 A5 para profesores
-- Seguridad de Microsoft 365 A5 para estudiantes
-- Ventajas de uso para estudiantes de Microsoft 365 A5
-- Microsoft 365 A5 con minutos de llamada para profesores
-- Microsoft 365 A5 con minutos de llamada para estudiantes
-- Microsoft 365 A5 sin audioconferencia para profesores
-- Microsoft 365 A5 sin audioconferencia para estudiantes
-- Ventajas de uso de Microsoft 365 A5 sin audioconferencia para estudiantes
+- Microsoft 365 (E5/A5)
+- Cumplimiento de Microsoft 365 E5/A5 
+- Gobernanza e Information Protection de Microsoft 365 E5/A5
+- Seguridad de Microsoft 365 E5/A5
+- Complemento de Cumplimiento de Microsoft 365 F5
+- Complemento de Cumplimiento y de Seguridad de Microsoft 365 F5
+
 
 ### <a name="administrator-roles"></a>Roles de administrador
 
@@ -146,7 +132,7 @@ Si no ha participado en la versión preliminar privada y desea cancelar la versi
 1. En el Centro de administración de Microsoft 365, vaya a **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Sus productos**</a>.
 1. Vaya a la prueba de gobernanza de aplicaciones, haga clic en los tres puntos y seleccione **Cancelar suscripción**.
 1. En el panel flotante resultante, proporcione un motivo para la cancelación, cualquier comentario adicional y seleccione **Cancelar suscripción**.
-1. Seleccione **Cancelar suscripción** en la pantalla emergente resultante. La versión de prueba se ha cancelado, perderá el acceso a la gobernanza de aplicaciones y se eliminarán los datos de gobernanza de aplicaciones (datos de registro que se usan para crear la información y detecciones de gobernanza de aplicaciones; ningún correo electrónico ni otros archivos se verán afectados).
+1. Seleccione **Cancelar suscripción** en la pantalla emergente. La versión de prueba se ha cancelado. Perderá el acceso a la gobernanza de aplicaciones y se eliminarán los datos asociados (los datos de registro que se usan para crear la información y detecciones de la gobernanza de aplicaciones; ni los correos electrónico ni otros archivos se verán afectados).
 
 ## <a name="known-issues-for-the-public-preview"></a>Problemas conocidos para esta versión preliminar pública.
 

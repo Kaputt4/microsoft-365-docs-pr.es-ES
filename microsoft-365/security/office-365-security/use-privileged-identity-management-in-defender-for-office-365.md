@@ -1,5 +1,5 @@
 ---
-title: Use Privileged Identity Management (PIM) en Microsoft Defender para Office 365.
+title: Usar Azure Privileged Identity Management (PIM) en Microsoft Defender para Office 365 para limitar el acceso del administrador a las herramientas de ciberseguridad.
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Aprenda a integrar PIM para conceder acceso Just-In-Time limitado a los usuarios para que realicen tareas con privilegios elevados en Microsoft Defender para Office 365 y reducir así el riesgo para los datos.
+description: Aprenda a integrar Azure PIM para conceder acceso Just-In-Time limitado a los usuarios para que realicen tareas con privilegios elevados en Microsoft Defender para Office 365 y reducir así el riesgo para los datos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 22fbb2dd57c8bd3d6ac9b25b219895bc480c266c
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 45fec4fef733fe302f34c470ce2a264c257b67f7
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444273"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042691"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) y por qué usarlo con Microsoft Defender para Office 365
@@ -44,7 +44,7 @@ En este ejemplo, configuraremos a "Alex", un miembro de nuestro equipo de seguri
 > [!NOTE]
 > Esto le llevará a través de los pasos necesarios para configurar PIM para un analista de seguridad que requiere la capacidad de purgar correos electrónicos con el Explorador de amenazas en Microsoft Defender para Office 365, pero se pueden usar los mismos pasos para otros roles RBAC dentro del portal de seguridad y cumplimiento. Por ejemplo, este proceso podría usarse para un trabajador de la información que necesita acceso diario en eDiscovery para realizar búsquedas y casos de trabajo, pero solo en ocasiones necesita el derecho elevado para exportar datos desde el inquilino.
 
-***paso 1***. En la consola de Azure PIM de la suscripción, agregue al usuario (Alex) al rol lector de seguridad de Azure y configure las opciones de seguridad relacionadas con la activación.
+***Paso 1***. En la consola de Azure PIM de la suscripción, agregue al usuario (Alex) al rol lector de seguridad de Azure y configure las opciones de seguridad relacionadas con la activación.
 
 1. Inicie sesión en el [Centro de administración de Azure AD](https://aad.portal.azure.com/) y seleccione **Azure Active Directory** > **Roles y administradores**.
 2. Seleccione **Lector de seguridad** en la lista de roles y, a continuación,**Editar**  > **Configuración**
@@ -60,7 +60,7 @@ El nombre de su usuario (aquí "Alex") aparecerá en Asignaciones Aptas en la p�
 
 :::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="Asegúrese de examinar la configuración del rol Lector de seguridad en Privileged Access Management. Aquí verá que la duración máxima de la activación de PIM es de 8 horas.":::
 
-***paso 2***. Cree el segundo grupo de permisos necesario (con privilegios elevados) para tareas adicionales y asigne elegibilidad.
+***Paso 2***. Cree el segundo grupo de permisos necesario (con privilegios elevados) para tareas adicionales y asigne elegibilidad.
 
 Con los [Grupos de acceso con privilegios](/azure/active-directory/privileged-identity-management/groups-features), ya se pueden crear grupos personalizados y combinar permisos o aumentar la granularidad cuando sea necesario para satisfacer las prácticas y necesidades de la organización.
 
