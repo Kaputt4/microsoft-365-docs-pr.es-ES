@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 72238bd3f9ccabc64e0846f0384397d14f752bd9
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: b30d29e9ac5d318e2bcee7226db10f7ca24882a2
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988300"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069164"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -67,7 +67,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     - Máximo 25 000 archivos etiquetados automáticamente en su espacio empresarial por día
     - Máximo de 100 directivas de etiquetado automático por espacio empresarial, cada una con un máximo de 100 sitios (SharePoint o OneDrive) cuando se especifican individualmente. También puede especificar todos los sitios, y esta configuración está exenta del máximo de 100 sitios.
     - Los valores existentes para modificado, modificado por y la fecha no se cambian como resultado de las directivas de etiquetado automático, tanto en el modo de simulación como al aplicar las etiquetas.
-    - Cuando la etiqueta aplica el cifrado de, el [issuer Management y el propietario de Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la cuenta en la que se modificó por última vez el archivo.
+    - Cuando la etiqueta aplica el cifrado de, el [issuer Management y el propietario de Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la cuenta en la que se modificó por última vez el archivo. Si esta cuenta ya no está en Azure Active Directory, no se aplicará la etiqueta porque no se pueden establecer estos valores.
 
     Específico para el etiquetado automático para Exchange:
     
@@ -134,7 +134,7 @@ Cuando esta etiqueta de confidencialidad se aplica automáticamente, el usuario 
 
 ### <a name="configuring-sensitive-info-types-for-a-label"></a>Configuración de tipos de información confidencial para una etiqueta
 
-Si selecciona la opción **tipos de información confidencial**, verá la misma lista de tipos de información confidencial que cuando crea una directiva de prevención de pérdida de datos (DLP). Por ejemplo, puede aplicar automáticamente una etiqueta extremadamente confidencial a cualquier contenido que incluya información personal de los clientes, como los números de tarjeta de crédito, de la seguridad social o de pasaporte:
+Al seleccionar la opción **Tipos de información confidencial**, verá la misma lista de tipos de información confidencial que al crear una directiva de prevención de pérdida de datos (DLP). Por ejemplo, puede aplicar automáticamente una etiqueta de Extremadamente confidencial a cualquier contenido que contenga información personal de los clientes, como números de tarjeta de crédito, números del seguro social o números de pasaporte:
 
 ![Tipos de información confidencial para etiquetado automático en aplicaciones de Office.](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -144,7 +144,7 @@ De forma similar a cuando configure directivas DLP, puede restringir la condici�
 
 Para obtener más información sobre estas opciones, consulte las siguientes instrucciones de la documentación DLP: [Ajustar las reglas para que sea más o menos fácil que coincidan](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
-Además, de la misma manera que ocurre con la configuración de directiva DLP, puede elegir si una condición debe detectar todos los tipos de información confidencial o solo uno de ellos. Y para hacer que las condiciones sean más flexibles o complejas, puede agregar [grupos y usar operadores lógicos entre los grupos](data-loss-prevention-policies.md).
+De forma similar a la configuración de la directiva DLP, también puede elegir si una condición debe detectar todos los tipos de información confidencial o solo uno de ellos. Y para que las condiciones sean más flexibles o complejas, puede agregar [grupos y usar operadores lógicos entre los grupos](data-loss-prevention-policies.md).
 
 > [!NOTE]
 > El etiquetado automático basado en tipos personalizados de información confidencial solo se aplica al contenido recién creado o modificado en OneDrive y SharePoint, no al contenido existente. Esta limitación también se aplica a las directivas de etiquetado automático.
@@ -206,8 +206,8 @@ Asegúrese de tener en cuenta los requisitos previos antes de configurar las dir
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Requisitos previos para las directivas de etiquetado automático
 
 - Modo de simulación:
-  - Se debe activar la auditoría de Microsoft 365. Si necesita activar la auditoría o no está seguro de si la auditoría ya está activada, consulte [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
-  - Para ver el contenido de los archivos o del correo electrónico en la vista de origen, debe tener el rol de **Visor de contenido en el explorador de contenido**. Los administradores globales no tienen este rol de forma predeterminada. Si no tiene este permiso, no verá el panel de vista previa cuando seleccione un elemento en la pestaña **Elementos coincidentes**.
+  - La auditoría de Microsoft 365 debe estar activada. Si necesita activar la auditoría o no está seguro de si ya fue activada, consulte [Activar o desactivar la Búsqueda en el registro de auditoría](turn-audit-log-search-on-or-off.md).
+  - Para ver el contenido del archivo en la vista de origen, debe tener el rol de **Visor de contenido del explorador de contenido**. Los administradores globales no tienen este rol activado de forma predeterminada. Si no tiene este permiso, no verá el panel de vista previa cuando seleccione un elemento de la pestaña **Elementos coincidentes**.
 
 - Para etiquetar automáticamente archivos en SharePoint y OneDrive:
   - Tiene [etiquetas de confidencialidad habilitadas para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -262,7 +262,7 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     ![Pestaña Etiquetado automático](../media/auto-labeling-tab.png)
 
     > [!NOTE]
-    > Si no ve la pestaña de **Etiquetado automático**, esta funcionalidad no está disponible actualmente en su región debido a una dependencia de back-end de Azure. Para obtener más información, vea [Disponibilidad de dependencia de Azure por país.](/troubleshoot/azure/general/dependency-availability-by-country)
+    > Si no ve la pestaña **Etiquetado automático**, esta funcionalidad no está disponible actualmente en su región debido a una dependencia de Azure de back-end. Para obtener más información, consulte [Disponibilidad de dependencias de Azure por país](/troubleshoot/azure/general/dependency-availability-by-country).
 
 3. Seleccione **+ Crear directiva de etiquetado automático**. Esto inicia la configuración de Nueva directiva:
 
@@ -278,7 +278,7 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     
     Para especificar cuentas individuales de OneDrive, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
 
-7. En la página **Configurar reglas comunes o avanzadas**: mantenga el valor predeterminado de **Reglas comunes** para definir las reglas que identifican el contenido que se debe etiquetar en todas las ubicaciones seleccionadas. Si necesita distintas reglas dependiendo de la ubicación, seleccione **Reglas avanzadas**. Después, seleccione **Siguiente**.
+7. Para la página **Configurar reglas comunes o avanzadas**: mantenga el valor predeterminado de las **Reglas comunes** para definir reglas que identifiquen el contenido que se va a etiquetar en todas las ubicaciones seleccionadas. Si necesita reglas diferentes por ubicación, seleccione **Reglas avanzadas**. Luego, seleccione **Siguiente**.
 
     Las reglas usan condiciones que incluyen tipos de información confidencial y opciones de uso compartido:
     - En el caso de los tipos de información confidencial, puede seleccionar tipos de información integrados y personalizados.
@@ -311,7 +311,7 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
 9. En la página **Elegir una etiqueta para aplicarla automáticamente**: seleccione **+ Elegir una etiqueta**, seleccione una etiqueta del panel **Elegir una etiqueta de confidencialidad** y seleccione **Siguiente**.
 
-10. En la página **Decidir si quiere probar la directiva ahora o más tarde**: seleccione **Ejecutar directiva en modo de simulación** si ya está listo para ejecutar la directiva de etiquetado automático ahora, en el modo de simulación. En caso contrario, seleccione **Dejar la directiva desactivada**. Seleccione **Siguiente**:
+10. En la página **Decidir si quiere probar la directiva ahora o más tarde**: seleccione **Ejecutar directiva en modo de simulación** si ya está listo para ejecutar la directiva de etiquetado automático en el modo de simulación. De lo contrario, seleccione **Dejar directiva desactivada**. A continuación, seleccione **Siguiente**:
 
     ![Pruebe la directiva de etiquetado automático configurada.](../media/simulation-mode-auto-labeling-wizard.png)
 

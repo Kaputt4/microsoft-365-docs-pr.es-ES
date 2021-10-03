@@ -2,7 +2,7 @@
 title: 'Puntuaciones más altas en las pruebas del sector: Microsoft 365 Defender'
 ms.reviewer: ''
 description: Vea las puntuaciones y análisis más recientes de Microsoft 365 Defender. Obtiene puntuaciones altas de forma consistente en pruebas independientes (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). Ver las puntuaciones y análisis más recientes.
-keywords: Antivirus de Microsoft Defender, Antivirus de Windows Defender, revisiones de av, prueba de antivirus, pruebas de av, puntuaciones av más recientes, puntuaciones de detección, pruebas de producto de seguridad, pruebas de seguridad del sector, pruebas de antivirus del sector, mejores antivirus, prueba av, comparativas de av, SE labs, MITRE ATT&CK, plataforma de protección de puntos de conexión, EPP, detección y respuesta de punto de conexión, EDR, Windows 10, Antivirus de Microsoft Defender, WDAV, Microsoft Defender para punto de conexión, Microsoft 365 Defender, seguridad, malware, av, antivirus, puntuaciones, puntuación, protección de nueva generación, clasificación, éxito
+keywords: Antivirus de Microsoft Defender, Antivirus de Windows Defender, revisiones de av, prueba de antivirus, pruebas de av, puntuaciones av más recientes, puntuaciones de detección, pruebas de producto de seguridad, pruebas de seguridad del sector, pruebas de antivirus del sector, mejores antivirus, prueba av, comparativas de av, SE labs, MITRE ATT&CK, plataforma de protección de puntos de conexión, EPP, detección y respuesta de punto de conexión, EDR, Windows 10, Windows 11, Antivirus de Microsoft Defender, WDAV, Microsoft Defender para punto de conexión, Microsoft 365 Defender, seguridad, malware, av, antivirus, puntuaciones, puntuación, protección de nueva generación, clasificación, éxito
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,25 +15,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 4d49772eb3932ae98840d2be94c447183e94fade
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8f51fe73d25ac0ab3568b1896a0c35efdd14a40f
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189184"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042703"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuaciones más altas en las pruebas del sector
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de pruebas](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o bien [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
+> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Las tecnologías de [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) consiguen de forma consistente altas puntuaciones en pruebas independientes, lo que demuestra la fuerza de sus capacidades de protección contra amenazas empresariales. Microsoft busca ser transparente respecto a estas puntuaciones de pruebas. En esta página se resumen los resultados y se proporcionan análisis.
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md) es un conjunto unificado de defensas empresariales anteriores y posteriores a una vulneración. Coordina de forma nativa la detección, prevención, investigación y respuesta entre puntos de conexión, identidades, correo electrónico y aplicaciones para proporcionar protección integrada contra ataques sofisticados.
+[Microsoft 365 Defender](microsoft-365-defender.md) es un conjunto de aplicaciones unificado de defensa empresarial previa y posterior a la vulneración que coordina de forma nativa la detección, prevención, investigación y respuesta entre extremos, identidades, correo electrónico y aplicaciones para proporcionar protección integrada contra ataques sofisticados.
 
 Microsoft 365 Defender combina las funcionalidades de [Microsoft Defender para punto de conexión](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender para Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) y [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) en una sola solución.
 
@@ -49,7 +49,7 @@ Una parte fundamental del enfoque de pruebas de MITRE es imitar los ataques del 
 
 [Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) tiene un rendimiento alto de forma consistente en pruebas independientes, lo que muestra que es una de las mejores opciones en el mercado de antivirus. Tenga en cuenta que estas pruebas solo proporcionan resultados para el antivirus y no comprueban si hay protección de seguridad adicional.
 
-Antivirus de Microsoft Defender es la [protección de nueva generación](https://www.youtube.com/watch?v=Xy3MOxkX_o4) en la [Pila de seguridad de Microsoft Defender para punto de conexión de Windows 10](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) que aborda las amenazas más sofisticadas y actuales. En algunos casos, es posible que los clientes ni siquiera sepan que se les ha protegido porque un ataque cibernético se detiene [milisegundos después de que se inicie una campaña](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). Esto se debe a que el Antivirus de Microsoft Defender y otras funcionalidades de la [plataforma de protección de puntos de conexión (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) en Defender para punto de conexión detecta y detiene el malware al primer indicio. Usan [aprendizaje automático](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [inteligencia artificial](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), análisis de comportamiento y otras tecnologías avanzadas.
+Antivirus de Microsoft Defender es la [protección de nueva generación](https://www.youtube.com/watch?v=Xy3MOxkX_o4) en la [Pila de seguridad de Microsoft Defender para punto de conexión de Windows](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) que aborda las amenazas más sofisticadas y actuales. En algunos casos, es posible que los clientes ni siquiera sepan que se les ha protegido porque un ataque cibernético se detiene [milisegundos después de que se inicie una campaña](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). Esto se debe a que el Antivirus de Microsoft Defender y otras funcionalidades de la [plataforma de protección de puntos de conexión (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) en Defender para punto de conexión detecta y detiene el malware al primer indicio. Usan [aprendizaje automático](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [inteligencia artificial](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), análisis de comportamiento y otras tecnologías avanzadas.
 
 ### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-TEST: Puntuación de protección de 6,0/6,0 en la prueba más reciente
 
@@ -57,7 +57,7 @@ Las pruebas de revisión y certificación de productos AV-TEST se realizan en tr
 
 - Prueba AV-TEST de usuario empresarial de noviembre y diciembre de 2020: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup>**Más reciente**</sup>
 
-    Antivirus de Microsoft Defender obtuvo una Puntuación de protección perfecta de 6,0/6,0, con un 100 % en noviembre y diciembre. Se usaron 11 382 muestras de malware.
+    Antivirus de Microsoft Defender obtuvo una Puntuación de protección perfecta de 6,0/6,0, con un 100 % en noviembre y diciembre. Se usaron 11 382 muestras de malware.
 
 - Prueba AV-TEST de usuario empresarial de septiembre y octubre de 2020: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
 
