@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de YouTube de Veritas a Microsoft 365. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, exhibición de documentos electrónicos y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: fb131d27857a1e1e0fdaf01160f7a84e249227de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 48354460a79cbb8c23086962d17482a3d3419044
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166174"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088246"
 ---
-# <a name="set-up-a-connector-to-archive-youtube-data-preview"></a>Configurar un conector para archivar datos de YouTube (versión preliminar)
+# <a name="set-up-a-connector-to-archive-youtube-data"></a>Configurar un conector para archivar datos de YouTube
 
 Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de YouTube a buzones de usuario de su Microsoft 365 organización. Veritas proporciona un conector configurado para capturar elementos de un origen de datos de terceros e importarlos a Microsoft 365. El conector convierte contenido como chats, datos adjuntos, tareas, notas y publicaciones de YouTube a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a los buzones de usuario en Microsoft 365.
 

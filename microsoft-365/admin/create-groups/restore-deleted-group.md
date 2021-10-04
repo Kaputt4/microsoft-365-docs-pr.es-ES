@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Un grupo eliminado se conserva durante 30 días y aún puede restaurar el grupo. Después de 30 días, el grupo y su contenido se eliminan permanentemente.
-ms.openlocfilehash: 30fa44a50ea6a65ae3cf71cb91e7d8ab0fd2e200
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: fb703240ebec219c0a1d15791782ea72be88a3a4
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773200"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087778"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Restaurar un grupo Microsoft 365 eliminado
 
@@ -49,6 +50,8 @@ Cuando se restaura un grupo, se restaura el siguiente contenido:
 - Teams
 
 - Yammer de grupo y grupo (si el grupo Microsoft 365 se creó a partir de Yammer)
+
+- Power BI área [de trabajo clásica](/power-bi/collaborate-share/service-create-workspaces)
 
 > [!NOTE]
 > En este artículo se describe la restauración de solo Microsoft 365 grupos. El resto de grupos no se pueden restaurar una vez eliminados.

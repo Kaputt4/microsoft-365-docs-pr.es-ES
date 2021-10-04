@@ -77,7 +77,7 @@
           href: ransomware-protection-microsoft-365.md
         - name: Paso 1. Configurar las líneas base de seguridad
           href: ransomware-protection-microsoft-365-security-baselines.md
-        - name: Paso 2. Implementar la detección y respuesta ante ataques
+        - name: Paso 2. Implementación de la detección y respuesta de ataques
           href: ransomware-protection-microsoft-365-attack-detection-response.md
         - name: Paso 3. Proteger identidades
           href: ransomware-protection-microsoft-365-identities.md
@@ -149,7 +149,7 @@
               href: /sharepointmigration/mm-how-to-use?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: 'Paso 3: supervisar e informar'
               href: /sharepointmigration/mm-reports?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-    - name: Trabajo en equipo y colaboración
+    - name: Reuniones y comunicaciones
       items:
         - name: Implementación de voz en Teams en Microsoft 365
           items:
@@ -167,6 +167,33 @@
                   href: /MicrosoftTeams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Caso práctico para la corporación multinacional
               href: /MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Comunicaciones corporativas
+          items:
+            - name: Introducción a las comunicaciones corporativas
+              href: /sharepoint/corporate-communications-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              items:
+                - name: 'Paso 1:planear la estrategia de comunicaciones'
+                  href: /sharepoint/plan-communication-strategy?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: 'Paso 2: revisar las herramientas de comunicación'
+                  href: /sharepoint/review-communication-apps?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: 'Paso 3: definir el ámbito y la audiencia'
+                  href: /sharepoint/audience-profile?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: 'Paso 4: elegir una solución de comunicación'
+                  href: /sharepoint/choose-communication-method?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: "Configurar Conexiones\_Viva"
+              href: /sharepoint/guide-to-setting-up-viva-connections?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: Obtener un sitio principal para la intranet
+              href: /sharepoint/home-site-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: Planear y producir una asamblea informativa
+              href: /sharepoint/hold-town-hall-using-yammer?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: Distribuir las noticias de la organización
+              href: /sharepoint/distribute-corporate-news-to-your-organization?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: Conexión de liderazgo
+              href: /sharepoint/leadership-connection?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: Incorporación de nuevos empleados
+              href: /sharepoint/onboard-employees?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+    - name: Trabajo en equipo y colaboración
+      items:
         - name: Administrar contratos para su empresa
           items:
             - name: Información general
@@ -182,17 +209,17 @@
             - name: Información general
               href: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Qué pensar acerca de la intranet inteligente
-              href: /sharepoint/itrad-vs-modern-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /sharepoint/trad-vs-modern-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Plan de desarrollo de la intranet
-              href: /sharepoint/iintranet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /sharepoint/intranet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Planifique su intranet
-              href: /sharepoint/iplan-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /sharepoint/plan-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Consideraciones al planificar una intranet global
-              href: /sharepoint/iset-up-global-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /sharepoint/set-up-global-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Gobierno de la intranet
-              href: /sharepoint/iintranet-governance?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /sharepoint/intranet-governance?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Comunicación en el lugar de trabajo
-              href: /sharepoint/iworkplace-communications?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              href: /sharepoint/workplace-communications?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Gobierno de colaboración
           items:
             - name: Información general

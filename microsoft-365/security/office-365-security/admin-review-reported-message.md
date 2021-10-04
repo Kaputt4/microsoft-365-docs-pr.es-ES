@@ -13,19 +13,16 @@ ms.collection:
 description: Aprende a revisar los mensajes que se notifican y a enviar comentarios a los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef08b07226d8ce038547b972163d87a557099478
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: de83846e596185687817af6e89957f455ce7b9a1
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401031"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087826"
 ---
 # <a name="admin-review-for-reported-messages"></a>Revisión del administrador para los mensajes de los que se informe
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-> [!NOTE]
-> La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial. Este documento se proporciona únicamente con fines de evaluación y exploración.
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)

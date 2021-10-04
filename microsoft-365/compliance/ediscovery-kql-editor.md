@@ -1,5 +1,5 @@
 ---
-title: Usar el editor de KQL para crear consultas de búsqueda
+title: Uso del editor de KQL para crear consultas de búsqueda
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede usar el editor de KQL para configurar consultas de búsqueda de exhibición de documentos electrónicos en Búsqueda de contenido, Exhibición de documentos electrónicos principal y Advanced eDiscovery.
-ms.openlocfilehash: 185ab0396166d54e4a1e11f03a3e3613d24fff4b
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 571612cc2032b6241923cb6bba2a730a5d821c8a
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59989159"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088222"
 ---
-# <a name="use-the-kql-editor-to-build-search-queries"></a>Usar el editor de KQL para crear consultas de búsqueda
+# <a name="use-the-kql-editor-to-build-search-queries-preview"></a>Usar el editor de KQL para crear consultas de búsqueda (versión preliminar)
 
 La nueva experiencia de consulta KQL en la búsqueda de herramientas de exhibición de documentos electrónicos de Microsoft 365 proporciona comentarios y instrucciones al crear consultas de búsqueda en búsqueda de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery. Al escribir consultas en el editor, proporciona autocompletar las propiedades y condiciones compatibles con búsquedas y proporciona listas de valores admitidos para las propiedades y condiciones estándar. Por ejemplo, si especifica la propiedad email en la consulta, el editor presentará una lista de valores admitidos `kind` que puede seleccionar. El editor de KQL también muestra posibles errores de consulta en tiempo real que puede corregir antes de ejecutar la búsqueda. Lo mejor de todo es pegar consultas complejas directamente en el editor sin tener que crear consultas manualmente con las palabras clave y las tarjetas de condiciones del generador de condiciones estándar.
   

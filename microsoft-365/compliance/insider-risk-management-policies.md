@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 88582efe5e285df2b5439c6d01b63ed4c5ef7855
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 2f9a299faad33dbba09d9e32f3c860f9f7bd6311
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460129"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087814"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -144,7 +144,7 @@ Por ejemplo, su organización tiene un sitio de SharePoint dedicado a un proyect
 
 Cuando se crea una directiva de administración de riesgos internos en el asistente de directivas, se puede elegir entre las siguientes prioridades:
 
-- **Sitios de SharePoint**: cualquier actividad asociada a todos los tipos de archivo en sitios de SharePoint definidos se asigna una mayor puntuación de riesgo. 
+- **Sitios de SharePoint**: cualquier actividad asociada a todos los tipos de archivo en sitios de SharePoint definidos se asigna una mayor puntuación de riesgo. Los usuarios que configuran la directiva y seleccionan sitios de Share Point prioritarios pueden seleccionar SharePoint a los que tienen permiso de acceso. Si SharePoint sitios no están disponibles para la selección en la directiva por parte del usuario actual, otro usuario con los permisos necesarios puede seleccionar los sitios de la directiva más adelante o el usuario actual debe tener acceso a los sitios necesarios.
 - **Tipos de información confidencial**: cualquier actividad asociada a un contenido que contenga [tipos de información confidencial](sensitive-information-type-entity-definitions.md) se le asigna una puntuación de riesgo más alta.
 - **Etiquetas de confidencialidad**: a cualquier actividad asociada a un contenido que tenga aplicadas [etiquetas de confidencialidad](sensitivity-labels.md) específicas se le asigna una puntuación de riesgo más alta.
 
@@ -285,6 +285,9 @@ Siga los siguientes pasos para crear una nueva directiva:
     - **Sitios de SharePoint**: seleccione **Agregar sitio de SharePoint** y seleccione los sitios de SharePoint a los que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo de información confidencial**: seleccione **Agregar tipo de información confidencial** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"Número de cuenta bancaria de EE. UU."* y *"Número de tarjeta de crédito"*.
     - **Etiquetas de confidencialidad**: seleccione **Agregar etiquetas de confidencialidad** y seleccionar las etiquetas que desea priorizar. Por ejemplo, *"Confidencial"* y *"Secreto"*.
+
+    >[!NOTE]
+    >Los usuarios que configuran la directiva y seleccionan sitios de Share Point prioritarios pueden seleccionar SharePoint a los que tienen permiso de acceso. Si SharePoint sitios no están disponibles para la selección en la directiva por parte del usuario actual, otro usuario con los permisos necesarios puede seleccionar los sitios de la directiva más adelante o el usuario actual debe tener acceso a los sitios necesarios.
 
 12. Seleccione **Siguiente** para continuar.
 13. En la página **Indicadores y eventos desencadenantes**, verá los [indicadores](insider-risk-management-settings.md#indicators)que ha definido como disponibles en la página **Configuración de riesgos internos** > **Indicadores**. Si ha seleccionado una plantilla de *Filtración de datos* al principio del asistente, deberá seleccionar una directiva DLP de la lista desplegable de **directivas DLP** para activar los indicadores de activación de la directiva o seleccionar el evento desencadenante incorporado.

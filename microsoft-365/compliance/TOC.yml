@@ -473,7 +473,7 @@
               href: archive-xslt-xml-data.md
             - name: Yieldbroker
               href: archive-yieldbroker-data.md
-            - name: YouTube (vista previa)
+            - name: YouTube
               href: archive-youtube-data.md
             - name: Reuniones de Zoom
               href: archive-zoommeetings-data.md
@@ -638,7 +638,7 @@
               href: content-search-reference.md
             - name: Consultas de palabras clave y condiciones de búsqueda
               href: keyword-queries-and-search-conditions.md
-            - name: Uso del editor de KQL para crear consultas de búsqueda
+            - name: Uso del editor de KQL para crear consultas de búsqueda (versión preliminar)
               href: ediscovery-kql-editor.md
             - name: Configurar el filtrado de permisos de búsqueda
               href: permissions-filtering-for-content-search.md
@@ -716,7 +716,7 @@
               href: assign-ediscovery-permissions.md
             - name: Consultas de palabras clave y condiciones de búsqueda
               href: keyword-queries-and-search-conditions.md
-            - name: Uso del editor de KQL para crear consultas de búsqueda
+            - name: Uso del editor de KQL para crear consultas de búsqueda (versión preliminar)
               href: ediscovery-kql-editor.md
             - name: Configurar límites de cumplimiento
               href: set-up-compliance-boundaries.md
@@ -811,7 +811,7 @@
               href: collection-statistics-reports.md
             - name: Crear consultas de búsqueda para colecciones
               href: building-search-queries.md
-            - name: Uso del editor de KQL para crear consultas de búsqueda
+            - name: Uso del editor de KQL para crear consultas de búsqueda (versión preliminar)
               href: ediscovery-kql-editor.md
             - name: Consultas de palabras clave y condiciones de búsqueda
               href: keyword-queries-and-search-conditions.md

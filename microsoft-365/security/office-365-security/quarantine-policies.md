@@ -13,21 +13,17 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f91d39ee915b8769e5d1500c5cb2a4acb6110c88
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 0a6bbfee3a0f9b875ce4160b48ef70e919ee19bc
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483812"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087970"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
-
-> [!NOTE]
-> Las características que se describen en este artículo están actualmente en Versión preliminar, no están disponibles para todos y están sujetas a cambios.
 
 Las directivas de cuarentena (anteriormente conocidas como etiquetas de _cuarentena)_ en Exchange Online Protection (EOP) y Microsoft Defender para Office 365 permiten a los administradores controlar lo que los usuarios pueden hacer con los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena.
 
@@ -96,7 +92,7 @@ Puede crear y asignar directivas de cuarentena en el portal de Microsoft 365 Def
        - **Permitir que los destinatarios liberen un mensaje de cuarentena**
        - **Permitir que los destinatarios soliciten un mensaje que se liberará de la cuarentena**
      - **Seleccionar acciones adicionales que los** destinatarios pueden realizar en mensajes en cuarentena: seleccione algunos, todos o ninguno de los siguientes valores:
-       - **Eliminar**
+       - **Delete**
        - **Versión preliminar**
        - **Bloquear remitente**
 
@@ -229,8 +225,8 @@ En _las características de_ protección admitidas que ponen en cuarentena los m
 |[Directivas contra correo no deseado:](configure-your-spam-filter-policies.md) <ul><li>**Correo no deseado** (_SpamAction_)</li><li>**Correo no deseado de elevada** confianza (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**Phishing de elevada confianza** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li><li>AdminOnlyAccessPolicy (sin acceso)</li><li>DefaultFullAccessPolicy (acceso completo)</li></ul>|
 |Directivas de protección contra phishing: <ul><li>[Protección de inteligencia suplantada](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección de suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si se detecta message como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia de buzones detecta y suplanta al usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Sí|<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>Protección de suplantación:<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li></ul></li></ul>|
 |[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (sin acceso)|
-|[Caja fuerte de datos adjuntos:](safe-attachments.md) <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware Caja fuerte directivas de datos adjuntos (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>N/D</li></ul>|
-|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|N/D|
+|[Caja fuerte de datos adjuntos:](safe-attachments.md) <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware Caja fuerte directivas de datos adjuntos (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>No aplicable</li></ul>|
+|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|No aplicable|
 |
 
 Las directivas de cuarentena predeterminadas, los grupos de permisos preestablecidos y los permisos se describen al [principio de este artículo](#quarantine-policies) y más adelante en este [artículo](#preset-permissions-groups).
@@ -240,7 +236,7 @@ Las directivas de cuarentena predeterminadas, los grupos de permisos preestablec
 
 ## <a name="assign-quarantine-policies-in-supported-polices-in-the-microsoft-365-defender-portal"></a>Asignar directivas de cuarentena en las directivas admitidas en el portal Microsoft 365 Defender web
 
-### <a name="anti-spam-policies"></a>Directivas contra correo no deseado
+### <a name="anti-spam-policies"></a>Directivas contra correo electrónico no deseado
 
 1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas Directivas contra correo no deseado en \>  \>  \>  la **sección** Reglas.
 
@@ -338,7 +334,7 @@ La inteligencia de suplantación está disponible en EOP y Defender para Office 
 
    **Nota:** Al crear una nueva directiva, se usa un valor de directiva de cuarentena **Apply** en blanco que indica la directiva de cuarentena predeterminada para esa acción. Cuando más adelante edite la directiva, los valores en blanco se reemplazan por los nombres de directiva de cuarentena predeterminados reales, como se describe en la tabla anterior.
 
-   ![Selecciones de directiva de cuarentena en una directiva contra correo no deseado.](../../media/quarantine-tags-in-anti-phishing-policies.png)
+   ![Selecciones de directivas de cuarentena en una directiva contra suplantación de identidad.](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
 Las instrucciones completas para crear y modificar las policías contra suplantación de identidad están disponibles en los siguientes temas:
 
@@ -703,7 +699,7 @@ Si la directiva de cuarentena asigna los **permisos de** acceso completo (todos 
 
 - **Notificaciones en cuarentena:** los botones siguientes están disponibles:
   - **Bloquear remitente**
-  - **Versión**
+  - **Liberar**
   - **Revisar**
 
   ![Botones disponibles en la notificación de cuarentena si la directiva de cuarentena concede al usuario permisos de acceso total.](../../media/quarantine-tags-esn-full-access.png)

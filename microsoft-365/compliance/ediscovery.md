@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido encontrado en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, grupos de Microsoft 365, conversaciones de Microsoft Teams y Skype Empresarial. La exhibición de documentos electrónicos Advanced eDiscovery proporciona muchas características adicionales que le ayudarán a administrar las investigaciones.
-ms.openlocfilehash: f1e2f7fd3403bb90edf3fe4102ed61632a641ee2
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 0dd8ca2e18f1388f4d8a5cdbbbbf401d1d579e10
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498033"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087802"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Soluciones de exhibición de documentos electrónicos en Microsoft 365
 
@@ -37,7 +37,7 @@ Microsoft 365 proporciona tres soluciones de exhibición de documentos electrón
 
 ![Funciones clave de Microsoft 365 herramientas de exhibición de documentos electrónicos.](..\media\m365-ediscovery-solution-graphic.png)
 
-- **Búsqueda de contenido**. Use la herramienta de búsqueda de contenido para buscar contenido en Microsoft 365 de datos y, a continuación, exporte los resultados de la búsqueda al equipo local.
+- **Búsqueda de contenido**. Use la herramienta de búsqueda de contenido para buscar contenido en Microsoft 365 de datos y, a continuación, exporte los resultados de la búsqueda a un equipo local.
 
 - **EDiscovery principal**. La exhibición de documentos electrónicos principal se basa en la funcionalidad básica de búsqueda y exportación de la búsqueda de contenido, ya que permite crear casos de exhibición de documentos electrónicos y asignar administradores de exhibición de documentos electrónicos a casos específicos. Los administradores de exhibición de documentos electrónicos solo pueden tener acceso a los casos de los que son miembros. La exhibición de documentos electrónicos principal también le permite asociar búsquedas y exportaciones con un caso y le permite colocar una retención de exhibición de documentos electrónicos en ubicaciones de contenido relevantes para el caso.
 
@@ -74,7 +74,7 @@ En la tabla siguiente se comparan las funciones clave disponibles en Búsqueda d
 |Exportar a una ubicación de Azure Storage cliente|||![Se admite.](../media/check-mark.png)|
 |||||
 
-Esta es la descripción de cada funcionalidad de exhibición de documentos electrónicos.
+Esta es una descripción de cada funcionalidad de exhibición de documentos electrónicos.
 
 - **Buscar contenido**. Busque contenido almacenado en buzones de correo Exchange, cuentas de OneDrive para la Empresa, sitios de SharePoint, Microsoft Teams, grupos Microsoft 365 y Yammer Teams. Esto incluye el contenido generado por otras Microsoft 365 que almacenan datos en buzones y sitios.
 
@@ -94,33 +94,33 @@ Esta es la descripción de cada funcionalidad de exhibición de documentos elect
 
 - **Notificaciones de retención legal**. Administrar el proceso de comunicación con los administradores de casos. Una notificación de retención legal indica a los custodios que conserven el contenido relevante para el caso. Puede realizar un seguimiento de los avisos recibidos, leídos y reconocidos por los custodios. El flujo de trabajo de comunicaciones Advanced eDiscovery permite crear y enviar notificaciones, avisos y escalaciones iniciales si los custodios no reconocen una notificación de retención.
 
-- **Indización avanzada**. Al agregar orígenes de datos custodiales y no custodios a un caso, las ubicaciones de contenido asociadas se reindexa (en un proceso denominado Indexación *avanzada)* de modo que se vuelva a procesar todo el contenido que se consideró parcialmente indizado para que sea totalmente posible realizar búsquedas al recopilar datos para una investigación.
+- **Indización avanzada**. Al agregar orígenes de datos custodiales y no custodios a un caso, las ubicaciones de contenido asociadas se reindexa (en un proceso denominado Indexación *avanzada)* de modo que se vuelva a procesar cualquier contenido que se considere parcialmente indizado para que sea totalmente posible buscarlo al recopilar datos para una investigación.
 
 - **Corrección de errores**. Corregir errores de procesamiento mediante un proceso denominado *corrección de errores*. La corrección de errores permite corregir problemas de datos que impiden Advanced eDiscovery procesar correctamente el contenido durante la indización avanzada. Por ejemplo, los archivos protegidos con contraseña no se pueden procesar ya que los archivos están bloqueados o cifrados. Con la corrección de errores, puede descargar archivos con errores, quitar la protección con contraseña y, a continuación, cargar los archivos corregidos.
 
 - **Conjuntos de revisión**. Agregue datos relevantes a un conjunto de revisión. Un conjunto de revisión es una ubicación segura y proporcionada Azure Storage microsoft en la nube de Microsoft. Al agregar datos a un conjunto de revisión, los elementos recopilados se copian desde su ubicación de contenido original en el conjunto de revisión. Los conjuntos de revisión proporcionan un conjunto estático y conocido de contenido que puede buscar, filtrar, etiquetar, analizar y predecir relevancia mediante modelos de codificación predictiva. También puede realizar un seguimiento e informar sobre qué contenido se agrega al conjunto de revisión.
 
-- **Compatibilidad con datos adjuntos en la nube y SharePoint versiones**. Al agregar contenido a un conjunto de revisión, tiene la opción de incluir datos adjuntos en la nube o archivos vinculados. Esto significa que el archivo de destino de un archivo adjunto en la nube o un archivo vinculado se agrega al conjunto de revisión. También tiene la opción de agregar toda la versión de un documento SharePoint a un conjunto de revisión.
+- **Compatibilidad con datos adjuntos en la nube y SharePoint versiones**. Al agregar contenido a un conjunto de revisión, tiene la opción de incluir datos adjuntos en la nube o archivos vinculados. Esto significa que el archivo de destino de un archivo adjunto en la nube o un archivo vinculado se agrega al conjunto de revisión. También tiene la opción de agregar todas las versiones de un documento SharePoint a un conjunto de revisión.
 
 - **Reconocimiento óptico de caracteres (OCR).** Cuando se agrega contenido a un conjunto de revisión, la funcionalidad OCR extrae texto de imágenes e incluye el texto de la imagen con el contenido que se agrega a un conjunto de revisión. Esto le permite buscar texto de imagen al consultar el contenido del conjunto de revisión.
 
 - **Subprocesos de conversación**. Cuando los mensajes de Teams y Yammer conversaciones se agregan a un conjunto de revisión, puede recopilar todo el hilo de conversación. Esto significa que toda la conversación de chat que contiene elementos que coinciden con los criterios de la colección se agrega al conjunto de revisión. Esto te permite revisar los elementos de chat en el contexto de la conversación de ida y vuelta.
 
-- **Estadísticas e informes de colección**. Después de crear una colección borrador o confirmar una confirmación de una colección en un conjunto de revisión, puede ver un conjunto enriquecido de estadísticas en los elementos recuperados, como las ubicaciones de contenido que contienen la mayoría de los elementos que coinciden con los criterios de búsqueda y el número de elementos devueltos por la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados. Además, esto incluye el número de elementos secundarios que se extrajeron de sus elementos primarios y se agregaron como elementos independientes al conjunto de revisión.
+- **Estadísticas e informes de colección**. Después de crear una colección borrador o confirmar una confirmación de una colección en un conjunto de revisión, puede ver un conjunto enriquecido de estadísticas en los elementos recuperados, como las ubicaciones de contenido que contienen la mayoría de los elementos que coinciden con los criterios de búsqueda y el número de elementos devueltos por la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados. Además, esto incluye el número de elementos secundarios extraídos de sus elementos primarios y agregados como elementos independientes al conjunto de revisión.
 
 - **Revisar el filtrado de conjunto**. Después de agregar contenido a un conjunto de revisión, puede aplicar filtros para mostrar solo el conjunto de elementos que coincidan con los criterios de filtrado. A continuación, puede guardar los conjuntos de filtros como una consulta, lo que le permite volver a aplicar rápidamente los filtros guardados. Revisar establecer el filtrado y las consultas guardadas le ayudarán a filtrar rápidamente el contenido a los elementos que son más relevantes para la investigación.
 
 - **Etiquetado**. Las etiquetas también le ayudan a crear contenido no relevante e identificar el contenido más relevante. Cuando expertos, abogados u otros usuarios revisan el contenido de un conjunto de opiniones, sus opiniones relacionadas con el contenido se pueden capturar mediante etiquetas. Por ejemplo, si el objetivo es crear contenido innecesario, un usuario puede etiquetar documentos con una etiqueta como "no responde". Después de revisar y etiquetar el contenido, se puede crear una consulta de conjunto de revisión para excluir cualquier contenido etiquetado como "no responde". Este proceso elimina el contenido que no responde de los pasos posteriores en el flujo de trabajo de exhibición de documentos electrónicos.
 
-- **Analytics**. Advanced eDiscovery herramientas para analizar los documentos de conjunto de revisión para ayudarle a organizar los documentos de forma coherente y reducir el volumen de documentos que se revisarán. *Cerca de grupos de detección* duplicados se unen documentos textualmente similares para ayudarle a hacer que el proceso de revisión sea más eficaz. *El subproceso de correo* electrónico identifica mensajes de correo electrónico específicos que dan un contexto completo de la conversación en un subproceso de correo electrónico. *La* funcionalidad de temas intenta analizar los temas que se analizan en los documentos de conjunto de revisión y asignar un tema a los documentos para que pueda revisar los documentos que tienen un tema relacionado. Estas funcionalidades de análisis ayudan a que el proceso de revisión sea más eficaz para que los revisores puedan revisar una fracción de documentos recopilados.
+- **Analytics**. Advanced eDiscovery herramientas para analizar los documentos de conjunto de revisión para ayudarle a organizar los documentos de forma coherente y reducir el volumen de documentos que se revisarán. *Cerca de grupos de detección* duplicados se unen documentos textualmente similares para ayudarle a hacer que el proceso de revisión sea más eficaz. *El subproceso de correo* electrónico identifica mensajes de correo electrónico específicos que dan un contexto completo de la conversación en un subproceso de correo electrónico. *La funcionalidad* de temas intenta analizar temas en los documentos de conjunto de revisión y asignar un tema a los documentos para que pueda revisar documentos con tema relacionado. Estas funcionalidades de análisis ayudan a que el proceso de revisión sea más eficaz para que los revisores puedan revisar una fracción de documentos recopilados.
 
 - **Modelos de codificación predictiva**. Use modelos de codificación predictiva para reducir y asignar grandes volúmenes de contenido de caso a un conjunto relevante de elementos que puede priorizar para su revisión. Para ello, cree y entrena sus propios modelos de codificación predictiva que le ayudarán a priorizar la revisión de los elementos más relevantes de un conjunto de revisión. El sistema usa el aprendizaje para aplicar puntuaciones de predicción a todos los elementos del conjunto de revisión. Esto le permite filtrar elementos en función de la puntuación de predicción, lo que le permite revisar primero los elementos más relevantes (o no relevantes).
 
-- **Metadatos de documento calculados**. Muchas Advanced eDiscovery, como indexación avanzada, subprocesos de conversación, análisis y codificación predictiva, agregan propiedades de metadatos para revisar los documentos establecidos. Estos metadatos contienen información relacionada con la función que realizó una característica específica. Al revisar documentos, puede filtrar las propiedades de metadatos para mostrar documentos que coincidan con los criterios de filtro. Estos metadatos se pueden importar a aplicaciones de revisión de terceros después de exportar los documentos del conjunto de revisión.
+- **Metadatos de documento calculados**. Muchas de las características Advanced eDiscovery, como indexación avanzada, subprocesos de conversación, análisis y codificación predictiva agregan propiedades de metadatos para revisar los documentos establecidos. Estos metadatos contienen información relacionada con la función realizada por una característica específica. Al revisar documentos, puede filtrar las propiedades de metadatos para mostrar documentos que coincidan con los criterios de filtro. Estos metadatos se pueden importar a aplicaciones de revisión de terceros después de exportar los documentos del conjunto de revisión.
 
-- **Transparencia de trabajos de larga ejecución.** Los trabajos en Advanced eDiscovery son procesos de larga ejecución que se desencadenan por acciones del usuario, como agregar custodios a un caso, agregar contenido a un conjunto de revisión, ejecutar análisis y entrenar modelos de codificación predictiva. Puede realizar un seguimiento del estado de estos trabajos y obtener información de soporte técnico si necesita escalar los problemas a MS Support.
+- **Transparencia de trabajos de larga ejecución.** Los trabajos en Advanced eDiscovery suelen ser procesos de larga ejecución que se desencadenan por acciones del usuario, como agregar custodios a un caso, agregar contenido a un conjunto de opiniones, ejecutar análisis y entrenar modelos de codificación predictiva. Puede realizar un seguimiento del estado de estos trabajos y obtener información de soporte técnico si necesita escalar los problemas a MS Support.
 
-- **Exportar a una ubicación de Azure Storage propiedad del cliente**. Al exportar documentos desde un conjunto de revisión, tiene la opción de exportarlos a una cuenta Azure Storage administrada por su organización. Además, Advanced eDiscovery permite personalizar los datos que se exportan. Esto incluye la exportación de metadatos de archivo, archivos nativos, archivos de texto, etiquetas y documentos redactados que se han guardado en un archivo PDF.
+- **Exportar a una ubicación de Azure Storage propiedad del cliente**. Al exportar documentos desde un conjunto de revisión, tiene la opción de exportarlos a una cuenta Azure Storage administrada por su organización. Además, Advanced eDiscovery permite personalizar los datos que se exportan. Esto incluye exportar metadatos de archivo, archivos nativos, archivos de texto, etiquetas y documentos redactados guardados en un archivo PDF.
 
 ## <a name="ediscovery-subscription-comparison"></a>Comparación de suscripción a eDiscovery
 
@@ -177,6 +177,6 @@ Consulte los siguientes artículos para obtener más información y empezar a us
 
 Para ver qué características de exhibición de documentos electrónicos se han iniciado, están implementando o en desarrollo, vea el [Microsoft 365 guía básica](https://aka.ms/eDiscoRoadMap).
 
-## <a name="training"></a>Aprendizaje
+## <a name="training"></a>Formación
 
 La formación de los administradores de TI, los administradores de exhibición de documentos electrónicos y los equipos de investigación de cumplimiento en los conceptos básicos para la búsqueda de contenido, la exhibición de documentos electrónicos principal y Advanced eDiscovery pueden ayudar a su organización a empezar a usar más rápidamente Microsoft 365 herramientas de exhibición de documentos electrónicos. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de la organización a empezar con la exhibición de documentos electrónicos: Describir las capacidades de [eDiscovery y auditoría](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)de Microsoft 365 .

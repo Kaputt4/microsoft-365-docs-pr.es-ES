@@ -10,21 +10,25 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 646007176a35506f0c30d6b7092d70f52f762e57
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 2c14a493cb496b369a313a3e44600af9940922da
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941984"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088102"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Requisitos previos para las cuentas de invitado
 
 ## <a name="external-collaboration-settings"></a>Configuración de la colaboración externa
 
+Escritorio administrado de Microsoft recomienda la siguiente configuración en la organización de Azure AD para el acceso a la cuenta de invitado. Puede ajustar esta configuración en [Azure Portal](https://portal.azure.com) en **Identidades externas / Configuración de colaboración externa:**
+
+-   Para **el acceso de usuarios invitados,** los usuarios invitados tienen acceso limitado a propiedades y **pertenencias de objetos de directorio**
+-   Para **la configuración de invitación de** invitado , establecer en Usuarios miembros y usuarios asignados a roles de administrador específicos pueden invitar a usuarios invitados, incluidos los **invitados con permisos de miembro**
+
 Escritorio administrado de Microsoft requiere la siguiente configuración en la organización de Azure AD para el acceso a la cuenta de invitado. Puede ajustar esta configuración en [Azure Portal](https://portal.azure.com) en **Identidades externas / Configuración de colaboración externa:**
 
--   Para **las restricciones de invitación de invitado establecidas** en Usuarios miembros y usuarios asignados a roles de administrador específicos pueden invitar a usuarios **invitados,** incluidos los invitados con permisos de miembro
--   Para **restricciones de colaboración,** elija cualquiera de estas opciones:
+-   **Restricciones de colaboración,** elija cualquiera de estas opciones:
     -   Si selecciona Permitir **que las invitaciones se envíen a cualquier dominio (más inclusivo),** no se requiere ninguna otra configuración.
     -   Si selecciona Denegar invitaciones a los dominios **especificados,** asegúrese de que Microsoft.com no aparece en los dominios de destino.
     -   Si selecciona Permitir invitaciones solo a los dominios **especificados (más**  restrictivos), asegúrese de que Microsoft.com en los dominios de destino.
