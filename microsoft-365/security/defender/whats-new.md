@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3c35f8315423bd7245546835e5963c7968eb4c12
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 5ebd798baa9b9c4fb759defbf0a650d4835568b8
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483992"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099794"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de pruebas](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o bien [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
+> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Las siguientes características están en versión preliminar o generalmente disponibles (GA) en la última versión de Microsoft 365 Defender.
@@ -51,6 +51,8 @@ Para obtener más información sobre las novedades de otros productos de segurid
 ## <a name="september-2021"></a>Septiembre de 2021
 - (GA) Microsoft Defender para Office 365 datos de eventos está disponible en la API Microsoft 365 Defender streaming de eventos. Puede ver la disponibilidad y el estado de los tipos de eventos en el archivo Microsoft 365 Defender tipos de eventos [en la API de streaming.](supported-event-types.md)
 - (GA) Microsoft Defender para los Office 365 disponibles en la búsqueda avanzada ya está disponible en general.
+- (Versión preliminar) Asignar incidentes y alertas a cuentas de usuario <br> Puede asignar un incidente y todas las alertas asociadas a él  a una cuenta de  usuario desde **Asignar a:** en el panel Administrar incidente de un incidente o en el panel Administrar alerta de una alerta.
+
 
 ## <a name="august-2021"></a>Agosto de 2021
 - (Versión preliminar) Microsoft Defender para obtener Office 365 disponibles en la búsqueda avanzada

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 62f62e421c789f419eeabe174b0d05ae36e3dd4b
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: db1050486ba5b9a4238c8759e23ea449723c74f0
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042607"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099826"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -59,6 +59,9 @@ Para obtener más información sobre Microsoft Defender para Endpoint en otros s
 - [Novedades de Defender para endpoint en iOS](ios-whatsnew.md)
 - [Novedades de Defender para Endpoint en Linux](linux-whatsnew.md)
 
+## <a name="september-2021"></a>Septiembre de 2021
+
+- [Filtrado de contenido web](web-content-filtering.md) <br/>Como parte de las funciones de protección web en Microsoft Defender para endpoint, el filtrado de contenido web permite al equipo de seguridad de su organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Las categorías incluyen contenido para adultos, ancho de banda alto, responsabilidad legal, ocio y no categorizado. Aunque muchos sitios web que entran en una o varias de estas categorías podrían no ser malintencionados, podrían ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones. [Obtenga más información sobre el filtrado de contenido web](web-content-filtering.md).
 
 ## <a name="august-2021"></a>Agosto de 2021
 

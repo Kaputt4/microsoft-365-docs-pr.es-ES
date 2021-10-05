@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administradores pueden aprender a recuperarse de un ataque de ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94f45fd03d33fb5c1111e8a9098acc21b4830b01
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9659a68e69f732203a20853320b2e35cd268a7c8
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041713"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099758"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
@@ -33,7 +33,6 @@ ms.locfileid: "60041713"
 
 Incluso si toma todas las precauciones para proteger su organización, todavía puede ser víctima de un [ataque de ransomware.](/windows/security/threat-protection/intelligence/ransomware-malware) Ransomware es una gran empresa y en el panorama de amenazas actual Microsoft 365 es un objetivo cada vez mayor [para ataques sofisticados.](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf)
 
-
 Los pasos de este artículo le darán la mejor oportunidad de recuperar datos y detener la propagación interna de la infección. Antes de empezar, tenga en cuenta los siguientes elementos:
 
 - No hay ninguna garantía de que el pago del rescate devolverá el acceso a los archivos. De hecho, pagar el rescate puede convertirte en un objetivo para más ransomware.
@@ -44,13 +43,9 @@ Los pasos de este artículo le darán la mejor oportunidad de recuperar datos y 
 
 - Es importante que respondas rápidamente al ataque y sus consecuencias. Cuanto más tiempo espere, menos probable es que pueda recuperar los datos afectados.
 
-## <a name="step-1-verify-your-third-party-backups"></a>Paso 1: Comprobar las copias de seguridad de terceros
+## <a name="step-1-verify-your-backups"></a>Paso 1: Comprobar las copias de seguridad
 
-El conjunto de herramientas de cumplimiento de Microsoft 365 está [](/microsoft-365/compliance/) diseñado para cumplir con los estándares [](https://www.microsoft.com/servicesagreement) legales y normativos de su organización, por lo que, como práctica recomendada, se recomienda realizar una copia de seguridad periódica del contenido y los datos de Microsoft 365 con servicios y aplicaciones de terceros.
-
-Para asegurarse de que tiene la capacidad de restaurar los datos, es importante probar periódicamente las copias de seguridad y validar que se pueden restaurar en caso de ataque. En el caso de un ataque real, estas  restauraciones no deben completarse hasta después  de haber quitado la carga de ransomware (malware) del entorno y después de comprobar que no hay acceso no autorizado en los entornos de Microsoft 365.
-
-Para asegurarse de que las copias de seguridad no se vieron afectadas por el ransomware, el servicio de terceros debe estar cubierto por aire desde sus entornos.
+Si tiene copias de seguridad sin conexión, probablemente pueda restaurar los datos cifrados  después de quitar la carga de ransomware (malware) del entorno y después de comprobar que no hay acceso no autorizado en los entornos de Microsoft 365. 
 
 Si no tiene copias de seguridad o si las copias de seguridad también se vieron afectadas por el ransomware, puede omitir este paso.
 

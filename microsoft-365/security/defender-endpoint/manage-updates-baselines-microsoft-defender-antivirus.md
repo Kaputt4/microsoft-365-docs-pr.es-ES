@@ -16,14 +16,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 09/08/2021
+ms.date: 10/04/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 173fd730edfb2fe0ca535a45da07abfea50d5f4d
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 794c735ecf84efe57b9bb4c88f20f599f25a6a8a
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043328"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099638"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -516,6 +516,9 @@ Las actualizaciones de plataforma y motor se proporcionan en una cadencia mensua
 \*Se seguirá brindando soporte técnico para las actualizaciones de la versión de Windows 10 (consulte Versión de la plataforma incluida con [Windows 10](#platform-version-included-with-windows-10-releases)versiones) a la versión más reciente de la plataforma.
 
 Durante la fase de soporte técnico (solo), los incidentes de soporte comercialmente razonables se proporcionan a través del servicio de soporte técnico de Microsoft & y las ofertas de soporte administrado de Microsoft (como soporte premier). Si un incidente de soporte requiere una escalación al desarrollo para obtener más instrucciones, requiere una actualización que no sea de seguridad o requiere una actualización de seguridad, se pedirá a los clientes que actualicen a la versión más reciente de la plataforma o a una actualización intermedia (*).
+
+> [!NOTE]
+> Si está implementando manualmente una actualización de plataforma de Antivirus de Microsoft Defender, o si está usando un script o un producto de administración que no es de Microsoft para implementar una actualización de plataforma de Antivirus de Microsoft Defender, asegúrese de que la versión esté instalada desde el Catálogo de Microsoft Update antes de que la versión más reciente de `4.18.2001.10` Platform Update [](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) (N-2) esté inst alled.
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>Versión de plataforma incluida con Windows 10 versiones
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 85b021d42741919a64555de3ecd748e096457939
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0a264f16c35a9fe122c2cb62a56c16334fb162d2
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214967"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099710"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Administrar el proceso de implementación gradual para actualizaciones de Microsoft Defender
 
@@ -82,12 +82,13 @@ Los siguientes canales de actualización están disponibles:
 
 ****
 
-|Nombre de canal|Description|Aplicación|
+|Nombre de canal|Descripción|Aplicación|
 |---|---|---|
 |Canal beta: versión preliminar|Probar actualizaciones antes que otras|Los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones mensuales. Seleccione Canal beta para participar en la identificación y la presentación de informes de problemas a Microsoft. Los dispositivos del Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba.|
 |Canal actual (vista previa)|Obtener actualizaciones del canal actual **antes** durante la versión gradual|Los dispositivos establecidos en este canal recibirán actualizaciones lo antes posible durante el ciclo de lanzamiento gradual. Sugerido para entornos de preproducción/validación.|
 |Canal actual (por fases)|Obtener actualizaciones del canal actual más adelante durante la versión gradual|Los dispositivos se ofrecerán actualizaciones más adelante durante el ciclo de lanzamiento gradual. Se sugiere aplicar a una parte pequeña y representativa de la población de dispositivos (~10%).|
 |Canal actual (ancho)|Obtener actualizaciones al final de la versión gradual|Solo se ofrecerán actualizaciones a los dispositivos una vez completado el ciclo de lanzamiento gradual. Se recomienda aplicar a un amplio conjunto de dispositivos de la población de producción (~10-100%).|
+|Crítico: retraso de tiempo|Retrasar actualizaciones de Defender|Se ofrecerán actualizaciones a los dispositivos con un retraso de 48 horas. Ideal para máquinas de centros de datos que solo reciben actualizaciones limitadas. Sugerido solo para entornos críticos.|
 |(valor predeterminado)||Si deshabilitas o no configuras esta directiva, el dispositivo permanecerá en Canal actual (predeterminado): mantenerse actualizado automáticamente durante el ciclo de lanzamiento gradual. Adecuado para la mayoría de los dispositivos.|
 |
 

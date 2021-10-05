@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 41a0c893e193c8690c0c50e5b12ecc8630b9a899
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a3d2254915203ea112d304e9fc45a6f1c4482d9b
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185694"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099734"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -47,7 +47,7 @@ Estas son las formas en que puede administrar sus incidentes:
 
 - [Editar el nombre del incidente](#edit-the-incident-name)
 - [Agregar etiquetas de incidentes](#add-incident-tags)
-- [Asignar el incidente a usted mismo](#assign-incidents)
+- [Asignar el incidente a una cuenta de usuario](#assign-an-incident)
 - [Resolverlos](#resolve-an-incident)
 - [Establecer su clasificación y determinación](#set-the-classification-and-determination)
 - [Agregar comentarios](#add-comments)
@@ -78,9 +78,9 @@ Puede agregar etiquetas personalizadas a un incidente, por ejemplo, para marcar 
 
 Al empezar a escribir, tiene la opción de seleccionar de una lista de etiquetas seleccionadas.
 
-## <a name="assign-incidents"></a>Asignar incidentes
+## <a name="assign-an-incident"></a>Asignar un incidente
 
-Para asignar un incidente, seleccione **Asignarme**. Al hacerlo, se asigna la propiedad del incidente y todas las alertas asociadas a ella a su cuenta de usuario.
+Si aún no se ha asignado un incidente, puede seleccionar el cuadro Asignar **a** y especificar la cuenta de usuario (versión preliminar). Vuelva a asignar un incidente, quite la cuenta de asignación actual seleccionando la "x" junto al nombre de la cuenta y, a continuación, seleccione el cuadro Asignar **a.** Al asignar la propiedad de un incidente, se asigna la misma propiedad a todas las alertas asociadas.
 
 Puede obtener una lista de incidentes asignados filtrando la cola de incidentes. 
 
@@ -106,7 +106,7 @@ Si se trataba de una alerta verdadera, también debe especificar qué tipo de am
 
 Puede agregar varios comentarios a un incidente con el **campo Comentario.** Cada comentario se agrega a los eventos históricos del incidente. Puede ver los comentarios y el historial de un incidente desde el vínculo **Comentarios e** historial en la **página Resumen.**
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Para nuevos incidentes, inicie la [investigación](investigate-incidents.md).
 
@@ -114,7 +114,7 @@ Para incidentes en el proceso, continúe con la [investigación](investigate-inc
 
 Para los incidentes resueltos, realice una [revisión posterior al incidente](first-incident-post.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)
