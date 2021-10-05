@@ -64,6 +64,9 @@
 #### [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
 #### [Crear una regla de notificación de incorporación o retirada](onboarding-notification.md)
 
+#### [Términos de licencia de la aplicación](mde-terms-windows.md)
+
+
 ### [Microsoft Defender para punto de conexión en otros sistemas operativos]()
 #### [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)
 
@@ -103,7 +106,7 @@
 
 ##### [Privacidad](mac-privacy.md)
 ##### [Recursos](mac-resources.md)
-
+##### [Términos de licencia de la aplicación](mde-terms-mac.md)
 
 #### [Microsoft Defender para punto de conexión en iOS]()
 ##### [Introducción a Microsoft Defender para punto de conexión en iOS](microsoft-defender-endpoint-ios.md)
@@ -165,6 +168,9 @@
 
 ##### [Solucionar problemas]()
 ###### [Solución de problemas](android-support-signin.md)
+
+##### [Términos de licencia de la aplicación de Microsoft Defender para punto de conexión](mde-terms-mobile.md) 
+
 
 ### [Solucionar problemas de incorporación]()
 #### [Solucionar problemas durante la incorporación](troubleshoot-onboarding.md)
