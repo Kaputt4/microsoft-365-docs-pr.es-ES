@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c3350cd45eedb590016e3456274b4e04dda1c51
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c1c8e5fa990e37f4812b8e5429fdbf2fcbfa7b71
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222970"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124738"
 ---
 # <a name="onboard-non-windows-devices"></a>Incorporar dispositivos que no tienen Windows
 
@@ -40,7 +40,7 @@ ms.locfileid: "59222970"
 
 Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows y plataformas Windows de seguridad. Podrás ver alertas de varios sistemas operativos compatibles (SO) en Microsoft 365 Defender y proteger mejor la red de la organización.
 
-Deberá conocer las versiones exactas de Linux distros y macOS que son compatibles con Defender for Endpoint para que la integración funcione. Para más información, vea:
+Deberá conocer las versiones exactas de Linux distros y macOS que son compatibles con Defender for Endpoint para que la integración funcione. Para más información vea:
 
 - [Requisitos del sistema de Microsoft Defender para endpoint en Linux](microsoft-defender-endpoint-linux.md#system-requirements)
 - [Requisitos del sistema de Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md#system-requirements).
@@ -66,14 +66,14 @@ Tendrás que seguir los siguientes pasos para incorporar dispositivos que no Win
 1. Siga la documentación del tercero para desconectar la solución de terceros de Microsoft Defender para endpoint.
 
 2. Quite los permisos de la solución de terceros en el inquilino de Azure AD.
-   1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+   1. Inicie sesión en el [Azure Portal](https://portal.azure.com).
    2. Seleccione **Azure Active Directory > Enterprise aplicaciones**.
    3. Selecciona la aplicación que quieras quitar.
    4. Seleccione el **botón** Eliminar.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
+- [Dispositivos Windows integrados](configure-endpoints.md)
 - [Servidores integrados](configure-server-endpoints.md)
 - [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
 - [Solución de problemas de incorporación de Microsoft Defender para puntos de conexión](troubleshoot-onboarding.md)

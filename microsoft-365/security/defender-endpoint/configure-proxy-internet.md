@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81640ff0716d6dd0803dcad5b0db1849dfbee0d5
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: d00bfa4b9a595725ed689c33dff096b3a96bd2d5
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042667"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124750"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -63,8 +63,9 @@ La configuración de WinHTTP es independiente de la configuración de proxy de e
 Configure un proxy estático basado en el Registro para el sensor Defender for Endpoint detection and response (EDR) para informar de datos de diagnóstico y comunicarse con Defender for Endpoint services si un equipo no tiene permiso para conectarse a Internet.
 
 > [!NOTE]
-> Al usar esta opción en Windows 10 o Windows Server 2019 o Windows Server 2022, se recomienda tener la siguiente compilación (o posterior) y el paquete acumulativo de actualizaciones acumulativas:
+> Al usar esta opción en Windows 10, Windows 11, Windows Server 2019 o Windows Server 2022, se recomienda tener la siguiente compilación (o posterior) y el paquete acumulativo de actualizaciones acumulativas:
 >
+> - Windows 11
 > - Windows 10, versión 1809 o Windows Server 2019 o Windows Server 2022 :<https://support.microsoft.com/kb/5001384>
 > - Windows 10, versión 1909 -<https://support.microsoft.com/kb/4601380>
 > - Windows 10, versión 2004 -<https://support.microsoft.com/kb/4601382>
@@ -175,9 +176,9 @@ Si un servidor proxy o firewall tiene habilitada la detección HTTPS (inspecció
 En el firewall, abra todas las direcciones URL donde la columna de geografía es WW. Para las filas en las que la columna de geografía no es WW, abra las direcciones URL en la ubicación de datos específica. Para comprobar la configuración de ubicación de datos, vea [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings).
 
 > [!NOTE]
-> settings-win.data.microsoft.com solo es necesario si tienes Windows 10 dispositivos que ejecutan la versión 1803 o anterior.<br>
+> settings-win.data.microsoft.com solo es necesario si tienes Windows dispositivos que ejecutan la versión 1803 o anterior.<br>
 >
-> Las direcciones URL que incluyen v20 solo son necesarias si Windows 10 dispositivos que ejecutan la versión 1803 o posterior. Por ejemplo, es necesario para un dispositivo Windows 10 que ejecute la versión 1803 o posterior y se incorpore a la región de datos `us-v20.events.data.microsoft.com` Storage ESTADOS UNIDOS.
+> Las direcciones URL que incluyen v20 en ellas solo son necesarias si Windows dispositivos que ejecutan la versión 1803 o posterior. Por ejemplo, es necesario para un dispositivo Windows que ejecute la versión 1803 o posterior y se incorpore a la región de datos `us-v20.events.data.microsoft.com` Storage ESTADOS UNIDOS.
 >
 > Si está usando Antivirus de Microsoft Defender en su entorno, vea [Configure network connections to the Antivirus de Microsoft Defender cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
@@ -274,5 +275,5 @@ Pero si los resultados de la comprobación de conectividad indican un error, se 
 
 - [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)
 - [Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
-- [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
+- [Dispositivos Windows integrados](configure-endpoints.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

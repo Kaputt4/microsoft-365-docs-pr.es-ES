@@ -30,14 +30,6 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: Migrar datos a mi suscripción de Microsoft 365 Empresa Estándar
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: Plan para Windows 365 Empresa
-          items:
-            - name: Introducción a Windows 365 Empresa y equipos en la nube
-              href: setup/get-started-windows-365-business.md
-            - name: Opciones de tamaño de Windows 365 Empresa
-              href: setup/windows-365-business-sizing.md
-            - name: Solucionar problemas de configuración de PC en la nube Windows 365
-              href: setup/troubleshoot-windows-365-business.md
         - name: Configurar Microsoft 365 para la organización de empresas
           items:
             - name: Microsoft 365 Empresa Básico

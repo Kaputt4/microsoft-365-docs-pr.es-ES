@@ -2,8 +2,6 @@
 title: Privacidad y almacenamiento de datos de Microsoft Defender para endpoint
 description: Obtenga información sobre cómo Microsoft Defender para endpoint controla la privacidad y los datos que recopila.
 keywords: Microsoft Defender para endpoint, almacenamiento de datos y privacidad, almacenamiento, privacidad, licencias, geolocalización, retención de datos, datos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1ad4dd1bacb301ad50b5a6aa52e6a49eacb647f1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9cbe0ca481b582a2161480d8e7aa1ecc1d4164ff
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210347"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124481"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Privacidad y almacenamiento de datos de Microsoft Defender para endpoint
 
@@ -36,7 +34,7 @@ ms.locfileid: "59210347"
 En esta sección se tratan algunas de las preguntas más frecuentes sobre privacidad y tratamiento de datos para Defender for Endpoint.
 
 > [!NOTE]
-> En este documento se explican los detalles de privacidad y almacenamiento de datos relacionados con Defender for Endpoint. Para obtener más información relacionada con Defender para Endpoint y otros productos y servicios como Antivirus de Microsoft Defender y Windows 10, vea [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?linkid=827576). Consulta también [Windows 10 preguntas más frecuentes sobre privacidad](https://go.microsoft.com/fwlink/?linkid=827577) para obtener más información.
+> En este documento se explican los detalles de privacidad y almacenamiento de datos relacionados con Defender for Endpoint. Para obtener más información relacionada con Defender for Endpoint y otros productos y servicios como Antivirus de Microsoft Defender y Windows, consulte [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?linkid=827576). Consulta también [Windows preguntas más frecuentes sobre privacidad](https://go.microsoft.com/fwlink/?linkid=827577) para obtener más información.
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>¿Qué datos recopila Microsoft Defender para Endpoint?
 

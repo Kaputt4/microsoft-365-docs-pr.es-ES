@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga más información sobre la lista de frases, las expresiones regulares y los tipos de explicación de proximidad en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 178f56ea0513d0cc8ba0c47a3c9cde3a24796899
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 99b3160e29a4c81a50d152187863d1dfb0cfa405
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786400"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088018"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Tipos de explicación en Microsoft SharePoint Syntex
 
@@ -71,7 +71,7 @@ Si tiene requisitos de usar mayúsculas y minúsculas en su lista de frases, pue
 ![Solo mayúsculas y minúsculas exactas.](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> En lugar de crear manualmente una explicación de las listas de frases, utilice la [Biblioteca de explicación](explanation-types-overview.md#use-explanation-templates) para usar plantillas de listas de frases para las listas de frases comunes, como *fecha*, *números de teléfono* o *número de tarjeta de crédito*.
+> En lugar de crear manualmente una explicación de las listas de frases, utilice la [Biblioteca de explicación](explanation-templates.md) para usar plantillas de listas de frases para las listas de frases comunes, como *fecha*, *números de teléfono* o *número de tarjeta de crédito*.
 
 ## <a name="regular-expression"></a>Expresión regular
 
@@ -153,7 +153,7 @@ En la siguiente tabla se muestran algunos ejemplos de cómo determinar el númer
 |`Dog`|1|Una sola palabra sin signos de puntuación o espacios.|
 |`RMT33W`|1|Un número de localizador de registros. Puede incluir números y letras, pero no signos de puntuación.|
 |`425-555-5555`|5|Un número de teléfono Cada signo de puntuación es un token único, por lo que `425-555-5555` tiene 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
-|`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
+|`https://luis.ai`|7 |`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
 
 #### <a name="configure-the-proximity-explanation-type"></a>Configurar el tipo de explicación de proximidad
 
@@ -212,73 +212,6 @@ Puede seleccionar una de las siguientes opciones para este valor:
 
     En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. Para esta opción, necesita seleccionar una posición **Inicio** y una posición **Fin**. Estos valores representan el número de tokens desde el principio del documento. Aunque puede escribir los valores manualmente, es más fácil ajustarlos en el cuadro de selección en el visor.
 
-## <a name="use-explanation-templates"></a>Usar plantillas de explicación
+### <a name="see-also"></a>Ver también
 
-Aunque se pueden agregar manualmente varios valores de la lista de frases para la explicación, puede resultar más fácil usar las plantillas que se le proporcionan en la biblioteca de explicación.
-
-Por ejemplo, en lugar de añadir manualmente todas las variaciones para *fecha*, puede utilizar la plantilla de la lista de frases para *fecha* que ya incluye una serie de valores de la lista de frases:
-
-![Biblioteca de explicación.](../media/content-understanding/explanation-template.png)
-
-La biblioteca de explicación incluye varias explicaciones de la *lista de frases* más utilizadas, entre las que se incluyen:
-
-- Fecha: fechas del calendario, todos los formatos. Incluye texto y números (por ejemplo, "9 de diciembre de 2020").
-- Fecha (numérica): fechas del calendario, todos los formatos. Incluye números (por ejemplo, 1-11-2020).
-- Hora: formatos de 12 y 24 horas.
-- Número: números positivos y negativos, hasta 2 decimales.
-- Porcentaje: una lista de patrones que representan un porcentaje. Por ejemplo, 1 %, 11 %, 100 % o 11,11 %.
-- Número de teléfono: formatos comunes de EE. UU. e internacionales. Por ejemplo, 000 000 0000, 000-000-0000, (000)000-0000 o (000) 000-0000.
-- Código postal: formatos de código postal de Estados Unidos. Por ejemplo, 11111, 11111-1111.
-- Primera palabra de una frase: patrones comunes para palabras de hasta nueve caracteres.
-- Final de una oración: signos de puntuación comunes para el final de una oración
-- Tarjeta de crédito: formatos de número de tarjeta de crédito comunes. Por ejemplo, 1111-1111-1111-1111.
-- Número de la seguridad social: formato de número del seguro social de EE. UU. Por ejemplo, 111-11-1111.
-- Casilla: una lista de frases que representa variaciones en una casilla rellenada. Por ejemplo, _X_, _ _X_.
-- Moneda: principales símbolos internacionales. Por ejemplo: .$
-- Correo electrónico CC: lista de frases con el término "CC:" que se suele encontrar cerca de los nombres o direcciones de correo electrónico de otras personas o grupos a los que se envió el mensaje.
-- Fecha del correo electrónico: lista de frases con el término "Enviado el:", que se suele encontrar cerca de la fecha en que se envió el correo electrónico.
-- Saludo de correo electrónico: líneas de apertura comunes de los correos electrónicos.
-- Destinatario de correo electrónico: lista de frases con el término "Para:", que a menudo se encuentra cerca de los nombres o direcciones de correo electrónico de personas o grupos a los que se envió el mensaje.
-- Remitente de correo electrónico: lista de frases con el término "De:" que se suele encontrar cerca del nombre o la dirección de correo del remitente.
-- Asunto del correo electrónico: lista de frases con el término "Asunto:" que se suele encontrar cerca del asunto del correo electrónico.
-
-La biblioteca de explicación incluye varias explicaciones de *expresiones regulares* frecuentemente utilizadas, entre ellas:
-
-- Números de 6 a 17 dígitos: coincide con cualquier número de 6 a 17 dígitos de longitud. Los números de cuenta bancaria de EE. UU. se ajustan a este patrón.
-- Correo electrónico: coincide con un tipo común de dirección de correo electrónico como meganb@contoso.com
-- Número de identificación fiscal de los EE. UU.: coincide con un número de tres dígitos que empieza por nueve seguido de un número de seis dígitos que empieza por siete u ocho.
-- Dirección web (URL): coincide con el formato de una dirección web que empieza por http:// o https://.
-
-La biblioteca de explicación también incluye tres tipos de plantillas automáticas que funcionan con los datos que ha etiquetado en los archivos de ejemplo:
-
-- Después de la etiqueta: las palabras o caracteres que aparecen después de las etiquetas en los archivos de ejemplo.
-- Antes de la etiqueta: las palabras o caracteres que aparecen antes de las etiquetas en los archivos de ejemplo.
-- Etiquetas: hasta las 10 primeras etiquetas de los archivos de ejemplo.
-
-Para ilustrar cómo funcionan las plantillas automáticas, en el siguiente archivo de ejemplo usaremos la plantilla de explicación Antes de la etiqueta para dar más información al modelo y obtener una coincidencia más precisa.
-
-![Archivo de ejemplo.](../media/content-understanding/before-label.png)
-
-Al seleccionar la plantilla de explicación Antes de la etiqueta, buscará el primer conjunto de palabras que aparezca antes de la etiqueta en los archivos de ejemplo. Como puede ver en la imagen, las palabras que se identifican en el primer archivo de ejemplo son "As of".
-
-![Plantilla Antes de la etiqueta.](../media/content-understanding/before-label-explanation.png)
-
-Puede seleccionar **Agregar** para crear una explicación a partir de la plantilla.  A medida que agregue más archivos de ejemplo, se identificarán y agregarán palabras adicionales a la lista de frases.
-
-![Agregar la etiqueta.](../media/content-understanding/before-label-add.png)
-
-#### <a name="to-use-a-template-from-the-explanation-library"></a>Para usar una plantilla de la biblioteca de explicación
-
-1. En la sección de **Explicaciones** de la página de **Entrenamiento** de su modelo, seleccione **Nuevo**, y luego seleccione **De Una Plantilla**.
-
-   ![Agregar Antes de etiqueta.](../media/content-understanding/from-template.png)
-
-2.  En la página **Plantillas de explicación**, seleccione la explicación que desee usar y seleccione **Agregar**.
-
-    ![Seleccione una plantilla.](../media/content-understanding/phone-template.png)
-
-3. La información de la plantilla que ha seleccionado se mostrará en la página **Crear una explicación**. Si es necesario, edite el nombre de la explicación y agregue o elimine elementos de la lista de frases.
-
-    ![Editar plantilla.](../media/content-understanding/phone-template-live.png)
-
-4. Cuando finalice, haga clic en **Guardar**.
+[Use plantillas de explicación en SharePoint Syntex](explanation-templates.md)

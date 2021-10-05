@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 2e59d4b4d2d077921e1c6c9496d14e59bae2317a
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 4298ab1460088ac494fe4c6386fa793665cb7c1b
+  ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59216667"
+  ms.lasthandoff: 10/05/2021
+  ms.locfileid: "60124822"
 title: Preguntas más frecuentes sobre cifrado de mensajes
 summary: >
   ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí. Además, echa un vistazo a las preguntas más frecuentes sobre la protección de datos en [Azure Information Protection](/information-protection/get-started/faqs-rms) para obtener respuestas a preguntas sobre el servicio de protección de datos, Azure Rights Management, en Azure Information Protection.
@@ -182,7 +182,7 @@ sections:
       - No puedes abrir datos adjuntos a los correos electrónicos que recibas en dispositivos móviles mediante Outlook móvil.
 
 
-      - No se admite la asignación a través de un grupo de seguridad habilitado para correo electrónico. Solo se admite el acceso proporcionado por la asignación directa de usuario al buzón compartido y que la asignación automática está habilitada para Exchange Online. La automapping está habilitada de forma predeterminada para Exchange Online.
+      - No se admite la asignación a través de un grupo de seguridad habilitado para correo electrónico, ya que los clientes de etiquetado unificados de Outlook y Azure Information Protection requieren que el usuario tenga permisos de acceso completo y que tenga habilitada la asignación automática. La automapping está habilitada de forma predeterminada para Exchange Online.
 
 
       **Para asignar un usuario al buzón compartido**

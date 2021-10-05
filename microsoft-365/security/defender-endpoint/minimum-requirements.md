@@ -2,8 +2,6 @@
 title: Requisitos mínimos para Microsoft Defender para endpoint
 description: Comprender los requisitos y requisitos de licencias para la incorporación de dispositivos al servicio
 keywords: requisitos mínimos, licencias, tabla de comparación
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7cb01f6067e14d615e018b5c8648b0b6c423ddca
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 4779a0c40cd8282d8e05fde84ae72827531810d9
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042775"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124274"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -46,9 +44,11 @@ Existen algunos requisitos mínimos para incorporar dispositivos al servicio. Ob
 
 Microsoft Defender para endpoint requiere una de las siguientes ofertas de licencias por volumen de Microsoft:
 
+- Windows 11 Enterprise E5
+- Windows 11 Education A5
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
-- Microsoft 365 E5 (M365 E5), que incluye Windows 10 Enterprise E5
+- Microsoft 365 E5 (M365 E5) que incluye Windows 10 Enterprise E5 o Windows 11 Enterprise E5
 - Microsoft 365 A5 (M365 A5)
 - Seguridad de Microsoft 365 E5
 - Microsoft 365 A5 Security
@@ -69,18 +69,18 @@ Microsoft Defender para endpoint para servidores requiere una de las siguientes 
 >
 > - Microsoft Defender para punto de conexión
 > - Windows E5/A5
-> - Microsoft 365 E5/A5
-> - Microsoft 365 E5/A5 Security
+> - Microsoft 365 (E5/A5)
+> - Seguridad de Microsoft 365 E5/A5
 
 Para obtener información detallada sobre las licencias, consulta el sitio [términos](https://www.microsoft.com/licensing/terms/) del producto y trabaja con el equipo de tu cuenta para obtener más información sobre los términos y condiciones.
 
-Para obtener más información sobre la matriz de características de Windows 10 ediciones, vea [Comparar Windows 10 ediciones](https://www.microsoft.com/windowsforbusiness/compare).
+Para obtener más información sobre la matriz de características de Windows ediciones, vea [Comparar Windows ediciones](https://www.microsoft.com/windowsforbusiness/compare).
 
 ## <a name="browser-requirements"></a>Requisitos de los exploradores
 
 El acceso a Defender for Endpoint se realiza a través de un explorador, que admite los siguientes exploradores:
 
-- Microsoft Edge
+- Microsoft Edge
 - Google Chrome
 
 > [!NOTE]
@@ -94,6 +94,10 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 - Windows 7 SP1 Pro ([Requiere ESU para admitir](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
+- Windows 11 Enterprise
+- Windows 11 Education
+- Windows 11 Pro
+- Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (o posterior)](/windows/whats-new/ltsc/)
 - Windows 10 Education
@@ -146,7 +150,7 @@ Al ejecutar el asistente de incorporación por primera vez, debe elegir dónde s
 Asegúrese de que el servicio de datos de diagnóstico está habilitado en todos los dispositivos de la organización.
 De forma predeterminada, este servicio está habilitado. Es una buena práctica comprobar para asegurarse de que los datos del sensor se obtienen de ellos.
 
-#### <a name="use-the-command-line-to-check-the-windows-10-diagnostic-data-service-startup-type"></a>Use la línea de comandos para comprobar el tipo Windows 10 inicio del servicio de datos de diagnóstico
+#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>Use la línea de comandos para comprobar el tipo Windows inicio del servicio de datos de diagnóstico
 
 1. Abra un símbolo del sistema con privilegios elevados en el dispositivo:
    1. Vaya a **Inicio** y escriba **cmd**.
@@ -164,7 +168,7 @@ De forma predeterminada, este servicio está habilitado. Es una buena práctica 
 
 Deberá establecer el servicio para que se  inicie automáticamente si el START_TYPE no está establecido en **AUTO_START**.
 
-#### <a name="use-the-command-line-to-set-the-windows-10-diagnostic-data-service-to-automatically-start"></a>Usar la línea de comandos para establecer el Windows 10 de datos de diagnóstico para que se inicie automáticamente
+#### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>Usar la línea de comandos para establecer el Windows de datos de diagnóstico para iniciarse automáticamente
 
 1. Abra un símbolo del sistema con privilegios elevados en el extremo:
     1. Vaya a **Inicio** y escriba **cmd**.
@@ -190,7 +194,7 @@ El sensor Defender for Endpoint puede usar un ancho de banda promedio diario de 
 
 Para obtener más información acerca de las opciones de configuración de proxy adicionales, vea [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
-Antes de incorporar dispositivos, el servicio de datos de diagnóstico debe estar habilitado. El servicio está habilitado de forma predeterminada en Windows 10.
+Antes de incorporar dispositivos, el servicio de datos de diagnóstico debe estar habilitado. El servicio está habilitado de forma predeterminada en Windows 10 y Windows 11.
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Antivirus de Microsoft Defender de configuración
 

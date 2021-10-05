@@ -2,7 +2,6 @@
 title: Incorporar al servicio Microsoft Defender para punto de conexión
 description: Obtenga información sobre cómo incorporar puntos de conexión a Microsoft Defender para el servicio de punto de conexión
 keywords: microsoft Defender para el punto de conexión, la incorporación, la implementación
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 173135d9cc1ecf45ad5c0485b2bab4bb39b88a5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e56bb5f8647e9504c18fdc280b8e85b9764bc6c4
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192677"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124288"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Incorporar al servicio Microsoft Defender para punto de conexión
 
@@ -65,7 +64,7 @@ Después de identificar la arquitectura, deberá decidir qué método de impleme
 
 En la tabla siguiente se enumeran las herramientas disponibles en función del extremo que necesita incorporar.
 
-|Extremo|Opciones de herramientas|
+|Punto de conexión|Opciones de herramientas|
 |---|---|
 |**Windows**|[Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md)|

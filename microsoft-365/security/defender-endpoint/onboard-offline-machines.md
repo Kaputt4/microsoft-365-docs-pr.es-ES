@@ -3,8 +3,6 @@ title: Incorporar dispositivos sin acceso a Internet a Microsoft Defender para e
 ms.reviewer: ''
 description: Incorporar dispositivos sin acceso a Internet para que puedan enviar datos del sensor al sensor de Microsoft Defender para endpoint
 keywords: onboard, servers, vm, on-premises, oms gateway, log analytics, azure log analytics, mma
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eb74f3fab320364c1311efa1a629e43eb90a1aae
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9eb7930c3c31aa65bd2091d6f68767551cd22026
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042763"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124498"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Incorporar dispositivos sin acceso a Internet a Microsoft Defender para endpoint
 
@@ -42,9 +40,9 @@ Para incorporar dispositivos sin acceso a Internet, deberá seguir los siguiente
 > Los pasos siguientes solo se aplican a dispositivos que ejecutan versiones anteriores de Windows como: Windows Server 2016 anteriores o anteriores Windows 8.1 versiones anteriores.
 
 > [!NOTE]
-> - Un servidor de puerta de enlace OMS no se puede usar como proxy para dispositivos de Windows 10 o Windows Server 2019 desconectados o de Windows Server 2022 cuando se configuran mediante el registro o GPO de 'TelemetryProxyServer'.
-> - Para Windows 10 o Windows Server 2019 o Windows Server 2022: aunque puede usar TelemetryProxyServer, debe apuntar a un dispositivo o dispositivo proxy estándar.
-> - Además, Windows 10 o Windows Server 2019 o Windows Server 2022 en entornos desconectados deben poder actualizar las listas de confianza de certificados sin conexión a través de un archivo o servidor web interno.
+> - Un servidor de puerta de enlace OMS no se puede usar como proxy para dispositivos Windows o Windows server desconectados cuando se configura mediante el Registro 'TelemetryProxyServer' o GPO.
+> - For Windows or Windows Server: while you may use TelemetryProxyServer, it must point to a standard proxy device or appliance.
+> - Además, Windows o Windows server en entornos desconectados deben poder actualizar las listas de confianza de certificados sin conexión a través de un archivo o servidor web interno.
 > - Para obtener más información acerca de cómo actualizar las CTL sin conexión, vea [Configure a file or web server to download the CTL files](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files).
 
 Para obtener más información acerca de los métodos de incorporación, vea los artículos siguientes:

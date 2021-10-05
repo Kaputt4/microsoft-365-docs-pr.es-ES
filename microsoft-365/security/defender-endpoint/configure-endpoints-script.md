@@ -1,8 +1,7 @@
 ---
-title: Incorporar dispositivos Windows 10 mediante un script local
+title: Incorporación Windows dispositivos con un script local
 description: Use un script local para implementar el paquete de configuración en dispositivos para habilitar la incorporación de los dispositivos al servicio.
 keywords: configurar dispositivos mediante un script local, administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b1e6bcd4991ea94f1b46b43f446f5f40f6f2e1d4
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 1bcc9c51f37c9d76009b4c949a40b564617dd563
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399255"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124798"
 ---
-# <a name="onboard-the-windows-10-devices-using-a-local-script"></a>Incorporación de Windows 10 dispositivos con un script local
+# <a name="onboard-the-windows-devices-using-a-local-script"></a>Incorporación de Windows dispositivos con un script local
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +35,7 @@ También puedes incorporar manualmente dispositivos individuales a Defender para
 > [!IMPORTANT]
 > Este script se ha optimizado para su uso en hasta 10 dispositivos.
 >
-> Para implementar a escala, use [otras opciones de implementación.](configure-endpoints.md) Por ejemplo, puede implementar un script de incorporación en más de 10 dispositivos en producción con el script disponible en [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md).
+> Para implementar a escala, use [otras opciones de implementación.](configure-endpoints.md) Por ejemplo, puedes implementar un script de incorporación en más de 10 dispositivos en producción con el script disponible en [Onboard Windows devices using Group Policy](configure-endpoints-gp.md).
 
 ## <a name="onboard-devices"></a>Incorporar dispositivos
 
@@ -45,7 +44,7 @@ Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f
 
 1. Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Portal de Defender:](https://security.microsoft.com/)
     1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** \> **Device management** \> **Onboarding**.
-    2. Seleccione Windows 10 como sistema operativo.
+    2. Seleccione Windows 10 o Windows 11 como sistema operativo.
     3. En el **campo Método de** implementación, seleccione Script **local**.
     4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
@@ -100,7 +99,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
 1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
     1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** Administración \> **de dispositivos** \> **Offboarding**.
-    2. Seleccione Windows 10 como sistema operativo.
+    2. Seleccione Windows 10 o Windows 11 como sistema operativo.
     3. En el **campo Método de** implementación, seleccione Script **local**.
     4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
@@ -133,9 +132,9 @@ La supervisión también se puede realizar directamente en el portal o mediante 
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Incorporación Windows 10 dispositivos con directiva de grupo](configure-endpoints-gp.md)
-- [Incorporar Windows 10 dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
+- [Incorporación Windows dispositivos con directiva de grupo](configure-endpoints-gp.md)
+- [Incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
 - [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado](run-detection-test.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

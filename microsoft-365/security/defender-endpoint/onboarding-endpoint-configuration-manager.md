@@ -2,7 +2,6 @@
 title: Incorporación mediante Microsoft Endpoint Configuration Manager
 description: Obtenga información sobre cómo incorporarse a Microsoft Defender para endpoint mediante Microsoft Endpoint Configuration Manager
 keywords: incorporación, configuración, implementación, administrador de configuración de puntos de conexión, Microsoft Defender para endpoint, creación de colecciones, respuesta de detección de puntos de conexión, protección de próxima generación, reducción de superficie de ataque, administrador de configuración de puntos de conexión de Microsoft
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a73dc197a1643a2d1b4de079562579530c081e23
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e26e9c367015b05e1875693a5312af786a907031
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214830"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124450"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación mediante Microsoft Endpoint Configuration Manager
 
@@ -61,7 +60,7 @@ Esta guía de incorporación le ayudará a seguir los siguientes pasos básicos 
 
 ### <a name="collection-creation"></a>Creación de colecciones
 
-Para incorporar Windows 10 dispositivos con Microsoft Endpoint Configuration Manager, la implementación puede dirigirse a una colección existente o se puede crear una nueva colección para pruebas.
+Para incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager, la implementación puede dirigirse a una colección existente o se puede crear una nueva colección para pruebas.
 
 La incorporación mediante herramientas como la directiva de grupo o el método manual no instala ningún agente en el sistema.
 
@@ -107,7 +106,7 @@ Siga los pasos siguientes para incorporar puntos de conexión mediante Microsoft
 
     ![Imagen de Microsoft Endpoint Configuration Manager wizard9.](images/configmgr-confirm.png)
 
-Después de completar esta tarea, ahora tienes una colección de dispositivos con todos los Windows 10 en el entorno.
+Después de completar esta tarea, ahora tienes una colección de dispositivos con todos los Windows en el entorno.
 
 
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Paso 2: Configurar Microsoft Defender para las funcionalidades de punto de conexión
@@ -118,11 +117,11 @@ En esta sección se le guía en la configuración de las siguientes funcionalida
 - [**Protección de última generación**](#next-generation-protection)
 - [**Reducción de la superficie expuesta a ataques**](#attack-surface-reduction)
 
-### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión.
+### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión
 
-#### <a name="windows-10"></a>Windows 10
+#### <a name="windows-10-and-windows-11"></a>Windows 10 y Windows 11
 
-Desde el portal de Microsoft 365 Defender es posible descargar la directiva ".onboarding" que se puede usar para crear la directiva en System Center Configuration Manager e implementar dicha directiva en Windows 10 dispositivos.
+Desde el portal de Microsoft 365 Defender es posible descargar la directiva ".onboarding" que se puede usar para crear la directiva en System Center Configuration Manager e implementarla en Windows 10 y Windows 11 dispositivos.
 
 1. En un portal Microsoft 365 Defender, [seleccione Configuración y,](https://security.microsoft.com/preferences2/onboarding)a continuación, Incorporación .
 
@@ -196,7 +195,7 @@ Siga los pasos que se indican a continuación para identificar el identificador 
    - Windows 8.1
    - Windows 7
    - Windows Server 2016
-   - Windows Server 2012 R2
+   - Windows Server 2012 R2
    - Windows Server 2008 R2
 
    En concreto, para Windows 7 SP1, deben instalarse las siguientes revisiones:
@@ -246,7 +245,7 @@ El Antivirus de Microsoft Defender es una solución antimalware integrada que pr
 
     ![Imagen del panel de protección de próxima generación10.](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
-4. Dirigir la nueva directiva antimalware a la colección Windows 10 y haga clic en **Aceptar**.
+4. Dirigir la nueva directiva antimalware a la colección Windows y haga clic en **Aceptar**.
 
      ![Imagen del panel de protección de próxima generación11.](images/configmgr-select-collection.png)
 
@@ -282,7 +281,7 @@ Para establecer reglas ASR en modo auditoría:
 
     ![Imagen de Microsoft Endpoint Configuration Manager console4.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Dirigir la directiva a la colección recién Windows 10 y haga clic en **Aceptar**.
+7. Dirigir la directiva a la colección de Windows recién creada y haga clic en **Aceptar**.
 
     ![Imagen de Microsoft Endpoint Configuration Manager consola5.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
@@ -332,7 +331,7 @@ Consulte [Optimizar la implementación y detecciones](/microsoft-365/security/de
 
     ![Una captura de pantalla de Microsoft Endpoint Configuration Manager1.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Seleccione la directiva de la colección de Windows 10 recién creada y elija **Aceptar**.
+7. Seleccione la directiva para la colección de archivos Windows y elija **Aceptar**.
 
     ![Una captura de pantalla de Microsoft Endpoint Configuration Manager2.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
@@ -362,7 +361,7 @@ Después de completar esta tarea, ahora ha configurado correctamente Protección
 
     ![Captura de pantalla de Microsoft Endpoint Configuration Manager7.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Dirigir la directiva a la colección recién Windows 10 y haga clic en **Aceptar**.
+7. Dirigir la directiva a la colección de Windows recién creada y haga clic en **Aceptar**.
 
     ![Captura de pantalla de Microsoft Endpoint Configuration Manager8.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 

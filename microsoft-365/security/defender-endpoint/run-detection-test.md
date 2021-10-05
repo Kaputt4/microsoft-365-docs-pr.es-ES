@@ -1,7 +1,6 @@
 ---
 title: Ejecutar una prueba de detección en un dispositivo para comprobar que se ha incorporado correctamente a Microsoft Defender para endpoint
 description: Ejecute el script de prueba de detección en un dispositivo recién incorporado al servicio Microsoft Defender para endpoints para comprobar que se ha agregado correctamente.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 11b7339dce44d3fb55593e7b54a5d38982f957cd
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 3eb8a028372fce56cb586c51829e506db040f0ca
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043304"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124318"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado
 
@@ -30,6 +29,7 @@ ms.locfileid: "60043304"
 
 
 **Se aplica a:**
+- Windows 11
 - Versiones Windows 10 compatibles
 - Windows Server 2012 R2
 - Windows Server 2016
@@ -68,6 +68,6 @@ La ventana símbolo del sistema se cerrará automáticamente. Si se realiza corr
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
+- [Dispositivos Windows integrados](configure-endpoints.md)
 - [Servidores integrados](configure-server-endpoints.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

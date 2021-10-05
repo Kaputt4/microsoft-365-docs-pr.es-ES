@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   description: Preguntas más frecuentes sobre el Programa para el uso en el hogar de Microsoft.
   ms.date: 05/01/2021
-  ms.openlocfilehash: 9a149ee97c76189f52345587e1eaaac27bd562b2
-  ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+  ms.openlocfilehash: 77505b0855ff47afa497acb16b13eb6ad17112cf
+  ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/27/2021
-  ms.locfileid: "59934160"
+  ms.lasthandoff: 10/05/2021
+  ms.locfileid: "60124258"
 title: Programa para el uso en el hogar de Microsoft preguntas más frecuentes (PREGUNTAS FRECUENTES)
 summary: "Los clientes de licencias por volumen usan Programa para el uso en el hogar de Microsoft (HUP) en el [Microsoft Store para Empresas web](https://go.microsoft.com/fwlink/?linkid=2139192).\n\nTodos los demás clientes tienen acceso a HUP mediante este paso:\n\n- En el Centro de administración de Microsoft, vaya a la página **Facturación** de sus productos, seleccione la pestaña Beneficios  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054)y, a continuación, seleccione la **pestaña HUP.** \n"
 sections:
@@ -77,9 +77,9 @@ sections:
 
       Para ver problemas para ver la ventaja después de haber accedido a Microsoft Store para Empresas, consulta Soporte técnico para administradores de la [Tienda para empresas](/microsoft-store/)
   - question: >
-      ¿Por qué no veo una opción para comprar Visio Profesional 2019 o Project Profesional 2019?
+      ¿Por qué no veo una opción para comprar Visio Profesional 2021 o Project Profesional 2021?
     answer: >
-      Si uno de sus empleados se ha aprovechado del programa anterior y está buscando descuentos en Visio Profesional 2019 o Project Profesional 2019, consulte el proceso de validación de elegibilidad y, una vez que haya iniciado sesión con su cuenta personal de Microsoft, vaya a Otros productos **de Office para** comprar estos productos. Si no ve los descuentos esperados aplicados, póngase en contacto con el administrador del programa de uso en casa de su empleador para preguntar sobre estos beneficios adicionales.
+      Si uno de sus empleados se ha aprovechado del programa anterior y está buscando descuentos en Visio Profesional 2021 o Project Profesional 2021, consulte el proceso de validación de elegibilidad y, una vez que haya iniciado sesión con su cuenta personal de Microsoft, vaya a Otros productos **de Office para** comprar estos productos. Si no ve los descuentos esperados aplicados, póngase en contacto con el administrador del programa de uso en casa de su empleador para preguntar sobre estos beneficios adicionales.
   - question: >
       ¿Qué ocurre si mis empleados tienen preguntas sobre este programa o necesitan soporte técnico con la compra y la instalación?
     answer: >

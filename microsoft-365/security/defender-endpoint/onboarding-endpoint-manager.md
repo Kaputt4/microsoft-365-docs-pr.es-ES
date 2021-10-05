@@ -2,7 +2,6 @@
 title: Incorporación con Microsoft Endpoint Manager
 description: Obtenga información sobre cómo incorporarse a Microsoft Defender para endpoint mediante Microsoft Endpoint Manager
 keywords: incorporación, configuración, implementación, implementación, administrador de puntos de conexión, Microsoft Defender para endpoint, creación de colecciones, respuesta de detección de puntos de conexión, protección de próxima generación, reducción de superficie de ataque, administrador de puntos de conexión de Microsoft
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e1a598f0a87a4bb0bd7882d2b402c43b276a24f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75bbf7e0d121a7d0ed71124179367243e8aff777
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192687"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124810"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Incorporación con Microsoft Endpoint Manager
 
@@ -59,7 +58,7 @@ Esta guía de incorporación le ayudará a seguir los siguientes pasos básicos 
 - [Creación de un perfil de configuración](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
   - En Microsoft Endpoint Manager, le guiaremos en la creación de una directiva independiente para cada funcionalidad.
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Recursos
 
 Estos son los vínculos que necesitará para el resto del proceso:
 
@@ -124,7 +123,7 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
 - [Protección de última generación](#next-generation-protection)
 - [Reducción de la superficie expuesta a ataques](#attack-surface-reduction---attack-surface-reduction-rules)
 
-### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión.
+### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión
 
 1. Abra el portal de MEM.
 

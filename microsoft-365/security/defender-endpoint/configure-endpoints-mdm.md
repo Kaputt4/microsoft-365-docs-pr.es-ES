@@ -1,9 +1,7 @@
 ---
-title: Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles
+title: Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles
 description: Usa las herramientas de administración de dispositivos móviles para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
 keywords: incorporar dispositivos con mdm, administración de dispositivos, incorporación de Microsoft Defender para dispositivos de punto de conexión, mdm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 192c3231a44f2f1c4358a930fed8884bb00da093
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 6cb99f300c7d87497f31729507695a9a633b345a
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402039"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124702"
 ---
-# <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>Incorporar los dispositivos Windows 10 con las herramientas de administración de dispositivos móviles
+# <a name="onboard-the-windows-devices-using-mobile-device-management-tools"></a>Incorporar los dispositivos Windows con las herramientas de administración de dispositivos móviles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -74,7 +72,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
    1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** Administración \> **de dispositivos** \> **Offboarding**.
 
-   1. Seleccione Windows 10 como sistema operativo.
+   1. Seleccione Windows 10 o Windows 11 como sistema operativo.
 
    1. En el **campo Método de** implementación, seleccione Administración de **dispositivos móviles / Microsoft Intune**.
 
@@ -97,9 +95,9 @@ Para obtener más información sobre Microsoft Intune configuración de directiv
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Incorporación Windows 10 dispositivos con directiva de grupo](configure-endpoints-gp.md)
-- [Incorporar Windows 10 dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Incorporar dispositivos Windows 10 mediante un script local](configure-endpoints-script.md)
+- [Incorporación Windows dispositivos con directiva de grupo](configure-endpoints-gp.md)
+- [Incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Incorporación Windows dispositivos con un script local](configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
 - [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado](run-detection-test.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

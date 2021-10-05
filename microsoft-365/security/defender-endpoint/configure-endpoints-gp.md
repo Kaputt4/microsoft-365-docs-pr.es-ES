@@ -1,9 +1,7 @@
 ---
-title: Incorporación Windows 10 dispositivos a Microsoft Defender para endpoint a través de la directiva de grupo
-description: Use la directiva de grupo para implementar el paquete de configuración en los Windows 10 para que se incorpore al servicio.
+title: Incorporación Windows dispositivos a Microsoft Defender para endpoint a través de la directiva de grupo
+description: Use la directiva de grupo para implementar el paquete de configuración en los Windows para que se incorpore al servicio.
 keywords: configurar dispositivos mediante la directiva de grupo, la administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión, incorporar Microsoft Defender para dispositivos de punto de conexión, directiva de grupo
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: 0d33484a7d7369cd9b3727fbd125e208649c533d
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 7d3d408e07790ef0dc095b57dcd84b644dfe655c
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041785"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124678"
 ---
-# <a name="onboard-the-windows-10-devices-using-group-policy"></a>Incorporar los dispositivos Windows 10 con la directiva de grupo
+# <a name="onboard-windows-devices-using-group-policy"></a>Incorporación Windows dispositivos con directiva de grupo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,7 +45,7 @@ Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f
 
 1. Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Defender portal:](https://security.microsoft.com/)
     1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** \> **Device management** \> **Onboarding**.  
-    2. Seleccione Windows 10 como sistema operativo.
+    2. Seleccione Windows 10 o Windows 11 como sistema operativo.
     3. En el **campo Método de** implementación, seleccione Directiva de **grupo**.
     4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
@@ -113,13 +111,13 @@ Puede usar la directiva de grupo (GP) para configurar opciones, como las opcione
 
 ### <a name="update-endpoint-protection-configuration"></a>Actualizar la configuración de protección de puntos de conexión
 
-Después de configurar el script de incorporación, siga editando la misma directiva de grupo para agregar configuraciones de protección de extremos. Realice ediciones de directivas de grupo desde un sistema que ejecute Windows 10 o Server 2019 o Windows Server 2022 para asegurarse de que tiene todas las funcionalidades Antivirus de Microsoft Defender necesarias. Es posible que deba cerrar y volver a abrir el objeto de directiva de grupo para registrar las opciones de configuración de Defender ATP.
+Después de configurar el script de incorporación, siga editando la misma directiva de grupo para agregar configuraciones de protección de extremos. Realice ediciones de directivas de grupo desde un sistema que ejecute Windows 10 o Server 2019, Windows 11 o Windows Server 2022 para asegurarse de que tiene todas las capacidades Antivirus de Microsoft Defender necesarias. Es posible que deba cerrar y volver a abrir el objeto de directiva de grupo para registrar las opciones de configuración de Defender ATP.
 
 Todas las directivas se encuentran en `Computer Configuration\Policies\Administrative Templates` .
 
 **Ubicación de la directiva:** \Windows Components\Windows Defender ATP
 
-Directiva|Valor
+Directiva|Configuración
 ---|---
 Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muestras en máquinas" activada
 
@@ -127,7 +125,7 @@ Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muest
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender
 
-Directiva|Valor
+Directiva|Configuración
 ---|---
 Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, Block
 
@@ -135,7 +133,7 @@ Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, B
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\MAPS
 
-Directiva|Valor
+Directiva|Configuración
 ---|---
 Unirse a Microsoft MAPS|Mapas avanzados habilitados
 Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales | Habilitado, Enviar muestras seguras
@@ -144,7 +142,7 @@ Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales 
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Real-time Protection
 
-Directiva|Valor
+Directiva|Configuración
 ---|---
 Desactivar la protección en tiempo real|Deshabilitado
 Activar la supervisión del comportamiento|Habilitado
@@ -157,7 +155,7 @@ Supervisar la actividad de archivos y programas en el equipo|Habilitado
 
 Estas opciones configuran exámenes periódicos del extremo. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
-Directiva|Valor
+Directiva|Configuración
 ---|---
 Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de ejecutar un examen programado |Habilitado
 
@@ -179,7 +177,7 @@ Obtener la lista actual de GUID de reducción de superficie de ataque de [Person
 
    ![Imagen de configuración de reducción de superficie de ataque.](images/asr-guid.png)
 
-Directiva|Valor
+Directiva|Configuración
 ---|---
 Configurar acceso controlado a carpetas| Habilitado, modo auditoría
 
@@ -196,7 +194,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
 1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
     1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** Administración \> **de dispositivos** \> **Offboarding**.
-    2. Seleccione Windows 10 como sistema operativo.
+    2. Seleccione Windows 10 o Windows 11 como sistema operativo.
     3. En el **campo Método de** implementación, seleccione Directiva de **grupo**.
     4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
@@ -239,8 +237,11 @@ Con la directiva de grupo no hay una opción para supervisar la implementación 
 Crea una nueva directiva de grupo o agrupa esta configuración con las otras directivas. Esto depende del entorno de los clientes y del modo en que les gustaría implantar el servicio al dirigirse a distintas OU (unidades organizativas).
 
 1. Después de elegir el GP o crear uno nuevo, edite el GP.
+
 2. Vaya a **Directivas de configuración del** equipo  >    >  **Plantillas** administrativas Windows componentes  >    >  **Antivirus de Microsoft Defender** Protección en  >  **tiempo real**.
-:::image type="content" source="images/realtime-protect.png" alt-text="protección en tiempo real.":::
+
+    :::image type="content" source="images/realtime-protect.png" alt-text="protección en tiempo real.":::
+
 1. En la carpeta Cuarentena, configure la eliminación de elementos de la carpeta Cuarentena.
 
     :::image type="content" source="images/removal-items-quarantine1.png" alt-text="carpeta de cuarentena de elementos de eliminación.":::
@@ -306,9 +307,9 @@ Al configurar la directiva de nivel de protección en la nube en Antivirus de Mi
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Incorporar Windows 10 dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
-- [Incorporar dispositivos Windows 10 mediante un script local](configure-endpoints-script.md)
+- [Incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
+- [Incorporación Windows dispositivos con un script local](configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
 - [Ejecutar una prueba de detección en un Microsoft Defender recién incorporado para dispositivos de punto de conexión](run-detection-test.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

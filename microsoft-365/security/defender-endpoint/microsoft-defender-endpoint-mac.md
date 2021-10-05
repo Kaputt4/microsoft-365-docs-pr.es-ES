@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ab3405022dac71843ecd4e8b630d3738fe69fcaa
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 827ea407d51f657914161056d97be648b3282190
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043088"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124774"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
 
@@ -99,6 +99,7 @@ Microsoft Defender para Endpoint en Mac requiere una de las siguientes ofertas d
 - Seguridad de Microsoft 365 E5
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Enterprise E5
+- Windows 11
 - Microsoft Defender para punto de conexión
 
 > [!NOTE]

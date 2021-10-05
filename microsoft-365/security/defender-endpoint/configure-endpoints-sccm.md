@@ -1,9 +1,7 @@
 ---
-title: Incorporar dispositivos Windows 10 con Configuration Manager
+title: Incorporación Windows dispositivos con Configuration Manager
 description: Use Configuration Manager para implementar el paquete de configuración en dispositivos para que los dispositivos se incorpore al servicio.
 keywords: incorporar dispositivos con sccm, administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 9a5ef03cf94501d83340f159ecd1b54f26f68b0a
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: ae560e7072884d19f224df1af15e90d507826812
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042932"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124714"
 ---
-# <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Incorporar los dispositivos Windows 10 con Configuration Manager
+# <a name="onboard-the-windows-devices-using-configuration-manager"></a>Incorporar los dispositivos Windows con Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,6 +47,7 @@ En función de la versión de Configuration Manager que esté ejecutando, se pue
 
   - Windows 8.1
   - Windows 10
+  - Windows 11
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server 2016 versión 1803 o posterior
@@ -64,7 +63,7 @@ Consulte el [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-41
 
 1. Abra el paquete de configuración de Configuration Manager .zip archivo (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Defender portal:](https://security.microsoft.com/)
     1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** \> **Device management** \> **Onboarding**.
-    2. Seleccione Windows 10 como sistema operativo.
+    2. Seleccione Windows 10 o Windows 11 como sistema operativo.
     3. En el **campo Método de** implementación, seleccione System Center Configuration Manager **2012/2012 R2/1511/1602**.
     4. Seleccione **Descargar paquete** y guarde el .zip archivo.
 
@@ -155,8 +154,8 @@ Habilite la característica en modo auditoría durante al menos 30 días. Despu�
 Para obtener más información, vea [Evaluate controlled folder access](evaluate-controlled-folder-access.md).
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecutar una prueba de detección para comprobar la incorporación
-Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.
 
+Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.
 
 ## <a name="offboard-devices-using-configuration-manager"></a>Dispositivos offboard con Configuration Manager
 
@@ -173,7 +172,7 @@ Si usa una Microsoft Endpoint Manager actual, vea [Create an offboarding configu
 
 1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
     1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** Administración \> **de dispositivos** \> **Offboarding**.  
-    1. Seleccione Windows 10 como sistema operativo.
+    1. Seleccione Windows 10 o Windows 11 como sistema operativo.
     1. En el **campo Método de** implementación, seleccione System Center Configuration Manager **2012/2012 R2/1511/1602**.
     1. Seleccione **Descargar paquete** y guarde el .zip archivo.
 
@@ -228,9 +227,9 @@ Para obtener más información, vea Introducción a [la configuración de cumpli
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Incorporación Windows 10 dispositivos con directiva de grupo](configure-endpoints-gp.md)
-- [Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
-- [Incorporar dispositivos Windows 10 mediante un script local](configure-endpoints-script.md)
+- [Incorporación Windows dispositivos con directiva de grupo](configure-endpoints-gp.md)
+- [Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
+- [Incorporación Windows dispositivos con un script local](configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
 - [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado](run-detection-test.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

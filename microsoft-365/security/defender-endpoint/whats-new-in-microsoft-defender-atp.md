@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: db1050486ba5b9a4238c8759e23ea449723c74f0
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: 06de4468d0737fbdc8e0b847c5671256d00b5acd
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099826"
+ms.locfileid: "60124762"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -58,6 +58,10 @@ Para obtener más información sobre Microsoft Defender para Endpoint en otros s
 - [Novedades de Defender para endpoint en macOS](mac-whatsnew.md)
 - [Novedades de Defender para endpoint en iOS](ios-whatsnew.md)
 - [Novedades de Defender para Endpoint en Linux](linux-whatsnew.md)
+
+## <a name="october-2021"></a>Octubre de 2021
+
+- Windows 11 compatibilidad agregada a Microsoft Defender para endpoint y Microsoft 365 Defender.
 
 ## <a name="september-2021"></a>Septiembre de 2021
 

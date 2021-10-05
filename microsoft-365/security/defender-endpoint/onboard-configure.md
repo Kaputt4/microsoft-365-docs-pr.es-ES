@@ -1,9 +1,7 @@
 ---
 title: Incorporación de dispositivos al servicio de Microsoft Defender para endpoints
-description: Incorpore Windows 10 dispositivos, servidores, dispositivos que no Windows y aprenda a ejecutar una prueba de detección.
+description: Incorpore Windows dispositivos, servidores, dispositivos que no Windows y aprenda a ejecutar una prueba de detección.
 keywords: incorporación, incorporación de Microsoft Defender para endpoint, sccm, directiva de grupo, mdm, script local, prueba de detección
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4792489abf721993fe55dc642f132c51442c21a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49109b7671cc4ecd1891cb942dcd6b678d7b5c11
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220382"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124534"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de dispositivos al servicio de Microsoft Defender para endpoints
 
@@ -50,7 +48,7 @@ En general, para incorporar dispositivos al servicio:
 
 En la tabla siguiente se enumeran las herramientas disponibles en función del extremo que necesita incorporar.
 
-|Extremo|Opciones de herramientas|
+|Punto de conexión|Opciones de herramientas|
 |---|---|
 |**Windows**|[Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <p> [Directiva de grupo](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [Scripts VDI](configure-endpoints-vdi.md) <p> [Integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[Scripts locales](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [Jamf Pro](mac-install-with-jamf.md) <p> [Administración de dispositivos móviles](mac-install-with-other-mdm.md)|
@@ -63,7 +61,7 @@ En la tabla siguiente se enumeran las herramientas disponibles en función del e
 Tema|Descripción
 :---|:---
 [Incorporar versiones anteriores de Windows](onboard-downlevel.md)|Incorpore Windows 7 y Windows 8.1 dispositivos a Defender para endpoint.
-[Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)|Tendrás que incorporar dispositivos para que se informen al servicio Defender for Endpoint. Obtenga información sobre las herramientas y métodos que puede usar para configurar dispositivos en su empresa.
+[Dispositivos Windows integrados](configure-endpoints.md)|Tendrás que incorporar dispositivos para que se informen al servicio Defender for Endpoint. Obtenga información sobre las herramientas y métodos que puede usar para configurar dispositivos en su empresa.
 [Servidores integrados](configure-server-endpoints.md)|Incorpore Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) versión 1803 y versiones posteriores, Windows Server 2019 y versiones posteriores, y Windows Server 2019 core edition a Defender for Endpoint.
 [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)|Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows y plataformas no Windows de seguridad. Podrás ver alertas de varios sistemas operativos compatibles (SO) en Centro de seguridad de Microsoft Defender proteger mejor la red de la organización. Esta experiencia aprovecha los datos del sensor de productos de seguridad de terceros.
 [Ejecutar una prueba de detección en un dispositivo incorporado recientemente](run-detection-test.md)|Ejecute un script en un dispositivo recién incorporado para comprobar que está informando correctamente al servicio Defender for Endpoint.
