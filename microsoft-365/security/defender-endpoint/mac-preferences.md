@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a396f704405b062954b5d51fff4e69e85807e621
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 1da7c59ad7702482b1edbf52da821e474addd601
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444192"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126871"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Establecer preferencias para Microsoft Defender para endpoint en macOS
 
@@ -59,7 +59,7 @@ La *sección antivirusEngine* del perfil de configuración se usa para administr
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|antivirusEngine|
@@ -75,28 +75,12 @@ Especifique si se va a habilitar la protección en tiempo real, que examina los 
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|enableRealTimeProtection|
 |**Tipo de datos**|Booleano|
 |**Posibles valores**|true (valor predeterminado) <p> false|
-|||
-
-#### <a name="run-a-scan-after-definitions-are-updated"></a>Ejecutar un examen después de actualizar las definiciones
-Especifica si se debe iniciar un examen de proceso después de que se descarguen nuevas actualizaciones de inteligencia de seguridad en el dispositivo. Al habilitar esta configuración, se desencadenará un examen antivirus en los procesos en ejecución del dispositivo.
-
-<br>
-
-****
-
-|Sección|Valor|
-|---|---|
-|**Dominio**|`com.microsoft.wdav`|
-|**Clave**|scanAfterDefinitionUpdate|
-|**Tipo de datos**|Booleano|
-|**Posibles valores**|false (predeterminado) <p> true|
-|**Comments**|Disponible en Microsoft Defender para endpoint versión 101.41.10 o posterior.|
 |||
 
 #### <a name="enable--disable-passive-mode"></a>Habilitar o deshabilitar el modo pasivo
@@ -113,7 +97,7 @@ Especifique si el motor antivirus se ejecuta en modo pasivo. El modo pasivo tien
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|passiveMode|
@@ -121,7 +105,58 @@ Especifique si el motor antivirus se ejecuta en modo pasivo. El modo pasivo tien
 |**Posibles valores**|false (predeterminado) <p> true|
 |**Comments**|Disponible en Microsoft Defender para endpoint versión 100.67.60 o posterior.|
 |||
-  
+
+#### <a name="run-a-scan-after-definitions-are-updated"></a>Ejecutar un examen después de actualizar las definiciones
+
+Especifica si se debe iniciar un examen de proceso después de que se descarguen nuevas actualizaciones de inteligencia de seguridad en el dispositivo. Al habilitar esta configuración, se desencadenará un examen antivirus en los procesos en ejecución del dispositivo.
+
+<br>
+
+****
+
+|Section|Valor|
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|scanAfterDefinitionUpdate|
+|**Tipo de datos**|Booleano|
+|**Posibles valores**|true (valor predeterminado) <p> false|
+|**Comments**|Disponible en Microsoft Defender para endpoint versión 101.41.10 o posterior.|
+|||
+
+#### <a name="scan-archives-on-demand-antivirus-scans-only"></a>Examinar archivos (solo exámenes antivirus a petición)
+
+Especifica si se deben examinar los archivos durante los exámenes antivirus a petición.
+
+<br>
+
+****
+
+|Section|Valor|
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|scanArchives|
+|**Tipo de datos**|Booleano|
+|**Posibles valores**|true (valor predeterminado) <p> false|
+|**Comments**|Disponible en Microsoft Defender para endpoint versión 101.41.10 o posterior.|
+|||
+
+#### <a name="degree-of-parallelism-for-on-demand-scans"></a>Grado de paralelismo para exámenes a petición
+
+Especifica el grado de paralelismo de los exámenes a petición. Esto corresponde al número de subprocesos usados para realizar el examen y afecta al uso de la CPU, así como a la duración del examen a petición.
+
+<br>
+
+****
+
+|Section|Valor|
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|maximumOnDemandScanThreads|
+|**Tipo de datos**|Entero|
+|**Posibles valores**|2 (valor predeterminado). Los valores permitidos son enteros entre 1 y 64.|
+|**Comments**|Disponible en Microsoft Defender para endpoint versión 101.41.10 o posterior.|
+|||
+
 #### <a name="exclusion-merge-policy"></a>Directiva de combinación de exclusión
 
 Especifique la directiva de combinación para exclusiones. Puede ser una combinación de exclusiones definidas por el administrador y definidas por el usuario ( ) o solo `merge` exclusiones definidas por el administrador ( `admin_only` ). Esta configuración se puede usar para restringir que los usuarios locales definan sus propias exclusiones.
@@ -130,7 +165,7 @@ Especifique la directiva de combinación para exclusiones. Puede ser una combina
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|exclusionsMergePolicy|
@@ -148,7 +183,7 @@ Especifique las entidades que no se han analizado. Las exclusiones se pueden esp
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|exclusiones|
@@ -164,7 +199,7 @@ Especifique el contenido excluido de ser examinado por tipo.
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|$type|
@@ -180,7 +215,7 @@ Especifique el contenido excluido de ser examinado por la ruta de acceso de arch
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|path|
@@ -228,7 +263,7 @@ Indica si la *propiedad path* hace referencia a un archivo o directorio.
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|isDirectory|
@@ -245,7 +280,7 @@ Especifique el contenido excluido de la extensión de archivo.
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|extensión|
@@ -262,7 +297,7 @@ Especifique un proceso para el que se excluya toda la actividad de archivo del e
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|name|
@@ -279,7 +314,7 @@ Especifica las amenazas por nombre que no estén bloqueadas por Defender para En
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|allowedThreats|
@@ -294,7 +329,7 @@ Restringe las acciones que el usuario local de un dispositivo puede realizar cua
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|disallowedThreatActions|
@@ -311,7 +346,7 @@ Especifica cómo se controlan determinados tipos de amenazas por Microsoft Defen
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|threatTypeSettings|
@@ -327,7 +362,7 @@ Especifique tipos de amenazas.
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|clave|
@@ -347,7 +382,7 @@ Especifique qué acción realizar cuando se detecte una amenaza del tipo especif
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|valor|
@@ -363,7 +398,7 @@ Especifique la directiva de combinación para la configuración del tipo de amen
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|threatTypeSettingsMergePolicy|
@@ -380,7 +415,7 @@ Especifica el número de días que los resultados se conservan en el historial d
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|scanResultsRetentionDays|
@@ -397,7 +432,7 @@ Especifique el número máximo de entradas que se deben conservar en el historia
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|scanHistoryMaximumItems|
@@ -414,7 +449,7 @@ Configure las características de protección controlada por la nube de Microsof
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|cloudService|
@@ -430,7 +465,7 @@ Especifica si se va a habilitar la protección entregada en la nube del disposit
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|habilitado|
@@ -446,7 +481,7 @@ Los datos de diagnóstico se usan para mantener Microsoft Defender for Endpoint 
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|diagnosticLevel|
@@ -462,7 +497,7 @@ Determina si se envían muestras sospechosas (que probablemente contengan amenaz
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|automaticSampleSubmission|
@@ -478,7 +513,7 @@ Determina si las actualizaciones de inteligencia de seguridad se instalan autom�
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Clave**|automaticDefinitionUpdateEnabled|
 |**Tipo de datos**|Booleano|
@@ -493,7 +528,7 @@ Administrar las preferencias de la interfaz de usuario de Microsoft Defender par
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|userInterface|
@@ -509,7 +544,7 @@ Especifique si desea mostrar u ocultar el icono del menú de estado en la esquin
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|hideStatusMenuIcon|
@@ -525,7 +560,7 @@ Especifica si los usuarios pueden enviar comentarios a Microsoft yendo a `Help` 
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|userInitiatedFeedback|
@@ -542,7 +577,7 @@ Administrar las preferencias del componente detección y respuesta de puntos de 
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|edr|
@@ -560,7 +595,7 @@ Especifique un nombre de etiqueta y su valor.
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|tags|
@@ -576,7 +611,7 @@ Especifica el tipo de etiqueta
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|clave|
@@ -592,7 +627,7 @@ Especifica el valor de la etiqueta
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|valor|
@@ -711,8 +746,6 @@ El siguiente perfil de configuración (o, en el caso de JAMF, una lista de propi
                     <true/>
                     <key>passiveMode</key>
                     <false/>
-                    <key>ScanAfterDefinitionUpdate</key>
-                    <false/>
                     <key>threatTypeSettings</key>
                     <array>
                         <dict>
@@ -761,8 +794,10 @@ Las plantillas siguientes contienen entradas para todas las configuraciones desc
         <true/>
         <key>passiveMode</key>
         <false/>
-        <key>ScanAfterDefinitionUpdate</key>
-        <false/>
+        <key>scanAfterDefinitionUpdate</key>
+        <true/>
+        <key>scanArchives</key>
+        <true/>
         <key>maximumOnDemandScanThreads</key>
         <integer>1</integer>
         <key>exclusions</key>
@@ -915,6 +950,10 @@ Las plantillas siguientes contienen entradas para todas las configuraciones desc
                     <true/>
                     <key>passiveMode</key>
                     <false/>
+                    <key>scanAfterDefinitionUpdate</key>
+                    <true/>
+                    <key>scanArchives</key>
+                    <true/>
                     <key>maximumOnDemandScanThreads</key>
                     <integer>1</integer>
                     <key>exclusions</key>
@@ -1056,7 +1095,7 @@ En la consola JAMF, abra **Perfiles** de configuración de equipos , vaya al per
 
 5. Abra el perfil de configuración y cargue el `com.microsoft.wdav.xml` archivo. (Este archivo se creó en el paso 3).
 
-6. Haga clic en **Aceptar**.
+6. Seleccione **Aceptar**.
 
 7. Seleccione **Administrar** \> **asignaciones**. En la **pestaña Incluir,** seleccione **Asignar a todos los usuarios & Todos los dispositivos**.
 

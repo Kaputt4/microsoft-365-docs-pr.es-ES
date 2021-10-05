@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+localization_priority: medium
 description: Obtenga información sobre procedimientos recomendados para administrar los muchos temas de su organización con Temas de Viva.
-ms.openlocfilehash: 96580df486195af991e446ae6f1bbb4b08013947
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e076c8a29070fbfe0db5e21bbca842716afe69fd
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187753"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126823"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Administrar temas a escala en Temas Microsoft Viva
 
@@ -142,7 +142,7 @@ El uso de taxonomías existentes puede proporcionar una lista de temas que proba
 
 Este enfoque también podría adoptarse en un nivel departamental o funcional, con expertos en la materia que comprendan esa área de su organización. El objetivo no es que revisen una selección o todos los temas. En su lugar, aportan su propia experiencia de dominio para guiar la curación selectiva.
 
-### <a name="search"></a>Buscar
+### <a name="search"></a>Búsqueda
 
 Los términos de búsqueda comunes a menudo se detectan como temas. Al usar los informes [de consulta principales de Búsqueda de Microsoft,](/sharepoint/view-search-usage-reports)puede identificar los términos de búsqueda más frecuentes de su organización. Si se han detectado temas para estos términos, son buenos candidatos para la curación. Estos temas se pueden presentar como tarjetas de respuesta en Búsqueda de Microsoft.
 
@@ -170,7 +170,7 @@ Los sitios de portal más grandes de la organización podrían haber invertido t
 
 Si su organización ha invertido en bases de conocimiento o sitios wiki, estos pueden proporcionar una lista de temas que usar para sus esfuerzos de curación iniciales. Si son especialmente grandes, seleccione los temas más vistos o editados como punto de partida.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Administrar temas en el centro de temas](manage-topics.md)
 

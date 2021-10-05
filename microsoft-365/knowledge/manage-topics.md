@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+localization_priority: medium
 description: Obtenga información sobre cómo administrar temas en el centro de temas en Temas Microsoft Viva.
-ms.openlocfilehash: 87e944c232d552f5a0808765a1303750eb840387
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a35e9db8f6d806f4212581be6ab609e40b46fd62
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187777"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126979"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Administrar temas en el centro de temas en Temas Microsoft Viva
 

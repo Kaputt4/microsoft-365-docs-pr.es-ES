@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d09ce01bc8d9409d4537df8eaabb50915538aa6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 58991b732a76079b5c2de12d7cca332c5dc0d752
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212100"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126967"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para endpoint en macOS
 
@@ -109,11 +109,14 @@ Las tareas importantes, como controlar la configuración del producto y desencad
 |Configuración|Activar la protección de LA PUA|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
 |Configuración|Desactivar la protección de LA PUA|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
 |Configuración|Activar el modo de auditoría para la protección de PUA|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
-|Configuración|Activar/desactivar passiveMode|`mdatp config passive-mode --value enabled [enabled/disabled]`|
-|Diagnóstico|Cambiar el nivel de registro|`mdatp log level set --level [error/warning/info/verbose]`|
-|Diagnóstico|Generar registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
-|Salud|Comprobar el estado del producto|`mdatp health`|
-|Salud|Buscar un atributo de producto spefic|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
+|Configuración|Activar/desactivar el modo pasivo antivirus|`mdatp config passive-mode --value [enabled/disabled]`|
+|Configuración|Configurar el grado de paralelismo para los exámenes a petición|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|Configuración|Activar y desactivar exámenes después de las actualizaciones de inteligencia de seguridad|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|Configuración|Activar/desactivar el examen del archivo (solo exámenes a petición)|`mdatp config scan-archives --value [enabled/disabled]`|
+|Diagnostics|Cambiar el nivel de registro|`mdatp log level set --level [error/warning/info/verbose]`|
+|Diagnostics|Generar registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
+|Mantenimiento|Comprobar el estado del producto|`mdatp health`|
+|Mantenimiento|Buscar un atributo de producto spefic|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
 |Protection|Examinar una ruta de acceso|`mdatp scan custom --path [path] [--ignore-exclusions]`|
 |Protection|Realizar un examen rápido|`mdatp scan quick`|
 |Protection|Realizar un examen completo|`mdatp scan full`|
