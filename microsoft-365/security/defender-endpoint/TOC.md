@@ -48,14 +48,14 @@
 ### [Microsoft Defender para punto de conexión en Windows Server]()
 #### [Incorporar dispositivos a Microsoft Defender para punto de conexión](onboard-configure.md)
 #### [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
-#### [Incorporar dispositivos Windows 10 mediante la directiva de grupo]()
+#### [incorporar dispositivos Windows]()
 ##### [Herramientas y métodos de incorporación para equipos con Windows 10](configure-endpoints.md)
 ##### [Incorporar dispositivos con la directiva de grupo](configure-endpoints-gp.md)
 ##### [Incorporar dispositivos con el Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 ##### [Incorporar dispositivos con las herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
 ##### [Incorporar dispositivos con un script local](configure-endpoints-script.md)
 ##### [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
-##### [Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
+##### [incorporar dispositivos de sesión múltiple de Windows en Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Incorporar servidores Windows](configure-server-endpoints.md)
 
 #### [Incorporar dispositivos sin acceso a Internet](onboard-offline-machines.md)
@@ -327,9 +327,6 @@
 ##### [Solucionar problemas de rendimiento](troubleshoot-performance-issues.md)
 ##### [Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
-#### [Aislamiento basado en hardware]()
-##### [Aislamiento basado en hardware en Windows 10](overview-hardware-based-isolation.md)
 
 #### [Protección contra vulnerabilidades de seguridad]()
 ##### [Proteger los dispositivos contra vulnerabilidades de seguridad](exploit-protection.md)

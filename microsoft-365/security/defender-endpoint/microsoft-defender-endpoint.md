@@ -2,8 +2,6 @@
 title: Microsoft Defender para punto de conexión
 description: Microsoft Defender para punto de conexión es una plataforma de seguridad de punto de conexión empresarial que ayuda a defenderse contra amenazas persistentes avanzadas.
 keywords: introducción a Microsoft Defender para punto de conexión, introducción a Microsoft Defender para punto de conexión, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, sensor de comportamiento automático, seguridad en la nube, análisis, inteligencia sobre amenazas, reducción de la superficie expuesta a ataques, protección de nueva generación, investigación y corrección automatizadas, expertos en amenazas de Microsoft, puntuación de seguridad, búsqueda avanzada, Microsoft 365 Defender, búsqueda de amenazas cibernéticas
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ae0d38eec976abb88638eea3c3d2166c7203647e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e87c13b8d5b4afe2dc14664b680900f7b30b3d02
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213567"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124558"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -32,8 +30,6 @@ ms.locfileid: "59213567"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-> Para obtener más información sobre las características y la funcionalidad de Windows 10 Enterprise Edition, consulta [Windows 10 Enterprise edition](https://www.microsoft.com/WindowsForBusiness/buy).
 
 Microsoft Defender para punto de conexión es una plataforma empresarial para la seguridad de puntos de conexión concebida para ayudar a impedir, detectar e investigar las amenazas avanzadas, y responder a ellas.
 
@@ -80,7 +76,7 @@ Microsoft Defender para punto de conexión usa la siguiente combinación de tecn
 > [!TIP]
 >
 > - Obtenga información sobre las mejoras más recientes de Defender para punto de conexión: [novedades de Microsoft Defender para punto de conexión](whats-new-in-microsoft-defender-atp.md).
-> - Microsoft Defender para punto de conexión mostró funcionalidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Lectura: [Insights de la evaluación basada en MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - Microsoft Defender para punto de conexión mostró funcionalidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Lea: [Conclusiones de la evaluación basada en ATT&CK de MITRE](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 <a name="tvm"></a>
 

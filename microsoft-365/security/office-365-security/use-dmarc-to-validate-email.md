@@ -18,12 +18,12 @@ ms.collection:
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a92c6ec50fb60d15e027a11163aad6b2186e5304
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 68a3f9bc2b7752ee59c040ebaca54e58008479e9
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217897"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099753"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usar DMARC para validar el correo electrónico
 
@@ -211,7 +211,7 @@ DMARC se puede implementar gradualmente sin que esto afecte al resto del flujo d
 
    DMARC se implementa al publicar una directiva como un registro TXT en DNS y es jerárquico (por ejemplo, una directiva publicada para contoso.com se aplicará a sub.domain.contoso.com a menos que se defina explícitamente una directiva diferente para el subdominio). Esto es útil para que las organizaciones puedan especificar un número más reducido de registros de DMARC de alto nivel para un mayor alcance. Se debe prestar especial atención a la configuración de registros de DMARC de subdominios explícitos en los que no quiera que los subdominios hereden el registro de DMARC del dominio de nivel superior.
 
-   Asimismo, con el valor `sp=reject`, puede agregar una directiva de tipo comodín para DMARC cuando los subdominios no puedan enviar correos electrónicos. Por ejemplo:
+   Además, puede agregar una directiva de tipo comodín para DMARC cuando los subdominios no deberían enviar correo electrónico, agregando el valor de `sp=reject`. Por ejemplo:
 
    ```text
    _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
@@ -219,7 +219,7 @@ DMARC se puede implementar gradualmente sin que esto afecte al resto del flujo d
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Cómo controla Microsoft 365 el correo electrónico saliente que no supera las comprobaciones de DMARC
 
-Si un mensaje sale de Microsoft 365 y no supera las comprobaciones de DMARC, y ha establecido la directiva en p=quarantine o p=reject, el mensaje se enruta a través del [Grupo de entrega de alto riesgo para mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md). No hay ninguna invalidación para el correo saliente.
+Si un mensaje sale de Microsoft 365 y se produce un error en DMARC, y ha establecido la directiva en p=quarantine o p=reject, el mensaje se enruta a través del [grupo de entrega de alto riesgo para los mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md). No hay ninguna invalidación para el correo electrónico saliente.
 
 Si publica una directiva de rechazo de DMARC (p=reject), ningún otro cliente de Office 365 podrá suplantar la identidad del dominio porque los mensajes no podrán pasar las comprobaciones de SPF o DKIM para el dominio al retransmitir un mensaje saliente a través del servicio. Sin embargo, si publica una directiva de rechazo de DMARC, pero no dispone de todo el correo electrónico autenticado a través de Microsoft 365, una parte del correo entrante puede ser marcado como correo no deseado (como se describió anteriormente) o se rechazará si no publica SPF e intenta retransmitirlo para que salga a través del servicio. Esto sucede, por ejemplo, si se olvida de incluir algunas de las direcciones IP para servidores y aplicaciones que envían correo en nombre de su dominio al formular el registro TXT de DMARC.
 
@@ -274,6 +274,6 @@ Todo el correo electrónico o la mayor parte se enrutará primero a mail.contoso
 
 [Cómo Microsoft 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad](how-office-365-uses-spf-to-prevent-spoofing.md)
 
-[Configurar SPF en Microsoft 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+[**Configurar SPF en Microsoft 365 para ayudar a evitar la suplantación de identidad**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-[Usar DKIM para validar el correo electrónico saliente enviado desde el dominio personalizado en Microsoft 365](use-dkim-to-validate-outbound-email.md)
+[**Usar DKIM para validar el correo electrónico saliente enviado desde el dominio personalizado en Microsoft 365**](use-dkim-to-validate-outbound-email.md)

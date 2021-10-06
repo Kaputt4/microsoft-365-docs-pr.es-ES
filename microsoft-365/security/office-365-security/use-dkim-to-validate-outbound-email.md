@@ -20,12 +20,12 @@ ms.custom:
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25c83dedaa9f1606744e54459a0ebfb5627be752
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 61368c5a2f6a54f58505760f42f14cb46a1ae832
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166574"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099782"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -73,14 +73,14 @@ Básicamente, una clave privada cifra el encabezado en un correo electrónico sa
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing"></a>Cómo DKIM funciona mejor que SPF solo para evitar la suplantación de identidad malintencionada
 <a name="HowDKIMWorks"> </a>
 
-SPF agrega información a un sobre del mensaje pero DKIM *cifra* una firma dentro del encabezado del mensaje. Cuando reenvía un mensaje, el servidor de reenvío puede quitar partes de ese sobre del mensaje. Como la firma digital permanece en el mensaje de correo electrónico porque forma parte del encabezado del correo, DKIM funciona incluso cuando un mensaje se ha reenviado como se muestra en el siguiente ejemplo.
+SPF agrega información a un sobre de mensaje, pero DKIM *cifra* una firma dentro del encabezado del mensaje. Cuando reenvía un mensaje, el servidor de reenvío puede quitar partes del sobre de ese mensaje. Dado que la firma digital permanece con el mensaje de correo electrónico porque forma parte del encabezado de correo electrónico, DKIM funciona incluso cuando se ha reenviado un mensaje, como se muestra en el ejemplo siguiente.
 
 ![Diagrama que muestra un mensaje reenviado que pasa por la autenticación DKIM, donde se produce un error en la comprobación de SPF.](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
 En este ejemplo, si solo había publicado un registro TXT de SPF en su dominio, el servidor de correo del destinatario podría haber marcado el correo electrónico como correo no deseado y generar un resultado de falso positivo. **La adición de DKIM en este escenario reduce los *informes de correo no deseado* de falso positivo**. Debido a que DKIM se basa en la criptografía de clave pública para autenticar y no solo en las direcciones IP, DKIM se considera una forma mucho más segura de autenticación que SPF. Se recomienda usar SPF y DKIM, así como DMARC, en la implementación.
 
 > [!TIP]
-> DKIM usa una clave privada para insertar una firma cifrada en los encabezados del mensaje. El dominio de firma, o el dominio saliente, se inserta como el valor del campo **d=** en el encabezado. El dominio de comprobación, o dominio del destinatario, usa entonces el campo **=d** para buscar la clave pública desde DNS y autenticar el mensaje. Si el mensaje se comprueba, supera la comprobación DKIM.
+> DKIM usa una clave privada para insertar una firma cifrada en los encabezados del mensaje. El dominio de firma, o dominio de salida, se inserta como el valor del campo **d=** en el encabezado. A continuación, el dominio de verificación o el dominio del destinatario usa el campo **d=** para buscar la clave pública de DNS y autenticar el mensaje. Si se verifica el mensaje, se supera la comprobación de DKIM.
 
 ## <a name="steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal"></a>Pasos para crear, habilitar y deshabilitar DKIM desde el portal de Microsoft 365 Defender
 
@@ -203,7 +203,7 @@ Donde:
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
-- _initialDomain_ es el dominio que usó al registrarse en Microsoft 365. Los dominios iniciales siempre terminan en onmicrosoft.com. Para obtener información sobre cómo determinar el dominio inicial, vea [Preguntas más frecuentes de dominios](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
+- _initialDomain_ es el dominio que usó al registrarse para Microsoft 365. Los dominios iniciales siempre terminan en onmicrosoft.com Para obtener información sobre cómo determinar el dominio inicial, vea [Preguntas más frecuentes de dominios](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
 
 Por ejemplo, si tiene un dominio inicial de cohovineyardandwinery.onmicrosoft.com y dos dominios personalizados cohovineyard.com y cohowinery.com, necesitará configurar dos registros CNAME para cada dominio adicional, un total de cuatro registros CNAME.
 
@@ -350,7 +350,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     b=<signed field>;
 ```
 
-En este ejemplo, el nombre de host y el dominio contienen los valores a los que señalaría el registro CNAME si el administrador del dominio hubiera habilitado la firma DKIM para fabrikam.com. Finalmente, cada mensaje enviado desde Microsoft 365 contendrá una firma DKIM. Si habilita DKIM, el dominio será el mismo que el dominio de la dirección en el campo De:, en este caso, fabrikam.com. Si no lo hace, el dominio no se alineará y en su lugar se usará el dominio inicial de la organización. Para obtener información sobre cómo determinar el dominio inicial, vea [Preguntas más frecuentes de dominios](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
+En este ejemplo, el nombre de host y el dominio contienen los valores a los que señalaría el registro CNAME si el administrador del dominio hubiera habilitado la firma DKIM para fabrikam.com. Finalmente, todos los mensajes enviados desde Office 365 contendrán una firma DKIM. Si habilita DKIM, el dominio será el mismo que el dominio que figura en la dirección del campo De:, en este caso, fabrikam.com. Si no lo hace, el dominio no se alineará y en su lugar se usará el dominio inicial de la organización. Para obtener información sobre cómo determinar el dominio inicial, vea [Preguntas más frecuentes de dominios](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
 
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>Configurar DKIM para que un servicio de terceros pueda enviar, o suplantar, correo electrónico en nombre de su dominio personalizado
 <a name="SetUp3rdPartyspoof"> </a>
@@ -374,7 +374,7 @@ En este ejemplo, para conseguir este resultado:
 
 3. Al enviar el correo electrónico, el proveedor de correo electrónico masivo ha firmado la clave con la clave privada correspondiente. Al hacer esto, el proveedor de correo electrónico masivo ha adjuntado la firma DKIM al encabezado del mensaje.
 
-4. Los sistemas de correo electrónico de recepción realizan una comprobación DKIM mediante la autenticación del valor d=\<domain\> comparado con el dominio en el campo De: (5322.From) de la dirección del mensaje. En este ejemplo, los valores coinciden:
+4. Los sistemas de correo electrónico receptores realizan una comprobación DKIM mediante la autenticación del valor de dkim-firma d=\<domain\> en el dominio de la dirección De: (5322.From) del mensaje. En este ejemplo, los valores coinciden:
 
    > sender@**contoso.com**
 
@@ -393,8 +393,10 @@ Por ejemplo, el registro DKIM tendría el siguiente aspecto:
 ## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>Pasos siguientes: una vez configurado DKIM para Microsoft 365
 <a name="DKIMNextSteps"> </a>
 
-Aunque DKIM está diseñado para ayudar a evitar la suplantación de identidad, DKIM funciona mejor con SPF y DMARC. Cuando haya configurado DKIM, si todavía no ha configurado SPF, debería hacerlo. Para obtener una introducción rápida a SPF y configurarlo rápidamente, consulte [Configuración de SPF en Microsoft 365 para evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para comprender en detalle cómo Microsoft 365 usa SPF, o para la solución de problemas o las implementaciones no estándar (por ejemplo, implementaciones híbridas), comience con [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md) (Cómo Microsoft 365 usa el marco de directivas permanente [SPF] para evitar la suplantación de identidad). Después, consulte [Uso de DMARC para validar el correo electrónico](use-dmarc-to-validate-email.md). Los [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md) incluyen la sintaxis y los campos de encabezado que usa Microsoft 365 para efectuar comprobaciones de DKIM.
+Aunque DKIM está diseñado para ayudar a evitar la suplantación de identidad, DKIM funciona mejor con SPF y DMARC. Una vez que haya configurado DKIM, si aún no ha configurado SPF, debe hacerlo. Para obtener una introducción rápida a SPF y configurarlo rápidamente, consulte [**Configurar SPF en Microsoft 365 para ayudar a evitar la suplantación de identidad**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para obtener una comprensión más detallada de cómo Microsoft 365 usa SPF, o para solucionar problemas o implementaciones no estándar, como las implementaciones híbridas, comience con [Cómo Microsoft 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad](how-office-365-uses-spf-to-prevent-spoofing.md). A continuación, consulte [**Usar DMARC para validar el correo electrónico**](use-dmarc-to-validate-email.md). [encabezados de mensajes contra correo no deseado](anti-spam-message-headers.md) incluye la sintaxis y los campos de encabezado usados por Microsoft 365 para las comprobaciones DKIM.
 
 ## <a name="more-information"></a>Más información
 
 Rotación de clave mediante PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
+
+[Usar DMARC para validar el correo electrónico](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
