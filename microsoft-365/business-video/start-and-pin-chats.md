@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aprende a iniciar y anclar chats en Microsoft Teams.
-ms.openlocfilehash: 8755abfa3e961ef5408ab612f6712dbeef948074
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7070333f88c2e23ef0425d0c8c7c2068c3bb99d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188806"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195958"
 ---
 # <a name="chat-with-employees-and-customers"></a>Chatear con empleados y clientes
 

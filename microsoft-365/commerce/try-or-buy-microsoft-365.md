@@ -9,7 +9,7 @@ ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: GEA150
 description: Regístrate para una prueba gratuita de 30 días para Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Premium o Aplicaciones Microsoft 365 para negocios.
 ms.date: 08/07/2020
-ms.openlocfilehash: b38d5a0fb49b67315d43011107c8643432fa021b
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: cb9d811f014fa0460e5030b794caf687df4ca4ae
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786028"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195766"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Probar o comprar una suscripción Microsoft 365 para empresas
 

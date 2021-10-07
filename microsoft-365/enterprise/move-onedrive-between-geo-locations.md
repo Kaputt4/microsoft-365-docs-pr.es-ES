@@ -13,14 +13,14 @@ ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Encuentre información sobre cómo mover un sitio OneDrive a una ubicación geográfica diferente, incluido cómo programar los movimientos del sitio y comunicar las expectativas a los usuarios.
-ms.openlocfilehash: 50c23555a91aecfbbaf6aa30bae2c3a741a18c45
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 232654ac0cea95fee6dfef036ecb87768e5768d9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212510"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195358"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover un sitio de OneDrive a otra ubicación geográfica 
 

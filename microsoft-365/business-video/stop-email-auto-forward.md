@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aprende a detener el reenvío automático de mensajes de correo mediante la creación de una regla de flujo de correo para evitar el robo de información propietaria.
-ms.openlocfilehash: 5c13e43f29b6d49b13daf4eb0aa6e3d6fd8275ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2879be5db078ba32ba088e30d1de5e4e062cff25
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188785"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195910"
 ---
 # <a name="stop-email-auto-forward"></a>Detener el reenvío automático de correo electrónico
 

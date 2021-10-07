@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Acepte una invitación por correo electrónico para unirse a una Microsoft 365 Empresa Estándar organización mediante una Outlook, Yahoo, Gmail u otra cuenta.
-ms.openlocfilehash: 7bbf6565b71be3c6741f9b6637599560550497e9
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2faea6a0d9089eb1a9f42d3d52bc877636ead50a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774381"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196126"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>Aceptar una invitación de correo electrónico a una Microsoft 365 Empresa Estándar de suscripción con una Outlook, Yahoo, Gmail u otra cuenta (usuario)
 

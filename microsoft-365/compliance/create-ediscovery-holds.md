@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal en Microsoft 365 para conservar el contenido relevante para una investigación o un caso legal.
-ms.openlocfilehash: 57e825822ac622d224a402d677d4951ad9fa444a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0a5ac38afb649ab1972e7b7aee525dac9ab3b00e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165931"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195658"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -131,7 +131,7 @@ Las conversaciones que forman parte de un canal Microsoft Teams se almacenan en 
 Como alternativa, las conversaciones que forman parte de la lista chat de Teams (llamadas *chats 1:1* o chats de grupo *1:N)* se almacenan en los buzones de los usuarios que participan en el chat. Y los archivos que los usuarios comparten en conversaciones de chat se almacenan en OneDrive cuenta del usuario que comparte el archivo. Por lo tanto, debe agregar los buzones de usuario individuales y las OneDrive a una retención de exhibición de documentos electrónicos para conservar conversaciones y archivos en la lista de chat. Es una buena idea colocar una retención en los buzones de los miembros de un equipo de Microsoft, además de poner el buzón de equipo y el sitio en espera.
 
 > [!NOTE]
-> Si su organización tiene una implementación híbrida de Exchange (o su organización sincroniza una organización de Exchange local con Office 365) y ha habilitado Microsoft Teams, los usuarios locales pueden usar la aplicación de chat de Teams y participar en chats 1:1 y chats de grupo 1:N. Estas conversaciones se almacenan en almacenamiento basado en la nube que está asociado con un usuario local. Si un usuario local se coloca en una retención de exhibición de documentos electrónicos, se conservará el Teams de chat en el almacenamiento basado en la nube. Para más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
+> Si su organización tiene una implementación híbrida de Exchange (o su organización sincroniza una organización de Exchange local con Office 365) y ha habilitado Microsoft Teams, los usuarios locales pueden usar la aplicación de chat de Teams y participar en chats 1:1 y chats de grupo 1:N. Estas conversaciones se almacenan en almacenamiento basado en la nube que está asociado con un usuario local. Si un usuario local se coloca en una retención de exhibición de documentos electrónicos, se conservará el Teams de chat en el almacenamiento basado en la nube. Para obtener más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Para obtener más información acerca de cómo conservar Teams contenido, vea [Colocar un Microsoft Teams usuario o](/MicrosoftTeams/legal-hold)equipo en retención legal .
 

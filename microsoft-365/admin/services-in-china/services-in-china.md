@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Obtenga más información Office 365 operado por 21Vianet diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 6313212d39b81e9954681848e5ac6747ff6ee3ea
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c8be22550ee4ff6b1281cd2cfabe94df2c0c56e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186758"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195154"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 operado por 21Vianet
 
@@ -155,8 +155,8 @@ Use la siguiente tabla para obtener más información sobre la compatibilidad co
 |**Versión de Exchange local**|**MRM (archivo dividido)**|**Acceso de OWA (archivo dividido)**|**Exhibición de documentos electrónicos locales**|**Auditoría de buzones**|**Retención local/archivado**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | Todo 2013 CU5  <br/> | Compatible <br/>  | No se admite <br/>  | Compatible <br/>  | Compatible  <br/> | Compatible <br/> |
-| Todo 2010 SP3 <br/>  | No admitido <br/>  | No admitido <br/>  | Compatible<sup>con 1</sup> <br/> | Compatible  <br/> | Compatible <br/>  |
-| Al menos un servidor CU5 anterior a 2013  <br/> | Compatible<sup>con 2</sup> <br/> | No admitido  <br/> | No admitido <br/> | Compatible  <br/> | Compatible <br/> |
+| Todo 2010 SP3 <br/>  | No compatible <br/>  | No se admite <br/>  | Compatible<sup>con 1</sup> <br/> | Compatible  <br/> | Compatible <br/>  |
+| Al menos un servidor CU5 anterior a 2013  <br/> | Compatible<sup>con 2</sup> <br/> | No compatible  <br/> | No se admite <br/> | Compatible  <br/> | Compatible <br/> |
 |||
 
 <sup>1</sup> Se requieren búsquedas independientes para buzones de correo locales y Exchange Online local.  <br/> <sup>2</sup> Las directivas de movimiento a archivo de MRM se pueden usar para buzones ubicados en un servidor Exchange 2013 CU5 o posterior. 
@@ -177,7 +177,7 @@ Compartir Exchange datos de contacto en dispositivos móviles Apple con Apple iC
 |Cifrado de Exchange Hosted Email  |No disponible.  |
 |Cifrado de mensajes de Office 365  |Próximamente.  |
    
-## <a name="office"></a>Oficina
+## <a name="office"></a>Office
 
 |Función|Disponibilidad|
 |:-----|:-----|
@@ -199,7 +199,7 @@ Compartir Exchange datos de contacto en dispositivos móviles Apple con Apple iC
 |Integración del panel de investigación para Bing servicios  <br/> |No disponible.  <br/> |
 |Comprobador de accesibilidad  <br/> |No disponible.  <br/> |
 |Bloc de notas de clase  <br/> |No disponible.  <br/> |
-|Formularios  <br/> |No disponible.  <br/> |
+|Forms  <br/> |No disponible.  <br/> |
 |Lector envolvente  <br/> |No disponible.  <br/> |
 |Insertar imagen en línea  <br/> |No disponible.  <br/> |
 |Detalles de la reunión  <br/> |No disponible.  <br/> |

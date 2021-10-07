@@ -7,7 +7,7 @@ ms.date: 6/26/2018
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Obtenga información sobre cómo usar las comunidades BGP en Azure ExpressRoute para administrar el número de prefijos IP y el ancho de banda necesario para Office 365 escenarios.
-ms.openlocfilehash: 9cb6980c1d8cc120f99cac087602856aeacf1adf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afcbbbebda8dcc7c9425831b44f0d95f0eca5a18
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185993"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195418"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Uso de comunidades BGP en ExpressRoute para Office 365 escenarios
 
@@ -44,7 +44,7 @@ Para ayudar a los clientes con estos objetivos, Office 365 prefijos IP que se an
 
 |**Servicio**|**Valor Community BGP**|**Notas**|
 |:-----|:-----|:-----|
-|Exchange en línea\*  <br/> |12076:5010  <br/> |Incluye servicios Exchange e EOP\*  <br/> |
+|Exchange Online\*  <br/> |12076:5010  <br/> |Incluye servicios Exchange e EOP\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
 |Skype Empresarial\*  <br/> |12076:5030  <br/> |Skype Empresarial Servicios & Microsoft Teams en línea  <br/> |
 |Otros Office 365 servicios\*  <br/> |12076:5100  <br/> |Incluye Azure Active Directory (escenarios de autenticación y sincronización de directorios) así como servicios Office 365 Portal  <br/> |

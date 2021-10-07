@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +22,19 @@ ms.custom:
 - AdminTemplateSet
 description: Si ha comprado Microsoft 365 Empresa Estándar desde una tienda de comercio al por menor, obtenga información sobre cómo canjear la clave de producto y activar la suscripción.
 ms.date: 11/13/2020
-ms.openlocfilehash: 5c9a1bba30f6c1b55688d2a36166651fe0b16a05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d872a61de9f2d704f6cee92234d3358ca0d1c26f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190364"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195874"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Escriba la clave de producto para Microsoft 365 Empresa Estándar
 
 Si ha comprado Microsoft 365 Empresa Estándar desde una tienda de comercio al por menor, este artículo le ayudará a activar la suscripción.
   
- **¿Necesita algo más?**
- **Para obtener ayuda con Microsoft 365 Familia o Microsoft 365 Personal**, consulte [Uso de claves de producto con Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
- **¿Es cliente de licencias por volumen?** Si ha comprado Microsoft 365 para empresas a través de un [Programa de licencias abiertas de Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=613298), consulte el artículo, [Introducir la clave de producto adquirida en Microsoft Open](purchases-from-microsoft-open.md).
+ **¿Necesita algo más?** **Para obtener ayuda con Microsoft 365 Familia o Microsoft 365 Personal**, consulte [Uso de claves de producto con Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **¿Es un cliente de licencias por volumen?** Si ha comprado Microsoft 365 para empresas a través de un [Programa de licencias abiertas de Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=613298), consulte el artículo [Introducir la clave de producto adquirida en Microsoft Open](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Activar una nueva suscripción
 

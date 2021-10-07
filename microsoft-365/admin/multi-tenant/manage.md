@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar el conmutador de inquilinos y las vistas multiinquilino que le ofrecen la capacidad de administrar los inquilinos desde una única ubicación.
-ms.openlocfilehash: 78ab8be76d02b813ee81fe444c97d1451375e4ee
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: d30d352376bb10e142d478e21ddd550577f536ca
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786256"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195178"
 ---
 # <a name="multi-tenant-management"></a>Administración multiinquilino
 

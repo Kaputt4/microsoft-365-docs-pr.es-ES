@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 4/1/2020
 search.appverid:
 - MET150
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-jun2020
 - admindeeplinkMAC
 description: Obtenga información Office 365 los administradores globales pueden aplicar la personalización de marca de su organización a los mensajes de correo electrónico cifrados & contenido del portal de cifrado.
-ms.openlocfilehash: 87f6ffe0eed66e6cac329e71ad923355233eb657
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 063a46c94578cbd3cd01184d25086d5246da3fa8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191614"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195778"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Agregar la marca de su organización a su Microsoft 365 cifrado de mensajes empresariales
 

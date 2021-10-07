@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2a56b6ad80690e83c655773cf274cc54d757bdb3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a37f9ab9c998b8d9582575863c929f3432b6ea04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190707"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195034"
 ---
 # <a name="contact-support-for-kiribati"></a>Póngase en contacto con el soporte técnico de Kiribati
 

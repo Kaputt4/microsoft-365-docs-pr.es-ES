@@ -4,17 +4,17 @@ description: Información para agregar e implementar aplicaciones en Escritorio 
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de línea de negocio, aplicaciones de LOB
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bcb1c85e533ae691c34d41bd6694e58c49617738
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a84f6e13a7c189ce4cd33f308e765e5c59dae374
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215480"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195238"
 ---
 # <a name="deploy-apps-to-devices"></a>Implementar aplicaciones en dispositivos
 Parte de la incorporación a Escritorio administrado de Microsoft incluye agregar e implementar aplicaciones en los dispositivos del usuario. Una vez que estés usando el portal Escritorio administrado de Microsoft, puedes agregar e implementar tus aplicaciones. 
@@ -50,7 +50,7 @@ Puede iniciar sesión en Escritorio administrado de Microsoft portal o iniciar s
 
 <span id="msfb-apps">
 
-### <a name="microsoft-store-for-business-apps"></a>Microsoft Store para Empresas aplicaciones
+### <a name="microsoft-store-for-business-apps"></a>Aplicaciones de Microsoft Store para Empresas.
 Si no te has registrado con Microsoft Store para Empresas, puedes registrarte cuando compres aplicaciones. Después de tener las aplicaciones, puedes sincronizarlas con Escritorio administrado de Microsoft. 
 
 **Para comprar aplicaciones desde el Microsoft Store para Empresas**

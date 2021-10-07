@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar la visibilidad del tema en Temas Microsoft Viva.
-ms.openlocfilehash: b1ea14ccd1872825cd9ce7edb35ddc8c0a7f176e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 73e917d049ee60a66852b80a9a8e20e5321dfa0b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218457"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195262"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Administrar la visibilidad del tema en Temas Microsoft Viva
 

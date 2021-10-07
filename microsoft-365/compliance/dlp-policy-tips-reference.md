@@ -8,7 +8,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MET150
@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 7c1e61378e4da34c964c4fcdaf87afc25e88b4d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2537b653b435240e052374e3328e2b94504a8d74
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219047"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195646"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Referencia de sugerencias de directiva de prevención de pérdida de datos
 
@@ -395,7 +395,7 @@ Tenga en cuenta que los tipos de información confidencial personalizados tambi�
 |**Aplicación y plataforma**|**Compatibilidad con sugerencias de directiva DLP**|**Tipos de información confidencial admitidos**|**Predicados y acciones admitidas**|**Comments**|
 |:--|:--|:--|:--|:--|
 |**Outlook En la web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|subconjunto||
-|**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|subconjunto|Consulta [Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) y versiones posteriores que admiten mostrar sugerencias de directiva solo para algunas condiciones y excepciones, y [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) y aplicaciones posteriores y Office en escritorio que muestran sugerencias de directiva para algunos tipos de información confidencial para obtener detalles sobre la compatibilidad con tipos de información confidencial y condiciones dlp y acciones admitidas para mostrar sugerencias de directivas DLP en Outlook Win32.|
+|**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|subconjunto|Consulta [Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) y versiones posteriores que admiten mostrar sugerencias de directiva solo para algunas condiciones y excepciones, y Outlook [2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) y aplicaciones posteriores y Office en escritorio que muestran sugerencias de directiva para algunos tipos de información confidencial para obtener detalles sobre la compatibilidad con tipos de información confidencial y condiciones dlp y acciones admitidas para mostrar sugerencias de directivas DLP en Outlook Win32 .|
 |**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|ninguno|ninguno|Las sugerencias de directivas DLP no se admiten en Outlook móvil|
 |**SharePoint Cliente web en línea OneDrive para la Empresa web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|todos los predicados y acciones de SPO/ODB en DLP||
 |**SharePoint Cliente win32/ OneDrive para la Empresa Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|ninguno|ninguno|Las sugerencias de directivas dlp no se admiten SharePoint o OneDrive aplicaciones cliente de escritorio|

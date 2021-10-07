@@ -7,19 +7,19 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumen: configure los servidores proxy de aplicación web para la autenticación federada de alta disponibilidad Microsoft 365 en Microsoft Azure.'
-ms.openlocfilehash: 17efeb414208afac9ce9dcb0b7136a4c962a0268
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea50a48fe4bebd997ecf6b472a60e57772bf2b0f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167326"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195406"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web
 
@@ -64,13 +64,13 @@ Debe determinar el nombre DNS para identificar el nombre del servicio de federac
   
 Una vez que tenga el servicio de federación FDQN, cree un registro A de dominio DNS público para el servicio de federación FDQN que se resuelva en la dirección IP pública del equilibrador de carga de Azure Internet.
   
-|**Nombre**|**Tipo**|**TTL**|**Valor**|
+|**Name**|**Tipo**|**TTL**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |FDQN del servicio de federación  <br/> |A  <br/> |3600  <br/> |dirección IP pública del equilibrador de carga de Azure Internet (mostrado por el comando **Write-Host** en la sección anterior) <br/> |
    
 A continuación le mostramos un ejemplo:
   
-|**Nombre**|**Tipo**|**TTL**|**Valor**|
+|**Name**|**Tipo**|**TTL**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
