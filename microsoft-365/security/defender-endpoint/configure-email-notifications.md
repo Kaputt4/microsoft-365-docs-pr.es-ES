@@ -1,27 +1,25 @@
 ---
 title: Configurar notificaciones de alertas en Microsoft Defender para endpoint
 description: Puedes usar Microsoft Defender para Endpoint para configurar las opciones de notificación de correo electrónico para alertas de seguridad, según la gravedad y otros criterios.
-keywords: notificaciones de correo electrónico, configurar notificaciones de alertas, Microsoft Defender para endpoint, Microsoft Defender para notificaciones de puntos de conexión, alertas de Microsoft Defender para endpoints, windows 10 enterprise, windows 10 education
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: notificaciones de correo electrónico, configurar notificaciones de alertas, Microsoft Defender para endpoint, Microsoft Defender para notificaciones de punto de conexión, Alertas de Microsoft Defender para endpoints, windows enterprise, windows education
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 857df1a9f088c316349fbbe02618a7345df5a075
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d598687edbb4268bc02a4f0bd8c752405cf22dee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222002"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192972"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurar notificaciones de alertas en Microsoft Defender para endpoint
 

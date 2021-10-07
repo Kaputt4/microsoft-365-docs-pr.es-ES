@@ -18,22 +18,22 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0e49935ff1d280adf4c1567a2064496a475c6033
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 54c2cffe50c8f0943595e90fd8bf66c63a6f5027
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60216951"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179300"
 ---
 # <a name="communication-compliance-with-siem-solutions"></a>Cumplimiento de comunicaciones con soluciones de SIEM
 
 [El cumplimiento de](communication-compliance.md) la comunicación es una solución de riesgo interno en Microsoft 365 que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inapropiados en su organización. Las soluciones de administración de eventos y de información de seguridad (SIEM), como [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel) o [Splunk,](https://www.splunk.com/) se usan normalmente para agregar y realizar un seguimiento de las amenazas dentro de una organización.
 
-Una necesidad común de las organizaciones es integrar las alertas de cumplimiento de comunicaciones y estas soluciones SIEM. Con esta integración, las organizaciones pueden ver las alertas de cumplimiento de comunicaciones en su solución SIEM y, a continuación, corregir las alertas dentro del flujo de trabajo de cumplimiento de comunicaciones y la experiencia del usuario. Por ejemplo, un empleado envía un mensaje ofensivo a otro empleado y ese mensaje se detecta mediante una supervisión de directivas de cumplimiento de comunicación para el lenguaje ofensivo. La solución de cumplimiento de comunicaciones realiza un seguimiento de estos eventos Microsoft 365 auditar (también conocido como "registro de auditoría unificado") y se importan a la solución SIEM. A continuación, se desencadena una alerta en la solución SIEM para la organización a partir de eventos supervisados en Microsoft 365 auditoría asociadas con alertas de cumplimiento de comunicaciones. Los investigadores son notificados de la alerta en las soluciones SIEM y, a continuación, investigan y corrigen la alerta en la solución de cumplimiento de comunicaciones.
+Una necesidad común de las organizaciones es integrar las alertas de cumplimiento de comunicaciones y estas soluciones SIEM. Con esta integración, las organizaciones pueden ver las alertas de cumplimiento de comunicaciones en su solución SIEM y, a continuación, corregir las alertas dentro del flujo de trabajo de cumplimiento de comunicaciones y la experiencia del usuario. Por ejemplo, un empleado envía un mensaje ofensivo a otro empleado y ese mensaje se detecta mediante una supervisión de directivas de cumplimiento de comunicación para el lenguaje ofensivo. La solución de cumplimiento de comunicaciones realiza un seguimiento de estos eventos en Microsoft 365 Audit (también conocido como "registro de auditoría unificado") y se importan a la solución SIEM. A continuación, se desencadena una alerta en la solución SIEM para la organización a partir de eventos supervisados en la auditoría de Microsoft 365 asociada a las alertas de cumplimiento de comunicaciones. Los investigadores son notificados de la alerta en las soluciones SIEM y, a continuación, investigan y corrigen la alerta en la solución de cumplimiento de comunicaciones.
 
-## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Alertas de cumplimiento de comunicación en Microsoft 365 Auditoría
+## <a name="communication-compliance-alerts-in-the-microsoft-365-audit"></a>Alertas de cumplimiento de comunicaciones en la Microsoft 365 auditoría
 
-Todas las coincidencias de directivas de cumplimiento de comunicaciones se capturan en Microsoft 365 Auditoría. En los ejemplos siguientes se muestran los detalles disponibles para las actividades de coincidencia de directivas de cumplimiento de comunicaciones seleccionadas:
+Todas las coincidencias de directivas de cumplimiento de comunicaciones se capturan en la Microsoft 365 auditoría. En los ejemplos siguientes se muestran los detalles disponibles para las actividades de coincidencia de directivas de cumplimiento de comunicaciones seleccionadas:
 
 **Ejemplo de entrada de registro de auditoría para una coincidencia de plantilla de directiva de lenguaje ofensivo:**
 
@@ -68,11 +68,11 @@ ObjectState: Unchanged
 ```
 
 > [!NOTE]
-> Actualmente, puede haber un retraso de hasta 24 horas entre el momento en que se registra una coincidencia de directiva en la auditoría de Microsoft 365 y la hora en que puede investigar coincidencias de directivas en el cumplimiento de la comunicación.
+> Actualmente, puede haber hasta un retraso de 24 horas entre el momento en que se registra una coincidencia de directiva en la auditoría de Microsoft 365 y la hora en la que puede investigar coincidencias de directivas en el cumplimiento de la comunicación.
 
 ## <a name="configure-communication-compliance-and-azure-sentinel-integration"></a>Configurar el cumplimiento de las comunicaciones y la integración de Azure Sentinel
 
-Cuando usa Azure Sentinel para agregar coincidencias de directivas de cumplimiento de comunicaciones, Sentinel usa Microsoft 365 Audit como origen de datos. Para integrar las alertas de cumplimiento de comunicaciones con Sentinel, siga estos pasos:
+Cuando usa Azure Sentinel para agregar coincidencias de directivas de cumplimiento de comunicaciones, Sentinel usa la auditoría Microsoft 365 como origen de datos. Para integrar las alertas de cumplimiento de comunicaciones con Sentinel, siga estos pasos:
 
 1. [Incorporación a Azure Sentinel](/azure/sentinel/quickstart-onboard). Como parte del proceso de incorporación, configurará los orígenes de datos.
 2. Configure el conector de [Microsoft Office 365 de datos de](/azure/sentinel/data-connectors-reference#microsoft-office-365) Azure Sentinel y, en configuración del conector, seleccione *Exchange*.
@@ -111,7 +111,7 @@ En la tabla siguiente se muestran resultados de búsqueda de ejemplo para distin
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>Configurar el cumplimiento de la comunicación con otras soluciones SIEM
 
-Para recuperar las coincidencias de directivas de cumplimiento de comunicaciones de Microsoft 365 Audit, puede usar PowerShell o la API de administración [Office 365.](/office/office-365-management-api/office-365-management-activity-api-reference)
+Para recuperar las coincidencias de directivas de cumplimiento de comunicaciones de la auditoría Microsoft 365, puede usar PowerShell o la [API](/office/office-365-management-api/office-365-management-activity-api-reference)de administración Office 365.
 
 Al usar PowerShell, puede usar cualquiera de estos parámetros con el cmdlet **Search-UnifiedAuditLog** para filtrar eventos de registro de auditoría para actividades de cumplimiento de comunicaciones.
 

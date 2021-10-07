@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c678cb8d9eece9ff3a900a7d2b0c6bf95ad8eda9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 444336af04ddf971c4a58e1f12fc296ecf4bc629
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185633"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191472"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Redirigir cuentas de Microsoft Defender para endpoint a Microsoft 365 Defender
 
@@ -54,7 +54,7 @@ Esto incluye el redireccionamiento para el acceso directo al antiguo portal a tr
 Consulte la tabla siguiente para obtener más información sobre los vínculos y el enrutamiento.
 ## <a name="siem-api-routing"></a>Enrutamiento de API siem
 
-|**Property**  |**Destino cuando el redireccionamiento está DESACTIVADO**  |**Destino cuando el redireccionamiento está ON** | 
+|**Propiedad**  |**Destino cuando el redireccionamiento está DESACTIVADO**  |**Destino cuando el redireccionamiento está ON** | 
 |---------|---------|---------|
 | LinkToWDATP | Página de alerta en securitycenter.windows.com | Página de alerta en security.microsoft.com  |
 | IncidentLinkToWDATP | Página de incidentes en securitycenter.windows.com  | Página de incidentes en security.microsoft.com  |
@@ -63,7 +63,7 @@ Consulte la tabla siguiente para obtener más información sobre los vínculos y
 
 ## <a name="email-alert-notifications"></a>Notificaciones de alertas de correo electrónico
 
-|**Property**  |**Destino cuando el redireccionamiento está DESACTIVADO**  |**Destino cuando el redireccionamiento está ON** |
+|**Propiedad**  |**Destino cuando el redireccionamiento está DESACTIVADO**  |**Destino cuando el redireccionamiento está ON** |
 |---------|---------|---------|
 | Página alerta  | Página de alerta en securitycenter.windows.com  | Página de alerta en security.microsoft.com  |
 | Página Incidentes  |Página de incidentes en securitycenter.windows.com  | Página de incidentes en security.microsoft.com  

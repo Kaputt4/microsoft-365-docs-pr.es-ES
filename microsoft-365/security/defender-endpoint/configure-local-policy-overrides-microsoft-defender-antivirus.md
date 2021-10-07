@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -17,12 +17,12 @@ ms.date: 09/14/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 847b2085d6285299cea7f32f98c8c682dcb3fb4d
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: c206d998d1900ef39a0edbfd21c24b2e0cdc0514
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490158"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192948"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedir o permitir que los usuarios modifiquen localmente Antivirus de Microsoft Defender configuración de directiva
 
@@ -59,7 +59,7 @@ Para configurar estas opciones:
 
 <br/><br/>
 
-| Ubicación | Valor | Artículo |
+| Ubicación | Configuración | Artículo |
 |---|---|---|---|
 | MAPAS |Configurar la invalidación de configuración local para los informes en Microsoft MAPS|[Habilitar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | Cuarentena|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para exámenes](configure-remediation-microsoft-defender-antivirus.md) |

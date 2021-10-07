@@ -2,27 +2,25 @@
 title: Implementar Microsoft Defender para endpoint en características de iOS
 description: Describe cómo implementar Microsoft Defender para Endpoint en dispositivos iOS no inscritos.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, ios, configure, features, ios
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: sunasing
 author: sunasing
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7057de56de516843fa91e87a50d56e03a2d88e50
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 32063caceaf74a3924585aac0142958736dcc5c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941950"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192708"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>Implementar Microsoft Defender para endpoint en dispositivos iOS no inscritos
 

@@ -2,26 +2,24 @@
 title: Asegurarse de que los dispositivos estén configurados de manera adecuada
 description: Configure correctamente los dispositivos para aumentar la resistencia general frente a las amenazas y mejorar su capacidad para detectar y responder a los ataques.
 keywords: onboard, administración de Intune, Microsoft Defender para Endpoint, Microsoft Defender, Windows Defender, reducción de superficie de ataque, ASR, línea base de seguridad
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9d00ec13a08751882e7c699a4e029083dc08bc6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 06fa097275453e3ae7b64f0e0cb142fe7592c88b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221666"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191964"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Asegurarse de que los dispositivos estén configurados de manera adecuada
 
@@ -56,9 +54,9 @@ Al hacerlo, se beneficia de:
 
 ## <a name="enroll-devices-to-intune-management"></a>Inscribir dispositivos en la administración de Intune
 
-La administración de configuración de dispositivos funciona estrechamente con la administración de dispositivos de Intune para establecer el inventario de los dispositivos de la organización y la configuración de seguridad de línea base. Podrás realizar un seguimiento y administrar problemas de configuración en dispositivos Windows 10 Intune.
+La administración de configuración de dispositivos funciona estrechamente con la administración de dispositivos de Intune para establecer el inventario de los dispositivos de la organización y la configuración de seguridad de línea base. Podrás realizar un seguimiento y administrar problemas de configuración en dispositivos Windows Intune.
 
-Antes de garantizar que los dispositivos estén configurados correctamente, inscríbalos en la administración de Intune. La inscripción de Intune es sólida y tiene varias opciones de inscripción para Windows 10 dispositivos. Para obtener más información acerca de las opciones de inscripción de Intune, lea acerca de cómo configurar la inscripción [para Windows dispositivos](/intune/windows-enroll).
+Antes de garantizar que los dispositivos estén configurados correctamente, inscríbalos en la administración de Intune. La inscripción de Intune es sólida y tiene varias opciones de inscripción para Windows dispositivos. Para obtener más información acerca de las opciones de inscripción de Intune, lea acerca de cómo configurar la inscripción [para Windows dispositivos](/intune/windows-enroll).
 
 > [!NOTE]
 > Para inscribir Windows dispositivos en Intune, los administradores ya deben tener asignadas licencias. [Lea acerca de la asignación de licencias para la inscripción de dispositivos.](/intune/licenses-assign)

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - SMB_SuccessCenter
 - seo-marvel-mar
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las amenazas de seguridad que enfrenta su empresa y las formas fáciles en que usted y sus empleados pueden proteger sus datos, cuentas y dispositivos.
-ms.openlocfilehash: f5b31fe2056e95ae4477480ac16e80222beeb565
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 625fe763a8e1d2c6e0d4748fd96185d9bf654ee3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566909"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191234"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>Gráfico de información de seguridad para pequeñas empresas
 

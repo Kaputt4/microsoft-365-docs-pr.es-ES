@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtenga información sobre cómo conectarse a los datos del espacio empresarial Microsoft 365 Government Community Cloud (GCC) mediante la aplicación de plantilla Microsoft 365 análisis de uso en Power BI.
-ms.openlocfilehash: a57d536d7210e0ba927824d5403792a3e5090f98
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3930ffe82c998797aade84e92145adac5fa2ea98
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776709"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179810"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Conectar para Microsoft 365 Government Community Cloud datos (GCC) con Análisis de uso
 

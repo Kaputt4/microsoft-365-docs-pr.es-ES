@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Obtenga información sobre Listas Microsoft. Con Listas Microsoft, puede realizar un seguimiento de los detalles del cliente, como el tipo de cliente, el cumplimiento de pedidos y el progreso del pedido.
-ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d8d09549751efddf1c2d1576d5a7b3c75981562a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188774"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194734"
 ---
 # <a name="use-microsoft-lists-to-track-business-info"></a>Usar Listas Microsoft para realizar un seguimiento de la información empresarial
 

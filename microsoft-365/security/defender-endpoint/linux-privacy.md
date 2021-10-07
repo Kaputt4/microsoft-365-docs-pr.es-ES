@@ -2,26 +2,24 @@
 title: Privacidad de Microsoft Defender para endpoint en Linux
 description: Controles de privacidad, cómo configurar las opciones de directiva que afectan a la privacidad y la información sobre los datos de diagnóstico recopilados en Microsoft Defender para Endpoint en Linux.
 keywords: microsoft, defender, Microsoft Defender para endpoint, linux, privacidad, diagnóstico
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3d6ce59ec83e8271ff0c665386bd33942084d9ad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1c15e5ba5b48380e20ddfd6c291df5c5afafa251
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218380"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191760"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacidad de Microsoft Defender para endpoint en Linux
 
@@ -162,7 +160,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Campo|Description|
+|Campo|Descripción|
 |---|---|
 |version|Versión de Defender para Endpoint en Linux.|
 |instance_id|Identificador único generado en el inicio de extensión de kernel.|
@@ -218,7 +216,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Campo|Description|
+|Campo|Descripción|
 |---|---|
 |how_to_check|Determina cómo se comprueban las actualizaciones de productos (por ejemplo, automáticas o manuales).|
 |channel_name|Actualizar canal asociado al dispositivo.|
@@ -231,7 +229,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Campo|Description|
+|Campo|Descripción|
 |---|---|
 |sha256|Identificador SHA256 del registro de soporte técnico.|
 |size|Tamaño del registro de soporte técnico.|

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo comprar el Microsoft 365 Business Voice complemento.
-ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf563026eea82d5c0b4ad6af7855644bdac8ff60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221253"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179768"
 ---
 # <a name="buy-business-voice"></a>Comprar voz empresarial
 

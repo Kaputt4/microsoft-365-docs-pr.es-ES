@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 364dbb4f3cb077f1428e76251554090c06b0f0cf
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: f59c91e75dd573e9f32d05a9673dd3efb5c10af7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497589"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191707"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>Programar los exámenes de antivirus con la directiva de grupo
 
@@ -53,7 +53,7 @@ Para obtener más información, vea [administrar](manage-protection-update-sched
 
 ## <a name="group-policy-settings-for-scheduling-scans"></a>Configuración de directiva de grupo para la programación de exámenes
 
-| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
+| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 | Examinar | Especificar el tipo de examen que se usará para un examen programado | Examen rápido |
 | Examinar | Especificar el día de la semana para ejecutar un examen programado | Especifique el día (o nunca) para ejecutar un examen. | Nunca |
@@ -62,7 +62,7 @@ Para obtener más información, vea [administrar](manage-protection-update-sched
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>Configuración de directiva de grupo para la programación de exámenes cuando un extremo no está en uso
 
-| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
+| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 | Examinar | Iniciar el examen programado solo cuando el equipo está en uso pero no está en uso | Los exámenes programados no se ejecutarán, a menos que el equipo esté en uso pero no esté en uso | Habilitado |
 
@@ -71,21 +71,21 @@ Para obtener más información, vea [administrar](manage-protection-update-sched
 
 ## <a name="group-policy-settings-for-scheduling-remediation-required-scans"></a>Configuración de directiva de grupo para programar exámenes necesarios para la corrección
 
-| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
+| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
 |---|---|---|---|
 | Corrección | Especificar el día de la semana para ejecutar un examen completo programado para completar la corrección | Especifique el día (o nunca) para ejecutar un examen. | Nunca |
 | Corrección | Especificar la hora del día para ejecutar un examen completo programado para completar la corrección | Especifique el número de minutos después de la medianoche (por ejemplo, escriba **60** para la 1 a.m.) | 2 a. m. |
 
 ## <a name="group-policy-settings-for-scheduling-daily-scans"></a>Configuración de directiva de grupo para programar exámenes diarios
 
-| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada) |
+| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
 | Examinar | Especificar el intervalo para ejecutar exámenes rápidos por día | Especifique cuántas horas debe transcurrir antes del siguiente examen rápido. Por ejemplo, para ejecutarse cada dos horas, escriba **2**, para una vez al día, escriba **24**. Escriba **0** para nunca ejecutar un examen rápido diario. | Nunca |
 | Examinar | Especificar la hora de un examen rápido diario | Especifique el número de minutos después de la medianoche (por ejemplo, escriba **60** para la 1 a.m.) | 2 a. m. |
 
 ## <a name="group-policy-settings-for-scheduling-scans-after-protection-updates"></a>Configuración de directiva de grupo para programar exámenes después de actualizaciones de protección
 
-| Ubicación | Valor | Descripción | Configuración predeterminada (si no está configurada)|
+| Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada)|
 |:---|:---|:---|:---|
 | Actualizaciones de firmas | Activar el examen después de la actualización de inteligencia de seguridad | Un examen se realizará inmediatamente después de descargar una nueva actualización de protección | Habilitado |
 

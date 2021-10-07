@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: leonidzh
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 98b731329561b3a0bca599743934b164bc1b47a49558f43c11a4ab02a1869347
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 866ece7467d3889778a434231b4a40a9bcdf02c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884780"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191856"
 ---
 # <a name="get-kb-collection-api"></a>Obtener API de colección KB
 
@@ -40,7 +40,7 @@ ms.locfileid: "53884780"
 
 Recupera una colección de detalles de KB y KB.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 El usuario necesita permisos de lectura.
 

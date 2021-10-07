@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo cambiar la frecuencia con la que se factura su suscripción empresarial.
 ms.date: 04/02/2021
-ms.openlocfilehash: 52bf7f3eda473e241f5fef7c5d7c8e7417ab841e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: adc1d5478db07d148a7f83c4a0e6f5d9509447a0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219237"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194710"
 ---
 # <a name="change-your-billing-frequency"></a>Cambiar la frecuencia de facturación
 

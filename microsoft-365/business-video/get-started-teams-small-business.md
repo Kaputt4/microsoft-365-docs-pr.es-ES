@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar Microsoft Teams en su pequeña empresa.
-ms.openlocfilehash: 75e5c4aad1ef65e63ed7809cc667fce4b48934e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 011162269f42c722cf6f1e8ae63b4a6f2901ef3f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191894"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179708"
 ---
 # <a name="get-started-with-teams"></a>Introducción a Teams
 
@@ -59,7 +59,7 @@ A medida que el equipo trabaja juntos de forma remota, tendrás archivos en los 
 
 Asegúrese de que los documentos clave de su empresa se guardan en la nube y estén listos para compartirse de forma segura con clientes, clientes, socios, proveedores y otras personas de su empresa. Mantener los archivos en la nube también significa que obtiene las ventajas de la copia de seguridad y la capacidad de recuperarse de errores en el disco duro, ataques de ransomware y otras desgracias.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para profundizar en la funcionalidad de Microsoft Teams...
 

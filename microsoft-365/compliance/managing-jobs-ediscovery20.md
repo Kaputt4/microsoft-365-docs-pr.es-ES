@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Advanced eDiscovery trabajos le ayudarán a realizar un seguimiento del estado de los procesos de larga ejecución relacionados con la realización de Advanced eDiscovery tareas.
-ms.openlocfilehash: 27ac98d1f98e85800c8ca3dfc91cc5e0803ae2e8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5b2facdead3be1369cd261392117fc33fa1a4fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188054"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192204"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Administrar trabajos en Advanced eDiscovery
 
@@ -31,7 +31,7 @@ Esta es una lista de los trabajos (que normalmente son procesos  de larga ejecuc
 |Agregar datos a un conjunto de revisión | Un usuario agrega una colección a un conjunto de opiniones. Este trabajo consta de dos sub trabajos: </br>• **Exportar:** se genera una lista de elementos de la colección. </br>• **Indización** de & de ingesta: los elementos de la colección que coinciden con la consulta de búsqueda se copian en una ubicación de Azure Storage (en un proceso denominado *ingestión)* y, a continuación, los elementos de la ubicación de Azure Storage se indizan de nuevo. Este nuevo índice se usa al consultar y analizar elementos del conjunto de datos. </br></br>Para obtener más información, vea [Agregar resultados de búsqueda a un conjunto de revisión.](add-data-to-review-set.md) |
 |Agregar datos a otro conjunto de revisión | Un usuario agrega documentos de un conjunto de revisión a un conjunto de revisión diferente en el mismo caso. Para obtener más información, vea [Agregar datos a un conjunto de revisión de otro conjunto de revisión](add-data-to-review-set-from-another-review-set.md).|
 |Agregar datos no Microsoft 365 a un conjunto de revisión | Un usuario carga datos que no Microsoft 365 a un conjunto de opiniones. Los datos también se indizan durante este proceso. Por ejemplo, los archivos de un servidor de archivos local o un equipo cliente se cargan en un conjunto de revisión. Para obtener más información, vea [Load non-Microsoft 365 data into a review set](load-non-office-365-data-into-a-review-set.md).| 
-|Agregar datos corregidos a un conjunto de revisión | Los datos con errores de procesamiento se corrigen y se cargan de nuevo en un conjunto de revisión. Para más información, vea:</br>• [Corrección de errores al procesar datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [Corrección de errores de elemento único](single-item-error-remediation.md)| 
+|Agregar datos corregidos a un conjunto de revisión | Los datos con errores de procesamiento se corrigen y se cargan de nuevo en un conjunto de revisión. Para más información vea:</br>• [Corrección de errores al procesar datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [Corrección de errores de elemento único](single-item-error-remediation.md)| 
 |Comparación de conjuntos de carga | Un usuario examina las diferencias entre distintos conjuntos de carga de un conjunto de revisión. Un conjunto de carga es una instancia de agregar datos a un conjunto de revisión. Por ejemplo, si agrega los resultados de dos búsquedas diferentes al mismo conjunto de revisión, cada una representaría un conjunto de carga. |
 |Reconstrucción de conversación|Cuando un usuario agrega los resultados de una búsqueda a un conjunto de revisión de conversación, las conversaciones de mensajes instantáneos (también denominadas conversaciones enhebradas) en servicios como Microsoft Teams se reconstruyen en un archivo PDF. Este trabajo también se desencadena cuando un usuario hace clic en **Acción > Crear archivos PDF** de conversación en un conjunto de opiniones. Para obtener más información, vea [Revisar conversaciones en Advanced eDiscovery](conversation-review-sets.md).
 |Convertir documentos redactados en PDF|Después de que un usuario anota un documento en un conjunto de revisión y redacta una parte de él, puede elegir convertir el documento redactado en un archivo PDF. Esto garantiza que la parte redactada no será visible si el documento se exporta para la presentación. Para obtener más información, vea [Ver documentos en un conjunto de revisión.](annotating-and-redacting-documents.md) |

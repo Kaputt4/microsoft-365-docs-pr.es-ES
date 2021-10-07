@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo estas recomendaciones de seguridad Microsoft 365 Empresa Premium afectan a los usuarios y protege los datos.
-ms.openlocfilehash: 8f8ccbbb1f9edb6eb9b1f29078317727b5e9b6e7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e6fc47e0476c063cb7d24bd84a255e279bf84ed3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186465"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194746"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Cómo afectan estas recomendaciones de seguridad a los usuarios
 
@@ -72,7 +72,7 @@ Para [dispositivos Windows 10 y Mac](m365-campaigns-protect-pcs-macs.md)no admin
 
 |**Windows 10**|**Mac**|
 |:-----|:------|
-|Activar la protección del dispositivo BitLocker<p><p> Asegúrese Windows Defender permanece en <p>Activar el firewall Windows de seguridad| Usar FileVault para cifrar el disco Mac <p><p>Usar un software antivirus confiable <p>Activar la protección de firewall|
+|Activar la protección del dispositivo BitLocker<p><p> Asegúrese Windows Defender permanece en <p>Activar el Firewall de Windows| Usar FileVault para cifrar el disco Mac <p><p>Usar un software antivirus confiable <p>Activar la protección de firewall|
 
 Para obtener más información sobre estas recomendaciones, consulta Proteger tu cuenta y [dispositivos de los piratas informáticos y malware.](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)
 

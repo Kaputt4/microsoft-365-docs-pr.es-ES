@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aprende a migrar archivos de Google a Microsoft 365 para empresas mediante Mover.
-ms.openlocfilehash: 6791655f5ee8a9fc867266d5fe153cde6ec9adaa6148191c4c0eb3aedbfe0141
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4bec723d024468f76bdfcc60934eb42c445fe0f5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843496"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194818"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>Migrar archivos de Google a Microsoft 365 para empresas 
 
@@ -37,7 +37,7 @@ Cuando pases a Microsoft 365 para empresas, querrás migrar los archivos desde G
 > [!NOTE]
 > Mover realizará una copia de los archivos y moverá las copias a Microsoft 365 para empresas. Los archivos originales también permanecerán en Google Drives.
 
-## <a name="before-you-start"></a>Antes de empezar
+## <a name="before-you-start"></a>Antes de comenzar
 
 Todos los usuarios deben haber iniciado sesión en Microsoft 365 para empresas y configurar sus OneDrive para la Empresa. Para ello, vaya a [office.com](https://office.com), inicie sesión con su Microsoft 365 para empresas y, a continuación, elija OneDrive.
 

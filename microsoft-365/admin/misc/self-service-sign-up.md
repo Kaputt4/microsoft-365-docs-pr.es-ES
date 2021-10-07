@@ -9,7 +9,7 @@ ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre el Microsoft 365 de autoservicio y los programas de autoservicio disponibles, como Microsoft Power Apps, Microsoft Power Automate y Dynamics 365 for Finance.
 ms.date: 03/17/2021
-ms.openlocfilehash: 7c4986beb1c920865cee28f2729859e426944f3f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 87f432be0659d03a1e8f77b682997dc32d1dc111
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186953"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192696"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso del registro de autoservicio en la organización
 
@@ -46,8 +46,8 @@ A continuación se encuentran los programas de autoservicio disponibles actualme
 
 | Programa <br/> | Descripción <br/> | Información adicional <br/> | Sitio web para el registro de autoservicio <br/> |
 |:-----|:-----|:-----|:-----|
-|Office 365 A1**** <br/> |Cualquier alumno o profesor puede usar una dirección de correo electrónico educativa para registrarse para obtener Office 365 gratuito y obtener aplicaciones de Office para la web, 1 TB de almacenamiento en la nube de OneDrive y SharePoint Online para sitios de clase, equipo y proyecto.  <br/> |[Office 365 Educación Preguntas más frecuentes técnicas](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Educacional](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Office 365 A1 Plus** <br/> |Los alumnos y profesores elegibles pueden registrarse en Office 365 A1 Plus, que incluye todo lo mencionado anteriormente más Aplicaciones Microsoft 365 para empresas. Aplicaciones Microsoft 365 para empresas es un software de productividad, como Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access y Skype Empresarial, que se instala en el equipo de escritorio o portátil.  <br/> |[Office 365 Educación Preguntas más frecuentes técnicas](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Educacional](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
+|Office 365 A1**** <br/> |Cualquier alumno o profesor puede usar una dirección de correo electrónico educativa para registrarse para obtener Office 365 gratuito y obtener aplicaciones de Office para la web, 1 TB de almacenamiento en la nube de OneDrive y SharePoint Online para sitios de clase, equipo y proyecto.  <br/> |[Office 365 Educación Preguntas más frecuentes técnicas](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Educación](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
+|**Office 365 A1 Plus** <br/> |Los alumnos y profesores elegibles pueden registrarse en Office 365 A1 Plus, que incluye todo lo mencionado anteriormente más Aplicaciones Microsoft 365 para empresas. Aplicaciones Microsoft 365 para empresas software de productividad, incluidos Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access y Skype Empresarial, que se instala en el equipo de escritorio o portátil.  <br/> |[Office 365 Educación Preguntas más frecuentes técnicas](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Educación](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI permite a los usuarios visualizar datos, compartir descubrimientos y colaborar de maneras nuevas intuitivas. <br/> Si su organización ya está suscrita, puede ver licencias para "Power BI Pro prueba de usuario individual", que ofrecen a los usuarios acceso limitado y gratuito a las capacidades avanzadas.  <br/> |[Power BI en la organización](./power-bi-in-your-organization.md) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**Servicios de administración de derechos (RMS)** <br/> |RMS para personas es una suscripción de autoservicio gratuita para usuarios de una organización que han sido enviados archivos confidenciales que han sido protegidos por Azure Rights Management (Azure RMS), pero su departamento de TI no ha implementado Azure Rights Management (Azure RMS) ni Active Directory Rights Management Services (AD RMS).  <br/> |[RMS para personas y Azure Rights Management](/azure/information-protection/rms-for-individuals) <br/> |[Portal de Microsoft Rights Management](https://portal.azure.com/) para que pueda comprobar si puede abrir un documento protegido por derechos determinado.  <br/> |
 |**Microsoft Power Apps** <br/> |En Power Apps, puedes administrar los datos de la organización ejecutando una aplicación que creaste o que otra persona creó y compartió contigo. Las aplicaciones se ejecutan en dispositivos móviles, como teléfonos, o puede ejecutarlas en un explorador abriendo Dynamics 365. Puedes crear una variedad infinita de aplicaciones, todas sin aprender un lenguaje de programación como C#.  <br/> |[Registrarse de autoservicio para Power Apps](/powerapps/maker/signup-for-powerapps) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |

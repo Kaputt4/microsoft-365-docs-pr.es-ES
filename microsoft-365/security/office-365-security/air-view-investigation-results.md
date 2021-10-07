@@ -8,7 +8,7 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: Durante y después de una investigación automatizada en Microsoft 
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef91a3b218c2dda671bf7d07bf2615001bd20ebc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 80c58c0e4c084199537dcfbb9097541a0cba71a0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192397"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191424"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
 
@@ -99,6 +99,6 @@ Ciertos tipos de alertas desencadenan una investigación automatizada en Microso
 
 - La aprobación o el rechazo de todas las acciones permite que la investigación se cierre completamente (el estado se corrige), mientras que algunas acciones dejan resultados incompletos en el estado de la investigación cambiando a un estado parcialmente corregido.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisar y aprobar acciones pendientes](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
