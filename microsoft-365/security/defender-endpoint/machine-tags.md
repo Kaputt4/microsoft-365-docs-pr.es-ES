@@ -2,26 +2,24 @@
 title: Crear y administrar etiquetas de dispositivos
 description: Usar etiquetas de dispositivo para agrupar dispositivos para capturar contexto y habilitar la creación de listas dinámicas como parte de un incidente
 keywords: etiquetas, etiquetas de dispositivo, grupos de dispositivos, grupos, corrección, nivel, reglas, grupo de aad, rol, asignación, clasificación
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e23980133d2fb0c69ca79f6dfdde7656e1961097
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 38b5d3f2ddcab56fc712c771019982d05a18e20e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166998"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199758"
 ---
 # <a name="create-and-manage-device-tags"></a>Crear y administrar etiquetas de dispositivos
 
@@ -80,10 +78,11 @@ También puede eliminar etiquetas de esta vista.
 > [!NOTE]
 > Solo se aplica a los siguientes dispositivos:
 >
+> - Windows 11
 > - Windows 10, versión 1709 o posterior
 > - Windows Servidor, versión 1803 o posterior
 > - Windows Server 2016
-> - Windows Server 2012 R2
+> - Windows Server 2012 R2
 > - Windows Server 2008 R2 SP1
 > - Windows 8.1
 > - Windows 7 SP1
