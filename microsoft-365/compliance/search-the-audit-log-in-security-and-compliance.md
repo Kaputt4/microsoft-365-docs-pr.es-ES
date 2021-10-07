@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 08f3089433769960d7765ce5dfd096a971de0640
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: b50e320752f64360132410c50f454fbfbfd27a82
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483764"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195622"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -43,14 +43,14 @@ ms.locfileid: "59483764"
 | Cumplimiento de comunicaciones|ComplianceSuperVisionExchange|
 | Explorador de contenido|LabelContentExplorer|
 | Prevención de pérdida de datos (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange|
-| Defender para punto de conexión|DLPEndpoint|
+| Defender para punto de conexión|DLPEndpoint, MSDEResponseActions, MSDEGeneralSettings, MSDEIndicatorsSettings, MSDERolesSettings|
 | Dynamics 365|CRM|
 | eDiscovery|Detección, AeD|
 | Coincidencia exacta de datos|MipExactDataMatch|
 | Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
 | Formularios|MicrosoftForms|
 | Barreras de información|InformationBarrierPolicyApplication|
-| Microsoft 365 Defender|MDATPAudit, AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation|
+| Microsoft 365 Defender|AirActionigation, AirManualContextigation, AirAdminActionActionActionIgation, MS365DCustomDetection|
 | Microsoft Teams|MicrosoftTeams|
 | MyAnalytics|MyAnalyticsSettings|
 | OneDrive para la Empresa|OneDrive|
@@ -1051,7 +1051,7 @@ En la tabla siguiente se enumeran las actividades en las barreras de informació
 
 ### <a name="disposition-review-activities"></a>Actividades de revisión para eliminación
 
-En la tabla siguiente se enumeran las actividades que realizó un revisor para eliminación cuando un elemento alcanzó el final de su período de retención configurado. Para más información, vea [Visualización y eliminación de contenido](disposition.md#viewing-and-disposing-of-content).
+En la tabla siguiente se enumeran las actividades que realizó un revisor para eliminación cuando un elemento alcanzó el final de su período de retención configurado. Para obtener más información, vea [Vista y eliminación de contenido](disposition.md#viewing-and-disposing-of-content).
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|

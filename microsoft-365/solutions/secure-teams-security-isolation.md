@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: 2a6285b63c67572ec363303e1d850c08d9c8e0c5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 83672c1d723103c3b6b72db7b9c67374a2223593
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192177"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206402"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -86,7 +86,7 @@ Para crear un equipo para información confidencial
 3. Elija **Crear un equipo desde cero**.
 4. En la lista **Confidencialidad**, conserve el valor predeterminado.
 5. En **Privacidad**, haga clic en **Privado**.
-6. Escriba un nombre para el equipo que esté relacionado con su proyecto confidencial. Por ejemplo, **Proyecto Saturno**.
+6. Escriba un nombre para el equipo relacionado con el proyecto confidencial. Por ejemplo, **Proyecto Saturno**.
 7. Haga clic en **Crear**.
 8. Agregue usuarios al equipo y, después, haga clic en **Cerrar**.
 

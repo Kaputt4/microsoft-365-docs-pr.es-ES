@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: f3faab08138197535f9305fddef2a9db3d0b6bb9
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3154388eaf1c677cec00782642de6f83819d0665
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772763"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195598"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Introducción a las directivas de retención y las etiquetas de retención
 
@@ -39,7 +39,7 @@ ms.locfileid: "59772763"
 
 3. **Cree directivas de retención y etiquetas de retención**, en función de la configuración de retención y de las acciones que haya identificado.
     
-    Para las etiquetas de retención, puede que le resulte útil usar el [plan de archivos](file-plan-manager.md) para definir y delimitar las etiquetas de retención en una hoja de cálculo. A continuación, importe la hoja de cálculo para crear las etiquetas.
+    En el caso de las etiquetas de retención, es posible que le resulte útil usar [ plan de archivos](file-plan-manager.md) para definir y refinar las etiquetas de retención en una hoja de cálculo. Después, importe esa hoja de cálculo para crear las etiquetas.
     
 3. **Publique y aplique las etiquetas de retención**. Las directivas de retención se diseñan para poder despreocuparse de la configuración una vez definida, mientras que las etiquetas de retención son bloques de creación reutilizables que se pueden emplear en diferentes directivas y se pueden incorporar a los flujos de trabajo del usuario. Consulte la lista de [escenarios comunes](#common-scenarios-for-retention-policies-and-retention-labels) para ayudarle a entender cómo se pueden usar las etiquetas de retención. 
 
@@ -51,9 +51,9 @@ Para ver las opciones para que los usuarios puedan beneficiarse de las caracter�
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>Permisos necesarios para crear y administrar directivas de retención y etiquetas de retención
 
-Los miembros de su equipo de cumplimiento que crearán y administrarán las directivas de retención y las etiquetas de retención necesitan permisos para el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador del espacio empresarial (administrador global) tiene acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otros usuarios el acceso sin concederles todos los permisos de un administrador de espacio empresarial. Para conceder permisos para esta administración limitada, le recomendamos que agregue usuarios al grupo de roles **Administrador de cumplimiento normativo**.
+Los miembros del equipo de cumplimiento que crearán y administrarán directivas de retención y etiquetas de retención necesitan permisos para el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador de inquilinos (administrador global) tiene acceso a esta ubicación y puede conceder acceso a los responsables de cumplimiento y a otras personas sin concederles todos los permisos de un administrador de inquilinos. Para conceder permisos para esta administración limitada, se recomienda agregar usuarios al grupo de roles de **Administrador de compatibilidad**.
 
-De manera alternativa al uso de estos roles predeterminados, puede crear un nuevo grupo de roles y agregar el rol de **Administración de retención** a este grupo. Para el rol de solo vista, use **Administración de retención de solo vista**. 
+Como alternativa al uso de este rol predeterminado, puede crear un nuevo grupo de roles y agregar el rol **Administración de Retención** a este grupo. Para un rol de solo lectura, use **Administración de retención de solo vista**. 
 
 Para obtener instrucciones sobre cómo agregar usuarios a los roles predeterminados o crear sus propios grupos de roles, consulte [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md).
 
@@ -77,7 +77,7 @@ Use la siguiente tabla para ayudarle a asignar los requisitos de su organizació
 | Supervise cómo y cuándo se aplican las opciones de conservar y eliminar la configuración de los elementos | [Supervisar las etiquetas de retención](retention.md#monitoring-retention-labels) |
 |Utilice una única solución de administración de registros para documentos y mensajes de correo electrónico |[Más información sobre la administración de registros](records-management.md) |
 
-Si usa etiquetas de retención para la administración de registros, hay escenarios adicionales que son únicos para las etiquetas de retención que marcan el contenido como un registro. Consulte [Escenarios comunes para la administración de registros](get-started-with-records-management.md#common-scenarios-for-records-management).
+Si usa etiquetas de retención para la administración de registros, existen escenarios adicionales que son exclusivos de las etiquetas de retención que marcan el contenido como un registro. Consulte [Escenarios comunes para la gestión de registros](get-started-with-records-management.md#common-scenarios-for-records-management).
 
 ## <a name="end-user-documentation-for-retention"></a>Documentación de usuario final para la retención
 

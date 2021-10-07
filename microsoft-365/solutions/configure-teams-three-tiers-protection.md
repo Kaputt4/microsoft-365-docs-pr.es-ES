@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Obtenga información acerca de cómo configurar Teams para mejorar la seguridad del uso compartido de sus archivos al usar tres niveles de protección y equilibrar la seguridad con la simplicidad en la colaboración.
-ms.openlocfilehash: 5cd06f540ba96f55aa52a1cc9b5e6e7c54c7bbab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 279e338af6db4d82291209deb66e1ea1eef74630
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217880"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202338"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
@@ -122,7 +122,7 @@ La configuración de dispositivos no administrados en etiquetas de confidenciali
 
 ![Recorte de pantalla de la aplicación en la nube de Office 365 en una directiva de acceso condicional de Azure Active Directory.](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
-Usar una directiva que afecte a todos los servicios de Microsoft 365 puede resultar en una seguridad y una experiencia mejoradas para los usuarios. Por ejemplo, cuando bloquea el acceso a dispositivos no administrados en SharePoint solo, los usuarios pueden acceder al chat de un equipo con un dispositivo no administrado, pero perderán el acceso cuando intenten acceder a la pestaña **Archivos**. Usar la aplicación en la nube de Office 365 le ayuda a evitar problemas con [dependencias del servicio](/azure/active-directory/conditional-access/service-dependencies).
+El uso de una directiva que afecta a todos los servicios de Microsoft 365 puede dar lugar a una mejor seguridad y una mejor experiencia para los usuarios. Por ejemplo, cuando bloquea el acceso a dispositivos no administrados solo en SharePoint, los usuarios pueden acceder al chat en un equipo con un dispositivo no administrado, pero perderán el acceso cuando intenten acceder a la pestaña **Archivos**. El uso de la aplicación en la nube de Office 365 ayuda a evitar problemas con las [dependencias de servicio](/azure/active-directory/conditional-access/service-dependencies).
 
 ## <a name="next-step"></a>Paso siguiente
 

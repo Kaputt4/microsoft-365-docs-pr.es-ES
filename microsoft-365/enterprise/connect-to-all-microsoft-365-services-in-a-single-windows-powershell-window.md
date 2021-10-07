@@ -7,7 +7,7 @@ ms.date: 02/02/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,16 +18,16 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumen: Conectarse a todos los servicios de Microsoft 365 en una sola ventana de Windows PowerShell.'
-ms.openlocfilehash: 82d623c0074a7cdb3b61d0e6380b779d55354809
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7684debae5ba0cc6679acf7a0cb6f590cca11c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218750"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201714"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Conectarse a todos los servicios de Microsoft 365 en una sola ventana de Windows PowerShell
 
-Cuando usa PowerShell para administrar Microsoft 365, puede tener varias sesiones de PowerShell abiertas al mismo tiempo. Es posible que tenga distintas ventanas de PowerShell para administrar cuentas de usuario, SharePoint Online, Exchange Online, Skype empresarial online, Microsoft Teams y el centro de cumplimiento de &amp; seguridad.
+Cuando usa PowerShell para administrar Microsoft 365, es posible tener varias sesiones de Windows PowerShell abiertas al mismo tiempo en diferentes ventanas de Windows PowerShell, que corresponden al manejo de cuentas de usuario, SharePoint Online, Exchange Online, Skype Empresarial Online, Microsoft Teams y el Centro de Cumplimiento &amp; de seguridad.
   
 Este escenario no es óptimo para la administración de Microsoft 365, porque no se pueden intercambiar datos entre esas ventanas para la administración entre servicios. Este artículo describe cómo usar una única instancia de PowerShell desde la que puede administrar cuentas de Microsoft 365, Skype empresarial online, Exchange Online, SharePoint Online, Microsoft Teams y el Centro de seguridad &amp; cumplimiento.
 
@@ -99,7 +99,7 @@ Siga estos pasos para conectarse a todos los servicios en una única ventana de 
    ```
 
    > [!Note]
-   > PowerShell Core no es compatible con Microsoft Azure Active Directory para el módulo de Windows PowerShell ni los cmdlet que llevan *Msol* en su nombre. Debe ejecutar estos cmdlets desde PowerShell.
+   > PowerShell Core no admite el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlets con *Msol* en su nombre. Ejecute estos cmdlets desde Windows PowerShell.
 
 4. Ejecute estos comandos para conectarse a SharePoint Online. Especifique el nombre de la organización para su dominio. Por ejemplo, para "litwareinc\.onmicrosoft.com", el valor del nombre de la organización es "litwareinc".
     

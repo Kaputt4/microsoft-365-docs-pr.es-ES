@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Obtener información sobre el número máximo de directivas y elementos por directiva para directivas de retención y directivas de etiquetas de retención
-ms.openlocfilehash: 322a0c711ed1838dfd5349d43b1c3bcbf656618e
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 881aa208036bab4fe476bb424e42ff16dbb5344f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399867"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195574"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 
@@ -81,7 +81,7 @@ Ejemplo de Exchange:
 
 - **Solución**: cree una directiva de retención para el correo electrónico de Exchange con un período de retención de 7 años y excluya el subconjunto de usuarios. Luego, cree una segunda directiva de retención para el correo electrónico de Exchange con un período de retención de 5 años e incluya el subconjunto de usuarios. 
     
-    En ambos casos, el número de inclusiones y exclusiones se encuentra por debajo del número máximo de buzones especificados para una sola directiva, y el subconjunto de usuarios tiene que excluirse explícitamente de la primera directiva, ya que tiene un período de retención [más largo](retention.md#the-principles-of-retention-or-what-takes-precedence) que la segunda directiva. Si el subconjunto de usuarios necesita una directiva de retención más larga, no tendrá que excluirlos de la primera directiva.
+    En ambos casos, el número incluido y excluido está por debajo del número máximo de buzones especificados para una sola directiva y el subconjunto de usuarios debe excluirse explícitamente de la primera directiva porque tiene un [ período de retención más largo](retention.md#the-principles-of-retention-or-what-takes-precedence) que la segunda directiva. Si el subconjunto de usuarios necesita una directiva de retención más larga, no tendrá que excluirlos de la primera directiva.
      
     Con esta solución, si alguien nuevo se une a la organización, su buzón se incluirá automáticamente en la primera directiva durante 7 años y no hay ningún impacto en el número máximo de admitidos. Pero los nuevos usuarios que requieran el período de retención de 5 años se agregarán a los números de inclusiones y exclusiones, cuyo límite es 1000.
 

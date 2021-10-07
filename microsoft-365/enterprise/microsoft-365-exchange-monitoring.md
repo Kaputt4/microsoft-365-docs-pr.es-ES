@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Usar supervisión de Exchange Online para obtener información sobre avisos o incidentes de correo electrónico en Microsoft 365.
-ms.openlocfilehash: 2c97e161c46998f9a78e14b1efc2eb0e701e5b01
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: e6b6749b88644b65768a04696a6e6363661ceec8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988252"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197334"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Supervisión de Exchange Online para Microsoft 365
 
@@ -37,7 +37,7 @@ Este es un ejemplo de la página **Estado del servicio** del Centro de administr
 
 **Los problemas de la organización** se identificarán y usarán mediante la supervisión de nivel organizativo y la supervisión de cuentas prioritarias.
 
-El valor de la columna **Estado** en **Problemas de la organización** indica si la infraestructura de la organización o el software de terceros afectan a la experiencia del estado del servicio de los usuarios de la organización o de las cuentas prioritarias en Exchange Online. Los avisos o incidencias requieren *sus* acciones para resolverse.
+El valor de la columna **Estado** en **Problemas de la organización** indica si la infraestructura de la organización o el software de terceros afectan a la experiencia del estado del servicio de los usuarios de la organización o de las cuentas prioritarias en Exchange Online. Las advertencias o incidentes requieren que *sus* acciones se resuelvan
 
 El valor de la columna **Estado** en **Estado del servicio Microsoft** indica que el servicio está en buen estado o tiene avisos o incidentes basados en los servicios en la nube que mantiene Microsoft.
 
@@ -76,7 +76,7 @@ Con la supervisión de Exchange Online se admiten los siguientes escenarios:
    >[!Note]
    > El recuento de usuarios activos se mide por una única actividad, por ejemplo, cuando un usuario lee un correo electrónico. Solo se tienen en cuenta los últimos 30 minutos de actividad.
 
-- **Conectividad de aplicaciones**: la conectividad estimada se basa en el porcentaje de conexiones sintéticas correctas entre los dispositivos de la organización y Exchange Online, y puede incluir problemas fuera del control de Microsoft. Para obtener más información, consulte [Microsoft 365 Connectivity Optics](microsoft-365-connectivity-optics.md).
+- **Conectividad de la aplicación**: la conectividad estimada se basa en el porcentaje de conexiones sintéticas exitosas entre los dispositivos de su organización y Exchange Online, y puede incluir problemas fuera del control de Microsoft. Para obtener más información, consulte [Óptica de conectividad de Microsoft 365](microsoft-365-connectivity-optics.md).
 
 - **Autenticación básica y autenticación moderna**: número de usuarios validados correctamente en el servicio de Exchange Online.
 

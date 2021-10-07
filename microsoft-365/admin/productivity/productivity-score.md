@@ -8,11 +8,12 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo la Puntuación de productividad de Microsoft refleja los resultados en cuanto a las experiencias de los usuarios y la tecnología. Estos resultados se comparan con los de otras organizaciones de tamaño similar.
-ms.openlocfilehash: 0c0d260ebea02d57e099c84acdbc8960d58f3638
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: a8d5ae03b624fd451e86d7b993479359fce2603c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774176"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197838"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -70,7 +71,7 @@ La puntuación de productividad solo está disponible en el Centro de administra
 
 El modelo de control de acceso basado en roles para la Puntuación de productividad ayuda a las organizaciones a impulsar esfuerzos de transformación digital con Microsoft 365, ya que les ofrece flexibilidad para asignar roles a profesionales de TI dentro de una organización.
 
-Microsoft se compromete a proteger la privacidad individual. Este [documento de privacidad](privacy.md)  explica los controles que le proporcionamos, como administrador de TI de su organización, con el fin de asegurar que la información se pueda procesar sin comprometer la confianza que ha depositado en Microsoft.
+Microsoft se compromete a proteger la privacidad individual. Este [documento de privacidad](privacy.md) explica los controles que le proporcionamos, como administrador de TI de su organización, para garantizar que la información sea procesable sin comprometer la confianza que deposita en Microsoft.
 
 Puede acceder a la experiencia desde la página principal de Administración de Microsoft 365, en **Informes** > **Puntuación de productividad**.
   
