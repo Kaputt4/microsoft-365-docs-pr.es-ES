@@ -2,15 +2,13 @@
 title: Control de dispositivos para macOS
 description: Obtén información sobre cómo configurar Microsoft Defender para Endpoint en Mac para reducir las amenazas del almacenamiento extraíble, como dispositivos USB.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, device, control, usb, removable, media
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 612c9a717ae10c97c91a183418e36fa87e2f7ba8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1be1598f1ff960a90e65de13ead5d1fd79b63173
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215017"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150115"
 ---
 # <a name="device-control-for-macos"></a>Control de dispositivos para macOS
 
@@ -57,7 +55,7 @@ Dentro del perfil de configuración, la directiva de control de dispositivos se 
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|deviceControl|
@@ -82,7 +80,7 @@ Cuando los usuarios finales hacen clic en esta notificación, se abre una págin
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|navigationTarget|
@@ -101,7 +99,7 @@ La sección de medios extraíbles de la directiva de control de dispositivos se 
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|removableMediaPolicy|
@@ -142,7 +140,7 @@ En la sección medios extraíbles, hay una opción para establecer el nivel de c
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|enforcementLevel|
@@ -171,7 +169,7 @@ Esta configuración se puede establecer en:
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|permiso|
@@ -191,7 +189,7 @@ El `vendors` diccionario contiene una o más entradas, con cada entrada identifi
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|proveedores|
@@ -204,7 +202,7 @@ Para cada proveedor, puede especificar el nivel de permisos deseado para los dis
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|permiso|
@@ -218,7 +216,7 @@ Además, puede especificar opcionalmente el conjunto de productos que pertenecen
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|productos|
@@ -231,7 +229,7 @@ Para cada producto, puede especificar el nivel de permisos deseado para ese prod
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|permiso|
@@ -247,7 +245,7 @@ El `serialNumbers` diccionario contiene una o más entradas, con cada entrada id
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|serialNumbers|
@@ -260,7 +258,7 @@ Para cada número de serie, puede especificar el nivel de permisos deseado.
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|permiso|

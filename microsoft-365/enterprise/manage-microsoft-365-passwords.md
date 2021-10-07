@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Obtenga información sobre cómo administrar las contraseñas Microsoft 365 cuenta de usuario.
-ms.openlocfilehash: 85d3c42a7aca977472e44fce63af3968fc8e9705
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6a0d4298f3d6c46ab067795bccf01123605ce1aa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221013"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150743"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>Administrar Microsoft 365 contraseñas de cuenta de usuario
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede administrar las contraseñas Microsoft 365 cuenta de usuario de varias maneras diferentes, según la configuración de la identidad. Puede administrar cuentas de usuario en [el Centro de administración de Microsoft 365](../admin/add-users/index.yml), en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de Azure Active Directory (Azure AD).
+Puede administrar las contraseñas Microsoft 365 cuenta de usuario de varias maneras diferentes, según la configuración de la identidad. Puede administrar cuentas de usuario en [el Centro de administración de Microsoft 365](/admin), en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de Azure Active Directory (Azure AD).
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planear dónde y cómo administrará las contraseñas de la cuenta de usuario
 
@@ -43,7 +43,7 @@ Dónde y cómo puede administrar sus cuentas de usuario depende del modelo de id
 
 Las contraseñas de cuentas de usuario se administran en:
 
-- [Centro de administración de Microsoft 365](../admin/add-users/index.yml)
+- [Centro de administración de Microsoft 365](/admin)
 - Centro de administración de Azure AD
     
 ### <a name="hybrid"></a>Híbrido

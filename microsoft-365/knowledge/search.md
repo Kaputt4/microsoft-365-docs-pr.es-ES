@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: ''
-localization_priority: medium
+ms.localizationpriority: medium
 description: Obtenga información sobre cómo buscar temas en Temas Microsoft Viva.
-ms.openlocfilehash: 2ccdffef034cbdc42d50d3fa29822e084c73a10d
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 8671729e05ff28b5f50b415c60d852e4064831cc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126787"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152531"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Use Búsqueda de Microsoft para buscar temas en Temas Microsoft Viva
 
@@ -59,6 +59,6 @@ Para los usuarios que buscan información sobre cómo reservar un viaje de traba
 
 En la experiencia de búsqueda del usuario, cuando un usuario busca un término como "viajes", aparecerá un marcador en lugar de un tema, si hay un marcador disponible.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Introducción a Temas de Viva](topic-experiences-overview.md)

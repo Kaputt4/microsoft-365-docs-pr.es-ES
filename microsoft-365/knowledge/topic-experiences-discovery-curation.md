@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority: medium
 description: Información general sobre cómo se detectan los temas en Temas de Viva.
-ms.openlocfilehash: 378bdae4ad4b8104d28da7f884f42580d29eabcc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef9bb8db55182475641020fddabf5654acfb9d0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218477"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150515"
 ---
 # <a name="topic-discovery-and-curation-in-microsoft-viva-topics"></a>Detección de temas y curación en Temas Microsoft Viva 
 

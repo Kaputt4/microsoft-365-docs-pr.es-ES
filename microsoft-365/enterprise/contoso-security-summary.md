@@ -9,18 +9,18 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso usa las características de seguridad de Microsoft 365 para empresas.
-ms.openlocfilehash: 581314b34ab8f60533f1e2de99d4d1097086d1a0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f4d35ef3c5b862b42bf0a995f25b29c26eedd408
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218647"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152747"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Resumen de Microsoft 365 seguridad empresarial para Contoso Corporation
 
@@ -52,7 +52,7 @@ Contoso siguió estos pasos para preparar su seguridad para su implementación d
 
 Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para los requisitos de implementación empresarial, los administradores de seguridad de Contoso y su departamento de TI implementaron muchas características y funcionalidades de seguridad, como se describe en las secciones siguientes.
 
-## <a name="identity-and-access-management"></a>Administración de acceso e identidad   
+## <a name="identity-and-access-management"></a>Administración de identidad y acceso 
 
 - Cuentas de administrador global dedicadas con MFA y PIM
 

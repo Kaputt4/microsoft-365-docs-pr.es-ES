@@ -6,18 +6,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender cómo el aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender afecta a los empleados y puede obtener información sobre los resultados de simulación y aprendizaje.
 ms.technology: mdo
-ms.openlocfilehash: 725b5c0310d4412f0901526a8111c686f69898a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9376ef78ef6349bbd595ec0c48fccd394e0cd869
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165556"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154358"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Obtenga información a través de la formación de simulación de ataques
 

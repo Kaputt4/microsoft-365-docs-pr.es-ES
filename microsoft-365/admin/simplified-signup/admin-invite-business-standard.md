@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Invitar a los usuarios a unirse Microsoft 365 Empresa Estándar organización
-ms.openlocfilehash: e3fa00edd87f98dd67159e4fa6f7c9c3ba916876
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f4170cee2e389665d59bd516b100143e62674281
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776625"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151799"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>Invitar a los usuarios a Microsoft 365 Empresa Estándar (administrador)
 
@@ -43,7 +44,7 @@ Asegúrese de que ya se ha registrado [en Microsoft 365 Empresa Estándar](signu
 
 2. Agregue los nombres de usuario y las direcciones de correo electrónico para las personas que desea invitar y elija **Enviar**. Se enviará un correo electrónico de invitación a todos los usuarios que haya seleccionado para agregar la información de su cuenta de usuario a Microsoft 365.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Haga un seguimiento con los usuarios y asegúrese de que recibió la invitación de correo electrónico que envió sobre cómo compartir Microsoft 365 Empresa Estándar suscripción.
 

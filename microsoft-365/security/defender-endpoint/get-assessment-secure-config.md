@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d8010cafa9ea0195e4c77298bea2098eab5c594
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01e2e312af0158aa2d55ae9d8589712eef618f51
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221522"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150081"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exportar evaluación de configuración segura por dispositivo
 
@@ -94,7 +94,7 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 ****
 
-Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 ---|---|---|---
 ConfigurationCategory|string|Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad|Controles de seguridad
 ConfigurationId|string|Identificador único para una configuración específica|scid-10000
@@ -257,7 +257,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ****
 
-Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 ---|---|---|---
 Exportar archivos|cadena de \[ matriz\]|Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización|["Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
 GeneratedTime|string|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
@@ -285,7 +285,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
 - [Exportar evaluación de inventario de software por dispositivo](get-assessment-software-inventory.md)

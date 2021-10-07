@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4bc5b5b1ec612bc8f14c6ac67a2c00ce75ac4516
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5e6dbf619854d3c6e2c14e49bac7227a7bd31116
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190974"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150095"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Obtener una actividad de corrección por id.
 
@@ -85,7 +85,7 @@ requesterEmail|Cadena|Dirección de correo electrónico del creador|globaladmin@
 requesterId|Cadena|Id. de objeto Creator|r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes|Cadena|Las notas (texto libre) que el creador agregó para esta actividad de corrección|nulo
 scid|Cadena|SCID de la recomendación de seguridad relacionada|nulo
-status|Cadena|Estado de la actividad de corrección (Activo/Completado)|Activo
+status|Cadena|Estado de la actividad de corrección (Activo/Completado)|Activa
 statusLastModifiedOn|DateTime|Fecha en la que se actualizó el campo de estado|2021-01-12T18:54:11.5499487Z
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección|43
 title|Cadena|Título de esta actividad de corrección|Microsoft Silverlight
@@ -139,7 +139,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
 - [Enumerar todas las actividades de corrección](get-remediation-all-activities.md)

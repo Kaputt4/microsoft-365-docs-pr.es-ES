@@ -8,17 +8,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place exhibición de documentos electrónicos y retención In-Place (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Advanced eDiscovery v1.0 también se retiran en el mismo período de tiempo.
-ms.openlocfilehash: 16a43122ce16a134a6068f78dadea02ac8605625
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18509476234494633b425765de07dfc163eaabc9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188134"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152999"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
@@ -94,7 +94,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="header">
 <th>Funcionalidad</th>
 <th>Herramienta alternativa</th>
-<th>Comments</th>
+<th>Comentarios</th>
 </tr>
 </thead>
 <tbody>
@@ -197,7 +197,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="header">
 <th>Funcionalidad</th>
 <th>Herramientas alternativas</th>
-<th>Comments</th>
+<th>Comentarios</th>
 </tr>
 </thead>
 <tbody>
@@ -276,7 +276,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="header">
 <th>Funcionalidad</th>
 <th>Herramientas alternativas</th>
-<th>Comments</th>
+<th>Comentarios</th>
 </tr>
 </thead>
 <tbody>
@@ -351,7 +351,7 @@ Para determinar si su organización usa Advanced eDiscovery v1.0:
 
 3. Si ve el botón Cambiar **a Advanced eDiscovery,** al hacer clic en él, se le llevará a la versión 1.0 de Advanced eDiscovery, que se está retirando. La capacidad de crear y administrar casos en eDiscovery principal no se verá afectada. Solo se retirará la capacidad de agregar y analizar datos de casos en Advanced eDiscovery v1.0 (haciendo clic en Cambiar **a Advanced eDiscovery**).
 
-La nueva solución de Advanced eDiscovery en Microsoft 365 (también conocida como *Advanced eDiscovery v2.0*) proporciona todas las capacidades de la solución original, pero ahora incluye un enfoque basado en custodia para identificar contenido en otros servicios de Microsoft 365, recopilar ese contenido y agregarlo a un conjunto de opiniones donde los revisores pueden aprovechar las consultas de búsqueda rápidas, etiquetas y características de análisis para ayudar a crear documentos relevantes. Advanced eDiscovery ahora incluye un procesamiento mejorado y visores nativos para tipos de archivo de Microsoft y no de Microsoft, una lista completa de tipos de archivo está [aquí](./supported-filetypes-ediscovery20.md) y los campos de metadatos admitidos están [aquí.](./document-metadata-fields-in-advanced-ediscovery.md) Además, la nueva solución de Advanced eDiscovery proporciona una característica de administración de retención de custodia eficaz que le permite aplicar retenciones al contenido de diferentes servicios, notificar a los usuarios las retenciones y realizar un seguimiento de las respuestas de los custodios, todo dentro de un caso Advanced eDiscovery.
+La nueva solución de Advanced eDiscovery en Microsoft 365 (también conocida como *Advanced eDiscovery v2.0)* proporciona todas las capacidades de la solución original, pero ahora incluye un enfoque basado en custodia para identificar contenido en otros servicios Microsoft 365, recopilar ese contenido y a continuación, adición a un conjunto de revisión donde los revisores pueden aprovechar las consultas de búsqueda rápidas, el etiquetado y las características de análisis para ayudar a crear documentos relevantes. Advanced eDiscovery ahora incluye un procesamiento mejorado y visores nativos para tipos de archivo de Microsoft y no de Microsoft, una lista completa de tipos de archivo está [aquí](./supported-filetypes-ediscovery20.md) y los campos de metadatos admitidos están [aquí.](./document-metadata-fields-in-advanced-ediscovery.md) Además, la nueva solución de Advanced eDiscovery proporciona una característica de administración de retención de custodia eficaz que le permite aplicar retenciones al contenido de diferentes servicios, notificar a los usuarios las retenciones y realizar un seguimiento de las respuestas de los custodios, todo dentro de un caso Advanced eDiscovery.
 
 Para acceder a eDiscovery avanzado v2.0:
 

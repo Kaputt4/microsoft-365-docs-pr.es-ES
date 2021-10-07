@@ -2,26 +2,24 @@
 title: Obtener dispositivos incorporados a Microsoft Defender para endpoint
 description: Realice un seguimiento de la incorporación de dispositivos administrados por Intune a Microsoft Defender para Endpoint y aumente la velocidad de incorporación.
 keywords: onboard, administración de Intune, Microsoft Defender para endpoint, Microsoft Defender, Windows Defender, administración de configuración
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8c296ab7f5f01c62b7342d2027ab90a894e1e55c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 620a04fa7426ea349cbf0311ff1817faedca8b93
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221678"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152435"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Obtener dispositivos incorporados a Microsoft Defender para endpoint
 
@@ -42,18 +40,18 @@ Antes de poder realizar un seguimiento y administrar la incorporación de dispos
 
 ## <a name="discover-and-track-unprotected-devices"></a>Detectar y realizar un seguimiento de dispositivos sin protección
 
-La **tarjeta** de incorporación proporciona una descripción general de alto nivel de la tasa de incorporación comparando el número de dispositivos Windows 10 que realmente se han incorporado a Defender for Endpoint con el número total de dispositivos Windows 10 administrados por Intune.
+La  tarjeta de incorporación proporciona una descripción general de alto nivel de la tasa de incorporación comparando el número de dispositivos Windows que realmente se han incorporado a Defender for Endpoint con el número total de dispositivos Windows administrados por Intune.
 
 ![Tarjeta de incorporación de administración de configuración de dispositivos.](images/secconmgmt_onboarding_card.png)
 
-*Tarjeta que muestra dispositivos incorporados en comparación con el número total de dispositivos administrados Windows 10 Intune*
+*Tarjeta que muestra dispositivos incorporados en comparación con el número total de dispositivos administrados Windows Intune*
 
 > [!NOTE]
 > Si usó Security Center Configuration Manager, el script de incorporación u otros métodos de incorporación que no usan perfiles de Intune, es posible que encuentre discrepancias de datos. Para resolver estas discrepancias, crea un perfil de configuración de Intune correspondiente para la incorporación de Defender for Endpoint y asigna ese perfil a los dispositivos.
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>Incorporación de más dispositivos con perfiles de Intune
 
-Defender for Endpoint proporciona varias opciones convenientes para [la incorporación Windows 10 dispositivos](onboard-configure.md). Sin embargo, en el caso de los dispositivos administrados por Intune, puede aprovechar los perfiles de Intune para implementar cómodamente el sensor Defender for Endpoint para seleccionar dispositivos, incorporando estos dispositivos de forma eficaz al servicio.
+Defender for Endpoint proporciona varias opciones convenientes para [la incorporación Windows dispositivos](onboard-configure.md). Sin embargo, en el caso de los dispositivos administrados por Intune, puede aprovechar los perfiles de Intune para implementar cómodamente el sensor Defender for Endpoint para seleccionar dispositivos, incorporando estos dispositivos de forma eficaz al servicio.
 
 En la **tarjeta incorporación,** selecciona **Incorporar más dispositivos** para crear y asignar un perfil en Intune. El vínculo te lleva a la página de cumplimiento del dispositivo en Intune, que proporciona una introducción similar al estado de incorporación.
 

@@ -9,7 +9,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: La aplicación Cifrado de mensajes de Office 365 Visor de Cifrado de mensajes de Office 365 (OME) se quitó de las tiendas De Android y Apple en 2018.
-ms.openlocfilehash: dc12eaa783c43fb80fb8ecbe984ecbcd0cda315f33b2cd1d3bc65e8932d77bda
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0eded17f4da5347e1f1a88031a780cee5f8b1dee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892092"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152987"
 ---
 # <a name="deprecating-message-encryption-viewer-app"></a>Desuso de la aplicación visor de cifrado de mensajes
 
@@ -48,7 +48,7 @@ Requerir que los usuarios descarguen una aplicación móvil es otro obstáculo p
   
 ## <a name="can-i-still-use-the-previous-version-of-office-365-message-encryption"></a>¿Puedo seguir utilizando la versión anterior de Cifrado de mensajes de Office 365
 
-Sin embargo, la versión anterior de Cifrado de mensajes de Office 365 no estará en desuso en este momento, pero hemos realizado mejoras significativas en la nueva versión de Cifrado de mensajes de Office 365, que facilitan el cifrado y los derechos protegen los datos confidenciales para cualquier usuario y en cualquier dispositivo, incluida la capacidad de los usuarios de leer mensajes protegidos directamente en Outlook (escritorio, móvil y web). 
+La versión anterior de Cifrado de mensajes de Office 365 no estará en desuso en este momento, sin embargo, hemos realizado mejoras significativas en la nueva versión de Cifrado de mensajes de Office 365, que facilitan el cifrado y los derechos protegen los datos confidenciales para cualquier usuario y en cualquier dispositivo, incluida la capacidad de los usuarios para leer proteger Mensajes de ed directamente en Outlook (escritorio, móvil y web). 
   
 ## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
 

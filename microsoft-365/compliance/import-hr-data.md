@@ -9,23 +9,23 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: 243740f725db14fc9355c28f44771d4d2573fb31
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0c3a6966155483ba374211b7db55675010b0c55f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188150"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151091"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
 Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 365 para importar datos de recursos humanos (RRHH) relacionados con eventos como la dimisión de un usuario o un cambio en el nivel de trabajo de un usuario. A continuación, la solución de administración de riesgos [insider](insider-risk-management.md) puede usar los datos de recursos humanos para generar indicadores de riesgo que puedan ayudarle a identificar posibles actividades malintencionadas o robo de datos por parte de los usuarios de su organización.
 
-La configuración de un conector para datos de recursos humanos que las directivas de administración de riesgos internas pueden usar para generar indicadores de riesgo consiste en crear un archivo CSV que contenga los datos de recursos humanos, crear una aplicación en Azure Active Directory que se use para la autenticación, crear un conector de datos de RECURSOS humanos en el Centro de cumplimiento de Microsoft 365 y, a continuación, ejecutar un script (de forma programada) que ingiera los datos de recursos humanos en archivos CSV a la nube de Microsoft para que esté disponible para la solución de administración de riesgos internas.
+La configuración de un conector para datos de recursos humanos que las directivas de administración de riesgos internas pueden usar para generar indicadores de riesgo consiste en crear un archivo CSV que contenga los datos de recursos humanos, crear una aplicación en Azure Active Directory que se use para la autenticación, crear un conector de datos de RRHH en el Centro de cumplimiento de Microsoft 365 y, a continuación, ejecutar una  script (de forma programada) que ingieren los datos de recursos humanos en archivos CSV a la nube de Microsoft para que esté disponible para la solución de administración de riesgos insider.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

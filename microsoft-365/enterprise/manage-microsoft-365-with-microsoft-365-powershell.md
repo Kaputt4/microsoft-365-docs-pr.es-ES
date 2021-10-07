@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: Obtenga información sobre cómo administrar Microsoft 365 usuarios, licencias y 365 aplicaciones con PowerShell.
-ms.openlocfilehash: bbbbec88f8dcb4b31102bab4be4549c94874aff8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 298955f37e3f29843a7efeaf1bdf8ce6f40862fc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220982"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150587"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Administrar Microsoft 365 con PowerShell
 
@@ -34,7 +34,7 @@ PowerShell para Microsoft 365 es una herramienta de administración eficaz que c
 
 Seleccione entre los siguientes temas para obtener información sobre cómo usar PowerShell para administrar Microsoft 365:
   
-- [**Comenzar**](getting-started-with-microsoft-365-powershell.md)
+- [**Introducción**](getting-started-with-microsoft-365-powershell.md)
 
     Comience aquí si no está familiarizado con PowerShell para Microsoft 365 y desea instalar los módulos Microsoft 365 y conectarse a la suscripción.
 
@@ -62,6 +62,6 @@ Seleccione entre los siguientes temas para obtener información sobre cómo usar
 
     Comience aquí si desea usar asociados de distribución y Proveedor de soluciones en la nube (CSP) para administrar los inquilinos Microsoft 365 cliente.
 
-- [**Skype Empresarial En línea**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
+- [**Skype Empresarial Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
     Comience aquí para administrar Skype Empresarial Online.

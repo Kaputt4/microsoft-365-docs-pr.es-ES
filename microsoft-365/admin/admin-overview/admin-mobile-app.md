@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén la Administración de Microsoft 365 y aprende a administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: fdd379c6652492b2a0695b6c67b9cd46e2bdb184
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 404b722861de6885491c95843a7e5058752503cc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773444"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154103"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la Microsoft 365 móvil de administrador
 
@@ -120,7 +121,7 @@ En el menú de navegación izquierdo, ve **a Configuración**  >  **Notificacion
 
 Envía [feedback365@microsoft.com](mailto:feedback365@microsoft.com) para informar de un problema con la aplicación. O puede enviar comentarios en la parte inferior de este artículo.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que hayas descargado el dispositivo móvil de administrador, puedes agregar usuarios para empezar.
   

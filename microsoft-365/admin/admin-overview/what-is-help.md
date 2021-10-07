@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Obtenga información sobre todas las formas en que puede obtener ayuda con el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 873f8fb6d016a7ac7a5468154d2c79285ea064ec
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0de98eab68dd848fd54ef60f7eb04ae18c517d82
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564543"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154055"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 

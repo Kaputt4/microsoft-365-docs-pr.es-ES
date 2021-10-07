@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre las cuentas de facturación y cómo se usan para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras.
 ms.date: 03/17/2021
-ms.openlocfilehash: 551165a9ddcde03f96b6a2d03e5b1f5cd6e93eec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 07997e8001ee753de2693b62d693e3dc2e2261c9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190277"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151331"
 ---
 # <a name="understand-billing-accounts"></a>Comprender las cuentas de facturación
 

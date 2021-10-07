@@ -2,7 +2,7 @@
 title: Introducción a la administración de riesgos internos
 description: Configurar la administración de riesgos de insider en la organización.
 keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ed064be83a93c913b13de62dbd14936c38accd31
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: aa8d90365dbd638e9c79326621c300b15a065614
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088210"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151067"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f4b1399b77583e95b109575a9577d8b1af89e6ad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3250e978462e9bf6bf8496e05e879c6689846fe0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220127"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149840"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Ampliar la cobertura de búsqueda avanzada con la configuración correcta
 
@@ -50,7 +50,7 @@ Activa esta configuración de auditoría avanzada para asegurarte de obtener dat
 ## <a name="microsoft-defender-for-identity-sensor-on-the-domain-controller"></a>Sensor de Microsoft Defender para identidad en el controlador de dominio
 Si ejecuta Active Directory localmente, debe instalar el sensor de Microsoft Defender para identidad en el controlador de dominio para obtener datos de Microsoft Defender para Identity. Cuando se instalan y configuran correctamente, estos datos también se alimentan de búsquedas avanzadas a través de Microsoft Defender for Identity y proporcionan una imagen más holística de la información de identidad y los eventos de la red. Estos datos también mejoran la capacidad de Microsoft Defender for Identity para generar alertas relevantes que también están cubiertas por la búsqueda avanzada. 
 
-| Datos | Description | Tabla de esquema | Cómo establecer la configuración |
+| Datos | Descripción | Tabla de esquema | Cómo establecer la configuración |
 | --- | --- | --- | --- |
 | Controlador de dominio | Datos de Active Directory local enviados a Microsoft Defender para identidad, enriqueciendo información relacionada con la identidad, como detalles de cuenta, actividad de inicio de sesión y consultas de Active Directory | Varias tablas, incluidas [IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)e [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Instalar el sensor de Microsoft Defender para identidad](/azure-advanced-threat-protection/install-atp-step4)<br>- [Activar eventos de Windows relevantes](/azure-advanced-threat-protection/configure-event-collection) |
 

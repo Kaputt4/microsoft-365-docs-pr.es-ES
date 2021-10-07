@@ -3,27 +3,25 @@ title: Detección de proxy estático de Microsoft Defender para endpoint en Linu
 ms.reviewer: ''
 description: Describe cómo configurar Microsoft Defender para Endpoint en Linux para la detección de proxy estático.
 keywords: microsoft, defender, Microsoft Defender para endpoint, linux, instalación, proxy
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 09ec44a90c93272da814fd1deba49c364cd8776e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d05cf31ab773aa1b2b6583aca290514077621b3a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215067"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152219"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configurar Microsoft Defender para endpoint en Linux para la detección de proxy estático
 

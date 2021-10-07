@@ -8,7 +8,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
@@ -20,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Obtenga información sobre Office 365 Alemania.
-ms.openlocfilehash: 9aa7fc76be39f9ea0aee373ebbecb72387f47610
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 0496eae485f3be8298f0ab77d066a23fa87f9389
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773960"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154091"
 ---
 # <a name="learn-about-office-365-germany"></a>Obtenga información sobre Office 365 Alemania
 
@@ -88,7 +88,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
   
 ## <a name="general-information"></a>Información general
 
-|Item|Información|
+|Elemento|Información|
 |-----|-----|
 |Portal de inicio de sesión  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Suscripciones, facturación y soporte técnico  <br/> |Soporte técnico basado en Alemania disponible en alemán e inglés Para obtener más información, vea [Contact support for business products - Admin Help](../../business-video/get-help-support.md).  <br/> |

@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Una introducción a la aplicación Microsoft Bookings, que incluye un calendario de reservas basado en web e se integra con Outlook para optimizar el calendario de su personal y dar a sus clientes flexibilidad para reservar citas.
-ms.openlocfilehash: c1bc36ea7724cdb29394b60fafa0178a08aab117
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0db665a0eb080d76bd90f24887ca7043b00b0dde
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212897"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153683"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 

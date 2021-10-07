@@ -4,18 +4,18 @@ description: Comprueba la configuración del dispositivo y la red, incluidos los
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: ba233cf780ad428a9ecfdb6c4a3466b4ec4282da
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 57739b657f3aa296b92b67c16b7b7c5c3628e8b9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215557"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152447"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>Comprobador de la evaluación de preparación descargable
 
@@ -73,7 +73,7 @@ Un **resultado de asesoramiento** significa que está usando algunos perfiles wi
 
 Un **resultado de asesoramiento** significa que tiene LAN que necesitan certificados y perfiles para funcionar correctamente. Para obtener más información, vea [Prepare certificates and network profiles for Escritorio administrado de Microsoft](certs-wifi-lan.md).
 
-#### <a name="vpn-profiles"></a>Perfiles vpn
+#### <a name="vpn-profiles"></a>Perfiles de VPN
 
 Un **resultado de aviso** significa que está usando una red privada virtual (VPN). Cree un perfil de VPN que implemente certificados integrados con Microsoft Intune. Para obtener más información, vea [Prepare certificates and network profiles for Escritorio administrado de Microsoft](certs-wifi-lan.md).
 

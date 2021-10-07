@@ -3,27 +3,25 @@ title: Implementar Microsoft Defender para endpoint en Linux con Puppet
 ms.reviewer: ''
 description: Describe cómo implementar Microsoft Defender para Endpoint en Linux con Puppet.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6029fbb2f00cde1346dc2661486ae494015a753f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4309155fa078b4a851838e528f4c47f2ef6569eb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212190"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152248"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Implementar Microsoft Defender para endpoint en Linux con Puppet
 
@@ -81,7 +79,7 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
 Debes crear un manifiesto de Puppet para implementar Defender for Endpoint en Linux en dispositivos administrados por un servidor de Puppet. En este ejemplo se usa los módulos *apt* y *yumrepo* disponibles en los puppetlabs y se supone que los módulos se han instalado en el servidor de Puppet.
 
-Crea las *carpetas install_mdatp/archivos* *y install_mdatp/manifiestos* en la carpeta módulos de la instalación de Puppet. Esta carpeta normalmente se encuentra *en /etc/puppetlabs/code/environments/production/modules* en el servidor de Puppet. Copie el archivo mdatp_onboard.jsen creado anteriormente en la *carpeta install_mdatp/archivos.* Crear un *init.pp* que contiene las instrucciones de implementación:
+Crea las *carpetas install_mdatp/archivos* *y install_mdatp/manifiestos* en la carpeta módulos de la instalación de Puppet. Esta carpeta normalmente se encuentra *en /etc/puppetlabs/code/environments/production/modules* en el servidor de Puppet. Copie el archivo mdatp_onboard.json creado anteriormente en la *carpeta install_mdatp/files.* Crear un *init.pp* que contiene las instrucciones de implementación:
 
 ```bash
 pwd

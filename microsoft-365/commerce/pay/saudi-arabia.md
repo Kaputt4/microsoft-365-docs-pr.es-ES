@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 60799ef1d7fdc89b9f2dba90a98b137799f5f7fa
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5ed6dfb9c1bf1743be8c50a37718d2bd7b65d789
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217177"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153383"
 ---
 # <a name="payment-information-for-saudi-arabia"></a>Información de pago para Arabia Saudí
 

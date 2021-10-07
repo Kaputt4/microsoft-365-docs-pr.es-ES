@@ -10,19 +10,19 @@ audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre qué eventos se registran cuando los usuarios asignados a permisos de exhibición de documentos electrónicos realizan búsquedas de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery tareas en el Centro de cumplimiento de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 637785a86e7fa28c0c058e9f729fcf2c1604a6f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e033864b15032e66995be439e1de750da06e988b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183969"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151019"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría
 
@@ -217,7 +217,7 @@ En la tabla siguiente se describen las propiedades que se incluyen en la página
 |OrganizationId  <br/> |GUID de la Microsoft 365 organización.  <br/> |
 |Parámetros  <br/> |Nombre y valor de los parámetros que se usaron con el cmdlet correspondiente.  <br/> |
 |PublicFolderLocations  <br/> |Las ubicaciones de carpetas públicas Exchange Online que se incluyen en una búsqueda de contenido o se colocan en espera en un caso de exhibición de documentos electrónicos.  <br/> |
-|Consulta  <br/> |Consulta de búsqueda asociada a la actividad, como una búsqueda de contenido o una retención basada en consulta.  <br/> |
+|Query  <br/> |Consulta de búsqueda asociada a la actividad, como una búsqueda de contenido o una retención basada en consulta.  <br/> |
 |RecordType  <br/> |El tipo de operación indicado por el registro. El valor **de 18** indica un evento relacionado con una actividad enumerada en la sección actividades [del cmdlet eDiscovery.](#ediscovery-cmdlet-activities) Un valor de **24** indica un evento relacionado con una actividad enumerada en la sección Cómo buscar y ver actividades [de exhibición de documentos electrónicos.](#how-to-search-for-and-view-ediscovery-activities)  <br/> |
 |ResultStatus  <br/> |Indica si la acción (especificada en la propiedad Operation) se completó correctamente o no.  <br/> |
 |SecurityComplianceCenterEventType  <br/> |Indica que la actividad era un evento del centro de cumplimiento. Todas las actividades de exhibición de documentos electrónicos tendrán un valor **de 0** para esta propiedad.  <br/> |

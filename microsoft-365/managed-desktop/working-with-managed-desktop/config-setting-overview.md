@@ -4,17 +4,17 @@ description: Información sobre la configuración configurable con Escritorio ad
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, configuración, configuración configurable
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bf8672ee6c3332ea6f8522f5086d72e58d1b9048
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a83181d6b0fa33b0eb432627530099b316ebb617
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191027"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150359"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Opciones configurables: Escritorio administrado de Microsoft
 

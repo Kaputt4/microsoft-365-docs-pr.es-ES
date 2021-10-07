@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Obtenga información sobre cómo administrar Microsoft 365 grupos.
-ms.openlocfilehash: 72bc47bb699e32f849f21ea4c5470a95d6228b68
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28d8bae8aaed6d02fe082824c07afe03bdc0ce5a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221030"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150767"
 ---
 # <a name="manage-microsoft-365-groups"></a>Administrar grupos de Microsoft 365
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede administrar los Microsoft 365 de varias maneras, según la configuración. Puede administrar cuentas de usuario en [Centro de administración de Microsoft 365](../admin/add-users/index.yml), PowerShell, en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
+Puede administrar los Microsoft 365 de varias maneras, según la configuración. Puede administrar cuentas de usuario en [Centro de administración de Microsoft 365](/admin), PowerShell, en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Planear dónde y cómo administrará los grupos
 
@@ -43,7 +43,7 @@ Dónde y cómo puede administrar sus cuentas de usuario depende del modelo de id
 
 Puede crear y administrar grupos con:
 
-- [Centro de administración de Microsoft 365](../admin/add-users/index.yml)
+- [Centro de administración de Microsoft 365](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Centro de administración de Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     
@@ -53,7 +53,7 @@ Los grupos de AD DS se sincronizan con Microsoft 365 de AD DS, por lo que debes 
 
 También puede crear y administrar grupos de Azure AD independientes de los grupos de AD DS, pero que pueden contener usuarios y grupos de AD DS. En este caso, puede usar:
 
-- [Centro de administración de Microsoft 365](../admin/add-users/index.yml)
+- [Centro de administración de Microsoft 365](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Centro de administración de Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 

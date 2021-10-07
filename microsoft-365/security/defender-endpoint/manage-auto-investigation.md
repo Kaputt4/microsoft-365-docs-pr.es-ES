@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 2abe290fc5956b5f8df1931b2142a35df8b53817
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 22229d495e9b7694d07f25b60e854240f7c420c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166974"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152039"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Revisar acciones de corrección tras una investigación automatizada
 
@@ -89,7 +89,7 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 
 |Origen de la acción|Acciones admitidas|
 |---|---|
-|<ul><li>Investigación automatizada</li><li>Antivirus de Microsoft Defender</li><li>Acciones de respuesta manuales</li></ul>|<ul><li>Aislar el dispositivo</li><li>Restringir la ejecución del código</li><li>Poner en cuarentena un archivo</li><li>Quitar una clave del Registro</li><li>Detener un servicio</li><li>Deshabilitar un controlador</li><li>Quitar una tarea programada</li></ul>|
+|<ul><li>Investigación automatizada</li><li>Antivirus de Microsoft Defender</li><li>Acciones de respuesta manuales</li></ul>|<ul><li>Aislar el dispositivo</li><li>Restringir la ejecución del código</li><li>Poner en cuarentena un archivo</li><li>Quitar una clave del Registro</li><li>Detener un servicio</li><li>Deshabilitar un controlador</li><li>Quitar una tarea programada</li></ul>|
 |
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>Para deshacer varias acciones a la vez
@@ -127,12 +127,12 @@ Los niveles de automatización afectan a si determinadas acciones de corrección
 
 En Microsoft Defender para endpoint, se realiza un seguimiento de todos los veredictos en el [Centro de acciones](auto-investigation-action-center.md#new-a-unified-action-center).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtenga información sobre las capacidades de respuesta en directo](live-response.md)
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md)
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Introducción a las investigaciones automatizadas](automated-investigations.md)

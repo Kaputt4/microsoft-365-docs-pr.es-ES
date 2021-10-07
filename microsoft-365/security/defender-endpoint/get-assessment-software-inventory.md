@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9e3ccce5c5955418e3e1243b96d51e5999f0f585
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77d0bfb569837a508221d78d811c985153533ed7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221517"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152231"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportar evaluación de inventario de software por dispositivo
 
@@ -90,7 +90,7 @@ GET /api/machines/SoftwareInventoryByMachine
 
 ****
 
-Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
 DeviceId|string|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|string|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
@@ -98,7 +98,7 @@ DiskPaths|Array[string]|Prueba en disco de que el producto está instalado en el
 EndOfSupportDate|string|La fecha en la que la compatibilidad con este software tiene o finalizará.|2020-12-30
 EndOfSupportStatus|string|Estado de finalización de la compatibilidad. Puede contener estos valores posibles: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.|Próximos EOS
 Id|string|Identificador único del registro.|123ABG55_573AG&mnp!
-NumberOfWeaknesses|Entero|Número de debilidades de este software en este dispositivo|3
+NumberOfWeaknesses|int|Número de debilidades de este software en este dispositivo|3
 OSPlatform|string|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10
 RbacGroupName|string|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores
 RegistryPaths|Array[string]|El Registro evidencia que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
@@ -251,7 +251,7 @@ GET /api/machines/SoftwareInventoryExport
 
 ****
 
-Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos|cadena de \[ matriz\]|Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
 GeneratedTime|string|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
@@ -279,7 +279,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
 - [Exportar evaluación de configuración segura por dispositivo](get-assessment-secure-config.md)

@@ -12,14 +12,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 ms.service: ''
-localization_priority: medium
+ms.localizationpriority: medium
 description: Obtenga información sobre cómo editar un tema existente en Temas Microsoft Viva.
-ms.openlocfilehash: 9394ed96a340f902d5ef4fc3dd96eb58a81a9e42
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 80deb818124466a6d3fbcc1db4311193bb7778ae
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126883"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152663"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Editar un tema existente en Temas Microsoft Viva 
 

@@ -3,26 +3,24 @@ title: Crear indicadores para direcciones IP y URL/dominios
 ms.reviewer: ''
 description: Cree indicadores para direcciones IP y direcciones URL/dominios que definan la detección, prevención y exclusión de entidades.
 keywords: ip, url, domain, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b28d4088b8475794989d777bf58ccc7550b3f7c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0aaeb4a290c43b8fc725fe806014acfe61a939e8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187505"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150034"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y URL/dominios
 
@@ -52,7 +50,7 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 
 - La dirección URL/IP permiten y bloquean la protección de red del componente Defender for Endpoint para habilitarse en modo de bloqueo. Para obtener más información sobre la protección de red y las instrucciones de configuración, vea [Enable network protection](enable-network-protection.md).
 - La versión del cliente Antimalware debe ser 4.18.1906.x o posterior.
-- Compatible con máquinas en Windows 10, versión 1709 o posterior.
+- Compatible con máquinas en Windows 10, versión 1709 o posterior, o Windows 11.
 - Asegúrese de **que los indicadores de red personalizados** están **habilitados Microsoft 365 Defender > Configuración > endpoints > características avanzadas**. Para obtener más información, vea [Características avanzadas](advanced-features.md).
 - Para obtener compatibilidad con indicadores en iOS, vea [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 

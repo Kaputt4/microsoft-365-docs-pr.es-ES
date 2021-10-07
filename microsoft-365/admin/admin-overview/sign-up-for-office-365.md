@@ -9,7 +9,7 @@ ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -27,12 +27,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenda lo que necesita saber antes de pasar por el proceso de registro para Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 6347b4775bd018a72ac06d0eb9c9c9f7ee5d2306
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 946482d5aceca7d5b92829649988072fbcf54d36
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933716"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154079"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: Ayuda para administradores
 

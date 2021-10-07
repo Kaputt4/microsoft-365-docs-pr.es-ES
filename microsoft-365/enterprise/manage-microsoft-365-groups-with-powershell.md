@@ -6,7 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: En este artículo, obtenga información sobre cómo realizar tareas de administración comunes para Microsoft 365 en PowerShell.
-ms.openlocfilehash: 82617a33695135a8ad2fa6cce65c60d435d7d180
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 603d28ce04515d70633894cab7baab62a5f1581e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221042"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150791"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Administrar Microsoft 365 grupos con PowerShell
 

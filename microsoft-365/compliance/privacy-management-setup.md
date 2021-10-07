@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo configurar la administración de privacidad para su organización, establecer roles y permisos y configurar opciones importantes.
-ms.openlocfilehash: 229d4bec78424858cd7034c8953313f8593e90e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d75054c76a20ec622813d022c9de0218ea5f7b6c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186025"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151031"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Introducción a la administración de privacidad (versión preliminar)
 
@@ -58,7 +58,7 @@ Se recomienda que el administrador global inicie sesión y establezca los permis
 
 Para obtener más información sobre los grupos de roles y cómo conceder acceso, vea [Set user permissions and assign roles](privacy-management-permissions.md).
 
-### <a name="manage-settings"></a>Administrar la configuración
+### <a name="manage-settings"></a>Administrar configuración
 
 Se puede Configuración la página a través del engranaje de la esquina superior derecha de las páginas principales de la administración de privacidad. Permite a los administradores de administración de privacidad configurar propiedades esenciales en la administración de privacidad, como la configuración global para el anonimización, las notificaciones de correo electrónico y mucho más.
 

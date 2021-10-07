@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Use la herramienta de importación dto agregar rápidamente varios custodios y sus orígenes de datos asociados a un caso en Advanced eDiscovery.
-ms.openlocfilehash: ccb180766df47de39e3deb61faab60396c74bb9e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 97eb2337fb49863a19b8d55a6dd396e51f4ee8d2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166115"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151235"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importar custodios a un Advanced eDiscovery caso
 
@@ -87,7 +87,7 @@ La herramienta de importación de custodia busca y valida a los custodios median
 
 Después de que los custodios se validan y se agregan al caso, se agregan cada buzón principal y OneDrive cuenta asociada a un custodio.
 
-Sin embargo, si no se encuentra ninguno de los otros orígenes de datos (como sitios de SharePoint, Microsoft Teams, grupos de Microsoft 365 o grupos de Yammer) asociados con  un custodio, ninguno de ellos se asigna al custodio y el valor No validado se muestra en la columna Estado situada junto al custodio en la ficha **Orígenes** de datos. 
+Sin embargo, si no se encuentra ninguno de los otros orígenes de datos (como sitios de SharePoint, Microsoft Teams, grupos de Microsoft 365 o grupos de Yammer) asociados con  un custodio, ninguno de ellos se  asigna al custodio y el valor No validado se muestra en la columna Estado junto al custodio en los orígenes de datos  tab.
 
 Para agregar orígenes de datos validados para un custodio:
 

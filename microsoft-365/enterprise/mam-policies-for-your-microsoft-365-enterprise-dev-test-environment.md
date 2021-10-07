@@ -9,17 +9,17 @@ ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para agregar directivas de cumplimiento de dispositivos de Intune a Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 590af404a5c026cfe82afb314eec395aaa0560d3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ec73211a21e9e064b729b93d9e88b7c5c69b21fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221066"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150815"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Directivas de cumplimiento de dispositivos para Microsoft 365 entorno de prueba empresarial
 
@@ -72,7 +72,7 @@ Cuando termines, tienes una directiva de cumplimiento de dispositivos para proba
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#mobile-device-management) de administración de dispositivos móviles en el entorno de prueba.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Microsoft 365 guías del laboratorio de pruebas empresariales](m365-enterprise-test-lab-guides.md).
   

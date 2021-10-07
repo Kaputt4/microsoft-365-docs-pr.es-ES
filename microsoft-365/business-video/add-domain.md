@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Es posible que su organización necesite varios dominios para que los clientes puedan encontrarlo. Obtenga información sobre cómo agregar otro dominio a la suscripción.
-ms.openlocfilehash: fb8af781f68cddd5780d27724134910a28db8bf2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6e994bfdb50995d9a75c36eb831e35daf58561d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219427"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153671"
 ---
 # <a name="add-another-domain"></a>Agregar otro dominio
 

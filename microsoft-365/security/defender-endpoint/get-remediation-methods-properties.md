@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0ca1bc84d5e8cf5498ed3dc19cba3928823796ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa40768a2ed11c112bd6fc57575dce3e4db1146a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190984"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152267"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Propiedades y métodos de la actividad de corrección
 
@@ -85,7 +85,7 @@ title|Cadena|Título de esta actividad de corrección
 type|Cadena|Tipo de corrección
 vendorId|Cadena|Nombre de proveedor relacionado
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtener una actividad de corrección por id.](get-remediation-one-activity.md)
 

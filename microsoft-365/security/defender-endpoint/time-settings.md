@@ -2,26 +2,24 @@
 title: Microsoft 365 Defender de zona horaria
 description: Usa la información que se incluye aquí para configurar la configuración Microsoft 365 Defender zona horaria y ver la información de licencia.
 keywords: configuración, Microsoft Defender, inteligencia de amenazas de ciberseguridad, Microsoft Defender para endpoint, zona horaria, utc, hora local, licencia
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65ed76f115b9e9f39e18d69a50e736c561d18c7c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 461b87750b40e37493ff88acfa2b4a5521494841
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166859"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151823"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender de zona horaria
 

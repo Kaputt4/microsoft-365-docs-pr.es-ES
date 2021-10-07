@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 description: Obtenga información sobre cómo enviar su solicitud de Fapiao al sistema de administración de Fapiao de 21Vianet después de realizar un pago en el Office 365 operado por 21Vianet en China.
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: 605e1bf001f6c6acb3a8b5044adeb66e110641b0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 59995d7bed5c24b26079dcd6865d5a901c518724
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186777"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153971"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Solicitar un Fapiao para Office 365 operado por 21Vianet
 

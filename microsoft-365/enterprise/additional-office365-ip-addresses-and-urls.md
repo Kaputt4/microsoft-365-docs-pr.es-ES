@@ -7,7 +7,7 @@ ms.date: 04/19/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: los nuevos servicios web de puntos de conexión no incluyen un número reducido de puntos de conexión para escenarios específicos.'
 hideEdit: true
-ms.openlocfilehash: e01bf3522d148e71fd4968029e1bbc9204ef9a6a
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 1313bc4dd10afe07f82fdc2c1b5df9d9d9bd0f2a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491246"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150827"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Los puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365
 
@@ -64,7 +64,7 @@ Aparte de DNS, estos son opcionales para la mayor parte de los clientes, salvo q
 |13|Conectividad de servidor local híbrido de Skype Empresarial para Skype Empresarial Online|13.107.64.0/18, 52.112.0.0/14 <br> Puertos UDP 50,000-59,999 <br> Puertos TCP 50,000-59,999; 5061|Conectividad de salida de servidor local de Skype Empresarial|
 |14 |RTC en la nube con conectividad híbrida local requiere la conectividad de red abierta para los host locales Para más información acerca de las configuraciones híbridas de Skype Empresarial Online,|Consulte [Planear la conectividad híbrida entre Skype Empresarial Server y Office 365](/skypeforbusiness/hybrid/plan-hybrid-connectivity)|Skype Empresarial híbrido local entrante|
 |15 |**FQDN de autenticación e identidad** <p> Para que funcione, el FQDN `secure.aadcdn.microsoftonline-p.com` debe estar en el Internet Explorer (IE) del cliente o en su zona de sitios de confianza de Microsoft Edge.||Sitios de confianza|
-|16 |**FQDN de Microsoft Teams** <p> Si usa Internet Explorer o Microsoft Edge, debe habilitar las cookies propias y de terceros y agregar los FQDN para Teams a los sitios de confianza. Esto es complementario a los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados en la fila 14. Para obtener más información, vea [Problemas conocidos de Microsoft Teams](/microsoftteams/known-issues).||Sitios de confianza|
+|16|**FQDN de Microsoft Teams** <p> Si usa Internet Explorer o Microsoft Edge, debe habilitar las cookies propias y de terceros y agregar los FQDN para Teams a los sitios de confianza. Esto es complementario a los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados en la fila 14. Para obtener más información, vea [Problemas conocidos de Microsoft Teams](/microsoftteams/known-issues).||Sitios de confianza|
 |17 |**FQDN de SharePoint Online y OneDrive para la Empresa** <p> Todos los FQDN '.sharepoint.com' con "\<tenant\>" en el FQDN deben estar en la zona de sitios de confianza de Internet Explorer o Microsoft Edge del cliente para que funcionen. Además de los FQDN de todo el conjunto de aplicaciones, los CDN y la telemetría enumerados en la fila 14, necesitará agregar también estos puntos de conexión.||Sitios de confianza|
 |18 |**Yammer**  <br> Yammer solo está disponible en el explorador y requiere que el usuario autenticado pase por un proxy. Para que funcionen, todos los FQDN de Yammer deben estar en el Internet Explorer del cliente o en su zona de sitios de confianza de Microsoft Edge.
 ||Sitios de confianza|

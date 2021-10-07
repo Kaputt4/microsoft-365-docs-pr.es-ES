@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: Cómo los partners de distribución y Proveedor de soluciones en la nube (CSP) pueden usar Windows PowerShell para administrar Microsoft 365 inquilinos de clientes.
-ms.openlocfilehash: be32c1c8f6a71e45c8f0176c037f7ca6f28f5c31
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2678489d1e281a60d230c65e29b358dff5f1a8ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220958"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150563"
 ---
 # <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>Cómo administrar Microsoft 365 con Windows PowerShell para asociados de permisos de acceso delegado
 

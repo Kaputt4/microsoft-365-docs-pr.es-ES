@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 26033189eb5d63aee632dba2254f2109d273ae0b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2bda97c9168f7d3162c07ece4629dad795645638
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187233"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154139"
 ---
 # <a name="step-2-uploading-a-package"></a>Paso 2: Cargar un paquete
 
@@ -110,7 +110,7 @@ Los pasos siguientes proporcionan una guía sobre cómo rellenar los detalles de
 
     :::image type="content" alt-text="Visualización de los detalles de la prueba." source="Media/TestDetails.png":::
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 En el siguiente artículo se describe Cargar los archivos binarios en nuestro servicio.
 

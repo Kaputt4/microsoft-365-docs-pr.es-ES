@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Introducción a la definición y administración de alertas para directivas de prevención de pérdida de datos.
-ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 601442336cb6ba2a913f3c64eb8345030d0f8209
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193127"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151103"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Introducción al panel de alertas de prevención de pérdida de datos
 
@@ -52,7 +52,7 @@ La **característica de vista previa** de contenido solo está disponible para e
 - Microsoft 365 (E5)
 - Office 365 (E5)
 - Complemento de cumplimiento avanzado (E5)
-- Microsoft 365 E5/A5 Information Protection and Governance
+- Gobernanza e Information Protection de Microsoft 365 E5/A5
 - Cumplimiento de Microsft 365 E5/A5
 
 ### <a name="licensing-for-alert-configuration-options"></a>Licencias para opciones de configuración de alertas
@@ -139,7 +139,7 @@ Para trabajar con el panel de administración de alertas DLP:
 - Para ver el historial de administración de flujos de trabajo, elija **Registro de administración**.
 - Después de realizar la acción necesaria para la alerta, establezca el estado de la alerta en **Resuelto**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtenga información sobre las alertas de prevención de pérdida de datos y el panel de alertas](dlp-alerts-dashboard-learn.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)

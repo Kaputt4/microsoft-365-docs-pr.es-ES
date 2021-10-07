@@ -3,15 +3,13 @@ title: Microsoft Defender para endpoint en Mac
 ms.reviewer: ''
 description: Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en Mac.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, big sur, catalina, mojave, mde para mac
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 827ea407d51f657914161056d97be648b3282190
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 4fe0d1b073a2efb14b8b771a2786889cbaa8e892
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124774"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149891"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
 
@@ -105,6 +103,10 @@ Microsoft Defender para Endpoint en Mac requiere una de las siguientes ofertas d
 > [!NOTE]
 > Los usuarios con licencia elegibles pueden usar Microsoft Defender para Endpoint en hasta cinco dispositivos simultáneos.
 > Microsoft Defender para endpoint también está disponible para la compra desde un Proveedor de soluciones en la nube (CSP). Cuando se compra a través de un CSP, no requiere ofertas de licencias por volumen de Microsoft enumeradas.
+
+### <a name="configuring-exclusions"></a>Configuración de exclusiones
+
+Al agregar exclusiones a Microsoft Defender, debes tener en cuenta los errores de [exclusión comunes para Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>Conexiones de red
 

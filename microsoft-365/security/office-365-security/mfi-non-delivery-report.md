@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el informe de detalles de no entrega en el panel flujo de correo del Centro de cumplimiento de seguridad de & para supervisar los códigos de error encontrados con más frecuencia en los informes de no entrega (también conocidos como NDR o mensajes de rebote) de los remitentes de su organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02b745943b57965941e38c4e5c5ec6ae503972ec
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 00efa42dbe9f3ca119d407c74d3711d99d6c0d5c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988528"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154391"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Informe de no entrega en el Centro de seguridad & cumplimiento
 
@@ -59,7 +59,7 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Al seleccionar una fila de la tabla, aparece un menú desplegable con la siguiente información:
 
-- **Date**
+- **Fecha**
 - **Código de informe de no** entrega: puede hacer clic en el vínculo para obtener más información sobre las causas y soluciones del código de error específico.
 - **Count**
 - **Mensajes de** ejemplo: puede hacer clic **en Ver mensajes de ejemplo** para ver los resultados del seguimiento de mensajes de una muestra de los mensajes afectados. [](message-trace-scc.md)

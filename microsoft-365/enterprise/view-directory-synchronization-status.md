@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: En este artículo, obtenga información sobre cómo comprobar el estado de la sincronización de directorios en Office 365.
-ms.openlocfilehash: 0fddffc667e4fc23b2c7663e70fb5e60c49814a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0cc5b5244c5809d3f1b13b15b200bd8cea585c7c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210410"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150527"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Ver el estado de sincronización de directorios en Microsoft 365
 
@@ -43,7 +43,7 @@ En la tabla siguiente se enumeran las características de las que puede obtener 
   
 Si hay un problema con la sincronización de directorios, los errores también se enumeran en esta página. Para obtener más información acerca de los diferentes errores que puede encontrar, vea Identificar errores de sincronización de [directorios en Microsoft 365](identify-directory-synchronization-errors.md).
   
-|Item|Para qué sirve|
+|Elemento|Para qué sirve|
 |:-----|:-----|
 |**Dominios comprobados** | Número de dominios de su Microsoft 365 inquilino que ha comprobado que es propietario. |
 |**Dominios no comprobados** | Dominios que ha agregado, pero no comprobados. |

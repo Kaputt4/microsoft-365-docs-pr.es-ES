@@ -6,18 +6,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 ha llegado al final del soporte técnico. Use esta guía básica de planeación para prepararse para actualizar a Exchange Online o una versión más reciente de Exchange Server local.
-ms.openlocfilehash: 14875c793380c509c578d86d2d835596fa57cc73
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b1b4c1244d195f62261f0abc9cfaa4093beeb22f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218557"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150839"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Plan de final del soporte técnico de Exchange 2010
 
@@ -34,13 +34,13 @@ La mayoría de los productos de Microsoft tienen un ciclo de vida de soporte té
 - Correcciones de seguridad para vulnerabilidades que pueden hacer que el servidor sea vulnerable a infracciones de seguridad.
 - Actualizaciones de zona horaria.
 
-La instalación de Exchange 2010 seguirá en ejecución después de esta fecha. Pero debido a los cambios mencionados anteriormente, se recomienda encarecidamente migrar desde Exchange 2010 tan pronto como sea posible.
+Tu instalación de Exchange 2010 seguirá ejecutándose después de esta fecha. Pero debido a los cambios mencionados anteriormente, se recomienda encarecidamente migrar desde Exchange 2010 tan pronto como sea posible.
 
 Para obtener más información sobre cómo acercarse al final de la compatibilidad, vea Recursos para ayudarle a actualizar desde Office servidores y clientes [de 2010.](upgrade-from-office-2010-servers-and-products.md)
 
 ## <a name="what-are-my-options"></a>¿Cuáles son mis opciones?
 
-Es un buen momento para explorar sus opciones y preparar un plan de migración. Podrá:
+Es un buen momento para explorar sus opciones y preparar un plan de migración. Puede:
 
 - Migre completamente a Microsoft 365. Migre los buzones mediante la migración total, híbrida mínima o híbrida completa. A continuación, quite los servidores Exchange locales y Active Directory.
 - Migre Exchange servidores de 2010 a Exchange 2016 en los servidores locales.

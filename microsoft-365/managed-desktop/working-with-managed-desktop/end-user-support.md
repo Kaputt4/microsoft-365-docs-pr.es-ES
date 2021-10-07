@@ -4,17 +4,17 @@ description: Cómo los usuarios pueden obtener ayuda con el servicio y los dispo
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ad3b53a9936fb40c8d699f656f88bf5a3fff20b9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1e7d616f9644c7f81e4a0abf55e2d33d54016c55
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215187"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150311"
 ---
 # <a name="getting-help-for-users"></a>Obtener ayuda para los usuarios
 

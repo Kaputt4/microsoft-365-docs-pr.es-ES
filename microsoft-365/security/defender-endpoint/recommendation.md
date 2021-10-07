@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d3c29e5112a2cf68452bcb830681dac853eb8e1b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e938eb9a743b6e63a2836d71c96692e1e7d43f66
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220329"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152063"
 ---
 # <a name="recommendation-resource-type"></a>Tipo de recurso Recomendación
 
@@ -44,7 +44,7 @@ ms.locfileid: "59220329"
 
 ****
 
-|Método|Tipo de valor devuelto|Description|
+|Método|Tipo de valor devuelto|Descripción|
 |---|---|---|
 |[Enumerar todas las recomendaciones](get-all-recommendations.md)|Colección de recomendaciones|Recupera una lista de todas las recomendaciones de seguridad que afectan a la organización|
 |[Obtener recomendación por identificador](get-recommendation-by-id.md)|Recomendación|Recupera una recomendación de seguridad por su identificador|

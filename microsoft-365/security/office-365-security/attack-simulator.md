@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar Attack Simulator en el Centro de seguridad & Complance para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 631c6d9ecfeb24ddfad16391990043d283b02a82
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 73dcc3c8fbe121ee18f16d1d806718b3bb60923e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218087"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149795"
 ---
 # <a name="attack-simulator-in-the-security--compliance-center"></a>Simulador de ataque en el Centro de seguridad & cumplimiento
 

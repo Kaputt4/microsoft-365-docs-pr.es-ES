@@ -9,18 +9,18 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo Contoso usa las características de protección de la información Microsoft 365 para que la empresa proteja sus activos digitales en la nube.
-ms.openlocfilehash: c61d6ee0a3f577d27c306631ea9f57d8cb3d7c2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a1130329f09868d6f235b575ff2d3128f538154
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218697"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152759"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protección de la información en Contoso Corporation
 
@@ -41,7 +41,7 @@ Contoso realizó un análisis de sus datos y determinó los siguientes niveles d
 En la tabla siguiente se enumeran las directivas de información de Contoso.
 
 
-| Valor | Access | Retención de datos | Protección de la información |
+| Valor | Acceso | Retención de datos | Protección de la información |
 |:-------|:-----|:-----|:-----|
 | Valor empresarial bajo (Nivel 1: Básico) | Permitir el acceso a todos.  | 6 meses | Se usa el cifrado. |
 | Valor empresarial medio (Nivel 2: Confidencial) | Permitir el acceso a los empleados, subcontratistas y partners de Contoso. <BR><BR> Se usa MFA, seguridad de la capa de transporte (TLS) y administración de aplicaciones móviles (MAM). | 2 años  | Se usan valores de hash para la integridad de datos.  |
@@ -115,7 +115,7 @@ Esta es la configuración resultante de Contoso information-protection.
 
 Obtenga información sobre cómo Contoso usa las características de seguridad en [Microsoft 365 para](contoso-security-summary.md) la empresa para la administración de identidades y acceso, la protección contra amenazas, la protección de la información y la administración de seguridad.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Plan de desarrollo de seguridad](../security/office-365-security/security-roadmap.md)
 
