@@ -7,19 +7,19 @@ ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de prueba de conectividad de red
-ms.openlocfilehash: 60817f54586fd23270edc4e67be8b41a994bf50c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e19c9863be6e5b827e15dd86fadc55ace7e427e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215807"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199962"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de prueba de conectividad de red
 

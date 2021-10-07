@@ -10,19 +10,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido para buscar elementos importados a buzones de correo en Microsoft 365 desde un origen de datos de terceros mediante la creación de consultas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: afed5e519b789baffca4f16b95c842ccfe575b4f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 068a6e3164154129ba9148b41138d50c518042ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216260"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202984"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Usar la búsqueda de contenido para buscar datos de terceros importados por un conector de asociado personalizado
 

@@ -9,7 +9,7 @@ ms.date: 8/15/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Con Office 365, el contenido se cifra en reposo y en tránsito con el cifrado, protocolos y tecnologías más fuertes disponibles. Obtenga información general sobre el cifrado en Office 365.
-ms.openlocfilehash: c54508434c5ae5126a79eba1cb6dab3851d8f746
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e250970afa709cdd328506ea350ab2d886a985b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184150"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204352"
 ---
 # <a name="encryption"></a>Cifrado
 

@@ -10,13 +10,13 @@ f1.keywords:
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
-ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: f6df4ed3568be232927b7c427341d16eb869b7ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212390"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199830"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas
 
@@ -29,7 +29,7 @@ Escritorio administrado de Microsoft garantiza que Aplicaciones Microsoft 365 pa
 - PowerPoint
 - Outlook
 - Publisher
-- Access
+- Acceso
 - Skype Empresarial
 - OneNote
 
@@ -65,7 +65,7 @@ Si necesitas pausar o revertir la actualización Microsoft 365 la aplicación po
 
 Durante una versión, Escritorio administrado de Microsoft las tasas de error de todos los Aplicaciones Microsoft 365. Si observamos una diferencia significativa en la calidad entre la nueva versión y su predecesora, podríamos ponerse en contacto con usted a través del portal de administración Escritorio administrado de Microsoft administración. Dependiendo de la gravedad, le preguntaremos si desea pausar la versión o le informaremos de que hemos tomado medidas para mitigar un problema. 
 
-### <a name="delivery-optimization"></a>Optimización de distribución
+### <a name="delivery-optimization"></a>Optimización de entrega
 
 Optimización de distribución es una tecnología de distribución punto a punto disponible en Windows 10. Permite a los dispositivos compartir contenido, como las actualizaciones, que los dispositivos han descargado de Microsoft a través de Internet. Su uso puede ayudar a reducir el ancho de banda de red porque un dispositivo puede obtener partes de la actualización de otro dispositivo en su red local en lugar de tener que descargar la actualización por completo de Microsoft.
 

@@ -15,16 +15,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Obtén información sobre cómo configurar Microsoft 365 aplicaciones como Teams, OneDrive y SharePoint colaboración con personas ajenas a la organización.
-ms.openlocfilehash: 291a5e6d75ac1b1a12a2403a9aeece9cb658afd0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0a67eff5c201eaa82e36152c5a429df00c3ec876
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213197"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203728"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Colaborar con personas ajenas a la organización
 

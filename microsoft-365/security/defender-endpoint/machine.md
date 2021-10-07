@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 91ee0c6ec2e4c11b714dee586613b16fd22df278
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2e2b3cc41d5baddaa5314a493dfeee07e20a8f72
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401931"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205396"
 ---
 # <a name="machine-resource-type"></a>Tipo de recurso Máquina
 
@@ -70,25 +70,25 @@ ms.locfileid: "59401931"
 
 |Propiedad|Tipo|Descripción|
 |---|---|---|
-|id|String|[identidad](machine.md) de máquina.|
-|computerDnsName|String|[nombre](machine.md) completo de la máquina.|
+|id|Cadena|[identidad](machine.md) de máquina.|
+|computerDnsName|Cadena|[nombre](machine.md) completo de la máquina.|
 |firstSeen|DateTimeOffset|Primera fecha y hora en la [que](machine.md) Microsoft Defender for Endpoint observó la máquina.|
 |lastSeen|DateTimeOffset|Hora y fecha del último informe completo del dispositivo recibido. Normalmente, un dispositivo envía un informe completo cada 24 horas.|
-|osPlatform|String|Plataforma del sistema operativo.|
-|onboardingstatus|String|Estado de incorporación de la máquina. Los valores posibles son: "onboarded" y "offboarded".|
-|osProcessor|String|Procesador del sistema operativo. Use la propiedad osArchitecture en su lugar.|
+|osPlatform|Cadena|Plataforma del sistema operativo.|
+|onboardingstatus|Cadena|Estado de incorporación de la máquina. Los valores posibles son: "onboarded" y "offboarded".|
+|osProcessor|Cadena|Procesador del sistema operativo. Use la propiedad osArchitecture en su lugar.|
 |version|Cadena|Versión del sistema operativo.|
 |osBuild|Long que admite valores NULL|Número de compilación del sistema operativo.|
-|lastIpAddress|String|Last IP on local NIC on the [machine](machine.md).|
-|lastExternalIpAddress|String|Última IP a través de la [cual el equipo](machine.md) ha accedido a Internet.|
+|lastIpAddress|Cadena|Last IP on local NIC on the [machine](machine.md).|
+|lastExternalIpAddress|Cadena|Última IP a través de la [cual el equipo](machine.md) ha accedido a Internet.|
 |healthStatus|Enum|[estado](machine.md) de estado de la máquina. Los valores posibles son: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" y "Unknown".|
-|rbacGroupName|String|Nombre del grupo de máquinas.|
-|rbacGroupId|String|Id. de grupo de máquinas.|
+|rbacGroupName|Cadena|Nombre del grupo de máquinas.|
+|rbacGroupId|Cadena|Id. de grupo de máquinas.|
 |riskScore|Enumeración que admite valores null|Puntuación de riesgo evaluada por Microsoft Defender para Endpoint. Los valores posibles son: 'None', 'Informational', 'Low', 'Medium' y 'High'.|
 |aadDeviceId|Guid de representación que admite valores NULL|Id. de dispositivo de AAD (cuando [la máquina](machine.md) está unida a AAD).|
 |machineTags|Colección string|Conjunto de [etiquetas de](machine.md) máquina.|
 |exposureLevel|Enumeración que admite valores null|Nivel de exposición evaluado por Microsoft Defender para Endpoint. Los valores posibles son: 'None', 'Low', 'Medium' y 'High'.|
 |deviceValue|Enumeración que admite valores null|El [valor del dispositivo](tvm-assign-device-value.md). Los valores posibles son: 'Normal', 'Low' y 'High'.|
 |ipAddresses|Colección IpAddress|Conjunto de ***objetos IpAddress.*** Consulta [Obtener api de máquinas](get-machines.md).|
-|osArchitecture|String|Arquitectura del sistema operativo. Los valores posibles son: "32 bits", "64 bits". Use esta propiedad en lugar de osProcessor.|
+|osArchitecture|Cadena|Arquitectura del sistema operativo. Los valores posibles son: "32 bits", "64 bits". Use esta propiedad en lugar de osProcessor.|
 |

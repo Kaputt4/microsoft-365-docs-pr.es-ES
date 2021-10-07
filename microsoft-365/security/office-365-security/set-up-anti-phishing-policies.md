@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b08439f07bcf80a76e45cad02001194543491c14
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: f4b845f9a34eecde953d3736b1a82f37b54b05d6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009534"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205048"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -85,8 +85,8 @@ La siguiente configuración de directiva está disponible en las directivas cont
   - **Dominios:** uno o varios de los dominios [aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) configurados en Microsoft 365.
 
   - **Excluir estos usuarios, grupos y dominios:** excepciones para la directiva. La configuración y el comportamiento son exactamente iguales a las condiciones:
-    - **Usuarios**
-    - **Groups**
+    - **Users**
+    - **Grupos**
     - **Dominios**
 
   > [!NOTE]
@@ -100,7 +100,7 @@ La siguiente configuración de suplantación de identidad está disponible en la
 
 - **Habilitar la inteligencia de suplantación:** activa o desactiva la inteligencia de suplantación. Le recomendamos que lo deje activado.
 
-  Cuando la inteligencia de suplantación de identidad está habilitada, la información de inteligencia suplantada muestra remitentes suplantados que se detectaron y permitieron o bloquearon automáticamente mediante la inteligencia de suplantación de identidad.  Puede invalidar manualmente el veredicto de suplantación de identidad para permitir o bloquear los remitentes suplantados detectados desde dentro de la información. Pero, cuando lo hace, el remitente suplantado desaparece de la información de  inteligencia suplantada y ahora solo está visible en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del espacio empresarial. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados en la lista de inquilinos permitidos o bloqueados. Para obtener más información, consulte los siguientes artículos:
+  Cuando la inteligencia de suplantación de identidad está habilitada, la información de inteligencia suplantada muestra remitentes suplantados que se detectaron y permitieron o bloquearon automáticamente mediante la inteligencia de suplantación de identidad.  Puede invalidar manualmente el veredicto de suplantación de identidad para permitir o bloquear los remitentes suplantados detectados desde dentro de la información. Pero, cuando lo hace, el remitente suplantado desaparece de la información de  inteligencia suplantada y ahora solo está visible en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del espacio empresarial. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados en la lista de inquilinos permitidos o bloqueados. Para más información, consulte los siguientes artículos:
 
   - [Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md)
   - [Administrar la lista de inquilinos permitidos o bloqueados en EOP](tenant-allow-block-list.md)

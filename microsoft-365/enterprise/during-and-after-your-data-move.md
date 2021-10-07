@@ -10,18 +10,18 @@ ms.service: o365-administration
 ms.collection: SPO_Content
 search.appverid:
 - MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Los movimientos de datos son operaciones back-end que se producen cuando Microsoft mueve los servicios y los datos asociados del inquilino a un nuevo centro de datos geográfico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f90957447e9d301594f50e67ff51ae495464b63e
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 68c73d8931f0f1813ebecfa0415b037f91065626
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491092"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189158"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 

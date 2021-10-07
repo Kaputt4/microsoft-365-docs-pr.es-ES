@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar Outlook para su correo Microsoft 365 correo electrónico.
-ms.openlocfilehash: 9dc0ed41df4aaadee060e0c7606600ba5512df09
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa098383371737e9f792acdc0478500cfff9fea0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212770"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204772"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Configurar Outlook para Microsoft 365 correo electrónico empresarial 
 

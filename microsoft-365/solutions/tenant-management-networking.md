@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Optimice el acceso de red a Microsoft 365 inquilinos.
-ms.openlocfilehash: 4bf988aca4145d52d8e5e1bb68c6e8cf134be534
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dc31a1e400de0d428076406b100eb0a52c705546
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187222"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203704"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 2. Redes óptimas para su Microsoft 365 para inquilinos empresariales
 

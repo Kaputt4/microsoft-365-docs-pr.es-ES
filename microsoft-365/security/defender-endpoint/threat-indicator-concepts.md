@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d901366e74969b0b128a49a6bd65a56046049085
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e5d22bba679d604b0b3a78a9555cc8a2277a66ac
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166899"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205192"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>Comprender conceptos de inteligencia sobre amenazas
 

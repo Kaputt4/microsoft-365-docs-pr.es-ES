@@ -7,7 +7,7 @@ ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 77e3dbd3f819aea15632a0ba069249a44a8663fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 04d94cb8cd95d55ccccec388e10be49541828270
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191237"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189074"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Actividades previas a la migración de Microsoft Cloud Deutschland
 
@@ -123,7 +123,7 @@ Leer y aplicar los pasos [de migración de ADFS](ms-cloud-germany-transition-add
 Exporte SharePoint de búsqueda si se han aplicado modificaciones. |La SharePoint de búsqueda no se migrará. Si se han aplicado modificaciones SharePoint búsqueda, asegúrese de tomar nota de los cambios y exportar la configuración de búsqueda. La configuración debe importarse de nuevo después de SharePoint se haya completado la transición.|Las soluciones personalizadas basadas en un esquema de búsqueda modificado no estarán disponibles hasta que se hayan aplicado de nuevo las modificaciones de búsqueda.|
 
 
-## <a name="exchange-online"></a>Exchange en línea
+## <a name="exchange-online"></a>Exchange Online
 
 <!-- before phase 5 -->
 

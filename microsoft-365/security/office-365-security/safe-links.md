@@ -10,7 +10,7 @@ ms.topic: overview
 f1_keywords:
 - "197503"
 ms.date: 09/08/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre Caja fuerte protección de vínculos en Defender for Office 365 para proteger una organización contra la suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte y vea los gráficos de los Caja fuerte links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b1faafe3b15ba0bb846fc10a87312c3174efac6
-ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
+ms.openlocfilehash: 11dbd3ef2f2fa2a17d24f769256fe02cd12b4c75
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59453603"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203944"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte Vínculos en Microsoft Defender para Office 365
 
@@ -284,7 +284,7 @@ En la tabla siguiente se describen ejemplos de los valores que puede especificar
 
 |Valor|Resultado|
 |---|---|
-|`contoso.com` <p> o bien <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de acceso. Por ejemplo, `https://www.contoso.com` , `https://sub.contoso.com` y se `https://contoso.com/abc` bloquean.|
+|`contoso.com` <p> o <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de acceso. Por ejemplo, `https://www.contoso.com` , `https://sub.contoso.com` y se `https://contoso.com/abc` bloquean.|
 |`https://contoso.com/a`|Bloques `https://contoso.com/a` pero no subpaths adicionales como `https://contoso.com/a/b` .|
 |`https://contoso.com/a*`|Bloques `https://contoso.com/a` y subpaths adicionales como `https://contoso.com/a/b` .|
 |`https://toys.contoso.com*`|Bloquea un subdominio ( en este ejemplo), pero permite hacer clic en otras direcciones URL de `toys` dominio (como o `https://contoso.com` `https://home.contoso.com` ).|

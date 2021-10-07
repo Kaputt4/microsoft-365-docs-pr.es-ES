@@ -2,15 +2,13 @@
 title: Ejemplos de directivas de control de dispositivos para Intune
 description: Obtenga información sobre cómo usar directivas de control de dispositivos con ejemplos que se pueden usar con Intune.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, device, control, usb, removable, media, intune
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9a0bd7bcb45e4ddf2a36cefb8906e1e5c5dd75d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 76befd49bea5429baee388b7cfc5d2b4693fb644
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187465"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205408"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Ejemplos de directivas de control de dispositivos para Intune
 

@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: Obtenga información sobre cómo usar PowerShell para administrar grupos de seguridad.
-ms.openlocfilehash: e9842585fbb88711c0efa6e515ca8b54c124338e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d07296b88e626e854c57152a079cc96e1e23e8d3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220934"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202888"
 ---
 # <a name="manage-security-groups-with-powershell"></a>Administrar grupos de seguridad con PowerShell
 

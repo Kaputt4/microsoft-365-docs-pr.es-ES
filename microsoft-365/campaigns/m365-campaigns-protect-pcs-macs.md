@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteja dispositivos no administrados o bring-your-own (BYOD) con Microsoft 365.
-ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0f14112356313dcbad56f5a78bd2c837987d234f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219260"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204760"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Proteger equipos Windows 10 y Mac no administrados
 
@@ -63,7 +63,7 @@ Windows Update descarga automáticamente las actualizaciones de Seguridad de Win
 
 Si tienes una versión anterior de Windows y estás usando Microsoft Security Essentials, es una buena idea pasar a Seguridad de Windows. Para obtener más información, [consulta ayuda a proteger mi dispositivo con Seguridad de Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
-**Activar el firewall Windows de seguridad**<p>
+**Activar el Firewall de Windows**<p>
 Siempre debe ejecutar el firewall Windows aunque tenga otro firewall activado. Desactivar Windows firewall podría hacer que el dispositivo (y su red, si tiene uno) sean más vulnerables al acceso no autorizado. Consulta [Activar o desactivar Windows firewall](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) para obtener instrucciones.
 
 ## <a name="mac"></a>[Mac](#tab/Mac)

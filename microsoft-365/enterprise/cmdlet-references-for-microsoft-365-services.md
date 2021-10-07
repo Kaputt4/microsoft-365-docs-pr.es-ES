@@ -7,7 +7,7 @@ ms.date: 07/16/2020
 audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Busque Microsoft 365 de cmdlet de PowerShell para Azure AD, Exchange Online, SharePoint Online, Skype Empresarial Online y Seguridad & Cumplimiento.
-ms.openlocfilehash: fc6cb250fe968c8dd8222422c517ce59352e4d69
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ab1452ffafd3d5a095063903fab6a9423705c08d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187934"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204172"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Referencias de cmdlets para los servicios de Microsoft 365
 

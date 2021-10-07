@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: En este artículo se proporcionan descripciones de propiedades adicionales incluidas al exportar resultados de un registro Office 365 registro de auditoría.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 20965367cda41ad50070d42b306564f6a8d9bb8b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 94fc41245a3def9e12412249368e31a0a13655a2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193174"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188258"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Propiedades detalladas del registro de auditoría
 
@@ -45,7 +45,7 @@ En la tabla siguiente se describen las propiedades que se incluyen (según el se
 |AzureActiveDirectoryEventType|El tipo de Azure Active Directory evento. Los siguientes valores indican el tipo de evento.  <br/> **0:** indica un evento de inicio de sesión de la cuenta.<br/> **1:** indica un evento de seguridad de la aplicación de Azure.|Azure Active Directory|
 |ChannelGuid|El identificador de un Microsoft Teams canal. El equipo en el que se encuentra el canal se identifica mediante las **propiedades TeamName** y **TeamGuid.**|Microsoft Teams|
 |ChannelName|El nombre de un Microsoft Teams canal. El equipo en el que se encuentra el canal se identifica mediante las **propiedades TeamName** y **TeamGuid.**|Microsoft Teams|
-|Client|El dispositivo cliente, el sistema operativo del dispositivo y el explorador de dispositivos usados para el evento de inicio de sesión (por ejemplo, Nokia Lumia 920; Windows Phone 8; IE Mobile 11).|Azure Active Directory|
+|Cliente|El dispositivo cliente, el sistema operativo del dispositivo y el explorador de dispositivos usados para el evento de inicio de sesión (por ejemplo, Nokia Lumia 920; Windows Phone 8; IE Mobile 11).|Azure Active Directory|
 |ClientInfoString|Información sobre el cliente de correo electrónico que se usó para realizar la operación, como una versión del explorador, Outlook versión y la información del dispositivo móvil|Exchange (actividad de buzón de correo)|
 |ClientIP|La dirección IP del dispositivo que se ha usado cuando la actividad se ha registrado. La dirección IP se muestra en el formato de dirección IPv4 o IPv6.<br/><br/> Para ciertos servicios, el valor que se visualiza en esta propiedad puede ser la dirección IP de una aplicación de confianza (por ejemplo, Office en las aplicaciones web) que llama al servicio en nombre de un usuario y no la dirección IP del dispositivo utilizado por la persona que realizó la actividad. <br/><br/>Además, para la actividad de administrador (o actividad realizada por una cuenta del sistema) para eventos relacionados con Azure Active Directory, la dirección IP no se registra y el valor de la propiedad ClientIP es `null` . |Azure Active Directory, Exchange, SharePoint|
 |CreationTime|La fecha y hora en formato Hora universal coordinada (UTC) en las que el usuario ha realizado la actividad.|Todo|
@@ -55,7 +55,7 @@ En la tabla siguiente se describen las propiedades que se incluyen (según el se
 |EventSource|Identifica que un evento se produjo en SharePoint. Los valores **posibles son SharePoint** y **ObjectModel**.|SharePoint|
 |ExternalAccess|Para Exchange de administración, especifica si el cmdlet lo ha ejecutado un usuario de la organización, el personal del centro de datos de Microsoft o una cuenta de servicio de centro de datos o un administrador delegado. El valor **False** indica que el cmdlet lo ejecutó algún usuario de su organización. El valor **True** indica que el cmdlet lo ejecutó el personal del centros de datos, una cuenta de servicio del centro de datos o un administrador delegado.  <br/> Para Exchange de buzón de correo, especifica si un usuario de fuera de la organización ha accedido a un buzón.|Exchange|
 |ExtendedProperties|Las propiedades extendidas de un Azure Active Directory evento.|Azure Active Directory|
-|Id.|El identificador de la entrada del informe. El identificador identifica de forma única la entrada del informe.|Todo|
+|ID|El identificador de la entrada del informe. El identificador identifica de forma única la entrada del informe.|Todo|
 |InternalLogonType|Reservado para uso interno.|Exchange (actividad de buzón de correo)|
 |ItemType|El tipo de objeto al que se obtuvo acceso o que se modificó. Entre los valores posibles **se incluyen** **File**, Folder , **Web**, **Site**, **Tenant** y **DocumentLibrary**.|SharePoint|
 |LoginStatus|Identifica los errores de inicio de sesión que podrían haber ocurrido.|Azure Active Directory|
@@ -67,13 +67,13 @@ En la tabla siguiente se describen las propiedades que se incluyen (según el se
 |ObjectId|Para el registro de auditoría de Exchange, el nombre del objeto modificado por el cmdlet.  <br/> Para SharePoint actividad, el nombre completo de la ruta de acceso URL del archivo o carpeta al que tiene acceso un usuario.  <br/> Para la actividad de Azure AD, el nombre de la cuenta de usuario que se modificó.|Todo|
 |Operación|El nombre de la actividad de usuario o administrador. El valor de esta propiedad corresponde al valor seleccionado en la **lista** desplegable Actividades. Si **se ha seleccionado Mostrar** resultados para todas las actividades, el informe incluirá entradas para todas las actividades de usuario y administración de todos los servicios. Para obtener una descripción de las operaciones o actividades que se registran en el registro de auditoría, vea la pestaña **Actividades** auditadas en Buscar el registro de auditoría [en el Office 365](search-the-audit-log-in-security-and-compliance.md).  <br/> Esta propiedad identifica el nombre del cmdlet ejecutado para la actividad de administración de Exchange.|Todo|
 |OrganizationId|GUID de la organización.|Todo|
-|Path|El nombre de la carpeta del buzón donde se encuentra el mensaje al que se obtuvo acceso. Esta propiedad también identifica la carpeta en la que se crea o copia o se mueve un mensaje.|Exchange (actividad de buzón de correo)|
+|Ruta de acceso|El nombre de la carpeta del buzón donde se encuentra el mensaje al que se obtuvo acceso. Esta propiedad también identifica la carpeta en la que se crea o copia o se mueve un mensaje.|Exchange (actividad de buzón de correo)|
 |Parámetros|Para Exchange de administración, el nombre y el valor de todos los parámetros que se usaron con el cmdlet que se identifica en la propiedad Operation.|Exchange (actividad de administración)|
 |RecordType|El tipo de operación indicado por el registro. Esta propiedad indica el servicio o la característica en la que se desencadenó la operación. Para obtener una lista de tipos de registro y su valor ENUM correspondiente (que es el valor que se muestra en la **propiedad RecordType** de un registro de auditoría), vea [Audit log record type](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).| 
 |ResultStatus|Indica si la acción (especificada en la **propiedad Operation)** se ha realizado correctamente o no.  <br/> Para Exchange de administración, el valor es **True** (correcto) o **False** (error).|Todo  <br/>|
 |SecurityComplianceCenterEventType|Indica que la actividad era un Centro de cumplimiento de Microsoft 365 evento. Todas las actividades del centro de cumplimiento tendrán un valor **de 0** para esta propiedad.|Centro de seguridad y cumplimiento|
 |SharingType|El tipo de permisos de uso compartido que se asignó al usuario con el que se compartió el recurso. Este usuario se identifica en la **propiedad UserSharedWith.**|SharePoint|
-|Site|El GUID del sitio donde se encuentra el archivo o la carpeta a la que obtuvo acceso el usuario.|SharePoint|
+|Sitio|El GUID del sitio donde se encuentra el archivo o la carpeta a la que obtuvo acceso el usuario.|SharePoint|
 |SiteUrl|La dirección URL del sitio donde se encuentra el archivo o la carpeta a la que obtuvo acceso el usuario.|SharePoint|
 |SourceFileExtension|La extensión del archivo al que obtuvo acceso el usuario. Esta propiedad está en blanco si el objeto al que se obtuvo acceso es una carpeta.|SharePoint|
 |SourceFileName|El nombre del archivo o carpeta al que obtuvo acceso el usuario.|SharePoint|

@@ -2,8 +2,6 @@
 title: Administrar Microsoft Defender para endpoint con Configuration Manager
 description: Obtenga información sobre cómo administrar Microsoft Defender para endpoint con Configuration Manager
 keywords: post-migration, manage, operations, maintenance, utilization, Configuration Manager, Microsoft Defender for Endpoint, edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 7d4e8898103559900141f2b7ada9f3f64660500d
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 8bde033068af23e3e3187a79114d9c8fabbbcdab
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776913"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205348"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Administrar Microsoft Defender para endpoint con Configuration Manager
 
@@ -39,7 +37,7 @@ ms.locfileid: "59776913"
 Se recomienda usar Microsoft Endpoint Manager [,](/mem)que incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) y [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) (Configuration Manager) para administrar las características de protección contra amenazas de la organización dispositivos (también denominados puntos de conexión).
 
 - [Obtenga más información sobre Endpoint Manager](/mem/endpoint-manager-overview)
-- [Co-administrar Microsoft Defender para endpoint en Windows 10 dispositivos con Configuration Manager e Intune](manage-atp-post-migration-intune.md)
+- [Administrar Microsoft Defender para endpoint en Windows 10 y Windows 11 dispositivos con Configuration Manager e Intune](manage-atp-post-migration-intune.md)
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configurar Microsoft Defender para endpoint con Configuration Manager
 
@@ -61,7 +59,7 @@ Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver a
 - [Información general sobre Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Protección de extremo: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Próximos pasos
 
 - [Introducción a la administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visite el panel Microsoft 365 Defender operaciones de seguridad del portal](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

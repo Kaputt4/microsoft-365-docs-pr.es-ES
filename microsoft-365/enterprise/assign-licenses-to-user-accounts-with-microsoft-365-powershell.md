@@ -7,7 +7,7 @@ ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: En este artículo, obtenga información sobre cómo usar PowerShell para asignar una licencia Microsoft 365 a usuarios sin licencia.
-ms.openlocfilehash: 2af81099b2771c69b642308fb50500b358d64780
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b9f076e4856820d9f10e4cf92718dd6ddd3971c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213887"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186782"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Asignar Microsoft 365 a cuentas de usuario con PowerShell
 
@@ -43,7 +43,7 @@ De forma predeterminada, las cuentas sincronizadas desde los Servicios de domini
  - [Azure Portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) ( Usuarios de **Active Directory**> cuenta de usuario > información de contacto de perfil  >     >    >  **país o región**).
 
 >[!Note]
->[Obtenga información sobre cómo asignar licencias a cuentas de usuario](../admin/manage/assign-licenses-to-users.md) con el Centro de administración de Microsoft 365. Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](../admin/add-users/index.yml)
+>[Obtenga información sobre cómo asignar licencias a cuentas de usuario](../admin/manage/assign-licenses-to-users.md) con el Centro de administración de Microsoft 365. Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](/admin)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph

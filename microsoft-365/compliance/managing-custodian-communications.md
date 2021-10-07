@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: Advanced eDiscovery facilita la administración del flujo de trabajo de notificación de retención legal en torno a notificar a los custodios en investigaciones legales.
-ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d29b3af8efe83e0f4ce02979142587c61807b9cd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188062"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189374"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Trabajar con comunicaciones en Advanced eDiscovery
 

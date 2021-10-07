@@ -9,7 +9,7 @@ ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use directivas de auditoría y alertas y solicitudes del interesado para supervisar y responder a incidentes de datos personales.
-ms.openlocfilehash: 4070cd772d243bcfba33bfb164fd05e1f0911b3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 74efff60bb8e0ad6f170b57c86e384d3b689eee1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213187"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204999"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Supervisar y responder a incidentes de privacidad de datos en su organización
 

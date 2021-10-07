@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos principal.
-ms.openlocfilehash: 1637d5dafcf088dd2b069cda5e951aef3a2fcd1e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdf623ec56f3f40ba3316fd546f044610829bbc2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183990"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189290"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos principal
 

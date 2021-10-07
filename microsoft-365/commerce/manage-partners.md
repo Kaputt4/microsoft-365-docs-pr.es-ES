@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo trabajar con proveedores de soluciones certificados por Microsoft (partners) para comprar y administrar productos y servicios para su organización o escuela.
 ms.date: 04/13/2021
-ms.openlocfilehash: f7fd5cda68ce5312f284e7f86e1cfbd3716cc8d4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 19068c87693fbcda06a520b4e41baaad3fef651b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190274"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203452"
 ---
 # <a name="manage-partner-relationships"></a>Administrar relaciones de partners
 
@@ -37,7 +37,7 @@ Puede trabajar con proveedores de soluciones certificados por Microsoft (partner
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de facturación para realizar estos pasos. Para obtener más información, vea [Asignar roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para realizar estos pasos. Para obtener más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>¿Qué puede hacer un partner para mi organización o escuela?
 

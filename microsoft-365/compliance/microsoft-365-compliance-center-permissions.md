@@ -8,15 +8,15 @@ manager: laurawi
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información sobre la administración de permisos en el Centro de cumplimiento de Microsoft 365.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 717b8cd312aad805107536b174b3a9cd58e72a55
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8eed2bf7fb1bf2861fe3b138933ef5e2314d1325
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216790"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203080"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Permisos en el Centro de cumplimiento de Microsoft 365
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre lo que necesita para configurar Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 70d0bf00afaa1a504097ac80598f9c1b1a184b05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82b8a1739451db9e93cb1006d77614cd1bd61443
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212767"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189734"
 ---
 # <a name="overview-of-microsoft-365-business-premium-setup"></a>Información general sobre Microsoft 365 Empresa Premium configuración
 
@@ -85,7 +85,7 @@ Al elegir una suscripción en la nube para su empresa, tiene opciones sobre qué
 
 ## <a name="6-upgrade-your-pcs-to-windows-10-pro"></a>6. Actualice los equipos a Windows 10 Pro
 
-- Comience a actualizar los equipos a Windows 10 Professional (gratuito con Microsoft 365 Empresa Premium si&#39;está ejecutando Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro) para que pueda beneficiarse de todas las características de Microsoft 365 Empresa Premium, como la seguridad avanzada y la administración de dispositivos.
+- Comience a actualizar los equipos a Windows 10 Professional (gratuito con Microsoft 365 Empresa Premium si&#39;está ejecutando Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro) para que pueda aproveche todas las características Microsoft 365 Empresa Premium, como la seguridad avanzada y la administración de dispositivos.
 - También puede actualizar a Windows 10 Pro desde una versión de consumidor o si&#39;está ejecutando Microsoft 365 Empresa Estándar, pero se requiere una compra única.
 
 ## <a name="7-connect-your-pcs-to-microsoft-365"></a>7. Conectar los equipos a Microsoft 365

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
@@ -19,12 +19,12 @@ ms.custom:
 description: En este artículo se proporciona información para solucionar problemas relacionados con el envío de correo electrónico a bandejas de Microsoft 365 & procedimientos recomendados para el envío masivo de correo a Microsoft 365 clientes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c3017b0e7d0c583c9038f695f9f47010ff92c18a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1e51173e589bac06fb4ca1ba92657137e77ade92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185529"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203812"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Correo de solución de problemas enviado a Microsoft 365
 

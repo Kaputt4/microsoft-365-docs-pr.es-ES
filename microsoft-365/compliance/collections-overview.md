@@ -10,18 +10,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Use colecciones en Advanced eDiscovery para buscar y recopilar contenido relacionado con su caso o investigación.
-ms.openlocfilehash: dabc321f432996d888686b16e05d8ad6cb6cfc3f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8988f2806a0a7c13ae94560f6202330c0d619582
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166006"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188282"
 ---
 # <a name="learn-about-collections-in-advanced-ediscovery"></a>Obtenga información sobre las colecciones en Advanced eDiscovery
 

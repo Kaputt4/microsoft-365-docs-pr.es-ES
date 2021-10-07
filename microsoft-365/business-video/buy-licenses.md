@@ -9,7 +9,7 @@ ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 description: Obtenga información sobre cómo comprar nuevas Microsoft 365 licencias para empresas.
 ms.date: 09/16/2021
-ms.openlocfilehash: 51f90e3d2f5a49ce8d20c0ab905bd72c0494f653
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: 7a6be3ea1c7592b2c05983a0648b8eee87ab2049
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477580"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204796"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Comprar Microsoft 365 licencias
 
@@ -39,7 +39,7 @@ ms.locfileid: "59477580"
 A medida que agregue nuevos usuarios, tendrá que comprar más Microsoft 365 licencias para esos usuarios.
 
 > [!NOTE]
-> Para algunas suscripciones, solo puedes cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactiva la facturación periódica para cancelar la suscripción al final de su término.
+> Para algunas suscripciones, solo puede cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactive la facturación periódica para cancelar la suscripción al final de su término.
 
 ## <a name="try-it"></a>¿Se atreve?
 

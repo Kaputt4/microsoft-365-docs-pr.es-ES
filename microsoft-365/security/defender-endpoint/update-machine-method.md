@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7ffd136bd770369248b2f0735deb42e62f372632
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 12e4935c38a2c4748b05226237c5e31be756676c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213320"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203992"
 ---
 # <a name="update-machine"></a>Actualizar máquina 
 
@@ -84,7 +84,7 @@ Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mante
 
 Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-Propiedad|Tipo|Description
+Propiedad|Tipo|Descripción
 :---|:---|:---
 machineTags|Colección string|Conjunto de [etiquetas de](machine.md) máquina.
 deviceValue|Enumeración que admite valores null|El [valor del dispositivo](tvm-assign-device-value.md). Los valores posibles son: 'Normal', 'Low' y 'High'.

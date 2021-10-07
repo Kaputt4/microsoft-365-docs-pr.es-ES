@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 description: Obtenga información sobre cómo descargar las claves de licencia de software y producto para el software perpetuo comprado a través del programa Proveedor de soluciones en la nube (CSP).
 ms.date: 01/27/2021
-ms.openlocfilehash: ae433609e13aa96344aacd2ba1944efa54b42cf6
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: e6df3ef61b75e775a91f4c8c099eb30c90f45d42
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786210"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188750"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Descargar claves de licencia de producto y software perpetuidad
 

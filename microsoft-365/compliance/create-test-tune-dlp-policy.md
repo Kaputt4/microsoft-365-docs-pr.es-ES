@@ -10,7 +10,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderás a crear, probar y ajustar una directiva DLP de acuerdo con las necesidades de la organización.
-ms.openlocfilehash: 14ee1dbaac2b250e55957023580735676e2ab724
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a7d7541f90573df4f86b71aa02e377ff20717f85
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184222"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203296"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 

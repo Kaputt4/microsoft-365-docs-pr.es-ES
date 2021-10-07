@@ -9,17 +9,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: El nuevo módulo de codificación predictiva de Advanced eDiscovery usa el aprendizaje automático para analizar elementos de un conjunto de revisión para predictiva cuáles son los elementos relevantes para su caso o investigación.
-ms.openlocfilehash: 0b453713d986572dae8d80efe6dcd60b0616d789
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 60f0fc2f53c8bfbde2a4a1d5cccb4eb678f7c33e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186086"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189362"
 ---
 # <a name="learn-about-predictive-coding-in-advanced-ediscovery-preview"></a>Obtenga información sobre la codificación predictiva en Advanced eDiscovery (versión preliminar)
 

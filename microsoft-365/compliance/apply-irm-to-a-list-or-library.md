@@ -9,7 +9,7 @@ ms.date: 7/2/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - OSU150
@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Puede usar Information Rights Management (IRM) para ayudar a controlar y proteger los archivos que se descargan de listas o bibliotecas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 84f0443cd31f26549dc1f5dc06be6e7bf52b05dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4dfa7360dd178e5943402fcb834236d7d0bf9a08
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186358"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203308"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Aplicar Information Rights Management (IRM) a una lista o biblioteca
 
@@ -136,7 +136,7 @@ Los tipos de restricciones que se aplican a un archivo cuando se descarga de una
 |Administrar permisos, administrar sitio web|**Control total** (tal como lo define el programa cliente): este permiso generalmente permite a un usuario leer, editar, copiar, guardar y modificar permisos de contenido administrado con derechos.|
 |Editar elementos, administrar listas, agregar y personalizar páginas|**Editar**, **Copiar** y **Guardar:** un usuario solo  puede imprimir un archivo si la casilla Permitir que los usuarios impriman documentos está activada en la página Information Rights Management Configuración para la lista o biblioteca.|
 |Ver elementos|**Lea:** Un usuario puede leer el documento, pero no puede copiar ni modificar su contenido. Un usuario solo puede  imprimir si la casilla Permitir que los usuarios impriman documentos está activada en la página Information Rights Management Configuración la lista o biblioteca.|
-|Otros|Ningún otro permiso corresponde directamente a los permisos de IRM.|
+|Otro|Ningún otro permiso corresponde directamente a los permisos de IRM.|
    
 Cuando habilita IRM para una lista o biblioteca en SharePoint Server 2013, solo puede proteger los tipos de archivo de esa lista o biblioteca para la que está instalado un protector en todos los servidores front-end web. Un protector es un programa que controla el cifrado y descifrado de archivos administrados con derechos de un formato de archivo específico. SharePoint incluye protectores para los siguientes tipos de archivo:
   

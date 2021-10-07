@@ -9,17 +9,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 94351858da196edfd719d7b07ab6f125abf9d658
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b5f1a958696dad84ac2bedec8f1ab7d23dfa6428
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186070"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204244"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Entrenar un modelo de codificación predictiva (versión preliminar)
 
@@ -91,6 +91,6 @@ Después de realizar rondas de aprendizaje posteriores (después de la primera r
 
 - El modelo actualizado vuelve a procesar todos los elementos del conjunto de revisión y asigna a cada elemento una puntuación de predicción actualizada.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Próximos pasos
 
 Después de realizar la primera ronda de aprendizaje, puede realizar más rondas de aprendizaje o aplicar el filtro de puntuación de predicción del modelo al conjunto de revisión para ver los elementos que el modelo ha predicho como relevantes o no relevantes. Para obtener más información, vea [Apply a prediction score filter to a review set](predictive-coding-apply-prediction-filter.md).

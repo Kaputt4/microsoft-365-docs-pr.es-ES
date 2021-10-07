@@ -9,7 +9,7 @@ ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom:
 - AdminSurgePortfolio
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus compras de autoservicio.
 ms.date: 03/17/2021
-ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e4d8fe771340efa1e5084e77a1870e4db20bfe67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191637"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203356"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 
@@ -98,7 +98,7 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 ::: moniker-end
 2. Elija la suscripción a la que desea asignar licencias.
 3. Elija **Asignar licencias**.
-4. En el panel **asignar licencias a usuarios**, empiece a escribir un nombre y elíjalo en los resultados para agregarlo a la lista. Puede agregar hasta 20 usuarios a la vez.
+4. En el panel **Asignar licencias a usuarios**, empiece a escribir un nombre y a continuación selecciónelo en los resultados para agregarlo a la lista. Puede agregar hasta 20 usuarios a la vez.
     > [!NOTE]
     > Solo puede asignar licencias a personas de su organización.
 5. Elija **Asignar** y, a continuación, **seleccione Cerrar**.

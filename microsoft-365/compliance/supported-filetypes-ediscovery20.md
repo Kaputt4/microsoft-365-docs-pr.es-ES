@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Una lista de tipos de archivo admitidos en Microsoft 365 Advanced eDiscovery, incluidos los tipos de archivo de imagen admitidos por la funcionalidad OCR en Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0a637dc0505b74a2b7f7d726ed9a731db8e68c12
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3dccc6b0a8c96f7d78a2225051aca626818ec889
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221846"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204206"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipos de archivo admitidos en Advanced eDiscovery
 
@@ -57,7 +57,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 |vídeo/x-m4v|Sí|Sí|No|Sí|No|.m4v|
 |
 
-## <a name="database"></a>Database
+## <a name="database"></a>Base de datos
 
 <br>
 
@@ -239,7 +239,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 |application/vnd.oasis.opendocument.text|Sí|Sí|Sí|Sí|Sí|.odt|
 |
 
-## <a name="other"></a>Otros
+## <a name="other"></a>Otro
 
 <br>
 

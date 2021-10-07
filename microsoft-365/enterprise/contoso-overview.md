@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender Contoso Corporation como un negocio y la estructura en niveles de sus oficinas en todo el mundo.
-ms.openlocfilehash: 87508d47e5124f55a0302ca305b0dbd9de07e841
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9c14849d09dc4adb75630dffd86d00d7bc766545
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218660"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189182"
 ---
 # <a name="overview-of-contoso-corporation"></a>Información general sobre Contoso Corporation
 

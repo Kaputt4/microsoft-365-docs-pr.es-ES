@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Use un script local para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
-ms.openlocfilehash: 18e1230285df0c462000454f2b13ac5bb2245e92
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a0a0f961d81d6637c40c8b6befb3c46aaa829905
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193057"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204388"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Incorporar dispositivos Windows 10 mediante un script local
 

@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Obtenga información acerca de cómo usar el Administrador de cumplimiento en el Portal de confianza del servicio de Microsoft para satisfacer los requisitos normativos y de protección de datos.
 ms.custom: seo-marvel-apr2020
 ROBOTS: NOINDEX
-ms.openlocfilehash: fa4ed459f713761e648454c42c8ded91391f7cff
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a4d38c827fb2941516c2d84389204723599db44b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556173"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203224"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Administrador de cumplimiento de Microsoft (clásico)
 
@@ -264,8 +264,8 @@ Basándose en la clasificación de gravedad del control, se asignará un valor d
 |Nivel de riesgo|Valor del control|
 |---|:---:|
 |Bajo|1-3|
-|Moderado|6|
-|Alto|8|
+|Moderado|6 |
+|Alto|8 |
 |Grave|10|
 
 Al dar prioridad a los controles de evaluación con los valores de puntuación de cumplimiento más elevados, la organización se centrará en los elementos de mayor riesgo y recibirá una respuesta más positiva proporcionalmente, ya que se agregarán más puntos a la puntuación de cumplimiento total por la evaluación completada de cada control.

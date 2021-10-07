@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un espacio de colaboración para su equipo con Microsoft Teams.
-ms.openlocfilehash: c787f2c493643dcba2bbd5985fa518210aa8a5c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad0c9c938d7c5766bffc6fc960197b0568eb9cb5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186478"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189710"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Crear equipos para la colaboración en Microsoft Teams
 

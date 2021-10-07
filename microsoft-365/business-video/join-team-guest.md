@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo unirse a un equipo como invitado en Microsoft Teams.
-ms.openlocfilehash: acd5c68a7ed3e03f39037784a08cb4dce86f8163
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 62a123767fabd4bbaef6dc16c7aba0d30eec9217
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933968"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203548"
 ---
 # <a name="join-a-team-as-a-guest"></a>Unirse a un equipo como invitado
 

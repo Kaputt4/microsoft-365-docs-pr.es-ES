@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Exporte documentos en un conjunto de revisión en una cuenta Azure Storage y, a continuación, use Explorador de Azure Storage para descargarlos en un equipo local.
-ms.openlocfilehash: 352bce7134f92a7f6759673f28d388aac4957d1c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8f3110ef386fd5c5d8adc641aa223435caf0da67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218990"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203128"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exportar documentos en un conjunto de revisión a una Azure Storage cuenta
 

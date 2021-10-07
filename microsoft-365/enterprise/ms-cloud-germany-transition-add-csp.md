@@ -7,7 +7,7 @@ ms.date: 12/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información adicional para proveedores de soluciones en la nube relevante para la migración desde Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 843552c55acba57c5c2da4a1a885d65cb4e59d84
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa85c68943b807b2bbbafd14bc446c43c97e93f4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191274"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199950"
 ---
 # <a name="additional-information-for-cloud-solution-providers"></a>Información adicional para proveedores de soluciones en la nube
 

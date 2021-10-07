@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 07/01/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 674067ab082c70b2c5ae0fa0551a93c2d4f9a030
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8ff1cf191670dc2345293ebd8aa531b87b090a8a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189247"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205096"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Revisar Microsoft Defender para obtener Office 365 de arquitectura y conceptos clave
 
@@ -52,7 +52,7 @@ En la tabla siguiente se describe esta ilustración.
 |2     | Exchange Online Protection negocia y valida la conexión entrante e inspecciona los encabezados y el contenido del mensaje para determinar qué directivas adicionales, etiquetado o procesamiento son necesarios.  |
 |3     | Exchange Online se integra con Microsoft Defender para Office 365 ofrecer protección, mitigación y corrección de amenazas más avanzada. |
 |4      | Un mensaje que no es malintencionado, bloqueado o en cuarentena se procesa y entrega al destinatario en EXO donde las preferencias del usuario relacionadas con el correo no deseado, las reglas de buzón u otras opciones de configuración se evalúan y desencadenan. |
-|5      | La integración con Active Directory local se puede habilitar con Azure AD Conectar para sincronizar y aprovisionar cuentas y objetos habilitados para correo para Azure Active Directory y, en última instancia, Exchange Online. |
+|5     | La integración con Active Directory local se puede habilitar con Azure AD Conectar para sincronizar y aprovisionar cuentas y objetos habilitados para correo para Azure Active Directory y, en última instancia, Exchange Online. |
 |6      | Al integrar un entorno local, se recomienda encarecidamente usar un servidor Exchange para la administración y administración compatibles de atributos, configuraciones y configuraciones relacionados con el correo |
 |7      | Microsoft Defender para Office 365 comparte señales a Microsoft 365 Defender para la detección y respuesta extendidas (XDR).|
 
@@ -66,7 +66,7 @@ En la siguiente tabla se identificaron conceptos clave que son importantes para 
 |Concepto  |Descripción |Más información  |
 |---------|---------|---------|
 |Exchange Online Protection      |    Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que ayuda a proteger su organización contra correo electrónico no deseado y malware. EOP se incluye en todas las Microsoft 365 licencias que incluyen Exchange Online.     |   [Información general de Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)      |
-|Protección contra malware     |    Las organizaciones con buzones en EXO se protegen automáticamente contra malware.     |  [Protección contra malware en EOP](../office-365-security/anti-malware-protection.md)       |
+|Protección antimalware     |    Las organizaciones con buzones en EXO se protegen automáticamente contra malware.     |  [Protección contra malware en EOP](../office-365-security/anti-malware-protection.md)       |
 |Protección contra correo no deseado     |   Las organizaciones con buzones en EXO se protegen automáticamente contra el correo no deseado y las directivas de correo no deseado.      |  [Protección contra correo no deseado en EOP](../office-365-security/anti-spam-protection.md)       |
 |Protección contra phishing |  MDO ofrece una protección contra suplantación de identidad más avanzada relacionada con la suplantación de identidad de lanza, la caza de ballenas, el ransomware y otras actividades malintencionadas.   | [Protección adicional contra phishing en Microsoft Defender para Office 365](../office-365-security/anti-phishing-protection.md)   |
 |Protección contra la suplantación de identidad     |   EOP incluye características que ayudan a proteger su organización de remitentes falsificados (falsificados).      |   [Protección contra la suplantación de identidad en EOP](../office-365-security/anti-spoofing-protection.md)      |

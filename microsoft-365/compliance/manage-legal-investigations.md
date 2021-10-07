@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Use casos de exhibición de documentos electrónicos en Centro de cumplimiento de Microsoft 365 para administrar la investigación legal de su organización.
-ms.openlocfilehash: 9eb41a67ae4ddfd39e1d40219861e0bd279fc7b8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fc4e89645ef1912c33ab89ec190c87dc9c8a8965
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186150"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189386"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Administración de investigaciones legales en Microsoft 365
 

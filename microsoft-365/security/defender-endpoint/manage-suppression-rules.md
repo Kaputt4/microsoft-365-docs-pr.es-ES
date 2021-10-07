@@ -2,26 +2,24 @@
 title: Administrar reglas de supresión de Microsoft Defender para puntos de conexión
 description: Es posible que necesite evitar que las alertas aparezcan en el portal mediante reglas de supresión. Obtenga información sobre cómo administrar las reglas de supresión en Microsoft Defender para endpoint.
 keywords: administrar supresión, reglas, nombre de regla, ámbito, acción, alertas, activar, desactivar
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac8b6255b46c20582d43680b3287f324f4f63c42
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a40fe425f829f3521098ece27bd23948619cd66
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214900"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205336"
 ---
 # <a name="manage-suppression-rules"></a>Administrar reglas de supresión
 

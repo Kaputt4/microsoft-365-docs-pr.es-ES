@@ -2,7 +2,7 @@
 title: Configuración de administración de riesgos de Insider
 description: Obtenga información sobre la configuración de administración de riesgos de insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: f08273cf759173ea4e9dda8cfe1aae25bd070007
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: ea91263cf6f466f718d30d8cfdc303611bf755ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460436"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204304"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -195,7 +195,7 @@ A las actividades de usuario detectadas por las directivas de riesgo de insider 
 Según los tipos de señales que le interesen, puede elegir importar alertas a la administración de riesgos de información interna en función del estado de evaluación de alertas de Defender for Endpoint. Puede definir uno o varios de los siguientes estados de triaje de alertas en la configuración global que se va a importar:
 
 - Unknown
-- Nueva
+- Nuevo
 - En curso
 - Resuelto
 

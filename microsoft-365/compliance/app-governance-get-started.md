@@ -10,17 +10,17 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkMAC
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Introducción a las funcionalidades de gobernanza de aplicaciones para controlar sus aplicaciones.
-ms.openlocfilehash: b57d5b36266a5facebe8136b14d01014cfe68b03
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 74a9a9ad29e9d99740500d7dd249fd69cbbc6547
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042787"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189578"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Introducción a la gobernanza de aplicaciones (en versión preliminar)
 

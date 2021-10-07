@@ -10,16 +10,16 @@ ms.topic: overview
 ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b0b11d43b0736224a26c2863afa6de6be31e4a63
-ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
+ms.openlocfilehash: ceda29b0e4ad17cfd9a6d9ad43a42f0ee31323ea
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60069130"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205332"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Configurar y configurar Microsoft Defender para endpoint plan 1 (versión preliminar)
 
@@ -55,7 +55,7 @@ En la tabla siguiente se enumeran los requisitos básicos de Defender para el pl
 | Requisito | Descripción |
 |:---|:---|
 | Requisitos de licencias | Plan 1 de Defender para punto de conexión (versión preliminar) <br/><br/>*Si tiene una Microsoft 365 E3 O A3, puede unirse al programa de vista previa.* |
-| Requisitos de los exploradores | Microsoft Edge <br/> Versión 11 de Internet Explorer <br/> Google Chrome |
+| Requisitos de los exploradores | Microsoft Edge <br/> Versión 11 de Internet Explorer <br/> Google Chrome |
 | Sistemas operativos | Windows 10, versión 1709 o posterior <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina) o 10.14.6 (Mojave) <br/>iOS <br/>Sistema operativo Android  |
 | Datacenter | Una de las siguientes ubicaciones de centro de datos: <br/>- Unión Europea <br/>- Reino Unido <br/>- Estados Unidos |
 
@@ -312,7 +312,7 @@ Con la protección web, puede proteger los dispositivos de su organización fren
 
 5. En la **pestaña Configuración,** expanda **Protección web**, especifique la configuración de la tabla siguiente y, a continuación, **elija Siguiente**. <br/><br/>
 
-   | Valor | Recomendación |
+   | Configuración | Recomendación |
    |:---|:---|
    | **Habilitar la protección de red** | Se establece en **Habilitado**. Impide que los usuarios visiten sitios o dominios malintencionados. <br/><br/>Como alternativa, puede establecer la protección de red en **modo auditoría** para ver cómo funcionará en su entorno. En el modo de auditoría, la protección de red no impide que los usuarios visiten sitios o dominios, pero sí realiza un seguimiento de las detecciones como eventos. |
    | **Requerir SmartScreen para Microsoft Edge (versión anterior)** | Se establece en **Sí**. Ayuda a proteger a los usuarios de posibles estafas de suplantación de identidad (phishing) y software malintencionado. |
@@ -403,7 +403,7 @@ Para ayudarle con la planeación de la implementación de WDAC, consulte los sig
 
 - [Windows Defender Implementación de Control de aplicaciones en diferentes escenarios: tipos de dispositivos](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Próximos pasos
 
 Ahora que ha pasado por el proceso de configuración y configuración, el siguiente paso es empezar a usar Defender para endpoint. 
 

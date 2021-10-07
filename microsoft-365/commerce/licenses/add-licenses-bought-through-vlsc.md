@@ -9,7 +9,7 @@ ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Obtén información sobre cómo agregar licencias a tu suscripción Microsoft 365 comprada a través del partner de terceros, reconocido por Microsoft.
 ms.date: 08/27/2021
-ms.openlocfilehash: 5877ffbc1d0403d362666c4b6c34cdfee8aa5ee2
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: d5c8c689db74c1e12588ab1ad1bcefc102f9476d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745786"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203464"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Agregar licencias a una suscripción comprada en el Centro de servicios de licencias por volumen
 

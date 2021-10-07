@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo planear el inicio del portal en SharePoint Online y qué pasos seguir para un inicio correcto
-ms.openlocfilehash: 82c4db0ccf544c66746c2a8b01e9b932a7f64564
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 064870dd2748c6e936b12c2f333ab1d873b572cd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187977"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186794"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planeación del plan de lanzamiento del portal en SharePoint Online
 

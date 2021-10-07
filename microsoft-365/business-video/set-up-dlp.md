@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo administrar la configuración de directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 04dbbcfd39186b8161fb497b72ddb070fbfb7471
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a2e22e11a60953b882c088dd9e51dcde77695252
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212797"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188606"
 ---
 # <a name="prevent-data-loss-with-dlp"></a>Evitar la pérdida de datos con DLP
 

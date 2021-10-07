@@ -2,26 +2,24 @@
 title: Cómo implementar Defender para endpoint en Linux con Chef
 description: Obtenga información sobre cómo implementar Defender for Endpoint en Linux con Chef
 keywords: microsoft, defender, atp, linux, exámenes, antivirus, microsoft defender para el punto de conexión (linux)
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: v-lsaldanha
 author: lovina-saldanha
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d0ef13f9718c82c920ab7bd4a151f77b1162208f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f8f71f4cafc7034a8d5cc5485989f0cab472a855
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215070"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188870"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Implementar Defender para punto de conexión en Linux con Chef
 

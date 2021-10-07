@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd43fc2bfb8ef83eff988481a87dd48b1b53566b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dc687a18df0c23e993a72c081e4f67eceb7efd40
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189397"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204028"
 ---
 # <a name="restrict-app-execution-api"></a>Restringir api de ejecución de aplicaciones
 
@@ -82,7 +82,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/restrictCodeExec
 Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

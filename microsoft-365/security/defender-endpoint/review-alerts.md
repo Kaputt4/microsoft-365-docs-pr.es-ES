@@ -8,7 +8,7 @@ f1.keywords:
 - NOCSH
 ms.author: daniha
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: 01b9fb5a3483d287f4d43db0a95af6add284b023
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cb4a30c527034ed95ca0c4c3c5c3a16912ca7e1e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187406"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205228"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Revisar alertas en Microsoft Defender para endpoint
 

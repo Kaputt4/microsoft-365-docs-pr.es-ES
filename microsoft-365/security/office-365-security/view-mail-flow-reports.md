@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: Los administradores pueden obtener información sobre los informes 
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a049a0d78bff8b86c84e89f616662e00f984c778
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: ab85d7825d7ecda7abf58391cb400e10692d5821
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484136"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203884"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel Informes del Centro de & cumplimiento
 
@@ -94,7 +94,7 @@ Si hace clic **en Ver tabla de detalles,** la información que se muestra depend
 
 - **Ver datos por: Exchange de transporte :**
 
-  - **Fecha**
+  - **Date**
   - **Regla de transporte**
   - **Asunto**
   - **Dirección del remitente**
@@ -104,7 +104,7 @@ Si hace clic **en Ver tabla de detalles,** la información que se muestra depend
 
 - **Ver datos por: DLP Exchange de transporte:**
 
-  - **Fecha**
+  - **Date**
   - **Directiva DLP**
   - **Regla de transporte**
   - **Asunto**
@@ -160,7 +160,7 @@ Puede cambiar estos filtros haciendo clic en **Filtrar** o haciendo clic en un v
 La tabla de datos contiene la siguiente información:
 
 - **Direction**
-- **Tipo**
+- **Type**
 - **24 horas**
 - **3 días**
 - **7 días**
@@ -237,7 +237,7 @@ Para ver el correo electrónico filtrado por EOP o Defender Office 365 por separ
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
-- **Fecha**
+- **Date**
 - **Correo electrónico total**
 - **Protección perimetral**
 - **Antimalware, reputación de archivo, bloque de tipo de archivo:**
@@ -306,7 +306,7 @@ Al pasar el mouse sobre una categoría del gráfico, puede ver el número de men
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
-- **Fecha**
+- **Date**
 - **Correo electrónico total**
 - **Perímetro filtrado**
 - **Motor antimalware, Caja fuerte datos adjuntos, regla filtrada:**
@@ -409,7 +409,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+> Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -9,7 +9,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 'Resumen: cree una red virtual entre locales simulada en Microsoft Azure como entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 55fff394e077bf67e67e951778b927d6c892f2f2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0d0e22b5c9a12f4757a6dff5892ef72a757d2bda
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570502"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202852"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Red virtual entre locales simulada en un entorno de prueba de Microsoft 365
 
@@ -219,6 +219,6 @@ Explore estos conjuntos adicionales de guías de laboratorio de pruebas:
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

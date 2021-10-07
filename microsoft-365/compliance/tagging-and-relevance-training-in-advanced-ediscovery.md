@@ -10,19 +10,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Aprenda los pasos para etiquetar y, a continuación, trabajar con una muestra de aprendizaje de 40 archivos durante la fase de aprendizaje de relevancia de Advanced eDiscovery.
-ms.openlocfilehash: 8cb1de2b2f02ec9c2fd94e07574b638a001ec235
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c21ec89896dbd67bd348abd317d1389f8e105fda
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216397"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202996"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Formación de etiquetas y relevancia en Advanced eDiscovery
   
@@ -48,7 +48,7 @@ Una vez completada la evaluación en Advanced eDiscovery y entras en la fase de 
    |-----|-----|-----|-----|
    |R  <br/> |Relevante  <br/> |Z  <br/> |`Shift + Z`  <br/> |
    |NR  <br/> |No relevante  <br/> |X  <br/> |`Shift + X`  <br/> |
-   |Skip  <br/> |Skip  <br/> |C  <br/> |`Shift + A`  <br/> |
+   |Omitir  <br/> |Omitir  <br/> |C  <br/> |`Shift + A`  <br/> |
    |||||
 
    - Cuando existen varios problemas para un archivo, después de etiquetar un problema, la selección pasa al siguiente problema (si existe).  

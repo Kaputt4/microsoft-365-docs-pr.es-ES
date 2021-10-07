@@ -2,7 +2,7 @@
 title: Administración de acceso con privilegios en Microsoft 365
 description: Obtenga información sobre cómo configurar las capacidades de riesgo de insider en Microsoft 365.
 keywords: Microsoft 365, riesgo interno, cumplimiento
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 9c6e62db4a83e238c840e7e953a78c6e8856a25a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 542c9814522eff056e236b9ac8c260c06524461b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221133"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203044"
 ---
 # <a name="privileged-access-management-in-microsoft-365"></a>Administración de acceso con privilegios en Microsoft 365
 

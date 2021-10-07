@@ -6,14 +6,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información sobre cómo configurar las notificaciones de texto SMS para clientes, clientes y partners en Microsoft Bookings.
-ms.openlocfilehash: 2b23ed2bd39cd301bfa1df3e15f325c676f1462d
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: be5d1d93754707be8217c5c3e17ec7d9f158e501
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491654"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204844"
 ---
 # <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>Configurar avisos y notificaciones de texto SMS en Microsoft Bookings
 

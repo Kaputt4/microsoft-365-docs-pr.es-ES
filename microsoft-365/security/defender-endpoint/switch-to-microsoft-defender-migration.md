@@ -2,15 +2,13 @@
 title: Cambiar de la protección de puntos de conexión que no son de Microsoft a Microsoft Defender para el extremo
 description: Cambia a Microsoft Defender para Endpoint, que incluye Antivirus de Microsoft Defender para la solución de protección de puntos de conexión.
 keywords: migración, Windows Defender, protección avanzada de puntos de conexión, antivirus, antimalware, modo pasivo, modo activo
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -24,12 +22,12 @@ ms.custom: migrationguides
 ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: e9562ae976e4eeac1197c5280caebef449ae0180
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: e7b6777970102b71f61fcaed7a8a13daf8d73fa7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776769"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205204"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Cambiar de la protección de puntos de conexión que no son de Microsoft a Microsoft Defender para el extremo
 
@@ -64,7 +62,7 @@ En esta guía de [](microsoft-defender-antivirus-in-windows-10.md) migración, n
 |[Administración de vulnerabilidades y amenazas](next-gen-threat-and-vuln-mgt.md)|Las & administración de vulnerabilidades de amenazas ayudan a identificar, evaluar y corregir puntos débiles en los puntos de conexión (como dispositivos).|
 |[Reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)|Las reglas de reducción de superficie de ataque ayudan a proteger los dispositivos y aplicaciones de la organización de ciberamenazas y ataques.|
 |[Protección de última generación](microsoft-defender-antivirus-in-windows-10.md)|La protección de última generación Antivirus de Microsoft Defender ayuda a bloquear amenazas y malware.|
-|[Detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md)|Las capacidades de detección y respuesta de puntos de conexión detectan, investigan y responden a intentos de intrusión e infracciones activas.|
+|[EDR](overview-endpoint-detection-response.md)|Las capacidades de detección y respuesta de puntos de conexión detectan, investigan y responden a intentos de intrusión e infracciones activas.|
 |[Búsqueda avanzada de amenazas](advanced-hunting-overview.md)|Las capacidades avanzadas de búsqueda permiten al equipo de operaciones de seguridad localizar indicadores y entidades de amenazas conocidas o potenciales.|
 |[Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)|Las capacidades de bloqueo y contención del comportamiento ayudan a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse.|
 |[Investigación y corrección automatizadas](automated-investigations.md)|Las capacidades automatizadas de investigación y respuesta examinan las alertas y toman medidas de corrección inmediatas para resolver infracciones.|

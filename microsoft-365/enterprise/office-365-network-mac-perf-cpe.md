@@ -7,19 +7,19 @@ ms.date: 03/10/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de red informado
-ms.openlocfilehash: bccac9dae56bb4a44df7a96144eb84ae7c19a84b
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: 4781acd78e314592ca33cdad77e1f270e86e002c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745006"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199914"
 ---
 # <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365 enrutamiento de red informado (versión preliminar)
 

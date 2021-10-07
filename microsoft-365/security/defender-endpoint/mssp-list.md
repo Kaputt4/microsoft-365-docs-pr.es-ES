@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cdd1cbf3c8845e9d1e4a894c59b93f2a071cccf1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae2e8d45e8a3fc95c9cbca42981a73c15b04d6d1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213490"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199818"
 ---
 # <a name="supported-managed-security-service-providers"></a>Proveedores de servicios de seguridad administrados compatibles
 

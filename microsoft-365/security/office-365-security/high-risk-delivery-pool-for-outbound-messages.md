@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga información sobre cómo se usan los grupos de entrega para proteger la reputación de los servidores de correo electrónico en Microsoft 365 centros de datos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5881b20eaed8387988d01b69a4acd022c5924a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75df83b5827fa3c2b5832c634c1de15ab7d619dd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214407"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205024"
 ---
 # <a name="outbound-delivery-pools"></a>Grupos de entrega de salida
 

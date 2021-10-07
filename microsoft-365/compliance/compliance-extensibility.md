@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo ampliar Microsoft 365 de cumplimiento normativo mediante conectores de datos de terceros y API Graph Microsoft.
-ms.openlocfilehash: 1fed5ac72c7dbfa4b1be370ec03678e1beecdcd2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bc812a6cdc051daf64b14f60db32f360ceee7bd4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190007"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204412"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365 extensibilidad de cumplimiento normativo
 

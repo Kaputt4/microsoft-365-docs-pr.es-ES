@@ -10,16 +10,16 @@ ms.topic: overview
 ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5edc3db69c8c1f0f6f0a5f79a0838d2b054c9e91
-ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
+ms.openlocfilehash: 17026088cc10b5ace84cbab31f0a383661e2484b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60069118"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204052"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Información general de Microsoft Defender para el plan 1 de punto de conexión (versión preliminar)
 
@@ -194,7 +194,7 @@ La mayoría de las organizaciones usan varios dispositivos y sistemas operativos
 - iOS
 - Sistema operativo Android
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Comparar Microsoft Defender para endpoint plan 1 (versión preliminar) con plan 2](defender-endpoint-plan-1-2.md)
 - [Configurar y configurar Defender para endpoint plan 1 (versión preliminar)](mde-p1-setup-configuration.md)

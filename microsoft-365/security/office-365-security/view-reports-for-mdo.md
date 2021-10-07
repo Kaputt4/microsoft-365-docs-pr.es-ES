@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ description: Los administradores pueden aprender a buscar y usar defender para O
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: da89b5421171eefe56363f38e1959cede2ef5afb
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 522abcdc22a17555eab6f0c2e46a424529a15b99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988501"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203858"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver Defender para obtener Office 365 informes en el portal Microsoft 365 Defender web
 
@@ -159,7 +159,7 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en tiempo real de todos los clics que se han producido en la organización durante los últimos 7 días:
 
 - **Hora de hacer clic**
-- **User**
+- **Usuario**
 - **URL**
 - **Action**
 - **Aplicación**
@@ -193,7 +193,7 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Can
 La tabla de detalles debajo del gráfico proporciona la siguiente vista casi en tiempo real de todos los clics que se han producido en la organización durante los últimos 7 días:
 
 - **Hora de hacer clic**
-- **User**
+- **Usuario**
 - **URL**
 - **Action**
 - **Aplicación**

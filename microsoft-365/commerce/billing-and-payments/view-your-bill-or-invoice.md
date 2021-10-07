@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection:
 - M365-subscription-management
@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 07/31/2020
-ms.openlocfilehash: 319d8469ebdf1500f5f10e7fb84f69b9d87bed7c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d0b0f75615b7d1110d1a0366b96f32807a033fd7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190427"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189674"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura o recibo
 
@@ -37,7 +37,7 @@ Este artículo está dirigido a las personas que tienen una suscripción a Micro
   
 Si necesita ayuda para interpretar los cargos que aparecen en su factura, vea [Entender la factura](understand-your-invoice2.md) para obtener una guía detallada.
   
-**¿Tiene algún problema con la factura?** [Póngase en contacto con soporte técnico para productos empresariales](../../business-video/get-help-support.md)
+**Tiene algún problema con la factura?**[Póngase en contacto con el soporte técnico para productos empresariales](../../business-video/get-help-support.md).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

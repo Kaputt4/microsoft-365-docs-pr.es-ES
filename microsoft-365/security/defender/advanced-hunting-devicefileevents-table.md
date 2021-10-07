@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1b716a37aa39dffc8dc541335f42265ae47fe989
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d6c47c3afa3ab32fc227442e93d61b1f66fd2e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166742"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205132"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -54,44 +54,44 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `MD5` | cadena | Hash MD5 del archivo al que se aplicó la acción grabada |
-| `FileOriginUrl` | cadena | DIRECCIÓN URL desde la que se descargó el archivo |
+| `FileOriginUrl` | string | DIRECCIÓN URL desde la que se descargó el archivo |
 | `FileOriginReferrerUrl` | string | Dirección URL de la página web que vincula al archivo descargado |
 | `FileOriginIP` | string | Dirección IP desde la que se descargó el archivo |
 | `PreviousFolderPath` | string | Carpeta original que contiene el archivo antes de aplicar la acción grabada |
 | `PreviousFileName` | string | Nombre original del archivo cuyo nombre se cambió como resultado de la acción |
 | `FileSize` | largo | Tamaño del archivo en bytes |
-| `InitiatingProcessAccountDomain` | cadena | Dominio de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountDomain` | string | Dominio de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountName` | string | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountSid` | string | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountObjectId` | cadena | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountObjectId` | string | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
 | `InitiatingProcessMD5` | string | Hash MD5 del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessSHA1` | cadena | SHA-1 del proceso (archivo de imagen) que inició el evento |
+| `InitiatingProcessSHA1` | string | SHA-1 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessFolderPath` | cadena | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessFileName` | cadena | Nombre del proceso que inició el evento |
+| `InitiatingProcessFileName` | string | Nombre del proceso que inició el evento |
 | `InitiatingProcessFileSize` | largo | Tamaño del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessVersionInfoCompanyName` | cadena | Nombre de la compañía a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoProductName` | cadena | Nombre del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoCompanyName` | string | Nombre de la compañía a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoProductName` | string | Nombre del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
 |` InitiatingProcessVersionInfoProductVersion` | string | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
-|` InitiatingProcessVersionInfoInternalFileName` | cadena | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoOriginalFileName` | cadena | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
+|` InitiatingProcessVersionInfoInternalFileName` | string | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoFileDescription` | string | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessId` | Entero | Identificador de proceso (PID) del proceso que inició el evento |
+| `InitiatingProcessId` | int | Identificador de proceso (PID) del proceso que inició el evento |
 | `InitiatingProcessCommandLine` | string | Línea de comandos usada para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
 | `InitiatingProcessIntegrityLevel` | string | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos de los recursos |
 | `InitiatingProcessTokenElevation` | string | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso que inició el evento |
-| `InitiatingProcessParentId` | Entero | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentId` | int | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el elemento primario del proceso responsable del evento |
 | `RequestProtocol` | string | Protocolo de red, si procede, usado para iniciar la actividad: Desconocido, Local, SMB o NFS |
-| `RequestSourceIP` | cadena | Dirección IPv4 o IPv6 del dispositivo remoto que inició la actividad |
+| `RequestSourceIP` | string | Dirección IPv4 o IPv6 del dispositivo remoto que inició la actividad |
 | `RequestSourcePort` | string | Puerto de origen en el dispositivo remoto que inició la actividad |
-| `RequestAccountName` | cadena | Nombre de usuario de la cuenta usada para iniciar la actividad de forma remota |
+| `RequestAccountName` | string | Nombre de usuario de la cuenta usada para iniciar la actividad de forma remota |
 | `RequestAccountDomain` | string | Dominio de la cuenta usada para iniciar la actividad de forma remota |
-| `RequestAccountSid` | cadena | Identificador de seguridad (SID) de la cuenta usada para iniciar la actividad de forma remota |
-| `ShareName` | cadena | Nombre de la carpeta compartida que contiene el archivo |
+| `RequestAccountSid` | string | Identificador de seguridad (SID) de la cuenta usada para iniciar la actividad de forma remota |
+| `ShareName` | string | Nombre de la carpeta compartida que contiene el archivo |
 | `InitiatingProcessFileSize` | largo | Tamaño del archivo que ejecutó el proceso responsable del evento |
 | `SensitivityLabel` | string | Etiqueta aplicada a un correo electrónico, archivo u otro contenido para clasificarlo para la protección de la información |
 | `SensitivitySubLabel` | string | Sublabel applied to an email, file, or other content to classify it for information protection; las subetiquetas de confidencialidad se agrupan bajo etiquetas de confidencialidad, pero se tratan de forma independiente |

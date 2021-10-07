@@ -3,27 +3,25 @@ title: Implementar Microsoft Defender para endpoint en Linux con Ansible
 ms.reviewer: ''
 description: Describe cómo implementar Microsoft Defender para Endpoint en Linux con Ansible.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dc4986f5ef71f7080c3296448c1b85a717336940
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 0ecc13693a043602885e8f221e6967bd44eb0da8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460297"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205444"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Implementar Microsoft Defender para endpoint en Linux con Ansible
 
@@ -283,5 +281,5 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 - [Administrar paquetes aptos](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Investigar problemas de estado del agente](health-status.md)

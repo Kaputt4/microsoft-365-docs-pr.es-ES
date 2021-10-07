@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - MACBillingBillsPaymentsBillingProfiles
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
 ms.date: 04/02/2021
-ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8407e3855a8e497c730925a424b999ed07da6228
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219197"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188558"
 ---
 # <a name="understand-billing-profiles"></a>Entender los perfiles de facturación
 

@@ -2,27 +2,25 @@
 title: Solucionar problemas y encontrar respuestas en preguntas frecuentes relacionadas con Microsoft Defender para endpoint en iOS
 description: 'Solución de problemas y preguntas frecuentes: Microsoft Defender para endpoint en iOS'
 keywords: microsoft, defender, Microsoft Defender para Endpoint, ios, troubleshoot, faq, how to
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a7900256207dd50f64a4bb8fe43b86bcf2b2913
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 809954847f1ef96f3efae1b243061af4f573a21e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988276"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199806"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -106,7 +104,7 @@ Para obtener más información acerca de los datos recopilados y la privacidad, 
 
 ## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>Problemas en dispositivos supervisados con el perfil de filtro de contenido instalado
 
-Hay un problema en dispositivos supervisados con el filtro de contenido de Defender for Endpoint instalado. Si observa lentitud o latencia en la conectividad entre conjunto en estos dispositivos, desinstale o elimine el perfil de filtro de contenido del dispositivo. Estamos trabajando para resolver este problema y actualizaremos este lugar una vez que disponen de una resolución. 
+Hay un problema en dispositivos supervisados con el filtro de contenido de Defender for Endpoint instalado. Si observa lentitud o latencia en la conectividad a Internet en estos dispositivos, desinstale o elimine el perfil de filtro de contenido del dispositivo. Estamos trabajando para resolver este problema y actualizaremos este lugar una vez que disponen de una resolución. 
 
 ## <a name="issues-during-app-updates-from-the-app-store"></a>Problemas durante las actualizaciones de aplicaciones de la tienda de aplicaciones
 
@@ -114,7 +112,7 @@ Si observas problemas cuando la aplicación se actualiza a través de la tienda 
 
 ## <a name="send-in-app-feedback"></a>Enviar comentarios desde la aplicación
 
-Si un usuario se enfrenta a un problema que aún no se ha tratado en las secciones anteriores o no puede resolver con los pasos enumerados, el usuario puede proporcionar comentarios desde la aplicación junto con los datos de diagnóstico. A continuación, nuestro equipo investigará los registros para proporcionar la solución adecuada. Los usuarios pueden usar los siguientes pasos para enviar la devolución:
+Si un usuario se enfrenta a un problema que aún no se ha tratado en las secciones anteriores o no puede resolver con los pasos enumerados, el usuario puede proporcionar comentarios desde la aplicación junto con los datos de diagnóstico. A continuación, nuestro equipo investigará los registros para proporcionar la solución adecuada. Los usuarios pueden usar los siguientes pasos para enviar comentarios:
 
   - Abre la aplicación MSDefender en el dispositivo iOS/iPadOS.
   - Pulsa en Menú (icono de perfil) en la esquina superior izquierda.

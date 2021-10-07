@@ -9,17 +9,17 @@ ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Usa esta Guía del laboratorio de pruebas para inscribir dispositivos Microsoft 365 entorno de prueba y administrarlos de forma remota.
-ms.openlocfilehash: 5e27f2eecc9edda0a0fe7225d4ed47c7431eee77
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7610348febcc8c2054c50d7f7a6f1433e9b62306
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189627"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189122"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscribir dispositivos iOS y Android en su Microsoft 365 entorno de prueba empresarial
 
@@ -58,7 +58,7 @@ En Intune, hay algunas formas de inscribir los dispositivos iOS/iPadOS y Android
 Si estás listo para usar Intune para la administración de dispositivos y quieres algunas instrucciones, la siguiente información puede ayudar:
 
 - [Introducción a la administración de dispositivos](/mem/intune/fundamentals/what-is-device-management)
-- [Tutorial: Tutorial de Intune en Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
+- [Tutorial: Paso a paso de Intune en Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
 - [Guía de implementación: configurar o mover a Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 
 ## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>Fase 3: Administrar los dispositivos iOS y Android de forma remota

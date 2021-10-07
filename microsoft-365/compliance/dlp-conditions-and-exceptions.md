@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 recommendations: false
 description: obtenga información sobre las condiciones y excepciones de la directiva dlp
-ms.openlocfilehash: 385c59a41535fbc3fdec0fc551a50b6915736f4f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6e02b4010671404174c9166bd65e237295e87483
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193087"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204400"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Condiciones de directiva DLP, excepciones y acciones
 
@@ -97,7 +97,7 @@ Las tablas de las secciones siguientes describen las condiciones y excepciones q
 |Asunto o Cuerpo contiene palabras|condición: *SubjectOrBodyContainsWords* <br/> *excepción: ExceptIfSubjectOrBodyContainsWords*|Words|Mensajes que tienen las palabras especificadas en el campo de asunto o el cuerpo del mensaje|
 |
 
-### <a name="attachments"></a>Attachments
+### <a name="attachments"></a>Datos adjuntos
 
 <br>
 
@@ -136,7 +136,7 @@ Las tablas de las secciones siguientes describen las condiciones y excepciones q
 
 |condición o excepción en DLP|parámetros de condición/excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
-|Con importancia|condición: *WithImportance* <br/> *excepción: ExceptIfWithImportance*|Importance|Mensajes marcados con el nivel de importancia especificado.|
+|Con importancia|condición: *WithImportance* <br/> *excepción: ExceptIfWithImportance*|Importancia|Mensajes marcados con el nivel de importancia especificado.|
 |El juego de caracteres de contenido contiene palabras|condición: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*|CharacterSets|Mensajes que contienen alguno de los nombres de juego de caracteres especificados.|
 |Tiene invalidación de remitente|condición: *HasSenderOverride* <br/> *excepción: ExceptIfHasSenderOverride*|N/D|Mensajes en los que el remitente ha elegido invalidar una directiva de prevención de pérdida de datos (DLP). Para obtener más información acerca de las directivas DLP, [vea Learn about data loss prevention](./dlp-learn-about-dlp.md)|
 |Coincidencias de tipo de mensaje|condición: *MessageTypeMatches* <br/> excepción: *ExceptIfMessageTypeMatches*|MessageType|Mensajes del tipo especificado.|

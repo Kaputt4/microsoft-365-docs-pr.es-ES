@@ -1,6 +1,6 @@
 ---
-title: API de Microsoft 365 Defender (versión preliminar) admitidas
-description: API de Microsoft 365 Defender (versión preliminar) admitidas
+title: Las API de Microsoft 365 Defender compatibles
+description: Las API de Microsoft 365 Defender compatibles
 keywords: Microsoft 365 Defender, API, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 77c20811e6aeba266908b4d83c4f81da8b5716d4
-ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
+ms.openlocfilehash: c77e825fa680a038ba89a9054e04ce939dcb7941
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59453585"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203920"
 ---
-# <a name="supported-microsoft-365-defender-apis"></a>API de Microsoft 365 Defender (versión preliminar) admitidas 
+# <a name="supported-microsoft-365-defender-apis"></a>Las API de Microsoft 365 Defender compatibles 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.

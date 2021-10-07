@@ -9,14 +9,14 @@ ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
-description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en Centro de cumplimiento de Microsoft 365 para buscar rápidamente correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones OneDrive y conversaciones de mensajería instantánea en Skype Empresarial.
-ms.openlocfilehash: 577b3af2bbeb1856f55de31123b71f2597c6604a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en Centro de cumplimiento de Microsoft 365 para buscar rápidamente correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones OneDrive y conversaciones de mensajería instantánea en Skype Empresarial .
+ms.openlocfilehash: 6a49dffccb701958912fb0185eec4a8312f22429
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183982"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203008"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Buscar contenido con la herramienta de búsqueda de contenido
 
