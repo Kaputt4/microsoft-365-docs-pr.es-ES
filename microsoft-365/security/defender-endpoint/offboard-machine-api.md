@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b62dbc0881ffe1b7129c053d13ee509796aef5b9
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 961f7b5635a5af1eb7dff0bae790bbf9660a0f57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399435"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168271"
 ---
 # <a name="offboard-machine-api"></a>API de máquina fuera de la máquina
 
@@ -77,8 +77,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 Nombre|Tipo|Descripción
 ---|---|---
-Authorization|String|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

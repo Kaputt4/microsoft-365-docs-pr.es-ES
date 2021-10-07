@@ -1,5 +1,5 @@
 ---
-title: Temas Microsoft Viva seguridad y privacidad
+title: Seguridad y privacidad en Temas Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,16 +8,16 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: Obtenga información sobre cómo planear Temas Microsoft Viva seguridad y privacidad
-ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+description: Obtenga información sobre cómo planear la seguridad y la privacidad en Temas Microsoft Viva.
+ms.openlocfilehash: 4b0c94244badab9aa7e294b04b20b09149ead3b7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187745"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168439"
 ---
-# <a name="microsoft-viva-topics-security-and-privacy"></a>Temas Microsoft Viva seguridad y privacidad
+# <a name="security-and-privacy-in-microsoft-viva-topics"></a>Seguridad y privacidad en Temas Microsoft Viva
 
 Los temas usan características de seguridad de contenido existentes en Microsoft 365, junto con los controles administrativos, para controlar lo que el contenido generado por AI se muestra a los usuarios de la organización. Es la combinación de la Microsoft 365 de seguridad (permisos para sitios, archivos y carpetas) y la configuración de administración temas que determinan lo que un usuario determinado puede ver en los temas.
 
@@ -86,7 +86,7 @@ Además, se recomiendan estos procedimientos recomendados:
 
 Aunque puede cambiar los permisos de las páginas de temas individuales para restringir el acceso a un grupo específico de usuarios, no se recomienda este enfoque porque se necesita un alto grado de esfuerzo administrativo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Configurar Teams con tres niveles de protección](../solutions/configure-teams-three-tiers-protection.md)
 

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de alto valor para obligaciones legales, empresariales o reglamentarias, pero no sabe por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 0af5391a7964e242067d70e559d082ede0c9fb3a
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: d87d24bce7e0ad24e5b9914fe98379fd9f40f1bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497779"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167251"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
@@ -36,7 +36,7 @@ ms.locfileid: "59497779"
 
 3. **Cree el plan de archivos para la configuración y las acciones de retención**. Para ello, [importe un plan existente](file-plan-manager.md#import-retention-labels-into-your-file-plan) si lo tiene, o cree [nuevas etiquetas de retención que declaren registros](declare-records.md).
 
-4. **Publique y aplique las etiquetas de retención**. Las etiquetas de retención son bloques de creación reutilizables que se pueden emplear en diferentes directivas y se pueden incorporar a los flujos de trabajo del usuario:
+4. **Publicar y aplicar las etiquetas de retención**. Las etiquetas de retención son bloques de creación reutilizables que se pueden usar en varias directivas y se pueden incorporar a flujos de trabajo de usuario:
 
     - [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
     - [Aplicar una etiqueta de retención a contenido automáticamente](apply-retention-labels-automatically.md)
@@ -49,7 +49,7 @@ Para ver las opciones para que los usuarios puedan beneficiarse de las caracter�
 
 ## <a name="permissions-required-for-records-management"></a>Permisos necesarios para la administración de registros
 
-Los miembros de su equipo de cumplimiento responsables de la administración de registros necesitan permisos en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador del espacio empresarial (administrador global) tiene acceso a esta ubicación y puede dar acceso a los oficiales de cumplimiento y a otras personas sin otorgarles todos los permisos de un administrador de espacio empresarial. Para otorgar permisos para esta administración limitada, recomendamos que agregue usuarios al grupo de funciones de administrador de **Administración de registros**, que otorga permisos para todas las funciones relacionadas con la administración de registros, incluida la [revisión y verificación de la disposición](disposition.md).
+Los miembros del equipo de cumplimiento que son responsables de la administración de registros necesitan permisos para el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador de inquilinos (administrador global) tiene acceso a esta ubicación y puede conceder acceso a los responsables de cumplimiento y a otras personas sin concederles todos los permisos de un administrador de inquilinos. Para conceder permisos para esta administración limitada, recomendamos agregar usuarios al grupo de roles de administrador de **Administración de registros**, que concede permisos para todas las características relacionadas con la administración de registros, incluida [revisión de eliminación y comprobación](disposition.md).
 
 En el caso de los roles de solo lectura, puede crear un nuevo grupo de roles y agregar el rol de **Administración de registros de solo vista** a este grupo.
 

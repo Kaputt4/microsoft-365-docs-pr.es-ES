@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Conserve el contenido de los buzones eliminados mediante la característica de buzones inactivos en Microsoft 365.
-ms.openlocfilehash: 95548710e0a0f737deec6e5dc49ebc217c9ac50c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bff4f3d1b835b0d79ec38e2dcb470987a3705a1f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189804"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167347"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
 
@@ -37,7 +37,7 @@ Microsoft 365 permite conservar el contenido de los buzones eliminados. Esta car
   
 ## <a name="preparations-before-creating-an-inactive-mailbox"></a>Preparativos antes de crear un buzón inactivo
 
-- Para que un buzón esté inactivo, debe tener asignada una licencia del Plan 2 de Exchange Online para que se pueda aplicar una retención por juicio o una directiva de retención al buzón antes de eliminarla. Exchange Online Las licencias del plan 2 forman parte de una Office 365 Enterprise de E3 y E5. Si a un buzón se le asigna una licencia de plan 1 o Quiosco de Exchange Online de Exchange Online (que forman parte de una suscripción Office 365 E1 y F1 respectivamente), tendría que asignarle una licencia de Archivado de Exchange Online independiente para que se pueda aplicar una retención al buzón antes de eliminarla. Para obtener más información, vea [Archivado de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
+- Para que un buzón esté inactivo, debe tener asignada una licencia del Plan 2 de Exchange Online para que se pueda aplicar una retención por juicio o una directiva de retención al buzón antes de eliminarla. Exchange Online Las licencias del plan 2 forman parte de una Office 365 Enterprise de E3 y E5. Si a un buzón se le asigna una licencia de plan 1 o Quiosco de Exchange Online de Exchange Online (que forman parte de una suscripción de Office 365 E1 y F1 respectivamente), tendría que asignarle una licencia de Archivado de Exchange Online independiente para que se pueda aplicar una retención al antes de que se elimine. Para obtener más información, vea [Archivado de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
 - Las licencias asociadas con el buzón de Exchange Online eliminado estarán disponibles después de eliminar la cuenta de usuario correspondiente. A [continuación, puede asignar esas licencias a otro usuario](../admin/manage/assign-licenses-to-users.md).
 

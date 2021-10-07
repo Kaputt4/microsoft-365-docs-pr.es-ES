@@ -3,7 +3,7 @@ title: Deshabilitar TLS 1.0 y 1.1 para Microsoft 365
 description: Describe la desusación y deshabilitación de TLS 1.0 y 1.1 para Microsoft 365.
 author: workshay
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 audience: ITPro
@@ -17,12 +17,12 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 870572a61c241d3d3c8ce6791cee77edba2a1956
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3084232f267a1180425d2daa3fcd2ba2fbcbd063
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216297"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167107"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>Deshabilitar TLS 1.0 y 1.1 para Microsoft 365
 

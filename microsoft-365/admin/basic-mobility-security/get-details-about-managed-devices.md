@@ -8,21 +8,22 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Usa Windows PowerShell para obtener detalles sobre los dispositivos de movilidad y seguridad básicas de la organización.
-ms.openlocfilehash: ef9a98e4ce1df1e95716c36cf489b8e8ae500722
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 25c7f89dda32121306bfe2434620d17396f2e870
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773888"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166065"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtener detalles sobre dispositivos administrados de movilidad básica y seguridad
 

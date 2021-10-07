@@ -7,7 +7,7 @@ ms.date: 8/1/2017
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -25,12 +25,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre Microsoft 365 características de autenticación modernas funcionan de forma diferente Office aplicaciones cliente de 2013 y 2016.
-ms.openlocfilehash: 60b1729d9830fd12141d162c4fe721267e52d437
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c3586029a3c1ea73dae30696c74011e3dd22400d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220797"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166891"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Cómo funciona la autenticación moderna Office 2013, Office 2016 y Office cliente de 2019
 
@@ -60,7 +60,7 @@ Office aplicaciones cliente de 2013 admiten la autenticación heredada de forma 
 
 Para habilitar la autenticación moderna para cualquier dispositivo con Windows (por ejemplo, en portátiles y tabletas), que tienen Microsoft Office 2013 instalado, debe configurar las siguientes claves del registro. Las claves se tienen que establecer en cada dispositivo en el que quiera habilitar la autenticación moderna:
 
-|**Clave del registro**|**Tipo**|**Valor** |
+|**Clave del registro**|**Type**|**Valor** |
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
@@ -127,7 +127,7 @@ En la tabla siguiente se describe el comportamiento de autenticación de Office 
 |Office 2013  <br/> |No  <br/> |No  <br/> |Solo asistente de inicio de sesión de Microsoft Online.  <br/> |Solo asistente de inicio de sesión de Microsoft Online.  <br/> |
 |Office 2013  <br/> |Sí, EnableADAL = 1  <br/> |Sí  <br/> |La autenticación moderna se intenta primero. Si el servidor rechaza una conexión de autenticación moderna, se usa el Asistente para inicio de sesión de Microsoft Online. El servidor rechaza la autenticación moderna Skype Empresarial los inquilinos en línea no están habilitados.  <br/> |Solo asistente de inicio de sesión de Microsoft Online.  <br/> |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Habilitar la autenticación moderna para Office 2013 en dispositivos Windows](../admin/security-and-compliance/enable-modern-authentication.md)
 

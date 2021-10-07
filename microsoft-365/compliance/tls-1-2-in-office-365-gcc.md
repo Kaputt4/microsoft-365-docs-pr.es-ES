@@ -3,7 +3,7 @@ title: Deshabilitar TLS 1.0 y 1.1 en Microsoft 365 GCC High y DoD
 description: Describe cómo Microsoft deshabilita la compatibilidad con TLS 1.1 y 1.0 en entornos GCC High y DoD en Microsoft 365.
 author: kccross
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 audience: ITPro
@@ -14,12 +14,12 @@ ms.reviewer: krowley
 ms.author: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 16a02985107c5f578d6d6c21bf2efc6e80297951
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a1c2c733036dfc5a88ddf0abe73147c1b64542f4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216307"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167119"
 ---
 # <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>Deshabilitar TLS 1.0 y 1.1 en Microsoft 365 GCC High y DoD
 

@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Use palabras clave y condiciones para restringir el ámbito de la búsqueda al buscar datos mediante Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 00a5ab1c009f0c006aba251c770c87c1f7569fc1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdd7fc29e134cc3310848507ffbc20d41d1b0d2f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166118"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167467"
 ---
 # <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>Crear consultas de búsqueda para colecciones en Advanced eDiscovery
 

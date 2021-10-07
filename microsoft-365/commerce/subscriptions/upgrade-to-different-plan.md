@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: La forma más sencilla de actualizar los planes es usar la pestaña Actualizar en el Centro de administración. Sin embargo, la pestaña Actualizar no siempre es compatible.
 ms.date: 04/21/2021
-ms.openlocfilehash: a4db0934767beb7913939475d8615f2a0184d0a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8d481ec0b5eb64fcc86ca331d9bde3cac746f177
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188310"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167551"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente
 

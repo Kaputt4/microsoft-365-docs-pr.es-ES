@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Proporcione a los usuarios titulares de noticias actualizados sobre su sector e información de su organización, use el servicio de noticias para habilitar una fuente de noticias personalizada para su organización.
-ms.openlocfilehash: bde55ffbd9bef2f8eac7db1a4d200aeb58f32f89
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: f53f9d7d52a68c29f1225dd38df90d9c4c3e72e2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933512"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168115"
 ---
 # <a name="manage-industry-news"></a>Administrar noticias del sector
 
@@ -101,8 +101,8 @@ Cuando los usuarios inician sesión en Microsoft Edge (versión 87 o posterior) 
 3. Seleccione **Permitir Office 365 contenido en la nueva página de pestaña**. Cuando se habilita, los usuarios pueden personalizar su nueva pestaña para mostrar información de Office 365, incluidos los archivos recomendados y recientes, junto con sitios SharePoint y otra información.
 4. Seleccione **Mostrar información de la empresa y noticias del sector en la página nueva pestaña**. Los artículos de noticias sobre su organización e industria aparecen para los usuarios que eligen ver artículos en su nueva pestaña.
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
 - 
   [Búsqueda de Microsoft](/microsoftsearch/)
-- [Administrar los datos y servicios](./index.yml)
+- [Administrar los datos y servicios](/admin)

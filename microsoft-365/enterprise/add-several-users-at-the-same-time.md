@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: 'Obtenga información sobre cómo agregar varios usuarios a Microsoft 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Microsoft 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón Microsoft 365 correo. '
-ms.openlocfilehash: 873a9ff27f85d63596f5e69db918c0c619b73539
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d9152ba8dfef21faeaba6f981c23359eb114b653
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218770"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170420"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Agregar varios usuarios al mismo tiempo a Microsoft 365: Ayuda para administradores
 
@@ -71,7 +71,7 @@ Cada persona del equipo necesita una cuenta de usuario antes de poder iniciar se
 
 7. En el cuadro de diálogo **Ver el resultado**, puede elegir si desea enviar los resultados a su usuario o a otros usuarios (las contraseñas se mostrarán en texto sin formato). Además, puede ver cuántos usuarios se crearon y, si lo necesita, comprar más licencias para asignárselas a algunos de los nuevos usuarios.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Ahora que estas personas tienen cuentas, deben descargar e instalar o reinstalar Microsoft 365 o [Office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)en un equipo pc o Mac . Cada persona del equipo puede instalar Microsoft 365 hasta 5 equipos PC o Mac.
 

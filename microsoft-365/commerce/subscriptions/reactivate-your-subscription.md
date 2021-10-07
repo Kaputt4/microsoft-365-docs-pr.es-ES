@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Los administradores pueden reactivar una suscripción cuando expire, se deshabilite o cancele, o si se canceló en medio de un término de suscripción.
 ms.date: 04/07/2021
-ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 85365d9d78bde8297ae483c645d6df0453a34e39
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213980"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167623"
 ---
 # <a name="reactivate-your-subscription"></a>Reactivar la suscripción
 
@@ -35,7 +35,7 @@ Puede reactivar la suscripción en el centro de administración si: la suscripci
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de facturación para reactivar una suscripción. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para reactivar una suscripción. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 **¿No es un administrador?** Póngase en contacto con su administración para reactivar la suscripción.
 

@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Configure Microsoft 365 Enterprise servicios y aplicaciones, como SharePoint, Exchange y Skype Empresarial.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ed368f2fc4189a49ef96b263df073a70878801d2
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: d9e756ccdab188cf34228989a58e174f0fc2cfbf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401307"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167035"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>Configurar Microsoft 365 Enterprise servicios y aplicaciones
 

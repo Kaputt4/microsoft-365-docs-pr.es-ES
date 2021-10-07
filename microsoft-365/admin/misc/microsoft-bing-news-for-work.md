@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 description: Un resumen diario de noticias, tendencias e historias relacionadas con su empresa, trabajo o industria entregados de forma fresca a la bandeja de entrada.
-ms.openlocfilehash: ac88ccb709f23a95046ad5361fef60a1270a125ac4350e13cc0e192adcdf17b2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 55e01005994099211b6aab64b837f27bc7881c81
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823896"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167995"
 ---
 # <a name="microsoft-industry-updates"></a>Actualizaciones del sector de Microsoft
 

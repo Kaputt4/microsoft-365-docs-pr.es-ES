@@ -7,7 +7,7 @@ audience: Admin
 ms.date: 09/30/2020
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Obtenga información sobre cómo administrar el servicio de identidad de usuario de Azure AD en Microsoft 365 modelos de identidad híbrida o solo en la nube.
-ms.openlocfilehash: 0e83d94c6c82df3f47989433cf20ebf402b265df
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 14f96e2ddb74eb1da8c6937a21e8dcaf72ae0808
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218787"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170540"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 modelos de identidad y Azure Active Directory
 
@@ -69,7 +69,7 @@ Estos son los componentes básicos de la identidad de solo nube.
 Tanto los usuarios locales como los remotos (en línea) usan sus cuentas de usuario y contraseñas de Azure AD para acceder a Microsoft 365 servicios en la nube. Azure AD autentica las credenciales de usuario en función de sus cuentas de usuario y contraseñas almacenadas.
 
 ### <a name="administration"></a>Administración
-Dado que las cuentas de usuario solo se almacenan en Azure AD, se administran identidades en la nube con herramientas como [Centro de administración de Microsoft 365](../admin/add-users/index.yml) y [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md).
+Dado que las cuentas de usuario solo se almacenan en Azure AD, se administran identidades en la nube con herramientas como [Centro de administración de Microsoft 365](/admin) y [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md).
 
 ## <a name="hybrid-identity"></a>Identidad híbrida
 

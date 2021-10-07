@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Microsoft Teams chats y canales admiten directivas de prevención de pérdida de datos (DLP).
-ms.openlocfilehash: 789571a4123473d3c1708ec4ac16dd7656514d92
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f4e4c7b0d25d411fe8aa3d69b1768ed7508b9b6b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192997"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168715"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams.
 
@@ -205,7 +205,7 @@ Para asegurarse de que SharePoint documentos que contienen información confiden
           > [!div class="mx-imgBorder"]
           > ![Condiciones dlp para detectar el uso compartido externo de contenido confidencial.](../media/dlp-teams-external-sharing/external-condition.png)
 
-    - **Actions**
+    - **Acciones**
         - Restringir el acceso de usuarios externos al contenido
         
         - Notificar a los usuarios con sugerencias de directiva y correo electrónico

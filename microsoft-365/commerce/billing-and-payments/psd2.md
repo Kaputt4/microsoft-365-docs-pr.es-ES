@@ -9,7 +9,7 @@ ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid: MET150
 description: A partir del 14 de septiembre de 2019, los bancos de los 31 países del Espacio Económico Europeo deben comprobar la identidad de la persona que realiza una compra en línea antes de poder procesar el pago".
 keywords: directiva 2 de servicios de pago, autenticación segura de clientes, autenticación multifactor
 ms.date: 11/03/2020
-ms.openlocfilehash: bbbbe9f53c11fcae9c35cda1fd4e7d4b51a9c767
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7b2fdec6a921979dc5f314c5441b42eac84f6f1d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219147"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167743"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Directiva 2 de servicios de pago y autenticación segura de clientes para clientes comerciales
 

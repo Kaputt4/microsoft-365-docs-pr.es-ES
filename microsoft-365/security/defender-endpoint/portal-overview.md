@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 63a3592e2bb8a89c373910e73b0bc91d544415d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3450eebd549589f20b074f025d581783acdb23c1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166934"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168355"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Información general del portal del Centro de Microsoft 365 Defender
 

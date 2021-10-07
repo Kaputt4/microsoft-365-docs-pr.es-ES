@@ -7,7 +7,7 @@ ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -19,12 +19,12 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: El 10 de octubre de 2017, la compatibilidad finalizó para Project Server 2007, Project Portfolio Server y Project 2007. Use este artículo para planear la actualización ahora.
-ms.openlocfilehash: 12447eb2a021b3f92e3557b2c3ea87e859841346
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c492c7154006a139589cff1c768dd77c13804c07
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220713"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168463"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de Project Server 2007
 

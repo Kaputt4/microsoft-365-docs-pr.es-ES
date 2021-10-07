@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre el nivel de confianza de correo no deseado (SCL) que se aplica a los mensajes de Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3d45de527400088a180f5de8f8a836f5e4596395
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5a7bfd34fdb23b0bef94119f53adaa9ecc0c4a1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166611"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169400"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Nivel de confianza de correo no deseado (SCL) en EOP
 

@@ -9,17 +9,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo crear un modelo de codificación predictiva en Advanced eDiscovery. Este es el primer paso para usar las capacidades de aprendizaje automático de Advanced eDiscovery para ayudarle a identificar contenido relevante y no relevante en un conjunto de revisión.
-ms.openlocfilehash: ed5092f2730ade5e349cec77e5c264e67d957927
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4366c5779aaca6973f5a2c0cc526086d0742d069
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186094"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170588"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Crear un modelo de codificación predictiva (versión preliminar)
 

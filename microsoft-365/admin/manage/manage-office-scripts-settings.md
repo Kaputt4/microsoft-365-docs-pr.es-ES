@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: Obtenga información sobre cómo administrar la configuración Office scripts para los usuarios de su organización.
-ms.openlocfilehash: f76f37a8ce88b429de51271256f4c50d963f7b5c
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f03ee34e0ff41c3eb082beca79127cd609496564
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773149"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168043"
 ---
 # <a name="manage-office-scripts-settings"></a>Administrar la configuración de los Scripts de Office
 
@@ -98,7 +99,7 @@ ms.locfileid: "59773149"
 
     Puede que los cambios en la configuración de Scripts de Office tarden hasta 48 horas en surtir efecto.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Dado que Office Scripts funciona con Power Automate, se recomienda revisar las directivas de prevención de pérdida de datos (DLP) existentes para garantizar que los datos de la organización permanecen protegidos mientras los usuarios usan Office scripts. Para obtener más información, consulte [Directivas de prevención de pérdida de datos (DLP)](/power-automate/prevent-data-loss).
 

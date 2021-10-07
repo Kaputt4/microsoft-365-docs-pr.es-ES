@@ -7,7 +7,7 @@ ms.date: 12/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información adicional del dispositivo sobre los servicios al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
-ms.openlocfilehash: b38c279bbbb763c8f0859d6d45cd838c8652ec5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 16c2e1f33e66f9b7d710a867c5c4467053e03c67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191257"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166831"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información adicional del dispositivo para la migración desde Microsoft Cloud Deutschland
 
@@ -32,7 +32,7 @@ Los dispositivos unidos y registrados de Azure AD conectados a Microsoft Cloud D
 ## <a name="azure-ad-joined-windows-10-devices"></a>Dispositivos unidos Windows 10 Azure AD
 Si un Windows 10 está unido a Azure AD, debe desconectarse de Azure AD y debe conectarse de nuevo.
 
-[![Azure AD Device Re-Join Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD Device Re-Join Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
 Si el usuario es un administrador en el dispositivo Windows 10, el usuario puede anular el registro del dispositivo de Azure AD y volver a unirse a él en tres pasos.
@@ -65,7 +65,7 @@ Si el usuario no es un administrador del dispositivo, un administrador de **Azur
 
 *Configuración > cuentas > otras cuentas > credenciales desconocidas > Agregar usuario sin Microsoft-Account*
 
-Para obtener más información, vea [Asignar roles de administrador](/microsoft-365/admin/add-users/about-admin-roles?).
+Para obtener más información, vea [Sobre los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles?).
 
 Para volver a unirse, las credenciales de cualquier cuenta de trabajo de la organización se pueden usar en este paso.
 
@@ -76,7 +76,7 @@ Cualquier otra cuenta de trabajo de la organización puede iniciar sesión en el
 
 Si un Windows 10 está registrado en Azure AD, debe desconectarse de Azure AD y conectarse de nuevo.
 
-[![Azure AD Device Re-Registration Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD Device Re-Registration Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-registered"></a>Paso 1: Determinar si el dispositivo está registrado en Azure ID.
 
@@ -155,7 +155,7 @@ En dispositivos iOS, un usuario tendrá que quitar manualmente las cuentas almac
 
 Los usuarios pueden ir a aplicaciones individuales como Outlook, Teams y OneDrive y quitar cuentas de esas aplicaciones.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Cómo puedo saber si mi organización está afectada?**
 

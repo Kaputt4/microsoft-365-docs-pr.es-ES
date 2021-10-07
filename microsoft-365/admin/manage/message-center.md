@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el Microsoft 365 de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
-ms.openlocfilehash: 9eff7bb1e22107e80c1eefa9547ecb9ee6f0cb95
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: d107231aa2ac0319f3fc871a3b2398caa9db9ee4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773181"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169376"
 ---
 # <a name="message-center"></a>Centro de mensajes
 

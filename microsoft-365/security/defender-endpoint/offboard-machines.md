@@ -1,27 +1,25 @@
 ---
 title: Dispositivos offboard del servicio Microsoft Defender para endpoints
-description: Incorporación Windows 10 dispositivos, servidores, dispositivos que no Windows desde el servicio de Microsoft Defender para endpoints
+description: Incorporación Windows dispositivos, servidores, dispositivos que no Windows desde el servicio de Microsoft Defender para endpoints
 keywords: offboarding, Microsoft Defender for Endpoint offboarding, offboarding
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ca3e2b5ca26a2d57d27d91d84493c927d6fb2021
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 8a84885f26273a731bbda72f81c51502aa137b21
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353684"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168223"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Dispositivos offboard del servicio Microsoft Defender para endpoints
 
@@ -53,7 +51,7 @@ Siga las instrucciones correspondientes según el método de implementación pre
 >
 > Para ver solo los dispositivos activos, puede filtrar por estado [de](machines-view-overview.md#health-state)mantenimiento, [etiquetas de dispositivo](machine-tags.md) o grupos de [máquinas.](machine-groups.md)
 
-## <a name="offboard-windows-10-devices"></a>Dispositivos Windows 10 offboard
+## <a name="offboard-windows-devices"></a>Dispositivos Windows offboard
 
 - [Dispositivos offboard con un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [Dispositivos offboard con directiva de grupo](configure-endpoints-gp.md#offboard-devices-using-group-policy)

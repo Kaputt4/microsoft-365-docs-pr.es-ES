@@ -2,27 +2,25 @@
 title: Privacidad de Microsoft Defender para Endpoint en Mac
 description: Controles de privacidad, cómo configurar las opciones de directiva que afectan a la privacidad y a la información sobre los datos de diagnóstico recopilados en Microsoft Defender para Endpoint en Mac.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, privacidad, diagnóstico
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 087a5e416ce4f56f3cf4b8f96cc2e0109fe7ca49
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d9ad9b3bfe8aec36a3fdf7db456ed6383c586176
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187438"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168331"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Privacidad de Microsoft Defender para endpoint en macOS
 
@@ -86,7 +84,7 @@ Hay cierta información acerca de los eventos que es común a todos, independien
 
 Los siguientes campos se consideran comunes para todos los eventos:
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |plataforma|La clasificación general de la plataforma en la que se ejecuta la aplicación. Permite a Microsoft identificar en qué plataformas se puede producir un problema para que se pueda priorizar correctamente.|
 |machine_guid|Identificador único asociado al dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados.|
@@ -111,7 +109,7 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |correlation_id|Identificador único asociado a la instalación.|
 |version|Versión del paquete.|
@@ -123,7 +121,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |antivirus_engine.enable_real_time_protection|Si la protección en tiempo real está habilitada en el dispositivo o no.|
 |antivirus_engine.passive_mode|Si el modo pasivo está habilitado en el dispositivo o no.|
@@ -145,7 +143,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |from_version|Versión original de inteligencia de seguridad.|
 |to_version|Nueva versión de inteligencia de seguridad.|
@@ -162,7 +160,7 @@ Recopila información del sistema y el estado de una aplicación cuando una apli
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |v1_crash_count|Número de veces que el proceso del motor V1 se bloquea cada hora en el equipo cliente|
 |v2_crash_count|Número de veces que el proceso del motor V2 se bloquea cada hora en el equipo cliente|
@@ -172,7 +170,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |version|Versión de Microsoft Defender para endpoint en macOS.|
 |instance_id|Identificador único generado en el inicio de extensión de kernel.|
@@ -208,7 +206,7 @@ Algunos ejemplos de datos de diagnóstico opcionales incluyen datos que Microsof
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |connection_retry_timeout|Tiempo de espera de reintento de conexión cuando se comunica con la nube.|
 |file_hash_cache_maximum|Tamaño de la memoria caché del producto.|
@@ -230,7 +228,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |how_to_check|Determina cómo se comprueban las actualizaciones de productos (por ejemplo, automáticas o manuales).|
 |channel_name|Actualizar canal asociado al dispositivo.|
@@ -243,7 +241,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |sha256|Identificador SHA256 del registro de soporte técnico.|
 |size|Tamaño del registro de soporte técnico.|
@@ -254,7 +252,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |request_id|Identificador de correlación para la solicitud de carga del registro de soporte técnico.|
 |sha256|Identificador SHA256 del registro de soporte técnico.|
@@ -270,7 +268,7 @@ Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocu
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |pkt_ack_timeout|Las siguientes propiedades son valores numéricos agregados, que representan el recuento de eventos que se han producido desde el inicio de la extensión del kernel.|
 |pkt_ack_conn_timeout||

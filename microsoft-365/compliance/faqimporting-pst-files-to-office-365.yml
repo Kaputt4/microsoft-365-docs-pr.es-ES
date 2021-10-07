@@ -9,7 +9,7 @@ metadata:
   audience: Admin
   ms.topic: article
   ms.service: O365-seccomp
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection: M365-security-compliance
   search.appverid:
   - MOE150
@@ -18,12 +18,12 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: Este artículo contiene respuestas a algunas preguntas más frecuentes para los administradores acerca de la importación de archivos PST a Microsoft 365 el servicio de Office 365 importación.
-  ms.openlocfilehash: d9f556deccae22a5d98411d0db292c4b8fc5f93b
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 38e1d6ba4800d8ad870287d11beb695050eb6d1b
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59191514"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60170648"
 title: Preguntas frecuentes sobre la importación de archivos PST
 summary: >
   **Este artículo está para administradores. ¿Desea importar archivos PST a su propio buzón? Consulta [Importar correo electrónico, contactos y calendario desde un Outlook archivo .pst](https://go.microsoft.com/fwlink/p/?LinkID=785075)**

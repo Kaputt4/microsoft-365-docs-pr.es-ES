@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords:
 - CSH
 ms.custom:
@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Antes de llamar al soporte técnico, consulte el estado de mantenimiento de los servicios de Microsoft 365 para comprobar si existe alguna interrupción del servicio.
-ms.openlocfilehash: 64a0d4816ce9afdd8ee4bf1c2a4522ef9fc56afc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5af62bd31bc5fe6c3a3f04657d6cf0ea6083eaa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210460"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166795"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Cómo comprobar el estado del servicio de Microsoft 365
 
@@ -64,7 +64,7 @@ La pestaña **Historial** muestra todos los incidentes y avisos que se han resue
 
 Si tiene un problema con algún servicio de Microsoft 365 y no lo encuentra en **Estado del servicio**, comuníquelo seleccionando **Notificar un problema** y rellenando el correspondiente formulario. Examinaremos datos e informes de otras organizaciones relacionados con su problema para ver qué tan extendido se encuentra y si se originó por nuestro servicio. Si así fuera, lo añadiremos como nuevo incidente o aviso en la página **Estado del servicio** donde podrá darle seguimiento.  La página de **Problemas notificados** le mostrará todos los problemas que el inquilino nos ha notificado desde el formulario y desde el estado.
 
-Si quiere personalizar qué servicios se muestran en el panel, vaya a **Preferencias** > **Vista personalizada** y desactive las casillas de los servicios que no desea ver en la vista del panel de estado del servicio. Asegúrese de que las casillas de los servicios que desea supervisar estén activadas.
+Para personalizar la vista de los servicios que se muestran en el panel, seleccione **Preferencias** > **Vista personalizada** y borre las casillas de los servicios que desea filtrar fuera de la vista del panel Estado del servicio. Asegúrese de que la casilla está seleccionada para cada servicio que desea supervisar.
 
 Si quiere recibir notificaciones por correo electrónico sobre nuevos incidentes que afecten a su inquilino y cambios de estado de un incidente activo, seleccione **Preferencias** > **Correo electrónico**, haga clic en **Recibir notificaciones de estado del servicio en el correo electrónico** y, a continuación, especifique:
 
@@ -142,7 +142,7 @@ La mayoría de las veces, los servicios aparecerán como correctos sin especific
 
 ### <a name="history"></a>Historial
 
-El estado del servicio le permite ver el estado actual y el historial de los incidentes y avisos del servicio que hayan afectado a su inquilino durante los últimos 30 días. Para ver estados anteriores de todos los servicios, seleccione vista de **Historial**.
+El estado del servicio le permite examinar su estado de mantenimiento actual y ver el historial de los avisos e incidentes de servicio que han afectado a su inquilino en los últimos 30 días. Para ver el estado anterior de todos los servicios, seleccione vista del **historial**.
 
 Para obtener más información sobre nuestro compromiso con el tiempo de actividad, vea [Operaciones transparentes de Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity).
 

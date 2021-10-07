@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: For Managed Service Providers (MSP) using Microsoft 365 Lighthouse, learn how to get help and support.
-ms.openlocfilehash: 392eed01b5519c512c89460776ec9f4391b7bda2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 554747fa7360892c7ea8c52e31dc0f4e2bc18589
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187742"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170144"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Obtenga ayuda y soporte técnico para Microsoft 365 Lighthouse 
 

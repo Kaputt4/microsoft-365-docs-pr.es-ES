@@ -10,7 +10,7 @@ ms.reviewer: pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo comprobar la elegibilidad de su escuela Microsoft 365 Educación precios académicos.
 ms.date: 07/21/2020
-ms.openlocfilehash: 86bdb4338c316edf5b8bdb83a61a5a0fd2f411ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8fc3be02de01e2d37159162581276e7c9d3451f1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167544"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168907"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Comprobar la elegibilidad académica para Microsoft 365 Educación suscripciones
 
@@ -95,7 +95,7 @@ Si su escuela no califica como una institución académica calificada de Microso
 
 Si tiene preguntas sobre la decisión de elegibilidad académica de su escuela, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Para obtener información sobre cómo implementar Microsoft 365 para su escuela, visite [Microsoft 365 Educación documentación y recursos](/microsoft-365/education/deploy/). A continuación, [puede agregar usuarios y asignar licencias al mismo tiempo.](../../admin/add-users/add-users.md) Si es necesario, también puede comprar [más licencias para su suscripción.](../licenses/buy-licenses.md)
 

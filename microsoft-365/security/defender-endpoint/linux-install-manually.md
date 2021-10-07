@@ -3,27 +3,25 @@ title: Implementar Microsoft Defender para Endpoint en Linux manualmente
 ms.reviewer: ''
 description: Describe cómo implementar Microsoft Defender para Endpoint en Linux manualmente desde la línea de comandos.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9194196ab34e5e95b986ecbaba9be855969dec20
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e737ecba6acfd9ebf09b826d6cec643936f090c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212220"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169844"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -44,7 +42,7 @@ En este artículo se describe cómo implementar Microsoft Defender para Endpoint
     - [RHEL y variantes (CentOS y Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
     - [SLES y variantes](#sles-and-variants)
     - [Sistemas Ubuntu y Debian](#ubuntu-and-debian-systems)
-  - [Instalación de aplicaciones](#application-installation)
+  - [Instalación de la aplicación](#application-installation)
   - [Descargar el paquete de incorporación](#download-the-onboarding-package)
   - [Configuración de cliente](#client-configuration)
   - [Script del instalador](#installer-script)
@@ -210,7 +208,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     sudo apt-get update
     ```
 
-## <a name="application-installation"></a>Instalación de aplicaciones
+## <a name="application-installation"></a>Instalación de la aplicación
 
 - RHEL y variantes (CentOS y Oracle Linux):
 
@@ -446,6 +444,6 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 Consulta [Desinstalar para](linux-resources.md#uninstall) obtener más información sobre cómo quitar Defender for Endpoint en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Investigar problemas de estado del agente](health-status.md)

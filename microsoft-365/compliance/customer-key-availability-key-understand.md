@@ -6,16 +6,16 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 description: Obtenga información sobre la clave de disponibilidad usada para recuperar las claves de cliente perdidas.
-ms.openlocfilehash: 9fb4602f61146a28e8e35fb6715da3ebb2aa7d5f
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 72e66e9deb74400944c6ea65ea3ac167a703da26
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460333"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170792"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Obtener más información sobre la clave de disponibilidad de Clave de cliente
 

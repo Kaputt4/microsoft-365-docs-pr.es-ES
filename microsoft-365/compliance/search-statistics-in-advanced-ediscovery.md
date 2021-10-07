@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Valide los resultados de la búsqueda viendo las estadísticas que se generan después de ejecutar una búsqueda de colección en Advanced eDiscovery.
-ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ec339cd28fdd25457a668f992f20e59a4f10b289
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183966"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167239"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>Estadísticas de búsqueda en Advanced eDiscovery
 

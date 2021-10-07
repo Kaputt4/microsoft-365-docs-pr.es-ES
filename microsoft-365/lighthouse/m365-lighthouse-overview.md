@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre Microsoft 365 Lighthouse puede ayudarle a proteger y administrar los inquilinos de clientes en una ubicación.
-ms.openlocfilehash: ef3eff784d661492cafba1c1c030602b45dd5aef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e3e924aa6384bfb47e7c5c7dffbe062ba3de8af4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187734"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170132"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Información general sobre Microsoft 365 Lighthouse
 

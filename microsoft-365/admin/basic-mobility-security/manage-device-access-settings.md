@@ -8,21 +8,22 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar dispositivos móviles.
-ms.openlocfilehash: 378ed7c8de95bce3da79e11e550994d19c590f88
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ef74aba7398867ad97748feba45647e7cf4aa609
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773396"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166029"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Administrar la configuración de acceso a dispositivos en Movilidad y seguridad básicas
 

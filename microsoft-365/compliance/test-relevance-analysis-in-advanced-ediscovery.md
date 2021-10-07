@@ -10,19 +10,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo usar la pestaña Prueba después del cálculo por lotes Advanced eDiscovery probar, comparar y validar la calidad general del procesamiento.
-ms.openlocfilehash: 16f8004afb5a0731f684c0d35e55ebf2d06f91f0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0ea34ce101f6891670a0b646380c965a4391ea32
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569542"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167191"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery"></a>Análisis de relevancia de prueba en Advanced eDiscovery
   

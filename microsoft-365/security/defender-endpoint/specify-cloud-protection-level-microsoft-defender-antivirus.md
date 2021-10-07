@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 16d61be33af8a4d30090470e066111ba2bcde0e9
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 09eb5f5c183a6a89d89b173557bdc40b9204824b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497997"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166223"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Especificar el nivel de protección en la nube
 
@@ -84,6 +84,6 @@ La protección en la nube funciona Antivirus de Microsoft Defender para ofrecer 
 > [!TIP]
 > ¿Usa objetos de directiva de grupo local? Vea cómo se traducen en la nube. [Analice los objetos de directiva de grupo locales mediante el análisis](/mem/intune/configuration/group-policy-analytics)de directivas de grupo en Microsoft Endpoint Manager - Vista previa . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [¿Por qué se debe habilitar la protección en la nube para Antivirus de Microsoft Defender](why-cloud-protection-should-be-on-mdav.md)

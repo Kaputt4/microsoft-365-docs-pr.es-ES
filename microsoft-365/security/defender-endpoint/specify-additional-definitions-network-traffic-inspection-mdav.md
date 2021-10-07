@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.date: 05/07/2021
@@ -17,12 +17,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 60f2b4b83e46e33769c5e2e3382058354fcd6972
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: a9deaa216de6cc8c744c6f8eca94dbf8868be0d6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498369"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166259"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red
 

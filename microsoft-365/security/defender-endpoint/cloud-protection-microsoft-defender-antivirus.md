@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 09/22/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0cb371b8eabb74f1702bb52269e4aa9d02270dc0
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 82f40a1110a93a44fe8b1712568d15bd849bd975
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490233"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169868"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Antivirus de Microsoft Defender y protección en la nube
 
@@ -65,7 +65,7 @@ La protección en la nube está habilitada de forma predeterminada. Sin embargo,
 
 Si su suscripción incluye Windows 10 E5, puede aprovechar las actualizaciones de inteligencia dinámica de emergencia, que proporcionan protección casi en tiempo real frente a amenazas emergentes. Al activar la protección en la nube, las correcciones para problemas de malware se pueden entregar a través de la nube en cuestión de minutos, en lugar de esperar a la siguiente actualización. Consulte Configure Antivirus de Microsoft Defender para recibir automáticamente nuevas actualizaciones de protección [basadas en informes de nuestro servicio en la nube.](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que tiene una introducción a la protección en la nube Antivirus de Microsoft Defender, estos son algunos pasos siguientes:
 

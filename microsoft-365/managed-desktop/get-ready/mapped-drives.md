@@ -5,17 +5,17 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documen
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 01b26ff33e02a1b26e91bb6399a73c9b22a6ba19
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 134f391b3d0a4759ee788ae8f94e817f9e5cb747
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191097"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170096"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparar unidades asignadas para el Escritorio administrado de Microsoft
 

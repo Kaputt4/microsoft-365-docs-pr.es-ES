@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Usa las puntuaciones de net promoter (NPS) de los usuarios finales para ver cómo se sienten acerca de los productos y servicios de Microsoft.
-ms.openlocfilehash: 967de32339c23cf277871102dfecc8c00a55d8e6
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: afde0abf85cca682a5cda3206fa78d24cafc8cb8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777107"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168127"
 ---
 # <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>Comentarios e información de NPS de productos de Microsoft para su organización
 

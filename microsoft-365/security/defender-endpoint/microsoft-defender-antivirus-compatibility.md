@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 09/14/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d77f5885f4c2e957a598c37fd75a6813f2b37dd1
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 769c8519fa2967b317bd266d143153c28b269b98
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043316"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169712"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus de Microsoft Defender compatibilidad con otros productos de seguridad
 
@@ -137,7 +137,7 @@ Puede usar uno de varios métodos para confirmar el estado de Antivirus de Micro
 
 <br/><br/>
 
-|Method|Procedure|
+|Método|Procedure|
 |---|---|
 |Seguridad de Windows app| 1. En un Windows, abra la aplicación Seguridad de Windows usuario.<br/>2. Seleccione **Virus & protección contra amenazas**.<br/>3. **¿Quién está protegiendo?** seleccione **Administrar proveedores**.<br/>4. En la página **Proveedores de** seguridad, en **Antivirus,** debería ver Antivirus de Microsoft Defender **está activado**.|
 |Administrador de tareas| 1. En un dispositivo Windows, abra la aplicación Administrador de tareas.<br/>2. Seleccione la **pestaña** Detalles.<br/>3. Busque **MsMpEng.exe** en la lista.|

@@ -11,19 +11,19 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: b8acad4520fc588517083574d41465e277b9c96a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6eef2485379544233db29fe94539c5c07499f9fc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184126"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167263"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -258,7 +258,7 @@ En este escenario, se bloquea la sincronización de archivos con la etiqueta de 
 
 - Una cuenta de usuario de AAD de destino y un equipo Windows 10 incorporado que ya esté sincronizando una carpeta local de OneDrive con el almacenamiento en la nube de OneDrive.
 - Microsoft Word instalado en el equipo Windows 10 de destino
-- Etiquetas de confidencialidad configuradas y publicadas. Consulte [Empiece a usar las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) y [Crear y configurar etiquetas de confidencialidad y sus directivas](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
+- Etiquetas de confidencialidad configuradas y publicadas. Vea [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) y [Crear y configurar etiquetas de confidencialidad y sus directivas](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
 
 Hay tres pasos:
 
@@ -289,7 +289,7 @@ carpeta *C:\Usuarios\IsaiahLanger\Microsoft DLP\Cuarentena\OneDrive* y se anexar
 > [!NOTE]
 > La cuarentena automática de la DLP creará subcarpetas para los archivos de cada aplicación no permitida. Por lo tanto, si tiene tanto el *Bloc de notas* como *OneDrive* en la lista de aplicaciones no permitidas, se creará una subcarpeta para **\OneDrive** y otra subcarpeta para **\Bloc de notas**.
 
-8. Elija **Reemplace los archivos por un archivo .txt que contenga el siguiente texto** y escriba el texto que desee en el archivo del marcador de posición. Por ejemplo, para un archivo denominado *cuar auto 1.docx*:
+8. Elija **Reemplazar los archivos por un archivo .txt que contenga el siguiente de texto** y escriba el texto que desee en el archivo de marcador de posición. Por ejemplo, para un archivo denominado *cuarentena automática 1.docx*:
     
 **%%FileName%% contiene información confidencial que su empresa está protegiendo con la directiva de prevención de pérdida de datos (DLP) %%PolicyName%% y se ha movido a la carpeta en cuarentena: %%QuarantinePath%%.** 
 
@@ -322,7 +322,7 @@ dejará un archivo .txt que contiene este mensaje
     
 8. Elija **Guardar** y **Siguiente**.
 
-9. Elija **Activar inmediatamente**. Elija **Siguiente**.
+9. Elija **Activar inmediatamente**. Elija **siguiente**.
 
 10. Revise la configuración y elija **Enviar**.
 

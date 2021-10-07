@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la lista de inquilinos.
-ms.openlocfilehash: 13481ecbaaf20c5886837e03f4a606531548145e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bff85a523d55cfeeacffc3024bb733a5c3fe2eb5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211730"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170108"
 ---
 # <a name="microsoft-365-lighthouse-tenant-list-overview"></a>Microsoft 365 Lighthouse de lista de inquilinos
 
@@ -34,13 +34,13 @@ Después de que los inquilinos cumplan los [requisitos de incorporación de Ligh
 
 Para obtener acceso a la lista de inquilinos en Lighthouse, seleccione **Inquilinos** en el panel de navegación izquierdo para abrir la página Inquilinos.
 
-## <a name="tenant-status"></a>Estado del inquilino
+## <a name="tenant-status"></a>Estado de espacio empresarial
 
 En la tabla siguiente se muestran los diferentes mensajes de estado y su significado.<br><br>
 
 | Mensaje de estado | Descripción |
 |--|--|
-| Activo | Se ha iniciado la incorporación y el flujo de datos. |
+| Activa | Se ha iniciado la incorporación y el flujo de datos. |
 | En proceso | Inquilino detectado, pero no totalmente incorporado. |
 | Ineligible, DAP | Se requiere la configuración de privilegios de administrador delegados (DAP). |
 | Ineligible, recuento de usuarios | El inquilino tiene más usuarios de los permitidos. |

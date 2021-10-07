@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas forman parte de los Microsoft 365 de seguridad.
-ms.openlocfilehash: f348a81689aed43dcc8dbce15e92c0b7842aba69
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 0a461bc7462300bb2b27b5d027c2b4d4582b7d14
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775161"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166235"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elegir entre Movilidad básica y seguridad o Intune
 
@@ -72,7 +73,7 @@ Microsoft Intune y seguridad básicas integradas le dan la capacidad de administ
 |Configuración de dispositivos  |Configurar la configuración del dispositivo (por ejemplo, deshabilitar la cámara)|Conjunto limitado de opciones.|Sí|
 |Perfiles de correo electrónico  |Aprovisionar un perfil de correo electrónico nativo en el dispositivo. |Sí|Sí|
 |Perfiles WiFi |Aprovisionar un perfil WiFi nativo en el dispositivo. |No|Sí|
-|Perfiles vpn |Aprovisionar un perfil vpn nativo en el dispositivo. |No|Sí|
+|Perfiles de VPN |Aprovisionar un perfil vpn nativo en el dispositivo. |No|Sí|
 |Administración de aplicaciones móviles  |Implemente las aplicaciones de línea de negocio internas y de las tiendas de aplicaciones a los usuarios. |No|Sí|
 |Protección de aplicaciones móviles  |Permitir que los usuarios accedan de forma segura a la información corporativa con las aplicaciones móviles y de línea de negocio de Office que conocen, al tiempo que garantizan la seguridad de los datos al ayudar a restringir acciones como copiar, cortar, pegar y guardar como, solo a aquellas aplicaciones administradas aprobadas para datos corporativos. Funciona incluso si los dispositivos no están inscritos en Movilidad y seguridad básicas. Consulta Proteger los datos de la aplicación mediante directivas mam. |No|Sí|
 |Explorador administrado  |Habilitar una exploración web más segura con la aplicación perimetral. |No|Sí|
@@ -95,7 +96,7 @@ Con Intune tiene el siguiente conjunto de acciones:
 - [Modo perdido](/mem/intune/remote-actions/device-lost-mode)   (solo iOS)- [Examen rápido](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(solo Windows 10)
 - [Control remoto para Android](/mem/intune/remote-actions/teamviewer-support)
 - [Bloqueo remoto](/mem/intune/remote-actions/device-remote-lock)
-- [Cambiar nombre del dispositivo](/mem/intune/remote-actions/device-rename)
+- [Cambiar el nombre del dispositivo](/mem/intune/remote-actions/device-rename)
 -  [Restablecer código de](/mem/intune/remote-actions/device-passcode-reset) [acceso Reiniciar](/mem/intune/remote-actions/device-restart)   (Windows solo)
 -  Actualizar Windows Defender inteligencia de seguridad (Windows solo)
 -  Windows 10 Restablecimiento de PIN (Windows solo)

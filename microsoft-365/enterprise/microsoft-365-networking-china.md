@@ -7,7 +7,7 @@ ms.date: 11/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: En este artículo se proporcionan instrucciones para optimizar el rendimiento de la red para los usuarios de China de Microsoft 365 inquilinos globales.
-ms.openlocfilehash: 9660270dbe73e9cbdff0b1e3796224b36319956b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 65f80137786ea708e2ee0200e63600906fd18d24
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220814"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166987"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365 optimización global del rendimiento de inquilinos para usuarios de China
 

@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo se cumplen las necesidades empresariales de la empresa Microsoft 365 empresa.
-ms.openlocfilehash: aa0779cfadb12aa0213a74f2e348951be4eca4f5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f7a25a9a3bd23c5725be06af39dbd65a1d3a4e5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218687"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170360"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infraestructura de TI contoso y necesidades empresariales
 
@@ -67,7 +67,7 @@ Las necesidades empresariales de Contoso se divide en cinco categorías principa
 
 **Seguridad**
 
-- Administración de acceso e identidad  
+- Administración de identidad y acceso
 
   Exigir multifactor y otras formas de autenticación y proteger las credenciales de cuenta de usuario y administrador.
 

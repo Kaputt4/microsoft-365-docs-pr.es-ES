@@ -7,7 +7,7 @@ ms.date: 12/15/2017
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: Obtenga información sobre qué SharePoint soluciones de 2013 se pueden hospedar en Microsoft Azure máquinas virtuales y cómo configurar Azure para hospedar una.
-ms.openlocfilehash: 937072dfec55618a4bfb8f9405bd525023ca3d44
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8bbaeb7a20b467625d57800cdf95f42e5b11f434
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167182"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168559"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquitecturas de Microsoft Azure para SharePoint 2013
 

@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f85c4cd8cf5d657e4043aae80da8b3dae989a29d
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 3ad015c459cdaf4214fb88cab27b9d4d61342268
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356627"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166271"
 ---
 # <a name="advanced-hunting-api"></a>API de búsqueda avanzada
 
@@ -87,7 +87,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 Parámetro|Tipo|Descripción
 :---|:---|:---
-Consulta|Texto|Consulta que se debe ejecutar. **Necesario**.
+Query|Text|Consulta que se debe ejecutar. **Necesario**.
 
 ## <a name="response"></a>Respuesta
 

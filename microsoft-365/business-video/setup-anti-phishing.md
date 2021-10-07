@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar la protección contra suplantación de identidad (phishing).
-ms.openlocfilehash: 91d8db572bff73fca5515e224c96201260f8855c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2ea6b13aa15ec5458c277894cf67f0434b85af7c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212777"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167822"
 ---
 # <a name="set-up-anti-phishing"></a>Configurar directivas contra suplantación de identidad
 

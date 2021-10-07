@@ -7,23 +7,23 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e09bcee08051663191a12c4e2916d7d6512eb514
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3f9e621be3ca730c947437291359f6b650e558d2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191107"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166735"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft  
  
 La autenticación basada en certificados es un requisito común para los clientes que usan Escritorio administrado de Microsoft. Es posible que necesite certificados para obtener acceso a Wi-Fi o LAN, para conectarse a soluciones VPN o para obtener acceso a recursos internos de la organización.   
  
-Dado que los dispositivos Escritorio administrado de Microsoft se unen a Azure Active Directory (Azure AD) y se administran mediante Microsoft Intune, debe implementar dichos certificados mediante una infraestructura de certificados del Protocolo simple de inscripción de certificados (SCEP) o una infraestructura de certificado estándar de criptografía de clave pública (PKCS) integrada con Intune.    
+Dado que Escritorio administrado de Microsoft dispositivos se unen a Azure Active Directory (Azure AD) y se administran mediante Microsoft Intune, debe implementar dichos certificados mediante una infraestructura de certificados del Protocolo simple de inscripción de certificados (SCEP) o una infraestructura de certificado estándar de criptografía de clave pública (PKCS) que se integra con Intune.    
  
 ## <a name="certificate-requirements"></a>Requisitos de certificado 
  

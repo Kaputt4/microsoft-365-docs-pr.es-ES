@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Administrar comentarios que los usuarios pueden enviar a Microsoft acerca de los productos de Microsoft.
-ms.openlocfilehash: 9f6923f4f20ec445980a40aeb2d731f8b1a2085a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 9b63a4046c9d1ab13ae6b3f4856a521d4c7a9b70
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775785"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168151"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Administrar comentarios de Microsoft para la organización
 

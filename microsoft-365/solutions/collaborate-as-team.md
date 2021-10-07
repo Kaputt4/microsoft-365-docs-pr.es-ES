@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkTEAMS
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los pasos de configuración necesarios para Microsoft 365 para configurar un equipo para la colaboración en tareas, conversaciones y documentación con invitados en Teams.
-ms.openlocfilehash: e0d787691ee7ec580efcbd61d6bab7bd1052e54c
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: 3c5d5689f676e6fecc6c0251df6ee90f54398238
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477620"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169388"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -73,7 +73,7 @@ Para establecer la configuración de acceso de invitados de Teams
 1. Inicie sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
 2. En el panel de navegación izquierdo, haga clic en **Mostrar todo**.
 3. En **Centros de administración**, haga clic en **Teams**.
-4. En el centro de administración de Teams, en el panel de navegación izquierdo, seleccione **Configuración de toda la organización** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Acceso de invitados**</a>.
+4. En el Centro de administración de Teams, en el panel de navegación izquierdo, seleccione **Usuarios** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Acceso de invitado**</a>.
 5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
 6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
 

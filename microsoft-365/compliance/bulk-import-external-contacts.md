@@ -9,18 +9,18 @@ ms.date: 6/29/2018
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Obtenga información sobre cómo los administradores pueden usar Exchange Online PowerShell y un archivo CSV para importar contactos externos de forma masiva a la lista global de direcciones.
-ms.openlocfilehash: 0cb085be1c9ddf9fc3db47f3cd92ec7acf040251
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 399534a74a7245ebb71624b390343c81e692925e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161375"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170864"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importar contactos externos de forma masiva a Exchange Online
 

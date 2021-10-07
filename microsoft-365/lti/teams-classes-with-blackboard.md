@@ -10,15 +10,15 @@ ms.service: o365-administration
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Usar Microsoft Teams clases con Blackboard Learn Ultra
-ms.openlocfilehash: 30ab28c4a9c2431a63db976df13748de6b843fdc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b74aaca3df01b2e6f222605f3700066c980cd9bd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167198"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170120"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Usar Microsoft Teams clases con Blackboard Learn Ultra
 
@@ -171,7 +171,7 @@ Verá una ventana de permisos que explica que está dando permiso a Blackboard L
 
 3. Agregue el **identificador de inquilino de Microsoft** al campo de texto disponible.
 
-4. Elija una de las siguientes opciones:
+4. Seleccione una de las opciones siguientes:
 
    - Si la aplicación tiene el consentimiento previo, mostrará una pequeña marca de verificación. Si aparece la marca de verificación, seleccione **Enviar**.
 
