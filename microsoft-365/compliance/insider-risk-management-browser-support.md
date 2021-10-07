@@ -2,7 +2,7 @@
 title: Información sobre y configurar la detección de señales del explorador de administración de riesgos insider (versión preliminar)
 description: Obtenga información sobre la detección de señales del explorador de administración de riesgos de insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ed4fe1e24a4414c4dad8f596df75705d1f6231a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f25664c0ca9cffa3a54e0bb9fb734bb506dfdf5b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191317"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190766"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection-preview"></a>Información sobre y configurar la detección de señales del explorador de administración de riesgos insider (versión preliminar)
 

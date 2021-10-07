@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo registrarse para Microsoft 365 Empresa Premium (anteriormente denominada Microsoft 365 Empresa).
-ms.openlocfilehash: 3f46c9ee41c73ca05098b89227fedbbc83ce6516
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 4317d89a2ceb5cde51a55e21bef4297043815920
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786388"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191090"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>Registrarse para obtener una Microsoft 365 Empresa Premium suscripción
 

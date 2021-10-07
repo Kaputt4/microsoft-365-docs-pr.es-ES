@@ -2,15 +2,13 @@
 title: Solucionar problemas de instalación de Microsoft Defender para Endpoint en Mac
 description: Solucionar problemas de instalación en Microsoft Defender para Endpoint en Mac.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalar
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 776cd18146fa4f726ef5d25433c564510b8a0e67
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8371129ff1b64681aee018802205a5f5a359fd86
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215007"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209482"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de instalación de Microsoft Defender para Endpoint en macOS
 
@@ -61,7 +59,7 @@ Error en la instalación porque no se admite una degradación entre estas versio
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>Falta o no se actualiza el registro de instalación de MDATP
 
 En raras ocasiones, la instalación no deja ningún seguimiento en el archivo /Library/Logs/Microsoft/mdatp/install.log de MDATP.
-Puedes comprobar que se ha producido una instalación y analizar posibles errores consultando registros de macOS (esto resulta útil en la implementación de MDM, cuando no hay ninguna interfaz de usuario de cliente). Se recomienda usar una ventana de tiempo limitado para ejecutar una consulta y filtrar por el nombre del proceso de registro, ya que habrá una gran cantidad de información.
+Puedes comprobar que se ha producido una instalación y analizar posibles errores consultando registros de macOS (útil en la implementación de MDM, cuando no hay interfaz de usuario de cliente). Se recomienda usar una ventana de tiempo limitada para ejecutar una consulta y filtrar por el nombre del proceso de registro, ya que habrá una gran cantidad de información.
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

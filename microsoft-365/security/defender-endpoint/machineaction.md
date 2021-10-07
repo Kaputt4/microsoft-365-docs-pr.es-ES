@@ -9,18 +9,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 33df420b8b480b6957e2ec71b3bb5494f61fce63
-ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
+ms.openlocfilehash: 0d2da96b421dfa594836698f2849f615e8f0ccf5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59453621"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209446"
 ---
 # <a name="machineaction-resource-type"></a>Tipo de recurso MachineAction
 
@@ -68,7 +68,7 @@ ms.locfileid: "59453621"
 |scope|cadena|Ámbito de la acción. "Completo" o "Selectivo" para aislamiento, "Rápido" o "Completo" para el examen antivirus.|
 |solicitante|Cadena|Identidad de la persona que ejecutó la acción.|
 |externalID|Cadena|Id que el cliente puede enviar en la solicitud de correlación personalizada.|
-|requestSource|cadena|Nombre del usuario o aplicación que envió la acción.|
+|requestSource|string|Nombre del usuario o aplicación que envió la acción.|
 |Comandos |matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|
 |cancellationRequestor|Cadena|Identidad de la persona que canceló la acción.|
 |requestorComment|Cadena|Comentario que se escribió al emitir la acción.|

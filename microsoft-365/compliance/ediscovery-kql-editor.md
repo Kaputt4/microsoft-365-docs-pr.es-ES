@@ -10,20 +10,20 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Puede usar el editor de KQL para configurar consultas de búsqueda de exhibición de documentos electrónicos en Búsqueda de contenido, Exhibición de documentos electrónicos principal y Advanced eDiscovery.
-ms.openlocfilehash: 571612cc2032b6241923cb6bba2a730a5d821c8a
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: cc63b0d945d6807178a801d8e6e1a69311916365
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088222"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190982"
 ---
-# <a name="use-the-kql-editor-to-build-search-queries-preview"></a>Usar el editor de KQL para crear consultas de búsqueda (versión preliminar)
+# <a name="use-the-kql-editor-to-build-search-queries-preview"></a>Uso del editor de KQL para crear consultas de búsqueda (versión preliminar)
 
 La nueva experiencia de consulta KQL en la búsqueda de herramientas de exhibición de documentos electrónicos de Microsoft 365 proporciona comentarios y instrucciones al crear consultas de búsqueda en búsqueda de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery. Al escribir consultas en el editor, proporciona autocompletar las propiedades y condiciones compatibles con búsquedas y proporciona listas de valores admitidos para las propiedades y condiciones estándar. Por ejemplo, si especifica la propiedad email en la consulta, el editor presentará una lista de valores admitidos `kind` que puede seleccionar. El editor de KQL también muestra posibles errores de consulta en tiempo real que puede corregir antes de ejecutar la búsqueda. Lo mejor de todo es pegar consultas complejas directamente en el editor sin tener que crear consultas manualmente con las palabras clave y las tarjetas de condiciones del generador de condiciones estándar.
   

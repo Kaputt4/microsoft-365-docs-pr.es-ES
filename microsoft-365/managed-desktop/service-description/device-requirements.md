@@ -4,24 +4,24 @@ description: Resumen de los requisitos mínimos de hardware y software para que 
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f51208b8376ef160fe83a41e5a2ac74eb843c2f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ce5f0c3782b8e8082d0e1ede53339a190b7259f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215357"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209470"
 ---
 # <a name="device-requirements"></a>Requisitos del dispositivo
 
-Escritorio administrado de Microsoft evalúa periódicamente los requisitos del dispositivo para incluirse en el servicio. En este artículo se describen los requisitos de hardware y software que debe cumplir un dispositivo para poder trabajar con Escritorio administrado de Microsoft. Puedes revisar una lista de dispositivos específicos ya aprobados para su uso con el servicio en función de estos requisitos. Filtrar por Escritorio administrado de Microsoft en el sitio [De Windows 10 Pro de dispositivos](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) empresariales
+Escritorio administrado de Microsoft evalúa periódicamente los requisitos del dispositivo para incluirse en el servicio. En este artículo se describen los requisitos de hardware y software que debe cumplir un dispositivo para poder trabajar con Escritorio administrado de Microsoft. Puedes revisar una lista de dispositivos específicos ya aprobados para su uso con el servicio en función de estos requisitos. Filtrar por Escritorio administrado de Microsoft en el sitio [De Windows Pro de dispositivos empresariales](https://www.microsoft.com/en-us/windows/business/devices)
 
 > [!NOTE]
-> Estos requisitos pueden cambiar en cualquier momento, pero proporcionaremos un aviso de 30 días de cualquier cambio en los requisitos de hardware. Los requisitos modificados más recientemente se marcan con **\*** . 
+> Estos requisitos pueden cambiar en cualquier momento, pero proporcionaremos un aviso de 30 días de cualquier cambio en los requisitos de hardware. Los requisitos modificados más recientemente se marcan con <b>\*</b> . 
 
 ## <a name="check-hardware-requirements"></a>Comprobar requisitos de hardware
 
@@ -45,13 +45,11 @@ El dispositivo debe haber sido creado por uno de estos fabricantes:
 
 El dispositivo debe tener preinstalado este software:
 
-- Windows 10 Enterprise, Pro o Pro workstation edition
+- <b>\*</b>Windows 10 o Windows 11: Enterprise, Pro o Pro Workstation Edition
 - la versión de 64 bits de Aplicaciones Microsoft 365 para empresas 
 - Todos los controladores de dispositivo aplicables
 
-> [!NOTE]
-> Windows 11 será una opción adicional para el software preinstalado una vez que haya alcanzado la disponibilidad general.
->
+
 ### <a name="physical-features"></a>Características físicas
 
 Los dispositivos deben tener estas capacidades:
@@ -65,7 +63,7 @@ Para obtener más información sobre estas capacidades y las tecnologías relaci
 
 > [!NOTE]
 >- ARM procesadores no son compatibles.
->- Windows 11 tiene requisitos de [hardware adicionales.](/windows/whats-new/windows-11-requirements)
+>- <b>\*</b>Windows 11 tiene requisitos de [hardware adicionales.](/windows/whats-new/windows-11-requirements)
 
 Los dispositivos deben cumplir o superar los siguientes límites de almacenamiento y memoria:
 
