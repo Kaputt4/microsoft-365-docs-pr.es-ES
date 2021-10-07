@@ -10,18 +10,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Después de crear e iterar en una colección borrador, puede confirmarla en un conjunto de revisión. Cuando se confirma un borrador de colección, los elementos recopilados se agregan al conjunto de revisión en el caso. Después de que los elementos recopilados estén en el conjunto de revisión, puede analizarlos, revisarlos y exportarlos.
-ms.openlocfilehash: 8aaa6a2eca4adb312fdf739e7c457cce82436087
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 0d230f02f08b5a29b2c53ab20ff175f8c7db9ac6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043256"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173576"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Confirmar un borrador de colección en un conjunto de revisión en Advanced eDiscovery
 

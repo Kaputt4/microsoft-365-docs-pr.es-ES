@@ -7,7 +7,7 @@ ms.date: 04/10/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: En este artículo se describe cómo implementar en SharePoint Online sin realizar pruebas de carga tradicionales, ya que no está permitido.
-ms.openlocfilehash: fb54864168b35fed290ccb1139cb6c607969820d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f9bf4c508e862d9d99bac2935cfea32878a93762
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216077"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172028"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planeamiento de capacidad y pruebas de carga en SharePoint Online
 En este artículo se describe cómo implementar en SharePoint Online sin pruebas de carga tradicionales, ya que las pruebas de carga no están permitidas en SharePoint Online. SharePoint Online es un servicio en la nube y Microsoft administra las capacidades de carga, el estado y el equilibrio general de carga del servicio.

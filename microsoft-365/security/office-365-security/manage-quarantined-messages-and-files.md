@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66ae5d7a5b13495aabbd071f03e87efc5b239294
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 7bf5b4fa2c339e1132efb71c53a5eaf62f9646ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088337"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174440"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 

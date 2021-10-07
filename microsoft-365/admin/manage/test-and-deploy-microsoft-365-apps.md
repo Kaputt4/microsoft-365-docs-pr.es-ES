@@ -8,18 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Busque, pruebe e implemente aplicaciones asociadas de Microsoft y Microsoft para usuarios y grupos de su organización desde el portal de aplicaciones integradas en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 6ab2b2a81fe54b38f6c2d6352a976b83cd2e84a9
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 08660c4f90a27f4294268aa0fb2204347ad06498
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934004"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174152"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Prueba e implementación de Aplicaciones Microsoft 365 asociados en el portal de aplicaciones integradas
 

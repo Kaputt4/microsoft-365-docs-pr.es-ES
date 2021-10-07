@@ -8,7 +8,7 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ed752f9514f1d2c8cadeb7cbbd1d7b9311b1b5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7b1c0501bb044129c4fa626428dfc616ea8414e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219900"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174380"
 ---
 # <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Soluciones de informes personalizadas o de terceros para Microsoft Defender para Office 365
 
@@ -46,7 +46,7 @@ Con [Microsoft Defender para Office 365,](defender-for-office-365.md)obtiene inf
 |[Esquema de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-schema)|Obtenga información general sobre el [esquema común](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) y el esquema de investigación y respuesta de defender para [Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) y amenazas para obtener información sobre tipos específicos de datos disponibles a través de la API de actividad de administración Office 365 administración.|
 |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Investigación y respuesta automatizadas en Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)

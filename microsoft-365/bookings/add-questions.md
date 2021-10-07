@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: Si necesita hacer preguntas a los clientes cuando reserven una cita con usted en línea, puede agregar preguntas personalizadas y necesarias a la página de reserva.
-ms.openlocfilehash: 496d395677d272c436504bfe43b3c42833e3a73e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7d997ff02e2a6b8d849cb50014924733bac8e32
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212880"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173972"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>Agregar preguntas personalizadas y requeridas a la página de reserva
 

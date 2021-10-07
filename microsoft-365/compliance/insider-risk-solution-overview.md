@@ -2,7 +2,7 @@
 title: Soluciones de riesgo interno
 description: Obtenga información sobre cómo ayudar a minimizar los riesgos en su organización con soluciones de riesgo de insider en Microsoft 365.
 keywords: Microsoft 365, riesgo interno, cumplimiento
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 40d1076f9c6706b9a24c1a6af23a32b02809c7ba
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ab7f0b26770c78298d620fa1f7d991dc5c7cae4b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216827"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175244"
 ---
-# <a name="insider-risk-solutions-in-microsoft-365"></a>Soluciones de riesgo interno en Microsoft 365
+# <a name="insider-risk-solutions-in-microsoft-365"></a>Soluciones de riesgos internos en Microsoft 365
 
 Los riesgos de Insider son una de las principales preocupaciones de los profesionales de seguridad y cumplimiento en el lugar de trabajo moderno. Los estudios del sector han demostrado que los riesgos de información interna suelen asociarse con actividades o eventos de usuario específicos. Proteger su organización contra estos riesgos puede ser difícil de identificar y difícil de mitigar. Los riesgos de Insider incluyen vulnerabilidades en una variedad de áreas y pueden causar problemas importantes para su organización, que van desde la pérdida de propiedad intelectual hasta el acoso en el lugar de trabajo, etc. En la siguiente figura se describen los riesgos comunes de insider:
 
@@ -60,7 +60,7 @@ El cumplimiento de la comunicación ayuda a minimizar los riesgos de comunicaci�
 - Microsoft 365 A5 suscripción (versión de pago o de prueba)
 - Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
 - Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
-- Microsoft 365 Suscripción de G5 (versión de pago o de prueba)
+- Suscripción a Microsoft 365 G5 (versión de pago o de prueba)
 - Microsoft 365 Suscripción de G5 + el Microsoft 365 de cumplimiento de G5
 - Microsoft 365 Suscripción de G5 + el complemento Microsoft 365 G5 Insider Risk Management
 - Office 365 Enterprise Suscripción E5 (versión de pago o de prueba)
@@ -79,10 +79,10 @@ La administración de riesgos de Insider está disponible en las siguientes susc
 - Microsoft 365 A5 suscripción (versión de pago o de prueba)
 - Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
 - Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
-- Microsoft 365 Suscripción de G5 (versión de pago o de prueba)
-- Microsoft 365 G3 suscripción + el Microsoft 365 de cumplimiento de G5
-- Microsoft 365 G3 suscripción + el complemento Microsoft 365 G5 Insider Risk Management
-- Office 365 E3 suscripción + Enterprise Mobility and Security E3 + Cumplimiento de Microsoft 365 E5 add-on
+- Suscripción a Microsoft 365 G5 (versión de pago o de prueba)
+- Suscripción a Microsoft 365 G3 + complemento de Cumplimiento de Microsoft 365 G5
+- Subscripción a Microsoft 365 G3 + complemento de Administración de riesgos internos de Microsoft 365 G5
+- Suscripción a Office 365 E3 + Enterprise Mobility + Security E3 + el complemento Cumplimiento de Microsoft 365 E5
 
 ### <a name="information-barriers"></a>Barreras de información
 
@@ -134,13 +134,13 @@ Para ayudarle a planear una estrategia integrada para implementar Microsoft 365 
 |:-----|:------------|
 |[![Póster modelo: capacidades de protección y cumplimiento de la información de Microsoft 365.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Descargar como PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Actualizado en octubre de 2020|Incluye: <ul><li>  Protección de la información y prevención de la pérdida de datos de Microsoft</li><li>Directivas y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de comunicaciones</li><li>Administración de riesgos internos</li><li>Ingesta de datos de terceros</li>|
 
-## <a name="training"></a>Aprendizaje
+## <a name="training"></a>Formación
 
 La formación de los administradores y el equipo de cumplimiento en los conceptos básicos para cada solución de riesgo de insider puede ayudar a su organización a empezar más rápidamente con los esfuerzos de implementación e implementación. 
 
 Microsoft 365 proporciona los siguientes recursos para ayudar a informar y formar a estos usuarios en su organización:
 
-| Solución/área | Resources |
+| Solución/área | Recursos |
 |:------------------|:--------------|
 | Administrar el riesgo interno en Microsoft 365 |[Ruta de aprendizaje completa](/learn/paths/m365-compliance-insider) <br> Esta ruta de aprendizaje incluye todos los módulos de solución individuales para el cumplimiento de comunicaciones, la administración de riesgos de información privilegiada, las barreras de información y la administración de acceso con privilegios. Seleccione esta ruta de aprendizaje para completar todos los módulos. |
 | Cumplimiento de comunicaciones | [Learning: Preparar el cumplimiento de la comunicación en Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Este módulo le ayuda a aprender los conceptos básicos sobre cómo identificar y corregir infracciones de directivas de código de conducta con el cumplimiento de la comunicación, cubrir los requisitos previos necesarios antes de crear directivas de cumplimiento de comunicaciones y obtener información sobre los tipos de plantillas de directivas predefinidas integradas en el cumplimiento de las comunicaciones. |

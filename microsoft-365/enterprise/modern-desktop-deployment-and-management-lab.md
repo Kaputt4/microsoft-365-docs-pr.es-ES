@@ -9,18 +9,18 @@ ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 8831293d1b17649ae387aab9ab99063ba31bef15
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2801840e0329233ad79abdae607b81094db5e282
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189614"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173312"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Kit del laboratorio de implementación de Office 365 y Windows 10
 
@@ -64,7 +64,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 ### <a name="prepare-configuration"></a>Preparar configuración
 
-- Optimizar Windows 10 entrega de actualizaciones
+- Optimizar la entrega de la actualización de Windows 10
 - Mantenimiento de Windows 10 con la directiva de grupo
 - Mantenimiento de Windows 10 con Microsoft Intune
 - Mantenimiento de Windows 10 con Configuration Manager

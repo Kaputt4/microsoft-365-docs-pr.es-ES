@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la herramienta de administración de custodia integrada en Advanced eDiscovery coordinar los flujos de trabajo e identificar orígenes de datos relevantes en un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3c5adf4b51cbb9898b0b4f7bc806c1392453c526
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 12a1a6d40706e71043dffdc899847b7d8062430b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217077"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171044"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un Advanced eDiscovery caso
 
@@ -38,7 +38,7 @@ Puede agregar y administrar custodios en Advanced eDiscovery casos en cuatro pas
 
 4. Revise a los custodios y complete el proceso.
 
-   [![Ficha Orígenes en Advanced eDiscovery caso. ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
+   [![Ficha Orígenes en Advanced eDiscovery caso. ](../media/AeD-Sources-Tab.png) ](../media/AeD-Sources-Tab.png#lightbox)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Asegúrese de que tiene los permisos necesarios
 
@@ -114,4 +114,4 @@ Antes de agregar realmente los custodios al caso, puede revisar la lista de cust
 
    Los nuevos custodios se agregan al caso y se muestran en la **pestaña Orígenes de** datos.
 
-   [![Los custodios que aparecen en la pestaña Orígenes de datos. ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)
+   [![Los custodios que aparecen en la pestaña Orígenes de datos. ](../media/DataSourcesTab.png) ](../media/DataSourcesTab.png#lightbox)

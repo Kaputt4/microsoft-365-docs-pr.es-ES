@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo crear una directiva de archivado y eliminación en Microsoft 365 que mueve automáticamente los elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: d84e83174d7698c4532bc082502653f25fb2981e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b6d0a9fdfa18d34eac2624f7c83f0ee5993f666b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216450"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175124"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización
 

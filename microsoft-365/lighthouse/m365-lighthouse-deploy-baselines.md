@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo implementar Microsoft 365 Lighthouse líneas base.
-ms.openlocfilehash: 62fc9afcbf10a0cd77c2fe2d2f7140b5197dd42a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d449a7677e478111590a2fbeedfbd211e07d7027
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191134"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173204"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Implementar Microsoft 365 Lighthouse base 
 

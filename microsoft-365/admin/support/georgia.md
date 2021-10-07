@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ec66115bc5ad0c8031be7117d2d8282e5c7d5041
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f1953caf231daf6e5921a71bbec01200ea93772d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217657"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171500"
 ---
 # <a name="contact-support-for-georgia"></a>Póngase en contacto con el soporte técnico de Georgia
 

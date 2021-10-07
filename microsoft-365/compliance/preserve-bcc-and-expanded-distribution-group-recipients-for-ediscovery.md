@@ -9,15 +9,15 @@ ms.date: 6/19/2017
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place de retención, retención por juicio y directivas de retención Microsoft 365 permiten conservar el contenido del buzón para cumplir los requisitos de cumplimiento normativo y exhibición de documentos electrónicos.
-ms.openlocfilehash: 4d72233a6026ac493de1cd551c0b4908d200815f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f034129400a47e9b72f0883ce368ecea657851a5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186054"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175136"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservar los destinatarios de grupos de distribución expandidos y CCO para la exhibición de documentos electrónicos
   
@@ -68,7 +68,7 @@ Escenario 2: Bob le envía un correo electrónico a John (Para/CC) y Jack (CCO d
 |Buzón de correo de Jack  <br/> |To/Cc:John (directamente o mediante grupo de distribución)  <br/> |Sí  <br/> |La información de Para/CC se incluye en el mensaje que se entrega a todos los destinatarios.  <br/> |
 |Buzón de correo de Jack  <br/> |Bcc:Jack (directamente o mediante grupo de distribución)  <br/> |No  <br/> |La información de CCO no se almacena en el mensaje que se entrega a los destinatarios. Debe buscar en el buzón de correo del remitente.  <br/> |
    
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
  **P. ¿Cuándo y dónde se almacena la información de destinatarios CCO?**
   

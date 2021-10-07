@@ -6,7 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo iniciar el portal con el programador de inicio del portal
-ms.openlocfilehash: 459d2a4ddaaa2f6a7d1c8095ee93baab4e8248ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 035ed3401323ae1221c7e7afd6f6c7d34b78aea4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193516"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172100"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Inicie el portal con el programador de inicio SharePoint portal de inicio
 
@@ -139,7 +139,7 @@ Si tiene previsto iniciar un portal con más de 100.000 usuarios, envíe una sol
 
 [Iniciar SharePoint portal con 100.000 usuarios](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
-2. En la parte inferior del panel, seleccione **Póngase en** contacto con el soporte técnico y, a continuación, seleccione Nueva solicitud de **servicio**. 
+2. En la parte inferior del panel, seleccione **Póngase en contacto con el soporte técnico**, y a continuación, seleccione **Nueva solicitud de servicio**. 
 
 3. En **Descripción,** escriba "Iniciar SharePoint Portal con 100k usuarios". 
 

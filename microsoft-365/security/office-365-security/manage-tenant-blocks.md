@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2dc45779f7e5656e2edfcb1ea89ef19f95cc3d2e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4e3af53e4cf6776627e7d8c25f41e241f37add8e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211637"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174320"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Agregar bloques a la lista de bloqueados y permitidos del espacio empresarial
 

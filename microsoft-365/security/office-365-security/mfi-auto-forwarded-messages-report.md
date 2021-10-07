@@ -7,17 +7,17 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Los administradores pueden obtener información sobre el informe de mensajes reenviados automáticamente en el panel flujo de correo del Centro de seguridad & cumplimiento.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c0b2ddd462cccdea744d9a37ec357ee152b6369
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 734a072e23ecd77bcf1dd328c9c952387ba65c52
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988696"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174272"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Información de mensajes reenviados automáticamente en el Centro de seguridad & cumplimiento
 
@@ -60,6 +60,6 @@ Se generan dos perspectivas en función de los datos del informe:
 - [Nuevos usuarios reenviar correo electrónico](mfi-new-users-forwarding-email.md)
 - [Nuevos dominios que se reenvía correo electrónico](mfi-new-domains-being-forwarded-email.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

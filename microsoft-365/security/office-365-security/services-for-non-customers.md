@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
@@ -17,12 +17,12 @@ ms.collection:
 description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9bed3c24fee91d746957a6418e5f5ea61babef6b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2894d565a08cf500199b123a0acd738de129faf0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185545"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174188"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servicios para no clientes que envían correo a Microsoft 365
 

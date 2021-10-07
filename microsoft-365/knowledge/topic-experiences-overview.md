@@ -12,18 +12,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority: medium
 description: Obtenga información sobre cómo usar Viva Topics en su organización.
-ms.openlocfilehash: 902628d53f651073b1d08ce3f1915808da22b03f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9b719c77a54271078bf2ee80f657352a84d9713b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189544"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173216"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de los temas de Microsoft Viva 
 
-Viva Topics usa la tecnología de inteligencia artificial de Microsoft, Microsoft 365, Microsoft Graph, Búsqueda y otros componentes y servicios para aportar conocimiento a los usuarios en las aplicaciones de Microsoft 365 que usan todos los días, empezando por SharePoint páginas modernas, Búsqueda de Microsoft y Búsqueda en Word, PowerPoint, Outlook y Excel.
+Viva Topics usa la tecnología de inteligencia artificial de Microsoft, Microsoft 365, Microsoft Graph, Búsqueda y otros componentes y servicios para aportar conocimiento SharePoint a los usuarios en las aplicaciones de Microsoft 365 que usan todos los días, empezando por páginas modernas, Búsqueda de Microsoft y Búsqueda en Word, PowerPoint, Outlook y Excel.
 
 <br/>
 
@@ -160,6 +160,6 @@ Al enviar comentarios, le pedimos que no incluya información confidencial, como
 
 Gracias por tomarse el tiempo para compartir sus ideas con nosotros. Su perspectiva nos ayuda a mejorar nuestras características existentes y desarrollar otras nuevas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Use Búsqueda de Microsoft para buscar temas en Temas de Viva](./search.md)

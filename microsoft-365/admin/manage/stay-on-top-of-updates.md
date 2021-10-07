@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: Obtenga información sobre cómo mantenerse al tanto de las actualizaciones Microsoft 365 con el Centro de mensajes, la versión dirigida, la guía básica y los blogs y Community.
-ms.openlocfilehash: e25093d784750ae97ffd2fef0700fd8d925f6f64
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: dec70d6f496f78690cc27c153e7824bfc2741390
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776001"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171752"
 ---
 # <a name="stay-on-top-of-changes"></a>Mantenerse al día de los cambios
 
@@ -32,7 +33,7 @@ Con Microsoft 365, recibirá nuevas actualizaciones de productos y característi
 
 ## <a name="stay-on-top-of-microsoft-365-changes"></a>Mantenerse al día con los cambios de Microsoft 365
 
-|Característica|Descripción|Cómo usar |
+|Característica|Descripción|Cómo se usa|
 |:-----|:-----|:-----|
 |**Centro de mensajes** <br/> |Obtenga información sobre los anuncios de servicio oficiales y los cambios de características. Puedes leer estos mensajes en el Centro de administración de Microsoft 365, la aplicación móvil de administración o recibir un resumen semanal en el correo electrónico. Comparta estos mensajes con otros usuarios de su organización cuando vea un mensaje en el que otra persona debe actuar. También puede usar la API de comunicaciones de servicio para recuperar los mensajes.  <br/> |Inicie sesión en el [Centro de administración](../admin-overview/about-the-admin-center.md) o en la [aplicación móvil de administración](../admin-overview/admin-mobile-app.md). Seleccione **Centro de** mensajes de \> **mantenimiento**. Seleccione un mensaje para leer o compartir.  <br/> Cambie los servicios sobre los que ve mensajes o opte por el resumen semanal **seleccionando Editar** preferencias en el Centro de administración. Aquí también es donde puede optar por no participar en el resumen semanal.  <br/> [Información general sobre el Microsoft 365 de mensajes](message-center.md) <br/> |
 |**Versión dirigida** <br/> |Realice una suscripción a la versión dirigida para usted y para un grupo selecto de personas de su organización. Obtenga las actualizaciones de Microsoft 365 más recientes antes que todos los demás y, a continuación, informe o entrena a los usuarios sobre la nueva experiencia.  <br/> |Inicie sesión en el [Centro de administración](../admin-overview/about-the-admin-center.md) o en la [aplicación móvil de administración](../admin-overview/admin-mobile-app.md). Selece **Configuración** \> **preferencias de versión del perfil de** la \> **organización.** Obtenga más información sobre [Versión dirigida](release-options-in-office-365.md).  <br/> |

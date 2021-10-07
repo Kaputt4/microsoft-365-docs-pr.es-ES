@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Cambie las suscripciones manualmente comprando una nueva suscripción y asegurándose de que ambas suscripciones estén enumeradas y activas.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 5db328cb1545279faa1332c144c7a8b60a50fa05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7239cda6c00785626471b35be19c1d550acf91e3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221198"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173684"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
 

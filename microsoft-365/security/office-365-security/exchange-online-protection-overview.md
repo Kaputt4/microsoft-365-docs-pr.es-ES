@@ -8,19 +8,19 @@ manager: dansimp
 ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos independientes e híbridos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 006be2cf23735f6ec44c749de869e87d55be2123
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 0fa4aa1d724ad13b3c43f84a0c6d2a7e8002983f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483104"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174368"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -102,7 +102,7 @@ Para obtener información sobre los requisitos, los límites importantes y la di
 |Protección contra la suplantación de identidad (anti-phishing)|[Directivas contra la suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)|
 |Protección contra la suplantación de identidad|[Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md) <p> [Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
 |Purga automática de hora cero (ZAP) para mensajes de malware, correo no deseado y phishing entregados|[ZAP en Exchange Online](zero-hour-auto-purge.md)|
-|Directivas de seguridad preestablecidas|[Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
+|Directivas de seguridad predefinidas|[Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
 |Lista de bloqueados y permitidos del espacio empresarial|[Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
 |Bloquear listas para remitentes de mensajes|[Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)|
 |Permitir listas para remitentes de mensajes|[Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md)|

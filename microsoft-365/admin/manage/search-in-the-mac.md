@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar la característica de búsqueda en el Centro de administración para obtener resultados mejores y más rápidos.
-ms.openlocfilehash: c530d3e041800ef2e9b0c36169ec15366b9b3b1d
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 026fe9ed40f44f01a056cc7c6af281c5ce46c6c1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786040"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171872"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Búsqueda en el Centro de administración de Microsoft 365
 
@@ -76,7 +76,7 @@ Los resultados proporcionan una forma de navegar rápidamente a una página espe
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Captura de pantalla: resultados de búsqueda que muestran la ruta de navegación en el Centro de administración":::
 
-## <a name="settings"></a>Configuración
+## <a name="settings"></a>Configuraciones
 
 Busque la configuración de nivel de aplicación compatible relacionada con su organización, los servicios a los que se suscriba y la configuración de seguridad y privacidad.
 

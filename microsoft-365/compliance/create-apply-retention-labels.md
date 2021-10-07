@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear y publicar etiquetas de retención para aplicarlas en aplicaciones y así conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: ab921a2dab7bbf735ebfd2ea311a21e694fddbac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bfe4fa129488595e6e9713d909c2c4020a2b5bb6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189797"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175364"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Crear etiquetas de retención y aplicarlas en aplicaciones
 
@@ -97,7 +97,7 @@ Publique etiquetas de retención para que los usuarios puedan usarlas en aplicac
     
     Para obtener información sobre las ubicaciones compatibles con las etiquetas de retención, vea [Etiquetas de retención y ubicaciones](retention.md#retention-label-policies-and-locations). 
 
-Para editar una directiva de etiqueta de retención existente (el tipo de directiva es **Publicar**), selecciónela y después seleccione la opción **Editar** para iniciar la directiva de Editar retención. Este asistente le permite cambiar la descripción de la directiva y cualquier [configuración elegible](#updating-retention-labels-and-their-policies) del paso 2.
+Para editar una directiva de la etiqueta de retención existente (el tipo de directiva es **Publicar**), selecciónela y, a continuación, seleccione la opción **Editar** para iniciar la directiva Editar retención. Este asistente le permite cambiar las descripciones de las directivas y los [parámetros de configuración adecuados](#updating-retention-labels-and-their-policies) del paso 2.
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Cuando las etiquetas de retención estén disponibles para aplicarlas

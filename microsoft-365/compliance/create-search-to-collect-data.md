@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo crear, definir y elegir custodios y ubicaciones de custodia para una búsqueda en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3050e176f495bd2fc23ac6237f1dac28b04088ec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4dab7936002a3551e21142a76d6ef301cd6bfdf8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213927"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172472"
 ---
 # <a name="create-a-search"></a>Crear una búsqueda
 

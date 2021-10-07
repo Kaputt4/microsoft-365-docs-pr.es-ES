@@ -9,19 +9,19 @@ ms.date: 10/12/2018
 audience: End User
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: 'Last Updated: May 2017'
-ms.openlocfilehash: ac7bc50b621930244e7e549c27489436c4bbf6a19302c3cd16310d9f69108b1b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b881c1e73955ee83f49f8f326f1a184cced46a1f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895300"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172268"
 ---
 # <a name="privacy-statement-for-secure-email-portal"></a>Declaración de privacidad de Secure Email Portal
 
@@ -37,7 +37,7 @@ La información de credenciales a la cuenta de Microsoft, la cuenta de trabajo o
   
 Durante el proceso de descifrado, el nuevo Portal de capacidades de OME no almacenará el correo cifrado que reciba; no se transmitirá fuera del nuevo Portal de funcionalidades de OME en ningún momento.
   
-En algunos casos, el portal de nuevas funcionalidades de OME puede recopilar puntos de datos sobre el uso y el rendimiento de las nuevas funcionalidades de OME (por ejemplo, la frecuencia con la que se ven los mensajes cifrados, el explorador o la aplicación que se usa y los errores detectados), que pueden analizarse de forma agregada con el fin de mejorar la calidad, la seguridad y la integridad de esta y otras aplicaciones de Microsoft. , productos o servicios. Esta información no se usa para identificar, ponerse en contacto o dirigirse a la publicidad.
+El nuevo portal de capacidades de OME puede, en algunos casos, recopilar puntos de datos sobre el uso y el rendimiento de las nuevas funcionalidades de OME (por ejemplo, la frecuencia con la que se ven los mensajes cifrados, el explorador o la aplicación que se usan y los errores detectados), que pueden analizarse de forma agregada con el fin de mejorar la calidad, la seguridad y la integridad de esta y otras aplicaciones de Microsoft,  productos o servicios. Esta información no se usa para identificar, ponerse en contacto o dirigirse a la publicidad.
   
 ## <a name="for-more-information"></a>Para obtener más información
 

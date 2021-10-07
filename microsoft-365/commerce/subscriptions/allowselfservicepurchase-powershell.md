@@ -9,7 +9,7 @@ ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: None
+ms.localizationpriority: ''
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 description: Obtenga información sobre cómo usar el cmdlet De PowerShell AllowSelfServicePurchase para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/16/2021
-ms.openlocfilehash: 1de0b99954883b301110689c72e10e05c16e7576
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31ef425bf82f40d9720eec0a65b3278e63186ba9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219070"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172580"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Usar AllowSelfServicePurchase para el módulo de PowerShell de MSCommerce
 
@@ -105,7 +105,7 @@ En la tabla siguiente se enumeran los productos disponibles y **su ProductId**.
 | Visio Plan 1 | CFQ7TTC0KXN9 |
 | Visio Plan 2 | CFQ7TTC0KXN8 |
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
-| Windows 365 Empresa | CFQ7TTC0J203 |
+| Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Empresa con Windows ventaja híbrida | CFQ7TTC0HX99 |
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Ver o establecer el estado de AllowSelfServicePurchase
 

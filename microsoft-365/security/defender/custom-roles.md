@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 699d8c1d8ea7ac6928c96b6c98226ab82e0725fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 95fa7c4821f28775c78175aa18a413b8cd1928e5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214610"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174416"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Roles personalizados en el control de acceso basado en roles para Microsoft 365 Defender
 

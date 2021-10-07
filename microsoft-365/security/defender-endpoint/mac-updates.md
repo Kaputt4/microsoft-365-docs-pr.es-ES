@@ -2,15 +2,13 @@
 title: Implementar actualizaciones para Microsoft Defender para Endpoint en Mac
 description: Controle las actualizaciones de Microsoft Defender para Endpoint en Mac en entornos empresariales.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, actualizaciones, implementar
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ae8909f2533394e347a1885f2fb1354f6ce4cfae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2abd270aeee07e84cf31711494d68ca15885515
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214970"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174681"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en macOS
 
@@ -80,7 +78,7 @@ El `Current` canal contiene la versión más estable del producto.
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|ChannelName|
@@ -103,7 +101,7 @@ Cambiar la frecuencia con la que MAU busca actualizaciones.
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|UpdateCheckFrequency|
@@ -120,7 +118,7 @@ Cambiar la forma en que MAU busca actualizaciones.
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|HowToCheck|
@@ -137,12 +135,12 @@ Cambie si los usuarios locales podrán hacer clic en la opción "Buscar actualiz
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|EnableCheckForUpdatesButton|
 |**Tipo de datos**|Booleano|
-|**Posibles valores**|True (predeterminado) <p> Falso|
+|**Posibles valores**|True (predeterminado) <p> False|
 |||
 
 ### <a name="disable-insider-checkbox"></a>Casilla Deshabilitar Insider
@@ -153,12 +151,12 @@ Se establece en true para que el "Join the Office Insider Program..." casilla no
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|DisableInsiderCheckbox|
 |**Tipo de datos**|Booleano|
-|**Posibles valores**|False (predeterminado) <p> Verdadero|
+|**Posibles valores**|False (predeterminado) <p> True|
 |||
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>Limitar la telemetría que se envía desde MAU
@@ -169,12 +167,12 @@ Se establece en false para enviar datos de latido mínimos, sin uso de aplicacio
 
 ****
 
-|Sección|Valor|
+|Section|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|SendAllTelemetryEnabled|
 |**Tipo de datos**|Booleano|
-|**Posibles valores**|True (predeterminado) <p> Falso|
+|**Posibles valores**|True (predeterminado) <p> False|
 |||
 
 ## <a name="example-configuration-profile"></a>Perfil de configuración de ejemplo

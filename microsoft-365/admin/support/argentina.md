@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27c6b5ce80c580dd51fbc3a86f76f8f4f19ff819
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bf597e55bd49415d084966f573f60ab5a6300b90
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210250"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175916"
 ---
 # <a name="contact-support-for-argentina"></a>Póngase en contacto con el soporte técnico de Argentina
 

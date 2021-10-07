@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 ms.custom:
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Envíe correo electrónico como una lista de distribución en Microsoft 365 para que cuando un miembro responda a un mensaje parezca que es de la lista de distribución.
-ms.openlocfilehash: 4f41368d5b769c783c7c05aa662199bbcafd7b1e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: d38a7cb2efe3ddd3a915030f6aff4acc1eba1aef
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776049"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171836"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Enviar correo electrónico como una lista de distribución
 

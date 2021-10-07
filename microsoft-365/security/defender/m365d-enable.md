@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9585547ea926dbee09aacada05f24e9217c07923
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b64990320684f6c022a2fc8a2092141af5728679
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189217"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174404"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activar Microsoft 365 Defender
 

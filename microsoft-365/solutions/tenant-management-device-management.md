@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente la opción correcta para la administración de dispositivos y aplicaciones para Microsoft 365 inquilinos.
-ms.openlocfilehash: 1d96042f2733a69919fd0dbaa9f30be6835d6469
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 03126b373efcd3badb37590548c77889cb98391f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192144"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174164"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 5. Administración de dispositivos y aplicaciones para Microsoft 365 para inquilinos empresariales
 

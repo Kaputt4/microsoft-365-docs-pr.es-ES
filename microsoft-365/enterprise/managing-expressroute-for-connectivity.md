@@ -7,7 +7,7 @@ ms.date: 7/13/2017
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Obtenga información sobre cómo administrar ExpressRoute para Office 365, incluidas las áreas comunes para configurar el filtrado de prefijos, la seguridad y el cumplimiento.
-ms.openlocfilehash: e8de0763df7d592bc41802b1ead48df06891e6dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bffe82249a9d8a531ee85525f9db0eb38a344d50
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213850"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173330"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Administración de la conectividad de ExpressRoute para Office 365
 

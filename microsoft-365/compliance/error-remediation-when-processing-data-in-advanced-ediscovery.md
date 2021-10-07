@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la corrección de errores para corregir problemas de datos Advanced eDiscovery que podrían impedir el procesamiento adecuado del contenido.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4b249f7941d4f366a2651b570286d2974aca176a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d0dabe5a16ff2b9b67b5f282401806daff8f82ea
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184121"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172352"
 ---
 # <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
 
@@ -117,7 +117,7 @@ Cuando se cargan archivos corregidos, los metadatos originales se conservan exce
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus
-- Texto
+- Text
 - WordCount
 - WorkingsetId
 

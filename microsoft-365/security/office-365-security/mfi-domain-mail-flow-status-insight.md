@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar la información sobre el estado del flujo de correo de dominio superior en el panel flujo de correo del Centro de seguridad & cumplimiento para solucionar problemas de flujo de correo relacionados con sus registros MX.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ff194aa49545f8fad407f44da38e79c413ae37bb
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: e4ed59e31cd21826eebf306e566610d54635f0c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988708"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174212"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Información de estado del flujo de correo de dominio superior en el Centro de seguridad & cumplimiento
 
@@ -50,6 +50,6 @@ Puede hacer clic **en Ver más** para ver la misma información para más domini
 
 ![Los detalles se desván de la información de estado del flujo de correo de dominio superior.](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

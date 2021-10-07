@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: martyav
 ms.author: v-maave
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cbfb672795dc64a4bb6e4d4541b8eb72511e128b
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 0f2923d03a101d6ec55bfa4090ce22e9d1353e6e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497649"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174608"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros
 
@@ -89,7 +89,7 @@ Esto generará un informe ubicado en *./gpresult.html*. Abra este archivo y es p
 
 En el informe GPResults, bajo el título *Windows Components/Antivirus de Windows Defender*, puede ver algo como la siguiente entrada, que indica que Antivirus de Microsoft Defender está desactivado.
 
-Directiva|Valor|GPO ganador
+Directiva|Configuración|GPO ganador
 ---|---|---
 Desactivar Antivirus de Windows Defender|Habilitado|Win10-Workstations
 
@@ -104,7 +104,7 @@ Resultado: Correcto|
 **General**|
 Acción|Actualizar
 **Propiedades**|
-Subárbol|HKEY_LOCAL_MACHINE
+Hive|HKEY_LOCAL_MACHINE
 Ruta de acceso clave|SOFTWARE\Policies\Microsoft\Windows Defender
 Nombre del valor|DisableAntiSpyware
 Tipo de valor|REG_DWORD
@@ -136,7 +136,7 @@ Otra característica, conocida como [examen periódico limitado,](limited-period
 > [!IMPORTANT]
 > No se recomienda el examen periódico limitado en entornos empresariales. Las capacidades de detección, administración e informes disponibles al ejecutar Antivirus de Microsoft Defender en este modo se reducen en comparación con el modo activo.
 
-### <a name="see-also"></a>Ver también
+### <a name="see-also"></a>Vea también
 
 - [Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md)
 - [Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md)

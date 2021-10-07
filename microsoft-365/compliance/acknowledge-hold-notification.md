@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar Advanced eDiscovery enviar y hacer un seguimiento de las notificaciones de retención legal a través del correo electrónico, así como supervisar el estado de las obligaciones.
-ms.openlocfilehash: 43c2474bdc485a87c30d1fa2a31c3d008d2a383e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 57cda6e88968fc90845965a8554f55d80bd3ded0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217080"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175580"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confirmar una notificación de retención
 

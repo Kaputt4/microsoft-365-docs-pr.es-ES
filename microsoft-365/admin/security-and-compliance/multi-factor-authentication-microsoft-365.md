@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: La autenticación multifactor (MFA) usa una contraseña, que debe ser segura, y un método de comprobación adicional.
-ms.openlocfilehash: 85b8234d62e41489480695b71463e2474442b834
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 4ffc5dc427b56b0148dd57c22e5306f3be6169d0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775713"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173000"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Autenticación multifactor para Microsoft 365
 
@@ -151,7 +152,7 @@ Después de habilitarse, la próxima vez que el usuario inicia sesión, se le pe
 
 Esta tabla muestra los resultados de habilitar MFA con los valores predeterminados de seguridad, las directivas de acceso condicional y la configuración de cuenta por usuario.
 
-|*Elemento*|Habilitado|Deshabilitado|Método de autenticación secundario|
+|*Item*|Habilitado|Deshabilitado|Método de autenticación secundario|
 |---|---|---|---|
 |**Valores predeterminados de seguridad**|No se pueden usar directivas de acceso condicional|Se pueden usar directivas de acceso condicional|Aplicación Microsoft Authenticator|
 |**Directivas de acceso condicional**|Si hay alguno habilitado, no puede habilitar los valores predeterminados de seguridad|Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad|Especificado por el usuario durante el registro de MFA|

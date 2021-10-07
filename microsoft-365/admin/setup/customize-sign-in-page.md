@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Personalice la Microsoft 365 de inicio de sesión mediante el Azure Active Directory. Puede agregar una ilustración, un logotipo y texto a la página de inicio de sesión.
-ms.openlocfilehash: 3d4e84ad15d65743b2f3c0593092f14233ddf380
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 39bbda08e280c5bc1eb0eee321de9e8f4eeeabce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776433"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171644"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Agregar la personal de marca de la empresa a la página Iniciar sesión
 

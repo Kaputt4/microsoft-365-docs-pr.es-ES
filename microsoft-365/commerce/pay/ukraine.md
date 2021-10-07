@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2fc4f93a998c4d113b8e4ebf1cfe5fce89fff949
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 202395cde1ba5e671dd88fba8d7b4e408e265e01
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190207"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171068"
 ---
 # <a name="payment-information-for-ukraine"></a>Información de pago para Ucrania
 

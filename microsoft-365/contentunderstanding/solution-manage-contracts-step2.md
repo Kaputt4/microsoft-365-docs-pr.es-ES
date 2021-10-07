@@ -9,15 +9,15 @@ ms.topic: article
 ms.date: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
+ms.localizationpriority: medium
 ROBOTS: ''
 description: Obtenga información sobre cómo usar Microsoft Teams para crear el canal de administración de contratos mediante una solución Microsoft 365 contrato.
-ms.openlocfilehash: bafce28689e4340c3ff73694d150bac294a95b5a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5a42bedcb6acba4caf8f6f114812c63869ee92e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189724"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172124"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Paso 2. Usar Microsoft Teams para crear el canal de administración de contratos
 
@@ -45,13 +45,13 @@ Después de adjuntar la SharePoint de documentos, podrá ver los contratos clasi
 ## <a name="customize-your-contracts-tab-tile-view"></a>Personalizar la vista de icono de pestaña Contratos
 
 > [!NOTE]
-> En esta sección se hace referencia a ejemplos de código incluidos en [ el archivoContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) que se incluye en el repositorio de activos de solución de administración de [contratos](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management).
+> En esta sección se hace referencia a ejemplos de código contenidos en el archivo [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) que se incluye en el repositorio de activos de solución de administración [de contratos](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management).
 
 Aunque Teams permite ver los contratos en una vista de icono, es posible que desee personalizarlo para ver los datos del contrato que desea hacer visibles en la tarjeta de contrato. Por ejemplo, para la pestaña **Contratos,** es importante que los miembros vean el cliente, el contratista y el importe de la cuota en la tarjeta de contrato. Todos estos campos se extrajeron de cada contrato SharePoint Syntex modelo que se aplicó a la biblioteca de documentos. También desea poder cambiar la barra de encabezado de icono a diferentes colores para cada estado para que los miembros puedan ver fácilmente dónde se encuentra el contrato en el proceso de aprobación. Por ejemplo, todos los contratos aprobados tendrán una barra de encabezado azul.
 
    ![Vista de icono de SharePoint biblioteca.](../media/content-understanding/tile.png)
 
-La vista de icono personalizada que use requiere que realice cambios en el archivo JSON usado para dar formato a la vista de mosaico actual. Para hacer referencia al archivo JSON usado para crear la vista de tarjeta, consulte el [ContractTileFormatting.jsarchivo on.](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) En las secciones siguientes, verá secciones específicas del código para las características que están en las tarjetas de contrato.
+La vista de icono personalizada que use requiere que realice cambios en el archivo JSON usado para dar formato a la vista de mosaico actual. Para hacer referencia al archivo JSON usado para crear la vista de tarjeta, consulte el [archivo ContractTileFormatting.json.](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) En las secciones siguientes, verá secciones específicas del código para las características que están en las tarjetas de contrato.
 
 Si desea ver o realizar cambios en el código JSON de la vista en el canal de Teams, en el canal Teams, seleccione el menú desplegable ver y, a continuación, seleccione Formato de vista **actual.**
 
@@ -59,7 +59,7 @@ Si desea ver o realizar cambios en el código JSON de la vista en el canal de Te
 
 ## <a name="card-size-and-shape"></a>Tamaño y forma de la tarjeta
 
-En el [ContractTileFormatting.jsen,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) vea la sección siguiente para ver el código de cómo se da formato al tamaño y la forma de la tarjeta.
+En el [archivo ContractTileFormatting.json,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) consulte la sección siguiente para ver el código de cómo se da formato al tamaño y la forma de la tarjeta.
 
 ```JSON
                   {
@@ -84,7 +84,7 @@ En el [ContractTileFormatting.jsen,](https://github.com/pnp/syntex-samples/blob/
 
 ## <a name="contract-status"></a>Estado del contrato
 
-El siguiente código le permite definir el estado de cada tarjeta de título. Tenga en cuenta que cada valor de estado (*New*, *In review*, *Approved* y *Rejected*) mostrará un código de color diferente para cada uno. En el [ContractTileFormatting.jsen](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) archivo, vea la sección que define el estado.
+El siguiente código le permite definir el estado de cada tarjeta de título. Tenga en cuenta que cada valor de estado (*New*, *In review*, *Approved* y *Rejected*) mostrará un código de color diferente para cada uno. En el [archivo ContractTileFormatting.json,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) vea la sección que define el estado.
 
 ```JSON
           {
@@ -108,9 +108,9 @@ El siguiente código le permite definir el estado de cada tarjeta de título. Te
 
 Cada tarjeta de contrato mostrará tres campos que se extrajeron para cada contrato (*Client*, *Contractor* y *Fee Amount*). Además, también desea mostrar la hora/fecha en que el archivo se clasificó mediante el SharePoint Syntex usado para identificarlo.
 
-En el [ContractTileFormatting.jsarchivo on,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) las siguientes secciones definen cada una de ellas.
+En el [archivo ContractTileFormatting.json,](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) las siguientes secciones definen cada una de ellas.
 
-### <a name="client"></a>Client
+### <a name="client"></a>Cliente
 
 En esta sección se define cómo se mostrará "Cliente" en la tarjeta y se usará el valor para el contrato específico.
 

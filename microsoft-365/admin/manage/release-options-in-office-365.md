@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Obtenga información sobre cómo configurar la opción de lanzamiento para nuevas actualizaciones de productos y características en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: f7d770dd569c5bd8408a842c64764f949de93aa8
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: d053530b5b3ec0500783679ceb1823ce93992fae
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776073"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173060"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurar las opciones de versión estándar o dirigida
 

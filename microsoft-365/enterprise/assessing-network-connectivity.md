@@ -7,7 +7,7 @@ ms.date: 6/23/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365 está diseñado para permitir a los clientes de todo el mundo conectarse al servicio mediante una conexión a Internet. A medida que el servicio evoluciona, la seguridad, el rendimiento y la confiabilidad de Microsoft 365 se mejoran en función de los clientes que usan Internet para establecer una conexión al servicio.
-ms.openlocfilehash: 4d80bdf5642b2456ac8293291c720429f7f18fb1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2f982bbce4786c69034560276e5aceebaa575a00
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213897"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172040"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Evaluar la conectividad de red de Microsoft 365
 

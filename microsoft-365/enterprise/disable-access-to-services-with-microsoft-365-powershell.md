@@ -7,7 +7,7 @@ ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: En este artículo, obtenga información sobre cómo usar PowerShell para deshabilitar el acceso a Microsoft 365 para los usuarios.
-ms.openlocfilehash: 7caab5fc6bc4522f210d788d0293c4594997f13d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bce02c40bf6ca99d74b8747fb0c5eb5c0b485888
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167355"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173468"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Deshabilitar el acceso a Microsoft 365 con PowerShell
 
@@ -66,10 +66,10 @@ Hay un script de PowerShell que automatiza los procedimientos descritos en este 
   
 Para deshabilitar un conjunto específico de servicios Microsoft 365 para los usuarios para un plan de licencias específico, siga estos pasos:
   
-#### <a name="step-1-identify-the-undesirable-services-in-the-licensing-plan-by-using-the-following-syntax"></a>Paso 1: Identificar los servicios no deseados en el plan de licencias mediante la siguiente sintaxis:
+#### <a name="step-1-identify-the-undesired-services-in-the-licensing-plan-by-using-the-following-syntax"></a>Paso 1: Identificar los servicios no deseados en el plan de licencias mediante la siguiente sintaxis:
     
 ```powershell
-$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
+$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesiredService1>", "<UndesiredService2>"...
 ```
 
 En el ejemplo siguiente se crea un **objeto LicenseOptions** que deshabilita los servicios Office y SharePoint Online en el plan de licencias denominado `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).

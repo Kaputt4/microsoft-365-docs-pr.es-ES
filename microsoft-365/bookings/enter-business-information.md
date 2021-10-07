@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Siga estas instrucciones para crear su página Acerca de nosotros, incluido el nombre de empresa, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
-ms.openlocfilehash: 0c0b33f38cd92b9d99114d2b896c0e86eb92f2ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 313e85166c02afa5a52f4cd4fb6cf25a7077ad26
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212900"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173960"
 ---
 # <a name="enter-your-business-information"></a>Escribir la información de su empresa
 

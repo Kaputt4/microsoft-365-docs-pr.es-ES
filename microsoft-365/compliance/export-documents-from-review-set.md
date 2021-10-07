@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo seleccionar y exportar contenido de un conjunto de Advanced eDiscovery para presentaciones o revisiones externas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5021428dc1ee82b5fb0aeed58d4e055710dec2ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dba9708bfda6d1b98a2861615e56518067822100
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191564"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175172"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exportar documentos de un conjunto de revisión en Advanced eDiscovery
 
@@ -34,14 +34,14 @@ Para exportar documentos de un conjunto de revisión:
 
 2. En el conjunto de revisión, haga clic **en Exportar**  >  **acción**.
 
-   La herramienta Exportar muestra la página desplegable con la configuración para configurar la exportación. Algunas opciones están seleccionadas de forma predeterminada, pero puede cambiar estas opciones. Consulte la siguiente sección para obtener descripciones de las opciones de exportación que puede configurar.
+   La herramienta Exportar muestra la página de control flotante con los valores para configurar la exportación. Algunas opciones están seleccionadas de forma predeterminada, pero puede cambiar estas opciones. Consulte la siguiente sección para obtener descripciones de las opciones de exportación que puede configurar.
 
    ![Opciones de configuración para exportar elementos de un conjunto de revisión.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
 3. Después de configurar la exportación, haga clic **en Exportar** para iniciar el proceso de exportación. Según la opción seleccionada  en la sección Opciones de salida, puede tener acceso a los archivos de exportación mediante descarga directa o en la cuenta de Azure Storage organización.
 
 > [!NOTE]
-> Los trabajos de exportación se conservan durante la duración del caso. Sin embargo, debe descargar el contenido de un trabajo de exportación en un plazo de 30 días después de que se complete el trabajo de exportación.
+> Los trabajos de exportación se conservan durante la vida útil del caso. Sin embargo, debe descargar el contenido de un trabajo de exportación en un plazo de 30 días después de que se complete el trabajo de exportación.
 
 ## <a name="export-options"></a>Opciones de exportación
 

@@ -9,16 +9,16 @@ ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Use esta guía básica para configurar software de cliente y servidor para Microsoft 365.
-ms.openlocfilehash: 66d6483df4d1bec1ea0c935f7a0b936f2e0fddcf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1522cf706be06656427412f76d6fa3b5455ac7d9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192857"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174932"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Guía básica de software de cliente y servidor para Microsoft 365
 

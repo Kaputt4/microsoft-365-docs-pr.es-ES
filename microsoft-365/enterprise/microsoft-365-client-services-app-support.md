@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -15,12 +15,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: En este artículo, encontrará detalles sobre Microsoft 365 de aplicaciones de cliente y servicios.
-ms.openlocfilehash: e380efffc1bf29cbd4d3a77d32e4d1f8b2994da3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4ae294865bb506ae9e8a25e8f5ab28fff967171e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165814"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173335"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365 de aplicaciones de cliente y servicios
 

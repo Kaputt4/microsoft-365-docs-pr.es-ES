@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: d812866ce2310b25b857b701be7d29d6d7ea5f22
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 58b955509fd998e7478ad32704c00bd89d692098
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933644"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171992"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-guide"></a>Guía de configuración de compatibilidad de Microsoft 365 con ServiceNow
 
@@ -731,4 +731,4 @@ Estos son los pasos para probar la configuración de la Microsoft 365 la integra
 |13|El usuario selecciona **Póngase en contacto con el soporte técnico de Microsoft,** pero no ocurre nada|Comprobar **registros del sistema: registros HTTP salientes** con login.microsoftonline.com y connector.rave.microsoft.com|
 |14 |No se puede ver la solución recomendada por Microsoft después de volver a abrir el incidente|Comprobar **Registros del sistema**  >  **Todo** con filtros x_mioms_m365_assit|
 |15 |No se pueden ver casos de Microsoft al volver a abrir el incidente que se transfirió al soporte técnico de Microsoft|Comprobar **Registros del sistema**  >  **Todo** con filtros x_mioms_m365_assit|
-|16 |No se pueden guardar los detalles del vale, recibe el error "No se pueden guardar los detalles del vale. Póngase en contacto con el soporte técnico de la aplicación".|Comprobar el mensaje de error en la parte superior del formulario|
+|16|No se pueden guardar los detalles del vale, recibe el error "No se pueden guardar los detalles del vale. Póngase en contacto con el soporte técnico de la aplicación".|Comprobar el mensaje de error en la parte superior del formulario|

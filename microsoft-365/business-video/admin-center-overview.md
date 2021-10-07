@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Use la vista simplificada en Microsoft 365 para administrar tareas comunes o la vista de panel para configuraciones y tareas más complejas.
-ms.openlocfilehash: d1f187f7ab3f7fdad53727a3cd74e2543c3cbcef
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 37ec045db118dc0508a47dc8d4cfa6fc90e7af42
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786376"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171308"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
@@ -162,7 +162,7 @@ El Centro de administración de Microsoft 365 está totalmente localizado en 40 
 |Finnish | fi |
 |Francés | fr |
 |Galician | gl |
-|Hebrew | he |
+|Hebreo | he |
 |Croatian | hr |
 |Húngaro | hu |
 |Indonesio  | id |
@@ -179,7 +179,7 @@ El Centro de administración de Microsoft 365 está totalmente localizado en 40 
 |Rumano | ro |
 |Ruso | ru |
 |Slovak | sk |
-|Slovenian | sl |
+|Esloveno | sl |
 |Serbio (cirílico)  | sr-cyrl |
 |Serbian Latin | sr |
 |Sueco | sv |

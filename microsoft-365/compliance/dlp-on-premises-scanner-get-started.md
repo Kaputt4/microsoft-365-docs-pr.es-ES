@@ -11,7 +11,7 @@ ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurar el examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local
-ms.openlocfilehash: fbaf28c1a88f1654154cc53ce731d2f56bfae382
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28453a3791677b1923a6d72dbf8d59d2620ea139
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192977"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158182"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local
 
@@ -56,7 +56,7 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Requisitos previos del examinador de DLP en el entorno local
 
 - El examinador de Azure Information Protection (AIP) implementa la coincidencia de directiva DLP y el cumplimiento de la directiva. El examinador se instala como parte del cliente de AIP, por lo que la instalación debe cumplir todos los requisitos previos para AIP, el cliente AIP y el examinador de etiquetas unificado de AIP.
-- Implementar el examinador y el cliente de AIP. Para obtener más información [Instale el cliente de etiquetas unificado de AIP](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) y [], vea [Configurar e instalar el examinador de etiquetas unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install).
+- Implemente el cliente AIP y el escáner. Para obtener más información [Instale el cliente de etiquetado unificado de AIP](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) y [], consulte [Configuración e instalación del escáner de etiquetado unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install).
 - Debe haber al menos una etiqueta y una directiva publicadas en el espacio empresarial, incluso si todas sus reglas de detección se basan únicamente en tipos de información confidenciales.
 
 ## <a name="deploy-the-dlp-on-premises-scanner"></a>Implementar el examinador local de DLP
@@ -76,7 +76,7 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
     1. o ejecutar **Start-AIPScan** cmdlet de PowerShell
 
    > [!IMPORTANT]
-   > Recuerde que el examinador ejecuta un examen diferencial del repositorio de forma predeterminada y los archivos que ya se han examinado en el ciclo de examen anterior se omitirán a menos que se haya cambiado el archivo o que haya iniciado de nuevo un examen completo. Puede iniciarse un nuevo examen completo utilizando la opción **Volver a examinar todos los archivos** en la interfaz de usuario o ejecutando **Start-AIPScan-Reset**.
+   > Recuerde que el escáner ejecuta un escaneo delta del repositorio por defecto y los archivos que ya fueron escaneados en el ciclo de escaneo anterior serán omitidos a menos que el archivo haya sido cambiado o usted haya iniciado un re-escaneo completo. El re-escaneo completo puede ser iniciado usando la opción de **Escanee de nuevo todos los archivos** en la UI o ejecutando **Start-AIPScan-Reset**.
 
 6.  Abra la [página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies) en el Centro de cumplimiento de Microsoft 365.
 

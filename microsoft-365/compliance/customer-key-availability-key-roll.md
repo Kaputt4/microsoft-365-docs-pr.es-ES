@@ -6,18 +6,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo deshacer las claves raíz del cliente almacenadas en Azure Key Vault que se usan con la clave de cliente. Los servicios incluyen Exchange Online, Skype Empresarial, SharePoint Online, OneDrive para la Empresa y Teams.
-ms.openlocfilehash: 892d77959bec1fb33b0ea6bcfaa8c530dd9b8911
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a3968485a807aae03abb0dfa14d26d94db0445f9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216900"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175328"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Rotar o alternar una Clave de cliente o una clave de disponibilidad
 

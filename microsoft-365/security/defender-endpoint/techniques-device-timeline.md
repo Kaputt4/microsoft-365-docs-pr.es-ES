@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 11fbff0bb43cc07825e236884985e4d6f27f7ae6
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: cee924ea4529b45635f5df16bc3868d09ec3929e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400779"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174620"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Técnicas en la escala de tiempo del dispositivo
 
@@ -90,7 +90,7 @@ Para ver solo eventos o técnicas, selecciona **Filtros en** la escala de tiempo
 
 ![Filtra la captura de pantalla.](images/device-timeline-filters.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Ver y organizar la lista de dispositivos](machines-view-overview.md)
 - [Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión](device-timeline-event-flag.md)

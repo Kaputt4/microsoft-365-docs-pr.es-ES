@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-aed
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo crear y administrar Advanced eDiscovery casos. El primer paso es crear un caso y empezar a usar Advanced eDiscovery características y funcionalidades.
-ms.openlocfilehash: 69d2f22a3792f2217ea8ef58ae9771dd4a10f32d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f76d4688ebb0324b1b009f4b98b5ab15b65ec960
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189814"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172496"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Crear y administrar un Advanced eDiscovery caso
 

@@ -6,18 +6,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente para Microsoft 365.
-ms.openlocfilehash: 739653151031026e788c4b39fa3b182184115175
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 5c505e5c9545dd679860d9976f587459e64363c3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776637"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172364"
 ---
 # <a name="set-up-customer-key"></a>Configurar clave de cliente
 

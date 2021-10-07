@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 5892932bc3fe35cfc6739c266db9f6379d08ee6b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bca5495b60bcd3fe84c7faf05ec124f2eb037994
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191604"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151295"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
@@ -135,7 +135,7 @@ Para buscar registros de auditoría de SearchQueryInitiatedExchange, puede busca
 También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
 
 > [!NOTE]
-> Debe habilitar el registro de SearchQueryInitiatedExchange para poder buscar este evento en el registro de auditoría. Para obtener instrucciones, consulte [Configurar Auditoría avanzada](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
+> Debe activar el registro de SearchQueryInitiatedExchange para poder buscar este evento en el registro de auditoría. Para obtener instrucciones, consulte [Configuración de la Auditoría avanzada](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -158,7 +158,7 @@ Para buscar registros de auditoría de SearchQueryInitiatedSharePoint, puede bus
 También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
 
 > [!NOTE]
-> Debe habilitar el registro de SearchQueryInitiatedSharePoint para poder buscar este evento en el registro de auditoría. Para obtener instrucciones, consulte [Configurar Auditoría avanzada](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
+> Debe activar el registro de SearchQueryInitiatedSharePoint para poder buscar este evento en el registro de auditoría. Para obtener instrucciones, consulte [Configuración de la Auditoría avanzada](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
 
 ### <a name="other-advanced-audit-events-in-microsoft-365"></a>Otros eventos de Auditoría avanzada en Microsoft 365
 

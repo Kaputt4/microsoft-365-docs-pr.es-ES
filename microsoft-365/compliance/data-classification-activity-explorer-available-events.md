@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: descripción de las actividades de etiquetado que están disponibles en el explorador de actividades.
-ms.openlocfilehash: 163231d4d1e7c6a2d1b75c0f81a17443cfafe246
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ed1b207f4d0879185d757e2481cc3e8879293710
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184201"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173480"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>Actividades de etiquetado que están disponibles en el Explorador de actividades
 
@@ -227,7 +227,7 @@ Este evento se genera cada vez que una directiva DLP coincide en un documento o 
 |SharePoint Online|sí          |
 |OneDrive |sí|
 |Teams |sí   |
-|Dispositivos con Windows 10         |sí |
+|Dispositivos con Windows 10         |sí |
 |MAC         |no     |
 |local         |no|
 |MCAS     |no        | 

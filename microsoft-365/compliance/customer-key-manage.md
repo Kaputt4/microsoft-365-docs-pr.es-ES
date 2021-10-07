@@ -6,18 +6,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 description: Después de configurar la clave de cliente, aprenda a administrarla restaurando claves AKV y administrando permisos y creando y asignando directivas de cifrado de datos.
-ms.openlocfilehash: 7fc985aaaf0cf0222a6cd02063207b2b1709ac25
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2329df5a7bb7fac7a6013e1236024ba0a4a31567
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216887"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172460"
 ---
 # <a name="manage-customer-key"></a>Administrar clave de cliente
 

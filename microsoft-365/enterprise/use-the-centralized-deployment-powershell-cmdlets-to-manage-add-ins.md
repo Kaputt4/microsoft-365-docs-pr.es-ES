@@ -7,7 +7,7 @@ ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: Use los cmdlets de PowerShell de implementación centralizada para ayudarle a implementar y administrar Office complementos para su Microsoft 365 organización.
-ms.openlocfilehash: 37a60ffe7d17f09ecbdb70c80c880b2c7bd51645
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6d99b3867560f7eba0f143933d996e4e30b8c7c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210457"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173228"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos
 

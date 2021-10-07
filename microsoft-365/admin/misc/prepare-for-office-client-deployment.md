@@ -9,7 +9,7 @@ ms.date: 10/31/2017
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
@@ -23,12 +23,12 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Obtén información sobre cómo instalar automáticamente las aplicaciones Office de 32 bits en Windows 10 equipos y mantenerlas actualizadas.
-ms.openlocfilehash: ea131e37fa7f82a0ab03aa52b71569e3c96a2c7f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f57f9538f859136179491620f1ce11ca17981068
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186977"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174056"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Prepararse para la Office cliente mediante Microsoft 365 para empresas
 

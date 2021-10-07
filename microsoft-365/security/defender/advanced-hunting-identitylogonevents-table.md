@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8894e30f013e89110478000372c2b24c44c1f183
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 1584fbaa23822af0821228a50f487517f74c02ca
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042715"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174512"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -50,24 +50,24 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
 | `Application` | string | Aplicación que realizó la acción grabada |
-| `LogonType` | cadena | Tipo de sesión de inicio de sesión, específicamente:<br><br> - **Interactivo:** el usuario interactúa físicamente con la máquina con el teclado y la pantalla locales<br><br> - Inicios de sesión interactivos remotos **(RDP):** el usuario interactúa con el equipo de forma remota mediante Escritorio remoto, Terminal Services, Asistencia remota u otros clientes RDP<br><br> - **Red:** sesión iniciada cuando se tiene acceso al equipo mediante PsExec o cuando se tiene acceso a recursos compartidos en el equipo, como impresoras y carpetas compartidas.<br><br> - **Lote:** sesión iniciada por tareas programadas<br><br> - **Servicio:** sesión iniciada por los servicios cuando se inician |
-| `Protocol` | cadena | Protocolo de red usado |
-| `FailureReason` | cadena | Información que explica por qué falló la acción grabada |
-| `AccountName` | cadena | Nombre de usuario de la cuenta |
+| `LogonType` | string | Tipo de sesión de inicio de sesión, específicamente:<br><br> - **Interactivo:** el usuario interactúa físicamente con la máquina con el teclado y la pantalla locales<br><br> - Inicios de sesión interactivos remotos **(RDP):** el usuario interactúa con el equipo de forma remota mediante Escritorio remoto, Terminal Services, Asistencia remota u otros clientes RDP<br><br> - **Red:** sesión iniciada cuando se tiene acceso al equipo mediante PsExec o cuando se tiene acceso a recursos compartidos en el equipo, como impresoras y carpetas compartidas.<br><br> - **Lote:** sesión iniciada por tareas programadas<br><br> - **Servicio:** sesión iniciada por los servicios cuando se inician |
+| `Protocol` | string | Protocolo de red usado |
+| `FailureReason` | string | Información que explica por qué falló la acción grabada |
+| `AccountName` | string | Nombre de usuario de la cuenta |
 | `AccountDomain` | string | Dominio de la cuenta |
 | `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
 | `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
-| `AccountObjectId` | cadena | Identificador único de la cuenta en Azure AD |
-| `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
-| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo |
-| `DeviceType` | cadena | Tipo de dispositivo |
+| `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
+| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
+| `DeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo |
+| `DeviceType` | string | Tipo de dispositivo |
 | `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7. |
-| `IPAddress` | cadena | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
-| `Port` | cadena | Puerto TCP usado durante la comunicación |
+| `IPAddress` | string | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
+| `Port` | string | Puerto TCP usado durante la comunicación |
 | `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
-| `DestinationIPAddress` | cadena | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
-| `DestinationPort` | cadena | Puerto de destino de comunicaciones de red relacionadas |
-| `TargetDeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
+| `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `DestinationPort` | string | Puerto de destino de comunicaciones de red relacionadas |
+| `TargetDeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
 | `TargetAccountDisplayName` | string | Nombre para mostrar de la cuenta a la que se aplicó la acción grabada |
 | `Location` | string | Ciudad, país u otra ubicación geográfica asociada al evento |
 | `Isp` | string | Proveedor de servicios de Internet (ISP) asociado con la dirección IP del extremo |

@@ -8,17 +8,17 @@ manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: 3a538f866be9d43088ab22923b41c6b070855ea3
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: fc519ea7a8d76135b4d536a64e6a411844bd3e47
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356130"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151055"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -112,7 +112,7 @@ Antes de habilitar la configuración de espacio empresarial para la coautoría d
 - Las aplicaciones de Office no son compatibles para iOS y Android actualmente.
 
 - La coautoría y el autoguardado no son compatibles y no funcionan en documentos de Office etiquetados y cifrados que usan cualquiera de las siguientes [configuraciones para el cifrado](encryption-sensitivity-labels.md#configure-encryption-settings):
-    - **Permitir que los usuarios asignen permisos cuando apliquen la etiqueta** y la casilla **En Word, PowerPoint y Excel, pedir a los usuarios que especifiquen permisos** seleccionada. Esta configuración se conoce a veces como "permisos definidos por el usuario".
+    - **Permitir a los usuarios asignar permisos cuando aplican la etiqueta** y la casilla **En Word, PowerPoint y Excel, pedir a los usuarios que especifiquen los permisos** está seleccionada. Esta configuración se denomina a veces "permisos definidos por el usuario".
     - **El acceso del usuario al contenido expira** establecido en un valor distinto de **Nunca**.
     - **Cifrado de clave doble** seleccionado.
     

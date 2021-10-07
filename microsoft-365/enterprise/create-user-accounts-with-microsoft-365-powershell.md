@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Cómo usar PowerShell para crear cuentas de usuario individuales o Microsoft 365 usuario.
-ms.openlocfilehash: c096b5b4966bfde9973173b9a0a0c5bf1f0d786c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7396e98e597491910b639e5a0d0c57b8f685bc02
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218597"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172004"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Crear Microsoft 365 de usuario con PowerShell
 
@@ -47,7 +47,7 @@ Al crear cuentas de usuario en PowerShell, siempre se requieren determinadas pro
 >[!Note]
 >[Obtenga información sobre cómo crear cuentas de usuario](../admin/add-users/add-users.md) mediante el Centro de administración de Microsoft 365.
 > 
-> Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](../admin/add-users/index.yml)
+> Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](/admin)
 >   
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
@@ -126,7 +126,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
 
 3. Revise el archivo de salida para ver los resultados. No especificamos contraseñas, por lo que las contraseñas aleatorias Microsoft 365 generadas son visibles en el archivo de salida.
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
