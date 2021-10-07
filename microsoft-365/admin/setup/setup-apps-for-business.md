@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información acerca de cómo configurar su suscripción a Aplicaciones de Microsoft 365 para negocios.
-ms.openlocfilehash: a40c623448b8af526be0ef16be15efcde22aedca
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: e33bc36170200e5650b09bfcb51015ad301f4140
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773155"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188738"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurar Aplicaciones de Microsoft 365 para negocios
 
@@ -104,7 +105,7 @@ Todos los usuarios obtienen automáticamente una ubicación de almacenamiento en
   
 1. En el equipo, use el Explorador de archivos para abrir OneDrive. O, desde [Office 365](https://www.office.com), abra **OneDrive** en el iniciador de aplicaciones
 
-2. Vea y cargue archivos personales o comparta documentos o carpetas seleccionando **Compartir** y, después, invite a otros usuarios a ver los documentos o envíeles un vínculo. Para obtener más información, consulte [Compartir archivos y carpetas de OneDrive](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business).
+2. Vea y cargue archivos personales, o comparta documentos o carpetas seleccionando **Compartir** y luego invitando a otros a ver los documentos o enviándoles un enlace. Para obtener más información, consulte [Compartir archivos y carpetas de OneDrive](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business).
   
 Más información en [Cargar archivos a una biblioteca](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0).
   

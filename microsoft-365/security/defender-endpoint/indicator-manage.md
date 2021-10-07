@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 69f96b4393a25e57fcbfd2e9adfbd652a5aa191d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8c35f6c399e7668883b5b276fffd56f162984669
+ms.sourcegitcommit: f6cb10b1dc4b679b7890d059f7242870fc40b9f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211128"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60225025"
 ---
 # <a name="manage-indicators"></a>Administrar indicadores
 
@@ -71,10 +71,15 @@ recommendedActions|Cadena|Acciones recomendadas de alerta del indicador TI. **Op
 rbacGroupNames|Cadena|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
 categoría|Cadena|Categoría de la alerta. Algunos ejemplos son: Ejecución y acceso a credenciales. **Optional**
 mitretechniques|Cadena|Código/id de técnicas MITRE (separados por comas). Para obtener más información, [vea Enterprise tácticas](https://attack.mitre.org/tactics/enterprise/). **Opcional** Se recomienda agregar un valor en categoría cuando se utiliza una técnica MITRE.
+GenerateAlert|Cadena|Si la alerta debe generarse o no. Los valores posibles son: True o False. **Optional**
 
+
+
+> [!NOTE]
+> No se admite Inter-Domain de enrutamiento sin clases (CIDR) para direcciones IP.
 Para obtener más información, vea Microsoft Defender para las categorías de alertas de punto de conexión ahora están alineadas con [MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para los archivos](indicator-file.md)

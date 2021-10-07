@@ -9,7 +9,7 @@ ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Compre productos o servicios empresariales de Microsoft con un método de pago existente o agregue uno nuevo en el Centro de administración de Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: e944547e69ea8774690852d1b3123578d40bd3c0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1008beb9caf42b68e741406bef3be9efbe2fa2de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219177"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190969"
 ---
 # <a name="manage-payment-methods"></a>Administrar métodos de pago
 
@@ -47,7 +47,7 @@ Si su cuenta empresarial no tiene un perfil de facturación, cualquier administr
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Para poder realizar las tareas de este artículo, debe ser un administrador global o de facturación. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para realizar las tareas de este artículo. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="add-a-payment-method"></a>Agregar un método de pago
 
@@ -126,7 +126,7 @@ Si un método de pago está asociado a cualquier suscripción o perfil de factur
 |:----------|:-----|
 |**Recibo un mensaje de error que indica "El explorador actualmente está configurado para bloquear las cookies".** |Configure el explorador para permitir cookies de terceros y vuelva a intentarlo. |
 |**Mi tarjeta de crédito o débito fue rechazada.** |Si paga mediante tarjeta de crédito o débito y se rechaza la tarjeta, recibirá un correo electrónico en el que se indica que Microsoft no pudo procesar el pago. Primero, compruebe que los detalles de la tarjeta &mdash;el número, la fecha de expiración, el titular de la tarjeta y la dirección, incluida la ciudad, el estado y el código postal&mdash; coinciden exactamente con los de la tarjeta y su estado de cuenta. Puede actualizar la información de la tarjeta y efectuar inmediatamente el pago mediante el vínculo **Liquidar saldo** de la sección **Facturación** de la página de detalles de la suscripción. Para obtener más información, consulte [¿Qué debo hacer si tengo un saldo pendiente?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Si continúa viendo el mensaje "rechazado", póngase en contacto con el banco. Es posible que la tarjeta no esté activada. Si recientemente recibió la tarjeta por correo con la fecha de expiración actualizada, asegúrese de que está activada. Su banco también puede decirle si su tarjeta no está aprobada para cargos en línea, internacionales o recurrentes. |
-|**Quiero actualizar el número de una tarjeta o cuenta bancaria.** |No puede cambiar el número de tarjeta o cuenta en un método de pago existente. Si ha cambiado el número de su tarjeta o cuenta, [reemplácelo por un método de pago](#replace-a-payment-method)diferente, que transfiera todas las suscripciones activas al nuevo método de pago y, después, [elimine el método de pago antiguo](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
+|**Quiero actualizar el número de una tarjeta o cuenta bancaria.** |No puede cambiar el número de tarjeta o de cuenta en un método de pago existente. Si su número de tarjeta o de cuenta ha cambiado, [sustitúyalo por un método de pago diferente](#replace-a-payment-method), que traslade todas las suscripciones activas del método de pago al nuevo, y luego, [elimine el método de pago antiguo](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**Solo tengo una tarjeta o cuenta bancaria en mi cuenta y quiero quitarla.** |Si solo tiene un método de pago, debe [cambiarlo por un nuevo método de pago](#replace-a-payment-method) antes de poder eliminarlo. |
 |**No puedo agregar mi tarjeta de crédito o cuenta bancaria.**  |Debe usar un método de pago que haya sido emitido en el mismo país que su espacio empresarial. Si tiene problemas para escribir su tarjeta de crédito o cuenta bancaria, póngase en contacto con el [soporte técnico](../../business-video/get-help-support.md). |
 

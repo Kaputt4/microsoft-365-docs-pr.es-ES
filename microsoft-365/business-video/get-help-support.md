@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener soporte técnico en línea o por teléfono para su suscripción Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: e224b5a6224dc182d36a99f0b7943a586c64b08a
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 965038e883378aa754a5a4b3957644340feaca8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988612"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179732"
 ---
 # <a name="get-support"></a>Obtener soporte técnico
 
@@ -48,9 +48,9 @@ Comience por [comprobar el estado actual de los servicios](../enterprise/view-se
 
 Ahorre tiempo iniciando su solicitud de servicio en línea. Le ayudaremos a encontrar una solución o le pondremos en contacto con el soporte técnico.
 
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje en el que se indica que no tiene permiso para acceder a esta página o llevar a cabo esta acción, es porque no es un administrador. Para más información, consulte [¿Quién tiene permisos de administrador en mi empresa?](admin-center-overview.md#who-has-admin-permissions-in-my-business).
+1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje notificando que no tiene permiso para acceder a esta página o realizar esta acción, entonces no es un administrador. Para más información, consulte [¿Quién tiene permisos de administrador en mi empresa?](admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. En la parte inferior derecha de la página, seleccione **Ayuda y soporte técnico**.
-3. Escriba una pregunta o palabra clave en el cuadro de texto. Si obtiene una lista desplegable, seleccione la que más se asemeje a su pregunta o siga escribiendo la pregunta y presione **Entrar**.
+3. Escriba una pregunta o palabra clave en el cuadro de texto. Si aparece una lista desplegable, seleccione la que más se acerque a su pregunta, o siga escribiendo su pregunta, y luego pulse **Aceptar**.
 4. Si los resultados no ayudan, en la parte inferior, seleccione **Ponerse en contacto con el soporte técnico**.
 5. Escriba la descripción del problema, confirme su número de contacto y dirección de correo electrónico, seleccione el método de contacto que prefiere y, después, seleccione **Ponerse en contacto conmigo**. El tiempo de espera se indicará en el panel de **Ponerse en contacto con el soporte técnico**.
 
@@ -82,7 +82,7 @@ Si no encuentra su número de teléfono de soporte en la lista anterior, use el 
 
 Saque el máximo partido a su suscripción con consejos expertos de especialistas en pequeñas empresas.
 
-Business Assist para Microsoft 365 está diseñado para que usted y sus empleados tengan acceso las 24 horas a los especialistas de pequeñas empresas a medida que crece su negocio, desde el momento de la incorporación hasta el uso diario. Para obtener más información, vea [Business Assist](../admin/misc/business-assist.md).
+Business Assist para Microsoft 365 está diseñado para que las pequeñas empresas tengan acceso a los especialistas en pequeñas empresas las 24 horas del día a medida que crece su negocio, desde la incorporación hasta el uso diario. Para obtener más información, consulte [Business Assist](../admin/misc/business-assist.md).
 
 ::: moniker-end
 
@@ -164,7 +164,7 @@ Gravedad B/C: 9:00 - 24:00 (hora de Beijing), 365 días al año.
 
 ### <a name="open-an-online-request"></a>Abrir una solicitud en línea
 
-Ahorre tiempo iniciando su solicitud de servicio en línea. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, elija **Soporte técnico** \> **Nueva solicitud de servicio**.
+Ahorre tiempo iniciando su solicitud de servicio en línea. Diríjase al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, seleccione **Soporte técnico** \> **Nueva solicitud de servicio**.
 
 ### <a name="call-support"></a>Llame al servicio de soporte técnico
 
@@ -232,7 +232,7 @@ Como administrador de Office 365 Alemania, puede contactar de forma gratuita con
 
 Las opciones de soporte asistido son solo para administradores de organizaciones suscritas a Office 365 Alemania. Si usa Office 365 Alemania en su trabajo o escuela pero no es administrador, puede obtener soporte en los foros de la comunidad o contactando con el administrador o departamento de TI.
 
-- **Abrir una solicitud en línea** Ahorre tiempo iniciando su solicitud de servicio en línea. En el centro de administración, seleccione **Soporte técnico** \> **Nueva solicitud de servicio.** Le ayudaremos a encontrar una solución o le pondremos en contacto con un experto, que se comunicará con usted por correo electrónico o teléfono.
+- **Abra una solicitud en línea.** Ahorre tiempo iniciando su solicitud de servicio en línea. En el centro de administración, seleccione **Soporte técnico** \> **Nueva solicitud de servicio.** Le ayudaremos a encontrar una solución o le pondremos en contacto con un experto que se pondrá en contacto con usted por correo electrónico o por teléfono.
 
 - **Llamar al soporte técnico.** Estamos aquí para hablar. Administradores, tengan los datos de su cuenta preparados cuando llamen al soporte.
 
