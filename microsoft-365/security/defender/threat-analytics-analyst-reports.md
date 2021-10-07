@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03973595f68c56ac57f22d8d68c9f37f04fb6bb8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1bb51bf30aad8ab03d0ec2723df781034288b8c6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211790"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212046"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Comprender el informe de analistas en análisis de amenazas en Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "59211790"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de pruebas](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o bien [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
+> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -49,7 +49,7 @@ _Sección de informe de analista de un informe de análisis de amenazas_
 ## <a name="scan-the-analyst-report"></a>Examinar el informe de analistas 
 Cada sección del informe de analista está diseñada para proporcionar información que se puede usar. Aunque los informes varían, la mayoría de los informes incluyen las secciones descritas en la tabla siguiente.
 
-| Sección Informe | Description |
+| Sección Informe | Descripción |
 |--|--|
 | Resumen ejecutivo | Información general sobre la amenaza, incluso cuando se vio por primera vez, sus motivaciones, eventos notables, objetivos principales y distintas herramientas y técnicas. Puede usar esta información para evaluar aún más cómo priorizar la amenaza en el contexto de su industria, ubicación geográfica y red. |
 | Análisis | Información técnica sobre las amenazas, incluidos los detalles de un ataque y cómo los atacantes pueden usar una nueva técnica o superficie de ataque | 

@@ -2,26 +2,24 @@
 title: Configurar características avanzadas en Microsoft Defender para endpoint
 description: Activa las características avanzadas, como el archivo de bloqueo en Microsoft Defender para endpoint.
 keywords: características avanzadas, configuración, archivo de bloqueo, investigación automatizada, resolución automática, skype, microsoft defender para la identidad, office 365, azure information protection, intune
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f9fbeb7d0fbaee05e86c89749ffc62695e8ff9e9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 432819930a1472d6241c62b275a940cb35c3cb37
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187633"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211434"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -118,7 +116,7 @@ Después de activar esta característica, puede [bloquear archivos a través](re
 
 Activar esta característica permite crear indicadores para direcciones IP, dominios o direcciones URL, que determinan si se permitirán o bloquearán en función de la lista de indicadores personalizada.
 
-Para usar esta característica, los dispositivos deben ejecutarse Windows 10 versión 1709 o posterior. También deben tener protección de red en modo de bloqueo y versión 4.18.1906.3 o posterior de la plataforma antimalware vea [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
+Para usar esta característica, los dispositivos deben Windows 10 versión 1709 o posterior, o Windows 11. También deben tener protección de red en modo de bloqueo y versión 4.18.1906.3 o posterior de la plataforma antimalware vea [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
 
 Para obtener más información, vea [Administrar indicadores](manage-indicators.md).
 
@@ -181,7 +179,7 @@ De los dos componentes de Microsoft Threat Expert, la notificación de ataques d
 Al habilitar esta configuración, Defender para las señales de punto de conexión Microsoft Cloud App Security para proporcionar una mayor visibilidad del uso de aplicaciones en la nube. Los datos reenviados se almacenan y procesan en la misma ubicación que los Cloud App Security datos.
 
 > [!NOTE]
-> Esta característica estará disponible con una licencia E5 para Enterprise Mobility + Security [dispositivos](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) que ejecutan Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, versión 1809 (compilación del sistema operativo 17763.379 con [KB4489899),](https://support.microsoft.com/help/4489899)o versiones Windows 10 posteriores.
+> Esta característica estará disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) en dispositivos que ejecutan Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441),](https://support.microsoft.com/help/4493441)Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, versión 1809 (compilación del sistema operativo 17763.379 con [KB4489899),](https://support.microsoft.com/help/4489899)versiones Windows 10 posteriores o Windows 11.
 
 ## <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -220,7 +218,7 @@ Defender for Endpoint se puede integrar con [Microsoft Intune](/intune/what-is-i
 Esta característica solo está disponible si tiene lo siguiente:
 
 - Un inquilino con licencia para Enterprise Mobility + Security E3 y Windows E5 (o Microsoft 365 Enterprise E5)
-- Un entorno Microsoft Intune activo, con dispositivos administrados por Intune Windows 10 [unidos a Azure AD.](/azure/active-directory/devices/concept-azure-ad-join/)
+- Un entorno Microsoft Intune activo, con dispositivos administrados por Intune Windows [unidos a Azure AD.](/azure/active-directory/devices/concept-azure-ad-join/)
 
 ### <a name="conditional-access-policy"></a>Directiva de acceso condicional
 

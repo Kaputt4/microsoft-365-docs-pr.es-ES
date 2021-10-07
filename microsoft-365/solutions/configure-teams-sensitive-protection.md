@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Obtenga información sobre cómo implementar equipos con la protección de datos confidenciales.
-ms.openlocfilehash: a3f715cb05ad1d5acf3c93c58959f12ebec46978
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: edeeb0fc0f93ae962b85e113734dea1844b11d04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219747"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213426"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configure equipos con protección de datos confidenciales
 
@@ -66,7 +66,7 @@ Crear una etiqueta de confidencialidad
 1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 2. En **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en **Crear una etiqueta**.
-4. Asigne un nombre a la etiqueta. Le sugerimos **confidencial**, pero puede elegir otro nombre si ya está en uso.
+4. Póngale un nombre a la etiqueta. Le sugerimos **Confidencial**, pero puede elegir otro nombre si ya está en uso.
 5. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
 6. En la página **Definir el ámbito de la página de la etiqueta**, seleccione **Archivos & mensajes de correo electrónico** y **Grupos & sitios** y haga clic en **Siguiente**.
 7. En la página **Elija la configuración de protección de archivos y mensajes de correo electrónico**, haga clic en **Siguiente**.

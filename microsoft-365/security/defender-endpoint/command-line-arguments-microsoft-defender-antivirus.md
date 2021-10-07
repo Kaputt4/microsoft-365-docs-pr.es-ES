@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,12 +16,12 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4fcfee2aff1c5e339339b2cd022df53a1cbcfc3e
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: f377126eb56291f6ea0c43502f42916f8d64adee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490924"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213126"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurar y administrar Antivirus de Microsoft Defender con la mpcmdrun.exe de línea de comandos
 
@@ -52,7 +52,7 @@ En nuestro ejemplo, la utilidad MpCmdRun inicia un examen antivirus completo en 
 
 |Comando|Descripción|
 |---|---|
-|`-?` **Otra posibilidad:** `-h`|Muestra todas las opciones disponibles para la herramienta MpCmdRun|
+|`-?`**o** `-h`|Muestra todas las opciones disponibles para la herramienta MpCmdRun|
 |`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|Busca software malintencionado. Los valores **de ScanType** son:<p>**0** Valor predeterminado, según la configuración<p>**1** Examen rápido<p>**2** Examen completo<p>**3** Examen personalizado de archivos y directorios.<p>CpuThrottling se ejecuta según las configuraciones de directivas|
 |`-Trace [-Grouping #] [-Level #]`|Inicia el seguimiento de diagnóstico|
 |`-GetFiles [-SupportLogLocation <path>]`|Recopila información de soporte técnico. Vea '[collecting diagnostic data](collect-diagnostic-data.md)'|

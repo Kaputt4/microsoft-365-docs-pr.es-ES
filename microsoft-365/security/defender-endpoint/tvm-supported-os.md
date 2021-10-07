@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7cdf2aad5c57e2f25ff26d3e7eac3e2194f00c52
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: aae3ad6e57ff672e3c27041f4cd60298381dd17b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043076"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213654"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemas operativos, plataformas y capacidades compatibles: para Administración de amenazas y vulnerabilidades
 
@@ -48,9 +48,9 @@ En la tabla siguiente, "Sí" indica que se admite una funcionalidad Administraci
 
 Sistema operativo o plataforma compatibles|Vulnerabilidades del sistema operativo|Vulnerabilidades de productos de software|Evaluación de configuración del sistema operativo|Evaluación de configuración de controles de seguridad|Evaluación de configuración de productos de software
 :---|:---|:---|:---|:---|:---
-Windows 7|Sí|No admitido|No admitido|No admitido|No admitido
+Windows 7|Sí|No se admite|No admitido|No admitido|No se admite
 Windows 8.1|Sí|Sí|Sí|Sí|Sí
-Windows 10, versiones 1607-1703|Sí|No admitido|No admitido|No admitido|No admitido
+Windows 10, versiones 1607-1703|Sí|No compatible|No se admite|No se admite|No se admite
 Windows 10, versión 1709 o posterior|Sí|Sí|Sí|Sí|Sí
 Windows Server 2008 R2|Sí|Sí|Sí|Sí|Sí
 Windows Server 2012 R2|Sí|Sí|Sí|Sí|Sí

@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar la información sobre corregir posibles bucles de correo en el panel flujo de correo del Centro de seguridad y cumplimiento de & para identificar y corregir bucles de correo en su organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 338c76e751ad8fd504ff8182c59fe2a4d8dfb9d8
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: adc022d2c6e72edf739f34a3e58bbc882b6fbde2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988240"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212022"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corregir posibles perspectivas de bucle de correo en el Centro de seguridad & cumplimiento
 

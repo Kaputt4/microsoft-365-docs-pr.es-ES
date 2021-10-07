@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4cd11665983127a920c162cb6e945b0e45d2d077
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 656c1ec0c9f7f9b02f831d9d1b5d61b55d5dd355
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221289"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212920"
 ---
 # <a name="list-devices-by-recommendation"></a>Enumerar dispositivos por recomendación
 

@@ -7,7 +7,7 @@ ms.date: 11/01/2018
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
 - MET150
@@ -24,12 +24,12 @@ f1.keywords:
 - NOCSH
 description: En este artículo se proporcionan recursos para ayudarle a actualizar desde Office servidores y clientes de 2007, ya que la compatibilidad con Office 2007 ha finalizado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c3f90bed99816378d4e44bb714b4c6104a9302b7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cb303fcf5051ce1c54437818ce8b1751c41a8d72
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215667"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211566"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Recursos para ayudarle a actualizar desde Office servidores y clientes de 2007
 

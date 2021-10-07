@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
@@ -20,12 +20,12 @@ description: Los usuarios deben tener asignados permisos en el Centro de Microso
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2123cad54bcb1a608447d53a08e61211052e3cca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2dcab8a14df6266bea87b3ae876ed9bac8eea1d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214420"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213474"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 
@@ -64,7 +64,7 @@ Para obtener más información acerca de los diferentes permisos que puede conce
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Usar PowerShell & centro de seguridad y cumplimiento para dar a otro usuario acceso al Centro de seguridad & cumplimiento
 
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Utilice la siguiente sintaxis:
 
@@ -82,7 +82,7 @@ Para obtener más información acerca de los diferentes permisos que puede conce
 
 Para obtener información detallada acerca de los problemas de sintaxis y parámetros, [vea Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
 Para comprobar que ha concedido acceso correctamente al Centro de seguridad y & cumplimiento, siga uno de estos pasos:
 

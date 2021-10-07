@@ -6,18 +6,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365.
 ms.technology: mdo
-ms.openlocfilehash: 304baf82d2b951ada35dc6cb97add1ac85b27236
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: fec06f65c67f0ec4c470660689a1f3fc1d9bfbcd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988720"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213510"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simular un ataque de suplantación de identidad
 
@@ -59,6 +59,7 @@ A continuación, deberá seleccionar una carga del catálogo de carga existente.
 
 Las cargas tienen varios puntos de datos que le ayudarán a elegir:
 
+- **El** idioma muestra el idioma del contenido de carga. El catálogo de carga útil (global) de Microsoft proporciona cargas en más de 10 idiomas que también se pueden filtrar.
 - **La tasa de clics** cuenta cuántas personas han hecho clic en esta carga.
 - **La tasa de compromiso** predicho predice el porcentaje de personas que se verán comprometidas por esta carga en función de los datos históricos de la carga en Microsoft Defender para Office 365 clientes.
 - **Las simulaciones iniciadas** cuentan el número de veces que se usó esta carga en otras simulaciones.

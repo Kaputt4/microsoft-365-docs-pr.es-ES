@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3eb8a028372fce56cb586c51829e506db040f0ca
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 878ce26466504c4ec684e827e3f1957e9f0213b4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124318"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212514"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado
 
@@ -68,6 +68,6 @@ La ventana símbolo del sistema se cerrará automáticamente. Si se realiza corr
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Dispositivos Windows integrados](configure-endpoints.md)
+- [incorporar dispositivos Windows](configure-endpoints.md)
 - [Servidores integrados](configure-server-endpoints.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

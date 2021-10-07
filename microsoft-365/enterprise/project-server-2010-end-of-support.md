@@ -7,7 +7,7 @@ ms.date: 04/14/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: El soporte técnico finaliza Project Server 2010 finaliza el 13 de abril de 2021. Use este artículo como guía para actualizar a Project Online o una versión más reciente de Project server local.
-ms.openlocfilehash: 1c5b942e50a137c1ecc32f08c481811ef4edf779
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9d04df22af0a0614270907f4ad4026324b026211
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220706"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213330"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Plan de final del soporte técnico de Project Server 2010
 

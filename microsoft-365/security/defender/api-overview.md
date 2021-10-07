@@ -1,5 +1,5 @@
 ---
-title: Introducción a Microsoft 365 Defender API
+title: Información general sobre las API de Microsoft 365 Defender
 description: Obtenga información sobre las API disponibles en Microsoft 365 Defender
 keywords: api, apis, overview, incident, incidents, threat hunting, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ef8a5e1b833bc1184132469f8c3b358e907974e4
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 2ce2e6e1efc87f0bcbfdbe6d650f35ea91da8422
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491270"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213570"
 ---
-# <a name="overview-of-microsoft-365-defender-apis"></a>Introducción a Microsoft 365 Defender API
+# <a name="overview-of-microsoft-365-defender-apis"></a>Información general sobre las API de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.

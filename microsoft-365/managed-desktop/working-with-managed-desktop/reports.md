@@ -4,17 +4,17 @@ description: Los distintos informes disponibles en Escritorio administrado de Mi
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5bb575efa9c7e18f20025d7840d3ddc86aefb330
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 1fb29ef7555bb3e7ff2024090b3b7cf953a2de10
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444288"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213174"
 ---
 # <a name="work-with-reports"></a>Trabajar con informes
 

@@ -4,17 +4,17 @@ description: Cómo solicitar excepciones al plan de servicio estándar
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 59a2b8227eb7e410ecf8506ce288978213537edc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 78c02e628ac7d5503cc77929828775715fd6622e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215380"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212730"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Excepciones para el plan de servicios
 
@@ -24,7 +24,7 @@ Escritorio administrado de Microsoft proporciona una lista de dispositivos [cura
 
 Una excepción es cualquier adición o cambio a la configuración Escritorio administrado de Microsoft base; Los ejemplos van desde la configuración de puertos USB hasta la implementación de un nuevo controlador de dispositivo. Agrupamos varias excepciones de la siguiente manera:
 
-|Tipo  |Description  |
+|Tipo  |Descripción  |
 |---------|---------|
 |Software de productividad     |  Software de primer plano necesario para los usuarios, restringido por los [requisitos de la aplicación](mmd-app-requirements.md)       |
 |Agentes de seguridad & VPN     |  Software usado para proteger, supervisar o cambiar el comportamiento del dispositivo o la red       |
@@ -32,7 +32,7 @@ Una excepción es cualquier adición o cambio a la configuración Escritorio adm
 |Controladores de hardware o software     |   Controladores de dispositivo, restringidos por los [requisitos de la aplicación](mmd-app-requirements.md)      |
 |Directivas     | Windows 10 o Aplicaciones Microsoft 365 para empresas en un dispositivo administrado        |
 |Dispositivos     | Dispositivos que no están en la Escritorio administrado de Microsoft [dispositivos](device-list.md)        |
-|Otros     |  Cualquier cosa no cubierta por las otras áreas       |
+|Otro     |  Cualquier cosa no cubierta por las otras áreas       |
  
 ## <a name="request-an-exception"></a>Solicitar una excepción
 
@@ -63,7 +63,7 @@ Se revisan las excepciones para asegurarse de que no infringen ninguna de estas 
 - Una excepción no debe afectar a la estabilidad del sistema, por ejemplo, al provocar bloqueos o bloqueos del modo kernel.
 - El cambio no debe restringirnos el funcionamiento del servicio o conflicto con la tecnología Escritorio administrado de Microsoft base.
 
-Estas condiciones podrían cambiar en el futuro. Si hacemos estos cambios, proporcionaremos un aviso de 30 días antes de que esas condiciones entren en vigor.  Si Escritorio administrado de Microsoft una forma alternativa de cumplir una excepción aprobada, Escritorio administrado de Microsoft notificará al cliente si Escritorio administrado de Microsoft modificar la forma de admitir la excepción. 
+Estas condiciones podrían cambiar en el futuro. Si hacemos estos cambios, proporcionaremos un aviso de 30 días antes de que esas condiciones entren en vigor.  Si Escritorio administrado de Microsoft una forma alternativa de cumplir una excepción aprobada, Escritorio administrado de Microsoft notificará al cliente si Escritorio administrado de Microsoft modificar la forma de admitir la excepción . 
 
 ## <a name="revoking-approval-for-an-exception"></a>Revocar la aprobación de una excepción
 

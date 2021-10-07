@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en Exchange Online buzones de correo. Muchas de estas opciones de configuración están disponibles para los usuarios Outlook o Outlook en la Web.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c9a787c02273eeaf9e3db5174607f1b65a3c65a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1aee1825e5bc69973fb8ed8122881fe0f8dd6878
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166670"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213486"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar las opciones del correo no deseado en buzones de Exchange Online
 
@@ -177,9 +177,9 @@ Realice uno de los siguientes procedimientos para confirmar que los límites de 
 
 ## <a name="about-junk-email-settings-in-outlook"></a>Acerca de la configuración de correo no deseado en Outlook
 
-Use la directiva de grupo para habilitar, deshabilitar y establecer las opciones de configuración de filtro de correo no deseado del cliente disponibles en Outlook. Para obtener más información, vea [Administrative Template files (ADMX/ADML) and Office Customization Tool for Aplicaciones Microsoft 365 para empresas, Office 2019, and Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) and [How to deploy junk email settings, such as the Caja fuerte Senders list, by using Group Policy](https://support.microsoft.com/help/2252421).
+Use la directiva de grupo para habilitar, deshabilitar y establecer las opciones de configuración de filtro de correo no deseado del cliente disponibles en Outlook. Para obtener más información, vea [Administrative Template files (ADMX/ADML) and Office Customization Tool for Aplicaciones Microsoft 365 para empresas, Office 2019, and Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) and [How to deploy junk email settings, such as the Caja fuerte Senders list, by using Group Directiva](https://support.microsoft.com/help/2252421).
 
-Cuando el filtro de correo no deseado de Outlook se  establece en el valor predeterminado **No** hay filtrado automático en Opciones de opciones de correo no deseado hogar , Outlook no intenta clasificar los mensajes como correo no deseado, pero sigue utilizando la colección de listas seguras (la lista de remitentes de Caja fuerte, la lista de destinatarios de Caja fuerte y la lista \>  \>  \> remitentes bloqueados) para mover mensajes a la carpeta correo no deseado después de la entrega. Para obtener más información acerca de esta configuración, vea [Overview of the Junk Email Filter](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
+Cuando el filtro de correo no deseado de Outlook se  establece en el valor predeterminado **No** hay filtrado automático en Opciones de opciones de correo no deseado principal , Outlook no intenta clasificar los mensajes como correo no deseado, pero sigue utilizando la colección de listas seguras (la lista remitentes de Caja fuerte, la lista de destinatarios de Caja fuerte y la lista \>  \>  \> remitentes bloqueados) para m ove mensajes a la carpeta correo no deseado después de la entrega. Para obtener más información acerca de esta configuración, vea [Overview of the Junk Email Filter](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
 Cuando el filtro de correo no deseado de Outlook está establecido en **Bajo** o **Alto**, el filtro de correo no deseado de Outlook usará su propia tecnología de filtrado SmartScreen para identificar y mover el correo no deseado a la carpeta de correo no deseado. Esta clasificación de correo no deseado es independiente del nivel de confianza de correo no deseado (SCL) que determina EOP. De hecho, Outlook omite el SCL de EOP (a menos que EOP marque el mensaje para omitir el filtrado de correo no deseado) y usa sus propios criterios para determinar si el mensaje es correo no deseado. Por supuesto, es posible que el veredicto de correo no deseado de EOP y Outlook sea el mismo. Para obtener más información acerca de esta configuración, vea [Cambiar el nivel de protección en el filtro de correo no deseado](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
 

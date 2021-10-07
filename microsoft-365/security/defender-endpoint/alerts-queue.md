@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: bf92c1764ed2b81b1f4409efc2e7bc7fae94185d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf035e6799a70bc0fa81328ce85e97bfed1a08b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187598"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211326"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 
@@ -60,7 +60,7 @@ Gravedad de alerta|Descripción
 ---|---
 Alto <br> (Rojo)|Alertas que se ven comúnmente asociadas con amenazas persistentes avanzadas (APT). Estas alertas indican un alto riesgo debido a la gravedad del daño que pueden causar en los dispositivos. Algunos ejemplos son: actividades de herramientas de robo de credenciales, actividades de ransomware no asociadas con ningún grupo, manipulación de sensores de seguridad o cualquier actividad malintencionada indicativa de un adversario humano.
 Medio <br> (Naranja)|Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
-Mínimo <br> (Amarillo)|Alertas sobre amenazas asociadas con malware frecuente. Por ejemplo, herramientas de piratería, herramientas de piratería no malware, como ejecutar comandos de exploración, borrar registros, etc., que a menudo no indican una amenaza avanzada dirigida a la organización. También podría venir de una prueba de herramienta de seguridad aislada por un usuario de la organización.
+Bajo <br> (Amarillo)|Alertas sobre amenazas asociadas con malware frecuente. Por ejemplo, herramientas de piratería, herramientas de piratería no malware, como ejecutar comandos de exploración, borrar registros, etc., que a menudo no indican una amenaza avanzada dirigida a la organización. También podría venir de una prueba de herramienta de seguridad aislada por un usuario de la organización.
 Informativo <br> (Gris)|Alertas que podrían no considerarse nocivas para la red, pero que pueden aumentar el conocimiento de la seguridad de la organización en posibles problemas de seguridad.
 
 #### <a name="understanding-alert-severity"></a>Descripción de la gravedad de la alerta
@@ -90,9 +90,9 @@ En la tabla siguiente se enumeran las categorías actuales y cómo se asignan ge
 |Comando y control|CommandAndControl|Conectarse a una infraestructura de red controlada por el atacante para retransmitir datos o recibir comandos.|
 |Acceso a credenciales|CredentialAccess|Obtener credenciales válidas para extender el control sobre los dispositivos y otros recursos de la red.|
 |Evasión de defensa|DefenseEvasion|Evitando controles de seguridad, por ejemplo, desactivando aplicaciones de seguridad, eliminando implantes y ejecutando rootkits.|
-|Descubrimiento|Descubrimiento|Recopilación de información sobre dispositivos y recursos importantes, como equipos de administrador, controladores de dominio y servidores de archivos.|
+|Detección|Detección|Recopilación de información sobre dispositivos y recursos importantes, como equipos de administrador, controladores de dominio y servidores de archivos.|
 |Ejecución|Ejecución|Iniciar herramientas de atacante y código malintencionado, incluidos LOS RAT y puertas traseras.|
-|Exfiltración|Exfiltración|Extraer datos de la red a una ubicación externa controlada por atacantes.|
+|Filtración|Filtración|Extraer datos de la red a una ubicación externa controlada por atacantes.|
 |Exploit|Exploit|Código de vulnerabilidad y posible actividad de explotación.|
 |Acceso inicial|InitialAccess|Obtener una entrada inicial a la red de destino, normalmente implicando la suposición de contraseñas, vulnerabilidades de seguridad o correos electrónicos de suplantación de identidad.|
 |Movimiento lateral|LateralMovement|Mover entre dispositivos de la red de destino para alcanzar recursos críticos o obtener persistencia de red.|

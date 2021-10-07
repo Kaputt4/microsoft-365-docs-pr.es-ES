@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 2d60897d00b2b0228fd1a716dd9b4b7bb12a7bb9
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 73a226d83e46cf06aa9d3cceb903a2b142604179
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041677"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213162"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Experiencia de Microsoft Defender para endpoint a través de ataques simulados 
 
@@ -69,4 +69,4 @@ Lea el documento del tutorial proporcionado con cada escenario de ataque. Cada d
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Incorporar dispositivos](onboard-configure.md)
-- [Dispositivos Windows integrados](configure-endpoints.md)
+- [incorporar dispositivos Windows](configure-endpoints.md)

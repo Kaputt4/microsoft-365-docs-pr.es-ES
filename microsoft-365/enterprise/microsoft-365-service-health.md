@@ -7,7 +7,7 @@ ms.date: 04/19/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Estado de mantenimiento del servicio de Microsoft 365
-ms.openlocfilehash: 82b5a666d4cc707981ea6da72a53bbd8d67c505d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 70f385a56b03c532a594d10279a953e93611a90b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167222"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213354"
 ---
 # <a name="microsoft-365-network-health-status"></a>Estado de mantenimiento de la red de Microsoft 365
 

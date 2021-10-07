@@ -3,27 +3,25 @@ title: Recursos de Microsoft Defender para endpoint en Linux
 ms.reviewer: ''
 description: Describe recursos para Microsoft Defender para Endpoint en Linux, como cómo desinstalarlo, cómo recopilar registros de diagnóstico, comandos cli y problemas conocidos con el producto.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8596cf95c7aa4479d1900ba99c98bc10025ee738
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89178fc9c8ec44da0f9f51e2c4bfc6b1dfbab138
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187486"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211074"
 ---
 # <a name="resources"></a>Recursos
 
@@ -127,9 +125,9 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 |Configuración|Activar la protección de LA PUA|`mdatp threat policy set --type potentially_unwanted_application --action block`|
 |Configuración|Desactivar la protección de LA PUA|`mdatp threat policy set --type potentially_unwanted_application --action off`|
 |Configuración|Activar el modo de auditoría para la protección de PUA|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
-|Diagnóstico|Cambiar el nivel de registro|`mdatp log level set --level verbose [error|warning|info|verbose]`|
-|Diagnóstico|Generar registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
-|Salud|Comprobar el estado del producto|`mdatp health`|
+|Diagnostics|Cambiar el nivel de registro|`mdatp log level set --level verbose [error|warning|info|verbose]`|
+|Diagnostics|Generar registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
+|Mantenimiento|Comprobar el estado del producto|`mdatp health`|
 |Protection|Examinar una ruta de acceso|`mdatp scan custom --path [path] [--ignore-exclusions]`|
 |Protection|Realizar un examen rápido|`mdatp scan quick`|
 |Protection|Realizar un examen completo|`mdatp scan full`|

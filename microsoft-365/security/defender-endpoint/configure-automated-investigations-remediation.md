@@ -11,19 +11,19 @@ ms.sitesec: library
 ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 2415bace353e3ee5596117e37eb860c7a206c96b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 87e27933d051a0e1ed8b69c9e7e7dbe37a9d11e5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192774"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211283"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint
 
@@ -60,11 +60,11 @@ Para configurar la investigación y corrección automatizadas:
    - En la **pestaña Acceso de** usuario, selecciona los Azure Active Directory [que](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) deben tener acceso al grupo de dispositivos que estás creando.
 4. Selecciona **Listo** cuando termines de configurar el grupo de dispositivos.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Visite el Centro de acciones para ver las acciones de corrección pendientes y completadas](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
 - [Revisar y aprobar acciones pendientes](/microsoft-365/security/defender-endpoint/manage-auto-investigation)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)

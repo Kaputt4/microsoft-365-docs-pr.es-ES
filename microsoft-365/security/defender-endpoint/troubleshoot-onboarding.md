@@ -2,26 +2,24 @@
 title: Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 description: Solucionar problemas que pueden surgir durante la incorporación de dispositivos o al servicio de Microsoft Defender para puntos de conexión.
 keywords: solucionar problemas de incorporación, incorporación, visor de eventos, recopilación de datos y compilaciones de vista previa, datos de sensor y diagnósticos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3fe7610d35114200a5bed515f82bb7a4453cf4fa
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9c9d731fa8a1632ab6804ebed9fdb2594564eaf8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042980"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212430"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -119,9 +117,9 @@ Si ninguno de los registros de eventos y los pasos de solución de problemas fun
 
 |Hexadecimal de código de error|Código de error Dec|Descripción del error|OMA-URI|Posibles pasos de causa y solución de problemas|
 |:---:|---|---|---|---|
-|0x87D1FDE8|-2016281112|Error de corrección|Incorporación <p> Offboarding|**Causa posible:** Error en la incorporación o el offboarding en un blob incorrecto: firma incorrecta o faltaban campos PreviousOrgIds. <p> **Pasos de solución de problemas:** <p> Compruebe los IDs de eventos en la sección Ver errores de incorporación de [agentes en la sección registro de eventos del](#view-agent-onboarding-errors-in-the-device-event-log) dispositivo. <p> Compruebe los registros de eventos MDM en la tabla siguiente o siga las instrucciones de Diagnosticar errores [de MDM en Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
+|0x87D1FDE8|-2016281112|Error de corrección|Incorporación <p> Offboarding|**Causa posible:** Error en la incorporación o el offboarding en un blob incorrecto: firma incorrecta o faltaban campos PreviousOrgIds. <p> **Pasos de solución de problemas:** <p> Compruebe los IDs de eventos en la sección Ver errores de incorporación de [agentes en la sección registro de eventos del](#view-agent-onboarding-errors-in-the-device-event-log) dispositivo. <p> Compruebe los registros de eventos MDM en la tabla siguiente o siga las instrucciones de Diagnosticar errores [de MDM en Windows](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
 ||||Incorporación <p> Offboarding <p> SampleSharing|**Causa posible:** La clave del Registro de Microsoft Defender para directiva de extremo no existe o el cliente de OMA DM no tiene permisos para escribir en ella. <p> **Pasos de solución de problemas:** Asegúrese de que existe la siguiente clave del Registro: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> Si no existe, abra un comando con privilegios elevados y agregue la clave.|
-||||SenseIsRunning <p> OnboardingState <p> OrgId|**Causa posible:** Un intento de corregir mediante una propiedad de solo lectura. Error en la incorporación. <p> **Pasos de solución de problemas:** Consulta los pasos de solución de problemas en [Solucionar problemas de incorporación en el dispositivo](#troubleshoot-onboarding-issues-on-the-device). <p> Compruebe los registros de eventos MDM en la tabla siguiente o siga las instrucciones de Diagnosticar errores [de MDM en Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
+||||SenseIsRunning <p> OnboardingState <p> OrgId|**Causa posible:** Un intento de corregir mediante una propiedad de solo lectura. Error en la incorporación. <p> **Pasos de solución de problemas:** Consulta los pasos de solución de problemas en [Solucionar problemas de incorporación en el dispositivo](#troubleshoot-onboarding-issues-on-the-device). <p> Compruebe los registros de eventos MDM en la tabla siguiente o siga las instrucciones de Diagnosticar errores [de MDM en Windows](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
 ||||Todo|**Causa posible:** Intente implementar Microsoft Defender para endpoint en SKU o plataforma no admitidas, especialmente sku holográfica. <p> Plataformas compatibles actualmente: <p> Enterprise, Educación y Professional.<p> El servidor no es compatible.|
 |0x87D101A9|-2016345687|SyncML(425): error en el comando solicitado porque el remitente no tiene permisos de control de acceso (ACL) adecuados en el destinatario.|Todo|**Causa posible:** Intente implementar Microsoft Defender para endpoint en SKU o plataforma no admitidas, especialmente sku holográfica.<p> Plataformas compatibles actualmente: <p> Enterprise, Educación y Professional.|
 |
@@ -218,13 +216,13 @@ Hay componentes adicionales en el dispositivo de los que depende el agente de Mi
 
 ### <a name="ensure-the-diagnostic-data-service-is-enabled"></a>Asegurarse de que el servicio de datos de diagnóstico está habilitado
 
-Si los dispositivos no se informan correctamente, es posible que deba comprobar que el servicio de datos de diagnóstico de Windows 10 está configurado para iniciarse automáticamente y se está ejecutando en el dispositivo. Es posible que otros programas o cambios de configuración de usuario hayan deshabilitado el servicio.
+Si los dispositivos no están informando correctamente, es posible que deba comprobar que el servicio de datos de diagnóstico de Windows está configurado para iniciarse automáticamente y se está ejecutando en el dispositivo. Es posible que otros programas o cambios de configuración de usuario hayan deshabilitado el servicio.
 
 En primer lugar, debe comprobar que el servicio está configurado para iniciarse automáticamente cuando se inicia Windows y, a continuación, debe comprobar que el servicio se está ejecutando actualmente (e iniciarlo si no lo está).
 
 ### <a name="ensure-the-service-is-set-to-start"></a>Asegurarse de que el servicio está configurado para iniciarse
 
-**Use la línea de comandos para comprobar el tipo Windows 10 inicio del** servicio de datos de diagnóstico:
+**Use la línea de comandos para comprobar el tipo Windows inicio del** servicio de datos de diagnóstico:
 
 1. Abra un símbolo del sistema con privilegios elevados en el dispositivo:
 
@@ -244,7 +242,7 @@ En primer lugar, debe comprobar que el servicio está configurado para iniciarse
 
    Si el valor no está establecido en , tendrás que establecer el servicio para `START_TYPE` `AUTO_START` que se inicie automáticamente.
 
-**Use la línea de comandos para establecer el Windows 10 de datos de diagnóstico para que se inicie automáticamente:**
+**Use la línea de comandos para establecer el Windows de datos de diagnóstico para que se inicie automáticamente:**
 
 1. Abra un símbolo del sistema con privilegios elevados en el dispositivo:
 

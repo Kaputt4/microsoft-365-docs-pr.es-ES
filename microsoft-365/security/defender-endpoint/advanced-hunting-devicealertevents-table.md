@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 6a56a1abab388e98af52fadc322d41484c1610a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3919aea64e73e23a4de6aac3fe2b01de238bdb91
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187654"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211410"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -44,7 +44,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |`AlertId`|string|Identificador único de alerta.|
 |`Timestamp`|datetime|Fecha y hora en que se registró el evento.|
 |`DeviceId`|cadena|Identificador único del dispositivo en el servicio|
-|`DeviceName`|cadenas|Nombre de dominio completo (FQDN) del dispositivo|
+|`DeviceName`|string|Nombre de dominio completo (FQDN) del dispositivo|
 |`Severity`|cadena|El indicador de amenazas indica el posible impacto (alto, medio o bajo) de las actividades de vulneración identificadas por la alerta.|
 |`Category`|cadena|Tipo de indicador de amenazas o actividad de vulneración identificada por la alerta|
 |`Title`|cadena|Título de la alerta.|
@@ -52,7 +52,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |`SHA1`|cadena|SHA-1 del archivo donde fue aplicada la acción registrada|
 |`RemoteUrl`|cadena|La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado.|
 |`RemoteIP`|cadena|Dirección IP a la que se ha conectado|
-|`AttackTechniques`|cadenas|MITRE ATT&técnicas de CK asociadas con la actividad que desencadenó la alerta|
+|`AttackTechniques`|string|MITRE ATT&técnicas de CK asociadas con la actividad que desencadenó la alerta|
 |`ReportId`|largo|Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las `DeviceName` columnas y `Timestamp`|
 |`Table`|cadena|Tabla con el contenido detallado del evento|
 

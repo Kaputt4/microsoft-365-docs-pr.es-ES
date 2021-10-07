@@ -8,7 +8,7 @@ author: schmurky
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evite que ataques actuales y emergentes como vulnerabilidades o vínculos malintencionados interrumpan la productividad de los empleados y la seguridad empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f734a4ee22984bdc716a9897624f21396c8b7c1d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9c8484d6e30db242933477bd77a0351578db5f94
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218027"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213462"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protección de aplicaciones para Office para administradores
 
@@ -66,7 +66,7 @@ Para obtener más información sobre Office de actualización, vea [Overview of 
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. Busque Protección de aplicaciones de Microsoft Defender **en modo** administrado , una directiva de grupo en Configuración del equipo Plantillas administrativas Windows **componentes \\ \\ \\ Protección de aplicaciones de Microsoft Defender**. Active esta directiva estableciendo el valor en Opciones como **2** o **3** y, a continuación, **seleccione Aceptar** o **Aplicar**.
+3. Busque Protección de aplicaciones de Microsoft Defender **en modo administrado**, una directiva de grupo en Configuración del equipo Plantillas administrativas Windows componentes **\\ \\ \\ Protección de aplicaciones de Microsoft Defender**. Active esta directiva estableciendo el valor en Opciones como **2** o **3** y, a continuación, **seleccione Aceptar** o **Aplicar**.
 
    ![Active AG en modo administrado.](../../media/ag04-deploy.png)
 
@@ -125,7 +125,7 @@ Office las siguientes directivas para permitirle configurar las capacidades de A
 > [!NOTE]
 > La configuración de estas directivas puede deshabilitar algunas funcionalidades de los archivos abiertos en Application Guard para Office.
 
-|Directiva|Description|
+|Directiva|Descripción|
 |---|---|
 |No use Application Guard para Office|Habilitar esta directiva forzará a Word, Excel y PowerPoint a usar el contenedor de aislamiento vista protegida en lugar de Application Guard para Office. Esta directiva se puede usar para deshabilitar temporalmente la Protección de aplicaciones Office cuando haya problemas al dejarla habilitada para Microsoft Edge.|
 |Configurar Application Guard para la Office anterior a la creación del contenedor|Esta directiva determina si el contenedor de protección de aplicaciones Office, para aislar archivos que no son de confianza, está creado previamente para mejorar el rendimiento en tiempo de ejecución. Si habilita esta configuración, puede especificar el número de días para continuar creando previamente un contenedor o permitir que el Office heurístico integrado cree previamente el contenedor.

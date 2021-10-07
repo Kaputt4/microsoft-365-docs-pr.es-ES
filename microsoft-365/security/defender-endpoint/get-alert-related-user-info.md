@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0bf041210aac90a1aa5b0c360b0b5dd55d8cd8c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 56630e211d5d445e675e4f9af655c062db4ad4b6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221894"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211314"
 ---
 # <a name="get-alert-related-user-information-api"></a>Obtener api de información de usuario relacionada con alertas
 

@@ -4,17 +4,17 @@ description: Díganos con quién ponerse en contacto para cada área de enfoque.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fe048005736e39623effc13751a66f195008ff96
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 568a31d2a0a62704767b3dc41855d2f24b815bc3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215507"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213222"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Agregar y verificar los contactos de administración en el portal de administración
 
@@ -33,7 +33,7 @@ Empaquetado de aplicaciones | Solución de problemas de empaquetado de aplicacio
 Dispositivos | Estado del dispositivo, solución de problemas con Escritorio administrado de Microsoft dispositivos
 Seguridad | Solución de problemas de seguridad con Escritorio administrado de Microsoft dispositivos
 Servicio de ayuda de IT | en los casos en que nuestro personal de soporte técnico entrega los vales de usuario fuera de Escritorio administrado de Microsoft áreas de soporte técnico 
-Otros | Para problemas no cubiertos por otras áreas
+Otro | Para problemas no cubiertos por otras áreas
 
 **Quien elija para estos contactos debe tener el conocimiento y la autoridad para tomar decisiones para su entorno Escritorio administrado de Microsoft contactos.** Al incorporar el entorno Escritorio administrado de Microsoft, se le pedirá que agregue contactos para el departamento de soporte técnico y seguridad local. 
 

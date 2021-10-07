@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 09/21/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 11b45edc944cb60c476a79dc921bd211e04514ef
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: acf0f5fdd3741e99fda82cf91bc8d2f615d25602
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491450"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212298"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>¿Por qué se debe habilitar la protección en la nube para Antivirus de Microsoft Defender
 

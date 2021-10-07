@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a modificar y quitar entradas en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2d5ce65836accd94dec497e5be0087a94742ca0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f2662ac41e5df5cf2eb36413d8a58568ff336841
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192297"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212010"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modificar y quitar entradas a la lista de bloqueados y permitidos del espacio empresarial
 

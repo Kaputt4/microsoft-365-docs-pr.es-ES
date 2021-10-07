@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 67295529cdb7b8a3e93e663f2a8a28d27a8f6737
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 97db42060d694168edbd6ed7e86c67706bf62ddb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220120"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212262"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -37,13 +37,13 @@ ms.locfileid: "59220120"
 
 La `FileProfile()` función es una función de enriquecimiento en búsqueda [avanzada](advanced-hunting-overview.md) que agrega los siguientes datos a los archivos encontrados por la consulta.
 
-| Columna | Tipo de datos | Descripción |
+| Column | Tipo de datos | Descripción |
 |------------|---------------|-------------|
 | `SHA1` | string | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `SHA256` | cadena | SHA-256 del archivo al que se aplicó la acción grabada |
 | `MD5` | string | Hash MD5 del archivo al que se aplicó la acción grabada |
-| `FileSize` | Entero | Tamaño del archivo en bytes |
-| `GlobalPrevalence` | Entero | Número de instancias de la entidad observadas por Microsoft globalmente |
+| `FileSize` | int | Tamaño del archivo en bytes |
+| `GlobalPrevalence` | int | Número de instancias de la entidad observadas por Microsoft globalmente |
 | `GlobalFirstSeen` | datetime | Fecha y hora en que Microsoft observó por primera vez la entidad globalmente |
 | `GlobalLastSeen` | datetime | Fecha y hora en que Microsoft observó por última vez la entidad globalmente |
 | `Signer` | string | Información sobre el firmante del archivo |

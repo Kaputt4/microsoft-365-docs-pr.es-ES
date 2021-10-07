@@ -7,7 +7,7 @@ ms.date: 12/3/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: En este artículo, obtenga información sobre los requisitos de enrutamiento de Azure ExpressRoute, los circuitos y los dominios de enrutamiento para su uso con Office 365.
-ms.openlocfilehash: d157515f60a68a46b033571a0fd39e6a5711b884
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c6bcdd6f8d8dffc9ae71458e0ca167f281212a05
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215697"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211650"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 

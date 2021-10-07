@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: Obtenga información sobre cómo administrar Microsoft 365 cuentas de usuario, licencias y grupos con PowerShell.
-ms.openlocfilehash: 77aa0003186eb44ce201e0e4b332c2a119c72069
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f3b1e3b98449a39027356d628d13abd575de3d44
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185985"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211618"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell
 
