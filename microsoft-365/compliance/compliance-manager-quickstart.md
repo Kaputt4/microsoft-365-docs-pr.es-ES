@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use la guía de inicio rápido del Administrador de cumplimiento para ayudarle a lo largo de su recorrido de comprensión, configuración y uso del Administrador de cumplimiento.
-ms.openlocfilehash: 9697e638d29f61e70f01534d1fa0a5bfb2b80e48
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d70167341082c851ee25d94c3ee5b827d6e1492f
+ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192288"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60223460"
 ---
 # <a name="compliance-manager-quickstart"></a>Inicio rápido del Administrador de cumplimiento
 
@@ -63,8 +63,8 @@ Cuando se sienta cómodo al administrar evaluaciones en el Administrador de cump
 
 También puede configurar pruebas automatizadas de todas o un subconjunto de acciones de mejora. Visite los vínculos siguientes para comprender la funcionalidad más avanzada en el Administrador de cumplimiento:
 
-- [Ampliar una plantilla del Administrador de cumplimiento agregando tus propios controles y acciones de mejora](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
-- [Crear su propia plantilla personalizada](compliance-manager-templates.md#create-an-assessment-template)
-- [Modificar una plantilla existente para agregar o quitar controles y acciones](compliance-manager-templates.md#modify-a-template)
+- [Ampliar una plantilla del Administrador de cumplimiento agregando tus propios controles y acciones de mejora](compliance-manager-templates-extend.md)
+- [Crear su propia plantilla personalizada](compliance-manager-templates-create.md)
+- [Modificar una plantilla existente para agregar o quitar controles y acciones](compliance-manager-templates-modify.md)
 - [Configurar pruebas automatizadas de acciones de mejora](compliance-manager-setup.md#set-up-automated-testing)
 - [Reasignar acciones de mejora a otro usuario](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

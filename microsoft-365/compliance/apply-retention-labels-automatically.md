@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: c6aede6ba25ebd7f28008e4c52450bd3e4b74c2d
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: eeeda9a41f35f6380d2d20adf80b00bc80ba4c4e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009462"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198774"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -31,7 +31,7 @@ ms.locfileid: "60009462"
 > [!NOTE]
 > Este escenario no se admite para [registros normativos](records-management.md#records) o etiquetas predeterminadas para una estructura de organización, como un conjunto de documentos o una biblioteca en SharePoint, o una carpeta en Exchange. Estos escenarios requieren una [directiva de etiqueta de retención publicada](create-apply-retention-labels.md#step-2-publish-retention-labels).
 
-Una de las características más eficaces de las [etiquetas de retención](retention.md) es la capacidad de aplicarlas automáticamente al contenido que coincide con condiciones especificadas. En este caso, no es necesario que las personas de la organización apliquen las etiquetas de retención. Microsoft 365 realiza el trabajo por ellos.
+Una de las características más útiles de las [etiquetas de retención](retention.md) es la capacidad de aplicarlas automáticamente a contenido que coincida con las condiciones especificadas. En ese caso, los usuarios de su organización no necesitan aplicar las etiquetas de retención. Microsoft 365 lo hace automáticamente.
   
 Las etiquetas de retención auto aplicadas son poderosas porque:
   
@@ -44,7 +44,7 @@ Las etiquetas de retención auto aplicadas son poderosas porque:
 Las etiquetas de retención se pueden aplicar a contenido automáticamente cuando dicho contenido contiene información confidencial, palabras clave o propiedades que permiten búsquedas, o una coincidencia para [clasificadores que se puedan entrenar](classifier-get-started-with.md).
 
 > [!TIP]
-> Use las propiedades que permiten búsquedas para identificar las [grabaciones de reuniones de Teams](#microsoft-teams-meeting-recordings).
+> Use las propiedades que se pueden buscar para identificar [Grabaciones de reuniones de Teams](#microsoft-teams-meeting-recordings) y [elementos que tienen aplicada una etiqueta de confidencialidad](#identify-files-and-emails-that-have-a-sensitivity-label).
 
 Los procesos para aplicar automáticamente una etiqueta de retención se basan en estas condiciones:
 
@@ -115,7 +115,7 @@ Cuando se crea una directiva de aplicación automática, se selecciona una etiqu
 
 Para editar una directiva existente de aplicación automática, selecciónela para iniciar el Asistente para editar directivas de retención, el cual le permite cambiar la etiqueta de retención seleccionada, así como cualquier [configuración que cumpla con los requisitos](#updating-retention-labels-and-their-policies) del paso 2.
 
-Después de etiquetar el contenido con una directiva de la etiqueta de aplicación automática, la etiqueta aplicada no se puede quitar o cambiar automáticamente cambiando el contenido o la directiva, o una nueva directiva de etiqueta de aplicación automática. Para obtener más información, vea [Solo una etiqueta de retención al mismo tiempo](retention.md#only-one-retention-label-at-a-time).
+Después de etiquetar el contenido con una directiva de la etiqueta de aplicación automática, la etiqueta aplicada no se puede quitar o cambiar automáticamente cambiando el contenido o la directiva, o mediante una nueva directiva de etiqueta de aplicación automática. Para obtener más información, consulte [Solo una etiqueta de retención a la vez](retention.md#only-one-retention-label-at-a-time).
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configurar las condiciones para la aplicación automática de etiquetas de retención
 
@@ -150,7 +150,7 @@ Además, los elementos de SharePoint que están en borrador o que nunca se han p
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Aplicar automáticamente etiquetas a los contenidos con tipos específicos de información sensible
 
 > [!IMPORTANT]
-> En el caso de los correos electrónicos que se aplican automáticamente mediante la identificación de información confidencial, no se admite el ámbito de la directiva para incluir o excluir destinatarios específicos; esta configuración de directiva solo admite la configuración **Todos los destinatarios**. Específico de esta configuración de directiva, **Todos los destinatarios** incluyen buzones de grupos de Microsoft 365.
+> En el caso de los correos electrónicos que se aplican automáticamente mediante la identificación de información confidencial, no se admite el ámbito de la directiva para incluir o excluir destinatarios específicos; esta configuración de directiva solo admite la configuración **Todos los destinatarios**. **Todos los destinatarios** incluye buzones de correos de grupos de Microsoft 365, que son específicos de esta configuración de directivas.
 > 
 > También es específico de esta configuración de directiva, si seleccionas la ubicación **Grupos de Microsoft 365**, solo se incluyen los sitios de SharePoint conectados a un grupo de Microsoft 365 y no los buzones de grupos de Microsoft 365.
 
@@ -162,7 +162,7 @@ Para obtener más información sobre los tipos de información confidencial, con
 
 Después de seleccionar una plantilla de política, puede añadir o eliminar cualquier tipo de información sensible, y puede cambiar el nivel de confianza y el recuento de instancias. En la captura de pantalla del ejemplo anterior, estas opciones se han cambiado para que se aplique automáticamente una etiqueta de retención sólo cuando:
   
-- El tipo de información confidencial que se detecta tiene una precisión de coincidencia (o [nivel de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels)) de al menos **media confianza** para dos de los tipos de información confidencial, y **alta confianza** para uno. Muchos tipos de información confidencial se definen con varios patrones, donde un patrón con una mayor precisión de coincidencia requiere más pruebas para ser encontrado (por ejemplo, palabras clave, fechas o direcciones), mientras que un patrón con una precisión de coincidencia inferior requiere menos pruebas. Cuanto menor sea el nivel de confianza, más fácil será que el contenido coincida con la condición, pero con la posibilidad de que haya más falsos positivos.
+- El tipo de información confidencial que se detecta tiene una precisión de coincidencia (o [nivel de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels)) de al menos **Confianza media** para dos de los tipos de información confidencial y **Confianza alta** para uno. Muchos tipos de información confidencial se definen con varios patrones, donde un patrón con una mayor precisión de coincidencia requiere que se encuentren más evidencias (como palabras clave, fechas o direcciones), mientras que un patrón con una precisión de coincidencia inferior requiere menos evidencia. Cuanto menor sea el nivel de confianza, más fácil será que el contenido coincida con la condición, pero con el potencial de que se produzcan más falsos positivos.
 
 - El contenido tiene entre 1 y 9 instancias de cualquiera de estos tres tipos de información confidencial. El valor predeterminado para **a** es **Cualquiera**.
 
@@ -198,7 +198,7 @@ Aspectos que debe tener en cuenta al usar palabras clave o propiedades utilizabl
 
 - No se admiten las búsquedas con caracteres comodín de sufijo (como `*cat`) o las búsquedas con caracteres comodín de subcadena (como `*cat*`). Sin embargo, se admiten las búsquedas comodín de prefijo (como `cat*`).
 
-- Tenga en cuenta que los elementos parcialmente indexados pueden causar que no se etiquete los elementos que espera, o que se etiquete los elementos que esperaba excluir de la etiquetación cuando use el operador NOT. Para más información, vea [Elementos parcialmente indexados en la Búsqueda de contenido](partially-indexed-items-in-content-search.md).
+- Tenga en cuenta que los elementos parcialmente indexados pueden causar que no se etiqueten los elementos que espera, o que se etiqueten elementos que esperaba excluir de la etiquetación cuando use el operador NOT. Para obtener más información, consulte [Elementos parcialmente indexados en la Búsqueda de contenido](partially-indexed-items-in-content-search.md).
 
 
 Consultas de ejemplos:
@@ -258,6 +258,19 @@ ProgID:Media AND ProgID:Meeting
 
 La mayoría de las veces, las grabaciones de reuniones se guardan en OneDrive. Pero, en el caso de las reuniones de canal, las grabaciones se guardan en SharePoint.
 
+##### <a name="identify-files-and-emails-that-have-a-sensitivity-label"></a>Identificar los archivos y correos electrónicos que tienen una etiqueta de confidencialidad
+
+Para identificar archivos en los correos electrónicos de SharePoint o OneDrive y Exchange que tienen aplicada una [etiqueta de confidencialidad](sensitivity-labels.md), especifique lo siguiente para el **Editor de consultas de palabras clave**:
+
+```
+InformationProtectionLabelId:<GUID>
+```
+
+Para buscar el GUID, use el cmdlet [Get-Label](/powershell/module/exchange/get-label) de [PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/scc-powershell):
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
 
@@ -291,9 +304,9 @@ Si las etiquetas que esperaba no aparecen después de siete días, compruebe el 
 
 2. Ejecute el siguiente comando:
     
-    ``` PowerShell
+    ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    ```
 
 ## <a name="updating-retention-labels-and-their-policies"></a>Actualización de las etiquetas de retención y de sus directivas
 

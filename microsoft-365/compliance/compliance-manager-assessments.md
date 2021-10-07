@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 149d44ef8db0d21bf0cb64d1c0d09aaf5bf773d6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a425f144e2c98866d32f14d7a16829342c14ef74
+ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179264"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60223446"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 
@@ -161,7 +161,7 @@ Cuando una actualización esté disponible para una evaluación, verá una notif
 
 ### <a name="what-causes-an-update"></a>Qué causa una actualización
 
-Una actualización de evaluación se produce cuando hay cambios de plantilla subyacentes que afectan a la puntuación. Los cambios pueden implicar ajustar la asignación de control u otras instrucciones basadas en cambios normativos o cambios en el producto. Las actualizaciones de evaluación pueden originarse desde su organización (por ejemplo, cuando se modifica una [plantilla personalizada)](compliance-manager-templates.md#modify-a-template)así como desde Microsoft.
+Una actualización de evaluación se produce cuando hay cambios de plantilla subyacentes que afectan a la puntuación. Los cambios pueden implicar ajustar la asignación de control u otras instrucciones basadas en cambios normativos o cambios en el producto. Las actualizaciones de evaluación pueden originarse desde su organización (por ejemplo, cuando se modifica una [plantilla personalizada)](compliance-manager-templates-modify.md)así como desde Microsoft.
 
 Si Microsoft actualiza una plantilla del Administrador de cumplimiento que extendió, la evaluación heredará dichas actualizaciones una vez que las acepte. La evaluación conservará los atributos adicionales que aplicó a la evaluación cuando la extendió.
 

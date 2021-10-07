@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo se rellena la lista de usuarios invitados en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: f2a8de5b4e9c00361aa0cb2113185fa07d8885a2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0de0187211b874f62ede6cfc8b9e1008adc88220
+ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158747"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60223411"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Usuarios invitados en Centro de administración de Microsoft 365
 
@@ -36,7 +36,7 @@ Una vez que un usuario aparece en la **lista De usuarios invitados,** puede quit
 
 Para ver usuarios invitados, en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Centro de administración de Microsoft 365</a>, en la navegación izquierda, expanda **Usuarios** y, a continuación, elija **Usuarios invitados**.
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="before-you-begin"></a>Antes de empezar 
 
 Debe ser un administrador global para realizar esta tarea.
 

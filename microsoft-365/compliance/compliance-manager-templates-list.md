@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager proporciona plantillas para crear evaluaciones que se alineen con las normativas, estándares y leyes nacionales, regionales y del sector.
-ms.openlocfilehash: 71367b7f88fd0b7cfdee243f4ed0101e88a21fce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b7002f1994f71179f422e725364808bfac77de88
+ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167455"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60223442"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
 
@@ -43,10 +43,11 @@ A continuación se muestra la lista completa de plantillas en el Administrador d
 Para revisar las plantillas disponibles para su organización, vaya a la página **Plantillas de** evaluación. Obtenga más información [sobre cómo ver y administrar las plantillas](compliance-manager-templates.md#view-and-manage-templates).
 
 ## <a name="included-templates"></a>Plantillas incluidas
+
 Una o varias de estas plantillas estarán disponibles en función del contrato de licencia. La plantilla Línea base de protección de datos se incluye para todos los usuarios.
 
 - [Línea base de Protección de datos de Microsoft](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
-- [RGPD de la](/compliance/regulatory/gdpr) Unión Europea (Microsoft 365, Office 365, Intune)
+- [RGPD de la Unión Europea](/compliance/regulatory/gdpr)
 - [ISO/IEC 27001:2013](/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Revs. 4 y 5
 
@@ -54,9 +55,11 @@ Una o varias de estas plantillas estarán disponibles en función del contrato d
 > Para los clientes de Community de administración pública (GCC) Moderados, GCC Altos y del Departamento de Defensa (DoD): se incluyen las plantillas Certificación de modelos de madurez de ciberseguridad (CMMC) niveles de 1 a 5, además de las plantillas enumeradas anteriormente.
 
 ## <a name="premium-templates"></a>Premium plantillas
+
 La organización puede comprar estas plantillas.
 
 ### <a name="global"></a>Global
+
 - Directrices y requisitos funcionales para sistemas de administración de registros electrónicos (módulo 2 de ICA) (Microsoft 365)
 - ISO 15489-1:2016 (Microsoft 365)
 - ISO 16175-1:2020 (Microsoft 365)
@@ -79,6 +82,7 @@ La organización puede comprar estas plantillas.
 - [Controles de sistema y organización (SOC) 2](/compliance/regulatory/offering-soc)
 
 ### <a name="industry"></a>Industria
+
 - Principios de privacidad generalmente aceptados (GAPP) de AICPA/CICA (Microsoft 365)
 - ARMA: implementación de los principios de conservación de registros generalmente aceptados (GARP) (Microsoft 365)
 - [Cdsa Content Protection & Security Standard](/compliance/regulatory/offering-cdsa) (Microsoft 365)
@@ -101,6 +105,7 @@ La organización puede comprar estas plantillas.
 - [Evaluación de seguridad de la información de confianza Exchange](/compliance/regulatory/offering-tisax-germany)
 
 ### <a name="us-government"></a>Gobierno de Estados Unidos
+
 - Apéndice III a OMB Circular No. A-130: Seguridad de los recursos de información automatizados federales
 - [CFR: Código de reglamentos federales título 21, parte 11, registros electrónicos,](/compliance/regulatory/offering-fda-cfr-title-21-part-11) firmas electrónicas (Microsoft 365)
 - Regla de protección de privacidad en línea para niños (COPPA) (Microsoft 365)
@@ -115,13 +120,13 @@ La organización puede comprar estas plantillas.
 - e-CFR: reglas de robo de identidad (Microsoft 365)
 - Código electrónico de reglamentos federales: parte 748.0 y apéndice A (Microsoft 365)
 - Reglas de privacidad de FDIC (Microsoft 365)
-- Folleto de seguridad de la información del Consejo federal de examen de instituciones financieras [(FFIEC)](/compliance/regulatory/offering-ffiec-us) (Microsoft 365, Intune)
+- Folleto de seguridad de la información del Consejo federal de examen de instituciones financieras [(FFIEC)](/compliance/regulatory/offering-ffiec-us) (Microsoft 365)
 - [FedRAMP Moderado](/compliance/regulatory/offering-fedramp) (Microsoft 365)
 - FedRAMP SSP High Baseline (Microsoft 365)
 - Ley de libertad de información (FOIA) (Microsoft 365)
 - Ftc Privacidad de la información financiera del consumidor (Microsoft 365)
 - [Ley Gramm-Leach-Bliley, Título V, Subtítulo A, Privacidad financiera](/compliance/regulatory/offering-GLBA) (Microsoft 365)
-- [HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech) (Microsoft 365, Intune)
+- [HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech) (Microsoft 365)
 - [HITRUST](/compliance/regulatory/offering-hitrust) (Microsoft 365)
 - Directiva presidencial de seguridad nacional 7: Identificación de infraestructura crítica, priorización y protección (Microsoft 365)
 - IRS: Procedimiento de ingresos 98-25 Registros automatizados (Microsoft 365)
@@ -152,6 +157,7 @@ La organización puede comprar estas plantillas.
 - Estados Unidos: Protección y protección de instalaciones químicas frente a ataques terroristas (Microsoft 365)
 
 ### <a name="us-states-and-territories"></a>Estados y territorios de ESTADOS UNIDOS
+
 - Alabama - Directiva 621: Notificación de vulneración de datos - BORRADOR (Microsoft 365)
 - Alaska - Capítulo 48 - Ley de protección de la información personal (Microsoft 365)
 - Arizona: notificación de infracciones en sistemas de seguridad (Microsoft 365)
@@ -232,6 +238,7 @@ La organización puede comprar estas plantillas.
 ### <a name="regional"></a>Regional
 
 #### <a name="asia-pacific-countries"></a>Asia-Pacific países
+
 - Marco de privacidad de la Cooperación Económica Asia Pacífico (APEC)
 - Australia - ASD Essential 8 (Microsoft 365)
 - Australia - National Archives Act
@@ -296,6 +303,7 @@ La organización puede comprar estas plantillas.
 - Vietnam: Ley de tecnología de la información (Microsoft 365)
 
 #### <a name="europe-middle-east-and-africa-emea"></a>Europa, Oriente Medio y África (EMEA)
+
 - Albania: Ley de protección de datos personales No. 9887
 - Ley austriaca de telecomunicaciones de 2003 (Microsoft 365)
 - Armenia - Ley de la República de Armenia sobre la protección de datos personales (Microsoft 365)
@@ -371,6 +379,7 @@ La organización puede comprar estas plantillas.
 - Yemen - Yemen Ley del derecho de acceso a la información (Microsoft 365)
 
 #### <a name="latin-america"></a>América Latina
+
 - Antigua y Barbuda: Ley de protección de datos /2013 (Microsoft 365)
 - Bahamas: Ley de protección de datos (Microsoft 365)
 - Barbados- Proyecto de ley de protección de datos 2019 (Microsoft 365)
@@ -380,6 +389,7 @@ La organización puede comprar estas plantillas.
 - Protección de datos de Trinidad y Tobago (Ley 13 de 2011) (Microsoft 365)
 
 #### <a name="north-america"></a>Norteamérica
+
 - Canadá: vulneración de las normativas de seguridad (Microsoft 365)
 - Canada - British Columbia - Information Privacy & Security - FOIPPA (Microsoft 365)
 - [Canadá: Office de la Guía](/compliance/regulatory/offering-osfi-canada) de seguridad cibernética del Superintendente de Self-Assessment Instituciones Financieras (Microsoft 365)
@@ -392,6 +402,7 @@ La organización puede comprar estas plantillas.
 - México : Ley federal de protección de datos personales en manos de partes privadas (Microsoft 365)
 
 #### <a name="south-america"></a>Sudamérica
+
 - Argentina - Ley de protección de datos [personales 25.326](/compliance/regulatory/offering-pdpa-argentina) (Microsoft 365)
 - Brasil: Ley de código de protección del consumidor No. 8078 (Office 365)
 - Brasil : Ley general de protección de datos (LGPD) (Microsoft 365)

@@ -13,16 +13,16 @@ ms.collection:
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: ''
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo limitar la exposición accidental de información al compartir archivos con usuarios externos a la organización.
-ms.openlocfilehash: c3769239951b409afe7596b6f4fecf83c87a9131
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4c60f77f7f7807395a503ce083795e76398d99b4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192154"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196254"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización
 
@@ -36,7 +36,7 @@ Si los usuarios de su organización necesitan llevar a cabo un uso compartido si
 
 Se recomienda dejar habilitados los vínculos de tipo *Cualquiera* para el contenido adecuado, ya que es la manera más sencilla de compartir y puede ayudar a reducir el riesgo de que los usuarios soliciten otras soluciones que no están controladas por el departamento de TI. Los vínculos de tipo *Cualquiera* se pueden reenviar a otros usuarios, pero el acceso al archivo solo está disponible para los usuarios que tengan el vínculo.
 
-Si quiere que los usuarios externos a la organización siempre tengan que autenticarse al obtener acceso al contenido de SharePoint, Grupos o Teams, puede desactivar el uso compartido de tipo *Cualquiera*. Esto impedirá que los usuarios compartan el contenido sin autenticar.
+Si quiere que los usuarios externos a la organización siempre tengan que autenticarse al obtener acceso al contenido de SharePoint, Grupos o Teams, puede desactivar el uso compartido de tipo *Cualquiera*. Esto evitará que los usuarios compartan contenido sin autenticar.
 
 Si deshabilita los vínculos de tipo *Cualquiera*, los usuarios podrán seguir compartiendo con los invitados mediante los vínculos de *Personas específicas*. En este caso, todos los usuarios externos a la organización tendrán que autenticarse antes de poder tener acceso al contenido compartido.
 

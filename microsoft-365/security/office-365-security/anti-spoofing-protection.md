@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d9980240f0c45eb708a668dfea028ce5259fcab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d0ea3c4a9749219060de10bdc988d8a2ba8cf02c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189144"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196638"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -50,7 +50,7 @@ Las siguientes tecnologías contra la suplantación de identidad están disponib
 
   ![Pruebas contra la suplantación de identidad de EOP.](../../media/eop-anti-spoofing-protection.png)
 
-- **Información de la inteligencia contra la suplantación de identidad**: Revisa mensajes falsificados de remitentes en dominios durante los últimos 7 días internos y externos, y permite o bloquea el acceso de los remitentes. Para obtener más información, consulte [Información de inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md).
+- **Información de la inteligencia contra la suplantación de identidad**: revisa mensajes falsificados de remitentes en dominios internos y externos durante los últimos 7 días, y permite o bloquea el acceso de los remitentes. Para obtener más información, consulte [Información de la inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md).
 
 - **Permitir o bloquear remitentes a los que se les ha suplantado la identidad en la lista de permitidos y bloqueados del espacio empresarial**: al invalidar el veredicto en la información de inteligencia contra la suplantación de identidad, el remitente a que se la ha suplantado la identidad se convierte en una entrada manual de permitido o bloqueado que solo aparece en la pestaña **Suplantación de identidad** en la lista de permitidos o bloqueados del espacio empresarial. También puede crear entradas de permitidos o bloqueados manualmente para remitentes de suplantación de identidad antes de que la inteligencia contra la suplantación de identidad los detecte. Para obtener más información, consulte [Administrar la lista de permitidos y bloqueados del espacio empresarial en EOP](tenant-allow-block-list.md).
 
@@ -65,7 +65,7 @@ Las siguientes tecnologías contra la suplantación de identidad están disponib
 
 - **Informe de detección de suplantación de identidad**: Para obtener más información, consulte el [Informe de detección de suplantación de identidad](view-email-security-reports.md#spoof-detections-report).
 
-  **Nota**: Defender para Office 365 en organizaciones también puede usar la detección en tiempo real (plan 1) o el explorador de amenazas (plan 2) para ver información sobre intentos de phishing. Para obtener más información, consulte [Investigación y respuesta frente a amenazas de Microsoft 365](office-365-ti.md).
+  **Nota**: Defender para Office 365 en organizaciones también puede usar la detección en tiempo real (plan 1) o el Explorador de amenazas (plan 2) para ver información sobre intentos de phishing. Para obtener más información, consulte [Investigación de amenazas y respuesta de Microsoft 365](office-365-ti.md).
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Uso de la suplantación de identidad (spoofing) en ataques de phishing
 
@@ -97,7 +97,7 @@ Los mensajes de suplantación de identidad tienen estas implicaciones negativas 
 
 Microsoft distingue entre dos tipos de mensajes falsificados:
 
-- **Suplantación de identidad en la organización**: también conocida como _suplantación de identidad propia_. Por ejemplo:
+- **Suplantación de identidad en la organización**: también conocida como suplantación de identidad _propia_. Por ejemplo:
 
   - El remitente y el destinatario están en el mismo dominio:
     > De: jose@contoso.com <br> Para: carla@contoso.com
@@ -134,7 +134,7 @@ Microsoft distingue entre dos tipos de mensajes falsificados:
   - `SFTY` es el nivel de seguridad del mensaje. 9 indica suplantación de identidad (phishing), .22 indica suplantación entre dominios.
 
 > [!NOTE]
-> Si ha recibido un mensaje como ***compauth=fail reason=###** _ y necesita información sobre la autenticación compuesta (compauth) y los valores relacionados con la suplantación de identidad, vea [_Encabezados de mensaje de correo no deseado en Microsoft 365*](anti-spam-message-headers.md). O vaya directamente a los códigos de [*motivos*](anti-spam-message-headers.md).
+> Si ha recibido un mensaje como ***compauth=fail reason=###** _ y necesita información sobre la autenticación compuesta (compauth) y los valores relacionados con la suplantación de identidad, vea [_Encabezados de mensaje de correo no deseado en Microsoft 365*](anti-spam-message-headers.md). O vaya directamente a los códigos de [*motivo*](anti-spam-message-headers.md).
 
 Para obtener más información acerca de la configuración de DMARC, consulte [Usar DMARC para comprobar el correo electrónico en Microsoft 365](use-dmarc-to-validate-email.md).
 
@@ -144,11 +144,11 @@ Se sabe que las listas de correo (también conocidas como listas de discusión) 
 
 Por ejemplo, Gabriela Laureano (glaureano@contoso.com) está interesada en la observación de aves, se une a la lista de correo observadoresdeaves@fabrikam.com y envía el siguiente mensaje a la lista:.
 
-> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br> **Asunto:** Excelente vista de arrendajos azules en la cima del Monte Rainier esta semana <p> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier?
+> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br> **Asunto:** Excelente vista de urracas azules en la cima del Monte Rainier esta semana<p> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier?
 
 El servidor de la lista de distribución de correo recibe el mensaje, modifica su contenido y lo reproduce para los miembros de la lista. El mensaje reproducido tiene la misma dirección De: (glaureano@contoso.com), pero se han agregado una etiqueta en la línea de asunto y un pie de página en la parte inferior del mensaje. Este tipo de modificación es común en las listas de distribución de correo y puede producir falsos positivos de suplantación de identidad.
 
-> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br> **Asunto:** [OBSERVADORESDEAVES] Excelente vista de arrendajos azules en la cima del Monte Rainier esta semana <p> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier? <p> Este mensaje se envió a la lista de discusión de observadores de aves. Puede cancelar la suscripción en cualquier momento.
+> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br> **Asunto:** [OBSERVADORESDEAVES] Excelente vista de urracas azules en la cima del Monte Rainier esta semana<p> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier?<p> Este mensaje se envió a la lista de discusión de observadores de aves. Puede cancelar la suscripción en cualquier momento.
 
 Para ayudar a que los mensajes de la lista de distribución de correo pasen las comprobaciones contra la suplantación, siga los pasos siguientes en función de si controla la lista de distribución de correo:
 
@@ -178,6 +178,6 @@ También puede contactar con el administrador que puede crear una incidencia de 
 
 Si es un administrador que actualmente envía mensajes a Microsoft 365, debe asegurarse de que el correo electrónico se haya autenticado correctamente. En caso contrario, es posible que se marque como correo no deseado o phishing. Para obtener más información, consulte [Soluciones para remitentes legítimos que envían correo electrónico sin autenticar](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
 
-Los remitentes en la lista de remitentes seguros de un usuario individual (o administrador) omitirán partes de la pila de filtrado, incluida la protección contra la suplantación electrónica. Para más información, consulte [Remitentes seguros de Outlook](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
+Los remitentes en la lista de remitentes seguros de un usuario individual (o administrador) omitirán partes de la pila de filtrado, incluida la protección contra la suplantación electrónica. Para obtener más información, consulte [Remitentes seguros de Outlook](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
 
 Los administradores deben evitar (siempre que sea posible) el uso de listas de remitentes permitidos o de dominios permitidos. Estos remitentes omiten toda la protección contra correo no deseado, suplantación electrónica, protección contra phishing y autenticación de remitente (SPF, DKIM, DMARC). Para más información, consulte [Usar listas de remitentes permitidos o listas de dominios permitidos](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists).
