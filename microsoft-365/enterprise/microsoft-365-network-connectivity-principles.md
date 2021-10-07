@@ -7,7 +7,7 @@ ms.date: 6/23/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Este artículo proporciona las instrucciones más recientes para optimizar de forma segura la conectividad de red de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7aebf4e210c3e4feb94ec3c6deb6523e5742152c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ad7607fb03aee49fa86adaaf1e8970c864ea310
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220821"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212886"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principios de conectividad de red de Microsoft 365
 
@@ -58,7 +58,7 @@ Para la mayoría de los clientes, los usuarios de Microsoft 365 se distribuyen e
 
 Microsoft recomienda los siguientes principios para lograr una conectividad y un rendimiento óptimos de Microsoft 365. Utilice estos principios de conectividad de Microsoft 365 para administrar el tráfico y obtener el máximo rendimiento al conectarse a Microsoft 365.
   
-El objetivo principal del diseño de la red debe ser minimizar la latencia mediante la reducción del tiempo de ida y vuelta (RTT) desde su red a la Red Global de Microsoft, la red troncal de conexión pública de Microsoft que interconecta todos los centros de datos de Microsoft con la baja latencia y los puntos de entrada de aplicaciones en la nube distribuidos por todo el mundo. Puede obtener más información sobre la Red Global de Microsoft en [Cómo construye Microsoft su red global rápida y confiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+El objetivo principal del diseño de red debe ser minimizar la latencia reduciendo el tiempo de ida y vuelta (RTT) de la red a la red global de Microsoft, la red troncal de la red pública de Microsoft que interconecta todos los centros de datos de Microsoft con baja latencia y puntos de entrada de aplicaciones en la nube distribuidos por todo el mundo. Puede obtener más información sobre Microsoft Global Network en [Cómo Microsoft crea su red global rápida y confiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
   
 <a name="BKMK_P1"> </a>
 ### <a name="identify-and-differentiate-microsoft-365-traffic"></a>Identificar y diferenciar el tráfico de Microsoft 365
@@ -155,7 +155,7 @@ Los puntos de conexión de Office 365 representan un conjunto variado de direcci
 > [!NOTE]
 > Las ubicaciones de los puntos de conexión de Office 365 en la red no están directamente relacionadas con la ubicación de los datos de inquilino de Microsoft 365. Por este motivo, los clientes deberían considerar Microsoft 365 como un servicio distribuido y global, y no deben intentar bloquear las conexiones de red a los puntos de conexión de Office 365 en función de criterios geográficos.
   
-En nuestras instrucciones anteriores para administrar el tráfico de Microsoft 365, los puntos de conexión se organizaban en dos categorías: **Necesarios** y **Opcionales**. Los puntos de conexión en cada categoría requerían diferentes optimizaciones en función de la importancia del servicio, y muchos clientes se enfrentaban a dificultades para justificar la aplicación de las mismas optimizaciones de red a la lista completa de direcciones IP y URL de Office 365.
+En nuestra guía anterior para administrar el tráfico de Microsoft 365, los puntos de conexión se organizaban en dos categorías, **Requerido** y **Opcional**. Los puntos de conexión de cada categoría requerían optimizaciones diferentes en función de la importancia del servicio, y muchos clientes se enfrentaban a desafíos al justificar la aplicación de las mismas optimizaciones de red a la lista completa de direcciones IP y direcciones URL de Office 365.
   
 En el nuevo modelo, los puntos de conexión se dividen en tres categorías: **Optimizar**, **Permitir** y **Predeterminado**, lo que proporciona un eje basado en las prioridades en el que se pueden centrar los esfuerzos de optimización de la red para lograr todas las mejoras posibles de rendimiento y el retorno de la inversión. Los puntos de conexión se consolidan en las categorías anteriores según la sensibilidad de la experiencia efectiva del usuario en relación con el volumen y la calidad de la red, el campo de rendimiento de los escenarios y la facilidad de implementación. Se pueden aplicar las optimizaciones recomendadas de la misma forma a todos los puntos de conexión de una categoría determinada.
   
@@ -206,11 +206,11 @@ Microsoft ofrece una amplia gama de características de seguridad de Microsoft 3
   
 - **Usar la autenticación multifactor (MFA)** MFA agrega una capa adicional de protección a una estrategia de contraseña segura al obligar a los usuarios a confirmar una llamada telefónica, un mensaje de texto o una notificación de aplicación en el smartphone después de escribir la contraseña correcta.
 
-- **Usar Microsoft Cloud App Security** Configure directivas para realizar un seguimiento de actividad anómala y actuar sobre la misma. Configurar alertas con Microsoft Cloud App Security para que los administradores puedan revisar las actividades de riesgo o poco habituales de los usuarios, como descargar grandes cantidades de datos, varios intentos fallidos de inicio de sesión o conexiones desde direcciones IP desconocidas o peligrosas.
+- **Use Microsoft Cloud App Security** Configure directivas para realizar un seguimiento de la actividad anómala y actuar en ella. Configure alertas con Microsoft Cloud App Security para que los administradores puedan revisar la actividad inusual o arriesgada de los usuarios, como descargar grandes cantidades de datos, varios intentos de inicio de sesión erróneos o conexiones desde direcciones IP desconocidas o peligrosas.
 
 - **Configurar la prevención de la pérdida de datos (DLP)** DLP le permite identificar datos confidenciales y crear directivas que contribuyen a evitar que los usuarios compartan los datos por error o de forma deliberada. DLP funciona en Microsoft 365, incluido en Exchange Online, SharePoint Online y OneDrive, de modo que los usuarios puedan cumplir las normativas sin interrumpir el flujo de trabajo.
 
-- **Usar la Caja de seguridad del cliente** Como administrador de Microsoft 365, puede usar la Caja de seguridad del cliente para controlar el acceso de un ingeniero de soporte técnico de Microsoft a sus datos durante una sesión de ayuda. En casos donde el ingeniero requiere acceso a los datos para solucionar un problema, la Caja de seguridad del cliente le permite aprobar o rechazar la solicitud de acceso.
+- **Use Caja de seguridad del cliente** Como administrador de Microsoft 365, puede usar Caja de seguridad del cliente para controlar cómo un ingeniero de soporte técnico de Microsoft accede a los datos durante una sesión de ayuda. En los casos en los que el ingeniero requiere acceso a los datos para solucionar un problema y corregirlo, Caja de seguridad del cliente permite aprobar o rechazar la solicitud de acceso.
 
 - **Usar la Puntuación segura de Office 365** Se trata de una herramienta de análisis de seguridad que proporciona recomendaciones para reducir aún más los riesgos. La Puntuación segura analiza las actividades y la configuración de Microsoft 365 y las compara con una línea de base establecida por Microsoft. Obtendrá una puntuación en función de su alineación con las mejores prácticas de seguridad.
 
@@ -226,7 +226,7 @@ Para lograr un enfoque holístico de seguridad mejorada, se debería tener en cu
   - Reducir los requisitos de seguridad de red del perímetro WAN corporativo
   - Algunos dispositivos de seguridad de perímetro de red, como firewalls, siguen siendo necesarios, pero la carga disminuye
   - Garantiza la salida local para el tráfico de Microsoft 365
-- Las mejoras se pueden realizar de manera progresiva, tal y como se describe en la sección [Optimización incremental](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). Algunas técnicas de optimización pueden ofrecer una mejor relación coste-beneficio según su arquitectura de red, de modo que debería elegir aquellas optimizaciones que sean más adecuadas para su organización.
+- Las mejoras se pueden abordar de forma incremental, tal como se describe en la sección [Optimización incremental](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). Algunas técnicas de optimización pueden ofrecer mejores relaciones costo-beneficio en función de la arquitectura de red, y debe elegir las optimizaciones que tengan más sentido para su organización.
 
 Para más información sobre la seguridad y el cumplimiento de Microsoft 365, consulte el artículo [Seguridad de Microsoft 365](../security/index.yml) y [Seguridad de Microsoft 365](../compliance/index.yml).
   

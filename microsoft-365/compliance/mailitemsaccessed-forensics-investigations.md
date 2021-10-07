@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use la acción de auditoría del buzón MailItemsAccessed para realizar investigaciones forenses de cuentas de usuarios comprometidas.
-ms.openlocfilehash: b0fac6e4ac5d6cc4bb20b6853cb67cf301c6295a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: eeb52058a9937b9ba59b53c7491ccf652cac5288
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186166"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152975"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usar auditoría avanzada para investigar cuentas comprometidas
 
@@ -31,7 +31,7 @@ Para ayudarle con la investigación de las cuentas de correo electrónico, ahora
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>La acción de auditoría del buzón MailItemsAccessed
 
-La nueva acción MailItemsAccessed forma parte de la nueva función de [auditoría avanzada](advanced-audit.md). Forma parte de las [auditorías del buzón de Exchange](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) y está habilitada de forma predeterminada para los usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5 o para las organizaciones con una suscripción al complemento de Cumplimiento de Microsoft 365 E5.
+La nueva acción MailItemsAccessed forma parte de la nueva función de [Auditoría avanzada](advanced-audit.md). Forma parte de las [auditorías del buzón de Exchange](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) y está habilitada de forma predeterminada para los usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5 o para las organizaciones con una suscripción al complemento de Cumplimiento de Microsoft 365 E5.
 
 La acción de auditoría del buzón MailItemsAccessed abarca todos los protocolos de correo: POP, IMAP, MAPI, EWS, Exchange ActiveSync y REST. También cubre los dos tipos de acceso al correo: *sincronización* y *enlace*.
 
@@ -149,7 +149,7 @@ Estos son los pasos para usar los registros de auditoría de MailItemsAccessed p
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Bind*"} | FL
    ```
 
-   Los mensajes de correo electrónico a los que se ha accedido se identifican por su ID. de mensaje de Internet. También puede comprobar si los registros de auditoría tienen el mismo contexto que los de la otra actividad del atacante. Para obtener más información, vea la sección [identificar los contextos de acceso de diferentes registros de auditoría](#identifying-the-access-contexts-of-different-audit-records).
+   Los mensajes de correo electrónico a los que se ha accedido se identifican por su ID. de mensaje de Internet. También puede comprobar si los registros de auditoría tienen el mismo contexto que los de la otra actividad del atacante. Para más información, vea la sección [Identificar los contextos de acceso de diferentes registros de auditoría](#identifying-the-access-contexts-of-different-audit-records).
 
    Puede usar los datos de auditoría para las operaciones de enlace de dos maneras diferentes:
 

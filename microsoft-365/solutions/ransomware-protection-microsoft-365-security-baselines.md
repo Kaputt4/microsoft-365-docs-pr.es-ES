@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, ransomware operado por personas, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología
 description: Use las líneas base de seguridad para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: c2e461e5b4236738909a61c30d5bfde060f372cb
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 662e4097f4d6fd868810ba889c99d58fd0dc2f75
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444753"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202314"
 ---
 # <a name="step-1-configure-security-baselines"></a>Paso 1. Configurar las líneas base de seguridad
 

@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Describe las causas comunes de problemas con la sincronización de directorios en Office 365 y ofrece unos cuantos métodos para ayudar a identificarlos y resolverlos.
-ms.openlocfilehash: 27bbe07be43c7b04b7e74f1cc600df6c1409e372
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dba6626ead648928186f8fbeac646a2b52206bc0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216070"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208282"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Solucionar problemas de la sincronización de directorios para Microsoft 365
 
@@ -36,7 +36,7 @@ La sincronización de directorios permite continuar con la administración de us
 
 La primera indicación que algo va mal es cuando el icono del estado de DirSync en el centro de administración de Microsoft 365 indica que hay un problema.
   
-También recibirá un correo de Microsoft 365 (al correo electrónico alternativo y al correo electrónico de administrador) que indica que su inquilino ha detectado errores de sincronización de directorios. Para obtener información detallada, vea [Identificar errores de sincronización de directorios en Microsoft 365](identify-directory-synchronization-errors.md).
+También recibirá un correo (al correo electrónico alternativo y a su correo electrónico de administrador) de Microsoft 365 que indica que su inquilino ha encontrado errores de sincronización de directorios. Para obtener más información, consulte [Identificar errores de sincronización de directorios en Microsoft 365](identify-directory-synchronization-errors.md).
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>¿Cómo puedo obtener la herramienta Azure Active Directory Connect?
 
@@ -64,7 +64,7 @@ Para actualizar desde la sincronización de Azure AD a Azure AD Connect, vea [la
 - [Implementar la sincronización de hash de contraseñas con la sincronización de Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>Veo una alerta que indica que se ha superado la cuota de objetos
-- Se aplica una cuota de objetos integrada para ayudar a proteger el servicio. Si en su directorio hay demasiados objetos deben sincronizarse en Microsoft 365, [Póngase en contacto con soporte técnico para productos para empresas](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) para aumentar la cuota.
+- Tenemos una cuota de objetos incorporada para ayudar a proteger el servicio. Si tiene demasiados objetos en su directorio que deben sincronizarse con Microsoft 365, deberá ponerse en [Contacto con el soporte técnico de productos comerciales](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) para aumentar su cuota.
 
 ### <a name="i-need-to-know-which-attributes-are-synchronized"></a>Necesito saber qué atributos están sincronizados
 - Puede ver una lista de todos los atributos sincronizados entre la instalación local y la nube [aquí](https://go.microsoft.com/fwlink/p/?LinkId=396719).

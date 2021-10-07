@@ -9,15 +9,15 @@ ms.collection:
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
 ms.custom: seo-marvel-jun2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: Conozca la forma en que las instituciones de servicios financieros pueden mantener el cumplimiento de la seguridad financiera y colaborar de forma eficaz al usar Microsoft 365 y Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 0e3fada6a74776e4edf2c8c41ef9026ce17871ad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 073f24bc751bcb9f11a415d4ef142172fd5387ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189027"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207528"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave de cumplimiento y seguridad para los mercados de capital y los bancos de Estados Unidos
 
@@ -83,7 +83,7 @@ Microsoft 365 proporciona otras funciones de directiva comunes para Teams media
 
 **Las directivas de nomenclatura de grupo de Microsoft 365** ayudan a asegurarse de que los grupos de Microsoft 365 y, por tanto, los equipos, se denominen de acuerdo a la directiva empresarial. Los nombres pueden ser problemáticos si no son adecuados. Por ejemplo, es posible que los empleados no sepan con qué equipos trabajar o compartir información si los nombres no se aplicaron correctamente. Las directivas de nomenclatura de grupos (incluida la compatibilidad con directivas basadas en prefijos y sufijos o las palabras bloqueadas personalizadas) pueden exigir una "higiene" adecuada y evitar el uso de palabras específicas, como palabras reservadas o terminología inapropiada.
   
-**Las directivas de expiración de grupos de Microsoft 365** ayudan a garantizar que los grupos de Microsoft 365 y, por lo tanto, los equipos, no se conserven durante períodos de tiempo más largos de lo que la organización quiere o necesita Esta función ayuda a evitar dos problemas clave de administración de la información:
+**Las directivas de expiración de grupos de Microsoft 365** ayudan a garantizar que los grupos de Microsoft 365 y, por lo tanto, los equipos, no se conserven durante períodos de tiempo más largos de lo que la organización quiere o necesita. Esta función ayuda a evitar dos problemas clave de administración de la información:
 
 * Proliferación de equipos que no son necesarios ni se usan.
 * La retención excesiva de datos que ya no necesita o usa la organización (excepto en casos de conservación o preservación legal).

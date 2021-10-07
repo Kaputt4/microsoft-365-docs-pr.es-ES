@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: El explorador local de prevención de pérdida de datos de Microsoft 365 amplía la supervisión de actividades de archivo y acciones de protección de esos archivos a recursos compartidos de archivos locales y carpetas y bibliotecas de documentos de SharePoint. El examinador de Azure Information Protection (AIP) examina y protege los archivos.
-ms.openlocfilehash: c59c6b90f6c219528cbff8a4aadc6472a48ecd23
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c696d4c4e8504d07ce69554c6ff52f264b8ba491
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192974"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207348"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365
 

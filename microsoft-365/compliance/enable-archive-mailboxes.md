@@ -10,7 +10,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.ArchivingHelp
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: Aprenda a usar el centro de cumplimiento para habilitar los buzones de correo de archivo a fin de respaldar los requisitos de retención de mensajes, eDiscovery y retención de su organización.
-ms.openlocfilehash: 4d9e1dac62d13759b4d735a3243d4d9dd3edab57
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: c62d1d1478b62ac3ba66ccc0fc7fb9d5fc6101b3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011445"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207336"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Habilitar los buzones de archivo en el centro de cumplimiento
 
@@ -55,18 +55,18 @@ Debe tener asignado el rol de Destinatarios de correo de Exchange Online para ha
 
 5. En el panel de detalles para el usuario seleccionado, haga clic en **Habilitar**.
 
-   Se muestra una advertencia que indica que, si habilita el buzón de archivo, los elementos en el buzón del usuario que sean más antiguos que la directiva de archivado asignada al buzón se moverán al nuevo buzón de archivo. La directiva de archivo predeterminada que forma parte de la directiva de retención asignada a buzones de Exchange Online mueve elementos al buzón de archivo dos años después de la fecha en que el elemento se entregó al buzón o fue creado por el usuario. Para más información, vea la sección **Más información** de este artículo.
+   Se muestra una advertencia que indica que, si habilita el buzón de archivo, los elementos en el buzón del usuario que sean más antiguos que la directiva de archivado asignada al buzón se moverán al nuevo buzón de archivo. Como se explicó anteriormente, la directiva de archivo predeterminada que forma parte de la directiva de retención asignada a buzones de ExchangeOnline mueve elementos al buzón de archivo dos años después de la fecha en que el elemento se entregó al buzón o fue creado por el usuario. Para más información consulte la sección: **Más información** de este artículo
 
 6. Haga clic en **Sí** para habilitar el buzón de archivo.
 
-   Puede tardar unos momentos para crear el buzón de archivo. Una vez creado, aparece **Buzón de archivo: habilitado** en el panel de detalles del usuario seleccionado. Es posible que tenga que hacer clic en **Actualizar** ![Icono de Actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información que se muestra en el panel de detalles.
+   El buzón de archivo puede tardar un poco en crearse. Una vez creado, aparece **Buzón de archivo: habilitado** en el panel de detalles del usuario seleccionado. Es posible que tenga que hacer clic en **Actualizar** ![Icono de actualizar.](../media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información del panel de detalles.
 
 > [!TIP]
 > También puede habilitar buzones de archivo de forma masiva seleccionando varios usuarios con los buzones de archivo deshabilitados (use las teclas Mayús o Ctrl). Después de seleccionar varios buzones, haga clic en **Habilitar** en el panel de detalles.
 
 ## <a name="disable-an-archive-mailbox"></a>Deshabilitar un buzón de archivo
 
-También puede usar la página **Archivo** en el Centro de cumplimiento de Microsoft 365 para deshabilitar el buzón de archivo del usuario. Después de deshabilitar un buzón de archivo, puede volver a conectarlo al buzón de correo principal del usuario en un plazo de 30 días tras la deshabilitación. En este caso, se restaura el contenido original del buzón de archivo. Transcurridos los 30 días, el contenido del buzón de archivo original se elimina definitivamente y no se puede recuperar. Así, si vuelve a habilitar el archivo después de los 30 días posteriores a la deshabilitación, se crea un buzón de archivo nuevo.
+También puede usar la página **Archivar** en el centro de cumplimiento de Microsoft 365 para deshabilitar el buzón de archivo de un usuario. Después de deshabilitar un buzón de archivo, puede volver a conectarlo al buzón de correo principal del usuario en un plazo de 30 días tras la deshabilitación. En este caso se restaura el contenido original del buzón de archivo. Transcurridos los 30 días, el contenido del buzón de archivo original se elimina definitivamente y no se puede recuperar. Así pues, si vuelve a habilitar el archivo después de los 30 días posteriores a la deshabilitación, se crea un buzón de archivo nuevo.
 
 La directiva de archivo predeterminada asignada a los buzones de usuarios mueve elementos al buzón de archivo dos años después de la fecha en que el elemento se entregó. Si deshabilita el buzón de archivo de un usuario, no se realizará ninguna acción en los elementos del buzón y permanecerán en el buzón principal del usuario.
 
@@ -89,7 +89,7 @@ Para deshabilitar un buzón de archivo:
 
 5. Haga clic en **Sí** para deshabilitar el buzón de archivo.
 
-   El buzón de archivo puede tardar un poco en deshabilitarse. Una vez deshabilitado, aparece **Buzón de archivo: deshabilitado** en el panel de detalles del usuario seleccionado. Es posible que tenga que hacer clic en **Actualizar** ![Icono de Actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información que se muestra en el panel de detalles.
+   El buzón de archivo puede tardar un poco en deshabilitarse. Una vez deshabilitado, aparece **Buzón de archivo: deshabilitado** está desplegado el panel de detalles del usuario seleccionado. Es posible que deba hacer clic en **Actualizar** ![icono Actualizar](../media/O365-MDM-Policy-RefreshIcon.gif). para actualizar la información en el panel de detalles.
 
 > [!TIP]
 > También puede deshabilitar buzones de archivo de forma masiva seleccionando varios usuarios con los buzones de archivo habilitados (use las teclas Mayús o Ctrl). Después de seleccionar varios buzones, haga clic en **Deshabilitar** en el panel de detalles.

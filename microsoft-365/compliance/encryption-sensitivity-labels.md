@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64957adeb242d14b2f4c986d3cffc282379c93f3
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: ba6e8e44a3f41bcd64257faf62c597d3b019e359
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444144"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206186"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -167,7 +167,7 @@ Al asignar permisos, puede elegir:
 
 - Todos los usuarios de su organización (todos los miembros del espacio empresarial). Esta configuración excluye cuentas de invitado.
 
-- Todos los usuarios autenticados. Asegúrese de comprender [las limitaciones y los requisitos](#requirements-and-limitations-for-add-any-authenticated-users) de esta configuración antes de seleccionarla.
+- Cualquier usuario autenticado. Asegúrese de comprender las [limitaciones y requisitos](#requirements-and-limitations-for-add-any-authenticated-users) de esta configuración antes de seleccionarla.
 
 - Cualquier usuario específico o grupo de seguridad habilitado para correo electrónico, grupo de distribución o grupo de Microsoft 365 ([anteriormente denominado grupo de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) en Azure AD. El grupo de Microsoft 365 puede tener [pertenencia estática o dinámica](/azure/active-directory/users-groups-roles/groups-create-rule). Tenga en cuenta que no puede usar un grupo de [distribución dinámico de Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) porque este tipo de grupo no está sincronizado con Azure AD, y no puede usar un grupo de seguridad que no esté habilitado para correo electrónico.
 
@@ -273,7 +273,7 @@ En Outlook, cuando un usuario aplica una etiqueta de confidencialidad que le per
 
 Cuando cualquiera de estas opciones se aplica a un correo electrónico, este se cifra y los destinatarios tienen que autenticarse. Luego, el destinatario obtiene automáticamente derechos de uso restringido:
 
-- **No reenviar**: los destinatarios no podrán reenviar el correo electrónico, imprimirlo ni copiarlo. Por ejemplo, en el cliente de Outlook, el botón Reenviar y las opciones de menú Guardar como e Imprimir no están disponibles, y no se pueden agregar o cambiar destinatarios en los cuadros Para, CC o CCO.
+- **Do Not Forward**: los destinatarios no pueden reenviar el correo electrónico, imprimirlo ni copiarlo. Por ejemplo, en el cliente de Outlook, el botón Reenviar no está disponible, las opciones de menú Guardar como e Imprimir no están disponibles y no puede agregar o cambiar destinatarios en los cuadros Para, CC o CCO.
     
     Para obtener más información sobre cómo funciona esta opción, consulte [Opción No reenviar para correos electrónicos](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
 
@@ -335,7 +335,7 @@ Esta etiqueta no es adecuada para correos electrónicos.
 
 4. En el panel **Asignar permisos**, seleccione **Agregar direcciones de correo electrónico o dominios específicos**.
 
-5. En el cuadro de texto, escriba el nombre de un dominio de la otra organización, por ejemplo, **fabrikam.com**. A continuación, seleccione **Aceptar**.
+5. En el cuadro de texto, escriba el nombre de un dominio de la otra organización, por ejemplo, **fabrikam.com**. Luego seleccione **Agregar**.
 
 6. Seleccione **Elegir permisos**.
 
@@ -361,7 +361,7 @@ Los nuevos usuarios que agregue serán capaces de abrir documentos y mensajes de
 
 6. En el panel **Elegir permisos**, seleccione los permisos para este usuario (o grupo) y seleccione **Guardar**.
 
-7. De nuevo, en el panel **asignar permisos**, repita los pasos del 3 al 6 para cada usuario (o grupo) que quiera agregar a esta etiqueta. Después, haga clic en **Guardar**.
+7. De nuevo, en el panel **Asignar permisos**, repita los pasos del 3 al 6 para cada usuario (o grupo) que quiera agregar a esta etiqueta. Luego haga click en **Guardar**
 
 8. En la página **Cifrado,** seleccione **Siguiente** y complete la configuración.
 
@@ -369,7 +369,7 @@ Los nuevos usuarios que agregue serán capaces de abrir documentos y mensajes de
 
 Esta configuración tiene la ventaja de no tener que especificar usuarios, grupos o dominios para cifrar un correo electrónico o un documento. El contenido seguirá estando cifrado y aún podrá especificar derechos de uso, una fecha de expiración y acceso sin conexión.
 
-Use esta configuración solo si no necesita restringir quién puede abrir el documento o correo electrónico protegido. [Más información sobre esta configuración](#requirements-and-limitations-for-add-any-authenticated-users)
+Use esta configuración solo cuando no necesite restringir quién puede abrir el documento protegido o el correo electrónico. [Más información sobre esta configuración](#requirements-and-limitations-for-add-any-authenticated-users)
 
 1. En la página **Cifrado**: para **¿Quiere asignar permisos ahora o permitir que los usuarios decidan?** asegúrese de que la opción **Asignar permisos ahora** está seleccionada.
 
@@ -397,16 +397,16 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 
   - Search, eDiscovery y Delve no funcionarán en archivos cifrados.
   - Las directivas DLP funcionan para los metadatos de estos archivos cifrados (incluida la información de la etiqueta de retención), pero no el contenido de estos archivos (como números de tarjeta de crédito en los archivos).
-  - Los usuarios no pueden abrir archivos cifrados con Office en la Web. Cuando las etiquetas de confidencialidad de los archivos de Office en SharePoint y OneDrive están habilitadas, los usuarios pueden usar Office en la Web para abrir archivos cifrados, con algunas [limitaciones](sensitivity-labels-sharepoint-onedrive-files.md#limitations) entre las que se incluyen el cifrado que se ha aplicado con una clave local (conocido como "mantenga su propia clave" o HYOK), el [cifrado de doble clave](#double-key-encryption) y el cifrado que se ha aplicado independientemente de una etiqueta de confidencialidad.
+  - Los usuarios no pueden abrir archivos cifrados con Office en la web. Cuando las etiquetas de confidencialidad de los archivos de Office en SharePoint y OneDrive están habilitadas, los usuarios pueden usar Office en la Web para abrir archivos cifrados, con algunas limitaciones [](sensitivity-labels-sharepoint-onedrive-files.md#limitations)entre las que se incluyen el cifrado que se ha aplicado con una clave local (conocido como "mantenga su propia clave" o HYOK, por sus siglas en inglés), [el cifrado de doble clave](#double-key-encryption) y el cifrado que se ha aplicado independientemente de una etiqueta de confidencialidad.
 
-- Si comparte documentos cifrados con personas de fuera de su organización, es posible que tenga que crear cuentas de invitado y modificar las directivas de Acceso condicional. Para obtener más información, consulte [Uso compartido de documentos cifrados con usuarios externos](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
+- Si comparte documentos cifrados con personas ajenas a su organización, es posible que tenga que crear cuentas de invitado y modificar las directivas de acceso condicional. Para obtener más información, vea [Sharing encrypted documents with external users](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
 
 - Cuando los usuarios autorizados abren documentos cifrados en sus aplicaciones de Office, ven el nombre y descripción de la etiqueta en una barra de mensajes amarilla en la parte superior de la aplicación. Cuando los permisos de cifrado se extienden a personas fuera de la organización, revise detenidamente los nombres y descripciones de las etiquetas que estarán visibles en esta barra de mensajes cuando se abra el documento.
 
 - Para que varios usuarios puedan modificar un archivo cifrado al mismo tiempo, deben usar Office para la Web.  O, para Windows y Mac, se ha [habilitado la coautoría para los archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md) y los usuarios tienen las [versiones mínimas necesarias](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) de Word, Excel y PowerPoint. Si este no es el caso, y el archivo ya está abierto:
 
   - En las aplicaciones de Office (Windows, Mac, Android y iOS), los usuarios verán un mensaje de **archivo en uso** con el nombre de la persona que ha desprotegido el archivo. Podrán ver una copia de solo lectura, guardar y editar una copia del archivo, y recibir una notificación cuando el archivo esté disponible.
-  - En Office para la web, los usuarios ven un mensaje de error que indica que no pueden editar el documento con otras personas. Pueden seleccionar **Abrir en vista de lectura**.
+  - En Office para la Web, los usuarios ven un mensaje de error que indica que no pueden editar el documento con otras personas. A continuación, pueden seleccionar **Abrir en Vista de lectura**.
 
 - La funcionalidad [Autoguardado](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) en las aplicaciones de Office para iOS y Android está deshabilitada para los archivos cifrados. Esta funcionalidad también está deshabilitada para los archivos cifrados en Windows y Mac si no ha [habilitado la autoría conjunta para archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md). Los usuarios verán un mensaje en el que se indica que el archivo tiene permisos restringidos que deben quitarse para que se pueda activar el autoguardado.
 
@@ -416,8 +416,8 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 
 - Las siguientes acciones para archivos cifrados no son compatibles con las aplicaciones de Office (Windows, Mac, Android e iOS) y los usuarios ven un mensaje de error que indica que se ha producido un problema. Sin embargo, se puede usar la funcionalidad de SharePoint como alternativa:
 
-  - Ver, restaurar y guardar las copias de versiones anteriores. Como alternativa, los usuarios pueden realizar estas acciones mediante Office en la web cuando [habilita y configura las versiones para una lista o biblioteca](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
-  - Cambiar el nombre o la ubicación de los archivos. Como alternativa, los usuarios pueden [cambiar el nombre de un archivo, carpeta o vínculo de una biblioteca de documentos](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) en SharePoint.
+  - Ver, restaurar y guardar copias de versiones anteriores. Como alternativa, los usuarios pueden realizar estas acciones con Office en la web cuando [permitir y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
+  - Cambie el nombre o la ubicación de los archivos. Como alternativa, los usuarios pueden [renombre un archivo, carpeta o vínculo en una biblioteca de documentos](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) en SharePoint.
 
 Para disfrutar de la mejor experiencia de colaboración para los archivos que se cifran con una etiqueta de confidencialidad, le recomendamos que use [etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) y Office para la Web.
 
