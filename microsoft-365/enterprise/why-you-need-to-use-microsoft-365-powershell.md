@@ -7,19 +7,19 @@ ms.date: 07/17/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Summary: Understand why you must use PowerShell to manage Microsoft 365, in some cases more efficiently and in other cases by necessity.'
-ms.openlocfilehash: 361900d66c1cb8f41a27f661241a63d7d806e99b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 79beabad5b588ae47d9de70cb8a9cce6862a1c1d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210360"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208198"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>¿Por qué necesita usar PowerShell para Microsoft 365?
 
@@ -378,7 +378,7 @@ Suponga que quiere crear un informe que muestre la información siguiente de tod
 
 - Si el usuario está habilitado en Skype Empresarial Online
 
-No puede producir fácilmente un informe de este tipo en el Centro de administración de Microsoft 365. En su lugar, tendría que crear un documento independiente para almacenar la información, como una hoja Excel hoja de cálculo. A continuación, obtenga todos los nombres de usuario y la información de licencias de Centro de administración de Microsoft 365, obtenga información del buzón del Centro de administración de Exchange Skype Empresarial, obtenga información en línea del Centro de administración de Skype Empresarial Online y, a continuación, combine esa información.
+No puede producir fácilmente un informe de este tipo en el Centro de administración de Microsoft 365. En su lugar, tendría que crear un documento independiente para almacenar la información, como una hoja Excel hoja de cálculo. A continuación, obtenga todos los nombres de usuario y la información de licencias de Centro de administración de Microsoft 365, obtenga información del buzón del Centro de administración de Exchange, obtenga información de Skype Empresarial Online desde el Centro de administración en línea de Skype Empresarial y, a continuación, combine esa información.
 
 La alternativa es usar un script de PowerShell para compilar el informe por usted.
 
@@ -424,7 +424,7 @@ La interpretación de este script de PowerShell es:
 1. Agregue una nueva propiedad a la información del usuario denominada *EnabledForSfB*. Estabózcalo en el valor de la propiedad Enabled de la información de Skype Empresarial Online del usuario (**$i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled**).
 1. Mostrar la lista de usuarios, pero incluir solo su nombre, si tienen licencia y las dos nuevas propiedades que indican si su buzón está habilitado y si están habilitados para Skype Empresarial Online (**$x | Seleccione DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB**).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Introducción a PowerShell para Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 

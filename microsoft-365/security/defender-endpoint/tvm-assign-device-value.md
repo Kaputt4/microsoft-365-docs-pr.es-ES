@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 15ab851cfe59d92663fc484b5bb0364c25af4f30
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a1cc240c1c013468b482533ab00ef498543431fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166822"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193930"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Asignar valor de dispositivo: Administración de amenazas y vulnerabilidades
 

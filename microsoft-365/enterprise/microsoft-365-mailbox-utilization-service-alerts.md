@@ -7,7 +7,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Use alertas de servicio de uso de buzones para supervisar los buzones en espera que están alcanzando su cuota de buzón.
-ms.openlocfilehash: 32536cf8a034867ecb82e44487f34280a9b591ac
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: c131ef58cbad2e2f57c1e97de6c2da6b3b52a707
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011469"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177308"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alertas de servicio para el uso de buzones en la supervisión de Exchange Online
 

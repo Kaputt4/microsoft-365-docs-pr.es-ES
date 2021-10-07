@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 93f5d54869c01e9a261fd9b6be7c5e5263a28621
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 780cac298206127d52e14b3888a0a8d7f05ae0c5
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356233"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216975"
 ---
 # <a name="supported-microsoft-365-defender-event-types-in-event-streaming-api"></a>Tipos Microsoft 365 Defender eventos admitidos en la API de streaming de eventos
 
@@ -53,17 +53,11 @@ La API de streaming de eventos se expande constantemente para admitir más tipos
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | GA |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | GA |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | GA |
-| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | GA |
-| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | GA  |
-| **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | GA |
-| **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | GA |
-| **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | GA |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | GA |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Aún no compatible |
-| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** |Aún no compatible|
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Aún no compatible |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Aún no compatible |
 

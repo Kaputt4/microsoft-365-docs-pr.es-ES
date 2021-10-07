@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: bcarter
 author: brendacarter
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c36e0f9841d0b1e95d17734047a1ad9f35d3739c
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 09a1613b82cfd6d88aae76784d59f99d58c48a07
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042595"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181096"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>Habilitar el entorno de evaluación para Microsoft Cloud App Security
 
@@ -87,7 +87,7 @@ El panel de detección de nube está diseñado para ofrecerte más información 
 
 Para empezar a usar el panel de detección en la nube, consulta [Trabajar con aplicaciones detectadas.](/cloud-app-security/discovered-apps)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Paso 3 de 3: [Piloto Microsoft Cloud App Security](eval-defender-mcas-pilot.md)
 

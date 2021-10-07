@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: Obtenga información sobre la diferencia clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
-ms.openlocfilehash: e9f9c417d8603be0d933607ccf527c6d821bcc72
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: 7f79bc12c21162d294aaf15df0ef7d1434889faf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189747"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201738"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios 
 

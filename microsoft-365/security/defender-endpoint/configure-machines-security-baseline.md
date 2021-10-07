@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 907925669176135944f2327c39ac86ed823a9fd9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: db185e85d052b01761b4c3558dab8ec20df563f7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221673"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213885"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Aumentar el cumplimiento de la línea base de seguridad de Microsoft Defender para endpoints
 

@@ -9,7 +9,7 @@ ms.date: 05/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Comprenda cómo realizar la transición de archivos heredados a Cifrado de mensajes de Office 365 (OME) para su organización.
-ms.openlocfilehash: a8f165aa9fde70cfc448e999dbc7abc8818e8cd5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b21522b16a5bca6c5271149927b16dea5fd238e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188102"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201870"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -211,8 +211,8 @@ En el siguiente ejemplo se muestra un logotipo personalizado para ContosoPharma 
    |:-----|:-----|
    |Texto predeterminado que acompaña a los mensajes de correo electrónico cifrados  <br/> El texto predeterminado aparece encima de las instrucciones para ver mensajes cifrados  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
    |Declaración de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
-   |Texto que aparece en la parte superior del portal de visualización de correo cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Ejemplo de reversión al valor predeterminado:**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
-   |Logotipo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Ejemplo de reversión al valor predeterminado:**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
+   |Texto que aparece en la parte superior del portal de visualización de correo cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Ejemplo de reversión al valor predeterminado:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
+   |Logotipo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Ejemplo de reversión al valor predeterminado:** `Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
 
 ## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>Información de servicio para las Cifrado de mensajes de Office 365 anteriores al lanzamiento de las nuevas funcionalidades de OME
 <a name="LegacyServiceInfo"> </a>

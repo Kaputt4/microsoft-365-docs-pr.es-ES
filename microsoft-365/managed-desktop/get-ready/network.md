@@ -7,17 +7,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: cf9b1e1a485000bee7bf672690af5979767fb34b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1fcbdb702035913cf1a3317dd9b3619ef020ebab
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215570"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208150"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para el Escritorio administrado de Microsoft
 

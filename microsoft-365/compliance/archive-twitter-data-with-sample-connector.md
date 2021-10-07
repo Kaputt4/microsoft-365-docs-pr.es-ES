@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden configurar y usar un conector nativo para importar datos de Twitter a Microsoft 365.
-ms.openlocfilehash: 1b55a9af001e2ed2f67e7847fc7b70eee974bb88
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ff29ebf19f292a2d052c7172f31779ca48cae428
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188182"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201918"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Configurar un conector para archivar datos de Twitter (versión preliminar)
 

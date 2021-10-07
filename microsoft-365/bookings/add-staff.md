@@ -6,14 +6,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Use esta página para crear la lista de personal y administrar los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
-ms.openlocfilehash: 3b61c2f3e5597208ace2a87a7d203e8d724e4f5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea9025edd20289aa404471f6c1d245e7bf5c7d4e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212917"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202158"
 ---
 # <a name="add-staff-to-bookings"></a>Agregar personal a Bookings
 

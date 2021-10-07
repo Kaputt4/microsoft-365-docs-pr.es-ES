@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - M365-modern-desktop
-localization_priority: None
+ms.localizationpriority: ''
 description: Obtenga información sobre Learning Tools Interoperability (LTI) Office aplicaciones en M365 y cómo ayudarán a los formadores al integrar aplicaciones de Office en su sistema de administración de Learning (LMS).
-ms.openlocfilehash: 7aa85369151dcb1ce1628dbd8a969ac31e7caada
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bfe9bad68d1bf8a6839bfa2a0463a9c52102c862
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215607"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213978"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Integración de productos de Microsoft con su Learning management system (LMS)
 

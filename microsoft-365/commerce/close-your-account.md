@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Al cerrar su cuenta con Microsoft, se elimina toda la información relacionada con su cuenta, incluidas las licencias, los usuarios y los datos de usuario.
 ms.date: 04/02/2021
-ms.openlocfilehash: f46a35ca9a8b4ca0a68a3260f1a79bbf3717b552
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b19328ffaf785479b81d6253c602c8f80fca99ae
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190374"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202026"
 ---
 # <a name="close-your-account"></a>Cerrar la cuenta
 
@@ -36,7 +36,7 @@ Al cerrar la cuenta de Microsoft, se elimina toda la información relacionada co
 
 Antes de iniciar este proceso, asegúrese de realizar una copia de seguridad de los datos que desea conservar.
 
-Para poder realizar las tareas de este artículo, debe ser un administrador global o de facturación. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Para poder realizar las tareas de este artículo, debe ser un administrador global o de facturación. Para más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="step-1-delete-users"></a>Paso 1: Eliminar usuarios
 

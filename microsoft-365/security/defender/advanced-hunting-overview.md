@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: b59ff2a32ef5a067576c43b9b0a394590e30b666
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f2bee83b4529a37d5685f98c1b779f96cc71625f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214697"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208450"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Búsqueda proactiva de amenazas con búsqueda avanzada en Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "59214697"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de pruebas](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o bien [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
+> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas que te permite explorar hasta 30 días de datos sin procesar. Puede inspeccionar eventos de forma proactiva en su red para localizar entidades e indicadores de amenazas. El acceso flexible a los datos permite la búsqueda sin restricciones para amenazas conocidas y potenciales.

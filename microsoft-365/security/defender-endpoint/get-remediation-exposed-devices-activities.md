@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1ee64608e9ce6ce24dc40f1729303ef99b162cab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 393e0596531f8706c0cb0f5e620702d0ab7ef124
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190994"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194170"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Lista de dispositivos expuestos de una actividad de corrección
 
@@ -114,7 +114,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
 - [Obtener una actividad de corrección por id.](get-remediation-one-activity.md)

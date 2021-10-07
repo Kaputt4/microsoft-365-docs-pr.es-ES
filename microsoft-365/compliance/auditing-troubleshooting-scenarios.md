@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar la herramienta de Microsoft 365 de búsqueda de registro de auditoría para ayudar a solucionar problemas comunes de soporte técnico para cuentas de correo electrónico.
-ms.openlocfilehash: 4f90d618fd72c41a3c1d3d6ff1600f3d6d10bbfc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 026a0d86d1f8d4dd6dbe3d1f93eae167c817e5dc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166134"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201954"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría para investigar problemas de soporte técnico comunes
 

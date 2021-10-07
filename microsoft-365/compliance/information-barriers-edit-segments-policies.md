@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
-localization_priority: None
+ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 79f82ba1133af3c3cfe1d8c7b05b481528bcb003
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: e5a8eac15ebb76d9b3c2c95b3eff2cf3bd29772e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010110"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188186"
 ---
 # <a name="manage-information-barrier-policies"></a>Administrar directivas de barrera de información
 

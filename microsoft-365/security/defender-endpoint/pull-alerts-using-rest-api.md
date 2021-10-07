@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 29aa8008dc3674760e4e720f155d6df82068ab55
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2ca1f3d257e40fab340972b3b0d96ce0f7b9977b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402183"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194050"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Extraer Microsoft Defender para detecciones de puntos de conexión con la API de REST de SIEM
 
@@ -133,10 +133,10 @@ Nombre|Valor|Descripción
 sinceTimeUtc|DateTime|Define las alertas de límite de tiempo inferior de las que se recuperan, según el campo: <p> `LastProcessedTimeUtc` <p> El intervalo de tiempo será: de la hora sinceTimeUtc a la hora actual. <p> **NOTA:** Cuando no se especifica, se recuperan todas las alertas generadas en las últimas dos horas.
 untilTimeUtc|DateTime|Define las alertas enlazadas de tiempo superior que se recuperan. <p> El intervalo de tiempo será: de `sinceTimeUtc` vez en `untilTimeUtc` cuando. <p> **NOTA**: Cuando no se especifica, el valor predeterminado será la hora actual.
 ago|string|Extrae alertas en el siguiente intervalo de tiempo: `(current_time - ago)` de vez en `current_time` cuando. <p> El valor debe establecerse según **el formato de duración ISO 8601** <p> Ejemplo: `ago=PT10M` extraerá las alertas recibidas en los últimos 10 minutos.
-límite|Entero|Define el número de alertas que se recuperarán. Las alertas más recientes se recuperarán en función del número definido.<p> **NOTA**: Cuando no se especifique, se recuperarán todas las alertas disponibles en el intervalo de tiempo.
+límite|int|Define el número de alertas que se recuperarán. Las alertas más recientes se recuperarán en función del número definido.<p> **NOTA**: Cuando no se especifique, se recuperarán todas las alertas disponibles en el intervalo de tiempo.
 machinegroups|string|Especifica los grupos de dispositivos de los que extraer alertas. <p> **NOTA:** Cuando no se especifica, se recuperarán las alertas de todos los grupos de dispositivos. <p> Ejemplo: <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
 DeviceCreatedMachineTags|string|Etiqueta de dispositivo única del Registro.
-CloudCreatedMachineTags|cadena|Etiquetas de dispositivo que se crearon en Centro de seguridad de Microsoft Defender.
+CloudCreatedMachineTags|string|Etiquetas de dispositivo que se crearon en Centro de seguridad de Microsoft Defender.
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 

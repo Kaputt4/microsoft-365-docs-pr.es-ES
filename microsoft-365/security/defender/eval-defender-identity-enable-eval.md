@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6a89c0e9d9b8b66048ddd50ab967520987a152a9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 966ccb0437f47b35c376c5ad4926464610871c92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192537"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181132"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Habilitar el entorno de evaluación para Microsoft Defender for Identity
 
@@ -84,7 +84,7 @@ Para asegurarse de que Windows clientes y servidores permiten que la cuenta de D
 
 Para obtener instrucciones sobre cómo hacerlo, consulte [Configure Microsoft Defender for Identity to make remote calls to SAM](/defender-for-identity/install-step8-samr). 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Paso 3 de 3: [Piloto de Microsoft Defender para identidad](eval-defender-identity-pilot.md)
 

@@ -10,19 +10,19 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 09/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0809de7a30a624394103b8e6c3fb594e72c7cd77
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 4650bb23cd7b486ba608a47f99cdfa6cf5b05045
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043160"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213738"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurar Antivirus de Microsoft Defender exclusiones en Windows Server
 
@@ -42,7 +42,7 @@ En este artículo se incluyen las siguientes secciones:
 
 <br/><br/>
 
-|Sección|Descripción|
+|Section|Descripción|
 |---|---|
 |[Exclusiones automáticas en Windows Server 2016 o posterior](#automatic-exclusions-on-windows-server-2016-or-later)|Describe los dos tipos principales de exclusiones automáticas e incluye una lista detallada de exclusiones automáticas|
 |[No participar en exclusiones automáticas](#opting-out-of-automatic-exclusions)|Incluye consideraciones y procedimientos importantes que describen cómo excluirse de las exclusiones automáticas|
@@ -373,7 +373,7 @@ Si es necesario, puede agregar o quitar exclusiones personalizadas. Para ello, c
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)

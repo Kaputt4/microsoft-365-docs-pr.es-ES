@@ -11,13 +11,13 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
-ms.localizationpriority: normal
-ms.openlocfilehash: 99dd3a0782f44f0db1066ab33d3fe6ddd9a5def6
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.localizationpriority: medium
+ms.openlocfilehash: 23f74d8ddab72b08e2106c1b7d3de0a3264b4444
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402231"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194266"
 ---
 # <a name="overview"></a>Información general
 
@@ -82,7 +82,7 @@ Escritorio administrado de Microsoft un proceso de control de cambios tal como s
 ## <a name="compliance"></a>Cumplimiento
 Escritorio administrado de Microsoft se ha sometido a auditorías externas y ha obtenido un conjunto completo de ofertas de cumplimiento. Puede encontrar más información en Escritorio administrado de Microsoft [Compliance](/microsoft-365/managed-desktop/intro/compliance). Los informes de auditoría están disponibles para su descarga en Microsoft [Service Trust Portal,](https://aka.ms/stp)que sirve como repositorio central para Microsoft Enterprise Online Services. (Escritorio administrado de Microsoft se incluye en estos documentos en la categoría "Supervisión y administración").
 
-### <a name="data-subject-requests"></a>Solicitudes de los interesados
+### <a name="data-subject-requests"></a>Solicitudes de interesados
 Escritorio administrado de Microsoft las regulaciones de privacidad del RGPD y ccPA, que dan a los interesados derechos específicos sobre sus datos personales. Estos derechos incluyen la obtención de copias de datos personales, la solicitud de correcciones, la restricción del procesamiento de los mismos, la eliminación o la recepción en un formato electrónico para que se puedan mover a otro controlador. Para obtener más información sobre solicitudes de interesados (DSR) en general, vea Solicitudes del interesado y [el RGPD y CCPA](/compliance/regulatory/gdpr-data-subject-requests).
 
 Para ejercer las solicitudes del interesado en los datos recopilados por el Escritorio administrado de Microsoft de administración de casos, vea lo siguiente:

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3ea951e35555721a989001b2a5235df5b89a8a55
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f472b42a5ce967e67c4b4cbe3511e493ac86d42c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166739"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208474"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -43,10 +43,10 @@ Usa la función de las consultas de búsqueda avanzadas para obtener rápidament
 
 Esta función devuelve una tabla con las siguientes columnas:
 
-| Columna | Tipo de datos | Descripción |
+| Column | Tipo de datos | Descripción |
 |------------|-------------|-------------|
 | `IP` | string | Dirección IP  |
-| `DeviceId` | cadena | Identificador único del dispositivo en el servicio |
+| `DeviceId` | string | Identificador único del dispositivo en el servicio |
 
 
 ## <a name="syntax"></a>Sintaxis

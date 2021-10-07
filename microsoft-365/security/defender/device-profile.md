@@ -4,7 +4,7 @@ description: Ver los niveles de riesgo y exposición de un dispositivo de la org
 keywords: seguridad, malware, Microsoft 365, M365, Microsoft 365 Defender, centro de seguridad, Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para la identidad, página del dispositivo, perfil de dispositivo, página de máquina, perfil de máquina
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: v-maave
 author: martyav
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: f33b16cb08f7573a579f46327f126071ed726e42
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9838d7f3ffed46c62891822c6e3761e36d49baf5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192554"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181216"
 ---
 # <a name="device-profile-page"></a>Página de perfil de dispositivo
 

@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Información general sobre el proceso de planeación para la prevención de pérdida de datos
-ms.openlocfilehash: 130675ad15a872ed14041289fb24aeec471014ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 144f07a75bc7ab2ae5cd06b04328f91f06c9a91f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192957"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201906"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planear la prevención de pérdida de datos (DLP)
 

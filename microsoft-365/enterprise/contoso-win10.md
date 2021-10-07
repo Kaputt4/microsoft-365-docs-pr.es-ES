@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usó Configuration Manager de Microsoft Endpoint para implementar las actualizaciones locales de Windows 10 Enterprise.
-ms.openlocfilehash: 9315e57fb08f0adda39f1a08107d8d96e1c2bc24
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7fe6efd176e156b75337ba79db6c1db839b0ed03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218627"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208318"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Implementación de Windows 10 Enterprise para Contoso
 
@@ -84,7 +84,7 @@ Esta infraestructura consta de:
 
 Obtenga información sobre cómo Contoso está aprovechando su infraestructura de Configuration Manager para [implementar y](contoso-o365pp.md) mantener las actualizaciones Aplicaciones Microsoft 365 para empresas toda la organización. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Windows 10 Enterprise](/windows/deployment/)
 

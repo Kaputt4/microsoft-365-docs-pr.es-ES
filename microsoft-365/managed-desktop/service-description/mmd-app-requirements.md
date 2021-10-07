@@ -5,16 +5,16 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documen
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 322a46ce48cce4d080e51f482178462934d5c8f2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a7db8f26d3f7201087a7e4390b56637af37dc08
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215300"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208126"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Escritorio administrado de Microsoft de aplicaciones
 
@@ -31,7 +31,7 @@ Escritorio administrado de Microsoft que administremos dispositivos con un enfoq
 |Administración de aplicaciones     | Microsoft Intune y Portal de empresa        |
 |Implementación de controladores     |  Controladores incluidos con el dispositivo, Windows Update o Intune       |
 |Seguridad de dispositivos     | Consulta [Seguridad de dispositivos](security.md#device-security)      |
-|Administración de acceso e identidad       | Consulte [Administración de identidades y acceso](security.md#identity-and-access-management)        |
+|Administración de identidad y acceso     | Consulte [Administración de identidades y acceso](security.md#identity-and-access-management)        |
 |Seguridad de red     | Consulte [Seguridad de red](security.md#network-security)        |
 |Seguridad de la información     |  Vea [Seguridad de la información](security.md#information-security)       |
 |Recuperación de datos     | OneDrive para la Empresa        |

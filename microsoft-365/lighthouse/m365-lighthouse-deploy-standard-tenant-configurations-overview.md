@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo usar líneas base para implementar configuraciones de inquilino estándar.
-ms.openlocfilehash: 5dc1f7da329ab1630d857ee337048a47ad06c9e9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 793a8f61634660487dc9256d23f0f7d83ff68983
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191137"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177044"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Introducción al uso de líneas base para implementar configuraciones de inquilino estándar 
 

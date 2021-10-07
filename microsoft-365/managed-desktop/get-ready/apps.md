@@ -4,18 +4,18 @@ description: Explica cómo se administran las aplicaciones, incluido cómo empaq
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c8a501c178ae0cffb98870d4fccd44028cbf6ec0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e3ac937a4ff98d853ad16ef4ae5854da70fa4d99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165779"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213966"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Aplicaciones en Escritorio administrado de Microsoft
 

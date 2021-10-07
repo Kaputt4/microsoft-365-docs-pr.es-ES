@@ -4,17 +4,17 @@ description: Cómo Escritorio administrado de Microsoft configurar OneDrive disp
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de línea de negocio, aplicaciones de LOB
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 892dbcccfc8f224f80a538f9736405cb012b69ca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a599f36692cbca6cbf67ddfd4a6ca1c05e02351f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212387"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214038"
 ---
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 

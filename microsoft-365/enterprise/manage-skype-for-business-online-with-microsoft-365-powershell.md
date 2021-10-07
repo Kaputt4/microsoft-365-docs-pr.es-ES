@@ -7,19 +7,19 @@ ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: Use PowerShell para Microsoft 365 para administrar las directivas de Skype Empresarial Online, directivas por usuario y opciones de reunión.
-ms.openlocfilehash: 591047f742fb0abc9dfdc3d8f16c8ca9abc2a177
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 40fc030c957fee2d31c18ea95f1939e3d9f0937b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185990"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201678"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Administrar Skype Empresarial Online con PowerShell
 

@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkTEAMS
 recommendations: false
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
-ms.openlocfilehash: a21aa9bf3aeb5d5f5cb2efbc90589cafe2a11be1
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: ac16f3a1fd70cca22d0cc44e326d173b30cff77f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479746"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208366"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 

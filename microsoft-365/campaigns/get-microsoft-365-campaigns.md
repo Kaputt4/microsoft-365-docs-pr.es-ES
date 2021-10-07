@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenga Microsoft 365 campañas para que pueda proteger su campaña de amenazas de ciberseguridad al correo electrónico, los datos y las comunicaciones.
-ms.openlocfilehash: 3d70fef721417dd823dc272bbb7b08c04c037f98
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e89be7c15cd00279a0b78323f992c1d3e2195f89
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188737"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202086"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Obtener Microsoft 365 para campañas
 

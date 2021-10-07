@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: 29a369c2813cfe3c9c17b6b11f765d4d6162f8bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ce8f931f0d400c967b3312fe6cfafcadb3a715c7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189314"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181240"
 ---
 # <a name="configure-your-event-hub"></a>Configurar el centro de eventos
 
@@ -38,7 +38,7 @@ Obtén información sobre cómo configurar el Centro de eventos para que pueda i
 
 ## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>Configurar el proveedor de recursos necesario en la suscripción al Centro de eventos
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+1. Inicie sesión en el [Azure Portal](https://portal.azure.com).
 1. Select **Subscriptions** \> { Select the subscription the event hub will be ***deployed to***} \> **Resource providers**.
 1. Compruebe que el **proveedor de microsoft.Ideas** está registrado. De lo contrario, regístrelo.
 

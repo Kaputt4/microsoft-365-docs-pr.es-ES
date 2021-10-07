@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 149c75e827eaea3c5fb77a78e22b878b2f7fa0ed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4ad79119083332909cb3422eb83aa91dd79c9d8a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214050"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193810"
 ---
 # <a name="contact-support-for-bermuda"></a>Póngase en contacto con el soporte técnico para Bermudas
 

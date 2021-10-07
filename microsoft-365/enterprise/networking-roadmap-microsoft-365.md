@@ -9,18 +9,18 @@ ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Guía básica para implementar Microsoft 365 red.
-ms.openlocfilehash: 3fb9c99bd0381730a41bd65012efe5488b85509d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 192cdec7b789cc4159265fa3f411c55913c388b9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185937"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177056"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>Guía básica de redes para Microsoft 365
 
@@ -50,7 +50,7 @@ En la fase de implementación de la implementación de red:
 - [Optimizar la conectividad de los trabajadores remotos](microsoft-365-vpn-split-tunnel.md)
 - Si es necesario, [configure ExpressRoute](azure-expressroute.md)
 
-## <a name="manage"></a>Administrar
+## <a name="manage"></a>Manage
 
 En la fase de administración de la implementación de redes:
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae7dac229aba0d5c4cbfc32782fe1a4ad5613c8f
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 193bfb6b535ebafa0056c416a55a4c32af53bf84
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043292"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202636"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -45,13 +45,13 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `DeviceId` | string | Identificador único del dispositivo en el servicio |
-| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo |
+| `DeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo |
 | `OSPlatform` | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7.|
 | `Timestamp` | datetime | Fecha y hora en que se generó el registro |
 | `ConfigurationId` | cadena | Identificador único para una configuración específica |
-| `ConfigurationCategory` | cadena | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad |
-| `ConfigurationSubcategory` | cadena | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
-| `ConfigurationImpact` | cadena | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
+| `ConfigurationCategory` | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad |
+| `ConfigurationSubcategory` | string | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
+| `ConfigurationImpact` | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
 | `IsCompliant` | booleano | Indica si la configuración o la directiva está configurada correctamente |
 | `IsApplicable` | boolean | Indica si la configuración o directiva se aplica al dispositivo |
 | `Context` | string | Información contextual adicional sobre la configuración o la directiva |

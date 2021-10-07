@@ -7,18 +7,18 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre los conocimientos e informes que están disponibles en el panel flujo de correo en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 060cbc7a55257a0fbb1510fd8b2f5d325a396a86
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 81313744f8c5f14abed59b77182f64e410f9d588
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988948"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180882"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 

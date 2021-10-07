@@ -4,16 +4,16 @@ description: En este artículo se enumeran las especificaciones de dispositivo u
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: df9bf273edd85fea08cd11838093a1287b0fff97
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5946a131424dd0bea70004c272a66c4e86cc4b1d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215370"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213906"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Escritorio administrado de Microsoft ciclo de vida del producto
 

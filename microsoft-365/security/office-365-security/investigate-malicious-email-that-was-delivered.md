@@ -9,7 +9,7 @@ manager: dansimp
 ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo usar las capacidades de investigac
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fef669f8e961ab60c222fad59811f78d55baabb
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: b3a427b90af637a59a35f18cba9138759b81f6d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484040"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180906"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Investigar el correo electrónico malintencionado que se entregó en Microsoft 365
 

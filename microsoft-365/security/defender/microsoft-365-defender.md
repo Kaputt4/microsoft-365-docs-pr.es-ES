@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b2b5ef1857c246629c5d5fb9da067ccaa6a5339e
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 9061299034371f8ff2175f3c8a04d50068c43811
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482828"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181144"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "59482828"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de pruebas](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o bien [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
+> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Microsoft 365 Defender es un conjunto de aplicaciones unificado de defensa empresarial previa y posterior a la vulneración que coordina de forma nativa la detección, prevención, investigación y respuesta entre extremos, identidades, correo electrónico y aplicaciones para proporcionar protección integrada contra ataques sofisticados.
@@ -99,7 +99,7 @@ Microsoft 365 Defender características entre productos incluyen:
 
 ## <a name="get-started"></a>Introducción
 
-Microsoft 365 Defender requisitos de licencia deben cumplirse para poder habilitar el servicio en el portal de Microsoft 365 Defender en [security.microsoft.com](https://security.microsoft.com). Para obtener más información, vea:
+Microsoft 365 Defender requisitos de licencia deben cumplirse para poder habilitar el servicio en el portal de Microsoft 365 Defender en [security.microsoft.com](https://security.microsoft.com). Para más información vea:
 
 - [Requisitos de licencia](prerequisites.md#licensing-requirements)
 - [Activar Microsoft 365 Defender](m365d-enable.md)
@@ -116,5 +116,5 @@ Con esta ruta de aprendizaje de Microsoft Learn, puede comprender Microsoft 365 
 > [Iniciar >](/learn/paths/defender-detect-respond/)
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Implementar la protección contra ransomware para el inquilino de Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)

@@ -11,7 +11,7 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 06/08/2021
-  localization_priority: Priority
+  ms.localizationpriority: high
 highlightedContent:
   items:
     - title: Configure su infraestructura para el trabajo híbrido

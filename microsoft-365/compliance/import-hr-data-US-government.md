@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores de la nube del gobierno de Estados Unidos pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: a8edc80d9663165608a23d3d3e03fbd6c57933f8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: bd253ca06b365aab99822aa6245f80e43119a8d9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574212"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188210"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurar un conector para importar datos de recursos humanos en US Government
 
@@ -60,7 +60,7 @@ La primera fila, o fila de encabezado, del archivo CSV enumera los nombres de co
 
 En la tabla siguiente se describe cada columna del archivo CSV:
 
-| Nombre de columna | Description |
+| Nombre de columna | Descripción |
 |:-----|:-----|
 | **EmailAddress** <br/> |Especifica la dirección de correo electrónico del empleado terminado.|
 | **TerminationDate** <br/> |Especifica la fecha en que el empleo de la persona terminó oficialmente en su organización. Por ejemplo, esta puede ser la fecha en la que el empleado dio su aviso sobre la salida de la organización. Esta fecha puede ser diferente de la fecha del último día de trabajo de la persona. Use el siguiente formato de fecha: , que es el formato de fecha y hora `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|

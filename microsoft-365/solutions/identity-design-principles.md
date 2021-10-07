@@ -7,19 +7,19 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 6d0599d11dd5892b032bda1285b92fbc8a09354b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8dd5b5f94a8c418cc8d077d785c73c968c40c3bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214170"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202374"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Para identidad y más allá: un punto de vista de un arquitecto
 

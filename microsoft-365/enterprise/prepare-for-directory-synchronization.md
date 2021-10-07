@@ -7,7 +7,7 @@ ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo prepararse para aprovisionar usuarios para Microsoft 365 mediante la sincronización de directorios y las ventajas a largo plazo de usar este método.
-ms.openlocfilehash: 389f0ca682538baed21432220c16ad7cb269daa0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4bd244edfa11df315f83e78c97ec7fe63b5c2d9d
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220749"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216891"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepararse para la sincronización de directorios de Microsoft 365
 
@@ -48,6 +48,9 @@ Para obtener más información acerca de las ventajas de usar la sincronización
 Sin embargo, la sincronización de directorios requiere planeación y preparación para garantizar que los Servicios de dominio de Active Directory (AD DS) se sincronicen con el inquilino de Azure AD de su suscripción Microsoft 365 con un mínimo de errores.
 
 Siga estos pasos para obtener los mejores resultados.
+
+> [!NOTE]
+> Los caracteres que no son ASCII no se sincronizan para ningún atributo en la cuenta de usuario de AD DS.
 
 ## <a name="1-directory-cleanup-tasks"></a>1. Tareas de limpieza de directorios
 
@@ -188,6 +191,6 @@ Si ya ha configurado la sincronización de directorios, es posible que el UPN de
 
 Vea también [How to prepare a non-routable domain (such as .local domain) for directory synchronization](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si ha realizado los pasos 1 a 5 anteriores, vea [Configurar la sincronización de directorios](set-up-directory-synchronization.md).

@@ -11,19 +11,19 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ce17ef1f76b7311dc9e0c10bcde1554954b6639d
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: bdc91a8e2f503efaed574d861adfbe7e94d7c852
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043028"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216963"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -363,7 +363,7 @@ Los filtros de cumplimiento de comunicaciones permiten filtrar y ordenar mensaje
 
 |**Filter**|**Detalles**|
 |:-----|:-----|
-| **Fecha** | La fecha en que un usuario de la organización envió o recibió el mensaje. Para filtrar por un solo día, seleccione un intervalo de fechas que comience con el día para el que desea obtener los resultados y termine con el día siguiente. Por ejemplo, si desea filtrar los resultados del 20/9/2020, elegiría un intervalo de fechas de filtro del 20/09/2020-9/21/2020.|
+| **Date** | La fecha en que un usuario de la organización envió o recibió el mensaje. Para filtrar por un solo día, seleccione un intervalo de fechas que comience con el día para el que desea obtener los resultados y termine con el día siguiente. Por ejemplo, si desea filtrar los resultados del 20/9/2020, elegiría un intervalo de fechas de filtro del 20/09/2020-9/21/2020.|
 | **Clase File** | Clase del mensaje basada en el tipo de mensaje, ya sea *mensaje o* *datos adjuntos.* |
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
 | **Clase Item** | El origen del mensaje según el tipo de mensaje, el correo electrónico, el chat de Microsoft Team, Bloomberg, etc. Para obtener más información sobre tipos de elementos y clases de mensaje comunes, vea [Tipos de elementos y clases de mensaje](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
@@ -559,7 +559,7 @@ El **panel informes contiene** los siguientes widgets de informe y vínculos de 
 En algunos casos, debe proporcionar información a auditores normativos o de cumplimiento para demostrar la supervisión de las actividades y comunicaciones de los usuarios. Esta información puede ser un resumen de todas las actividades asociadas con una directiva organizativa definida o en cualquier momento en que cambie una directiva de cumplimiento de comunicación. Las directivas de cumplimiento de comunicaciones tienen seguimientos de auditoría integrados para una preparación completa para auditorías internas o externas. Las directivas de comunicación capturan historiales de auditoría detallados de cada acción de creación, edición y eliminación para proporcionar una prueba de los procedimientos de supervisión.
 
 > [!IMPORTANT]
-> La auditoría debe estar habilitada para su organización antes de que se grabe el cumplimiento de la comunicación. Para habilitar la auditoría, vea [Habilitar el registro de auditoría](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Cuando las actividades desencadenan eventos que se capturan en el registro de auditoría de Microsoft 365, pueden tardar hasta 48 horas antes de que estos eventos se puedan ver en las directivas de cumplimiento de comunicaciones.
+> La auditoría debe estar habilitada para su organización antes de que se grabe el cumplimiento de la comunicación. Para habilitar la auditoría, vea [Habilitar el registro de auditoría](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Cuando las actividades desencadenan eventos que se capturan en el registro de auditoría de Microsoft 365, pueden tardar hasta 48 horas antes de que estos eventos se puedan ver en las directivas de cumplimiento de comunicación.
 
 Para ver las actividades de actualización de directivas de cumplimiento de comunicaciones, seleccione el control Exportar actualizaciones **de directivas** en la página principal de cualquier directiva. Debe tener asignados los roles *Administrador global* o Administrador de cumplimiento *de* comunicaciones para exportar actividades de actualización. Esta acción genera un archivo de auditoría en el .csv que contiene la siguiente información:
 

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo ver detalles, editar y editar en masa la lista de custodios en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e542a76e55e0ed9d75a1756026ff9a4f8c1d59ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e5616b74fd8fb3a5667244d3fa5c97b5a4fbd57f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188070"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201846"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Administrar custodios en un Advanced eDiscovery caso
 
@@ -113,7 +113,7 @@ Para desencadenar el proceso de re indexación para que se alome a elementos par
 
 Volver a indizar los datos de custodia es un proceso de larga ejecución; el trabajo correspondiente que se crea se denomina **Re-indexing custodian data**. Puede realizar un seguimiento del progreso en **la** pestaña Trabajos o en la pestaña **Custodios** supervisando el estado en la columna Estado del trabajo **de indización.**
 
-Para más información, vea:
+Para más información vea:
 
 - [Trabajar con errores de proceso](processing-data-for-case.md)
 

@@ -4,18 +4,18 @@ description: Explica las dos herramientas, las comprobaciones que ejecutan y el 
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: cc06faa8a5a18f8f63a984e6ce3f7b6bfb6cbc4b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c584632a625ecb8597aa0c9319063e6f9198bec3
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215517"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216939"
 ---
 # <a name="readiness-assessment-tools"></a>Herramientas de evaluación de preparación
 
@@ -30,7 +30,10 @@ Para obtener más información sobre cómo usar el control de evaluación de pre
 La [herramienta en](https://aka.ms/mmdart) línea comprueba la configuración de Microsoft Endpoint Manager (específicamente, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para asegurarse de que funcionarán con Escritorio administrado de Microsoft. Escritorio administrado de Microsoft conserva los datos asociados con estas comprobaciones durante 12 meses después de la última vez que ejecute una comprobación en su organización de Azure AD (inquilino). Después de 12 meses, lo conservamos en forma no identificada. Puede elegir eliminar los datos que recopilamos.
 
 Cualquiera que tenga al menos el rol Lector global o Administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones[(las](readiness-assessment-fix.md#conditional-access-policies) directivas de acceso condicional y la autenticación [multifactor](readiness-assessment-fix.md#multifactor-authentication) requieren permisos adicionales).
- 
+
+> [!IMPORTANT]  
+> La herramienta de evaluación de preparación en línea le ayuda a comprobar su preparación para inscribirse en Escritorio administrado de Microsoft por primera vez. Si su organización ya está registrada en Escritorio administrado de Microsoft, no use esta herramienta.
+
 La herramienta de evaluación comprueba estos elementos:
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune configuración
@@ -43,7 +46,7 @@ La herramienta de evaluación comprueba estos elementos:
 |Directivas de cumplimiento de dispositivos     | Comprueba que las directivas de cumplimiento de Intune  no están asignadas a todos los usuarios (las directivas no deben asignarse a Escritorio administrado de Microsoft dispositivos).    |
 |Perfiles de configuración de dispositivos     | Confirma que los perfiles de configuración no están asignados  a todos los usuarios ni a todos los dispositivos (los perfiles de configuración no deben asignarse a Escritorio administrado de Microsoft dispositivos).     |
 |Restricciones de tipo de dispositivo     | Comprueba que Windows 10 dispositivos de la organización pueden inscribirse en Intune        |
-|Página estado de inscripción     | Confirma que la página de estado de inscripción no está habilitada      |
+|Página de estado de inscripción     | Confirma que la página de estado de inscripción no está habilitada      |
 |Inscripción en Intune     | Comprueba que los Windows 10 de la organización de Azure AD se inscribieron automáticamente en Intune         |
 |Microsoft Store para Empresas     | Confirma que Microsoft Store para Empresas está habilitado y sincronizado con Intune        |
 |Autenticación multifactor | Comprueba que la autenticación multifactor no se aplica a Escritorio administrado de Microsoft cuentas de servicio.
@@ -57,7 +60,7 @@ La herramienta de evaluación comprueba estos elementos:
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory configuración
 
-|Cheque  |Description  |
+|Cheque  |Descripción  |
 |---------|---------|
 |Suscripciones "ad hoc" para Enterprise itinerancia de estado     | Aconseja comprobar una configuración que (si se establece en "false") podría impedir que Enterprise estado móvil funcione correctamente  |
 |Enterprise State Roaming     | Aconseja cómo comprobar si Enterprise itinerancia de estado está habilitada       |

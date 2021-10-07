@@ -10,15 +10,15 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
 description: Obtenga información sobre cómo usar el parámetro Region para configurar la exhibición de documentos electrónicos para su uso en ubicaciones satélite en Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 4d3481fe8b72bb970893ce065293a7a2cc717331
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1bdf03a7c639e659d1b4ec12c691c65863318ad7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210677"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177272"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configuración de eDiscovery de Microsoft 365 Multi-Geo
 

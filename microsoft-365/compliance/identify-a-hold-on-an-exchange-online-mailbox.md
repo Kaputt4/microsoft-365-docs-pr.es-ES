@@ -10,19 +10,19 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo identificar los diferentes tipos de retención que se pueden colocar en un buzón Exchange Online en Microsoft 365.
-ms.openlocfilehash: 1b7c8d2db782ca811e02783115b621ccba772066
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8696ab52fdb0826dddd9f1a186f56f853b6fae3d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189784"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201858"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 

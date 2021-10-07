@@ -8,18 +8,18 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 description: El módulo relevancia en Advanced eDiscovery se retirará el 10 de marzo de 2021. En este artículo se explica qué hacer antes de retirar relevancia. En concreto, para finalizar cualquier modelo sin terminar, ejecute el cálculo por lotes para que pueda conservar los metadatos del modelo.
-ms.openlocfilehash: 1005c7a1c065adba039f6f07197dbca758d20ea4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ed8e65f7dcf17c49d1a3f8b9af920272bd1692b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565409"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177356"
 ---
 # <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>Retiro del módulo Relevancia en Advanced eDiscovery
 

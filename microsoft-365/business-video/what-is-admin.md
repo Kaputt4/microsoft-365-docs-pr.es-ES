@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los roles de administrador en Microsoft 365 para empresas.
-ms.openlocfilehash: 47fe5628bb8464053111078891fc1038fcdd8fa6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d63a8728ef3f4989d2753238d749371abff587ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188758"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193582"
 ---
 # <a name="what-is-a-microsoft-365-admin"></a>¿Qué es un Microsoft 365 administrador?
 

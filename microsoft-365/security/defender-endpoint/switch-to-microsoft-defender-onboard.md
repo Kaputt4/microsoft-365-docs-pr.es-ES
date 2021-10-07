@@ -2,8 +2,6 @@
 title: Cambiar a Microsoft Defender para endpoint - Onboard
 description: Realice el cambio a Microsoft Defender para endpoint. Incorpore dispositivos y, a continuación, desinstale la solución que no es de Microsoft.
 keywords: migración, Microsoft Defender para Endpoint, edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,14 +19,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 09/23/2021
+ms.date: 10/06/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: faf18134d125932c4da9e041c6bf80ccc3881761
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 47a698d2e0832ed477808be379a6ad99b932b702
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042847"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217095"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para endpoint - Fase 3: Incorporación
 
@@ -88,7 +86,7 @@ Para comprobar que los dispositivos incorporados están correctamente conectados
 |---|---|
 |Windows 10 <p> Windows Server 2019 <p> <p> Windows Server 2022 <p>Windows Servidor, versión 1803 o posterior <p> Windows Server 2016 <p> Windows Server 2012 R2|Consulte [Ejecutar una prueba de detección.](run-detection-test.md) <p> Visite el sitio de escenarios de demostración de Defender for Endpoint ( ) y <https://demo.wd.microsoft.com> pruebe uno o varios de los escenarios. Por ejemplo, pruebe el escenario **de demostración de** protección entregado en la nube.|
 |macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|Descargue y use la aplicación DE BRICOLAJE en <https://aka.ms/mdatpmacosdiy> . <p> Para obtener más información, [vea Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
-|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS o LTS superior; SLES 12+; Debian 9+; Oracle Linux 7.2|<ol><li>Ejecute el siguiente comando y busque un resultado de **1**: `mdatp health --field real_time_protection_enabled` .</li><li>Abra una ventana de Terminal y ejecute el siguiente comando: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` .</li><li>Ejecute el siguiente comando para enumerar las amenazas detectadas: `mdatp threat list` .</li></ol> <p> Para obtener más información, [vea Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
+|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS o LTS superior; SLES 12+; Debian 9+; Oracle Linux 7.2|1. Ejecute el siguiente comando y busque un resultado de **1**: `mdatp health --field real_time_protection_enabled` .<br/><br/>2. Abra una ventana terminal y ejecute el siguiente comando: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` .<br/><br/>3. Ejecute el siguiente comando para enumerar las amenazas detectadas: `mdatp threat list` .<br/><br/>Para obtener más información, [vea Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
 
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Confirme que Antivirus de Microsoft Defender está en modo pasivo en los puntos de conexión
@@ -101,7 +99,7 @@ Ahora que los puntos de conexión se han incorporado a Defender for Endpoint, el
 |---|---|
 |Símbolo del sistema|1. En un dispositivo Windows, abra el símbolo del sistema.<br/><br/>2. Escriba `sc query windefend` y, a continuación, presione ENTRAR.<br/><br/>3. Revise los resultados para confirmar que Antivirus de Microsoft Defender se está ejecutando en modo pasivo.|
 |PowerShell|1. En un dispositivo Windows, abra Windows PowerShell como administrador.<br/><br/>2. Ejecute el siguiente cmdlet de PowerShell: `Get-MpComputerStatus|select AMRunningMode` . <br/><br/>3. Revise los resultados. Debería ver **el modo pasivo**.|
-|Seguridad de Windows app|1. En un Windows, abra la aplicación Seguridad de Windows usuario.<br/><br/>2. Seleccione **Virus & protección contra amenazas**.<br/><br/>3. **¿Quién está protegiendo?** seleccione **Administrar proveedores**. En la **página Proveedores de** seguridad, en **Antivirus,** debería ver Antivirus de Microsoft Defender **está activado**.|
+|Seguridad de Windows app|1. En un Windows, abra la aplicación Seguridad de Windows usuario.<br/><br/>2. Seleccione **Virus & protección contra amenazas**.<br/><br/>3. **¿Quién está protegiendo?** seleccione **Administrar proveedores**.<br/><br/>4. En la página **Proveedores de** seguridad, en **Antivirus,** busque Antivirus de Microsoft Defender **está activado**.|
 |Administrador de tareas|1. En un dispositivo Windows, abra la aplicación Administrador de tareas.<br/><br/>2. Seleccione la **pestaña** Detalles. Busque **MsMpEng.exe** en la lista.|
 
 > [!NOTE]
@@ -161,7 +159,7 @@ Ahora que has incorporado a Defender for Endpoint y has desinstalado la solució
 - Aplicaciones potencialmente no deseadas (PUA)
 - Protección de red (NP)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 **¡Enhorabuena!** Ha completado la migración [a Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
 

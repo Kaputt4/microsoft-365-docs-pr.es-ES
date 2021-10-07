@@ -1,7 +1,7 @@
 ---
 title: Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
 description: Pruebe las capacidades de respuesta a incidentes en Microsoft 365 Defender priorizar y administrar incidentes, automatizar investigaciones y usar la búsqueda avanzada en la detección de amenazas.
-keywords: Microsoft 365 Defender prueba, pruebe Microsoft 365 Defender, evalúe Microsoft 365 Defender, laboratorio de evaluación de Microsoft 365 Defender Microsoft 365 Defender, piloto, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación y corrección automatizadas, búsqueda avanzada
+keywords: Microsoft 365 Defender prueba, pruebe Microsoft 365 Defender, evalúe Microsoft 365 Defender, Microsoft 365 Defender de evaluación, Microsoft 365 Defender piloto, ciber seguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, dispositivo, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 57106e33f244ad1e549fcfd7f361c82863f9e3a9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a075b653e3eeae9287f4fdbf83ed9e5e2133df99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211910"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208462"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
 

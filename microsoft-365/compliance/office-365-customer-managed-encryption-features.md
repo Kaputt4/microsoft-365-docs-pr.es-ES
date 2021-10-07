@@ -8,19 +8,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: En este artículo, aprenderá sobre las tecnologías de cifrado que puede administrar y configurar en Microsoft 365.
-ms.openlocfilehash: 6a693c512100c59eef47414fdd6eab4a2924e835
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 80a0726e112324a673fc964a9fabdbc3ba0ac42e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216710"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201810"
 ---
 # <a name="customer-managed-encryption-features"></a>Características de cifrado administradas por el cliente
 

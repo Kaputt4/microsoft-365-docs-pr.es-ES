@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54e060f1cc98f62ca048ce8d561247c47f189f24
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 069e74b8ad0aef33caab411b92c24c4d0b72f022
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218390"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194158"
 ---
 # <a name="investigation-resource-type"></a>Tipo de recurso Investigación
 
@@ -45,7 +45,7 @@ Vea [Overview of automated investigations](automated-investigations.md) para obt
 
 ## <a name="methods"></a>Métodos
 
-Método|Tipo de valor devuelto|Description
+Método|Tipo de valor devuelto|Descripción
 :---|:---|:---
 [Enumerar investigaciones](get-investigation-collection.md)|Colección Investigation|Obtener colección de investigación
 [Obtener una sola investigación](get-investigation-object.md)|Entidad de investigación|Obtiene una sola entidad Investigation.

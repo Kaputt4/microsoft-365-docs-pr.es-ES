@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido de usuario que un administrador de exhibición de documentos electrónicos puede buscar en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f907e34bb7d266ead2441535856713dd0cbc5e49
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29596375263d52eb6156ddfa32330f08957ccd15
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216407"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216879"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de exhibición de documentos electrónicos
 
@@ -107,6 +107,9 @@ Con el escenario de límites de cumplimiento de Contoso, se deben crear cuatro g
 - Investigadores de Coho Winery
   
 Para cumplir los requisitos del escenario de límites  de cumplimiento de Contoso, también quitaría los **roles** de retención y exportación de los grupos de roles de investigadores para impedir que los investigadores coloquen retenciones en ubicaciones de contenido y exporten contenido de un caso.
+
+> [!IMPORTANT]
+> Si se agrega o quita un rol de un grupo de roles que ha agregado como miembro de un caso, el grupo de roles se quitará automáticamente como miembro del caso (o en cualquier caso el grupo de roles es miembro de). El motivo es proteger la organización de proporcionar permisos adicionales a los miembros de un caso de forma involuntaria. Del mismo modo, si se elimina un grupo de roles, se quitará de todos los casos de los que era miembro.
 
 ## <a name="step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Paso 3: Crear un filtro de permisos de búsqueda para aplicar el límite de cumplimiento
 
@@ -247,7 +250,7 @@ Tenga en cuenta lo siguiente al buscar y exportar contenido en entornos multige�
 
 - Al buscar contenido en SharePoint y OneDrive, el parámetro *Region* dirige las búsquedas a la ubicación principal o satélite donde el administrador de exhibición de documentos electrónicos llevará a cabo investigaciones de exhibición de documentos electrónicos. Si un administrador de exhibición de documentos electrónicos busca SharePoint y OneDrive fuera de la región especificada en el filtro de permisos de búsqueda, no se devuelven resultados de búsqueda.
 
-- Al exportar resultados de búsqueda desde eDiscovery principal, el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype Empresarial, SharePoint, OneDrive y otros servicios que se pueden buscar mediante la herramienta búsqueda de contenido) se cargan en la ubicación de Azure Storage del centro de datos especificada por el *parámetro Region.* Esto ayuda a las organizaciones a mantenerse dentro del cumplimiento al no permitir que el contenido se exporte a través de bordes controlados. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en el centro de datos principal de la organización.
+- Al exportar resultados de búsqueda desde eDiscovery principal, el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype Empresarial, SharePoint, OneDrive y otros servicios que se pueden buscar mediante la herramienta búsqueda de contenido) se cargan en la ubicación de Azure Storage en el centro de datos que es especificado por el *parámetro Region.* Esto ayuda a las organizaciones a mantenerse dentro del cumplimiento al no permitir que el contenido se exporte a través de bordes controlados. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en el centro de datos principal de la organización.
 
   Al exportar contenido desde Advanced eDiscovery, no se puede controlar dónde se carga el contenido mediante el *parámetro Region.* El contenido se carga en una Azure Storage en un centro de datos de la ubicación central de la organización. Para obtener una lista de ubicaciones geográficas basadas en la ubicación central, vea Microsoft 365 configuración de exhibición de documentos [electrónicos multigeós.](../enterprise/multi-geo-ediscovery-configuration.md)
 
@@ -297,7 +300,7 @@ Tenga en cuenta las siguientes limitaciones al administrar casos e investigacion
 
 - No se recomienda usar filtros de exclusión (como usar en un filtro de permisos de búsqueda) para un límite de cumplimiento `-not()` basado en contenido. El uso de un filtro de exclusión puede tener resultados inesperados si no se ha indizado el contenido con atributos actualizados recientemente.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **Quién puede crear y administrar filtros de permisos de búsqueda (con New-ComplianceSecurityFilter y Set-ComplianceSecurityFilter cmdlets)?**
   

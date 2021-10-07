@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e207978dbb65863764c66c5afc5c467552100461
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89ff7984e009f022984f4004a0195176c68a9bad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220317"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194026"
 ---
 # <a name="advanced-hunting-using-powershell"></a>Búsqueda avanzada de amenazas con PowerShell
 
@@ -120,7 +120,7 @@ Para generar los resultados de la consulta en formato CSV en el archivo file1.cs
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
 ```
 
-Para generar los resultados de la consulta en formato JSON en el archivo file1.jshaga lo siguiente:
+Para generar los resultados de la consulta en formato JSON en file file1.json, haga lo siguiente:
 
 ```
 $results | ConvertTo-Json | Set-Content file1.json

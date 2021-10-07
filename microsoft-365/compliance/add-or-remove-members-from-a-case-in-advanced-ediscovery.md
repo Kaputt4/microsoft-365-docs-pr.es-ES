@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo agregar o quitar los miembros que pueden tener acceso a un caso al administrar un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3571adf6c9bbba791ba5d76f4eba5428dc9f453c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 13a97af715a3f81b5570617f18b10cd8e35f9aec
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175472"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217107"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Agregar o quitar miembros de un caso
 
-Puede agregar o quitar miembros para administrar quién tiene acceso al caso. Sin embargo, antes de que un miembro pueda tener acceso a un caso de Advanced eDiscovery (y realizar  tareas en el caso), debe agregar el usuario al grupo de roles administrador de exhibición de documentos electrónicos en la página Permisos del Centro de seguridad y cumplimiento. Para más información, consulte [Asignar permisos de eDiscovery](./assign-ediscovery-permissions.md).
+Puede agregar o quitar miembros para administrar quién tiene acceso al caso. Sin embargo, antes de que un miembro pueda tener acceso a un caso Advanced eDiscovery (y realizar tareas  en el caso), debe agregar el usuario al grupo de roles administrador de exhibición de documentos electrónicos en la página Permisos de la Centro de cumplimiento de Microsoft 365. Para más información, consulte [Asignar permisos de eDiscovery](./assign-ediscovery-permissions.md).
 
 1. En la página de **eDiscovery avanzado**, vaya al caso al que desea agregar un miembro.
 
@@ -44,3 +44,6 @@ Puede agregar o quitar miembros para administrar quién tiene acceso al caso. Si
 6. Después de seleccionar las personas o grupos de roles que se agregarán como miembros del caso, haga clic en **Agregar**.
 
 7. En la página desplegable **Administrar este caso**, haga clic en **Guardar** para guardar la nueva lista de miembros del caso.
+
+> [!IMPORTANT]
+> Si se agrega o quita un rol de un grupo de roles que ha agregado como miembro de un caso, el grupo de roles se quitará automáticamente como miembro del caso (o en cualquier caso el grupo de roles es miembro de). El motivo es proteger la organización de proporcionar permisos adicionales a los miembros de un caso de forma involuntaria. Del mismo modo, si se elimina un grupo de roles, se quitará de todos los casos de los que era miembro. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases).

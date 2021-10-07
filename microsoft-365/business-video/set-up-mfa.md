@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar la autenticación multifactor, a veces también denominada autenticación en dos fases, en el teléfono.
-ms.openlocfilehash: 7709585c21b22ee3fece6daec4660cf87faa6819
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c70c353cb352eb3cb9130a1cea9ec5a4d181ea4f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212790"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202098"
 ---
 # <a name="set-up-multifactor-authentication-on-your-phone"></a>Configurar la autenticación multifactor en el teléfono
 

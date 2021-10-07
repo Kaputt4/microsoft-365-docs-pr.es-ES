@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: ed7652ecf720e32a7ddfaffbd0ff2db29b582b69
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0dd0c11360a1e815c950e6e01448d95a79a8e266
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219017"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177548"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos de documento en eDiscovery avanzado
 
@@ -78,7 +78,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Subconjunto duplicado||Duplicate_subset|Id. de grupo para duplicados exactos.|
 |EmailAction*||Email_action|Los valores **son None,** **Reply** o **Forward**; según la línea de asunto de un mensaje.|
 |Recibo de entrega de correo electrónico solicitado||Email_delivery_receipt|Dirección de correo electrónico proporcionada en encabezados de Internet para el recibo de entrega.|
-|Importance|EmailImportance|Email_importance|Importancia del mensaje: **0** - Low; **1** : Normal; **2** - High|
+|Importancia|EmailImportance|Email_importance|Importancia del mensaje: **0** - Low; **1** : Normal; **2** - High|
 |Errores de procesamiento omitido|ErrorIgnored|Error_Ignored|Se omitió el error y no se corrija.|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Conjunto completo de encabezados de correo electrónico del mensaje de correo electrónico|
 |EmailLevel*||Email_level|Indica el nivel de un mensaje dentro del subproceso de correo electrónico al que pertenece; los datos adjuntos heredan el valor de su mensaje primario.|

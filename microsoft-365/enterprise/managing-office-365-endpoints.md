@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Obtenga información sobre cómo administrar los Office 365 para que funcionen con la arquitectura de red de la organización empresarial.
-ms.openlocfilehash: 6a8460dbc9dbbc8b7b7a5a8e720b8c55c0ed918c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01fb9f067bd94e564deb182338fdcde055edb153
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165822"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201702"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 

@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 675717eceb1d7de80a66aad18429bd8bb03c2b34
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a48afdceef482a124131495d3f1148f9e8da4d9f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215840"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201594"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a148e2fb1cc0e8fb88797b44ee4d08745728aa34
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82557f955626436236401f622de6f2dc19aba9c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211990"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202672"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -51,7 +51,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |`Application`|cadena|Aplicación que realizó la acción grabada|
 |`ApplicationId`|string|Identificador único de la aplicación|
 |`IsManagedIdentity`|boolean|Indica si el inicio de sesión se inició mediante una identidad administrada|
-|`ErrorCode`|Entero|Contiene el código de error si se produce un error de inicio de sesión. Para encontrar una descripción de un código de error específico, visite <https://aka.ms/AADsigninsErrorCodes> .|
+|`ErrorCode`|int|Contiene el código de error si se produce un error de inicio de sesión. Para encontrar una descripción de un código de error específico, visite <https://aka.ms/AADsigninsErrorCodes> .|
 |`CorrelationId`|string|Identificador único del evento de inicio de sesión|
 |`ServicePrincipalName`|string|Nombre de la entidad de servicio que inició el inicio de sesión|
 |`ServicePrincipalId`|string|Identificador único de la entidad de servicio que inició el inicio de sesión|

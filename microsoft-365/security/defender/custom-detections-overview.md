@@ -12,18 +12,18 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 748b3534ef1f6ca5736667fc3910bb9fa96d23ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0ad75d2cf67360c04597f56816e22755fae3388b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192564"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208426"
 ---
 # <a name="custom-detections-overview"></a>Introducción a las detecciones personalizadas
 
@@ -42,7 +42,7 @@ Las detecciones personalizadas proporcionan:
 - Alertas para detecciones basadas en reglas creadas a partir de consultas de búsqueda avanzadas
 - Acciones de respuesta automáticas
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Crear y administrar reglas de detección personalizadas](custom-detection-rules.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Migrar consultas de búsqueda avanzada desde Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md)

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b5e57fec83217c8df00d333bb4c71f375cac23bb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b034b4aea611e94268a85b4aa4963b76379b9c09
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166686"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202660"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -60,27 +60,27 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ProcessVersionInfoCompanyName` | string | Nombre de la compañía a partir de la información de versión del proceso recién creado |
 | `ProcessVersionInfoProductName` | string | Nombre del producto de la información de versión del proceso recién creado |
 | `ProcessVersionInfoProductVersion` | string | Versión del producto a partir de la información de versión del proceso recién creado |
-| `ProcessVersionInfoInternalFileName` | cadena | Nombre de archivo interno de la información de versión del proceso recién creado |
-| `ProcessVersionInfoOriginalFileName` | cadena | Nombre de archivo original de la información de versión del proceso recién creado |
+| `ProcessVersionInfoInternalFileName` | string | Nombre de archivo interno de la información de versión del proceso recién creado |
+| `ProcessVersionInfoOriginalFileName` | string | Nombre de archivo original de la información de versión del proceso recién creado |
 | `ProcessVersionInfoFileDescription` | string | Descripción de la información de versión del proceso recién creado |
-| `ProcessId` | Entero | Identificador de proceso (PID) del proceso recién creado |
+| `ProcessId` | int | Identificador de proceso (PID) del proceso recién creado |
 | `ProcessCommandLine` | string | Línea de comandos usada para crear el nuevo proceso |
 | `ProcessIntegrityLevel` | string | Nivel de integridad del proceso recién creado. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos de los recursos |
 | `ProcessTokenElevation` | string | Indica el tipo de elevación de token aplicada al proceso recién creado. Valores posibles: TokenElevationTypeLimited (restringido), TokenElevationTypeDefault (estándar) y TokenElevationTypeFull (elevado) |
 | `ProcessCreationTime` | datetime | Fecha y hora en que se creó el proceso |
 | `AccountDomain` | string | Dominio de la cuenta |
 | `AccountName` | string | Nombre de usuario de la cuenta |
-| `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
-| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
+| `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
+| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
-| `LogonId` | cadena | Identificador de una sesión de inicio de sesión. Este identificador es único en el mismo equipo solo entre reinicios |
+| `LogonId` | string | Identificador de una sesión de inicio de sesión. Este identificador es único en el mismo equipo solo entre reinicios |
 | `InitiatingProcessAccountDomain` | string | Dominio de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountName` | string | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountSid` | cadena | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountObjectId` | cadena | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
-| `InitiatingProcessLogonId` | cadena | Identificador de una sesión de inicio de sesión del proceso que inició el evento. Este identificador es único en el mismo equipo solo entre reinicios. |
-| `InitiatingProcessIntegrityLevel` | cadena | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos de los recursos |
+| `InitiatingProcessAccountSid` | string | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountObjectId` | string | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
+| `InitiatingProcessLogonId` | string | Identificador de una sesión de inicio de sesión del proceso que inició el evento. Este identificador es único en el mismo equipo solo entre reinicios. |
+| `InitiatingProcessIntegrityLevel` | string | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos de los recursos |
 | `InitiatingProcessTokenElevation` | string | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso que inició el evento |
 | `InitiatingProcessSHA1` | string | SHA-1 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
@@ -89,19 +89,19 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessFileSize` | largo | Tamaño del archivo que ejecutó el proceso responsable del evento |
 | `InitiatingProcessVersionInfoCompanyName` | string | Nombre de la compañía a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoProductName` | string | Nombre del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoProductVersion` | cadena | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoProductVersion` | string | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoInternalFileName` | string | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoOriginalFileName` | cadena | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoFileDescription` | cadena | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessId` | Entero | Identificador de proceso (PID) del proceso que inició el evento |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoFileDescription` | string | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessId` | int | Identificador de proceso (PID) del proceso que inició el evento |
 | `InitiatingProcessCommandLine` | string | Línea de comandos usada para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
 | `InitiatingProcessFolderPath` | string | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessParentId` | Entero | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentId` | int | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el elemento primario del proceso responsable del evento |
 | `InitiatingProcessSignerType` | string | Tipo de firmante de archivos del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessSignatureStatus` | cadena | Información sobre el estado de firma del proceso (archivo de imagen) que inició el evento |
+| `InitiatingProcessSignatureStatus` | string | Información sobre el estado de firma del proceso (archivo de imagen) que inició el evento |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
 | `AppGuardContainerId` | string | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
 | `AdditionalFields` | string | Información adicional sobre el evento en formato de matriz JSON |

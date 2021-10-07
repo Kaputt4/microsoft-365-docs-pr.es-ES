@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ee7cffc2c7b52e67fe5b82e4d6ee3def45cdf079
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 79bae1cdf4ce21ef00f622bfd438238e69f6ff8a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010062"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193918"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Información del panel: Administración de amenazas y vulnerabilidades
 

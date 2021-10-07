@@ -7,7 +7,7 @@ ms.date: 04/17/2018
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -17,17 +17,17 @@ ms.custom:
 - Ent_Deployment
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: En este artículo se describe cómo usar Azure para crear un entorno de recuperación ante desastres para la granja de servidores de SharePoint local.
-ms.openlocfilehash: 87bbbf143fe831537ddbc08e6d43b4013fe1e379
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: En este artículo se describe cómo usar Azure para crear un entorno de recuperación ante desastres para la granja de servidores SharePoint local.
+ms.openlocfilehash: 80b85aeb602cadf3fb2306c5ef929acbe35d3762
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215677"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214182"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 
- Con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores de SharePoint local. En este artículo se describe cómo diseñar e implementar esta solución.
+ Con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores SharePoint local. En este artículo se describe cómo diseñar e implementar esta solución.
 
  **Ver el vídeo de información general sobre la recuperación ante desastres de SharePoint Server 2013**
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
@@ -36,7 +36,7 @@ ms.locfileid: "59215677"
   
 Use este artículo con el modelo de solución: **recuperación ante desastres de SharePoint en Microsoft Azure**.
   
-[![Proceso de recuperación ante desastres de SharePoint en Azure.](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
+[![SharePoint proceso de recuperación ante desastres en Azure.](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
@@ -82,7 +82,7 @@ En esta ilustración se muestran estos tres elementos.
   
 **Ilustración: Elementos de una solución en estado de espera semiactiva en Azure**
 
-![Elementos de una solución de espera activa de SharePoint en Azure.](../media/AZarch-AZWarmStndby.png)
+![Elementos de una SharePoint de espera activa en Azure.](../media/AZarch-AZWarmStndby.png)
   
 El trasvase de registros de SQL Server con la Replicación del sistema de archivos distribuido (DFSR) se usa para copiar las copias de seguridad de bases de datos y los registros de transacciones en la granja de servidores de recuperación en Azure: 
   
@@ -114,7 +114,7 @@ Después de realizar una recuperación, esta solución proporciona los elementos
   
 **Tabla: Objetivos de recuperación de solución**
 
-|**Elemento**|**Descripción**|
+|**Item**|**Descripción**|
 |:-----|:-----|
 |Sitios y contenido  <br/> |Los sitios y el contenido están disponibles en el entorno de recuperación.  <br/> |
 |Una nueva instancia de búsqueda  <br/> |En esta solución de espera semiactiva, la búsqueda no se restaura a partir de las bases de datos de búsqueda. Los componentes de búsqueda de la granja de servidores de recuperación se configuran lo más parecido posible a la granja de servidores de producción. Después de restaurar los sitios y el contenido, se inicia un rastreo completo para recompilar el índice de búsqueda. No es necesario esperar a que se complete el rastreo para que los sitios y el contenido estén disponibles.  <br/> |
@@ -124,7 +124,7 @@ Puede trabajar con los Servicios de Consultoría de Microsoft (MCS) o un socio p
   
 **Tabla: Otros elementos que MCS o un socio pueden tratar**
 
-|**Elemento**|**Descripción**|
+|**Item**|**Descripción**|
 |:-----|:-----|
 |Sincronización de soluciones de granja personalizadas  <br/> |Lo ideal es que la configuración de la granja de servidores de recuperación sea idéntica a la granja de servidores de producción. Puede trabajar con un consultor o un socio para evaluar si se replicarán las soluciones de granja personalizadas y si hay un proceso para mantener los dos entornos sincronizados.  <br/> |
 |Conexiones a orígenes de datos de locales  <br/> |No sería práctico replicar las conexiones en sistemas de datos back-end, como conexiones de controlador de dominio de reserva (BDC) y orígenes de contenido de búsqueda.  <br/> |
@@ -156,7 +156,7 @@ En la siguiente ilustración se muestra una solución de recuperación ante desa
   
 **Ilustración: Topología y elementos clave de una granja de producción y una granja de servidores de recuperación en espera semiactiva.**
 
-![Topología de una granja de servidores de SharePoint y una granja de servidores de recuperación en espera.](../media/AZarch-AZWarmStndby.png)
+![Topología de una granja de SharePoint y una granja de recuperación de espera activa.](../media/AZarch-AZWarmStndby.png)
   
 En este diagrama:
   
@@ -186,7 +186,7 @@ En esta ilustración se muestra un entorno de conmutación por error de Azure en
   
 **Ilustración: Granja de servidores de recuperación de espera pasiva con máquinas virtuales en funcionamiento**
 
-![Elementos de una solución de espera en frío de SharePoint en Azure.](../media/AZarch-AZColdStndby.png)
+![Elementos de una solución SharePoint en espera en frío en Azure.](../media/AZarch-AZColdStndby.png)
   
 Después de la conmutación por error a un entorno de espera pasiva, se inician todas las máquinas virtuales y debe configurarse el método para lograr una alta disponibilidad de los servidores de bases de datos, como los grupos de disponibilidad AlwaysOn de SQL Server.
   

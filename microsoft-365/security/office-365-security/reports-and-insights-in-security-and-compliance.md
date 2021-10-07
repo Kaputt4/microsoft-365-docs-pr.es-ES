@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: Obtenga información sobre los informes e información inteligentes
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 627ca557e7df0d12565f833287c7a6aad18854f1
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: fb46c3436c48328b02e2937968321c0adce9ffb8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988756"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202422"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
 

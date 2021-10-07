@@ -14,18 +14,18 @@ ms.collection:
 - m365solution-ediscovery
 - m365initiative-compliance
 - m365solution-overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
 description: Microsoft 365 ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido encontrado en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, grupos de Microsoft 365, conversaciones de Microsoft Teams y Skype Empresarial. La exhibición de documentos electrónicos Advanced eDiscovery proporciona muchas características adicionales que le ayudarán a administrar las investigaciones.
-ms.openlocfilehash: 0dd8ca2e18f1388f4d8a5cdbbbbf401d1d579e10
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: f8419176e8307c6e87d376f04c8395f18c175740
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60087802"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216903"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Soluciones de exhibición de documentos electrónicos en Microsoft 365
 
@@ -132,6 +132,7 @@ En las secciones siguientes se muestran los requisitos mínimos de suscripción 
 - Microsoft 365 Suscripción a G1
 - Microsoft 365 F1 de F3 o de F5 Security
 - Suscripción a Office 365 Educación A1
+- Office 365 E1 suscripción
 
 ### <a name="core-ediscovery"></a>Core eDiscovery
 
@@ -139,6 +140,7 @@ En las secciones siguientes se muestran los requisitos mínimos de suscripción 
 - Microsoft 365 G3 suscripción
 - Microsoft 365 Complemento de cumplimiento F5 o complemento de seguridad F5 & cumplimiento
 - Microsoft 365 Educación Suscripción A3 o Office 365 Educación A3
+- Office 365 E3 suscripción
 
 ### <a name="advanced-ediscovery"></a>eDiscovery avanzado
 

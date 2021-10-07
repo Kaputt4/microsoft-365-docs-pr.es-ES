@@ -1,7 +1,7 @@
 ---
 title: Pilot Defender for Endpoint evaluation
 description: Habilite su laboratorio Microsoft 365 Defender prueba o entorno piloto.
-keywords: Microsoft 365 Defender prueba, pruebe Microsoft 365 Defender, evalúe Microsoft 365 Defender, laboratorio de evaluación de Microsoft 365 Defender Microsoft 365 Defender, piloto, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación y corrección automatizadas, búsqueda avanzada
+keywords: Microsoft 365 Defender prueba, pruebe Microsoft 365 Defender, evalúe Microsoft 365 Defender, Microsoft 365 Defender de evaluación, Microsoft 365 Defender piloto, ciber seguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, dispositivo, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e25e9dd18e66509c2512a56b5b64304c23ddb916
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: cb4ca4720d0671aad45cfa2387dbf9c092f970c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610980"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194230"
 ---
 # <a name="pilot-mde-evaluation"></a>Evaluación piloto de MDE
 
@@ -65,7 +65,7 @@ En la tabla siguiente se enumeran las herramientas disponibles en función del e
 
 ****
 
-|Extremo|Opciones de herramientas|
+|Punto de conexión|Opciones de herramientas|
 |---|---|
 |**Windows**|[Script local (hasta 10 dispositivos)](../defender-endpoint/configure-endpoints-script.md) <p> [Directiva de grupo](../defender-endpoint/configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](../defender-endpoint/configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) <p> [Scripts VDI](../defender-endpoint/configure-endpoints-vdi.md) <p> [Integración con Azure Defender](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[Scripts locales](../defender-endpoint/mac-install-manually.md) <p> [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md) <p> [Jamf Pro](../defender-endpoint/mac-install-with-jamf.md) <p> [Administración de dispositivos móviles](../defender-endpoint/mac-install-with-other-mdm.md)|

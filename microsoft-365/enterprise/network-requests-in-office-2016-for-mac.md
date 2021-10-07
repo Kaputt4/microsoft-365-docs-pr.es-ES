@@ -7,7 +7,7 @@ ms.date: 11/9/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: En este artículo se describen los puntos de conexión y las direcciones URL Office para Mac que las aplicaciones intentan alcanzar y los servicios proporcionados.
-ms.openlocfilehash: abb744d4ee75b06e66ac6a9aa43c7fd18d8a452f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 37071b0aaf9e6f172d99a10cb4a1506f1627ef03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185942"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177080"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Solicitudes de red en Office para Mac
 
@@ -324,7 +324,7 @@ Si su organización bloquea las solicitudes a las direcciones URL a través de u
 Si el servidor proxy requiere autenticación, se devolverá una respuesta 407 al cliente. Para obtener la mejor experiencia, asegúrese de que está usando Office para Mac compilaciones 15.27 o posterior, ya que incluyen correcciones específicas para trabajar con servidores NTLM y Kerberos.
   
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
 

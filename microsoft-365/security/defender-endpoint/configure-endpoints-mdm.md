@@ -8,18 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6cb99f300c7d87497f31729507695a9a633b345a
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 6aaa510df9b3155015979f4d3a5278c601b56223
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124702"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217131"
 ---
 # <a name="onboard-the-windows-devices-using-mobile-device-management-tools"></a>Incorporar los dispositivos Windows con las herramientas de administración de dispositivos móviles
 
@@ -85,7 +85,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
    - Tipo de fecha: String
    - Valor: [Copiar y pegar el valor del contenido del archivo WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding]
 
-Para obtener más información sobre Microsoft Intune configuración de directiva, [consulte Windows 10 configuración de directiva en Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
+Para obtener más información sobre Microsoft Intune de directiva, [vea Windows 10 configuración de directiva en Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10).
 
 > [!NOTE]
 > La **directiva Estado de mantenimiento para dispositivos fuera deborde** usa propiedades de solo lectura y no se puede corregir.

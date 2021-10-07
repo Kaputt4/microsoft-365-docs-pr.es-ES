@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
-ms.openlocfilehash: 50f61fb86c2458e6471c0b2002c15f4a8b1cabe0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3e2c575cbb4bf0019e537fc1ffaaaaeb9e67bfd8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216210"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177380"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 

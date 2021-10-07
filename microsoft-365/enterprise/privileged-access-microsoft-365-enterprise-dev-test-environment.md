@@ -8,19 +8,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Use esta Guía del laboratorio de pruebas para habilitar la administración de acceso con privilegios Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: d4d3658ad8c7533e2540dde6c390b4f2b4691cb8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 424b7c09a89b20d134654293a1e9c9abd69d6ff2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220742"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208234"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Administración de acceso con privilegios para Microsoft 365 entorno de prueba de empresa
 
@@ -154,7 +154,7 @@ En primer lugar, conéctese a Exchange Management PowerShell con las credenciale
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#information-protection) de protección de la información en el entorno de prueba.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 - [Información general de Microsoft 365 para empresas](microsoft-365-overview.md)

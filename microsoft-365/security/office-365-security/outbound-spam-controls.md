@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre los controles de correo no deseado salientes en Exchange Online Protection (EOP) y qué hacer si necesita enviar correos masivos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0fb6bfe5d83c551c0a93cc7b453b27a2d7b476bc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 26be514584a8fb2f8c024c0f4db208018d951868
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214310"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202398"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>Protección contra correo no deseado saliente en EOP
 

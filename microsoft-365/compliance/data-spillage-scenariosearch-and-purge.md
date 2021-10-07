@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use la exhibición de documentos electrónicos y las herramientas de búsqueda para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 340bf10dc57737c024d1ffcb3a441ba53bc917d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51fe6119acff7007f879b2ef323f263865458dfa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213910"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177620"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie de soluciones de exhibición de documentos electrónicos: escenario de derrame de datos: búsqueda y purga
 
@@ -205,7 +205,7 @@ Si las palabras clave de la consulta de búsqueda que creó y usó en el paso 3 
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación de derrame de datos
 
-Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para más información, vea:
+Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para más información vea:
 
 - [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 

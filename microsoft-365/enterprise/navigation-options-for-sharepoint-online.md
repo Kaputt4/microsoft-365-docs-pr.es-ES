@@ -7,7 +7,7 @@ ms.date: 4/7/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: En este artículo se describen los sitios de opciones de navegación con SharePoint publicación habilitada en SharePoint Online.
-ms.openlocfilehash: 7c890f61beae9ae98045861bbb08e3f6752d0037
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c59006db8505991bd41d29714caae144b284f07d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210630"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177140"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 

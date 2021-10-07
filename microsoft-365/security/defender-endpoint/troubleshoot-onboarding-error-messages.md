@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 10ec4562063c7352b337cdb6f5d11b76985ae19d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3bc58ec36775065b03ab368b65b833bc4ccaad5c
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159227"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217083"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Solucionar problemas de acceso a la suscripción y al portal
 
@@ -74,7 +74,7 @@ Si el panel del portal y otras secciones muestran un mensaje de error como "Los 
 
 ![La imagen de los datos actualmente no está disponible.](images/atp-data-not-available.png)
 
-Tendrás que permitir los `security.windows.com` subdominios y todos los subdominios que hay en él. Por ejemplo, `*.security.windows.com`.
+Tendrás que permitir los subdominios y todos los subdominios que hay en `security.windows.com` él en el explorador web. Por ejemplo, `*.security.windows.com`.
 
 ## <a name="portal-communication-issues"></a>Problemas de comunicación del portal
 

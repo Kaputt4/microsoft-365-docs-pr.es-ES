@@ -6,17 +6,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: ad85439d817013fa394fcb80bd5d47dbf391601f
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: b051ea3c1ea04eb90584654389f335ad6ecedefc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484124"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213930"
 ---
 # <a name="register-new-devices-yourself"></a>Registre nuevos dispositivos usted mismo
 
@@ -103,7 +103,7 @@ Puedes supervisar el progreso del registro del dispositivo en la página princip
 | Registro pendiente | El registro aún no se ha realizado. Vuelva más tarde. |
 | Error de registro | No se pudo completar el registro. Consulte [Troubleshooting device registration para](#troubleshooting-device-registration) obtener más información. |
 | Listo para el usuario | El registro se ha registrado correctamente y el dispositivo ya está listo para entregarse al usuario. Escritorio administrado de Microsoft los guiará a través de la configuración por primera vez, por lo que no es necesario realizar ninguna preparación adicional. |
-| Activo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Este estado también indica que usan regularmente el dispositivo. |
+| Activa | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Este estado también indica que usan regularmente el dispositivo. |
 | Inactivo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Sin embargo, no han usado el dispositivo recientemente (en los últimos 7 días).  | 
 
 #### <a name="troubleshooting-device-registration"></a>Solución de problemas de registro de dispositivos
