@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Obtenga información sobre cómo eliminar una cuenta de usuario y qué hacer con el correo electrónico del usuario y OneDrive contenido y si desea conservar la licencia del producto.
-ms.openlocfilehash: c15bcc88290fbd54b76a11ae96e89fbacd2c3b58
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 852ebe9a99718be9bf025fbc8347bc2ca7854cc2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774347"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161827"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -47,7 +47,7 @@ Si es un administrador global, al eliminar un usuario también puede dar a otro 
 
 Antes de empezar, piense en lo que desea hacer con el correo electrónico del usuario y el contenido OneDrive, y si desea mantener la licencia o dejar de pagar por ella.
   
-|Item | Descripción |
+|Elemento | Descripción |
 |:-----|:-----|
 |Licencias de productos  <br/> |Puede quitar la licencia del usuario y quitarla de sus suscripciones para dejar de pagar por esa licencia. Si selecciona esta opción, la licencia se quitará automáticamente de las suscripciones.  <br/><br/> **No puede quitar la licencia si** la compró a través de un partner o una licencia por volumen. Si estás pagando un plan anual o si estás en medio de un ciclo de facturación, no podrás quitar la licencia de la suscripción hasta que se complete el compromiso.  <br/> |
 |OneDrive contenido  <br/> |Si el usuario guardó sus archivos en OneDrive, puede proporcionar a otro usuario acceso a estos archivos.  <br/><br/> Tendrás que mover los archivos que quieras conservar dentro del período de retención que se establece para los OneDrive archivos. **De forma predeterminada, el período de retención es de 30 días.** Si no mueve los archivos dentro del período de retención después de eliminar el usuario, el OneDrive del usuario eliminado se mueve a la papelera de reciclaje de la colección de sitios, donde se conserva durante 93 días. Durante este tiempo, los usuarios ya no podrán acceder a ningún contenido compartido en el OneDrive. Para restaurar el OneDrive, debe usar PowerShell. Para obtener información, [consulta Restaurar un archivo OneDrive](/onedrive/restore-deleted-onedrive).<br/><br/> Para aumentar el número de días que conserva los archivos OneDrive para cuentas eliminadas, vea [Set the OneDrive retention for deleted users](/onedrive/set-retention).  <br/><br/> **¡Importante!** Si el usuario eliminado usó un equipo personal para descargar archivos de SharePoint y OneDrive, no hay forma de borrar los archivos que almacenaban en su equipo. Seguirán teniendo acceso a los archivos que se sincronizaron desde OneDrive.           |

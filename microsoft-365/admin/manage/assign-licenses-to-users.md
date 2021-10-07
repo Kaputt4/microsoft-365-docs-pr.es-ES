@@ -9,7 +9,7 @@ ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Asigne licencias dependiendo de si quiere asignar licencias de producto a usuarios específicos o asignar licencias de usuarios a un producto específico.
 ms.date: 09/16/2021
-ms.openlocfilehash: b9fb8a670b649437a894619369731a5085c36804
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: eb122a7bce8aba070bf50e4654a54db6c40a1157
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59785944"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164553"
 ---
 # <a name="assign-licenses-to-users"></a>Asignar licencias a los usuarios
 
@@ -45,7 +45,7 @@ Puede asignar licencias a los usuarios en la página **usuarios activos** o en l
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser un administrador global, de licencia o de usuarios para asignar licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../add-users/about-admin-roles.md).
+- Debe ser administrador global, de licencia o de usuario para asignar licencias. Para obtener más información, vea [Acerca de Microsoft 365 roles de administrador](../add-users/about-admin-roles.md).
 - Puede [asignar licencias de Microsoft 365 a cuentas de usuario con PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
 - Para usar las licencias basadas en grupos, vea [Asignar licencias a usuarios por la pertenencia a grupos en Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 - Algunos servicios, como Sway, se asignan automáticamente a los usuarios y no es necesario que los asigne individualmente.
@@ -77,7 +77,7 @@ Al usar la página de **licencias** de para asignar licencias, asigna licencias 
 
 3. En la página de detalles del producto, seleccione **Asignar licencias**.
 
-4. En el panel **asignar licencias a usuarios**, empiece a escribir un nombre y elíjalo en los resultados para agregarlo a la lista. Puede agregar hasta 20 usuarios a la vez.
+4. En el panel **Asignar licencias a usuarios**, empiece a escribir un nombre y a continuación selecciónelo en los resultados para agregarlo a la lista. Puede agregar hasta 20 usuarios a la vez.
 
 4. Seleccione **activar o desactivar aplicaciones y servicios** para asignar o quitar el acceso a elementos específicos.
 

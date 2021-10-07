@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - M365-subscription-management
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre Microsoft 365 colaboración entre inquilinos y organizaciones, lo que permite que distintas organizaciones trabajen juntas de forma segura.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05a1756d4707ba51d1175f0f5f5701f89fd7f5a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9cb91b6bcaac212eeaf0ef4051f466751d8dbbd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215870"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163341"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 colaboración entre inquilinos
 

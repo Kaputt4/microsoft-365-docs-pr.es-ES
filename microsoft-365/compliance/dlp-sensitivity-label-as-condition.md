@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga más información sobre los servicios y los tipos de elementos en los que puede usar etiquetas de confidencialidad como condiciones en directivas DLP
-ms.openlocfilehash: aa9b936f7c40227245d0ffd9fbbc951e51c49321
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b74911765d9249834553c09bbd4efdd02e5f97ce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219037"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163401"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Usar etiquetas de confidencialidad como condiciones en las directivas de DLP
 
@@ -59,7 +59,7 @@ Puede usar etiquetas de confidencialidad como condiciones para estos elementos y
 |OneDrive para la Empresa     |elementos         |sí         |sí         |
 |Teams     |Mensajes de canal y de Teams         |no aplicable         |no aplicable         |
 |Teams     |datos adjuntos         |sí **         |sí **         |
-|Dispositivos con Windows 10     |elementos         |sí         |sí         |
+|Dispositivos con Windows 10     |elementos         |sí         |sí         |
 |MCAS (vista previa) |elementos         |sí         |sí         |
 
 \* La detección DLP de etiquetas de confidencialidad en los datos adjuntos de correo electrónico solo es compatible con tipos de archivo de Office.

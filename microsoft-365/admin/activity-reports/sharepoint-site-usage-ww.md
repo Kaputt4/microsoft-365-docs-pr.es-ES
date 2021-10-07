@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el SharePoint de uso del sitio para saber cuántos archivos almacenan los usuarios en SharePoint sitios, cuántos se usan activamente y el almacenamiento total consumido.
-ms.openlocfilehash: 116b4521408fd8cd41e22a959a7b530dbce01174
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 3b84a31b787e3ccf855e26befcf570e364a9e148
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356106"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162043"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 Informes en el Centro de administración: SharePoint de sitio
 
@@ -73,7 +73,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |Métrica|Descripción|
 |:-----|:-----|
 |Dirección URL del sitio  |La dirección URL completa del sitio. |
-|Deleted  |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  |
+|Eliminada  |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  |
 |Propietario del sitio  |Nombre de usuario del propietario principal del sitio.   |
 |Nombre principal del propietario del sitio  |La dirección de correo electrónico del propietario del sitio. |
 |Fecha de última actividad (UTC)  | La fecha de la última vez que se detectó la actividad del archivo o una página se visualizó en el sitio.  |

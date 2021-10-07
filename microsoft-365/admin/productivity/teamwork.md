@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: 'Detalles del trabajo en equipo: las personas experimenta la puntuación productividad.'
-ms.openlocfilehash: a10de3daf0d485ec75948f7f23202b06bfe29793
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 1c66dbac320787579d1d8cfe3c463bcb37ebf5ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772837"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161443"
 ---
 # <a name="teamwork--people-experiences"></a>Trabajo en equipo: experiencias de personas
 
@@ -35,7 +36,7 @@ Para empezar a trabajar en equipo, los usuarios de la organización deben tener 
 
 - Microsoft Teams
 - SharePoint
-- Exchange en línea
+- Exchange Online
 
 Para obtener más información, vea [Asignar licencias a los usuarios.](../manage/assign-licenses-to-users.md)
 

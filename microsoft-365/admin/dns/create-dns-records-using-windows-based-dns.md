@@ -1,5 +1,5 @@
 ---
-title: Crear registros DNS para Microsoft mediante Windows DNS basado en dns
+title: Crear registros DNS para Microsoft con DNS basado en Windows
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en dns basado Windows para Microsoft.
-ms.openlocfilehash: 3a1b11eb9663a68f7787b026c7c7402db8ef4a854e4b9ecdb3356bb1074e2610
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43cc3679f33a929545ed3d9deec388126aec853c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826212"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165297"
 ---
-# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft mediante Windows DNS basado en dns
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft con DNS basado en Windows
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
    
@@ -41,7 +41,7 @@ Para empezar, debe buscar los registros DNS en [un DNS](#find-your-dns-records-i
 Problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea Solucionar problemas después de cambiar el nombre de [dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Buscar los registros DNS en DNS basado en Windows
-<a name="BKMK_find_your_dns_1"></a> Vaya a la página que tiene los registros DNS de su dominio. Si está trabajando en Windows Server 2008, vaya a **Iniciar**  >  **ejecución**. Si está trabajando en Windows Server 2012, presione la Windows y **r**. Escriba **dnsmgmnt.msc y,** a continuación, seleccione **Aceptar**. En el Administrador dns, expanda **\<DNS server name\> \> Zonas de búsqueda directa**. Seleccione su dominio. Ya está listo para crear los registros DNS.
+<a name="BKMK_find_your_dns_1"></a> Vaya a la página que tiene los registros DNS de su dominio. Si está trabajando en Windows Server 2008, vaya a **Iniciar**  >  **ejecución**. Si está trabajando en Windows Server 2012, presione la Tecla Windows y **r**. Escriba **dnsmgmnt.msc** y luego seleccione **Aceptar**. En el Administrador dns, expanda **\<DNS server name\> \> Zonas de búsqueda directa**. Seleccione su dominio. Ya está listo para crear los registros DNS.
    
 ## <a name="add-mx-record"></a>Agregar registro MX
 <a name="BKMK_add_MX"> </a>
@@ -51,7 +51,7 @@ Agregue un registro MX para que el correo electrónico de su dominio se envíe a
 - En la fila MX de la Exchange Online de la página Agregar registros DNS en Microsoft, copie el valor que aparece en Puntos para dirección. Usará este valor en el registro que está creando en esta tarea. 
 - En la página Administrador dns del dominio, vaya a **Exchanger de** correo de  >  **acción (MX).** Para encontrar esta página para el dominio, vea [Buscar los registros DNS en Windows DNS basado en el dominio](#find-your-dns-records-in-windows-based-dns).  
 - En el **cuadro de diálogo Nuevo registro de** recursos, asegúrese de que los campos están establecidos exactamente en los siguientes valores: 
-    - Nombre de host: 
+    - Nombre de host:  
     - @Address: pegue el valor points to address que acaba de copiar de Microsoft aquí.  
     - Pref: 
 - Seleccione **Guardar cambios**.

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Registrarse paso a paso para Microsoft 365 para campañas. Proteja su campaña de las amenazas de ciberseguridad al correo electrónico, los datos y la comunicación.
-ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7ef49e686a152cd4bc56d39e7edff107dfbb2ea7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186470"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156887"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrarse para obtener Microsoft 365 campañas 
 

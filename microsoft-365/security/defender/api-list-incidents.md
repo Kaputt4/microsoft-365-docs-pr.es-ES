@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0497ac31c11d04d812e9d8aca81304369ef459fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 763add69e0512f9fe092dccf453d58cf3907118d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214620"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162391"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Enumerar la API de incidentes en Microsoft 365 Defender
 
@@ -106,7 +106,7 @@ assignedTo|Propietario del incidente o *null* si no se asigna ningún propietari
 classification|La especificación del incidente. Los valores de propiedad son: *Unknown*, *FalsePositive*, *TruePositive*|Unknown
 determinación|Especifica la determinación del incidente. Los valores de propiedad son: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other*|NotAvailable
 detectionSource|Especifica el origen de la detección.|MCAS
-status|Clasifice los incidentes *(como Activos* o *Resueltos).* Puede ayudarle a organizar y administrar su respuesta a incidentes.|Activo
+status|Clasifice los incidentes *(como Activos* o *Resueltos).* Puede ayudarle a organizar y administrar su respuesta a incidentes.|Activa
 severity|Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata. <p> Uno de los siguientes valores: *Informational*, *Low*, *Medium y *High*.|Medio
 tags|Matriz de etiquetas personalizadas asociadas a un incidente, por ejemplo para marcar un grupo de incidentes con una característica común.|\[\]
 comments|Matriz de comentarios creados por secops al administrar el incidente, por ejemplo información adicional sobre la selección de clasificación.|\[\]
@@ -129,7 +129,7 @@ categoría|Vista visual y numérica de hasta qué punto ha progresado el ataque 
 status|Clasificar las alertas *(como Nuevo,* *Activo* o *Resuelto).* Puede ayudarle a organizar y administrar la respuesta a las alertas.|Nueva
 severity|Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br>Uno de los siguientes valores: *Informational*, *Low*, *Medium* y *High*.|Medio
 investigationId|El identificador de investigación automatizado desencadenado por esta alerta.|1234
-investigationState|Información sobre el estado actual de la investigación. Uno de los siguientes valores: *Unknown*, *Ended*, *SuccessfullyRemediated*, *Benign*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*.|UnsupportedAlertType
+investigationState|Información sobre el estado actual de la investigación. Uno de los siguientes valores: *Unknown*, *Ended*, *SuccessfullyRemediated*, *Benign*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser , TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*,  *UnsupportedOs*, *UnsupportedAlertType*, , *SuppressedAlert*.|UnsupportedAlertType
 classification|La especificación del incidente. Los valores de propiedad *son: Unknown*, *FalsePositive*, *TruePositive* o *null*|Unknown
 determinación|Especifica la determinación del incidente. Los valores de propiedad son: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* o  *null*|Apt
 assignedTo|Propietario del incidente o *null* si no se asigna ningún propietario.|secop2@contoso.com
@@ -140,7 +140,7 @@ dispositivos|Todos los dispositivos en los que se enviaron alertas relacionadas 
 
 ### <a name="device-format"></a>Formato de dispositivo
 
-Nombre del campo|Description|Valor de ejemplo
+Nombre del campo|Descripción|Valor de ejemplo
 ---|---|---
 DeviceId|El identificador de dispositivo designado en Microsoft Defender para endpoint.|24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId|El identificador de dispositivo designado en [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis). Solo disponible para dispositivos unidos a un dominio.|nulo
@@ -149,7 +149,7 @@ osPlatform|La plataforma del sistema operativo que se está ejecutando el dispos
 osBuild|La versión de compilación del sistema operativo que se está ejecutando el dispositivo.|14393
 rbacGroupName|Grupo [de control de acceso basado](/azure/role-based-access-control/overview) en roles (RBAC) asociado al dispositivo.|WDATP-Ring0
 firstSeen|Hora en la que se vio el dispositivo por primera vez.|2020-02-06T14:16:01.9330135Z
-healthStatus|El estado de mantenimiento del dispositivo.|Activo
+healthStatus|El estado de mantenimiento del dispositivo.|Activa
 riskScore|La puntuación de riesgo del dispositivo.|Alto
 entidades|Todas las entidades que se han identificado para formar parte o relacionadas con una alerta determinada.|\[\] (vea los detalles de los campos de entidad a continuación)
 

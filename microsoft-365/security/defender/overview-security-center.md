@@ -4,7 +4,7 @@ description: Ventajas en Microsoft 365 Defender, combinando Microsoft Defender p
 keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, monitor, informe, identidades, datos, dispositivos, aplicaciones
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.date: 04/21/2021
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7f129f3ba1650403b23aa7e849a7b74f8220871f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a0dce3a61847924043a10df4c13c963f279ea011
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211877"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162295"
 ---
 # <a name="microsoft-365-defender-overview"></a>Microsoft 365 Defender introducción
 
@@ -36,7 +36,7 @@ ms.locfileid: "59211877"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de pruebas](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o bien [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
+> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
 
 **Microsoft 365 Defender** ( ) combina protección, detección, investigación y respuesta a correo electrónico, colaboración, identidad y amenazas [https://security.microsoft.com](https://security.microsoft.com) de dispositivos, en un portal central.    
 

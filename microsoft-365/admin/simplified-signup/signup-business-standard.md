@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Compre Microsoft 365 Empresa Estándar y configure su organización.
-ms.openlocfilehash: a809dcabe26a24231e12e4d3d14d544f83bb2c91
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: cf19c2f07129eb064368c1efd6eea09af0870b93
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775941"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164253"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Registrarse para una suscripción a Microsoft 365 Empresa Estándar
 
@@ -75,7 +76,7 @@ Puede agregar un dominio empresarial en cualquier momento para tener acceso al r
 - Microsoft Planner y Listas Microsoft
 - La gama más amplia de integraciones de aplicaciones que no son de Microsoft (por ejemplo, Salesforce, Adobe) que funcionan dentro de Teams y Office.
 
-#### <a name="next-steps"></a>Pasos siguientes
+#### <a name="next-steps"></a>Siguientes pasos
 
 Si desea agregar un dominio y crear una cuenta de correo electrónico empresarial, siga los pasos descritos en los artículos siguientes:
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Obtenga información sobre cómo actualizar una o varias listas de distribución Microsoft 365 grupos en Outlook y cómo usar PowerShell para actualizar varias listas de distribución simultáneamente.
-ms.openlocfilehash: 6b8937e918f840fc9c4aa499d61b9dbfa50f51a4
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 93abd5c329e61e5a8088fb276cbb7d8b32d4e302
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773093"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157235"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Actualizar listas de distribución a Grupos de Microsoft 365 en Outlook
 
@@ -141,7 +141,7 @@ Get-DistributionGroup| Foreach-Object{
 
 Solo puede actualizar listas de distribución sencillas y no anidadas administradas en la nube. En la tabla siguiente se enumeran las listas de distribución **que no** se pueden actualizar.
 
-|**Property**|**¿Elegible?**|
+|**Propiedad**|**¿Elegible?**|
 |:-----|:-----|
 |Lista de distribución administrada local.  <br/> |No  <br/> |
 |Listas de distribución anidadas. La lista de distribución tiene grupos secundarios o es miembro de otro grupo.  <br/> |No  <br/> |

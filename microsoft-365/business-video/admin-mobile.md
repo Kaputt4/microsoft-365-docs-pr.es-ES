@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén información sobre cómo instalar la Administración de Microsoft 365 móvil en el teléfono.
-ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 528c6714153ded0e06441b2027312c874361038a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188870"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156937"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Instalar la Administración de Microsoft 365 móvil en el teléfono
 

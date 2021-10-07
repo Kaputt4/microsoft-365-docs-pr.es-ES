@@ -4,18 +4,18 @@ description: Acciones detalladas que se deben realizar para cada problema que en
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 32e750dc824484624a5f0d953b75f242639c3e23
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: d2e055b553e3358107283236d634d9d46d33de4d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009510"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163161"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -285,6 +285,14 @@ Escritorio administrado de Microsoft recomienda ajustar la configuración de inv
 **Advertencia**
 
 Los usuarios miembros y los usuarios asignados a roles de administrador específicos pueden invitar a usuarios **invitados, incluidos** los invitados con permisos de miembro. Para ver los pasos, consulte [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
+
+### <a name="guest-user-access"></a>Acceso de usuario invitado
+
+Escritorio administrado de Microsoft recomienda ajustar el acceso de los usuarios invitados, ya que la configuración predeterminada permite que todos los usuarios invitados del directorio tengan el mismo acceso que los miembros.
+
+**Advertencia**
+
+**Los usuarios invitados tienen acceso limitado a las propiedades y las pertenencias a** objetos de directorio deben estar habilitadas. Para ver los pasos, consulte [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
 
 ### <a name="licenses"></a>Licencias
 

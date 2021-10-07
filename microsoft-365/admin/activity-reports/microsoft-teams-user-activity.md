@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Obtenga información sobre cómo obtener el informe Microsoft Teams actividad del usuario y obtener información sobre la Teams actividad de la organización.
-ms.openlocfilehash: 5ebfc5179df51e82ac07d33b72015e7ef561995d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d1fe93248db16928d84ad8857130e3a8107a2d7b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564959"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157427"
 ---
 # <a name="microsoft-365-admin-center-reports---microsoft-teams-user-activity"></a>Centro de administración de Microsoft 365: Microsoft Teams actividad del usuario
 
@@ -44,7 +44,7 @@ El panel Microsoft 365 **informes le** muestra la introducción a la actividad e
 
 Puede consultar la actividad de los usuarios en Microsoft Teams mediante los gráficos **Actividad** y **Usuarios**.<br/>![Microsoft 365: Microsoft Teams de usuario.](../../media/40359f81-25f7-416d-bb1e-37289133ef6b.png)
   
-|Elemento|Description|
+|Elemento|Descripción|
 |:-----|:-----|
 |1.  <br/> |Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
 |2.  <br/> |Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas.  <br/> |

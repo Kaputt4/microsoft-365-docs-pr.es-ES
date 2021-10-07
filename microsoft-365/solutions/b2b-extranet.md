@@ -1,5 +1,5 @@
 ---
-title: Para obtener más información, consulte Crear una extranet de B2B con invitados administrados.
+title: Crear una extranet B2B con invitados administrados
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -13,18 +13,18 @@ ms.collection:
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo crear un sitio de extranet B2B o un equipo con invitados administrados de una organización asociada.
-ms.openlocfilehash: 7e3ddf12473095b0a7ac91ded01256e77c299ddf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ab8bba31538b9e79ed198f65349f14d8211f81f7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185513"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162139"
 ---
-# <a name="create-a-b2b-extranet-with-managed-guests"></a>Para obtener más información, consulte Crear una extranet de B2B con invitados administrados.
+# <a name="create-a-b2b-extranet-with-managed-guests"></a>Crear una extranet B2B con invitados administrados
 
 Puede usar la [administración Azure Active Directory derechos](/azure/active-directory/governance/entitlement-management-overview) para crear una extranet B2B para colaborar con una organización asociada que use Azure Active Directory. Esto permite a los usuarios auto inscribirse en el sitio o equipo de extranet y recibir acceso a través de un flujo de trabajo de aprobación.
 

@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdo
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: 21cff6ecd695ef95173149eed211b40989fa47ce
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: a7e8efc38722b3dc6342255a0193634f307eec27
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402111"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162187"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de microsoft defender para Office 365 prueba
 
@@ -76,11 +76,11 @@ Como parte de la configuración de prueba, defender para Office 365 licencias se
 
 ## <a name="permissions"></a>Permisos
 
-Para iniciar o finalizar la prueba, debe ser miembro  de los roles Administrador **global** o Administrador de seguridad en Azure Active Directory. Para obtener más información, vea [About admin roles](../../admin/add-users/about-admin-roles.md).
+Para iniciar o finalizar la prueba, debe ser miembro  de los roles Administrador **global** o Administrador de seguridad en Azure Active Directory. Para más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="additional-information"></a>Información adicional
 
-Después de inscribirse en la versión de prueba, los cambios y actualizaciones pueden tardar hasta 2 horas en estar disponibles. Además, los administradores deben cerrar sesión y volver a iniciar sesión para ver los cambios.
+Después de inscribirse en la prueba, los cambios y actualizaciones pueden tardar hasta 2 horas en estar disponibles. Además, los administradores deben cerrar sesión y volver a iniciar sesión para ver los cambios.
 
 Los administradores pueden deshabilitar la prueba en cualquier momento yendo a la <> tarjeta.
 

@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Windows 365 (equipos en la nube).
-ms.openlocfilehash: b71beb0315c15929b20e1afd32a96bfd811a9ea9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a0d828a382000502f6700d585624b967a740ff36
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211720"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163185"
 ---
 # <a name="windows-365-cloud-pcs-page-overview"></a>Windows de la página 365 (equipos en la nube)  
 
@@ -30,7 +30,7 @@ ms.locfileid: "59211720"
   
 Windows 365 es un servicio basado en la nube que permite a los administradores de Microsoft Endpoint Manager (MEM) aprovisionar y administrar equipos en la nube para sus usuarios que tienen una licencia Windows 365. Windows 365 está totalmente integrado con MEM para la administración de dispositivos y con Microsoft 365 Lighthouse para la administración de partners de equipos en la nube en todos sus inquilinos de clientes.
 
-Para obtener más información Windows 365, vea [¿Qué Windows 365?](/windows-365/overview) Para obtener una lista de Windows 365 requisitos, vea [Requirements for Windows 365](/windows-365/requirements).
+Para obtener más información Windows 365, vea [¿Qué Windows 365?](/windows-365/overview) Para obtener una lista de Windows 365 requisitos, vea [Requirements for Windows 365](/windows-365/enterprise/requirements).
 
 > [!IMPORTANT]
 > Debe ir a [MEM para](https://go.microsoft.com/fwlink/p/?linkid=2150463) aprovisionar equipos en la nube para cada inquilino del cliente antes de poder administrarlos en Lighthouse. No se puede aprovisionar desde El Faro.
@@ -77,7 +77,7 @@ La pestaña Todos los equipos en la nube también incluye las siguientes opcione
 - **Buscar:** Escriba palabras clave para localizar rápidamente un equipo en la nube específico en la lista.
 - **Reintentar el aprovisionamiento:** Seleccione de 1 a 20 equipos en la nube de la lista que tienen un estado de Error de aprovisionamiento y, a continuación, seleccione esta opción para reintentar el aprovisionamiento de esos equipos en la nube.
 
-Para ver una lista completa de los estados del equipo en la nube y lo que significan, consulte [Cloud PC overview page](/windows-365/device-management-overview#cloud-pc-overview-page) in the Windows 365 documentation library.
+Para ver una lista completa de los estados de aprovisionamiento de equipos en la nube y lo que significan, consulte [Información](/windows-365/enterprise/device-management-overview#column-details) general sobre administración de dispositivos para equipos en la nube en la biblioteca de documentación de Windows 365.
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Captura de pantalla de la Windows 365 Todos los equipos en la nube.":::
 
@@ -101,6 +101,6 @@ La pestaña Conexiones de red local también incluye las siguientes opciones:
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[¿Qué Windows 365?](/windows-365/overview) (artículo)\
-[Windows de administración de dispositivos 365 para equipos en](/windows-365/device-management-overview) la nube (artículo)\
+[¿Qué es Windows 365?](/windows-365/overview) (artículo)\
+[Windows de administración de dispositivos 365 para equipos en](/windows-365/enterprise/device-management-overview) la nube (artículo)\
 [Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)

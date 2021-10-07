@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo agregar usuarios en Microsoft 365 para empresas.
-ms.openlocfilehash: 84edaeff1980955d1dfc00267ac1a0d63f48e9f1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5c8b8042683659ea78a10eb966f3d1482f5da218
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188894"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163750"
 ---
 # <a name="add-a-new-user"></a>Agregar un nuevo usuario
 

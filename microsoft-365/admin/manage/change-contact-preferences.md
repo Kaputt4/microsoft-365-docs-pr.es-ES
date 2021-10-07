@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -17,12 +17,12 @@ search.appverid:
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: Actualice la información de contacto de su organización y elija Microsoft 365 comunicaciones relacionadas con el producto que desea recibir.
-ms.openlocfilehash: afb69c52ba89c2a9e6ff7af014a74b0abfda4e5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: eeda3d78dcc4b33995a78e1dc5763fee07109caa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184534"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164457"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Cambiar las preferencias de contacto para las comunicaciones de Microsoft
 
@@ -45,7 +45,7 @@ Si intenta averiguar cómo se cambia la información de perfil de su compañía,
 
 5. Seleccione **Guardar**.
   
-Para Office 365 Enterprise, Microsoft 365 Empresa Estándar y Microsoft 365 Empresa Básico, cuando se inscribió por primera vez como administrador de Microsoft 365, según el país o la región de los usuarios de su organización, es posible que los usuarios se suscriba automáticamente para recibir comunicaciones relacionadas con el producto.
+Por Office 365 Enterprise, Microsoft 365 Empresa Estándar y Microsoft 365 Empresa Básico, cuando se inscribió por primera vez como administrador de Microsoft 365, según el país o la región de los usuarios de su organización, los usuarios podrían se inscriba automáticamente para recibir comunicaciones relacionadas con el producto.
   
 Para obtener respuestas a preguntas sobre facturación, consulte:
   

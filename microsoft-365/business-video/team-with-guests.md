@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo crear un equipo con invitados en Microsoft Teams.
-ms.openlocfilehash: 47af1a44f00490e66beecb99f5a9b62367810cbf
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 3438ed0526bebaa081aa0e7b4acbb0dadbfa1d5b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934244"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163713"
 ---
 # <a name="create-a-team-with-guests"></a>Crear un equipo con invitados
 

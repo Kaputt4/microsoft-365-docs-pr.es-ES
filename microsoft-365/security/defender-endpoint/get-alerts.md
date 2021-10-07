@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e295d4014231242bf1e3ae7dceaeb38dfea2fa1c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7122e239e9c4f6cef4eb3850fb6664a7a5d8d608
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221553"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163041"
 ---
 # <a name="list-alerts-api"></a>API de listas de alertas
 
@@ -314,6 +314,6 @@ Aquí tiene un ejemplo de la respuesta.
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)

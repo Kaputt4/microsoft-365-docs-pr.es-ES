@@ -4,7 +4,7 @@ description: Describe los nuevos cambios que han ocurrido en Microsoft Secure Sc
 keywords: puntuación segura de microsoft, puntuación segura, puntuación segura de Office 365, puntuación de seguridad de Microsoft, Microsoft 365 Defender portal
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 4ff06a12d6d0639b00091a93b9ba7162d7cb6264
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 59ff0e516bb6b0a5f5c89e07fb972184a5a6c837
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192444"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162307"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de La puntuación segura de Microsoft
 

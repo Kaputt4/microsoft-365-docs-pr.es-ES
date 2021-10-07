@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Obtenga información sobre cómo obtener un informe de uso de buzones de correo para conocer las actividades de los usuarios con un buzón de usuario.
-ms.openlocfilehash: 76d0d77afea7393286867686b44d95f430188ba8
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: e3c6508148db6d3a28ef8af42c223b1c75858733
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011265"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157499"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365 Informes en el Centro de administración: uso del buzón
 
@@ -45,7 +45,7 @@ Para obtener una vista del **Uso del buzón** de la organización, consulte los 
   
 :::image type="content" alt-text="Informe de uso del buzón." source="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png" lightbox="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png":::
 
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |1.  |Puede visualizar el informe **Uso del buzón** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe). |
 |2.  |Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas. |

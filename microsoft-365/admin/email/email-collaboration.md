@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: Obtenga información sobre los distintos tipos de grupos y cómo usarlos con las distintas características de colaboración de Microsoft 365.
-ms.openlocfilehash: 3e3cdd22f78711f74375c7e20e2fd0702c075bcd
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: dd320b51d538a3dff7ed539d11139d398980ca2e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775569"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164985"
 ---
 # <a name="email-collaboration"></a>Colaboración de correo electrónico
 

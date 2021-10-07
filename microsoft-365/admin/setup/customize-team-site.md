@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Obtenga información sobre cómo personalizar, organizar y administrar su sitio SharePoint de grupo con bibliotecas de documentos, listas y concentradores.
-ms.openlocfilehash: fc6aad3408df0f9c14f9d87984a60ae4c5c715b5
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ee556de76b7a4dee52feef388c84b0c4222d960d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775845"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161395"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizar el sitio de grupo para el almacenamiento y uso compartido de archivos
 
@@ -108,7 +108,7 @@ Para agregar usuarios a un grupo Microsoft 365, vea [Agregar usuarios y asignar 
   
 Obtenga información sobre cómo controlar las solicitudes de acceso [con Configurar y administrar solicitudes de acceso.](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Debes configurar aplicaciones Office en tus dispositivos para que puedas editar los archivos almacenados en el sitio de grupo desde tu tableta o teléfono. Si no instala las aplicaciones de Office en su tableta o teléfono, podrá ver los archivos en el sitio de grupo, pero no editarlos. 
     

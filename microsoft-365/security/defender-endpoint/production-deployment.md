@@ -2,15 +2,13 @@
 title: Configurar Microsoft Defender para la implementación de puntos de conexión
 description: Obtenga información sobre cómo configurar la implementación de Microsoft Defender para endpoint
 keywords: implementación, configuración, validación de licencias, configuración de inquilino, configuración de red
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab7007143fd472757f8f6489cb14babc8cda1129
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 22b4e1c1609264a5eef17e2149b4b6e50d707999
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460201"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162583"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurar Microsoft Defender para la implementación de puntos de conexión
 
@@ -163,7 +161,7 @@ Down-Level incluyen Windows estaciones de trabajo 7 SP1 y Windows 8.1, así como
 
 ### <a name="proxy-service-urls"></a>Direcciones URL del servicio proxy
 
-Las direcciones URL que incluyen v20 solo son necesarias si tienes Windows 10, versión 1803 o posterior. Por ejemplo, solo es necesario si el dispositivo está `us-v20.events.data.microsoft.com` en Windows 10 versión 1803 o posterior.
+Las direcciones URL que incluyen v20 solo son necesarias si Windows 10, versión 1803 o Windows 11 dispositivos. Por ejemplo, solo es necesario si el dispositivo está en `us-v20.events.data.microsoft.com` Windows 10 versión 1803 o Windows 11.
 
 Si un proxy o firewall bloquea el tráfico anónimo, ya que el sensor de Microsoft Defender para endpoint se conecta desde el contexto del sistema, asegúrese de que el tráfico anónimo está permitido en las direcciones URL enumeradas.
 

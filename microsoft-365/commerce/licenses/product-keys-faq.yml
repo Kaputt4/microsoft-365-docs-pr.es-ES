@@ -10,14 +10,14 @@ metadata:
   ms.topic: article
   ms.service: o365-administration
   ms.custom: commerce_vl
-  localization_priority: Normal
+  ms.localizationpriority: medium
   description: Claves del producto Preguntas más frecuentes
-  ms.openlocfilehash: 9da77700bb949fb72467516f3f195d87152d91ea
-  ms.sourcegitcommit: 095e23ba4181c86a301a25d8c898d25d1befec97
+  ms.openlocfilehash: 3a1ca8e666ab710cfd0554a4050ab69d750936d3
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/09/2021
-  ms.locfileid: "58951163"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60156779"
 title: Claves del producto Preguntas más frecuentes
 summary: ''
 sections:
@@ -73,7 +73,7 @@ sections:
   - question: >
       ¿Qué es la activación por volumen?
     answer: >
-      La activación por volumen es una solución configurable que ayuda a automatizar y administrar el proceso de activación del producto en equipos que ejecutan Windows sistemas operativos con licencia bajo un programa de licencias por volumen. La activación por volumen también se usa con otro software de Microsoft, incluidos los conjuntos de Office, vendidos en contratos de licencias por volumen y que admiten la activación por volumen. Para más información, vea:
+      La activación por volumen es una solución configurable que ayuda a automatizar y administrar el proceso de activación del producto en equipos que ejecutan Windows sistemas operativos con licencia bajo un programa de licencias por volumen. La activación por volumen también se usa con otro software de Microsoft, incluidos los conjuntos de Office, vendidos en contratos de licencias por volumen y que admiten la activación por volumen. Para más información vea:
         - [Herramientas para administrar la activación por volumen de Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
         - [Activación por volumen para Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 
@@ -135,7 +135,7 @@ sections:
   - question: >
       ¿Cuál es Herramienta de administración de activación por volumen (VAMT)?
     answer: >
-      El Herramienta de administración de activación por volumen (VAMT) es una herramienta que permite a los administradores de red y a otros profesionales de TI automatizar y administrar de forma centralizada el proceso de activación por volumen y comercial para Windows, Microsoft Office y seleccionar otros productos de Microsoft. VAMT puede administrar la activación por volumen mediante varias claves de activación (MAK) o el Windows Servicio de administración de claves (KMS). VAMT es un complemento estándar de Microsoft Management Console (MMC) que requiere Microsoft Management Console (MMC) 3.0.
+      El Herramienta de administración de activación por volumen (VAMT) es una herramienta que permite a los administradores de red y a otros profesionales de TI automatizar y administrar de forma centralizada el proceso de activación por volumen y comercial para Windows, Microsoft Office y seleccionar otros Microsoft productos. VAMT puede administrar la activación por volumen mediante varias claves de activación (MAK) o el Windows Servicio de administración de claves (KMS). VAMT es un complemento estándar de Microsoft Management Console (MMC) que requiere Microsoft Management Console (MMC) 3.0.
 
 
       Para obtener información VAMT, vea:
