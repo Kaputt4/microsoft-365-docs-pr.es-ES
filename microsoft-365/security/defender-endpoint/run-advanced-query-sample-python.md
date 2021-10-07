@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a5c1cdf9c8a6a1c3e65e62da942304a393f2d371
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 260e191a2948544ee98223c8b7f1563719693c9c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213477"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154739"
 ---
 # <a name="advanced-hunting-using-python"></a>Búsqueda avanzada de amenazas con Python
 
@@ -142,7 +142,7 @@ for result in results:
 outputFile.close()
 ```
 
-Para generar los resultados de la consulta en formato JSON en el archivo file1.jshaga lo siguiente:
+Para generar los resultados de la consulta en formato JSON en file file1.json, haga lo siguiente:
 
 ```python
 outputFile = open("D:\\Temp\\file1.json", 'w')

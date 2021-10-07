@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 18243e1d8ad908572c0dccc4cd2a3bdfefa47d46
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 90775af14d78092159d2b92736abce56a961416e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009414"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159179"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Proteja su organización contra las amenazas web
 

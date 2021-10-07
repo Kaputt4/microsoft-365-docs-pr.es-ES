@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Inicie sesión en Microsoft 365. Proteja su empresa, práctica o campaña frente a amenazas de ciberseguridad en el correo electrónico, los datos y la comunicación.
-ms.openlocfilehash: eff81da84853130da2f2dcc0aaaf2a9834477a85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cd2433adad2563528242d119011afdca208f7424
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219250"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160609"
 ---
 # <a name="sign-in-to-microsoft-365"></a>Inicie sesión en Microsoft 365
 

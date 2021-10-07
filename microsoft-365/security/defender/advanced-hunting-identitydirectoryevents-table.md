@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b42ff09f1e363f115ecc06c361c8386b328b0bcb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 40f8804c40236e680543d199e3dc6294fefa1414
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165628"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159143"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -47,24 +47,24 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
 | `Application` | string | Aplicación que realizó la acción grabada |
-| `TargetAccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta a la que se aplicó la acción grabada |
+| `TargetAccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta a la que se aplicó la acción grabada |
 | `TargetAccountDisplayName` | string | Nombre para mostrar de la cuenta a la que se aplicó la acción grabada |
 | `TargetDeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
-| `DestinationDeviceName` | cadena | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
 | `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
-| `DestinationPort` | cadena | Puerto de destino de la actividad |
-| `Protocol` | cadena | Protocolo usado durante la comunicación |
-| `AccountName` | cadena | Nombre de usuario de la cuenta |
-| `AccountDomain` | cadena | Dominio de la cuenta |
-| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
-| `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
+| `DestinationPort` | string | Puerto de destino de la actividad |
+| `Protocol` | string | Protocolo usado durante la comunicación |
+| `AccountName` | string | Nombre de usuario de la cuenta |
+| `AccountDomain` | string | Dominio de la cuenta |
+| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
+| `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure Active Directory |
 | `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
-| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo |
-| `IPAddress` | cadena | Dirección IP asignada al dispositivo durante la comunicación |
+| `DeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo |
+| `IPAddress` | string | Dirección IP asignada al dispositivo durante la comunicación |
 | `Port` | string | Puerto TCP usado durante la comunicación |
-| `Location` | cadena | Ciudad, país u otra ubicación geográfica asociada al evento |
-| `ISP` | cadena | Proveedor de servicios de Internet asociado con la dirección IP |
+| `Location` | string | Ciudad, país u otra ubicación geográfica asociada al evento |
+| `ISP` | string | Proveedor de servicios de Internet asociado con la dirección IP |
 | `ReportId` | largo | Identificador único del evento |
 | `AdditionalFields` | string | Información adicional sobre la entidad o el evento |
 

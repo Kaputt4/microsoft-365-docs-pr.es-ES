@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft 365 herramientas de exhibición de documentos electrónicos administran documentos cifrados adjuntos a mensajes de correo electrónico y almacenados en SharePoint Online y OneDrive para la Empresa.
-ms.openlocfilehash: b816990e0524222938233089e6f920b753406544
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 351a6c77d1fc0956c83661132f1111897896a724
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483068"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159913"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos
 

@@ -9,18 +9,18 @@ ms.date: 10/30/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La versión anterior de Cifrado de mensajes de Office 365 depende de Microsoft Azure Rights Management (anteriormente conocido como Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: 978a8027c79de574b80aeedabcbbd51fa6f9e2a0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c94497069d929dd3819e3ced915c8e778e983c10
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216427"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159609"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Configurar Azure Rights Management para la versión anterior del cifrado de mensajes
 

@@ -9,7 +9,7 @@ ms.reviewer: mcostea
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.collection:
 description: Obtenga información sobre las vistas de campaña en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bc2bb1adc39aae70f8ace89bf0efaaf5a7a5c5a
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 0af72653a8f180728b71b05fa044627012282c8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482852"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157703"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campaña en Microsoft Defender para Office 365
 
@@ -225,7 +225,7 @@ El diagrama contiene la información siguiente:
   |**Bloque de inquilinos**<sup>\*\*</sup>|`SFV:SKA`|El filtrado de correo no deseado bloqueó el mensaje debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
   |**User Allow**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes Caja fuerte usuario.|
   |**Bloqueo de usuario**<sup>\*\*</sup>|`SFV:BLK`|El mensaje se bloqueó mediante el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes bloqueados de un usuario.|
-  |**ZAP**|N/D|[La purga automática de hora cero (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta o cuarentena de correo no deseado. La acción se configura en directivas [contra correo no deseado.](configure-your-spam-filter-policies.md)|
+  |**ZAP**|No aplicable|[La purga automática de hora cero (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta o cuarentena de correo no deseado. La acción se configura en directivas [contra correo no deseado.](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.

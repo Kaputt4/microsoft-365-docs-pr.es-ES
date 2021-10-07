@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b3fa8c7c919edc438bb63fe4baaeca6711a3a045
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a96296f09a82fe2b2c8d5c4d5d250c48f89ffc4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212267"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156299"
 ---
 # <a name="information-protection-in-windows-overview"></a>Information Protection en Introducción de Windows
 
@@ -54,7 +54,7 @@ Las etiquetas de confidencialidad clasifican y ayudan a proteger el contenido co
 
 Los tipos de información confidencial en la Office 365 de prevención de pérdida de datos (DLP) se en dos categorías:
 
-- Predeterminado
+- Predeterminada
 - Personalizado
 
 Los tipos de información confidencial predeterminados incluyen información como números de cuenta bancaria, números de seguridad social o nacionales. Para obtener más información, vea [What the sensitive information type look for](/office365/securitycompliance/what-the-sensitive-information-types-look-for).

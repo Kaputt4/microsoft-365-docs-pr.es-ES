@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8932b28c2e87431028ae608ea56b95f340485199
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5ad5e942f60f34adb7faf35eb70b1a027124664e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187534"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157931"
 ---
 # <a name="import-indicators-api"></a>API importar indicadores
 
@@ -67,7 +67,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

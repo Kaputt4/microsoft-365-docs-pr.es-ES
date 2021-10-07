@@ -3,26 +3,24 @@ title: Crear indicadores basados en certificados
 ms.reviewer: ''
 description: Cree indicadores basados en certificados que definan la detección, prevención y exclusión de entidades.
 keywords: ioc, certificate, certificates, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b471bcfa1c4a42ddf5c49c2a0bc2129c99fd9297
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 0e74fd5a0ffc62d077f9110b014af5d3b0813afd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043352"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154847"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Crear indicadores basados en certificados
 
@@ -46,7 +44,7 @@ Es importante comprender los siguientes requisitos antes de crear indicadores pa
 
 - Esta característica está disponible si su organización usa Antivirus de Windows Defender y la protección basada en la nube está habilitada. Para obtener más información, vea [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - La versión del cliente Antimalware debe ser 4.18.1901.x o posterior.
-- Compatible con máquinas de Windows 10, versión 1703 o posterior, Windows server 2016, 2019 y Windows Server 2022.
+- Compatible con máquinas de Windows 11, Windows 10, versión 1703 o posterior, Windows server 2016, 2019 y Windows Server 2022.
 - Las definiciones de protección contra virus y amenazas deben estar actualizadas.
 - Actualmente, esta característica admite la introducción de . CER o . Extensiones de archivo PEM.
 

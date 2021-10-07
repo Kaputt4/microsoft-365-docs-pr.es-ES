@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 32d50103c6476a89f24568edeea75a206e37e227
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f3b87dc127a1cf5d19d1e310ac4b31b60f690499
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211927"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154583"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Controlar errores de búsqueda avanzados
 
@@ -53,6 +53,6 @@ La búsqueda avanzada muestra errores para notificar errores de sintaxis y siemp
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Procedimientos recomendados de búsqueda avanzada](advanced-hunting-best-practices.md)
-- [Cuotas y parámetros de uso](advanced-hunting-limits.md)
+- [Parámetros de uso y cuotas](advanced-hunting-limits.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Información general sobre kusto query language](/azure/data-explorer/kusto/query/)

@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
 ms.reviewer: esaggese
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1489671754f26d37abbc9bfbc84f59be26099c9b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 302bfdd5daa336564649e6e122f70e6f2a43ecbd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212610"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155099"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Cifrado de clave doble para Microsoft 365
 
@@ -97,7 +97,7 @@ Seguirá estos pasos generales para configurar el cifrado de clave doble para su
 1. [Clonar el repositorio de GitHub clave doble](#clone-the-dke-github-repository)
 1. [Modificar la configuración de la aplicación](#modify-application-settings)
 1. [Generar claves de prueba](#generate-test-keys)
-1. [Crear el proyecto](#build-the-project)
+1. [Compile el proyecto.](#build-the-project)
 1. [Implementar el servicio DKE y publicar el almacén de claves](#deploy-the-dke-service-and-publish-the-key-store)
 1. [Validar la implementación](#validate-your-deployment)
 1. [Registrar el almacén de claves](#register-your-key-store)
@@ -171,9 +171,9 @@ Para implementar el servicio DKE, debe modificar los siguientes tipos de configu
 - [Configuración de acceso clave](#key-access-settings)
 - [Configuración de inquilino y clave](#tenant-and-key-settings)
 
-Puede modificar la configuración de la aplicación en el appsettings.jsarchivo on. Este archivo se encuentra en el repositorio DoubleKeyEncryptionService clonado localmente en DoubleKeyEncryptionService\src\customer-key-store. Por ejemplo, en Visual Studio Code, puede examinar el archivo como se muestra en la siguiente imagen.
+Puede modificar la configuración de la aplicación en el archivo appsettings.json. Este archivo se encuentra en el repositorio DoubleKeyEncryptionService clonado localmente en DoubleKeyEncryptionService\src\customer-key-store. Por ejemplo, en Visual Studio Code, puede examinar el archivo como se muestra en la siguiente imagen.
 
-![Localizar el archivo appsettings.jsarchivo de DKE.](../media/dke-appsettingsjson.png)
+![Localizar el archivo appsettings.json para DKE.](../media/dke-appsettingsjson.png)
 
 #### <a name="key-access-settings"></a>Configuración de acceso clave
 
@@ -185,7 +185,7 @@ Elija si desea usar la autorización de correo electrónico o de roles. DKE solo
 
 ##### <a name="to-set-key-access-settings-for-dke-using-email-authorization"></a>Para establecer la configuración de acceso de clave para DKE mediante autorización de correo electrónico
 
-1. Abra el **appsettings.jsen el archivo** y busque la `AuthorizedEmailAddress` configuración.
+1. Abra el **archivo appsettings.json** y busque la `AuthorizedEmailAddress` configuración.
 
 2. Agregue la dirección de correo electrónico o las direcciones que desee autorizar. Separe varias direcciones de correo electrónico con comillas dobles y comas. Por ejemplo:
 
@@ -201,13 +201,13 @@ Elija si desea usar la autorización de correo electrónico o de roles. DKE solo
 
 4. Busque la `AuthorizedRoles` configuración y elimine toda la línea.
 
-Esta imagen muestra el **appsettings.jsen el** archivo con el formato correcto para la autorización de correo electrónico.
+Esta imagen muestra el **archivo appsettings.json** con el formato correcto para la autorización de correo electrónico.
 
-   ![El appsettings.jsarchivo que muestra el método de autorización de correo electrónico.](../media/dke-email-accesssetting.png)
+   ![El archivo appsettings.json que muestra el método de autorización de correo electrónico.](../media/dke-email-accesssetting.png)
 
 ##### <a name="to-set-key-access-settings-for-dke-using-role-authorization"></a>Para establecer la configuración de acceso de clave para DKE mediante la autorización de roles
 
-1. Abra el **appsettings.jsen el archivo** y busque la `AuthorizedRoles` configuración.
+1. Abra el **archivo appsettings.json** y busque la `AuthorizedRoles` configuración.
 
 2. Agregue los nombres de grupo de Active Directory que desee autorizar. Separe varios nombres de grupo con comillas dobles y comas. Por ejemplo:
 
@@ -223,17 +223,17 @@ Esta imagen muestra el **appsettings.jsen el** archivo con el formato correcto p
 
 4. Busque la `AuthorizedEmailAddress` configuración y elimine toda la línea.
 
-Esta imagen muestra el **appsettings.jsen el** archivo con el formato correcto para la autorización de roles.
+Esta imagen muestra el **archivo appsettings.json** con el formato correcto para la autorización de roles.
 
-   ![appsettings.jsen el archivo que muestra el método de autorización de roles.](../media/dke-role-accesssetting.png)
+   ![archivo appsettings.json que muestra el método de autorización de roles.](../media/dke-role-accesssetting.png)
 
 #### <a name="tenant-and-key-settings"></a>Configuración de inquilino y clave
 
-La configuración del inquilino y la clave de DKE se encuentran **en elappsettings.jsen el** archivo.
+La configuración de inquilino y clave de DKE se encuentra en el **archivo appsettings.json.**
 
 ##### <a name="to-configure-tenant-and-key-settings-for-dke"></a>Para configurar la configuración de inquilino y clave para DKE
 
-1. Abra el **appsettings.jsarchivo** on.
+1. Abra el **archivo appsettings.json.**
 
 2. Busque la `ValidIssuers` configuración y reemplace por su identificador de `<tenantid>` inquilino. Para localizar el identificador de inquilino, vaya a Azure Portal y vea las propiedades [del espacio empresarial.](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) Por ejemplo:
 
@@ -254,9 +254,9 @@ Busque `JwtAudience` el archivo . Reemplace por el nombre de host de la máquina
 - `TestKeys:Name`. Escriba un nombre para la clave. Por ejemplo: `TestKey1`
 - `TestKeys:Id`. Cree un GUID y introdúzcalo como `TestKeys:ID` valor. Por ejemplo, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. Puede usar un sitio como [Generador de GUID en](https://guidgenerator.com/) línea para generar aleatoriamente un GUID.
 
-Esta imagen muestra el formato correcto para la configuración del espacio empresarial y las **claves enappsettings.jsen**. `LDAPPath` se configura para la autorización de roles.
+Esta imagen muestra el formato correcto para la configuración de inquilino y claves **en appsettings.json**. `LDAPPath` se configura para la autorización de roles.
 
-![Muestra la configuración correcta de inquilino y clave para DKE en el appsettings.jsarchivo on.](../media/dke-appsettingsjson-tenantkeysettings.png)
+![Muestra la configuración de inquilino y clave correcta para DKE en el archivo appsettings.json.](../media/dke-appsettingsjson-tenantkeysettings.png)
 
 ### <a name="generate-test-keys"></a>Generar claves de prueba
 
@@ -286,9 +286,9 @@ Para generar claves:
    openssl rsa -in key.pem -pubout > pubkeyonly.pem
    ```
 
-6. En un editor de texto, abra **pubkeyonly.pem**. Copie todo el contenido del archivo **pubkeyonly.pem,** excepto la primera y la última línea, en la sección del archivo `PublicPem` **appsettings.jsarchivo** on.
+6. En un editor de texto, abra **pubkeyonly.pem**. Copie todo el contenido del archivo **pubkeyonly.pem,** excepto la primera y la última línea, en la sección `PublicPem` del archivo **appsettings.json.**
 
-7. En un editor de texto, abra **privkeynopass.pem**. Copie todo el contenido del archivo **privkeynopass.pem,** excepto la primera y la última línea, en la sección del archivo `PrivatePem` **appsettings.jsarchivo** on.
+7. En un editor de texto, abra **privkeynopass.pem**. Copie todo el contenido del archivo **privkeynopass.pem,** excepto la primera y la última línea, en la sección `PrivatePem` del archivo **appsettings.json.**
 
 8. Quite todos los espacios en blanco y las líneas nuevas de las `PublicPem` `PrivatePem` secciones y.
 
@@ -331,9 +331,9 @@ Use las siguientes instrucciones para crear el proyecto DKE localmente:
 
    ![Configurar la tarea de compilación que falta para .NET.](../media/dke-configurebuildtask.png)
 
-   1. Elija **Crear tasks.jsdesde la plantilla**.
+   1. Elija **Create tasks.json from template**.
 
-      ![Cree tasks.jsarchivo desde la plantilla para DKE.](../media/dke-createtasksjsonfromtemplate.png)
+      ![Cree un archivo tasks.json a partir de la plantilla para DKE.](../media/dke-createtasksjsonfromtemplate.png)
 
    2. En la lista de tipos de plantilla, seleccione **.NET Core**.
 
@@ -361,7 +361,7 @@ Use las siguientes instrucciones para crear el proyecto DKE localmente:
 
    La clave debe mostrarse en formato JSON.
 
-La configuración ya está completa. Antes de publicar el almacén de claves, en appsettings.js, para la configuración JwtAudience, asegúrese de que el valor del nombre de host coincide exactamente con el nombre de host de App Service. Es posible que lo haya cambiado a localhost para solucionar problemas de la compilación.
+La configuración ya está completa. Antes de publicar el almacén de claves, en appsettings.json, para la configuración JwtAudience, asegúrese de que el valor del nombre de host coincide exactamente con el nombre de host de App Service. Es posible que lo haya cambiado a localhost para solucionar problemas de la compilación.
 
 ### <a name="deploy-the-dke-service-and-publish-the-key-store"></a>Implementar el servicio DKE y publicar el almacén de claves
 
@@ -379,7 +379,7 @@ Para publicar el almacén de claves, creará una instancia de Azure App Service 
 
 2. Seleccione la suscripción y el grupo de recursos y defina los detalles de la instancia.
 
-   - Escriba el nombre de host del equipo donde desea instalar el servicio DKE. Asegúrese de que es el mismo nombre que el definido para la configuración JwtAudience en el [**appsettings.jsarchivo on.**](#tenant-and-key-settings) El valor que proporciona para el nombre también es WebAppInstanceName.
+   - Escriba el nombre de host del equipo donde desea instalar el servicio DKE. Asegúrese de que es el mismo nombre que el definido para la configuración JwtAudience en el [**archivo appsettings.json.**](#tenant-and-key-settings) El valor que proporciona para el nombre también es WebAppInstanceName.
 
    - En **Publish**, select **code** y for **Runtime stack**, select **.NET Core 3.1**.
 
@@ -462,7 +462,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 Asegúrese de que no aparecen errores en el resultado. Cuando esté listo, [registre el almacén de claves](#register-your-key-store).
 
-El nombre de clave distingue mayúsculas de minúsculas. Escriba el nombre de la clave tal como aparece en el appsettings.jsarchivo on.
+El nombre de clave distingue mayúsculas de minúsculas. Escriba el nombre de la clave tal como aparece en el archivo appsettings.json.
 
 ## <a name="register-your-key-store"></a>Registrar el almacén de claves
 
@@ -499,7 +499,7 @@ Para registrar el servicio DKE:
    - Si está probando localmente con Visual Studio, use **https://localhost:5001** .
    - En todos los casos, el esquema debe ser **https**.
 
-   Asegúrese de que el nombre de host coincide exactamente con el nombre de host de App Service. Es posible que lo haya cambiado para `localhost` solucionar problemas de la compilación. En **appsettings.jsen**, este valor es el nombre de host para el que se establece `JwtAudience` .
+   Asegúrese de que el nombre de host coincide exactamente con el nombre de host de App Service. Es posible que lo haya cambiado para `localhost` solucionar problemas de la compilación. En **appsettings.json,** este valor es el nombre de host para el que se establece `JwtAudience` .
 
 9. En **Concesión implícita,** active la casilla **tokens de** identificador.
 

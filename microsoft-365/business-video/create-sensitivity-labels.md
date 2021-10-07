@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo crear y administrar etiquetas de confidencialidad.
-ms.openlocfilehash: 26697265088a2a59ac145eeff2816b816b95a149
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 35ec82702cd1a5be3f23698f90c8129fc5c7f6f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221229"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160841"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>Proteger documentos con etiquetas de confidencialidad
 

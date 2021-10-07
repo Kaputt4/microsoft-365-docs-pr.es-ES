@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 63c12d4174e0ed3ad031735fd73e17f4625c5671
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dbba0d2a8176116de0a959910c54b5d1b454634b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188617"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158591"
 ---
 # <a name="payment-information-for-bosnia-and-herzegovina"></a>Información de pago para Bosnia y Herzegovina
 

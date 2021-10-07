@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e26e9c367015b05e1875693a5312af786a907031
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 9b33db7e4fa0b3cc2fa61c0c7a45d1a9d2f9d3b7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124450"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156335"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación mediante Microsoft Endpoint Configuration Manager
 
@@ -107,7 +107,6 @@ Siga los pasos siguientes para incorporar puntos de conexión mediante Microsoft
     ![Imagen de Microsoft Endpoint Configuration Manager wizard9.](images/configmgr-confirm.png)
 
 Después de completar esta tarea, ahora tienes una colección de dispositivos con todos los Windows en el entorno.
-
 
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Paso 2: Configurar Microsoft Defender para las funcionalidades de punto de conexión
 
@@ -331,6 +330,7 @@ Consulte [Optimizar la implementación y detecciones](/microsoft-365/security/de
 
     ![Una captura de pantalla de Microsoft Endpoint Configuration Manager1.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
+
 7. Seleccione la directiva para la colección de archivos Windows y elija **Aceptar**.
 
     ![Una captura de pantalla de Microsoft Endpoint Configuration Manager2.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
@@ -361,7 +361,9 @@ Después de completar esta tarea, ahora ha configurado correctamente Protección
 
     ![Captura de pantalla de Microsoft Endpoint Configuration Manager7.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
+
 7. Dirigir la directiva a la colección de Windows recién creada y haga clic en **Aceptar**.
+
 
     ![Captura de pantalla de Microsoft Endpoint Configuration Manager8.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 

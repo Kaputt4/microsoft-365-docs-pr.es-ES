@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector DataParser de 17a-4 Fuze para importar y archivar datos de Fuze en Microsoft 365.
-ms.openlocfilehash: 6dafd773586a179fd652504b291173d881361d4b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 6c65fef3bf5b8a3133ba20d02a141c6ae5a953b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401523"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155303"
 ---
 # <a name="set-up-a-connector-to-archive-fuze-data"></a>Configurar un conector para archivar datos de Fuze
 

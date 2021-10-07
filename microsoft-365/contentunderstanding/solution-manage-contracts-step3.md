@@ -9,15 +9,15 @@ ms.topic: article
 ms.date: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
+ms.localizationpriority: medium
 ROBOTS: ''
 description: Obtenga información sobre cómo usar Power Automate para crear el flujo para procesar los contratos mediante una Microsoft 365 solución.
-ms.openlocfilehash: 1de8c0c5ed25ee9934077d015f4e66c43e07c7c8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 205a61638f4dcca235e301111fe2028c3a74ed1c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210817"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159597"
 ---
 # <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Paso 3. Usar Power Automate para crear el flujo para procesar los contratos
 

@@ -8,15 +8,15 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información sobre el Microsoft 365 de soluciones, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7b7c7f299201a25518b187eed1bd78e7f67d678b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a0b6d6ac32f9dfcc81a93deddc081dcb77acd973
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216770"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158207"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
@@ -78,7 +78,7 @@ Desde aquí, verá las tarjetas para las siguientes soluciones:
 
 Para visitar el catálogo Microsoft 365 soluciones, vaya a e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos [https://compliance.microsoft.com](https://compliance.microsoft.com) de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la página principal del catálogo.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Por qué no veo el catálogo Microsoft 365 soluciones?**
 

@@ -7,7 +7,7 @@ ms.date: 07/13/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Obtenga información sobre cómo usar el Office 365 Content Delivery Network (CDN) para acelerar la entrega de los activos SharePoint Online.
-ms.openlocfilehash: 494f0574707693f7d36fa2e1c61ee942e4c088a6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 21ef8fd29e53e2c832a518613a3ed44d8f7687cf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210510"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154871"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -1045,7 +1045,7 @@ Puede elegir trabajar con el Office 365 CDN mediante el módulo de **PowerShell*
 + [Introducción al Shell de administración de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 + [Instalar Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Redes de entrega de contenido](./content-delivery-networks.md)
 

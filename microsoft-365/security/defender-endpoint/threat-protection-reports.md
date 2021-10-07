@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e916d0866f55d59cd4f61f2c7cf58038bb325010
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 4413c536eb5ee1b748996c21891a9801c6488fc2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399232"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159347"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Informe de protección contra amenazas en Microsoft Defender para punto de conexión
 
@@ -40,7 +40,7 @@ El panel está estructurado en dos secciones:
 
 ![Imagen del informe de protección contra amenazas.](images/threat-protection-reports.png)
 
-Sección|Descripción
+Section|Descripción
 ---|---
 1|Tendencias de alertas
 2|Resumen de alertas

@@ -2,8 +2,6 @@
 title: Administrar Microsoft Defender para endpoint con PowerShell, WMI y MPCmdRun.exe
 description: Obtenga información sobre cómo administrar Microsoft Defender para endpoint con PowerShell, WMI y MPCmdRun.exe
 keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, WMI, MPCmdRun.exe, Microsoft Defender for Endpoint, edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/23/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 27391b65b583a05e2c3d50f93dd1a0d2f3ce561b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2fe421e79efa7da204209e2df35d3be51bdbf6d1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777009"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154785"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Administrar Microsoft Defender para endpoint con PowerShell, WMI y MPCmdRun.exe
 
@@ -41,7 +39,7 @@ ms.locfileid: "59777009"
 > Se recomienda usar [Microsoft Endpoint Manager](/mem) para administrar las características de protección contra amenazas de la organización para dispositivos (también denominados puntos de conexión). Endpoint Manager incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction).
 >
 > - [Obtenga más información sobre Endpoint Manager](/mem/endpoint-manager-overview)
-> - [Co-administrar Microsoft Defender para endpoint en Windows 10 dispositivos con Configuration Manager e Intune](manage-atp-post-migration-intune.md)
+> - [Administrar Microsoft Defender para endpoint en Windows 10 y Windows 11 dispositivos con Configuration Manager e Intune](manage-atp-post-migration-intune.md)
 > - [Administrar Microsoft Defender para endpoint con Intune](manage-atp-post-migration-intune.md)
 
 Puede administrar algunas opciones Antivirus de Microsoft Defender en dispositivos con [PowerShell](#configure-microsoft-defender-for-endpoint-with-powershell), instrumental de administración de [Windows](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI) y la utilidad de línea de comandos de Protección contra malware de [Microsoft](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe). Por ejemplo, puede administrar algunas opciones Antivirus de Microsoft Defender configuración. Y, en algunos casos, puedes personalizar las reglas de reducción de superficie de ataque y la configuración de protección contra vulnerabilidades.
@@ -88,7 +86,7 @@ También puede configurar si los usuarios finales pueden ver y qué característ
 
 - [Protección de extremo: Centro de seguridad de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Introducción a la administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 

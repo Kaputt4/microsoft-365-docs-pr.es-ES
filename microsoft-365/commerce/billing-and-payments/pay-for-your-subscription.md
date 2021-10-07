@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: 128107630580bb1594d61313c6469bb83a4adfc1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9add2523eeedb9accdbc864979721fa7a3b99ac5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219157"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158639"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -40,7 +40,7 @@ Puede pagar la suscripción con tarjeta de crédito, débito o una cuenta bancar
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser un administrador global o de facturación para realizar los pasos descritos en este artículo. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+- Debe ser un administrador global o de facturación para realizar los pasos descritos en este artículo. Para más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
 - El método de pago que elija durante la finalización de la compra es el método de pago que usamos para todos los períodos de facturación futuros. Puede cambiarlo en cualquier momento.
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Pagar con tarjeta de crédito/débito o cuenta bancaria

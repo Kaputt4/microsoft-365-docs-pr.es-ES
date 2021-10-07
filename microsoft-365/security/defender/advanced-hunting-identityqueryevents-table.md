@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 89f6f83112bc6bea57a3b5f7703353adb9d87a30
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 58809ea13b725a7ee7aa9b4098d221b02fe6d35c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165613"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159131"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -47,28 +47,28 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
 | `Application` | string | Aplicación que realizó la acción grabada |
-| `QueryType` | cadena | Tipo de consulta, como QueryGroup, QueryUser o EnumerateUsers |
-| `QueryTarget` | cadena | Nombre del usuario, grupo, dispositivo, dominio o cualquier otro tipo de entidad que se está consultando |
+| `QueryType` | string | Tipo de consulta, como QueryGroup, QueryUser o EnumerateUsers |
+| `QueryTarget` | string | Nombre del usuario, grupo, dispositivo, dominio o cualquier otro tipo de entidad que se está consultando |
 | `Query` | string | Cadena usada para ejecutar la consulta |
 | `Protocol` | string | Protocolo usado durante la comunicación |
-| `AccountName` | cadena | Nombre de usuario de la cuenta |
+| `AccountName` | string | Nombre de usuario de la cuenta |
 | `AccountDomain` | string | Dominio de la cuenta |
-| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
-| `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
+| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
+| `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
-| `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
+| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
 | `DeviceName` | string | Nombre de dominio completo (FQDN) del extremo |
 | `IPAddress` | string | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
-| `Port` | cadena | Puerto TCP usado durante la comunicación |
+| `Port` | string | Puerto TCP usado durante la comunicación |
 | `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
-| `DestinationIPAddress` | cadena | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
-| `DestinationPort` | cadena | Puerto de destino de comunicaciones de red relacionadas |
-| `TargetDeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
-| `TargetAccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta a la que se aplicó la acción grabada |
-| `TargetAccountDisplayName` | cadena | Nombre para mostrar de la cuenta a la que se aplicó la acción grabada |
-| `Location` | cadena | Ciudad, país u otra ubicación geográfica asociada al evento |
+| `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `DestinationPort` | string | Puerto de destino de comunicaciones de red relacionadas |
+| `TargetDeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
+| `TargetAccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta a la que se aplicó la acción grabada |
+| `TargetAccountDisplayName` | string | Nombre para mostrar de la cuenta a la que se aplicó la acción grabada |
+| `Location` | string | Ciudad, país u otra ubicación geográfica asociada al evento |
 | `ReportId` | largo | Identificador único del evento |
-| `AdditionalFields` | cadena | Información adicional sobre la entidad o el evento |
+| `AdditionalFields` | string | Información adicional sobre la entidad o el evento |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

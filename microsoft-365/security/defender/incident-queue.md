@@ -1,7 +1,7 @@
 ---
 title: Priorizar incidentes en Microsoft 365 Defender
 description: Obtenga información sobre cómo filtrar incidentes de la cola de incidentes en Microsoft 365 Defender
-keywords: incidente, cola, información general, dispositivos, identidades, usuarios, buzón, correo electrónico, incidentes, análisis, respuesta
+keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents, analyze, response, triage
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5436494d8d94097e15f67e3b568727fe510113ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5f8a1be949c922a98d52b7d84ccc19e2ed3f9913
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192484"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154619"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "59192484"
 
 Microsoft 365 Defender aplica análisis de correlación y agrega alertas relacionadas e investigaciones automatizadas de diferentes productos en un incidente. Microsoft 365 Defender activa alertas únicas en actividades que solo se pueden identificar como malintencionadas dada la visibilidad de un extremo a otro que Microsoft 365 Defender en todo el conjunto de productos. Esta vista ofrece a los analistas de seguridad la historia de ataques más amplia, lo que les ayuda a comprender mejor y tratar las amenazas complejas en toda la organización.
 
-La **cola Incidentes muestra** una colección de incidentes que se crearon en dispositivos, usuarios y buzones. Le ayuda a ordenar los incidentes para asignar prioridades y crear una decisión de respuesta de ciberseguridad fundamentada. 
+La **cola Incidentes muestra** una colección de incidentes que se crearon en dispositivos, usuarios y buzones. Le ayuda a ordenar los incidentes para asignar prioridades y crear una decisión de respuesta de ciberseguridad fundamentada. Esto también se conoce como triaje de incidentes.
 
 You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
 
@@ -67,10 +67,10 @@ En la cola de incidentes  predeterminada, puede seleccionar Filtros para ver un 
 
 En esta tabla se enumeran los nombres de filtro disponibles.
 
-| Nombre del filtro | Description |
+| Nombre del filtro | Descripción |
 |:-------|:-----|
 | Asignado a | Puede elegir mostrar las alertas que se le han asignado o las que controla la automatización. |
-| Categories | Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. |
+| Categorías | Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. |
 | Clasificación | Filtrar incidentes en función de las clasificaciones establecidas de las alertas relacionadas. Los valores incluyen alertas verdaderas, alertas falsas o no establecidas. |
 | Confidencialidad de datos | Algunos ataques tienen por objetivo extraer datos confidenciales o importantes. Al aplicar un filtro para ver si hay datos confidenciales implicados en el incidente, puede determinar rápidamente si la información confidencial se ha visto comprometida y así dar prioridad a estos incidentes. <br><br> Solo se aplica si se ha activado Microsoft Information Protection. |
 | Grupo de dispositivos | Filtrar por grupos de dispositivos definidos. |
@@ -107,7 +107,7 @@ Después de determinar qué incidente requiere la prioridad más alta, selecció
 - [Administrar](manage-incidents.md) las propiedades del incidente para etiquetas, asignación, resolución inmediata de incidentes falsos positivos y comentarios.
 - Comience las [investigaciones](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)

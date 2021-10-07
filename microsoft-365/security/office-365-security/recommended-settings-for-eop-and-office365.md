@@ -9,7 +9,7 @@ ms.date: ''
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si quiere ser más estricto? ¿Y qué extras obtiene si también usa Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c7ac68c1085a748b82007ff3a890e7dc42b46ce3
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: ecb8094c73aedc4d737043f2682bbd1a1258acfa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043220"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157583"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365
 
@@ -147,7 +147,7 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Configuración de protección**|||||
 |**Habilitar el filtro de datos adjuntos común** <p> _EnableFileFilter_|No seleccionada <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Esta configuración pone en cuarentena los mensajes que contienen datos adjuntos ejecutables según el tipo de archivo, independientemente del contenido de los datos adjuntos.|
@@ -218,7 +218,7 @@ Para obtener más información acerca de esta configuración, consulte [Advanced
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Umbral de correo electrónico de suplantación de identidad** <p> _PhishThresholdLevel_|**1- Estándar** <p> `1`|**2 : agresivo** <p> `2`|**3: más agresivo** <p> `3`||
 |
@@ -231,7 +231,7 @@ Para obtener más información acerca de esta configuración, vea Configuración
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Protección contra & phishing**|||||
 |**Permitir a los usuarios proteger** (protección de usuario suplantada) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|No seleccionada <p> `$false` <p> ninguno|Seleccionado <p> `$true` <p> \<list of users\>|Seleccionado <p> `$true` <p> \<list of users\>|Se recomienda agregar usuarios (remitentes de mensajes) en roles clave. Internamente, los remitentes protegidos pueden ser su director general, director financiero y otros líderes sénior. Externamente, los remitentes protegidos podrían incluir miembros del consejo o su junta directiva.|
@@ -285,7 +285,7 @@ En PowerShell, use el cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Activar Microsoft Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
 |**Activar documentos Caja fuerte para Office clientes** <p> _EnableSafeDocs_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`|Esta característica solo está disponible y significativa con licencias que no se incluyen en Defender para Office 365 (por ejemplo, Microsoft 365 E5 o Seguridad de Microsoft 365 E5). Para obtener más información, [vea Caja fuerte Documents en Microsoft 365 E5](safe-docs.md).|
@@ -327,7 +327,7 @@ En PowerShell, use el cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Bloquear las siguientes direcciones URL** <p> _ExcludedUrls_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`|No tenemos ninguna recomendación específica para esta configuración. <p> Para obtener más información, vea ["Bloquear las siguientes direcciones URL" para obtener Caja fuerte vínculos](safe-links.md#block-the-following-urls-list-for-safe-links).
 |**Usar Caja fuerte vínculos en Office 365 aplicaciones** <p> _EnableSafeLinksForO365Clients_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Usa Caja fuerte links en aplicaciones Office 365 de escritorio y móviles (iOS y Android). Para obtener más información, [consulta Caja fuerte configuración de vínculos para Office 365 aplicaciones](safe-links.md#safe-links-settings-for-office-365-apps).|
@@ -348,7 +348,7 @@ En PowerShell, use los [cmdlets New-SafeLinksPolicy](/powershell/module/exchange
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Configuración de protección**|||||
 |**Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes** <p> _IsEnabled_|**Desactivado** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`||

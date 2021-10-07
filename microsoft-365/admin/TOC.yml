@@ -2,7 +2,6 @@
   href: index.yml
   items:
     - name: Introducción
-      href: setup/index.yml
       items:
         - name: Registrarse
           href: admin-overview/sign-up-for-office-365.md
@@ -103,7 +102,6 @@
         - name: Servicio de asistencia de Azure Information Protection
           href: services-in-china/parity-between-azure-information-protection.md
     - name: 'Administrar usuarios, grupos y contraseñas'
-      href: add-users/index.yml
       items:
         - name: Usuarios
           items:
@@ -180,7 +178,6 @@
             - name: Establecer directiva de expiración de contraseña
               href: manage/set-password-expiration-policy.md
     - name: Administrar correo electrónico y calendarios
-      href: email/index.yml
       items:
         - name: Sobre la configuración del correo electrónico del usuario
           href: email/office-365-user-email-settings.md
@@ -217,7 +214,6 @@
         - name: Administrar otros correos para su organización
           href: email/configure-clutter.md
     - name: Administrar dominios
-      href: get-help-with-domains/index.yml
       items:
         - name: Agregar un dominio
           href: setup/add-domain.md
@@ -240,7 +236,6 @@
         - name: Solución de problemas de dominios
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Administrar los datos y servicios
-      href: manage/index.yml
       items:
         - name: Supervisar la actividad de Microsoft 365 mediante informes
           href: activity-reports/activity-reports.md
@@ -348,7 +343,6 @@
         - name: Una guía para cumplimiento normativo RGPD
           href: security-and-compliance/gdpr-compliance.md
     - name: Administra los dispositivos y datos de las aplicaciones
-      href: devices/index.yml
       items:
         - name: Métodos de protección de datos de dispositivos y aplicaciones
           href: devices/choose-device-security.md
@@ -421,7 +415,6 @@
             - name: Solucionar problemas
               href: basic-mobility-security/troubleshoot.md
     - name: Trabajar con clientes
-      href: work-with-customers/index.yml
       items:
         - name: Compartir archivos y sitios con usuarios invitados
           href: manage/share-sites-with-external-users.md

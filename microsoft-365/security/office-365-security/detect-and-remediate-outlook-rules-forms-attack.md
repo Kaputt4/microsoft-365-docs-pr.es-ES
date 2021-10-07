@@ -11,19 +11,19 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir los ataques de Outlook y las inserciones de formularios personalizados en Office 365
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0846051b65b34ec26358f87bb4ca49302573e6e7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6c715552fedeefeb87206d889aa448609e8d7f60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165550"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157643"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Detectar y corregir Outlook reglas y ataques de inserciones de formularios personalizados
 
@@ -140,7 +140,7 @@ Deberá tener derechos de administrador global para ejecutar el script porque el
 
 3. Abra una instancia de PowerShell como administrador y abra la carpeta en la que guardó el script.
 
-4. Ejecute esta línea de comandos de PowerShell de la siguiente `.\Get-AllTenantRulesAndForms.ps1` manera.\Get-AllTenantRulesAndForms.ps1
+4. Ejecute esta línea de comandos de PowerShell de la `.\Get-AllTenantRulesAndForms.ps1` siguiente manera.\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>Interpretación de la salida
 

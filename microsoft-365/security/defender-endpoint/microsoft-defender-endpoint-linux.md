@@ -3,15 +3,13 @@ title: Microsoft Defender para punto de conexión en Linux
 ms.reviewer: ''
 description: Describe cómo instalar y usar Microsoft Defender para Endpoint en Linux.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cdf022be492701e790606479877bf57f6f426094
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 1717a184bb03bbc4165e4637a1a04557925f8abb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483584"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157919"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -129,6 +127,10 @@ Después de habilitar el servicio, es posible que deba configurar la red o el fi
   > [!NOTE]
   > Los eventos del sistema capturados por las reglas agregadas se agregarán a (s) y pueden afectar a la auditoría de host y `/etc/audit/rules.d/` `audit.log` a la colección ascendente. Los eventos agregados por Microsoft Defender para Endpoint en Linux se etiquetarán con `mdatp` clave.
 
+### <a name="configuring-exclusions"></a>Configuración de exclusiones
+
+Al agregar exclusiones a Antivirus de Microsoft Defender, debe tener en cuenta los errores de [exclusión comunes para Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+
 ### <a name="network-connections"></a>Conexiones de red
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Debe asegurarse de que no hay reglas de filtrado de red o firewall que denieguen el acceso a estas direcciones URL. Si lo hay, es posible que deba crear una regla *de* permitir específicamente para ellos.
@@ -166,6 +168,10 @@ Microsoft publica periódicamente actualizaciones de software para mejorar el re
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>Cómo configurar Microsoft Defender para punto de conexión en Linux
 
 Las instrucciones sobre cómo configurar el producto en entornos empresariales están disponibles en Establecer preferencias para [Microsoft Defender para Endpoint en Linux.](linux-preferences.md)
+
+## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>Las aplicaciones comunes para Microsoft Defender para endpoint pueden afectar
+
+Las cargas de trabajo de E/S elevadas de determinadas aplicaciones pueden experimentar problemas de rendimiento cuando se instala Microsoft Defender para endpoint. Estas incluyen aplicaciones para escenarios para desarrolladores como Jenkins y Jira, y cargas de trabajo de base de datos como OracleDB y Postgres. Si experimenta una degradación del rendimiento, considere la posibilidad de establecer exclusiones para aplicaciones de confianza, teniendo en [cuenta](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) los errores de exclusión Antivirus de Microsoft Defender comunes. Para obtener instrucciones adicionales, considere la posibilidad de consultar documentación sobre las exclusiones antivirus de aplicaciones de terceros.
 
 ## <a name="resources"></a>Recursos
 

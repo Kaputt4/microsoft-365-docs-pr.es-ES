@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Obtén información sobre cómo obtener el informe de uso de aplicaciones de correo electrónico para saber acerca de las aplicaciones de correo electrónico que se conectan a Exchange Online y la Outlook versión que usan los usuarios.
-ms.openlocfilehash: d11d06b442bbf5008f66af3aa7eeded512c1e8b3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 11894cc3d7115d2b1050957d2b63b7c2e3e039e3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185489"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156011"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Microsoft 365 Informes en el Centro de administración: uso de aplicaciones de correo electrónico
 
@@ -45,7 +45,7 @@ Para obtener una vista de la actividad de las aplicaciones de correo electrónic
   
 ![Clientes de correo electrónico usados.](../../media/d78af7db-2b41-4d37-8b6e-bc7e47edd1dd.png)
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |1.  <br/> |El **informe de uso de aplicaciones** de correo electrónico se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
 |2.  <br/> |Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas.  <br/> |

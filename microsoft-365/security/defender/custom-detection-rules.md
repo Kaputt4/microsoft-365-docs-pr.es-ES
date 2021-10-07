@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c1d0095860242492dc8dd5e370f8583aaed7cff4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a267921468bfc72513a54b11d9ca58b539848ac8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192567"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157715"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -231,7 +231,7 @@ En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [N
 >[!NOTE]
 >Es posible que algunas columnas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

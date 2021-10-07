@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
 description: Obtenga información sobre las aplicaciones Microsoft Teams que se usan en su organización obteniendo el Microsoft Teams de uso de aplicaciones de Microsoft 365 Informes.
-ms.openlocfilehash: 19f69cd45d578945e4e2ad0de88eeb94ca2d7991
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: cf593d2af8912bc09b8b58fd5091349edb23a836
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564993"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158927"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365 Informes en el Centro de administración: Microsoft Teams de dispositivos
 
@@ -48,7 +48,7 @@ Para obtener información sobre el uso de aplicaciones de Microsoft Teams, consu
   
 ![Microsoft 365: Microsoft Teams de la aplicación.](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
-|Elemento|Description|
+|Elemento|Descripción|
 |:-----|:-----|
 |1.  <br/> |Puede visualizar el informe **Uso de dispositivos de Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
 |2.  <br/> |Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas.  <br/> |

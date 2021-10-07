@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo actualizar el método de pago para Microsoft 365 para empresas.
-ms.openlocfilehash: a5c6c5082c5d4236b5eb7ab9e6c3af45793e16cb
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: a43f60201a282c8735480aa98f33054edbf59313
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401535"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160641"
 ---
 # <a name="update-the-payment-method-for-your-subscription"></a>Actualizar el método de pago de la suscripción
 
@@ -38,7 +38,7 @@ Puedes actualizar fácilmente el método de pago de tu suscripción Microsoft 36
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Para poder realizar las tareas de este artículo, debe ser un administrador global o de facturación. Para más información, consulte[Sobre los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles).
+Para poder realizar las tareas de este artículo, debe ser un administrador global o de facturación. Para más información, vea [Sobre los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="try-it"></a>¿Se atreve?
 

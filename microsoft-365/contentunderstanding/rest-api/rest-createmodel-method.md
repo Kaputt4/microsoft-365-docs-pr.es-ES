@@ -9,14 +9,14 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Use la API de REST para crear un modelo y su tipo de contenido asociado.
-ms.openlocfilehash: 1c5bd84c777774edc1aa0c2419181f7b84aa4707
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c74eda4e3136e2c391c89fc012628bde2ce172f4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165875"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159573"
 ---
 # <a name="create-model"></a>Crear modelo
 

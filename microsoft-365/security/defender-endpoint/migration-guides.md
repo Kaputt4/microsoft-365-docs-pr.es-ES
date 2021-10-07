@@ -1,14 +1,13 @@
 ---
 title: Guías de migración para cambiar a Microsoft Defender para endpoint
 description: Obtenga información sobre cómo cambiar de una solución que no Microsoft 365 Defender a Microsoft Defender para endpoint
-search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-scenario
@@ -17,12 +16,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 1fd410be19a8b5181cb2ef2b88d53e198753c7a3
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 81de8401a9b09fdcc008a02a240bb66010d6ef33
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776745"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154763"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>Cambiar a Microsoft Defender para endpoint
 
@@ -46,11 +45,12 @@ Si estás pensando en moverte a Defender para Endpoint, tenemos instrucciones pa
 |Ya has migrado o incorporado a Defender para endpoint. Desea obtener ayuda con los pasos siguientes, como administrar la configuración de seguridad, configurar más características o ajustar las directivas de seguridad.|[Administrar Microsoft Defender para endpoint, posterior a la migración](manage-atp-post-migration.md)|
 |
 
+
 ## <a name="do-you-have-feedback-for-us"></a>¿Tiene comentarios para nosotros?
 
 Háganos saber lo que piensa. Envíe sus comentarios en la parte inferior de la página. Tomaremos en cuenta sus comentarios a medida que sigamos mejorando y agregando a nuestra guía de migración.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection)
 - [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-atp)

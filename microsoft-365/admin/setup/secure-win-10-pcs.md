@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo proteger Windows 10 equipos después de configurar Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 7579ec2b846f58fefcd61c744a56808ece591dc7
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: e89dbd21edc05c7f930f57bdef59ad5242041c9e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786218"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155975"
 ---
 # <a name="secure-windows-10-computers"></a>Proteger equipos con Windows 10
 

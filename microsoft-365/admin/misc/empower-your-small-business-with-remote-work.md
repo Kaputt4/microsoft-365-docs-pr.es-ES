@@ -8,19 +8,19 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Encuentre la información de instrucciones más reciente, sugerencias, recursos y instrucciones sobre el trabajo remoto para empresas que usan Microsoft 365.
-ms.openlocfilehash: 2e2ce2c9b7e204a56a0deccc758ba19d7239c632
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bff6e8b54262ab4bc71f219ccfe401877269d0ee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187009"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158735"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Potencie su pequeña empresa con el trabajo a distancia
 

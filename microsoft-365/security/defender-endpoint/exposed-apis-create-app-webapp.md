@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f9c61d870f15536ceadd000da5d9123e0dd918e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d98a642450dd47088446144db01fab0a73e24855
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222691"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157979"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Crear una aplicación para tener acceso a Microsoft Defender para endpoint sin un usuario
 
@@ -222,6 +222,6 @@ A continuación se muestra un ejemplo de envío de una solicitud para obtener un
     // Do something useful with the response
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [API compatibles de Microsoft Defender para punto de conexión](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint en nombre de un usuario](exposed-apis-create-app-nativeapp.md)

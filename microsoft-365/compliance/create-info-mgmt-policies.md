@@ -9,7 +9,7 @@ ms.date: 5/16/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - OSU150
@@ -22,12 +22,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar una directiva de administración de información para controlar cuánto tiempo se conserva la información y realizar un seguimiento de quién usa la información.
-ms.openlocfilehash: eb5d493cfc8f442c5210b99ec394ebf72f30086e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7307e496349360777e7f5aa7b49948f113d91387
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165918"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156503"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Crear y aplicar directivas de administración de información
 

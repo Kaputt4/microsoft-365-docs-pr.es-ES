@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo Microsoft Compliance Manager calcula una puntuación personalizada en función de las acciones realizadas para abordar los riesgos y mejorar su posición de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26ef0f73a8da9403c2d1fd8248f828d6faf7f6e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b3b250391d04a8bf7388c761bcb00fe7cf99a4a5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184278"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156515"
 ---
 # <a name="compliance-score-calculation"></a>Cálculo de la puntuación de cumplimiento
 
@@ -110,7 +110,7 @@ A las acciones se les asigna un valor de puntuación en función de si son oblig
   
 Cada acción tiene un valor asignado en el Administrador de cumplimiento en función del riesgo que representa:
 
-|**Tipo**|**Puntuación asignada**|
+|**Type**|**Puntuación asignada**|
 |:-----|:-----|
 | Obligatorio preventivo | 27 |
 | Discrecional preventiva | 9  |

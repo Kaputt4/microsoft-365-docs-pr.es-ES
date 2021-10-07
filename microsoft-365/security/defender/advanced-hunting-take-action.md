@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b708fa898d1f84efdb5e885b786619e481099ac0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 30e3d3ffbe2bf95def8c2c62906b82abb1356213
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165604"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159107"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Realizar acciones en los resultados avanzados de la consulta de búsqueda
 

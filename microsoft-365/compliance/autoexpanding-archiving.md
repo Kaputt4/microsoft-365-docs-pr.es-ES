@@ -1,5 +1,5 @@
 ---
-title: Información general sobre el archivado de expansión automática
+title: Información general sobre el archivado de ampliación automática
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo adicional para Exchange Online buzones de correo.
-ms.openlocfilehash: 80c8ac2abd7dda63e8661dd82a145163c5a8d98d
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: e3c203b7c29732d09adedf6282880f7e2805d428
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60015487"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155087"
 ---
-# <a name="overview-of-auto-expanding-archiving"></a>Información general sobre el archivado de expansión automática
+# <a name="overview-of-auto-expanding-archiving"></a>Información general sobre el archivado de ampliación automática
 
 En Office 365, los buzones de archivo proporcionan a los usuarios espacio de almacenamiento de buzones de correo adicional. Una vez habilitado el buzón de archivo de un usuario, hay disponible hasta 100 GB de almacenamiento adicional. En el pasado, cuando se alcanzó la cuota de almacenamiento de 100 GB, las organizaciones tuvieron que ponerse en contacto con Microsoft para solicitar espacio de almacenamiento adicional para un buzón de archivo. Ese ya no es el caso.
 

@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso del explorador de Microsoft mediante el panel Microsoft 365 informes en la Centro de administración de Microsoft 365.
-ms.openlocfilehash: 0e2d3b2ecc0ad196a64f15966fe034edb2601555
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f7878ddaef778c3a8a751f0ab1765df26b7c3a58
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166507"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156047"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Informes en el Centro de administración: uso del explorador de Microsoft
 
@@ -50,7 +50,7 @@ Puede encontrar esta característica en la página de informe. Una vez creado el
 
 :::image type="content" alt-text="Informe de uso del explorador de Microsoft." source="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png" lightbox="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png":::
 
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |1. |El **informe de uso del** explorador de Microsoft se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. |
 |2. |Los datos de cada informe suelen abarcar hasta los últimos siete días. |

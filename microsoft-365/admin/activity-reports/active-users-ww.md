@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365 y averiguar cuántas licencias de productos se usan.
-ms.openlocfilehash: 456d561246a1c2073b571fa5c48ed97cc9f71849
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: abb2c4459ac52151fbf1af5712e52ac49f0d5762
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166518"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156071"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Evaluar el informe Microsoft 365 usuarios activos
 

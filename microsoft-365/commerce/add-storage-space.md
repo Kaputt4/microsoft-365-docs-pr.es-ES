@@ -9,7 +9,7 @@ ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Agregue almacenamiento de archivos en su Microsoft 365 suscripción. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint Online y OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: 5c08b105271f3b5297c1ca7258f7b723164e1fe0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8a9fa6660164f827a0cafbe128d993adac7e983c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219240"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160553"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Agregar espacio de almacenamiento para la suscripción
 
@@ -39,7 +39,7 @@ Si empieza a quedarse sin espacio de almacenamiento en las colecciones de sitios
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o SharePoint para realizar las tareas de este artículo. Para obtener más información, vea [Asignar roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o SharePoint para realizar las tareas de este artículo. Para obtener más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Ver almacenamiento disponible
 
