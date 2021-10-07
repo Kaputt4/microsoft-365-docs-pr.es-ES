@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo filtrar datos mediante la característica de importación inteligente en el Microsoft 365 importar archivos PST al Microsoft 365.
-ms.openlocfilehash: b893c0678d2821855bfc09ee703e3aa4cb8119cb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0c321c4bcdb413c42c5a3edff1f19e2a34c093d1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191494"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200514"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrar datos al importar archivos PST
 
@@ -139,7 +139,7 @@ Después de crear un trabajo de importación de PST, siga estos pasos para filtr
     |:-----|:-----|
     |IPM.Activity  <br/> |Entradas del Diario  <br/> |
     |IPM.Document  <br/> |Documentos y archivos (no adjuntos a un mensaje de correo electrónico)  <br/> |
-    |IPM. Archivo  <br/> |(igual que IPM.Document)  <br/> |
+    |IPM. Archivo  <br/> |(igual que IPM. Document)  <br/> |
     |IPM. Note.IMC.Notification  <br/> |Informes enviados por correo de Internet Conectar, que es la Exchange Server a Internet  <br/> |
     |IPM. Note.Microsoft.Fax  <br/> |Mensajes de fax  <br/> |
     |IPM. Note.Rules.Oof.Template.Microsoft  <br/> |Mensajes de autor profunda fuera de la oficina  <br/> |

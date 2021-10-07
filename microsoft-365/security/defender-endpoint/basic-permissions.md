@@ -2,26 +2,24 @@
 title: Use permisos básicos para obtener acceso a Centro de seguridad de Microsoft Defender
 description: Obtenga información sobre cómo usar permisos básicos para obtener acceso al portal de Microsoft Defender para endpoints.
 keywords: asignar roles de usuario, asignar acceso de lectura y escritura, asignar acceso de solo lectura, usuario, roles de usuario, roles
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: abdf9f72c4ae023cdc8bde76d96ce641b2e48b9a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 05e9eadb9047fd4a2c8a4d01ecefc3ec2f73f9db
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222994"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207995"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Uso de permisos básicos para acceder al portal
 

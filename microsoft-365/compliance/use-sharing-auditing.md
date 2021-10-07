@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: El administrador puede aprender a usar la auditoría de uso compartido en el registro de auditoría Microsoft 365 para identificar los recursos compartidos con usuarios fuera de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d6e25b4bc2be325061996cee61fd4d2c1ccb786
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ff05b655617608332b4b838e07a6af55e8b4d010
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216197"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193176"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Usar el uso compartido de auditoría en el registro de auditoría
 

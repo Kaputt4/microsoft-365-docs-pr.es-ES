@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: Cuando se agrega un custodio a un caso Advanced eDiscovery, cualquier contenido que se consideró parcialmente indizado se vuelve a procesar para que sea totalmente posible realizar búsquedas.
-ms.openlocfilehash: 8a43b0cd9b7fcac1745b917dc5a1c198fa2a1e61
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 205594031bcfb65b882d10217ccdcd10e4ed014d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184041"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201054"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Clasificación avanzada de los datos de administración
 
@@ -41,7 +41,7 @@ Para obtener más información sobre el procesamiento de soporte técnico y elem
 
 Una vez completado el proceso de indización avanzada, puede comprender la eficacia del reprocesamiento.  En la vista Resultados  de indización avanzada de la ficha Procesamiento de un caso, el gráfico enumera el número de elementos agregados al *índice híbrido*.  El índice híbrido es donde eDiscovery avanzado almacena el contenido que se ha vuelto a procesar.
 
-Esta vista también incluye el número de elementos que requieren corrección y otro gráfico de errores por tipo de archivo. Para más información, vea:
+Esta vista también incluye el número de elementos que requieren corrección y otro gráfico de errores por tipo de archivo. Para más información vea:
 
 - [Corrección de errores al procesar los datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 

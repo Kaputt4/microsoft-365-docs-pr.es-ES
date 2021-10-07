@@ -9,7 +9,7 @@ ms.date: 09/29/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Obtenga información sobre cómo usar el Administrador de cumplimiento y puntuación de cumplimiento para mejorar el nivel de protección de los datos personales.
-ms.openlocfilehash: 26e9f54ce77869f4f6ef07c18147483628ddc223
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f42835304ca27fa1d30ff3c1e5143e87d2b95c75
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214140"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180656"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Usar el Administrador de cumplimiento para administrar acciones de mejora
 

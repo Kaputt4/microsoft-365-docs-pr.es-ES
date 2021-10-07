@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Puede agregar orígenes de datos que no son custodiados a Advanced eDiscovery caso y colocar una retención en el origen de datos. Los orígenes de datos que no son custodiados se reindexa, por lo que cualquier contenido que se marcó como parcialmente indizado se vuelve a procesar para que pueda realizar búsquedas de forma completa y rápida.
-ms.openlocfilehash: afa28ce8be5f7a051c84111c65d6b993b97b6c04
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a4702ebdfbd41b2541c51380a1d44dd133d506c9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216757"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193224"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>Agregar orígenes de datos sin custodia a un Advanced eDiscovery caso
 

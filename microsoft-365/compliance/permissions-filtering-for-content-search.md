@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Use el filtrado de permisos de búsqueda para permitir que los administradores de exhibición de documentos electrónicos busquen solo un subconjunto de buzones y sitios de la organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6452f2dd17d93ce30065aa5636d6cacf2818b05d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 785fd1237cab66a898307724c5142a6baf4d6120
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186129"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200430"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configurar el filtrado de permisos para eDiscovery
 
@@ -139,7 +139,7 @@ Tenga en cuenta las siguientes consideraciones al configurar el parámetro *Filt
 
 - Debe crear un filtro de permisos de búsqueda para impedir explícitamente que los usuarios busquen ubicaciones de contenido en un servicio específico (por ejemplo, impedir que un usuario busque en cualquier buzón de Exchange o en cualquier sitio SharePoint). En otras palabras, la creación de un filtro de permisos de búsqueda que permite a un usuario buscar en todos los SharePoint de la organización no impide que ese usuario busque buzones. Por ejemplo, para permitir que SharePoint administradores solo busquen sitios SharePoint, debe crear un filtro que les impida buscar buzones. Del mismo modo, para permitir que Exchange administradores solo busquen buzones de correo, debe crear un filtro que les impida buscar sitios.
 
-### <a name="users"></a>*Usuarios*
+### <a name="users"></a>*Users*
 
 El  _parámetro Users_ especifica los usuarios que obtienen este filtro aplicado a sus búsquedas. Identifique a los usuarios por su alias o su dirección SMTP principal. Se pueden especificar varios valores separados por comas, o bien puede asignar el filtro a todos los usuarios con el valor **Todos**.
 
@@ -266,7 +266,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 El  _parámetro FilterName_ especifica el nombre del filtro de permisos.
 
-### <a name="users"></a>*Usuarios*
+### <a name="users"></a>*Users*
 
 El  _parámetro Users_ especifica los usuarios que obtienen este filtro aplicado a sus búsquedas. Dado que se trata de una propiedad de varios valores, la especificación de un usuario o grupo de usuarios con este parámetro sobrescribe la lista de usuarios existente. Vea los ejemplos siguientes para ver la sintaxis para agregar y quitar usuarios seleccionados.
 

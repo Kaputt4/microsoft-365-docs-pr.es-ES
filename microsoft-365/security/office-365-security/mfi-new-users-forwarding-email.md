@@ -7,17 +7,17 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 description: Los administradores pueden aprender a usar la información sobre nuevos usuarios que reenvía correo electrónico en el Centro de seguridad & cumplimiento para investigar cuándo los usuarios de su organización reenvía mensajes a nuevos dominios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dedef9cdd407859b69a0d15571f3131138ddcccb
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 0e5ec29849c50f8d012de1886e997b67f1f191ee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988936"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176540"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuevos usuarios reenviar información de correo electrónico en el Centro de seguridad & cumplimiento
 

@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
 ms.technology: mde
-ms.openlocfilehash: 2d290352006b09be0d15a5df55533500db2fadb0
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 7ea8fd8a87e15291f0f65e6f21bb452efe72383c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507775"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207108"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>Asignar acceso de usuario a Centro de seguridad de Microsoft Defender
 

@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El área de solicitud de derechos de sujeto en administración de privacidad de Microsoft le ayuda a encontrar datos personales y colaborar en la revisión del contenido y la creación de informes.
-ms.openlocfilehash: 76c35bd7ad4ef557db75b61939ac5ebbaa001384
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: deb5bc50aa047cd336684e586ee3bf86286417c1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481029"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207216"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Administrar solicitudes de derechos de sujeto en la administración de privacidad (versión preliminar)
 

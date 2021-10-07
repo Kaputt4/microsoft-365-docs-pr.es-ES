@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +21,12 @@ ms.custom:
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en Microsoft Defender para Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2e6a237295a979797cd8884d07d1afe8e284cace
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d6f6f2e849355db3dd8dfd44fe53b3ddbf2971d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214327"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207540"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
@@ -115,7 +115,7 @@ Microsoft Defender para Office 365 usa control de acceso basado en roles. Los pe
 |Integrar Microsoft Defender para Office 365 Plan 2 con Microsoft Defender para endpoint <p> Integrar Microsoft Defender para Office 365 Plan 2 con un servidor SIEM|El rol **Administrador global o** administrador de seguridad asignado Azure Active Directory ( ) o el Centro de administración de Microsoft 365 (  <https://portal.azure.com> <https://admin.microsoft.com> ). <p> --- **más** --- <p> Un rol adecuado asignado en aplicaciones adicionales [(como Centro de seguridad de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor SIEM).|
 |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre los rastreadores de amenazas: nuevos y notables](threat-trackers.md)
 - [Buscar e investigar el correo electrónico malintencionado que se entregó (Office 365 de amenazas y respuesta)](investigate-malicious-email-that-was-delivered.md)

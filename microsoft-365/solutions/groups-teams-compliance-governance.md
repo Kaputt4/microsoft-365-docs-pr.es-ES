@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre las opciones de cumplimiento para Microsoft 365 grupos, Teams y SharePoint colaboración.
-ms.openlocfilehash: 93bf2830d29f21f2239a17b9c2e381c46e85eea1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: acc32d6cff18e9535a29eeec773a5034480a3595
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187230"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207420"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opciones de cumplimiento para Microsoft 365 grupos, Teams y SharePoint colaboración
 
@@ -85,7 +85,7 @@ Puede usar etiquetas de confidencialidad para cifrar archivos, lo que permite qu
 
 - [Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](../compliance/encryption-sensitivity-labels.md)
 
-- [Configuración de un equipo con aislamiento de seguridad](./secure-teams-security-isolation.md)
+- [Configurar un equipo con aislamiento de seguridad](./secure-teams-security-isolation.md)
 
 Recursos adicionales:
 

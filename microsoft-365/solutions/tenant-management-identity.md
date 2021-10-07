@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente el modelo de identidad correcto para sus Microsoft 365 inquilinos y aplique inicios de sesión de usuario fuertes.
-ms.openlocfilehash: cd67db1c70c4f3aaa4ec9784e1de6992dd40300a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 10757c2fd88df9b9e30905f067432a1034c24421
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192134"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176288"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 3. Identidad de su Microsoft 365 para inquilinos empresariales
 
@@ -73,10 +73,10 @@ Para aumentar la seguridad de los inicios de sesión de usuario, use las caracte
 
 | Funcionalidad | Descripción | Más información | Requisitos de licencias |
 |:-------|:-----|:-----|:-----|:-----|
-| Windows Hello para empresas | Reemplaza las contraseñas por una autenticación segura en dos fases al iniciar sesión en un Windows dispositivo. Esta es un nueva forma de inicio de sesión que vincula el dispositivo de un usuario con un factor biométrico o un PIN. | [Introducción a Windows Hello para empresas](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 o E5 |
-| Protección de contraseñas de Azure AD | Detecta y bloquea las contraseñas débiles conocidas y sus variantes y también puede bloquear términos débiles adicionales que son específicos de su organización. | [Configurar la protección con contraseña de Azure AD](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 o E5 |
-| Use la autenticación multifactor (MFA) | MFA requiere que los inicios de sesión del usuario se sometán a una comprobación adicional más allá de la contraseña de la cuenta de usuario, como la verificación con una aplicación para smartphones o un mensaje de texto enviado a un smartphone. Vea [este vídeo para](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) obtener instrucciones sobre cómo los usuarios establecen MFA. | [MFA para Microsoft 365 para empresas](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 o E5 |
-| Configuraciones de acceso a dispositivos e identidades | Configuración y directivas que constan de características de requisitos previos recomendadas y su configuración combinadas con las directivas de acceso condicional, Intune y Azure AD Identity Protection que determinan si se debe conceder una solicitud de acceso determinada y en qué condiciones.  | [Configuraciones de acceso a dispositivos e identidades](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 o E5 |
+| Windows Hello para empresas | Reemplaza las contraseñas por una autenticación segura en dos fases al iniciar sesión en un Windows dispositivo. Esta es un nueva forma de inicio de sesión que vincula el dispositivo de un usuario con un factor biométrico o un PIN. | [Introducción a Windows Hello para empresas](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 o E5 |
+| Protección de contraseñas de Azure AD | Detecta y bloquea las contraseñas débiles conocidas y sus variantes y también puede bloquear términos débiles adicionales que son específicos de su organización. | [Configurar la protección con contraseña de Azure AD](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 o E5 |
+| Use la autenticación multifactor (MFA) | MFA requiere que los inicios de sesión del usuario se sometán a una comprobación adicional más allá de la contraseña de la cuenta de usuario, como la verificación con una aplicación para smartphones o un mensaje de texto enviado a un smartphone. Vea [este vídeo para](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) obtener instrucciones sobre cómo los usuarios establecen MFA. | [MFA para Microsoft 365 para empresas](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 o E5 |
+| Configuraciones de acceso a dispositivos e identidades | Configuración y directivas que constan de características de requisitos previos recomendadas y su configuración combinadas con las directivas de acceso condicional, Intune y Azure AD Identity Protection que determinan si se debe conceder una solicitud de acceso determinada y en qué condiciones.  | [Configuraciones de acceso a dispositivos e identidades](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 o E5 |
 | Azure AD Identity Protection | Protéjase contra el riesgo de credenciales, donde un atacante determina el nombre de cuenta y la contraseña de un usuario para obtener acceso a los datos y servicios en la nube de una organización. | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Identity & Threat Protection |
 |  |  |  |
 

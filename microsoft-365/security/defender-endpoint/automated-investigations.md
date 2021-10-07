@@ -12,7 +12,7 @@ ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
 ms.date: 02/02/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: a8e506e75c0eb9a42ab2a460fcc8c3370ffafbb2
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 7b1ce14e1ec01041ea9b3a298f4f794978054e5f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042679"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193056"
 ---
 # <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
@@ -96,13 +96,13 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)o posterior
 - Windows 10, versión [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) o posterior
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre los niveles de automatización](automation-levels.md)
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Protección PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-air)

@@ -7,7 +7,7 @@ ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: En este artículo, obtenga información sobre cómo usar PowerShell de forma rápida y Microsoft 365 para asignar roles de administrador a cuentas de usuario.
-ms.openlocfilehash: 4174877bed9accacc3a61de576fa6e54060678bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b0fc0a5da1a6b84d4f13f95ace4846e367ae111
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213867"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193140"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Asignar roles de administrador a Microsoft 365 cuentas de usuario con PowerShell
 
@@ -36,14 +36,14 @@ Puede asignar fácilmente roles a cuentas de usuario mediante PowerShell para Mi
 >[!Note]
 >Obtenga información sobre [cómo asignar roles de administrador](../admin/add-users/assign-admin-roles.md) a cuentas de usuario con el Centro de administración de Microsoft 365.
 >
->Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](../admin/add-users/index.yml)
+>Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](/admin)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
 En primer lugar, use un administrador **de Azure AD DC,** un administrador **de aplicaciones en** la nube o una cuenta de **administrador** global para conectarse a su [Microsoft 365 inquilino.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
  
-Para obtener más información, vea [Asignar roles de administrador](/microsoft-365/admin/add-users/about-admin-roles?).
+Para obtener más información, vea [Sobre los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles?).
 
 A continuación, identifique el nombre de inicio de sesión de la cuenta de usuario que desea agregar a un rol (ejemplo: fredsm \@ contoso.com). Esto también se conoce como el nombre principal de usuario (UPN).
 
@@ -111,7 +111,7 @@ Si está acostumbrado a trabajar con los nombres para mostrar de cuentas de usua
     Este comando enumera el nombre para mostrar de las cuentas de usuario, ordenado por el nombre para mostrar, una pantalla a la vez. Puede filtrar la lista a un conjunto más pequeño mediante el cmdlet **Where.** Vea el ejemplo siguiente.
 
    >[!Note]
-   >PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlet sque llevan *Msol* en su nombre. Ejecute estos cmdlets desde Windows PowerShell.
+   >PowerShell Core no admite el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlets con *Msol* en su nombre. Ejecute estos cmdlets desde Windows PowerShell.
    >
     
   ```powershell

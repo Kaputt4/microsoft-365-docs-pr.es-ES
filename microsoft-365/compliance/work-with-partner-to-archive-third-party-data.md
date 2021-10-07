@@ -9,26 +9,26 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce Chatter, Yahoo Messenger o Yammer.
-ms.openlocfilehash: 7e82f114138a8f1f8ac9eb4563ce1434e6c26167
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: 5b6bbab9ff6ad54440fc84213d3e810c863ebef4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011250"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200190"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Trabajar con un socio para archivar datos de terceros
 
-Puede trabajar con un partner de Microsoft para importar y archivar datos de un origen de datos de terceros a Microsoft 365. Un partner puede proporcionarle un conector personalizado que esté configurado para extraer elementos del origen de datos de terceros (de forma regular) y, a continuación, importar esos elementos. El conector de asociado convierte el contenido de un elemento del origen de datos a un formato de mensaje de correo electrónico y, a continuación, almacena los elementos en buzones. Después de importar datos de terceros, puede aplicar características de cumplimiento de Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, archivado de In-Place, auditoría y directivas de retención de Microsoft 365 a estos datos.
+Puede trabajar con un partner de Microsoft para importar y archivar datos de un origen de datos de terceros para Microsoft 365. Un partner puede proporcionarle un conector personalizado que esté configurado para extraer elementos del origen de datos de terceros (de forma regular) y, a continuación, importar esos elementos. El conector de asociado convierte el contenido de un elemento del origen de datos a un formato de mensaje de correo electrónico y, a continuación, almacena los elementos en buzones. Después de importar datos de terceros, puede aplicar Microsoft 365 las características de cumplimiento como retención por juicio, exhibición de documentos electrónicos, archivado de In-Place, auditoría y Microsoft 365 directivas de retención a estos datos.
 
 > [!IMPORTANT]
-> La [solución de cumplimiento](communication-compliance.md) de comunicaciones de Microsoft 365 no se puede aplicar a los datos de terceros importados por los conectores asociados mencionados en este artículo.
+> La [solución de cumplimiento](communication-compliance.md) de Microsoft 365 no se puede aplicar a los datos de terceros importados por los conectores asociados mencionados en este artículo.
 
 A continuación se ofrece información general sobre el proceso y los pasos necesarios para trabajar con un partner de Microsoft para importar datos de terceros.
 
@@ -48,11 +48,11 @@ En la siguiente ilustración y descripción se explica cómo funciona el proceso
 
 ![Cómo funciona el proceso de importación de datos de terceros.](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
 
-1. El cliente trabaja con su partner de elección para configurar un conector que extraerá elementos del origen de datos de terceros y luego importará esos elementos a Microsoft 365.
+1. El cliente trabaja con su partner de elección para configurar un conector que extraerá elementos del origen de datos de terceros y, a continuación, importará esos elementos a Microsoft 365.
 
 2. El conector de partners se conecta a orígenes de datos de terceros a través de una API de terceros (de forma programada o configurada) y extrae elementos del origen de datos. El conector asociado convierte el contenido de un elemento en un formato de mensaje de correo electrónico. Vea la [sección Más información](#more-information) para obtener una descripción del esquema de formato de mensaje.
 
-3. El conector de partners se conecta al servicio de Azure en Microsoft 365 mediante el servicio web de Exchange (EWS) a través de un punto final conocido.
+3. El conector de partners se conecta al servicio de Azure en Microsoft 365 mediante Exchange Web Service (EWS) a través de un punto final conocido.
 
 4. Los elementos se importan al buzón de un usuario específico o a un buzón global de datos de terceros. Que un elemento se importe al buzón de un usuario específico o al buzón de datos de terceros depende de los criterios siguientes:
 
@@ -62,9 +62,9 @@ En la siguiente ilustración y descripción se explica cómo funciona el proceso
 
 ## <a name="step-1-find-a-third-party-data-partner"></a>Paso 1: Buscar un asociado de datos de terceros
 
-Un componente clave para archivar datos de terceros en Microsoft 365 es buscar y trabajar con un partner de Microsoft especializado en capturar datos de un origen de datos de terceros e importarlos a Microsoft 365. Después de importar los datos, se pueden archivar y conservar junto con otros datos de Microsoft de su organización, como correo electrónico de Exchange y documentos de SharePoint y OneDrive para la Empresa. Un partner crea un conector que extrae datos de orígenes de datos de terceros de la organización (como BlackBerry, Facebook, Google+, Thomson Reuters, Twitter y YouTube) y los pasa a una API de Microsoft 365 que importa elementos a buzones de Exchange como mensajes de correo electrónico.
+Un componente clave para archivar datos de terceros en Microsoft 365 es buscar y trabajar con un partner de Microsoft especializado en capturar datos de un origen de datos de terceros e importarlos a Microsoft 365. Después de importar los datos, se pueden archivar y conservar junto con otros datos de Microsoft de la organización, como el correo electrónico de Exchange y documentos de SharePoint y OneDrive para la Empresa. Un partner crea un conector que extrae datos de orígenes de datos de terceros de la organización (como BlackBerry, Facebook, Google+, Thomson Reuters, Twitter y YouTube) y pasa esos datos a una API de Microsoft 365 que importa elementos Exchange buzones de correo como mensajes de correo electrónico.
 
-En las secciones siguientes se muestra una lista de los partners de Microsoft (y los orígenes de datos de terceros que admiten) que participan en el programa para archivar datos de terceros en Microsoft 365.
+En las secciones siguientes se enumeran los partners de Microsoft (y los orígenes de datos de terceros que admiten) que participan en el programa para archivar datos de terceros en Microsoft 365.
 
 [17a-4 LLC](#17a-4-llc)
 
@@ -571,7 +571,7 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
     |**DATOS ADJUNTOS** <br/> |No  <br/> |Si un elemento del origen de datos (como un tweet en Twitter o una conversación de mensajería instantánea) tiene un archivo adjunto o incluye imágenes, el partner connect intentará primero incluir datos adjuntos en la **propiedad BODY.** Si no es posible, se agrega a la propiedad ** ATTACHMENT **. Otros ejemplos de datos adjuntos son los "Me gusta" de Facebook, los metadatos del origen del contenido y las respuestas a un mensaje o una publicación.  <br/> | `image.gif` <br/> |
     |**MESSAGECLASS** <br/> |Sí  <br/> | Se trata de una propiedad de varios valores, que se crea y rellena mediante el conector de asociado. El formato de esta propiedad es  `IPM.NOTE.Source.Event` . (Esta propiedad debe comenzar por  `IPM.NOTE` . Este formato es similar al de la clase  `IPM.NOTE.X` de mensaje). Esta propiedad incluye la siguiente información:  <br/><br/>`Source`: indica el origen de datos de terceros; por ejemplo, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: indica el tipo de actividad que se realizó en el origen de datos de terceros que produjo los elementos; por ejemplo, un tweet en Twitter o una publicación en Facebook. Los eventos son específicos del origen de datos.  <br/> <br/>  Un objetivo de esta propiedad es filtrar elementos específicos en función del origen de datos en el que un elemento se originó o basó, o bien en función del tipo de evento. Por ejemplo, en una búsqueda de exhibición de documentos electrónicos podría crear una consulta de búsqueda para encontrar todos los tweets publicados por un usuario concreto.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
 
-- Cuando los elementos se importan correctamente a buzones de Microsoft 365, se devuelve un identificador único al autor de la llamada como parte de la respuesta HTTP. Este identificador, denominado , puede usarse para fines de solución de problemas posteriores por parte de los asociados para realizar un seguimiento de un extremo a  `x-IngestionCorrelationID` otro de los elementos. Se recomienda que los asociados capturen esta información y la registren según corresponda en su extremo. A continuación se incluye un ejemplo de una respuesta HTTP que muestra este identificador:
+- Cuando los elementos se importan correctamente a buzones de correo en Microsoft 365, se devuelve un identificador único al autor de la llamada como parte de la respuesta HTTP. Este identificador, denominado , puede usarse para fines de solución de problemas posteriores por parte de los asociados para realizar un seguimiento de un extremo a  `x-IngestionCorrelationID` otro de los elementos. Se recomienda que los asociados capturen esta información y la registren según corresponda en su extremo. A continuación se incluye un ejemplo de una respuesta HTTP que muestra este identificador:
 
     ```http
     HTTP/1.1 200 OK
@@ -589,7 +589,7 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
 
   - **`itemclass:ipm.externaldata.<third-party data type>`**: use este par propiedad-valor para buscar solo un tipo de datos de terceros especificado. Por ejemplo, para buscar solo datos de Facebook que contengan la palabra "contoso" en la propiedad Subject, usaría la consulta de palabra clave  `itemclass:ipm.externaldata.Facebook* AND subject:contoso` .
 
-  Para obtener una lista completa de los valores que se usarán para tipos de datos de terceros para la propiedad, vea  `itemclass` Use Content Search to search [third-party data that was imported to Microsoft 365](use-content-search-to-search-third-party-data-that-was-imported.md).
+  Para obtener una lista completa de los valores que se usarán para los tipos de datos de terceros para la propiedad, vea `itemclass` Use Content Search to search [third-party data that was imported to Microsoft 365](use-content-search-to-search-third-party-data-that-was-imported.md).
 
    Para obtener más información sobre cómo usar la búsqueda de contenido y crear consultas de búsqueda de palabras clave, vea:
 

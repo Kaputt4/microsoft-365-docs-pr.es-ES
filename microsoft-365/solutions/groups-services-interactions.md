@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Interacciones de servicios de grupos
-ms.openlocfilehash: 54d8cd0ff31bad9af4269b3a4d8af23ccb618e16
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f20f8199811b8b34b4cb74ac18a989a79dde7759
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192237"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207468"
 ---
 # <a name="groups-services-interactions"></a>Interacciones de servicios de grupos
 
@@ -83,7 +83,7 @@ Los siguientes servicios permiten la creación de grupos por usuarios finales:
 
 - Outlook
 - Planner
-- Project para la Web
+- Project para la web
 - SharePoint
 - Stream
 - Microsoft Teams
@@ -119,16 +119,16 @@ En la tabla siguiente se proporciona información general sobre Microsoft 365 de
 |---|---|---|---|---|
 |Azure AD|Pertenencia, Controles de grupo, Invitados|Sí|Sí|Sí|
 |Exchange|Calendario, buzón|Sí|Sí|Sí|
-|Formularios|Formulario|Sí|No|No|
+|Forms|Form|Sí|No|No|
 |OneNote|Bloc de notas|Sí|No|No|
 |Planner|Panel de tareas|No|Sí|Sí|
 |Power Apps app|Aplicación|Sí|No|No|
 |Power Automate|Flujo de trabajo|Sí|No|No|
 |Power BI (clásico)|Área de trabajo|No|Sí|Sí|
 |Power BI (nuevo)|Área de trabajo|Sí|No|Sí|
-|Project para la Web|Project plan|Sí|Sí|No|
+|Project para la web|Project plan|Sí|Sí|No|
 |Guía básica|Guía básica|Sí|Sí|No|
-|SharePoint|Site|Sí|Sí|Sí|
+|SharePoint|Sitio|Sí|Sí|Sí|
 |Stream|Canal, vídeo|Sí|Sí|Sí|
 |Teams|Equipo|No|Sí|Sí|
 |Yammer|Group|Sí|Sí|Sí|
@@ -181,7 +181,7 @@ De forma predeterminada, cuando se crea un equipo, el buzón y el calendario aso
 
 - Conversaciones
 - Canales & pestañas
-- Meetings
+- Reuniones
 
 **¿Teams crear un grupo?**
 
@@ -241,7 +241,7 @@ No, el buzón y el calendario no se pueden cambiar a un grupo diferente. Sin emb
 
 Sí, al eliminar el buzón de Exchange se eliminará el grupo, así como los servicios y el contenido asociados al grupo.
 
-## <a name="forms"></a>Formularios
+## <a name="forms"></a>Forms
 
 Forms proporciona encuestas y cuestionarios basados en web.
 
@@ -475,7 +475,7 @@ Sí y no. Un área de trabajo creada por Power BI solo se puede asociar a un sol
 
 Sí, al eliminar el área de trabajo en Power BI se eliminará el contenido y los servicios asociados al grupo.
 
-## <a name="project-for-the-web"></a>Project para la Web
+## <a name="project-for-the-web"></a>Project para la web
 
 Project web ofrece la posibilidad de crear planes de proyecto, gráficos de Gantt y mapas de ruta.
 Características clave que se proporcionan a los grupos.

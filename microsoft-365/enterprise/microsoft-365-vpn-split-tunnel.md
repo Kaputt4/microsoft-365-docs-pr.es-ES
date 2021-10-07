@@ -7,7 +7,7 @@ ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Guía para usar el túnel dividido VPN con Office 365 para optimizar la conectividad de Office 365 para usuarios remotos.
-ms.openlocfilehash: bfb774f6404f8eec1c517b2e2e4e434694f9673f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 09900e1650ee1221d9b9877903a08e18af7154b3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185969"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200082"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimizar la conectividad de Office 365 para usuarios remotos usando el túnel dividido de VPN
 <!---

@@ -7,7 +7,7 @@ ms.date: 07/28/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Resumen: describe la compatibilidad con IPv6 en Microsoft 365 componentes y en Microsoft 365 ofertas gubernamentales.'
-ms.openlocfilehash: be9ce7cc2eaaec74889e9d88ddfa9b781c6d308e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 07e79cdc5bbed28684f9c39c0226a2e40c658d90
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215967"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200118"
 ---
 # <a name="ipv6-support-in-microsoft-365-services"></a>Compatibilidad con IPv6 en los servicios de Microsoft 365
 

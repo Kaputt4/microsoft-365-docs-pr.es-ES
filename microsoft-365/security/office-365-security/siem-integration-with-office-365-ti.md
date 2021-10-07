@@ -7,7 +7,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: Integre el servidor SIEM de su organización con Microsoft Defender
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3eb38325c9695ae0ed5cfb9389e8972ee599739f
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 3dbb175ba169c9bb8f4d7240d59d9886391167c3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356008"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176360"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Integración de SIEM con Microsoft Defender para Office 365
 
@@ -69,7 +69,7 @@ En la tabla siguiente se resumen los valores **de AuditLogRecordType** que son r
 >
 > El registro de auditoría debe estar activado para el Microsoft 365 de auditoría. Para obtener ayuda con esto, vea Activar o desactivar la búsqueda [del registro de auditoría.](../../compliance/turn-audit-log-search-on-or-off.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Investigación y respuesta de amenazas de Office 365](office-365-ti.md)
 

@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a3b034cf0d36bd200f48e87983b9b467ab40574c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 294c7c4d900ee9de4c122d462cfdad00a99b5cfa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219557"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200838"
 ---
 # <a name="contact-support-for-tuvalu"></a>Póngase en contacto con el soporte técnico de Tuvalu
 

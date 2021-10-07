@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
-ms.openlocfilehash: f8401193274f90ae90d773c6bb9a2a5a6a995169
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d67c4a6b3934500e3594b1021ffad7f291af5587
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166067"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193332"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Introducción a los clasificadores que se pueden entrenar
 

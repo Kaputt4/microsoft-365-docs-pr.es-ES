@@ -8,23 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Obtenga información sobre el programa De asistencia empresarial y cómo puede ayudar a su organización con ayuda y uso mejorados para Microsoft 365 para empresas.
-ms.openlocfilehash: f6c5b1ddfa6028d0748d3f01237e91dd4ac8507e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 01d4353fa24e5c9ace8e9e1d43853c5cbc3935e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774200"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180512"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Ayuda empresarial para Microsoft 365
 
-Obtenga el máximo partido de su suscripción con el asesoramiento de expertos de especialistas en pequeñas empresas.
+Saque el máximo partido a su suscripción con consejos expertos de especialistas en pequeñas empresas.
 
 **Business Assist for Microsoft 365** está diseñado para que las pequeñas empresas le den a usted y a sus empleados acceso las 24 horas a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
 

@@ -13,13 +13,13 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
-localization_priority: Normal
-ms.openlocfilehash: f8d3e4bc1b410ddcf0472f408864de1f34dad722
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: 172c0a681bc8e7c7867e4bcba1c75f94cfc12e60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192887"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193164"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adopción SharePoint Syntex Microsoft: Introducción
 
@@ -76,7 +76,7 @@ Determine quién en su organización compilará y administrará los modelos. Los
 | Configurar el procesamiento de formularios | Configurar el entorno de Dataverse para el procesamiento de formularios | Recopilar casos de uso | Recopilar casos de uso empresarial |
 | Administrar centros de contenido y permisos| Comprar y asignar créditos AIB | Establecer procedimientos recomendados y revisar análisis de modelos | Crear y aplicar modelos |
 
-El administrador de conocimientos, el propietario del proceso de negocio y el propietario del modelo de contenido crean modelos de ejemplo y la adopción de campeones en la organización.
+El administrador de conocimientos, el propietario de procesos empresariales y el propietario del modelo de contenido crean modelos de ejemplo y la adopción de campeones en la organización.
 Otros que pueden estar implicados: administrador de cumplimiento, administradores de taxonomía.
 
 ¿Dónde crearán y aplicarán los modelos? ¿Hay procesos o repositorios existentes que podrían mejorarse?
@@ -123,7 +123,7 @@ Para prepararse para implementar SharePoint Syntex, debe:
 1. Planear el estado final
     - Los modelos de comprensión de documentos son los medios, no el final.
     - Planee aprovechar el valor de los metadatos extraídos con:
-      - Buscar
+      - Búsqueda
       - Filtrado y formato de vista
       - Cumplimiento
       - Automatización

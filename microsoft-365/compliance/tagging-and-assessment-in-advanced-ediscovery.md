@@ -10,19 +10,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 ROBOTS: NOINDEX, NOFOLLOW
 description: Revise los pasos para realizar el aprendizaje de evaluación, incluidos los archivos de etiquetado, y revise los resultados de la evaluación en Advanced eDiscovery.
-ms.openlocfilehash: 539d4e8f28aa8e4e3ab98807c5019711edbdcc4f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d779d7ea364083c973cbb3d2e821b85c34fb795
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216360"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200286"
 ---
 # <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Etiquetado y evaluación en el módulo Relevancia en Advanced eDiscovery
   

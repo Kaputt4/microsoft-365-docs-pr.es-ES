@@ -9,19 +9,19 @@ ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para habilitar la configuración Microsoft 365 seguridad adicional de su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 7598ade331ae340ede52f4c47375aebba792eb84
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2042148c0738ab1304ec721cdb00ce22b427dc72
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216000"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200166"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Mayor Microsoft 365 seguridad para su Microsoft 365 entorno de prueba empresarial
 
@@ -115,7 +115,7 @@ Puntuación segura de Microsoft muestra su posición de seguridad como un númer
 
 Para obtener más información, vea [Puntuación segura de Microsoft](../security/defender/microsoft-secure-score.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#information-protection) de protección de la información en el entorno de prueba.
 

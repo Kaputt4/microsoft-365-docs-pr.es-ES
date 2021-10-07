@@ -2,7 +2,7 @@
 title: Información sobre riesgos internos de Microsoft
 description: Obtenga información sobre cómo ayudar a minimizar los riesgos en su organización con la administración de riesgos de insider en Microsoft 365.
 keywords: Microsoft 365, riesgo interno, administración de riesgos, cumplimiento
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 51a94e2fd87bc5356de80e26fb70297e1dd3b710
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: d588d4792bc8396fb3720a08e0624bd8273b5d93
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460117"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201090"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Obtenga información sobre la administración de riesgos de insider en Microsoft 365
 
@@ -130,7 +130,7 @@ Si se selecciona un caso en el panel de casos, se abre el caso para su investiga
 
 Además, el nuevo registro de [auditoría (versión preliminar)](insider-risk-management-audit-log.md) permite mantenerse informado de las acciones realizadas en las características de administración de riesgos internas. Este recurso permite una revisión independiente de las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos insider.
 
-### <a name="action"></a>Action
+### <a name="action"></a>Acción
 
 Una vez que se investigan los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas en riesgos de la organización. Si los usuarios infringen accidentalmente o inadvertidamente las condiciones de la directiva, se puede enviar un aviso simple al usuario desde plantillas de aviso que puede personalizar para su organización. Estos avisos pueden servir como recordatorios sencillos o pueden dirigir al usuario a cursos de actualización o instrucciones para ayudar a evitar comportamientos de riesgo futuros. Para más información, consulte [plantillas de notificación de administración de riesgos internos](insider-risk-management-notices.md).
 

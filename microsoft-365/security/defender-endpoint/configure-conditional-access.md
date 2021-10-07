@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0a0be19a974f7a065333ff0a5045512a2eb98a85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75b74024b7f4e94d1b24b2f926bfe488a8e594b1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222982"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192996"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurar el acceso condicional en Microsoft Defender para el extremo
 
@@ -74,7 +74,7 @@ Siga estos pasos para habilitar el acceso condicional:
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Paso 2: Activar la integración de Defender for Endpoint en Intune
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+1. Inicie sesión en el [Azure Portal](https://portal.azure.com).
 2. Seleccione **Cumplimiento de** \> **dispositivos ATP de Microsoft Defender**.
 3. Establece **Conectar Windows 10.0.15063+** en Protección contra amenazas avanzada de Microsoft Defender en **On**.
 4. Haga clic en **Guardar**.

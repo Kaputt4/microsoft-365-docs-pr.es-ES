@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ ms.technology: mde
 ms.date: 09/14/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 7434a37985a9e47cc16795c6aa24d6a7d48f66a7
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 3ce0945fc687623c5f5fd7ba26e57ad191ec3ecb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490876"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207970"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurar opciones de análisis del Antivirus de Microsoft Defender
 
@@ -56,17 +56,17 @@ Para obtener más información sobre cómo Microsoft Endpoint Manager (rama actu
 
 |Ubicación y elemento de directiva|Configuración predeterminada (si no está configurada)|Parámetro de PowerShell `Set-MpPreference` o propiedad WMI para `MSFT_MpPreference` clase|
 |---|---|---|
-|Análisis de correo electrónico <p> **Examen** \> **Activar el examen de correo electrónico**<p>Vea [Limitaciones del examen de correo](#email-scanning-limitations) electrónico (en este artículo)|Deshabilitada|`-DisableEmailScanning`|
-|Examinar [puntos de repetición](/windows/win32/fileio/reparse-points) <p> **Examen** \> **Activar el examen de puntos de repetición**|Deshabilitada|No disponible <p>Ver [Puntos de reanco](/windows/win32/fileio/reparse-points)|
-|Examinar unidades de red asignadas <p> **Examen** \> **Ejecutar examen completo en unidades de red asignadas**|Deshabilitada|`-DisableScanningMappedNetworkDrivesForFullScan`|
+|Análisis de correo electrónico <p> **Examen** \> **Activar el examen de correo electrónico**<p>Vea [Limitaciones del examen de correo](#email-scanning-limitations) electrónico (en este artículo)|Deshabilitado|`-DisableEmailScanning`|
+|Examinar [puntos de repetición](/windows/win32/fileio/reparse-points) <p> **Examen** \> **Activar el examen de puntos de repetición**|Deshabilitado|No disponible <p>Ver [Puntos de reanco](/windows/win32/fileio/reparse-points)|
+|Examinar unidades de red asignadas <p> **Examen** \> **Ejecutar examen completo en unidades de red asignadas**|Deshabilitado|`-DisableScanningMappedNetworkDrivesForFullScan`|
 |Examinar archivos de archivo (como .zip o .rar archivos). <p> **Examen** \> **Examinar archivos de archivo**|Habilitado|`-DisableArchiveScanning` <p>La [lista de exclusiones de extensiones](configure-extension-file-exclusions-microsoft-defender-antivirus.md) tendrá prioridad sobre esta configuración.|
-|Examinar archivos en la red <p> **Examen** \> **Examinar archivos de red**|Deshabilitada|`-DisableScanningNetworkFiles`|
+|Examinar archivos en la red <p> **Examen** \> **Examinar archivos de red**|Deshabilitado|`-DisableScanningNetworkFiles`|
 |Examinar archivos ejecutables empaquetados <p> **Examen** \> **Examinar archivos ejecutables empaquetados**|Habilitado|No disponible|
-|Examinar solo unidades extraíbles durante exámenes completos <p> **Examen** \> **Examinar unidades extraíbles**|Deshabilitada|`-DisableRemovableDriveScanning`|
+|Examinar solo unidades extraíbles durante exámenes completos <p> **Examen** \> **Examinar unidades extraíbles**|Deshabilitado|`-DisableRemovableDriveScanning`|
 |Especificar el nivel de subcarpetas dentro de una carpeta de archivo para examinar <p>**Examen** \> **Especificar la profundidad máxima para examinar archivos de archivo**|0|No disponible|
 |Especifique la carga máxima de CPU (como porcentaje) durante un examen. <p> **Examen** \> **Especificar el porcentaje máximo de uso de CPU durante un examen**|50|`-ScanAvgCPULoadFactor` <p>**NOTA:** La carga máxima de CPU no es un límite difícil, pero es una guía para que el motor de análisis no supere el máximo en promedio. Los exámenes de ejecución manual omitirán esta configuración y se ejecutarán sin límites de CPU.|
 |Especifique el tamaño máximo (en kilobytes) de los archivos de archivo que deben examinarse. <p> **Examen** \> **Especificar el tamaño máximo de los archivos de archivo que se examinarán**|Sin límite|No disponible <p>El valor predeterminado de 0 no aplica ningún límite|
-|Configurar una prioridad de CPU baja para exámenes programados <p> **Examen** \> **Configurar una prioridad de CPU baja para exámenes programados**|Deshabilitada|No disponible|
+|Configurar una prioridad de CPU baja para exámenes programados <p> **Examen** \> **Configurar una prioridad de CPU baja para exámenes programados**|Deshabilitado|No disponible|
 
 > [!NOTE]
 > Si la protección en tiempo real está activada, los archivos se examinan antes de tener acceso a ellos y ejecutarse. El ámbito de examen incluye todos los archivos, incluidos los archivos en medios extraíbles montados, como las unidades USB. Si el dispositivo que realiza el examen tiene activada la protección en tiempo real o la protección en tiempo real, el examen también incluirá recursos compartidos de red.
@@ -101,7 +101,7 @@ Si Antivirus de Microsoft Defender detecta una amenaza dentro de un mensaje de c
 
 En cualquier sistema operativo, solo se examinan las unidades de red asignadas a nivel del sistema. Las unidades de red asignadas a nivel de usuario no se examinan. Las unidades de red asignadas a nivel de usuario son aquellas que un usuario asigna en su sesión manualmente y usan sus propias credenciales.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Personalizar, iniciar y revisar los resultados de Antivirus de Microsoft Defender análisis y corrección](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender](run-scan-microsoft-defender-antivirus.md)

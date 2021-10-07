@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Obtenga información sobre los límites vigentes para la búsqueda de contenido y las características principales de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: db0f24d66fd7dc23a82a5ededfcfbc4d9edabad7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 207e9a71a1d178f841bf9a7561c279cf48dbed6a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188078"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193248"
 ---
 # <a name="limits-for-ediscovery-search"></a>Límites para la búsqueda de exhibición de documentos electrónicos
 

@@ -9,17 +9,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en Advanced eDiscovery.
-ms.openlocfilehash: 462442d2319c2c199d39795b77b67c6dcefdb758
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1c52a3ea0c803af89f9529d6529bd7610ff05d80
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216357"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200298"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams casos grandes (versión preliminar)
 

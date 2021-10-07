@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Migre Windows dispositivos, Office aplicaciones cliente y Office servidores para sus Microsoft 365 inquilinos.
-ms.openlocfilehash: 9570a34c1c1884452ee9090ca0b7d280411e0016
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 86f244ba8d28c242b59296a4de8b63b4a07b50ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165493"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176193"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 4. Migración de su Microsoft 365 para inquilinos empresariales
 
@@ -29,7 +29,7 @@ La mayoría de las organizaciones empresariales tienen un entorno heterogéneo q
 
 Para maximizar el valor empresarial de la Microsoft 365 de productos integrados para empresas, comience a planear e implementar una estrategia para migrar estas versiones:
 
-| From | To |
+| De | To |
 |:-------|:-----|
 | Windows 7 y Windows 8.1 | Windows 10 Enterprise |
 | Office de cliente instalados en los dispositivos del trabajador | Aplicaciones de Microsoft 365 para empresas |

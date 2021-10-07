@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 mscollection: M365-security-compliance
 ms.custom:
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Obtenga información sobre cómo obtener acceso y usar el Portal de confianza de servicio de Microsoft para ayudar con las prácticas de seguridad, privacidad y cumplimiento.
-ms.openlocfilehash: 63901d6b71be98c0474b5ede840b6914b38609b4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bbfc84b2ada1e75407ca8c1c42855bdbf336bbf2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211000"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207324"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al Portal de confianza de servicio de Microsoft
 
@@ -111,7 +111,7 @@ Vaya a **Más > administrador para** obtener acceso a funciones administrativas 
 
 - **Privacidad del usuario Configuración:** Esta página le permite exportar un informe que contiene asignaciones de elementos de acción en el Administrador de cumplimiento (clásico) para un usuario específico. También puede reasignar todos los elementos de acción a un usuario diferente y quitar cualquier elemento de acción asignado del usuario especificado.
 
-### <a name="search"></a>Buscar
+### <a name="search"></a>Búsqueda
 
 Haga clic en la lupa de la esquina superior derecha de la página Portal de confianza de servicio para expandir el cuadro, escriba los términos de búsqueda y presione **Entrar**. Se **muestra** la página Búsqueda, con el término de búsqueda que se muestra en el cuadro de búsqueda y los resultados de búsqueda enumerados a continuación.
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la suplantación de inteligencia en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b84671da05fcd3c476f19aa61a7325ac9df4c263
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8e8f7513e9d4d175807fdb99e39353ffc531dec5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213280"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207516"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Suplantación de información de inteligencia en EOP
 
@@ -59,7 +59,7 @@ Al permitir que los remitentes conocidos envíen mensajes falsos desde ubicacion
 
 Del mismo modo, puede revisar remitentes suplantados permitidos por la inteligencia de suplantación de identidad y bloquear manualmente a esos remitentes de la información de inteligencia suplantada.
 
-En el resto de este artículo se explica cómo usar la información de inteligencia de suplantación en el portal de Microsoft 365 Defender y en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online).
+En el resto de este artículo se explica cómo usar la información de inteligencia suplantación en el portal de Microsoft 365 Defender y en PowerShell (powershell de Exchange Online para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online buzones de correo).
 
 > [!NOTE]
 >
@@ -131,7 +131,7 @@ Para filtrar los resultados, tiene las siguientes opciones:
 
 - Haga clic en **el botón** Filtrar. En el **menú** desplegable Filtro que aparece, puede filtrar los resultados por:
   - **Tipo de suplantación**
-  - **Acción**
+  - **Action**
 - Use el **cuadro Buscar** para escribir una lista separada por comas de valores de dominio suplantados o enviar valores de infraestructura para filtrar los resultados.
 
 ### <a name="view-details-about-spoofed-messages"></a>Ver detalles sobre mensajes suplantados

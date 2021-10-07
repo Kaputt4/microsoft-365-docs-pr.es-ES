@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: Obtenga información sobre cómo poner el modelo entrenado a disposición de otros usuarios y cómo aplicar otros modelos entrenados en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 05c6cbb1e372e4dd452f261ef763274b46d1ac80
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
-ms.translationtype: HT
+ms.openlocfilehash: 528071efaf06c68d42b34f6d7e509a1839f6ca08
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498459"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201006"
 ---
 # <a name="publish-and-discover-models-in-microsoft-sharepoint-syntex"></a>Publicación y detección de modelos en Microsoft SharePoint Syntex
 

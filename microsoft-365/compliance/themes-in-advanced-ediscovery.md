@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Usa Temas en Advanced eDiscovery para organizar conjuntos de revisión buscando el tema dominante en cada documento.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3dfc0dca0c6ed62e3ce8384efa2fd3ea407c3ce8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ed7759353230e80359a771416c01e62d2ec03337
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216330"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193188"
 ---
 # <a name="themes-in-advanced-ediscovery"></a>Temas de Advanced eDiscovery
 

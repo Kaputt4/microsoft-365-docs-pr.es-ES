@@ -8,15 +8,15 @@ manager: laurawi
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información sobre cómo redirigir automáticamente Office 365 usuarios del Centro de seguridad y cumplimiento al Centro de cumplimiento de Microsoft 365..
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 167a38d4f4cd06f98993f401d72f9b6dafa29f40
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d31cb4d86d914c9406996c4e6fdf7bab9c5d02e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216787"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201042"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Redirigir usuarios desde el Office 365 seguridad y cumplimiento al Centro de cumplimiento de Microsoft 365
 

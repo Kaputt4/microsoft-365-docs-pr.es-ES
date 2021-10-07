@@ -2,15 +2,13 @@
 title: Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en macOS
 description: Solucionar problemas de rendimiento en Microsoft Defender para endpoint en macOS.
 keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, performance
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 259abe6753224e55c937962bd0af19d2f6ba0a9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 26a8761b8df141626cf7fcffaeb18e2a32bae69a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165683"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206964"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en macOS
 

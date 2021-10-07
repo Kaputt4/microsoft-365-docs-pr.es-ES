@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo crear y realizar un seguimiento de
 keywords: security, Microsoft 365, M365, compliance, compliance center, security center, ServiceNow, tickets, tasks, SNOW, connection
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 1803d4408d50ecfd0e4f0a3c78016cd8914760f1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89ceeb3b702e2c8f98a6270907f9c759833601f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185609"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176636"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-defender-portal-and-compliance-center"></a>Integrar vales de ServiceNow en el portal Microsoft 365 Defender y el centro de cumplimiento
 

@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ ms.custom:
 description: Use el nuevo Panel de seguridad para revisar el Office 365 protección contra amenazas y ver y actuar en alertas de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0d239ffa2786b23465379de99a3e1ddc6865566f
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 977fc897ecee859648fb1097e573cd0a8289768e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988264"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180680"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>Panel de seguridad en el Centro de seguridad & cumplimiento
 

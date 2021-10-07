@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la infraestructura de red de Contoso y cómo la empresa usa su tecnología SD-WAN para obtener un rendimiento de red óptimo para Microsoft 365 servicios en la nube empresariales.
-ms.openlocfilehash: af2c68cb31450fe17449f95391dd3e5c298a2395
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 94c9c43e35f0f1a3d973529aa2b107cffe608693
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218667"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193116"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Redes para Contoso Corporation
 

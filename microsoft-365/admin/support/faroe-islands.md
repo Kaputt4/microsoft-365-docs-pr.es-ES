@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bdbf542b3f98aae77e5654dadd0f445382a460ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e4cb04115a312282d05de8016b6a340c30a1020d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192054"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180158"
 ---
 # <a name="contact-support-for-faroe-islands"></a>Póngase en contacto con el soporte técnico de Islas Feroe
 

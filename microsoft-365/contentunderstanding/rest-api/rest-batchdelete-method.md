@@ -9,14 +9,14 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Use la API de REST para quitar un modelo de comprensión mediante documentos de una o más bibliotecas.
-ms.openlocfilehash: bbd3e496b50d3fddb31342fbc07d30984544e744
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 52154c5f963ddb466b1544925ffe225fd6b8ff67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165891"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60187058"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -50,9 +50,9 @@ Ninguno
 
 | Nombre | Obligatorio | Tipo | Descripción |
 |--------|-------|--------|------------|
-|ModelUniqueId|sí|cadena|El Id. único del archivo de modelo.|
+|ModelUniqueId|sí|string|El Id. único del archivo de modelo.|
 |TargetSiteUrl|sí|string|La dirección URL completa del sitio de biblioteca de destino.|
-|TargetWebServerRelativeUrl|sí|cadena|La dirección URL relativa del servidor de la Web de la biblioteca de destino.|
+|TargetWebServerRelativeUrl|sí|string|La dirección URL relativa del servidor de la Web de la biblioteca de destino.|
 |TargetLibraryServerRelativeUrl|sí|string|La dirección URL relativa al servidor de la biblioteca de destino.|
 
 ## <a name="response"></a>Respuesta

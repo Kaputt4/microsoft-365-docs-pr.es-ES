@@ -7,7 +7,7 @@ ms.reviewer: kshi
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -16,12 +16,12 @@ ms.collection:
 description: Obtenga información sobre Caja fuerte documentos en Microsoft 365 E5 o Seguridad de Microsoft 365 E5.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 74b01872a1b5aee75730f203fec9b2b0ebf77fdc
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: cd1bb71bee6a123ae698f1178e62a521409d4103
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400911"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180715"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
@@ -129,7 +129,7 @@ Para obtener más información, [vea Onboard to the Microsoft Defender for Endpo
 
 Para comprobar que ha habilitado y configurado documentos Caja fuerte documentos, siga estos pasos:
 
-- En el portal de Microsoft 365 Defender,  vaya a Directivas de colaboración de & correo electrónico & Reglas directivas de amenazas \>  \>  \> **Caja fuerte Datos**  \>  **adjuntos**  en la sección Directivas Configuración global y compruebe la opción Activar documentos de Caja fuerte para clientes de Office y Permitir que los usuarios puedan hacer clic en la vista protegida incluso si Caja fuerte Documents identifica el archivo como una configuración malintencionada.
+- En el portal de Microsoft 365 Defender, vaya **a** Directivas de colaboración de correo electrónico & & Directivas de amenazas \>  \>  \> **Caja fuerte Datos**  \>   **adjuntos en la sección Directivas Configuración global y compruebe la opción Activar documentos de Caja fuerte para clientes de Office y Permitir personas para hacer clic en la vista protegida incluso si Caja fuerte Documentos identifica el archivo como configuración** malintencionada.
 
 - Ejecute el siguiente comando en Exchange Online PowerShell y compruebe los valores de la propiedad:
 

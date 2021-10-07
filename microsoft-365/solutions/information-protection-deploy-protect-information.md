@@ -9,7 +9,7 @@ ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Implemente Microsoft 365 seguridad y cumplimiento normativo y proteja su información personal.
-ms.openlocfilehash: 084faec3b9c2d7bc9c7da17ee69f7821dd79a754
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f8111f1662a7669dde978d6d41f04fd4b6c50ea6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166555"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176348"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteger la información sujeta a la regulación de privacidad de datos
 

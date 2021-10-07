@@ -8,16 +8,16 @@ audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.date: 04/21/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 94191ebf12609eafb45f6f4fb19de2a6b072aa23
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82ab205d5228ae4283eb2ab291a586b6d73429ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214147"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176336"
 ---
 # <a name="microsoft-365-infographics-for-your-users"></a>Microsoft 365 infografías para los usuarios
 
@@ -30,7 +30,7 @@ Encuentre más [infografías Office descarga](https://support.microsoft.com/offi
 
 Descargue esta infografía con sugerencias de seguridad para los miembros de su equipo, ya sea que su equipo sea una organización empresarial o sin ánimo de lucro, como una campaña política:
 
-| Item | Descripción |
+| Elemento | Descripción |
 |:-----|:-----|
 |[![Ayuda a proteger el gráfico de información de la campaña.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [Descargar como pdf](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)  \  [Descargar como un PowerPoint](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)| Comparta estos procedimientos recomendados para proteger la información de su organización. Esta infografía se creó para dar soporte al personal de las campañas políticas porque están dirigidas por sofisticados hackers. Puedes usar el PowerPoint para personalizar esta infografía para tu propia organización. Artículo relacionado: [Cómo afectan las recomendaciones de seguridad Microsoft 365 a los usuarios](../campaigns/m365-campaigns-users.md)|
 
@@ -39,7 +39,7 @@ Descargue esta infografía con sugerencias de seguridad para los miembros de su 
 
 Descargue una infografía para obtener una introducción rápida a las formas de compartir sus archivos empresariales:
   
-| Item | Descripción |
+| Elemento | Descripción |
 |:-----|:-----|
 |[![Imagen digital para compartir la infografía de archivos empresariales.](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png)](https://go.microsoft.com/fwlink/?linkid=2079435) <br/> [Descargar como pdf](https://go.microsoft.com/fwlink/?linkid=2079435)  \  [Descargar como un PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | Use estos procedimientos recomendados cuando comparta y colabore en archivos empresariales para mantener la información protegida y protegida. Artículo relacionado: [Información general sobre cómo compartir archivos empresariales](../business-video/overview-file-sharing.md)|
 
@@ -48,7 +48,7 @@ Descargue una infografía para obtener una introducción rápida a las formas de
 
 Descargue una infografía para obtener una introducción rápida sobre cómo unirse o hospedar una reunión en línea con Microsoft Teams:
 
-| Item | Descripción |
+| Elemento | Descripción |
 |:-----|:-----|
 |[![Imagen digital para la infografía de reuniones en línea de host.](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [Descargar como pdf](https://go.microsoft.com/fwlink/?linkid=2078712)  \  [Descargar como un PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | Una introducción rápida a cómo hospedar o unirse a una reunión en línea con Microsoft Teams. Artículo relacionado: [Hospedar reuniones en línea para su empresa](../business-video/overview-online-meetings.md)|
 
@@ -57,7 +57,7 @@ Descargue una infografía para obtener una introducción rápida sobre cómo uni
 
 Descarga una infografía para obtener sugerencias para trabajar desde cualquier lugar:
 
-| Item | Descripción |
+| Elemento | Descripción |
 |:-----|:-----|
 |[![Imagen digital de Trabajo desde cualquier lugar infografía.](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [Descargar como pdf](https://go.microsoft.com/fwlink/?linkid=2079451)  \  [Descargar como un PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | Consulta sugerencias sobre cómo configurar los dispositivos móviles para permitirte trabajar desde cualquier lugar. Artículo relacionado: [Trabajar desde cualquier lugar](../business-video/work-from-anywhere.md)|
 
@@ -66,6 +66,6 @@ Descarga una infografía para obtener sugerencias para trabajar desde cualquier 
 
 Descarga una infografía para averiguar cómo realizar encuestas a clientes (internos o externos) con Microsoft Forms:
 
-| Item | Descripción |
+| Elemento | Descripción |
 |:-----|:-----|
 |[![Imagen digital para clientes de encuesta con infografía de formularios.](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png)](https://go.microsoft.com/fwlink/?linkid=2079526) <br/> [Descargar como pdf](https://go.microsoft.com/fwlink/?linkid=2079526)  \  [Descargar como un PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Use Microsoft Forms para averiguar lo que piensan sus clientes. Artículo relacionado: [Recopilar información con Microsoft Forms](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|

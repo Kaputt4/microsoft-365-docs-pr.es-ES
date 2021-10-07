@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de casos, los límites de indización y los límites de búsqueda en vigor para la solución Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: e82b7d44a5733c245b00a1890b9d07dd95c679e2
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 7cdcadb5a6657c0fc975753241e8f101e25c998b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088234"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207288"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
@@ -52,7 +52,7 @@ En la tabla siguiente se enumeran los límites para las retenciones asociadas co
 |:-----|:-----|
 |Número máximo de retenciones de casos para una organización. Este límite incluye el total combinado de retenciones en la exhibición de documentos electrónicos principales y Advanced eDiscovery casos. <br/> |10,000  <br/> |
 |Número máximo de buzones en una única retención de casos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos. <br/> |1,000  <br/> |
-|Número máximo de sitios en una única retención de casos. Este límite incluye el total combinado de sitios OneDrive para la Empresa, SharePoint y los sitios asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |60W  <br/> |
+|Número máximo de sitios en una única retención de casos. Este límite incluye el total combinado de sitios OneDrive para la Empresa, SharePoint y los sitios asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Límites de indexación
 
@@ -79,12 +79,12 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 |Número máximo de caracteres para una consulta de búsqueda para SharePoint y OneDrive para la Empresa (incluidos los operadores y las condiciones). |10,000<br>4.000 con caracteres comodín &nbsp; <sup>2</sup>|
 |Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo, **un \* *_ o _* set \***.|3 |  
 |Variantes máximas devueltas cuando se usa el carácter comodín de prefijo para buscar una frase exacta o cuando se usa un prefijo comodín y el **operador booleano NEAR.** |10 000 &nbsp; <sup>3</sup>|
-|Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes. |60W|
+|Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes. |100|
 |Número máximo de elementos de todos los buzones que se muestran en la página de vista previa para las búsquedas.|1,000|
 |Número máximo de buzones que se pueden obtener una vista previa de los resultados de la búsqueda.  Si hay más de 1000 buzones que contienen elementos que coinciden con la consulta de búsqueda, solo los 1.000 buzones con más resultados están disponibles para la vista previa.|1,000|
 |Número máximo de elementos de los sitios SharePoint y OneDrive para la Empresa que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes. |200|
 |Número máximo de SharePoint y OneDrive para la Empresa que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 200 sitios que contienen elementos que coinciden con la consulta de búsqueda, solo los 200 sitios principales con más resultados están disponibles para la vista previa.|200|
-|Número máximo de elementos por buzón de carpetas públicas que se muestran en la página de vista previa para las búsquedas. |60W|
+|Número máximo de elementos por buzón de carpetas públicas que se muestran en la página de vista previa para las búsquedas. |100|
 |Número máximo de elementos encontrados en todos los elementos de buzón de carpetas públicas que se muestran en la página de vista previa para las búsquedas. |200|
 |Número máximo de buzones de carpetas públicas que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 500 buzones de carpetas públicas que contienen elementos que coinciden con la consulta de búsqueda, solo los 500 buzones principales con más resultados están disponibles para la vista previa.|500|
 |||

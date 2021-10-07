@@ -8,18 +8,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo Contoso Corporation respondió a la pandemia de COVID-19 e ingenió su infraestructura de instalación y actualización de software para el trabajo híbrido.
-ms.openlocfilehash: 06ce48969d35017da47be1e75ec3c374b9afb9a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9ed3857c97bd82bd03a6a192bec5666f22e0589a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219720"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207492"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Respuesta y compatibilidad de COVID-19 de Contoso para el trabajo híbrido
 
@@ -81,7 +81,7 @@ El comportamiento de instalación y actualización se determina al convertir las
 
 ## <a name="new-onboarding-process"></a>Nuevo proceso de incorporación
 
-Para un nuevo dispositivo local dedicado emitido a un nuevo trabajador o a un nuevo servidor en un centro de datos, cuando el trabajador inicia sesión, el cliente de Configuration Manager en función de la pertenencia del dispositivo al grupo OnPremDevices descarga e instala las actualizaciones más recientes para Windows 10, Aplicaciones Microsoft 365 para empresas y Edge desde puntos de distribución locales de Configuration Manager. Cuando se completa, el dispositivo local dedicado está listo para su uso y usa estos puntos de distribución para actualizaciones continuas.
+Para un nuevo dispositivo local dedicado emitido a un nuevo trabajador o a un nuevo servidor en un centro de datos, cuando el trabajador inicia sesión, el cliente de Configuration Manager basado en la pertenencia del dispositivo al grupo OnPremDevices descarga e instala las actualizaciones más recientes para Windows 10, Aplicaciones Microsoft 365 para empresas y Edge desde la distrib de Configuration Manager local puntos de ution. Cuando se completa, el dispositivo local dedicado está listo para su uso y usa estos puntos de distribución para actualizaciones continuas.
 
 Para un nuevo dispositivo remoto emitido a un nuevo trabajador, cuando el trabajador inicia sesión, el dispositivo, según su pertenencia al grupo RoamingDevices, se pone en contacto con el servicio en la nube de Intune y otros servicios y descarga e instala las actualizaciones más recientes para Windows 10, Aplicaciones Microsoft 365 para empresas y Edge. Cuando se completa, el dispositivo remoto está listo para su uso y usa el cliente VPN instalado para obtener acceso a los recursos locales y a la red Microsoft 365 para actualizaciones continuas.
 

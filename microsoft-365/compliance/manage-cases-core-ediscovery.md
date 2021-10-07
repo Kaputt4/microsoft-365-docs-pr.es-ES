@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo crear, cerrar, volver a abrir y eliminar casos en la exhibición de documentos electrónicos principal en Microsoft 365.
-ms.openlocfilehash: d8d2a185d32445639b99243d50fa1e21ff09872548de12c8505dc4e6776fe9c2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 33217f9d9314e5741a3ee5ab4a7f1769be0a98b5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850620"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200454"
 ---
 # <a name="manage-cases-in-core-ediscovery"></a>Administrar casos en eDiscovery principal
 

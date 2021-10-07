@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los escenarios de colaboración de gobierno de comunicaciones.
-ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cc90130a9cb841291872898ca0ca53a4b515b4fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214180"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207432"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gobierno de comunicaciones para escenarios de colaboración
 
@@ -34,7 +34,7 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 |Mensajería |||
 ||Administrar lo que los usuarios pueden hacer mientras la mensajería se Teams.|[Administrar directivas de mensajería de Teams](/microsoftteams/messaging-policies-in-teams)|
 ||Controle quién puede iniciar y responder a las publicaciones de un canal.|[Configurar y administrar la moderación de canales en Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
-|Meetings|||
+|Reuniones|||
 ||Administrar lo que pueden hacer los participantes de la reunión.|[Administración de directivas de reunión en Teams](/microsoftteams/meeting-policies-in-teams)|
 ||Permitir o impedir que los usuarios anónimos se unan a reuniones.|[Permitir que los usuarios anónimos se unan a reuniones](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
 |Cumplimiento de comunicaciones|||
@@ -50,7 +50,7 @@ Puede controlar quién puede iniciar nuevas publicaciones y responder a las publ
 
 [Configurar y administrar la moderación de canales en Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)
 
-## <a name="meetings"></a>Meetings
+## <a name="meetings"></a>Reuniones
 
 Puedes controlar las características que están disponibles para los Teams de la reunión, incluida la programación, el uso compartido de contenido, los participantes y las directivas de audio y vídeo.
 

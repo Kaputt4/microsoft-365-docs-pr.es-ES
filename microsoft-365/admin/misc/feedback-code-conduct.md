@@ -6,14 +6,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información sobre el código de conducta de Microsoft para los comentarios que proporcione.
-ms.openlocfilehash: aa109d61a2fc3723d20ec118c25eed014e96d652
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: b7735a7c6560c1cce79e88f4f5612f9ef0c42ced
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479597"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180430"
 ---
 # <a name="microsoft-feedback-code-of-conduct"></a>Código de conducta de comentarios de Microsoft
 

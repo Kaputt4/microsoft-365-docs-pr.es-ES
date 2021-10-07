@@ -9,7 +9,7 @@ ms.date: 5/16/2014
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - WSU150
 - SPO160
@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar directivas de administración de información para controlar y realizar un seguimiento de cosas como cuánto tiempo se conserva el contenido o qué acciones pueden realizar los usuarios con ese contenido.
-ms.openlocfilehash: fc3bfe1c0da54ccf4cb2c59589647cb396a5081e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 98eae2a08aa246a1f0ebe7d037103a82c132d060
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216810"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193296"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduction to information management policies (Introducción a las directivas de administración de la información)
 
@@ -52,7 +52,7 @@ Las organizaciones también pueden crear e implementar características de direc
 ## <a name="locations-to-use-an-information-management-policy"></a>Ubicaciones para usar una directiva de administración de información
 <a name="__toc340213528"> </a>
 
-Para implementar una directiva de administración de información, debe agregarla a una lista, biblioteca o tipo de contenido de un sitio. La ubicación en la que se crea o agrega una directiva de administración de información afecta a la frecuencia con la que se aplica la directiva o a la frecuencia con la que se puede usar. Podrá:
+Para implementar una directiva de administración de información, debe agregarla a una lista, biblioteca o tipo de contenido de un sitio. La ubicación en la que se crea o agrega una directiva de administración de información afecta a la frecuencia con la que se aplica la directiva o a la frecuencia con la que se puede usar. Puede:
   
  **Crear una directiva de colección de sitios y, a continuación, agregar esta directiva a un tipo de contenido, lista o biblioteca** Puede crear una directiva de colección de sitios en la lista Directivas del sitio de nivel superior de una colección de sitios. Después de crear una directiva de colección de sitios, puede exportarla para que los administradores de otras colecciones de sitios puedan importarla en su lista Directivas. La creación de una directiva de colección de sitios exportable permite estandarizar las directivas de administración de información en todos los sitios de la organización. 
   

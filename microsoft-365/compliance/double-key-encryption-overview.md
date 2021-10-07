@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
 ms.reviewer: esaggese
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: ed07361f8c433a318342ae3c8ad750549992c285
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8cdc4d71609430dd7bcb19edc3b55c49a3b9401d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212667"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200538"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>Preguntas más frecuentes sobre cifrado de clave doble
 

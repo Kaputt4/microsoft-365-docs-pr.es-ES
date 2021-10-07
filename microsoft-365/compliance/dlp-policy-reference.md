@@ -8,7 +8,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MET150
@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 972b5a628f434bdfb989191cf5fcd8ca9bfcc2d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2cfc2e9387b9c29fd7bd6141046436254f88704
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219057"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201246"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -383,7 +383,7 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 
 La ubicación de los dispositivos proporciona una serie de sub-actividades (condiciones) y acciones. Para obtener más información, vea Actividades de extremo en las [que puede supervisar y realizar acciones en](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
 
-#### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security:
+#### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security:
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 - Restringir aplicaciones de terceros

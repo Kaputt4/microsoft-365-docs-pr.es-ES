@@ -7,7 +7,7 @@ ms.date: 12/15/2017
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: En este artículo se proporcionan recursos para diseñar e implementar SharePoint sitios de Internet de Server 2013 hospedados en Azure Infrastructure Services.
-ms.openlocfilehash: d51a2833c5e14ad966272574c643a3a1e6b05aed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ecf6f1d850acacfd8366a2f934ab81b3bcab6317
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215977"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200154"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sitios de Internet en Microsoft Azure con SharePoint Server 2013
 

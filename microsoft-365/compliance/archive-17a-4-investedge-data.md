@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector InvestEdge DataParser de 17a-4 para importar y archivar datos de InvestEdge en Microsoft 365.
-ms.openlocfilehash: acb4b76e1902292b2f34818857e5e5dee93617d9
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: cacdb9ed03003eb3aee8b84baf1eac82a2f378b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356142"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200610"
 ---
 # <a name="set-up-a-connector-to-archive-investedge-data"></a>Configurar un conector para archivar datos investEdge
 

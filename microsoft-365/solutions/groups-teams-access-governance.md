@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo regular el acceso en Microsoft 365 grupos, Teams y SharePoint.
-ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2a0da02385e3fc325bb4f25b4ac8a538f950d820
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214207"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207456"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Administración del acceso en Microsoft 365 grupos, Teams y SharePoint
 
@@ -89,7 +89,7 @@ Recursos adicionales:
 
 - [Planear una implementación de acceso condicional](/azure/active-directory/conditional-access/plan-conditional-access)
 
-- [Microsoft Intune general](/mem/intune/fundamentals/what-is-intune)
+- [Introducción a Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
 
 - [Controlar SharePoint acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices)
 

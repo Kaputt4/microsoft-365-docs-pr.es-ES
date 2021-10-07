@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La administración de privacidad de Microsoft ofrece soluciones para evaluar los datos personales que la organización almacena en Microsoft 365 y le ayuda a identificar y corregir los riesgos de privacidad.
-ms.openlocfilehash: 9eddf65236befb35df7927e1ff3f7e4ddf6f03e7
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: d760e8a943086fb33395e0d5a8544616ee2f8be3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988672"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207204"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Administración de privacidad de Microsoft (versión preliminar)
 

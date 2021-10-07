@@ -9,7 +9,7 @@ ms.date: 9/11/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo generar un informe que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos.
-ms.openlocfilehash: 5ccb74960a7b0d051b0c7754710f35e81b3edae0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 953b2aaa1b133d79b82f17e5f75603947cc5d6d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189827"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200574"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Crear un informe de suspensiones en casos de eDiscovery
 

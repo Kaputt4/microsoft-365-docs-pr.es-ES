@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3f3eef756d37bf1552120a05e351c844b37b863b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a9539d075c5428374972e8f7398ff2f326a587f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185934"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207156"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Campos de la API de Microsoft Defender para detecciones de puntos de conexión
 
@@ -57,7 +57,7 @@ Los números de campo coinciden con los números de las imágenes siguientes.
 > |2|Severity|deviceSeverity|Alto|Valor disponible para cada detección.|
 > |3|Categoría|deviceEventCategory|Malware|Valor disponible para cada detección.|
 > |4 |Origen de detección|sourceServiceName|Antivirus|Antivirus de Microsoft Defender o Defender para endpoint. Valor disponible para cada detección.|
-> |5 |MachineName|sourceHostName|desktop-4a5ngd6|Valor disponible para cada detección.|
+> |5|MachineName|sourceHostName|desktop-4a5ngd6|Valor disponible para cada detección.|
 > |6 |FileName|fileName|Robocopy.exe|Disponible para detecciones asociadas a un archivo o proceso.|
 > |7 |FilePath|filePath|C:\Windows\System32\Robocopy.exe|Disponible para detecciones asociadas a un archivo o proceso.|
 > |8 |UserDomain|sourceNtDomain|CONTOSO|Dominio del contexto de usuario que ejecuta la actividad, disponible para detecciones basadas en comportamiento de Defender para endpoint.|
@@ -68,7 +68,7 @@ Los números de campo coinciden con los números de las imágenes siguientes.
 > |13|ThreatName|deviceCustomString1|HackTool:Win32/Mikatz!dha|Disponible para detecciones de ANTIVIRUS de Microsoft Defender.|
 > |14 |IpAddress|sourceAddress|218.90.204.141|Disponible para detecciones asociadas a eventos de red. Por ejemplo, "Comunicación a un destino de red malintencionado".|
 > |15 |Url|requestUrl|down.esales360.cn|Disponible para detecciones asociadas a eventos de red. Por ejemplo, "Comunicación a un destino de red malintencionado".|
-> |16 |RemediationIsSuccess|deviceCustomNumber2|TRUE|Disponible para detecciones de ANTIVIRUS de Microsoft Defender. El valor de ArcSight es 1 cuando TRUE y 0 cuando FALSE.|
+> |16|RemediationIsSuccess|deviceCustomNumber2|TRUE|Disponible para detecciones de ANTIVIRUS de Microsoft Defender. El valor de ArcSight es 1 cuando TRUE y 0 cuando FALSE.|
 > |17 |WasExecutingWhileDetected|deviceCustomNumber1|FALSE|Disponible para detecciones de ANTIVIRUS de Microsoft Defender. El valor de ArcSight es 1 cuando TRUE y 0 cuando FALSE.|
 > |18 |AlertId|externalId|636210704265059241_673569822|Valor disponible para cada detección.|
 > |19|LinkToWDATP|flexString1|`https://securitycenter.windows.com/alert/636210704265059241_673569822`|Valor disponible para cada detección.|

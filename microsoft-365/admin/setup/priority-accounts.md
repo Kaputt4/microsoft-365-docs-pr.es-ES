@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Supervisar los mensajes de correo electrónico con errores y retrasos enviados a o desde cuentas que tienen un alto impacto empresarial.
-ms.openlocfilehash: 95d5e703570b3a399335a0c26d7e953a277ccddf
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: b8762885cc54859cf927653abb14858c0094ea12
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934208"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201354"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Administrar y supervisar cuentas de prioridad
 
@@ -96,4 +96,4 @@ Agregue cuentas de prioridad desde la página Usuarios activos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Uso de cuentas de prioridad en Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
+[Uso de Cuentas prioritarias en Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)

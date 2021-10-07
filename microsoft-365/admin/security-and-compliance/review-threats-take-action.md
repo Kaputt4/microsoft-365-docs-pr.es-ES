@@ -7,19 +7,20 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtén información sobre cómo revisar y administrar las amenazas detectadas por Antivirus de Microsoft Defender en tus Windows 10 dispositivos.
-ms.openlocfilehash: fe03b7a7a72b3908b19da71544853a671fc90f52
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 30c2114a3605c73214f773414fe64e18522d9093
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772787"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180406"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Revisar las amenazas detectadas y actuar al respecto
 
@@ -81,7 +82,7 @@ Cuando veas detalles sobre amenazas o dispositivos específicos, verás recomend
 | Ejecutar examen rápido | Inicia un examen rápido del antivirus en el dispositivo, centrándose en ubicaciones comunes donde es posible que se registre malware, como las claves del Registro y las carpetas de inicio conocidas Windows inicio. |
 | Ejecutar examen completo | Inicia un examen antivirus completo en el dispositivo, centrándose en ubicaciones comunes donde se puede registrar malware e incluyendo todos los archivos y carpetas del dispositivo. Los resultados se envían [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Actualizar antivirus | Requiere que el dispositivo obtenga actualizaciones [de inteligencia de seguridad](https://go.microsoft.com/fwlink/?linkid=2149926) para la protección antivirus y antimalware. |
-| Reiniciar dispositivo | Fuerza a Windows 10 dispositivo a reiniciarse en cinco minutos.<br><br>**IMPORTANTE:** El propietario o usuario del dispositivo no se notifica automáticamente del reinicio y podría perder el trabajo no guardado. |
+| Reiniciar el dispositivo | Fuerza a Windows 10 dispositivo a reiniciarse en cinco minutos.<br><br>**IMPORTANTE:** El propietario o usuario del dispositivo no se notifica automáticamente del reinicio y podría perder el trabajo no guardado. |
 
 ## <a name="manage-threat-detections-in-microsoft-endpoint-manager"></a>Administrar detecciones de amenazas en Microsoft Endpoint Manager
 

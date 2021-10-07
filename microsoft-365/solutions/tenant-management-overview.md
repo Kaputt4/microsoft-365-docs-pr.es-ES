@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Información general sobre la planeación, la implementación y el funcionamiento continuo de los Microsoft 365 inquilinos.
-ms.openlocfilehash: 5d98f715b9233a29c8710966099667075eae0020
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 915f71e6a8ab1f6f346940fccc0e15c5f8ce8d65
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165475"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176168"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Administración de inquilinos para Microsoft 365 para empresas
 
@@ -94,25 +94,25 @@ En las siguientes secciones y tabla se indican las funciones clave y las licenci
 
 |Funcionalidad o característica|Description|Licencias|
 |---|---|---|
-|Varios inquilinos|Cada Microsoft 365 inquilino es distinto, único y independiente del resto de Microsoft 365 inquilinos. Con varios inquilinos, existen restricciones y consideraciones adicionales al administrarlos y proporcionar servicios a los usuarios.|Microsoft 365 E3 o E5|
-|Migración de buzones de inquilinos cruzados|Los administradores de inquilinos pueden mover buzones entre inquilinos con dependencias de infraestructura mínimas en sus sistemas locales. Esto quita la necesidad de retirar y incorporar buzones.|Microsoft 365 E3 o E5|
-|Multi-Geo|El inquilino puede almacenar datos en reposo en las otras ubicaciones geográficas del centro de datos que haya elegido para cumplir los requisitos de residencia de datos.|Microsoft 365 E3 o E5|
-|Mover datos principales a una nueva ubicación geográfica del centro de datos|A medida que Microsoft agrega nuevas geos del centro de datos para recursos de procesamiento y capacidad adicionales, puede solicitar un movimiento geográfico del centro de datos para la residencia de datos en geo para los datos principales del cliente.|Microsoft 365 E3 o E5|
+|Varios inquilinos|Cada Microsoft 365 inquilino es distinto, único y independiente del resto de Microsoft 365 inquilinos. Con varios inquilinos, existen restricciones y consideraciones adicionales al administrarlos y proporcionar servicios a los usuarios.|Microsoft 365 E3 o E5|
+|Migración de buzones de inquilinos cruzados|Los administradores de inquilinos pueden mover buzones entre inquilinos con dependencias de infraestructura mínimas en sus sistemas locales. Esto quita la necesidad de retirar y incorporar buzones.|Microsoft 365 E3 o E5|
+|Multi-Geo|El inquilino puede almacenar datos en reposo en las otras ubicaciones geográficas del centro de datos que haya elegido para cumplir los requisitos de residencia de datos.|Microsoft 365 E3 o E5|
+|Mover datos principales a una nueva ubicación geográfica del centro de datos|A medida que Microsoft agrega nuevas geos del centro de datos para recursos de procesamiento y capacidad adicionales, puede solicitar un movimiento geográfico del centro de datos para la residencia de datos en geo para los datos principales del cliente.|Microsoft 365 E3 o E5|
 ||||
 
 ### <a name="networking"></a>Redes
 
 |Funcionalidad o característica|Description|Licencias|
 |---|---|---|
-|Red Ideas|Métricas de rendimiento de red recopiladas Microsoft 365 inquilino para ayudarle a diseñar perímetros de red para sus ubicaciones de oficina.|Microsoft 365 E3 o E5|
-|Automatizar actualizaciones de puntos de conexión|Automatice la configuración y las actualizaciones continuas para los Microsoft 365 en los archivos PAC de cliente y los dispositivos y servicios de red.|Microsoft 365 E3 o E5|
+|Red Ideas|Métricas de rendimiento de red recopiladas Microsoft 365 inquilino para ayudarle a diseñar perímetros de red para sus ubicaciones de oficina.|Microsoft 365 E3 o E5|
+|Automatizar actualizaciones de puntos de conexión|Automatice la configuración y las actualizaciones continuas para los Microsoft 365 en los archivos PAC de cliente y los dispositivos y servicios de red.|Microsoft 365 E3 o E5|
 ||||
 
 ### <a name="identity"></a>Identidad
 
 |Funcionalidad o característica|Description|Licencias|
 |---|---|---|
-|Sincronizar los Servicios de dominio de Active Directory locales (AD DS) con el inquilino de Azure AD|Aproveche el proveedor de identidades local para cuentas de usuario, grupos y otros objetos.|Microsoft 365 E3 o E5|
+|Sincronizar los Servicios de dominio de Active Directory locales (AD DS) con el inquilino de Azure AD|Aproveche el proveedor de identidades local para cuentas de usuario, grupos y otros objetos.|Microsoft 365 E3 o E5|
 |MFA aplicada en los valores predeterminados de seguridad|Protege frente a ataques a identidades y dispositivos, pues obliga a usar una segunda forma de autenticación para iniciar sesión. Los valores predeterminados de seguridad requieren MFA para todas las cuentas de usuario.|Microsoft 365 E3 o E5|
 |MFA aplicada con acceso condicional|Requerir MFA en función de los atributos del inicio de sesión con directivas de acceso condicional.|Microsoft 365 E3 o E5|
 |MFA aplicada con Acceso condicional basado en los riesgos|Requerir la MFA según el riesgo de inicio de sesión del usuario con Microsoft Defender for Identity.|Microsoft 365 E5 o E3 con las licencias de Azure AD Premium P2|
@@ -124,16 +124,16 @@ En las siguientes secciones y tabla se indican las funciones clave y las licenci
 |Funcionalidad o característica|Description|Licencias|
 |---|---|---|
 |Migrar a Windows 10|Migre los dispositivos que Windows 7 o Windows 8.1 a Windows 10 Enterprise.|Windows 10 Enterprise licencias incluidas con Microsoft 365 E3 o E5|
-|Migrar a Aplicaciones Microsoft 365 para empresas|Migre Office cliente como Word y PowerPoint a las versiones instaladas desde la nube que se actualizan con nuevas características.|Microsoft 365 E3 o E5|
-|Migrar servidores y datos locales a Microsoft 365|Migre Exchange buzones de correo, SharePoint web y Skype Empresarial Online a Microsoft 365 servicios en la nube.|Microsoft 365 E3 o E5|
+|Migrar a Aplicaciones Microsoft 365 para empresas|Migre Office cliente como Word y PowerPoint a las versiones instaladas desde la nube que se actualizan con nuevas características.|Microsoft 365 E3 o E5|
+|Migrar servidores y datos locales a Microsoft 365|Migre Exchange buzones de correo, SharePoint web y Skype Empresarial Online a Microsoft 365 servicios en la nube.|Microsoft 365 E3 o E5|
 ||||
 
 ### <a name="device-and-app-management"></a>Datos de administración de dispositivos y aplicaciones
 
 |Funcionalidad o característica|Description|Licencias|
 |---|---|---|
-|Microsoft Intune|Un servicio basado en la nube que proporciona administración de dispositivos móviles (MDM) y administración de aplicaciones móviles (MAM) para controlar cómo se usan la aplicación y los dispositivos de la organización, incluidos teléfonos móviles, tabletas y portátiles.|Microsoft 365 E3 o E5|
-|Movilidad y seguridad básicas|Protege y administra los dispositivos móviles de tus usuarios como iPhones, iPads, Androids y Windows teléfonos con este servicio integrado.|Microsoft 365 E3 o E5|
+|Microsoft Intune|Un servicio basado en la nube que proporciona administración de dispositivos móviles (MDM) y administración de aplicaciones móviles (MAM) para controlar cómo se usan la aplicación y los dispositivos de la organización, incluidos teléfonos móviles, tabletas y portátiles.|Microsoft 365 E3 o E5|
+|Movilidad y seguridad básicas|Protege y administra los dispositivos móviles de tus usuarios como iPhones, iPads, Androids y Windows teléfonos con este servicio integrado.|Microsoft 365 E3 o E5|
 ||||
 
 ## <a name="next-steps"></a>Pasos siguientes

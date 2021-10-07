@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información Microsoft 365 suscripción adecuada para su organización.
-ms.openlocfilehash: 4c1bd7ac67cd44baa8317295ade0e5525764b523
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: ecc3a494412fa8f1da1be16a55d3f7093d0fe2d3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011409"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200766"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Elegir una Microsoft 365 suscripción
 

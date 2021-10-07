@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.date: ''
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre la característica Caja fuerte datos adjuntos en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c80428c59f4ff8621be2d9f62ac8c650ea9d41ce
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 10b3d46d2cd2fd123c790ccb5af556510d911350
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484004"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180714"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Caja fuerte Datos adjuntos de Microsoft Defender para Office 365
 
@@ -80,7 +80,7 @@ En esta sección se describe la configuración de las Caja fuerte de datos adjun
   |**Entrega dinámica**|Entrega mensajes inmediatamente, pero reemplaza los datos adjuntos por marcadores de posición hasta Caja fuerte se completa el examen de datos adjuntos. <p> Los mensajes que contienen datos adjuntos malintencionados se ponen en cuarentena. De forma predeterminada, solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes.<sup>\*</sup> <p> Para obtener más información, vea la sección [Entrega dinámica en Caja fuerte de datos adjuntos](#dynamic-delivery-in-safe-attachments-policies) más adelante en este artículo.|Evite retrasos en los mensajes mientras protege a los destinatarios de archivos malintencionados.|
   |
 
-  <sup>\*</sup>Los administradores pueden  crear y asignar directivas de cuarentena en Caja fuerte directivas de datos adjuntos que definen lo que los usuarios pueden hacer a los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+  <sup>\*</sup>Los administradores pueden  crear y asignar directivas de cuarentena en Caja fuerte directivas de datos adjuntos que definen lo que los usuarios pueden hacer a los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
 - **Redirigir datos** adjuntos al detectar: habilite redirigir y enviar los datos  adjuntos a la siguiente dirección de correo **electrónico:** para bloquear **,** **supervisar** o reemplazar acciones, envíe mensajes que contengan datos adjuntos de malware a la dirección de correo electrónico interna o externa especificada para análisis e investigación.
 
