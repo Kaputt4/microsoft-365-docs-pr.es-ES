@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 31fe51aac9262e5d3bcfa9d6a9c757ddeb30f42a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18da838cf57b330d5015f535fefcbd2db42b73ef
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220574"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209902"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Consultas de OData con Microsoft Defender para endpoint
 
@@ -513,6 +513,6 @@ json{
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Microsoft Defender para api de punto de conexión](apis-intro.md)

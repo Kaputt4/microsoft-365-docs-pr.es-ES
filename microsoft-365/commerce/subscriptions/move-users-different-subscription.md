@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtén información sobre cómo mover usuarios entre suscripciones.
 ms.date: 07/01/2020
-ms.openlocfilehash: 96ae6a589469004f2479edb2a4f8ed384b25f841
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5cbbdb79d291b89c2f62e44e44239ea5e2791f57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221181"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206162"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
@@ -33,7 +33,7 @@ Si tiene más de una suscripción, tiene usuarios con una licencia para una susc
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global, de licencia o de usuarios para asignar licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Debe ser administrador global, de licencia o de usuario para asignar licencias. Para obtener más información, vea [Acerca de Microsoft 365 roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
@@ -63,7 +63,7 @@ Debe ser un administrador global, de licencia o de usuarios para asignar licenci
 
 5. En la parte inferior, seleccione **Guardar cambios** \> **cerrar**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si no va a reasignar las licencias no [usadas](../../managed-desktop/get-started/assign-licenses.md)a otros usuarios, considere la posibilidad de quitar las licencias de la suscripción para que no pague más licencias de las que necesita. [](../../commerce/licenses/buy-licenses.md)
 

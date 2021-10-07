@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aaa1c8cf1d54fe589adfd06939fc3f4c4398b18e
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 79bf9503b94b6d3c1f1a8bcd9203c381aad9e90f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009498"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206858"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Crear y ver excepciones para recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -41,7 +41,7 @@ Como alternativa a una solicitud de corrección cuando una recomendación no es 
 
 Cuando se crea una excepción para una recomendación, la recomendación no estará activa hasta el final de la duración de la excepción. El estado de recomendación cambiará a **Excepción completa** o **Excepción parcial** (por grupo de dispositivos).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 Solo los usuarios con permisos de "control de excepciones" pueden administrar excepciones (incluida la creación o la cancelación). [Obtenga más información sobre los roles RBAC](user-roles.md).
 

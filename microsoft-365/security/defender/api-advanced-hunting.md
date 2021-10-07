@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2752de976329f3fbef047557e6a626afd05a520f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220110"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206642"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de búsqueda avanzada
 
@@ -88,7 +88,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 Parámetro | Tipo | Descripción
 -|-|-
-Consulta | Texto | Consulta que se debe ejecutar. **Nota: obligatorio**
+Query | Text | Consulta que se debe ejecutar. **Nota: obligatorio**
 
 ## <a name="response"></a>Respuesta
 
@@ -104,7 +104,7 @@ El objeto response contiene tres propiedades de nivel superior:
 
 En el siguiente ejemplo, un usuario envía la consulta siguiente y recibe un objeto de respuesta api que contiene `Stats` , `Schema` y `Results` .
 
-### <a name="query"></a>Consulta
+### <a name="query"></a>Query
 
 ```json
 {

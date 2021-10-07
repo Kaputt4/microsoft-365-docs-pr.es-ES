@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1c8e5fa990e37f4812b8e5429fdbf2fcbfa7b71
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 775db5f94cacbca08993b0cb9aac67019515174a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124738"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210034"
 ---
 # <a name="onboard-non-windows-devices"></a>Incorporar dispositivos que no tienen Windows
 
@@ -63,17 +63,13 @@ Tendrás que seguir los siguientes pasos para incorporar dispositivos que no Win
 
 ## <a name="offboard-non-windows-devices"></a>Dispositivos no Windows offboard
 
-1. Siga la documentación del tercero para desconectar la solución de terceros de Microsoft Defender para endpoint.
+Para dispositivos macOS y Linux, puedes elegir salir a través de Microsoft Defender para endpoint. En el panel de navegación, **seleccione Configuración** \> **Offboard** Seleccionar sistema operativo \> **para iniciar el proceso de offboarding**.
 
-2. Quite los permisos de la solución de terceros en el inquilino de Azure AD.
-   1. Inicie sesión en el [Azure Portal](https://portal.azure.com).
-   2. Seleccione **Azure Active Directory > Enterprise aplicaciones**.
-   3. Selecciona la aplicación que quieras quitar.
-   4. Seleccione el **botón** Eliminar.
+También puede desactivar la integración de terceros Windows dispositivos no integrados. Habilite la cobertura para dispositivos que ejecutan plataformas que no Windows mediante [la integración de soluciones de terceros.](https://securitycenter.windows.com/interoperability/partners) 
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Dispositivos Windows integrados](configure-endpoints.md)
+- [incorporar dispositivos Windows](configure-endpoints.md)
 - [Servidores integrados](configure-server-endpoints.md)
 - [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
 - [Solución de problemas de incorporación de Microsoft Defender para puntos de conexión](troubleshoot-onboarding.md)

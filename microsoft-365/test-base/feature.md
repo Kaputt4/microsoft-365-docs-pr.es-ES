@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: a0a60a061959a5aff038c3e74da7e1775f66e237
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f6e7cfffb92f64d92a4ad68d93d1d51dccc0f4bb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219700"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206390"
 ---
 # <a name="windows-feature-update-validation"></a>Windows Validación de actualización de características
 
@@ -52,7 +52,7 @@ A continuación se indican los pasos que debe seguir al rellenar los detalles **
 ![La validación de actualización de características le permite revisar los resultados rápidamente.](Media/Feature-update-validation-04.png)
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Avance al siguiente artículo para empezar a comprender el análisis de regresión de memoria.
 > [!div class="nextstepaction"]

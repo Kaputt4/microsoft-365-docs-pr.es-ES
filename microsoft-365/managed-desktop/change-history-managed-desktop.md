@@ -12,13 +12,13 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.article: article
-ms.localizationpriority: normal
-ms.openlocfilehash: 6b12451a3c64384d46ad53af14ff17761d515251
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: 42ee6668c4a38a446e06732fdefdd1f26cf4ef62
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215577"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209518"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cambiar el historial de la documentación de Escritorio administrado de Microsoft
 
@@ -43,7 +43,7 @@ Artículo nuevo o modificado | Descripción
 [Obtener ayuda para los usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
 
 ## <a name="june-2021"></a>Junio de 2021
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [Trabajar con informes](working-with-managed-desktop/reports.md) | Artículo actualizado
 [Información general](service-description/privacy-personal-data.md) | Artículo actualizado
@@ -116,7 +116,7 @@ Artículo nuevo o modificado | Descripción
 
 
 ## <a name="december-2020"></a>Diciembre de 2020
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [¿Qué es el escritorio administrado por Microsoft?](./intro/index.md) | Artículo actualizado
 [Trabajar con informes](working-with-managed-desktop/reports.md) | Artículo actualizado
@@ -127,7 +127,7 @@ Artículo nuevo o modificado | Description
 
 
 ## <a name="november-2020"></a>Noviembre de 2020
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [Solucionar los problemas detectados por la herramienta de evaluación de la preparación](get-ready/readiness-assessment-fix.md) | Artículo actualizado
 [Herramienta de evaluación de preparación](get-ready/readiness-assessment-tool.md) | Artículo nuevo
@@ -139,7 +139,7 @@ Artículo nuevo o modificado | Description
 
 
 ## <a name="october-2020"></a>Octubre de 2020
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [Requisitos previos](get-ready/prerequisites.md) | Artículo actualizado
 Trabajar con ideas | Artículo actualizado
@@ -181,7 +181,7 @@ Artículo nuevo o modificado | Descripción
 [Privacidad y datos personales](service-description/privacy-personal-data.md) | Artículo nuevo
 
 ## <a name="july-2020"></a>Julio de 2020
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [Escritorio administrado de Microsoft de aplicaciones](service-description/mmd-app-requirements.md) | Artículo actualizado
 [Cumplimiento](intro/compliance.md) | Artículo actualizado
@@ -196,7 +196,7 @@ Artículo nuevo o modificado | Description
 [Instalar Microsoft Project o Microsoft Visio en Escritorio administrado de Microsoft dispositivos](get-started/project-visio.md) | Artículo actualizado
 
 ## <a name="june-2020"></a>Junio de 2020
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [Nueva Microsoft Edge aplicación](get-started/edge-browser-app.md) | Artículo nuevo
 [Configuración del dispositivo](service-description/device-policies.md) | Artículo actualizado
@@ -216,7 +216,7 @@ Artículo nuevo o modificado | Descripción
 
 
 ## <a name="april-2020"></a>Abril de 2020
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [Cumplimiento](intro/compliance.md) | Artículo nuevo
 [Escritorio administrado de Microsoft regiones e idiomas admitidos](service-description/regions-languages.md) | Artículo actualizado
@@ -232,7 +232,7 @@ Artículo nuevo o modificado | Descripción
 
 
 ## <a name="february-2020"></a>Febrero de 2020
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [Seguridad en Escritorio administrado de Microsoft](service-description/security.md)| Artículo actualizado
 Trabajar con ideas | Artículo actualizado
@@ -260,7 +260,7 @@ Artículo nuevo o modificado | Descripción
 
 
 ## <a name="november-2019"></a>Noviembre de 2019
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 Trabajar con ideas | Artículo nuevo
 Información sobre el uso | Artículo nuevo
@@ -301,7 +301,7 @@ Artículo nuevo o modificado | Descripción
 [Cómo se controlan las actualizaciones en Escritorio administrado de Microsoft](service-description/updates.md) | Artículo actualizado
 
 ## <a name="august-2019"></a>Agosto de 2019
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [Trabajar con los Servicios de Consultoría de Microsoft](get-ready/apps-mcs.md) | Artículo actualizado
 [Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
@@ -320,7 +320,7 @@ Artículo nuevo o modificado | Descripción
 
 
 ## <a name="june-2019"></a>Junio de 2019
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [Aplicaciones en Escritorio administrado de Microsoft](get-ready/apps.md) | Artículo actualizado
 [Trabajar con los Servicios de Consultoría de Microsoft](get-ready/apps-mcs.md) | Artículo nuevo
@@ -341,7 +341,7 @@ Artículo nuevo o modificado | Descripción
 [Obtener ayuda para los usuarios](working-with-managed-desktop/end-user-support.md) | Artículo nuevo
 
 ## <a name="april-2019"></a>Abril de 2019
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [Instalar Portal de empresa de Intune en Escritorio administrado de Microsoft dispositivos](get-started/company-portal.md) | Artículo nuevo
 [Instalar Microsoft Project y Microsoft Visio en Escritorio administrado de Microsoft dispositivos](get-started/project-visio.md) | Artículo nuevo 
@@ -357,7 +357,7 @@ Artículo nuevo o modificado | Descripción
 [Instalar Microsoft Project y Microsoft Visio en Escritorio administrado de Microsoft dispositivos](get-started/project-visio.md) | Artículo nuevo
 
 ## <a name="february-2019"></a>Febrero de 2019
-Artículo nuevo o modificado | Description
+Artículo nuevo o modificado | Descripción
 --- | ---
 [Dispositivos del programa](service-description/device-list.md) | Se actualiza con compatibilidad con ciertos dispositivos Dell y HP.
 [Introducción a la configuración configurable](working-with-managed-desktop/config-setting-overview.md) | Artículo nuevo

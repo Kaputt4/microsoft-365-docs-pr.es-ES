@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente y administre una o varias Microsoft 365 inquilinos, con opciones para ubicaciones multige geográficas y en movimiento.
-ms.openlocfilehash: 5dee78835de1e3e64f52f653f52ea4f32dcf6547
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 149dd4274e43d085f2c454774c4499a12561b766
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213120"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206438"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Paso 1. Su Microsoft 365 para inquilinos empresariales
 

@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 6/29/2018
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
@@ -19,12 +19,12 @@ ms.custom:
 description: En este artículo se explican los cambios que se están implantando en las características de protección de Azure Information Protection
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7ec45d7e01c6b0bdb6d49aa5c282189b022d6b2a8a814f38acab750732572d80
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a11821e6c2165c79e286612b89d42f7e19b1593d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56785916"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206534"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Características de protección de Azure Information Protection que se están implementando en los inquilinos existentes
 

@@ -7,7 +7,7 @@ ms.date: 07/08/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Obtenga información sobre cómo comprobar el historial de las conexiones del equipo cliente para ayudarle a detectar problemas emergentes de forma anticipada.
-ms.openlocfilehash: 460bde30a0b292569b045c339066df2860c50989
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3a294bd00f1fdfd6fb8d04130193658c4eeea2d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210590"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209602"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento
 
@@ -307,7 +307,7 @@ Por ejemplo, si tiene 51,84 milisegundos desde el cliente a la dirección URL de
   
 ![Gráfico adicional que muestra el ping en milisegundos de cliente a proxy junto al cliente Office 365 para que se puedan restar los valores.](../media/cd764e77-5154-44ba-a5cd-443a628eb2d9.PNG)
   
-En términos de solución de problemas, es posible que encuentre algo interesante solo para mantener estas líneas base. Por ejemplo, si encuentra que generalmente tiene entre 40 y 59 milisegundos de latencia desde el proxy o la salida, apunte a la dirección URL Office 365, y tener una latencia de punto de salida o proxy de un cliente de entre 3 y 7 milisegundos (según la cantidad de tráfico de red que esté viendo durante esa hora del día), seguramente sabrá que algo es problemático si los tres últimos clientes a las líneas base de proxy o salida muestran una latencia de 45 milisegundos.
+En términos de solución de problemas, es posible que encuentre algo interesante solo para mantener estas líneas base. Por ejemplo, si encuentra que generalmente tiene entre 40 y 59 milisegundos de latencia desde el proxy o la salida a la dirección URL de Office 365 y tiene una latencia de un cliente para proxy o punto de salida de entre 3 y 7 milisegundos (según la cantidad de tráfico de red que esté viendo durante esa hora del día), seguramente sabrá que algo es problemático si los tres últimos clientes para proxy o salida de línea base muestran líneas base de salida o proxy. una latencia de 45 milisegundos.
   
 ### <a name="advanced-methods"></a>Métodos avanzados
 
@@ -329,6 +329,6 @@ Si está en medio de un problema de rendimiento, muchos de los pasos son los mis
   
 Para solucionar un problema de  *rendimiento,*  en este momento, debe realizar un seguimiento en el momento en que experimenta el problema de rendimiento. Debe tener las herramientas adecuadas disponibles para recopilar registros y necesita un plan de acción, es decir, una lista de las acciones de solución de problemas que debe realizar para recopilar la mejor información que pueda. Lo primero que debe hacer es registrar la fecha y hora de la prueba para que los archivos se puedan guardar en una carpeta que refleje el tiempo. A continuación, limite los pasos del problema. Estos son los pasos exactos que usará para las pruebas. No olvide los conceptos básicos: si el problema es solo con Outlook, asegúrese de registrar que el comportamiento del problema se produce en un solo Office 365 servicio. Restringir el ámbito de este problema le ayudará a centrarse en algo que pueda resolver. 
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)

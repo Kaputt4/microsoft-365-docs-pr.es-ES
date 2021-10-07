@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 4a0c6944387def430ef0091239b5111ec533dcd6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 68879d83e92ecbe33c3168b7a757d3fe9a1e3d13
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214127"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206366"
 ---
 # <a name="step-5-choose-your-test-options"></a>Paso 5: Elegir las opciones de prueba. 
 
@@ -29,7 +29,7 @@ La pestaña está para que los usuarios que deseen realizar pruebas funcionales 
 
 Seleccione _**Revisar**_ para ir a la siguiente pestaña y revisar las opciones de prueba seleccionadas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Los detalles del paso de anidamiento se pueden ver en el siguiente artículo a través del vínculo siguiente:
 > [!div class="nextstepaction"]

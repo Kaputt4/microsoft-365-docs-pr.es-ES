@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 18f7436c974ab9b976980861ae93bd4b3ea1fc2e
-ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
+ms.openlocfilehash: cde5f6e00260710416266fd6f4113def9c7baf6f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934694"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206606"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -141,9 +141,10 @@ Para administrar una alerta, seleccione la alerta en la cola de alertas de su fi
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Ejemplo del panel de resumen de una alerta en el portal Microsoft 365 Defender web.":::
 
-El **panel Administrar alerta** permite especificar:
+El **panel Administrar alerta** le permite ver o especificar:
 
 - Estado de alerta (Nuevo, Resuelto, En curso).
+- La cuenta de usuario a la que se ha asignado la alerta
 - Clasificación de la alerta (No establecido, Alerta verdadera, Alerta falsa).
 - Para la clasificación como una alerta verdadera, el tipo de amenaza de la alerta en **el campo Determinación.**
 - Un comentario sobre la alerta.
@@ -177,7 +178,7 @@ Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

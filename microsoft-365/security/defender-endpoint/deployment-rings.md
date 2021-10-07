@@ -2,14 +2,13 @@
 title: Implementar Microsoft Defender para endpoint en anillos
 description: Obtenga información sobre cómo implementar Microsoft Defender para endpoint en anillos
 keywords: deploy, rings, evaluate, pilot, insider fast, insider slow, setup, onboard, phase, deployment, deploying, adoption, configuring
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9b7d78893f91242f5570a0df9fcbc3cab55bd4b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 5894fa9fea9a6970981f1d1171af9097daa697e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399303"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209985"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Implementar Microsoft Defender para endpoint en anillos
 
@@ -88,7 +87,7 @@ En la tabla siguiente se muestran los puntos de conexión compatibles y la herra
 
 ****
 
-|Extremo|Herramienta de implementación|
+|Punto de conexión|Herramienta de implementación|
 |---|---|
 |**Windows**|[Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <p> **NOTA:** Si desea implementar más de 10 dispositivos en un entorno de producción, use el método de directiva de grupo en su lugar u otras herramientas compatibles que se enumeran a continuación. <p> [Directiva de grupo](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [Scripts VDI](configure-endpoints-vdi.md) <p> [Integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[Script local](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [Jamf Pro](mac-install-with-jamf.md) <p> [Administración de dispositivos móviles](mac-install-with-other-mdm.md)|
@@ -103,7 +102,7 @@ En esta fase, puede usar el material de planeación [de implementación](deploym
 
 Use el siguiente material para seleccionar la arquitectura de Microsoft Defender para endpoint adecuada que mejor se adapte a su organización.
 
-|**Elemento**|**Descripción**|
+|**Item**|**Descripción**|
 |:-----|:-----|
 |[![Imagen digital de la estrategia de implementación de Microsoft Defender para endpoints.](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li></ul>
 
@@ -113,7 +112,7 @@ Use el siguiente material para seleccionar la arquitectura de Microsoft Defender
 
 Para Windows y/o servidores Windows, seleccione varias máquinas para probar con antelación (antes del martes de revisión) mediante el programa de validación de actualización de seguridad **(SUVP).**
 
-Para obtener más información, vea:
+Para más información vea:
 
 - [¿Qué es el programa de validación de actualización de seguridad?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Software Update Validation Program and Centro de protección contra malware de Microsoft Establishment : TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)

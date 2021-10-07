@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 6286df3fa7b099df9cbe3f910434e0da99f521607148d872ed13e6b97a5d26a6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ada32650a01f3303a9c3c9011f5465dab5f5184
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867996"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206882"
 ---
 # <a name="threat-protection"></a>Protección contra amenazas
 
@@ -67,7 +67,7 @@ Esta funcionalidad integrada usa un enfoque basado en riesgos que cambia el jueg
 El conjunto de capacidades de reducción de superficie de ataque proporcionan la primera línea de defensa de la pila. Al garantizar que las opciones de configuración se establecen correctamente y se aplican técnicas de mitigación de vulnerabilidades, este conjunto de capacidades resiste los ataques y la explotación.
 
 - [Aislamiento basado en hardware](overview-hardware-based-isolation.md)
-- [Control de aplicaciones](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+- [Control de la aplicación](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 - [Control de dispositivos](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [Protección contra vulnerabilidades de seguridad](exploit-protection.md)
 - [Protección de red,](network-protection.md) [protección web](web-protection-overview.md)

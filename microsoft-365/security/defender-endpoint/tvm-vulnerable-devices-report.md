@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6118b461d615002423712dc931962c8ab21778c2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 23e0ab99f2272759e7e1c75f9eb3d36e7da4d925
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220200"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206750"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Informe de dispositivos vulnerables: Administración de amenazas y vulnerabilidades
 

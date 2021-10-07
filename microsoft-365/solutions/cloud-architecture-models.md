@@ -7,18 +7,18 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b47aded4cb85d08cb2671771c138cb74f3abd35
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: f7d663dc403d3323bf1dd1fa0ba210c26433cee1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481090"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210358"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Ilustraciones de la nube de Microsoft para arquitectos de TI
 
@@ -73,7 +73,7 @@ Lo que los arquitectos de TI necesitan saber sobre la nube híbrida para las pla
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Métodos de arquitectura para migraciones de inquilino a inquilino de la nube de Microsoft 
 En esta serie de temas se muestran varios métodos de arquitectura para las fusiones, las adquisiciones, las ventas y otros casos que podrían llevarle a migrar a un nuevo inquilino en la nube. Estos temas proporcionan instrucciones de punto de partida para la planeación de recursos empresariales. 
 
-| Item | Descripción |
+| Elemento | Descripción |
 |:-----|:-----|
 |[![Imagen digital de las migraciones de inquilino a inquilino en la nube de Microsoft.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| Actualizado en febrero de 2021    |Este modelo contiene lo siguiente: <ul><li>Una asignación de escenarios empresariales a métodos arquitectónicos</li><li>Consideraciones sobre diseño</li><li>Ejemplo de flujo de migración de eventos únicos</li><li>Ejemplo de flujo de migración por fases</li><li>Ejemplo de movimiento de inquilino o flujo dividido</li></ul>|
 

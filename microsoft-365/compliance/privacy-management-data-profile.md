@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre la información general y el perfil de datos en la administración de privacidad y cómo obtener información sobre los datos personales en el entorno Microsoft 365 organización.
-ms.openlocfilehash: 2d0b72aff73649ff4a34952de5a915dcd28dc670
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 058ca5253b034a409aa1fe994f9c8258fb99e1e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480597"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206042"
 ---
 # <a name="find-and-visualize-personal-data-in-privacy-management-preview"></a>Buscar y visualizar datos personales en la administración de privacidad (versión preliminar)
 

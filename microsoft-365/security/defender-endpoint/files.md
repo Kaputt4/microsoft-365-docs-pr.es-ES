@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9dffc5d2b7badba0a2f0e0b986973841ad488683
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4e7cbc65971c2f916d362e6a997d73e5581c9022
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220550"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205504"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
@@ -40,7 +40,7 @@ Representa una entidad de archivo en Defender para endpoint.
 
 ## <a name="methods"></a>Métodos
 
-Método|Tipo de valor devuelto |Description
+Método|Tipo de valor devuelto |Descripción
 :---|:---|:---
 [Obtener archivo](get-file-information.md) | [file](files.md) | Obtener un solo archivo 
 [Enumerar alertas relacionadas con archivos](get-file-related-alerts.md) | Colección [alert](alerts.md) | Obtener las [entidades](alerts.md) de alerta asociadas al archivo.

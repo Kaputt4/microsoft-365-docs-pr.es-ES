@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administradores pueden aprender a recuperarse de un ataque de ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9659a68e69f732203a20853320b2e35cd268a7c8
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: d2bb99111142be683c6504010576253784d3cd68
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099758"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210406"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
@@ -154,6 +154,7 @@ Información clave de Microsoft:
 Microsoft 365:
 
 - [Implementar la protección contra ransomware para el inquilino de Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [Maximizar la resistencia de ransomware con Azure y Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Protección de malware y ransomware](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Proteger el equipo Windows de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Control de ransomware en SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
@@ -165,6 +166,7 @@ Microsoft 365 Defender:
 Microsoft Azure:
 
 - [Defensas de Azure para los ataques de ransomware](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Maximizar la resistencia de ransomware con Azure y Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Plan de restauración y copia de seguridad para la protección contra ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Ayudar a proteger contra ransomware con Microsoft Azure copia de seguridad](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
 - [Recuperación de una identidad en peligro](/azure/security/fundamentals/recover-from-identity-compromise)

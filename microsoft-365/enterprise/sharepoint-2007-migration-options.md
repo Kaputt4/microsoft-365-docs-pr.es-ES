@@ -7,7 +7,7 @@ ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -27,12 +27,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene información para los usuarios que usan SharePoint Server 2007 para ayudarles a planear su actualización.
-ms.openlocfilehash: 38c4713b7dfb705c99d970c5f68a37b031c951a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f374e3e4f2282a7740575c60eb52e7095321c92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210540"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210202"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>SharePoint opciones de migración de 2007 a tener en cuenta
 
@@ -77,7 +77,7 @@ Los métodos como "en paralelo" son importantes en el esquema de lógica de actu
   
 1. Tiene un lugar para realizar copias de seguridad de las bases de datos de Microsoft Office SharePoint Server 2007 para actualizarlas por separado, mediante la base de datos adjunta.
     
-2. Si se explica que solo un pequeño número de bibliotecas de documentos críticas y otra información están en uso en la granja de servidores de Microsoft Office SharePoint Server 2007, puede elegir mover manualmente datos de Microsoft Office SharePoint Server 2007 a SharePoint Server 2010, o llevar solo sitios y webs específicos a la siguiente versión (lo que puede facilitar el trabajo).
+2. Si se explica que solo un pequeño número de bibliotecas de documentos críticas y otra información están en uso en la granja de servidores de Microsoft Office SharePoint Server 2007, puede elegir mover manualmente datos de Microsoft Office SharePoint Server 2007 a SharePoint Server 2010, o tomar solo sitios y webs específicos a la siguiente versión (lo que puede facilitar el trabajo).
     
 3. Cuanto menos haga en la granja de servidores de Microsoft Office SharePoint Server 2007, más seguros son los datos que contiene la granja de servidores al actualizar.
     

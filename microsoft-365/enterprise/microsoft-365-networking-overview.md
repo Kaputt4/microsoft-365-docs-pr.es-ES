@@ -7,7 +7,7 @@ ms.date: 08/27/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Explica por qué la optimización de red es importante para los servicios SaaS, el objetivo de Microsoft 365 redes y cómo SaaS requiere redes diferentes de otras cargas de trabajo.
-ms.openlocfilehash: c5794f9312ba098d27beb65bfbb272701ac3927f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e5dcbae5a1fbac3b0b4fd4472fdcac2380b84382
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167254"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209710"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365 de conectividad de red
 

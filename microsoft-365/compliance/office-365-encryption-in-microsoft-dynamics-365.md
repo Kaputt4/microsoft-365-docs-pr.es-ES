@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Obtenga información sobre cómo Microsoft usa la tecnología de cifrado para proteger los datos de los clientes en Microsoft Dynamics 365 mientras está en reposo en una base de datos de Microsoft y mientras está en tránsito.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e2691a2f02ecee5b346fcda3335ca7e5d4becc2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6fc07bba7ceccdfd2b215e29ef48dbd1f23c0cdf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165910"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206078"
 ---
 # <a name="encryption-in-microsoft-dynamics-365"></a>Cifrado en Microsoft Dynamics 365
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7f18d72907ec8f2775ee258906c9185672bfa9be
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: a81fa60b1b66c8eb735da72e1e2108df804b2ef1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041701"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206810"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
 
@@ -104,7 +104,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Authorization|String|Portador\<token>\. Obligatorio.|
+|Authorization|Cadena|Portador\<token>\. Obligatorio.|
 |Content-Type|string|application/json. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

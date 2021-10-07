@@ -7,7 +7,7 @@ ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Busque información y recursos para actualizar desde SharePoint 2010 y SharePoint Server 2010. La compatibilidad con ambos finaliza el 13 de abril de 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: da824abb7575a509cb988c474e667d0475e821c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7ce6b333e39d02000514c174579a1ad0fa816771
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215640"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205814"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 

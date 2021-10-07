@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a administrar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 511dde8921f9406f753c857e2d813ccd80976c40
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 8411ca98b48b19c7ecf3085c450fbf40e5185474
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353639"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210394"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -154,22 +154,22 @@ Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista
    Haga **clic en** Filtrar para filtrar los resultados. Los valores que están disponibles en **el** control desplegable Filtro que aparece dependen de la pestaña seleccionada:
 
    - **Remitentes**
-     - **Acción**
+     - **Action**
      - **No expirar nunca**
      - **Fecha de última actualización**
      - **Quitar en**
    - **DIRECCIONES URL**
-     - **Acción**
+     - **Action**
      - **No expirar nunca**
      - **Fecha de última actualización**
      - **Quitar en**
    - **Files**
-     - **Acción**
+     - **Action**
      - **No expirar nunca**
      - **Actualizado por última vez**
      - **Quitar en**
    - **Spoofing**
-     - **Acción**
+     - **Action**
      - **Tipo de suplantación**
 
    Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros existentes, haga clic **en Filtrar** y, en el **menú** desplegable Filtro que aparece, haga clic en **Borrar filtros**.

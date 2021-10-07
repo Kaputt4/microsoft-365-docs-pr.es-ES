@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d7982e8a8c320336a47cd64152b5477be7ae51f5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0520b5dde6cd2cd1d3b59fe05ce32df6412bb7fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185681"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210584"
 ---
 # <a name="microsoft-365-defender-integration-with-azure-sentinel"></a>Integración de Microsoft 365 Defender con Azure Sentinel.
 
@@ -38,7 +38,7 @@ ms.locfileid: "59185681"
 
 El Microsoft 365 Defender para Azure Sentinel (versión preliminar) envía toda la información Microsoft 365 Defender incidentes y alertas a Azure Sentinel y mantiene los incidentes sincronizados. 
 
-Una vez que agregue el conector, los incidentes de Microsoft 365 Defender que incluyen todas las alertas asociadas, entidades e información relevante recibida de Microsoft Defender para endpoint, Microsoft Defender para Identity, Microsoft Defender para Office 365 y Microsoft Cloud App Security se transmiten a Azure Sentinel como datos de información de seguridad y administración de eventos (SIEM), lo que le proporciona contexto para realizar triaje y respuesta a incidentes con &mdash; &mdash; Azure Sentinel. 
+Una vez que agregue el conector, Microsoft 365 Defender incidentes que incluyan todas las alertas, entidades e información relevante recibida de Microsoft Defender para &mdash; endpoint, Microsoft Defender for Identity, Microsoft Defender para Office 365 y Microsoft Cloud App Security se transmiten a &mdash; Azure Sentinel como datos de información de seguridad y administración de eventos (SIEM), lo que le proporciona contexto para realizar triajes y respuesta a incidentes con Azure Sentinel. 
 
 Una vez en Azure Sentinel, los incidentes permanecen sincronizados bidireccionalmente con Microsoft 365 Defender, lo que le permite aprovechar las ventajas del portal de Microsoft 365 Defender y Azure Sentinel en Azure Portal para la investigación y respuesta de incidentes.
 
@@ -58,7 +58,7 @@ Así es como funciona.
 1. Obtenga una comprensión más profunda de [Microsoft 365 Defender integración con Azure Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 2. [Conectar datos de Microsoft 365 Defender a Azure Sentinel](/azure/sentinel/connect-microsoft-365-defender).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes en Microsoft 365 Defender](incidents-overview.md)
 - [Investigar incidentes con Azure Sentinel](/azure/sentinel/tutorial-investigate-cases)

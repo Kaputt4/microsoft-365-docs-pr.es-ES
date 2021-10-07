@@ -9,7 +9,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 ms.custom:
@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre el orden de las protecciones de la aplicación en Exchange Online Protection (EOP) y cómo el valor de prioridad en las directivas de protección determina qué directiva se aplica.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9dea01324e37a56fbff049e4e46cd5882f1fabad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5fbccec656e0508535c2fbdaa055777a07968878
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166635"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210442"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de protección de correo electrónico
 

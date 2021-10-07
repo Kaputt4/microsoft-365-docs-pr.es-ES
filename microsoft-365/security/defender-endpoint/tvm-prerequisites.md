@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9fde7ed4c7a3b621730e2b6cd73370d87ea9c92c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c3bb52686c43afca710dbe8842463c493a15e140
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189377"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206738"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Requisitos & permisos: Administración de amenazas y vulnerabilidades
 
@@ -43,7 +43,7 @@ Asegúrese de que los dispositivos:
 
 - Haga que las siguientes actualizaciones obligatorias se instalen e implementen en la red para aumentar las tasas de detección de la evaluación de vulnerabilidades:
 
-  > Liberar | Número y vínculo kb de actualización de seguridad
+  > Versión | Número y vínculo kb de actualización de seguridad
   > :---|:---
   > Windows 10 Versión 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) y [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
   > Windows 10 Versión 1803 | [KB4493464](https://support.microsoft.com/help/4493464) y [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)

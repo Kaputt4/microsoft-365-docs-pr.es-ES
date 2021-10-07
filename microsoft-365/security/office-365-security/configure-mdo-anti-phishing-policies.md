@@ -8,19 +8,19 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas avanzadas contra la suplantación de identidad que están disponibles en organizaciones con Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c9446104a003dfe6374e86b4525dde6a2609b9ea
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 28dcfb3c914dd14ad9184f73c25c3469d2fa85d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483272"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210490"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -204,7 +204,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
        - **No aplicar ninguna acción**
        - **Redirigir el mensaje a otras direcciones de correo electrónico**
        - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de suplantación de usuario. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de suplantación de usuario. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
          Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de suplantación de usuario). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
   
@@ -226,7 +226,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
        - **No aplicar ninguna acción**
        - **Redirigir el mensaje a otras direcciones de correo electrónico**
        - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que la protección de inteligencia de buzones de correo pone en cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que la protección de inteligencia de buzones de correo pone en cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
          Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de inteligencia de buzones). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
 
@@ -235,7 +235,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
      - **Si el mensaje se detecta como** suplantación: esta configuración solo está disponible si seleccionó Habilitar la inteligencia de suplantación en la página anterior.  Seleccione una de las siguientes acciones en la lista desplegable para los mensajes de remitentes suplantados bloqueados:
        - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
          Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de inteligencia suplantación). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
 

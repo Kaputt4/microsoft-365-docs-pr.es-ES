@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.custom:
@@ -22,12 +22,12 @@ ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 'Resumen: instrucciones de planeamiento e implementación para organizaciones rápidas con un mayor perfil de amenaza.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8053714fe705735cff43b2aa85a726e8511f57b6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 290da11f8fc93d92e1d86a8067142e99d5e25c28
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166622"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210466"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles
 

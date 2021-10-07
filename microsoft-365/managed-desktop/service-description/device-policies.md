@@ -4,17 +4,17 @@ description: Obtenga información sobre las directivas predeterminadas aplicadas
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e4f07adb051dde24d374055d206955ad61df432a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ec545a54988c2634c651ec07084c005467afd565
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218410"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210154"
 ---
 # <a name="device-configuration"></a>Configuración de dispositivos
 

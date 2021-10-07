@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a identificar los motivos por los que un mensaje de suplantación de identidad (phishing) se ha recibido en Microsoft 365 y qué hacer para evitar más mensajes de suplantación de identidad en el futuro.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5093981c5f0166d3f53c3b6c7d24371312633c99
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 299488a7ed8a891d870efb3ace618178c36552f1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213220"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206474"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ajustar protección contra phishing
 
