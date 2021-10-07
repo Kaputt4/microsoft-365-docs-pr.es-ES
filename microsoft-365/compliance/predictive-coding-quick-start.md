@@ -9,17 +9,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo empezar a usar el módulo de codificación predictiva en Advanced eDiscovery. Este artículo le guiará por el proceso completo de usar la codificación predictiva para identificar el contenido de un conjunto de revisión que sea más relevante para la investigación.
-ms.openlocfilehash: 0ca9e4ff8b42ced962b68fff9073e892d8ea5d4e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 38607459057ff06a2ce74364b752130467deaddd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59186073"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197598"
 ---
 # <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>Inicio rápido: codificación predictiva en Advanced eDiscovery (versión preliminar)
 

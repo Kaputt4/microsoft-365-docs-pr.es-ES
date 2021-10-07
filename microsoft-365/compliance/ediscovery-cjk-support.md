@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre Advanced eDiscovery en Microsoft 365 idiomas chino, japonés y coreano (CJK), que usan un juego de caracteres de doble byte.
-ms.openlocfilehash: bcab34e8232a77cecf7d7331d75d140f73e4db37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0d6287afb373c6c1c51ea61de3906ce994590e87
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218980"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197622"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>Compatibilidad con lenguaje CJK para Advanced eDiscovery
 
@@ -33,7 +33,7 @@ Advanced eDiscovery admite idiomas de juego de caracteres de doble byte (estos i
 
 - Al analizar [los datos de casos en un conjunto de revisión](analyzing-data-in-review-set.md) mediante la detección casi duplicada, el subproceso de correo electrónico y el análisis de temas.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Cómo puedo crear una búsqueda para recopilar elementos que contengan caracteres CJK?**
 

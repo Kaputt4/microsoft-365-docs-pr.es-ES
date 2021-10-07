@@ -4,17 +4,17 @@ description: Información sobre cómo instalar la aplicación del portal de empr
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Portal de empresa
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04b65c6abbdaa2233bdfb25a7f7af8644d60d435
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 57f4d05089a023b5f64f0e27a8e0a20305a02a06
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215490"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208726"
 ---
 # <a name="install-intune-company-portal-on-devices"></a>Instalar Portal de empresa de Intune dispositivos
 

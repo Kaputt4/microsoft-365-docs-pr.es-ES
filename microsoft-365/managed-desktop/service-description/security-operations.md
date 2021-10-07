@@ -4,17 +4,17 @@ description: Servicios y procesos proporcionados por el Centro de operaciones de
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 600755c15ce6da94481ef4d84732991e5006cce1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b575bb506c2d70a73b858560a6fc10f931e95ba1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215267"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178556"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Operaciones de seguridad en Escritorio administrado de Microsoft
 

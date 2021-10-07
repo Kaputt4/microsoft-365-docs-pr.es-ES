@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo SharePoint Online detecta virus en
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ab11d4c1e2a064ad0717e6619f72a38b0cbc831
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ddb424458e991becefb98efbad5b2a86c5f9441c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211500"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208906"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protección contra virus integrada en SharePoint Online, OneDrive y Microsoft Teams
 
@@ -72,7 +72,7 @@ Cuando un archivo malintencionado se carga en OneDrive, se sincronizará con el 
 
 ## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>Funcionalidades extendidas con Microsoft Defender para Office 365
 
-Microsoft 365 las organizaciones que tienen [Microsoft Defender](defender-for-office-365.md) para Office 365 incluidos en su suscripción o comprados como complemento pueden habilitar los datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams para mejorar la protección y los informes. Para obtener más información, [vea Caja fuerte attachments for SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Microsoft 365 organizaciones que tienen [Microsoft Defender](defender-for-office-365.md) para Office 365 incluidos en su suscripción o comprados como complemento pueden habilitar los datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams para informes mejorados y protección. Para obtener más información, [vea Caja fuerte attachments for SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 ## <a name="related-articles"></a>Artículos relacionados
 

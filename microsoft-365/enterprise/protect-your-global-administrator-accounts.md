@@ -7,7 +7,7 @@ ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - m365initiative-coredeploy
@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: En este artículo se proporciona información sobre cómo proteger el acceso de administrador global a su Microsoft 365 suscripción.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3a43c8b6ac5389be99581302c249e431853ba99b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9693a8321643539e21ff10f3c624a0558916eb29
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215780"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198354"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Proteger las cuentas Microsoft 365 de administrador global
 
@@ -35,9 +35,9 @@ ms.locfileid: "59215780"
 
 Las infracciones de seguridad de una suscripción de Microsoft 365, incluidos los ataques de recolección de información y suplantación de identidad, suelen realizarse al poner en peligro las credenciales de una cuenta de administrador global Microsoft 365 usuario. La seguridad en la nube es una asociación entre usted y Microsoft:
   
-- Los servicios en la nube de Microsoft se basan en una base de confianza y seguridad. Microsoft le proporciona controles y capacidades de seguridad para ayudarle a proteger sus datos y aplicaciones.
+- Los servicios en la nube de Microsoft se basan en unos cimientos de confianza y seguridad. Microsoft le proporciona funcionalidades y controles de seguridad para ayudarle a proteger sus datos y sus aplicaciones.
     
-- Es propietario de sus datos e identidades y la responsabilidad de protegerlos, la seguridad de los recursos locales y la seguridad de los componentes de nube que controla.
+- Usted es propietario de sus datos e identidades, así como es usted mismo el encargado de protegerlos, tal y como debe hacer con sus recursos locales y con la seguridad de los componentes en la nube que controle.
     
 Microsoft proporciona funcionalidades para ayudar a proteger su organización, pero solo son eficaces si las usa. Si no las usa, puede que sea vulnerable a ataques. Para proteger sus cuentas de administrador global, Microsoft está aquí para ayudarle con instrucciones detalladas para:
   
@@ -113,7 +113,7 @@ Si es una pequeña empresa que usa cuentas de usuario almacenadas solo en la nub
     
 Si es una organización más grande que usa un Microsoft 365 de identidad híbrida, tiene más opciones de verificación. Si ya dispone de la infraestructura de seguridad para un método de autenticación secundario más sólido, configure [MFA](../admin/security-and-compliance/set-up-multi-factor-authentication.md) y configure cada cuenta de administrador global dedicada para el método de comprobación adecuado.
   
-Si la infraestructura de seguridad del método de comprobación más fuerte deseado no está en funcionamiento y no funciona para mfa de Microsoft 365, se recomienda encarecidamente configurar cuentas de administrador global dedicadas con MFA mediante la aplicación Microsoft Authenticator, una llamada telefónica o un código de verificación de mensajes de texto enviados a un teléfono inteligente para sus cuentas de administrador global como medida de seguridad provisional. No deje las cuentas de administrador global dedicadas sin la protección adicional proporcionada por MFA.
+Si la infraestructura de seguridad del método de comprobación más seguro deseado no está en funcionamiento y no funciona para mfa de Microsoft 365, se recomienda encarecidamente configurar cuentas de administrador global dedicadas con MFA con la aplicación Microsoft Authenticator, una llamada telefónica o un código de verificación de mensajes de texto enviados a un teléfono inteligente para sus cuentas de administrador global como seguridad provisional medida. No deje las cuentas de administrador global dedicadas sin la protección adicional proporcionada por MFA.
   
 Para obtener más información, vea [MFA for Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   

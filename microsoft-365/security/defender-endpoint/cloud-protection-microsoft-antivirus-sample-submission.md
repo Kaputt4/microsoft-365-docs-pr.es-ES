@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/31/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 946027419feca235442476db41533fb29adc6007
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: f23ff6ccbde512b8c8b3f1da36e86ede1c2d0324
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490756"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208570"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
 
@@ -139,6 +139,6 @@ Hay dos escenarios más en los que Defender for Endpoint puede solicitar un ejem
 |Colección de ejemplos de archivos manual en el portal Microsoft 365 Defender archivo | Al incorporar dispositivos a Defender for Endpoint, puede configurar las opciones [para detección y respuesta de puntos de conexión (EDR).](overview-endpoint-detection-response.md) Por ejemplo, hay una configuración para habilitar colecciones de muestras desde el dispositivo, que puede confundirse fácilmente con la configuración de envío de ejemplo descrita en este artículo. <br/><br/>La EDR controla la colección de muestras de archivos de dispositivos cuando se solicita a través del portal de Microsoft 365 Defender y está sujeta a los roles y permisos ya establecidos. Esta configuración puede permitir o bloquear la recopilación de archivos desde el punto de conexión para características como el análisis profundo en el portal Microsoft 365 Defender web. Si esta configuración no está configurada, el valor predeterminado es habilitar la colección de muestras. <br/><br/>Obtenga información sobre las opciones de configuración de Defender for Endpoint, vea: Herramientas y métodos de incorporación [para Windows 10 dispositivos en Defender para endpoint](configure-endpoints.md) |
 | Análisis automatizado de contenido de investigación y respuesta | Cuando se ejecutan investigaciones automatizadas en dispositivos (cuando se configura para ejecutarse automáticamente en respuesta a una alerta o ejecutarse manualmente), los archivos identificados como [sospechosos](automated-investigations.md) se pueden recopilar desde los puntos de conexión para una inspección posterior. Si es necesario, la característica de análisis de contenido de archivos para investigaciones automatizadas se puede deshabilitar en el portal Microsoft 365 Defender datos. <br/><br/> Los nombres de extensión de archivo también se pueden modificar para agregar o quitar extensiones para otros tipos de archivo que se envían automáticamente durante una investigación automatizada. <br/><br/> Para obtener más información, vea [Manage automation file uploads](manage-automation-file-uploads.md). |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Información sobre los servicios de protección de última generación](next-generation-protection.md)

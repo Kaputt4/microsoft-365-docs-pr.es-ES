@@ -2,7 +2,7 @@
 title: Explorador de contenido de administración de riesgos de Insider
 description: Obtenga información sobre la administración de riesgos de insider Explorador de contenido en Microsoft 365
 keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b76194037dec0ca6a660d2024a35c3376f06eab2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 30600241881ccb4203c3ea1015d8c54a680458ff
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184017"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190742"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorador de contenido de administración de riesgos de Insider
 
@@ -70,7 +70,7 @@ Para agregar o quitar encabezados de columna para la cola de contenido, use el c
 | **Tipos de información confidencial** | Los tipos de información confidencial identificados en el contenido. |
 | **Etiquetas de confidencialidad** | Las etiquetas de confidencialidad aplicadas al contenido. |
 | **Sent** | La fecha en la que un remitente envió un mensaje de correo electrónico. Este campo es la misma propiedad que la propiedad De correo electrónico enviado. |
-| **Tamaño** | Para los correos electrónicos y documentos, el tamaño del elemento (en bytes). |
+| **Size** | Para los correos electrónicos y documentos, el tamaño del elemento (en bytes). |
 | **Asunto** | El texto en la línea de asunto de un mensaje de correo electrónico. |
 | **Asunto/Título** | Para correo electrónico, el texto en la línea de asunto de un mensaje. Para los documentos, el título del documento. Como se explicó anteriormente, la propiedad Title es metadatos especificados en Microsoft Office documentos. Puede escribir el nombre de más de un asunto o título, separados por comas. Dos o más valores están conectados de forma lógica por el operador de OR. |
 | **Lista de temas** | Lista de temas calculada para análisis. |

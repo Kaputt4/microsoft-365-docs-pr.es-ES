@@ -4,7 +4,7 @@ description: Obtenga información sobre los cambios de la Centro de seguridad de
 keywords: Introducción a Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para endpoint, MDO, MDE, portal de seguridad, portal de seguridad de defender
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 8c808bd8c742666c407a59cc6a3bc654d96257b3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bf1c7d2e47ef64e1c44744988f33a69898cfd412
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185654"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209086"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender para endpoint en Microsoft 365 Defender
 
@@ -55,7 +55,7 @@ La imagen y la tabla siguiente enumeran los cambios en la navegación entre el C
 | Administración & vulnerabilidades de amenazas | Administración de amenazas y vulnerabilidades |
 | Evaluación y tutoriales | Tutoriales & evaluación |
 | Administración de la configuración | Administración de la configuración |
-| Configuración | Configuración | 
+| Configuraciones | Configuraciones | 
 
 La mejora [Microsoft 365 Defender](overview-security-center.md) en combina las capacidades de seguridad que protegen, detectan, investigan y responden a las amenazas de correo electrónico, colaboración, identidad [https://security.microsoft.com](https://security.microsoft.com) y dispositivo. Esto reúne las funciones de los portales de seguridad de Microsoft existentes, incluidos Centro de seguridad de Microsoft Defender y el centro de Office 365 seguridad & cumplimiento.
 
@@ -96,7 +96,7 @@ Esta tabla es una referencia rápida de los cambios entre el Centro de seguridad
 
 | Área | Descripción de cambio |
 |---------|---------|
-|Buscar   |  En lugar de estar en el encabezado, la barra de búsqueda de Microsoft Defender para puntos de conexión se mueve en la sección Puntos de conexión. Puede seguir buscando dispositivos, archivos, usuarios, direcciones URL, IP, vulnerabilidades, software y recomendaciones.  |
+|Búsqueda   |  En lugar de estar en el encabezado, la barra de búsqueda de Microsoft Defender para puntos de conexión se mueve en la sección Puntos de conexión. Puede seguir buscando dispositivos, archivos, usuarios, direcciones URL, IP, vulnerabilidades, software y recomendaciones.  |
 |[Panel](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Este es el panel de operaciones de seguridad. Consulta información general sobre cuántas alertas activas se desencadenaron, qué dispositivos están en riesgo, qué usuarios están en riesgo y nivel de gravedad para alertas, dispositivos y usuarios. También puedes ver si algún dispositivo tiene problemas con el sensor, el estado general del servicio y cómo se detectaron las alertas no resueltas. |
 |Inventario de dispositivos | Sin cambios. |
 |[Administración de amenazas y vulnerabilidades](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    El nombre se acortó para caber en el panel de navegación. Es igual que la sección Administración de amenazas y vulnerabilidades, con todas las páginas debajo.     |
@@ -115,8 +115,8 @@ Esta tabla es una referencia rápida de los cambios entre el Centro de seguridad
 | Área | Descripción de cambio |
 |---------|---------|
 | Informes  | Consulta informes de puntos de conexión y correo & colaboración, incluida la protección contra amenazas, el estado y cumplimiento del dispositivo y los dispositivos vulnerables. |
-| Salud  |  Actualmente se vincula a la página "Estado del servicio" en el [Centro de administración de Microsoft 365](https://admin.microsoft.com/). |
-| Configuración |  Administra la configuración de Microsoft 365 Defender, puntos de conexión, correo electrónico & colaboración, identidades y detección de dispositivos.   |
+| Mantenimiento  |  Actualmente se vincula a la página "Estado del servicio" en el [Centro de administración de Microsoft 365](https://admin.microsoft.com/). |
+| Configuraciones |  Administra la configuración de Microsoft 365 Defender, puntos de conexión, correo electrónico & colaboración, identidades y detección de dispositivos.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 navegación y funcionalidades de seguridad
 

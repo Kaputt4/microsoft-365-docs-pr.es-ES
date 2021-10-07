@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: d5fa34de0394c1455fccb70a875fe12cddee3ed8
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: d2e466bd728e546cfae546c16994eb1f68446657
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400329"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178436"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Revisar eventos y errores con el Visor de eventos
 
@@ -63,7 +63,7 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
    |2|Cierre del servicio de Microsoft Defender para puntos de conexión.|Se produce cuando el dispositivo se apaga o se apaga.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
    |3|Microsoft Defender para el servicio de extremo no se pudo iniciar. Código de error: `variable` .|El servicio no se ha empezado.|Revise otros mensajes para determinar posibles causas y pasos de solución de problemas.|
    |4 |Microsoft Defender para el servicio de extremo se puso en contacto con el servidor en `variable` .|Variable = dirección URL de los servidores de procesamiento de Defender for Endpoint. <p> Esta dirección URL coincidirá con la que se ve en el Firewall o la actividad de red.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
-   |5 |Microsoft Defender para el servicio de extremo no se pudo conectar al servidor en `variable` .|Variable = dirección URL de los servidores de procesamiento de Defender for Endpoint. <p> El servicio no pudo ponerse en contacto con los servidores de procesamiento externos en esa dirección URL.|Compruebe la conexión a la dirección URL. Consulte [Configure proxy and Internet connectivity](configure-proxy-internet.md).|
+   |5|Microsoft Defender para el servicio de extremo no se pudo conectar al servidor en `variable` .|Variable = dirección URL de los servidores de procesamiento de Defender for Endpoint. <p> El servicio no pudo ponerse en contacto con los servidores de procesamiento externos en esa dirección URL.|Compruebe la conexión a la dirección URL. Consulte [Configure proxy and Internet connectivity](configure-proxy-internet.md).|
    |6 |El servicio de Microsoft Defender para puntos de conexión no está incorporado y no se encontraron parámetros de incorporación.|El dispositivo no se incorporó correctamente y no se va a informar al portal.|La incorporación debe ejecutarse antes de iniciar el servicio. <p> Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
    |7 |Microsoft Defender para el servicio de extremo no pudo leer los parámetros de incorporación. Error: `variable` .|Variable = descripción detallada del error. El dispositivo no se incorporó correctamente y no se va a informar al portal.|Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
    |8 |Microsoft Defender para el servicio de extremo no pudo limpiar su configuración. Código de error: `variable` .|**Durante la incorporación:** El servicio no pudo limpiar su configuración durante la incorporación. El proceso de incorporación continúa. <p> **Durante el offboarding:** El servicio no pudo limpiar su configuración durante el offboarding. El proceso de offboarding ha finalizado, pero el servicio sigue ejecutándose.|**Incorporación:** No se requiere ninguna acción. <p> **Offboarding:** Reinicie el sistema. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
@@ -149,7 +149,7 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
 - [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md)
 - [Solucionar problemas de Microsoft Defender para punto de conexión](troubleshoot-onboarding.md)

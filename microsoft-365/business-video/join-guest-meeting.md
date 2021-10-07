@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo unirse a Teams reunión con invitados.
-ms.openlocfilehash: 781e1aa242270588ba50a025ca0dd71c06354ad0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 13d5017e4136c24c0474622fb9fb4bb6f96c7899
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191847"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177848"
 ---
 # <a name="join-a-teams-meeting-with-guests"></a>Unirse a una reunión de Teams con invitados
 

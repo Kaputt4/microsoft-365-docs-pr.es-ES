@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 12/15/2016
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
@@ -19,12 +19,12 @@ ms.custom:
 description: Obtenga información sobre Microsoft 365 usa el registro TXT del Marco de directivas de remitente (SPF) en DNS para garantizar que los sistemas de correo electrónico de destino confíen en los mensajes enviados desde el dominio personalizado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 972f283f6138bafcebd877a19f0bfc429e0eed03
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad620c1c1c08cbe92e6ad6b98c6554c4c5cd93b1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214380"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190334"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Cómo Microsoft 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad
 
@@ -59,11 +59,11 @@ Cada registro TXT SPF contiene tres partes: la declaración de que se trata de u
 
 Observe la sintaxis básica de una regla SPF:
 
-v=spf1 \<IP\>\<enforcement rule\>
+v=spf1 \<IP\> \<enforcement rule\>
 
 Por ejemplo, supongamos que existe la siguiente regla SPF para contoso.com:
 
-v=spf1 \<IP address #1\> \<IP address #2\> \<IP address #3\>\<enforcement rule\>
+v=spf1 \<IP address #1\> \<IP address #2\> \<IP address #3\> \<enforcement rule\>
 
 En este ejemplo, la regla SPF indica al servidor de correo electrónico de recepción que solo debe aceptar correo de estas direcciones IP para el dominio contoso.com:
 

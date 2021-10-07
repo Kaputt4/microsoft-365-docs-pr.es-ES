@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 4dcac8a2b4a33b70bfe94421b4813412d012db46
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: 8b9e9b17aa09c535529488bbd3b73abc9d9c1170
+  ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60177488"
+  ms.lasthandoff: 10/07/2021
+  ms.locfileid: "60217118"
 title: Preguntas más frecuentes sobre cifrado de mensajes
 summary: >
   ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí. Además, echa un vistazo a las preguntas más frecuentes sobre la protección de datos en [Azure Information Protection](/information-protection/get-started/faqs-rms) para obtener respuestas a preguntas sobre el servicio de protección de datos, Azure Rights Management, en Azure Information Protection.
@@ -105,9 +105,9 @@ sections:
 
       > Outlook cliente de escritorio no admite el cifrado pdf.
   - question: >
-      ¿OneDrive para la Empresa datos adjuntos admitidos?
+      ¿SharePoint en línea o OneDrive para la Empresa datos adjuntos?
     answer: >
-      Not yet. OneDrive para la Empresa datos adjuntos no son compatibles y los usuarios finales no pueden cifrar un correo que contiene datos adjuntos OneDrive para la Empresa nube.
+      Not yet. SharePoint No se admiten OneDrive para la Empresa datos adjuntos en línea o en línea y los usuarios finales pueden cifrar un correo, pero no los datos adjuntos de la nube.
   - question: >
       ¿Qué clientes de correo electrónico admiten la vista previa de datos adjuntos cifrados en correos electrónicos protegidos?
     answer: "Cuando los datos adjuntos se protegen con un correo protegido, Outlook clientes proporcionan la capacidad tha de obtener una vista previa del documento directamente. Outlook vista previa de Office documentos (docx, xlsx, pptx, doc, xls, ppt). Outlook en la Web vista previa de Office documentos (docx, xlsx, pptx) y PDF.  \n"
@@ -135,7 +135,7 @@ sections:
   - question: >
       ¿Puedo usar el cifrado de mensajes con características de cumplimiento como eDiscovery?
     answer: >
-      Sí. Microsoft 365 características de cumplimiento pueden detectar todos los mensajes de correo electrónico cifrados. Vea [actividades de exhibición de documentos electrónicos que admiten elementos cifrados para](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) obtener más información.
+      Sí, la mayoría de los mensajes protegidos por OME se pueden detectar. El servicio de exhibición de documentos electrónicos no puede detectar el correo protegido de OME que recibe de otra organización de Microsoft 365 que tiene la personalización de marca personalizada aplicada a través de una regla de flujo de correo. En otras palabras, si el correo no es accesible a través del buzón del usuario, sino que se ha presentado solo a través de un vínculo al portal de OME, el correo no se puede buscar. Vea [actividades de exhibición de documentos electrónicos que admiten elementos cifrados para](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) obtener más información.
   - question: >
       ¿Puedo quitar el cifrado del correo electrónico?
     answer: >
@@ -200,6 +200,10 @@ sections:
       ¿Se admite el acceso delegado con la apertura de mensajes cifrados? ¿Incluso si un delegado tiene acceso total al buzón de otro usuario?
     answer: >
       El acceso delegado de correo cifrado se admite en Outlook en la Web, Outlook para Mac, Outlook para iOS y Outlook para Android.  Outlook para Windows no admite el acceso delegado.
+  - question: >
+      ¿Cuánto tiempo tengo acceso al correo en el portal de OME?
+    answer: >
+      Puede iniciar sesión en el portal de OME para recuperar el correo siempre que la organización del remitente esté activa y el correo no esté configurado para que expire.
   - question: >
       ¿Qué hago si no recibo el código de paso de una sola vez después de solicitarlo?
     answer: >-

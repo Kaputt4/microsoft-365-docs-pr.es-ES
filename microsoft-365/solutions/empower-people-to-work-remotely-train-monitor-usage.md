@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Proporcione formación a los usuarios y asegúrese de que se dé respuesta a los problemas rápidamente.
-ms.openlocfilehash: b6581533983c2e00ab8b29d73326deebda52599f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 36133cab7e5fa11e311fb089f2bcbf5c1f862d08
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187246"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190142"
 ---
 # <a name="step-6-train-your-workers-and-address-usage-feedback"></a>Paso 6: proporcione formación a sus trabajadores y dicte instrucciones mediante comentarios
 

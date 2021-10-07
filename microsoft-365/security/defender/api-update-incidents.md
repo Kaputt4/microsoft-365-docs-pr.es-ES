@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c30d9918e4e61973dc03e6a2e621ffda5e7e01e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 703b1df0bbe58874295e809ebe94ec748678e401
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185689"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209230"
 ---
 # <a name="update-incidents-api"></a>ACTUALIZAR LA API de incidentes
 
@@ -81,7 +81,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos que deben ac
 Propiedad|Tipo|Descripción
 ---|---|---
 status|Enum|Especifica el estado actual del incidente. Los valores posibles son: `Active` `Resolved` , y `Redirected` .
-assignedTo|cadenas|Propietario del incidente.
+assignedTo|string|Propietario del incidente.
 classification|Enum|Especificación del incidente. Los valores posibles son: `Unknown`, `FalsePositive` y `TruePositive`.
 determinación|Enum|Especifica la determinación del incidente. Valores posibles: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
 tags|lista de cadenas|Lista de etiquetas de incidentes.

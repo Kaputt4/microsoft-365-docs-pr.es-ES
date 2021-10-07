@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describen los límites en el caso principal de exhibición de documentos electrónicos en Microsoft 365.
-ms.openlocfilehash: e7b1013abd9fd94748baf3b83dd04efbc3831a1d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82caa5214f777effb912ab1a2a3054b1e4432ae6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188097"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190706"
 ---
 # <a name="limits-in-core-ediscovery"></a>Límites en eDiscovery principal
 

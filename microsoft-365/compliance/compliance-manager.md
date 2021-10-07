@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos y sugiere acciones recomendadas para ayudar a solucionar los riesgos.
-ms.openlocfilehash: e0e8d4595f883f33dc7714cd41c8cb49002321a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b506e184c3ab6e387ac02a203fca0f58bd3f877
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189907"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197670"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "59189907"
 
 ## <a name="what-is-compliance-manager"></a>¿Qué es el Administrador de cumplimiento?
 
-[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) es una característica de la Centro de cumplimiento de Microsoft 365 [que](microsoft-365-compliance-center.md) le ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo de su recorrido de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, mantenerse al día con las normativas y certificaciones, y los informes a los auditores.
+[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) es una característica de la Centro de cumplimiento de Microsoft 365 [que](microsoft-365-compliance-center.md) le ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores.
 
 Vea el vídeo siguiente para obtener información sobre cómo el Administrador de cumplimiento puede ayudar a simplificar la forma en que su organización administra el cumplimiento:
 <br>
@@ -136,8 +136,8 @@ El Administrador de cumplimiento está disponible en los siguientes idiomas:
 - Finés
 - Francés
 - Alemán
-- Hebrew
-- Hungarian
+- Hebreo
+- Húngaro
 - Italiano
 - Japonés
 - Coreano

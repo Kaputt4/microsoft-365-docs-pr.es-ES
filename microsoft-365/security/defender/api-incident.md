@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c316bd7c429165869b235871b2366861a22c6056
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220030"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198102"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API de incidentes y el tipo de recurso incidents
 
@@ -52,7 +52,7 @@ La API de incidentes requiere distintos tipos de permisos para cada uno de sus m
 
 ## <a name="methods"></a>Métodos
 
-Método | Tipo de valor devuelto | Description
+Método | Tipo de valor devuelto | Descripción
 -|-|-
 [Lista de Incidentes](api-list-incidents.md) | [Lista de](api-incident.md) incidentes | Obtener una lista de incidentes.
 [Incidente de actualización](api-update-incidents.md) | [Incidente](api-incident.md) | Actualice un incidente específico.

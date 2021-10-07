@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: Gráfico de comparación que muestra las diferencias de características entre la aplicación web de Bookings y la aplicación Teams Bookings.
-ms.openlocfilehash: de207f2f194fff07fcc07f2f278d4a2135d4585b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 594674584c189dc03d60ec49c5b3a0fbb4ce34eb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190587"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189806"
 ---
 # <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Gráfico de comparación: aplicación web de Bookings frente a bookings Teams aplicación
 

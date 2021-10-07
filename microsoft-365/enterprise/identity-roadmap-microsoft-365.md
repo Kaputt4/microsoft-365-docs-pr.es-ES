@@ -9,19 +9,19 @@ ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 ms.custom: ''
 description: El mapa de ruta para la identidad de Microsoft 365.
-ms.openlocfilehash: 27abe04da2fed0eaae09fa0ed42a83286fe74f5d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5f0584ef9a14c81ba3a81491a5ef79d32d44d6e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167291"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178796"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Plan de identidad para Microsoft 365
 
@@ -65,7 +65,7 @@ Para ayudar a garantizar un personal seguro y productivo, Microsoft proporciona 
 - [Requisitos previos](../security/office-365-security/identity-access-prerequisites.md)
 - [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
 
-## <a name="manage"></a>Administrar
+## <a name="manage"></a>Manage
 
 Para administrar la implementación Microsoft 365 identidad, vea:
 

@@ -4,7 +4,7 @@ description: Investigue a los usuarios por un incidente en el portal Microsoft 3
 keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, monitor, informe, identidades, datos, dispositivos, aplicaciones, incidentes, análisis, respuesta
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d7decb3e566f8bb0abf4a3aec12e2e3a43ae3511
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f7145d2668f6c724644bf719dfd6414550af43c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218180"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209170"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Investigar usuarios en Microsoft 365 Defender
 
@@ -97,11 +97,11 @@ Si no se detectó una ruta de movimiento lateral potencial para la entidad duran
 
 Para obtener más información, vea [Rutas de movimiento lateral](/defender-for-identity/use-case-lateral-movement-path).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

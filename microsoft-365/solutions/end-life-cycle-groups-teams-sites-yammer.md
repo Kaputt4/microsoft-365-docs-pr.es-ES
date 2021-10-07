@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Opciones de fin de ciclo de vida para grupos, equipos y Yammer.
-ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 883af3878bd0bc68aa539fc1cc36b66c4f1cfe9e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192254"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190130"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Opciones de fin de ciclo de vida para grupos, equipos y Yammer
 
@@ -34,7 +34,7 @@ En la tabla siguiente se describen los servicios asociados con grupos y equipos 
 |Servicio|Tipos de contenido|
 |:------|:---------------|
 |Teams|Conversaciones de canal, archivos en canales|
-|Formularios|Estructura y resultados de la encuesta|
+|Forms|Estructura y resultados de la encuesta|
 |OneNote|Bloc de notas|
 |Outlook|Correo y calendario|
 |Planner|Project estado y la información de tareas|
@@ -107,7 +107,7 @@ Aunque las conversaciones de canal del equipo y SharePoint contenido del sitio e
 - Los vídeos aún se pueden cargar, modificar y eliminar en Stream.
 - Los flujos Power Automate pueden crearse, modificarse, eliminarse y se seguirán ejecutando. (No obstante, se producirá un error si es necesario para publicar un mensaje en un canal del equipo archivado).
 
-## <a name="forms"></a>Formularios
+## <a name="forms"></a>Forms
 
 Aunque un formulario se puede mover de una cuenta individual a un grupo, no se puede mover ni copiar de un grupo a otro. Hay tres opciones disponibles para un formulario cuando se elimina un equipo.
 

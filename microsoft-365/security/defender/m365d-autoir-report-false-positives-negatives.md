@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f60208b06e66c1e9803e05ee1fc41376824e9b56
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: df2effa41977624530b5f9ea8881f7f5aaeef82f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218167"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209110"
 ---
 # <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>Dirección de falsos positivos o falsos negativos en Microsoft 365 Defender
 
@@ -69,7 +69,7 @@ Si se ha realizado una acción de corrección en una entidad (como un dispositiv
 > [!TIP]
 > Vea [Deshacer acciones completadas](m365d-autoir-actions.md#undo-completed-actions).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Ver los detalles y los resultados de una investigación automatizada](m365d-autoir-results.md)
 - [Búsqueda proactiva de amenazas con búsqueda avanzada en Microsoft 365 Defender](advanced-hunting-overview.md)

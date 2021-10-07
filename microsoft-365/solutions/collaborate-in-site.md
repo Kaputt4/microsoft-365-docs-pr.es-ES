@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los Microsoft 365 de configuración necesarios para configurar un sitio SharePoint para la colaboración con invitados.
-ms.openlocfilehash: 5cb1b34832c8a7b4c5152efd5ab151218de1cd36
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aac548381b8b56ef753f762e9ef7bf0c07cf9163
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211497"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190214"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -58,18 +58,18 @@ Fíjese en la configuración en la sección **Restricciones de colaboración**. 
 
 Si trabaja con invitados de varias organizaciones, tal vez quiera restringir su capacidad para acceder a los datos del directorio. Esto les impedirá ver quién más es un invitado en el directorio. Para ello, en **Restricciones de acceso de usuario invitado**, seleccione **Los usuarios invitados tienen acceso limitado a las propiedades y a la pertenencia de la configuración de objetos de directorio** o **El acceso de usuarios invitados está restringido a las propiedades y pertenencias de sus propios objetos de directorio**.
 
-## <a name="microsoft-365-groups-guest-settings"></a>Configuración de invitado de Grupos de Microsoft 365
+## <a name="microsoft-365-groups-guest-settings"></a>Configuración de invitados de Grupos de Microsoft 365
 
 Los SharePoint modernos usan Microsoft 365 para controlar el acceso al sitio. La configuración Microsoft 365 invitado de grupos de usuarios debe estar activada para que el acceso de invitado en SharePoint sitios funcione.
 
 ![Captura de pantalla de la configuración de invitados de Grupos de Microsoft 365 en el Centro de administración de Microsoft 365.](../media/office-365-groups-guest-settings.png)
 
-Para establecer la configuración de invitado de Grupos de Microsoft 365
+Para establecer la configuración de invitados de Grupos de Microsoft 365
 
 1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, expanda **Configuración**.
 2. Haga clic en **Configuración de la organización**.
 3. En la lista, haga clic en **Grupos de Microsoft 365**.
-4. Asegúrese de que las casillas **Permitir que los propietarios del grupo agreguen personas de fuera de la organización a Grupos de Microsoft 365 como invitados** y **Permitir que los miembros del grupo invitados accedan al contenido del grupo** están activadas.
+4. Asegúrese de que las casillas **Permitir que los propietarios del grupo agreguen personas de fuera de la organización a Grupos de Microsoft 365 como invitados** y **Permitir que los miembros del grupo invitados accedan al contenido del grupo** están activadas.
 5. Si ha realizado cambios, haga clic en **Guardar cambios**.
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint de uso compartido a nivel de organización

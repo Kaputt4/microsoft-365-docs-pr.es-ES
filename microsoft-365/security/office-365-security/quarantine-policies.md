@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a6bbfee3a0f9b875ce4160b48ef70e919ee19bc
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: b6b7ee1d93023e18beb1a0858151474fcf048721
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60087970"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208978"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -699,7 +699,7 @@ Si la directiva de cuarentena asigna los **permisos de** acceso completo (todos 
 
 - **Notificaciones en cuarentena:** los botones siguientes están disponibles:
   - **Bloquear remitente**
-  - **Liberar**
+  - **Versión**
   - **Revisar**
 
   ![Botones disponibles en la notificación de cuarentena si la directiva de cuarentena concede al usuario permisos de acceso total.](../../media/quarantine-tags-esn-full-access.png)

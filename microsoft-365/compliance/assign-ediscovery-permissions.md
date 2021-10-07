@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ description: Asigne los permisos necesarios para realizar tareas relacionadas co
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 8fda81c4318525744eaa51c8904a465e87159675
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2ff6a589ce8b4db6adf00a820eaf00b20f9f7bcc
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166182"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217155"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365
 
@@ -33,9 +33,9 @@ Si desea que las personas [](ediscovery.md) usen cualquiera de las herramientas 
   
 El grupo de roles principal relacionado con la exhibición de documentos electrónicos en Centro de cumplimiento de Microsoft 365 se denomina **Administrador de exhibición de documentos electrónicos**. Hay dos subgrupos dentro de este grupo de roles.
   
-- **Administradores** de exhibición de documentos electrónicos: un administrador de exhibición de documentos electrónicos puede usar herramientas de búsqueda de exhibición de documentos electrónicos para buscar ubicaciones de contenido en la organización y realizar diversas acciones relacionadas con la búsqueda, como obtener una vista previa y exportar los resultados de la búsqueda. Los miembros también pueden crear y administrar casos en la exhibición de documentos electrónicos principales y Advanced eDiscovery, agregar y quitar miembros a un caso, crear retenciones de casos, ejecutar búsquedas asociadas a un caso y obtener acceso a datos de casos. Los supervisores de eDiscovery solo pueden acceder y supervisar los casos que crean. No pueden acceder ni supervisar los casos creados por otros supervisores de eDiscovery.
+- **Administrador de** exhibición de documentos electrónicos: un administrador de exhibición de documentos electrónicos puede usar herramientas de búsqueda de exhibición de documentos electrónicos para buscar ubicaciones de contenido en la organización y realizar varias acciones relacionadas con la búsqueda, como obtener una vista previa y exportar los resultados de la búsqueda. Los miembros también pueden crear y administrar casos en la exhibición de documentos electrónicos principales y Advanced eDiscovery, agregar y quitar miembros a un caso, crear retenciones de casos, ejecutar búsquedas asociadas a un caso y obtener acceso a datos de casos. Los supervisores de eDiscovery solo pueden acceder y supervisar los casos que crean. No pueden acceder ni supervisar los casos creados por otros supervisores de eDiscovery.
   
-- **Administradores de eDiscovery**: un administrador de eDiscovery es un miembro del grupo de roles del supervisor de eDiscovery y puede realizar la misma búsqueda de contenido y tareas relacionadas con la administración de casos que puede realizar un supervisor de eDiscovery. Además, un administrador de eDiscovery puede:
+- **Administrador de** exhibición de documentos electrónicos: un administrador de exhibición de documentos electrónicos es miembro del grupo de roles administrador de exhibición de documentos electrónicos y puede realizar las mismas tareas relacionadas con la administración de casos y búsqueda de contenido que un administrador de exhibición de documentos electrónicos. Además, un administrador de eDiscovery puede:
   
   - Obtenga acceso a todos los casos enumerados en **la** exhibición de documentos electrónicos principal **y** Advanced eDiscovery páginas de la Centro de cumplimiento de Microsoft 365.
 
@@ -56,7 +56,7 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
   
 ## <a name="assign-ediscovery-permissions"></a>Asignar permisos de eDiscovery
 
-1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión con una cuenta que pueda asignar permisos.
+1. Vaya a <https://compliance.microsoft.com> e inicie sesión con una cuenta que pueda asignar permisos.
   
 2. En el panel izquierdo, seleccione **Permisos**.
 
@@ -79,7 +79,7 @@ En **la** página Permisos de la Centro de cumplimiento de Microsoft 365, tambi�
 
 En la tabla siguiente se enumeran los roles RBAC relacionados con la exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 e indica los grupos de roles integrados a los que se asigna cada función de forma predeterminada.
   
-| Role | Administrador de cumplimiento | Administrador de eDiscovery & administrador | Administración de la organización | Reviewer |
+| Rol | Administrador de cumplimiento | Administrador de eDiscovery & administrador | Administración de la organización | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Administración de casos <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |
 |Comunicación <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -99,7 +99,7 @@ En las secciones siguientes se describe cada uno de los roles RBAC relacionados 
 
 Este rol permite a los usuarios crear, editar, eliminar y controlar el acceso a la exhibición de documentos electrónicos principales y Advanced eDiscovery casos en el Centro de cumplimiento de Microsoft 365. Como se explicó anteriormente, se debe asignar a un usuario el rol de administración de casos para poder usar el cmdlet **Add-eDiscoveryCaseAdmin** para que sea un administrador de exhibición de documentos electrónicos.
 
-Para más información, vea:
+Para más información vea:
 
 - [Introducción a Core eDiscovery](get-started-core-ediscovery.md)
 
@@ -113,7 +113,7 @@ Para obtener más información, [vea Trabajar con comunicaciones en Advanced eDi
 
 ### <a name="compliance-search"></a>Búsqueda de cumplimiento
 
-Este rol permite a los usuarios ejecutar la herramienta búsqueda de contenido en Centro de cumplimiento de Microsoft 365 para buscar buzones y carpetas públicas, sitios de SharePoint Online, sitios de OneDrive para la Empresa, conversaciones de Skype Empresarial, grupos de Microsoft 365 y grupos de Microsoft Teams y Yammer. Este rol permite al usuario obtener una estimación de los resultados de la búsqueda y crear informes de exportación, pero se necesitan otros roles para iniciar acciones de búsqueda de contenido como la vista previa, la exportación o la eliminación de resultados de búsqueda.
+Este rol permite a los usuarios ejecutar la herramienta búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar buzones y carpetas públicas, sitios de SharePoint Online, sitios OneDrive para la Empresa, conversaciones Skype Empresarial, Microsoft 365, y Microsoft Teams y Yammer grupos. Este rol permite al usuario obtener una estimación de los resultados de la búsqueda y crear informes de exportación, pero se necesitan otros roles para iniciar acciones de búsqueda de contenido como la vista previa, la exportación o la eliminación de resultados de búsqueda.
 
 En la búsqueda de contenido y la exhibición de documentos electrónicos principales, los usuarios a los que se les asigna el rol Búsqueda de cumplimiento pero no tienen el rol Vista previa pueden obtener una vista previa de los resultados de una búsqueda en la que la acción de vista previa ha sido iniciada por un usuario al que se ha asignado el rol Vista previa. El usuario sin el rol Vista previa puede obtener una vista previa de los resultados hasta dos semanas después de crear la acción de vista previa inicial.
 
@@ -158,6 +158,30 @@ Este rol permite a los usuarios ver mensajes de correo electrónico protegidos p
 ### <a name="search-and-purge"></a>Buscar y purgar
 
 Este rol permite a los usuarios realizar la eliminación masiva de datos que coincidan con los criterios de una búsqueda de contenido. Para obtener más información, vea [Buscar y eliminar mensajes de correo electrónico en la organización.](search-for-and-delete-messages-in-your-organization.md)
+
+## <a name="adding-role-groups-as-members-of-ediscovery-cases"></a>Agregar grupos de roles como miembros de casos de exhibición de documentos electrónicos
+
+Puede agregar grupos de roles como miembros de la exhibición de documentos electrónicos principales y Advanced eDiscovery para que los miembros de los grupos de roles puedan tener acceso y realizar tareas en los casos asignados. Los roles asignados al grupo de roles definen lo que pueden hacer los miembros del grupo de roles. A continuación, agregar un grupo de roles como miembro del caso permite a los miembros tener acceso a esas tareas y realizar estas tareas en un caso específico. Para obtener más información acerca de cómo agregar grupos de roles como miembros de casos, vea:
+
+- [Introducción a Core eDiscovery](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
+
+- [Agregar o quitar miembros de un Advanced eDiscovery caso](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+
+Con esto en mente, es importante saber que si se agrega o quita un rol de un grupo de roles, ese grupo de funciones se quitará automáticamente como miembro de cualquier caso del grupo de roles. El motivo es proteger la organización de proporcionar permisos adicionales a los miembros de un caso de forma involuntaria. Del mismo modo, si se elimina un grupo de roles, se quitará de todos los casos de los que era miembro.
+
+Antes de agregar o quitar roles a un grupo de roles que puede ser miembro de un caso de exhibición de documentos electrónicos, puede ejecutar los siguientes comandos en [PowerShell](/powershell/exchange/connect-to-scc-powershell) de seguridad & cumplimiento para obtener una lista de casos de los que el grupo de roles es miembro. Después de actualizar el grupo de roles, se vuelve a agregar el grupo de roles como miembro de esos casos.
+
+### <a name="get-a-list-of-role-groups-assigned-to-core-ediscovery-cases"></a>Obtener una lista de grupos de roles asignados a casos principales de exhibición de documentos electrónicos
+
+```powershell
+Get-ComplianceCase -RoleGroup "Name of role group"
+```
+
+### <a name="get-a-list-of-role-groups-assigned-to-advanced-ediscovery-cases"></a>Obtener una lista de grupos de roles asignados a Advanced eDiscovery casos
+
+```powershell
+Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
+```
 
 ## <a name="more-information"></a>Más información
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 proteger los datos confidenciales frente a la suplantación de identidad(phishing), malware y otras amenazas.
-ms.openlocfilehash: 92b4ca45e03995fb3586f1abce9301de7ec33570
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 60a84b972618444fcddc4165235eef909f4341c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934052"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178172"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -82,7 +82,7 @@ Para crear una regla de transporte de correo:
 
 6. Seleccione **Guardar**.
 
-|Valor|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
 |Nombre|Regla anti ransomware: advertir a los usuarios|
 |Aplique esta regla si . . .|Cualquier dato adjunto . . . extensión de archivo coincide con . . .|
@@ -114,7 +114,7 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](../../busi
 
 6. Seleccione **Guardar**.
 
-|Valor|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
 |Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|

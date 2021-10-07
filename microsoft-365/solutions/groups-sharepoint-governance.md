@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre las interacciones de configuración entre Microsoft 365 grupos y SharePoint
-ms.openlocfilehash: eb2f4ff9745eb73f23c48630582aa455ee2bb561
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2978e2f0a450c72d7b4abf71edb208a5d9f364c6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59217870"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208894"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Configuración interacciones entre Microsoft 365 grupos y SharePoint
 

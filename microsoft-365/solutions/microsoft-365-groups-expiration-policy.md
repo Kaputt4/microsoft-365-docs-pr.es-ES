@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Obtenga información sobre Microsoft 365 de expiración de grupos.
-ms.openlocfilehash: 4617124801ed0400481bd81a453c6520a0c8d73a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: abfcc6947adc33610dee02b6b92447ce4c0d5412
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214110"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208870"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 de expiración de grupo
 
@@ -51,7 +51,7 @@ Es importante saber que la expiración está desactivada de forma predeterminada
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Quién puede configurar y usar la directiva de expiración Microsoft 365 grupos de servidores?
 
-|Role|Qué pueden hacer|
+|Rol|Qué pueden hacer|
 |---------|---------|
 |Office 365 global (en Azure, el administrador de la compañía), el administrador de usuarios|Cree, lea, actualice o elimine la configuración de la directiva Microsoft 365 de expiración de grupos.|
 |Usuario|Renovar o [restaurar](/azure/active-directory/users-groups-roles/groups-restore-deleted) un Microsoft 365 grupo que poseen|

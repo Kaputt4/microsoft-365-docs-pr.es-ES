@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0e1fa33358dbaa63e99e4e0645a04766ab72477b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 302317cd71921333b2fab8fd987f170bc7b69591
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219950"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197946"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Integración de Microsoft 365 Defender en las operaciones de seguridad
 
@@ -63,7 +63,7 @@ Este contenido está diseñado para lo siguiente:
 - CSIRT & forenses
 - Microsoft 365 administradores
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Siga estos pasos para integrar Microsoft 365 Defender en su SOC.
 

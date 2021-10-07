@@ -7,17 +7,17 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 description: Los administradores pueden aprender a usar la información de correo electrónico nuevos dominios que se reenvía en el panel flujo de correo del Centro de cumplimiento de seguridad & para investigar cuándo sus usuarios reenvía mensajes a dominios externos a los que nunca se ha reenviado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae1d7ce0bb62082797afc0d4a2bee77fbc24c982
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 25440898dfd29097985ddf1ffc0c17aa9c017793
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988516"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190262"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nuevos dominios que se reenvía información de correo electrónico en el Centro de seguridad & cumplimiento
 

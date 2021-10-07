@@ -2,7 +2,7 @@
 title: Plantillas de aviso de administración de riesgos de Insider
 description: Obtenga información sobre las plantillas de aviso de administración de riesgos de insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 45ea1db3979616fec6039c699f7b73e698c346f7
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2b85576923a34400ab1e3e69846043362d806c1a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399891"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190754"
 ---
 # <a name="insider-risk-management-notice-templates"></a>Plantillas de aviso de administración de riesgos de Insider
 

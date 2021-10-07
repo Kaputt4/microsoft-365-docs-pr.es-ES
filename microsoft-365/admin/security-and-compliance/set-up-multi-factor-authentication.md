@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Obtenga información acerca de cómo configurar la autenticación multifactor para su organización.
 monikerRange: o365-worldwide
-ms.openlocfilehash: c0e623c0cfda4208b79d64a9acf88e2d75fc8595
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 0dddf5cbc1bcf921d239c7a93031be6cce419eb6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772751"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178088"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
 
@@ -83,7 +84,7 @@ Si su organización tiene necesidades de seguridad de inicio de sesión más por
 > [!IMPORTANT]
 > Desactive la MFA por usuario y los valores predeterminados de seguridad antes de habilitar las directivas de acceso condicional.
 
-El acceso condicional está disponible para los clientes que han adquirido Azure AD Premium P1 o licencias que lo incluyen, como Microsoft 365 Empresa Premium y Microsoft 365 E3. Para obtener más información, vea [creación de una directiva de acceso condicional](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
+El acceso condicional está disponible para los clientes que hayan adquirido Azure AD Premium P1 o licencias que lo incluyan, como Microsoft 365 Empresa Premium y Microsoft 365 E3. Para obtener más información, vea [Crear una directiva de acceso condicional](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
 El acceso condicional basado en el riesgo está disponible con la licencia de Azure AD Premium P2 o las licencias que lo incluyen, como Microsoft 365 E5. Para más información, vea [Acceso condicional basado en el riesgo](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
@@ -95,7 +96,7 @@ Para la mayoría de las suscripciones, la autenticación moderna se activa autom
 
 
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, en el panel de navegación izquierdo, elija **Configuración** \> **Configuración de la organización**.
-2. En la pestaña **Servicios**, elija **Autenticación moderna** y, en el panel **Autenticación moderna**, asegúrese de que **Habilitar autenticación moderna** esté seleccionado. Elija **Guardar cambios**.
+2. En la pestaña **Servicios**, elija **Autenticación moderna** y, en el panel **Autenticación moderna**, asegúrese de que esté seleccionada la opción **Activar autenticación moderna**. Seleccione **Guardar cambios**.
 
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>Desactivar la MFA heredada por usuario

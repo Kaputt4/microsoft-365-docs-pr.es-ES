@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 670656ff15f33b28f66da5af9fa105606b99ca01
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f7e82d3ac4dce15f444f416e7dfb154188c093f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192747"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190526"
 ---
 # <a name="list-all-remediation-activities"></a>Enumerar todas las actividades de corrección
 
@@ -65,7 +65,7 @@ Delegado (cuenta profesional o educativa)|RemediationTask.Read|\'Leer informaci�
 
 ## <a name="properties"></a>Propiedades
 
-Propiedad (id)|Tipo de datos|Description|Ejemplo de un valor devuelto
+Propiedad (id)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
 categoría|Cadena|Categoría de la actividad de corrección (configuración software/seguridad)|Software
 completerEmail|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico|nulo
@@ -89,7 +89,7 @@ requesterEmail|Cadena|Dirección de correo electrónico del creador|globaladmin@
 requesterId|Cadena|Id. de objeto Creator|r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes|Cadena|Las notas (texto libre) que el creador agregó para esta actividad de corrección|nulo
 scid|Cadena|SCID de la recomendación de seguridad relacionada|nulo
-status|Cadena|Estado de la actividad de corrección (Activo/Completado)|Activo
+status|Cadena|Estado de la actividad de corrección (Activo/Completado)|Activa
 statusLastModifiedOn|DateTime|Fecha en la que se actualizó el campo de estado|2021-01-12T18:54:11.5499487Z
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección|43
 title|Cadena|Título de esta actividad de corrección|Actualizar Microsoft Silverlight

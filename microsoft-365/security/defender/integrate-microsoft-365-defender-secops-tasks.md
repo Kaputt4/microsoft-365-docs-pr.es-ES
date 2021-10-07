@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 229dbfd12ddca4e3a1444e2e9ca5771896ba07e0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 96f7c95f645f0544b0bcd80a0cd0e3f9b595733e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214527"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197982"
 ---
 # <a name="step-6-identify-soc-maintenance-tasks"></a>Paso 6. Identificar tareas de mantenimiento soc
 
@@ -52,6 +52,6 @@ Estas son las tareas periódicas o según sea necesario para mantener el SOC par
 
 Integre estas tareas en los procesos SOC actuales.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Debe revisar las guías a las que se hace referencia en este contenido y en la biblioteca [de Microsoft 365 Defender](/microsoft-365/security/defender) para determinar cómo se debe estructurar e integrar su propia implementación de Microsoft 365 Defender.

@@ -10,14 +10,14 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: ''
 search.appverid: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información sobre cómo planear y ejecutar un programa piloto de prueba para Temas Microsoft Viva en su organización.
-ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9e0aff8f2c4ce339af44261becc1b0ebd0a39445
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189527"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178724"
 ---
 # <a name="run-a-trial-of-microsoft-viva-topics"></a>Ejecute una prueba de Temas Microsoft Viva
 
@@ -54,7 +54,7 @@ Debe ser un administrador Microsoft 365 global o administrador de facturación p
 
 La planeación es esencial para una prueba eficaz de Viva Topics. El período de prueba es limitado y debe incluir la detección de temas y la exploración de experiencias de calidad, administración y usuario final.
 
-#### <a name="discovery"></a>Descubrimiento
+#### <a name="discovery"></a>Detección
 
 Hay dos opciones de estrategia de alto nivel para la configuración de la detección de temas durante una prueba:
 
@@ -135,6 +135,6 @@ Si no compra licencias después de la versión de prueba:
 - Se perderán los temas definidos por IA.
 - Los temas que haya editado un colaborador de temas permanecerán en la biblioteca de páginas del centro de temas. Solo el contenido proporcionado manualmente permanecerá en estas páginas, no cualquier contenido sugerido por AI.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Introducción a la adopción de Temas Microsoft Viva](topics-adoption-getstarted.md)

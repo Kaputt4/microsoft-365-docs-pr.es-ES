@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dd0b33ca6c2045a0f709e94e4c59f89b99b58bc7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31dbc29d2aca019c2b2553bb7ffa3082e410aab9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211887"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209206"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes en Microsoft 365 Defender
 
@@ -68,7 +68,7 @@ La **página Resumen le** ofrece una vista instantánea de los aspectos principa
 
 La información se organiza en estas secciones.
 
-| Sección | Description |
+| Section | Descripción |
 |:-------|:-----|
 | Alertas y categorías | Una vista visual y numérica de lo avanzado que ha progresado el ataque en la cadena de eliminación. Al igual que con otros productos de seguridad de Microsoft, Microsoft 365 Defender se alinea con el marco de&[CK &trade; de MITRE ATT.](https://attack.mitre.org/) La escala de tiempo de alertas muestra el orden cronológico en el que se produjeron las alertas y, para cada una, su estado y nombre. |
 | Ámbito |  Muestra el número de dispositivos, usuarios y buzones afectados y enumera las entidades en orden de nivel de riesgo y prioridad de investigación. |
@@ -197,14 +197,14 @@ Desde la **Graph,** puede:
  
    :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Ejemplo de un resaltado de alerta en la Graph página":::
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario:
 
 - [Investigar las alertas de un incidente](investigate-alerts.md)
 - [Investigar los usuarios de un incidente](investigate-users.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

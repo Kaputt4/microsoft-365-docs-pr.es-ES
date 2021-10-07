@@ -9,18 +9,18 @@ audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos Microsoft 365 y las acciones recomendadas para mitigar estos riesgos.
-ms.openlocfilehash: 24f570b85a871538f4aeca98795ddb3a27d99e55
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: cf98b2ca568c03bd81c81309ee6752465a9059c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400431"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178532"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Seguridad para los responsables de la toma de decisiones empresariales (BDMs)
 
@@ -59,7 +59,7 @@ Recomendaciones adicionales:
 
 El siguiente área de enfoque es reducir la superficie del ataque. Esto se puede lograr con el mínimo esfuerzo e impacto para los usuarios y servicios. Al reducir la superficie de ataque, los atacantes tienen menos formas de iniciar un ataque contra la organización.
 
-Aquí le mostramos otros ejemplos:
+Estos son algunos ejemplos:
 - Deshabilitar los protocolos POP3, IMAP y SMTP. La mayoría de las organizaciones modernas ya no usan estos protocolos más antiguos. Puede deshabilitarlas de forma segura y permitir excepciones solo según sea necesario. 
 - Reduzca y mantenga el número de administradores globales en el inquilino en el mínimo necesario. Esto reduce directamente la superficie de ataque para todas las aplicaciones en la nube. 
 - Retire servidores y aplicaciones que ya no se usan en el entorno. 

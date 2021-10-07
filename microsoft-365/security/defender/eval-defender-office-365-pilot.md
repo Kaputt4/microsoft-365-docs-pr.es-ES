@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 05/25/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 5e2588361cfc416b8d7aa8b51b8e12ded8a7ceca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef91bf7b4d3cdb2e4e335215a3b4f068ccdfe645
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220007"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198114"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Piloto de Microsoft Defender para Office 365
 **Se aplica a:**
@@ -142,7 +142,7 @@ Ahora que el piloto está configurado y configurado, resulta útil familiarizars
 |Simulador de ataque     | Puedes usar el Aprendizaje de simulación de ataques en el portal de Microsoft Defender 365 para ejecutar escenarios de ataque realistas en tu organización que te ayuden a identificar y encontrar usuarios vulnerables antes de que un ataque real impacte en tu entorno.        |  [Simulador de ataque en Microsoft Defender para Office 365](../office-365-security/attack-simulator.md)       |
 |Panel de informes     | En el menú de navegación izquierdo, haga clic en Informes y expanda el encabezado De & colaboración. Los informes de colaboración de Email & se trata de detectar tendencias de seguridad, algunas de las cuales le permitirán tomar medidas (a través de botones como "Ir a envíos"), y otras que mostrarán tendencias, como el resumen de estado de flujo de correo, top malware, detecciones de suplantación de correo, usuarios comprometidos, latencia de correo, vínculos de Caja fuerte e informes de datos adjuntos de Caja fuerte. Estas métricas se generan automáticamente.  |    [Ver informes](../office-365-security/view-email-security-reports.md)     |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 
 [Microsoft Defender para punto de conexión](eval-defender-endpoint-overview.md)

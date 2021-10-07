@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6733a4592d170be58dcbe4218d0cfb2b1ece2b38
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8d3374ad173d533132d128f785a50cf03147a384
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59192064"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197694"
 ---
 # <a name="contact-support-for-falkland-islands"></a>Póngase en contacto con el soporte técnico de islas Malvinas
 

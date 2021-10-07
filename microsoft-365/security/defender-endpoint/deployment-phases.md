@@ -2,14 +2,13 @@
 title: Fases de implementación
 description: Obtenga información sobre cómo implementar Microsoft Defender para endpoint mediante la preparación, configuración e incorporación de puntos de conexión a ese servicio
 keywords: implementar, preparar, configurar, incorporar, fase, implementación, implementación, adopción, configuración
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b5d7f7384d60a5353ce4c0363e07d3451e146598
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b7c9c4389506e59998609f7d960016abf694ebc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220598"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190538"
 ---
 # <a name="deployment-phases"></a>Fases de implementación
 
@@ -71,7 +70,7 @@ Aunque Microsoft Defender para endpoint proporciona muchas funcionalidades, el o
 
 |Funcionalidad|Descripción|
 |---|---|
-|Detección y respuesta de puntos de conexión.|Las capacidades de detección y respuesta de puntos de conexión se ponen en marcha para detectar, investigar y responder a intentos de intrusión e infracciones activas.|
+|Detección y respuesta de puntos de conexión|Las capacidades de detección y respuesta de puntos de conexión se ponen en marcha para detectar, investigar y responder a intentos de intrusión e infracciones activas.|
 |Protección de última generación|Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para punto de conexión usa la protección de próxima generación diseñada para detectar todos los tipos de amenazas emergentes.|
 |Reducción de la superficie expuesta a ataques|Proporcione la primera línea de defensa en la pila. Al garantizar que las opciones de configuración se establecen correctamente y se aplican las técnicas de mitigación de vulnerabilidades, estas capacidades resisten los ataques y la explotación.|
 |

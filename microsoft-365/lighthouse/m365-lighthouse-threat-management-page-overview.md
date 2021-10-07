@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Administración de amenazas.
-ms.openlocfilehash: 7f8a5ef0ebea7204b0463b921946362acfed17d9
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 6eb5ed0c37295a7683b2eb16068f96f912aefb91
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59443976"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178676"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse Introducción a la página de administración de amenazas 
 
@@ -59,7 +59,7 @@ En la tabla siguiente se enumeran los distintos estados de amenaza y su definici
 
 | Estado de la amenaza | Definición |
 |--|--|
-| Activo | La amenaza está activa en el dispositivo. |
+| Activa | La amenaza está activa en el dispositivo. |
 | Sin estado | El estado de la amenaza no está disponible. Ejecuta un examen completo en el dispositivo para que Antivirus de Microsoft Defender vuelva a detectar la amenaza. |
 | Error en la acción | El dispositivo no está en riesgo. Se ha fallado una acción, pero se ha detenido una amenaza potencial y no está activa en el dispositivo. Ejecuta un examen completo en el dispositivo. |
 | Pasos manuales necesarios | La amenaza se ha detenido, pero requiere un paso manual para completarse, como un examen completo o un reinicio del dispositivo. |

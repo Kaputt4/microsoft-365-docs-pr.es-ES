@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 977cd2d099d9c5be7fc0db9ef61f31f28afdc9fe
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 411fc860ad59c214000936486d3c0456c732df19
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211657"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190322"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -89,5 +89,5 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ne
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Envíos de administrador](admin-submission.md)
+- [Envíos de administradores](admin-submission.md)
 - [Notificar falsos positivos y falsos negativos](report-false-positives-and-false-negatives.md)

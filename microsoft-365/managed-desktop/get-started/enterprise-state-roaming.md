@@ -4,17 +4,17 @@ description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 709a231f1c3f401ceeee2b3aaf99ff275f107e30
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad38314389565e114278ba729f33eb33bb700ade
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215417"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208714"
 ---
 # <a name="enable-enterprise-state-roaming"></a>Habilitar Enterprise State Roaming
 

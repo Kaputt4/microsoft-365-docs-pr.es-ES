@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5ecab217a6181096e4689d78fa2bdddc0a767d0d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c328094c9b9443b4e130ce91d418fa2694e7c402
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211987"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190478"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -51,7 +51,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `FolderPath` | cadena | Carpeta que contiene el archivo al que se aplicó la acción grabada |
 | `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo normalmente no se rellena: use la columna SHA1 cuando esté disponible. |
-| `FileSize` | Entero | Tamaño del archivo en bytes |
+| `FileSize` | int | Tamaño del archivo en bytes |
 | `ThreatFamily` | string | Familia de malware en la que el archivo o proceso sospechoso o malintencionado se ha clasificado en |
 | `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
 | `RemoteUrl` | cadena | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |

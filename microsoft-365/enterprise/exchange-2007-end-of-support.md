@@ -7,19 +7,19 @@ ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre sus opciones después de Exchange Server de soporte técnico de 2007 e inicie la planeación de la migración a Microsoft 365, Office 365 o Exchange 2016.
-ms.openlocfilehash: d7e8f50118dab6fcb618273f5c28497c80d4a549
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5e79666c0e8e9804a63c89a0095a8725f14cd35
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218567"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178784"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de Exchange 2007
 
@@ -45,7 +45,7 @@ Para obtener más información acerca Office servidores de 2007 que se acercan a
   
 ## <a name="what-are-my-options"></a>¿Cuáles son mis opciones?
 
-Podrá:
+Puede:
   
 - Migre a Microsoft 365 mediante la migración híbrida, por fases o por fases.
     
@@ -255,4 +255,4 @@ Si se encuentra con problemas durante la migración a Microsoft 365 y no está u
     
 ## <a name="related-topics"></a>Temas relacionados
 
-[Recursos que le ayudarán a actualizar Office servidores y clientes de 2007](upgrade-from-office-2007-servers-and-products.md)
+[Recursos para ayudarle a actualizar los servidores y clientes de Office 2007](upgrade-from-office-2007-servers-and-products.md)

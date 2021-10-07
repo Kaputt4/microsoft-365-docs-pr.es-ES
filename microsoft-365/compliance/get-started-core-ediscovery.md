@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Describe cómo empezar a usar eDiscovery principal en Microsoft 365. Después de asignar permisos de exhibición de documentos electrónicos y crear un caso, puede agregar miembros, crear retenciones de exhibición de documentos electrónicos y, a continuación, buscar y exportar contenido relevante para la investigación.
-ms.openlocfilehash: aa6e1efb6ef3a773eaae697fcc60a4293967d845
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: d8827f5f63e0fc0432aef7869436112c00ca4151
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498225"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217179"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Introducción a la exhibición de documentos electrónicos principal en Microsoft 365
 
@@ -129,6 +129,9 @@ Si crea un caso en el paso 3 y es la única persona que usará el caso, no tiene
 4. En la lista de personas o grupos de roles que se pueden agregar como miembros del caso, haga clic a la izquierda del nombre de las personas (o grupos de roles) que desee agregar. Si tiene una lista grande de personas o grupos de  roles que pueden agregarse como miembros, use el cuadro Buscar para buscar una persona o un grupo de roles específicos en la lista.
   
 5. Después de seleccionar las personas o grupos de roles  que se agregarán como miembros del caso, haga clic en Guardar para guardar los nuevos miembros o grupos de roles.
+
+> [!IMPORTANT]
+> Si se agrega o quita un rol de un grupo de roles que ha agregado como miembro de un caso, el grupo de roles se quitará automáticamente como miembro del caso (o en cualquier caso el grupo de roles es miembro de). El motivo es proteger la organización de proporcionar permisos adicionales a los miembros de un caso de forma involuntaria. Del mismo modo, si se elimina un grupo de roles, se quitará de todos los casos de los que era miembro. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases).
 
 ## <a name="explore-the-core-ediscovery-workflow"></a>Explorar el flujo de trabajo de eDiscovery principal
 

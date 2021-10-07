@@ -4,17 +4,17 @@ description: En este artículo se enumeran las tecnologías y aplicaciones usada
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: dd8293f05a5b88bbd17a3b6760c9a535737fd439
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d149a9d6cf983bbf5be7e251ddb2c182b6d0a34b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215407"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198318"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías del Escritorio administrado de Microsoft
 
@@ -31,7 +31,7 @@ En este artículo se resumen los componentes incluidos en las licencias Enterpri
 
 | Producto |Información |
 --- |--- 
-Aplicaciones Microsoft 365 para empresas (64 bits) | Estas Office se enviarán con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Empresarial, OneNote.<br><br>Las versiones completas de 64 bits de Microsoft Project y Microsoft Visio no se incluyen. Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación de Aplicaciones Microsoft 365 para empresas, Escritorio administrado de Microsoft ha creado implementaciones de Microsoft Intune predeterminadas y grupos de seguridad que luego puede usar para implementar estas aplicaciones en usuarios con licencia. Para obtener más información, [vea Install Microsoft Project or Microsoft Visio on Escritorio administrado de Microsoft devices](../get-started/project-visio.md).
+Aplicaciones Microsoft 365 para empresas (64 bits) | Estas Office se enviarán con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Empresarial, OneNote.<br><br>Las versiones completas de 64 bits de Microsoft Project y Microsoft Visio no se incluyen. Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación de Aplicaciones Microsoft 365 para empresas, Escritorio administrado de Microsoft ha creado implementaciones de Microsoft Intune predeterminadas y grupos de seguridad que puede usar para implementarlas aplicaciones a usuarios con licencia. Para obtener más información, [vea Install Microsoft Project or Microsoft Visio on Escritorio administrado de Microsoft devices](../get-started/project-visio.md).
 OneDrive |Azure Active Directory El inicio de sesión único está habilitado para los usuarios cuando inician sesión por primera vez en OneDrive.<br><br>Se incluye la redirección de carpetas conocidas para las carpetas "Escritorio", "Documento" e "Imágenes"; habilitado y configurado por Escritorio administrado de Microsoft.
 Aplicaciones de la Tienda | Microsoft Sway y Power BI se envían con el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
 Aplicaciones de Win32 | Teams no se incluye con el dispositivo, sino que Microsoft lo empaqueta y proporciona para Escritorio administrado de Microsoft dispositivos. El cliente de Azure Information Protection no se incluye con el dispositivo, pero puede empaquetar para su implementación.

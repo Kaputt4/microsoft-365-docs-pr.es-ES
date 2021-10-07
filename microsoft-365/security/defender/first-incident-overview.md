@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f13569c8995433e0d629a3ce060d6c855f78700a
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: be0d0070f094a238114dd5d483e2a8ed29e043a0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477604"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198030"
 ---
 # <a name="responding-to-your-first-incident"></a>Responder al primer incidente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La estrategia de respuesta a incidentes de una organización determina su capacidad para hacer frente a incidentes de seguridad y ciberdelincuencia cada vez más disruptivos. Aunque es importante tomar medidas de prevención, la capacidad de actuar rápidamente para contener, eliminar y recuperarse de incidentes detectados puede minimizar los daños y las pérdidas empresariales.
 
@@ -56,7 +56,7 @@ Los incidentes en Microsoft 365 Defender son los puntos de partida lógicos para
 
 Asegúrese de que su organización y Microsoft 365 inquilino esté [preparado para el tratamiento de incidentes.](first-incident-prepare.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Instrucciones de respuesta a incidentes para Microsoft 365 Defender:
 

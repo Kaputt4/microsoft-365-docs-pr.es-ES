@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -18,12 +18,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Obtenga información sobre cómo usar PowerShell para mantener la pertenencia a Microsoft 365 grupos.
-ms.openlocfilehash: 0a66db0748c50d296ff9d26969ae8b3caa7f310f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3637fb7d2e68091c43e624e9b6780d032c1930bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212570"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208798"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>Mantener la pertenencia a grupos de seguridad con PowerShell
 
@@ -32,7 +32,7 @@ ms.locfileid: "59212570"
 Puede usar PowerShell para Microsoft 365 como alternativa a la Centro de administración de Microsoft 365 para mantener la pertenencia a grupos de seguridad en Microsoft 365. 
 
 >[!Note]
->[Aprenda a mantener la pertenencia Microsoft 365 grupo](../admin/create-groups/add-or-remove-members-from-groups.md) con el Centro de administración de Microsoft 365. Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](../admin/add-users/index.yml)
+>[Aprenda a mantener la pertenencia Microsoft 365 grupo](../admin/create-groups/add-or-remove-members-from-groups.md) con el Centro de administración de Microsoft 365. Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](/admin)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
@@ -151,7 +151,7 @@ $groupName="<display name of the group contains the member group>"
 Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID -GroupMemberType Group
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
