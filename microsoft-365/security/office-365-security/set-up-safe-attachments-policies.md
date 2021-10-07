@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo definir directivas Caja fuerte dat
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8fcfb578f69062d39caa44886b63a84e926f9635
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 2eefdbdfd9121bdc778425fe63ea35d3f97a4adc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483368"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196446"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte datos adjuntos en Microsoft Defender para Office 365
 
@@ -72,7 +72,7 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
   **Notas**:
 
-  - Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para obtener la configuración recomendada para las Caja fuerte de datos adjuntos, [vea Caja fuerte de datos adjuntos](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
@@ -119,7 +119,7 @@ La creación de una directiva Caja fuerte datos adjuntos personalizada en el por
 
      Estos valores se explican en Caja fuerte [de directiva de datos adjuntos](safe-attachments.md#safe-attachments-policy-settings).
 
-   - **Directiva de cuarentena:** seleccione la directiva de cuarentena que se aplica a los mensajes que se ponen en cuarentena mediante Caja fuerte datos adjuntos (**Bloque**, **Reemplazar** o **Entrega dinámica**). Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+   - **Directiva de cuarentena:** seleccione la directiva de cuarentena que se aplica a los mensajes que se ponen en cuarentena mediante Caja fuerte datos adjuntos (**Bloque**, **Reemplazar** o **Entrega dinámica**). Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
      Un valor en blanco significa que se usa la directiva de cuarentena predeterminada (AdminOnlyAccessPolicy para las detecciones de correo electrónico Caja fuerte datos adjuntos). Cuando más adelante edite la directiva Caja fuerte datos adjuntos o vea la configuración, se muestra el nombre de directiva de cuarentena predeterminado.
 

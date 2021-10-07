@@ -8,7 +8,7 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: Obtenga información sobre las acciones de corrección en las capac
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 987771616acfd2f2faf425e525505b320155388e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d81fe5e2baa4146136d7e55461290a31ef2462b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211780"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196626"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Revisar y administrar acciones de corrección en Office 365
 
@@ -101,7 +101,7 @@ Hay dos formas diferentes de reconsiderar las acciones enviadas:
 4. Espere a que el botón Acción de la parte superior habilite y seleccione el botón Acción para cambiar el tipo de acción.
 5. Esto creará las acciones adecuadas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Usar el Explorador de amenazas](threat-explorer.md)
 - [Acciones de administrador /manual](remediate-malicious-email-delivered-office-365.md)

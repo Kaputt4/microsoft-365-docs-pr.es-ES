@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -17,12 +17,12 @@ ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3bb844437bde35e202b177aeba3439f50bf14766
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 3392653aab996ef62f05664a33c82f55639003c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490134"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196968"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Corregir la detección de correcciones para el Antivirus de Windows Defender
 
@@ -51,9 +51,9 @@ También puede usar el [ `Set-MpPreference` cmdlet de PowerShell](/powershell/mo
 
 <br/><br/>
 
-|Ubicación|Valor|Descripción|Configuración predeterminada (si no está configurada)|
+|Ubicación|Configuración|Descripción|Configuración predeterminada (si no está configurada)|
 |---|---|---|---|
-|Examinar|Crear un punto de restauración del sistema|Se creará un punto de restauración del sistema cada día antes de intentar limpiar o examinar|Deshabilitada|
+|Examinar|Crear un punto de restauración del sistema|Se creará un punto de restauración del sistema cada día antes de intentar limpiar o examinar|Deshabilitado|
 |Examinar|Activar la eliminación de elementos de la carpeta historial de examen|Especificar cuántos días deben mantenerse los elementos en el historial de examen|30 días|
 |Raíz|Desactivar la corrección rutinaria|Puede especificar si Antivirus de Microsoft Defender corrige automáticamente las amenazas o si debe preguntar al usuario del extremo qué hacer.|Deshabilitado (las amenazas se corrigen automáticamente)|
 |Cuarentena|Configurar la eliminación de elementos de la carpeta cuarentena|Especificar cuántos días deben mantenerse en cuarentena los elementos antes de quitarse|90 días|

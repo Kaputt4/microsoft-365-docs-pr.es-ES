@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: daedba79bb2fd9ac452cbef08d74d4d876122478
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 949fbfa6b34fe78e7d5a575756547fdadfef8c8f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213297"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199506"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Ver y administrar acciones en el Centro de acciones
 
@@ -95,7 +95,7 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 
 3. En el panel de la parte derecha de la pantalla, seleccione **Aplicar a X más** instancias de este archivo y, a continuación, seleccione **Deshacer**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver los detalles y los resultados de una investigación automatizada](m365d-autoir-results.md)
 - [Dirección de falsos positivos o falsos negativos](m365d-autoir-report-false-positives-negatives.md)

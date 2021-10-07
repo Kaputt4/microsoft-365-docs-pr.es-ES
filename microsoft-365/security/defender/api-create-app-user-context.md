@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 720707ab58ff5de8ddc64ac1df717d9812227735
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e97ed3b7b11eeded5919e963a3175782d3a7d088
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220097"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60184382"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Crear una aplicación para obtener acceso Microsoft 365 Defender API en nombre de un usuario
 
@@ -75,7 +75,7 @@ En este artículo se explica cómo:
    ![Imagen de la ventana Crear aplicación.](../../media/nativeapp-create2.PNG)
 
    - **Tipo de aplicación:** Cliente público
-   - **URI de redireccionamiento:**https://portal.azure.com
+   - **URI de redireccionamiento:** https://portal.azure.com
 
 4. En la página de la aplicación, seleccione **Permisos** de API Agregar API de permisos que mi organización usa  >    >   >, escriba Protección contra amenazas de Microsoft y seleccione **Protección contra** amenazas de Microsoft . La aplicación ahora puede acceder a Microsoft 365 Defender.
 

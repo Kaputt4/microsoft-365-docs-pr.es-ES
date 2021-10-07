@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden usar el vínculo seguimiento de mensajes en el portal de Microsoft 365 Defender para averiguar qué sucedió con los mensajes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7b6f7b12086e46c6ad93b60e8c510ea533815a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0a5a62c437581228fc17fa7af159583029ef42ec
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59214357"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196506"
 ---
 # <a name="message-trace-in-the-microsoft-365-defender-portal"></a>Seguimiento de mensajes en el Microsoft 365 Defender web
 
@@ -41,7 +41,7 @@ Puede usar la información del seguimiento de mensajes para responder eficazment
 
 - Debe ser miembro de los grupos de  roles **Administración** de  la **organización,** Administración de cumplimiento o Servicio de Exchange Online para usar el seguimiento de mensajes. Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Notas:** La pertenencia al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
+  **Notas:** La pertenencia al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 - El número máximo de mensajes que se muestran en los resultados de un seguimiento de mensajes depende del tipo de informe seleccionado (vea la sección Elegir tipo [de](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac#choose-report-type) informe para obtener más información). El cmdlet [Get-HistoricalSearch de](/powershell/module/exchange/get-historicalsearch) Exchange Online PowerShell o PowerShell independiente de EOP devuelve todos los mensajes de los resultados.
 

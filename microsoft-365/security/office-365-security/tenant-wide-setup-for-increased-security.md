@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 10/11/2018
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_IP
@@ -20,12 +20,12 @@ ms.custom:
 description: En este tema se le guía a través de la configuración recomendada para la configuración de todo el espacio empresarial que afecta a la seguridad del Microsoft 365 empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 838b9b01790b85c3903206285356cc6c22507821
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b095d328a6582e93e79a2e6a76afe61ca59862cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187310"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199350"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar el inquilino de Microsoft 365 para aumentar la seguridad
 

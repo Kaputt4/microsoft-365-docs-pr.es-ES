@@ -9,7 +9,7 @@ metadata:
   ms.date: 
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid:
   - MET150
   ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 640a019c86e5313b81003136b2d9842d8784e29a
-  ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+  ms.openlocfilehash: 149fd46d21626dbed91bd2a94490169123fc5acb
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/23/2021
-  ms.locfileid: "59483572"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60199410"
 title: Preguntas más frecuentes sobre mensajes en cuarentena
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -59,7 +59,7 @@ sections:
       De forma predeterminada, solo los administradores pueden administrar mensajes que se han puesto en cuarentena para malware. Para obtener más información, vea [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
 
-      Sin embargo, los administradores pueden crear y aplicar directivas _de cuarentena_ a directivas antimalware que definen más funcionalidades para los usuarios. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+      Sin embargo, los administradores pueden crear y aplicar directivas _de cuarentena_ a directivas antimalware que definen más funcionalidades para los usuarios. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
   - question: >
       ¿Cómo puedo poner en cuarentena el correo no deseado?
     answer: >
@@ -70,7 +70,7 @@ sections:
       Un usuario debe tener una cuenta válida para tener acceso a sus propios mensajes en cuarentena. EOP independiente requiere que los usuarios se represente como usuarios de correo en EOP (creados manualmente o creados mediante la sincronización de directorios). Para obtener más información acerca de la administración de usuarios en entornos EOP independientes, vea Administrar usuarios [de correo en EOP independiente.](/exchange/standalone-eop/manage-mail-users-in-eop)
   - question: >
       ¿A qué mensajes pueden acceder los usuarios finales en cuarentena?
-    answer: "Las directivas de cuarentena definen si los usuarios pueden tener acceso a mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para [las características compatibles).](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) Para obtener más información, vea [Quarantine policies](quarantine-policies.md).\n\nDe forma predeterminada, los usuarios pueden tener acceso a los siguientes tipos de mensajes en cuarentena donde son destinatarios:\n\n- **Directivas contra correo no** deseado: correo no deseado, correo masivo y mensajes de suplantación de identidad (no mensajes de phishing de elevada confianza).\n- **Directivas** contra suplantación de identidad : remitentes suplantados, protección de suplantación de usuario (Defender para Office 365), protección de suplantación de dominio (Defender para Office 365) y protección de inteligencia de buzones (Defender para Office 365).\n\nPara obtener más información, vea [Buscar y liberar mensajes en cuarentena como usuario.](find-and-release-quarantined-messages-as-a-user.md)\n\nDe forma predeterminada, los usuarios finales no pueden tener acceso a los siguientes tipos de mensajes en cuarentena donde son destinatarios:\n\n- **Directivas contra correo no deseado:** phishing de elevada confianza.\n- **Directivas antimalware**\n- Caja fuerte datos adjuntos **(Defender para Office 365):** mensajes de correo electrónico de directivas y archivos adjuntos de Caja fuerte de archivos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams.\n- **Reglas de flujo de** correo (reglas de transporte): mensajes que se han puesto en cuarentena debido a la acción Entregar el mensaje a la acción de cuarentena hospedada en las reglas de flujo de correo. \n\nPara obtener más información, vea [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).\n"
+    answer: "Las directivas de cuarentena definen si los usuarios pueden tener acceso a mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para [las características compatibles).](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).\n\nDe forma predeterminada, los usuarios pueden tener acceso a los siguientes tipos de mensajes en cuarentena donde son destinatarios:\n\n- **Directivas contra correo no** deseado: correo no deseado, correo masivo y mensajes de suplantación de identidad (no mensajes de phishing de elevada confianza).\n- **Directivas** contra suplantación de identidad : remitentes suplantados, protección de suplantación de usuario (Defender para Office 365), protección de suplantación de dominio (Defender para Office 365) y protección de inteligencia de buzones (Defender para Office 365).\n\nPara obtener más información, vea [Buscar y liberar mensajes en cuarentena como usuario.](find-and-release-quarantined-messages-as-a-user.md)\n\nDe forma predeterminada, los usuarios finales no pueden tener acceso a los siguientes tipos de mensajes en cuarentena donde son destinatarios:\n\n- **Directivas contra correo no deseado:** phishing de elevada confianza.\n- **Directivas antimalware**\n- Caja fuerte datos adjuntos **(Defender para Office 365):** mensajes de correo electrónico de directivas y archivos adjuntos de Caja fuerte de archivos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams.\n- **Reglas de flujo de** correo (reglas de transporte): mensajes que se han puesto en cuarentena debido a la acción Entregar el mensaje a la acción de cuarentena hospedada en las reglas de flujo de correo. \n\nPara obtener más información, vea [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).\n"
   - question: >
       ¿Cuánto tiempo se mantienen los mensajes en cuarentena?
     answer: >

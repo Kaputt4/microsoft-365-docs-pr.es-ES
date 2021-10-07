@@ -2,15 +2,13 @@
 title: Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 description: Obtenga información sobre cómo configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 keywords: policies, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cecc6cd9be841043c2f3cc55977c56f14386cd2d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0bc0b09bcb834c67cb5da13469139875037440b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185774"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198690"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 
@@ -134,7 +132,7 @@ Tenga en cuenta que debe usar exactamente como dominio de preferencia `com.micro
 
 ### <a name="gui-method"></a>Método GUI
 
-1. Descargue schema.jsarchivo desde el repositorio [de GitHub defender](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema) y guárdelo en un archivo local:
+1. Descargue el archivo schema.json del [repositorio GitHub defender y](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema) guárdelo en un archivo local:
 
     ```bash
     curl -o ~/Documents/schema.json https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/schema/schema.json
@@ -154,7 +152,7 @@ Tenga en cuenta que debe usar exactamente como dominio de preferencia `com.micro
 
     ![Agregar esquema personalizado.](images/4137189bc3204bb09eed3aabc41afd78.png)
 
-4. Escribe como dominio de preferencia, haz clic en Agregar esquema y Upload la schema.jsarchivo descargado `com.microsoft.wdav` en el paso 1.   Haga clic en **Guardar**.
+4. Escribe como dominio de preferencia, haz clic en Agregar esquema `com.microsoft.wdav` **y Upload** el archivo schema.json descargado en el paso  1. Haga clic en **Guardar**.
 
     ![Upload esquema.](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 

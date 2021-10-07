@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -16,12 +16,12 @@ ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f3f2a2bb49900a65f89925b5cc6aab94db42ad50
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: f2e1945f3fce3445c6bbed18aaf676c5df1e2486
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489534"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60185006"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Habilitar y configurar la protección siempre activa del Antivirus de Windows Defender en la directiva de grupo
 
@@ -56,10 +56,10 @@ Para habilitar y configurar la protección siempre activa:
 
       <br/><br/>
 
-      |Valor|Configuración predeterminada|
+      |Configuración|Configuración predeterminada|
       |---|---|
       |Permitir que el servicio antimalware se inicie con prioridad normal <p> Puede reducir la prioridad del motor Antivirus de Microsoft Defender motor. Reducir la prioridad puede ser útil en casos en los que quieras tener un proceso de inicio lo más delgado posible; sin embargo, la toma de esta acción podría afectar a la protección de puntos de conexión. Continúe con precaución.|Habilitado
-      |Permitir que el servicio antimalware siga ejecutándose siempre <p> Si las actualizaciones de protección se han deshabilitado, puede Antivirus de Microsoft Defender para que se ejecuten. Deshabilitar las actualizaciones de protección reduce la protección de puntos de conexión.|Deshabilitada|
+      |Permitir que el servicio antimalware siga ejecutándose siempre <p> Si las actualizaciones de protección se han deshabilitado, puede Antivirus de Microsoft Defender para que se ejecuten. Deshabilitar las actualizaciones de protección reduce la protección de puntos de conexión.|Deshabilitado|
 
    2. Configure la configuración según corresponda y seleccione **Aceptar**.
 
@@ -86,7 +86,7 @@ Para habilitar y configurar la protección siempre activa:
    2. En el **panel Detección** de detalles de la derecha, haga doble clic en la configuración de directiva especificada en la tabla siguiente:
       <br/><br/>
 
-      |Valor|Configuración predeterminada|
+      |Configuración|Configuración predeterminada|
       |---|---|
       |Activar heurística <p> La protección heurística deshabilitará o bloqueará la actividad sospechosa inmediatamente antes de que se pida al Antivirus de Microsoft Defender que detecte la actividad.|Habilitado|
 
@@ -97,7 +97,7 @@ Para habilitar y configurar la protección siempre activa:
 
 ### <a name="real-time-protection-policy-settings"></a>Configuración de directiva de protección en tiempo real
 
-|Valor|Configuración predeterminada|
+|Configuración|Configuración predeterminada|
 |---|---|
 |Activar la supervisión del comportamiento <p> El motor antivirus supervisará los procesos de archivos, los cambios de archivos y del Registro y otros eventos en los puntos de conexión en busca de actividad malintencionada sospechosa y conocida.|Habilitado|
 |Examinar todos los archivos y datos adjuntos descargados <p> Los archivos descargados y los datos adjuntos se examinan automáticamente. Este examen funciona además del filtro Windows Defender SmartScreen, que examina los archivos antes y durante la descarga.|Habilitado|

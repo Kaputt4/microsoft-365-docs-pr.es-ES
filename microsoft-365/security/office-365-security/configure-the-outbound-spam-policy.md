@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de correo no deseado saliente en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec82ce1f1049039fc6f4317662e5de016ba381d7
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 08621035f5bdd89b43cbe64e84802cdf0dfc5a79
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483824"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196566"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurar el filtrado de correo no deseado saliente en EOP
 
@@ -494,7 +494,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Re
 
 ## <a name="for-more-information"></a>Más información
 
-[Quitar usuarios bloqueados del portal de usuarios restringidos](removing-user-from-restricted-users-portal-after-spam.md)
+[Quitar usuarios bloqueados del portal de Usuarios restringidos](removing-user-from-restricted-users-portal-after-spam.md)
 
 [Grupo de entrega de alto riesgo para mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md)
 

@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 114c0809aab3dcd219b49fd015752a8dec166cee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6eb9dbcd0bd7b9724c2278f0006a0e6e1db61112
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211717"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196242"
 ---
 # <a name="step-1-create-a-test-base-account"></a>Paso 1: Crear una cuenta base de prueba
 
@@ -49,7 +49,7 @@ Si no tienes una suscripción a Azure, crea una [cuenta gratuita antes](https://
 
 5.  Por último, haga clic en ```Review + Create``` para validar y habilitar la cuenta recién creada.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Avance al siguiente artículo para empezar con step 2: **Learn how upload your package.**
 > [!div class="nextstepaction"]

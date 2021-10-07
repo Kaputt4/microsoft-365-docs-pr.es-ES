@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 96f5f043ba49e01bd03f23c8eb430e56f88a5856
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187593"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197154"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso Alert
 
@@ -46,7 +46,7 @@ ms.locfileid: "59187593"
 |---|---|---|
 |[Obtener alerta](get-alert-info-by-id.md)|[Alerta](alerts.md)|Obtener un único [objeto de](alerts.md) alerta.|
 |[Listar alertas](get-alerts.md)|[Colección Alert](alerts.md)|Enumerar [la colección de](alerts.md) alertas.|
-|[Update alert](update-alert.md)|[Alerta](alerts.md)|Actualizar alerta [específica](alerts.md).|
+|[Actualizar alerta](update-alert.md)|[Alerta](alerts.md)|Actualizar alerta [específica](alerts.md).|
 |[Alertas de actualización por lotes](batch-update-alerts.md)||Actualizar un lote de [alertas](alerts.md).|
 |[Crear alerta](create-alert-by-reference.md)|[Alerta](alerts.md)|Crear una alerta basada en los datos de eventos obtenidos de [la búsqueda avanzada](run-advanced-query-api.md).|
 |[Enumerar dominios relacionados](get-alert-related-domain-info.md)|Colección domain|Enumerar las direcciones URL asociadas con la alerta.|

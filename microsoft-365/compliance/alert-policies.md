@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el Centro de cumplimiento de Microsoft 365 o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: 1a5828d086b2bd09fbdd75faa714fd8c5a634d14
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 3e2e0cdfb90a6ba224fc58b328381cb1da66e850
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483776"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198810"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
@@ -234,7 +234,7 @@ Tenga en cuenta lo siguiente acerca de la agregación de alertas:
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Permisos RBAC necesarios para ver alertas
 
-Los permisos de control de acceso basado en roles (RBAC) asignados a los usuarios de la organización determinan qué alertas puede ver un usuario en la **página Alertas.** ¿Cómo se logra esto? Los roles de administración asignados a los usuarios (en función de su pertenencia a grupos de roles en el portal de Centro de cumplimiento de Microsoft 365 o Microsoft 365 Defender) determinan qué categorías de alertas puede ver un **usuario** en la página Alertas. Aquí le mostramos otros ejemplos:
+Los permisos de control de acceso basado en roles (RBAC) asignados a los usuarios de la organización determinan qué alertas puede ver un usuario en la **página Alertas.** ¿Cómo se logra esto? Los roles de administración asignados a los usuarios (en función de su pertenencia a grupos de roles en el portal de Centro de cumplimiento de Microsoft 365 o Microsoft 365 Defender) determinan qué categorías de alertas puede ver un **usuario** en la página Alertas. Estos son algunos ejemplos:
 
 - Los miembros del grupo de roles Administración de registros solo pueden ver las alertas generadas por las directivas de alerta a las que se asigna la **categoría Gobierno de** información.
 

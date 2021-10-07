@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 06/22/2021
 search.appverid:
 - MOE150
@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 11d1f90278bec224bcc9f043abf57fa5a27010e5
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: e761962f737d717bef42773169fbe9c9c180c7ef
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483128"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199446"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -59,7 +59,7 @@ Las características de protección contra amenazas se *incluyen* en todas las s
 |Tipo de protección|Requisitos de suscripción|
 |---|---|
 |Registro de auditoría (para fines de informes)|[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
-|Protección contra malware|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
+|Protección antimalware|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Protección contra phishing|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protección contra correo no deseado|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protección contra direcciones URL malintencionadas y archivos en documentos Office correo electrónico (Caja fuerte vínculos y Caja fuerte adjuntos)|[Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
@@ -97,7 +97,7 @@ Para obtener más información acerca de la configuración recomendada para anti
    - **Sección Configuración de** protección:
      - **Habilitar el filtro de datos adjuntos** común: Seleccionar (activar). Haga **clic en Personalizar tipos de archivo** para agregar más tipos de archivo.
      - **Habilitar la purga automática de hora cero para malware:** compruebe que esta configuración está seleccionada. Para obtener más información acerca de ZAP para malware, vea [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
-   - **Directiva de cuarentena:** deje seleccionado el valor predeterminado AdminOnlyAccessPolicy. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+   - **Directiva de cuarentena:** deje seleccionado el valor predeterminado AdminOnlyAccessPolicy. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
    - **Sección notificación:** compruebe que no se haya seleccionado ninguna de las opciones de configuración de notificación.
 
    Cuando haya terminado, haga clic en **Guardar**.
@@ -225,7 +225,7 @@ Para obtener más información acerca de la configuración recomendada para Caja
    - **Página Usuarios y dominios:** dado que esta es la primera directiva y es probable que quiera maximizar la cobertura, considere la posibilidad de escribir los dominios aceptados [en](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) el **cuadro** Dominios. De lo contrario, puede usar los **cuadros Usuarios** **y** Grupos para un control más detallado. Puede especificar excepciones seleccionando Excluir estos **usuarios, grupos y dominios** y especificando valores.
    - **Configuración:**
      - **Caja fuerte datos adjuntos respuesta de malware desconocido:** Seleccione **Bloquear**.
-     - **Directiva de cuarentena:** el valor predeterminado está en blanco, lo que significa que se usa la directiva AdminOnlyAccessPolicy. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+     - **Directiva de cuarentena:** el valor predeterminado está en blanco, lo que significa que se usa la directiva AdminOnlyAccessPolicy. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
      - **Redirigir datos adjuntos con datos** adjuntos detectados: **Habilitar** redireccionamiento: Active esta opción (seleccionar) e introduzca una dirección de correo electrónico para recibir los mensajes detectados.
      - Aplicar la Caja fuerte de detección de datos adjuntos si el examen no se puede **completar (tiempo** de espera o errores): compruebe que esta configuración está seleccionada.
 

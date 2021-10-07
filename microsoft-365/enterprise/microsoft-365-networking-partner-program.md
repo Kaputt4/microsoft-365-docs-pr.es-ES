@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,12 +16,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: El Microsoft 365 Programa para partners de redes permite que el dispositivo se certifice como trabajo con Microsoft 365.
 hideEdit: true
-ms.openlocfilehash: 1330015d11179f67cc60077f2e4b51382af2d1a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c269c63a9637eda1f1b4950cace4ed75dd963a49
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167251"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197286"
 ---
 # <a name="microsoft-365-networking-partner-program"></a>Programa para partners de redes de Microsoft 365
 

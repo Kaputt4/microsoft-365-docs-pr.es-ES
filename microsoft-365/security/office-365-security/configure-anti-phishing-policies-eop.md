@@ -8,19 +8,19 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas contra suplantación de identidad que están disponibles en organizaciones de Exchange Online Protection (EOP) con o sin buzones Exchange Online correo.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 93bd272009845d7b9afdd873bbdd2cd4219c82e1
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 6dde8366ab37ca6550e717ec97c17701570dc0e7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484076"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196590"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configuración de directivas contra phishing en EOP
 
@@ -62,11 +62,11 @@ Para aumentar la eficacia de la protección contra phishing, puede crear directi
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
   No puede administrar directivas contra suplantación de identidad (phishing) en PowerShell de EOP independiente.
 
-- Debe tener permisos asignados en la **Exchange Online** antes de poder realizar los procedimientos de este artículo:
+- Debe tener permisos asignados en **Exchange Online** antes de poder realizar los procedimientos de este artículo:
   - Para agregar, modificar y eliminar directivas contra suplantación de identidad, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
   - Para obtener acceso de solo lectura a directivas contra suplantación de identidad, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
 
@@ -124,7 +124,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
 6. En la página **Acciones** que aparece, configure las opciones siguientes:
    - **Si el mensaje se detecta como** suplantación: esta configuración solo está disponible si seleccionó Habilitar la inteligencia de suplantación en la página anterior.  Seleccione una de las siguientes acciones en la lista desplegable para los mensajes de remitentes suplantados bloqueados:
      - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-     - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+     - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
        Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de inteligencia suplantación). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena. Para obtener más información acerca de las directivas de cuarentena predeterminadas que se usan para veredictos de filtrado de protección admitidos, vea [esta tabla](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 

@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Para direcciones IP de destino y direcciones URL para Microsoft 365 tráfico, use esta lista de artículos para los puntos de conexión de Internet de las distintas Microsoft 365 nubes.
-ms.openlocfilehash: 159c8e7dea6fe241ab44b283b1193397c3ad70e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 56e67304998a4031244fdbad63848f556fe94039
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215897"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197322"
 ---
 # <a name="microsoft-365-endpoints"></a>Puntos de conexión de Microsoft 365
 
@@ -38,7 +38,7 @@ Consulte [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md) pa
 
 Actualmente hay cinco nubes Microsoft 365 diferentes. Esta tabla le lleva a la lista de puntos de conexión para cada uno.
 
-| Nube | Description |
+| Nube | Descripción |
 |:-------|:-----|
 | [Puntos de conexión mundiales](urls-and-ip-address-ranges.md) | Los puntos de conexión para las suscripciones de Microsoft 365, que incluyen la Government Community Cloud Estados Unidos (GCC). |
 | [Puntos de conexión de DoD de Estados Unidos](microsoft-365-u-s-government-dod-endpoints.md) | Puntos de conexión para las suscripciones del Department of Defense (DoD) de Estados Unidos. |

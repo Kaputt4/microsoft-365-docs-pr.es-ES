@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -16,12 +16,12 @@ ms.collection:
 description: Seguridad en Office 365, desde EOP a Defender para Office 365 Planes 1 y 2, Configuraciones de seguridad estándar vs. estrictas y mucho más. Comprenda qué tiene y cómo proteger sus propiedades.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb20146625b0e6d42394e82c6cdd70595f18ba13
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: bc444ee36cabf7d148c51d1bceac02f299d89ad9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483248"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196470"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Introducción a la seguridad Office 365 Microsoft Defender para Office 365 seguridad
 

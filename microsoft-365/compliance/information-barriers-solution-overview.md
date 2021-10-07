@@ -2,7 +2,7 @@
 title: Barreras de información en Microsoft 365
 description: Obtenga información sobre cómo configurar las barreras de información en Microsoft 365.
 keywords: Microsoft 365, riesgo interno, cumplimiento
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 930b508b8e923baadff68701e88fc09af6a5051a
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 93314cd4dd9dfd9ab208b371985d2e483f34c742
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010086"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198738"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>Barreras de información en Microsoft 365
 

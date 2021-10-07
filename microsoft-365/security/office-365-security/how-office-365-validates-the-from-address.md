@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - OWC150
 - MET150
@@ -19,12 +19,12 @@ description: Los administradores pueden obtener información sobre los tipos de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5a02313bf8c36fe0be91340e421c69a8dc5c0842
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 412b6eb7045051c21a88c8b4b2ba5e80a06832dd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166638"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199434"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Cómo EOP valida la dirección From para evitar la suplantación de identidad
 

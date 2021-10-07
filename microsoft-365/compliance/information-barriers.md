@@ -12,16 +12,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-localization_priority: None
+ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ef09fbf7a517950ae182472e4b4d5ef896d65e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3bbcdbcc8dae41d9de2071e90b0bec877cef63ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191377"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198726"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>Obtenga información sobre las barreras de información en Microsoft 365
 
@@ -82,7 +82,7 @@ Para obtener más información sobre la experiencia del usuario con las barreras
 
 Las barreras de información se están implementando ahora y se incluyen en las suscripciones, como:
 
-- Microsoft 365 E5/A5
+- Microsoft 365 (E5/A5)
 - Office 365 E5/A5
 - Cumplimiento avanzado de Office 365
 - Microsoft 365 Cumplimiento E5/A5

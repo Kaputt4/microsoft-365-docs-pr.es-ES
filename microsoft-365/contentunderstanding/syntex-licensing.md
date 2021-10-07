@@ -11,14 +11,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-localization_priority: Priority
+ms.localizationpriority: high
 description: Más información sobre las licencias para SharePoint Syntex
-ms.openlocfilehash: 3c44545136a7ca67a63315a8378389212a160373
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 2e252ba496d89d388b67330bd1106b5f82c9aeb2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484052"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198558"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>Licencias para SharePoint Syntex
 

@@ -2,26 +2,24 @@
 title: Configurar Centro de seguridad de Microsoft Defender configuración
 description: Use la página de configuración para configurar la configuración general, los permisos, las api y las reglas.
 keywords: configuración, configuración general, permisos, api, reglas
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c032c54f8b80114e00fcff432a0da37a9d836f35
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa6c7b8b0235be3304e7f941864e4a0928eb4ab6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189404"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196842"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>Configurar Centro de seguridad de Microsoft Defender configuración
 

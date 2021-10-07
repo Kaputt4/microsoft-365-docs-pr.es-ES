@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: Use detecciones en tiempo real y explorador en el portal de Microso
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94a7fb847eca7f46f543399d8de1b2d3d12e1908
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 96004add9efe4fac033518f32b357044bdb7588f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166582"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196518"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -340,7 +340,7 @@ En este ejemplo se usa el Explorador de amenazas.
 
 4. Seleccione el Asunto de cualquier mensaje en la pestaña Correo > pestaña Detalles para ver información de suplantación adicional como Dominio suplantado / Ubicación detectada.
 
-    **O**
+    **OR**
 
     Seleccione **Usuario suplantado y** escriba la dirección de correo electrónico de un usuario protegido en el cuadro de texto.
 

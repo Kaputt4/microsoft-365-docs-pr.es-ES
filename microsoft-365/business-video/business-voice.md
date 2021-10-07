@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre Microsoft 365 Business Voice.
-ms.openlocfilehash: edffbbe615b7098377297f96a6015929d5825694
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef3c0d08ac2a419e8d15b825272f6689f6cd3eaf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221270"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199062"
 ---
 # <a name="overview-of-business-voice"></a>Información general de Business Voice
 
@@ -56,7 +56,7 @@ Business Voice va a todas partes porque forma parte de Microsoft Teams. Por lo t
 1. Por último, transfiere los números de teléfono existentes a Microsoft Teams.
 1. Cuando los números estén disponibles en Teams, asígnelos a sus empleados y a su número de negocio principal. Ahora estás listo para usar tu nuevo teléfono de empresa con la aplicación Teams en cualquier equipo, teléfono o tableta.
 
-## <a name="how-to-use"></a>Cómo usar 
+## <a name="how-to-use"></a>Cómo se usa
 
 Para realizar una llamada telefónica, abre la aplicación Teams en el equipo, tableta o teléfono y elige Llamadas. Verás el número de teléfono asignado y el panel de marcado que puedes usar para llamar a cualquier número. O bien, selecciona cualquiera de tus contactos Outlook o el teléfono y llámelos directamente.
 

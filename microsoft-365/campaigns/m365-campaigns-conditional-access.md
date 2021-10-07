@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización de ataques relacionados con la identidad proporcionando una configuración de seguridad preconfigurada.
-ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49b20e4880774ce97d99dc95e60c0cb417b213bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188702"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198984"
 ---
 # <a name="turn-on-security-defaults"></a>Activar valores predeterminados de seguridad
 
@@ -70,7 +70,7 @@ Los valores predeterminados de seguridad están disponibles para todos los clien
 
 - Azure Active Directory Premium P1 o P2
 - Microsoft 365 Empresa Premium
-- Microsoft 365 E3 o E5
+- Microsoft 365 E3 o E5
 - Enterprise Movilidad & seguridad E3 o E5
 
 Si desea usar el acceso condicional para configurar directivas equivalentes a las habilitadas por los valores predeterminados de seguridad, consulte las siguientes guías paso a paso:

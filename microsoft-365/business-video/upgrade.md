@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo actualizar Windows 10 Home a Windows 10 Pro.
-ms.openlocfilehash: 319152f8a587c123b25907db060b0572ec3a7cf3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d6ee8def7a6739f7a0f4c117ec3c0ff4ac6ca308
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212710"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199002"
 ---
 # <a name="upgrade-from-windows-10-home-to-windows-10-pro"></a>Actualizar de Windows 10 Home a Windows 10 Pro
 

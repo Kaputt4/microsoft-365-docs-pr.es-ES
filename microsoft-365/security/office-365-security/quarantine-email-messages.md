@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -22,12 +22,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la cuarentena Exchange Online Protection (EOP) que contiene mensajes potencialmente peligrosos o no deseados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cf9de0ba85c0e1612d29f7842da4bc74af14bf00
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 48509dbc6f422a8de2ab0ee2e75fd5456087fc6f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483566"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199422"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>Mensajes de correo electrónico en cuarentena en EOP
 
@@ -46,7 +46,7 @@ De forma predeterminada, las policías contra correo no deseado ponen en cuarent
 
 Tanto los usuarios como los administradores pueden trabajar con mensajes en cuarentena:
 
-- _Las directivas de_ cuarentena definen lo que los usuarios pueden hacer o no hacer en los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para las características admitidas). Las directivas de cuarentena predeterminadas aplican las funcionalidades históricas como se describe a continuación. Los administradores pueden crear y aplicar directivas de cuarentena personalizadas que definen capacidades menos restrictivas o más restrictivas para los usuarios. Para obtener más información, vea [Quarantine policies](quarantine-policies.md).
+- _Las directivas de_ cuarentena definen lo que los usuarios pueden hacer o no hacer en los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para las características admitidas). Las directivas de cuarentena predeterminadas aplican las funcionalidades históricas como se describe a continuación. Los administradores pueden crear y aplicar directivas de cuarentena personalizadas que definen capacidades menos restrictivas o más restrictivas para los usuarios. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
 - Los administradores pueden trabajar con todos los tipos de mensajes en cuarentena para todos los usuarios. De forma predeterminada, solo los administradores pueden trabajar con mensajes que se han puesto en cuarentena como malware, phishing de elevada confianza o como resultado de reglas de flujo de correo (también conocidas como reglas de transporte). Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
 

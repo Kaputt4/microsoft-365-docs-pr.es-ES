@@ -9,7 +9,7 @@ ms.topic: overview
 f1.keywords:
 - NOCSH
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.openlocfilehash: e66f9133959ce7f09915361e7583ae809e33647e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4fb4b548d71cf3e1da11e3c861a16929ac7073d8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59221157"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197526"
 ---
 # <a name="learn-about-privileged-access-management"></a>Obtenga más información sobre la administración del acceso con privilegios
 
@@ -73,7 +73,7 @@ Para una solicitud aprobada, la tarea se procesa mediante el espacio de ejecuci�
 
 ![Paso 4: Procesamiento de acceso.](../media/pam-step4-access-processing.jpg)
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>¿Qué SKU pueden usar acceso con privilegios en Office 365?
 

@@ -7,16 +7,16 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: dab1d8befaa0d32118f3fea350037ed8b91aadf3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7a12a1304d562ae74d4d1e7e4e6d14a947934636
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59215290"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197106"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Escritorio administrado de Microsoft operaciones y supervisión
 
@@ -55,7 +55,7 @@ Hay varios tipos de cambios que se hacen en el servicio con regularidad. El cana
 
 No todos los cambios afectan igual a los usuarios o requieren acciones. Algunas están planeadas y otras no planeadas por su naturaleza (las actualizaciones no de seguridad y las actualizaciones de seguridad normalmente no están planeadas). Según el tipo de cambio, el canal de comunicación puede variar. En la tabla siguiente se enumeran los tipos de cambios que puede esperar para el Escritorio administrado de Microsoft servicio.
 
-|   | Funcionalidad | Actualizaciones que no son de seguridad | Seguridad
+|   | Funcionalidad | Actualizaciones no relacionadas con la seguridad | Seguridad
 --- | --- | --- | ---
 **Tipo de cambio** | - Actualizaciones de características<br>- Nuevas características o aplicaciones<br>- Características en desuso | Revisiones de cliente para problemas | Actualizaciones de seguridad
 **Comunicación con la antelación suficiente** | Aviso de cinco días para los cambios que requieren acción | No, estos cambios se incluyen en la versión mensual | No, los cambios se incluyen en la versión mensual 
@@ -71,7 +71,7 @@ Microsoft Escritorio administrado de Microsoft implementar y operar el servicio 
 
 En el caso de los productos locales, la organización asume toda la responsabilidad de administrar la configuración y las actividades operativas y de configuración.
 
-Categories | Microsoft will | El cliente lo hará
+Categorías | Microsoft will | El cliente lo hará
 --- | --- | ---
 Red (proxy, inspección de paquetes, VPN)  | Aconsejar y planear con los clientes para minimizar los riesgos para los usuarios empresariales. | - Crear una solicitud de soporte técnico que solicite información para un cambio de configuración planeado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes que Microsoft debe revisar.<br>- Solo aplique un cambio una vez que Escritorio administrado de Microsoft Operations haya evaluado y recomendado.
 Cuentas de servicio  |- Implementar, almacenar y administrar de forma segura las credenciales.<br> - Comunicar el acceso no autorizado o el uso de estas credenciales al equipo de operaciones de seguridad. | - Crear una solicitud de soporte técnico que solicite información para un cambio de configuración planeado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes que Microsoft debe revisar.<br>- Solo aplique un cambio una vez que Escritorio administrado de Microsoft Operations haya evaluado y recomendado.<br>- No asignar directivas, autenticación multifactor, acceso condicional o implementación de aplicaciones a las Escritorio administrado de Microsoft de servicio.<br>- No restablecer la contraseña ni usar las credenciales.<br>- Abra una solicitud de soporte técnico de Sev C para Escritorio administrado de Microsoft operaciones si se observa actividad sospechosa en los registros de auditoría de Intune o Azure, relacionados con estas cuentas de servicio.
